@@ -2,7 +2,7 @@
 title: Quick Start
 slug: quick-start
 order: 20
-description: The shortest path to verify DRM Core editors and runtime after installation.
+description: The shortest path through DRM Core editors after installation.
 product: core
 category: Getting Started
 section: getting-started
@@ -19,7 +19,7 @@ tags:
 1. Put the `dochi_rpg_maker` JAR into the Forge 1.20.1 instance `mods` folder.
 2. For servers, install the same mod version on both server and connecting clients.
 3. Install CustomNPCs in the same environment if you are authoring NPC content.
-4. Start the world or server once and confirm that `config/dochi_rpg_maker` is created.
+4. Start the world or server once so `config/dochi_rpg_maker` is created.
 5. In creative mode, get the `Dochi RPG Maker Core` item.
 
 On first launch, the mod installs default dialogue sets, default dialogue GUI, default shop GUI, a sample shop, HUD definitions, and settings under `config/dochi_rpg_maker`.
@@ -39,21 +39,25 @@ The core item is also added to the CustomNPCs creative tab. Editing requires cre
 
 1. Right-click air to open the editor selector.
 2. Choose `Dialogue Editor`, then `Use Default Dialogue Set` or `Create New Dialogue Set`.
-3. Edit nodes and choices, then use `Save As` to save server JSON.
-4. Right-click the target NPC with the core item and apply the dialogue.
-5. Right-click the same NPC without the core item to test runtime dialogue.
+3. Edit nodes and choices.
+4. Add conditions and actions where needed.
+5. Use `Save As` to save server JSON.
+6. Right-click the target NPC with the core item and apply the dialogue.
+7. The saved dialogue opens as runtime dialogue when the NPC is right-clicked without the core item.
 
 For shops, start from `NPC Shop` in the same selector. File-based shops are saved under `config/dochi_rpg_maker/npc_shops`; NPC-bound shops are copied to NPC PersistentData.
 
-## Quick Verification
+## Suggested Reading Order
 
-| Check | Expected | If It Fails |
+| Step | Page | Why |
 | --- | --- | --- |
-| Mod loading | `Dochi RPG Maker` appears in the mod list. | Check Forge 1.20.1, Java, and JAR location. |
-| Data root | `config/dochi_rpg_maker` is created. | Check whether you are looking at the server root or client instance root. |
-| Core item | `Dochi RPG Maker Core` is visible. | Check the CustomNPCs tab or use `/give`. |
-| Default JSON | `dialogue_sets/default_set`, `gui`, and `npc_shops` exist. | Check first-launch logs and file permissions. |
-| Runtime | NPC right-click opens dialogue or shop. | Check NPC `source.kind`, `source.path`, or embedded JSON. |
+| 1 | Installation | Mod loader, client/server roles, and base folders. |
+| 2 | Paths | Where each JSON type is stored. |
+| 3 | Dialogue Editor | The main NPC dialogue authoring flow. |
+| 4 | Conditions And Actions | Choice gates, rewards, and shop links. |
+| 5 | NPC Shop | Buy and sell shops. |
+| 6 | GUI Maker | Dialogue/shop/message screen layout. |
+| 7 | HUD Maker | Always-visible player HUDs. |
 
 :::tip Operator Command
 If you edit server JSON by hand, run `/drm reload` or review `settings/reload_policy.json`.

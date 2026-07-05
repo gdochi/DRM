@@ -1,44 +1,44 @@
 ---
 title: 조건과 액션
 slug: conditions-actions
-order: 90
-description: 대화 노드, route, 선택지에서 사용하는 실제 조건과 액션 타입입니다.
+order: 70
+description: 대화 노드, route, 선택지에서 사용하는 조건, 액션, 보상형 처리입니다.
 product: core
-category: 핵심 시스템
+category: 다이얼로그 에디터
 section: dialogue-editor
 status: 안정
 version: 0.1.2
-audience: 스크립트 / 데이터 제작자
+audience: 대화 제작자
 tags:
   - condition
   - action
 ---
 
-## 조건 평가 위치
+## 적용 위치
 
-조건은 노드, 시작 route, 선택지에 붙을 수 있습니다. 배열이 비어 있으면 통과합니다.
+조건과 액션은 대화 문서의 여러 위치에 붙습니다.
 
-| 위치 | 필드 | 모드 필드 |
-| --- | --- | --- |
-| 노드 | `conditions` | `conditionMode` |
-| 시작 route | `conditions` | `mode` |
-| 선택지 | `conditions` | `conditionMode` |
+| 위치 | 조건 필드 | 액션 필드 | 설명 |
+| --- | --- | --- | --- |
+| 노드 | `conditions` | 없음 | 노드 자체가 진입 가능한지 정합니다. |
+| 시작 route | `conditions` | route 자체 필드 | 시작 노드에서 어느 흐름으로 갈지 정합니다. |
+| 선택지 | `conditions` | `actions` | 선택지가 보일지, 눌렀을 때 무엇을 할지 정합니다. |
 
-모드는 `and`와 `or`를 지원합니다. 값이 비어 있거나 알 수 없으면 `and`로 처리됩니다.
+조건 배열이 비어 있으면 통과합니다. 모드는 `and`와 `or`를 지원합니다. 값이 비어 있거나 알 수 없으면 `and`로 처리됩니다.
 
 ## 조건 타입
 
 | type | 주요 필드 | 동작 |
 | --- | --- | --- |
-| `tag` | `key`, `tag`, `value`, `op` | 플레이어 태그가 있는지 확인합니다. `op: "not"`은 없음 조건입니다. |
-| `stored` | `key`, `value`, `op` | 플레이어 PersistentData의 `dochi_rpg_maker.dialogue.runtime.<key>` 값을 비교합니다. |
+| `tag` | `key`, `tag`, `value`, `op` | 플레이어 태그가 있는지 봅니다. |
+| `stored` | `key`, `value`, `op` | 플레이어 PersistentData의 DRM 런타임 값을 비교합니다. |
 | `item` | `key`, `value`, `op` | 플레이어 인벤토리의 아이템 수량을 비교합니다. |
 | `faction_score` | `faction`, `key`, `amount`, `value`, `op` | CustomNPCs faction point를 비교합니다. |
-| `advancement` | `advancement`, `key`, `op` | 발전 과제 완료 여부를 확인합니다. |
-| `ftb` | `quest`, `key`, `value`, `op` | FTB 퀘스트 상태를 확인합니다. |
-| `ftb_task` | `quest`, `task`, `op` | FTB 퀘스트 태스크 상태를 확인합니다. |
+| `advancement` | `advancement`, `key`, `op` | 발전 과제 완료 여부를 봅니다. |
+| `ftb` | `quest`, `key`, `value`, `op` | FTB 퀘스트 상태를 봅니다. |
+| `ftb_task` | `quest`, `task`, `op` | FTB 퀘스트 태스크 상태를 봅니다. |
 
-숫자 비교를 쓰는 조건은 `>`, `>=`, `<`, `<=`, `==`, `!=`를 사용할 수 있습니다. 태그와 발전 과제는 보통 `has` 또는 `not`을 사용합니다.
+숫자 비교 조건은 `>`, `>=`, `<`, `<=`, `==`, `!=`를 사용할 수 있습니다. 태그와 발전 과제는 보통 `has` 또는 `not`을 사용합니다.
 
 ## 액션 타입
 
@@ -55,7 +55,24 @@ tags:
 | `ftb_task` | `quest`, `task` | FTB 퀘스트 태스크를 완료 처리합니다. |
 | `ftb_complete` | `quest` | FTB 퀘스트를 완료 처리합니다. |
 
-`goto`, `go_shop`, `close`는 내비게이션 액션입니다. 선택지의 액션 배열에서 이 세 타입을 만나면 화면 이동이 결정됩니다. 그 외 타입은 서버 side effect로 실행됩니다.
+`goto`, `go_shop`, `close`는 화면 이동 액션입니다. 선택지의 액션 배열에서 이 타입을 만나면 다음 화면이 결정됩니다. 그 외 타입은 서버에서 결과를 처리하는 액션입니다.
+
+## 보상형 액션
+
+보상은 별도 보상 시스템이 아니라 액션 조합으로 만듭니다.
+
+| 원하는 결과 | 쓰는 액션 |
+| --- | --- |
+| 아이템 지급 | `item` + `itemOp: "give"` |
+| 아이템 회수 | `item` + `itemOp: "take"` 또는 `"remove"` |
+| 특정 수량으로 맞춤 | `item` + `itemOp: "set"` |
+| 태그 부여 | `tag` + `op: "add"` |
+| 태그 제거 | `tag` + `op: "remove"` |
+| 호감도/팩션 점수 변경 | `faction_score` |
+| 발전 과제 지급 | `advancement` + `advancementOp: "grant"` |
+| FTB 퀘스트 처리 | `ftb_task`, `ftb_complete` |
+
+한 선택지에 여러 액션을 넣을 수 있습니다. 예를 들어 아이템을 주고 태그를 붙인 다음 다음 노드로 이동하려면 `item`, `tag`, `goto` 순서로 넣습니다.
 
 ## 명령 액션
 
@@ -85,6 +102,9 @@ tags:
 
 아이템 ID는 `minecraft:apple`처럼 네임스페이스를 포함해야 합니다.
 
-:::warning 선택지 순서
-액션 배열에 `command` 뒤 `goto`가 있으면 명령을 먼저 실행한 뒤 노드를 이동합니다. `close`나 `go_shop`을 너무 앞에 두면 뒤 액션이 실행되지 않을 수 있으므로 결과를 먼저, 화면 이동을 나중에 두는 편이 안전합니다.
-:::
+## 제한
+
+- 조건은 등록된 타입만 사용할 수 있습니다. 임의의 JavaScript나 스크립트 조건을 직접 실행하지 않습니다.
+- 액션 결과는 서버 기준으로 처리됩니다. 클라이언트 화면 텍스트만 바꾼다고 실제 보상이 지급되지는 않습니다.
+- FTB 관련 조건과 액션은 FTB Quests가 로드된 환경에서 의미가 있습니다.
+- 상점 열기는 `go_shop`으로 연결하지만, 상점 상품과 가격은 NPC Shop 문서가 담당합니다.

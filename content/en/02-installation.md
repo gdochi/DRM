@@ -2,7 +2,7 @@
 title: Installation
 slug: installation
 order: 30
-description: Forge, Minecraft, and CustomNPCs assumptions for DRM Core deployment.
+description: Forge, Minecraft, CustomNPCs, and client/server assumptions for DRM Core.
 product: core
 category: Getting Started
 section: getting-started
@@ -31,9 +31,9 @@ Core editors are native Minecraft `Screen` implementations. Dialogue, shop, and 
 
 1. Put the same DRM Core JAR in the client and server `mods` folders.
 2. If the server uses CustomNPCs NPCs, align CustomNPCs across the same modset.
-3. Start the server and confirm that `config/dochi_rpg_maker` exists.
-4. Confirm that bundled sample files were installed.
-5. Test both core item air right-click and NPC right-click in a test world.
+3. Start the server so `config/dochi_rpg_maker` is created.
+4. After bundled files are installed, review `dialogue_sets`, `gui`, `npc_shops`, `currency`, `hud`, and `remnant_msg`.
+5. Prepare the core item and open the editor selector.
 
 Local development builds use the mod folder script:
 
@@ -63,5 +63,5 @@ Back up these paths before updating:
 Default GUI and default dialogue files may be recopied on startup. Do not edit defaults in place for production content; use `Save As` and point NPCs or settings at the new file.
 
 :::warning Version Matching
-If the client is newer than the server, editor packets, server JSON kinds, and runtime GUI fields can drift. Keep the same JAR on both sides and test in a staging world first.
+If the client is newer than the server, editor packets, server JSON kinds, and runtime GUI fields can drift. Keep the same JAR on both sides.
 :::

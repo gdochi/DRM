@@ -1,10 +1,10 @@
 ---
 title: 레머넌트 Msg
 slug: remnant-msg
-order: 87
-description: Remnant Msg Editor에서 메시지 문서, 정책, 표시 GUI를 구성하는 방법입니다.
+order: 115
+description: Remnant Msg Editor에서 메시지 문서, 정책, 조건, 액션, GUI 연결을 구성하는 방법입니다.
 product: core
-category: 핵심 시스템
+category: 레머넌트 Msg
 section: remnant-msg
 status: 안정
 version: 0.1.2
@@ -16,52 +16,86 @@ tags:
 
 ## 역할
 
-Remnant Msg는 일반 대화 노드와 별도로 메시지 출력 규칙을 관리하는 기능입니다. 메시지 문서, 정책, 표시 GUI를 분리해서 운영할 수 있으므로 이벤트 안내, 상태 알림, 연출성 텍스트에 적합합니다.
+Remnant Msg는 일반 NPC 대화와 별도로 월드 안 메시지, 안내문, 상호작용 메시지를 관리하는 기능입니다. 메시지 문서, 정책, 표시 GUI, 마커/세터 아이템이 함께 동작합니다.
 
-코어는 기본 Remnant Msg GUI와 샘플 메시지/정책 파일을 기본 콘텐츠로 설치합니다.
+대화 에디터가 NPC와 대화 흐름을 만드는 도구라면, Remnant Msg Editor는 특정 위치나 상호작용에 붙는 메시지를 관리하는 도구입니다.
 
 ## 저장 위치
-
-Remnant Msg 관련 파일은 아래 위치를 사용합니다.
 
 | 데이터 | 경로 |
 | --- | --- |
 | 메시지 | `config/dochi_rpg_maker/remnant_msg/messages` |
 | 정책 | `config/dochi_rpg_maker/remnant_msg/policies` |
-| 기본 GUI | `config/dochi_rpg_maker/gui/default_remnant_msg_gui.json` |
+| 표시 GUI | `config/dochi_rpg_maker/gui/default_remnant_msg_gui.json` 또는 별도 `remnant_msg` GUI |
 
-표시 화면은 GUI Maker의 `remnant_msg` 레이아웃 프로필을 사용합니다.
+메시지 JSON kind는 `remnant_msg`, 정책 JSON kind는 `remnant_msg_policy`입니다.
 
-## 기본 제작 흐름
+## 상단 버튼
 
-1. `Dochi RPG Maker Core` 아이템을 우클릭합니다.
-2. `Remnant Msg Editor`를 엽니다.
-3. 메시지 문서를 작성합니다.
-4. 메시지 출력 조건이나 정책을 정합니다.
-5. 표시용 GUI가 필요하면 GUI Maker에서 `remnant_msg` 타입 GUI를 수정합니다.
-6. 저장 후 서버 리로드로 반영합니다.
-
-## 메시지와 정책의 차이
-
-| 구분 | 역할 |
+| 버튼 | 기능 |
 | --- | --- |
-| 메시지 | 실제 표시될 텍스트와 표시 단위입니다. |
-| 정책 | 언제, 어떤 방식으로 메시지를 보여줄지 정하는 규칙입니다. |
-| GUI | 메시지가 화면에 어떻게 배치될지 정하는 레이아웃입니다. |
+| `Editors` | 공용 에디터 선택 화면으로 돌아갑니다. |
+| `Create New` | 새 메시지 문서를 만듭니다. |
+| `Load` | 메시지 또는 정책 JSON을 불러옵니다. |
+| `Save` | 현재 문서를 저장합니다. |
+| `Save As` | 새 파일명으로 저장합니다. |
+| `Reset` | 현재 초안을 기본값으로 되돌립니다. |
+| `World List` | 월드에 배치된 레머넌트 메시지 목록 흐름을 엽니다. |
+| `Close` | 에디터를 닫습니다. |
 
-메시지 내용과 표시 위치를 분리하면 같은 메시지를 다른 GUI에 연결하거나, 같은 GUI를 여러 정책에서 재사용하기 쉽습니다.
+## 페이지 구성
 
-## GUI 연결
-
-Remnant Msg GUI는 일반 대화 GUI와 같은 `gui` 저장소에 있지만 `guiType`과 컴포넌트 구성이 다릅니다. 기본 파일은 `default_remnant_msg_gui.json`이며, 직접 수정하기보다 복사본을 만들어 사용하는 편이 안전합니다.
-
-GUI Maker에서 확인할 때는 미리보기 텍스트와 실제 런타임 메시지가 다를 수 있습니다. 실제 출력은 Remnant Msg 문서와 정책이 전달하는 값이 기준입니다.
-
-## 점검 순서
-
-| 증상 | 확인할 것 |
+| 페이지 | 역할 |
 | --- | --- |
-| 메시지가 보이지 않음 | 메시지 파일, 정책 파일, 서버 리로드를 확인합니다. |
-| GUI가 깨짐 | `guiType`, 컴포넌트 ID, 기본 GUI 경로를 확인합니다. |
-| 다른 메시지가 나옴 | 정책이 참조하는 메시지 ID를 확인합니다. |
-| 위치가 이상함 | GUI Maker에서 `remnant_msg` 프로필로 열었는지 확인합니다. |
+| `Message` | 메시지 이름, GUI 파일, 본문, 텍스트 스타일을 편집합니다. |
+| `Interact Conditions` | 플레이어가 메시지와 상호작용할 수 있는 조건을 정합니다. |
+| `View Conditions` | 메시지가 보일 조건을 정합니다. |
+| `View Actions` | 메시지를 본 뒤 실행할 액션을 정합니다. |
+
+조건과 액션의 기본 방식은 Dialogue Editor와 비슷하지만, 적용 위치가 NPC 대화가 아니라 레머넌트 메시지입니다.
+
+## 메시지 문서 필드
+
+| 필드 | 의미 |
+| --- | --- |
+| `type` | 메시지 문서 타입입니다. |
+| `id` | 메시지 고유 ID입니다. |
+| `name` | 에디터와 목록에 표시되는 이름입니다. |
+| `enabled` | 메시지 사용 여부입니다. |
+| `message` | 실제 표시할 본문입니다. |
+| `messageStyles` | 본문 일부에 적용할 색상, 굵게, 기울임, 밑줄, 취소선 스타일입니다. |
+| `gui` | 사용할 `remnant_msg` GUI 파일입니다. |
+| `useConditionsEnabled` | 상호작용 조건 사용 여부입니다. |
+| `messageConditionsEnabled` | 보기 조건 사용 여부입니다. |
+| `messageActionsEnabled` | 보기 액션 사용 여부입니다. |
+| `messageTrigger` | 액션 실행 트리거입니다. |
+
+`messageTrigger`는 기본적으로 `every_view`와 `once_per_player` 흐름을 사용합니다.
+
+## 정책 문서 필드
+
+| 필드 | 의미 |
+| --- | --- |
+| `generalCanWriteMessage` | 일반 사용자가 메시지 작성 기능을 쓸 수 있는지 정합니다. |
+| `generalCanUseJson` | 일반 사용자가 JSON 메시지를 사용할 수 있는지 정합니다. |
+| `generalCanUseTriggers` | 일반 사용자가 트리거를 사용할 수 있는지 정합니다. |
+| `adminCanUseJson` | 관리자 JSON 사용 권한입니다. |
+| `adminCanUseTriggers` | 관리자 트리거 사용 권한입니다. |
+| `consumeSetterOnGeneralUse` | 일반 사용자가 세터 아이템을 쓰면 소비할지 정합니다. |
+| `markerLifetimeTicks` | 마커 유지 시간입니다. 0이면 별도 제한을 두지 않습니다. |
+| `maxMessageLength` | 메시지 본문 최대 길이입니다. |
+
+## 가능한 것
+
+- 월드 위치나 마커에 메시지를 연결할 수 있습니다.
+- 메시지 본문 일부에 색상과 글자 스타일을 줄 수 있습니다.
+- 보기 조건과 상호작용 조건을 따로 설정할 수 있습니다.
+- 메시지를 볼 때 태그, 명령, 아이템 같은 액션을 실행할 수 있습니다.
+- GUI Maker의 `remnant_msg` 타입 GUI로 표시 화면을 바꿀 수 있습니다.
+
+## 제한
+
+- Remnant Msg는 대화 트리 편집기가 아닙니다. 여러 선택지를 가진 NPC 대화는 Dialogue Editor가 담당합니다.
+- 메시지 표시 GUI는 `gui` 저장소를 사용하지만, `guiType`은 `remnant_msg`여야 합니다.
+- 정책은 권한과 사용 범위를 정하는 문서입니다. 실제 메시지 본문은 메시지 문서에 있어야 합니다.
+- 마커와 세터 아이템은 월드 배치 흐름에 연결됩니다. 단순 JSON 작성만으로 월드에 자동 배치되지는 않습니다.

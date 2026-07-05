@@ -47,13 +47,6 @@
           "description_ko": "대화 노드, 선택지, 조건, 액션을 다룹니다."
         },
         {
-          "id": "gui-maker",
-          "label": "GUI Maker",
-          "label_ko": "GUI Maker",
-          "description": "Layout JSON, GUI types, and screen components.",
-          "description_ko": "GUI JSON, 화면 타입, 컴포넌트를 다룹니다."
-        },
-        {
           "id": "npc-shop",
           "label": "NPC Shop",
           "label_ko": "NPC Shop",
@@ -66,6 +59,13 @@
           "label_ko": "커런시 에디터",
           "description": "Currency definitions, pickup conversion, and balances.",
           "description_ko": "화폐 정의, 픽업 변환, 잔액 저장을 다룹니다."
+        },
+        {
+          "id": "gui-maker",
+          "label": "GUI Maker",
+          "label_ko": "GUI Maker",
+          "description": "Layout JSON, GUI types, and screen components.",
+          "description_ko": "GUI JSON, 화면 타입, 컴포넌트를 다룹니다."
         },
         {
           "id": "hud-maker",
@@ -85,8 +85,8 @@
           "id": "operations",
           "label": "Operations",
           "label_ko": "운영 / 레퍼런스",
-          "description": "JSON reference, data flow, troubleshooting, and workflows.",
-          "description_ko": "JSON, 데이터 흐름, 문제 해결, 작업 흐름입니다."
+          "description": "JSON reference, data flow, and workflows.",
+          "description_ko": "JSON, 데이터 흐름, 작업 흐름입니다."
         }
       ]
     },

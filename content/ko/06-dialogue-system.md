@@ -1,10 +1,10 @@
 ---
-title: 대화 시스템
+title: 다이얼로그 에디터
 slug: dialogue-system
-order: 70
-description: DialogueDocument 구조, 대화 세트 저장 방식, NPC 런타임 실행 흐름입니다.
+order: 60
+description: Dialogue Editor의 화면 구조, 대화 문서, 노드, 선택지, 런타임 연결 방식입니다.
 product: core
-category: 핵심 시스템
+category: 다이얼로그 에디터
 section: dialogue-editor
 status: 안정
 version: 0.1.2
@@ -14,51 +14,15 @@ tags:
   - npc
 ---
 
-## DialogueDocument 구조
+## 역할
 
-대화는 하나의 `DialogueDocument`로 읽히며, 파일로 저장할 때는 대화 세트 폴더 안에 `dialogue_set.json`과 노드별 JSON이 함께 생성됩니다.
+Dialogue Editor는 NPC 대화를 만드는 에디터입니다. 한 대화 문서는 `DialogueDocument` 구조를 사용하고, 그 안에 시작 노드, 일반 노드, 선택지, 조건, 액션, GUI 연결 정보가 들어갑니다.
 
-| 필드 | 의미 |
-| --- | --- |
-| `version` | 현재 기본값은 `1`입니다. |
-| `dialogueScript` | DRM 대화 문서임을 나타냅니다. |
-| `globals` | FTB, GeckoLib, shopScript 같은 전역 호환 플래그입니다. |
-| `dialogueDefaultGui` | 대화 런타임에서 사용할 GUI 연결입니다. |
-| `setRegistry` | 포함된 대화 세트 이름 목록입니다. 기본값은 `default_set`입니다. |
-| `nodes` | 노드 이름을 키로 하는 노드 객체 모음입니다. |
-| `current` | 현재 선택된 노드 또는 시작 노드입니다. |
-| `selectedSetScope` | 에디터에서 선택한 세트 범위입니다. |
-
-## 노드와 선택지
-
-| 단위 | 실제 필드 | 설명 |
-| --- | --- | --- |
-| 시작 노드 | `type: "start"` | 플레이어가 NPC를 열었을 때 조건부 route를 평가합니다. |
-| 일반 노드 | `type: "general"` | NPC 대사, 선택지, 노드 조건을 가집니다. |
-| Route | `routes` | 시작 노드에서 조건에 따라 다음 노드, 상점, 닫기를 고릅니다. |
-| Choice | `choice` | 플레이어에게 보이는 선택지입니다. 조건 통과 후 화면에 표시됩니다. |
-| Condition | `conditions` | 노드, route, choice의 표시/진입 가능 여부를 결정합니다. |
-| Action | `actions` | 선택지를 눌렀을 때 이동, 상점 열기, 명령 실행 등을 수행합니다. |
-
-예전 JSON의 `choices` 배열은 현재 런타임에서 쓰는 이름이 아닙니다. 현재 문서는 `choice` 배열을 사용합니다.
-
-## 런타임 흐름
-
-```text
-NPC 우클릭
-  -> DialogueStorage.load(npc)
-  -> 시작 노드 route 조건 평가
-  -> 현재 노드의 choice 조건 필터링
-  -> 클라이언트 DialogueRuntimeScreen 열기
-  -> 선택지 클릭
-  -> actions 순서대로 평가
-```
-
-`goto`, `go_shop`, `close`는 화면 이동을 결정합니다. `command`, `tag`, `item`, `faction_score`, `advancement`, `ftb_task`, `ftb_complete`는 서버 상태를 바꾸는 side effect로 실행됩니다.
+대화는 크게 두 단계로 동작합니다. 먼저 `start` 노드가 어떤 일반 노드로 들어갈지 정하고, 그 다음 일반 노드가 대사와 선택지를 보여줍니다.
 
 ## 저장 방식
 
-`dialogue_set` 서버 JSON을 저장하면 폴더는 다음처럼 구성됩니다.
+대화 세트는 서버 JSON `dialogue_sets` 도메인에 저장됩니다.
 
 ```text
 config/dochi_rpg_maker/dialogue_sets/my_set/
@@ -68,11 +32,59 @@ config/dochi_rpg_maker/dialogue_sets/my_set/
   action_examples.json
 ```
 
-불러올 때는 `dialogue_set.json`이 있으면 우선 읽고, 노드별 파일이 있으면 노드 파일을 조합해 다시 문서로 만듭니다. 기본 세트 `default_set`은 보호 기본값이므로 직접 덮어쓰기보다 `Save As`로 새 세트를 만듭니다.
+`dialogue_set.json` 하나에 전체가 들어갈 수도 있고, 노드별 JSON 파일이 분리될 수도 있습니다. 로드할 때는 세트 파일과 노드 파일을 조합해 하나의 문서로 읽습니다.
+
+## DialogueDocument 주요 필드
+
+| 필드 | 의미 |
+| --- | --- |
+| `version` | 문서 형식 버전입니다. |
+| `dialogueScript` | DRM 대화 문서임을 나타내는 값입니다. |
+| `globals` | FTB, GeckoLib, shopScript 같은 전역 호환 플래그입니다. |
+| `dialogueDefaultGui` | 대화 런타임에서 사용할 기본 GUI 연결입니다. |
+| `setRegistry` | 포함된 대화 세트 이름 목록입니다. 기본값은 `default_set`입니다. |
+| `nodes` | 노드 이름을 키로 갖는 노드 객체 모음입니다. |
+| `current` | 에디터에서 현재 선택한 노드입니다. |
+| `selectedSetScope` | 에디터에서 선택한 세트 범위입니다. |
+
+## 노드 종류
+
+| 종류 | 실제 값 | 역할 |
+| --- | --- | --- |
+| 시작 노드 | `type: "start"` | NPC를 처음 클릭했을 때 어느 일반 노드로 갈지 정합니다. |
+| 일반 노드 | `type: "general"` | NPC 대사, 선택지, 조건, 액션을 담습니다. |
+
+시작 노드는 보통 화면에 직접 대사를 보여주지 않습니다. 조건에 따라 다음 노드를 고르는 입구 역할을 합니다. 일반 노드는 플레이어가 실제로 보는 대화 화면입니다.
+
+## 선택지와 route
+
+| 단위 | 필드 | 설명 |
+| --- | --- | --- |
+| Route | `routes` | 시작 노드에서 조건에 따라 다음 노드, 상점, 닫기 동작을 고릅니다. |
+| Choice | `choice` | 플레이어에게 보이는 선택지입니다. |
+| Condition | `conditions` | 노드, route, 선택지가 보이거나 실행될 수 있는지 정합니다. |
+| Action | `actions` | 선택지를 눌렀을 때 실행할 결과입니다. |
+
+현재 문서 형식은 선택지 배열 이름으로 `choice`를 사용합니다. 예전 JSON의 `choices`는 현재 에디터가 쓰는 이름이 아닙니다.
+
+## 대화 런타임 흐름
+
+```text
+NPC 우클릭
+  -> NPC에 연결된 대화 source 확인
+  -> 대화 세트 로드
+  -> start 노드 route 조건 평가
+  -> 일반 노드 표시
+  -> 선택지 조건 필터링
+  -> 선택지 클릭
+  -> actions 순서대로 실행
+```
+
+`goto`, `go_shop`, `close`는 화면 이동을 결정합니다. `command`, `tag`, `item`, `faction_score`, `advancement`, `ftb_task`, `ftb_complete`는 서버 상태를 바꾸는 액션입니다.
 
 ## NPC에 저장되는 값
 
-대화가 NPC에 적용되면 NPC PersistentData에 다음 계열 키가 저장됩니다.
+대화를 NPC에 적용하면 NPC PersistentData에 다음 계열 값이 저장됩니다.
 
 | 키 계열 | 설명 |
 | --- | --- |
@@ -81,8 +93,18 @@ config/dochi_rpg_maker/dialogue_sets/my_set/
 | `dochi_rpg_maker.dialogue.source.path` | 서버 JSON 경로입니다. |
 | `dochi_rpg_maker.dialogue.enabled` | 대화 활성 여부입니다. |
 
-서버 JSON 경로가 있으면 런타임은 먼저 그 파일을 읽습니다. 파일이 없거나 읽지 못하면 NPC에 직접 저장된 JSON을 사용합니다.
+서버 JSON 경로가 있으면 런타임은 그 파일을 먼저 읽습니다. 파일 경로가 비어 있거나 읽을 수 없으면 NPC에 직접 저장된 JSON을 사용합니다.
 
-:::tip 기본 샘플
-기본 `default_set`은 1번 시작 노드에서 2번 인사 노드로 이동하고, 3-5번 노드로 분기하는 작은 샘플 대화입니다. 새 기능을 확인할 때 이 세트를 복제해 테스트하면 안전합니다.
-:::
+## 가능한 것
+
+- NPC 대사와 선택지를 여러 노드로 나눌 수 있습니다.
+- 조건에 따라 선택지를 숨기거나 다른 노드로 보낼 수 있습니다.
+- 선택지를 누를 때 아이템 지급, 태그 변경, 명령 실행, 상점 열기 같은 액션을 실행할 수 있습니다.
+- 대화 GUI를 GUI Maker에서 만든 `dialogue` 타입 GUI로 바꿀 수 있습니다.
+
+## 제한
+
+- Dialogue Editor는 대화 흐름과 액션을 만드는 도구입니다. 상점 상품 자체는 NPC Shop에서 만들어야 합니다.
+- 선택지에 `go_shop` 액션을 넣어도 연결할 상점 파일이나 NPC 상점이 없으면 상점 화면으로 이어질 수 없습니다.
+- 클라이언트 화면에 보이는 텍스트와 서버에서 실행되는 명령은 역할이 다릅니다. 명령, 아이템, 화폐 관련 결과는 서버에서 처리됩니다.
+- 복잡한 스크립트 언어를 직접 실행하는 구조가 아닙니다. 등록된 조건과 액션 타입 안에서 구성해야 합니다.
