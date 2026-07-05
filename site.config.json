@@ -6,6 +6,12 @@
   "repository": "https://github.com/gdochi/DRM",
   "feedbackUrl": "https://github.com/gdochi/DRM/discussions",
   "discordUrl": "https://discord.gg/",
+  "youtubeUrl": "https://www.youtube.com/",
+  "homeImage": {
+    "src": "",
+    "alt": "DRM wiki screenshot",
+    "alt_ko": "DRM 위키 스크린샷"
+  },
   "locales": {
     "ko": {
       "label": "한국어",
@@ -20,40 +26,31 @@
   },
   "products": {
     "core": {
-      "label": "DRM Core",
-      "shortLabel": "Core",
+      "label": "DRM",
+      "shortLabel": "DRM",
       "accent": "blue",
-      "eyebrow": "Runtime & Editor",
-      "eyebrow_ko": "런타임 / 에디터",
-      "description": "Core runtime and creator workflows for GUI, dialogue, shops, currencies, HUDs, conditions, actions, and JSON data.",
-      "description_ko": "GUI, 대화, 상점, 화폐, HUD, 조건, 액션, JSON 데이터 흐름을 다루는 DRM 기본 문서입니다.",
-      "heroText": "Start here when installing DRM or creating dialogue, shop, GUI, currency, and HUD flows.",
-      "heroText_ko": "DRM 설치, 대화/상점/GUI/화폐/HUD 제작, 데이터 흐름 확인은 이 분기에서 시작합니다.",
-      "tags": ["GUI", "Dialogue", "Shop", "Currency", "HUD", "JSON"]
+      "description": "Main mod.",
+      "description_ko": "메인 모드"
     },
     "mob-editor": {
       "label": "DRM Mob Editor",
       "shortLabel": "Mob Editor",
       "accent": "violet",
-      "eyebrow": "Combat Authoring",
-      "eyebrow_ko": "전투 제작",
-      "description": "Combat-focused documentation for patterns, hitboxes, detection, phases, and reactive enemy behavior.",
-      "description_ko": "패턴, 히트박스, 탐지, 페이즈, 패링 같은 전투형 NPC 제작 문서입니다.",
-      "heroText": "Use this track when building action-combat NPCs or boss-style behavior.",
-      "heroText_ko": "보스형 NPC, 액션 전투 패턴, 탐지/순찰 AI를 설계할 때 이 분기를 사용합니다.",
-      "tags": ["Pattern", "Hitbox", "Detection", "Parry"]
+      "description": "DRM add-on. Combat-focused documentation for patterns, hitboxes, detection, phases, and reactive enemy behavior.",
+      "description_ko": "DRM의 애드온. 패턴, 히트박스, 탐지, 페이즈, 패링 같은 전투형 NPC 제작 문서입니다.",
+      "disabled": true,
+      "statusText": "In development",
+      "statusText_ko": "개발 중"
     },
     "cnpc-tacz-fire": {
       "label": "CNPC TaCZ Fire",
       "shortLabel": "TaCZ Fire",
       "accent": "amber",
-      "eyebrow": "Firearm NPC",
-      "eyebrow_ko": "총기 NPC",
-      "description": "NPC firearm behavior, reload logic, target filters, and combat setup for TaCZ integration.",
-      "description_ko": "TaCZ 총기를 사용하는 NPC의 사격, 재장전, 타겟 필터, 전투 자세 설정 문서입니다.",
-      "heroText": "Use this track when configuring guards, raiders, soldiers, or boss NPCs that use TaCZ weapons.",
-      "heroText_ko": "TaCZ 총기를 쓰는 경비병, 약탈자, 병사, 보스 NPC를 만들 때 이 분기를 사용합니다.",
-      "tags": ["TaCZ", "NPC", "Reload", "Targeting"]
+      "description": "Planned documentation.",
+      "description_ko": "추후 작성 예정",
+      "disabled": true,
+      "statusText": "Planned",
+      "statusText_ko": "추후 작성 예정"
     }
   }
 }

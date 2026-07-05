@@ -7,6 +7,8 @@ const srcDir = path.join(root, "src");
 const contentDir = path.join(root, "content");
 const distDir = path.join(root, "dist");
 const assetsDir = path.join(distDir, "assets");
+const mediaDir = path.join(srcDir, "media");
+const distMediaDir = path.join(assetsDir, "media");
 
 const config = JSON.parse(await readFile(path.join(root, "site.config.json"), "utf8"));
 const docsByLocale = {};
@@ -27,6 +29,7 @@ template = template
 await writeFile(path.join(distDir, "index.html"), template, "utf8");
 await copyFile(path.join(srcDir, "styles.css"), path.join(assetsDir, "styles.css"));
 await copyFile(path.join(srcDir, "app.js"), path.join(assetsDir, "app.js"));
+await copyDirectory(mediaDir, distMediaDir);
 await writeFile(
   path.join(assetsDir, "docs-data.js"),
   `window.DRM_DOCS_CONFIG = ${JSON.stringify(config)};\nwindow.DRM_DOCS_DATA = ${JSON.stringify(docsByLocale)};\n`,
@@ -48,6 +51,7 @@ async function loadLocale(locale) {
   for (const file of files) {
     const raw = await readFile(path.join(localeDir, file), "utf8");
     const { data, body } = parseFrontMatter(raw);
+    if (data.hiddenNav) continue;
     const slug = data.slug || file.replace(/^\d+-/, "").replace(/\.md$/, "");
     const rendered = renderMarkdown(body, slug);
     docs.push({
@@ -58,6 +62,7 @@ async function loadLocale(locale) {
       tags: Array.isArray(data.tags) ? data.tags : [],
       product: data.product || "core",
       category: data.category || "General",
+      hiddenNav: Boolean(data.hiddenNav),
       status: data.status || "Draft",
       version: data.version || "",
       audience: data.audience || "",
@@ -69,6 +74,26 @@ async function loadLocale(locale) {
   }
 
   return docs.sort((a, b) => a.order - b.order);
+}
+
+async function copyDirectory(source, target) {
+  let entries = [];
+  try {
+    entries = await readdir(source, { withFileTypes: true });
+  } catch {
+    return;
+  }
+
+  await mkdir(target, { recursive: true });
+  for (const entry of entries) {
+    const from = path.join(source, entry.name);
+    const to = path.join(target, entry.name);
+    if (entry.isDirectory()) {
+      await copyDirectory(from, to);
+    } else if (entry.isFile()) {
+      await copyFile(from, to);
+    }
+  }
 }
 
 function parseFrontMatter(raw) {

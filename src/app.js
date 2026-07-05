@@ -19,8 +19,7 @@
   }
 
   const state = {
-    locale: safeGet("drm-docs-locale", config.defaultLocale || "ko"),
-    query: ""
+    locale: safeGet("drm-docs-locale", config.defaultLocale || "ko")
   };
 
   const localeKeys = Object.keys(config.locales || {});
@@ -37,6 +36,8 @@
       external: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>',
       moon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.5 6.5 0 0 0 21 12.8z"></path></svg>',
       sun: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>',
+      discord: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9.5h.01M16 9.5h.01"></path><path d="M7.5 16.5c1.2.7 2.7 1.1 4.5 1.1s3.3-.4 4.5-1.1"></path><path d="M6.7 18.8 5 21l-.4-4.1A10.2 10.2 0 0 1 4 13.5C4 7.8 7.6 4 12 4s8 3.8 8 9.5c0 5.2-3.4 8-8 8-1.9 0-3.7-.5-5.3-1.4"></path></svg>',
+      youtube: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 8.5A3 3 0 0 1 6.4 6h11.2a3 3 0 0 1 2.9 2.5c.3 2.3.3 4.7 0 7A3 3 0 0 1 17.6 18H6.4a3 3 0 0 1-2.9-2.5 27 27 0 0 1 0-7Z"></path><path d="m10 9 5 3-5 3V9Z"></path></svg>',
       chevron: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg>',
       arrowLeft: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>',
       arrowRight: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>',
@@ -50,64 +51,28 @@
   function t(key) {
     const copy = {
       ko: {
-        search: "문서 검색",
-        noResults: "검색 결과가 없습니다.",
         repo: "GitHub",
-        onThisPage: "이 문서에서",
-        products: "문서 분기",
+        discord: "Discord",
+        youtube: "YouTube",
         openDocs: "문서 열기",
-        goHome: "홈으로",
-        homeTitle: "DRM Docs",
-        homeLead: "DRM 문서를 제품 단위로 나누고, 세부 화면은 FTB 문서처럼 읽기 중심으로 정리했습니다.",
-        homeHint: "메인에서는 분기만 선택하고, 상세 화면에서 카테고리와 문서를 탐색하는 구조입니다.",
-        readingModel: "읽기 구조",
-        readingOne: "제품 선택",
-        readingTwo: "카테고리 선택",
-        readingThree: "문서 읽기",
-        featured: "주요 문서",
-        categories: "카테고리",
-        documents: "문서",
+        homeTitle: "DRM WIKI",
         openMenu: "사이드바 열기",
         closeMenu: "사이드바 닫기",
-        backToProducts: "제품 목록",
-        status: "상태",
-        version: "버전",
-        audience: "대상",
+        backToProducts: "DRM WIKI",
         previous: "이전 문서",
-        next: "다음 문서",
-        editPage: "문서 소스",
-        trackSummary: "분기 요약",
-        startHere: "추천 시작점"
+        next: "다음 문서"
       },
       en: {
-        search: "Search docs",
-        noResults: "No results found.",
         repo: "GitHub",
-        onThisPage: "On this page",
-        products: "Products",
+        discord: "Discord",
+        youtube: "YouTube",
         openDocs: "Open docs",
-        goHome: "Back home",
-        homeTitle: "DRM Docs",
-        homeLead: "DRM documentation is split by product, with FTB-style detail pages optimized for reading.",
-        homeHint: "Choose a product on the landing page, then browse categories and documents inside that track.",
-        readingModel: "Reading model",
-        readingOne: "Choose product",
-        readingTwo: "Choose category",
-        readingThree: "Read document",
-        featured: "Featured docs",
-        categories: "Categories",
-        documents: "Documents",
+        homeTitle: "DRM WIKI",
         openMenu: "Open sidebar",
         closeMenu: "Close sidebar",
-        backToProducts: "Products",
-        status: "Status",
-        version: "Version",
-        audience: "Audience",
+        backToProducts: "DRM WIKI",
         previous: "Previous",
-        next: "Next",
-        editPage: "Source",
-        trackSummary: "Track summary",
-        startHere: "Start here"
+        next: "Next"
       }
     };
     return (copy[state.locale] && copy[state.locale][key]) || copy.ko[key] || key;
@@ -136,6 +101,7 @@
   }
 
   function linkForProduct(product) {
+    if (!isProductOpen(product)) return "#home";
     const doc = getDefaultDoc(product);
     return `#${escapeAttr(product)}/${escapeAttr(doc ? doc.slug : "")}`;
   }
@@ -144,8 +110,11 @@
     return `#${escapeAttr(doc.product)}/${escapeAttr(doc.slug)}${section ? `::${escapeAttr(section)}` : ""}`;
   }
 
-  function getAllDocs() {
-    return (docsData[state.locale] || []).slice().sort((a, b) => a.order - b.order);
+  function getAllDocs(includeHidden = false) {
+    return (docsData[state.locale] || [])
+      .filter((doc) => includeHidden || !doc.hiddenNav)
+      .slice()
+      .sort((a, b) => a.order - b.order);
   }
 
   function getProductEntries() {
@@ -154,6 +123,19 @@
 
   function getDocsByProduct(product) {
     return getAllDocs().filter((doc) => doc.product === product);
+  }
+
+  function isProductOpen(product) {
+    const meta = config.products?.[product] || {};
+    return !meta.disabled && !meta.comingSoon;
+  }
+
+  function statusText(meta) {
+    return meta[`statusText_${state.locale}`] || meta.statusText || "";
+  }
+
+  function localizedConfigText(source, field) {
+    return source?.[`${field}_${state.locale}`] || source?.[field] || "";
   }
 
   function getDefaultDoc(product) {
@@ -195,103 +177,56 @@
     }).join("");
   }
 
-  function renderProductTabs(activeProduct) {
-    return `
-      <nav class="product-tabs" aria-label="${t("products")}">
-        ${getProductEntries().map(([key, meta]) => `<a class="product-tab${key === activeProduct ? " is-active" : ""} accent-${escapeAttr(meta.accent || "blue")}" href="${linkForProduct(key)}">${escapeHtml(meta.shortLabel || meta.label || key)}</a>`).join("")}
-      </nav>
-    `;
+  function renderSocialLinks() {
+    const links = [
+      { href: config.repository, label: t("repo"), icon: "github" },
+      { href: config.discordUrl, label: t("discord"), icon: "discord" },
+      { href: config.youtubeUrl, label: t("youtube"), icon: "youtube" }
+    ].filter((item) => item.href);
+
+    return links.map((item) => `<a class="icon-button" href="${escapeAttr(item.href)}" target="_blank" rel="noreferrer" aria-label="${escapeAttr(item.label)}" title="${escapeAttr(item.label)}">${icon(item.icon)}</a>`).join("");
   }
 
-  function renderSearchResults() {
-    const query = state.query.trim().toLowerCase();
-    if (!query) return "";
-    const results = [];
-    getAllDocs().forEach((doc) => {
-      const productMeta = config.products?.[doc.product] || {};
-      const haystack = `${doc.title} ${doc.description} ${doc.searchText} ${doc.category} ${productMeta.label || ""} ${productText(productMeta, "description")}`.toLowerCase();
-      if (haystack.includes(query)) {
-        results.push({ doc, productMeta, section: "" });
-      } else {
-        const heading = (doc.headings || []).find((item) => `${item.text}`.toLowerCase().includes(query));
-        if (heading) results.push({ doc, productMeta, heading, section: heading.id });
-      }
-    });
-
-    return `<div class="search-results" role="status">${results.length ? results.slice(0, 12).map((item) => `<a class="search-result" href="${linkForDoc(item.doc, item.section)}"><strong>${escapeHtml(item.heading ? item.heading.text : item.doc.title)}</strong><span>${escapeHtml((item.productMeta.label || item.doc.product) + " · " + (item.doc.category || "General"))}</span></a>`).join("") : `<p>${t("noResults")}</p>`}</div>`;
+  function renderHomeImage() {
+    const media = config.homeImage || {};
+    if (!media.src) return "";
+    return `
+      <figure class="home-media">
+        <img src="${escapeAttr(media.src)}" alt="${escapeAttr(localizedConfigText(media, "alt"))}" loading="lazy" />
+      </figure>
+    `;
   }
 
   function renderHome() {
     const entries = getProductEntries();
-    const totalDocs = getAllDocs().length;
-    const totalCategories = new Set(getAllDocs().map((doc) => `${doc.product}:${doc.category}`)).size;
-    const firstCore = getDefaultDoc("core");
 
     const cards = entries.map(([key, meta]) => {
-      const docs = getDocsByProduct(key);
-      const groups = groupDocs(docs);
-      const firstDoc = docs[0];
-      return `
-        <article class="track-card accent-${escapeAttr(meta.accent || "blue")}">
-          <div class="track-icon">${escapeHtml(meta.shortLabel || meta.label || key).slice(0, 2)}</div>
+      const disabled = !isProductOpen(key);
+      const firstDoc = getDefaultDoc(key);
+      const body = `
           <div class="track-body">
-            <div class="track-label-row">
-              <p class="eyebrow">${escapeHtml(productText(meta, "eyebrow") || t("products"))}</p>
-              <span class="track-count">${docs.length} ${t("documents")}</span>
-            </div>
             <h2>${escapeHtml(meta.label || key)}</h2>
             <p>${escapeHtml(productText(meta, "description"))}</p>
-            <div class="track-tags">${(meta.tags || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
           </div>
-          <div class="track-side">
-            <div class="track-stats">
-              <div><strong>${groups.length}</strong><span>${t("categories")}</span></div>
-              <div><strong>${docs.length}</strong><span>${t("documents")}</span></div>
-            </div>
-            <a class="primary-action" href="#${escapeAttr(key)}/${escapeAttr(firstDoc ? firstDoc.slug : "")}">${t("openDocs")} ${icon("chevron")}</a>
-          </div>
-        </article>
       `;
+      if (disabled) {
+        return `<article class="track-card is-disabled">${body}<span class="track-status">${escapeHtml(statusText(meta))}</span></article>`;
+      }
+      return `<a class="track-card" href="#${escapeAttr(key)}/${escapeAttr(firstDoc ? firstDoc.slug : "")}">${body}<span class="track-open">${t("openDocs")}${icon("chevron")}</span></a>`;
     }).join("");
 
     return `
       <section class="home-shell">
-        <div class="home-hero">
-          <div class="home-copy">
-            <p class="eyebrow">Dochi RPG Maker</p>
-            <h1>${t("homeTitle")}</h1>
-            <p class="hero-lead">${t("homeLead")}</p>
-            <p class="hero-hint">${t("homeHint")}</p>
-            <div class="home-metrics">
-              <div><strong>${entries.length}</strong><span>${t("products")}</span></div>
-              <div><strong>${totalCategories}</strong><span>${t("categories")}</span></div>
-              <div><strong>${totalDocs}</strong><span>${t("documents")}</span></div>
-            </div>
-            <div class="hero-actions">
-              <a class="primary-action" href="${firstCore ? linkForDoc(firstCore) : "#home"}">${t("startHere")}</a>
-              <a class="ghost-action" href="${escapeAttr(config.repository || "#")}" target="_blank" rel="noreferrer">${t("repo")} ${icon("external")}</a>
-            </div>
-          </div>
-          <aside class="reading-panel">
-            <p class="eyebrow">${t("readingModel")}</p>
-            <ol class="reading-steps">
-              <li><span>01</span><strong>${t("readingOne")}</strong></li>
-              <li><span>02</span><strong>${t("readingTwo")}</strong></li>
-              <li><span>03</span><strong>${t("readingThree")}</strong></li>
-            </ol>
-            <div class="reading-note">
-              ${icon("layers")}
-              <p>${state.locale === "ko" ? "메인 화면은 분기 선택만 남기고, 실제 정보는 제품 내부 문서로 이동시켰습니다." : "The landing page stays focused on product selection; details live inside each product track."}</p>
-            </div>
-          </aside>
-        </div>
+        <header class="home-hero">
+          <h1>${t("homeTitle")}</h1>
+          ${renderHomeImage()}
+        </header>
         <div class="track-list">${cards}</div>
       </section>
     `;
   }
 
   function renderSidebar(product, activeDoc) {
-    const meta = config.products?.[product] || {};
     const docs = getDocsByProduct(product);
     const groups = groupDocs(docs);
     return `
@@ -300,24 +235,9 @@
           <button class="back-link" type="button" data-home-link>${icon("home")} ${t("backToProducts")}</button>
           <button class="icon-button hide-desktop" data-close-sidebar type="button" aria-label="${t("closeMenu")}">×</button>
         </div>
-        <div class="sidebar-product accent-${escapeAttr(meta.accent || "blue")}">
-          <p class="eyebrow">${escapeHtml(productText(meta, "eyebrow") || t("trackSummary"))}</p>
-          <strong>${escapeHtml(meta.label || product)}</strong>
-          <span>${escapeHtml(productText(meta, "heroText") || productText(meta, "description"))}</span>
-        </div>
         <nav class="doc-nav" aria-label="Documentation">
           ${groups.map((group) => `<section class="nav-group"><div class="nav-group-title">${escapeHtml(group.name)}</div>${group.items.map((doc) => `<a class="doc-nav-link${activeDoc && doc.slug === activeDoc.slug ? " is-active" : ""}" href="${linkForDoc(doc)}"><span>${escapeHtml(doc.title)}</span><small>${escapeHtml(doc.description || "")}</small></a>`).join("")}</section>`).join("")}
         </nav>
-      </aside>
-    `;
-  }
-
-  function renderToc(activeDoc) {
-    const headings = (activeDoc?.headings || []).filter((heading) => heading.level <= 3);
-    return `
-      <aside class="toc" aria-label="${t("onThisPage")}">
-        <p class="eyebrow">${t("onThisPage")}</p>
-        <div class="toc-links">${headings.length ? headings.map((heading) => `<a class="toc-link level-${heading.level}" href="${linkForDoc(activeDoc, heading.id)}">${escapeHtml(heading.text)}</a>`).join("") : `<p class="toc-empty">-</p>`}</div>
       </aside>
     `;
   }
@@ -333,34 +253,11 @@
   }
 
   function renderDoc(product, activeDoc) {
-    const meta = config.products?.[product] || {};
-    const sourceUrl = config.repository && activeDoc.sourcePath ? `${config.repository}/blob/main/${activeDoc.sourcePath}` : "";
     return `
       <div class="doc-shell">
-        <div class="doc-breadcrumbs">
-          <a href="#home">${icon("home")} DRM</a>
-          <span>${icon("chevron")}</span>
-          <a href="${linkForProduct(product)}">${escapeHtml(meta.label || product)}</a>
-          <span>${icon("chevron")}</span>
-          <strong>${escapeHtml(activeDoc.title)}</strong>
-        </div>
         <article class="doc-page" data-doc-page>
-          <header class="doc-page-head accent-${escapeAttr(meta.accent || "blue")}">
-            <div class="doc-title-row">
-              <div>
-                <p class="eyebrow">${escapeHtml(activeDoc.category || "General")}</p>
-                <h1>${escapeHtml(activeDoc.title)}</h1>
-              </div>
-              <span class="product-pill">${escapeHtml(meta.shortLabel || meta.label || product)}</span>
-            </div>
-            ${activeDoc.description ? `<p class="doc-lead">${escapeHtml(activeDoc.description)}</p>` : ""}
-            <div class="doc-meta-row">
-              ${activeDoc.status ? `<span><b>${t("status")}</b>${escapeHtml(activeDoc.status)}</span>` : ""}
-              ${activeDoc.version ? `<span><b>${t("version")}</b>${escapeHtml(activeDoc.version)}</span>` : ""}
-              ${activeDoc.audience ? `<span><b>${t("audience")}</b>${escapeHtml(activeDoc.audience)}</span>` : ""}
-              ${sourceUrl ? `<a href="${escapeAttr(sourceUrl)}" target="_blank" rel="noreferrer"><b>${t("editPage")}</b>${icon("external")}</a>` : ""}
-            </div>
-            <div class="doc-tags">${(activeDoc.tags || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
+          <header class="doc-page-head">
+            <h1>${escapeHtml(activeDoc.title)}</h1>
           </header>
           <div class="doc-page-body">${activeDoc.html}</div>
           ${renderDocFooter(product, activeDoc)}
@@ -376,7 +273,7 @@
     let activeDoc = null;
 
     if (view === "doc") {
-      if (!config.products?.[product]) {
+      if (!config.products?.[product] || !isProductOpen(product)) {
         view = "home";
         product = "";
       } else {
@@ -392,43 +289,20 @@
       <header class="topbar">
         <div class="topbar-left">
           ${view === "doc" ? `<button class="icon-button hide-desktop" data-open-sidebar type="button" aria-label="${t("openMenu")}">${icon("menu")}</button>` : ""}
-          <a class="brand" href="#home" aria-label="${escapeAttr(config.title)}">
-            <span class="brand-mark">${escapeHtml(config.brand || "DRM")}</span>
-            <span class="brand-copy"><strong>${escapeHtml(config.title || "DRM")}</strong><small>Documentation</small></span>
-          </a>
-        </div>
-        ${renderProductTabs(product)}
-        <div class="search-shell">
-          ${icon("search")}
-          <input data-search type="search" value="${escapeAttr(state.query)}" placeholder="${t("search")}" autocomplete="off" />
-          ${renderSearchResults()}
         </div>
         <div class="top-actions">
           <div class="locale-switch" aria-label="Language">${renderLocaleButtons()}</div>
           <button class="icon-button" data-theme-toggle type="button" aria-label="Theme">${icon(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button>
-          <a class="icon-button" href="${escapeAttr(config.repository || "#")}" target="_blank" rel="noreferrer" aria-label="${t("repo")}">${icon("github")}</a>
+          ${renderSocialLinks()}
         </div>
       </header>
-      ${view === "home" ? `<main class="main-home">${renderHome()}</main>` : `<div class="layout">${renderSidebar(product, activeDoc)}<main class="content">${renderDoc(product, activeDoc)}</main>${renderToc(activeDoc)}<div class="scrim" data-scrim></div></div>`}
+      ${view === "home" ? `<main class="main-home">${renderHome()}</main>` : `<div class="layout">${renderSidebar(product, activeDoc)}<main class="content">${renderDoc(product, activeDoc)}</main><div class="scrim" data-scrim></div></div>`}
     `;
 
     bindEvents(view, product, activeDoc, route.section);
   }
 
   function bindEvents(view, product, activeDoc, section) {
-    const search = app.querySelector("[data-search]");
-    if (search) {
-      search.addEventListener("input", (event) => {
-        state.query = event.target.value;
-        renderPage();
-        const nextSearch = app.querySelector("[data-search]");
-        if (nextSearch) {
-          nextSearch.focus();
-          nextSearch.setSelectionRange(nextSearch.value.length, nextSearch.value.length);
-        }
-      });
-    }
-
     app.querySelectorAll("[data-locale]").forEach((button) => {
       button.addEventListener("click", () => {
         state.locale = button.dataset.locale;
@@ -473,24 +347,7 @@
       } else {
         window.scrollTo({ top: 0, behavior: "auto" });
       }
-      observeHeadings(activeDoc);
     }
-  }
-
-  function observeHeadings(activeDoc) {
-    const headings = Array.from(app.querySelectorAll(".doc-page-body h2, .doc-page-body h3"));
-    if (!headings.length || !("IntersectionObserver" in window)) return;
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (!visible) return;
-      const id = visible.target.id;
-      app.querySelectorAll(".toc-link").forEach((link) => {
-        link.classList.toggle("is-active", link.getAttribute("href") === linkForDoc(activeDoc, id));
-      });
-    }, { rootMargin: "-15% 0px -70% 0px", threshold: [0.2, 0.6] });
-    headings.forEach((heading) => observer.observe(heading));
   }
 
   window.addEventListener("hashchange", renderPage);
