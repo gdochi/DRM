@@ -1,0 +1,21 @@
+{
+  "title": "DRM Wiki",
+  "brand": "DRM",
+  "description": "Dochi RPG Maker \ubaa8\ub4dc\uc640 \uc5d0\ub514\ud130 \uacc4\uc5f4\uc744 \uc704\ud55c \uc81c\uc791\uc790 \ubb38\uc11c\uc785\ub2c8\ub2e4.",
+  "defaultLocale": "ko",
+  "repository": "https://github.com/gdochi/DRM",
+  "feedbackUrl": "https://github.com/gdochi/DRM/discussions",
+  "discordUrl": "https://discord.gg/",
+  "locales": {
+    "ko": {
+      "label": "\ud55c\uad6d\uc5b4",
+      "shortLabel": "KO",
+      "description": "Dochi RPG Maker \ubaa8\ub4dc\uc640 \uc5d0\ub514\ud130 \uacc4\uc5f4\uc744 \uc704\ud55c \uc81c\uc791\uc790 \ubb38\uc11c\uc785\ub2c8\ub2e4."
+    },
+    "en": {
+      "label": "English",
+      "shortLabel": "EN",
+      "description": "Creator documentation for the Dochi RPG Maker mod and editor toolchain."
+    }
+  }
+}

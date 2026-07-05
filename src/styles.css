@@ -660,7 +660,7 @@ blockquote {
   display: none;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1360px) {
   .layout {
     grid-template-columns: minmax(210px, 260px) minmax(0, 1fr);
   }
