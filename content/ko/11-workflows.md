@@ -3,6 +3,11 @@ title: 추천 작업 흐름
 slug: workflows
 order: 120
 description: 대화 NPC, 상점 NPC, 조건부 보상 제작 순서입니다.
+product: core
+category: 레퍼런스 / 운영
+status: 안정
+version: 0.1.x
+audience: 제작자
 tags:
   - workflow
   - examples

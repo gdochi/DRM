@@ -2,9 +2,15 @@
 title: Dialogue System
 slug: dialogue-system
 order: 70
-description: Nodes, choices, conditions, and actions for NPC conversations.
+description: How dialogue nodes, choices, conditions, and actions connect.
+product: core
+category: Core Systems
+status: Stable
+version: 0.1.x
+audience: Dialogue creators
 tags:
   - dialogue
+  - npc
 ---
 
 ## Structure

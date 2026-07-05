@@ -2,7 +2,12 @@
 title: 설치 준비
 slug: installation
 order: 30
-description: DRM 위키에서 전제하는 모드, 버전, 서버 조건입니다.
+description: DRM Core 문서에서 전제하는 모드와 환경 구성입니다.
+product: core
+category: 시작하기
+status: 안정
+version: 0.1.x
+audience: 서버 운영자
 tags:
   - install
   - forge

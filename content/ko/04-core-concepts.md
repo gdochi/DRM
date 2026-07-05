@@ -3,6 +3,11 @@ title: 핵심 개념
 slug: core-concepts
 order: 50
 description: GUI, 대화, 상점, 조건, 액션을 이해하기 위한 기본 용어입니다.
+product: core
+category: 핵심 시스템
+status: 안정
+version: 0.1.x
+audience: 제작자
 tags:
   - concepts
   - glossary

@@ -2,7 +2,12 @@
 title: Conditions and Actions
 slug: conditions-actions
 order: 90
-description: Rules and results used by DRM content.
+description: Rules that decide state and trigger results in DRM.
+product: core
+category: Core Systems
+status: Stable
+version: 0.1.x
+audience: Script / data creators
 tags:
   - condition
   - action

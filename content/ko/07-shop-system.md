@@ -3,6 +3,11 @@ title: 상점 시스템
 slug: shop-system
 order: 80
 description: NPC Shop JSON, 상품, 화폐, 재고, GUI 연결 규칙입니다.
+product: core
+category: 핵심 시스템
+status: 안정
+version: 0.1.x
+audience: 상점 제작자
 tags:
   - shop
   - economy

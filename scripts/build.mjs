@@ -55,12 +55,15 @@ async function loadLocale(locale) {
       title: data.title || titleFromSlug(slug),
       order: Number(data.order || 999),
       description: data.description || "",
-      tags: data.tags || [],
-      html: `<h2 id="${slug}-title">${escapeHtml(data.title || titleFromSlug(slug))}</h2>${data.description ? `<p class="lead">${escapeHtml(data.description)}</p>` : ""}${rendered.html}`,
-      headings: [
-        { level: 2, id: `${slug}-title`, text: data.title || titleFromSlug(slug) },
-        ...rendered.headings
-      ],
+      tags: Array.isArray(data.tags) ? data.tags : [],
+      product: data.product || "core",
+      category: data.category || "General",
+      status: data.status || "Draft",
+      version: data.version || "",
+      audience: data.audience || "",
+      sourcePath: path.relative(root, path.join(localeDir, file)).replace(/\\/g, "/"),
+      html: rendered.html,
+      headings: rendered.headings,
       searchText: stripMarkdown(body)
     });
   }
@@ -258,41 +261,44 @@ function renderInline(value) {
     return `\u0000CODE${code.length - 1}\u0000`;
   });
   text = escapeHtml(text);
-  text = text
-    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noreferrer">$1</a>');
-  text = text.replace(/\u0000CODE(\d+)\u0000/g, (_, index) => code[Number(index)]);
+  text = text.replace(/\[(.+?)\]\((.+?)\)/g, (_, label, href) => `<a href="${escapeAttr(href)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>`);
+  text = text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  text = text.replace(/\*(.+?)\*/g, "<em>$1</em>");
+  text = text.replace(/\u0000CODE(\d+)\u0000/g, (_, index) => code[Number(index)] || "");
   return text;
-}
-
-function stripMarkdown(value) {
-  return String(value)
-    .replace(/---[\s\S]*?---/, "")
-    .replace(/```[\s\S]*?```/g, " ")
-    .replace(/[#>*_`|[\]()]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
 }
 
 function stripInlineSyntax(value) {
   return String(value)
     .replace(/`([^`]+)`/g, "$1")
-    .replace(/\*\*([^*]+)\*\*/g, "$1")
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+    .replace(/\[(.+?)\]\((.+?)\)/g, "$1")
+    .replace(/[\*_>#]/g, "")
+    .trim();
+}
+
+function stripMarkdown(value) {
+  return String(value)
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/:::(note|tip|warning|danger)[\s\S]*?:::/g, " ")
+    .replace(/\[(.+?)\]\((.+?)\)/g, "$1")
+    .replace(/[#>*_`|-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function slugify(value) {
   return String(value)
     .toLowerCase()
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9가-힣]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .slice(0, 80);
+    .replace(/[^a-z0-9가-힣\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
 }
 
 function titleFromSlug(slug) {
-  return slug.split("-").map((part) => part.charAt(0).toUpperCase() + part.slice(1)).join(" ");
+  return slug
+    .replace(/[-_]+/g, " ")
+    .replace(/\b\w/g, (match) => match.toUpperCase());
 }
 
 function escapeHtml(value) {

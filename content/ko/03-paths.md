@@ -2,7 +2,12 @@
 title: 폴더와 경로
 slug: paths
 order: 40
-description: DRM 데이터가 저장되는 위치와 경로 규칙입니다.
+description: DRM Core 데이터가 저장되는 위치와 경로 규칙입니다.
+product: core
+category: 시작하기
+status: 안정
+version: 0.1.x
+audience: 제작자 / 운영자
 tags:
   - paths
   - files

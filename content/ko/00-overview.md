@@ -2,7 +2,12 @@
 title: 위키 개요
 slug: overview
 order: 10
-description: DRM 모드와 에디터 계열 문서의 기준점입니다.
+description: DRM 문서 구조와 범위를 한눈에 보는 시작점입니다.
+product: core
+category: 시작하기
+status: 안정
+version: 0.1.x
+audience: 제작자 / 운영자
 tags:
   - overview
   - drm

@@ -1,10 +1,16 @@
 ---
-title: Paths
+title: Paths and Folders
 slug: paths
 order: 40
-description: Common DRM file locations.
+description: Where DRM data lives and how paths are usually organized.
+product: core
+category: Getting Started
+status: Stable
+version: 0.1.x
+audience: Creators / operators
 tags:
   - paths
+  - files
 ---
 
 ## Common paths

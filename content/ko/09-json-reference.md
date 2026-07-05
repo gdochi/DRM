@@ -2,7 +2,12 @@
 title: JSON 레퍼런스
 slug: json-reference
 order: 100
-description: DRM 데이터 파일을 직접 확인할 때 필요한 기본 형태입니다.
+description: 데이터 파일을 직접 확인할 때 필요한 기본 형태입니다.
+product: core
+category: 레퍼런스 / 운영
+status: 안정
+version: 0.1.x
+audience: 고급 사용자
 tags:
   - json
   - reference

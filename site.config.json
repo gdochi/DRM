@@ -1,21 +1,59 @@
 {
-  "title": "DRM Wiki",
+  "title": "DRM",
   "brand": "DRM",
-  "description": "Dochi RPG Maker \ubaa8\ub4dc\uc640 \uc5d0\ub514\ud130 \uacc4\uc5f4\uc744 \uc704\ud55c \uc81c\uc791\uc790 \ubb38\uc11c\uc785\ub2c8\ub2e4.",
+  "description": "Documentation hub for DRM Core, DRM Mob Editor, and CNPC TaCZ Fire.",
   "defaultLocale": "ko",
   "repository": "https://github.com/gdochi/DRM",
   "feedbackUrl": "https://github.com/gdochi/DRM/discussions",
   "discordUrl": "https://discord.gg/",
   "locales": {
     "ko": {
-      "label": "\ud55c\uad6d\uc5b4",
+      "label": "한국어",
       "shortLabel": "KO",
-      "description": "Dochi RPG Maker \ubaa8\ub4dc\uc640 \uc5d0\ub514\ud130 \uacc4\uc5f4\uc744 \uc704\ud55c \uc81c\uc791\uc790 \ubb38\uc11c\uc785\ub2c8\ub2e4."
+      "description": "DRM Core, DRM Mob Editor, CNPC TaCZ Fire 문서를 한곳에서 정리한 공식 문서 허브입니다."
     },
     "en": {
       "label": "English",
       "shortLabel": "EN",
-      "description": "Creator documentation for the Dochi RPG Maker mod and editor toolchain."
+      "description": "A structured documentation hub for DRM Core, DRM Mob Editor, and CNPC TaCZ Fire."
+    }
+  },
+  "products": {
+    "core": {
+      "label": "DRM Core",
+      "shortLabel": "Core",
+      "accent": "blue",
+      "eyebrow": "Runtime & Editor",
+      "eyebrow_ko": "런타임 / 에디터",
+      "description": "Core runtime and creator workflows for GUI, dialogue, shops, conditions, actions, and JSON data.",
+      "description_ko": "GUI, 대화, 상점, 조건, 액션, JSON 데이터 흐름을 다루는 DRM 기본 문서입니다.",
+      "heroText": "Start here when you are installing DRM or creating the first dialogue, shop, or GUI flow.",
+      "heroText_ko": "DRM 설치, 첫 대화/상점/GUI 제작, 데이터 흐름 확인은 이 분기에서 시작합니다.",
+      "tags": ["GUI", "Dialogue", "Shop", "JSON"]
+    },
+    "mob-editor": {
+      "label": "DRM Mob Editor",
+      "shortLabel": "Mob Editor",
+      "accent": "violet",
+      "eyebrow": "Combat Authoring",
+      "eyebrow_ko": "전투 제작",
+      "description": "Combat-focused documentation for patterns, hitboxes, detection, phases, and reactive enemy behavior.",
+      "description_ko": "패턴, 히트박스, 탐지, 페이즈, 패링 같은 전투형 NPC 제작 문서입니다.",
+      "heroText": "Use this track when building action-combat NPCs or boss-style behavior.",
+      "heroText_ko": "보스형 NPC, 액션 전투 패턴, 탐지/순찰 AI를 설계할 때 이 분기를 사용합니다.",
+      "tags": ["Pattern", "Hitbox", "Detection", "Parry"]
+    },
+    "cnpc-tacz-fire": {
+      "label": "CNPC TaCZ Fire",
+      "shortLabel": "TaCZ Fire",
+      "accent": "amber",
+      "eyebrow": "Firearm NPC",
+      "eyebrow_ko": "총기 NPC",
+      "description": "NPC firearm behavior, reload logic, target filters, and combat setup for TaCZ integration.",
+      "description_ko": "TaCZ 총기를 사용하는 NPC의 사격, 재장전, 타겟 필터, 전투 자세 설정 문서입니다.",
+      "heroText": "Use this track when configuring guards, raiders, soldiers, or boss NPCs that use TaCZ weapons.",
+      "heroText_ko": "TaCZ 총기를 쓰는 경비병, 약탈자, 병사, 보스 NPC를 만들 때 이 분기를 사용합니다.",
+      "tags": ["TaCZ", "NPC", "Reload", "Targeting"]
     }
   }
 }

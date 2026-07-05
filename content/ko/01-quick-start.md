@@ -2,9 +2,14 @@
 title: 빠른 시작
 slug: quick-start
 order: 20
-description: 설치 후 DRM 콘텐츠를 처음 확인하는 최소 흐름입니다.
+description: 설치 후 가장 짧은 경로로 DRM 기능을 확인하는 흐름입니다.
+product: core
+category: 시작하기
+status: 안정
+version: 0.1.x
+audience: 처음 설치하는 사용자
 tags:
-  - quick start
+  - quick-start
   - setup
 ---
 

@@ -2,9 +2,15 @@
 title: Troubleshooting
 slug: troubleshooting
 order: 110
-description: Common symptoms and first checks.
+description: A quick symptom-to-cause guide for installation and runtime issues.
+product: core
+category: Reference & Operations
+status: Stable
+version: 0.1.x
+audience: Operators
 tags:
   - troubleshooting
+  - errors
 ---
 
 ## First checks

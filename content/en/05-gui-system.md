@@ -2,9 +2,15 @@
 title: GUI System
 slug: gui-system
 order: 60
-description: How DRM GUI JSON describes screens.
+description: How GUI JSON and visual components are organized.
+product: core
+category: Core Systems
+status: Stable
+version: 0.1.x
+audience: GUI creators
 tags:
   - gui
+  - layout
 ---
 
 ## Role

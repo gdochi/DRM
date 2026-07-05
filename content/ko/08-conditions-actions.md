@@ -2,7 +2,12 @@
 title: 조건과 액션
 slug: conditions-actions
 order: 90
-description: DRM에서 상태를 판정하고 결과를 실행하는 규칙입니다.
+description: 상태를 판정하고 결과를 실행하는 규칙입니다.
+product: core
+category: 핵심 시스템
+status: 안정
+version: 0.1.x
+audience: 스크립트 / 데이터 제작자
 tags:
   - condition
   - action

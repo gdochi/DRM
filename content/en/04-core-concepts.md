@@ -2,9 +2,15 @@
 title: Core Concepts
 slug: core-concepts
 order: 50
-description: Basic terms used across DRM content.
+description: Basic terminology for GUI, dialogue, shops, conditions, and actions.
+product: core
+category: Core Systems
+status: Stable
+version: 0.1.x
+audience: Creators
 tags:
   - concepts
+  - glossary
 ---
 
 ## Terms

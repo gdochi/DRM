@@ -3,6 +3,11 @@ title: 문제 해결
 slug: troubleshooting
 order: 110
 description: 설치, 경로, JSON, 런타임 오류를 빠르게 좁히는 표입니다.
+product: core
+category: 레퍼런스 / 운영
+status: 안정
+version: 0.1.x
+audience: 운영자
 tags:
   - troubleshooting
   - errors

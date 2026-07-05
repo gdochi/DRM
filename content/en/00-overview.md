@@ -1,10 +1,16 @@
 ---
-title: Wiki Overview
+title: Overview
 slug: overview
 order: 10
-description: The starting point for the DRM mod and editor documentation.
+description: A starting point that explains the scope and structure of the DRM documentation.
+product: core
+category: Getting Started
+status: Stable
+version: 0.1.x
+audience: Creators / operators
 tags:
   - overview
+  - drm
 ---
 
 ## Scope

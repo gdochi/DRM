@@ -3,6 +3,11 @@ title: 대화 시스템
 slug: dialogue-system
 order: 70
 description: NPC 대화 노드, 선택지, 조건, 액션 연결 방식입니다.
+product: core
+category: 핵심 시스템
+status: 안정
+version: 0.1.x
+audience: 대화 제작자
 tags:
   - dialogue
   - npc

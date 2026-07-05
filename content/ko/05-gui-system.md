@@ -2,7 +2,12 @@
 title: GUI 시스템
 slug: gui-system
 order: 60
-description: DRM GUI JSON과 화면 구성 요소를 정리합니다.
+description: GUI JSON과 화면 구성 요소를 정리합니다.
+product: core
+category: 핵심 시스템
+status: 안정
+version: 0.1.x
+audience: GUI 제작자
 tags:
   - gui
   - layout

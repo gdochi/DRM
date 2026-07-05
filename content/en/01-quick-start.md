@@ -2,9 +2,15 @@
 title: Quick Start
 slug: quick-start
 order: 20
-description: The shortest safe path from installation to a working test.
+description: The shortest path to verify DRM after installation.
+product: core
+category: Getting Started
+status: Stable
+version: 0.1.x
+audience: First-time users
 tags:
-  - quick start
+  - quick-start
+  - setup
 ---
 
 ## First run

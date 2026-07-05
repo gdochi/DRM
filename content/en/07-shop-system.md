@@ -2,9 +2,15 @@
 title: Shop System
 slug: shop-system
 order: 80
-description: Shop JSON, products, currency, stock, and GUI links.
+description: Shop JSON, products, currencies, stock, and GUI connection rules.
+product: core
+category: Core Systems
+status: Stable
+version: 0.1.x
+audience: Shop creators
 tags:
   - shop
+  - economy
 ---
 
 ## Shop data

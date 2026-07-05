@@ -2,9 +2,15 @@
 title: Installation
 slug: installation
 order: 30
-description: Required environment notes for DRM documentation.
+description: Required mods, versions, and environment assumptions for DRM Core.
+product: core
+category: Getting Started
+status: Stable
+version: 0.1.x
+audience: Server operators
 tags:
   - install
+  - forge
 ---
 
 ## Requirements
