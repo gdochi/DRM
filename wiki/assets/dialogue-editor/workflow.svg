@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Dialogue Editor workflow</title>
+  <desc id="desc">Sample workflow diagram showing the path from creating a dialogue set to exporting JSON.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#121923"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3b4d"/>
+      <stop offset="100%" stop-color="#1d2937"/>
+    </linearGradient>
+    <linearGradient id="arrow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7dc1ff"/>
+      <stop offset="100%" stop-color="#8ca0ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#bg)"/>
+  <text x="800" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#f0f6ff">Dialogue Editor workflow</text>
+  <text x="800" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c4d2e2">A simple path from first draft to exported JSON</text>
+
+  <rect x="80" y="190" width="250" height="176" rx="24" fill="url(#box)" stroke="#42556d" stroke-width="2"/>
+  <rect x="380" y="190" width="250" height="176" rx="24" fill="url(#box)" stroke="#42556d" stroke-width="2"/>
+  <rect x="680" y="190" width="250" height="176" rx="24" fill="url(#box)" stroke="#42556d" stroke-width="2"/>
+  <rect x="980" y="190" width="250" height="176" rx="24" fill="url(#box)" stroke="#42556d" stroke-width="2"/>
+  <rect x="1280" y="190" width="250" height="176" rx="24" fill="url(#box)" stroke="#42556d" stroke-width="2"/>
+
+  <text x="205" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#f0f6ff">1. Create set</text>
+  <text x="205" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c7d6e8">Choose a stable ID</text>
+  <text x="205" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c7d6e8">and basic metadata.</text>
+
+  <text x="505" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#f0f6ff">2. Add node</text>
+  <text x="505" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c7d6e8">Write the opening line</text>
+  <text x="505" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c7d6e8">and set the branch path.</text>
+
+  <text x="805" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#f0f6ff">3. Add logic</text>
+  <text x="805" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c7d6e8">Attach choices,</text>
+  <text x="805" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c7d6e8">conditions, and actions.</text>
+
+  <text x="1105" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#f0f6ff">4. Preview</text>
+  <text x="1105" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c7d6e8">Check the path and</text>
+  <text x="1105" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c7d6e8">fix branch order issues.</text>
+
+  <text x="1405" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#f0f6ff">5. Export</text>
+  <text x="1405" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c7d6e8">Save the JSON and</text>
+  <text x="1405" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c7d6e8">keep a backup copy.</text>
+
+  <path d="M330 278 H370" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M630 278 H670" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M930 278 H970" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1230 278 H1270" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M360 278 l-18 -12 l0 24 z" fill="#7dc1ff"/>
+  <path d="M660 278 l-18 -12 l0 24 z" fill="#7dc1ff"/>
+  <path d="M960 278 l-18 -12 l0 24 z" fill="#7dc1ff"/>
+  <path d="M1260 278 l-18 -12 l0 24 z" fill="#7dc1ff"/>
+
+  <rect x="190" y="430" width="1220" height="92" rx="20" fill="#19222d" stroke="#42556d"/>
+  <text x="230" y="468" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#eaf3ff">Recommended habit</text>
+  <text x="230" y="500" font-family="Arial, sans-serif" font-size="18" fill="#c7d6e8">Keep the English and Korean locale files in sync whenever a label or explanation changes.</text>
+</svg>
+
