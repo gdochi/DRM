@@ -30,7 +30,65 @@
       "shortLabel": "DRM",
       "accent": "blue",
       "description": "Main mod.",
-      "description_ko": "메인 모드"
+      "description_ko": "메인 모드",
+      "sections": [
+        {
+          "id": "getting-started",
+          "label": "Start",
+          "label_ko": "시작하기",
+          "description": "Install, paths, and base concepts.",
+          "description_ko": "설치, 경로, 기본 개념을 묶은 첫 단계입니다."
+        },
+        {
+          "id": "dialogue-editor",
+          "label": "Dialogue Editor",
+          "label_ko": "다이얼로그 에디터",
+          "description": "Dialogue nodes, choices, conditions, and actions.",
+          "description_ko": "대화 노드, 선택지, 조건, 액션을 다룹니다."
+        },
+        {
+          "id": "gui-maker",
+          "label": "GUI Maker",
+          "label_ko": "GUI Maker",
+          "description": "Layout JSON, GUI types, and screen components.",
+          "description_ko": "GUI JSON, 화면 타입, 컴포넌트를 다룹니다."
+        },
+        {
+          "id": "npc-shop",
+          "label": "NPC Shop",
+          "label_ko": "NPC Shop",
+          "description": "Shop files, trade modes, stock, and payment.",
+          "description_ko": "상점 파일, 거래 모드, 재고, 결제를 다룹니다."
+        },
+        {
+          "id": "currency-editor",
+          "label": "Currency Editor",
+          "label_ko": "커런시 에디터",
+          "description": "Currency definitions, pickup conversion, and balances.",
+          "description_ko": "화폐 정의, 픽업 변환, 잔액 저장을 다룹니다."
+        },
+        {
+          "id": "hud-maker",
+          "label": "HUD Maker",
+          "label_ko": "HUD Maker",
+          "description": "HUD sets, active layout, and runtime display.",
+          "description_ko": "HUD 세트, 활성 레이아웃, 런타임 표시를 다룹니다."
+        },
+        {
+          "id": "remnant-msg",
+          "label": "Remnant Msg",
+          "label_ko": "레머넌트 Msg",
+          "description": "Message documents, policies, and GUI connection.",
+          "description_ko": "메시지 문서, 정책, GUI 연결을 다룹니다."
+        },
+        {
+          "id": "operations",
+          "label": "Operations",
+          "label_ko": "운영 / 레퍼런스",
+          "description": "JSON reference, data flow, troubleshooting, and workflows.",
+          "description_ko": "JSON, 데이터 흐름, 문제 해결, 작업 흐름입니다."
+        }
+      ]
     },
     "mob-editor": {
       "label": "DRM Mob Editor",

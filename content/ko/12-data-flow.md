@@ -5,6 +5,7 @@ order: 105
 description: DRM Core의 기본 설치, 서버 JSON 저장, NPC 바인딩, 런타임 실행, 리로드 흐름입니다.
 product: core
 category: 레퍼런스 / 운영
+section: operations
 status: 안정
 version: 0.1.2
 audience: 제작자 / 운영자

@@ -62,6 +62,7 @@ async function loadLocale(locale) {
       tags: Array.isArray(data.tags) ? data.tags : [],
       product: data.product || "core",
       category: data.category || "General",
+      section: data.section || data.category || "general",
       hiddenNav: Boolean(data.hiddenNav),
       status: data.status || "Draft",
       version: data.version || "",

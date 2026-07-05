@@ -5,6 +5,7 @@ order: 120
 description: 대화 NPC, 상점 NPC, 화폐/HUD, 배포 전 검증을 실제 저장 구조 기준으로 진행하는 순서입니다.
 product: core
 category: 레퍼런스 / 운영
+section: operations
 status: 안정
 version: 0.1.2
 audience: 제작자

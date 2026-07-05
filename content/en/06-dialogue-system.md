@@ -5,6 +5,7 @@ order: 70
 description: DialogueDocument structure, dialogue set storage, and NPC runtime behavior.
 product: core
 category: Core Systems
+section: dialogue-editor
 status: Stable
 version: 0.1.2
 audience: Dialogue creators

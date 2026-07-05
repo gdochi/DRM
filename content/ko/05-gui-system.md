@@ -5,6 +5,7 @@ order: 60
 description: GUI Maker가 사용하는 레이아웃 JSON, GUI 타입, 컴포넌트, 런타임 연결 규칙입니다.
 product: core
 category: 핵심 시스템
+section: gui-maker
 status: 안정
 version: 0.1.2
 audience: GUI 제작자

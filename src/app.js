@@ -32,12 +32,12 @@
     const icons = {
       search: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.6-3.6"></path></svg>',
       menu: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>',
-      github: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-6a5.4 5.4 0 0 0-1.5-3.8A5 5 0 0 0 18.4 1S17.2.6 15 2.5a11.7 11.7 0 0 0-6 0C6.8.6 5.6 1 5.6 1a5 5 0 0 0-.1 3.2A5.4 5.4 0 0 0 4 8.5c0 4 3 6 6 6a4.8 4.8 0 0 0-1 3.5v4"></path><path d="M9 18c-4.5 2-5-2-7-2"></path></svg>',
+      github: '<svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3A12 12 0 0 0 8.2 23.7c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C15.2 5.1 16.2 5.4 16.2 5.4c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A12 12 0 0 0 12 .3Z"></path></svg>',
       external: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>',
       moon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.5 6.5 0 0 0 21 12.8z"></path></svg>',
       sun: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>',
-      discord: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9.5h.01M16 9.5h.01"></path><path d="M7.5 16.5c1.2.7 2.7 1.1 4.5 1.1s3.3-.4 4.5-1.1"></path><path d="M6.7 18.8 5 21l-.4-4.1A10.2 10.2 0 0 1 4 13.5C4 7.8 7.6 4 12 4s8 3.8 8 9.5c0 5.2-3.4 8-8 8-1.9 0-3.7-.5-5.3-1.4"></path></svg>',
-      youtube: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 8.5A3 3 0 0 1 6.4 6h11.2a3 3 0 0 1 2.9 2.5c.3 2.3.3 4.7 0 7A3 3 0 0 1 17.6 18H6.4a3 3 0 0 1-2.9-2.5 27 27 0 0 1 0-7Z"></path><path d="m10 9 5 3-5 3V9Z"></path></svg>',
+      discord: '<svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 2l-.2.4c-.3.5-.5 1-.7 1.5a18.4 18.4 0 0 0-5 0 10 10 0 0 0-.7-1.5L8.6 2a19.7 19.7 0 0 0-4.9 2.4C.6 9 .1 13.4.5 17.7a19.9 19.9 0 0 0 6 3.1l.8-1.3.5-1a12.9 12.9 0 0 1-1.9-.9l.5-.4a14.2 14.2 0 0 0 11.2 0l.5.4c-.6.4-1.2.7-1.9.9l.5 1 .8 1.3a19.9 19.9 0 0 0 6-3.1c.5-5-.8-9.3-3.2-13.3ZM8 15.1c-1.2 0-2.1-1.1-2.1-2.4 0-1.3.9-2.4 2.1-2.4 1.2 0 2.1 1.1 2.1 2.4 0 1.3-.9 2.4-2.1 2.4Zm8 0c-1.2 0-2.1-1.1-2.1-2.4 0-1.3.9-2.4 2.1-2.4 1.2 0 2.1 1.1 2.1 2.4 0 1.3-.9 2.4-2.1 2.4Z"></path></svg>',
+      youtube: '<svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"></path></svg>',
       chevron: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg>',
       arrowLeft: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>',
       arrowRight: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>',
@@ -150,14 +150,40 @@
     return meta[`${field}_${state.locale}`] || meta[field] || "";
   }
 
-  function groupDocs(docs) {
-    const map = new Map();
-    docs.forEach((doc) => {
-      const key = doc.category || "General";
-      if (!map.has(key)) map.set(key, []);
-      map.get(key).push(doc);
+  function sectionText(section, field) {
+    return section?.[`${field}_${state.locale}`] || section?.[field] || "";
+  }
+
+  function getProductSections(product) {
+    const meta = config.products?.[product] || {};
+    const docs = getDocsByProduct(product);
+    const configured = Array.isArray(meta.sections) ? meta.sections : [];
+    const seen = new Set();
+    const sections = [];
+
+    configured.forEach((section) => {
+      if (!section?.id || seen.has(section.id)) return;
+      const items = docs.filter((doc) => (doc.section || doc.category) === section.id);
+      if (!items.length) return;
+      sections.push({ ...section, items, firstDoc: items[0] });
+      seen.add(section.id);
     });
-    return Array.from(map.entries()).map(([name, items]) => ({ name, items }));
+
+    docs.forEach((doc) => {
+      const id = doc.section || doc.category || "general";
+      if (seen.has(id)) return;
+      const items = docs.filter((item) => (item.section || item.category || "general") === id);
+      sections.push({
+        id,
+        label: doc.category || id,
+        description: doc.description || "",
+        items,
+        firstDoc: items[0]
+      });
+      seen.add(id);
+    });
+
+    return sections;
   }
 
   function getNeighborDocs(product, activeDoc) {
@@ -227,16 +253,14 @@
   }
 
   function renderSidebar(product, activeDoc) {
-    const docs = getDocsByProduct(product);
-    const groups = groupDocs(docs);
+    const sections = getProductSections(product);
     return `
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-head">
           <button class="back-link" type="button" data-home-link>${icon("home")} ${t("backToProducts")}</button>
-          <button class="icon-button hide-desktop" data-close-sidebar type="button" aria-label="${t("closeMenu")}">×</button>
         </div>
         <nav class="doc-nav" aria-label="Documentation">
-          ${groups.map((group) => `<section class="nav-group"><div class="nav-group-title">${escapeHtml(group.name)}</div>${group.items.map((doc) => `<a class="doc-nav-link${activeDoc && doc.slug === activeDoc.slug ? " is-active" : ""}" href="${linkForDoc(doc)}"><span>${escapeHtml(doc.title)}</span><small>${escapeHtml(doc.description || "")}</small></a>`).join("")}</section>`).join("")}
+          ${sections.map((section) => `<a class="doc-nav-link section-nav-link${activeDoc && (activeDoc.section || activeDoc.category) === section.id ? " is-active" : ""}" href="${linkForDoc(section.firstDoc)}"><span>${escapeHtml(sectionText(section, "label") || section.id)}</span><small>${escapeHtml(sectionText(section, "description") || "")}</small></a>`).join("")}
         </nav>
       </aside>
     `;
@@ -287,16 +311,13 @@
 
     app.innerHTML = `
       <header class="topbar">
-        <div class="topbar-left">
-          ${view === "doc" ? `<button class="icon-button hide-desktop" data-open-sidebar type="button" aria-label="${t("openMenu")}">${icon("menu")}</button>` : ""}
-        </div>
         <div class="top-actions">
           <div class="locale-switch" aria-label="Language">${renderLocaleButtons()}</div>
           <button class="icon-button" data-theme-toggle type="button" aria-label="Theme">${icon(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button>
           ${renderSocialLinks()}
         </div>
       </header>
-      ${view === "home" ? `<main class="main-home">${renderHome()}</main>` : `<div class="layout">${renderSidebar(product, activeDoc)}<main class="content">${renderDoc(product, activeDoc)}</main><div class="scrim" data-scrim></div></div>`}
+      ${view === "home" ? `<main class="main-home">${renderHome()}</main>` : `<div class="layout">${renderSidebar(product, activeDoc)}<main class="content">${renderDoc(product, activeDoc)}</main></div>`}
     `;
 
     bindEvents(view, product, activeDoc, route.section);
@@ -320,19 +341,6 @@
     });
 
     if (view === "doc") {
-      const sidebar = app.querySelector("[data-sidebar]");
-      const scrim = app.querySelector("[data-scrim]");
-      const openSidebar = () => {
-        sidebar?.classList.add("is-open");
-        scrim?.classList.add("is-open");
-      };
-      const closeSidebar = () => {
-        sidebar?.classList.remove("is-open");
-        scrim?.classList.remove("is-open");
-      };
-      app.querySelector("[data-open-sidebar]")?.addEventListener("click", openSidebar);
-      app.querySelector("[data-close-sidebar]")?.addEventListener("click", closeSidebar);
-      scrim?.addEventListener("click", closeSidebar);
       app.querySelector("[data-home-link]")?.addEventListener("click", () => {
         window.location.hash = "home";
       });

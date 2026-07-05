@@ -5,6 +5,7 @@ order: 40
 description: DRM Core 데이터가 저장되는 실제 루트와 서버 JSON 종류별 경로 규칙입니다.
 product: core
 category: 시작하기
+section: getting-started
 status: 안정
 version: 0.1.2
 audience: 제작자 / 운영자

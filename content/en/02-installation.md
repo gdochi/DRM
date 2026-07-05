@@ -5,6 +5,7 @@ order: 30
 description: Forge, Minecraft, and CustomNPCs assumptions for DRM Core deployment.
 product: core
 category: Getting Started
+section: getting-started
 status: Stable
 version: 0.1.2
 audience: Server operators

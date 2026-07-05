@@ -5,6 +5,7 @@ order: 105
 description: Default install, server JSON storage, NPC binding, runtime execution, and reload flow.
 product: core
 category: Reference / Operations
+section: operations
 status: Stable
 version: 0.1.2
 audience: Creators / Operators

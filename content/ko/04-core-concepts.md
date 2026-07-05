@@ -5,6 +5,7 @@ order: 50
 description: DRM Core의 에디터, 런타임, 서버 JSON, NPC 바인딩을 이해하기 위한 기본 용어입니다.
 product: core
 category: 핵심 시스템
+section: getting-started
 status: 안정
 version: 0.1.2
 audience: 제작자

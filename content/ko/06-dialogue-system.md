@@ -5,6 +5,7 @@ order: 70
 description: DialogueDocument 구조, 대화 세트 저장 방식, NPC 런타임 실행 흐름입니다.
 product: core
 category: 핵심 시스템
+section: dialogue-editor
 status: 안정
 version: 0.1.2
 audience: 대화 제작자

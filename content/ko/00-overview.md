@@ -5,6 +5,7 @@ order: 10
 description: DRM Core가 실제로 제공하는 런타임, 에디터, 데이터 저장 구조를 한눈에 정리합니다.
 product: core
 category: 시작하기
+section: getting-started
 hiddenNav: true
 status: 안정
 version: 0.1.2

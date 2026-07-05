@@ -5,6 +5,7 @@ order: 100
 description: Current DRM Core JSON shapes and key fields.
 product: core
 category: Reference / Operations
+section: operations
 status: Stable
 version: 0.1.2
 audience: Advanced users

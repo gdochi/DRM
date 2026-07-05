@@ -5,6 +5,7 @@ order: 80
 description: NPC Shop JSON, buy/sell modes, stock, currency, and shop GUI references.
 product: core
 category: Core Systems
+section: npc-shop
 status: Stable
 version: 0.1.2
 audience: Shop creators

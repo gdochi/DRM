@@ -5,6 +5,7 @@ order: 120
 description: Practical flows for dialogue NPCs, shop NPCs, currency/HUD setup, and release checks.
 product: core
 category: Reference / Operations
+section: operations
 status: Stable
 version: 0.1.2
 audience: Creators

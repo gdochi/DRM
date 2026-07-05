@@ -5,6 +5,7 @@ order: 110
 description: 설치, 경로, JSON, 런타임, 상점, 화폐 문제를 빠르게 좁히는 방법입니다.
 product: core
 category: 레퍼런스 / 운영
+section: operations
 status: 안정
 version: 0.1.2
 audience: 운영자

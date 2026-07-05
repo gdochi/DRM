@@ -5,6 +5,7 @@ order: 20
 description: The shortest path to verify DRM Core editors and runtime after installation.
 product: core
 category: Getting Started
+section: getting-started
 status: Stable
 version: 0.1.2
 audience: First-time users

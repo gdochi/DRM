@@ -5,6 +5,7 @@ order: 40
 description: The actual DRM Core data root and server JSON path rules.
 product: core
 category: Getting Started
+section: getting-started
 status: Stable
 version: 0.1.2
 audience: Creators / Operators

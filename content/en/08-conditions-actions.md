@@ -5,6 +5,7 @@ order: 90
 description: Implemented condition and action types used by dialogue nodes, routes, and choices.
 product: core
 category: Core Systems
+section: dialogue-editor
 status: Stable
 version: 0.1.2
 audience: Script / data creators

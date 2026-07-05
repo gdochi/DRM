@@ -5,6 +5,7 @@ order: 110
 description: Quick checks for install, path, JSON, runtime, shop, and currency issues.
 product: core
 category: Reference / Operations
+section: operations
 status: Stable
 version: 0.1.2
 audience: Operators

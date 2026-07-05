@@ -5,6 +5,7 @@ order: 90
 description: 대화 노드, route, 선택지에서 사용하는 실제 조건과 액션 타입입니다.
 product: core
 category: 핵심 시스템
+section: dialogue-editor
 status: 안정
 version: 0.1.2
 audience: 스크립트 / 데이터 제작자

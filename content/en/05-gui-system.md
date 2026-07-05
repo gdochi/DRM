@@ -5,6 +5,7 @@ order: 60
 description: GUI Maker layout JSON, GUI types, components, and runtime connection rules.
 product: core
 category: Core Systems
+section: gui-maker
 status: Stable
 version: 0.1.2
 audience: GUI creators

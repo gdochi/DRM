@@ -5,6 +5,7 @@ order: 10
 description: A practical overview of the DRM Core runtime, editors, and data storage model.
 product: core
 category: Getting Started
+section: getting-started
 hiddenNav: true
 status: Stable
 version: 0.1.2

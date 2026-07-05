@@ -5,6 +5,7 @@ order: 30
 description: DRM Core를 실행하기 위한 Forge, Minecraft, CustomNPCs 기준과 배포 전 확인 사항입니다.
 product: core
 category: 시작하기
+section: getting-started
 status: 안정
 version: 0.1.2
 audience: 서버 운영자

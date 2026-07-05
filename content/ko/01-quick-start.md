@@ -5,6 +5,7 @@ order: 20
 description: 설치 후 가장 짧은 경로로 DRM Core 에디터와 런타임을 확인하는 절차입니다.
 product: core
 category: 시작하기
+section: getting-started
 status: 안정
 version: 0.1.2
 audience: 처음 설치하는 사용자

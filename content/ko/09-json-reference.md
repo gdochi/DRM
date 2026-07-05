@@ -5,6 +5,7 @@ order: 100
 description: DRM Core가 현재 읽고 쓰는 주요 JSON 형식과 필드 요약입니다.
 product: core
 category: 레퍼런스 / 운영
+section: operations
 status: 안정
 version: 0.1.2
 audience: 고급 사용자

@@ -5,6 +5,7 @@ order: 50
 description: Core terms for DRM editors, runtime behavior, server JSON, and NPC binding.
 product: core
 category: Core Systems
+section: getting-started
 status: Stable
 version: 0.1.2
 audience: Creators

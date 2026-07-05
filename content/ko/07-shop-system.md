@@ -5,6 +5,7 @@ order: 80
 description: NPC Shop JSON, 구매/판매 모드, 재고, 화폐, 상점 GUI 연결 규칙입니다.
 product: core
 category: 핵심 시스템
+section: npc-shop
 status: 안정
 version: 0.1.2
 audience: 상점 제작자
