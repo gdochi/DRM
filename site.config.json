@@ -25,11 +25,11 @@
       "accent": "blue",
       "eyebrow": "Runtime & Editor",
       "eyebrow_ko": "런타임 / 에디터",
-      "description": "Core runtime and creator workflows for GUI, dialogue, shops, conditions, actions, and JSON data.",
-      "description_ko": "GUI, 대화, 상점, 조건, 액션, JSON 데이터 흐름을 다루는 DRM 기본 문서입니다.",
-      "heroText": "Start here when you are installing DRM or creating the first dialogue, shop, or GUI flow.",
-      "heroText_ko": "DRM 설치, 첫 대화/상점/GUI 제작, 데이터 흐름 확인은 이 분기에서 시작합니다.",
-      "tags": ["GUI", "Dialogue", "Shop", "JSON"]
+      "description": "Core runtime and creator workflows for GUI, dialogue, shops, currencies, HUDs, conditions, actions, and JSON data.",
+      "description_ko": "GUI, 대화, 상점, 화폐, HUD, 조건, 액션, JSON 데이터 흐름을 다루는 DRM 기본 문서입니다.",
+      "heroText": "Start here when installing DRM or creating dialogue, shop, GUI, currency, and HUD flows.",
+      "heroText_ko": "DRM 설치, 대화/상점/GUI/화폐/HUD 제작, 데이터 흐름 확인은 이 분기에서 시작합니다.",
+      "tags": ["GUI", "Dialogue", "Shop", "Currency", "HUD", "JSON"]
     },
     "mob-editor": {
       "label": "DRM Mob Editor",

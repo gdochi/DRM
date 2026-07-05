@@ -2,43 +2,110 @@
 title: Data Flow
 slug: data-flow
 order: 105
-description: How GUI, dialogue, shops, conditions, and actions are connected.
+description: Default install, server JSON storage, NPC binding, runtime execution, and reload flow.
 product: core
-category: Reference & Operations
+category: Reference / Operations
 status: Stable
-version: 0.1.x
-audience: Creators / operators
+version: 0.1.2
+audience: Creators / Operators
 tags:
   - data-flow
   - architecture
   - json
 ---
 
-## Why data flow matters
+## Big Picture
 
-DRM content rarely ends with one file. Screens, dialogue, shops, conditions, and actions are connected through IDs and paths. When something breaks, first ask **which connection failed**, not only which file exists.
+DRM Core reads and writes JSON under the server root `config/dochi_rpg_maker`. NPCs can store embedded JSON or a reference to server JSON through kind and path.
 
 ```text
-Player / NPC Event
-  -> Dialogue or GUI Open
-      -> Choice / Button / Product
-          -> Condition Check
-          -> Action Run
-              -> StoredData / Command / Reward
+Mod startup
+  -> DefaultContentInstaller
+  -> Install default files under config/dochi_rpg_maker
+  -> Initialize DochiRpgMakerApi registries
+  -> Editors and runtime use ServerJsonStorage
 ```
 
-## Connection units
+## Authoring Flow
 
-| Link | Check | Common issue |
-| --- | --- | --- |
-| NPC → Dialogue | start dialogue ID | NPC exists but start node is missing |
-| Dialogue → GUI | GUI file path | GUI JSON points to another world path |
-| Choice → Condition | condition ID and parameter | condition is always false |
-| Choice → Action | execution order | GUI closes before reward action runs |
-| Shop → GUI | shop screen type | dialogue GUI is reused for shop |
+```text
+Editor Screen
+  -> Save / Save As
+      -> ServerJsonStorage.save(kind, path, json)
+          -> config/dochi_rpg_maker/<domain>
+              -> selected NPC stores source.kind / source.path or embedded JSON
+```
 
-## Operation tips
+Dialogue sets are folder-based. GUI and shop data are file-based. Reusing the same string in the wrong domain is a common cause of missing runtime data.
 
-- Separate `test_` and `dev_` files before deployment.
-- Avoid renaming published IDs casually.
-- Keep backups per content unit for incident response.
+## Dialogue Runtime Flow
+
+```text
+Player right-clicks NPC
+  -> DialogueStorage.hasDialogue(npc)
+  -> DialogueStorage.load(npc)
+      -> source.kind/source.path first when present
+      -> embedded NPC JSON as fallback
+  -> DialogueRuntimeManager.start
+  -> evaluate start routes
+  -> filter visible choices
+  -> open DialogueRuntimeScreen
+  -> execute selected choice actions
+```
+
+The client receives a filtered dialogue document for the current node. Choices that fail conditions are not sent to the screen.
+
+## Shop Runtime Flow
+
+```text
+go_shop action or shop NPC right-click
+  -> if target is bound, load NPC-bound shop
+  -> if target is file/ID, search npc_shops
+  -> open NpcShopRuntimeScreen
+  -> buy/sell request
+  -> ShopTradeService validates server-side
+  -> currency, item, and stock updates
+```
+
+Buy and sell operations are server-authoritative. The client screen presents previews and requests; the server decides the actual transaction.
+
+## Currency And HUD Flow
+
+```text
+currency/definitions/*.json
+  -> CurrencyStorage.reload
+  -> player login or item pickup
+  -> update CurrencyBalanceStorage PersistentData
+  -> CurrencySyncService
+  -> CurrencyHudOverlay
+```
+
+Balances are stored on the player under `dochi_rpg_maker.currency.balance.<currencyId>`. Death rules run on player death and changed balances are synced back to the client.
+
+## GUI Loading Flow
+
+Dialogue and shop runtime screens read GUI references and then load GUI JSON from `config/dochi_rpg_maker/gui`.
+
+| Runtime | GUI Reference |
+| --- | --- |
+| Dialogue | `dialogueDefaultGui.guiJsonPath` |
+| Default shop | `shopDefaultGui.guiJsonPath` |
+| Buy/sell shop views | `shopGuis.buy.guiJsonPath`, `shopGuis.sell.guiJsonPath` |
+| Remnant Msg | Message/policy data plus `remnant_msg` GUI |
+
+Image resources inside GUI JSON must distinguish Minecraft resource locations from local paths. Keep resource-pack images in forms such as `namespace:textures/...`.
+
+## Reload And Cache
+
+`ServerJsonStorage` can cache JSON. When `reloadOnTrigger` is enabled, loads refresh files and update cache. Manual reload commands clear cache and reload currencies.
+
+| Situation | Recommended Action |
+| --- | --- |
+| Saved through an editor | Reload is usually not needed. |
+| Edited file by hand | Use `/drm reload` or reload from the editor. |
+| Edited currency definitions | Use `/drm currency reload` to sync online players. |
+| Modified bundled default | Clone it and update settings or NPC references instead. |
+
+:::tip Narrowing Failures
+Ask which NPC holds which `kind/path`, then confirm where that file lives on the server. That separates path failures from condition failures quickly.
+:::
