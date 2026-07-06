@@ -12,42 +12,6 @@
     "alt": "DRM wiki screenshot",
     "alt_ko": "DRM 위키 스크린샷"
   },
-  "wikiMods": [
-    {
-      "id": "drm",
-      "label": "DRM",
-      "shortLabel": "DRM",
-      "description": "Dochi RPG Maker documentation and mod project.",
-      "description_ko": "Dochi RPG Maker 문서와 모드 프로젝트입니다.",
-      "logo": "assets/mod-logos/drm.png",
-      "logoAlt": "DRM logo",
-      "logoAlt_ko": "DRM 로고",
-      "product": "core",
-      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker"
-    },
-    {
-      "id": "cnpc-tacz-fire",
-      "label": "CNPC Tacz Fire",
-      "shortLabel": "TaCZ Fire",
-      "description": "CustomNPCs and TaCZ firearm integration mod.",
-      "description_ko": "CustomNPCs와 TaCZ 총기 연동 모드입니다.",
-      "logo": "assets/mod-logos/cnpc_tacz_fire.png",
-      "logoAlt": "CNPC Tacz Fire logo",
-      "logoAlt_ko": "CNPC Tacz Fire 로고",
-      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-tacz-fire"
-    },
-    {
-      "id": "cnpc-real-armor",
-      "label": "CNPC Real Armor",
-      "shortLabel": "Real Armor",
-      "description": "CustomNPCs armor display and equipment support mod.",
-      "description_ko": "CustomNPCs 방어구 표시와 장비 지원 모드입니다.",
-      "logo": "assets/mod-logos/cnpc_real_armor.png",
-      "logoAlt": "CNPC Real Armor logo",
-      "logoAlt_ko": "CNPC Real Armor 로고",
-      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-real-armor"
-    }
-  ],
   "locales": {
     "ko": {
       "label": "한국어",

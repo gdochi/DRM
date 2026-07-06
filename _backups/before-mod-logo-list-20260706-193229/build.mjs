@@ -9,8 +9,6 @@ const distDir = path.join(root, "dist");
 const assetsDir = path.join(distDir, "assets");
 const mediaDir = path.join(srcDir, "media");
 const distMediaDir = path.join(assetsDir, "media");
-const modLogoDir = path.join(root, "_modLogo");
-const distModLogoDir = path.join(assetsDir, "mod-logos");
 
 const config = JSON.parse(await readFile(path.join(root, "site.config.json"), "utf8"));
 const docsByLocale = {};
@@ -32,7 +30,6 @@ await writeFile(path.join(distDir, "index.html"), template, "utf8");
 await copyFile(path.join(srcDir, "styles.css"), path.join(assetsDir, "styles.css"));
 await copyFile(path.join(srcDir, "app.js"), path.join(assetsDir, "app.js"));
 await copyDirectory(mediaDir, distMediaDir);
-await copyDirectory(modLogoDir, distModLogoDir);
 await writeFile(
   path.join(assetsDir, "docs-data.js"),
   `window.DRM_DOCS_CONFIG = ${JSON.stringify(config)};\nwindow.DRM_DOCS_DATA = ${JSON.stringify(docsByLocale)};\n`,

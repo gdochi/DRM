@@ -207,43 +207,16 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
 .track-list { display: grid; gap: 10px; }
 .track-card {
   display: grid;
-  grid-template-columns: 74px minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 16px;
   align-items: center;
   padding: 18px 20px;
 }
-.track-card:hover { border-color: var(--line-strong); background: var(--surface-2); }
+a.track-card:hover { border-color: var(--line-strong); background: var(--surface-2); }
 .track-card.is-disabled { color: color-mix(in srgb, var(--ink) 72%, var(--muted) 28%); }
-.mod-logo-box {
-  width: 64px;
-  height: 64px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface-2);
-}
-.mod-logo-box img {
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  object-fit: contain;
-}
-.mod-logo-fallback {
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 900;
-}
 .track-body { min-width: 0; }
 .track-card h2 { margin: 0; font-size: 1.16rem; letter-spacing: 0; }
 .track-card p { margin: 5px 0 0; color: var(--muted); line-height: 1.55; }
-.track-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px;
-}
 .track-open,
 .track-status {
   display: inline-flex;
@@ -254,17 +227,7 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
   font-weight: 800;
   white-space: nowrap;
 }
-.track-open {
-  min-height: 34px;
-  padding: 0 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  color: var(--brand);
-  text-decoration: none;
-}
-.track-open:hover { border-color: var(--line-strong); background: var(--surface-3); }
-.track-open.external { color: var(--ink); }
+.track-open { color: var(--brand); }
 .track-status { color: var(--muted); }
 
 .layout {
@@ -451,8 +414,7 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
 }
 
 @media (max-width: 980px) {
-  .track-card { grid-template-columns: 74px minmax(0, 1fr); }
-  .track-actions { grid-column: 2; justify-content: flex-start; }
+  .track-card { grid-template-columns: minmax(0, 1fr) auto; }
   .layout { width: min(100%, calc(100% - 16px)); grid-template-columns: 1fr; }
   .sidebar {
     position: static;
@@ -475,7 +437,6 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
   .doc-footer-nav,
   .sidebar { padding-left: 18px; padding-right: 18px; }
   .track-card { grid-template-columns: 1fr; }
-  .track-actions { grid-column: auto; justify-content: flex-start; }
   .track-open,
   .track-status { justify-content: flex-start; }
   .doc-page-head { padding-top: 24px; padding-bottom: 24px; }

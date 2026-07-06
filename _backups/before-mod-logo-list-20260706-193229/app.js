@@ -55,7 +55,6 @@
         discord: "Discord",
         youtube: "YouTube",
         openDocs: "문서 열기",
-        curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
         openMenu: "사이드바 열기",
         closeMenu: "사이드바 닫기",
@@ -68,7 +67,6 @@
         discord: "Discord",
         youtube: "YouTube",
         openDocs: "Open docs",
-        curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
         openMenu: "Open sidebar",
         closeMenu: "Close sidebar",
@@ -123,12 +121,6 @@
     return Object.entries(config.products || {});
   }
 
-  function getWikiMods() {
-    const mods = Array.isArray(config.wikiMods) ? config.wikiMods.filter((item) => item && !item.hidden) : [];
-    if (mods.length) return mods;
-    return getProductEntries().map(([key, meta]) => ({ id: key, product: key, ...meta }));
-  }
-
   function getDocsByProduct(product) {
     return getAllDocs().filter((doc) => doc.product === product);
   }
@@ -156,30 +148,6 @@
 
   function productText(meta, field) {
     return meta[`${field}_${state.locale}`] || meta[field] || "";
-  }
-
-  function modText(meta, field) {
-    return meta?.[`${field}_${state.locale}`] || meta?.[field] || "";
-  }
-
-  function modDocsLink(meta) {
-    const product = meta.product || meta.productId || meta.id;
-    if (!product || !isProductOpen(product)) return "";
-    const doc = getDefaultDoc(product);
-    return doc ? linkForProduct(product) : "";
-  }
-
-  function renderModLogo(meta) {
-    const src = meta.logo || meta.logoSrc || "";
-    const label = meta.shortLabel || meta.label || meta.id || "";
-    if (!src) {
-      return `<span class="mod-logo-box mod-logo-fallback" aria-hidden="true">${escapeHtml(String(label).slice(0, 3))}</span>`;
-    }
-    return `
-      <span class="mod-logo-box">
-        <img src="${escapeAttr(src)}" alt="${escapeAttr(modText(meta, "logoAlt") || `${label} logo`)}" loading="lazy" />
-      </span>
-    `;
   }
 
   function sectionText(section, field) {
@@ -256,26 +224,21 @@
   }
 
   function renderHome() {
-    const entries = getWikiMods();
+    const entries = getProductEntries();
 
-    const cards = entries.map((meta) => {
-      const docsHref = modDocsLink(meta);
-      const curseForgeHref = meta.curseForgeUrl || meta.url || meta.href || "";
+    const cards = entries.map(([key, meta]) => {
+      const disabled = !isProductOpen(key);
+      const firstDoc = getDefaultDoc(key);
       const body = `
-          ${renderModLogo(meta)}
           <div class="track-body">
-            <h2>${escapeHtml(meta.label || meta.id || "")}</h2>
-            <p>${escapeHtml(modText(meta, "description"))}</p>
+            <h2>${escapeHtml(meta.label || key)}</h2>
+            <p>${escapeHtml(productText(meta, "description"))}</p>
           </div>
       `;
-      const actions = `
-        <div class="track-actions">
-          ${docsHref ? `<a class="track-open" href="${docsHref}">${t("openDocs")}${icon("chevron")}</a>` : ""}
-          ${curseForgeHref ? `<a class="track-open external" href="${escapeAttr(curseForgeHref)}" target="_blank" rel="noreferrer">${t("curseForge")}${icon("external")}</a>` : ""}
-          ${!docsHref && !curseForgeHref ? `<span class="track-status">${escapeHtml(statusText(meta))}</span>` : ""}
-        </div>
-      `;
-      return `<article class="track-card">${body}${actions}</article>`;
+      if (disabled) {
+        return `<article class="track-card is-disabled">${body}<span class="track-status">${escapeHtml(statusText(meta))}</span></article>`;
+      }
+      return `<a class="track-card" href="#${escapeAttr(key)}/${escapeAttr(firstDoc ? firstDoc.slug : "")}">${body}<span class="track-open">${t("openDocs")}${icon("chevron")}</span></a>`;
     }).join("");
 
     return `

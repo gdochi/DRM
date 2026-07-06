@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import { serve } from "./preview-server.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const watchTargets = ["content", "src", "site.config.json"].map((item) => path.join(root, item));
+const watchTargets = ["content", "src", "_modLogo", "site.config.json"].map((item) => path.join(root, item));
 const port = Number(process.env.PORT || 4173);
 let timer = null;
 let building = false;
