@@ -26,10 +26,7 @@ export function serve(baseDir, listenPort) {
     }
 
     const target = existsSync(file) && (await stat(file)).isFile() ? file : path.join(baseDir, "index.html");
-    response.writeHead(200, {
-      "Content-Type": contentType(target),
-      "Cache-Control": "no-store, max-age=0"
-    });
+    response.writeHead(200, { "Content-Type": contentType(target) });
     createReadStream(target).pipe(response);
   });
 

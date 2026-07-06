@@ -22,15 +22,11 @@ for (const locale of Object.keys(config.locales || {})) {
 await rm(distDir, { recursive: true, force: true });
 await mkdir(assetsDir, { recursive: true });
 
-const assetVersion = Date.now().toString(36);
 let template = await readFile(path.join(srcDir, "template.html"), "utf8");
 template = template
   .replace(/<html lang="[^"]*">/, `<html lang="${escapeAttr(config.defaultLocale || "ko")}">`)
   .replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${escapeAttr(config.description)}" />`)
-  .replace(/<title>.*<\/title>/, `<title>${escapeHtml(config.title)}</title>`)
-  .replace(/\.\/assets\/styles\.css(?:\?v=[^"]*)?/g, `./assets/styles.css?v=${assetVersion}`)
-  .replace(/\.\/assets\/docs-data\.js(?:\?v=[^"]*)?/g, `./assets/docs-data.js?v=${assetVersion}`)
-  .replace(/\.\/assets\/app\.js(?:\?v=[^"]*)?/g, `./assets/app.js?v=${assetVersion}`);
+  .replace(/<title>.*<\/title>/, `<title>${escapeHtml(config.title)}</title>`);
 
 await writeFile(path.join(distDir, "index.html"), template, "utf8");
 await copyFile(path.join(srcDir, "styles.css"), path.join(assetsDir, "styles.css"));
