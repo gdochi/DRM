@@ -303,16 +303,13 @@
     `;
   }
 
-  function renderDocFollowNav(product, activeDoc, pageLabel) {
+  function renderDocFooter(product, activeDoc) {
     const { prev, next } = getNeighborDocs(product, activeDoc);
     return `
-      <nav class="doc-follow-nav" aria-label="Page navigation">
-        <div class="doc-follow-count">${escapeHtml(pageLabel)}</div>
-        <div class="doc-follow-links">
-          ${prev ? `<a class="doc-follow-link prev" href="${linkForDoc(prev)}"><span>${icon("arrowLeft")} ${t("previous")}</span><strong>${escapeHtml(prev.title)}</strong></a>` : `<span class="doc-follow-link is-disabled"><span>${icon("arrowLeft")} ${t("previous")}</span><strong>-</strong></span>`}
-          ${next ? `<a class="doc-follow-link next" href="${linkForDoc(next)}"><span>${t("next")} ${icon("arrowRight")}</span><strong>${escapeHtml(next.title)}</strong></a>` : `<span class="doc-follow-link is-disabled"><span>${t("next")} ${icon("arrowRight")}</span><strong>-</strong></span>`}
-        </div>
-      </nav>
+      <footer class="doc-footer-nav">
+        ${prev ? `<a class="doc-footer-link prev" href="${linkForDoc(prev)}"><span>${icon("arrowLeft")} ${t("previous")}</span><strong>${escapeHtml(prev.title)}</strong></a>` : `<span></span>`}
+        ${next ? `<a class="doc-footer-link next" href="${linkForDoc(next)}"><span>${t("next")} ${icon("arrowRight")}</span><strong>${escapeHtml(next.title)}</strong></a>` : `<span></span>`}
+      </footer>
     `;
   }
 
@@ -326,11 +323,12 @@
       <div class="doc-shell">
         <article class="doc-page" data-doc-page>
           <header class="doc-page-head">
+            <div class="doc-page-kicker">${escapeHtml(pageLabel)}</div>
             <h1>${escapeHtml(activeDoc.title)}</h1>
           </header>
           <div class="doc-page-body">${activeDoc.html}</div>
+          ${renderDocFooter(product, activeDoc)}
         </article>
-        ${renderDocFollowNav(product, activeDoc, pageLabel)}
       </div>
     `;
   }
