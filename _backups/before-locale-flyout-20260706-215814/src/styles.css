@@ -102,78 +102,28 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
 .brand-copy small { color: var(--muted); font-size: 0.75rem; margin-top: 3px; }
 
 .top-actions { justify-content: flex-end; }
-.locale-menu { position: relative; }
-.locale-trigger {
+.locale-switch {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  min-width: 82px;
-  height: 40px;
-  padding: 0 10px;
-  border-radius: 8px;
+  gap: 5px;
+  padding: 4px;
   border: 1px solid var(--line);
+  border-radius: 999px;
   background: var(--surface-2);
-  color: var(--ink);
-  font-weight: 850;
 }
-.locale-trigger:hover,
-.locale-menu.is-open .locale-trigger {
-  background: var(--surface-3);
-  border-color: var(--line-strong);
-}
-.locale-trigger svg:last-child {
-  width: 15px;
-  height: 15px;
-  transition: transform 160ms ease;
-}
-.locale-menu.is-open .locale-trigger svg:last-child { transform: rotate(180deg); }
-.locale-flyout {
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
-  z-index: 70;
-  display: none;
-  width: 230px;
-  padding: 8px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
-}
-.locale-menu.is-open .locale-flyout { display: grid; gap: 4px; }
-.locale-option {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto 18px;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  min-height: 40px;
-  padding: 8px 9px;
-  border: 1px solid transparent;
-  border-radius: 8px;
+.locale-button {
+  border: 0;
   background: transparent;
-  color: var(--ink);
-  text-align: left;
-}
-.locale-option:hover { background: var(--surface-2); border-color: var(--line); }
-.locale-option.is-active {
-  background: var(--brand-soft);
-  border-color: color-mix(in srgb, var(--brand) 42%, var(--line));
-}
-.locale-option-main {
-  min-width: 0;
-  overflow: hidden;
-  font-weight: 850;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.locale-option-short {
   color: var(--muted);
-  font-size: 0.76rem;
-  font-weight: 900;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.82rem;
 }
-.locale-option svg { color: var(--brand); width: 16px; height: 16px; }
+.locale-button.is-active {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-soft);
+}
 .icon-button {
   display: inline-flex;
   align-items: center;
@@ -539,11 +489,7 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
   .topbar { height: auto; padding: 10px 12px; }
   .top-actions { justify-content: flex-end; }
   .top-actions { width: auto; margin-left: auto; gap: 7px; }
-  .locale-trigger { min-width: 72px; padding: 0 8px; }
-  .locale-flyout {
-    right: 0;
-    width: min(230px, calc(100vw - 24px));
-  }
+  .locale-switch { flex: 1; justify-content: center; }
   .main-home { width: min(100%, calc(100% - 20px)); padding-top: 22px; }
   .track-card,
   .doc-page-head,

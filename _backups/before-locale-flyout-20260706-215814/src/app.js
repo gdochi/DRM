@@ -18,13 +18,12 @@
     }
   }
 
-  const localeKeys = Object.keys(config.locales || {});
   const state = {
-    locale: safeGet("drm-docs-locale", config.defaultLocale || "en"),
-    localeMenuOpen: false
+    locale: safeGet("drm-docs-locale", config.defaultLocale || "ko")
   };
 
-  if (!config.locales?.[state.locale]) state.locale = config.defaultLocale || localeKeys[0] || "en";
+  const localeKeys = Object.keys(config.locales || {});
+  if (!docsData[state.locale]) state.locale = localeKeys[0] || "ko";
   document.documentElement.lang = state.locale;
 
   const app = document.getElementById("app");
@@ -35,9 +34,6 @@
       menu: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>',
       github: '<svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3A12 12 0 0 0 8.2 23.7c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C15.2 5.1 16.2 5.4 16.2 5.4c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A12 12 0 0 0 12 .3Z"></path></svg>',
       external: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>',
-      globe: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 0 20"></path><path d="M12 2a15.3 15.3 0 0 0 0 20"></path></svg>',
-      check: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20 6-11 11-5-5"></path></svg>',
-      chevronDown: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>',
       moon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.5 6.5 0 0 0 21 12.8z"></path></svg>',
       sun: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>',
       discord: '<svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 2l-.2.4c-.3.5-.5 1-.7 1.5a18.4 18.4 0 0 0-5 0 10 10 0 0 0-.7-1.5L8.6 2a19.7 19.7 0 0 0-4.9 2.4C.6 9 .1 13.4.5 17.7a19.9 19.9 0 0 0 6 3.1l.8-1.3.5-1a12.9 12.9 0 0 1-1.9-.9l.5-.4a14.2 14.2 0 0 0 11.2 0l.5.4c-.6.4-1.2.7-1.9.9l.5 1 .8 1.3a19.9 19.9 0 0 0 6-3.1c.5-5-.8-9.3-3.2-13.3ZM8 15.1c-1.2 0-2.1-1.1-2.1-2.4 0-1.3.9-2.4 2.1-2.4 1.2 0 2.1 1.1 2.1 2.4 0 1.3-.9 2.4-2.1 2.4Zm8 0c-1.2 0-2.1-1.1-2.1-2.4 0-1.3.9-2.4 2.1-2.4 1.2 0 2.1 1.1 2.1 2.4 0 1.3-.9 2.4-2.1 2.4Z"></path></svg>',
@@ -58,17 +54,14 @@
         repo: "GitHub",
         discord: "Discord",
         youtube: "YouTube",
-        openDocs: "?? ??",
+        openDocs: "문서 열기",
         curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
-        openMenu: "???? ??",
-        closeMenu: "???? ??",
+        openMenu: "사이드바 열기",
+        closeMenu: "사이드바 닫기",
         backToProducts: "DRM WIKI",
-        previous: "??",
-        next: "??",
-        document: "??",
-        language: "??",
-        selectLanguage: "?? ??"
+        previous: "이전 문서",
+        next: "다음 문서"
       },
       en: {
         repo: "GitHub",
@@ -81,61 +74,10 @@
         closeMenu: "Close sidebar",
         backToProducts: "DRM WIKI",
         previous: "Previous",
-        next: "Next",
-        document: "Document",
-        language: "Language",
-        selectLanguage: "Select language"
-      },
-      ru: {
-        repo: "GitHub",
-        discord: "Discord",
-        youtube: "YouTube",
-        openDocs: "??????? ????????????",
-        curseForge: "CurseForge",
-        homeTitle: "DRM WIKI",
-        openMenu: "??????? ??????? ??????",
-        closeMenu: "??????? ??????? ??????",
-        backToProducts: "DRM WIKI",
-        previous: "?????",
-        next: "?????",
-        document: "????????",
-        language: "????",
-        selectLanguage: "????? ?????"
-      },
-      zh: {
-        repo: "GitHub",
-        discord: "Discord",
-        youtube: "YouTube",
-        openDocs: "????",
-        curseForge: "CurseForge",
-        homeTitle: "DRM WIKI",
-        openMenu: "?????",
-        closeMenu: "?????",
-        backToProducts: "DRM WIKI",
-        previous: "???",
-        next: "???",
-        document: "??",
-        language: "??",
-        selectLanguage: "????"
-      },
-      ja: {
-        repo: "GitHub",
-        discord: "Discord",
-        youtube: "YouTube",
-        openDocs: "?????????",
-        curseForge: "CurseForge",
-        homeTitle: "DRM WIKI",
-        openMenu: "????????",
-        closeMenu: "?????????",
-        backToProducts: "DRM WIKI",
-        previous: "??",
-        next: "??",
-        document: "??????",
-        language: "??",
-        selectLanguage: "?????"
+        next: "Next"
       }
     };
-    return (copy[state.locale] && copy[state.locale][key]) || copy.en[key] || key;
+    return (copy[state.locale] && copy[state.locale][key]) || copy.ko[key] || key;
   }
 
   function escapeHtml(value) {
@@ -170,36 +112,10 @@
     return `#${escapeAttr(doc.product)}/${escapeAttr(doc.slug)}${section ? `::${escapeAttr(section)}` : ""}`;
   }
 
-  function getFallbackLocale() {
-    return config.fallbackLocale || config.defaultLocale || "en";
-  }
-
-  function getLocaleDocs(locale) {
-    return Array.isArray(docsData[locale]) ? docsData[locale] : [];
-  }
-
-  function getDocKey(doc) {
-    return `${doc.product || "core"}::${doc.slug}`;
-  }
-
   function getAllDocs(includeHidden = false) {
-    const merged = new Map();
-    const fallbackDocs = getLocaleDocs(getFallbackLocale());
-    const activeDocs = getLocaleDocs(state.locale);
-
-    fallbackDocs.forEach((doc) => merged.set(getDocKey(doc), doc));
-    activeDocs.forEach((doc) => merged.set(getDocKey(doc), doc));
-
-    if (!merged.size) {
-      Object.keys(docsData).some((locale) => {
-        const docs = getLocaleDocs(locale);
-        docs.forEach((doc) => merged.set(getDocKey(doc), doc));
-        return docs.length > 0;
-      });
-    }
-
-    return Array.from(merged.values())
+    return (docsData[state.locale] || [])
       .filter((doc) => includeHidden || !doc.hiddenNav)
+      .slice()
       .sort((a, b) => a.order - b.order);
   }
 
@@ -223,11 +139,11 @@
   }
 
   function statusText(meta) {
-    return meta[`statusText_${state.locale}`] || meta[`statusText_${getFallbackLocale()}`] || meta.statusText || "";
+    return meta[`statusText_${state.locale}`] || meta.statusText || "";
   }
 
   function localizedConfigText(source, field) {
-    return source?.[`${field}_${state.locale}`] || source?.[`${field}_${getFallbackLocale()}`] || source?.[field] || "";
+    return source?.[`${field}_${state.locale}`] || source?.[field] || "";
   }
 
   function getDefaultDoc(product) {
@@ -239,11 +155,11 @@
   }
 
   function productText(meta, field) {
-    return meta[`${field}_${state.locale}`] || meta[`${field}_${getFallbackLocale()}`] || meta[field] || "";
+    return meta[`${field}_${state.locale}`] || meta[field] || "";
   }
 
   function modText(meta, field) {
-    return meta?.[`${field}_${state.locale}`] || meta?.[`${field}_${getFallbackLocale()}`] || meta?.[field] || "";
+    return meta?.[`${field}_${state.locale}`] || meta?.[field] || "";
   }
 
   function modDocsLink(meta) {
@@ -267,7 +183,7 @@
   }
 
   function sectionText(section, field) {
-    return section?.[`${field}_${state.locale}`] || section?.[`${field}_${getFallbackLocale()}`] || section?.[field] || "";
+    return section?.[`${field}_${state.locale}`] || section?.[field] || "";
   }
 
   function getProductSections(product) {
@@ -311,37 +227,12 @@
     };
   }
 
-  function getLocaleMeta(locale) {
-    return config.locales?.[locale] || { label: locale.toUpperCase(), shortLabel: locale.toUpperCase() };
-  }
-
-  function renderLocaleSelector() {
-    const activeMeta = getLocaleMeta(state.locale);
-    const open = state.localeMenuOpen ? " is-open" : "";
-    const options = localeKeys.map((locale) => {
-      const meta = getLocaleMeta(locale);
+  function renderLocaleButtons() {
+    return localeKeys.map((locale) => {
+      const meta = config.locales[locale] || {};
       const active = locale === state.locale ? " is-active" : "";
-      return `
-        <button class="locale-option${active}" data-locale="${escapeAttr(locale)}" type="button" role="menuitemradio" aria-checked="${locale === state.locale ? "true" : "false"}">
-          <span class="locale-option-main">${escapeHtml(meta.label || locale)}</span>
-          <span class="locale-option-short">${escapeHtml(meta.shortLabel || locale.toUpperCase())}</span>
-          ${locale === state.locale ? icon("check") : ""}
-        </button>
-      `;
+      return `<button class="locale-button${active}" data-locale="${locale}" type="button">${escapeHtml(meta.shortLabel || locale)}</button>`;
     }).join("");
-
-    return `
-      <div class="locale-menu${open}" data-locale-menu>
-        <button class="locale-trigger" data-locale-toggle type="button" aria-haspopup="menu" aria-expanded="${state.localeMenuOpen ? "true" : "false"}" aria-label="${escapeAttr(t("selectLanguage"))}" title="${escapeAttr(t("language"))}">
-          ${icon("globe")}
-          <span>${escapeHtml(activeMeta.shortLabel || state.locale.toUpperCase())}</span>
-          ${icon("chevronDown")}
-        </button>
-        <div class="locale-flyout" role="menu" aria-label="${escapeAttr(t("selectLanguage"))}">
-          ${options}
-        </div>
-      </div>
-    `;
   }
 
   function renderSocialLinks() {
@@ -428,7 +319,9 @@
   function renderDoc(product, activeDoc) {
     const docs = getDocsByProduct(product);
     const index = docs.findIndex((doc) => doc.slug === activeDoc.slug);
-    const pageLabel = `${t("document")} ${index + 1} / ${docs.length}`;
+    const pageLabel = state.locale === "ko"
+      ? `문서 ${index + 1} / ${docs.length}`
+      : `Document ${index + 1} / ${docs.length}`;
     return `
       <div class="doc-shell">
         <article class="doc-page" data-doc-page>
@@ -464,7 +357,7 @@
     app.innerHTML = `
       <header class="topbar">
         <div class="top-actions">
-          ${renderLocaleSelector()}
+          <div class="locale-switch" aria-label="Language">${renderLocaleButtons()}</div>
           <button class="icon-button" data-theme-toggle type="button" aria-label="Theme">${icon(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button>
           ${renderSocialLinks()}
         </div>
@@ -476,17 +369,9 @@
   }
 
   function bindEvents(view, product, activeDoc, section) {
-    app.querySelector("[data-locale-toggle]")?.addEventListener("click", (event) => {
-      event.stopPropagation();
-      state.localeMenuOpen = !state.localeMenuOpen;
-      renderPage();
-    });
-
     app.querySelectorAll("[data-locale]").forEach((button) => {
-      button.addEventListener("click", (event) => {
-        event.stopPropagation();
+      button.addEventListener("click", () => {
         state.locale = button.dataset.locale;
-        state.localeMenuOpen = false;
         safeSet("drm-docs-locale", state.locale);
         document.documentElement.lang = state.locale;
         renderPage();
@@ -497,28 +382,8 @@
       const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
       document.documentElement.dataset.theme = next;
       safeSet("drm-docs-theme", next);
-      state.localeMenuOpen = false;
       renderPage();
     });
-
-    if (state.localeMenuOpen) {
-      requestAnimationFrame(() => {
-        const closeLocaleMenu = (event) => {
-          if (!app.querySelector("[data-locale-menu]")?.contains(event.target)) {
-            state.localeMenuOpen = false;
-            renderPage();
-          }
-        };
-        const closeOnEscape = (event) => {
-          if (event.key === "Escape") {
-            state.localeMenuOpen = false;
-            renderPage();
-          }
-        };
-        document.addEventListener("click", closeLocaleMenu, { once: true });
-        document.addEventListener("keydown", closeOnEscape, { once: true });
-      });
-    }
 
     if (view === "doc") {
       app.querySelector("[data-home-link]")?.addEventListener("click", () => {

@@ -50,30 +50,15 @@
     }
   ],
   "locales": {
+    "ko": {
+      "label": "한국어",
+      "shortLabel": "KO",
+      "description": "DRM Core, DRM Mob Editor, CNPC TaCZ Fire 문서를 한곳에서 정리한 공식 문서 허브입니다."
+    },
     "en": {
       "label": "English",
       "shortLabel": "EN",
       "description": "A structured documentation hub for DRM Core, DRM Mob Editor, and CNPC TaCZ Fire."
-    },
-    "ko": {
-      "label": "???",
-      "shortLabel": "KO",
-      "description": "DRM Core, DRM Mob Editor, CNPC TaCZ Fire ??? ???? ??? ?? ?????."
-    },
-    "ru": {
-      "label": "???????",
-      "shortLabel": "RU",
-      "description": "??????? ?????? ???????????? DRM Core, DRM Mob Editor ? CNPC TaCZ Fire."
-    },
-    "zh": {
-      "label": "????",
-      "shortLabel": "ZH",
-      "description": "DRM Core?DRM Mob Editor ? CNPC TaCZ Fire ????????"
-    },
-    "ja": {
-      "label": "???",
-      "shortLabel": "JA",
-      "description": "DRM Core?DRM Mob Editor?CNPC TaCZ Fire ???????????????"
     }
   },
   "products": {
@@ -203,6 +188,5 @@
         }
       ]
     }
-  },
-  "fallbackLocale": "en"
+  }
 }
