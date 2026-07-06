@@ -1,12 +1,13 @@
 ---
 title: Troubleshooting
 slug: tacz-troubleshooting
-order: 340
-description: Common TaCZ Fire issues and a practical check order.
+order: 360
+description: A practical diagnosis order for TaCZ Fire NPC setup, targets, ammo, visuals, and performance.
 product: cnpc-tacz-fire
-category: Troubleshooting
-status: Beta
-version: 0.1.x
+category: Operations
+section: operations
+status: Draft
+version: 0.1.9
 audience: Operators
 tags:
   - troubleshooting
@@ -14,19 +15,62 @@ tags:
   - npc
 ---
 
+## Fast isolation flow
+
+When a firearm NPC fails, reduce the setup before changing many values:
+
+1. Use one fresh CustomNPCs NPC.
+2. Use one real TaCZ gun.
+3. Turn on `TACZ Fire NPC Mode` and `Enabled`.
+4. Use `Stance: Ranged` or `Stance: Auto`.
+5. Keep `Ammo Stock: -1`.
+6. Remove target filters.
+7. Test with one visible target inside `Max Distance`.
+
+If this works, the addon and gun loop are fine. Add filters, finite ammo, movement, pools, and FX one step at a time.
+
 ## Symptom guide
 
-| Symptom | Possible cause | Check |
-| --- | --- | --- |
-| NPC does not fire | no target, unsaved setting, distance rule | confirm target and combat stance |
-| Stops after reload | ammo setup or compatibility | check Reload and magazine behavior |
-| Cannot damage same side | filter or friendly logic | review faction and tag exceptions |
-| Looks like the NPC holds ammo instead of a gun | render or state sync issue | retest on the latest version |
+| Symptom | Likely checks |
+| --- | --- |
+| `TACZ NPC Core` does not open the GUI | You must be in creative mode and right-click a CustomNPCs NPC. Other living entities are rejected. |
+| NPC never fires | Check `TACZ Fire NPC Mode`, `Enabled`, stance, selected TaCZ gun, target visibility, `Max Distance`, target rules, and ammo stock. |
+| NPC sees the target but waits | Check `Combat Delay Ms`, `Detect Angle`, `Instant Combat Angle`, and line of sight. |
+| NPC fires through rhythm incorrectly | Check `RPM Override`, `RPM Min`, `RPM Max`, `Burst Fire`, and the native TaCZ gun fire mode. |
+| NPC stops after emptying the gun | Check `Reload`, `Supply Ammo`, `Ammo Stock`, `Reload Duration Ms`, and gun reload compatibility. |
+| NPC attacks the wrong target | Clear entity ID filters, required tags, rejected tags, and same-faction tag rules, then re-add them gradually. |
+| NPC holds the wrong item | Confirm the ranged weapon is a real TaCZ gun and that ammo or magazine items are not being used as offhand reload props. |
+| Visual alert icons are missing | Check the per-NPC `Alert Icons` setting and the client-side `cnpc_tacz_fire Config` marker visibility settings. |
 
-## Fast diagnosis order
+## GUI access problems
 
-1. reproduce with one fresh NPC in a minimal environment
-2. keep only one gun and one ammo type
-3. disable target filters and test against default hostility
-4. compare Reload on versus off
-5. separate visual sync issues from actual combat logic issues
+`TACZ NPC Core` is an editor item. It only works on CustomNPCs NPC entities and editing requires creative mode. If a user can right-click other entities but the TaCZ Fire screen never opens, confirm the target entity class is actually a CustomNPCs NPC and that the client and server both have the addon installed.
+
+## Fire and line-of-sight problems
+
+CNPC TaCZ Fire performs a final line-of-sight check before shooting. This prevents direct fire through cover. If an NPC detects a target but does not shoot, test in an open flat area before tuning AI. If it works in the open area, the issue is cover, angle, detection delay, or range, not the gun item.
+
+`Detect Distance` controls initial awareness. `Max Distance` controls ranged fire. Do not tune one as if it were the other.
+
+## Ammo and reload problems
+
+The most common ammo issue is mixing physical ammo items with addon ammo stock. Do not put TaCZ ammo or magazines in the NPC offhand. Use `Ammo Stock`, `Supply Ammo`, and reload state.
+
+For diagnosis:
+
+1. Set `Ammo Stock` to `-1`.
+2. Keep `Reload` and `Supply Ammo` ON.
+3. Set `Reload Duration Ms` to `0` to use the held gun's native reload time.
+4. Test again with one target.
+
+If infinite stock works but finite stock fails, the NPC probably reaches `0` spare rounds or regeneration is not configured.
+
+## Target rule problems
+
+An empty entity ID list allows normal behavior. A filled entity ID list becomes an allow list. Required tags and rejected tags are additional filters. If all three are active, a target must pass all of them.
+
+When in doubt, export the target profile, simplify it, and re-import after testing.
+
+## Performance and logging
+
+Large `Detect Distance`, large `Max Distance`, broad target lists, and many managed NPCs can increase scanning and combat work. Keep early tests small. Debug logging can be useful during setup, but turn it down after confirming the encounter so logs stay readable on a live server.

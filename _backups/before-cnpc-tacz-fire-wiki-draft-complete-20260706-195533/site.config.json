@@ -29,13 +29,12 @@
       "id": "cnpc-tacz-fire",
       "label": "CNPC Tacz Fire",
       "shortLabel": "TaCZ Fire",
-      "description": "CustomNPCs NPC firearm AI powered by real TaCZ guns.",
-      "description_ko": "?? TaCZ ??? ???? CustomNPCs NPC ?? AI ?????.",
+      "description": "CustomNPCs and TaCZ firearm integration mod.",
+      "description_ko": "CustomNPCs와 TaCZ 총기 연동 모드입니다.",
       "logo": "assets/mod-logos/cnpc_tacz_fire.png",
       "logoAlt": "CNPC Tacz Fire logo",
       "logoAlt_ko": "CNPC Tacz Fire 로고",
-      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-tacz-fire",
-      "product": "cnpc-tacz-fire"
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-tacz-fire"
     },
     {
       "id": "cnpc-real-armor",
@@ -141,52 +140,11 @@
       "label": "CNPC TaCZ Fire",
       "shortLabel": "TaCZ Fire",
       "accent": "amber",
-      "description": "CustomNPCs firearm NPC addon for real TaCZ guns, tactical movement, target rules, ammo stock, weapon pools, visual pools, armor pools, combat FX, and optional grenades.",
-      "description_ko": "?? TaCZ ??, ?? ??, ?? ??, ?? ??, ?? ?, ?? ?, ??? ?, ?? FX, ??? ???? ??? CustomNPCs ?? NPC ??? ?????.",
-      "sections": [
-        {
-          "id": "overview",
-          "label": "Overview",
-          "label_ko": "??",
-          "description": "Scope, supported stack, and core rules.",
-          "description_ko": "?? ??, ?? ?? ??, ?? ?????."
-        },
-        {
-          "id": "setup",
-          "label": "Setup",
-          "label_ko": "??? ?? ??",
-          "description": "Install checks and first NPC setup.",
-          "description_ko": "?? ??? ? NPC ?? ?????."
-        },
-        {
-          "id": "combat-ai",
-          "label": "Combat AI",
-          "label_ko": "?? AI",
-          "description": "Stance, fire settings, tactical movement, and pools.",
-          "description_ko": "???, ?? ??, ?? ??, ? ?????."
-        },
-        {
-          "id": "targets",
-          "label": "Targets",
-          "label_ko": "??",
-          "description": "Entity, faction, and scoreboard tag rules.",
-          "description_ko": "???, ??, ????? ?? ?????."
-        },
-        {
-          "id": "ammo",
-          "label": "Ammo",
-          "label_ko": "??",
-          "description": "Ammo stock, reload timing, regeneration, and movement during reload.",
-          "description_ko": "?? ??, ??? ??, ??, ??? ? ?????."
-        },
-        {
-          "id": "operations",
-          "label": "Operations",
-          "label_ko": "??",
-          "description": "Troubleshooting and operational checks.",
-          "description_ko": "?? ??? ?? ?????."
-        }
-      ]
+      "description": "Planned documentation.",
+      "description_ko": "추후 작성 예정",
+      "disabled": true,
+      "statusText": "Planned",
+      "statusText_ko": "추후 작성 예정"
     }
   }
 }

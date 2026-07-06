@@ -1,37 +1,76 @@
 ---
-title: Target Filters
+title: Target Rules
 slug: tacz-target-filters
-order: 335
-description: How to restrict firearm NPC targets by faction, tag, entity, and distance rules.
+order: 340
+description: Restrict firearm NPC targets by entity ID, faction, scoreboard tag, and advanced stance rules.
 product: cnpc-tacz-fire
-category: Firearm AI
-status: Beta
-version: 0.1.x
-audience: Firearm NPC creators
+category: Targets
+section: targets
+status: Draft
+version: 0.1.9
+audience: Encounter designers
 tags:
   - target
   - filter
   - faction
 ---
 
-## Why target filters matter
+## Why targets need extra care
 
-Firearm NPCs often have longer range and higher impact than melee NPCs. If they shoot the wrong target, the issue is much more visible. Define valid targets clearly first.
+Firearm NPCs can attack from farther away than most melee NPCs, so a wrong target rule is immediately visible. Build target rules in small steps: first confirm the NPC can fire, then add entity IDs, then tags, then advanced faction or stance behavior.
 
-| Basis | Example |
+## Entity ID target list
+
+The `Targets` tab can select allowed target entity IDs. The list includes search, checked-only, unchecked-only, entity type filtering, and mod ID filtering. This is the cleanest way to make a guard attack only a specific group of mobs or only entities from a specific mod.
+
+| Control | Use |
 | --- | --- |
-| Faction | do not attack the same side |
-| Tag | attack only targets with a specific event tag |
-| Entity ID | attack only specific monsters or NPCs |
-| Distance | ignore targets outside a configured range |
+| Search | Filter registry IDs such as `minecraft:zombie`. |
+| View filter | Show all, checked only, or unchecked only entries. |
+| Type filter | Narrow broad living entity groups. |
+| Mod filter | Show entity IDs from selected mod IDs. |
+| Select all / none | Apply to the currently visible filtered list. |
 
-## Suggested setup
+An empty target entity list means the NPC falls back to normal behavior instead of a strict entity allow list.
 
-1. Verify default hostility first.
-2. Exclude same-faction targets.
-3. Add event tag exceptions.
-4. Use separate filter presets for boss fights or faction battles.
+## Scoreboard tag rules
 
-:::tip Recommendation
-Do not build complex filters in one step. Add them gradually in the order faction → tag → entity exceptions.
-:::
+Tag rules use entity scoreboard tags:
+
+| Field | Behavior |
+| --- | --- |
+| Required tags | If set, a target must have at least one required tag. |
+| Rejected tags | If set, a target with any rejected tag is rejected. |
+| Attack same faction by tag | Allows same-faction CustomNPCs to be attacked when a required tag matches. |
+
+Tags are useful for scripted events. For example, a dungeon script can add an `intruder` tag to players or NPCs during an alarm phase, then remove it after the encounter.
+
+## Factions and advanced stance
+
+Advanced stance rules can match target factions, target tags, or target entity IDs. Add target IDs and tags in `Targets` first, then use them from `Stance Mode: Advanced`.
+
+Advanced mode supports one active conditional rule. This keeps the result predictable. Use `Default` behavior if the NPC should fall back to normal `General` settings when the advanced condition does not match.
+
+## Import and export profiles
+
+Target entity profiles are stored under:
+
+```text
+config/cnpc_tacz_fire/target_entities/
+```
+
+Use `Import` and `Export` when several NPCs should share the same target profile. For faction wars, boss phases, or map packs, keeping a small set of named profiles is easier to audit than editing every NPC by hand.
+
+## Practical examples
+
+| Scenario | Suggested rule |
+| --- | --- |
+| Zombie guard | Select zombie-like entity IDs in the entity list. |
+| PvE sentry | Require a scoreboard tag such as `hostile_to_guard`. |
+| Event phase | Use required tag `phase2_target`, then remove the tag when the phase ends. |
+| Same-faction duel | Use required tags and enable same-faction tag targeting only for the event participants. |
+| Boss anti-add rifle | Allow only the add entity IDs and leave players out of the list. |
+
+## Debugging target rules
+
+If the NPC does not fire, remove filters temporarily and test with a basic hostile target. Then add one rule at a time. Most target issues come from mixing an entity allow list, required tags, rejected tags, and same-faction rules before confirming the baseline.
