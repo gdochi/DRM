@@ -3,6 +3,7 @@
   "brand": "DRM",
   "description": "Documentation hub for DRM Core, DRM Mob Editor, and CNPC TaCZ Fire.",
   "defaultLocale": "en",
+  "fallbackLocale": "en",
   "repository": "",
   "feedbackUrl": "https://github.com/gdochi/DRM/discussions",
   "discordUrl": "https://discord.gg/ryvWyRkr4c",
@@ -10,42 +11,87 @@
   "homeImage": {
     "src": "",
     "alt": "DRM wiki screenshot",
-    "alt_ko": "DRM 위키 스크린샷"
+    "alt_ko": "DRM 위키 스크린샷",
+    "alt_ru": "Скриншот DRM Wiki",
+    "alt_zh": "DRM Wiki 截图",
+    "alt_ja": "DRM Wiki のスクリーンショット"
   },
   "wikiMods": [
     {
       "id": "drm",
       "label": "DRM",
+      "label_ko": "DRM",
+      "label_ru": "DRM",
+      "label_zh": "DRM",
+      "label_ja": "DRM",
       "shortLabel": "DRM",
+      "shortLabel_ko": "DRM",
+      "shortLabel_ru": "DRM",
+      "shortLabel_zh": "DRM",
+      "shortLabel_ja": "DRM",
       "description": "Dochi RPG Maker documentation and mod project.",
       "description_ko": "Dochi RPG Maker 문서와 모드 프로젝트입니다.",
+      "description_ru": "Документация и проект мода Dochi RPG Maker.",
+      "description_zh": "Dochi RPG Maker 文档和模组项目。",
+      "description_ja": "Dochi RPG Maker のドキュメントとMODプロジェクトです。",
       "logo": "assets/mod-logos/drm.png",
       "logoAlt": "DRM logo",
       "logoAlt_ko": "DRM 로고",
+      "logoAlt_ru": "Логотип DRM",
+      "logoAlt_zh": "DRM 标志",
+      "logoAlt_ja": "DRM ロゴ",
       "product": "core",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker"
     },
     {
       "id": "cnpc-tacz-fire",
-      "label": "CNPC Tacz Fire",
+      "label": "CNPC TaCZ Fire",
+      "label_ko": "CNPC TaCZ Fire",
+      "label_ru": "CNPC TaCZ Fire",
+      "label_zh": "CNPC TaCZ Fire",
+      "label_ja": "CNPC TaCZ Fire",
       "shortLabel": "TaCZ Fire",
+      "shortLabel_ko": "TaCZ Fire",
+      "shortLabel_ru": "TaCZ Fire",
+      "shortLabel_zh": "TaCZ Fire",
+      "shortLabel_ja": "TaCZ Fire",
       "description": "CustomNPCs NPC firearm AI powered by real TaCZ guns.",
-      "description_ko": "?? TaCZ ??? ???? CustomNPCs NPC ?? AI ?????.",
+      "description_ko": "실제 TaCZ 총기를 사용하는 CustomNPCs NPC 총기 AI 문서입니다.",
+      "description_ru": "Документация ИИ огнестрельных CustomNPCs NPC на реальном оружии TaCZ.",
+      "description_zh": "使用真实 TaCZ 枪械的 CustomNPCs NPC 枪械 AI 文档。",
+      "description_ja": "実際のTaCZ銃を使うCustomNPCs NPC銃器AIのドキュメントです。",
       "logo": "assets/mod-logos/cnpc_tacz_fire.png",
-      "logoAlt": "CNPC Tacz Fire logo",
-      "logoAlt_ko": "CNPC Tacz Fire 로고",
+      "logoAlt": "CNPC TaCZ Fire logo",
+      "logoAlt_ko": "CNPC TaCZ Fire 로고",
+      "logoAlt_ru": "Логотип CNPC TaCZ Fire",
+      "logoAlt_zh": "CNPC TaCZ Fire 标志",
+      "logoAlt_ja": "CNPC TaCZ Fire ロゴ",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-tacz-fire",
       "product": "cnpc-tacz-fire"
     },
     {
       "id": "cnpc-real-armor",
       "label": "CNPC Real Armor",
+      "label_ko": "CNPC Real Armor",
+      "label_ru": "CNPC Real Armor",
+      "label_zh": "CNPC Real Armor",
+      "label_ja": "CNPC Real Armor",
       "shortLabel": "Real Armor",
+      "shortLabel_ko": "Real Armor",
+      "shortLabel_ru": "Real Armor",
+      "shortLabel_zh": "Real Armor",
+      "shortLabel_ja": "Real Armor",
       "description": "CustomNPCs armor display and equipment support mod.",
       "description_ko": "CustomNPCs 방어구 표시와 장비 지원 모드입니다.",
+      "description_ru": "Мод поддержки отображения брони и экипировки для CustomNPCs.",
+      "description_zh": "CustomNPCs 护甲显示和装备支持模组。",
+      "description_ja": "CustomNPCs の防具表示と装備を支援するMODです。",
       "logo": "assets/mod-logos/cnpc_real_armor.png",
       "logoAlt": "CNPC Real Armor logo",
       "logoAlt_ko": "CNPC Real Armor 로고",
+      "logoAlt_ru": "Логотип CNPC Real Armor",
+      "logoAlt_zh": "CNPC Real Armor 标志",
+      "logoAlt_ja": "CNPC Real Armor ロゴ",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-real-armor"
     }
   ],
@@ -56,153 +102,272 @@
       "description": "A structured documentation hub for DRM Core, DRM Mob Editor, and CNPC TaCZ Fire."
     },
     "ko": {
-      "label": "???",
+      "label": "한국어",
       "shortLabel": "KO",
-      "description": "DRM Core, DRM Mob Editor, CNPC TaCZ Fire ??? ???? ??? ?? ?????."
+      "description": "DRM Core, DRM Mob Editor, CNPC TaCZ Fire 문서를 한국어로 정리한 문서 허브입니다."
     },
     "ru": {
-      "label": "???????",
+      "label": "Русский",
       "shortLabel": "RU",
-      "description": "??????? ?????? ???????????? DRM Core, DRM Mob Editor ? CNPC TaCZ Fire."
+      "description": "Структурированный центр документации для DRM Core, DRM Mob Editor и CNPC TaCZ Fire."
     },
     "zh": {
-      "label": "????",
+      "label": "简体中文",
       "shortLabel": "ZH",
-      "description": "DRM Core?DRM Mob Editor ? CNPC TaCZ Fire ????????"
+      "description": "DRM Core、DRM Mob Editor 和 CNPC TaCZ Fire 的结构化文档中心。"
     },
     "ja": {
-      "label": "???",
+      "label": "日本語",
       "shortLabel": "JA",
-      "description": "DRM Core?DRM Mob Editor?CNPC TaCZ Fire ???????????????"
+      "description": "DRM Core、DRM Mob Editor、CNPC TaCZ Fire の構造化されたドキュメントハブです。"
     }
   },
   "products": {
     "core": {
       "label": "DRM",
+      "label_ko": "DRM",
+      "label_ru": "DRM",
+      "label_zh": "DRM",
+      "label_ja": "DRM",
       "shortLabel": "DRM",
+      "shortLabel_ko": "DRM",
+      "shortLabel_ru": "DRM",
+      "shortLabel_zh": "DRM",
+      "shortLabel_ja": "DRM",
       "accent": "blue",
       "description": "Main mod.",
-      "description_ko": "메인 모드",
+      "description_ko": "메인 모드입니다.",
+      "description_ru": "Основной мод.",
+      "description_zh": "主模组。",
+      "description_ja": "メインMODです。",
       "sections": [
         {
           "id": "getting-started",
           "label": "Start",
           "label_ko": "시작하기",
+          "label_ru": "Начало",
+          "label_zh": "开始",
+          "label_ja": "はじめに",
           "description": "Install, paths, and base concepts.",
-          "description_ko": "설치, 경로, 기본 개념을 묶은 첫 단계입니다."
+          "description_ko": "설치, 경로, 기본 개념을 먼저 다룹니다.",
+          "description_ru": "Установка, пути и базовые понятия.",
+          "description_zh": "安装、路径和基础概念。",
+          "description_ja": "インストール、パス、基本概念。"
         },
         {
           "id": "dialogue-editor",
           "label": "Dialogue Editor",
-          "label_ko": "다이얼로그 에디터",
+          "label_ko": "대화 에디터",
+          "label_ru": "Редактор диалогов",
+          "label_zh": "对话编辑器",
+          "label_ja": "会話エディター",
           "description": "Dialogue nodes, choices, conditions, and actions.",
-          "description_ko": "대화 노드, 선택지, 조건, 액션을 다룹니다."
+          "description_ko": "대화 노드, 선택지, 조건, 액션을 다룹니다.",
+          "description_ru": "Узлы диалога, варианты выбора, условия и действия.",
+          "description_zh": "对话节点、选项、条件和动作。",
+          "description_ja": "会話ノード、選択肢、条件、アクション。"
         },
         {
           "id": "npc-shop",
           "label": "NPC Shop",
           "label_ko": "NPC Shop",
+          "label_ru": "NPC-магазин",
+          "label_zh": "NPC 商店",
+          "label_ja": "NPCショップ",
           "description": "Shop files, trade modes, stock, and payment.",
-          "description_ko": "상점 파일, 거래 모드, 재고, 결제를 다룹니다."
+          "description_ko": "상점 파일, 거래 모드, 재고, 결제를 다룹니다.",
+          "description_ru": "Файлы магазина, режимы торговли, запасы и оплата.",
+          "description_zh": "商店文件、交易模式、库存和支付。",
+          "description_ja": "ショップファイル、取引モード、在庫、支払い。"
         },
         {
           "id": "currency-editor",
           "label": "Currency Editor",
-          "label_ko": "커런시 에디터",
+          "label_ko": "Currency Editor",
+          "label_ru": "Редактор валют",
+          "label_zh": "货币编辑器",
+          "label_ja": "通貨エディター",
           "description": "Currency definitions, pickup conversion, and balances.",
-          "description_ko": "화폐 정의, 픽업 변환, 잔액 저장을 다룹니다."
+          "description_ko": "화폐 정의, 픽업 변환, 잔액 저장을 다룹니다.",
+          "description_ru": "Определения валют, конвертация подбора и балансы.",
+          "description_zh": "货币定义、拾取转换和余额。",
+          "description_ja": "通貨定義、拾得変換、残高。"
         },
         {
           "id": "gui-maker",
           "label": "GUI Maker",
           "label_ko": "GUI Maker",
+          "label_ru": "Конструктор GUI",
+          "label_zh": "GUI 制作器",
+          "label_ja": "GUI Maker",
           "description": "Layout JSON, GUI types, and screen components.",
-          "description_ko": "GUI JSON, 화면 타입, 컴포넌트를 다룹니다."
+          "description_ko": "GUI JSON, 화면 타입, 컴포넌트를 다룹니다.",
+          "description_ru": "JSON-разметка GUI, типы экранов и компоненты.",
+          "description_zh": "GUI JSON、界面类型和组件。",
+          "description_ja": "GUI JSON、画面タイプ、コンポーネント。"
         },
         {
           "id": "hud-maker",
           "label": "HUD Maker",
           "label_ko": "HUD Maker",
+          "label_ru": "Конструктор HUD",
+          "label_zh": "HUD 制作器",
+          "label_ja": "HUD Maker",
           "description": "HUD sets, active layout, and runtime display.",
-          "description_ko": "HUD 세트, 활성 레이아웃, 런타임 표시를 다룹니다."
+          "description_ko": "HUD 세트, 활성 레이아웃, 런타임 표시를 다룹니다.",
+          "description_ru": "Наборы HUD, активная разметка и отображение во время игры.",
+          "description_zh": "HUD 套件、活动布局和运行时显示。",
+          "description_ja": "HUDセット、アクティブレイアウト、実行時表示。"
         },
         {
           "id": "remnant-msg",
           "label": "Remnant Msg",
-          "label_ko": "레머넌트 Msg",
+          "label_ko": "Remnant Msg",
+          "label_ru": "Remnant Msg",
+          "label_zh": "Remnant Msg",
+          "label_ja": "Remnant Msg",
           "description": "Message documents, policies, and GUI connection.",
-          "description_ko": "메시지 문서, 정책, GUI 연결을 다룹니다."
+          "description_ko": "메시지 문서, 정책, GUI 연결을 다룹니다.",
+          "description_ru": "Документы сообщений, политики и связь с GUI.",
+          "description_zh": "消息文档、策略和 GUI 连接。",
+          "description_ja": "メッセージ文書、ポリシー、GUI連携。"
         },
         {
           "id": "operations",
           "label": "Operations",
           "label_ko": "운영 / 레퍼런스",
+          "label_ru": "Операции",
+          "label_zh": "运维",
+          "label_ja": "運用",
           "description": "JSON reference, data flow, and workflows.",
-          "description_ko": "JSON, 데이터 흐름, 작업 흐름입니다."
+          "description_ko": "JSON 레퍼런스, 데이터 흐름, 작업 흐름입니다.",
+          "description_ru": "Справочник JSON, поток данных и рабочие процессы.",
+          "description_zh": "JSON 参考、数据流和工作流程。",
+          "description_ja": "JSONリファレンス、データフロー、作業フロー。"
         }
       ]
     },
     "mob-editor": {
       "label": "DRM Mob Editor",
+      "label_ko": "DRM Mob Editor",
+      "label_ru": "DRM Mob Editor",
+      "label_zh": "DRM Mob Editor",
+      "label_ja": "DRM Mob Editor",
       "shortLabel": "Mob Editor",
+      "shortLabel_ko": "Mob Editor",
+      "shortLabel_ru": "Mob Editor",
+      "shortLabel_zh": "Mob Editor",
+      "shortLabel_ja": "Mob Editor",
       "accent": "violet",
       "description": "DRM add-on. Combat-focused documentation for patterns, hitboxes, detection, phases, and reactive enemy behavior.",
-      "description_ko": "DRM의 애드온. 패턴, 히트박스, 탐지, 페이즈, 패링 같은 전투형 NPC 제작 문서입니다.",
+      "description_ko": "DRM 애드온입니다. 패턴, 히트박스, 감지, 페이즈, 반응형 적 행동 같은 전투형 NPC 제작 문서입니다.",
+      "description_ru": "Дополнение DRM для боевых NPC: паттерны, хитбоксы, обнаружение, фазы и реактивное поведение врагов.",
+      "description_zh": "DRM 附加模组文档，面向战斗 NPC 的模式、碰撞箱、侦测、阶段和反应式敌人行为。",
+      "description_ja": "DRMアドオンです。パターン、ヒットボックス、検知、フェーズ、反応型の敵行動など、戦闘向けNPC制作の文書です。",
       "disabled": true,
       "statusText": "In development",
-      "statusText_ko": "개발 중"
+      "statusText_ko": "개발 중",
+      "statusText_ru": "В разработке",
+      "statusText_zh": "开发中",
+      "statusText_ja": "開発中"
     },
     "cnpc-tacz-fire": {
       "label": "CNPC TaCZ Fire",
+      "label_ko": "CNPC TaCZ Fire",
+      "label_ru": "CNPC TaCZ Fire",
+      "label_zh": "CNPC TaCZ Fire",
+      "label_ja": "CNPC TaCZ Fire",
       "shortLabel": "TaCZ Fire",
+      "shortLabel_ko": "TaCZ Fire",
+      "shortLabel_ru": "TaCZ Fire",
+      "shortLabel_zh": "TaCZ Fire",
+      "shortLabel_ja": "TaCZ Fire",
       "accent": "amber",
       "description": "CustomNPCs firearm NPC addon for real TaCZ guns, tactical movement, target rules, ammo stock, weapon pools, visual pools, armor pools, combat FX, and optional grenades.",
-      "description_ko": "?? TaCZ ??, ?? ??, ?? ??, ?? ??, ?? ?, ?? ?, ??? ?, ?? FX, ??? ???? ??? CustomNPCs ?? NPC ??? ?????.",
+      "description_ko": "실제 TaCZ 총기, 전술 이동, 타겟 규칙, 탄약 재고, 무기 풀, 외형 풀, 방어구 풀, 전투 FX, 선택형 수류탄을 다루는 CustomNPCs 총기 NPC 애드온 문서입니다.",
+      "description_ru": "Документация аддона CustomNPCs для NPC с огнестрельным ИИ: реальные оружия TaCZ, тактическое движение, правила целей, запас боеприпасов, пулы оружия, внешности и брони, боевые FX и дополнительные гранаты.",
+      "description_zh": "CustomNPCs 枪械 NPC 插件文档，涵盖真实 TaCZ 枪械、战术移动、目标规则、弹药库存、武器池、外观池、护甲池、战斗 FX 和可选手雷。",
+      "description_ja": "実際のTaCZ銃、戦術移動、ターゲットルール、弾薬ストック、武器/外見/防具プール、戦闘FX、任意のグレネードを扱うCustomNPCs銃器NPCアドオンの文書です。",
       "sections": [
         {
           "id": "overview",
           "label": "Overview",
-          "label_ko": "??",
+          "label_ko": "개요",
+          "label_ru": "Обзор",
+          "label_zh": "概览",
+          "label_ja": "概要",
           "description": "Scope, supported stack, and core rules.",
-          "description_ko": "?? ??, ?? ?? ??, ?? ?????."
+          "description_ko": "기능 범위, 지원 모드 조합, 핵심 규칙입니다.",
+          "description_ru": "Область функций, поддерживаемый набор модов и основные правила.",
+          "description_zh": "功能范围、支持的模组组合和核心规则。",
+          "description_ja": "機能範囲、対応MOD構成、基本ルール。"
         },
         {
           "id": "setup",
           "label": "Setup",
-          "label_ko": "??? ?? ??",
+          "label_ko": "설치와 기본 설정",
+          "label_ru": "Установка",
+          "label_zh": "设置",
+          "label_ja": "セットアップ",
           "description": "Install checks and first NPC setup.",
-          "description_ko": "?? ??? ? NPC ?? ?????."
+          "description_ko": "설치 확인과 첫 NPC 설정 절차입니다.",
+          "description_ru": "Проверка установки и настройка первого NPC.",
+          "description_zh": "安装检查和第一个 NPC 的设置流程。",
+          "description_ja": "インストール確認と最初のNPC設定手順。"
         },
         {
           "id": "combat-ai",
           "label": "Combat AI",
-          "label_ko": "?? AI",
+          "label_ko": "전투 AI",
+          "label_ru": "Боевой ИИ",
+          "label_zh": "战斗 AI",
+          "label_ja": "戦闘AI",
           "description": "Stance, fire settings, tactical movement, and pools.",
-          "description_ko": "???, ?? ??, ?? ??, ? ?????."
+          "description_ko": "스탠스, 사격 설정, 전술 이동, 풀 설정입니다.",
+          "description_ru": "Стойки, настройки стрельбы, тактическое движение и пулы.",
+          "description_zh": "姿态、射击设置、战术移动和池设置。",
+          "description_ja": "スタンス、射撃設定、戦術移動、プール設定。"
         },
         {
           "id": "targets",
           "label": "Targets",
-          "label_ko": "??",
+          "label_ko": "타겟",
+          "label_ru": "Цели",
+          "label_zh": "目标",
+          "label_ja": "ターゲット",
           "description": "Entity, faction, and scoreboard tag rules.",
-          "description_ko": "???, ??, ????? ?? ?????."
+          "description_ko": "엔티티, 팩션, 스코어보드 태그 규칙입니다.",
+          "description_ru": "Правила сущностей, фракций и scoreboard-тегов.",
+          "description_zh": "实体、阵营和计分板标签规则。",
+          "description_ja": "エンティティ、ファクション、スコアボードタグのルール。"
         },
         {
           "id": "ammo",
           "label": "Ammo",
-          "label_ko": "??",
+          "label_ko": "탄약",
+          "label_ru": "Боеприпасы",
+          "label_zh": "弹药",
+          "label_ja": "弾薬",
           "description": "Ammo stock, reload timing, regeneration, and movement during reload.",
-          "description_ko": "?? ??, ??? ??, ??, ??? ? ?????."
+          "description_ko": "탄약 재고, 재장전 시간, 재생, 재장전 중 이동입니다.",
+          "description_ru": "Запас боеприпасов, время перезарядки, регенерация и движение во время перезарядки.",
+          "description_zh": "弹药库存、换弹时间、恢复和换弹中的移动。",
+          "description_ja": "弾薬ストック、リロード時間、再生、リロード中の移動。"
         },
         {
           "id": "operations",
           "label": "Operations",
-          "label_ko": "??",
+          "label_ko": "운영",
+          "label_ru": "Операции",
+          "label_zh": "运维",
+          "label_ja": "運用",
           "description": "Troubleshooting and operational checks.",
-          "description_ko": "?? ??? ?? ?????."
+          "description_ko": "문제 해결과 운영 점검입니다.",
+          "description_ru": "Устранение неполадок и эксплуатационные проверки.",
+          "description_zh": "故障排查和运维检查。",
+          "description_ja": "トラブルシューティングと運用チェック。"
         }
       ]
     }
-  },
-  "fallbackLocale": "en"
+  }
 }

@@ -58,17 +58,17 @@
         repo: "GitHub",
         discord: "Discord",
         youtube: "YouTube",
-        openDocs: "문서 열기",
+        openDocs: "?? ??",
         curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
-        openMenu: "사이드바 열기",
-        closeMenu: "사이드바 닫기",
+        openMenu: "???? ??",
+        closeMenu: "???? ??",
         backToProducts: "DRM WIKI",
-        previous: "이전",
-        next: "다음",
-        document: "문서",
-        language: "언어",
-        selectLanguage: "언어 선택"
+        previous: "??",
+        next: "??",
+        document: "??",
+        language: "??",
+        selectLanguage: "?? ??"
       },
       en: {
         repo: "GitHub",
@@ -90,49 +90,49 @@
         repo: "GitHub",
         discord: "Discord",
         youtube: "YouTube",
-        openDocs: "Открыть документацию",
+        openDocs: "??????? ????????????",
         curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
-        openMenu: "Открыть боковую панель",
-        closeMenu: "Закрыть боковую панель",
+        openMenu: "??????? ??????? ??????",
+        closeMenu: "??????? ??????? ??????",
         backToProducts: "DRM WIKI",
-        previous: "Назад",
-        next: "Далее",
-        document: "Документ",
-        language: "Язык",
-        selectLanguage: "Выбор языка"
+        previous: "?????",
+        next: "?????",
+        document: "????????",
+        language: "????",
+        selectLanguage: "????? ?????"
       },
       zh: {
         repo: "GitHub",
         discord: "Discord",
         youtube: "YouTube",
-        openDocs: "打开文档",
+        openDocs: "????",
         curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
-        openMenu: "打开侧边栏",
-        closeMenu: "关闭侧边栏",
+        openMenu: "?????",
+        closeMenu: "?????",
         backToProducts: "DRM WIKI",
-        previous: "上一页",
-        next: "下一页",
-        document: "文档",
-        language: "语言",
-        selectLanguage: "选择语言"
+        previous: "???",
+        next: "???",
+        document: "??",
+        language: "??",
+        selectLanguage: "????"
       },
       ja: {
         repo: "GitHub",
         discord: "Discord",
         youtube: "YouTube",
-        openDocs: "ドキュメントを開く",
+        openDocs: "?????????",
         curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
-        openMenu: "サイドバーを開く",
-        closeMenu: "サイドバーを閉じる",
+        openMenu: "????????",
+        closeMenu: "?????????",
         backToProducts: "DRM WIKI",
-        previous: "前へ",
-        next: "次へ",
-        document: "ドキュメント",
-        language: "言語",
-        selectLanguage: "言語を選択"
+        previous: "??",
+        next: "??",
+        document: "??????",
+        language: "??",
+        selectLanguage: "?????"
       }
     };
     return (copy[state.locale] && copy[state.locale][key]) || copy.en[key] || key;
@@ -255,7 +255,7 @@
 
   function renderModLogo(meta) {
     const src = meta.logo || meta.logoSrc || "";
-    const label = modText(meta, "shortLabel") || modText(meta, "label") || meta.id || "";
+    const label = meta.shortLabel || meta.label || meta.id || "";
     if (!src) {
       return `<span class="mod-logo-box mod-logo-fallback" aria-hidden="true">${escapeHtml(String(label).slice(0, 3))}</span>`;
     }
@@ -373,7 +373,7 @@
       const body = `
           ${renderModLogo(meta)}
           <div class="track-body">
-            <h2>${escapeHtml(modText(meta, "label") || meta.id || "")}</h2>
+            <h2>${escapeHtml(meta.label || meta.id || "")}</h2>
             <p>${escapeHtml(modText(meta, "description"))}</p>
           </div>
       `;
