@@ -31,7 +31,7 @@ tags:
 | type | 주요 필드 | 동작 |
 | --- | --- | --- |
 | `tag` | `key`, `tag`, `value`, `op` | 플레이어 태그가 있는지 봅니다. |
-| `stored` | `key`, `value`, `op` | 플레이어 PersistentData의 DRM 런타임 값을 비교합니다. |
+| `stored` | `key`, `value`, `op` | CustomNPCs 스크립트의 storeddata 연동 값을 비교합니다. |
 | `item` | `key`, `value`, `op` | 플레이어 인벤토리의 아이템 수량을 비교합니다. |
 | `faction_score` | `faction`, `key`, `amount`, `value`, `op` | CustomNPCs faction point를 비교합니다. |
 | `advancement` | `advancement`, `key`, `op` | 발전 과제 완료 여부를 봅니다. |
@@ -39,6 +39,8 @@ tags:
 | `ftb_task` | `quest`, `task`, `op` | FTB 퀘스트 태스크 상태를 봅니다. |
 
 숫자 비교 조건은 `>`, `>=`, `<`, `<=`, `==`, `!=`를 사용할 수 있습니다. 태그와 발전 과제는 보통 `has` 또는 `not`을 사용합니다.
+
+`stored` 조건은 CustomNPCs 스크립트에서 storeddata를 쓰는 제작자를 위한 조건입니다. 일반 대화 제작에서 플레이어 태그나 아이템 조건만 쓰는 경우에는 이 타입을 몰라도 됩니다.
 
 ## 액션 타입
 
@@ -76,14 +78,7 @@ tags:
 
 ## 명령 액션
 
-`command` 액션은 앞의 `/`를 제거한 뒤 플레이어 기준으로 실행합니다.
-
-```json
-{
-  "type": "command",
-  "command": "title {player} actionbar {\"text\":\"Quest started\",\"color\":\"green\"}"
-}
-```
+`command` 액션에는 마인크래프트 명령어를 그대로 넣습니다. 채팅에 입력할 때 붙이는 앞의 `/`는 제거하고, 명령은 플레이어 기준으로 실행됩니다.
 
 사용 가능한 플레이스홀더는 다음과 같습니다.
 

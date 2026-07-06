@@ -277,10 +277,16 @@
   }
 
   function renderDoc(product, activeDoc) {
+    const docs = getDocsByProduct(product);
+    const index = docs.findIndex((doc) => doc.slug === activeDoc.slug);
+    const pageLabel = state.locale === "ko"
+      ? `문서 ${index + 1} / ${docs.length}`
+      : `Document ${index + 1} / ${docs.length}`;
     return `
       <div class="doc-shell">
         <article class="doc-page" data-doc-page>
           <header class="doc-page-head">
+            <div class="doc-page-kicker">${escapeHtml(pageLabel)}</div>
             <h1>${escapeHtml(activeDoc.title)}</h1>
           </header>
           <div class="doc-page-body">${activeDoc.html}</div>

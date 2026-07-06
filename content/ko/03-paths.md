@@ -40,6 +40,22 @@ tags:
 | Remnant Msg | `config/dochi_rpg_maker/remnant_msg/` | 메시지와 정책 JSON을 저장합니다. |
 | 로그 | `config/dochi_rpg_maker/debug.log` | 코어가 직접 남기는 보조 로그입니다. |
 
+## 폴더별 저장 방식
+
+| 폴더 | 저장 단위 | 파일 예시 | 알아둘 점 |
+| --- | --- | --- | --- |
+| `dialogue_sets` | 폴더 | `dialogue_sets/blacksmith/start.json` | 한 대화 세트가 하나의 폴더입니다. 불러오기와 저장도 세트 폴더 기준으로 처리합니다. |
+| `gui` | JSON 파일 | `gui/default_shop_gui.json` | 대화, 상점, 메시지 화면의 배치와 컴포넌트만 저장합니다. 상품이나 대화 내용 자체는 저장하지 않습니다. |
+| `npc_shops` | JSON 파일 | `npc_shops/blacksmith.json` | NPC가 팔거나 매입하는 상품, 가격, 재고, 화폐 기준을 저장합니다. |
+| `currency/definitions` | JSON 파일 | `currency/definitions/gold.json` | 화폐 ID와 표시 방식, 픽업 변환, 사망 규칙을 저장합니다. |
+| `hud/sets` | 세트 JSON | `hud/sets/default.json` | HUD Maker에서 편집한 화면 배치 세트입니다. |
+| `hud/definitions` | 정의 JSON | `hud/definitions/vanilla/health.json` | HUD 요소가 어떤 값을 표시할지 정하는 정의입니다. |
+| `settings` | 설정 JSON | `settings/defaults.json` | 기본 대화 GUI, 기본 상점 GUI, 기본 화폐, 리로드 정책을 저장합니다. |
+| `remnant_msg/messages` | JSON 파일 | `remnant_msg/messages/tutorial.json` | 플레이어에게 보여줄 레머넌트 메시지 본문입니다. |
+| `remnant_msg/policies` | JSON 파일 | `remnant_msg/policies/default.json` | 메시지 길이, 표시 조건, 출력 정책을 저장합니다. |
+
+대화 세트만 폴더 안에 여러 JSON이 모여 하나의 세트가 됩니다. 나머지는 대부분 파일 하나가 하나의 문서입니다.
+
 ## 서버 JSON 종류
 
 서버와 클라이언트는 `kind`와 `path`를 주고받아 JSON을 읽고 씁니다.
@@ -54,6 +70,8 @@ tags:
 | `currency_hud_layout` | `hud/sets` | HUD 세트 저장소입니다. 예전 `currency_hud` 이름도 호환됩니다. |
 | `hud_active_set` | `hud/active_set.json` | 현재 활성 HUD 세트입니다. |
 | `hud_definition` | `hud/definitions` | 바닐라 HUD 대체와 커스텀 HUD 정의입니다. |
+| `remnant_msg` | `remnant_msg/messages` | 레머넌트 메시지 문서입니다. |
+| `remnant_msg_policy` | `remnant_msg/policies` | 레머넌트 메시지 정책 문서입니다. |
 | `settings` | `settings/defaults.json` | 기본 화폐와 기본 GUI 연결 설정입니다. |
 
 ## 경로 입력 규칙

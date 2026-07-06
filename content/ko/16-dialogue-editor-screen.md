@@ -31,7 +31,7 @@ Dialogue Editor는 한 화면에서 대화 세트, 노드, 선택지, 조건, �
 
 | 버튼 | 기능 |
 | --- | --- |
-| `Editors` | 공용 에디터 선택 화면으로 돌아갑니다. |
+| `Editors` | 에디터 선택 UI로 돌아갑니다. |
 | `Create New` | 새 대화 세트 초안을 만듭니다. |
 | `Load` | 기존 대화 세트를 검색해서 불러옵니다. |
 | `Save` | 현재 경로에 저장합니다. |
@@ -42,6 +42,18 @@ Dialogue Editor는 한 화면에서 대화 세트, 노드, 선택지, 조건, �
 대화 세트는 서버 JSON으로 저장할 수 있고, NPC에 직접 적용할 수도 있습니다. 여러 NPC가 같은 대화를 써야 하면 서버 JSON으로 저장하는 쪽이 관리하기 쉽습니다.
 
 ## 새 대화 세트 만들기
+
+대화 세트는 파일 하나가 아니라 폴더 단위로 만들어집니다. 예를 들어 `blacksmith` 세트를 만들면 `dialogue_sets/blacksmith/` 폴더가 생기고, 그 안에 전체 스냅샷인 `dialogue_set.json`, 입구 노드인 `start.json`, 일반 대화 노드 JSON들이 함께 저장됩니다.
+
+```text
+config/dochi_rpg_maker/dialogue_sets/blacksmith/
+  dialogue_set.json
+  start.json
+  greeting.json
+  quest_done.json
+```
+
+하나의 일반 노드는 보통 하나의 JSON으로 저장되고, `start` 노드를 기준으로 여러 일반 노드가 모여 하나의 대화 세트가 됩니다. 그래서 `Load`, `Save`, `Save As`는 개별 노드 하나가 아니라 세트 폴더 전체를 대상으로 생각하는 편이 좋습니다.
 
 1. `Create New`를 누릅니다.
 2. 기본 `start` 노드와 일반 노드를 준비합니다.

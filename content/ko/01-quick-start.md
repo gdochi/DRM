@@ -16,24 +16,41 @@ tags:
 
 ## 첫 실행
 
-1. Forge 1.20.1 인스턴스의 `mods` 폴더에 `dochi_rpg_maker` JAR을 넣습니다.
-2. 서버에서 사용할 경우 서버와 접속 클라이언트 양쪽에 같은 JAR을 넣습니다.
-3. CustomNPCs NPC를 대상으로 대화나 상점을 만들 경우 CustomNPCs도 같은 환경에 설치합니다.
-4. 월드나 서버를 한 번 실행해서 `config/dochi_rpg_maker` 폴더가 생성되게 합니다.
-5. 크리에이티브 모드 또는 편집 권한이 있는 상태로 `Dochi RPG Maker Core` 아이템을 준비합니다.
+1. 서버에서 사용할 경우 서버와 접속 클라이언트 양쪽에 같은 DRM JAR을 넣습니다.
+2. DRM의 대화, NPC Shop, NPC 편집 흐름은 CustomNPCs NPC를 대상으로 하므로 CustomNPCs도 같은 환경에 설치합니다.
+3. 월드나 서버를 한 번 실행해서 `config/dochi_rpg_maker` 폴더가 생성되게 합니다.
+4. 크리에이티브 모드 또는 편집 권한이 있는 상태로 `Dochi RPG Maker Core` 아이템을 준비합니다. 이 아이템은 CustomNPCs 아이템 탭에서 찾을 수 있습니다.
 
 처음 실행하면 기본 대화 세트, 기본 대화 GUI, 기본 상점 GUI, 샘플 상점, HUD 정의, 설정 파일이 `config/dochi_rpg_maker` 아래에 설치됩니다.
+
+## 처음 생성되는 저장 폴더
+
+DRM이 만드는 JSON은 대부분 `config/dochi_rpg_maker` 아래에 저장됩니다. 에디터에서 `Save` 또는 `Save As`를 누르면 이 폴더 안의 종류별 저장소로 들어간다고 보면 됩니다.
+
+| 폴더 | 저장되는 JSON | 쓰는 화면 |
+| --- | --- | --- |
+| `dialogue_sets/<set>/` | `dialogue_set.json`, `start.json`, 일반 노드 JSON | Dialogue Editor |
+| `gui/` | 대화, 상점, Remnant Msg 화면 레이아웃 | GUI Maker |
+| `npc_shops/` | 파일 기반 NPC 상점 문서 | NPC Shop |
+| `currency/definitions/` | 화폐 ID, 이름, 아이콘, 픽업 변환 규칙 | Currency Editor |
+| `hud/sets/` | HUD Maker에서 만든 HUD 세트 | HUD Maker |
+| `hud/definitions/` | 바닐라 HUD 대체 또는 커스텀 HUD 정의 | HUD Maker |
+| `settings/` | 기본 GUI, 기본 화폐, 리로드 정책 | 설정 / 운영 |
+| `remnant_msg/messages/` | 레머넌트 메시지 본문 | Remnant Msg Editor |
+| `remnant_msg/policies/` | 레머넌트 메시지 표시 정책 | Remnant Msg Editor |
+
+대화 세트는 폴더 단위이고, 상점과 GUI는 파일 단위입니다. 같은 이름을 쓰더라도 저장 폴더가 다르면 서로 다른 데이터입니다.
 
 ## 에디터 여는 방법
 
 | 동작 | 열리는 화면 |
 | --- | --- |
-| 허공에 `Dochi RPG Maker Core` 우클릭 | 공용 에디터 선택 화면 |
+| 허공에 `Dochi RPG Maker Core` 우클릭 | 에디터 선택 UI 호출 |
 | CustomNPCs NPC에 코어 아이템 우클릭 | 해당 NPC를 대상으로 하는 편집 흐름 |
 | 대화가 연결된 NPC를 아이템 없이 우클릭 | 대화 런타임 |
 | 상점이 연결된 NPC를 아이템 없이 우클릭 | 상점 런타임 |
 
-공용 에디터 선택 화면에서는 `Dialogue Editor`, `NPC Shop`, `Currency Editor`, `GUI Maker`, `HUD Maker`, `Remnant Msg Editor`를 고를 수 있습니다.
+에디터 선택 UI에서는 `Dialogue Editor`, `NPC Shop`, `Currency Editor`, `GUI Maker`, `HUD Maker`, `Remnant Msg Editor`를 고를 수 있습니다.
 
 ## 가장 짧은 대화 제작 흐름
 

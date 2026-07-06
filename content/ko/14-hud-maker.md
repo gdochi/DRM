@@ -36,7 +36,7 @@ HUD 정의의 서버 JSON kind는 `hud_definition`입니다. 활성 세트는 `h
 
 | 버튼 | 기능 |
 | --- | --- |
-| `Editors` | 공용 에디터 선택 화면으로 돌아갑니다. |
+| `Editors` | 에디터 선택 UI로 돌아갑니다. |
 | `Create New` | 새 HUD 정의 또는 초안을 만듭니다. |
 | `Load` | HUD 정의 JSON을 불러옵니다. |
 | `Save` | 현재 HUD 정의를 저장합니다. |
