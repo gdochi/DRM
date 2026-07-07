@@ -72,17 +72,7 @@
         next: "다음",
         document: "문서",
         language: "언어",
-        selectLanguage: "언어 선택",
-        feedbackButton: "의견",
-        feedbackOpen: "의견 남기기",
-        feedbackClose: "의견 닫기",
-        feedbackTitle: "의견 남기기",
-        feedbackDescription: "사이트에 대한 의견, 제안, 오류 제보를 남겨주세요. GitHub 계정으로 로그인하면 작성할 수 있습니다.",
-        feedbackTagsAria: "의견 대상 모드 태그",
-        feedbackTagsLabel: "의견 대상 태그",
-        feedbackTagsHint: "의견을 작성할 때 관련 모드 태그를 함께 적어주세요.",
-        feedbackTagCopied: "{tag} 태그를 복사했습니다. 의견 작성란에 붙여넣어 주세요.",
-        feedbackTagFallback: "의견 작성 시 {tag} 태그를 함께 적어주세요."
+        selectLanguage: "언어 선택"
       },
       en: {
         repo: "GitHub",
@@ -98,17 +88,7 @@
         next: "Next",
         document: "Document",
         language: "Language",
-        selectLanguage: "Select language",
-        feedbackButton: "Feedback",
-        feedbackOpen: "Leave feedback",
-        feedbackClose: "Close feedback",
-        feedbackTitle: "Leave feedback",
-        feedbackDescription: "Leave comments, suggestions, or bug reports about the site. Sign in with a GitHub account to write.",
-        feedbackTagsAria: "Feedback target mod tags",
-        feedbackTagsLabel: "Target tags",
-        feedbackTagsHint: "Include the related mod tag when writing feedback.",
-        feedbackTagCopied: "Copied the {tag} tag. Paste it into the feedback box.",
-        feedbackTagFallback: "Include the {tag} tag when writing feedback."
+        selectLanguage: "Select language"
       },
       ru: {
         repo: "GitHub",
@@ -124,17 +104,7 @@
         next: "Далее",
         document: "Документ",
         language: "Язык",
-        selectLanguage: "Выбор языка",
-        feedbackButton: "Отзыв",
-        feedbackOpen: "Оставить отзыв",
-        feedbackClose: "Закрыть отзыв",
-        feedbackTitle: "Оставить отзыв",
-        feedbackDescription: "Оставьте комментарий, предложение или сообщение об ошибке по сайту. Для отправки войдите через GitHub.",
-        feedbackTagsAria: "Теги мода для отзыва",
-        feedbackTagsLabel: "Теги темы",
-        feedbackTagsHint: "При отправке отзыва добавьте тег нужного мода.",
-        feedbackTagCopied: "Тег {tag} скопирован. Вставьте его в поле отзыва.",
-        feedbackTagFallback: "При отправке отзыва добавьте тег {tag}."
+        selectLanguage: "Выбор языка"
       },
       zh: {
         repo: "GitHub",
@@ -150,17 +120,7 @@
         next: "下一页",
         document: "文档",
         language: "语言",
-        selectLanguage: "选择语言",
-        feedbackButton: "反馈",
-        feedbackOpen: "留下反馈",
-        feedbackClose: "关闭反馈",
-        feedbackTitle: "留下反馈",
-        feedbackDescription: "请留下关于网站的意见、建议或错误报告。使用 GitHub 账号登录后即可提交。",
-        feedbackTagsAria: "反馈目标模组标签",
-        feedbackTagsLabel: "目标标签",
-        feedbackTagsHint: "提交反馈时请附上相关模组标签。",
-        feedbackTagCopied: "已复制 {tag} 标签。请粘贴到反馈输入框中。",
-        feedbackTagFallback: "提交反馈时请附上 {tag} 标签。"
+        selectLanguage: "选择语言"
       },
       ja: {
         repo: "GitHub",
@@ -176,24 +136,10 @@
         next: "次へ",
         document: "ドキュメント",
         language: "言語",
-        selectLanguage: "言語を選択",
-        feedbackButton: "意見",
-        feedbackOpen: "意見を送る",
-        feedbackClose: "意見を閉じる",
-        feedbackTitle: "意見を送る",
-        feedbackDescription: "サイトへの意見、提案、不具合報告を残してください。GitHub アカウントでログインすると投稿できます。",
-        feedbackTagsAria: "意見対象MODタグ",
-        feedbackTagsLabel: "対象タグ",
-        feedbackTagsHint: "投稿時に関連するMODタグも一緒に書いてください。",
-        feedbackTagCopied: "{tag} タグをコピーしました。投稿欄に貼り付けてください。",
-        feedbackTagFallback: "投稿時に {tag} タグも一緒に書いてください。"
+        selectLanguage: "言語を選択"
       }
     };
     return (copy[state.locale] && copy[state.locale][key]) || copy.en[key] || key;
-  }
-
-  function tf(key, values = {}) {
-    return Object.entries(values).reduce((text, [name, value]) => text.replaceAll(`{${name}}`, value), t(key));
   }
 
   function escapeHtml(value) {
@@ -305,7 +251,7 @@
   }
 
   function feedbackModLabel(meta) {
-    return modText(meta, "label") || modText(meta, "shortLabel") || meta?.id || "";
+    return meta?.label_ko || meta?.shortLabel_ko || meta?.label || meta?.shortLabel || meta?.id || "";
   }
 
   function modDocsLink(meta) {
@@ -416,26 +362,19 @@
     return links.map((item) => `<a class="icon-button" href="${escapeAttr(item.href)}" target="_blank" rel="noreferrer" aria-label="${escapeAttr(item.label)}" title="${escapeAttr(item.label)}">${icon(item.icon)}</a>`).join("");
   }
 
-  function renderFeedbackTagButtons() {
+  function renderFeedbackTags() {
     const tags = getWikiMods()
       .map((meta) => feedbackModLabel(meta))
       .filter(Boolean);
     if (!tags.length) return "";
 
-    return tags.map((tag) => `<button class="feedback-tag" type="button" data-feedback-tag="${escapeAttr(tag)}">#${escapeHtml(tag)}</button>`).join("");
-  }
-
-  function renderFeedbackTags() {
-    const buttons = renderFeedbackTagButtons();
-    if (!buttons) return "";
-
     return `
-      <div class="feedback-tags" data-feedback-tags aria-label="${escapeAttr(t("feedbackTagsAria"))}">
-        <span class="feedback-tags__label" data-feedback-tags-label>${escapeHtml(t("feedbackTagsLabel"))}</span>
-        <div class="feedback-tags__list" data-feedback-tags-list>
-          ${buttons}
+      <div class="feedback-tags" aria-label="의견 대상 모드 태그">
+        <span class="feedback-tags__label">의견 대상 태그</span>
+        <div class="feedback-tags__list">
+          ${tags.map((tag) => `<button class="feedback-tag" type="button" data-feedback-tag="${escapeAttr(tag)}">#${escapeHtml(tag)}</button>`).join("")}
         </div>
-        <p class="feedback-tags__hint" data-feedback-tag-status>${escapeHtml(t("feedbackTagsHint"))}</p>
+        <p class="feedback-tags__hint" data-feedback-tag-status>의견을 작성할 때 관련 모드 태그를 함께 적어주세요.</p>
       </div>
     `;
   }
@@ -443,40 +382,22 @@
   function renderFeedbackSection() {
     return `
       <section id="feedback" class="feedback-section feedback-flyout" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="feedback-title">
-        <button class="feedback-flyout__backdrop" data-feedback-close type="button" aria-label="${escapeAttr(t("feedbackClose"))}"></button>
+        <button class="feedback-flyout__backdrop" data-feedback-close type="button" aria-label="의견 닫기"></button>
         <div class="feedback-section__inner feedback-flyout__panel" tabindex="-1">
           <div class="feedback-section__header">
             <div>
-              <h2 id="feedback-title">${escapeHtml(t("feedbackTitle"))}</h2>
-              <p class="feedback-section__description" data-feedback-description>${escapeHtml(t("feedbackDescription"))}</p>
+              <h2 id="feedback-title">의견 남기기</h2>
+              <p class="feedback-section__description">
+                사이트에 대한 의견, 제안, 오류 제보를 남겨주세요. GitHub 계정으로 로그인하면 작성할 수 있습니다.
+              </p>
             </div>
-            <button class="icon-button feedback-flyout__close" data-feedback-close type="button" aria-label="${escapeAttr(t("feedbackClose"))}">${icon("x")}</button>
+            <button class="icon-button feedback-flyout__close" data-feedback-close type="button" aria-label="의견 닫기">${icon("x")}</button>
           </div>
           ${renderFeedbackTags()}
           <div class="giscus"></div>
         </div>
       </section>
     `;
-  }
-
-  function refreshFeedbackSection(section) {
-    if (!section) return;
-
-    section.querySelector("#feedback-title").textContent = t("feedbackTitle");
-    section.querySelector("[data-feedback-description]").textContent = t("feedbackDescription");
-    section.querySelectorAll("[data-feedback-close]").forEach((button) => {
-      button.setAttribute("aria-label", t("feedbackClose"));
-    });
-
-    const tagBox = section.querySelector("[data-feedback-tags]");
-    if (tagBox) tagBox.setAttribute("aria-label", t("feedbackTagsAria"));
-    const tagLabel = section.querySelector("[data-feedback-tags-label]");
-    const tagList = section.querySelector("[data-feedback-tags-list]");
-    const tagStatus = section.querySelector("[data-feedback-tag-status]");
-    if (tagLabel) tagLabel.textContent = t("feedbackTagsLabel");
-    if (tagList) tagList.innerHTML = renderFeedbackTagButtons();
-    if (tagStatus) tagStatus.textContent = t("feedbackTagsHint");
-    updateGiscusLanguage();
   }
 
   function bindFeedbackSection(section) {
@@ -492,10 +413,10 @@
       const tag = `[${button.dataset.feedbackTag || button.textContent.replace(/^#/, "")}]`;
       const status = section.querySelector("[data-feedback-tag-status]");
       const copied = () => {
-        if (status) status.textContent = tf("feedbackTagCopied", { tag });
+        if (status) status.textContent = `${tag} 태그를 복사했습니다. 의견 작성란에 붙여넣어 주세요.`;
       };
       const fallback = () => {
-        if (status) status.textContent = tf("feedbackTagFallback", { tag });
+        if (status) status.textContent = `의견 작성 시 ${tag} 태그를 함께 적어주세요.`;
       };
 
       if (navigator.clipboard?.writeText) {
@@ -509,22 +430,6 @@
         closeFeedbackFlyout();
       }
     });
-  }
-
-  function giscusLang() {
-    return {
-      ko: "ko",
-      en: "en",
-      ru: "ru",
-      zh: "zh-CN",
-      ja: "ja"
-    }[state.locale] || "en";
-  }
-
-  function updateGiscusLanguage() {
-    const frame = document.querySelector("#feedback iframe.giscus-frame");
-    if (!frame?.contentWindow) return;
-    frame.contentWindow.postMessage({ giscus: { setConfig: { lang: giscusLang() } } }, "https://giscus.app");
   }
 
   function mountGiscus() {
@@ -552,7 +457,7 @@
     script.setAttribute("data-emit-metadata", "0");
     script.setAttribute("data-input-position", "top");
     script.setAttribute("data-theme", "preferred_color_scheme");
-    script.setAttribute("data-lang", giscusLang());
+    script.setAttribute("data-lang", "ko");
     host.appendChild(script);
     giscusMounted = true;
   }
@@ -563,7 +468,6 @@
       document.body.insertAdjacentHTML("beforeend", renderFeedbackSection());
       section = document.getElementById("feedback");
     }
-    refreshFeedbackSection(section);
     bindFeedbackSection(section);
     return section;
   }
@@ -705,7 +609,7 @@
     app.innerHTML = `
       <header class="topbar">
         <div class="top-actions">
-          <button class="feedback-top-button" data-feedback-link type="button" aria-label="${escapeAttr(t("feedbackOpen"))}" title="${escapeAttr(t("feedbackOpen"))}" aria-controls="feedback" aria-expanded="${state.feedbackOpen ? "true" : "false"}">${icon("message")}<span>${escapeHtml(t("feedbackButton"))}</span></button>
+          <button class="feedback-top-button" data-feedback-link type="button" aria-label="의견 남기기" title="의견 남기기" aria-controls="feedback" aria-expanded="${state.feedbackOpen ? "true" : "false"}">${icon("message")}<span>의견</span></button>
           ${renderLocaleSelector()}
           <button class="icon-button" data-theme-toggle type="button" aria-label="Theme">${icon(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button>
           ${renderSocialLinks()}

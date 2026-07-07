@@ -354,10 +354,10 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
 }
 .feedback-section__inner {
   position: absolute;
-  top: calc(var(--topbar) + 10px);
+  top: calc(var(--topbar) + 14px);
   right: 18px;
-  bottom: 10px;
-  width: min(1440px, calc(100vw - 36px));
+  bottom: 18px;
+  width: min(720px, calc(100vw - 36px));
   display: grid;
   grid-template-rows: auto auto minmax(0, 1fr);
   gap: 18px;
@@ -426,7 +426,7 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
   line-height: 1.55;
 }
 .giscus {
-  min-height: 520px;
+  min-height: 360px;
   overflow: hidden;
 }
 
