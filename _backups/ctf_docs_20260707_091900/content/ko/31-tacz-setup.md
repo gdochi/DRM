@@ -11,20 +11,20 @@ version: 0.1.9
 audience: 서버 운영자
 tags:
   - setup
-  - TACZ
+  - tacz
   - gui
 ---
 
 ## 설치 체크리스트
 
-CNPC TACZ Fire는 Forge 1.20.1을 대상으로 합니다. 총기 NPC 제작에는 TACZ와 CustomNPCs가 필요합니다. playerAnimator, Better Combat 같은 선택 의존 모드를 함께 쓰면 애니메이션과 근접 전투 연출을 더 다양하게 구성할 수 있습니다.
+CNPC TaCZ Fire는 Forge 1.20.1을 대상으로 합니다. 모드 메타데이터 기준 필수 범위는 Forge `[47,)`, Minecraft `[1.20.1,1.21)`, TaCZ `[1.1.8,)`입니다. CustomNPCs는 메타데이터에서는 선택 의존성으로 되어 있지만, 이 위키의 흐름은 CustomNPCs NPC 제작을 전제로 하므로 총기 NPC를 만들 때는 CustomNPCs를 함께 설치해야 합니다.
 
 | 구성 요소 | 이 위키 흐름에서 필요 여부 | 메모 |
 | --- | --- | --- |
 | Forge | 필요 | 1.20.1 Forge 47+ 환경을 사용합니다. |
-| TACZ | 필요 | NPC 총기는 실제 TACZ 총기 아이템입니다. |
+| TaCZ | 필요 | NPC 총기는 실제 TaCZ 총기 아이템입니다. |
 | CustomNPCs | NPC 설정에 필요 | `TACZ NPC Core`는 CustomNPCs NPC 엔티티만 편집합니다. |
-| CNPC TACZ Fire | 필요 | 일반적인 모드 서버 플레이에서는 클라이언트와 서버 양쪽에 넣습니다. |
+| CNPC TaCZ Fire | 필요 | 일반적인 모드 서버 플레이에서는 클라이언트와 서버 양쪽에 넣습니다. |
 | playerAnimator | 선택 | 존재할 때 클라이언트 애니메이션 지원에 사용합니다. |
 | Better Combat | 선택 | 가능할 때 근접 애니메이션 지원에 사용합니다. |
 
@@ -44,9 +44,9 @@ CNPC TACZ Fire는 Forge 1.20.1을 대상으로 합니다. 총기 NPC 제작에�
 
 1. `TACZ Fire NPC Mode`를 켭니다.
 2. `Enabled`를 ON으로 둡니다.
-3. `Gun`에서 플레이어 인벤토리의 TACZ 총기 하나를 선택합니다.
+3. `Gun`에서 플레이어 인벤토리의 TaCZ 총기 하나를 선택합니다.
 4. `Basic`에서 `Stance: Auto` 또는 `Stance: Ranged`를 사용합니다.
-5. `Fire`에서 `RPM Override`를 `0`으로 두어 총기의 기본 TACZ RPM을 사용합니다.
+5. `Fire`에서 `RPM Override`를 `0`으로 두어 총기의 기본 TaCZ RPM을 사용합니다.
 6. `Ammo`에서 `Reload`와 `Supply Ammo`를 ON으로 두고 `Ammo Stock`은 `-1`로 둡니다.
 7. `Targets`는 기본 동작 또는 단순한 엔티티 ID 하나로 시작합니다.
 8. 저장한 뒤 시야가 열린 공간에서 타겟 하나를 상대로 테스트합니다.
@@ -62,8 +62,8 @@ CNPC TACZ Fire는 Forge 1.20.1을 대상으로 합니다. 총기 NPC 제작에�
 | `AI` | 전술 이동, 교전 모드, 대기 이동, 인식, 속도, 간격 |
 | `Targets` | 엔티티 ID, 필터, 요구/거부 태그, 프로필 가져오기/내보내기 |
 | `Ammo` | 재장전, 탄약 재고, 재고 최대치, 탄약 재생, 재장전 중 이동 |
-| `Gun` | 플레이어 TACZ 총기 선택과 원거리 무기 풀 구성 |
-| `Melee` | 비 TACZ 근접 아이템 선택과 근접 무기 풀 구성 |
+| `Gun` | 플레이어 TaCZ 총기 선택과 원거리 무기 풀 구성 |
+| `Melee` | 비 TaCZ 근접 아이템 선택과 근접 무기 풀 구성 |
 | `Visual` | CustomNPCs 텍스처 경로 기반 스킨 풀 |
 | `Armor` | 실제 머리, 몸통, 다리, 발 슬롯을 쓰는 방어구 세트 풀 |
 | `FX` | 감지/사격 사운드와 CustomNPCs say 문구 |
@@ -79,12 +79,12 @@ config/cnpc_tacz_fire-common.toml
 
 그래도 일반 제작 경로는 GUI입니다. config는 기본값과 스크립트 브리지 동작을 잡는 용도로 사용하고, 특정 NPC는 GUI 또는 스크립트로 개별 오버라이드하세요.
 
-## 설정 프로필 파일
+## 타겟 프로필 파일
 
-`Targets` 탭의 `Import`와 `Export`는 아래 위치의 JSON 프로필을 사용합니다.
+타겟 가져오기/내보내기 기능은 아래 위치의 JSON 프로필을 사용합니다.
 
 ```text
 config/cnpc_tacz_fire/target_entities/
 ```
 
-현재 내보내기 프로필은 타겟 목록만이 아니라 NPC의 TACZ Fire 설정 전체를 함께 저장합니다. NPC 하나를 설정한 뒤 프로필로 내보내면 다른 CustomNPCs NPC에 가져와 같은 전투 설정을 빠르게 복제할 수 있습니다. 구버전 타겟 전용 JSON도 가져올 수 있지만, 새 제작 흐름에서는 이 기능을 NPC 설정 프리셋으로 보는 편이 맞습니다.
+여러 NPC가 같은 엔티티 ID 타겟 목록을 공유해야 할 때 프로필을 쓰세요. 일회성 NPC라면 `Targets` 탭에서 직접 설정하는 편이 더 빠릅니다.

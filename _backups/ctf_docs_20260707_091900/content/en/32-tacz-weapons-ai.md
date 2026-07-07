@@ -22,7 +22,7 @@ tags:
 | Stance | Behavior |
 | --- | --- |
 | `Idle` | Stop bridge combat and put away managed weapons. |
-| `Ranged` | Use the managed TACZ ranged weapon only. |
+| `Ranged` | Use the managed TaCZ ranged weapon only. |
 | `Melee` | Use the stored melee weapon only. |
 | `Auto` | Swap between ranged and melee based on distance. The ranged weapon remains visible during idle. |
 | `Auto Hidden` | Swap during combat, but keep empty hands outside combat. |
@@ -33,9 +33,9 @@ tags:
 
 | Setting | Practical meaning |
 | --- | --- |
-| `Max Distance` | Maximum target distance for TACZ ranged fire. Targets beyond this are ignored by the addon. |
+| `Max Distance` | Maximum target distance for TaCZ ranged fire. Targets beyond this are ignored by the addon. |
 | `Melee Switch Range` | Distance where `Auto` stance switches to melee. Actual hit reach still comes from CustomNPCs melee behavior. |
-| `RPM Override` | Fixed target fire rate. `0` means use the selected TACZ gun's native RPM. |
+| `RPM Override` | Fixed target fire rate. `0` means use the selected TaCZ gun's native RPM. |
 | `RPM Min` and `RPM Max` | Random target RPM range. When active, it overrides fixed RPM. |
 | `Accuracy %` | NPC accuracy percent. `100` adds no extra aim error; lower values add spread. |
 | `Burst Fire` | Fires a controlled group of shots, then pauses before the next burst. |
@@ -73,9 +73,9 @@ Idle movement has four modes: `Stationary`, `Area Patrol`, `Return Only`, and `R
 
 ## Weapon and appearance pools
 
-`Gun` reads TACZ gun stacks from the player's inventory. The selected gun can be saved directly, or multiple guns can be added to a random weapon pool. Pool rolls can happen on CustomNPCs init events such as respawn, chunk-load initialization, clone restore, or soul-stone restore.
+`Gun` reads TaCZ gun stacks from the player's inventory. The selected gun can be saved directly, or multiple guns can be added to a random weapon pool. Pool rolls can happen on CustomNPCs init events such as respawn, chunk-load initialization, clone restore, or soul-stone restore.
 
-`Melee` reads non-TACZ items from the player's inventory. If Better Combat support is available, detected attack animation IDs can be used for the selected melee item. Empty-hand melee attack support is also available for melee-capable setups.
+`Melee` reads non-TaCZ items from the player's inventory. If Better Combat support is available, detected attack animation IDs can be used for the selected melee item. Empty-hand melee attack support is also available for melee-capable setups.
 
 `Visual` stores random skin entries as CustomNPCs texture paths. `Armor` stores full armor sets using real head, chest, legs, and feet armor slots.
 

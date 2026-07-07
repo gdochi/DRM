@@ -75,3 +75,7 @@ guimaker를 허드메이커 위로 옮긴다.
 1. DRM: https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker
 2. CNPC Tacz Fire : https://www.curseforge.com/minecraft/mc-mods/cnpc-tacz-fire
 3. CNPC Real Armor : https://www.curseforge.com/minecraft/mc-mods/cnpc-real-armor
+
+
+## CNPC TACZ FIRE DOCS
+# 내용보완 - 다이얼로그에디터

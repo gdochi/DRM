@@ -2,7 +2,7 @@
 title: 재장전과 탄약 재고
 slug: tacz-reload-ammo
 order: 350
-description: TACZ Fire NPC의 탄약 재고, 재장전 시간, 재생, 재장전 중 이동 동작입니다.
+description: TaCZ Fire NPC의 탄약 재고, 재장전 시간, 재생, 재장전 중 이동 동작입니다.
 product: cnpc-tacz-fire
 category: 탄약
 section: ammo
@@ -17,7 +17,7 @@ tags:
 
 ## 탄약 모델
 
-CNPC TACZ Fire는 NPC가 여분 TACZ 탄약이나 탄창 아이템을 오프핸드에 들게 만들지 않습니다. NPC는 실제 TACZ 총기를 사용하지만 예비 탄약은 애드온 데이터로 표현합니다.
+CNPC TaCZ Fire는 NPC가 여분 TaCZ 탄약이나 탄창 아이템을 오프핸드에 들게 만들지 않습니다. NPC는 실제 TaCZ 총기를 사용하지만 예비 탄약은 애드온 데이터로 표현합니다.
 
 | 데이터 | 의미 |
 | --- | --- |
@@ -25,11 +25,11 @@ CNPC TACZ Fire는 NPC가 여분 TACZ 탄약이나 탄창 아이템을 오프핸�
 | `Ammo Stock Max` | 재생 후 최대 예비 탄 수입니다. `-1`은 제한 없음입니다. |
 | `Ammo Regen Amount` | 재생 간격마다 회복되는 탄 수입니다. `0`이면 재생을 끕니다. |
 | `Ammo Regen Interval Ms` | 재생 틱 사이 시간입니다. `0`이면 재생을 끕니다. |
-| `Reload Duration Ms` | NPC가 재장전에 묶이는 시간입니다. `0`이면 들고 있는 TACZ 총기의 기본 재장전 시간을 사용합니다. |
+| `Reload Duration Ms` | NPC가 재장전에 묶이는 시간입니다. `0`이면 들고 있는 TaCZ 총기의 기본 재장전 시간을 사용합니다. |
 | `Reload Speed Multiplier` | 재장전 중에만 적용되는 이동 속도 배율입니다. `0`은 재장전 중 이동 정지, `1`은 기본 속도 유지입니다. |
 
 :::warning 오프핸드 탄약을 쓰지 마세요
-NPC 탄약은 `Ammo Stock`, 재장전 상태, TACZ 총기 스택 상태로 관리됩니다. NPC 재장전을 표현하려고 실제 탄약이나 탄창 아이템을 장착하지 마세요.
+NPC 탄약은 `Ammo Stock`, 재장전 상태, TaCZ 총기 스택 상태로 관리됩니다. NPC 재장전을 표현하려고 실제 탄약이나 탄창 아이템을 장착하지 마세요.
 :::
 
 ## 메인 토글

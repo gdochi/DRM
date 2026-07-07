@@ -53,19 +53,20 @@ Advanced mode supports one active conditional rule. This keeps the result predic
 
 ## Import and export profiles
 
-`Import` and `Export` profiles are stored under:
+Target entity profiles are stored under:
 
 ```text
 config/cnpc_tacz_fire/target_entities/
 ```
 
-Current profiles are not just target-entity files. They work more like cloning presets that connect one NPC's TACZ Fire setup to another CustomNPCs NPC. Configure guns, AI, targets, ammo, and pools on one NPC, `Export` the profile, then `Import` it on another NPC to apply the same combat setup quickly. Legacy target-only JSON can still be imported.
+Use `Import` and `Export` when several NPCs should share the same target profile. For faction wars, boss phases, or map packs, keeping a small set of named profiles is easier to audit than editing every NPC by hand.
 
 ## Practical examples
 
 | Scenario | Suggested rule |
 | --- | --- |
 | Zombie guard | Select zombie-like entity IDs in the entity list. |
+| PvE sentry | Require a scoreboard tag such as `hostile_to_guard`. |
 | Event phase | Use required tag `phase2_target`, then remove the tag when the phase ends. |
 | Same-faction duel | Use required tags and enable same-faction tag targeting only for the event participants. |
 | Boss anti-add rifle | Allow only the add entity IDs and leave players out of the list. |

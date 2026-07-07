@@ -1,7 +1,7 @@
 {
   "title": "DRM",
   "brand": "DRM",
-  "description": "Documentation hub for DRM Core, DRM Mob Editor, and CNPC TACZ Fire.",
+  "description": "Documentation hub for DRM Core, DRM Mob Editor, and CNPC TaCZ Fire.",
   "defaultLocale": "en",
   "fallbackLocale": "en",
   "repository": "",
@@ -45,27 +45,27 @@
     },
     {
       "id": "cnpc-tacz-fire",
-      "label": "CNPC TACZ Fire",
-      "label_ko": "CNPC TACZ Fire",
-      "label_ru": "CNPC TACZ Fire",
-      "label_zh": "CNPC TACZ Fire",
-      "label_ja": "CNPC TACZ Fire",
-      "shortLabel": "TACZ Fire",
-      "shortLabel_ko": "TACZ Fire",
-      "shortLabel_ru": "TACZ Fire",
-      "shortLabel_zh": "TACZ Fire",
-      "shortLabel_ja": "TACZ Fire",
-      "description": "CustomNPCs NPC firearm AI powered by real TACZ guns.",
-      "description_ko": "실제 TACZ 총기를 사용하는 CustomNPCs NPC 총기 AI 문서입니다.",
-      "description_ru": "Документация ИИ огнестрельных CustomNPCs NPC на реальном оружии TACZ.",
-      "description_zh": "使用真实 TACZ 枪械的 CustomNPCs NPC 枪械 AI 文档。",
-      "description_ja": "実際のTACZ銃を使うCustomNPCs NPC銃器AIのドキュメントです。",
+      "label": "CNPC TaCZ Fire",
+      "label_ko": "CNPC TaCZ Fire",
+      "label_ru": "CNPC TaCZ Fire",
+      "label_zh": "CNPC TaCZ Fire",
+      "label_ja": "CNPC TaCZ Fire",
+      "shortLabel": "TaCZ Fire",
+      "shortLabel_ko": "TaCZ Fire",
+      "shortLabel_ru": "TaCZ Fire",
+      "shortLabel_zh": "TaCZ Fire",
+      "shortLabel_ja": "TaCZ Fire",
+      "description": "CustomNPCs NPC firearm AI powered by real TaCZ guns.",
+      "description_ko": "실제 TaCZ 총기를 사용하는 CustomNPCs NPC 총기 AI 문서입니다.",
+      "description_ru": "Документация ИИ огнестрельных CustomNPCs NPC на реальном оружии TaCZ.",
+      "description_zh": "使用真实 TaCZ 枪械的 CustomNPCs NPC 枪械 AI 文档。",
+      "description_ja": "実際のTaCZ銃を使うCustomNPCs NPC銃器AIのドキュメントです。",
       "logo": "assets/mod-logos/cnpc_tacz_fire.png",
-      "logoAlt": "CNPC TACZ Fire logo",
-      "logoAlt_ko": "CNPC TACZ Fire 로고",
-      "logoAlt_ru": "Логотип CNPC TACZ Fire",
-      "logoAlt_zh": "CNPC TACZ Fire 标志",
-      "logoAlt_ja": "CNPC TACZ Fire ロゴ",
+      "logoAlt": "CNPC TaCZ Fire logo",
+      "logoAlt_ko": "CNPC TaCZ Fire 로고",
+      "logoAlt_ru": "Логотип CNPC TaCZ Fire",
+      "logoAlt_zh": "CNPC TaCZ Fire 标志",
+      "logoAlt_ja": "CNPC TaCZ Fire ロゴ",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-tacz-fire",
       "product": "cnpc-tacz-fire"
     },
@@ -99,27 +99,27 @@
     "en": {
       "label": "English",
       "shortLabel": "EN",
-      "description": "A structured documentation hub for DRM Core, DRM Mob Editor, and CNPC TACZ Fire."
+      "description": "A structured documentation hub for DRM Core, DRM Mob Editor, and CNPC TaCZ Fire."
     },
     "ko": {
       "label": "한국어",
       "shortLabel": "KO",
-      "description": "DRM Core, DRM Mob Editor, CNPC TACZ Fire 문서를 한국어로 정리한 문서 허브입니다."
+      "description": "DRM Core, DRM Mob Editor, CNPC TaCZ Fire 문서를 한국어로 정리한 문서 허브입니다."
     },
     "ru": {
       "label": "Русский",
       "shortLabel": "RU",
-      "description": "Структурированный центр документации для DRM Core, DRM Mob Editor и CNPC TACZ Fire."
+      "description": "Структурированный центр документации для DRM Core, DRM Mob Editor и CNPC TaCZ Fire."
     },
     "zh": {
       "label": "简体中文",
       "shortLabel": "ZH",
-      "description": "DRM Core、DRM Mob Editor 和 CNPC TACZ Fire 的结构化文档中心。"
+      "description": "DRM Core、DRM Mob Editor 和 CNPC TaCZ Fire 的结构化文档中心。"
     },
     "ja": {
       "label": "日本語",
       "shortLabel": "JA",
-      "description": "DRM Core、DRM Mob Editor、CNPC TACZ Fire の構造化されたドキュメントハブです。"
+      "description": "DRM Core、DRM Mob Editor、CNPC TaCZ Fire の構造化されたドキュメントハブです。"
     }
   },
   "products": {
@@ -272,22 +272,22 @@
       "statusText_ja": "開発中"
     },
     "cnpc-tacz-fire": {
-      "label": "CNPC TACZ Fire",
-      "label_ko": "CNPC TACZ Fire",
-      "label_ru": "CNPC TACZ Fire",
-      "label_zh": "CNPC TACZ Fire",
-      "label_ja": "CNPC TACZ Fire",
-      "shortLabel": "TACZ Fire",
-      "shortLabel_ko": "TACZ Fire",
-      "shortLabel_ru": "TACZ Fire",
-      "shortLabel_zh": "TACZ Fire",
-      "shortLabel_ja": "TACZ Fire",
+      "label": "CNPC TaCZ Fire",
+      "label_ko": "CNPC TaCZ Fire",
+      "label_ru": "CNPC TaCZ Fire",
+      "label_zh": "CNPC TaCZ Fire",
+      "label_ja": "CNPC TaCZ Fire",
+      "shortLabel": "TaCZ Fire",
+      "shortLabel_ko": "TaCZ Fire",
+      "shortLabel_ru": "TaCZ Fire",
+      "shortLabel_zh": "TaCZ Fire",
+      "shortLabel_ja": "TaCZ Fire",
       "accent": "amber",
-      "description": "CustomNPCs firearm NPC addon for real TACZ guns, tactical movement, target rules, ammo stock, weapon pools, visual pools, armor pools, combat FX, and optional grenades.",
-      "description_ko": "실제 TACZ 총기, 전술 이동, 타겟 규칙, 탄약 재고, 무기 풀, 외형 풀, 방어구 풀, 전투 FX, 선택형 수류탄을 다루는 CustomNPCs 총기 NPC 애드온 문서입니다.",
-      "description_ru": "Документация аддона CustomNPCs для NPC с огнестрельным ИИ: реальные оружия TACZ, тактическое движение, правила целей, запас боеприпасов, пулы оружия, внешности и брони, боевые FX и дополнительные гранаты.",
-      "description_zh": "CustomNPCs 枪械 NPC 插件文档，涵盖真实 TACZ 枪械、战术移动、目标规则、弹药库存、武器池、外观池、护甲池、战斗 FX 和可选手雷。",
-      "description_ja": "実際のTACZ銃、戦術移動、ターゲットルール、弾薬ストック、武器/外見/防具プール、戦闘FX、任意のグレネードを扱うCustomNPCs銃器NPCアドオンの文書です。",
+      "description": "CustomNPCs firearm NPC addon for real TaCZ guns, tactical movement, target rules, ammo stock, weapon pools, visual pools, armor pools, combat FX, and optional grenades.",
+      "description_ko": "실제 TaCZ 총기, 전술 이동, 타겟 규칙, 탄약 재고, 무기 풀, 외형 풀, 방어구 풀, 전투 FX, 선택형 수류탄을 다루는 CustomNPCs 총기 NPC 애드온 문서입니다.",
+      "description_ru": "Документация аддона CustomNPCs для NPC с огнестрельным ИИ: реальные оружия TaCZ, тактическое движение, правила целей, запас боеприпасов, пулы оружия, внешности и брони, боевые FX и дополнительные гранаты.",
+      "description_zh": "CustomNPCs 枪械 NPC 插件文档，涵盖真实 TaCZ 枪械、战术移动、目标规则、弹药库存、武器池、外观池、护甲池、战斗 FX 和可选手雷。",
+      "description_ja": "実際のTaCZ銃、戦術移動、ターゲットルール、弾薬ストック、武器/外見/防具プール、戦闘FX、任意のグレネードを扱うCustomNPCs銃器NPCアドオンの文書です。",
       "sections": [
         {
           "id": "overview",

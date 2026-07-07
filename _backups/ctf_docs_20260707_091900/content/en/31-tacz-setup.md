@@ -11,20 +11,20 @@ version: 0.1.9
 audience: Server operators
 tags:
   - setup
-  - TACZ
+  - tacz
   - gui
 ---
 
 ## Install checklist
 
-CNPC TACZ Fire targets Forge 1.20.1. Building firearm NPCs requires TACZ and CustomNPCs. Optional dependencies such as playerAnimator and Better Combat can make animation and melee behavior more varied.
+CNPC TaCZ Fire targets Forge 1.20.1. The mod metadata requires Forge `[47,)`, Minecraft `[1.20.1,1.21)`, and TaCZ `[1.1.8,)`. CustomNPCs is listed as an optional dependency in metadata, but the workflow in this wiki is specifically for CustomNPCs NPCs, so install CustomNPCs when building firearm NPCs.
 
 | Component | Required for this wiki workflow | Notes |
 | --- | --- | --- |
 | Forge | Yes | Use a 1.20.1 Forge 47+ environment. |
-| TACZ | Yes | NPC guns are real TACZ gun items. |
+| TaCZ | Yes | NPC guns are real TaCZ gun items. |
 | CustomNPCs | Yes for NPC setup | The `TACZ NPC Core` item only edits CustomNPCs NPC entities. |
-| CNPC TACZ Fire | Yes | Add it on both sides for normal modded server play. |
+| CNPC TaCZ Fire | Yes | Add it on both sides for normal modded server play. |
 | playerAnimator | Optional | Client-side animation support when present. |
 | Better Combat | Optional | Used for melee animation support when available. |
 
@@ -44,9 +44,9 @@ Use this first pass before building a complex combat encounter:
 
 1. Turn on `TACZ Fire NPC Mode`.
 2. Keep `Enabled` ON.
-3. In `Gun`, choose one TACZ gun from your player inventory.
+3. In `Gun`, choose one TaCZ gun from your player inventory.
 4. In `Basic`, use `Stance: Auto` or `Stance: Ranged`.
-5. In `Fire`, leave `RPM Override` at `0` so the gun uses its native TACZ RPM.
+5. In `Fire`, leave `RPM Override` at `0` so the gun uses its native TaCZ RPM.
 6. In `Ammo`, keep `Reload` and `Supply Ammo` ON and keep `Ammo Stock` at `-1`.
 7. In `Targets`, start with normal behavior or one simple entity ID.
 8. Save and test against one clear target in line of sight.
@@ -62,8 +62,8 @@ After that works, add finite ammo, random pools, advanced target filters, moveme
 | `AI` | tactical move, engagement mode, idle movement, awareness, speeds, spacing. |
 | `Targets` | entity IDs, filters, required/rejected tags, import/export profiles. |
 | `Ammo` | reload, ammo stock, stock max, ammo regeneration, reload movement. |
-| `Gun` | selecting player TACZ guns and building ranged weapon pools. |
-| `Melee` | selecting non-TACZ melee items and melee weapon pools. |
+| `Gun` | selecting player TaCZ guns and building ranged weapon pools. |
+| `Melee` | selecting non-TaCZ melee items and melee weapon pools. |
 | `Visual` | skin pools using CustomNPCs texture paths. |
 | `Armor` | armor set pools using real head, chest, legs, and feet slots. |
 | `FX` | detected/shoot sounds and CustomNPCs say text. |
@@ -79,12 +79,12 @@ config/cnpc_tacz_fire-common.toml
 
 The GUI is still the normal authoring path. Use the config for defaults and script bridge behavior, then override individual NPCs through the GUI or scripts when a specific encounter needs special behavior.
 
-## Setup profile files
+## Target profile files
 
-The `Import` and `Export` controls in `Targets` use JSON profiles under:
+The target import/export controls use JSON profiles under:
 
 ```text
 config/cnpc_tacz_fire/target_entities/
 ```
 
-Current exports store the full TACZ Fire setup for the NPC, not just the target list. Configure one NPC, export a profile, then import it on another CustomNPCs NPC to quickly clone the same combat setup. Legacy target-only JSON can still be imported, but the current authoring flow is best understood as an NPC setup preset.
+Use profiles when several NPCs should share the same entity ID target set. For one-off NPCs, configure the `Targets` tab directly.

@@ -2,7 +2,7 @@
 title: Reload and Ammo Stock
 slug: tacz-reload-ammo
 order: 350
-description: How ammo stock, reload timing, regeneration, and reload movement work for TACZ Fire NPCs.
+description: How ammo stock, reload timing, regeneration, and reload movement work for TaCZ Fire NPCs.
 product: cnpc-tacz-fire
 category: Ammo
 section: ammo
@@ -17,7 +17,7 @@ tags:
 
 ## Ammo model
 
-CNPC TACZ Fire does not make NPCs carry spare TACZ ammo or magazine items in the offhand. The NPC uses a real TACZ gun, while reserve ammunition is represented by addon data:
+CNPC TaCZ Fire does not make NPCs carry spare TaCZ ammo or magazine items in the offhand. The NPC uses a real TaCZ gun, while reserve ammunition is represented by addon data:
 
 | Data | Meaning |
 | --- | --- |
@@ -25,11 +25,11 @@ CNPC TACZ Fire does not make NPCs carry spare TACZ ammo or magazine items in the
 | `Ammo Stock Max` | Maximum spare rounds after regeneration. `-1` means uncapped. |
 | `Ammo Regen Amount` | Rounds restored each regeneration interval. `0` disables regeneration. |
 | `Ammo Regen Interval Ms` | Time between regeneration ticks. `0` disables regeneration. |
-| `Reload Duration Ms` | NPC reload lock duration. `0` uses the held TACZ gun's own reload time. |
+| `Reload Duration Ms` | NPC reload lock duration. `0` uses the held TaCZ gun's own reload time. |
 | `Reload Speed Multiplier` | Walking speed multiplier only while reloading. `0` stops reload movement, `1` keeps normal speed. |
 
 :::warning Do not use offhand ammo
-NPC ammo is managed by `Ammo Stock`, reload state, and the TACZ gun stack state. Do not equip physical ammo or magazine items to represent NPC reloads.
+NPC ammo is managed by `Ammo Stock`, reload state, and the TaCZ gun stack state. Do not equip physical ammo or magazine items to represent NPC reloads.
 :::
 
 ## Main toggles
