@@ -23,7 +23,6 @@
     locale: safeGet("drm-docs-locale", config.defaultLocale || "en"),
     localeMenuOpen: false
   };
-  let giscusMounted = false;
 
   if (!config.locales?.[state.locale]) state.locale = config.defaultLocale || localeKeys[0] || "en";
   document.documentElement.lang = state.locale;
@@ -48,8 +47,7 @@
       arrowRight: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>',
       home: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5 10.5V20h14v-9.5"></path></svg>',
       layers: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"></path><path d="m3 13 9 5 9-5"></path><path d="m3 18 9 5 9-5"></path></svg>',
-      book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M4 4v15.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5"></path></svg>',
-      message: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M8 9h8M8 13h5"></path></svg>'
+      book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M4 4v15.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5"></path></svg>'
     };
     return icons[name] || "";
   }
@@ -248,10 +246,6 @@
     return meta?.[`${field}_${state.locale}`] || meta?.[`${field}_${getFallbackLocale()}`] || meta?.[field] || "";
   }
 
-  function feedbackModLabel(meta) {
-    return meta?.label_ko || meta?.shortLabel_ko || meta?.label || meta?.shortLabel || meta?.id || "";
-  }
-
   function modDocsLink(meta) {
     const product = meta.product || meta.productId || meta.id;
     if (!product || !isProductOpen(product)) return "";
@@ -358,109 +352,6 @@
     ].filter((item) => item.href);
 
     return links.map((item) => `<a class="icon-button" href="${escapeAttr(item.href)}" target="_blank" rel="noreferrer" aria-label="${escapeAttr(item.label)}" title="${escapeAttr(item.label)}">${icon(item.icon)}</a>`).join("");
-  }
-
-  function renderFeedbackTags() {
-    const tags = getWikiMods()
-      .map((meta) => feedbackModLabel(meta))
-      .filter(Boolean);
-    if (!tags.length) return "";
-
-    return `
-      <div class="feedback-tags" aria-label="의견 대상 모드 태그">
-        <span class="feedback-tags__label">의견 대상 태그</span>
-        <div class="feedback-tags__list">
-          ${tags.map((tag) => `<button class="feedback-tag" type="button" data-feedback-tag="${escapeAttr(tag)}">#${escapeHtml(tag)}</button>`).join("")}
-        </div>
-        <p class="feedback-tags__hint" data-feedback-tag-status>의견을 작성할 때 관련 모드 태그를 함께 적어주세요.</p>
-      </div>
-    `;
-  }
-
-  function renderFeedbackSection() {
-    return `
-      <section id="feedback" class="feedback-section" aria-labelledby="feedback-title">
-        <div class="feedback-section__inner">
-          <div class="feedback-section__header">
-            <h2 id="feedback-title">의견 남기기</h2>
-            <p class="feedback-section__description">
-              사이트에 대한 의견, 제안, 오류 제보를 남겨주세요. GitHub 계정으로 로그인하면 작성할 수 있습니다.
-            </p>
-          </div>
-          ${renderFeedbackTags()}
-          <div class="giscus"></div>
-        </div>
-      </section>
-    `;
-  }
-
-  function bindFeedbackSection(section) {
-    if (!section || section.dataset.feedbackBound === "true") return;
-    section.dataset.feedbackBound = "true";
-    section.addEventListener("click", (event) => {
-      const button = event.target.closest("[data-feedback-tag]");
-      if (!button) return;
-      const tag = `[${button.dataset.feedbackTag || button.textContent.replace(/^#/, "")}]`;
-      const status = section.querySelector("[data-feedback-tag-status]");
-      const copied = () => {
-        if (status) status.textContent = `${tag} 태그를 복사했습니다. 의견 작성란에 붙여넣어 주세요.`;
-      };
-      const fallback = () => {
-        if (status) status.textContent = `의견 작성 시 ${tag} 태그를 함께 적어주세요.`;
-      };
-
-      if (navigator.clipboard?.writeText) {
-        navigator.clipboard.writeText(tag).then(copied).catch(fallback);
-      } else {
-        fallback();
-      }
-    });
-  }
-
-  function mountGiscus() {
-    if (giscusMounted) return;
-    const host = document.querySelector("#feedback .giscus");
-    if (!host) return;
-
-    // giscus.app에서 repo-id, category-id를 발급받아 교체해야 댓글이 정상 동작합니다.
-    const GISCUS_REPO_ID = "REPLACE_WITH_GISCUS_REPO_ID";
-    const GISCUS_CATEGORY = "REPLACE_WITH_DISCUSSION_CATEGORY";
-    const GISCUS_CATEGORY_ID = "REPLACE_WITH_GISCUS_CATEGORY_ID";
-
-    const script = document.createElement("script");
-    script.src = "https://giscus.app/client.js";
-    script.async = true;
-    script.crossOrigin = "anonymous";
-    script.setAttribute("data-repo", "gdochi/DRM");
-    script.setAttribute("data-repo-id", GISCUS_REPO_ID);
-    script.setAttribute("data-category", GISCUS_CATEGORY);
-    script.setAttribute("data-category-id", GISCUS_CATEGORY_ID);
-    script.setAttribute("data-mapping", "specific");
-    script.setAttribute("data-term", "DRM-site-feedback");
-    script.setAttribute("data-strict", "1");
-    script.setAttribute("data-reactions-enabled", "1");
-    script.setAttribute("data-emit-metadata", "0");
-    script.setAttribute("data-input-position", "top");
-    script.setAttribute("data-theme", "preferred_color_scheme");
-    script.setAttribute("data-lang", "ko");
-    host.appendChild(script);
-    giscusMounted = true;
-  }
-
-  function ensureFeedbackSection() {
-    let section = document.getElementById("feedback");
-    if (!section) {
-      document.body.insertAdjacentHTML("beforeend", renderFeedbackSection());
-      section = document.getElementById("feedback");
-    }
-    bindFeedbackSection(section);
-    mountGiscus();
-    return section;
-  }
-
-  function scrollToFeedback() {
-    const section = ensureFeedbackSection();
-    section?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function renderHomeImage() {
@@ -573,7 +464,6 @@
     app.innerHTML = `
       <header class="topbar">
         <div class="top-actions">
-          <button class="feedback-top-button" data-feedback-link type="button" aria-label="의견 남기기" title="의견 남기기">${icon("message")}<span>의견</span></button>
           ${renderLocaleSelector()}
           <button class="icon-button" data-theme-toggle type="button" aria-label="Theme">${icon(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button>
           ${renderSocialLinks()}
@@ -582,13 +472,10 @@
       ${view === "home" ? `<main class="main-home">${renderHome()}</main>` : `<div class="layout">${renderSidebar(product, activeDoc)}<main class="content">${renderDoc(product, activeDoc)}</main></div>`}
     `;
 
-    ensureFeedbackSection();
     bindEvents(view, product, activeDoc, route.section);
   }
 
   function bindEvents(view, product, activeDoc, section) {
-    app.querySelector("[data-feedback-link]")?.addEventListener("click", scrollToFeedback);
-
     app.querySelector("[data-locale-toggle]")?.addEventListener("click", (event) => {
       event.stopPropagation();
       state.localeMenuOpen = !state.localeMenuOpen;
