@@ -21,8 +21,7 @@
   const localeKeys = Object.keys(config.locales || {});
   const state = {
     locale: safeGet("drm-docs-locale", config.defaultLocale || "en"),
-    localeMenuOpen: false,
-    feedbackOpen: false
+    localeMenuOpen: false
   };
   let giscusMounted = false;
 
@@ -50,8 +49,7 @@
       home: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5 10.5V20h14v-9.5"></path></svg>',
       layers: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"></path><path d="m3 13 9 5 9-5"></path><path d="m3 18 9 5 9-5"></path></svg>',
       book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M4 4v15.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5"></path></svg>',
-      message: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M8 9h8M8 13h5"></path></svg>',
-      x: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>'
+      message: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path><path d="M8 9h8M8 13h5"></path></svg>'
     };
     return icons[name] || "";
   }
@@ -381,17 +379,13 @@
 
   function renderFeedbackSection() {
     return `
-      <section id="feedback" class="feedback-section feedback-flyout" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="feedback-title">
-        <button class="feedback-flyout__backdrop" data-feedback-close type="button" aria-label="의견 닫기"></button>
-        <div class="feedback-section__inner feedback-flyout__panel" tabindex="-1">
+      <section id="feedback" class="feedback-section" aria-labelledby="feedback-title">
+        <div class="feedback-section__inner">
           <div class="feedback-section__header">
-            <div>
-              <h2 id="feedback-title">의견 남기기</h2>
-              <p class="feedback-section__description">
-                사이트에 대한 의견, 제안, 오류 제보를 남겨주세요. GitHub 계정으로 로그인하면 작성할 수 있습니다.
-              </p>
-            </div>
-            <button class="icon-button feedback-flyout__close" data-feedback-close type="button" aria-label="의견 닫기">${icon("x")}</button>
+            <h2 id="feedback-title">의견 남기기</h2>
+            <p class="feedback-section__description">
+              사이트에 대한 의견, 제안, 오류 제보를 남겨주세요. GitHub 계정으로 로그인하면 작성할 수 있습니다.
+            </p>
           </div>
           ${renderFeedbackTags()}
           <div class="giscus"></div>
@@ -404,10 +398,6 @@
     if (!section || section.dataset.feedbackBound === "true") return;
     section.dataset.feedbackBound = "true";
     section.addEventListener("click", (event) => {
-      if (event.target.closest("[data-feedback-close]")) {
-        closeFeedbackFlyout();
-        return;
-      }
       const button = event.target.closest("[data-feedback-tag]");
       if (!button) return;
       const tag = `[${button.dataset.feedbackTag || button.textContent.replace(/^#/, "")}]`;
@@ -423,11 +413,6 @@
         navigator.clipboard.writeText(tag).then(copied).catch(fallback);
       } else {
         fallback();
-      }
-    });
-    section.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        closeFeedbackFlyout();
       }
     });
   }
@@ -469,34 +454,13 @@
       section = document.getElementById("feedback");
     }
     bindFeedbackSection(section);
+    mountGiscus();
     return section;
   }
 
-  function openFeedbackFlyout() {
+  function scrollToFeedback() {
     const section = ensureFeedbackSection();
-    if (!section) return;
-    state.feedbackOpen = true;
-    state.localeMenuOpen = false;
-    section.classList.add("is-open");
-    section.setAttribute("aria-hidden", "false");
-    document.body.classList.add("has-feedback-flyout");
-    app.querySelector("[data-feedback-link]")?.setAttribute("aria-expanded", "true");
-    mountGiscus();
-    requestAnimationFrame(() => {
-      section.querySelector(".feedback-flyout__close")?.focus();
-    });
-  }
-
-  function closeFeedbackFlyout() {
-    const section = document.getElementById("feedback");
-    state.feedbackOpen = false;
-    if (section) {
-      section.classList.remove("is-open");
-      section.setAttribute("aria-hidden", "true");
-    }
-    document.body.classList.remove("has-feedback-flyout");
-    app.querySelector("[data-feedback-link]")?.setAttribute("aria-expanded", "false");
-    app.querySelector("[data-feedback-link]")?.focus();
+    section?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function renderHomeImage() {
@@ -609,7 +573,7 @@
     app.innerHTML = `
       <header class="topbar">
         <div class="top-actions">
-          <button class="feedback-top-button" data-feedback-link type="button" aria-label="의견 남기기" title="의견 남기기" aria-controls="feedback" aria-expanded="${state.feedbackOpen ? "true" : "false"}">${icon("message")}<span>의견</span></button>
+          <button class="feedback-top-button" data-feedback-link type="button" aria-label="의견 남기기" title="의견 남기기">${icon("message")}<span>의견</span></button>
           ${renderLocaleSelector()}
           <button class="icon-button" data-theme-toggle type="button" aria-label="Theme">${icon(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button>
           ${renderSocialLinks()}
@@ -619,20 +583,11 @@
     `;
 
     ensureFeedbackSection();
-    if (state.feedbackOpen) {
-      openFeedbackFlyout();
-    }
     bindEvents(view, product, activeDoc, route.section);
   }
 
   function bindEvents(view, product, activeDoc, section) {
-    app.querySelector("[data-feedback-link]")?.addEventListener("click", () => {
-      if (state.feedbackOpen) {
-        closeFeedbackFlyout();
-      } else {
-        openFeedbackFlyout();
-      }
-    });
+    app.querySelector("[data-feedback-link]")?.addEventListener("click", scrollToFeedback);
 
     app.querySelector("[data-locale-toggle]")?.addEventListener("click", (event) => {
       event.stopPropagation();
