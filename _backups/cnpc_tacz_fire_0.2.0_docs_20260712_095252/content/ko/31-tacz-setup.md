@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: 설치
 section: setup
 status: Draft
-version: 0.2.0
+version: 0.1.9
 audience: 서버 운영자
 tags:
   - setup
@@ -45,7 +45,7 @@ CNPC TACZ Fire는 Forge 1.20.1을 대상으로 합니다. 총기 NPC 제작에�
 1. `TACZ Fire NPC Mode`를 켭니다.
 2. `Enabled`를 ON으로 둡니다.
 3. `Gun`에서 플레이어 인벤토리의 TACZ 총기 하나를 선택합니다.
-4. `Senses`의 `General` 설정에서 `Stance: Auto` 또는 `Stance: Ranged`를 사용합니다.
+4. `Basic`에서 `Stance: Auto` 또는 `Stance: Ranged`를 사용합니다.
 5. `Fire`에서 `RPM Override`를 `0`으로 두어 총기의 기본 TACZ RPM을 사용합니다.
 6. `Ammo`에서 `Reload`와 `Supply Ammo`를 ON으로 두고 `Ammo Stock`은 `-1`로 둡니다.
 7. `Targets`는 기본 동작 또는 단순한 엔티티 ID 하나로 시작합니다.
@@ -57,18 +57,17 @@ CNPC TACZ Fire는 Forge 1.20.1을 대상으로 합니다. 총기 NPC 제작에�
 
 | 카테고리 | 용도 |
 | --- | --- |
-| `Overview` | 현재 적용되는 정책, 감지, 전투, 피해, 장비, 탄약, 타겟, FX를 수정 없이 확인하는 요약 화면 |
+| `Basic` | 메인 모드 토글, 스탠스, 고급 스탠스 모드, 미리보기 동작 |
 | `Fire` | 사격 거리, 근접 전환 거리, RPM, 랜덤 RPM, 명중률, 사격 모드 |
-| `Senses` | `General`/`Advanced` 스탠스, 전술 이동, 대기 이동, 시각 인식, 근거리 감지, 플레이어 소리 감지 |
+| `AI` | 전술 이동, 교전 모드, 대기 이동, 인식, 속도, 간격 |
 | `Targets` | 엔티티 ID, 필터, 요구/거부 태그, 프로필 가져오기/내보내기 |
-| `Ammo` | 재장전 방식, 탄약 재고·재생, 재장전 중 이동, 탄약 소진 전환 |
-| `Gun` | 플레이어 TACZ 총기 선택, 원거리 피해 정책, 원거리 무기 풀, NPC 미리보기 |
-| `Melee` | 비 TACZ 근접 아이템, 피해·넉백·공격 속도 정책, 근접 무기 풀, NPC 미리보기 |
-| `Armor` | 실제 머리, 몸통, 다리, 발 슬롯을 쓰는 방어구 세트 풀과 NPC 미리보기 |
+| `Ammo` | 재장전, 탄약 재고, 재고 최대치, 탄약 재생, 재장전 중 이동 |
+| `Gun` | 플레이어 TACZ 총기 선택과 원거리 무기 풀 구성 |
+| `Melee` | 비 TACZ 근접 아이템 선택과 근접 무기 풀 구성 |
+| `Visual` | CustomNPCs 텍스처 경로 기반 스킨 풀 |
+| `Armor` | 실제 머리, 몸통, 다리, 발 슬롯을 쓰는 방어구 세트 풀 |
+| `FX` | 감지/사격 사운드와 CustomNPCs say 문구 |
 | `Grenade` | 지원되는 투척물 데이터가 있을 때 선택형 수류탄 투척 |
-| `Visual & FX` | Steve/Alex 스킨 풀, 경계 아이콘, 감지/사격 사운드와 CustomNPCs say 문구 |
-
-`Overview`는 읽기 전용입니다. 값을 바꾸려면 해당 카테고리로 이동하세요. 긴 `Senses` 페이지에서는 `Quick View`로 하위 구역을 바로 선택할 수 있고, `?` 도움말은 현재 화면 밖의 컨트롤까지 자동 스크롤합니다.
 
 ## 설정 파일
 

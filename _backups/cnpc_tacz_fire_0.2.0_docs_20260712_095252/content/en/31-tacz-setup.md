@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Setup
 section: setup
 status: Draft
-version: 0.2.0
+version: 0.1.9
 audience: Server operators
 tags:
   - setup
@@ -45,7 +45,7 @@ Use this first pass before building a complex combat encounter:
 1. Turn on `TACZ Fire NPC Mode`.
 2. Keep `Enabled` ON.
 3. In `Gun`, choose one TACZ gun from your player inventory.
-4. In the `General` settings under `Senses`, use `Stance: Auto` or `Stance: Ranged`.
+4. In `Basic`, use `Stance: Auto` or `Stance: Ranged`.
 5. In `Fire`, leave `RPM Override` at `0` so the gun uses its native TACZ RPM.
 6. In `Ammo`, keep `Reload` and `Supply Ammo` ON and keep `Ammo Stock` at `-1`.
 7. In `Targets`, start with normal behavior or one simple entity ID.
@@ -57,18 +57,17 @@ After that works, add finite ammo, random pools, advanced target filters, moveme
 
 | Category | Use it for |
 | --- | --- |
-| `Overview` | Read-only summary of the effective policy, sensing, combat, damage, equipment, ammo, target, and FX values. |
+| `Basic` | Main mode toggles, stance, advanced stance mode, preview behavior. |
 | `Fire` | firing range, melee switch range, RPM, random RPM, accuracy, fire modes. |
-| `Senses` | `General`/`Advanced` stance, tactical movement, idle movement, visual awareness, close detection, and player sound detection. |
+| `AI` | tactical move, engagement mode, idle movement, awareness, speeds, spacing. |
 | `Targets` | entity IDs, filters, required/rejected tags, import/export profiles. |
-| `Ammo` | reload type, ammo stock and regeneration, reload movement, and empty-ammo fallback. |
-| `Gun` | selecting TACZ guns, ranged damage policy, ranged weapon pools, and NPC preview. |
-| `Melee` | selecting non-TACZ items, damage/knockback/attack-speed policies, melee pools, and NPC preview. |
-| `Armor` | armor set pools using real head, chest, legs, and feet slots, with NPC preview. |
+| `Ammo` | reload, ammo stock, stock max, ammo regeneration, reload movement. |
+| `Gun` | selecting player TACZ guns and building ranged weapon pools. |
+| `Melee` | selecting non-TACZ melee items and melee weapon pools. |
+| `Visual` | skin pools using CustomNPCs texture paths. |
+| `Armor` | armor set pools using real head, chest, legs, and feet slots. |
+| `FX` | detected/shoot sounds and CustomNPCs say text. |
 | `Grenade` | optional grenade throws when supported throwable data is available. |
-| `Visual & FX` | Steve/Alex skin pools, alert icons, detected/shoot sounds, and CustomNPCs say text. |
-
-`Overview` is read-only; move to the relevant category to edit a value. Long `Senses` pages provide `Quick View` navigation, and the `?` help tour can auto-scroll to controls outside the current viewport.
 
 ## Config file
 

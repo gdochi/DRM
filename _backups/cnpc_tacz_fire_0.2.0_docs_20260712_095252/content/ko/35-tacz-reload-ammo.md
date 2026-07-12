@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: 탄약
 section: ammo
 status: Draft
-version: 0.2.0
+version: 0.1.9
 audience: 총기 NPC 제작자
 tags:
   - reload
@@ -41,37 +41,14 @@ NPC 탄약은 `Ammo Stock`, 재장전 상태, TACZ 총기 스택 상태로 관�
 
 `Supply Ammo`가 OFF이면 애드온 예비 재고에서 총기를 채우지 않습니다. `Ammo Stock`이 `0`이면 재장전이 켜져 있어도 여분 탄약이 없습니다.
 
-## 재장전 방식
-
-| `Reload Type` | 동작 |
-| --- | --- |
-| `Normal` | 총이 비었을 때 재장전합니다. |
-| `Force Fixed` | 성공한 사격 수가 `Force Shots`에 도달하면 탄이 남아 있어도 강제 재장전합니다. |
-| `Force Range` | 재장전할 때마다 `Force Min`부터 `Force Max` 사이의 성공 사격 수를 다시 뽑고, 그 수에 도달하면 강제 재장전합니다. |
-
-강제 재장전 카운터는 실제로 성공한 사격을 기준으로 합니다. 먼저 `Normal`로 총기 재장전 호환성을 확인한 뒤 전투 연출에 필요한 경우에만 강제 방식을 사용하세요.
-
-## 탄약 소진 전환
-
-`Ammo-Aware Switching`은 총기 안의 장전탄과 NPC의 예비 `Ammo Stock`이 모두 소진되었을 때만 작동합니다.
-
-| 설정 | 동작 |
-| --- | --- |
-| `Fallback To Melee` | 설정된 근접 무기가 있으면 해당 무기로 전환해 전투를 계속합니다. |
-| `Fallback To Unarmed` | 사용할 근접 무기가 없을 때 빈손 근접 전투를 허용합니다. |
-
-Fallback 상태가 끝나고 탄약을 다시 사용할 수 있으면 NPC는 원거리 무기와 재장전 흐름으로 돌아갑니다. 이 기능을 사용하지 않으면 탄약이 완전히 소진된 NPC가 사격을 멈추는 것이 정상입니다.
-
 ## 권장 설정 흐름
 
 1. `Ammo Stock: -1`로 시작합니다.
 2. NPC가 발사하고, 재장전하고, 다시 발사하는지 확인합니다.
-3. `Reload Type: Normal`에서 기본 루프가 작동한 뒤 `Ammo Stock`을 유한 값으로 바꿉니다.
-4. 탄약이 `0`이 되었을 때 멈출지, 근접/빈손으로 전환할지 결정합니다.
-5. 전투에 느린 보급이 필요하면 `Ammo Regen Amount`와 `Ammo Regen Interval Ms`를 추가합니다.
-6. 들고 있는 총기의 기본 재장전 감각이 전투에 맞지 않을 때만 `Reload Duration Ms`를 조정합니다.
-7. 재장전 중 빈틈을 만들고 싶으면 `Reload Speed Multiplier`를 사용합니다.
-8. 마지막으로 `Force Fixed` 또는 `Force Range`를 추가합니다.
+3. 기본 루프가 작동한 뒤 `Ammo Stock`을 유한 값으로 바꿉니다.
+4. 전투에 느린 보급이 필요하면 `Ammo Regen Amount`와 `Ammo Regen Interval Ms`를 추가합니다.
+5. 들고 있는 총기의 기본 재장전 감각이 전투에 맞지 않을 때만 `Reload Duration Ms`를 조정합니다.
+6. 재장전 중 빈틈을 만들고 싶으면 `Reload Speed Multiplier`를 사용합니다.
 
 이 순서로 하면 사격 문제와 탄약 경제 문제를 분리할 수 있습니다. 유한 탄약 NPC가 발사하지 않는다면 비었을 수 있지만, 무한 탄약 NPC가 발사하지 않는다면 총기, 타겟, 스탠스, 거리, 시야 문제일 가능성이 큽니다.
 
@@ -100,11 +77,5 @@ GUI가 기본 설정 경로지만, 스크립트 사용자는 브리지 값을 �
 | `tacznpcfire.ammoRegenIntervalMs` | 재생 간격 밀리초입니다. |
 | `tacznpcfire.reloadDurationMs` | 재장전 시간 밀리초입니다. |
 | `tacznpcfire.reloadWalkSpeedMultiplier` | 재장전 중에만 쓰는 이동 배율입니다. |
-| `tacznpcfire.reloadType` | `0` Normal, `1` Force Fixed, `2` Force Range입니다. |
-| `tacznpcfire.forceReload.shots` | Force Fixed의 성공 사격 수입니다. |
-| `tacznpcfire.forceReload.minShots` / `maxShots` | Force Range의 포함형 최소·최대 성공 사격 수입니다. |
-| `tacznpcfire.combat.ammoAwareSwitching` | 장전탄과 예비 탄약이 모두 소진됐을 때 전환 판단을 켭니다. |
-| `tacznpcfire.combat.fallbackToMelee` | 탄약 소진 시 설정된 근접 무기 전환을 허용합니다. |
-| `tacznpcfire.combat.fallbackToUnarmed` | 근접 무기가 없을 때 빈손 전환을 허용합니다. |
 
 storeddata는 전투가 정말 스크립트 측 변경을 필요로 할 때만 사용하세요. 일반 NPC 제작에서는 다른 제작자가 GUI에서 바로 확인할 수 있도록 NPC별 GUI 값을 유지하는 편이 좋습니다.

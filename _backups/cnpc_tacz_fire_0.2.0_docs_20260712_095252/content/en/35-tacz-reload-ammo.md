@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Ammo
 section: ammo
 status: Draft
-version: 0.2.0
+version: 0.1.9
 audience: Firearm NPC creators
 tags:
   - reload
@@ -41,37 +41,14 @@ NPC ammo is managed by `Ammo Stock`, reload state, and the TACZ gun stack state.
 
 If `Supply Ammo` is OFF, the addon does not refill from its reserve stock. If `Ammo Stock` is `0`, the NPC has no spare rounds even if reload is enabled.
 
-## Reload types
-
-| `Reload Type` | Behavior |
-| --- | --- |
-| `Normal` | Reload when the gun becomes empty. |
-| `Force Fixed` | Force a reload after `Force Shots` successful shots, even if rounds remain loaded. |
-| `Force Range` | After each reload, roll a new successful-shot threshold from inclusive `Force Min` through `Force Max`, then force the next reload at that threshold. |
-
-Forced reload counters use successful shots. Confirm native gun reload compatibility with `Normal` first, then use forced modes only when the encounter needs that rhythm.
-
-## Empty-ammo fallback
-
-`Ammo-Aware Switching` activates only when both the gun's loaded ammunition and the NPC reserve `Ammo Stock` are exhausted.
-
-| Setting | Behavior |
-| --- | --- |
-| `Fallback To Melee` | Continue combat with the configured melee weapon when one is available. |
-| `Fallback To Unarmed` | Allow unarmed melee when no configured melee weapon can be used. |
-
-When the fallback ends and ammunition becomes usable again, the NPC returns to its ranged weapon and reload flow. If fallback is disabled, a fully exhausted NPC is expected to stop firing.
-
 ## Recommended setup flow
 
 1. Start with `Ammo Stock: -1`.
 2. Confirm that the NPC fires, reloads, and returns to firing.
-3. Keep `Reload Type: Normal`, then change `Ammo Stock` to a finite value only after the basic loop works.
-4. Decide whether reserve `0` should stop combat or switch to melee/unarmed fallback.
-5. Add `Ammo Regen Amount` and `Ammo Regen Interval Ms` if the encounter needs slow resupply.
-6. Tune `Reload Duration Ms` only after the held gun's native reload behavior feels wrong for the encounter.
-7. Use `Reload Speed Multiplier` to create vulnerability windows during reload.
-8. Add `Force Fixed` or `Force Range` last.
+3. Change `Ammo Stock` to a finite value only after the basic loop works.
+4. Add `Ammo Regen Amount` and `Ammo Regen Interval Ms` if the encounter needs slow resupply.
+5. Tune `Reload Duration Ms` only after the held gun's native reload behavior feels wrong for the encounter.
+6. Use `Reload Speed Multiplier` to create vulnerability windows during reload.
 
 This order separates firing problems from economy problems. A finite-ammo NPC that never fires may be empty, but an infinite-ammo NPC that never fires probably has a gun, target, stance, distance, or line-of-sight problem.
 
@@ -100,11 +77,5 @@ The GUI is the primary setup path, but script users can also work with bridge va
 | `tacznpcfire.ammoRegenIntervalMs` | Regeneration interval in milliseconds. |
 | `tacznpcfire.reloadDurationMs` | Reload duration in milliseconds. |
 | `tacznpcfire.reloadWalkSpeedMultiplier` | Reload-only movement multiplier. |
-| `tacznpcfire.reloadType` | `0` Normal, `1` Force Fixed, `2` Force Range. |
-| `tacznpcfire.forceReload.shots` | Successful-shot count for Force Fixed. |
-| `tacznpcfire.forceReload.minShots` / `maxShots` | Inclusive minimum and maximum successful-shot counts for Force Range. |
-| `tacznpcfire.combat.ammoAwareSwitching` | Enables switching logic when loaded and reserve ammo are both exhausted. |
-| `tacznpcfire.combat.fallbackToMelee` | Allows fallback to the configured melee weapon. |
-| `tacznpcfire.combat.fallbackToUnarmed` | Allows unarmed fallback when no melee weapon is available. |
 
 Use storeddata only when the encounter really needs script-side changes. For normal NPC authoring, keep the values in the per-NPC GUI so other creators can inspect them visually.

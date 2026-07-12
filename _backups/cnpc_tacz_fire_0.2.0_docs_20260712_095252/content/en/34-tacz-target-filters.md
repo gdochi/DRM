@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Targets
 section: targets
 status: Draft
-version: 0.2.0
+version: 0.1.9
 audience: Encounter designers
 tags:
   - target
@@ -32,8 +32,6 @@ The `Targets` tab can select allowed target entity IDs. The list includes search
 | Select all / none | Apply to the currently visible filtered list. |
 
 An empty target entity list means the NPC falls back to normal behavior instead of a strict entity allow list.
-
-Version 0.2.0 narrows long-distance living-target searches through a spatial index before applying entity ID, tag, faction, distance, angle, and line-of-sight rules. Creative and spectator players are rejected before sound or combat target processing.
 
 ## Scoreboard tag rules
 
@@ -75,5 +73,3 @@ Current profiles are not just target-entity files. They work more like cloning p
 ## Debugging target rules
 
 If the NPC does not fire, remove filters temporarily and test with a basic hostile target. Then add one rule at a time. Most target issues come from mixing an entity allow list, required tags, rejected tags, and same-faction rules before confirming the baseline.
-
-A patrolling NPC should not immediately discard a living target after a momentary loss of sight. Managed NPCs use short combat memory and the last known position to survive brief occlusion. The final line-of-sight check still prevents direct fire through a wall during that memory window.

@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Combat AI
 section: combat-ai
 status: Draft
-version: 0.2.0
+version: 0.1.9
 audience: Firearm NPC creators
 tags:
   - weapon
@@ -42,18 +42,6 @@ tags:
 
 Start with native gun RPM and `Accuracy %` near your desired baseline. Add random RPM only after the gun, target, line-of-sight, and ammo loop are working.
 
-## Damage policies
-
-Version 0.2.0 lets each NPC choose how firearm and melee damage is calculated.
-
-| Location | Policy |
-| --- | --- |
-| `Gun` | `Gun Spec` keeps the selected TACZ gun's native bullet damage. `Custom` applies fixed damage to this NPC's managed bullet without changing the original gun data. |
-| `Melee` | `Weapon Spec` uses the selected item's attack attributes. `Custom` uses fixed melee damage. |
-| `Melee` | Knockback and attack speed can independently use weapon attributes or fixed custom values. Custom attack speed is measured in attacks per second. |
-
-CustomNPCs' default melee damage does not override these managed melee policies. Confirm weapon-native behavior first, then add custom values.
-
 ## Tactical movement
 
 `Tactical Move` controls how the addon steers ranged combat movement:
@@ -80,11 +68,8 @@ Use awareness settings to decide when the NPC may enter combat:
 | `Detect Angle` | Horizontal detection cone. `360` allows all-around detection. |
 | `Combat Delay Ms` | Time the NPC watches a detected target before confirmed combat. |
 | `Instant Combat Angle` | Front cone that can skip the delay and enter combat immediately. |
-| `Close Detection` | Lets targets inside `Close Detect Distance` bypass the horizontal detection angle. Disable it for backstab or assassination-style NPCs. |
 
-`Sound Detection` reacts to explicit player TACZ gunshot, TACZ reload, block-break, and block-place events at separate ranges. Each range is capped by `Detect Distance`, and creative or spectator players do not create stimuli. Investigation can be `Off`, `Look Only`, or `Move To Source`. Active combat takes priority, and a position-locked stance falls back to looking instead of leaving its post.
-
-Idle movement has four modes: `Stationary`, `Area Patrol`, `Return Only`, and `Route Patrol`. Area and Route patrols use the GUI `Default Walk Speed` and keep a valid A* path active. They do not replace failed pathfinding with direct movement into a wall; unreachable points are retried within a bounded limit and then skipped. Patrol coordinates resolve to nearby standable ground, and arrival checks include vertical distance for lower one-block waypoints.
+Idle movement has four modes: `Stationary`, `Area Patrol`, `Return Only`, and `Route Patrol`. Sound investigation has `Off`, `Look Only`, and `Move To Source`. These settings are useful for stealth maps because the NPC can notice sound or damage without instantly firing at something behind it.
 
 ## Weapon and appearance pools
 
@@ -92,15 +77,14 @@ Idle movement has four modes: `Stationary`, `Area Patrol`, `Return Only`, and `R
 
 `Melee` reads non-TACZ items from the player's inventory. If Better Combat support is available, detected attack animation IDs can be used for the selected melee item. Empty-hand melee attack support is also available for melee-capable setups.
 
-`Visual & FX` stores each random skin as a CustomNPCs texture path plus an explicit `Steve` or `Alex` model. It does not alter the supplied texture. `Armor` stores full sets in real head, chest, legs, and feet slots. The Gun, Melee, and Armor previews show the selected model, skin, armor, and weapon together.
+`Visual` stores random skin entries as CustomNPCs texture paths. `Armor` stores full armor sets using real head, chest, legs, and feet armor slots.
 
 ## Balancing order
 
 1. Confirm `Ranged` or `Auto` stance with one gun.
 2. Tune `Max Distance` and line-of-sight behavior.
 3. Tune `Accuracy %` and native RPM.
-4. Tune firearm and melee damage policies.
-5. Add `Move While Firing` or tactical movement.
-6. Add melee switching and empty-ammo fallback.
-7. Add random gun, skin, and armor pools.
-8. Add advanced stance rules only after the normal behavior is stable.
+4. Add `Move While Firing` or tactical movement.
+5. Add melee fallback.
+6. Add random gun, skin, and armor pools.
+7. Add advanced stance rules only after the normal behavior is stable.

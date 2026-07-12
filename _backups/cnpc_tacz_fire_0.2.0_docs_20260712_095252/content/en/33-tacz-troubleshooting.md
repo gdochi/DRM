@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Operations
 section: operations
 status: Draft
-version: 0.2.0
+version: 0.1.9
 audience: Operators
 tags:
   - troubleshooting
@@ -36,12 +36,8 @@ If this works, the addon and gun loop are fine. Add filters, finite ammo, moveme
 | `TACZ NPC Core` does not open the GUI | You must be in creative mode and right-click a CustomNPCs NPC. Other living entities are rejected. |
 | NPC never fires | Check `TACZ Fire NPC Mode`, `Enabled`, stance, selected TACZ gun, target visibility, `Max Distance`, target rules, and ammo stock. |
 | NPC sees the target but waits | Check `Combat Delay Ms`, `Detect Angle`, `Instant Combat Angle`, and line of sight. |
-| NPC misses a nearby target behind it | Check `Close Detection` and `Close Detect Distance`. OFF is expected for an intentional backstab-style NPC. |
-| NPC ignores player gunshots or block actions | Check `Sound Detection`, each event range, `Detect Distance`, and `Sound Investigation`. Creative and spectator players are ignored. |
 | NPC fires through rhythm incorrectly | Check `RPM Override`, `RPM Min`, `RPM Max`, `Burst Fire`, and the native TACZ gun fire mode. |
-| NPC stops after emptying the gun | Check `Reload`, `Supply Ammo`, `Ammo Stock`, `Reload Type`, `Ammo-Aware Switching`, and melee/unarmed fallback. |
-| Custom damage, knockback, or attack speed is not used | Check the `Gun Spec`/`Weapon Spec` or `Custom` selection and values in `Gun` and `Melee`. |
-| Patrol walks into a wall or pauses every step | Check `Default Walk Speed`, patrol points, vertical height, and A* reachability. Also confirm 0.2.0 is installed on both client and server. |
+| NPC stops after emptying the gun | Check `Reload`, `Supply Ammo`, `Ammo Stock`, `Reload Duration Ms`, and gun reload compatibility. |
 | NPC attacks the wrong target | Clear entity ID filters, required tags, rejected tags, and same-faction tag rules, then re-add them gradually. |
 | NPC holds the wrong item | Confirm the ranged weapon is a real TACZ gun and that ammo or magazine items are not being used as offhand reload props. |
 | Visual alert icons are missing | Check the per-NPC `Alert Icons` setting and the client-side `cnpc_tacz_fire Config` marker visibility settings. |
@@ -70,20 +66,6 @@ For diagnosis:
 
 If infinite stock works but finite stock fails, the NPC probably reaches `0` spare rounds or regeneration is not configured.
 
-## Sound detection problems
-
-Version 0.2.0 hearing does not continuously scan every played sound. It registers short-lived stimuli only for player TACZ gunshots, TACZ reloads, block breaking, and block placement. Each event range is saved at or below `Detect Distance`. Even with `Move To Source`, the NPC should not move when active combat or a position-locked stance has priority.
-
-## Patrol and pathfinding problems
-
-Area and Route patrols keep an active A* path at `Default Walk Speed`. If path creation or completion fails, the NPC retries immediately within a bounded limit and then skips the point. Repeatedly pushing into a wall or trying to break through it is not expected behavior.
-
-For a failed one-block descent, confirm that a direct Route point uses the intended feet Y. Version 0.2.0 resolves nearby standable ground and includes vertical distance in arrival checks, but it does not force movement through fences, sealed gaps, or platforms that have no safe route.
-
-## Damage policy problems
-
-`Gun Spec` preserves native TACZ gun damage, while `Custom` applies fixed damage only to this NPC's managed bullet. Melee `Weapon Spec` uses item attributes; melee `Custom` can independently set damage, knockback, and attacks per second. Switch one policy at a time when isolating an unexpected result.
-
 ## Target rule problems
 
 An empty entity ID list allows normal behavior. A filled entity ID list becomes an allow list. Required tags and rejected tags are additional filters. If all three are active, a target must pass all of them.
@@ -92,4 +74,4 @@ When in doubt, export the setup profile, simplify it, and re-import after testin
 
 ## Performance and logging
 
-Version 0.2.0 uses spatial indexes for long `Detect Distance` searches and event-based hearing to reduce repeated scans. Large `Detect Distance`, large `Max Distance`, broad target lists, and many managed NPCs can still increase candidate filtering and combat work. Keep early tests small. Debug logging can be useful during setup, but turn it down after confirming the encounter so logs stay readable on a live server.
+Large `Detect Distance`, large `Max Distance`, broad target lists, and many managed NPCs can increase scanning and combat work. Keep early tests small. Debug logging can be useful during setup, but turn it down after confirming the encounter so logs stay readable on a live server.

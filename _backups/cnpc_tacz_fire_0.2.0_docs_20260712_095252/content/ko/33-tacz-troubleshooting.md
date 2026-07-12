@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: 운영
 section: operations
 status: Draft
-version: 0.2.0
+version: 0.1.9
 audience: 운영자
 tags:
   - troubleshooting
@@ -36,12 +36,8 @@ tags:
 | `TACZ NPC Core`로 GUI가 열리지 않음 | 크리에이티브 모드인지, CustomNPCs NPC를 우클릭했는지 확인합니다. 다른 living entity는 거부됩니다. |
 | NPC가 전혀 발사하지 않음 | `TACZ Fire NPC Mode`, `Enabled`, 스탠스, 선택한 TACZ 총기, 타겟 시야, `Max Distance`, 타겟 규칙, 탄약 재고를 확인합니다. |
 | NPC가 타겟을 보지만 기다림 | `Combat Delay Ms`, `Detect Angle`, `Instant Combat Angle`, 시야를 확인합니다. |
-| 가까이 접근해도 뒤쪽 타겟을 놓침 | `Close Detection`과 `Close Detect Distance`를 확인합니다. 의도적인 백스탭 NPC라면 OFF가 정상입니다. |
-| 플레이어 총성이나 블록 작업에 반응하지 않음 | `Sound Detection`, 소리 종류별 거리, `Detect Distance`, `Sound Investigation`을 확인합니다. 크리에이티브·관전자 플레이어의 소리는 무시됩니다. |
 | 발사 리듬이 이상함 | `RPM Override`, `RPM Min`, `RPM Max`, `Burst Fire`, TACZ 총기의 기본 발사 모드를 확인합니다. |
-| 총이 빈 뒤 멈춤 | `Reload`, `Supply Ammo`, `Ammo Stock`, `Reload Type`, `Ammo-Aware Switching`, 근접/빈손 fallback을 확인합니다. |
-| 설정한 피해·넉백·공격 속도가 나오지 않음 | `Gun`과 `Melee`의 `Gun/Weapon Spec` 또는 `Custom` 선택과 사용자 값을 확인합니다. |
-| 순찰 NPC가 벽에 붙거나 한 걸음씩 끊김 | `Default Walk Speed`, 순찰 지점, 수직 높이와 A* 도달 가능성을 확인합니다. 0.2.0 JAR가 클라이언트와 서버 양쪽에 설치되었는지도 확인합니다. |
+| 총이 빈 뒤 멈춤 | `Reload`, `Supply Ammo`, `Ammo Stock`, `Reload Duration Ms`, 총기 재장전 호환성을 확인합니다. |
 | 잘못된 타겟을 공격함 | 엔티티 ID 필터, 요구 태그, 거부 태그, 같은 팩션 태그 규칙을 지우고 하나씩 다시 추가합니다. |
 | NPC가 잘못된 아이템을 들고 있음 | 원거리 무기가 실제 TACZ 총기인지, 탄약/탄창 아이템을 오프핸드 재장전 소품으로 쓰지 않았는지 확인합니다. |
 | 경계 아이콘이 보이지 않음 | NPC별 `Alert Icons` 설정과 클라이언트 `cnpc_tacz_fire Config`의 마커 표시 설정을 확인합니다. |
@@ -70,20 +66,6 @@ CNPC TACZ Fire는 발사 직전에 최종 line-of-sight 검사를 합니다. 엄
 
 무한 재고에서는 작동하지만 유한 재고에서 실패한다면 NPC가 예비 탄 `0`에 도달했거나 재생 설정이 비활성일 가능성이 큽니다.
 
-## 소리 감지 문제
-
-0.2.0의 청각은 모든 재생 사운드를 계속 스캔하지 않습니다. 플레이어의 TACZ 총성, TACZ 재장전, 블록 파괴, 블록 설치 이벤트만 짧은 자극으로 등록합니다. 종류별 범위는 항상 `Detect Distance` 이하로 저장됩니다. `Move To Source`가 켜져 있어도 이미 전투 중이거나 위치 고정 스탠스라면 이동하지 않는 것이 정상입니다.
-
-## 순찰과 길찾기 문제
-
-Area/Route 순찰은 `Default Walk Speed`로 활성 A* 경로를 유지합니다. 경로를 만들 수 없거나 끝까지 도달하지 못하면 제한된 횟수만 즉시 재시도하고, 계속 실패하면 해당 지점을 건너뜁니다. 장애물을 부수거나 벽으로 계속 밀어붙이는 동작은 정상 동작이 아닙니다.
-
-한 블록 아래로 내려가지 못한다면 직접 Route 좌표의 Y가 실제 발 위치와 맞는지 확인하세요. 0.2.0은 주변의 설 수 있는 지면을 찾고 수직 거리도 도착 판정에 포함하지만, 낙하가 불가능한 울타리·막힌 공간·너무 좁은 발판까지 강제로 이동시키지는 않습니다.
-
-## 피해 정책 문제
-
-`Gun Spec`은 TACZ 총기 원본 피해를 유지하고, `Custom`은 이 NPC의 관리 탄환에만 고정 피해를 적용합니다. 근접 `Weapon Spec`은 아이템 능력치를 사용하며, 근접 `Custom`은 피해·넉백·초당 공격 횟수를 각각 지정할 수 있습니다. 잘못된 결과가 나오면 한 번에 한 정책만 `Custom`으로 바꿔 확인하세요.
-
 ## 타겟 규칙 문제
 
 엔티티 ID 목록이 비어 있으면 일반 동작을 허용합니다. 엔티티 ID 목록이 채워지면 허용 목록이 됩니다. 요구 태그와 거부 태그는 추가 필터입니다. 세 가지가 모두 켜져 있으면 타겟은 모두 통과해야 합니다.
@@ -92,4 +74,4 @@ Area/Route 순찰은 `Default Walk Speed`로 활성 A* 경로를 유지합니다
 
 ## 성능과 로그
 
-0.2.0은 긴 `Detect Distance`를 위해 공간 인덱스를 사용하고 이벤트 기반 청각으로 반복 스캔을 줄였습니다. 그래도 큰 `Detect Distance`, 큰 `Max Distance`, 넓은 타겟 목록, 많은 관리 NPC는 후보 필터링과 전투 작업을 늘릴 수 있습니다. 초기 테스트는 작게 유지하세요. 디버그 로그는 설정 중에는 유용하지만, 전투를 확인한 뒤에는 낮춰야 라이브 서버 로그를 읽기 쉽습니다.
+큰 `Detect Distance`, 큰 `Max Distance`, 넓은 타겟 목록, 많은 관리 NPC는 스캔과 전투 작업을 늘릴 수 있습니다. 초기 테스트는 작게 유지하세요. 디버그 로그는 설정 중에는 유용하지만, 전투를 확인한 뒤에는 낮춰야 라이브 서버 로그를 읽기 쉽습니다.

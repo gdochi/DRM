@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Overview
 section: overview
 status: Draft
-version: 0.2.0
+version: 0.1.9
 audience: Firearm NPC creators
 tags:
   - TACZ
@@ -17,11 +17,9 @@ tags:
 
 ## What CNPC TACZ Fire is
 
-CNPC TACZ Fire is a Forge 1.20.1 addon for building CustomNPCs NPCs that fight with real TACZ guns. It is not a generic ranged attack reskin. The addon drives TACZ firing, reload state, gun state, ammo stock, damage policies, target rules, tactical movement, visual and sound awareness, weapon pools, visual pools, armor pools, combat FX, and optional grenade behavior through a per-NPC setup GUI.
+CNPC TACZ Fire is a Forge 1.20.1 addon for building CustomNPCs NPCs that fight with real TACZ guns. It is not a generic ranged attack reskin. The addon drives TACZ firing, reload state, gun state, ammo stock, target rules, tactical movement, awareness, weapon pools, visual pools, armor pools, combat FX, and optional grenade behavior through a per-NPC setup GUI.
 
 The important switch is `TACZ Fire NPC Mode`. When that mode is OFF, the NPC keeps normal CustomNPCs behavior. When it is ON and saved for a CustomNPCs NPC, CNPC TACZ Fire can take over the firearm behavior for that NPC.
-
-Version 0.2.0 adds the read-only `Overview`, event-based player sound detection, `Close Detection`, ranged and melee damage policies, forced reload modes, and melee or unarmed fallback after ammo exhaustion. Patrols keep the GUI-configured idle speed while following an active A* path and retry unreachable points only within a bounded limit.
 
 ## Core rules
 
@@ -41,11 +39,9 @@ Do not make NPCs hold TACZ ammo or magazine items in the offhand. Reloads are re
 | Area | Examples |
 | --- | --- |
 | Fire behavior | `Reload`, `Supply Ammo`, `Max Distance`, `RPM Override`, random RPM range, accuracy, burst fire |
-| Damage policies | native TACZ or fixed ranged damage; weapon-based or fixed melee damage, knockback, and attack speed |
 | Stance behavior | `Idle`, `Ranged`, `Melee`, `Auto`, `Auto Hidden`, plus one advanced conditional rule |
 | Tactical movement | hold, spread, compact, advance, retreat, keep-distance fire, move-while-firing |
-| Awareness | detection distance and angle, close detection, combat delay, last-seen memory, and investigation of gunshot, reload, block-break, and block-place events |
-| Ammo policies | normal, fixed forced, or ranged forced reloads; finite or infinite stock, regeneration, and melee or unarmed fallback after exhaustion |
+| Awareness | detection distance, detection angle, combat delay, instant combat angle, last-seen memory |
 | Targets | entity ID allow lists, faction rules, required tags, rejected tags, same-faction tag targeting |
 | Equipment and visuals | random ranged weapons, melee weapons, skins, armor sets, preview and held-item sync |
 | Combat feedback | alert icons, detected sounds, shoot sounds, detected say text, shoot say text |
