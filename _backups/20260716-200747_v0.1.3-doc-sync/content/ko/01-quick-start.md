@@ -7,7 +7,7 @@ product: core
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: 처음 설치하는 사용자
 tags:
   - quick-start
@@ -17,11 +17,11 @@ tags:
 ## 첫 실행
 
 1. 서버에서 사용할 경우 서버와 접속 클라이언트 양쪽에 같은 DRM JAR을 넣습니다.
-2. CustomNPCs NPC에 대화나 상점을 연결할 경우 CustomNPCs도 같은 환경에 설치합니다. DRM 자체의 파일/HUD/GUI 편집만 사용할 때는 로더 수준에서 필수 의존성은 아닙니다.
+2. DRM의 대화, NPC Shop, NPC 편집 흐름은 CustomNPCs NPC를 대상으로 하므로 CustomNPCs도 같은 환경에 설치합니다.
 3. 월드나 서버를 한 번 실행해서 `config/dochi_rpg_maker` 폴더가 생성되게 합니다.
 4. 크리에이티브 모드 또는 편집 권한이 있는 상태로 `Dochi RPG Maker Core` 아이템을 준비합니다. 이 아이템은 CustomNPCs 아이템 탭에서 찾을 수 있습니다.
 
-처음 실행하면 기본 대화 세트, 기본 대화/상점/Remnant Msg GUI, 샘플 상점, HUD 정의, Remnant Msg 샘플·정책, 설정 파일이 `config/dochi_rpg_maker` 아래에 설치됩니다.
+처음 실행하면 기본 대화 세트, 기본 대화 GUI, 기본 상점 GUI, 샘플 상점, HUD 정의, 설정 파일이 `config/dochi_rpg_maker` 아래에 설치됩니다.
 
 ## 처음 생성되는 저장 폴더
 
@@ -51,20 +51,6 @@ DRM이 만드는 JSON은 대부분 `config/dochi_rpg_maker` 아래에 저장됩�
 | 상점이 연결된 NPC를 아이템 없이 우클릭 | 상점 런타임 |
 
 에디터 선택 UI에서는 `Dialogue Editor`, `NPC Shop`, `Currency Editor`, `GUI Maker`, `HUD Maker`, `Remnant Msg Editor`를 고를 수 있습니다.
-
-0.1.3의 선택 UI는 검색과 `Built-in` / `Add-on` 분류를 지원합니다. 마지막으로 열었던 에디터와 JSON 소스도 세션 동안 기억하므로, 에디터 선택 화면으로 돌아왔다가 다시 열면 직전 작업 흐름을 이어가기 쉽습니다.
-
-## 공용 편집 단축키
-
-지원되는 에디터에서는 다음 단축키를 사용할 수 있습니다. 화면의 `?` 도움말에서 현재 단축키를 다시 확인할 수 있습니다.
-
-| 단축키 | 기능 |
-| --- | --- |
-| `Ctrl+S` | 현재 문서를 저장합니다. 기본 보호 문서는 `Save As`가 필요합니다. |
-| `Ctrl+Z` | 최근 편집을 되돌립니다. |
-| `Ctrl+Y` 또는 `Ctrl+Shift+Z` | 되돌린 편집을 다시 적용합니다. |
-
-`default_set`, `default`로 시작하는 GUI, 기본/샘플 상점은 읽기 전용 보호 대상입니다. 기본 파일을 출발점으로 쓸 때는 먼저 `Save As`로 새 ID를 만드세요.
 
 ## 가장 짧은 대화 제작 흐름
 

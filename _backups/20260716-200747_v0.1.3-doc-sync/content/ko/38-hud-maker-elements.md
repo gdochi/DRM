@@ -7,7 +7,7 @@ product: core
 category: HUD Maker
 section: hud-maker
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: HUD 제작자
 tags:
   - hud
@@ -31,7 +31,7 @@ HUD Maker의 HUD 편집 영역에는 요소 추가 버튼이 있습니다.
 | 구조 | 의미 |
 | --- | --- |
 | `id` | 요소 고유 ID입니다. |
-| `type` | `GROUP`, `TEXT`, `BAR`, `IMAGE`, `ICON_LIST` 중 하나입니다. |
+| `type` | `GROUP`, `TEXT`, `BAR`, `IMAGE` 중 하나입니다. |
 | `transform` | 위치, 크기, 앵커, z 순서입니다. |
 | `binding` | 플레이어 데이터나 화폐 값과 연결하는 정보입니다. |
 | `renderer` | 색상, 텍스트, 이미지, 바 표시 방식입니다. |
@@ -71,7 +71,6 @@ TEXT는 바인딩 값을 문자열로 표시하고, BAR는 바인딩 값을 비�
 | `BAR` | 채움 색상, 배경, 비율 방향 |
 | `IMAGE` | 이미지 경로, crop, fill mode |
 | `GROUP` | 자식 요소를 담는 영역 |
-| `ICON_LIST` | 아이콘 개수, 크기, 간격, 채움/배경 색상 |
 
 ## 제한
 
@@ -79,4 +78,3 @@ TEXT는 바인딩 값을 문자열로 표시하고, BAR는 바인딩 값을 비�
 - IMAGE는 텍스처 경로가 맞아야 보입니다.
 - BAR는 숫자 또는 비율로 해석할 수 있는 값과 함께 써야 합니다.
 - GROUP은 직접 값을 표시하는 요소가 아니라 자식 요소를 묶는 구조입니다.
-- ICON_LIST는 방어도처럼 단계형 아이콘 표시에 적합하며 숫자 binding이 필요합니다.

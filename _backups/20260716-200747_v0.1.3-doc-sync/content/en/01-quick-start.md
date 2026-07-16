@@ -7,7 +7,7 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.3
+version: 0.1.2
 audience: First-time users
 tags:
   - quick-start
@@ -18,11 +18,11 @@ tags:
 
 1. Put the `dochi_rpg_maker` JAR into the Forge 1.20.1 instance `mods` folder.
 2. For servers, install the same mod version on both server and connecting clients.
-3. Install CustomNPCs in the same environment when authoring dialogue, shops, or editor data for CustomNPCs NPCs. It is not a loader-level requirement for standalone file, GUI, or HUD work.
+3. Install CustomNPCs in the same environment if you are authoring NPC content.
 4. Start the world or server once so `config/dochi_rpg_maker` is created.
 5. In creative mode, get the `Dochi RPG Maker Core` item.
 
-On first launch, the mod installs default dialogue sets, dialogue/shop/Remnant Msg GUI files, a sample shop, HUD definitions, Remnant Msg sample/policy files, and settings under `config/dochi_rpg_maker`.
+On first launch, the mod installs default dialogue sets, default dialogue GUI, default shop GUI, a sample shop, HUD definitions, and settings under `config/dochi_rpg_maker`.
 
 ## Opening Editors
 
@@ -34,20 +34,6 @@ On first launch, the mod installs default dialogue sets, dialogue/shop/Remnant M
 | Right-click a shop-only NPC without the item | Opens the NPC shop runtime. |
 
 The core item is also added to the CustomNPCs creative tab. Editing requires creative/edit permission.
-
-The 0.1.3 selector has search plus `Built-in` and `Add-on` categories. During the current session it remembers the last editor, sub-screen, and JSON source so returning to an editor can resume the previous workflow.
-
-## Shared Editor Shortcuts
-
-Supported editors expose these shortcuts and a `?` help screen.
-
-| Shortcut | Action |
-| --- | --- |
-| `Ctrl+S` | Save the current document. Protected defaults require `Save As`. |
-| `Ctrl+Z` | Undo the latest edit. |
-| `Ctrl+Y` or `Ctrl+Shift+Z` | Redo an undone edit. |
-
-`default_set`, GUI files beginning with `default`, and default/sample shops are read-only protected content. Start from them with `Save As` and a new ID.
 
 ## Minimal Dialogue Flow
 

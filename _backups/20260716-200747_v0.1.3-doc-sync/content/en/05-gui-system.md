@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: gui-maker
 status: Stable
-version: 0.1.3
+version: 0.1.2
 audience: GUI creators
 tags:
   - gui
@@ -17,8 +17,6 @@ tags:
 ## What GUI JSON Does
 
 GUI JSON defines the shape of a screen. Dialogue text, shop products, and currency balances are supplied by runtime data. The GUI decides where and how components are rendered.
-
-GUI Maker preview, the saved layout document, and the player-facing runtime screen are separate stages. Preview samples validate placement only; live dialogue, shop, Remnant Msg, and HUD values come from their runtime data sources.
 
 | Field | Meaning |
 | --- | --- |
@@ -59,7 +57,6 @@ Inputs such as `currency`, `hud_layout`, and `currency_hud_layout` normalize to 
 | `shop_page_selector` | Shop | Page navigation. |
 | `currency_display` | Shop | Player-owned currency amount. |
 | `currency_list`, `currency_icon`, `currency_amount`, `currency_delta`, `currency_name` | HUD | Currency HUD elements. |
-| `player_health`, `player_food`, `player_armor`, `player_air`, `player_xp_level` | HUD | Player status preview/runtime values. |
 
 ## Dialogue And Shop GUI References
 
@@ -84,8 +81,6 @@ Runtime reads this path from `config/dochi_rpg_maker/gui`. If it is blank, the v
 - Keep Minecraft resource locations such as `namespace:textures/...` separate from local file paths.
 - Avoid duplicate component IDs and use `z` to keep draw order predictable.
 - Treat sample text in GUI Maker as preview only; live dialogue and shop values come from runtime data.
-- Check the base viewport and safe margins, then adjust `fillOpacity` or inherited style values only where the component needs an override.
-- Files beginning with `default` and known default GUI paths are server-protected, so custom layouts must use `Save As`.
 
 :::warning GUI Type Mismatch
 A shop layout saved as `dialogue` may render without the shop-specific behavior the runtime expects. Use `npc_shop` for shops and `dialogue` for dialogue.

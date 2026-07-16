@@ -7,7 +7,7 @@ product: core
 category: NPC Shop
 section: npc-shop
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: 상점 제작자
 tags:
   - shop
@@ -49,14 +49,6 @@ NPC Shop 에디터 화면에는 구매 목록과 판매 목록을 전환하는 `
 | `count` | 한 번 구매할 때 받는 수량입니다. |
 | `price` | 한 번 구매할 때 내는 가격입니다. |
 | `stock` | 남은 재고입니다. `-1`은 무제한입니다. |
-| `maxStock` | 재입고 후 도달할 최대 재고입니다. |
-| `restock.enabled` | 자동 재입고 사용 여부입니다. 유한 재고에서만 사용합니다. |
-| `restock.amount` | 한 번에 회복할 재고 수입니다. |
-| `restock.intervalTicks` | 재입고 간격입니다. 24000틱은 게임 내 하루입니다. |
-| `restock.nextGameTime` | 서버가 관리하는 다음 재입고 게임 시각입니다. |
-| `currencyType` | `inherit`, `item`, `currency` 중 상품별 결제 모드입니다. |
-| `currencyItem` / `currencyItemNbt` | 상품별 아이템 결제 ID와 정확한 NBT 조건입니다. |
-| `currencyId` | 상품별 DRM 화폐 ID입니다. |
 | `action` | 구매 성공 후 실행할 명령형 문자열입니다. |
 | `nbt` | 지급 아이템에 붙일 NBT 문자열입니다. |
 | `descriptionKey` / `description` | 설명 패널에 보여줄 내용입니다. |
@@ -85,19 +77,6 @@ NPC Shop 에디터 화면에는 구매 목록과 판매 목록을 전환하는 `
 | `1` 이상 | 남은 구매 가능 횟수 |
 
 유한 재고 상품을 구매하면 상점 JSON의 재고 값이 줄어듭니다. 파일 기반 상점이면 서버 JSON 파일의 재고가 기준이 됩니다.
-
-재입고를 켜려면 `stock`을 0 이상, `maxStock`·`amount`·`intervalTicks`를 양수로 둡니다. 재고가 최대치보다 낮아지면 타이머가 시작되고, 시간이 되면 `amount`만큼 `maxStock`까지 회복합니다. `nextGameTime`은 런타임이 저장하는 값이므로 보통 직접 계산하지 않습니다.
-
-## 상품별 결제
-
-| 에디터 모드 | 동작 |
-| --- | --- |
-| `Inherit Shop` | 상점 루트의 결제 수단을 그대로 씁니다. |
-| `Override: Item` | 이 상품만 다른 아이템과 선택적 `Payment NBT`를 요구합니다. |
-| `Override: Currency` | 이 상품만 다른 DRM 화폐 잔액을 사용합니다. |
-| `Legacy: Item` / `Legacy: Currency` | 0.1.2 상점 필드를 읽었을 때 표시되는 호환 모드입니다. |
-
-`Payment NBT`는 SNBT 문법이어야 합니다. 예를 들어 TACZ 9mm 탄약 결제를 구분하려면 `{AmmoId:"tacz:9mm"}`처럼 입력할 수 있습니다. `Invalid payment NBT` 또는 `Invalid currency override`가 보이면 저장·운영 전에 수정하세요.
 
 ## 제한
 

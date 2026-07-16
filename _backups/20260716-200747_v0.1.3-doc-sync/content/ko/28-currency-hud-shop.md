@@ -7,7 +7,7 @@ product: core
 category: 커런시 에디터
 section: currency-editor
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: 제작자 / 운영자
 tags:
   - currency
@@ -27,17 +27,6 @@ NPC Shop에서 DRM 화폐를 쓰려면 상점 문서의 `currencyType`과 `curre
 ```
 
 이 경우 가격은 플레이어 인벤토리 아이템이 아니라 서버에 저장된 `gold` 잔액에서 차감됩니다.
-
-0.1.3에서는 구매 상품마다 상점 기본 결제를 상속하거나 다른 결제로 덮어쓸 수 있습니다.
-
-```json
-{
-  "currencyType": "currency",
-  "currencyId": "silver"
-}
-```
-
-이 필드를 `items[]` 안에 넣으면 해당 상품만 `silver`를 사용합니다. 아이템 결제 override는 `currencyType: "item"`, `currencyItem`, 선택적 `currencyItemNbt`를 사용합니다. 매입 보상과 상점 루트 기본 결제는 기존 규칙을 따릅니다.
 
 ## 아이템 화폐와 DRM 화폐의 차이
 

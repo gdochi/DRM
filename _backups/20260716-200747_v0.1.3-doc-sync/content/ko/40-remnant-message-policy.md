@@ -7,7 +7,7 @@ product: core
 category: 레머넌트 Msg
 section: remnant-msg
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: 제작자 / 운영자
 tags:
   - remnant
@@ -58,7 +58,6 @@ Remnant Msg에는 조건 페이지가 둘 있습니다.
 
 | 필드 | 설명 |
 | --- | --- |
-| `generalUseAllowed` | 일반 사용자가 세터/마커 사용 흐름에 들어갈 수 있는지 정합니다. |
 | `generalCanWriteMessage` | 일반 사용자가 메시지를 작성할 수 있는지 정합니다. |
 | `generalCanUseJson` | 일반 사용자가 JSON 메시지를 참조할 수 있는지 정합니다. |
 | `generalCanUseTriggers` | 일반 사용자가 트리거를 사용할 수 있는지 정합니다. |
@@ -67,8 +66,6 @@ Remnant Msg에는 조건 페이지가 둘 있습니다.
 | `consumeSetterOnGeneralUse` | 일반 사용자의 세터 아이템 소비 여부입니다. |
 | `markerLifetimeTicks` | 마커 유지 시간입니다. |
 | `maxMessageLength` | 메시지 최대 길이입니다. |
-
-번들 `default_policy.json`은 일반 사용자의 기본 사용·직접 메시지 작성을 허용하고 JSON/트리거는 막습니다. 관리자는 JSON과 트리거를 사용할 수 있으며, 세터는 기본적으로 소비되지 않고 마커 수명 제한은 0, 최대 메시지 길이는 4096입니다. 기존 정책 파일이 있으면 업데이트가 이를 덮어쓰지 않습니다.
 
 ## 역할 분리
 

@@ -7,7 +7,7 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.3
+version: 0.1.2
 audience: Server operators
 tags:
   - install
@@ -22,9 +22,8 @@ DRM Core targets Forge 47+, Minecraft 1.20.1 up to but not including 1.21. The m
 | --- | --- | --- |
 | Mod Loader | Forge / `javafml` `[47,)` | Forge 1.20.1 family |
 | Minecraft | `[1.20.1,1.21)` | Docs assume 1.20.1 |
-| DRM Core | `dochi_rpg_maker` 0.1.3 | Required on both client and server |
-| Java | 17 | Match the Forge 1.20.1 runtime. |
-| CustomNPCs | Optional dependency | Required for the CustomNPCs NPC dialogue, shop, and NPC editor workflows. |
+| DRM Core | `dochi_rpg_maker` 0.1.2 | Required on both client and server |
+| CustomNPCs | Optional dependency | Practically required for NPC authoring and runtime |
 
 Core editors are native Minecraft `Screen` implementations. Dialogue, shop, and GUI Maker basics do not require HTML GUI, MCEF, or CNPCExtended.
 
@@ -61,7 +60,7 @@ Back up these paths before updating:
 | `dochi_rpg_maker` | Legacy root that may be migrated on startup. |
 | World save folder | NPC PersistentData contains NPC-bound dialogue and shop data. |
 
-Bundled default dialogue, GUI, shop, and Remnant Msg sample files may be refreshed on startup. Do not edit defaults in place for production content; use `Save As` and point NPCs or settings at the new file. HUD definitions and the Remnant Msg default policy are installed only when missing, and bundled HUD definitions start disabled.
+Default GUI and default dialogue files may be recopied on startup. Do not edit defaults in place for production content; use `Save As` and point NPCs or settings at the new file.
 
 :::warning Version Matching
 If the client is newer than the server, editor packets, server JSON kinds, and runtime GUI fields can drift. Keep the same JAR on both sides.

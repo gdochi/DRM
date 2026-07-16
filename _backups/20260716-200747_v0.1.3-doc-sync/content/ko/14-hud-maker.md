@@ -7,7 +7,7 @@ product: core
 category: HUD Maker
 section: hud-maker
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: HUD 제작자
 tags:
   - hud
@@ -31,8 +31,6 @@ HUD 정의는 `HudDefinition` 구조를 사용합니다. 하나의 정의에는 
 | 커스텀 HUD 정의 | `config/dochi_rpg_maker/hud/definitions/custom` |
 
 HUD 정의의 서버 JSON kind는 `hud_definition`입니다. 활성 세트는 `hud/active_set.json`으로 따로 관리됩니다.
-
-0.1.3은 화폐 지갑, 체력, 허기, 방어도, 산소, 경험치 기본 정의를 제공합니다. 모두 `enabled: false`로 설치되므로 원하는 정의만 복제하거나 활성화해 사용합니다.
 
 ## 상단 버튼
 
@@ -73,8 +71,6 @@ HUD Maker 일부 버튼은 번역 키를 사용합니다. 화면에는 지역화
 
 모든 슬롯이 같은 방식으로 꾸밀 수 있는 것은 아닙니다. 대체 정의가 활성화된 슬롯만 DRM 렌더러가 대신 그립니다.
 
-`Vanilla HUD` 설정 화면에서는 `Hide Health`, `Hide Armor`, `Hide Food`, `Hide Air`, `Hide XP Bar`, `Hide XP Level`, `Hide Hotbar`, `Hide Crosshair`, `Hide Boss Bar`를 각각 켜고 끌 수 있습니다. 채팅, 디버그 텍스트, 스코어보드, 플레이어 목록은 이 설정이 숨기지 않습니다.
-
 ## HUD 요소
 
 | 요소 | 용도 |
@@ -83,9 +79,8 @@ HUD Maker 일부 버튼은 번역 키를 사용합니다. 화면에는 지역화
 | `TEXT` | 글자나 숫자 값을 표시합니다. |
 | `BAR` | 체력, 허기, 경험치처럼 비율이 있는 값을 막대로 표시합니다. |
 | `IMAGE` | 텍스처, 아이콘, 배경 이미지를 표시합니다. |
-| `ICON_LIST` | 방어도처럼 정해진 개수의 아이콘을 값에 따라 채웁니다. |
 
-요소는 `transform`, `binding`, `renderer`, `visibility`, `animation`, `children` 구조를 가집니다. 0.1.3 기본 방어도 HUD는 `ICON_LIST`를 사용합니다.
+요소는 `transform`, `binding`, `renderer`, `visibility`, `animation`, `children` 구조를 가집니다.
 
 ## Open Canvas
 

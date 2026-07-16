@@ -7,7 +7,7 @@ product: core
 category: 레머넌트 Msg
 section: remnant-msg
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: 제작자 / 운영자
 tags:
   - remnant
@@ -71,15 +71,6 @@ Remnant Msg는 일반 NPC 대화와 별도로 월드 안 메시지, 안내문, �
 | `messageTrigger` | 액션 실행 트리거입니다. |
 
 `messageTrigger`는 기본적으로 `every_view`와 `once_per_player` 흐름을 사용합니다.
-
-## 세터와 World List
-
-- `remnant_msg_setter`로 블록 면을 우클릭하면 해당 면 방향을 기준으로 메시지 마커를 배치합니다.
-- 허공 우클릭 또는 웅크린 채 블록 우클릭은 `World List`를 엽니다.
-- 목록은 페이지 이동과 선택 이동을 지원하며 `Edit`, `Teleport`, `Delete`, `Refresh`로 배치된 마커를 관리합니다.
-- 일반 사용자의 세터 소비, JSON/트리거 사용 가능 여부와 마커 수명은 정책 파일이 결정합니다.
-
-마커를 사용하면 정책에 따라 내장 메시지 작성 화면 또는 JSON 메시지 선택 화면이 열립니다. 런타임은 상호작용 조건과 보기 조건을 검사하고, 메시지를 표시한 뒤 `messageTrigger` 기준으로 액션을 실행합니다.
 
 ## 정책 문서 필드
 

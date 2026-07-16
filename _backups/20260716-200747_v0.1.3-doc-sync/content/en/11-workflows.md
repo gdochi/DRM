@@ -7,7 +7,7 @@ product: core
 category: Reference / Operations
 section: operations
 status: Stable
-version: 0.1.3
+version: 0.1.2
 audience: Creators
 tags:
   - workflow
@@ -21,22 +21,20 @@ tags:
 3. Point `dialogueDefaultGui.guiJsonPath` at your GUI file.
 4. Make the `start` node route point to the first general node.
 5. Add text, choices, conditions, and actions to general nodes.
-6. For repeated flows, select nodes with `Shift+Click`, use `Copy` / `Paste`, and drag node/route/choice/condition/action rows into order.
-7. Use `Save As` and save to `dialogue_sets/my_npc_dialogue`.
-8. Right-click the target NPC with the core item and apply the dialogue.
-9. The saved dialogue opens as runtime dialogue when the NPC is right-clicked without the core item.
+6. Use `Save As` and save to `dialogue_sets/my_npc_dialogue`.
+7. Right-click the target NPC with the core item and apply the dialogue.
+8. The saved dialogue opens as runtime dialogue when the NPC is right-clicked without the core item.
 
 ## File-Based Shop NPC
 
 1. In `GUI Maker`, create an `npc_shop` GUI or use `default_shop_gui.json`.
 2. In `NPC Shop`, choose `Create New NPC Shop`.
 3. Set `id`, `title`, `tradeMode`, and `currency` or `currencyId`.
-4. Add buy products to `items` and sale offers to `sellItems`. Change a product's `Payment` from inherited to an item/DRM currency override when needed.
-5. For finite products, configure `Stock`, `Max Stock`, `Restock`, `Amount`, and `Interval`.
-6. Connect `shopDefaultGui`, and optionally `shopGuis.buy` and `shopGuis.sell`.
-7. Save as `npc_shops/blacksmith.json`.
-8. Add a dialogue `go_shop` action with `shop: "blacksmith"`.
-9. The selected dialogue choice opens the file-based shop.
+4. Add buy products to `items` and sale offers to `sellItems`.
+5. Connect `shopDefaultGui`, and optionally `shopGuis.buy` and `shopGuis.sell`.
+6. Save as `npc_shops/blacksmith.json`.
+7. Add a dialogue `go_shop` action with `shop: "blacksmith"`.
+8. The selected dialogue choice opens the file-based shop.
 
 ## NPC-Bound Shop
 
@@ -68,8 +66,4 @@ This is convenient for one-off NPCs. File-based shops are easier when multiple N
 
 :::tip Production Copy
 Manage production data from the full `config/dochi_rpg_maker` folder. Data stored only in NPC PersistentData does not move with file copies alone.
-:::
-
-:::tip Editing Shortcuts
-Supported editors use `Ctrl+S`, `Ctrl+Z`, and `Ctrl+Y` or `Ctrl+Shift+Z`. On protected defaults, create a new ID with `Save As` instead of quick-saving.
 :::

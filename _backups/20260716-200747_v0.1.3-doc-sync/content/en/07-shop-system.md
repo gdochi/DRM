@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: npc-shop
 status: Stable
-version: 0.1.3
+version: 0.1.2
 audience: Shop creators
 tags:
   - shop
@@ -50,9 +50,6 @@ Older `buyEnabled`, `sellEnabled`, and `shopMode` values are normalized into `tr
 | `count` | Count given per buy unit | Count required per sell unit |
 | `price` | Price per buy unit | Payout per sell unit |
 | `stock` | Stock. `-1` means unlimited. | Not used. |
-| `maxStock` | Maximum stock reached by automatic restocking. | Not used. |
-| `restock` | Enabled state, amount, interval, and next game time. | Not used. |
-| `currencyType` / `currencyItem` / `currencyItemNbt` / `currencyId` | Optional per-product payment override. | Not used. |
 | `description` | Text or translation key shown in description panel. | Usually unused. |
 | `action` | Command-like string after successful buy. | Not used. |
 | `nbt` | Optional | Require matching item NBT. |
@@ -71,11 +68,7 @@ Buying runs server-side:
 6. Charge item currency or DRM currency balance.
 7. Give the item and update finite stock.
 
-`stock: 0` means sold out. `stock: -1` means unlimited. Price is `price * quantity`. Finite products can use `maxStock` plus `restock.enabled`, `amount`, `intervalTicks`, and server-managed `nextGameTime`. Runtime shows `Restock in` or `Restock ready` when applicable.
-
-## Per-Product Payment
-
-Each buy product can use `Inherit Shop`, `Override: Item`, or `Override: Currency`. Item overrides accept exact SNBT in `currencyItemNbt`; for example, TACZ ammunition can use `{AmmoId:"tacz:9mm"}` in `Payment NBT`. Invalid NBT or an unknown DRM currency fails closed instead of falling back to another payment. Existing 0.1.2 fields remain available through the legacy item/currency compatibility modes.
+`stock: 0` means sold out. `stock: -1` means unlimited. Price is `price * quantity`.
 
 ## Sell Runtime
 
@@ -103,10 +96,6 @@ Shop runtime expects a GUI JSON with `guiType: "npc_shop"`. The default shop GUI
 ```
 
 Use `shopGuis.buy` and `shopGuis.sell` when buy and sell views need different layouts.
-
-## Server-Side Trade Safety
-
-The server revalidates the active session, NPC, dimension, distance, product, stock, and payment before every trade. Finite stock is reserved and saved before charging; delivery or payment failures restore stock and refund payment. Restock changes persist to file-based shops and are pushed to live viewers.
 
 ## Opening Shops From Dialogue
 

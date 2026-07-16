@@ -7,7 +7,7 @@ product: core
 category: HUD Maker
 section: hud-maker
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: HUD 제작자
 tags:
   - hud
@@ -28,24 +28,6 @@ HUD 정의의 `mode`가 `VANILLA_REPLACEMENT`이고 `replaceVanilla`가 지정�
 
 대체 정의가 비활성화되어 있으면 바닐라 HUD가 그대로 사용됩니다.
 
-## 바닐라 표시 스위치
-
-HUD Maker의 `Vanilla HUD` 영역은 다음 항목을 개별적으로 숨깁니다.
-
-| UI 라벨 | 대상 |
-| --- | --- |
-| `Hide Health` | 체력 |
-| `Hide Armor` | 방어도 |
-| `Hide Food` | 허기 |
-| `Hide Air` | 산소 |
-| `Hide XP Bar` | 경험치 바 |
-| `Hide XP Level` | 경험치 레벨 숫자 |
-| `Hide Hotbar` | 핫바 |
-| `Hide Crosshair` | 조준점 |
-| `Hide Boss Bar` | 보스바 |
-
-이 스위치는 바닐라 요소를 숨기는 설정이고, 아래의 `VANILLA_REPLACEMENT` 정의는 그 자리에 DRM 요소를 그리는 설정입니다. 커스텀 HUD가 준비되기 전에 숨김만 켜면 해당 정보가 화면에서 사라질 수 있습니다.
-
 ## 대체 가능한 슬롯
 
 | 값 | 대상 |
@@ -64,7 +46,7 @@ HUD Maker의 `Vanilla HUD` 영역은 다음 항목을 개별적으로 숨깁니�
 
 ## 기본 체력 HUD
 
-HUD Maker는 기본 체력, 허기, 방어도, 산소, 경험치 정의를 `hud/definitions/vanilla`에 제공합니다. 모두 비활성 상태로 설치되며 `health_bar.json`은 `HEALTH` 슬롯 대체 예시입니다.
+HUD Maker는 기본 체력 HUD 정의로 `hud/definitions/vanilla/health_bar.json`을 다룹니다. 이 파일은 `HEALTH` 슬롯 대체 예시로 사용할 수 있습니다.
 
 체력 HUD는 보통 다음 요소를 가집니다.
 

@@ -7,7 +7,7 @@ product: core
 category: 다이얼로그 에디터
 section: dialogue-editor
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: 대화 제작자
 tags:
   - dialogue
@@ -102,17 +102,6 @@ NPC 우클릭
 - 선택지를 누를 때 아이템 지급, 태그 변경, 명령 실행, 상점 열기 같은 액션을 실행할 수 있습니다.
 - 대화 GUI를 GUI Maker에서 만든 `dialogue` 타입 GUI로 바꿀 수 있습니다. GUI Maker가 아직 어렵다면 기본 대화 GUI를 그대로 사용해도 됩니다.
 - 기본 대화 GUI를 커스텀할 때는 `Save`로 기본 파일을 덮어쓰지 말고 반드시 `Save As`로 새 파일을 만든 뒤 연결하세요.
-
-## 0.1.3 노드 편집 흐름
-
-- 노드 목록에서 `Shift+Click`하거나 드래그해 여러 노드를 선택할 수 있습니다.
-- 선택한 노드는 `Copy` / `Paste` 또는 `Ctrl+C` / `Ctrl+V`로 같은 세트나 선택한 다른 세트에 복사할 수 있습니다.
-- 붙여넣을 때 노드 이름은 충돌하지 않게 바뀌고, 복사 묶음 안의 내부 링크와 Blueprint 위치도 함께 다시 연결됩니다. 복사 밖을 가리키는 링크는 유지됩니다.
-- 노드, route, choice, condition, action 행은 드래그해서 순서를 바꿀 수 있습니다.
-- `Duplicate`는 대화 세트 전체와 Blueprint 위치를 새 세트 ID로 복제합니다. 서버 저장 완료 메시지를 확인한 뒤 런타임에 적용하세요.
-- `Dialogue Sets` 사이드바는 폭을 드래그해 조절할 수 있고, 다음에 열 때 그 폭을 기억합니다.
-
-런타임에서는 긴 선택지가 줄바꿈되고 필요한 높이만큼 늘어나며, 화면을 넘으면 스크롤할 수 있습니다. `Dialogue`, `Choice`, `Close` 같은 기본 라벨도 클라이언트 언어를 따릅니다.
 
 ## 제한
 

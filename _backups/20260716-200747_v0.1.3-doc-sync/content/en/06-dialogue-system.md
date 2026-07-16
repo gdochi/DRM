@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: dialogue-editor
 status: Stable
-version: 0.1.3
+version: 0.1.2
 audience: Dialogue creators
 tags:
   - dialogue
@@ -82,17 +82,6 @@ When dialogue is applied to an NPC, PersistentData stores keys in this family.
 | `dochi_rpg_maker.dialogue.enabled` | Whether dialogue is enabled. |
 
 Runtime loads the server JSON reference first when present. If that fails, it falls back to the embedded NPC JSON.
-
-## 0.1.3 Authoring Workflow
-
-- `Shift+Click` or drag across node rows to select multiple nodes.
-- Use `Copy` / `Paste` or `Ctrl+C` / `Ctrl+V` to copy nodes within a set or into a selected `Dialogue Sets` target.
-- Paste generates collision-free names, remaps links inside the copied group, keeps external links, and carries Blueprint positions. The start node is normalized so the target set keeps one entry node.
-- Drag node, route, choice, condition, and action rows to reorder them.
-- `Duplicate` copies the entire dialogue set and Blueprint positions to a new set ID. Wait for the server save acknowledgement before using it at runtime.
-- Drag the `Dialogue Sets` sidebar edge to resize it; the width is remembered.
-
-Runtime choices now wrap and grow for long labels, then scroll when they exceed the available area. Default `Dialogue`, `Choice`, and `Close` labels follow client localization.
 
 :::tip Default Sample
 The bundled `default_set` starts at node 1, routes to greeting node 2, then branches through nodes 3-5. Clone it when testing new features.

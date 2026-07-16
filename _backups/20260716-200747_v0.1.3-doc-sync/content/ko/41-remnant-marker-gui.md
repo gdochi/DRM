@@ -7,7 +7,7 @@ product: core
 category: 레머넌트 Msg
 section: remnant-msg
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: 제작자 / 운영자
 tags:
   - remnant
@@ -26,16 +26,6 @@ Remnant Msg는 월드 배치를 위해 마커와 세터 아이템을 사용합�
 | World List | 월드에 있는 레머넌트 메시지 위치 목록을 다루는 흐름입니다. |
 
 마커에는 메시지 파일과 정책 파일이 연결될 수 있습니다. 메시지 파일이 비어 있으면 마커에 직접 저장된 메시지 값을 사용할 수 있습니다.
-
-## 세터 조작
-
-| 조작 | 결과 |
-| --- | --- |
-| 블록 면 우클릭 | 클릭한 면 방향에 맞춰 새 마커를 배치합니다. |
-| 허공 우클릭 | 월드의 Remnant Msg 목록을 엽니다. |
-| 웅크린 채 블록 우클릭 | 새 마커를 놓지 않고 월드 목록을 엽니다. |
-
-일반 사용자의 세터 소비 여부는 정책의 `consumeSetterOnGeneralUse`가 결정합니다. 마커를 편집할 때 직접 메시지를 쓰거나 JSON 메시지를 고를 수 있는 범위도 정책 권한을 따릅니다.
 
 ## 마커에 저장되는 값
 
@@ -66,8 +56,6 @@ Remnant Msg 표시 화면은 GUI Maker의 `remnant_msg` 타입 GUI를 사용합�
 3. GUI Maker에서 `remnant_msg` 타입 GUI를 만듭니다.
 4. 메시지 문서의 `gui` 필드에 GUI 파일을 넣습니다.
 5. 세터 아이템이나 월드 목록 흐름으로 마커와 메시지를 연결합니다.
-
-`World List`는 페이지 이동, 선택 이동, `Edit`, `Teleport`, `Delete`, `Refresh`를 제공합니다. 많은 마커를 운영할 때는 목록에서 위치와 메시지 ID를 확인한 뒤 이동·삭제하세요.
 
 ## 제한
 

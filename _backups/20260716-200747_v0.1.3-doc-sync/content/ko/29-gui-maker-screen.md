@@ -7,7 +7,7 @@ product: core
 category: GUI Maker
 section: gui-maker
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: GUI 제작자
 tags:
   - gui
@@ -25,8 +25,6 @@ GUI Maker는 화면의 모양을 만드는 편집기입니다. 에디터는 도�
 | 도구 목록 | 현재 GUI 타입에서 사용할 수 있는 컴포넌트를 보여줍니다. |
 | 캔버스 | 실제 화면에 배치될 요소를 시각적으로 편집합니다. |
 | 인스펙터 | 선택한 요소의 위치, 크기, 색상, 텍스트, 이미지, 역할을 편집합니다. |
-
-에디터는 기준 화면 viewport, 안전 여백, 요소 겹침을 한 캔버스에서 확인할 수 있습니다. 패널 투명도는 `fillOpacity`, 공통 스타일을 따르는 값은 상속 상태를 확인한 뒤 필요한 요소만 override하세요.
 
 ## Screen Editor
 
@@ -53,8 +51,6 @@ GUI 타입은 저장되는 문서의 의미를 결정합니다.
 | `npc_shop` | 구매/판매 상점 화면 |
 | `currency_hud` | 화폐 HUD 레이아웃 |
 | `remnant_msg` | 레머넌트 메시지 화면 |
-
-내부 레이아웃 프로필에는 `player_status`, `custom_hud`, `generic`도 있으며 HUD Maker의 `Open Canvas` 같은 연결 흐름에서 사용될 수 있습니다. 일반 대화/상점 GUI를 만들 때는 용도에 맞는 네 가지 타입을 먼저 선택하면 됩니다.
 
 타입이 다르면 사용할 수 있는 컴포넌트도 달라집니다. 예를 들어 `choice`는 대화 GUI에서 의미가 있고, `item_slot`은 상점 GUI에서 의미가 있습니다.
 

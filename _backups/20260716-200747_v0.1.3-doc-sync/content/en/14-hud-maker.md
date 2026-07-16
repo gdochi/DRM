@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: hud-maker
 status: Stable
-version: 0.1.3
+version: 0.1.2
 audience: Creators / Operators
 tags:
   - hud
@@ -33,8 +33,6 @@ HUD files use these paths.
 
 HUD sets are managed by the server, then sent to the client for rendering.
 
-0.1.3 installs disabled starter definitions for the currency wallet plus health, food, armor, air, and experience. Enable or clone only the definitions you intend to use.
-
 ## Basic Workflow
 
 1. Open the editor selector with the `Dochi RPG Maker Core` item.
@@ -53,7 +51,6 @@ HUD sets are managed by the server, then sent to the client for rendering.
 | image | Displays a background panel or icon. |
 | text | Displays fixed text or status text. |
 | panel | Groups several elements into a background area. |
-| player health/food/armor/air/XP | Shows player status values in a HUD layout. |
 
 Currency HUD components connect directly to Currency Editor IDs. If the HUD component exists but the currency definition does not, the display will not be reliable.
 
@@ -77,9 +74,3 @@ HUD display depends on the server active set and player data. If you edit JSON m
 | Number does not update | Currency balance storage and server sync. |
 | Position is wrong | Anchor, coordinates, and GUI scale. |
 | Overlaps another HUD | Vanilla HUD replacement settings and component coordinates. |
-
-## Vanilla HUD Visibility
-
-`Vanilla HUD` exposes independent `Hide Health`, `Hide Armor`, `Hide Food`, `Hide Air`, `Hide XP Bar`, `Hide XP Level`, `Hide Hotbar`, `Hide Crosshair`, and `Hide Boss Bar` switches. These hide vanilla surfaces; a `VANILLA_REPLACEMENT` definition supplies the custom replacement. Chat, debug text, the scoreboard, and the player list are left untouched.
-
-HUD definitions use `GROUP`, `TEXT`, `BAR`, `IMAGE`, and `ICON_LIST` elements. The bundled armor definition demonstrates `ICON_LIST`; bundled definitions start with `enabled: false`.

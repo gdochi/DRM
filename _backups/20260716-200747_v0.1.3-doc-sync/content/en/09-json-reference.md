@@ -7,7 +7,7 @@ product: core
 category: Reference / Operations
 section: operations
 status: Stable
-version: 0.1.3
+version: 0.1.2
 audience: Advanced users
 tags:
   - json
@@ -110,52 +110,6 @@ Elements use `id`, `type`, `x`, `y`, `w`, `h`, and `z` as their base fields. Typ
 ```
 
 `tradeMode` accepts `buy_only`, `sell_only`, and `buy_sell`. `items[].stock` uses `-1` for unlimited stock.
-
-A 0.1.3 buy product can override payment and configure restocking.
-
-```json
-{
-  "productId": "tacz_ammo",
-  "item": "minecraft:paper",
-  "count": 1,
-  "price": 4,
-  "currencyType": "item",
-  "currencyItem": "tacz:ammo",
-  "currencyItemNbt": "{AmmoId:\"tacz:9mm\"}",
-  "stock": 8,
-  "maxStock": 8,
-  "restock": {
-    "enabled": true,
-    "amount": 2,
-    "intervalTicks": 24000,
-    "nextGameTime": 0
-  }
-}
-```
-
-Use `currencyType: "inherit"` on a product to use the shop-level payment. Explicit invalid payment IDs or SNBT produce a runtime error instead of a fallback.
-
-## Remnant Msg Summary
-
-```json
-{
-  "type": "remnant_msg",
-  "id": "tutorial",
-  "enabled": true,
-  "message": "Inspect the door.",
-  "messageStyles": [],
-  "useConditionsEnabled": false,
-  "useConditions": [],
-  "messageConditionsEnabled": false,
-  "messageConditions": [],
-  "messageActionsEnabled": false,
-  "messageTrigger": "every_view",
-  "messageActions": [],
-  "gui": "default_remnant_msg_gui.json"
-}
-```
-
-The separate `remnant_msg_policy` document controls general/admin JSON and trigger permissions, setter consumption, marker lifetime, and maximum message length.
 
 ## CurrencyDefinition Summary
 

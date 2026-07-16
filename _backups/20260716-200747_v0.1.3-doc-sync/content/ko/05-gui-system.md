@@ -7,7 +7,7 @@ product: core
 category: GUI Maker
 section: gui-maker
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: GUI 제작자
 tags:
   - gui
@@ -19,8 +19,6 @@ tags:
 GUI 시스템은 화면의 모양을 정의합니다. 대화 내용, 상점 상품, 화폐 잔액 같은 실제 데이터는 각 에디터가 만들고, GUI JSON은 그 데이터를 어느 위치에 어떤 컴포넌트로 보여줄지 정합니다.
 
 GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker/gui` 아래에 들어갑니다. 대화, 상점, 레머넌트 메시지는 폴더를 따로 나누지 않고 `guiType`으로 구분합니다.
-
-0.1.3의 GUI Maker는 `dialogue`, `npc_shop`, `remnant_msg`, `currency_hud`뿐 아니라 플레이어 상태/커스텀 HUD 계열 레이아웃 프로필도 같은 캔버스 규칙으로 다룹니다. 에디터 미리보기, 저장된 GUI 레이아웃, 플레이어가 보는 런타임 화면은 서로 다른 단계이므로 미리보기 샘플을 실제 대화·상품 데이터로 보지 마세요.
 
 ## 기본 구조
 
@@ -34,8 +32,6 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 | `buttonConfig` | 버튼 컴포넌트를 바닐라 버튼처럼 그릴지 정하는 설정입니다. |
 
 `elements`는 실제 화면 요소입니다. 각 요소는 `id`, `type`, 위치, 크기, 색상, 텍스트, 이미지, 상점 역할 같은 값을 가집니다.
-
-`stage`의 기준 크기와 실제 viewport를 함께 보면서 안전 여백을 남기고, 패널의 `fillOpacity`와 상속된 기본 스타일을 확인하세요. 0.1.3 상점 프리셋은 상품/거래 컴포넌트를 담는 루트 패널 구조도 함께 사용합니다.
 
 ## GUI 타입
 
@@ -100,5 +96,4 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 - `dialogue` GUI에 상점 전용 컴포넌트를 넣어도 상점 데이터가 자동으로 생기지 않습니다.
 - `npc_shop` GUI에 선택지 컴포넌트를 넣어도 대화 선택지처럼 동작하지 않습니다.
 - 기본 GUI 파일을 직접 덮어쓰면 업데이트 때 기본값과 섞일 수 있으므로 `Save As`로 별도 파일을 만드는 쪽이 좋습니다.
-- `default`로 시작하는 GUI와 알려진 기본 GUI 경로는 서버에서 읽기 전용으로 보호되므로 실제로도 `Save As`가 필요합니다.
 - 컴포넌트 ID가 중복되면 런타임 연결이 헷갈릴 수 있으므로 역할이 있는 요소는 고유 ID를 유지해야 합니다.

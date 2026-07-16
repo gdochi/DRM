@@ -7,7 +7,7 @@ product: core
 category: NPC Shop
 section: npc-shop
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: 상점 제작자
 tags:
   - shop
@@ -59,9 +59,6 @@ NPC Shop은 NPC가 판매하거나 매입하는 상품 목록을 만드는 에�
 | `count` | 1회 구매 시 지급 수량 | 1회 판매 단위 수량 |
 | `price` | 1회 구매 가격 | 1회 판매 보상 |
 | `stock` | 재고입니다. `-1`은 무제한입니다. | 사용하지 않습니다. |
-| `maxStock` | 자동 재입고가 채울 최대 재고입니다. | 사용하지 않습니다. |
-| `restock` | 재입고 사용 여부, 수량, 간격, 다음 시각입니다. | 사용하지 않습니다. |
-| `currencyType` / `currencyItem` / `currencyItemNbt` / `currencyId` | 이 상품만 사용할 결제 수단을 덮어씁니다. | 사용하지 않습니다. |
 | `descriptionKey` / `description` | 설명 패널에 표시할 내용 | 보통 사용하지 않습니다. |
 | `action` | 구매 성공 후 실행할 명령형 문자열 | 사용하지 않습니다. |
 | `nbt` | 선택 사항 | 특정 NBT 아이템만 매입할 때 사용합니다. |
@@ -72,7 +69,7 @@ NPC Shop은 NPC가 판매하거나 매입하는 상품 목록을 만드는 에�
 
 ## 재고와 가격
 
-`stock`은 구매 상품에만 적용됩니다. `0`은 품절이고, `-1`은 무제한입니다. 가격은 `price * quantity`로 계산됩니다. 유한 재고 상품은 `maxStock`과 `restock.enabled`, `amount`, `intervalTicks`, `nextGameTime`으로 월드 게임 시간 기준 재입고를 구성할 수 있습니다. 런타임은 `Restock in` 또는 `Restock ready` 상태를 표시합니다.
+`stock`은 구매 상품에만 적용됩니다. `0`은 품절이고, `-1`은 무제한입니다. 가격은 `price * quantity`로 계산됩니다.
 
 판매 상품은 재고를 쓰지 않습니다. 플레이어가 가진 아이템 수량과 `sellItems[].count`를 기준으로 판매 가능한 단위가 정해집니다.
 
@@ -84,12 +81,6 @@ NPC Shop은 NPC가 판매하거나 매입하는 상품 목록을 만드는 에�
 | DRM 화폐 | `currencyType: "currency"`, `currencyId` | Currency Editor에서 만든 잔액을 사용합니다. |
 
 DRM 화폐를 사용할 때는 먼저 Currency Editor에서 화폐 정의를 만들고, 상점에서 같은 `currencyId`를 선택해야 합니다.
-
-구매 상품마다 `Inherit Shop`, `Override: Item`, `Override: Currency`를 선택할 수 있습니다. `Override: Item`에서는 `currencyItemNbt`로 결제 아이템의 NBT까지 정확히 맞출 수 있습니다. 예를 들어 TACZ 탄약처럼 같은 아이템 ID 안에서 NBT로 종류가 갈리는 경우 `Payment NBT`에 `{AmmoId:"tacz:9mm"}` 같은 값을 넣습니다. 잘못된 NBT나 존재하지 않는 DRM 화폐 ID는 결제를 다른 방식으로 우회하지 않고 실패 처리됩니다. 0.1.2의 필드가 들어 있는 기존 상점은 레거시 모드로 계속 읽습니다.
-
-## 거래 안정성
-
-거래는 서버가 세션, NPC, 차원, 거리, 상품, 재고, 결제 수단을 다시 검증한 뒤 처리합니다. 유한 재고는 결제보다 먼저 예약·저장되고, 지급 또는 결제가 실패하면 재고와 결제를 복구합니다. 파일 기반 재입고 결과도 서버 JSON에 저장되며 열려 있는 상점 화면에 갱신됩니다.
 
 ## GUI 연결
 

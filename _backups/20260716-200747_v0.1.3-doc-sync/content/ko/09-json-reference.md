@@ -7,7 +7,7 @@ product: core
 category: 레퍼런스 / 운영
 section: operations
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: 고급 사용자
 tags:
   - json
@@ -111,52 +111,6 @@ GUI 요소는 `id`, `type`, `x`, `y`, `w`, `h`, `z`를 기본으로 갖습니다
 ```
 
 `tradeMode`는 `buy_only`, `sell_only`, `buy_sell`을 사용합니다. `items[].stock`은 `-1`이면 무제한입니다.
-
-0.1.3 구매 상품의 결제·재입고 필드는 다음 형태입니다.
-
-```json
-{
-  "productId": "tacz_ammo",
-  "item": "minecraft:paper",
-  "count": 1,
-  "price": 4,
-  "currencyType": "item",
-  "currencyItem": "tacz:ammo",
-  "currencyItemNbt": "{AmmoId:\"tacz:9mm\"}",
-  "stock": 8,
-  "maxStock": 8,
-  "restock": {
-    "enabled": true,
-    "amount": 2,
-    "intervalTicks": 24000,
-    "nextGameTime": 0
-  }
-}
-```
-
-상품이 상점 기본 결제를 그대로 쓰면 상품의 `currencyType`을 `inherit`로 둡니다. 명시한 결제 ID나 NBT가 잘못되면 런타임은 실패 상태로 처리합니다.
-
-## Remnant Msg 요약
-
-```json
-{
-  "type": "remnant_msg",
-  "id": "tutorial",
-  "enabled": true,
-  "message": "문을 조사해 보세요.",
-  "messageStyles": [],
-  "useConditionsEnabled": false,
-  "useConditions": [],
-  "messageConditionsEnabled": false,
-  "messageConditions": [],
-  "messageActionsEnabled": false,
-  "messageTrigger": "every_view",
-  "messageActions": [],
-  "gui": "default_remnant_msg_gui.json"
-}
-```
-
-정책은 별도 `remnant_msg_policy` 문서이며 일반 사용자/관리자의 JSON·트리거 권한, 세터 소비, 마커 수명, 최대 메시지 길이를 관리합니다.
 
 ## CurrencyDefinition 요약
 

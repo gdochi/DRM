@@ -7,7 +7,7 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.3
+version: 0.1.2
 audience: Creators / Operators
 tags:
   - paths
@@ -54,8 +54,6 @@ Client and server exchange JSON by `kind` and `path`.
 | `currency_hud_layout` | `hud/sets` | HUD set storage. Legacy `currency_hud` maps here. |
 | `hud_active_set` | `hud/active_set.json` | Current active HUD set. |
 | `hud_definition` | `hud/definitions` | Vanilla replacement and custom HUD definitions. |
-| `remnant_msg` | `remnant_msg/messages` | Remnant Msg document. |
-| `remnant_msg_policy` | `remnant_msg/policies` | Remnant Msg policy document. |
 | `settings` | `settings/defaults.json` | Default currency and default GUI references. |
 
 ## Input Rules
@@ -65,18 +63,7 @@ Client and server exchange JSON by `kind` and `path`.
 - Windows backslashes are normalized to `/`.
 - Blank filenames may become `default.json`; name files explicitly.
 - Paths that escape the storage root with `..` are rejected.
-- `default_set`, GUI files beginning with `default`, known default GUI paths, shops beginning with `default`, and the sample shop are protected. Server save/delete rejects them; use `Save As`.
-
-## Default Content During Updates
-
-| Data | Startup behavior |
-| --- | --- |
-| Bundled dialogue, GUI, and shop defaults | Refreshed from the 0.1.3 JAR. |
-| Remnant Msg sample message | Refreshed from the JAR. |
-| HUD definitions | Installed only when missing and default to `enabled: false`. |
-| Remnant Msg default policy | Installed only when missing. |
-
-Keep production files under non-default names so they remain separate from bundled refreshes.
+- Default GUI and sample shop files are treated as protected defaults.
 
 ## Legacy Compatibility
 

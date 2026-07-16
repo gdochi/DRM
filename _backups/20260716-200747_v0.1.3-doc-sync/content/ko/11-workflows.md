@@ -7,7 +7,7 @@ product: core
 category: 레퍼런스 / 운영
 section: operations
 status: 안정
-version: 0.1.3
+version: 0.1.2
 audience: 제작자
 tags:
   - workflow
@@ -21,22 +21,20 @@ tags:
 3. `dialogueDefaultGui.guiJsonPath`를 만든 GUI 파일로 연결합니다.
 4. `start` 노드의 route가 첫 일반 노드를 가리키게 합니다.
 5. 일반 노드에 대사, 선택지, 조건, 액션을 추가합니다.
-6. 반복되는 흐름은 `Shift+Click`으로 노드를 묶어 `Copy` / `Paste`하고, 행 드래그로 node/route/choice/condition/action 순서를 정리합니다.
-7. `Save As`로 `dialogue_sets/my_npc_dialogue`에 저장합니다.
-8. 코어 아이템으로 대상 NPC를 우클릭하고 대화를 적용합니다.
-9. NPC에 저장된 대화는 아이템 없이 우클릭할 때 런타임 화면으로 열립니다.
+6. `Save As`로 `dialogue_sets/my_npc_dialogue`에 저장합니다.
+7. 코어 아이템으로 대상 NPC를 우클릭하고 대화를 적용합니다.
+8. NPC에 저장된 대화는 아이템 없이 우클릭할 때 런타임 화면으로 열립니다.
 
 ## 파일 기반 상점 NPC 만들기
 
 1. `GUI Maker`에서 `npc_shop` 타입 상점 GUI를 만들거나 기본 `default_shop_gui.json`을 사용합니다.
 2. `NPC Shop`에서 `Create New NPC Shop`을 선택합니다.
 3. `id`, `title`, `tradeMode`, `currency` 또는 `currencyId`를 정합니다.
-4. 구매 상품은 `items`, 매입 상품은 `sellItems`에 추가합니다. 상품별 결제가 다르면 `Payment`를 상속 대신 아이템/DRM 화폐 override로 바꿉니다.
-5. 유한 재고를 쓸 상품은 `Stock`, `Max Stock`, `Restock`, `Amount`, `Interval`을 설정합니다.
-6. `shopDefaultGui`와 필요하면 `shopGuis.buy`, `shopGuis.sell`을 연결합니다.
-7. `Save As`로 `npc_shops/blacksmith.json`처럼 저장합니다.
-8. 대화 선택지에 `go_shop` 액션을 추가하고 `shop` 값을 `blacksmith`로 지정합니다.
-9. 선택지를 누르면 파일 기반 상점 화면으로 이동합니다.
+4. 구매 상품은 `items`, 매입 상품은 `sellItems`에 추가합니다.
+5. `shopDefaultGui`와 필요하면 `shopGuis.buy`, `shopGuis.sell`을 연결합니다.
+6. `Save As`로 `npc_shops/blacksmith.json`처럼 저장합니다.
+7. 대화 선택지에 `go_shop` 액션을 추가하고 `shop` 값을 `blacksmith`로 지정합니다.
+8. 선택지를 누르면 파일 기반 상점 화면으로 이동합니다.
 
 ## NPC에 직접 붙은 상점 만들기
 
@@ -68,8 +66,4 @@ tags:
 
 :::tip 운영 복사본
 운영 서버에 옮길 때는 `config/dochi_rpg_maker` 전체를 기준으로 관리합니다. 월드 안 NPC PersistentData에만 저장된 데이터는 파일 복사만으로는 같이 이동하지 않습니다.
-:::
-
-:::tip 편집 중 빠른 조작
-지원 화면에서는 `Ctrl+S`, `Ctrl+Z`, `Ctrl+Y` 또는 `Ctrl+Shift+Z`를 사용할 수 있습니다. 기본 보호 JSON에서는 `Ctrl+S` 대신 새 ID로 `Save As`하세요.
 :::
