@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Targets
 section: targets
 status: Draft
-version: 0.2.1
+version: 0.2.0
 audience: Encounter designers
 tags:
   - target

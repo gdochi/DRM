@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: 운영
 section: operations
 status: Draft
-version: 0.2.1
+version: 0.2.0
 audience: 운영자
 tags:
   - troubleshooting
@@ -41,13 +41,9 @@ tags:
 | 발사 리듬이 이상함 | `RPM Override`, `RPM Min`, `RPM Max`, `Burst Fire`, TACZ 총기의 기본 발사 모드를 확인합니다. |
 | 총이 빈 뒤 멈춤 | `Reload`, `Supply Ammo`, `Ammo Stock`, `Reload Type`, `Ammo-Aware Switching`, 근접/빈손 fallback을 확인합니다. |
 | 설정한 피해·넉백·공격 속도가 나오지 않음 | `Gun`과 `Melee`의 `Gun/Weapon Spec` 또는 `Custom` 선택과 사용자 값을 확인합니다. |
-| Better Combat 무기 모션이 나오지 않음 | Better Combat과 Mob Player Animator 설치, NPC의 `Better Combat Compatibility`, 해당 무기에 등록된 공격을 확인합니다. 재생할 수 없을 때 바닐라 주손 스윙이 나오는 것은 정상입니다. |
-| Better Combat 호환 중 사용자 공격 속도가 적용되지 않음 | 호환이 켜지면 유효 무기 `ATTACK_SPEED`로 잠깁니다. `Custom` 공격 속도가 필요하면 `Better Combat Compatibility`를 끕니다. |
-| 순찰 NPC가 벽에 붙거나 한 걸음씩 끊김 | `Default Walk Speed`, 순찰 지점, 수직 높이와 A* 도달 가능성을 확인합니다. 0.2.1 JAR가 클라이언트와 서버 양쪽에 설치되었는지도 확인합니다. |
+| 순찰 NPC가 벽에 붙거나 한 걸음씩 끊김 | `Default Walk Speed`, 순찰 지점, 수직 높이와 A* 도달 가능성을 확인합니다. 0.2.0 JAR가 클라이언트와 서버 양쪽에 설치되었는지도 확인합니다. |
 | 잘못된 타겟을 공격함 | 엔티티 ID 필터, 요구 태그, 거부 태그, 같은 팩션 태그 규칙을 지우고 하나씩 다시 추가합니다. |
-| NPC가 전환 전 무기나 잘못된 아이템을 계속 들고 있음 | 클라이언트와 서버가 모두 0.2.1인지 확인한 뒤 NPC를 다시 저장합니다. 원거리 무기가 실제 TACZ 총기인지, 탄약/탄창 아이템을 오프핸드 재장전 소품으로 쓰지 않았는지도 확인합니다. |
-| 풀 확률을 바꾼 뒤 저장되지 않음 | 각 행의 확률 합계를 `100%`로 맞추거나 `Equalize`를 누릅니다. 한 행을 수정해도 다른 행은 자동 재분배되지 않습니다. |
-| 긴 방어구 풀의 아래 항목이 보이지 않음 | 방어구 풀 안에서 마우스 휠을 사용하거나 오른쪽 내부 스크롤바를 끕니다. 화면 전체가 잘리면 바닐라 `GUI Scale`도 조정합니다. |
+| NPC가 잘못된 아이템을 들고 있음 | 원거리 무기가 실제 TACZ 총기인지, 탄약/탄창 아이템을 오프핸드 재장전 소품으로 쓰지 않았는지 확인합니다. |
 | 경계 아이콘이 보이지 않음 | NPC별 `Alert Icons` 설정과 클라이언트 `cnpc_tacz_fire Config`의 마커 표시 설정을 확인합니다. |
 | GUI가 왜곡되어 보임 | 바닐라 비디오 설정에서 `GUI Scale`을 조정한 뒤 다시 확인합니다. |
 
@@ -88,14 +84,6 @@ Area/Route 순찰은 `Default Walk Speed`로 활성 A* 경로를 유지합니다
 
 `Gun Spec`은 TACZ 총기 원본 피해를 유지하고, `Custom`은 이 NPC의 관리 탄환에만 고정 피해를 적용합니다. 근접 `Weapon Spec`은 아이템 능력치를 사용하며, 근접 `Custom`은 피해·넉백·초당 공격 횟수를 각각 지정할 수 있습니다. 잘못된 결과가 나오면 한 번에 한 정책만 `Custom`으로 바꿔 확인하세요.
 
-0.2.1에서 `Better Combat Compatibility`가 켜져 있으면 공격 속도는 들고 있는 아이템의 유효 `ATTACK_SPEED`로 고정되고 `Overview`에는 `Weapon Spec (locked)`가 표시됩니다. 이전 빌드에서 무기 능력치가 적용되지 않았다면 클라이언트와 서버를 모두 0.2.1로 맞춘 뒤 다시 확인하세요.
-
-## 무기 전환과 근접 애니메이션 문제
-
-0.2.1은 서버가 확인한 주손 상태를 클라이언트에 동기화합니다. 근접 무기 장착 결과가 예상과 다르면 공격을 먼저 내지 않고 장착을 재시도하므로, 전환 순간 공격이 잠깐 늦어질 수 있습니다. 전환 전 총기나 근접 무기가 계속 보인다면 양쪽 JAR 버전이 같은지 먼저 확인하세요.
-
-Better Combat의 정확한 NPC 모션은 Better Combat과 Mob Player Animator가 모두 있을 때 재생됩니다. `Better Combat Compatibility`가 켜져 있어도 Mob Player Animator가 없거나 무기에 사용할 등록 모션이 없으면 바닐라 주손 스윙으로 전환됩니다.
-
 ## 타겟 규칙 문제
 
 엔티티 ID 목록이 비어 있으면 일반 동작을 허용합니다. 엔티티 ID 목록이 채워지면 허용 목록이 됩니다. 요구 태그와 거부 태그는 추가 필터입니다. 세 가지가 모두 켜져 있으면 타겟은 모두 통과해야 합니다.
@@ -104,6 +92,4 @@ Better Combat의 정확한 NPC 모션은 Better Combat과 Mob Player Animator가
 
 ## 성능과 로그
 
-0.2.0은 긴 `Detect Distance`를 위해 공간 인덱스를 사용하고 이벤트 기반 청각으로 반복 스캔을 줄였습니다. 그래도 큰 `Detect Distance`, 큰 `Max Distance`, 넓은 타겟 목록, 많은 관리 NPC는 후보 필터링과 전투 작업을 늘릴 수 있습니다. 초기 테스트는 작게 유지하세요.
-
-0.2.1은 임시 진단 출력을 제거하고 주손·무기 전환·애니메이션 상세 추적을 디버그 로그에서만 출력합니다. 문제를 재현할 때만 디버그 로그를 켜고, 확인 후에는 다시 낮춰 라이브 서버 로그를 읽기 쉽게 유지하세요.
+0.2.0은 긴 `Detect Distance`를 위해 공간 인덱스를 사용하고 이벤트 기반 청각으로 반복 스캔을 줄였습니다. 그래도 큰 `Detect Distance`, 큰 `Max Distance`, 넓은 타겟 목록, 많은 관리 NPC는 후보 필터링과 전투 작업을 늘릴 수 있습니다. 초기 테스트는 작게 유지하세요. 디버그 로그는 설정 중에는 유용하지만, 전투를 확인한 뒤에는 낮춰야 라이브 서버 로그를 읽기 쉽습니다.

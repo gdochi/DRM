@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: 개요
 section: overview
 status: Draft
-version: 0.2.1
+version: 0.2.0
 audience: 총기 NPC 제작자
 tags:
   - TACZ
@@ -22,8 +22,6 @@ CNPC TACZ Fire는 CustomNPCs NPC가 실제 TACZ 총기로 전투하도록 만드
 가장 중요한 스위치는 `TACZ Fire NPC Mode`입니다. 이 모드가 OFF이면 NPC는 일반 CustomNPCs 동작을 유지합니다. CustomNPCs NPC에 이 모드를 ON으로 저장하면 CNPC TACZ Fire가 해당 NPC의 총기 동작을 제어할 수 있습니다.
 
 0.2.0에서는 읽기 전용 `Overview`, 이벤트 기반 플레이어 소리 감지, `Close Detection`, 원거리·근접 피해 정책, 강제 재장전, 탄약 소진 시 근접/빈손 전환이 추가되었습니다. 기존 순찰은 GUI의 평시 이동 속도를 유지하면서 활성 A* 경로를 따라가고, 도달할 수 없는 지점은 제한된 횟수만 재시도합니다.
-
-0.2.1에서는 NPC별 `Better Combat Compatibility`, 들고 있는 무기에 등록된 Better Combat 공격·무기 포즈와 유효 공격 속도 기반 타이밍, 서버-클라이언트 주손 동기화가 추가되었습니다. 무기·스킨·방어구 풀의 확률은 각 행에서 직접 편집하며, 긴 방어구 풀은 내부 스크롤로 탐색할 수 있습니다.
 
 ## 핵심 규칙
 
@@ -44,7 +42,6 @@ NPC가 TACZ 탄약이나 탄창 아이템을 오프핸드에 들게 만들지 �
 | --- | --- |
 | 사격 동작 | `Reload`, `Supply Ammo`, `Max Distance`, `RPM Override`, 랜덤 RPM 범위, 명중률, 버스트 사격 |
 | 피해 정책 | TACZ 총기 기본 피해 또는 고정 원거리 피해, 근접 무기 능력치 또는 고정 피해·넉백·공격 속도 |
-| 근접 애니메이션 연동 | NPC별 Better Combat 호환, 등록된 무기 공격·포즈, 사용할 수 없을 때 바닐라 주손 스윙 |
 | 스탠스 | `Idle`, `Ranged`, `Melee`, `Auto`, `Auto Hidden`, 조건 1개를 쓰는 고급 규칙 |
 | 전술 이동 | 고정, 산개, 밀집, 전진, 후퇴, 거리 유지 사격, 이동 사격 |
 | 인식 | 감지 거리·각도, 근거리 감지, 전투 진입 지연, 마지막 위치 기억, 총성·재장전·블록 파괴·설치 소리 조사 |
@@ -69,8 +66,7 @@ CNPC TACZ Fire는 모든 CustomNPCs 원거리/근접 NPC를 전역으로 바꾸�
 | TACZ 1.1.8 이상 | 필수 총기 시스템입니다. |
 | CustomNPCs 1.20.1 이상 | 이 위키의 CustomNPCs NPC 제작 흐름에 필요합니다. |
 | playerAnimator 1.0.0 이상 | 애니메이션 지원이 있을 때 쓰는 선택형 클라이언트 의존성입니다. |
-| Better Combat | 등록된 근접 무기 공격·포즈와 무기 기반 공격 타이밍에 쓰는 선택형 연동 모드입니다. |
-| Mob Player Animator 1.0.0 이상 | Better Combat의 정확한 NPC 모션 재생에 쓰는 선택형 클라이언트 의존성입니다. 없으면 바닐라 스윙을 사용합니다. |
+| Better Combat | 가능할 때 근접 애니메이션 지원에 사용합니다. |
 | 지원되는 투척물 모드 | 투척물 데이터가 있을 때 선택형 수류탄 동작에 사용합니다. |
 
 ## 권장 제작 순서

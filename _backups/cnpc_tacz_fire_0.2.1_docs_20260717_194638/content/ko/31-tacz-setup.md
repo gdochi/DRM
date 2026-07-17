@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: 설치
 section: setup
 status: Draft
-version: 0.2.1
+version: 0.2.0
 audience: 서버 운영자
 tags:
   - setup
@@ -17,7 +17,7 @@ tags:
 
 ## 설치 체크리스트
 
-CNPC TACZ Fire는 Forge 1.20.1을 대상으로 합니다. 총기 NPC 제작에는 TACZ와 CustomNPCs가 필요합니다. playerAnimator, Better Combat, Mob Player Animator는 사용하는 애니메이션 연동에 따라 선택해서 설치합니다.
+CNPC TACZ Fire는 Forge 1.20.1을 대상으로 합니다. 총기 NPC 제작에는 TACZ와 CustomNPCs가 필요합니다. playerAnimator, Better Combat 같은 선택 의존 모드를 함께 쓰면 애니메이션과 근접 전투 연출을 더 다양하게 구성할 수 있습니다.
 
 | 구성 요소 | 이 위키 흐름에서 필요 여부 | 메모 |
 | --- | --- | --- |
@@ -26,8 +26,7 @@ CNPC TACZ Fire는 Forge 1.20.1을 대상으로 합니다. 총기 NPC 제작에�
 | CustomNPCs | NPC 설정에 필요 | `TACZ NPC Core`는 CustomNPCs NPC 엔티티만 편집합니다. |
 | CNPC TACZ Fire | 필요 | 일반적인 모드 서버 플레이에서는 클라이언트와 서버 양쪽에 넣습니다. |
 | playerAnimator | 선택 | 존재할 때 클라이언트 애니메이션 지원에 사용합니다. |
-| Better Combat | 선택 | 등록된 근접 무기 공격·포즈와 무기 기반 공격 타이밍을 사용할 때 설치합니다. 일반 멀티플레이에서는 서버와 클라이언트의 모드 구성을 맞추세요. |
-| Mob Player Animator | 선택 | Better Combat의 정확한 NPC 모션 재생에 필요한 클라이언트 모드입니다. 없으면 바닐라 주손 스윙으로 전환됩니다. |
+| Better Combat | 선택 | 가능할 때 근접 애니메이션 지원에 사용합니다. |
 
 ## NPC별 GUI 열기
 
@@ -63,15 +62,13 @@ CNPC TACZ Fire는 Forge 1.20.1을 대상으로 합니다. 총기 NPC 제작에�
 | `Senses` | `General`/`Advanced` 스탠스, 전술 이동, 대기 이동, 시각 인식, 근거리 감지, 플레이어 소리 감지 |
 | `Targets` | 엔티티 ID, 필터, 요구/거부 태그, 프로필 가져오기/내보내기 |
 | `Ammo` | 재장전 방식, 탄약 재고·재생, 재장전 중 이동, 탄약 소진 전환 |
-| `Gun` | 플레이어 TACZ 총기 선택, 원거리 피해 정책, 인라인 확률을 쓰는 원거리 무기 풀, NPC 미리보기 |
-| `Melee` | 비 TACZ 근접 아이템, 피해·넉백·공격 속도 정책, `Better Combat Compatibility`, 인라인 확률을 쓰는 근접 무기 풀, NPC 미리보기 |
-| `Armor` | 실제 머리, 몸통, 다리, 발 슬롯을 쓰는 스크롤 가능한 방어구 세트 풀과 NPC 미리보기 |
+| `Gun` | 플레이어 TACZ 총기 선택, 원거리 피해 정책, 원거리 무기 풀, NPC 미리보기 |
+| `Melee` | 비 TACZ 근접 아이템, 피해·넉백·공격 속도 정책, 근접 무기 풀, NPC 미리보기 |
+| `Armor` | 실제 머리, 몸통, 다리, 발 슬롯을 쓰는 방어구 세트 풀과 NPC 미리보기 |
 | `Grenade` | 지원되는 투척물 데이터가 있을 때 선택형 수류탄 투척 |
 | `Visual & FX` | Steve/Alex 스킨 풀, 경계 아이콘, 감지/사격 사운드와 CustomNPCs say 문구 |
 
 `Overview`는 읽기 전용입니다. 값을 바꾸려면 해당 카테고리로 이동하세요. 긴 `Senses` 페이지에서는 `Quick View`로 하위 구역을 바로 선택할 수 있고, `?` 도움말은 현재 화면 밖의 컨트롤까지 자동 스크롤합니다.
-
-0.2.1의 무기·스킨·방어구 풀 확률은 각 항목 행에서 직접 수정합니다. 한 항목을 수정해도 다른 항목은 자동으로 바뀌지 않으므로 합계를 `100%`로 맞추거나 `Equalize`를 눌러 명시적으로 균등 분배하세요. 항목이 하나뿐이면 확률은 `100%`로 유지됩니다.
 
 ## 설정 파일
 

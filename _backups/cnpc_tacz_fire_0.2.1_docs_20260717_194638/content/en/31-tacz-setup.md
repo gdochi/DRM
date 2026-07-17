@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Setup
 section: setup
 status: Draft
-version: 0.2.1
+version: 0.2.0
 audience: Server operators
 tags:
   - setup
@@ -17,7 +17,7 @@ tags:
 
 ## Install checklist
 
-CNPC TACZ Fire targets Forge 1.20.1. Building firearm NPCs requires TACZ and CustomNPCs. Install optional playerAnimator, Better Combat, and Mob Player Animator only for the animation integrations you use.
+CNPC TACZ Fire targets Forge 1.20.1. Building firearm NPCs requires TACZ and CustomNPCs. Optional dependencies such as playerAnimator and Better Combat can make animation and melee behavior more varied.
 
 | Component | Required for this wiki workflow | Notes |
 | --- | --- | --- |
@@ -26,8 +26,7 @@ CNPC TACZ Fire targets Forge 1.20.1. Building firearm NPCs requires TACZ and Cus
 | CustomNPCs | Yes for NPC setup | The `TACZ NPC Core` item only edits CustomNPCs NPC entities. |
 | CNPC TACZ Fire | Yes | Add it on both sides for normal modded server play. |
 | playerAnimator | Optional | Client-side animation support when present. |
-| Better Combat | Optional | Install it for registered melee weapon attacks, poses, and weapon-based attack timing. Keep the server and client mod sets aligned in normal multiplayer. |
-| Mob Player Animator | Optional | Client mod required for exact Better Combat NPC motion playback. Without it, the NPC falls back to a vanilla main-hand swing. |
+| Better Combat | Optional | Used for melee animation support when available. |
 
 ## Open the per-NPC GUI
 
@@ -63,15 +62,13 @@ After that works, add finite ammo, random pools, advanced target filters, moveme
 | `Senses` | `General`/`Advanced` stance, tactical movement, idle movement, visual awareness, close detection, and player sound detection. |
 | `Targets` | entity IDs, filters, required/rejected tags, import/export profiles. |
 | `Ammo` | reload type, ammo stock and regeneration, reload movement, and empty-ammo fallback. |
-| `Gun` | selecting TACZ guns, ranged damage policy, ranged weapon pools with inline chances, and NPC preview. |
-| `Melee` | selecting non-TACZ items, damage/knockback/attack-speed policies, `Better Combat Compatibility`, melee pools with inline chances, and NPC preview. |
-| `Armor` | scrollable armor set pools using real head, chest, legs, and feet slots, with NPC preview. |
+| `Gun` | selecting TACZ guns, ranged damage policy, ranged weapon pools, and NPC preview. |
+| `Melee` | selecting non-TACZ items, damage/knockback/attack-speed policies, melee pools, and NPC preview. |
+| `Armor` | armor set pools using real head, chest, legs, and feet slots, with NPC preview. |
 | `Grenade` | optional grenade throws when supported throwable data is available. |
 | `Visual & FX` | Steve/Alex skin pools, alert icons, detected/shoot sounds, and CustomNPCs say text. |
 
 `Overview` is read-only; move to the relevant category to edit a value. Long `Senses` pages provide `Quick View` navigation, and the `?` help tour can auto-scroll to controls outside the current viewport.
-
-Version 0.2.1 edits weapon, skin, and armor pool chances directly in each entry row. Changing one entry does not rebalance the others, so make the total `100%` or press `Equalize` to distribute it explicitly. A single entry remains fixed at `100%`.
 
 ## Config file
 

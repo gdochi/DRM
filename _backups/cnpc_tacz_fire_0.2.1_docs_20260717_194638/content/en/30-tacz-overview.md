@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Overview
 section: overview
 status: Draft
-version: 0.2.1
+version: 0.2.0
 audience: Firearm NPC creators
 tags:
   - TACZ
@@ -22,8 +22,6 @@ CNPC TACZ Fire is a Forge 1.20.1 addon for building CustomNPCs NPCs that fight w
 The important switch is `TACZ Fire NPC Mode`. When that mode is OFF, the NPC keeps normal CustomNPCs behavior. When it is ON and saved for a CustomNPCs NPC, CNPC TACZ Fire can take over the firearm behavior for that NPC.
 
 Version 0.2.0 adds the read-only `Overview`, event-based player sound detection, `Close Detection`, ranged and melee damage policies, forced reload modes, and melee or unarmed fallback after ammo exhaustion. Patrols keep the GUI-configured idle speed while following an active A* path and retry unreachable points only within a bounded limit.
-
-Version 0.2.1 adds per-NPC `Better Combat Compatibility`, Better Combat attacks and weapon poses registered for the held item, effective attack-speed timing, and authoritative main-hand synchronization between server and client. Weapon, skin, and armor pool chances are edited directly in each row, and long armor pools use an internal scrollbar.
 
 ## Core rules
 
@@ -44,7 +42,6 @@ Do not make NPCs hold TACZ ammo or magazine items in the offhand. Reloads are re
 | --- | --- |
 | Fire behavior | `Reload`, `Supply Ammo`, `Max Distance`, `RPM Override`, random RPM range, accuracy, burst fire |
 | Damage policies | native TACZ or fixed ranged damage; weapon-based or fixed melee damage, knockback, and attack speed |
-| Melee animation integration | per-NPC Better Combat compatibility, registered weapon attacks and poses, and vanilla main-hand swing fallback |
 | Stance behavior | `Idle`, `Ranged`, `Melee`, `Auto`, `Auto Hidden`, plus one advanced conditional rule |
 | Tactical movement | hold, spread, compact, advance, retreat, keep-distance fire, move-while-firing |
 | Awareness | detection distance and angle, close detection, combat delay, last-seen memory, and investigation of gunshot, reload, block-break, and block-place events |
@@ -69,8 +66,7 @@ It also does not require creators to build fake gun animations. TACZ and optiona
 | TACZ 1.1.8 or newer | Required firearm system. |
 | CustomNPCs 1.20.1 or newer | Needed for the CustomNPCs NPC workflow described in this wiki. |
 | playerAnimator 1.0.0 or newer | Optional client-side dependency when animation support is present. |
-| Better Combat | Optional integration for registered melee weapon attacks, poses, and weapon-based attack timing. |
-| Mob Player Animator 1.0.0 or newer | Optional client dependency for exact Better Combat NPC motion playback. Without it, the NPC uses a vanilla swing. |
+| Better Combat | Optional melee animation support when available. |
 | Supported throwable mods | Optional grenade behavior, only when matching throwable data is available. |
 
 ## Recommended authoring order

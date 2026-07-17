@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Ammo
 section: ammo
 status: Draft
-version: 0.2.1
+version: 0.2.0
 audience: Firearm NPC creators
 tags:
   - reload

@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Combat AI
 section: combat-ai
 status: Draft
-version: 0.2.1
+version: 0.2.0
 audience: Firearm NPC creators
 tags:
   - weapon
@@ -54,14 +54,6 @@ Version 0.2.0 lets each NPC choose how firearm and melee damage is calculated.
 
 CustomNPCs' default melee damage does not override these managed melee policies. Confirm weapon-native behavior first, then add custom values.
 
-## Better Combat compatibility
-
-Version 0.2.1 adds a per-NPC `Better Combat Compatibility` toggle under `Melee`. It defaults to ON when Better Combat is installed and cannot be used when Better Combat is absent.
-
-When enabled, the NPC resolves the Better Combat attack set and weapon pose registered for the held item. Combo order, attack conditions, two-handed or offhand conditions, and item transforms follow the registered weapon data. Attack intervals and damage timing use the held item's effective `ATTACK_SPEED`. The melee attack-speed policy is shown as `Weapon Spec (locked)`, and a custom attack speed does not apply until this compatibility toggle is disabled.
-
-Exact Better Combat NPC motion playback on the client requires both Better Combat and Mob Player Animator. If Mob Player Animator is absent or the registered weapon motion cannot be played, the addon does not create an imitation motion; it uses a vanilla main-hand swing.
-
 ## Tactical movement
 
 `Tactical Move` controls how the addon steers ranged combat movement:
@@ -98,11 +90,9 @@ Idle movement has four modes: `Stationary`, `Area Patrol`, `Return Only`, and `R
 
 `Gun` reads TACZ gun stacks from the player's inventory. The selected gun can be saved directly, or multiple guns can be added to a random weapon pool. Pool rolls can happen on CustomNPCs init events such as respawn, chunk-load initialization, clone restore, or soul-stone restore.
 
-`Melee` reads non-TACZ items from the player's inventory. Better Combat integration does not save one replacement animation ID. At attack time, it resolves the attack set and pose actually registered for the held weapon. Empty-hand melee attack support is also available for melee-capable setups.
+`Melee` reads non-TACZ items from the player's inventory. If Better Combat support is available, detected attack animation IDs can be used for the selected melee item. Empty-hand melee attack support is also available for melee-capable setups.
 
 `Visual & FX` stores each random skin as a CustomNPCs texture path plus an explicit `Steve` or `Alex` model. It does not alter the supplied texture. `Armor` stores full sets in real head, chest, legs, and feet slots. The Gun, Melee, and Armor previews show the selected model, skin, armor, and weapon together.
-
-Version 0.2.1 shows chance fields directly on weapon, skin, and armor pool rows. Editing one chance does not redistribute the other entries, and a multi-entry pool must total `100%` before saving. `Equalize` redistributes entries only when pressed, while a one-entry pool stays at `100%`. The armor pool shows up to five rows at once; use the mouse wheel or its internal scrollbar for the remaining entries.
 
 ## Balancing order
 
