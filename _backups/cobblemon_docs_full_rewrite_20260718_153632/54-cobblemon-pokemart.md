@@ -1,8 +1,8 @@
 ---
-title: 포켓마트
+title: PokéMart Editor 기능 가이드
 slug: cobblemon-pokemart
 order: 540
-description: PokéMart Editor의 역할, 통화, 조건과 GUI 설정입니다.
+description: PokéMart Editor의 역할별 카테고리, 통화, 상호작용 조건, 저장·적용·GUI 편집 흐름을 설명합니다.
 product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
@@ -18,22 +18,6 @@ tags:
 ## 제작 에디터와 플레이어 화면
 
 `PokéMart Editor`는 상점 문서를 만드는 제작자 화면입니다. `PokeMartRuntimeScreen`은 저장한 문서를 NPC에 적용한 뒤 플레이어가 보는 런타임 화면입니다. 에디터의 입력칸 위치는 플레이어 화면 배치와 관계없으며, 플레이어 배치는 `Runtime GUI`의 GUI JSON이 결정합니다.
-
-PokéMart 문서는 현재 스키마 7입니다. 문서는 상품과 정책을 저장하고, 실제 재고·활성 경매·입찰금·수령 대기 데이터는 월드 PersistentState가 별도로 저장합니다. JSON 파일만 백업해서는 운영 중 경매 상태까지 복구되지 않습니다.
-
-## 상단 작업
-
-| 작업 | 기능 |
-| --- | --- |
-| `Editors` | DRM 에디터 선택 또는 NPC 적용 흐름으로 돌아가기 |
-| `Create New` | 기본 역할과 빈 목록으로 새 문서 시작 |
-| `Load` | `cobblemon/pokemarts/`에서 기존 문서 불러오기 |
-| `Save` | 현재 경로에 저장 |
-| `Save As` | 새 상대 경로로 저장 |
-| `Reset` | 기본 PokéMart 값으로 되돌리기 |
-| `Close` | 저장·적용 없이 화면 닫기 |
-
-기본 문서와 샘플은 `Save As`로 `custom/` 아래에 복사해 사용하세요.
 
 ## NPC 역할과 활성 카테고리
 
@@ -58,18 +42,6 @@ PokéMart 문서는 현재 스키마 7입니다. 문서는 상품과 정책을 �
 | GUI JSON Path | `config/dochi_rpg_maker/gui/` 기준의 런타임 화면 파일입니다. |
 | Interaction Conditions | 플레이어가 화면을 열기 전에 서버가 검사하는 DRM 공용 조건 그룹입니다. |
 
-문서 제한:
-
-| 항목 | 제한 |
-| --- | ---: |
-| Mart ID / House ID | 최대 64자 토큰 |
-| Display Name | 최대 96자 |
-| GUI Path | 정규화된 상대 경로 |
-| Sales Products | 최대 256개 |
-| Trade Offers | 최대 128개 |
-| Item Currency NBT | 최대 32,768자 |
-| 금액 | 0 이상의 임의 정밀도 정수, 내부 안전 상한 적용 |
-
 ## 통화 공급자
 
 | Provider | Currency ID | 서버 동작 |
@@ -79,8 +51,6 @@ PokéMart 문서는 현재 스키마 7입니다. 문서는 상품과 정책을 �
 | `item` | 예: `minecraft:emerald` | 인벤토리 아이템을 결제 수단으로 사용하며 선택형 Item NBT를 함께 비교합니다. |
 
 에디터의 결제 선택 창은 DRM 화폐와 현재 인벤토리 아이템을 검색할 수 있습니다. 아이템 통화의 NBT를 지정하면 같은 아이템 ID라도 NBT가 일치하지 않는 스택은 결제에 사용되지 않습니다.
-
-`cobbledollars` 공급자를 선택했는데 CobbleDollars가 설치되지 않았거나 API를 사용할 수 없으면 서버는 구매·입찰을 진행하지 않습니다. 통화 공급자 변경은 기존 경매 매물에 이미 저장된 통화 정보까지 자동 변환하지 않으므로 운영 중인 House의 통화를 바꾸지 않는 편이 안전합니다.
 
 ## 역할 변경과 Runtime GUI 경로
 
@@ -102,23 +72,6 @@ Auction → pokemart_auction_gui.json
 
 조건은 `AND` 또는 `OR`로 묶이며 태그, 아이템, 발전 과제 등 DRM이 등록한 공용 조건을 사용합니다. 상품별 조건이 아니라 PokéMart 문서 전체의 입장 조건입니다. VIP 상품만 잠그고 일반 상품은 공개하는 구조가 필요하면 역할별 NPC나 별도 상점 문서를 분리하세요.
 
-상호작용 조건은 화면을 열 때만 검사하고 끝나지 않습니다. 플레이어가 화면을 열어 둔 뒤 구매·교환·등록·입찰·취소·수령 요청을 보낼 때마다 서버가 현재 NPC 문서와 조건을 다시 확인합니다. 화면을 연 뒤 태그나 아이템 조건을 잃으면 다음 행동이 거부될 수 있습니다.
-
-## 런타임 세션과 서버 검증
-
-플레이어가 PokéMart NPC를 빈손으로 우클릭하면 서버가 NPC와 플레이어를 연결한 임시 화면 세션을 만듭니다. 이후 클라이언트 버튼은 NPC 엔티티 ID, 고유 요청 ID와 행동 데이터를 서버에 보냅니다.
-
-서버가 매 행동에서 확인하는 항목:
-
-- 현재 플레이어에게 허가된 NPC 세션인지
-- NPC가 아직 존재하고 같은 문서를 가지고 있는지
-- Interaction Conditions를 여전히 만족하는지
-- 문서 Role이 요청 행동과 맞는지
-- 상품·교환·매물 ID가 현재 서버 상태에 존재하는지
-- 같은 요청 ID가 중복 처리되지 않았는지
-
-`Refresh`는 최신 목록과 재고를 다시 받아오고 `Close`는 서버의 화면 추적을 해제합니다. 네트워크 재전송이나 더블 클릭으로 같은 요청이 들어와도 최근 요청 ID를 기억해 중복 결제와 중복 지급을 막습니다.
-
 ## 저장과 NPC 적용
 
 1. `Save As`에 `towns/pewter_sales.json` 같은 상대 경로를 입력합니다.
@@ -128,12 +81,3 @@ Auction → pokemart_auction_gui.json
 5. 문서를 수정한 뒤에는 다시 적용합니다. 서버 JSON과 NPC에 복사된 문서는 자동 동기화되지 않습니다.
 
 `해제`는 대상 NPC의 PokéMart 바인딩을 제거합니다. 저장한 서버 JSON과 서버의 기존 경매·정산 데이터까지 삭제하는 기능은 아닙니다.
-
-## 역할 변경 전 점검
-
-1. 현재 Role의 판매·교환·경매 목록을 별도 사용자 파일로 저장합니다.
-2. 새 Role에 맞는 Currency와 GUI Path를 설정합니다.
-3. GUI Maker에서 역할에 필요한 Singleton 구성 요소가 있는지 확인합니다.
-4. NPC에 다시 Apply합니다.
-5. 기존 Role의 재고·경매 PersistentState가 자동 삭제되지 않는다는 점을 운영 기록에 남깁니다.
-6. 새 플레이어와 기존 이용 플레이어로 Interaction Conditions를 다시 시험합니다.

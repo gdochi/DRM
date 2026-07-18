@@ -1,8 +1,8 @@
 ---
-title: 설치
+title: 설치와 첫 NPC 만들기
 slug: cobblemon-editor-setup
 order: 510
-description: DRM Cobblemon Editor 설치와 첫 NPC 적용 방법입니다.
+description: drm_cobblemon_editor 설치 확인, 첫 실행 폴더, 첫 트레이너 적용 절차입니다.
 product: drm-cobblemon-editor
 category: 설치
 section: setup
@@ -17,7 +17,7 @@ tags:
 
 ## 설치 체크리스트
 
-`DRM Cobblemon Editor`는 DRM Core 위에서 동작하는 Fabric 애드온입니다. 다음 JAR을 1.21.1 Fabric 환경에 설치합니다.
+`drm_cobblemon_editor`는 DRM Core 위에서 동작하는 Fabric 애드온입니다. 다음 JAR을 1.21.1 Fabric 환경에 설치합니다.
 
 | 모드 | 역할 |
 | --- | --- |
@@ -25,7 +25,7 @@ tags:
 | DRM 0.1.3+ | 공용 에디터 선택 UI, 서버 JSON 저장소, GUI Maker, 적용 흐름 |
 | Cobblemon 1.7.3 | 포켓몬 데이터, 플레이어 파티, 실제 전투 런타임 |
 | CustomNPCs Fabric 1.0.0 | 트레이너·포켓몬·상점 데이터를 적용할 NPC |
-| `DRM Cobblemon Editor` | Cobblemon용 DRM 에디터와 런타임 연결 |
+| `drm_cobblemon_editor` | Cobblemon용 DRM 에디터와 런타임 연결 |
 | CobbleDollars | 선택형 PokéMart 통화 공급자 |
 
 서버에서 사용할 때는 서버와 모든 접속 클라이언트에 동일한 모드 조합을 설치하세요. 이 애드온에는 클라이언트 에디터·렌더러와 서버 전투·보상·상점 로직이 모두 있습니다.

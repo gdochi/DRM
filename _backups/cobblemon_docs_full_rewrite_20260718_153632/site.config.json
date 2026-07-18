@@ -1,7 +1,7 @@
 {
   "title": "DRM",
   "brand": "DRM",
-  "description": "Documentation hub for DRM Core, DRM Cobblemon Editor, DRM Mob Editor, and CNPC TACZ Fire.",
+  "description": "Documentation hub for DRM Core, drm_cobblemon_editor, DRM Mob Editor, and CNPC TACZ Fire.",
   "defaultLocale": "en",
   "fallbackLocale": "en",
   "repository": "",
@@ -128,27 +128,27 @@
     "en": {
       "label": "English",
       "shortLabel": "EN",
-      "description": "A structured documentation hub for DRM Core, DRM Cobblemon Editor, DRM Mob Editor, and CNPC TACZ Fire."
+      "description": "A structured documentation hub for DRM Core, drm_cobblemon_editor, DRM Mob Editor, and CNPC TACZ Fire."
     },
     "ko": {
       "label": "한국어",
       "shortLabel": "KO",
-      "description": "DRM Core, DRM Cobblemon Editor, DRM Mob Editor, CNPC TACZ Fire 문서를 한국어로 정리한 문서 허브입니다."
+      "description": "DRM Core, drm_cobblemon_editor, DRM Mob Editor, CNPC TACZ Fire 문서를 한국어로 정리한 문서 허브입니다."
     },
     "ru": {
       "label": "Русский",
       "shortLabel": "RU",
-      "description": "Структурированный центр документации для DRM Core, DRM Cobblemon Editor, DRM Mob Editor и CNPC TACZ Fire."
+      "description": "Структурированный центр документации для DRM Core, drm_cobblemon_editor, DRM Mob Editor и CNPC TACZ Fire."
     },
     "zh": {
       "label": "简体中文",
       "shortLabel": "ZH",
-      "description": "DRM Core、DRM Cobblemon Editor、DRM Mob Editor 和 CNPC TACZ Fire 的结构化文档中心。"
+      "description": "DRM Core、drm_cobblemon_editor、DRM Mob Editor 和 CNPC TACZ Fire 的结构化文档中心。"
     },
     "ja": {
       "label": "日本語",
       "shortLabel": "JA",
-      "description": "DRM Core、DRM Cobblemon Editor、DRM Mob Editor、CNPC TACZ Fire の構造化されたドキュメントハブです。"
+      "description": "DRM Core、drm_cobblemon_editor、DRM Mob Editor、CNPC TACZ Fire の構造化されたドキュメントハブです。"
     }
   },
   "products": {

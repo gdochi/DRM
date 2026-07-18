@@ -1,8 +1,8 @@
 ---
-title: DRM Cobblemon Editor
+title: drm_cobblemon_editor 개요
 slug: cobblemon-editor-overview
 order: 500
-description: DRM Cobblemon Editor의 기능과 지원 환경입니다.
+description: drm_cobblemon_editor의 기능 범위, 지원 환경, 에디터와 런타임의 역할을 정리합니다.
 product: drm-cobblemon-editor
 category: 개요
 section: overview
@@ -15,14 +15,14 @@ tags:
   - overview
 ---
 
-## 기능
+## drm_cobblemon_editor란?
 
-`DRM Cobblemon Editor`는 Fabric 1.21.1용 DRM 애드온입니다. CustomNPCs NPC에 Cobblemon 트레이너 또는 한 마리의 포켓몬 전투 데이터를 적용하고, 전투 직전 연출과 포켓몬 판매·교환·경매 화면까지 같은 DRM 제작 흐름에서 관리합니다.
+`drm_cobblemon_editor`는 Fabric 1.21.1용 DRM 애드온입니다. CustomNPCs NPC에 Cobblemon 트레이너 또는 한 마리의 포켓몬 전투 데이터를 적용하고, 전투 직전 연출과 포켓몬 판매·교환·경매 화면까지 같은 DRM 제작 흐름에서 관리합니다.
 
 이 모드는 Cobblemon 전투를 별도 전투 엔진으로 흉내 내지 않습니다. 플레이어의 실제 Cobblemon 파티와 Cobblemon 1.7.3 기본 배틀 시스템을 사용합니다. 제작자는 JSON을 직접 외우기보다 DRM의 에디터 선택 UI, `Save As`, NPC 적용 화면을 통해 콘텐츠를 만드는 것이 기본입니다.
 
-:::note 이름과 내부 ID
-문서와 사용자 표시 이름은 `DRM Cobblemon Editor`입니다. 배포 파일 이름은 `drm_cobblemon_editor-<version>.jar` 형식을 사용할 수 있으며, 기존 데이터 호환성을 위해 내부 모드 ID와 리소스 네임스페이스는 `cobble_npc`를 유지합니다. `cobble_npc:*` ID를 임의로 `drm_cobblemon_editor:*`로 바꾸지 마세요.
+:::note 표시명과 내부 ID
+모드 목록과 JAR에는 `drm_cobblemon_editor`가 표시됩니다. 기존 데이터 호환성을 위해 내부 모드 ID와 리소스 네임스페이스는 `cobble_npc`를 유지합니다. `cobble_npc:*` ID를 임의로 `drm_cobblemon_editor:*`로 바꾸지 마세요.
 :::
 
 ## 지원 환경
@@ -38,7 +38,7 @@ tags:
 | CustomNPCs | 필수 | Fabric 1.0.0 |
 | CobbleDollars | 선택 | PokéMart의 `cobbledollars` 통화 공급자를 사용할 때 필요 |
 
-현재 배포 대상은 Fabric 1.21.1입니다. Forge 또는 다른 Minecraft 버전용 JAR과 섞어 설치하지 마세요. 일반 멀티플레이에서는 서버와 접속 클라이언트 양쪽에 같은 버전의 DRM, Cobblemon, CustomNPCs, `DRM Cobblemon Editor`를 설치합니다.
+현재 배포 대상은 Fabric 1.21.1입니다. Forge 또는 다른 Minecraft 버전용 JAR과 섞어 설치하지 마세요. 일반 멀티플레이에서는 서버와 접속 클라이언트 양쪽에 같은 버전의 DRM, Cobblemon, CustomNPCs, `drm_cobblemon_editor`를 설치합니다.
 
 ## 제공하는 제작 도구
 
@@ -50,75 +50,6 @@ tags:
 | `Cobblemon NPC Appearance` | CustomNPCs NPC의 포켓몬 외형 | 월드에 보이는 NPC 모델 |
 
 앞의 세 도구는 DRM 에디터 선택 UI에 `Add-on` 에디터로 등록됩니다. `Cobblemon NPC Appearance`는 NPC를 대상으로 하는 도구이므로 대상 CustomNPCs NPC가 있어야 합니다.
-
-## 기능 범위
-
-### Trainer
-
-- Singles, Doubles, Triples
-- 라운드당 최대 6마리, 문서당 최대 16라운드
-- 포켓몬 종, 폼, Aspects, Shiny, 레벨, 성격, 특성, 기술, 볼, 지닌 도구
-- AI Skill 0–5
-- Interaction, Vision, Radius 조우
-- 감지 마커와 사운드, 반응 대기, 추적, 홈 복귀
-- 전투 전 위치 정렬과 트레이너 NPC 잠금
-- Fixed, Continue, Loop 재대전 진행
-- 플레이어별 또는 NPC 공용 쿨다운
-- 라운드별 조건과 승리 보상
-
-### Pokemon Itself
-
-- 한 마리의 지정 포켓몬과 표준 Cobblemon PVE 전투
-- Trainer 슬롯과 같은 포켓몬 세부 데이터
-- CustomNPCs NPC의 포켓몬 외형, 크기, 포즈, 애니메이션, Shining
-- 전투 중 임시 포켓몬 엔티티 생성과 NPC 숨김·복구
-
-### Battle Presentation Maker
-
-- Label, Texture, Color 최대 64요소
-- 1–600틱 타임라인
-- 위치, 크기, 회전, Alpha, Fade, Easing
-- Player/Opponent 모델과 사람형 관절 Pose
-- World Background와 Stage Image
-- Intro Audio와 Battle Audio
-- 플레이어 이름과 상대 이름 치환
-- 선택형 스킵과 서버 최종 검증 연동
-
-### PokéMart
-
-- Sales 포켓몬 상품 최대 256개
-- Trade 교환 제안 최대 128개
-- Auction 등록, 입찰, Buyout, 세금, 수수료, Claim
-- CobbleDollars, DRM Currency, Item 통화
-- NPC별 재고와 월드 시간 기반 재입고
-- DRM 공용 상호작용 조건
-- DRM GUI Maker로 역할별 Runtime GUI 편집
-
-## 저장 데이터와 런타임 데이터
-
-| 데이터 | 저장 위치 | 수정·초기화 특성 |
-| --- | --- | --- |
-| Trainer/Pokemon/Presentation/PokéMart 설계 | `config/dochi_rpg_maker/` JSON | 에디터 Save/Save As로 변경 |
-| NPC에 적용된 전투·상점 바인딩 | CustomNPCs NPC PersistentData | JSON 저장 후 NPC에 다시 Apply 필요 |
-| 트레이너 클리어 수·보상 라운드 | 플레이어 DRM PersistentData, NPC UUID별 | 같은 NPC에 재적용해도 유지 |
-| 트레이너 쿨다운 | CustomNPCs NPC tempdata | 서버 재시작 후 사라질 수 있음 |
-| Sales/Trade 재고 | 월드 PokéMart PersistentState | JSON Initial Stock 변경만으로 초기화되지 않음 |
-| Auction 매물·입찰금·Claim | 월드 PokéMart PersistentState | 서버 재시작 후 유지, 월드 백업 필요 |
-
-JSON은 콘텐츠 설계 파일이고 진행도·재고·경매는 운영 상태입니다. 서버를 백업할 때 `config/dochi_rpg_maker`와 월드 저장을 함께 보관하세요.
-
-## 서버 판정
-
-다음 값은 클라이언트 화면에 보이더라도 서버가 최종 판정합니다.
-
-- 전투 가능 여부와 현재 라운드
-- 조건과 쿨다운
-- 상대 파티 생성과 Cobblemon 배틀 시작
-- 승패·도주 결과와 보상
-- PokéMart 결제·재고·교환 소유권
-- Auction 입찰·정산·Claim
-
-클라이언트가 오래된 화면이나 중복 요청을 보내도 서버는 현재 NPC 문서, 세션, 요청 ID, 매물 Revision을 다시 확인합니다.
 
 ## 트레이너와 포켓몬 자신 전투
 
