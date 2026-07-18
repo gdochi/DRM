@@ -65,8 +65,6 @@
         openDocs: "문서 열기",
         curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
-        standaloneMods: "단독 모드",
-        addons: "애드온",
         openMenu: "사이드바 열기",
         closeMenu: "사이드바 닫기",
         backToProducts: "DRM WIKI",
@@ -93,8 +91,6 @@
         openDocs: "Open docs",
         curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
-        standaloneMods: "Standalone Mods",
-        addons: "Add-ons",
         openMenu: "Open sidebar",
         closeMenu: "Close sidebar",
         backToProducts: "DRM WIKI",
@@ -121,8 +117,6 @@
         openDocs: "Открыть документацию",
         curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
-        standaloneMods: "Самостоятельные моды",
-        addons: "Дополнения",
         openMenu: "Открыть боковую панель",
         closeMenu: "Закрыть боковую панель",
         backToProducts: "DRM WIKI",
@@ -149,8 +143,6 @@
         openDocs: "打开文档",
         curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
-        standaloneMods: "独立模组",
-        addons: "附加模组",
         openMenu: "打开侧边栏",
         closeMenu: "关闭侧边栏",
         backToProducts: "DRM WIKI",
@@ -177,8 +169,6 @@
         openDocs: "ドキュメントを開く",
         curseForge: "CurseForge",
         homeTitle: "DRM WIKI",
-        standaloneMods: "単独MOD",
-        addons: "アドオン",
         openMenu: "サイドバーを開く",
         closeMenu: "サイドバーを閉じる",
         backToProducts: "DRM WIKI",
@@ -618,13 +608,14 @@
   function renderHome() {
     const entries = getWikiMods();
 
-    const renderCards = (groupEntries) => groupEntries.map((meta) => {
+    const cards = entries.map((meta) => {
       const docsHref = modDocsLink(meta);
       const curseForgeHref = meta.curseForgeUrl || meta.url || meta.href || "";
       const body = `
           ${renderModLogo(meta)}
           <div class="track-body">
-            <h3>${escapeHtml(modText(meta, "label") || meta.id || "")}</h3>
+            <h2>${escapeHtml(modText(meta, "label") || meta.id || "")}</h2>
+            <p>${escapeHtml(modText(meta, "description"))}</p>
           </div>
       `;
       const actions = `
@@ -637,29 +628,13 @@
       return `<article class="track-card">${body}${actions}</article>`;
     }).join("");
 
-    const groups = [
-      { id: "standalone", title: t("standaloneMods") },
-      { id: "addon", title: t("addons") }
-    ];
-    const sections = groups.map((group) => {
-      const groupEntries = entries.filter((meta) => (meta.type || "standalone") === group.id);
-      if (!groupEntries.length) return "";
-      const headingId = `home-${group.id}-title`;
-      return `
-        <section class="track-section" aria-labelledby="${headingId}">
-          <h2 id="${headingId}" class="track-section-title">${escapeHtml(group.title)}</h2>
-          <div class="track-list">${renderCards(groupEntries)}</div>
-        </section>
-      `;
-    }).join("");
-
     return `
       <section class="home-shell">
         <header class="home-hero">
           <h1>${t("homeTitle")}</h1>
           ${renderHomeImage()}
         </header>
-        <div class="track-sections">${sections}</div>
+        <div class="track-list">${cards}</div>
       </section>
     `;
   }

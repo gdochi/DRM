@@ -40,17 +40,16 @@
       "logoAlt_ru": "Логотип DRM",
       "logoAlt_zh": "DRM 标志",
       "logoAlt_ja": "DRM ロゴ",
-      "type": "standalone",
       "product": "core",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker"
     },
     {
       "id": "drm-cobblemon-editor",
-      "label": "DRM Cobblemon Editor",
-      "label_ko": "DRM Cobblemon Editor",
-      "label_ru": "DRM Cobblemon Editor",
-      "label_zh": "DRM Cobblemon Editor",
-      "label_ja": "DRM Cobblemon Editor",
+      "label": "drm_cobblemon_editor",
+      "label_ko": "drm_cobblemon_editor",
+      "label_ru": "drm_cobblemon_editor",
+      "label_zh": "drm_cobblemon_editor",
+      "label_ja": "drm_cobblemon_editor",
       "shortLabel": "Cobblemon Editor",
       "shortLabel_ko": "Cobblemon Editor",
       "shortLabel_ru": "Cobblemon Editor",
@@ -62,12 +61,11 @@
       "description_zh": "用于制作基于 CustomNPCs 的 Cobblemon 训练师、战斗演出和宝可梦商店的 DRM 附加模组。",
       "description_ja": "CustomNPCsベースのCobblemonトレーナー、バトル演出、ポケモンショップを制作するDRMアドオンです。",
       "logo": "assets/mod-logos/drm_cobblemon_editor.png",
-      "logoAlt": "DRM Cobblemon Editor logo",
-      "logoAlt_ko": "DRM Cobblemon Editor 로고",
-      "logoAlt_ru": "Логотип DRM Cobblemon Editor",
-      "logoAlt_zh": "DRM Cobblemon Editor 标志",
-      "logoAlt_ja": "DRM Cobblemon Editor ロゴ",
-      "type": "addon",
+      "logoAlt": "drm_cobblemon_editor logo",
+      "logoAlt_ko": "drm_cobblemon_editor 로고",
+      "logoAlt_ru": "Логотип drm_cobblemon_editor",
+      "logoAlt_zh": "drm_cobblemon_editor 标志",
+      "logoAlt_ja": "drm_cobblemon_editor ロゴ",
       "product": "drm-cobblemon-editor"
     },
     {
@@ -93,7 +91,6 @@
       "logoAlt_ru": "Логотип CNPC TACZ Fire",
       "logoAlt_zh": "CNPC TACZ Fire 标志",
       "logoAlt_ja": "CNPC TACZ Fire ロゴ",
-      "type": "addon",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-tacz-fire",
       "product": "cnpc-tacz-fire"
     },
@@ -120,7 +117,6 @@
       "logoAlt_ru": "Логотип CNPC Real Armor",
       "logoAlt_zh": "CNPC Real Armor 标志",
       "logoAlt_ja": "CNPC Real Armor ロゴ",
-      "type": "addon",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-real-armor"
     }
   ],
@@ -301,11 +297,11 @@
       "statusText_ja": "開発中"
     },
     "drm-cobblemon-editor": {
-      "label": "DRM Cobblemon Editor",
-      "label_ko": "DRM Cobblemon Editor",
-      "label_ru": "DRM Cobblemon Editor",
-      "label_zh": "DRM Cobblemon Editor",
-      "label_ja": "DRM Cobblemon Editor",
+      "label": "drm_cobblemon_editor",
+      "label_ko": "drm_cobblemon_editor",
+      "label_ru": "drm_cobblemon_editor",
+      "label_zh": "drm_cobblemon_editor",
+      "label_ja": "drm_cobblemon_editor",
       "shortLabel": "Cobblemon Editor",
       "shortLabel_ko": "Cobblemon Editor",
       "shortLabel_ru": "Cobblemon Editor",
