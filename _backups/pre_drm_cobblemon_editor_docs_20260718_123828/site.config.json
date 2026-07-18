@@ -1,7 +1,7 @@
 {
   "title": "DRM",
   "brand": "DRM",
-  "description": "Documentation hub for DRM Core, drm_cobblemon_editor, DRM Mob Editor, and CNPC TACZ Fire.",
+  "description": "Documentation hub for DRM Core, DRM Mob Editor, and CNPC TACZ Fire.",
   "defaultLocale": "en",
   "fallbackLocale": "en",
   "repository": "",
@@ -42,31 +42,6 @@
       "logoAlt_ja": "DRM ロゴ",
       "product": "core",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker"
-    },
-    {
-      "id": "drm-cobblemon-editor",
-      "label": "drm_cobblemon_editor",
-      "label_ko": "drm_cobblemon_editor",
-      "label_ru": "drm_cobblemon_editor",
-      "label_zh": "drm_cobblemon_editor",
-      "label_ja": "drm_cobblemon_editor",
-      "shortLabel": "Cobblemon Editor",
-      "shortLabel_ko": "Cobblemon Editor",
-      "shortLabel_ru": "Cobblemon Editor",
-      "shortLabel_zh": "Cobblemon Editor",
-      "shortLabel_ja": "Cobblemon Editor",
-      "description": "DRM addon for CustomNPCs-backed Cobblemon trainers, battle presentations, and Pokemon markets.",
-      "description_ko": "CustomNPCs 기반 코블몬 트레이너, 배틀 연출, 포켓몬 상점을 제작하는 DRM 애드온입니다.",
-      "description_ru": "Дополнение DRM для тренеров Cobblemon на базе CustomNPCs, боевых заставок и рынков покемонов.",
-      "description_zh": "用于制作基于 CustomNPCs 的 Cobblemon 训练师、战斗演出和宝可梦商店的 DRM 附加模组。",
-      "description_ja": "CustomNPCsベースのCobblemonトレーナー、バトル演出、ポケモンショップを制作するDRMアドオンです。",
-      "logo": "assets/mod-logos/drm_cobblemon_editor.png",
-      "logoAlt": "drm_cobblemon_editor logo",
-      "logoAlt_ko": "drm_cobblemon_editor 로고",
-      "logoAlt_ru": "Логотип drm_cobblemon_editor",
-      "logoAlt_zh": "drm_cobblemon_editor 标志",
-      "logoAlt_ja": "drm_cobblemon_editor ロゴ",
-      "product": "drm-cobblemon-editor"
     },
     {
       "id": "cnpc-tacz-fire",
@@ -124,27 +99,27 @@
     "en": {
       "label": "English",
       "shortLabel": "EN",
-      "description": "A structured documentation hub for DRM Core, drm_cobblemon_editor, DRM Mob Editor, and CNPC TACZ Fire."
+      "description": "A structured documentation hub for DRM Core, DRM Mob Editor, and CNPC TACZ Fire."
     },
     "ko": {
       "label": "한국어",
       "shortLabel": "KO",
-      "description": "DRM Core, drm_cobblemon_editor, DRM Mob Editor, CNPC TACZ Fire 문서를 한국어로 정리한 문서 허브입니다."
+      "description": "DRM Core, DRM Mob Editor, CNPC TACZ Fire 문서를 한국어로 정리한 문서 허브입니다."
     },
     "ru": {
       "label": "Русский",
       "shortLabel": "RU",
-      "description": "Структурированный центр документации для DRM Core, drm_cobblemon_editor, DRM Mob Editor и CNPC TACZ Fire."
+      "description": "Структурированный центр документации для DRM Core, DRM Mob Editor и CNPC TACZ Fire."
     },
     "zh": {
       "label": "简体中文",
       "shortLabel": "ZH",
-      "description": "DRM Core、drm_cobblemon_editor、DRM Mob Editor 和 CNPC TACZ Fire 的结构化文档中心。"
+      "description": "DRM Core、DRM Mob Editor 和 CNPC TACZ Fire 的结构化文档中心。"
     },
     "ja": {
       "label": "日本語",
       "shortLabel": "JA",
-      "description": "DRM Core、drm_cobblemon_editor、DRM Mob Editor、CNPC TACZ Fire の構造化されたドキュメントハブです。"
+      "description": "DRM Core、DRM Mob Editor、CNPC TACZ Fire の構造化されたドキュメントハブです。"
     }
   },
   "products": {
@@ -295,104 +270,6 @@
       "statusText_ru": "В разработке",
       "statusText_zh": "开发中",
       "statusText_ja": "開発中"
-    },
-    "drm-cobblemon-editor": {
-      "label": "drm_cobblemon_editor",
-      "label_ko": "drm_cobblemon_editor",
-      "label_ru": "drm_cobblemon_editor",
-      "label_zh": "drm_cobblemon_editor",
-      "label_ja": "drm_cobblemon_editor",
-      "shortLabel": "Cobblemon Editor",
-      "shortLabel_ko": "Cobblemon Editor",
-      "shortLabel_ru": "Cobblemon Editor",
-      "shortLabel_zh": "Cobblemon Editor",
-      "shortLabel_ja": "Cobblemon Editor",
-      "accent": "green",
-      "description": "Fabric 1.21.1 DRM addon for CustomNPCs-backed Cobblemon trainers, Pokemon-self encounters, battle presentations, and PokeMart runtime screens.",
-      "description_ko": "Fabric 1.21.1에서 CustomNPCs 기반 코블몬 트레이너, 포켓몬 자신 전투, 배틀 연출, PokéMart 런타임을 제작하는 DRM 애드온입니다.",
-      "description_ru": "Дополнение DRM для Fabric 1.21.1: тренеры Cobblemon на базе CustomNPCs, встречи с отдельными покемонами, боевые заставки и экраны PokeMart.",
-      "description_zh": "Fabric 1.21.1 DRM 附加模组，用于制作基于 CustomNPCs 的 Cobblemon 训练师、单体宝可梦遭遇、战斗演出和 PokeMart 运行界面。",
-      "description_ja": "Fabric 1.21.1向けDRMアドオン。CustomNPCsベースのCobblemonトレーナー、ポケモン単体戦、バトル演出、PokeMartランタイムを制作できます。",
-      "sections": [
-        {
-          "id": "overview",
-          "label": "Overview",
-          "label_ko": "개요",
-          "label_ru": "Обзор",
-          "label_zh": "概览",
-          "label_ja": "概要",
-          "description": "Scope, supported stack, and editor map.",
-          "description_ko": "기능 범위, 지원 모드 조합, 에디터 구성입니다.",
-          "description_ru": "Область функций, поддерживаемый набор модов и карта редакторов.",
-          "description_zh": "功能范围、支持的模组组合和编辑器地图。",
-          "description_ja": "機能範囲、対応MOD構成、エディターマップ。"
-        },
-        {
-          "id": "setup",
-          "label": "Setup",
-          "label_ko": "설치와 시작",
-          "label_ru": "Установка",
-          "label_zh": "安装与开始",
-          "label_ja": "導入と開始",
-          "description": "Installation, first launch, and first NPC workflow.",
-          "description_ko": "설치, 첫 실행, 첫 NPC 제작 흐름입니다.",
-          "description_ru": "Установка, первый запуск и создание первого NPC.",
-          "description_zh": "安装、首次启动和第一个 NPC 制作流程。",
-          "description_ja": "インストール、初回起動、最初のNPC制作手順。"
-        },
-        {
-          "id": "trainer",
-        "label": "Cobblemon Editor",
-        "label_ko": "Cobblemon Editor",
-        "label_ru": "Cobblemon Editor",
-        "label_zh": "Cobblemon Editor",
-        "label_ja": "Cobblemon Editor",
-        "description": "Trainer and Pokemon Itself data, encounters, rounds, conditions, and rewards.",
-        "description_ko": "Trainer와 Pokemon Itself 데이터, 조우, 라운드, 조건, 보상의 실제 동작입니다.",
-          "description_ru": "Раунды тренера, встречи, условия и награды.",
-          "description_zh": "训练师回合、遭遇、条件和奖励设置。",
-          "description_ja": "トレーナーラウンド、エンカウント、条件、報酬設定。"
-        },
-        {
-          "id": "presentation",
-        "label": "Battle Presentation Maker",
-        "label_ko": "배틀 연출 메이커",
-        "label_ru": "Battle Presentation Maker",
-        "label_zh": "Battle Presentation Maker",
-        "label_ja": "Battle Presentation Maker",
-        "description": "Canvas, timeline layers, actors, audio, runtime playback, and assignment.",
-        "description_ko": "캔버스, 타임라인 레이어, 액터, 오디오, 런타임 재생과 적용 동작입니다.",
-          "description_ru": "Слои таймлайна, актёры, звук, сохранение и назначение.",
-          "description_zh": "时间轴图层、角色、音频、保存和分配。",
-          "description_ja": "タイムラインレイヤー、アクター、音声、保存と割り当て。"
-        },
-        {
-          "id": "pokemart",
-        "label": "PokéMart Editor",
-        "label_ko": "PokéMart Editor",
-        "label_ru": "PokéMart Editor",
-        "label_zh": "PokéMart Editor",
-        "label_ja": "PokéMart Editor",
-        "description": "Sales, trades, auction escrow, currency transactions, stock, and runtime GUI behavior.",
-        "description_ko": "판매, 교환, 경매 에스크로, 결제, 재고, 런타임 GUI의 실제 동작입니다.",
-          "description_ru": "Продажа, обмен и аукционы покемонов, валюта и GUI.",
-          "description_zh": "宝可梦销售、交换、拍卖、货币和运行界面。",
-          "description_ja": "ポケモン販売、交換、オークション、通貨、ランタイムGUI。"
-        },
-        {
-          "id": "operations",
-          "label": "Files & Troubleshooting",
-          "label_ko": "파일과 문제 해결",
-          "label_ru": "Файлы и устранение неполадок",
-          "label_zh": "文件与故障排查",
-          "label_ja": "ファイルとトラブルシューティング",
-          "description": "Storage paths, protected defaults, interaction priority, and checks.",
-          "description_ko": "저장 경로, 기본 파일 보호, 상호작용 우선순위, 점검 방법입니다.",
-          "description_ru": "Пути хранения, защищённые шаблоны, приоритет взаимодействий и проверки.",
-          "description_zh": "存储路径、受保护模板、交互优先级和检查方法。",
-          "description_ja": "保存先、保護テンプレート、インタラクション優先順位、確認方法。"
-        }
-      ]
     },
     "cnpc-tacz-fire": {
       "label": "CNPC TACZ Fire",
