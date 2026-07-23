@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Combat AI
 section: combat-ai
 status: Draft
-version: 0.2.2
+version: 0.2.1
 audience: Firearm NPC creators
 tags:
   - weapon
@@ -78,8 +78,6 @@ Exact Better Combat NPC motion playback on the client requires both Better Comba
 
 Useful movement toggles include `Move While Firing`, `Retreat Fire`, and `Keep Distance Fire`. `Keep Distance Fire` tries to maintain a preferred range, but it is ranged-only and locks out melee switching.
 
-`Suppressive Fire` is different from target tracking. After line of sight is lost during combat, it may fire real TACZ rounds only at the last position the NPC actually saw, for the configured `Suppression Time Ms`. It does not follow the hidden target's current position and still consumes ammunition through the normal gun state.
-
 ## Awareness and idle control
 
 Use awareness settings to decide when the NPC may enter combat:
@@ -93,8 +91,6 @@ Use awareness settings to decide when the NPC may enter combat:
 | `Close Detection` | Lets targets inside `Close Detect Distance` bypass the horizontal detection angle. Disable it for backstab or assassination-style NPCs. |
 
 `Sound Detection` reacts to explicit player TACZ gunshot, TACZ reload, block-break, and block-place events at separate ranges. Each range is capped by `Detect Distance`, and creative or spectator players do not create stimuli. Investigation can be `Off`, `Look Only`, or `Move To Source`. Active combat takes priority, and a position-locked stance falls back to looking instead of leaving its post.
-
-`Faction Defense` lets a damaged TACZ Fire NPC alert same-faction TACZ Fire allies inside `Faction Alert Radius`. An assisting ally may move to help before it sees the attacker, but it still needs final line of sight before firing. Mercenary owner-hit tolerance and friendly-target validation remain in force, so faction defense does not bypass contract or target rules.
 
 Idle movement has four modes: `Stationary`, `Area Patrol`, `Return Only`, and `Route Patrol`. Area and Route patrols use the GUI `Default Walk Speed` and keep a valid A* path active. They do not replace failed pathfinding with direct movement into a wall; unreachable points are retried within a bounded limit and then skipped. Patrol coordinates resolve to nearby standable ground, and arrival checks include vertical distance for lower one-block waypoints.
 
@@ -118,4 +114,3 @@ Version 0.2.1 shows chance fields directly on weapon, skin, and armor pool rows.
 6. Add melee switching and empty-ammo fallback.
 7. Add random gun, skin, and armor pools.
 8. Add advanced stance rules only after the normal behavior is stable.
-9. Add suppressive fire and experimental cover last, after ordinary movement and line-of-sight behavior are confirmed.

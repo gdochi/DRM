@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.1
+version: 0.1.0
 audience: Creators building automatic encounters and rematch trainers
 tags:
   - encounter
@@ -60,13 +60,11 @@ The NPC waits through Reaction Ticks. It then starts immediately if Chase is off
 | --- | ---: | --- |
 | Walking Speed | 0–100 | CustomNPCs walking-speed scale; navigation multiplier is `Walking Speed ÷ 5` |
 | Stop Distance | 0.5–8 blocks | Battle startup is attempted inside this target distance |
-| Max Distance | At least Stop Distance, up to 96 | Maximum allowed distance between the NPC's and target player's current positions, recalculated every server tick |
+| Max Distance | At least Stop Distance, up to 96 | Maximum distance the NPC may travel from its captured home point, not from the player |
 | Duration | 10–1200 ticks | Maximum chase time |
 | Return Home | On/Off | Navigates back to the captured home point after failure or cancellation |
 
-Logout, death, another battle, reservation changes, timeout, and the current NPC-player distance exceeding Max Distance all end the chase. Return navigation ends on arrival or an internal 1200-tick safety timeout.
-
-The captured home point is used only for Return Home and Battle Positioning. It is not used for the Max Distance check.
+Logout, death, another battle, reservation changes, timeout, and leaving Max Distance all end the chase. Return navigation ends on arrival or an internal 1200-tick safety timeout.
 
 ## Positioning and NPC lock
 

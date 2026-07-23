@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Ammo
 section: ammo
 status: Draft
-version: 0.2.2
+version: 0.2.1
 audience: Firearm NPC creators
 tags:
   - reload
@@ -62,17 +62,6 @@ Forced reload counters use successful shots. Confirm native gun reload compatibi
 
 When the fallback ends and ammunition becomes usable again, the NPC returns to its ranged weapon and reload flow. If fallback is disabled, a fully exhausted NPC is expected to stop firing.
 
-## Automatic rearm after target loss
-
-`Auto Rearm After Target Loss` is an optional recovery path for an NPC that entered ammo-exhaustion fallback and then continuously lost its target.
-
-1. The target must remain absent for `Rearm Start Delay (Seconds)`.
-2. Reacquiring a target cancels the pending recovery.
-3. After the delay, the configured reload duration still applies.
-4. A successful recovery grants one full magazine through TACZ reload and gun-stack state.
-
-This does not restore `Ammo Stock` and does not create physical ammunition. Use it when a fallback NPC should be ready for the next encounter without receiving unlimited reserve stock.
-
 ## Recommended setup flow
 
 1. Start with `Ammo Stock: -1`.
@@ -83,7 +72,6 @@ This does not restore `Ammo Stock` and does not create physical ammunition. Use 
 6. Tune `Reload Duration Ms` only after the held gun's native reload behavior feels wrong for the encounter.
 7. Use `Reload Speed Multiplier` to create vulnerability windows during reload.
 8. Add `Force Fixed` or `Force Range` last.
-9. Add target-loss rearming only if an exhausted NPC should recover between encounters.
 
 This order separates firing problems from economy problems. A finite-ammo NPC that never fires may be empty, but an infinite-ammo NPC that never fires probably has a gun, target, stance, distance, or line-of-sight problem.
 

@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 운영
 section: operations
 status: Draft
-version: 0.1.1
+version: 0.1.0
 audience: 서버 운영자와 콘텐츠 배포자
 tags:
   - paths
@@ -125,8 +125,7 @@ Battle Presentation만 보이고 끝나는 경우에는 Presentation 자체보�
 
 - Stop Distance가 NPC와 플레이어 히트박스에 비해 너무 작지 않은지 확인합니다.
 - 좁은 문, 반블록, 울타리, 물, 절벽에서 CustomNPCs 내비게이션이 막히는지 확인합니다.
-- Max Distance는 매 틱 NPC 현재 좌표와 대상 플레이어 현재 좌표 사이의 거리로 판정합니다.
-- 감지 당시 홈 좌표는 Return Home과 Battle Positioning에만 사용되며 Max Distance에는 영향을 주지 않습니다.
+- Max Distance는 대상까지 거리가 아니라 감지 당시 NPC 홈에서 벗어난 거리입니다.
 - Duration은 Reaction 단계 뒤 추적 시간입니다.
 - Return Home이 켜져 있으면 실패 후 원래 위치로 복귀하는 것이 정상입니다.
 - Stop Distance 안쪽 판정은 여러 틱 연속 유지되어야 하므로 빠르게 스쳐 지나가지 않았는지 확인합니다.

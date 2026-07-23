@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: 전투 AI
 section: combat-ai
 status: Draft
-version: 0.2.2
+version: 0.2.1
 audience: 총기 NPC 제작자
 tags:
   - weapon
@@ -78,8 +78,6 @@ tags:
 
 자주 쓰는 이동 토글은 `Move While Firing`, `Retreat Fire`, `Keep Distance Fire`입니다. `Keep Distance Fire`는 선호 거리를 유지하려 하지만 원거리 전용이며 근접 전환을 사용하지 않습니다.
 
-`Suppressive Fire`는 숨은 타겟을 추적하는 기능이 아닙니다. 전투 중 시야를 잃으면 NPC가 실제로 마지막으로 본 위치에만 `Suppression Time Ms` 동안 TACZ 탄환을 발사할 수 있습니다. 숨은 타겟의 현재 위치를 따라가지 않으며 일반 총기 상태와 탄약을 그대로 소모합니다.
-
 ## 인식과 대기 제어
 
 인식 설정은 NPC가 언제 전투에 들어갈 수 있는지 결정합니다.
@@ -93,8 +91,6 @@ tags:
 | `Close Detection` | 켜면 `Close Detect Distance` 안의 타겟은 수평 감지 각도를 무시하고 인식할 수 있습니다. 암살·백스탭형 NPC는 끄는 편이 맞습니다. |
 
 `Sound Detection`은 플레이어의 TACZ 총성, TACZ 재장전, 블록 파괴, 블록 설치 이벤트를 각각 설정한 거리에서 감지합니다. 각 소리 범위는 `Detect Distance`를 넘지 못하며, 크리에이티브·관전자 플레이어는 자극을 만들지 않습니다. 반응 방식은 `Off`, `Look Only`, `Move To Source`입니다. 전투가 시작되면 조사는 전투에 양보하고, 위치 고정 스탠스에서는 `Move To Source`도 바라보기만 수행합니다.
-
-`Faction Defense`를 켜면 피해를 받은 TACZ Fire NPC가 `Faction Alert Radius` 안의 같은 팩션 TACZ Fire 아군에게 공격자를 알립니다. 지원 NPC는 공격자를 아직 직접 보지 못해도 도우러 이동할 수 있지만, 발사 직전에는 여전히 최종 시야가 필요합니다. 용병의 소유자 공격 허용 횟수와 우호 타겟 검증도 유지되므로 팩션 방어가 계약·타겟 규칙을 우회하지 않습니다.
 
 대기 이동은 `Stationary`, `Area Patrol`, `Return Only`, `Route Patrol` 네 가지입니다. Area/Route 순찰은 GUI의 `Default Walk Speed`를 사용하며 유효한 A* 경로를 유지합니다. 막힌 지점으로 직진하지 않고, 도달할 수 없는 경로는 제한된 횟수만 재시도한 뒤 다음 지점으로 넘어갑니다. 순찰 좌표는 주변의 설 수 있는 지면 높이로 보정되므로 한 블록 아래 지점도 수직 도달 판정에 포함됩니다.
 
@@ -118,4 +114,3 @@ tags:
 6. 근접 전환과 탄약 소진 전환을 추가합니다.
 7. 랜덤 총기, 스킨, 방어구 풀을 추가합니다.
 8. 일반 동작이 안정된 뒤 Advanced 스탠스 규칙을 추가합니다.
-9. 일반 이동과 시야 동작을 확인한 뒤 제압 사격과 실험적 엄폐를 마지막에 추가합니다.

@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Operations
 section: operations
 status: Draft
-version: 0.1.1
+version: 0.1.0
 audience: Server operators and content publishers
 tags:
   - paths
@@ -89,7 +89,6 @@ Saving server JSON and applying it to an NPC are separate operations. Apply the 
 - Check Vision Distance, Vision Angle, Radius, and Line of Sight.
 - Check round conditions, rematch limits, and cooldown.
 - Check Chase Max Distance and Duration.
-- Max Distance compares the NPC's and target player's current positions every server tick; the captured home point is used only by Return Home and Battle Positioning.
 
 ### A Battle Presentation does not load
 

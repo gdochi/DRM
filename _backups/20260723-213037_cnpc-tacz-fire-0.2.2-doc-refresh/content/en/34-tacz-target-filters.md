@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Targets
 section: targets
 status: Draft
-version: 0.2.2
+version: 0.2.1
 audience: Encounter designers
 tags:
   - target
@@ -31,7 +31,7 @@ The `Targets` tab can select allowed target entity IDs. The list includes search
 | Mod filter | Show entity IDs from selected mod IDs. |
 | Select all / none | Apply to the currently visible filtered list. |
 
-An empty target entity list means there is no strict entity allow list. A managed CustomNPCs shooter still scans so it can inherit genuine CustomNPCs faction hostility toward NPCs or players. The candidate must still match an explicit selector, the same-faction tag exception, or a real hostile faction rule; passive and unrelated entities do not become automatic targets.
+An empty target entity list means the NPC falls back to normal behavior instead of a strict entity allow list.
 
 Version 0.2.0 narrows long-distance living-target searches through a spatial index before applying entity ID, tag, faction, distance, angle, and line-of-sight rules. Creative and spectator players are rejected before sound or combat target processing.
 

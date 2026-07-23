@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Setup
 section: setup
 status: Draft
-version: 0.2.2
+version: 0.2.1
 audience: Server operators
 tags:
   - setup
@@ -61,7 +61,6 @@ After that works, add finite ammo, random pools, advanced target filters, moveme
 | `Overview` | Read-only summary of the effective policy, sensing, combat, damage, equipment, ammo, target, and FX values. |
 | `Fire` | firing range, melee switch range, RPM, random RPM, accuracy, fire modes. |
 | `Senses` | `General`/`Advanced` stance, tactical movement, idle movement, visual awareness, close detection, and player sound detection. |
-| `Cover` | experimental cover triggers, damage thresholds, search limits, hold/cooldown timing, movement speed, and peek cycles. |
 | `Targets` | entity IDs, filters, required/rejected tags, import/export profiles. |
 | `Ammo` | reload type, ammo stock and regeneration, reload movement, and empty-ammo fallback. |
 | `Gun` | selecting TACZ guns, ranged damage policy, ranged weapon pools with inline chances, and NPC preview. |
@@ -74,8 +73,6 @@ After that works, add finite ammo, random pools, advanced target filters, moveme
 
 Version 0.2.1 edits weapon, skin, and armor pool chances directly in each entry row. Changing one entry does not rebalance the others, so make the total `100%` or press `Equalize` to distribute it explicitly. A single entry remains fixed at `100%`.
 
-`Mercenary Core` opens a separate creator/editor screen for server-authoritative contract terms; it is not another category in `TACZ NPC Core`. The player-facing hire confirmation and `J` command HUD are runtime screens and are documented separately from both editor tools.
-
 ## Config file
 
 Global bridge defaults are generated at:
@@ -85,13 +82,6 @@ config/cnpc_tacz_fire-common.toml
 ```
 
 The GUI is still the normal authoring path. Use the config for defaults and script bridge behavior, then override individual NPCs through the GUI or scripts when a specific encounter needs special behavior.
-
-Experimental cover also requires the global switch below. The server switch and the NPC's own `Enable Cover` setting must both allow the behavior.
-
-```toml
-[experimentalCover]
-enabled = true
-```
 
 ## Setup profile files
 

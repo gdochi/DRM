@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Operations
 section: operations
 status: Draft
-version: 0.2.2
+version: 0.2.1
 audience: Operators
 tags:
   - troubleshooting
@@ -43,17 +43,13 @@ If this works, the addon and gun loop are fine. Add filters, finite ammo, moveme
 | Custom damage, knockback, or attack speed is not used | Check the `Gun Spec`/`Weapon Spec` or `Custom` selection and values in `Gun` and `Melee`. |
 | Better Combat weapon motion does not appear | Check Better Combat, Mob Player Animator, the NPC's `Better Combat Compatibility`, and registered attacks for the weapon. A vanilla main-hand swing is expected when the registered motion cannot be played. |
 | Custom attack speed is ignored during Better Combat compatibility | Compatibility locks timing to the weapon's effective `ATTACK_SPEED`. Disable `Better Combat Compatibility` to use a `Custom` attack speed. |
-| Patrol walks into a wall or pauses every step | Check `Default Walk Speed`, patrol points, vertical height, and A* reachability. Also confirm 0.2.2 is installed on both client and server. |
+| Patrol walks into a wall or pauses every step | Check `Default Walk Speed`, patrol points, vertical height, and A* reachability. Also confirm 0.2.1 is installed on both client and server. |
 | NPC attacks the wrong target | Clear entity ID filters, required tags, rejected tags, and same-faction tag rules, then re-add them gradually. |
-| NPC keeps showing the previous or wrong weapon | Confirm that both client and server use 0.2.2, then save the NPC again. Also confirm the ranged weapon is a real TACZ gun and that ammo or magazine items are not used as offhand reload props. |
+| NPC keeps showing the previous or wrong weapon | Confirm that both client and server use 0.2.1, then save the NPC again. Also confirm the ranged weapon is a real TACZ gun and that ammo or magazine items are not used as offhand reload props. |
 | Pool changes cannot be saved | Make the inline chance total `100%` or press `Equalize`. Editing one row does not automatically redistribute the others. |
 | Entries below a long armor pool are not visible | Scroll inside the armor pool with the mouse wheel or drag its right-side internal scrollbar. If the whole screen is clipped, also adjust vanilla `GUI Scale`. |
 | Visual alert icons are missing | Check the per-NPC `Alert Icons` setting and the client-side `cnpc_tacz_fire Config` marker visibility settings. |
 | GUI looks distorted | Adjust `GUI Scale` in vanilla video settings, then check the screen again. |
-| Cover never starts | Check global `[experimentalCover].enabled`, per-NPC `Enable Cover`, the individual trigger, combat phase, search radius, cooldown, and whether a reachable blast/shot-blocking position exists. |
-| Cover starts but the NPC never resumes fighting | Check `Max Duration`, `Hold Time`, peek settings, route reachability, and that 0.2.2 is installed. Interrupted cover paths should be reacquired while progress and phase timeouts remain the failure guards. |
-| Hire confirmation does not open | The NPC must be a managed TACZ Fire NPC with `Hire available` enabled. Use an empty hand or normal interaction item; `TACZ NPC Core`, `Mercenary Core`, and CustomNPCs interaction tools keep their own editor behavior. |
-| Mercenary GUI clicks or tooltips are offset | Use 0.2.2 on both sides. The mercenary settings, confirmation screen, and command HUD use fit-to-viewport scaling and translated mouse coordinates. |
 
 ## GUI access problems
 
@@ -92,17 +88,17 @@ For a failed one-block descent, confirm that a direct Route point uses the inten
 
 `Gun Spec` preserves native TACZ gun damage, while `Custom` applies fixed damage only to this NPC's managed bullet. Melee `Weapon Spec` uses item attributes; melee `Custom` can independently set damage, knockback, and attacks per second. Switch one policy at a time when isolating an unexpected result.
 
-Enabling `Better Combat Compatibility` locks attack speed to the held item's effective `ATTACK_SPEED`, and `Overview` shows `Weapon Spec (locked)`. If weapon attributes fail to apply on an older build, update both client and server to 0.2.2 before testing again.
+In 0.2.1, enabling `Better Combat Compatibility` locks attack speed to the held item's effective `ATTACK_SPEED`, and `Overview` shows `Weapon Spec (locked)`. If weapon attributes failed to apply on an older build, update both client and server to 0.2.1 before testing again.
 
 ## Weapon switching and melee animation problems
 
-The addon synchronizes the server-confirmed main-hand state to clients. If a melee equip readback does not match the requested item, the NPC delays the attack and retries the equip instead of attacking with the wrong weapon. A brief pause during the switch can therefore be expected; a permanently stale weapon should first be checked for mismatched client and server JAR versions.
+Version 0.2.1 synchronizes the server-confirmed main-hand state to clients. If a melee equip readback does not match the requested item, the NPC delays the attack and retries the equip instead of attacking with the wrong weapon. A brief pause during the switch can therefore be expected; a permanently stale weapon should first be checked for mismatched client and server JAR versions.
 
 Exact Better Combat NPC motion requires both Better Combat and Mob Player Animator. Even with `Better Combat Compatibility` enabled, the addon falls back to a vanilla main-hand swing when Mob Player Animator is missing or no usable registered weapon motion is available.
 
 ## Target rule problems
 
-An empty entity ID list allows managed CustomNPCs to inherit real CustomNPCs faction hostility. It does not make passive or unrelated entities automatic targets. A filled entity ID list becomes an explicit selector, while required and rejected tags remain additional filters.
+An empty entity ID list allows normal behavior. A filled entity ID list becomes an allow list. Required tags and rejected tags are additional filters. If all three are active, a target must pass all of them.
 
 When in doubt, export the setup profile, simplify it, and re-import after testing.
 
@@ -110,4 +106,4 @@ When in doubt, export the setup profile, simplify it, and re-import after testin
 
 Version 0.2.0 uses spatial indexes for long `Detect Distance` searches and event-based hearing to reduce repeated scans. Large `Detect Distance`, large `Max Distance`, broad target lists, and many managed NPCs can still increase candidate filtering and combat work. Keep early tests small.
 
-Detailed main-hand, weapon-switch, cover, and animation traces stay behind debug logging. Enable debug only while reproducing a problem, then turn it down so live server logs remain readable.
+Version 0.2.1 removes temporary diagnostic output and keeps detailed main-hand, weapon-switch, and animation traces behind debug logging. Enable debug only while reproducing a problem, then turn it down so live server logs remain readable.

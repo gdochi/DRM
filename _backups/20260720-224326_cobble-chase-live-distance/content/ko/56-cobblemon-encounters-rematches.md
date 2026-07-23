@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.1
+version: 0.1.0
 audience: 자동 조우와 다회차 트레이너를 만드는 제작자
 tags:
   - encounter
@@ -97,7 +97,7 @@ Reaction Ticks 동안 NPC는 즉시 달리지 않습니다. 대기가 끝났을 
 | `Chase` | On/Off | 감지 후 플레이어를 따라갈지 정합니다. |
 | `Walking Speed` | 0–100 | CustomNPCs 이동 속도 스케일입니다. 내부 내비게이션 배수는 `값 ÷ 5`입니다. |
 | `Stop Distance` | 0.5–8블록 | 플레이어에게 충분히 접근했다고 판단하는 거리입니다. |
-| `Max Distance` | Stop Distance 이상, 최대 96블록 | NPC와 대상 플레이어의 현재 좌표 사이에 허용되는 최대 추격 거리입니다. 서버가 매 틱 두 엔티티의 현재 위치로 다시 계산합니다. |
+| `Max Distance` | Stop Distance 이상, 최대 96블록 | 플레이어와의 거리가 아니라 감지 당시 홈에서 NPC가 벗어날 수 있는 거리입니다. |
 | `Duration` | 10–1200틱 | 반응 단계가 끝난 뒤 추적을 유지할 최대 시간입니다. |
 | `Return Home` | On/Off | 실패·취소 후 감지 당시 홈으로 돌아갈지 정합니다. |
 
@@ -113,14 +113,12 @@ NPC가 한 틱만 Stop Distance 안에 스쳤다고 바로 전투를 시작하�
 - 대상이 크리에이티브·관전자 상태가 됨
 - 대상이 다른 Cobblemon 배틀에 들어감
 - 플레이어 또는 NPC 예약 상태가 바뀜
-- NPC와 대상 플레이어의 현재 거리가 Max Distance보다 멀어짐
+- NPC가 감지 당시 홈에서 Max Distance보다 멀어짐
 - Duration 초과
 - 경로 탐색으로 Stop Distance에 도달하지 못함
 - 재대전·쿨다운·라운드 조건이 더 이상 허용하지 않음
 
 `Return Home`이 켜져 있으면 NPC는 감지 당시 홈으로 복귀합니다. 복귀는 도착하거나 내부 안전 제한인 1200틱을 넘으면 종료됩니다.
-
-감지 당시 캡처한 홈 좌표는 복귀와 Battle Positioning에만 사용됩니다. Max Distance 판정에는 홈 좌표를 사용하지 않습니다.
 
 ## Battle Positioning
 
