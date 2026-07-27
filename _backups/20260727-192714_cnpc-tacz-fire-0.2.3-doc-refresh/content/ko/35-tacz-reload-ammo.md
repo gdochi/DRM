@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: 탄약
 section: ammo
 status: Draft
-version: 0.2.3
+version: 0.2.2
 audience: 총기 NPC 제작자
 tags:
   - reload
@@ -89,13 +89,13 @@ Fallback 상태가 끝나고 탄약을 다시 사용할 수 있으면 NPC는 원
 
 ## RPM과 탄약 압박
 
-`RPM Mode`, 랜덤 RPM 범위, 버스트 최소·최대 발사 수, 고정 명중률 또는 명중률 상승은 모두 탄약 압박을 바꿉니다. 높은 RPM의 유한 탄약 NPC는 예비 탄을 빠르게 소모할 수 있습니다. 명중률이 낮은 NPC는 연출은 좋아 보일 수 있지만 `Ammo Stock`이 제한되어 있으면 탄약을 낭비합니다.
+`RPM Override`, 랜덤 RPM, 버스트 사격, 명중률은 모두 탄약 압박을 바꿉니다. 높은 RPM의 유한 탄약 NPC는 예비 탄을 빠르게 소모할 수 있습니다. 명중률이 낮은 NPC는 연출은 좋아 보일 수 있지만 `Ammo Stock`이 제한되어 있으면 탄약을 낭비합니다.
 
 밸런스는 아래 순서로 잡는 편이 좋습니다.
 
-1. 무한 탄약과 `RPM Mode: TACZ Native`
-2. 고정 명중률
-3. 버스트 범위, 명중률 상승 또는 고정·랜덤 RPM
+1. 무한 탄약과 총기 기본 RPM
+2. 명중률
+3. 버스트 사격 또는 고정 RPM
 4. 유한 탄약 재고
 5. 탄약 재생 또는 재장전 이동 페널티
 

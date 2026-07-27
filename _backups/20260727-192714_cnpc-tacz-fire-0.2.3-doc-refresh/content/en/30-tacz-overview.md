@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Overview
 section: overview
 status: Draft
-version: 0.2.3
+version: 0.2.2
 audience: Firearm NPC creators
 tags:
   - TACZ
@@ -27,8 +27,6 @@ Version 0.2.1 adds per-NPC `Better Combat Compatibility`, Better Combat attacks 
 
 Version 0.2.2 expands the addon with a separate mercenary contract editor and player command HUD, per-NPC experimental cover, suppressive fire, faction-defense assistance, target-loss rearming after ammo exhaustion, and faction-hostile acquisition when the explicit Targets list is empty. It also hardens clone and soul-stone initialization, cover path recovery, mercenary owner-hit rules, scaled mercenary GUI input, and alert-icon cleanup.
 
-Version 0.2.3 adds `Easy Build`, five combat presets, an explicit `RPM Mode`, moving-player accuracy ramping, random burst lengths and tactical-reposition intervals, and a post-suppression watch. The new `CTF Pose Core` and `Pose` category create reusable pose JSON profiles and map them to NPC actions, while mercenary HUD commands now adapt to the selected mercenaries' state.
-
 ## Core rules
 
 | Rule | Meaning |
@@ -46,16 +44,15 @@ Do not make NPCs hold TACZ ammo or magazine items in the offhand. Reloads are re
 
 | Area | Examples |
 | --- | --- |
-| Fire behavior | `Reload`, `Supply Ammo`, `Max Distance`, `RPM Mode`, fixed or random RPM, fixed or moving-target ramp accuracy, and random-length bursts |
+| Fire behavior | `Reload`, `Supply Ammo`, `Max Distance`, `RPM Override`, random RPM range, accuracy, burst fire |
 | Damage policies | native TACZ or fixed ranged damage; weapon-based or fixed melee damage, knockback, and attack speed |
 | Melee animation integration | per-NPC Better Combat compatibility, registered weapon attacks and poses, and vanilla main-hand swing fallback |
 | Stance behavior | `Idle`, `Ranged`, `Melee`, `Auto`, `Auto Hidden`, plus one advanced conditional rule |
-| Tactical movement | hold, spread, compact, advance, retreat, keep-distance fire, move-while-firing, random replanning intervals, suppressive fire, and per-NPC cover |
+| Tactical movement | hold, spread, compact, advance, retreat, keep-distance fire, move-while-firing, suppressive fire, and per-NPC cover |
 | Awareness | detection distance and angle, close detection, combat delay, last-seen memory, and investigation of gunshot, reload, block-break, and block-place events |
 | Ammo policies | normal, fixed forced, or ranged forced reloads; finite or infinite stock, regeneration, melee or unarmed fallback, and optional target-loss rearming |
 | Targets | entity ID allow lists, faction-hostility inheritance, required tags, rejected tags, same-faction tag targeting |
 | Equipment and visuals | random ranged weapons, melee weapons, skins, armor sets, preview and held-item sync |
-| Poses | built-in non-combat gun poses, pose JSON editing, gun render transforms, and per-action pose mapping |
 | Combat feedback | alert icons, detected sounds, shoot sounds, detected say text, shoot say text |
 | Optional grenades | grenade type, range, search range, health trigger, cooldown, fuse, power, angle |
 | Mercenary contracts | hire terms, summon and recall, formations, fire and posture orders, owner-hit responses, and contract release |
@@ -82,11 +79,10 @@ It also does not require creators to build fake gun animations. TACZ and optiona
 ## Recommended authoring order
 
 1. Create one fresh CustomNPCs NPC in a test world.
-2. Use `CTF Npc Core` to open the per-NPC setup GUI.
+2. Use `TACZ NPC Core` to open the per-NPC setup GUI.
 3. Turn on `TACZ Fire NPC Mode` and `Enabled`.
-4. Use `Easy Build` or `Presets` if you want a quick behavior starting point.
-5. Pick one real TACZ gun in the `Gun` tab.
-6. Start with infinite reserve ammo by leaving `Ammo Stock` at `-1`.
-7. Test one target with simple `Auto` stance before adding advanced targets, pools, grenades, or script overrides.
+4. Pick one real TACZ gun in the `Gun` tab.
+5. Start with infinite reserve ammo by leaving `Ammo Stock` at `-1`.
+6. Test one target with simple `Auto` stance before adding advanced targets, pools, grenades, or script overrides.
 
 This keeps the first problem small. If the NPC cannot fire in that baseline setup, the issue is usually mode enablement, gun selection, target selection, distance, line of sight, or ammo/reload policy.

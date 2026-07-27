@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: 타겟
 section: targets
 status: Draft
-version: 0.2.3
+version: 0.2.2
 audience: 전투 설계자
 tags:
   - target
@@ -49,19 +49,19 @@ tags:
 
 ## 팩션과 Advanced 스탠스
 
-Advanced 스탠스 규칙은 `Always`, NPC 체력 비율 이하, 타겟 팩션, 타겟 태그, 타겟 엔티티 ID를 조건으로 사용할 수 있습니다. `Always`와 NPC 체력 조건은 현재 전투 타겟이 없어도 판정됩니다. 타겟 팩션·태그·엔티티 조건은 살아 있는 타겟이 필요하므로 먼저 `Targets`에서 ID와 태그를 등록한 뒤 `Stance Mode: Advanced`에서 사용하세요.
+Advanced 스탠스 규칙은 타겟 팩션, 타겟 태그, 타겟 엔티티 ID를 조건으로 사용할 수 있습니다. 먼저 `Targets`에서 ID와 태그를 등록한 뒤 `Stance Mode: Advanced`에서 사용하세요.
 
 Advanced 모드는 활성 조건을 하나만 지원합니다. 결과를 예측 가능하게 유지하기 위한 구조입니다. 조건이 맞지 않을 때 일반 `General` 설정으로 돌아가야 한다면 `Default` 동작을 사용하세요.
 
-## 프로필 `Load`와 `Save As`
+## 프로필 가져오기와 내보내기
 
-상단 바의 `Load`와 `Save As` 프로필은 아래 위치에 저장됩니다.
+`Import`와 `Export` 프로필은 아래 위치에 저장됩니다.
 
 ```text
 config/cnpc_tacz_fire/target_entities/
 ```
 
-현재 프로필은 타겟 엔티티 ID만 관리하는 파일이 아니라, NPC별 TACZ Fire 설정을 다른 CustomNPCs NPC에 연결해 주는 복제용 프리셋에 가깝습니다. 먼저 한 NPC에서 총기, AI, 타겟, 탄약, 풀 설정을 맞춘 뒤 `Save As`로 저장하고, 다른 NPC에서 `Load`해 같은 전투 구성을 빠르게 적용하세요. 구버전 타겟 전용 JSON도 계속 불러올 수 있습니다.
+현재 프로필은 타겟 엔티티 ID만 관리하는 파일이 아니라, NPC별 TACZ Fire 설정을 다른 CustomNPCs NPC에 연결해 주는 복제용 프리셋에 가깝습니다. 먼저 한 NPC에서 총기, AI, 타겟, 탄약, 풀 설정을 맞춘 뒤 `Export`하고, 다른 NPC에서 `Import`해 같은 전투 구성을 빠르게 적용하세요. 구버전 타겟 전용 JSON은 계속 가져올 수 있습니다.
 
 ## 실전 예시
 

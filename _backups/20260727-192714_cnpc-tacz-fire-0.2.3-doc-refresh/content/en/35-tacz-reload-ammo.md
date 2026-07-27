@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Ammo
 section: ammo
 status: Draft
-version: 0.2.3
+version: 0.2.2
 audience: Firearm NPC creators
 tags:
   - reload
@@ -89,13 +89,13 @@ This order separates firing problems from economy problems. A finite-ammo NPC th
 
 ## RPM and ammo pressure
 
-`RPM Mode`, random RPM range, burst minimum and maximum shots, and fixed or ramping accuracy all change ammo pressure. A high-RPM NPC with finite ammo can empty its reserve quickly. A low-accuracy NPC may look cinematic but can waste ammunition if `Ammo Stock` is limited.
+`RPM Override`, random RPM, burst fire, and accuracy all change ammo pressure. A high-RPM NPC with finite ammo can empty its reserve quickly. A low-accuracy NPC may look cinematic but can waste ammunition if `Ammo Stock` is limited.
 
 Balance in this order:
 
-1. `RPM Mode: TACZ Native` with infinite ammo.
-2. Fixed accuracy.
-3. Burst range, accuracy ramping, or fixed/random RPM.
+1. Native gun RPM with infinite ammo.
+2. Accuracy.
+3. Burst fire or fixed RPM.
 4. Finite ammo stock.
 5. Regeneration or reload movement penalties.
 

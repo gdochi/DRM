@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Combat AI
 section: combat-ai
 status: Draft
-version: 0.2.3
+version: 0.2.2
 audience: Firearm NPC creators
 tags:
   - weapon
@@ -27,7 +27,7 @@ tags:
 | `Auto` | Swap between ranged and melee based on distance. The ranged weapon remains visible during idle. |
 | `Auto Hidden` | Swap during combat, but keep empty hands outside combat. |
 
-`Stance Mode: General` uses the normal stance settings. `Stance Mode: Advanced` applies one conditional rule such as `Always`, health below a ratio, target entity, target faction, or target tag. `Always` and the NPC-health condition can be evaluated without a current combat target; only target entity, faction, and tag conditions require a living target. Advanced mode intentionally has one active rule to avoid conflicting behavior.
+`Stance Mode: General` uses the normal stance settings. `Stance Mode: Advanced` applies one conditional rule, such as health below a ratio, target entity, target faction, or target tag. Advanced mode intentionally has one active rule to avoid conflicting behavior.
 
 ## Fire settings
 
@@ -35,20 +35,12 @@ tags:
 | --- | --- |
 | `Max Distance` | Maximum target distance for TACZ ranged fire. Targets beyond this are ignored by the addon. |
 | `Melee Switch Range` | Distance where `Auto` stance switches to melee. Actual hit reach still comes from CustomNPCs melee behavior. |
-| `RPM Mode` | Choose exactly one source: `TACZ Native`, `Fixed`, or `Random Range`. Only the values used by that mode are shown. |
-| `Fixed RPM` | Fixed target fire rate used by `RPM Mode: Fixed`. |
-| `RPM Min` and `RPM Max` | Target fire-rate range used by `RPM Mode: Random Range`. |
-| `Fixed Accuracy %` | Accuracy used continuously while `Accuracy Ramp` is disabled. `100` adds no extra aim error. |
-| `Ramp Start Accuracy %` | Starting accuracy while `Accuracy Ramp` is enabled. |
-| `Ramp Max Accuracy %` | Maximum accuracy after eligible tracking. It must be greater than the starting value. |
-| `Ramp Time Ms` | Accumulated eligible tracking time needed to reach maximum accuracy. |
-| `Ramp Max Range` | Maximum distance where ramp progress may accumulate. |
-| `Min Target Speed` | Minimum horizontal player speed needed to advance the ramp. |
-| `Burst Minimum Shots` / `Burst Maximum Shots` | Selects a new inclusive shot count for each configured burst. Equal values create fixed-length bursts. |
+| `RPM Override` | Fixed target fire rate. `0` means use the selected TACZ gun's native RPM. |
+| `RPM Min` and `RPM Max` | Random target RPM range. When active, it overrides fixed RPM. |
+| `Accuracy %` | NPC accuracy percent. `100` adds no extra aim error; lower values add spread. |
+| `Burst Fire` | Fires a controlled group of shots, then pauses before the next burst. |
 
-`Accuracy Ramp` progresses only while the visible target is a moving player inside the configured range and above the minimum speed. Progress pauses while the player is stationary or out of range, then resets when the target or active General/Advanced profile changes. General and Advanced can use independent ramp settings.
-
-Start with `RPM Mode: TACZ Native` and fixed accuracy. Add random RPM, burst ranges, and accuracy ramping one at a time after the gun, target, line-of-sight, and ammo loop are working.
+Start with native gun RPM and `Accuracy %` near your desired baseline. Add random RPM only after the gun, target, line-of-sight, and ammo loop are working.
 
 ## Damage policies
 
@@ -86,9 +78,7 @@ Exact Better Combat NPC motion playback on the client requires both Better Comba
 
 Useful movement toggles include `Move While Firing`, `Retreat Fire`, and `Keep Distance Fire`. `Keep Distance Fire` tries to maintain a preferred range, but it is ranged-only and locks out melee switching.
 
-`Reposition Minimum Ms` and `Reposition Maximum Ms` control how long one tactical movement plan remains active before the NPC reconsiders it. A new duration between those values is selected for each plan. General and Advanced can use different ranges.
-
-`Suppressive Fire` is different from target tracking. After line of sight is lost during combat, it may fire real TACZ rounds only at the last position the NPC actually saw, for the configured `Suppression Time Ms`. It does not follow the hidden target's current position and still consumes ammunition through the normal gun state. `Post-Fire Watch Ms` keeps the NPC aiming at that point after firing stops without spending more ammunition.
+`Suppressive Fire` is different from target tracking. After line of sight is lost during combat, it may fire real TACZ rounds only at the last position the NPC actually saw, for the configured `Suppression Time Ms`. It does not follow the hidden target's current position and still consumes ammunition through the normal gun state.
 
 ## Awareness and idle control
 
@@ -108,20 +98,6 @@ Use awareness settings to decide when the NPC may enter combat:
 
 Idle movement has four modes: `Stationary`, `Area Patrol`, `Return Only`, and `Route Patrol`. Area and Route patrols use the GUI `Default Walk Speed` and keep a valid A* path active. They do not replace failed pathfinding with direct movement into a wall; unreachable points are retried within a bounded limit and then skipped. Patrol coordinates resolve to nearby standable ground, and arrival checks include vertical distance for lower one-block waypoints.
 
-## Non-combat weapon poses
-
-`Non-Combat Weapon Pose` controls how an NPC holds a ranged weapon outside combat.
-
-| Pose | Behavior |
-| --- | --- |
-| `TACZ Default (Custom Off)` | Disables the custom idle pose and leaves presentation to TACZ. |
-| `Low Ready` | Holds the gun in a lowered ready position. |
-| `High Ready` | Holds the gun in a raised ready position. |
-| `Aim Ready` | Keeps an aiming-ready stance outside combat. |
-| `Custom Pose` | Uses a pose JSON saved with `CTF Pose Core`. |
-
-Low Ready and High Ready remain active while standing, Area/Route patrolling, or returning home. With the default action mapping, they yield to TACZ aiming, firing, and reload behavior when a target is detected or combat begins. Use the `Pose` category for finer per-action mapping.
-
 ## Weapon and appearance pools
 
 `Gun` reads TACZ gun stacks from the player's inventory. The selected gun can be saved directly, or multiple guns can be added to a random weapon pool. Pool rolls can happen on CustomNPCs init events such as respawn, chunk-load initialization, clone restore, or soul-stone restore.
@@ -136,11 +112,10 @@ Version 0.2.1 shows chance fields directly on weapon, skin, and armor pool rows.
 
 1. Confirm `Ranged` or `Auto` stance with one gun.
 2. Tune `Max Distance` and line-of-sight behavior.
-3. Tune fixed accuracy and `RPM Mode: TACZ Native`.
+3. Tune `Accuracy %` and native RPM.
 4. Tune firearm and melee damage policies.
 5. Add `Move While Firing` or tactical movement.
 6. Add melee switching and empty-ammo fallback.
 7. Add random gun, skin, and armor pools.
-8. Add burst ranges, accuracy ramping, and random reposition timing only after normal behavior is stable.
-9. Add advanced stance rules.
-10. Add suppressive fire and experimental cover last, after ordinary movement and line-of-sight behavior are confirmed.
+8. Add advanced stance rules only after the normal behavior is stable.
+9. Add suppressive fire and experimental cover last, after ordinary movement and line-of-sight behavior are confirmed.

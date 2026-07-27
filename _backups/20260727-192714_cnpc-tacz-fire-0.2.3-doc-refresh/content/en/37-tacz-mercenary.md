@@ -2,12 +2,12 @@
 title: Mercenary Contracts and Command HUD
 slug: tacz-mercenary
 order: 355
-description: Configure hire terms with CTF Mercenary Core, then manage active contracts through the player command HUD.
+description: Configure hire terms with Mercenary Core, then manage active contracts through the player command HUD.
 product: cnpc-tacz-fire
 category: Mercenaries
 section: mercenary
 status: Draft
-version: 0.2.3
+version: 0.2.2
 audience: Creators and players
 tags:
   - mercenary
@@ -21,16 +21,16 @@ The mercenary workflow deliberately separates creator tools from player runtime 
 
 | Screen or item | Who uses it | Purpose |
 | --- | --- | --- |
-| `CTF Mercenary Core` and `Mercenary Contract Settings` | Creator in Creative mode | Edit one managed TACZ Fire NPC's server-authoritative hire terms. |
+| `Mercenary Core` and `Mercenary Contract Settings` | Creator in Creative mode | Edit one managed TACZ Fire NPC's server-authoritative hire terms. |
 | `Mercenary Contract` confirmation | Player | Review cost, duration, roster usage, and owner-attack terms before paying. |
 | `Mercenary Status` command HUD | Player with active contracts | Inspect, select, command, summon, recall, or release hired mercenaries. |
 
-`CTF Mercenary Core` is not part of the `CTF Npc Core` firearm editor. It opens a separate editor and accepts only managed TACZ Fire CustomNPCs.
+`Mercenary Core` is not part of the `TACZ NPC Core` firearm editor. It opens a separate editor and accepts only managed TACZ Fire CustomNPCs.
 
 ## Creator setup
 
-1. Configure and test the NPC's firearm combat with `CTF Npc Core`.
-2. In Creative mode, hold `CTF Mercenary Core`.
+1. Configure and test the NPC's firearm combat with `TACZ NPC Core`.
+2. In Creative mode, hold `Mercenary Core`.
 3. Right-click the managed TACZ Fire NPC.
 4. Configure the contract and press `Save`.
 
@@ -50,7 +50,7 @@ Faction hostility and automatic contract break are independent. Enabling one doe
 
 ## Hiring as a player
 
-Interact normally with a hireable NPC. Do not hold `CTF Npc Core`, `CTF Mercenary Core`, or a CustomNPCs editor item; those items keep their own editing behavior.
+Interact normally with a hireable NPC. Do not hold `TACZ NPC Core`, `Mercenary Core`, or a CustomNPCs editor item; those items keep their own editing behavior.
 
 The non-pausing confirmation screen shows the NPC, price, contract duration, roster slots, and owner-attack rules. The server rechecks the offer, distance, item cost, current terms, ownership, and roster limit when the player confirms.
 
@@ -81,10 +81,6 @@ The HUD shows up to the five owned contracts, including:
 * Current owner-hit count, faction-hostility threshold, contract-break threshold, and reset time
 
 Mercenaries can be checked individually. Commands can target the selection or all eligible mercenaries, and the result reports how many accepted or skipped the order.
-
-Version 0.2.3 consolidates opposite orders into state-aware buttons. For example, an all-Follow selection offers Hold; otherwise the button offers Follow. Formation, Defensive/Aggressive posture, and Fire At Will/Hold Fire work the same way. If any selected mercenary is stored, deployment offers Summon first; when all selected mercenaries are deployed, it changes to Recall. Mixed selections can be normalized to Follow, Rear Form, Defensive, or Fire At Will.
-
-While the server processes an order, the button keeps its normal visual state but ignores additional clicks. It becomes interactive again after the result arrives, preventing accidental duplicate orders.
 
 ## Movement and combat commands
 

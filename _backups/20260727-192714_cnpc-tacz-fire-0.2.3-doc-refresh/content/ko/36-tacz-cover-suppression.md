@@ -2,12 +2,12 @@
 title: 엄폐, 제압 사격, 팩션 방어
 slug: tacz-cover-suppression
 order: 335
-description: 엄폐 트리거, 제압 사격과 사격 후 경계, 팩션 지원, 탐색 한도와 복귀 동작을 설정합니다.
+description: 0.2.2의 엄폐 트리거, 제압 사격, 팩션 지원, 탐색 한도와 복귀 동작을 설정합니다.
 product: cnpc-tacz-fire
 category: 전투 AI
 section: combat-ai
 status: Draft
-version: 0.2.3
+version: 0.2.2
 audience: 전투 설계자
 tags:
   - cover
@@ -19,11 +19,11 @@ tags:
 
 이 기능들은 제작자 설정이며 플레이어용 런타임 화면이 아닙니다.
 
-* `CTF Npc Core`로 NPC를 엽니다.
+* `TACZ NPC Core`로 NPC를 엽니다.
 * 전투·인식 설정에서 `Suppressive Fire`와 `Faction Defense`를 설정합니다.
 * 별도 `Cover` 카테고리에서 전략 엄폐를 설정합니다.
 
-엄폐는 실험적 기능입니다. 서버 전역 스위치와 NPC별 스위치가 모두 켜져야 합니다.
+0.2.2의 엄폐는 실험적 기능입니다. 서버 전역 스위치와 NPC별 스위치가 모두 켜져야 합니다.
 
 ```toml
 [experimentalCover]
@@ -89,8 +89,6 @@ Cover > Enable Cover: ON
 * `Suppression Time Ms` 동안만 허용됩니다.
 * 숨은 타겟의 현재 위치로 조준점을 갱신하지 않습니다.
 * 최종 발사, 탄약 재고, 총기 모드, 재장전, 사선 규칙은 그대로 적용됩니다.
-
-`Post-Fire Watch Ms`는 제압 사격이 끝난 뒤의 경계 시간입니다. 이 시간 동안 NPC는 마지막으로 본 지점을 계속 조준하지만 발사하지 않으므로 탄약을 쓰지 않습니다. `0`이면 사격 후 경계를 끕니다.
 
 처음에는 짧은 기본 시간으로 테스트하세요. 제압 시간을 길게 두면 유한 탄약을 빠르게 낭비하고 숨은 타겟을 계속 추적하는 것처럼 보일 수 있습니다.
 

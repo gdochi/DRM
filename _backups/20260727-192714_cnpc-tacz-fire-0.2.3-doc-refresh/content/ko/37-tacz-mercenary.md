@@ -2,12 +2,12 @@
 title: 용병 계약과 지휘 HUD
 slug: tacz-mercenary
 order: 355
-description: CTF Mercenary Core로 고용 조건을 설정하고 플레이어 지휘 HUD에서 활성 계약을 관리합니다.
+description: Mercenary Core로 고용 조건을 설정하고 플레이어 지휘 HUD에서 활성 계약을 관리합니다.
 product: cnpc-tacz-fire
 category: 용병
 section: mercenary
 status: Draft
-version: 0.2.3
+version: 0.2.2
 audience: 제작자와 플레이어
 tags:
   - mercenary
@@ -21,16 +21,16 @@ tags:
 
 | 화면 또는 아이템 | 사용자 | 용도 |
 | --- | --- | --- |
-| `CTF Mercenary Core`와 `Mercenary Contract Settings` | 크리에이티브 모드 제작자 | 관리 중인 TACZ Fire NPC 하나의 서버 판정 고용 조건을 편집합니다. |
+| `Mercenary Core`와 `Mercenary Contract Settings` | 크리에이티브 모드 제작자 | 관리 중인 TACZ Fire NPC 하나의 서버 판정 고용 조건을 편집합니다. |
 | `Mercenary Contract` 확인 화면 | 플레이어 | 결제 전 비용, 기간, 용병 슬롯, 소유자 공격 조건을 확인합니다. |
 | `Mercenary Status` 지휘 HUD | 활성 계약이 있는 플레이어 | 용병 상태 확인, 선택, 명령, 소환, 복귀, 계약 해제를 수행합니다. |
 
-`CTF Mercenary Core`는 `CTF Npc Core` 총기 편집기의 일부가 아닙니다. 별도 편집기를 열며 관리 중인 TACZ Fire CustomNPCs만 받습니다.
+`Mercenary Core`는 `TACZ NPC Core` 총기 편집기의 일부가 아닙니다. 별도 편집기를 열며 관리 중인 TACZ Fire CustomNPCs만 받습니다.
 
 ## 제작자 설정
 
-1. `CTF Npc Core`로 NPC의 총기 전투를 먼저 설정하고 테스트합니다.
-2. 크리에이티브 모드에서 `CTF Mercenary Core`를 듭니다.
+1. `TACZ NPC Core`로 NPC의 총기 전투를 먼저 설정하고 테스트합니다.
+2. 크리에이티브 모드에서 `Mercenary Core`를 듭니다.
 3. 관리 중인 TACZ Fire NPC를 우클릭합니다.
 4. 계약 조건을 설정하고 `Save`를 누릅니다.
 
@@ -50,7 +50,7 @@ tags:
 
 ## 플레이어 고용
 
-고용 가능한 NPC와 일반 상호작용을 합니다. `CTF Npc Core`, `CTF Mercenary Core`, CustomNPCs 편집 아이템을 들지 마세요. 해당 아이템은 자체 편집 동작을 유지합니다.
+고용 가능한 NPC와 일반 상호작용을 합니다. `TACZ NPC Core`, `Mercenary Core`, CustomNPCs 편집 아이템을 들지 마세요. 해당 아이템은 자체 편집 동작을 유지합니다.
 
 게임을 멈추지 않는 확인 화면에서 NPC, 가격, 계약 기간, 용병 슬롯, 소유자 공격 조건을 보여 줍니다. 플레이어가 확인하면 서버가 제안 유효 시간, 거리, 아이템 비용, 현재 계약 조건, 소유권, 용병 한도를 다시 검사합니다.
 
@@ -81,10 +81,6 @@ HUD는 최대 5개의 소유 계약을 보여 주며 아래 정보를 표시합�
 * 현재 소유자 공격 횟수, 팩션 적대 임계값, 계약 해제 임계값, 초기화까지 남은 시간
 
 용병을 개별 체크할 수 있습니다. 선택한 용병 또는 명령을 받을 수 있는 전체 용병에게 일괄 명령을 보내며, 적용 수와 건너뛴 수가 결과로 표시됩니다.
-
-0.2.3에서는 서로 반대되는 명령이 상태에 맞춰 한 버튼에서 바뀝니다. 선택한 용병이 모두 Follow 상태면 Hold를, 그렇지 않으면 Follow를 제안하는 식입니다. 진형, Defensive/Aggressive, Fire At Will/Hold Fire도 같은 방식이며, 보관된 용병이 하나라도 선택되어 있으면 Summon을 먼저 제안하고 모두 배치되어 있으면 Recall로 바뀝니다. 여러 상태가 섞인 선택은 Follow, Rear Form, Defensive, Fire At Will 같은 기준 상태로 정리할 수 있습니다.
-
-명령을 서버에서 처리하는 동안 버튼 모양은 유지되지만 추가 클릭은 잠깁니다. 처리 결과를 받은 뒤 다시 사용할 수 있으므로 같은 명령이 실수로 여러 번 전송되지 않습니다.
 
 ## 이동과 전투 명령
 

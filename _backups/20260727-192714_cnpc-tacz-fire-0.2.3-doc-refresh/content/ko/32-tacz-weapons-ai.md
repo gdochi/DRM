@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: 전투 AI
 section: combat-ai
 status: Draft
-version: 0.2.3
+version: 0.2.2
 audience: 총기 NPC 제작자
 tags:
   - weapon
@@ -27,7 +27,7 @@ tags:
 | `Auto` | 거리에 따라 원거리와 근접을 전환합니다. 대기 중에도 원거리 무기가 보입니다. |
 | `Auto Hidden` | 전투 중에만 전환하고, 전투 밖에서는 빈손으로 둡니다. |
 
-`Stance Mode: General`은 일반 스탠스 설정을 사용합니다. `Stance Mode: Advanced`는 `Always`, 체력 비율 이하, 타겟 엔티티, 타겟 팩션, 타겟 태그 같은 조건 1개를 적용합니다. `Always`와 체력 조건은 현재 전투 타겟이 없어도 판정되며, 타겟 엔티티·팩션·태그 조건만 살아 있는 타겟을 요구합니다. Advanced 모드는 충돌을 피하기 위해 활성 조건을 하나로 제한합니다.
+`Stance Mode: General`은 일반 스탠스 설정을 사용합니다. `Stance Mode: Advanced`는 체력 비율 이하, 타겟 엔티티, 타겟 팩션, 타겟 태그 같은 조건 1개를 적용합니다. Advanced 모드는 충돌을 피하기 위해 활성 조건을 하나로 제한합니다.
 
 ## 사격 설정
 
@@ -35,20 +35,12 @@ tags:
 | --- | --- |
 | `Max Distance` | TACZ 원거리 사격의 최대 타겟 거리입니다. 이보다 먼 타겟은 애드온이 무시합니다. |
 | `Melee Switch Range` | `Auto` 스탠스에서 근접으로 전환하는 거리입니다. 실제 명중 거리는 CustomNPCs 근접 범위를 따릅니다. |
-| `RPM Mode` | `TACZ Native`, `Fixed`, `Random Range` 중 하나를 선택합니다. 선택한 모드에 필요한 값만 표시됩니다. |
-| `Fixed RPM` | `RPM Mode: Fixed`에서 사용할 고정 목표 사격 속도입니다. |
-| `RPM Min`과 `RPM Max` | `RPM Mode: Random Range`에서 사용할 목표 RPM 범위입니다. |
-| `Fixed Accuracy %` | `Accuracy Ramp`가 꺼졌을 때 계속 사용하는 명중률입니다. `100`은 추가 조준 오차가 없습니다. |
-| `Ramp Start Accuracy %` | `Accuracy Ramp`가 켜졌을 때 시작 명중률입니다. |
-| `Ramp Max Accuracy %` | 조건을 계속 만족했을 때 도달할 최대 명중률입니다. 시작값보다 커야 합니다. |
-| `Ramp Time Ms` | 시작 명중률에서 최대 명중률까지 필요한 누적 추적 시간입니다. |
-| `Ramp Max Range` | 이 거리 안에서만 명중률 상승 시간이 누적됩니다. |
-| `Min Target Speed` | 명중률 상승을 진행시킬 플레이어의 최소 수평 이동 속도입니다. |
-| `Burst Minimum Shots` / `Burst Maximum Shots` | 애드온 버스트마다 포함 범위에서 발사 수를 새로 선택합니다. 두 값을 같게 하면 고정 길이가 됩니다. |
+| `RPM Override` | 고정 목표 사격 속도입니다. `0`이면 선택한 TACZ 총기의 기본 RPM을 사용합니다. |
+| `RPM Min`과 `RPM Max` | 랜덤 목표 RPM 범위입니다. 활성화되면 고정 RPM보다 우선합니다. |
+| `Accuracy %` | NPC 명중률입니다. `100`은 추가 조준 오차가 없고, 낮을수록 탄퍼짐이 생깁니다. |
+| `Burst Fire` | 정해진 수의 탄을 묶어서 발사한 뒤 다음 버스트 전까지 쉽니다. |
 
-`Accuracy Ramp`는 보이는 이동 플레이어가 설정 거리 안에 있고 최소 속도 이상으로 움직일 때만 진행됩니다. 플레이어가 멈추거나 범위를 벗어나면 진행 시간이 멈추고, 타겟이나 활성 General/Advanced 설정이 바뀌면 처음부터 다시 계산합니다. General과 Advanced는 서로 다른 명중률 상승 값을 가질 수 있습니다.
-
-처음에는 `RPM Mode: TACZ Native`와 고정 명중률로 시작하세요. 총기, 타겟, 시야, 탄약 루프가 안정된 뒤 랜덤 RPM, 버스트 범위, 명중률 상승을 하나씩 추가하는 편이 좋습니다.
+처음에는 총기의 기본 RPM과 원하는 기준 명중률로 시작하세요. 총기, 타겟, 시야, 탄약 루프가 안정된 뒤 랜덤 RPM을 추가하는 편이 좋습니다.
 
 ## 피해 정책
 
@@ -86,9 +78,7 @@ tags:
 
 자주 쓰는 이동 토글은 `Move While Firing`, `Retreat Fire`, `Keep Distance Fire`입니다. `Keep Distance Fire`는 선호 거리를 유지하려 하지만 원거리 전용이며 근접 전환을 사용하지 않습니다.
 
-`Reposition Minimum Ms`와 `Reposition Maximum Ms`는 한 전술 이동 계획을 얼마나 유지한 뒤 다시 판단할지 정합니다. NPC는 새 계획마다 두 값 사이의 시간을 다시 선택합니다. General과 Advanced에서 서로 다른 범위를 설정할 수 있습니다.
-
-`Suppressive Fire`는 숨은 타겟을 추적하는 기능이 아닙니다. 전투 중 시야를 잃으면 NPC가 실제로 마지막으로 본 위치에만 `Suppression Time Ms` 동안 TACZ 탄환을 발사할 수 있습니다. 숨은 타겟의 현재 위치를 따라가지 않으며 일반 총기 상태와 탄약을 그대로 소모합니다. `Post-Fire Watch Ms`를 사용하면 사격이 끝난 뒤에도 정해진 시간 동안 같은 지점을 조준하지만 탄약은 더 쓰지 않습니다.
+`Suppressive Fire`는 숨은 타겟을 추적하는 기능이 아닙니다. 전투 중 시야를 잃으면 NPC가 실제로 마지막으로 본 위치에만 `Suppression Time Ms` 동안 TACZ 탄환을 발사할 수 있습니다. 숨은 타겟의 현재 위치를 따라가지 않으며 일반 총기 상태와 탄약을 그대로 소모합니다.
 
 ## 인식과 대기 제어
 
@@ -108,20 +98,6 @@ tags:
 
 대기 이동은 `Stationary`, `Area Patrol`, `Return Only`, `Route Patrol` 네 가지입니다. Area/Route 순찰은 GUI의 `Default Walk Speed`를 사용하며 유효한 A* 경로를 유지합니다. 막힌 지점으로 직진하지 않고, 도달할 수 없는 경로는 제한된 횟수만 재시도한 뒤 다음 지점으로 넘어갑니다. 순찰 좌표는 주변의 설 수 있는 지면 높이로 보정되므로 한 블록 아래 지점도 수직 도달 판정에 포함됩니다.
 
-## 비전투 총기 포즈
-
-`Non-Combat Weapon Pose`는 원거리 무기를 든 NPC의 평시 자세를 정합니다.
-
-| 포즈 | 동작 |
-| --- | --- |
-| `TACZ Default (Custom Off)` | 사용자 평시 포즈를 끄고 TACZ 기본 표현에 맡깁니다. |
-| `Low Ready` | 총구를 낮춘 경계 자세를 사용합니다. |
-| `High Ready` | 총을 위쪽으로 든 경계 자세를 사용합니다. |
-| `Aim Ready` | 평시에도 조준 준비 자세를 사용합니다. |
-| `Custom Pose` | `CTF Pose Core`로 저장한 포즈 JSON을 사용합니다. |
-
-Low Ready와 High Ready는 정지 중뿐 아니라 Area/Route 순찰과 귀환 이동 중에도 유지됩니다. 기본 행동 연결에서는 타겟을 감지하거나 전투가 시작되면 TACZ 조준·사격·재장전 동작에 제어를 넘깁니다. 더 세밀한 행동별 연결은 `Pose` 카테고리에서 설정합니다.
-
 ## 무기와 외형 풀
 
 `Gun`은 플레이어 인벤토리의 TACZ 총기 스택을 읽습니다. 선택한 총기를 바로 저장하거나 여러 총기를 랜덤 무기 풀에 넣을 수 있습니다. 풀 굴림은 리스폰, 청크 로드 초기화, 클론 복원, 소울스톤 복원 같은 CustomNPCs init 이벤트에서 실행될 수 있습니다.
@@ -136,11 +112,10 @@ Low Ready와 High Ready는 정지 중뿐 아니라 Area/Route 순찰과 귀환 �
 
 1. 총기 하나로 `Ranged` 또는 `Auto` 스탠스를 확인합니다.
 2. `Max Distance`와 시야 동작을 조정합니다.
-3. 고정 명중률과 `RPM Mode: TACZ Native`를 조정합니다.
+3. `Accuracy %`와 기본 RPM을 조정합니다.
 4. 총기·근접 피해 정책을 조정합니다.
 5. `Move While Firing` 또는 전술 이동을 추가합니다.
 6. 근접 전환과 탄약 소진 전환을 추가합니다.
 7. 랜덤 총기, 스킨, 방어구 풀을 추가합니다.
-8. 일반 동작이 안정된 뒤 버스트 범위, 명중률 상승, 랜덤 재배치 간격을 추가합니다.
-9. Advanced 스탠스 규칙을 추가합니다.
-10. 일반 이동과 시야 동작을 확인한 뒤 제압 사격과 실험적 엄폐를 마지막에 추가합니다.
+8. 일반 동작이 안정된 뒤 Advanced 스탠스 규칙을 추가합니다.
+9. 일반 이동과 시야 동작을 확인한 뒤 제압 사격과 실험적 엄폐를 마지막에 추가합니다.

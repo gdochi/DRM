@@ -2,12 +2,12 @@
 title: Cover, Suppressive Fire, and Faction Defense
 slug: tacz-cover-suppression
 order: 335
-description: Configure cover triggers, suppressive fire and post-fire watch, faction assistance, limits, and recovery behavior.
+description: Configure 0.2.2 cover triggers, suppressive fire, faction assistance, limits, and recovery behavior.
 product: cnpc-tacz-fire
 category: Combat AI
 section: combat-ai
 status: Draft
-version: 0.2.3
+version: 0.2.2
 audience: Encounter designers
 tags:
   - cover
@@ -19,11 +19,11 @@ tags:
 
 These are creator settings, not player runtime screens.
 
-* Open the NPC with `CTF Npc Core`.
+* Open the NPC with `TACZ NPC Core`.
 * Configure `Suppressive Fire` and `Faction Defense` in the combat and sensing controls.
 * Configure strategic cover in the separate `Cover` category.
 
-Cover is experimental. The global server switch and the NPC's own switch must both be enabled:
+Cover is experimental in 0.2.2. The global server switch and the NPC's own switch must both be enabled:
 
 ```toml
 [experimentalCover]
@@ -89,8 +89,6 @@ Cover does not guarantee that a valid point exists. Open terrain, sealed rooms, 
 * It remains allowed only for `Suppression Time Ms`.
 * It does not update its aim from the hidden target's current position.
 * Final firing, ammo stock, gun mode, reload, and line-of-fire rules still apply.
-
-`Post-Fire Watch Ms` controls the vigilance period after suppressive fire ends. During this time, the NPC keeps aiming at the last seen point without firing or spending ammunition. Set it to `0` to disable the post-fire watch.
 
 Start with the default short window. A long suppression window can waste finite ammunition and make a lost target look as if it is still being tracked.
 

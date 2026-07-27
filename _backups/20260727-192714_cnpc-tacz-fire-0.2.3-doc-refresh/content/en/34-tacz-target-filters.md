@@ -7,7 +7,7 @@ product: cnpc-tacz-fire
 category: Targets
 section: targets
 status: Draft
-version: 0.2.3
+version: 0.2.2
 audience: Encounter designers
 tags:
   - target
@@ -49,19 +49,19 @@ Tags are useful for scripted events. For example, a dungeon script can add an `i
 
 ## Factions and advanced stance
 
-Advanced stance rules can use `Always`, NPC health below a ratio, target faction, target tag, or target entity ID. `Always` and the NPC-health condition can be evaluated without a current combat target. Target faction, tag, and entity conditions require a living target, so add the needed IDs and tags in `Targets` before using them from `Stance Mode: Advanced`.
+Advanced stance rules can match target factions, target tags, or target entity IDs. Add target IDs and tags in `Targets` first, then use them from `Stance Mode: Advanced`.
 
 Advanced mode supports one active conditional rule. This keeps the result predictable. Use `Default` behavior if the NPC should fall back to normal `General` settings when the advanced condition does not match.
 
-## Load and Save As profiles
+## Import and export profiles
 
-Topbar `Load` and `Save As` profiles are stored under:
+`Import` and `Export` profiles are stored under:
 
 ```text
 config/cnpc_tacz_fire/target_entities/
 ```
 
-Current profiles are not just target-entity files. They work more like cloning presets that connect one NPC's TACZ Fire setup to another CustomNPCs NPC. Configure guns, AI, targets, ammo, and pools on one NPC, store the profile with `Save As`, then `Load` it on another NPC to apply the same combat setup quickly. Legacy target-only JSON can still be loaded.
+Current profiles are not just target-entity files. They work more like cloning presets that connect one NPC's TACZ Fire setup to another CustomNPCs NPC. Configure guns, AI, targets, ammo, and pools on one NPC, `Export` the profile, then `Import` it on another NPC to apply the same combat setup quickly. Legacy target-only JSON can still be imported.
 
 ## Practical examples
 
