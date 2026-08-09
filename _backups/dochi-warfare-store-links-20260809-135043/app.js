@@ -64,7 +64,6 @@
         youtube: "YouTube",
         openDocs: "문서 열기",
         curseForge: "CurseForge",
-        modrinth: "Modrinth",
         homeTitle: "DRM WIKI",
         standaloneMods: "단독 모드",
         addons: "애드온",
@@ -93,7 +92,6 @@
         youtube: "YouTube",
         openDocs: "Open docs",
         curseForge: "CurseForge",
-        modrinth: "Modrinth",
         homeTitle: "DRM WIKI",
         standaloneMods: "Standalone Mods",
         addons: "Add-ons",
@@ -122,7 +120,6 @@
         youtube: "YouTube",
         openDocs: "Открыть документацию",
         curseForge: "CurseForge",
-        modrinth: "Modrinth",
         homeTitle: "DRM WIKI",
         standaloneMods: "Самостоятельные моды",
         addons: "Дополнения",
@@ -151,7 +148,6 @@
         youtube: "YouTube",
         openDocs: "打开文档",
         curseForge: "CurseForge",
-        modrinth: "Modrinth",
         homeTitle: "DRM WIKI",
         standaloneMods: "独立模组",
         addons: "附加模组",
@@ -180,7 +176,6 @@
         youtube: "YouTube",
         openDocs: "ドキュメントを開く",
         curseForge: "CurseForge",
-        modrinth: "Modrinth",
         homeTitle: "DRM WIKI",
         standaloneMods: "単独MOD",
         addons: "アドオン",
@@ -626,7 +621,6 @@
     const renderCards = (groupEntries) => groupEntries.map((meta) => {
       const docsHref = modDocsLink(meta);
       const curseForgeHref = meta.curseForgeUrl || meta.url || meta.href || "";
-      const modrinthHref = meta.modrinthUrl || "";
       const body = `
           ${renderModLogo(meta)}
           <div class="track-body">
@@ -637,8 +631,7 @@
         <div class="track-actions">
           ${docsHref ? `<a class="track-open" href="${docsHref}">${t("openDocs")}${icon("chevron")}</a>` : ""}
           ${curseForgeHref ? `<a class="track-open external" href="${escapeAttr(curseForgeHref)}" target="_blank" rel="noreferrer">${t("curseForge")}${icon("external")}</a>` : ""}
-          ${modrinthHref ? `<a class="track-open external" href="${escapeAttr(modrinthHref)}" target="_blank" rel="noreferrer">${t("modrinth")}${icon("external")}</a>` : ""}
-          ${!docsHref && !curseForgeHref && !modrinthHref ? `<span class="track-status">${escapeHtml(statusText(meta))}</span>` : ""}
+          ${!docsHref && !curseForgeHref ? `<span class="track-status">${escapeHtml(statusText(meta))}</span>` : ""}
         </div>
       `;
       return `<article class="track-card">${body}${actions}</article>`;
