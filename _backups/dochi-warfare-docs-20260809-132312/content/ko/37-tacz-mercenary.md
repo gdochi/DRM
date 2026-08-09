@@ -1,13 +1,13 @@
 ---
 title: 용병 계약과 지휘 HUD
-slug: warfare-mercenary
+slug: tacz-mercenary
 order: 355
-description: DW Mercenary Core로 고용 조건을 설정하고 플레이어 지휘 HUD에서 활성 계약을 관리합니다.
-product: dochi-warfare
+description: CTF Mercenary Core로 고용 조건을 설정하고 플레이어 지휘 HUD에서 활성 계약을 관리합니다.
+product: cnpc-tacz-fire
 category: 용병
 section: mercenary
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: 제작자와 플레이어
 tags:
   - mercenary
@@ -21,17 +21,17 @@ tags:
 
 | 화면 또는 아이템 | 사용자 | 용도 |
 | --- | --- | --- |
-| `DW Mercenary Core`와 `Mercenary Contract Settings` | 크리에이티브 모드 제작자 | DW 관리 NPC 하나의 서버 판정 고용 조건을 편집합니다. |
+| `CTF Mercenary Core`와 `Mercenary Contract Settings` | 크리에이티브 모드 제작자 | 관리 중인 TACZ Fire NPC 하나의 서버 판정 고용 조건을 편집합니다. |
 | `Mercenary Contract` 확인 화면 | 플레이어 | 결제 전 비용, 기간, 용병 슬롯, 소유자 공격 조건을 확인합니다. |
 | `Mercenary Status` 지휘 HUD | 활성 계약이 있는 플레이어 | 용병 상태 확인, 선택, 명령, 소환, 복귀, 계약 해제를 수행합니다. |
 
-`DW Mercenary Core`는 `DW Npc Core` 총기 편집기의 일부가 아닙니다. 별도 편집기를 열며 DW가 관리하는 CustomNPCs만 받습니다.
+`CTF Mercenary Core`는 `CTF Npc Core` 총기 편집기의 일부가 아닙니다. 별도 편집기를 열며 관리 중인 TACZ Fire CustomNPCs만 받습니다.
 
 ## 제작자 설정
 
-1. `DW Npc Core`로 NPC의 총기 전투를 먼저 설정하고 테스트합니다.
-2. 크리에이티브 모드에서 `DW Mercenary Core`를 듭니다.
-3. DW 관리 NPC를 우클릭합니다.
+1. `CTF Npc Core`로 NPC의 총기 전투를 먼저 설정하고 테스트합니다.
+2. 크리에이티브 모드에서 `CTF Mercenary Core`를 듭니다.
+3. 관리 중인 TACZ Fire NPC를 우클릭합니다.
 4. 계약 조건을 설정하고 `Save`를 누릅니다.
 
 | 계약 필드 | 의미 |
@@ -50,7 +50,7 @@ tags:
 
 ## 플레이어 고용
 
-고용 가능한 NPC와 일반 상호작용을 합니다. `DW Npc Core`, `DW Mercenary Core`, CustomNPCs 편집 아이템을 들지 마세요. 해당 아이템은 자체 편집 동작을 유지합니다.
+고용 가능한 NPC와 일반 상호작용을 합니다. `CTF Npc Core`, `CTF Mercenary Core`, CustomNPCs 편집 아이템을 들지 마세요. 해당 아이템은 자체 편집 동작을 유지합니다.
 
 게임을 멈추지 않는 확인 화면에서 NPC, 가격, 계약 기간, 용병 슬롯, 소유자 공격 조건을 보여 줍니다. 플레이어가 확인하면 서버가 제안 유효 시간, 거리, 아이템 비용, 현재 계약 조건, 소유권, 용병 한도를 다시 검사합니다.
 

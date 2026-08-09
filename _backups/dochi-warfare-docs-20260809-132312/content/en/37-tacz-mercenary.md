@@ -1,13 +1,13 @@
 ---
 title: Mercenary Contracts and Command HUD
-slug: warfare-mercenary
+slug: tacz-mercenary
 order: 355
-description: Configure hire terms with DW Mercenary Core, then manage active contracts through the player command HUD.
-product: dochi-warfare
+description: Configure hire terms with CTF Mercenary Core, then manage active contracts through the player command HUD.
+product: cnpc-tacz-fire
 category: Mercenaries
 section: mercenary
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: Creators and players
 tags:
   - mercenary
@@ -21,17 +21,17 @@ The mercenary workflow deliberately separates creator tools from player runtime 
 
 | Screen or item | Who uses it | Purpose |
 | --- | --- | --- |
-| `DW Mercenary Core` and `Mercenary Contract Settings` | Creator in Creative mode | Edit one DW-managed NPC's server-authoritative hire terms. |
+| `CTF Mercenary Core` and `Mercenary Contract Settings` | Creator in Creative mode | Edit one managed TACZ Fire NPC's server-authoritative hire terms. |
 | `Mercenary Contract` confirmation | Player | Review cost, duration, roster usage, and owner-attack terms before paying. |
 | `Mercenary Status` command HUD | Player with active contracts | Inspect, select, command, summon, recall, or release hired mercenaries. |
 
-`DW Mercenary Core` is not part of the `DW Npc Core` firearm editor. It opens a separate editor and accepts only DW-managed CustomNPCs.
+`CTF Mercenary Core` is not part of the `CTF Npc Core` firearm editor. It opens a separate editor and accepts only managed TACZ Fire CustomNPCs.
 
 ## Creator setup
 
-1. Configure and test the NPC's firearm combat with `DW Npc Core`.
-2. In Creative mode, hold `DW Mercenary Core`.
-3. Right-click the DW-managed NPC.
+1. Configure and test the NPC's firearm combat with `CTF Npc Core`.
+2. In Creative mode, hold `CTF Mercenary Core`.
+3. Right-click the managed TACZ Fire NPC.
 4. Configure the contract and press `Save`.
 
 | Contract field | Meaning |
@@ -50,7 +50,7 @@ Faction hostility and automatic contract break are independent. Enabling one doe
 
 ## Hiring as a player
 
-Interact normally with a hireable NPC. Do not hold `DW Npc Core`, `DW Mercenary Core`, or a CustomNPCs editor item; those items keep their own editing behavior.
+Interact normally with a hireable NPC. Do not hold `CTF Npc Core`, `CTF Mercenary Core`, or a CustomNPCs editor item; those items keep their own editing behavior.
 
 The non-pausing confirmation screen shows the NPC, price, contract duration, roster slots, and owner-attack rules. The server rechecks the offer, distance, item cost, current terms, ownership, and roster limit when the player confirms.
 

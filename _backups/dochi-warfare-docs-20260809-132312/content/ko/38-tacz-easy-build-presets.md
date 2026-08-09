@@ -1,13 +1,13 @@
 ---
 title: Easy Build와 전투 프리셋
-slug: warfare-easy-build-presets
+slug: tacz-easy-build-presets
 order: 325
 description: 질문형 Easy Build와 5개 전투 프리셋으로 NPC 행동을 빠르게 구성하는 방법입니다.
-product: dochi-warfare
+product: cnpc-tacz-fire
 category: 설정 도구
 section: setup
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: 총기 NPC 제작자
 tags:
   - easy-build
@@ -17,7 +17,7 @@ tags:
 
 ## 두 빠른 설정 도구
 
-`Easy Build`와 `Presets`는 `DW Npc Core` 편집기 상단의 도움말 구역에 있는 제작자 도구입니다. 둘 다 현재 NPC의 전투 동작을 빠르게 구성하지만 사용 방식은 다릅니다.
+`Easy Build`와 `Presets`는 `CTF Npc Core` 편집기 상단의 도움말 구역에 있는 제작자 도구입니다. 둘 다 현재 NPC의 전투 동작을 빠르게 구성하지만 사용 방식은 다릅니다.
 
 | 도구 | 적합한 상황 | 결과 |
 | --- | --- | --- |
@@ -28,7 +28,7 @@ tags:
 
 ## Easy Build 사용 순서
 
-1. `DW Npc Core`로 NPC를 엽니다.
+1. `CTF Npc Core`로 NPC를 엽니다.
 2. 상단의 `Easy Build`를 누릅니다.
 3. 원하는 상세 수준을 선택합니다.
 4. 질문에 답합니다. 현재 답에 따라 필요한 추가 질문만 나타날 수 있습니다.
@@ -82,3 +82,4 @@ Easy Build는 행동을 구성하는 도구입니다. 다음 콘텐츠는 유지
 3. `RPM Mode`, 명중률, 버스트 범위가 탄약 재고에 비해 과하지 않은지 확인합니다.
 4. 이동과 엄폐를 단순한 지형에서 테스트합니다.
 5. 결과가 맞으면 `Save`하고, 필요하면 `Save As`로 전체 NPC 설정 프로필을 보관합니다.
+

@@ -1,13 +1,13 @@
 ---
 title: Setup and First NPC
-slug: warfare-setup
+slug: tacz-setup
 order: 320
-description: Install Dochi's Warfare 0.2.4, open the DW creator tools, migrate legacy profiles, and build a first managed NPC.
-product: dochi-warfare
+description: Install checks, the CTF Npc Core workflow, and the first safe test configuration.
+product: cnpc-tacz-fire
 category: Setup
 section: setup
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: Server operators
 tags:
   - setup
@@ -17,30 +17,27 @@ tags:
 
 ## Install checklist
 
-Dochi's Warfare 0.2.4 targets Forge 1.20.1. TACZ is the required gun-runtime baseline, and Player Animator is required on the client. CustomNPCs is required for the NPC workflow; PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, and LesRaisins Tactical Equipments are optional integrations.
+CNPC TACZ Fire targets Forge 1.20.1. Building firearm NPCs requires TACZ and CustomNPCs. Install optional playerAnimator, Better Combat, and Mob Player Animator only for the animation integrations you use.
 
 | Component | Required for this wiki workflow | Notes |
 | --- | --- | --- |
 | Forge | Yes | Use a 1.20.1 Forge 47+ environment. |
-| TACZ | Yes | Use 1.1.8 through the supported 1.1.x range on client and server. |
-| Player Animator | Client required | Required for the shared managed-gun animation controller. |
-| CustomNPCs | Yes for NPC setup | Required for managed NPCs, mercenaries, poses, and NPC clones. |
-| Dochi's Warfare | Yes | Add the 0.2.4 JAR on both sides for normal modded server play. |
-| PointBlank | Optional | Use exactly one supported branch: 1.11.1 or 2.1.0. |
-| SuperbWarfare | Optional | Native gun and vehicle support requires 0.8.9 final build `6effe4385`. |
+| TACZ | Yes | NPC guns are real TACZ gun items. |
+| CustomNPCs | Yes for NPC setup | The `CTF Npc Core` item only edits CustomNPCs NPC entities. |
+| CNPC TACZ Fire | Yes | Add it on both sides for normal modded server play. |
+| playerAnimator | Optional | Client-side animation support when present. |
 | Better Combat | Optional | Install it for registered melee weapon attacks, poses, and weapon-based attack timing. Keep the server and client mod sets aligned in normal multiplayer. |
 | Mob Player Animator | Optional | Client mod required for exact Better Combat NPC motion playback. Without it, the NPC falls back to a vanilla main-hand swing. |
-| LesRaisins Tactical Equipments | Optional | Enables supported grenade throws and LRT grenade booby-trap payloads. |
 
 ## Open the per-NPC GUI
 
 1. Enter creative mode.
-2. Get the item named `DW Npc Core`.
-3. Right-click a CustomNPCs NPC with `DW Npc Core`.
-4. The DW per-NPC setup screen opens for that NPC.
+2. Get the item named `CTF Npc Core`.
+3. Right-click a CustomNPCs NPC with `CTF Npc Core`.
+4. The `cnpc_tacz_fire` setup screen opens for that NPC.
 5. Change settings, then press `Save`.
 
-`DW Npc Core` is a Creative-mode editor tool. Right-click a CustomNPCs NPC for firearm settings, a supported SuperbWarfare vehicle for vehicle AI settings, or air for the NPC/vehicle clone library.
+`CTF Npc Core` is intentionally an editor tool. It rejects non-CustomNPCs targets and requires creative mode for editing.
 
 ## First safe test
 
@@ -48,7 +45,7 @@ Use this first pass before building a complex combat encounter:
 
 1. Turn on `TACZ Fire NPC Mode`.
 2. Keep `Enabled` ON.
-3. In `Gun`, choose one supported gun from your player inventory. Start with a plain TACZ gun before testing an optional adapter.
+3. In `Gun`, choose one TACZ gun from your player inventory.
 4. In the `General` settings under `Senses`, use `Stance: Auto` or `Stance: Ranged`.
 5. In `Fire`, choose `RPM Mode: TACZ Native` so the gun uses its native RPM.
 6. In `Ammo`, keep `Reload` and `Supply Ammo` ON and keep `Ammo Stock` at `-1`.
@@ -67,7 +64,7 @@ After that works, add finite ammo, random pools, advanced target filters, moveme
 | `Cover` | experimental cover triggers, damage thresholds, search limits, hold/cooldown timing, movement speed, and peek cycles. |
 | `Targets` | entity IDs, filters, required/rejected tags, import/export profiles. |
 | `Ammo` | reload type, ammo stock and regeneration, reload movement, and empty-ammo fallback. |
-| `Gun` | selecting supported TACZ, PointBlank, or SuperbWarfare guns, ranged damage policy, ranged pools, and NPC preview. |
+| `Gun` | selecting TACZ guns, ranged damage policy, ranged weapon pools with inline chances, and NPC preview. |
 | `Melee` | selecting non-TACZ items, damage/knockback/attack-speed policies, `Better Combat Compatibility`, melee pools with inline chances, and NPC preview. |
 | `Armor` | scrollable armor set pools using real head, chest, legs, and feet slots, with NPC preview. |
 | `Grenade` | optional grenade throws when supported throwable data is available. |
@@ -80,7 +77,7 @@ Version 0.2.1 edits weapon, skin, and armor pool chances directly in each entry 
 
 ## Topbar tools and separate editor items
 
-The topbar separates file actions, help tools, and `TACZ Fire NPC Mode`.
+The 0.2.3 topbar separates file actions, help tools, and `TACZ Fire NPC Mode`.
 
 | Area | Tools |
 | --- | --- |
@@ -88,16 +85,13 @@ The topbar separates file actions, help tools, and `TACZ Fire NPC Mode`.
 | Help | `Help`, `Easy Build`, `Presets`, tutorial, and tooltips |
 | Mode | The current NPC's `TACZ Fire NPC Mode` |
 
-The four core items open different creator screens.
+The three core items open different creator screens.
 
 | Item | Creator screen |
 | --- | --- |
-| `DW Npc Core` | Guns, combat AI, ammo, targets, equipment, FX, and per-action pose mapping |
-| `DW Pose Core` | Custom poses and TACZ gun render transforms for Steve/Alex NPCs |
-| `DW Mercenary Core` | Server-authoritative mercenary contract terms |
-| `DW Booby Trap Core` | Password, explosion, effect, launch, lifecycle, profile, and manager tools for blocks |
-
-Right-click air with `DW Npc Core` to open the `Entity Clone Library`. It stores and summons server-side JSON templates for CustomNPCs NPCs and supported SuperbWarfare vehicles. This is separate from the NPC setup `Save As` profile flow.
+| `CTF Npc Core` | Guns, combat AI, ammo, targets, equipment, FX, and per-action pose mapping |
+| `CTF Pose Core` | Custom poses and TACZ gun render transforms for Steve/Alex NPCs |
+| `CTF Mercenary Core` | Server-authoritative mercenary contract terms |
 
 The player-facing hire confirmation and `J` command HUD are in-game runtime screens, not creator editors.
 
@@ -106,10 +100,8 @@ The player-facing hire confirmation and `J` command HUD are in-game runtime scre
 Global bridge defaults are generated at:
 
 ```text
-config/dochi_warfare-common.toml
+config/cnpc_tacz_fire-common.toml
 ```
-
-Client-only visual defaults are stored separately in `config/dochi_warfare-client.toml`.
 
 The GUI is still the normal authoring path. Use the config for defaults and script bridge behavior, then override individual NPCs through the GUI or scripts when a specific encounter needs special behavior.
 
@@ -125,16 +117,7 @@ enabled = true
 The topbar `Load` and `Save As` controls use JSON profiles under:
 
 ```text
-config/dochi_warfare/target_entities/
+config/cnpc_tacz_fire/target_entities/
 ```
 
-Current `Save As` profiles store the NPC's full DW firearm setup, not just the target list. Configure one NPC, save a profile, then `Load` it on another CustomNPCs NPC to quickly clone the same combat setup. Legacy target-only JSON can still be loaded, but the current authoring flow is best understood as an NPC setup preset.
-
-Reusable JSON now belongs under `config/dochi_warfare/`. On first use, the mod copies missing legacy files from `config/cnpc_tacz_fire/` without overwriting newer destination files or deleting the recoverable originals. Other 0.2.4 libraries use these roots:
-
-```text
-config/dochi_warfare/poses/
-config/dochi_warfare/vehicle_ai/profiles/
-config/dochi_warfare/entity_clones/
-config/dochi_warfare/booby_traps/profiles/
-```
+Current `Save As` profiles store the full TACZ Fire setup for the NPC, not just the target list. Configure one NPC, save a profile, then `Load` it on another CustomNPCs NPC to quickly clone the same combat setup. Legacy target-only JSON can still be loaded, but the current authoring flow is best understood as an NPC setup preset.

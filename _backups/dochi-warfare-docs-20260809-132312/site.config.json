@@ -1,7 +1,7 @@
 {
   "title": "DRM",
   "brand": "DRM",
-  "description": "Documentation hub for DRM Core, DRM Cobblemon Editor, DRM Mob Editor, and Dochi's Warfare.",
+  "description": "Documentation hub for DRM Core, DRM Cobblemon Editor, DRM Mob Editor, and CNPC TACZ Fire.",
   "defaultLocale": "en",
   "fallbackLocale": "en",
   "repository": "",
@@ -72,30 +72,31 @@
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor"
     },
     {
-      "id": "dochi-warfare",
-      "label": "Dochi's Warfare",
-      "label_ko": "도치 워페어",
-      "label_ru": "Dochi's Warfare",
-      "label_zh": "Dochi's Warfare",
-      "label_ja": "Dochi's Warfare",
-      "shortLabel": "Warfare",
-      "shortLabel_ko": "워페어",
-      "shortLabel_ru": "Warfare",
-      "shortLabel_zh": "Warfare",
-      "shortLabel_ja": "Warfare",
-      "description": "CustomNPCs firearm combat, multi-gun adapters, SuperbWarfare vehicle AI, mercenaries, cloning, and booby traps.",
-      "description_ko": "CustomNPCs 총기 전투, 다중 총기 연동, SuperbWarfare 차량 AI, 용병, 클론, 부비트랩을 다루는 전투 제작 모드입니다.",
-      "description_ru": "Мод для боёв CustomNPCs: разные системы оружия, ИИ техники SuperbWarfare, наёмники, клонирование и ловушки.",
-      "description_zh": "面向 CustomNPCs 枪械战斗的模组，包含多枪械适配、SuperbWarfare 载具 AI、雇佣兵、克隆与诡雷。",
-      "description_ja": "CustomNPCsの銃器戦闘、複数銃器MOD連携、SuperbWarfare車両AI、傭兵、クローン、ブービートラップを扱うMODです。",
-      "logo": "assets/mod-logos/dochi_warfare.png",
-      "logoAlt": "Dochi's Warfare logo",
-      "logoAlt_ko": "도치 워페어 로고",
-      "logoAlt_ru": "Логотип Dochi's Warfare",
-      "logoAlt_zh": "Dochi's Warfare 标志",
-      "logoAlt_ja": "Dochi's Warfare ロゴ",
+      "id": "cnpc-tacz-fire",
+      "label": "CNPC TACZ Fire",
+      "label_ko": "CNPC TACZ Fire",
+      "label_ru": "CNPC TACZ Fire",
+      "label_zh": "CNPC TACZ Fire",
+      "label_ja": "CNPC TACZ Fire",
+      "shortLabel": "TACZ Fire",
+      "shortLabel_ko": "TACZ Fire",
+      "shortLabel_ru": "TACZ Fire",
+      "shortLabel_zh": "TACZ Fire",
+      "shortLabel_ja": "TACZ Fire",
+      "description": "CustomNPCs firearm AI, tactical cover, and mercenary contracts powered by real TACZ guns.",
+      "description_ko": "실제 TACZ 총기를 사용하는 CustomNPCs 총기 AI, 전술 엄폐, 용병 계약 문서입니다.",
+      "description_ru": "Документация CustomNPCs для реального оружия TACZ, тактических укрытий и контрактов наёмников.",
+      "description_zh": "使用真实 TACZ 枪械的 CustomNPCs 枪械 AI、战术掩体和雇佣兵契约文档。",
+      "description_ja": "実際のTACZ銃を使うCustomNPCs銃器AI、戦術的な遮蔽、傭兵契約のドキュメントです。",
+      "logo": "assets/mod-logos/cnpc_tacz_fire.png",
+      "logoAlt": "CNPC TACZ Fire logo",
+      "logoAlt_ko": "CNPC TACZ Fire 로고",
+      "logoAlt_ru": "Логотип CNPC TACZ Fire",
+      "logoAlt_zh": "CNPC TACZ Fire 标志",
+      "logoAlt_ja": "CNPC TACZ Fire ロゴ",
       "type": "standalone",
-      "product": "dochi-warfare"
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-tacz-fire",
+      "product": "cnpc-tacz-fire"
     },
     {
       "id": "cnpc-real-armor",
@@ -128,27 +129,27 @@
     "en": {
       "label": "English",
       "shortLabel": "EN",
-      "description": "A structured documentation hub for DRM Core, DRM Cobblemon Editor, DRM Mob Editor, and Dochi's Warfare."
+      "description": "A structured documentation hub for DRM Core, DRM Cobblemon Editor, DRM Mob Editor, and CNPC TACZ Fire."
     },
     "ko": {
       "label": "한국어",
       "shortLabel": "KO",
-      "description": "DRM Core, DRM Cobblemon Editor, DRM Mob Editor, 도치 워페어 문서를 한국어로 정리한 문서 허브입니다."
+      "description": "DRM Core, DRM Cobblemon Editor, DRM Mob Editor, CNPC TACZ Fire 문서를 한국어로 정리한 문서 허브입니다."
     },
     "ru": {
       "label": "Русский",
       "shortLabel": "RU",
-      "description": "Структурированный центр документации для DRM Core, DRM Cobblemon Editor, DRM Mob Editor и Dochi's Warfare."
+      "description": "Структурированный центр документации для DRM Core, DRM Cobblemon Editor, DRM Mob Editor и CNPC TACZ Fire."
     },
     "zh": {
       "label": "简体中文",
       "shortLabel": "ZH",
-      "description": "DRM Core、DRM Cobblemon Editor、DRM Mob Editor 和 Dochi's Warfare 的结构化文档中心。"
+      "description": "DRM Core、DRM Cobblemon Editor、DRM Mob Editor 和 CNPC TACZ Fire 的结构化文档中心。"
     },
     "ja": {
       "label": "日本語",
       "shortLabel": "JA",
-      "description": "DRM Core、DRM Cobblemon Editor、DRM Mob Editor、Dochi's Warfare の構造化されたドキュメントハブです。"
+      "description": "DRM Core、DRM Cobblemon Editor、DRM Mob Editor、CNPC TACZ Fire の構造化されたドキュメントハブです。"
     }
   },
   "products": {
@@ -398,23 +399,23 @@
         }
       ]
     },
-    "dochi-warfare": {
-      "label": "Dochi's Warfare",
-      "label_ko": "도치 워페어",
-      "label_ru": "Dochi's Warfare",
-      "label_zh": "Dochi's Warfare",
-      "label_ja": "Dochi's Warfare",
-      "shortLabel": "Warfare",
-      "shortLabel_ko": "워페어",
-      "shortLabel_ru": "Warfare",
-      "shortLabel_zh": "Warfare",
-      "shortLabel_ja": "Warfare",
+    "cnpc-tacz-fire": {
+      "label": "CNPC TACZ Fire",
+      "label_ko": "CNPC TACZ Fire",
+      "label_ru": "CNPC TACZ Fire",
+      "label_zh": "CNPC TACZ Fire",
+      "label_ja": "CNPC TACZ Fire",
+      "shortLabel": "TACZ Fire",
+      "shortLabel_ko": "TACZ Fire",
+      "shortLabel_ru": "TACZ Fire",
+      "shortLabel_zh": "TACZ Fire",
+      "shortLabel_ja": "TACZ Fire",
       "accent": "amber",
-      "description": "CustomNPCs combat authoring with TACZ, PointBlank and SuperbWarfare guns, vehicle AI, cover, mercenaries, entity clones, and booby traps.",
-      "description_ko": "TACZ·PointBlank·SuperbWarfare 총기, 차량 AI, 엄폐, 용병, 엔티티 클론, 부비트랩을 함께 다루는 CustomNPCs 전투 제작 문서입니다.",
-      "description_ru": "Документация по боям CustomNPCs с оружием TACZ, PointBlank и SuperbWarfare, ИИ техники, наёмниками, клонами и ловушками.",
-      "description_zh": "CustomNPCs 战斗制作文档，涵盖 TACZ、PointBlank 与 SuperbWarfare 枪械、载具 AI、雇佣兵、实体克隆和诡雷。",
-      "description_ja": "TACZ・PointBlank・SuperbWarfare銃、車両AI、遮蔽、傭兵、エンティティクローン、ブービートラップを扱うCustomNPCs戦闘制作ドキュメントです。",
+      "description": "CustomNPCs firearm NPC addon for real TACZ guns, tactical AI, cover, ammo, target rules, equipment pools, combat FX, and mercenary contracts.",
+      "description_ko": "실제 TACZ 총기, 전술 AI, 엄폐, 탄약, 타겟 규칙, 장비 풀, 전투 FX, 용병 계약을 다루는 CustomNPCs 총기 NPC 애드온 문서입니다.",
+      "description_ru": "Документация аддона CustomNPCs: реальные оружия TACZ, тактический ИИ, укрытия, боеприпасы, цели, снаряжение, эффекты и контракты наёмников.",
+      "description_zh": "CustomNPCs 枪械 NPC 插件文档，涵盖真实 TACZ 枪械、战术 AI、掩体、弹药、目标、装备、战斗效果和雇佣兵契约。",
+      "description_ja": "実際のTACZ銃、戦術AI、遮蔽、弾薬、ターゲット、装備、戦闘FX、傭兵契約を扱うCustomNPCs銃器NPCアドオンの文書です。",
       "sections": [
         {
           "id": "overview",
@@ -493,45 +494,6 @@
           "description_ru": "Настройки контрактов, найм, команды, призыв, отзыв и правила атак владельца.",
           "description_zh": "创作者契约设置、玩家雇佣、命令、召唤、召回和雇主攻击规则。",
           "description_ja": "制作者向け契約設定、プレイヤーの雇用、命令、召喚、回収、所有者攻撃ルール。"
-        },
-        {
-          "id": "integrations",
-          "label": "Gun Integrations",
-          "label_ko": "총기 연동",
-          "label_ru": "Интеграции оружия",
-          "label_zh": "枪械联动",
-          "label_ja": "銃器連携",
-          "description": "TACZ baseline plus native PointBlank and SuperbWarfare gun adapters.",
-          "description_ko": "TACZ 기반 컨트롤러와 PointBlank·SuperbWarfare 네이티브 총기 연동입니다.",
-          "description_ru": "Базовый контроллер TACZ и нативные адаптеры PointBlank и SuperbWarfare.",
-          "description_zh": "以 TACZ 为基础的控制器，以及 PointBlank、SuperbWarfare 原生枪械适配。",
-          "description_ja": "TACZ基盤のコントローラーとPointBlank・SuperbWarfareのネイティブ銃器連携。"
-        },
-        {
-          "id": "vehicles",
-          "label": "Vehicle AI",
-          "label_ko": "차량 AI",
-          "label_ru": "ИИ техники",
-          "label_zh": "载具 AI",
-          "label_ja": "車両AI",
-          "description": "SuperbWarfare vehicle movement, targeting, weapons, ammo, profiles, and soul stones.",
-          "description_ko": "SuperbWarfare 차량 이동, 타겟, 무장, 탄약, 프로필, 소울스톤입니다.",
-          "description_ru": "Движение, цели, оружие, боезапас, профили и камни душ техники SuperbWarfare.",
-          "description_zh": "SuperbWarfare 载具移动、目标、武器、弹药、配置文件与灵魂石。",
-          "description_ja": "SuperbWarfare車両の移動、ターゲット、武装、弾薬、プロファイル、ソウルストーン。"
-        },
-        {
-          "id": "tools",
-          "label": "World Tools",
-          "label_ko": "월드 도구",
-          "label_ru": "Инструменты мира",
-          "label_zh": "世界工具",
-          "label_ja": "ワールドツール",
-          "description": "Entity clone library and server-authoritative booby-trap tools.",
-          "description_ko": "엔티티 클론 보관함과 서버 판정 부비트랩 도구입니다.",
-          "description_ru": "Библиотека клонов сущностей и серверные инструменты ловушек.",
-          "description_zh": "实体克隆库与服务器权威的诡雷工具。",
-          "description_ja": "エンティティクローン保管庫とサーバー判定のブービートラップツール。"
         },
         {
           "id": "operations",

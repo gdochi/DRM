@@ -1,13 +1,13 @@
 ---
 title: Easy Build and Combat Presets
-slug: warfare-easy-build-presets
+slug: tacz-easy-build-presets
 order: 325
 description: Build NPC behavior quickly with the guided Easy Build flow or five combat presets.
-product: dochi-warfare
+product: cnpc-tacz-fire
 category: Setup Tools
 section: setup
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: Firearm NPC creators
 tags:
   - easy-build
@@ -17,7 +17,7 @@ tags:
 
 ## Two quick-setup tools
 
-`Easy Build` and `Presets` are creator tools in the help area of the `DW Npc Core` editor topbar. Both create a useful combat starting point, but they work differently.
+`Easy Build` and `Presets` are creator tools in the help area of the `CTF Npc Core` editor topbar. Both create a useful combat starting point, but they work differently.
 
 | Tool | Best used when | Result |
 | --- | --- | --- |
@@ -28,7 +28,7 @@ Neither tool locks the result. Every applied value remains editable in the norma
 
 ## Easy Build workflow
 
-1. Open the NPC with `DW Npc Core`.
+1. Open the NPC with `CTF Npc Core`.
 2. Press `Easy Build` in the topbar.
 3. Choose the amount of detail you want.
 4. Answer the questions. Additional questions may appear only when the related system is enabled.
@@ -82,3 +82,4 @@ Easy Build and presets are starting points. After applying one:
 3. Make sure `RPM Mode`, accuracy, and burst range are reasonable for the available ammo stock.
 4. Test movement and cover in simple terrain.
 5. Press `Save` when the result is correct, or use `Save As` to keep the full NPC setup as a reusable profile.
+

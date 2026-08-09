@@ -1,13 +1,13 @@
 ---
 title: Reload and Ammo Stock
-slug: warfare-reload-ammo
+slug: tacz-reload-ammo
 order: 350
-description: How DW ammo stock, native reload timing, regeneration, fallback, and reload movement work across supported guns.
-product: dochi-warfare
+description: How ammo stock, reload timing, regeneration, and reload movement work for TACZ Fire NPCs.
+product: cnpc-tacz-fire
 category: Ammo
 section: ammo
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: Firearm NPC creators
 tags:
   - reload
@@ -17,7 +17,7 @@ tags:
 
 ## Ammo model
 
-Dochi's Warfare does not make managed NPCs carry spare TACZ, PointBlank, or SuperbWarfare ammunition in the offhand. The NPC uses a supported native gun, while reserve ammunition is represented by DW data:
+CNPC TACZ Fire does not make NPCs carry spare TACZ ammo or magazine items in the offhand. The NPC uses a real TACZ gun, while reserve ammunition is represented by addon data:
 
 | Data | Meaning |
 | --- | --- |
@@ -25,11 +25,11 @@ Dochi's Warfare does not make managed NPCs carry spare TACZ, PointBlank, or Supe
 | `Ammo Stock Max` | Maximum spare rounds after regeneration. `-1` means uncapped. |
 | `Ammo Regen Amount` | Rounds restored each regeneration interval. `0` disables regeneration. |
 | `Ammo Regen Interval Ms` | Time between regeneration ticks. `0` disables regeneration. |
-| `Reload Duration Ms` | NPC reload lock duration. `0` uses the operated gun's native empty or tactical reload time. |
+| `Reload Duration Ms` | NPC reload lock duration. `0` uses the held TACZ gun's own reload time. |
 | `Reload Speed Multiplier` | Walking speed multiplier only while reloading. `0` stops reload movement, `1` keeps normal speed. |
 
 :::warning Do not use offhand ammo
-NPC ammo is managed by `Ammo Stock`, DW reload state, and the operated gun's native stack state. Do not equip physical ammo or magazine items to represent NPC reloads.
+NPC ammo is managed by `Ammo Stock`, reload state, and the TACZ gun stack state. Do not equip physical ammo or magazine items to represent NPC reloads.
 :::
 
 ## Main toggles
@@ -69,11 +69,9 @@ When the fallback ends and ammunition becomes usable again, the NPC returns to i
 1. The target must remain absent for `Rearm Start Delay (Seconds)`.
 2. Reacquiring a target cancels the pending recovery.
 3. After the delay, the configured reload duration still applies.
-4. A successful recovery grants one full magazine through the managed adapter and native gun-stack state.
+4. A successful recovery grants one full magazine through TACZ reload and gun-stack state.
 
 This does not restore `Ammo Stock` and does not create physical ammunition. Use it when a fallback NPC should be ready for the next encounter without receiving unlimited reserve stock.
-
-Reload animation is split by responsibility: the upper body keeps the managed reload action while the lower body continues the NPC's actual walk, run, or crouch movement. `Reload Speed Multiplier` changes movement speed; it does not replace the current lower-body movement state with one fixed full-body pose.
 
 ## Recommended setup flow
 
@@ -103,7 +101,7 @@ Balance in this order:
 
 ## Script and storeddata reference
 
-The GUI is the primary setup path, but script users can also work with bridge values. The `tacznpcfire.*` storeddata namespace is retained as an internal compatibility contract even though the public mod ID is now `dochi_warfare`.
+The GUI is the primary setup path, but script users can also work with bridge values. Common storeddata keys include:
 
 | Key | Meaning |
 | --- | --- |

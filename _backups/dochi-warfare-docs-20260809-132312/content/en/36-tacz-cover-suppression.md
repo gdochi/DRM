@@ -1,13 +1,13 @@
 ---
 title: Cover, Suppressive Fire, and Faction Defense
-slug: warfare-cover-suppression
+slug: tacz-cover-suppression
 order: 335
 description: Configure cover triggers, suppressive fire and post-fire watch, faction assistance, limits, and recovery behavior.
-product: dochi-warfare
+product: cnpc-tacz-fire
 category: Combat AI
 section: combat-ai
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: Encounter designers
 tags:
   - cover
@@ -19,7 +19,7 @@ tags:
 
 These are creator settings, not player runtime screens.
 
-* Open the NPC with `DW Npc Core`.
+* Open the NPC with `CTF Npc Core`.
 * Configure `Suppressive Fire` and `Faction Defense` in the combat and sensing controls.
 * Configure strategic cover in the separate `Cover` category.
 
@@ -43,7 +43,7 @@ Each trigger is enabled independently per NPC.
 | Trigger | When it can start cover |
 | --- | --- |
 | `On Reload` | A managed reload is active and at least `Reload Left (ms)` remains. |
-| `On Damage` | One actual final-damage event reaches `Damage Ratio` of maximum health. An unseen hit can use its remembered damage origin before a visible target exists. |
+| `On Damage` | One actual final-damage event reaches `Damage Ratio` of maximum health. |
 | `On Low Health` | Health crosses below `Low Health Ratio`; this is a threshold response rather than a permanent cover loop. |
 | `On Repeated Hits` | Enough damage-hit clusters occur inside `Damage Window (ms)`. |
 | `On Grenade Threat` | A nearby supported LR Tactical fragmentation grenade is landed, or an airborne fragmentation grenade has an imminent fuse. |
@@ -63,16 +63,16 @@ Smoke and stun grenades do not activate fragmentation cover. Grenade cover uses 
 | `Peek After Cover` | Enables movement to a geometry-validated firing side after holding. |
 | `Max Peek Cycles` | Maximum peek movements in one cover action, from 0 to 4. |
 
-The cover finder probes bounded candidate geometry and normal NPC navigation. Version 0.2.4 distinguishes hiding cover from firing-capable cover, and accepted protection must block both the standing NPC's chest and head. It can reacquire a path after a short retry when the first reachable candidate fails. Movement progress and the phase timeout remain the authoritative failure guards.
+The cover finder probes bounded candidate geometry and normal NPC navigation. Version 0.2.2 can reacquire an externally cleared path instead of failing after a fixed number of interruptions. Movement progress and the phase timeout remain the authoritative failure guards.
 
-Cover movement does not create a separate ammo prop. Reloading continues through the operated gun's native stack plus DW reload state. The upper body keeps reload action while the lower body follows actual movement.
+Cover movement does not create a new reload animation. Reloading continues through TACZ's actual gun stack and reload state, and the NPC never equips a physical ammo or magazine item.
 
 ## Runtime flow
 
 A normal cover action follows this shape:
 
 1. A configured trigger becomes valid during combat.
-2. The server searches a bounded radius for reachable cover against the current target, remembered damage origin, reload/ammo state, suppression state, or grenade threat.
+2. The server searches a bounded radius for reachable solid cover against the current threat direction.
 3. The NPC enters cover using `Cover Move Speed`.
 4. It holds for the trigger's minimum time while the hard maximum duration continues to apply.
 5. If peeking is enabled and the geometry is valid, the NPC moves to a firing side with line of sight.
@@ -85,7 +85,7 @@ Cover does not guarantee that a valid point exists. Open terrain, sealed rooms, 
 `Suppressive Fire` is a last-seen-position policy, not hidden-target tracking.
 
 * It can run only after the NPC actually saw the target during combat.
-* It fires real managed-gun rounds at that last visible position.
+* It fires real TACZ rounds at that last visible position.
 * It remains allowed only for `Suppression Time Ms`.
 * It does not update its aim from the hidden target's current position.
 * Final firing, ammo stock, gun mode, reload, and line-of-fire rules still apply.
@@ -96,7 +96,7 @@ Start with the default short window. A long suppression window can waste finite 
 
 ## Faction defense
 
-`Faction Defense` lets a damaged DW-managed NPC broadcast its attacker to same-faction managed allies inside `Faction Alert Radius`. Vertical sharing is limited, and an ally still needs final line of sight before firing.
+`Faction Defense` lets a damaged TACZ Fire NPC broadcast its attacker to same-faction TACZ Fire allies inside `Faction Alert Radius`. Vertical sharing is limited, and an ally still needs final line of sight before firing.
 
 This assistance is not a universal friendly-fire override:
 

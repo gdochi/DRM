@@ -1,13 +1,13 @@
 ---
 title: 타겟 규칙
-slug: warfare-target-filters
+slug: tacz-target-filters
 order: 340
 description: 총기 NPC의 타겟을 엔티티 ID, 팩션, 스코어보드 태그, 고급 스탠스 규칙으로 제한합니다.
-product: dochi-warfare
+product: cnpc-tacz-fire
 category: 타겟
 section: targets
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: 전투 설계자
 tags:
   - target
@@ -33,7 +33,7 @@ tags:
 
 타겟 엔티티 목록이 비어 있으면 엄격한 허용 목록을 사용하지 않습니다. 관리 중인 CustomNPCs 사수는 CustomNPCs NPC나 플레이어에 대한 실제 팩션 적대를 상속할 수 있도록 계속 후보를 탐색합니다. 후보는 명시적 선택 규칙, 같은 팩션 태그 예외, 실제 적대 팩션 규칙 중 하나에는 맞아야 하므로 수동적이거나 관계없는 엔티티가 자동 타겟이 되지는 않습니다.
 
-긴 감지 거리에서는 공간 인덱스로 living target 후보를 좁힌 뒤 엔티티 ID, 태그, 팩션, 거리, 각도, 시야 규칙을 적용합니다. 0.2.4에서는 이미 전투 중이어도 새로 발견한 타겟마다 설정 거리·시야·인식 각도를 통과해야 합니다. 유효한 피격, 자기방어, 근거리 감지, 팩션 방어 반응만 문서화된 예외를 부여하며, 소리 없이 뒤에 있는 타겟이 전투 중이라는 이유만으로 자동 획득되지는 않습니다.
+0.2.0은 긴 감지 거리에서도 먼저 공간 인덱스로 living target 후보를 좁힌 뒤 엔티티 ID, 태그, 팩션, 거리, 각도, 시야 규칙을 적용합니다. 크리에이티브·관전자 플레이어는 소리와 전투 타겟 처리 전에 제외됩니다.
 
 ## 스코어보드 태그 규칙
 
@@ -58,10 +58,10 @@ Advanced 모드는 활성 조건을 하나만 지원합니다. 결과를 예측 
 상단 바의 `Load`와 `Save As` 프로필은 아래 위치에 저장됩니다.
 
 ```text
-config/dochi_warfare/target_entities/
+config/cnpc_tacz_fire/target_entities/
 ```
 
-현재 프로필은 타겟 엔티티 ID만 관리하는 파일이 아니라, NPC별 DW 총기 설정을 다른 CustomNPCs NPC에 적용하는 설정 프리셋입니다. 먼저 한 NPC에서 총기, AI, 타겟, 탄약, 풀 설정을 맞춘 뒤 `Save As`로 저장하고, 다른 NPC에서 `Load`하세요. 이전된 구버전 루트의 타겟 전용 JSON도 계속 불러올 수 있습니다.
+현재 프로필은 타겟 엔티티 ID만 관리하는 파일이 아니라, NPC별 TACZ Fire 설정을 다른 CustomNPCs NPC에 연결해 주는 복제용 프리셋에 가깝습니다. 먼저 한 NPC에서 총기, AI, 타겟, 탄약, 풀 설정을 맞춘 뒤 `Save As`로 저장하고, 다른 NPC에서 `Load`해 같은 전투 구성을 빠르게 적용하세요. 구버전 타겟 전용 JSON도 계속 불러올 수 있습니다.
 
 ## 실전 예시
 

@@ -1,13 +1,13 @@
 ---
 title: 재장전과 탄약 재고
-slug: warfare-reload-ammo
+slug: tacz-reload-ammo
 order: 350
-description: 지원 총기 공통 DW 탄약 재고, 원본 재장전 시간, 재생, 소진 전환, 재장전 이동을 설명합니다.
-product: dochi-warfare
+description: TACZ Fire NPC의 탄약 재고, 재장전 시간, 재생, 재장전 중 이동 동작입니다.
+product: cnpc-tacz-fire
 category: 탄약
 section: ammo
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: 총기 NPC 제작자
 tags:
   - reload
@@ -17,7 +17,7 @@ tags:
 
 ## 탄약 모델
 
-도치 워페어는 관리 NPC가 여분 TACZ·PointBlank·SuperbWarfare 탄약이나 탄창 아이템을 오프핸드에 들게 만들지 않습니다. NPC는 지원되는 원본 총기를 사용하지만 예비 탄약은 DW 데이터로 표현합니다.
+CNPC TACZ Fire는 NPC가 여분 TACZ 탄약이나 탄창 아이템을 오프핸드에 들게 만들지 않습니다. NPC는 실제 TACZ 총기를 사용하지만 예비 탄약은 애드온 데이터로 표현합니다.
 
 | 데이터 | 의미 |
 | --- | --- |
@@ -25,11 +25,11 @@ tags:
 | `Ammo Stock Max` | 재생 후 최대 예비 탄 수입니다. `-1`은 제한 없음입니다. |
 | `Ammo Regen Amount` | 재생 간격마다 회복되는 탄 수입니다. `0`이면 재생을 끕니다. |
 | `Ammo Regen Interval Ms` | 재생 틱 사이 시간입니다. `0`이면 재생을 끕니다. |
-| `Reload Duration Ms` | NPC가 재장전에 묶이는 시간입니다. `0`이면 운용 총기의 원본 빈 탄창/전술 재장전 시간을 사용합니다. |
+| `Reload Duration Ms` | NPC가 재장전에 묶이는 시간입니다. `0`이면 들고 있는 TACZ 총기의 기본 재장전 시간을 사용합니다. |
 | `Reload Speed Multiplier` | 재장전 중에만 적용되는 이동 속도 배율입니다. `0`은 재장전 중 이동 정지, `1`은 기본 속도 유지입니다. |
 
 :::warning 오프핸드 탄약을 쓰지 마세요
-NPC 탄약은 `Ammo Stock`, DW 재장전 상태, 운용 총기의 원본 스택 상태로 관리됩니다. NPC 재장전을 표현하려고 실제 탄약이나 탄창 아이템을 장착하지 마세요.
+NPC 탄약은 `Ammo Stock`, 재장전 상태, TACZ 총기 스택 상태로 관리됩니다. NPC 재장전을 표현하려고 실제 탄약이나 탄창 아이템을 장착하지 마세요.
 :::
 
 ## 메인 토글
@@ -69,11 +69,9 @@ Fallback 상태가 끝나고 탄약을 다시 사용할 수 있으면 NPC는 원
 1. `Rearm Start Delay (Seconds)` 동안 타겟이 계속 없어야 합니다.
 2. 타겟을 다시 획득하면 대기 중인 복구가 취소됩니다.
 3. 지연이 끝난 뒤에도 설정된 재장전 시간이 추가로 적용됩니다.
-4. 복구에 성공하면 관리 총기 어댑터와 원본 총기 스택 상태를 통해 탄창 하나를 가득 채웁니다.
+4. 복구에 성공하면 TACZ 재장전과 총기 스택 상태를 통해 탄창 하나를 가득 채웁니다.
 
 이 기능은 `Ammo Stock`을 회복하지 않으며 실제 탄약 아이템도 만들지 않습니다. 무한 예비 탄약을 주지 않으면서 다음 교전을 준비시킬 때 사용하세요.
-
-재장전 애니메이션은 상체와 하체 역할을 나눕니다. 상체는 관리 재장전 동작을 유지하고 하체는 NPC의 실제 걷기·달리기·웅크리기 상태를 계속 사용합니다. `Reload Speed Multiplier`는 이동 속도를 바꾸며, 하체를 하나의 고정 전신 포즈로 교체하지 않습니다.
 
 ## 권장 설정 흐름
 
@@ -103,7 +101,7 @@ Fallback 상태가 끝나고 탄약을 다시 사용할 수 있으면 NPC는 원
 
 ## 스크립트와 storeddata 참고
 
-GUI가 기본 설정 경로지만, 스크립트 사용자는 브리지 값을 다룰 수 있습니다. 공개 모드 ID는 `dochi_warfare`로 바뀌었지만 `tacznpcfire.*` storeddata 네임스페이스는 내부 호환 계약으로 유지됩니다.
+GUI가 기본 설정 경로지만, 스크립트 사용자는 브리지 값을 다룰 수 있습니다. 자주 쓰는 storeddata 키는 아래와 같습니다.
 
 | 키 | 의미 |
 | --- | --- |

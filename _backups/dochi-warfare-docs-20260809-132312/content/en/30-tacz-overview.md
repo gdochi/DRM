@@ -1,0 +1,92 @@
+---
+title: CNPC TACZ Fire Overview
+slug: tacz-overview
+order: 310
+description: What CNPC TACZ Fire controls, what it leaves alone, and the rules every firearm NPC should follow.
+product: cnpc-tacz-fire
+category: Overview
+section: overview
+status: Draft
+version: 0.2.3
+audience: Firearm NPC creators
+tags:
+  - TACZ
+  - customnpcs
+  - overview
+---
+
+## What CNPC TACZ Fire is
+
+CNPC TACZ Fire is a Forge 1.20.1 addon for building CustomNPCs NPCs that fight with real TACZ guns. It is not a generic ranged attack reskin. The addon drives TACZ firing, reload state, gun state, ammo stock, damage policies, target rules, tactical movement, visual and sound awareness, weapon pools, visual pools, armor pools, combat FX, and optional grenade behavior through a per-NPC setup GUI.
+
+The important switch is `TACZ Fire NPC Mode`. When that mode is OFF, the NPC keeps normal CustomNPCs behavior. When it is ON and saved for a CustomNPCs NPC, CNPC TACZ Fire can take over the firearm behavior for that NPC.
+
+Version 0.2.0 adds the read-only `Overview`, event-based player sound detection, `Close Detection`, ranged and melee damage policies, forced reload modes, and melee or unarmed fallback after ammo exhaustion. Patrols keep the GUI-configured idle speed while following an active A* path and retry unreachable points only within a bounded limit.
+
+Version 0.2.1 adds per-NPC `Better Combat Compatibility`, Better Combat attacks and weapon poses registered for the held item, effective attack-speed timing, and authoritative main-hand synchronization between server and client. Weapon, skin, and armor pool chances are edited directly in each row, and long armor pools use an internal scrollbar.
+
+Version 0.2.2 expands the addon with a separate mercenary contract editor and player command HUD, per-NPC experimental cover, suppressive fire, faction-defense assistance, target-loss rearming after ammo exhaustion, and faction-hostile acquisition when the explicit Targets list is empty. It also hardens clone and soul-stone initialization, cover path recovery, mercenary owner-hit rules, scaled mercenary GUI input, and alert-icon cleanup.
+
+Version 0.2.3 adds `Easy Build`, five combat presets, an explicit `RPM Mode`, moving-player accuracy ramping, random burst lengths and tactical-reposition intervals, and a post-suppression watch. The new `CTF Pose Core` and `Pose` category create reusable pose JSON profiles and map them to NPC actions, while mercenary HUD commands now adapt to the selected mercenaries' state.
+
+## Core rules
+
+| Rule | Meaning |
+| --- | --- |
+| Use real TACZ guns | The NPC should use an actual TACZ gun item, normally stored or held as the managed ranged weapon. |
+| Do not equip ammo in offhand | Spare ammunition is managed by addon ammo stock and reload policy, not by physical ammo or magazine items in the offhand. |
+| Enable per NPC | Only selected NPCs with `TACZ Fire NPC Mode` are controlled. Normal CustomNPCs NPCs are left alone. |
+| Configure in the GUI first | The in-game per-NPC GUI is the primary setup path. Script and storeddata support is for advanced workflows. |
+
+:::warning Ammo rule
+Do not make NPCs hold TACZ ammo or magazine items in the offhand. Reloads are represented by `Ammo Stock`, reload state, and the TACZ gun stack state.
+:::
+
+## What the addon controls
+
+| Area | Examples |
+| --- | --- |
+| Fire behavior | `Reload`, `Supply Ammo`, `Max Distance`, `RPM Mode`, fixed or random RPM, fixed or moving-target ramp accuracy, and random-length bursts |
+| Damage policies | native TACZ or fixed ranged damage; weapon-based or fixed melee damage, knockback, and attack speed |
+| Melee animation integration | per-NPC Better Combat compatibility, registered weapon attacks and poses, and vanilla main-hand swing fallback |
+| Stance behavior | `Idle`, `Ranged`, `Melee`, `Auto`, `Auto Hidden`, plus one advanced conditional rule |
+| Tactical movement | hold, spread, compact, advance, retreat, keep-distance fire, move-while-firing, random replanning intervals, suppressive fire, and per-NPC cover |
+| Awareness | detection distance and angle, close detection, combat delay, last-seen memory, and investigation of gunshot, reload, block-break, and block-place events |
+| Ammo policies | normal, fixed forced, or ranged forced reloads; finite or infinite stock, regeneration, melee or unarmed fallback, and optional target-loss rearming |
+| Targets | entity ID allow lists, faction-hostility inheritance, required tags, rejected tags, same-faction tag targeting |
+| Equipment and visuals | random ranged weapons, melee weapons, skins, armor sets, preview and held-item sync |
+| Poses | built-in non-combat gun poses, pose JSON editing, gun render transforms, and per-action pose mapping |
+| Combat feedback | alert icons, detected sounds, shoot sounds, detected say text, shoot say text |
+| Optional grenades | grenade type, range, search range, health trigger, cooldown, fuse, power, angle |
+| Mercenary contracts | hire terms, summon and recall, formations, fire and posture orders, owner-hit responses, and contract release |
+
+## What it leaves alone
+
+CNPC TACZ Fire does not globally replace every CustomNPCs ranged or melee NPC. Vanilla CustomNPCs attack output is suppressed only for addon-controlled TACZ Fire NPCs. A world can mix normal NPCs and TACZ Fire NPCs safely as long as creators enable the mode only on the NPCs that need firearm behavior.
+
+It also does not require creators to build fake gun animations. TACZ and optional combat-animation integrations should use their own built-in behavior. If a TACZ gun or Better Combat melee animation does not behave correctly, treat that as an integration or setup issue instead of replacing the motion by hand.
+
+## Supported stack
+
+| Mod or loader | Role |
+| --- | --- |
+| Minecraft 1.20.1 | Target game version for this addon build. |
+| Forge 47 or newer | Required loader range. |
+| TACZ 1.1.8 or newer | Required firearm system. |
+| CustomNPCs 1.20.1 or newer | Needed for the CustomNPCs NPC workflow described in this wiki. |
+| playerAnimator 1.0.0 or newer | Optional client-side dependency when animation support is present. |
+| Better Combat | Optional integration for registered melee weapon attacks, poses, and weapon-based attack timing. |
+| Mob Player Animator 1.0.0 or newer | Optional client dependency for exact Better Combat NPC motion playback. Without it, the NPC uses a vanilla swing. |
+| Supported throwable mods | Optional grenade behavior, only when matching throwable data is available. |
+
+## Recommended authoring order
+
+1. Create one fresh CustomNPCs NPC in a test world.
+2. Use `CTF Npc Core` to open the per-NPC setup GUI.
+3. Turn on `TACZ Fire NPC Mode` and `Enabled`.
+4. Use `Easy Build` or `Presets` if you want a quick behavior starting point.
+5. Pick one real TACZ gun in the `Gun` tab.
+6. Start with infinite reserve ammo by leaving `Ammo Stock` at `-1`.
+7. Test one target with simple `Auto` stance before adding advanced targets, pools, grenades, or script overrides.
+
+This keeps the first problem small. If the NPC cannot fire in that baseline setup, the issue is usually mode enablement, gun selection, target selection, distance, line of sight, or ammo/reload policy.

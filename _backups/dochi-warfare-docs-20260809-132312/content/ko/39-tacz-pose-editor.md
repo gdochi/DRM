@@ -1,13 +1,13 @@
 ---
 title: 포즈 편집과 행동 연결
-slug: warfare-pose-editor
+slug: tacz-pose-editor
 order: 332
-description: DW Pose Core로 포즈 JSON과 총기 위치를 만들고 NPC 행동별로 연결하는 방법입니다.
-product: dochi-warfare
+description: CTF Pose Core로 포즈 JSON과 총기 위치를 만들고 NPC 행동별로 연결하는 방법입니다.
+product: cnpc-tacz-fire
 category: 포즈
 section: combat-ai
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: NPC 제작자
 tags:
   - pose
@@ -17,15 +17,13 @@ tags:
 
 ## 편집기와 런타임 구분
 
-`DW Pose Core`는 크리에이티브 모드 제작자가 사용하는 포즈 편집 도구입니다. 플레이어가 전투 중 여는 런타임 화면이 아닙니다. 편집기에서 포즈 JSON을 만든 뒤 `DW Npc Core`의 `Pose` 카테고리에서 NPC 행동과 연결하면 게임 안 NPC에 적용됩니다.
-
-0.2.4의 비전투 포즈 바인딩은 서버가 관리하는 영속 상태입니다. 플레이어가 NPC 추적을 시작할 때 전체 정의를 동기화하고, 전투가 끝난 뒤 현재 전투 포즈를 덮어쓰지 않으면서 다시 적용합니다. `Save & Apply`는 권한 있는 `idle_standing` 바인딩을 갱신하므로 편집기 미리보기와 소환된 NPC가 같은 프로필을 사용합니다.
+`CTF Pose Core`는 크리에이티브 모드 제작자가 사용하는 포즈 편집 도구입니다. 플레이어가 전투 중 여는 런타임 화면이 아닙니다. 편집기에서 포즈 JSON을 만든 뒤 `CTF Npc Core`의 `Pose` 카테고리에서 NPC 행동과 연결하면 게임 안 NPC에 적용됩니다.
 
 현재 포즈 편집기는 Steve/Alex CustomNPCs 플레이어 모델을 지원합니다.
 
 ## 포즈 편집기 열기
 
-1. 크리에이티브 모드에서 `DW Pose Core`를 듭니다.
+1. 크리에이티브 모드에서 `CTF Pose Core`를 듭니다.
 2. Steve 또는 Alex 모델을 쓰는 CustomNPCs NPC를 우클릭합니다.
 3. NPC에서 12블록 안에 머물고 편집 중에는 코어를 주손이나 보조손에 계속 듭니다.
 4. `NPC Pose Editor`에서 포즈를 수정합니다.
@@ -82,14 +80,14 @@ tags:
 포즈 파일은 서버의 다음 폴더에 저장됩니다.
 
 ```text
-config/dochi_warfare/poses/
+config/cnpc_tacz_fire/poses/
 ```
 
 JSON을 직접 편집할 필요는 없습니다. 파일 구조는 외부 도구나 버전 관리가 필요한 제작자를 위한 참고 형식입니다.
 
 ## 행동별 포즈 연결
 
-`DW Npc Core > Pose`는 포즈를 만드는 화면이 아니라, 현재 NPC의 행동에 포즈를 연결하는 제작자 화면입니다.
+`CTF Npc Core > Pose`는 포즈를 만드는 화면이 아니라, 현재 NPC의 행동에 포즈를 연결하는 제작자 화면입니다.
 
 | 그룹 | 행동 |
 | --- | --- |
@@ -104,9 +102,9 @@ JSON을 직접 편집할 필요는 없습니다. 파일 구조는 외부 도구�
 | --- | --- |
 | `Built-in` | `TACZ Default`, `Low Ready`, `High Ready`, `Aim Ready` 중 하나를 사용합니다. |
 | `Inherit` | 연결된 상위 행동과 같은 포즈를 사용합니다. |
-| `Custom JSON` | `config/dochi_warfare/poses/`에 저장된 포즈 프로필을 사용합니다. |
+| `Custom JSON` | `config/cnpc_tacz_fire/poses/`에 저장된 포즈 프로필을 사용합니다. |
 
-기본 연결은 평시 서기에 Low Ready를 사용하고, 평시 걷기와 Alert가 이를 상속합니다. 전투 조준·재장전·무기 전환·근접·수류탄은 기본적으로 TACZ 기반 DW 공유 컨트롤러에 제어를 맡깁니다. 재장전 중에는 상체 동작을 유지하면서 하체가 실제 걷기·달리기·웅크리기 상태를 계속 사용합니다. 필요한 행동만 사용자 포즈로 바꾸는 것이 가장 안전한 시작 방법입니다.
+기본 연결은 평시 서기에 Low Ready를 사용하고, 평시 걷기와 Alert가 이를 상속합니다. 전투 조준·재장전·무기 전환·근접·수류탄은 기본적으로 TACZ 동작에 제어를 맡깁니다. 필요한 행동만 사용자 포즈로 바꾸는 것이 가장 안전한 시작 방법입니다.
 
 ## 권장 테스트 순서
 
@@ -115,4 +113,5 @@ JSON을 직접 편집할 필요는 없습니다. 파일 구조는 외부 도구�
 3. `Walking Preview`에서 정지와 이동을 모두 확인합니다.
 4. 총기 위치는 먼저 `All Guns`로 맞추고, 모양이 다른 총기만 `This Gun Only`로 보정합니다.
 5. `Save & Apply` 후 게임 화면에서 평시 포즈를 확인합니다.
-6. `DW Npc Core > Pose`에서 행동 하나씩 연결하고 사격, 재장전, 이동, 근접 전환을 각각 테스트합니다.
+6. `CTF Npc Core > Pose`에서 행동 하나씩 연결하고 사격, 재장전, 이동, 근접 전환을 각각 테스트합니다.
+

@@ -1,13 +1,13 @@
 ---
 title: Pose Editing and Action Mapping
-slug: warfare-pose-editor
+slug: tacz-pose-editor
 order: 332
-description: Create pose JSON and gun transforms with DW Pose Core, then map them to NPC actions.
-product: dochi-warfare
+description: Create pose JSON and gun transforms with CTF Pose Core, then map them to NPC actions.
+product: cnpc-tacz-fire
 category: Poses
 section: combat-ai
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: NPC creators
 tags:
   - pose
@@ -17,15 +17,13 @@ tags:
 
 ## Editor and runtime roles
 
-`DW Pose Core` is a Creative-mode pose editor for creators, not an in-combat player screen. Create pose JSON in this editor, then use the `Pose` category in `DW Npc Core` to map saved profiles to the NPC's runtime actions.
-
-In 0.2.4, non-combat pose bindings are persistent authoritative state. They synchronize when a client starts tracking the NPC and resume after combat without replacing the current combat pose. `Save & Apply` writes the authoritative `idle_standing` binding, so the editor preview and spawned NPC use the same profile.
+`CTF Pose Core` is a Creative-mode pose editor for creators, not an in-combat player screen. Create pose JSON in this editor, then use the `Pose` category in `CTF Npc Core` to map saved profiles to the NPC's runtime actions.
 
 The pose editor currently supports Steve/Alex CustomNPCs player models.
 
 ## Open the pose editor
 
-1. Hold `DW Pose Core` in Creative mode.
+1. Hold `CTF Pose Core` in Creative mode.
 2. Right-click a CustomNPCs NPC using a Steve or Alex model.
 3. Stay within 12 blocks and keep the core in either hand while editing.
 4. Edit the pose in `NPC Pose Editor`.
@@ -82,14 +80,14 @@ Keep head tracking and walking legs on `Animation` when they should continue mov
 Pose files are stored on the server under:
 
 ```text
-config/dochi_warfare/poses/
+config/cnpc_tacz_fire/poses/
 ```
 
 You do not need to edit this JSON by hand. Its structure is reference material for creators who use external tools or version control.
 
 ## Map poses to actions
 
-`DW Npc Core > Pose` does not create a pose. It maps built-in or saved poses to actions for the current NPC.
+`CTF Npc Core > Pose` does not create a pose. It maps built-in or saved poses to actions for the current NPC.
 
 | Group | Actions |
 | --- | --- |
@@ -104,9 +102,9 @@ Each action uses one source:
 | --- | --- |
 | `Built-in` | Uses `TACZ Default`, `Low Ready`, `High Ready`, or `Aim Ready`. |
 | `Inherit` | Uses the same pose as its linked parent action. |
-| `Custom JSON` | Uses a profile saved under `config/dochi_warfare/poses/`. |
+| `Custom JSON` | Uses a profile saved under `config/cnpc_tacz_fire/poses/`. |
 
-The default mapping uses Low Ready for idle standing, with idle walking and Alert inheriting it. Combat aim, reload, weapon switch, melee, and grenade actions default to the shared TACZ-backed DW controller. During reload, the upper-body action remains active while the lower body continues the NPC's actual walk, run, or crouch state. Start by changing only the actions that truly need a custom profile.
+The default mapping uses Low Ready for idle standing, with idle walking and Alert inheriting it. Combat aim, reload, weapon switch, melee, and grenade actions default to TACZ control. Start by changing only the actions that truly need a custom profile.
 
 ## Recommended test flow
 
@@ -115,4 +113,5 @@ The default mapping uses Low Ready for idle standing, with idle walking and Aler
 3. Check both standing and `Walking Preview`.
 4. Align the gun with `All Guns`, then correct only unusually shaped guns with `This Gun Only`.
 5. Use `Save & Apply` and verify the idle pose in-game.
-6. Map one action at a time in `DW Npc Core > Pose`, then separately test firing, reload, movement, and melee switching.
+6. Map one action at a time in `CTF Npc Core > Pose`, then separately test firing, reload, movement, and melee switching.
+

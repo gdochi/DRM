@@ -1,13 +1,13 @@
 ---
 title: Target Rules
-slug: warfare-target-filters
+slug: tacz-target-filters
 order: 340
 description: Restrict firearm NPC targets by entity ID, faction, scoreboard tag, and advanced stance rules.
-product: dochi-warfare
+product: cnpc-tacz-fire
 category: Targets
 section: targets
 status: Draft
-version: 0.2.4
+version: 0.2.3
 audience: Encounter designers
 tags:
   - target
@@ -33,7 +33,7 @@ The `Targets` tab can select allowed target entity IDs. The list includes search
 
 An empty target entity list means there is no strict entity allow list. A managed CustomNPCs shooter still scans so it can inherit genuine CustomNPCs faction hostility toward NPCs or players. The candidate must still match an explicit selector, the same-faction tag exception, or a real hostile faction rule; passive and unrelated entities do not become automatic targets.
 
-Long-distance living-target searches use a spatial index before applying entity ID, tag, faction, distance, angle, and line-of-sight rules. In 0.2.4, every newly discovered target must pass configured range, line of sight, and awareness angle even while the NPC is already fighting. Only valid damage, self-defense, close-detection, or faction-defense reactions can grant the documented exception; a silent target behind the NPC is not acquired merely because combat is active.
+Version 0.2.0 narrows long-distance living-target searches through a spatial index before applying entity ID, tag, faction, distance, angle, and line-of-sight rules. Creative and spectator players are rejected before sound or combat target processing.
 
 ## Scoreboard tag rules
 
@@ -58,10 +58,10 @@ Advanced mode supports one active conditional rule. This keeps the result predic
 Topbar `Load` and `Save As` profiles are stored under:
 
 ```text
-config/dochi_warfare/target_entities/
+config/cnpc_tacz_fire/target_entities/
 ```
 
-Current profiles are not just target-entity files. They work as setup presets that connect one NPC's DW firearm configuration to another CustomNPCs NPC. Configure guns, AI, targets, ammo, and pools on one NPC, store the profile with `Save As`, then `Load` it on another NPC. Legacy target-only JSON can still be loaded from the migrated legacy root.
+Current profiles are not just target-entity files. They work more like cloning presets that connect one NPC's TACZ Fire setup to another CustomNPCs NPC. Configure guns, AI, targets, ammo, and pools on one NPC, store the profile with `Save As`, then `Load` it on another NPC to apply the same combat setup quickly. Legacy target-only JSON can still be loaded.
 
 ## Practical examples
 
