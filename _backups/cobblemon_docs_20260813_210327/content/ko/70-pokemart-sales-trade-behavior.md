@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: 0.1.3
+version: 0.1.0
 audience: 판매점과 교환소를 만드는 제작자
 tags:
   - sales
@@ -55,7 +55,7 @@ Sales와 Trade에서 NPC가 주는 포켓몬은 Trainer 슬롯과 같은 생성 
 
 재입고는 서버 월드 시간으로 계산합니다. 서버가 꺼져 있는 동안 실제 시간이 흘렀다는 이유만으로 충전되지 않으며, 월드 틱이 진행되고 다시 조회될 때 지난 주기 수만큼 한꺼번에 계산해 Maximum Stock까지 올립니다.
 
-재고는 월드 PersistentState에 저장되므로 서버 재시작 후에도 유지됩니다. JSON의 Initial Stock을 바꾸고 같은 원본을 저장해도 이미 만들어진 `NPC UUID + Product ID` 재고가 자동으로 초기화되지는 않습니다. 새 재고로 운영하려면 새 Product ID 또는 새 NPC UUID를 사용해야 하지만, ID 변경은 기존 상태와 완전히 다른 상품으로 취급된다는 점을 먼저 계획하세요.
+재고는 월드 PersistentState에 저장되므로 서버 재시작 후에도 유지됩니다. JSON의 Initial Stock을 바꿔 다시 Apply해도 이미 만들어진 `NPC UUID + Product ID` 재고가 자동으로 초기화되지는 않습니다. 새 재고로 운영하려면 새 Product ID 또는 새 NPC UUID를 사용해야 하지만, ID 변경은 기존 상태와 완전히 다른 상품으로 취급된다는 점을 먼저 계획하세요.
 
 ## Sales 구매 처리 순서
 

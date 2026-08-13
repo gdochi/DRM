@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: 0.1.3
+version: 0.1.0
 audience: 경매장과 사용자 PokéMart 화면을 운영하는 제작자
 tags:
   - auction

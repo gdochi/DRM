@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
-version: 0.1.3
+version: 0.1.0
 audience: 전투 연출 제작자
 tags:
   - presentation
@@ -97,19 +97,6 @@ Name은 JSON 내부 표시 이름이고 트레이너가 참조하는 값은 `Sav
 
 Battle Presentation 문서는 현재 스키마 4로 저장됩니다. 구형 스키마 1–3 파일은 호환 필드를 사용해 읽지만, 저장하면 현재 구조로 정규화됩니다. `schemaVersion`을 지원 범위 밖의 값으로 직접 바꾸면 로드되지 않습니다.
 
-## Pose Workbench
-
-Player 또는 Opponent 액터가 Steve/Alex 사람형 모델일 때 `Pose` 탭에서 `Pose Workbench`를 열 수 있습니다. 에디터 안의 큰 3D 미리보기로 관절을 확인하면서 다음 부위를 조정합니다.
-
-- Head, Body
-- Left/Right Arm
-- Left/Right Leg
-- 각 부위의 Pitch, Yaw, Roll
-
-`Neutral`, `Ready`, `Victory` 프리셋과 축별 Reset, 반대편 복사·미러, 전체 보기 Reset을 제공합니다. 미리보기는 드래그로 회전하고 마우스 휠로 확대·축소합니다. `Save Pose`를 눌러야 Actor Inspector로 돌아가며 현재 문서에 변경을 유지합니다.
-
-Pokemon 액터는 사람형 관절 포즈를 사용하지 않고 전체 모델 회전만 지원합니다.
-
 ## 이미지와 사운드 선택
 
 이미지 브라우저는 현재 클라이언트가 찾을 수 있는 연출 이미지 리소스를 검색합니다. 선택한 이미지의 원본 크기를 읽을 수 있으면 새 Texture의 크기와 Crop 초기값을 구성하는 데 사용합니다.
@@ -141,6 +128,6 @@ Texture와 Stage Image는 Minecraft 리소스 ID를 사용합니다. Windows 절
 7. 시작 위치·크기·회전과 Easing으로 움직임을 만듭니다.
 8. Intro/Battle Audio를 설정하고 전체 재생합니다.
 9. `Save As`로 저장한 뒤 Cobblemon Editor의 Battle Presentation 경로에 선택합니다.
-10. 트레이너 파일을 저장하고 다음 전투에서 연출을 확인합니다. 같은 원본 경로를 추적하는 NPC는 보통 다시 Apply할 필요가 없습니다.
+10. 트레이너 파일을 저장하고 NPC에 다시 `Apply`합니다.
 
 에디터 미리보기와 런타임은 같은 렌더러를 사용하지만, 실제 플레이어 스킨·대상 NPC·창 비율·사운드 리소스는 런타임에서만 최종 확인할 수 있습니다.

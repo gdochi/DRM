@@ -1,13 +1,13 @@
 ---
-title: 설치
+title: 설치와 첫 적용
 slug: cobblemon-editor-setup
 order: 510
-description: DRM Cobblemon Editor 설치와 첫 NPC 적용 방법입니다.
+description: DRM Cobblemon Editor 0.1.3 설치, 폴더, 첫 NPC 적용 방법입니다.
 product: drm-cobblemon-editor
 category: 설치
 section: setup
 status: Draft
-version: 0.1.0
+version: 0.1.3
 audience: 서버 운영자와 처음 설치하는 제작자
 tags:
   - setup
@@ -17,22 +17,26 @@ tags:
 
 ## 설치 체크리스트
 
-`DRM Cobblemon Editor`는 DRM Core 위에서 동작하는 Fabric 애드온입니다. 다음 JAR을 1.21.1 Fabric 환경에 설치합니다.
+1. Minecraft 1.21.1과 Java 21을 사용합니다.
+2. Fabric Loader와 Fabric API를 설치합니다.
+3. DRM Core 0.1.6 이상, Cobblemon 1.7.3, CustomNPCs Fabric 1.0.0을 설치합니다.
+4. `drm_cobblemon_editor-0.1.3.jar`를 `mods/`에 넣습니다.
+5. 서버와 모든 클라이언트의 필수 모드 버전을 맞춥니다.
 
-| 모드 | 역할 |
+현재 DRM Core와 함께 사용할 때는 Fabric Loader 0.18.0 이상과 Fabric API 0.116.11+1.21.1 이상을 권장합니다. Cobblemon 1.8.0 이상은 이 버전의 지원 범위가 아닙니다.
+
+선택 기능을 쓰는 경우에만 다음 모드를 추가합니다.
+
+| 선택 모드 | 사용하는 기능 |
 | --- | --- |
-| Fabric API | 이벤트와 네트워크 기반 |
-| DRM 0.1.3+ | 공용 에디터 선택 UI, 서버 JSON 저장소, GUI Maker, 적용 흐름 |
-| Cobblemon 1.7.3 | 포켓몬 데이터, 플레이어 파티, 실제 전투 런타임 |
-| CustomNPCs Fabric 1.0.0 | 트레이너·포켓몬·상점 데이터를 적용할 NPC |
-| `DRM Cobblemon Editor` | Cobblemon용 DRM 에디터와 런타임 연결 |
-| CobbleDollars | 선택형 PokéMart 통화 공급자 |
+| CobbleDollars | PokéMart 결제 |
+| Radical Cobblemon Trainers API 0.15.1-beta+ | RCT AI, RCT 데이터팩 포터 |
+| FTB Quests | 퀘스트·태스크 조건과 완료 액션 |
+| Mega Showdown | Mega, Dynamax, Z-Move, Tera 기믹 |
 
-서버에서 사용할 때는 서버와 모든 접속 클라이언트에 동일한 모드 조합을 설치하세요. 이 애드온에는 클라이언트 에디터·렌더러와 서버 전투·보상·상점 로직이 모두 있습니다.
+## 첫 실행 후 폴더
 
-## 첫 실행 후 생성되는 폴더
-
-월드 또는 서버를 한 번 시작하면 DRM의 공식 데이터 루트 아래에 Cobblemon 애드온 폴더가 설치됩니다.
+서버 또는 월드를 한 번 시작하면 다음 폴더가 준비됩니다.
 
 ```text
 config/dochi_rpg_maker/
@@ -41,62 +45,91 @@ config/dochi_rpg_maker/
 │  ├─ pokemon_itself/
 │  ├─ battle_presentations/
 │  ├─ pokemarts/
+│  ├─ nurse_joy/
+│  ├─ starter_selectors/
+│  ├─ entity_clones/
 │  └─ _migration_backups/
+├─ npc_spawner/
+│  └─ entity_clones/
 └─ gui/
+   └─ starter_selector_gui.json
 ```
 
-`gui/`에는 역할별 PokéMart 화면 레이아웃이 설치됩니다. 트레이너 JSON과 PokéMart JSON은 `cobblemon/` 아래에 있지만 화면 배치 JSON은 DRM의 공용 `gui/` 폴더를 사용합니다.
+`gui/`에는 PokéMart 역할별 GUI와 Starter Selector 런타임 GUI가 설치됩니다. 이 파일은 화면 배치용입니다. 포켓몬, 가격, 조건, 지급 액션 같은 게임 데이터는 각 에디터 문서에 저장합니다.
 
-## 애드온 에디터 열기
+`cobblemon/entity_clones/`는 애드온 Clone Library의 기존 호환 경로입니다. 최신 DRM Core NPC Spawner는 Core의 `npc_spawner/entity_clones/`와 이 호환 경로를 모두 읽습니다.
 
-1. 크리에이티브 모드 또는 DRM 편집 권한이 있는 상태에서 `Dochi RPG Maker Core` 아이템을 준비합니다.
-2. 허공에 코어 아이템을 우클릭해 공용 에디터 선택 화면을 엽니다.
-3. `Add-on` 목록에서 `Cobblemon Editor`, `Battle Presentation Maker`, `PokéMart Editor` 중 하나를 선택합니다.
-4. 처음 시작할 때 `Load Existing`, `Use Default`, `Create New` 중 작업 소스를 선택합니다.
+## 에디터 열기
 
-| 선택 | 권장 사용 시점 |
+1. 크리에이티브 모드 또는 DRM 편집 권한을 준비합니다.
+2. `Dochi RPG Maker Core` 아이템으로 공용 에디터 선택 화면을 엽니다.
+3. `Add-on`에서 원하는 에디터를 선택합니다.
+4. `Load Existing`, `Use Default`, `Create New` 중 시작 소스를 선택합니다.
+
+| 선택 | 용도 |
 | --- | --- |
-| `Load Existing` | 이미 저장한 사용자 JSON을 다시 편집할 때 |
-| `Use Default` | 안전한 기본 구조에서 시작할 때 |
-| `Create New` | 빈 초안 또는 제작 안내에서 시작할 때 |
+| `Load Existing` | 저장한 사용자 JSON 다시 편집 |
+| `Use Default` | 보호된 기본값을 출발점으로 사용 |
+| `Create New` | 새 초안에서 시작 |
 
-기본 파일과 샘플은 템플릿입니다. 내용을 바꿀 때는 원본 이름에 바로 덮어쓰기보다 `Save As`로 `custom/` 같은 사용자 경로를 만드세요.
+기본 파일은 배포 템플릿입니다. 직접 덮어쓰기보다 `Save As`로 `custom/파일명.json`을 만드세요.
 
-## 첫 트레이너 만들기
+## 첫 Trainer 만들기
 
-1. `Cobblemon Editor`를 열고 `Use Default`를 선택합니다.
-2. 전투 유형을 `Trainer`로 둡니다.
-3. `Pokemon Party`에서 첫 슬롯의 종과 레벨을 정합니다.
-4. `Trainer` 카테고리에서 이름, `Singles`, AI Skill을 확인합니다.
-5. `Encounter`의 Trigger를 우선 `Interaction`으로 둡니다. 자동 감지와 추적은 기본 전투가 성공한 뒤 설정합니다.
-6. `Save As`를 눌러 `custom/first_trainer.json`처럼 저장합니다.
-7. `Dochi RPG Maker Core`로 대상 CustomNPCs NPC를 우클릭합니다.
-8. 적용 대상에서 `Cobblemon Trainer`를 선택하고 방금 저장한 파일을 `Apply`합니다.
-9. 코어 아이템을 내려놓고 양손을 비운 뒤 NPC를 우클릭합니다.
-10. 배틀 확인을 수락하고 플레이어의 실제 Cobblemon 파티로 전투가 시작되는지 확인합니다.
+1. `Cobblemon Editor`에서 `Use Default`를 선택합니다.
+2. 유형을 `Trainer`로 두고 첫 라운드의 포켓몬 한 마리를 설정합니다.
+3. 처음에는 `Singles`, `Interaction`, DRM Strategy 기본값을 유지합니다.
+4. `Save As`로 `custom/first_trainer.json`을 저장합니다.
+5. DRM Core 아이템으로 대상 CustomNPCs NPC를 열어 `Cobblemon Trainer`를 선택합니다.
+6. 저장한 문서를 한 번 `Apply`합니다.
+7. 도구를 내려놓고 양손을 비운 뒤 NPC를 우클릭합니다.
+8. 확인 화면과 실제 Cobblemon 전투가 시작되는지 검사합니다.
 
-:::warning 저장과 적용은 별도입니다
-`Save` 또는 `Save As`는 서버 JSON 파일을 저장합니다. NPC의 PersistentData는 대상 적용 화면에서 `Apply`할 때 바뀝니다. 파일을 수정한 뒤 NPC가 옛 설정을 계속 쓰면 다시 적용하세요.
+:::note 저장 후 자동 반영
+파일 기반으로 적용한 NPC는 원본 경로를 추적합니다. 같은 `custom/first_trainer.json`에 다시 저장한 내용은 다음 전투 요청에서 최신값으로 해석되므로 일반적인 수정마다 다시 Apply할 필요가 없습니다. 서버 밖에서 파일을 고쳤다면 `/drm reload`를 실행하세요.
 :::
 
 ## 첫 Pokemon Itself 만들기
 
-1. `Cobblemon Editor`에서 전투 유형을 `Pokemon Itself`로 바꿉니다.
-2. 종, 폼, Aspects, Shiny, 레벨, 성격, 특성, 기술, 볼, 지닌 도구를 설정합니다.
-3. 외형의 Scale, Pose, Animation, Shining을 확인합니다.
-4. `Save As`로 `custom/first_pokemon.json`을 저장합니다.
-5. 대상 NPC 적용 화면에서 `Cobblemon Pokemon Itself`를 선택해 적용합니다.
+1. 유형을 `Pokemon Itself`로 바꿉니다.
+2. 첫 라운드의 종, 폼, 레벨, 기술과 외형을 정합니다.
+3. `Save As`로 `custom/first_pokemon.json`을 저장합니다.
+4. 대상 NPC에 `Cobblemon Pokemon Itself`로 적용합니다.
+5. 포켓몬 외형과 PVE 전투를 확인합니다.
 
-이 유형은 트레이너 라운드 대신 한 마리의 전체 스펙을 사용해 Cobblemon 기본 PVE 전투를 만듭니다.
+Pokemon Itself도 최대 16라운드, 라운드 조건과 전투 후 액션을 사용할 수 있습니다. 각 라운드는 한 마리의 포켓몬을 사용합니다.
+
+## 역할별 첫 적용
+
+| 역할 | 첫 확인 |
+| --- | --- |
+| Battle Presentation | 문서를 저장하고 Trainer의 Presentation 경로에 연결 |
+| PokéMart | 문서를 저장한 뒤 NPC에 Apply하고 빈손 우클릭 |
+| Nurse Joy | 문서를 Apply한 뒤 `Link Machine`, 60초 안에 치료기를 Shift+우클릭 |
+| Starter Selector | 문서를 Apply하고 빈손 우클릭, 카드 선택 후 파티 또는 PC 지급 확인 |
+| Clone Library | 적용 완료 NPC 또는 채워진 Soul Stone을 가져와 클론 저장 |
+| NPC Spawner | DRM Core 스포너 블록에 클론 소스를 넣고 조건·웨이브 시험 |
+
+## Apply가 다시 필요한 경우
+
+- 다른 JSON 경로로 바꾸는 경우
+- Trainer에서 Pokemon Itself 같은 다른 적용 역할로 바꾸는 경우
+- Nurse Joy의 치료기 연결처럼 NPC별 상태를 새로 설정하는 경우
+- 파일을 추적하지 않는 스냅샷 클론을 의도한 경우
+- 파일이 아닌 초안/임시 소스를 적용한 경우
+
+같은 원본 경로의 내용만 수정한 경우는 보통 다시 Apply하지 않습니다.
 
 ## 설치 직후 점검
 
 | 증상 | 먼저 확인할 것 |
 | --- | --- |
-| Add-on 에디터가 목록에 없음 | DRM과 애드온 버전, Fabric 로더 로그, `cobble_npc` 모드 로드 여부 |
-| 기본 파일이 보이지 않음 | 서버 또는 월드를 한 번 시작했는지, `config/dochi_rpg_maker/cobblemon` 생성 여부 |
-| NPC 적용 대상이 안 보임 | 대상이 CustomNPCs NPC인지, 코어 아이템으로 NPC를 직접 열었는지 |
-| 전투 확인이 안 열림 | 양손이 비었는지, NPC에 DRM 대화·상점 또는 PokéMart가 우선 연결됐는지 |
-| 플레이어 파티 오류 | 전투 가능한 Cobblemon 포켓몬이 실제 파티에 있는지 |
+| Add-on 에디터가 없음 | 서버 로그의 모드 의존성 오류, DRM/애드온 버전 |
+| 기본 파일이 없음 | 서버를 한 번 시작했는지, `config/dochi_rpg_maker/cobblemon` 생성 여부 |
+| NPC 적용 대상이 없음 | 대상이 CustomNPCs NPC인지, DRM Core 아이템으로 NPC를 열었는지 |
+| 전투가 안 열림 | 양손이 비었는지, 현재 라운드 조건·이용 정책, 다른 대화/상점 역할 |
+| RCT를 선택할 수 없음 | RCT API 설치와 버전, 서버·클라이언트 일치 |
+| 기믹이 작동하지 않음 | Mega Showdown 설치, 일반 인벤토리의 키 아이템, 포켓몬별 설정 |
+| Starter가 안 보임 | 옵션 조건, 이미 사용한 60초 세션, 포켓몬 ID |
 
-첫 테스트는 별도 테스트 월드에서 단순한 NPC 하나로 진행하세요. 여러 런타임 역할을 한 NPC에 동시에 붙이면 우클릭 우선순위를 먼저 이해해야 합니다.
+처음에는 한 NPC에 여러 역할을 겹치지 말고 역할별 테스트 NPC를 사용하세요. 기능이 확인된 뒤 상호작용 우선순위를 고려해 통합하는 편이 안전합니다.

@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: 0.1.3
+version: 0.1.0
 audience: 포켓몬 상점 제작자와 서버 운영자
 tags:
   - pokemart
@@ -125,9 +125,7 @@ Auction → pokemart_auction_gui.json
 2. 파일은 `config/dochi_rpg_maker/cobblemon/pokemarts/` 아래에 저장됩니다.
 3. 대상 NPC를 지정해 에디터를 열었으면 `NPC에 적용`을 누릅니다.
 4. 양손을 비우고 NPC를 우클릭해 역할에 맞는 런타임 탭이 열리는지 확인합니다.
-5. 같은 원본 경로에 문서를 저장하면 다음 상점 요청에서 최신 문서를 사용합니다. 외부에서 파일을 수정했다면 `/drm reload` 후 확인합니다.
-
-Apply는 원본 JSON 경로와 안전한 대체 스냅샷을 함께 저장합니다. 다른 파일 경로·역할로 바꿀 때는 다시 Apply해야 하지만, 같은 파일의 상품·가격·조건·GUI 경로를 수정할 때는 보통 재적용이 필요하지 않습니다.
+5. 문서를 수정한 뒤에는 다시 적용합니다. 서버 JSON과 NPC에 복사된 문서는 자동 동기화되지 않습니다.
 
 `해제`는 대상 NPC의 PokéMart 바인딩을 제거합니다. 저장한 서버 JSON과 서버의 기존 경매·정산 데이터까지 삭제하는 기능은 아닙니다.
 
@@ -136,6 +134,6 @@ Apply는 원본 JSON 경로와 안전한 대체 스냅샷을 함께 저장합니
 1. 현재 Role의 판매·교환·경매 목록을 별도 사용자 파일로 저장합니다.
 2. 새 Role에 맞는 Currency와 GUI Path를 설정합니다.
 3. GUI Maker에서 역할에 필요한 Singleton 구성 요소가 있는지 확인합니다.
-4. 같은 경로에 저장한 뒤 런타임을 새로 열어 확인합니다. Role이나 문서 경로를 바꿨다면 다시 Apply합니다.
+4. NPC에 다시 Apply합니다.
 5. 기존 Role의 재고·경매 PersistentState가 자동 삭제되지 않는다는 점을 운영 기록에 남깁니다.
 6. 새 플레이어와 기존 이용 플레이어로 Interaction Conditions를 다시 시험합니다.
