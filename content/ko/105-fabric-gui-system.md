@@ -7,7 +7,7 @@ product: core-fabric
 category: GUI Maker
 section: gui-maker
 status: 안정
-version: 0.1.6
+version: 0.1.7
 audience: GUI 제작자
 tags:
   - gui
@@ -18,15 +18,15 @@ tags:
 
 GUI 시스템은 화면의 모양을 정의합니다. 대화 내용, 상점 상품, 화폐 잔액 같은 실제 데이터는 각 에디터가 만들고, GUI JSON은 그 데이터를 어느 위치에 어떤 컴포넌트로 보여줄지 정합니다.
 
-GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker/gui` 아래에 들어갑니다. 대화, 상점, 레머넌트 메시지는 폴더를 따로 나누지 않고 `guiType`으로 구분합니다.
+GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker/gui` 아래에 들어갑니다. 대화, 상점, 텔레포터, 레머넌트 메시지는 폴더를 따로 나누지 않고 `guiType`으로 구분합니다.
 
-0.1.6의 GUI Maker는 `dialogue`, `npc_shop`, `remnant_msg`, `currency_hud`뿐 아니라 플레이어 상태/커스텀 HUD 계열 레이아웃 프로필도 같은 캔버스 규칙으로 다룹니다. 에디터 미리보기, 저장된 GUI 레이아웃, 플레이어가 보는 런타임 화면은 서로 다른 단계이므로 미리보기 샘플을 실제 대화·상품 데이터로 보지 마세요.
+0.1.7의 GUI Maker는 `dialogue`, `npc_shop`, `teleporter`, `remnant_msg`, `currency_hud`뿐 아니라 플레이어 상태/커스텀 HUD 계열 레이아웃 프로필도 같은 캔버스 규칙으로 다룹니다. 에디터 미리보기, 저장된 GUI 레이아웃, 플레이어가 보는 런타임 화면은 서로 다른 단계이므로 미리보기 샘플을 실제 런타임 데이터로 보지 마세요.
 
 ## 기본 구조
 
 | 필드 | 의미 |
 | --- | --- |
-| `guiType` | `dialogue`, `npc_shop`, `currency_hud`, `remnant_msg` 같은 화면 타입입니다. |
+| `guiType` | `dialogue`, `npc_shop`, `teleporter`, `currency_hud`, `remnant_msg` 같은 화면 타입입니다. |
 | `id` | GUI 문서 ID입니다. 파일명과 맞추면 연결할 때 관리하기 쉽습니다. |
 | `stage` | 기준 해상도, 배경, 그리드 같은 화면 전체 설정입니다. |
 | `elements` | 화면에 배치되는 컴포넌트 배열입니다. |
@@ -35,7 +35,7 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 
 `elements`는 실제 화면 요소입니다. 각 요소는 `id`, `type`, 위치, 크기, 색상, 텍스트, 이미지, 상점 역할 같은 값을 가집니다.
 
-`stage`의 기준 크기와 실제 viewport를 함께 보면서 안전 여백을 남기고, 패널의 `fillOpacity`와 상속된 기본 스타일을 확인하세요. 0.1.6 상점 프리셋은 상품/거래 컴포넌트를 담는 루트 패널 구조도 함께 사용합니다.
+`stage`의 기준 크기와 실제 viewport를 함께 보면서 안전 여백을 남기고, 패널의 `fillOpacity`와 상속된 기본 스타일을 확인하세요. 0.1.7 상점 프리셋은 상품/거래 컴포넌트를 담는 루트 패널 구조도 함께 사용합니다.
 
 ## GUI 타입
 
@@ -43,6 +43,7 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 | --- | --- | --- | --- |
 | `dialogue` | 대화 런타임 | `default_dialogue_gui.json` | `config/dochi_rpg_maker/gui` |
 | `npc_shop` | 상점 런타임 | `default_shop_gui.json` | `config/dochi_rpg_maker/gui` |
+| `teleporter` | 텔레포터 런타임 | `default_teleporter_gui.json` | `config/dochi_rpg_maker/gui` |
 | `remnant_msg` | 레머넌트 메시지 | `default_remnant_msg_gui.json` | `config/dochi_rpg_maker/gui` |
 | `currency_hud` | 화폐 HUD 레이아웃 | `currency_hud_layout.json` | `config/dochi_rpg_maker/hud/sets` |
 
@@ -55,7 +56,7 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 | `dialog` | `dialogue`, `remnant_msg` | 대화문이나 메시지 본문을 표시합니다. |
 | `choice` | `dialogue` | 플레이어 선택지 목록을 표시합니다. |
 | `panel` | `npc_shop`, `currency_hud`, `remnant_msg` | 배경이나 구획을 만드는 기본 패널입니다. |
-| `image` | `dialogue`, `npc_shop`, `currency_hud`, `remnant_msg` | 텍스처나 이미지 리소스를 표시합니다. |
+| `image` | `dialogue`, `npc_shop`, `teleporter`, `currency_hud`, `remnant_msg` | 텍스처나 이미지 리소스를 표시합니다. |
 | `entity` | `dialogue`, `npc_shop` | NPC나 엔티티 미리보기 영역입니다. |
 | `item` | `dialogue`, `npc_shop` | 아이템 아이콘을 표시합니다. |
 | `item_slot` | `npc_shop` | 상점 상품 행, 가격, 재고를 표시합니다. |
@@ -65,6 +66,11 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 | `shop_search_bar` | `npc_shop` | 상점 상품 검색 입력 영역입니다. |
 | `shop_page_selector` | `npc_shop` | 상점 목록 페이지 이동 영역입니다. |
 | `currency_display` | `npc_shop` | 플레이어가 가진 화폐 잔액을 표시합니다. |
+| `teleporter_search_bar` | `teleporter` | 목적지 검색 입력 영역입니다. |
+| `teleporter_category_list` | `teleporter` | 카테고리 필터 목록입니다. |
+| `teleporter_destination_list` | `teleporter` | 사용할 수 있는 목적지 목록입니다. |
+| `teleporter_destination_name`, `teleporter_destination_description`, `teleporter_destination_icon` | `teleporter` | 선택 목적지의 상세 정보입니다. |
+| `teleporter_action_button`, `teleporter_close_button` | `teleporter` | 이동 실행과 닫기 버튼입니다. |
 | `currency_list` | `currency_hud` | 여러 화폐를 목록으로 표시합니다. |
 | `currency_icon` | `currency_hud` | 화폐 아이콘입니다. |
 | `currency_amount` | `currency_hud` | 화폐 수량입니다. |
@@ -74,7 +80,7 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 
 ## GUI 연결 방식
 
-대화 문서는 `dialogueDefaultGui`로 대화 GUI를 연결합니다. 상점 문서는 `shopDefaultGui`, `shopGuis.buy`, `shopGuis.sell`로 상점 GUI를 연결합니다. 레머넌트 메시지는 메시지 문서의 `gui` 필드로 `remnant_msg` GUI를 연결합니다.
+대화 문서는 `dialogueDefaultGui`로 대화 GUI를 연결합니다. 상점 문서는 `shopDefaultGui`, `shopGuis.buy`, `shopGuis.sell`로 상점 GUI를 연결합니다. Teleporter Set은 루트 `gui` 필드로 `teleporter` GUI를 연결하고, 비어 있으면 `default_teleporter_gui.json`을 사용합니다. 레머넌트 메시지는 메시지 문서의 `gui` 필드로 `remnant_msg` GUI를 연결합니다.
 
 ```json
 {
@@ -88,7 +94,7 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 
 ## 가능한 것
 
-- 대화, 상점, 레머넌트 메시지의 화면 배치를 바꿀 수 있습니다.
+- 대화, 상점, 텔레포터, 레머넌트 메시지의 화면 배치를 바꿀 수 있습니다.
 - 상점의 구매 화면과 판매 화면을 다른 GUI로 분리할 수 있습니다.
 - 버튼, 패널, 이미지, 아이템 슬롯, 선택지 목록의 위치와 크기를 조정할 수 있습니다.
 - 상점 버튼 일부는 `buttonConfig.vanillaButtons`로 바닐라 버튼 렌더링을 사용할 수 있습니다.
@@ -99,6 +105,7 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 - GUI Maker는 화면 모양을 바꾸는 도구입니다. 대화 노드, 보상, 상품 가격, 화폐 잔액 자체는 각 전용 에디터에서 만들어야 합니다.
 - `dialogue` GUI에 상점 전용 컴포넌트를 넣어도 상점 데이터가 자동으로 생기지 않습니다.
 - `npc_shop` GUI에 선택지 컴포넌트를 넣어도 대화 선택지처럼 동작하지 않습니다.
+- `teleporter` GUI가 아닌 레이아웃에는 목적지 목록과 이동 버튼의 런타임 동작이 연결되지 않습니다.
 - 기본 GUI 파일을 직접 덮어쓰면 업데이트 때 기본값과 섞일 수 있으므로 `Save As`로 별도 파일을 만드는 쪽이 좋습니다.
 - `default`로 시작하는 GUI와 알려진 기본 GUI 경로는 서버에서 읽기 전용으로 보호되므로 실제로도 `Save As`가 필요합니다.
 - 컴포넌트 ID가 중복되면 런타임 연결이 헷갈릴 수 있으므로 역할이 있는 요소는 고유 ID를 유지해야 합니다.

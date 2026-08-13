@@ -7,7 +7,7 @@ product: core-fabric
 category: 다이얼로그 에디터
 section: dialogue-editor
 status: 안정
-version: 0.1.6
+version: 0.1.7
 audience: 대화 제작자
 tags:
   - condition
@@ -44,12 +44,13 @@ tags:
 
 ## 액션 타입
 
-0.1.6의 공용 Condition Editor에서는 조건 행을 드래그해 순서를 바꿀 수 있고, 목록 가장자리에서 자동 스크롤과 삽입 가이드를 제공합니다. `item`, `faction_score`, `advancement`, `ftb`, `ftb_task`의 ID 필드는 `Find`로 검색할 수 있습니다. FTB 검색과 판정은 FTB Quests가 실제로 설치되고 클라이언트 데이터가 동기화된 경우에만 사용할 수 있습니다.
+0.1.7의 공용 Condition Editor에서는 조건 행을 드래그해 순서를 바꿀 수 있고, 목록 가장자리에서 자동 스크롤과 삽입 가이드를 제공합니다. `item`, `faction_score`, `advancement`, `ftb`, `ftb_task`의 ID 필드는 `Find`로 검색할 수 있습니다. FTB 검색과 판정은 FTB Quests가 실제로 설치되고 클라이언트 데이터가 동기화된 경우에만 사용할 수 있습니다.
 
 | type | 주요 필드 | 동작 |
 | --- | --- | --- |
 | `goto` | `value` | 같은 대화 문서 안의 노드로 이동합니다. |
 | `go_shop` | `shop`, `value` | NPC에 붙은 상점 또는 `npc_shops` 파일 상점을 엽니다. |
+| `go_teleporter` | `teleporter`, `value` | NPC에 적용된 Teleporter Set 또는 `teleporters`의 지정 파일을 엽니다. |
 | `close` | 없음 | 대화 화면을 닫습니다. |
 | `command` | `command`, `value` | 서버 명령을 플레이어 기준으로 실행합니다. |
 | `tag` | `key`, `op` | 플레이어 태그를 추가하거나 제거합니다. |
@@ -59,7 +60,9 @@ tags:
 | `ftb_task` | `quest`, `task` | FTB 퀘스트 태스크를 완료 처리합니다. |
 | `ftb_complete` | `quest` | FTB 퀘스트를 완료 처리합니다. |
 
-`goto`, `go_shop`, `close`는 화면 이동 액션입니다. 선택지의 액션 배열에서 이 타입을 만나면 다음 화면이 결정됩니다. 그 외 타입은 서버에서 결과를 처리하는 액션입니다.
+`goto`, `go_shop`, `go_teleporter`, `close`는 화면 이동 액션입니다. 선택지의 액션 배열에서 이 타입을 만나면 다음 화면이 결정됩니다. 그 외 타입은 서버에서 결과를 처리하는 액션입니다.
+
+`go_teleporter`에서 대상 값을 `bound`로 두거나 비우면 현재 NPC에 적용된 Teleporter Set을 사용합니다. 특정 세트를 직접 열려면 `teleporter` 또는 `value`에 `town_network.json` 같은 정규화된 경로를 넣습니다.
 
 ## 보상형 액션
 
@@ -105,3 +108,4 @@ tags:
 - 액션 결과는 서버 기준으로 처리됩니다. 클라이언트 화면 텍스트만 바꾼다고 실제 보상이 지급되지는 않습니다.
 - FTB 관련 조건과 액션은 FTB Quests가 로드된 환경에서 의미가 있습니다.
 - 상점 열기는 `go_shop`으로 연결하지만, 상점 상품과 가격은 NPC Shop 문서가 담당합니다.
+- 텔레포터 열기는 `go_teleporter`로 연결하지만, 목적지와 접근 조건은 Teleporter Set이 담당합니다.

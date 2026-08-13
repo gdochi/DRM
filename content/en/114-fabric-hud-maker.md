@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: hud-maker
 status: Stable
-version: 0.1.6
+version: 0.1.7
 audience: Creators / Operators
 tags:
   - hud
@@ -33,7 +33,7 @@ HUD files use these paths.
 
 HUD sets are managed by the server, then sent to the client for rendering.
 
-0.1.6 installs disabled starter definitions for the currency wallet plus health, food, armor, air, and experience. Enable or clone only the definitions you intend to use.
+0.1.7 installs disabled starter definitions for the currency wallet plus health, food, armor, air, and experience. Enable or clone only the definitions you intend to use.
 
 ## Basic Workflow
 

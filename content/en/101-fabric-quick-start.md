@@ -2,12 +2,12 @@
 title: Quick Start
 slug: quick-start
 order: 20
-description: The shortest path into DRM Core 0.1.6 on Fabric 1.21.1.
+description: The shortest path into DRM Core 0.1.7 on Fabric 1.21.1.
 product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.6
+version: 0.1.7
 audience: First-time users
 tags:
   - quick-start
@@ -17,12 +17,12 @@ tags:
 ## First Launch
 
 1. Prepare Minecraft 1.21.1, Fabric Loader 0.18.0 or newer, Fabric API 0.116.11 or newer, and Java 21.
-2. Put the DRM Core 0.1.6 Fabric JAR in the client and server `mods` folders.
-3. Install CustomNPCs in the same environment when authoring dialogue, shops, or editor data for CustomNPCs NPCs. It is not a loader-level requirement for standalone file, GUI, or HUD work.
+2. Put the DRM Core 0.1.7 Fabric JAR in the client and server `mods` folders.
+3. Install CustomNPCs in the same environment when authoring dialogue, shops, Teleporter bindings, or NPC Spawner sources. It is not a loader-level requirement for standalone file, GUI, or HUD work.
 4. Start the world or server once so `config/dochi_rpg_maker` is created.
 5. In Creative mode or with edit permission, get the `Dochi RPG Maker Core` item from the CustomNPCs tab or run `/give @s dochi_rpg_maker:dialogue_editor`.
 
-On first launch, the mod installs default dialogue sets, dialogue/shop/Remnant Msg GUI files, a sample shop, HUD definitions, Remnant Msg sample/policy files, and settings under `config/dochi_rpg_maker`.
+On first launch, the mod installs default dialogue sets, dialogue/shop/Teleporter/Remnant Msg GUI files, a protected Teleporter Set, a sample shop, HUD definitions, Remnant Msg sample/policy files, and settings under `config/dochi_rpg_maker`.
 
 ## Opening Editors
 
@@ -30,12 +30,16 @@ On first launch, the mod installs default dialogue sets, dialogue/shop/Remnant M
 | --- | --- |
 | Right-click air with `Dochi RPG Maker Core` | Opens the shared editor selector. |
 | Right-click a CustomNPCs NPC with the item | Opens the target-aware edit flow. |
+| Right-click an NPC Spawner block with the item | Opens that block's NPC Spawner editor. |
 | Right-click a dialogue NPC without the item | Opens the dialogue runtime. |
 | Right-click a shop-only NPC without the item | Opens the NPC shop runtime. |
+| Right-click a Teleporter-bound NPC without the item | Opens the Teleporter runtime. |
 
 The core item is also added to the CustomNPCs creative tab. Editing requires creative/edit permission.
 
-The 0.1.6 selector has search plus `Built-in` and `Add-on` categories. During the current session it remembers the last editor, sub-screen, and JSON source so returning to an editor can resume the previous workflow.
+The 0.1.7 selector has search plus `Built-in` and `Add-on` categories. It includes the Teleporter editor; NPC Spawner is opened from its placed block instead. During the current session, the selector remembers the last editor, sub-screen, and JSON source so returning to an editor can resume the previous workflow.
+
+When a target NPC is open in NPC Apply, use the new `FUNCTION` search field to filter built-in and addon apply targets by their localized name, target ID, JSON kind, editor ID, or binding group.
 
 ## Shared Editor Shortcuts
 
@@ -70,8 +74,10 @@ For shops, start from `NPC Shop` in the same selector. File-based shops are save
 | 3 | Dialogue Editor | The main NPC dialogue authoring flow. |
 | 4 | Conditions And Actions | Choice gates, rewards, and shop links. |
 | 5 | NPC Shop | Buy and sell shops. |
-| 6 | GUI Maker | Dialogue/shop/message screen layout. |
-| 7 | HUD Maker | Always-visible player HUDs. |
+| 6 | Teleporter | Destination sets, NPC binding, and player travel. |
+| 7 | NPC Spawner | Weighted sources, spawn rules, and block appearance. |
+| 8 | GUI Maker | Dialogue/shop/Teleporter/message screen layout. |
+| 9 | HUD Maker | Always-visible player HUDs. |
 
 :::tip Operator Command
 If you edit server JSON by hand, run `/drm reload` or review `settings/reload_policy.json`.

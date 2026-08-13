@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: currency-editor
 status: Stable
-version: 0.1.6
+version: 0.1.7
 audience: Creators / Operators
 tags:
   - currency
@@ -52,7 +52,7 @@ The server JSON `kind` is `currency`. Currency list and preview reads use `curre
 6. Set the death rule to `KEEP` or `LOSE`.
 7. Save, then run `/drm currency reload` or `/drm reload`.
 
-Fabric 0.1.6 copies DRM wallet and compatible bank balance keys when Minecraft replaces the player entity after death. `KEEP` preserves the balance, while `LOSE` carries forward the post-deduction value. Automatic item conversion and death loss notify the affected player in chat. Ordinary pickup conversion processes only the newly picked-up stack, not unrelated currency stacks already in the inventory.
+Fabric 0.1.7 copies DRM wallet and compatible bank balance keys when Minecraft replaces the player entity after death. `KEEP` preserves the balance, while `LOSE` carries forward the post-deduction value. Automatic item conversion and death loss notify the affected player in chat. Ordinary pickup conversion processes only the newly picked-up stack, not unrelated currency stacks already in the inventory.
 
 ## Command Checks
 

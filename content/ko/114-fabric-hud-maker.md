@@ -7,7 +7,7 @@ product: core-fabric
 category: HUD Maker
 section: hud-maker
 status: 안정
-version: 0.1.6
+version: 0.1.7
 audience: HUD 제작자
 tags:
   - hud
@@ -32,7 +32,7 @@ HUD 정의는 `HudDefinition` 구조를 사용합니다. 하나의 정의에는 
 
 HUD 정의의 서버 JSON kind는 `hud_definition`입니다. 활성 세트는 `hud/active_set.json`으로 따로 관리됩니다.
 
-0.1.6은 화폐 지갑, 체력, 허기, 방어도, 산소, 경험치 기본 정의를 제공합니다. 모두 `enabled: false`로 설치되므로 원하는 정의만 복제하거나 활성화해 사용합니다.
+0.1.7은 화폐 지갑, 체력, 허기, 방어도, 산소, 경험치 기본 정의를 제공합니다. 모두 `enabled: false`로 설치되므로 원하는 정의만 복제하거나 활성화해 사용합니다.
 
 ## 상단 버튼
 
@@ -85,7 +85,7 @@ HUD Maker 일부 버튼은 번역 키를 사용합니다. 화면에는 지역화
 | `IMAGE` | 텍스처, 아이콘, 배경 이미지를 표시합니다. |
 | `ICON_LIST` | 방어도처럼 정해진 개수의 아이콘을 값에 따라 채웁니다. |
 
-요소는 `transform`, `binding`, `renderer`, `visibility`, `animation`, `children` 구조를 가집니다. 0.1.6 기본 방어도 HUD는 `ICON_LIST`를 사용합니다.
+요소는 `transform`, `binding`, `renderer`, `visibility`, `animation`, `children` 구조를 가집니다. 0.1.7 기본 방어도 HUD는 `ICON_LIST`를 사용합니다.
 
 ## Open Canvas
 

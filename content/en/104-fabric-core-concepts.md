@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: getting-started
 status: Stable
-version: 0.1.6
+version: 0.1.7
 audience: Creators
 tags:
   - concepts
@@ -24,13 +24,16 @@ tags:
 | Layout Profile | Defines storage, default ID, and default file for a GUI type such as `dialogue` or `npc_shop`. |
 | Dialogue Document | Root JSON for a dialogue set: nodes, choices, conditions, actions, and GUI reference. |
 | Shop Document | NPC shop JSON: trade mode, products, sale offers, currency, and shop GUI reference. |
+| Teleporter Set | Server JSON containing categories, destinations, access conditions, presentation, and transitions. |
+| Spawner Source Pool | A placed NPC Spawner's weighted list of template or Soul Stone snapshot sources. |
 | Currency Definition | JSON for one currency: item icon, pickup conversion, HUD visibility, and death-loss rules. |
 | NPC Binding | Either embedded JSON on an NPC or a `source.kind` plus `source.path` reference to server JSON. |
+| Apply Manager | Target-aware screen that applies or removes registered functions such as dialogue, shop, and Teleporter bindings. |
 | Protected Default | Bundled sample/default data that should be cloned with `Save As` instead of edited in place. |
 
 ## Editor vs Runtime
 
-Editors create and save JSON. Runtime code reads the saved JSON when a player interacts with an NPC and performs the actual dialogue, shop, HUD, command, item, and currency behavior.
+Editors create and save JSON or server-authorized block data. Runtime code reads it when a player interacts with an NPC or spawner and performs dialogue, shop, Teleporter, spawn, HUD, command, item, and currency behavior.
 
 | Stage | Location | Example |
 | --- | --- | --- |
@@ -38,6 +41,7 @@ Editors create and save JSON. Runtime code reads the saved JSON when a player in
 | Binding | Server NPC PersistentData | Store `source.kind`, `source.path`, or embedded JSON on an NPC. |
 | Runtime | Server logic plus client screen | Filter choices by conditions and open the dialogue screen. |
 | Result | Server state | Run commands, give items, change tags, update currency. |
+| Block state | Server block entity | Save NPC Spawner sources, rules, conditions, appearance, and active leases. |
 
 ## Connection Model
 
@@ -45,12 +49,17 @@ DRM content is normally a chain of linked data. A dialogue choice can open a sho
 
 ```text
 CustomNPCs NPC
-  -> DialogueStorage or NpcShopStorage
+  -> DialogueStorage / NpcShopStorage / Teleporter binding
       -> ServerJsonStorage(kind, path)
-          -> Dialogue / Shop / GUI / Currency JSON
+          -> Dialogue / Shop / Teleporter / GUI / Currency JSON
               -> Runtime screen
                   -> Condition checks
                   -> Action execution
+
+NPC Spawner block
+  -> World block-entity settings and weighted pool
+      -> Config template or owned Soul Stone snapshot
+          -> Server-side CustomNPC materialization and lease tracking
 ```
 
 ## File-Based vs Embedded NPC Data

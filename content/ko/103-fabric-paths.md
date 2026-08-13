@@ -7,7 +7,7 @@ product: core-fabric
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.6
+version: 0.1.7
 audience: 제작자 / 운영자
 tags:
   - paths
@@ -31,8 +31,11 @@ tags:
 | 데이터 | 경로 | 설명 |
 | --- | --- | --- |
 | 대화 세트 | `config/dochi_rpg_maker/dialogue_sets/<set>/` | `dialogue_set.json`과 노드별 `*.json`을 함께 저장합니다. |
-| GUI 레이아웃 | `config/dochi_rpg_maker/gui/` | 대화, 상점, Remnant Msg 같은 화면 GUI JSON입니다. 하위 폴더를 사용할 수 있습니다. |
+| GUI 레이아웃 | `config/dochi_rpg_maker/gui/` | 대화, 상점, 텔레포터, Remnant Msg 같은 화면 GUI JSON입니다. 하위 폴더를 사용할 수 있습니다. |
 | NPC 상점 | `config/dochi_rpg_maker/npc_shops/` | 파일 기반 상점 JSON입니다. |
+| Teleporter Set | `config/dochi_rpg_maker/teleporters/` | 카테고리, 목적지, 조건, 전환 설정을 저장합니다. |
+| NPC Spawner 템플릿 | `config/dochi_rpg_maker/npc_spawner/entity_clones/<classification>/` | 재사용하는 CustomNPC 소스 템플릿입니다. |
+| NPC Spawner 스냅샷 | `config/dochi_rpg_maker/npc_spawner/spawner_snapshots/` | Spawner 소스가 소유하는 Filled Soul Stone 스냅샷입니다. |
 | 화폐 정의 | `config/dochi_rpg_maker/currency/definitions/` | 화폐 ID, 이름, 아이콘, 픽업 변환, 사망 규칙을 정의합니다. |
 | HUD 세트 | `config/dochi_rpg_maker/hud/sets/` | HUD Maker가 쓰는 HUD 세트 JSON입니다. |
 | HUD 정의 | `config/dochi_rpg_maker/hud/definitions/` | 바닐라 HUD 대체 또는 커스텀 HUD 정의입니다. |
@@ -47,6 +50,8 @@ tags:
 | `dialogue_sets` | 폴더 | `dialogue_sets/blacksmith/start.json` | 한 대화 세트가 하나의 폴더입니다. 불러오기와 저장도 세트 폴더 기준으로 처리합니다. |
 | `gui` | JSON 파일 | `gui/default_shop_gui.json` | 대화, 상점, 메시지 화면의 배치와 컴포넌트만 저장합니다. 상품이나 대화 내용 자체는 저장하지 않습니다. |
 | `npc_shops` | JSON 파일 | `npc_shops/blacksmith.json` | NPC가 팔거나 매입하는 상품, 가격, 재고, 화폐 기준을 저장합니다. |
+| `teleporters` | JSON 파일 | `teleporters/town_network.json` | 텔레포터 카테고리와 목적지, 접근 조건, 전환 효과를 저장합니다. |
+| `npc_spawner/entity_clones` | JSON 파일 | `npc_spawner/entity_clones/npc/guard.json` | Spawner가 재사용하는 CustomNPC 템플릿입니다. |
 | `currency/definitions` | JSON 파일 | `currency/definitions/gold.json` | 화폐 ID와 표시 방식, 픽업 변환, 사망 규칙을 저장합니다. |
 | `hud/sets` | 세트 JSON | `hud/sets/default.json` | HUD Maker에서 편집한 화면 배치 세트입니다. |
 | `hud/definitions` | 정의 JSON | `hud/definitions/vanilla/health.json` | HUD 요소가 어떤 값을 표시할지 정하는 정의입니다. |
@@ -65,6 +70,7 @@ tags:
 | `dialogue_set` | `dialogue_sets` | 폴더 단위입니다. 저장 시 `dialogue_set.json`과 노드 파일을 같이 씁니다. |
 | `gui` | `gui` | 최대 3단계까지 하위 폴더 검색을 지원합니다. |
 | `npc_shop` | `npc_shops` | 파일 단위 상점입니다. |
+| `teleporter_set` | `teleporters` | Teleporter Set JSON입니다. 최대 3단계 하위 폴더 검색을 지원합니다. |
 | `currency` | `currency/definitions` | 화폐 정의 파일입니다. |
 | `currency_index` | 화폐 정의 전체 | 목록/미리보기용 읽기 전용 인덱스입니다. |
 | `currency_hud_layout` | `hud/sets` | HUD 세트 저장소입니다. 예전 `currency_hud` 이름도 호환됩니다. |
@@ -74,6 +80,8 @@ tags:
 | `remnant_msg_policy` | `remnant_msg/policies` | 레머넌트 메시지 정책 문서입니다. |
 | `settings` | `settings/defaults.json` | 기본 화폐와 기본 GUI 연결 설정입니다. |
 
+NPC Spawner 블록 설정과 가중치 소스 풀은 `ServerJsonStorage` 종류가 아니라 월드의 블록 엔티티에 저장됩니다. 재사용 템플릿과 Spawner 소유 Soul Stone 스냅샷만 위의 config 폴더를 사용합니다.
+
 ## 경로 입력 규칙
 
 - `gui/default_shop_gui.json`처럼 폴더 기준 상대 경로를 사용합니다.
@@ -81,13 +89,14 @@ tags:
 - Windows 역슬래시는 내부에서 `/`로 정규화됩니다.
 - 빈 파일명은 `default.json`으로 보정될 수 있으므로 저장 전 이름을 명확히 정합니다.
 - `..`로 상위 폴더를 벗어나는 경로는 거부됩니다.
-- `default_set`, `default`로 시작하는 GUI, 알려진 기본 GUI 경로, `default`로 시작하는 상점과 샘플 상점은 보호 기본값입니다. 서버 저장/삭제가 거부되므로 `Save As`로 새 이름을 만듭니다.
+- `default_set`, `default`로 시작하는 GUI, 알려진 기본 GUI 경로, `default`로 시작하는 상점과 샘플 상점, `default_teleporter_set.json`은 보호 기본값입니다. 서버 저장/삭제가 거부되므로 `Save As`로 새 이름을 만듭니다.
 
 ## 업데이트 때 기본 파일이 처리되는 방식
 
 | 데이터 | 시작 시 처리 |
 | --- | --- |
-| 기본 대화 세트, GUI, 상점 | JAR에 포함된 0.1.6 기본본으로 갱신됩니다. |
+| 기본 대화 세트, GUI, 상점, 텔레포터 | JAR에 포함된 0.1.7 기본본으로 갱신됩니다. |
+| `default_teleporter_set.json` | 보호된 Teleporter 템플릿으로 설치됩니다. |
 | Remnant Msg 샘플 메시지 | JAR 기본본으로 갱신됩니다. |
 | HUD 정의 | 파일이 없을 때만 설치되며 기본값은 `enabled: false`입니다. |
 | Remnant Msg 기본 정책 | 파일이 없을 때만 설치됩니다. |

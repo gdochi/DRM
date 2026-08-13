@@ -7,7 +7,7 @@ product: core-fabric
 category: Reference / Operations
 section: operations
 status: Stable
-version: 0.1.6
+version: 0.1.7
 audience: Advanced users
 tags:
   - json
@@ -18,7 +18,7 @@ tags:
 
 - Save JSON as UTF-8.
 - Treat paths as relative to `config/dochi_rpg_maker`.
-- Matching filenames and internal `id` values makes dialogue and shop lookup easier.
+- Matching filenames and internal IDs makes dialogue, shop, and Teleporter lookup easier.
 - Clone bundled defaults with `Save As` instead of editing them in place.
 - Dialogue and shop documents have a 1 MB network transfer limit.
 
@@ -111,7 +111,7 @@ Elements use `id`, `type`, `x`, `y`, `w`, `h`, and `z` as their base fields. Typ
 
 `tradeMode` accepts `buy_only`, `sell_only`, and `buy_sell`. `items[].stock` uses `-1` for unlimited stock.
 
-A 0.1.6 buy product can override payment and configure restocking.
+A 0.1.7 buy product can override payment and configure restocking.
 
 ```json
 {
@@ -134,6 +134,68 @@ A 0.1.6 buy product can override payment and configure restocking.
 ```
 
 Use `currencyType: "inherit"` on a product to use the shop-level payment. Explicit invalid payment IDs or SNBT produce a runtime error instead of a fallback.
+
+## TeleporterDocument Summary
+
+```json
+{
+  "schemaVersion": 2,
+  "setId": "town_network",
+  "displayName": "Town Network",
+  "gui": "default_teleporter_gui.json",
+  "interactionConditions": {
+    "enabled": false,
+    "conditionMode": "and",
+    "conditions": []
+  },
+  "lockedPresentation": { "mode": "dimmed" },
+  "transition": {
+    "fadeOutTicks": 10,
+    "fadeInTicks": 10
+  },
+  "categories": [
+    { "id": "towns", "name": "Towns", "iconMedia": { "mode": "image" } }
+  ],
+  "destinations": [
+    {
+      "id": "spawn",
+      "enabled": true,
+      "categoryId": "towns",
+      "name": "Spawn",
+      "description": "Return to spawn",
+      "descriptionStyles": [],
+      "target": { "x": 0.5, "y": 64.0, "z": 0.5, "yaw": 0.0, "pitch": 0.0 },
+      "accessConditions": { "enabled": false, "conditionMode": "and", "conditions": [] }
+    }
+  ]
+}
+```
+
+Teleporter Sets are file-based `teleporter_set` documents under `teleporters`. A set supports up to 256 categories and 1,024 destinations. Targets use coordinates and rotation in the player's current dimension; the 0.1.7 schema has no dimension field.
+
+## NPC Spawner Template Summary
+
+```json
+{
+  "format": "dochi_rpg_maker_npc_spawner_template",
+  "schemaVersion": 1,
+  "sourceId": "npc/test_guard",
+  "name": "test_guard",
+  "classificationId": "npc",
+  "entityType": "customnpcs:customnpc",
+  "minecraftVersion": "1.21.1",
+  "requiredMods": ["customnpcs"],
+  "bindingPolicy": "",
+  "displayName": "Test Guard",
+  "subject": "",
+  "partySize": 0,
+  "level": 0,
+  "payloadEncoding": "snbt",
+  "entityNbt": "{...}"
+}
+```
+
+Reusable templates live under `npc_spawner/entity_clones/<classification>`. The placed block's ConfigVersion 4 settings, weighted pool, and active leases live in world block-entity data instead of `ServerJsonStorage`. Do not hand-edit `entityNbt` unless you understand SNBT and CustomNPCs entity data.
 
 ## Remnant Msg Summary
 

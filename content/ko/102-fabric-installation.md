@@ -2,12 +2,12 @@
 title: 설치 준비
 slug: installation
 order: 30
-description: Fabric 1.21.1용 DRM Core 0.1.6의 설치 조건과 서버/클라이언트 역할입니다.
+description: Fabric 1.21.1용 DRM Core 0.1.7의 설치 조건과 서버/클라이언트 역할입니다.
 product: core-fabric
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.6
+version: 0.1.7
 audience: 서버 운영자
 tags:
   - install
@@ -20,7 +20,7 @@ Fabric 빌드는 Minecraft `1.21.1` 전용입니다. Forge 1.20.1용 JAR과 파�
 
 | 항목 | 요구 조건 | 현재 프로젝트 기준 |
 | --- | --- | --- |
-| DRM Core | `0.1.6` Fabric 빌드 | `dochi_rpg_maker-0.1.6-fabric-1.21.1.jar` |
+| DRM Core | `0.1.7` Fabric 빌드 | `dochi_rpg_maker-0.1.7-fabric-1.21.1.jar` |
 | Minecraft | 정확히 `1.21.1` | 다른 1.21.x 버전과 혼용하지 않습니다. |
 | Fabric Loader | `0.18.0` 이상 | 빌드 기준 `0.19.3` |
 | Fabric API | `0.116.11+1.21.1` 이상 | 빌드 기준 `0.116.13+1.21.1` |
@@ -32,16 +32,16 @@ Fabric 빌드는 Minecraft `1.21.1` 전용입니다. Forge 1.20.1용 JAR과 파�
 
 | 모드 | 언제 필요한가 |
 | --- | --- |
-| CustomNPCs | CustomNPCs NPC에 대화·상점·NPC 기본 데이터를 적용하고 런타임 상호작용을 만들 때 필요합니다. |
+| CustomNPCs | CustomNPCs 대화·상점·NPC 기본 데이터·텔레포터 적용, Filled Soul Stone 소스, NPC Spawner의 실제 소환에 필요합니다. |
 | Mod Menu | Minecraft 모드 목록에서 DRM의 `Mods Config` 화면을 열고 싶을 때 사용합니다. |
 | FTB Quests | `ftb`, `ftb_task` 조건과 퀘스트/태스크 완료 액션을 사용할 때 필요합니다. |
 | CobbleDollars | 설치된 애드온이나 서버 구성이 이 연동을 사용할 때만 필요합니다. DRM Core의 필수 의존성은 아닙니다. |
 
-CustomNPCs가 없어도 DRM은 부팅할 수 있고 파일, GUI, HUD 제작 기능을 사용할 수 있습니다. 다만 이 문서의 NPC 대화·상점·NPC 편집 흐름에는 CustomNPCs가 필요합니다.
+CustomNPCs가 없어도 DRM은 부팅할 수 있고 파일, GUI, HUD 제작 기능과 NPC Spawner 블록/에디터를 사용할 수 있습니다. 다만 CustomNPC 소스 생성과 실제 소환을 포함한 NPC 런타임에는 CustomNPCs가 필요합니다.
 
 ## 설치 절차
 
-1. 클라이언트와 서버의 `mods` 폴더에 같은 `0.1.6` Fabric JAR을 넣습니다.
+1. 클라이언트와 서버의 `mods` 폴더에 같은 `0.1.7` Fabric JAR을 넣습니다.
 2. 같은 환경에 Fabric API를 설치합니다.
 3. NPC 기능을 쓸 경우 호환되는 Fabric 1.21.1 CustomNPCs를 서버와 클라이언트에 함께 설치합니다.
 4. 월드나 서버를 한 번 실행해 `config/dochi_rpg_maker`를 생성합니다.
@@ -52,22 +52,23 @@ CustomNPCs가 설치되어 있으면 코어 아이템과 Remnant Msg Setter가 C
 ```text
 /give @s dochi_rpg_maker:dialogue_editor
 /give @s dochi_rpg_maker:remnant_msg_setter
+/give @s dochi_rpg_maker:npc_spawner
 ```
 
 ## 서버와 클라이언트 역할
 
 | 위치 | 담당 |
 | --- | --- |
-| 서버 | JSON 저장, 권한 검사, NPC 바인딩, 조건/액션 실행, 상점 거래, 재고, 화폐 잔액, Remnant 마커 저장 |
-| 클라이언트 | 에디터 화면, 검색 선택기, GUI Maker 미리보기, 대화/상점 런타임 화면, HUD 렌더링 |
+| 서버 | JSON 저장, 권한 검사, NPC 바인딩, 텔레포터 세션/목적지, NPC Spawner 풀/리스, 조건/액션 실행, 상점 거래, 재고, 화폐 잔액, Remnant 마커 저장 |
+| 클라이언트 | 에디터 화면, 검색 선택기, GUI Maker 미리보기, 대화/상점/텔레포터 런타임 화면, HUD 렌더링 |
 
 멀티플레이에서는 서버의 `config/dochi_rpg_maker`가 기준입니다. 클라이언트에 같은 이름의 JSON을 따로 복사해도 서버 데이터가 바뀌지는 않습니다.
 
 ## 업데이트 전 백업
 
-업데이트하기 전에 `config/dochi_rpg_maker`와 월드 저장 폴더를 함께 백업하세요. NPC에 직접 저장한 대화·상점 데이터와 Remnant 마커 SavedData는 월드 쪽에 들어갑니다.
+업데이트하기 전에 `config/dochi_rpg_maker`와 월드 저장 폴더를 함께 백업하세요. NPC에 직접 저장한 대화·상점 데이터, NPC Spawner 블록 상태와 리스, Remnant 마커 SavedData는 월드 쪽에 들어갑니다. Spawner 템플릿과 스냅샷은 `config/dochi_rpg_maker/npc_spawner` 아래에 있습니다.
 
-기본 대화 세트, 기본 GUI, 샘플 상점, Remnant 샘플 메시지는 시작할 때 번들 기본본으로 다시 설치될 수 있습니다. 기본 파일을 직접 수정하지 말고 `Save As`로 새 이름을 만든 뒤 연결하세요.
+기본 대화 세트, 기본 GUI, 샘플 상점, 기본 Teleporter Set, Remnant 샘플 메시지는 시작할 때 번들 기본본으로 다시 설치될 수 있습니다. 보호된 기본 파일을 직접 수정하지 말고 `Save As`로 새 이름을 만든 뒤 연결하세요.
 
 ## 개발 빌드
 

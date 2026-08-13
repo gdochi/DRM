@@ -7,7 +7,7 @@ product: core-fabric
 category: 핵심 시스템
 section: getting-started
 status: 안정
-version: 0.1.6
+version: 0.1.7
 audience: 제작자
 tags:
   - concepts
@@ -24,13 +24,16 @@ tags:
 | Layout Profile | `dialogue`, `npc_shop`, `currency_hud` 같은 GUI 타입별 저장소와 기본 파일명을 정의합니다. |
 | Dialogue Document | 대화 세트 전체를 담는 JSON 루트입니다. 노드, 선택지, 조건, 액션, 기본 GUI 연결을 포함합니다. |
 | Shop Document | NPC 상점 JSON입니다. 구매/판매 모드, 상품, 판매 매입 목록, 상점 GUI 연결을 포함합니다. |
+| Teleporter Set | 카테고리, 목적지, 접근 조건, 표시 방식, 전환 설정을 담는 서버 JSON입니다. |
+| Spawner Source Pool | 배치된 NPC Spawner가 가진 템플릿/소울 스톤 스냅샷의 가중치 목록입니다. |
 | Currency Definition | 화폐 하나를 정의하는 JSON입니다. 아이템 아이콘, 자동 변환, HUD 표시, 사망 손실 규칙을 가집니다. |
 | NPC Binding | NPC PersistentData에 대화나 상점 JSON을 직접 저장하거나 서버 JSON 경로를 연결하는 방식입니다. |
+| Apply Manager | 대화, 상점, 텔레포터처럼 등록된 기능을 대상 NPC에 적용하거나 제거하는 화면입니다. |
 | Protected Default | 기본 샘플 파일처럼 직접 덮어쓰기보다 `Save As`를 사용해야 하는 보호 데이터입니다. |
 
 ## 에디터와 런타임의 차이
 
-에디터는 JSON을 만들고 저장하는 화면입니다. 런타임은 플레이어가 NPC를 우클릭했을 때 서버가 저장된 JSON을 읽고 실제 대화, 상점, HUD 변화를 실행하는 흐름입니다.
+에디터는 JSON 또는 서버가 승인한 블록 데이터를 만들고 저장하는 화면입니다. 런타임은 플레이어가 NPC나 Spawner와 상호작용할 때 저장 데이터를 읽고 실제 대화, 상점, 텔레포터, 소환, HUD 변화를 실행하는 흐름입니다.
 
 | 단계 | 처리 위치 | 예 |
 | --- | --- | --- |
@@ -38,6 +41,7 @@ tags:
 | 바인딩 | 서버 NPC PersistentData | NPC에 `source.kind`, `source.path` 또는 내장 JSON 저장 |
 | 실행 | 서버 런타임 + 클라이언트 화면 | 조건 평가 후 선택지만 필터링해서 대화 화면 열기 |
 | 결과 | 서버 상태 변경 | 명령 실행, 아이템 지급, 태그 변경, 화폐 차감 |
+| 블록 상태 | 서버 블록 엔티티 | NPC Spawner 소스, 규칙, 조건, 외형, 활성 리스 저장 |
 
 ## 연결 방식
 
@@ -45,12 +49,17 @@ DRM 콘텐츠는 보통 한 파일로 끝나지 않습니다. 대화 선택지�
 
 ```text
 CustomNPCs NPC
-  -> DialogueStorage 또는 NpcShopStorage
+  -> DialogueStorage / NpcShopStorage / Teleporter 바인딩
       -> ServerJsonStorage(kind, path)
-          -> Dialogue / Shop / GUI / Currency JSON
+          -> Dialogue / Shop / Teleporter / GUI / Currency JSON
               -> Runtime screen
                   -> 조건 평가
                   -> 액션 실행
+
+NPC Spawner 블록
+  -> 월드 블록 엔티티 설정과 가중치 풀
+      -> config 템플릿 또는 소유 Soul Stone 스냅샷
+          -> 서버 CustomNPC 생성과 리스 추적
 ```
 
 ## 파일 기반과 NPC 내장 데이터

@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: dialogue-editor
 status: Stable
-version: 0.1.6
+version: 0.1.7
 audience: Script / data creators
 tags:
   - condition
@@ -42,12 +42,13 @@ Numeric comparisons support `>`, `>=`, `<`, `<=`, `==`, and `!=`. Tags and advan
 
 ## Action Types
 
-The 0.1.6 shared Condition Editor supports drag-and-drop reordering with edge auto-scroll and an insertion guide. `item`, `faction_score`, `advancement`, `ftb`, and `ftb_task` ID fields provide searchable `Find` flows. FTB discovery and evaluation require FTB Quests and a synchronized client quest file.
+The 0.1.7 shared Condition Editor supports drag-and-drop reordering with edge auto-scroll and an insertion guide. `item`, `faction_score`, `advancement`, `ftb`, and `ftb_task` ID fields provide searchable `Find` flows. FTB discovery and evaluation require FTB Quests and a synchronized client quest file.
 
 | type | Main Fields | Behavior |
 | --- | --- | --- |
 | `goto` | `value` | Move to a node in the same dialogue document. |
 | `go_shop` | `shop`, `value` | Open a bound NPC shop or a file shop from `npc_shops`. |
+| `go_teleporter` | `teleporter`, `value` | Open the NPC-bound Teleporter Set or an explicit file from `teleporters`. |
 | `close` | none | Close the dialogue screen. |
 | `command` | `command`, `value` | Run a server command as/at the player. |
 | `tag` | `key`, `op` | Add or remove a player tag. |
@@ -57,7 +58,9 @@ The 0.1.6 shared Condition Editor supports drag-and-drop reordering with edge au
 | `ftb_task` | `quest`, `task` | Complete an FTB task. |
 | `ftb_complete` | `quest` | Complete an FTB quest. |
 
-`goto`, `go_shop`, and `close` are navigation actions. Other actions are server side effects.
+`goto`, `go_shop`, `go_teleporter`, and `close` are navigation actions. Other actions are server side effects.
+
+For `go_teleporter`, use `bound` or leave the target blank to use the Teleporter Set applied to that NPC. To open a specific set, store its normalized path in `teleporter` or `value`, for example `town_network.json`.
 
 ## Command Action
 

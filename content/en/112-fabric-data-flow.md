@@ -7,7 +7,7 @@ product: core-fabric
 category: Reference / Operations
 section: operations
 status: Stable
-version: 0.1.6
+version: 0.1.7
 audience: Creators / Operators
 tags:
   - data-flow
@@ -17,7 +17,7 @@ tags:
 
 ## Big Picture
 
-DRM Core reads and writes JSON under the server root `config/dochi_rpg_maker`. NPCs can store embedded JSON or a reference to server JSON through kind and path.
+DRM Core reads and writes JSON under the server root `config/dochi_rpg_maker`. NPCs can store embedded JSON or a reference to server JSON through kind and path. NPC Spawner settings and weighted pools are world block-entity data instead.
 
 ```text
 Mod startup
@@ -37,7 +37,9 @@ Editor Screen
               -> selected NPC stores source.kind / source.path or embedded JSON
 ```
 
-Dialogue sets are folder-based. GUI and shop data are file-based. Reusing the same string in the wrong domain is a common cause of missing runtime data.
+Dialogue sets are folder-based. GUI, shop, and Teleporter data are file-based. Reusing the same string in the wrong domain is a common cause of missing runtime data.
+
+NPC Spawner follows a separate authorized save path: the editor sends a draft for a nearby target block, the server validates edit permission and block identity, then writes ConfigVersion 4 settings and the source pool to that block entity.
 
 ## Dialogue Runtime Flow
 
@@ -70,6 +72,35 @@ go_shop action or shop NPC right-click
 
 Buy and sell operations are server-authoritative. The client screen presents previews and requests; the server decides the actual transaction.
 
+## Teleporter Runtime Flow
+
+```text
+Teleporter NPC right-click or go_teleporter action
+  -> resolve bound or explicit teleporter_set path
+  -> evaluate set interaction conditions
+  -> create a server session and filtered destination snapshot
+  -> open Teleporter runtime screen
+  -> player requests a destination
+  -> recheck session, binding, distance/dimension, and access conditions
+  -> departure fade/sound -> teleport in current dimension -> arrival fade/sound
+```
+
+The server owns the destination target and validation. The client only searches, selects, and requests travel from the snapshot it received.
+
+## NPC Spawner Flow
+
+```text
+Placed npc_spawner block entity
+  -> ConfigVersion 4 settings + weighted source pool
+  -> source template or owned Soul Stone snapshot
+  -> mode/redstone/target/condition/cooldown checks
+  -> weighted source selection for each wave attempt
+  -> server materializes CustomNPC and records active lease
+  -> display entity is validated, restored, or cleaned as needed
+```
+
+Template files live in config, but block settings, pool membership, and active leases live in the world. Source NBT is preserved as an atomic payload; CustomNPCs is required for actual source materialization.
+
 ## Currency And HUD Flow
 
 ```text
@@ -85,13 +116,14 @@ Balances are stored on the player under `dochi_rpg_maker.currency.balance.<curre
 
 ## GUI Loading Flow
 
-Dialogue and shop runtime screens read GUI references and then load GUI JSON from `config/dochi_rpg_maker/gui`.
+Dialogue, shop, and Teleporter runtime screens read GUI references and then load GUI JSON from `config/dochi_rpg_maker/gui`.
 
 | Runtime | GUI Reference |
 | --- | --- |
 | Dialogue | `dialogueDefaultGui.guiJsonPath` |
 | Default shop | `shopDefaultGui.guiJsonPath` |
 | Buy/sell shop views | `shopGuis.buy.guiJsonPath`, `shopGuis.sell.guiJsonPath` |
+| Teleporter | Teleporter Set root `gui` |
 | Remnant Msg | Message/policy data plus `remnant_msg` GUI |
 
 Image resources inside GUI JSON must distinguish Minecraft resource locations from local paths. Keep resource-pack images in forms such as `namespace:textures/...`.

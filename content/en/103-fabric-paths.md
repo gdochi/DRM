@@ -7,7 +7,7 @@ product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.6
+version: 0.1.7
 audience: Creators / Operators
 tags:
   - paths
@@ -31,8 +31,11 @@ If the legacy `<game-or-server-root>/dochi_rpg_maker` folder exists and the new 
 | Data | Path | Description |
 | --- | --- | --- |
 | Dialogue sets | `config/dochi_rpg_maker/dialogue_sets/<set>/` | Stores `dialogue_set.json` plus node `*.json` files. |
-| GUI layouts | `config/dochi_rpg_maker/gui/` | Screen GUI JSON for dialogue, shops, Remnant Msg, and related layouts. |
+| GUI layouts | `config/dochi_rpg_maker/gui/` | Screen GUI JSON for dialogue, shops, Teleporter, Remnant Msg, and related layouts. |
 | NPC shops | `config/dochi_rpg_maker/npc_shops/` | File-based shop JSON. |
+| Teleporter Sets | `config/dochi_rpg_maker/teleporters/` | Destination sets, categories, conditions, and transition settings. |
+| NPC Spawner templates | `config/dochi_rpg_maker/npc_spawner/entity_clones/<classification>/` | Reusable CustomNPC source templates. |
+| NPC Spawner snapshots | `config/dochi_rpg_maker/npc_spawner/spawner_snapshots/` | Atomic Filled Soul Stone snapshots owned by spawner sources. |
 | Currency definitions | `config/dochi_rpg_maker/currency/definitions/` | Currency ID, name, icon, pickup conversion, and death rules. |
 | HUD sets | `config/dochi_rpg_maker/hud/sets/` | HUD Maker set JSON. |
 | HUD definitions | `config/dochi_rpg_maker/hud/definitions/` | Vanilla replacement and custom HUD definitions. |
@@ -49,6 +52,7 @@ Client and server exchange JSON by `kind` and `path`.
 | `dialogue_set` | `dialogue_sets` | Folder-based. Save writes both `dialogue_set.json` and node files. |
 | `gui` | `gui` | Supports recursive search up to depth 3. |
 | `npc_shop` | `npc_shops` | File-based shop JSON. |
+| `teleporter_set` | `teleporters` | Teleporter Set JSON. Supports recursive search up to depth 3. |
 | `currency` | `currency/definitions` | Currency definition file. |
 | `currency_index` | All currency definitions | Read-only index for lists and previews. |
 | `currency_hud_layout` | `hud/sets` | HUD set storage. Legacy `currency_hud` maps here. |
@@ -58,6 +62,8 @@ Client and server exchange JSON by `kind` and `path`.
 | `remnant_msg_policy` | `remnant_msg/policies` | Remnant Msg policy document. |
 | `settings` | `settings/defaults.json` | Default currency and default GUI references. |
 
+NPC Spawner block settings and its weighted source pool are stored with the block entity in the world, not as a `ServerJsonStorage` kind. Only reusable templates and owned Soul Stone snapshots use the config folders listed above.
+
 ## Input Rules
 
 - Use folder-relative paths such as `gui/default_shop_gui.json`.
@@ -65,13 +71,14 @@ Client and server exchange JSON by `kind` and `path`.
 - Windows backslashes are normalized to `/`.
 - Blank filenames may become `default.json`; name files explicitly.
 - Paths that escape the storage root with `..` are rejected.
-- `default_set`, GUI files beginning with `default`, known default GUI paths, shops beginning with `default`, and the sample shop are protected. Server save/delete rejects them; use `Save As`.
+- `default_set`, GUI files beginning with `default`, known default GUI paths, shops beginning with `default`, the sample shop, and `default_teleporter_set.json` are protected. Server save/delete rejects them; use `Save As`.
 
 ## Default Content During Updates
 
 | Data | Startup behavior |
 | --- | --- |
-| Bundled dialogue, GUI, and shop defaults | Refreshed from the 0.1.6 JAR. |
+| Bundled dialogue, GUI, shop, and Teleporter defaults | Refreshed from the 0.1.7 JAR. |
+| `default_teleporter_set.json` | Installed as a protected Teleporter template. |
 | Remnant Msg sample message | Refreshed from the JAR. |
 | HUD definitions | Installed only when missing and default to `enabled: false`. |
 | Remnant Msg default policy | Installed only when missing. |

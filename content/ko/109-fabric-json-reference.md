@@ -7,7 +7,7 @@ product: core-fabric
 category: 레퍼런스 / 운영
 section: operations
 status: 안정
-version: 0.1.6
+version: 0.1.7
 audience: 고급 사용자
 tags:
   - json
@@ -17,7 +17,7 @@ tags:
 ## 공통 규칙
 
 - 서버 JSON 경로는 `config/dochi_rpg_maker` 아래 상대 경로로 생각합니다.
-- 파일명과 내부 `id`를 맞추면 대화 액션이나 상점 대상에서 찾기 쉽습니다.
+- 파일명과 내부 ID를 맞추면 대화, 상점, 텔레포터 대상을 찾기 쉽습니다.
 - 기본 샘플 파일은 직접 덮어쓰기보다 `Save As`로 복제합니다.
 - 대화 문서와 상점 문서는 런타임 네트워크 전송 버퍼에서 각각 최대 1MB까지 허용됩니다. 서버 JSON 패킷 자체에는 별도 2MB 제한이 있습니다.
 
@@ -112,7 +112,7 @@ GUI 요소는 `id`, `type`, `x`, `y`, `w`, `h`, `z`를 기본으로 갖습니다
 
 `tradeMode`는 `buy_only`, `sell_only`, `buy_sell`을 사용합니다. `items[].stock`은 `-1`이면 무제한입니다.
 
-0.1.6 구매 상품의 결제·재입고 필드는 다음 형태입니다.
+0.1.7 구매 상품의 결제·재입고 필드는 다음 형태입니다.
 
 ```json
 {
@@ -135,6 +135,68 @@ GUI 요소는 `id`, `type`, `x`, `y`, `w`, `h`, `z`를 기본으로 갖습니다
 ```
 
 상품이 상점 기본 결제를 그대로 쓰면 상품의 `currencyType`을 `inherit`로 둡니다. 명시한 결제 ID나 NBT가 잘못되면 런타임은 실패 상태로 처리합니다.
+
+## TeleporterDocument 요약
+
+```json
+{
+  "schemaVersion": 2,
+  "setId": "town_network",
+  "displayName": "Town Network",
+  "gui": "default_teleporter_gui.json",
+  "interactionConditions": {
+    "enabled": false,
+    "conditionMode": "and",
+    "conditions": []
+  },
+  "lockedPresentation": { "mode": "dimmed" },
+  "transition": {
+    "fadeOutTicks": 10,
+    "fadeInTicks": 10
+  },
+  "categories": [
+    { "id": "towns", "name": "마을", "iconMedia": { "mode": "image" } }
+  ],
+  "destinations": [
+    {
+      "id": "spawn",
+      "enabled": true,
+      "categoryId": "towns",
+      "name": "스폰",
+      "description": "스폰으로 돌아갑니다.",
+      "descriptionStyles": [],
+      "target": { "x": 0.5, "y": 64.0, "z": 0.5, "yaw": 0.0, "pitch": 0.0 },
+      "accessConditions": { "enabled": false, "conditionMode": "and", "conditions": [] }
+    }
+  ]
+}
+```
+
+Teleporter Set은 `teleporters` 아래에 저장되는 파일 기반 `teleporter_set` 문서입니다. 한 세트는 카테고리 최대 256개, 목적지 최대 1,024개를 지원합니다. 목적지는 플레이어의 현재 차원 안에서 좌표와 회전값을 사용하며, 0.1.7 스키마에는 차원 필드가 없습니다.
+
+## NPC Spawner 템플릿 요약
+
+```json
+{
+  "format": "dochi_rpg_maker_npc_spawner_template",
+  "schemaVersion": 1,
+  "sourceId": "npc/test_guard",
+  "name": "test_guard",
+  "classificationId": "npc",
+  "entityType": "customnpcs:customnpc",
+  "minecraftVersion": "1.21.1",
+  "requiredMods": ["customnpcs"],
+  "bindingPolicy": "",
+  "displayName": "Test Guard",
+  "subject": "",
+  "partySize": 0,
+  "level": 0,
+  "payloadEncoding": "snbt",
+  "entityNbt": "{...}"
+}
+```
+
+재사용 템플릿은 `npc_spawner/entity_clones/<classification>` 아래에 둡니다. 배치된 블록의 ConfigVersion 4 설정, 가중치 풀, 활성 리스는 `ServerJsonStorage`가 아니라 월드의 블록 엔티티 데이터에 저장됩니다. SNBT와 CustomNPCs 엔티티 데이터를 이해하지 못한다면 `entityNbt`를 직접 수정하지 마세요.
 
 ## Remnant Msg 요약
 
