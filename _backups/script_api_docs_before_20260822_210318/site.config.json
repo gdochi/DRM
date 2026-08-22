@@ -293,19 +293,6 @@
           "description_ja": "メッセージ文書、ポリシー、GUI連携。"
         },
         {
-          "id": "script-api",
-          "label": "Script API",
-          "label_ko": "스크립트 API",
-          "label_ru": "API скриптов",
-          "label_zh": "脚本 API",
-          "label_ja": "スクリプト API",
-          "description": "CustomNPCs APIs for animation, attack volumes, and built-in attack switches.",
-          "description_ko": "CustomNPCs 스크립트에서 애니메이션, 공격 판정 범위, 기본 공격 스위치를 제어합니다.",
-          "description_ru": "API CustomNPCs для анимации, областей атаки и переключателей встроенных атак.",
-          "description_zh": "用于动画、攻击判定区域和内置攻击开关的 CustomNPCs API。",
-          "description_ja": "アニメーション、攻撃判定範囲、標準攻撃スイッチ用のCustomNPCs API。"
-        },
-        {
           "id": "operations",
           "label": "Operations",
           "label_ko": "운영 / 레퍼런스",
