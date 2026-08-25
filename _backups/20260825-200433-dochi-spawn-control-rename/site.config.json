@@ -1,7 +1,7 @@
 {
   "title": "DRM",
   "brand": "DRM",
-  "description": "Documentation hub for DRM Core, DRM Cobblemon Editor, DRM Mob Editor, Dochi's Warfare, and dochi spawn control.",
+  "description": "Documentation hub for DRM Core, DRM Cobblemon Editor, DRM Mob Editor, Dochi's Warfare, and DOCHI’s SPAWN CONTROL.",
   "defaultLocale": "en",
   "fallbackLocale": "en",
   "repository": "",
@@ -130,11 +130,11 @@
     },
     {
       "id": "dochi-spawn-control",
-      "label": "dochi spawn control",
-      "label_ko": "dochi spawn control",
-      "label_ru": "dochi spawn control",
-      "label_zh": "dochi spawn control",
-      "label_ja": "dochi spawn control",
+      "label": "DOCHI’s SPAWN CONTROL",
+      "label_ko": "DOCHI’s SPAWN CONTROL",
+      "label_ru": "DOCHI’s SPAWN CONTROL",
+      "label_zh": "DOCHI’s SPAWN CONTROL",
+      "label_ja": "DOCHI’s SPAWN CONTROL",
       "shortLabel": "SPAWN CONTROL",
       "shortLabel_ko": "SPAWN CONTROL",
       "shortLabel_ru": "SPAWN CONTROL",
@@ -146,11 +146,11 @@
       "description_zh": "在服务端管理已注册生物与 CustomNPCs 克隆的自然生成，提供按目标绑定的规则、原生生成策略、预设和诊断工具。",
       "description_ja": "登録済みMobとCustomNPCsクローンの自然スポーンをサーバー側で管理し、対象別ルール、バニラスポーン方針、プリセット、診断を提供します。",
       "logo": "assets/mod-logos/dochi`s_spawn_control.png",
-      "logoAlt": "dochi spawn control logo",
-      "logoAlt_ko": "dochi spawn control 로고",
-      "logoAlt_ru": "Логотип dochi spawn control",
-      "logoAlt_zh": "dochi spawn control 标志",
-      "logoAlt_ja": "dochi spawn control ロゴ",
+      "logoAlt": "DOCHI’s SPAWN CONTROL logo",
+      "logoAlt_ko": "DOCHI’s SPAWN CONTROL 로고",
+      "logoAlt_ru": "Логотип DOCHI’s SPAWN CONTROL",
+      "logoAlt_zh": "DOCHI’s SPAWN CONTROL 标志",
+      "logoAlt_ja": "DOCHI’s SPAWN CONTROL ロゴ",
       "type": "standalone",
       "product": "dochi-spawn-control"
     },
@@ -185,27 +185,27 @@
     "en": {
       "label": "English",
       "shortLabel": "EN",
-      "description": "A structured documentation hub for DRM Core, DRM Cobblemon Editor, DRM Mob Editor, Dochi's Warfare, and dochi spawn control."
+      "description": "A structured documentation hub for DRM Core, DRM Cobblemon Editor, DRM Mob Editor, Dochi's Warfare, and DOCHI’s SPAWN CONTROL."
     },
     "ko": {
       "label": "한국어",
       "shortLabel": "KO",
-      "description": "DRM Core, DRM Cobblemon Editor, DRM Mob Editor, 도치 워페어, dochi spawn control 문서를 한국어로 정리한 문서 허브입니다."
+      "description": "DRM Core, DRM Cobblemon Editor, DRM Mob Editor, 도치 워페어, DOCHI’s SPAWN CONTROL 문서를 한국어로 정리한 문서 허브입니다."
     },
     "ru": {
       "label": "Русский",
       "shortLabel": "RU",
-      "description": "Структурированный центр документации для DRM Core, DRM Cobblemon Editor, DRM Mob Editor, Dochi's Warfare и dochi spawn control."
+      "description": "Структурированный центр документации для DRM Core, DRM Cobblemon Editor, DRM Mob Editor, Dochi's Warfare и DOCHI’s SPAWN CONTROL."
     },
     "zh": {
       "label": "简体中文",
       "shortLabel": "ZH",
-      "description": "DRM Core、DRM Cobblemon Editor、DRM Mob Editor、Dochi's Warfare 和 dochi spawn control 的结构化文档中心。"
+      "description": "DRM Core、DRM Cobblemon Editor、DRM Mob Editor、Dochi's Warfare 和 DOCHI’s SPAWN CONTROL 的结构化文档中心。"
     },
     "ja": {
       "label": "日本語",
       "shortLabel": "JA",
-      "description": "DRM Core、DRM Cobblemon Editor、DRM Mob Editor、Dochi's Warfare、dochi spawn control の構造化されたドキュメントハブです。"
+      "description": "DRM Core、DRM Cobblemon Editor、DRM Mob Editor、Dochi's Warfare、DOCHI’s SPAWN CONTROL の構造化されたドキュメントハブです。"
     }
   },
   "products": {
@@ -795,11 +795,11 @@
       ]
     },
     "dochi-spawn-control": {
-      "label": "dochi spawn control",
-      "label_ko": "dochi spawn control",
-      "label_ru": "dochi spawn control",
-      "label_zh": "dochi spawn control",
-      "label_ja": "dochi spawn control",
+      "label": "DOCHI’s SPAWN CONTROL",
+      "label_ko": "DOCHI’s SPAWN CONTROL",
+      "label_ru": "DOCHI’s SPAWN CONTROL",
+      "label_zh": "DOCHI’s SPAWN CONTROL",
+      "label_ja": "DOCHI’s SPAWN CONTROL",
       "shortLabel": "SPAWN CONTROL",
       "shortLabel_ko": "SPAWN CONTROL",
       "shortLabel_ru": "SPAWN CONTROL",

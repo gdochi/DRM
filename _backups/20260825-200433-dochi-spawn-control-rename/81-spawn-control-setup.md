@@ -2,7 +2,7 @@
 title: Installation and Your First Spawn Rule
 slug: dochi-spawn-control-setup
 order: 820
-description: Install dochi spawn control, open the editor, satisfy permissions, and create a first working rule.
+description: Install DOCHI’s SPAWN CONTROL, open the editor, satisfy permissions, and create a first working rule.
 product: dochi-spawn-control
 category: Setup
 section: setup
@@ -22,7 +22,7 @@ tags:
 | Minecraft | 1.20.1 |
 | Forge | 47 or newer |
 | Java | 17 |
-| dochi spawn control | Install the same build on client and server |
+| DOCHI’s SPAWN CONTROL | Install the same build on client and server |
 | DRM Core | Optional, version 0.1.4 or newer; provides shared editor selection and DRM UI integration |
 | CustomNPCs | Optional, version 1.20.1 or newer; required for saved-clone spawning |
 | Dochi’s Warfare | Optional, version 0.2.5 or newer |
@@ -35,7 +35,7 @@ CustomNPCs is not required when you only manage ordinary registered mobs. Clone 
 2. Place `drm_spawn_control-<version>.jar` in both the server and client `mods/` folders.
 3. Remove duplicate or older JARs with the same mod ID.
 4. Restart the server and client.
-5. Check the server log for `dochi spawn control loaded` and any loading errors.
+5. Check the server log for `DOCHI’s SPAWN CONTROL loaded` and any loading errors.
 
 When DRM Core links correctly, the log also reports integrated UI mode and editor registration. If the optional DRM API cannot link, the dedicated key remains available.
 

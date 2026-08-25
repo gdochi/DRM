@@ -2,7 +2,7 @@
 title: 설치와 첫 스폰 규칙
 slug: dochi-spawn-control-setup
 order: 820
-description: DOCHI’s SPAWN CONTROL 설치, 에디터 실행, 권한과 첫 규칙 제작 순서입니다.
+description: dochi spawn control 설치, 에디터 실행, 권한과 첫 규칙 제작 순서입니다.
 product: dochi-spawn-control
 category: 설치와 첫 규칙
 section: setup
@@ -22,7 +22,7 @@ tags:
 | Minecraft | 1.20.1 |
 | Forge | 47 이상 |
 | Java | 17 |
-| DOCHI’s SPAWN CONTROL | 클라이언트와 서버 양쪽에 같은 빌드 설치 |
+| dochi spawn control | 클라이언트와 서버 양쪽에 같은 빌드 설치 |
 | DRM Core | 0.1.4 이상 선택 사항. 공용 에디터 선택기와 DRM UI 연동 |
 | CustomNPCs | 1.20.1 이상 선택 사항. 저장 클론 스폰에 필요 |
 | Dochi’s Warfare | 0.2.5 이상 선택 사항 |
@@ -35,7 +35,7 @@ tags:
 2. `drm_spawn_control-<version>.jar`를 서버와 클라이언트의 `mods/`에 각각 넣습니다.
 3. 같은 이름의 구버전 JAR이 함께 있지 않은지 확인합니다.
 4. 서버와 클라이언트를 다시 시작합니다.
-5. 서버 로그에서 `DRM Spawn Control loaded` 메시지를 확인합니다.
+5. 서버 로그에서 `dochi spawn control loaded` 메시지와 로드 오류가 없는지 확인합니다.
 
 DRM Core가 정상 연결되면 로그에 DRM 통합 UI 모드와 에디터 등록 메시지가 남습니다. DRM API 연결에 실패해도 전용 키 방식은 유지됩니다.
 
