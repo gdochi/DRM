@@ -1,5 +1,5 @@
 ---
-title: Dochi's Spawn Control Overview
+title: dochi spawn control Overview
 slug: dochi-spawn-control-overview
 order: 810
 description: Server-authoritative natural-spawn rules, per-target profile ownership, native-spawn policy, and safety boundaries.
@@ -17,7 +17,7 @@ tags:
 
 ## Official name and purpose
 
-**Dochi's Spawn Control** is a server-authoritative natural-spawn editor for Forge 1.20.1. Its internal mod ID is `drm_spawn_control`, and its in-game editor title is `Spawn Control`.
+**dochi spawn control** is a server-authoritative natural-spawn editor for Forge 1.20.1. Its internal mod ID is `drm_spawn_control`, and its in-game editor title is `Spawn Control`.
 
 You can create independent natural-spawn rules for registered `Mob` EntityTypes and saved CustomNPCs server clones. The server checks dimensions, biomes, height, light, time, player distance, chance, group size, population caps, and lifecycle settings before it creates an entity.
 
@@ -47,7 +47,7 @@ Each registered entity has a separate native-spawn policy.
 | `Native: ON` | Keep vanilla or the source mod's natural spawning. |
 | `Native: OFF` | Block new `NATURAL` and `CHUNK_GENERATION` spawns. |
 
-`Native: OFF` does not globally block commands, spawners, structures, breeding, buckets, or scripted creation. Entities created by Dochi's Spawn Control use a managed-spawn context to pass its native blocker, while a denial from another Forge mod is still respected.
+`Native: OFF` does not globally block commands, spawners, structures, breeding, buckets, or scripted creation. Entities created by dochi spawn control use a managed-spawn context to pass its native blocker, while a denial from another Forge mod is still respected.
 
 If native spawning and a managed profile are both enabled, both routes may create the same entity. Test the managed rule first, then disable native spawning only when you intend a full replacement.
 

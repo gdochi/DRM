@@ -17,7 +17,7 @@ tags:
 
 ## Getting Started
 
-Dochi's RPG Maker Forge 0.1.4 registers the CustomNPCs script global `drmAnimation`. The first argument of every method is a CustomNPCs script entity wrapper or a Minecraft entity. In most event scripts, pass `event.npc` directly.
+DRM Forge 0.1.4 registers the CustomNPCs script global `drmAnimation`. The first argument of every method is a CustomNPCs script entity wrapper or a Minecraft entity. In most event scripts, pass `event.npc` directly.
 
 ```js
 function interact(event) {

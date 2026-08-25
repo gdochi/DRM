@@ -1,8 +1,8 @@
 ---
-title: Dochi's Cobblemon Editor
+title: DRM Cobblemon Editor
 slug: cobblemon-editor-overview
 order: 500
-description: Dochi's Cobblemon Editor 0.1.3의 기능 범위와 제작 도구입니다.
+description: DRM Cobblemon Editor 0.1.3의 기능 범위와 제작 도구입니다.
 product: drm-cobblemon-editor
 category: 개요
 section: overview
@@ -17,12 +17,12 @@ tags:
 
 ## 무엇을 만드는 애드온인가요?
 
-`Dochi's Cobblemon Editor`는 Fabric 1.21.1용 DRM 애드온입니다. CustomNPCs NPC에 Cobblemon 전투, 전투 전 연출, PokéMart, Nurse Joy, 스타터 선택 기능을 적용하고, 재사용할 NPC 클론과 스포너 소스까지 같은 제작 흐름에서 관리합니다.
+`DRM Cobblemon Editor`는 Fabric 1.21.1용 DRM 애드온입니다. CustomNPCs NPC에 Cobblemon 전투, 전투 전 연출, PokéMart, Nurse Joy, 스타터 선택 기능을 적용하고, 재사용할 NPC 클론과 스포너 소스까지 같은 제작 흐름에서 관리합니다.
 
 전투는 별도 모의 엔진이 아니라 플레이어의 실제 Cobblemon 파티와 Cobblemon 1.7.3 런타임을 사용합니다. 제작자는 JSON을 직접 작성하기보다 에디터에서 기본 문서를 불러오고, `Save As`로 사용자 파일을 만든 뒤 대상 NPC에 `Apply`하는 흐름을 권장합니다.
 
 :::note 이름과 내부 ID
-표시 이름은 `Dochi's Cobblemon Editor`이지만 기존 데이터 호환성을 위해 모드 ID와 리소스 네임스페이스는 `cobble_npc`입니다. `cobble_npc:*` ID를 임의로 바꾸지 마세요.
+표시 이름은 `DRM Cobblemon Editor`이지만 기존 데이터 호환성을 위해 모드 ID와 리소스 네임스페이스는 `cobble_npc`입니다. `cobble_npc:*` ID를 임의로 바꾸지 마세요.
 :::
 
 ## 지원 환경

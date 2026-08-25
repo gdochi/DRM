@@ -17,7 +17,7 @@ tags:
 
 ## 이 문서가 다루는 빌드
 
-이 제품의 모든 페이지는 `DRM Core 0.1.7`, `Fabric 1.21.1`, `Java 21` 소스를 기준으로 합니다. 기존 `Dochi's RPG Maker Forge 1.20.1` 제품의 페이지는 Forge 빌드 문서로 남아 있습니다.
+이 제품의 모든 페이지는 `DRM Core 0.1.7`, `Fabric 1.21.1`, `Java 21` 소스를 기준으로 합니다. 기존 `DRM Forge 1.20.1` 제품의 페이지는 Forge 빌드 문서로 남아 있습니다.
 
 | 구분 | Forge 문서 | Fabric 문서 |
 | --- | --- | --- |

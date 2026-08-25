@@ -17,7 +17,7 @@ tags:
 
 ## 시작하기
 
-Dochi's RPG Maker Forge 0.1.4는 CustomNPCs 스크립트 전역 객체 `drmAnimation`을 등록합니다. 모든 메서드의 첫 번째 인자는 CustomNPCs 스크립트 엔티티 래퍼 또는 Minecraft 엔티티입니다. 보통 이벤트의 `event.npc`를 그대로 넘기면 됩니다.
+DRM Forge 0.1.4는 CustomNPCs 스크립트 전역 객체 `drmAnimation`을 등록합니다. 모든 메서드의 첫 번째 인자는 CustomNPCs 스크립트 엔티티 래퍼 또는 Minecraft 엔티티입니다. 보통 이벤트의 `event.npc`를 그대로 넘기면 됩니다.
 
 ```js
 function interact(event) {

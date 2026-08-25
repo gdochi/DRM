@@ -1,5 +1,5 @@
 ---
-title: Dochi's Spawn Control 개요
+title: dochi spawn control 개요
 slug: dochi-spawn-control-overview
 order: 810
 description: 서버 권한형 자연 스폰 규칙, 대상별 프로필 귀속, 원본 스폰 정책과 안전 경계를 설명합니다.
@@ -17,7 +17,7 @@ tags:
 
 ## 정식 이름과 역할
 
-**Dochi's Spawn Control**은 Forge 1.20.1용 서버 권한형 자연 스폰 편집 모드입니다. 내부 모드 ID는 `drm_spawn_control`이며, 게임 UI에서는 `스폰 컨트롤`로 표시됩니다.
+**dochi spawn control**은 Forge 1.20.1용 서버 권한형 자연 스폰 편집 모드입니다. 내부 모드 ID는 `drm_spawn_control`이며, 게임 UI에서는 `스폰 컨트롤`로 표시됩니다.
 
 등록된 일반 `Mob` EntityType과 CustomNPCs 서버 클론에 별도의 자연 스폰 규칙을 만들 수 있습니다. 차원, 바이옴, 높이, 조도, 시간, 플레이어 거리, 확률, 무리 크기, 개체 수 제한과 생명 주기를 서버가 검사한 뒤 엔티티를 생성합니다.
 
@@ -47,7 +47,7 @@ Glow Squid 규칙이 Frog에 자동으로 이어지지 않습니다. `선택 대
 | `원본 스폰: ON` | 바닐라 또는 원본 모드의 자연 스폰을 유지합니다. |
 | `원본 스폰: OFF` | `NATURAL`과 `CHUNK_GENERATION` 유형의 신규 스폰을 차단합니다. |
 
-`원본 스폰: OFF`는 명령어 소환, 스포너, 구조물, 번식, 버킷, 스크립트 생성까지 전역 차단하는 기능이 아닙니다. Dochi's Spawn Control이 자체 생성하는 엔티티는 관리 스폰 문맥으로 원본 차단기를 통과하지만, 다른 Forge 모드가 스폰을 거부하면 그 결과를 존중합니다.
+`원본 스폰: OFF`는 명령어 소환, 스포너, 구조물, 번식, 버킷, 스크립트 생성까지 전역 차단하는 기능이 아닙니다. dochi spawn control이 자체 생성하는 엔티티는 관리 스폰 문맥으로 원본 차단기를 통과하지만, 다른 Forge 모드가 스폰을 거부하면 그 결과를 존중합니다.
 
 원본 스폰과 관리 프로필을 모두 켜면 두 경로가 동시에 작동할 수 있습니다. 완전히 대체하려면 먼저 관리 규칙을 시험한 뒤 원본 스폰을 끄세요.
 

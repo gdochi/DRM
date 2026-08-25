@@ -17,7 +17,7 @@ tags:
 
 ## Build Covered By These Pages
 
-Every page in this product targets `DRM Core 0.1.7`, `Fabric 1.21.1`, and Java 21. The separate `Dochi's RPG Maker Forge 1.20.1` product remains the documentation for the Forge build.
+Every page in this product targets `DRM Core 0.1.7`, `Fabric 1.21.1`, and Java 21. The separate `DRM Forge 1.20.1` product remains the documentation for the Forge build.
 
 | Boundary | Forge docs | Fabric docs |
 | --- | --- | --- |
