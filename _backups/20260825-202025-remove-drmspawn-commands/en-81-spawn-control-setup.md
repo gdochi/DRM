@@ -45,6 +45,7 @@ When DRM Core links correctly, the log also reports integrated UI mode and edito
 | --- | --- |
 | Dedicated key | Press `K` by default. Change `Open Spawn Control` in Minecraft key settings. |
 | DRM editor selector | Open `Spawn Control` when DRM Core and its editor API are available. |
+| Command | Run `/drmspawn open` as a player. |
 
 Editing requires permission level 2 or Creative mode. The server rejects open and save requests from players without that permission.
 

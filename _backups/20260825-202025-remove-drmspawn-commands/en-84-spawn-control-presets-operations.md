@@ -2,7 +2,7 @@
 title: Presets, Sharing, and Operations
 slug: dochi-spawn-control-presets-operations
 order: 850
-description: Save and load policy, storage paths, target conflicts, sharing, and troubleshooting.
+description: Save and load policy, storage paths, target conflicts, commands, sharing, and troubleshooting.
 product: dochi-spawn-control
 category: Presets and Operations
 section: operations
@@ -11,6 +11,7 @@ version: 0.1.0
 audience: Server operators and content distributors
 tags:
   - presets
+  - commands
   - troubleshooting
 ---
 
@@ -63,6 +64,22 @@ Distribute JSON files from `sets/` or `targets/`. Presets record required mod na
 - Distribute a server clone with the same tab and name separately.
 - A missing target does not delete the whole file; only the affected profile is isolated as disabled with an error.
 
+## Administrator commands
+
+Every `/drmspawn` command requires permission level 2.
+
+| Command | Purpose |
+| --- | --- |
+| `/drmspawn open` | Send the latest server snapshot to the player and open the editor |
+| `/drmspawn reload` | Reload the active file from disk and reset scheduling state |
+| `/drmspawn validate` | Print profile count and validation issues |
+| `/drmspawn stats` | Print tracked generated counts and recent diagnostic statistics |
+| `/drmspawn explain <profile>` | Evaluate conditions and caps at the command position |
+| `/drmspawn spawn-test <profile>` | Create one real managed entity near the command position |
+| `/drmspawn clear-generated [profile]` | Remove all managed generated entities or only those from one profile |
+
+`spawn-test` changes the real world. Use a test world or isolated area before running it on a production server.
+
 ## Troubleshooting
 
 ### Another entity's rule appears under the selected entity
@@ -78,7 +95,7 @@ The current build clears the previous profile and inspector when a newly selecte
 
 Check in this order:
 
-1. Run `Advanced Diagnostics → Check Here`.
+1. Run `Advanced Diagnostics → Check Here` or `/drmspawn explain <profile>`.
 2. Check dimension, time, Y, biome, light, and player distance.
 3. Confirm Surface, Cave, Air, or Water placement for the target.
 4. Check Spawn Chance and Interval Ticks.

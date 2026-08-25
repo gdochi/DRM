@@ -2,7 +2,7 @@
 title: 프리셋, 공유와 운영
 slug: dochi-spawn-control-presets-operations
 order: 850
-description: 저장과 불러오기, 파일 경로, 프리셋 충돌 정책과 문제 해결을 설명합니다.
+description: 저장과 불러오기, 파일 경로, 프리셋 충돌 정책, 진단 명령어와 문제 해결을 설명합니다.
 product: dochi-spawn-control
 category: 프리셋과 운영
 section: operations
@@ -11,6 +11,7 @@ version: 0.1.0
 audience: 서버 운영자와 콘텐츠 배포자
 tags:
   - presets
+  - commands
   - troubleshooting
 ---
 
@@ -63,6 +64,22 @@ tags:
 - 같은 탭과 이름의 서버 클론을 별도로 배포해야 합니다.
 - 대상이 없어도 파일 전체를 삭제하지 않고 해당 프로필만 오류/비활성 상태로 격리합니다.
 
+## 관리자 명령어
+
+모든 `/drmspawn` 명령은 OP 2레벨이 필요합니다.
+
+| 명령어 | 용도 |
+| --- | --- |
+| `/drmspawn open` | 현재 플레이어에게 최신 서버 스냅샷을 보내고 에디터 열기 |
+| `/drmspawn reload` | 디스크의 활성 설정을 다시 읽고 스케줄러 초기화 |
+| `/drmspawn validate` | 프로필 수와 검증 오류 출력 |
+| `/drmspawn stats` | 추적 중인 생성 개체와 최근 진단 통계 출력 |
+| `/drmspawn explain <profile>` | 명령 실행 위치에서 조건과 개체 수 제한 검사 |
+| `/drmspawn spawn-test <profile>` | 실행 위치 주변에 실제 관리 엔티티 한 개 시험 생성 |
+| `/drmspawn clear-generated [profile]` | 전체 또는 지정 프로필의 관리 생성 개체 정리 |
+
+`spawn-test`는 실제 월드를 변경합니다. 운영 서버에서는 먼저 테스트 월드나 격리된 구역에서 사용하세요.
+
 ## 문제 해결
 
 ### 선택한 엔티티에 다른 엔티티 규칙이 보임
@@ -78,7 +95,7 @@ tags:
 
 다음 순서로 확인합니다.
 
-1. `고급 진단 → 현재 위치 검사` 실행
+1. `고급 진단 → 현재 위치 검사` 또는 `/drmspawn explain <profile>` 실행
 2. 차원, 시간, Y, 바이옴, 조도, 플레이어 거리 확인
 3. 대상에 맞는 지상/동굴/공중/수중 배치 방식 확인
 4. 스폰 확률과 검사 간격 확인
