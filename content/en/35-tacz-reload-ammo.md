@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Ammo
 section: ammo
 status: Draft
-version: 0.2.4
+version: 0.2.5
 audience: Firearm NPC creators
 tags:
   - reload

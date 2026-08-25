@@ -2,12 +2,12 @@
 title: Setup and First NPC
 slug: warfare-setup
 order: 320
-description: Install Dochi's Warfare 0.2.4, open the DW creator tools, migrate legacy profiles, and build a first managed NPC.
+description: Install Dochi's Warfare 0.2.5, open the DW creator tools, migrate legacy profiles, and build a first managed NPC.
 product: dochi-warfare
 category: Setup
 section: setup
 status: Draft
-version: 0.2.4
+version: 0.2.5
 audience: Server operators
 tags:
   - setup
@@ -17,7 +17,7 @@ tags:
 
 ## Install checklist
 
-Dochi's Warfare 0.2.4 targets Forge 1.20.1. TACZ is the required gun-runtime baseline, and Player Animator is required on the client. CustomNPCs is required for the NPC workflow; PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, and LesRaisins Tactical Equipments are optional integrations.
+Dochi's Warfare 0.2.5 targets Forge 1.20.1. TACZ is the required gun-runtime baseline, and Player Animator is required on the client. CustomNPCs is required for the NPC workflow; PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, and LesRaisins Tactical Equipments are optional integrations.
 
 | Component | Required for this wiki workflow | Notes |
 | --- | --- | --- |
@@ -25,7 +25,7 @@ Dochi's Warfare 0.2.4 targets Forge 1.20.1. TACZ is the required gun-runtime bas
 | TACZ | Yes | Use 1.1.8 through the supported 1.1.x range on client and server. |
 | Player Animator | Client required | Required for the shared managed-gun animation controller. |
 | CustomNPCs | Yes for NPC setup | Required for managed NPCs, mercenaries, poses, and NPC clones. |
-| Dochi's Warfare | Yes | Add the 0.2.4 JAR on both sides for normal modded server play. |
+| Dochi's Warfare | Yes | Add the 0.2.5 JAR on both sides for normal modded server play. |
 | PointBlank | Optional | Use exactly one supported branch: 1.11.1 or 2.1.0. |
 | SuperbWarfare | Optional | Native gun and vehicle support requires 0.8.9 final build `6effe4385`. |
 | Better Combat | Optional | Install it for registered melee weapon attacks, poses, and weapon-based attack timing. Keep the server and client mod sets aligned in normal multiplayer. |
@@ -130,7 +130,7 @@ config/dochi_warfare/target_entities/
 
 Current `Save As` profiles store the NPC's full DW firearm setup, not just the target list. Configure one NPC, save a profile, then `Load` it on another CustomNPCs NPC to quickly clone the same combat setup. Legacy target-only JSON can still be loaded, but the current authoring flow is best understood as an NPC setup preset.
 
-Reusable JSON now belongs under `config/dochi_warfare/`. On first use, the mod copies missing legacy files from `config/cnpc_tacz_fire/` without overwriting newer destination files or deleting the recoverable originals. Other 0.2.4 libraries use these roots:
+Reusable JSON now belongs under `config/dochi_warfare/`. On first use, the mod copies missing legacy files from `config/cnpc_tacz_fire/` without overwriting newer destination files or deleting the recoverable originals. Other 0.2.5 libraries use these roots:
 
 ```text
 config/dochi_warfare/poses/

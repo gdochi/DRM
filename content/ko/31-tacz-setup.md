@@ -2,12 +2,12 @@
 title: 설치와 첫 NPC 설정
 slug: warfare-setup
 order: 320
-description: 도치 워페어 0.2.4 설치, DW 제작 도구, 구버전 프로필 이전, 첫 관리 NPC 설정을 설명합니다.
+description: 도치 워페어 0.2.5 설치, DW 제작 도구, 구버전 프로필 이전, 첫 관리 NPC 설정을 설명합니다.
 product: dochi-warfare
 category: 설치
 section: setup
 status: Draft
-version: 0.2.4
+version: 0.2.5
 audience: 서버 운영자
 tags:
   - setup
@@ -17,7 +17,7 @@ tags:
 
 ## 설치 체크리스트
 
-도치 워페어 0.2.4는 Forge 1.20.1을 대상으로 합니다. TACZ는 필수 총기 런타임 기준이고 Player Animator는 클라이언트 필수입니다. CustomNPCs는 NPC 워크플로에 필요하며 PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, LesRaisins Tactical Equipments는 선택형 연동입니다.
+도치 워페어 0.2.5는 Forge 1.20.1을 대상으로 합니다. TACZ는 필수 총기 런타임 기준이고 Player Animator는 클라이언트 필수입니다. CustomNPCs는 NPC 워크플로에 필요하며 PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, LesRaisins Tactical Equipments는 선택형 연동입니다.
 
 | 구성 요소 | 이 위키 흐름에서 필요 여부 | 메모 |
 | --- | --- | --- |
@@ -25,7 +25,7 @@ tags:
 | TACZ | 필요 | 클라이언트·서버에서 1.1.8부터 지원되는 1.1.x 범위를 사용합니다. |
 | Player Animator | 클라이언트 필수 | 공유 관리 총기 애니메이션 컨트롤러에 필요합니다. |
 | CustomNPCs | NPC 설정에 필요 | 관리 NPC, 용병, 포즈, NPC 클론 워크플로에 필요합니다. |
-| 도치 워페어 | 필요 | 일반적인 모드 서버 플레이에서는 0.2.4 JAR를 클라이언트와 서버 양쪽에 넣습니다. |
+| 도치 워페어 | 필요 | 일반적인 모드 서버 플레이에서는 0.2.5 JAR를 클라이언트와 서버 양쪽에 넣습니다. |
 | PointBlank | 선택 | 지원되는 1.11.1 또는 2.1.0 중 하나만 설치합니다. |
 | SuperbWarfare | 선택 | 네이티브 총기·차량 연동은 0.8.9 final 빌드 `6effe4385`를 요구합니다. |
 | Better Combat | 선택 | 등록된 근접 무기 공격·포즈와 무기 기반 공격 타이밍을 사용할 때 설치합니다. 일반 멀티플레이에서는 서버와 클라이언트의 모드 구성을 맞추세요. |
@@ -130,7 +130,7 @@ config/dochi_warfare/target_entities/
 
 현재 `Save As` 프로필은 타겟 목록만이 아니라 NPC의 DW 총기 설정 전체를 함께 저장합니다. NPC 하나를 설정한 뒤 프로필로 저장하면 다른 CustomNPCs NPC에서 `Load`해 같은 전투 설정을 빠르게 복제할 수 있습니다. 구버전 타겟 전용 JSON도 불러올 수 있지만, 새 제작 흐름에서는 이 기능을 NPC 설정 프리셋으로 보는 편이 맞습니다.
 
-재사용 JSON의 새 기준 루트는 `config/dochi_warfare/`입니다. 첫 사용 시 모드는 `config/cnpc_tacz_fire/`의 구버전 파일 중 새 위치에 없는 것만 복사하며, 더 최신인 대상 파일을 덮어쓰거나 복구 가능한 원본을 지우지 않습니다. 0.2.4의 다른 보관 경로는 다음과 같습니다.
+재사용 JSON의 새 기준 루트는 `config/dochi_warfare/`입니다. 첫 사용 시 모드는 `config/cnpc_tacz_fire/`의 구버전 파일 중 새 위치에 없는 것만 복사하며, 더 최신인 대상 파일을 덮어쓰거나 복구 가능한 원본을 지우지 않습니다. 0.2.5의 다른 보관 경로는 다음과 같습니다.
 
 ```text
 config/dochi_warfare/poses/

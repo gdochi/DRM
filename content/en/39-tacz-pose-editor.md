@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Poses
 section: combat-ai
 status: Draft
-version: 0.2.4
+version: 0.2.5
 audience: NPC creators
 tags:
   - pose
@@ -19,7 +19,7 @@ tags:
 
 `DW Pose Core` is a Creative-mode pose editor for creators, not an in-combat player screen. Create pose JSON in this editor, then use the `Pose` category in `DW Npc Core` to map saved profiles to the NPC's runtime actions.
 
-In 0.2.4, non-combat pose bindings are persistent authoritative state. They synchronize when a client starts tracking the NPC and resume after combat without replacing the current combat pose. `Save & Apply` writes the authoritative `idle_standing` binding, so the editor preview and spawned NPC use the same profile.
+In 0.2.5, non-combat pose bindings are persistent authoritative state. They synchronize when a client starts tracking the NPC and resume after combat without replacing the current combat pose. `Save & Apply` writes the authoritative `idle_standing` binding, so the editor preview and spawned NPC use the same profile.
 
 The pose editor currently supports Steve/Alex CustomNPCs player models.
 
@@ -34,7 +34,7 @@ Unsupported models, distant NPCs, and non-CustomNPCs entities cannot be edited.
 
 ## NPC preview and body parts
 
-The detached NPC preview is a creator view of the target's skin, armor, and weapon state. Drag to rotate it, use the mouse wheel to zoom, and enable `Walking Preview` to inspect how the pose blends with walking motion.
+The detached NPC preview is a creator view of the target's skin, armor, and weapon state. Drag to rotate it and use the mouse wheel to zoom. Depending on the selected part and edit mode, direct preview dragging can adjust rotation values or position offsets. Enable `Walking Preview` to inspect how the pose blends with walking motion.
 
 Editable parts are:
 
@@ -70,8 +70,7 @@ Keep head tracking and walking legs on `Animation` when they should continue mov
 | Tool | Behavior |
 | --- | --- |
 | `New` | Creates an empty pose that inherits animation. |
-| `Use Low Ready Base` | Starts from the Low Ready template. |
-| `Use High Ready Base` | Starts from the High Ready template. |
+| `Use Base Preset` | Applies a searchable bundled pose as the current draft without loading a JSON file. |
 | `Load` | Loads a saved pose JSON. |
 | `Save` | Saves the current JSON name. |
 | `Save As` | Saves under a new name. Press it again to confirm overwriting an existing name. |
@@ -86,6 +85,8 @@ config/dochi_warfare/poses/
 ```
 
 You do not need to edit this JSON by hand. Its structure is reference material for creators who use external tools or version control.
+
+The 0.2.5 built-in library includes Low Ready, High Ready, and multiple combat, idle, walking, and moving-fire poses. Apply one, adjust only the needed axes and gun transform, then use `Save As` to create a user JSON without modifying the bundled values.
 
 ## Map poses to actions
 

@@ -7,7 +7,7 @@ product: dochi-warfare
 category: World Tools
 section: tools
 status: Draft
-version: 0.2.4
+version: 0.2.5
 audience: Map and scenario creators
 tags:
   - booby-trap
@@ -36,6 +36,10 @@ The editor and manager are creator screens. Password prompts and trap effects ar
 | `LRT Grenade` | Launch a native LesRaisins Tactical Equipments grenade entity when the optional mod is installed. |
 
 Choosing a type applies the required baseline fields, but every result should be reviewed before saving.
+
+## Trigger event
+
+In 0.2.5, explosion, delayed-explosion, and LRT grenade traps can use either `Interact` or `Step on block`. The server detects `Step on block` when an entity enters the configured block's upper contact area, then applies the normal cooldown, owner-bypass, target-scope, and single-use rules. Password doors and containers keep their normal interaction flow.
 
 ## Password and access rules
 

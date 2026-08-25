@@ -2,12 +2,12 @@
 title: Dochi's Warfare Overview
 slug: dochi-warfare-overview
 order: 310
-description: The 0.2.4 scope, dependencies, managed-gun model, vehicle AI, clone tools, and booby traps in Dochi's Warfare.
+description: The 0.2.5 scope, dependencies, managed-gun model, vehicle AI, clone tools, and booby traps in Dochi's Warfare.
 product: dochi-warfare
 category: Overview
 section: overview
 status: Draft
-version: 0.2.4
+version: 0.2.5
 audience: Firearm NPC creators
 tags:
   - TACZ
@@ -19,9 +19,9 @@ tags:
 
 Dochi's Warfare (`dochi_warfare`) is a Forge 1.20.1 combat-authoring mod. Its main NPC workflow lets selected CustomNPCs NPCs use TACZ, PointBlank, or SuperbWarfare guns through one server-authoritative DW combat controller. The operated gun keeps its native item, renderer, projectile or hitscan behavior, sounds, and intrinsic gun state; DW owns target rules, stance, movement, firing cadence, reload policy, reserve ammo, animation signals, and persistence.
 
-Version 0.2.4 also adds optional SuperbWarfare vehicle AI, a server-side NPC/vehicle clone library, vehicle soul-stone support, and a dedicated booby-trap editor and manager. These tools are separate from the per-NPC firearm editor.
+Version 0.2.5 also includes optional SuperbWarfare ground, helicopter, and fixed-wing vehicle AI; an NPC crew editor with live top/side seat maps; a server-side NPC/vehicle clone library; vehicle soul-stone support; and a dedicated booby-trap editor and manager. DW creator screens now share one skin, bright text palette, and UI sound set, while PointBlank combat handling and the pose editor's built-in preset library are expanded. These tools are separate from the per-NPC firearm editor.
 
-The important per-NPC switch is still labeled `TACZ Fire NPC Mode`. When it is OFF, the NPC keeps normal CustomNPCs behavior. When it is ON and saved, DW controls that NPC's managed firearm behavior. The TACZ wording is retained in this compatibility-facing UI label, but the 0.2.4 managed-gun runtime is not limited to TACZ items.
+The important per-NPC switch is still labeled `TACZ Fire NPC Mode`. When it is OFF, the NPC keeps normal CustomNPCs behavior. When it is ON and saved, DW controls that NPC's managed firearm behavior. The TACZ wording is retained in this compatibility-facing UI label, but the 0.2.5 managed-gun runtime is not limited to TACZ items.
 
 ## Core rules
 
@@ -55,7 +55,7 @@ Do not make managed NPCs hold TACZ, PointBlank, or SuperbWarfare ammo or magazin
 | Combat feedback | alert icons, detected sounds, shoot sounds, detected say text, shoot say text |
 | Optional grenades | grenade type, range, search range, health trigger, cooldown, fuse, power, angle |
 | Mercenary contracts | hire terms, summon and recall, formations, fire and posture orders, owner-hit responses, and contract release |
-| Vehicle AI | optional SuperbWarfare movement, awareness, targets, weapon preferences, ammo policies, profiles, commands, and soul stones |
+| Vehicle AI | optional SuperbWarfare ground, helicopter, and fixed-wing movement; awareness; targets; per-weapon enablement/use mode; virtual ammo; NPC crew; profiles; commands; and soul stones |
 | World tools | server-side CustomNPCs/vehicle clone JSON and configurable password, explosion, effect, launch, and LRT grenade traps |
 
 ## What it leaves alone

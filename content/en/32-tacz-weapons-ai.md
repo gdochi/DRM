@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Combat AI
 section: combat-ai
 status: Draft
-version: 0.2.4
+version: 0.2.5
 audience: Firearm NPC creators
 tags:
   - weapon
@@ -46,7 +46,7 @@ tags:
 | `Min Target Speed` | Minimum horizontal player speed needed to advance the ramp. |
 | `Burst Minimum Shots` / `Burst Maximum Shots` | Selects a new inclusive shot count for each configured burst. Equal values create fixed-length bursts. |
 
-`Accuracy Ramp` progresses only while the visible target is a moving player inside the configured range and above the minimum speed. Progress pauses while the player is stationary or out of range, then resets when the target or active General/Advanced profile changes. General and Advanced can use independent ramp settings. In 0.2.4, native and fixed RPM are reconciled with the operated gun's supported cadence; TACZ shots also use finer scheduling to reduce visible 50 ms tick quantization at high RPM.
+`Accuracy Ramp` progresses only while the visible target is a moving player inside the configured range and above the minimum speed. Progress pauses while the player is stationary or out of range, then resets when the target or active General/Advanced profile changes. General and Advanced can use independent ramp settings. In 0.2.5, native and fixed RPM are reconciled with the operated gun's supported cadence; TACZ shots also use finer scheduling to reduce visible 50 ms tick quantization at high RPM.
 
 Start with `RPM Mode: TACZ Native` and fixed accuracy. Add random RPM, burst ranges, and accuracy ramping one at a time after the gun, target, line-of-sight, and ammo loop are working.
 
