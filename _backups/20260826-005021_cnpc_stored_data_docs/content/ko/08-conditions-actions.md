@@ -31,7 +31,7 @@ tags:
 | type | 주요 필드 | 동작 |
 | --- | --- | --- |
 | `tag` | `key`, `tag`, `value`, `op` | 플레이어 태그가 있는지 봅니다. |
-| `cnpc_stored_data` | `scope`, `key`, `op`, `valueType`, `value` | CustomNPCs의 플레이어, 문맥 엔티티, 월드 Stored Data를 조회하고 비교합니다. |
+| `stored` | `key`, `value`, `op` | CustomNPCs 스크립트의 storeddata 연동 값을 비교합니다. |
 | `item` | `key`, `value`, `op` | 플레이어 인벤토리의 아이템 수량을 비교합니다. |
 | `faction_score` | `faction`, `key`, `amount`, `value`, `op` | CustomNPCs faction point를 비교합니다. |
 | `advancement` | `advancement`, `key`, `op` | 발전 과제 완료 여부를 봅니다. |
@@ -40,9 +40,7 @@ tags:
 
 숫자 비교 조건은 `>`, `>=`, `<`, `<=`, `==`, `!=`를 사용할 수 있습니다. 태그와 발전 과제는 보통 `has` 또는 `not`을 사용합니다.
 
-레거시 `stored` 조건은 제거되었습니다. 이전 JSON에 `"type": "stored"`가 남아 있어도 DRM이 `cnpc_stored_data`로 해석하고, 에디터에서 다시 저장하면 새 타입으로 정규화합니다. 새 조건에는 항상 `cnpc_stored_data`를 사용하십시오.
-
-`cnpc_stored_data`는 `player`, `context_entity`, `world` Scope와 `exists`, `not_exists`, 문자열·숫자 비교를 지원합니다. 에디터 사용 순서, 이전 JSON 이관, 실행 위치별 문맥 차이, 스크립트 예제와 실패 규칙은 스크립트 API 섹션의 **CustomNPCs Stored Data 조건 연동** 문서를 참고하십시오.
+`stored` 조건은 CustomNPCs 스크립트에서 storeddata를 쓰는 제작자를 위한 조건입니다. 일반 대화 제작에서 플레이어 태그나 아이템 조건만 쓰는 경우에는 이 타입을 몰라도 됩니다.
 
 ## 액션 타입
 

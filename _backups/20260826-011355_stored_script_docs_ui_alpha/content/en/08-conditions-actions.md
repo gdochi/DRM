@@ -31,6 +31,7 @@ Modes are `and` and `or`. Blank or unknown modes are treated as `and`.
 | type | Main Fields | Behavior |
 | --- | --- | --- |
 | `tag` | `key`, `tag`, `value`, `op` | Checks whether the player has a tag. `op: "not"` means absent. |
+| `stored` | `key`, `value`, `op` | Compares a legacy DRM dialogue runtime string on the player. |
 | `cnpc_stored_data` | `scope`, `key`, `op`, `valueType`, `value` | Reads and compares CustomNPCs player, context entity, or world Stored Data. |
 | `item` | `key`, `value`, `op` | Compares player inventory count for an item. |
 | `faction_score` | `faction`, `key`, `amount`, `value`, `op` | Compares CustomNPCs faction points. |
@@ -40,9 +41,7 @@ Modes are `and` and `or`. Blank or unknown modes are treated as `and`.
 
 Numeric comparisons support `>`, `>=`, `<`, `<=`, `==`, and `!=`. Tags and advancements usually use `has` or `not`.
 
-The legacy `stored` condition has been removed. If an older JSON file still contains `"type": "stored"`, DRM interprets it as `cnpc_stored_data` and writes the canonical new type when the condition is saved again. Always use `cnpc_stored_data` for new content.
-
-It supports `player`, `context_entity`, and `world` scopes plus existence, string, and numeric comparisons. See **CustomNPCs Stored Data Condition Integration** in the Script API section for editor steps, legacy JSON migration, execution-context limits, script recipes, and failure rules.
+`stored` and `cnpc_stored_data` read different storage systems. Legacy `stored` does not read CustomNPCs `getStoreddata()`. If a CustomNPCs script writes with `event.player.getStoreddata().put(...)`, select `cnpc_stored_data`. It supports `player`, `context_entity`, and `world` scopes plus existence, string, and numeric comparisons. See **CustomNPCs Stored Data Condition Integration** in the Script API section for editor steps, execution-context limits, script recipes, and failure rules.
 
 ## Action Types
 

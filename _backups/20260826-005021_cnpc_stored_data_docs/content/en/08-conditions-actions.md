@@ -31,7 +31,7 @@ Modes are `and` and `or`. Blank or unknown modes are treated as `and`.
 | type | Main Fields | Behavior |
 | --- | --- | --- |
 | `tag` | `key`, `tag`, `value`, `op` | Checks whether the player has a tag. `op: "not"` means absent. |
-| `cnpc_stored_data` | `scope`, `key`, `op`, `valueType`, `value` | Reads and compares CustomNPCs player, context entity, or world Stored Data. |
+| `stored` | `key`, `value`, `op` | Compares `dochi_rpg_maker.dialogue.runtime.<key>` on player PersistentData. |
 | `item` | `key`, `value`, `op` | Compares player inventory count for an item. |
 | `faction_score` | `faction`, `key`, `amount`, `value`, `op` | Compares CustomNPCs faction points. |
 | `advancement` | `advancement`, `key`, `op` | Checks advancement completion. |
@@ -39,10 +39,6 @@ Modes are `and` and `or`. Blank or unknown modes are treated as `and`.
 | `ftb_task` | `quest`, `task`, `op` | Checks FTB task state. |
 
 Numeric comparisons support `>`, `>=`, `<`, `<=`, `==`, and `!=`. Tags and advancements usually use `has` or `not`.
-
-The legacy `stored` condition has been removed. If an older JSON file still contains `"type": "stored"`, DRM interprets it as `cnpc_stored_data` and writes the canonical new type when the condition is saved again. Always use `cnpc_stored_data` for new content.
-
-It supports `player`, `context_entity`, and `world` scopes plus existence, string, and numeric comparisons. See **CustomNPCs Stored Data Condition Integration** in the Script API section for editor steps, legacy JSON migration, execution-context limits, script recipes, and failure rules.
 
 ## Action Types
 
