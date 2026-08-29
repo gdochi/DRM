@@ -373,31 +373,6 @@ function castBossSkill(npc, target) {
 
 The `drmAnimation`, `drmHitbox`, and `drmCombat` pages document their complete methods and constraints. Use `drmEffect` from **Potion Effect Query Script API** to gate a cast by an active effect.
 
-### Announcing a Successful Skill with a Popup
-
-A definition saved by Popup Maker can be played from the same script through `drmPopup`. This example shows `area_title.json` to the player after a successful cast and overrides only its body text.
-
-```js
-function interact(event) {
-    var ok = drmSkill.use(
-        event.npc,
-        "irons_spellbooks:fireball",
-        event.player,
-        5
-    );
-
-    if (ok) {
-        drmPopup.text(
-            event.player,
-            "area_title.json",
-            "Fireball cast\nCooldown: " + drmSkill.lastCooldownTicks() + " ticks"
-        );
-    }
-}
-```
-
-`drmPopup.text` returns the number of players that received the presentation. See **Popup Maker Script API** for all methods, line breaks, target arrays, and policy limits.
-
 ## Troubleshooting and Logs
 
 Every non-cancelled skill call writes a diagnostic to both locations:

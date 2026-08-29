@@ -375,31 +375,6 @@ function castBossSkill(npc, target) {
 
 `drmAnimation`, `drmHitbox`, `drmCombat`은 각각 별도 문서에 전체 메서드와 제한이 설명되어 있습니다. 포션 효과를 조건으로 시전하려면 **포션 효과 조회 스크립트 API** 문서의 `drmEffect`를 사용하십시오.
 
-### 스킬 성공을 팝업으로 알리기
-
-팝업 메이커에서 저장한 정의는 `drmPopup`으로 같은 스크립트에서 재생할 수 있습니다. 다음 예제는 스킬 시전이 성공한 플레이어에게 `area_title.json` 팝업을 띄우고 본문만 바꿉니다.
-
-```js
-function interact(event) {
-    var ok = drmSkill.use(
-        event.npc,
-        "irons_spellbooks:fireball",
-        event.player,
-        5
-    );
-
-    if (ok) {
-        drmPopup.text(
-            event.player,
-            "area_title.json",
-            "Fireball cast\nCooldown: " + drmSkill.lastCooldownTicks() + " ticks"
-        );
-    }
-}
-```
-
-`drmPopup.text`는 성공적으로 전송한 플레이어 수를 반환합니다. 전체 팝업 메서드, 줄바꿈, 대상 배열, 정책 제한은 **팝업 메이커 스크립트 API** 문서를 확인하십시오.
-
 ## 문제 해결과 로그
 
 취소(`cancelled`)를 제외한 스킬 호출은 다음 두 위치에 진단 정보를 남깁니다.
