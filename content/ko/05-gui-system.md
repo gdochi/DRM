@@ -7,7 +7,7 @@ product: core
 category: GUI Maker
 section: gui-maker
 status: 안정
-version: 0.1.3
+version: 0.1.4
 audience: GUI 제작자
 tags:
   - gui
@@ -20,13 +20,13 @@ GUI 시스템은 화면의 모양을 정의합니다. 대화 내용, 상점 상�
 
 GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker/gui` 아래에 들어갑니다. 대화, 상점, 레머넌트 메시지는 폴더를 따로 나누지 않고 `guiType`으로 구분합니다.
 
-0.1.3의 GUI Maker는 `dialogue`, `npc_shop`, `remnant_msg`, `currency_hud`뿐 아니라 플레이어 상태/커스텀 HUD 계열 레이아웃 프로필도 같은 캔버스 규칙으로 다룹니다. 에디터 미리보기, 저장된 GUI 레이아웃, 플레이어가 보는 런타임 화면은 서로 다른 단계이므로 미리보기 샘플을 실제 대화·상품 데이터로 보지 마세요.
+0.1.4의 GUI Maker는 `dialogue`, `npc_shop`, `remnant_msg`, `faction`, `teleporter`, `quest_journal`, `stat_allocation`, `popup`과 HUD 계열 레이아웃 프로필을 같은 캔버스 규칙으로 다룹니다. 에디터 미리보기, 저장된 GUI 레이아웃, 플레이어가 보는 런타임 화면은 서로 다른 단계이므로 미리보기 샘플을 실제 런타임 데이터로 보지 마세요.
 
 ## 기본 구조
 
 | 필드 | 의미 |
 | --- | --- |
-| `guiType` | `dialogue`, `npc_shop`, `currency_hud`, `remnant_msg` 같은 화면 타입입니다. |
+| `guiType` | `dialogue`, `npc_shop`, `faction`, `teleporter`, `quest_journal`, `stat_allocation`, `popup`, `remnant_msg` 같은 화면 타입입니다. |
 | `id` | GUI 문서 ID입니다. 파일명과 맞추면 연결할 때 관리하기 쉽습니다. |
 | `stage` | 기준 해상도, 배경, 그리드 같은 화면 전체 설정입니다. |
 | `elements` | 화면에 배치되는 컴포넌트 배열입니다. |
@@ -44,6 +44,11 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 | `dialogue` | 대화 런타임 | `default_dialogue_gui.json` | `config/dochi_rpg_maker/gui` |
 | `npc_shop` | 상점 런타임 | `default_shop_gui.json` | `config/dochi_rpg_maker/gui` |
 | `remnant_msg` | 레머넌트 메시지 | `default_remnant_msg_gui.json` | `config/dochi_rpg_maker/gui` |
+| `faction` | 팩션 개요 | `default_faction_gui.json` | `config/dochi_rpg_maker/gui` |
+| `teleporter` | 목적지 목록 | `default_teleporter_gui.json` | `config/dochi_rpg_maker/gui` |
+| `quest_journal` | 플레이어 퀘스트 저널 | `default_quest_journal_gui.json` | `config/dochi_rpg_maker/gui` |
+| `stat_allocation` | 플레이어 스탯 투자 | `default_stat_gui.json` | `config/dochi_rpg_maker/gui` |
+| `popup` | 팝업 표시 | `default_popup_gui.json` | `config/dochi_rpg_maker/gui` |
 | `currency_hud` | 화폐 HUD 레이아웃 | `currency_hud_layout.json` | `config/dochi_rpg_maker/hud/sets` |
 
 `shop`은 내부에서 `npc_shop`으로, `remnant`는 `remnant_msg`로 정규화됩니다. HUD 계열은 화면 GUI와 저장소가 다르므로 GUI Maker와 HUD Maker 문서를 같이 봐야 합니다.
@@ -71,6 +76,11 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 | `currency_delta` | `currency_hud` | 획득/소모 변화량입니다. |
 | `currency_name` | `currency_hud` | 화폐 이름입니다. |
 | `player_health`, `player_food`, `player_armor`, `player_air`, `player_xp_level` | `currency_hud` | 플레이어 상태 표시용 HUD 컴포넌트입니다. |
+| `faction_*` | `faction` | 헤더, 카테고리, 팩션 목록/상세, 상태 범례, 닫기입니다. |
+| `teleporter_*` | `teleporter` | 카테고리, 목적지 목록/상세, 이동/닫기, 상태, 페이지입니다. |
+| `quest_*` | `quest_journal` | 필터, 검색, 목록/상세, 목표, 보상, 추적, 수락/포기, 닫기입니다. |
+| `stat_*` | `stat_allocation` | 헤더, 스크롤 스탯 목록, 포인트, 설명, 투자, 닫기입니다. |
+| `popup_*` | `popup` | 런타임 제목, 부제, 본문, 표시 표면입니다. |
 
 ## GUI 연결 방식
 

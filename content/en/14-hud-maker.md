@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: hud-maker
 status: Stable
-version: 0.1.3
+version: 0.1.4
 audience: Creators / Operators
 tags:
   - hud
@@ -33,7 +33,7 @@ HUD files use these paths.
 
 HUD sets are managed by the server, then sent to the client for rendering.
 
-0.1.3 installs disabled starter definitions for the currency wallet plus health, food, armor, air, and experience. Enable or clone only the definitions you intend to use.
+0.1.4 installs disabled starter definitions for the currency wallet plus health, food, armor, air, and experience. Enable or clone only the definitions you intend to use.
 
 ## Basic Workflow
 
@@ -54,8 +54,20 @@ HUD sets are managed by the server, then sent to the client for rendering.
 | text | Displays fixed text or status text. |
 | panel | Groups several elements into a background area. |
 | player health/food/armor/air/XP | Shows player status values in a HUD layout. |
+| Iron's Spells mana | Shows current/max mana when the integration is installed. |
+| Combat Roll stamina | Shows current/max roll stamina when the integration is installed. |
+| CustomNPCs tempdata | Shows a numeric `tempdata` key with a configured max key or max value. |
+| CustomNPCs storeddata | Shows a numeric `storeddata` key with a configured max key or max value. |
 
 Currency HUD components connect directly to Currency Editor IDs. If the HUD component exists but the currency definition does not, the display will not be reliable.
+
+## External Gauges And Native HUD Visibility
+
+The Inspector's `Mod HUD Guide` sits below `Vanilla HUD Guide`. It independently controls whether Iron's Spells mana and Combat Roll's native HUD are hidden. This does not create a DRM component by itself; add the matching DRM HUD component and configure its layout separately.
+
+External bars use the DRM gauge sprite as their base design. Change the component tint/color rather than replacing the fill with an unstyled solid rectangle.
+
+CustomNPCs data components can be added multiple times. Configure `Data Key`, then either a `Max Key` or numeric `Max Value`. The server config entry `hud_maker.customNpcsDataHudMaxInstances` limits each data component type; the default is three and the accepted range is 1–16.
 
 ## Layout Guidelines
 

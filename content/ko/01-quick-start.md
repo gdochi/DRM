@@ -7,7 +7,7 @@ product: core
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.3
+version: 0.1.4
 audience: 처음 설치하는 사용자
 tags:
   - quick-start
@@ -17,11 +17,11 @@ tags:
 ## 첫 실행
 
 1. 서버에서 사용할 경우 서버와 접속 클라이언트 양쪽에 같은 DRM JAR을 넣습니다.
-2. CustomNPCs NPC에 대화나 상점을 연결할 경우 CustomNPCs도 같은 환경에 설치합니다. DRM 자체의 파일/HUD/GUI 편집만 사용할 때는 로더 수준에서 필수 의존성은 아닙니다.
+2. 클라이언트와 서버 양쪽에 CustomNPCs 1.20.1 이상을 설치합니다. 0.1.4에서는 필수 의존성입니다.
 3. 월드나 서버를 한 번 실행해서 `config/dochi_rpg_maker` 폴더가 생성되게 합니다.
 4. 크리에이티브 모드 또는 편집 권한이 있는 상태로 `Dochi RPG Maker Core` 아이템을 준비합니다. 이 아이템은 CustomNPCs 아이템 탭에서 찾을 수 있습니다.
 
-처음 실행하면 기본 대화 세트, 기본 대화/상점/Remnant Msg GUI, 샘플 상점, HUD 정의, Remnant Msg 샘플·정책, 설정 파일이 `config/dochi_rpg_maker` 아래에 설치됩니다.
+처음 실행하면 기본 대화, GUI, 상점, HUD, Remnant Message, 퀘스트, 스탯, 아이템, 텔레포터, 팩션, 팝업 템플릿이 `config/dochi_rpg_maker` 아래에 설치됩니다.
 
 ## 처음 생성되는 저장 폴더
 
@@ -32,6 +32,13 @@ DRM이 만드는 JSON은 대부분 `config/dochi_rpg_maker` 아래에 저장됩�
 | `dialogue_sets/<set>/` | `dialogue_set.json`, `start.json`, 일반 노드 JSON | Dialogue Editor |
 | `gui/` | 대화, 상점, Remnant Msg 화면 레이아웃 | GUI Maker |
 | `npc_shops/` | 파일 기반 NPC 상점 문서 | NPC Shop |
+| `quests/<pack>/` | 퀘스트 팩 메타데이터와 개별 퀘스트 | Quest Editor |
+| `stats/sets/` | 재사용 플레이어 스탯 세트 | Stat Builder |
+| `items/definitions/` | DRM 데이터베이스 아이템 정의 | Item Editor |
+| `teleporters/` | 목적지 세트 | Teleporter Editor |
+| `factions/` | 팩션 표시와 프리셋 | Faction Editor |
+| `popups/` | 팝업 정의와 정책 | Popup Maker |
+| `assets/textures/` | 서버 PNG 에셋과 동반 `.png.mcmeta` | 에셋 피커 / NPC Basic |
 | `currency/definitions/` | 화폐 ID, 이름, 아이콘, 픽업 변환 규칙 | Currency Editor |
 | `hud/sets/` | HUD Maker에서 만든 HUD 세트 | HUD Maker |
 | `hud/definitions/` | 바닐라 HUD 대체 또는 커스텀 HUD 정의 | HUD Maker |
@@ -50,9 +57,9 @@ DRM이 만드는 JSON은 대부분 `config/dochi_rpg_maker` 아래에 저장됩�
 | 대화가 연결된 NPC를 아이템 없이 우클릭 | 대화 런타임 |
 | 상점이 연결된 NPC를 아이템 없이 우클릭 | 상점 런타임 |
 
-에디터 선택 UI에서는 `Dialogue Editor`, `NPC Shop`, `Currency Editor`, `GUI Maker`, `HUD Maker`, `Remnant Msg Editor`를 고를 수 있습니다.
+에디터 선택 UI에서는 `Dialogue Editor`, `GUI Maker`, `NPC Shop`, `NPC Basic`, `Currency Editor`, `HUD Maker`, `Popup Maker`, `Faction Editor`, `Quest Editor`, `Teleporter Editor`, `Remnant Msg Editor`, `Stat Builder`, `Item Editor`를 고를 수 있습니다.
 
-0.1.3의 선택 UI는 검색과 `Built-in` / `Add-on` 분류를 지원합니다. 마지막으로 열었던 에디터와 JSON 소스도 세션 동안 기억하므로, 에디터 선택 화면으로 돌아왔다가 다시 열면 직전 작업 흐름을 이어가기 쉽습니다.
+0.1.4의 선택 UI는 검색과 `Built-in` / `Add-on` 분류를 지원합니다. 마지막으로 열었던 에디터와 JSON 소스도 세션 동안 기억하므로, 에디터 선택 화면으로 돌아왔다가 다시 열면 직전 작업 흐름을 이어가기 쉽습니다.
 
 ## 공용 편집 단축키
 
@@ -89,6 +96,8 @@ DRM이 만드는 JSON은 대부분 `config/dochi_rpg_maker` 아래에 저장됩�
 | 5 | NPC Shop | 구매/판매 상점을 만듭니다. |
 | 6 | GUI Maker | 대화/상점/메시지 화면의 모양을 바꿉니다. |
 | 7 | HUD Maker | 플레이어 화면에 항상 표시되는 HUD를 다룹니다. |
+| 8 | 퀘스트 에디터와 저널 | 퀘스트 상태, 목표, 보상, 완료 흐름을 다룹니다. |
+| 9 | 스탯 빌더와 아이템 에디터 | 플레이어 성장과 요구치 기반 아이템 성능을 다룹니다. |
 
 :::tip 운영 명령
 서버 JSON을 직접 수정했다면 `/drm reload`를 실행하거나 `settings/reload_policy.json`의 `reloadOnTrigger` 값을 확인합니다.

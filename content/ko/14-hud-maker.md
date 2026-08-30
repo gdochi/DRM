@@ -7,7 +7,7 @@ product: core
 category: HUD Maker
 section: hud-maker
 status: 안정
-version: 0.1.3
+version: 0.1.4
 audience: HUD 제작자
 tags:
   - hud
@@ -32,7 +32,7 @@ HUD 정의는 `HudDefinition` 구조를 사용합니다. 하나의 정의에는 
 
 HUD 정의의 서버 JSON kind는 `hud_definition`입니다. 활성 세트는 `hud/active_set.json`으로 따로 관리됩니다.
 
-0.1.3은 화폐 지갑, 체력, 허기, 방어도, 산소, 경험치 기본 정의를 제공합니다. 모두 `enabled: false`로 설치되므로 원하는 정의만 복제하거나 활성화해 사용합니다.
+0.1.4는 화폐 지갑, 체력, 허기, 방어도, 산소, 경험치 기본 정의를 제공합니다. 모두 `enabled: false`로 설치되므로 원하는 정의만 복제하거나 활성화해 사용합니다.
 
 ## 상단 버튼
 
@@ -84,6 +84,21 @@ HUD Maker 일부 버튼은 번역 키를 사용합니다. 화면에는 지역화
 | `BAR` | 체력, 허기, 경험치처럼 비율이 있는 값을 막대로 표시합니다. |
 | `IMAGE` | 텍스처, 아이콘, 배경 이미지를 표시합니다. |
 | `ICON_LIST` | 방어도처럼 정해진 개수의 아이콘을 값에 따라 채웁니다. |
+
+## 외부 게이지와 모드 HUD 가이드
+
+Inspector의 `Mod HUD Guide`는 `Vanilla HUD Guide` 아래에 있습니다. 여기서 Iron's Spells 마나 HUD와 Combat Roll 스태미너 HUD의 원본 표시를 각각 숨길 수 있습니다. 이 스위치는 DRM 컴포넌트를 자동 생성하지 않으므로 대응하는 DRM HUD 컴포넌트는 별도로 추가해야 합니다.
+
+| 데이터 소스 | 용도 |
+| --- | --- |
+| `irons_spellbooks_mana` | Iron's Spells 현재/최대 마나 |
+| `combat_roll_stamina` | Combat Roll 현재/최대 스태미너 |
+| `custom_npcs_tempdata` | CustomNPCs 숫자형 `tempdata` 키 |
+| `custom_npcs_storeddata` | CustomNPCs 숫자형 `storeddata` 키 |
+
+외부 바는 DRM 게이지 스프라이트를 기본 디자인으로 사용합니다. 단색 사각형으로 교체하기보다 컴포넌트 tint/color로 색을 조정하세요.
+
+CustomNPCs 데이터 컴포넌트는 여러 개 추가할 수 있습니다. `Data Key`를 정하고 `Max Key` 또는 숫자 `Max Value`를 설정합니다. 서버 설정 `hud_maker.customNpcsDataHudMaxInstances`가 데이터 컴포넌트 종류별 최대 개수를 제한하며 기본값은 3, 허용 범위는 1–16입니다.
 
 요소는 `transform`, `binding`, `renderer`, `visibility`, `animation`, `children` 구조를 가집니다. 0.1.3 기본 방어도 HUD는 `ICON_LIST`를 사용합니다.
 

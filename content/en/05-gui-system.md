@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: gui-maker
 status: Stable
-version: 0.1.3
+version: 0.1.4
 audience: GUI creators
 tags:
   - gui
@@ -22,7 +22,7 @@ GUI Maker preview, the saved layout document, and the player-facing runtime scre
 
 | Field | Meaning |
 | --- | --- |
-| `guiType` | Layout type such as `dialogue`, `npc_shop`, `currency_hud`, or `remnant_msg`. |
+| `guiType` | Layout type such as `dialogue`, `npc_shop`, `faction`, `teleporter`, `quest_journal`, `stat_allocation`, `popup`, or `remnant_msg`. |
 | `id` | Internal GUI ID. Matching it to the filename helps tracking. |
 | `stage` | Base size, background, and grid settings. |
 | `elements` | Array of screen components. |
@@ -36,6 +36,11 @@ GUI Maker preview, the saved layout document, and the player-facing runtime scre
 | `dialogue` | Screen GUI | `default_dialogue_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
 | `npc_shop` | Screen GUI | `default_shop_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
 | `remnant_msg` | Screen GUI | `default_remnant_msg_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
+| `faction` | Faction overview | `default_faction_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
+| `teleporter` | Destination browser | `default_teleporter_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
+| `quest_journal` | Player quest journal | `default_quest_journal_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
+| `stat_allocation` | Player stat allocation | `default_stat_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
+| `popup` | Popup presentation | `default_popup_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
 | `currency_hud` | HUD overlay | `hud_components.json` | `currency_hud_layout` | `config/dochi_rpg_maker/hud/sets` |
 | `player_status` | HUD overlay | `player_status_hud.json` | HUD family | `config/dochi_rpg_maker/hud/player_status` |
 | `custom_hud` | HUD overlay | `custom_hud_layout.json` | HUD family | `config/dochi_rpg_maker/hud/custom` |
@@ -60,6 +65,11 @@ Inputs such as `currency`, `hud_layout`, and `currency_hud_layout` normalize to 
 | `currency_display` | Shop | Player-owned currency amount. |
 | `currency_list`, `currency_icon`, `currency_amount`, `currency_delta`, `currency_name` | HUD | Currency HUD elements. |
 | `player_health`, `player_food`, `player_armor`, `player_air`, `player_xp_level` | HUD | Player status preview/runtime values. |
+| `faction_*` | Faction | Header, category tabs, faction list/details, state legend, and close controls. |
+| `teleporter_*` | Teleporter | Category, destination list/details, travel/close, status, and page controls. |
+| `quest_*` | Quest Journal | Filters, search, list/details, objectives, rewards, tracking, accept/abandon, and close. |
+| `stat_*` | Stat Allocation | Header, scrollable stat list, points, description, increase, and close. |
+| `popup_*` | Popup | Runtime title, subtitle, body, and presentation surfaces. |
 
 ## Dialogue And Shop GUI References
 

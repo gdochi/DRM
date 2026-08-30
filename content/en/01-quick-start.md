@@ -7,7 +7,7 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.3
+version: 0.1.4
 audience: First-time users
 tags:
   - quick-start
@@ -18,11 +18,11 @@ tags:
 
 1. Put the `dochi_rpg_maker` JAR into the Forge 1.20.1 instance `mods` folder.
 2. For servers, install the same mod version on both server and connecting clients.
-3. Install CustomNPCs in the same environment when authoring dialogue, shops, or editor data for CustomNPCs NPCs. It is not a loader-level requirement for standalone file, GUI, or HUD work.
+3. Install CustomNPCs 1.20.1 or newer in the same client and server environment. It is a required 0.1.4 dependency.
 4. Start the world or server once so `config/dochi_rpg_maker` is created.
 5. In creative mode, get the `Dochi RPG Maker Core` item.
 
-On first launch, the mod installs default dialogue sets, dialogue/shop/Remnant Msg GUI files, a sample shop, HUD definitions, Remnant Msg sample/policy files, and settings under `config/dochi_rpg_maker`.
+On first launch, the mod installs default dialogue, GUI, shop, HUD, Remnant Message, quest, stat, item, teleporter, faction, and popup templates under `config/dochi_rpg_maker`.
 
 ## Opening Editors
 
@@ -35,7 +35,7 @@ On first launch, the mod installs default dialogue sets, dialogue/shop/Remnant M
 
 The core item is also added to the CustomNPCs creative tab. Editing requires creative/edit permission.
 
-The 0.1.3 selector has search plus `Built-in` and `Add-on` categories. During the current session it remembers the last editor, sub-screen, and JSON source so returning to an editor can resume the previous workflow.
+The 0.1.4 selector has search plus `Built-in` and `Add-on` categories. Built-in tools include Dialogue, GUI Maker, NPC Shop, NPC Basic, Currency, HUD Maker, Popup Maker, Faction, Quest, Teleporter, Remnant Msg, Stat Builder, and Item Editor. During the current session it remembers the last editor, sub-screen, and JSON source.
 
 ## Shared Editor Shortcuts
 
@@ -72,6 +72,8 @@ For shops, start from `NPC Shop` in the same selector. File-based shops are save
 | 5 | NPC Shop | Buy and sell shops. |
 | 6 | GUI Maker | Dialogue/shop/message screen layout. |
 | 7 | HUD Maker | Always-visible player HUDs. |
+| 8 | Quest Editor And Journal | Quest state, objectives, rewards, and completion flow. |
+| 9 | Stat Builder And Item Editor | Player progression and requirement-based equipment performance. |
 
 :::tip Operator Command
 If you edit server JSON by hand, run `/drm reload` or review `settings/reload_policy.json`.

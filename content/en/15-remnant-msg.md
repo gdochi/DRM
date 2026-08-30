@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: remnant-msg
 status: Stable
-version: 0.1.3
+version: 0.1.4
 audience: Creators / Operators
 tags:
   - remnant

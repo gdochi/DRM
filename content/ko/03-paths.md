@@ -7,7 +7,7 @@ product: core
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.3
+version: 0.1.4
 audience: 제작자 / 운영자
 tags:
   - paths
@@ -33,6 +33,13 @@ tags:
 | 대화 세트 | `config/dochi_rpg_maker/dialogue_sets/<set>/` | `dialogue_set.json`과 노드별 `*.json`을 함께 저장합니다. |
 | GUI 레이아웃 | `config/dochi_rpg_maker/gui/` | 대화, 상점, Remnant Msg 같은 화면 GUI JSON입니다. 하위 폴더를 사용할 수 있습니다. |
 | NPC 상점 | `config/dochi_rpg_maker/npc_shops/` | 파일 기반 상점 JSON입니다. |
+| 퀘스트 팩 | `config/dochi_rpg_maker/quests/<pack>/` | `pack.json`과 `quests/` 아래 개별 퀘스트 파일입니다. |
+| 스탯 세트 | `config/dochi_rpg_maker/stats/sets/` | 스탯 정의이며 `stats/active_set.json`이 활성 세트를 선택합니다. |
+| 데이터베이스 아이템 | `config/dochi_rpg_maker/items/definitions/` | DRM 아이템 정의이며 공용 편집 규칙은 `items/editor_settings.json`입니다. |
+| 텔레포터 | `config/dochi_rpg_maker/teleporters/` | Teleporter Set JSON입니다. |
+| 팩션 | `config/dochi_rpg_maker/factions/` | DRM 팩션 표시 설정과 프리셋입니다. |
+| 팝업 | `config/dochi_rpg_maker/popups/` | 팝업 정의와 정책입니다. |
+| 제작자 PNG 에셋 | `config/dochi_rpg_maker/assets/textures/` | 서버가 카탈로그로 만드는 PNG와 동반 `.png.mcmeta` 파일입니다. |
 | 화폐 정의 | `config/dochi_rpg_maker/currency/definitions/` | 화폐 ID, 이름, 아이콘, 픽업 변환, 사망 규칙을 정의합니다. |
 | HUD 세트 | `config/dochi_rpg_maker/hud/sets/` | HUD Maker가 쓰는 HUD 세트 JSON입니다. |
 | HUD 정의 | `config/dochi_rpg_maker/hud/definitions/` | 바닐라 HUD 대체 또는 커스텀 HUD 정의입니다. |
@@ -70,6 +77,14 @@ tags:
 | `currency_hud_layout` | `hud/sets` | HUD 세트 저장소입니다. 예전 `currency_hud` 이름도 호환됩니다. |
 | `hud_active_set` | `hud/active_set.json` | 현재 활성 HUD 세트입니다. |
 | `hud_definition` | `hud/definitions` | 바닐라 HUD 대체와 커스텀 HUD 정의입니다. |
+| `faction_settings` | `factions/settings.json` | 활성 팩션 표시 설정입니다. |
+| `faction_preset` | `factions/presets` | 재사용 팩션 표시 프리셋입니다. |
+| `teleporter_set` | `teleporters` | Teleporter Set 정의입니다. |
+| `stat_set` | `stats/sets` | 플레이어 스탯 세트입니다. |
+| `item_definition` | `items/definitions` | DRM 데이터베이스 아이템입니다. |
+| `item_editor_settings` | `items/editor_settings.json` | 카테고리, 희귀도, 툴팁 형식입니다. |
+| `popup_definition` | `popups/definitions` | 팝업 표시 정의입니다. |
+| `popup_policy` | `popups/policies` | 팝업 권한과 리소스 제한입니다. |
 | `remnant_msg` | `remnant_msg/messages` | 레머넌트 메시지 문서입니다. |
 | `remnant_msg_policy` | `remnant_msg/policies` | 레머넌트 메시지 정책 문서입니다. |
 | `settings` | `settings/defaults.json` | 기본 화폐와 기본 GUI 연결 설정입니다. |
@@ -87,7 +102,7 @@ tags:
 
 | 데이터 | 시작 시 처리 |
 | --- | --- |
-| 기본 대화 세트, GUI, 상점 | JAR에 포함된 0.1.3 기본본으로 갱신됩니다. |
+| 기본 대화, GUI, 상점, 팩션, 텔레포터, 퀘스트, 스탯, 아이템, 팝업 | 데이터 종류별 기본 정책에 따라 0.1.4 JAR에서 설치 또는 갱신됩니다. |
 | Remnant Msg 샘플 메시지 | JAR 기본본으로 갱신됩니다. |
 | HUD 정의 | 파일이 없을 때만 설치되며 기본값은 `enabled: false`입니다. |
 | Remnant Msg 기본 정책 | 파일이 없을 때만 설치됩니다. |

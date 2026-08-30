@@ -7,7 +7,7 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.3
+version: 0.1.4
 audience: Creators / Operators
 tags:
   - paths
@@ -33,6 +33,13 @@ If the legacy `<game-or-server-root>/dochi_rpg_maker` folder exists and the new 
 | Dialogue sets | `config/dochi_rpg_maker/dialogue_sets/<set>/` | Stores `dialogue_set.json` plus node `*.json` files. |
 | GUI layouts | `config/dochi_rpg_maker/gui/` | Screen GUI JSON for dialogue, shops, Remnant Msg, and related layouts. |
 | NPC shops | `config/dochi_rpg_maker/npc_shops/` | File-based shop JSON. |
+| Quest packs | `config/dochi_rpg_maker/quests/<pack>/` | `pack.json` plus individual files under `quests/`. |
+| Stat sets | `config/dochi_rpg_maker/stats/sets/` | Stat definitions; `stats/active_set.json` selects the active set. |
+| Database items | `config/dochi_rpg_maker/items/definitions/` | DRM item definitions; global editor rules are in `items/editor_settings.json`. |
+| Teleporters | `config/dochi_rpg_maker/teleporters/` | Teleporter Set JSON. |
+| Factions | `config/dochi_rpg_maker/factions/` | DRM faction presentation settings and presets. |
+| Popups | `config/dochi_rpg_maker/popups/` | Popup definitions and policies. |
+| Creator PNG assets | `config/dochi_rpg_maker/assets/textures/` | Server-catalogued PNG and companion `.png.mcmeta` files. |
 | Currency definitions | `config/dochi_rpg_maker/currency/definitions/` | Currency ID, name, icon, pickup conversion, and death rules. |
 | HUD sets | `config/dochi_rpg_maker/hud/sets/` | HUD Maker set JSON. |
 | HUD definitions | `config/dochi_rpg_maker/hud/definitions/` | Vanilla replacement and custom HUD definitions. |
@@ -54,6 +61,14 @@ Client and server exchange JSON by `kind` and `path`.
 | `currency_hud_layout` | `hud/sets` | HUD set storage. Legacy `currency_hud` maps here. |
 | `hud_active_set` | `hud/active_set.json` | Current active HUD set. |
 | `hud_definition` | `hud/definitions` | Vanilla replacement and custom HUD definitions. |
+| `faction_settings` | `factions/settings.json` | Active faction presentation settings. |
+| `faction_preset` | `factions/presets` | Reusable faction presentation preset. |
+| `teleporter_set` | `teleporters` | Teleporter Set definition. |
+| `stat_set` | `stats/sets` | Player stat set. |
+| `item_definition` | `items/definitions` | DRM database item. |
+| `item_editor_settings` | `items/editor_settings.json` | Categories, rarities, and tooltip formats. |
+| `popup_definition` | `popups/definitions` | Popup presentation. |
+| `popup_policy` | `popups/policies` | Popup permission and resource limits. |
 | `remnant_msg` | `remnant_msg/messages` | Remnant Msg document. |
 | `remnant_msg_policy` | `remnant_msg/policies` | Remnant Msg policy document. |
 | `settings` | `settings/defaults.json` | Default currency and default GUI references. |
@@ -71,7 +86,7 @@ Client and server exchange JSON by `kind` and `path`.
 
 | Data | Startup behavior |
 | --- | --- |
-| Bundled dialogue, GUI, and shop defaults | Refreshed from the 0.1.3 JAR. |
+| Bundled dialogue, GUI, shop, faction, teleporter, quest, stat, item, and popup defaults | Installed or refreshed from the 0.1.4 JAR according to the data type's default policy. |
 | Remnant Msg sample message | Refreshed from the JAR. |
 | HUD definitions | Installed only when missing and default to `enabled: false`. |
 | Remnant Msg default policy | Installed only when missing. |

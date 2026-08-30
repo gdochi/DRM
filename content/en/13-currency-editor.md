@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: currency-editor
 status: Stable
-version: 0.1.2
+version: 0.1.4
 audience: Creators / Operators
 tags:
   - currency

@@ -7,7 +7,7 @@ product: core
 category: 레퍼런스 / 운영
 section: operations
 status: 안정
-version: 0.1.2
+version: 0.1.4
 audience: 제작자 / 운영자
 tags:
   - data-flow

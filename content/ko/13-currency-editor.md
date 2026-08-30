@@ -7,7 +7,7 @@ product: core
 category: 커런시 에디터
 section: currency-editor
 status: 안정
-version: 0.1.2
+version: 0.1.4
 audience: 제작자 / 운영자
 tags:
   - currency

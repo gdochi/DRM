@@ -7,7 +7,7 @@ product: core
 category: 다이얼로그 에디터
 section: dialogue-editor
 status: 안정
-version: 0.1.2
+version: 0.1.4
 audience: 대화 제작자
 tags:
   - condition

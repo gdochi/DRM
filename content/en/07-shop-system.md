@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: npc-shop
 status: Stable
-version: 0.1.3
+version: 0.1.4
 audience: Shop creators
 tags:
   - shop

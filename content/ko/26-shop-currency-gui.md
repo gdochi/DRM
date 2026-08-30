@@ -7,7 +7,7 @@ product: core
 category: NPC Shop
 section: npc-shop
 status: 안정
-version: 0.1.2
+version: 0.1.4
 audience: 상점 제작자
 tags:
   - shop

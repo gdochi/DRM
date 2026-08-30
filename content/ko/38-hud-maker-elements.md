@@ -7,7 +7,7 @@ product: core
 category: HUD Maker
 section: hud-maker
 status: 안정
-version: 0.1.3
+version: 0.1.4
 audience: HUD 제작자
 tags:
   - hud
