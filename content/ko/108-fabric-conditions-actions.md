@@ -7,7 +7,7 @@ product: core-fabric
 category: 다이얼로그 에디터
 section: dialogue-editor
 status: 안정
-version: 0.1.7
+version: 0.1.8
 audience: 대화 제작자
 tags:
   - condition
@@ -37,6 +37,10 @@ tags:
 | `advancement` | `advancement`, `key`, `op` | 발전 과제 완료 여부를 봅니다. |
 | `ftb` | `quest`, `key`, `value`, `op` | FTB 퀘스트 상태를 봅니다. |
 | `ftb_task` | `quest`, `task`, `op` | FTB 퀘스트 태스크 상태를 봅니다. |
+| `quest_state` | `quest`, `state`, `op` | DRM 퀘스트의 현재 상태를 비교합니다. |
+| `quest_can_start` | `quest`, `op` | DRM 퀘스트를 지금 시작할 수 있는지 봅니다. |
+| `quest_can_turn_in` | `quest`, `op` | DRM 퀘스트를 지금 제출할 수 있는지 봅니다. |
+| `quest_objective` | `quest`, `objective`, `value`, `op` | 목표 진행 수치를 비교합니다. |
 
 숫자 비교 조건은 `>`, `>=`, `<`, `<=`, `==`, `!=`를 사용할 수 있습니다. 태그와 발전 과제는 보통 `has` 또는 `not`을 사용합니다.
 
@@ -44,7 +48,7 @@ tags:
 
 ## 액션 타입
 
-0.1.7의 공용 Condition Editor에서는 조건 행을 드래그해 순서를 바꿀 수 있고, 목록 가장자리에서 자동 스크롤과 삽입 가이드를 제공합니다. `item`, `faction_score`, `advancement`, `ftb`, `ftb_task`의 ID 필드는 `Find`로 검색할 수 있습니다. FTB 검색과 판정은 FTB Quests가 실제로 설치되고 클라이언트 데이터가 동기화된 경우에만 사용할 수 있습니다.
+0.1.8의 공용 Condition Editor에서는 조건 행을 드래그해 순서를 바꿀 수 있고, 목록 가장자리에서 자동 스크롤과 삽입 가이드를 제공합니다. `item`, `faction_score`, `advancement`, `ftb`, `ftb_task`와 DRM 퀘스트의 ID 필드는 `Find`로 검색할 수 있습니다. FTB 검색과 판정은 FTB Quests가 실제로 설치되고 클라이언트 데이터가 동기화된 경우에만 사용할 수 있습니다.
 
 | type | 주요 필드 | 동작 |
 | --- | --- | --- |
@@ -59,6 +63,10 @@ tags:
 | `advancement` | `advancement`, `criterion`, `advancementOp` | 발전 과제를 지급하거나 회수합니다. |
 | `ftb_task` | `quest`, `task` | FTB 퀘스트 태스크를 완료 처리합니다. |
 | `ftb_complete` | `quest` | FTB 퀘스트를 완료 처리합니다. |
+| `quest_start`, `quest_turn_in` | `quest` | DRM 퀘스트를 시작하거나 제출합니다. |
+| `quest_signal` | `quest`, `signal`, `amount` | 대화 신호 목표를 진행합니다. |
+| `quest_fail`, `quest_abandon`, `quest_pin` | `quest` | 실패, 포기 또는 저널 추적을 처리합니다. |
+| `gecko_animation` | 애니메이션 설정 | 대상 NPC의 GeckoLib 애니메이션을 재생합니다. |
 
 `goto`, `go_shop`, `go_teleporter`, `close`는 화면 이동 액션입니다. 선택지의 액션 배열에서 이 타입을 만나면 다음 화면이 결정됩니다. 그 외 타입은 서버에서 결과를 처리하는 액션입니다.
 

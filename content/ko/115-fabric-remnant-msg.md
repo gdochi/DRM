@@ -7,7 +7,7 @@ product: core-fabric
 category: 레머넌트 Msg
 section: remnant-msg
 status: 안정
-version: 0.1.7
+version: 0.1.8
 audience: 제작자 / 운영자
 tags:
   - remnant
@@ -79,7 +79,7 @@ Remnant Msg는 일반 NPC 대화와 별도로 월드 안 메시지, 안내문, �
 - 목록은 페이지 이동과 선택 이동을 지원하며 `Edit`, `Teleport`, `Delete`, `Refresh`로 배치된 마커를 관리합니다.
 - 일반 사용자의 세터 소비, JSON/트리거 사용 가능 여부와 마커 수명은 정책 파일이 결정합니다.
 
-0.1.7의 메시지/정책 선택 창은 서버 JSON 목록을 검색할 수 있습니다. 마커 외형은 `Default`, `Item`, `Block` 중에서 고르고, 아이템/블록은 이름·네임스페이스·ID로 검색합니다. `Scale`은 `0.05`부터 `16.0`까지이며, `Billboard`는 `fixed`, `vertical`, `horizontal`, `center`를 지원합니다. 아이템 외형은 `none`, 1·3인칭 손, `head`, `gui`, `ground`, `fixed` 변환을 선택할 수 있습니다. 이 값은 서버에서 다시 검증되어 마커 SavedData와 표시 엔티티에 저장됩니다.
+0.1.8의 메시지/정책 선택 창은 서버 JSON 목록을 검색할 수 있습니다. 마커 외형은 `Default`, `Item`, `Block` 중에서 고르고, 아이템/블록은 이름·네임스페이스·ID로 검색합니다. `Scale`은 `0.05`부터 `16.0`까지이며, `Billboard`는 `fixed`, `vertical`, `horizontal`, `center`를 지원합니다. 아이템 외형은 `none`, 1·3인칭 손, `head`, `gui`, `ground`, `fixed` 변환을 선택할 수 있습니다. 이 값은 서버에서 다시 검증되어 마커 SavedData와 표시 엔티티에 저장됩니다.
 
 마커를 사용하면 정책에 따라 내장 메시지 작성 화면 또는 JSON 메시지 선택 화면이 열립니다. 런타임은 상호작용 조건과 보기 조건을 검사하고, 메시지를 표시한 뒤 `messageTrigger` 기준으로 액션을 실행합니다.
 

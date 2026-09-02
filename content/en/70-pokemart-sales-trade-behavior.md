@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: 0.1.0
+version: 0.1.4
 audience: Creators building sales shops and trade centers
 tags:
   - sales
@@ -80,6 +80,8 @@ If delivery fails, the server tries to restore the original. If immediate restor
 Trade stock uses `NPC UUID + Trade ID` and the same Initial/Maximum/Restock rules. Trade IDs must also be unique.
 
 ## Test cases
+
+Version 0.1.4 fetches Sales products, Trade offers, and matching owned Pokémon by search and page. Large catalogs and PC storage no longer have to be sent as one list.
 
 - Two players clicking the last finite-stock row should produce one success.
 - Test purchase and trade recovery with limited party or PC capacity.

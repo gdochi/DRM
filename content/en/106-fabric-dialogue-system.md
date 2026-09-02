@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: dialogue-editor
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: Dialogue creators
 tags:
   - dialogue
@@ -83,7 +83,7 @@ When dialogue is applied to an NPC, PersistentData stores keys in this family.
 
 Runtime loads the server JSON reference first when present. If that fails, it falls back to the embedded NPC JSON.
 
-## 0.1.7 Authoring Workflow
+## 0.1.8 Authoring Workflow
 
 - `Shift+Click` or drag across node rows to select multiple nodes.
 - Use `Copy` / `Paste` or `Ctrl+C` / `Ctrl+V` to copy nodes within a set or into a selected `Dialogue Sets` target.

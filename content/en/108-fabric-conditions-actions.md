@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: dialogue-editor
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: Script / data creators
 tags:
   - condition
@@ -37,12 +37,16 @@ Modes are `and` and `or`. Blank or unknown modes are treated as `and`.
 | `advancement` | `advancement`, `key`, `op` | Checks advancement completion. |
 | `ftb` | `quest`, `key`, `value`, `op` | Checks FTB quest state. |
 | `ftb_task` | `quest`, `task`, `op` | Checks FTB task state. |
+| `quest_state` | `quest`, `state`, `op` | Compares the current DRM quest state. |
+| `quest_can_start` | `quest`, `op` | Checks whether a DRM quest can start now. |
+| `quest_can_turn_in` | `quest`, `op` | Checks whether a DRM quest can be turned in now. |
+| `quest_objective` | `quest`, `objective`, `value`, `op` | Compares objective progress. |
 
 Numeric comparisons support `>`, `>=`, `<`, `<=`, `==`, and `!=`. Tags and advancements usually use `has` or `not`.
 
 ## Action Types
 
-The 0.1.7 shared Condition Editor supports drag-and-drop reordering with edge auto-scroll and an insertion guide. `item`, `faction_score`, `advancement`, `ftb`, and `ftb_task` ID fields provide searchable `Find` flows. FTB discovery and evaluation require FTB Quests and a synchronized client quest file.
+The 0.1.8 shared Condition Editor supports drag-and-drop reordering with edge auto-scroll and an insertion guide. `item`, `faction_score`, `advancement`, `ftb`, `ftb_task`, and DRM quest ID fields provide searchable `Find` flows. FTB discovery and evaluation require FTB Quests and a synchronized client quest file.
 
 | type | Main Fields | Behavior |
 | --- | --- | --- |
@@ -57,6 +61,10 @@ The 0.1.7 shared Condition Editor supports drag-and-drop reordering with edge au
 | `advancement` | `advancement`, `criterion`, `advancementOp` | Grant or revoke an advancement. |
 | `ftb_task` | `quest`, `task` | Complete an FTB task. |
 | `ftb_complete` | `quest` | Complete an FTB quest. |
+| `quest_start`, `quest_turn_in` | `quest` | Start or turn in a DRM quest. |
+| `quest_signal` | `quest`, `signal`, `amount` | Progress a dialogue-signal objective. |
+| `quest_fail`, `quest_abandon`, `quest_pin` | `quest` | Fail, abandon, or track a DRM quest. |
+| `gecko_animation` | Animation settings | Play a GeckoLib animation on the target NPC. |
 
 `goto`, `go_shop`, `go_teleporter`, and `close` are navigation actions. Other actions are server side effects.
 

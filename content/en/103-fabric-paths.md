@@ -7,7 +7,7 @@ product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: Creators / Operators
 tags:
   - paths
@@ -34,6 +34,10 @@ If the legacy `<game-or-server-root>/dochi_rpg_maker` folder exists and the new 
 | GUI layouts | `config/dochi_rpg_maker/gui/` | Screen GUI JSON for dialogue, shops, Teleporter, Remnant Msg, and related layouts. |
 | NPC shops | `config/dochi_rpg_maker/npc_shops/` | File-based shop JSON. |
 | Teleporter Sets | `config/dochi_rpg_maker/teleporters/` | Destination sets, categories, conditions, and transition settings. |
+| Quest packs | `config/dochi_rpg_maker/quests/<pack>/` | Pack settings and individual quests. |
+| Faction presentation | `config/dochi_rpg_maker/factions/` | CustomNPCs faction presentation and presets. |
+| Popups | `config/dochi_rpg_maker/popups/` | Popup definitions and display policies. |
+| Creator textures | `config/dochi_rpg_maker/assets/textures/` | PNG and matching `.png.mcmeta` files for GUI and NPC use. |
 | NPC Spawner templates | `config/dochi_rpg_maker/npc_spawner/entity_clones/<classification>/` | Reusable CustomNPC source templates. |
 | NPC Spawner snapshots | `config/dochi_rpg_maker/npc_spawner/spawner_snapshots/` | Atomic Filled Soul Stone snapshots owned by spawner sources. |
 | Currency definitions | `config/dochi_rpg_maker/currency/definitions/` | Currency ID, name, icon, pickup conversion, and death rules. |
@@ -53,6 +57,11 @@ Client and server exchange JSON by `kind` and `path`.
 | `gui` | `gui` | Supports recursive search up to depth 3. |
 | `npc_shop` | `npc_shops` | File-based shop JSON. |
 | `teleporter_set` | `teleporters` | Teleporter Set JSON. Supports recursive search up to depth 3. |
+| `quest_pack` | `quests` | Reads and writes a pack folder with its quest files. |
+| `faction_settings` | `factions/settings.json` | Active faction presentation settings. |
+| `faction_preset` | `factions/presets` | Reusable faction presentation presets. |
+| `popup_definition` | `popups/definitions` | Popup content and presentation. |
+| `popup_policy` | `popups/policies` | Popup permission and display limits. |
 | `currency` | `currency/definitions` | Currency definition file. |
 | `currency_index` | All currency definitions | Read-only index for lists and previews. |
 | `currency_hud_layout` | `hud/sets` | HUD set storage. Legacy `currency_hud` maps here. |
@@ -77,7 +86,8 @@ NPC Spawner block settings and its weighted source pool are stored with the bloc
 
 | Data | Startup behavior |
 | --- | --- |
-| Bundled dialogue, GUI, shop, and Teleporter defaults | Refreshed from the 0.1.7 JAR. |
+| Bundled dialogue, GUI, shop, and Teleporter defaults | Refreshed from the 0.1.8 JAR. |
+| Sample quest pack, popup definitions, and policies | Installed from the 0.1.8 samples when missing. |
 | `default_teleporter_set.json` | Installed as a protected Teleporter template. |
 | Remnant Msg sample message | Refreshed from the JAR. |
 | HUD definitions | Installed only when missing and default to `enabled: false`. |

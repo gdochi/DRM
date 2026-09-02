@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: npc-shop
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: Shop creators
 tags:
   - shop
@@ -77,7 +77,7 @@ Buying runs server-side:
 
 Each buy product can use `Inherit Shop`, `Override: Item`, or `Override: Currency`. Item overrides accept exact SNBT in `currencyItemNbt`; use the inventory picker to preserve the exact value when payment items share an item ID but differ in stored data. Invalid NBT or an unknown DRM currency fails closed instead of falling back to another payment. Older fields remain available through the legacy item/currency compatibility modes.
 
-In 0.1.7, the Item ID row opens a searchable item picker. Manual entry and inventory selection remain available, while the picker searches localized item names, namespaces, and full registry IDs with page-scoped icon previews.
+In 0.1.8, the Item ID row opens a searchable item picker. Manual entry and inventory selection remain available, while the picker searches localized item names, namespaces, and full registry IDs with page-scoped icon previews.
 
 ## Sell Runtime
 

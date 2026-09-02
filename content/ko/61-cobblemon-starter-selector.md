@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 서비스 NPC
 section: services
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: 스타터 선택 NPC를 만드는 제작자
 tags:
   - starter-selector
@@ -59,6 +59,16 @@ GUI Maker에서 포켓몬이나 조건을 추가할 수는 없습니다. 레이�
 `Open Selector` 선택지에도 DRM 조건을 둘 수 있습니다. 예를 들어 특정 퀘스트를 시작한 플레이어만 선택 화면을 열게 만들 수 있습니다.
 
 일반 분기 대화나 복잡한 액션은 DRM Dialogue Editor에서 만들고, Starter Selector는 스타터 선택 역할에 집중하세요.
+
+## DRM 대화에서 선택 화면 열기
+
+0.1.4에서는 DRM Dialogue Editor의 `go_starter_selector` 액션으로 일반 분기 대화에서 스타터 선택 화면을 열 수 있습니다.
+
+- 특정 Starter Selector JSON을 지정하면 그 문서를 엽니다.
+- `bound`를 선택하면 현재 NPC에 Apply된 Starter Selector를 엽니다.
+- 액션이 실행되면 대화 화면을 닫고 선택 화면으로 전환합니다.
+
+여러 대화 분기 중 하나에서 스타터를 고르게 하거나, DRM Core 대화가 일반 클릭을 소유하는 통합 NPC에 권장합니다. 특정 JSON을 지정한 경우에도 플레이어가 확정할 때 서버가 같은 문서와 조건을 다시 확인합니다.
 
 ## 성공 액션
 

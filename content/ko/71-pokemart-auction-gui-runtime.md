@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: 경매장과 사용자 PokéMart 화면을 운영하는 제작자
 tags:
   - auction
@@ -121,7 +121,7 @@ PokéMart GUI 타입의 논리 Stage는 800×450입니다. GUI Maker 팔레트�
 
 Header, Toolbar, Tabs, Search, Catalog, Preview, Details, Action은 Singleton 구성 요소입니다. 핵심 구성 요소를 삭제하면 해당 런타임 정보나 버튼을 배치할 곳이 없어 기능을 사용할 수 없게 됩니다.
 
-GUI Maker의 Canvas는 제작자 미리보기이고 실제 상품·잔액·매물 데이터는 플레이어가 NPC를 열었을 때 서버 Snapshot으로 채워집니다. 에디터에서 보이는 샘플 문자열과 포켓몬 모델은 배치 확인용입니다.
+GUI Maker의 Canvas는 제작자 미리보기이고 실제 상품·잔액·매물 데이터는 플레이어가 NPC를 열었을 때 서버 데이터로 채워집니다. 0.1.4에서는 활성 매물, 등록 가능한 포켓몬, 판매 목록과 정산 항목을 검색·페이지 단위로 받아 큰 경매장도 필요한 내용만 갱신합니다. 에디터에서 보이는 샘플 문자열과 포켓몬 모델은 배치 확인용입니다.
 
 목록 행, 버튼과 입력 필드는 Runtime Screen이 GUI 구성 요소의 박스 안에 역할별로 생성합니다. Action Area가 너무 작거나 화면 밖에 있으면 서버 기능이 살아 있어도 플레이어가 버튼을 누를 수 없습니다.
 
@@ -133,7 +133,9 @@ GUI Maker의 Canvas는 제작자 미리보기이고 실제 상품·잔액·매�
 | Trade | 포켓몬 교환 |
 | Auction | 경매, 옥션 등록, 정산/수령함 |
 
-GUI JSON이 없거나 `guiType`이 `cobble_npc:pokemart`가 아니거나 요소 구조가 잘못되면 서버는 해당 역할의 애드온 기본 레이아웃으로 폴백합니다. 경로가 정상인데 일부 영역만 사라진 경우에는 JSON 전체 실패보다 해당 Component 누락이나 크기 0에 가까운 배치를 먼저 확인하세요.
+0.1.4의 기본 PokéMart와 Starter Selector GUI는 DRM Core의 공용 스프라이트 시트를 사용합니다. 수정하지 않은 구형 기본 GUI는 설치 시 새 스타일로 교체되고 원본은 `cobblemon/_migration_backups/`에 보관됩니다. 사용자가 고친 GUI는 자동으로 덮어쓰지 않습니다.
+
+GUI JSON이 없거나 `guiType`이 `cobble_npc:pokemart`가 아니거나 요소 구조가 잘못되면 서버는 해당 역할의 애드온 기본 레이아웃을 사용합니다. 경로가 정상인데 일부 영역만 사라진 경우에는 JSON 전체 실패보다 해당 Component 누락이나 크기 0에 가까운 배치를 먼저 확인하세요.
 
 ## 경매 운영 테스트
 

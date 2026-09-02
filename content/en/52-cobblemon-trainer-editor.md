@@ -2,12 +2,12 @@
 title: Cobblemon Editor Functional Guide
 slug: cobblemon-trainer-editor
 order: 520
-description: Understand the Cobblemon Editor workspace, party and round editing, AI Skill, saving, and NPC application behavior.
+description: Understand 0.1.4 party and round editing, level rules, tunable AI, saving, and NPC application behavior.
 product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.0
+version: 0.1.4
 audience: Cobblemon battle NPC creators
 tags:
   - trainer
@@ -26,6 +26,8 @@ tags:
 
 Changing the battle type immediately changes the folder used by `Load` and `Save As`. Choose the type first instead of copying a trainer document into the Pokemon Itself folder.
 
+The current Trainer and Pokemon Itself document schema is `20`. Supported older documents are normalized when loaded and saved.
+
 ## Categories and runtime effects
 
 | Category | Saved values | Runtime effect |
@@ -36,13 +38,13 @@ Changing the battle type immediately changes the folder used by `Load` and `Save
 | `Detection FX` | Marker text and appearance, sound, reaction delay | Runs once when Vision or Radius first acquires a player. |
 | `Rounds` | Order, format, AI, party, and start delay | Selects the opponent setup for the first challenge and rematches. |
 | `Conditions` | Per-round challenge requirements | Evaluated before automatic acquisition and again before actual battle startup. |
-| `Rewards` | Per-round victory rewards | Runs server-side only after a win; not on loss or flee. |
+| `Rewards` | Per-round After Actions | Runs on the configured `win`, `loss`, `flee`, or `battle_end` result. |
 
 Pokemon Itself disables the trainer-only categories and edits one Pokémon plus its NPC appearance.
 
 ## Pokémon slot behavior
 
-A trainer round supports up to six slots. The separate Pokémon data editor provides search and filters for supported values.
+A trainer round supports up to six slots. Species, form, ability, move, and other large pickers provide search and paging. Held Item uses DRM's shared searchable item catalog.
 
 | Value | Processing |
 | --- | --- |
@@ -63,7 +65,7 @@ Generation and type filters only narrow picker results. They do not add restrict
 Add, remove, and drag rounds to change their order. Every round independently stores:
 
 - Singles, Doubles, or Triples format
-- AI Skill 0–5
+- Six 0–100 DRM AI tuning values or another selected AI engine
 - Up to six Pokémon
 - A non-negative `Battle start delay`
 - Up to 32 conditions and 32 rewards
@@ -72,20 +74,11 @@ Add, remove, and drag rounds to change their order. Every round independently st
 
 `Battle start delay` begins after the presentation. A 48-tick presentation plus a 20-tick delay makes the server attempt battle startup at about tick 68.
 
-## AI Skill behavior
+## DRM Strategy AI
 
-AI Skill configures Cobblemon's advanced and switch decision rates; it is not a damage multiplier.
+Version 0.1.4 exposes Decision Quality, Battle Knowledge, Aggression, Defense, Trickery, and Switching as separate 0–100 values. Beginner, Standard, Expert, and Boss presets provide starting points and remain fully editable. The AI assessment summarizes difficulty, information use, temperament, switching style, consistency, strengths, and warnings.
 
-| Skill | Advanced decisions | Switch decisions |
-| --- | ---: | ---: |
-| 0 | 0% | 0% |
-| 1 | 20% | 0% |
-| 2 | 40% | 0% |
-| 3 | 60% | 20% |
-| 4 | 80% | 60% |
-| 5 | 100% | 100% |
-
-Higher AI does not repair invalid moves or a party that cannot support the selected battle format. Prepare enough valid Pokémon for Doubles and Triples.
+Trainer Items also expose an item-use priority, healing HP threshold, boost-item turn limit, and separate Revive, status-cure, and PP-recovery toggles. These settings apply only to DRM Strategy, not RCT or Cobblemon Strong.
 
 ## Save, apply, and reapply
 
@@ -93,6 +86,6 @@ Higher AI does not repair invalid moves or a party that cannot support the selec
 2. Open the target CustomNPCs NPC with `Dochi RPG Maker Core`.
 3. Choose `Cobblemon Trainer` or `Cobblemon Pokemon Itself`, select the saved document, and press `Apply`.
 4. Put the core away, empty both hands, and test the runtime interaction.
-5. Apply the document again after later edits. A server JSON file and the copy stored in NPC PersistentData are not live-linked.
+5. Saving later edits to the same bound source path updates the next battle request. Apply again only when changing the path or role, or when using a snapshot-only clone.
 
 Direct `Apply to NPC` requires an editor opened for a target NPC. The server rechecks edit permission and distance before accepting the change.

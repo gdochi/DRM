@@ -2,12 +2,12 @@
 title: Quick Start
 slug: quick-start
 order: 20
-description: The shortest path into DRM Core 0.1.7 on Fabric 1.21.1.
+description: The shortest path into DRM Core 0.1.8 on Fabric 1.21.1.
 product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: First-time users
 tags:
   - quick-start
@@ -17,12 +17,12 @@ tags:
 ## First Launch
 
 1. Prepare Minecraft 1.21.1, Fabric Loader 0.18.0 or newer, Fabric API 0.116.11 or newer, and Java 21.
-2. Put the DRM Core 0.1.7 Fabric JAR in the client and server `mods` folders.
-3. Install CustomNPCs in the same environment when authoring dialogue, shops, Teleporter bindings, or NPC Spawner sources. It is not a loader-level requirement for standalone file, GUI, or HUD work.
+2. Put the DRM Core 0.1.8 Fabric JAR in the client and server `mods` folders.
+3. Install CustomNPCs 1.0.0 on the server and clients. It is required by DRM 0.1.8.
 4. Start the world or server once so `config/dochi_rpg_maker` is created.
 5. In Creative mode or with edit permission, get the `Dochi RPG Maker Core` item from the CustomNPCs tab or run `/give @s dochi_rpg_maker:dialogue_editor`.
 
-On first launch, the mod installs default dialogue sets, dialogue/shop/Teleporter/Remnant Msg GUI files, a protected Teleporter Set, a sample shop, HUD definitions, Remnant Msg sample/policy files, and settings under `config/dochi_rpg_maker`.
+On first launch, the mod installs starter dialogue, GUI, Teleporter, shop, quest, popup, HUD, Remnant Msg, and settings files under `config/dochi_rpg_maker`.
 
 ## Opening Editors
 
@@ -37,7 +37,7 @@ On first launch, the mod installs default dialogue sets, dialogue/shop/Teleporte
 
 The core item is also added to the CustomNPCs creative tab. Editing requires creative/edit permission.
 
-The 0.1.7 selector has search plus `Built-in` and `Add-on` categories. It includes the Teleporter editor; NPC Spawner is opened from its placed block instead. During the current session, the selector remembers the last editor, sub-screen, and JSON source so returning to an editor can resume the previous workflow.
+The 0.1.8 selector has search plus `Built-in` and `Add-on` categories. It includes Dialogue, NPC Shop, NPC Basic, Currency, GUI Maker, HUD Maker, Popup Maker, Faction, Quest, Teleporter, and Remnant Msg. NPC Spawner opens from its placed block. During the current session, the selector remembers the last editor, sub-screen, and JSON source.
 
 When a target NPC is open in NPC Apply, use the new `FUNCTION` search field to filter built-in and addon apply targets by their localized name, target ID, JSON kind, editor ID, or binding group.
 
@@ -50,6 +50,9 @@ Supported editors expose these shortcuts and a `?` help screen.
 | `Ctrl+S` | Save the current document. Protected defaults require `Save As`. |
 | `Ctrl+Z` | Undo the latest edit. |
 | `Ctrl+Y` or `Ctrl+Shift+Z` | Redo an undone edit. |
+| `U` | Open the player Quest Journal. |
+| `J` | Open Faction Overview. |
+| `F7` | Open DRM Admin for an authorized operator. |
 
 `default_set`, GUI files beginning with `default`, and default/sample shops are read-only protected content. Start from them with `Save As` and a new ID.
 
@@ -76,8 +79,10 @@ For shops, start from `NPC Shop` in the same selector. File-based shops are save
 | 5 | NPC Shop | Buy and sell shops. |
 | 6 | Teleporter | Destination sets, NPC binding, and player travel. |
 | 7 | NPC Spawner | Weighted sources, spawn rules, and block appearance. |
-| 8 | GUI Maker | Dialogue/shop/Teleporter/message screen layout. |
-| 9 | HUD Maker | Always-visible player HUDs. |
+| 8 | Quest Editor And Journal | Objectives, rewards, NPC links, and player progress. |
+| 9 | Factions And Popups | Relationship screens and reusable notices. |
+| 10 | GUI Maker | Dialogue/shop/quest/Teleporter/popup screen layout. |
+| 11 | HUD Maker | Always-visible player HUDs. |
 
 :::tip Operator Command
 If you edit server JSON by hand, run `/drm reload` or review `settings/reload_policy.json`.

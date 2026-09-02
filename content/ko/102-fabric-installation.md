@@ -2,12 +2,12 @@
 title: 설치 준비
 slug: installation
 order: 30
-description: Fabric 1.21.1용 DRM Core 0.1.7의 설치 조건과 서버/클라이언트 역할입니다.
+description: Fabric 1.21.1용 DRM Core 0.1.8의 설치 조건과 서버/클라이언트 역할입니다.
 product: core-fabric
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.7
+version: 0.1.8
 audience: 서버 운영자
 tags:
   - install
@@ -20,30 +20,29 @@ Fabric 빌드는 Minecraft `1.21.1` 전용입니다. Forge 1.20.1용 JAR과 파�
 
 | 항목 | 요구 조건 | 현재 프로젝트 기준 |
 | --- | --- | --- |
-| DRM Core | `0.1.7` Fabric 빌드 | `dochi_rpg_maker-0.1.7-fabric-1.21.1.jar` |
+| DRM Core | `0.1.8` Fabric 빌드 | `dochi_rpg_maker-0.1.8-fabric-1.21.1.jar` |
 | Minecraft | 정확히 `1.21.1` | 다른 1.21.x 버전과 혼용하지 않습니다. |
 | Fabric Loader | `0.18.0` 이상 | 빌드 기준 `0.19.3` |
 | Fabric API | `0.116.11+1.21.1` 이상 | 빌드 기준 `0.116.13+1.21.1` |
 | Java | `21` 이상 | 서버와 클라이언트 모두 동일 |
 
-## 선택 연동 모드
+## 필수 및 선택 연동 모드
 
-`fabric.mod.json`에서 CustomNPCs, Mod Menu, FTB Quests, CobbleDollars는 선택 연동으로 선언됩니다.
+`fabric.mod.json`에서 CustomNPCs 1.0.0은 필수이며, 나머지는 필요한 기능에 따라 선택합니다.
 
 | 모드 | 언제 필요한가 |
 | --- | --- |
-| CustomNPCs | CustomNPCs 대화·상점·NPC 기본 데이터·텔레포터 적용, Filled Soul Stone 소스, NPC Spawner의 실제 소환에 필요합니다. |
+| CustomNPCs 1.0.0 | 필수입니다. 서버와 모든 클라이언트에 설치합니다. |
+| GeckoLib 4.8.4 이상 | GeckoLib NPC 모델과 애니메이션을 사용할 때 설치합니다. |
 | Mod Menu | Minecraft 모드 목록에서 DRM의 `Mods Config` 화면을 열고 싶을 때 사용합니다. |
 | FTB Quests | `ftb`, `ftb_task` 조건과 퀘스트/태스크 완료 액션을 사용할 때 필요합니다. |
 | CobbleDollars | 설치된 애드온이나 서버 구성이 이 연동을 사용할 때만 필요합니다. DRM Core의 필수 의존성은 아닙니다. |
 
-CustomNPCs가 없어도 DRM은 부팅할 수 있고 파일, GUI, HUD 제작 기능과 NPC Spawner 블록/에디터를 사용할 수 있습니다. 다만 CustomNPC 소스 생성과 실제 소환을 포함한 NPC 런타임에는 CustomNPCs가 필요합니다.
-
 ## 설치 절차
 
-1. 클라이언트와 서버의 `mods` 폴더에 같은 `0.1.7` Fabric JAR을 넣습니다.
+1. 클라이언트와 서버의 `mods` 폴더에 같은 `0.1.8` Fabric JAR을 넣습니다.
 2. 같은 환경에 Fabric API를 설치합니다.
-3. NPC 기능을 쓸 경우 호환되는 Fabric 1.21.1 CustomNPCs를 서버와 클라이언트에 함께 설치합니다.
+3. Fabric 1.21.1용 CustomNPCs 1.0.0을 서버와 클라이언트에 함께 설치합니다.
 4. 월드나 서버를 한 번 실행해 `config/dochi_rpg_maker`를 생성합니다.
 5. 크리에이티브 또는 권한 레벨 2 이상으로 `dochi_rpg_maker:dialogue_editor`를 준비합니다.
 

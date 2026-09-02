@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
-version: 0.1.0
+version: 0.1.4
 audience: Battle presentation creators
 tags:
   - presentation
@@ -79,6 +79,8 @@ Name is display metadata inside the JSON. Trainers reference the `Save As` file 
 7. Add motion and easing.
 8. Configure Intro and Battle audio and play the full sequence.
 9. Save under `custom/`, then select that path in Cobblemon Editor.
-10. Save the battle document and reapply it to the NPC.
+10. Save the battle document; an NPC tracking that source path normally needs no reapply.
 
 The editor preview and runtime share the renderer, but real skins, NPC models, aspect ratio, and sound resources must still be verified in an actual battle.
+
+In 0.1.4, the image browser pages its results and loads thumbnails as needed, reducing the initial cost in large resource packs.

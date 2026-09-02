@@ -7,7 +7,7 @@ product: core-fabric
 category: 레퍼런스 / 운영
 section: operations
 status: 안정
-version: 0.1.7
+version: 0.1.8
 audience: 고급 사용자
 tags:
   - json
@@ -112,7 +112,7 @@ GUI 요소는 `id`, `type`, `x`, `y`, `w`, `h`, `z`를 기본으로 갖습니다
 
 `tradeMode`는 `buy_only`, `sell_only`, `buy_sell`을 사용합니다. `items[].stock`은 `-1`이면 무제한입니다.
 
-0.1.7 구매 상품의 결제·재입고 필드는 다음 형태입니다.
+0.1.8 구매 상품의 결제·재입고 필드는 다음 형태입니다.
 
 ```json
 {
@@ -172,7 +172,7 @@ GUI 요소는 `id`, `type`, `x`, `y`, `w`, `h`, `z`를 기본으로 갖습니다
 }
 ```
 
-Teleporter Set은 `teleporters` 아래에 저장되는 파일 기반 `teleporter_set` 문서입니다. 한 세트는 카테고리 최대 256개, 목적지 최대 1,024개를 지원합니다. 목적지는 플레이어의 현재 차원 안에서 좌표와 회전값을 사용하며, 0.1.7 스키마에는 차원 필드가 없습니다.
+Teleporter Set은 `teleporters` 아래에 저장되는 파일 기반 `teleporter_set` 문서입니다. 한 세트는 카테고리 최대 256개, 목적지 최대 1,024개를 지원합니다. 목적지는 플레이어의 현재 차원 안에서 좌표와 회전값을 사용하며, 0.1.8 스키마에는 차원 필드가 없습니다.
 
 ## NPC Spawner 템플릿 요약
 

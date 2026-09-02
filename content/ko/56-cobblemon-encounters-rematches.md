@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: 트레이너 조우와 반복 전투를 설계하는 제작자
 tags:
   - encounter
@@ -71,12 +71,16 @@ tags:
 
 | 설정 | 선택 | 의미 |
 | --- | --- | --- |
-| Level Policy | `Keep`, `Fixed` | 실제 레벨 유지 또는 양쪽 임시 포켓몬을 고정 레벨로 맞춤 |
+| Level Policy | `Keep`, `Fixed`, `Match player party average` | 실제 레벨 유지, 고정 레벨 또는 플레이어 파티 평균에 맞춤 |
 | Fixed Level | 1–100 | `Fixed`에서 사용할 레벨 |
+| Fixed Scope | Trainer only / Both sides | 상대 파티만 맞추거나 플레이어와 상대의 배틀용 파티를 모두 맞춤 |
+| Average Offset | -99–99 | 플레이어 파티 평균보다 상대 파티를 얼마나 높거나 낮출지 설정 |
 | Natural Drops | On/Off | 상대 포켓몬의 자연 드롭 허용 여부 |
 | Capture Policy | `Allow`, `Deny` | 전투 중 포획 허용 여부 |
 
-고정 레벨은 실제 플레이어 포켓몬을 영구 수정하지 않습니다. 배틀용 임시 복사본만 조정하고 전투가 끝나면 원래 파티 상태를 유지합니다.
+`Match player party average`는 플레이어의 현재 파티 평균 레벨에 Offset을 더한 값을 상대 파티의 목표 평균으로 사용합니다. 상대 파티 안에서 원래 설정한 포켓몬 사이의 레벨 차이는 가능한 한 유지합니다.
+
+고정 레벨과 평균 맞춤은 실제 플레이어 포켓몬을 영구 수정하지 않습니다. 배틀용 복사본만 조정하고 전투가 끝나면 원래 파티 상태를 유지합니다. 구형 Fixed 설정은 기존처럼 양쪽 배틀 파티에 적용되도록 읽습니다.
 
 ## Encounter Policy
 
@@ -117,7 +121,7 @@ tags:
 
 ## 기존 Rematch와 새 Encounter Policy
 
-0.1.3은 구형 Rematch/쿨다운 데이터를 읽으면서 더 명확한 Encounter Policy로 정규화합니다. 새 문서는 `Always`, `Once`, `Cooldown`, 범위, 완료 시점, 전투 후 NPC 상태를 사용하세요. 구형 파일을 로드하고 저장하면 최신 정책 필드가 만들어집니다.
+현재 버전은 구형 Rematch/쿨다운 데이터를 읽으면서 더 명확한 Encounter Policy로 정규화합니다. 새 문서는 `Always`, `Once`, `Cooldown`, 범위, 완료 시점, 전투 후 NPC 상태를 사용하세요. 구형 파일을 로드하고 저장하면 최신 정책 필드가 만들어집니다.
 
 ## 진행도와 운영
 

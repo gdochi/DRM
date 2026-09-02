@@ -7,7 +7,7 @@ product: core-fabric
 category: GUI Maker
 section: gui-maker
 status: 안정
-version: 0.1.7
+version: 0.1.8
 audience: GUI 제작자
 tags:
   - gui
@@ -20,7 +20,7 @@ GUI 시스템은 화면의 모양을 정의합니다. 대화 내용, 상점 상�
 
 GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker/gui` 아래에 들어갑니다. 대화, 상점, 텔레포터, 레머넌트 메시지는 폴더를 따로 나누지 않고 `guiType`으로 구분합니다.
 
-0.1.7의 GUI Maker는 `dialogue`, `npc_shop`, `teleporter`, `remnant_msg`, `currency_hud`뿐 아니라 플레이어 상태/커스텀 HUD 계열 레이아웃 프로필도 같은 캔버스 규칙으로 다룹니다. 에디터 미리보기, 저장된 GUI 레이아웃, 플레이어가 보는 런타임 화면은 서로 다른 단계이므로 미리보기 샘플을 실제 런타임 데이터로 보지 마세요.
+0.1.8의 GUI Maker는 `dialogue`, `npc_shop`, `teleporter`, `remnant_msg`, `quest_journal`, `popup`, `currency_hud`와 플레이어 상태/커스텀 HUD 계열을 같은 캔버스 규칙으로 다룹니다. 에디터 미리보기, 저장된 GUI 레이아웃, 플레이어가 보는 런타임 화면은 서로 다른 단계이므로 미리보기 샘플을 실제 런타임 데이터로 보지 마세요.
 
 ## 기본 구조
 
@@ -35,7 +35,7 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 
 `elements`는 실제 화면 요소입니다. 각 요소는 `id`, `type`, 위치, 크기, 색상, 텍스트, 이미지, 상점 역할 같은 값을 가집니다.
 
-`stage`의 기준 크기와 실제 viewport를 함께 보면서 안전 여백을 남기고, 패널의 `fillOpacity`와 상속된 기본 스타일을 확인하세요. 0.1.7 상점 프리셋은 상품/거래 컴포넌트를 담는 루트 패널 구조도 함께 사용합니다.
+`stage`의 기준 크기와 실제 viewport를 함께 보면서 안전 여백을 남기고, 패널의 `fillOpacity`와 상속된 기본 스타일을 확인하세요. 0.1.8 상점 프리셋은 상품/거래 컴포넌트를 담는 루트 패널 구조도 함께 사용합니다.
 
 ## GUI 타입
 
@@ -44,6 +44,8 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 | `dialogue` | 대화 런타임 | `default_dialogue_gui.json` | `config/dochi_rpg_maker/gui` |
 | `npc_shop` | 상점 런타임 | `default_shop_gui.json` | `config/dochi_rpg_maker/gui` |
 | `teleporter` | 텔레포터 런타임 | `default_teleporter_gui.json` | `config/dochi_rpg_maker/gui` |
+| `quest_journal` | 플레이어 퀘스트 저널 | `default_quest_journal_gui.json` | `config/dochi_rpg_maker/gui` |
+| `popup` | 화면 팝업 | `default_popup_gui.json` | `config/dochi_rpg_maker/gui` |
 | `remnant_msg` | 레머넌트 메시지 | `default_remnant_msg_gui.json` | `config/dochi_rpg_maker/gui` |
 | `currency_hud` | 화폐 HUD 레이아웃 | `currency_hud_layout.json` | `config/dochi_rpg_maker/hud/sets` |
 
@@ -71,6 +73,8 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 | `teleporter_destination_list` | `teleporter` | 사용할 수 있는 목적지 목록입니다. |
 | `teleporter_destination_name`, `teleporter_destination_description`, `teleporter_destination_icon` | `teleporter` | 선택 목적지의 상세 정보입니다. |
 | `teleporter_action_button`, `teleporter_close_button` | `teleporter` | 이동 실행과 닫기 버튼입니다. |
+| `quest_tabs`, 퀘스트 목록·상세·목표·보상 컴포넌트 | `quest_journal` | 저널 탐색과 퀘스트 정보를 표시합니다. |
+| `popup_title`, `popup_subtitle`, `popup_text` | `popup` | 팝업의 제목, 부제와 본문을 표시합니다. |
 | `currency_list` | `currency_hud` | 여러 화폐를 목록으로 표시합니다. |
 | `currency_icon` | `currency_hud` | 화폐 아이콘입니다. |
 | `currency_amount` | `currency_hud` | 화폐 수량입니다. |

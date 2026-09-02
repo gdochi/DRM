@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: 트레이너와 포켓몬 NPC를 만드는 제작자
 tags:
   - trainer
@@ -24,7 +24,7 @@ tags:
 
 두 유형 모두 최대 16라운드, 라운드별 조건, 전투 설정, 전투 후 액션을 지원합니다. Trainer 파일을 Pokemon Itself 폴더로 옮기거나 반대로 사용하지 마세요.
 
-현재 Trainer/Pokemon Itself JSON 스키마는 `19`입니다. 지원되는 구형 문서는 로드할 때 현재 필드로 보정되고, 다시 저장하면 최신 구조로 정규화됩니다.
+현재 Trainer/Pokemon Itself JSON 스키마는 `20`입니다. 지원되는 구형 문서는 로드할 때 현재 필드로 보정되고, 다시 저장하면 최신 구조로 정규화됩니다.
 
 ## 상단 작업 버튼
 
@@ -53,7 +53,7 @@ tags:
 | `Conditions` | 현재 라운드 진입 조건 |
 | `Rewards` | 이름은 유지되지만 실제 의미는 전투 결과별 `After Actions` |
 
-창 크기와 GUI Scale 1–4에서 사용할 수 있도록 목록과 검색 화면이 스크롤됩니다. 화면이 잘리면 Minecraft GUI Scale을 낮추고 다시 여세요.
+창 크기와 GUI Scale 1–4에서 사용할 수 있도록 목록과 검색 화면이 스크롤됩니다. 종·폼·특성·기술 선택과 일반 인벤토리는 검색과 페이지 이동을 지원하며, 지닌 도구는 DRM의 공용 아이템 검색창에서 고릅니다. 화면이 잘리면 Minecraft GUI Scale을 낮추고 다시 여세요.
 
 ## General
 

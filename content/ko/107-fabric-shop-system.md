@@ -7,7 +7,7 @@ product: core-fabric
 category: NPC Shop
 section: npc-shop
 status: 안정
-version: 0.1.7
+version: 0.1.8
 audience: 상점 제작자
 tags:
   - shop
@@ -87,7 +87,7 @@ DRM 화폐를 사용할 때는 먼저 Currency Editor에서 화폐 정의를 만
 
 구매 상품마다 `Inherit Shop`, `Override: Item`, `Override: Currency`를 선택할 수 있습니다. `Override: Item`에서는 `currencyItemNbt`로 결제 아이템의 NBT까지 정확히 맞출 수 있습니다. 같은 아이템 ID라도 세부 데이터가 다른 결제 아이템은 인벤토리 선택기로 넣어 정확한 값을 저장하세요. 잘못된 NBT나 존재하지 않는 DRM 화폐 ID는 결제를 다른 방식으로 우회하지 않고 실패 처리됩니다. 이전 형식의 필드가 들어 있는 기존 상점도 레거시 모드로 계속 읽습니다.
 
-0.1.7의 Item ID 행에는 검색형 아이템 선택기가 연결됩니다. 직접 ID를 입력하거나 인벤토리 아이템을 고르는 기존 흐름과 함께, 지역화된 아이템 이름·네임스페이스·전체 ID로 검색하고 아이콘을 보며 선택할 수 있습니다.
+0.1.8의 Item ID 행에는 검색형 아이템 선택기가 연결됩니다. 직접 ID를 입력하거나 인벤토리 아이템을 고르는 기존 흐름과 함께, 지역화된 아이템 이름·네임스페이스·전체 ID로 검색하고 아이콘을 보며 선택할 수 있습니다.
 
 ## 거래 안정성
 

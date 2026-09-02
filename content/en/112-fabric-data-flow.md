@@ -7,7 +7,7 @@ product: core-fabric
 category: Reference / Operations
 section: operations
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: Creators / Operators
 tags:
   - data-flow

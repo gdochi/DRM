@@ -2,12 +2,12 @@
 title: Installation and Your First NPC
 slug: cobblemon-editor-setup
 order: 510
-description: Install drm_cobblemon_editor, verify its folders, and apply your first trainer or single-Pokémon battle.
+description: Install Dochi Cobblemon Editor 0.1.4, verify its folders, and apply your first NPC role.
 product: drm-cobblemon-editor
 category: Setup
 section: setup
 status: Draft
-version: 0.1.0
+version: 0.1.4
 audience: Server operators and first-time creators
 tags:
   - setup
@@ -22,10 +22,10 @@ Install the following mods in the same Fabric 1.21.1 environment.
 | Mod | Role |
 | --- | --- |
 | Fabric API | Event and networking foundation |
-| DRM 0.1.3+ | Shared editor selector, server JSON storage, GUI Maker, and NPC apply workflow |
+| DRM Core 0.1.7+ | Shared editor selector, server JSON storage, GUI Maker, and NPC apply workflow |
 | Cobblemon 1.7.3 | Pokémon data, player parties, and the actual battle runtime |
 | CustomNPCs Fabric 1.0.0 | NPC targets for trainers, Pokémon, and shops |
-| `drm_cobblemon_editor` | Cobblemon-specific DRM editors and runtime integration |
+| `dochi_cobblemon_editor-0.1.4-fabric-1.21.1.jar` | Cobblemon-specific DRM editors and runtime integration |
 | CobbleDollars | Optional PokéMart currency provider |
 
 For multiplayer, use the same mod set on the server and every client. The addon includes client editors and renderers as well as server battle, reward, and shop logic.
@@ -41,11 +41,16 @@ config/dochi_rpg_maker/
 │  ├─ pokemon_itself/
 │  ├─ battle_presentations/
 │  ├─ pokemarts/
+│  ├─ nurse_joy/
+│  ├─ starter_selectors/
+│  ├─ entity_clones/
 │  └─ _migration_backups/
+├─ npc_spawner/
+│  └─ entity_clones/
 └─ gui/
 ```
 
-Trainer and PokéMart documents live under `cobblemon/`. The role-specific PokéMart screen layouts use DRM's shared `gui/` directory.
+Addon documents live under `cobblemon/`. PokéMart and Starter Selector screen layouts use DRM's shared `gui/` directory. Version 0.1.4 upgrades only untouched legacy default GUIs to the shared DRM sprite style, backs up the old defaults under `_migration_backups/`, and preserves customized files.
 
 ## Open the addon editors
 
@@ -76,7 +81,7 @@ Defaults and samples are templates. Use `Save As` to create a user path such as 
 10. Accept the prompt and verify that the player's real Cobblemon party enters battle.
 
 :::warning Saving and applying are separate
-`Save` and `Save As` write the server JSON document. The target NPC's PersistentData changes only when you choose `Apply`. Apply the document again after editing it if the NPC still uses an older setup.
+`Save` and `Save As` write the server JSON document. `Apply` binds its source path and a safety snapshot to the NPC. Saving the same source path is picked up on the next runtime request; Apply again when changing the path or role.
 :::
 
 ## Create the first Pokemon Itself NPC

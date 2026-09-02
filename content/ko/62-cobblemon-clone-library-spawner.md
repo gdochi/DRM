@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 클론과 스포너
 section: world-tools
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: 코블몬 NPC를 재사용하거나 웨이브로 소환하는 제작자
 tags:
   - clone-library
@@ -23,11 +23,13 @@ tags:
 | `DRM Core NPC Spawner` | 저장한 클론을 조건·가중치·웨이브에 따라 월드에 소환 |
 | Cobblemon Editor | 클론 안의 Trainer/Pokemon 원본 문서 제작 |
 
-0.1.3부터 새 배치는 DRM Core의 `dochi_rpg_maker:npc_spawner`를 사용합니다. 구형 애드온 블록 `cobble_npc:clone_spawner`는 기존 월드 호환을 위해 로드되지만 새 콘텐츠의 기준으로 사용하지 마세요.
+새 배치는 DRM Core의 `dochi_rpg_maker:npc_spawner`를 사용합니다. 구형 애드온 블록 `cobble_npc:clone_spawner`는 기존 월드 호환을 위해 로드되지만 새 콘텐츠의 기준으로 사용하지 마세요.
 
 ## Clone Library
 
-Clone Library는 Trainer와 Pokemon NPC를 분류해 저장하고 검색합니다. 적용 완료 NPC를 대상으로 열거나, 포켓몬/NPC 정보가 든 Soul Stone을 가져올 수 있습니다.
+Clone Library는 Trainer와 Pokemon NPC를 분류해 저장하고 검색합니다. 0.1.4에서는 검색과 페이지 이동을 서버에서 처리해 클론이 많아도 필요한 결과만 불러옵니다. 적용 완료 NPC를 대상으로 열거나, 포켓몬/NPC 정보가 든 Soul Stone을 가져올 수 있습니다.
+
+같은 Clone ID로 저장하면 덮어쓰기 확인창이 먼저 열립니다. 기존 클론을 교체하려는 경우에만 확인하세요.
 
 ### 저장 방식
 

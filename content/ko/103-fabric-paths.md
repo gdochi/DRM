@@ -7,7 +7,7 @@ product: core-fabric
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.7
+version: 0.1.8
 audience: 제작자 / 운영자
 tags:
   - paths
@@ -34,6 +34,10 @@ tags:
 | GUI 레이아웃 | `config/dochi_rpg_maker/gui/` | 대화, 상점, 텔레포터, Remnant Msg 같은 화면 GUI JSON입니다. 하위 폴더를 사용할 수 있습니다. |
 | NPC 상점 | `config/dochi_rpg_maker/npc_shops/` | 파일 기반 상점 JSON입니다. |
 | Teleporter Set | `config/dochi_rpg_maker/teleporters/` | 카테고리, 목적지, 조건, 전환 설정을 저장합니다. |
+| 퀘스트 팩 | `config/dochi_rpg_maker/quests/<pack>/` | 팩 설정과 개별 퀘스트를 저장합니다. |
+| 팩션 표시 | `config/dochi_rpg_maker/factions/` | CustomNPCs 팩션의 표시 설정과 프리셋입니다. |
+| 팝업 | `config/dochi_rpg_maker/popups/` | 팝업 정의와 표시 정책입니다. |
+| 제작자 텍스처 | `config/dochi_rpg_maker/assets/textures/` | GUI와 NPC에서 고를 PNG와 `.png.mcmeta`입니다. |
 | NPC Spawner 템플릿 | `config/dochi_rpg_maker/npc_spawner/entity_clones/<classification>/` | 재사용하는 CustomNPC 소스 템플릿입니다. |
 | NPC Spawner 스냅샷 | `config/dochi_rpg_maker/npc_spawner/spawner_snapshots/` | Spawner 소스가 소유하는 Filled Soul Stone 스냅샷입니다. |
 | 화폐 정의 | `config/dochi_rpg_maker/currency/definitions/` | 화폐 ID, 이름, 아이콘, 픽업 변환, 사망 규칙을 정의합니다. |
@@ -51,6 +55,9 @@ tags:
 | `gui` | JSON 파일 | `gui/default_shop_gui.json` | 대화, 상점, 메시지 화면의 배치와 컴포넌트만 저장합니다. 상품이나 대화 내용 자체는 저장하지 않습니다. |
 | `npc_shops` | JSON 파일 | `npc_shops/blacksmith.json` | NPC가 팔거나 매입하는 상품, 가격, 재고, 화폐 기준을 저장합니다. |
 | `teleporters` | JSON 파일 | `teleporters/town_network.json` | 텔레포터 카테고리와 목적지, 접근 조건, 전환 효과를 저장합니다. |
+| `quests` | 팩 폴더 | `quests/tutorial/quests/first_step.json` | `pack.json`과 개별 퀘스트 파일이 한 팩을 이룹니다. |
+| `factions` | 설정/프리셋 JSON | `factions/settings.json` | CustomNPCs 팩션의 이름, 아이콘, 관계 표시를 저장합니다. |
+| `popups` | 정의/정책 JSON | `popups/definitions/area_name.json` | 팝업 내용과 서버 표시 제한을 나눠 저장합니다. |
 | `npc_spawner/entity_clones` | JSON 파일 | `npc_spawner/entity_clones/npc/guard.json` | Spawner가 재사용하는 CustomNPC 템플릿입니다. |
 | `currency/definitions` | JSON 파일 | `currency/definitions/gold.json` | 화폐 ID와 표시 방식, 픽업 변환, 사망 규칙을 저장합니다. |
 | `hud/sets` | 세트 JSON | `hud/sets/default.json` | HUD Maker에서 편집한 화면 배치 세트입니다. |
@@ -71,6 +78,11 @@ tags:
 | `gui` | `gui` | 최대 3단계까지 하위 폴더 검색을 지원합니다. |
 | `npc_shop` | `npc_shops` | 파일 단위 상점입니다. |
 | `teleporter_set` | `teleporters` | Teleporter Set JSON입니다. 최대 3단계 하위 폴더 검색을 지원합니다. |
+| `quest_pack` | `quests` | 팩 폴더와 그 안의 퀘스트 파일을 함께 읽고 저장합니다. |
+| `faction_settings` | `factions/settings.json` | 팩션 표시 설정 한 개를 관리합니다. |
+| `faction_preset` | `factions/presets` | 재사용할 팩션 표시 프리셋입니다. |
+| `popup_definition` | `popups/definitions` | 팝업 내용과 연출 정의입니다. |
+| `popup_policy` | `popups/policies` | 팝업 권한과 표시 제한입니다. |
 | `currency` | `currency/definitions` | 화폐 정의 파일입니다. |
 | `currency_index` | 화폐 정의 전체 | 목록/미리보기용 읽기 전용 인덱스입니다. |
 | `currency_hud_layout` | `hud/sets` | HUD 세트 저장소입니다. 예전 `currency_hud` 이름도 호환됩니다. |
@@ -95,7 +107,8 @@ NPC Spawner 블록 설정과 가중치 소스 풀은 `ServerJsonStorage` 종류�
 
 | 데이터 | 시작 시 처리 |
 | --- | --- |
-| 기본 대화 세트, GUI, 상점, 텔레포터 | JAR에 포함된 0.1.7 기본본으로 갱신됩니다. |
+| 기본 대화 세트, GUI, 상점, 텔레포터 | JAR에 포함된 0.1.8 기본본으로 갱신됩니다. |
+| 샘플 퀘스트 팩, 팝업 정의와 정책 | 파일이 없을 때 0.1.8 샘플이 설치됩니다. |
 | `default_teleporter_set.json` | 보호된 Teleporter 템플릿으로 설치됩니다. |
 | Remnant Msg 샘플 메시지 | JAR 기본본으로 갱신됩니다. |
 | HUD 정의 | 파일이 없을 때만 설치되며 기본값은 `enabled: false`입니다. |

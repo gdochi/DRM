@@ -2,12 +2,12 @@
 title: 파일과 문제 해결
 slug: cobblemon-files-troubleshooting
 order: 590
-description: 0.1.3 저장 경로, 스키마, 원본 추적, 상호작용과 운영 점검입니다.
+description: 0.1.4 저장 경로, 스키마, 원본 추적, 상호작용과 운영 점검입니다.
 product: drm-cobblemon-editor
 category: 운영
 section: operations
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: 서버 운영자와 콘텐츠 배포자
 tags:
   - paths
@@ -58,8 +58,8 @@ config/dochi_rpg_maker/cobblemon/_migration_backups/canonical_defaults_<timestam
 
 | 문서 | 스키마 | 주요 제한 |
 | --- | ---: | --- |
-| Trainer / Pokemon Itself | 19 | 라운드 16, Trainer 파티 1–6, 조건/액션 각 32 |
-| Trainer Brain | 2 | 라운드별 AI 엔진·전략 |
+| Trainer / Pokemon Itself | 20 | 라운드 16, Trainer 파티 1–6, 조건/액션 각 32 |
+| Trainer Brain | 4 | 라운드별 AI 엔진·6개 능력치·전략·아이템 정책 |
 | Battle Presentation | 4 | Duration 1–600틱, 요소 64 |
 | PokéMart | 7 | Sales 256, Trade 128, 문서당 Role 하나 |
 | Nurse Joy | 2 | 치료기 거리 1–16, 고정 Heal/Close 대화 |

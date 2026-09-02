@@ -7,7 +7,7 @@ product: core-fabric
 category: HUD Maker
 section: hud-maker
 status: 안정
-version: 0.1.7
+version: 0.1.8
 audience: HUD 제작자
 tags:
   - hud
@@ -32,7 +32,7 @@ HUD 정의는 `HudDefinition` 구조를 사용합니다. 하나의 정의에는 
 
 HUD 정의의 서버 JSON kind는 `hud_definition`입니다. 활성 세트는 `hud/active_set.json`으로 따로 관리됩니다.
 
-0.1.7은 화폐 지갑, 체력, 허기, 방어도, 산소, 경험치 기본 정의를 제공합니다. 모두 `enabled: false`로 설치되므로 원하는 정의만 복제하거나 활성화해 사용합니다.
+0.1.8은 화폐 지갑, 체력, 허기, 방어도, 산소, 경험치 기본 정의를 제공합니다. 모두 `enabled: false`로 설치되므로 원하는 정의만 복제하거나 활성화해 사용합니다.
 
 ## 상단 버튼
 
@@ -85,7 +85,13 @@ HUD Maker 일부 버튼은 번역 키를 사용합니다. 화면에는 지역화
 | `IMAGE` | 텍스처, 아이콘, 배경 이미지를 표시합니다. |
 | `ICON_LIST` | 방어도처럼 정해진 개수의 아이콘을 값에 따라 채웁니다. |
 
-요소는 `transform`, `binding`, `renderer`, `visibility`, `animation`, `children` 구조를 가집니다. 0.1.7 기본 방어도 HUD는 `ICON_LIST`를 사용합니다.
+요소는 `transform`, `binding`, `renderer`, `visibility`, `animation`, `children` 구조를 가집니다. 0.1.8 기본 방어도 HUD는 `ICON_LIST`를 사용합니다.
+
+## CustomNPCs 값 표시
+
+0.1.8에서는 HUD가 CustomNPCs 스크립트의 storeddata와 tempdata 값을 받아 표시할 수 있습니다. 현재 값과 최대값 키를 지정하면 숫자, 텍스트 또는 바 형태로 구성할 수 있습니다.
+
+값은 서버에서 읽어 필요한 플레이어에게 전달됩니다. 화면이 갱신되지 않으면 먼저 스크립트 저장소 이름과 키 철자를 확인하세요.
 
 ## Open Canvas
 

@@ -1,13 +1,13 @@
 ---
-title: Conditions, Rewards, and Pokemon Itself
+title: Conditions, After Actions, and Pokemon Itself
 slug: cobblemon-conditions-rewards-pokemon
 order: 522
-description: Understand exact round-condition comparisons, victory reward execution, and Pokemon Itself data and appearance behavior.
+description: Understand round conditions, result-based After Actions, retry behavior, and Pokemon Itself.
 product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.0
+version: 0.1.4
 audience: Creators building conditional battles and Pokémon NPCs
 tags:
   - conditions
@@ -37,9 +37,9 @@ Item `has` means at least one and `not` means zero. Item NBT is not part of this
 `stored` targets the CustomNPCs scripting-oriented storeddata runtime used by DRM dialogue support. It is not an arbitrary JSON-path reader.
 :::
 
-## Reward selection order
+## After Action selection order
 
-A round supports up to 32 rewards, executed only after a confirmed win.
+A round supports up to 32 After Actions. Each action can run on `win`, `loss`, `flee`, or `battle_end`; actions sharing a matching result can run together.
 
 1. Check Grant Policy against player progress.
 2. Roll each reward's Chance independently.
@@ -48,13 +48,13 @@ A round supports up to 32 rewards, executed only after a confirmed win.
 
 | Policy | Behavior |
 | --- | --- |
-| `Every clear` | Attempts rewards after every win |
+| `Every clear` | Attempts matching actions after every battle result |
 | `First clear only` | Only while the NPC clear count is zero |
 | `Once per round` | One successful grant record per round |
 
 Chance ranges from 0.0 to 1.0. In `One random`, only entries that passed Chance participate in selection.
 
-## Reward execution
+## After Action execution
 
 | Type | Operations | Server behavior |
 | --- | --- | --- |
@@ -65,6 +65,8 @@ Chance ranges from 0.0 to 1.0. In `One random`, only entries that passed Chance 
 | `advancement` | `grant`, `revoke` | Changes only the named advancement. |
 | `currency` | `add`, `take`, `set` | Changes a DRM Currency balance; negative amounts normalize to zero. |
 | `cobblemon_give` | `give` | Creates the selected species at level 1–100 and adds it to the active party. |
+| `ftb_complete_quest` / `ftb_complete_task` | `complete` | Completes the selected FTB Quest or Task when FTB Quests is installed. |
+| `npc_hide` / `npc_despawn` | — | Hides or removes the NPC after ordinary actions succeed. |
 
 Commands support `{player}`, `{uuid}`, `{npc}`, and `{battle}` replacements. Test every command on a staging server because it executes with elevated server authority.
 
@@ -81,7 +83,7 @@ Groups are flat. To represent `(A AND B) OR C`, precompute a tag or stored value
 
 ## Pokemon Itself behavior
 
-Pokemon Itself uses one complete Pokémon instead of trainer rounds, rematches, conditions, and rewards. The Trainer categories are disabled.
+Pokemon Itself uses one complete Pokémon per round instead of a trainer party. It supports the same round conditions and result-based After Actions; trainer-only AI, inventory, and gimmick controls are disabled.
 
 - Runtime is a single-opponent Cobblemon PVE battle.
 - Default presentation is `presets/vs_pokemon.json`.
@@ -97,4 +99,4 @@ Applying Pokemon Itself also derives the CustomNPCs Pokémon appearance from spe
 2. Add Form and Aspects, then compare the world model and battle model.
 3. Lock Nature, Ability, Moves, and Held Item.
 4. Tune Scale, Pose, Animation, and Shining.
-5. Assign a custom presentation, save, and reapply to the NPC.
+5. Assign a custom presentation and save. An NPC tracking that source path normally needs no reapply.

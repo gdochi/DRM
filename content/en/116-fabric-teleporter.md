@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: teleporter
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: Creators / Operators
 tags:
   - teleporter
@@ -47,7 +47,7 @@ One schemaVersion 2 set supports up to 256 categories and 1,024 destinations.
 | Target | `x`, `y`, `z`, `yaw`, `pitch` |
 | Access | `accessConditions`, optional locked presentation and transition overrides |
 
-Targets are coordinates and rotation in the player's current dimension. DRM Core 0.1.7 does not provide a destination dimension field, so this system is not a cross-dimension teleporter.
+Targets are coordinates and rotation in the player's current dimension. DRM Core 0.1.8 does not provide a destination dimension field, so this system is not a cross-dimension teleporter.
 
 Category and destination media can use an image or item. Image media supports fit and crop settings; item media stores an item ID, count, and display size.
 
@@ -58,6 +58,8 @@ Category and destination media can use an image or item. Image media supports fi
 The set-level locked presentation supports `visible`, `dimmed`, `hidden`, `unknown`, and `custom`. A destination can inherit the set value or override it. Presentation controls whether unavailable destinations remain visible and how they appear; it does not bypass the server condition check.
 
 Transitions can set `fadeOutTicks`, `fadeInTicks`, and optional departure/arrival sounds. Sound entries use a registry ID plus volume and pitch. The editor includes a searchable sound picker and preview.
+
+0.1.8 also lets destination commands run before or during fade-out, immediately before or after travel, during fade-in, or after fade-in finishes. Choose the point that matches the presentation.
 
 ## Bind A Set To An NPC
 
@@ -97,7 +99,7 @@ The default Teleporter GUI uses an 800 × 450 stage. GUI Maker registers these T
 - `teleporter_action_button`
 - `teleporter_close_button`
 
-Generic `image` components can also be used in a `teleporter` layout. The 0.1.7 player runtime does not apply the vanilla blur that previously covered the screen, so search, destination selection, travel, and close controls remain usable.
+Generic `image` components can also be used in a `teleporter` layout. The 0.1.8 player runtime does not apply the vanilla blur that previously covered the screen, so search, destination selection, travel, and close controls remain usable.
 
 ## Server Validation
 
@@ -106,4 +108,3 @@ The server resolves the NPC binding or explicit path, evaluates interaction cond
 :::warning Current-dimension targets
 Changing only the coordinates does not move a player to another dimension. Build separate travel logic if the destination must cross dimensions.
 :::
-

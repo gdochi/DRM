@@ -7,7 +7,7 @@ product: core-fabric
 category: 핵심 시스템
 section: getting-started
 status: 안정
-version: 0.1.7
+version: 0.1.8
 audience: 제작자
 tags:
   - concepts
@@ -25,6 +25,10 @@ tags:
 | Dialogue Document | 대화 세트 전체를 담는 JSON 루트입니다. 노드, 선택지, 조건, 액션, 기본 GUI 연결을 포함합니다. |
 | Shop Document | NPC 상점 JSON입니다. 구매/판매 모드, 상품, 판매 매입 목록, 상점 GUI 연결을 포함합니다. |
 | Teleporter Set | 카테고리, 목적지, 접근 조건, 표시 방식, 전환 설정을 담는 서버 JSON입니다. |
+| Quest Pack | 카테고리, 퀘스트, 목표, 보상과 선행 관계를 묶은 폴더 단위 콘텐츠입니다. |
+| Faction Settings | CustomNPCs 팩션 점수 위에 이름, 아이콘, 카테고리와 관계 표시를 더하는 설정입니다. |
+| Popup Definition | 화면에 잠깐 표시할 제목, 본문, 이미지, 사운드와 시간 설정입니다. |
+| Creator Asset | `assets/textures`에 넣고 GUI나 NPC에서 선택하는 서버 PNG입니다. |
 | Spawner Source Pool | 배치된 NPC Spawner가 가진 템플릿/소울 스톤 스냅샷의 가중치 목록입니다. |
 | Currency Definition | 화폐 하나를 정의하는 JSON입니다. 아이템 아이콘, 자동 변환, HUD 표시, 사망 손실 규칙을 가집니다. |
 | NPC Binding | NPC PersistentData에 대화나 상점 JSON을 직접 저장하거나 서버 JSON 경로를 연결하는 방식입니다. |
@@ -33,7 +37,7 @@ tags:
 
 ## 에디터와 런타임의 차이
 
-에디터는 JSON 또는 서버가 승인한 블록 데이터를 만들고 저장하는 화면입니다. 런타임은 플레이어가 NPC나 Spawner와 상호작용할 때 저장 데이터를 읽고 실제 대화, 상점, 텔레포터, 소환, HUD 변화를 실행하는 흐름입니다.
+에디터는 JSON 또는 서버가 승인한 블록 데이터를 만들고 저장하는 화면입니다. 런타임은 저장 데이터를 읽어 대화, 상점, 퀘스트, 팩션 화면, 텔레포터, 팝업, 소환과 HUD 변화를 실행하는 흐름입니다.
 
 | 단계 | 처리 위치 | 예 |
 | --- | --- | --- |

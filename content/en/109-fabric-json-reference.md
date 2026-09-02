@@ -7,7 +7,7 @@ product: core-fabric
 category: Reference / Operations
 section: operations
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: Advanced users
 tags:
   - json
@@ -111,7 +111,7 @@ Elements use `id`, `type`, `x`, `y`, `w`, `h`, and `z` as their base fields. Typ
 
 `tradeMode` accepts `buy_only`, `sell_only`, and `buy_sell`. `items[].stock` uses `-1` for unlimited stock.
 
-A 0.1.7 buy product can override payment and configure restocking.
+A 0.1.8 buy product can override payment and configure restocking.
 
 ```json
 {
@@ -171,7 +171,7 @@ Use `currencyType: "inherit"` on a product to use the shop-level payment. Explic
 }
 ```
 
-Teleporter Sets are file-based `teleporter_set` documents under `teleporters`. A set supports up to 256 categories and 1,024 destinations. Targets use coordinates and rotation in the player's current dimension; the 0.1.7 schema has no dimension field.
+Teleporter Sets are file-based `teleporter_set` documents under `teleporters`. A set supports up to 256 categories and 1,024 destinations. Targets use coordinates and rotation in the player's current dimension; the 0.1.8 schema has no dimension field.
 
 ## NPC Spawner Template Summary
 

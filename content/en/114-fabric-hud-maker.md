@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: hud-maker
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: Creators / Operators
 tags:
   - hud
@@ -33,7 +33,7 @@ HUD files use these paths.
 
 HUD sets are managed by the server, then sent to the client for rendering.
 
-0.1.7 installs disabled starter definitions for the currency wallet plus health, food, armor, air, and experience. Enable or clone only the definitions you intend to use.
+0.1.8 installs disabled starter definitions for the currency wallet plus health, food, armor, air, and experience. Enable or clone only the definitions you intend to use.
 
 ## Basic Workflow
 
@@ -83,3 +83,9 @@ HUD display depends on the server active set and player data. If you edit JSON m
 `Vanilla HUD` exposes independent `Hide Health`, `Hide Armor`, `Hide Food`, `Hide Air`, `Hide XP Bar`, `Hide XP Level`, `Hide Hotbar`, `Hide Crosshair`, and `Hide Boss Bar` switches. These hide vanilla surfaces; a `VANILLA_REPLACEMENT` definition supplies the custom replacement. Chat, debug text, the scoreboard, and the player list are left untouched.
 
 HUD definitions use `GROUP`, `TEXT`, `BAR`, `IMAGE`, and `ICON_LIST` elements. The bundled armor definition demonstrates `ICON_LIST`; bundled definitions start with `enabled: false`.
+
+## CustomNPCs Values
+
+In 0.1.8, a HUD can display CustomNPCs script storeddata and tempdata. Point the definition at a storage name and value key, plus an optional maximum-value key, then present it as text, a number, or a bar.
+
+The server reads the value and sends it to the relevant player. If it does not update, check the script storage name and key spelling first.

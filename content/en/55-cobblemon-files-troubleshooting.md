@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Operations
 section: operations
 status: Draft
-version: 0.1.1
+version: 0.1.4
 audience: Server operators and content publishers
 tags:
   - paths
@@ -25,7 +25,11 @@ All server-edited JSON starts under `config/dochi_rpg_maker`.
 | `cobblemon/pokemon_itself/` | Single-Pokémon battles and NPC appearance |
 | `cobblemon/battle_presentations/` | Pre-battle timeline presentations |
 | `cobblemon/pokemarts/` | Sales, Trade, and Auction shop documents |
-| `gui/` | Role-specific PokéMart runtime layouts |
+| `cobblemon/nurse_joy/` | Nurse Joy documents |
+| `cobblemon/starter_selectors/` | Starter Selector documents |
+| `cobblemon/entity_clones/` | Addon Clone Library compatibility store |
+| `npc_spawner/entity_clones/` | DRM Core NPC Spawner clone store |
+| `gui/` | PokéMart and Starter Selector runtime layouts |
 | `cobblemon/_migration_backups/` | Backups made when canonical defaults are safely upgraded |
 
 `Save As` accepts a relative path within the current domain. Saving trainer path `custom/gym/leader.json` creates:
@@ -48,6 +52,20 @@ config/dochi_rpg_maker/cobblemon/_migration_backups/canonical_defaults_<timestam
 Defaults and samples are starting points. Save project content under a user path such as `custom/` so addon updates and authored content remain clearly separated.
 :::
 
+## Current document schemas
+
+| Document | Schema |
+| --- | ---: |
+| Trainer / Pokemon Itself | 20 |
+| Trainer Brain | 4 |
+| Battle Presentation | 4 |
+| PokéMart | 7 |
+| Nurse Joy | 2 |
+| Starter Selector | 2 |
+| Entity Clone | 1 |
+
+Supported older documents are normalized while loading. Do not increase `schemaVersion` by hand.
+
 ## NPC right-click priority
 
 Normal runtime interaction uses a main-hand right-click while both hands are empty.
@@ -65,7 +83,7 @@ A core item or another setup tool keeps its own editing path, so it does not ope
 
 ### The file saved, but the NPC did not change
 
-Saving server JSON and applying it to an NPC are separate operations. Apply the edited document again and confirm that it was applied to the intended NPC and target type.
+File-based Trainer, Pokemon Itself, PokéMart, Nurse Joy, and Starter Selector bindings track their original JSON path. Confirm that the NPC is bound to the file you edited, then open a new runtime request. Use `/drm reload` after editing files outside the game. Apply again when changing the source path or role.
 
 ### The file is missing from Load
 
@@ -115,4 +133,4 @@ Saving server JSON and applying it to an NPC are separate operations. Apply the 
 6. Test presentation playback, skipping, battle music, small GUI Scale, and different aspect ratios.
 7. Test Sales, Trade, and Auction before and after a server restart.
 8. Include user JSON and `_migration_backups` in the server backup policy.
-9. Confirm the release JAR is named `drm_cobblemon_editor-<version>.jar` while the internal mod ID remains `cobble_npc`.
+9. Confirm the release JAR is named `dochi_cobblemon_editor-0.1.4-fabric-1.21.1.jar` while the internal mod ID remains `cobble_npc`.

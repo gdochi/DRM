@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: getting-started
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: Creators
 tags:
   - concepts
@@ -25,6 +25,10 @@ tags:
 | Dialogue Document | Root JSON for a dialogue set: nodes, choices, conditions, actions, and GUI reference. |
 | Shop Document | NPC shop JSON: trade mode, products, sale offers, currency, and shop GUI reference. |
 | Teleporter Set | Server JSON containing categories, destinations, access conditions, presentation, and transitions. |
+| Quest Pack | Folder-based content containing categories, quests, objectives, rewards, and prerequisites. |
+| Faction Settings | Names, icons, categories, and relationship states shown over CustomNPCs faction scores. |
+| Popup Definition | A short on-screen title, body, image, sound, and timing presentation. |
+| Creator Asset | A server PNG placed in `assets/textures` and selected in a GUI or NPC editor. |
 | Spawner Source Pool | A placed NPC Spawner's weighted list of template or Soul Stone snapshot sources. |
 | Currency Definition | JSON for one currency: item icon, pickup conversion, HUD visibility, and death-loss rules. |
 | NPC Binding | Either embedded JSON on an NPC or a `source.kind` plus `source.path` reference to server JSON. |
@@ -33,7 +37,7 @@ tags:
 
 ## Editor vs Runtime
 
-Editors create and save JSON or server-authorized block data. Runtime code reads it when a player interacts with an NPC or spawner and performs dialogue, shop, Teleporter, spawn, HUD, command, item, and currency behavior.
+Editors create and save JSON or server-authorized block data. Runtime reads it to perform dialogue, shops, quests, faction screens, Teleporters, popups, spawning, HUD, item, and currency behavior.
 
 | Stage | Location | Example |
 | --- | --- | --- |

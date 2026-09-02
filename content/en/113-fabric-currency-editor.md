@@ -2,12 +2,12 @@
 title: Currency Editor
 slug: currency-editor
 order: 85
-description: How to configure currency definitions, item pickup conversion, balances, and death rules in Currency Editor.
+description: How to configure digital and physical currency, item conversion, balances, and death rules.
 product: core-fabric
 category: Core Systems
 section: currency-editor
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: Creators / Operators
 tags:
   - currency
@@ -28,6 +28,18 @@ Currencies are not only display labels. They connect to shop payments, item pick
 | Format | Display format for balances. |
 | Item conversion | Whether picked-up items become currency balance. |
 | Death rule | Whether the player keeps or loses balance on death. |
+
+## Physical Currency Items
+
+In 0.1.8, enabling `physicalItem` creates a currency form that can be carried and traded in the inventory.
+
+| Setting | Meaning |
+| --- | --- |
+| Name | Display name or translation key shown on the item. |
+| ID | Unique value that distinguishes this currency on the shared physical-currency item. |
+| Unit value | Currency value represented by one item. |
+
+Shops can accept physical currency as payment or pay it out when configured to do so. Keep each physical ID unique.
 
 ## Storage
 
@@ -52,7 +64,7 @@ The server JSON `kind` is `currency`. Currency list and preview reads use `curre
 6. Set the death rule to `KEEP` or `LOSE`.
 7. Save, then run `/drm currency reload` or `/drm reload`.
 
-Fabric 0.1.7 copies DRM wallet and compatible bank balance keys when Minecraft replaces the player entity after death. `KEEP` preserves the balance, while `LOSE` carries forward the post-deduction value. Automatic item conversion and death loss notify the affected player in chat. Ordinary pickup conversion processes only the newly picked-up stack, not unrelated currency stacks already in the inventory.
+Fabric 0.1.8 copies DRM wallet and compatible bank balance keys when Minecraft replaces the player entity after death. `KEEP` preserves the balance, while `LOSE` carries forward the post-deduction value. Automatic item conversion and death loss notify the affected player in chat. Ordinary pickup conversion processes only the newly picked-up stack, not unrelated currency stacks already in the inventory.
 
 ## Command Checks
 

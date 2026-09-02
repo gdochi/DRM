@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: remnant-msg
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: Creators / Operators
 tags:
   - remnant
@@ -63,7 +63,7 @@ Message documents support `message`, ranged `messageStyles`, separate interactio
 
 The paged `World List` provides `Edit`, `Teleport`, `Delete`, and `Refresh`. Policy fields determine whether a general user may use the flow, write embedded text, select JSON, use triggers, or consume the setter. Runtime checks interaction/view conditions and runs enabled actions according to `messageTrigger`.
 
-In 0.1.7, message and policy selectors search the server JSON lists. A marker appearance can be `Default`, `Item`, or `Block`; item/block choices search localized names, namespaces, and IDs. `Scale` accepts `0.05` through `16.0`. Billboard modes are `fixed`, `vertical`, `horizontal`, and `center`. Item appearances support `none`, first/third-person hand transforms, `head`, `gui`, `ground`, and `fixed`. The server validates these settings and persists them with marker saved data and the display entity.
+In 0.1.8, message and policy selectors search the server JSON lists. A marker appearance can be `Default`, `Item`, or `Block`; item/block choices search localized names, namespaces, and IDs. `Scale` accepts `0.05` through `16.0`. Billboard modes are `fixed`, `vertical`, `horizontal`, and `center`. Item appearances support `none`, first/third-person hand transforms, `head`, `gui`, `ground`, and `fixed`. The server validates these settings and persists them with marker saved data and the display entity.
 
 The bundled policy allows general use and direct writing but reserves JSON and triggers for administrators. It defaults to no setter consumption, unlimited marker lifetime, and a 4096-character message limit. Existing policy files are not overwritten during updates.
 

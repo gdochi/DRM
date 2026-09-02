@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: 0.1.0
+version: 0.1.4
 audience: Creators operating auction houses and custom PokéMart screens
 tags:
   - auction
@@ -76,6 +76,8 @@ PokéMart GUI Maker uses an 800×450 logical Stage.
 | Action Area | Buy, trade, bid, list, cancel, claim | Control gap and button colors |
 
 These functional components are singletons. Removing a critical component leaves runtime with no place to render its data or controls.
+
+Version 0.1.4 searches and pages listings, eligible Pokémon, selling choices, and claims on the server. The default PokéMart and Starter Selector layouts use DRM's shared sprite sheet. Only untouched legacy defaults are upgraded automatically; customized GUI files are preserved and the replaced defaults are backed up under `cobblemon/_migration_backups/`.
 
 | Role | Visible runtime tabs |
 | --- | --- |

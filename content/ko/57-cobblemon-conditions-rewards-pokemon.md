@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: 조건부 전투와 결과 처리를 설계하는 제작자
 tags:
   - conditions
@@ -25,7 +25,7 @@ Conditions와 After Actions는 문서 전체 공용이 아니라 현재 라운�
 - `Duplicate Round`는 조건과 액션까지 복제
 - Pokemon Itself도 같은 라운드 조건과 액션 사용
 
-UI 탭 이름이 `Rewards`로 보이더라도 0.1.3의 실제 의미는 승리 보상에 한정되지 않는 `After Actions`입니다.
+UI 탭 이름이 `Rewards`로 보이더라도 현재 버전의 실제 의미는 승리 보상에 한정되지 않는 `After Actions`입니다.
 
 ## Conditions
 
@@ -111,7 +111,7 @@ FTB Quests가 설치되지 않았을 때 FTB 조건은 충족되지 않습니다
 
 ## 실패 보류와 재시도
 
-FTB 완료, 화폐, 아이템처럼 외부 상태 때문에 액션 실행이 실패할 수 있습니다. 0.1.3은 실패한 전투 후 액션을 보류하고, 같은 플레이어가 다음 배틀 요청을 보낼 때 먼저 재시도합니다.
+FTB 완료, 화폐, 아이템처럼 외부 상태 때문에 액션 실행이 실패할 수 있습니다. 현재 버전은 실패한 전투 후 액션을 보류하고, 같은 플레이어가 다음 배틀 요청을 보낼 때 먼저 재시도합니다.
 
 - 실패를 성공으로 기록하지 않습니다.
 - NPC 숨김·제거는 일반 액션이 성공한 뒤 마지막에 처리합니다.

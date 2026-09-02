@@ -7,7 +7,7 @@ product: core-fabric
 category: 다이얼로그 에디터
 section: dialogue-editor
 status: 안정
-version: 0.1.7
+version: 0.1.8
 audience: 대화 제작자
 tags:
   - dialogue
@@ -103,7 +103,7 @@ NPC 우클릭
 - 대화 GUI를 GUI Maker에서 만든 `dialogue` 타입 GUI로 바꿀 수 있습니다. GUI Maker가 아직 어렵다면 기본 대화 GUI를 그대로 사용해도 됩니다.
 - 기본 대화 GUI를 커스텀할 때는 `Save`로 기본 파일을 덮어쓰지 말고 반드시 `Save As`로 새 파일을 만든 뒤 연결하세요.
 
-## 0.1.7 노드 편집 흐름
+## 0.1.8 노드 편집 흐름
 
 - 노드 목록에서 `Shift+Click`하거나 드래그해 여러 노드를 선택할 수 있습니다.
 - 선택한 노드는 `Copy` / `Paste` 또는 `Ctrl+C` / `Ctrl+V`로 같은 세트나 선택한 다른 세트에 복사할 수 있습니다.

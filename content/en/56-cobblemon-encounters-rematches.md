@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.1
+version: 0.1.4
 audience: Creators building automatic encounters and rematch trainers
 tags:
   - encounter
@@ -80,6 +80,16 @@ The captured home point is used only for Return Home and Battle Positioning. It 
 6. Restore position, visibility, and lock state on win, loss, flee, or startup failure.
 
 A presentation that plays without a following battle can therefore indicate invalid target state, failed condition recheck, or party creation failure.
+
+## Battle level rules
+
+| Mode | Behavior |
+| --- | --- |
+| `Keep` | Uses authored levels. |
+| `Fixed` | Sets the trainer side, or both battle sides, to one level from 1–100. |
+| `Match player party average` | Targets the player's current party average plus an offset from -99 to 99 while preserving the trainer party's authored level gaps where possible. |
+
+Fixed and matched levels affect battle copies only. They do not permanently change the player's Pokémon. Older Fixed settings load with both sides selected to preserve their previous behavior.
 
 ## Rematches and round selection
 

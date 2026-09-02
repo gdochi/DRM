@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: gui-maker
 status: Stable
-version: 0.1.7
+version: 0.1.8
 audience: GUI creators
 tags:
   - gui
@@ -22,7 +22,7 @@ GUI Maker preview, the saved layout document, and the player-facing runtime scre
 
 | Field | Meaning |
 | --- | --- |
-| `guiType` | Layout type such as `dialogue`, `npc_shop`, `teleporter`, `currency_hud`, or `remnant_msg`. |
+| `guiType` | Layout type such as `dialogue`, `npc_shop`, `teleporter`, `quest_journal`, `popup`, `currency_hud`, or `remnant_msg`. |
 | `id` | Internal GUI ID. Matching it to the filename helps tracking. |
 | `stage` | Base size, background, and grid settings. |
 | `elements` | Array of screen components. |
@@ -36,6 +36,8 @@ GUI Maker preview, the saved layout document, and the player-facing runtime scre
 | `dialogue` | Screen GUI | `default_dialogue_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
 | `npc_shop` | Screen GUI | `default_shop_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
 | `teleporter` | Screen GUI | `default_teleporter_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
+| `quest_journal` | Screen GUI | `default_quest_journal_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
+| `popup` | Screen GUI | `default_popup_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
 | `remnant_msg` | Screen GUI | `default_remnant_msg_gui.json` | `gui` | `config/dochi_rpg_maker/gui` |
 | `currency_hud` | HUD overlay | `hud_components.json` | `currency_hud_layout` | `config/dochi_rpg_maker/hud/sets` |
 | `player_status` | HUD overlay | `player_status_hud.json` | HUD family | `config/dochi_rpg_maker/hud/player_status` |
@@ -64,6 +66,8 @@ Inputs such as `currency`, `hud_layout`, and `currency_hud_layout` normalize to 
 | `teleporter_destination_list` | Teleporter | Available destination rows. |
 | `teleporter_destination_name`, `teleporter_destination_description`, `teleporter_destination_icon` | Teleporter | Selected destination details. |
 | `teleporter_action_button`, `teleporter_close_button` | Teleporter | Travel and close controls. |
+| `quest_tabs`, quest list/detail/objective/reward components | Quest Journal | Journal navigation and quest information. |
+| `popup_title`, `popup_subtitle`, `popup_text` | Popup | Popup title, subtitle, and body. |
 | `currency_list`, `currency_icon`, `currency_amount`, `currency_delta`, `currency_name` | HUD | Currency HUD elements. |
 | `player_health`, `player_food`, `player_armor`, `player_air`, `player_xp_level` | HUD | Player status preview/runtime values. |
 
