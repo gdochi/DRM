@@ -1,44 +1,57 @@
 ---
-title: Detection and Patrol AI
+title: Target Pursuit and Facing
 slug: mob-editor-detection-patrol
-order: 225
-description: Guidelines for NPC detection angle, sight, patrol movement, and facing direction.
+order: 250
+description: Separate target acquisition, between-pattern pursuit, and stage movement.
 product: mob-editor
-category: AI & Detection
-status: Beta
-version: 0.1.x
-audience: Combat AI creators
+section: combat
+category: Battleworks
+status: Guide
+version: 0.1.0
+audience: Combat content creators
 tags:
-  - detection
-  - patrol
-  - ai
+  - battleworks
+  - combat
 ---
 
-## Detection baseline
+## Establish a target first
 
-Detection should combine **distance, angle, and sight state**. If an NPC fails to detect a player standing almost next to it, check Detect Angle and forward-vector calculations first.
+Applying a combat specification is separate from choosing enemies. Configure CNPC factions and hostile targets first. The Jar Fist combat sample disables automatic scanning and uses CNPC's current target.
 
-| Item | Meaning | Check |
-| --- | --- | --- |
-| Detect Range | detection distance | verify range and vertical difference handling |
-| Detect Angle | forward-facing detection cone | ensure close players do not fall outside the cone |
-| Line of Sight | sight blocking | check blocks, height, and transparent block rules |
-| Alert State | transition into combat | confirm the NPC is not locked in another state |
+**Combat Rules → Combat → Scan Without Target** enables a supplementary search for nearby living targets when no current target exists. It uses range, field of view, and optional visibility checks, and excludes creative/spectator players.
 
-## Patrol movement principles
+This supplementary search is not equivalent to CNPC's faction hostility filter. Leave it disabled when CNPC should decide who is an enemy.
 
-A patrolling NPC should not look like it is being dragged by a vector. Movement must be connected to an actual walking state, and animation speed should match movement speed.
+## Movement between patterns
 
-1. Choose the next path target.
-2. Calculate movement direction.
-3. Rotate the NPC toward movement direction.
-4. Play walking animation.
-5. On arrival, switch to idle guard state.
+A Battlework with native attacks suppressed uses its own pursuit goal. It can approach even when DRM has locked the NPC's native melee attack goal.
 
-## Circular watch versus movement direction
+| Setting | Behavior |
+| --- | --- |
+| Chase Target | Find a path toward the target between patterns. |
+| Face Between Patterns | Keep looking at the target during engagement and cooldown waits. |
+| Chase Speed Multiplier | Navigation multiplier applied to the NPC's movement speed; defaults to 1.0. |
+| Approach Distance | Desired approach spacing; defaults to 2.0 blocks and is adjusted into an available attack window. |
 
-Circular watch should run **only while the NPC is standing still and guarding a position**. While the NPC is moving in patrol, it should face the movement direction.
+When native attack suppression is disabled, CNPC's existing attack AI retains movement and look control. Its settings are separate from the dedicated Battleworks pursuit settings.
 
-:::warning Note
-If circular watch also runs during movement, both systems may overwrite rotation and make the NPC look sideways or backward.
-:::
+## Movement inside a stage
+
+Once a pattern starts, its current stage controls movement.
+
+- A stage with **Face Target** enabled turns the head and body toward the target.
+- **Stop Horizontal** or `hold` stops horizontal motion.
+- `away`, `dash`, `orbit`, `left`, `right`, `zigzag`, and `jump` are authored stage movements.
+- Between-pattern facing does not automatically enable facing in a stage that has it disabled. A movement's own tracking or dash behavior can still request facing.
+- Pursuit navigation does not overwrite an authored retreat or roll velocity.
+
+After target loss and the end of any target-dependent pattern, the dedicated goal releases movement to CNPC's idle AI. Configure normal patrol routes in CNPC.
+
+## If the NPC does not move
+
+1. Confirm that combat is enabled and that you applied the combat sample, not the preview file.
+2. Confirm that the NPC has a target. Use survival mode for player testing.
+3. Reapply edited JSON to the NPC.
+4. Check between-pattern pursuit separately from the stage's hold and facing controls.
+5. Check pattern distance, phase, and health eligibility.
+6. Check CNPC movement speed, disabled AI settings, and blocked paths. Motion inside a model animation does not itself move the entity through the world.

@@ -1,36 +1,55 @@
 ---
-title: Mob Editor Overview
+title: Dochi's Battleworks Overview
 slug: mob-editor-overview
 order: 210
-description: The scope and core concepts of the DRM Mob Editor track.
+description: Create and apply NPC combat specifications through the Battleworks editor.
 product: mob-editor
-category: Overview
-status: Beta
-version: 0.1.x
+section: start
+category: Battleworks
+status: Guide
+version: 0.1.0
 audience: Combat content creators
 tags:
-  - mob editor
+  - battleworks
+  - CustomNPCs
   - combat
-  - overview
 ---
 
-## What Mob Editor is for
+## What Battleworks creates
 
-DRM Mob Editor is an addon documentation track for **designing CNPC combat through editor-driven workflows**. The goal is to build combat by combining patterns and conditions instead of depending entirely on handwritten scripts.
+Dochi's Battleworks is a **combat authoring addon for Minecraft Forge 1.20.1 and DRM**. Build a combat specification for a CustomNPCs NPC in-game: create a pattern, then place hitbox contacts, skills, movement, and animation timing inside it.
 
-| Area | Purpose |
+This guide covers the creator-facing Battleworks 0.1.0 editor. It is separate from player HUDs and GUI Maker layouts. Existing Mob Editor documentation addresses remain available, but the current mod and editor are called Battleworks.
+
+## The three workspaces
+
+| Workspace | Purpose |
 | --- | --- |
-| Patterns | Build attack timing, hitboxes, projectiles, and movement as reusable units. |
-| Animation | Sync attacks and idle states with pattern timing. |
-| Combat Conditions | Branch by HP, distance, target state, or phase. |
-| Reactive Combat | Handle parry, stagger, pursuit, and retarget behavior. |
+| Pattern Workbench | Select a pattern and place actions in its Windup, Action, and Recovery stages. |
+| Hitbox Library | Edit reusable hitbox geometry, damage, and offsets; preview the NPC with its clip list and Play/Stop controls. |
+| Combat Rules | Configure pattern scoring, engagement and pursuit, health phases, and death timelines. |
 
-## Best for
+The model preview belongs to **Hitbox Library**. Pattern Workbench uses its central space for the action timeline.
 
-- creators building boss-style NPCs
-- server operators who want more complex combat than default mobs
-- creators planning integration with Better Combat, GeckoLib, or Iron's Spellbooks
+## Authoring units
 
-:::tip Direction
-Mob Editor documentation prioritizes **pattern design** and **combat flow separation**.
-:::
+| Unit | Meaning |
+| --- | --- |
+| Battlework | One NPC combat document containing patterns, hitboxes, and combat rules. |
+| Pattern | An action with eligibility conditions and three execution stages. |
+| Stage | Windup, Action, or Recovery, with duration, movement, facing, and animation settings. |
+| Timed actions | A group of actions sharing an execution tick and repeat settings. |
+| Hitbox | Reusable geometry and damage data referenced by patterns, separate from animation assets. |
+
+Reuse one hitbox in several patterns with different timings. Simultaneous actions remain individually selectable as named timeline rows.
+
+## Start here
+
+1. [Installation and NPC application](#mob-editor/mob-editor-setup)
+2. [Patterns and hitboxes](#mob-editor/mob-editor-patterns)
+3. [Model-specific animation](#mob-editor/battleworks-animation)
+4. [Pursuit and facing](#mob-editor/mob-editor-detection-patrol)
+5. [Files and test samples](#mob-editor/battleworks-files)
+
+**CustomNPCs and DRM are required.** Better Combat, GeckoLib, Player Animator, Iron's Spells 'n Spellbooks, and other providers are optional integrations.
+

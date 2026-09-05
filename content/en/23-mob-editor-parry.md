@@ -1,40 +1,48 @@
 ---
-title: Parry and Reactive Combat
+title: Combat Options and Parry Support
 slug: mob-editor-parry
-order: 240
-description: Guidelines for reactive combat systems such as parry, stagger, and state transitions.
+order: 270
+description: Distinguish working global combat integrations from per-pattern parry settings.
 product: mob-editor
-category: Advanced Combat
-status: Beta
-version: 0.1.x
-audience: Advanced combat creators
+section: combat
+category: Battleworks
+status: Guide
+version: 0.1.0
+audience: Combat content creators
 tags:
-  - parry
-  - reaction
+  - battleworks
   - combat
 ---
 
-## Parry concept
+## Combat Rules pages
 
-Parry is best treated as a system that **interrupts a specific enemy attack inside a valid timing window and changes state**, rather than just a block.
-
-## Key design questions
-
-| Topic | Question |
+| Page | Contents |
 | --- | --- |
-| Detection | Which attacks are marked as parryable? |
-| Timing | Which animation window counts as success? |
-| Result | Does success cause stagger, knockback, phase cancel, or a counter window? |
-| Compatibility | Does it require Better Combat or a specific animation system? |
+| Manager | Selection modifiers, global cooldown, combo depth, and recovery waits |
+| Combat | Native attack suppression, targeting, pursuit, facing, and encounter delays |
+| Phase | Health thresholds and transition patterns |
+| Death | Death timeline, timed actions, and corpse movement lock |
+| Parry | Stored parry settings; see the 0.1.0 support boundary below |
 
-## Suggested flow
+Native CNPC attacks and Battleworks hitbox damage are separate damage sources. Enable native attack suppression when patterns are intended to own the NPC's attacks.
 
-1. Tag parryable attacks first.
-2. Check whether the enemy is currently in an attack state.
-3. Apply a short `parried` state on success.
-4. Chain into a stagger pattern or counter window.
-5. On failure, fall back to default damage or block handling.
+## Global features
 
-:::warning Note
-In multiplayer, state transitions and feedback are usually safer than heavy freeze-frame style effects.
-:::
+The optional **Iron's Spells 'n Spellbooks** integration can deflect supported spell projectiles. It does not promise universal parrying for every projectile from every mod.
+
+Player lock-on and hitbox debug presentation also use global combat settings. Their file is `config/dochi_rpg_maker/settings/battleworks_global_rules.json`. Defaults enable magic parry and lock-on and disable hitbox debug. Debug rendering does not create additional damage contacts.
+
+## Per-pattern parry limits in 0.1.0
+
+Detailed **Parry** page fields, including input windows, posture, and riposte multipliers, are currently stored in the document but are not connected to the Battleworks pattern runtime. Setting a pattern's `parryable` flag or posture damage alone does not implement posture loss, melee parries, or riposte combat.
+
+Do not make those fields essential to a working 0.1.0 encounter. Global spell-projectile deflection and a per-pattern posture system are separate capabilities.
+
+## Death presentation
+
+Enable Death to run a separate action timeline after the NPC dies. Place execution ticks and repetitions within its duration. Horizontal corpse locking can prevent sliding. Damage actions or skills still depend on their target and provider requirements.
+
+## Validate an encounter
+
+Test one attack, pursuit, repeated contacts, phases, and death presentation in that order. Establish that damage and cooldowns behave correctly on the server before relying on additional reactive combat features.
+

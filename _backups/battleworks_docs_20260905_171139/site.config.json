@@ -1,7 +1,7 @@
 {
   "title": "Dochi's Wiki",
   "brand": "Dochi's Wiki",
-  "description": "Documentation hub for DRM Core, Dochi's Cobblemon Editor, Dochi's Battleworks, Dochi's Warfare, and Dochi's Spawn Control.",
+  "description": "Documentation hub for DRM Core, Dochi's Cobblemon Editor, DRM Mob Editor, Dochi's Warfare, and Dochi's Spawn Control.",
   "defaultLocale": "en",
   "fallbackLocale": "en",
   "repository": "",
@@ -101,23 +101,6 @@
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor"
     },
     {
-      "id": "dochi-battleworks",
-      "label": "Dochi's Battleworks",
-      "label_ko": "Dochi's Battleworks",
-      "shortLabel": "Battleworks",
-      "shortLabel_ko": "Battleworks",
-      "description": "Forge 1.20.1 combat authoring for CustomNPCs: patterns, hitboxes, model animation, pursuit, and phases.",
-      "description_ko": "Forge 1.20.1에서 CustomNPCs의 패턴, 히트박스, 모델 애니메이션, 추적과 페이즈를 제작합니다.",
-      "description_ru": "Создание боёв CustomNPCs для Forge 1.20.1: паттерны, хитбоксы, анимация, преследование и фазы.",
-      "description_zh": "为 Forge 1.20.1 的 CustomNPCs 制作战斗模式、碰撞箱、模型动画、追踪和阶段。",
-      "description_ja": "Forge 1.20.1のCustomNPCs向けにパターン、ヒットボックス、モデルアニメーション、追跡、フェーズを制作します。",
-      "logo": "assets/mod-logos/dochi_battleworks.png",
-      "logoAlt": "Dochi's Battleworks logo",
-      "logoAlt_ko": "Dochi's Battleworks 로고",
-      "type": "addon",
-      "product": "mob-editor"
-    },
-    {
       "id": "dochi-warfare",
       "label": "Dochi's Warfare",
       "label_ko": "도치 워페어",
@@ -203,27 +186,27 @@
     "en": {
       "label": "English",
       "shortLabel": "EN",
-      "description": "A structured documentation hub for DRM Core, Dochi's Cobblemon Editor, Dochi's Battleworks, Dochi's Warfare, and Dochi's Spawn Control."
+      "description": "A structured documentation hub for DRM Core, Dochi's Cobblemon Editor, DRM Mob Editor, Dochi's Warfare, and Dochi's Spawn Control."
     },
     "ko": {
       "label": "한국어",
       "shortLabel": "KO",
-      "description": "DRM Core, Dochi's Cobblemon Editor, Dochi's Battleworks, 도치 워페어, Dochi's Spawn Control 문서를 한국어로 정리한 문서 허브입니다."
+      "description": "DRM Core, Dochi's Cobblemon Editor, DRM Mob Editor, 도치 워페어, Dochi's Spawn Control 문서를 한국어로 정리한 문서 허브입니다."
     },
     "ru": {
       "label": "Русский",
       "shortLabel": "RU",
-      "description": "Структурированный центр документации для DRM Core, Dochi's Cobblemon Editor, Dochi's Battleworks, Dochi's Warfare и Dochi's Spawn Control."
+      "description": "Структурированный центр документации для DRM Core, Dochi's Cobblemon Editor, DRM Mob Editor, Dochi's Warfare и Dochi's Spawn Control."
     },
     "zh": {
       "label": "简体中文",
       "shortLabel": "ZH",
-      "description": "DRM Core、Dochi's Cobblemon Editor、Dochi's Battleworks、Dochi's Warfare 和 Dochi's Spawn Control 的结构化文档中心。"
+      "description": "DRM Core、Dochi's Cobblemon Editor、DRM Mob Editor、Dochi's Warfare 和 Dochi's Spawn Control 的结构化文档中心。"
     },
     "ja": {
       "label": "日本語",
       "shortLabel": "JA",
-      "description": "DRM Core、Dochi's Cobblemon Editor、Dochi's Battleworks、Dochi's Warfare、Dochi's Spawn Control の構造化されたドキュメントハブです。"
+      "description": "DRM Core、Dochi's Cobblemon Editor、DRM Mob Editor、Dochi's Warfare、Dochi's Spawn Control の構造化されたドキュメントハブです。"
     }
   },
   "products": {
@@ -580,53 +563,28 @@
       ]
     },
     "mob-editor": {
-      "label": "Dochi's Battleworks",
-      "label_ko": "Dochi's Battleworks",
-      "label_ru": "Dochi's Battleworks",
-      "label_zh": "Dochi's Battleworks",
-      "label_ja": "Dochi's Battleworks",
-      "shortLabel": "Battleworks",
-      "shortLabel_ko": "Battleworks",
-      "shortLabel_ru": "Battleworks",
-      "shortLabel_zh": "Battleworks",
-      "shortLabel_ja": "Battleworks",
+      "label": "DRM Mob Editor",
+      "label_ko": "DRM Mob Editor",
+      "label_ru": "DRM Mob Editor",
+      "label_zh": "DRM Mob Editor",
+      "label_ja": "DRM Mob Editor",
+      "shortLabel": "Mob Editor",
+      "shortLabel_ko": "Mob Editor",
+      "shortLabel_ru": "Mob Editor",
+      "shortLabel_zh": "Mob Editor",
+      "shortLabel_ja": "Mob Editor",
       "accent": "violet",
-      "description": "Forge 1.20.1 combat authoring for CustomNPCs: patterns, hitboxes, model animation, pursuit, and phases.",
-      "description_ko": "Forge 1.20.1에서 CustomNPCs의 패턴, 히트박스, 모델 애니메이션, 추적과 페이즈를 제작합니다.",
-      "description_ru": "Создание боёв CustomNPCs для Forge 1.20.1: паттерны, хитбоксы, анимация, преследование и фазы.",
-      "description_zh": "为 Forge 1.20.1 的 CustomNPCs 制作战斗模式、碰撞箱、模型动画、追踪和阶段。",
-      "description_ja": "Forge 1.20.1のCustomNPCs向けにパターン、ヒットボックス、モデルアニメーション、追跡、フェーズを制作します。",
-      "disabled": false,
-      "sections": [
-        {
-          "id": "start",
-          "label": "Start",
-          "label_ko": "시작하기",
-          "description": "Install and apply your first combat specification.",
-          "description_ko": "설치하고 첫 전투 스펙을 NPC에 적용합니다."
-        },
-        {
-          "id": "authoring",
-          "label": "Patterns and Animation",
-          "label_ko": "패턴과 애니메이션",
-          "description": "Actions, reusable hitboxes, clips, and the workspace.",
-          "description_ko": "액션, 재사용 히트박스, 클립과 작업 화면입니다."
-        },
-        {
-          "id": "combat",
-          "label": "Combat Behavior",
-          "label_ko": "전투 동작",
-          "description": "Pursuit, selection, phases, and support boundaries.",
-          "description_ko": "추적, 패턴 선택, 페이즈와 지원 범위를 다룹니다."
-        },
-        {
-          "id": "reference",
-          "label": "Files and Testing",
-          "label_ko": "파일과 테스트",
-          "description": "Storage, samples, and troubleshooting.",
-          "description_ko": "저장 위치, 샘플과 문제 해결입니다."
-        }
-      ]
+      "description": "DRM add-on. Combat-focused documentation for patterns, hitboxes, detection, phases, and reactive enemy behavior.",
+      "description_ko": "DRM 애드온입니다. 패턴, 히트박스, 감지, 페이즈, 반응형 적 행동 같은 전투형 NPC 제작 문서입니다.",
+      "description_ru": "Дополнение DRM для боевых NPC: паттерны, хитбоксы, обнаружение, фазы и реактивное поведение врагов.",
+      "description_zh": "DRM 附加模组文档，面向战斗 NPC 的模式、碰撞箱、侦测、阶段和反应式敌人行为。",
+      "description_ja": "DRMアドオンです。パターン、ヒットボックス、検知、フェーズ、反応型の敵行動など、戦闘向けNPC制作の文書です。",
+      "disabled": true,
+      "statusText": "In development",
+      "statusText_ko": "개발 중",
+      "statusText_ru": "В разработке",
+      "statusText_zh": "开发中",
+      "statusText_ja": "開発中"
     },
     "drm-cobblemon-editor": {
       "label": "Dochi Cobblemon Editor",
@@ -674,39 +632,39 @@
         },
         {
           "id": "trainer",
-          "label": "Cobblemon Editor",
-          "label_ko": "Cobblemon Editor",
-          "label_ru": "Cobblemon Editor",
-          "label_zh": "Cobblemon Editor",
-          "label_ja": "Cobblemon Editor",
-          "description": "Trainer and Pokemon Itself data, encounters, rounds, conditions, and rewards.",
-          "description_ko": "Trainer와 Pokemon Itself 데이터, 조우, 라운드, 조건, 보상의 실제 동작입니다.",
+        "label": "Cobblemon Editor",
+        "label_ko": "Cobblemon Editor",
+        "label_ru": "Cobblemon Editor",
+        "label_zh": "Cobblemon Editor",
+        "label_ja": "Cobblemon Editor",
+        "description": "Trainer and Pokemon Itself data, encounters, rounds, conditions, and rewards.",
+        "description_ko": "Trainer와 Pokemon Itself 데이터, 조우, 라운드, 조건, 보상의 실제 동작입니다.",
           "description_ru": "Раунды тренера, встречи, условия и награды.",
           "description_zh": "训练师回合、遭遇、条件和奖励设置。",
           "description_ja": "トレーナーラウンド、エンカウント、条件、報酬設定。"
         },
         {
           "id": "presentation",
-          "label": "Battle Presentation Maker",
-          "label_ko": "배틀 연출 메이커",
-          "label_ru": "Battle Presentation Maker",
-          "label_zh": "Battle Presentation Maker",
-          "label_ja": "Battle Presentation Maker",
-          "description": "Canvas, timeline layers, actors, audio, runtime playback, and assignment.",
-          "description_ko": "캔버스, 타임라인 레이어, 액터, 오디오, 런타임 재생과 적용 동작입니다.",
+        "label": "Battle Presentation Maker",
+        "label_ko": "배틀 연출 메이커",
+        "label_ru": "Battle Presentation Maker",
+        "label_zh": "Battle Presentation Maker",
+        "label_ja": "Battle Presentation Maker",
+        "description": "Canvas, timeline layers, actors, audio, runtime playback, and assignment.",
+        "description_ko": "캔버스, 타임라인 레이어, 액터, 오디오, 런타임 재생과 적용 동작입니다.",
           "description_ru": "Слои таймлайна, актёры, звук, сохранение и назначение.",
           "description_zh": "时间轴图层、角色、音频、保存和分配。",
           "description_ja": "タイムラインレイヤー、アクター、音声、保存と割り当て。"
         },
         {
           "id": "pokemart",
-          "label": "PokéMart Editor",
-          "label_ko": "PokéMart Editor",
-          "label_ru": "PokéMart Editor",
-          "label_zh": "PokéMart Editor",
-          "label_ja": "PokéMart Editor",
-          "description": "Sales, trades, auction escrow, currency transactions, stock, and runtime GUI behavior.",
-          "description_ko": "판매, 교환, 경매 에스크로, 결제, 재고, 런타임 GUI의 실제 동작입니다.",
+        "label": "PokéMart Editor",
+        "label_ko": "PokéMart Editor",
+        "label_ru": "PokéMart Editor",
+        "label_zh": "PokéMart Editor",
+        "label_ja": "PokéMart Editor",
+        "description": "Sales, trades, auction escrow, currency transactions, stock, and runtime GUI behavior.",
+        "description_ko": "판매, 교환, 경매 에스크로, 결제, 재고, 런타임 GUI의 실제 동작입니다.",
           "description_ru": "Продажа, обмен и аукционы покемонов, валюта и GUI.",
           "description_zh": "宝可梦销售、交换、拍卖、货币和运行界面。",
           "description_ja": "ポケモン販売、交換、オークション、通貨、ランタイムGUI。"
