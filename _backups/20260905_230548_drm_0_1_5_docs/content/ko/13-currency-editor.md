@@ -7,7 +7,7 @@ product: core
 category: 커런시 에디터
 section: currency-editor
 status: 안정
-version: 0.1.5
+version: 0.1.4
 audience: 제작자 / 운영자
 tags:
   - currency
@@ -102,7 +102,3 @@ config/dochi_rpg_maker/
 - HUD의 위치와 디자인은 HUD Maker 또는 GUI Maker의 `currency_hud` 타입에서 다룹니다.
 - 화폐 ID를 바꾸면 기존 상점이나 명령에서 참조하던 ID도 같이 바꿔야 합니다.
 - 여러 화폐를 하나의 단일 금액으로 자동 환전하는 기능은 이 에디터의 기본 역할이 아닙니다.
-
-## 0.1.5 인벤토리 표시 기준
-
-화폐 HUD의 **Inventory** 표시를 끄면 서바이벌과 크리에이티브 모두 인벤토리가 열린 동안 해당 HUD가 숨겨집니다. **Always**나 금액 변경 알림을 켜도 인벤토리 표시 끄기가 우선합니다. 인벤토리를 닫으면 평소 HUD 표시 설정으로 돌아갑니다.

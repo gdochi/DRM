@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: gui-maker
 status: Stable
-version: 0.1.5
+version: 0.1.4
 audience: GUI creators
 tags:
   - gui
@@ -100,9 +100,3 @@ Runtime reads this path from `config/dochi_rpg_maker/gui`. If it is blank, the v
 :::warning GUI Type Mismatch
 A shop layout saved as `dialogue` may render without the shop-specific behavior the runtime expects. Use `npc_shop` for shops and `dialogue` for dialogue.
 :::
-
-## Tooltip and choice styling in 0.1.5
-
-Item tooltips have a dedicated editor: **Visual → Tooltip Maker**. Use it to arrange item previews, text, images, and dividers. Tooltip layouts are still stored in the `gui` folder.
-
-For dialogue choice text, select the **Choice** component and set **Text size (px)**. A dialogue node can override that size with **Choice text px (0 = GUI)**. See **Choice Text And Pulse** for automatic button sizing and per-choice highlights.

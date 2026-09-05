@@ -7,7 +7,7 @@ product: core
 category: GUI Maker
 section: gui-maker
 status: 안정
-version: 0.1.5
+version: 0.1.4
 audience: GUI 제작자
 tags:
   - gui
@@ -112,9 +112,3 @@ GUI Maker에서 저장하는 일반 화면 GUI는 모두 `config/dochi_rpg_maker
 - 기본 GUI 파일을 직접 덮어쓰면 업데이트 때 기본값과 섞일 수 있으므로 `Save As`로 별도 파일을 만드는 쪽이 좋습니다.
 - `default`로 시작하는 GUI와 알려진 기본 GUI 경로는 서버에서 읽기 전용으로 보호되므로 실제로도 `Save As`가 필요합니다.
 - 컴포넌트 ID가 중복되면 런타임 연결이 헷갈릴 수 있으므로 역할이 있는 요소는 고유 ID를 유지해야 합니다.
-
-## 0.1.5 툴팁과 선택지 꾸미기
-
-아이템 툴팁은 **Visual → Tooltip Maker**에서 따로 편집합니다. 아이템 미리보기, 글자, 이미지, 구분선을 배치할 수 있고, 파일은 기존 `gui` 폴더에 저장됩니다. 자세한 사용법은 **Tooltip Maker** 문서를 참고하세요.
-
-대화 GUI의 **Choice** 요소에서는 **Text size (px)**로 글자 크기를 정합니다. 대화 노드의 **Choice text px (0 = GUI)**로 개별 크기를 지정할 수도 있습니다. 버튼 크기와 강조 효과는 **선택지 글자와 펄스** 문서에서 설명합니다.

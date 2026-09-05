@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: hud-maker
 status: Stable
-version: 0.1.5
+version: 0.1.4
 audience: Creators / Operators
 tags:
   - hud
@@ -95,9 +95,3 @@ HUD display depends on the server active set and player data. If you edit JSON m
 `Vanilla HUD` exposes independent `Hide Health`, `Hide Armor`, `Hide Food`, `Hide Air`, `Hide XP Bar`, `Hide XP Level`, `Hide Hotbar`, `Hide Crosshair`, and `Hide Boss Bar` switches. These hide vanilla surfaces; a `VANILLA_REPLACEMENT` definition supplies the custom replacement. Chat, debug text, the scoreboard, and the player list are left untouched.
 
 HUD definitions use `GROUP`, `TEXT`, `BAR`, `IMAGE`, and `ICON_LIST` elements. The bundled armor definition demonstrates `ICON_LIST`; bundled definitions start with `enabled: false`.
-
-## F3 and inventory display in 0.1.5
-
-Opening **F3** keeps your custom HUD and its vanilla-bar replacement active. For example, a custom health bar stays visible instead of switching back to vanilla hearts.
-
-A currency HUD with **Inventory** display turned off stays hidden in both Survival and Creative inventories, even when **Always** or change notifications are enabled.

@@ -7,7 +7,7 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.5
+version: 0.1.4
 audience: Creators / Operators
 tags:
   - paths
@@ -86,7 +86,7 @@ Client and server exchange JSON by `kind` and `path`.
 
 | Data | Startup behavior |
 | --- | --- |
-| Bundled dialogue, GUI, shop, faction, teleporter, quest, stat, item, and popup defaults | Installed or refreshed from the 0.1.5 JAR according to the data type's default policy. |
+| Bundled dialogue, GUI, shop, faction, teleporter, quest, stat, item, and popup defaults | Installed or refreshed from the 0.1.4 JAR according to the data type's default policy. |
 | Remnant Msg sample message | Refreshed from the JAR. |
 | HUD definitions | Installed only when missing and default to `enabled: false`. |
 | Remnant Msg default policy | Installed only when missing. |
@@ -102,7 +102,3 @@ New content should not use `customnpcs/dc_data` as the primary storage root. Tre
 :::danger Operator Note
 When editing JSON by hand, make sure you are changing the server-side `config/dochi_rpg_maker` file, not only a client copy.
 :::
-
-## Tooltip files in 0.1.5
-
-Tooltip Maker uses the same `config/dochi_rpg_maker/gui/` folder as other GUI layouts. Start with `default_tooltip_gui.json` and use **Save As** for your own design. Open tooltip documents in **Visual → Tooltip Maker**. See the **Tooltip Maker** guide for the canvas and item-preview controls.

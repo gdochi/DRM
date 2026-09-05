@@ -7,7 +7,7 @@ product: core
 category: 스탯과 아이템
 section: stat-item
 status: 안정
-version: 0.1.5
+version: 0.1.4
 audience: RPG 시스템 제작자
 tags:
   - stats
@@ -55,8 +55,3 @@ tags:
 `Give Test Item`을 쓰기 전에 정의를 저장하세요. 미리보기 또는 테스트 아이템을 호버해 생성된 툴팁을 확인하고, 요구치를 충족한 플레이어와 미달 플레이어를 각각 테스트하세요.
 :::
 
-## 0.1.5 NPC 스탯 배분과 아이템 툴팁
-
-NPC 적용 화면에서 **Stat Builder** 파일을 연결하세요. 이후 그 NPC와 상호작용하면 연결한 세트의 플레이어 스탯 배분 화면이 열립니다.
-
-아이템 설명창의 배치는 **Visual → Tooltip Maker**에서 꾸밉니다. 아이템 미리보기, 장비 착용 모습, 긴 설명 스크롤은 **Tooltip Maker** 문서에서 설명합니다. 장비를 벗어 최대 체력만 줄어드는 경우에는 피격 효과가 나타나지 않습니다.

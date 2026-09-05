@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: dialogue-editor
 status: Stable
-version: 0.1.5
+version: 0.1.4
 audience: Dialogue creators
 tags:
   - dialogue
@@ -97,7 +97,3 @@ Runtime choices now wrap and grow for long labels, then scroll when they exceed 
 :::tip Default Sample
 The bundled `default_set` starts at node 1, routes to greeting node 2, then branches through nodes 3-5. Clone it when testing new features.
 :::
-
-## Choice appearance in 0.1.5
-
-The **Choices** section now includes **Choice text px (0 = GUI)**. Select an answer to enable **Pulse highlight** and set its color, total ticks, pulse count, and intensity from **0 to 100**. Old dialogue files have no pulse unless you enable it. See **Choice Text And Pulse** for sizing, translated labels, scrolling, and effect timing.

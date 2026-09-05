@@ -7,7 +7,7 @@ product: core
 category: Stats And Items
 section: stat-item
 status: Stable
-version: 0.1.5
+version: 0.1.4
 audience: RPG system creators
 tags:
   - stats
@@ -55,8 +55,3 @@ The multiplier affects equipped stat bonuses, configured attribute modifiers, an
 Save the definition before using `Give Test Item`. Hover the preview or test item to verify the generated tooltip, then test both a qualifying and non-qualifying player.
 :::
 
-## NPC stat screens and item tooltips in 0.1.5
-
-In the NPC apply screen, connect a **Stat Builder** file to the NPC. Interacting with that NPC then opens the player's stat allocation screen using the connected set.
-
-Use **Visual → Tooltip Maker** to design how item information is presented. See the **Tooltip Maker** guide for item previews, equipment views, and long-tooltip scrolling. Removing equipment that only reduces maximum health no longer plays the hurt effect.

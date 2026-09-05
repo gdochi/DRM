@@ -7,7 +7,7 @@ product: core
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.5
+version: 0.1.4
 audience: 처음 설치하는 사용자
 tags:
   - quick-start
@@ -17,11 +17,11 @@ tags:
 ## 첫 실행
 
 1. 서버에서 사용할 경우 서버와 접속 클라이언트 양쪽에 같은 DRM JAR을 넣습니다.
-2. 클라이언트와 서버 양쪽에 CustomNPCs 1.20.1 이상을 설치합니다. 0.1.5에서는 필수 의존성입니다.
+2. 클라이언트와 서버 양쪽에 CustomNPCs 1.20.1 이상을 설치합니다. 0.1.4에서는 필수 의존성입니다.
 3. 월드나 서버를 한 번 실행해서 `config/dochi_rpg_maker` 폴더가 생성되게 합니다.
 4. 크리에이티브 모드 또는 편집 권한이 있는 상태로 `Dochi RPG Maker Core` 아이템을 준비합니다. 이 아이템은 CustomNPCs 아이템 탭에서 찾을 수 있습니다.
 
-처음 실행하면 기본 대화, GUI, 툴팁, 상점, HUD, Remnant Message, 퀘스트, 스탯, 아이템, 텔레포터, 팩션, 팝업 템플릿이 `config/dochi_rpg_maker` 아래에 설치됩니다.
+처음 실행하면 기본 대화, GUI, 상점, HUD, Remnant Message, 퀘스트, 스탯, 아이템, 텔레포터, 팩션, 팝업 템플릿이 `config/dochi_rpg_maker` 아래에 설치됩니다.
 
 ## 처음 생성되는 저장 폴더
 
@@ -30,7 +30,7 @@ DRM이 만드는 JSON은 대부분 `config/dochi_rpg_maker` 아래에 저장됩�
 | 폴더 | 저장되는 JSON | 쓰는 화면 |
 | --- | --- | --- |
 | `dialogue_sets/<set>/` | `dialogue_set.json`, `start.json`, 일반 노드 JSON | Dialogue Editor |
-| `gui/` | 대화, 상점, Remnant Msg 화면과 아이템 툴팁 레이아웃 | GUI Maker / Tooltip Maker |
+| `gui/` | 대화, 상점, Remnant Msg 화면 레이아웃 | GUI Maker |
 | `npc_shops/` | 파일 기반 NPC 상점 문서 | NPC Shop |
 | `quests/<pack>/` | 퀘스트 팩 메타데이터와 개별 퀘스트 | Quest Editor |
 | `stats/sets/` | 재사용 플레이어 스탯 세트 | Stat Builder |
@@ -57,9 +57,9 @@ DRM이 만드는 JSON은 대부분 `config/dochi_rpg_maker` 아래에 저장됩�
 | 대화가 연결된 NPC를 아이템 없이 우클릭 | 대화 런타임 |
 | 상점이 연결된 NPC를 아이템 없이 우클릭 | 상점 런타임 |
 
-에디터 선택 UI에서는 `Dialogue Editor`, `GUI Maker`, `Tooltip Maker`, `NPC Shop`, `NPC Basic`, `Currency Editor`, `HUD Maker`, `Popup Maker`, `Faction Editor`, `Quest Editor`, `Teleporter Editor`, `Remnant Msg Editor`, `Stat Builder`, `Item Editor`를 고를 수 있습니다.
+에디터 선택 UI에서는 `Dialogue Editor`, `GUI Maker`, `NPC Shop`, `NPC Basic`, `Currency Editor`, `HUD Maker`, `Popup Maker`, `Faction Editor`, `Quest Editor`, `Teleporter Editor`, `Remnant Msg Editor`, `Stat Builder`, `Item Editor`를 고를 수 있습니다.
 
-에디터 선택 화면은 검색과 **General**, **Visual**, **Config** 분류를 제공합니다. **Visual**에는 GUI Maker, Tooltip Maker, HUD Maker, Popup Maker가 있고, **Config**에는 Currency Editor와 Stat Builder가 있습니다. 설치한 애드온의 도구도 선택 화면에 표시됩니다.
+0.1.4의 선택 UI는 검색과 `Built-in` / `Add-on` 분류를 지원합니다. 마지막으로 열었던 에디터와 JSON 소스도 세션 동안 기억하므로, 에디터 선택 화면으로 돌아왔다가 다시 열면 직전 작업 흐름을 이어가기 쉽습니다.
 
 ## 공용 편집 단축키
 

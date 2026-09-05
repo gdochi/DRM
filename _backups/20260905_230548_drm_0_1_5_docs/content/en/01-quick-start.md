@@ -7,7 +7,7 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.5
+version: 0.1.4
 audience: First-time users
 tags:
   - quick-start
@@ -18,11 +18,11 @@ tags:
 
 1. Put the `dochi_rpg_maker` JAR into the Forge 1.20.1 instance `mods` folder.
 2. For servers, install the same mod version on both server and connecting clients.
-3. Install CustomNPCs 1.20.1 or newer in the same client and server environment. It is a required 0.1.5 dependency.
+3. Install CustomNPCs 1.20.1 or newer in the same client and server environment. It is a required 0.1.4 dependency.
 4. Start the world or server once so `config/dochi_rpg_maker` is created.
 5. In creative mode, get the `Dochi RPG Maker Core` item.
 
-On first launch, the mod installs default dialogue, GUI, tooltip, shop, HUD, Remnant Message, quest, stat, item, teleporter, faction, and popup templates under `config/dochi_rpg_maker`.
+On first launch, the mod installs default dialogue, GUI, shop, HUD, Remnant Message, quest, stat, item, teleporter, faction, and popup templates under `config/dochi_rpg_maker`.
 
 ## Opening Editors
 
@@ -35,7 +35,7 @@ On first launch, the mod installs default dialogue, GUI, tooltip, shop, HUD, Rem
 
 The core item is also added to the CustomNPCs creative tab. Editing requires creative/edit permission.
 
-The selector has search and **General**, **Visual**, and **Config** groups. **Visual** contains GUI Maker, Tooltip Maker, HUD Maker, and Popup Maker. General includes the dialogue, NPC, quest, teleporter, faction, message, and item editors; Config contains Currency Editor and Stat Builder. The selector also lists installed add-on tools.
+The 0.1.4 selector has search plus `Built-in` and `Add-on` categories. Built-in tools include Dialogue, GUI Maker, NPC Shop, NPC Basic, Currency, HUD Maker, Popup Maker, Faction, Quest, Teleporter, Remnant Msg, Stat Builder, and Item Editor. During the current session it remembers the last editor, sub-screen, and JSON source.
 
 ## Shared Editor Shortcuts
 

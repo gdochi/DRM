@@ -7,7 +7,7 @@ product: core
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.5
+version: 0.1.4
 audience: 서버 운영자
 tags:
   - install
@@ -22,7 +22,7 @@ DRM Core는 `mods.toml` 기준으로 Forge 47 이상, Minecraft 1.20.1 이상 1.
 | --- | --- | --- |
 | Mod Loader | Forge / `javafml` `[47,)` | Forge 1.20.1 계열 |
 | Minecraft | `[1.20.1,1.21)` | 문서는 1.20.1 기준 |
-| DRM Core | `dochi_rpg_maker` 0.1.5 | 클라이언트와 서버 양쪽 필요 |
+| DRM Core | `dochi_rpg_maker` 0.1.4 | 클라이언트와 서버 양쪽 필요 |
 | Java | 17 | Forge 1.20.1 실행 환경과 동일하게 맞춥니다. |
 | CustomNPCs | `[1.20.1,)` | 클라이언트와 서버 양쪽 필수 |
 

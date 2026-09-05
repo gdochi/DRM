@@ -7,7 +7,7 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.5
+version: 0.1.4
 audience: Server operators
 tags:
   - install
@@ -22,7 +22,7 @@ DRM Core targets Forge 47+, Minecraft 1.20.1 up to but not including 1.21. The m
 | --- | --- | --- |
 | Mod Loader | Forge / `javafml` `[47,)` | Forge 1.20.1 family |
 | Minecraft | `[1.20.1,1.21)` | Docs assume 1.20.1 |
-| DRM Core | `dochi_rpg_maker` 0.1.5 | Required on both client and server |
+| DRM Core | `dochi_rpg_maker` 0.1.4 | Required on both client and server |
 | Java | 17 | Match the Forge 1.20.1 runtime. |
 | CustomNPCs | `[1.20.1,)` | Required on both client and server. |
 

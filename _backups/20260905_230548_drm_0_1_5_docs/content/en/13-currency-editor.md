@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: currency-editor
 status: Stable
-version: 0.1.5
+version: 0.1.4
 audience: Creators / Operators
 tags:
   - currency
@@ -88,7 +88,3 @@ The server balance is authoritative. If the client display does not update, chec
 | Pickup does not convert to balance | Item ID, conversion amount, and server reload. |
 | Shop payment fails | Currency ID in shop price and definition file. |
 | Balance after death is unexpected | Whether death rule is `KEEP` or `LOSE`. |
-
-## Inventory display in 0.1.5
-
-Turning **Inventory** display off hides that currency HUD while the inventory is open, in both Survival and Creative. **Always** and change notifications do not override this setting. Close the inventory to return to the normal HUD display rules.
