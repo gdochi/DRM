@@ -2,7 +2,7 @@
 title: Installation and Your First NPC
 slug: cobblemon-editor-setup
 order: 510
-description: Install Dochi Cobblemon Editor 0.1.4, verify its folders, and apply your first NPC role.
+description: Install Dochi's Real Armor 0.1.4, verify its folders, and apply your first NPC role.
 product: drm-cobblemon-editor
 category: Setup
 section: setup

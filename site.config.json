@@ -1,7 +1,7 @@
 {
   "title": "Dochi's Wiki",
   "brand": "Dochi's Wiki",
-  "description": "Documentation hub for DRM Core, Dochi's Cobblemon Editor, Dochi's Battleworks, Dochi's Warfare, and Dochi's Spawn Control.",
+  "description": "Documentation hub for DRM Core, Dochi's Real Armor, Dochi's Battleworks, Dochi's Warfare, and Dochi's Spawn Control.",
   "defaultLocale": "en",
   "fallbackLocale": "en",
   "repository": "",
@@ -42,8 +42,7 @@
       "logoAlt_ja": "Dochi's RPG Maker Forge ロゴ",
       "type": "standalone",
       "product": "core",
-      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker",
-      "modrinthUrl": "https://modrinth.com/mod/dochi-rpg-maker"
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker"
     },
     {
       "id": "drm-fabric",
@@ -70,16 +69,15 @@
       "logoAlt_ja": "Dochi's RPG Maker Fabric ロゴ",
       "type": "standalone",
       "product": "core-fabric",
-      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker",
-      "modrinthUrl": "https://modrinth.com/mod/fabric-dochi-rpg-maker"
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker"
     },
     {
       "id": "drm-cobblemon-editor",
-      "label": "Dochi Cobblemon Editor",
-      "label_ko": "Dochi Cobblemon Editor",
-      "label_ru": "Dochi Cobblemon Editor",
-      "label_zh": "Dochi Cobblemon Editor",
-      "label_ja": "Dochi Cobblemon Editor",
+      "label": "Dochi's Real Armor",
+      "label_ko": "Dochi's Real Armor",
+      "label_ru": "Dochi's Real Armor",
+      "label_zh": "Dochi's Real Armor",
+      "label_ja": "Dochi's Real Armor",
       "shortLabel": "Cobblemon Editor",
       "shortLabel_ko": "Cobblemon Editor",
       "shortLabel_ru": "Cobblemon Editor",
@@ -91,11 +89,11 @@
       "description_zh": "用于制作基于 CustomNPCs 的 Cobblemon 训练师、战斗演出和宝可梦商店的 DRM 附加模组。",
       "description_ja": "CustomNPCsベースのCobblemonトレーナー、バトル演出、ポケモンショップを制作するDRMアドオンです。",
       "logo": "assets/mod-logos/drm_cobblemon_editor.png",
-      "logoAlt": "Dochi Cobblemon Editor logo",
-      "logoAlt_ko": "Dochi Cobblemon Editor 로고",
-      "logoAlt_ru": "Логотип Dochi Cobblemon Editor",
-      "logoAlt_zh": "Dochi Cobblemon Editor 标志",
-      "logoAlt_ja": "Dochi Cobblemon Editor ロゴ",
+      "logoAlt": "Dochi's Real Armor logo",
+      "logoAlt_ko": "Dochi's Real Armor 로고",
+      "logoAlt_ru": "Логотип Dochi's Real Armor",
+      "logoAlt_zh": "Dochi's Real Armor 标志",
+      "logoAlt_ja": "Dochi's Real Armor ロゴ",
       "type": "addon",
       "product": "drm-cobblemon-editor",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor"
@@ -142,8 +140,7 @@
       "logoAlt_ja": "Dochi's Warfare ロゴ",
       "type": "standalone",
       "product": "dochi-warfare",
-      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare",
-      "modrinthUrl": "https://modrinth.com/mod/dochis-warfare"
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare"
     },
     {
       "id": "dochi-spawn-control",
@@ -169,15 +166,16 @@
       "logoAlt_zh": "Dochi's Spawn Control 标志",
       "logoAlt_ja": "Dochi's Spawn Control ロゴ",
       "type": "standalone",
-      "product": "dochi-spawn-control"
+      "product": "dochi-spawn-control",
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-controll"
     },
     {
       "id": "dochi-real-armor",
-      "label": "Dochi Real Armor",
-      "label_ko": "Dochi Real Armor",
-      "label_ru": "Dochi Real Armor",
-      "label_zh": "Dochi Real Armor",
-      "label_ja": "Dochi Real Armor",
+      "label": "Dochi's Real Armor",
+      "label_ko": "Dochi's Real Armor",
+      "label_ru": "Dochi's Real Armor",
+      "label_zh": "Dochi's Real Armor",
+      "label_ja": "Dochi's Real Armor",
       "shortLabel": "Real Armor",
       "shortLabel_ko": "리얼 아머",
       "shortLabel_ru": "Real Armor",
@@ -189,11 +187,11 @@
       "description_zh": "为 CustomNPCs 与 Easy NPC 提供原版风格及分部位护甲计算。",
       "description_ja": "CustomNPCsとEasy NPCにバニラ式および部位別の防具計算を適用します。",
       "logo": "assets/mod-logos/cnpc_real_armor.png",
-      "logoAlt": "Dochi Real Armor logo",
-      "logoAlt_ko": "Dochi Real Armor 로고",
-      "logoAlt_ru": "Логотип Dochi Real Armor",
-      "logoAlt_zh": "Dochi Real Armor 标志",
-      "logoAlt_ja": "Dochi Real Armor ロゴ",
+      "logoAlt": "Dochi's Real Armor logo",
+      "logoAlt_ko": "Dochi's Real Armor 로고",
+      "logoAlt_ru": "Логотип Dochi's Real Armor",
+      "logoAlt_zh": "Dochi's Real Armor 标志",
+      "logoAlt_ja": "Dochi's Real Armor ロゴ",
       "type": "standalone",
       "product": "dochi-real-armor",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-real-armor"
@@ -203,27 +201,27 @@
     "en": {
       "label": "English",
       "shortLabel": "EN",
-      "description": "A structured documentation hub for DRM Core, Dochi's Cobblemon Editor, Dochi's Battleworks, Dochi's Warfare, and Dochi's Spawn Control."
+      "description": "A structured documentation hub for DRM Core, Dochi's Real Armor, Dochi's Battleworks, Dochi's Warfare, and Dochi's Spawn Control."
     },
     "ko": {
       "label": "한국어",
       "shortLabel": "KO",
-      "description": "DRM Core, Dochi's Cobblemon Editor, Dochi's Battleworks, 도치 워페어, Dochi's Spawn Control 문서를 한국어로 정리한 문서 허브입니다."
+      "description": "DRM Core, Dochi's Real Armor, Dochi's Battleworks, 도치 워페어, Dochi's Spawn Control 문서를 한국어로 정리한 문서 허브입니다."
     },
     "ru": {
       "label": "Русский",
       "shortLabel": "RU",
-      "description": "Структурированный центр документации для DRM Core, Dochi's Cobblemon Editor, Dochi's Battleworks, Dochi's Warfare и Dochi's Spawn Control."
+      "description": "Структурированный центр документации для DRM Core, Dochi's Real Armor, Dochi's Battleworks, Dochi's Warfare и Dochi's Spawn Control."
     },
     "zh": {
       "label": "简体中文",
       "shortLabel": "ZH",
-      "description": "DRM Core、Dochi's Cobblemon Editor、Dochi's Battleworks、Dochi's Warfare 和 Dochi's Spawn Control 的结构化文档中心。"
+      "description": "DRM Core、Dochi's Real Armor、Dochi's Battleworks、Dochi's Warfare 和 Dochi's Spawn Control 的结构化文档中心。"
     },
     "ja": {
       "label": "日本語",
       "shortLabel": "JA",
-      "description": "DRM Core、Dochi's Cobblemon Editor、Dochi's Battleworks、Dochi's Warfare、Dochi's Spawn Control の構造化されたドキュメントハブです。"
+      "description": "DRM Core、Dochi's Real Armor、Dochi's Battleworks、Dochi's Warfare、Dochi's Spawn Control の構造化されたドキュメントハブです。"
     }
   },
   "products": {
@@ -629,19 +627,19 @@
       ]
     },
     "drm-cobblemon-editor": {
-      "label": "Dochi Cobblemon Editor",
-      "label_ko": "Dochi Cobblemon Editor",
-      "label_ru": "Dochi Cobblemon Editor",
-      "label_zh": "Dochi Cobblemon Editor",
-      "label_ja": "Dochi Cobblemon Editor",
+      "label": "Dochi's Real Armor",
+      "label_ko": "Dochi's Real Armor",
+      "label_ru": "Dochi's Real Armor",
+      "label_zh": "Dochi's Real Armor",
+      "label_ja": "Dochi's Real Armor",
       "shortLabel": "Cobblemon Editor",
       "shortLabel_ko": "Cobblemon Editor",
       "shortLabel_ru": "Cobblemon Editor",
       "shortLabel_zh": "Cobblemon Editor",
       "shortLabel_ja": "Cobblemon Editor",
       "accent": "green",
-      "description": "Dochi Cobblemon Editor 0.1.4 for Fabric 1.21.1: trainers, adaptive levels, tunable AI, battle presentations, PokeMart, healing, starter selection, and reusable NPCs.",
-      "description_ko": "Fabric 1.21.1용 Dochi Cobblemon Editor 0.1.4: 트레이너, 레벨 맞춤, 세부 AI, 배틀 연출, PokéMart, 치료, 스타터 선택과 재사용 NPC를 제작합니다.",
+      "description": "Dochi's Real Armor 0.1.4 for Fabric 1.21.1: trainers, adaptive levels, tunable AI, battle presentations, PokeMart, healing, starter selection, and reusable NPCs.",
+      "description_ko": "Fabric 1.21.1용 Dochi's Real Armor 0.1.4: 트레이너, 레벨 맞춤, 세부 AI, 배틀 연출, PokéMart, 치료, 스타터 선택과 재사용 NPC를 제작합니다.",
       "description_ru": "Дополнение DRM для Fabric 1.21.1: тренеры Cobblemon на базе CustomNPCs, встречи с отдельными покемонами, боевые заставки и экраны PokeMart.",
       "description_zh": "Fabric 1.21.1 DRM 附加模组，用于制作基于 CustomNPCs 的 Cobblemon 训练师、单体宝可梦遭遇、战斗演出和 PokeMart 运行界面。",
       "description_ja": "Fabric 1.21.1向けDRMアドオン。CustomNPCsベースのCobblemonトレーナー、ポケモン単体戦、バトル演出、PokeMartランタイムを制作できます。",
@@ -988,11 +986,11 @@
       ]
     },
     "dochi-real-armor": {
-      "label": "Dochi Real Armor",
-      "label_ko": "Dochi Real Armor",
-      "label_ru": "Dochi Real Armor",
-      "label_zh": "Dochi Real Armor",
-      "label_ja": "Dochi Real Armor",
+      "label": "Dochi's Real Armor",
+      "label_ko": "Dochi's Real Armor",
+      "label_ru": "Dochi's Real Armor",
+      "label_zh": "Dochi's Real Armor",
+      "label_ja": "Dochi's Real Armor",
       "shortLabel": "Real Armor",
       "shortLabel_ko": "리얼 아머",
       "shortLabel_ru": "Real Armor",

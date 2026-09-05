@@ -1,5 +1,5 @@
 ---
-title: Install and Configure Dochi Real Armor
+title: Install and Configure Dochi's Real Armor
 slug: dochi-real-armor-setup
 order: 910
 description: Installation requirements, config locations, GUI access, defaults, and legacy migration.
@@ -26,7 +26,7 @@ Place `dochi_real_armor-0.1.1.jar` in the `mods` folder on both the client and s
 
 ## Open the settings
 
-From the title screen or pause menu, open **Mods**, select **Dochi Real Armor**, and press **Config**. If Dochi RPG Maker is installed, open its **Mods Config** screen and select the Dochi Real Armor tab.
+From the title screen or pause menu, open **Mods**, select **Dochi's Real Armor**, and press **Config**. If Dochi RPG Maker is installed, open its **Mods Config** screen and select the Dochi's Real Armor tab.
 
 The GUI uses ON/OFF switches. Multiplayer changes are sent to the server and require permission level 2. Users without permission can view the screen but cannot apply server-authoritative changes.
 

@@ -1,5 +1,5 @@
 ---
-title: Dochi Real Armor 설치와 설정
+title: Dochi's Real Armor 설치와 설정
 slug: dochi-real-armor-setup
 order: 910
 description: 설치 요구 사항, 설정 경로, GUI 접근, 기본값과 이전 설정 이관 방법입니다.
@@ -26,7 +26,7 @@ tags:
 
 ## 설정 화면 열기
 
-타이틀 화면이나 일시 정지 메뉴에서 **Mods > Dochi Real Armor > Config**를 엽니다. Dochi RPG Maker가 설치되어 있으면 DRM의 **Mods Config**에서 Dochi Real Armor 탭을 선택할 수도 있습니다.
+타이틀 화면이나 일시 정지 메뉴에서 **Mods > Dochi's Real Armor > Config**를 엽니다. Dochi RPG Maker가 설치되어 있으면 DRM의 **Mods Config**에서 Dochi's Real Armor 탭을 선택할 수도 있습니다.
 
 설정값은 ON/OFF 스위치로 조작합니다. 멀티플레이 설정 변경은 서버로 전송되며 권한 레벨 2가 필요합니다.
 

@@ -2,7 +2,7 @@
 title: 설치와 첫 적용
 slug: cobblemon-editor-setup
 order: 510
-description: Dochi Cobblemon Editor 0.1.4 설치, 폴더, 첫 NPC 적용 방법입니다.
+description: Dochi's Real Armor 0.1.4 설치, 폴더, 첫 NPC 적용 방법입니다.
 product: drm-cobblemon-editor
 category: 설치
 section: setup

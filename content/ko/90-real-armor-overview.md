@@ -1,5 +1,5 @@
 ---
-title: Dochi Real Armor 개요
+title: Dochi's Real Armor 개요
 slug: dochi-real-armor-overview
 order: 900
 description: 0.1.1의 역할, 지원 NPC 모드, 방어 처리 위치와 호환 범위를 설명합니다.
@@ -17,7 +17,7 @@ tags:
 
 ## 모드의 역할
 
-**Dochi Real Armor**는 지원 NPC가 착용한 방어구를 바닐라 방식의 피해 감소에 참여시키는 Forge 1.20.1 호환 모드입니다. 모드 ID와 명령어 루트는 `dochi_real_armor`입니다.
+**Dochi's Real Armor**는 지원 NPC가 착용한 방어구를 바닐라 방식의 피해 감소에 참여시키는 Forge 1.20.1 호환 모드입니다. 모드 ID와 명령어 루트는 `dochi_real_armor`입니다.
 
 두 NPC 연동은 선택 사항이며 각각 따로 켜고 끌 수 있습니다.
 

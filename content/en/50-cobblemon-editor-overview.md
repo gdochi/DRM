@@ -1,8 +1,8 @@
 ---
-title: Dochi Cobblemon Editor
+title: Dochi's Real Armor
 slug: cobblemon-editor-overview
 order: 500
-description: Learn the 0.1.4 feature set, supported environment, authoring tools, and runtime rules of Dochi Cobblemon Editor.
+description: Learn the 0.1.4 feature set, supported environment, authoring tools, and runtime rules of Dochi's Real Armor.
 product: drm-cobblemon-editor
 category: Overview
 section: overview
@@ -15,14 +15,14 @@ tags:
   - overview
 ---
 
-## What Dochi Cobblemon Editor is
+## What Dochi's Real Armor is
 
-`Dochi Cobblemon Editor` is a DRM addon for Fabric 1.21.1. It lets creators attach Cobblemon trainer battles or a single Pokémon battle to CustomNPCs NPCs, build full-screen pre-battle presentations, create Pokémon markets, healers, and starter selectors, and reuse NPC clones in the same workflow.
+`Dochi's Real Armor` is a DRM addon for Fabric 1.21.1. It lets creators attach Cobblemon trainer battles or a single Pokémon battle to CustomNPCs NPCs, build full-screen pre-battle presentations, create Pokémon markets, healers, and starter selectors, and reuse NPC clones in the same workflow.
 
 The addon does not imitate Cobblemon with a separate battle engine. Battles use the player's real Cobblemon party and Cobblemon 1.7.3 runtime. The intended authoring path is the DRM editor selector, `Save As`, and the NPC apply screen rather than hand-writing every JSON document.
 
 :::note Display name and internal ID
-Version 0.1.4 uses the display name `Dochi Cobblemon Editor` and the JAR name `dochi_cobblemon_editor-<version>-fabric-1.21.1.jar`. For existing-data compatibility, the internal mod ID and resource namespace remain `cobble_npc`. Do not rename existing `cobble_npc:*` IDs or data folders.
+Version 0.1.4 uses the display name `Dochi's Real Armor` and the JAR name `dochi_cobblemon_editor-<version>-fabric-1.21.1.jar`. For existing-data compatibility, the internal mod ID and resource namespace remain `cobble_npc`. Do not rename existing `cobble_npc:*` IDs or data folders.
 :::
 
 ## Supported environment
@@ -38,7 +38,7 @@ Version 0.1.4 uses the display name `Dochi Cobblemon Editor` and the JAR name `d
 | CustomNPCs | Fabric 1.0.0 |
 | CobbleDollars | Optional; required only for the PokéMart `cobbledollars` provider |
 
-This release targets Fabric 1.21.1. Do not mix it with Forge builds or another Minecraft version. On a normal multiplayer server, install matching DRM Core, Cobblemon, CustomNPCs, and Dochi Cobblemon Editor versions on the server and every connecting client.
+This release targets Fabric 1.21.1. Do not mix it with Forge builds or another Minecraft version. On a normal multiplayer server, install matching DRM Core, Cobblemon, CustomNPCs, and Dochi's Real Armor versions on the server and every connecting client.
 
 ## Authoring tools
 

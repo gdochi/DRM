@@ -1,5 +1,5 @@
 ---
-title: Dochi Real Armor Overview
+title: Dochi's Real Armor Overview
 slug: dochi-real-armor-overview
 order: 900
 description: Purpose, supported NPC mods, armor pipeline, and compatibility boundaries for version 0.1.1.
@@ -17,7 +17,7 @@ tags:
 
 ## What the mod does
 
-**Dochi Real Armor** is a Forge 1.20.1 compatibility mod that makes equipped armor participate in vanilla-style damage reduction for supported NPC entities. Its mod ID and command root are `dochi_real_armor`.
+**Dochi's Real Armor** is a Forge 1.20.1 compatibility mod that makes equipped armor participate in vanilla-style damage reduction for supported NPC entities. Its mod ID and command root are `dochi_real_armor`.
 
 The mod supports two optional NPC integrations:
 
@@ -53,4 +53,4 @@ Easy NPC projectile hits are resolved by tracing the projectile path through the
 
 ## Related integration
 
-Dochi RPG Maker 0.1.4 or later is optional. When present, Dochi Real Armor registers a tab in DRM's Mods Config screen. Without DRM, the Forge Mods list opens a matching standalone configuration screen.
+Dochi RPG Maker 0.1.4 or later is optional. When present, Dochi's Real Armor registers a tab in DRM's Mods Config screen. Without DRM, the Forge Mods list opens a matching standalone configuration screen.
