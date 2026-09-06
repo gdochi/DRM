@@ -7,7 +7,7 @@ product: core-fabric
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.9
+version: 0.1.8
 audience: 제작자 / 운영자
 tags:
   - paths
@@ -125,8 +125,3 @@ NPC Spawner 블록 설정과 가중치 소스 풀은 `ServerJsonStorage` 종류�
 :::danger 운영 주의
 서버에서 직접 JSON을 수정할 때는 `config/dochi_rpg_maker`의 서버 파일을 고치고, 클라이언트 복사본만 수정하지 않았는지 확인해야 합니다.
 :::
-
-
-## 씬 파일
-
-Scene Maker의 씬은 `config/dochi_rpg_maker/scene/`에 저장합니다. 월드 위치를 Apply한 뒤 씬도 저장하세요. 씬에서 쓰는 공통 GUI 레이아웃은 기존 `config/dochi_rpg_maker/gui/` 폴더를 사용합니다.

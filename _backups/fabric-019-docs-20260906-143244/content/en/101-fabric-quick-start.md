@@ -2,12 +2,12 @@
 title: Quick Start
 slug: quick-start
 order: 20
-description: The shortest path into DRM Core 0.1.9 on Fabric 1.21.1.
+description: The shortest path into DRM Core 0.1.8 on Fabric 1.21.1.
 product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.9
+version: 0.1.8
 audience: First-time users
 tags:
   - quick-start
@@ -17,7 +17,7 @@ tags:
 ## First Launch
 
 1. Prepare Minecraft 1.21.1, Fabric Loader 0.18.0 or newer, Fabric API 0.116.11 or newer, and Java 21.
-2. Put the DRM Core 0.1.9 Fabric JAR in the client and server `mods` folders.
+2. Put the DRM Core 0.1.8 Fabric JAR in the client and server `mods` folders.
 3. Install CustomNPCs 1.0.0 on the server and clients. It is required by DRM 0.1.8.
 4. Start the world or server once so `config/dochi_rpg_maker` is created.
 5. In Creative mode or with edit permission, get the `Dochi RPG Maker Core` item from the CustomNPCs tab or run `/give @s dochi_rpg_maker:dialogue_editor`.
@@ -87,10 +87,3 @@ For shops, start from `NPC Shop` in the same selector. File-based shops are save
 :::tip Operator Command
 If you edit server JSON by hand, run `/drm reload` or review `settings/reload_policy.json`.
 :::
-
-
-## Scene Maker and screen navigation
-
-In 0.1.9, choose **Scene Maker** in the editor selector to build camera scenes. See **Scene Maker** for timeline, world-pin dragging, curves, and playback commands.
-
-The shared topbar always shows back and forward arrows. Hover for their names. They move between previously opened screens and preserve editing state; they are separate from Undo/Redo. An arrow is disabled when there is no screen in that direction. Addon screens need an updated addon build to use these controls.

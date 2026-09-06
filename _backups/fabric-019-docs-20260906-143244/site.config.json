@@ -56,11 +56,11 @@
       "shortLabel_ru": "Dochi's RPG Maker Fabric",
       "shortLabel_zh": "Dochi's RPG Maker Fabric",
       "shortLabel_ja": "Dochi's RPG Maker Fabric",
-      "description": "Dochi's RPG Maker 0.1.9 documentation for Fabric 1.21.1.",
-      "description_ko": "Fabric 1.21.1용 Dochi's RPG Maker 0.1.9 문서입니다.",
-      "description_ru": "Документация Dochi's RPG Maker 0.1.9 для Fabric 1.21.1.",
-      "description_zh": "适用于 Fabric 1.21.1 的 Dochi's RPG Maker 0.1.9 文档。",
-      "description_ja": "Fabric 1.21.1向けDochi's RPG Maker 0.1.9のドキュメントです。",
+      "description": "Dochi's RPG Maker 0.1.8 documentation for Fabric 1.21.1.",
+      "description_ko": "Fabric 1.21.1용 Dochi's RPG Maker 0.1.8 문서입니다.",
+      "description_ru": "Документация Dochi's RPG Maker 0.1.8 для Fabric 1.21.1.",
+      "description_zh": "适用于 Fabric 1.21.1 的 Dochi's RPG Maker 0.1.8 文档。",
+      "description_ja": "Fabric 1.21.1向けDochi's RPG Maker 0.1.8のドキュメントです。",
       "logo": "assets/mod-logos/drm_fabric.png",
       "logoAlt": "Dochi's RPG Maker Fabric logo",
       "logoAlt_ko": "Dochi's RPG Maker Fabric 로고",
@@ -414,11 +414,11 @@
       "shortLabel_zh": "Dochi's RPG Maker Fabric",
       "shortLabel_ja": "Dochi's RPG Maker Fabric",
       "accent": "blue",
-      "description": "Fabric 1.21.1 documentation for DRM Core 0.1.9.",
-      "description_ko": "DRM Core 0.1.9의 Fabric 1.21.1 문서입니다.",
-      "description_ru": "Документация DRM Core 0.1.9 для Fabric 1.21.1.",
-      "description_zh": "DRM Core 0.1.9 的 Fabric 1.21.1 文档。",
-      "description_ja": "DRM Core 0.1.9のFabric 1.21.1向けドキュメントです。",
+      "description": "Fabric 1.21.1 documentation for DRM Core 0.1.8.",
+      "description_ko": "DRM Core 0.1.8의 Fabric 1.21.1 문서입니다.",
+      "description_ru": "Документация DRM Core 0.1.8 для Fabric 1.21.1.",
+      "description_zh": "DRM Core 0.1.8 的 Fabric 1.21.1 文档。",
+      "description_ja": "DRM Core 0.1.8のFabric 1.21.1向けドキュメントです。",
       "sections": [
         {
           "id": "getting-started",
@@ -575,16 +575,6 @@
           "description_ru": "Справочник JSON, поток данных и рабочие процессы.",
           "description_zh": "JSON 参考、数据流和工作流程。",
           "description_ja": "JSONリファレンス、データフロー、作業フロー。"
-        },
-        {
-          "id": "scene-maker",
-          "label": "Scene Maker",
-          "label_ko": "씬 메이커",
-          "label_ru": "Scene Maker",
-          "label_zh": "Scene Maker",
-          "label_ja": "Scene Maker",
-          "description": "Camera scenes, timeline editing, world pins, and playback.",
-          "description_ko": "카메라 연출, 타임라인 편집, 월드 핀과 재생 방법입니다."
         }
       ]
     },

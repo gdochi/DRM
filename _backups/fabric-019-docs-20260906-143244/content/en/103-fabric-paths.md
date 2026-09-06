@@ -7,7 +7,7 @@ product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.1.9
+version: 0.1.8
 audience: Creators / Operators
 tags:
   - paths
@@ -104,8 +104,3 @@ New content should not use `customnpcs/dc_data` as the primary storage root. Tre
 :::danger Operator Note
 When editing JSON by hand, make sure you are changing the server-side `config/dochi_rpg_maker` file, not only a client copy.
 :::
-
-
-## Scene files
-
-Scene Maker saves scenes under `config/dochi_rpg_maker/scene/`. Save after applying world-position changes. Shared scene GUI layouts use the regular `config/dochi_rpg_maker/gui/` folder.

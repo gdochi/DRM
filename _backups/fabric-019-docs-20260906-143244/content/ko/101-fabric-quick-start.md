@@ -2,12 +2,12 @@
 title: 빠른 시작
 slug: quick-start
 order: 20
-description: Fabric 1.21.1용 DRM Core 0.1.9을 처음 열고 제작을 시작하는 순서입니다.
+description: Fabric 1.21.1용 DRM Core 0.1.8을 처음 열고 제작을 시작하는 순서입니다.
 product: core-fabric
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.9
+version: 0.1.8
 audience: 처음 설치하는 사용자
 tags:
   - quick-start
@@ -17,7 +17,7 @@ tags:
 ## 첫 실행
 
 1. Minecraft 1.21.1, Fabric Loader 0.18.0 이상, Fabric API 0.116.11 이상, Java 21 환경을 준비합니다.
-2. 서버와 접속 클라이언트 양쪽에 같은 DRM 0.1.9 Fabric JAR을 넣습니다.
+2. 서버와 접속 클라이언트 양쪽에 같은 DRM 0.1.8 Fabric JAR을 넣습니다.
 3. CustomNPCs 1.0.0을 서버와 클라이언트에 함께 설치합니다. 0.1.8부터 필수 의존성입니다.
 4. 월드나 서버를 한 번 실행해서 `config/dochi_rpg_maker` 폴더가 생성되게 합니다.
 5. 크리에이티브 모드 또는 편집 권한이 있는 상태로 `Dochi RPG Maker Core` 아이템을 준비합니다. CustomNPCs 탭에서 찾거나 `/give @s dochi_rpg_maker:dialogue_editor`를 사용합니다.
@@ -112,10 +112,3 @@ DRM이 만드는 JSON은 대부분 `config/dochi_rpg_maker` 아래에 저장됩�
 :::tip 운영 명령
 서버 JSON을 직접 수정했다면 `/drm reload`를 실행하거나 `settings/reload_policy.json`의 `reloadOnTrigger` 값을 확인합니다.
 :::
-
-
-## 씬 메이커와 화면 이동
-
-0.1.9에서는 에디터 선택 화면의 **Scene Maker**로 카메라 연출을 만들 수 있습니다. 타임라인, 월드 핀 드래그, 곡선과 재생 명령어는 **씬 메이커** 문서에서 설명합니다.
-
-공통 탑바에는 뒤로·앞으로 화살표가 항상 표시됩니다. 마우스를 올리면 기능 이름이 나옵니다. 편집 상태를 유지하며 이전에 열었던 화면 사이를 이동하는 기능으로, 작업을 되돌리는 Undo/Redo와는 별개입니다. 이동할 화면이 없으면 비활성화됩니다. 애드온 화면도 지원하려면 애드온을 새 빌드로 교체해야 합니다.
