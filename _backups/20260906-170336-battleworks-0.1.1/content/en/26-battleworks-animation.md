@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: Battleworks
 status: Guide
-version: 0.1.1
+version: 0.1.0
 audience: Combat content creators
 tags:
   - battleworks
@@ -38,11 +38,11 @@ Unattached hitboxes also support clip previews. Attach the hitbox to a pattern t
 
 ## Animation versus contact timing
 
-Hitboxes define contact geometry and damage. Animation playback in combat and editor previews uses DRM's existing animation functions, following the same playback route as `/drm playani`.
+A hitbox owns geometry and damage; a stage owns the clip mapping. During one server-side pattern execution, the first successfully started animation plays once. Repeated hit contacts and stage transitions do not continually restart that attack motion.
 
-For a first melee attack, assign one clip to **Action** and align the hitbox contact with it. Repeated contacts do not continually restart the stage animation.
+For a first attack, **assign one clip to Action and leave Windup/Recovery animation empty**. This makes motion and contact timing easier to compare. Do not assume that assigning different clips to several stages creates a sequence of animations; the attack uses a one-shot playback policy.
 
-Skill actions can carry their own casting animation. A successful cast starts its assigned motion independently of the stage's one-shot animation. Give different casts different compatible clips and leave enough time for each motion before the next cast.
+Gecko preview uses an independent editor clock, so it can advance while the game is paused. A selected clip longer than its pattern may extend preview playback to show its ending, without changing the saved pattern duration.
 
 ## Empty lists or missing playback
 
