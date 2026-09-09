@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 서비스 NPC
 section: services
 status: Draft
-version: 0.1.4
+version: 0.1.6
 audience: 포켓몬 치료 NPC를 만드는 제작자
 tags:
   - nurse-joy

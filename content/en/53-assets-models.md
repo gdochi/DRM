@@ -7,7 +7,7 @@ product: core
 category: World And NPC Tools
 section: world-tools
 status: Stable
-version: 0.1.4
+version: 0.1.6
 audience: GUI and NPC creators
 tags:
   - assets

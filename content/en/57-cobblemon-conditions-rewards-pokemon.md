@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.4
+version: 0.1.6
 audience: Creators building conditional battles and Pokémon NPCs
 tags:
   - conditions

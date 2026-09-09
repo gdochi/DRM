@@ -7,7 +7,7 @@ product: core
 category: 핵심 시스템
 section: getting-started
 status: 안정
-version: 0.1.4
+version: 0.1.6
 audience: 제작자
 tags:
   - concepts

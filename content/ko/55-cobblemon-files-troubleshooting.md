@@ -2,12 +2,12 @@
 title: 파일과 문제 해결
 slug: cobblemon-files-troubleshooting
 order: 590
-description: 0.1.4 저장 경로, 스키마, 원본 추적, 상호작용과 운영 점검입니다.
+description: 0.1.6 저장 경로, 스키마, 원본 추적, 상호작용과 운영 점검입니다.
 product: drm-cobblemon-editor
 category: 운영
 section: operations
 status: Draft
-version: 0.1.4
+version: 0.1.6
 audience: 서버 운영자와 콘텐츠 배포자
 tags:
   - paths

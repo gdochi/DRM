@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
-version: 0.1.4
+version: 0.1.6
 audience: Creators tuning presentation timing and runtime behavior
 tags:
   - layers

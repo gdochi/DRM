@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
-version: 0.1.4
+version: 0.1.6
 audience: 전투 연출 제작자
 tags:
   - presentation
@@ -112,7 +112,7 @@ Pokemon 액터는 사람형 관절 포즈를 사용하지 않고 전체 모델 �
 
 ## 이미지와 사운드 선택
 
-이미지 브라우저는 현재 클라이언트가 찾을 수 있는 연출 이미지 리소스를 검색합니다. 0.1.4에서는 검색 결과를 페이지로 나누고 필요한 썸네일만 불러오므로 리소스가 많은 팩에서도 처음 여는 부담이 줄었습니다. 선택한 이미지의 원본 크기를 읽을 수 있으면 새 Texture의 크기와 Crop 초기값을 구성하는 데 사용합니다.
+이미지 브라우저는 현재 클라이언트가 찾을 수 있는 연출 이미지 리소스를 검색합니다. 0.1.6에서는 검색 결과를 페이지로 나누고 필요한 썸네일만 불러오므로 리소스가 많은 팩에서도 처음 여는 부담이 줄었습니다. 선택한 이미지의 원본 크기를 읽을 수 있으면 새 Texture의 크기와 Crop 초기값을 구성하는 데 사용합니다.
 
 Texture와 Stage Image는 Minecraft 리소스 ID를 사용합니다. Windows 절대 경로나 서버의 임의 PNG 경로는 런타임 클라이언트에서 읽을 수 없습니다. 사용자 이미지는 모든 접속 클라이언트가 가진 리소스팩 또는 모드 리소스로 배포해야 합니다.
 

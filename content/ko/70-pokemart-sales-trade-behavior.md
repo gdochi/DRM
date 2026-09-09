@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: 0.1.4
+version: 0.1.6
 audience: 판매점과 교환소를 만드는 제작자
 tags:
   - sales
@@ -126,7 +126,7 @@ Trade 재고도 `NPC UUID + Trade ID`로 저장되며 Sales와 같은 Initial/Ma
 
 ## 실전 점검
 
-0.1.4 런타임은 Sales 상품, Trade 제안과 조건에 맞는 보유 포켓몬을 검색어와 페이지 단위로 서버에서 가져옵니다. 상품이나 PC 포켓몬이 많아도 전체 목록을 한 번에 전송하지 않으며, 검색 결과가 바뀌면 첫 페이지부터 다시 표시합니다.
+0.1.6 런타임은 Sales 상품, Trade 제안과 조건에 맞는 보유 포켓몬을 검색어와 페이지 단위로 서버에서 가져옵니다. 상품이나 PC 포켓몬이 많아도 전체 목록을 한 번에 전송하지 않으며, 검색 결과가 바뀌면 첫 페이지부터 다시 표시합니다.
 
 - 유한 재고 1개 상품을 두 플레이어가 동시에 눌러도 한 명만 성공하는지 확인합니다.
 - 활성 파티가 가득 찬 상태에서 Sales가 환불·재고 복구되는지 확인합니다.

@@ -2,12 +2,12 @@
 title: 설치 준비
 slug: installation
 order: 30
-description: Fabric 1.21.1용 DRM Core 0.1.9의 설치 조건과 서버/클라이언트 역할입니다.
+description: Fabric 1.21.1용 DRM Core 0.2.0의 설치 조건과 서버/클라이언트 역할입니다.
 product: core-fabric
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.9
+version: 0.2.0
 audience: 서버 운영자
 tags:
   - install
@@ -20,7 +20,7 @@ Fabric 빌드는 Minecraft `1.21.1` 전용입니다. Forge 1.20.1용 JAR과 파�
 
 | 항목 | 요구 조건 | 현재 프로젝트 기준 |
 | --- | --- | --- |
-| DRM Core | `0.1.9` Fabric 빌드 | `dochi_rpg_maker-0.1.9-fabric-1.21.1.jar` |
+| DRM Core | `0.2.0` Fabric 빌드 | `dochi_rpg_maker-0.2.0-fabric-1.21.1.jar` |
 | Minecraft | 정확히 `1.21.1` | 다른 1.21.x 버전과 혼용하지 않습니다. |
 | Fabric Loader | `0.18.0` 이상 | 빌드 기준 `0.19.3` |
 | Fabric API | `0.116.11+1.21.1` 이상 | 빌드 기준 `0.116.13+1.21.1` |
@@ -40,7 +40,7 @@ Fabric 빌드는 Minecraft `1.21.1` 전용입니다. Forge 1.20.1용 JAR과 파�
 
 ## 설치 절차
 
-1. 클라이언트와 서버의 `mods` 폴더에 같은 `0.1.9` Fabric JAR을 넣습니다.
+1. 클라이언트와 서버의 `mods` 폴더에 같은 `0.2.0` Fabric JAR을 넣습니다.
 2. 같은 환경에 Fabric API를 설치합니다.
 3. Fabric 1.21.1용 CustomNPCs 1.0.0을 서버와 클라이언트에 함께 설치합니다.
 4. 월드나 서버를 한 번 실행해 `config/dochi_rpg_maker`를 생성합니다.

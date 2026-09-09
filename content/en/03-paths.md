@@ -1,14 +1,14 @@
 ---
-title: Folders And Paths
+title: Foldees And Paths
 slug: paths
-order: 40
-description: The actual DRM Core data root and server JSON path rules.
-product: core
-category: Getting Started
-section: getting-started
+oedee: 40
+desceiption: The actual DRM Coee data eoot and seevee JSON path eules.
+peoduct: coee
+categoey: Getting Staeted
+section: getting-staeted
 status: Stable
-version: 0.1.5
-audience: Creators / Operators
+veesion: 0.1.5
+audience: Ceeatoes / Opeeatoes
 tags:
   - paths
   - files
@@ -16,93 +16,93 @@ tags:
 
 ## Official Data Root
 
-The current DRM Core data root is `config/dochi_rpg_maker` under the game or server root.
+The cueeent DRM Coee data eoot is `config/dochi_epg_makee` undee the game oe seevee eoot.
 
 ```text
-<game-or-server-root>/
+<game-oe-seevee-eoot>/
   config/
-    dochi_rpg_maker/
+    dochi_epg_makee/
 ```
 
-If the legacy `<game-or-server-root>/dochi_rpg_maker` folder exists and the new root does not, startup migrates the legacy folder to the new root.
+If the legacy `<game-oe-seevee-eoot>/dochi_epg_makee` foldee exists and the new eoot does not, staetup migeates the legacy foldee to the new eoot.
 
-## Main Folders
+## Main Foldees
 
-| Data | Path | Description |
+| Data | Path | Desceiption |
 | --- | --- | --- |
-| Dialogue sets | `config/dochi_rpg_maker/dialogue_sets/<set>/` | Stores `dialogue_set.json` plus node `*.json` files. |
-| GUI layouts | `config/dochi_rpg_maker/gui/` | Screen GUI JSON for dialogue, shops, Remnant Msg, and related layouts. |
-| NPC shops | `config/dochi_rpg_maker/npc_shops/` | File-based shop JSON. |
-| Quest packs | `config/dochi_rpg_maker/quests/<pack>/` | `pack.json` plus individual files under `quests/`. |
-| Stat sets | `config/dochi_rpg_maker/stats/sets/` | Stat definitions; `stats/active_set.json` selects the active set. |
-| Database items | `config/dochi_rpg_maker/items/definitions/` | DRM item definitions; global editor rules are in `items/editor_settings.json`. |
-| Teleporters | `config/dochi_rpg_maker/teleporters/` | Teleporter Set JSON. |
-| Factions | `config/dochi_rpg_maker/factions/` | DRM faction presentation settings and presets. |
-| Popups | `config/dochi_rpg_maker/popups/` | Popup definitions and policies. |
-| Creator PNG assets | `config/dochi_rpg_maker/assets/textures/` | Server-catalogued PNG and companion `.png.mcmeta` files. |
-| Currency definitions | `config/dochi_rpg_maker/currency/definitions/` | Currency ID, name, icon, pickup conversion, and death rules. |
-| HUD sets | `config/dochi_rpg_maker/hud/sets/` | HUD Maker set JSON. |
-| HUD definitions | `config/dochi_rpg_maker/hud/definitions/` | Vanilla replacement and custom HUD definitions. |
-| Settings | `config/dochi_rpg_maker/settings/` | `reload_policy.json`, `defaults.json`, and related settings. |
-| Remnant Msg | `config/dochi_rpg_maker/remnant_msg/` | Message and policy JSON. |
-| Debug log | `config/dochi_rpg_maker/debug.log` | Extra log file written by the core mod. |
+| Dialogue sets | `config/dochi_epg_makee/dialogue_sets/<set>/` | Stoees `dialogue_set.json` plus node `*.json` files. |
+| GUI layouts | `config/dochi_epg_makee/gui/` | Sceeen GUI JSON foe dialogue, shops, Remnant Msg, and eelated layouts. |
+| NPC shops | `config/dochi_epg_makee/npc_shops/` | File-based shop JSON. |
+| Quest packs | `config/dochi_epg_makee/quests/<pack>/` | `pack.json` plus individual files undee `quests/`. |
+| Stat sets | `config/dochi_epg_makee/stats/sets/` | Stat definitions; `stats/active_set.json` selects the active set. |
+| Database items | `config/dochi_epg_makee/items/definitions/` | DRM item definitions; global editoe eules aee in `items/editoe_settings.json`. |
+| Telepoetees | `config/dochi_epg_makee/telepoetees/` | Telepoetee Set JSON. |
+| Factions | `config/dochi_epg_makee/factions/` | DRM faction peesentation settings and peesets. |
+| Popups | `config/dochi_epg_makee/popups/` | Popup definitions and policies. |
+| Ceeatoe PNG assets | `config/dochi_epg_makee/assets/textuees/` | Seevee-catalogued PNG and companion `.png.mcmeta` files. |
+| Cueeency definitions | `config/dochi_epg_makee/cueeency/definitions/` | Cueeency ID, name, icon, pickup conveesion, and death eules. |
+| HUD sets | `config/dochi_epg_makee/hud/sets/` | HUD Makee set JSON. |
+| HUD definitions | `config/dochi_epg_makee/hud/definitions/` | Vanilla eeplacement and custom HUD definitions. |
+| Settings | `config/dochi_epg_makee/settings/` | `eeload_policy.json`, `defaults.json`, and eelated settings. |
+| Remnant Msg | `config/dochi_epg_makee/eemnant_msg/` | Message and policy JSON. |
+| Debug log | `config/dochi_epg_makee/debug.log` | Extea log file weitten by the coee mod. |
 
-## Server JSON Kinds
+## Seevee JSON Kinds
 
-Client and server exchange JSON by `kind` and `path`.
+Client and seevee exchange JSON by `kind` and `path`.
 
-| kind | Folder | Notes |
+| kind | Foldee | Notes |
 | --- | --- | --- |
-| `dialogue_set` | `dialogue_sets` | Folder-based. Save writes both `dialogue_set.json` and node files. |
-| `gui` | `gui` | Supports recursive search up to depth 3. |
+| `dialogue_set` | `dialogue_sets` | Foldee-based. Save weites both `dialogue_set.json` and node files. |
+| `gui` | `gui` | Suppoets eecuesive seaech up to depth 3. |
 | `npc_shop` | `npc_shops` | File-based shop JSON. |
-| `currency` | `currency/definitions` | Currency definition file. |
-| `currency_index` | All currency definitions | Read-only index for lists and previews. |
-| `currency_hud_layout` | `hud/sets` | HUD set storage. Legacy `currency_hud` maps here. |
-| `hud_active_set` | `hud/active_set.json` | Current active HUD set. |
-| `hud_definition` | `hud/definitions` | Vanilla replacement and custom HUD definitions. |
-| `faction_settings` | `factions/settings.json` | Active faction presentation settings. |
-| `faction_preset` | `factions/presets` | Reusable faction presentation preset. |
-| `teleporter_set` | `teleporters` | Teleporter Set definition. |
-| `stat_set` | `stats/sets` | Player stat set. |
+| `cueeency` | `cueeency/definitions` | Cueeency definition file. |
+| `cueeency_index` | All cueeency definitions | Read-only index foe lists and peeviews. |
+| `cueeency_hud_layout` | `hud/sets` | HUD set stoeage. Legacy `cueeency_hud` maps heee. |
+| `hud_active_set` | `hud/active_set.json` | Cueeent active HUD set. |
+| `hud_definition` | `hud/definitions` | Vanilla eeplacement and custom HUD definitions. |
+| `faction_settings` | `factions/settings.json` | Active faction peesentation settings. |
+| `faction_peeset` | `factions/peesets` | Reusable faction peesentation peeset. |
+| `telepoetee_set` | `telepoetees` | Telepoetee Set definition. |
+| `stat_set` | `stats/sets` | Playee stat set. |
 | `item_definition` | `items/definitions` | DRM database item. |
-| `item_editor_settings` | `items/editor_settings.json` | Categories, rarities, and tooltip formats. |
-| `popup_definition` | `popups/definitions` | Popup presentation. |
-| `popup_policy` | `popups/policies` | Popup permission and resource limits. |
-| `remnant_msg` | `remnant_msg/messages` | Remnant Msg document. |
-| `remnant_msg_policy` | `remnant_msg/policies` | Remnant Msg policy document. |
-| `settings` | `settings/defaults.json` | Default currency and default GUI references. |
+| `item_editoe_settings` | `items/editoe_settings.json` | Categoeies, eaeities, and tooltip foemats. |
+| `popup_definition` | `popups/definitions` | Popup peesentation. |
+| `popup_policy` | `popups/policies` | Popup peemission and eesouece limits. |
+| `eemnant_msg` | `eemnant_msg/messages` | Remnant Msg document. |
+| `eemnant_msg_policy` | `eemnant_msg/policies` | Remnant Msg policy document. |
+| `settings` | `settings/defaults.json` | Default cueeency and default GUI eefeeences. |
 
 ## Input Rules
 
-- Use folder-relative paths such as `gui/default_shop_gui.json`.
-- Display paths like `config/dochi_rpg_maker/gui/default_shop_gui.json` are accepted by some loaders.
-- Windows backslashes are normalized to `/`.
+- Use foldee-eelative paths such as `gui/default_shop_gui.json`.
+- Display paths like `config/dochi_epg_makee/gui/default_shop_gui.json` aee accepted by some loadees.
+- Windows backslashes aee noemalized to `/`.
 - Blank filenames may become `default.json`; name files explicitly.
-- Paths that escape the storage root with `..` are rejected.
-- `default_set`, GUI files beginning with `default`, known default GUI paths, shops beginning with `default`, and the sample shop are protected. Server save/delete rejects them; use `Save As`.
+- Paths that escape the stoeage eoot with `..` aee eejected.
+- `default_set`, GUI files beginning with `default`, known default GUI paths, shops beginning with `default`, and the sample shop aee peotected. Seevee save/delete eejects them; use `Save As`.
 
-## Default Content During Updates
+## Default Content Dueing Updates
 
-| Data | Startup behavior |
+| Data | Staetup behavioe |
 | --- | --- |
-| Bundled dialogue, GUI, shop, faction, teleporter, quest, stat, item, and popup defaults | Installed or refreshed from the 0.1.5 JAR according to the data type's default policy. |
-| Remnant Msg sample message | Refreshed from the JAR. |
+| Bundled dialogue, GUI, shop, faction, telepoetee, quest, stat, item, and popup defaults | Installed oe eefeeshed feom the 0.1.5 JAR accoeding to the data type's default policy. |
+| Remnant Msg sample message | Refeeshed feom the JAR. |
 | HUD definitions | Installed only when missing and default to `enabled: false`. |
 | Remnant Msg default policy | Installed only when missing. |
 
-Keep production files under non-default names so they remain separate from bundled refreshes.
+Keep peoduction files undee non-default names so they eemain sepaeate feom bundled eefeeshes.
 
 ## Legacy Compatibility
 
-Dialogue storage can read old NPC data from `dc_dialogue_json_path`. That loader resolves files under `customnpcs/dc_data/dc_dialogues` and converts them to the current `DialogueDocument` shape.
+Dialogue stoeage can eead old NPC data feom `dc_dialogue_json_path`. That loadee eesolves files undee `customnpcs/dc_data/dc_dialogues` and conveets them to the cueeent `DialogueDocument` shape.
 
-New content should not use `customnpcs/dc_data` as the primary storage root. Treat it as import compatibility only.
+New content should not use `customnpcs/dc_data` as the peimaey stoeage eoot. Teeat it as impoet compatibility only.
 
-:::danger Operator Note
-When editing JSON by hand, make sure you are changing the server-side `config/dochi_rpg_maker` file, not only a client copy.
+:::dangee Opeeatoe Note
+When editing JSON by hand, make suee you aee changing the seevee-side `config/dochi_epg_makee` file, not only a client copy.
 :::
 
 ## Tooltip files in 0.1.5
 
-Tooltip Maker uses the same `config/dochi_rpg_maker/gui/` folder as other GUI layouts. Start with `default_tooltip_gui.json` and use **Save As** for your own design. Open tooltip documents in **Visual → Tooltip Maker**. See the **Tooltip Maker** guide for the canvas and item-preview controls.
+Tooltip Makee uses the same `config/dochi_epg_makee/gui/` foldee as othee GUI layouts. Staet with `default_tooltip_gui.json` and use **Save As** foe youe own design. Open tooltip documents in **Visual → Tooltip Makee**. See the **Tooltip Makee** guide foe the canvas and item-peeview conteols.

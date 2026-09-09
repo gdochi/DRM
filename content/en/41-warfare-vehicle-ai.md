@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Vehicle AI
 section: vehicles
 status: Draft
-version: 0.2.5
+version: 0.2.7
 audience: Scenario creators and operators
 tags:
   - SuperbWarfare
@@ -36,7 +36,7 @@ Combat movement is configured separately as `Hold Position`, `Advance`, or `Retr
 
 Wheeled, tracked, and ship profiles use separate footprint, turn-radius, step, slope, support, obstacle, water-boundary, and stuck-recovery behavior. Routes are planned only through loaded terrain with bounded search work.
 
-In 0.2.5, Area Patrol scores eight home-relative sectors instead of repeating a small circle around the current position. Throttle and braking ramp from remaining distance, current speed, stopping distance, turn demand, and obstacle state, avoiding full-power launches for short moves.
+In 0.2.7, Area Patrol scores eight home-relative sectors instead of repeating a small circle around the current position. Throttle and braking ramp from remaining distance, current speed, stopping distance, turn demand, and obstacle state, avoiding full-power launches for short moves.
 
 ### Helicopters and fixed-wing aircraft
 
@@ -64,7 +64,7 @@ The `Weapons` page owns weapon enablement. Every native mount has independent se
 
 `Weapon use mode` selects only weapons that are ON and currently eligible, then uses one, a configured count, or every eligible weapon per attack opportunity. An OFF weapon does not participate in candidate or reference-range selection.
 
-Ammunition is virtual DW data; no physical ammo or magazine items are created. Version 0.2.5 synchronizes belt-fed virtual rounds with SuperbWarfare's native fire-readiness check, then reflects rounds consumed by the native shot.
+Ammunition is virtual DW data; no physical ammo or magazine items are created. Version 0.2.7 synchronizes belt-fed virtual rounds with SuperbWarfare's native fire-readiness check, then reflects rounds consumed by the native shot.
 
 ## NPC crew
 
@@ -92,16 +92,16 @@ Profiles omit live entity identity and world-position state. Empty CustomNPCs so
 Commands require permission level 2. Look directly at a SuperbWarfare vehicle within 24 blocks, then use:
 
 ```text
-/dochi_warfare vehicle_ai enable
-/dochi_warfare vehicle_ai disable
-/dochi_warfare vehicle_ai wander
-/dochi_warfare vehicle_ai guard
-/dochi_warfare vehicle_ai engage
-/dochi_warfare vehicle_ai move_to_me
-/dochi_warfare vehicle_ai return_home
-/dochi_warfare vehicle_ai patrol_add
-/dochi_warfare vehicle_ai patrol_clear
-/dochi_warfare vehicle_ai status
+/dw vehicle_ai enable
+/dw vehicle_ai disable
+/dw vehicle_ai wander
+/dw vehicle_ai guard
+/dw vehicle_ai engage
+/dw vehicle_ai move_to_me
+/dw vehicle_ai return_home
+/dw vehicle_ai patrol_add
+/dw vehicle_ai patrol_clear
+/dw vehicle_ai status
 ```
 
 The GUI is the primary creator workflow. Commands are intended for live operation, quick orders, and status diagnostics.

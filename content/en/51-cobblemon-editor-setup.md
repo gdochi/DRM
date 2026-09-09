@@ -2,12 +2,12 @@
 title: Installation and Your First NPC
 slug: cobblemon-editor-setup
 order: 510
-description: Install Dochi's Real Armor 0.1.4, verify its folders, and apply your first NPC role.
+description: Install Dochi Cobblemon Editor 0.1.6, verify its folders, and apply your first NPC role.
 product: drm-cobblemon-editor
 category: Setup
 section: setup
 status: Draft
-version: 0.1.4
+version: 0.1.6
 audience: Server operators and first-time creators
 tags:
   - setup
@@ -22,10 +22,10 @@ Install the following mods in the same Fabric 1.21.1 environment.
 | Mod | Role |
 | --- | --- |
 | Fabric API | Event and networking foundation |
-| DRM Core 0.1.7+ | Shared editor selector, server JSON storage, GUI Maker, and NPC apply workflow |
-| Cobblemon 1.7.3 | Pokémon data, player parties, and the actual battle runtime |
+| DRM Core 0.1.9+ | Shared editor selector, server JSON storage, GUI Maker, and NPC apply workflow |
+| Cobblemon 1.7.3 to below 1.9.0 | Pokémon data, player parties, and the actual battle runtime; 1.7.3 and 1.8.0 are verified |
 | CustomNPCs Fabric 1.0.0 | NPC targets for trainers, Pokémon, and shops |
-| `dochi_cobblemon_editor-0.1.4-fabric-1.21.1.jar` | Cobblemon-specific DRM editors and runtime integration |
+| `dochi_cobblemon_editor-0.1.6-fabric-1.21.1.jar` | Cobblemon-specific DRM editors and runtime integration |
 | CobbleDollars | Optional PokéMart currency provider |
 
 For multiplayer, use the same mod set on the server and every client. The addon includes client editors and renderers as well as server battle, reward, and shop logic.
@@ -50,7 +50,7 @@ config/dochi_rpg_maker/
 └─ gui/
 ```
 
-Addon documents live under `cobblemon/`. PokéMart and Starter Selector screen layouts use DRM's shared `gui/` directory. Version 0.1.4 upgrades only untouched legacy default GUIs to the shared DRM sprite style, backs up the old defaults under `_migration_backups/`, and preserves customized files.
+Addon documents live under `cobblemon/`. PokéMart and Starter Selector screen layouts use DRM's shared `gui/` directory. Version 0.1.6 upgrades only untouched legacy default GUIs to the shared DRM sprite style, backs up the old defaults under `_migration_backups/`, and preserves customized files.
 
 ## Open the addon editors
 

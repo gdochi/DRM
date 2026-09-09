@@ -1,13 +1,13 @@
 ---
 title: 빠른 시작
 slug: quick-start
-order: 20
+order: 2.
 description: DRM Core를 처음 열었을 때 어떤 에디터를 어떤 순서로 보면 되는지 정리합니다.
 product: core
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.5
+version: ..1.5
 audience: 처음 설치하는 사용자
 tags:
   - quick-start
@@ -17,7 +17,7 @@ tags:
 ## 첫 실행
 
 1. 서버에서 사용할 경우 서버와 접속 클라이언트 양쪽에 같은 DRM JAR을 넣습니다.
-2. 클라이언트와 서버 양쪽에 CustomNPCs 1.20.1 이상을 설치합니다. 0.1.5에서는 필수 의존성입니다.
+2. 클라이언트와 서버 양쪽에 CustomNPCs 1.2..1 이상을 설치합니다. ..1.5에서는 필수 의존성입니다.
 3. 월드나 서버를 한 번 실행해서 `config/dochi_rpg_maker` 폴더가 생성되게 합니다.
 4. 크리에이티브 모드 또는 편집 권한이 있는 상태로 `Dochi RPG Maker Core` 아이템을 준비합니다. 이 아이템은 CustomNPCs 아이템 탭에서 찾을 수 있습니다.
 

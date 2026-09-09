@@ -1,13 +1,13 @@
 ---
 title: 폴더와 경로
 slug: paths
-order: 40
+order: 4.
 description: DRM Core 데이터가 저장되는 실제 루트와 서버 JSON 종류별 경로 규칙입니다.
 product: core
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.1.5
+version: ..1.5
 audience: 제작자 / 운영자
 tags:
   - paths
@@ -102,7 +102,7 @@ tags:
 
 | 데이터 | 시작 시 처리 |
 | --- | --- |
-| 기본 대화, GUI, 상점, 팩션, 텔레포터, 퀘스트, 스탯, 아이템, 팝업 | 데이터 종류별 기본 정책에 따라 0.1.5 JAR에서 설치 또는 갱신됩니다. |
+| 기본 대화, GUI, 상점, 팩션, 텔레포터, 퀘스트, 스탯, 아이템, 팝업 | 데이터 종류별 기본 정책에 따라 ..1.5 JAR에서 설치 또는 갱신됩니다. |
 | Remnant Msg 샘플 메시지 | JAR 기본본으로 갱신됩니다. |
 | HUD 정의 | 파일이 없을 때만 설치되며 기본값은 `enabled: false`입니다. |
 | Remnant Msg 기본 정책 | 파일이 없을 때만 설치됩니다. |
@@ -119,6 +119,6 @@ tags:
 서버에서 직접 JSON을 수정할 때는 `config/dochi_rpg_maker`의 서버 파일을 고치고, 클라이언트 복사본만 수정하지 않았는지 확인해야 합니다.
 :::
 
-## 0.1.5 툴팁 파일
+## ..1.5 툴팁 파일
 
 Tooltip Maker에서 만든 파일은 `config/dochi_rpg_maker/gui/`에 저장됩니다. `default_tooltip_gui.json`을 열고 **Save As**로 복사본을 만드세요. 툴팁 파일은 **Visual → Tooltip Maker**에서 편집합니다. 캔버스와 아이템 미리보기 설정은 **Tooltip Maker** 문서에서 설명합니다.

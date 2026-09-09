@@ -7,7 +7,7 @@ product: dochi-warfare
 category: World Tools
 section: tools
 status: Draft
-version: 0.2.5
+version: 0.2.7
 audience: Scenario creators
 tags:
   - clone
@@ -39,7 +39,7 @@ Right-click air with `DW Npc Core` to open `Entity Clone Library`. Search the co
 
 The server validates Creative permission, the template, and required mods, then searches for a safe loaded position in front of the player. If the dependency is missing or no safe loaded space exists, the summon is rejected without creating a partial entity.
 
-Version 0.2.5 can also use NPC clones from the vehicle editor's `Crew` page. Select an empty seat on the top/side map, press `Board NPC`, then choose a server NPC clone or an NPC-filled soul stone in the player's inventory. The server sanitizes a new NPC and mounts it in the exact selected seat; hostile factions, changed seats, and invalid soul stones are rejected.
+Version 0.2.7 can also use NPC clones from the vehicle editor's `Crew` page. Select an empty seat on the top/side map, press `Board NPC`, then choose a server NPC clone or an NPC-filled soul stone in the player's inventory. The server sanitizes a new NPC and mounts it in the exact selected seat; hostile factions, changed seats, and invalid soul stones are rejected.
 
 ## What is sanitized
 

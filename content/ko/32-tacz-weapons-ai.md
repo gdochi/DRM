@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 전투 AI
 section: combat-ai
 status: Draft
-version: 0.2.5
+version: 0.2.7
 audience: 총기 NPC 제작자
 tags:
   - weapon
@@ -46,7 +46,7 @@ tags:
 | `Min Target Speed` | 명중률 상승을 진행시킬 플레이어의 최소 수평 이동 속도입니다. |
 | `Burst Minimum Shots` / `Burst Maximum Shots` | 애드온 버스트마다 포함 범위에서 발사 수를 새로 선택합니다. 두 값을 같게 하면 고정 길이가 됩니다. |
 
-`Accuracy Ramp`는 보이는 이동 플레이어가 설정 거리 안에 있고 최소 속도 이상으로 움직일 때만 진행됩니다. 플레이어가 멈추거나 범위를 벗어나면 진행 시간이 멈추고, 타겟이나 활성 General/Advanced 설정이 바뀌면 처음부터 다시 계산합니다. General과 Advanced는 서로 다른 명중률 상승 값을 가질 수 있습니다. 0.2.5에서는 네이티브·고정 RPM을 운용 총기가 지원하는 발사 속도와 조정하며, TACZ 고RPM 사격은 더 세밀한 예약 발사로 50ms 틱 단위로 뭉쳐 보이는 현상을 줄입니다.
+`Accuracy Ramp`는 보이는 이동 플레이어가 설정 거리 안에 있고 최소 속도 이상으로 움직일 때만 진행됩니다. 플레이어가 멈추거나 범위를 벗어나면 진행 시간이 멈추고, 타겟이나 활성 General/Advanced 설정이 바뀌면 처음부터 다시 계산합니다. General과 Advanced는 서로 다른 명중률 상승 값을 가질 수 있습니다. 0.2.7에서는 네이티브·고정 RPM을 운용 총기가 지원하는 발사 속도와 조정하며, TACZ 고RPM 사격은 더 세밀한 예약 발사로 50ms 틱 단위로 뭉쳐 보이는 현상을 줄입니다.
 
 처음에는 `RPM Mode: TACZ Native`와 고정 명중률로 시작하세요. 총기, 타겟, 시야, 탄약 루프가 안정된 뒤 랜덤 RPM, 버스트 범위, 명중률 상승을 하나씩 추가하는 편이 좋습니다.
 

@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: 0.1.4
+version: 0.1.6
 audience: Pokémon shop creators and server operators
 tags:
   - pokemart
@@ -78,6 +78,6 @@ The shared DRM condition editor configures a flat `AND` or `OR` group. The serve
 4. Verify that the runtime tabs match the selected role.
 5. Saving to the same bound source path updates the next shop request. Reapply only when changing the path or role.
 
-Version 0.1.4 performs search and paging on the server for products, offers, eligible owned Pokémon, listings, selling choices, and claims. Large shops no longer send every row at once.
+Version 0.1.6 performs search and paging on the server for products, offers, eligible owned Pokémon, listings, selling choices, and claims. Large shops no longer send every row at once.
 
 `Clear` removes the PokéMart binding from the NPC. It does not delete the server JSON or world-level auction and claim data.

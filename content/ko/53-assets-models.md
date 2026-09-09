@@ -7,7 +7,7 @@ product: core
 category: 월드와 NPC 도구
 section: world-tools
 status: 안정
-version: 0.1.4
+version: 0.1.6
 audience: GUI / NPC 제작자
 tags:
   - assets

@@ -2,12 +2,12 @@
 title: 도치 워페어 개요
 slug: dochi-warfare-overview
 order: 310
-description: 도치 워페어 0.2.5의 범위, 의존성, 다중 총기 연동, 차량 AI, 클론, 부비트랩을 정리합니다.
+description: 도치 워페어 0.2.7의 범위, 의존성, 다중 총기 연동, 차량 AI, 클론, 부비트랩을 정리합니다.
 product: dochi-warfare
 category: 개요
 section: overview
 status: Draft
-version: 0.2.5
+version: 0.2.7
 audience: 총기 NPC 제작자
 tags:
   - TACZ
@@ -19,9 +19,9 @@ tags:
 
 도치 워페어(`dochi_warfare`)는 Forge 1.20.1용 전투 제작 모드입니다. 주요 NPC 워크플로에서는 선택한 CustomNPCs NPC가 TACZ·PointBlank·SuperbWarfare 총기를 하나의 서버 판정 DW 전투 컨트롤러로 사용하게 합니다. 총기 아이템, 렌더러, 탄환/히트스캔, 사운드, 총기 고유 상태는 원본 모드가 유지하고, DW는 타겟, 스탠스, 이동, 발사 간격, 재장전 정책, 예비 탄약, 애니메이션 신호, 저장을 담당합니다.
 
-0.2.5에는 선택형 SuperbWarfare 지상·헬리콥터·고정익 차량 AI, 상면/측면 좌석 지도를 사용하는 NPC 승무원 편집기, 서버 측 NPC·차량 클론 보관함, 차량 소울스톤, 전용 부비트랩 편집기와 관리자도 포함됩니다. 전체 DW 제작 화면은 공통 스킨·밝은 텍스트·UI 사운드를 사용하며, PointBlank 전투 처리와 포즈 편집기의 내장 프리셋도 확장되었습니다. 이 도구들은 NPC 총기 편집기와 구분됩니다.
+0.2.7에는 선택형 SuperbWarfare 지상·헬리콥터·고정익 차량 AI, 상면/측면 좌석 지도를 사용하는 NPC 승무원 편집기, 서버 측 NPC·차량 클론 보관함, 차량 소울스톤, 전용 부비트랩 편집기와 관리자도 포함됩니다. 전체 DW 제작 화면은 공통 스킨·밝은 텍스트·UI 사운드를 사용하며, PointBlank 전투 처리와 포즈 편집기의 내장 프리셋도 확장되었습니다. 이 도구들은 NPC 총기 편집기와 구분됩니다.
 
-NPC별 핵심 스위치는 여전히 `TACZ Fire NPC Mode`라는 UI 라벨을 사용합니다. OFF이면 일반 CustomNPCs 동작을 유지하고, ON으로 저장하면 DW가 해당 NPC의 관리 총기 동작을 제어합니다. 이 라벨에는 호환을 위해 TACZ 명칭이 남아 있지만 0.2.5 관리 총기 런타임은 TACZ 아이템에만 제한되지 않습니다.
+NPC별 핵심 스위치는 여전히 `TACZ Fire NPC Mode`라는 UI 라벨을 사용합니다. OFF이면 일반 CustomNPCs 동작을 유지하고, ON으로 저장하면 DW가 해당 NPC의 관리 총기 동작을 제어합니다. 이 라벨에는 호환을 위해 TACZ 명칭이 남아 있지만 0.2.7 관리 총기 런타임은 TACZ 아이템에만 제한되지 않습니다.
 
 ## 핵심 규칙
 

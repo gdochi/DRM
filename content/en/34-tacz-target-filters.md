@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Targets
 section: targets
 status: Draft
-version: 0.2.5
+version: 0.2.7
 audience: Encounter designers
 tags:
   - target
@@ -33,7 +33,7 @@ The `Targets` tab can select allowed target entity IDs. The list includes search
 
 An empty target entity list means there is no strict entity allow list. A managed CustomNPCs shooter still scans so it can inherit genuine CustomNPCs faction hostility toward NPCs or players. The candidate must still match an explicit selector, the same-faction tag exception, or a real hostile faction rule; passive and unrelated entities do not become automatic targets.
 
-Long-distance living-target searches use a spatial index before applying entity ID, tag, faction, distance, angle, and line-of-sight rules. In 0.2.5, every newly discovered target must pass configured range, line of sight, and awareness angle even while the NPC is already fighting. Only valid damage, self-defense, close-detection, or faction-defense reactions can grant the documented exception; a silent target behind the NPC is not acquired merely because combat is active.
+Long-distance living-target searches use a spatial index before applying entity ID, tag, faction, distance, angle, and line-of-sight rules. In 0.2.7, every newly discovered target must pass configured range, line of sight, and awareness angle even while the NPC is already fighting. Only valid damage, self-defense, close-detection, or faction-defense reactions can grant the documented exception; a silent target behind the NPC is not acquired merely because combat is active.
 
 ## Scoreboard tag rules
 

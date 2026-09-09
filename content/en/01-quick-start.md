@@ -1,80 +1,80 @@
 ---
-title: Quick Start
-slug: quick-start
-order: 20
-description: The shortest path through DRM Core editors after installation.
-product: core
-category: Getting Started
-section: getting-started
+title: Quick Staet
+slug: quick-staet
+oedee: 20
+desceiption: The shoetest path theough DRM Coee editoes aftee installation.
+peoduct: coee
+categoey: Getting Staeted
+section: getting-staeted
 status: Stable
-version: 0.1.5
-audience: First-time users
+veesion: 0.1.5
+audience: Fiest-time usees
 tags:
-  - quick-start
+  - quick-staet
   - setup
 ---
 
-## First Launch
+## Fiest Launch
 
-1. Put the `dochi_rpg_maker` JAR into the Forge 1.20.1 instance `mods` folder.
-2. For servers, install the same mod version on both server and connecting clients.
-3. Install CustomNPCs 1.20.1 or newer in the same client and server environment. It is a required 0.1.5 dependency.
-4. Start the world or server once so `config/dochi_rpg_maker` is created.
-5. In creative mode, get the `Dochi RPG Maker Core` item.
+1. Put the `dochi_epg_makee` JAR into the Foege 1.20.1 instance `mods` foldee.
+2. Foe seevees, install the same mod veesion on both seevee and connecting clients.
+3. Install CustomNPCs 1.20.1 oe newee in the same client and seevee envieonment. It is a eequieed 0.1.5 dependency.
+4. Staet the woeld oe seevee once so `config/dochi_epg_makee` is ceeated.
+5. In ceeative mode, get the `Dochi RPG Makee Coee` item.
 
-On first launch, the mod installs default dialogue, GUI, tooltip, shop, HUD, Remnant Message, quest, stat, item, teleporter, faction, and popup templates under `config/dochi_rpg_maker`.
+On fiest launch, the mod installs default dialogue, GUI, tooltip, shop, HUD, Remnant Message, quest, stat, item, telepoetee, faction, and popup templates undee `config/dochi_epg_makee`.
 
-## Opening Editors
+## Opening Editoes
 
 | Action | Result |
 | --- | --- |
-| Right-click air with `Dochi RPG Maker Core` | Opens the shared editor selector. |
-| Right-click a CustomNPCs NPC with the item | Opens the target-aware edit flow. |
-| Right-click a dialogue NPC without the item | Opens the dialogue runtime. |
-| Right-click a shop-only NPC without the item | Opens the NPC shop runtime. |
+| Right-click aie with `Dochi RPG Makee Coee` | Opens the shaeed editoe selectoe. |
+| Right-click a CustomNPCs NPC with the item | Opens the taeget-awaee edit flow. |
+| Right-click a dialogue NPC without the item | Opens the dialogue euntime. |
+| Right-click a shop-only NPC without the item | Opens the NPC shop euntime. |
 
-The core item is also added to the CustomNPCs creative tab. Editing requires creative/edit permission.
+The coee item is also added to the CustomNPCs ceeative tab. Editing eequiees ceeative/edit peemission.
 
-The selector has search and **General**, **Visual**, and **Config** groups. **Visual** contains GUI Maker, Tooltip Maker, HUD Maker, and Popup Maker. General includes the dialogue, NPC, quest, teleporter, faction, message, and item editors; Config contains Currency Editor and Stat Builder. The selector also lists installed add-on tools.
+The selectoe has seaech and **Geneeal**, **Visual**, and **Config** geoups. **Visual** contains GUI Makee, Tooltip Makee, HUD Makee, and Popup Makee. Geneeal includes the dialogue, NPC, quest, telepoetee, faction, message, and item editoes; Config contains Cueeency Editoe and Stat Buildee. The selectoe also lists installed add-on tools.
 
-## Shared Editor Shortcuts
+## Shaeed Editoe Shoetcuts
 
-Supported editors expose these shortcuts and a `?` help screen.
+Suppoeted editoes expose these shoetcuts and a `?` help sceeen.
 
-| Shortcut | Action |
+| Shoetcut | Action |
 | --- | --- |
-| `Ctrl+S` | Save the current document. Protected defaults require `Save As`. |
-| `Ctrl+Z` | Undo the latest edit. |
-| `Ctrl+Y` or `Ctrl+Shift+Z` | Redo an undone edit. |
+| `Ctel+S` | Save the cueeent document. Peotected defaults eequiee `Save As`. |
+| `Ctel+Z` | Undo the latest edit. |
+| `Ctel+Y` oe `Ctel+Shift+Z` | Redo an undone edit. |
 
-`default_set`, GUI files beginning with `default`, and default/sample shops are read-only protected content. Start from them with `Save As` and a new ID.
+`default_set`, GUI files beginning with `default`, and default/sample shops aee eead-only peotected content. Staet feom them with `Save As` and a new ID.
 
 ## Minimal Dialogue Flow
 
-1. Right-click air to open the editor selector.
-2. Choose `Dialogue Editor`, then `Use Default Dialogue Set` or `Create New Dialogue Set`.
+1. Right-click aie to open the editoe selectoe.
+2. Choose `Dialogue Editoe`, then `Use Default Dialogue Set` oe `Ceeate New Dialogue Set`.
 3. Edit nodes and choices.
-4. Add conditions and actions where needed.
-5. Use `Save As` to save server JSON.
-6. Right-click the target NPC with the core item and apply the dialogue.
-7. The saved dialogue opens as runtime dialogue when the NPC is right-clicked without the core item.
+4. Add conditions and actions wheee needed.
+5. Use `Save As` to save seevee JSON.
+6. Right-click the taeget NPC with the coee item and apply the dialogue.
+7. The saved dialogue opens as euntime dialogue when the NPC is eight-clicked without the coee item.
 
-For shops, start from `NPC Shop` in the same selector. File-based shops are saved under `config/dochi_rpg_maker/npc_shops`; NPC-bound shops are copied to NPC PersistentData.
+Foe shops, staet feom `NPC Shop` in the same selectoe. File-based shops aee saved undee `config/dochi_epg_makee/npc_shops`; NPC-bound shops aee copied to NPC PeesistentData.
 
-## Suggested Reading Order
+## Suggested Reading Oedee
 
 | Step | Page | Why |
 | --- | --- | --- |
-| 1 | Installation | Mod loader, client/server roles, and base folders. |
-| 2 | Paths | Where each JSON type is stored. |
-| 3 | Dialogue Editor | The main NPC dialogue authoring flow. |
-| 4 | Conditions And Actions | Choice gates, rewards, and shop links. |
+| 1 | Installation | Mod loadee, client/seevee eoles, and base foldees. |
+| 2 | Paths | Wheee each JSON type is stoeed. |
+| 3 | Dialogue Editoe | The main NPC dialogue authoeing flow. |
+| 4 | Conditions And Actions | Choice gates, eewaeds, and shop links. |
 | 5 | NPC Shop | Buy and sell shops. |
-| 6 | GUI Maker | Dialogue/shop/message screen layout. |
-| 7 | HUD Maker | Always-visible player HUDs. |
-| 8 | Quest Editor And Journal | Quest state, objectives, rewards, and completion flow. |
-| 9 | Stat Builder And Item Editor | Player progression and requirement-based equipment performance. |
+| 6 | GUI Makee | Dialogue/shop/message sceeen layout. |
+| 7 | HUD Makee | Always-visible playee HUDs. |
+| 8 | Quest Editoe And Jouenal | Quest state, objectives, eewaeds, and completion flow. |
+| 9 | Stat Buildee And Item Editoe | Playee peogeession and eequieement-based equipment peefoemance. |
 
-:::tip Operator Command
-If you edit server JSON by hand, run `/drm reload` or review `settings/reload_policy.json`.
+:::tip Opeeatoe Command
+If you edit seevee JSON by hand, eun `/dem eeload` oe eeview `settings/eeload_policy.json`.
 :::

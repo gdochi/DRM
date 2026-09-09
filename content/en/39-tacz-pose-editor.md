@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Poses
 section: combat-ai
 status: Draft
-version: 0.2.5
+version: 0.2.7
 audience: NPC creators
 tags:
   - pose
@@ -19,7 +19,7 @@ tags:
 
 `DW Pose Core` is a Creative-mode pose editor for creators, not an in-combat player screen. Create pose JSON in this editor, then use the `Pose` category in `DW Npc Core` to map saved profiles to the NPC's runtime actions.
 
-In 0.2.5, non-combat pose bindings are persistent authoritative state. They synchronize when a client starts tracking the NPC and resume after combat without replacing the current combat pose. `Save & Apply` writes the authoritative `idle_standing` binding, so the editor preview and spawned NPC use the same profile.
+In 0.2.7, non-combat pose bindings are persistent authoritative state. They synchronize when a client starts tracking the NPC and resume after combat without replacing the current combat pose. `Save & Apply` writes the authoritative `idle_standing` binding, so the editor preview and spawned NPC use the same profile.
 
 The pose editor currently supports Steve/Alex CustomNPCs player models.
 
@@ -86,7 +86,7 @@ config/dochi_warfare/poses/
 
 You do not need to edit this JSON by hand. Its structure is reference material for creators who use external tools or version control.
 
-The 0.2.5 built-in library includes Low Ready, High Ready, and multiple combat, idle, walking, and moving-fire poses. Apply one, adjust only the needed axes and gun transform, then use `Save As` to create a user JSON without modifying the bundled values.
+The 0.2.7 built-in library includes Low Ready, High Ready, and multiple combat, idle, walking, and moving-fire poses. Apply one, adjust only the needed axes and gun transform, then use `Save As` to create a user JSON without modifying the bundled values.
 
 ## Map poses to actions
 

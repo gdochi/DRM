@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Gun Integrations
 section: integrations
 status: Draft
-version: 0.2.5
+version: 0.2.7
 audience: Firearm NPC creators
 tags:
   - TACZ
@@ -17,7 +17,7 @@ tags:
 
 ## One controller, native gun mechanics
 
-Dochi's Warfare 0.2.5 routes supported guns through one managed combat controller. DW owns target selection, stance, tactical movement, accuracy policy, firing opportunities, reload timing, reserve `Ammo Stock`, animation signals, and persistence.
+Dochi's Warfare 0.2.7 routes supported guns through one managed combat controller. DW owns target selection, stance, tactical movement, accuracy policy, firing opportunities, reload timing, reserve `Ammo Stock`, animation signals, and persistence.
 
 The gun mod keeps the parts that define the weapon itself: item and model rendering, native projectile or hitscan, intrinsic sounds, loaded-ammo state, native reload phases, and gun-specific mechanics. This boundary prevents an external gun from being reduced to a TACZ-looking imitation.
 
@@ -31,7 +31,7 @@ The gun mod keeps the parts that define the weapon itself: item and model render
 
 TACZ and Player Animator remain the runtime and animation baseline even when the managed item comes from PointBlank or SuperbWarfare.
 
-In 0.2.5, PointBlank hitscan keeps later pellets from being discarded by vanilla hurt immunity when several pellets rapidly hit the same target, then restores the target's previous immunity state after delivery. Long-range pellet candidates are collected through bounded segments to reduce repeated entity queries in large fights, while knockback and camera-shake intervals can be throttled independently from damage.
+In 0.2.7, PointBlank hitscan keeps later pellets from being discarded by vanilla hurt immunity when several pellets rapidly hit the same target, then restores the target's previous immunity state after delivery. Long-range pellet candidates are collected through bounded segments to reduce repeated entity queries in large fights, while knockback and camera-shake intervals can be throttled independently from damage.
 
 :::warning Version gates
 PointBlank 1.11.1 and 2.1.0 use different bridges. If both branches are installed, or no supported API is found, PointBlank compatibility disables itself. SuperbWarfare versions other than the verified 0.8.9 ABI fail closed before the compatibility mixins are applied.

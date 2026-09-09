@@ -7,7 +7,7 @@ product: core
 category: 운영 / 레퍼런스
 section: operations
 status: 안정
-version: 0.1.4
+version: 0.1.6
 audience: 서버 운영자
 tags:
   - admin

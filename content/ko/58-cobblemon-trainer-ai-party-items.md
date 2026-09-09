@@ -2,12 +2,12 @@
 title: Trainer AI, 랜덤 파티, 아이템과 기믹
 slug: cobblemon-trainer-ai-party-items
 order: 523
-description: 0.1.4 Trainer AI 조절, 파티 생성기, RCT 포터, 배틀 아이템과 기믹입니다.
+description: 0.1.6 Trainer AI 조절, 파티 생성기, RCT 포터, 배틀 아이템과 기믹입니다.
 product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.4
+version: 0.1.6
 audience: 고급 트레이너 전투를 만드는 제작자
 tags:
   - trainer-ai
@@ -26,13 +26,13 @@ Trainer의 `Battle Strategy`는 현재 라운드에 저장됩니다. 라운드�
 | `RCT` | RCT API의 기술·교체 판단 | RCT API 0.15.1-beta+ |
 | `Cobblemon Strong` | Cobblemon의 강한 기본 AI | 없음 |
 
-RCT 또는 Cobblemon Strong 엔진은 DRM 전략 계획, DRM Trainer Items, DRM 기믹 정책을 사용하지 않습니다. 이 세 기능이 필요하면 `DRM Strategy`를 선택하세요.
+RCT 또는 Cobblemon Strong 엔진은 DRM 전략 계획과 DRM Trainer Items를 사용하지 않습니다. DRM의 전략·아이템 판단이 필요하면 `DRM Strategy`를 선택하세요. 배틀 룰의 허용/금지 정책은 AI 엔진과 별개의 서버 규칙입니다.
 
 RCT API가 없거나 호출할 수 없으면 서버는 안전한 AI로 대체하고 로그와 사용자 메시지에 이유를 남깁니다. 선택 모드를 설치하지 않은 서버에서 RCT 엔진을 기본값으로 배포하지 마세요.
 
 ## DRM Strategy 설정
 
-0.1.4의 DRM AI는 몇 단계짜리 성향 선택 대신 다음 여섯 값을 각각 0–100으로 조절합니다.
+0.1.6의 DRM AI는 몇 단계짜리 성향 선택 대신 다음 여섯 값을 각각 0–100으로 조절합니다.
 
 | 값 | 높일 때 달라지는 점 |
 | --- | --- |
@@ -76,7 +76,7 @@ AI가 사용할 수 없는 행동을 골라도 배틀을 멈추거나 턴을 헛
 
 ## RCT 데이터팩 포터
 
-RCT API가 설치되어 있으면 `General`의 RCT 포터에서 활성 데이터팩의 `rctmod/trainers` JSON을 검색해 여러 파일을 선택할 수 있습니다. 0.1.4에서는 검색어와 페이지 이동으로 큰 데이터팩 목록을 나눠 볼 수 있으며, 같은 스캔 결과를 다시 열 때 재사용합니다.
+RCT API가 설치되어 있으면 `General`의 RCT 포터에서 활성 데이터팩의 `rctmod/trainers` JSON을 검색해 여러 파일을 선택할 수 있습니다. 0.1.6에서는 검색어와 페이지 이동으로 큰 데이터팩 목록을 나눠 볼 수 있으며, 같은 스캔 결과를 다시 열 때 재사용합니다.
 
 - 최대 512개 항목을 표시합니다.
 - 출력 폴더는 `config/dochi_rpg_maker/cobblemon/trainers/radical_ported/`입니다.
@@ -148,6 +148,8 @@ AI는 현재 HP, 상태, 남은 파티와 아이템 가치를 함께 평가합�
 - Gigantamax: `Gigantamax Factor`
 
 기믹 데이터만 저장해도 Mega Showdown이 없는 서버에서 기능이 생기지는 않습니다. 서버와 클라이언트에 호환 버전을 설치하고 실제 배틀에서 각 기믹을 시험하세요.
+
+`Trainer Gimmick`은 해당 라운드 NPC의 장비와 사용 정책입니다. `Rounds > 배틀 룰`의 Mega/Tera/Dynamax 허용은 양쪽에 적용되는 상위 규칙입니다. 에디터에서 장비, 키 아이템, 지닌물건, 배틀 룰의 충돌 상태를 함께 확인하세요.
 
 ## 권장 난이도 제작 순서
 

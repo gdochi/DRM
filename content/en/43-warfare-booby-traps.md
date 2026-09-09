@@ -7,7 +7,7 @@ product: dochi-warfare
 category: World Tools
 section: tools
 status: Draft
-version: 0.2.5
+version: 0.2.7
 audience: Map and scenario creators
 tags:
   - booby-trap
@@ -39,7 +39,7 @@ Choosing a type applies the required baseline fields, but every result should be
 
 ## Trigger event
 
-In 0.2.5, explosion, delayed-explosion, and LRT grenade traps can use either `Interact` or `Step on block`. The server detects `Step on block` when an entity enters the configured block's upper contact area, then applies the normal cooldown, owner-bypass, target-scope, and single-use rules. Password doors and containers keep their normal interaction flow.
+In 0.2.7, explosion, delayed-explosion, and LRT grenade traps can use either `Interact` or `Step on block`. The server detects `Step on block` when an entity enters the configured block's upper contact area, then applies the normal cooldown, owner-bypass, target-scope, and single-use rules. Password doors and containers keep their normal interaction flow.
 
 ## Password and access rules
 

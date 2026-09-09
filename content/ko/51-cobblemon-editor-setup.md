@@ -2,12 +2,12 @@
 title: 설치와 첫 적용
 slug: cobblemon-editor-setup
 order: 510
-description: Dochi's Real Armor 0.1.4 설치, 폴더, 첫 NPC 적용 방법입니다.
+description: Dochi Cobblemon Editor 0.1.6 설치, 폴더, 첫 NPC 적용 방법입니다.
 product: drm-cobblemon-editor
 category: 설치
 section: setup
 status: Draft
-version: 0.1.4
+version: 0.1.6
 audience: 서버 운영자와 처음 설치하는 제작자
 tags:
   - setup
@@ -19,11 +19,11 @@ tags:
 
 1. Minecraft 1.21.1과 Java 21을 사용합니다.
 2. Fabric Loader와 Fabric API를 설치합니다.
-3. DRM Core 0.1.7 이상, Cobblemon 1.7.3, CustomNPCs Fabric 1.0.0을 설치합니다.
-4. `dochi_cobblemon_editor-0.1.4-fabric-1.21.1.jar`를 `mods/`에 넣습니다.
+3. DRM Core 0.1.9 이상, Cobblemon 1.7.3 이상 1.9.0 미만, CustomNPCs Fabric 1.0.0을 설치합니다.
+4. `dochi_cobblemon_editor-0.1.6-fabric-1.21.1.jar`를 `mods/`에 넣습니다.
 5. 서버와 모든 클라이언트의 필수 모드 버전을 맞춥니다.
 
-현재 DRM Core와 함께 사용할 때는 Fabric Loader 0.18.0 이상과 Fabric API 0.116.11+1.21.1 이상을 권장합니다. Cobblemon 1.8.0 이상은 이 버전의 지원 범위가 아닙니다.
+Fabric Loader 0.17.2 이상과 Fabric API 0.116.6+1.21.1 이상이 필수입니다. 동일한 0.1.6 JAR가 Cobblemon 1.7.3과 1.8.0에서 검증되었으며, 1.9.0 이상은 지원 범위가 아닙니다.
 
 선택 기능을 쓰는 경우에만 다음 모드를 추가합니다.
 
@@ -55,7 +55,7 @@ config/dochi_rpg_maker/
    └─ starter_selector_gui.json
 ```
 
-`gui/`에는 PokéMart 역할별 GUI와 Starter Selector 런타임 GUI가 설치됩니다. 0.1.4는 수정하지 않은 구형 기본 GUI만 새 DRM 스프라이트 스타일로 교체하고, 교체 전 파일은 `_migration_backups/`에 보관합니다. 사용자가 고친 GUI는 덮어쓰지 않습니다. 이 파일은 화면 배치용이며 포켓몬, 가격, 조건, 지급 액션 같은 게임 데이터는 각 에디터 문서에 저장합니다.
+`gui/`에는 PokéMart 역할별 GUI와 Starter Selector 런타임 GUI가 설치됩니다. 0.1.6는 수정하지 않은 구형 기본 GUI만 새 DRM 스프라이트 스타일로 교체하고, 교체 전 파일은 `_migration_backups/`에 보관합니다. 사용자가 고친 GUI는 덮어쓰지 않습니다. 이 파일은 화면 배치용이며 포켓몬, 가격, 조건, 지급 액션 같은 게임 데이터는 각 에디터 문서에 저장합니다.
 
 `cobblemon/entity_clones/`는 애드온 Clone Library의 기존 호환 경로입니다. 최신 DRM Core NPC Spawner는 Core의 `npc_spawner/entity_clones/`와 이 호환 경로를 모두 읽습니다.
 

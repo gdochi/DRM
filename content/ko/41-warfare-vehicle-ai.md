@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 차량 AI
 section: vehicles
 status: Draft
-version: 0.2.5
+version: 0.2.7
 audience: 시나리오 제작자와 운영자
 tags:
   - SuperbWarfare
@@ -36,7 +36,7 @@ DW는 원본 엔진의 `processInput` 또는 비행 입력을 사용합니다. S
 
 바퀴·궤도·선박 프로필은 차체 폭과 길이, 회전 반경, 단차, 경사, 지지면, 장애물, 물 경계와 끼임 복구를 분리해 처리합니다. 경로는 로드된 지형에서 제한된 탐색량으로 계산합니다.
 
-0.2.5의 Area Patrol은 현재 위치 주변의 작은 원을 반복하지 않고 홈 기준 8개 구역을 평가해 의미 있는 이동 거리를 선택합니다. 가속과 제동은 남은 거리, 현재 속도, 정지 가능 거리, 선회량과 장애물 상태에 따라 램핑되므로 짧은 이동에서 전출력 급출발을 반복하지 않습니다.
+0.2.7의 Area Patrol은 현재 위치 주변의 작은 원을 반복하지 않고 홈 기준 8개 구역을 평가해 의미 있는 이동 거리를 선택합니다. 가속과 제동은 남은 거리, 현재 속도, 정지 가능 거리, 선회량과 장애물 상태에 따라 램핑되므로 짧은 이동에서 전출력 급출발을 반복하지 않습니다.
 
 ### 헬리콥터와 고정익
 
@@ -64,7 +64,7 @@ DW는 원본 엔진의 `processInput` 또는 비행 입력을 사용합니다. S
 
 `Weapon use mode`는 ON이고 현재 조건을 만족하는 무장만 대상으로 공격 기회마다 1개, 지정 개수, 또는 사용 가능한 모든 무장을 고릅니다. OFF 무장은 사거리 기준과 후보 선택에도 참여하지 않습니다.
 
-탄약은 DW 가상 데이터이며 실제 탄약·탄창 아이템을 만들지 않습니다. 0.2.5는 벨트식 무장의 가상 장전탄을 SuperbWarfare 네이티브 발사 가능 판정과 동기화하고, 원본 발사 뒤 소비된 탄수를 다시 반영합니다.
+탄약은 DW 가상 데이터이며 실제 탄약·탄창 아이템을 만들지 않습니다. 0.2.7는 벨트식 무장의 가상 장전탄을 SuperbWarfare 네이티브 발사 가능 판정과 동기화하고, 원본 발사 뒤 소비된 탄수를 다시 반영합니다.
 
 ## NPC 승무원
 
@@ -92,16 +92,16 @@ config/dochi_warfare/vehicle_ai/profiles/
 명령어는 권한 레벨 2가 필요합니다. 24블록 안의 SuperbWarfare 차량을 직접 바라본 뒤 사용합니다.
 
 ```text
-/dochi_warfare vehicle_ai enable
-/dochi_warfare vehicle_ai disable
-/dochi_warfare vehicle_ai wander
-/dochi_warfare vehicle_ai guard
-/dochi_warfare vehicle_ai engage
-/dochi_warfare vehicle_ai move_to_me
-/dochi_warfare vehicle_ai return_home
-/dochi_warfare vehicle_ai patrol_add
-/dochi_warfare vehicle_ai patrol_clear
-/dochi_warfare vehicle_ai status
+/dw vehicle_ai enable
+/dw vehicle_ai disable
+/dw vehicle_ai wander
+/dw vehicle_ai guard
+/dw vehicle_ai engage
+/dw vehicle_ai move_to_me
+/dw vehicle_ai return_home
+/dw vehicle_ai patrol_add
+/dw vehicle_ai patrol_clear
+/dw vehicle_ai status
 ```
 
 일반 제작은 GUI가 우선입니다. 명령어는 라이브 운영, 빠른 지시와 상태 진단에 사용하세요.
