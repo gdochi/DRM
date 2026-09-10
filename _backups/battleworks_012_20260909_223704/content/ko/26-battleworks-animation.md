@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: Battleworks
 status: 사용 안내
-version: 0.1.2
+version: 0.1.1
 audience: 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -54,3 +54,4 @@ DRM의 **NPC Basic**에서 NPC 타입, 모델, 텍스처, 애니메이션 파일
 - Play는 에디터 미리보기입니다. 실제 NPC 공격을 바꾸려면 문서를 저장·적용한 후 전투에서 확인합니다.
 
 모델 스냅샷이 있는 문서는 적용 시 DRM 모델 설정도 복원할 수 있습니다. 스냅샷이 없는 이전 문서와 Jar Fist 샘플은 대상 NPC의 기존 모델 설정을 유지합니다.
+

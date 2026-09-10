@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: Battleworks
 status: 사용 안내
-version: 0.1.2
+version: 0.1.1
 audience: 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -19,7 +19,7 @@ tags:
 
 Dochi's Battleworks는 **Minecraft Forge 1.20.1용 DRM 전투 제작 애드온**입니다. CustomNPCs NPC에 적용할 전투 스펙을 게임 안에서 작성합니다. 공격 패턴을 먼저 만들고, 그 안에 히트박스 판정·스킬·이동·애니메이션 타이밍을 배치합니다.
 
-이 문서는 Battleworks 0.1.2의 제작자용 에디터를 설명합니다. 플레이어가 전투 중 보는 HUD나 GUI Maker의 화면 레이아웃 편집기가 아닙니다. 기존 Mob Editor 문서 주소는 유지하지만 현재 모드와 메뉴 이름은 Battleworks입니다.
+이 문서는 Battleworks 0.1.1의 제작자용 에디터를 설명합니다. 플레이어가 전투 중 보는 HUD나 GUI Maker의 화면 레이아웃 편집기가 아닙니다. 기존 Mob Editor 문서 주소는 유지하지만 현재 모드와 메뉴 이름은 Battleworks입니다.
 
 ## 세 화면의 역할
 
@@ -54,8 +54,6 @@ Dochi's Battleworks는 **Minecraft Forge 1.20.1용 DRM 전투 제작 애드온**
 필수 모드는 **CustomNPCs와 DRM**입니다. Better Combat, GeckoLib, Player Animator, Iron's Spells 'n Spellbooks 등은 해당 연동을 사용할 때만 필요합니다.
 
 
-## 0.1.2 보스 전투 제작
+## 0.1.1 보스 전투 제작
 
 마법, 걷기, 대시, 순간이동, 패시브 반응, 대사와 전투 음악을 조합합니다. 설정 방법과 액션 확률, 수정한 파일 적용은 [보스 전투 제작 안내](#mob-editor/battleworks-encounters)를 참고하세요.
-
-0.1.2에는 **Pattern Build Assist**, 드래그·크기 조절이 가능한 **Simulation** 패널, 전투·GUI·팝업 훈련 샘플이 추가되었습니다. 에디터 배치, 선택 목록, 사운드 설정, 전투 방향 전환, 대상 추적, 히트박스 미리보기와 애니메이션 재생도 개선되었습니다. 클라이언트와 서버에는 같은 0.1.2 버전을 설치해야 합니다.

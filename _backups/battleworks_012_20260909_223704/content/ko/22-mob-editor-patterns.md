@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: Battleworks
 status: 사용 안내
-version: 0.1.2
+version: 0.1.1
 audience: 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -67,3 +67,4 @@ tags:
 - Front, Iso, Side는 카메라 방향이고, 모델 도구의 − / +는 확대·축소입니다.
 
 화면 배치는 클라이언트 설정에 저장됩니다. 플레이어별 패널 크기가 NPC 전투 문서를 바꾸지는 않습니다.
+

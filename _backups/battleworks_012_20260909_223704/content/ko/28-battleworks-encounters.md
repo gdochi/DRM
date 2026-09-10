@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: Battleworks
 status: Guide
-version: 0.1.2
+version: 0.1.1
 audience: Combat content creators
 tags:
   - battleworks
@@ -15,7 +15,7 @@ tags:
   - boss
 ---
 
-## 0.1.2 전투 제작 안내
+## 0.1.1 전투 제작 안내
 
 ### 스킬과 이동
 

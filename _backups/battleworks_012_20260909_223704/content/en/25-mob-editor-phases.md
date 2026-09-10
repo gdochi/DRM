@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: Battleworks
 status: Guide
-version: 0.1.2
+version: 0.1.1
 audience: Combat content creators
 tags:
   - battleworks
@@ -58,3 +58,4 @@ Add phases under **Combat Rules → Phase**.
 A phase latches to the highest index reached during the encounter. Healing does not return the NPC to an earlier phase. A `Transition Pattern` can run when the phase advances; check that pattern's target, distance, and health conditions as well.
 
 Losing the target for Combat Reset Delay resets encounter state. It does not heal the NPC, so a new encounter can immediately enter a later phase if its health is already below that threshold.
+

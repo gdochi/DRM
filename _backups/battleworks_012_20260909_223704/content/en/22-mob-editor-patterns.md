@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: Battleworks
 status: Guide
-version: 0.1.2
+version: 0.1.1
 audience: Combat content creators
 tags:
   - battleworks
@@ -16,8 +16,6 @@ tags:
 ---
 
 ## Start with a pattern
-
-In 0.1.2, **Pattern Build Assist** in the topbar can create a starter physical attack and reusable hitbox from a guided questionnaire. Review confirms the result before anything is created, and existing patterns are preserved.
 
 Select a pattern directly in **Pattern Workbench**, or use **Find pattern** to search by name or ID. Choose a stage inside the pattern before adding its actions.
 
@@ -62,8 +60,6 @@ The **Pattern:** selector in the hitbox screen chooses a pattern/action location
 
 ## Resize the workspace
 
-Use **Simulation** from the stage toolbar to open a draggable, resizable rehearsal panel. It previews movement, animation, and active hitboxes without applying damage, commands, sounds, AI, or third-party spells to the world. Preview speed can be changed from 0.1x to 4.0x without changing saved timings.
-
 - Drag vertical dividers to resize the list, central workspace, and inspector.
 - Drag the horizontal divider in the hitbox screen to resize the model and timeline heights.
 - Drag the model/clip-list divider to change their widths.
@@ -71,3 +67,4 @@ Use **Simulation** from the stage toolbar to open a draggable, resizable rehears
 - Front, Iso, and Side change camera orientation; the model toolbar's − / + buttons control zoom.
 
 Panel layout is saved in client settings and does not alter the NPC's combat document.
+

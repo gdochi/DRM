@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: Battleworks
 status: 사용 안내
-version: 0.1.2
+version: 0.1.1
 audience: 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -45,3 +45,4 @@ Death를 켜면 사망 시점부터 별도 타임라인의 액션을 실행할 �
 ## 콘텐츠 확인 순서
 
 한 번의 공격, 추적, 여러 판정, 페이즈, 사망 연출 순으로 확인합니다. 패링 세부 항목에 앞서 공격 판정과 재사용 대기가 실제 서버에서 의도대로 실행되는지 확인하면 문제를 좁히기 쉽습니다.
+

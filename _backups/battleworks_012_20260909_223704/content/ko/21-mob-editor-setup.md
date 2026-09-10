@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: Battleworks
 status: 사용 안내
-version: 0.1.2
+version: 0.1.1
 audience: 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -22,7 +22,7 @@ tags:
 | Minecraft | Java Edition 1.20.1 |
 | 모드 로더 | Forge 47 이상, 1.20.1용 |
 | Java | 17 |
-| Dochi's Battleworks | 0.1.2 |
+| Dochi's Battleworks | 0.1.0 |
 | Dochi's RPG Maker | Forge 1.20.1용 0.1.4 이상, 필수 |
 | CustomNPCs | Forge 1.20.1 호환 버전, 필수 |
 
@@ -60,3 +60,4 @@ NPC는 적용한 문서 사본을 자체 저장합니다. JSON 파일을 나중�
 ## 전투 확인
 
 에디터를 닫고 생존 모드의 적대 대상으로 시험합니다. 크리에이티브·관전자 플레이어는 Battleworks의 유효한 전투 대상에서 제외됩니다. 미리보기 전용 샘플은 전투가 꺼져 있으므로 [전투 샘플](#mob-editor/battleworks-files)을 적용해야 실제 추적과 피해를 확인할 수 있습니다.
+

@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: Battleworks
 status: 사용 안내
-version: 0.1.2
+version: 0.1.1
 audience: 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -75,3 +75,4 @@ JAR의 `samples/`에 다음 두 JSON이 포함되어 있습니다. 필요한 파
 게임을 종료하고 새 JAR로 교체한 뒤 다시 시작합니다. 같은 Battleworks JAR를 중복 설치하지 않습니다. 파일만 바꿔도 이미 적용된 NPC의 문서 사본은 갱신되지 않으므로 전투 스펙을 다시 적용합니다.
 
 전투 시작 크래시나 재생 문제를 보고할 때는 사용한 Battleworks·DRM·CNPC 버전, 전투 스펙, `logs/latest.log`와 생성된 크래시 리포트를 함께 확인합니다.
+

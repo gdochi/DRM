@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: Battleworks
 status: Guide
-version: 0.1.2
+version: 0.1.1
 audience: Combat content creators
 tags:
   - battleworks
@@ -15,7 +15,7 @@ tags:
   - boss
 ---
 
-# Battleworks 0.1.2 — Combat Creation Guide
+# Battleworks 0.1.1 — Combat Creation Guide
 
 ## Build an encounter
 

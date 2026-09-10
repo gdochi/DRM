@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: Battleworks
 status: Guide
-version: 0.1.2
+version: 0.1.1
 audience: Combat content creators
 tags:
   - battleworks
@@ -19,7 +19,7 @@ tags:
 
 Dochi's Battleworks is a **combat authoring addon for Minecraft Forge 1.20.1 and DRM**. Build a combat specification for a CustomNPCs NPC in-game: create a pattern, then place hitbox contacts, skills, movement, and animation timing inside it.
 
-This guide covers the creator-facing Battleworks 0.1.2 editor. It is separate from player HUDs and GUI Maker layouts. Existing Mob Editor documentation addresses remain available, but the current mod and editor are called Battleworks.
+This guide covers the creator-facing Battleworks 0.1.1 editor. It is separate from player HUDs and GUI Maker layouts. Existing Mob Editor documentation addresses remain available, but the current mod and editor are called Battleworks.
 
 ## The three workspaces
 
@@ -54,8 +54,6 @@ Reuse one hitbox in several patterns with different timings. Simultaneous action
 **CustomNPCs and DRM are required.** Better Combat, GeckoLib, Player Animator, Iron's Spells 'n Spellbooks, and other providers are optional integrations.
 
 
-## Battleworks 0.1.2
+## Boss encounters in 0.1.1
 
 Combine spells, walking, dashes, teleports, passive reactions, dialogue and battle music. See [Boss Encounter Guide](#mob-editor/battleworks-encounters) for practical setup, action chances and applying updated files.
-
-Version 0.1.2 adds **Pattern Build Assist**, a draggable **Simulation** panel with preview-speed controls, and bundled combat, GUI, and popup training samples. It also improves editor sizing, flyouts, sound controls, combat facing, target tracking, hitbox previews, and animation playback. Client and server must use the same 0.1.2 build.

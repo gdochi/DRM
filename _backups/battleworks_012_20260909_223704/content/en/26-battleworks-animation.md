@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: Battleworks
 status: Guide
-version: 0.1.2
+version: 0.1.1
 audience: Combat content creators
 tags:
   - battleworks
@@ -54,3 +54,4 @@ Skill actions can carry their own casting animation. A successful cast starts it
 - Play is an editor preview. Save/apply the document and test combat to change the real NPC's attacks.
 
 Documents with a model snapshot can restore DRM model settings when applied. Older documents without one, and the Jar Fist samples, preserve the target NPC's existing model configuration.
+

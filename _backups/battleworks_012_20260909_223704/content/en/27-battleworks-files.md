@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: Battleworks
 status: Guide
-version: 0.1.2
+version: 0.1.1
 audience: Combat content creators
 tags:
   - battleworks
@@ -75,3 +75,4 @@ Legacy Mob Profile JSON/NBT remains a compatibility input. The internal mod ID `
 Close the game, replace the JAR, and restart. Avoid duplicate Battleworks installations. Reapply the combat specification: editing a file does not automatically replace the copy already stored on the NPC.
 
 For combat-start crashes or playback issues, check the Battleworks, DRM, and CNPC versions, the applied combat document, `logs/latest.log`, and any crash report.
+

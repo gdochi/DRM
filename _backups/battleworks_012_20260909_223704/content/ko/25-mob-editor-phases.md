@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: Battleworks
 status: 사용 안내
-version: 0.1.2
+version: 0.1.1
 audience: 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -58,3 +58,4 @@ tags:
 페이즈는 한 전투 안에서 도달한 가장 높은 번호를 유지합니다. NPC가 회복해도 이전 페이즈로 돌아가지 않습니다. `Transition Pattern`을 연결하면 해당 페이즈 진입 시 전환 패턴을 사용할 수 있습니다. 연결된 패턴의 타겟·거리·체력 조건도 확인합니다.
 
 타겟을 잃은 상태가 Combat Reset Delay만큼 지속되면 전투 상태가 초기화됩니다. 현재 살아 있는 NPC의 체력은 바뀌지 않으므로 재전투 시 체력이 이미 낮다면 그에 맞는 페이즈에 다시 진입할 수 있습니다.
+

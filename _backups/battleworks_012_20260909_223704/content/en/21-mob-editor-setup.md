@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: Battleworks
 status: Guide
-version: 0.1.2
+version: 0.1.1
 audience: Combat content creators
 tags:
   - battleworks
@@ -22,7 +22,7 @@ tags:
 | Minecraft | Java Edition 1.20.1 |
 | Loader | Forge 47 or newer for 1.20.1 |
 | Java | 17 |
-| Dochi's Battleworks | 0.1.2 |
+| Dochi's Battleworks | 0.1.0 |
 | Dochi's RPG Maker | Forge 1.20.1 version 0.1.4 or newer; required |
 | CustomNPCs | A compatible Forge 1.20.1 build; required |
 
@@ -60,3 +60,4 @@ An NPC stores its own applied document copy. After changing the source JSON, app
 ## Test combat
 
 Close the editor and test with a hostile survival-mode target. Creative and spectator players are excluded from valid Battleworks combat targets. The preview sample has combat disabled; use the [combat sample](#mob-editor/battleworks-files) to test pursuit and damage.
+

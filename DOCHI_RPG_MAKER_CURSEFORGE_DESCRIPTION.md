@@ -2,7 +2,9 @@
 
 Dochi's RPG Maker is a Forge 1.20.1 authoring toolkit for building RPG content directly in Minecraft.
 
-Create dialogues, NPC shops, quests, currencies, stat systems, custom interfaces, HUDs, item tooltips, factions, teleporters, popup messages, and NPC model presentations without rebuilding the mod for every content change.
+Create dialogues, NPC shops, quests, currencies, stat systems, custom interfaces, HUDs, item tooltips, factions, teleporters, popup messages, and NPC model presentations without rebuilding the mod for every content ch
+
+ange.
 
 ## Main Features
 

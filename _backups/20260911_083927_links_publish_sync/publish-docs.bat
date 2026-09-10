@@ -19,22 +19,17 @@ if errorlevel 1 (
   goto fail
 )
 
-echo [1/6] Syncing mod links...
-node "%~dp0scripts\sync-mod-links.mjs"
-if errorlevel 1 goto fail
-
-echo.
-echo [2/6] Syncing mod logos...
+echo [1/5] Syncing mod logos...
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\sync-mod-logos.ps1"
 if errorlevel 1 goto fail
 
 echo.
-echo [3/6] Building site...
+echo [2/5] Building site...
 call npm.cmd run build
 if errorlevel 1 goto fail
 
 echo.
-echo [4/6] Staging changes...
+echo [3/5] Staging changes...
 git add -A
 if errorlevel 1 goto fail
 
@@ -48,13 +43,13 @@ goto push
 :commit
 for /f %%i in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd_HH-mm"') do set DOCS_TS=%%i
 echo.
-echo [5/6] Creating commit...
+echo [4/5] Creating commit...
 git commit -m "docs: update wiki %DOCS_TS%"
 if errorlevel 1 goto fail
 
 :push
 echo.
-echo [6/6] Pushing to GitHub...
+echo [5/5] Pushing to GitHub...
 git push origin docs-pages
 if errorlevel 1 goto fail
 

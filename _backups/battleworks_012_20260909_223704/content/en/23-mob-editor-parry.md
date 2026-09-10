@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: Battleworks
 status: Guide
-version: 0.1.2
+version: 0.1.1
 audience: Combat content creators
 tags:
   - battleworks
@@ -45,3 +45,4 @@ Enable Death to run a separate action timeline after the NPC dies. Place executi
 ## Validate an encounter
 
 Test one attack, pursuit, repeated contacts, phases, and death presentation in that order. Establish that damage and cooldowns behave correctly on the server before relying on additional reactive combat features.
+
