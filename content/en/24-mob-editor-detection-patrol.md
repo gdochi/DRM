@@ -1,57 +1,86 @@
 ---
-title: Target Pursuit and Facing
+title: Target acquisition, pursuit, and facing
 slug: mob-editor-detection-patrol
 order: 250
-description: Separate target acquisition, between-pattern pursuit, and stage movement.
+description: Separate hostile targeting, between-pattern pursuit, and stage movement.
 product: mob-editor
 section: combat
-category: Battleworks
+category: BattleWorks
 status: Guide
-version: 0.1.2
-audience: Combat content creators
+version: 0.1.3
+audience: Beginners and combat creators
 tags:
   - battleworks
   - combat
 ---
 
-## Establish a target first
+## 1. Choose who acquires the target
 
-Applying a combat specification is separate from choosing enemies. Configure CNPC factions and hostile targets first. The Jar Fist combat sample disables automatic scanning and uses CNPC's current target.
+| Method | Setting | Use |
+| --- | --- | --- |
+| CustomNPCs targeting | Scan Without Target Off | Preserve faction-based hostile targeting |
+| BattleWorks fallback scan | Scan Without Target On | Search nearby living entities when no valid target exists |
 
-**Combat Rules → Combat → Scan Without Target** enables a supplementary search for nearby living targets when no current target exists. It uses range, field of view, and optional visibility checks, and excludes creative/spectator players.
+Fallback scanning is not the same as CustomNPCs faction filtering. Test carefully around villagers or other NPCs. Creative and Spectator players are excluded.
 
-This supplementary search is not equivalent to CNPC's faction hostility filter. Leave it disabled when CNPC should decide who is an enemy.
+## 2. Test fallback scanning in isolation
 
-## Movement between patterns
+In **Combat Rules → Combat**, start with:
 
-A Battlework with native attacks suppressed uses its own pursuit goal. It can approach even when DRM has locked the NPC's native melee attack goal.
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| Scan Without Target | On | Search when no valid target exists |
+| Target Scan Range | 16 | Search distance |
+| Awareness FOV | 360 | Search in every horizontal direction |
+| Require Line of Sight | On | Exclude obscured entities during scanning |
 
-| Setting | Behavior |
-| --- | --- |
-| Chase Target | Find a path toward the target between patterns. |
-| Face Between Patterns | Keep looking at the target during engagement and cooldown waits. |
-| Chase Speed Multiplier | Navigation multiplier applied to the NPC's movement speed; defaults to 1.0. |
-| Approach Distance | Desired approach spacing; defaults to 2.0 blocks and is adjusted into an available attack window. |
+1. Approach in Survival from the front and rear.
+2. Reduce FOV to 160 and compare rear detection.
+3. Test with a wall between player and NPC.
+4. Disable scanning again if using CustomNPCs factions.
 
-When native attack suppression is disabled, CNPC's existing attack AI retains movement and look control. Its settings are separate from the dedicated Battleworks pursuit settings.
+The scan's line-of-sight setting affects acquisition. Pattern Core's line-of-sight requirement affects starting that move.
 
-## Movement inside a stage
+## 3. Configure pursuit between patterns
 
-Once a pattern starts, its current stage controls movement.
+| Setting | Role | Melee starting value |
+| --- | --- | --- |
+| Suppress Native Attacks | Reduce conflict with native attacks and combat AI | On |
+| Chase Target | Navigate toward the target between patterns | On |
+| Face Between Patterns | Face during engagement and reuse waits | On |
+| Chase Speed Multiplier | Navigation speed multiplier | 1.0 |
+| Approach Distance | Desired spacing | 2.0 |
 
-- A stage with **Face Target** enabled turns the head and body toward the target.
-- **Stop Horizontal** or `hold` stops horizontal motion.
-- `away`, `dash`, `orbit`, `left`, `right`, `zigzag`, and `jump` are authored stage movements.
-- Between-pattern facing does not automatically enable facing in a stage that has it disabled. A movement's own tracking or dash behavior can still request facing.
-- Pursuit navigation does not overwrite an authored retreat or roll velocity.
+Desired spacing can be clamped into an available non-mobility attack's range for the current phase. Still align the actual hitbox, pattern range, and terrain.
 
-After target loss and the end of any target-dependent pattern, the dedicated goal releases movement to CNPC's idle AI. Configure normal patrol routes in CNPC.
+Disabling native suppression allows CustomNPCs attack AI to interfere. Do not enable competing controllers simply to make a stationary NPC move.
 
-## If the NPC does not move
+## 4. Stage settings take over during a pattern
 
-1. Confirm that combat is enabled and that you applied the combat sample, not the preview file.
-2. Confirm that the NPC has a target. Use survival mode for player testing.
-3. Reapply edited JSON to the NPC.
-4. Check between-pattern pursuit separately from the stage's hold and facing controls.
-5. Check pattern distance, phase, and health eligibility.
-6. Check CNPC movement speed, disabled AI settings, and blocked paths. Motion inside a model animation does not itself move the entity through the world.
+Face Target follows the target during that stage. Stop Horizontal stops horizontal motion while retaining vertical physics. Hold is stationary movement; Toward, Away, and Orbit are authored combat movements.
+
+A dedicated timeline movement session can retain control over ordinary stage stopping and pursuit. See [movement actions](#mob-editor/battleworks-movement).
+
+If the NPC faces correctly while waiting but looks away during a hit, inspect the active stage's Face Target. An intentionally fixed-direction attack should keep its intended behavior.
+
+## 5. Engagement and reset timing
+
+| Setting | Meaning | Example |
+| --- | --- | --- |
+| Engage Delay Min / Max | Wait after acquiring a target before the first pattern | 10–18 ticks |
+| Retry Delay | Wait before trying again with no eligible move | 10 ticks |
+| Combat Reset Delay | Targetless interval before combat state resets | 100 ticks, about 5 seconds |
+
+A reset clears combat state such as history, cooldowns, phases, and passive state. It is not automatic full healing or teleportation to a home position.
+
+## 6. If pursuit works but attacks do not
+
+1. Confirm the intended target.
+2. Check pattern Enabled and phase range.
+3. Check horizontal Min/Max Range.
+4. Check Max Vertical and line of sight.
+5. Compare Approach Distance with the actual hitbox.
+6. Inspect cooldowns and repeat score penalties.
+7. Check NPC movement speed, disabled AI, and blocked paths.
+
+CustomNPCs still owns ordinary idle/patrol configuration. Orbit is an attack-stage movement around a target, not a world patrol editor.

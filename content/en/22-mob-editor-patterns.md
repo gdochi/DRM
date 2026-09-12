@@ -1,73 +1,118 @@
 ---
-title: Patterns, Actions, and Hitboxes
+title: Workspace, events, and timeline
 slug: mob-editor-patterns
 order: 230
-description: Understand timed action groups and edit individual hitbox contacts on the timeline.
+description: Find controls, select individual actions, and edit timing, repeats, and probability.
 product: mob-editor
 section: authoring
-category: Battleworks
+category: BattleWorks
 status: Guide
-version: 0.1.2
-audience: Combat content creators
+version: 0.1.3
+audience: Beginners and combat creators
 tags:
   - battleworks
-  - CustomNPCs
   - combat
 ---
 
-## Start with a pattern
+## Read the workspace in this order
 
-In 0.1.2, **Pattern Build Assist** in the topbar can create a starter physical attack and reusable hitbox from a guided questionnaire. Review confirms the result before anything is created, and existing patterns are preserved.
+Select a pattern in the left list, choose Windup / Action / Recovery, then select an action row and edit its properties.
 
-Select a pattern directly in **Pattern Workbench**, or use **Find pattern** to search by name or ID. Choose a stage inside the pattern before adding its actions.
-
-| Stage | Purpose | Example duration |
-| --- | --- | --- |
-| Windup | Preparation, facing, and telegraphing | 6 ticks |
-| Action | Attack motion and hit contacts | 18 ticks |
-| Recovery | Recovery and an opening before the next choice | 12 ticks |
-
-At normal tick speed, 20 ticks equal one second. This example lasts 36 ticks. A contact at Action tick 9 appears at tick 15 on the complete pattern timeline.
-
-## What Timed actions and events mean
-
-An **event groups actions that execute together**. It is separate from the animation catalog and pattern list. Its actions share a start tick, repeat interval, execution count, and chance.
-
-For example, put a blade Hitbox and a tip Hitbox in the same `hit` event at Action tick 6. Each action has a separate selectable timeline row. Moving a pin belonging to that event retimes the shared group. Use a separate event group when an action needs different timing or repetition.
-
-| Setting | Example |
+| Tool | Purpose |
 | --- | --- |
-| First execution | Action tick 6 |
-| Repeat interval | 5 ticks |
-| Execution count | 3 |
-| Resulting executions | Action ticks 6, 11, and 16 |
+| Pattern Workbench | Pattern conditions and action timeline |
+| Hitbox Library | Shared geometry, damage, placement, and model preview |
+| Combat Rules | Manager, targeting, phases, death, and BGM |
+| Particle Maker | Separate reusable visual files |
+| Pattern Build Assist | Generate a physical attack from answers |
+| Pattern Graph | Inspect pattern and combo links |
+| Simulation | Rehearse motion and hitbox placement |
 
-Repeats beyond the end of the stage do not run. Repeated contacts do not repeatedly restart the attack animation.
+## 1. Select a pattern
 
-## Attach actions
+Use **Find pattern** to search names or IDs. Click the intended pattern and edit its name, Enabled state, and range in Core. Use Score for selection preferences and Combo for follow-up links.
 
-1. Select a stage and choose **+ Action**.
-2. Choose Hitbox, Skill, Animation, or a movement/facing control action.
-3. Use **Choose from list** for Hitbox and Skill references. Skills come from DRM's exposed catalog and may require their provider mod.
-4. Select the named timeline row to edit that individual action.
-5. Drag its pin to change the execution tick. Scroll when the timeline contains more rows.
+Names are for readers; IDs connect JSON references. If editing IDs externally, update every combo and transition reference that uses them.
 
-## Edit reusable hitboxes
+## 2. Set stage lengths
 
-**Hitbox Library** supports box, capsule, sphere, cylinder, sweep, and polygon shapes. Adjust damage, shape-specific dimensions, XYZ offsets, rotation, and sweep arcs where applicable.
+| Stage | Purpose | Practice value |
+| --- | --- | --- |
+| Windup | Prepare and warn | 24 ticks |
+| Action | Execute hit, skill, or movement | 16 ticks |
+| Recovery | Finish the motion and offer an opening | 24 ticks |
 
-A hitbox definition does not own an execution tick or animation. Editing it changes the geometry used by patterns referencing that ID in the same document. Set contact timing on the pattern's Hitbox action.
+Core's **Recovery Delay** is a post-pattern delay floor, separate from the Recovery stage's length. After shortening a stage, check all its events and repeats again.
 
-The **Pattern:** selector in the hitbox screen chooses a pattern/action location that uses this hitbox. The clip list beside the model selects animation. Use **Edit pattern** to return to the owning pattern.
+## 3. Add one action
 
-## Resize the workspace
+1. Select Action.
+2. Press **+ Action**.
+3. Choose a purpose category, then the actual action.
+4. For Hitbox, use **Choose from list** or create a hitbox.
+5. Click the named action row.
+6. Set Event Tick `3`, Interval `0`, and Repeat Count `1`.
+7. Keep both event and action chances at 100 while testing.
 
-Use **Simulation** from the stage toolbar to open a draggable, resizable rehearsal panel. It previews movement, animation, and active hitboxes without applying damage, commands, sounds, AI, or third-party spells to the world. Preview speed can be changed from 0.1x to 4.0x without changing saved timings.
+Categories organize the picker; selecting a category is not an enable switch. Return to the parent category or use Esc when navigating the list.
 
-- Drag vertical dividers to resize the list, central workspace, and inspector.
-- Drag the horizontal divider in the hitbox screen to resize the model and timeline heights.
-- Drag the model/clip-list divider to change their widths.
-- Use **directional header arrows** to fold or unfold panels. **Reset panels** restores the default arrangement.
-- Front, Iso, and Side change camera orientation; the model toolbar's − / + buttons control zoom.
+**+ Skill** opens skill selection directly. **+ FX** helps add sounds, titles, and commands.
 
-Panel layout is saved in client settings and does not alter the NPC's combat document.
+## 4. Separate events from action rows
+
+An event means “the actions scheduled at this time.” A Hitbox and Sound inside one event share its tick and repeats, but each has a selectable row.
+
+| Edit | Affects |
+| --- | --- |
+| Event Tick | All actions inside that event |
+| Event Interval / Repeat Count | The entire event schedule |
+| Event chance | Whether that occurrence runs at all |
+| Action Chance | That action's independent chance |
+| Hitbox action multiplier | That use of the shared hitbox |
+| Library Damage | Every use of that hitbox definition |
+
+Put a sound at tick 3 and damage at tick 8 in separate events.
+
+## 5. Move pins and the playhead
+
+Drag an action pin to retime its event. Clicking or dragging the ruler and empty lanes moves the preview playhead. Scroll when there are many action rows.
+
+Event Tick is local to the selected stage. With a 24-tick Windup, Action tick 3 appears at overall tick 27.
+
+## 6. Create a repeated event
+
+Use a 20-tick Action with:
+
+| Setting | Value |
+| --- | --- |
+| Event Tick | 4 |
+| Interval | 6 |
+| Repeat Count | 3 |
+| Execution ticks | 4, 10, 16 |
+
+```text
+first tick + interval × (count - 1) ≤ stage length
+4 + 6 × (3 - 1) = 16 ≤ 20
+```
+
+Count includes the first execution. Interval 0 means no repeat. Repeating a hitbox does not automatically restart the stage animation. See [hit policies](#mob-editor/battleworks-hitboxes) to control repeated damage attempts.
+
+## 7. Adjust probability in one place first
+
+For reliable damage with occasional dialogue, use event 100%, Hitbox 100%, Sound 100%, and dialogue 20%.
+
+A 50% event containing a 20% action gives 10% base probability. Advanced conditions and health/phase chance bonuses can change the effective frequency further.
+
+## 8. Recover a cramped layout
+
+- Drag dividers to resize lists, workspace, and properties.
+- In Hitbox Library, resize model/timeline height and model/Clips width.
+- Use header arrows to fold or unfold panels.
+- Press **Reset panels** to restore the arrangement.
+- Drag Simulation by its header and resize using its lower-right grip.
+
+Preview speed 0.1x–4.0x changes observation speed, not saved pattern ticks. Layout belongs to local client settings.
+
+## Before saving
+
+Check Enabled, missing IDs, event bounds, and the last repeat. Resolve validation errors, save/apply, and test the actual NPC. Continue with [hitboxes](#mob-editor/battleworks-hitboxes).

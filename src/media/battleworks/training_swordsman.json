@@ -1,0 +1,209 @@
+{
+  "schema": "dochi.battleworks.v1",
+  "id": "training_swordsman",
+  "displayName": "Training Swordsman",
+  "enabled": true,
+  "description": "Beginner Forge 1.20.1 / BattleWorks 0.1.3 example. Normal humanoid NPC; CustomNPCs supplies the hostile target.",
+  "combat": {
+    "suppressNativeAttacks": true,
+    "suppressCustomNpcScripts": false,
+    "engageDelayMin": 10,
+    "engageDelayMax": 18,
+    "combatResetDelayTicks": 100,
+    "retryDelayTicks": 10,
+    "targeting": {
+      "scanWhenNoTarget": false,
+      "scanRange": 16,
+      "requireLineOfSight": true,
+      "fovDegrees": 360,
+      "chaseTarget": true,
+      "faceTarget": true,
+      "chaseSpeed": 1,
+      "preferredDistance": 2
+    },
+    "parry": {
+      "mode": "off",
+      "magicProjectileDeflect": false,
+      "betterCombatMelee": false
+    },
+    "bgm": {
+      "enabled": false,
+      "soundId": "",
+      "volume": 0.7,
+      "pitch": 1
+    }
+  },
+  "manager": {
+    "globalCooldownTicks": 0,
+    "maxCombo": 0,
+    "selectionFloor": 0.65,
+    "samePatternPenalty": 1,
+    "recentPatternPenalty": 1,
+    "sameRolePenalty": 1,
+    "randomFactor": 0,
+    "stationaryChainPenalty": 1,
+    "recoveryMin": 8,
+    "recoveryMax": 14
+  },
+  "phases": [
+    {
+      "index": 1,
+      "id": "phase_1",
+      "name": "Training",
+      "enabled": true,
+      "enterAtHealthRatio": 1,
+      "transitionPatternId": ""
+    }
+  ],
+  "hitboxes": [
+    {
+      "id": "training_sweep",
+      "name": "Training Sweep",
+      "shape": "sweep",
+      "damage": 4,
+      "radius": 2.4,
+      "width": 1.5,
+      "height": 1.8,
+      "depth": 1.5,
+      "thickness": 0.5,
+      "yaw": 0,
+      "pitch": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "sweepSteps": 6,
+      "arcStartYaw": 90,
+      "arcStartPitch": 20,
+      "arcEndYaw": -90,
+      "arcEndPitch": -20,
+      "lockedTargetOnly": true,
+      "effectId": "",
+      "points": []
+    }
+  ],
+  "patterns": [
+    {
+      "id": "basic_slash",
+      "name": "Basic Slash",
+      "enabled": true,
+      "role": "melee",
+      "trigger": {
+        "type": "manager"
+      },
+      "priority": 10,
+      "minPhase": 1,
+      "maxPhase": 16,
+      "minDistance": 0,
+      "maxDistance": 2.7,
+      "maxVertical": 2.5,
+      "minBossHealth": 0,
+      "maxBossHealth": 1,
+      "minTargetHealth": 0,
+      "maxTargetHealth": 1,
+      "requiresLineOfSight": true,
+      "targetRequired": true,
+      "mobility": false,
+      "stationary": true,
+      "cooldownTicks": 40,
+      "recoveryTicks": 8,
+      "score": {
+        "base": 10,
+        "idealDistance": 2,
+        "distancePeak": 0
+      },
+      "windup": {
+        "id": "windup",
+        "ticks": 24,
+        "faceTarget": true,
+        "stopHorizontal": true,
+        "movement": {
+          "type": "hold",
+          "speed": 0
+        },
+        "animation": {
+          "explicitSelection": true,
+          "provider": "none",
+          "id": "",
+          "playback": "once",
+          "speed": 1,
+          "fadeTicks": 0
+        },
+        "events": []
+      },
+      "action": {
+        "id": "action",
+        "ticks": 16,
+        "faceTarget": true,
+        "stopHorizontal": true,
+        "movement": {
+          "type": "hold",
+          "speed": 0
+        },
+        "animation": {
+          "explicitSelection": true,
+          "provider": "vanilla_swing",
+          "id": "main_hand",
+          "playback": "once",
+          "speed": 1,
+          "fadeTicks": 0
+        },
+        "events": [
+          {
+            "id": "strike",
+            "at": 3,
+            "interval": 0,
+            "count": 1,
+            "chancePercent": 100,
+            "actions": [
+              {
+                "type": "dochi_battleworks:hitbox",
+                "chancePercent": 100,
+                "params": {
+                  "hitboxId": "training_sweep",
+                  "damageMultiplier": 1,
+                  "knockback": 0.2,
+                  "hitPolicy": "once_per_pattern"
+                }
+              },
+              {
+                "type": "dochi_battleworks:sound",
+                "chancePercent": 100,
+                "params": {
+                  "soundId": "minecraft:entity.player.attack.sweep",
+                  "volume": 1,
+                  "pitch": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "recovery": {
+        "id": "recovery",
+        "ticks": 24,
+        "faceTarget": true,
+        "stopHorizontal": true,
+        "movement": {
+          "type": "hold",
+          "speed": 0
+        },
+        "animation": {
+          "explicitSelection": true,
+          "provider": "none",
+          "id": "",
+          "playback": "once",
+          "speed": 1,
+          "fadeTicks": 0
+        },
+        "events": []
+      },
+      "combos": []
+    }
+  ],
+  "death": {
+    "enabled": false,
+    "durationTicks": 40,
+    "lockCorpse": true,
+    "events": []
+  }
+}

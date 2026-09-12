@@ -1,87 +1,117 @@
 ---
-title: Boss Encounter Guide
+title: Build a two-phase sword boss
 slug: battleworks-encounters
-order: 270
-description: Build mobile bosses with spells, passive reactions, dialogue and battle music.
+order: 272
+description: Combine slash, thrust, retreat, and a half-health transition into one encounter.
 product: mob-editor
 section: combat
-category: Battleworks
+category: BattleWorks
 status: Guide
-version: 0.1.2
-audience: Combat content creators
+version: 0.1.3
+audience: Beginners and combat creators
 tags:
   - battleworks
   - combat
-  - boss
 ---
 
-# Battleworks 0.1.2 — Combat Creation Guide
+## What you will build
 
-## Build an encounter
+A sword boss uses slash, thrust, and retreat, then adds an enhanced attack below 50% health. No optional spell mod is needed. The values are teaching starting points, not a guarantee of balanced difficulty.
 
-Open Battleworks from DRM's editor selector. Configure the NPC model in **NPC Basic**, create a pattern in **Pattern Workbench**, and arrange its **Windup**, **Action**, and **Recovery** stages.
+Begin with the working [first attack](#mob-editor/battleworks-first-attack).
 
-Use **Hitbox Library** for weapon reach and damage. Use **Combat Rules** for pattern selection, phases, targeting, death events and BGM.
+## 1. Make a separate working file
 
-Save the combat file, then apply it to the NPC. Updating a file does not automatically update NPCs that already have an older copy applied.
+1. Load the first attack.
+2. Save As `bosses/training_captain.json`.
+3. Set maximum health around 100 in CustomNPCs.
+4. Check that old combat scripts are not competing.
+5. Keep the player's gear and health consistent between tests.
 
-## Choose skills and animations
+Keep first_sword as a known working comparison.
 
-Use **+ Skill** and the mod filter to find a supported spell. Each skill action controls one spell. Add separate actions for different spells and give them their own timings.
+## 2. Plan the moves
 
-Repeated casts must leave enough time for the spell's own cooldown. To alternate casting motions during a volley, place individual shots on the timeline and assign different compatible motions.
+| Pattern | Start range | Windup / Action / Recovery | Role |
+| --- | --- | --- | --- |
+| Slash | 0–2.7 | 24 / 16 / 24 | Basic attack |
+| Thrust | 0–3.2 | 28 / 16 / 24 | Longer forward attack |
+| Short retreat | 0–2.0 | 6 / 12 / 12 | Make space |
+| Enhanced slash | 0–2.7 | 18 / 16 / 20 | Phase 2 addition |
+| Enrage start | Broad suitable range | 0 / 30 / 10 | Phase announcement |
 
-All animations and previews use DRM. Better Combat provides compatible humanoid motions; other models need clips supported by their DRM integration. A spell effect may continue after its opening motion ends.
+Outside attack range, Chase Target must bring the NPC closer. A melee boss needs a navigable approach.
 
-## Make movement readable
+## 3. Stabilize slash and thrust
 
-Walking uses navigation. An impulse dash gives the NPC momentum once, allowing gravity and collisions to affect the movement. Teleport moves to a safe destination when one is available.
+1. Keep the working slash.
+2. Create the [thrust Box](#mob-editor/battleworks-hitboxes) and link it to another pattern.
+3. Start both at Damage 4.
+4. Put the thrust hit at Action tick 3, then adjust to actual contact.
+5. Give both Priority 10 and Base Score 10.
+6. Confirm both appear in repeated close-range fights.
 
-Combine lateral movement, approach and retreat instead of repeatedly reversing a tiny sidestep. Keep walking active through appropriate attack gaps. Leave room for beam/breath attacks, melee contact moments and recovery openings.
+Resolve selection and range issues before adding phases.
 
-Increasing the number of movement actions does not guarantee the same distance on every map: NPC movement settings and terrain still affect the result.
+## 4. Add retreat
 
-## Chances and passive reactions
+1. Follow the [Away movement exercise](#mob-editor/battleworks-movement).
+2. Mark the pattern Mobility and use a distinct movement role.
+3. Initially leave it damage-free.
+4. Start Base Score around 6 so it is less prominent than attacks.
+5. Verify that pursuit resumes after retreat.
 
-An individual action's **Chance (%)** field defaults to 100 when omitted or cleared. For example, keep an attack guaranteed while giving a routine speech a 20% chance.
+If movement dominates, check whether attacks are failing their range conditions before changing scores.
 
-An event's chance applies to its whole group. Individual action chances are separate rolls; setting two actions to 20% does not make them happen together.
+## 5. Add phase 2
 
-Passive patterns respond to melee damage, ranged damage, any damage or health thresholds. Give repeatable reactions cooldowns, and choose how they behave when another pattern is busy. Use a once-per-combat setting for a last-stand reaction. Health phase transitions and passive reactions are distinct tools.
+1. Configure phase 1 at 100% and phase 2 at 50%.
+2. Create a separate enhanced slash and set Min Phase 2.
+3. Keep ordinary attacks available in both phases.
+4. Before increasing damage, shorten enhanced Windup from 24 to 18.
+5. If too abrupt, tune between 20 and 24.
 
-## Boss dialogue
+Change timing, damage, or hit count one at a time.
 
-Add a Command action and use **Edit command / arguments**. Supported placeholders include `@npc`, `@target`, `{player}` and `{uuid}`.
+## 6. Connect the transition
 
-The supplied encounters use DRM Popup Maker for their English speeches. Configure the opening sound in the popup definition: it plays directly to the recipient when the popup appears. This keeps the sound together with the speech even when a command has a reduced chance.
+1. Give Enrage Start a Title and Sound at Action tick 0.
+2. Keep its trigger on Manager and allow phase 2.
+3. For transition-only use, set Base Score and all additive bonuses to zero.
+4. Select it as phase 2's Transition Pattern.
+5. Reduce health below half and verify one transition.
+6. Heal and confirm the phase stays latched.
 
-`combatv1.json` is a shared popup definition. Changing its opening sound also affects other content that uses that definition.
+See [phase details](#mob-editor/mob-editor-phases) for forced-transition conditions and skipped thresholds.
 
-## Mob's BGM
+## 7. Optionally add one passive
 
-In **Combat Rules → BGM**, enable the feature, select a sound and set its volume.
+Use [Ranged Damage retreat](#mob-editor/battleworks-passives) for a response to arrows. If you also want ordinary retreat, keep separate patterns: changing a pattern to passive removes it from manager selection.
 
-- Use a sound event ID, such as `minecraft:bgm.dread_march`, rather than an OGG filename. That example requires the corresponding resource pack.
-- Only the current player target hears the track.
-- The track loops and stops when the target is lost.
-- Vanilla background music is suspended while encounter BGM is active; normal scheduling returns afterward.
-- Music volume controls boss BGM. At zero, it is silent.
-- Death, disconnects and dimension changes clear playback. With multiple bosses, one encounter track plays at a time.
+Basic queued reactions wait for an opening. Immediate damage cancellation uses a different advanced trigger.
 
-## Damage and content files
+## 8. Optionally add a ground warning
 
-Hitbox damage is edited in **Hitbox Library**. Spell damage depends on the provider, spell level and supported options; there is no universal damage override for every mod skill.
+Create a ring in [Particle Maker](#mob-editor/battleworks-particles) and attach it to Windup. Match its size and duration to the actual Hitbox.
 
-Combat JSON files belong in `config/dochi_rpg_maker/mobs/`. Popup definitions belong in `config/dochi_rpg_maker/popups/definitions/`.
+For an attack on the player's **previous position**, use [save position → warning → delayed hit](#mob-editor/battleworks-advanced-actions).
 
-The separately supplied encounters are:
+## 9. Test a situation matrix
 
-| File | Boss |
+| Situation | Check |
 | --- | --- |
-| `battleworks_boss_fire.json` | Veyr, the Cinder Crown |
-| `battleworks_boss_ice.json` | Ilyra, the Winter Regent |
-| `battleworks_boss_elemental.json` | Astra, the Prismatic Sovereign |
-| `battleworks_boss_lightning.json` | Kael, the Stormbound King |
-| `battleworks_boss_arkel.json` | Arkel, Warden of the Dying Sun |
+| About 1 block | Slash and retreat eligibility |
+| About 2.5 blocks | Contact and actual damage |
+| About 3 blocks | Thrust or renewed approach |
+| About 6–8 blocks | Pursuit leading into an attack |
+| Walls and stairs | Navigation, height, and sight conditions |
+| Crossing 50% health | Transition and enhanced move |
+| Healing in combat | Phase remains latched |
+| Target loss and another fight | Intended state reset |
+| Death | Presentation, BGM ending, summon cleanup |
 
-These files, custom music and popup assets are separate from the mod update. Configure NPC health, equipment, hostility, drops and respawn separately.
+## 10. Prepare the package
+
+Reopen the saved file and check the values. Include all combat, particle, model, sound, popup, clone, and provider dependencies.
+
+Use [files and backup guidance](#mob-editor/battleworks-files) and [troubleshooting](#mob-editor/battleworks-troubleshooting) before sharing.

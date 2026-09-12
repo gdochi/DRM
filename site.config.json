@@ -105,8 +105,8 @@
       "label_ko": "Dochi's Battleworks",
       "shortLabel": "Battleworks",
       "shortLabel_ko": "Battleworks",
-      "description": "Forge 1.20.1 combat authoring for CustomNPCs: patterns, hitboxes, model animation, pursuit, and phases.",
-      "description_ko": "Forge 1.20.1에서 CustomNPCs의 패턴, 히트박스, 모델 애니메이션, 추적과 페이즈를 제작합니다.",
+      "description": "Learn BattleWorks 0.1.3 step by step: a first NPC attack, hitboxes, movement, boss phases, and Particle Maker.",
+      "description_ko": "BattleWorks 0.1.3의 첫 NPC 공격부터 히트박스·이동·보스 페이즈·Particle Maker까지 따라 만듭니다.",
       "description_ru": "Создание боёв CustomNPCs для Forge 1.20.1: паттерны, хитбоксы, анимация, преследование и фазы.",
       "description_zh": "为 Forge 1.20.1 的 CustomNPCs 制作战斗模式、碰撞箱、模型动画、追踪和阶段。",
       "description_ja": "Forge 1.20.1のCustomNPCs向けにパターン、ヒットボックス、モデルアニメーション、追跡、フェーズを制作します。",
@@ -601,8 +601,8 @@
       "shortLabel_zh": "Battleworks",
       "shortLabel_ja": "Battleworks",
       "accent": "violet",
-      "description": "Forge 1.20.1 combat authoring for CustomNPCs: patterns, hitboxes, model animation, pursuit, and phases.",
-      "description_ko": "Forge 1.20.1에서 CustomNPCs의 패턴, 히트박스, 모델 애니메이션, 추적과 페이즈를 제작합니다.",
+      "description": "Learn BattleWorks 0.1.3 step by step: a first NPC attack, hitboxes, movement, boss phases, and Particle Maker.",
+      "description_ko": "BattleWorks 0.1.3의 첫 NPC 공격부터 히트박스·이동·보스 페이즈·Particle Maker까지 따라 만듭니다.",
       "description_ru": "Создание боёв CustomNPCs для Forge 1.20.1: паттерны, хитбоксы, анимация, преследование и фазы.",
       "description_zh": "为 Forge 1.20.1 的 CustomNPCs 制作战斗模式、碰撞箱、模型动画、追踪和阶段。",
       "description_ja": "Forge 1.20.1のCustomNPCs向けにパターン、ヒットボックス、モデルアニメーション、追跡、フェーズを制作します。",
@@ -612,29 +612,36 @@
           "id": "start",
           "label": "Start",
           "label_ko": "시작하기",
-          "description": "Install and apply your first combat specification.",
-          "description_ko": "설치하고 첫 전투 스펙을 NPC에 적용합니다."
+          "description": "Prepare an NPC and complete your first melee attack.",
+          "description_ko": "설치·NPC 준비부터 첫 근접 공격까지 따라갑니다."
         },
         {
           "id": "authoring",
-          "label": "Patterns and Animation",
-          "label_ko": "패턴과 애니메이션",
-          "description": "Actions, reusable hitboxes, clips, and the workspace.",
-          "description_ko": "액션, 재사용 히트박스, 클립과 작업 화면입니다."
+          "label": "Patterns and Movement",
+          "label_ko": "패턴과 이동",
+          "description": "Timeline controls, hitboxes, animation, and movement exercises.",
+          "description_ko": "화면 조작·판정·애니메이션·이동을 실습합니다."
         },
         {
           "id": "combat",
           "label": "Combat Behavior",
           "label_ko": "전투 동작",
-          "description": "Pursuit, selection, phases, and support boundaries.",
-          "description_ko": "추적, 패턴 선택, 페이즈와 지원 범위를 다룹니다."
+          "description": "Targeting, combos, phases, reactions, and a complete boss.",
+          "description_ko": "추적·콤보·페이즈·패시브를 보스 전투로 연결합니다."
+        },
+        {
+          "id": "effects",
+          "label": "Skills and Effects",
+          "label_ko": "스킬과 연출",
+          "description": "Skills, sounds, dialogue, battle music, and Particle Maker.",
+          "description_ko": "스킬·소리·대사·전투 음악·파티클을 제작합니다."
         },
         {
           "id": "reference",
           "label": "Files and Testing",
           "label_ko": "파일과 테스트",
-          "description": "Storage, samples, and troubleshooting.",
-          "description_ko": "저장 위치, 샘플과 문제 해결입니다."
+          "description": "Server files, complete JSON samples, and troubleshooting.",
+          "description_ko": "저장·백업·전체 JSON 예제와 문제 해결입니다."
         }
       ]
     },

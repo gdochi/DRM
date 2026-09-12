@@ -1,56 +1,104 @@
 ---
-title: Animation by NPC Model Type
+title: Connect models and combat animation
 slug: battleworks-animation
 order: 240
-description: Choose clips from the actual NPC model and preview them in Hitbox Library.
+description: Choose compatible clips and align stage, timeline, and cast animation timing.
 product: mob-editor
 section: authoring
-category: Battleworks
+category: BattleWorks
 status: Guide
-version: 0.1.2
-audience: Combat content creators
+version: 0.1.3
+audience: Beginners and combat creators
 tags:
   - battleworks
   - combat
 ---
 
-## Configure the model in NPC Basic
+## 1. Prepare the model in NPC Basic
 
-Use DRM's **NPC Basic** to set the NPC type, model, texture, and animation file. Battleworks selects that NPC's animations for combat patterns. An animation JSON file is not an NPC combat specification.
+BattleWorks uses DRM's model and playback APIs. Configure geometry, textures, animation assets, and semantic mappings in **DRM NPC Basic** first.
 
-| DRM NPC type | Clip catalog |
+| Model or method | Appropriate source |
 | --- | --- |
-| Normal NPC | Humanoid motions provided by Better Combat |
-| Gecko NPC | Clips in the animation file configured for that NPC |
-| Modded entity model | Native animations exposed by its DRM integration |
+| Normal humanoid | Main-Hand Swing or installed humanoid motion provider |
+| DRM Gecko model | A real clip from that model's animation file |
+| DRM modded entity | Native clips exposed by its DRM integration |
+| DRM Behavior | A configured semantic mapping such as attack |
+| Geometry-only test | Explicit No Animation / None |
 
-A modded entity's private animation system is not automatically enumerable. Available clips depend on what its DRM integration exposes. GeckoLib, Better Combat, and Player Animator are optional providers for their respective animation workflows. Hitbox editing and patterns with no animation remain usable without those providers.
+A Gecko clip and a humanoid Better Combat pose layer are not interchangeable.
 
-## Preview in Hitbox Library
+## 2. Select a clip in Hitbox Library
 
-1. Select a hitbox and choose its use location with **Pattern:**.
-2. Select a stage, such as **Action**, above the model.
-3. Search the **Clips** list beside the model and select a clip.
-4. Press **Play** below the model. **Stop** ends playback; another Play starts it again.
-5. Align contact ticks with the model pose on the timeline.
+1. Open **Edit this hitbox** from the action.
+2. Choose the use under **Pattern:**.
+3. Select Action in the model's stage toolbar.
+4. Search **Clips** and select a real clip.
+5. Press Play, inspect contact, then Stop.
+6. Change the pattern's Event Tick to match contact.
 
-Unattached hitboxes also support clip previews. Attach the hitbox to a pattern to author its saved combat timing.
+Pattern selects a usage; Clips selects animation. A detached preview can use a model snapshot or a default mannequin. Reopen with the real NPC if the preview model does not match.
 
-## Animation versus contact timing
+## 3. Three animation locations
 
-Hitboxes define contact geometry and damage. Animation playback in combat and editor previews uses DRM's existing animation functions, following the same playback route as `/drm playani`.
+| Location | Purpose |
+| --- | --- |
+| Stage Animation | Start a mapping on stage entry |
+| Timeline Animation action | Start a specific motion at an event tick |
+| Skill Cast Animation | Request a motion on each successful cast |
 
-For a first melee attack, assign one clip to **Action** and align the hitbox contact with it. Repeated contacts do not continually restart the stage animation.
+Start with one Action-stage animation. A configured stage animation takes precedence over ordinary Animation actions inside that stage. To schedule several explicit motions, intentionally set stage animation to None first.
 
-Skill actions can carry their own casting animation. A successful cast starts its assigned motion independently of the stage's one-shot animation. Give different casts different compatible clips and leave enough time for each motion before the next cast.
+## 4. Stage changes in 0.1.3
 
-## Empty lists or missing playback
+- Consecutive stages using the same mapping share a continuous playback span.
+- A different stage mapping can start on stage entry.
+- Recovery may wait while an authored action/cast animation still owns its specified playback time.
+- Action Duration and Cast Animation Ticks use their authored durations instead of being stretched to the entire remaining pattern.
+- Repeated hitbox checks do not restart the stage animation.
 
-- Check the NPC Basic model type and the actual animation file.
-- Distinguish a geometry `.geo.json` file from a clip-containing `.animation.json` file.
-- After assets finish loading, refresh the list.
-- Check that the optional provider is installed and compatible with the model. A Gecko clip is not silently replaced by an unrelated humanoid motion.
-- The **Pattern:** dialog lists uses of a hitbox. Select animations in Clips beside the model.
-- Play is an editor preview. Save/apply the document and test combat to change the real NPC's attacks.
+Do not apply the old 0.1.2 “one first-stage animation for the whole pattern” limitation to this version.
 
-Documents with a model snapshot can restore DRM model settings when applied. Older documents without one, and the Jar Fist samples, preserve the target NPC's existing model configuration.
+## 5. Tune speed and contact separately
+
+1. Start with Animation Speed 1.0.
+2. Match Event Tick to the contact posture.
+3. Increase animation speed slightly only when needed.
+4. Recheck contact and stage length after changing it.
+5. Save/apply and compare actual combat.
+
+Preview speed controls observation. Animation Speed is saved and affects real motion. Arbitrary frame seeking is not guaranteed for every Gecko clip; also inspect normal playback and restart.
+
+## 6. Preserve an intentional None selection
+
+The following is a **stage animation object**, not a complete combat file:
+
+```json
+{
+  "explicitSelection": true,
+  "provider": "none",
+  "id": "",
+  "playback": "once",
+  "speed": 1.0,
+  "fadeTicks": 0
+}
+```
+
+Without an explicit choice, older hitbox-only stages may migrate to the basic swing.
+
+## 7. Diagnose an empty clip list
+
+1. Check NPC Basic's model provider.
+2. Distinguish geometry `.geo.json` from animation `.animation.json`.
+3. Confirm the model references the intended animation asset.
+4. Check optional providers and client resources.
+5. Refresh after asynchronous assets load.
+6. Verify that DRM actually exposes the needed native clip.
+
+Use the current NPC's list instead of inventing IDs.
+
+## Model snapshots
+
+A document with `drmNpcModel` can restore model configuration when applied. `previewNpcModel` and `previewTexture` are detached-preview data. Check snapshots before applying an imported encounter to a different model.
+
+Finally, verify that the real NPC plays the same intended motion during combat.

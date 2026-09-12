@@ -1,0 +1,36 @@
+{
+  "schema": "dochi.particles.v1",
+  "effect": {
+    "id": "training_ring",
+    "name": "Training Ring",
+    "durationTicks": 40,
+    "layers": [
+      {
+        "name": "Warning ring",
+        "startTick": 0,
+        "endTick": 39,
+        "intervalTicks": 2,
+        "emission": {
+          "type": "dochi_battleworks:particle_shape",
+          "chancePercent": 100,
+          "params": {
+            "particleId": "minecraft:end_rod",
+            "origin": "caster",
+            "shape": "ring",
+            "samples": 24,
+            "count": 1,
+            "radius": 2.4,
+            "offsetX": 0,
+            "offsetY": 0.05,
+            "offsetZ": 0,
+            "yaw": 0,
+            "spread": 0,
+            "speed": 0
+          }
+        },
+        "interpolate": false,
+        "keyframes": []
+      }
+    ]
+  }
+}

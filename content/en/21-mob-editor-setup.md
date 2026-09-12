@@ -1,62 +1,99 @@
 ---
-title: Installation and NPC Application
+title: Installation and NPC preparation
 slug: mob-editor-setup
 order: 220
-description: Install the required mods, create a document, and apply it to a CustomNPCs NPC.
+description: Prepare matching mods, a test NPC, and the correct save/apply workflow.
 product: mob-editor
 section: start
-category: Battleworks
+category: BattleWorks
 status: Guide
-version: 0.1.2
-audience: Combat content creators
+version: 0.1.3
+audience: Beginners and combat creators
 tags:
   - battleworks
-  - CustomNPCs
   - combat
 ---
 
-## Environment
+## 1. Prepare a matching installation
 
-| Component | Requirement |
+| Component | This guide |
 | --- | --- |
 | Minecraft | Java Edition 1.20.1 |
-| Loader | Forge 47 or newer for 1.20.1 |
+| Loader | Forge 47 series for Minecraft 1.20.1 |
 | Java | 17 |
-| Dochi's Battleworks | 0.1.2 |
-| Dochi's RPG Maker | Forge 1.20.1 version 0.1.4 or newer; required |
-| CustomNPCs | A compatible Forge 1.20.1 build; required |
+| BattleWorks | 0.1.3 |
+| Dochi RPG Maker / DRM | Forge 1.20.1, 0.1.7 or newer; required |
+| CustomNPCs | Compatible Forge 1.20.1 build; required |
 
-Install matching Battleworks and DRM versions, together with compatible CNPC, on the server and clients. This guide covers the Forge build. Install optional providers and their own dependencies only for the integrations you use.
+1. Put the required mods and their dependencies in the selected instance's mods folder.
+2. Check that an older BattleWorks or Mob Editor JAR is not installed alongside the new one. The current mod ID is `dochi_battleworks`.
+3. Launch and verify that the mods loaded.
+4. On multiplayer servers, match BattleWorks and DRM on server and clients. Install the providers and resources needed by the encounter too.
 
-## Open the editor
+This guide targets the Forge source. Do not infer the requirements of a separate NeoForge build from this table.
 
-1. Obtain DRM's **Dochi RPG Maker Core** item in creative mode.
-2. Right-click air to open the editor selector and choose **Battleworks**.
-3. To work with a particular NPC, right-click a CustomNPCs NPC with the Core and enter the target-aware workflow.
-4. Configure its model and baseline animation bindings in DRM's **NPC Basic**.
+## 2. Add optional integrations when needed
 
-Set up factions, hostile targets, and ordinary idle behavior in CNPC. Battleworks applies combat specifications; model asset creation remains a separate task.
+| Feature | Additional preparation |
+| --- | --- |
+| Basic humanoid swing and physical hitbox | Start with the required installation above. |
+| Better Combat weapon motion | Compatible Better Combat, dependencies, and supported weapon |
+| Gecko model clips | DRM NPC Basic model, texture, animation file, and provider |
+| Player Animator motion | Compatible provider and real clips |
+| Iron's Spellbooks, Cataclysm, Mowzie skills | Provider mod, dependencies, and a skill exposed in the installed catalog |
+| Custom sounds and textures | The mod or resource pack supplying the real IDs |
 
-## Create the first attack
+The [first attack](#mob-editor/battleworks-first-attack) uses no optional magic or animation provider.
 
-1. Use **Create New**, or **Load** the starter combat document.
-2. Choose **Pattern Workbench → Add**.
-3. Set Windup, Action, and Recovery durations; use **Action → + Action** to add a Hitbox action.
-4. Use **Choose from list** to select or create a hitbox.
-5. Open **Edit this hitbox** and adjust its dimensions and offsets. For an animated attack, select the Action stage, assign a clip, and use **Play**.
-6. Use **Save As** with a new name such as `my_boss.json`.
-7. In the NPC apply screen, select that Battleworks combat specification and apply it.
+## 3. Prepare a practice NPC
 
-The file is stored at `config/dochi_rpg_maker/mobs/my_boss.json`. Preserve the starter document as a template and save your working copy under another name.
+1. In Creative mode, create a normal humanoid CustomNPC.
+2. Give it a recognizable name and approximately 100 maximum health for testing.
+3. Equip a sword. BattleWorks hitbox damage will be configured separately.
+4. Configure CustomNPCs factions and targeting so a Survival player is hostile.
+5. Use a flat practice area without other NPCs or villagers.
 
-## Save versus Save As
+Completion check: you can find the NPC and confirm its stats, equipment, and hostile-target settings.
 
-- **Save** writes the current document to the selected NPC, if any. It also saves to the loaded file path when one is present.
-- **Save As** writes a JSON file with the chosen name. Saving that file alone does not update the NPC's applied combat specification.
-- In a new document without an NPC or file path, **Save** opens the filename prompt.
+## 4. Open the editor with that NPC selected
 
-An NPC stores its own applied document copy. After changing the source JSON, apply it again, or open the editor for that NPC and use **Save**.
+1. Find DRM's **Dochi RPG Maker Core** item in the Creative inventory.
+2. Right-click the practice NPC with Core.
+3. Select **BattleWorks** and confirm the intended target.
+4. If changing the model, configure it in **NPC Basic** before choosing combat clips.
 
-## Test combat
+Using Core in the air also allows file authoring without an NPC. Saving from that detached editor does not automatically select a world NPC. Particle Maker can be used independently too.
 
-Close the editor and test with a hostile survival-mode target. Creative and spectator players are excluded from valid Battleworks combat targets. The preview sample has combat disabled; use the [combat sample](#mob-editor/battleworks-files) to test pursuit and damage.
+Author in Creative mode. Close the editor and use Survival mode for combat: Creative and Spectator players are excluded as combat targets.
+
+## 5. Understand Save, Save As, Load, and Apply
+
+| Operation | Result | Next step |
+| --- | --- | --- |
+| Load | Opens a server file in the editor | Edit, save, or apply it |
+| Save As | Writes JSON at the chosen path | Bind the NPC to the new path |
+| Save with an NPC selected | Saves the document and binds that NPC | Test combat |
+| Save without an NPC, loaded file | Updates that file | Check the intended NPC's binding |
+| Save without an NPC, new document | Opens the filename prompt | Save, then apply to an NPC |
+| NPC catalog Apply | Binds the selected server file path | Test combat |
+
+Enter `training/first_sword.json` in Save As. The resulting path is:
+
+```text
+config/dochi_rpg_maker/mobs/patterns/training/first_sword.json
+```
+
+Do not enter the full config path or a Windows drive path into the relative-path field.
+
+Bundled defaults are protected templates. Use **Save As** for a working copy. If the editor has an NPC attached, pressing **Save after Save As** binds that NPC to the new file.
+
+## 6. Verify the saved result
+
+1. Resolve any validation or server save error.
+2. Refresh Load and reopen the working file.
+3. Apply it through the NPC catalog, or Save with that NPC attached.
+4. Test as a Survival player.
+
+When connected to a remote server, files are saved in the **server's config directory**. A copy in your separate single-player directory will not appear on that server.
+
+NPCs now reference files instead of storing full JSON copies. Use separate Save As paths when different NPCs need different encounters. Continue with [your first attack](#mob-editor/battleworks-first-attack).

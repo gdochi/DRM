@@ -1,61 +1,68 @@
 ---
-title: Dochi's Battleworks Overview
+title: Getting started with BattleWorks
 slug: mob-editor-overview
 order: 210
-description: Create and apply NPC combat specifications through the Battleworks editor.
+description: A learning path from installation to a first attack, boss phases, and particle effects.
 product: mob-editor
 section: start
-category: Battleworks
+category: BattleWorks
 status: Guide
-version: 0.1.2
-audience: Combat content creators
+version: 0.1.3
+audience: Beginners and combat creators
 tags:
   - battleworks
-  - CustomNPCs
   - combat
 ---
 
-## What Battleworks creates
+## Start with one readable melee attack
 
-Dochi's Battleworks is a **combat authoring addon for Minecraft Forge 1.20.1 and DRM**. Build a combat specification for a CustomNPCs NPC in-game: create a pattern, then place hitbox contacts, skills, movement, and animation timing inside it.
+BattleWorks is a Forge 1.20.1 addon for DRM that controls how CustomNPCs fight. Build a sequence such as “approach the player, prepare, swing and deal damage, recover, then select another move.”
 
-This guide covers the creator-facing Battleworks 0.1.2 editor. It is separate from player HUDs and GUI Maker layouts. Existing Mob Editor documentation addresses remain available, but the current mod and editor are called Battleworks.
+This guide follows **BattleWorks 0.1.3 and DRM 0.1.7 or newer**. Existing mob-editor page addresses remain available. Start with a normal humanoid NPC; the first exercise does not require an optional spell or animation mod.
 
-## The three workspaces
+## Follow this learning path
 
-| Workspace | Purpose |
+| Step | Guide | Completion check |
+| --- | --- | --- |
+| 1 | [Installation and NPC preparation](#mob-editor/mob-editor-setup) | Open BattleWorks with your NPC selected. |
+| 2 | [Your first melee attack](#mob-editor/battleworks-first-attack) | The NPC approaches, prepares, hits, and recovers. |
+| 3 | [Workspace and timeline](#mob-editor/mob-editor-patterns) | Move an action to another tick. |
+| 4 | [Hitboxes](#mob-editor/battleworks-hitboxes) | Adjust damage, size, and placement separately. |
+| 5 | [Model animation](#mob-editor/battleworks-animation) | Align contact with the model's motion. |
+| 6 | [Targeting](#mob-editor/mob-editor-detection-patrol) and [movement](#mob-editor/battleworks-movement) | Approach and retreat without conflicting movement. |
+| 7 | [Selection and phases](#mob-editor/mob-editor-phases), [passives](#mob-editor/battleworks-passives) | Add variety and health reactions. |
+| 8 | [Two-phase boss exercise](#mob-editor/battleworks-encounters) | Combine the features into one encounter. |
+
+Continue with [skills and presentation](#mob-editor/battleworks-skills-effects), [Particle Maker](#mob-editor/battleworks-particles), and [advanced actions](#mob-editor/battleworks-advanced-actions) when the basic encounter works.
+
+## Where each setting belongs
+
+| Task | Editor |
 | --- | --- |
-| Pattern Workbench | Select a pattern and place actions in its Windup, Action, and Recovery stages. |
-| Hitbox Library | Edit reusable hitbox geometry, damage, and offsets; preview the NPC with its clip list and Play/Stop controls. |
-| Combat Rules | Configure pattern scoring, engagement and pursuit, health phases, and death timelines. |
+| NPC health, equipment, factions, drops, respawning | CustomNPCs |
+| Models, textures, animation assets and behavior mappings | DRM NPC Basic |
+| Patterns, hitboxes, combat timing, movement, phases | BattleWorks |
+| Reusable visual particle files | Visual → Particle Maker |
+| Popup appearance and dialogue presentation | DRM Popup Maker and its GUI |
 
-The model preview belongs to **Hitbox Library**. Pattern Workbench uses its central space for the action timeline.
+Advanced imported documents can also enable `npcStats` to override selected combat attributes. The beginner exercises leave that feature disabled and prepare base stats in CustomNPCs.
 
-## Authoring units
+## Five terms you will use
 
-| Unit | Meaning |
+| Term | Meaning |
 | --- | --- |
-| Battlework | One NPC combat document containing patterns, hitboxes, and combat rules. |
-| Pattern | An action with eligibility conditions and three execution stages. |
-| Stage | Windup, Action, or Recovery, with duration, movement, facing, and animation settings. |
-| Timed actions | A group of actions sharing an execution tick and repeat settings. |
-| Hitbox | Reusable geometry and damage data referenced by patterns, separate from animation assets. |
+| Battlework | A combat document. Several NPCs can reference the same server file. |
+| Pattern | One move, such as a slash or retreat. |
+| Stage | Windup, Action, or Recovery inside a pattern. |
+| Timed actions / event | Actions sharing one execution time and repeat schedule. |
+| Hitbox | The space tested for damage, authored separately from the visible weapon. |
 
-Reuse one hitbox in several patterns with different timings. Simultaneous actions remain individually selectable as named timeline rows.
+At normal server speed, **20 ticks are about one second**.
 
-## Start here
+## Remember these three rules
 
-1. [Installation and NPC application](#mob-editor/mob-editor-setup)
-2. [Patterns and hitboxes](#mob-editor/mob-editor-patterns)
-3. [Model-specific animation](#mob-editor/battleworks-animation)
-4. [Pursuit and facing](#mob-editor/mob-editor-detection-patrol)
-5. [Files and test samples](#mob-editor/battleworks-files)
+1. Visuals and damage are separate. A particle effect or arm swing does not create a BattleWorks hitbox.
+2. Save the file and connect it to the NPC. Save As alone does not bind the NPC to the new path.
+3. Test in the world after using Simulation. Rehearsal shows motion and hitbox placement; it does not execute real AI, damage, commands, sounds, or external spells.
 
-**CustomNPCs and DRM are required.** Better Combat, GeckoLib, Player Animator, Iron's Spells 'n Spellbooks, and other providers are optional integrations.
-
-
-## Battleworks 0.1.2
-
-Combine spells, walking, dashes, teleports, passive reactions, dialogue and battle music. See [Boss Encounter Guide](#mob-editor/battleworks-encounters) for practical setup, action chances and applying updated files.
-
-Version 0.1.2 adds **Pattern Build Assist**, a draggable **Simulation** panel with preview-speed controls, and bundled combat, GUI, and popup training samples. It also improves editor sizing, flyouts, sound controls, combat facing, target tracking, hitbox previews, and animation playback. Client and server must use the same 0.1.2 build.
+Use [troubleshooting](#mob-editor/battleworks-troubleshooting) when a step fails and [files and samples](#mob-editor/battleworks-files) before importing someone else's encounter.

@@ -1,47 +1,72 @@
 ---
-title: Combat Options and Parry Support
+title: Combat ownership, parry scope, and death
 slug: mob-editor-parry
 order: 270
-description: Distinguish working global combat integrations from per-pattern parry settings.
+description: Prevent overlapping controllers and understand which combat options are active.
 product: mob-editor
 section: combat
-category: Battleworks
+category: BattleWorks
 status: Guide
-version: 0.1.2
-audience: Combat content creators
+version: 0.1.3
+audience: Beginners and combat creators
 tags:
   - battleworks
   - combat
 ---
 
-## Combat Rules pages
+## 1. Suppress overlapping native attacks
 
-| Page | Contents |
+Enable **Combat Rules → Combat → Suppress Native Attacks** when authored hitboxes should own attack timing.
+
+1. Start with a working hitbox attack.
+2. Enable suppression and save/apply.
+3. Check for extra hits during preparation or recovery.
+4. If overlap remains, inspect CustomNPC combat scripts.
+
+## 2. Handle legacy scripts deliberately
+
+0.1.3's **Suppress CustomNPC Scripts** stops legacy script execution from competing with BattleWorks. It preserves the stored script data.
+
+This is useful when porting a scripted boss. Check any noncombat behavior supplied by those scripts before relying on suppression. A new practice NPC normally does not need it.
+
+## 3. Current parry support
+
+| Feature | 0.1.3 source behavior |
 | --- | --- |
-| Manager | Selection modifiers, global cooldown, combo depth, and recovery waits |
-| Combat | Native attack suppression, targeting, pursuit, facing, and encounter delays |
-| Phase | Health thresholds and transition patterns |
-| Death | Death timeline, timed actions, and corpse movement lock |
-| Parry | Stored parry settings; see the 0.1.0 support boundary below |
+| Global Magic Projectile Parry | Reflection integration for supported Iron's Spellbooks projectiles |
+| Global Lock-on | Global permission with local presentation settings |
+| Hitbox Debug | Visualization, not additional damage |
+| Document Parry Window / Posture / Riposte | Editable and persisted, but no corresponding BattleWorks pattern-runtime consumer was found |
+| Pattern Parryable / Posture Damage On Parry | These fields alone do not implement posture loss, melee parry, or riposte |
+| guard / evade reactions | Separate implemented damage-reaction path; see [passives](#mob-editor/battleworks-passives) |
 
-Native CNPC attacks and Battleworks hitbox damage are separate damage sources. Enable native attack suppression when patterns are intended to own the NPC's attacks.
+Projectile reflection is not universal support for every mod projectile. Do not make an encounter require the reserved posture/riposte fields to become beatable.
 
-## Global features
+## 4. Global versus local settings
 
-The optional **Iron's Spells 'n Spellbooks** integration can deflect supported spell projectiles. It does not promise universal parrying for every projectile from every mod.
+| File | Purpose |
+| --- | --- |
+| `config/dochi_rpg_maker/settings/battleworks_global_rules.json` | Shared magic-parry, lock-on, and hitbox-debug flags |
+| `config/dochi_rpg_maker/settings/battleworks_client.json` | Panels, lock-on appearance, trails, audio, and local preferences |
 
-Player lock-on and hitbox debug presentation also use global combat settings. Their file is `config/dochi_rpg_maker/settings/battleworks_global_rules.json`. Defaults enable magic parry and lock-on and disable hitbox debug. Debug rendering does not create additional damage contacts.
+Global defaults enable magic parry and lock-on and disable hitbox debug.
 
-## Per-pattern parry limits in 0.1.0
+**Disable vanilla music** is an independent local audio preference. It suppresses vanilla music regardless of combat state and does not overwrite the music volume value. See [BGM setup](#mob-editor/battleworks-skills-effects).
 
-Detailed **Parry** page fields, including input windows, posture, and riposte multipliers, are currently stored in the document but are not connected to the Battleworks pattern runtime. Setting a pattern's `parryable` flag or posture damage alone does not implement posture loss, melee parries, or riposte combat.
+## 5. Make a short death sequence
 
-Do not make those fields essential to a working 0.1.0 encounter. Global spell-projectile deflection and a per-pattern posture system are separate capabilities.
+1. Open **Combat Rules → Death**.
+2. Enable it and set Duration 40 ticks.
+3. Enable Lock Corpse if horizontal movement should be held.
+4. Add a Sound or Title at tick 0.
+5. Add another event at tick 20 if needed.
+6. Keep every event and final repeat within Duration.
+7. Kill the actual NPC and observe the entire sequence.
 
-## Death presentation
+The killer can become the sequence's target. Player-directed titles and dialogue need a suitable recipient. Skills requiring a living caster can fail after death, so start with sound, title, and compatible motion.
 
-Enable Death to run a separate action timeline after the NPC dies. Place execution ticks and repetitions within its duration. Horizontal corpse locking can prevent sliding. Damage actions or skills still depend on their target and provider requirements.
+Lock Corpse stops navigation and horizontal movement. Drops, respawning, and all corpse physics are not configured by this switch.
 
-## Validate an encounter
+## Completion checks
 
-Test one attack, pursuit, repeated contacts, phases, and death presentation in that order. Establish that damage and cooldowns behave correctly on the server before relying on additional reactive combat features.
+Verify that no extra native/script hits overlap the timeline, reserved parry fields are not required for victory, death presentation finishes correctly, and the intended file remains connected after respawn or another fight.
