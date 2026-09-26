@@ -14,6 +14,8 @@ tags:
   - combat
 ---
 
+BattleWorks 0.1.3 has Forge 1.20.1 (Java 17, DRM 0.1.7+) and NeoForge 1.21.1 (Java 21, NeoForge 21.1.216+, DRM 0.2.0+) builds. Both require CustomNPCs. The exercise below targets Forge; use 1.21.1 builds of integrations on NeoForge.
+
 ## 1. Prepare a matching installation
 
 | Component | This guide |

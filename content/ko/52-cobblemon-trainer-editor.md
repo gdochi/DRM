@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: 트레이너와 포켓몬 NPC를 만드는 제작자
 tags:
   - trainer
@@ -24,7 +24,7 @@ tags:
 
 두 유형 모두 최대 16라운드, 라운드별 조건, 전투 설정, 전투 후 액션을 지원합니다. Trainer 파일을 Pokemon Itself 폴더로 옮기거나 반대로 사용하지 마세요.
 
-현재 Trainer JSON 스키마는 `22`, Pokemon Itself JSON 스키마는 `8`입니다. 지원되는 구형 문서는 로드할 때 현재 필드로 보정되고, 다시 저장하면 최신 구조로 정규화됩니다.
+현재 Trainer와 Pokemon Itself JSON 스키마는 모두 `23`입니다. 지원되는 구형 문서는 로드할 때 현재 필드로 보정되고, 다시 저장하면 최신 구조로 정규화됩니다.
 
 ## 상단 작업 버튼
 
@@ -157,3 +157,5 @@ Lead Duel은 양쪽 선봉 한 마리만 사용하는 Singles입니다. 원본 �
 3. 플레이어 파티에 전투 가능한 포켓몬을 넣습니다.
 4. 조건과 전투 후 액션을 비운 상태로 첫 전투를 확인합니다.
 5. 그다음 라운드, 자동 감지, AI, 아이템, 기믹을 하나씩 추가합니다.
+
+[트레이너 승리 퀘스트](#drm-cobblemon-editor/cobblemon-trainer-quests)에서 ID 연결과 승리 횟수 목표를 설정하는 방법을 확인하세요.

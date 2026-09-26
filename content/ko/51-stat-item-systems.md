@@ -7,7 +7,7 @@ product: core
 category: 스탯과 아이템
 section: stat-item
 status: 안정
-version: 0.1.5
+version: 0.2.0
 audience: RPG 시스템 제작자
 tags:
   - stats
@@ -60,3 +60,9 @@ tags:
 NPC 적용 화면에서 **Stat Builder** 파일을 연결하세요. 이후 그 NPC와 상호작용하면 연결한 세트의 플레이어 스탯 배분 화면이 열립니다.
 
 아이템 설명창의 배치는 **Visual → Tooltip Maker**에서 꾸밉니다. 아이템 미리보기, 장비 착용 모습, 긴 설명 스크롤은 **Tooltip Maker** 문서에서 설명합니다. 장비를 벗어 최대 체력만 줄어드는 경우에는 피격 효과가 나타나지 않습니다.
+
+## 장비 세트와 툴팁 연결
+
+Forge Item Editor에서 아이템의 `setId`와 툴팁 템플릿을 선택할 수 있습니다. 장비 세트는 `items/sets/`에 저장하며, 필요한 장착 수와 스탯 보너스·속성 수정치를 단계별로 정의합니다. 툴팁 템플릿은 `items/tooltip_templates/`에서 재사용합니다.
+
+아이템 하나의 정의, 여러 장비가 공유하는 세트, 설명창의 표현 템플릿을 구분해 저장하세요. 같은 스탯 세트를 참조하는지 확인한 뒤 실제 장착 수를 바꿔 보너스와 툴팁을 시험합니다. 이 Forge 기능을 다른 로더의 동일 기능으로 간주하지 마세요.

@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 서비스 NPC
 section: services
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: 포켓몬 치료 NPC를 만드는 제작자
 tags:
   - nurse-joy
@@ -104,3 +104,7 @@ PokéMart, Starter Selector, Trainer까지 한 NPC에 모두 넣으면 플레이
 | NPC가 이동하지 못함 | 치료기 옆 안전한 바닥과 충돌 공간 |
 | 치료가 거부됨 | 플레이어 배틀 상태, 치료기 충전/사용 중 상태 |
 | 문구는 바뀌었는데 기계는 그대로 | 정상 동작. 기계는 NPC별 링크이므로 다시 연결 |
+
+## 원본에 연결된 NPC 다시 편집하기
+
+연결된 NPC의 에디터는 서버의 최신 문서와 원본 경로를 받아 시작합니다. 같은 경로를 저장하면 다음 런타임 요청에 반영됩니다. 치료기 상태 응답이 뒤늦게 도착해도 이미 입력한 초안을 덮어쓰지 않으며, 창 크기를 바꿔도 입력 문구를 유지합니다. 문구가 다르면 NPC의 연결 경로와 저장한 파일이 같은지 먼저 확인하세요.

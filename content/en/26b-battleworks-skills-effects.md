@@ -120,3 +120,9 @@ BGM loops for the **current player target**, not every player inside a radius. W
 The player's **Music** volume must be audible. Custom audio resources must exist on each receiving client. Vanilla music suppression uses the independent Disable vanilla music preference.
 
 Add one cast, then sound, title, popup, and BGM in that order. Continue with [Particle Maker](#mob-editor/battleworks-particles).
+
+## Visual previews for supported skills
+
+Simulation, Hitbox Library, and tutorials share the skill preview. Supported projectiles, area effects, summons, particles, and some sustained effects can be viewed on the editor clock. Pause and rewind to compare timing and placement.
+
+This is not server spell execution. Damage, terrain destruction, pathfinding, actual combat stats, and complete third-party gameplay effects still need live combat tests. A listed skill does not guarantee a visual adapter. Distinguish missing mods, unregistered providers, unsupported visuals, and native-render failures; an unsupported effect is not silently replaced with another spell.

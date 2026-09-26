@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: Install and Configure
 section: setup
 status: Stable
-version: 0.1.1
+version: Forge 0.1.1 / NeoForge 0.1.2
 audience: Players and server operators
 tags:
   - installation
@@ -17,12 +17,12 @@ tags:
 
 ## Requirements
 
-- Minecraft 1.20.1
-- Forge 47.x
-- Java 17
-- CustomNPCs or Easy NPC for the NPC entities being protected
+| Build | Minecraft | Java | File |
+| --- | --- | --- | --- |
+| Forge 47+ | 1.20.1 | 17 | `dochi_real_armor-0.1.1.jar` |
+| NeoForge 21.1+ | 1.21.1 | 21 | `dochi_real_armor-0.1.2.jar` |
 
-Place `dochi_real_armor-0.1.1.jar` in the `mods` folder on both the client and server. A dedicated server needs the mod because damage calculation and config authority are server-side.
+Install the same loader build on client and server. CustomNPCs and Easy NPC are optional integrations, not hard dependencies. To use NPC armor, install a supported NPC mod for that loader. NeoForge declares CustomNPCs 1.21.1 and Easy NPC 5.9+.
 
 ## Open the settings
 
@@ -56,3 +56,7 @@ If `config/cnpc_real_armor-common.toml` exists and the new file does not, versio
 | Debug messages | OFF | Report calculations without controlling them |
 
 Changes are saved immediately. Restart only when replacing the jar or when another mod caches behavior outside this mod's control.
+
+## NeoForge configuration screen
+
+Use the standalone Config screen in the NeoForge Mods list. Forge DRM Mods Config integration is not a promise of the same integration on NeoForge. Shared config storage and server permission checks retain their roles.

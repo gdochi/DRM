@@ -2,12 +2,12 @@
 title: Quick Start
 slug: quick-start
 order: 20
-description: The shortest path into DRM Core 0.2.0 on Fabric 1.21.1.
+description: The shortest path into DRM Core 0.2.3 on Fabric 1.21.1.
 product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.0
+version: 0.2.3
 audience: First-time users
 tags:
   - quick-start
@@ -17,8 +17,8 @@ tags:
 ## First Launch
 
 1. Prepare Minecraft 1.21.1, Fabric Loader 0.18.0 or newer, Fabric API 0.116.11 or newer, and Java 21.
-2. Put the DRM Core 0.2.0 Fabric JAR in the client and server `mods` folders.
-3. Install CustomNPCs 1.0.0 on the server and clients. It is required by DRM 0.1.8.
+2. Put the DRM Core 0.2.3 Fabric JAR in the client and server `mods` folders.
+3. Install CustomNPCs 1.0.0 on the server and clients. It is required by DRM 0.2.3.
 4. Start the world or server once so `config/dochi_rpg_maker` is created.
 5. In Creative mode or with edit permission, get the `Dochi RPG Maker Core` item from the CustomNPCs tab or run `/give @s dochi_rpg_maker:dialogue_editor`.
 
@@ -37,7 +37,7 @@ On first launch, the mod installs starter dialogue, GUI, Teleporter, shop, quest
 
 The core item is also added to the CustomNPCs creative tab. Editing requires creative/edit permission.
 
-The 0.1.8 selector has search plus `Built-in` and `Add-on` categories. It includes Dialogue, NPC Shop, NPC Basic, Currency, GUI Maker, HUD Maker, Popup Maker, Faction, Quest, Teleporter, and Remnant Msg. NPC Spawner opens from its placed block. During the current session, the selector remembers the last editor, sub-screen, and JSON source.
+The current selector has search plus `Built-in` and `Add-on` categories. It includes Dialogue, NPC Shop, NPC Basic, Currency, GUI Maker, HUD Maker, Popup Maker, Faction, Quest, Teleporter, and Remnant Msg. NPC Spawner opens from its placed block. During the current session, the selector remembers the last editor, sub-screen, and JSON source.
 
 When a target NPC is open in NPC Apply, use the new `FUNCTION` search field to filter built-in and addon apply targets by their localized name, target ID, JSON kind, editor ID, or binding group.
 
@@ -93,6 +93,6 @@ If you edit server JSON by hand, run `/drm reload` or review `settings/reload_po
 
 In 0.1.9, choose **Scene Maker** in the editor selector to build camera scenes. See **Scene Maker** for timeline, world-pin dragging, curves, and playback commands.
 
-In 0.2.0, **Tooltip Maker** is available as a built-in Fabric editor. Use it to design item hover layouts, previews, scrolling content, and entrance effects. Dialogue choices also support per-node text sizing and optional pulse highlights.
+In 0.2.3, **Tooltip Maker** is available as a built-in Fabric editor. Use it to design item hover layouts, previews, scrolling content, and entrance effects. Dialogue choices also support per-node text sizing and optional pulse highlights.
 
 The shared topbar always shows back and forward arrows. Hover for their names. They move between previously opened screens and preserve editing state; they are separate from Undo/Redo. An arrow is disabled when there is no screen in that direction. Addon screens need an updated addon build to use these controls.

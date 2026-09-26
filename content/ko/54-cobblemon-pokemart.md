@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: 포켓몬 상점 제작자와 서버 운영자
 tags:
   - pokemart

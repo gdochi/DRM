@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: 명령어와 문제 해결
 section: operations
 status: Stable
-version: 0.1.1
+version: Forge 0.1.1 / NeoForge 0.1.2
 audience: 서버 운영자와 모드팩 제작자
 tags:
   - commands
@@ -38,7 +38,7 @@ tags:
 | --- | --- |
 | 방어력이 적용되지 않음 | 방어 계산과 해당 NPC 호환 스위치가 ON인지 확인 |
 | Easy NPC가 무시됨 | 엔티티 ID의 네임스페이스가 `easy_npc`인지, Easy NPC 지원이 ON인지 확인 |
-| 하체 사격이 다른 부위로 나옴 | 서버에도 0.1.1이 설치됐는지 확인한 뒤 부위별 방어와 디버그를 켜서 재시험 |
+| 하체 사격이 다른 부위로 나옴 | 서버에도 Forge 0.1.1 또는 NeoForge 0.1.2의 해당 빌드가 설치됐는지 확인한 뒤 부위별 방어와 디버그를 켜서 재시험 |
 | 모든 부위에 모든 장비가 적용됨 | 부위별 방어가 OFF이거나 피격점을 판정하지 못한 상황인지 확인 |
 | 보호 인챈트가 작동하지 않음 | 보호 스위치와 피해의 방어·인챈트 무시 태그 확인 |
 | GUI 변경이 거절됨 | 권한 레벨 2 계정으로 실행 |

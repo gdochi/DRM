@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Operations
 section: operations
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: Server operators and content publishers
 tags:
   - paths
@@ -56,7 +56,7 @@ Defaults and samples are starting points. Save project content under a user path
 
 | Document | Schema |
 | --- | ---: |
-| Trainer / Pokemon Itself | 20 |
+| Trainer / Pokemon Itself | 23 |
 | Trainer Brain | 4 |
 | Battle Presentation | 4 |
 | PokéMart | 7 |
@@ -133,4 +133,10 @@ File-based Trainer, Pokemon Itself, PokéMart, Nurse Joy, and Starter Selector b
 6. Test presentation playback, skipping, battle music, small GUI Scale, and different aspect ratios.
 7. Test Sales, Trade, and Auction before and after a server restart.
 8. Include user JSON and `_migration_backups` in the server backup policy.
-9. Confirm the release JAR is named `dochi_cobblemon_editor-0.1.6-fabric-1.21.1.jar` while the internal mod ID remains `cobble_npc`.
+9. Confirm the release JAR is named `dochi_cobblemon_editor-0.2.0-fabric-1.21.1.jar` while the internal mod ID remains `cobble_npc`.
+
+## Trainer identity and quest backups
+
+`cobblemon/trainer_registry.json` and `cobblemon/trainer_registry.initialized` preserve trainer identity. Back them up with trainer profiles, quest packs, and world player progress. Matching filenames or NPC display names alone do not identify the same trainer.
+
+The current Trainer/Pokemon Itself codec uses schema 23. Older documents load through compatibility conversion; documents without an identity start unlinked. Link the identity in the editor instead of manually changing only the schema number.

@@ -5,7 +5,7 @@ order: 105
 description: Design item tooltips, control item previews, and add entrance effects.
 product: core
 category: Tooltip Maker
-section: tooltip-maker
+section: gui-maker
 status: Stable
 version: 0.1.5
 audience: Creators

@@ -2,12 +2,12 @@
 title: Dochi Cobblemon Editor
 slug: cobblemon-editor-overview
 order: 500
-description: Dochi Cobblemon Editor 0.1.6의 기능 범위와 제작 도구입니다.
+description: Dochi Cobblemon Editor 현재의 기능 범위와 제작 도구입니다.
 product: drm-cobblemon-editor
 category: 개요
 section: overview
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: 코블몬 NPC와 관련 런타임을 제작하는 사용자
 tags:
   - cobblemon
@@ -17,7 +17,7 @@ tags:
 
 ## 무엇을 만드는 애드온인가요?
 
-`Dochi Cobblemon Editor`는 Fabric 1.21.1용 DRM 애드온입니다. CustomNPCs NPC에 Cobblemon 전투, 전투 전 연출, PokéMart, Nurse Joy, 스타터 선택 기능을 적용하고, 재사용할 NPC 클론과 스포너 소스까지 같은 제작 흐름에서 관리합니다.
+`Dochi Cobblemon Editor`는 Fabric·NeoForge 1.21.1용 DRM 애드온입니다. CustomNPCs NPC에 Cobblemon 전투, 전투 전 연출, PokéMart, Nurse Joy, 스타터 선택 기능을 적용하고, 재사용할 NPC 클론과 스포너 소스까지 같은 제작 흐름에서 관리합니다.
 
 전투는 별도 모의 엔진이 아니라 플레이어의 실제 Cobblemon 파티와 Cobblemon 1.7.3 런타임을 사용합니다. 제작자는 JSON을 직접 작성하기보다 에디터에서 기본 문서를 불러오고, `Save As`로 사용자 파일을 만든 뒤 대상 NPC에 `Apply`하는 흐름을 권장합니다.
 
@@ -27,21 +27,21 @@ tags:
 
 ## 지원 환경
 
-| 구성 요소 | 필요 여부 | 지원 범위 |
+| 로더 | 애드온 버전 | 필수 환경 |
 | --- | --- | --- |
-| Minecraft | 필수 | Java Edition 1.21.1 |
-| Fabric Loader | 필수 | 0.17.2 이상 |
-| Fabric API | 필수 | 0.116.6+1.21.1 이상 |
-| Java | 필수 | Java 21 이상 |
-| DRM Core | 필수 | `dochi_rpg_maker` 0.1.9 이상 |
-| Cobblemon | 필수 | 1.7.3 이상, 1.9.0 미만(1.7.3·1.8.0 검증) |
-| CustomNPCs | 필수 | Fabric 1.0.0 |
-| CobbleDollars | 선택 | PokéMart에서 해당 통화를 사용할 때 |
-| Radical Cobblemon Trainers API | 선택 | RCT AI와 RCT 데이터팩 포터를 사용할 때 0.15.1-beta 이상 |
-| FTB Quests | 선택 | 퀘스트 조건·완료 액션을 사용할 때 |
-| Mega Showdown | 선택 | Mega, Dynamax, Z-Move, Tera 기믹을 실제 전투에 사용할 때 |
+| Fabric 1.21.1 | 0.2.0 | Java 21, Fabric Loader 0.17.2+, Fabric API 0.116.6+1.21.1+, CustomNPCs 1.0.0 |
+| NeoForge 1.21.1 | 0.1.9 | Java 21, NeoForge 21.1+, CustomNPCs 1.21.1 호환 빌드 |
 
-일반 멀티플레이에서는 서버와 접속 클라이언트 양쪽에 같은 버전의 필수 모드를 설치합니다. RCT API 같은 선택 모드는 애드온 JAR에 포함되지 않습니다.
+두 로더 모두 **Cobblemon 1.7.3 이상 1.9.0 미만과 같은 로더의 DRM Core 0.2.2 이상**이 필요합니다. 현재 Core 빌드는 0.2.3입니다. 애드온 최소 조건보다 Core의 Loader/API 요구 조건이 더 높으면 Core 조건까지 충족해야 합니다.
+
+RCT API와 CobbleDollars는 선택 연동입니다. RCT를 설치하지 않아도 DRM Strategy로 배틀을 제작할 수 있습니다. 선택 모드도 반드시 해당 로더의 호환 빌드를 사용하세요.
+
+| 로더 | 파일 |
+| --- | --- |
+| Fabric | `dochi_cobblemon_editor-0.2.0-fabric-1.21.1.jar` |
+| NeoForge | `dochi_cobblemon_editor-0.1.9-neoforge-1.21.1.jar` |
+
+서버와 모든 클라이언트에 같은 빌드를 설치합니다. 모드 ID와 리소스 네임스페이스는 `cobble_npc`를 유지합니다. 구버전에서 기록된 실게임 검증 결과가 최신 기능과 모든 Cobblemon 버전의 검증을 대신하지는 않습니다.
 
 ## 제공하는 제작 도구
 
@@ -57,7 +57,7 @@ tags:
 
 앞의 여섯 도구는 DRM 에디터 선택 화면의 `Add-on` 영역에 나타납니다. `Cobblemon NPC Appearance`는 대상 NPC가 필요한 도구입니다. `DRM GUI Maker`는 위 기능의 게임 규칙을 편집하지 않고, PokéMart·Starter Selector 같은 런타임 화면의 배치와 컴포넌트를 편집합니다.
 
-## 0.1.6 핵심 기능
+## 주요 기능
 
 ### Trainer와 Pokemon Itself
 
@@ -122,3 +122,5 @@ Trainer, Pokemon Itself, PokéMart, Nurse Joy, Starter Selector는 파일에서 
 5. Battle Presentation과 전투 전 대화를 연결합니다.
 6. Nurse Joy, Starter Selector, PokéMart는 처음에는 별도 NPC로 시험합니다.
 7. 재사용이 필요하면 Clone Library에 저장하고 DRM Core NPC Spawner의 소스로 사용합니다.
+
+[트레이너 승리 퀘스트](#drm-cobblemon-editor/cobblemon-trainer-quests)에서 ID 연결과 승리 횟수 목표를 설정하는 방법을 확인하세요.

@@ -2,12 +2,12 @@
 title: 배틀 룰 설정
 slug: cobblemon-battle-rules
 order: 524
-description: 0.1.6의 공통·라운드별 배틀 형식, 레벨, 아이템, 전설, 기믹과 선봉 규칙입니다.
+description: 현재의 공통·라운드별 배틀 형식, 레벨, 아이템, 전설, 기믹과 선봉 규칙입니다.
 product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: 안정
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: 트레이너 배틀 규칙을 제작하는 사용자
 tags:
   - battle-rules

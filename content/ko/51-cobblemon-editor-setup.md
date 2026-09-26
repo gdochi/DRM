@@ -2,12 +2,12 @@
 title: 설치와 첫 적용
 slug: cobblemon-editor-setup
 order: 510
-description: Dochi Cobblemon Editor 0.1.6 설치, 폴더, 첫 NPC 적용 방법입니다.
+description: Dochi Cobblemon Editor 현재 설치, 폴더, 첫 NPC 적용 방법입니다.
 product: drm-cobblemon-editor
 category: 설치
 section: setup
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: 서버 운영자와 처음 설치하는 제작자
 tags:
   - setup
@@ -15,24 +15,23 @@ tags:
   - npc
 ---
 
-## 설치 체크리스트
+## 지원 환경
 
-1. Minecraft 1.21.1과 Java 21을 사용합니다.
-2. Fabric Loader와 Fabric API를 설치합니다.
-3. DRM Core 0.1.9 이상, Cobblemon 1.7.3 이상 1.9.0 미만, CustomNPCs Fabric 1.0.0을 설치합니다.
-4. `dochi_cobblemon_editor-0.1.6-fabric-1.21.1.jar`를 `mods/`에 넣습니다.
-5. 서버와 모든 클라이언트의 필수 모드 버전을 맞춥니다.
+| 로더 | 애드온 버전 | 필수 환경 |
+| --- | --- | --- |
+| Fabric 1.21.1 | 0.2.0 | Java 21, Fabric Loader 0.17.2+, Fabric API 0.116.6+1.21.1+, CustomNPCs 1.0.0 |
+| NeoForge 1.21.1 | 0.1.9 | Java 21, NeoForge 21.1+, CustomNPCs 1.21.1 호환 빌드 |
 
-Fabric Loader 0.17.2 이상과 Fabric API 0.116.6+1.21.1 이상이 필수입니다. 동일한 0.1.6 JAR가 Cobblemon 1.7.3과 1.8.0에서 검증되었으며, 1.9.0 이상은 지원 범위가 아닙니다.
+두 로더 모두 **Cobblemon 1.7.3 이상 1.9.0 미만과 같은 로더의 DRM Core 0.2.2 이상**이 필요합니다. 현재 Core 빌드는 0.2.3입니다. 애드온 최소 조건보다 Core의 Loader/API 요구 조건이 더 높으면 Core 조건까지 충족해야 합니다.
 
-선택 기능을 쓰는 경우에만 다음 모드를 추가합니다.
+RCT API와 CobbleDollars는 선택 연동입니다. RCT를 설치하지 않아도 DRM Strategy로 배틀을 제작할 수 있습니다. 선택 모드도 반드시 해당 로더의 호환 빌드를 사용하세요.
 
-| 선택 모드 | 사용하는 기능 |
+| 로더 | 파일 |
 | --- | --- |
-| CobbleDollars | PokéMart 결제 |
-| Radical Cobblemon Trainers API 0.15.1-beta+ | RCT AI, RCT 데이터팩 포터 |
-| FTB Quests | 퀘스트·태스크 조건과 완료 액션 |
-| Mega Showdown | Mega, Dynamax, Z-Move, Tera 기믹 |
+| Fabric | `dochi_cobblemon_editor-0.2.0-fabric-1.21.1.jar` |
+| NeoForge | `dochi_cobblemon_editor-0.1.9-neoforge-1.21.1.jar` |
+
+서버와 모든 클라이언트에 같은 빌드를 설치합니다. 모드 ID와 리소스 네임스페이스는 `cobble_npc`를 유지합니다. 구버전에서 기록된 실게임 검증 결과가 최신 기능과 모든 Cobblemon 버전의 검증을 대신하지는 않습니다.
 
 ## 첫 실행 후 폴더
 

@@ -2,12 +2,12 @@
 title: Installation and Your First NPC
 slug: cobblemon-editor-setup
 order: 510
-description: Install Dochi Cobblemon Editor 0.1.6, verify its folders, and apply your first NPC role.
+description: Install Dochi Cobblemon Editor current, verify its folders, and apply your first NPC role.
 product: drm-cobblemon-editor
 category: Setup
 section: setup
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: Server operators and first-time creators
 tags:
   - setup
@@ -15,20 +15,23 @@ tags:
   - npc
 ---
 
-## Installation checklist
+## Supported environment
 
-Install the following mods in the same Fabric 1.21.1 environment.
+| Loader | Addon version | Required platform |
+| --- | --- | --- |
+| Fabric 1.21.1 | 0.2.0 | Java 21, Fabric Loader 0.17.2+, Fabric API 0.116.6+1.21.1+, CustomNPCs 1.0.0 |
+| NeoForge 1.21.1 | 0.1.9 | Java 21, NeoForge 21.1+, compatible CustomNPCs 1.21.1 |
 
-| Mod | Role |
+Both require **Cobblemon 1.7.3 to below 1.9.0 and matching-loader DRM Core 0.2.2+**. Current Core builds are 0.2.3. Also meet Core's Loader/API requirements where they exceed the addon's minimum.
+
+RCT API and CobbleDollars are optional. DRM Strategy works without RCT. Every optional integration must match the loader.
+
+| Loader | File |
 | --- | --- |
-| Fabric API | Event and networking foundation |
-| DRM Core 0.1.9+ | Shared editor selector, server JSON storage, GUI Maker, and NPC apply workflow |
-| Cobblemon 1.7.3 to below 1.9.0 | Pokémon data, player parties, and the actual battle runtime; 1.7.3 and 1.8.0 are verified |
-| CustomNPCs Fabric 1.0.0 | NPC targets for trainers, Pokémon, and shops |
-| `dochi_cobblemon_editor-0.1.6-fabric-1.21.1.jar` | Cobblemon-specific DRM editors and runtime integration |
-| CobbleDollars | Optional PokéMart currency provider |
+| Fabric | `dochi_cobblemon_editor-0.2.0-fabric-1.21.1.jar` |
+| NeoForge | `dochi_cobblemon_editor-0.1.9-neoforge-1.21.1.jar` |
 
-For multiplayer, use the same mod set on the server and every client. The addon includes client editors and renderers as well as server battle, reward, and shop logic.
+Use the same build on the server and all clients. The internal mod ID/resource namespace remains `cobble_npc`. Older live-test results do not establish coverage of every current feature across all supported Cobblemon versions.
 
 ## Folders created on first launch
 
@@ -50,7 +53,7 @@ config/dochi_rpg_maker/
 └─ gui/
 ```
 
-Addon documents live under `cobblemon/`. PokéMart and Starter Selector screen layouts use DRM's shared `gui/` directory. Version 0.1.6 upgrades only untouched legacy default GUIs to the shared DRM sprite style, backs up the old defaults under `_migration_backups/`, and preserves customized files.
+Addon documents live under `cobblemon/`. PokéMart and Starter Selector screen layouts use DRM's shared `gui/` directory. The addon upgrades only untouched legacy default GUIs to the shared DRM sprite style, backs up the old defaults under `_migration_backups/`, and preserves customized files.
 
 ## Open the addon editors
 
@@ -92,7 +95,7 @@ Defaults and samples are templates. Use `Save As` to create a user path such as 
 4. Save a user copy such as `custom/first_pokemon.json`.
 5. Apply it through the target NPC's `Cobblemon Pokemon Itself` entry.
 
-This type creates a normal Cobblemon PVE battle from one fully specified Pokémon instead of using trainer rounds.
+Pokemon Itself also supports up to 16 rounds, each with one Pokémon, round conditions, and after-battle actions.
 
 ## First-launch checks
 
@@ -105,3 +108,7 @@ This type creates a normal Cobblemon PVE battle from one fully specified Pokémo
 | Player party error | Put at least one battle-ready Cobblemon Pokémon in the player's active party |
 
 Use one simple NPC in a separate test world first. Combining several runtime roles on one NPC requires a deliberate interaction-priority design.
+
+## Reopening a source-bound NPC
+
+The bound editor initializes from the latest server document and source path. Saving that path updates the next runtime request. Later machine-status responses preserve draft edits, and resizing retains text. If dialogue differs, first compare the NPC's bound path with the file being edited.

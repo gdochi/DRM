@@ -2,18 +2,18 @@
 title: Tooltip Maker
 slug: tooltip-maker
 order: 105
-description: Fabric 0.2.0에서 아이템 툴팁 레이아웃과 미리보기를 제작합니다.
+description: Fabric 0.2.3에서 아이템 툴팁 레이아웃과 미리보기를 제작합니다.
 product: core-fabric
 category: GUI Maker
 section: gui-maker
 status: 안정
-version: 0.2.0
+version: 0.2.3
 audience: 제작자
 ---
 
 ## Tooltip Maker의 역할
 
-Tooltip Maker는 플레이어가 아이템 위에 마우스를 올렸을 때 표시되는 정보 패널을 제작합니다. Fabric 0.2.0의 기본 에디터이며, 대화·상점 같은 전체 화면을 제작하는 GUI Maker와는 별도 도구입니다.
+Tooltip Maker는 플레이어가 아이템 위에 마우스를 올렸을 때 표시되는 정보 패널을 제작합니다. Fabric 0.2.3의 기본 에디터이며, 대화·상점 같은 전체 화면을 제작하는 GUI Maker와는 별도 도구입니다.
 
 **Dochi RPG Maker Core**로 에디터 선택 화면을 열고 **Tooltip Maker**를 선택한 다음 기존 레이아웃을 불러오거나 새로 만드세요. 번들 기본본은 보호된 템플릿이므로 수정할 때는 `Save As`를 사용합니다.
 

@@ -2,12 +2,12 @@
 title: Dialogue Choice And Gecko Presentation
 slug: dialogue-presentation
 order: 63
-description: Size choices, add pulse highlights, and connect Gecko animation routes in Fabric 0.2.0.
+description: Size choices, add pulse highlights, and connect Gecko animation routes in Fabric 0.2.3.
 product: core-fabric
 category: Dialogue Editor
 section: dialogue-editor
 status: Stable
-version: 0.2.0
+version: 0.2.3
 audience: Dialogue creators
 ---
 

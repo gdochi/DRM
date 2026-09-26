@@ -2,18 +2,18 @@
 title: Tooltip Maker
 slug: tooltip-maker
 order: 105
-description: Design item hover layouts and previews in Fabric 0.2.0.
+description: Design item hover layouts and previews in Fabric 0.2.3.
 product: core-fabric
 category: GUI Maker
 section: gui-maker
 status: Stable
-version: 0.2.0
+version: 0.2.3
 audience: Creators
 ---
 
 ## What Tooltip Maker does
 
-Tooltip Maker designs the panel shown when a player hovers over an item. It is a built-in editor in Fabric 0.2.0 and is separate from GUI Maker, which builds full dialogue, shop, and other runtime screens.
+Tooltip Maker designs the panel shown when a player hovers over an item. It is a built-in editor in Fabric 0.2.3 and is separate from GUI Maker, which builds full dialogue, shop, and other runtime screens.
 
 Open the editor selector with the **Dochi RPG Maker Core**, choose **Tooltip Maker**, then load a tooltip layout or create one. Bundled defaults are protected templates, so use `Save As` before customizing them.
 

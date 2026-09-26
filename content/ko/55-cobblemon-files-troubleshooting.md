@@ -2,12 +2,12 @@
 title: 파일과 문제 해결
 slug: cobblemon-files-troubleshooting
 order: 590
-description: 0.1.6 저장 경로, 스키마, 원본 추적, 상호작용과 운영 점검입니다.
+description: 현재 저장 경로, 스키마, 원본 추적, 상호작용과 운영 점검입니다.
 product: drm-cobblemon-editor
 category: 운영
 section: operations
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: 서버 운영자와 콘텐츠 배포자
 tags:
   - paths
@@ -58,7 +58,7 @@ config/dochi_rpg_maker/cobblemon/_migration_backups/canonical_defaults_<timestam
 
 | 문서 | 스키마 | 주요 제한 |
 | --- | ---: | --- |
-| Trainer / Pokemon Itself | 20 | 라운드 16, Trainer 파티 1–6, 조건/액션 각 32 |
+| Trainer / Pokemon Itself | 23 | 라운드 16, Trainer 파티 1–6, 조건/액션 각 32 |
 | Trainer Brain | 4 | 라운드별 AI 엔진·6개 능력치·전략·아이템 정책 |
 | Battle Presentation | 4 | Duration 1–600틱, 요소 64 |
 | PokéMart | 7 | Sales 256, Trade 128, 문서당 Role 하나 |
@@ -192,3 +192,9 @@ JSON만 백업하면 PokéMart 재고·경매, 플레이어별 Trainer 진행도
 8. Clone Follow Source와 Snapshot 차이를 확인합니다.
 9. 스포너 NPC가 배틀 중 제거되지 않는지 확인합니다.
 10. 서버 재시작 뒤 재고, 경매, 진행도, 스포너 상태를 확인합니다.
+
+## 트레이너 ID와 퀘스트 백업
+
+`cobblemon/trainer_registry.json`과 `cobblemon/trainer_registry.initialized`는 트레이너 ID 연결을 보관합니다. 트레이너 프로필, 퀘스트 팩, 월드 플레이어 진행도와 함께 백업하세요. 파일 이름이나 NPC 이름만 같게 만드는 것으로 같은 트레이너가 되지는 않습니다.
+
+현재 Trainer/Pokemon Itself 코덱은 스키마 23입니다. 이전 문서는 호환 변환으로 읽고, 트레이너 ID가 없던 문서는 미연결 상태에서 시작합니다. 직접 스키마 번호만 바꾸지 말고 에디터에서 ID를 연결하세요.

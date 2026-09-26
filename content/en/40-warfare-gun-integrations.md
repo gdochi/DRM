@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Gun Integrations
 section: integrations
 status: Draft
-version: 0.2.7
+version: 0.2.9
 audience: Firearm NPC creators
 tags:
   - TACZ
@@ -15,9 +15,11 @@ tags:
   - SuperbWarfare
 ---
 
+Current version: 0.2.9, with Forge 1.20.1 and NeoForge 1.21.1 builds. Check [loader-specific installation](#dochi-warfare/warfare-setup) for external gun/vehicle dependencies.
+
 ## One controller, native gun mechanics
 
-Dochi's Warfare 0.2.7 routes supported guns through one managed combat controller. DW owns target selection, stance, tactical movement, accuracy policy, firing opportunities, reload timing, reserve `Ammo Stock`, animation signals, and persistence.
+Dochi's Warfare 0.2.9 routes supported guns through one managed combat controller. DW owns target selection, stance, tactical movement, accuracy policy, firing opportunities, reload timing, reserve `Ammo Stock`, animation signals, and persistence.
 
 The gun mod keeps the parts that define the weapon itself: item and model rendering, native projectile or hitscan, intrinsic sounds, loaded-ammo state, native reload phases, and gun-specific mechanics. This boundary prevents an external gun from being reduced to a TACZ-looking imitation.
 
@@ -27,14 +29,14 @@ The gun mod keeps the parts that define the weapon itself: item and model render
 | --- | --- | --- |
 | TACZ | Required 1.1.8 in the supported 1.1.x range | Firing, gun state, reload state, RPM, muzzle/effects, and stack persistence |
 | PointBlank | Optional 1.11.1 or 2.1.0; install exactly one | Native projectile or hitscan, multi-pellet rays, headshots, falloff, reload phases, sounds, and renderer |
-| SuperbWarfare | Optional 0.8.9 final build `6effe4385` | Native firing, reload, bolt, projectile, sound, heat, recoil, durability, models, attachments, and persistence |
+| SuperbWarfare | Optional supported 0.8.9 / 0.8.9.1 ABI | Native firing, reload, bolt, projectile, sound, heat, recoil, durability, models, attachments, and persistence |
 
 TACZ and Player Animator remain the runtime and animation baseline even when the managed item comes from PointBlank or SuperbWarfare.
 
-In 0.2.7, PointBlank hitscan keeps later pellets from being discarded by vanilla hurt immunity when several pellets rapidly hit the same target, then restores the target's previous immunity state after delivery. Long-range pellet candidates are collected through bounded segments to reduce repeated entity queries in large fights, while knockback and camera-shake intervals can be throttled independently from damage.
+In 0.2.9, PointBlank hitscan keeps later pellets from being discarded by vanilla hurt immunity when several pellets rapidly hit the same target, then restores the target's previous immunity state after delivery. Long-range pellet candidates are collected through bounded segments to reduce repeated entity queries in large fights, while knockback and camera-shake intervals can be throttled independently from damage.
 
 :::warning Version gates
-PointBlank 1.11.1 and 2.1.0 use different bridges. If both branches are installed, or no supported API is found, PointBlank compatibility disables itself. SuperbWarfare versions other than the verified 0.8.9 ABI fail closed before the compatibility mixins are applied.
+PointBlank 1.11.1 and 2.1.0 use different bridges. If both branches are installed, or no supported API is found, PointBlank compatibility disables itself. SuperbWarfare versions outside the supported ABI fail closed before the compatibility mixins are applied.
 :::
 
 ## Configure an external gun

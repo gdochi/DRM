@@ -2,12 +2,12 @@
 title: Trainer Battle Sounds
 slug: cobblemon-battle-sounds
 order: 525
-description: Common and per-round 0.1.6 sound rules triggered by the trainer's remaining Pokémon count.
+description: Common and per-round current sound rules triggered by the trainer's remaining Pokémon count.
 product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Stable
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: Creators authoring trainer battle audio
 tags:
   - battle-sounds

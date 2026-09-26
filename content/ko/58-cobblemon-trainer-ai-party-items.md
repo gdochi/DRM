@@ -2,12 +2,12 @@
 title: Trainer AI, 랜덤 파티, 아이템과 기믹
 slug: cobblemon-trainer-ai-party-items
 order: 523
-description: 0.1.6 Trainer AI 조절, 파티 생성기, RCT 포터, 배틀 아이템과 기믹입니다.
+description: 현재 Trainer AI 조절, 파티 생성기, RCT 포터, 배틀 아이템과 기믹입니다.
 product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: 고급 트레이너 전투를 만드는 제작자
 tags:
   - trainer-ai
@@ -158,3 +158,7 @@ AI는 현재 HP, 상태, 남은 파티와 아이템 가치를 함께 평가합�
 3. 회복 아이템 한 종류를 넣고 사용 시점을 확인합니다.
 4. 마지막으로 키 아이템과 포켓몬별 기믹 값을 추가합니다.
 5. RCT 또는 Cobblemon Strong과 비교할 때는 같은 파티·레벨·배틀 설정을 사용합니다.
+
+## 무효 기술과 교체 판단
+
+DRM AI는 모든 사용 가능한 기술이 무효일 때 합법적인 교체 후보도 검사합니다. 예를 들어 Choice 고정 기술이 상대에게 통하지 않으면 교체를 고려합니다. 교체 금지, 구속, 강제 연속 행동 같은 배틀 규칙을 무시하지는 않습니다. RCT 엔진의 내부 동작은 별도 제공자 영역입니다.

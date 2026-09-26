@@ -7,12 +7,14 @@ product: core-fabric
 category: 다이얼로그 에디터
 section: dialogue-editor
 status: 안정
-version: 0.1.8
+version: 0.2.3
 audience: 대화 제작자
 tags:
   - condition
   - action
 ---
+
+퀘스트 액션의 현재 선택 항목과 완료 방식은 [퀘스트 가이드](#core-fabric/quest-system)를 따릅니다. 이전 제출·신호·실패·포기·추적 액션은 기존 JSON 호환용입니다.
 
 ## 적용 위치
 
@@ -63,9 +65,6 @@ tags:
 | `advancement` | `advancement`, `criterion`, `advancementOp` | 발전 과제를 지급하거나 회수합니다. |
 | `ftb_task` | `quest`, `task` | FTB 퀘스트 태스크를 완료 처리합니다. |
 | `ftb_complete` | `quest` | FTB 퀘스트를 완료 처리합니다. |
-| `quest_start`, `quest_turn_in` | `quest` | DRM 퀘스트를 시작하거나 제출합니다. |
-| `quest_signal` | `quest`, `signal`, `amount` | 대화 신호 목표를 진행합니다. |
-| `quest_fail`, `quest_abandon`, `quest_pin` | `quest` | 실패, 포기 또는 저널 추적을 처리합니다. |
 | `gecko_animation` | 애니메이션 설정 | 대상 NPC의 GeckoLib 애니메이션을 재생합니다. |
 
 `goto`, `go_shop`, `go_teleporter`, `close`는 화면 이동 액션입니다. 선택지의 액션 배열에서 이 타입을 만나면 다음 화면이 결정됩니다. 그 외 타입은 서버에서 결과를 처리하는 액션입니다.

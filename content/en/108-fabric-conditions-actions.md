@@ -7,12 +7,14 @@ product: core-fabric
 category: Core Systems
 section: dialogue-editor
 status: Stable
-version: 0.1.8
+version: 0.2.3
 audience: Script / data creators
 tags:
   - condition
   - action
 ---
+
+Use the [quest guide](#core-fabric/quest-system) for current action choices and completion behavior. Old turn-in, signal, fail, abandon, and pin actions are legacy JSON compatibility paths.
 
 ## Where Conditions Run
 
@@ -46,7 +48,7 @@ Numeric comparisons support `>`, `>=`, `<`, `<=`, `==`, and `!=`. Tags and advan
 
 ## Action Types
 
-The 0.1.8 shared Condition Editor supports drag-and-drop reordering with edge auto-scroll and an insertion guide. `item`, `faction_score`, `advancement`, `ftb`, `ftb_task`, and DRM quest ID fields provide searchable `Find` flows. FTB discovery and evaluation require FTB Quests and a synchronized client quest file.
+The current shared Condition Editor supports drag-and-drop reordering with edge auto-scroll and an insertion guide. `item`, `faction_score`, `advancement`, `ftb`, `ftb_task`, and DRM quest ID fields provide searchable `Find` flows. FTB discovery and evaluation require FTB Quests and a synchronized client quest file.
 
 | type | Main Fields | Behavior |
 | --- | --- | --- |
@@ -61,9 +63,6 @@ The 0.1.8 shared Condition Editor supports drag-and-drop reordering with edge au
 | `advancement` | `advancement`, `criterion`, `advancementOp` | Grant or revoke an advancement. |
 | `ftb_task` | `quest`, `task` | Complete an FTB task. |
 | `ftb_complete` | `quest` | Complete an FTB quest. |
-| `quest_start`, `quest_turn_in` | `quest` | Start or turn in a DRM quest. |
-| `quest_signal` | `quest`, `signal`, `amount` | Progress a dialogue-signal objective. |
-| `quest_fail`, `quest_abandon`, `quest_pin` | `quest` | Fail, abandon, or track a DRM quest. |
 | `gecko_animation` | Animation settings | Play a GeckoLib animation on the target NPC. |
 
 `goto`, `go_shop`, `go_teleporter`, and `close` are navigation actions. Other actions are server side effects.

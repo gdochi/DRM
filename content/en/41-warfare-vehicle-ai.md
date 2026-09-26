@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Vehicle AI
 section: vehicles
 status: Draft
-version: 0.2.7
+version: 0.2.9
 audience: Scenario creators and operators
 tags:
   - SuperbWarfare
@@ -15,9 +15,11 @@ tags:
   - ai
 ---
 
+Current version: 0.2.9, with Forge 1.20.1 and NeoForge 1.21.1 builds. Check [loader-specific installation](#dochi-warfare/warfare-setup) for external gun/vehicle dependencies.
+
 ## Requirements and editor
 
-Vehicle AI is an optional integration for SuperbWarfare 0.8.9-final, Minecraft 1.20.1 build `6effe4385`. In Creative mode, hold `DW Npc Core` and right-click a supported vehicle. This opens a server-authoritative vehicle editor separate from the CustomNPCs NPC editor.
+Vehicle AI is an optional SuperbWarfare integration. Match the loader and supported ABI described in the installation guide. In Creative mode, hold `DW Npc Core` and right-click a supported vehicle. This opens a server-authoritative vehicle editor separate from the CustomNPCs NPC editor.
 
 DW uses the native engine's `processInput` or flight controls. SuperbWarfare continues to own engine physics, velocity, collision, energy, turrets, weapons, reloads, projectiles, and sounds; DW does not directly overwrite position, rotation, or velocity. A player who boards an AI vehicle is dismounted for safety, so disable AI before driving it. CustomNPC crew placed through the vehicle editor can remain aboard.
 
@@ -36,7 +38,7 @@ Combat movement is configured separately as `Hold Position`, `Advance`, or `Retr
 
 Wheeled, tracked, and ship profiles use separate footprint, turn-radius, step, slope, support, obstacle, water-boundary, and stuck-recovery behavior. Routes are planned only through loaded terrain with bounded search work.
 
-In 0.2.7, Area Patrol scores eight home-relative sectors instead of repeating a small circle around the current position. Throttle and braking ramp from remaining distance, current speed, stopping distance, turn demand, and obstacle state, avoiding full-power launches for short moves.
+In 0.2.9, Area Patrol scores eight home-relative sectors instead of repeating a small circle around the current position. Throttle and braking ramp from remaining distance, current speed, stopping distance, turn demand, and obstacle state, avoiding full-power launches for short moves.
 
 ### Helicopters and fixed-wing aircraft
 
@@ -64,7 +66,7 @@ The `Weapons` page owns weapon enablement. Every native mount has independent se
 
 `Weapon use mode` selects only weapons that are ON and currently eligible, then uses one, a configured count, or every eligible weapon per attack opportunity. An OFF weapon does not participate in candidate or reference-range selection.
 
-Ammunition is virtual DW data; no physical ammo or magazine items are created. Version 0.2.7 synchronizes belt-fed virtual rounds with SuperbWarfare's native fire-readiness check, then reflects rounds consumed by the native shot.
+Ammunition is virtual DW data; no physical ammo or magazine items are created. Version 0.2.9 synchronizes belt-fed virtual rounds with SuperbWarfare's native fire-readiness check, then reflects rounds consumed by the native shot.
 
 ## NPC crew
 

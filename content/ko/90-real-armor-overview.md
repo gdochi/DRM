@@ -2,12 +2,12 @@
 title: Dochi's Real Armor 개요
 slug: dochi-real-armor-overview
 order: 900
-description: 0.1.1의 역할, 지원 NPC 모드, 방어 처리 위치와 호환 범위를 설명합니다.
+description: 현재 Forge·NeoForge 빌드의 역할, 지원 NPC 모드, 방어 처리 위치와 호환 범위를 설명합니다.
 product: dochi-real-armor
 category: 개요
 section: overview
 status: Stable
-version: 0.1.1
+version: Forge 0.1.1 / NeoForge 0.1.2
 audience: 플레이어, 서버 운영자, 모드팩 제작자
 tags:
   - armor
@@ -17,7 +17,7 @@ tags:
 
 ## 모드의 역할
 
-**Dochi's Real Armor**는 지원 NPC가 착용한 방어구를 바닐라 방식의 피해 감소에 참여시키는 Forge 1.20.1 호환 모드입니다. 모드 ID와 명령어 루트는 `dochi_real_armor`입니다.
+**Dochi's Real Armor**는 지원 NPC가 착용한 방어구를 바닐라 방식의 피해 감소에 참여시키는 Forge 1.20.1 및 NeoForge 1.21.1 호환 모드입니다. 모드 ID와 명령어 루트는 `dochi_real_armor`입니다.
 
 두 NPC 연동은 선택 사항이며 각각 따로 켜고 끌 수 있습니다.
 
@@ -51,4 +51,4 @@ NPC의 바닐라 방어 속성을 읽거나, 장착 아이템의 속성 수정�
 
 Easy NPC의 발사체 피격은 발사체 이동 경로와 엔티티 충돌 상자를 교차해 판정합니다. 따라서 TACZ 계열처럼 빠르거나 외부에서 관리되는 탄환의 하체 피격도 다리로 인식하기 쉬워졌습니다.
 
-Dochi RPG Maker 0.1.4 이상이 있으면 DRM의 Mods Config에 탭이 등록됩니다. DRM이 없을 때는 Forge 모드 목록에서 동일한 형태의 독립 설정 화면을 엽니다.
+Forge 빌드에서 Dochi RPG Maker 0.1.4 이상이 있으면 DRM의 Mods Config에 탭이 등록됩니다. DRM이 없을 때는 Forge 모드 목록에서 동일한 형태의 독립 설정 화면을 엽니다.

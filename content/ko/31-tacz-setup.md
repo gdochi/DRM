@@ -2,12 +2,12 @@
 title: 설치와 첫 NPC 설정
 slug: warfare-setup
 order: 320
-description: 도치 워페어 0.2.7 설치, DW 제작 도구, 구버전 프로필 이전, 첫 관리 NPC 설정을 설명합니다.
+description: 도치 워페어 0.2.9 설치, DW 제작 도구, 구버전 프로필 이전, 첫 관리 NPC 설정을 설명합니다.
 product: dochi-warfare
 category: 설치
 section: setup
 status: Draft
-version: 0.2.7
+version: 0.2.9
 audience: 서버 운영자
 tags:
   - setup
@@ -15,9 +15,18 @@ tags:
   - gui
 ---
 
+## 로더별 0.2.9 빌드
+
+| 로더 | Minecraft / Java | 필수·선택 차이 |
+| --- | --- | --- |
+| Forge 47+ | 1.20.1 / Java 17 | TACZ 1.1.8 이상 1.2 미만 필수, Player Animator 클라이언트 필수 |
+| NeoForge | 1.21.1 / Java 21 | TACZ 1.1.8 이상 1.2 미만 필수, Player Animator 2.0+는 선택 의존성 |
+
+CustomNPCs는 관리 NPC를 제작할 때 필요합니다. 로더별 CustomNPCs를 사용하세요. Forge는 SuperbWarfare 0.8.9 final과 0.8.9.1 hotfix 계열을 구조 검사 후 사용하고, NeoForge 메타데이터는 0.8.9.1 이상 0.8.10 미만을 선언합니다. 같은 버전 문자열이어도 호환 구조 검사를 통과하지 않으면 연동이 거부될 수 있습니다. 아래의 상세 설치 표와 외부 총기 버전 예시는 Forge 기준입니다.
+
 ## 설치 체크리스트
 
-도치 워페어 0.2.7는 Forge 1.20.1을 대상으로 합니다. TACZ는 필수 총기 런타임 기준이고 Player Animator는 클라이언트 필수입니다. CustomNPCs는 NPC 워크플로에 필요하며 PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, LesRaisins Tactical Equipments는 선택형 연동입니다.
+도치 워페어 0.2.9는 Forge 1.20.1을 대상으로 합니다. TACZ는 필수 총기 런타임 기준이고 Player Animator는 클라이언트 필수입니다. CustomNPCs는 NPC 워크플로에 필요하며 PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, LesRaisins Tactical Equipments는 선택형 연동입니다.
 
 | 구성 요소 | 이 위키 흐름에서 필요 여부 | 메모 |
 | --- | --- | --- |
@@ -25,9 +34,9 @@ tags:
 | TACZ | 필요 | 클라이언트·서버에서 1.1.8부터 지원되는 1.1.x 범위를 사용합니다. |
 | Player Animator | 클라이언트 필수 | 공유 관리 총기 애니메이션 컨트롤러에 필요합니다. |
 | CustomNPCs | NPC 설정에 필요 | 관리 NPC, 용병, 포즈, NPC 클론 워크플로에 필요합니다. |
-| 도치 워페어 | 필요 | 일반적인 모드 서버 플레이에서는 0.2.7 JAR를 클라이언트와 서버 양쪽에 넣습니다. |
+| 도치 워페어 | 필요 | 일반적인 모드 서버 플레이에서는 0.2.9 JAR를 클라이언트와 서버 양쪽에 넣습니다. |
 | PointBlank | 선택 | 지원되는 1.11.1 또는 2.1.0 중 하나만 설치합니다. |
-| SuperbWarfare | 선택 | 네이티브 총기·차량 연동은 0.8.9 final 빌드 `6effe4385`를 요구합니다. |
+| SuperbWarfare | 선택 | 0.8.9 final / 0.8.9.1 hotfix의 지원 구조를 검사합니다. |
 | Better Combat | 선택 | 등록된 근접 무기 공격·포즈와 무기 기반 공격 타이밍을 사용할 때 설치합니다. 일반 멀티플레이에서는 서버와 클라이언트의 모드 구성을 맞추세요. |
 | Mob Player Animator | 선택 | Better Combat의 정확한 NPC 모션 재생에 필요한 클라이언트 모드입니다. 없으면 바닐라 주손 스윙으로 전환됩니다. |
 | LesRaisins Tactical Equipments | 선택 | 지원 수류탄 투척과 LRT 수류탄 부비트랩 페이로드를 활성화합니다. |
@@ -130,7 +139,7 @@ config/dochi_warfare/target_entities/
 
 현재 `Save As` 프로필은 타겟 목록만이 아니라 NPC의 DW 총기 설정 전체를 함께 저장합니다. NPC 하나를 설정한 뒤 프로필로 저장하면 다른 CustomNPCs NPC에서 `Load`해 같은 전투 설정을 빠르게 복제할 수 있습니다. 구버전 타겟 전용 JSON도 불러올 수 있지만, 새 제작 흐름에서는 이 기능을 NPC 설정 프리셋으로 보는 편이 맞습니다.
 
-재사용 JSON의 새 기준 루트는 `config/dochi_warfare/`입니다. 첫 사용 시 모드는 `config/cnpc_tacz_fire/`의 구버전 파일 중 새 위치에 없는 것만 복사하며, 더 최신인 대상 파일을 덮어쓰거나 복구 가능한 원본을 지우지 않습니다. 0.2.7의 다른 보관 경로는 다음과 같습니다.
+재사용 JSON의 새 기준 루트는 `config/dochi_warfare/`입니다. 첫 사용 시 모드는 `config/cnpc_tacz_fire/`의 구버전 파일 중 새 위치에 없는 것만 복사하며, 더 최신인 대상 파일을 덮어쓰거나 복구 가능한 원본을 지우지 않습니다. 0.2.9의 다른 보관 경로는 다음과 같습니다.
 
 ```text
 config/dochi_warfare/poses/

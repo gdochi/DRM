@@ -7,7 +7,7 @@ product: core-fabric
 category: Scene Maker
 section: scene-maker
 status: Stable
-version: 0.1.9
+version: 0.2.3
 audience: Creators / Operators
 ---
 
@@ -70,3 +70,7 @@ With operator permission:
 Use the suggestions after `/drm scene ` to choose a playable saved scene. Replace `<scene-file>` with that name; it is not a literal part of the command. The second form plays for you, the third for the selected players, and the fourth stops that scene for them.
 
 If a scene is not listed, check that it was saved and that its anchor and referenced content are valid. World-position Apply updates the editing document; save the scene afterward to keep it for later playback.
+
+## Stop all active scenes
+
+`/drm scene stop @a` stops the selected players' current scenes without naming a file. Use the `/drm scene` root; there is no separate `/drmscene` command.

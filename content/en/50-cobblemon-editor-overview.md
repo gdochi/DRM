@@ -2,12 +2,12 @@
 title: Dochi Cobblemon Editor
 slug: cobblemon-editor-overview
 order: 500
-description: Learn the 0.1.6 feature set, supported environment, authoring tools, and runtime rules of Dochi Cobblemon Editor.
+description: Learn the current feature set, supported environment, authoring tools, and runtime rules of Dochi Cobblemon Editor.
 product: drm-cobblemon-editor
 category: Overview
 section: overview
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: Creators building Cobblemon NPCs and shops
 tags:
   - cobblemon
@@ -17,28 +17,31 @@ tags:
 
 ## What Dochi Cobblemon Editor is
 
-`Dochi Cobblemon Editor` is a DRM addon for Fabric 1.21.1. It lets creators attach Cobblemon trainer battles or a single Pokémon battle to CustomNPCs NPCs, build full-screen pre-battle presentations, create Pokémon markets, healers, and starter selectors, and reuse NPC clones in the same workflow.
+`Dochi Cobblemon Editor` is a DRM addon for Fabric and NeoForge 1.21.1. It lets creators attach Cobblemon trainer battles or a single Pokémon battle to CustomNPCs NPCs, build full-screen pre-battle presentations, create Pokémon markets, healers, and starter selectors, and reuse NPC clones in the same workflow.
 
 The addon does not imitate Cobblemon with a separate battle engine. Battles use the player's real Cobblemon party and Cobblemon 1.7.3 runtime. The intended authoring path is the DRM editor selector, `Save As`, and the NPC apply screen rather than hand-writing every JSON document.
 
 :::note Display name and internal ID
-Version 0.1.6 uses the display name `Dochi Cobblemon Editor` and the JAR name `dochi_cobblemon_editor-<version>-fabric-1.21.1.jar`. For existing-data compatibility, the internal mod ID and resource namespace remain `cobble_npc`. Do not rename existing `cobble_npc:*` IDs or data folders.
+The addon uses the display name `Dochi Cobblemon Editor` and the JAR name `dochi_cobblemon_editor-<version>-fabric-1.21.1.jar`. For existing-data compatibility, the internal mod ID and resource namespace remain `cobble_npc`. Do not rename existing `cobble_npc:*` IDs or data folders.
 :::
 
 ## Supported environment
 
-| Component | Requirement |
-| --- | --- |
-| Minecraft | Java Edition 1.21.1 |
-| Fabric Loader | 0.17.2 or newer |
-| Fabric API | 0.116.6+1.21.1 or newer |
-| Java | 21 or newer |
-| DRM Core | `dochi_rpg_maker` 0.1.9 or newer |
-| Cobblemon | 1.7.3 or newer, below 1.9.0 (verified on 1.7.3 and 1.8.0) |
-| CustomNPCs | Fabric 1.0.0 |
-| CobbleDollars | Optional; required only for the PokéMart `cobbledollars` provider |
+| Loader | Addon version | Required platform |
+| --- | --- | --- |
+| Fabric 1.21.1 | 0.2.0 | Java 21, Fabric Loader 0.17.2+, Fabric API 0.116.6+1.21.1+, CustomNPCs 1.0.0 |
+| NeoForge 1.21.1 | 0.1.9 | Java 21, NeoForge 21.1+, compatible CustomNPCs 1.21.1 |
 
-This release targets Fabric 1.21.1. Do not mix it with Forge builds or another Minecraft version. On a normal multiplayer server, install matching DRM Core, Cobblemon, CustomNPCs, and Dochi Cobblemon Editor versions on the server and every connecting client.
+Both require **Cobblemon 1.7.3 to below 1.9.0 and matching-loader DRM Core 0.2.2+**. Current Core builds are 0.2.3. Also meet Core's Loader/API requirements where they exceed the addon's minimum.
+
+RCT API and CobbleDollars are optional. DRM Strategy works without RCT. Every optional integration must match the loader.
+
+| Loader | File |
+| --- | --- |
+| Fabric | `dochi_cobblemon_editor-0.2.0-fabric-1.21.1.jar` |
+| NeoForge | `dochi_cobblemon_editor-0.1.9-neoforge-1.21.1.jar` |
+
+Use the same build on the server and all clients. The internal mod ID/resource namespace remains `cobble_npc`. Older live-test results do not establish coverage of every current feature across all supported Cobblemon versions.
 
 ## Authoring tools
 
@@ -86,3 +89,5 @@ They also use different save folders. Keep trainer documents in `trainers/` and 
 6. Add a separate PokéMart NPC when the project needs sales, trades, or auctions.
 
 Testing the smallest battle first makes it easier to separate party-data, NPC-application, automatic-encounter, and presentation problems.
+
+See [Trainer Victory Quests](#drm-cobblemon-editor/cobblemon-trainer-quests) to link trainer identities and require a number of wins.

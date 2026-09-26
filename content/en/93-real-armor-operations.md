@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: Commands and Troubleshooting
 section: operations
 status: Stable
-version: 0.1.1
+version: Forge 0.1.1 / NeoForge 0.1.2
 audience: Server operators and modpack creators
 tags:
   - commands
@@ -38,7 +38,7 @@ Enable debug temporarily to see the selected body part and reduced damage. Debug
 | --- | --- |
 | No armor reduction | Confirm armor calculation and the matching NPC compatibility switch are ON |
 | Easy NPC is ignored | Confirm its entity ID uses the `easy_npc` namespace and Easy NPC support is ON |
-| Lower-body shots use the wrong armor | Confirm version 0.1.1 is installed on the server and test with body-part mode plus debug |
+| Lower-body shots use the wrong armor | Confirm the matching Forge 0.1.1 or NeoForge 0.1.2 build is installed on the server and test with body-part mode plus debug |
 | Every slot protects every hit | Body-part armor is OFF, or the hit position could not be resolved |
 | Protection does nothing | Check the Protection switch and whether the damage type bypasses armor or enchantments |
 | GUI changes are rejected | Use an account with permission level 2 |

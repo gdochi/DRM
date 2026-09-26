@@ -7,7 +7,7 @@ product: core-fabric
 category: Quest System
 section: quest-editor
 status: Stable
-version: 0.1.8
+version: 0.2.3
 audience: Quest creators
 tags:
   - quest
@@ -35,12 +35,20 @@ Create the pack and categories first, then add quests in Quest Editor. After sav
 
 ## NPC Dialogue Links
 
-Dialogue Editor actions can start or turn in a quest, send a dialogue objective signal, fail or abandon a quest, and pin it in the journal.
+The current action picker offers `quest_start`, `quest_complete`, `quest_reset`, `quest_objective_complete`, and `quest_objective_reset`, with server-backed quest/objective selectors. Legacy turn-in, signal, fail, abandon, and pin actions remain readable in existing JSON.
 
-Put the start action on a dialogue choice when an NPC gives the quest. Enable journal acceptance when players should be able to accept it directly from the journal.
+Distinguish normal completion from forced completion. Fabric honors `automatic` or `turn_in`: a manual quest remains ready until explicitly submitted. Current NeoForge completes automatically.
 
 ## Player Journal
 
 The default key is `U`. Players can search quests, filter by status or category, inspect objectives and rewards, and accept, abandon, track, or turn in quests.
 
 Customize the journal through GUI Maker's `quest_journal` type. Treat `gui/default_quest_journal_gui.json` as a template and create a copy with `Save As`.
+
+## Direct controls and trainer victories
+
+See [loader command guidance](#core-fabric/loader-compatibility) for quest/objective start, complete, and reset operations. Whole resets do not reclaim rewards; objective resets retain reward history.
+
+With Cobblemon Editor installed, add a `DRM Trainer Victory` objective, select its trainer identity, and set the required number of wins. Follow [Trainer Victory Quests](#drm-cobblemon-editor/cobblemon-trainer-quests).
+
+Drag dividers between the tree/work area and information/description panels to resize them. Long titles wrap and lists scroll. Widths belong to the current editor instance, not the saved quest JSON.

@@ -2,12 +2,12 @@
 title: Cobblemon Editor Functional Guide
 slug: cobblemon-trainer-editor
 order: 520
-description: Understand 0.1.6 party and round editing, level rules, tunable AI, saving, and NPC application behavior.
+description: Understand current party and round editing, level rules, tunable AI, saving, and NPC application behavior.
 product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: Cobblemon battle NPC creators
 tags:
   - trainer
@@ -22,11 +22,11 @@ tags:
 | Battle type | Save domain | Runtime result |
 | --- | --- | --- |
 | `Trainer` | `cobblemon/trainers/` | Up to 16 trainer rounds with encounters, rematches, conditions, and rewards |
-| `Pokemon Itself` | `cobblemon/pokemon_itself/` | One fully specified Pokémon in a Cobblemon PVE battle |
+| `Pokemon Itself` | `cobblemon/pokemon_itself/` | Up to 16 rounds, each with one fully specified Pokémon |
 
 Changing the battle type immediately changes the folder used by `Load` and `Save As`. Choose the type first instead of copying a trainer document into the Pokemon Itself folder.
 
-The current Trainer document schema is `22`; Pokemon Itself uses schema `8`. Supported older documents are normalized when loaded and saved.
+The current Trainer and Pokemon Itself document schema is `23`. Supported older documents are normalized when loaded and saved.
 
 ## Categories and runtime effects
 
@@ -86,7 +86,7 @@ NPC gimmick equipment and battle rules are separate: equipment configures the ro
 
 ## DRM Strategy AI
 
-Version 0.1.6 exposes Decision Quality, Battle Knowledge, Aggression, Defense, Trickery, and Switching as separate 0–100 values. Beginner, Standard, Expert, and Boss presets provide starting points and remain fully editable. The AI assessment summarizes difficulty, information use, temperament, switching style, consistency, strengths, and warnings.
+The addon exposes Decision Quality, Battle Knowledge, Aggression, Defense, Trickery, and Switching as separate 0–100 values. Beginner, Standard, Expert, and Boss presets provide starting points and remain fully editable. The AI assessment summarizes difficulty, information use, temperament, switching style, consistency, strengths, and warnings.
 
 Trainer Items also expose an item-use priority, healing HP threshold, boost-item turn limit, and separate Revive, status-cure, and PP-recovery toggles. These settings apply only to DRM Strategy, not RCT or Cobblemon Strong.
 
@@ -99,3 +99,9 @@ Trainer Items also expose an item-use priority, healing HP threshold, boost-item
 5. Saving later edits to the same bound source path updates the next battle request. Apply again only when changing the path or role, or when using a snapshot-only clone.
 
 Direct `Apply to NPC` requires an editor opened for a target NPC. The server rechecks edit permission and distance before accepting the change.
+
+## Unusable moves and switching
+
+DRM AI checks legal bench choices when all usable move variants are ineffective, including Choice-locked attacks into immunity. Trapping, disabled switching, and mandatory continuations still apply. RCT engine internals belong to that separate provider.
+
+See [Trainer Victory Quests](#drm-cobblemon-editor/cobblemon-trainer-quests) to link trainer identities and require a number of wins.

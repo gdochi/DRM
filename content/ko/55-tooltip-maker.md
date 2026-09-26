@@ -5,7 +5,7 @@ order: 105
 description: 아이템 설명창을 꾸미고 아이템 미리보기와 등장 효과를 설정합니다.
 product: core
 category: Tooltip Maker
-section: tooltip-maker
+section: gui-maker
 status: 안정
 version: 0.1.5
 audience: 제작자

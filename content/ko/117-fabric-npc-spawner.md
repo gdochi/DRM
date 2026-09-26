@@ -7,7 +7,7 @@ product: core-fabric
 category: 핵심 시스템
 section: npc-spawner
 status: 안정
-version: 0.1.8
+version: 0.2.3
 audience: 제작자 / 운영자
 tags:
   - npc
@@ -117,3 +117,7 @@ config/dochi_rpg_maker/npc_spawner/spawner_snapshots
 :::warning 전체 엔티티 payload
 Spawner 템플릿은 불투명한 CustomNPC 엔티티 태그를 원자적 payload로 보존합니다. 에디터 또는 신뢰할 수 있는 내보내기 경로를 사용하세요. 일부만 직접 고치면 소스가 무효가 될 수 있습니다.
 :::
+
+## Spawn Control과의 구분
+
+이 문서는 Core의 `dochi_rpg_maker:npc_spawner`와 `npc_spawner/` 저장소를 설명합니다. 별도 애드온의 [Spawner Editor](#dochi-spawn-control/dochi-spawn-control-spawner)는 `spawn_control/spawners/`에 JSON을 저장하며 다른 설정·적용 흐름을 사용합니다.

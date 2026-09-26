@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: 설치와 설정
 section: setup
 status: Stable
-version: 0.1.1
+version: Forge 0.1.1 / NeoForge 0.1.2
 audience: 플레이어와 서버 운영자
 tags:
   - installation
@@ -17,16 +17,16 @@ tags:
 
 ## 요구 사항
 
-- Minecraft 1.20.1
-- Forge 47.x
-- Java 17
-- 방어를 적용할 CustomNPCs 또는 Easy NPC
+| 빌드 | Minecraft | Java | 파일 |
+| --- | --- | --- | --- |
+| Forge 47+ | 1.20.1 | 17 | `dochi_real_armor-0.1.1.jar` |
+| NeoForge 21.1+ | 1.21.1 | 21 | `dochi_real_armor-0.1.2.jar` |
 
-클라이언트와 서버의 `mods` 폴더에 `dochi_real_armor-0.1.1.jar`를 넣습니다. 피해 계산과 설정 권한은 서버가 담당하므로 전용 서버에도 설치해야 합니다.
+클라이언트와 서버에 같은 로더의 같은 빌드를 설치합니다. CustomNPCs와 Easy NPC는 선택 연동이며 모드 자체의 필수 의존성이 아닙니다. 실제 NPC 방어를 사용하려면 해당 로더의 지원 NPC 모드가 필요합니다. NeoForge는 CustomNPCs 1.21.1 계열과 Easy NPC 5.9 이상을 선언합니다.
 
 ## 설정 화면 열기
 
-타이틀 화면이나 일시 정지 메뉴에서 **Mods > Dochi's Real Armor > Config**를 엽니다. Dochi RPG Maker가 설치되어 있으면 DRM의 **Mods Config**에서 Dochi's Real Armor 탭을 선택할 수도 있습니다.
+타이틀 화면이나 일시 정지 메뉴에서 **Mods > Dochi's Real Armor > Config**를 엽니다. Dochi RPG Maker가 설치되어 있으면 Forge DRM의 **Mods Config**에서 Dochi's Real Armor 탭을 선택할 수도 있습니다.
 
 설정값은 ON/OFF 스위치로 조작합니다. 멀티플레이 설정 변경은 서버로 전송되며 권한 레벨 2가 필요합니다.
 
@@ -56,3 +56,7 @@ config/dochi_real_armor-common.toml
 | 디버그 메시지 | OFF | 계산 결과만 보고하며 계산 여부와 무관 |
 
 설정은 즉시 저장됩니다. jar를 교체했을 때는 게임과 서버를 재시작해야 합니다.
+
+## NeoForge 설정 화면
+
+NeoForge는 모드 목록의 독립 Config 화면을 사용합니다. Forge의 DRM Mods Config 연동을 NeoForge에도 있다고 가정하지 마세요. 공통 설정 경로와 서버 권한 검사는 동일한 역할을 유지합니다.

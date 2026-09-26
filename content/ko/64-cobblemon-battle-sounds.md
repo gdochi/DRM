@@ -2,12 +2,12 @@
 title: 트레이너 배틀 사운드
 slug: cobblemon-battle-sounds
 order: 525
-description: 남은 포켓몬 수에 따라 재생하는 0.1.6 공통·라운드별 배틀 사운드 규칙입니다.
+description: 남은 포켓몬 수에 따라 재생하는 현재 공통·라운드별 배틀 사운드 규칙입니다.
 product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: 안정
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: 트레이너 배틀 사운드를 제작하는 사용자
 tags:
   - battle-sounds

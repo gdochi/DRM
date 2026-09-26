@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 설정 도구
 section: setup
 status: Draft
-version: 0.2.7
+version: 0.2.9
 audience: 총기 NPC 제작자
 tags:
   - easy-build

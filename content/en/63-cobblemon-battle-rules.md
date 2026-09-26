@@ -2,12 +2,12 @@
 title: Battle Rules
 slug: cobblemon-battle-rules
 order: 524
-description: Common and per-round formats, levels, items, Legendary Pokémon, mechanics, and lead rules in 0.1.6.
+description: Common and per-round formats, levels, items, Legendary Pokémon, mechanics, and lead rules in the current builds.
 product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Stable
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: Creators configuring trainer battle rules
 tags:
   - battle-rules

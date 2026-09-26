@@ -7,7 +7,7 @@ product: core-fabric
 category: Scene Maker
 section: scene-maker
 status: Stable
-version: 0.1.9
+version: 0.2.3
 audience: Creators / Operators
 ---
 
@@ -70,3 +70,7 @@ Orbit 방식은 거리와 각도로 돌아가는 경로를 정합니다. Orbit �
 `/drm scene ` 다음에 나오는 추천 목록에서 저장한 씬을 고르세요. `<씬파일>`은 실제 이름으로 바꾸며 꺾쇠까지 입력하지 않습니다. 두 번째는 자신에게 재생, 세 번째는 선택한 플레이어들에게 재생, 네 번째는 해당 플레이어들의 그 씬을 중지합니다.
 
 목록에 없다면 먼저 저장 여부, 기준 위치와 연결된 자료를 확인하세요. 월드 위치 창의 Apply는 편집 내용에 반영하는 단계입니다. 나중에도 재생하려면 돌아온 뒤 씬 파일을 저장해야 합니다.
+
+## 전체 씬 중지
+
+`/drm scene stop @a`는 선택한 플레이어들의 현재 씬을 파일명 지정 없이 중지합니다. 명령어 루트는 `/drm scene`입니다. 별도 `/drmscene` 명령으로 안내하지 않습니다.

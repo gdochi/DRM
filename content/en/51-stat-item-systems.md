@@ -7,7 +7,7 @@ product: core
 category: Stats And Items
 section: stat-item
 status: Stable
-version: 0.1.5
+version: 0.2.0
 audience: RPG system creators
 tags:
   - stats
@@ -60,3 +60,9 @@ Save the definition before using `Give Test Item`. Hover the preview or test ite
 In the NPC apply screen, connect a **Stat Builder** file to the NPC. Interacting with that NPC then opens the player's stat allocation screen using the connected set.
 
 Use **Visual → Tooltip Maker** to design how item information is presented. See the **Tooltip Maker** guide for item previews, equipment views, and long-tooltip scrolling. Removing equipment that only reduces maximum health no longer plays the hurt effect.
+
+## Equipment sets and tooltip links
+
+Forge Item Editor lets an item select a `setId` and a tooltip template. Equipment sets live in `items/sets/` and define required equipped-piece counts, stat bonuses, and attribute modifiers by tier. Reusable tooltip templates live in `items/tooltip_templates/`.
+
+Keep the individual item, shared equipment set, and presentation template as separate documents. Check their stat-set references and test bonuses/tooltips while changing equipped pieces. This Forge feature is not a claim of identical implementation on other loaders.

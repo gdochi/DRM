@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
-version: 0.1.6
+version: Fabric 0.2.0 / NeoForge 0.1.9
 audience: Battle presentation creators
 tags:
   - presentation
@@ -83,4 +83,4 @@ Name is display metadata inside the JSON. Trainers reference the `Save As` file 
 
 The editor preview and runtime share the renderer, but real skins, NPC models, aspect ratio, and sound resources must still be verified in an actual battle.
 
-In 0.1.6, the image browser pages its results and loads thumbnails as needed, reducing the initial cost in large resource packs.
+The image browser pages its results and loads thumbnails as needed, reducing the initial cost in large resource packs.
