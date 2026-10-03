@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 개요
 section: overview
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: 코블몬 NPC와 관련 런타임을 제작하는 사용자
 tags:
   - cobblemon
@@ -22,24 +22,24 @@ tags:
 전투는 별도 모의 엔진이 아니라 플레이어의 실제 Cobblemon 파티와 Cobblemon 1.7.3 런타임을 사용합니다. 제작자는 JSON을 직접 작성하기보다 에디터에서 기본 문서를 불러오고, `Save As`로 사용자 파일을 만든 뒤 대상 NPC에 `Apply`하는 흐름을 권장합니다.
 
 :::note 이름과 내부 ID
-현재 표시 이름은 `Dochi Cobblemon Editor`이고 JAR 이름은 `dochi_cobblemon_editor-<version>-fabric-1.21.1.jar` 형식입니다. 기존 데이터 호환성을 위해 모드 ID와 리소스 네임스페이스는 계속 `cobble_npc`입니다. `cobble_npc:*` ID와 기존 저장 폴더는 바꾸지 마세요.
+현재 표시 이름은 `Dochi Cobblemon Editor`이고 JAR 이름은 `dochi_cobblemon_editor-<version>-<loader>-1.21.1.jar` 형식이며 로더 자리는 `fabric` 또는 `neoforge`입니다. 기존 데이터 호환성을 위해 모드 ID와 리소스 네임스페이스는 계속 `cobble_npc`입니다. `cobble_npc:*` ID와 기존 저장 폴더는 바꾸지 마세요.
 :::
 
 ## 지원 환경
 
 | 로더 | 애드온 버전 | 필수 환경 |
 | --- | --- | --- |
-| Fabric 1.21.1 | 0.2.0 | Java 21, Fabric Loader 0.17.2+, Fabric API 0.116.6+1.21.1+, CustomNPCs 1.0.0 |
-| NeoForge 1.21.1 | 0.1.9 | Java 21, NeoForge 21.1+, CustomNPCs 1.21.1 호환 빌드 |
+| Fabric 1.21.1 | 0.2.1 | Java 21, Fabric Loader 0.17.2+, Fabric API 0.116.6+1.21.1+, CustomNPCs 1.0.0 |
+| NeoForge 1.21.1 | 0.2.0 | Java 21, NeoForge 21.1+, CustomNPCs 1.21.1 호환 빌드 |
 
-두 로더 모두 **Cobblemon 1.7.3 이상 1.9.0 미만과 같은 로더의 DRM Core 0.2.2 이상**이 필요합니다. 현재 Core 빌드는 0.2.3입니다. 애드온 최소 조건보다 Core의 Loader/API 요구 조건이 더 높으면 Core 조건까지 충족해야 합니다.
+두 로더 모두 **Cobblemon 1.7.3 이상 1.9.0 미만과 같은 로더의 DRM Core 0.2.2 이상**이 필요합니다. 현재 Fabric·NeoForge Core 빌드는 0.2.4입니다. 애드온 최소 조건보다 Core의 Loader/API 요구 조건이 더 높으면 Core 조건까지 충족해야 합니다.
 
 RCT API와 CobbleDollars는 선택 연동입니다. RCT를 설치하지 않아도 DRM Strategy로 배틀을 제작할 수 있습니다. 선택 모드도 반드시 해당 로더의 호환 빌드를 사용하세요.
 
 | 로더 | 파일 |
 | --- | --- |
-| Fabric | `dochi_cobblemon_editor-0.2.0-fabric-1.21.1.jar` |
-| NeoForge | `dochi_cobblemon_editor-0.1.9-neoforge-1.21.1.jar` |
+| Fabric | `dochi_cobblemon_editor-0.2.1-fabric-1.21.1.jar` |
+| NeoForge | `dochi_cobblemon_editor-0.2.0-neoforge-1.21.1.jar` |
 
 서버와 모든 클라이언트에 같은 빌드를 설치합니다. 모드 ID와 리소스 네임스페이스는 `cobble_npc`를 유지합니다. 구버전에서 기록된 실게임 검증 결과가 최신 기능과 모든 Cobblemon 버전의 검증을 대신하지는 않습니다.
 

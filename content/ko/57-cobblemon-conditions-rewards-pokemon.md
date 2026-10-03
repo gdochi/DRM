@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: 조건부 전투와 결과 처리를 설계하는 제작자
 tags:
   - conditions
@@ -149,3 +149,7 @@ Pokemon Itself는 포켓몬 한 마리와 Cobblemon PVE 전투를 만들고 같�
 4. FTB Quests 또는 통화 모드를 뺀 테스트에서 실패가 보류되는지 확인합니다.
 5. Pokemon Itself의 두 번째 라운드가 진행도에 따라 바뀌는지 확인합니다.
 6. npc_hide/despawn이 다른 액션보다 먼저 실행되지 않는지 확인합니다.
+
+## 화폐 After Action
+
+`currency` 액션에서 DRM 화폐 또는 CobbleDollars를 선택하고 `add`, `take`, `set`을 정합니다. `set`은 잔액을 지정 값으로 바꾸며 0도 허용합니다. 음수·잘못된 금액과 사용할 수 없는 공급자는 실패로 처리됩니다. CobbleDollars는 선택 연동이며 설치하지 않은 서버에서는 해당 보상을 지급할 수 없습니다.

@@ -7,7 +7,7 @@ product: core
 category: Stats And Items
 section: stat-item
 status: Stable
-version: 0.2.0
+version: 0.2.1
 audience: RPG system creators
 tags:
   - stats

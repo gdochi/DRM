@@ -7,7 +7,7 @@ product: core-fabric
 category: Scene Maker
 section: scene-maker
 status: Stable
-version: 0.2.3
+version: 0.2.4
 audience: Creators / Operators
 ---
 

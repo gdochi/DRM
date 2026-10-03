@@ -7,7 +7,7 @@ product: core-fabric
 category: World And NPC Tools
 section: world-tools
 status: Stable
-version: 0.1.8
+version: 0.2.4
 audience: GUI and NPC creators
 tags:
   - assets

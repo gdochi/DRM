@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: Cobblemon battle NPC creators
 tags:
   - trainer
@@ -105,3 +105,18 @@ Direct `Apply to NPC` requires an editor opened for a target NPC. The server rec
 DRM AI checks legal bench choices when all usable move variants are ineffective, including Choice-locked attacks into immunity. Trapping, disabled switching, and mandatory continuations still apply. RCT engine internals belong to that separate provider.
 
 See [Trainer Victory Quests](#drm-cobblemon-editor/cobblemon-trainer-quests) to link trainer identities and require a number of wins.
+
+## Adding custom items to General Inventory
+
+Open `General > General Item Inv` for the inventory shared by the whole Trainer.
+
+1. Search `Items` for a registered default stack, or select a real player stack from `My Inventory`.
+2. Choose `Add selected`. `My Inventory` copies the stack without consuming the player's item.
+3. Set `Quantity` to 1–99 and save the trainer. The inventory holds up to 64 entries.
+4. Stacks with the same item ID but different names, enchantments, or custom components can remain separate entries.
+
+Quantity edits preserve NBT and components. For an entry with stored data, choose another item from the list instead of editing its Item ID. Invalid or oversized data is rejected rather than silently replaced with a plain item.
+
+This inventory checks gimmick-key possession without consuming the keys. It is separate from `Trainer Items`, the round AI's healing/battle bag.
+
+JSON reference: the Trainer schema remains `23`. General entries store `componentsSnbt` and still read older `components` data. Do not change `schemaVersion` by hand to enable the feature.

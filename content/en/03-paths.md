@@ -2,12 +2,12 @@
 title: Folders and Paths
 slug: paths
 order: 40
-description: Folders and Paths for Forge DRM 0.2.0.
+description: Folders and Paths for Forge DRM 0.2.1.
 product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.0
+version: 0.2.1
 audience: Creators and server operators
 ---
 

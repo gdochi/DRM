@@ -7,7 +7,7 @@ product: core-fabric
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.2.3
+version: 0.2.4
 audience: 제작자 / 운영자
 tags:
   - paths
@@ -107,8 +107,8 @@ NPC Spawner 블록 설정과 가중치 소스 풀은 `ServerJsonStorage` 종류�
 
 | 데이터 | 시작 시 처리 |
 | --- | --- |
-| 기본 대화 세트, GUI, 상점, 텔레포터 | JAR에 포함된 0.2.3 기본본으로 갱신됩니다. |
-| 샘플 퀘스트 팩, 팝업 정의와 정책 | 파일이 없을 때 0.2.3 샘플이 설치됩니다. |
+| 기본 대화 세트, GUI, 상점, 텔레포터 | JAR에 포함된 0.2.4 기본본으로 갱신됩니다. |
+| 샘플 퀘스트 팩, 팝업 정의와 정책 | 파일이 없을 때 0.2.4 샘플이 설치됩니다. |
 | `default_teleporter_set.json` | 보호된 Teleporter 템플릿으로 설치됩니다. |
 | Remnant Msg 샘플 메시지 | JAR 기본본으로 갱신됩니다. |
 | HUD 정의 | 파일이 없을 때만 설치되며 기본값은 `enabled: false`입니다. |

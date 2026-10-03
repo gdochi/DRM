@@ -2,12 +2,12 @@
 title: 대화 선택지와 Gecko 연출
 slug: dialogue-presentation
 order: 63
-description: Fabric 0.2.3에서 선택지 크기와 펄스 강조를 설정하고 Gecko 애니메이션 경로를 연결합니다.
+description: Fabric·NeoForge 0.2.4에서 선택지 크기와 펄스 강조를 설정하고 Gecko 애니메이션 경로를 연결합니다.
 product: core-fabric
 category: 대화 에디터
 section: dialogue-editor
 status: 안정
-version: 0.2.3
+version: 0.2.4
 audience: 대화 제작자
 ---
 

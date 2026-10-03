@@ -7,7 +7,7 @@ product: core
 category: NPC Shop
 section: npc-shop
 status: 안정
-version: 0.1.6
+version: 0.2.1
 audience: 상점 제작자
 tags:
   - shop
@@ -84,7 +84,7 @@ NPC Shop 에디터 화면에는 구매 목록과 판매 목록을 전환하는 `
 | `0` | 품절 |
 | `1` 이상 | 남은 구매 가능 횟수 |
 
-유한 재고 상품을 구매하면 상점 JSON의 재고 값이 줄어듭니다. 파일 기반 상점이면 서버 JSON 파일의 재고가 기준이 됩니다.
+Forge 0.2.1에서 유한 재고를 구매하면 해당 NPC의 실행 재고가 줄어듭니다. 원본 JSON의 `stock`은 초기 재고이며, 실행 중 재고와 재입고 예정 시각은 개별 NPC NBT에 저장됩니다. 같은 JSON을 쓰는 다른 NPC는 별도 재고를 가집니다.
 
 재입고를 켜려면 `stock`을 0 이상, `maxStock`·`amount`·`intervalTicks`를 양수로 둡니다. 재고가 최대치보다 낮아지면 타이머가 시작되고, 시간이 되면 `amount`만큼 `maxStock`까지 회복합니다. `nextGameTime`은 런타임이 저장하는 값이므로 보통 직접 계산하지 않습니다.
 
@@ -105,3 +105,5 @@ NPC Shop 에디터 화면에는 구매 목록과 판매 목록을 전환하는 `
 - 매입 상품은 플레이어 인벤토리의 아이템과 `sellItems` 행이 맞아야 실행됩니다.
 - `price`가 0 이하인 판매 보상은 실제 운영용 매입 상품으로 쓰기 적합하지 않습니다.
 - 상품 이미지나 행 모양은 NPC Shop이 아니라 GUI Maker의 `npc_shop` GUI에서 조정합니다.
+
+[재입고 시간 기준](#core/shop-system)에서 RESTOCK의 `Timer basis`와 잠으로 건너뛴 시간의 처리 방법을 확인하세요.

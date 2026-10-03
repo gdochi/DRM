@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: 트레이너 조우와 반복 전투를 설계하는 제작자
 tags:
   - encounter

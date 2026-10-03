@@ -2,51 +2,52 @@
 title: Installation
 slug: installation
 order: 30
-description: Requirements and client/server roles for DRM Core 0.2.3 on Fabric 1.21.1.
+description: Requirements and client/server roles for DRM 0.2.4 on Fabric and NeoForge 1.21.1.
 product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.3
-audience: Server operators
-tags:
-  - install
-  - fabric
+version: 0.2.4
+audience: Creators / Operators
 ---
 
-## Supported Environment
+## Supported environment
 
-The Fabric build targets Minecraft `1.21.1` exactly. It is not interchangeable with the Forge 1.20.1 JAR. Both loader builds keep the mod ID and resource namespace `dochi_rpg_maker`.
+This documentation covers **DRM 0.2.4 for Fabric and NeoForge 1.21.1** together. Both use the same authoring tools and normal workflow. Choose the JAR and dependencies for your loader. Forge 1.20.1 has its own documentation entry.
 
-| Item | Requirement | Current project pin |
+| Item | Fabric | NeoForge |
 | --- | --- | --- |
-| DRM Core | `0.2.3` Fabric build | `dochi_rpg_maker-0.2.3-fabric-1.21.1.jar` |
-| Minecraft | Exactly `1.21.1` | Do not mix with another 1.21.x version. |
-| Fabric Loader | `0.18.0` or newer | Built with `0.19.3` |
-| Fabric API | `0.116.11+1.21.1` or newer | Built with `0.116.13+1.21.1` |
-| Java | `21` or newer | Use the same runtime on client and server. |
+| Minecraft | Exactly `1.21.1` | Exactly `1.21.1` |
+| Java | `21` or newer | `21` |
+| Loader | Fabric Loader `0.18.0`+, built with `0.19.3` | NeoForge `21.1`+, built with `21.1.216` |
+| Fabric API | `0.116.11+1.21.1`+, built with `0.116.13+1.21.1` | Not used. |
+| CustomNPCs | Fabric `1.0.0`, required | Compatible NeoForge `1.21.1` build, required |
+| DRM | `dochi_rpg_maker-0.2.4-fabric-1.21.1.jar` | `dochi_rpg_maker-0.2.4-neoforge-1.21.1.jar` |
 
-## Required And Optional Integrations
+Both builds keep the mod ID and resource namespace `dochi_rpg_maker`. Install the same version for the same loader on the server and every client.
 
-`fabric.mod.json` requires CustomNPCs 1.0.0. The other integrations are optional.
+## Optional integrations
 
-| Mod | When it is needed |
+| Mod | Purpose |
 | --- | --- |
-| CustomNPCs 1.0.0 | Required on the server and every client. |
-| GeckoLib 4.8.4 or newer | Install when using GeckoLib NPC models and animations. |
-| Mod Menu | Adds an entry for DRM's shared `Mods Config` screen. |
-| FTB Quests | Required for `ftb` and `ftb_task` conditions and quest/task completion actions. |
-| CobbleDollars | Needed only when an installed addon or server setup explicitly uses that integration. |
+| GeckoLib | GeckoLib NPC models and animation. Use Fabric `4.8.4`+ or NeoForge `4.9`+ for the matching loader. |
+| Mod Menu | Opens DRM's `Mods Config` from the Fabric mod list. |
+| Player Animator | Optional player-animation provider integration on NeoForge. |
+| FTB Quests | Needed for `ftb`, `ftb_task`, and FTB quest/task completion actions. |
+| CobbleDollars | Needed when server content or an addon selects CobbleDollars payments. |
+| Dochi Cobblemon Editor | Separate addon for trainer battles, markets, healing, starters, and trainer-victory quests. |
+
+CustomNPCs is required by DRM. Install other integrations for the features you use. Follow [Cobblemon Editor setup](#drm-cobblemon-editor/cobblemon-editor-setup) for Pokémon content.
 
 ## Installation
 
-1. Put the same DRM Core 0.2.3 Fabric JAR in the client and server `mods` folders.
-2. Install Fabric API in the same environments.
-3. Install CustomNPCs 1.0.0 for Fabric 1.21.1 on both sides.
-4. Start the world or server once so `config/dochi_rpg_maker` is created.
-5. In Creative mode or with permission level 2, obtain `dochi_rpg_maker:dialogue_editor`.
+1. Prepare a Minecraft 1.21.1 instance with Fabric or NeoForge.
+2. Add matching-loader DRM 0.2.4 and CustomNPCs to the server and client `mods` folders. Add Fabric API on Fabric.
+3. Start the server or world once to create `config/dochi_rpg_maker`.
+4. In Creative mode or with permission level 2, obtain the Core item.
+5. Open the editor selector with that item and choose an authoring tool.
 
-With CustomNPCs installed, the Core and Remnant Msg Setter items are added to the CustomNPCs creative tab. You can also obtain them directly.
+Find these items in the CustomNPCs creative tab or use:
 
 ```text
 /give @s dochi_rpg_maker:dialogue_editor
@@ -54,31 +55,19 @@ With CustomNPCs installed, the Core and Remnant Msg Setter items are added to th
 /give @s dochi_rpg_maker:npc_spawner
 ```
 
-## Client and Server Responsibilities
+## Client and server responsibilities
 
 | Side | Responsibility |
 | --- | --- |
-| Server | JSON storage, permissions, NPC bindings, Teleporter sessions and targets, NPC Spawner pools/leases, conditions/actions, shop transactions, stock, currency balances, and Remnant marker persistence |
-| Client | Editor screens, searchable pickers, GUI Maker preview, dialogue/shop/Teleporter runtime screens, and HUD rendering |
+| Server | JSON storage, editing permissions, NPC bindings, conditions/actions, shop trades/stock, currency, quest progress, spawners, and Remnant marker state |
+| Client | Authoring screens, searchable pickers, GUI Maker previews, player runtime screens, and HUD rendering |
 
-In multiplayer, the server's `config/dochi_rpg_maker` is authoritative. Editing a similarly named local client file does not change server content.
+In multiplayer, the **server's** `config/dochi_rpg_maker` is authoritative. Editing a similarly named client file does not update server content.
 
-## Back Up Before Updating
+## Updating
 
-Back up both `config/dochi_rpg_maker` and the world save. NPC-embedded dialogue/shop data, NPC Spawner block state, leases, and Remnant marker saved data live with the world. Spawner templates and snapshots live under `config/dochi_rpg_maker/npc_spawner`.
+Back up `config/dochi_rpg_maker` and the world together. NPC bindings, quest progress, NPC Spawner block state/leases, and Remnant markers also live in the world.
 
-Bundled dialogue, GUI, shop, Teleporter, and Remnant samples may be refreshed during startup. Treat protected defaults as templates: use `Save As`, then link the new file.
+Bundled dialogue, GUI, shop, Teleporter, and sample files may be refreshed at startup. Use `Save As` for custom files and link those copies.
 
-## Development Build
-
-Use Java 21 and the Gradle wrapper from the Fabric source project.
-
-```powershell
-.\gradlew.bat clean build
-```
-
-The remapped JAR is produced under `build/libs`.
-
-:::warning Do not mix loaders
-Use the JAR containing `fabric.mod.json` on Fabric. Do not add the Forge JAR containing `META-INF/mods.toml` to the same instance.
-:::
+0.2.4 transmits the selected restock clock, so update the server and every client together. Use only the JAR for your instance's loader.

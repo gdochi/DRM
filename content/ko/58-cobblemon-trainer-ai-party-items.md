@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: 고급 트레이너 전투를 만드는 제작자
 tags:
   - trainer-ai
@@ -88,7 +88,7 @@ RCT API가 설치되어 있으면 `General`의 RCT 포터에서 활성 데이터
 
 ## General Inventory
 
-Trainer 전체에서 공유하는 최대 64종의 등록 아이템입니다. 키 아이템은 보유 조건으로 사용되며 소비되지 않습니다.
+Trainer 전체에서 공유하는 최대 64개 등록 아이템 항목입니다. 키 아이템은 보유 조건으로 사용되며 소비되지 않습니다.
 
 Mega Showdown 기본 키 아이템:
 
@@ -162,3 +162,18 @@ AI는 현재 HP, 상태, 남은 파티와 아이템 가치를 함께 평가합�
 ## 무효 기술과 교체 판단
 
 DRM AI는 모든 사용 가능한 기술이 무효일 때 합법적인 교체 후보도 검사합니다. 예를 들어 Choice 고정 기술이 상대에게 통하지 않으면 교체를 고려합니다. 교체 금지, 구속, 강제 연속 행동 같은 배틀 규칙을 무시하지는 않습니다. RCT 엔진의 내부 동작은 별도 제공자 영역입니다.
+
+## 일반 인벤토리에 커스텀 아이템 넣기
+
+`General > General Item Inv`에서 Trainer 전체가 공유하는 인벤토리를 엽니다.
+
+1. `Items`에서 등록 아이템의 기본 스택을 검색하거나 `My Inventory`에서 현재 플레이어가 가진 실제 스택을 고릅니다.
+2. `Add selected`로 추가합니다. `My Inventory`는 아이템을 복사하며 플레이어의 원본을 소비하지 않습니다.
+3. `Quantity`를 1–99로 정하고 문서를 저장합니다. 최대 64개 항목입니다.
+4. 같은 아이템 ID라도 이름·인챈트·커스텀 데이터 등 컴포넌트가 다르면 별도 항목으로 보관할 수 있습니다.
+
+수량을 바꿔도 NBT와 컴포넌트를 유지합니다. 데이터가 붙은 항목의 Item ID는 직접 바꾸지 않고 목록에서 다른 아이템을 선택합니다. 데이터가 잘못되거나 너무 크면 복사를 거부하므로 일반 아이템으로 바꿔 저장된 것으로 생각하지 마세요.
+
+이 인벤토리는 기믹 키 아이템 보유를 검사하며 소비하지 않습니다. 라운드 AI가 사용하는 회복·배틀 아이템 가방인 `Trainer Items`와 구분합니다.
+
+JSON 참고: Trainer 스키마는 계속 `23`입니다. 일반 인벤토리 항목에 `componentsSnbt`를 저장하고 기존 `components` 데이터도 읽습니다. 새 기능을 쓰기 위해 `schemaVersion`을 직접 바꿀 필요는 없습니다.

@@ -2,18 +2,18 @@
 title: Quick Start
 slug: quick-start
 order: 20
-description: Quick Start for Forge DRM 0.2.0.
+description: Quick Start for Forge DRM 0.2.1.
 product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.0
+version: 0.2.1
 audience: Creators and server operators
 ---
 
 ## First launch
 
-1. Install Forge 1.20.1 with Java 17, DRM 0.2.0, and compatible CustomNPCs on the server and clients.
+1. Install Forge 1.20.1 with Java 17, DRM 0.2.1, and compatible CustomNPCs on the server and clients.
 2. Start once to create `config/dochi_rpg_maker` and the bundled templates.
 3. In Creative mode or with edit permission, get `Dochi RPG Maker Core` from the CustomNPCs tab. Its registry ID remains `dochi_rpg_maker:dialogue_editor`.
 4. Right-click air to open the editor selector. Right-click a CustomNPCs NPC to enter the target-aware editing flow.

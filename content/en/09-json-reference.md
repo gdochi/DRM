@@ -7,7 +7,7 @@ product: core
 category: Reference / Operations
 section: operations
 status: Stable
-version: 0.1.6
+version: 0.2.1
 audience: Advanced users
 tags:
   - json
@@ -127,8 +127,7 @@ A 0.1.3 buy product can override payment and configure restocking.
   "restock": {
     "enabled": true,
     "amount": 2,
-    "intervalTicks": 24000,
-    "nextGameTime": 0
+    "intervalTicks": 24000
   }
 }
 ```
@@ -213,3 +212,7 @@ Currency IDs use lowercase letters, numbers, underscore, dash, or dot. `deathRul
 :::tip Manual Editing
 After editing JSON by hand, validate syntax, confirm you edited the server file, then use `/drm reload` or reload through the relevant editor.
 :::
+
+## Current repetition and restock fields
+
+GUI root `spriteFillMode`/`spriteScale` and element `imageFit`/`tileWidthRatio`/`tileHeightRatio` follow [GUI Maker](#core/gui-system). NPC Shop root `restockTimeMode` is `real_ticks` or `world_ticks`; follow the [restock guide](#core/shop-system). Deadlines are runtime-managed, so do not supply arbitrary times in new definitions.

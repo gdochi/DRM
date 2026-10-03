@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Overview
 section: overview
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: Creators building Cobblemon NPCs and shops
 tags:
   - cobblemon
@@ -22,24 +22,24 @@ tags:
 The addon does not imitate Cobblemon with a separate battle engine. Battles use the player's real Cobblemon party and Cobblemon 1.7.3 runtime. The intended authoring path is the DRM editor selector, `Save As`, and the NPC apply screen rather than hand-writing every JSON document.
 
 :::note Display name and internal ID
-The addon uses the display name `Dochi Cobblemon Editor` and the JAR name `dochi_cobblemon_editor-<version>-fabric-1.21.1.jar`. For existing-data compatibility, the internal mod ID and resource namespace remain `cobble_npc`. Do not rename existing `cobble_npc:*` IDs or data folders.
+The addon uses the display name `Dochi Cobblemon Editor` and the JAR name `dochi_cobblemon_editor-<version>-<loader>-1.21.1.jar`. The loader is `fabric` or `neoforge`. For existing-data compatibility, the internal mod ID and resource namespace remain `cobble_npc`. Do not rename existing `cobble_npc:*` IDs or data folders.
 :::
 
 ## Supported environment
 
 | Loader | Addon version | Required platform |
 | --- | --- | --- |
-| Fabric 1.21.1 | 0.2.0 | Java 21, Fabric Loader 0.17.2+, Fabric API 0.116.6+1.21.1+, CustomNPCs 1.0.0 |
-| NeoForge 1.21.1 | 0.1.9 | Java 21, NeoForge 21.1+, compatible CustomNPCs 1.21.1 |
+| Fabric 1.21.1 | 0.2.1 | Java 21, Fabric Loader 0.17.2+, Fabric API 0.116.6+1.21.1+, CustomNPCs 1.0.0 |
+| NeoForge 1.21.1 | 0.2.0 | Java 21, NeoForge 21.1+, compatible CustomNPCs 1.21.1 |
 
-Both require **Cobblemon 1.7.3 to below 1.9.0 and matching-loader DRM Core 0.2.2+**. Current Core builds are 0.2.3. Also meet Core's Loader/API requirements where they exceed the addon's minimum.
+Both require **Cobblemon 1.7.3 to below 1.9.0 and matching-loader DRM Core 0.2.2+**. Current Fabric and NeoForge Core builds are 0.2.4. Also meet Core's Loader/API requirements where they exceed the addon's minimum.
 
 RCT API and CobbleDollars are optional. DRM Strategy works without RCT. Every optional integration must match the loader.
 
 | Loader | File |
 | --- | --- |
-| Fabric | `dochi_cobblemon_editor-0.2.0-fabric-1.21.1.jar` |
-| NeoForge | `dochi_cobblemon_editor-0.1.9-neoforge-1.21.1.jar` |
+| Fabric | `dochi_cobblemon_editor-0.2.1-fabric-1.21.1.jar` |
+| NeoForge | `dochi_cobblemon_editor-0.2.0-neoforge-1.21.1.jar` |
 
 Use the same build on the server and all clients. The internal mod ID/resource namespace remains `cobble_npc`. Older live-test results do not establish coverage of every current feature across all supported Cobblemon versions.
 

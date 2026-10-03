@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: 트레이너와 포켓몬 NPC를 만드는 제작자
 tags:
   - trainer
@@ -71,7 +71,7 @@ Battle Presentation 경로를 선택하면 전투 시작 전에 해당 연출을
 
 ### 일반 인벤토리
 
-Trainer 전체가 공유하는 최대 64종의 아이템입니다. DRM AI의 일반 소비 아이템이 아니라 Mega Showdown 키 아이템 같은 보유 조건에 사용됩니다. 라운드별 치료·회복 아이템은 `Trainer Items`에서 따로 구성합니다.
+Trainer 전체가 공유하는 최대 64개 아이템 항목입니다. DRM AI의 일반 소비 아이템이 아니라 Mega Showdown 키 아이템 같은 보유 조건에 사용됩니다. 라운드별 치료·회복 아이템은 `Trainer Items`에서 따로 구성합니다.
 
 ## Pokemon Party
 
@@ -159,3 +159,18 @@ Lead Duel은 양쪽 선봉 한 마리만 사용하는 Singles입니다. 원본 �
 5. 그다음 라운드, 자동 감지, AI, 아이템, 기믹을 하나씩 추가합니다.
 
 [트레이너 승리 퀘스트](#drm-cobblemon-editor/cobblemon-trainer-quests)에서 ID 연결과 승리 횟수 목표를 설정하는 방법을 확인하세요.
+
+## 일반 인벤토리에 커스텀 아이템 넣기
+
+`General > General Item Inv`에서 Trainer 전체가 공유하는 인벤토리를 엽니다.
+
+1. `Items`에서 등록 아이템의 기본 스택을 검색하거나 `My Inventory`에서 현재 플레이어가 가진 실제 스택을 고릅니다.
+2. `Add selected`로 추가합니다. `My Inventory`는 아이템을 복사하며 플레이어의 원본을 소비하지 않습니다.
+3. `Quantity`를 1–99로 정하고 문서를 저장합니다. 최대 64개 항목입니다.
+4. 같은 아이템 ID라도 이름·인챈트·커스텀 데이터 등 컴포넌트가 다르면 별도 항목으로 보관할 수 있습니다.
+
+수량을 바꿔도 NBT와 컴포넌트를 유지합니다. 데이터가 붙은 항목의 Item ID는 직접 바꾸지 않고 목록에서 다른 아이템을 선택합니다. 데이터가 잘못되거나 너무 크면 복사를 거부하므로 일반 아이템으로 바꿔 저장된 것으로 생각하지 마세요.
+
+이 인벤토리는 기믹 키 아이템 보유를 검사하며 소비하지 않습니다. 라운드 AI가 사용하는 회복·배틀 아이템 가방인 `Trainer Items`와 구분합니다.
+
+JSON 참고: Trainer 스키마는 계속 `23`입니다. 일반 인벤토리 항목에 `componentsSnbt`를 저장하고 기존 `components` 데이터도 읽습니다. 새 기능을 쓰기 위해 `schemaVersion`을 직접 바꿀 필요는 없습니다.

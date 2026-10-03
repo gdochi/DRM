@@ -7,13 +7,13 @@ product: drm-cobblemon-editor
 category: 트레이너 승리 퀘스트
 section: trainer
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: Creators
 ---
 
 ## 준비
 
-Fabric 0.2.0 또는 NeoForge 0.1.9의 Cobblemon Editor와 DRM 0.2.2 이상이 필요합니다. 애드온이 DRM 퀘스트에 `Trainer Victory` 목표를 추가합니다.
+Fabric 0.2.1 또는 NeoForge 0.2.0의 Cobblemon Editor와 DRM 0.2.2 이상이 필요합니다. 애드온이 DRM 퀘스트에 `Trainer Victory` 목표를 추가합니다.
 
 ## 트레이너 ID 연결
 
@@ -39,7 +39,7 @@ ID 설정 목록에는 현재 불러온 퀘스트의 트레이너 승리 목표�
 
 DRM Trainer 전투에서 확정된 플레이어 승리만 셉니다. 패배·도주·취소, Pokemon Itself 전투, 외부 RCT 트레이너 전투는 집계하지 않습니다. 예전 승리 기록을 소급해서 가져오지 않으며, 같은 전투 결과를 다시 받아도 중복 집계하지 않습니다. 전투를 시작할 때의 트레이너 ID가 기준입니다.
 
-Fabric과 NeoForge DRM의 완료 정책 차이는 [로더별 안내](#core-fabric/loader-compatibility)를 확인하세요. 목표의 승리 횟수와 퀘스트 전체의 완료·보상 처리는 별개입니다.
+현재 두 로더의 DRM Quest Editor에서 만든 퀘스트는 자동 완료를 사용합니다. 필요한 승리 횟수를 채워도 다른 목표가 남아 있으면 퀘스트 전체는 완료되지 않습니다. 기존 제출 방식 JSON의 이관은 [데이터 이동 안내](#core-fabric/loader-compatibility)를 확인하세요.
 
 ## 저장과 백업
 

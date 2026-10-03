@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: gui-maker
 status: Stable
-version: 0.1.8
+version: 0.2.4
 audience: GUI creators
 tags:
   - gui
@@ -100,3 +100,31 @@ Runtime reads this path from `config/dochi_rpg_maker/gui`. If it is blank, the v
 :::warning GUI Type Mismatch
 A layout saved under the wrong `guiType` may render without the runtime behavior it needs. Use `npc_shop` for shops, `dialogue` for dialogue, and `teleporter` for Teleporter screens.
 :::
+
+## Sprite scale and tiled images
+
+These settings affect the **player runtime layout** saved by GUI Maker. They do not resize the authoring editor's toolbar.
+
+Use `Default UI Settings` for the shared sprite appearance.
+
+| Setting | Behavior |
+| --- | --- |
+| `Tile` | Repeats the sprite pattern to fill panels and buttons. |
+| `Stretch` | Stretches the pattern across the surface. |
+| `Sprite Scale %` | Enter a number directly: 50–400%, default 100%. Decimals such as `125.5` are supported. |
+
+For an ordinary image, use the **selected component's Inspector**.
+
+1. Select the image component and assign its asset.
+2. Set `Fit` to `Tile`.
+3. Enter `Tile W %` and `H %`. Each axis accepts 10–800%, default 100%.
+4. For example, 200% width and 50% height repeats a tile twice as wide and half as tall. The component's overall `w` and `h` stay the same.
+5. Use `Save As` for a custom GUI and connect it to the dialogue, shop, or other runtime screen.
+
+Tile proportions belong to **one component** and do not alter neighboring images. Stretch or Contain hides the ratio fields; switching back to Tile restores the stored ratios. Preview and live dialogue use the same Tile settings.
+
+## JSON reference: repetition settings
+
+At GUI root, `spriteFillMode` is `tile` or `stretch`, and `spriteScale` is 0.5–4.0. Each element stores `imageFit: tile`, `tileWidthRatio`, and `tileHeightRatio`. A JSON ratio of `1.0` means 100%.
+
+Legacy root ratios become initial values for components without explicit ratios and are written to each element on the next save. New tile width/height ratios belong to elements rather than global UI defaults.

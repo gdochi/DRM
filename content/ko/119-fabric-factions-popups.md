@@ -7,7 +7,7 @@ product: core-fabric
 category: 월드와 NPC 도구
 section: world-tools
 status: 안정
-version: 0.1.8
+version: 0.2.4
 audience: 월드 / NPC 제작자
 tags:
   - faction

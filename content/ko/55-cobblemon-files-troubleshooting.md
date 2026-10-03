@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 운영
 section: operations
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: 서버 운영자와 콘텐츠 배포자
 tags:
   - paths
@@ -198,3 +198,7 @@ JSON만 백업하면 PokéMart 재고·경매, 플레이어별 Trainer 진행도
 `cobblemon/trainer_registry.json`과 `cobblemon/trainer_registry.initialized`는 트레이너 ID 연결을 보관합니다. 트레이너 프로필, 퀘스트 팩, 월드 플레이어 진행도와 함께 백업하세요. 파일 이름이나 NPC 이름만 같게 만드는 것으로 같은 트레이너가 되지는 않습니다.
 
 현재 Trainer/Pokemon Itself 코덱은 스키마 23입니다. 이전 문서는 호환 변환으로 읽고, 트레이너 ID가 없던 문서는 미연결 상태에서 시작합니다. 직접 스키마 번호만 바꾸지 말고 에디터에서 ID를 연결하세요.
+
+## 일반 인벤토리 데이터 확인
+
+`My Inventory` 복사 후 저장·다시 불러오기에서 아이템 이름과 커스텀 데이터를 확인하세요. 수량만 바꿨는데 이름·인챈트·데이터가 사라진다면 일반 Item ID로 새 항목을 만든 것인지 확인하고 원본 스택에서 다시 선택합니다. 잘못된 데이터 또는 크기 제한으로 복사가 거부된 항목은 문서에 추가되지 않습니다.

@@ -7,7 +7,7 @@ product: core-fabric
 category: NPC Shop
 section: npc-shop
 status: 안정
-version: 0.1.8
+version: 0.2.4
 audience: 상점 제작자
 tags:
   - shop
@@ -72,7 +72,7 @@ NPC Shop은 NPC가 판매하거나 매입하는 상품 목록을 만드는 에�
 
 ## 재고와 가격
 
-`stock`은 구매 상품에만 적용됩니다. `0`은 품절이고, `-1`은 무제한입니다. 가격은 `price * quantity`로 계산됩니다. 유한 재고 상품은 `maxStock`과 `restock.enabled`, `amount`, `intervalTicks`, `nextGameTime`으로 월드 게임 시간 기준 재입고를 구성할 수 있습니다. 런타임은 `Restock in` 또는 `Restock ready` 상태를 표시합니다.
+`stock`은 구매 상품에만 적용됩니다. `0`은 품절이고, `-1`은 무제한입니다. 가격은 `price * quantity`로 계산됩니다. 유한 재고 상품은 `maxStock`과 `restock.enabled`, `amount`, `intervalTicks`로 재입고를 구성합니다. 시간은 상점의 `Timer basis`를 따르며 다음 예정 시각은 서버가 관리합니다. 런타임은 `Restock in` 또는 `Restock ready` 상태를 표시합니다.
 
 판매 상품은 재고를 쓰지 않습니다. 플레이어가 가진 아이템 수량과 `sellItems[].count`를 기준으로 판매 가능한 단위가 정해집니다.
 
@@ -123,3 +123,20 @@ DRM 화폐를 사용할 때는 먼저 Currency Editor에서 화폐 정의를 만
 - 판매 상품은 반드시 `sellItems`에 등록된 행을 기준으로 처리됩니다. 인벤토리에 있는 모든 아이템을 자동 매입하지 않습니다.
 - 여러 화폐를 한 상품 가격에 동시에 섞어 쓰는 구조는 아닙니다. 상점 문서의 기준 화폐를 정해 사용합니다.
 - 은행 기능이나 별도 계좌 기능은 이 문서 범위에 넣지 않습니다.
+
+## 재입고 시간 기준 설정
+
+구매 상품을 선택하고 상품 상세의 **RESTOCK**에서 `Timer basis`를 고릅니다. 선택기는 상품 상세 안에 있지만 **상점 전체에 하나의 기준**을 저장합니다. 같은 상점의 상품마다 서로 다른 시계를 설정하지 않습니다.
+
+| Timer basis | 시간 계산 |
+| --- | --- |
+| `Real ticks` | 서버에서 실제로 진행한 게임 틱을 셉니다. 잠으로 건너뛴 시간은 더하지 않습니다. 기본값입니다. |
+| `World ticks` | 오버월드의 날짜·시간을 사용합니다. 잠으로 건너뛴 시간도 재입고에 반영합니다. |
+
+`Real ticks`는 컴퓨터의 실제 시각이나 서버가 꺼져 있던 시간을 세는 방식이 아닙니다. 정상 20 TPS에서 24000틱은 약 20분이며, 서버가 느려지거나 정지하면 실제 대기시간도 달라집니다.
+
+재입고를 켜려면 유한 `stock`과 양수 `maxStock`, `amount`, `intervalTicks`를 설정합니다. 재고가 최대치 아래로 내려가면 타이머가 시작됩니다. 시간이 지나면 수량을 채우되 최대 재고를 넘기지 않으며, 오래 닫혀 있던 상점은 지나간 주기를 반영할 수 있습니다.
+
+시간 기준을 바꾸거나 `/time set` 등으로 시간이 뒤로 가면 남은 대기시간을 새 기준에 맞춰 다시 잡습니다. `nextGameTime`은 선택한 기준의 서버 관리 시각이므로 제작자가 직접 계산하지 않습니다.
+
+JSON 참고: 상점 루트의 `restockTimeMode`는 `real_ticks` 또는 `world_ticks`입니다. 상품의 `restock`에는 활성화·수량·간격 설정이 있습니다. 매입 상품과 무제한 재고에는 재입고를 적용하지 않습니다.

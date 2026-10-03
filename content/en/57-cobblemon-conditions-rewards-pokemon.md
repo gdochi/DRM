@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: Creators building conditional battles and Pokémon NPCs
 tags:
   - conditions
@@ -63,7 +63,7 @@ Chance ranges from 0.0 to 1.0. In `One random`, only entries that passed Chance 
 | `stored` | `set`, `add`, `subtract`, `remove` | Sets a string, performs numeric changes, or deletes the stored key. |
 | `command` | `run` | Runs silently at server permission level 4; leading slashes are stripped. |
 | `advancement` | `grant`, `revoke` | Changes only the named advancement. |
-| `currency` | `add`, `take`, `set` | Changes a DRM Currency balance; negative amounts normalize to zero. |
+| `currency` | `add`, `take`, `set` | Changes the selected DRM or CobbleDollars balance. Invalid or negative amounts fail; zero is allowed for `set`. CobbleDollars requires its optional provider. |
 | `cobblemon_give` | `give` | Creates the selected species at level 1–100 and adds it to the active party. |
 | `ftb_complete_quest` / `ftb_complete_task` | `complete` | Completes the selected FTB Quest or Task when FTB Quests is installed. |
 | `npc_hide` / `npc_despawn` | — | Hides or removes the NPC after ordinary actions succeed. |
@@ -100,3 +100,7 @@ Applying Pokemon Itself also derives the CustomNPCs Pokémon appearance from spe
 3. Lock Nature, Ability, Moves, and Held Item.
 4. Tune Scale, Pose, Animation, and Shining.
 5. Assign a custom presentation and save. An NPC tracking that source path normally needs no reapply.
+
+## Currency After Actions
+
+For `currency`, choose DRM currency or CobbleDollars and an operation: `add`, `take`, or `set`. `set` replaces the balance and can set it to zero. Invalid/negative amounts and unavailable providers fail. CobbleDollars is optional and its rewards cannot run without the provider.

@@ -7,7 +7,7 @@ product: core-fabric
 category: Reference / Operations
 section: operations
 status: Stable
-version: 0.1.8
+version: 0.2.4
 audience: Advanced users
 tags:
   - json
@@ -275,3 +275,7 @@ Currency IDs use lowercase letters, numbers, underscore, dash, or dot. `deathRul
 :::tip Manual Editing
 After editing JSON by hand, validate syntax, confirm you edited the server file, then use `/drm reload` or reload through the relevant editor.
 :::
+
+## Current repetition and restock fields
+
+GUI root `spriteFillMode`/`spriteScale` and element `imageFit`/`tileWidthRatio`/`tileHeightRatio` follow [GUI Maker](#core-fabric/gui-system). NPC Shop root `restockTimeMode` is `real_ticks` or `world_ticks`; follow the [restock guide](#core-fabric/shop-system). Deadlines are runtime-managed, so do not supply arbitrary times in new definitions.

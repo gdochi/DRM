@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: npc-spawner
 status: Stable
-version: 0.2.3
+version: 0.2.4
 audience: Creators / Operators
 tags:
   - npc
@@ -19,7 +19,7 @@ tags:
 
 `dochi_rpg_maker:npc_spawner` is a server-authoritative block that chooses from a weighted pool of full CustomNPC sources. Its settings, pool, and active leases live in the world block entity. Reusable source templates and owned Soul Stone snapshots live under the Core config root.
 
-DRM 0.2.3 requires CustomNPCs 1.0.0 on the server and every client. It provides Filled Soul Stone discovery, valid CustomNPC source creation, and actual NPC spawning.
+DRM 0.2.4 requires CustomNPCs 1.0.0 on the server and every client. It provides Filled Soul Stone discovery, valid CustomNPC source creation, and actual NPC spawning.
 
 ## Open The Editor
 

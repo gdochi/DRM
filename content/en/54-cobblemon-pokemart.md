@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: Pokémon shop creators and server operators
 tags:
   - pokemart
@@ -81,3 +81,9 @@ The shared DRM condition editor configures a flat `AND` or `OR` group. The serve
 The addon performs search and paging on the server for products, offers, eligible owned Pokémon, listings, selling choices, and claims. Large shops no longer send every row at once.
 
 `Clear` removes the PokéMart binding from the NPC. It does not delete the server JSON or world-level auction and claim data.
+
+## DRM payment selection and amount limits
+
+The payment picker distinguishes DRM currency definitions from inventory items. Provider `drm` stores a Currency Editor ID; `item` stores an item ID and optional NBT/component matching. Check the chosen payment for sales and auction fees, bids, and settlements.
+
+PokéMart reads prices as large integers, but DRM/item payments must fit Core's signed 64-bit integer range. Amounts above that range are rejected rather than truncated. The CobbleDollars provider uses its API's large-integer balances.

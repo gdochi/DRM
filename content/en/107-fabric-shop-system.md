@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: npc-shop
 status: Stable
-version: 0.1.8
+version: 0.2.4
 audience: Shop creators
 tags:
   - shop
@@ -123,3 +123,20 @@ The dialogue action `go_shop` opens a shop.
 :::warning File-Based Stock
 Finite stock in file-based shops may be written back to the shop JSON after trades. When editing production shop files by hand, check whether the server is running and how reload policy is configured.
 :::
+
+## Choosing the restock clock
+
+Select a buy product and find `Timer basis` in its **RESTOCK** details. Although the control appears in product details, it selects **one clock for the entire shop**. Products in the same shop do not choose separate clocks.
+
+| Timer basis | Time source |
+| --- | --- |
+| `Real ticks` | Counts game ticks actually processed by the server. Sleep skips do not count. This is the default. |
+| `World ticks` | Uses Overworld date/time. Sleep skips count toward restocking. |
+
+`Real ticks` does not count wall-clock time or time while the server is stopped. At normal 20 TPS, 24000 ticks is about 20 minutes; slowdown or a paused server changes the real wait.
+
+Enable restocking with finite `stock` and positive `maxStock`, `amount`, and `intervalTicks`. The timer starts below maximum stock. Due restocks add units without exceeding the maximum; a shop closed for several intervals can catch up.
+
+Changing the clock or moving time backward with `/time set` rebases the remaining cooldown. `nextGameTime` is a server-managed deadline in the selected clock, so do not calculate it by hand.
+
+JSON reference: root `restockTimeMode` is `real_ticks` or `world_ticks`. Product `restock` stores enabled state, amount, and interval. Sell offers and unlimited stock do not restock.

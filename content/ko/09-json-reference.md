@@ -7,7 +7,7 @@ product: core
 category: 레퍼런스 / 운영
 section: operations
 status: 안정
-version: 0.1.6
+version: 0.2.1
 audience: 고급 사용자
 tags:
   - json
@@ -128,8 +128,7 @@ GUI 요소는 `id`, `type`, `x`, `y`, `w`, `h`, `z`를 기본으로 갖습니다
   "restock": {
     "enabled": true,
     "amount": 2,
-    "intervalTicks": 24000,
-    "nextGameTime": 0
+    "intervalTicks": 24000
   }
 }
 ```
@@ -214,3 +213,7 @@ GUI 요소는 `id`, `type`, `x`, `y`, `w`, `h`, `z`를 기본으로 갖습니다
 :::tip 직접 수정 순서
 직접 JSON을 편집했다면 문법 검사를 먼저 하고, 서버 파일을 수정했는지 확인한 뒤 `/drm reload` 또는 해당 에디터의 Load 기능으로 다시 읽어 보세요.
 :::
+
+## 현재 반복·재입고 설정 참고
+
+GUI 루트의 `spriteFillMode`·`spriteScale`과 요소별 `imageFit`·`tileWidthRatio`·`tileHeightRatio`는 [GUI Maker](#core/gui-system)를 따릅니다. NPC Shop 루트의 `restockTimeMode`는 `real_ticks` 또는 `world_ticks`이며 [재입고 안내](#core/shop-system)를 따릅니다. 예정 시각은 런타임이 관리하므로 새 정의에 임의 시각을 넣지 않습니다.

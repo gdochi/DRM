@@ -7,14 +7,14 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.0
+version: 0.2.1
 audience: Server operators
 tags:
   - install
   - forge
 ---
 
-This page targets **Forge 1.20.1 / DRM 0.2.0**. Fabric and NeoForge 1.21.1 use DRM 0.2.3 builds. See [loader requirements and feature differences](#core-fabric/loader-compatibility).
+This page targets **Forge 1.20.1 / DRM 0.2.1**. Fabric and NeoForge 1.21.1 use DRM 0.2.4 builds. See [loader requirements and feature differences](#core-fabric/loader-compatibility).
 
 ## Supported Environment
 
@@ -24,7 +24,7 @@ DRM Core targets Forge 47+, Minecraft 1.20.1 up to but not including 1.21. The m
 | --- | --- | --- |
 | Mod Loader | Forge / `javafml` `[47,)` | Forge 1.20.1 family |
 | Minecraft | `[1.20.1,1.21)` | Docs assume 1.20.1 |
-| DRM Core | `dochi_rpg_maker` 0.2.0 | Required on both client and server |
+| DRM Core | `dochi_rpg_maker` 0.2.1 | Required on both client and server |
 | Java | 17 | Match the Forge 1.20.1 runtime. |
 | CustomNPCs | `[1.20.1,)` | Required on both client and server. |
 

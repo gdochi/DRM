@@ -110,3 +110,7 @@ Image resources inside GUI JSON must distinguish Minecraft resource locations fr
 :::tip Narrowing Failures
 Ask which NPC holds which `kind/path`, then confirm where that file lives on the server. That separates path failures from condition failures quickly.
 :::
+
+## Forge shop definitions and runtime state
+
+In 0.2.1, shop JSON stores initial stock and restock configuration; runtime stock and deadlines persist in each NPC's NBT. Different NPCs using the same JSON keep separate stock. Back up config and the world together to restore both definition and runtime state.

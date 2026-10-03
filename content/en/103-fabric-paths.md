@@ -7,7 +7,7 @@ product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.3
+version: 0.2.4
 audience: Creators / Operators
 tags:
   - paths
@@ -86,8 +86,8 @@ NPC Spawner block settings and its weighted source pool are stored with the bloc
 
 | Data | Startup behavior |
 | --- | --- |
-| Bundled dialogue, GUI, shop, and Teleporter defaults | Refreshed from the 0.2.3 JAR. |
-| Sample quest pack, popup definitions, and policies | Installed from the 0.2.3 samples when missing. |
+| Bundled dialogue, GUI, shop, and Teleporter defaults | Refreshed from the 0.2.4 JAR. |
+| Sample quest pack, popup definitions, and policies | Installed from the 0.2.4 samples when missing. |
 | `default_teleporter_set.json` | Installed as a protected Teleporter template. |
 | Remnant Msg sample message | Refreshed from the JAR. |
 | HUD definitions | Installed only when missing and default to `enabled: false`. |

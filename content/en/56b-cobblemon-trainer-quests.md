@@ -7,13 +7,13 @@ product: drm-cobblemon-editor
 category: Trainer Victory Quests
 section: trainer
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: Creators
 ---
 
 ## Requirements
 
-Use Cobblemon Editor Fabric 0.2.0 or NeoForge 0.1.9 with DRM 0.2.2 or newer. The addon registers the `Trainer Victory` objective in DRM quests.
+Use Cobblemon Editor Fabric 0.2.1 or NeoForge 0.2.0 with DRM 0.2.2 or newer. The addon registers the `Trainer Victory` objective in DRM quests.
 
 ## Link a trainer ID
 
@@ -39,7 +39,7 @@ A requirement of 3 means three separate victories against the linked trainer. Mu
 
 Only confirmed player wins in DRM Trainer battles count. Losses, fleeing, cancellation, Pokemon Itself battles, and external RCT trainer battles do not count. Historical wins are not imported. Repeated delivery of the same battle result does not add another win. Identity is captured when the battle starts.
 
-See [loader differences](#core-fabric/loader-compatibility) for Fabric and NeoForge quest completion policies. Objective progress and whole-quest completion or rewards are separate operations.
+Both current DRM Quest Editors author automatic quests. Reaching the required win count does not finish the whole quest if other objectives remain. See [data migration](#core-fabric/loader-compatibility) when importing older turn-in JSON.
 
 ## Storage and backups
 

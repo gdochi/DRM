@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: npc-shop
 status: Stable
-version: 0.1.6
+version: 0.2.1
 audience: Shop creators
 tags:
   - shop
@@ -106,7 +106,7 @@ Use `shopGuis.buy` and `shopGuis.sell` when buy and sell views need different la
 
 ## Server-Side Trade Safety
 
-The server revalidates the active session, NPC, dimension, distance, product, stock, and payment before every trade. Finite stock is reserved and saved before charging; delivery or payment failures restore stock and refund payment. Restock changes persist to file-based shops and are pushed to live viewers.
+The server revalidates the active session, NPC, dimension, distance, product, stock, and payment before every trade. Finite stock is reserved and saved before charging; delivery or payment failures restore stock and refund payment. Runtime stock and deadlines persist in each NPC's NBT and update viewers of that NPC. The source shop JSON stores initial stock, products, and restock configuration.
 
 ## Opening Shops From Dialogue
 
@@ -118,6 +118,25 @@ The dialogue action `go_shop` opens a shop.
 | `blacksmith` | Find `npc_shops/blacksmith.json` or a shop whose ID is `blacksmith`. |
 | `folder/blacksmith.json` | Resolve a shop file under a subfolder. |
 
-:::warning File-Based Stock
-Finite stock in file-based shops may be written back to the shop JSON after trades. When editing production shop files by hand, check whether the server is running and how reload policy is configured.
-:::
+## Initial stock and NPC state
+
+Forge 0.2.1 stores runtime stock and restock deadlines per NPC. Two NPCs using the same shop JSON keep separate stock. Reconnecting preserves that NPC's state; a new world or a copied NPC starts from the definition.
+
+Keep stable `productId` values when editing prices or reordering products. Changing initial stock, restock settings, or the product definition resets that product's runtime state. Exported definitions omit server-managed deadlines. Existing JSON stock becomes the initial value; older stock overwritten by past purchases cannot be reconstructed automatically.
+
+## Choosing the restock clock
+
+Select a buy product and find `Timer basis` in its **RESTOCK** details. Although the control appears in product details, it selects **one clock for the entire shop**. Products in the same shop do not choose separate clocks.
+
+| Timer basis | Time source |
+| --- | --- |
+| `Real ticks` | Counts game ticks actually processed by the server. Sleep skips do not count. This is the default. |
+| `World ticks` | Uses Overworld date/time. Sleep skips count toward restocking. |
+
+`Real ticks` does not count wall-clock time or time while the server is stopped. At normal 20 TPS, 24000 ticks is about 20 minutes; slowdown or a paused server changes the real wait.
+
+Enable restocking with finite `stock` and positive `maxStock`, `amount`, and `intervalTicks`. The timer starts below maximum stock. Due restocks add units without exceeding the maximum; a shop closed for several intervals can catch up.
+
+Changing the clock or moving time backward with `/time set` rebases the remaining cooldown. `nextGameTime` is a server-managed deadline in the selected clock, so do not calculate it by hand.
+
+JSON reference: root `restockTimeMode` is `real_ticks` or `world_ticks`. Product `restock` stores enabled state, amount, and interval. Sell offers and unlimited stock do not restock.

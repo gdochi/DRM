@@ -7,7 +7,7 @@ product: core-fabric
 category: 핵심 시스템
 section: teleporter
 status: 안정
-version: 0.1.8
+version: 0.2.4
 audience: 제작자 / 운영자
 tags:
   - teleporter

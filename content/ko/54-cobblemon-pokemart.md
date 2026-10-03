@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: Fabric 0.2.0 / NeoForge 0.1.9
+version: Fabric 0.2.1 / NeoForge 0.2.0
 audience: 포켓몬 상점 제작자와 서버 운영자
 tags:
   - pokemart
@@ -141,3 +141,9 @@ Apply는 원본 JSON 경로와 안전한 대체 스냅샷을 함께 저장합니
 4. 같은 경로에 저장한 뒤 런타임을 새로 열어 확인합니다. Role이나 문서 경로를 바꿨다면 다시 Apply합니다.
 5. 기존 Role의 재고·경매 PersistentState가 자동 삭제되지 않는다는 점을 운영 기록에 남깁니다.
 6. 새 플레이어와 기존 이용 플레이어로 Interaction Conditions를 다시 시험합니다.
+
+## DRM 결제 선택과 금액 제한
+
+결제 선택기는 DRM 화폐 정의와 인벤토리 아이템을 구분합니다. `drm`에는 Currency Editor의 화폐 ID, `item`에는 아이템 ID와 필요하면 NBT·컴포넌트 조건을 저장합니다. 한 종류를 선택한 뒤 상품 구매와 경매 수수료·입찰·정산에 같은 결제 수단이 사용되는지 확인하세요.
+
+PokéMart 가격은 내부에서 큰 정수로 읽지만 DRM·아이템 결제는 Core의 64비트 정수 범위 안에서만 처리합니다. 그 범위를 넘는 금액은 거부하며 작은 값으로 잘라 결제하지 않습니다. CobbleDollars 공급자는 해당 API의 큰 정수 잔액을 사용합니다.

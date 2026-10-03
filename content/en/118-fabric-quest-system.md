@@ -7,7 +7,7 @@ product: core-fabric
 category: Quest System
 section: quest-editor
 status: Stable
-version: 0.2.3
+version: 0.2.4
 audience: Quest creators
 tags:
   - quest
@@ -25,7 +25,7 @@ The bundled sample pack starts disabled. Use it as a reference and create a sepa
 | Area | Main Options |
 | --- | --- |
 | Start | Manual acceptance, automatic start when available, or start on first progress |
-| Completion | Turn in after objectives or complete automatically |
+| Completion | Quests authored by the current editor complete automatically after objectives |
 | Repeat | Never, always, daily, or after a cooldown |
 | Prerequisites | All required quests, any quest, or a required count |
 | Objectives | Location, item possession/acquisition/delivery, kills, dialogue signals, faction score |
@@ -37,7 +37,7 @@ Create the pack and categories first, then add quests in Quest Editor. After sav
 
 The current action picker offers `quest_start`, `quest_complete`, `quest_reset`, `quest_objective_complete`, and `quest_objective_reset`, with server-backed quest/objective selectors. Legacy turn-in, signal, fail, abandon, and pin actions remain readable in existing JSON.
 
-Distinguish normal completion from forced completion. Fabric honors `automatic` or `turn_in`: a manual quest remains ready until explicitly submitted. Current NeoForge completes automatically.
+The current Fabric and NeoForge editors author automatic quests. Distinguish completion through objectives from the administrator's forced `quest_complete`. See [data migration](#core-fabric/loader-compatibility) for older turn-in JSON.
 
 ## Player Journal
 
@@ -52,3 +52,7 @@ See [loader command guidance](#core-fabric/loader-compatibility) for quest/objec
 With Cobblemon Editor installed, add a `DRM Trainer Victory` objective, select its trainer identity, and set the required number of wins. Follow [Trainer Victory Quests](#drm-cobblemon-editor/cobblemon-trainer-quests).
 
 Drag dividers between the tree/work area and information/description panels to resize them. Long titles wrap and lists scroll. Widths belong to the current editor instance, not the saved quest JSON.
+
+## Copying a pack with Save As
+
+Enter a new pack ID and save. Each quest needs objectives; invalid or already-used pack IDs must be corrected. Check `pack:quest` references within the copy and references to other packs, then load the saved copy and test acceptance, completion, and rewards. Changing the display name is separate from changing the pack ID.

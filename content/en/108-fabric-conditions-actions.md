@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: dialogue-editor
 status: Stable
-version: 0.2.3
+version: 0.2.4
 audience: Script / data creators
 tags:
   - condition

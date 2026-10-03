@@ -7,7 +7,7 @@ product: core
 category: 스탯과 아이템
 section: stat-item
 status: 안정
-version: 0.2.0
+version: 0.2.1
 audience: RPG 시스템 제작자
 tags:
   - stats
