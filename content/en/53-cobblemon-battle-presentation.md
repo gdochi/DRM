@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
-version: Fabric 0.2.1 / NeoForge 0.2.0
+version: Fabric 0.2.2 / NeoForge 0.2.1
 audience: Battle presentation creators
 tags:
   - presentation
@@ -84,3 +84,25 @@ Name is display metadata inside the JSON. Trainers reference the `Save As` file 
 The editor preview and runtime share the renderer, but real skins, NPC models, aspect ratio, and sound resources must still be verified in an actual battle.
 
 The image browser pages its results and loads thumbnails as needed, reducing the initial cost in large resource packs.
+
+## Party models and Motion
+
+Choose `Actors` → `Player` or `Opponent` → `Trainer / 1–6`. Each side has six slots with independent Render selected model, Transform, Pose, and Motion settings. Normal presets hide party slots; `presets/vs_party_showcase.json` enables an optional 6+6 example.
+
+Previews use sample Pokémon; actual battles use server-provided party appearance. Missing slots stay empty. Hidden slots do not expose species, moves, stats, or held items. Models are not spawned into the world.
+
+Motion edits start/end, entrance/exit duration, offsets, scale, and drift. JSON reference: `actors.*.animation.fitToModel` fits the full model; `camera` holds up to 64 tick-based position/zoom/rotation keyframes. Edit that list in JSON and check it in the shared preview renderer. Supported easing includes step, linear, ease_in, ease_out, and ease_in_out. Presentation schema is 5, with earlier 1–4 documents readable.
+
+## New presets
+
+| File | Duration at 20 TPS | Purpose |
+| --- | --- | --- |
+| `presets/vs_trainer.json` | 144 ticks / 7.2 s | Trainer reveal and name |
+| `presets/vs_pokemon.json` | 132 ticks / 6.6 s | Wild encounter |
+| `presets/vs_boss_trainer.json` | 168 ticks / 8.4 s | Boss trainer |
+| `presets/vs_legendary_pokemon.json` | 184 ticks / 9.2 s | Legendary Pokémon |
+| `presets/vs_party_showcase.json` | 168 ticks / 8.4 s | Optional 6+6 party reveal |
+
+New general presets use full-screen backgrounds and full-model fitting. Treat defaults as templates and use Save As for custom files. Do not overwrite user scenes wholesale.
+
+Effects include raster_warp, vs_ribbon, versus_mark, iris_shutter, arena_depth, wild_meadow, wild_grass, rift_sky, ground_shadow, light_sweep, and dust_motes. Bind scenes to ordinary wild, RCT, or PvP battles in [Encounter Presentations](#drm-cobblemon-editor/cobblemon-encounter-presentations).

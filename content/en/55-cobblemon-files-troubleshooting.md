@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Operations
 section: operations
 status: Draft
-version: Fabric 0.2.1 / NeoForge 0.2.0
+version: Fabric 0.2.2 / NeoForge 0.2.1
 audience: Server operators and content publishers
 tags:
   - paths
@@ -133,7 +133,7 @@ File-based Trainer, Pokemon Itself, PokéMart, Nurse Joy, and Starter Selector b
 6. Test presentation playback, skipping, battle music, small GUI Scale, and different aspect ratios.
 7. Test Sales, Trade, and Auction before and after a server restart.
 8. Include user JSON and `_migration_backups` in the server backup policy.
-9. Confirm the release JAR is named `dochi_cobblemon_editor-0.2.1-fabric-1.21.1.jar` while the internal mod ID remains `cobble_npc`.
+9. Confirm the release JAR is named `dochi_cobblemon_editor-0.2.2-fabric-1.21.1.jar` while the internal mod ID remains `cobble_npc`.
 
 ## Trainer identity and quest backups
 

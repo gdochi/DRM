@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 차량 AI
 section: vehicles
 status: Draft
-version: 0.2.9
+version: Forge 0.3.0 / NeoForge 0.2.9
 audience: 시나리오 제작자와 운영자
 tags:
   - SuperbWarfare
@@ -15,7 +15,9 @@ tags:
   - ai
 ---
 
-현재 버전은 0.2.9이며 Forge 1.20.1과 NeoForge 1.21.1 빌드가 있습니다. 외부 총기·차량 모드의 요구 범위는 [로더별 설치 안내](#dochi-warfare/warfare-setup)를 확인하세요.
+Forge 0.3.0에서는 이 페이지의 차량 기능을 **DWE**가 제공합니다. [DWE 설치와 저장 경로](#dochi-warfare-expanded/expanded-overview), [차량 반응 기믹](#dochi-warfare-expanded/expanded-vehicle-gimmicks), [폭격·증원 타임라인](#dochi-warfare-expanded/expanded-support-timeline)을 함께 확인하세요. NeoForge 0.2.9는 기존 DW 차량 기능을 사용합니다.
+
+현재 빌드는 Forge 1.20.1용 DW 0.3.0과 NeoForge 1.21.1용 DW 0.2.9입니다. Forge의 차량 AI는 별도 DWE 0.3.0이 필요합니다. 외부 총기·차량 모드의 요구 범위는 [로더별 설치 안내](#dochi-warfare/warfare-setup)를 확인하세요.
 
 ## 요구 사항과 편집기
 

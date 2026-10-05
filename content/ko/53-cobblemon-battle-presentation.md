@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
-version: Fabric 0.2.1 / NeoForge 0.2.0
+version: Fabric 0.2.2 / NeoForge 0.2.1
 audience: 전투 연출 제작자
 tags:
   - presentation
@@ -95,7 +95,7 @@ Stage 원점은 왼쪽 위이며 X는 오른쪽, Y는 아래로 증가합니다.
 
 Name은 JSON 내부 표시 이름이고 트레이너가 참조하는 값은 `Save As` 파일 경로입니다. 이름만 같게 만든 파일은 자동 연결되지 않습니다.
 
-Battle Presentation 문서는 현재 스키마 4로 저장됩니다. 구형 스키마 1–3 파일은 호환 필드를 사용해 읽지만, 저장하면 현재 구조로 정규화됩니다. `schemaVersion`을 지원 범위 밖의 값으로 직접 바꾸면 로드되지 않습니다.
+Battle Presentation 문서는 현재 스키마 5로 저장됩니다. 구형 스키마 1–4 파일은 호환 필드를 사용해 읽지만, 저장하면 현재 구조로 정규화됩니다. `schemaVersion`을 지원 범위 밖의 값으로 직접 바꾸면 로드되지 않습니다.
 
 ## Pose Workbench
 
@@ -144,3 +144,25 @@ Texture와 Stage Image는 Minecraft 리소스 ID를 사용합니다. Windows 절
 10. 트레이너 파일을 저장하고 다음 전투에서 연출을 확인합니다. 같은 원본 경로를 추적하는 NPC는 보통 다시 Apply할 필요가 없습니다.
 
 에디터 미리보기와 런타임은 같은 렌더러를 사용하지만, 실제 플레이어 스킨·대상 NPC·창 비율·사운드 리소스는 런타임에서만 최종 확인할 수 있습니다.
+
+## 파티 모델과 Motion
+
+`Actors` → `Player` 또는 `Opponent` → `Trainer / 1–6`에서 양쪽 여섯 슬롯을 편집합니다. 각 슬롯의 `Render selected model`, `Transform`, `Pose`, `Motion`을 따로 설정합니다. 기본 연출은 파티 슬롯을 숨기며 `presets/vs_party_showcase.json`은 6+6 슬롯을 켠 선택용 예시입니다.
+
+에디터는 샘플 포켓몬을 표시하고 실전에는 서버가 해당 배틀 파티의 외형을 넣습니다. 없는 슬롯은 비어 있으며 숨긴 슬롯의 종족·기술·능력치·도구를 보내지 않습니다. 모델은 월드에 소환되지 않습니다.
+
+Motion에서 시작·끝, 진입·퇴장 시간, 오프셋·배율·유지 이동을 편집합니다. 참고용 JSON 옵션 `actors.*.animation.fitToModel`은 전신 크기 보정, `camera`는 최대 64개의 틱별 위치·확대·회전 키프레임입니다. 키프레임 목록 자체는 JSON에서 편집하고 에디터 미리보기로 확인합니다. `step`, `linear`, `ease_in`, `ease_out`, `ease_in_out`을 사용할 수 있습니다.
+
+## 새 기본 연출
+
+| 파일 | 기본 길이 | 용도 |
+| --- | --- | --- |
+| `presets/vs_trainer.json` | 144틱 / 7.2초 | 트레이너 등장과 이름 |
+| `presets/vs_pokemon.json` | 132틱 / 6.6초 | 야생 등장 |
+| `presets/vs_boss_trainer.json` | 168틱 / 8.4초 | 보스 트레이너 |
+| `presets/vs_legendary_pokemon.json` | 184틱 / 9.2초 | 전설 포켓몬 |
+| `presets/vs_party_showcase.json` | 168틱 / 8.4초 | 선택적 6+6 파티 표시 |
+
+길이는 정상 20 TPS 기준입니다. 새 일반 프리셋은 화면 전체 배경과 모델 전신 보정을 사용합니다. 기본 파일은 템플릿으로 두고 `Save As`로 사용자 파일을 만드세요. 사용자 JSON을 새 프리셋으로 일괄 덮어쓰지 마세요.
+
+`raster_warp`, `vs_ribbon`, `versus_mark`, `iris_shutter`, `arena_depth`, `wild_meadow`, `wild_grass`, `rift_sky`, `ground_shadow`, `light_sweep`, `dust_motes` 효과도 사용할 수 있습니다. 일반 야생·RCT·PvP에 연결하려면 [배틀 연출 적용](#drm-cobblemon-editor/cobblemon-encounter-presentations)을 사용합니다.

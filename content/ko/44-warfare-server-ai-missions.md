@@ -1,13 +1,13 @@
 ---
-title: 서버 AI 제어와 Mission Planner
+title: 서버 AI 제어와 전투 지원
 slug: warfare-server-ai-missions
 order: 385
-description: 0.2.9의 서버 전체 AI 기능 제한과 레드스톤 차량 Mission을 설정합니다.
+description: NPC·차량 전역 AI 정책과 DWE 지원 타임라인의 연결을 안내합니다.
 product: dochi-warfare
 category: 월드 도구
 section: tools
 status: Draft
-version: 0.2.9
+version: Forge 0.3.0 / NeoForge 0.2.9
 audience: 서버 운영자와 맵 제작자
 tags:
   - server
@@ -27,22 +27,8 @@ tags:
 config/dochi_warfare/server-ai.json
 ```
 
-## Mission Core Planner
+## 차량 정책과 전투 지원
 
-`Mission Core Planner`는 레드스톤으로 차량 Mission을 제어하는 블록입니다. 반경, 자동 차량 분류, CustomNPCs 팩션, Mission ID, 목표 좌표, 컨트롤러 UUID, 체력, 제어 차량 목록을 설정할 수 있습니다.
+Forge 0.3.0의 차량 전역 AI는 DWE가 관리하며 `config/dochi_warfare/vehicle_ai/server-ai.json`에 저장합니다. NPC 정책과 별개로 차량 동작을 중단하고 개별 설정은 보존합니다.
 
-전원이 들어오면 범위 안에서 조건에 맞는 로드된 차량을 선택해 Area Mission을 발행합니다. 전원이 꺼지거나 설정이 바뀌거나 블록이 파괴되면 해당 Planner가 소유한 Mission만 취소합니다. 컨트롤러 UUID가 차량 Mission 상태에 저장되므로 재로드 뒤에도 소유 관계를 구분합니다.
-
-## 명령어
-
-0.2.9은 `/dw` 명령어 루트를 사용합니다.
-
-```text
-/dw planner configure
-/dw planner status
-/dw planner cancel
-/dw planner damage
-/dw planner repair
-```
-
-차량 AI를 포함한 다른 운영자 명령어도 `/dw` 아래에 있습니다. 권한 레벨 2가 필요합니다.
+폭격·기총 지원·차량 증원·NPC 이동은 [DWE 타임라인](#dochi-warfare-expanded/expanded-support-timeline)에서 제작하고 `/dw callgimmicks <이름> [x y z]`로 호출합니다. 기존 문서의 Mission Core Planner와 `/dw planner`는 현재 소스에서 확인되지 않아 현행 제작 절차에서 제외했습니다.

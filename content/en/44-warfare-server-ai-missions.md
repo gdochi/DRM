@@ -1,13 +1,13 @@
 ---
-title: Server AI Controls and Mission Planner
+title: Server AI and Combat Support
 slug: warfare-server-ai-missions
 order: 385
-description: Configure 0.2.9 server-wide AI feature gates and redstone-controlled vehicle missions.
+description: Separate NPC and vehicle AI policies and use DWE support timelines.
 product: dochi-warfare
 category: World Tools
 section: tools
 status: Draft
-version: 0.2.9
+version: Forge 0.3.0 / NeoForge 0.2.9
 audience: Server operators and map makers
 tags:
   - server
@@ -27,22 +27,8 @@ Settings are stored at:
 config/dochi_warfare/server-ai.json
 ```
 
-## Mission Core Planner
+## Vehicle policy and combat support
 
-`Mission Core Planner` is a redstone-controlled block for vehicle missions. Configure its radius, automatic vehicle classification, CustomNPCs faction, Mission ID, target position, controller UUID, health, and controlled vehicle list.
+On Forge 0.3.0, DWE owns global vehicle AI at `config/dochi_warfare/vehicle_ai/server-ai.json`. It suspends vehicle behavior separately from NPC policy while preserving per-vehicle settings.
 
-When powered, the planner selects matching loaded vehicles in range and issues an Area Mission. When power is removed, its settings change, or the block is destroyed, it cancels only missions owned by that planner. The controller UUID is stored with vehicle mission state so cancellation remains valid after reloads.
-
-## Commands
-
-Version 0.2.9 uses the `/dw` command root:
-
-```text
-/dw planner configure
-/dw planner status
-/dw planner cancel
-/dw planner damage
-/dw planner repair
-```
-
-Vehicle AI and other operator commands also live below `/dw`. Permission level 2 is required.
+Author bombing, gun support, vehicle reinforcements, and NPC movement in the [DWE timeline](#dochi-warfare-expanded/expanded-support-timeline), then invoke `/dw callgimmicks <name> [x y z]`. The previously documented Mission Core Planner and `/dw planner` could not be found in current sources and are excluded from current authoring instructions.

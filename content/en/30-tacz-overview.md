@@ -2,12 +2,12 @@
 title: Dochi's Warfare Overview
 slug: dochi-warfare-overview
 order: 310
-description: The 0.2.9 scope, dependencies, managed-gun model, vehicle AI, clone tools, and booby traps in Dochi's Warfare.
+description: Forge DW 0.3.0 and NeoForge 0.2.9 NPC combat, DWE ownership, clones, and authoring tools.
 product: dochi-warfare
 category: Overview
 section: overview
 status: Draft
-version: 0.2.9
+version: Forge 0.3.0 / NeoForge 0.2.9
 audience: Firearm NPC creators
 tags:
   - TACZ
@@ -15,7 +15,11 @@ tags:
   - overview
 ---
 
-Current version: 0.2.9, with Forge 1.20.1 and NeoForge 1.21.1 builds. Check [loader-specific installation](#dochi-warfare/warfare-setup) for external gun/vehicle dependencies.
+## Forge 0.3.0 update
+
+DW owns NPC combat and the addon core. Vehicle AI, weapons, crew, and profiles now belong to [Dochi's Warfare Expanded](#dochi-warfare-expanded/expanded-overview). NPC combat works with DW alone. Vehicle features in the earlier 0.2.9 overview below require DWE on Forge; NeoForge retains its 0.2.9 implementation. The shared clone library now provides confirmed deletion and recoverable archived files.
+
+Current builds: DW 0.3.0 for Forge 1.20.1 and DW 0.2.9 for NeoForge 1.21.1. Forge vehicle AI requires the separate DWE 0.3.0 addon. Check [loader-specific installation](#dochi-warfare/warfare-setup) for external gun/vehicle dependencies.
 
 ## What Dochi's Warfare is
 

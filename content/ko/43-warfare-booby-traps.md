@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 월드 도구
 section: tools
 status: Draft
-version: 0.2.9
+version: Forge 0.3.0 / NeoForge 0.2.9
 audience: 맵·시나리오 제작자
 tags:
   - booby-trap

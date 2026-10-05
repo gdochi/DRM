@@ -1,0 +1,2126 @@
+﻿[
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\AccuracyRampPolicy.java",
+        "Hash":  "D0E41D9B17A393705641D5320B5D607168568916DC72DA9B1A911B58016BAC3D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\AmmoExhaustionDecision.java",
+        "Hash":  "46777A6D9C25580E4EE463CC6713C6F2ADC9A2302BFCC44D6278FBCDE8ABFD22"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\AmmoExhaustionFallbackLatch.java",
+        "Hash":  "208DAE75427E6C2D52146D71B8411BA100CA02C6A4CC9F0323E74840D14E61A8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\AmmoExhaustionRecoveryPolicy.java",
+        "Hash":  "5646A71A868CABEC0764EB13BF7F6AF833B7098601C4617FBFCD73757390419E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\AmmoRespawnStockPolicy.java",
+        "Hash":  "42164DB2D738D856DD2C13623DB2DBE727B3F37154FEB1657AA9E7C18D12EF7B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapAuthCleanup.java",
+        "Hash":  "046118D3861382F44471C52EFBC7A4E39C9CF569D9D4FCC7CEB53708608D474B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapEffectSnapshot.java",
+        "Hash":  "8E5869C1CDD6F95FB2722720D24687F6B1B31AF4D5D9C3759352F2626527A15E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapListEntry.java",
+        "Hash":  "C8BBC2F3291A5FE3600C570D4C156CE611E8AAD4372E1A8F92691F0ED52F703D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapMarkerSnapshot.java",
+        "Hash":  "98DF10979D2AD4FCDC10935B0A2AF8B9D86A5669EAD5264595275234F4BDFF3F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapMutationTarget.java",
+        "Hash":  "F3A06C994F5162C9695316D1387742F190B9DC8CD2BC57A0A6C2757085B4B5F5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapPassword.java",
+        "Hash":  "A9718E8727A39165CAB1F3E53F721B5072C1215C014AD84E67CFD2FBF3DCF17B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapProfileCodec.java",
+        "Hash":  "18C95C407FB764E3DF999045AA55AC13285E228ECE66AFE8B294F75BF057189B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapProfileStorage.java",
+        "Hash":  "3644EDEDE8C726CAF3E0834A8ED92ABD3E9AC8C5E9642F92310534C385B24EE7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapSavedData.java",
+        "Hash":  "598D2CBBDC868F76835E2CBD7FC73D2B00ED6672E8E3938B0B5AFF4EE08A506E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapService.java",
+        "Hash":  "619AC5561AF819BD674EB6FC790AE08D8187C44AD8691E59FDC1E5C88098F0D0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapSnapshot.java",
+        "Hash":  "5F1C9D57BA6412C56488289F28972F067F8728934A10B62EBEF237EC77C7CA65"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BoobyTrapTypePolicy.java",
+        "Hash":  "10137505F81528E6008DA7DFBB0F4080C0C5600A17DE80317F9BE80CB405F964"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\BurstFireTimingPolicy.java",
+        "Hash":  "76AF142EB681E4E791151BD75AA371F25679EDF9D83283D48536FDF4BA89F60F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CombatConditionRule.java",
+        "Hash":  "5B52A14842A307B397468CD1B2FA781481409CBBF07A638D19C60C56CA143171"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CombatStopPolicy.java",
+        "Hash":  "C2FC9AEC2B25BAAE1AE5D66DF8F21FCE992AF5F48A93D515D91A377C54B2BCAC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CombatTargetMemory.java",
+        "Hash":  "B4424F112127B897DFB899159A800D1F410C39526D6CF417E20409E89C90D5B1"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CombatTargetPolicy.java",
+        "Hash":  "1739AB93D8C7F5549C7BEC40CBD640A45E0CE416CF54F0726A817154275B83A9"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CombatTargetRetentionPolicy.java",
+        "Hash":  "FF4E60FB20639CEE340855B56A6CB40638AA2C3ACFA92775179E4C3486D7E23B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ConfigSaveRuntimePolicy.java",
+        "Hash":  "5146336CBD788232056CAB2AFEB63F6674F428E995F2570DC3375D021B8D650D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CoverCandidateSamplingPolicy.java",
+        "Hash":  "5E459C288CEB95E9410B213299AE5DFD40092C2E9962B73E342B4DB1AFDC408F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CoverCombatStatePolicy.java",
+        "Hash":  "78EB5A0C7A2422D52596922819AA31D6B328F32C7F8ED2D0D1A9D3FBD52273C7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CoverMovementSpeedPolicy.java",
+        "Hash":  "469B3B0C771144BF269EC4E16B82E9D8EEC6EE2216ED2C0AFCB64169709D7BE0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CoverSearchBudget.java",
+        "Hash":  "4F362AE4A3CB98E053E44864F13FD89CDAD0A8807D62F55CD20034FCBDB7B59A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CoverSelectionPolicy.java",
+        "Hash":  "6CEF84661A9222CF6F0ED0190F3BD4B964CB3F2E05125A21864DECF3C8193D02"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CoverTargetMemoryPolicy.java",
+        "Hash":  "BFEDA58643571847BE065040A906A25049F0DC687B8F880A72F16391B774C31E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CoverTriggerPolicy.java",
+        "Hash":  "AAF8861CBF0C2DB02E5D27B672340E424C072F3814B218B6277F531B4907777E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CustomNpcGoalOwnerResolver.java",
+        "Hash":  "018F4EE8C50B8BC2882AB7D8916DB21FB315D40B679E74C0365A6506D4B2FA0B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CustomNpcGoalSuppressionAdapter.java",
+        "Hash":  "5DA6D716B708E78A7E561C73F03A19583FE26C5F4CE3F53159DA0E8443848C86"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CustomNpcInteractionItemPolicy.java",
+        "Hash":  "7FCDDEF2D354B496015B791EDA93E54BFBD70B8357260C75E286FD1354855889"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CustomNpcModelAdapter.java",
+        "Hash":  "AF3DFD43199A6E7C93EC3EDF4D63C78AFD60EA962F8F22B134C434F2CB2B7AB1"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CustomNpcPlayerModelProfile.java",
+        "Hash":  "C6041E52DC3163211937427EB9997C70BDE4DA25E88F6D4B0C3E94B593066650"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CustomNpcSkinResource.java",
+        "Hash":  "0F366FD0C90863FADB64246BEA546F516C3BA75CD2D286BA30A11B36F5DADE76"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CustomNpcTemplateRestoreMarker.java",
+        "Hash":  "C14A0791F263AB446BCD1A327900D5794440628E7E4F92731E21D562A05375C2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\CustomNpcTemplateRestorePolicy.java",
+        "Hash":  "AEECCF519256BC29C64F5E48DD892D83B12BF0DB65636172C767A1E3379E2DAD"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\DochiWarfareConfigPaths.java",
+        "Hash":  "4486A99D244CB888DF662B354DAF4B9C9E4C60CF03CDAC84F856CCA70E6DEA63"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\EntityCloneCodec.java",
+        "Hash":  "998BF7F8FB278140972D0E6CCDC2569246F257A125A4F5276128F1D8BF669795"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\EntityCloneKind.java",
+        "Hash":  "17EC1C80F4E6F8FAB05441450AC437DBFA89A2107FC7E6C8606147E127772EEE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\EntityCloneSanitizer.java",
+        "Hash":  "07752777BFE2564158259F5F174E4A39C900CC98A39216397762F4BA8B94FD97"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\EntityCloneService.java",
+        "Hash":  "AC76C428080F09D36A9FC061ED6F6DC1EA6659681461D152EB5631413FBA2211"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\EntityCloneStorage.java",
+        "Hash":  "2EB13AB63F0427BB223217617DBA08FF549C4BD70EB5F6A7F87308953A16AFAC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\EntityCloneSummary.java",
+        "Hash":  "2CA6C736C2C86BA458F6EB8A35E8228959244F25720D01AB3C9B786B422D0A2A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\EntityCloneTemplate.java",
+        "Hash":  "F18B6ECEA1BF35CAC660F34A316E85C68A606134F76A11A499F50F6270F64B17"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\EntityRotationAccess.java",
+        "Hash":  "DDB53B75B454403DB95701428EEE43D4BC5E504E8500D5406A14724241F7288D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\EventSoundAttenuation.java",
+        "Hash":  "B7291A7F0E457B0B602357217505C2E4AB8BB26E0A2634926906D99627CE0BDD"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\FactionDefenseAssistPolicy.java",
+        "Hash":  "231AE7774E20FBC187BB0D4F8344DC7583563E056A1C477AB2E871F08F8603C2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\FireRateModePolicy.java",
+        "Hash":  "4F808969944AF854BC01B1BA58022F8701300691665D421D297A436769D09D8E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\GrenadeCoverPolicy.java",
+        "Hash":  "E70B055F8A2072F6E865790E0F3CB170D1E40116DF9AFBF10C7AD5BD246E7789"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\GrenadeThreatTracker.java",
+        "Hash":  "5A214A01F5ED4394F0D3D1484A3AD00B9D8B530ADCE1D4AC5C4E328B5C166397"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\GunshotHearingPolicy.java",
+        "Hash":  "22B63EA78CDAB978FBD4291AB5E1CCA1015965CC5D7EE799AF56F82423A6FAA5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\HearingReactionPolicy.java",
+        "Hash":  "9BD41F1873ADABF5097F712317F8DC8B187F51B79594BB1924F22DD0B7EE3AAA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\HearingStimulusService.java",
+        "Hash":  "2647964CBC59F570F4011354936DB42D798499F81324F93ABDBF7A9292A4E3C4"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\IdentitySnapshotBucket.java",
+        "Hash":  "E8BC64FCBF6A18381623F7B32E0910D3FCD45AF767149B9EEAA8A8ECEE4F6BDE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\IdleFacingPolicy.java",
+        "Hash":  "97E8E3AB9C43962BA92067143DB81C467C4E254D6F003E11F5FBBC276346399C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\IdleMovementHeadingPolicy.java",
+        "Hash":  "392C51D68353F1C8CED77E38C9F4224552D7B5C5B6AB4850D1A26944E71E0D96"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\IdleNavigationProgressPolicy.java",
+        "Hash":  "45790073A9ADAAE813BD9381E7C30A962817DFC82BAB02D8DD02A06987148DD3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\IdleNavigationRetryPolicy.java",
+        "Hash":  "A87ED16BB71EE5FDEE67E4980A3CA3B995BB7CFF6510F835A872A4E2B1EEC726"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\IdlePatrolGroundPolicy.java",
+        "Hash":  "AF9C59C16597037C6E692F3773FABB300515CF09A7F4286B0047E8CE8194E29B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\IdlePatrolGroundResolver.java",
+        "Hash":  "8A6560EF8E060990B8FD5EF9B3A36BA22C4A63E9F39173B3F9DF86B209DFA075"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\IdlePatrolTargetPolicy.java",
+        "Hash":  "CE1D8C7660AB9193A9C2CF8D8B05B9752D0D3E429A57C1B36A791D2B2BDE3E96"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\IdlePatrolWaitTimePolicy.java",
+        "Hash":  "49B0C54260A941C3F6D2DE9D64340F1DE082D6BEB30BF8FC861BA1D9AFA765F1"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\LivingTargetSpatialIndex.java",
+        "Hash":  "316F1DD569C6BBDC53B9E4A43AF41A5E98005F09F3CBE0B3C00F194A4F2CECFF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\LrtThrowableBridge.java",
+        "Hash":  "F9D060A6B1F37320E17BF282970D7E2F2904A9A97BE8622E26995AE064B31E44"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ManagedGunCategory.java",
+        "Hash":  "FF7A6E928CA087A0A1871907D0738EB524371B35861B193B9441F1C8AB8CBCE7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ManagedNpcMarker.java",
+        "Hash":  "38923E077A78CA49304AA51F41FEC3B14D53747B7E07379154AA4D2D26BA1232"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ManagedNpcSpatialIndex.java",
+        "Hash":  "F97B77D4E555C23CA2A840EFD3959F2F5DBE143A18184FE035FACED23410A31F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ManagedNpcStateRegistry.java",
+        "Hash":  "A87C9B1272D9094CD656DCF7E7C13B22B07190279D17E9CAB66741E8BFAFDE5B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ManagedRetreatPolicy.java",
+        "Hash":  "3A2C2F9B195F632597C18895AD30B284DAADAB180C5F0A790420B3C336CC31BB"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ManagedWeaponClassifier.java",
+        "Hash":  "6924446CE1650FB4A8A5C7D3C830E29A32B6A4758CCACCA8504EE899FE89A125"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MeleeApproachNavigationPolicy.java",
+        "Hash":  "97FC8E939ABEC22E8D1D3631F3A35E2D2C3D38F52084C646E3EA3059142632A4"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MeleeWeaponStackMatcher.java",
+        "Hash":  "090EB15C85080FAC2CD598FFE340113FE853720ABBAB2733E8AB569CA13C8FD8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryActiveTimePolicy.java",
+        "Hash":  "87825F713E4356CADD614508A16B89D1827D46084D4651B913B7026DD07808EE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryAggressiveThreatPolicy.java",
+        "Hash":  "C35D27421383E2ADB8D75661B89A86B0D7C27105ACB421886133FC252325EAE5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryBetrayalPolicy.java",
+        "Hash":  "54ACBE14524B4A92EDB52B622A4D0724880A60EB4AFC50BD1E5B57CC6C0A36E9"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryContractSavedData.java",
+        "Hash":  "F5F64A4F031C02B71263F1D6719451D16044EE137F37A212568F6988AD703791"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryFormationPolicy.java",
+        "Hash":  "7409B70E0F007F977ABA028A4E7A2D4A3EB411945A300B300FB39563EAB3E21F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryHireOfferSnapshot.java",
+        "Hash":  "5FE8FD46D370341A3945D7E41E74119F8FF540E565776FEA7423C06DBF65DE27"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryHudEntry.java",
+        "Hash":  "C43CD72E2BB8FF63711F59AB124607F444A494F5AFA4A519784656CAEC3C4925"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryRecallWindupPolicy.java",
+        "Hash":  "AD93A5EDCAC56DC9A825588E44B5DA217B99784854C2F016F097DE2750AFD36D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryRemovalPolicy.java",
+        "Hash":  "6FAE6037EDCD03C1C3239C33A98A8331D4B06DCF288DBE315B0B00DA36F264F0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenarySummonWindupPolicy.java",
+        "Hash":  "F1F36237F371FA74D02715C33981B893E8820CF7A386D7AF6E46E3A8D02D7952"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryTargetSelectionPolicy.java",
+        "Hash":  "EDEF3493937567EDE90C147389C1FB7C2FEC5B91453AC74ACE5A78763B729121"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryTestConfigSnapshot.java",
+        "Hash":  "732F0719B0356E1A0EB3DB82D4151FD90C2028BC77B2927D4E2CC0DBD181A9B2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\MercenaryTestService.java",
+        "Hash":  "175802F03E80FBCBD3C0A1F7F2F901FF2B18BDAEB3164E649646C75CFD8C2644"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\NpcCoverFinder.java",
+        "Hash":  "FC97CF8F33BFCA3513C8628CD84272FDDC3252AE62117D6BC1AAB0932C498730"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\NpcCoverState.java",
+        "Hash":  "A7E159C3A1944CBBE8DA072C9CF366C13B7AFFCC6627FB4E642D4D9323A347C2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\NpcEventActionService.java",
+        "Hash":  "087696CBD1C0CDC8B791E96F9D95698B465E121F8B3631C1FFB1EE09875E0557"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\NpcFireState.java",
+        "Hash":  "34F323873884A6D8F17408243D7818A80008B80BCE3223310A8A16459371C40A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\NpcNavigationAdapter.java",
+        "Hash":  "77F00D9970FE15CE5759A03AB556668967754E76C04E9034D7FFE3343812E898"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\NpcRangedDamageService.java",
+        "Hash":  "4D977B6562A6BAC8CD56F1B88663951CCB32D69F7126BDFC9AE0A9B694FE5252"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\PersistentPoseSignalPolicy.java",
+        "Hash":  "9166AEE1DA4EABC06F034724C94BF26642FDEC869A89F29A9BA1E5983AC0F830"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\PolicyContentCache.java",
+        "Hash":  "2F69B7F5184F2C2400B0D85A228B15C5B9A7D8CC139C4ACBB30998682AD60683"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ReactiveCombatGrantRegistry.java",
+        "Hash":  "607CBC4CC28BC94C3514B698C8A3D45A09F9AE386EDC0191EA53C4D917CA5661"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ReloadCoverController.java",
+        "Hash":  "39F01129252B7C835F5CAD508DFACEB6A03E72EFC3993489805924FD8968879F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ReloadCoverPolicy.java",
+        "Hash":  "D197E34E82E32F5A5B1E3B4E87EC4ED4BDB4E9ACCB14FC3557354BD6600FEF6F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\RuntimePoseBindings.java",
+        "Hash":  "82CD43FDBF4DC9551F5AD5654DDC84554F4B66C402C8DA34E707371677C4E4CC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\RuntimePoseCache.java",
+        "Hash":  "C7A9665E48C6C3E06879342C0C9A025DCC810BCE0C833446A00D21F963D7382C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\SameFactionReactiveCombatPolicy.java",
+        "Hash":  "B37510FBCED77755E6212B7615B5E756565F4A97CBCFBA7A0118BA0E015F531C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\SavedDataStorageAccess.java",
+        "Hash":  "0A73D4024371032053C89186094A68B2EC59B2C5DB1B83A16016A601D35CB2C8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ServerAiFeatureFields.java",
+        "Hash":  "13AEDB7CFB7015586518A82584944C3C50E3B9342DB97C4F52552361C2AE2BB8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ServerAiPolicy.java",
+        "Hash":  "BA0BB0B5D46813804D7C8720D83D09ADB4ADCFD560270208E432CD6A8B2BE33C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\ServerAiSettings.java",
+        "Hash":  "1A42A3A7E2070AABD1F891954F0900B1AA98539563756F2C01B45F5C783494B5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\SuppressionFirePolicy.java",
+        "Hash":  "6712FA2F3675B1C3EFA53B8E4DE5AAED9A973A5D42A945AE0052DFA187FCCD01"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TacticalAllyPolicy.java",
+        "Hash":  "BAD481AC6A418D343658084B215D8D7120F8E94EC1FEA969D29BAAA49172C04A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TacticalRepositionPolicy.java",
+        "Hash":  "28F6DCC6BD507F081E6209A7AC1D0D254ECDB11E1CD82D754D8F4AE3257FAFF2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczCustomDamageBullet.java",
+        "Hash":  "24C622E17DF4E13AF96A02C4E3F86AA618FE2E1552D881C89A153C0F372440AB"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczEventCompatBootstrap.java",
+        "Hash":  "CCBF9619E27F49D1CD68AF6C2ED055E3704B82C130C5508023784521CA9FF7C8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczEventCompat_1_1_8.java",
+        "Hash":  "26A143416D31DDC6900D089F13E8CF94D168ADB2947D476EF9F22B057C06E336"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireBridge.java",
+        "Hash":  "9708B5D1F7B6E8DC3E1243D3E0E7E4169C30F286F5D7878702556A42071F023C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireCloneNbtCodec.java",
+        "Hash":  "4059022955317C99BFF36E7E3386BD6AD5992C13C18D5113F257D4967D24FC80"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireConfig.java",
+        "Hash":  "64BC90B9C93178523F3968CF4C8FE1104611C891BDBBB8A5841629CCF413A98E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireConfigNetworkService.java",
+        "Hash":  "C1A6BA4289478142F91725BA31849D06E3DE19A4EEE54E921134E8BA70D2E7DE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireEasyBuilder.java",
+        "Hash":  "3D1B728B560FCB81608CF6714DA38B59155055A6C558FBFABC1034C9B3FC7166"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireEventRegistrar.java",
+        "Hash":  "3A3159625158BF5A9D6B2B397AF72BC0AEF8B01B393A33CF4DFF9C8BE7C8758A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireItems.java",
+        "Hash":  "1678874B38D1DAFF86C4C0FC7191C55B07A351B556E3C5601643CEF4E314A386"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireMod.java",
+        "Hash":  "6CD0491FEFAFE2560CB7E0672B0FAFDEC9E9067AD0256C9BDE94B5BDBB6990F1"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireNetwork.java",
+        "Hash":  "5BCE1BD127DC4033F38035CFAEB4CD29F55CFA8BD4E63FD097251664411C0B2B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFirePersistentData.java",
+        "Hash":  "74EBCACE90F0154DC0BC3EEB564653E24FFC92BFAF51EDAB1A1D82721238E068"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFirePolicyCodec.java",
+        "Hash":  "E535586A68C5007C45F495EC9BC6363502F9C193210A6B2C504CB985B81CD6F6"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFirePolicySnapshot.java",
+        "Hash":  "4A273F38276AE03867F13AE0C3BFDFD26297F9016D7AFC039933BCD21003715F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFirePolicyStore.java",
+        "Hash":  "91A92514C18D0A458030B9F1C5C9CC31DB84017D38A22F48BCC068B46CFEF9C4"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFirePoolNbtCodec.java",
+        "Hash":  "4B786ED57D108D69C9A8CF4F93478B9021F3DDCD924927EE9C62DA053DE3FDDA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireProfileCodec.java",
+        "Hash":  "71E2FC27527684C276423A6702AAC7BB8FBCA81A8C8F0740AAE6B60F27EE347B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireRolePreset.java",
+        "Hash":  "3A0C34F22C4E43C561D42C39D31AF610588354B83954DC6131D79571E337A04D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireTargetJsonStorage.java",
+        "Hash":  "4DEE2C1BC91EE0529C714B4A70424A1BB7A17AD899128C5F9E15459EBF1AE442"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireText.java",
+        "Hash":  "943403556A9EA4F4C4612A27198FB48A02744DE7BB4DF7DF45376E8E806E5BAE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcPoseBindingSet.java",
+        "Hash":  "0472DD9310159231F03BD42CB4B1F7F63E609EAAFBB7D69370A0585B917F7712"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcPoseDefinition.java",
+        "Hash":  "369F92301C091AFFB54FD426103554C129B0373DF8DCEA8F201065C9956619DA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcPoseNetworkService.java",
+        "Hash":  "1B833FE6E4DFF6A18BC06A7F470A58AC31BA60DC2B400841FDA211E70BA5BBE2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TaczNpcPoseStorage.java",
+        "Hash":  "518C4ABD0B9CC8370778B12F346C32C9C39C003A8E34B7476EDAF8E23418584B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TargetAcquisitionRulePolicy.java",
+        "Hash":  "B8F26504CF88854C9759853534B52C2EDBC17F602019E0853F5C7EA808F273DE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\TargetSearchSelection.java",
+        "Hash":  "3C177C13780BF637ACE2527AB43E9D49FC803C86B9E887470BFA29501E985B74"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\VerticalMeleeRangedEscapePolicy.java",
+        "Hash":  "4D1091B745A646D40BAF2BA4E1F7801FD72D30BCA206759B373A6BB1463A7946"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\ArmorCategoryLayout.java",
+        "Hash":  "45BECD50F74D3D955217232EAD6430E9F4BE93489B6813D1A1419AC1F91D7761"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapEditorScreen.java",
+        "Hash":  "C06EF55584871E006FD184CE5F898A904E5ED495E1790D7BC403661FEB0468FD"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapKeypadModel.java",
+        "Hash":  "47A64414939A9580EA35C040E2993683F7E8C4E5ADE0624FA2C8C69E8904E06D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapManagerScreen.java",
+        "Hash":  "08E061D5614FDEA9FB8A86F473A31681A09F9FD1E3DE691CD1C7049AAAB35EA3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapMarkerRenderer.java",
+        "Hash":  "5F035C3A8667ED9144105C554D1582CACF2220FEE2FEBACAF0B445997E15A736"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapPasswordEditorState.java",
+        "Hash":  "931C002D2E3E2492C106D90ABC13794CE892B9CDA631E99C648CD1D0BE5001FF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapPasswordScreen.java",
+        "Hash":  "6CA4BA203298B0075D4157E7F58D9F271B6060DF5A9CE31FB744559CE6362E51"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapProfileScreen.java",
+        "Hash":  "9A0C7C9385D3B784862D51BD7080D88B365FEFA901C837132E0FF93F47989AA0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\CombatConditionEditorDraft.java",
+        "Hash":  "55BE38A89B0750ED7BA52E7E544BB585A7C4C421A0E7F983ED59978E9C61C2F6"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\CombatTargetSelectorModel.java",
+        "Hash":  "5F2CD8018E77D3706004F0CF35ECE88A8AE24623FE04CB29ABC55F87A2F06374"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\CustomNpcPreviewSafety.java",
+        "Hash":  "39DE18307F27D289FBEC062A6A045DC2E3A4BA20A92A8B476B0E4894A6992331"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\CustomNpcRenderProxyResolver.java",
+        "Hash":  "579DC64A50C3A27B1AF38CFD65903635FC64FBFFC543D9FBFA1C108CEF7BFBAE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\DrmHoverTextBridge.java",
+        "Hash":  "3EADE3292F230B568B810F3B26F20A358E11E9193CC4948E2BA3001B2384FB9B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\DwGunMotionProfile.java",
+        "Hash":  "C109DF2BA4FCE7BF8FBF28D68A2D03253E75A212BDF362AC4A2EDC34DAC811E4"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\DwManagedGunAnimations.java",
+        "Hash":  "229639D01251522275941F6C1CB6FB36EABBB408C60D428C8325DBC4D8001002"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\EditorHelpController.java",
+        "Hash":  "1C6840C5E5B61E964E62AF0A2B3CC8FACE809F767968DE34EFC4A2C8B1D158E3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\EntityCloneLibraryScreen.java",
+        "Hash":  "BAD24CE5563321DDD6542DEB34FBB39BDBF7D005C6FA26A1DD1E1B4657FDCAFE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\LivingEntityWalkAnimationAccess.java",
+        "Hash":  "C2D7B005E7FE949115D3FEAE1A44F7E3B87CDF4F79E89803FB49841632557213"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\MappedCustomNpcPlayerModelPose.java",
+        "Hash":  "3D6517D7DA5A338115B58CAA3E42014A0497E0973D4E114540D4AE8C99C3A5D5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryHireConfirmScreen.java",
+        "Hash":  "DFEE445302188ED521879E065B11F13D14D1971000B50395D7EAAF7348A6E17E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryHudButtonPolicy.java",
+        "Hash":  "233CE0CBFF85F8D405EDA6C661385A6A8EA56304AFC797B1FFCC73C50BC5B90F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryHudInputPolicy.java",
+        "Hash":  "AA5257A736E0BA1F9ED47EF4BFF5591160F3330F9FECFFAF58489FDD85C58E08"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryHudOverlay.java",
+        "Hash":  "1CD8BB5EF858B19F329CE00D2FB80FC3FA9111AE6AB282F7A81DFB0E7A9D1076"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryHudTogglePolicy.java",
+        "Hash":  "B48D0FD1CF65BA15041359C5E7D13D5E72AEAACC4C5A1B1B840A4DC08FD2C274"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryNpcPreviewFactory.java",
+        "Hash":  "6B8ACC0C0A56715500FBE337BD8C5AD7C2F15FE5F64253C31B78866249AB7E90"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryTestConfigScreen.java",
+        "Hash":  "647ECA4EC601411EE5BA7B8F58D3EAB0767553A5170846491868B7F3904EF354"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryUiLayout.java",
+        "Hash":  "2F81AA195A900B1BDE95CB45EDD6C307125D845DC8C3EE91AD48E74611694A04"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\ModConfigRowLayout.java",
+        "Hash":  "5D5899E10448261E5316E2E7FD5958DF1552913178953777E0B6DF525CC2E575"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\ModelPartPositionAccess.java",
+        "Hash":  "D0E6B99808A36F776485ECCA7B815CA4402E2D345BAB174DB9B7B671E7188C7C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\ModelPartRotationAccess.java",
+        "Hash":  "F093D410F40A350B7F61CB0558C06B7EE6D2E2EC9E31EC7688CECF2CF7857BD3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\NpcAimPosePolicy.java",
+        "Hash":  "E6DA9A1C8B91B76F12B6D2591260AB0FBEC7FE39BB09F2E16A12594E12EA13EA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\NpcHumanoidPoseAdapter.java",
+        "Hash":  "2841D6A9081573F8D849D768400875F0C281710EB09559F42BA916EC51CBBA1F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\NpcMeleeAnimationBridge.java",
+        "Hash":  "07E2906BABF5D21BED7DBC154D9C1D45DC241765E3C1F58762381B07796A6FBA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\NpcMuzzleFlashClient.java",
+        "Hash":  "3DE206DFEB7BEE25D117E90A1C9F9199EAD5AA8CD631F06906DCF533D81F7406"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\NpcPlayerAnimatorBridge.java",
+        "Hash":  "9267387902BC305ED5731DEA2C67D56F00796223056E0BAED3832B566BFF1221"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\NpcPreviewRenderer.java",
+        "Hash":  "20CAE9C25AA523A796829DA12B5759C0609A1989A2303C6F0834EEEC7DC7EF62"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\NpcRenderRotationScope.java",
+        "Hash":  "A1C5035D07AA3749F5435A112DC9C23385D674B4B0C7BD10DBE962B3213934E4"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\NpcVehicleRenderParity.java",
+        "Hash":  "19C845A6E5F99B328790646EC16146CD74C191689C32921B0C3EE063BD32E3A6"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\NpcVisualMainHandScope.java",
+        "Hash":  "BDC5EBEEF8ABC8D5BF593ED2C27FD6207BC105E697C7821BF7F6A0067876CA8C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\PatrolRouteEditorModel.java",
+        "Hash":  "2912FB7212A817EE5F3C82B20A9F9EFF59FB8BCB070C9B88542108E302BDAA5E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\PatrolRouteEditorUi.java",
+        "Hash":  "B6F038DED12D5C369D814407021C301976B1CE85878841AFB7BB994E67FCA859"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\PlayerInventoryCatalog.java",
+        "Hash":  "8A2E44F52EDA0A0FBBB9919E5CD90F97EA1EAC2A749628130351788AE9FD32B3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\PlayerModelOverlayCopier.java",
+        "Hash":  "40B889287AB586C4D97311A9A0B0F033A019A2DA937CE650261F14D8ABA40A5E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\PointBlankHitShakeClient.java",
+        "Hash":  "203875485448BDA79F8BF4A1BD9B88D100D5F8E87B30C8F6BD3BF7B64DE3B761"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\PointBlankHitShakePolicy.java",
+        "Hash":  "E72F63831B77DFC4A3AE4A96B5A42A19056AE712F566E318C1B1B8D4B6E3BED3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\RolePresetGalleryLayout.java",
+        "Hash":  "7F9F228CA1300C4ADD76A9D34443C0B67E0EED48762310989F27D632FE3C9901"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\ServerAiClientState.java",
+        "Hash":  "D6EAB58C5284389B91437E4B8E0AB3673F6CC9061E8C8C47C98258E801CECED2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\ServerAiConfigPanel.java",
+        "Hash":  "AF012B466D8E88F8387EC883935DF6CDEE7C20350D7908BFD4EAD57741358517"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\ServerAiDrmConfigTab.java",
+        "Hash":  "5C909427E60B7C7779529A5CAEE1A0B1306F5B3F5B1824CD798E7248846C0DEA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\ServerAiEditorLock.java",
+        "Hash":  "82F238F104BEBB4D95B9EC10C6D2AE9A80D6A5C6E53A182FABD0810B4DB63DB9"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\SoundChoiceCatalog.java",
+        "Hash":  "9A1C4E5281F854A931D350897069F3BB26060FC39E323A2D42250B398EF2E570"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczDefaultMotionProvider.java",
+        "Hash":  "0270D2CCA73035AD25B1BF5ACACB6D2C16FD5DD52C9248686CB0BA0ED79CEEDE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcClientAnimation.java",
+        "Hash":  "2E2C41D14C4E8D0D8B724A9EAD27C6F56E266015ABEB6AB27A29CFE2E4AD7FEB"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireAiLayout.java",
+        "Hash":  "813A35C36C5019DCFB0C1E8C5D7FE84745644601934D8AA4D891BD8E7BD9BFC5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireClient.java",
+        "Hash":  "90C9F024EAB22927D5A7829B075ED9FFBE8330280C76E30C8A9C8F950C2E5F58"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireConfigScreen.java",
+        "Hash":  "23298CC859C1B31BF1DC3E1D58D78521566BD6DE250573E6F0D3249C9170E44B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireConfigTabPanel.java",
+        "Hash":  "FF1A647524652FAD7728C822D2BB98AA3A657E9597E726353421812FD6D9F496"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireConfigViewModel.java",
+        "Hash":  "C53F1517036364BBD46EC8858313A605BD0935C0BA95DF5A0A8D92648C83072C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireEasyBuilderScreen.java",
+        "Hash":  "8F6C00E813C92FA81CC4B3CCA639E3940A204B31ACBA11112F52D09E6A8C5D5B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireEditorFrameLayout.java",
+        "Hash":  "6E3FAF2B3B070EF59520C383E7800653188086C46AD309F4C2D49076458F7762"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireFlyoutMetrics.java",
+        "Hash":  "81E3DF98C066A698275475C62B3EE5D9A62102027DA95EFD47BCA16CCC0BC25F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireGuiScale.java",
+        "Hash":  "3E94EC1512023286067AEB3141010141DFEA5992A128290652EAB02E354F5D90"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireLoadFlyout.java",
+        "Hash":  "9D718992171F12716A81B751DF70E7FA50AF5B13BB58017323F05C51BB55BD85"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireModConfigScreen.java",
+        "Hash":  "C34455873B656414A67E4BB21E7BB9D229BB95DB9ACDAD6D9018CB2064CEB22C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireOverviewModel.java",
+        "Hash":  "2925A67595769F95875767CA6BA4BF1D4300A2067F11040514DD500F20874D89"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFirePoseGridLayout.java",
+        "Hash":  "AA6D2228E89025FF916ACCF2C71A659EB524A8A78FECC9193ACEE08474E6C622"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireSaveAsFlyout.java",
+        "Hash":  "6CC25775DF728B8C028BC4E26125997920AF15C0FDB1C8E7176C7A6C6449020E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireScreenInput.java",
+        "Hash":  "E8360A05E770DFC4F7B7BC0B1DAC690B59DA5EC2F5F2B401493DBCF3D3AB34C7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireSoundButton.java",
+        "Hash":  "614B4FA69B369D6E012EC37265F4B694DB1D202315729A9426A91396FAE73C26"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireTopbarLayout.java",
+        "Hash":  "A7CBE2E3A508765926DF34C47F0922740A178A366C90EA9EC530FF84ED418642"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireUiAtlasLayout.java",
+        "Hash":  "E6F102177275400E3E018EBF3B4E9DBD95081075336E1159F24E6EA50187E9CD"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireUiRenderStyle.java",
+        "Hash":  "5ED8E319B46096A7DCF1117A5C17C2700B00C1391BA68514218B69CC317A40DA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireUiSkinRenderer.java",
+        "Hash":  "5A21741BF23C93A68B9D8D0F257571B9B71C2B97D65DD17F331612F599976350"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireUiSounds.java",
+        "Hash":  "6BE0C3589739F4AF20520966BB646BEC909BB9F69AE56C866AB5C6AFFA123CAC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireUiTheme.java",
+        "Hash":  "8918E0FD10A788C1C92718B60F0B7503DF18C1B83DA4C151D87DC6C5A8160070"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireVisualLayout.java",
+        "Hash":  "D1BAEB3717B3319C1A57944B4736EACE359C8F7592957E3D02335CF32774ED08"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcPoseBuiltInPresets.java",
+        "Hash":  "409C65A7350CA94C78C5706FE640D648713DF7083586DB636844549A9B3E24A0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcPoseEditorScreen.java",
+        "Hash":  "8778589D1716B9F466E2A4C7194C5E5B6348D324AA321298D2E25BFFEFE09A58"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcPosePreviewDragPolicy.java",
+        "Hash":  "0865946A830AE23DFFCE471BE90CFE24DE96EC7A6A6F2462C2B5ABED94ED0EBF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcPosePreviewLayout.java",
+        "Hash":  "0A852EC2AAD1C1FB552204CF6363165F6BA9118EA7CF2C4AD459B4F2550B167C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcPoseValueSlider.java",
+        "Hash":  "81CF36209605271E1AABDA41C832C15068CE32248DF425F1A9D15ABFE8F494CE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\client\\WeightedPoolEditorModel.java",
+        "Hash":  "E0B1011F232A4C1208E64B2CBE30ECB2BC1E407586B0A38377E040A252241014"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\VanillaRuntimeAccess.java",
+        "Hash":  "7E9E3C855AFF2FD40BC66AEF95079267CDA03F49EC33B285EB9B04E2FEF18183"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankCompatBootstrap.java",
+        "Hash":  "14B04D14BB6CBA9E3A834B9CB4F5AD18DC9F884D0515C2D2F0FE9813ED390294"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankDamagePolicy.java",
+        "Hash":  "4529CAF90BCBD69F0E5A47E16942213EE45F52892620962E281F704B6E3929D8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankHitscanBatch.java",
+        "Hash":  "48AECF3952EE6EAD821B40AB9F1C9860D05113CF991B7D999DE7A1369A97775C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankHitscanRangePolicy.java",
+        "Hash":  "094D68FBED6E1013CE5106E2394E8BAFFEACFD013E2CF974E0A3E358260AAF56"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankInspectCache.java",
+        "Hash":  "637BC7C229EF8F1F2A658A0B22E2BAC232A9C80208F27455D9BF19D8D92C1C9C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankKnockbackController.java",
+        "Hash":  "0C69FE6DCD7A09AE9DA106F1D38B7340E7B89A3C32FF0469BBB5F8534B5FEDDB"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankKnockbackIntervalPolicy.java",
+        "Hash":  "DE410F1376CD4AB5C67DD7F1D54C592F7D8B705E959EBFABA5C454C2C4977187"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankManagedGunAdapter_1_11_1.java",
+        "Hash":  "2AB5C060A273557A248E093DB41F10D7D9DD7590936850FA24AA341C9FE1A8C0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankManagedGunAdapter_2_1_0.java",
+        "Hash":  "90FC001CF1DC2563A959860F335BC6D4932C6202D12FC638D01570120F3B46DD"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankPelletPolicy.java",
+        "Hash":  "43FE47B84F263119AD9A1AD426305BB9DFB9CCB04AF041654F239873BF9320F8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankPerformanceMonitor.java",
+        "Hash":  "213DEAF233FBEB053A369C36A97C2DE99F1490DD16FF705991417FF99E735443"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\client\\PointBlankClientPerformanceMonitor.java",
+        "Hash":  "D57AE417CAE3D8A0159C308288195FA170E03E16DE6A7AF7A79DC665B5633CED"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\client\\PointBlankNpcGunRenderContext.java",
+        "Hash":  "EC3612393209754EE20D5818655C84FC138150A76FBB353A94E3B0E6FB84BC8C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\mixin\\PointBlankMixinPlugin.java",
+        "Hash":  "97B30679F730D4D5E26F3216D357D75535CC01E7BD8D1786AE555D0CB74A8260"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\mixin\\PointBlankSoundFeatureMixin.java",
+        "Hash":  "E4D996816FC4DA77239AF4DA5DFEAFAB3285DCDEF8315CAE76CA76F341EC991F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\mixin\\client\\PointBlankGunItemRendererMixin.java",
+        "Hash":  "C521A7E51834CDC1CA7A3C8D1A6BC3427897F632590D137AA19CFD7B8DEAAAB4"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\mixin\\client\\PointBlankItemInHandRenderScopeMixin.java",
+        "Hash":  "3AAD049275B24BF1934954A6E67FDC30075F364A05CBA533CFAAC049AAC1B7F8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\SuperbGunInfo.java",
+        "Hash":  "BFF9561F33AB1E18A7AC6B5E061413F0D59A61C434D9DA83DCC4522704B52E56"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\SuperbVehicleCrewAction.java",
+        "Hash":  "7F8EF56CB32D3F5BE0698DDB85F2C31A66C57C1228B597B38ABED5EF3DE3BD6B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\SuperbVehicleRecognition.java",
+        "Hash":  "F1107CDD13F708E1407CCAA0289FAC54CC99D21B821B585628D01978E0D2D9DA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\SuperbWarfareAbiProbe.java",
+        "Hash":  "6306A7645BDAD77E2E9422C5176177F8B5775CB1075FA504801C6813C5FF3F9C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\SuperbWarfareApi.java",
+        "Hash":  "3DA1690594C71B36A3C31A0595A3FA4089D55BDC72AFD209275921486EAA7282"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\SuperbWarfareApi_0_8_9.java",
+        "Hash":  "CDF0F7BFBF4239287C924FDA366645023805FAE3F4D0A2D9DACD1F0C8DF663F7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\SuperbWarfareCompatBootstrap.java",
+        "Hash":  "4550DB154FA349FAD99F00501770FDB7686295FF9AD5BCEA51BAEB0452EABC29"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\SuperbWarfareMixinStatus.java",
+        "Hash":  "E3514A4AFCF1606BE6DB12D2224CDA3D2F0ACA6C4C1E5DBD14AD921DAD6D9B12"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\client\\SuperbNpcGunRenderContext.java",
+        "Hash":  "513BB8B66CA643E806F174F6987D3B6B7FFB8AC582EEF2974D0B525A076EDE69"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\client\\SuperbVehiclePassengerRenderGuard.java",
+        "Hash":  "F2E69B86C77EA86F8241194F48A3AD16C304DECAF1A1AA26ECE84BDBE3E23C03"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\mixin\\ManagedGunShootGoalMixin.java",
+        "Hash":  "C9B753629050E63A66C3541020A51B0967885E6A41A56380AE037B1E3044B9D9"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\mixin\\ManagedGunVirtualAmmoMixin.java",
+        "Hash":  "435D89D6A5F646276C10FA5E0C7B585FD30FBD4E0C5018BA4AFB192810044629"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\mixin\\SuperbWarfareMixinPlugin.java",
+        "Hash":  "B8020C5996BA773EE5D4445673BA02AD87476C34B7751268514AF23C58B99A33"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\mixin\\client\\SuperbItemInHandRenderScopeMixin.java",
+        "Hash":  "402D7D224C7687C0C09D43B4FBD6F13E982742328D588962B9E2820A2EF5F8FC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\mixin\\client\\SuperbLocalPlayerMainHandMixin.java",
+        "Hash":  "4533032A0C2433775022C480310947640BBE5D71DCC0C355CCFB5CC8C558394D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\tacz\\TaczCompatBootstrap.java",
+        "Hash":  "C8EE458C7B28B89ED7C840CAC508EC92527D39E3FCAF80941AA7079BD8120A82"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\tacz\\TaczManagedGunAdapter_1_1_8.java",
+        "Hash":  "5C0F4D8E16920C507A094EC383A49065D869F887E8C0C33F938318770EABDD1A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\tacz\\client\\TaczClientCompatBootstrap.java",
+        "Hash":  "35D23F6791B373810973BFAD42A37A73600DBB05420B64075C94A32FFE770A51"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\compat\\tacz\\client\\TaczClientMuzzleFlashBridge.java",
+        "Hash":  "287A45668AC430A4C280B78EB9B3CA6DE353B073E3FB6D7E3CB60E3239591862"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\item\\BoobyTrapCoreItem.java",
+        "Hash":  "6789460432BE10C889A04DD6987B8BA90DC943108E56534FA38A7A2BF4039767"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\item\\MercenaryTestCoreItem.java",
+        "Hash":  "4B4323E42EBFB51FDD2876D4EAA420CA5227F5326B88C704CCC87DDF103DC0CF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\item\\TaczNpcFireConfiguratorItem.java",
+        "Hash":  "36720E7B90F0744DC98AB3DEA1BEB4515994642941AFEFC2C93300258CA7D091"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\item\\TaczNpcPoseCoreItem.java",
+        "Hash":  "AA86869C3FDFD3AAD2A4468897EC065E9F0A2A820012F633F0EED3A2F3431CAB"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\CustomNpcDamageGuardMixin.java",
+        "Hash":  "27158F6A2DC91A4D914584852BE6D970E63B4CECD6563CE133A97A26B84C9071"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\CustomNpcDisplayModelMixin.java",
+        "Hash":  "DFB3FF8D8243F3CF86A059DA2A25BB690692ABFA72BEC75E7647BDD8C868D4AA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\CustomNpcMainHandTraceMixin.java",
+        "Hash":  "E0565D6A712630BCAA49C31F09713E801053A958116D89CA01E85E83B6B1D925"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\CustomNpcManagedMeleeMixin.java",
+        "Hash":  "B3C735A08A88750617B57FAC54342521047E30F9A938F1E4CF2B313046265401"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\CustomNpcMovingPathAiMixin.java",
+        "Hash":  "219E06D62709D548290B1D556623C63A322A51429F8342DD0B58F3FC2D115D5D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\CustomNpcNativeMeleeMixin.java",
+        "Hash":  "B7563BAF660D397EA66871D712EDAD9E6A5072D7E6B6A3A8BAFD7E1DD3AE3795"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\CustomNpcRangedAttackMixin.java",
+        "Hash":  "A1467C2224DD049EF04805C51FB879B021485CF7EE62265D6228006CD9790E70"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\CustomNpcReturnAiMixin.java",
+        "Hash":  "B5E3977E9AE23D36433DCE597D07A56C3CB8D8C7D8D7A657957AA095C0499E6A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\CustomNpcTaczFireNbtMixin.java",
+        "Hash":  "FF2FEE757501D29DEE7034CAF1C687DF27BDEC7BA4E6790BB42E25500E2A9AB3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\CustomNpcVanillaAiGoalMixin.java",
+        "Hash":  "6A8D755A695092E9183A8FECEC91E284BB7FF3BB159F01F224707E260B771E6C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\CustomNpcWanderAiMixin.java",
+        "Hash":  "74DC56F0D551272FF8302612D0AAAAC86220B784331BC6A9D93B7B36DC872ACD"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\DochiWarfareMixinPlugin.java",
+        "Hash":  "A7A49F41C1C7A7963D2AC4D390C0D8999E6F03945686929E4DE48CCF96EE7BD5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\LivingEntityMainHandSyncMixin.java",
+        "Hash":  "50A574D5D94C95EE3945C8CD47F751A0A1A4B69612FDC2A928995F5408D15D94"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\LivingTargetIndexLifecycleMixin.java",
+        "Hash":  "881FA1AF04846B5D22DD8716C8848C570151691393413E6B6C379D2F08C930E0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\PillagersGunAmmoCompatMixin.java",
+        "Hash":  "BBA76F6463891D0906309F7432A9BDC9E06C6B4968E0827C48BA0000151C9441"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\TaczKineticBulletDamageMixin.java",
+        "Hash":  "27982A618C9647FD8F3A655B3DC6B383FAEBEA0F602EDA7A7794F2353F7F76EF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\CustomNpcInteractionPassMixin.java",
+        "Hash":  "98B6E08F509D2D7234A96DFAEB4D79E037B7F2E8D512B0D01E8F448A62C9E4BA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\CustomNpcMappedPlayerModelMixin.java",
+        "Hash":  "A84B1CE1FF56D6D1BCBEB8B77FEAFF55B9296911220350777580788D935D2FED"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\EntityShotEventMixin.java",
+        "Hash":  "2515CAEA942C1CE398CBB6344F49720CF8EAF31F877595F67E1A0617CF137C68"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\GameRendererPointBlankHitShakeMixin.java",
+        "Hash":  "25F3802F09F2838C269C594D9B959475C808E3849590876EDE799107CCA4FB0F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\ItemInHandLayerMuzzleFlashMixin.java",
+        "Hash":  "96898227C5AFA34ACD53CEB992DBE0EE010DFD3770CBC80E6534A6D66612022D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\LivingEntityPointBlankHitShakeMixin.java",
+        "Hash":  "57B35B4E45118DF1E007FDD062D05A09908136ABBE9D5599E299C2424A404396"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\LivingEntityRendererNpcPoseMixin.java",
+        "Hash":  "5E049A6D24B80A491A0911EBC0D9F169663C2EF1F205D561710AA8D614EBB5FF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\ModelClassicPlayerMixin.java",
+        "Hash":  "F57B8929ABFE35B012BE7351AF5362C27512B66EA9971E99F9C009A49A87AA38"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\MuzzleFlashRenderScopeMixin.java",
+        "Hash":  "DD4763410FDCE452D849DDD3E3F9050126C5346B66017B4FC767BB76CE429FEB"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\PlayerPointBlankHitShakeMixin.java",
+        "Hash":  "6A08A30B6388A36C497259DA058262C626F177B806798D6AF223E614D23BEE68"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\RenderCustomNpcAccessor.java",
+        "Hash":  "445A8630FE38F17CF6AE8F18EB72275AEB1FA428D7F623499C7A41E2B2FA2CF7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\RenderCustomNpcVehicleOffsetMixin.java",
+        "Hash":  "7ABBE17D0510C8A0F7881D90B3518726654061C325241D8DA5A397FD6A006C91"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\mixin\\client\\TaczPlayerAnimatorAssetManagerAccessor.java",
+        "Hash":  "7C3E5D8F6189F6BA0D7E652CE006D87FEEB7A96D2E29403F0E9E2B3F9FE8E6F3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\network\\BoobyTrapPackets.java",
+        "Hash":  "FB3BAF5D391D09C9D6CEECD67BE21EFAC2730FD7D83F5521FA8E5D194F7BEB9D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\network\\EntityClonePackets.java",
+        "Hash":  "4E4234FF77A711BCDF48D3DA66C88E01E9596FA314C497C2C1451D6C64FCD1E8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\network\\MercenaryTestPackets.java",
+        "Hash":  "16578AA2B3EF62E56998932B54B30A496414A04F6029E02DB36409AD3335F2F2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\network\\ServerAiPackets.java",
+        "Hash":  "F1567C222EF1B77F57A13375CC7EB78B72D21A52E2364FEA2190F8E6B145D03E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\network\\TaczNpcFireCombatPackets.java",
+        "Hash":  "602AAA0B98DB45610F632F479F4883DDF981E5C23730F211522DED18D28A54A5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\network\\TaczNpcFireConfigPackets.java",
+        "Hash":  "1F560F3391AA344DE6B873EF56B9FC8582247125F5A29AC6D78CC4C5667E9B0A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\network\\TaczNpcFireFxPackets.java",
+        "Hash":  "83F138764B575EECE93DCE9EE808C95B4582598C90970907BA2B761A83FFA3C9"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\network\\TaczNpcFireNetworkClientBridge.java",
+        "Hash":  "5CE104550D24C77E75A7EBA25BF3B0B671EF6E6FAFC21A6A6391E028900B5654"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\network\\TaczNpcFirePacketRegistrar.java",
+        "Hash":  "98F451F9CC204EFC241AE821AB8D3631951682E8B2000C092B75F408A9321120"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\network\\TaczNpcFireProfilePackets.java",
+        "Hash":  "0D0DBB8FD355ABF6B6C6A9CC83B8E44A2E5D6DD6351B55B9D8D10CDA4113D948"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\network\\TaczNpcPosePackets.java",
+        "Hash":  "C2D561504459969E082A972E7B2F4C529433EF43134A64F90E9440167FC244F9"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunAdapter.java",
+        "Hash":  "3ACFC4C4560ECA7A157D6903A4B5DFEC89A1A942EC63911B36B5E5A7E09E5A07"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunAdapters.java",
+        "Hash":  "E942D46EAEFED5C1E2BB3900DCF6BF4B0017F8F3419DF69E01F47B7372244C46"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunAmmoPolicy.java",
+        "Hash":  "9B4FA98B37B6B92DFD42E14375266BE7B62C477DEED6811217389AE4A9A99DD5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunDamageContext.java",
+        "Hash":  "3BDBEBA08587B97BBE6FCCD9140887F93CE049A7B1D75F05E3252442625ADCEF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunInfo.java",
+        "Hash":  "D161E526D5890C5FCFD8766394A92B07E917A8F9247CFBB2DD72B9001D4CB33A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunObservationBus.java",
+        "Hash":  "8ABFE104D5A2BF1982FBF58342822B417125FAD859AADA7E23E92865873A91A3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunReloadKind.java",
+        "Hash":  "3FB8FBDDA80E100D80BF9A71AE4D418497800B467E733613E5D531219E097198"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunReloadRequest.java",
+        "Hash":  "DBE9216DDD2B75913D667174A4D8F79B1E1A668466BD6D0022CADE60B9FA499B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunReloadTiming.java",
+        "Hash":  "87994F093A126E6CA3126386E87BDD845ED695F887F281A332E8337E50750D2E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunShotRequest.java",
+        "Hash":  "CCB17F191EF081BA4A37486B10C114E638727DD5A3F18EF86D5032E6FEBB6961"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunShotResult.java",
+        "Hash":  "EA0B4DA19490CC0A74BF9BC2F5E617B476A18576E33ED0AA898B69B22A7C9439"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunTimingPolicy.java",
+        "Hash":  "8219F99EE0A45C13E9D690CB41106F983CB0E7A2854C5C3DCA53F8CE9484B875"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\DwAddonRegistry.java",
+        "Hash":  "A28D8C9B468A25D6DA53B56AAFF1383C262B98053BA9926E16675B5519D63D4F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\client\\DwAddonConfigScreen.java",
+        "Hash":  "48B557FBA70B4D3F262B48CB000C66571EBA53513FD70111F48176DA84B582A8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\client\\DwClientText.java",
+        "Hash":  "B0A132220A20971B007E3CD41E54765FC8E6479FD848DCF8165558120A01375B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\client\\DwCloneScreenConsumer.java",
+        "Hash":  "E425FA1EDFE9DE92C388E823F624D1A3E390951AF25468453DE4DD306B93DAC4"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\client\\DwConfigPanel.java",
+        "Hash":  "C216C0B5DDECED1F00EF2EF5A6698D2A9D4F75784040126CEACBB3CE2CB16206"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\client\\DwDrmConfigTabs.java",
+        "Hash":  "1A3D78C97B582B3B7010ACAB3A45100B2CB3E200774B9C4DA30CB5A83724E5EC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\client\\DwEditorNavigation.java",
+        "Hash":  "052680A5EAD5613AA80A572336AFC66661AD3A27B143B060FAE56413532AADB7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\client\\DwEditorPendingReplies.java",
+        "Hash":  "2183E352921AC672504BB435D8C9DC1D02AF029DD3A974262A3B4C147B4683A8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\client\\DwEditorSaveTracker.java",
+        "Hash":  "03010F26F1A266954C6562589645E06AD81CCEAB0119F5D36F325C79EFEBA96B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\client\\DwEditorTopbar.java",
+        "Hash":  "5F44D3E7F627BCAEEC38BC5D512078A3BEE6FFFF4E370EA1936CEA5C8BD42E0C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\combat\\DwFactionApi.java",
+        "Hash":  "3EC6A44CE9B0E8D4BEB10C44BD171649CE43077AF4AB42EB8FE330A9EC646A3E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\combat\\FactionOption.java",
+        "Hash":  "E03D7ED110D0F023AEC67DE817E22A95D9E5A2F6EEB110DC6B8F1F64762303FC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\combat\\TargetEntityOption.java",
+        "Hash":  "4731F26896A0E963D2AAA35E9DAA5A54B31C4D7DD2FCDE2856169B842FAF365B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\runtime\\DwCombatEffects.java",
+        "Hash":  "D27AC6498CD644B6193CE450BE06D2A08E0FC806D8D883792F478BE1602571D9"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\runtime\\DwEntityRuntimeAccess.java",
+        "Hash":  "BA5FC3BC3C6F480C58691F6635FF8A137F595B2B26EF1C9363FE59B4FEA9090E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\storage\\DwAddonStorage.java",
+        "Hash":  "9498CC4391CE49A2F9C4D63B8AD178606041770EF1054C1DFA50F68538C8570D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\vehicle\\DwVehicleProvider.java",
+        "Hash":  "E74881B2FAFD0B3AFEC0A9DEB210F144C3C6E007315B2BD0AC2F9BB3D8DC2BAF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\java\\net\\dochi\\warfare\\api\\vehicle\\DwVehicleServices.java",
+        "Hash":  "D90E76B737D77B97D273D6956B98B477C13ECD3F5A03E469E95F9D2BC63F660D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\dochi_warfare.mixins.json",
+        "Hash":  "D85D6180E92C098B8CD5F10862ECF036E2C4F321FF536EA491B32D967736B7C2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\dochi_warfare.pointblank.mixins.json",
+        "Hash":  "4907D9CA3BA59D104A29A232897697CCFFB8CF17428C4821A22D39F61827C53B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\dochi_warfare.superbwarfare.mixins.json",
+        "Hash":  "D142E70494D51D89F3169AC87309FA02FAD7B17B06F874CE4B0454111EE0550C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\pack.mcmeta",
+        "Hash":  "1CF2BF6D74B993504B473227AB5AE0FBFCE8DA3AA9EFAD2CE41A37F4A3C1F68B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\sounds.json",
+        "Hash":  "E6053DF1F7F29D794D8FB87B2A5DFC19EF47832C31DD3E338D600A7B8869C61F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\lang\\en_us.json",
+        "Hash":  "2B4B5F27D6991715852701B7F7961AC51D9E5FAB81D27C3DEDB0067F3E2EB3D9"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\lang\\ja_jp.json",
+        "Hash":  "3668B93382FC5956238EE168FA1016FD1E692F98579A68E72EBD6E7EB9229FC0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\lang\\ko_kr.json",
+        "Hash":  "EE85E25B5F2E0100CF5E1433A1573D1232675813014C00B0F03097A8F331C8E3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\lang\\ru_ru.json",
+        "Hash":  "7A4EE0857600847AA03CDDB0CE0FDEC2C79B47DFA91C54754AA3A8A685BA2C35"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\lang\\zh_cn.json",
+        "Hash":  "AF89DE01147F13198B1B0E6E4E8434AF8DD62CA92170A811E90948C5E76EA206"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\models\\item\\booby_trap_core.json",
+        "Hash":  "0E10511BE4B54A2FC8EC2511DACC183CDE6504BB3AFFFA3C65E89479D622EF5A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\models\\item\\configurator_wand.json",
+        "Hash":  "848B16CD0BF25C2B455AA1658A8C0CC6F55EE40E497230BD25733C6E8731C2B7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\models\\item\\mercenary_test_core.json",
+        "Hash":  "642361F94E58B08A831F5CE033722B9C4BA549536764E8544C6944E87932FD7F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\models\\item\\pose_core.json",
+        "Hash":  "904F9CDEC23A2806D62A95641094F0971B36419A522ADF90E751C3C0A1ABCD8C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\shaders\\post\\preset_focus_blur.json",
+        "Hash":  "6BF8669C9A7882D254BDF58899EBF3310480FCA48DA90A3B3A258FD2A571652D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\sounds\\ui\\dw_button_click.ogg",
+        "Hash":  "9F19F70D4EFBF572ED043C746ACDE70407ACD2E7277BD8F4826403002636D2D1"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\sounds\\ui\\dw_category_open.ogg",
+        "Hash":  "0FFBE7F5AC01D9E35A5A6CD1E06828852980E061B5771A85B7AE9D56DCB2B560"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\sounds\\ui\\dw_opengui.ogg",
+        "Hash":  "78BE517A26FD10E003DD7E0A217CDB0C188237213780312799024A706735D881"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\textures\\gui\\dw_ui.png",
+        "Hash":  "C2C065028AB0884E97694F6197C6E7B8A88359E36B857E2B5691BF93DD3ED86A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\textures\\item\\booby_trap_core.png",
+        "Hash":  "CA33AF80F9A8A74B5B75DF873CDC9AAE4D97985499E83E5BB0A0567EFCC72018"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\textures\\item\\pose_core.png",
+        "Hash":  "875B5AFB404AB464A87EB6D2D80CA4958C4C62B06CCFD0B99266A134F24903F7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\textures\\item\\tacz_mercenary_core.png",
+        "Hash":  "B987C194EE935D199527E389DA8389D3E7920EBB0AA0BA19D910335325B488F9"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\assets\\dochi_warfare\\textures\\item\\tacz_npc_core.png",
+        "Hash":  "63A367AD68E936E6B449E1DFC7A1B4EE2E4BBB1BC4A48ABC75CA822410129043"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\META-INF\\MANIFEST.MF",
+        "Hash":  "156417186D9706D4B6F7833C0287BCDEB6898D181F690237E177940CAFBBFDFF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\main\\resources\\META-INF\\mods.toml",
+        "Hash":  "8D49477063E5A1707FEFF5E702C66BB9F9C4A309E91C21A16BB128B8D46173F4"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\AccessTransformRuntimeTool.java",
+        "Hash":  "A270C4E5A68786E616DD77F116A48CF6B69D7B43DCEC6F631052B46F963050E2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\AccuracyRampPolicyTest.java",
+        "Hash":  "8C28B74F4200EE2A6BF69FB1FD193FC44A995B0FACCA143797BDC6EBEC41C067"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\AiComputeHotPathTest.java",
+        "Hash":  "4A1E7E188C4BBB19323AC7A54D6B05A117123C987BE9FFC5704736D635570EB6"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\AiSeparationTest.java",
+        "Hash":  "DE49017332FB4F03B5A78545AF8762D4A250C05040E0BE00352CA1D106603AAF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\AmmoExhaustionDecisionTest.java",
+        "Hash":  "E1F5B5294F25EFA1CF3E8C3E2CD467CE2BFEEC880D36DB119DF4C40197B9F8A0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\AmmoExhaustionFallbackLatchTest.java",
+        "Hash":  "28FD88F2306216AF7B033BDC85DF9A33AEC5BE918EE30B52B69FDB742FF0338D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\AmmoExhaustionRecoveryPolicyTest.java",
+        "Hash":  "F45F856B61DD7A36C4FA1A2251392EA781118AFA1E1171B3E5F68548704AAC70"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\AmmoRespawnStockPolicyTest.java",
+        "Hash":  "962B4E8CFC63FA61397641211416A3C40B9CFD244E314CEF3B53574BCA5C4F79"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\BoobyTrapAuthCleanupTest.java",
+        "Hash":  "08949DA863E37DFF6E0AEBD7F936DF215BE4332B2B0B2678F65D2507137A0352"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\BoobyTrapMarkerSnapshotTest.java",
+        "Hash":  "D366F7B38DA65D49EB7F9D2ABFA7BCA8F9CE3B8A8F7871FD45D838FB8E86883A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\BoobyTrapMarkerSpatialIndexTest.java",
+        "Hash":  "D7B33826AD9E1F810DD46AF111F4FFEA90CC1D21C6EBC9A0C9DAC88C2ECF2ADC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\BoobyTrapPasswordTest.java",
+        "Hash":  "15C39CDA0DDCF0F7628933B884983B7469B93DB63AB1A1CDBE6F55F164133AFC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\BoobyTrapProfileCodecTest.java",
+        "Hash":  "AD89E06D78FB87C90F206B1270F5B1C67548727A256AFEA916AF9565AA6E55F6"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\BoobyTrapSavedDataIndexTest.java",
+        "Hash":  "C04DCD2423A4A5069FC0AC6383017B38FCC7DF23E0306C7553E07D932FF0B0AA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\BoobyTrapTypePolicyTest.java",
+        "Hash":  "4F6BE5595686B4F9619263F8073CC83D63690E2EB5C1844B6EED497D5AF59CCE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\BurstFireTimingPolicyTest.java",
+        "Hash":  "528E27DE3955B72CA0D5D756961063D71C58E7753187FD9F950F88F5ADE235A7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CombatStopPolicyTest.java",
+        "Hash":  "AD8366493013C2D5DAE1F3C3861FE4FF613F844CFC3AA288EFE3B34749C7723C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CombatTargetMemoryTest.java",
+        "Hash":  "ACD77DBBF4B80010CF47FE746FD52383F1EF45B44430C5C01D92E48A4AFB442E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CombatTargetPolicyTest.java",
+        "Hash":  "00E3146BAA4194DB5264146A8AE57DCBB7C5ABFEA9DAD915C35633132CD85138"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CombatTargetRetentionPolicyTest.java",
+        "Hash":  "29BCE84C5D19FBAE3AFC7798BFF0A20F7AAFB403560AD9D181CD61958E40965E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\ConfigSaveRuntimePolicyTest.java",
+        "Hash":  "7E2BB0A8442475EA9094D60C6B4A2513F99356073DE4AE2FE699761F7BE9248C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CoverCombatStatePolicyTest.java",
+        "Hash":  "C332AA8834E8F1B320C028654C5FAB0E4A8AF6B154747CF39E808A90B9315C13"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CoverMovementSpeedPolicyTest.java",
+        "Hash":  "BC0F0D14A9CA4C5EFF032096AD5848D0B2213376FD6711B3D67E3F98A26348E0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CoverSelectionPolicyTest.java",
+        "Hash":  "6E73F672A637F8346712AA065271C177FFE206DDDDB6A23D112E0B07704C9024"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CoverTargetMemoryPolicyTest.java",
+        "Hash":  "8C6A516BD3A05D5F59808DFEA798E1101B769F2AD1B6D6EE7FC36AEFF0B8718B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CoverTriggerPolicyTest.java",
+        "Hash":  "EE54CAC98BD8FF96DF32EC538210D2BB1297E7FF1681D10F26A9BB0C3FCC8D6E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CustomNpcGoalOwnerResolverTest.java",
+        "Hash":  "4C28C7500966203C16D1FCDB24C35D962D50B7EBE2E91327C63CB1833C355009"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CustomNpcInteractionItemPolicyTest.java",
+        "Hash":  "7256AD0EB7E823C60D3057563C9277C3C6DA088D5530917DC8643CEAE951835A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CustomNpcPlayerModelProfileTest.java",
+        "Hash":  "2B891D7D65F2FD1140AED27D95675FA3558748D6C00765FBD06466DC6C37302F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CustomNpcSkinResourceTest.java",
+        "Hash":  "B3A04F2E646AFCF565DD2AC46BDDA1376B006CE22E71FB434FD25B6439B0B2F3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\CustomNpcTemplateRestorePolicyTest.java",
+        "Hash":  "5EDEF0903875FB78399D3359771D903870681892EC89C4F6CFC843EAD2BB98A2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\DochiWarfareConfigPathsTest.java",
+        "Hash":  "B780FAA5F66BE5E9A6F941B9214E061F27E532894AC74B7CC89D396EE0E0570A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\EntityCloneCodecTest.java",
+        "Hash":  "B6799A899BD8791264478A49C659ABA47E4566F877C5511D06A633D2C829C488"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\FactionDefenseAssistPolicyTest.java",
+        "Hash":  "9A81696746EBB028E68A87EE708AD7744B962C20F50AEEFEDC2F5A3C4F57C8B3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\FireRateModePolicyTest.java",
+        "Hash":  "D58DCDE9522D49DBFB7D437FBA7270F2F27FBDAF0B1F9659F075D0893A149B75"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\GrenadeCoverPolicyTest.java",
+        "Hash":  "8C44B749E35A7F0E830B15B34FE60A34C0A7A6D0FC340889DA56670C86D077CB"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\GunshotHearingPolicyTest.java",
+        "Hash":  "ED5FC340E44E8449E638706B8FDCA65839104729F8E1F58C13DD71A26A8C3E63"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\HearingReactionPolicyTest.java",
+        "Hash":  "6AF16E7BE5A480F7C06BD004AEF7A8EBDEBAD871AD4EB8A047E862972EB3C4CF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\IdentitySnapshotBucketTest.java",
+        "Hash":  "F7CB7D8C6D82A2F6717BA0BEB04691ABB01DFAA4E242703749935366BFD2302B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\IdleMovementHeadingPolicyTest.java",
+        "Hash":  "47B4976782C54BFFFA47D4D0967807CF087638CE8B4EBA3FC972CCC856B8AADE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\IdleNavigationProgressPolicyTest.java",
+        "Hash":  "ACEDF5E0F33F0CDA163E982C943826A7F4701416C80F23CA2A1C6A5F6FA93035"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\IdleNavigationRetryPolicyTest.java",
+        "Hash":  "40070DF03CDED686678193A4A7BF13D47313236EBD0A92FD1145EDD9C5AFC5C6"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\IdlePatrolGroundPolicyTest.java",
+        "Hash":  "868F0F710CAB9656B4E0951FD55DC71E3CD2C9AD0094F3D22475CC3C3F20F0B3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\IdlePatrolTargetPolicyTest.java",
+        "Hash":  "745735D02ADDB298E22C7D9017883935264FC79A9584A03CEB4A3CD5498C4F50"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\IdlePatrolWaitTimePolicyTest.java",
+        "Hash":  "84C63BB54D6A03840838BE8D082632C7A8F78C18B37ADA34ADC8904BA6A92D6D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\LivingTargetSpatialIndexTest.java",
+        "Hash":  "0DE69B110553E7161145ADC2B208F6E4BC8383066BD5A381AD7AFE3ED560E563"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\ManagedRetreatPolicyTest.java",
+        "Hash":  "B28E1B123D28DB94A466D4D2890C9B3188A08CC31D9647639FB798A2E0162C90"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\MeleeApproachNavigationPolicyTest.java",
+        "Hash":  "30DE7188570E7EE9B4F591254625CAE9619F418BA499CF6262563E1BF208A6EC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\MeleeAttributeModifierRuntimeMappingTest.java",
+        "Hash":  "ECF7EC0F0841182B3F97E11D3C6175E6006E4E41A2DC277777219CBCDB0F9C4E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\MeleeWeaponStackMatcherTest.java",
+        "Hash":  "803A12C2FFE5BCADABD437E6D236A377BA2D3C5DF540D4D65097D4AC790AEF90"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\MercenaryActiveTimePolicyTest.java",
+        "Hash":  "1EAB37696DF64EFDA61AE1EFDAD7165E890C10D7192BBDCB20F966327CBFE393"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\MercenaryAggressiveThreatPolicyTest.java",
+        "Hash":  "881145675301F02C7FBF564BBE4C5B013520052B94FB2DDD68237D0F87DDFCE0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\MercenaryBetrayalPolicyTest.java",
+        "Hash":  "CA96438A30D29983CB4BCA6D2A42B33CAE0279D93E1C6A699C9B90D8A9DA422D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\MercenaryFormationPolicyTest.java",
+        "Hash":  "E0D66B9D4CB2AA441551DF22076D9C79DA998ED80706E6B338C20022255EC55B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\MercenaryRecallWindupPolicyTest.java",
+        "Hash":  "3C1B7BFCE9C5F82FAADEDAA70B57A191D72AF05DAEFB4633D34247361E06B338"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\MercenaryRemovalPolicyTest.java",
+        "Hash":  "CC1EEC43765B35351312BEE7644A3F8DD9C0E0C87CDFE3115E13D3DD60542D21"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\MercenarySummonWindupPolicyTest.java",
+        "Hash":  "51C596C8B19634E285CEE1EDF8B41AECC4729D41D95437AF252EE4231DE950A5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\MercenaryTargetSelectionPolicyTest.java",
+        "Hash":  "2D33F14D22F7A5B8BA379E464B665A2A99C9587E6289F81D6A9688BC3AFF9BAE"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\NpcEventActionServiceParserTest.java",
+        "Hash":  "D46851AA1E73824FCB7DF9509159930F228C5D8FAEE58E948AF10659C7DCC911"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\NpcIdleMovementStateTest.java",
+        "Hash":  "B040ADB88B9A5FED402753E11CCC70A4822B37BCEF11C8F40797C855B26BFF71"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\NpcRuntimeOptimizationBenchmark.java",
+        "Hash":  "6F40C6BFA13AA86A7EFDC6F0543F2552BC944A1617DD9F67FB5F01A5AFECDC77"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\PersistentPoseSignalPolicyTest.java",
+        "Hash":  "CCA810A0CB3F582FA329CB55F3D114A9A230CABC0085CF35C6831E0EE245B73E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\PlayerCombatTargetRuntimeTest.java",
+        "Hash":  "14DAD6B0316827C28AF34A233F46F4DC5EF4A528CA97498F5C9ABEB8311B3A50"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\ReactiveCombatGrantRegistryTest.java",
+        "Hash":  "0F3FF457F41D304A805869D4A337B9C614E10B9D464D63B4DE94B962F28C4562"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\ReloadCoverPolicyTest.java",
+        "Hash":  "F440DCDF69FE3FDC3A68866342AF2E228D497705C53DA23549F286FF1D89F4D8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\ReloadCoverRuntimeMappingTest.java",
+        "Hash":  "8C87636C72126839D258AEFAA97DE80DAFE84CD0B758AE96C0EEE7DBB5A70F42"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\ReportedSmallFixPolicyTest.java",
+        "Hash":  "683009CF628A38B76CD2968D1AE572AAB104CDE728CAB142800540420165B91E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\ResourceJsonSyntaxTest.java",
+        "Hash":  "F2749E90748D870A565F67F67B344DC08F1EEEF678BBCE6CD20D6D925E48F7CD"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\RuntimePoseCacheTest.java",
+        "Hash":  "7337948B955337499A30DDBEB964D5E4A9BA80BDA0E1274DCEBCFA39CE7C0BC8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\SameFactionReactiveCombatPolicyTest.java",
+        "Hash":  "12BD7F3B980E6A47FDAA4DF9AD7011A91FE749FEFFA6449A1985B6498BC685E0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\SavedDataStorageAccessTest.java",
+        "Hash":  "10B1D84BC7EA98B5FCCA73415E569040E7DAC0A4948BA5CFD83B187ABEBAB5D7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\ServerAiHotPathContractTest.java",
+        "Hash":  "D1F78F9BB402D14095AAA6FD6FBA3425736B49D08C770DA38EEB70AF258BBFF0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\ServerAiPolicyTest.java",
+        "Hash":  "5DD138C7EACA4510B2D78610307E4E1252CF0377641FDFE3A028E8675AC2CC0A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\SkinPoolUrlSourceTest.java",
+        "Hash":  "660EBBC32F49E8361E5052BF8C7F8974AA071B51E7EDAC6F57BAE58EC9677786"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\SpatialIndexTestFixture.java",
+        "Hash":  "F8AE65BBFCE81D050BD2CC622AC59AB69F09F6C7E655D706B4AD55D4D7A925EC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\SuppressionFirePolicyTest.java",
+        "Hash":  "C66D3A4C59226C67C77560500FD983A0404240D74ABD3DC67D241EC96E202744"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TacticalAllyPolicyTest.java",
+        "Hash":  "20714B887380F7116DE860EB0EAE73717D96CD8DCBE7564C77ADE44D36425159"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TacticalRepositionPolicyTest.java",
+        "Hash":  "7F4249613DB24725AFC87A632425877F08EB17C02B6DA12DBA74125C331EBCAC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireEasyBuilderTest.java",
+        "Hash":  "E842944CAB2E6B49B8529B6BA64FC9ECBA4156A62594191701CEBB8F959664C5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TaczNpcFirePolicyCodecRoundTripTest.java",
+        "Hash":  "C0765B92DB746AC21968599731AD50C9BED0CEAABDAA9A3B7CDF9F61FC5EB1F6"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireRolePresetTest.java",
+        "Hash":  "3F4BF0D891FB2109C03527AA6FC2A7B33D7C2620728302C2056C0EC3B94FC611"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TaczNpcFireTextTranslationTest.java",
+        "Hash":  "137C9B9C7EE7C157218D6830D71982BB16DD5CF6A09AB5C904B25C50BAC01959"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TaczNpcPoseBindingCopyTest.java",
+        "Hash":  "5A3362145432A325FEB901594C7C2E658A59905C773E2BCF33E1F10036CCD714"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TaczNpcPoseBindingSetEditorTest.java",
+        "Hash":  "5713BC03E127BD06CF52D47BEAD1A9F7DFA9C920807500C172F0B68A7EF94324"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TaczNpcPoseBuiltInLibraryTest.java",
+        "Hash":  "24505584684F8483300BDF3FC23DCFB49ABC3DBC902BEC3E3FFBB4828A8A6638"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TaczNpcPoseDefinitionTest.java",
+        "Hash":  "05FF1D0613D16E95E5AAFD0EC2AA5B06977FC785ADC72235EC5F329364F2D495"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TaczNpcPoseStorageRuntimeTest.java",
+        "Hash":  "7D61EF30FF00CDED483D0B458757803095A47BB6E69FFB2AB44C9FE0466A111B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TargetAcquisitionRulePolicyTest.java",
+        "Hash":  "5ABE0838291B164D9FF5DEFB09DC0D16CE16A6C863462371051168229C0A1FDA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\TargetSearchSelectionTest.java",
+        "Hash":  "0C6547919E532849D0BC3A1804420535FACA758A1948DF1108E4B551EBE3E576"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\VerticalMeleeRangedEscapePolicyTest.java",
+        "Hash":  "B78461DAEE1DE3B921E53AE13F9A49E12A67DA07F12EF76FE94C00DE046A745C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\ArmorCategoryLayoutTest.java",
+        "Hash":  "6B5CF8BAD7B65CD727D0C2F1A44CE27013465327C1A648873B5CC0A2976D3070"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapEditorLayoutPolicyTest.java",
+        "Hash":  "D80A51995DFC18722931CA5A2926FDCFE21114743950866006C44FEA00C9E91D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapKeypadModelTest.java",
+        "Hash":  "D133B28B62D732E3223B19595E41FE1AC6C932CF2C1ADF06EF8BA88D408324A8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapManagerSelectionPolicyTest.java",
+        "Hash":  "54A535D6D2BF2CDBFE0A4D3310C808FE3D604F8B1AE9B9B523F2A731998374B3"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapMarkerRenderPolicyTest.java",
+        "Hash":  "8657C9875AEF6310B3045ACD25FA3B7A20EF084AE9937EAFB91F10555151F25B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapPasswordEditorStateTest.java",
+        "Hash":  "613FAB600FB3B9CB8CD19F330ABF006A67609284E268A6F1A82091FB56E0618A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\BoobyTrapPasswordFieldRuntimeTest.java",
+        "Hash":  "B2042BC7998B4E033BB7AB99A4836C5474048AADF5FFD9FF609CA7B4C5FD438A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\CombatConditionEditorDraftTest.java",
+        "Hash":  "7D9B844613885C5EBD0921FEFAAC356626C590641DDD9C1034112AC3DF69F4AC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\CombatTargetSelectorModelTest.java",
+        "Hash":  "6F729D38DC833E7E04625F7D686A2CC1C68C8DD734661B90482490E608C7E961"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\CustomNpcPreviewSafetyTest.java",
+        "Hash":  "384AF9535094090ADF193BC90982618D9E8C3D390F430BD1555742F5A0C8920D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\DwGunMotionProfileTest.java",
+        "Hash":  "028ECE483E6F2635691F15C3141A96288CC5E1E2C529830560CE1370F4E4A38E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\EntityCloneLibraryInputTest.java",
+        "Hash":  "AB7B60EBEBCDADDF11506D846C06486F7C392A618B70B2B91A9D883886421A4C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\MappedCustomNpcPlayerModelPoseTest.java",
+        "Hash":  "342E0D290CF9F0BD21C281B453A41610A9CAC2A4341C7513D227CEF42A9024C5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryHudButtonPolicyTest.java",
+        "Hash":  "233A59CB19B58B7F0F110980B27D4B80865E5FA19129DBDE62BA7A2DD8A70798"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryHudInputPolicyTest.java",
+        "Hash":  "09BF2A4740BAD81F0EB6929FED85E2EC0BD68613E694CF3A72B29FFE25AD9134"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryHudTogglePolicyTest.java",
+        "Hash":  "B5A743DE3306A24638B26A2A08E4996FB649F31A90CC44C8D218F15586B32C7D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\MercenaryUiLayoutTest.java",
+        "Hash":  "7E4D4690B6548A9914F34E39113963F82E29DAD9ED22992FE1420CA8F6CEB9F0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\ModConfigReadabilityTest.java",
+        "Hash":  "00FF67EF992A4FD72D85F1E2AA64F4A6017728CB85ADC5DE1C9EEE1898807D70"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\ModelPartRuntimeAccessTest.java",
+        "Hash":  "B9D2B2D5100015CE03E5E3B99CCBFAC2497ABE73A5A0FB318EAD761695A211AA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\NpcAimPosePolicyTest.java",
+        "Hash":  "1A41C8BDB5135414DDCE66FC46F61D7213F042110B86F19C1E15EE79CCD4AB31"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\NpcVehicleRenderParityTest.java",
+        "Hash":  "485621FFD61853CDA45AB8E03871BFF14E378554BB7BCDEBA596907C12BECBA9"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\PatrolRouteEditorModelTest.java",
+        "Hash":  "B3684DD63560ED1D7EF034D2445A55AA977DB3F59DB60A780DA9418037F14413"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\PointBlankHitShakePolicyTest.java",
+        "Hash":  "02D5549D1E218EFDF66FF011B7F6709893A07A76E184F2B616A6E01083EBB5F0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\RolePresetGalleryLayoutTest.java",
+        "Hash":  "F85C305545E47D890809965A7EA588CDF69C429D6F6685760D7234CB8CAE0102"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireAiLayoutTest.java",
+        "Hash":  "E686A019D127E35534AE38F406EE16CF0F9F6A95D7E2E9D5E22868C747DE90E5"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireConfigTabPanelTest.java",
+        "Hash":  "0EA844120B9728359C0B0DC804D6295AED6B01BCE3D6FDF8231F5198BD3476D4"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireConfigViewModelTest.java",
+        "Hash":  "668DB45F4F793CE147763C435846B3821E587CA329EC5A0B66C25D80406FE50F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireGuiScaleTest.java",
+        "Hash":  "299482BB15FFEC7FF6BB5E1D49C5D5D8AD16DE0D9061DE5C916500D89C18AB38"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireModConfigInputRoutingTest.java",
+        "Hash":  "5D6FCBE2DFF7AFD62C721A268F5BFA071DFC2BE610B39622B333C8B85225DC2C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFirePoseGridLayoutTest.java",
+        "Hash":  "4DC574ACF480C654073E6504631567BC0B1EB4DC541B384DC232E70B354485F2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireSaveAsFlyoutTest.java",
+        "Hash":  "A6E256F26314BEF30F4D98AC5987728E890942DA0A1A8CBE1102118B8EAAE598"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireTopbarLayoutTest.java",
+        "Hash":  "33FF937FEFBAA8C18B7C5FC61339DA1A31F91A7A227FA46CD26BC1DBFD63D6D2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireUiSkinLayoutTest.java",
+        "Hash":  "4870BDA91436808EDD9B48BEA78709BE339B48C06F31B3DAEDDC8C7BC072BE92"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireUiSoundRoutingTest.java",
+        "Hash":  "D84CB826E6128C8745D61BD0E4ABAA7C2A519050152E8385E52BD810AFAACE12"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireUiTextureConsumptionTest.java",
+        "Hash":  "FF8C85AA966C992C949967D8C27FB55C504B35CB3CF28F5D2AB2817674EDBAD8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcFireVisualLayoutTest.java",
+        "Hash":  "2BEDEC5E93046768FB2E333D398D5E10D8E9069D6A50C797CA65E8822591E218"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcPoseEditorRefreshPolicyTest.java",
+        "Hash":  "6971D3035DE796F82D56688702FD42673B26BC76F98BA03A0F64AA1EBC42167D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcPosePreviewDragPolicyTest.java",
+        "Hash":  "48A5FBA847AA4FB8961951494149E0F6377A8EA2C8BF912F05ABB01C0DF6D41A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcPosePreviewLayoutTest.java",
+        "Hash":  "EB660ABD11C1AAF7B0E3198E67AAD0A3EE30DACCB92F44AAB23B8BF2706899AF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\TaczNpcPoseValueSliderTest.java",
+        "Hash":  "69E94025C46A104E0F42C2CD183D99FA7220174B3C2FBFCAFB0D27B7B786B361"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\client\\WeightedPoolEditorModelTest.java",
+        "Hash":  "F59AE9904D12656E70320AF9CCA6117B474D277CE76D531EF8C9221AD3C834C2"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\compat\\VanillaRuntimeAccessTest.java",
+        "Hash":  "F386B3B86F7B157367AF5FA95950A755269328C7B518A450599AF7AD20417B6C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankHitscanBatchTest.java",
+        "Hash":  "C37FC90FBAB89357C5BF48671C9A96C1C5DFB353FBDE65BEA26C34CBFF9B714F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankKnockbackIntervalPolicyTest.java",
+        "Hash":  "74D1DA75DDE2FB19CFC462EE39B3C2864B5BF736C74CD431386D56B8BB2C8224"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\compat\\pointblank\\PointBlankPerformanceMonitorTest.java",
+        "Hash":  "C80A9ED2D8F47EB7A56E34CAF9708FF24D5373FB74B20A47842055FC9E725F09"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\DwCommandRootTest.java",
+        "Hash":  "30888038783EE99142DAAC79C10C2B056EAF52DF9646740C210EE7A051B80413"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\SuperbOptionalBoundaryTest.java",
+        "Hash":  "36E32779D2E14D20A345C27B6FF264E7C99363571BA9EE07C3992CD410FAA66A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\compat\\superbwarfare\\SuperbWarfareAbiProbeTest.java",
+        "Hash":  "ADD143C25BA09DA93848F1CF8E2B4157877FDC4BBE29FBABEC34E6349AF30E97"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunAmmoPolicyTest.java",
+        "Hash":  "135F22FDD3CE404F9EBAE282491814C12A334CF2118CA3E7501F782AAF8CE9A7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunDamageContextTest.java",
+        "Hash":  "07728325B49DC099206127852954EE6B8D509C1E13B20C116928A57DDFF8F34E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunOptionalBoundaryTest.java",
+        "Hash":  "997C39BD42487ABB74C2DBB773FA6CDA90D68754596AA5905C566B1326068379"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\tacznpcfire\\weapon\\ManagedGunTimingPolicyTest.java",
+        "Hash":  "8D2DE304554614084CA1CC2C765A4AFC10448EFABCEE13032709932CF7B43ADF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\warfare\\api\\DwAddonApiTest.java",
+        "Hash":  "2390661756BDAF269CFD44D2099C70139B565DF49DCC358767CDE28B5ACAFFB6"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\warfare\\api\\DwFactionOptionalBoundaryTest.java",
+        "Hash":  "960D8B1BE392C8FCABBC5B43441D13B73CD6D9989862938C0890646DA84181BF"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\java\\net\\dochi\\warfare\\api\\client\\DwEditorSaveTrackerTest.java",
+        "Hash":  "9A1EBF220B0BA0BBA284027654220E1F68824F0F4C73A9FC4D23B0D94B45C3DD"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\src\\test\\resources\\assets\\minecraft\\lang\\en_us.json",
+        "Hash":  "CA3D163BAB055381827226140568F3BEF7EAAC187CEBD76878E0B63E9E442356"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\_assets\\dw_ui.png",
+        "Hash":  "C2C065028AB0884E97694F6197C6E7B8A88359E36B857E2B5691BF93DD3ED86A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\tools\\dwe_gimmick_translations.py",
+        "Hash":  "53EA99A3FE319156088B959B8B0D7D5EBD547EBDBC01B6374328B4E1E0FF903A"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\tools\\dwe_next_verify.py",
+        "Hash":  "AAD0EE01D5FD42694257EBCAD2964E54A4DDAC3E7AB917516816541A27FD8C44"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\tools\\dwe_work_verify.py",
+        "Hash":  "7ED4B8F6D15F611296FFAE4E64A929298AE4A2DBE5DC17F68F23FC3268C82AC6"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\tools\\dwv_work_verify.py",
+        "Hash":  "AA804622B971B2DAF5FE5A3F07DCC5399E25E294404D83CDDC15FF6E8E52FAEB"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\tools\\dw_vehicle_split.py",
+        "Hash":  "7047F7402D46C616FB1DF86CECFE52D5F780C8FA06B09737B1C04E8D064D5F77"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\tools\\dw_vehicle_verify.py",
+        "Hash":  "F0E42BADE773FFCAD02899CE51B8D2EA99E80AA37FD028A0D96823B4468F9854"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\tools\\dw_vehicle_wire.py",
+        "Hash":  "5BB2A3F4937B61741151640F71A5F74D12E784146E1D4A4FA74122BFA3CFD06B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\tools\\__pycache__\\dw_vehicle_split.cpython-311.pyc",
+        "Hash":  "5C814C1D9ECF48C820E564B1E69AE441DA3196A8924A94E47A8ACF77172DE704"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\AGENTS.md",
+        "Hash":  "B69F7611D6C52157D9300E181755DD071FE88E064CBF83A029FD56A90306AAC7"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\backup-workplan-phase.ps1",
+        "Hash":  "124721E89587175661B679FD2E658708FF182A76E6701A53DBF97380206229AA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\build-all-local.ps1",
+        "Hash":  "582A851A4F57AA498B0393E04377915414037459E2EF2AC56A5E5A2D7245690E"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\build-local.ps1",
+        "Hash":  "3D5A6515402AF78469A1F9A8A585CEDE61192F17EF52CB6663D0604D90AFFEB0"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\CNPC_TACZ_Fire_0.2.0_Changelog.md",
+        "Hash":  "AB4684C7C56660D970939F41764B9327469FF8E03689220BCAB3EE7E25523FE4"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\CNPC_TACZ_Fire_0.2.2_Changelog.md",
+        "Hash":  "D8957278D06817344103CFD23B4F29828F31C609F38327614F1C75026DAD0D40"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\CNPC_TACZ_Fire_0.2.3_Changelog.md",
+        "Hash":  "8786CFCC700FA297559788EF77EC37BEAA6EB228DB73BE8C443B5B3ACB70717F"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\CurseForge_Description.md",
+        "Hash":  "6DE070244EF3300FAB3AB0F750458BD07A20DE8AAE7638316739CF44AB487A0D"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\dochi_tacz.png",
+        "Hash":  "3B9D86579E9837CE859C640528649D76A55E49FF9246E1593E5CA11DD631459B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\DOCHI_WARFARE_0.2.4_Changelog.md",
+        "Hash":  "C6BA327242AE017CAA6B1CC9CF87F3D0B1D8A988C53429D50BB25D83E73DCE9C"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\DOCHI_WARFARE_0.2.7_Changelog.md",
+        "Hash":  "799FAC8D9698FA854F57D686BE418394841C180670470E1DCF564CD35130B013"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\DW_ADDON_POLICY.md",
+        "Hash":  "AA7D66037AE43D377BA981B4CC77B774B3C657EF2978F6BD2B463F2AD9717BE1"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\DW_MULTI_GUN_ADAPTER_REPORT_20260729.md",
+        "Hash":  "BAB28EA4EB609CAA70F6B1E4FF6DE25000C8B487AD1009804851A1416FFC2D90"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\EXPERIMENTAL_COVER_REPORT.md",
+        "Hash":  "E4E792ACB8C529C7DFB045EC0DA5A4268AFD89522AA0227FBF50374F41C9E462"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\MISSION_VEHICLE_BOOBY_TRAP_AUDIT_20260820.md",
+        "Hash":  "5B66039B72564F258B9D77CE10F3E0407F5EBB43FBC96954DD8DB8E26ED851E9"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\README.md",
+        "Hash":  "B0614B7AB865825D1875C5F2DEDE82CA9B3F04F19D054DC7D61B6255EF556B82"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\SUPERBWARFARE_IMPLEMENTATION_REPORT.md",
+        "Hash":  "80488696C1E2C7FA33156C1062BEA606AB3B128DDC98581AAC6EDEFA37ED60CA"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\test-local.ps1",
+        "Hash":  "37947FA370C4B0DCC43D91AFA89B5C0BDB075A0AFC26683F33897C00CCBE6C0B"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\WORKPLAN_IMPLEMENTATION_LOG.md",
+        "Hash":  "070C796C0D9C0914A456F1B2EA72C132CF87AF63F0BA9FAF72BB119357BF01B8"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\__EntityAIAttackTarget.class",
+        "Hash":  "5A13775F5EFDB051D1AB26A6F565743EBF4B70F05F5754B4D344F43732B4E5CC"
+    },
+    {
+        "Path":  "C:\\Users\\hodu3\\Desktop\\[FORGE] dochis_warfare\\build\\libs\\dochi_warfare-0.3.0.jar",
+        "Hash":  "7D7CA69E7CDB1F5E128EF5246329BF06E35B2CAA54EBB2043BFCBD316215227A"
+    }
+]

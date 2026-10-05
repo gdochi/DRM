@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 클론과 스포너
 section: world-tools
 status: Draft
-version: Fabric 0.2.1 / NeoForge 0.2.0
+version: Fabric 0.2.2 / NeoForge 0.2.1
 audience: 코블몬 NPC를 재사용하거나 웨이브로 소환하는 제작자
 tags:
   - clone-library

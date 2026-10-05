@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 월드 도구
 section: tools
 status: Draft
-version: 0.2.9
+version: Forge 0.3.0 / NeoForge 0.2.9
 audience: 시나리오 제작자
 tags:
   - clone
@@ -62,3 +62,11 @@ config/dochi_warfare/entity_clones/vehicle/
 ```
 
 이 파일은 서버 콘텐츠로 다루세요. 일반 제작에서는 서버 검증과 정리 과정이 유지되도록 인게임 `Clone`·`Summon` 흐름을 사용합니다.
+
+## Forge 0.3.0 클론 삭제와 복구
+
+보관함에서 NPC 또는 차량 항목을 선택하고 `삭제` → `삭제 확인`을 누릅니다. 종류와 ID를 확인하고 취소하려면 Escape 또는 취소를 사용합니다. 이미 소환한 엔티티에는 영향을 주지 않습니다.
+
+삭제 파일은 `config/dochi_warfare/entity_clones/.deleted/<종류>-<UUID>/`로 이동합니다. 복구하려면 원래 `npc` 또는 `vehicle` 폴더에 동명 파일이 없는지 확인한 뒤 파일을 옮깁니다. 클론을 참조하는 DWE 기믹 문서는 자동 수정되지 않으므로 참조도 확인하세요.
+
+차량 클론·승무원 기능에는 DWE가 필요합니다. 현재 저장명은 영문·숫자·밑줄·점·하이픈을 사용하며 한글 등은 밑줄로 정리됩니다. 타임라인에서는 실제 클론 ID를 선택하세요.

@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Getting Started
 section: trainer
 status: Stable
-version: Fabric 0.2.1 / NeoForge 0.2.0
+version: Fabric 0.2.2 / NeoForge 0.2.1
 audience: Creators / Operators
 ---
 

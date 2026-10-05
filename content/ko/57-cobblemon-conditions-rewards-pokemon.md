@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric 0.2.1 / NeoForge 0.2.0
+version: Fabric 0.2.2 / NeoForge 0.2.1
 audience: 조건부 전투와 결과 처리를 설계하는 제작자
 tags:
   - conditions
@@ -153,3 +153,9 @@ Pokemon Itself는 포켓몬 한 마리와 Cobblemon PVE 전투를 만들고 같�
 ## 화폐 After Action
 
 `currency` 액션에서 DRM 화폐 또는 CobbleDollars를 선택하고 `add`, `take`, `set`을 정합니다. `set`은 잔액을 지정 값으로 바꾸며 0도 허용합니다. 음수·잘못된 금액과 사용할 수 없는 공급자는 실패로 처리됩니다. CobbleDollars는 선택 연동이며 설치하지 않은 서버에서는 해당 보상을 지급할 수 없습니다.
+
+## 커스텀 아이템 보상과 포기 결과
+
+애프터 액션 → 아이템 → 찾기에서 `아이템 목록` 또는 `내 인벤토리`를 선택합니다. 인벤토리 스택은 원본을 소비하지 않고 이름·설명·인챈트·손상도·커스텀 데이터를 복사합니다. 지급 개수는 복사한 스택 수량이 아니라 액션의 수량을 따릅니다. `Clear saved item data`는 저장 컴포넌트만 제거하고 아이템 ID와 수량을 유지합니다.
+
+데이터를 가진 아이템 회수는 ID와 컴포넌트가 모두 같은 스택을 대상으로 하며 총량 부족 시 일부만 먼저 소비하지 않습니다. 참고용 JSON 필드는 `itemComponentsSnbt`입니다. 트레이너 배틀에서 플레이어가 포기한 뒤 확정된 패배는 `flee`, 일반 패배는 `loss`입니다. 보상 트리거를 따로 설정하세요.

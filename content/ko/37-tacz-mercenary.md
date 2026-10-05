@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 용병
 section: mercenary
 status: Draft
-version: 0.2.9
+version: Forge 0.3.0 / NeoForge 0.2.9
 audience: 제작자와 플레이어
 tags:
   - mercenary

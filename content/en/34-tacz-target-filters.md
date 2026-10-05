@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Targets
 section: targets
 status: Draft
-version: 0.2.9
+version: Forge 0.3.0 / NeoForge 0.2.9
 audience: Encounter designers
 tags:
   - target

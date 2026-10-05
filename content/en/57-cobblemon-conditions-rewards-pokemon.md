@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric 0.2.1 / NeoForge 0.2.0
+version: Fabric 0.2.2 / NeoForge 0.2.1
 audience: Creators building conditional battles and Pokémon NPCs
 tags:
   - conditions
@@ -104,3 +104,9 @@ Applying Pokemon Itself also derives the CustomNPCs Pokémon appearance from spe
 ## Currency After Actions
 
 For `currency`, choose DRM currency or CobbleDollars and an operation: `add`, `take`, or `set`. `set` replaces the balance and can set it to zero. Invalid/negative amounts and unavailable providers fail. CobbleDollars is optional and its rewards cannot run without the provider.
+
+## Custom item rewards and forfeits
+
+Open After Actions → Item → Find, then choose Items or My Inventory. Copying preserves names, lore, enchantments, damage, and custom data without consuming the original stack. Award quantity comes from the action. Clear saved item data removes components while retaining the item ID and quantity.
+
+Component-aware removal matches both ID and components and does not partially consume an insufficient total. The optional JSON field is itemComponentsSnbt. A confirmed trainer defeat after player forfeit is flee; an ordinary defeat remains loss. Configure their reward triggers separately.

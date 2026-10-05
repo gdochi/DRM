@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 총기 연동
 section: integrations
 status: Draft
-version: 0.2.9
+version: Forge 0.3.0 / NeoForge 0.2.9
 audience: 총기 NPC 제작자
 tags:
   - TACZ
@@ -15,7 +15,7 @@ tags:
   - SuperbWarfare
 ---
 
-현재 버전은 0.2.9이며 Forge 1.20.1과 NeoForge 1.21.1 빌드가 있습니다. 외부 총기·차량 모드의 요구 범위는 [로더별 설치 안내](#dochi-warfare/warfare-setup)를 확인하세요.
+현재 빌드는 Forge 1.20.1용 DW 0.3.0과 NeoForge 1.21.1용 DW 0.2.9입니다. Forge의 차량 AI는 별도 DWE 0.3.0이 필요합니다. 외부 총기·차량 모드의 요구 범위는 [로더별 설치 안내](#dochi-warfare/warfare-setup)를 확인하세요.
 
 ## 하나의 컨트롤러와 원본 총기 동작
 
