@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Vehicle AI
 section: vehicles
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.2.9
+version: Forge 0.3.0 / NeoForge 0.3.0
 audience: Scenario creators and operators
 tags:
   - SuperbWarfare
@@ -15,9 +15,9 @@ tags:
   - ai
 ---
 
-On Forge 0.3.0, **DWE** supplies the vehicle functions below. See [DWE setup and files](#dochi-warfare-expanded/expanded-overview), [vehicle reactions](#dochi-warfare-expanded/expanded-vehicle-gimmicks), and [support timelines](#dochi-warfare-expanded/expanded-support-timeline). NeoForge 0.2.9 retains its existing DW vehicle implementation.
+On Forge and NeoForge 0.3.0, **DWE** supplies the vehicle functions below. See [DWE setup and files](#dochi-warfare-expanded/expanded-overview), [vehicle reactions](#dochi-warfare-expanded/expanded-vehicle-gimmicks), and [support timelines](#dochi-warfare-expanded/expanded-support-timeline).
 
-Current builds: DW 0.3.0 for Forge 1.20.1 and DW 0.2.9 for NeoForge 1.21.1. Forge vehicle AI requires the separate DWE 0.3.0 addon. Check [loader-specific installation](#dochi-warfare/warfare-setup) for external gun/vehicle dependencies.
+Current builds: DW 0.3.0 for Forge 1.20.1 and DW 0.3.0 for NeoForge 1.21.1. Vehicle AI on both loaders requires the separate DWE 0.3.0 addon. Check [loader-specific installation](#dochi-warfare/warfare-setup) for external gun/vehicle dependencies.
 
 ## Requirements and editor
 

@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
-version: Fabric 0.2.2 / NeoForge 0.2.1
+version: Fabric / NeoForge 0.2.4
 audience: Battle presentation creators
 tags:
   - presentation
@@ -106,3 +106,7 @@ Motion edits start/end, entrance/exit duration, offsets, scale, and drift. JSON 
 New general presets use full-screen backgrounds and full-model fitting. Treat defaults as templates and use Save As for custom files. Do not overwrite user scenes wholesale.
 
 Effects include raster_warp, vs_ribbon, versus_mark, iris_shutter, arena_depth, wild_meadow, wild_grass, rift_sky, ground_shadow, light_sweep, and dust_motes. Bind scenes to ordinary wild, RCT, or PvP battles in [Encounter Presentations](#drm-cobblemon-editor/cobblemon-encounter-presentations).
+
+## Block stages, FX and scheduling
+
+See [block stages and FX](#drm-cobblemon-editor/cobblemon-presentation-region-fx) for Region/FX authoring in 0.2.4, and [Battle Scheduler](#drm-cobblemon-editor/cobblemon-battle-scheduler) for clone, scene and battle execution.

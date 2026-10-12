@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Reference
-version: 0.1.3
+version: 0.1.4
 audience: Creators editing JSON directly
 tags:
   - battleworks
@@ -60,7 +60,7 @@ This is one complete JSON object with no comments or omissions. Damage 4 is conf
   "id": "training_swordsman",
   "displayName": "Training Swordsman",
   "enabled": true,
-  "description": "Beginner Forge 1.20.1 / BattleWorks 0.1.3 example. Normal humanoid NPC; CustomNPCs supplies the hostile target.",
+  "description": "Beginner Forge 1.20.1 / BattleWorks 0.1.4 example. Normal humanoid NPC; CustomNPCs supplies the hostile target.",
   "combat": {
     "suppressNativeAttacks": true,
     "suppressCustomNpcScripts": false,
@@ -323,10 +323,10 @@ One action starts the whole effect. Damage remains separate.
 | Params entries per action | 64 |
 | Custom hitbox points | 12 |
 
-The string limit is not the same as a universal 512-KiB file-size rule for all encodings. Compressed/chunked transport in 0.1.3 does not remove the document limit.
+The string limit is not the same as a universal 512-KiB file-size rule for all encodings. Compressed/chunked transport in 0.1.4 does not remove the document limit.
 
 ## 8. Source baseline and test scope
 
-These guides were checked against the Forge 0.1.3 source on 2026-09-12: BattleworkDocument, BattleworkValidator, BattleworkRuntimeController, BattleworkStore, BattleworkNetwork, BattleworkAnimationPolicy, ParticleDocument, ParticleFiles, ParticleCommands, and editor controls/translations.
+The original detailed audit used the Forge 0.1.3 source on 2026-09-12: BattleworkDocument, BattleworkValidator, BattleworkRuntimeController, BattleworkStore, BattleworkNetwork, BattleworkAnimationPolicy, ParticleDocument, ParticleFiles, ParticleCommands, and editor controls/translations. The current build and installation guidance were updated to 0.1.4 on 2026-10-11.
 
 Current storage, animation, and additional-action behavior supersede the older 0.1.2 guide. Syntax/reference validation does not establish visual contact, provider compatibility, terrain behavior, or encounter balance. Use the [live-test checklist](#mob-editor/battleworks-troubleshooting).

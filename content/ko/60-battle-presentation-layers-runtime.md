@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
-version: Fabric 0.2.2 / NeoForge 0.2.1
+version: Fabric / NeoForge 0.2.4
 audience: 연출 타이밍과 런타임 문제를 조정하는 제작자
 tags:
   - layers
@@ -206,3 +206,7 @@ Battle Audio에는 타임라인 Start Tick이 없습니다. 서버가 실제 Cob
 9. 승리·패배·도주 뒤 Battle Audio와 NPC 잠금이 정리되는지 확인합니다.
 
 정식 확인은 `첫 프레임 → Intro 시작점 → 중간 프레임 → 마지막 Flash → 건너뛰기 → 실제 배틀 → 승패/도주 후 복구` 순서로 진행하세요.
+
+## 블록 무대·FX와 스케줄러
+
+0.2.4의 Region·FX 제작은 [블록 무대와 FX](#drm-cobblemon-editor/cobblemon-presentation-region-fx), 클론·장면·배틀 실행 연결은 [배틀 스케줄러](#drm-cobblemon-editor/cobblemon-battle-scheduler)를 확인하세요.

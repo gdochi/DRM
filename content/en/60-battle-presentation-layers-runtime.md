@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
-version: Fabric 0.2.2 / NeoForge 0.2.1
+version: Fabric / NeoForge 0.2.4
 audience: Creators tuning presentation timing and runtime behavior
 tags:
   - layers
@@ -100,3 +100,7 @@ Inspector Play/Stop previews only the selected sound and does not move the timel
 When Skippable is enabled, `Esc` or `Space` sends a skipped result. The server proceeds only if the authoritative document also allows skipping.
 
 Dead or missing players, removed or invalid targets, an interrupted client screen, failed condition recheck, and invalid battle parties may safely cancel startup. Test the first frame, audio trigger, middle, final flash, skip, real battle, and post-battle restore as one complete flow.
+
+## Block stages, FX and scheduling
+
+See [block stages and FX](#drm-cobblemon-editor/cobblemon-presentation-region-fx) for Region/FX authoring in 0.2.4, and [Battle Scheduler](#drm-cobblemon-editor/cobblemon-battle-scheduler) for clone, scene and battle execution.

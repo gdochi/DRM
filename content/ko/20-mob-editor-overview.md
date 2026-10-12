@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: 사용 안내
-version: 0.1.3
+version: 0.1.4
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -19,7 +19,7 @@ tags:
 
 BattleWorks는 **CustomNPCs NPC가 언제, 어떻게 공격할지 만드는 Forge 1.20.1용 DRM 애드온**입니다. “플레이어에게 다가간다 → 잠깐 준비한다 → 칼을 휘두르며 피해를 준다 → 쉬었다가 다시 고른다”를 게임 안에서 작성합니다.
 
-이 안내는 **BattleWorks 0.1.3, DRM 0.1.7 이상**의 Forge 소스를 기준으로 합니다. 기존 `mob-editor` 문서 주소는 계속 사용할 수 있습니다. 게임 안에서는 BattleWorks 이름을 찾으세요.
+이 안내는 **BattleWorks 0.1.4, DRM 0.1.7 이상**의 Forge 소스를 기준으로 합니다. 기존 `mob-editor` 문서 주소는 계속 사용할 수 있습니다. 게임 안에서는 BattleWorks 이름을 찾으세요.
 
 처음에는 일반 인간형 NPC로 느린 근접 공격 하나를 완성하세요. JSON을 직접 작성하거나 마법·모델 모드를 추가할 필요 없이 시작할 수 있습니다.
 

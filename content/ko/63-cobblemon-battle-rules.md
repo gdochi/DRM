@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: 안정
-version: Fabric 0.2.2 / NeoForge 0.2.1
+version: Fabric / NeoForge 0.2.4
 audience: 트레이너 배틀 규칙을 제작하는 사용자
 tags:
   - battle-rules
@@ -96,6 +96,10 @@ Mega, Tera, Dynamax 허용은 플레이어와 NPC 양쪽의 서버 규칙입니�
 
 Pokemon Itself에서는 자연 드롭과 포획 허용을 같은 화면에서 편집합니다. 드롭을 끄면 애드온이 시작한 해당 전투의 자연 드롭을 허용하지 않습니다. 포획을 금지하면 배틀 룰의 아이템 허용 여부와 무관하게 해당 조우에서 포획할 수 없습니다.
 
+## 도주 정책
+
+도주는 원본 Cobblemon 규칙(`native`), 즉시 도주(`immediate`), 시작 위치에서 지정 거리 이탈(`distance`)을 선택합니다. 거리 범위는 1–512블록입니다. 거리 모드에서 버튼을 누르면 필요한 거리를 안내하고, 실제 거리를 벗어나야 도주합니다. 이 정책은 애드온이 관리하는 배틀에 적용하며 결과는 `flee`로 처리합니다.
+
 ## 문제 해결
 
 | 증상 | 확인할 것 |
@@ -107,4 +111,4 @@ Pokemon Itself에서는 자연 드롭과 포획 허용을 같은 화면에서 �
 
 ## JSON 참고
 
-다음 필드는 직접 작성을 권장하는 절차가 아니라 외부 도구·버전 관리용 참고입니다. Trainer JSON 스키마 22의 공통 설정은 `trainerOptions.battleConfig`, 라운드 개별 설정은 `rounds[].battleConfigOverride`에 저장됩니다. 덮어쓰기가 없는 라운드는 공통 설정을 사용합니다.
+다음 필드는 직접 작성을 권장하는 절차가 아니라 외부 도구·버전 관리용 참고입니다. Trainer JSON 스키마 23의 공통 설정은 `trainerOptions.battleConfig`, 라운드 개별 설정은 `rounds[].battleConfigOverride`에 저장됩니다. 덮어쓰기가 없는 라운드는 공통 설정을 사용합니다.

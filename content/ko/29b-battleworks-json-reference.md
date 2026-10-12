@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: 참고
-version: 0.1.3
+version: 0.1.4
 audience: JSON을 직접 편집하는 제작자
 tags:
   - battleworks
@@ -60,7 +60,7 @@ tags:
   "id": "training_swordsman",
   "displayName": "Training Swordsman",
   "enabled": true,
-  "description": "Beginner Forge 1.20.1 / BattleWorks 0.1.3 example. Normal humanoid NPC; CustomNPCs supplies the hostile target.",
+  "description": "Beginner Forge 1.20.1 / BattleWorks 0.1.4 example. Normal humanoid NPC; CustomNPCs supplies the hostile target.",
   "combat": {
     "suppressNativeAttacks": true,
     "suppressCustomNpcScripts": false,
@@ -323,10 +323,10 @@ JSON에는 주석·끝 쉼표·생략 부호를 넣지 않습니다. 자동 보�
 | 액션 params 항목 | 64 |
 | 사용자 히트박스 점 | 12 |
 
-문자 수 제한을 “한글 포함 무조건 512KiB 파일”로 바꾸어 해석하지 않습니다. 0.1.3은 큰 문서를 압축·분할 전송하지만 문서 크기 제한 자체를 없애지는 않습니다.
+문자 수 제한을 “한글 포함 무조건 512KiB 파일”로 바꾸어 해석하지 않습니다. 0.1.4는 큰 문서를 압축·분할 전송하지만 문서 크기 제한 자체를 없애지는 않습니다.
 
 ## 8. 소스 기준과 검증 범위
 
-이 문서 묶음은 2026-09-12의 Forge 0.1.3 소스에서 BattleworkDocument, BattleworkValidator, BattleworkRuntimeController, BattleworkStore, BattleworkNetwork, BattleworkAnimationPolicy, ParticleDocument, ParticleFiles, ParticleCommands와 에디터 번역·화면을 대조했습니다.
+이 문서 묶음의 최초 상세 대조는 2026-09-12의 Forge 0.1.3 소스에서 BattleworkDocument, BattleworkValidator, BattleworkRuntimeController, BattleworkStore, BattleworkNetwork, BattleworkAnimationPolicy, ParticleDocument, ParticleFiles, ParticleCommands와 에디터 번역·화면을 확인한 기록입니다. 2026-10-11에는 현재 빌드 0.1.4와 설치 안내를 갱신했습니다.
 
 0.1.2용 JSON 가이드와 달라진 저장 방식·애니메이션·추가 액션을 현재 소스 기준으로 반영했습니다. 문법·참조 검사를 통과해도 실제 모델 접촉, 마법 제공자, 서버 지형과 전투 밸런스는 [플레이 테스트](#mob-editor/battleworks-troubleshooting)로 확인해야 합니다.

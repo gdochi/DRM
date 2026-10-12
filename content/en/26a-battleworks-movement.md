@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guide
-version: 0.1.3
+version: 0.1.4
 audience: Beginners and combat creators
 tags:
   - battleworks

@@ -7,13 +7,13 @@ product: drm-cobblemon-editor
 category: Trainer Victory Quests
 section: trainer
 status: Draft
-version: Fabric 0.2.2 / NeoForge 0.2.1
+version: Fabric / NeoForge 0.2.4
 audience: Creators
 ---
 
 ## Requirements
 
-Use Cobblemon Editor Fabric 0.2.1 or NeoForge 0.2.0 with DRM 0.2.2 or newer. The addon registers the `Trainer Victory` objective in DRM quests.
+Use current Fabric/NeoForge Cobblemon Editor 0.2.4 with matching-loader DRM 0.2.4 or newer; current Core is 0.2.5. The addon registers the `Trainer Victory` objective in DRM quests.
 
 ## Link a trainer ID
 

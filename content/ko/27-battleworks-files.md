@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: 사용 안내
-version: 0.1.3
+version: 0.1.4
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -101,13 +101,13 @@ Load는 편집 화면에 파일을 여는 작업이고, Apply는 NPC를 그 파�
 
 1. 게임·서버를 종료하고 config와 월드를 백업합니다.
 2. 기존 BattleWorks / 구형 Mob Editor JAR 중복을 제거하고 호환 버전으로 교체합니다.
-3. 0.1.3은 DRM 0.1.7 이상을 요구합니다.
+3. Forge 0.1.4는 DRM 0.1.7 이상을 요구합니다. NeoForge 최소 조건은 설치 페이지에서 확인하세요.
 4. 실행 후 파일 목록과 NPC 참조를 확인합니다.
 5. 모델·스킬·사운드와 실제 전투를 다시 확인합니다.
 
 기존 mobs 폴더의 인식 가능한 전투 파일은 patterns로 이관될 수 있고 원본은 `config/dochi_rpg_maker/backups/battleworks-mobs-patterns-v1/`에 보관됩니다. 충돌하는 파일과 알 수 없는 JSON·모델 자산은 무작정 덮어쓰지 않습니다.
 
-0.1.3에는 고유하게 식별되는 이동된 전투 파일의 참조 복구가 있지만, 여러 동명 파일을 임의로 골라 주는 기능으로 의존하지 마세요. 폴더를 바꾼 뒤 NPC에 명시적으로 재적용하면 확인하기 쉽습니다.
+0.1.4에는 고유하게 식별되는 이동된 전투 파일의 참조 복구가 있지만, 여러 동명 파일을 임의로 골라 주는 기능으로 의존하지 마세요. 폴더를 바꾼 뒤 NPC에 명시적으로 재적용하면 확인하기 쉽습니다.
 
 내부 모드 ID는 `dochi_battleworks`입니다. 구형 `drm_addon_mob_editor`를 현재 ID라고 사용하지 않습니다. 또한 CNPC-Gecko-Addon의 예전 모델 NBT 변환과 원래 애드온의 엔티티·리소스 지원은 다릅니다. 해당 애드온에 의존하는 월드는 원래 애드온이 계속 필요할 수 있습니다.
 

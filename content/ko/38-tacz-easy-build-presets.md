@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 설정 도구
 section: setup
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.2.9
+version: Forge 0.3.0 / NeoForge 0.3.0
 audience: 총기 NPC 제작자
 tags:
   - easy-build

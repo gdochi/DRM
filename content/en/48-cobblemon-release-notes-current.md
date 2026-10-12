@@ -1,21 +1,29 @@
 ---
-title: Fabric 0.2.2 / NeoForge 0.2.1 update
+title: Fabric and NeoForge 0.2.4 Update
 slug: cobblemon-editor-current-update
 order: 480
-description: Encounter bindings, party models, new presets, custom rewards, and forfeit outcomes.
+description: Battle schedulers, world selection, block stages/FX and battle-rule updates.
 product: drm-cobblemon-editor
 category: Getting Started
 section: overview
 status: Stable
-version: Fabric 0.2.2 / NeoForge 0.2.1
+version: Fabric / NeoForge 0.2.4
 audience: Creators / Operators
 ---
 
 ## Current requirements
 
-Use **Fabric 0.2.2 / NeoForge 0.2.1** on Minecraft 1.21.1 with Java 21. Required integrations are matching-loader DRM Core, CustomNPCs, and Cobblemon. Current DRM is 0.2.4; the addon declares DRM 0.2.2 as its minimum. Cobblemon must be 1.7.3 or newer and below 1.9.0.
+Use **Fabric / NeoForge 0.2.4** on Minecraft 1.21.1 with Java 21. Required integrations are matching-loader DRM Core, CustomNPCs, and Cobblemon. Current DRM is 0.2.5; the addon requires DRM 0.2.4 or newer. Cobblemon must be 1.7.3 or newer and below 1.9.0.
 
 RCT API and CobbleDollars remain optional. See [Setup](#drm-cobblemon-editor/cobblemon-editor-setup) for loader requirements.
+
+## Main changes in 0.2.4
+
+- [Battle Scheduler](#drm-cobblemon-editor/cobblemon-battle-scheduler): connect clone spawning, intro/battle/result scenes and cleanup, with server controls for automatic area entry.
+- [Block stages and FX](#drm-cobblemon-editor/cobblemon-presentation-region-fx): capture block states into presentation JSON and author particle emission and motion.
+- Move and resize selection boxes in the world, then Apply without changing blocks.
+- Expanded battle-rule level settings and flee policies: fixed/player-party-average levels and native/immediate/distance fleeing.
+- Trainer schema 23 and Presentation schema 5 remain unchanged.
 
 ## General Inventory
 

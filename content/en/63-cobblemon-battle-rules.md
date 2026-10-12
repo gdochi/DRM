@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Stable
-version: Fabric 0.2.2 / NeoForge 0.2.1
+version: Fabric / NeoForge 0.2.4
 audience: Creators configuring trainer battle rules
 tags:
   - battle-rules
@@ -94,6 +94,10 @@ A missing slot, fainted selected player lead, or insufficient party size for the
 
 Pokemon Itself also exposes natural-drop and capture permission on this screen. Disabling capture blocks capture for that encounter independently of the item rules. Disabling natural drops prevents the addon's encounter from allowing normal drops.
 
+## Flee policies
+
+Flee policies are native Cobblemon behavior (`native`), immediate fleeing (`immediate`), or moving a configured distance from the starting position (`distance`, 1–512 blocks). In distance mode the button explains the required distance; actually moving outside it triggers fleeing. These rules apply to addon-owned battles and produce the `flee` outcome.
+
 ## Troubleshooting
 
 | Symptom | Check |
@@ -105,4 +109,4 @@ Pokemon Itself also exposes natural-drop and capture permission on this screen. 
 
 ## JSON reference
 
-This is reference information for external tools and version control, not the recommended authoring path. Trainer schema 22 stores common settings in `trainerOptions.battleConfig` and a round override in `rounds[].battleConfigOverride`. A round without the override uses the common configuration.
+This is reference information for external tools and version control, not the recommended authoring path. Trainer schema 23 stores common settings in `trainerOptions.battleConfig` and a round override in `rounds[].battleConfigOverride`. A round without the override uses the common configuration.

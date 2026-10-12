@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: 사용 안내
-version: 0.1.3
+version: 0.1.4
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -15,7 +15,7 @@ tags:
   - combat
 ---
 
-현재 BattleWorks 0.1.3은 Forge 1.20.1(Java 17, DRM 0.1.7+)과 NeoForge 1.21.1(Java 21, NeoForge 21.1.216+, DRM 0.2.0+) 빌드를 제공합니다. CustomNPCs는 두 빌드 모두 필수입니다. 아래 실습은 Forge 기준이며 NeoForge에서는 모든 연동 모드도 1.21.1용으로 맞추세요.
+현재 BattleWorks 0.1.4는 Forge 1.20.1(Java 17, DRM 0.1.7+)과 NeoForge 1.21.1(Java 21, NeoForge 21.1.216+, DRM 0.2.0+) 빌드를 제공합니다. CustomNPCs는 두 빌드 모두 필수입니다. 아래 실습은 Forge 기준이며 NeoForge에서는 모든 연동 모드도 1.21.1용으로 맞추세요.
 
 ## 1. 같은 버전의 실행 환경 준비하기
 
@@ -24,12 +24,12 @@ tags:
 | Minecraft | Java Edition 1.20.1 |
 | 로더 | Minecraft 1.20.1용 Forge 47 계열 |
 | Java | 17 |
-| BattleWorks | 0.1.3 |
+| BattleWorks | 0.1.4 |
 | Dochi RPG Maker / DRM | Forge 1.20.1용 0.1.7 이상, 필수 |
 | CustomNPCs | Forge 1.20.1 호환 버전, 필수 |
 
 1. 사용할 Minecraft 인스턴스의 `mods` 폴더에 BattleWorks, DRM, CustomNPCs와 각 모드가 요구하는 의존성을 넣습니다.
-2. 이전 BattleWorks나 구형 Mob Editor JAR가 함께 들어 있지 않은지 확인합니다. 0.1.3의 모드 ID는 `dochi_battleworks`입니다.
+2. 이전 BattleWorks나 구형 Mob Editor JAR가 함께 들어 있지 않은지 확인합니다. 0.1.4의 모드 ID는 `dochi_battleworks`입니다.
 3. 게임을 실행하고 모드 목록에서 세 모드가 로드되었는지 확인합니다.
 4. 멀티플레이에서는 서버와 접속 클라이언트의 BattleWorks·DRM 버전을 맞춥니다. 연결해서 사용할 스킬·모델 모드와 리소스도 함께 맞춥니다.
 

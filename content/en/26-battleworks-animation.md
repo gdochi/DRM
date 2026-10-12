@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guide
-version: 0.1.3
+version: 0.1.4
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -49,7 +49,7 @@ Pattern selects a usage; Clips selects animation. A detached preview can use a m
 
 Start with one Action-stage animation. A configured stage animation takes precedence over ordinary Animation actions inside that stage. To schedule several explicit motions, intentionally set stage animation to None first.
 
-## 4. Stage changes in 0.1.3
+## 4. Stage changes in 0.1.4
 
 - Consecutive stages using the same mapping share a continuous playback span.
 - A different stage mapping can start on stage entry.

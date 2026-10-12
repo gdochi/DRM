@@ -11,6 +11,10 @@ version: 0.2.1
 audience: Creators / Operators
 ---
 
+:::note Historical release record
+This page records the earlier release. The current Core installation baseline is 0.2.2.
+:::
+
 ## Current version
 
 Minecraft 1.20.1 · Forge · DRM **0.2.1**. Update the server and all clients together and back up `config/dochi_rpg_maker` and the world.

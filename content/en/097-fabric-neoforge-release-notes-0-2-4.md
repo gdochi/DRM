@@ -11,6 +11,10 @@ version: 0.2.4
 audience: Creators / Operators
 ---
 
+:::note Historical release record
+This page records the earlier release. The current Core installation baseline is 0.2.5.
+:::
+
 ## Shared documentation and installation
 
 **Fabric and NeoForge DRM 0.2.4 for Minecraft 1.21.1** share this documentation. Authoring tools and normal workflows are the same; choose your loader's JAR and dependencies in [Installation](#core-fabric/installation).

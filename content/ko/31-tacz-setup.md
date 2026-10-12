@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 설치
 section: setup
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.2.9
+version: Forge 0.3.0 / NeoForge 0.3.0
 audience: 서버 운영자
 tags:
   - setup
@@ -20,9 +20,9 @@ tags:
 | 로더 | Minecraft / Java | 필수·선택 차이 |
 | --- | --- | --- |
 | Forge 47+ · DW 0.3.0 | 1.20.1 / Java 17 | TACZ 1.1.8 이상 1.2 미만 필수, Player Animator 클라이언트 필수 |
-| NeoForge · DW 0.2.9 | 1.21.1 / Java 21 | TACZ 1.1.8 이상 1.2 미만 필수, Player Animator 2.0+는 선택 의존성 |
+| NeoForge 21.1.216+ · DW 0.3.0 | 1.21.1 / Java 21 | TACZ 1.1.8 이상 1.2 미만 필수, Player Animator 2.0+ 클라이언트 필수 |
 
-CustomNPCs는 관리 NPC를 제작할 때 필요합니다. 로더별 CustomNPCs를 사용하세요. Forge는 SuperbWarfare 0.8.9 final과 0.8.9.1 hotfix 계열을 구조 검사 후 사용하고, NeoForge 메타데이터는 0.8.9.1 이상 0.8.10 미만을 선언합니다. 같은 버전 문자열이어도 호환 구조 검사를 통과하지 않으면 연동이 거부될 수 있습니다. 아래의 상세 설치 표와 외부 총기 버전 예시는 Forge 기준입니다.
+CustomNPCs는 관리 NPC를 제작할 때 필요합니다. 로더별 CustomNPCs를 사용하세요. Forge는 SuperbWarfare 0.8.9 final과 0.8.9.1 hotfix 계열을 구조 검사 후 사용하고, NeoForge는 SuperbWarfare 정확히 0.8.9.1을 선언합니다. 같은 버전 문자열이어도 호환 구조 검사를 통과하지 않으면 연동이 거부될 수 있습니다. 아래의 상세 설치 표와 외부 총기 버전 예시는 Forge 기준입니다.
 
 ## 설치 체크리스트
 
@@ -43,7 +43,9 @@ CustomNPCs는 관리 NPC를 제작할 때 필요합니다. 로더별 CustomNPCs�
 
 ## DWE 추가 설치
 
-Forge 0.3.0에서 차량 편집·AI·승무원·지원 타임라인을 사용하려면 [DWE 0.3.0](#dochi-warfare-expanded/expanded-overview)과 SuperbWarfare 0.8.9 또는 0.8.9.1을 함께 설치합니다. NPC 총기 전투만 사용할 때는 DWE가 필요하지 않습니다. 같은 버전 번호라도 서버·클라이언트의 빌드를 맞추세요.
+Forge·NeoForge 0.3.0에서 차량 편집·AI·승무원·지원 타임라인을 사용하려면 [DWE 0.3.0](#dochi-warfare-expanded/expanded-overview)과 SuperbWarfare 0.8.9 또는 0.8.9.1을 함께 설치합니다. NPC 총기 전투만 사용할 때는 DWE가 필요하지 않습니다. 같은 버전 번호라도 서버·클라이언트의 빌드를 맞추세요.
+
+NeoForge 설치 파일은 `dochi_warfare-0.3.0-neoforge-1.21.1.jar`와 `dochi_warfare_expanded-0.3.0-neoforge-1.21.1.jar`입니다. NeoForge DWE에는 SuperbWarfare 정확히 0.8.9.1이 필요합니다.
 
 ## NPC별 GUI 열기
 

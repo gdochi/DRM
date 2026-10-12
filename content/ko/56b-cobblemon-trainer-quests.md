@@ -7,13 +7,13 @@ product: drm-cobblemon-editor
 category: 트레이너 승리 퀘스트
 section: trainer
 status: Draft
-version: Fabric 0.2.2 / NeoForge 0.2.1
+version: Fabric / NeoForge 0.2.4
 audience: Creators
 ---
 
 ## 준비
 
-Fabric 0.2.1 또는 NeoForge 0.2.0의 Cobblemon Editor와 DRM 0.2.2 이상이 필요합니다. 애드온이 DRM 퀘스트에 `Trainer Victory` 목표를 추가합니다.
+현재 Fabric·NeoForge Cobblemon Editor 0.2.4와 같은 로더의 DRM 0.2.4 이상을 사용합니다. 현재 Core는 0.2.5이며 애드온이 DRM 퀘스트에 `Trainer Victory` 목표를 추가합니다.
 
 ## 트레이너 ID 연결
 

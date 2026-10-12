@@ -7,7 +7,7 @@ product: core-fabric
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.2.4
+version: 0.2.5
 audience: 제작자 / 운영자
 ---
 
@@ -21,9 +21,9 @@ Forge 1.20.1은 별도 문서 묶음입니다. 사이트 주소의 `core-fabric`
 
 | 로더 | Minecraft | DRM | Java | 필수 NPC 모드 |
 | --- | --- | --- | --- | --- |
-| Forge 47+ | 1.20.1 | 0.2.1 | 17 | CustomNPCs 1.20.1 호환 빌드 |
-| Fabric | 1.21.1 | 0.2.4 | 21 | CustomNPCs Fabric 1.0.0 |
-| NeoForge 21.1+ | 1.21.1 | 0.2.4 | 21 | CustomNPCs NeoForge 1.21.1 호환 빌드 |
+| Forge 47+ | 1.20.1 | 0.2.2 | 17 | CustomNPCs 1.20.1 호환 빌드 |
+| Fabric | 1.21.1 | 0.2.5 | 21 | CustomNPCs Fabric 1.0.0 |
+| NeoForge 21.1+ | 1.21.1 | 0.2.5 | 21 | CustomNPCs NeoForge 1.21.1 호환 빌드 |
 
 Fabric에는 Loader 0.18.0 이상과 Fabric API 0.116.11+1.21.1 이상도 필요합니다. 자세한 설치 파일과 선택 의존성은 [설치 준비](#core-fabric/installation)에 있습니다.
 

@@ -1,7 +1,7 @@
 {
   "title": "Dochi's Wiki",
   "brand": "Dochi's Wiki",
-  "description": "Documentation hub for DRM Core, Dochi's Real Armor, Dochi's Battleworks, Dochi's Warfare, and Dochi's Spawn Control.",
+  "description": "Documentation hub for Dochi's RPG Maker and Dochi mods: Cobblemon Editor, BattleWorks, Warfare, Spawn Control, Real Armor, Minigames and MapIcon Integration.",
   "defaultLocale": "en",
   "fallbackLocale": "en",
   "repository": "",
@@ -29,11 +29,11 @@
       "shortLabel_ru": "Dochi's RPG Maker Forge",
       "shortLabel_zh": "Dochi's RPG Maker Forge",
       "shortLabel_ja": "Dochi's RPG Maker Forge",
-      "description": "Dochi's RPG Maker 0.2.1 documentation for Forge 1.20.1.",
-      "description_ko": "Forge 1.20.1용 Dochi's RPG Maker 0.2.1 문서입니다.",
-      "description_ru": "Документация Dochi's RPG Maker 0.2.1 для Forge 1.20.1.",
-      "description_zh": "适用于 Forge 1.20.1 的 Dochi's RPG Maker 0.2.1 文档。",
-      "description_ja": "Forge 1.20.1向けDochi's RPG Maker 0.2.1のドキュメントです。",
+      "description": "Forge 1.20.1 documentation for DRM Core 0.2.2.",
+      "description_ko": "DRM Core 0.2.2의 Forge 1.20.1 문서입니다.",
+      "description_ru": "Документация Dochi's RPG Maker 0.2.2 для Forge 1.20.1.",
+      "description_zh": "适用于 Forge 1.20.1 的 Dochi's RPG Maker 0.2.2 文档。",
+      "description_ja": "Forge 1.20.1向けDochi's RPG Maker 0.2.2のドキュメントです。",
       "logo": "assets/mod-logos/drm_forge.png",
       "logoAlt": "Dochi's RPG Maker Forge logo",
       "logoAlt_ko": "Dochi's RPG Maker Forge 로고",
@@ -57,11 +57,11 @@
       "shortLabel_ru": "Dochi's RPG Maker Fabric / NeoForge",
       "shortLabel_zh": "Dochi's RPG Maker Fabric / NeoForge",
       "shortLabel_ja": "Dochi's RPG Maker Fabric / NeoForge",
-      "description": "Dochi's RPG Maker 0.2.4 documentation for Fabric / NeoForge 1.21.1.",
-      "description_ko": "Fabric / NeoForge 1.21.1용 Dochi's RPG Maker 0.2.4 문서입니다.",
-      "description_ru": "Документация Dochi's RPG Maker 0.2.4 для Fabric / NeoForge 1.21.1.",
-      "description_zh": "适用于 Fabric / NeoForge 1.21.1 的 Dochi's RPG Maker 0.2.4 文档。",
-      "description_ja": "Fabric / NeoForge 1.21.1向けDochi's RPG Maker 0.2.4のドキュメントです。",
+      "description": "Fabric / NeoForge 1.21.1 documentation for DRM Core 0.2.5.",
+      "description_ko": "DRM Core 0.2.5의 Fabric·NeoForge 1.21.1 공용 문서입니다.",
+      "description_ru": "Документация Dochi's RPG Maker 0.2.5 для Fabric / NeoForge 1.21.1.",
+      "description_zh": "适用于 Fabric / NeoForge 1.21.1 的 Dochi's RPG Maker 0.2.5 文档。",
+      "description_ja": "Fabric / NeoForge 1.21.1向けDochi's RPG Maker 0.2.5のドキュメントです。",
       "logo": "assets/mod-logos/drm_fabric.png",
       "logoAlt": "Dochi's RPG Maker Fabric / NeoForge logo",
       "logoAlt_ko": "Dochi's RPG Maker Fabric / NeoForge 로고",
@@ -85,11 +85,8 @@
       "shortLabel_ru": "Cobblemon Editor",
       "shortLabel_zh": "Cobblemon Editor",
       "shortLabel_ja": "Cobblemon Editor",
-      "description": "Fabric 0.2.2 / NeoForge 0.2.1: trainers, wild/RCT/PvP presentations, party models, custom rewards, and service NPCs.",
-      "description_ko": "Fabric 0.2.2 / NeoForge 0.2.1: 트레이너, 야생·RCT·PvP 연출, 파티 모델, 커스텀 보상과 서비스 NPC를 제작합니다.",
-      "description_ru": "Дополнение DRM для тренеров Cobblemon на базе CustomNPCs, боевых заставок и рынков покемонов.",
-      "description_zh": "用于制作基于 CustomNPCs 的 Cobblemon 训练师、战斗演出和宝可梦商店的 DRM 附加模组。",
-      "description_ja": "CustomNPCsベースのCobblemonトレーナー、バトル演出、ポケモンショップを制作するDRMアドオンです。",
+      "description": "Fabric / NeoForge 0.2.4: trainers, battle schedulers, saved block stages, FX and service NPCs.",
+      "description_ko": "Fabric·NeoForge 0.2.4: 트레이너, 배틀 스케줄러, 블록 무대·FX와 서비스 NPC를 제작합니다.",
       "logo": "assets/mod-logos/drm_cobblemon_editor.png",
       "logoAlt": "Dochi Cobblemon Editor logo",
       "logoAlt_ko": "Dochi Cobblemon Editor 로고",
@@ -107,8 +104,8 @@
       "label_ko": "Dochi's Battleworks",
       "shortLabel": "Battleworks",
       "shortLabel_ko": "Battleworks",
-      "description": "BattleWorks 0.1.3 for Forge and NeoForge: NPC combat, hitboxes, boss phases, Particle Maker, and supported skill previews.",
-      "description_ko": "Forge·NeoForge용 BattleWorks 0.1.3: NPC 전투, 히트박스, 보스 페이즈, Particle Maker와 지원 스킬 미리보기를 다룹니다.",
+      "description": "BattleWorks 0.1.4 for Forge and NeoForge: NPC combat, hitboxes, phases and effects.",
+      "description_ko": "Forge·NeoForge BattleWorks 0.1.4: NPC 전투, 히트박스, 페이즈와 효과를 제작합니다.",
       "description_ru": "Создание боёв CustomNPCs для Forge 1.20.1 / NeoForge 1.21.1: паттерны, хитбоксы, анимация, преследование и фазы.",
       "description_zh": "为 Forge 1.20.1 / NeoForge 1.21.1 的 CustomNPCs 制作战斗模式、碰撞箱、模型动画、追踪和阶段。",
       "description_ja": "Forge 1.20.1 / NeoForge 1.21.1のCustomNPCs向けにパターン、ヒットボックス、モデルアニメーション、追跡、フェーズを制作します。",
@@ -131,11 +128,8 @@
       "shortLabel_ru": "Warfare",
       "shortLabel_zh": "Warfare",
       "shortLabel_ja": "Warfare",
-      "description": "Forge DW 0.3.0 / NeoForge DW 0.2.9: NPC combat, ammunition, mercenaries and shared clones. Forge vehicle AI requires DWE.",
-      "description_ko": "Forge DW 0.3.0 / NeoForge DW 0.2.9: NPC 전투·탄약·용병·공용 클론. Forge 차량 AI는 DWE가 필요합니다.",
-      "description_ru": "DW: бой NPC и общие клоны. Для ИИ техники на Forge нужен DWE.",
-      "description_zh": "DW：NPC 战斗与共享克隆。Forge 载具 AI 需要 DWE。",
-      "description_ja": "DW：NPC戦闘と共通クローン。Forgeの車両AIにはDWEが必要です。",
+      "description": "Forge / NeoForge DW 0.3.0: NPC combat, ammunition, mercenaries and shared clones. Vehicle AI requires DWE.",
+      "description_ko": "Forge·NeoForge DW 0.3.0: NPC 전투·탄약·용병·공용 클론. 차량 AI는 DWE가 필요합니다.",
       "logo": "assets/mod-logos/dochi_warfare.png",
       "logoAlt": "Dochi's Warfare logo",
       "logoAlt_ko": "도치 워페어 로고",
@@ -152,11 +146,13 @@
       "label_ko": "Dochi's Warfare Expanded",
       "shortLabel": "Warfare Expanded",
       "shortLabel_ko": "워페어 익스팬디드",
-      "description": "Forge 1.20.1 addon requiring DW 0.3.0: vehicle AI, reactions, bombing, reinforcements, and NPC movement.",
-      "description_ko": "DW 0.3.0 필수 Forge 1.20.1 애드온: 차량 AI·반응 기믹·폭격·증원·NPC 이동을 제작합니다.",
+      "description": "Forge 1.20.1 / NeoForge 1.21.1 addon requiring DW 0.3.0: vehicle AI, reactions and support timelines.",
+      "description_ko": "DW 0.3.0 필수 Forge 1.20.1·NeoForge 1.21.1 애드온: 차량 AI·반응 기믹·지원 타임라인입니다.",
       "type": "addon",
       "product": "dochi-warfare-expanded",
-      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-warfare-expanded"
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-warfare-expanded",
+      "logo": "assets/mod-logos/dochi_warfare_expanded.png",
+      "logoAlt": "Dochi's Warfare Expanded logo"
     },
     {
       "id": "dochi-spawn-control",
@@ -211,18 +207,42 @@
       "type": "standalone",
       "product": "dochi-real-armor",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-real-armor"
+    },
+    {
+      "id": "dochi-minigames",
+      "label": "Dochi`s Minigames",
+      "label_ko": "Dochi`s Minigames",
+      "shortLabel": "Minigames",
+      "shortLabel_ko": "미니게임스",
+      "description": "Fabric / NeoForge 0.1.0: Monty Hall, slots and memory games with entry fees, rewards and NPC/dialogue bindings.",
+      "description_ko": "Fabric·NeoForge 0.1.0: 몬티홀·슬롯·기억력, 참가비·보상과 NPC·대화 연결입니다.",
+      "type": "addon",
+      "product": "dochi-minigames",
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/preview"
+    },
+    {
+      "id": "dochi-mapicon-integration",
+      "label": "Dochi's MapIcon Integration",
+      "label_ko": "Dochi's MapIcon Integration",
+      "shortLabel": "MapIcon",
+      "shortLabel_ko": "지도 아이콘",
+      "description": "Forge / Fabric / NeoForge 0.1.0: Xaero NPC icons, JSON-type defaults, file rules and NPC overrides.",
+      "description_ko": "Forge·Fabric·NeoForge 0.1.0: Xaero NPC 아이콘, 타입 기본값·JSON 규칙·NPC별 설정입니다.",
+      "type": "addon",
+      "product": "dochi-mapicon-integration",
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/all?page=1&pageSize=20&showAlphaFiles=show"
     }
   ],
   "locales": {
     "en": {
       "label": "English",
       "shortLabel": "EN",
-      "description": "A structured documentation hub for DRM Core, Dochi's Real Armor, Dochi's Battleworks, Dochi's Warfare, and Dochi's Spawn Control."
+      "description": "Documentation hub for Dochi's RPG Maker and Dochi mods: Cobblemon Editor, BattleWorks, Warfare, Spawn Control, Real Armor, Minigames and MapIcon Integration."
     },
     "ko": {
       "label": "한국어",
       "shortLabel": "KO",
-      "description": "DRM Core, Dochi's Real Armor, Dochi's Battleworks, 도치 워페어, Dochi's Spawn Control 문서를 한국어로 정리한 문서 허브입니다."
+      "description": "Dochi RPG Maker와 Cobblemon Editor·BattleWorks·Warfare·Spawn Control·Real Armor·Minigames·MapIcon Integration 문서 허브입니다."
     },
     "ru": {
       "label": "Русский",
@@ -253,11 +273,11 @@
       "shortLabel_zh": "Dochi's RPG Maker Forge",
       "shortLabel_ja": "Dochi's RPG Maker Forge",
       "accent": "blue",
-      "description": "Forge 1.20.1 documentation for DRM Core 0.2.1.",
-      "description_ko": "DRM Core 0.2.1의 Forge 1.20.1 문서입니다.",
-      "description_ru": "Документация DRM Core 0.2.1 для Forge 1.20.1.",
-      "description_zh": "DRM Core 0.2.1 的 Forge 1.20.1 文档。",
-      "description_ja": "DRM Core 0.2.1のForge 1.20.1向けドキュメントです。",
+      "description": "Forge 1.20.1 documentation for DRM Core 0.2.2.",
+      "description_ko": "DRM Core 0.2.2의 Forge 1.20.1 문서입니다.",
+      "description_ru": "Документация DRM Core 0.2.2 для Forge 1.20.1.",
+      "description_zh": "DRM Core 0.2.2 的 Forge 1.20.1 文档。",
+      "description_ja": "DRM Core 0.2.2のForge 1.20.1向けドキュメントです。",
       "sections": [
         {
           "id": "getting-started",
@@ -429,11 +449,11 @@
       "shortLabel_zh": "Dochi's RPG Maker Fabric / NeoForge",
       "shortLabel_ja": "Dochi's RPG Maker Fabric / NeoForge",
       "accent": "blue",
-      "description": "Fabric / NeoForge 1.21.1 documentation for DRM Core 0.2.4.",
-      "description_ko": "DRM Core 0.2.4의 Fabric / NeoForge 1.21.1 문서입니다.",
-      "description_ru": "Документация DRM Core 0.2.4 для Fabric / NeoForge 1.21.1.",
-      "description_zh": "DRM Core 0.2.4 的 Fabric / NeoForge 1.21.1 文档。",
-      "description_ja": "DRM Core 0.2.4のFabric / NeoForge 1.21.1向けドキュメントです。",
+      "description": "Fabric / NeoForge 1.21.1 documentation for DRM Core 0.2.5.",
+      "description_ko": "DRM Core 0.2.5의 Fabric·NeoForge 1.21.1 공용 문서입니다.",
+      "description_ru": "Документация DRM Core 0.2.5 для Fabric / NeoForge 1.21.1.",
+      "description_zh": "DRM Core 0.2.5 的 Fabric / NeoForge 1.21.1 文档。",
+      "description_ja": "DRM Core 0.2.5のFabric / NeoForge 1.21.1向けドキュメントです。",
       "sections": [
         {
           "id": "getting-started",
@@ -615,8 +635,8 @@
       "shortLabel_zh": "Battleworks",
       "shortLabel_ja": "Battleworks",
       "accent": "violet",
-      "description": "BattleWorks 0.1.3 for Forge and NeoForge: NPC combat, hitboxes, boss phases, Particle Maker, and supported skill previews.",
-      "description_ko": "Forge·NeoForge용 BattleWorks 0.1.3: NPC 전투, 히트박스, 보스 페이즈, Particle Maker와 지원 스킬 미리보기를 다룹니다.",
+      "description": "BattleWorks 0.1.4 for Forge and NeoForge: NPC combat, hitboxes, phases and effects.",
+      "description_ko": "Forge·NeoForge BattleWorks 0.1.4: NPC 전투, 히트박스, 페이즈와 효과를 제작합니다.",
       "description_ru": "Создание боёв CustomNPCs для Forge 1.20.1 / NeoForge 1.21.1: паттерны, хитбоксы, анимация, преследование и фазы.",
       "description_zh": "为 Forge 1.20.1 / NeoForge 1.21.1 的 CustomNPCs 制作战斗模式、碰撞箱、模型动画、追踪和阶段。",
       "description_ja": "Forge 1.20.1 / NeoForge 1.21.1のCustomNPCs向けにパターン、ヒットボックス、モデルアニメーション、追跡、フェーズを制作します。",
@@ -671,11 +691,8 @@
       "shortLabel_zh": "Cobblemon Editor",
       "shortLabel_ja": "Cobblemon Editor",
       "accent": "green",
-      "description": "Fabric 0.2.2 / NeoForge 0.2.1: trainers, wild/RCT/PvP presentations, party models, custom rewards, and service NPCs.",
-      "description_ko": "Fabric 0.2.2 / NeoForge 0.2.1: 트레이너, 야생·RCT·PvP 연출, 파티 모델, 커스텀 보상과 서비스 NPC를 제작합니다.",
-      "description_ru": "Дополнение DRM для Fabric / NeoForge 1.21.1: тренеры Cobblemon на базе CustomNPCs, встречи с отдельными покемонами, боевые заставки и экраны PokeMart.",
-      "description_zh": "Fabric / NeoForge 1.21.1 DRM 附加模组，用于制作基于 CustomNPCs 的 Cobblemon 训练师、单体宝可梦遭遇、战斗演出和 PokeMart 运行界面。",
-      "description_ja": "Fabric / NeoForge 1.21.1向けDRMアドオン。CustomNPCsベースのCobblemonトレーナー、ポケモン単体戦、バトル演出、PokeMartランタイムを制作できます。",
+      "description": "Fabric / NeoForge 0.2.4: trainers, battle schedulers, saved block stages, FX and service NPCs.",
+      "description_ko": "Fabric·NeoForge 0.2.4: 트레이너, 배틀 스케줄러, 블록 무대·FX와 서비스 NPC를 제작합니다.",
       "sections": [
         {
           "id": "overview",
@@ -728,6 +745,13 @@
           "description_ru": "Слои таймлайна, актёры, звук, сохранение и назначение.",
           "description_zh": "时间轴图层、角色、音频、保存和分配。",
           "description_ja": "タイムラインレイヤー、アクター、音声、保存と割り当て。"
+        },
+        {
+          "id": "scheduler",
+          "label": "Battle Scheduler",
+          "label_ko": "배틀 스케줄러",
+          "description": "Clone actors, scenes, battle flow and automatic area entry.",
+          "description_ko": "클론 배우, 장면, 배틀 진행과 자동 영역 입장을 연결합니다."
         },
         {
           "id": "pokemart",
@@ -795,11 +819,8 @@
       "shortLabel_zh": "Warfare",
       "shortLabel_ja": "Warfare",
       "accent": "amber",
-      "description": "Forge DW 0.3.0 / NeoForge DW 0.2.9: NPC combat, ammunition, mercenaries and shared clones. Forge vehicle AI requires DWE.",
-      "description_ko": "Forge DW 0.3.0 / NeoForge DW 0.2.9: NPC 전투·탄약·용병·공용 클론. Forge 차량 AI는 DWE가 필요합니다.",
-      "description_ru": "DW: бой NPC и общие клоны. Для ИИ техники на Forge нужен DWE.",
-      "description_zh": "DW：NPC 战斗与共享克隆。Forge 载具 AI 需要 DWE。",
-      "description_ja": "DW：NPC戦闘と共通クローン。Forgeの車両AIにはDWEが必要です。",
+      "description": "Forge / NeoForge DW 0.3.0: NPC combat, ammunition, mercenaries and shared clones. Vehicle AI requires DWE.",
+      "description_ko": "Forge·NeoForge DW 0.3.0: NPC 전투·탄약·용병·공용 클론. 차량 AI는 DWE가 필요합니다.",
       "sections": [
         {
           "id": "overview",
@@ -1095,8 +1116,8 @@
       "label_ko": "Dochi's Warfare Expanded",
       "shortLabel": "Warfare Expanded",
       "shortLabel_ko": "워페어 익스팬디드",
-      "description": "Forge 1.20.1 addon requiring DW 0.3.0: vehicle AI, reactions, bombing, reinforcements, and NPC movement.",
-      "description_ko": "DW 0.3.0 필수 Forge 1.20.1 애드온: 차량 AI·반응 기믹·폭격·증원·NPC 이동을 제작합니다.",
+      "description": "Forge 1.20.1 / NeoForge 1.21.1 addon requiring DW 0.3.0: vehicle AI, reactions and support timelines.",
+      "description_ko": "DW 0.3.0 필수 Forge 1.20.1·NeoForge 1.21.1 애드온: 차량 AI·반응 기믹·지원 타임라인입니다.",
       "accent": "amber",
       "sections": [
         {
@@ -1113,6 +1134,58 @@
           "id": "support",
           "label": "Support Timelines",
           "label_ko": "폭격·증원 타임라인"
+        }
+      ]
+    },
+    "dochi-minigames": {
+      "label": "Dochi`s Minigames",
+      "label_ko": "Dochi`s Minigames",
+      "shortLabel": "Minigames",
+      "shortLabel_ko": "미니게임스",
+      "description": "Fabric / NeoForge 0.1.0: Monty Hall, slots and memory games with entry fees, rewards and NPC/dialogue bindings.",
+      "description_ko": "Fabric·NeoForge 0.1.0: 몬티홀·슬롯·기억력, 참가비·보상과 NPC·대화 연결입니다.",
+      "accent": "blue",
+      "sections": [
+        {
+          "id": "setup",
+          "label": "Setup",
+          "label_ko": "설치와 시작"
+        },
+        {
+          "id": "rules",
+          "label": "Rules and Rewards",
+          "label_ko": "게임 규칙과 보상"
+        },
+        {
+          "id": "operations",
+          "label": "GUI and Files",
+          "label_ko": "GUI와 파일"
+        }
+      ]
+    },
+    "dochi-mapicon-integration": {
+      "label": "Dochi's MapIcon Integration",
+      "label_ko": "Dochi's MapIcon Integration",
+      "shortLabel": "MapIcon",
+      "shortLabel_ko": "지도 아이콘",
+      "description": "Forge / Fabric / NeoForge 0.1.0: Xaero NPC icons, JSON-type defaults, file rules and NPC overrides.",
+      "description_ko": "Forge·Fabric·NeoForge 0.1.0: Xaero NPC 아이콘, 타입 기본값·JSON 규칙·NPC별 설정입니다.",
+      "accent": "blue",
+      "sections": [
+        {
+          "id": "setup",
+          "label": "Setup",
+          "label_ko": "설치와 시작"
+        },
+        {
+          "id": "editor",
+          "label": "Icons and Rules",
+          "label_ko": "아이콘과 규칙"
+        },
+        {
+          "id": "operations",
+          "label": "Files and Troubleshooting",
+          "label_ko": "파일과 문제 해결"
         }
       ]
     }

@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 월드 도구
 section: tools
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.2.9
+version: Forge 0.3.0 / NeoForge 0.3.0
 audience: 시나리오 제작자
 tags:
   - clone

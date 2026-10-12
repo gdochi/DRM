@@ -1,21 +1,29 @@
 ---
-title: Fabric 0.2.2 · NeoForge 0.2.1 업데이트
+title: Fabric·NeoForge 0.2.4 업데이트
 slug: cobblemon-editor-current-update
 order: 480
-description: 배틀 연출 적용, 파티 모델, 새 프리셋, 커스텀 보상과 포기 결과 처리입니다.
+description: 배틀 스케줄러, 월드 영역 선택, 블록 무대·FX와 배틀 규칙 업데이트입니다.
 product: drm-cobblemon-editor
 category: 시작하기
 section: overview
 status: 안정
-version: Fabric 0.2.2 / NeoForge 0.2.1
+version: Fabric / NeoForge 0.2.4
 audience: 제작자 / 운영자
 ---
 
 ## 현재 설치 기준
 
-Minecraft 1.21.1 · Java 21에서 **Fabric 0.2.2 / NeoForge 0.2.1**을 사용합니다. 필수 연동은 같은 로더의 DRM Core, CustomNPCs와 Cobblemon입니다. 현재 DRM은 0.2.4이며 애드온의 선언된 최소 DRM은 0.2.2입니다. Cobblemon 범위는 1.7.3 이상 1.9.0 미만입니다.
+Minecraft 1.21.1 · Java 21에서 **Fabric·NeoForge 0.2.4**를 사용합니다. 필수 연동은 같은 로더의 DRM Core, CustomNPCs와 Cobblemon입니다. 현재 DRM은 0.2.5이며 애드온의 최소 DRM은 0.2.4입니다. Cobblemon 범위는 1.7.3 이상 1.9.0 미만입니다.
 
 RCT API와 CobbleDollars는 선택 연동입니다. [설치와 첫 적용](#drm-cobblemon-editor/cobblemon-editor-setup)에서 로더별 요구 조건을 확인하세요.
+
+## 0.2.4 주요 변경
+
+- [배틀 스케줄러](#drm-cobblemon-editor/cobblemon-battle-scheduler): 클론 소환부터 등장·배틀·결과 장면과 정리까지 연결하고, 자동 영역 입장을 서버에서 켜고 끕니다.
+- [블록 무대와 FX](#drm-cobblemon-editor/cobblemon-presentation-region-fx): 월드 블록 상태를 연출 JSON에 캡처하고 입자 발생·이동을 편집합니다.
+- 월드에서 영역 박스를 이동·크기 조절하고 Apply할 수 있습니다. 블록은 변경하지 않습니다.
+- 배틀 룰의 레벨 설정과 도주 정책을 보완했습니다. 고정 레벨·플레이어 파티 평균과 원본·즉시·거리 도주를 구분합니다.
+- Trainer 스키마 23과 Presentation 스키마 5를 유지합니다.
 
 ## 일반 인벤토리
 

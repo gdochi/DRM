@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
-version: Fabric 0.2.2 / NeoForge 0.2.1
+version: Fabric / NeoForge 0.2.4
 audience: 전투 연출 제작자
 tags:
   - presentation
@@ -166,3 +166,7 @@ Motion에서 시작·끝, 진입·퇴장 시간, 오프셋·배율·유지 이�
 길이는 정상 20 TPS 기준입니다. 새 일반 프리셋은 화면 전체 배경과 모델 전신 보정을 사용합니다. 기본 파일은 템플릿으로 두고 `Save As`로 사용자 파일을 만드세요. 사용자 JSON을 새 프리셋으로 일괄 덮어쓰지 마세요.
 
 `raster_warp`, `vs_ribbon`, `versus_mark`, `iris_shutter`, `arena_depth`, `wild_meadow`, `wild_grass`, `rift_sky`, `ground_shadow`, `light_sweep`, `dust_motes` 효과도 사용할 수 있습니다. 일반 야생·RCT·PvP에 연결하려면 [배틀 연출 적용](#drm-cobblemon-editor/cobblemon-encounter-presentations)을 사용합니다.
+
+## 블록 무대·FX와 스케줄러
+
+0.2.4의 Region·FX 제작은 [블록 무대와 FX](#drm-cobblemon-editor/cobblemon-presentation-region-fx), 클론·장면·배틀 실행 연결은 [배틀 스케줄러](#drm-cobblemon-editor/cobblemon-battle-scheduler)를 확인하세요.

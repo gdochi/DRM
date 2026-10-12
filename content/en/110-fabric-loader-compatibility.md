@@ -7,7 +7,7 @@ product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.4
+version: 0.2.5
 audience: Creators / Operators
 ---
 
@@ -21,9 +21,9 @@ Forge 1.20.1 has a separate documentation entry. The existing `core-fabric` rout
 
 | Loader | Minecraft | DRM | Java | Required NPC mod |
 | --- | --- | --- | --- | --- |
-| Forge 47+ | 1.20.1 | 0.2.1 | 17 | Compatible CustomNPCs 1.20.1 build |
-| Fabric | 1.21.1 | 0.2.4 | 21 | CustomNPCs Fabric 1.0.0 |
-| NeoForge 21.1+ | 1.21.1 | 0.2.4 | 21 | Compatible CustomNPCs NeoForge 1.21.1 build |
+| Forge 47+ | 1.20.1 | 0.2.2 | 17 | Compatible CustomNPCs 1.20.1 build |
+| Fabric | 1.21.1 | 0.2.5 | 21 | CustomNPCs Fabric 1.0.0 |
+| NeoForge 21.1+ | 1.21.1 | 0.2.5 | 21 | Compatible CustomNPCs NeoForge 1.21.1 build |
 
 Fabric also requires Loader 0.18.0+ and Fabric API 0.116.11+1.21.1+. See [Installation](#core-fabric/installation) for files and optional integrations.
 

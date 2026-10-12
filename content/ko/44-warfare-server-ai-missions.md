@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 월드 도구
 section: tools
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.2.9
+version: Forge 0.3.0 / NeoForge 0.3.0
 audience: 서버 운영자와 맵 제작자
 tags:
   - server
@@ -29,6 +29,6 @@ config/dochi_warfare/server-ai.json
 
 ## 차량 정책과 전투 지원
 
-Forge 0.3.0의 차량 전역 AI는 DWE가 관리하며 `config/dochi_warfare/vehicle_ai/server-ai.json`에 저장합니다. NPC 정책과 별개로 차량 동작을 중단하고 개별 설정은 보존합니다.
+Forge·NeoForge 0.3.0의 차량 전역 AI는 DWE가 관리하며 `config/dochi_warfare/vehicle_ai/server-ai.json`에 저장합니다. NPC 정책과 별개로 차량 동작을 중단하고 개별 설정은 보존합니다.
 
 폭격·기총 지원·차량 증원·NPC 이동은 [DWE 타임라인](#dochi-warfare-expanded/expanded-support-timeline)에서 제작하고 `/dw callgimmicks <이름> [x y z]`로 호출합니다. 기존 문서의 Mission Core Planner와 `/dw planner`는 현재 소스에서 확인되지 않아 현행 제작 절차에서 제외했습니다.

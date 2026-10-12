@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Overview
 section: overview
 status: Draft
-version: Fabric 0.2.2 / NeoForge 0.2.1
+version: Fabric / NeoForge 0.2.4
 audience: Creators building Cobblemon NPCs and shops
 tags:
   - cobblemon
@@ -29,17 +29,17 @@ The addon uses the display name `Dochi Cobblemon Editor` and the JAR name `dochi
 
 | Loader | Addon version | Required platform |
 | --- | --- | --- |
-| Fabric 1.21.1 | 0.2.2 | Java 21, Fabric Loader 0.17.2+, Fabric API 0.116.6+1.21.1+, CustomNPCs 1.0.0 |
-| NeoForge 1.21.1 | 0.2.1 | Java 21, NeoForge 21.1+, compatible CustomNPCs 1.21.1 |
+| Fabric 1.21.1 | 0.2.4 | Java 21, Fabric Loader 0.18.0+, Fabric API 0.116.11+1.21.1+, CustomNPCs 1.0.0 |
+| NeoForge 1.21.1 | 0.2.4 | Java 21, NeoForge 21.1+, compatible CustomNPCs 1.21.1 |
 
-Both require **Cobblemon 1.7.3 to below 1.9.0 and matching-loader DRM Core 0.2.2+**. Current Fabric and NeoForge Core builds are 0.2.4. Also meet Core's Loader/API requirements where they exceed the addon's minimum.
+Both require **Cobblemon 1.7.3 to below 1.9.0 and matching-loader DRM Core 0.2.4+**. Current Fabric and NeoForge Core builds are 0.2.5. The table gives the complete environment baseline when installing current Core.
 
 RCT API and CobbleDollars are optional. DRM Strategy works without RCT. Every optional integration must match the loader.
 
 | Loader | File |
 | --- | --- |
-| Fabric | `dochi_cobblemon_editor-0.2.2-fabric-1.21.1.jar` |
-| NeoForge | `dochi_cobblemon_editor-0.2.1-neoforge-1.21.1.jar` |
+| Fabric | `dochi_cobblemon_editor-0.2.4-fabric-1.21.1.jar` |
+| NeoForge | `dochi_cobblemon_editor-0.2.4-neoforge-1.21.1.jar` |
 
 Use the same build on the server and all clients. The internal mod ID/resource namespace remains `cobble_npc`. Older live-test results do not establish coverage of every current feature across all supported Cobblemon versions.
 
@@ -49,6 +49,7 @@ Use the same build on the server and all clients. The internal mod ID/resource n
 | --- | --- | --- |
 | `Cobblemon Editor` | Trainer parties, single-Pokémon battles, encounters, rounds, conditions, and rewards | A confirmation prompt and a real Cobblemon battle |
 | `Battle Presentation Maker` | Pre-battle layers, models, backgrounds, timeline, and audio | A full-screen presentation before the battle starts |
+| `Battle Scheduler` | Clones, rooms/areas, intro/result scenes, presentations and admission policy | Actor spawning, battle and cleanup in one run |
 | `PokéMart Editor` | Sales, trades, auctions, currency, stock, and access conditions | A PokéMart screen when interacting with the NPC |
 | `Nurse Joy Editor` | Healing dialogue and healing-machine linkage | A dedicated healing interaction |
 | `Starter Selector Editor` | Starter cards, conditions, sounds, and success actions | A server-validated starter selection screen |

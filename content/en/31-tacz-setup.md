@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Setup
 section: setup
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.2.9
+version: Forge 0.3.0 / NeoForge 0.3.0
 audience: Server operators
 tags:
   - setup
@@ -20,9 +20,9 @@ tags:
 | Loader | Minecraft / Java | Dependency differences |
 | --- | --- | --- |
 | Forge 47+ · DW 0.3.0 | 1.20.1 / Java 17 | TACZ 1.1.8 to below 1.2 required; Player Animator required on client |
-| NeoForge · DW 0.2.9 | 1.21.1 / Java 21 | TACZ 1.1.8 to below 1.2 required; Player Animator 2.0+ optional |
+| NeoForge 21.1.216+ · DW 0.3.0 | 1.21.1 / Java 21 | TACZ 1.1.8 to below 1.2 required; Player Animator 2.0+ required on client |
 
-CustomNPCs is needed for managed-NPC authoring; use its matching loader build. Forge accepts the SuperbWarfare 0.8.9 final and 0.8.9.1 hotfix families after structural checks. NeoForge declares 0.8.9.1 to below 0.8.10. A matching version string alone does not bypass compatibility checks. The detailed checklist and external-gun version examples below target Forge.
+CustomNPCs is needed for managed-NPC authoring; use its matching loader build. Forge accepts the SuperbWarfare 0.8.9 final and 0.8.9.1 hotfix families after structural checks. NeoForge declares exactly SuperbWarfare 0.8.9.1. A matching version string alone does not bypass compatibility checks. The detailed checklist and external-gun version examples below target Forge.
 
 ## Install checklist
 
@@ -43,7 +43,9 @@ Forge Dochi's Warfare 0.3.0 targets Forge 1.20.1. TACZ is the required gun-runti
 
 ## Add DWE for vehicles
 
-For Forge 0.3.0 vehicle editing, AI, crew, and support timelines, install [DWE 0.3.0](#dochi-warfare-expanded/expanded-overview) and SuperbWarfare 0.8.9 or 0.8.9.1. NPC gun combat does not require DWE. Match actual builds on server and clients, even when version numbers are identical.
+For Forge and NeoForge 0.3.0 vehicle editing, AI, crew, and support timelines, install [DWE 0.3.0](#dochi-warfare-expanded/expanded-overview) and SuperbWarfare 0.8.9 or 0.8.9.1. NPC gun combat does not require DWE. Match actual builds on server and clients, even when version numbers are identical.
+
+NeoForge files are `dochi_warfare-0.3.0-neoforge-1.21.1.jar` and `dochi_warfare_expanded-0.3.0-neoforge-1.21.1.jar`. NeoForge DWE requires exactly SuperbWarfare 0.8.9.1.
 
 ## Open the per-NPC GUI
 

@@ -11,6 +11,10 @@ version: 0.2.1
 audience: 제작자 / 운영자
 ---
 
+:::note 이전 변경 기록
+이 페이지는 당시 릴리스 기록입니다. 현재 Core 설치 기준은 0.2.2입니다.
+:::
+
 ## 현재 버전
 
 Minecraft 1.20.1 · Forge · DRM **0.2.1** 기준입니다. 서버와 모든 클라이언트의 JAR을 함께 교체하고 `config/dochi_rpg_maker`와 월드를 백업하세요.

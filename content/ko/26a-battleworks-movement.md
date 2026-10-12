@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: 사용 안내
-version: 0.1.3
+version: 0.1.4
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks

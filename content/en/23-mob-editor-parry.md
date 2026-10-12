@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.3
+version: 0.1.4
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -25,13 +25,13 @@ Enable **Combat Rules → Combat → Suppress Native Attacks** when authored hit
 
 ## 2. Handle legacy scripts deliberately
 
-0.1.3's **Suppress CustomNPC Scripts** stops legacy script execution from competing with BattleWorks. It preserves the stored script data.
+0.1.4's **Suppress CustomNPC Scripts** stops legacy script execution from competing with BattleWorks. It preserves the stored script data.
 
 This is useful when porting a scripted boss. Check any noncombat behavior supplied by those scripts before relying on suppression. A new practice NPC normally does not need it.
 
 ## 3. Current parry support
 
-| Feature | 0.1.3 source behavior |
+| Feature | 0.1.4 source behavior |
 | --- | --- |
 | Global Magic Projectile Parry | Reflection integration for supported Iron's Spellbooks projectiles |
 | Global Lock-on | Global permission with local presentation settings |

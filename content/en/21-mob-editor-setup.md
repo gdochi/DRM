@@ -7,14 +7,14 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guide
-version: 0.1.3
+version: 0.1.4
 audience: Beginners and combat creators
 tags:
   - battleworks
   - combat
 ---
 
-BattleWorks 0.1.3 has Forge 1.20.1 (Java 17, DRM 0.1.7+) and NeoForge 1.21.1 (Java 21, NeoForge 21.1.216+, DRM 0.2.0+) builds. Both require CustomNPCs. The exercise below targets Forge; use 1.21.1 builds of integrations on NeoForge.
+BattleWorks 0.1.4 has Forge 1.20.1 (Java 17, DRM 0.1.7+) and NeoForge 1.21.1 (Java 21, NeoForge 21.1.216+, DRM 0.2.0+) builds. Both require CustomNPCs. The exercise below targets Forge; use 1.21.1 builds of integrations on NeoForge.
 
 ## 1. Prepare a matching installation
 
@@ -23,7 +23,7 @@ BattleWorks 0.1.3 has Forge 1.20.1 (Java 17, DRM 0.1.7+) and NeoForge 1.21.1 (Ja
 | Minecraft | Java Edition 1.20.1 |
 | Loader | Forge 47 series for Minecraft 1.20.1 |
 | Java | 17 |
-| BattleWorks | 0.1.3 |
+| BattleWorks | 0.1.4 |
 | Dochi RPG Maker / DRM | Forge 1.20.1, 0.1.7 or newer; required |
 | CustomNPCs | Compatible Forge 1.20.1 build; required |
 
