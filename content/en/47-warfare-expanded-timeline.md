@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Combat support
 section: support
 status: Draft
-version: 0.3.0
+version: 0.3.1
 audience: Map creators and operators
 ---
 

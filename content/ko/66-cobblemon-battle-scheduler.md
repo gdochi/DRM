@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 배틀 스케줄러
 section: scheduler
 status: 사용 안내
-version: 0.2.4
+version: Fabric / NeoForge 0.2.6
 audience: 보스전 제작자 / 서버 운영자
 ---
 

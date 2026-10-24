@@ -14,6 +14,8 @@ tags:
   - migration
 ---
 
+이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.2.8](#core/release-notes-0-2-8)을 확인하세요.
+
 Minecraft 1.20.1 · Forge
 
 ## 변경

@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 설치
 section: setup
 status: Draft
-version: Fabric / NeoForge 0.2.4
+version: Fabric / NeoForge 0.2.6
 audience: 서버 운영자와 처음 설치하는 제작자
 tags:
   - setup
@@ -19,17 +19,17 @@ tags:
 
 | 로더 | 애드온 버전 | 필수 환경 |
 | --- | --- | --- |
-| Fabric 1.21.1 | 0.2.4 | Java 21, Fabric Loader 0.18.0+, Fabric API 0.116.11+1.21.1+, CustomNPCs 1.0.0 |
-| NeoForge 1.21.1 | 0.2.4 | Java 21, NeoForge 21.1+, CustomNPCs 1.21.1 호환 빌드 |
+| Fabric 1.21.1 | 0.2.6 | Java 21, Fabric Loader 0.18.0+, Fabric API 0.116.11+1.21.1+, CustomNPCs 1.0.0 |
+| NeoForge 1.21.1 | 0.2.6 | Java 21, NeoForge 21.1+, CustomNPCs 1.21.1 호환 빌드 |
 
-두 로더 모두 **Cobblemon 1.7.3 이상 1.9.0 미만과 같은 로더의 DRM Core 0.2.4 이상**이 필요합니다. 현재 Fabric·NeoForge Core 빌드는 0.2.5입니다. 위 표는 현재 Core를 함께 설치할 환경의 기준입니다.
+두 로더 모두 **Cobblemon 1.7.3 이상 1.9.0 미만과 같은 로더의 DRM Core 0.2.8 이상**이 필요합니다. 현재 Fabric·NeoForge Core 빌드는 0.2.8입니다. 위 표는 현재 Core를 함께 설치할 환경의 기준입니다.
 
 RCT API와 CobbleDollars는 선택 연동입니다. RCT를 설치하지 않아도 DRM Strategy로 배틀을 제작할 수 있습니다. 선택 모드도 반드시 해당 로더의 호환 빌드를 사용하세요.
 
 | 로더 | 파일 |
 | --- | --- |
-| Fabric | `dochi_cobblemon_editor-0.2.4-fabric-1.21.1.jar` |
-| NeoForge | `dochi_cobblemon_editor-0.2.4-neoforge-1.21.1.jar` |
+| Fabric | `dochi_cobblemon_editor-0.2.6-fabric-1.21.1.jar` |
+| NeoForge | `dochi_cobblemon_editor-0.2.6-neoforge-1.21.1.jar` |
 
 서버와 모든 클라이언트에 같은 빌드를 설치합니다. 모드 ID와 리소스 네임스페이스는 `cobble_npc`를 유지합니다. 구버전에서 기록된 실게임 검증 결과가 최신 기능과 모든 Cobblemon 버전의 검증을 대신하지는 않습니다.
 
@@ -139,3 +139,7 @@ Pokemon Itself도 최대 16라운드, 라운드 조건과 전투 후 액션을 �
 ## 에디터 뒤로·앞으로 이동
 
 공용 상단바의 화살표는 DRM 코어와 애드온 에디터 사이의 화면 방문 기록을 이동합니다. 이동할 기록이 없으면 아이콘은 비활성 상태로 남습니다. 화면 이동은 파일 저장이나 NPC Apply가 아니므로 작업을 마친 문서는 `Save` 또는 `Save As`로 저장하세요.
+
+## DNPC 트레이너
+
+0.2.6의 트레이너 JSON은 DRM 공통 NPC Actor API를 통해 DNPC에도 Apply할 수 있습니다. DNPC는 선택 모드입니다. Pokemon Itself·PokéMart·Nurse Joy·Starter Selector는 CustomNPCs 전용이며, DNPC 트레이너 지원이 해당 역할의 지원을 뜻하지 않습니다. 애드온 자체의 CustomNPCs 필수 의존성은 유지됩니다.

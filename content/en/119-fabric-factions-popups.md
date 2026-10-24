@@ -7,7 +7,7 @@ product: core-fabric
 category: World And NPC Tools
 section: world-tools
 status: Stable
-version: 0.2.4
+version: 0.2.8
 audience: World and NPC creators
 tags:
   - faction

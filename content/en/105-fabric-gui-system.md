@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: gui-maker
 status: Stable
-version: 0.2.4
+version: 0.2.8
 audience: GUI creators
 tags:
   - gui

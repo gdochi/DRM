@@ -7,26 +7,26 @@ product: dochi-warfare-expanded
 category: 시작하기
 section: overview
 status: Draft
-version: 0.3.0
+version: 0.3.1
 audience: 제작자와 서버 운영자
 ---
 
-**Dochi's Warfare Expanded(DWE)**는 DW 0.3.0을 필수로 사용하는 Forge 1.20.1·NeoForge 1.21.1 애드온입니다. 차량 AI, 무장, 승무원, 차량 반응 기믹과 폭격·증원 타임라인을 담당합니다. NPC의 총기·근접 전투, 탄약, 애니메이션과 공용 클론 보관함은 DW가 담당합니다.
+**Dochi's Warfare Expanded(DWE)**는 DW 0.3.1을 필수로 사용하는 Forge 1.20.1·NeoForge 1.21.1 애드온입니다. 차량 AI, 무장, 승무원, 차량 반응 기믹과 폭격·증원 타임라인을 담당합니다. NPC의 총기·근접 전투, 탄약, 애니메이션과 공용 클론 보관함은 DW가 담당합니다.
 
 ## 설치
 
 | 구성 | 조건 |
 | --- | --- |
 | Minecraft / 로더 | Forge 1.20.1 / Java 17 또는 NeoForge 1.21.1 / Java 21 |
-| DW | 정확히 0.3.0, DW의 TACZ·Player Animator 요구 조건도 충족 |
-| DWE | Forge: `dochi_warfare_expanded-0.3.0.jar`; NeoForge: `dochi_warfare_expanded-0.3.0-neoforge-1.21.1.jar` |
+| DW | 정확히 0.3.1, DW의 TACZ·Player Animator 요구 조건도 충족 |
+| DWE | Forge: `dochi_warfare_expanded-0.3.1.jar`; NeoForge: `dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar` |
 | SuperbWarfare | Forge: 0.8.9 또는 0.8.9.1; NeoForge: 정확히 0.8.9.1. 네이티브 검사 필요 |
 | CustomNPCs | NPC 승무원·전투 하차·NPC 증원을 사용할 때 필요 |
 | DRM | 선택 사항. 설치하면 공용 에디터 선택과 도움말을 사용 |
 
-서버와 클라이언트에 동일한 DW/DWE 빌드를 설치합니다. 같은 0.3.0이라도 통신 규격이 다른 빌드는 혼용할 수 없습니다. 이전 이름의 `dochi_warfare_vehicle-0.3.0.jar`는 새 파일로 교체하고 함께 설치하지 마세요. 내부 모드 ID는 호환성을 위해 `dochi_warfare_vehicle`를 유지합니다.
+서버와 클라이언트에 동일한 DW/DWE 빌드를 설치합니다. 같은 0.3.1이라도 통신 규격이 다른 빌드는 혼용할 수 없습니다. 이전 이름의 `dochi_warfare_vehicle` JAR는 새 파일로 교체하고 함께 설치하지 마세요. 내부 모드 ID는 호환성을 위해 `dochi_warfare_vehicle`를 유지합니다.
 
-NeoForge도 DW·DWE 0.3.0의 분리 구성을 사용합니다. NeoForge 21.1.216 이상 21.2 미만을 사용하고 Forge JAR과 혼용하지 않습니다. [DW 설치](#dochi-warfare/warfare-setup)를 함께 확인하세요.
+NeoForge도 DW·DWE 0.3.1의 분리 구성을 사용합니다. NeoForge 21.1.216 이상 21.2 미만을 사용하고 Forge JAR과 혼용하지 않습니다. [DW 설치](#dochi-warfare/warfare-setup)를 함께 확인하세요.
 
 ## 첫 차량 만들기
 

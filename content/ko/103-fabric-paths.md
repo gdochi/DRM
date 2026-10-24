@@ -7,7 +7,7 @@ product: core-fabric
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.2.4
+version: 0.2.8
 audience: 제작자 / 운영자
 tags:
   - paths

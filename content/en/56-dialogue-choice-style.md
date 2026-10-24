@@ -7,7 +7,7 @@ product: core
 category: Dialogue Editor
 section: dialogue-editor
 status: Stable
-version: 0.1.5
+version: 0.2.8
 audience: Dialogue creators
 tags:
   - dialogue

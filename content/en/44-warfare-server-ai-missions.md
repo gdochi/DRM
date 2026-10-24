@@ -7,7 +7,7 @@ product: dochi-warfare
 category: World Tools
 section: tools
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.3.0
+version: 0.3.1
 audience: Server operators and map makers
 tags:
   - server
@@ -29,6 +29,6 @@ config/dochi_warfare/server-ai.json
 
 ## Vehicle policy and combat support
 
-On Forge and NeoForge 0.3.0, DWE owns global vehicle AI at `config/dochi_warfare/vehicle_ai/server-ai.json`. It suspends vehicle behavior separately from NPC policy while preserving per-vehicle settings.
+On Forge and NeoForge 0.3.1, DWE owns global vehicle AI at `config/dochi_warfare/vehicle_ai/server-ai.json`. It suspends vehicle behavior separately from NPC policy while preserving per-vehicle settings.
 
 Author bombing, gun support, vehicle reinforcements, and NPC movement in the [DWE timeline](#dochi-warfare-expanded/expanded-support-timeline), then invoke `/dw callgimmicks <name> [x y z]`. The previously documented Mission Core Planner and `/dw planner` could not be found in current sources and are excluded from current authoring instructions.

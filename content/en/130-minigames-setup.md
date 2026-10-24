@@ -2,50 +2,52 @@
 title: Minigames Setup and First Game
 slug: minigames-setup
 order: 1300
-description: Create Monty Hall, slots and memory games, then connect them to NPCs or dialogue.
+description: Current installation and first-use guidance.
 product: dochi-minigames
 category: Start
 section: setup
 status: Usage guide
-version: 0.1.0
+version: 0.1.2
 audience: Creators / server operators
 ---
 
-## Install
+## Installation
 
-**Dochi`s Minigames 0.1.0** is a DRM addon for Minecraft 1.21.1 / Java 21. It provides Fabric and NeoForge builds; there is no Forge 1.20.1 build.
+**Dochi’s Minigames 0.1.2** runs without DRM. Install the same loader and build on server and clients.
 
-| Loader | Installable file | Platform requirements |
+| Loader | Minecraft / Java | File |
 | --- | --- | --- |
-| Fabric | `dochi_minigames-0.1.0-fabric-1.21.1.jar` | Fabric Loader 0.18.0+, Fabric API 0.116.11+1.21.1+ |
-| NeoForge | `dochi_minigames-0.1.0-neoforge-1.21.1.jar` | NeoForge 21.1+ |
+| Forge | 1.20.1 / 17 | `dochi_minigames-0.1.2-forge-1.20.1.jar` |
+| Fabric | 1.21.1 / 21 | `dochi_minigames-0.1.2-fabric-1.21.1.jar` |
+| NeoForge | 1.21.1 / 21 | `dochi_minigames-0.1.2-neoforge-1.21.1.jar` |
 
-Both require matching-loader **DRM 0.2.4 or newer**; the current Core is 0.2.5. Current DRM itself requires CustomNPCs, so install it for the complete runtime. Add Cobblemon for Pokémon rewards and CobbleDollars for its entry-fee provider. Keep the loader and actual build aligned on server and clients.
+Fabric needs Loader 0.15.11+ and Fabric API 0.101.2+1.21.1+. Forge needs 47.2.0+; NeoForge needs 21.1+. DRM, CustomNPCs, Cobblemon and CobbleDollars are optional. Add the relevant provider when a document references its currency, conditions or Pokémon rewards.
 
-## Create a first game
+## Create a game
 
-1. Open DRM's editor list with the Core tool and select **Minigames**. Editing requires permission level 2 or higher.
-2. Start from defaults or a new document, then choose Monty Hall, slots or memory.
-3. Set the title, time limit and entry fee in General. Use an amount of `0` for the first trial.
-4. Edit Rules, Symbols and Rewards, then use the editor's test play. Test play charges no fee and grants no real rewards.
-5. Save a user game JSON with `Save As`. Changing an existing profile ID also uses Save As.
-6. Open the target NPC's **NPC Apply Editor**, select Minigames, and bind the saved server JSON.
+1. With permission level 2, run `/minigame editor` or edit a [minigame table](#dochi-minigames/minigames-tables).
+2. Load a preset or create Monty Hall, Slots, Memory, Whack-a-Mob, Timing, High-Low, Shooting Gallery or MWENT.
+3. Set the title, timer and rules. Begin with free entry.
+4. Use supported test-play tools and test the actual table interaction.
+5. Save custom JSON with Save As, or use **Apply to Table** to bind a placed table.
 
-A player's right-click opens the entry-fee confirmation screen. Payment and the game begin when the player presses **Start**, or pulls the lever for slots. Sneaking or holding an editing tool skips game interaction.
+## DRM NPCs and dialogue
 
-## Open from dialogue
+DRM 0.2.8 adds the shared editor selector, NPC Apply, dialogue actions and GUI Maker. Bind a saved game through NPC Apply → Minigames to open it from NPC interaction.
 
-Choose **Go Minigames** in a dialogue choice action or start-node route, then select a file from **Game JSON**. Success closes the dialogue and opens entry confirmation. An unavailable game keeps the dialogue open.
+To enter only through dialogue, leave direct Minigames Apply unset and select **Go Minigames** on a dialogue choice. A direct game binding handles interaction before dialogue. The action ID is `dochi_minigames:play`; existing plain IDs and `.json` paths remain readable.
 
-For a dialogue-only entrance, leave the NPC's direct Minigames binding empty: a directly applied game handles right-click before dialogue. The action ID is `dochi_minigames:play`; both legacy `id: "monty"` and file-picker `id: "monty.json"` are supported.
+Entry is charged when Start is confirmed. Clicking an NPC or cancelling confirmation does not charge. Leaving an active game forfeits the session.
 
 ## Commands
 
 ```text
 /minigame list
 /minigame play monty
+/minigame play mob_battle
 /minigame scores monty
 /minigame editor
+/minigame packs
 ```
 
-`monty` is an example saved game ID. Continue with [rules and rewards](#dochi-minigames/minigames-rules-rewards) and [GUI, files and troubleshooting](#dochi-minigames/minigames-files-gui).
+See [rules and rewards](#dochi-minigames/minigames-rules-rewards), [MWENT](#dochi-minigames/minigames-mwent) and [files / GUI](#dochi-minigames/minigames-files-gui).

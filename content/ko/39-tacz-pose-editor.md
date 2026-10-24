@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 포즈
 section: combat-ai
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.3.0
+version: 0.3.1
 audience: NPC 제작자
 tags:
   - pose

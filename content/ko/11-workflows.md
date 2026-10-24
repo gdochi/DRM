@@ -7,7 +7,7 @@ product: core
 category: 레퍼런스 / 운영
 section: operations
 status: 안정
-version: 0.1.6
+version: 0.2.8
 audience: 제작자
 tags:
   - workflow

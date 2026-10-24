@@ -7,7 +7,7 @@ product: core
 category: 스크립트 API
 section: script-api
 status: 안정
-version: 0.1.6
+version: 0.2.8
 audience: CustomNPCs 대화·퀘스트·전투 연출 스크립트 제작자
 tags:
   - script

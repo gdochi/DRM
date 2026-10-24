@@ -7,7 +7,7 @@ product: core-fabric
 category: 핵심 시스템
 section: getting-started
 status: 안정
-version: 0.2.4
+version: 0.2.8
 audience: 제작자
 tags:
   - concepts

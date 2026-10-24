@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: 사용 안내
-version: 0.1.4
+version: 0.1.5
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -16,7 +16,7 @@ tags:
 
 ## 가장 먼저 확인할 다섯 가지
 
-1. BattleWorks 0.1.4, DRM 0.1.7 이상, 호환 CustomNPCs가 실제로 로드되었는지 봅니다.
+1. BattleWorks 0.1.5, DRM 0.1.7 이상, 호환 CustomNPCs가 실제로 로드되었는지 봅니다.
 2. 지금 NPC에 연결된 파일이 수정한 파일인지 확인합니다.
 3. 문서와 사용할 패턴의 Enabled를 확인합니다.
 4. 전투 테스트는 생존 플레이어로 하고 유효한 적대 타겟을 준비합니다.

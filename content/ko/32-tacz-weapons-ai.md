@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 전투 AI
 section: combat-ai
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.3.0
+version: 0.3.1
 audience: 총기 NPC 제작자
 tags:
   - weapon

@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Guide
-version: 0.1.4
+version: 0.1.5
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -99,7 +99,7 @@ Bundled starter templates and separately distributed bosses, music, and popups a
 
 1. Stop game/server and back up config and world.
 2. Replace old JARs without leaving duplicate BattleWorks/Mob Editor versions.
-3. Ensure DRM 0.1.7 or newer for BattleWorks 0.1.4.
+3. Ensure DRM 0.1.7 or newer for BattleWorks 0.1.5.
 4. Check catalogs and NPC bindings.
 5. Recheck models, skills, audio, and combat.
 

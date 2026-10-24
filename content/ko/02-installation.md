@@ -7,14 +7,14 @@ product: core
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.2.2
+version: 0.2.8
 audience: 서버 운영자
 tags:
   - install
   - forge
 ---
 
-이 페이지는 **Forge 1.20.1 / DRM 0.2.2** 기준입니다. Fabric·NeoForge 1.21.1은 DRM 0.2.5 빌드를 사용합니다. [로더별 설치와 기능 차이](#core-fabric/loader-compatibility)를 확인하세요.
+이 페이지는 **Forge 1.20.1 / DRM 0.2.8** 기준입니다. Fabric·NeoForge 1.21.1은 DRM 0.2.8 빌드를 사용합니다. [로더별 설치와 기능 차이](#core-fabric/loader-compatibility)를 확인하세요.
 
 ## 지원 환경
 
@@ -24,16 +24,16 @@ DRM Core는 `mods.toml` 기준으로 Forge 47 이상, Minecraft 1.20.1 이상 1.
 | --- | --- | --- |
 | Mod Loader | Forge / `javafml` `[47,)` | Forge 1.20.1 계열 |
 | Minecraft | `[1.20.1,1.21)` | 문서는 1.20.1 기준 |
-| DRM Core | `dochi_rpg_maker` 0.2.2 | 클라이언트와 서버 양쪽 필요 |
+| DRM Core | `dochi_rpg_maker` 0.2.8 | 클라이언트와 서버 양쪽 필요 |
 | Java | 17 | Forge 1.20.1 실행 환경과 동일하게 맞춥니다. |
-| CustomNPCs | `[1.20.1,)` | 클라이언트와 서버 양쪽 필수 |
+| CustomNPCs | 호환 1.20.1 빌드 | 해당 NPC 연동 사용 시 양쪽에 설치 |
 
 코어 에디터는 Minecraft 네이티브 `Screen`으로 구현되어 있습니다. 대화/상점/GUI Maker의 기본 동작에는 HTML GUI, MCEF, CNPCExtended가 필요하지 않습니다.
 
 ## 설치 절차
 
 1. 클라이언트와 서버의 `mods` 폴더에 같은 버전의 DRM Core JAR을 넣습니다.
-2. 호환 CustomNPCs 빌드를 양쪽에 설치하고 모드셋을 맞춥니다.
+2. 사용할 NPC 제공자와 애드온의 요구 모드를 양쪽에 설치합니다.
 3. 서버를 시작해 `config/dochi_rpg_maker`가 생성되게 합니다.
 4. 기본 파일이 설치된 뒤 `dialogue_sets`, `gui`, `npc_shops`, `currency`, `hud`, `remnant_msg`, `quests`, `stats`, `items`, `teleporters`, `factions`, `popups` 폴더를 확인합니다.
 5. 코어 아이템을 준비하고 에디터 선택 화면으로 들어갑니다.
@@ -46,15 +46,15 @@ DRM Core는 `mods.toml` 기준으로 Forge 47 이상, Minecraft 1.20.1 이상 1.
 
 ## 선택 연동 모드
 
-| 모드 | 선언 범위 | DRM의 주 용도 |
-| --- | --- | --- |
-| GeckoLib | `[4.7.1,5.0.0)` | NPC 모델과 애니메이션 |
-| Player Animator | `[1.0.0,)` | 플레이어 애니메이션 공급자 |
-| Mob Player Animator | `[1.3.3,)` | 몹/플레이어형 애니메이션 공급자 |
-| Better Combat | `[1.8.0,)` | 전투 애니메이션 연동 |
-| Iron's Spells 'n Spellbooks | `[1.20.1-3.16.2,)` | 마나 HUD와 스킬 연동 |
-| Mowzie's Mobs | `[1.8.2,)` | 타 모드 스킬 연동 |
-| L_Ender's Cataclysm | `[3.31,)` | 타 모드 스킬 연동 |
+| 모드 | DRM의 주 용도 |
+| --- | --- |
+| GeckoLib | NPC 모델과 애니메이션 |
+| Player Animator | 플레이어 애니메이션 공급자 |
+| Mob Player Animator | 몹/플레이어형 애니메이션 공급자 |
+| Better Combat | 전투 애니메이션 연동 |
+| Iron's Spells 'n Spellbooks | 마나 HUD와 스킬 연동 |
+| Mowzie's Mobs | 타 모드 스킬 연동 |
+| L_Ender's Cataclysm | 타 모드 스킬 연동 |
 
 위 연동은 선택 사항이지만 서버 콘텐츠와 모델 공급자가 요구하는 모드는 접속할 모든 클라이언트에도 설치해야 합니다.
 
@@ -82,3 +82,5 @@ DRM Core는 `mods.toml` 기준으로 Forge 47 이상, Minecraft 1.20.1 이상 1.
 :::warning 버전 혼합 주의
 클라이언트만 최신이고 서버가 이전 버전이면 에디터 패킷, 서버 JSON 종류, 런타임 GUI 필드가 어긋날 수 있습니다. 운영 서버에서는 항상 같은 JAR로 맞춰야 합니다.
 :::
+
+최신 변경은 [DRM 0.2.8](#core/release-notes-0-2-8).

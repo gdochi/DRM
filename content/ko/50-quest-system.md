@@ -7,7 +7,7 @@ product: core
 category: 퀘스트 시스템
 section: quest-editor
 status: 안정
-version: 0.1.6
+version: 0.2.8
 audience: 퀘스트 제작자
 tags:
   - quest
@@ -51,3 +51,11 @@ Actions 페이지는 `After Complete`만 노출합니다. 서버 처리 순서�
 ## 플레이어 저널
 
 기본 키는 `U`입니다. 저널은 카테고리/상태 필터, 검색, 상세 정보, 목표/보상 목록, 추적, 수락, 포기, 새로고침, 닫기 컴포넌트를 지원합니다. `gui/default_quest_journal_gui.json`을 GUI Maker에서 열고 운영용 파일은 `Save As`로 저장하세요.
+
+## 0.2.8 액션과 관계 점수
+
+아이템·태그·세력 점수·발전 과제 등은 실행 방식에 맞는 동작과 대상 필드를 제공합니다. JSON 찾기는 등록된 종류의 서버 파일을 선택하며, 다른 팩의 퀘스트와 현재 미저장 퀘스트도 지원되는 선택기에서 찾을 수 있습니다.
+
+세력 점수에서 CustomNPCs 세력 또는 DNPC 관계 그룹을 선택합니다. DNPC 관계는 플레이어 평판이며 추가·차감·설정을 지원합니다. 최신 DRM과 관계 API가 들어 있는 DNPC를 함께 사용해야 하며 DNPC 부재 시 CustomNPCs로 대체하지 않습니다.
+
+퀘스트용 새 액션 목록에서는 `go_stat_builder`, `cobble_npc:go_battle`, `dochi_minigames:play`를 제외합니다. 기존 저장 액션과 대화 에디터 등록은 유지합니다.

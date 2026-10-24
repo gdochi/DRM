@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: remnant-msg
 status: Stable
-version: 0.2.4
+version: 0.2.8
 audience: Creators / Operators
 tags:
   - remnant
@@ -81,3 +81,7 @@ Preview values in GUI Maker can differ from runtime values. Runtime output comes
 | GUI is broken | `guiType`, component IDs, and default GUI path. |
 | Wrong message appears | Message ID referenced by the policy. |
 | Position is wrong | Whether the GUI was opened with the `remnant_msg` profile. |
+
+## 0.2.8 markers and once-per-player triggers
+
+Hidden markers and persistent once-per-player trigger state are supported. Marker visibility and each player’s execution history are separate. Test a new player, a player who has triggered it already, and reconnect behavior. Back up custom messages, policies and the world together.

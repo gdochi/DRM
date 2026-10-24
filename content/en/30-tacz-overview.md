@@ -2,12 +2,12 @@
 title: Dochi's Warfare Overview
 slug: dochi-warfare-overview
 order: 310
-description: Forge DW 0.3.0 and NeoForge 0.3.0 NPC combat, DWE ownership, clones, and authoring tools.
+description: Forge DW 0.3.1 and NeoForge 0.3.1 NPC combat, DWE ownership, clones, and authoring tools.
 product: dochi-warfare
 category: Overview
 section: overview
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.3.0
+version: 0.3.1
 audience: Firearm NPC creators
 tags:
   - TACZ
@@ -15,11 +15,11 @@ tags:
   - overview
 ---
 
-## Forge and NeoForge 0.3.0 update
+## Forge and NeoForge 0.3.1 update
 
-DW owns NPC combat and the addon core. Vehicle AI, weapons, crew, and profiles now belong to [Dochi's Warfare Expanded](#dochi-warfare-expanded/expanded-overview). NPC combat works with DW alone. Vehicle features require DWE 0.3.0 on both Forge and NeoForge. The shared clone library now provides confirmed deletion and recoverable archived files.
+DW owns NPC combat and the addon core. Vehicle AI, weapons, crew, and profiles now belong to [Dochi's Warfare Expanded](#dochi-warfare-expanded/expanded-overview). NPC combat works with DW alone. Vehicle features require DWE 0.3.1 on both Forge and NeoForge. The shared clone library now provides confirmed deletion and recoverable archived files.
 
-Current builds: DW 0.3.0 for Forge 1.20.1 and DW 0.3.0 for NeoForge 1.21.1. Vehicle AI on both loaders requires the separate DWE 0.3.0 addon. Check [loader-specific installation](#dochi-warfare/warfare-setup) for external gun/vehicle dependencies.
+Current builds: DW 0.3.1 for Forge 1.20.1 and DW 0.3.1 for NeoForge 1.21.1. Vehicle AI on both loaders requires the separate DWE 0.3.1 addon. Check [loader-specific installation](#dochi-warfare/warfare-setup) for external gun/vehicle dependencies.
 
 ## What Dochi's Warfare is
 
@@ -96,3 +96,7 @@ Optional gun adapters do not replace their native models, projectiles, hitscan, 
 7. Test one target with simple `Auto` stance before adding advanced targets, pools, grenades, or script overrides.
 
 This keeps the first problem small. If the NPC cannot fire in that baseline setup, the issue is usually mode enablement, gun selection, target selection, distance, line of sight, or ammo/reload policy.
+
+## Distribution versions
+
+This guide follows the local DW **0.3.1** source / release set. On 2026-10-24, the [public Modrinth files](https://modrinth.com/mod/dochis-warfare/versions) reached **0.2.9**. Check the downloaded version before following newer features. Vehicle AI requires matching DWE in addition to DW.

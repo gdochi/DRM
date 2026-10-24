@@ -11,6 +11,8 @@ version: 0.2.5
 audience: Creators / operators
 ---
 
+This is a historical release record. See [DRM 0.2.8](#core-fabric/release-notes-0-2-8) for current guidance.
+
 ## Current installation
 
 DRM Core for Minecraft 1.21.1 / Java 21 is now **0.2.5** on Fabric and NeoForge. Both use the shared documentation; choose matching-loader JARs and dependencies. See [installation](#core-fabric/installation).

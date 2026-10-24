@@ -7,7 +7,7 @@ product: core-fabric
 category: Dialogue Editor
 section: dialogue-editor
 status: Stable
-version: 0.2.4
+version: 0.2.8
 audience: Dialogue creators
 ---
 

@@ -1,17 +1,25 @@
 ---
-title: Fabric and NeoForge 0.2.4 Update
+title: Fabric / NeoForge 0.2.6 update
 slug: cobblemon-editor-current-update
 order: 480
-description: Battle schedulers, world selection, block stages/FX and battle-rule updates.
+description: 0.2.6 requirements, NPC hiding, detection and editing fixes, followed by earlier changes.
 product: drm-cobblemon-editor
 category: Getting Started
 section: overview
 status: Stable
-version: Fabric / NeoForge 0.2.4
+version: Fabric / NeoForge 0.2.6
 audience: Creators / Operators
 ---
 
-## Current requirements
+## Current 0.2.6 changes
+
+Requires **DRM 0.2.8 or later**. Fixes cover post-battle hiding, unhiding on battle-count reset, detection / pursuit / dash and Pokémon appearance previews in Basic settings. An authorized editor holding the DRM Core in either hand can inspect a lifecycle-hidden NPC. This does not clear saved hiding or reveal it to other players.
+
+Choose matching core and addon builds from [Modrinth](https://modrinth.com/mod/drm-cobblemon-editor/versions).
+
+## Previous changes
+
+## Previous 0.2.4 requirements
 
 Use **Fabric / NeoForge 0.2.4** on Minecraft 1.21.1 with Java 21. Required integrations are matching-loader DRM Core, CustomNPCs, and Cobblemon. Current DRM is 0.2.5; the addon requires DRM 0.2.4 or newer. Cobblemon must be 1.7.3 or newer and below 1.9.0.
 

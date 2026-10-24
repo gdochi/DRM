@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: npc-shop
 status: Stable
-version: 0.2.4
+version: 0.2.8
 audience: Shop creators
 tags:
   - shop

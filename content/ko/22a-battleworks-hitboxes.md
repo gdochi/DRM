@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: 사용 안내
-version: 0.1.4
+version: 0.1.5
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -94,7 +94,7 @@ Damage 0과 상태 효과를 조합한 판정도 가능하지만, 효과가 없�
 
 ## 6. 반복 판정 정책 선택하기
 
-0.1.4의 Hitbox 액션에는 **Hit Policy**가 있습니다.
+0.1.5의 Hitbox 액션에는 **Hit Policy**가 있습니다.
 
 | 값 | 의미 | 예 |
 | --- | --- | --- |

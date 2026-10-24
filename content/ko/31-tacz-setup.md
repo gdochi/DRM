@@ -2,12 +2,12 @@
 title: 설치와 첫 NPC 설정
 slug: warfare-setup
 order: 320
-description: Forge 도치 워페어 0.3.0 설치, DW 제작 도구, 구버전 프로필 이전, 첫 관리 NPC 설정을 설명합니다.
+description: Forge 도치 워페어 0.3.1 설치, DW 제작 도구, 구버전 프로필 이전, 첫 관리 NPC 설정을 설명합니다.
 product: dochi-warfare
 category: 설치
 section: setup
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.3.0
+version: 0.3.1
 audience: 서버 운영자
 tags:
   - setup
@@ -19,14 +19,14 @@ tags:
 
 | 로더 | Minecraft / Java | 필수·선택 차이 |
 | --- | --- | --- |
-| Forge 47+ · DW 0.3.0 | 1.20.1 / Java 17 | TACZ 1.1.8 이상 1.2 미만 필수, Player Animator 클라이언트 필수 |
-| NeoForge 21.1.216+ · DW 0.3.0 | 1.21.1 / Java 21 | TACZ 1.1.8 이상 1.2 미만 필수, Player Animator 2.0+ 클라이언트 필수 |
+| Forge 47+ · DW 0.3.1 | 1.20.1 / Java 17 | TACZ 1.1.8 이상 1.2 미만 필수, Player Animator 클라이언트 필수 |
+| NeoForge 21.1.216+ · DW 0.3.1 | 1.21.1 / Java 21 | TACZ 1.1.8 이상 1.2 미만 필수, Player Animator 2.0+ 클라이언트 필수 |
 
 CustomNPCs는 관리 NPC를 제작할 때 필요합니다. 로더별 CustomNPCs를 사용하세요. Forge는 SuperbWarfare 0.8.9 final과 0.8.9.1 hotfix 계열을 구조 검사 후 사용하고, NeoForge는 SuperbWarfare 정확히 0.8.9.1을 선언합니다. 같은 버전 문자열이어도 호환 구조 검사를 통과하지 않으면 연동이 거부될 수 있습니다. 아래의 상세 설치 표와 외부 총기 버전 예시는 Forge 기준입니다.
 
 ## 설치 체크리스트
 
-도치 워페어 0.3.0은 Forge 1.20.1을 대상으로 합니다. TACZ는 필수 총기 런타임 기준이고 Player Animator는 클라이언트 필수입니다. CustomNPCs는 NPC 워크플로에 필요하며 PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, LesRaisins Tactical Equipments는 선택형 연동입니다.
+도치 워페어 0.3.1은 Forge 1.20.1을 대상으로 합니다. TACZ는 필수 총기 런타임 기준이고 Player Animator는 클라이언트 필수입니다. CustomNPCs는 NPC 워크플로에 필요하며 PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, LesRaisins Tactical Equipments는 선택형 연동입니다.
 
 | 구성 요소 | 이 위키 흐름에서 필요 여부 | 메모 |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ CustomNPCs는 관리 NPC를 제작할 때 필요합니다. 로더별 CustomNPCs�
 | TACZ | 필요 | 클라이언트·서버에서 1.1.8부터 지원되는 1.1.x 범위를 사용합니다. |
 | Player Animator | 클라이언트 필수 | 공유 관리 총기 애니메이션 컨트롤러에 필요합니다. |
 | CustomNPCs | NPC 설정에 필요 | 관리 NPC, 용병, 포즈, NPC 클론 워크플로에 필요합니다. |
-| 도치 워페어 | 필요 | 일반적인 모드 서버 플레이에서는 0.3.0 JAR를 클라이언트와 서버 양쪽에 넣습니다. |
+| 도치 워페어 | 필요 | 일반적인 모드 서버 플레이에서는 0.3.1 JAR를 클라이언트와 서버 양쪽에 넣습니다. |
 | PointBlank | 선택 | 지원되는 1.11.1 또는 2.1.0 중 하나만 설치합니다. |
 | SuperbWarfare | 선택 | 0.8.9 final / 0.8.9.1 hotfix의 지원 구조를 검사합니다. |
 | Better Combat | 선택 | 등록된 근접 무기 공격·포즈와 무기 기반 공격 타이밍을 사용할 때 설치합니다. 일반 멀티플레이에서는 서버와 클라이언트의 모드 구성을 맞추세요. |
@@ -43,9 +43,9 @@ CustomNPCs는 관리 NPC를 제작할 때 필요합니다. 로더별 CustomNPCs�
 
 ## DWE 추가 설치
 
-Forge·NeoForge 0.3.0에서 차량 편집·AI·승무원·지원 타임라인을 사용하려면 [DWE 0.3.0](#dochi-warfare-expanded/expanded-overview)과 SuperbWarfare 0.8.9 또는 0.8.9.1을 함께 설치합니다. NPC 총기 전투만 사용할 때는 DWE가 필요하지 않습니다. 같은 버전 번호라도 서버·클라이언트의 빌드를 맞추세요.
+Forge·NeoForge 0.3.1에서 차량 편집·AI·승무원·지원 타임라인을 사용하려면 [DWE 0.3.1](#dochi-warfare-expanded/expanded-overview)과 SuperbWarfare 0.8.9 또는 0.8.9.1을 함께 설치합니다. NPC 총기 전투만 사용할 때는 DWE가 필요하지 않습니다. 같은 버전 번호라도 서버·클라이언트의 빌드를 맞추세요.
 
-NeoForge 설치 파일은 `dochi_warfare-0.3.0-neoforge-1.21.1.jar`와 `dochi_warfare_expanded-0.3.0-neoforge-1.21.1.jar`입니다. NeoForge DWE에는 SuperbWarfare 정확히 0.8.9.1이 필요합니다.
+NeoForge 설치 파일은 `dochi_warfare-0.3.1-neoforge-1.21.1.jar`와 `dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar`입니다. NeoForge DWE에는 SuperbWarfare 정확히 0.8.9.1이 필요합니다.
 
 ## NPC별 GUI 열기
 
@@ -145,7 +145,7 @@ config/dochi_warfare/target_entities/
 
 현재 `Save As` 프로필은 타겟 목록만이 아니라 NPC의 DW 총기 설정 전체를 함께 저장합니다. NPC 하나를 설정한 뒤 프로필로 저장하면 다른 CustomNPCs NPC에서 `Load`해 같은 전투 설정을 빠르게 복제할 수 있습니다. 구버전 타겟 전용 JSON도 불러올 수 있지만, 새 제작 흐름에서는 이 기능을 NPC 설정 프리셋으로 보는 편이 맞습니다.
 
-재사용 JSON의 기준 루트는 `config/dochi_warfare/`입니다. Forge DW 0.3.0은 구버전 CNPC TACZ Fire 설정 폴더의 자동 탐색·복사를 지원하지 않습니다. 현재 DW 데이터는 보존하며 이전 DWE 차량 파일의 가져오기는 [DWE 저장 안내](#dochi-warfare-expanded/expanded-overview)를 따릅니다. 다른 보관 경로는 다음과 같습니다.
+재사용 JSON의 기준 루트는 `config/dochi_warfare/`입니다. Forge DW 0.3.1은 구버전 CNPC TACZ Fire 설정 폴더의 자동 탐색·복사를 지원하지 않습니다. 현재 DW 데이터는 보존하며 이전 DWE 차량 파일의 가져오기는 [DWE 저장 안내](#dochi-warfare-expanded/expanded-overview)를 따릅니다. 다른 보관 경로는 다음과 같습니다.
 
 ```text
 config/dochi_warfare/poses/
@@ -153,3 +153,7 @@ config/dochi_warfare/vehicle_ai/profiles/
 config/dochi_warfare/entity_clones/
 config/dochi_warfare/booby_traps/profiles/
 ```
+
+## 배포 파일 구분
+
+이 문서의 소스·배포 폴더 기준은 DW **0.3.1**입니다. 2026-10-24 확인한 [Modrinth 공개 파일](https://modrinth.com/mod/dochis-warfare/versions)은 **0.2.9**까지이므로 다운로드한 버전과 문서의 기능을 비교하세요. 차량 AI는 DW 단독이 아니라 같은 빌드의 DWE가 필요합니다.

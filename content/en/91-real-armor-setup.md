@@ -2,12 +2,12 @@
 title: Install and Configure Dochi's Real Armor
 slug: dochi-real-armor-setup
 order: 910
-description: Installation requirements, config locations, GUI access, defaults, and legacy migration.
+description: Current installation and first-use guidance.
 product: dochi-real-armor
 category: Install and Configure
 section: setup
 status: Stable
-version: Forge 0.1.1 / NeoForge 0.1.2
+version: 0.1.3
 audience: Players and server operators
 tags:
   - installation
@@ -15,48 +15,30 @@ tags:
   - forge
 ---
 
-## Requirements
+## Installation
 
-| Build | Minecraft | Java | File |
-| --- | --- | --- | --- |
-| Forge 47+ | 1.20.1 | 17 | `dochi_real_armor-0.1.1.jar` |
-| NeoForge 21.1+ | 1.21.1 | 21 | `dochi_real_armor-0.1.2.jar` |
+Real Armor **0.1.3** targets Forge 1.20.1 / Java 17 and Fabric / NeoForge 1.21.1 / Java 21. Install matching `dochi_real_armor-0.1.3-<loader>-<minecraft>.jar` builds on server and clients. Fabric also needs Fabric API.
 
-Install the same loader build on client and server. CustomNPCs and Easy NPC are optional integrations, not hard dependencies. To use NPC armor, install a supported NPC mod for that loader. NeoForge declares CustomNPCs 1.21.1 and Easy NPC 5.9+.
+CustomNPCs, Easy NPC, Dochi NPC Core and DRM are optional integrations. Install a supported NPC mod to use its armor calculations. DNPC supports whole-body / body-part armor, durability, protection enchantments and knockback settings.
 
-## Open the settings
+## Configuration
 
-From the title screen or pause menu, open **Mods**, select **Dochi's Real Armor**, and press **Config**. If Dochi RPG Maker is installed, open its **Mods Config** screen and select the Dochi's Real Armor tab.
-
-The GUI uses ON/OFF switches. Multiplayer changes are sent to the server and require permission level 2. Users without permission can view the screen but cannot apply server-authoritative changes.
-
-## Common config
-
-Forge stores the common file here:
-
-```text
-config/dochi_real_armor-common.toml
-```
-
-If `config/cnpc_real_armor-common.toml` exists and the new file does not, version 0.1.1 copies the legacy file automatically. The old file is retained as a recovery source.
-
-## Default settings
-
-| Setting | Default | Purpose |
+| Loader | File | Open through |
 | --- | --- | --- |
-| CustomNPCs support | ON | Process entities in the `customnpcs` namespace |
-| Easy NPC support | ON | Process entities in the `easy_npc` namespace |
-| Armor calculation | ON | Apply vanilla-style armor reduction |
-| Armor toughness | ON | Include toughness in the vanilla formula |
-| Protection enchantments | ON | Apply compatible Protection enchantments |
-| Knockback resistance | ON | Use armor-item resistance when attributes omit it |
-| Override companion armor | OFF | Replace the CustomNPCs companion path |
-| Body-part armor | OFF | Limit armor to the detected hit region |
-| Damage armor items | ON | Reduce durability when armor protects the NPC |
-| Debug messages | OFF | Report calculations without controlling them |
+| Forge | `config/dochi_real_armor-common.toml` | Mods list Config |
+| NeoForge | `config/dochi_real_armor-common.toml` | Mods list Config |
+| Fabric | `config/dochi_real_armor.json` | Mod Menu Config |
 
-Changes are saved immediately. Restart only when replacing the jar or when another mod caches behavior outside this mod's control.
+With DRM, use the Real Armor tab in shared Mods Config. Without DRM, the standalone screen remains available. Fabric imports an existing Real Armor TOML on first initialization. Back up the original configuration and world.
 
-## NeoForge configuration screen
+## First check
 
-Use the standalone Config screen in the NeoForge Mods list. Forge DRM Mods Config integration is not a promise of the same integration on NeoForge. Shared config storage and server permission checks retain their roles.
+1. Enable the NPC integration you use.
+2. Begin with whole-body armor and equip real armor on the NPC.
+3. Compare damage from the same attack with and without armor.
+4. Enable body-part calculations and durability if needed, then test head / chest / leg hits.
+5. Check `/dochi_real_armor status` and the server log.
+
+Changes while connected are checked by the server and require permission level 2. The `/dochi_real_armor` root offers `status`, `split`, `durability` and `debug`; use command completion for arguments.
+
+DNPC hit regions use the real server entity AABB rather than every visual model bone. CustomNPCs-specific resistance ordering and companion options do not apply to DNPC.

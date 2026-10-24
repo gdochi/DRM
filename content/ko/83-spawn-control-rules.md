@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: 조건과 제한
 section: rules
 status: Draft
-version: 0.1.2
+version: 0.1.3
 audience: 스폰 밸런스를 설계하는 운영자
 tags:
   - conditions

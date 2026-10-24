@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Setup
 section: setup
 status: Draft
-version: Fabric / NeoForge 0.2.4
+version: Fabric / NeoForge 0.2.6
 audience: Server operators and first-time creators
 tags:
   - setup
@@ -19,17 +19,17 @@ tags:
 
 | Loader | Addon version | Required platform |
 | --- | --- | --- |
-| Fabric 1.21.1 | 0.2.4 | Java 21, Fabric Loader 0.18.0+, Fabric API 0.116.11+1.21.1+, CustomNPCs 1.0.0 |
-| NeoForge 1.21.1 | 0.2.4 | Java 21, NeoForge 21.1+, compatible CustomNPCs 1.21.1 |
+| Fabric 1.21.1 | 0.2.6 | Java 21, Fabric Loader 0.18.0+, Fabric API 0.116.11+1.21.1+, CustomNPCs 1.0.0 |
+| NeoForge 1.21.1 | 0.2.6 | Java 21, NeoForge 21.1+, compatible CustomNPCs 1.21.1 |
 
-Both require **Cobblemon 1.7.3 to below 1.9.0 and matching-loader DRM Core 0.2.4+**. Current Fabric and NeoForge Core builds are 0.2.5. The table gives the complete environment baseline when installing current Core.
+Both require **Cobblemon 1.7.3 to below 1.9.0 and matching-loader DRM Core 0.2.8+**. Current Fabric and NeoForge Core builds are 0.2.8. The table gives the complete environment baseline when installing current Core.
 
 RCT API and CobbleDollars are optional. DRM Strategy works without RCT. Every optional integration must match the loader.
 
 | Loader | File |
 | --- | --- |
-| Fabric | `dochi_cobblemon_editor-0.2.4-fabric-1.21.1.jar` |
-| NeoForge | `dochi_cobblemon_editor-0.2.4-neoforge-1.21.1.jar` |
+| Fabric | `dochi_cobblemon_editor-0.2.6-fabric-1.21.1.jar` |
+| NeoForge | `dochi_cobblemon_editor-0.2.6-neoforge-1.21.1.jar` |
 
 Use the same build on the server and all clients. The internal mod ID/resource namespace remains `cobble_npc`. Older live-test results do not establish coverage of every current feature across all supported Cobblemon versions.
 
@@ -119,3 +119,7 @@ The bound editor initializes from the latest server document and source path. Sa
 ## Back and Forward in editors
 
 The shared toolbar arrows follow screen history across DRM Core and addon editors. An arrow remains visible but disabled when there is no destination. Navigation is separate from saving a file or applying it to an NPC; finish with `Save` or `Save As`.
+
+## DNPC trainers
+
+Version 0.2.6 can apply Trainer JSON to DNPC through the public DRM NPC Actor API. DNPC is optional. Pokemon Itself, PokéMart, Nurse Joy and Starter Selector remain CustomNPCs-only. The addon itself still requires CustomNPCs.

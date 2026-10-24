@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "verify": "node scripts/verify-docs.mjs",
     "dev": "node scripts/dev-server.mjs",
     "preview": "node scripts/preview-server.mjs"
   }

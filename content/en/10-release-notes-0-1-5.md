@@ -14,6 +14,8 @@ tags:
   - migration
 ---
 
+This is a historical release record. See [DRM 0.2.8](#core/release-notes-0-2-8) for current guidance.
+
 Minecraft 1.20.1 · Forge
 
 This update adds a dedicated Tooltip Maker and gives creators more control over dialogue choices. It also improves item previews and fixes several HUD display problems.

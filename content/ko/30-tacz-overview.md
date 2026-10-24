@@ -2,12 +2,12 @@
 title: 도치 워페어 개요
 slug: dochi-warfare-overview
 order: 310
-description: Forge DW 0.3.0과 NeoForge 0.3.0의 NPC 전투, DWE 역할 분리, 클론과 제작 도구입니다.
+description: Forge DW 0.3.1과 NeoForge 0.3.1의 NPC 전투, DWE 역할 분리, 클론과 제작 도구입니다.
 product: dochi-warfare
 category: 개요
 section: overview
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.3.0
+version: 0.3.1
 audience: 총기 NPC 제작자
 tags:
   - TACZ
@@ -15,11 +15,11 @@ tags:
   - overview
 ---
 
-## Forge·NeoForge 0.3.0 업데이트
+## Forge·NeoForge 0.3.1 업데이트
 
-DW는 NPC 전투와 애드온 코어를 담당하며 차량 AI·무장·승무원·차량 프로필은 [Dochi's Warfare Expanded](#dochi-warfare-expanded/expanded-overview)로 분리되었습니다. DW만 설치해도 NPC 전투를 사용할 수 있습니다. 차량 기능은 Forge·NeoForge 모두 DWE 0.3.0을 추가했을 때 사용합니다. 클론 보관함에는 삭제 확인과 복구용 보관 폴더가 추가되었습니다.
+DW는 NPC 전투와 애드온 코어를 담당하며 차량 AI·무장·승무원·차량 프로필은 [Dochi's Warfare Expanded](#dochi-warfare-expanded/expanded-overview)로 분리되었습니다. DW만 설치해도 NPC 전투를 사용할 수 있습니다. 차량 기능은 Forge·NeoForge 모두 DWE 0.3.1을 추가했을 때 사용합니다. 클론 보관함에는 삭제 확인과 복구용 보관 폴더가 추가되었습니다.
 
-현재 빌드는 Forge 1.20.1용 DW 0.3.0과 NeoForge 1.21.1용 DW 0.3.0입니다. 두 로더의 차량 AI는 별도 DWE 0.3.0이 필요합니다. 외부 총기·차량 모드의 요구 범위는 [로더별 설치 안내](#dochi-warfare/warfare-setup)를 확인하세요.
+현재 빌드는 Forge 1.20.1용 DW 0.3.1과 NeoForge 1.21.1용 DW 0.3.1입니다. 두 로더의 차량 AI는 별도 DWE 0.3.1이 필요합니다. 외부 총기·차량 모드의 요구 범위는 [로더별 설치 안내](#dochi-warfare/warfare-setup)를 확인하세요.
 
 ## 도치 워페어란?
 
@@ -96,3 +96,7 @@ NPC별 핵심 스위치는 여전히 `TACZ Fire NPC Mode`라는 UI 라벨을 사
 7. 고급 타겟, 풀, 수류탄, 스크립트 오버라이드를 넣기 전에 단순한 `Auto` 스탠스로 한 타겟을 먼저 테스트합니다.
 
 이렇게 시작하면 첫 문제를 작게 유지할 수 있습니다. 이 기본 설정에서도 NPC가 발사하지 못한다면 보통 모드 활성화, 총기 선택, 타겟 선택, 거리, 시야, 탄약/재장전 정책 중 하나가 원인입니다.
+
+## 배포 파일 구분
+
+이 문서의 소스·배포 폴더 기준은 DW **0.3.1**입니다. 2026-10-24 확인한 [Modrinth 공개 파일](https://modrinth.com/mod/dochis-warfare/versions)은 **0.2.9**까지이므로 다운로드한 버전과 문서의 기능을 비교하세요. 차량 AI는 DW 단독이 아니라 같은 빌드의 DWE가 필요합니다.

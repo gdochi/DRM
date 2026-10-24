@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: 설치와 첫 규칙
 section: setup
 status: Draft
-version: 0.1.2
+version: 0.1.3
 audience: 처음 사용하는 서버 운영자
 tags:
   - installation

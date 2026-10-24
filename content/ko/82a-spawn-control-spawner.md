@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: 에디터 사용법
 section: editor
 status: Draft
-version: 0.1.2
+version: 0.1.3
 audience: 스포너 제작자
 tags:
   - spawner

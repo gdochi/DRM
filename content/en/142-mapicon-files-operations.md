@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: Files and Operations
 section: operations
 status: Usage guide
-version: 0.1.0
+version: 0.1.1
 audience: Creators / operators
 ---
 
@@ -28,13 +28,13 @@ For a resource pack's `assets/myserver/textures/icons/vendor.png`, enter `myserv
 
 Only server-loaded NPCs in the player's dimension are displayed: within 4096 blocks, nearest first, up to 512 entries. The server updates every second; clients tracking an entity use its actual position.
 
-Unloading, death, dimension changes and disconnects clear stale entries. Version 0.1.0 does not store fixed POIs or last-known locations for unloaded NPCs. Managed NPCs suppress their normal Xaero radar marker to reduce duplicates. Xaero Fair Play mode does not draw the addon minimap layer.
+Unloading, death, dimension changes and disconnects clear stale entries. Version 0.1.1 does not store fixed POIs or last-known locations for unloaded NPCs. Managed NPCs suppress their normal Xaero radar marker to reduce duplicates. Xaero Fair Play mode does not draw the addon minimap layer.
 
 ## Troubleshooting
 
 | Symptom | Check |
 | --- | --- |
-| No icons | Supported Xaero and XaeroLib, global display, map toggle, loaded NPC, dimension and distance |
+| No icons | Supported Xaero / XaeroLib or JourneyMap 6, global display, map toggle, loaded NPC, dimension and distance |
 | Hidden only for one player | DRM NPC visibility conditions, per-NPC Hide and a matching disabled rule |
 | Unexpected icon | Per-NPC override, JSON path, rule priority and type-default order |
 | Duplicate markers | Whether the addon manages that NPC and compatibility of the installed Xaero build |
@@ -42,3 +42,7 @@ Unloading, death, dimension changes and disconnects clear stale entries. Version
 | Icons disappear far away | Unloaded NPCs are outside the current live-display scope |
 
 Editing, file browsing and saving require permission level 2, while ordinary players can view map icons. Back up map profiles, DRM assets and the world's NPC data together.
+
+## JourneyMap 6
+
+Version 0.1.1 supports JourneyMap 6 / API 2 with the same icon policies and ordinary-radar suppression. Saves synchronize while paused; unloaded NPCs do not become persistent POIs.

@@ -7,7 +7,7 @@ product: core
 category: 다이얼로그 에디터
 section: dialogue-editor
 status: 안정
-version: 0.1.6
+version: 0.2.8
 audience: 대화 제작자
 tags:
   - dialogue
@@ -94,3 +94,7 @@ config/dochi_rpg_maker/dialogue_sets/blacksmith/
 - 화폐 정의는 Currency Editor에서 만듭니다.
 - 대화창의 위치, 패널, 버튼 모양은 GUI Maker에서 만듭니다.
 - 복잡한 전투 AI나 몹 패턴은 DRM Mob Editor 영역입니다.
+
+## 0.2.8 목록 편집
+
+선택지·조건·액션 등 지원 목록은 삭제할 행의 체크와 현재 상세 편집 행을 구분합니다. 전체 선택은 화면 밖 행도 포함하며 Delete는 체크한 항목만 삭제합니다. 노드 드래그·복사·붙여넣기는 기존 연결과 초안 상태를 확인하면서 사용하세요. 음악·효과음 선택기 옆 ▶ / ■는 소리 재생·정지이며 에디터 Back/Forward와 다릅니다.

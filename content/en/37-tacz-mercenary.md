@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Mercenaries
 section: mercenary
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.3.0
+version: 0.3.1
 audience: Creators and players
 tags:
   - mercenary

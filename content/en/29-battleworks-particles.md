@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: Guide
-version: 0.1.4
+version: 0.1.5
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -18,7 +18,7 @@ tags:
 
 A visual file emits a ring for about two seconds. You will play it through a command and a boss Windup. Damage remains a separate Hitbox or Skill.
 
-The shared 0.1.4 Particle Maker uses **separate `dochi.particles.v1` files**. Older inline particleEffects documents remain a compatibility path.
+The shared 0.1.5 Particle Maker uses **separate `dochi.particles.v1` files**. Older inline particleEffects documents remain a compatibility path.
 
 ## 1. Open without an NPC
 

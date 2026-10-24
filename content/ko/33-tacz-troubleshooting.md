@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 운영
 section: operations
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.3.0
+version: 0.3.1
 audience: 운영자
 tags:
   - troubleshooting

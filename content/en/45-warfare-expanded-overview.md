@@ -7,26 +7,26 @@ product: dochi-warfare-expanded
 category: Getting started
 section: overview
 status: Draft
-version: 0.3.0
+version: 0.3.1
 audience: Creators and server operators
 ---
 
-**Dochi's Warfare Expanded (DWE)** requires DW 0.3.0 on Forge 1.20.1 or NeoForge 1.21.1. It owns vehicle AI, weapons, crew, vehicle reactions, bombing and reinforcement timelines. DW owns NPC gun/melee combat, ammunition, animation, and the shared clone library.
+**Dochi's Warfare Expanded (DWE)** requires DW 0.3.1 on Forge 1.20.1 or NeoForge 1.21.1. It owns vehicle AI, weapons, crew, vehicle reactions, bombing and reinforcement timelines. DW owns NPC gun/melee combat, ammunition, animation, and the shared clone library.
 
 ## Installation
 
 | Component | Requirement |
 | --- | --- |
 | Minecraft / loader | Forge 1.20.1 / Java 17 or NeoForge 1.21.1 / Java 21 |
-| DW | Exactly 0.3.0, including its TACZ and client Player Animator requirements |
-| DWE | Forge: `dochi_warfare_expanded-0.3.0.jar`; NeoForge: `dochi_warfare_expanded-0.3.0-neoforge-1.21.1.jar` |
+| DW | Exactly 0.3.1, including its TACZ and client Player Animator requirements |
+| DWE | Forge: `dochi_warfare_expanded-0.3.1.jar`; NeoForge: `dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar` |
 | SuperbWarfare | Forge: 0.8.9 or 0.8.9.1; NeoForge: exactly 0.8.9.1. Native checks must pass |
 | CustomNPCs | Needed for NPC crew, combat dismounts, and NPC reinforcements |
 | DRM | Optional shared editor selection and help integration |
 
-Use identical DW/DWE builds on server and clients. Different builds labeled 0.3.0 can still have incompatible network protocols. Replace the old `dochi_warfare_vehicle-0.3.0.jar`; do not install both names together. The internal mod ID remains `dochi_warfare_vehicle` for compatibility.
+Use identical DW/DWE builds on server and clients. Different builds labeled 0.3.1 can still have incompatible network protocols. Replace older `dochi_warfare_vehicle` JARs; do not install both names together. The internal mod ID remains `dochi_warfare_vehicle` for compatibility.
 
-NeoForge now uses the separated DW/DWE 0.3.0 structure too. Use NeoForge 21.1.216 to below 21.2 and keep Forge JARs out of that instance. See [DW setup](#dochi-warfare/warfare-setup).
+NeoForge now uses the separated DW/DWE 0.3.1 structure too. Use NeoForge 21.1.216 to below 21.2 and keep Forge JARs out of that instance. See [DW setup](#dochi-warfare/warfare-setup).
 
 ## First vehicle
 

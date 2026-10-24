@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: 전투 지원
 section: support
 status: Draft
-version: 0.3.0
+version: 0.3.1
 audience: 맵 제작자와 운영자
 ---
 

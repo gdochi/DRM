@@ -14,6 +14,8 @@ tags:
   - migration
 ---
 
+This is a historical release record. See [DRM 0.2.8](#core/release-notes-0-2-8) for current guidance.
+
 ## Release Scope
 
 0.1.4 is a major systems release rather than a small maintenance patch. A direct JAR comparison against 0.1.3 found 706 added classes and 60 added non-class resources. The original dialogue, shop, currency, GUI, HUD, and Remnant Message systems remain, while the editor suite now also covers quests, stats, database items, factions, teleporters, popups, administration, NPC models, and animation/combat scripting.

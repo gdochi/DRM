@@ -11,6 +11,8 @@ version: 0.1.9
 audience: Creators / Operators
 ---
 
+이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.2.8](#core-fabric/release-notes-0-2-8)을 확인하세요.
+
 ## 변경 사항 0.1.9
 
 ### 추가

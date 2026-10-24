@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: gui-maker
 status: Stable
-version: 0.2.1
+version: 0.2.8
 audience: GUI creators
 tags:
   - gui

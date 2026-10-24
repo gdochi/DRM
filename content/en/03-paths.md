@@ -7,7 +7,7 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.1
+version: 0.2.8
 audience: Creators and server operators
 ---
 

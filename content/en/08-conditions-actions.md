@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: dialogue-editor
 status: Stable
-version: 0.1.6
+version: 0.2.8
 audience: Script / data creators
 tags:
   - condition

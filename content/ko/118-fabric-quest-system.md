@@ -7,7 +7,7 @@ product: core-fabric
 category: 퀘스트 시스템
 section: quest-editor
 status: 안정
-version: 0.2.4
+version: 0.2.8
 audience: 퀘스트 제작자
 tags:
   - quest
@@ -56,3 +56,11 @@ Cobblemon Editor를 설치하면 `DRM 트레이너 승리` 목표를 추가할 �
 ## Save As로 팩 복사하기
 
 새 팩 ID를 입력하고 저장합니다. 퀘스트마다 목표가 있어야 하며, 팩 ID가 잘못되었거나 이미 존재하는 ID와 겹치면 저장을 수정해야 합니다. 같은 팩 안의 `팩ID:퀘스트ID` 참조와 외부 팩 참조를 확인하고, 저장에 성공한 복사본을 불러온 뒤 수락·완료·보상을 시험하세요. 표시 이름을 바꾸는 것과 팩 ID를 바꾸는 것은 다른 작업입니다.
+
+## 0.2.8 액션과 관계 점수
+
+아이템·태그·세력 점수·발전 과제 등은 실행 방식에 맞는 동작과 대상 필드를 제공합니다. JSON 찾기는 등록된 종류의 서버 파일을 선택하며, 다른 팩의 퀘스트와 현재 미저장 퀘스트도 지원되는 선택기에서 찾을 수 있습니다.
+
+세력 점수에서 CustomNPCs 세력 또는 DNPC 관계 그룹을 선택합니다. DNPC 관계는 플레이어 평판이며 추가·차감·설정을 지원합니다. 최신 DRM과 관계 API가 들어 있는 DNPC를 함께 사용해야 하며 DNPC 부재 시 CustomNPCs로 대체하지 않습니다.
+
+퀘스트용 새 액션 목록에서는 `go_stat_builder`, `cobble_npc:go_battle`, `dochi_minigames:play`를 제외합니다. 기존 저장 액션과 대화 에디터 등록은 유지합니다.

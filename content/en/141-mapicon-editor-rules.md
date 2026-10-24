@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: Icon Authoring
 section: editor
 status: Usage guide
-version: 0.1.0
+version: 0.1.1
 audience: NPC creators
 ---
 

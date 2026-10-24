@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: 개요
 section: overview
 status: Stable
-version: Forge 0.1.1 / NeoForge 0.1.2
+version: 0.1.3
 audience: 플레이어, 서버 운영자, 모드팩 제작자
 tags:
   - armor
@@ -26,7 +26,7 @@ tags:
 | CustomNPCs | 엔티티 레지스트리 네임스페이스 `customnpcs` | `enableCustomNpcs` |
 | Easy NPC | 엔티티 레지스트리 네임스페이스 `easy_npc` | `enableEasyNpc` |
 
-어느 NPC 모드도 필수 의존성은 아니지만 실제 방어 기능을 쓰려면 둘 중 하나가 필요합니다.
+어느 NPC 모드도 필수 의존성은 아니지만 실제 방어 기능을 쓰려면 지원 NPC 모드가 필요합니다.
 
 ## 피해 처리 방식
 
@@ -52,3 +52,7 @@ NPC의 바닐라 방어 속성을 읽거나, 장착 아이템의 속성 수정�
 Easy NPC의 발사체 피격은 발사체 이동 경로와 엔티티 충돌 상자를 교차해 판정합니다. 따라서 TACZ 계열처럼 빠르거나 외부에서 관리되는 탄환의 하체 피격도 다리로 인식하기 쉬워졌습니다.
 
 Forge 빌드에서 Dochi RPG Maker 0.1.4 이상이 있으면 DRM의 Mods Config에 탭이 등록됩니다. DRM이 없을 때는 Forge 모드 목록에서 동일한 형태의 독립 설정 화면을 엽니다.
+
+## 0.1.3과 DNPC
+
+Forge·Fabric·NeoForge의 현재 버전은 모두 0.1.3입니다. CustomNPCs·Easy NPC 외에 Dochi NPC Core의 전체·부위별 방어, 내구도, 보호 인챈트와 넉백을 지원합니다. 부위 판정은 서버 AABB 기준이며 CustomNPCs 전용 저항·companion 동작을 DNPC에 적용하지 않습니다. DRM이 없어도 독립 설정 화면을 사용합니다.

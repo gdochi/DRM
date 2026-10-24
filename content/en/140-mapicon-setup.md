@@ -2,37 +2,41 @@
 title: Map Icons Setup and First Icon
 slug: mapicon-setup
 order: 1400
-description: Connect applied DRM NPC JSON to Xaero Minimap and World Map icons.
+description: Current installation and first-use guidance.
 product: dochi-mapicon-integration
 category: Start
 section: setup
 status: Usage guide
-version: 0.1.0
+version: 0.1.1
 audience: Creators / server operators
 ---
 
-## What it does
+## Purpose
 
-**Dochi's MapIcon Integration 0.1.0** displays DRM NPCs as icons on Xaero's Minimap and World Map. Configure defaults by applied JSON type, exceptions for individual JSON files, and per-NPC overrides.
+**MapIcon Integration 0.1.1** configures DRM NPC icons by type, JSON file and individual NPC. It supports Xaero’s Minimap / World Map and **JourneyMap 6 / API 2**.
 
-## Requirements
+## Installation
 
-| Build | Minecraft / Java | Minimum DRM | Current DRM |
+| Build | Minecraft / Java | Minimum DRM | Current guide |
 | --- | --- | --- | --- |
-| Forge | 1.20.1 / 17 | 0.2.1 | 0.2.2 |
-| Fabric | 1.21.1 / 21 | 0.2.4 | 0.2.5 |
-| NeoForge | 1.21.1 / 21 | 0.2.4 | 0.2.5 |
+| Forge | 1.20.1 / 17 | 0.2.1 | 0.2.8 |
+| Fabric | 1.21.1 / 21 | 0.2.7 | 0.2.8 |
+| NeoForge | 1.21.1 / 21 | 0.2.7 | 0.2.8 |
 
-Install matching-loader MapIcon Integration, DRM and DRM's required CustomNPCs dependency on server and clients. Installable filenames follow `dochi_mapicon_integration-0.1.0-<loader>-<minecraft>.jar`.
+Install matching-loader `dochi_mapicon_integration-0.1.1-<loader>-<minecraft>.jar` and DRM on server and clients. Add CustomNPCs or DNPC for the NPCs you use. DRM 0.2.8 itself does not require CustomNPCs.
 
-Map mods are optional client integrations. The current compile baseline is **Xaero Minimap 26.6.0 / World Map 1.47.0**; also install XaeroLib as required by the map mod. Older Xaero compatibility is not guaranteed. Map display needs a supported map mod, and JourneyMap is currently unsupported.
+Map mods are optional client integrations. The Xaero baseline is Minimap 26.6.0 / World Map 1.47.0 with required XaeroLib. JourneyMap uses version 6 and API 2; the recorded runtime check used 6.0.9. This does not guarantee every older map-mod version.
 
-## Create a shop icon
+## Your first shop icon
 
-1. Apply a DRM NPC Shop JSON to the NPC.
-2. Open **World Map Icon Editor** from DRM's editor list or the Mods Config addon tab. Editing requires permission level 2 or higher.
-3. Enable global display, then select NPC Shop in the JSON-type list.
-4. Choose its icon image, size, tint and minimap/world-map visibility.
-5. Use **Save & Apply**, then open the Xaero map to check the result.
+1. Apply DRM NPC Shop JSON to an NPC.
+2. With permission level 2, open the map-icon editor from DRM or Mods Config.
+3. Enable global display and choose the NPC Shop JSON type.
+4. Set image, size, color and minimap / world-map visibility.
+5. Use **Save & Apply** and check the installed map.
 
-Use **Add JSON Exception Rule** for a specific shop file. For one NPC, use the **Map Icon** category inside NPC Basic. Continue with [editor settings and priority](#dochi-mapicon-integration/mapicon-editor-rules).
+Use JSON exceptions for a specific file and NPC Basic’s map-icon category for one NPC. The editor has a category sidebar, central work list / preview and right inspector.
+
+JourneyMap uses the same image, color, size and visibility policies and suppresses duplicate ordinary NPC radar faces for managed / hidden NPCs. Successful saves also synchronize while an integrated server is paused.
+
+See [rule priority](#dochi-mapicon-integration/mapicon-editor-rules) and [files / visibility range](#dochi-mapicon-integration/mapicon-files-operations).

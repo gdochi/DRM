@@ -2,12 +2,12 @@
 title: Setup and First NPC
 slug: warfare-setup
 order: 320
-description: Install Forge Dochi's Warfare 0.3.0, open the DW creator tools, migrate legacy profiles, and build a first managed NPC.
+description: Install Forge Dochi's Warfare 0.3.1, open the DW creator tools, migrate legacy profiles, and build a first managed NPC.
 product: dochi-warfare
 category: Setup
 section: setup
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.3.0
+version: 0.3.1
 audience: Server operators
 tags:
   - setup
@@ -19,14 +19,14 @@ tags:
 
 | Loader | Minecraft / Java | Dependency differences |
 | --- | --- | --- |
-| Forge 47+ · DW 0.3.0 | 1.20.1 / Java 17 | TACZ 1.1.8 to below 1.2 required; Player Animator required on client |
-| NeoForge 21.1.216+ · DW 0.3.0 | 1.21.1 / Java 21 | TACZ 1.1.8 to below 1.2 required; Player Animator 2.0+ required on client |
+| Forge 47+ · DW 0.3.1 | 1.20.1 / Java 17 | TACZ 1.1.8 to below 1.2 required; Player Animator required on client |
+| NeoForge 21.1.216+ · DW 0.3.1 | 1.21.1 / Java 21 | TACZ 1.1.8 to below 1.2 required; Player Animator 2.0+ required on client |
 
 CustomNPCs is needed for managed-NPC authoring; use its matching loader build. Forge accepts the SuperbWarfare 0.8.9 final and 0.8.9.1 hotfix families after structural checks. NeoForge declares exactly SuperbWarfare 0.8.9.1. A matching version string alone does not bypass compatibility checks. The detailed checklist and external-gun version examples below target Forge.
 
 ## Install checklist
 
-Forge Dochi's Warfare 0.3.0 targets Forge 1.20.1. TACZ is the required gun-runtime baseline, and Player Animator is required on the client. CustomNPCs is required for the NPC workflow; PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, and LesRaisins Tactical Equipments are optional integrations.
+Forge Dochi's Warfare 0.3.1 targets Forge 1.20.1. TACZ is the required gun-runtime baseline, and Player Animator is required on the client. CustomNPCs is required for the NPC workflow; PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, and LesRaisins Tactical Equipments are optional integrations.
 
 | Component | Required for this wiki workflow | Notes |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ Forge Dochi's Warfare 0.3.0 targets Forge 1.20.1. TACZ is the required gun-runti
 | TACZ | Yes | Use 1.1.8 through the supported 1.1.x range on client and server. |
 | Player Animator | Client required | Required for the shared managed-gun animation controller. |
 | CustomNPCs | Yes for NPC setup | Required for managed NPCs, mercenaries, poses, and NPC clones. |
-| Dochi's Warfare | Yes | Add the 0.3.0 JAR on both sides for normal modded server play. |
+| Dochi's Warfare | Yes | Add the 0.3.1 JAR on both sides for normal modded server play. |
 | PointBlank | Optional | Use exactly one supported branch: 1.11.1 or 2.1.0. |
 | SuperbWarfare | Optional | Supported native bridges accept 0.8.9 / 0.8.9.1 after compatibility checks; vehicle AI also requires DWE. |
 | Better Combat | Optional | Install it for registered melee weapon attacks, poses, and weapon-based attack timing. Keep the server and client mod sets aligned in normal multiplayer. |
@@ -43,9 +43,9 @@ Forge Dochi's Warfare 0.3.0 targets Forge 1.20.1. TACZ is the required gun-runti
 
 ## Add DWE for vehicles
 
-For Forge and NeoForge 0.3.0 vehicle editing, AI, crew, and support timelines, install [DWE 0.3.0](#dochi-warfare-expanded/expanded-overview) and SuperbWarfare 0.8.9 or 0.8.9.1. NPC gun combat does not require DWE. Match actual builds on server and clients, even when version numbers are identical.
+For Forge and NeoForge 0.3.1 vehicle editing, AI, crew, and support timelines, install [DWE 0.3.1](#dochi-warfare-expanded/expanded-overview) and SuperbWarfare 0.8.9 or 0.8.9.1. NPC gun combat does not require DWE. Match actual builds on server and clients, even when version numbers are identical.
 
-NeoForge files are `dochi_warfare-0.3.0-neoforge-1.21.1.jar` and `dochi_warfare_expanded-0.3.0-neoforge-1.21.1.jar`. NeoForge DWE requires exactly SuperbWarfare 0.8.9.1.
+NeoForge files are `dochi_warfare-0.3.1-neoforge-1.21.1.jar` and `dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar`. NeoForge DWE requires exactly SuperbWarfare 0.8.9.1.
 
 ## Open the per-NPC GUI
 
@@ -145,7 +145,7 @@ config/dochi_warfare/target_entities/
 
 Current `Save As` profiles store the NPC's full DW firearm setup, not just the target list. Configure one NPC, save a profile, then `Load` it on another CustomNPCs NPC to quickly clone the same combat setup. Legacy target-only JSON can still be loaded, but the current authoring flow is best understood as an NPC setup preset.
 
-Reusable JSON belongs under `config/dochi_warfare/`. Forge DW 0.3.0 does not automatically discover or copy the old CNPC TACZ Fire mod's configuration folder. Current DW data is preserved; older DWE vehicle files follow the [DWE import rules](#dochi-warfare-expanded/expanded-overview). Other libraries use these roots:
+Reusable JSON belongs under `config/dochi_warfare/`. Forge DW 0.3.1 does not automatically discover or copy the old CNPC TACZ Fire mod's configuration folder. Current DW data is preserved; older DWE vehicle files follow the [DWE import rules](#dochi-warfare-expanded/expanded-overview). Other libraries use these roots:
 
 ```text
 config/dochi_warfare/poses/
@@ -153,3 +153,7 @@ config/dochi_warfare/vehicle_ai/profiles/
 config/dochi_warfare/entity_clones/
 config/dochi_warfare/booby_traps/profiles/
 ```
+
+## Distribution versions
+
+This guide follows the local DW **0.3.1** source / release set. On 2026-10-24, the [public Modrinth files](https://modrinth.com/mod/dochis-warfare/versions) reached **0.2.9**. Check the downloaded version before following newer features. Vehicle AI requires matching DWE in addition to DW.

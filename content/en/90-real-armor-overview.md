@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: Overview
 section: overview
 status: Stable
-version: Forge 0.1.1 / NeoForge 0.1.2
+version: 0.1.3
 audience: Players, server operators, and modpack creators
 tags:
   - armor
@@ -17,7 +17,7 @@ tags:
 
 ## What the mod does
 
-**Dochi's Real Armor** is a Forge 1.20.1 and NeoForge 1.21.1 compatibility mod that makes equipped armor participate in vanilla-style damage reduction for supported NPC entities. Its mod ID and command root are `dochi_real_armor`.
+**Dochi's Real Armor** is a Forge 1.20.1 and Fabric / NeoForge 1.21.1 compatibility mod that makes equipped armor participate in vanilla-style damage reduction for supported NPC entities. Its mod ID and command root are `dochi_real_armor`.
 
 The mod supports two optional NPC integrations:
 
@@ -26,7 +26,7 @@ The mod supports two optional NPC integrations:
 | CustomNPCs | Entity registry namespace `customnpcs` | `enableCustomNpcs` |
 | Easy NPC | Entity registry namespace `easy_npc` | `enableEasyNpc` |
 
-Neither NPC mod is a hard dependency. Install at least one supported NPC mod to use the armor feature.
+Na supported NPC mod is a hard dependency. Install at least one supported NPC mod to use the armor feature.
 
 ## Processing model
 
@@ -54,3 +54,7 @@ Easy NPC projectile hits are resolved by tracing the projectile path through the
 ## Related integration
 
 On Forge, Dochi RPG Maker 0.1.4 or later is optional. When present, Dochi's Real Armor registers a tab in DRM's Mods Config screen. Without DRM, the Forge Mods list opens a matching standalone configuration screen.
+
+## 0.1.3 and DNPC
+
+Forge, Fabric and NeoForge now use 0.1.3. In addition to CustomNPCs and Easy NPC, DNPC supports whole-body / body-part armor, durability, protection enchantments and knockback. Hit regions use the server AABB; CustomNPCs-specific resistance / companion rules do not apply to DNPC. Standalone configuration remains available without DRM.

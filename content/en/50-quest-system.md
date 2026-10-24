@@ -7,7 +7,7 @@ product: core
 category: Quest System
 section: quest-editor
 status: Stable
-version: 0.1.6
+version: 0.2.8
 audience: Quest creators
 tags:
   - quest
@@ -51,3 +51,11 @@ If a reward fails, the quest remains ready for turn-in and `After Complete` does
 ## Player Journal
 
 The default key is `U`. The journal supports category/state filters, search, details, objective/reward lists, tracking, acceptance, abandonment, refresh, and close components. Edit `gui/default_quest_journal_gui.json` through GUI Maker and save a production variant with `Save As`.
+
+## 0.2.8 actions and relation scores
+
+Item, tag, faction-score and advancement actions expose operation-specific fields. Registered JSON pickers select server files of the correct kind; supported quest pickers include other packs and current unsaved quests.
+
+Score actions select CustomNPCs factions or DNPC relation groups. DNPC reputation supports add, subtract and set. Use current DRM and a DNPC build with the relation API together; an absent DNPC provider does not fall back to CustomNPCs.
+
+The quest-only new-action picker excludes `go_stat_builder`, `cobble_npc:go_battle` and `dochi_minigames:play`. Existing saved actions and dialogue registrations remain supported.

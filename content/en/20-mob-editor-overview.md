@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guide
-version: 0.1.4
+version: 0.1.5
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -18,7 +18,7 @@ tags:
 
 BattleWorks is a Forge 1.20.1 addon for DRM that controls how CustomNPCs fight. Build a sequence such as “approach the player, prepare, swing and deal damage, recover, then select another move.”
 
-This guide follows **BattleWorks 0.1.4 and DRM 0.1.7 or newer**. Existing mob-editor page addresses remain available. Start with a normal humanoid NPC; the first exercise does not require an optional spell or animation mod.
+This guide follows **BattleWorks 0.1.5 and DRM 0.1.7 or newer**. Existing mob-editor page addresses remain available. Start with a normal humanoid NPC; the first exercise does not require an optional spell or animation mod.
 
 ## Follow this learning path
 

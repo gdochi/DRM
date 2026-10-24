@@ -7,7 +7,7 @@ product: core-fabric
 category: 레퍼런스 / 운영
 section: operations
 status: 안정
-version: 0.2.4
+version: 0.2.8
 audience: 제작자 / 운영자
 tags:
   - data-flow

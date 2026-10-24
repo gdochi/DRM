@@ -11,6 +11,8 @@ version: 0.2.4
 audience: Creators / Operators
 ---
 
+This is a historical release record. See [DRM 0.2.8](#core-fabric/release-notes-0-2-8) for current guidance.
+
 :::note Historical release record
 This page records the earlier release. The current Core installation baseline is 0.2.5.
 :::

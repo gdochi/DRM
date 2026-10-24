@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: dialogue-editor
 status: Stable
-version: 0.2.4
+version: 0.2.8
 audience: Dialogue creators
 tags:
   - dialogue
@@ -97,3 +97,7 @@ Runtime keeps translated choice labels inside stable configured rows and scrolls
 :::tip Default Sample
 The bundled `default_set` starts at node 1, routes to greeting node 2, then branches through nodes 3-5. Clone it when testing new features.
 :::
+
+## 0.2.8 list editing
+
+Supported choice, condition and action lists separate checked deletion targets from the active detail row. Select All includes offscreen entries; Delete removes checked items. Check links and drafts when dragging or copying nodes. The ▶ / ■ sound controls preview or stop audio; they are separate from editor Back/Forward.

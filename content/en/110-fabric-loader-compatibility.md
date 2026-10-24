@@ -7,7 +7,7 @@ product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.5
+version: 0.2.8
 audience: Creators / Operators
 ---
 
@@ -19,11 +19,11 @@ Forge 1.20.1 has a separate documentation entry. The existing `core-fabric` rout
 
 ## Installation requirements
 
-| Loader | Minecraft | DRM | Java | Required NPC mod |
+| Loader | Minecraft | DRM | Java | Optional NPC integration |
 | --- | --- | --- | --- | --- |
-| Forge 47+ | 1.20.1 | 0.2.2 | 17 | Compatible CustomNPCs 1.20.1 build |
-| Fabric | 1.21.1 | 0.2.5 | 21 | CustomNPCs Fabric 1.0.0 |
-| NeoForge 21.1+ | 1.21.1 | 0.2.5 | 21 | Compatible CustomNPCs NeoForge 1.21.1 build |
+| Forge 47+ | 1.20.1 | 0.2.8 | 17 | Compatible CustomNPCs 1.20.1 build (optional) |
+| Fabric | 1.21.1 | 0.2.8 | 21 | Compatible CustomNPCs Fabric build (optional) |
+| NeoForge 21.1+ | 1.21.1 | 0.2.8 | 21 | Compatible CustomNPCs NeoForge 1.21.1 build (optional) |
 
 Fabric also requires Loader 0.18.0+ and Fabric API 0.116.11+1.21.1+. See [Installation](#core-fabric/installation) for files and optional integrations.
 
@@ -54,3 +54,5 @@ Available on Fabric and NeoForge with permission level 2.
 `start` bypasses normal availability gates. `complete` forces completion and grants unclaimed rewards. Whole-quest `reset` clears progress and reward records; it does not reclaim granted items or currency. Resetting one objective retains sibling progress and reward history.
 
 Quests created in the current editor use automatic completion on both loaders. When migrating older JSON with `completionMode: turn_in`, Fabric retains manual turn-in while NeoForge completes automatically. Check the reward timing when importing that legacy data.
+
+Current changes: [DRM 0.2.8](#core-fabric/release-notes-0-2-8).

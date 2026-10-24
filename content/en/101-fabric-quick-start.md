@@ -2,12 +2,12 @@
 title: Quick Start
 slug: quick-start
 order: 20
-description: The shortest path into DRM Core 0.2.5 on Fabric and NeoForge 1.21.1.
+description: The shortest path into DRM Core 0.2.8 on Fabric and NeoForge 1.21.1.
 product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.5
+version: 0.2.8
 audience: First-time users
 tags:
   - quick-start
@@ -17,8 +17,8 @@ tags:
 ## First Launch
 
 1. Prepare Minecraft 1.21.1 and Java 21. Fabric needs Loader 0.18.0+ and Fabric API 0.116.11+1.21.1+; NeoForge needs 21.1+.
-2. Put the same matching-loader DRM Core 0.2.5 JAR in the client and server `mods` folders.
-3. Install matching-loader CustomNPCs on the server and clients: Fabric 1.0.0 or a compatible NeoForge 1.21.1 build. It is required by DRM.
+2. Put the same matching-loader DRM Core 0.2.8 JAR in the client and server `mods` folders.
+3. Add matching-loader CustomNPCs on both sides for its NPC features. It is optional in DRM 0.2.8; addons may still require it.
 4. Start the world or server once so `config/dochi_rpg_maker` is created.
 5. In Creative mode or with edit permission, get the `Dochi RPG Maker Core` item from the CustomNPCs tab or run `/give @s dochi_rpg_maker:dialogue_editor`.
 
@@ -93,6 +93,8 @@ If you edit server JSON by hand, run `/drm reload` or review `settings/reload_po
 
 In 0.1.9, choose **Scene Maker** in the editor selector to build camera scenes. See **Scene Maker** for timeline, world-pin dragging, curves, and playback commands.
 
-In 0.2.5, **Tooltip Maker** is available as a built-in editor on Fabric and NeoForge. Use it to design item hover layouts, previews, scrolling content, and entrance effects. Dialogue choices also support per-node text sizing and optional pulse highlights.
+In 0.2.8, **Tooltip Maker** is available as a built-in editor on Fabric and NeoForge. Use it to design item hover layouts, previews, scrolling content, and entrance effects. Dialogue choices also support per-node text sizing and optional pulse highlights.
 
 The shared topbar always shows back and forward arrows. Hover for their names. They move between previously opened screens and preserve editing state; they are separate from Undo/Redo. An arrow is disabled when there is no screen in that direction. Addon screens need an updated addon build to use these controls.
+
+Current changes: [DRM 0.2.8](#core-fabric/release-notes-0-2-8).

@@ -7,7 +7,7 @@ product: core
 category: Script API
 section: script-api
 status: Stable
-version: 0.1.6
+version: 0.2.8
 audience: CustomNPCs combat and boss script authors
 tags:
   - script

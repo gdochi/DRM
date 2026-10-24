@@ -7,7 +7,7 @@ product: core-fabric
 category: Operations
 section: operations
 status: Stable
-version: 0.2.4
+version: 0.2.8
 audience: Server operators
 tags:
   - admin
@@ -36,3 +36,7 @@ Sections for unavailable integrations are disabled.
 - FTB Quests progress may belong to a team rather than one player.
 
 Create definitions and content in their normal editors. Use DRM Admin for player-state inspection and recovery.
+
+## 0.2.8 administration
+
+Batch changes show progress. On Fabric / NeoForge, a compatible Cobblemon Editor registers trainer progress inspection and victory-count resets. These tools require the addon. In the current addon, resetting the battle count also unhides a post-battle-hidden NPC. Check the target player, NPC and reset scope.

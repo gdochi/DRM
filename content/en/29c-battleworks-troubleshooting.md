@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Guide
-version: 0.1.4
+version: 0.1.5
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -16,7 +16,7 @@ tags:
 
 ## Check these five things first
 
-1. Verify BattleWorks 0.1.4, DRM 0.1.7 or newer, and compatible CustomNPCs are loaded.
+1. Verify BattleWorks 0.1.5, DRM 0.1.7 or newer, and compatible CustomNPCs are loaded.
 2. Confirm the NPC references the file you edited.
 3. Check document and pattern Enabled.
 4. Test with a Survival player and a valid hostile target.

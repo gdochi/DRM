@@ -7,14 +7,14 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.2
+version: 0.2.8
 audience: Server operators
 tags:
   - install
   - forge
 ---
 
-This page targets **Forge 1.20.1 / DRM 0.2.2**. Fabric and NeoForge 1.21.1 use DRM 0.2.5 builds. See [loader requirements and feature differences](#core-fabric/loader-compatibility).
+This page targets **Forge 1.20.1 / DRM 0.2.8**. Fabric and NeoForge 1.21.1 use DRM 0.2.8 builds. See [loader requirements and feature differences](#core-fabric/loader-compatibility).
 
 ## Supported Environment
 
@@ -24,16 +24,16 @@ DRM Core targets Forge 47+, Minecraft 1.20.1 up to but not including 1.21. The m
 | --- | --- | --- |
 | Mod Loader | Forge / `javafml` `[47,)` | Forge 1.20.1 family |
 | Minecraft | `[1.20.1,1.21)` | Docs assume 1.20.1 |
-| DRM Core | `dochi_rpg_maker` 0.2.2 | Required on both client and server |
+| DRM Core | `dochi_rpg_maker` 0.2.8 | Required on both client and server |
 | Java | 17 | Match the Forge 1.20.1 runtime. |
-| CustomNPCs | `[1.20.1,)` | Required on both client and server. |
+| CustomNPCs | Compatible 1.20.1 build | Optional; install on both sides for its NPC features. |
 
 Core editors are native Minecraft `Screen` implementations. Dialogue, shop, and GUI Maker basics do not require HTML GUI, MCEF, or CNPCExtended.
 
 ## Install Steps
 
 1. Put the same DRM Core JAR in the client and server `mods` folders.
-2. Install a compatible CustomNPCs build on both sides and keep the modset aligned.
+2. Add NPC providers and integrations required by your chosen content.
 3. Start the server so `config/dochi_rpg_maker` is created.
 4. After bundled files are installed, review `dialogue_sets`, `gui`, `npc_shops`, `currency`, `hud`, `remnant_msg`, `quests`, `stats`, `items`, `teleporters`, `factions`, and `popups`.
 5. Prepare the core item and open the editor selector.
@@ -82,3 +82,5 @@ Bundled default dialogue, GUI, shop, and Remnant Msg sample files may be refresh
 :::warning Version Matching
 If the client is newer than the server, editor packets, server JSON kinds, and runtime GUI fields can drift. Keep the same JAR on both sides.
 :::
+
+Current changes: [DRM 0.2.8](#core/release-notes-0-2-8).

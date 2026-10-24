@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Presets and Operations
 section: operations
 status: Draft
-version: 0.1.2
+version: 0.1.3
 audience: Server operators and content distributors
 tags:
   - presets
@@ -124,3 +124,7 @@ Check whether native spawning and a managed profile are both enabled. After the 
 - matching server-clone data when using CustomNPCs targets
 
 Backing up JSON alone does not restore entities already present in the world or data owned by other mods.
+
+## 0.1.3 NPC and vehicle integration
+
+DRM, CustomNPCs, DNPC and Warfare are optional integrations. Default DNPC initialization needs the compatible DRM NPC API; it does not clone saved DNPC templates. See [vehicle saving and spawning](#dochi-spawn-control/spawn-control-vehicles) for MTS, Superb Warfare, Aircraft and Automobility.

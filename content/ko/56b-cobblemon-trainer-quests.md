@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 트레이너 승리 퀘스트
 section: trainer
 status: Draft
-version: Fabric / NeoForge 0.2.4
+version: Fabric / NeoForge 0.2.6
 audience: Creators
 ---
 

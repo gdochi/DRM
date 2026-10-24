@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: 사용 안내
-version: 0.1.4
+version: 0.1.5
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -25,13 +25,13 @@ tags:
 
 ## 2. 기존 스크립트가 함께 움직이는 NPC
 
-0.1.4의 **Suppress CustomNPC Scripts**는 기존 스크립트 실행을 억제해 두 전투 제어가 같은 NPC 모션을 계속 바꾸는 충돌을 줄이는 옵션입니다. 저장된 스크립트 데이터를 삭제하는 기능은 아닙니다.
+0.1.5의 **Suppress CustomNPC Scripts**는 기존 스크립트 실행을 억제해 두 전투 제어가 같은 NPC 모션을 계속 바꾸는 충돌을 줄이는 옵션입니다. 저장된 스크립트 데이터를 삭제하는 기능은 아닙니다.
 
 이전 스크립트 보스를 BattleWorks 문서로 옮긴 경우에 검토합니다. 그 NPC의 스크립트가 전투 외 기능도 담당한다면 어떤 동작이 함께 중단되는지 확인하세요. 새 NPC의 첫 실습에서는 필요 없이 켤 이유가 없습니다.
 
 ## 3. 패링 설정의 실제 지원 범위
 
-| 기능 | 0.1.4 소스 기준 |
+| 기능 | 0.1.5 소스 기준 |
 | --- | --- |
 | 공통 Magic Projectile Parry | 지원되는 Iron's Spellbooks 투사체 반사 연동 |
 | 공통 Lock-on | 전역 허용 설정과 클라이언트 표현 설정 |

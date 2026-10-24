@@ -14,6 +14,8 @@ tags:
   - changelog
 ---
 
+This is a historical release record. See [DRM 0.2.8](#core-fabric/release-notes-0-2-8) for current guidance.
+
 0.1.8 is a major update built on the dialogue, shop, Teleporter, and NPC Spawner tools from 0.1.7. It adds quests, factions, popups, administration, and a much larger asset and NPC presentation toolset.
 
 ## New At A Glance

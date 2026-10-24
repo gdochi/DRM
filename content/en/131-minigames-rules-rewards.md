@@ -7,7 +7,7 @@ product: dochi-minigames
 category: Authoring
 section: rules
 status: Usage guide
-version: 0.1.0
+version: 0.1.2
 audience: Game creators
 ---
 
@@ -50,3 +50,15 @@ Item rewards grant the configured item. Symbol rewards use the game's selected r
 Referenced items, symbols and Pokémon rewards are checked before payment. The server owns scores, hidden answers, payment and grants. Each session settles once. Item rewards that do not fit in the inventory are dropped; inspect notifications and server logs for grant errors. Failed grants are not automatically retried.
 
 After saving, check both free editor test play and the actual entry-confirmation flow. [NPC and dialogue bindings](#dochi-minigames/minigames-setup) are covered on the start page.
+
+## Additional games
+
+| Game | Play and authoring |
+| --- | --- |
+| Whack-a-Mob | Hit emerging targets, avoid traps; configure models and timing. |
+| Timing | Stop inside the success zone; configure rounds, speed and shrinking windows. |
+| High-Low | Predict the next card or cash out a streak. Ties retry; wrong guesses / timeouts lose the accumulated score. |
+| Shooting Gallery | Aim at differently sized targets and avoid explosive traps; configure weapon models, ammo, reload, fire interval and scores. |
+| MWENT | Factions, leaders, decks and round strategy; see [MWENT](#dochi-minigames/minigames-mwent). |
+
+Without DRM, use free or item entry and item rewards. DRM currencies / conditions and other integrated rewards require their providers.

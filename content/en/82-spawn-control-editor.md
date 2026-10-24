@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Editor
 section: editor
 status: Draft
-version: 0.1.2
+version: 0.1.3
 audience: Spawn-rule creators
 tags:
   - editor

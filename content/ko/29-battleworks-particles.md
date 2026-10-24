@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: 사용 안내
-version: 0.1.4
+version: 0.1.5
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -18,7 +18,7 @@ tags:
 
 약 2초 동안 원형 입자를 방출하는 효과를 만들고, Minecraft 명령어와 보스의 Windup에서 재생합니다. **Particle Maker의 결과는 시각 효과 파일**입니다. 피해는 별도 Hitbox나 스킬로 연결합니다.
 
-0.1.4의 공용 Particle Maker는 **별도 `dochi.particles.v1` 파일**을 사용합니다. 예전 문서의 내장 `particleEffects` 방식과 구분하세요.
+0.1.5의 공용 Particle Maker는 **별도 `dochi.particles.v1` 파일**을 사용합니다. 예전 문서의 내장 `particleEffects` 방식과 구분하세요.
 
 ## 1. NPC 없이 편집기 열기
 

@@ -7,7 +7,7 @@ product: core
 category: 레퍼런스 / 운영
 section: operations
 status: 안정
-version: 0.2.1
+version: 0.2.8
 audience: 고급 사용자
 tags:
   - json

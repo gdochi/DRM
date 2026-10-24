@@ -7,7 +7,7 @@ product: core
 category: Reference / Operations
 section: operations
 status: Stable
-version: 0.2.1
+version: 0.2.8
 audience: Advanced users
 tags:
   - json

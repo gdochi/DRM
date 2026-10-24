@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 서비스 NPC
 section: services
 status: Draft
-version: Fabric / NeoForge 0.2.4
+version: Fabric / NeoForge 0.2.6
 audience: 스타터 선택 NPC를 만드는 제작자
 tags:
   - starter-selector

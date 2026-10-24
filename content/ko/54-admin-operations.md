@@ -2,12 +2,12 @@
 title: DRM 관리자 도구
 slug: drm-administration
 order: 140
-description: 0.1.4 관리자 화면에서 플레이어 데이터를 조회하고 권한 있는 변경을 수행하는 방법입니다.
+description: 현재 관리자 화면에서 플레이어 데이터를 조회하고 권한 있는 변경을 수행하는 방법입니다.
 product: core
 category: 운영 / 레퍼런스
 section: operations
 status: 안정
-version: 0.1.6
+version: 0.2.8
 audience: 서버 운영자
 tags:
   - admin
@@ -30,3 +30,6 @@ DRM Admin 기본 키는 `F7`입니다. 키바인드만으로 권한이 생기지
 
 정의 제작은 각 에디터에서 하고, DRM Admin은 플레이어 상태 관리와 복구에만 사용하세요.
 
+## 0.2.8 관리자 변경
+
+일괄 변경에는 진행 상태가 표시됩니다. Fabric·NeoForge에서는 호환 Cobblemon Editor가 등록한 트레이너 진행도와 승리 횟수 초기화도 사용할 수 있습니다. 애드온이 없으면 해당 기능이 자동으로 제공되지는 않습니다. 현재 애드온의 전투 횟수 초기화는 전투 후 숨김도 해제합니다. 대상 플레이어·NPC와 초기화 범위를 확인하세요.

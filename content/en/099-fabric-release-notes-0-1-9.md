@@ -11,6 +11,8 @@ version: 0.1.9
 audience: Creators / Operators
 ---
 
+This is a historical release record. See [DRM 0.2.8](#core-fabric/release-notes-0-2-8) for current guidance.
+
 ## Change Log 0.1.9
 
 ### Added

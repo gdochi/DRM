@@ -7,7 +7,7 @@ product: dochi-warfare
 category: World Tools
 section: tools
 status: Draft
-version: Forge 0.3.0 / NeoForge 0.3.0
+version: 0.3.1
 audience: Scenario creators
 tags:
   - clone
@@ -63,7 +63,7 @@ config/dochi_warfare/entity_clones/vehicle/
 
 Treat these files as server content. Use the in-game `Clone` and `Summon` workflow for ordinary authoring so server validation and sanitization remain in effect.
 
-## Forge 0.3.0 deletion and recovery
+## Forge 0.3.1 deletion and recovery
 
 Select an NPC or vehicle entry, choose Delete, then confirm the displayed type and ID. Escape or Cancel returns without deletion. Already-spawned entities are unaffected.
 

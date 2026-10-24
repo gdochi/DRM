@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Scheduler
 section: scheduler
 status: Usage guide
-version: 0.2.4
+version: Fabric / NeoForge 0.2.6
 audience: Encounter creators / server operators
 ---
 

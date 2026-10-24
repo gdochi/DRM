@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: Guide
-version: 0.1.4
+version: 0.1.5
 audience: Beginners and combat creators
 tags:
   - battleworks

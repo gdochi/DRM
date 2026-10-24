@@ -1,17 +1,25 @@
 ---
-title: Fabric·NeoForge 0.2.4 업데이트
+title: Fabric·NeoForge 0.2.6 업데이트
 slug: cobblemon-editor-current-update
 order: 480
-description: 배틀 스케줄러, 월드 영역 선택, 블록 무대·FX와 배틀 규칙 업데이트입니다.
+description: 0.2.6 설치 조건, NPC 숨김·탐지·편집 개선과 이전 변경 기록입니다.
 product: drm-cobblemon-editor
 category: 시작하기
 section: overview
 status: 안정
-version: Fabric / NeoForge 0.2.4
+version: Fabric / NeoForge 0.2.6
 audience: 제작자 / 운영자
 ---
 
-## 현재 설치 기준
+## 0.2.6 최신 변경
+
+DRM **0.2.8 이상**이 필요합니다. 전투 후 NPC 숨김, 전투 횟수 초기화 시 숨김 해제, 전투 전 탐지·추적·대시와 포켓몬 외형의 Basic 미리보기를 수정했습니다. 편집 권한이 있는 사용자가 DRM Core를 어느 손에든 들면 생명주기로 숨겨진 NPC를 편집용으로 볼 수 있습니다. 다른 플레이어의 표시나 저장된 숨김 상태를 자동으로 바꾸지 않습니다.
+
+[Modrinth 0.2.6](https://modrinth.com/mod/drm-cobblemon-editor/versions)에서 같은 로더의 Core·애드온을 함께 맞추세요.
+
+## 이전 변경 기록
+
+## 0.2.4 당시 설치 기준
 
 Minecraft 1.21.1 · Java 21에서 **Fabric·NeoForge 0.2.4**를 사용합니다. 필수 연동은 같은 로더의 DRM Core, CustomNPCs와 Cobblemon입니다. 현재 DRM은 0.2.5이며 애드온의 최소 DRM은 0.2.4입니다. Cobblemon 범위는 1.7.3 이상 1.9.0 미만입니다.
 

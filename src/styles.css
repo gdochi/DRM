@@ -308,6 +308,9 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
   height: calc(100% - 10px);
   object-fit: contain;
 }
+.mod-logo-box img[src$="/dochi_npc_core.png"] {
+  image-rendering: pixelated;
+}
 .mod-logo-fallback {
   color: var(--muted);
   font-size: 0.82rem;

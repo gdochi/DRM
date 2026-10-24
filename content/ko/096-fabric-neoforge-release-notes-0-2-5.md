@@ -11,6 +11,8 @@ version: 0.2.5
 audience: 제작자 / 운영자
 ---
 
+이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.2.8](#core-fabric/release-notes-0-2-8)을 확인하세요.
+
 ## 현재 설치 기준
 
 Minecraft 1.21.1 / Java 21의 Fabric·NeoForge DRM Core는 **0.2.5**입니다. 기존 두 로더 공용 문서를 사용하되 JAR과 의존성은 같은 로더로 맞춥니다. [설치 준비](#core-fabric/installation)를 확인하세요.

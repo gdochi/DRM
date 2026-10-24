@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 운영
 section: operations
 status: Draft
-version: Fabric / NeoForge 0.2.4
+version: Fabric / NeoForge 0.2.6
 audience: 서버 운영자와 콘텐츠 배포자
 tags:
   - paths

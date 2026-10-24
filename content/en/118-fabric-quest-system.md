@@ -7,7 +7,7 @@ product: core-fabric
 category: Quest System
 section: quest-editor
 status: Stable
-version: 0.2.4
+version: 0.2.8
 audience: Quest creators
 tags:
   - quest
@@ -56,3 +56,11 @@ Drag dividers between the tree/work area and information/description panels to r
 ## Copying a pack with Save As
 
 Enter a new pack ID and save. Each quest needs objectives; invalid or already-used pack IDs must be corrected. Check `pack:quest` references within the copy and references to other packs, then load the saved copy and test acceptance, completion, and rewards. Changing the display name is separate from changing the pack ID.
+
+## 0.2.8 actions and relation scores
+
+Item, tag, faction-score and advancement actions expose operation-specific fields. Registered JSON pickers select server files of the correct kind; supported quest pickers include other packs and current unsaved quests.
+
+Score actions select CustomNPCs factions or DNPC relation groups. DNPC reputation supports add, subtract and set. Use current DRM and a DNPC build with the relation API together; an absent DNPC provider does not fall back to CustomNPCs.
+
+The quest-only new-action picker excludes `go_stat_builder`, `cobble_npc:go_battle` and `dochi_minigames:play`. Existing saved actions and dialogue registrations remain supported.

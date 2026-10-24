@@ -7,7 +7,7 @@ product: dochi-minigames
 category: Files and Operations
 section: operations
 status: Usage guide
-version: 0.1.0
+version: 0.1.2
 audience: Creators / operators
 ---
 
@@ -15,8 +15,8 @@ audience: Creators / operators
 
 | Data | Path |
 | --- | --- |
-| Game rules | `config/dochi_rpg_maker/dochi_minigames/games/<id>.json` |
-| Default runtime GUI | `config/dochi_rpg_maker/gui/dochi_minigames/minigames_gui.json` |
+| Game rules | `config/dochi_rpg_maker/minigames/games/<id>.json` |
+| Default runtime GUI | `config/dochi_rpg_maker/gui/minigames/minigames_gui.json` |
 | High scores | `<world>/data/dochi_minigames_scores.json` |
 
 Game-rule JSON stores fees, time limits, symbols and rewards. GUI JSON stores the player's board and score-panel layout. NPC bindings persist in NPC data; NPCs using the same game ID share that game's configuration.
@@ -44,4 +44,8 @@ Back up `config/dochi_rpg_maker` and the world before updating. Use ordinary rel
 
 ## JSON reference
 
-For external editors: the rule schema is `dochi.minigames.v1`, with types `monty`, `slots` and `memory`. `guiLayout` is relative to DRM's `gui/` folder and defaults to `dochi_minigames/minigames_gui.json`. Rule files do not store hidden answers or live sessions.
+For external editors: the rule schema is `dochi.minigames.v1`, with types `monty`, `slots`, `memory`, `whack`, `timing`, `highlow`, `shooting` and `mob_battle`. `guiLayout` is relative to DRM's `gui/` folder and defaults to `minigames/minigames_gui.json`. Rule files do not store hidden answers or live sessions.
+
+## Standalone files and migration
+
+The `config/dochi_rpg_maker/minigames/` and `gui/minigames/` paths remain in use without DRM. Older `dochi_minigames/games/` and `gui/dochi_minigames/` locations are migration inputs; back them up before updating. Client UI settings use `config/dochi_minigames/client.json`; lesson completion uses `<world>/data/dochi_minigames/tutorial/<UUID>.json`.

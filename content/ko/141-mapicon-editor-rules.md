@@ -7,13 +7,13 @@ product: dochi-mapicon-integration
 category: 아이콘 제작
 section: editor
 status: 사용 안내
-version: 0.1.0
+version: 0.1.1
 audience: NPC 제작자
 ---
 
 ## 타입별 기본 아이콘
 
-에디터 왼쪽에서 JSON 타입, 가운데에서 아이콘 설정, 오른쪽에서 미리보기를 확인합니다. 타입 목록은 DRM Apply에 등록된 실제 적용 대상이며 대화, NPC Shop, 텔레포터가 기본입니다. Cobblemon Editor가 있으면 Trainer, Pokemon Itself, PokéMart, Nurse Joy, Starter Selector 같은 적용 대상이 추가됩니다.
+에디터 왼쪽 카테고리에서 JSON 타입을 고르고 가운데 작업 목록·미리보기와 오른쪽 인스펙터에서 설정합니다. 타입 목록은 DRM Apply에 등록된 실제 적용 대상이며 대화, NPC Shop, 텔레포터가 기본입니다. Cobblemon Editor가 있으면 Trainer, Pokemon Itself, PokéMart, Nurse Joy, Starter Selector 같은 적용 대상이 추가됩니다.
 
 **타입별 기본 아이콘**을 켜면 별도 예외가 없는 NPC도 적용 JSON에 따라 표시합니다. NPC 기본 아이콘과 타입별 아이콘은 독립적으로 저장됩니다. 전투 연출·스케줄러처럼 NPC Apply 대상이 아닌 파일은 타입 목록에 나오지 않습니다.
 

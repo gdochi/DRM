@@ -7,7 +7,7 @@ product: core
 category: GUI Maker
 section: gui-maker
 status: 안정
-version: 0.2.1
+version: 0.2.8
 audience: GUI 제작자
 tags:
   - gui

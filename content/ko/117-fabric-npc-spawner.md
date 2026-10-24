@@ -7,7 +7,7 @@ product: core-fabric
 category: 핵심 시스템
 section: npc-spawner
 status: 안정
-version: 0.2.4
+version: 0.2.8
 audience: 제작자 / 운영자
 tags:
   - npc
@@ -19,7 +19,7 @@ tags:
 
 `dochi_rpg_maker:npc_spawner`는 전체 CustomNPC 소스를 가중치 풀에서 고르는 서버 권한 블록입니다. 설정, 풀, 활성 리스는 월드 블록 엔티티에 저장되고, 재사용 소스 템플릿과 소유 Soul Stone 스냅샷은 Core config 루트에 저장됩니다.
 
-0.1.8은 CustomNPCs 1.0.0을 필수로 사용합니다. 서버와 모든 클라이언트에 CustomNPCs를 설치해야 Filled Soul Stone 검색, 소스 생성과 실제 NPC 소환을 사용할 수 있습니다.
+DRM 0.2.8 자체는 CustomNPCs가 선택 의존성입니다. 이 페이지의 Filled Soul Stone 검색·클론 소스·CustomNPCs 소환 흐름을 사용할 때는 CustomNPCs를 서버와 클라이언트에 설치합니다.
 
 ## 에디터 열기
 
