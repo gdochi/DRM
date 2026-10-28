@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Setup
 section: setup
 status: Draft
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.7
 audience: Server operators and first-time creators
 tags:
   - setup
@@ -17,21 +17,21 @@ tags:
 
 ## Supported environment
 
-| Loader | Addon version | Required platform |
+| Loader | Addon | Platform |
 | --- | --- | --- |
-| Fabric 1.21.1 | 0.2.6 | Java 21, Fabric Loader 0.18.0+, Fabric API 0.116.11+1.21.1+, CustomNPCs 1.0.0 |
-| NeoForge 1.21.1 | 0.2.6 | Java 21, NeoForge 21.1+, compatible CustomNPCs 1.21.1 |
+| Fabric 1.21.1 | 0.2.7 | Java 21, Fabric Loader / API satisfying DRM |
+| NeoForge 1.21.1 | 0.2.7 | Java 21, NeoForge 21.1 series |
 
-Both require **Cobblemon 1.7.3 to below 1.9.0 and matching-loader DRM Core 0.2.8+**. Current Fabric and NeoForge Core builds are 0.2.8. The table gives the complete environment baseline when installing current Core.
+Both require **DRM Core 0.2.8+ and Cobblemon >=1.7.3 <1.9.0**. Current Core guidance uses 0.2.9. Its Fabric platform declarations require Loader 0.18.0+ and Fabric API 0.116.11+1.21.1+.
 
-RCT API and CobbleDollars are optional. DRM Strategy works without RCT. Every optional integration must match the loader.
+**CustomNPCs is optional.** File editing and DNPC trainers work without it. Pokemon Itself, PokéMart, Nurse Joy, Starter Selector and legacy CNPC clones need their CustomNPCs integration. DNPC, RCT API and CobbleDollars are optional too.
 
 | Loader | File |
 | --- | --- |
-| Fabric | `dochi_cobblemon_editor-0.2.6-fabric-1.21.1.jar` |
-| NeoForge | `dochi_cobblemon_editor-0.2.6-neoforge-1.21.1.jar` |
+| Fabric | `dochi_cobblemon_editor-0.2.7-fabric-1.21.1.jar` |
+| NeoForge | `dochi_cobblemon_editor-0.2.7-neoforge-1.21.1.jar` |
 
-Use the same build on the server and all clients. The internal mod ID/resource namespace remains `cobble_npc`. Older live-test results do not establish coverage of every current feature across all supported Cobblemon versions.
+Install the same build on server and clients. Mod ID remains `cobble_npc`. Both loaders have execution evidence for Cobblemon 1.7.3, 1.8.0, 1.8.2, 1.8.3 and 1.8.4; 1.8.1 was not separately exercised. See [current changes](#drm-cobblemon-editor/cobblemon-editor-current-update).
 
 ## Folders created on first launch
 
@@ -106,7 +106,7 @@ Pokemon Itself also supports up to 16 rounds, each with one Pokémon, round cond
 | --- | --- |
 | Add-on editors are missing | DRM and addon versions, Fabric loader log, and whether mod ID `cobble_npc` loaded |
 | Defaults are missing | Start a world/server once and verify `config/dochi_rpg_maker/cobblemon` |
-| NPC apply target is missing | Confirm the target is a CustomNPCs NPC opened directly with the core item |
+| NPC apply target is missing | Check the NPC provider and role; DNPC supports Trainer |
 | Interaction does not open | Empty both hands and check for DRM Dialogue, DRM NPC Shop, or PokéMart priority |
 | Player party error | Put at least one battle-ready Cobblemon Pokémon in the player's active party |
 
@@ -122,4 +122,4 @@ The shared toolbar arrows follow screen history across DRM Core and addon editor
 
 ## DNPC trainers
 
-Version 0.2.6 can apply Trainer JSON to DNPC through the public DRM NPC Actor API. DNPC is optional. Pokemon Itself, PokéMart, Nurse Joy and Starter Selector remain CustomNPCs-only. The addon itself still requires CustomNPCs.
+Apply Trainer JSON to DNPC through DRM's public NPC Actor API without CustomNPCs. Reopen the applied trainer profile and configure post-battle dialogue and rewards. This does not extend CNPC-specific roles to DNPC.

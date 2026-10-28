@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: 조건과 효과
 section: rules
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: 스포너 제작자
 tags:
   - spawner

@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.7
 audience: Creators building conditional battles and Pokémon NPCs
 tags:
   - conditions
@@ -110,3 +110,7 @@ For `currency`, choose DRM currency or CobbleDollars and an operation: `add`, `t
 Open After Actions → Item → Find, then choose Items or My Inventory. Copying preserves names, lore, enchantments, damage, and custom data without consuming the original stack. Award quantity comes from the action. Clear saved item data removes components while retaining the item ID and quantity.
 
 Component-aware removal matches both ID and components and does not partially consume an insufficient total. The optional JSON field is itemComponentsSnbt. A confirmed trainer defeat after player forfeit is flee; an ordinary defeat remains loss. Configure their reward triggers separately.
+
+## Post-battle DRM dialogue
+
+Choose **Open dialogue after battle** in After Actions and browse for a dialogue set. Configure result conditions, probability and repetition as with other actions. DNPC trainers support this path after battle locks and return handling finish. The dialogue does not need `go_battle`. Unexecuted actions use the existing pending-action storage and retry workflow.

@@ -7,13 +7,13 @@ product: dochi-spawn-control
 category: 탈것 스폰
 section: operations
 status: Guide
-version: 0.1.3
+version: 0.1.4
 audience: Creators / server operators
 ---
 
 ## 지원 범위
 
-Spawn Control **0.1.3**은 저장한 모드 탈것과 지원 차량 EntityType을 고정 스포너·자연 스폰 프로필에서 생성합니다. DRM과 차량 모드는 선택 연동입니다.
+Spawn Control **0.1.4**은 저장한 모드 탈것과 지원 차량 EntityType을 고정 스포너·자연 스폰 프로필에서 생성합니다. DRM과 차량 모드는 선택 연동입니다.
 
 | 차량 모드 | 사용할 대상 |
 | --- | --- |
@@ -53,4 +53,4 @@ Immersive Vehicles 목록은 설치된 팩의 차종·색상을 직접 열거합
 
 ## DNPC 생성
 
-DNPC의 기본 EntityType 생성은 DRM 공통 NPC API v1과 DNPC 제공자가 필요합니다. 생성 시 DNPC 자체 부활을 끄고 생성 위치를 집으로 정합니다. API가 없으면 해당 생성을 실패시키며, 저장된 DNPC 템플릿·장비·DRM 연결을 복제하는 기능은 제공하지 않습니다.
+DNPC의 기본 EntityType 생성은 DRM 공통 NPC API v1과 DNPC 제공자가 필요합니다. 생성 시 DNPC 자체 부활을 끄고 생성 위치를 집으로 정합니다. API가 없으면 해당 생성을 실패시키며, 기본 EntityType 경로는 저장 NPC를 복제하지 않습니다. 저장 외형·장비·연결을 재사용하려면 별도 [NPC 복제 템플릿 소스](#dochi-spawn-control/spawn-control-npc-templates)를 선택합니다.

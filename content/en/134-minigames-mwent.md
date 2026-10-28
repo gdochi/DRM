@@ -7,7 +7,7 @@ product: dochi-minigames
 category: MWENT card battles
 section: mwent
 status: Guide
-version: 0.1.2
+version: 0.1.3
 audience: Creators / server operators
 ---
 
@@ -31,3 +31,9 @@ Right-click a card to inspect it. Rotate and zoom the 3D battlefield or use card
 Collect regular and animated physical cards and organize them through the vault and encyclopedia. The pack editor supports fixed contents, weighted pools, quantities, final card choices and appearance. Creators can configure opponent factions / decks, AI difficulty, field themes, music, effects and custom cards.
 
 The game type ID is `mob_battle`. The server owns rules, cards, packs and results. See [tables](#dochi-minigames/minigames-tables) and [files](#dochi-minigames/minigames-files-gui).
+
+## Acquisition and battle music
+
+Distribute physical cards/packs through [merchant and chest rewards](#dochi-minigames/minigames-acquisition). Receiving an item is separate from depositing it in card storage.
+
+Battle music follows the player's deck faction from the coin toss and mulligan onward. Play/Stop and volume controls sit left of Rulebook. Silent 0% retains playback position; playing after Stop restarts the track. Preferences are local and do not edit server JSON or global Minecraft volume. Stopping battle BGM does not allow vanilla background music to take over during the battle.

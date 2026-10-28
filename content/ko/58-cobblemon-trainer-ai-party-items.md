@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.7
 audience: 고급 트레이너 전투를 만드는 제작자
 tags:
   - trainer-ai
@@ -177,3 +177,11 @@ DRM AI는 모든 사용 가능한 기술이 무효일 때 합법적인 교체 �
 이 인벤토리는 기믹 키 아이템 보유를 검사하며 소비하지 않습니다. 라운드 AI가 사용하는 회복·배틀 아이템 가방인 `Trainer Items`와 구분합니다.
 
 JSON 참고: Trainer 스키마는 계속 `23`입니다. 일반 인벤토리 항목에 `componentsSnbt`를 저장하고 기존 `components` 데이터도 읽습니다. 새 기능을 쓰기 위해 `schemaVersion`을 직접 바꿀 필요는 없습니다.
+
+## 0.2.7 AI와 기술 선택
+
+DRM Strategy는 실제 능력치 변화와 현재 전장을 기준으로 강화·벽·트릭룸·교체·기믹·팀 연계를 평가합니다. 강화 직후 교체·반복 랭크업과 빈 더블 슬롯의 예약 오류를 보완했습니다. RCT는 별도의 선택 AI 공급자입니다.
+
+기술 찾기는 등록된 전체 기술을 제공하고 일반·이벤트·과거 습득 기술을 우선 정렬합니다. 목록 선택이 종별 정상 습득이나 임의의 제공 모드 기술 실행을 보증하지는 않습니다. 기믹이 없으면 키 아이템·권한·정책과 호환 제공 모드를 먼저 확인하세요.
+
+[0.2.7 호환 범위](#drm-cobblemon-editor/cobblemon-editor-current-update)에서 실제 시험한 Cobblemon 버전을 확인할 수 있습니다.

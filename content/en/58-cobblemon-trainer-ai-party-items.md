@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Getting Started
 section: trainer
 status: Stable
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.7
 audience: Creators / Operators
 ---
 
@@ -55,3 +55,11 @@ Quantity edits preserve NBT and components. For an entry with stored data, choos
 This inventory checks gimmick-key possession without consuming the keys. It is separate from `Trainer Items`, the round AI's healing/battle bag.
 
 JSON reference: the Trainer schema remains `23`. General entries store `componentsSnbt` and still read older `components` data. Do not change `schemaVersion` by hand to enable the feature.
+
+## 0.2.7 strategy and move selection
+
+DRM Strategy evaluates actual stat stages and the current field for setup, screens, Trick Room, switching, gimmicks and team synergy. Fixes cover post-setup switching, repeated boosting and empty doubles-slot reservations. RCT remains a separate optional AI provider.
+
+Move search includes every registered move, sorting normal, event and past learnset moves first. Selection does not establish species learnability or guarantee arbitrary provider behavior. Check gimmick permissions, policies, key items and compatible providers.
+
+See [0.2.7 compatibility](#drm-cobblemon-editor/cobblemon-editor-current-update) for the Cobblemon versions actually exercised.

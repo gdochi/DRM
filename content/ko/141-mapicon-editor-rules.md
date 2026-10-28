@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: 아이콘 제작
 section: editor
 status: 사용 안내
-version: 0.1.1
+version: 0.1.2
 audience: NPC 제작자
 ---
 

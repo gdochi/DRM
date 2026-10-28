@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: Overview
 section: overview
 status: Stable
-version: 0.1.3
+version: 0.1.4
 audience: Players, server operators, and modpack creators
 tags:
   - armor
@@ -17,16 +17,15 @@ tags:
 
 ## What the mod does
 
-**Dochi's Real Armor** is a Forge 1.20.1 and Fabric / NeoForge 1.21.1 compatibility mod that makes equipped armor participate in vanilla-style damage reduction for supported NPC entities. Its mod ID and command root are `dochi_real_armor`.
+**Dochi's Real Armor 0.1.4** connects supported NPC equipment, toughness, enchantments and durability to damage calculation. Builds target Forge 1.20.1, Fabric / NeoForge 1.21.1 and separate Fabric / NeoForge 26.3. Mod ID and command root remain `dochi_real_armor`.
 
-The mod supports two optional NPC integrations:
-
-| NPC mod | Detection | Independent switch |
+| NPC provider | Older targets | 26.3 |
 | --- | --- | --- |
-| CustomNPCs | Entity registry namespace `customnpcs` | `enableCustomNpcs` |
-| Easy NPC | Entity registry namespace `easy_npc` | `enableEasyNpc` |
+| CustomNPCs | Optional | Permanently excluded |
+| Easy NPC | Optional | Optional |
+| Dochi NPC Core | Optional | Optional |
 
-Na supported NPC mod is a hard dependency. Install at least one supported NPC mod to use the armor feature.
+DRM and NPC providers are optional. Install a supported provider to use NPC armor behavior. DNPC supports whole/body-part armor, durability, Protection and knockback without CNPC-specific resistance ordering or companion rules.
 
 ## Processing model
 
@@ -55,6 +54,8 @@ Easy NPC projectile hits are resolved by tracing the projectile path through the
 
 On Forge, Dochi RPG Maker 0.1.4 or later is optional. When present, Dochi's Real Armor registers a tab in DRM's Mods Config screen. Without DRM, the Forge Mods list opens a matching standalone configuration screen.
 
-## 0.1.3 and DNPC
+## 0.1.4 and DNPC
 
-Forge, Fabric and NeoForge now use 0.1.3. In addition to CustomNPCs and Easy NPC, DNPC supports whole-body / body-part armor, durability, protection enchantments and knockback. Hit regions use the server AABB; CustomNPCs-specific resistance / companion rules do not apply to DNPC. Standalone configuration remains available without DRM.
+Forge, Fabric and NeoForge now use 0.1.4. In addition to CustomNPCs and Easy NPC, DNPC supports whole-body / body-part armor, durability, protection enchantments and knockback. Hit regions use the server AABB; CustomNPCs-specific resistance / companion rules do not apply to DNPC. Standalone configuration remains available without DRM.
+
+0.1.4 includes version/package alignment across five targets; that update did not repeat every gameplay test. See [26.3 installation](#core-fabric/minecraft-26-3).

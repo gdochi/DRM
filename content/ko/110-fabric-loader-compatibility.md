@@ -7,7 +7,7 @@ product: core-fabric
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.2.8
+version: 0.2.9
 audience: 제작자 / 운영자
 ---
 
@@ -21,9 +21,9 @@ Forge 1.20.1은 별도 문서 묶음입니다. 사이트 주소의 `core-fabric`
 
 | 로더 | Minecraft | DRM | Java | NPC 연동 (선택) |
 | --- | --- | --- | --- | --- |
-| Forge 47+ | 1.20.1 | 0.2.8 | 17 | CustomNPCs 1.20.1 호환 빌드 (선택) |
-| Fabric | 1.21.1 | 0.2.8 | 21 | CustomNPCs Fabric 호환 빌드 (선택) |
-| NeoForge 21.1+ | 1.21.1 | 0.2.8 | 21 | CustomNPCs NeoForge 1.21.1 호환 빌드 (선택) |
+| Forge 47+ | 1.20.1 | 0.2.9 | 17 | CustomNPCs 1.20.1 호환 빌드 (선택) |
+| Fabric | 1.21.1 | 0.2.9 | 21 | CustomNPCs Fabric 호환 빌드 (선택) |
+| NeoForge 21.1+ | 1.21.1 | 0.2.9 | 21 | CustomNPCs NeoForge 1.21.1 호환 빌드 (선택) |
 
 Fabric에는 Loader 0.18.0 이상과 Fabric API 0.116.11+1.21.1 이상도 필요합니다. 자세한 설치 파일과 선택 의존성은 [설치 준비](#core-fabric/installation)에 있습니다.
 
@@ -55,4 +55,6 @@ Fabric·NeoForge에서 권한 레벨 2로 사용합니다.
 
 현재 두 로더의 에디터에서 만드는 퀘스트는 자동 완료를 사용합니다. 구형 JSON의 `completionMode: turn_in`을 이관할 때는 Fabric이 제출 대기를 유지하고 NeoForge는 자동 완료하므로, 목표 달성 후 보상 시점을 확인하세요. 이 항목은 기존 데이터 이관 참고 사항입니다.
 
-최신 변경은 [DRM 0.2.8](#core-fabric/release-notes-0-2-8).
+최신 변경은 [DRM 0.2.9](#core-fabric/release-notes-0-2-9).
+
+Minecraft 26.3은 Java 25의 별도 빌드입니다. [26.3 설치·제외 기능](#core-fabric/minecraft-26-3)을 확인하세요.

@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: 명령어와 문제 해결
 section: operations
 status: Stable
-version: 0.1.3
+version: 0.1.4
 audience: 서버 운영자와 모드팩 제작자
 tags:
   - commands

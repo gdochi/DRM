@@ -7,7 +7,7 @@ product: dochi-minigames
 category: Files and Operations
 section: operations
 status: Usage guide
-version: 0.1.2
+version: 0.1.3
 audience: Creators / operators
 ---
 

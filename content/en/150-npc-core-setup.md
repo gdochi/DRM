@@ -7,21 +7,22 @@ product: dochi-npc-core
 category: NPC Core setup
 section: setup
 status: Guide
-version: 0.1.0
+version: 0.1.1
 audience: Creators / server operators
 ---
 
 ## What it does
 
-Dochi’s NPC Core (DNPC) **0.1.0** creates independent NPCs with appearance, equipment, poses, relations, schedules and work. Basic NPC creation and editing work without DRM.
+Dochi’s NPC Core (DNPC) **0.1.1** creates independent NPCs with appearance, equipment, poses, relations, schedules and work. Basic NPC creation and editing work without DRM.
 
 | Build | Minecraft | Java |
 | --- | --- | --- |
 | Forge | 1.20.1 | 17 |
 | Fabric | 1.21.1 | 21 |
 | NeoForge | 1.21.1 | 21 |
+| Fabric / NeoForge | 26.3 | 25 |
 
-Install the same loader build of `dochi_npc_core-0.1.0-<loader>-<minecraft>.jar` on server and clients. Fabric also needs Fabric API. DRM is optional; current integration guidance uses DRM 0.2.8. Install matching GeckoLib when using Gecko models.
+Install the same loader build of `dochi_npc_core-0.1.1-<loader>-<minecraft>.jar` on server and clients. Fabric also needs Fabric API. DRM is optional; current integration guidance uses DRM 0.2.9. Install matching GeckoLib when using Gecko models.
 
 ## Your first NPC
 
@@ -42,6 +43,8 @@ Install the same loader build of `dochi_npc_core-0.1.0-<loader>-<minecraft>.jar`
 | Core in main hand + Ctrl+C / Ctrl+V | Temporary NPC copy / paste |
 | Core in main hand + Ctrl+X | Immediately delete the target NPC |
 
-The temporary clipboard is separate from saved templates. Save a JSON set for reusable content. Going to an original uses its recorded UUID and cannot find a deleted original.
+The temporary clipboard is separate from saved templates. Use [v3 clone templates](#dochi-npc-core/npc-core-templates) for reusable content. Going to an original uses its recorded UUID and cannot find a deleted original.
 
 Continue with [NPCs and work](#dochi-npc-core/npc-core-editor) and [files and integrations](#dochi-npc-core/npc-core-files).
+
+26.3 also supports basic NPC creation, editing and storage without DRM, GeckoLib or Curios. Optional integration data is preserved while unavailable external capabilities stay inactive. CustomNPCs is excluded on 26.3. See [target-specific setup](#core-fabric/minecraft-26-3).

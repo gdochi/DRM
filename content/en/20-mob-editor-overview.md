@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -16,9 +16,11 @@ tags:
 
 ## Start with one readable melee attack
 
-BattleWorks is a Forge 1.20.1 addon for DRM that controls how CustomNPCs fight. Build a sequence such as “approach the player, prepare, swing and deal damage, recover, then select another move.”
+BattleWorks **0.1.6** is DRM's NPC combat addon for Forge 1.20.1, Fabric / NeoForge 1.21.1 and separate 26.3 builds. Author combat timing, hitboxes, movement and phases.
 
-This guide follows **BattleWorks 0.1.5 and DRM 0.1.7 or newer**. Existing mob-editor page addresses remain available. Start with a normal humanoid NPC; the first exercise does not require an optional spell or animation mod.
+The exercises below use **Forge 1.20.1 and CustomNPCs**. Check [0.1.6 installation boundaries](#mob-editor/battleworks-update-0-1-6) for other loaders and 26.3 DNPC. Existing `mob-editor` routes remain available.
+
+Start with one slow melee attack on a normal humanoid NPC; optional spell and animation mods are unnecessary for the first exercise.
 
 ## Follow this learning path
 

@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: 설치와 첫 규칙
 section: setup
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: 처음 사용하는 서버 운영자
 tags:
   - installation
@@ -91,3 +91,9 @@ DRM Core를 들고 허공을 우클릭한 선택기에서 `Spawner Editor`를 �
 5. 저장 뒤 클론 미리보기와 진단 결과를 확인합니다.
 
 클론 프리셋은 클론 데이터 자체를 포함하지 않습니다. 다른 서버로 공유할 때는 동일한 CustomNPCs 클론도 별도로 배포해야 합니다.
+
+## 0.1.4와 26.3
+
+0.1.4는 COMMON 세 로더와 별도 Fabric·NeoForge 26.3에 같은 모드 버전을 사용합니다. 26.3은 Java 25이며 CustomNPCs가 없습니다. 이전 대상의 클론 실습을 그대로 적용하지 말고 [26.3 설치](#core-fabric/minecraft-26-3)를 따르세요.
+
+DNPC의 기본 엔티티 생성과 [v3 복제 템플릿](#dochi-spawn-control/spawn-control-npc-templates)은 다른 항목입니다. 저장된 NPC를 자연 스폰하려면 COMMON 카탈로그의 NPC 복제 항목을, 배치형 스포너에서는 NPC 복제 템플레이트 소스를 고릅니다.

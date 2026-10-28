@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.7
 audience: 조건부 전투와 결과 처리를 설계하는 제작자
 tags:
   - conditions
@@ -159,3 +159,7 @@ Pokemon Itself는 포켓몬 한 마리와 Cobblemon PVE 전투를 만들고 같�
 애프터 액션 → 아이템 → 찾기에서 `아이템 목록` 또는 `내 인벤토리`를 선택합니다. 인벤토리 스택은 원본을 소비하지 않고 이름·설명·인챈트·손상도·커스텀 데이터를 복사합니다. 지급 개수는 복사한 스택 수량이 아니라 액션의 수량을 따릅니다. `Clear saved item data`는 저장 컴포넌트만 제거하고 아이템 ID와 수량을 유지합니다.
 
 데이터를 가진 아이템 회수는 ID와 컴포넌트가 모두 같은 스택을 대상으로 하며 총량 부족 시 일부만 먼저 소비하지 않습니다. 참고용 JSON 필드는 `itemComponentsSnbt`입니다. 트레이너 배틀에서 플레이어가 포기한 뒤 확정된 패배는 `flee`, 일반 패배는 `loss`입니다. 보상 트리거를 따로 설정하세요.
+
+## 배틀 후 DRM 대화
+
+애프터 액션에서 **배틀 후 대화 열기**를 고르고 🔍로 대화 세트를 지정합니다. 승리·패배·도주·포획·종료 조건, 확률과 반복 정책을 다른 액션처럼 설정합니다. DNPC 트레이너에서도 사용하며 전투 잠금·복귀가 끝난 뒤 대화를 엽니다. 그 대화에 `go_battle`을 넣을 필요는 없습니다. 실행하지 못한 액션은 기존 미실행 액션 저장·재시도 흐름을 사용합니다.

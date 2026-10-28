@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Overview
 section: overview
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: Server operators and modpack creators
 tags:
   - spawn control
@@ -84,6 +84,8 @@ config/dochi_rpg_maker/spawn_control/spawn_control.json
 
 The following pages cover installation, a first rule, the editor layout, every rule section, presets, sharing, diagnostics, and operations.
 
-## 0.1.3 NPC and vehicle integration
+## 0.1.4 NPC and vehicle integration
 
-DRM, CustomNPCs, DNPC and Warfare are optional integrations. Default DNPC initialization needs the compatible DRM NPC API; it does not clone saved DNPC templates. See [vehicle saving and spawning](#dochi-spawn-control/spawn-control-vehicles) for MTS, Superb Warfare, Aircraft and Automobility.
+DRM, CustomNPCs, DNPC and Warfare are optional integrations. Default DNPC entities and saved clones are separate sources. With the compatible public DRM API, choose [v3 templates](#dochi-spawn-control/spawn-control-npc-templates) for COMMON natural rules or placed spawners. See [vehicle saving and spawning](#dochi-spawn-control/spawn-control-vehicles) for MTS, Superb Warfare, Aircraft and Automobility.
+
+26.3 has separate Fabric / NeoForge Java 25 builds without CustomNPCs clones. Its placed DNPC template evidence is separate from COMMON natural-template checks. See [26.3 guidance](#core-fabric/minecraft-26-3).

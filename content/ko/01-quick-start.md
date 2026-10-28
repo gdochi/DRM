@@ -7,7 +7,7 @@ product: core
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.2.8
+version: 0.2.9
 audience: 처음 설치하는 사용자
 tags:
   - quick-start
@@ -17,7 +17,7 @@ tags:
 ## 첫 실행
 
 1. 서버에서 사용할 경우 서버와 접속 클라이언트 양쪽에 같은 DRM JAR을 넣습니다.
-2. CustomNPCs NPC 기능을 사용할 때는 호환 CustomNPCs도 양쪽에 설치합니다. DRM 0.2.8에서는 선택 의존성입니다.
+2. CustomNPCs NPC 기능을 사용할 때는 호환 CustomNPCs도 양쪽에 설치합니다. DRM 0.2.9에서는 선택 의존성입니다.
 3. 월드나 서버를 한 번 실행해서 `config/dochi_rpg_maker` 폴더가 생성되게 합니다.
 4. 크리에이티브 모드 또는 편집 권한이 있는 상태로 `Dochi RPG Maker Core` 아이템을 준비합니다. `/give @s dochi_rpg_maker:dialogue_editor`로 받을 수 있으며 CustomNPCs 설치 시 해당 아이템 탭에도 표시됩니다.
 
@@ -105,8 +105,8 @@ DRM이 만드는 JSON은 대부분 `config/dochi_rpg_maker` 아래에 저장됩�
 
 ## 현재 빌드와 애드온
 
-이 문서는 Forge DRM 0.2.8 기준입니다. [Fabric·NeoForge와의 차이](#core-fabric/loader-compatibility)를 확인하세요. Forge Core에는 배치형 스포너가 내장되어 있지 않습니다. 필요하면 [Spawn Control](#dochi-spawn-control/dochi-spawn-control-spawner)을 설치합니다.
+이 문서는 Forge DRM 0.2.9 기준입니다. [Fabric·NeoForge와의 차이](#core-fabric/loader-compatibility)를 확인하세요. Forge Core에는 배치형 스포너가 내장되어 있지 않습니다. 필요하면 [Spawn Control](#dochi-spawn-control/dochi-spawn-control-spawner)을 설치합니다.
 
 공용 상단바의 Back/Forward는 에디터 이동 기록입니다. 변경 취소/다시 실행과 다르며, 서버에 반영하려면 해당 에디터에서 저장해야 합니다.
 
-최신 변경은 [DRM 0.2.8](#core/release-notes-0-2-8).
+최신 변경은 [DRM 0.2.9](#core/release-notes-0-2-9).

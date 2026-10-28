@@ -7,7 +7,7 @@ product: dochi-npc-core
 category: NPCs, schedules and employment
 section: editor
 status: Guide
-version: 0.1.0
+version: 0.1.1
 audience: Creators / server operators
 ---
 
@@ -40,3 +40,19 @@ This workflow needs DRM payment, time and Function APIs.
 6. Use **My Employment**, default `H`, to manage work, pause, return, renewal, dismissal and cargo recovery.
 
 Employer controls do not grant operator NPC-editor permissions. An ended contract retains its NPC until remaining real cargo is recovered. Editing recruitment JSON does not retroactively change existing contract snapshots.
+
+## Position, rotation and damage controls
+
+Movement AI's **Position lock** keeps the saved current position and blocks wandering, gravity, pushing, knockback and sleep/riding movement. Rotation locking is independent. Body/head yaw support -180.0 to 180.0 degrees and head pitch -90.0 to 90.0, with one decimal place. Locked rotation overrides automatic looking.
+
+Combat AI's **Invulnerable** blocks Creative attacks too. With it off, disabling **Allow player damage** still blocks player melee and player-caused projectiles/explosions. Save and test the actual NPC. Idle nearby-player looking remains below work, combat, interaction and sleep priorities.
+
+## Schedule times and names
+
+Start/end values use daily ticks `0–23999`: `0=06:00`, `6000=12:00`, `12000=18:00` and `18000=00:00`. The **✓** beside the slot name updates the list from the form. Finish the normal Save workflow to persist the NPC.
+
+## Instrument performance — 1.20.1 / 1.21.1
+
+With optional **Immersive Melodies**, schedule an instrument performance. **Use equipped instrument only** needs an actual instrument in the chosen hand. **Provide a temporary instrument if missing** displays the selected instrument only during performance, preferring real equipped instruments. The picker shows instruments only and does not take player items.
+
+Ending the song/schedule, interaction, editing or death clears temporary visuals and sound. Temporary instruments are not saved as equipment or dropped. Evidence uses Immersive Melodies 0.8.0 on the older three targets; it does not establish 26.3 instrument integration.

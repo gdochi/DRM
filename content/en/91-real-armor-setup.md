@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: Install and Configure
 section: setup
 status: Stable
-version: 0.1.3
+version: 0.1.4
 audience: Players and server operators
 tags:
   - installation
@@ -17,9 +17,15 @@ tags:
 
 ## Installation
 
-Real Armor **0.1.3** targets Forge 1.20.1 / Java 17 and Fabric / NeoForge 1.21.1 / Java 21. Install matching `dochi_real_armor-0.1.3-<loader>-<minecraft>.jar` builds on server and clients. Fabric also needs Fabric API.
+| Loader | Minecraft / Java | Mod |
+| --- | --- | --- |
+| Forge | 1.20.1 / 17 | 0.1.4 |
+| Fabric / NeoForge | 1.21.1 / 21 | 0.1.4 |
+| Fabric / NeoForge | 26.3 / 25 | Separate 0.1.4 builds |
 
-CustomNPCs, Easy NPC, Dochi NPC Core and DRM are optional integrations. Install a supported NPC mod to use its armor calculations. DNPC supports whole-body / body-part armor, durability, protection enchantments and knockback settings.
+Install matching `dochi_real_armor-0.1.4-<loader>-<minecraft>.jar` on server and clients. Fabric API is installed separately.
+
+Easy NPC, DNPC and DRM are optional integrations. CustomNPCs remains optional on older targets and is permanently excluded from 26.3 onward. Install a supported provider when testing NPC equipment. See [26.3 boundaries](#core-fabric/minecraft-26-3).
 
 ## Configuration
 
@@ -42,3 +48,5 @@ With DRM, use the Real Armor tab in shared Mods Config. Without DRM, the standal
 Changes while connected are checked by the server and require permission level 2. The `/dochi_real_armor` root offers `status`, `split`, `durability` and `debug`; use command completion for arguments.
 
 DNPC hit regions use the real server entity AABB rather than every visual model bone. CustomNPCs-specific resistance ordering and companion options do not apply to DNPC.
+
+While connected, configuration first loads server values and edit permission. Missing permission, unsupported servers or pending responses are read-only. Values update after server acknowledgement; local configuration does not overwrite server policy.

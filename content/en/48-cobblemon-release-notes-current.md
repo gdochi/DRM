@@ -1,17 +1,37 @@
 ---
-title: Fabric / NeoForge 0.2.6 update
+title: Fabric / NeoForge 0.2.7 update
 slug: cobblemon-editor-current-update
 order: 480
-description: 0.2.6 requirements, NPC hiding, detection and editing fixes, followed by earlier changes.
+description: AI, move selection, Cobblemon 1.8.4, optional NPCs and post-battle dialogue.
 product: drm-cobblemon-editor
 category: Getting Started
 section: overview
 status: Stable
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.7
 audience: Creators / Operators
 ---
 
-## Current 0.2.6 changes
+## Current 0.2.7 changes
+
+Fabric / NeoForge builds target Minecraft 1.21.1 / Java 21. They require **DRM 0.2.8+** and **Cobblemon >=1.7.3 <1.9.0**. CustomNPCs is now optional: file editing and DNPC trainers work without it. Pokemon Itself, PokéMart, Nurse Joy, Starter Selector and legacy CNPC clones retain their CustomNPCs-specific boundary.
+
+- **Battle AI:** tracks real stat-stage changes and improves setup, screens, Trick Room, switching, gimmicks and team synergy. Fixes include unnecessary post-setup switches, repeated boosts and doubles-slot reservation errors.
+- **Move selection:** choose from all registered moves; normal, event and past learnset moves sort first. Actual execution remains subject to Cobblemon and the installed provider.
+- **Cobblemon 1.8.4:** normalizes empty gimmick responses and synchronizes shiny/form preview aspects. The 1.7.3 compile baseline and existing runtime bounds remain unchanged.
+- **Post-battle dialogue:** choose a dialogue set in After Actions. DNPC dialogue opens after battle cleanup and return handling; it does not need a battle-start action.
+- **Admin:** compatible DRM 0.2.9 exposes **Delete battle history**, separately from count reset. Deletion also removes pending rewards and granted-reward markers.
+
+## Cobblemon versions actually exercised
+
+| Executed on both loaders | Not separately exercised |
+| --- | --- |
+| 1.7.3, 1.8.0, 1.8.2, 1.8.3, 1.8.4 | 1.8.1 |
+
+An allowed version is not necessarily a tested one. Gimmicks require compatible providers and key items; the checks do not cover every optional-mod combination. Additional fixes retain version 0.2.7, so use a build containing them.
+
+See [setup](#drm-cobblemon-editor/cobblemon-editor-setup), [AI and items](#drm-cobblemon-editor/cobblemon-trainer-ai-party-items) and [Admin](#core-fabric/drm-administration). The sections below describe earlier versions.
+
+## Earlier 0.2.6 changes
 
 Requires **DRM 0.2.8 or later**. Fixes cover post-battle hiding, unhiding on battle-count reset, detection / pursuit / dash and Pokémon appearance previews in Basic settings. An authorized editor holding the DRM Core in either hand can inspect a lifecycle-hidden NPC. This does not clear saved hiding or reveal it to other players.
 

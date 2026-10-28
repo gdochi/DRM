@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: 에디터 사용법
 section: editor
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: 스포너 제작자
 tags:
   - spawner
@@ -56,6 +56,7 @@ tags:
 | `Entity` | 현재 서버에 등록된 엔티티 ID |
 | `CNPC Clone` | CustomNPCs 서버 클론의 탭과 이름 |
 | `DW Clone` | Dochi’s Warfare의 저장된 클론 템플릿 |
+| `NPC clone template` | DNPC에서 저장한 정확한 v3 복제 템플릿 |
 
 필요한 모드와 클론이 설치된 서버에서 사용할 수 있습니다. 일반 엔티티만 사용할 때 두 클론 모드가 필수 의존성이 되지는 않습니다.
 
@@ -80,3 +81,5 @@ tags:
 미리보기는 에디터 안에서 외형을 확인하는 기능입니다. 월드에 엔티티를 소환하지 않습니다. 모델 변경 응답을 기다리는 동안 마지막으로 성공한 미리보기를 유지하고 최신 요청의 결과로 갱신합니다.
 
 다음으로 [스포너 조건·파괴·효과](#dochi-spawn-control/dochi-spawn-control-spawner-settings)를 설정하세요.
+
+DNPC 저장 NPC를 쓰려면 [템플릿 연결 순서](#dochi-spawn-control/spawn-control-npc-templates)를 따르세요. Entity의 `dochi_npc:npc`는 기본 NPC이며 저장 외형·장비를 복제하지 않습니다. `CNPC Clone`은 1.20.1·1.21.1 안내이고 26.3에서는 제외합니다.

@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Rules
 section: rules
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: Operators balancing natural spawns
 tags:
   - conditions

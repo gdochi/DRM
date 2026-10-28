@@ -7,7 +7,7 @@ product: dochi-minigames
 category: MWENT 카드 게임
 section: mwent
 status: 사용 안내
-version: 0.1.2
+version: 0.1.3
 audience: 제작자 / 서버 운영자
 ---
 
@@ -31,3 +31,9 @@ audience: 제작자 / 서버 운영자
 일반·애니메이션 카드 아이템을 수집하고 카드 보관함·도감에서 정리합니다. 카드팩 편집기에서 고정 카드나 가중치 풀, 수량, 마지막 선택 카드와 외형을 정합니다. 제작자는 상대 진영·덱·AI 난이도, 전장 테마·음악·연출과 사용자 카드 능력을 설정할 수 있습니다.
 
 기본 게임 타입 ID는 `mob_battle`입니다. 게임 규칙과 카드·팩 설정은 서버가 관리하며 클라이언트 점수를 받아 승리를 확정하지 않습니다. [테이블 안내](#dochi-minigames/minigames-tables)와 [파일 안내](#dochi-minigames/minigames-files-gui)를 함께 확인하세요.
+
+## 카드 얻기와 배틀 음악
+
+카드·팩은 [상인 거래와 상자 보상](#dochi-minigames/minigames-acquisition)으로 배포할 수 있습니다. 보상으로 실물 카드를 받는 것과 보관소에 넣는 것은 별도입니다.
+
+배틀 음악은 플레이어 덱의 진영을 따라 코인 토스·멀리건부터 이어집니다. 상단 Rulebook 왼쪽의 재생/정지와 볼륨으로 조절합니다. 0%는 재생 위치를 유지하며 정지 후 재생은 곡을 다시 시작합니다. 설정은 로컬에 저장하고 서버 게임 JSON이나 Minecraft 전체 볼륨을 바꾸지 않습니다. 배틀 중 BGM을 정지해도 바닐라 배경음악을 대신 재생하지 않습니다.

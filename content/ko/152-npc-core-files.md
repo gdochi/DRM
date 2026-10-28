@@ -7,7 +7,7 @@ product: dochi-npc-core
 category: NPC 파일·연동·변환
 section: operations
 status: 사용 안내
-version: 0.1.0
+version: 0.1.1
 audience: 제작자 / 서버 운영자
 ---
 
@@ -28,11 +28,13 @@ NPC 배치 상태와 고용 계약 등은 월드에도 저장됩니다. 설정�
 
 | 모드 | DNPC와의 연결 |
 | --- | --- |
-| DRM | 선택적 공통 NPC Actor API, 제작 도구와 지원되는 Apply 기능 |
-| Cobblemon Editor 0.2.6 | 트레이너 JSON Apply 지원. Pokemon Itself·상점·간호순·스타터 역할은 CustomNPCs 전용 |
-| Spawn Control 0.1.3 | 기본 EntityType 생성. 저장된 DNPC 템플릿·장비 복제 기능은 제공하지 않음 |
-| Real Armor 0.1.3 | 방어·부위 피해·내구도 계산. CustomNPCs 전용 저항·companion 규칙은 제외 |
-| BattleWorks 0.1.5 | DNPC 호환 기능 개발 중. CustomNPCs용 모든 기능과 같다고 가정하지 않음 |
+| DRM 0.2.9 | 선택적 Actor API와 템플릿 공급자 API, 지원되는 Apply 기능 |
+| Cobblemon Editor 0.2.7 | 1.21.1 트레이너 Apply·배틀 후 대화. CNPC 전용 역할과 구분 |
+| Spawn Control 0.1.4 | 기본 NPC와 v3 정확한 복제를 별도 소스로 선택. COMMON 자연 스폰·기존 대상/26.3 배치형 템플릿 |
+| Real Armor 0.1.4 | 방어·부위 피해·내구도. CNPC 전용 저항·companion 제외 |
+| BattleWorks 0.1.6 | 26.3 DNPC 공급자 전투. 기존 Forge 입문 실습은 CustomNPCs 기준 |
+
+파일 템플릿과 임시 클립보드는 다릅니다. [v3 저장·구형 파일 이행](#dochi-npc-core/npc-core-templates)을 확인하세요. 확인한 조합의 버전이 모든 연동의 최소 버전이라는 뜻은 아닙니다.
 
 ## 실험적 NPC 체인징
 
@@ -40,4 +42,4 @@ NPC 배치 상태와 고용 계약 등은 월드에도 저장됩니다. 설정�
 
 Forge 1.20.1과 Fabric·NeoForge 1.21.1용 변환 어댑터가 있습니다. 외형·모델·애니메이션·관계 등 지원 데이터만 변환하며 임의의 다른 모드 스크립트나 월드 저장 형식 전체를 자동 포팅하는 기능은 아닙니다.
 
-Minecraft 26.3용 별도 산출물은 기존 세 로더용 월드·CustomNPCs 기능과 같은 지원 범위가 아닙니다. 이 안내의 기본 설치 표는 1.20.1·1.21.1을 기준으로 합니다.
+26.3은 Fabric·NeoForge / Java 25의 별도 빌드입니다. CustomNPCs는 영구 제외하므로 기존 CNPC 변환 안내를 26.3에 적용하지 않습니다. [26.3 범위](#core-fabric/minecraft-26-3)를 확인하세요.

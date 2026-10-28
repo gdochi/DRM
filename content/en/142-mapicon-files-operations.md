@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: Files and Operations
 section: operations
 status: Usage guide
-version: 0.1.1
+version: 0.1.2
 audience: Creators / operators
 ---
 
@@ -28,7 +28,7 @@ For a resource pack's `assets/myserver/textures/icons/vendor.png`, enter `myserv
 
 Only server-loaded NPCs in the player's dimension are displayed: within 4096 blocks, nearest first, up to 512 entries. The server updates every second; clients tracking an entity use its actual position.
 
-Unloading, death, dimension changes and disconnects clear stale entries. Version 0.1.1 does not store fixed POIs or last-known locations for unloaded NPCs. Managed NPCs suppress their normal Xaero radar marker to reduce duplicates. Xaero Fair Play mode does not draw the addon minimap layer.
+Unloading, death, dimension changes and disconnects clear stale entries. Version 0.1.2 does not store fixed POIs or last-known locations for unloaded NPCs. Managed NPCs suppress their normal Xaero radar marker to reduce duplicates. Xaero Fair Play mode does not draw the addon minimap layer.
 
 ## Troubleshooting
 
@@ -45,4 +45,4 @@ Editing, file browsing and saving require permission level 2, while ordinary pla
 
 ## JourneyMap 6
 
-Version 0.1.1 supports JourneyMap 6 / API 2 with the same icon policies and ordinary-radar suppression. Saves synchronize while paused; unloaded NPCs do not become persistent POIs.
+Version 0.1.2 supports JourneyMap 6 / API 2 with the same icon policies and ordinary-radar suppression. Saves synchronize while paused; unloaded NPCs do not become persistent POIs.

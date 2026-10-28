@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: 개요
 section: overview
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: 서버 운영자와 모드팩 제작자
 tags:
   - spawn control
@@ -84,6 +84,8 @@ config/dochi_rpg_maker/spawn_control/spawn_control.json
 
 다음 문서에서는 설치, 첫 규칙 제작, 에디터 각 영역, 조건과 제한, 프리셋 공유 및 운영 절차를 순서대로 설명합니다.
 
-## 0.1.3 NPC·탈것 연동
+## 0.1.4 NPC·탈것 연동
 
-DRM·CustomNPCs·DNPC·Warfare는 선택 연동입니다. 기본 DNPC 생성에는 호환 DRM NPC API가 필요하며 저장 DNPC 템플릿 복제를 뜻하지 않습니다. [탈것 저장·스폰](#dochi-spawn-control/spawn-control-vehicles)에서 MTS·Superb Warfare·Aircraft·Automobility 사용법을 확인하세요.
+DRM·CustomNPCs·DNPC·Warfare는 선택 연동입니다. 기본 DNPC 생성과 저장 템플릿 복제는 별도 소스입니다. 호환 DRM 공개 API가 있으면 [v3 템플릿](#dochi-spawn-control/spawn-control-npc-templates)을 자연 규칙(COMMON) 또는 배치형 스포너에서 선택합니다. [탈것 저장·스폰](#dochi-spawn-control/spawn-control-vehicles)에서 MTS·Superb Warfare·Aircraft·Automobility 사용법을 확인하세요.
+
+26.3은 Fabric·NeoForge / Java 25 별도 빌드이며 CustomNPCs 클론은 제외합니다. DNPC 배치형 템플릿을 지원하고 COMMON의 템플릿 자연 스폰 검증과 구분합니다. [26.3 안내](#core-fabric/minecraft-26-3)를 확인하세요.

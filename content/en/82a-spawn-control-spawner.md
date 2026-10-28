@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Editor
 section: editor
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: Spawner creators
 tags:
   - spawner
@@ -56,6 +56,7 @@ Add entries, select a row, then edit its target and chance. Remove unused entrie
 | `Entity` | An entity ID registered on the server |
 | `CNPC Clone` | A saved CustomNPCs server clone, identified by tab and name |
 | `DW Clone` | A saved Dochi’s Warfare clone template |
+| `NPC clone template` | An exact v3 clone template saved in DNPC |
 
 Clone sources require their corresponding mod and saved clone. Ordinary entity targets do not make either clone mod a required dependency.
 
@@ -80,3 +81,5 @@ Use `Choose` to select the model ID, then adjust scale, rotation, and vertical o
 Preview renders inside the editor and does not create an entity in the world. While a changed model is being resolved, it retains the last successful preview and updates from the latest request.
 
 Continue with [Spawner Conditions and Effects](#dochi-spawn-control/dochi-spawn-control-spawner-settings).
+
+For saved DNPCs, follow [template setup](#dochi-spawn-control/spawn-control-npc-templates). Entity `dochi_npc:npc` creates a default NPC without copying saved appearance/equipment. `CNPC Clone` applies to the older targets and is excluded on 26.3.

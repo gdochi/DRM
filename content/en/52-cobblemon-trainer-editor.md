@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.7
 audience: Cobblemon battle NPC creators
 tags:
   - trainer

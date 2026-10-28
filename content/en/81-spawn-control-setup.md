@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Setup
 section: setup
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: First-time server operators
 tags:
   - installation
@@ -87,3 +87,9 @@ If native spawning and an enabled managed profile are both active, both systems 
 5. Save, then verify the clone preview and diagnostics.
 
 A target preset does not contain the CustomNPCs clone body. Distribute the matching server clone separately when sharing the preset.
+
+## 0.1.4 and 26.3
+
+0.1.4 is shared by the COMMON three targets and separate Fabric / NeoForge 26.3 builds. 26.3 uses Java 25 and excludes CustomNPCs. Follow [26.3 setup](#core-fabric/minecraft-26-3) rather than the older CNPC clone exercise.
+
+Default DNPC entities and [v3 clone templates](#dochi-spawn-control/spawn-control-npc-templates) are separate entries. For authored natural NPCs use the COMMON catalog's NPC clone entry; for a placed spawner choose the NPC clone template source.

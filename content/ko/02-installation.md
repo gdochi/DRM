@@ -7,14 +7,14 @@ product: core
 category: 시작하기
 section: getting-started
 status: 안정
-version: 0.2.8
+version: 0.2.9
 audience: 서버 운영자
 tags:
   - install
   - forge
 ---
 
-이 페이지는 **Forge 1.20.1 / DRM 0.2.8** 기준입니다. Fabric·NeoForge 1.21.1은 DRM 0.2.8 빌드를 사용합니다. [로더별 설치와 기능 차이](#core-fabric/loader-compatibility)를 확인하세요.
+이 페이지는 **Forge 1.20.1 / DRM 0.2.9** 기준입니다. Fabric·NeoForge 1.21.1은 DRM 0.2.9 빌드를 사용합니다. [로더별 설치와 기능 차이](#core-fabric/loader-compatibility)를 확인하세요.
 
 ## 지원 환경
 
@@ -24,7 +24,7 @@ DRM Core는 `mods.toml` 기준으로 Forge 47 이상, Minecraft 1.20.1 이상 1.
 | --- | --- | --- |
 | Mod Loader | Forge / `javafml` `[47,)` | Forge 1.20.1 계열 |
 | Minecraft | `[1.20.1,1.21)` | 문서는 1.20.1 기준 |
-| DRM Core | `dochi_rpg_maker` 0.2.8 | 클라이언트와 서버 양쪽 필요 |
+| DRM Core | `dochi_rpg_maker` 0.2.9 | 클라이언트와 서버 양쪽 필요 |
 | Java | 17 | Forge 1.20.1 실행 환경과 동일하게 맞춥니다. |
 | CustomNPCs | 호환 1.20.1 빌드 | 해당 NPC 연동 사용 시 양쪽에 설치 |
 
@@ -83,4 +83,6 @@ DRM Core는 `mods.toml` 기준으로 Forge 47 이상, Minecraft 1.20.1 이상 1.
 클라이언트만 최신이고 서버가 이전 버전이면 에디터 패킷, 서버 JSON 종류, 런타임 GUI 필드가 어긋날 수 있습니다. 운영 서버에서는 항상 같은 JAR로 맞춰야 합니다.
 :::
 
-최신 변경은 [DRM 0.2.8](#core/release-notes-0-2-8).
+최신 변경은 [DRM 0.2.9](#core/release-notes-0-2-9).
+
+Minecraft 26.3은 Java 25의 별도 빌드입니다. [26.3 설치·제외 기능](#core-fabric/minecraft-26-3)을 확인하세요.

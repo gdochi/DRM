@@ -7,14 +7,14 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
   - combat
 ---
 
-BattleWorks **0.1.5** provides Forge 1.20.1 / Java 17 and Fabric / NeoForge 1.21.1 / Java 21 builds. DRM and CustomNPCs are required. Minimum DRM is 0.1.7 on Forge and 0.2.7 on Fabric / NeoForge; use current matching-loader DRM 0.2.8. The exercise below uses Forge; match every integration to your selected loader.
+BattleWorks **0.1.6** requires DRM. Current JARs declare DRM 0.2.8+ on Forge 1.20.1 and 0.2.9+ on Fabric / NeoForge 1.21.1. CustomNPCs is optional metadata, but **this Forge exercise uses CustomNPCs NPCs**. See [0.1.6 setup](#mob-editor/battleworks-update-0-1-6) for separate Java 25 / 26.3 DNPC builds and platform requirements.
 
 ## 1. Prepare a matching installation
 
@@ -23,9 +23,9 @@ BattleWorks **0.1.5** provides Forge 1.20.1 / Java 17 and Fabric / NeoForge 1.21
 | Minecraft | Java Edition 1.20.1 |
 | Loader | Forge 47 series for Minecraft 1.20.1 |
 | Java | 17 |
-| BattleWorks | 0.1.5 |
-| Dochi RPG Maker / DRM | Forge 1.20.1, 0.1.7 or newer; required |
-| CustomNPCs | Compatible Forge 1.20.1 build; required |
+| BattleWorks | 0.1.6 |
+| Dochi RPG Maker / DRM | Forge 1.20.1, 0.2.8 or newer; required |
+| CustomNPCs | Compatible Forge 1.20.1 build; used by this exercise |
 
 1. Put the required mods and their dependencies in the selected instance's mods folder.
 2. Check that an older BattleWorks or Mob Editor JAR is not installed alongside the new one. The current mod ID is `dochi_battleworks`.
@@ -99,7 +99,3 @@ Bundled defaults are protected templates. Use **Save As** for a working copy. If
 When connected to a remote server, files are saved in the **server's config directory**. A copy in your separate single-player directory will not appear on that server.
 
 NPCs now reference files instead of storing full JSON copies. Use separate Save As paths when different NPCs need different encounters. Continue with [your first attack](#mob-editor/battleworks-first-attack).
-
-## 0.1.5 downloads and DNPC
-
-Select Forge, Fabric or NeoForge on [Modrinth](https://modrinth.com/mod/dochis-battleworkes/versions). DNPC compatibility is under development; the CustomNPCs tutorial is not a guarantee of full DNPC parity.

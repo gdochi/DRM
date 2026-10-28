@@ -7,7 +7,7 @@ product: dochi-npc-core
 category: NPC files and integrations
 section: operations
 status: Guide
-version: 0.1.0
+version: 0.1.1
 audience: Creators / server operators
 ---
 
@@ -28,11 +28,13 @@ Placed NPC state and employment contracts also live in the world. Back up the wo
 
 | Mod | DNPC support |
 | --- | --- |
-| DRM | Optional public NPC Actor API and supported authoring / Apply tools |
-| Cobblemon Editor 0.2.6 | Trainer JSON Apply. Pokemon Itself, shops, Nurse Joy and Starter roles remain CustomNPCs-only |
-| Spawn Control 0.1.3 | Default EntityType spawning; no saved DNPC template / equipment cloning |
-| Real Armor 0.1.3 | Armor, body damage and durability; excludes CustomNPCs-specific resistance / companion rules |
-| BattleWorks 0.1.5 | DNPC compatibility is under development; do not assume full CustomNPCs parity |
+| DRM 0.2.9 | Optional Actor and template provider APIs; supported Apply tools |
+| Cobblemon Editor 0.2.7 | 1.21.1 Trainer Apply and post-battle dialogue; separate CNPC-only roles |
+| Spawn Control 0.1.4 | Default entities and exact v3 templates are separate sources; COMMON natural rules and older-target/26.3 placed templates |
+| Real Armor 0.1.4 | Armor, body damage and durability; excludes CNPC-specific resistance/companion rules |
+| BattleWorks 0.1.6 | 26.3 DNPC provider combat; the existing Forge tutorial uses CustomNPCs |
+
+File templates differ from the temporary clipboard. See [v3 storage and older files](#dochi-npc-core/npc-core-templates). Checked versions do not establish a minimum for every integration.
 
 ## Experimental NPC Changing
 
@@ -40,4 +42,4 @@ Open Global Settings → Experimental Features → World Scan. Check individual 
 
 Adapters target Forge 1.20.1 and Fabric / NeoForge 1.21.1. They map supported appearance, model, animation and relation data; they do not automatically port arbitrary third-party scripts or entire world formats.
 
-Separate Minecraft 26.3 artifacts do not imply identical world or CustomNPCs support. The installation table in this guide targets 1.20.1 and 1.21.1.
+26.3 uses separate Fabric / NeoForge Java 25 builds and permanently excludes CustomNPCs. The older CNPC conversion workflow does not apply there. See [26.3 scope](#core-fabric/minecraft-26-3).

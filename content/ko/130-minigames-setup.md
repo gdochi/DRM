@@ -7,19 +7,20 @@ product: dochi-minigames
 category: 시작하기
 section: setup
 status: 사용 안내
-version: 0.1.2
+version: 0.1.3
 audience: 제작자 / 서버 운영자
 ---
 
 ## 설치
 
-**Dochi’s Minigames 0.1.2**는 DRM 없이 실행하는 미니게임 모드입니다. 서버와 클라이언트에 같은 로더의 같은 빌드를 설치합니다.
+**Dochi’s Minigames 0.1.3**는 DRM 없이 실행하는 미니게임 모드입니다. 서버와 클라이언트에 같은 로더의 같은 빌드를 설치합니다.
 
 | 로더 | Minecraft / Java | 설치 파일 |
 | --- | --- | --- |
-| Forge | 1.20.1 / 17 | `dochi_minigames-0.1.2-forge-1.20.1.jar` |
-| Fabric | 1.21.1 / 21 | `dochi_minigames-0.1.2-fabric-1.21.1.jar` |
-| NeoForge | 1.21.1 / 21 | `dochi_minigames-0.1.2-neoforge-1.21.1.jar` |
+| Forge | 1.20.1 / 17 | `dochi_minigames-0.1.3-forge-1.20.1.jar` |
+| Fabric | 1.21.1 / 21 | `dochi_minigames-0.1.3-fabric-1.21.1.jar` |
+| NeoForge | 1.21.1 / 21 | `dochi_minigames-0.1.3-neoforge-1.21.1.jar` |
+| Fabric / NeoForge | 26.3 / 25 | `dochi_minigames-0.1.3-<loader>-26.3.jar` |
 
 Fabric은 Loader 0.15.11 이상과 Fabric API 0.101.2+1.21.1 이상이 필요합니다. Forge는 47.2.0 이상, NeoForge는 21.1 이상을 사용합니다. DRM·CustomNPCs·Cobblemon·CobbleDollars는 선택 연동입니다. 특정 화폐·조건·포켓몬 보상을 참조하면 해당 제공 모드를 추가합니다.
 
@@ -33,7 +34,7 @@ Fabric은 Loader 0.15.11 이상과 Fabric API 0.101.2+1.21.1 이상이 필요합
 
 ## DRM NPC와 대화 연결
 
-DRM 0.2.8을 설치하면 공용 에디터 목록, NPC Apply, 대화 액션과 GUI Maker를 연결할 수 있습니다. 저장한 게임을 NPC Apply의 Minigames로 지정하면 NPC 상호작용에서 게임을 엽니다.
+호환 DRM을 설치하면 공용 에디터 목록, NPC Apply, 대화 액션과 GUI Maker를 연결할 수 있습니다. 저장한 게임을 NPC Apply의 Minigames로 지정하면 NPC 상호작용에서 게임을 엽니다.
 
 대화에서만 열려면 NPC에 직접 Minigames Apply를 하지 않고 선택지의 **Go Minigames** 액션에서 게임 JSON을 고릅니다. 직접 Apply한 게임은 대화보다 먼저 상호작용을 처리합니다. 액션 ID는 `dochi_minigames:play`이며 기존 ID와 `.json` 경로를 읽습니다.
 
@@ -51,3 +52,9 @@ DRM 0.2.8을 설치하면 공용 에디터 목록, NPC Apply, 대화 액션과 G
 ```
 
 [게임 규칙과 보상](#dochi-minigames/minigames-rules-rewards), [MWENT](#dochi-minigames/minigames-mwent), [파일과 GUI](#dochi-minigames/minigames-files-gui)를 확인하세요.
+
+## 0.1.3 카드 획득과 26.3
+
+주민·떠돌이 상인·자연 생성 상자의 카드 획득은 [MWENT 획득 설정](#dochi-minigames/minigames-acquisition)에서 관리합니다. 프로필 저장과 Apply를 구분하세요.
+
+26.3은 같은 모드 버전의 Java 25 별도 빌드이며 DRM 없이 실행합니다. CustomNPCs는 제외합니다. 플랫폼 설치와 범위는 [26.3 안내](#core-fabric/minecraft-26-3)를 따릅니다.

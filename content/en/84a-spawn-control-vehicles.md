@@ -7,13 +7,13 @@ product: dochi-spawn-control
 category: Vehicle spawning
 section: operations
 status: Guide
-version: 0.1.3
+version: 0.1.4
 audience: Creators / server operators
 ---
 
 ## Scope
 
-Spawn Control **0.1.3** creates saved modded vehicles and supported vehicle EntityTypes from placed spawners and natural-spawn profiles. DRM and vehicle mods are optional integrations.
+Spawn Control **0.1.4** creates saved modded vehicles and supported vehicle EntityTypes from placed spawners and natural-spawn profiles. DRM and vehicle mods are optional integrations.
 
 | Vehicle mod | Targets |
 | --- | --- |
@@ -53,4 +53,4 @@ Native NBT parts, inventory, fuel and saved orientation are restored with a new 
 
 ## DNPC spawning
 
-Default DNPC EntityType spawning requires DRM NPC API v1 and the DNPC provider. Initialization disables native respawn and sets home to the accepted spawn point. A missing API fails that spawn. Saved DNPC templates, equipment and DRM bindings are not cloned.
+Default DNPC EntityType spawning requires DRM NPC API v1 and the DNPC provider. Initialization disables native respawn and sets home to the accepted spawn point. A missing API fails that spawn. This default EntityType path does not clone saved NPCs. Choose the separate [NPC clone template source](#dochi-spawn-control/spawn-control-npc-templates) to reuse authored appearance, equipment and bindings.

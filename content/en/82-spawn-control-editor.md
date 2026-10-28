@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Editor
 section: editor
 status: Draft
-version: 0.1.3
+version: 0.1.4
 audience: Spawn-rule creators
 tags:
   - editor
@@ -69,7 +69,7 @@ Each part of a rule row has a separate action.
 
 ## Search, filter, and sort
 
-Rule search covers names, profile IDs, target keys, EntityTypes, clone tab/name, and validation errors. `Filter & Sort` provides:
+Rule search covers names, profile IDs, target keys, EntityTypes, clone tab/name, and validation errors. The inline status, sort-key and direction dropdowns below rule search provide:
 
 - state: All, Enabled, Disabled, or Error
 - sort key: Priority, Name, or Target
@@ -94,3 +94,5 @@ The EntityType or clone label under the inspector is the **actual target owned b
 | `Clear Generated` | Remove generated entities currently tracked by this mod |
 
 Diagnostics submit the current draft for temporary server-side evaluation without first replacing the active configuration file.
+
+Rule filters change list presentation without saving the document. Escape or an outside click cancels an open dropdown without activating background controls. Narrow panels wrap controls onto the next line.
