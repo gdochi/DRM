@@ -39,4 +39,4 @@ Craft the eight dedicated tables in a vanilla 3×3 crafting grid. Each retains i
 
 With operator level 2, empty-hand Shift-right-click maps a saved game JSON or built-in preset ID. The server rejects a different game type on a dedicated table. Placement does not create a new JSON each time; several tables can share an ID. Explicitly save reusable rule files through `/minigame editor`.
 
-MWENT's built-in AI lets you choose a practice opponent. There is no separate tab for authoring card definitions or AI opponent decks. Configure physical card/pack distribution in [acquisition settings](#dochi-minigames/minigames-acquisition).
+MWENT's built-in AI lets you choose a practice opponent. There is no separate tab for authoring card definitions or AI opponent decks. Configure physical card/pack distribution in [acquisition settings](#mwent/acquisition).

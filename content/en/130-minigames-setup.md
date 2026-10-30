@@ -51,10 +51,10 @@ Entry is charged when Start is confirmed. Clicking an NPC or cancelling confirma
 /minigame packs
 ```
 
-See [rules and rewards](#dochi-minigames/minigames-rules-rewards), [MWENT](#dochi-minigames/minigames-mwent) and [files / GUI](#dochi-minigames/minigames-files-gui).
+See [rules and rewards](#dochi-minigames/minigames-rules-rewards), [MWENT](#mwent/start) and [files / GUI](#dochi-minigames/minigames-files-gui).
 
 ## 0.1.3 acquisition and 26.3
 
-Configure villager, wandering-trader and chest rewards in [MWENT acquisition](#dochi-minigames/minigames-acquisition). Profile storage and Apply are separate actions.
+Configure villager, wandering-trader and chest rewards in [MWENT acquisition](#mwent/acquisition). Profile storage and Apply are separate actions.
 
 26.3 uses separate Java 25 builds of the same mod version, works without DRM and excludes CustomNPCs. See [26.3 setup](#core-fabric/minecraft-26-3).

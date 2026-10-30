@@ -563,6 +563,13 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
   border-radius: 16px;
 }
 .doc-page-body table { width: 100%; border-collapse: collapse; background: var(--surface); }
+.doc-page[data-product="mwent"]:is([data-doc="card-catalog"], [data-doc="version-0-1-5"]) table {
+  min-width: 760px;
+  table-layout: fixed;
+}
+.doc-page[data-product="mwent"]:is([data-doc="card-catalog"], [data-doc="version-0-1-5"]) th:nth-child(1) { width: 190px; }
+.doc-page[data-product="mwent"]:is([data-doc="card-catalog"], [data-doc="version-0-1-5"]) th:nth-child(2) { width: 90px; }
+.doc-page[data-product="mwent"]:is([data-doc="card-catalog"], [data-doc="version-0-1-5"]) th:nth-child(3) { width: 110px; }
 .doc-page-body th,
 .doc-page-body td {
   padding: 12px 14px;

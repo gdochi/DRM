@@ -1,0 +1,66 @@
+{
+  "siteBuild": "341 documents",
+  "siteVerify": "12 homepage entries; routes, sections, logos and distributions passed",
+  "mwentPagesPerLocale": 11,
+  "cardRowsPerLocale": 424,
+  "addedCardRowsPerLocale": 72,
+  "gitDiffCheck": "passed",
+  "screens": [
+    {
+      "file": "final-0.1.2-mobile-ko.json",
+      "url": "http://localhost:4173/#mwent/version-0-1-2",
+      "pageOverflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "firstTable": {
+        "width": 444,
+        "scrollWidth": 444,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "file": "final-0.1.5-en.json",
+      "url": "http://localhost:4173/#mwent/version-0-1-5",
+      "pageOverflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "firstTable": {
+        "width": 811,
+        "scrollWidth": 811,
+        "scrollLeft": 0
+      }
+    },
+    {
+      "file": "final-catalog-mobile-ko.json",
+      "url": "http://localhost:4173/#mwent/card-catalog",
+      "pageOverflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "firstTable": {
+        "width": 444,
+        "scrollWidth": 760,
+        "scrollLeft": 316
+      }
+    },
+    {
+      "file": "final-home-ko.json",
+      "url": "http://localhost:4173/#home",
+      "pageOverflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "firstTable": null
+    },
+    {
+      "file": "final-start-en.json",
+      "url": "http://localhost:4173/#mwent/start",
+      "pageOverflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "firstTable": {
+        "width": 811,
+        "scrollWidth": 811,
+        "scrollLeft": 0
+      }
+    }
+  ]
+}

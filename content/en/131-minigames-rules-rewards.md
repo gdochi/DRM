@@ -59,6 +59,6 @@ After saving, check both free editor test play and the actual entry-confirmation
 | Timing | Stop inside the success zone; configure rounds, speed and shrinking windows. |
 | High-Low | Predict the next card or cash out a streak. Ties retry; wrong guesses / timeouts lose the accumulated score. |
 | Shooting Gallery | Aim at differently sized targets and avoid explosive traps; configure weapon models, ammo, reload, fire interval and scores. |
-| MWENT | Factions, leaders, decks and round strategy; see [MWENT](#dochi-minigames/minigames-mwent). |
+| MWENT | Factions, leaders, decks and round strategy; see [MWENT](#mwent/start). |
 
 Without DRM, use free or item entry and item rewards. DRM currencies / conditions and other integrated rewards require their providers.

@@ -51,10 +51,10 @@ Fabric은 Loader 0.15.11 이상과 Fabric API 0.101.2+1.21.1 이상이 필요합
 /minigame packs
 ```
 
-[게임 규칙과 보상](#dochi-minigames/minigames-rules-rewards), [MWENT](#dochi-minigames/minigames-mwent), [파일과 GUI](#dochi-minigames/minigames-files-gui)를 확인하세요.
+[게임 규칙과 보상](#dochi-minigames/minigames-rules-rewards), [MWENT](#mwent/start), [파일과 GUI](#dochi-minigames/minigames-files-gui)를 확인하세요.
 
 ## 0.1.3 카드 획득과 26.3
 
-주민·떠돌이 상인·자연 생성 상자의 카드 획득은 [MWENT 획득 설정](#dochi-minigames/minigames-acquisition)에서 관리합니다. 프로필 저장과 Apply를 구분하세요.
+주민·떠돌이 상인·자연 생성 상자의 카드 획득은 [MWENT 획득 설정](#mwent/acquisition)에서 관리합니다. 프로필 저장과 Apply를 구분하세요.
 
 26.3은 같은 모드 버전의 Java 25 별도 빌드이며 DRM 없이 실행합니다. CustomNPCs는 제외합니다. 플랫폼 설치와 범위는 [26.3 안내](#core-fabric/minecraft-26-3)를 따릅니다.

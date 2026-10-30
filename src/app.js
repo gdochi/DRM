@@ -704,7 +704,7 @@
     const pageLabel = `${t("document")} ${index + 1} / ${docs.length}`;
     return `
       <div class="doc-shell">
-        <article class="doc-page" data-doc-page>
+        <article class="doc-page" data-doc-page data-product="${escapeAttr(product)}" data-doc="${escapeAttr(activeDoc.slug)}">
           <header class="doc-page-head">
             <h1>${escapeHtml(activeDoc.title)}</h1>
           </header>

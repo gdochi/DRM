@@ -215,14 +215,29 @@
       "label_ko": "Dochi`s Minigames",
       "shortLabel": "Minigames",
       "shortLabel_ko": "미니게임스",
-      "description": "Minigames 0.1.3: eight games, MWENT, tables and card acquisition settings. DRM is optional.",
-      "description_ko": "Minigames 0.1.3: 게임 8종·MWENT·테이블·카드 획득 설정. DRM은 선택 연동입니다.",
+      "description": "Arcade games and tables. MWENT gameplay and card history have dedicated documentation.",
+      "description_ko": "아케이드 게임과 테이블. 뭰트 게임 방법·카드 이력은 전용 문서에서 확인합니다.",
       "type": "standalone",
       "product": "dochi-minigames",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames",
       "logo": "assets/mod-logos/dochi_minigames.png",
       "logoAlt": "Dochi`s Minigames logo",
       "logoAlt_ko": "Dochi`s Minigames 로고"
+    },
+    {
+      "id": "mwent",
+      "label": "MWENT — Minigames Card Game",
+      "label_ko": "뭰트 — 미니게임스 카드 게임",
+      "shortLabel": "MWENT",
+      "shortLabel_ko": "뭰트",
+      "description": "The Minigames card game: how to play, factions, deck building, card specifications and release history.",
+      "description_ko": "미니게임스 카드 게임: 게임 방법·진영·덱 편성·카드 스펙·버전 이력.",
+      "type": "standalone",
+      "product": "mwent",
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames",
+      "logo": "assets/mod-logos/dochi_minigames.png",
+      "logoAlt": "MWENT — included in Dochi`s Minigames",
+      "logoAlt_ko": "Dochi`s Minigames에 포함된 뭰트"
     },
     {
       "id": "dochi-mapicon-integration",
@@ -1134,8 +1149,8 @@
       "label_ko": "Dochi`s Minigames",
       "shortLabel": "Minigames",
       "shortLabel_ko": "미니게임스",
-      "description": "Minigames 0.1.3: eight games, MWENT, tables and card acquisition settings. DRM is optional.",
-      "description_ko": "Minigames 0.1.3: 게임 8종·MWENT·테이블·카드 획득 설정. DRM은 선택 연동입니다.",
+      "description": "Arcade games and tables. MWENT gameplay and card history have dedicated documentation.",
+      "description_ko": "아케이드 게임과 테이블. 뭰트 게임 방법·카드 이력은 전용 문서에서 확인합니다.",
       "accent": "blue",
       "sections": [
         {
@@ -1209,6 +1224,37 @@
           "id": "operations",
           "label": "Files and Integration",
           "label_ko": "파일과 연동"
+        }
+      ]
+    },
+    "mwent": {
+      "label": "MWENT",
+      "label_ko": "MWENT / 뭰트",
+      "shortLabel": "MWENT",
+      "shortLabel_ko": "뭰트",
+      "description": "The Minigames card game: how to play, factions, deck building, card specifications and release history.",
+      "description_ko": "미니게임스 카드 게임: 게임 방법·진영·덱 편성·카드 스펙·버전 이력.",
+      "accent": "blue",
+      "sections": [
+        {
+          "id": "play",
+          "label": "Start and Play",
+          "label_ko": "시작과 게임 방법"
+        },
+        {
+          "id": "cards",
+          "label": "Factions and Cards",
+          "label_ko": "진영·카드·덱"
+        },
+        {
+          "id": "authoring",
+          "label": "Operations and Authoring",
+          "label_ko": "운영과 제작"
+        },
+        {
+          "id": "releases",
+          "label": "Release History",
+          "label_ko": "버전별 변경"
         }
       ]
     }
