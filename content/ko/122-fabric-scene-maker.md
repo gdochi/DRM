@@ -7,9 +7,13 @@ product: core-fabric
 category: Scene Maker
 section: scene-maker
 status: Stable
-version: 0.2.8
+version: 0.3.1
 audience: Creators / Operators
 ---
+
+## 이동 대상 카메라 보간
+
+Fabric·NeoForge 1.21.1과 별도 26.3의 Follow·Orbit·Path+LookAt 카메라는 대상 엔티티와 같은 프레임의 보간 위치를 사용합니다. 재생과 에디터 미리보기에서 움직이는 대상을 따라갈 때 발생하던 틱 단위 흔들림을 줄였습니다. 기존 Scene JSON이나 저장 설정을 바꿀 필요는 없습니다. Forge 1.20.1에는 Scene Maker가 없습니다.
 
 ## 첫 씬 만들기
 

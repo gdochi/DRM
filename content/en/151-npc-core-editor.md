@@ -7,9 +7,13 @@ product: dochi-npc-core
 category: NPCs, schedules and employment
 section: editor
 status: Guide
-version: 0.1.1
+version: 0.1.2
 audience: Creators / server operators
 ---
+
+## Updated job workflows
+
+See [schedules](#dochi-npc-core/npc-core-schedules) for action search, general/military duty, riding and scheduled shops, and [cooking](#dochi-npc-core/npc-core-cooking) for tools, ingredients, fuel and optional addons. Immersive Melodies patches correct song selection and resumption.
 
 ## Appearance and equipment
 
@@ -43,7 +47,7 @@ Employer controls do not grant operator NPC-editor permissions. An ended contrac
 
 ## Position, rotation and damage controls
 
-Movement AI's **Position lock** keeps the saved current position and blocks wandering, gravity, pushing, knockback and sleep/riding movement. Rotation locking is independent. Body/head yaw support -180.0 to 180.0 degrees and head pitch -90.0 to 90.0, with one decimal place. Locked rotation overrides automatic looking.
+Movement AI's **Position lock** keeps the saved current position and blocks wandering, gravity, pushing, knockback and sleep/riding movement. Compatible trainer dash/return can temporarily permit movement and restore the lock afterward. Rotation locking is independent. Body/head yaw support -180.0 to 180.0 degrees and head pitch -90.0 to 90.0, with one decimal place. Locked rotation overrides automatic looking.
 
 Combat AI's **Invulnerable** blocks Creative attacks too. With it off, disabling **Allow player damage** still blocks player melee and player-caused projectiles/explosions. Save and test the actual NPC. Idle nearby-player looking remains below work, combat, interaction and sleep priorities.
 

@@ -7,7 +7,7 @@ product: dochi-npc-core
 category: NPC 파일·연동·변환
 section: operations
 status: 사용 안내
-version: 0.1.1
+version: 0.1.2
 audience: 제작자 / 서버 운영자
 ---
 
@@ -28,11 +28,13 @@ NPC 배치 상태와 고용 계약 등은 월드에도 저장됩니다. 설정�
 
 | 모드 | DNPC와의 연결 |
 | --- | --- |
-| DRM 0.2.9 | 선택적 Actor API와 템플릿 공급자 API, 지원되는 Apply 기능 |
-| Cobblemon Editor 0.2.7 | 1.21.1 트레이너 Apply·배틀 후 대화. CNPC 전용 역할과 구분 |
+| DRM 0.3.1 | 선택적 Actor API와 템플릿 공급자 API, 지원되는 Apply 기능 |
+| Cobblemon Editor 0.2.9 | 1.21.1 트레이너·Pokemon Itself·상점·치료·스타터·클론과 순차 보상 |
 | Spawn Control 0.1.4 | 기본 NPC와 v3 정확한 복제를 별도 소스로 선택. COMMON 자연 스폰·기존 대상/26.3 배치형 템플릿 |
 | Real Armor 0.1.4 | 방어·부위 피해·내구도. CNPC 전용 저항·companion 제외 |
-| BattleWorks 0.1.6 | 26.3 DNPC 공급자 전투. 기존 Forge 입문 실습은 CustomNPCs 기준 |
+| DW / DWE 0.3.1 | Forge 1.20.1·NeoForge 1.21.1의 총기·근접·승무원·일정. 26.3 제외 |
+| Minigames 0.1.5 | DNPC Gecko 카드 외형과 로딩 중 미리보기 재생성 |
+| BattleWorks 0.1.6 | 기존 세 로더와 26.3의 DNPC 전투·관계·외형·제어권 연결 |
 
 파일 템플릿과 임시 클립보드는 다릅니다. [v3 저장·구형 파일 이행](#dochi-npc-core/npc-core-templates)을 확인하세요. 확인한 조합의 버전이 모든 연동의 최소 버전이라는 뜻은 아닙니다.
 

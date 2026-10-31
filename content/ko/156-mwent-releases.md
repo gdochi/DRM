@@ -7,7 +7,7 @@ product: mwent
 category: 버전별 변경
 section: releases
 status: 버전 기록
-version: 0.1.1–0.1.5
+version: 0.1.5–0.1.5
 audience: 플레이어 / 서버 운영자
 ---
 

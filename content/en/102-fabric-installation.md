@@ -2,18 +2,18 @@
 title: Installation
 slug: installation
 order: 30
-description: Requirements and client/server roles for DRM 0.2.9 on Fabric and NeoForge 1.21.1.
+description: Requirements and client/server roles for DRM 0.3.1 on Fabric and NeoForge 1.21.1.
 product: core-fabric
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.9
+version: 0.3.1
 audience: Creators / Operators
 ---
 
 ## Supported environment
 
-This documentation covers **DRM 0.2.9 for Fabric and NeoForge 1.21.1** together. Both use the same authoring tools and normal workflow. Choose the JAR and dependencies for your loader. Forge 1.20.1 has its own documentation entry.
+This documentation covers **DRM 0.3.1 for Fabric and NeoForge 1.21.1** together. Both use the same authoring tools and normal workflow. Choose the JAR and dependencies for your loader. Forge 1.20.1 has its own documentation entry.
 
 | Item | Fabric | NeoForge |
 | --- | --- | --- |
@@ -22,7 +22,7 @@ This documentation covers **DRM 0.2.9 for Fabric and NeoForge 1.21.1** together.
 | Loader | Fabric Loader `0.18.0`+, built with `0.19.3` | NeoForge `21.1`+, built with `21.1.216` |
 | Fabric API | `0.116.11+1.21.1`+, built with `0.116.13+1.21.1` | Not used. |
 | CustomNPCs | Compatible Fabric build, optional | Compatible NeoForge 1.21.1 build, optional |
-| DRM | `dochi_rpg_maker-0.2.9-fabric-1.21.1.jar` | `dochi_rpg_maker-0.2.9-neoforge-1.21.1.jar` |
+| DRM | `dochi_rpg_maker-0.3.1-fabric-1.21.1.jar` | `dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar` |
 
 Both builds keep the mod ID and resource namespace `dochi_rpg_maker`. Install the same version for the same loader on the server and every client.
 
@@ -37,12 +37,12 @@ Both builds keep the mod ID and resource namespace `dochi_rpg_maker`. Install th
 | CobbleDollars | Needed when server content or an addon selects CobbleDollars payments. |
 | Dochi Cobblemon Editor | Separate addon for trainer battles, markets, healing, starters, and trainer-victory quests. |
 
-CustomNPCs is optional in DRM 0.2.9. Install it for its NPC features or addons that require it. DNPC is also optional. Follow [Cobblemon Editor setup](#drm-cobblemon-editor/cobblemon-editor-setup) for Pokémon content.
+CustomNPCs is optional in DRM 0.3.1. Install it for its NPC features or addons that require it. DNPC is also optional. Follow [Cobblemon Editor setup](#drm-cobblemon-editor/cobblemon-editor-setup) for Pokémon content.
 
 ## Installation
 
 1. Prepare a Minecraft 1.21.1 instance with Fabric or NeoForge.
-2. Add matching-loader DRM 0.2.9 on server and clients. Add Fabric API on Fabric and optional NPC integrations as needed.
+2. Add matching-loader DRM 0.3.1 on server and clients. Add Fabric API on Fabric and optional NPC integrations as needed.
 3. Start the server or world once to create `config/dochi_rpg_maker`.
 4. In Creative mode or with permission level 2, obtain the Core item.
 5. Open the editor selector with that item and choose an authoring tool.
@@ -72,6 +72,6 @@ Bundled dialogue, GUI, shop, Teleporter, and sample files may be refreshed at st
 
 To keep networking and features aligned, update the server and every client together. Use only the JAR for your instance's loader.
 
-Current changes: [DRM 0.2.9](#core-fabric/release-notes-0-2-9).
+Current changes: [DRM 0.3.1](#core-fabric/release-notes-0-2-9).
 
 Minecraft 26.3 uses separate Java 25 builds. See [26.3 setup and exclusions](#core-fabric/minecraft-26-3).

@@ -11,14 +11,20 @@ version: 0.1.6
 audience: Creators / server operators
 ---
 
+## DNPC on existing targets
+
+Current 0.1.6 patches integrate DNPC combat editing, friendly/hostile relationships, appearance and control through DRM's public NPC API on Forge 1.20.1 and Fabric/NeoForge 1.21.1. CustomNPCs remains optional. Create an NPC, save/apply its BattleWorks document, then check actual targeting and motion.
+
+Ending combat control no longer cancels another mod's navigation. Existing Forge/CustomNPCs tutorials remain provider-specific examples. Current COMMON native DNPC evidence is centered on NeoForge and does not establish equal runtime coverage on Forge/Fabric or every optional-mod combination.
+
 ## Current installation
 
 This table follows local BattleWorks **0.1.6** production metadata, rather than older README instructions or the 0.1.4 distribution bundle.
 
 | Target | Java | Packaged DRM requirement | NPC workflow |
 | --- | --- | --- | --- |
-| Forge 1.20.1 | 17 | 0.2.8+ | Existing tutorial uses CustomNPCs |
-| Fabric / NeoForge 1.21.1 | 21 | 0.2.9+ | Optional CustomNPCs integration |
+| Forge 1.20.1 | 17 | 0.2.8+ | Optional DNPC / CustomNPCs provider |
+| Fabric / NeoForge 1.21.1 | 21 | 0.2.9+ | Optional DNPC / CustomNPCs provider |
 | Fabric / NeoForge 26.3 | 25 | 0.2.8+ | DNPC provider; CustomNPCs excluded |
 
 DRM is required. CustomNPCs is optional on the older targets too, but the existing [first attack tutorial](#mob-editor/battleworks-first-attack) specifically uses **Forge and CustomNPCs**. It does not establish full DNPC parity.

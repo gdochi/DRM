@@ -11,6 +11,10 @@ version: 0.1.5
 audience: Players
 ---
 
+## DNPC card models
+
+Current Minigames 0.1.5 patches read DNPC Gecko model settings and refresh temporary previews created during asset loading. The DNPC model, assets and optional rendering libraries must be available; a catalog entry does not install an integration.
+
 ## Acquire and store cards
 
 Collect physical cards and packs distributed by the server. Merchant and chest acquisition depends on server settings; operators can use the [acquisition guide](#mwent/acquisition). Receiving a card is separate from depositing it in the vault.

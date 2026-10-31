@@ -7,12 +7,16 @@ product: core
 category: GUI Maker
 section: gui-maker
 status: 안정
-version: 0.2.8
+version: 0.3.1
 audience: GUI 제작자
 tags:
   - gui
   - layout
 ---
+
+## 독립 텍스트 상자
+
+대화 GUI의 **Text / 텍스트**에서 **Content / 표시 내용 → Direct input / 직접 입력 또는 NPC name / NPC 이름**을 고릅니다. 본문·화자 컴포넌트와 별개로 여러 상자를 배치하고 위치·크기·배경·테두리를 편집합니다. 기본 GUI는 **Save As**로 복사하고 대화 문서에 연결하세요. NPC 이름은 실제 대화 대상에서 읽으며, 미리보기 예시와 구분합니다. [0.3.1 사용 순서](#core/release-notes-0-3-1)를 확인하세요.
 
 ## 역할
 

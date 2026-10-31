@@ -7,7 +7,7 @@ product: core-fabric
 category: 대화 에디터
 section: dialogue-editor
 status: 안정
-version: 0.2.8
+version: 0.3.1
 audience: 대화 제작자
 ---
 

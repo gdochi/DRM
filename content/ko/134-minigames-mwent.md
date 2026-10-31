@@ -7,7 +7,7 @@ product: dochi-minigames
 category: MWENT 카드 게임
 section: mwent
 status: 사용 안내
-version: 0.1.3
+version: 0.1.5
 audience: 제작자 / 서버 운영자
 ---
 

@@ -7,13 +7,17 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric / NeoForge 0.2.7
+version: Fabric / NeoForge 0.2.9
 audience: Creators building conditional battles and Pokémon NPCs
 tags:
   - conditions
   - rewards
   - pokemon-itself
 ---
+
+## Sequential dialogue and rewards
+
+Set Trainer Editor Action Mode to Sequential to wait for dialogue completion before subsequent rewards. Each round permits one dialogue. Cancellation or disconnect stops later grants; after reconnecting or restarting, interact with the NPC again to continue remaining actions. See the [setup steps](#drm-cobblemon-editor/cobblemon-trainer-editor).
 
 ## When conditions run
 

@@ -7,13 +7,17 @@ product: dochi-npc-core
 category: NPC Core setup
 section: setup
 status: Guide
-version: 0.1.1
+version: 0.1.2
 audience: Creators / server operators
 ---
 
+## Current 0.1.2 patches
+
+Updates address job/external-AI ownership, employment resumption and scheduled-shop authorization. Applying a template to an existing NPC preserves its carried cargo; new clones discard runtime cargo, riding and combat state. See [schedules and riding](#dochi-npc-core/npc-core-schedules) and [cooking jobs](#dochi-npc-core/npc-core-cooking). The existing 1.20.1 / 1.21.1 NPC screen also supports deletion with Delete.
+
 ## What it does
 
-Dochi’s NPC Core (DNPC) **0.1.1** creates independent NPCs with appearance, equipment, poses, relations, schedules and work. Basic NPC creation and editing work without DRM.
+Dochi’s NPC Core (DNPC) **0.1.2** creates independent NPCs with appearance, equipment, poses, relations, schedules and work. Basic NPC creation and editing work without DRM.
 
 | Build | Minecraft | Java |
 | --- | --- | --- |
@@ -22,7 +26,7 @@ Dochi’s NPC Core (DNPC) **0.1.1** creates independent NPCs with appearance, eq
 | NeoForge | 1.21.1 | 21 |
 | Fabric / NeoForge | 26.3 | 25 |
 
-Install the same loader build of `dochi_npc_core-0.1.1-<loader>-<minecraft>.jar` on server and clients. Fabric also needs Fabric API. DRM is optional; current integration guidance uses DRM 0.2.9. Install matching GeckoLib when using Gecko models.
+Install the same loader build of `dochi_npc_core-0.1.2-<loader>-<minecraft>.jar` on server and clients. Fabric also needs Fabric API. DRM is optional; current integration guidance uses DRM 0.3.1. Install matching GeckoLib when using Gecko models.
 
 ## Your first NPC
 

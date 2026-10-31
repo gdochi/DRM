@@ -7,14 +7,14 @@ product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.9
+version: 0.3.1
 audience: Server operators
 tags:
   - install
   - forge
 ---
 
-This page targets **Forge 1.20.1 / DRM 0.2.9**. Fabric and NeoForge 1.21.1 use DRM 0.2.9 builds. See [loader requirements and feature differences](#core-fabric/loader-compatibility).
+This page targets **Forge 1.20.1 / DRM 0.3.1**. Fabric and NeoForge 1.21.1 use DRM 0.3.1 builds. See [loader requirements and feature differences](#core-fabric/loader-compatibility).
 
 ## Supported Environment
 
@@ -24,7 +24,7 @@ DRM Core targets Forge 47+, Minecraft 1.20.1 up to but not including 1.21. The m
 | --- | --- | --- |
 | Mod Loader | Forge / `javafml` `[47,)` | Forge 1.20.1 family |
 | Minecraft | `[1.20.1,1.21)` | Docs assume 1.20.1 |
-| DRM Core | `dochi_rpg_maker` 0.2.9 | Required on both client and server |
+| DRM Core | `dochi_rpg_maker` 0.3.1 | Required on both client and server |
 | Java | 17 | Match the Forge 1.20.1 runtime. |
 | CustomNPCs | Compatible 1.20.1 build | Optional; install on both sides for its NPC features. |
 
@@ -83,6 +83,6 @@ Bundled default dialogue, GUI, shop, and Remnant Msg sample files may be refresh
 If the client is newer than the server, editor packets, server JSON kinds, and runtime GUI fields can drift. Keep the same JAR on both sides.
 :::
 
-Current changes: [DRM 0.2.9](#core/release-notes-0-2-9).
+Current changes: [DRM 0.3.1](#core/release-notes-0-2-9).
 
 Minecraft 26.3 uses separate Java 25 builds. See [26.3 setup and exclusions](#core-fabric/minecraft-26-3).

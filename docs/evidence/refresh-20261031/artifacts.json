@@ -1,0 +1,351 @@
+{
+  "checked": "2026-10-31",
+  "scope": "Local collected production metadata; does not establish public upload or new gameplay tests.",
+  "artifacts": [
+    {
+      "workspace": "[26.3] Dochi Real Armor",
+      "artifact": "jar-26.3/dochi_real_armor-0.1.4-fabric-26.3.jar",
+      "version": "0.1.4",
+      "sha256": "a2cd5378357211ed4ae66e713998b1718fde076d5c593be2059c8141f7b739ba",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[26.3] Dochi Real Armor",
+      "artifact": "jar-26.3/dochi_real_armor-0.1.4-neoforge-26.3.jar",
+      "version": "0.1.4",
+      "sha256": "c8312131a8e687727731b50b4ac02c2f135b474ee4597c0f14722b425e6dc53f",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[26.3] Dochi's MapIcon Integration",
+      "artifact": "jar-26.3/dochi_mapicon_integration-0.1.2-fabric-26.3.jar",
+      "version": "0.1.2",
+      "sha256": "524c358067e72d25a1537dbd21c22ef97cedbc87a9c28190d72944ff259b4953",
+      "dependencies": {
+        "dochi_rpg_maker": "*"
+      }
+    },
+    {
+      "workspace": "[26.3] Dochi's MapIcon Integration",
+      "artifact": "jar-26.3/dochi_mapicon_integration-0.1.2-neoforge-26.3.jar",
+      "version": "0.1.2",
+      "sha256": "c8bbb24eef23fd9feef1629b3e9d60d16732c818ba9840e02f61948bb0054b5d",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[26.3] Dochi`s BattleWorkes",
+      "artifact": "jar-26.3/dochi_battleworks-0.1.6-fabric-26.3.jar",
+      "version": "0.1.6",
+      "sha256": "7760b1472bc4e0eb70b6b53738176a2ebb0acefeeb75096dd0dbcba721565648",
+      "dependencies": {
+        "dochi_rpg_maker": ">=0.2.8"
+      }
+    },
+    {
+      "workspace": "[26.3] Dochi`s BattleWorkes",
+      "artifact": "jar-26.3/dochi_battleworks-0.1.6-neoforge-26.3.jar",
+      "version": "0.1.6",
+      "sha256": "a567868e582ba45df1c30d24de5c97eae70d7fd8b6f57b1dc8f478cf69ab5c07",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.2.8,)"
+      }
+    },
+    {
+      "workspace": "[26.3] Dochi`s MiniGames",
+      "artifact": "jar-26.3/dochi_minigames-0.1.5-fabric-26.3.jar",
+      "version": "0.1.5",
+      "sha256": "7af145566c7630fb1de632912f0efad994420751eee31b9512a5c6c3308ab912",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[26.3] Dochi`s MiniGames",
+      "artifact": "jar-26.3/dochi_minigames-0.1.5-neoforge-26.3.jar",
+      "version": "0.1.5",
+      "sha256": "7f1b5eae66bb81ab4770c9f89e772f3c5ac7d71f586533ce708e328131d1e4e8",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.2.4,)",
+        "cobblemon": "*"
+      }
+    },
+    {
+      "workspace": "[26.3] Dochi`s NPC Core",
+      "artifact": "jar-26.3/dochi_npc_core-0.1.2-fabric-26.3.jar",
+      "version": "0.1.2",
+      "sha256": "0b34fdc22b1515de706000477b79b3072124fa4e7b473ab5ee04f5a439a43363",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[26.3] Dochi`s NPC Core",
+      "artifact": "jar-26.3/dochi_npc_core-0.1.2-neoforge-26.3.jar",
+      "version": "0.1.2",
+      "sha256": "8e40ea185c44f712d67440a564391fe970659f1e53244dde05181bc009308dc7",
+      "dependencies": {
+        "dochi_rpg_maker": "[0,)"
+      }
+    },
+    {
+      "workspace": "[26.3] Dochi`s Spawn Control",
+      "artifact": "jar-26.3/dochi_spawn_control-0.1.4-fabric-26.3.jar",
+      "version": "0.1.4",
+      "sha256": "2f10a314ef0be792bdb6d9ea2d166e78cac51a156366d14bf612e5e2451855d3",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[26.3] Dochi`s Spawn Control",
+      "artifact": "jar-26.3/dochi_spawn_control-0.1.4-neoforge-26.3.jar",
+      "version": "0.1.4",
+      "sha256": "68b7de2939c3324808102d90c0ebe0cc83f5fcf303e3f1dbb0a05f8fa687ed03",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.1.9,)",
+        "dochi_warfare": "[0.2.5,)"
+      }
+    },
+    {
+      "workspace": "[26.3] DRM",
+      "artifact": "jar-26.3/dochi_rpg_maker-0.3.1-fabric-26.3.jar",
+      "version": "0.3.1",
+      "sha256": "653fec26bc66a31a2dcf85e570c82abe4001187f139b5577a7765b83bf81d033",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[26.3] DRM",
+      "artifact": "jar-26.3/dochi_rpg_maker-0.3.1-neoforge-26.3.jar",
+      "version": "0.3.1",
+      "sha256": "7382fa27da83e61dc8505f54a19253cd7a204f2cf2652febdb37299603fe6de9",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[COMMON] Dochi Real Armor",
+      "artifact": "jar/dochi_real_armor-0.1.4-fabric-1.21.1.jar",
+      "version": "0.1.4",
+      "sha256": "d29dd3bde6aea9c27d17a05ceaeeaddef0c3f8558751efa54cdfef0e88c0373d",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[COMMON] Dochi Real Armor",
+      "artifact": "jar/dochi_real_armor-0.1.4-forge-1.20.1.jar",
+      "version": "0.1.4",
+      "sha256": "8f776043f83bd965e9e1706825de8486d9a462a2546cd8f82ad8725828042837",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[COMMON] Dochi Real Armor",
+      "artifact": "jar/dochi_real_armor-0.1.4-neoforge-1.21.1.jar",
+      "version": "0.1.4",
+      "sha256": "b907853caf870a9ed5fc2e693f8041d8fc3da9b06f8a05088c9eade85d936eb3",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[COMMON] Dochi's MapIcon Integration",
+      "artifact": "jar/dochi_mapicon_integration-0.1.2-fabric-1.21.1.jar",
+      "version": "0.1.2",
+      "sha256": "62d7a3ccc0d6bbc4b042417167bf3251d43e6d22d47b1bb945b0480efebef85a",
+      "dependencies": {
+        "dochi_rpg_maker": "*"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi's MapIcon Integration",
+      "artifact": "jar/dochi_mapicon_integration-0.1.2-forge-1.20.1.jar",
+      "version": "0.1.2",
+      "sha256": "ed415d4e1efe2f9e6dac0989c34bfc8ca257ddc167afaa88f542ce63dd3e3f90",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[COMMON] Dochi's MapIcon Integration",
+      "artifact": "jar/dochi_mapicon_integration-0.1.2-neoforge-1.21.1.jar",
+      "version": "0.1.2",
+      "sha256": "b50a865b2f9e533918bfcd27ecfc79a6a9b949adb8f4b9cd83c393bc9a020d0d",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[COMMON] Dochi`s BattleWorks",
+      "artifact": "jar/dochi_battleworks-0.1.6-fabric-1.21.1.jar",
+      "version": "0.1.6",
+      "sha256": "c0037307a0b4a252c5381999a002f4c4f3c74d725994968236d078399bc9613d",
+      "dependencies": {
+        "dochi_rpg_maker": ">=0.2.9"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s BattleWorks",
+      "artifact": "jar/dochi_battleworks-0.1.6-forge-1.20.1.jar",
+      "version": "0.1.6",
+      "sha256": "1cb29bd7704417ec05f088dd6ea9cd5a7b4bd2a540f61a6f0a392948c8443159",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.2.8,)"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s BattleWorks",
+      "artifact": "jar/dochi_battleworks-0.1.6-neoforge-1.21.1.jar",
+      "version": "0.1.6",
+      "sha256": "91d9530ce6d5a33f82a156a1fb650fe768aeae6da2c4180503dd17b7ef639ecb",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.2.9,)"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Cobblemon Editor",
+      "artifact": "jar/dochi_cobblemon_editor-0.2.9-fabric-1.21.1.jar",
+      "version": "0.2.9",
+      "sha256": "de3efc7030611d1b06b54d974599833fd257eaa43f269c32ba76486da458e428",
+      "dependencies": {
+        "cobblemon": ">=1.7.3 <1.9.0",
+        "dochi_rpg_maker": ">=0.2.8"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Cobblemon Editor",
+      "artifact": "jar/dochi_cobblemon_editor-0.2.9-neoforge-1.21.1.jar",
+      "version": "0.2.9",
+      "sha256": "b91bf82916bea1a99ddbeea0d658074774ff46950a7ce7f873e99a6aebd7c5e8",
+      "dependencies": {
+        "cobblemon": "[1.7.3,1.9.0)",
+        "dochi_rpg_maker": "[0.2.8,)"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Minigames",
+      "artifact": "jar/dochi_minigames-0.1.5-fabric-1.21.1.jar",
+      "version": "0.1.5",
+      "sha256": "bcdc679c393929a08fd3ac23ebbb7679fa4d35f5d2fbfda7f36dc63144752ac3",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Minigames",
+      "artifact": "jar/dochi_minigames-0.1.5-forge-1.20.1.jar",
+      "version": "0.1.5",
+      "sha256": "db75ec16159f4cb3237049615957b38d05287916574d9b3c61edef4ec7918b24",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.2.4,)",
+        "cobblemon": "*"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Minigames",
+      "artifact": "jar/dochi_minigames-0.1.5-neoforge-1.21.1.jar",
+      "version": "0.1.5",
+      "sha256": "f224d617577e63d6967edbc7c4a71d8a177949e13f8b242f1c65c8df3a7cf087",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.2.4,)",
+        "cobblemon": "*"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Npc Core",
+      "artifact": "jar/dochi_npc_core-0.1.2-fabric-1.21.1.jar",
+      "version": "0.1.2",
+      "sha256": "dc20278f960c58457834743b3d8c93e562103bac6aa41f997c850d592e076516",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Npc Core",
+      "artifact": "jar/dochi_npc_core-0.1.2-forge-1.20.1.jar",
+      "version": "0.1.2",
+      "sha256": "d99b8b061f610a2a1e84143052b68bc77e18b53fb61b89c8d1cfd6354daacaad",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.2.4,)"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Npc Core",
+      "artifact": "jar/dochi_npc_core-0.1.2-neoforge-1.21.1.jar",
+      "version": "0.1.2",
+      "sha256": "1eab89df265888a2aebfcd8c6cddfc7447b87df92d64fac42ed189a4b180897d",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.2.7,)"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Spawn Control",
+      "artifact": "jar/dochi_spawn_control-0.1.4-fabric-1.21.1.jar",
+      "version": "0.1.4",
+      "sha256": "0d046fdf15931098b6c67be7609fd064bfe6a2abb52db692bac6a825ea57f3c6",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Spawn Control",
+      "artifact": "jar/dochi_spawn_control-0.1.4-forge-1.20.1.jar",
+      "version": "0.1.4",
+      "sha256": "d1e13cce81c608150535e10e97f8be3f6f0c14b0e9d9dee367e435e1c87e56e5",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.1.6,)",
+        "dochi_warfare": "[0.2.5,)"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Spawn Control",
+      "artifact": "jar/dochi_spawn_control-0.1.4-neoforge-1.21.1.jar",
+      "version": "0.1.4",
+      "sha256": "50dc518a8b3da915a41c3dea0c1f598054d87df4e2e9ff211baf74499a10055c",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.1.9,)",
+        "dochi_warfare": "[0.2.5,)"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Warfare",
+      "artifact": "jar/dochi_warfare-0.3.1-forge-1.20.1.jar",
+      "version": "0.3.1",
+      "sha256": "6bb941e4eb3e389687a5be48e7891eaa4f7802df706499be3f4ae6c4e3a16d81",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.1.5,)",
+        "superbwarfare": "[0.8.9],[0.8.9.1],[0.8.9.2]"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Warfare",
+      "artifact": "jar/dochi_warfare-0.3.1-neoforge-1.21.1.jar",
+      "version": "0.3.1",
+      "sha256": "878c52a4dda3be6ebf4c2c9d966ad1ae30a14a449369bb51fc7cac3f1c3ad183",
+      "dependencies": {
+        "dochi_rpg_maker": "[0.1.5,)",
+        "superbwarfare": "[0.8.9.1],[0.8.9.2]"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Warfare Expanded",
+      "artifact": "jar/dochi_warfare_expanded-0.3.1-forge-1.20.1.jar",
+      "version": "0.3.1",
+      "sha256": "cf23e7959e4c7d546ab3fb6e032ec053b263a44f4928a8a9795c39e404e599a7",
+      "dependencies": {
+        "dochi_warfare": "[0.3.1]",
+        "superbwarfare": "[0.8.9],[0.8.9.1],[0.8.9.2]",
+        "dochi_rpg_maker": "[0.1.5,)"
+      }
+    },
+    {
+      "workspace": "[COMMON] Dochi`s Warfare Expanded",
+      "artifact": "jar/dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar",
+      "version": "0.3.1",
+      "sha256": "5c0899dd67c9945ba27ffb706c33c50933ee35768c78cfcf65df81b11c027254",
+      "dependencies": {
+        "dochi_warfare": "[0.3.1]",
+        "superbwarfare": "[0.8.9.1],[0.8.9.2]",
+        "dochi_rpg_maker": "[0.1.5,)"
+      }
+    },
+    {
+      "workspace": "[COMMON] DRM",
+      "artifact": "jar/dochi_rpg_maker-0.3.1-1.20.1-forge.jar",
+      "version": "0.3.1",
+      "sha256": "0eff70b8e5349279c0da32df8e6d2f7938fb51600e49d3573f4d83b0ac739059",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[COMMON] DRM",
+      "artifact": "jar/dochi_rpg_maker-0.3.1-fabric-1.21.1.jar",
+      "version": "0.3.1",
+      "sha256": "7b1684c01edeca6ccadbd9e348b746e90a2fbdfa5f1a95e6287f3aa0c76d30aa",
+      "dependencies": {}
+    },
+    {
+      "workspace": "[COMMON] DRM",
+      "artifact": "jar/dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar",
+      "version": "0.3.1",
+      "sha256": "00adcf6446e36c47d36a691f1614806b5c05aee30f2523a2616db8a1bf9b29fe",
+      "dependencies": {}
+    }
+  ]
+}

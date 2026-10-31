@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: 사용 안내
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.9
 audience: 배틀 연출 제작자
 ---
 

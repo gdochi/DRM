@@ -7,7 +7,7 @@ product: dochi-minigames
 category: 파일과 운영
 section: operations
 status: 사용 안내
-version: 0.1.3
+version: 0.1.5
 audience: 제작자 / 운영자
 ---
 

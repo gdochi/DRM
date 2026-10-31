@@ -7,13 +7,17 @@ product: drm-cobblemon-editor
 category: 서비스 NPC
 section: services
 status: Draft
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.9
 audience: 스타터 선택 NPC를 만드는 제작자
 tags:
   - starter-selector
   - pokemon-give
   - runtime-gui
 ---
+
+## DNPC 스타터 NPC
+
+0.2.9 최신 수정본에서는 DNPC에도 Starter Selector를 Apply할 수 있습니다. 같은 로더의 DRM·DNPC·애드온을 최신 수정본으로 맞추고, 적용한 NPC의 실제 선택 화면과 지급 조건을 확인하세요. CustomNPCs는 필수가 아닙니다.
 
 ## 역할
 

@@ -7,7 +7,7 @@ product: core
 category: Operations
 section: operations
 status: Stable
-version: 0.2.9
+version: 0.3.1
 audience: Server operators
 tags:
   - admin

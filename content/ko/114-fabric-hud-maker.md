@@ -7,7 +7,7 @@ product: core-fabric
 category: HUD Maker
 section: hud-maker
 status: 안정
-version: 0.2.8
+version: 0.3.1
 audience: HUD 제작자
 tags:
   - hud

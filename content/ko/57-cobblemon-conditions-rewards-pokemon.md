@@ -7,13 +7,17 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric / NeoForge 0.2.7
+version: Fabric / NeoForge 0.2.9
 audience: 조건부 전투와 결과 처리를 설계하는 제작자
 tags:
   - conditions
   - after-actions
   - pokemon-itself
 ---
+
+## 대화 후 순차 보상
+
+대화 완료를 기다린 뒤 다음 보상을 지급하려면 Trainer Editor의 Action Mode를 Sequential로 설정합니다. 라운드당 대화는 한 개이며 취소·접속 종료 후에는 후속 지급을 중단합니다. 재접속·서버 재시작 뒤 NPC와 다시 상호작용해 남은 액션을 이어갑니다. [설정 순서](#drm-cobblemon-editor/cobblemon-trainer-editor)를 확인하세요.
 
 ## 라운드별 데이터
 

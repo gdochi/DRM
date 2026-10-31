@@ -7,7 +7,7 @@ product: core
 category: 스크립트 API
 section: script-api
 status: 안정
-version: 0.2.8
+version: 0.3.1
 audience: CustomNPCs 스크립트 제작자
 tags:
   - script

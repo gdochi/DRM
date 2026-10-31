@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Overview
 section: overview
 status: Draft
-version: Fabric / NeoForge 0.2.7
+version: Fabric / NeoForge 0.2.9
 audience: Creators building Cobblemon NPCs and shops
 tags:
   - cobblemon
@@ -17,7 +17,7 @@ tags:
 
 ## What Dochi Cobblemon Editor is
 
-`Dochi Cobblemon Editor` is a DRM addon for Fabric and NeoForge 1.21.1. It lets creators attach Cobblemon trainer battles or a single Pokémon battle to CustomNPCs NPCs, build full-screen pre-battle presentations, create Pokémon markets, healers, and starter selectors, and reuse NPC clones in the same workflow.
+`Dochi Cobblemon Editor` is a DRM addon for Fabric and NeoForge 1.21.1. It lets creators attach Cobblemon trainer battles or a single Pokémon battle to DNPC or CustomNPCs NPCs, build full-screen pre-battle presentations, create Pokémon markets, healers, and starter selectors, and reuse NPC clones in the same workflow.
 
 The addon does not imitate Cobblemon with a separate battle engine. Battles use the player's real Cobblemon party and Cobblemon 1.7.3 runtime. The intended authoring path is the DRM editor selector, `Save As`, and the NPC apply screen rather than hand-writing every JSON document.
 
@@ -27,21 +27,14 @@ The addon uses the display name `Dochi Cobblemon Editor` and the JAR name `dochi
 
 ## Supported environment
 
-| Loader | Addon version | Required platform |
+| Loader | Addon | Platform |
 | --- | --- | --- |
-| Fabric 1.21.1 | 0.2.7 | Java 21, Fabric Loader 0.18.0+, Fabric API 0.116.11+1.21.1+, CustomNPCs 1.0.0 |
-| NeoForge 1.21.1 | 0.2.7 | Java 21, NeoForge 21.1+, compatible CustomNPCs 1.21.1 |
+| Fabric 1.21.1 | 0.2.9 | Java 21, Fabric Loader/API compatible with DRM |
+| NeoForge 1.21.1 | 0.2.9 | Java 21, NeoForge 21.1 series |
 
-Both require **Cobblemon 1.7.3 to below 1.9.0 and matching-loader DRM Core 0.2.7+**. Current Fabric and NeoForge Core builds are 0.2.5. The table gives the complete environment baseline when installing current Core.
+Both declare **DRM Core 0.2.8+ and Cobblemon >=1.7.3 <1.9.0**. Current Core documentation follows **0.3.1**. CustomNPCs, DNPC, RCT API and CobbleDollars remain optional; install the NPC provider for the workflow you use. DNPC Trainer, Pokemon Itself, PokéMart, Nurse Joy and Starter Selector do not require CustomNPCs.
 
-RCT API and CobbleDollars are optional. DRM Strategy works without RCT. Every optional integration must match the loader.
-
-| Loader | File |
-| --- | --- |
-| Fabric | `dochi_cobblemon_editor-0.2.7-fabric-1.21.1.jar` |
-| NeoForge | `dochi_cobblemon_editor-0.2.7-neoforge-1.21.1.jar` |
-
-Use the same build on the server and all clients. The internal mod ID/resource namespace remains `cobble_npc`. Older live-test results do not establish coverage of every current feature across all supported Cobblemon versions.
+Match `dochi_cobblemon_editor-0.2.9-<loader>-1.21.1.jar` on server and clients and use compatible Cobblemon/NPC providers. See the [current changes](#drm-cobblemon-editor/cobblemon-editor-current-update).
 
 ## Authoring tools
 
@@ -54,9 +47,9 @@ Use the same build on the server and all clients. The internal mod ID/resource n
 | `Nurse Joy Editor` | Healing dialogue and healing-machine linkage | A dedicated healing interaction |
 | `Starter Selector Editor` | Starter cards, conditions, sounds, and success actions | A server-validated starter selection screen |
 | `Clone Library` | Reusable Trainer and Pokemon NPC templates | Clone sources for DRM Core NPC Spawner |
-| `Cobblemon NPC Appearance` | The Pokémon appearance of a CustomNPCs NPC | The NPC model shown in the world |
+| `Cobblemon NPC Appearance` | The Pokémon appearance of a DNPC or CustomNPCs NPC | The NPC model shown in the world |
 
-The first six tools are registered as DRM `Add-on` editors. `Cobblemon NPC Appearance` operates on a target NPC, so a CustomNPCs NPC must already exist.
+The first six tools are registered as DRM `Add-on` editors. `Cobblemon NPC Appearance` operates on a target NPC, so a DNPC or CustomNPCs NPC must already exist.
 
 ## Trainer and Pokemon Itself
 
@@ -72,7 +65,7 @@ They also use different save folders. Keep trainer documents in `trainers/` and 
 ## Runtime rules
 
 - Saving a trainer or PokéMart document does not attach it to an NPC. Select the saved document and choose `Apply` in the target NPC workflow.
-- Battle prompts and PokéMart screens open when a player right-clicks a CustomNPCs NPC with both hands empty.
+- Battle prompts and PokéMart screens open when a player right-clicks a DNPC or CustomNPCs NPC with both hands empty.
 - A DRM Dialogue or DRM NPC Shop attached to the same NPC owns normal interaction first. Use a dialogue action or another explicit route if the NPC must also start a battle.
 - A PokéMart role takes priority over a normal trainer or Pokemon Itself battle prompt.
 - The server is authoritative for battle progress, conditions, rewards, stock, and auctions.

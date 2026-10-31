@@ -7,13 +7,17 @@ product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
 status: Draft
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.9
 audience: 포켓몬 상점 제작자와 서버 운영자
 tags:
   - pokemart
   - editor
   - runtime
 ---
+
+## DNPC 포켓마트
+
+최신 0.2.9 수정본은 DNPC의 PokéMart 역할을 지원합니다. PokéMart 문서를 저장하고 DNPC에 Apply한 뒤 빈손으로 상호작용합니다. DRM과 해당 NPC 제공자는 필요하며 CustomNPCs는 선택입니다.
 
 ## 제작 에디터와 플레이어 화면
 

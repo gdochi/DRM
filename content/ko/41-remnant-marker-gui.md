@@ -7,7 +7,7 @@ product: core
 category: 레머넌트 Msg
 section: remnant-msg
 status: 안정
-version: 0.2.8
+version: 0.3.1
 audience: 제작자 / 운영자
 tags:
   - remnant

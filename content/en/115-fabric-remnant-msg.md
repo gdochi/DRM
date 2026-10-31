@@ -7,7 +7,7 @@ product: core-fabric
 category: Core Systems
 section: remnant-msg
 status: Stable
-version: 0.2.8
+version: 0.3.1
 audience: Creators / Operators
 tags:
   - remnant

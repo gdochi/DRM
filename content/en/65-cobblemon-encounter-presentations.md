@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: Battle presentation
 section: presentation
 status: Draft
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.9
 audience: Creators and operators
 ---
 

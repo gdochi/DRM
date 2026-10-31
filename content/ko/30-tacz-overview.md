@@ -15,6 +15,12 @@ tags:
   - overview
 ---
 
+## 0.3.1 DNPC와 편집기
+
+DNPC의 우호·적대 관계와 아군 그룹 보호, 재장전 이동 감속·정지 사격·포즈·이벤트 대화를 연결합니다. 외부 AI 제어 중에는 이동 경로·표적·장비를 보존하고 제어권 반환 후 전투를 재개합니다. 일반 작업과 전투 설정은 서로 구분하세요.
+
+도구는 설치된 DNPC/CNPC 크리에이티브 탭에서 찾습니다. 무기·방어구·스킨 목록의 체크 선택·전체 선택·선택 삭제, 프로필 검색·스크롤과 포즈 편집/미리보기 배치를 개선했습니다. 차량은 [DWE 호환 안내](#dochi-warfare-expanded/expanded-compatibility)를 확인하세요.
+
 ## Forge·NeoForge 0.3.1 업데이트
 
 DW는 NPC 전투와 애드온 코어를 담당하며 차량 AI·무장·승무원·차량 프로필은 [Dochi's Warfare Expanded](#dochi-warfare-expanded/expanded-overview)로 분리되었습니다. DW만 설치해도 NPC 전투를 사용할 수 있습니다. 차량 기능은 Forge·NeoForge 모두 DWE 0.3.1을 추가했을 때 사용합니다. 클론 보관함에는 삭제 확인과 복구용 보관 폴더가 추가되었습니다.
@@ -23,9 +29,9 @@ DW는 NPC 전투와 애드온 코어를 담당하며 차량 AI·무장·승무�
 
 ## 도치 워페어란?
 
-도치 워페어(`dochi_warfare`)는 Forge 1.20.1용 전투 제작 모드입니다. 주요 NPC 워크플로에서는 선택한 CustomNPCs NPC가 TACZ·PointBlank·SuperbWarfare 총기를 하나의 서버 판정 DW 전투 컨트롤러로 사용하게 합니다. 총기 아이템, 렌더러, 탄환/히트스캔, 사운드, 총기 고유 상태는 원본 모드가 유지하고, DW는 타겟, 스탠스, 이동, 발사 간격, 재장전 정책, 예비 탄약, 애니메이션 신호, 저장을 담당합니다.
+도치 워페어(`dochi_warfare`)는 Forge 1.20.1용 전투 제작 모드입니다. 주요 NPC 워크플로에서는 선택한 DNPC 또는 CustomNPCs NPC가 TACZ·PointBlank·SuperbWarfare 총기를 하나의 서버 판정 DW 전투 컨트롤러로 사용하게 합니다. 총기 아이템, 렌더러, 탄환/히트스캔, 사운드, 총기 고유 상태는 원본 모드가 유지하고, DW는 타겟, 스탠스, 이동, 발사 간격, 재장전 정책, 예비 탄약, 애니메이션 신호, 저장을 담당합니다.
 
-0.2.9에는 선택형 SuperbWarfare 지상·헬리콥터·고정익 차량 AI, 상면/측면 좌석 지도를 사용하는 NPC 승무원 편집기, 서버 측 NPC·차량 클론 보관함, 차량 소울스톤, 전용 부비트랩 편집기와 관리자도 포함됩니다. 전체 DW 제작 화면은 공통 스킨·밝은 텍스트·UI 사운드를 사용하며, PointBlank 전투 처리와 포즈 편집기의 내장 프리셋도 확장되었습니다. 이 도구들은 NPC 총기 편집기와 구분됩니다.
+현재 0.3.1에서 NPC 총기·근접 전투, 공용 클론과 부비트랩 도구는 DW가 담당합니다. SuperbWarfare 지상·헬리콥터·고정익 차량 AI와 승무원·지원 타임라인은 별도 DWE가 담당합니다. 같은 버전의 두 모드를 함께 교체하며 [DWE 설치와 호환 기종](#dochi-warfare-expanded/expanded-compatibility)을 확인하세요.
 
 NPC별 핵심 스위치는 여전히 `TACZ Fire NPC Mode`라는 UI 라벨을 사용합니다. OFF이면 일반 CustomNPCs 동작을 유지하고, ON으로 저장하면 DW가 해당 NPC의 관리 총기 동작을 제어합니다. 이 라벨에는 호환을 위해 TACZ 명칭이 남아 있지만 0.2.9 관리 총기 런타임은 TACZ 아이템에만 제한되지 않습니다.
 
@@ -36,7 +42,7 @@ NPC별 핵심 스위치는 여전히 `TACZ Fire NPC Mode`라는 UI 라벨을 사
 | 지원 총기 사용 | TACZ 총기, 지원되는 PointBlank 1.11.1/2.1.0 총기, 지원되는 SuperbWarfare 0.8.9 총기를 사용합니다. 지원하지 않는 총기는 안전하게 거부됩니다. |
 | TACZ 설치 유지 | 외부 총기를 사용해도 TACZ 1.1.8은 필수 런타임·애니메이션 기준입니다. |
 | 오프핸드 탄약 금지 | 여분 탄약은 실제 탄약/탄창 아이템이 아니라 DW 탄약 재고와 재장전 정책으로 처리합니다. |
-| NPC별 활성화 | `TACZ Fire NPC Mode`가 켜진 선택된 NPC만 제어합니다. 일반 CustomNPCs NPC는 그대로 둡니다. |
+| NPC별 활성화 | `TACZ Fire NPC Mode`가 켜진 선택된 NPC만 제어합니다. 일반 DNPC 또는 CustomNPCs NPC는 그대로 둡니다. |
 | GUI 우선 설정 | 인게임 NPC별 GUI가 기본 설정 경로입니다. 스크립트와 storeddata는 고급 워크플로용입니다. |
 
 :::warning 탄약 규칙
@@ -78,16 +84,16 @@ NPC별 핵심 스위치는 여전히 `TACZ Fire NPC Mode`라는 UI 라벨을 사
 | Forge 47 이상 | 필수 로더 범위입니다. |
 | TACZ 1.1.8부터 지원되는 1.1.x 범위 | 클라이언트·서버에 필요한 총기 런타임·애니메이션 기준입니다. |
 | Player Animator 1.0.0 이상 | 공유 관리 총기 애니메이션 컨트롤러에 필요한 클라이언트 필수 모드입니다. |
-| CustomNPCs 1.20.1 이상 | 모드 전체의 선택 의존성이지만, 이 위키의 NPC·용병·포즈·NPC 클론 흐름에는 필요합니다. |
+| CustomNPCs 1.20.1 이상 | 선택적 NPC 제공자입니다. DNPC 전투 흐름은 CustomNPCs 없이 사용할 수 있습니다. |
 | PointBlank 1.11.1 또는 2.1.0 | 선택형 네이티브 총기 연동입니다. 지원 버전 하나만 설치합니다. |
-| SuperbWarfare 0.8.9 final, 빌드 `6effe4385` | 선택형 네이티브 총기·차량 연동입니다. 다른 ABI에서는 연동을 비활성화합니다. |
+| SuperbWarfare | Forge 0.8.9·0.8.9.1·0.8.9.2, NeoForge 0.8.9.1·0.8.9.2. 네이티브 구조 검사도 필요합니다. |
 | Better Combat | 등록된 근접 무기 공격·포즈와 무기 기반 공격 타이밍에 쓰는 선택형 연동 모드입니다. |
 | Mob Player Animator 1.0.0 이상 | Better Combat의 정확한 NPC 모션 재생에 쓰는 선택형 클라이언트 의존성입니다. 없으면 바닐라 스윙을 사용합니다. |
 | LesRaisins Tactical Equipments | 선택형 수류탄 투척과 LRT 네이티브 수류탄 부비트랩 페이로드에 사용합니다. |
 
 ## 권장 제작 순서
 
-1. 테스트 월드에서 새 CustomNPCs NPC 하나를 만듭니다.
+1. 테스트 월드에서 새 DNPC 또는 CustomNPCs NPC 하나를 만듭니다.
 2. `DW Npc Core`로 NPC별 설정 GUI를 엽니다.
 3. `TACZ Fire NPC Mode`와 `Enabled`를 켭니다.
 4. 빠른 시작이 필요하면 `Easy Build` 또는 `Presets`로 기본 전투 동작을 정합니다.

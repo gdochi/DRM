@@ -7,7 +7,7 @@ product: core
 category: Tooltip Maker
 section: gui-maker
 status: Stable
-version: 0.2.8
+version: 0.3.1
 audience: Creators
 tags:
   - tooltip

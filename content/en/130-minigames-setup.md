@@ -7,20 +7,24 @@ product: dochi-minigames
 category: Start
 section: setup
 status: Usage guide
-version: 0.1.3
+version: 0.1.5
 audience: Creators / server operators
 ---
 
+## Current 0.1.5 patch
+
+Local production builds for the existing targets and separate 26.3 workspace remain 0.1.5. DNPC Gecko card models and previews created while assets are loading now refresh correctly. Failed or missing optional integrations are not retried indefinitely.
+
 ## Installation
 
-**Dochi’s Minigames 0.1.3** runs without DRM. Install the same loader and build on server and clients.
+**Dochi’s Minigames 0.1.5** runs without DRM. Install the same loader and build on server and clients.
 
 | Loader | Minecraft / Java | File |
 | --- | --- | --- |
-| Forge | 1.20.1 / 17 | `dochi_minigames-0.1.3-forge-1.20.1.jar` |
-| Fabric | 1.21.1 / 21 | `dochi_minigames-0.1.3-fabric-1.21.1.jar` |
-| NeoForge | 1.21.1 / 21 | `dochi_minigames-0.1.3-neoforge-1.21.1.jar` |
-| Fabric / NeoForge | 26.3 / 25 | `dochi_minigames-0.1.3-<loader>-26.3.jar` |
+| Forge | 1.20.1 / 17 | `dochi_minigames-0.1.5-forge-1.20.1.jar` |
+| Fabric | 1.21.1 / 21 | `dochi_minigames-0.1.5-fabric-1.21.1.jar` |
+| NeoForge | 1.21.1 / 21 | `dochi_minigames-0.1.5-neoforge-1.21.1.jar` |
+| Fabric / NeoForge | 26.3 / 25 | `dochi_minigames-0.1.5-<loader>-26.3.jar` |
 
 Fabric needs Loader 0.15.11+ and Fabric API 0.101.2+1.21.1+. Forge needs 47.2.0+; NeoForge needs 21.1+. DRM, CustomNPCs, Cobblemon and CobbleDollars are optional. Add the relevant provider when a document references its currency, conditions or Pokémon rewards.
 
@@ -53,7 +57,7 @@ Entry is charged when Start is confirmed. Clicking an NPC or cancelling confirma
 
 See [rules and rewards](#dochi-minigames/minigames-rules-rewards), [MWENT](#mwent/start) and [files / GUI](#dochi-minigames/minigames-files-gui).
 
-## 0.1.3 acquisition and 26.3
+## 0.1.5 acquisition and 26.3
 
 Configure villager, wandering-trader and chest rewards in [MWENT acquisition](#mwent/acquisition). Profile storage and Apply are separate actions.
 

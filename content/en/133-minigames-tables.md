@@ -7,13 +7,13 @@ product: dochi-minigames
 category: Minigame tables
 section: setup
 status: Guide
-version: 0.1.3
+version: 0.1.5
 audience: Creators / server operators
 ---
 
 ## Standalone tables
 
-Minigames 0.1.3 runs on Forge 1.20.1 / Java 17 and Fabric / NeoForge 1.21.1 / Java 21. Tables, built-in editors, card packs and MWENT do not require DRM.
+Minigames 0.1.5 runs on Forge 1.20.1 / Java 17 and Fabric / NeoForge 1.21.1 / Java 21. Tables, built-in editors, card packs and MWENT do not require DRM.
 
 1. Obtain `dochi_minigames:minigame_table` in Creative or craft it with three planks and four sticks.
 2. As an operator with permission level 2, right-click a new table. Sneak-right-click a configured table with an empty hand to edit it.
@@ -33,7 +33,7 @@ Player battles retain free-entry rules; profiles with entry fees are used for AI
 
 `/minigame editor` and `/minigame packs` work standalone. DRM adds NPC Apply, dialogue actions, DRM currency / conditions and GUI Maker. Documents referencing those integrations need the corresponding mods.
 
-## 0.1.3 mapping and crafting
+## 0.1.5 mapping and crafting
 
 Craft the eight dedicated tables in a vanilla 3×3 crafting grid. Each retains its own game type. Existing `minigame_table` is the **Creative Table** for changing game types and has no crafting recipe. Check the in-game recipe book for dedicated tables.
 

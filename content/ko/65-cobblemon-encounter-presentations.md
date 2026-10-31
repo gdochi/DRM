@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 배틀 연출
 section: presentation
 status: Draft
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.9
 audience: 제작자와 운영자
 ---
 

@@ -1,17 +1,28 @@
 ---
-title: Fabric·NeoForge 0.2.7 업데이트
+title: Fabric·NeoForge 0.2.9 업데이트
 slug: cobblemon-editor-current-update
 order: 480
-description: AI·기술 선택·Cobblemon 1.8.4, 선택 NPC와 배틀 후 대화 안내입니다.
+description: DNPC 역할 확장, 위치 고정 이동과 순차 애프터 액션 안내입니다.
 product: drm-cobblemon-editor
 category: 시작하기
 section: overview
 status: 안정
-version: Fabric / NeoForge 0.2.7
+version: Fabric / NeoForge 0.2.9
 audience: 제작자 / 운영자
 ---
 
-## 0.2.7 최신 변경
+## 0.2.9 최신 변경
+
+Fabric·NeoForge 1.21.1 / Java 21용입니다. DRM 0.2.8 이상과 Cobblemon 1.7.3 이상 1.9.0 미만의 기존 선언을 유지합니다. 현재 함께 확인한 수정본은 DRM 0.3.1·DNPC 0.1.2·Cobblemon Editor 0.2.9입니다.
+
+- **순차 보상:** Trainer Editor → Battle Config → After Actions → Action Mode에서 **Sequential**을 고릅니다. 대화 뒤에 보상을 두면 정상 대화 완료 후 다음 액션을 진행합니다. 취소·접속 종료는 후속 지급을 멈추며 NPC와 다시 상호작용해 남은 액션을 이어갑니다. 재접속·서버 재시작에도 진행을 보존합니다.
+- **대화 한 개:** 라운드당 대화 액션은 최대 한 개입니다. 기존 복수 대화는 보존하지만 한 개로 정리해야 저장·Apply·실행할 수 있습니다.
+- **DNPC 역할:** Trainer 외에 Pokemon Itself·포켓몬 외형/포즈/히트박스·PokéMart·Nurse Joy·Starter Selector와 클론·스포너·배틀 스케줄러를 연결합니다. CustomNPCs 없이 사용할 수 있습니다.
+- **위치 고정:** DNPC 위치 고정을 켠 채 트레이너 대시·복귀를 수행하고 종료 후 다시 고정합니다. 재배치 충돌·중단 후 대시 속도와 NeoForge의 대화 취소 후 복귀를 수정했습니다.
+
+이 기능을 함께 쓰려면 서버와 클라이언트의 Core·DNPC·애드온을 해당 로더의 최신 수정본으로 교체하세요. [설치](#drm-cobblemon-editor/cobblemon-editor-setup), [애프터 액션 설정](#drm-cobblemon-editor/cobblemon-trainer-editor)을 확인하세요. 아래는 이전 버전 기록입니다.
+
+## 0.2.7 당시 변경
 
 Minecraft 1.21.1 / Java 21의 Fabric·NeoForge 빌드입니다. DRM **0.2.8 이상**과 **Cobblemon 1.7.3 이상 1.9.0 미만**이 필요합니다. CustomNPCs는 선택 의존성으로 바뀌었으며 DNPC 트레이너와 파일 편집은 CustomNPCs 없이 사용할 수 있습니다. Pokemon Itself·PokéMart·Nurse Joy·Starter Selector와 기존 CNPC 클론은 해당 CustomNPCs 연동 범위입니다.
 

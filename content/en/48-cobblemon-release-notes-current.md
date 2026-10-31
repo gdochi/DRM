@@ -1,17 +1,28 @@
 ---
-title: Fabric / NeoForge 0.2.7 update
+title: Fabric / NeoForge 0.2.9 Update
 slug: cobblemon-editor-current-update
 order: 480
-description: AI, move selection, Cobblemon 1.8.4, optional NPCs and post-battle dialogue.
+description: Expanded DNPC roles, position-locked movement and Sequential after-actions.
 product: drm-cobblemon-editor
 category: Getting Started
 section: overview
 status: Stable
-version: Fabric / NeoForge 0.2.7
+version: Fabric / NeoForge 0.2.9
 audience: Creators / Operators
 ---
 
-## Current 0.2.7 changes
+## Current 0.2.9 changes
+
+For Fabric / NeoForge 1.21.1 and Java 21. Existing declarations remain DRM 0.2.8+ and Cobblemon >=1.7.3 <1.9.0. The current combined patch baseline is DRM 0.3.1, DNPC 0.1.2 and Cobblemon Editor 0.2.9.
+
+- **Sequential rewards:** choose Trainer Editor → Battle Config → After Actions → Action Mode → **Sequential**. Place rewards after dialogue to wait for normal completion. Cancellation or disconnect stops subsequent grants; interact with the NPC again to continue remaining actions. Progress survives reconnects and server restarts.
+- **One dialogue:** each round permits at most one dialogue action. Older multi-dialogue rounds remain preserved but must be reduced to one before saving, applying or executing.
+- **DNPC roles:** Trainer, Pokemon Itself, Pokémon appearance/poses/hitboxes, PokéMart, Nurse Joy, Starter Selector, clones, spawners and battle schedulers work without CustomNPCs.
+- **Position locking:** trainers can dash and return while DNPC position locking is enabled, then restore the lock. Fixes cover repositioning conflicts, retained dash speed after interruption and NeoForge return after cancelled dialogue.
+
+Use matching current Core, DNPC and addon patches on server and clients for this combined workflow. See [installation](#drm-cobblemon-editor/cobblemon-editor-setup) and [after-action settings](#drm-cobblemon-editor/cobblemon-trainer-editor). Earlier release notes follow.
+
+## Earlier 0.2.7 changes
 
 Fabric / NeoForge builds target Minecraft 1.21.1 / Java 21. They require **DRM 0.2.8+** and **Cobblemon >=1.7.3 <1.9.0**. CustomNPCs is now optional: file editing and DNPC trainers work without it. Pokemon Itself, PokéMart, Nurse Joy, Starter Selector and legacy CNPC clones retain their CustomNPCs-specific boundary.
 

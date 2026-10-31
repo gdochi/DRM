@@ -2,18 +2,18 @@
 title: Quick Start
 slug: quick-start
 order: 20
-description: Quick Start for Forge DRM 0.2.9.
+description: Quick Start for Forge DRM 0.3.1.
 product: core
 category: Getting Started
 section: getting-started
 status: Stable
-version: 0.2.9
+version: 0.3.1
 audience: Creators and server operators
 ---
 
 ## First launch
 
-1. Install Forge 1.20.1 with Java 17 and DRM 0.2.9 on server and clients. Add CustomNPCs for its NPC features.
+1. Install Forge 1.20.1 with Java 17 and DRM 0.3.1 on server and clients. Add CustomNPCs for its NPC features.
 2. Start once to create `config/dochi_rpg_maker` and the bundled templates.
 3. In Creative mode or with edit permission, use `/give @s dochi_rpg_maker:dialogue_editor`. With CustomNPCs installed, the core also appears in its creative tab.
 4. Right-click air to open the editor selector. Right-click a CustomNPCs NPC to enter the target-aware editing flow.
@@ -60,4 +60,4 @@ Default dialogue sets, protected default GUIs, and bundled sample shops are star
 
 Start with installation and paths, then Dialogue Editor and conditions/actions. Continue with NPC Shop, GUI Maker, HUD Maker, quests, and stats/items as your project needs them. GUI files control presentation; shop products, dialogue content, and quest progress have their own data stores.
 
-Current changes: [DRM 0.2.9](#core/release-notes-0-2-9).
+Current changes: [DRM 0.3.1](#core/release-notes-0-2-9).

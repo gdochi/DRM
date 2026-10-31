@@ -7,7 +7,7 @@ product: core-fabric
 category: Minecraft 26.3
 section: getting-started
 status: Guide
-version: 0.2.9 / Minecraft 26.3
+version: 0.3.1 / Minecraft 26.3
 audience: Creators / server operators
 ---
 
@@ -15,16 +15,16 @@ audience: Creators / server operators
 
 26.3 has separate Fabric / NeoForge builds using **Java 25**. Use matching Minecraft and loader builds on the server and clients. Fabric API remains a separate platform installation where required.
 
-This table records **local production artifacts checked on 2026-10-28**. It does not establish public availability or complete port parity.
+This table records **local production artifacts checked on 2026-10-31**. It does not establish public availability or complete port parity.
 
 | Mod | 26.3 version | Integration |
 | --- | --- | --- |
-| DRM | 0.2.9 | DNPC optional |
-| NPC Core | 0.1.1 | Basic creation, editing and storage without DRM |
+| DRM | 0.3.1 | DNPC optional |
+| NPC Core | 0.1.2 | Basic creation, editing and storage without DRM |
 | BattleWorks | 0.1.6 | DRM required; NPC combat uses the DNPC provider |
 | Spawn Control | 0.1.4 | Standalone ordinary spawning; templates need the public provider API |
 | Real Armor | 0.1.4 | Optional Easy NPC / DNPC |
-| Minigames | 0.1.3 | DRM optional |
+| Minigames | 0.1.5 | DRM optional |
 | MapIcon Integration | 0.1.2 | DRM required; maps and DNPC individually optional |
 
 Cobblemon Editor was checked on **1.21.1** Fabric / NeoForge. Warfare / Expanded target **1.20.1** Forge and **1.21.1** NeoForge. This table does not announce 26.3 support for those mods.
@@ -47,7 +47,7 @@ BattleWorks rejects legacy `summon_clone` on 26.3. The Better Combat sample need
 
 ## Verification and existing data
 
-DRM has recorded client, dedicated-server and JSON network checks. Full GUI, transactions and existing-world migration remain incomplete porting gates. Cleanup of retained legacy reflection paths is also incomplete and does not enable CustomNPCs support.
+DRM has recorded client, dedicated-server and JSON network checks. Full GUI, transactions and existing-world migration remain separate porting gates. Current 0.3.1 package checks found no native CNPC references. Porting legacy tests for the general build remains a separate task.
 
 DNPC standalone operation and placed template spawning have actual 26.3 evidence. COMMON natural-template spawning results do not establish the same 26.3 coverage. Back up the world and configuration, and test migration on a copy.
 

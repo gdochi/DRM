@@ -7,7 +7,7 @@ product: core
 category: Core Systems
 section: getting-started
 status: Stable
-version: 0.2.8
+version: 0.3.1
 audience: Creators
 tags:
   - concepts

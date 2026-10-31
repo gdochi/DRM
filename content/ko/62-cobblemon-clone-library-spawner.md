@@ -7,13 +7,17 @@ product: drm-cobblemon-editor
 category: 클론과 스포너
 section: world-tools
 status: Draft
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.9
 audience: 코블몬 NPC를 재사용하거나 웨이브로 소환하는 제작자
 tags:
   - clone-library
   - npc-spawner
   - soul-stone
 ---
+
+## DNPC 클론과 NPC 템플릿
+
+최신 수정본은 DNPC 역할을 보존한 클론·스포너 생성과 배틀 스케줄러의 에디터 클론·NPC 템플릿 선택을 지원합니다. DRM Core·DNPC·Cobblemon Editor를 해당 로더의 최신 수정본으로 함께 교체하세요. 기존 CNPC Soul Stone 가져오기는 별도 제공자의 흐름으로 유지합니다.
 
 ## 역할 분담
 

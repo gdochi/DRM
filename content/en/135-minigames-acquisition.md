@@ -7,7 +7,7 @@ product: dochi-minigames
 category: MWENT card acquisition
 section: mwent
 status: Guide
-version: 0.1.3
+version: 0.1.5
 audience: Creators / server operators
 ---
 

@@ -7,13 +7,17 @@ product: drm-cobblemon-editor
 category: 서비스 NPC
 section: services
 status: Draft
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.9
 audience: 포켓몬 치료 NPC를 만드는 제작자
 tags:
   - nurse-joy
   - healer
   - dialogue
 ---
+
+## DNPC 간호순
+
+0.2.9 최신 수정본에서는 DNPC에도 Nurse Joy를 적용합니다. 해당 NPC에 역할을 Apply하고 치료기를 연결한 뒤 실제 치료·복귀를 확인하세요. CustomNPCs 없이 사용할 수 있으며 기존 CNPC 작업 순서와 같은 역할 문서를 사용합니다.
 
 ## 역할
 

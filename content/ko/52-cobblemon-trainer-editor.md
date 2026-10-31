@@ -7,13 +7,19 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric / NeoForge 0.2.7
+version: Fabric / NeoForge 0.2.9
 audience: 트레이너와 포켓몬 NPC를 만드는 제작자
 tags:
   - trainer
   - pokemon
   - rounds
 ---
+
+## Sequential로 대화 뒤 보상 지급
+
+**Battle Config → After Actions → Action Mode → Sequential**을 선택하고 대화 액션 다음에 아이템·보상 액션을 둡니다. 정상 대화 완료 뒤 목록의 다음 액션을 진행합니다. 취소·ESC·접속 종료는 후속 지급을 중단하며, 재접속이나 서버 재시작 후 NPC와 다시 상호작용하면 남은 액션을 이어갈 수 있습니다. 이미 완료한 액션은 다시 지급하지 않습니다.
+
+라운드당 대화는 최대 한 개입니다. 구형 복수 대화 문서는 한 개로 정리해야 저장·Apply·실행합니다. 새 동작을 쓰려면 Core와 애드온의 최신 수정본을 함께 설치하세요. DNPC 위치 고정도 호환 대시·복귀 동안 일시 유예하고 종료 후 복원합니다.
 
 ## 두 전투 유형
 
@@ -61,7 +67,7 @@ tags:
 
 - `Enabled`가 꺼져 있으면 해당 NPC의 전투 역할이 시작되지 않습니다.
 - 이름 소스 `Profile`은 문서에 저장한 이름을 사용합니다.
-- 이름 소스 `NPC`는 적용 대상 CustomNPCs NPC의 현재 표시 이름을 사용합니다.
+- 이름 소스 `NPC`는 적용 대상 DNPC 또는 CustomNPCs NPC의 현재 표시 이름을 사용합니다.
 
 NPC 이름을 운영 중 자주 바꾸고 연출·확인창에도 같이 반영하려면 `NPC`를 사용합니다. 문서 이름을 고정하려면 `Profile`을 사용합니다.
 
@@ -89,7 +95,7 @@ Trainer는 현재 라운드에 최대 6마리, Pokemon Itself는 한 마리를 �
 | IV / EV | 능력치별 IV 0–31, EV 0–252, 총합 최대 510 |
 | Battle Mechanics | Tera Type, Dynamax Level 0–10, Gigantamax Factor |
 
-종·폼·특성·기술 ID는 현재 설치된 Cobblemon 레지스트리에 있어야 합니다. 기술 선택창은 선택한 종·폼·Aspects의 서버 습득 가능 목록만 표시하며, 현재 레벨에서 아직 배우지 않은 기술도 전체 습득 목록에 있으면 선택할 수 있습니다.
+종·폼·특성·기술 ID는 현재 설치된 Cobblemon 레지스트리에 있어야 합니다. 기술 선택창은 등록된 전체 기술을 표시하고 선택한 종의 일반·이벤트·과거 습득 기술을 먼저 정렬합니다. 최종 실행 가능 여부는 Cobblemon과 설치된 기술 제공자가 결정합니다.
 
 ### 파티 작업
 

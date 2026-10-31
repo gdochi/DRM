@@ -7,20 +7,24 @@ product: dochi-minigames
 category: 시작하기
 section: setup
 status: 사용 안내
-version: 0.1.3
+version: 0.1.5
 audience: 제작자 / 서버 운영자
 ---
 
+## 0.1.5 수정본
+
+기존 1.20.1·1.21.1과 별도 26.3의 로컬 배포본은 0.1.5입니다. DNPC Gecko 카드가 기본 외형으로 표시되던 연결을 보완하고 모델 로딩 중 임시 외형으로 만든 미리보기를 다시 생성합니다. 로딩 실패나 선택 모드 부재를 무한 재시도하지 않습니다.
+
 ## 설치
 
-**Dochi’s Minigames 0.1.3**는 DRM 없이 실행하는 미니게임 모드입니다. 서버와 클라이언트에 같은 로더의 같은 빌드를 설치합니다.
+**Dochi’s Minigames 0.1.5**는 DRM 없이 실행하는 미니게임 모드입니다. 서버와 클라이언트에 같은 로더의 같은 빌드를 설치합니다.
 
 | 로더 | Minecraft / Java | 설치 파일 |
 | --- | --- | --- |
-| Forge | 1.20.1 / 17 | `dochi_minigames-0.1.3-forge-1.20.1.jar` |
-| Fabric | 1.21.1 / 21 | `dochi_minigames-0.1.3-fabric-1.21.1.jar` |
-| NeoForge | 1.21.1 / 21 | `dochi_minigames-0.1.3-neoforge-1.21.1.jar` |
-| Fabric / NeoForge | 26.3 / 25 | `dochi_minigames-0.1.3-<loader>-26.3.jar` |
+| Forge | 1.20.1 / 17 | `dochi_minigames-0.1.5-forge-1.20.1.jar` |
+| Fabric | 1.21.1 / 21 | `dochi_minigames-0.1.5-fabric-1.21.1.jar` |
+| NeoForge | 1.21.1 / 21 | `dochi_minigames-0.1.5-neoforge-1.21.1.jar` |
+| Fabric / NeoForge | 26.3 / 25 | `dochi_minigames-0.1.5-<loader>-26.3.jar` |
 
 Fabric은 Loader 0.15.11 이상과 Fabric API 0.101.2+1.21.1 이상이 필요합니다. Forge는 47.2.0 이상, NeoForge는 21.1 이상을 사용합니다. DRM·CustomNPCs·Cobblemon·CobbleDollars는 선택 연동입니다. 특정 화폐·조건·포켓몬 보상을 참조하면 해당 제공 모드를 추가합니다.
 
@@ -53,7 +57,7 @@ Fabric은 Loader 0.15.11 이상과 Fabric API 0.101.2+1.21.1 이상이 필요합
 
 [게임 규칙과 보상](#dochi-minigames/minigames-rules-rewards), [MWENT](#mwent/start), [파일과 GUI](#dochi-minigames/minigames-files-gui)를 확인하세요.
 
-## 0.1.3 카드 획득과 26.3
+## 0.1.5 카드 획득과 26.3
 
 주민·떠돌이 상인·자연 생성 상자의 카드 획득은 [MWENT 획득 설정](#mwent/acquisition)에서 관리합니다. 프로필 저장과 Apply를 구분하세요.
 

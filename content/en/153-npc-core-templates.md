@@ -7,9 +7,13 @@ product: dochi-npc-core
 category: NPC clone templates
 section: operations
 status: Guide
-version: 0.1.1
+version: 0.1.2
 audience: Creators / server operators
 ---
+
+## 0.1.2 clone versus apply
+
+New clones, including those created from older templates, discard source block cargo, riding sessions/timeouts, spawner runtime markers and combat progress. Applying to an existing NPC preserves that target's real cargo and runtime ownership. Authored equipment, inventory, appearance and integration settings are distinct from active cargo.
 
 ## Save an NPC for reuse
 

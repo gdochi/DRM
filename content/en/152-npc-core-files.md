@@ -7,7 +7,7 @@ product: dochi-npc-core
 category: NPC files and integrations
 section: operations
 status: Guide
-version: 0.1.1
+version: 0.1.2
 audience: Creators / server operators
 ---
 
@@ -28,11 +28,13 @@ Placed NPC state and employment contracts also live in the world. Back up the wo
 
 | Mod | DNPC support |
 | --- | --- |
-| DRM 0.2.9 | Optional Actor and template provider APIs; supported Apply tools |
-| Cobblemon Editor 0.2.7 | 1.21.1 Trainer Apply and post-battle dialogue; separate CNPC-only roles |
+| DRM 0.3.1 | Optional Actor and template provider APIs; supported Apply tools |
+| Cobblemon Editor 0.2.9 | 1.21.1 Trainer, Pokemon Itself, shops, healing, starters, clones and Sequential actions |
 | Spawn Control 0.1.4 | Default entities and exact v3 templates are separate sources; COMMON natural rules and older-target/26.3 placed templates |
 | Real Armor 0.1.4 | Armor, body damage and durability; excludes CNPC-specific resistance/companion rules |
-| BattleWorks 0.1.6 | 26.3 DNPC provider combat; the existing Forge tutorial uses CustomNPCs |
+| BattleWorks 0.1.6 | DNPC combat, relationships, appearance and control on existing targets and 26.3 |
+| DW / DWE 0.3.1 | Firearms, melee, crews and schedules on Forge 1.20.1 / NeoForge 1.21.1; excludes 26.3 |
+| Minigames 0.1.5 | DNPC Gecko card models and loading-preview refresh |
 
 File templates differ from the temporary clipboard. See [v3 storage and older files](#dochi-npc-core/npc-core-templates). Checked versions do not establish a minimum for every integration.
 

@@ -7,7 +7,7 @@ product: drm-cobblemon-editor
 category: 설치
 section: setup
 status: Draft
-version: Fabric / NeoForge 0.2.7
+version: Fabric / NeoForge 0.2.9
 audience: 서버 운영자와 처음 설치하는 제작자
 tags:
   - setup
@@ -17,21 +17,14 @@ tags:
 
 ## 지원 환경
 
-| 로더 | 애드온 버전 | 플랫폼 |
+| 로더 | 애드온 | 플랫폼 |
 | --- | --- | --- |
-| Fabric 1.21.1 | 0.2.7 | Java 21, DRM과 함께 설치하는 Fabric Loader·Fabric API |
-| NeoForge 1.21.1 | 0.2.7 | Java 21, NeoForge 21.1 계열 |
+| Fabric 1.21.1 | 0.2.9 | Java 21, DRM과 호환되는 Fabric Loader·Fabric API |
+| NeoForge 1.21.1 | 0.2.9 | Java 21, NeoForge 21.1 계열 |
 
-두 로더 모두 **DRM Core 0.2.8 이상과 Cobblemon 1.7.3 이상 1.9.0 미만**이 필요합니다. 현재 Core 안내 기준은 0.2.9입니다. DRM 0.2.9 Fabric의 플랫폼 선언은 Loader 0.18.0 이상 / Fabric API 0.116.11+1.21.1 이상입니다.
+두 로더 모두 **DRM Core 0.2.8 이상·Cobblemon 1.7.3 이상 1.9.0 미만**을 요구합니다. 현재 Core 문서 기준은 **0.3.1**입니다. CustomNPCs·DNPC·RCT API·CobbleDollars는 선택 연동이며 사용할 역할의 NPC 제공자를 설치합니다. DNPC의 Trainer·Pokemon Itself·PokéMart·Nurse Joy·Starter Selector는 CustomNPCs 없이 사용할 수 있습니다.
 
-**CustomNPCs는 선택 연동입니다.** DNPC 트레이너와 파일 편집은 CustomNPCs 없이 사용합니다. Pokemon Itself·PokéMart·Nurse Joy·Starter Selector 및 기존 CNPC 클론은 CustomNPCs가 있을 때 사용합니다. DNPC·RCT API·CobbleDollars도 선택입니다.
-
-| 로더 | 설치 파일 |
-| --- | --- |
-| Fabric | `dochi_cobblemon_editor-0.2.7-fabric-1.21.1.jar` |
-| NeoForge | `dochi_cobblemon_editor-0.2.7-neoforge-1.21.1.jar` |
-
-서버와 모든 클라이언트에 같은 빌드를 설치합니다. 모드 ID는 `cobble_npc`입니다. Cobblemon 1.7.3·1.8.0·1.8.2·1.8.3·1.8.4는 양 로더 실행 기록이 있고 1.8.1은 별도 미검증입니다. [현재 변경 기록](#drm-cobblemon-editor/cobblemon-editor-current-update)을 확인하세요.
+서버와 클라이언트에 같은 로더의 `dochi_cobblemon_editor-0.2.9-<loader>-1.21.1.jar`를 설치합니다. 코블몬·NPC 제공자의 실제 호환 버전도 맞춥니다. [최신 변경](#drm-cobblemon-editor/cobblemon-editor-current-update)을 확인하세요.
 
 ## 첫 실행 후 폴더
 
@@ -128,7 +121,7 @@ Pokemon Itself도 최대 16라운드, 라운드 조건과 전투 후 액션을 �
 | --- | --- |
 | Add-on 에디터가 없음 | 서버 로그의 모드 의존성 오류, DRM/애드온 버전 |
 | 기본 파일이 없음 | 서버를 한 번 시작했는지, `config/dochi_rpg_maker/cobblemon` 생성 여부 |
-| NPC 적용 대상이 없음 | 역할에 맞는 NPC 제공자인지, DNPC는 Trainer 역할인지, DRM Core 아이템으로 NPC를 열었는지 |
+| NPC 적용 대상이 없음 | 역할에 맞는 NPC 제공자인지, 역할의 DNPC 연동 API가 준비됐는지, DRM Core 아이템으로 NPC를 열었는지 |
 | 전투가 안 열림 | 양손이 비었는지, 현재 라운드 조건·이용 정책, 다른 대화/상점 역할 |
 | RCT를 선택할 수 없음 | RCT API 설치와 버전, 서버·클라이언트 일치 |
 | 기믹이 작동하지 않음 | Mega Showdown 설치, 일반 인벤토리의 키 아이템, 포켓몬별 설정 |
@@ -142,4 +135,4 @@ Pokemon Itself도 최대 16라운드, 라운드 조건과 전투 후 액션을 �
 
 ## DNPC 트레이너
 
-DNPC에는 DRM 공개 NPC Actor API를 통해 Trainer JSON을 Apply합니다. CustomNPCs는 필요하지 않습니다. 적용된 프로필을 트레이너 편집기로 다시 불러오고 배틀 후 대화·보상을 설정할 수 있습니다. 다른 CNPC 전용 역할까지 DNPC로 연결되는 것은 아닙니다.
+DNPC에는 DRM 공개 NPC Actor API를 통해 Trainer JSON을 Apply합니다. CustomNPCs는 필요하지 않습니다. 적용된 프로필을 트레이너 편집기로 다시 불러오고 배틀 후 대화·보상을 설정할 수 있습니다. 최신 수정본에서는 Pokemon Itself·포켓몬 외형·PokéMart·Nurse Joy·Starter Selector와 클론·스포너도 연결합니다.

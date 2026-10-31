@@ -7,7 +7,7 @@ product: dochi-minigames
 category: 게임 제작
 section: rules
 status: 사용 안내
-version: 0.1.3
+version: 0.1.5
 audience: 게임 제작자
 ---
 

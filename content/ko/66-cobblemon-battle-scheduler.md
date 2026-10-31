@@ -7,9 +7,13 @@ product: drm-cobblemon-editor
 category: 배틀 스케줄러
 section: scheduler
 status: 사용 안내
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.9
 audience: 보스전 제작자 / 서버 운영자
 ---
+
+## DNPC 배우 소스
+
+최신 수정본에서는 배틀 스케줄러의 배우 소스로 에디터 클론 또는 NPC 템플릿을 고를 수 있습니다. 실제 DNPC 역할이 저장된 소스를 선택하고 등장·배틀·복귀·정리를 확인하세요. 구형 CNPC 클론과 DNPC 템플릿을 이름만으로 자동 변환하지 않습니다.
 
 ## 무엇을 연결하나요?
 

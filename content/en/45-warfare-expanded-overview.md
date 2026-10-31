@@ -13,6 +13,10 @@ audience: Creators and server operators
 
 **Dochi's Warfare Expanded (DWE)** requires DW 0.3.1 on Forge 1.20.1 or NeoForge 1.21.1. It owns vehicle AI, weapons, crew, vehicle reactions, bombing and reinforcement timelines. DW owns NPC gun/melee combat, ammunition, animation, and the shared clone library.
 
+## Current patches and crews
+
+Update DW and DWE together to current 0.3.1 patches. See the [compatibility table](#dochi-warfare-expanded/expanded-compatibility) for DNPC crews, relationships, vehicle-destruction handling, ammo/flight fixes and representative tested addon vehicles. Results do not cover every vehicle in a pack.
+
 ## Installation
 
 | Component | Requirement |
@@ -20,8 +24,8 @@ audience: Creators and server operators
 | Minecraft / loader | Forge 1.20.1 / Java 17 or NeoForge 1.21.1 / Java 21 |
 | DW | Exactly 0.3.1, including its TACZ and client Player Animator requirements |
 | DWE | Forge: `dochi_warfare_expanded-0.3.1.jar`; NeoForge: `dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar` |
-| SuperbWarfare | Forge: 0.8.9 or 0.8.9.1; NeoForge: exactly 0.8.9.1. Native checks must pass |
-| CustomNPCs | Needed for NPC crew, combat dismounts, and NPC reinforcements |
+| SuperbWarfare | Forge: 0.8.9 / 0.8.9.1 / 0.8.9.2; NeoForge: 0.8.9.1 / 0.8.9.2. Native checks must pass |
+| DNPC / CustomNPCs | Choose the NPC provider; DNPC crews and combat dismounting do not require CNPC |
 | DRM | Optional shared editor selection and help integration |
 
 Use identical DW/DWE builds on server and clients. Different builds labeled 0.3.1 can still have incompatible network protocols. Replace older `dochi_warfare_vehicle` JARs; do not install both names together. The internal mod ID remains `dochi_warfare_vehicle` for compatibility.

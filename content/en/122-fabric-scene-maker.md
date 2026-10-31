@@ -7,9 +7,13 @@ product: core-fabric
 category: Scene Maker
 section: scene-maker
 status: Stable
-version: 0.2.8
+version: 0.3.1
 audience: Creators / Operators
 ---
+
+## Moving-target camera interpolation
+
+On Fabric/NeoForge 1.21.1 and separate 26.3 builds, Follow, Orbit and Path+LookAt sample the target's interpolated render position for the current frame. This reduces tick-step judder in playback and editor preview without changing scene JSON or saved settings. Forge 1.20.1 does not include Scene Maker.
 
 ## Make your first scene
 

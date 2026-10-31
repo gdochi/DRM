@@ -15,6 +15,12 @@ tags:
   - gui
 ---
 
+## 0.3.1 DNPC and editor updates
+
+DNPC integration includes friendly/hostile relationships, group protection, reload slowdown, stationary fire, poses and event dialogue. External AI control preserves paths, targets and equipment; combat resumes after control returns. Keep native jobs and combat configuration distinct.
+
+Find DW tools in installed DNPC/CNPC Creative tabs. Weapon, armor and skin lists support checkbox selection, Select All and Delete Selected; profile search, scrolling and pose editing/preview layouts were improved. See [DWE compatibility](#dochi-warfare-expanded/expanded-compatibility) for vehicles.
+
 ## Loader-specific builds
 
 | Loader | Minecraft / Java | Dependency differences |
@@ -22,40 +28,40 @@ tags:
 | Forge 47+ · DW 0.3.1 | 1.20.1 / Java 17 | TACZ 1.1.8 to below 1.2 required; Player Animator required on client |
 | NeoForge 21.1.216+ · DW 0.3.1 | 1.21.1 / Java 21 | TACZ 1.1.8 to below 1.2 required; Player Animator 2.0+ required on client |
 
-CustomNPCs is needed for managed-NPC authoring; use its matching loader build. Forge accepts the SuperbWarfare 0.8.9 final and 0.8.9.1 hotfix families after structural checks. NeoForge declares exactly SuperbWarfare 0.8.9.1. A matching version string alone does not bypass compatibility checks. The detailed checklist and external-gun version examples below target Forge.
+Prepare DNPC or CustomNPCs for the NPC workflow you use. DNPC firearm and melee combat works without CustomNPCs. Forge accepts the SuperbWarfare 0.8.9, 0.8.9.1 and 0.8.9.2 builds after structural checks. NeoForge declares SuperbWarfare 0.8.9.1 and 0.8.9.2. A matching version string alone does not bypass compatibility checks. The detailed checklist and external-gun version examples below target Forge.
 
 ## Install checklist
 
-Forge Dochi's Warfare 0.3.1 targets Forge 1.20.1. TACZ is the required gun-runtime baseline, and Player Animator is required on the client. CustomNPCs is required for the NPC workflow; PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, and LesRaisins Tactical Equipments are optional integrations.
+Forge Dochi's Warfare 0.3.1 targets Forge 1.20.1. TACZ is the required gun-runtime baseline, and Player Animator is required on the client. DNPC and CustomNPCs are optional NPC providers; PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, and LesRaisins Tactical Equipments are optional integrations.
 
 | Component | Required for this wiki workflow | Notes |
 | --- | --- | --- |
 | Forge | Yes | Use a 1.20.1 Forge 47+ environment. |
 | TACZ | Yes | Use 1.1.8 through the supported 1.1.x range on client and server. |
 | Player Animator | Client required | Required for the shared managed-gun animation controller. |
-| CustomNPCs | Yes for NPC setup | Required for managed NPCs, mercenaries, poses, and NPC clones. |
+| DNPC / CustomNPCs | Choose an NPC provider | DNPC combat, relationships, poses and dialogue work without CustomNPCs. |
 | Dochi's Warfare | Yes | Add the 0.3.1 JAR on both sides for normal modded server play. |
 | PointBlank | Optional | Use exactly one supported branch: 1.11.1 or 2.1.0. |
-| SuperbWarfare | Optional | Supported native bridges accept 0.8.9 / 0.8.9.1 after compatibility checks; vehicle AI also requires DWE. |
+| SuperbWarfare | Optional | Supported native bridges accept Forge 0.8.9 / 0.8.9.1 / 0.8.9.2 after compatibility checks; vehicle AI also requires DWE. |
 | Better Combat | Optional | Install it for registered melee weapon attacks, poses, and weapon-based attack timing. Keep the server and client mod sets aligned in normal multiplayer. |
 | Mob Player Animator | Optional | Client mod required for exact Better Combat NPC motion playback. Without it, the NPC falls back to a vanilla main-hand swing. |
 | LesRaisins Tactical Equipments | Optional | Enables supported grenade throws and LRT grenade booby-trap payloads. |
 
 ## Add DWE for vehicles
 
-For Forge and NeoForge 0.3.1 vehicle editing, AI, crew, and support timelines, install [DWE 0.3.1](#dochi-warfare-expanded/expanded-overview) and SuperbWarfare 0.8.9 or 0.8.9.1. NPC gun combat does not require DWE. Match actual builds on server and clients, even when version numbers are identical.
+For Forge and NeoForge 0.3.1 vehicle editing, AI, crew, and support timelines, install [DWE 0.3.1](#dochi-warfare-expanded/expanded-overview) and a matching-loader compatible SuperbWarfare build. NPC gun combat does not require DWE. Match actual builds on server and clients, even when version numbers are identical.
 
-NeoForge files are `dochi_warfare-0.3.1-neoforge-1.21.1.jar` and `dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar`. NeoForge DWE requires exactly SuperbWarfare 0.8.9.1.
+NeoForge files are `dochi_warfare-0.3.1-neoforge-1.21.1.jar` and `dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar`. NeoForge DWE accepts SuperbWarfare 0.8.9.1 and 0.8.9.2.
 
 ## Open the per-NPC GUI
 
 1. Enter creative mode.
 2. Get the item named `DW Npc Core`.
-3. Right-click a CustomNPCs NPC with `DW Npc Core`.
+3. Right-click a DNPC or CustomNPCs NPC with `DW Npc Core`.
 4. The DW per-NPC setup screen opens for that NPC.
 5. Change settings, then press `Save`.
 
-`DW Npc Core` is a Creative-mode editor tool. Right-click a CustomNPCs NPC for firearm settings, a supported SuperbWarfare vehicle for vehicle AI settings, or air for the NPC/vehicle clone library.
+`DW Npc Core` is a Creative-mode editor tool. Right-click a DNPC or CustomNPCs NPC for firearm settings, a supported SuperbWarfare vehicle for vehicle AI settings, or air for the NPC/vehicle clone library.
 
 ## First safe test
 
@@ -112,7 +118,7 @@ The four core items open different creator screens.
 | `DW Mercenary Core` | Server-authoritative mercenary contract terms |
 | `DW Booby Trap Core` | Password, explosion, effect, launch, lifecycle, profile, and manager tools for blocks |
 
-Right-click air with `DW Npc Core` to open the `Entity Clone Library`. It stores and summons server-side JSON templates for CustomNPCs NPCs and supported SuperbWarfare vehicles. This is separate from the NPC setup `Save As` profile flow.
+Right-click air with `DW Npc Core` to open the `Entity Clone Library`. It stores and summons server-side JSON templates for DNPC or CustomNPCs NPCs and supported SuperbWarfare vehicles. This is separate from the NPC setup `Save As` profile flow.
 
 The player-facing hire confirmation and `J` command HUD are in-game runtime screens, not creator editors.
 

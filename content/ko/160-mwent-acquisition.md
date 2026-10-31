@@ -7,13 +7,13 @@ product: mwent
 category: MWENT 카드 획득
 section: authoring
 status: 사용 안내
-version: 0.1.3
+version: 0.1.5
 audience: 제작자 / 서버 운영자
 ---
 
 ## 어디에서 설정하나요?
 
-Minigames **0.1.3**은 주민·떠돌이 상인 거래와 자연 생성 상자에 실물 카드·카드팩을 추가합니다. DRM 없이도 동작합니다.
+Minigames **0.1.5**은 주민·떠돌이 상인 거래와 자연 생성 상자에 실물 카드·카드팩을 추가합니다. DRM 없이도 동작합니다.
 
 1. Minigames 설정을 열고 **MWENT 편집**을 누릅니다.
 2. 왼쪽에서 일반 / 상인 거래 / 상자 보상 / 카드 풀을 고릅니다.

@@ -15,6 +15,12 @@ tags:
   - gui
 ---
 
+## 0.3.1 DNPC와 편집기
+
+DNPC의 우호·적대 관계와 아군 그룹 보호, 재장전 이동 감속·정지 사격·포즈·이벤트 대화를 연결합니다. 외부 AI 제어 중에는 이동 경로·표적·장비를 보존하고 제어권 반환 후 전투를 재개합니다. 일반 작업과 전투 설정은 서로 구분하세요.
+
+도구는 설치된 DNPC/CNPC 크리에이티브 탭에서 찾습니다. 무기·방어구·스킨 목록의 체크 선택·전체 선택·선택 삭제, 프로필 검색·스크롤과 포즈 편집/미리보기 배치를 개선했습니다. 차량은 [DWE 호환 안내](#dochi-warfare-expanded/expanded-compatibility)를 확인하세요.
+
 ## 로더별 빌드
 
 | 로더 | Minecraft / Java | 필수·선택 차이 |
@@ -22,40 +28,40 @@ tags:
 | Forge 47+ · DW 0.3.1 | 1.20.1 / Java 17 | TACZ 1.1.8 이상 1.2 미만 필수, Player Animator 클라이언트 필수 |
 | NeoForge 21.1.216+ · DW 0.3.1 | 1.21.1 / Java 21 | TACZ 1.1.8 이상 1.2 미만 필수, Player Animator 2.0+ 클라이언트 필수 |
 
-CustomNPCs는 관리 NPC를 제작할 때 필요합니다. 로더별 CustomNPCs를 사용하세요. Forge는 SuperbWarfare 0.8.9 final과 0.8.9.1 hotfix 계열을 구조 검사 후 사용하고, NeoForge는 SuperbWarfare 정확히 0.8.9.1을 선언합니다. 같은 버전 문자열이어도 호환 구조 검사를 통과하지 않으면 연동이 거부될 수 있습니다. 아래의 상세 설치 표와 외부 총기 버전 예시는 Forge 기준입니다.
+관리 NPC는 DNPC 또는 CustomNPCs 중 사용하는 제공자를 준비합니다. DNPC만으로 DW 총기·근접 전투를 사용할 수 있습니다. 로더별 CustomNPCs를 사용하세요. Forge는 SuperbWarfare 0.8.9·0.8.9.1·0.8.9.2을 구조 검사 후 사용하고, NeoForge는 SuperbWarfare 0.8.9.1·0.8.9.2를 선언합니다. 같은 버전 문자열이어도 호환 구조 검사를 통과하지 않으면 연동이 거부될 수 있습니다. 아래의 상세 설치 표와 외부 총기 버전 예시는 Forge 기준입니다.
 
 ## 설치 체크리스트
 
-도치 워페어 0.3.1은 Forge 1.20.1을 대상으로 합니다. TACZ는 필수 총기 런타임 기준이고 Player Animator는 클라이언트 필수입니다. CustomNPCs는 NPC 워크플로에 필요하며 PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, LesRaisins Tactical Equipments는 선택형 연동입니다.
+도치 워페어 0.3.1은 Forge 1.20.1을 대상으로 합니다. TACZ는 필수 총기 런타임 기준이고 Player Animator는 클라이언트 필수입니다. DNPC와 CustomNPCs는 선택적 NPC 제공자이며 PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, LesRaisins Tactical Equipments는 선택형 연동입니다.
 
 | 구성 요소 | 이 위키 흐름에서 필요 여부 | 메모 |
 | --- | --- | --- |
 | Forge | 필요 | 1.20.1 Forge 47+ 환경을 사용합니다. |
 | TACZ | 필요 | 클라이언트·서버에서 1.1.8부터 지원되는 1.1.x 범위를 사용합니다. |
 | Player Animator | 클라이언트 필수 | 공유 관리 총기 애니메이션 컨트롤러에 필요합니다. |
-| CustomNPCs | NPC 설정에 필요 | 관리 NPC, 용병, 포즈, NPC 클론 워크플로에 필요합니다. |
+| DNPC / CustomNPCs | 사용할 NPC 제공자 | DNPC 전투·관계·포즈·대화 연동은 CustomNPCs 없이 사용할 수 있습니다. |
 | 도치 워페어 | 필요 | 일반적인 모드 서버 플레이에서는 0.3.1 JAR를 클라이언트와 서버 양쪽에 넣습니다. |
 | PointBlank | 선택 | 지원되는 1.11.1 또는 2.1.0 중 하나만 설치합니다. |
-| SuperbWarfare | 선택 | 0.8.9 final / 0.8.9.1 hotfix의 지원 구조를 검사합니다. |
+| SuperbWarfare | 선택 | 0.8.9 / 0.8.9.1 / 0.8.9.2의 지원 구조를 검사합니다. |
 | Better Combat | 선택 | 등록된 근접 무기 공격·포즈와 무기 기반 공격 타이밍을 사용할 때 설치합니다. 일반 멀티플레이에서는 서버와 클라이언트의 모드 구성을 맞추세요. |
 | Mob Player Animator | 선택 | Better Combat의 정확한 NPC 모션 재생에 필요한 클라이언트 모드입니다. 없으면 바닐라 주손 스윙으로 전환됩니다. |
 | LesRaisins Tactical Equipments | 선택 | 지원 수류탄 투척과 LRT 수류탄 부비트랩 페이로드를 활성화합니다. |
 
 ## DWE 추가 설치
 
-Forge·NeoForge 0.3.1에서 차량 편집·AI·승무원·지원 타임라인을 사용하려면 [DWE 0.3.1](#dochi-warfare-expanded/expanded-overview)과 SuperbWarfare 0.8.9 또는 0.8.9.1을 함께 설치합니다. NPC 총기 전투만 사용할 때는 DWE가 필요하지 않습니다. 같은 버전 번호라도 서버·클라이언트의 빌드를 맞추세요.
+Forge·NeoForge 0.3.1에서 차량 편집·AI·승무원·지원 타임라인을 사용하려면 [DWE 0.3.1](#dochi-warfare-expanded/expanded-overview)과 같은 로더의 호환 SuperbWarfare를 함께 설치합니다. NPC 총기 전투만 사용할 때는 DWE가 필요하지 않습니다. 같은 버전 번호라도 서버·클라이언트의 빌드를 맞추세요.
 
-NeoForge 설치 파일은 `dochi_warfare-0.3.1-neoforge-1.21.1.jar`와 `dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar`입니다. NeoForge DWE에는 SuperbWarfare 정확히 0.8.9.1이 필요합니다.
+NeoForge 설치 파일은 `dochi_warfare-0.3.1-neoforge-1.21.1.jar`와 `dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar`입니다. NeoForge DWE는 SuperbWarfare 0.8.9.1·0.8.9.2를 허용합니다.
 
 ## NPC별 GUI 열기
 
 1. 크리에이티브 모드로 들어갑니다.
 2. `DW Npc Core` 아이템을 준비합니다.
-3. `DW Npc Core`를 들고 CustomNPCs NPC를 우클릭합니다.
+3. `DW Npc Core`를 들고 DNPC 또는 CustomNPCs NPC를 우클릭합니다.
 4. 해당 NPC의 DW NPC별 설정 화면이 열립니다.
 5. 설정을 바꾼 뒤 `Save`를 누릅니다.
 
-`DW Npc Core`는 크리에이티브 모드 제작 도구입니다. CustomNPCs NPC를 우클릭하면 총기 설정, 지원 SuperbWarfare 차량을 우클릭하면 차량 AI 설정, 허공을 우클릭하면 NPC·차량 클론 보관함이 열립니다.
+`DW Npc Core`는 크리에이티브 모드 제작 도구입니다. DNPC 또는 CustomNPCs NPC를 우클릭하면 총기 설정, 지원 SuperbWarfare 차량을 우클릭하면 차량 AI 설정, 허공을 우클릭하면 NPC·차량 클론 보관함이 열립니다.
 
 ## 첫 안전 테스트
 
@@ -112,7 +118,7 @@ NeoForge 설치 파일은 `dochi_warfare-0.3.1-neoforge-1.21.1.jar`와 `dochi_wa
 | `DW Mercenary Core` | 서버가 판정하는 용병 계약 조건 편집 |
 | `DW 부비트랩 코어` | 블록별 비밀번호, 폭발, 효과, 밀쳐내기, 생명주기, 프로필, 관리자 편집 |
 
-`DW Npc Core`로 허공을 우클릭하면 `Entity Clone Library`가 열립니다. CustomNPCs NPC와 지원 SuperbWarfare 차량을 서버 측 JSON 템플릿으로 보관하고 소환하며, NPC 설정의 `Save As` 프로필과는 별도 기능입니다.
+`DW Npc Core`로 허공을 우클릭하면 `Entity Clone Library`가 열립니다. DNPC 또는 CustomNPCs NPC와 지원 SuperbWarfare 차량을 서버 측 JSON 템플릿으로 보관하고 소환하며, NPC 설정의 `Save As` 프로필과는 별도 기능입니다.
 
 플레이어가 보는 고용 확인 화면과 `J` 지휘 HUD는 이 제작자 화면들과 구분되는 인게임 런타임 화면입니다.
 
@@ -143,7 +149,7 @@ enabled = true
 config/dochi_warfare/target_entities/
 ```
 
-현재 `Save As` 프로필은 타겟 목록만이 아니라 NPC의 DW 총기 설정 전체를 함께 저장합니다. NPC 하나를 설정한 뒤 프로필로 저장하면 다른 CustomNPCs NPC에서 `Load`해 같은 전투 설정을 빠르게 복제할 수 있습니다. 구버전 타겟 전용 JSON도 불러올 수 있지만, 새 제작 흐름에서는 이 기능을 NPC 설정 프리셋으로 보는 편이 맞습니다.
+현재 `Save As` 프로필은 타겟 목록만이 아니라 NPC의 DW 총기 설정 전체를 함께 저장합니다. NPC 하나를 설정한 뒤 프로필로 저장하면 다른 DNPC 또는 CustomNPCs NPC에서 `Load`해 같은 전투 설정을 빠르게 복제할 수 있습니다. 구버전 타겟 전용 JSON도 불러올 수 있지만, 새 제작 흐름에서는 이 기능을 NPC 설정 프리셋으로 보는 편이 맞습니다.
 
 재사용 JSON의 기준 루트는 `config/dochi_warfare/`입니다. Forge DW 0.3.1은 구버전 CNPC TACZ Fire 설정 폴더의 자동 탐색·복사를 지원하지 않습니다. 현재 DW 데이터는 보존하며 이전 DWE 차량 파일의 가져오기는 [DWE 저장 안내](#dochi-warfare-expanded/expanded-overview)를 따릅니다. 다른 보관 경로는 다음과 같습니다.
 

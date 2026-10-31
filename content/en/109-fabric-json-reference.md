@@ -7,7 +7,7 @@ product: core-fabric
 category: Reference / Operations
 section: operations
 status: Stable
-version: 0.2.8
+version: 0.3.1
 audience: Advanced users
 tags:
   - json

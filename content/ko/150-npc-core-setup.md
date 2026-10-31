@@ -7,13 +7,17 @@ product: dochi-npc-core
 category: NPC Core 설치와 시작
 section: setup
 status: 사용 안내
-version: 0.1.1
+version: 0.1.2
 audience: 제작자 / 서버 운영자
 ---
 
+## 0.1.2 최신 수정
+
+작업과 외부 AI의 이동 제어, 고용 복귀와 일정 상점 권한을 보완했습니다. 기존 NPC에 템플릿을 적용할 때 실제 운반물은 보존하고 새 복제본에는 실행 중 화물·탑승·전투 상태를 넘기지 않습니다. [시간표·탑승](#dochi-npc-core/npc-core-schedules)과 [조리 작업](#dochi-npc-core/npc-core-cooking)을 확인하세요. 기존 1.20.1·1.21.1 NPC 화면에서는 Delete 키로 삭제할 수 있습니다.
+
 ## 어떤 모드인가요?
 
-Dochi’s NPC Core(DNPC) **0.1.1**은 자체 NPC, 외형·장비, 포즈, 관계, 시간표와 작업을 만드는 독립 모드입니다. DRM 없이 기본 NPC를 만들고 편집할 수 있습니다.
+Dochi’s NPC Core(DNPC) **0.1.2**은 자체 NPC, 외형·장비, 포즈, 관계, 시간표와 작업을 만드는 독립 모드입니다. DRM 없이 기본 NPC를 만들고 편집할 수 있습니다.
 
 | 빌드 | Minecraft | Java |
 | --- | --- | --- |
@@ -22,7 +26,7 @@ Dochi’s NPC Core(DNPC) **0.1.1**은 자체 NPC, 외형·장비, 포즈, 관계
 | NeoForge | 1.21.1 | 21 |
 | Fabric / NeoForge | 26.3 | 25 |
 
-서버와 클라이언트에 같은 로더의 `dochi_npc_core-0.1.1-<loader>-<minecraft>.jar`를 설치합니다. Fabric에는 Fabric API도 필요합니다. DRM은 선택 연동이며 현재 통합 안내는 DRM 0.2.9 기준입니다. Gecko 모델을 사용하면 해당 로더의 GeckoLib를 함께 설치합니다.
+서버와 클라이언트에 같은 로더의 `dochi_npc_core-0.1.2-<loader>-<minecraft>.jar`를 설치합니다. Fabric에는 Fabric API도 필요합니다. DRM은 선택 연동이며 현재 통합 안내는 DRM 0.3.1 기준입니다. Gecko 모델을 사용하면 해당 로더의 GeckoLib를 함께 설치합니다.
 
 ## 첫 NPC 만들기
 

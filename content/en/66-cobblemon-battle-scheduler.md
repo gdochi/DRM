@@ -7,9 +7,13 @@ product: drm-cobblemon-editor
 category: Battle Scheduler
 section: scheduler
 status: Usage guide
-version: Fabric / NeoForge 0.2.6
+version: Fabric / NeoForge 0.2.9
 audience: Encounter creators / server operators
 ---
+
+## DNPC actor sources
+
+Current patches let battle schedulers select editor clones or NPC templates. Choose a source containing the actual DNPC role and check entry, battle, return and cleanup. A matching name does not automatically convert an old CNPC clone into a DNPC template.
 
 ## What it connects
 

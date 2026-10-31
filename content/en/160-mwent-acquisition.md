@@ -7,13 +7,13 @@ product: mwent
 category: MWENT card acquisition
 section: authoring
 status: Guide
-version: 0.1.3
+version: 0.1.5
 audience: Creators / server operators
 ---
 
 ## Open the editor
 
-Minigames **0.1.3** adds physical cards and packs to villager/wandering-trader offers and generated chest loot. DRM is optional.
+Minigames **0.1.5** adds physical cards and packs to villager/wandering-trader offers and generated chest loot. DRM is optional.
 
 1. Open Minigames settings and choose **Edit MWENT**.
 2. Choose General, Merchant Trades, Chest Loot or Card Pools on the left.

@@ -7,12 +7,16 @@ product: core
 category: Core Systems
 section: gui-maker
 status: Stable
-version: 0.2.8
+version: 0.3.1
 audience: GUI creators
 tags:
   - gui
   - layout
 ---
+
+## Independent text boxes
+
+In a dialogue GUI, add **Text**, then select **Content → Direct input or NPC name**. Place several boxes independently of the dialogue/speaker components and edit their position, size, fill and border. Use **Save As** for protected defaults, then link the layout from the dialogue document. Runtime names come from the dialogue target; editor samples are previews. See the [0.3.1 workflow](#core/release-notes-0-3-1).
 
 ## What GUI JSON Does
 

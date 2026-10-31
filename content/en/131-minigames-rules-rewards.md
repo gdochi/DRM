@@ -7,7 +7,7 @@ product: dochi-minigames
 category: Authoring
 section: rules
 status: Usage guide
-version: 0.1.3
+version: 0.1.5
 audience: Game creators
 ---
 

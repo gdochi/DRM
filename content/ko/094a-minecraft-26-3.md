@@ -7,7 +7,7 @@ product: core-fabric
 category: Minecraft 26.3
 section: getting-started
 status: 사용 안내
-version: 0.2.9 / Minecraft 26.3
+version: 0.3.1 / Minecraft 26.3
 audience: 제작자 / 서버 운영자
 ---
 
@@ -15,16 +15,16 @@ audience: 제작자 / 서버 운영자
 
 26.3은 Fabric·NeoForge / **Java 25**용 별도 빌드입니다. 1.20.1·1.21.1 JAR을 옮겨 설치하지 않습니다. 서버와 모든 클라이언트에서 Minecraft 버전과 로더를 맞춥니다. Fabric은 각 모드가 요구하는 Fabric API도 별도로 설치합니다.
 
-아래 표는 2026-10-28의 **로컬 배포본 확인 결과**입니다. 공개 다운로드 여부나 전체 포팅 완료를 뜻하지 않습니다.
+아래 표는 2026-10-31의 **로컬 배포본 확인 결과**입니다. 공개 다운로드 여부나 전체 포팅 완료를 뜻하지 않습니다.
 
 | 모드 | 26.3 버전 | 연동 조건 |
 | --- | --- | --- |
-| DRM | 0.2.9 | DNPC 선택 |
-| NPC Core | 0.1.1 | DRM 없이 NPC 생성·편집·저장 |
+| DRM | 0.3.1 | DNPC 선택 |
+| NPC Core | 0.1.2 | DRM 없이 NPC 생성·편집·저장 |
 | BattleWorks | 0.1.6 | DRM 필수, NPC 전투는 DNPC 제공자 사용 |
 | Spawn Control | 0.1.4 | 단독 일반 스폰, DNPC 템플릿 연동 시 공개 템플릿 API 필요 |
 | Real Armor | 0.1.4 | Easy NPC·DNPC 선택 연동 |
-| Minigames | 0.1.3 | DRM 선택 |
+| Minigames | 0.1.5 | DRM 선택 |
 | MapIcon Integration | 0.1.2 | DRM 필수, 지도 모드와 DNPC는 각각 선택 |
 
 Cobblemon Editor의 이번 확인 대상은 Fabric·NeoForge **1.21.1**, Warfare·Expanded는 Forge **1.20.1**·NeoForge **1.21.1**입니다. 이 표를 해당 모드의 26.3 지원 안내로 사용하지 마세요.
@@ -47,7 +47,7 @@ BattleWorks의 구형 `summon_clone`은 26.3에서 검증 오류입니다. Bette
 
 ## 검증과 이전 데이터
 
-DRM의 클라이언트·전용 서버 구동과 JSON 네트워크 검사가 기록되어 있지만, 전체 GUI·거래·기존 월드 이행의 포팅 완료를 의미하지 않습니다. Core에 남아 있는 구버전 반사 경로 정리도 별도 미완료 항목이며 CustomNPCs 지원 근거가 아닙니다.
+DRM의 클라이언트·전용 서버 구동과 JSON 네트워크 검사가 기록되어 있지만, 전체 GUI·거래·기존 월드 이행의 포팅 완료를 의미하지 않습니다. 현재 0.3.1 배포 검사에서는 CNPC 네이티브 참조 부재를 확인했습니다. 일반 build의 구버전 테스트 포팅과 전체 게임플레이 이행 검증은 별도 범위입니다.
 
 DNPC의 단독 실행과 Spawn Control 배치형 템플릿 생성에는 실제 26.3 검증 기록이 있습니다. COMMON에서 확인한 DNPC 템플릿 자연 스폰을 26.3까지 검증한 것으로 확대하지 않습니다. 이전 월드는 복사본에서 확인하고 설정·월드를 함께 백업합니다.
 

@@ -7,7 +7,7 @@ product: core
 category: Script API
 section: script-api
 status: Stable
-version: 0.2.8
+version: 0.3.1
 audience: CustomNPCs script and DRM condition authors
 tags:
   - script

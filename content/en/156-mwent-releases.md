@@ -7,7 +7,7 @@ product: mwent
 category: Release history
 section: releases
 status: Version record
-version: 0.1.1–0.1.5
+version: 0.1.5–0.1.5
 audience: Players / server operators
 ---
 

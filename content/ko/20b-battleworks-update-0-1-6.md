@@ -11,14 +11,20 @@ version: 0.1.6
 audience: 제작자 / 서버 운영자
 ---
 
+## 기존 대상의 DNPC 연동
+
+0.1.6 최신 수정본은 Forge 1.20.1·Fabric/NeoForge 1.21.1에서도 DRM 공개 NPC API로 DNPC의 전투 편집·우호/적대 관계·외형·제어권을 연결합니다. CustomNPCs는 선택입니다. NPC를 만들고 BattleWorks 문서를 저장·적용한 뒤 실제 타겟과 모션을 확인하세요.
+
+전투 임대 종료 후 다른 모드가 만든 이동 경로를 취소하지 않도록 수정했습니다. 기존 Forge·CustomNPCs 실습은 해당 제공자의 예시로 유지합니다. COMMON 실제 DNPC 실행 기록은 NeoForge 중심이며 Forge/Fabric과 모든 선택 모드 조합까지 동일하게 실기 검증했다고 뜻하지 않습니다.
+
 ## 현재 설치 기준
 
 BattleWorks **0.1.6**의 로컬 배포 메타데이터를 기준으로 합니다. 이전 README나 0.1.4 배포 묶음의 Core 조건과 구분하세요.
 
 | 대상 | Java | JAR이 선언한 DRM 조건 | NPC |
 | --- | --- | --- | --- |
-| Forge 1.20.1 | 17 | 0.2.8 이상 | 아래 입문 실습은 CustomNPCs |
-| Fabric·NeoForge 1.21.1 | 21 | 0.2.9 이상 | CustomNPCs 선택 연동 |
+| Forge 1.20.1 | 17 | 0.2.8 이상 | DNPC / CustomNPCs 선택 |
+| Fabric·NeoForge 1.21.1 | 21 | 0.2.9 이상 | DNPC / CustomNPCs 선택 |
 | Fabric·NeoForge 26.3 | 25 | 0.2.8 이상 | DNPC 제공자, CustomNPCs 제외 |
 
 DRM은 필수이고 CustomNPCs는 기존 대상에서도 선택 의존성입니다. 다만 이 위키의 기존 [첫 공격 실습](#mob-editor/battleworks-first-attack)은 **Forge·CustomNPCs** 작업 순서입니다. 이를 모든 DNPC 기능의 동일 지원으로 해석하지 마세요.

@@ -15,6 +15,12 @@ tags:
   - overview
 ---
 
+## 0.3.1 DNPC and editor updates
+
+DNPC integration includes friendly/hostile relationships, group protection, reload slowdown, stationary fire, poses and event dialogue. External AI control preserves paths, targets and equipment; combat resumes after control returns. Keep native jobs and combat configuration distinct.
+
+Find DW tools in installed DNPC/CNPC Creative tabs. Weapon, armor and skin lists support checkbox selection, Select All and Delete Selected; profile search, scrolling and pose editing/preview layouts were improved. See [DWE compatibility](#dochi-warfare-expanded/expanded-compatibility) for vehicles.
+
 ## Forge and NeoForge 0.3.1 update
 
 DW owns NPC combat and the addon core. Vehicle AI, weapons, crew, and profiles now belong to [Dochi's Warfare Expanded](#dochi-warfare-expanded/expanded-overview). NPC combat works with DW alone. Vehicle features require DWE 0.3.1 on both Forge and NeoForge. The shared clone library now provides confirmed deletion and recoverable archived files.
@@ -23,9 +29,9 @@ Current builds: DW 0.3.1 for Forge 1.20.1 and DW 0.3.1 for NeoForge 1.21.1. Vehi
 
 ## What Dochi's Warfare is
 
-Dochi's Warfare (`dochi_warfare`) is a Forge 1.20.1 combat-authoring mod. Its main NPC workflow lets selected CustomNPCs NPCs use TACZ, PointBlank, or SuperbWarfare guns through one server-authoritative DW combat controller. The operated gun keeps its native item, renderer, projectile or hitscan behavior, sounds, and intrinsic gun state; DW owns target rules, stance, movement, firing cadence, reload policy, reserve ammo, animation signals, and persistence.
+Dochi's Warfare (`dochi_warfare`) is a Forge 1.20.1 combat-authoring mod. Its main NPC workflow lets selected DNPC or CustomNPCs NPCs use TACZ, PointBlank, or SuperbWarfare guns through one server-authoritative DW combat controller. The operated gun keeps its native item, renderer, projectile or hitscan behavior, sounds, and intrinsic gun state; DW owns target rules, stance, movement, firing cadence, reload policy, reserve ammo, animation signals, and persistence.
 
-Version 0.2.9 also includes optional SuperbWarfare ground, helicopter, and fixed-wing vehicle AI; an NPC crew editor with live top/side seat maps; a server-side NPC/vehicle clone library; vehicle soul-stone support; and a dedicated booby-trap editor and manager. DW creator screens now share one skin, bright text palette, and UI sound set, while PointBlank combat handling and the pose editor's built-in preset library are expanded. These tools are separate from the per-NPC firearm editor.
+In current 0.3.1 builds, DW owns NPC firearm/melee combat, the shared clone library and booby traps. The separate DWE addon owns SuperbWarfare ground, helicopter and fixed-wing vehicle AI, crews and support timelines. Update the pair together and consult [DWE installation and verified vehicles](#dochi-warfare-expanded/expanded-compatibility).
 
 The important per-NPC switch is still labeled `TACZ Fire NPC Mode`. When it is OFF, the NPC keeps normal CustomNPCs behavior. When it is ON and saved, DW controls that NPC's managed firearm behavior. The TACZ wording is retained in this compatibility-facing UI label, but the 0.2.9 managed-gun runtime is not limited to TACZ items.
 
@@ -36,7 +42,7 @@ The important per-NPC switch is still labeled `TACZ Fire NPC Mode`. When it is O
 | Use a supported native gun | Use a TACZ gun, a supported PointBlank 1.11.1/2.1.0 gun, or a supported SuperbWarfare 0.8.9 gun. Unsupported items fail closed. |
 | Keep TACZ installed | TACZ 1.1.8 is the required runtime and animation baseline even when the NPC operates an optional external gun. |
 | Do not equip ammo in offhand | Spare ammunition is managed by DW ammo stock and reload policy, not by physical ammo or magazine items in the offhand. |
-| Enable per NPC | Only selected NPCs with `TACZ Fire NPC Mode` are controlled. Normal CustomNPCs NPCs are left alone. |
+| Enable per NPC | Only selected NPCs with `TACZ Fire NPC Mode` are controlled. Normal DNPC or CustomNPCs NPCs are left alone. |
 | Configure in the GUI first | The in-game per-NPC GUI is the primary setup path. Script and storeddata support is for advanced workflows. |
 
 :::warning Ammo rule
@@ -78,16 +84,16 @@ Optional gun adapters do not replace their native models, projectiles, hitscan, 
 | Forge 47 or newer | Required loader range. |
 | TACZ 1.1.8 through the supported 1.1.x range | Required gun-runtime and animation baseline on client and server. |
 | Player Animator 1.0.0 or newer | Required on the client for the shared managed-gun animation controller. |
-| CustomNPCs 1.20.1 or newer | Optional mod dependency, but required for the NPC, mercenary, pose, and NPC-clone workflows in this wiki. |
+| DNPC / CustomNPCs | Choose the NPC provider for your workflow. DNPC firearm/melee combat works without CustomNPCs. |
 | PointBlank 1.11.1 or 2.1.0 | Optional native gun integration. Install exactly one supported PointBlank version. |
-| SuperbWarfare 0.8.9 final, build `6effe4385` | Optional native gun and vehicle integration. Other ABIs fail closed. |
+| SuperbWarfare | Forge 0.8.9 / 0.8.9.1 / 0.8.9.2; NeoForge 0.8.9.1 / 0.8.9.2. Native structural checks must also pass. |
 | Better Combat | Optional integration for registered melee weapon attacks, poses, and weapon-based attack timing. |
 | Mob Player Animator 1.0.0 or newer | Optional client dependency for exact Better Combat NPC motion playback. Without it, the NPC uses a vanilla swing. |
 | LesRaisins Tactical Equipments | Optional grenade throws and native LRT grenade booby-trap payloads. |
 
 ## Recommended authoring order
 
-1. Create one fresh CustomNPCs NPC in a test world.
+1. Create one fresh DNPC or CustomNPCs NPC in a test world.
 2. Use `DW Npc Core` to open the per-NPC setup GUI.
 3. Turn on `TACZ Fire NPC Mode` and `Enabled`.
 4. Use `Easy Build` or `Presets` if you want a quick behavior starting point.

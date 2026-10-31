@@ -7,13 +7,19 @@ product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
 status: Draft
-version: Fabric / NeoForge 0.2.7
+version: Fabric / NeoForge 0.2.9
 audience: Cobblemon battle NPC creators
 tags:
   - trainer
   - editor
   - party
 ---
+
+## Sequential dialogue before rewards
+
+Choose **Battle Config → After Actions → Action Mode → Sequential** and place item/reward actions after the dialogue action. Normal dialogue completion advances the list. Cancellation, ESC or disconnect stops subsequent grants; after reconnecting or restarting, interact with the NPC again to continue remaining actions. Completed actions are not granted again.
+
+A round permits at most one dialogue action. Reduce older multi-dialogue rounds to one before saving, applying or executing. Install current Core and addon patches together for these behaviors. Compatible DNPC trainer dash/return also temporarily permits movement while position locking is enabled, then restores the lock.
 
 ## What this editor creates
 

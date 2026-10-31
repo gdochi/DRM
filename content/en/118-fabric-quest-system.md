@@ -7,7 +7,7 @@ product: core-fabric
 category: Quest System
 section: quest-editor
 status: Stable
-version: 0.2.8
+version: 0.3.1
 audience: Quest creators
 tags:
   - quest
