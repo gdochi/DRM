@@ -37,7 +37,7 @@ A Gecko clip and a humanoid Better Combat pose layer are not interchangeable.
 5. Press Play, inspect contact, then Stop.
 6. Change the pattern's Event Tick to match contact.
 
-Pattern selects a usage; Clips selects animation. A detached preview can use a model snapshot or a default mannequin. Reopen with the real NPC if the preview model does not match.
+Pattern selects a usage; Clips selects animation. A detached preview can use a saved model settings or a default mannequin. Reopen with the real NPC if the preview model does not match.
 
 ## 3. Three animation locations
 

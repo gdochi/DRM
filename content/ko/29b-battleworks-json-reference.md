@@ -1,5 +1,5 @@
 ---
-title: 전투 JSON 구조와 전체 예제
+title: 전투 JSON 구조와 전체 예제 (고급)
 slug: battleworks-json-reference
 order: 285
 description: 복사 가능한 완전한 예제와 필드·참조·시간·크기 제한을 설명합니다.

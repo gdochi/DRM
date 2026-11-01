@@ -1,8 +1,8 @@
 ---
-title: Minigames Setup and First Game
+title: Place a Table and Play
 slug: minigames-setup
 order: 1300
-description: Current installation and first-use guidance.
+description: Open a minigame and choose its rules, entry fee and rewards.
 product: dochi-minigames
 category: Start
 section: setup
@@ -11,54 +11,38 @@ version: 0.1.5
 audience: Creators / server operators
 ---
 
-## Current 0.1.5 patch
+## Play a round first
 
-Local production builds for the existing targets and separate 26.3 workspace remain 0.1.5. DNPC Gecko card models and previews created while assets are loading now refresh correctly. Failed or missing optional integrations are not retried indefinitely.
+Place a [minigame table](#dochi-minigames/minigames-tables) and choose a game. DRM is not required.
 
-## Installation
+Creators can open `/minigame editor`, load a preset and **Apply to table**. Players right-click the table to join.
 
-**Dochi’s Minigames 0.1.5** runs without DRM. Install the same loader and build on server and clients.
+## Available games
 
-| Loader | Minecraft / Java | File |
+Choose Monty Hall, slots, memory, whack, timing, high-low, shooting or the **MWENT** card game. Use [game rules](#dochi-minigames/minigames-rules-rewards) to set play and rewards. MWENT has its own [getting-started guide](#mwent/start).
+
+## Make it your game
+
+1. Load a preset in the editor.
+2. Change its title, time limit and rules.
+3. Choose an entry fee and rewards. A fee of 0 is free.
+4. Use **Save As** to keep your game.
+5. Apply it to the table that will use it.
+
+Payment happens when the player presses **Start** in the entry screen. Cancelling that screen is free; closing an already-started game counts as forfeiting.
+
+## Open it from an NPC or dialogue
+
+With DRM, use **NPC Apply → Minigames** to give an NPC a game.
+
+For dialogue-only access, use a **Go Minigames** choice action instead of applying the game directly. A directly applied game opens before dialogue.
+
+## Choose installation files
+
+| Minecraft | Loader | Java |
 | --- | --- | --- |
-| Forge | 1.20.1 / 17 | `dochi_minigames-0.1.5-forge-1.20.1.jar` |
-| Fabric | 1.21.1 / 21 | `dochi_minigames-0.1.5-fabric-1.21.1.jar` |
-| NeoForge | 1.21.1 / 21 | `dochi_minigames-0.1.5-neoforge-1.21.1.jar` |
-| Fabric / NeoForge | 26.3 / 25 | `dochi_minigames-0.1.5-<loader>-26.3.jar` |
+| 1.20.1 | Forge | 17 |
+| 1.21.1 | Fabric / NeoForge | 21 |
+| 26.3 | Fabric / NeoForge | 25 |
 
-Fabric needs Loader 0.15.11+ and Fabric API 0.101.2+1.21.1+. Forge needs 47.2.0+; NeoForge needs 21.1+. DRM, CustomNPCs, Cobblemon and CobbleDollars are optional. Add the relevant provider when a document references its currency, conditions or Pokémon rewards.
-
-## Create a game
-
-1. With permission level 2, run `/minigame editor` or edit a [minigame table](#dochi-minigames/minigames-tables).
-2. Load a preset or create Monty Hall, Slots, Memory, Whack-a-Mob, Timing, High-Low, Shooting Gallery or MWENT.
-3. Set the title, timer and rules. Begin with free entry.
-4. Use supported test-play tools and test the actual table interaction.
-5. Save custom JSON with Save As, or use **Apply to Table** to bind a placed table.
-
-## DRM NPCs and dialogue
-
-DRM 0.2.8 adds the shared editor selector, NPC Apply, dialogue actions and GUI Maker. Bind a saved game through NPC Apply → Minigames to open it from NPC interaction.
-
-To enter only through dialogue, leave direct Minigames Apply unset and select **Go Minigames** on a dialogue choice. A direct game binding handles interaction before dialogue. The action ID is `dochi_minigames:play`; existing plain IDs and `.json` paths remain readable.
-
-Entry is charged when Start is confirmed. Clicking an NPC or cancelling confirmation does not charge. Leaving an active game forfeits the session.
-
-## Commands
-
-```text
-/minigame list
-/minigame play monty
-/minigame play mob_battle
-/minigame scores monty
-/minigame editor
-/minigame packs
-```
-
-See [rules and rewards](#dochi-minigames/minigames-rules-rewards), [MWENT](#mwent/start) and [files / GUI](#dochi-minigames/minigames-files-gui).
-
-## 0.1.5 acquisition and 26.3
-
-Configure villager, wandering-trader and chest rewards in [MWENT acquisition](#mwent/acquisition). Profile storage and Apply are separate actions.
-
-26.3 uses separate Java 25 builds of the same mod version, works without DRM and excludes CustomNPCs. See [26.3 setup](#core-fabric/minecraft-26-3).
+This guide follows 0.1.5. Match versions/loaders on server and clients; Fabric also needs Fabric API. DRM money or Cobblemon rewards need their respective mods.

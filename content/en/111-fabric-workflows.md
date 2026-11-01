@@ -42,7 +42,7 @@ tags:
 
 1. Right-click the target NPC with the core item.
 2. Open `NPC Shop` for that NPC.
-3. Save the shop to NPC PersistentData.
+3. Save the shop to saved NPC settings.
 4. Use a blank or `bound` `go_shop` value to open that NPC-bound shop.
 
 This is convenient for one-off NPCs. File-based shops are easier when multiple NPCs share the same shop.
@@ -63,7 +63,7 @@ The travel request is rechecked by the server for the current NPC binding, sessi
 ## NPC Spawner Block
 
 1. Place `dochi_rpg_maker:npc_spawner` and right-click it with `dochi_rpg_maker:dialogue_editor`. You need edit permission and must remain within eight blocks.
-2. Put reusable templates under `npc_spawner/entity_clones/<classification>`, or keep a CustomNPCs Filled Soul Stone in your inventory for an atomic snapshot source.
+2. Put reusable templates under `npc_spawner/entity_clones/<classification>`, or keep a CustomNPCs Filled Soul Stone in your inventory for an saved NPC source.
 3. On `Source`, search/filter available sources, add up to 64 entries, and set each weight from 1 to 10,000.
 4. On `Spawn`, choose the mode, redstone gate, cooldown, target radius, offsets/radius, `Max Active`, and `Wave Size`.
 5. On `Conditions`, build the target condition group. On `Effects`, set visibility, particles, and Default/Item/Block appearance.
@@ -87,11 +87,11 @@ The travel request is rechecked by the server for the current NPC binding, sessi
 | Filenames | Dialogue set, GUI, shop, Teleporter, and currency filenames should match intended IDs. |
 | Defaults | Do not overwrite bundled defaults directly. |
 | Links | Dialogue/shop/Teleporter GUI and shop currency IDs should point to real files and definitions. |
-| World data | Keep file-based server JSON separate from NPC PersistentData and NPC Spawner block-entity data. |
+| World data | Keep file-based server JSON separate from saved NPC settings and NPC Spawner block-entity data. |
 | Reload | If server JSON is edited directly, run `/drm reload` or the matching reload command. |
 
 :::tip Production Copy
-Manage production data from the full `config/dochi_rpg_maker` folder and the world save. Data stored only in NPC PersistentData or NPC Spawner blocks does not move with config file copies alone.
+Manage production data from the full `config/dochi_rpg_maker` folder and the world save. Data stored only in saved NPC settings or NPC Spawner blocks does not move with config file copies alone.
 :::
 
 :::tip Editing Shortcuts

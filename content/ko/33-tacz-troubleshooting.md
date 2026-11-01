@@ -33,7 +33,7 @@ tags:
 
 | 증상 | 먼저 확인할 것 |
 | --- | --- |
-| `DW Npc Core`로 원하는 GUI가 열리지 않음 | 크리에이티브 모드에서 CustomNPCs NPC는 NPC 설정, 지원 SuperbWarfare 차량은 차량 설정, 허공은 클론 보관함을 엽니다. |
+| `DW Npc Core`로 원하는 GUI가 열리지 않음 | 크리에이티브 모드에서 DNPC 또는 CustomNPCs NPC는 NPC 설정, 지원 SuperbWarfare 차량은 차량 설정, 허공은 클론 보관함을 엽니다. |
 | NPC가 전혀 발사하지 않음 | `TACZ Fire NPC Mode`, `Enabled`, 스탠스, 선택한 지원 총기, 타겟 시야, `Max Distance`, 타겟 규칙, 탄약 재고를 확인합니다. |
 | NPC가 타겟을 보지만 기다림 | `Combat Delay Ms`, `Detect Angle`, `Instant Combat Angle`, 시야를 확인합니다. |
 | 가까이 접근해도 뒤쪽 타겟을 놓침 | `Close Detection`과 `Close Detect Distance`를 확인합니다. 의도적인 백스탭 NPC라면 OFF가 정상입니다. |
@@ -58,8 +58,8 @@ tags:
 | 고용 확인 화면이 열리지 않음 | DW 관리 NPC여야 하며 `Hire available`이 켜져 있어야 합니다. 빈손이나 일반 상호작용 아이템을 사용하세요. `DW Npc Core`, `DW Mercenary Core`, CustomNPCs 상호작용 도구는 자체 편집 동작을 유지합니다. |
 | 용병 GUI 클릭이나 툴팁 위치가 어긋남 | 양쪽 모두 0.2.9를 사용합니다. 용병 설정, 확인 화면, 지휘 HUD는 화면 크기에 맞춘 스케일과 변환된 마우스 좌표를 사용합니다. |
 | PointBlank 총기가 거부됨 | 지원되는 1.11.1 또는 2.1.0 하나만 설치합니다. 두 버전이 함께 감지되면 브리지가 비활성화됩니다. |
-| SuperbWarfare 총기·차량을 사용할 수 없음 | 0.8.9 final 빌드 `6effe4385`인지 확인합니다. 다른 ABI는 호환 믹스인을 적용하기 전에 안전하게 거부됩니다. |
-| 차량 AI가 켜졌지만 이동하지 않음 | 플레이어 탑승자를 내리고, 정확한 SuperbWarfare ABI, 이동 모드, 홈/목적지, 로드된 지형을 확인합니다. 헬리콥터·고정익은 충분한 상승·선회 공간이 필요합니다. |
+| SuperbWarfare 총기·차량을 사용할 수 없음 | [설치 표](#dochi-warfare/warfare-setup)의 로더별 지원 버전인지 확인합니다. |
+| 차량 AI가 켜졌지만 이동하지 않음 | 플레이어 탑승자를 내리고, 호환 SuperbWarfare 버전, 이동 모드, 홈/목적지, 로드된 지형을 확인합니다. 헬리콥터·고정익은 충분한 상승·선회 공간이 필요합니다. |
 | 차량 포탑이 타겟을 따라가지만 발사하지 않음 | `Weapons`에서 해당 무장이 ON인지, `Weapon use mode` 대상인지, 무장별 탄약·재장전·승무원 조건·최소/최대 사거리·포탑 상하각을 확인합니다. 너무 가까운 타겟은 기준 무장의 최소 사거리나 하향각 때문에 후퇴가 필요할 수 있습니다. |
 | 차량이 짧은 원만 반복하거나 급출발·급정지함 | 0.2.9가 양쪽에 설치되었는지 확인하고 Area Patrol 반경, 이동 속도, 도달 가능한 지형을 확인합니다. 0.2.9는 최근 구역을 피하는 분산 순찰점과 거리 기반 가속·제동을 사용합니다. |
 | 승무원 페이지가 계속 로딩되거나 NPC를 태우지 못함 | `새로고침` 후 정확한 차량·좌석을 다시 선택합니다. NPC JSON 클론 또는 인벤토리의 유효한 NPC 소울스톤, 크리에이티브 권한, 64블록 이내 거리, 차량 팩션과 NPC의 비적대 관계가 필요합니다. |
@@ -67,7 +67,7 @@ tags:
 
 ## GUI 접근 문제
 
-`DW Npc Core`는 크리에이티브 모드 편집 아이템이며 대상에 따라 동작이 다릅니다. CustomNPCs NPC는 NPC 설정, 지원 SuperbWarfare 차량은 차량 AI, 허공은 클론 보관함을 엽니다. NPC 편집기가 열리지 않으면 실제 CustomNPCs NPC인지와 양쪽 설치를 확인하고, 차량 편집기가 열리지 않으면 정확한 SuperbWarfare ABI를 먼저 확인하세요.
+`DW Npc Core`는 크리에이티브 모드 편집 아이템이며 대상에 따라 동작이 다릅니다. DNPC 또는 CustomNPCs NPC는 NPC 설정, 지원 SuperbWarfare 차량은 차량 AI, 허공은 클론 보관함을 엽니다. NPC 편집기가 열리지 않으면 DNPC 또는 CustomNPCs NPC인지와 양쪽 설치를 확인하고, 차량 편집기가 열리지 않으면 호환 SuperbWarfare 버전을 먼저 확인하세요.
 
 ## 사격과 시야 문제
 

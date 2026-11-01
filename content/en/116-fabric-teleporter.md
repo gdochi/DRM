@@ -57,7 +57,7 @@ Category and destination media can use an image or item. Image media supports fi
 
 The set-level locked presentation supports `visible`, `dimmed`, `hidden`, `unknown`, and `custom`. A destination can inherit the set value or override it. Presentation controls whether unavailable destinations remain visible and how they appear; it does not bypass the server condition check.
 
-Transitions can set `fadeOutTicks`, `fadeInTicks`, and optional departure/arrival sounds. Sound entries use a registry ID plus volume and pitch. The editor includes a searchable sound picker and preview.
+Transitions can set `fadeOutTicks`, `fadeInTicks`, and optional departure/arrival sounds. Sound entries use a ID plus volume and pitch. The editor includes a searchable sound picker and preview.
 
 0.1.8 also lets destination commands run before or during fade-out, immediately before or after travel, during fade-in, or after fade-in finishes. Choose the point that matches the presentation.
 
@@ -103,7 +103,7 @@ Generic `image` components can also be used in a `teleporter` layout. The 0.1.8 
 
 ## Server Validation
 
-The server resolves the NPC binding or explicit path, evaluates interaction conditions, and sends a filtered destination snapshot. A travel request is accepted only while its session is valid and the player is still in the expected dimension and range of the bound NPC. The server then rechecks destination access before applying the transition and teleport.
+Players see destinations they can use. Moving too far from the NPC or no longer meeting access conditions can prevent travel.
 
 :::warning Current-dimension targets
 Changing only the coordinates does not move a player to another dimension. Build separate travel logic if the destination must cross dimensions.

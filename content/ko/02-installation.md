@@ -1,8 +1,8 @@
 ---
-title: 설치 준비
+title: Forge 설치 파일 고르기
 slug: installation
-order: 30
-description: DRM Core를 실행하기 위한 Forge, Minecraft, CustomNPCs 기준과 서버/클라이언트 역할입니다.
+order: 2
+description: Forge 1.20.1에 DRM과 사용할 NPC 모드를 설치합니다.
 product: core
 category: 시작하기
 section: getting-started
@@ -14,75 +14,34 @@ tags:
   - forge
 ---
 
-이 페이지는 **Forge 1.20.1 / DRM 0.3.1** 기준입니다. Fabric·NeoForge 1.21.1은 DRM 0.3.1 빌드를 사용합니다. [로더별 설치와 기능 차이](#core-fabric/loader-compatibility)를 확인하세요.
+## 필요한 파일
 
-## 지원 환경
-
-DRM Core는 `mods.toml` 기준으로 Forge 47 이상, Minecraft 1.20.1 이상 1.21 미만을 대상으로 합니다. 모드 ID는 `dochi_rpg_maker`입니다.
-
-| 항목 | 기준 | 비고 |
-| --- | --- | --- |
-| Mod Loader | Forge / `javafml` `[47,)` | Forge 1.20.1 계열 |
-| Minecraft | `[1.20.1,1.21)` | 문서는 1.20.1 기준 |
-| DRM Core | `dochi_rpg_maker` 0.3.1 | 클라이언트와 서버 양쪽 필요 |
-| Java | 17 | Forge 1.20.1 실행 환경과 동일하게 맞춥니다. |
-| CustomNPCs | 호환 1.20.1 빌드 | 해당 NPC 연동 사용 시 양쪽에 설치 |
-
-코어 에디터는 Minecraft 네이티브 `Screen`으로 구현되어 있습니다. 대화/상점/GUI Maker의 기본 동작에는 HTML GUI, MCEF, CNPCExtended가 필요하지 않습니다.
-
-## 설치 절차
-
-1. 클라이언트와 서버의 `mods` 폴더에 같은 버전의 DRM Core JAR을 넣습니다.
-2. 사용할 NPC 제공자와 애드온의 요구 모드를 양쪽에 설치합니다.
-3. 서버를 시작해 `config/dochi_rpg_maker`가 생성되게 합니다.
-4. 기본 파일이 설치된 뒤 `dialogue_sets`, `gui`, `npc_shops`, `currency`, `hud`, `remnant_msg`, `quests`, `stats`, `items`, `teleporters`, `factions`, `popups` 폴더를 확인합니다.
-5. 코어 아이템을 준비하고 에디터 선택 화면으로 들어갑니다.
-
-로컬 개발 환경에서 JAR을 만들 때는 모드 폴더의 `build-local.ps1`을 사용합니다.
-
-```powershell
-.\build-local.ps1
-```
-
-## 선택 연동 모드
-
-| 모드 | DRM의 주 용도 |
+| 항목 | 준비할 것 |
 | --- | --- |
-| GeckoLib | NPC 모델과 애니메이션 |
-| Player Animator | 플레이어 애니메이션 공급자 |
-| Mob Player Animator | 몹/플레이어형 애니메이션 공급자 |
-| Better Combat | 전투 애니메이션 연동 |
-| Iron's Spells 'n Spellbooks | 마나 HUD와 스킬 연동 |
-| Mowzie's Mobs | 타 모드 스킬 연동 |
-| L_Ender's Cataclysm | 타 모드 스킬 연동 |
+| Minecraft | Java Edition 1.20.1 |
+| Java | 17 |
+| 로더 | Forge 47 이상 |
+| DRM | Forge 1.20.1용 0.3.1 |
 
-위 연동은 선택 사항이지만 서버 콘텐츠와 모델 공급자가 요구하는 모드는 접속할 모든 클라이언트에도 설치해야 합니다.
+받은 모드 파일을 게임의 **mods** 폴더에 넣습니다. 서버에서 쓸 때는 서버와 접속자 모두 같은 파일을 설치합니다.
 
-## 서버와 클라이언트의 역할
+Fabric·NeoForge는 [별도 설치 안내](#core-fabric/installation)를 사용하세요.
 
-| 위치 | 담당 |
-| --- | --- |
-| 서버 | JSON 저장, NPC PersistentData, 상점 거래, 화폐 잔액, 명령 실행 |
-| 클라이언트 | 에디터 화면, GUI Maker 미리보기, 런타임 화면, HUD 렌더링 |
+## NPC도 만들고 싶다면
 
-서버 JSON은 서버 루트의 `config/dochi_rpg_maker`를 기준으로 읽습니다. 싱글플레이에서는 현재 게임 인스턴스 루트가 서버 루트처럼 동작합니다.
+[DNPC](#dochi-npc-core/npc-core-setup) 또는 호환 CustomNPCs를 설치합니다. DRM 자체에는 NPC 모드가 필수가 아니지만, 대화·상점을 붙일 NPC를 만들 때는 필요합니다.
 
-## 업데이트 전 백업
+Gecko 모델에는 GeckoLib, FTB 퀘스트 연결에는 FTB Quests처럼 사용하려는 기능에 맞는 모드만 추가합니다.
 
-업데이트 전에는 다음 폴더를 백업합니다.
+## 설치 후 열어보기
 
-| 경로 | 이유 |
-| --- | --- |
-| `config/dochi_rpg_maker` | 현재 공식 데이터 루트입니다. |
-| `dochi_rpg_maker` | 예전 루트입니다. 첫 실행 때 새 루트로 마이그레이션될 수 있습니다. |
-| 월드 저장 폴더 | NPC PersistentData에 붙은 대화/상점 데이터가 들어 있습니다. |
+1. 월드에 들어가 크리에이티브로 전환합니다.
+2. **Dochi RPG Maker Core**를 꺼냅니다. 명령어는 `/give @s dochi_rpg_maker:dialogue_editor`입니다.
+3. 코어로 허공을 우클릭합니다.
+4. 에디터 목록이 열리면 [첫 대화 만들기](#core/quick-start)를 진행합니다.
 
-번들 기본 대화·GUI·상점과 Remnant Msg 샘플은 시작 시 새 버전으로 다시 복사될 수 있습니다. 기본 파일을 직접 수정하지 말고 `Save As`로 별도 파일을 만든 뒤 그 파일을 NPC나 기본 설정에 연결하세요. HUD 정의와 Remnant Msg 기본 정책은 파일이 없을 때 설치되며, 기본 HUD 정의는 비활성 상태로 시작합니다.
+기본 예제는 첫 실행 때 준비됩니다. 따로 JSON 파일을 작성해 놓을 필요는 없습니다.
 
-:::warning 버전 혼합 주의
-클라이언트만 최신이고 서버가 이전 버전이면 에디터 패킷, 서버 JSON 종류, 런타임 GUI 필드가 어긋날 수 있습니다. 운영 서버에서는 항상 같은 JAR로 맞춰야 합니다.
-:::
+## 업데이트하거나 서버를 옮길 때
 
-최신 변경은 [DRM 0.3.1](#core/release-notes-0-2-9).
-
-Minecraft 26.3은 Java 25의 별도 빌드입니다. [26.3 설치·제외 기능](#core-fabric/minecraft-26-3)을 확인하세요.
+같은 모드의 예전 파일과 새 파일을 동시에 넣지 않습니다. 설정은 `config/dochi_rpg_maker/`, 배치한 NPC와 플레이어 진행도는 월드에도 저장되므로 둘을 함께 보관합니다.

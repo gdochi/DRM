@@ -25,7 +25,7 @@ tags:
 
 | 컨트롤 | 용도 |
 | --- | --- |
-| Search | `minecraft:zombie` 같은 레지스트리 ID를 검색합니다. |
+| Search | `minecraft:zombie` 같은 ID를 검색합니다. |
 | View filter | 전체, 체크됨, 체크 안 됨 항목을 나눠 봅니다. |
 | Type filter | 넓은 living entity 그룹을 좁힙니다. |
 | Mod filter | 선택한 모드 ID의 엔티티만 표시합니다. |

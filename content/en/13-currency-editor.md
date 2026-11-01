@@ -16,7 +16,7 @@ tags:
 
 ## Role
 
-Currency Editor creates the currency definition JSON used by DRM Core. Definitions are stored in `config/dochi_rpg_maker/currency/definitions`, and runtime balances are tied to player PersistentData keys.
+Use Currency Editor to choose money names, icons, pickup conversion and death losses. Select that currency in shops, rewards and HUDs.
 
 Currencies are not only display labels. They connect to shop payments, item pickup conversion, HUD display, and death behavior.
 

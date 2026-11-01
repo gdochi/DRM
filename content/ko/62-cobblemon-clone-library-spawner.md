@@ -39,7 +39,7 @@ Clone Library는 Trainer와 Pokemon NPC를 분류해 저장하고 검색합니�
 
 | 방식 | 동작 |
 | --- | --- |
-| `Follow Source` | NPC에 적용된 원본 JSON 경로를 유지하고 런타임에 최신 문서를 해석 |
+| `Follow Source` | NPC에 적용된 원본 JSON 경로를 유지하고 게임에 최신 문서를 해석 |
 | `Snapshot` | 저장 당시 데이터를 자체 포함하고 이후 원본 파일 변경을 따라가지 않음 |
 
 콘텐츠 파일을 고치면 모든 스포너 NPC도 같이 최신화되어야 할 때는 Follow Source가 적합합니다. 이벤트 당시 상태를 고정하거나 원본 파일 없이 배포해야 할 때만 Snapshot을 사용하세요.

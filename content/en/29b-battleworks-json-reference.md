@@ -1,5 +1,5 @@
 ---
-title: Combat JSON reference and complete sample
+title: Combat JSON reference and complete sample (Advanced)
 slug: battleworks-json-reference
 order: 285
 description: Copy a full example and check fields, references, timing, and limits.

@@ -20,7 +20,7 @@ Stat sets are stored in `config/dochi_rpg_maker/stats/sets/`; `stats/active_set.
 
 Investment providers are Minecraft XP levels, a DRM currency, or an item. Cost progression uses base, step, and multiplier settings.
 
-The player allocation screen opens with `Y` by default. `Allow Y key allocation UI` controls whether the active set may be opened from the keybind. The dialogue action `Go Stat Builder` opens the same runtime screen regardless of that keybind-only setting.
+The player allocation screen opens with `Y` by default. `Allow Y key allocation UI` controls whether the active set may be opened from the keybind. The dialogue action `Go Stat Builder` opens the same in-game screen regardless of that keybind-only setting.
 
 The bundled `default_stat_gui.json` uses a wide scrollable list on the left and separated value, cost, description, and increase controls on the right. Modify a copy in GUI Maker.
 

@@ -17,11 +17,11 @@ tags:
 
 ## Two different screen types
 
-The mercenary workflow deliberately separates creator tools from player runtime screens.
+The mercenary workflow deliberately separates creator tools from player in-game screens.
 
 | Screen or item | Who uses it | Purpose |
 | --- | --- | --- |
-| `DW Mercenary Core` and `Mercenary Contract Settings` | Creator in Creative mode | Edit one DW-managed NPC's server-authoritative hire terms. |
+| `DW Mercenary Core` and `Mercenary Contract Settings` | Creator in Creative mode | Edit one DW-managed NPC's hire terms. |
 | `Mercenary Contract` confirmation | Player | Review cost, duration, roster usage, and owner-attack terms before paying. |
 | `Mercenary Status` command HUD | Player with active contracts | Inspect, select, command, summon, recall, or release hired mercenaries. |
 

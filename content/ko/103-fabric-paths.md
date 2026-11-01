@@ -39,7 +39,7 @@ tags:
 | 팝업 | `config/dochi_rpg_maker/popups/` | 팝업 정의와 표시 정책입니다. |
 | 제작자 텍스처 | `config/dochi_rpg_maker/assets/textures/` | GUI와 NPC에서 고를 PNG와 `.png.mcmeta`입니다. |
 | NPC Spawner 템플릿 | `config/dochi_rpg_maker/npc_spawner/entity_clones/<classification>/` | 재사용하는 CustomNPC 소스 템플릿입니다. |
-| NPC Spawner 스냅샷 | `config/dochi_rpg_maker/npc_spawner/spawner_snapshots/` | Spawner 소스가 소유하는 Filled Soul Stone 스냅샷입니다. |
+| NPC Spawner 복사본 | `config/dochi_rpg_maker/npc_spawner/spawner_snapshots/` | Spawner 소스가 소유하는 Filled Soul Stone 복사본입니다. |
 | 화폐 정의 | `config/dochi_rpg_maker/currency/definitions/` | 화폐 ID, 이름, 아이콘, 픽업 변환, 사망 규칙을 정의합니다. |
 | HUD 세트 | `config/dochi_rpg_maker/hud/sets/` | HUD Maker가 쓰는 HUD 세트 JSON입니다. |
 | HUD 정의 | `config/dochi_rpg_maker/hud/definitions/` | 바닐라 HUD 대체 또는 커스텀 HUD 정의입니다. |
@@ -92,7 +92,7 @@ tags:
 | `remnant_msg_policy` | `remnant_msg/policies` | 레머넌트 메시지 정책 문서입니다. |
 | `settings` | `settings/defaults.json` | 기본 화폐와 기본 GUI 연결 설정입니다. |
 
-NPC Spawner 블록 설정과 가중치 소스 풀은 `ServerJsonStorage` 종류가 아니라 월드의 블록 엔티티에 저장됩니다. 재사용 템플릿과 Spawner 소유 Soul Stone 스냅샷만 위의 config 폴더를 사용합니다.
+설치한 NPC Spawner의 설정은 월드에 있습니다. NPC 템플릿과 Filled Soul Stone에서 가져온 복사본은 위 config 폴더에 보관됩니다.
 
 ## 경로 입력 규칙
 
@@ -118,7 +118,7 @@ NPC Spawner 블록 설정과 가중치 소스 풀은 `ServerJsonStorage` 종류�
 
 ## 레거시 호환
 
-대화 저장소는 오래된 NPC 데이터의 `dc_dialogue_json_path`를 읽을 수 있습니다. 이 경우 `customnpcs/dc_data/dc_dialogues` 아래의 JSON을 읽어 현재 `DialogueDocument`로 변환합니다.
+대화 저장소는 오래된 NPC 데이터의 `dc_dialogue_json_path`를 읽을 수 있습니다. 이 경우 `customnpcs/dc_data/dc_dialogues` 아래의 JSON을 읽어 현재 대화 형식으로 불러옵니다.
 
 새 문서와 새 제작 흐름에서는 `customnpcs/dc_data`를 주 저장소로 쓰지 않습니다. 기존 데이터를 유지해야 할 때만 레거시 경로를 확인하세요.
 

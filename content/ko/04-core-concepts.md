@@ -1,8 +1,8 @@
 ---
-title: 핵심 개념
+title: 저장·불러오기·NPC에 적용하기
 slug: core-concepts
 order: 50
-description: DRM Core의 에디터, 런타임, 서버 JSON, NPC 바인딩을 이해하기 위한 기본 용어입니다.
+description: 에디터에서 자주 쓰는 버튼과 대화·상점·화면의 연결을 설명합니다.
 product: core
 category: 핵심 시스템
 section: getting-started
@@ -14,65 +14,31 @@ tags:
   - glossary
 ---
 
-## 주요 용어
+## 자주 쓰는 버튼
 
-| 용어 | 의미 |
+| 버튼 | 누르는 때 |
 | --- | --- |
-| Editor Descriptor | 선택 화면에 표시되는 에디터 정의입니다. ID, 제목, 정렬 순서, NPC 대상 필요 여부를 가집니다. |
-| Source Choice | 기존 파일 불러오기, 기본값 사용, 새로 만들기 같은 첫 선택 단계입니다. |
-| Server JSON Domain | `dialogue_set`, `gui`, `npc_shop`처럼 서버가 저장 위치를 알고 있는 JSON 종류입니다. |
-| Layout Profile | `dialogue`, `npc_shop`, `currency_hud` 같은 GUI 타입별 저장소와 기본 파일명을 정의합니다. |
-| Dialogue Document | 대화 세트 전체를 담는 JSON 루트입니다. 노드, 선택지, 조건, 액션, 기본 GUI 연결을 포함합니다. |
-| Shop Document | NPC 상점 JSON입니다. 구매/판매 모드, 상품, 판매 매입 목록, 상점 GUI 연결을 포함합니다. |
-| Currency Definition | 화폐 하나를 정의하는 JSON입니다. 아이템 아이콘, 자동 변환, HUD 표시, 사망 손실 규칙을 가집니다. |
-| NPC Binding | NPC PersistentData에 대화나 상점 JSON을 직접 저장하거나 서버 JSON 경로를 연결하는 방식입니다. |
-| Protected Default | 기본 샘플 파일처럼 직접 덮어쓰기보다 `Save As`를 사용해야 하는 보호 데이터입니다. |
+| **Load** | 전에 만든 작업이나 기본 예제를 불러올 때 |
+| **Save** | 내가 만든 파일의 변경 사항을 저장할 때 |
+| **Save As** | 기본 예제를 내 파일로 만들거나 다른 이름으로 복사할 때 |
+| **Apply** | 저장한 대화·상점 등을 NPC에 붙일 때 |
 
-## 에디터와 런타임의 차이
+**Close**나 뒤로·앞으로 화살표는 저장 버튼이 아닙니다. 화면을 옮기기 전에 작업을 저장하세요.
 
-에디터는 JSON을 만들고 저장하는 화면입니다. 런타임은 플레이어가 NPC를 우클릭했을 때 서버가 저장된 JSON을 읽고 실제 대화, 상점, HUD 변화를 실행하는 흐름입니다.
+## 대화 내용과 창 모양은 따로 만듭니다
 
-| 단계 | 처리 위치 | 예 |
-| --- | --- | --- |
-| 제작 | 클라이언트 화면 + 서버 저장 | Dialogue Editor에서 노드 수정 후 서버 JSON 저장 |
-| 바인딩 | 서버 NPC PersistentData | NPC에 `source.kind`, `source.path` 또는 내장 JSON 저장 |
-| 실행 | 서버 런타임 + 클라이언트 화면 | 조건 평가 후 선택지만 필터링해서 대화 화면 열기 |
-| 결과 | 서버 상태 변경 | 명령 실행, 아이템 지급, 태그 변경, 화폐 차감 |
+‘안녕하세요’라는 대사와 선택지는 **Dialogue Editor**, 그 대화를 담을 창의 위치·색·이미지는 **GUI Maker**에서 만듭니다. 상품과 가격은 **NPC Shop**에서 정합니다.
 
-## 연결 방식
+처음에는 기본 창 모양을 쓰고 내용부터 완성하면 됩니다. 창을 바꾸고 싶을 때 GUI Maker에서 만든 파일을 대화나 상점의 GUI 설정에 연결하세요.
 
-DRM 콘텐츠는 보통 한 파일로 끝나지 않습니다. 대화 선택지가 상점을 열고, 상점은 GUI를 참조하며, GUI는 화면 컴포넌트와 리소스 경로를 참조합니다.
+## 같은 작업을 여러 NPC에게 쓰기
 
-```text
-CustomNPCs NPC
-  -> DialogueStorage 또는 NpcShopStorage
-      -> ServerJsonStorage(kind, path)
-          -> Dialogue / Shop / GUI / Currency JSON
-              -> Runtime screen
-                  -> 조건 평가
-                  -> 액션 실행
-```
+한 번 저장한 대화를 여러 NPC에 적용할 수 있습니다. 같은 파일을 쓰는 NPC들은 그 파일을 수정하면 같은 내용을 사용합니다. NPC마다 다른 대사가 필요하면 **Save As**로 파일을 나누세요.
 
-## 파일 기반과 NPC 내장 데이터
+상점은 같은 상품 파일을 쓰더라도 **NPC마다 재고가 따로**입니다. 같은 NPC를 이용하는 플레이어들은 그 NPC의 재고를 함께 사용합니다.
 
-| 방식 | 장점 | 주의 |
-| --- | --- | --- |
-| 서버 JSON 경로 연결 | 여러 NPC가 같은 파일을 공유하고 수정 사항을 다시 읽기 쉽습니다. | 파일명과 ID를 안정적으로 유지해야 합니다. |
-| NPC 내장 JSON 저장 | NPC 단독 설정이 간단합니다. | 월드/NPC 데이터 안에 들어가므로 파일 단위 관리가 어렵습니다. |
+## 조건과 액션
 
-상점 거래 중 재고가 줄어드는 경우 파일 기반 상점이면 가능한 한 원본 상점 JSON에 다시 저장합니다. 내장 상점이면 NPC에 저장된 상점 데이터가 갱신됩니다.
+**조건**은 누가 볼 수 있는지 정합니다. ‘퀘스트를 끝낸 사람에게만 선택지 표시’가 예입니다. **액션**은 눌렀을 때 할 일을 정합니다. ‘아이템 지급’이나 ‘상점 열기’가 예입니다.
 
-## 기본값과 설정
-
-`settings/defaults.json`은 기본 대화 GUI, 기본 상점 GUI, 기본 화폐 연결을 저장합니다. 대화나 상점 문서에 GUI 정보가 비어 있으면 이 기본값이 채워집니다.
-
-`settings/reload_policy.json`은 서버 JSON 캐시와 수동 리로드 명령을 제어합니다.
-
-| 설정 | 기본값 | 의미 |
-| --- | --- | --- |
-| `reloadOnTrigger` | `true` | JSON을 사용할 때 캐시 대신 최신 파일을 다시 읽습니다. |
-| `manualReloadCommand` | `true` | `/drm reload`와 `/drm currency reload`를 허용합니다. |
-
-:::tip 제작 팁
-문제가 생기면 먼저 "어느 JSON이 어느 경로로 연결되어 있는가"를 확인하세요. 대다수 오류는 파일 내용보다 연결 정보가 오래되었을 때 생깁니다.
-:::
+[조건과 액션](#core/conditions-actions)에서 원하는 행동을 골라 붙일 수 있습니다.

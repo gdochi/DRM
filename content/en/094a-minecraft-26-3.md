@@ -1,8 +1,8 @@
 ---
-title: Minecraft 26.3
+title: 26.3 Setup and Feature Differences
 slug: minecraft-26-3
 order: 6
-description: Separate 26.3 builds, Java 25, NPC providers and porting limits.
+description: Choose 26.3 files and NPCs, and check which editor features differ.
 product: core-fabric
 category: Minecraft 26.3
 section: getting-started
@@ -11,44 +11,37 @@ version: 0.3.1 / Minecraft 26.3
 audience: Creators / server operators
 ---
 
-## Choose the target first
+## Install 26.3 files
 
-26.3 has separate Fabric / NeoForge builds using **Java 25**. Use matching Minecraft and loader builds on the server and clients. Fabric API remains a separate platform installation where required.
+Use **Fabric or NeoForge / Java 25**. Install each mod's 26.3 files on server and clients. Fabric also needs the Fabric API required by those mods.
 
-This table records **local production artifacts checked on 2026-10-31**. It does not establish public availability or complete port parity.
+Create NPCs with **DNPC**. **CustomNPCs is unavailable on 26.3.** DRM and DNPC can also run independently.
 
-| Mod | 26.3 version | Integration |
-| --- | --- | --- |
-| DRM | 0.3.1 | DNPC optional |
-| NPC Core | 0.1.2 | Basic creation, editing and storage without DRM |
-| BattleWorks | 0.1.6 | DRM required; NPC combat uses the DNPC provider |
-| Spawn Control | 0.1.4 | Standalone ordinary spawning; templates need the public provider API |
-| Real Armor | 0.1.4 | Optional Easy NPC / DNPC |
-| Minigames | 0.1.5 | DRM optional |
-| MapIcon Integration | 0.1.2 | DRM required; maps and DNPC individually optional |
+## Choose the features you want
 
-Cobblemon Editor was checked on **1.21.1** Fabric / NeoForge. Warfare / Expanded target **1.20.1** Forge and **1.21.1** NeoForge. This table does not announce 26.3 support for those mods.
+| Feature | Mods |
+| --- | --- |
+| NPC creation, appearance and schedules | DNPC |
+| Dialogue, shops, quests and screen layouts | DRM |
+| NPC patterns and boss combat | DRM + BattleWorks + DNPC |
+| Ordinary mob spawn rules | Spawn Control |
+| Spawn a saved NPC from a block | Spawn Control + DRM + DNPC |
+| NPC armor effects | Real Armor and a supported NPC mod |
+| Minigames/MWENT tables | Minigames |
+| NPC map icons | DRM + MapIcon + a supported map |
 
-## NPCs and editors
+Cobblemon Editor and DW/DWE are not included as 26.3 mods here. Use their older 1.21.1/1.20.1 guides.
 
-**CustomNPCs is permanently excluded from 26.3 onward.** Do not wait for a future CustomNPCs release. DRM and DNPC are optional to one another; other addons retain their own dependency contracts.
+## Differences from older versions
 
-26.3 DRM removes **Faction Editor, the linked player faction screen and GUI Maker faction components**. Legacy file readers do not restore those features. DNPC's optional relation API remains separate. Fabric also retains its Item Editor / Stat Builder exclusions; do not assume identical editor lists across loaders.
+26.3 DRM has no **Faction Editor, player faction screen or GUI Maker faction elements**. Fabric also excludes **Item Editor and Stat Builder**.
 
-## First integration
+Follow [NPC creation](#dochi-npc-core/npc-core-setup) and [DRM getting started](#core-fabric/quick-start) for NPCs with conversations or shops.
 
-1. Install matching DRM and DNPC builds and create an NPC.
-2. Save its appearance, equipment and behavior. Create a [v3 clone template](#dochi-npc-core/npc-core-templates) for reuse.
-3. Open BattleWorks for the NPC and save/apply its combat file. Six bundled samples install only missing files under `config/dochi_rpg_maker/mobs/patterns/samples/`.
-4. In a placed Spawn Control spawner, choose **NPC clone template**. Legacy CustomNPCs clones are not automatically converted.
-5. Check interaction, storage, reconnect and the addon features used by your world.
+Use [placed NPC templates](#dochi-spawn-control/spawn-control-npc-templates) in Spawn Control. Old CustomNPCs clones are not directly converted into DNPC spawns.
 
-BattleWorks rejects legacy `summon_clone` on 26.3. The Better Combat sample needs compatible providers and motion support; its presence does not establish live playback verification. Changes to MWENT's native 26.3 trade definitions take effect after world reconnect or server restart.
+After changing MWENT's native villager trade definitions, reconnect to the world or restart the server.
 
-## Verification and existing data
+## Bringing an old world
 
-DRM has recorded client, dedicated-server and JSON network checks. Full GUI, transactions and existing-world migration remain separate porting gates. Current 0.3.1 package checks found no native CNPC references. Porting legacy tests for the general build remains a separate task.
-
-DNPC standalone operation and placed template spawning have actual 26.3 evidence. COMMON natural-template spawning results do not establish the same 26.3 coverage. Back up the world and configuration, and test migration on a copy.
-
-For developers, final 26.3 artifacts remain in loader-local `build/libs/` and that mod's independent `jar-26.3/`. Older targets retain their `jar/` collection.
+Try the NPCs, conversations, shops and other features you use on a copy before replacing the original world. Keep its configuration and world together.

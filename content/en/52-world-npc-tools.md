@@ -32,4 +32,3 @@ Command timing supports `BEFORE_FADE_OUT`, `DURING_FADE_OUT`, `BEFORE_TELEPORT`,
 Popup definitions are stored in `config/dochi_rpg_maker/popups/definitions/`; policies are stored in `popups/policies/`. Definitions control GUI, channel, priority, conflict behavior, title/subtitle/body styling, fade/hold timing, and sound. Policies bound permissions, text/timing overrides, active/queued counts, text length, and duration.
 
 Popups can be opened through DRM commands, dialogue/runtime actions, or the `drmPopup` CustomNPCs script global. Keep policy limits conservative on public servers.
-

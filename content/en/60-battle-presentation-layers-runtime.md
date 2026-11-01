@@ -1,14 +1,14 @@
 ---
-title: Layer, Timeline, Actor, and Audio Behavior
+title: Text, Pictures, Models and Timing
 slug: battle-presentation-layers-runtime
 order: 531
-description: Learn how each presentation field affects frame rendering and the transition into a real Cobblemon battle.
+description: Place text and models, add movement, and time pictures and sound.
 product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
 status: Draft
 version: Fabric / NeoForge 0.2.9
-audience: Creators tuning presentation timing and runtime behavior
+audience: Creators arranging battle entrances
 tags:
   - layers
   - timeline
@@ -24,7 +24,7 @@ tags:
 | `Texture` | Draws a Minecraft resource image; an unresolved texture may fall back to a colored box | Image, Opacity, Fit, Crop |
 | `Color` | Draws an ARGB rectangle | Color, box dimensions, Alpha |
 
-`{player_name}` and `{opponent_name}` bind to runtime participants. A partial style stored over a placeholder token is inherited by the replacement name.
+Use `{player_name}` to show the player's name and `{opponent_name}` to show the opponent's name.
 
 Image must be a resource ID such as `namespace:textures/gui/file.png`, not an absolute file path. `Stretch` distorts to the full box, while `Contain` preserves aspect ratio and centers the full image. Crop selects the source rectangle before fitting.
 
@@ -80,7 +80,7 @@ A useful stack is background at 1, panels at 5–12, opponent/player at 23–24,
 | Scale and Yaw/Pitch/Roll | Whole-model size and rotation |
 | Z | Order relative to normal elements |
 
-The runtime Player actor is the actual player and receives the lead Pokémon's ball as a visual main-hand override. Opponent uses the target CustomNPCs entity. An actor does not render if its entity is not a live LivingEntity.
+Player shows the player with their lead Pokémon’s ball. Opponent shows the target NPC. Both can be positioned and layered with the scene.
 
 When the editor has no target NPC, it may show a sample Bulbasaur. That sample does not prove that the chosen model type matches the final NPC.
 
@@ -97,7 +97,7 @@ Inspector Play/Stop previews only the selected sound and does not move the timel
 
 ## Skip and cancellation
 
-When Skippable is enabled, `Esc` or `Space` sends a skipped result. The server proceeds only if the authoritative document also allows skipping.
+When Skippable is enabled, `Esc` or `Space` sends a skipped result. Skipping must be enabled in the saved scene.
 
 Dead or missing players, removed or invalid targets, an interrupted client screen, failed condition recheck, and invalid battle parties may safely cancel startup. Test the first frame, audio trigger, middle, final flash, skip, real battle, and post-battle restore as one complete flow.
 

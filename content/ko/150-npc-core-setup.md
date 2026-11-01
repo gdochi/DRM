@@ -1,8 +1,8 @@
 ---
-title: NPC Core 설치와 시작
+title: NPC 한 명 만들기
 slug: npc-core-setup
 order: 1500
-description: NPC Core 설치와 시작
+description: DNPC를 설치하고 이름·스킨·장비를 정해 NPC를 배치합니다.
 product: dochi-npc-core
 category: NPC Core 설치와 시작
 section: setup
@@ -11,44 +11,44 @@ version: 0.1.2
 audience: 제작자 / 서버 운영자
 ---
 
-## 0.1.2 최신 수정
+## 다운로드와 설치
 
-작업과 외부 AI의 이동 제어, 고용 복귀와 일정 상점 권한을 보완했습니다. 기존 NPC에 템플릿을 적용할 때 실제 운반물은 보존하고 새 복제본에는 실행 중 화물·탑승·전투 상태를 넘기지 않습니다. [시간표·탑승](#dochi-npc-core/npc-core-schedules)과 [조리 작업](#dochi-npc-core/npc-core-cooking)을 확인하세요. 기존 1.20.1·1.21.1 NPC 화면에서는 Delete 키로 삭제할 수 있습니다.
+[CurseForge에서 Dochi’s NPC Core 다운로드](https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core)
 
-## 어떤 모드인가요?
+자신의 Minecraft 버전과 로더에 맞는 파일을 설치합니다. 멀티플레이는 서버와 접속자 모두 같은 파일을 사용합니다. Fabric에서는 Fabric API도 설치합니다.
 
-Dochi’s NPC Core(DNPC) **0.1.2**은 자체 NPC, 외형·장비, 포즈, 관계, 시간표와 작업을 만드는 독립 모드입니다. DRM 없이 기본 NPC를 만들고 편집할 수 있습니다.
-
-| 빌드 | Minecraft | Java |
+| Minecraft | 로더 | Java |
 | --- | --- | --- |
-| Forge | 1.20.1 | 17 |
-| Fabric | 1.21.1 | 21 |
-| NeoForge | 1.21.1 | 21 |
-| Fabric / NeoForge | 26.3 | 25 |
+| 1.20.1 | Forge | 17 |
+| 1.21.1 | Fabric / NeoForge | 21 |
+| 26.3 | Fabric / NeoForge | 25 |
 
-서버와 클라이언트에 같은 로더의 `dochi_npc_core-0.1.2-<loader>-<minecraft>.jar`를 설치합니다. Fabric에는 Fabric API도 필요합니다. DRM은 선택 연동이며 현재 통합 안내는 DRM 0.3.1 기준입니다. Gecko 모델을 사용하면 해당 로더의 GeckoLib를 함께 설치합니다.
+DNPC만으로 NPC를 만들고 꾸미고 일을 시킬 수 있습니다. 대화나 상점을 붙이고 싶을 때 DRM을 추가합니다.
 
-## 첫 NPC 만들기
+## 첫 NPC 배치하기
 
-1. 크리에이티브의 NPC Core 탭 또는 `/dnpc core`로 코어를 준비합니다.
-2. 코어로 블록을 우클릭해 NPC를 생성합니다.
-3. 생성한 NPC를 코어로 우클릭해 제작용 NPC 에디터를 엽니다.
-4. 이름·모델·스킨·장비를 정하고 저장합니다.
-5. 시간표나 작업을 설정한 뒤 도구를 내려놓고 실제 NPC 행동을 확인합니다.
+1. 크리에이티브의 **NPC Core** 탭에서 코어를 꺼냅니다. 명령어는 `/dnpc core`입니다.
+2. 코어로 땅을 우클릭하면 NPC가 생깁니다.
+3. 코어로 그 NPC를 우클릭해 편집 화면을 엽니다.
+4. 이름을 쓰고 스킨과 장비를 고른 뒤 저장합니다.
+5. 코어를 내려놓고 NPC의 모습을 확인합니다.
 
-## 코어 조작
+## 코어로 할 수 있는 일
 
-| 조작 | 기능 |
+| 조작 | 동작 |
 | --- | --- |
-| 블록 우클릭 | 새 NPC 배치 |
+| 땅 우클릭 | NPC 배치 |
 | NPC 우클릭 | 해당 NPC 편집 |
-| 허공 우클릭 | 글로벌 설정과 포저 |
-| 좌클릭 | 중앙 유틸리티 HUD |
-| 주 손에 코어 + Ctrl+C / Ctrl+V | 임시 NPC 복사 / 붙여넣기 |
-| 주 손에 코어 + Ctrl+X | 대상 NPC 즉시 삭제 |
+| 허공 우클릭 | 전체 설정과 포저 열기 |
+| 좌클릭 | NPC 유틸리티 메뉴 |
+| 코어를 주손에 들고 Ctrl+C / Ctrl+V | NPC 복사 / 붙여넣기 |
+| 코어를 주손에 들고 Ctrl+X | 대상 NPC 삭제 |
 
-복사 목록은 장기 보관용 템플릿과 다릅니다. 재사용할 NPC는 [v3 복제 템플릿](#dochi-npc-core/npc-core-templates)으로 저장하세요. 원본으로 이동하는 동작은 복사 당시 UUID를 사용하므로 원본이 삭제되면 이동할 수 없습니다.
+여러 번 쓸 NPC는 [복제 템플릿으로 저장](#dochi-npc-core/npc-core-templates)해 두세요.
 
-[NPC와 작업](#dochi-npc-core/npc-core-editor), [파일·연동·변환](#dochi-npc-core/npc-core-files)을 이어서 확인하세요.
+## 다음으로 해볼 것
 
-26.3도 DRM·GeckoLib·Curios 없이 기본 NPC를 만들고 편집·저장할 수 있습니다. 선택 연동 데이터는 보존하며 필요한 API가 없으면 해당 외부 기능만 사용할 수 없습니다. 26.3에는 CustomNPCs가 없습니다. [대상별 설치](#core-fabric/minecraft-26-3)를 확인하세요.
+- [외형·장비·일 시키기](#dochi-npc-core/npc-core-editor)
+- [낮에는 일하고 밤에는 쉬는 시간표](#dochi-npc-core/npc-core-schedules)
+- [음식을 만들고 보관함에 넣기](#dochi-npc-core/npc-core-cooking)
+- [DRM 대화·상점과 다른 모드 연결](#dochi-npc-core/npc-core-files)

@@ -25,7 +25,7 @@ The `Targets` tab can select allowed target entity IDs. The list includes search
 
 | Control | Use |
 | --- | --- |
-| Search | Filter registry IDs such as `minecraft:zombie`. |
+| Search | Filter IDs such as `minecraft:zombie`. |
 | View filter | Show all, checked only, or unchecked only entries. |
 | Type filter | Narrow broad living entity groups. |
 | Mod filter | Show entity IDs from selected mod IDs. |

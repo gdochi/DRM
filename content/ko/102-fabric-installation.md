@@ -1,8 +1,8 @@
 ---
-title: 설치 준비
+title: Fabric·NeoForge 설치 파일 고르기
 slug: installation
-order: 30
-description: Fabric·NeoForge 1.21.1용 DRM 0.3.1의 설치 조건과 서버·클라이언트 역할입니다.
+order: 2
+description: 1.21.1에 맞는 DRM 파일과 필수 모드를 설치합니다.
 product: core-fabric
 category: 시작하기
 section: getting-started
@@ -11,67 +11,40 @@ version: 0.3.1
 audience: 제작자 / 운영자
 ---
 
-## 지원 환경
-
-이 문서 묶음은 **Fabric·NeoForge 1.21.1용 DRM 0.3.1**를 함께 다룹니다. 두 로더의 제작 도구와 기본 사용 순서는 같습니다. 설치할 JAR과 의존성은 로더에 맞춰 선택합니다. Forge 1.20.1 문서는 별도 항목입니다.
+## 로더에 맞춰 파일 받기
 
 | 항목 | Fabric | NeoForge |
 | --- | --- | --- |
-| Minecraft | 정확히 `1.21.1` | 정확히 `1.21.1` |
-| Java | `21` 이상 | `21` |
-| 로더 | Fabric Loader `0.18.0` 이상, 현재 빌드 `0.19.3` | NeoForge `21.1` 이상, 현재 빌드 `21.1.216` |
-| Fabric API | `0.116.11+1.21.1` 이상, 현재 빌드 `0.116.13+1.21.1` | 설치하지 않습니다. |
-| CustomNPCs | Fabric 호환 빌드, 선택 | NeoForge `1.21.1` 호환 빌드, 선택 |
-| DRM | `dochi_rpg_maker-0.3.1-fabric-1.21.1.jar` | `dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar` |
+| Minecraft | 1.21.1 | 1.21.1 |
+| Java | 21 | 21 |
+| 로더 | Fabric Loader 0.18.0 이상 | NeoForge 21.1 이상 |
+| Fabric API | 0.116.11+1.21.1 이상 | 사용하지 않음 |
+| DRM 파일 | 0.3.1 Fabric 1.21.1 | 0.3.1 NeoForge 1.21.1 |
 
-모드 ID와 리소스 네임스페이스는 두 로더 모두 `dochi_rpg_maker`입니다. 서버와 모든 클라이언트에 같은 로더의 같은 버전 JAR을 설치합니다.
+**26.3은 위 파일을 쓰지 않습니다.** [26.3 설치](#core-fabric/minecraft-26-3)에서 Java 25와 해당 버전 파일을 확인하세요. Forge 1.20.1은 [Forge 안내](#core/installation)를 사용합니다.
 
-## 선택 연동 모드
+받은 파일은 **mods** 폴더에 넣습니다. 멀티플레이는 서버와 접속자의 Minecraft·로더·모드 파일을 맞춥니다.
 
-| 모드 | 사용할 기능 |
+## 필요한 기능만 추가하기
+
+| 만들 기능 | 추가 모드 |
 | --- | --- |
-| GeckoLib | GeckoLib NPC 모델과 애니메이션. Fabric은 `4.8.4` 이상, NeoForge는 `4.9` 이상인 해당 로더 빌드를 사용합니다. |
-| Mod Menu | Fabric 모드 목록에서 DRM의 `Mods Config` 화면을 열 때 사용합니다. |
-| Player Animator | NeoForge의 플레이어 애니메이션 공급자 연동에 사용하는 선택 모드입니다. |
-| FTB Quests | `ftb`, `ftb_task` 조건과 FTB 퀘스트·태스크 완료 액션에 필요합니다. |
-| CobbleDollars | 서버 콘텐츠나 애드온에서 CobbleDollars 결제를 선택했을 때 필요합니다. |
-| Dochi Cobblemon Editor | 트레이너 배틀·포켓마트·치료·스타터 선택·트레이너 승리 퀘스트를 추가하는 별도 애드온입니다. |
+| NPC 배치 | DNPC 또는 해당 로더의 CustomNPCs |
+| Gecko 모델 | 해당 버전·로더의 GeckoLib |
+| FTB 퀘스트 연결 | FTB Quests |
+| 포켓몬 트레이너·상점·치료 | Cobblemon Editor와 Cobblemon |
+| Fabric 모드 목록의 설정 버튼 | Mod Menu |
 
-DRM 0.3.1에서는 CustomNPCs가 선택 의존성입니다. 해당 NPC 기능이나 이를 요구하는 애드온을 사용할 때 설치합니다. DNPC도 선택 연동입니다. Cobblemon 콘텐츠는 [코블몬 에디터 설치](#drm-cobblemon-editor/cobblemon-editor-setup)를 따릅니다.
+DRM만으로도 기본 편집 도구를 열 수 있습니다. NPC를 만들려면 [DNPC 시작](#dochi-npc-core/npc-core-setup)을 보세요.
 
-## 설치 절차
+## 게임에서 시작하기
 
-1. Minecraft 1.21.1 인스턴스를 만들고 Fabric 또는 NeoForge를 선택합니다.
-2. 서버와 클라이언트에 같은 로더의 DRM 0.3.1을 설치합니다. Fabric에는 Fabric API도 넣고 필요한 NPC 연동 모드를 추가합니다.
-3. 서버 또는 월드를 한 번 실행해 `config/dochi_rpg_maker`를 생성합니다.
-4. 크리에이티브 또는 권한 레벨 2 이상으로 코어 아이템을 준비합니다.
-5. 코어 아이템으로 에디터 선택 화면을 열고 필요한 제작 도구를 선택합니다.
+1. 크리에이티브에서 **Dochi RPG Maker Core**를 꺼내거나 `/give @s dochi_rpg_maker:dialogue_editor`를 입력합니다.
+2. 코어로 허공을 우클릭합니다.
+3. **Dialogue Editor**를 열어 [첫 대화](#core-fabric/quick-start)를 만듭니다.
 
-CustomNPCs 크리에이티브 탭에서 아이템을 찾거나 다음 명령으로 받을 수 있습니다.
+기본 예제와 설정 폴더는 첫 실행 때 생성됩니다. Fabric은 Item Editor·Stat Builder를 제공하지 않습니다.
 
-```text
-/give @s dochi_rpg_maker:dialogue_editor
-/give @s dochi_rpg_maker:remnant_msg_setter
-/give @s dochi_rpg_maker:npc_spawner
-```
+## 서버를 옮길 때
 
-## 서버와 클라이언트 역할
-
-| 위치 | 담당 |
-| --- | --- |
-| 서버 | JSON 저장, 편집 권한, NPC 바인딩, 조건·액션, 상점 거래·재고, 화폐, 퀘스트 진행도, 스포너와 Remnant 마커 상태 |
-| 클라이언트 | 제작 에디터, 검색 선택기, GUI Maker 미리보기, 플레이어 런타임 화면과 HUD |
-
-멀티플레이에서는 **서버의** `config/dochi_rpg_maker`가 기준입니다. 클라이언트의 동명 JSON만 고쳐서는 서버 콘텐츠가 바뀌지 않습니다.
-
-## 업데이트 전 백업
-
-`config/dochi_rpg_maker`와 월드 저장 폴더를 함께 백업합니다. NPC 바인딩, 퀘스트 진행도, NPC Spawner의 블록 상태·리스, Remnant 마커는 월드 쪽에도 저장됩니다.
-
-기본 대화·GUI·상점·텔레포터와 샘플은 시작 시 번들 기본본으로 다시 설치될 수 있습니다. 커스텀 콘텐츠는 `Save As`로 새 파일을 만들고 그 파일을 연결하세요.
-
-패킷과 기능을 함께 맞추기 위해 서버와 모든 클라이언트를 함께 교체해야 합니다. 다른 로더의 JAR을 같은 인스턴스에 넣지 않습니다.
-
-최신 변경은 [DRM 0.3.1](#core-fabric/release-notes-0-2-9).
-
-Minecraft 26.3은 Java 25의 별도 빌드입니다. [26.3 설치·제외 기능](#core-fabric/minecraft-26-3)을 확인하세요.
+`config/dochi_rpg_maker/`와 월드를 함께 보관합니다. 설정 파일만 옮기면 배치한 NPC·퀘스트 진행도·스포너 상태는 따라가지 않습니다.

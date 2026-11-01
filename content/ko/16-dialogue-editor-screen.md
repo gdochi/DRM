@@ -44,7 +44,7 @@ Dialogue Editor는 한 화면에서 대화 세트, 노드, 선택지, 조건, �
 
 ## 새 대화 세트 만들기
 
-대화 세트는 파일 하나가 아니라 폴더 단위로 만들어집니다. 예를 들어 `blacksmith` 세트를 만들면 `dialogue_sets/blacksmith/` 폴더가 생기고, 그 안에 전체 스냅샷인 `dialogue_set.json`, 입구 노드인 `start.json`, 일반 대화 노드 JSON들이 함께 저장됩니다.
+대화 세트는 파일 하나가 아니라 폴더 단위로 만들어집니다. 예를 들어 `blacksmith` 세트를 만들면 `dialogue_sets/blacksmith/` 폴더가 생기고, 그 안에 세트 전체를 담는 `dialogue_set.json`, 입구 노드인 `start.json`, 일반 대화 노드 JSON들이 함께 저장됩니다.
 
 ```text
 config/dochi_rpg_maker/dialogue_sets/blacksmith/

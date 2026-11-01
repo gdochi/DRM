@@ -102,7 +102,7 @@ Use awareness settings to decide when the NPC may enter combat:
 | `Instant Combat Angle` | Front cone that can skip the delay and enter combat immediately. |
 | `Close Detection` | Lets targets inside `Close Detect Distance` bypass the horizontal detection angle. Disable it for backstab or assassination-style NPCs. |
 
-`Sound Detection` uses one server-authoritative stimulus system for managed gunshots, reloads, block sounds, entity sounds, and position-only world sounds. Survival and Creative players are handled consistently; spectator targets remain excluded. Investigation can be `Off`, `Look Only`, or `Move To Source`. Active combat takes priority, and a position-locked stance falls back to looking instead of leaving its post.
+`Sound Detection` uses one stimulus system for managed gunshots, reloads, block sounds, entity sounds, and position-only world sounds. Survival and Creative players are handled consistently; spectator targets remain excluded. Investigation can be `Off`, `Look Only`, or `Move To Source`. Active combat takes priority, and a position-locked stance falls back to looking instead of leaving its post.
 
 `Faction Defense` lets a damaged DW-managed NPC alert same-faction managed allies inside `Faction Alert Radius`. An assisting ally may move to help before it sees the attacker, but it still needs final line of sight before firing. Mercenary owner-hit tolerance and friendly-target validation remain in force, so faction defense does not bypass contract or target rules.
 

@@ -1,8 +1,8 @@
 ---
-title: Assets, NPC Models, And Animation
+title: Add Your Pictures and NPC Models
 slug: assets-models
 order: 130
-description: Server PNG assets, animated textures, NPC models, and animation setup.
+description: Import a PNG for your screens and choose NPC models and animations.
 product: core-fabric
 category: World And NPC Tools
 section: world-tools
@@ -15,22 +15,25 @@ tags:
   - animation
 ---
 
-## Server Texture Folder
+## Put your picture on a screen
 
-Place custom PNG files under `config/dochi_rpg_maker/assets/textures/`. Search by path in the asset picker, filter by mod namespace or top folder, check the preview, then press `Apply`.
+1. Put the PNG under the server's `config/dochi_rpg_maker/assets/textures/`.
+2. Open the image picker for an **Image** element in GUI Maker.
+3. Search its name and check the preview.
+4. Press **Apply**, then save the GUI.
 
-Each file is limited to 8 MiB, 4096 pixels per side, and 16 million pixels. Paths outside the server asset folder are not read.
+Server images are sent to joining players. Each PNG can be up to 8 MiB, 4096 pixels on either side and 16 million pixels total.
 
-## Animated PNG Files
+## Change an NPC's model
 
-To animate `priest.png`, place `priest.png.mcmeta` beside it. The standard resource-pack `animation` format can set frame size, timing, frame order, and interpolation.
+In **NPC Basic**, choose a model and texture. Rotate/zoom the preview and adjust size and hit bounds.
 
-## NPC Basic
+For Gecko models, install **GeckoLib** for your Minecraft version and connect the model, animation and texture files. Choose animations for walking, attacking, hurt, death and other activities.
 
-NPC Basic can select texture and model providers, rotate or zoom the NPC preview, and adjust presentation size and hitbox settings for the chosen model.
+Use **loop** to repeat, **once** for a single play, or **hold-last** to keep the final pose.
 
-With GeckoLib installed, you can connect model, animation, and texture files and assign idle, walk, sprint, attack, hurt, and death behavior. The Gecko Animation dialogue action can also play a chosen animation during a conversation.
+## Animated PNGs
 
-:::warning GeckoLib is optional
-It is not required for normal NPC editing, but every client using GeckoLib NPC models or animations needs GeckoLib 4.8.4 or newer.
-:::
+Place a resource-pack-style `.png.mcmeta` beside the picture: for example, `priest.png` and `priest.png.mcmeta`. That file sets frame size, order and speed.
+
+Continue with [GUI Maker](#core-fabric/gui-system) to arrange it on screen.

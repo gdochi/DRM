@@ -71,7 +71,7 @@ Client and server exchange JSON by `kind` and `path`.
 | `remnant_msg_policy` | `remnant_msg/policies` | Remnant Msg policy document. |
 | `settings` | `settings/defaults.json` | Default currency and default GUI references. |
 
-NPC Spawner block settings and its weighted source pool are stored with the block entity in the world, not as a `ServerJsonStorage` kind. Only reusable templates and owned Soul Stone snapshots use the config folders listed above.
+Placed NPC Spawner settings are in the world. Reusable templates and copies taken from Filled Soul Stones use the config folders above.
 
 ## Input Rules
 
@@ -97,7 +97,7 @@ Keep production files under non-default names so they remain separate from bundl
 
 ## Legacy Compatibility
 
-Dialogue storage can read old NPC data from `dc_dialogue_json_path`. That loader resolves files under `customnpcs/dc_data/dc_dialogues` and converts them to the current `DialogueDocument` shape.
+Dialogue storage can read old NPC data from `dc_dialogue_json_path`. That loader resolves files under `customnpcs/dc_data/dc_dialogues` and converts them to the current conversation format shape.
 
 New content should not use `customnpcs/dc_data` as the primary storage root. Treat it as import compatibility only.
 

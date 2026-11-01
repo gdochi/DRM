@@ -19,7 +19,7 @@ tags:
 
 `DW Pose Core` is a Creative-mode pose editor for creators, not an in-combat player screen. Create pose JSON in this editor, then use the `Pose` category in `DW Npc Core` to map saved profiles to the NPC's runtime actions.
 
-In 0.2.9, non-combat pose bindings are persistent authoritative state. They synchronize when a client starts tracking the NPC and resume after combat without replacing the current combat pose. `Save & Apply` writes the authoritative `idle_standing` binding, so the editor preview and spawned NPC use the same profile.
+**Save & Apply** saves the default non-combat pose. Combat uses its own poses; afterward the NPC returns to its default.
 
 The pose editor currently supports Steve/Alex CustomNPCs player models.
 

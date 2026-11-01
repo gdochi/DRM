@@ -17,7 +17,7 @@ tags:
 
 ## Where these settings are edited
 
-These are creator settings, not player runtime screens.
+These are creator settings, not player in-game screens.
 
 * Open the NPC with `DW Npc Core`.
 * Configure `Suppressive Fire` and `Faction Defense` in the combat and sensing controls.
@@ -63,7 +63,7 @@ Smoke and stun grenades do not activate fragmentation cover. Grenade cover uses 
 | `Peek After Cover` | Enables movement to a geometry-validated firing side after holding. |
 | `Max Peek Cycles` | Maximum peek movements in one cover action, from 0 to 4. |
 
-The cover finder probes bounded candidate geometry and normal NPC navigation. Version 0.2.9 distinguishes hiding cover from firing-capable cover, and accepted protection must block both the standing NPC's chest and head. It can reacquire a path after a short retry when the first reachable candidate fails. Movement progress and the phase timeout remain the authoritative failure guards.
+A hiding spot must protect both the NPC’s head and chest. Firing cover also needs room for shooting. If the chosen place cannot be reached, the NPC may try another path.
 
 Cover movement does not create a separate ammo prop. Reloading continues through the operated gun's native stack plus DW reload state. The upper body keeps reload action while the lower body follows actual movement.
 

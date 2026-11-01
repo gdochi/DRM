@@ -1,8 +1,8 @@
 ---
-title: NPC files and integrations
+title: Conversations, Shops and Saved Files
 slug: npc-core-files
 order: 1520
-description: NPC files and integrations
+description: Add other mods' features to DNPC and find your saved work.
 product: dochi-npc-core
 category: NPC files and integrations
 section: operations
@@ -11,37 +11,41 @@ version: 0.1.2
 audience: Creators / server operators
 ---
 
-## Files
+## Add conversations or shops
 
-| Content | Path |
+Install **DRM**, right-click the DNPC with the DRM Core, then choose a saved file in **NPC Apply**.
+
+Start with [Forge dialogue](#core/quick-start) or [Fabric/NeoForge dialogue](#core-fabric/quick-start).
+
+## Choose a mod for your goal
+
+| Goal | Extra mod |
 | --- | --- |
-| Global settings | `config/dochi_npc_core/global.json` |
-| Poses | `config/dochi_npc_core/poses/<id>.json` |
+| Conversations, shops and player employment | DRM |
+| Pokémon trainers, shops, healing and starters | Cobblemon Editor and its requirements |
+| Spawn saved NPCs under chosen conditions | Spawn Control and DRM |
+| Melee patterns and boss battles | BattleWorks and DRM |
+| Firearm NPCs and vehicle crews | DW / DWE and their requirements |
+| Armor that reduces incoming damage | Real Armor |
+| Instrument performances | Immersive Melodies |
+
+DW/DWE target Forge 1.20.1 and NeoForge 1.21.1. CustomNPCs is unavailable on 26.3. Use each mod's setup guide to choose matching files.
+
+## Find saved work
+
+| Content | Location |
+| --- | --- |
 | NPC templates | `config/dochi_npc_core/templates/` |
-| Server skins | `config/dochi_npc_core/assets/textures/` |
+| Poses | `config/dochi_npc_core/poses/` |
+| Server skin PNGs | `config/dochi_npc_core/assets/textures/` |
+| Global settings | `config/dochi_npc_core/global.json` |
 | Client settings | `config/dochi_npc_core/client-settings.json` |
-| DRM employment Function | `config/dochi_rpg_maker/dochi_npc/employment/<id>.json` |
+| DRM employment settings | `config/dochi_rpg_maker/dochi_npc/employment/` |
 
-Placed NPC state and employment contracts also live in the world. Back up the world and configuration together. Server-selected PNG assets are transferred to clients.
+Placed NPCs and contracts are also saved in the world. Include the world when moving a server.
 
-## Integration boundaries
+## Convert another NPC to DNPC
 
-| Mod | DNPC support |
-| --- | --- |
-| DRM 0.3.1 | Optional Actor and template provider APIs; supported Apply tools |
-| Cobblemon Editor 0.2.9 | 1.21.1 Trainer, Pokemon Itself, shops, healing, starters, clones and Sequential actions |
-| Spawn Control 0.1.4 | Default entities and exact v3 templates are separate sources; COMMON natural rules and older-target/26.3 placed templates |
-| Real Armor 0.1.4 | Armor, body damage and durability; excludes CNPC-specific resistance/companion rules |
-| BattleWorks 0.1.6 | DNPC combat, relationships, appearance and control on existing targets and 26.3 |
-| DW / DWE 0.3.1 | Firearms, melee, crews and schedules on Forge 1.20.1 / NeoForge 1.21.1; excludes 26.3 |
-| Minigames 0.1.5 | DNPC Gecko card models and loading-preview refresh |
+On 1.20.1 / 1.21.1, open **Global settings → Experimental features → World scan** and select an NPC. Read which parts can be converted before proceeding.
 
-File templates differ from the temporary clipboard. See [v3 storage and older files](#dochi-npc-core/npc-core-templates). Checked versions do not establish a minimum for every integration.
-
-## Experimental NPC Changing
-
-Open Global Settings → Experimental Features → World Scan. Check individual NPCs, review unsupported fields and explicitly allow partial conversion only when appropriate. Convert selected entries after backing up the world and testing a copy.
-
-Adapters target Forge 1.20.1 and Fabric / NeoForge 1.21.1. They map supported appearance, model, animation and relation data; they do not automatically port arbitrary third-party scripts or entire world formats.
-
-26.3 uses separate Fabric / NeoForge Java 25 builds and permanently excludes CustomNPCs. The older CNPC conversion workflow does not apply there. See [26.3 scope](#core-fabric/minecraft-26-3).
+Only supported content, such as appearance, equipment and relationships, transfers. Keep a world copy before conversion. CustomNPCs conversion is unavailable on 26.3.

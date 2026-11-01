@@ -1,8 +1,8 @@
 ---
-title: Map Icons Setup and First Icon
+title: Show NPC Icons on the Map
 slug: mapicon-setup
 order: 1400
-description: Current installation and first-use guidance.
+description: Give shops, trainers and other NPCs recognizable map icons.
 product: dochi-mapicon-integration
 category: Start
 section: setup
@@ -11,38 +11,34 @@ version: 0.1.2
 audience: Creators / server operators
 ---
 
-## Purpose
+## Mark a shop NPC
 
-**MapIcon Integration 0.1.2** configures DRM NPC icons by type, JSON file and individual NPC. It supports Xaero’s Minimap / World Map and **JourneyMap 6 / API 2**.
+Install DRM, MapIcon Integration and the map you want: **Xaero’s Minimap / World Map** or **JourneyMap 6**.
+
+1. Apply a DRM shop to an NPC.
+2. Open the icon editor from DRM's editor list or **Mods Config**.
+3. Enable global display and select **NPC Shop**.
+4. Choose the picture, size, color and minimap/world-map visibility.
+5. Press **Save & Apply**, then open the map.
+
+Use the same process for dialogue NPCs and trainers. Cobblemon role types appear when Cobblemon Editor is installed.
+
+## Change just one NPC
+
+For DNPC, use **NPC editor → Addons → Map icon**. For CustomNPCs, use **NPC Basic → Map icon**.
+
+Give a special shop its own icon or hide it. See [individual settings and priority](#dochi-mapicon-integration/mapicon-editor-rules).
 
 ## Installation
 
-| Build | Minecraft / Java | DRM |
+| Minecraft | Loader | Java |
 | --- | --- | --- |
-| Forge | 1.20.1 / 17 | Required |
-| Fabric / NeoForge | 1.21.1 / 21 | Required |
-| Fabric / NeoForge | 26.3 / 25 | Matching 26.3 loader build required |
+| 1.20.1 | Forge | 17 |
+| 1.21.1 | Fabric / NeoForge | 21 |
+| 26.3 | Fabric / NeoForge | 25 |
 
-Install matching `dochi_mapicon_integration-0.1.2-<loader>-<minecraft>.jar` and DRM on server and clients. DRM has no numeric version floor. The checked older-target Core is 0.2.9, not an inferred minimum.
+Install matching-loader DRM and MapIcon files on server and clients. Install the map(s) you want and their required libraries. Fabric also needs Fabric API.
 
-**Xaero Minimap, World Map and JourneyMap are individually optional.** The editor and server storage work with one map or none. Only an absent map's rendering is disabled. Install each chosen map's own libraries too.
+You can edit icons without a map installed, but cannot see them on a map. Use DNPC on 26.3; CustomNPCs is unavailable there.
 
-NPC providers are optional. 26.3 permanently excludes CustomNPCs and uses the common Actor API. See [26.3 guidance](#core-fabric/minecraft-26-3).
-
-Compile baselines are Xaero Minimap 26.6.0 / World Map 1.47.0 and JourneyMap 6 / API 2. Those pins do not establish compatibility with every historical map version.
-
-## Your first shop icon
-
-1. Apply DRM NPC Shop JSON to an NPC.
-2. With permission level 2, open the map-icon editor from DRM or Mods Config.
-3. Enable global display and choose the NPC Shop JSON type.
-4. Set image, size, color and minimap / world-map visibility.
-5. Use **Save & Apply** and check the installed map.
-
-Use JSON exceptions for a specific file and NPC Basic’s map-icon category for one NPC. The editor has a category sidebar, central work list / preview and right inspector.
-
-JourneyMap uses the same image, color, size and visibility policies and suppresses duplicate ordinary NPC radar faces for managed / hidden NPCs. Successful saves also synchronize while an integrated server is paused.
-
-See [rule priority](#dochi-mapicon-integration/mapicon-editor-rules) and [files / visibility range](#dochi-mapicon-integration/mapicon-files-operations).
-
-For DNPC, individual settings also open through **NPC Editor → Addons → Map Icons**. This is separate from the older CNPC Basic category. Loading a profile opens a draft; **Save & Apply** changes the active policy.
+For custom pictures or missing icons, see [images and troubleshooting](#dochi-mapicon-integration/mapicon-files-operations).

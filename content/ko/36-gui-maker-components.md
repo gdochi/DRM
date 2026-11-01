@@ -2,7 +2,7 @@
 title: 컴포넌트
 slug: gui-maker-components
 order: 102
-description: GUI Maker 컴포넌트가 각 GUI 타입에서 어떤 런타임 데이터와 연결되는지 설명합니다.
+description: GUI Maker 컴포넌트가 각 GUI 타입에서 어떤 플레이 데이터와 연결되는지 설명합니다.
 product: core
 category: GUI Maker
 section: gui-maker
@@ -16,9 +16,9 @@ tags:
 
 ## 컴포넌트의 의미
 
-컴포넌트는 화면에 배치되는 요소입니다. 단순 장식 요소도 있고, 런타임 데이터와 연결되는 요소도 있습니다.
+컴포넌트는 화면에 배치되는 요소입니다. 단순 장식 요소도 있고, 플레이 데이터와 연결되는 요소도 있습니다.
 
-이 문서에서 설명하는 컴포넌트는 GUI Maker 에디터에서 배치하는 화면 부품입니다. 플레이어가 보는 런타임 화면에서는 이 부품 안에 Dialogue Editor의 대사와 선택지, NPC Shop의 상품과 가격, Currency Editor의 잔액 같은 실제 데이터가 들어옵니다.
+이 문서에서 설명하는 컴포넌트는 GUI Maker 에디터에서 배치하는 화면 부품입니다. 플레이어가 보는 플레이 화면에서는 이 부품 안에 Dialogue Editor의 대사와 선택지, NPC Shop의 상품과 가격, Currency Editor의 잔액 같은 실제 데이터가 들어옵니다.
 
 | 구분 | 예시 | 설명 |
 | --- | --- | --- |
@@ -79,7 +79,7 @@ tags:
 
 ## 제한
 
-- 컴포넌트가 있어도 해당 런타임 데이터가 없으면 비어 보일 수 있습니다.
+- 컴포넌트가 있어도 해당 플레이 데이터가 없으면 비어 보일 수 있습니다.
 - `choice`는 대화 선택지를 직접 만들지 않습니다. 선택지 데이터는 Dialogue Editor에 있어야 합니다.
 - `item_slot`은 상점 상품 데이터를 표시합니다. 상품 생성은 NPC Shop이 담당합니다.
 - `currency_amount`는 잔액을 표시합니다. 잔액 변경은 서버 명령, 상점 거래, 픽업 변환 쪽에서 일어납니다.

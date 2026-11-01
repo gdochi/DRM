@@ -58,8 +58,8 @@ If this works, the addon and gun loop are fine. Add filters, finite ammo, moveme
 | Hire confirmation does not open | The NPC must be a DW-managed NPC with `Hire available` enabled. Use an empty hand or normal interaction item; `DW Npc Core`, `DW Mercenary Core`, and CustomNPCs interaction tools keep their own editor behavior. |
 | Mercenary GUI clicks or tooltips are offset | Use 0.2.9 on both sides. The mercenary settings, confirmation screen, and command HUD use fit-to-viewport scaling and translated mouse coordinates. |
 | PointBlank gun is not accepted | Install exactly one supported branch, 1.11.1 or 2.1.0. If both are detected, the bridge disables itself. |
-| SuperbWarfare gun or vehicle is unavailable | Use 0.8.9 final build `6effe4385`. Other ABIs fail closed before the compatibility mixins are applied. |
-| Vehicle AI is enabled but does not move | Remove player passengers, confirm the exact SuperbWarfare ABI, movement mode, home/destination, and loaded terrain. Helicopters and fixed-wing aircraft need enough climb and turn space. |
+| SuperbWarfare gun or vehicle is unavailable | Check the loader-specific supported versions in [setup](#dochi-warfare/warfare-setup). |
+| Vehicle AI is enabled but does not move | Remove player passengers, confirm the compatible SuperbWarfare version, movement mode, home/destination, and loaded terrain. Helicopters and fixed-wing aircraft need enough climb and turn space. |
 | A vehicle turret tracks the target but never fires | In `Weapons`, verify that the mount is ON and included by `Weapon use mode`. Check per-weapon ammo, reload, crew requirement, minimum/maximum range, and turret pitch limits. A very close target may require the vehicle to back away. |
 | A vehicle repeats a small circle or launches and stops abruptly | Confirm 0.2.9 is installed on both sides, then check Area Patrol radius, movement speed, and reachable terrain. Version 0.2.9 uses distributed patrol sectors and distance-aware throttle/braking. |
 | The Crew page keeps loading or cannot board an NPC | Press `Refresh` and reselect the vehicle/seat. Use a valid server NPC clone or inventory NPC soul stone, stay within 64 blocks with Creative permission, and confirm the NPC is not hostile to the vehicle faction. |
@@ -67,7 +67,7 @@ If this works, the addon and gun loop are fine. Add filters, finite ammo, moveme
 
 ## GUI access problems
 
-`DW Npc Core` is a Creative-mode editor item with three contexts: CustomNPCs NPC, supported SuperbWarfare vehicle, and air for the clone library. If the NPC editor never opens, confirm the target is actually a CustomNPCs NPC and both sides have the addon. If the vehicle editor is unavailable, check the exact SuperbWarfare ABI rather than treating it as an NPC-target failure.
+`DW Npc Core` is a Creative-mode editor item with three contexts: CustomNPCs NPC, supported SuperbWarfare vehicle, and air for the clone library. If the NPC editor never opens, confirm the target is actually a CustomNPCs NPC and both sides have the addon. If the vehicle editor is unavailable, check the compatible SuperbWarfare version rather than treating it as an NPC-target failure.
 
 ## Fire and line-of-sight problems
 
@@ -90,7 +90,7 @@ If infinite stock works but finite stock fails, the NPC probably reaches `0` spa
 
 ## Sound detection problems
 
-Version 0.2.9 uses one server-authoritative stimulus system for managed gunshots, reloads, block sounds, entity sounds, and position-only world sounds. Survival and Creative players are handled consistently. Each configured range remains bounded, and `Move To Source` still yields to active combat or a position-locked stance.
+Version 0.2.9 uses one stimulus system for managed gunshots, reloads, block sounds, entity sounds, and position-only world sounds. Survival and Creative players are handled consistently. Each configured range remains bounded, and `Move To Source` still yields to active combat or a position-locked stance.
 
 ## Patrol and pathfinding problems
 

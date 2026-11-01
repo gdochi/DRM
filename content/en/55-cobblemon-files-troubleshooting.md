@@ -29,7 +29,7 @@ All server-edited JSON starts under `config/dochi_rpg_maker`.
 | `cobblemon/starter_selectors/` | Starter Selector documents |
 | `cobblemon/entity_clones/` | Addon Clone Library compatibility store |
 | `npc_spawner/entity_clones/` | DRM Core NPC Spawner clone store |
-| `gui/` | PokéMart and Starter Selector runtime layouts |
+| `gui/` | PokéMart and Starter Selector in-game layouts |
 | `cobblemon/_migration_backups/` | Backups made when canonical defaults are safely upgraded |
 
 `Save As` accepts a relative path within the current domain. Saving trainer path `custom/gym/leader.json` creates:
@@ -52,20 +52,6 @@ config/dochi_rpg_maker/cobblemon/_migration_backups/canonical_defaults_<timestam
 Defaults and samples are starting points. Save project content under a user path such as `custom/` so addon updates and authored content remain clearly separated.
 :::
 
-## Current document schemas
-
-| Document | Schema |
-| --- | ---: |
-| Trainer / Pokemon Itself | 23 |
-| Trainer Brain | 4 |
-| Battle Presentation | 4 |
-| PokéMart | 7 |
-| Nurse Joy | 2 |
-| Starter Selector | 2 |
-| Entity Clone | 1 |
-
-Supported older documents are normalized while loading. Do not increase `schemaVersion` by hand.
-
 ## NPC right-click priority
 
 Normal runtime interaction uses a main-hand right-click while both hands are empty.
@@ -73,7 +59,7 @@ Normal runtime interaction uses a main-hand right-click while both hands are emp
 | Priority | Attached role | Result |
 | --- | --- | --- |
 | 1 | DRM Dialogue or DRM NPC Shop | The DRM dialogue or shop owns the interaction |
-| 2 | PokéMart | Opens the PokéMart runtime screen |
+| 2 | PokéMart | Opens the PokéMart in-game screen |
 | 3 | Trainer or Pokemon Itself | Opens the battle confirmation |
 | 4 | No addon role | Passes to another mod or normal CustomNPCs interaction |
 

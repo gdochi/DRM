@@ -18,7 +18,7 @@ tags:
 
 HUD Maker creates layouts that appear on the player's screen. DRM Core can handle currency HUDs, player status HUDs, and custom HUD layouts.
 
-HUD data uses a `LayoutDocument` structure similar to normal GUI files, but the storage path and runtime display flow are different.
+Choose the information to show, then position its text, icons and bars in HUD Maker.
 
 ## Storage
 

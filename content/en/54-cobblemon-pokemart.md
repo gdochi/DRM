@@ -1,8 +1,8 @@
 ---
-title: PokéMart Editor Functional Guide
+title: Make a Pokémon Shop or Trading NPC
 slug: cobblemon-pokemart
 order: 540
-description: Understand role-specific categories, currency, interaction conditions, saving, NPC application, and GUI editing.
+description: Create NPCs that sell, trade or auction Pokémon.
 product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
@@ -15,79 +15,43 @@ tags:
   - runtime
 ---
 
-## DNPC PokéMart
+## Choose a role
 
-Current 0.2.9 patches support PokéMart on DNPC. Save the PokéMart document, apply it to the DNPC, then interact with empty hands. DRM and the chosen NPC provider are needed; CustomNPCs remains optional.
+**PokéMart Editor** makes Pokémon-trading NPCs. Use DRM's **NPC Shop** for ordinary item shops.
 
-## Editor versus player screen
-
-`PokéMart Editor` creates shop documents. `PokeMartRuntimeScreen` is the player-facing screen opened after a document is applied to an NPC. Editor field positions do not control player layout; the Runtime GUI JSON does.
-
-## Roles and active categories
-
-Each document has exactly one role. The role selects the enabled editor category and runtime tabs.
-
-| Role | Editor categories | Player runtime |
-| --- | --- | --- |
-| `Sales` | General and Pokémon Products | Catalog, details, balance, and purchase |
-| `Trade` | General and Pokémon Trades | Offers, owned-Pokémon selection, and confirmation |
-| `Auction` | General and Auction | Auction list, listing creation, and claims |
-
-Changing roles does not immediately erase the other role's products or trades, but the current runtime ignores them. Use separate NPCs when a location must provide both sales and trades.
-
-## General fields
-
-| Setting | Runtime use |
+| Role | Player activity |
 | --- | --- |
-| Mart ID | Internal token, up to 64 characters |
-| Display Name | Header title, up to 96 characters |
-| Role | Selects editor category, default GUI, and allowed server actions |
-| Currency Provider / ID | Used by Sales and Auction; Trade does not charge currency |
-| GUI JSON Path | Runtime layout relative to `config/dochi_rpg_maker/gui/` |
-| Interaction Conditions | DRM condition group checked before the server opens the screen |
+| **Sales** | Buy Pokémon at fixed prices |
+| **Trade** | Exchange a matching owned Pokémon |
+| **Auction** | List, bid and collect settlements |
 
-## Currency providers
+One NPC uses one role. Use separate NPCs for a shop and a trading service.
 
-| Provider | ID | Server behavior |
-| --- | --- | --- |
-| `cobbledollars` | Usually `balance` | Reads and updates CobbleDollars balance; unavailable when the mod is missing |
-| `drm` | A DRM Currency ID | Uses a currency created in DRM Currency Editor |
-| `item` | For example `minecraft:emerald` | Consumes inventory items with optional exact Item NBT matching |
+## Make the first shop
 
-The picker can search DRM currencies and current inventory items. When Item NBT is configured, stacks with the same ID but different NBT do not qualify.
+1. Open **Add-on → PokéMart Editor** from DRM's editor list.
+2. Load a default and choose **Role → Sales**.
+3. Set the name and payment under **General**.
+4. Add a product and edit its species, level, form and other Pokémon details.
+5. Set its price and **Initial Stock**. **-1** is unlimited.
+6. **Save As** your own file.
+7. Open a DNPC or CustomNPCs NPC with the DRM Core and apply **PokéMart**.
+8. Interact with empty hands. Buyers need a free party slot.
 
-## Role and GUI path changes
+## Choose payment
 
-When the current path is one of the canonical defaults, changing Role automatically selects:
+**Currency Provider / ID** selects DRM currency, items or CobbleDollars. Create DRM money in Currency Editor first; CobbleDollars needs its mod installed.
 
-```text
-Sales   → pokemart_sales_gui.json
-Trade   → pokemart_trade_gui.json
-Auction → pokemart_auction_gui.json
-```
+Trade uses a matching Pokémon instead of money. See [sales and trades](#drm-cobblemon-editor/pokemart-sales-trade-behavior).
 
-A custom GUI path is preserved across a role change. Its components may not fit the new role, so switch the path manually or start from that role's default GUI.
+## Change the screen
 
-`Apply UI` and `Edit UI` open the current path in DRM GUI Maker. Save the GUI, return to PokéMart Editor, verify the path, and save the PokéMart document as well.
+Select the player-facing layout in **Runtime GUI**. The editor's input fields and the player's shop screen are separate layouts.
 
-## Interaction conditions
+See [auction registration, bids and collection](#drm-cobblemon-editor/pokemart-auction-gui-runtime) for auctions.
 
-The shared DRM condition editor configures a flat `AND` or `OR` group. The server evaluates it before opening the shop and rejects the entire document when it fails. These are shop-entry conditions, not per-product rules. Split VIP and public catalogs into separate documents or NPCs when they require different access.
+## Update the shop
 
-## Save and apply
+**Save** product/price changes to the same file for the next interaction. **Apply** again after changing the file name or role.
 
-1. Save a relative path such as `towns/pewter_sales.json` under `cobblemon/pokemarts/`.
-2. Open the editor for a target NPC and choose `Apply to NPC`.
-3. Empty both hands and right-click the NPC.
-4. Verify that the runtime tabs match the selected role.
-5. Saving to the same bound source path updates the next shop request. Reapply only when changing the path or role.
-
-The addon performs search and paging on the server for products, offers, eligible owned Pokémon, listings, selling choices, and claims. Large shops no longer send every row at once.
-
-`Clear` removes the PokéMart binding from the NPC. It does not delete the server JSON or world-level auction and claim data.
-
-## DRM payment selection and amount limits
-
-The payment picker distinguishes DRM currency definitions from inventory items. Provider `drm` stores a Currency Editor ID; `item` stores an item ID and optional NBT/component matching. Check the chosen payment for sales and auction fees, bids, and settlements.
-
-PokéMart reads prices as large integers, but DRM/item payments must fit Core's signed 64-bit integer range. Amounts above that range are rejected rather than truncated. The CobbleDollars provider uses its API's large-integer balances.
+Stock, auctions and collection data remain in the world. Move configuration and world together. Removing the NPC's shop link does not delete ongoing auctions.

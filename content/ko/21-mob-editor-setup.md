@@ -15,7 +15,7 @@ tags:
   - combat
 ---
 
-BattleWorks **0.1.6**은 DRM 필수 애드온입니다. Forge 1.20.1은 DRM 0.2.8 이상, Fabric·NeoForge 1.21.1은 0.2.9 이상을 현재 JAR에 선언합니다. CustomNPCs는 선택 의존성이지만 **아래 Forge 실습에서는 CustomNPCs NPC를 사용**합니다. 별도 Java 25의 26.3 DNPC 흐름과 플랫폼 조건은 [0.1.6 안내](#mob-editor/battleworks-update-0-1-6)를 확인하세요.
+BattleWorks **0.1.6**은 DRM 필수 애드온입니다. Forge 1.20.1은 DRM 0.2.8 이상, Fabric·NeoForge 1.21.1은 0.2.9 이상을 현재 JAR에 선언합니다. CustomNPCs는 선택 설치이지만 **아래 Forge 실습에서는 CustomNPCs NPC를 사용**합니다. 별도 Java 25의 26.3 DNPC 흐름과 플랫폼 조건은 [0.1.6 안내](#mob-editor/battleworks-update-0-1-6)를 확인하세요.
 
 ## 1. 같은 버전의 실행 환경 준비하기
 

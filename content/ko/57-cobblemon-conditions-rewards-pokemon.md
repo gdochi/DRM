@@ -59,7 +59,7 @@ FTB Quests가 설치되지 않았을 때 FTB 조건은 충족되지 않습니다
 
 ## Cobblemon Party 조건
 
-파티 조건은 서버의 실제 Cobblemon 파티를 검사합니다. 사용 가능한 필드 조합은 에디터에서 선택하고, 종·타입 같은 ID는 현재 Cobblemon 레지스트리를 따릅니다.
+파티 조건은 서버의 실제 Cobblemon 파티를 검사합니다. 사용 가능한 필드 조합은 에디터에서 선택하고, 종·타입 같은 ID는 현재 Cobblemon 목록를 따릅니다.
 
 예시:
 
@@ -143,7 +143,7 @@ Pokemon Itself는 포켓몬 한 마리와 Cobblemon PVE 전투를 만들고 같�
 
 ### 외형
 
-종, 폼, Aspects와 함께 Scale, Pose, Animation, Shining을 설정합니다. `Apply`하면 문서 외형을 NPC에 구성합니다. 파일 기반 바인딩은 최신 문서를 추적하지만, 별도 외형 도구로 NPC만 바꾼 값은 다음 문서 해석과 충돌할 수 있으므로 외형의 기준 소스를 하나로 정하세요.
+종, 폼, Aspects와 함께 Scale, Pose, Animation, Shining을 설정합니다. `Apply`하면 문서 외형을 NPC에 구성합니다. 파일 기반 연결은 최신 문서를 추적하지만, 별도 외형 도구로 NPC만 바꾼 값은 다음 문서 해석과 충돌할 수 있으므로 외형의 기준 소스를 하나로 정하세요.
 
 ## 테스트 체크리스트
 

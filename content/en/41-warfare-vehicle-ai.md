@@ -21,7 +21,7 @@ Current builds: DW 0.3.1 for Forge 1.20.1 and DW 0.3.1 for NeoForge 1.21.1. Vehi
 
 ## Requirements and editor
 
-Vehicle AI is an optional SuperbWarfare integration. Match the loader and supported ABI described in the installation guide. In Creative mode, hold `DW Npc Core` and right-click a supported vehicle. This opens a server-authoritative vehicle editor separate from the CustomNPCs NPC editor.
+Vehicle AI is an optional SuperbWarfare integration. Match the loader and supported version described in the installation guide. In Creative mode, hold `DW Npc Core` and right-click a supported vehicle. This opens a vehicle editor separate from the CustomNPCs NPC editor.
 
 DW uses the native engine's `processInput` or flight controls. SuperbWarfare continues to own engine physics, velocity, collision, energy, turrets, weapons, reloads, projectiles, and sounds; DW does not directly overwrite position, rotation, or velocity. A player who boards an AI vehicle is dismounted for safety, so disable AI before driving it. CustomNPC crew placed through the vehicle editor can remain aboard.
 
@@ -68,7 +68,7 @@ The `Weapons` page owns weapon enablement. Every native mount has independent se
 
 `Weapon use mode` selects only weapons that are ON and currently eligible, then uses one, a configured count, or every eligible weapon per attack opportunity. An OFF weapon does not participate in candidate or reference-range selection.
 
-Ammunition is virtual DW data; no physical ammo or magazine items are created. Version 0.2.9 synchronizes belt-fed virtual rounds with SuperbWarfare's native fire-readiness check, then reflects rounds consumed by the native shot.
+Use DW’s ammo settings for vehicle stock and reloads; you do not need to place ammo or magazines in a crew member’s offhand.
 
 ## NPC crew
 

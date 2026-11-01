@@ -1,8 +1,8 @@
 ---
-title: Setup and First NPC
+title: Install and Set Up the First Shot
 slug: warfare-setup
 order: 320
-description: Install Forge Dochi's Warfare 0.3.1, open the DW creator tools, migrate legacy profiles, and build a first managed NPC.
+description: Install the required mods and set up an NPC to fire.
 product: dochi-warfare
 category: Setup
 section: setup
@@ -15,151 +15,57 @@ tags:
   - gui
 ---
 
-## 0.3.1 DNPC and editor updates
+## Required mods
 
-DNPC integration includes friendly/hostile relationships, group protection, reload slowdown, stationary fire, poses and event dialogue. External AI control preserves paths, targets and equipment; combat resumes after control returns. Keep native jobs and combat configuration distinct.
-
-Find DW tools in installed DNPC/CNPC Creative tabs. Weapon, armor and skin lists support checkbox selection, Select All and Delete Selected; profile search, scrolling and pose editing/preview layouts were improved. See [DWE compatibility](#dochi-warfare-expanded/expanded-compatibility) for vehicles.
-
-## Loader-specific builds
-
-| Loader | Minecraft / Java | Dependency differences |
-| --- | --- | --- |
-| Forge 47+ · DW 0.3.1 | 1.20.1 / Java 17 | TACZ 1.1.8 to below 1.2 required; Player Animator required on client |
-| NeoForge 21.1.216+ · DW 0.3.1 | 1.21.1 / Java 21 | TACZ 1.1.8 to below 1.2 required; Player Animator 2.0+ required on client |
-
-Prepare DNPC or CustomNPCs for the NPC workflow you use. DNPC firearm and melee combat works without CustomNPCs. Forge accepts the SuperbWarfare 0.8.9, 0.8.9.1 and 0.8.9.2 builds after structural checks. NeoForge declares SuperbWarfare 0.8.9.1 and 0.8.9.2. A matching version string alone does not bypass compatibility checks. The detailed checklist and external-gun version examples below target Forge.
-
-## Install checklist
-
-Forge Dochi's Warfare 0.3.1 targets Forge 1.20.1. TACZ is the required gun-runtime baseline, and Player Animator is required on the client. DNPC and CustomNPCs are optional NPC providers; PointBlank, SuperbWarfare, Better Combat, Mob Player Animator, and LesRaisins Tactical Equipments are optional integrations.
-
-| Component | Required for this wiki workflow | Notes |
-| --- | --- | --- |
-| Forge | Yes | Use a 1.20.1 Forge 47+ environment. |
-| TACZ | Yes | Use 1.1.8 through the supported 1.1.x range on client and server. |
-| Player Animator | Client required | Required for the shared managed-gun animation controller. |
-| DNPC / CustomNPCs | Choose an NPC provider | DNPC combat, relationships, poses and dialogue work without CustomNPCs. |
-| Dochi's Warfare | Yes | Add the 0.3.1 JAR on both sides for normal modded server play. |
-| PointBlank | Optional | Use exactly one supported branch: 1.11.1 or 2.1.0. |
-| SuperbWarfare | Optional | Supported native bridges accept Forge 0.8.9 / 0.8.9.1 / 0.8.9.2 after compatibility checks; vehicle AI also requires DWE. |
-| Better Combat | Optional | Install it for registered melee weapon attacks, poses, and weapon-based attack timing. Keep the server and client mod sets aligned in normal multiplayer. |
-| Mob Player Animator | Optional | Client mod required for exact Better Combat NPC motion playback. Without it, the NPC falls back to a vanilla main-hand swing. |
-| LesRaisins Tactical Equipments | Optional | Enables supported grenade throws and LRT grenade booby-trap payloads. |
-
-## Add DWE for vehicles
-
-For Forge and NeoForge 0.3.1 vehicle editing, AI, crew, and support timelines, install [DWE 0.3.1](#dochi-warfare-expanded/expanded-overview) and a matching-loader compatible SuperbWarfare build. NPC gun combat does not require DWE. Match actual builds on server and clients, even when version numbers are identical.
-
-NeoForge files are `dochi_warfare-0.3.1-neoforge-1.21.1.jar` and `dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar`. NeoForge DWE accepts SuperbWarfare 0.8.9.1 and 0.8.9.2.
-
-## Open the per-NPC GUI
-
-1. Enter creative mode.
-2. Get the item named `DW Npc Core`.
-3. Right-click a DNPC or CustomNPCs NPC with `DW Npc Core`.
-4. The DW per-NPC setup screen opens for that NPC.
-5. Change settings, then press `Save`.
-
-`DW Npc Core` is a Creative-mode editor tool. Right-click a DNPC or CustomNPCs NPC for firearm settings, a supported SuperbWarfare vehicle for vehicle AI settings, or air for the NPC/vehicle clone library.
-
-## First safe test
-
-Use this first pass before building a complex combat encounter:
-
-1. Turn on `TACZ Fire NPC Mode`.
-2. Keep `Enabled` ON.
-3. In `Gun`, choose one supported gun from your player inventory. Start with a plain TACZ gun before testing an optional adapter.
-4. In the `General` settings under `Senses`, use `Stance: Auto` or `Stance: Ranged`.
-5. In `Fire`, choose `RPM Mode: TACZ Native` so the gun uses its native RPM.
-6. In `Ammo`, keep `Reload` and `Supply Ammo` ON and keep `Ammo Stock` at `-1`.
-7. In `Targets`, start with normal behavior or one simple entity ID.
-8. Save and test against one clear target in line of sight.
-
-After that works, add finite ammo, random pools, advanced target filters, movement tuning, FX, and grenades one piece at a time.
-
-## GUI category map
-
-| Category | Use it for |
+| Item | Choose |
 | --- | --- |
-| `Overview` | Read-only summary of the effective policy, sensing, combat, damage, equipment, ammo, target, and FX values. |
-| `Fire` | firing range, melee switch range, `RPM Mode`, fixed or random RPM, fixed or ramping accuracy, and random-length bursts. |
-| `Senses` | `General`/`Advanced` stance, tactical movement, idle movement, visual awareness, close detection, and player sound detection. |
-| `Cover` | experimental cover triggers, damage thresholds, search limits, hold/cooldown timing, movement speed, and peek cycles. |
-| `Targets` | entity IDs, filters, required/rejected tags, import/export profiles. |
-| `Ammo` | reload type, ammo stock and regeneration, reload movement, and empty-ammo fallback. |
-| `Gun` | selecting supported TACZ, PointBlank, or SuperbWarfare guns, ranged damage policy, ranged pools, and NPC preview. |
-| `Melee` | selecting non-TACZ items, damage/knockback/attack-speed policies, `Better Combat Compatibility`, melee pools with inline chances, and NPC preview. |
-| `Armor` | scrollable armor set pools using real head, chest, legs, and feet slots, with NPC preview. |
-| `Grenade` | optional grenade throws when supported throwable data is available. |
-| `Visual & FX` | Steve/Alex skin pools, alert icons, detected/shoot sounds, and CustomNPCs say text. |
-| `Pose` | built-in or custom pose mapping for idle, alert, firing, combat movement, reload, weapon switch, melee, and grenade actions. |
+| Minecraft / loader | Forge 1.20.1 or NeoForge 1.21.1 |
+| Java | Forge 17 / NeoForge 21 |
+| DW | Matching-loader 0.3.1 |
+| TACZ | 1.1.8 or newer, below 1.2 |
+| Player Animator | Required on clients: Forge 1.0.0+ / NeoForge 2.0+ |
+| NPC mod | DNPC or CustomNPCs |
 
-`Overview` is read-only; move to the relevant category to edit a value. Long `Senses` pages provide `Quick View` navigation, and the `?` help tour can auto-scroll to controls outside the current viewport.
+Install matching DW and requirements on server and clients. DRM is optional.
 
-Version 0.2.1 edits weapon, skin, and armor pool chances directly in each entry row. Changing one entry does not rebalance the others, so make the total `100%` or press `Equalize` to distribute it explicitly. A single entry remains fixed at `100%`.
+For vehicles, add **DWE 0.3.1** and SuperbWarfare. Supported SuperbWarfare versions are **0.8.9 / 0.8.9.1 / 0.8.9.2 on Forge**, and **0.8.9.1 / 0.8.9.2 on NeoForge**.
 
-## Topbar tools and separate editor items
+## Give an NPC its first gun
 
-The topbar separates file actions, help tools, and `TACZ Fire NPC Mode`.
+1. Place an NPC and get **DW Npc Core** in Creative.
+2. Right-click the NPC with it.
+3. Enable **TACZ Fire NPC Mode** and **Enabled**.
+4. Choose a supported gun under **Gun**.
+5. Set **Senses → General → Stance** to **Ranged** or **Auto**.
+6. Set **Fire → RPM Mode** to **TACZ Native**.
+7. Enable **Ammo → Reload / Supply Ammo**. **Ammo Stock = -1** is unlimited.
+8. Choose a target and **Save**.
 
-| Area | Tools |
+If it does not fire, check that the NPC considers the target an enemy, is in range and has a clear line of sight. See [troubleshooting](#dochi-warfare/warfare-troubleshooting).
+
+## Find a setting
+
+| Tab | Settings |
 | --- | --- |
-| File actions | `Save`, `Close`, `Load`, `Save As` |
-| Help | `Help`, `Easy Build`, `Presets`, tutorial, and tooltips |
-| Mode | The current NPC's `TACZ Fire NPC Mode` |
+| Gun / Melee | Weapons and damage |
+| Senses | Detection, stance and movement |
+| Fire | Range, fire rate and accuracy |
+| Targets | Who to attack |
+| Ammo | Reloads and ammunition |
+| Armor | Armor candidates |
+| Cover | Cover behavior |
+| Visual & FX / Pose | Appearance, sounds and poses |
 
-The four core items open different creator screens.
+**Overview** summarizes settings. Change values in their respective tabs.
 
-| Item | Creator screen |
-| --- | --- |
-| `DW Npc Core` | Guns, combat AI, ammo, targets, equipment, FX, and per-action pose mapping |
-| `DW Pose Core` | Custom poses and TACZ gun render transforms for Steve/Alex NPCs |
-| `DW Mercenary Core` | Server-authoritative mercenary contract terms |
-| `DW Booby Trap Core` | Password, explosion, effect, launch, lifecycle, profile, and manager tools for blocks |
+For multiple weapon/skin/armor candidates, make their chances total 100%. **Equalize** splits them evenly.
 
-Right-click air with `DW Npc Core` to open the `Entity Clone Library`. It stores and summons server-side JSON templates for DNPC or CustomNPCs NPCs and supported SuperbWarfare vehicles. This is separate from the NPC setup `Save As` profile flow.
+## Reuse settings
 
-The player-facing hire confirmation and `J` command HUD are in-game runtime screens, not creator editors.
+Use **Save As**, then **Load** on another NPC. Settings are in `config/dochi_warfare/target_entities/`.
 
-## Config file
+To keep the NPC itself, **right-click air** with the Core and use the [clone library](#dochi-warfare/warfare-entity-clones).
 
-Global bridge defaults are generated at:
+## Other tools
 
-```text
-config/dochi_warfare-common.toml
-```
-
-Client-only visual defaults are stored separately in `config/dochi_warfare-client.toml`.
-
-The GUI is still the normal authoring path. Use the config for defaults and script bridge behavior, then override individual NPCs through the GUI or scripts when a specific encounter needs special behavior.
-
-Experimental cover also requires the global switch below. The server switch and the NPC's own `Enable Cover` setting must both allow the behavior.
-
-```toml
-[experimentalCover]
-enabled = true
-```
-
-## Setup profile files
-
-The topbar `Load` and `Save As` controls use JSON profiles under:
-
-```text
-config/dochi_warfare/target_entities/
-```
-
-Current `Save As` profiles store the NPC's full DW firearm setup, not just the target list. Configure one NPC, save a profile, then `Load` it on another CustomNPCs NPC to quickly clone the same combat setup. Legacy target-only JSON can still be loaded, but the current authoring flow is best understood as an NPC setup preset.
-
-Reusable JSON belongs under `config/dochi_warfare/`. Forge DW 0.3.1 does not automatically discover or copy the old CNPC TACZ Fire mod's configuration folder. Current DW data is preserved; older DWE vehicle files follow the [DWE import rules](#dochi-warfare-expanded/expanded-overview). Other libraries use these roots:
-
-```text
-config/dochi_warfare/poses/
-config/dochi_warfare/vehicle_ai/profiles/
-config/dochi_warfare/entity_clones/
-config/dochi_warfare/booby_traps/profiles/
-```
-
-## Distribution versions
-
-This guide follows the local DW **0.3.1** source / release set. On 2026-10-24, the [public Modrinth files](https://modrinth.com/mod/dochis-warfare/versions) reached **0.2.9**. Check the downloaded version before following newer features. Vehicle AI requires matching DWE in addition to DW.
+**DW Pose Core** edits poses, **DW Mercenary Core** edits contracts, and **DW Booby Trap Core** edits traps. For vehicles, use [DWE setup](#dochi-warfare-expanded/expanded-overview).

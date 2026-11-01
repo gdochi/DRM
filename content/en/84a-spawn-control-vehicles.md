@@ -53,4 +53,4 @@ Native NBT parts, inventory, fuel and saved orientation are restored with a new 
 
 ## DNPC spawning
 
-Default DNPC EntityType spawning requires DRM NPC API v1 and the DNPC provider. Initialization disables native respawn and sets home to the accepted spawn point. A missing API fails that spawn. This default EntityType path does not clone saved NPCs. Choose the separate [NPC clone template source](#dochi-spawn-control/spawn-control-npc-templates) to reuse authored appearance, equipment and bindings.
+Install DNPC and DRM and choose the [NPC clone template](#dochi-spawn-control/spawn-control-npc-templates) to spawn a finished NPC. The default NPC entry does not copy saved appearance or equipment.

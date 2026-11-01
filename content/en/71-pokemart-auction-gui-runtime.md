@@ -34,7 +34,7 @@ Use the same House ID and compatible currency configuration when several NPCs sh
 
 The server requires a positive starting bid, a buyout of zero or at least the starting bid, available listing capacity, owned and tradeable Pokémon, policy eligibility, and a payable listing fee.
 
-After validation, it debits the fee, removes the full Pokémon from player storage, and places its NBT in world PersistentState escrow. If removal fails, the fee is refunded and no listing is created.
+Registering charges the fee and holds the Pokémon for auction. Failed registration refunds the fee and creates no listing.
 
 ## Bids and buyout
 
@@ -79,7 +79,7 @@ These functional components are singletons. Removing a critical component leaves
 
 The addon searches and pages listings, eligible Pokémon, selling choices, and claims on the server. The default PokéMart and Starter Selector layouts use DRM's shared sprite sheet. Only untouched legacy defaults are upgraded automatically; customized GUI files are preserved and the replaced defaults are backed up under `cobblemon/_migration_backups/`.
 
-| Role | Visible runtime tabs |
+| Role | Visible in-game tabs |
 | --- | --- |
 | Sales | Pokémon Shop |
 | Trade | Pokémon Trade |

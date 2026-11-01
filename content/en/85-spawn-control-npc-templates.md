@@ -1,8 +1,8 @@
 ---
-title: DNPC template spawning
+title: Spawn Your Saved NPC
 slug: spawn-control-npc-templates
 order: 838
-description: Default entities versus exact clones, natural rules and placed sources.
+description: Use a saved DNPC in natural rules or placed spawners.
 product: dochi-spawn-control
 category: DNPC template spawning
 section: editor
@@ -11,39 +11,34 @@ version: 0.1.4
 audience: Creators / server operators
 ---
 
-## Default NPC versus saved NPC
+## Save the NPC first
 
-Selecting Entity `dochi_npc:npc` creates a default NPC. To reuse authored appearance, equipment and behavior, first create a [DNPC v3 clone template](#dochi-npc-core/npc-core-templates).
+Finish its appearance, equipment and behavior in DNPC, then use **Save to NPC → Save as clone template**. See [saving templates](#dochi-npc-core/npc-core-templates).
 
-DRM and DNPC remain optional to Spawn Control. This integration needs the public template API and its provider; ordinary spawning works without them.
+This connection needs **DNPC and DRM**. The ordinary DNPC entry in Entity creates a default NPC; choose **NPC clone template** to use your finished guard.
 
-## Natural rules — 1.20.1 / 1.21.1
+## Spawn it at a location
 
-1. Save edits to the DNPC, then **save as clone template**.
-2. Search the Spawn Control catalog for **NPC clone: name** or `dochi_npc:actor/filename`.
-3. Check the model/equipment preview and choose **Add Rule**.
-4. Set biome, time, placement and population limits, then save.
-5. Check actual appearance, equipment and the per-template population cap.
+1. Add an entry in **Spawner Editor → spawn list**.
+2. Set its type to **NPC clone template**.
+3. Choose your saved NPC.
+4. Set conditions/quantities and **Save As**.
+5. Right-click the placed spawner with the DRM Core and apply that file.
 
-Default EntityTypes and templates have separate accounting. The EntityType-wide native-spawn toggle does not apply to a template. This natural-template path was checked on the COMMON three targets; it does not establish equivalent 26.3 coverage.
+Follow [spawner placement](#dochi-spawn-control/dochi-spawn-control-spawner). This method is available on older targets and 26.3.
 
-## Placed spawners — older targets and 26.3
+## Natural spawning — 1.20.1 / 1.21.1
 
-1. Add a source in `Spawner Editor`.
-2. Choose **NPC clone template**.
-3. Select a file from the server list.
-4. Set its weight and spawning conditions, then save the JSON.
-5. Apply that JSON to the placed spawner and check spawning and replacement after death.
+Press **K** and find **NPC clone: name** in the catalog. **Add rule**, choose biomes/hours/quantities and save.
 
-Saving a document does not bind a world spawner. See [placed spawner setup](#dochi-spawn-control/dochi-spawn-control-spawner).
+Default NPCs and saved templates are separate spawn targets. For 26.3, use the placed-spawner method above.
 
-## Creation and troubleshooting
+## Missing entries or wrong appearance
 
-Clones receive a new UUID without rerolling copied equipment. Before insertion, Spawn Control disables DNPC's own respawn and sets home to the accepted spawn position.
+| Problem | Fix |
+| --- | --- |
+| An old template is missing | Load it onto an NPC and save a new clone template |
+| An entry cannot spawn | Check that the server has its file, DNPC and DRM |
+| Old equipment still appears | Reload the template and reapply it to the spawner |
 
-- Missing v2 template: load it onto an NPC and save a new v3 clone template.
-- Missing template: check server files, provider and API readiness; preserve filename case.
-- Failed source: no blank NPC fallback occurs; other ordinary rules keep working.
-- Old equipment after editing a file: use the consuming editor/server's reload and reapply workflow to rebuild prepared state.
-
-Reference identifiers are `NPC_TEMPLATE` / `npcTemplateId` for natural rules and `npc_template` / `source.npcTemplateId` for placed spawners. An example source ID is `dochi_npc:actor/guard`. CustomNPCs clone sources are excluded on 26.3.
+Spawn Control manages the spawned NPC's respawning instead of also running its saved native respawn.

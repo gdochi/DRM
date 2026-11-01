@@ -1,8 +1,8 @@
 ---
-title: 도치 워페어 개요
+title: 총을 쏘는 NPC 만들기
 slug: dochi-warfare-overview
 order: 310
-description: Forge DW 0.3.1과 NeoForge 0.3.1의 NPC 전투, DWE 역할 분리, 클론과 제작 도구입니다.
+description: Warfare로 NPC의 총·공격 대상·재장전과 전투 행동을 정합니다.
 product: dochi-warfare
 category: 개요
 section: overview
@@ -15,94 +15,37 @@ tags:
   - overview
 ---
 
-## 0.3.1 DNPC와 편집기
+## Warfare로 할 수 있는 일
 
-DNPC의 우호·적대 관계와 아군 그룹 보호, 재장전 이동 감속·정지 사격·포즈·이벤트 대화를 연결합니다. 외부 AI 제어 중에는 이동 경로·표적·장비를 보존하고 제어권 반환 후 전투를 재개합니다. 일반 작업과 전투 설정은 서로 구분하세요.
+NPC에게 총을 들려주고 누구를 공격할지, 얼마나 가까이 갈지, 언제 재장전할지 정합니다. 가까운 적에게는 근접 무기를 쓰게 하거나 엄폐·순찰·용병 지휘도 설정할 수 있습니다.
 
-도구는 설치된 DNPC/CNPC 크리에이티브 탭에서 찾습니다. 무기·방어구·스킨 목록의 체크 선택·전체 선택·선택 삭제, 프로필 검색·스크롤과 포즈 편집/미리보기 배치를 개선했습니다. 차량은 [DWE 호환 안내](#dochi-warfare-expanded/expanded-compatibility)를 확인하세요.
+NPC는 **DNPC 또는 CustomNPCs**로 준비합니다. 총기 전투만 쓸 때는 DW, 차량을 움직이고 승무원을 태울 때는 **DWE도** 설치합니다.
 
-## Forge·NeoForge 0.3.1 업데이트
+## 먼저 한 NPC에게 총을 설정하세요
 
-DW는 NPC 전투와 애드온 코어를 담당하며 차량 AI·무장·승무원·차량 프로필은 [Dochi's Warfare Expanded](#dochi-warfare-expanded/expanded-overview)로 분리되었습니다. DW만 설치해도 NPC 전투를 사용할 수 있습니다. 차량 기능은 Forge·NeoForge 모두 DWE 0.3.1을 추가했을 때 사용합니다. 클론 보관함에는 삭제 확인과 복구용 보관 폴더가 추가되었습니다.
+1. [설치와 첫 설정](#dochi-warfare/warfare-setup)대로 필요한 모드를 설치합니다.
+2. **DW Npc Core**로 NPC를 우클릭합니다.
+3. **TACZ Fire NPC Mode**와 **Enabled**를 켭니다.
+4. **Gun**에서 총을 고릅니다.
+5. **Save**한 뒤 공격 대상과 마주 보게 합니다.
 
-현재 빌드는 Forge 1.20.1용 DW 0.3.1과 NeoForge 1.21.1용 DW 0.3.1입니다. 두 로더의 차량 AI는 별도 DWE 0.3.1이 필요합니다. 외부 총기·차량 모드의 요구 범위는 [로더별 설치 안내](#dochi-warfare/warfare-setup)를 확인하세요.
+**Easy Build / Presets**를 쓰면 여러 전투 설정을 예시로 시작할 수 있습니다.
 
-## 도치 워페어란?
+## 다음에 바꿀 설정
 
-도치 워페어(`dochi_warfare`)는 Forge 1.20.1용 전투 제작 모드입니다. 주요 NPC 워크플로에서는 선택한 DNPC 또는 CustomNPCs NPC가 TACZ·PointBlank·SuperbWarfare 총기를 하나의 서버 판정 DW 전투 컨트롤러로 사용하게 합니다. 총기 아이템, 렌더러, 탄환/히트스캔, 사운드, 총기 고유 상태는 원본 모드가 유지하고, DW는 타겟, 스탠스, 이동, 발사 간격, 재장전 정책, 예비 탄약, 애니메이션 신호, 저장을 담당합니다.
-
-현재 0.3.1에서 NPC 총기·근접 전투, 공용 클론과 부비트랩 도구는 DW가 담당합니다. SuperbWarfare 지상·헬리콥터·고정익 차량 AI와 승무원·지원 타임라인은 별도 DWE가 담당합니다. 같은 버전의 두 모드를 함께 교체하며 [DWE 설치와 호환 기종](#dochi-warfare-expanded/expanded-compatibility)을 확인하세요.
-
-NPC별 핵심 스위치는 여전히 `TACZ Fire NPC Mode`라는 UI 라벨을 사용합니다. OFF이면 일반 CustomNPCs 동작을 유지하고, ON으로 저장하면 DW가 해당 NPC의 관리 총기 동작을 제어합니다. 이 라벨에는 호환을 위해 TACZ 명칭이 남아 있지만 0.2.9 관리 총기 런타임은 TACZ 아이템에만 제한되지 않습니다.
-
-## 핵심 규칙
-
-| 규칙 | 의미 |
+| 원하는 행동 | 문서 |
 | --- | --- |
-| 지원 총기 사용 | TACZ 총기, 지원되는 PointBlank 1.11.1/2.1.0 총기, 지원되는 SuperbWarfare 0.8.9 총기를 사용합니다. 지원하지 않는 총기는 안전하게 거부됩니다. |
-| TACZ 설치 유지 | 외부 총기를 사용해도 TACZ 1.1.8은 필수 런타임·애니메이션 기준입니다. |
-| 오프핸드 탄약 금지 | 여분 탄약은 실제 탄약/탄창 아이템이 아니라 DW 탄약 재고와 재장전 정책으로 처리합니다. |
-| NPC별 활성화 | `TACZ Fire NPC Mode`가 켜진 선택된 NPC만 제어합니다. 일반 DNPC 또는 CustomNPCs NPC는 그대로 둡니다. |
-| GUI 우선 설정 | 인게임 NPC별 GUI가 기본 설정 경로입니다. 스크립트와 storeddata는 고급 워크플로용입니다. |
+| 가까우면 칼, 멀면 총 | [무기와 스탠스](#dochi-warfare/warfare-weapons-ai) |
+| 특정 적만 공격 | [타겟 규칙](#dochi-warfare/warfare-target-filters) |
+| 탄약을 제한하거나 다시 채우기 | [재장전과 재고](#dochi-warfare/warfare-reload-ammo) |
+| 엄폐하거나 제압 사격 | [엄폐와 제압](#dochi-warfare/warfare-cover-suppression) |
+| 플레이어가 고용하고 지휘 | [용병](#dochi-warfare/warfare-mercenary) |
+| 차량 이동과 승무원 | [DWE 시작](#dochi-warfare-expanded/expanded-overview) |
 
-:::warning 탄약 규칙
-관리 NPC가 TACZ·PointBlank·SuperbWarfare 탄약이나 탄창 아이템을 오프핸드에 들게 만들지 마세요. 재장전은 `Ammo Stock`, DW 재장전 상태, 운용 중인 총기의 원본 스택 상태로 표현합니다.
-:::
+NPC용 여분 탄약은 **Ammo Stock**으로 정합니다. 보조손에 탄약이나 탄창 아이템을 쥐여 주는 방식은 사용하지 않습니다.
 
-## 애드온이 제어하는 것
+## 지원 환경
 
-| 영역 | 예시 |
-| --- | --- |
-| 관리 총기 | TACZ와 선택형 PointBlank·SuperbWarfare 네이티브 총기 연동을 하나의 스탠스·이동·발사·재장전·탄약·애니메이션 컨트롤러로 운용 |
-| 사격 동작 | `Reload`, `Supply Ammo`, `Max Distance`, 네이티브·고정·랜덤 RPM, 고정 명중률 또는 이동 타겟 명중률 상승, 랜덤 길이 버스트 |
-| 피해 정책 | 원본 총기 피해 또는 고정 원거리 피해, 근접 무기 능력치 또는 고정 피해·넉백·공격 속도 |
-| 근접 애니메이션 연동 | NPC별 Better Combat 호환, 등록된 무기 공격·포즈, 사용할 수 없을 때 바닐라 주손 스윙 |
-| 스탠스 | `Idle`, `Ranged`, `Melee`, `Auto`, `Auto Hidden`, 조건 1개를 쓰는 고급 규칙 |
-| 전술 이동 | 고정, 산개, 밀집, 전진, 후퇴, 거리 유지 사격, 이동 사격, 랜덤 재배치 간격, 제압 사격, NPC별 엄폐 |
-| 인식 | 감지 거리·각도, 근거리 감지, 전투 진입 지연, 마지막 위치 기억, 총성·재장전·블록 파괴·설치 소리 조사 |
-| 탄약 정책 | 일반/고정 강제/범위 강제 재장전, 유한·무한 재고, 재생, 탄약 소진 전환, 선택형 타겟 상실 재무장 |
-| 타겟 | 엔티티 ID 허용 목록, 팩션 적대 상속, 요구 태그, 거부 태그, 같은 팩션 태그 공격 |
-| 장비와 외형 | 랜덤 원거리 무기, 근접 무기, 스킨, 방어구 세트, 미리보기와 손 아이템 동기화 |
-| 포즈 | 기본 비전투 총기 포즈, 포즈 JSON 편집, 총기 렌더 위치, 행동별 포즈 연결 |
-| 전투 피드백 | 경계 아이콘, 감지 사운드, 사격 사운드, 감지 대사, 사격 대사 |
-| 선택형 수류탄 | 수류탄 종류, 거리, 탐색 범위, 체력 조건, 쿨다운, 신관, 위력, 각도 |
-| 용병 계약 | 고용 조건, 소환·복귀, 진형, 사격·태세 명령, 소유자 공격 반응, 계약 해제 |
-| 차량 AI | 선택형 SuperbWarfare 지상·헬리콥터·고정익 이동, 인식, 타겟, 무장 ON/OFF·사용 모드, 가상 탄약, 승무원, 프로필, 명령어, 소울스톤 |
-| 월드 도구 | 서버 측 CustomNPCs·차량 클론 JSON과 비밀번호·폭발·효과·밀쳐내기·LRT 수류탄 부비트랩 |
+DW는 **Forge 1.20.1 / NeoForge 1.21.1**용입니다. TACZ와 클라이언트의 Player Animator가 필요합니다. 지원하는 PointBlank·SuperbWarfare 총기도 선택할 수 있으며, 그 모드를 설치했을 때 목록에서 고릅니다.
 
-## 애드온이 건드리지 않는 것
-
-도치 워페어는 모든 CustomNPCs 원거리/근접 NPC를 전역으로 바꾸지 않습니다. 일반 CustomNPCs 공격 출력은 DW 관리 NPC에서만 억제되므로 일반 NPC와 관리 총기 NPC를 한 월드에서 함께 사용할 수 있습니다.
-
-선택형 총기 연동은 원본 모델, 탄환/히트스캔, 사운드, 고유 총기 동작을 대체하지 않습니다. 외부 ABI가 맞지 않거나 특수 사격·근접 전용 총기가 지원되지 않으면 불완전하게 제어하지 않고 거부합니다.
-
-## 지원 조합
-
-| 모드 또는 로더 | 역할 |
-| --- | --- |
-| Minecraft 1.20.1 | 이 애드온 빌드의 대상 게임 버전입니다. |
-| Forge 47 이상 | 필수 로더 범위입니다. |
-| TACZ 1.1.8부터 지원되는 1.1.x 범위 | 클라이언트·서버에 필요한 총기 런타임·애니메이션 기준입니다. |
-| Player Animator 1.0.0 이상 | 공유 관리 총기 애니메이션 컨트롤러에 필요한 클라이언트 필수 모드입니다. |
-| CustomNPCs 1.20.1 이상 | 선택적 NPC 제공자입니다. DNPC 전투 흐름은 CustomNPCs 없이 사용할 수 있습니다. |
-| PointBlank 1.11.1 또는 2.1.0 | 선택형 네이티브 총기 연동입니다. 지원 버전 하나만 설치합니다. |
-| SuperbWarfare | Forge 0.8.9·0.8.9.1·0.8.9.2, NeoForge 0.8.9.1·0.8.9.2. 네이티브 구조 검사도 필요합니다. |
-| Better Combat | 등록된 근접 무기 공격·포즈와 무기 기반 공격 타이밍에 쓰는 선택형 연동 모드입니다. |
-| Mob Player Animator 1.0.0 이상 | Better Combat의 정확한 NPC 모션 재생에 쓰는 선택형 클라이언트 의존성입니다. 없으면 바닐라 스윙을 사용합니다. |
-| LesRaisins Tactical Equipments | 선택형 수류탄 투척과 LRT 네이티브 수류탄 부비트랩 페이로드에 사용합니다. |
-
-## 권장 제작 순서
-
-1. 테스트 월드에서 새 DNPC 또는 CustomNPCs NPC 하나를 만듭니다.
-2. `DW Npc Core`로 NPC별 설정 GUI를 엽니다.
-3. `TACZ Fire NPC Mode`와 `Enabled`를 켭니다.
-4. 빠른 시작이 필요하면 `Easy Build` 또는 `Presets`로 기본 전투 동작을 정합니다.
-5. `Gun` 탭에서 지원 총기 하나를 선택합니다. 첫 기준 테스트는 순정 TACZ 1.1.8 총기가 가장 단순합니다.
-6. `Ammo Stock`은 `-1`로 두어 무한 예비 탄약 상태에서 시작합니다.
-7. 고급 타겟, 풀, 수류탄, 스크립트 오버라이드를 넣기 전에 단순한 `Auto` 스탠스로 한 타겟을 먼저 테스트합니다.
-
-이렇게 시작하면 첫 문제를 작게 유지할 수 있습니다. 이 기본 설정에서도 NPC가 발사하지 못한다면 보통 모드 활성화, 총기 선택, 타겟 선택, 거리, 시야, 탄약/재장전 정책 중 하나가 원인입니다.
-
-## 배포 파일 구분
-
-이 문서의 소스·배포 폴더 기준은 DW **0.3.1**입니다. 2026-10-24 확인한 [Modrinth 공개 파일](https://modrinth.com/mod/dochis-warfare/versions)은 **0.2.9**까지이므로 다운로드한 버전과 문서의 기능을 비교하세요. 차량 AI는 DW 단독이 아니라 같은 빌드의 DWE가 필요합니다.
+자세한 버전은 [설치 표](#dochi-warfare/warfare-setup)에 있습니다.

@@ -127,4 +127,4 @@ JSON만 백업하면 이미 월드에 존재하는 엔티티와 다른 모드의
 
 ## 0.1.4 NPC·탈것 연동
 
-DRM·CustomNPCs·DNPC·Warfare는 선택 연동입니다. 기본 DNPC 생성에는 호환 DRM NPC API가 필요하며 저장 DNPC 템플릿 복제를 뜻하지 않습니다. [탈것 저장·스폰](#dochi-spawn-control/spawn-control-vehicles)에서 MTS·Superb Warfare·Aircraft·Automobility 사용법을 확인하세요.
+DRM·CustomNPCs·DNPC·Warfare는 선택 연동입니다. DNPC를 생성할 때는 DRM도 설치합니다. 꾸며 둔 NPC를 그대로 쓰려면 기본 NPC 대신 복제 템플릿을 고릅니다. [탈것 저장·스폰](#dochi-spawn-control/spawn-control-vehicles)에서 MTS·Superb Warfare·Aircraft·Automobility 사용법을 확인하세요.

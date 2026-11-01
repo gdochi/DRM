@@ -1,8 +1,8 @@
 ---
-title: Cobblemon Editor
+title: 파티·라운드·대화·보상 정하기
 slug: cobblemon-trainer-editor
 order: 520
-description: Trainer와 Pokemon Itself 문서, 파티, 라운드, 저장과 적용 방법입니다.
+description: 트레이너의 포켓몬을 편성하고 배틀 전후에 할 일을 정합니다.
 product: drm-cobblemon-editor
 category: Cobblemon Editor
 section: trainer
@@ -15,168 +15,54 @@ tags:
   - rounds
 ---
 
-## Sequential로 대화 뒤 보상 지급
+## 파티 편성하기
 
-**Battle Config → After Actions → Action Mode → Sequential**을 선택하고 대화 액션 다음에 아이템·보상 액션을 둡니다. 정상 대화 완료 뒤 목록의 다음 액션을 진행합니다. 취소·ESC·접속 종료는 후속 지급을 중단하며, 재접속이나 서버 재시작 후 NPC와 다시 상호작용하면 남은 액션을 이어갈 수 있습니다. 이미 완료한 액션은 다시 지급하지 않습니다.
+**Pokemon Party**에서 **Add Pokémon**으로 추가합니다. Trainer는 라운드마다 최대 6마리, Pokemon Itself는 한 마리를 사용합니다.
 
-라운드당 대화는 최대 한 개입니다. 구형 복수 대화 문서는 한 개로 정리해야 저장·Apply·실행합니다. 새 동작을 쓰려면 Core와 애드온의 최신 수정본을 함께 설치하세요. DNPC 위치 고정도 호환 대시·복귀 동안 일시 유예하고 종료 후 복원합니다.
+포켓몬을 골라 종·폼·레벨·기술·특성·지닌 도구를 정합니다. **Stats**는 IV/EV, **Battle Mechanics**는 테라 타입·다이맥스 등의 설정입니다. 기술 목록에서는 해당 포켓몬의 습득 기술이 먼저 나옵니다.
 
-## 두 전투 유형
-
-| 유형 | 저장 폴더 | 구성 |
-| --- | --- | --- |
-| `Trainer` | `cobblemon/trainers/` | 라운드당 파티 1–6마리, AI, 아이템, 기믹, 대화 |
-| `Pokemon Itself` | `cobblemon/pokemon_itself/` | 라운드당 한 마리, 포켓몬 외형과 PVE 전투 |
-
-두 유형 모두 최대 16라운드, 라운드별 조건, 전투 설정, 전투 후 액션을 지원합니다. Trainer 파일을 Pokemon Itself 폴더로 옮기거나 반대로 사용하지 마세요.
-
-현재 Trainer와 Pokemon Itself JSON 스키마는 모두 `23`입니다. 지원되는 구형 문서는 로드할 때 현재 필드로 보정되고, 다시 저장하면 최신 구조로 정규화됩니다.
-
-## 상단 작업 버튼
-
-| 버튼 | 동작 |
+| 수치 | 범위 |
 | --- | --- |
-| `Editors` | DRM 에디터 선택 화면 또는 적용 흐름으로 돌아가기 |
-| `Load` | 같은 문서 유형의 기존 JSON 불러오기 |
-| `Save` | 현재 사용자 파일에 저장 |
-| `Save As` | 새 사용자 경로로 저장 |
-| `Reset` | 현재 문서를 기본값으로 되돌리기 |
-| `Close` | 저장하지 않고 화면 닫기 |
+| 레벨 | 1~100 |
+| 기술 | 최대 4개 |
+| IV | 능력치별 0~31 |
+| EV | 능력치별 0~252, 합계 510 이하 |
 
-기본 제공 파일은 보호될 수 있습니다. 수정본은 `Save As`로 `custom/` 아래에 저장하세요. `Close`는 저장이나 NPC 적용을 수행하지 않습니다.
+**Random Party**는 조건에 맞는 파티를 자동으로 만들고, **Battle Strategy**는 상대 AI, **Trainer Items**는 배틀 중 사용할 회복 아이템을 정합니다. [상세 설정](#drm-cobblemon-editor/cobblemon-trainer-ai-party-items)을 참고하세요.
 
-## 화면 구조
+## 라운드를 나누기
 
-왼쪽의 큰 카테고리는 `Pokemon Party`와 `Trainer`입니다. `Trainer` 안에는 다음 섹션이 있습니다.
+한 NPC에 최대 16라운드를 만들 수 있습니다. **Add Round**로 추가하고 **Duplicate Round**로 현재 라운드를 복사합니다.
 
-| 섹션 | 주요 설정 |
-| --- | --- |
-| `General` | 활성화, 전투 유형, 이름 소스, Battle Presentation, 일반 인벤토리, RCT 포터 |
-| `Encounter` | 트리거, 감지 피드백, 추적, 위치 정렬, 전투 설정과 이용 정책 |
-| `Feedback` | 마커, 사운드, 반응 대기 |
-| `Rounds` | 라운드 추가·복제·삭제·정렬, 배틀 룰, NPC 기믹 장비 |
-| `Dialogue` | 현재 라운드의 전투 전 DRM Dialogue Set |
-| `Conditions` | 현재 라운드 진입 조건 |
-| `Rewards` | 이름은 유지되지만 실제 의미는 전투 결과별 `After Actions` |
+라운드마다 파티·조건·대화·보상을 다르게 정합니다. 순서를 바꾼 뒤에는 기존에 플레이한 사람의 진행도도 그 순서를 사용한다는 점을 확인하세요. 다시 Apply해도 승리 기록은 자동으로 지워지지 않습니다.
 
-창 크기와 GUI Scale 1–4에서 사용할 수 있도록 목록과 검색 화면이 스크롤됩니다. 종·폼·특성·기술 선택과 일반 인벤토리는 검색과 페이지 이동을 지원하며, 지닌 도구는 DRM의 공용 아이템 검색창에서 고릅니다. 화면이 잘리면 Minecraft GUI Scale을 낮추고 다시 여세요.
+## 배틀 시작 방식과 규칙
 
-## General
+**Encounter**에서 클릭으로 시작할지, 근처 플레이어를 보고 시작할지 정합니다. **Enabled**가 꺼져 있으면 배틀이 시작되지 않습니다.
 
-### 활성화와 이름
+**Rounds → 배틀 룰 편집**에서는 Singles·Doubles, 레벨 맞춤, 아이템 사용, 전설·기믹 허용을 정합니다. 라운드별로 다르게 하거나 공통 규칙을 씁니다. [배틀 룰](#drm-cobblemon-editor/cobblemon-battle-rules)에 각 항목이 있습니다.
 
-- `Enabled`가 꺼져 있으면 해당 NPC의 전투 역할이 시작되지 않습니다.
-- 이름 소스 `Profile`은 문서에 저장한 이름을 사용합니다.
-- 이름 소스 `NPC`는 적용 대상 DNPC 또는 CustomNPCs NPC의 현재 표시 이름을 사용합니다.
+## 배틀 전 대화 붙이기
 
-NPC 이름을 운영 중 자주 바꾸고 연출·확인창에도 같이 반영하려면 `NPC`를 사용합니다. 문서 이름을 고정하려면 `Profile`을 사용합니다.
+현재 라운드의 **Dialogue**에서 대화 세트를 고릅니다. 대화의 ‘배틀하자’ 같은 선택지에는 **go_battle** 액션을 넣습니다.
 
-### Battle Presentation
+대화를 지정하지 않으면 일반 배틀 확인 화면을 사용합니다. 등장 장면은 **General → Battle Presentation**에서 따로 고릅니다.
 
-Battle Presentation 경로를 선택하면 전투 시작 전에 해당 연출을 재생합니다. 파일이 없거나 잘못되면 기본 연출로 안전하게 대체됩니다. 연출 문서는 별도 `Battle Presentation Maker`에서 편집합니다.
+## 대화가 끝난 뒤 보상 주기
 
-### 일반 인벤토리
+1. **Battle Config → After Actions**를 엽니다.
+2. **Action Mode → Sequential**을 고릅니다.
+3. 대화 액션을 넣고 그 아래에 아이템·화폐 등 보상 액션을 둡니다.
+4. 실행할 결과를 승리·패배·도주 등으로 정하고 저장합니다.
 
-Trainer 전체가 공유하는 최대 64개 아이템 항목입니다. DRM AI의 일반 소비 아이템이 아니라 Mega Showdown 키 아이템 같은 보유 조건에 사용됩니다. 라운드별 치료·회복 아이템은 `Trainer Items`에서 따로 구성합니다.
+순차 실행은 대화를 마친 뒤 다음 액션을 실행합니다. 대화를 취소하거나 접속이 끊기면 뒤의 보상은 멈춥니다. 다시 NPC와 상호작용하면 남은 액션부터 이어집니다.
 
-## Pokemon Party
+라운드당 대화 액션은 한 개입니다. 예전 설정에 여러 개가 있으면 하나로 정리해야 저장·적용할 수 있습니다.
 
-Trainer는 현재 라운드에 최대 6마리, Pokemon Itself는 한 마리를 편집합니다.
+## 이름과 기믹용 아이템
 
-| 필드 | 설명 |
-| --- | --- |
-| Species | 네임스페이스를 포함한 Cobblemon 종 ID |
-| Form / Aspects | 폼과 외형·전투 속성 |
-| Gender | Random, Male, Female, Genderless |
-| Shiny / Level | 이로치와 1–100 레벨 |
-| Nature / Ability | 성격과 특성 |
-| Moves | 최대 4개 기술 |
-| Poké Ball / Held Item | 볼과 지닌 도구 |
-| IV / EV | 능력치별 IV 0–31, EV 0–252, 총합 최대 510 |
-| Battle Mechanics | Tera Type, Dynamax Level 0–10, Gigantamax Factor |
+**General**의 이름 소스를 **NPC**로 고르면 NPC의 현재 이름, **Profile**로 고르면 문서에 쓴 이름을 사용합니다.
 
-종·폼·특성·기술 ID는 현재 설치된 Cobblemon 레지스트리에 있어야 합니다. 기술 선택창은 등록된 전체 기술을 표시하고 선택한 종의 일반·이벤트·과거 습득 기술을 먼저 정렬합니다. 최종 실행 가능 여부는 Cobblemon과 설치된 기술 제공자가 결정합니다.
+**General Item Inv**에는 메가 키 같은 ‘소지하고 있어야 하는 아이템’을 넣습니다. **My Inventory → Add selected**는 플레이어 아이템을 복사하며 소모하지 않습니다. 이것은 배틀 중 소비하는 **Trainer Items**와 별도입니다.
 
-### 파티 작업
-
-- `Add Pokémon`: 현재 라운드에 슬롯 추가
-- `Remove Pokémon`: 선택 슬롯 제거
-- `Random Party`: 저장 가능한 랜덤 생성 프로필로 파티 생성
-- `Stats`: 선택 포켓몬의 IV/EV 편집
-- `Battle Mechanics`: 선택 포켓몬의 Tera/Dynamax/GMax 설정
-- `Battle Strategy`: 현재 라운드의 AI 엔진과 전략 편집
-- `Trainer Items`: 현재 라운드의 가상 배틀 아이템 편집
-
-## 라운드
-
-문서에는 1–16라운드가 있으며 다음 데이터가 라운드별로 함께 이동합니다.
-
-- 포맷과 파티 또는 Pokemon Itself 한 마리
-- 시작 지연
-- 조건과 전투 후 액션
-- 전투 전 Dialogue Set
-- 전투 설정 덮어쓰기
-- Trainer AI, 랜덤 파티 프로필, 배틀 아이템, 기믹
-
-`Add Round`는 기본 라운드를 추가하고, `Duplicate Round`는 현재 라운드 전체를 복제합니다. `Remove Round`는 최소 한 라운드가 남아야 합니다. 드래그 정렬 후에는 재대전 시작 라운드와 기존 운영 진행도가 의도한 라운드를 가리키는지 확인하세요.
-
-### 배틀 룰
-
-`Rounds`의 `배틀 룰 편집`에서 `공통 규칙` 또는 1–16 라운드를 직접 선택합니다. 라운드는 공통 규칙을 상속하거나 개별 규칙을 가질 수 있습니다.
-
-- 형식: 상속, Singles, Doubles, Triples, Lead Duel
-- 레벨: 원본 유지, 플레이어 파티 평균 맞춤, 고정 레벨
-- 아이템: 사용/지닌물건 허용, 금지 ID, 사용 횟수, 최소 턴·HP 조건
-- 포켓몬: 전설 금지, 플레이어/트레이너 선봉 선택
-- 기믹: Mega, Tera, Dynamax 허용 여부
-
-Lead Duel은 양쪽 선봉 한 마리만 사용하는 Singles입니다. 원본 파티 데이터는 삭제하지 않습니다. NPC 기믹 장비는 라운드 편성이고 배틀 룰은 양쪽의 허용 정책이므로, 장비가 있어도 규칙에서 금지하면 발동하지 않습니다.
-
-### 배틀 사운드
-
-`Battle sounds`는 트레이너의 남은 포켓몬 수 1–6에 맞춰 사운드를 배틀당 한 번 재생합니다. 전체 라운드용 공통 규칙을 만든 뒤, 각 라운드에서 `공통 사용`, `개별`, `끄기`를 선택할 수 있습니다. 수는 출전과 대기 포켓몬을 함께 세며 0마리는 배틀 종료이므로 트리거가 아닙니다. 볼륨은 0–4, 피치는 0.05–4입니다.
-
-## 전투 전 Dialogue Set
-
-각 라운드에 DRM Dialogue Set을 하나 연결할 수 있습니다. 빈손으로 해당 Trainer를 우클릭하면 서버가 플레이어의 현재 라운드를 계산해 그 라운드의 대화를 엽니다.
-
-- Dialogue Set에는 `go_battle` 액션이 있어야 합니다.
-- 대화가 열려 있는 사이 라운드가 바뀌면 이전 세션으로 전투를 시작하지 않습니다.
-- 경로가 비어 있으면 일반 배틀 확인 흐름을 사용합니다.
-- 이 기능은 NPC 전역 대화 저장소를 덮어쓰지 않고 플레이어별로 현재 라운드 대화를 해석합니다.
-
-## 저장과 NPC 적용
-
-1. `Save As`로 사용자 파일을 만듭니다.
-2. 대상 NPC 적용 화면에서 `Cobblemon Trainer` 또는 `Cobblemon Pokemon Itself`를 선택합니다.
-3. 문서를 한 번 `Apply`합니다.
-4. 양손을 비우고 런타임을 시험합니다.
-
-파일 기반 Apply는 원본 경로와 대체 스냅샷을 저장합니다. 이후 같은 경로에 `Save`하면 최신 내용이 다음 전투 요청에 반영됩니다. `/drm reload`는 외부 파일 수정이나 캐시 새로고침에 사용합니다.
-
-다시 Apply해야 하는 대표적인 경우는 문서 경로·적용 역할을 바꾸거나 파일 추적이 없는 스냅샷을 적용할 때입니다. 같은 NPC에 다시 Apply해도 플레이어별 클리어 진행도는 자동 초기화되지 않습니다.
-
-## 첫 검증 체크리스트
-
-1. 한 라운드, 한 마리, Singles로 시작합니다.
-2. Trigger는 Interaction으로 둡니다.
-3. 플레이어 파티에 전투 가능한 포켓몬을 넣습니다.
-4. 조건과 전투 후 액션을 비운 상태로 첫 전투를 확인합니다.
-5. 그다음 라운드, 자동 감지, AI, 아이템, 기믹을 하나씩 추가합니다.
-
-[트레이너 승리 퀘스트](#drm-cobblemon-editor/cobblemon-trainer-quests)에서 ID 연결과 승리 횟수 목표를 설정하는 방법을 확인하세요.
-
-## 일반 인벤토리에 커스텀 아이템 넣기
-
-`General > General Item Inv`에서 Trainer 전체가 공유하는 인벤토리를 엽니다.
-
-1. `Items`에서 등록 아이템의 기본 스택을 검색하거나 `My Inventory`에서 현재 플레이어가 가진 실제 스택을 고릅니다.
-2. `Add selected`로 추가합니다. `My Inventory`는 아이템을 복사하며 플레이어의 원본을 소비하지 않습니다.
-3. `Quantity`를 1–99로 정하고 문서를 저장합니다. 최대 64개 항목입니다.
-4. 같은 아이템 ID라도 이름·인챈트·커스텀 데이터 등 컴포넌트가 다르면 별도 항목으로 보관할 수 있습니다.
-
-수량을 바꿔도 NBT와 컴포넌트를 유지합니다. 데이터가 붙은 항목의 Item ID는 직접 바꾸지 않고 목록에서 다른 아이템을 선택합니다. 데이터가 잘못되거나 너무 크면 복사를 거부하므로 일반 아이템으로 바꿔 저장된 것으로 생각하지 마세요.
-
-이 인벤토리는 기믹 키 아이템 보유를 검사하며 소비하지 않습니다. 라운드 AI가 사용하는 회복·배틀 아이템 가방인 `Trainer Items`와 구분합니다.
-
-JSON 참고: Trainer 스키마는 계속 `23`입니다. 일반 인벤토리 항목에 `componentsSnbt`를 저장하고 기존 `components` 데이터도 읽습니다. 새 기능을 쓰기 위해 `schemaVersion`을 직접 바꿀 필요는 없습니다.
+저장한 파일을 NPC에 처음 연결하는 순서는 [첫 배틀](#drm-cobblemon-editor/cobblemon-editor-setup)에 있습니다.

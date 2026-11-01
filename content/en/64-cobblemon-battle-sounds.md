@@ -41,7 +41,7 @@ tags:
 | Target | Mode | Behavior |
 | --- | --- | --- |
 | All rounds | Global | Baseline for every inheriting round |
-| One round | `Use global` | Resolve the current global rules at runtime |
+| One round | `Use global` | Resolve the current global rules during play |
 | One round | `Custom` | Use an independent set of count rules |
 | One round | `Off` | Play none of these sounds even when global rules exist |
 
@@ -65,7 +65,7 @@ The first time a round changes to `Custom`, it uses the current global rules as 
 | Pitch | 0.05–4 |
 | `Stop sounds first` | Stop current battle music and sounds started by these rules before playing the new sound |
 
-The picker searches translated names and registry IDs. If preview fails, first confirm that the sound exists in the active resource packs. Browsing or selecting a sound does not automatically enable `Play at this count`.
+The picker searches translated names and IDs. If preview fails, first confirm that the sound exists in the active resource packs. Browsing or selecting a sound does not automatically enable `Play at this count`.
 
 The preview `Stop` button stops only the sound played by this editor. It does not change the runtime `Stop sounds first` policy.
 

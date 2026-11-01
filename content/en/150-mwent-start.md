@@ -21,7 +21,7 @@ MWENT is **included in Dochi`s Minigames**. This dedicated documentation does no
 
 Install matching Minigames builds on the server and client. Basic battles, tables and lessons work without DRM. Install platform requirements such as Fabric API separately. DRM adds NPC, dialogue and currency integrations. Optional-mod cards require their provider and actual assets. Minecraft 26.3 uses Java 25 and excludes CustomNPCs.
 
-Gameplay guides describe the **current 0.1.5 workspace**. The [release history](#mwent/releases) compares actual CurseForge uploads for 0.1.1–0.1.4; it keeps those historical releases separate from the workspace baseline.
+This guide explains 0.1.5 gameplay. See the [release history](#mwent/releases) for earlier card changes.
 
 ## Learn by Playing
 

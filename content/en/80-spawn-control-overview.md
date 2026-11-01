@@ -1,8 +1,8 @@
 ---
-title: Dochi's Spawn Control Overview
+title: Spawn Mobs Where and When You Want
 slug: dochi-spawn-control-overview
 order: 810
-description: Natural-spawn profiles and placed spawners, their editing workflows, supported loaders, and shared storage.
+description: Choose natural spawn rules or placed spawners for mobs and NPCs.
 product: dochi-spawn-control
 category: Overview
 section: overview
@@ -15,77 +15,38 @@ tags:
   - forge
 ---
 
-## Official name and purpose
+## Choose how they appear
 
-**Dochi's Spawn Control** is a server-authoritative natural-spawn and placed-spawner editor for Forge 1.20.1, Fabric 1.21.1, and NeoForge 1.21.1. Its internal mod ID is `drm_spawn_control`, and its in-game editor title is `Spawn Control`.
-
-You can create independent natural-spawn rules for registered `Mob` EntityTypes and saved CustomNPCs server clones. The server checks dimensions, biomes, height, light, time, player distance, chance, group size, population caps, and lifecycle settings before it creates an entity.
-
-When DRM Core is present, the mod uses the shared editor selector and DRM UI policy. Without DRM Core, the natural-spawn editor remains usable through its dedicated key and standalone screen.
-
-## Two editing workflows
-
-| Editor | Purpose | Saving and applying |
-| --- | --- | --- |
-| `Spawn Control` | Natural-spawn profiles around players and native-spawn policy | `Save` applies the active configuration |
-| `Spawner Editor` | Author a JSON document for a spawner placed at a specific location | Save the document, then apply it to a placed spawner separately |
-
-Placed spawners select from weighted entity, CNPC clone, and DW clone entries. Configure the number spawned per activation, conditions, attack or harvesting destruction, hit particles, sounds, a boss bar, and appearance.
-
-Start with [Creating a Placed Spawner](#dochi-spawn-control/dochi-spawn-control-spawner). The target profiles and native-spawn policy below concern the natural-spawn editor.
-
-## How rules belong to targets
-
-Natural-spawn rules are stored in one active server document, but every profile belongs to exactly one target key.
-
-| Target kind | Example target key | Meaning |
-| --- | --- | --- |
-| Registered entity | `entity:minecraft:glow_squid` | Rules for that EntityType only |
-| CustomNPCs clone | `clone:1:Guard` | Rules for the `Guard` clone in tab 1 only |
-
-One target may have several profiles. A zombie can have separate `forest_day`, `forest_night`, and `rare_cave` profiles without changing the target identity.
-
-:::warning No cross-target inheritance
-A Glow Squid rule does not carry over to a Frog. When Frog has no rule, the `Selected Target` view must show an empty rule list and inspector. `All Configured` intentionally shows rules from every target for management, but selecting a row moves the catalog to that rule's real target.
-:::
-
-## Native spawning and managed spawning
-
-Each registered entity has a separate native-spawn policy.
-
-| Policy | Behavior |
+| Goal | Use |
 | --- | --- |
-| `Native: ON` | Keep vanilla or the source mod's natural spawning. |
-| `Native: OFF` | Block new `NATURAL` and `CHUNK_GENERATION` spawns. |
+| A particular mob appears in forests at night | Natural spawn rules |
+| Enemies return at one dungeon location | A placed spawner |
+| A finished guard appears at a post | A saved DNPC template |
 
-`Native: OFF` does not globally block commands, spawners, structures, breeding, buckets, or scripted creation. Entities created by Dochi's Spawn Control use a managed-spawn context to pass its native blocker, while a denial from another Forge mod is still respected.
+Natural rules check the area around players. Placed spawners work around their block.
 
-If native spawning and a managed profile are both enabled, both routes may create the same entity. Test the managed rule first, then disable native spawning only when you intend a full replacement.
+## Change natural spawning
 
-## Natural-spawn catalog support
+Press default **K**, choose a mob on the left and **Add rule**. Set its locations, hours and quantities, then save.
 
-| Target | Support path |
-| --- | --- |
-| Vanilla and ordinary modded `Mob` types | Created through the registered EntityType adapter |
-| Saved CustomNPCs clones | Created through the dedicated clone adapter |
-| Ender Dragon, Wither, Warden | Listed as experimental targets |
-| Projectiles, effects, vehicles, `MISC` types | Excluded from the normal catalog or unsupported |
-| Blank CustomNPCs registered EntityTypes | Excluded; saved clones appear in their own catalog entries |
+One zombie can have separate forest-night and cave rules. A rule for pigs does not affect cows.
 
-A missing EntityType, missing clone, or target that needs a special adapter does not stop the server. Only the affected profile is disabled, with a reason shown in the editor and validation output.
+Follow [your first natural rule](#dochi-spawn-control/dochi-spawn-control-setup).
 
-## Authority and storage
+## Place a spawner
 
-Opening and saving the editor requires permission level 2 or Creative mode. The client does not own a local copy of the active policy: the server validates the draft, stores it in the shared server config folder, and applies it immediately.
+Open **Spawner Editor** from DRM's editor selector. Choose mobs and conditions, use **Get Spawner**, place it and apply the saved setup.
 
-```text
-config/dochi_rpg_maker/spawn_control/spawn_control.json
-```
+See [create a spawner](#dochi-spawn-control/dochi-spawn-control-spawner).
 
-The following pages cover installation, a first rule, the editor layout, every rule section, presets, sharing, diagnostics, and operations.
+## Do the original spawns continue?
 
-## 0.1.4 NPC and vehicle integration
+**Original spawning ON** allows the game's spawns alongside your rules. Set it **OFF** to use only your rules for natural spawning.
 
-DRM, CustomNPCs, DNPC and Warfare are optional integrations. Default DNPC entities and saved clones are separate sources. With the compatible public DRM API, choose [v3 templates](#dochi-spawn-control/spawn-control-npc-templates) for COMMON natural rules or placed spawners. See [vehicle saving and spawning](#dochi-spawn-control/spawn-control-vehicles) for MTS, Superb Warfare, Aircraft and Automobility.
+This does not block commands, breeding or other spawners.
 
-26.3 has separate Fabric / NeoForge Java 25 builds without CustomNPCs clones. Its placed DNPC template evidence is separate from COMMON natural-template checks. See [26.3 guidance](#core-fabric/minecraft-26-3).
+## NPCs and vehicles
+
+Use an [NPC template](#dochi-spawn-control/spawn-control-npc-templates) to keep a DNPC's appearance and equipment. You can also [spawn saved vehicles](#dochi-spawn-control/spawn-control-vehicles).
+
+Ordinary natural mob rules need neither DRM nor an NPC mod. Add the respective mods for NPCs or vehicles.

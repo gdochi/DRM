@@ -41,7 +41,7 @@ Particle files use particles and dochi.particles.v1 instead.
 2. Save with the NPC attached, or apply the new file through its catalog.
 3. After external edits, reapply or restart the server.
 4. Check similarly named files in subfolders.
-5. Inspect any model snapshot that was applied too.
+5. Inspect any saved model settings that was applied too.
 
 Use separate files when NPCs need independent behavior.
 

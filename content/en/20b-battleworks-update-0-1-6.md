@@ -1,8 +1,8 @@
 ---
-title: 0.1.6 and loader selection
+title: Choose Your BattleWorks Build
 slug: battleworks-update-0-1-6
 order: 208
-description: Current packaged requirements and the 26.3 DNPC combat boundary.
+description: Choose DRM and an NPC mod for your Minecraft version.
 product: mob-editor
 category: 0.1.6 and loader selection
 section: start
@@ -11,30 +11,28 @@ version: 0.1.6
 audience: Creators / server operators
 ---
 
-## DNPC on existing targets
+## Required mods
 
-Current 0.1.6 patches integrate DNPC combat editing, friendly/hostile relationships, appearance and control through DRM's public NPC API on Forge 1.20.1 and Fabric/NeoForge 1.21.1. CustomNPCs remains optional. Create an NPC, save/apply its BattleWorks document, then check actual targeting and motion.
+BattleWorks **adds NPC combat authoring to DRM**. Create the NPC with DNPC or CustomNPCs.
 
-Ending combat control no longer cancels another mod's navigation. Existing Forge/CustomNPCs tutorials remain provider-specific examples. Current COMMON native DNPC evidence is centered on NeoForge and does not establish equal runtime coverage on Forge/Fabric or every optional-mod combination.
+| Minecraft / loader | Java | DRM requirement |
+| --- | --- | --- |
+| Forge 1.20.1 | 17 | 0.2.8+ |
+| Fabric / NeoForge 1.21.1 | 21 | 0.2.9+ |
+| Fabric / NeoForge 26.3 | 25 | 0.2.8+ |
 
-## Current installation
+Match loaders/versions on server and clients. Use DNPC on 26.3; CustomNPCs is unavailable there.
 
-This table follows local BattleWorks **0.1.6** production metadata, rather than older README instructions or the 0.1.4 distribution bundle.
+## Make one attack
 
-| Target | Java | Packaged DRM requirement | NPC workflow |
-| --- | --- | --- | --- |
-| Forge 1.20.1 | 17 | 0.2.8+ | Optional DNPC / CustomNPCs provider |
-| Fabric / NeoForge 1.21.1 | 21 | 0.2.9+ | Optional DNPC / CustomNPCs provider |
-| Fabric / NeoForge 26.3 | 25 | 0.2.8+ | DNPC provider; CustomNPCs excluded |
+Place an NPC, make its BattleWorks combat file and apply it. Follow [your first melee attack](#mob-editor/battleworks-first-attack) to build wind-up, hit and recovery. That tutorial's NPC setup screens use Forge/CustomNPCs.
 
-DRM is required. CustomNPCs is optional on the older targets too, but the existing [first attack tutorial](#mob-editor/battleworks-first-attack) specifically uses **Forge and CustomNPCs**. It does not establish full DNPC parity.
+DNPC also supports combat, relationships and appearance integration. Extra motion requires its respective animation mods.
 
-These are current JAR declarations, not proof that every earlier Core is incompatible. The older Fabric port also needs the `drm:battleworks_api=1` capability.
+## Use example patterns
 
-## Starting on 26.3
+Load examples from `config/dochi_rpg_maker/mobs/patterns/samples/`. Use **Save As** to make your own version.
 
-Install matching DRM, DNPC and BattleWorks builds, then apply a combat document to a DNPC. Models and motions use DRM's supported stack. See [26.3 setup](#core-fabric/minecraft-26-3) for Java and feature exclusions.
+Better Combat examples need compatible Better Combat and its motion requirements. Legacy CustomNPCs clone summoning is unavailable on 26.3.
 
-Six samples install only missing files under `config/dochi_rpg_maker/mobs/patterns/samples/`. Use `Save As` for working copies. The Better Combat three-hit sample needs compatible providers, libraries and NPC motion support; live playback of that sample remains unverified.
-
-Legacy `summon_clone` is rejected on 26.3. CustomNPCs clone names are not automatically converted into DNPC templates. Bounded DNPC server/client checks do not establish coverage of all optional spell and animation stacks. Version alignment to 0.1.6 did not repeat all historical gameplay checks.
+Continue with [NPC setup](#mob-editor/mob-editor-setup) or the [learning path](#mob-editor/mob-editor-overview).

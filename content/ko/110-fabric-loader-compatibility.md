@@ -25,11 +25,11 @@ Forge 1.20.1은 별도 문서 묶음입니다. 사이트 주소의 `core-fabric`
 | Fabric | 1.21.1 | 0.2.9 | 21 | CustomNPCs Fabric 호환 빌드 (선택) |
 | NeoForge 21.1+ | 1.21.1 | 0.2.9 | 21 | CustomNPCs NeoForge 1.21.1 호환 빌드 (선택) |
 
-Fabric에는 Loader 0.18.0 이상과 Fabric API 0.116.11+1.21.1 이상도 필요합니다. 자세한 설치 파일과 선택 의존성은 [설치 준비](#core-fabric/installation)에 있습니다.
+Fabric에는 Loader 0.18.0 이상과 Fabric API 0.116.11+1.21.1 이상도 필요합니다. 자세한 설치 파일과 선택 설치은 [설치 준비](#core-fabric/installation)에 있습니다.
 
 ## 제작 데이터 이동
 
-제작 데이터 루트는 `config/dochi_rpg_maker`입니다. 서버 JSON이 원본이며 NPC 바인딩과 플레이어 진행도 같은 실행 상태는 월드에도 저장됩니다.
+제작 데이터 루트는 `config/dochi_rpg_maker`입니다. 서버 JSON이 원본이며 NPC 연결과 플레이어 진행도 같은 실행 상태는 월드에도 저장됩니다.
 
 1. 현재 config와 월드를 함께 백업합니다.
 2. 대상 로더의 DRM과 의존성으로 별도 인스턴스를 준비합니다.

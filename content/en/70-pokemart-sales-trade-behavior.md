@@ -38,17 +38,11 @@ Finite stock is keyed by `NPC UUID + Product ID`. Two NPCs using the same docume
 
 Restocking uses server world time. Offline wall-clock time does not refill inventory. When world ticks advance and stock is queried again, missed intervals are applied together up to Maximum Stock.
 
-## Sales transaction order
+## If a purchase fails
 
-1. Validate Sales role and Product ID.
-2. Validate the currency provider and balance.
-3. Reserve one unit of NPC stock.
-4. Create the configured Cobblemon Pokémon.
-5. Debit currency.
-6. Deliver the Pokémon.
-7. Flush success and stock state to world storage.
+Failed delivery or payment restores the stock and payment. Report persistent errors and transaction details to an administrator.
 
-Creation or payment failure restores reserved stock. Delivery failure attempts both a currency refund and stock restoration. If delivery and recovery both fail, the server reports `recovery_failed`; an operator should inspect the player's balance and logs.
+Purchases go to the active party. **Keep a free party slot before buying.** Sales do not automatically send purchases to the PC.
 
 ## Trade offers
 

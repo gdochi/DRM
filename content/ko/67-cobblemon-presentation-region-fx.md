@@ -43,4 +43,4 @@ Battle Presentation Maker의 **Region**은 선택한 월드 블록 상태를 연
 
 ## 함께 사용할 설정
 
-배틀 프레젠테이션은 트레이너 연결, 야생·RCT·PvP 적용 또는 [배틀 스케줄러](#drm-cobblemon-editor/cobblemon-battle-scheduler)에서 사용합니다. 프레젠테이션 JSON 스키마는 `5`를 유지합니다. [레이어와 런타임](#drm-cobblemon-editor/battle-presentation-layers-runtime)에서 텍스트·이미지·액터·오디오와 타임라인을 확인하세요.
+배틀 프레젠테이션은 트레이너 연결, 야생·RCT·PvP 적용 또는 [배틀 스케줄러](#drm-cobblemon-editor/cobblemon-battle-scheduler)에서 사용합니다. 프레젠테이션 JSON 스키마는 `5`를 유지합니다. [레이어와 플레이](#drm-cobblemon-editor/battle-presentation-layers-runtime)에서 텍스트·이미지·액터·오디오와 타임라인을 확인하세요.

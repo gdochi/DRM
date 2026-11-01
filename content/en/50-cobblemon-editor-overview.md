@@ -1,8 +1,8 @@
 ---
-title: Dochi Cobblemon Editor
+title: Create Pokémon NPCs
 slug: cobblemon-editor-overview
 order: 500
-description: Learn the current feature set, supported environment, authoring tools, and runtime rules of Dochi Cobblemon Editor.
+description: Choose trainers, Pokémon shops, healers or starter NPCs.
 product: drm-cobblemon-editor
 category: Overview
 section: overview
@@ -15,73 +15,37 @@ tags:
   - overview
 ---
 
-## What Dochi Cobblemon Editor is
+## What would you like to make?
 
-`Dochi Cobblemon Editor` is a DRM addon for Fabric and NeoForge 1.21.1. It lets creators attach Cobblemon trainer battles or a single Pokémon battle to DNPC or CustomNPCs NPCs, build full-screen pre-battle presentations, create Pokémon markets, healers, and starter selectors, and reuse NPC clones in the same workflow.
-
-The addon does not imitate Cobblemon with a separate battle engine. Battles use the player's real Cobblemon party and Cobblemon 1.7.3 runtime. The intended authoring path is the DRM editor selector, `Save As`, and the NPC apply screen rather than hand-writing every JSON document.
-
-:::note Display name and internal ID
-The addon uses the display name `Dochi Cobblemon Editor` and the JAR name `dochi_cobblemon_editor-<version>-<loader>-1.21.1.jar`. The loader is `fabric` or `neoforge`. For existing-data compatibility, the internal mod ID and resource namespace remain `cobble_npc`. Do not rename existing `cobble_npc:*` IDs or data folders.
-:::
-
-## Supported environment
-
-| Loader | Addon | Platform |
-| --- | --- | --- |
-| Fabric 1.21.1 | 0.2.9 | Java 21, Fabric Loader/API compatible with DRM |
-| NeoForge 1.21.1 | 0.2.9 | Java 21, NeoForge 21.1 series |
-
-Both declare **DRM Core 0.2.8+ and Cobblemon >=1.7.3 <1.9.0**. Current Core documentation follows **0.3.1**. CustomNPCs, DNPC, RCT API and CobbleDollars remain optional; install the NPC provider for the workflow you use. DNPC Trainer, Pokemon Itself, PokéMart, Nurse Joy and Starter Selector do not require CustomNPCs.
-
-Match `dochi_cobblemon_editor-0.2.9-<loader>-1.21.1.jar` on server and clients and use compatible Cobblemon/NPC providers. See the [current changes](#drm-cobblemon-editor/cobblemon-editor-current-update).
-
-## Authoring tools
-
-| Tool | What creators edit | What players see |
-| --- | --- | --- |
-| `Cobblemon Editor` | Trainer parties, single-Pokémon battles, encounters, rounds, conditions, and rewards | A confirmation prompt and a real Cobblemon battle |
-| `Battle Presentation Maker` | Pre-battle layers, models, backgrounds, timeline, and audio | A full-screen presentation before the battle starts |
-| `Battle Scheduler` | Clones, rooms/areas, intro/result scenes, presentations and admission policy | Actor spawning, battle and cleanup in one run |
-| `PokéMart Editor` | Sales, trades, auctions, currency, stock, and access conditions | A PokéMart screen when interacting with the NPC |
-| `Nurse Joy Editor` | Healing dialogue and healing-machine linkage | A dedicated healing interaction |
-| `Starter Selector Editor` | Starter cards, conditions, sounds, and success actions | A server-validated starter selection screen |
-| `Clone Library` | Reusable Trainer and Pokemon NPC templates | Clone sources for DRM Core NPC Spawner |
-| `Cobblemon NPC Appearance` | The Pokémon appearance of a DNPC or CustomNPCs NPC | The NPC model shown in the world |
-
-The first six tools are registered as DRM `Add-on` editors. `Cobblemon NPC Appearance` operates on a target NPC, so a DNPC or CustomNPCs NPC must already exist.
-
-## Trainer and Pokemon Itself
-
-`Cobblemon Editor` provides two battle types.
-
-| Type | Use |
+| Goal | Tool |
 | --- | --- |
-| `Trainer` | A party of up to six Pokémon, Singles/Doubles/Triples/Lead Duel, tunable AI, up to 16 rounds, conditions, and post-battle actions |
-| `Pokemon Itself` | One Pokémon with species, form, nature, moves, ball, held item, and appearance settings |
+| A trainer with a Pokémon party | **Cobblemon Editor → Trainer** |
+| A Pokémon that fights directly | **Cobblemon Editor → Pokemon Itself** |
+| Pokémon sales, trades and auctions | **PokéMart Editor** |
+| Party healing | **Nurse Joy Editor** |
+| Choosing a first Pokémon | **Starter Selector Editor** |
+| An entrance before a battle | **Battle Presentation Maker** |
 
-They also use different save folders. Keep trainer documents in `trainers/` and single-Pokémon documents in `pokemon_itself/`; match the `Save As` domain to the selected battle type.
+Right-click air with the DRM Core and choose a tool under **Add-on**. Create NPCs with DNPC or CustomNPCs.
 
-## Runtime rules
+## Start with one trainer
 
-- Saving a trainer or PokéMart document does not attach it to an NPC. Select the saved document and choose `Apply` in the target NPC workflow.
-- Battle prompts and PokéMart screens open when a player right-clicks a DNPC or CustomNPCs NPC with both hands empty.
-- A DRM Dialogue or DRM NPC Shop attached to the same NPC owns normal interaction first. Use a dialogue action or another explicit route if the NPC must also start a battle.
-- A PokéMart role takes priority over a normal trainer or Pokemon Itself battle prompt.
-- The server is authoritative for battle progress, conditions, rewards, stock, and auctions.
-- Level rules can keep authored levels, set a fixed battle level, or match the player's current party average with an offset.
-- DRM Strategy exposes six 0–100 AI values plus Beginner, Standard, Expert, and Boss presets.
-- Applied file-based documents track their source path; saving the same path updates the next runtime request without another Apply.
+Follow [installation and the first battle](#drm-cobblemon-editor/cobblemon-editor-setup). Give the trainer one Pokémon, save, apply to an NPC and talk with both hands empty.
 
-## Recommended authoring order
+Then choose [parties and rounds](#drm-cobblemon-editor/cobblemon-trainer-editor), [AI and mechanics](#drm-cobblemon-editor/cobblemon-trainer-ai-party-items) and [battle rules](#drm-cobblemon-editor/cobblemon-battle-rules).
 
-1. Load the basic trainer in `Cobblemon Editor` and finish a one-round, one-Pokémon battle.
-2. Save a user copy with `Save As`, then apply it to a test CustomNPCs NPC.
-3. Confirm that empty-hand interaction starts a real Cobblemon battle.
-4. Add detection, chase, rematches, conditions, and rewards one feature at a time.
-5. Build a pre-battle sequence in `Battle Presentation Maker` and assign it to the trainer.
-6. Add a separate PokéMart NPC when the project needs sales, trades, or auctions.
+## Add dialogue and rewards
 
-Testing the smallest battle first makes it easier to separate party-data, NPC-application, automatic-encounter, and presentation problems.
+Add a pre-battle greeting or give rewards after post-battle dialogue. See [conditions and after-actions](#drm-cobblemon-editor/cobblemon-conditions-rewards-pokemon).
 
-See [Trainer Victory Quests](#drm-cobblemon-editor/cobblemon-trainer-quests) to link trainer identities and require a number of wins.
+Set rematch availability and waiting periods in [encounters and rematches](#drm-cobblemon-editor/cobblemon-encounters-rematches).
+
+## Several roles on one NPC
+
+Empty-hand interaction may open dialogue or a shop first. Use a **go_battle** action in dialogue to start its battle. **Shift+right-click** accesses dedicated roles when another applied role takes the normal interaction.
+
+Using separate NPCs for your first roles makes the interaction easier to follow.
+
+## Platforms
+
+For **Minecraft 1.21.1, Fabric or NeoForge**. DRM and Cobblemon are required; use DNPC or CustomNPCs for NPC roles. See the [installation table](#drm-cobblemon-editor/cobblemon-editor-setup).

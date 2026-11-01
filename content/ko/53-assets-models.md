@@ -1,8 +1,8 @@
 ---
-title: 에셋, 모델, 애니메이션 메타데이터
+title: 내 그림과 NPC 모델 넣기
 slug: assets-models
 order: 130
-description: 서버 PNG 에셋, 피커 필터, mcmeta 애니메이션, NPC 모델/애니메이션 공급자를 설명합니다.
+description: PNG를 가져와 화면에 넣고 NPC 모델과 동작을 고릅니다.
 product: core
 category: 월드와 NPC 도구
 section: world-tools
@@ -15,27 +15,25 @@ tags:
   - animation
 ---
 
-## 서버 에셋 루트
+## 내 그림을 화면에 넣기
 
-제작자 PNG는 `config/dochi_rpg_maker/assets/textures/` 아래에 둡니다. 서버가 안전한 상대 경로를 카탈로그로 만들고 선택한 런타임 데이터를 클라이언트에 전송합니다. PNG 제한은 파일당 8 MiB, 한 변 4096픽셀, 전체 1600만 픽셀입니다.
+1. PNG를 서버의 `config/dochi_rpg_maker/assets/textures/` 안에 넣습니다.
+2. GUI Maker의 **Image** 요소에서 그림 선택창을 엽니다.
+3. 파일 이름을 검색하고 미리보기를 확인합니다.
+4. **Apply**를 누른 뒤 GUI를 저장합니다.
 
-## 에셋 피커 정책
+서버에 넣은 그림은 접속자에게 전달됩니다. 한 PNG는 최대 8 MiB, 한 변은 4096픽셀까지이며 전체 1600만 픽셀 이하여야 합니다.
 
-- Search는 리소스 경로를 검색합니다.
-- 모드/네임스페이스와 첫 상위 폴더 필터는 복수 선택 체크박스입니다.
-- 페이지 이동만으로 텍스처를 적용하지 않습니다.
-- 행을 선택하고 미리보기를 확인한 뒤 `Apply`를 누릅니다.
-- 리스트 미리보기 표면 위에 대상 텍스처를 렌더하며 일반 아이템 슬롯 플레이스홀더를 덮지 않습니다.
+## NPC 모델 바꾸기
 
-## 애니메이션 PNG 메타데이터
+**NPC Basic**에서 사용할 모델과 텍스처를 고릅니다. 미리보기를 회전·확대해 보고 크기와 피격 범위를 정합니다.
 
-`priestall.png` 옆에는 `priestall.png.mcmeta` 이름으로 메타데이터를 둡니다. 0.1.4는 표준 `animation` 객체의 프레임 너비/높이, `frametime`, 명시적 `frames`, 프레임별 시간, `interpolate`를 읽습니다.
+Gecko 모델은 해당 Minecraft 버전에 맞는 **GeckoLib**를 설치하고 모델·애니메이션·텍스처 파일을 함께 연결합니다. 걷기·공격·피격·사망처럼 어떤 상황에 어떤 동작을 쓸지 정합니다.
 
-올바르고 제한 안에 있는 메타데이터만 사용합니다. 크기는 최대 16 KiB, 애니메이션 프레임은 최대 4096개입니다. 잘못됐거나 에셋 루트 밖으로 벗어난 동반 파일은 안전하게 무시합니다.
+동작의 반복 재생은 **loop**, 한 번만 재생은 **once**, 마지막 자세 유지는 **hold-last**입니다.
 
-## NPC 모델과 애니메이션
+## 움직이는 PNG 쓰기
 
-NPC Basic은 설치 상태에 따라 GeckoLib, 모드 엔티티, Player Animator, Better Combat 표시 공급자를 지원합니다. 동작 바인딩은 idle, walk, sprint, attack, hurt, death를 제공하고 loop/once/hold-last 재생을 설정할 수 있습니다.
+리소스팩과 같은 방식으로 그림 옆에 `.png.mcmeta` 파일을 둡니다. 예를 들어 `priest.png`와 `priest.png.mcmeta`입니다. 프레임 크기·순서·재생 속도는 그 파일에서 정합니다.
 
-번들 Gecko 예제는 템플릿으로만 사용하세요. 커스텀 모델, 애니메이션, 텍스처, 메타데이터 경로를 함께 관리하고 필요한 클라이언트 모드 조합마다 최종 NPC를 테스트하세요.
-
+화면 안에 배치하는 방법은 [GUI Maker](#core/gui-system)에서 이어서 설명합니다.

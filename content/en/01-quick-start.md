@@ -1,8 +1,8 @@
 ---
-title: Quick Start
+title: Getting Started
 slug: quick-start
-order: 20
-description: Quick Start for Forge DRM 0.3.1.
+order: 1
+description: Get the DRM tool and give an NPC its first conversation.
 product: core
 category: Getting Started
 section: getting-started
@@ -11,53 +11,40 @@ version: 0.3.1
 audience: Creators and server operators
 ---
 
-## First launch
+## Give an NPC a conversation
 
-1. Install Forge 1.20.1 with Java 17 and DRM 0.3.1 on server and clients. Add CustomNPCs for its NPC features.
-2. Start once to create `config/dochi_rpg_maker` and the bundled templates.
-3. In Creative mode or with edit permission, use `/give @s dochi_rpg_maker:dialogue_editor`. With CustomNPCs installed, the core also appears in its creative tab.
-4. Right-click air to open the editor selector. Right-click a CustomNPCs NPC to enter the target-aware editing flow.
+DRM lets you make NPC conversations, shops and quests. Start with one NPC and a short greeting.
 
-See [installation](#core/installation) and [loader differences](#core-fabric/loader-compatibility) before mixing builds. Forge Core does not include the placed spawner; install [Spawn Control](#dochi-spawn-control/dochi-spawn-control-spawner) for that feature.
+1. In Creative mode, get **Dochi RPG Maker Core**, or enter `/give @s dochi_rpg_maker:dialogue_editor`.
+2. Hold the Core and **right-click air**.
+3. Open **Dialogue Editor** and choose **Use Default Dialogue Set**.
+4. Select a general dialogue node and change its dialogue and choice text.
+5. Use **Save As** to save your own conversation.
+6. Right-click a DNPC or CustomNPCs NPC with the Core and apply the saved conversation.
+7. Empty both hands and right-click the NPC to talk.
 
-## Choose an editor
+Need an NPC first? Follow [Create an NPC](#dochi-npc-core/npc-core-setup). DNPC is installed separately from DRM.
 
-The selector provides search and General, Visual, and Config categories. Visual includes GUI Maker, Tooltip Maker, HUD Maker, and Popup Maker. Config includes Currency Editor and Stat Builder. General contains dialogue, NPC, shop, quest, teleporter, faction, Remnant Msg, and item tools. Installed addons register their own tools.
+## Choose what you want to make
 
-| Tool | Main authoring data |
-| --- | --- |
-| Dialogue Editor | `dialogue_sets/<set>/` |
-| NPC Shop | `npc_shops/` |
-| GUI Maker / Tooltip Maker | `gui/` |
-| Quest Editor | `quests/<pack>/` |
-| Stat Builder / Item Editor | `stats/sets/`, `items/definitions/` |
-| Currency Editor | `currency/definitions/` |
-| HUD Maker | `hud/sets/`, `hud/definitions/` |
-| Teleporter / Faction / Popup | `teleporters/`, `factions/`, `popups/` |
-| Remnant Msg | `remnant_msg/messages/`, `remnant_msg/policies/` |
+| Goal | Tool | Guide |
+| --- | --- | --- |
+| Dialogue and choices | Dialogue Editor | [Conversations](#core/dialogue-system) |
+| An NPC that buys or sells items | NPC Shop | [Shops](#core/shop-system) |
+| A custom dialogue/shop appearance | GUI Maker | [Screen layouts](#core/gui-system) |
+| Money names, icons and balances | Currency Editor | [Currency](#core/currency-editor) |
+| Information that stays on screen | HUD Maker | [HUDs](#core/hud-maker) |
 
-All paths above are relative to `config/dochi_rpg_maker`. A dialogue set contains multiple node files; a GUI or shop is usually one JSON document. See [Folders and Paths](#core/paths).
+Quests, travel destinations and popups also open from the editor selector. Installed addons add their own tools.
 
-## Make a first dialogue
+## When to save and apply
 
-1. Open Dialogue Editor and create a set or start from the default set.
-2. Edit nodes and choices, then add conditions or actions.
-3. Use `Save As` to save under a new user name.
-4. Right-click the target NPC with the core item and apply the dialogue.
-5. Put away the editing item and right-click the NPC to test the player dialogue.
+**Save / Save As** keeps your work in a file. **Apply** chooses which NPC uses it. Save a new conversation or shop, then apply it to the NPC.
 
-NPC Shop follows the same author-save-apply flow. File-based shops live in `npc_shops`; applied NPC data also uses NPC PersistentData.
+Use **Save As** to give a bundled example your own name. Use **Save** for later changes to your file.
 
-## Saving and navigation
+## Before installing
 
-Supported editors use `Ctrl+S` to save, `Ctrl+Z` to undo, and `Ctrl+Y` or `Ctrl+Shift+Z` to redo. Check the screen's `?` help for its available shortcuts. Protected default documents require `Save As`.
+This guide is for Forge 1.20.1. See [installation](#core/installation), or use the [Fabric/NeoForge guide](#core-fabric/quick-start) for those loaders.
 
-The common topbar's Back/Forward buttons navigate editor history. They do not undo edits or save server data.
-
-Default dialogue sets, protected default GUIs, and bundled sample shops are starting points. Keep authored files under distinct names. After editing server JSON externally, use `/drm reload` or review `settings/reload_policy.json`.
-
-## Continue learning
-
-Start with installation and paths, then Dialogue Editor and conditions/actions. Continue with NPC Shop, GUI Maker, HUD Maker, quests, and stats/items as your project needs them. GUI files control presentation; shop products, dialogue content, and quest progress have their own data stores.
-
-Current changes: [DRM 0.3.1](#core/release-notes-0-2-9).
+For moving saved work to another server, see [folders](#core/paths).

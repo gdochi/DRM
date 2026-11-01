@@ -16,7 +16,7 @@ audience: 제작자 / 운영자
 | 내용 | 경로 |
 | --- | --- |
 | 게임 규칙 | `config/dochi_rpg_maker/minigames/games/<id>.json` |
-| 기본 런타임 GUI | `config/dochi_rpg_maker/gui/minigames/minigames_gui.json` |
+| 기본 플레이 GUI | `config/dochi_rpg_maker/gui/minigames/minigames_gui.json` |
 | 최고 기록 | `<world>/data/dochi_minigames_scores.json` |
 
 게임 규칙 JSON은 참가비·제한 시간·심볼·보상을 저장합니다. GUI JSON은 플레이어가 보는 경기판·점수 패널 배치를 저장합니다. NPC 연결은 NPC 저장 데이터에 남으며 같은 게임 ID를 연결한 NPC들은 같은 게임 설정을 사용합니다.
@@ -40,7 +40,7 @@ DRM이 설치된 환경에서 게임 규칙 탭의 **GUI Maker** 버튼으로 �
 | GUI가 안 바뀜 | 해당 게임에 연결한 GUI 파일을 수정·저장했는지 |
 | 보상이 다르게 지급됨 | 점수 단계와 `highest`·`cumulative`·`random` 정책 |
 
-업데이트 전에는 `config/dochi_rpg_maker`와 월드를 함께 백업합니다. 배포 JAR에는 게임 시험용 코드가 포함되지 않은 일반 빌드를 사용합니다.
+업데이트 전에는 `config/dochi_rpg_maker`와 월드를 함께 백업합니다.
 
 ## JSON 참고
 

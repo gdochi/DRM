@@ -1,8 +1,8 @@
 ---
-title: 0.1.6과 로더 선택
+title: 버전에 맞게 BattleWorks 설치하기
 slug: battleworks-update-0-1-6
 order: 208
-description: 현재 배포 요구 조건과 26.3 DNPC 전투 범위입니다.
+description: Minecraft 버전에 맞는 DRM·NPC 모드를 준비합니다.
 product: mob-editor
 category: 0.1.6과 로더 선택
 section: start
@@ -11,30 +11,28 @@ version: 0.1.6
 audience: 제작자 / 서버 운영자
 ---
 
-## 기존 대상의 DNPC 연동
+## 필요한 모드
 
-0.1.6 최신 수정본은 Forge 1.20.1·Fabric/NeoForge 1.21.1에서도 DRM 공개 NPC API로 DNPC의 전투 편집·우호/적대 관계·외형·제어권을 연결합니다. CustomNPCs는 선택입니다. NPC를 만들고 BattleWorks 문서를 저장·적용한 뒤 실제 타겟과 모션을 확인하세요.
+BattleWorks는 **DRM에 추가하는 NPC 전투 제작 모드**입니다. NPC는 DNPC 또는 CustomNPCs로 준비합니다.
 
-전투 임대 종료 후 다른 모드가 만든 이동 경로를 취소하지 않도록 수정했습니다. 기존 Forge·CustomNPCs 실습은 해당 제공자의 예시로 유지합니다. COMMON 실제 DNPC 실행 기록은 NeoForge 중심이며 Forge/Fabric과 모든 선택 모드 조합까지 동일하게 실기 검증했다고 뜻하지 않습니다.
+| Minecraft / 로더 | Java | 필요한 DRM |
+| --- | --- | --- |
+| Forge 1.20.1 | 17 | 0.2.8 이상 |
+| Fabric / NeoForge 1.21.1 | 21 | 0.2.9 이상 |
+| Fabric / NeoForge 26.3 | 25 | 0.2.8 이상 |
 
-## 현재 설치 기준
+서버와 클라이언트의 로더·버전을 맞춥니다. 26.3은 DNPC를 사용하며 CustomNPCs는 사용할 수 없습니다.
 
-BattleWorks **0.1.6**의 로컬 배포 메타데이터를 기준으로 합니다. 이전 README나 0.1.4 배포 묶음의 Core 조건과 구분하세요.
+## 전투 하나 만들어 보기
 
-| 대상 | Java | JAR이 선언한 DRM 조건 | NPC |
-| --- | --- | --- | --- |
-| Forge 1.20.1 | 17 | 0.2.8 이상 | DNPC / CustomNPCs 선택 |
-| Fabric·NeoForge 1.21.1 | 21 | 0.2.9 이상 | DNPC / CustomNPCs 선택 |
-| Fabric·NeoForge 26.3 | 25 | 0.2.8 이상 | DNPC 제공자, CustomNPCs 제외 |
+NPC를 배치한 뒤 BattleWorks에서 공격 문서를 만들고 NPC에 적용합니다. 먼저 [첫 근접 공격](#mob-editor/battleworks-first-attack)으로 준비 동작·타격·대기 순서를 만들어 보세요. 이 실습의 NPC 준비 화면은 Forge·CustomNPCs 예시입니다.
 
-DRM은 필수이고 CustomNPCs는 기존 대상에서도 선택 의존성입니다. 다만 이 위키의 기존 [첫 공격 실습](#mob-editor/battleworks-first-attack)은 **Forge·CustomNPCs** 작업 순서입니다. 이를 모든 DNPC 기능의 동일 지원으로 해석하지 마세요.
+DNPC에서도 전투·우호/적대 관계·외형을 연결할 수 있습니다. 추가 모션을 쓰려면 해당 모션을 제공하는 모드도 설치합니다.
 
-표는 현재 JAR의 선언이며 이전 모든 DRM이 실제로 비호환이라는 판정은 아닙니다. 기존 Fabric 포트는 `drm:battleworks_api=1` 기능도 필요합니다.
+## 예제 패턴 쓰기
 
-## 26.3에서 시작하기
+예제는 `config/dochi_rpg_maker/mobs/patterns/samples/`에서 불러옵니다. 내 패턴으로 바꿀 때는 **Save As**로 이름을 바꿉니다.
 
-같은 로더의 DRM·DNPC·BattleWorks를 설치하고 DNPC에 전투 문서를 적용합니다. 모델과 모션은 DRM의 지원 스택을 사용합니다. [26.3 안내](#core-fabric/minecraft-26-3)의 Java·제외 기능도 확인하세요.
+Better Combat 예제에는 호환 Better Combat과 모션에 필요한 모드가 있어야 합니다. 26.3에서는 구형 CustomNPCs 클론 소환을 쓰지 않습니다.
 
-내장 샘플 6종은 `config/dochi_rpg_maker/mobs/patterns/samples/`에 없는 파일만 설치합니다. 작업용 복사본은 `Save As`로 만듭니다. Better Combat 3연격 샘플은 호환 모드·라이브러리·NPC 모션 지원이 필요하며 해당 샘플의 실제 재생은 별도 미검증입니다.
-
-구형 `summon_clone`은 26.3에서 거부합니다. CustomNPCs 클론 이름을 DNPC 템플릿으로 자동 변환하지 않습니다. DNPC 서버·클라이언트의 제한된 실기 검증이 있으며 외부 마법·모션 모드 조합 전체를 검증한 것은 아닙니다. 0.1.6 버전 정렬만을 위해 기존 모든 게임플레이 검사를 다시 실행하지는 않았습니다.
+[설치와 NPC 준비](#mob-editor/mob-editor-setup) 또는 [전체 학습 순서](#mob-editor/mob-editor-overview)로 이어가세요.

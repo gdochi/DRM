@@ -16,11 +16,11 @@ tags:
 
 ## Stat Builder
 
-스탯 세트는 `config/dochi_rpg_maker/stats/sets/`에 저장되고 `stats/active_set.json`이 런타임 세트를 선택합니다. 각 스탯에는 ID, 이름, 설명, 아이템 아이콘, 최소/최대/기본값, 투자 비용, 바닐라/모드 속성 효과를 설정할 수 있습니다.
+스탯 세트는 `config/dochi_rpg_maker/stats/sets/`에 저장되고 `stats/active_set.json`이 플레이 세트를 선택합니다. 각 스탯에는 ID, 이름, 설명, 아이템 아이콘, 최소/최대/기본값, 투자 비용, 바닐라/모드 속성 효과를 설정할 수 있습니다.
 
 투자 재화는 Minecraft XP 레벨, DRM 커런시, 아이템 중에서 선택합니다. 비용 증가는 base, step, multiplier로 계산합니다.
 
-플레이어 투자 화면 기본 키는 `Y`입니다. `Allow Y key allocation UI`는 활성 세트를 키바인드로 열 수 있는지 결정합니다. 다이얼로그의 `Go Stat Builder`는 이 키바인드 전용 설정과 별개로 같은 런타임 화면을 엽니다.
+플레이어 투자 화면 기본 키는 `Y`입니다. `Allow Y key allocation UI`는 활성 세트를 키바인드로 열 수 있는지 결정합니다. 다이얼로그의 `Go Stat Builder`는 이 키바인드 전용 설정과 별개로 같은 플레이 화면을 엽니다.
 
 번들 `default_stat_gui.json`은 왼쪽의 넓은 스크롤 목록과 오른쪽의 값, 비용, 설명, 투자 버튼을 분리합니다. GUI Maker에서 복사본을 수정하세요.
 

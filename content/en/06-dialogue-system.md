@@ -1,8 +1,8 @@
 ---
-title: Dialogue System
+title: Create an NPC Conversation
 slug: dialogue-system
 order: 70
-description: DialogueDocument structure, dialogue set storage, and NPC runtime behavior.
+description: Write a greeting, add choices and connect the conversation to an NPC.
 product: core
 category: Core Systems
 section: dialogue-editor
@@ -14,90 +14,42 @@ tags:
   - npc
 ---
 
-## DialogueDocument Structure
+## Make a greeting and a reply
 
-Dialogue is read as one `DialogueDocument`. When saved to files, a dialogue set folder contains both `dialogue_set.json` and per-node JSON files.
+1. Open **Dialogue Editor** and choose **Use Default Dialogue Set**.
+2. Select a general node and write a greeting, such as “What brings you to town?”
+3. Add a choice: “Tell me about this place.”
+4. Create a general node containing the reply and connect the choice to it.
+5. Add a closing choice to that reply, such as “Thank you,” with a close action.
+6. Connect **start** to the greeting node.
+7. Use **Save As**, then right-click an NPC with the Core to apply it. Empty both hands and talk to the NPC.
 
-| Field | Meaning |
+## What is a node?
+
+A **general node is one conversation scene**: an NPC line and the player's choices. Connecting a choice to another node opens the next scene.
+
+**start** chooses the first scene. It points to a general node rather than displaying its own greeting. Each conversation set has one start node.
+
+## Make choices do something
+
+| Choice | Action |
 | --- | --- |
-| `version` | Current default is `1`. |
-| `dialogueScript` | Marks the file as a DRM dialogue document. |
-| `globals` | Compatibility flags such as FTB, GeckoLib, and shopScript. |
-| `dialogueDefaultGui` | GUI reference used by dialogue runtime. |
-| `setRegistry` | Dialogue set names. Default is `default_set`. |
-| `nodes` | Object keyed by node name. |
-| `current` | Current or starting node. |
-| `selectedSetScope` | Editor-side selected set scope. |
+| Hear the next part | Go to another node |
+| End the conversation | Close |
+| Buy something | Open a shop: `go_shop` |
+| Collect a reward | Give an item or currency |
+| Remember progress | Add/remove a tag |
 
-## Nodes And Choices
+A condition can show a choice only to certain players, such as offering a reward after a quest is complete. See [conditions and actions](#core/conditions-actions).
 
-| Unit | Field | Description |
-| --- | --- | --- |
-| Start node | `type: "start"` | Evaluates conditional routes when the player opens the NPC. |
-| General node | `type: "general"` | Holds NPC text, choices, and node conditions. |
-| Route | `routes` | From start nodes, chooses next node, shop, or close. |
-| Choice | `choice` | Player-visible choice. Conditions are applied before display. |
-| Condition | `conditions` | Decides whether nodes, routes, or choices are available. |
-| Action | `actions` | Runs movement, shop open, command execution, or state changes. |
+## Expand and reuse a conversation
 
-The current runtime uses the `choice` array. Older `choices` arrays are not the active field.
+Drag node/choice rows to change their order. Select several nodes with Shift+click or dragging and use **Copy / Paste**. Use **Duplicate** to copy an entire set.
 
-## Runtime Flow
+For a shop choice, create the [shop](#core/shop-system) first and select it in the action.
 
-```text
-NPC right-click
-  -> DialogueStorage.load(npc)
-  -> Evaluate start-node routes
-  -> Filter current-node choices
-  -> Open DialogueRuntimeScreen
-  -> Player clicks choice
-  -> Execute actions in order
-```
+## Change the window
 
-`goto`, `go_shop`, and `close` determine navigation. `command`, `tag`, `item`, `faction_score`, `advancement`, `ftb_task`, and `ftb_complete` are server side effects.
+Write content here and design the window in [GUI Maker](#core/gui-system). You can finish the conversation with the default layout and customize it later.
 
-## Storage
-
-Saving a `dialogue_set` server JSON produces a folder like this:
-
-```text
-config/dochi_rpg_maker/dialogue_sets/my_set/
-  dialogue_set.json
-  start.json
-  dialogue_1.json
-  action_examples.json
-```
-
-Loading prefers `dialogue_set.json` when present, then composes node files when available. The bundled `default_set` is protected; use `Save As` to create your own set.
-
-## NPC-Stored Values
-
-When dialogue is applied to an NPC, PersistentData stores keys in this family.
-
-| Key Family | Description |
-| --- | --- |
-| `dochi_rpg_maker.dialogue.json` | Embedded dialogue JSON. |
-| `dochi_rpg_maker.dialogue.source.kind` | Server JSON kind, usually `dialogue_set`. |
-| `dochi_rpg_maker.dialogue.source.path` | Server JSON path. |
-| `dochi_rpg_maker.dialogue.enabled` | Whether dialogue is enabled. |
-
-Runtime loads the server JSON reference first when present. If that fails, it falls back to the embedded NPC JSON.
-
-## 0.1.3 Authoring Workflow
-
-- `Shift+Click` or drag across node rows to select multiple nodes.
-- Use `Copy` / `Paste` or `Ctrl+C` / `Ctrl+V` to copy nodes within a set or into a selected `Dialogue Sets` target.
-- Paste generates collision-free names, remaps links inside the copied group, keeps external links, and carries Blueprint positions. The start node is normalized so the target set keeps one entry node.
-- Drag node, route, choice, condition, and action rows to reorder them.
-- `Duplicate` copies the entire dialogue set and Blueprint positions to a new set ID. Wait for the server save acknowledgement before using it at runtime.
-- Drag the `Dialogue Sets` sidebar edge to resize it; the width is remembered.
-
-Runtime choices now wrap and grow for long labels, then scroll when they exceed the available area. Default `Dialogue`, `Choice`, and `Close` labels follow client localization.
-
-:::tip Default Sample
-The bundled `default_set` starts at node 1, routes to greeting node 2, then branches through nodes 3-5. Clone it when testing new features.
-:::
-
-## Choice appearance in 0.1.5
-
-The **Choices** section now includes **Choice text px (0 = GUI)**. Select an answer to enable **Pulse highlight** and set its color, total ticks, pulse count, and intensity from **0 to 100**. Old dialogue files have no pulse unless you enable it. See **Choice Text And Pulse** for sizing, translated labels, scrolling, and effect timing.
+Saved sets are in `config/dochi_rpg_maker/dialogue_sets/<set name>/`. Copy the whole set folder when moving it to another server.

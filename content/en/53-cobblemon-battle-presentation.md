@@ -2,7 +2,7 @@
 title: Battle Presentation Maker Functional Guide
 slug: cobblemon-battle-presentation
 order: 530
-description: Understand the Battle Presentation Maker workspace, document limits, preview, saving, assignment, and runtime transition.
+description: Make a trainer entrance with text, pictures, models and sound.
 product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
@@ -15,18 +15,16 @@ tags:
   - workflow
 ---
 
-## Runtime purpose
+## Make an entrance
 
-`Battle Presentation Maker` builds the full-screen sequence shown before Cobblemon owns the battle. The editor Canvas and timeline are creator previews; they do not directly move entities in the world.
+1. Open **Battle Presentation Maker** from DRM's editor list and load an example.
+2. Use **Add Label** for VS text and **Add Texture** for pictures.
+3. Arrange text, pictures and models on the canvas.
+4. Set their start/end times on the timeline and play the preview.
+5. Use **Save As**.
+6. Choose the file under the trainer's **General → Battle Presentation**.
 
-1. The server validates the trainer, conditions, and player party.
-2. Optional Battle Positioning aligns the NPC and player.
-3. The server sends presentation JSON, opponent name, and player lead-ball data to the client.
-4. The client opens a non-pausing full-screen sequence that consumes input.
-5. Completion or an allowed skip is returned to the server.
-6. Conditions are rechecked and the round's `Battle start delay` elapses before Cobblemon starts.
-
-Presentation success does not replace battle validation. A missing target or invalid party can still cancel the battle.
+The scene plays before battle. **Duration** is its length; the round's **Battle start delay** is extra waiting afterward. **Skippable** lets players skip it.
 
 ## Four work areas
 
@@ -81,7 +79,7 @@ Name is display metadata inside the JSON. Trainers reference the `Save As` file 
 9. Save under `custom/`, then select that path in Cobblemon Editor.
 10. Save the battle document; an NPC tracking that source path normally needs no reapply.
 
-The editor preview and runtime share the renderer, but real skins, NPC models, aspect ratio, and sound resources must still be verified in an actual battle.
+Arrange the scene in preview, then play a battle to check the real skins, models, window size and sound.
 
 The image browser pages its results and loads thumbnails as needed, reducing the initial cost in large resource packs.
 

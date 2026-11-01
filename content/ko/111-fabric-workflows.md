@@ -24,7 +24,7 @@ tags:
 6. 반복되는 흐름은 `Shift+Click`으로 노드를 묶어 `Copy` / `Paste`하고, 행 드래그로 node/route/choice/condition/action 순서를 정리합니다.
 7. `Save As`로 `dialogue_sets/my_npc_dialogue`에 저장합니다.
 8. 코어 아이템으로 대상 NPC를 우클릭하고 대화를 적용합니다.
-9. NPC에 저장된 대화는 아이템 없이 우클릭할 때 런타임 화면으로 열립니다.
+9. NPC에 저장된 대화는 아이템 없이 우클릭할 때 플레이 화면으로 열립니다.
 
 ## 파일 기반 상점 NPC 만들기
 
@@ -42,7 +42,7 @@ tags:
 
 1. 코어 아이템으로 대상 NPC를 우클릭합니다.
 2. `NPC Shop`을 열어 현재 NPC 상점을 편집합니다.
-3. 저장하면 NPC PersistentData에 상점 JSON이 들어갑니다.
+3. 저장하면 NPC에 저장한 내용에 상점 JSON이 들어갑니다.
 4. 대화에서 `go_shop` 값을 비우거나 `bound`로 두면 이 NPC 상점을 엽니다.
 
 이 방식은 NPC 하나에 빠르게 붙일 때 편합니다. 여러 NPC가 같은 상점을 공유해야 한다면 파일 기반 상점이 관리하기 쉽습니다.
@@ -58,12 +58,12 @@ tags:
 7. 코어 아이템 없이 NPC를 우클릭해 검색, 카테고리, 목적지 상세 정보, 이동을 확인합니다.
 8. 대화 선택지에서 열려면 `go_teleporter`에 `bound` 또는 지정 세트 경로를 넣습니다.
 
-이동 요청은 서버가 현재 NPC 바인딩, 세션 거리/차원, 상호작용 조건, 목적지 접근 조건을 다시 검사한 뒤 실행합니다.
+NPC와 너무 멀리 떨어졌거나 목적지 이용 조건이 맞지 않으면 이동할 수 없습니다.
 
 ## NPC Spawner 블록 만들기
 
 1. `dochi_rpg_maker:npc_spawner`를 배치하고 `dochi_rpg_maker:dialogue_editor`로 우클릭합니다. 편집 권한이 있어야 하며 블록에서 8칸 안에 있어야 합니다.
-2. 재사용 템플릿을 `npc_spawner/entity_clones/<classification>`에 두거나, 인벤토리에 CustomNPCs Filled Soul Stone을 준비해 원자적 스냅샷 소스로 사용합니다.
+2. 재사용 템플릿을 `npc_spawner/entity_clones/<classification>`에 두거나, 인벤토리에 CustomNPCs Filled Soul Stone을 준비해 저장한 NPC로 사용합니다.
 3. `Source` 탭에서 소스를 검색/분류하고 최대 64개를 추가한 뒤 각각 1~10,000의 가중치를 줍니다.
 4. `Spawn` 탭에서 모드, 레드스톤 게이트, 쿨다운, 대상 반경, 오프셋/소환 반경, `Max Active`, `Wave Size`를 설정합니다.
 5. `Conditions`에서 대상 조건 그룹을 만들고, `Effects`에서 표시 여부, 파티클, Default/Item/Block 외형을 설정합니다.
@@ -87,11 +87,11 @@ tags:
 | 파일명 | 대화 세트, GUI, 상점, 텔레포터, 화폐 파일명이 의도한 ID와 맞아야 합니다. |
 | 기본값 | 기본 파일은 직접 수정하지 않고 복사본을 사용합니다. |
 | 연결 | 대화/상점/텔레포터 GUI와 상점 화폐 ID가 실제 파일과 맞아야 합니다. |
-| 월드 저장 | NPC PersistentData, NPC Spawner 블록 엔티티, 서버 JSON 파일을 구분합니다. |
+| 월드 저장 | NPC에 저장한 내용, NPC Spawner 블록 엔티티, 서버 JSON 파일을 구분합니다. |
 | 리로드 | 서버 JSON을 직접 수정했다면 `/drm reload` 또는 개별 reload 명령으로 갱신합니다. |
 
 :::tip 운영 복사본
-운영 서버에 옮길 때는 `config/dochi_rpg_maker` 전체와 월드 저장본을 함께 관리합니다. 월드 안 NPC PersistentData나 NPC Spawner 블록에만 저장된 데이터는 config 파일 복사만으로는 같이 이동하지 않습니다.
+운영 서버에 옮길 때는 `config/dochi_rpg_maker` 전체와 월드 저장본을 함께 관리합니다. 월드 안 NPC에 저장한 내용나 NPC Spawner 블록에만 저장된 데이터는 config 파일 복사만으로는 같이 이동하지 않습니다.
 :::
 
 :::tip 편집 중 빠른 조작

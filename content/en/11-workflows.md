@@ -42,7 +42,7 @@ tags:
 
 1. Right-click the target NPC with the core item.
 2. Open `NPC Shop` for that NPC.
-3. Save the shop to NPC PersistentData.
+3. Save the shop to saved NPC settings.
 4. Use a blank or `bound` `go_shop` value to open that NPC-bound shop.
 
 This is convenient for one-off NPCs. File-based shops are easier when multiple NPCs share the same shop.
@@ -63,11 +63,11 @@ This is convenient for one-off NPCs. File-based shops are easier when multiple N
 | Filenames | Dialogue set, GUI, shop, and currency filenames should match intended IDs. |
 | Defaults | Do not overwrite bundled defaults directly. |
 | Links | Dialogue GUI, shop GUI, and shop currency IDs should point to real files and definitions. |
-| NPC data | Keep file-based server JSON separate from NPC PersistentData. |
+| NPC data | Keep file-based server JSON separate from saved NPC settings. |
 | Reload | If server JSON is edited directly, run `/drm reload` or the matching reload command. |
 
 :::tip Production Copy
-Manage production data from the full `config/dochi_rpg_maker` folder. Data stored only in NPC PersistentData does not move with file copies alone.
+Manage production data from the full `config/dochi_rpg_maker` folder. Data stored only in saved NPC settings does not move with file copies alone.
 :::
 
 :::tip Editing Shortcuts

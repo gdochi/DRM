@@ -1,5 +1,5 @@
 ---
-title: JSON 레퍼런스
+title: JSON 레퍼런스 (고급)
 slug: json-reference
 order: 100
 description: DRM Core가 현재 읽고 쓰는 주요 JSON 형식과 필드 요약입니다.

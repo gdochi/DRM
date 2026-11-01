@@ -19,7 +19,7 @@ This page describes **natural-spawn profiles**. For placed spawners, use the [Sp
 
 ## What this screen is
 
-Spawn Control is an **authoring editor** for the server's active natural-spawn configuration. It is not a player-facing runtime screen. Changes remain in the current draft until you complete `Save` or a preset operation.
+Spawn Control is an **authoring editor** for the server's active natural-spawn configuration. It is not a player-facing in-game screen. Changes remain in the current draft until you complete `Save` or a preset operation.
 
 ## Topbar
 
@@ -38,7 +38,7 @@ Spawn Control is an **authoring editor** for the server's active natural-spawn c
 The catalog chooses the target for new rules.
 
 - Search registered mobs and saved CustomNPCs clones together.
-- Search by registry ID, display name, or mod name.
+- Search by ID, display name, or mod name.
 - Use `mod:<id>` or `support:<state>` queries.
 - Combine entity/clone source, support state, and installed-mod filters.
 - Preview the selected target in the middle panel.

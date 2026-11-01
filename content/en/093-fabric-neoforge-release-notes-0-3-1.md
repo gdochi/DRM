@@ -1,8 +1,8 @@
 ---
-title: 0.3.1 Update
+title: What's New in 0.3.1
 slug: release-notes-0-3-1
 order: 3
-description: Independent dialogue text boxes, DNPC movement integration and current installation.
+description: Add text/NPC names to dialogue layouts and use updated DNPC integrations.
 product: core-fabric
 category: Updates
 section: getting-started
@@ -11,36 +11,20 @@ version: 0.3.1
 audience: Creators / server operators
 ---
 
-## Current installation
+## Add names and labels to dialogue
 
-DRM **0.3.1** has Forge 1.20.1 / Java 17, Fabric and NeoForge 1.21.1 / Java 21, and separate Fabric and NeoForge 26.3 / Java 25 builds. Match Minecraft, loader and the actual patch on server and clients. This guide follows **local sources and production JARs checked on 2026-10-31**.
+In **GUI Maker → Text → Content**, choose your own text or **NPC name**. Place labels independently of the main dialogue: names, locations or short instructions.
 
-DRM and DNPC remain optional to one another. Check each addon's own requirements; ecosystem version numbers do not have to match. CustomNPCs is permanently excluded from 26.3. See the [26.3 scope](#core-fabric/minecraft-26-3).
+Set each box's position, size, fill and border, **Save As**, then select it for the conversation. Follow [screen customization](#core-fabric/gui-system).
 
-## Independent dialogue text boxes
+## Updated DNPC trainer and dialogue support
 
-The feature introduced in 0.3.0 is included. In the creator-facing GUI Maker, a **dialogue GUI** can contain several text boxes independently of the main dialogue and speaker components.
+On the older 1.20.1 / 1.21.1 targets, compatible DNPC and Cobblemon Editor patches let position-locked trainers dash and return.
 
-1. Open a dialogue layout and add **Text**.
-2. Set **Content** to **Direct input** or **NPC name**.
-3. Edit position, size, fill and border. Switching to NPC name preserves the manually entered text.
-4. Use **Save As** for a custom copy of a protected default layout.
-5. Link that GUI from the dialogue document and test the player-facing dialogue screen.
+Cobblemon's **Sequential** mode on Fabric/NeoForge 1.21.1 gives rewards after dialogue completion. See [reward settings](#drm-cobblemon-editor/cobblemon-trainer-editor).
 
-NPC names come from the current dialogue target and refresh when it is renamed. A missing target produces an empty runtime name; the editor sample is preview content. Existing dialogue and speaker components remain available.
+## Installation files
 
-JSON reference: a normal `text` element stores `textSource: literal` or `textSource: npc_name`. Missing or unknown values use literal text.
+Forge 1.20.1 uses Java 17; Fabric/NeoForge 1.21.1 uses Java 21; separate 26.3 files use Java 25. See [26.3 differences](#core-fabric/minecraft-26-3).
 
-## DNPC and addon integration
-
-- **Trainer movement:** the existing 1.20.1 / 1.21.1 actor-control API can temporarily permit movement. Compatible DNPC and Cobblemon Editor patches let trainers dash and return while position locking is enabled. Ordinary external control does not automatically unlock the NPC.
-- **Dialogue outcomes and validation:** Fabric and NeoForge 1.21.1 expose completion, cancellation, ESC and no-choice closure to addons and validate addon settings before saving. This supports Cobblemon's [Sequential actions](#drm-cobblemon-editor/cobblemon-trainer-editor).
-- **Existing features:** optional NPC models, [v3 templates](#dochi-npc-core/npc-core-templates) and Admin trainer-record deletion continue from the [0.2.9 notes](#core-fabric/release-notes-0-2-9).
-
-For the current combined trainer workflow, replace DRM, DNPC and Cobblemon Editor with the corresponding loader's current patches. This describes the checked feature combination, not a new assertion that every older Core is incompatible.
-
-## Update and verify
-
-Back up configuration and the world, replace the previous JAR, then check dialogue, shops, quests and the addons you use. Saving a file and applying it to an NPC remain separate actions. Match the actual patch files even when their version numbers are identical.
-
-The 0.3.1 version update preserved 0.3.0 runtime classes and resources. Earlier text-box runtime checks and later integration checks have distinct scopes; a version change alone does not establish complete gameplay retesting. Existing 26.3 migration and full-port verification limits still apply.
+New to DRM? Start with [getting started](#core-fabric/quick-start).

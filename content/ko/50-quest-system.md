@@ -14,7 +14,7 @@ tags:
   - journal
 ---
 
-## 저장과 런타임
+## 저장과 플레이
 
 퀘스트 팩은 `config/dochi_rpg_maker/quests/<pack>/`에 저장됩니다. `pack.json`은 팩/카테고리 순서를, `quests/` 폴더는 개별 퀘스트 JSON을 가집니다. 진행도는 서버가 소유하고 클라이언트에는 저널 뷰를 전송합니다.
 
@@ -56,6 +56,6 @@ Actions 페이지는 `After Complete`만 노출합니다. 서버 처리 순서�
 
 아이템·태그·세력 점수·발전 과제 등은 실행 방식에 맞는 동작과 대상 필드를 제공합니다. JSON 찾기는 등록된 종류의 서버 파일을 선택하며, 다른 팩의 퀘스트와 현재 미저장 퀘스트도 지원되는 선택기에서 찾을 수 있습니다.
 
-세력 점수에서 CustomNPCs 세력 또는 DNPC 관계 그룹을 선택합니다. DNPC 관계는 플레이어 평판이며 추가·차감·설정을 지원합니다. 최신 DRM과 관계 API가 들어 있는 DNPC를 함께 사용해야 하며 DNPC 부재 시 CustomNPCs로 대체하지 않습니다.
+세력 점수에서 CustomNPCs 세력 또는 DNPC 관계 그룹을 선택합니다. DNPC 관계는 플레이어 평판이며 추가·차감·설정을 지원합니다. DNPC 관계를 쓰려면 최신 DRM과 DNPC를 함께 설치합니다.
 
 퀘스트용 새 액션 목록에서는 `go_stat_builder`, `cobble_npc:go_battle`, `dochi_minigames:play`를 제외합니다. 기존 저장 액션과 대화 에디터 등록은 유지합니다.

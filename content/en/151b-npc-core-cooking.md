@@ -1,8 +1,8 @@
 ---
-title: Cooking Jobs and Ingredient Transport
+title: Cook and Deliver Food
 slug: npc-core-cooking
 order: 1514
-description: Native recipes, tools, ingredients, fuel and verified optional cooking integrations.
+description: Choose a recipe, ingredient storage and workstation for your cook.
 product: dochi-npc-core
 category: Jobs
 section: editor
@@ -11,34 +11,36 @@ version: 0.1.2
 audience: NPC creators
 ---
 
-## Create a cooking job
+## Prepare a cooking job
 
-These jobs belong to the existing Forge 1.20.1 and Fabric/NeoForge 1.21.1 targets. The added devices and addon runtime checks below were exercised on **NeoForge 1.21.1**, independently of 26.3.
+1. Place a reachable workstation and ingredient/output storage.
+2. Choose **Harvesting/production → Cooking** in Daycycle.
+3. Select the food from the recipe list.
+4. Assign ingredient storage, the workstation and output storage.
+5. Supply ingredients, tools and fuel, then save.
 
-1. Select a cooking job under daycycle harvesting/production.
-2. Choose an installed device and actual recipe from the server catalog.
-3. Assign ingredient storage, the workstation and product storage.
-4. Supply the required tools, ingredients and fuel, and provide a reachable route.
-5. Choose repetition, save, then check real consumption and delivery.
+Enable **Repeat** for continued cooking. Disable it to finish and deliver one batch, then wait.
 
-Tools are displayed separately from ingredients. Repetition defaults to enabled. Disable it to collect and deliver one batch, then wait in the completed state. Selecting a recipe alone does not generate its result.
+## Available workstations
 
-## Device scope
-
-| Device | Behavior |
+| Device | What the NPC does |
 | --- | --- |
-| Farmer's Delight cutting board | Native tool requirements, ingredients, results and byproducts |
-| Vanilla furnace/smoker | Loads actual ingredients and fuel; the original block performs heating |
-| Farmer's Pizzeria | Native dough rolling and topping, followed by collection and cooking |
-| French Delight cheese mold | Filling, 1,200-tick aging, collection and empty-bucket return |
-| Baskets/cabinets | Ingredient, intermediate and product transport; supported cabinet animations |
+| Furnace/smoker | Adds ingredients and fuel, then collects the result |
+| Farmer’s Delight cutting board | Prepares ingredients with the required tool |
+| Farmer’s Pizzeria | Rolls dough, adds toppings and collects raw pizza |
+| French Delight cheese mold | Fills the mold, waits for aging and collects cheese |
+| Supported baskets/cabinets | Moves ingredients, intermediate items and products |
 
-Runtime checks used Farmer's Pizzeria 1.3.0 and the installed French Delight and related addons. These tested versions do not establish new minimum requirements. DNPC does not require these mods or generate missing workstations or recipes.
+Extra devices need their respective mods. The combined cooking-addon guide above is based on **NeoForge 1.21.1**. On other loaders, choose from installed devices and the available recipe list. This is not a 26.3 cooking guide.
 
-## Interruptions and saving
+## Ingredients are ready, but cooking does not start
 
-Reservations and uncollected products survive saving. Brief interaction or approach delays do not discard valid workstation contents. Existing loose food nearby is not collected as a newly produced result. External changes to devices, ingredients or products trigger validation.
+- Supply the required **tool** as well as ingredients.
+- Check the assigned ingredient storage and workstation.
+- Leave a walkable route and room to stand at the device.
+- Furnaces/smokers need **fuel**.
+- Full output storage can delay collection or delivery.
 
-Current 0.1.2 patches address lost fuel/ingredients, missing cheese buckets and pizza reset failures, alongside lumber/mining target and return improvements. Standalone NeoForge completed a batch using a vanilla smoker and barrel. Every addon combination on the other loaders has not been runtime-tested.
+Cheese aging takes 1,200 ticks, about one minute at normal speed. If conversation briefly interrupts cooking, the NPC can collect the food after the device finishes.
 
-See [schedules](#dochi-npc-core/npc-core-schedules) for military, riding and shop timing, and [v3 templates](#dochi-npc-core/npc-core-templates) for save/clone distinctions.
+Choose working hours in [schedules](#dochi-npc-core/npc-core-schedules).

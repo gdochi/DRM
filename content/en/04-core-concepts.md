@@ -1,8 +1,8 @@
 ---
-title: Core Concepts
+title: Save, Load and Apply
 slug: core-concepts
 order: 50
-description: Core terms for DRM editors, runtime behavior, server JSON, and NPC binding.
+description: Understand the buttons you use to save work and attach it to an NPC.
 product: core
 category: Core Systems
 section: getting-started
@@ -14,65 +14,31 @@ tags:
   - glossary
 ---
 
-## Glossary
+## The buttons you will use
 
-| Term | Meaning |
+| Button | Use it to |
 | --- | --- |
-| Editor Descriptor | Definition shown in the editor selector: ID, title, sort order, and target requirements. |
-| Source Choice | Initial Load Existing, Use Default, or Create New decision. |
-| Server JSON Domain | A server-known JSON kind such as `dialogue_set`, `gui`, or `npc_shop`. |
-| Layout Profile | Defines storage, default ID, and default file for a GUI type such as `dialogue` or `npc_shop`. |
-| Dialogue Document | Root JSON for a dialogue set: nodes, choices, conditions, actions, and GUI reference. |
-| Shop Document | NPC shop JSON: trade mode, products, sale offers, currency, and shop GUI reference. |
-| Currency Definition | JSON for one currency: item icon, pickup conversion, HUD visibility, and death-loss rules. |
-| NPC Binding | Either embedded JSON on an NPC or a `source.kind` plus `source.path` reference to server JSON. |
-| Protected Default | Bundled sample/default data that should be cloned with `Save As` instead of edited in place. |
+| **Load** | Open saved work or a bundled example |
+| **Save** | Keep changes to your own file |
+| **Save As** | Make your own copy of an example or save under another name |
+| **Apply** | Attach a conversation, shop or other saved work to an NPC |
 
-## Editor vs Runtime
+**Close** and the Back/Forward arrows do not save your work.
 
-Editors create and save JSON. Runtime code reads the saved JSON when a player interacts with an NPC and performs the actual dialogue, shop, HUD, command, item, and currency behavior.
+## Content and appearance are separate
 
-| Stage | Location | Example |
-| --- | --- | --- |
-| Authoring | Client screen plus server save | Edit a dialogue node and save server JSON. |
-| Binding | Server NPC PersistentData | Store `source.kind`, `source.path`, or embedded JSON on an NPC. |
-| Runtime | Server logic plus client screen | Filter choices by conditions and open the dialogue screen. |
-| Result | Server state | Run commands, give items, change tags, update currency. |
+Write dialogue and choices in **Dialogue Editor**. Arrange the dialogue window, colors and images in **GUI Maker**. Set products and prices in **NPC Shop**.
 
-## Connection Model
+You can finish the content using the default screen first. To change its appearance later, choose your saved GUI in the conversation or shop's GUI settings.
 
-DRM content is normally a chain of linked data. A dialogue choice can open a shop, the shop references a GUI, and the GUI references components and resources.
+## Reuse work on several NPCs
 
-```text
-CustomNPCs NPC
-  -> DialogueStorage or NpcShopStorage
-      -> ServerJsonStorage(kind, path)
-          -> Dialogue / Shop / GUI / Currency JSON
-              -> Runtime screen
-                  -> Condition checks
-                  -> Action execution
-```
+Apply one saved conversation to several NPCs to share it. Editing that file updates their shared content. For different conversations, make separate copies with **Save As**.
 
-## File-Based vs Embedded NPC Data
+Shops using the same product file still have **separate stock for each NPC**. Players visiting the same NPC share that NPC's stock.
 
-| Method | Benefit | Watch Out For |
-| --- | --- | --- |
-| Server JSON reference | Multiple NPCs can share one file and reload changes. | Keep filenames and IDs stable. |
-| Embedded NPC JSON | Simple for one-off NPCs. | Harder to manage as files because data lives inside world/NPC data. |
+## Conditions and actions
 
-If a shop has finite stock, runtime updates are saved back to the source file when possible. Embedded shops update the NPC-stored shop data.
+A **condition** decides who can see or use something: for example, showing a choice after a quest is complete. An **action** decides what happens when it is chosen, such as giving an item or opening a shop.
 
-## Defaults And Settings
-
-`settings/defaults.json` stores default dialogue GUI, default shop GUI, and default currency settings. Empty GUI references in dialogue or shop documents are filled from these defaults.
-
-`settings/reload_policy.json` controls server JSON cache behavior and reload commands.
-
-| Setting | Default | Meaning |
-| --- | --- | --- |
-| `reloadOnTrigger` | `true` | Reload fresh JSON when it is used instead of relying on cache. |
-| `manualReloadCommand` | `true` | Allows `/drm reload` and `/drm currency reload`. |
-
-:::tip Debugging Tip
-When something breaks, first ask which JSON is connected through which path. Most issues are stale or mismatched links rather than malformed screens.
-:::
+Use [conditions and actions](#core/conditions-actions) to add these behaviors.

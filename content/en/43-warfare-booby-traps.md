@@ -23,7 +23,7 @@ tags:
 * Right-click air with the core to open the manager for registered traps.
 * Put the core away before testing a configured trap through normal block interaction.
 
-The editor and manager are creator screens. Password prompts and trap effects are player runtime behavior, and the server makes the final validation and trigger decision.
+The editor and manager are creator screens. Password prompts and trap effects are player in-game behavior, and the server makes the final validation and trigger decision.
 
 ## Trap types
 
@@ -68,7 +68,7 @@ Test in this order:
 
 Right-click air with the core to search registered traps and inspect status such as active, disabled, disarmed, unloaded chunk, stale block, pending delayed explosion, or missing dependency. `Remove Trap` removes only the trap state; `Destroy Block` removes the state and target block. Destructive manager actions require a second confirmation.
 
-While the core is held in Creative mode, nearby configured traps can be shown with server-authoritative outlines and compact markers. Reusable JSON profiles are stored under:
+While the core is held in Creative mode, nearby configured traps can be shown with outlines and compact markers. Reusable JSON profiles are stored under:
 
 ```text
 config/dochi_warfare/booby_traps/profiles/

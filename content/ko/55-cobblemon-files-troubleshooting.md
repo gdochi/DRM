@@ -29,7 +29,7 @@ tags:
 | `cobblemon/starter_selectors/` | Starter Selector 문서 |
 | `cobblemon/entity_clones/` | 애드온 Clone Library 호환 클론 |
 | `npc_spawner/entity_clones/` | 최신 DRM Core NPC Spawner 클론 |
-| `gui/` | PokéMart·Starter Selector 등 런타임 GUI 배치 |
+| `gui/` | PokéMart·Starter Selector 등 플레이 GUI 배치 |
 | `cobblemon/_migration_backups/` | 기본 파일 자동 마이그레이션 백업 |
 
 `Save As`에는 현재 도메인 안의 상대 경로를 입력합니다. Trainer에서 `custom/gym/leader.json`을 저장하면 실제 파일은 다음 위치입니다.
@@ -54,31 +54,16 @@ config/dochi_rpg_maker/cobblemon/_migration_backups/canonical_defaults_<timestam
 기본 파일을 직접 운영 원본으로 쓰지 말고 `custom/` 아래 새 파일로 저장하세요. 업데이트 파일과 사용자 콘텐츠가 섞이지 않아 복구와 비교가 쉬워집니다.
 :::
 
-## 현재 스키마
-
-| 문서 | 스키마 | 주요 제한 |
-| --- | ---: | --- |
-| Trainer / Pokemon Itself | 23 | 라운드 16, Trainer 파티 1–6, 조건/액션 각 32 |
-| Trainer Brain | 4 | 라운드별 AI 엔진·6개 능력치·전략·아이템 정책 |
-| Battle Presentation | 4 | Duration 1–600틱, 요소 64 |
-| PokéMart | 7 | Sales 256, Trade 128, 문서당 Role 하나 |
-| Nurse Joy | 2 | 치료기 거리 1–16, 고정 Heal/Close 대화 |
-| Starter Selector | 2 | 옵션 32, 성공 액션 32 |
-| Entity Clone | 1 | Clone ID와 스냅샷/원본 추적 |
-| DRM Core NPC Spawner | 4 | 소스 64, 조건 32, 활성/웨이브 각 32 |
-
-지원되는 구형 파일은 로드 과정에서 최신 필드로 보정됩니다. 미래 스키마 번호는 거부할 수 있습니다. JSON을 직접 편집할 때 `schemaVersion`만 임의로 올리지 마세요.
-
 ## Save, Apply와 원본 추적
 
 | 작업 | 바뀌는 것 |
 | --- | --- |
 | `Save` / `Save As` | 서버 JSON 파일 |
-| 최초 `Apply` | NPC의 역할, 원본 경로, 대체 스냅샷 |
-| 같은 경로에 다시 Save | 다음 런타임 요청에서 최신 원본 사용 |
+| 최초 `Apply` | NPC의 역할, 원본 경로, 적용할 때 보관한 설정 |
+| 같은 경로에 다시 Save | 다음 플레이 요청에서 최신 원본 사용 |
 | `/drm reload` | 외부 파일 변경과 서버 캐시 새로고침 |
 
-Trainer, Pokemon Itself, PokéMart, Nurse Joy, Starter Selector는 파일 기반 Apply에서 기본적으로 원본을 추적합니다. 원본이 없거나 잘못되면 적용 당시 스냅샷으로 안전하게 대체합니다.
+Trainer, Pokemon Itself, PokéMart, Nurse Joy, Starter Selector는 파일 기반 Apply에서 기본적으로 원본을 추적합니다. 원본이 없거나 잘못되면 적용 당시 복사본으로 안전하게 대체합니다.
 
 다시 Apply해야 하는 경우:
 
@@ -90,7 +75,7 @@ Trainer, Pokemon Itself, PokéMart, Nurse Joy, Starter Selector는 파일 기반
 
 ## 상호작용 우선순위
 
-편집 도구를 든 클릭은 도구 흐름을 보호합니다. 일반 런타임은 주손·보조손을 모두 비운 Main Hand 클릭을 기준으로 합니다.
+NPC를 편집할 때는 코어를 들고, 대화·상점·배틀을 이용할 때는 양손을 비우고 우클릭합니다.
 
 | 순서 | 상태 | 결과 |
 | --- | --- | --- |
@@ -108,9 +93,9 @@ DRM Core 대화/상점과 Nurse Joy·Starter Selector를 함께 적용한 NPC는
 ### 파일을 저장했는데 NPC가 옛 설정을 사용함
 
 1. NPC가 추적하는 원본 경로와 편집한 파일이 같은지 확인합니다.
-2. 새 창·새 전투 요청으로 런타임을 다시 엽니다.
+2. 새 창·새 전투 요청으로 플레이을 다시 엽니다.
 3. 서버 밖에서 고쳤다면 `/drm reload`를 실행합니다.
-4. 원본 JSON이 파싱 실패해 대체 스냅샷을 쓰는지 서버 로그를 확인합니다.
+4. 파일에 오류가 있으면 이전 설정이 열릴 수 있으므로 저장 오류 메시지를 확인합니다.
 5. Snapshot 클론인지 확인합니다.
 
 ### Load 목록에 파일이 없음
@@ -148,7 +133,7 @@ DRM Core 대화/상점과 Nurse Joy·Starter Selector를 함께 적용한 NPC는
 - `When`이 실제 결과와 맞는지 확인합니다.
 - Chance, All/One Random, 반복 정책을 확인합니다.
 - 현재 라운드의 액션을 편집했는지 확인합니다.
-- FTB Quests·통화 공급자 같은 선택 의존성을 확인합니다.
+- FTB Quests·통화 공급자 같은 선택 설치을 확인합니다.
 - 실패 액션은 다음 배틀 요청에서 재시도되므로 서버 로그와 보류 상태를 확인합니다.
 
 ### Nurse Joy가 치료하지 않음

@@ -1,8 +1,8 @@
 ---
-title: Assets, Models, And Animation Metadata
+title: Add Your Pictures and NPC Models
 slug: assets-models
 order: 130
-description: Server PNG assets, picker filters, mcmeta animation, and NPC model/animation providers.
+description: Import a PNG for your screens and choose NPC models and animations.
 product: core
 category: World And NPC Tools
 section: world-tools
@@ -15,27 +15,25 @@ tags:
   - animation
 ---
 
-## Server Asset Root
+## Put your picture on a screen
 
-Place creator PNG files under `config/dochi_rpg_maker/assets/textures/`. The server catalogs safe relative paths and transfers the selected runtime data to clients. A PNG is limited to 8 MiB, 4096 pixels per side, and 16 million pixels.
+1. Put the PNG under the server's `config/dochi_rpg_maker/assets/textures/`.
+2. Open the image picker for an **Image** element in GUI Maker.
+3. Search its name and check the preview.
+4. Press **Apply**, then save the GUI.
 
-## Asset Picker Policy
+Server images are sent to joining players. Each PNG can be up to 8 MiB, 4096 pixels on either side and 16 million pixels total.
 
-- Search matches the resource path.
-- Mod/namespace and first parent-folder filters are multi-select checkboxes.
-- Paging is server bounded; changing pages does not apply a texture.
-- Select a row, verify its preview, then press `Apply`.
-- The picker renders the target texture over its list preview surface instead of a generic item-slot placeholder.
+## Change an NPC's model
 
-## Animated PNG Metadata
+In **NPC Basic**, choose a model and texture. Rotate/zoom the preview and adjust size and hit bounds.
 
-For `priestall.png`, place metadata beside it as `priestall.png.mcmeta`. 0.1.4 reads the standard `animation` object, including frame width/height, `frametime`, explicit `frames`, per-frame time, and `interpolate`.
+For Gecko models, install **GeckoLib** for your Minecraft version and connect the model, animation and texture files. Choose animations for walking, attacking, hurt, death and other activities.
 
-Metadata is accepted only when valid and bounded: up to 16 KiB and 4096 animation frames. A malformed or out-of-root companion file is ignored safely.
+Use **loop** to repeat, **once** for a single play, or **hold-last** to keep the final pose.
 
-## NPC Models And Animations
+## Animated PNGs
 
-NPC Basic supports presentation providers for GeckoLib, modded entities, Player Animator, and Better Combat where available. Animation behavior bindings include idle, walk, sprint, attack, hurt, and death, with loop/once/hold-last playback controls.
+Place a resource-pack-style `.png.mcmeta` beside the picture: for example, `priest.png` and `priest.png.mcmeta`. That file sets frame size, order and speed.
 
-Use bundled Gecko examples only as templates. Keep custom model, animation, texture, and metadata paths together and test the final NPC on every required client mod combination.
-
+Continue with [GUI Maker](#core/gui-system) to arrange it on screen.

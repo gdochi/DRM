@@ -29,7 +29,7 @@ Fabric also requires Loader 0.18.0+ and Fabric API 0.116.11+1.21.1+. See [Instal
 
 ## Moving authoring data
 
-Authoring documents use `config/dochi_rpg_maker`. Server JSON is authoritative; runtime state such as NPC bindings and player progress also lives in the world.
+Authoring documents use `config/dochi_rpg_maker`. Server files provide the shared settings. The world also stores NPC connections and player progress.
 
 1. Back up config and the world together.
 2. Prepare a separate instance with the destination loader's DRM and dependencies.

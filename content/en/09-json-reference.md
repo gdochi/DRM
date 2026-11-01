@@ -1,5 +1,5 @@
 ---
-title: JSON Reference
+title: JSON Reference (Advanced)
 slug: json-reference
 order: 100
 description: Current DRM Core JSON shapes and key fields.

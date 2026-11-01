@@ -2,7 +2,7 @@
 title: GUI, Files and Troubleshooting
 slug: minigames-files-gui
 order: 1320
-description: Separate rule files from runtime layouts, edit them with GUI Maker, and diagnose common issues.
+description: Separate rule files from in-game layouts, edit them with GUI Maker, and diagnose common issues.
 product: dochi-minigames
 category: Files and Operations
 section: operations

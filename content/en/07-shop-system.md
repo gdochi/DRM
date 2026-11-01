@@ -1,8 +1,8 @@
 ---
-title: Shop System
+title: Create an NPC Shop
 slug: shop-system
 order: 80
-description: NPC Shop JSON, buy/sell modes, stock, currency, and shop GUI references.
+description: Choose products, prices and payment, then give an NPC a shop.
 product: core
 category: Core Systems
 section: npc-shop
@@ -14,129 +14,49 @@ tags:
   - economy
 ---
 
-## ShopDocument Structure
+## Make a shop that sells bread
 
-An NPC shop is JSON with `type: "npc_shop"` and `schemaVersion: 2`. Runtime reads this document and performs buy, sell, stock, and currency operations server-side.
+1. Open **NPC Shop** and load a default shop.
+2. Choose **buy-only**. “Buy” means the player buys from the NPC.
+3. Add bread and set the quantity and price for one purchase.
+4. Choose an item payment, such as emeralds. To use DRM money, create it in Currency Editor first.
+5. Set stock to **-1** for unlimited sales while setting up.
+6. Use **Save As** to save your shop.
+7. Right-click the NPC with the Core, apply the shop, then empty both hands to open it.
 
-| Field | Meaning |
+## Selling and buying back
+
+| Goal | Setup |
 | --- | --- |
-| `id` | Unique shop ID. Matching the filename helps dialogue actions find it. |
-| `title` | Display name. `titleTranslationKey` is supported. |
-| `currency` / `currencyItem` | Item-currency fallback, such as `minecraft:emerald`. |
-| `currencyType` / `currencyId` | Use `currency` plus a DRM currency ID for definition-backed currency. |
-| `tradeMode` | One of `buy_only`, `sell_only`, or `buy_sell`. |
-| `display` | Item description, search bar, and list mode options. |
-| `shopDefaultGui` | Default shop GUI reference. |
-| `shopGuis.buy` / `shopGuis.sell` | Separate buy and sell GUI references. |
-| `items` | Products sold by the NPC. |
-| `sellItems` | Items the NPC buys from players. |
+| NPC sells to the player | Add products to the buy list |
+| NPC buys items from the player | Add them to the sell/buyback list |
+| Both | Use buy-and-sell mode |
 
-## Trade Modes
+The NPC only buys back listed items. You can list the same item several times with different quantities or prices.
 
-| tradeMode | Buy | Sell | Description |
-| --- | --- | --- | --- |
-| `buy_only` | Yes | No | NPC sells items to the player. |
-| `sell_only` | No | Yes | NPC buys items from the player. |
-| `buy_sell` | Yes | Yes | Both buy and sell views are enabled. |
+## Stock and restocking
 
-Older `buyEnabled`, `sellEnabled`, and `shopMode` values are normalized into `tradeMode` on load.
+Stock **0** means sold out; **-1** means unlimited. For limited sales, use a positive stock and set maximum stock, refill amount and interval under **RESTOCK**.
 
-## Product Fields
+**Timer basis** applies to the whole shop.
 
-| Field | Buy product `items` | Sell offer `sellItems` |
-| --- | --- | --- |
-| `productId` | Unique product row ID | Unique sell offer row ID |
-| `item` | Item ID to give | Item ID to buy |
-| `count` | Count given per buy unit | Count required per sell unit |
-| `price` | Price per buy unit | Payout per sell unit |
-| `stock` | Stock. `-1` means unlimited. | Not used. |
-| `maxStock` | Maximum stock reached by automatic restocking. | Not used. |
-| `restock` | Enabled state, amount, interval, and next game time. | Not used. |
-| `currencyType` / `currencyItem` / `currencyItemNbt` / `currencyId` | Optional per-product payment override. | Not used. |
-| `description` | Text or translation key shown in description panel. | Usually unused. |
-| `action` | Command-like string after successful buy. | Not used. |
-| `nbt` | Optional | Require matching item NBT. |
-
-Duplicate product IDs are repaired with suffixes on load. Blank item IDs default to `minecraft:stone`.
-
-## Buy Runtime
-
-Buying runs server-side:
-
-1. Resolve the shop target as `bound` or a file/ID target.
-2. Check that `tradeMode` allows buying.
-3. Validate selected product and requested quantity.
-4. Limit quantity to available stock when stock is finite.
-5. Check inventory space.
-6. Charge item currency or DRM currency balance.
-7. Give the item and update finite stock.
-
-`stock: 0` means sold out. `stock: -1` means unlimited. Price is `price * quantity`. Finite products can use `maxStock` plus `restock.enabled`, `amount`, `intervalTicks`, and server-managed `nextGameTime`. Runtime shows `Restock in` or `Restock ready` when applicable.
-
-## Per-Product Payment
-
-Each buy product can use `Inherit Shop`, `Override: Item`, or `Override: Currency`. Item overrides accept exact SNBT in `currencyItemNbt`; for example, TACZ ammunition can use `{AmmoId:"tacz:9mm"}` in `Payment NBT`. Invalid NBT or an unknown DRM currency fails closed instead of falling back to another payment. Existing 0.1.2 fields remain available through the legacy item/currency compatibility modes.
-
-## Sell Runtime
-
-Selling requires an explicit selected `sellItems` offer. If the same item can be sold at different prices, runtime verifies that the selected offer still matches the inventory slot.
-
-| Check | Description |
+| Setting | Time counted |
 | --- | --- |
-| Item ID | Inventory item must equal `sellItems[].item`. |
-| NBT | If `sellItems[].nbt` exists, the item NBT string must match. |
-| Unit count | Available count is rounded down to the offer `count` unit. |
-| Price | `price` must be greater than 0. |
+| **Real ticks** | Time actually played; skips made by sleeping are excluded |
+| **World ticks** | World time, including time skipped by sleeping |
 
-## Shop GUI Reference
+At normal speed, 20 ticks is one second and 24,000 ticks is about 20 minutes. Real ticks does not count time while the server is off. Unlimited and buyback entries do not restock.
 
-Shop runtime expects a GUI JSON with `guiType: "npc_shop"`. The default shop GUI includes search, page controls, action button, transaction preview, and currency display components.
+Different NPCs have separate stock even when they use the same product file. Players visiting the same NPC share its stock.
 
-```json
-{
-  "shopDefaultGui": {
-    "guiSource": "default",
-    "guiJsonFileName": "default_shop_gui.json",
-    "guiJsonPath": "default_shop_gui.json"
-  }
-}
-```
+## Different payment for one product
 
-Use `shopGuis.buy` and `shopGuis.sell` when buy and sell views need different layouts.
+**Inherit Shop** uses the shop's money. **Override: Item** chooses a separate payment item. **Override: Currency** chooses separate DRM currency.
 
-## Server-Side Trade Safety
+Select a custom item from inventory when its exact name, enchantments or variant matters.
 
-The server revalidates the active session, NPC, dimension, distance, product, stock, and payment before every trade. Finite stock is reserved and saved before charging; delivery or payment failures restore stock and refund payment. Runtime stock and deadlines persist in each NPC's NBT and update viewers of that NPC. The source shop JSON stores initial stock, products, and restock configuration.
+## Open a shop from dialogue
 
-## Opening Shops From Dialogue
+Add an **open shop / go_shop** action to a dialogue choice and choose the saved shop. Use **bound** for the shop already applied to that NPC.
 
-The dialogue action `go_shop` opens a shop.
-
-| Value | Meaning |
-| --- | --- |
-| `bound` or blank | Open the shop attached directly to the NPC. |
-| `blacksmith` | Find `npc_shops/blacksmith.json` or a shop whose ID is `blacksmith`. |
-| `folder/blacksmith.json` | Resolve a shop file under a subfolder. |
-
-## Initial stock and NPC state
-
-Forge 0.2.1 stores runtime stock and restock deadlines per NPC. Two NPCs using the same shop JSON keep separate stock. Reconnecting preserves that NPC's state; a new world or a copied NPC starts from the definition.
-
-Keep stable `productId` values when editing prices or reordering products. Changing initial stock, restock settings, or the product definition resets that product's runtime state. Exported definitions omit server-managed deadlines. Existing JSON stock becomes the initial value; older stock overwritten by past purchases cannot be reconstructed automatically.
-
-## Choosing the restock clock
-
-Select a buy product and find `Timer basis` in its **RESTOCK** details. Although the control appears in product details, it selects **one clock for the entire shop**. Products in the same shop do not choose separate clocks.
-
-| Timer basis | Time source |
-| --- | --- |
-| `Real ticks` | Counts game ticks actually processed by the server. Sleep skips do not count. This is the default. |
-| `World ticks` | Uses Overworld date/time. Sleep skips count toward restocking. |
-
-`Real ticks` does not count wall-clock time or time while the server is stopped. At normal 20 TPS, 24000 ticks is about 20 minutes; slowdown or a paused server changes the real wait.
-
-Enable restocking with finite `stock` and positive `maxStock`, `amount`, and `intervalTicks`. The timer starts below maximum stock. Due restocks add units without exceeding the maximum; a shop closed for several intervals can catch up.
-
-Changing the clock or moving time backward with `/time set` rebases the remaining cooldown. `nextGameTime` is a server-managed deadline in the selected clock, so do not calculate it by hand.
-
-JSON reference: root `restockTimeMode` is `real_ticks` or `world_ticks`. Product `restock` stores enabled state, amount, and interval. Sell offers and unlimited stock do not restock.
+Use [GUI Maker](#core/gui-system) for the window's layout and pictures. Products and prices are still edited in NPC Shop.

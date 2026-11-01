@@ -16,7 +16,7 @@ tags:
 
 ## 역할
 
-Currency Editor는 DRM Core의 화폐 정의 JSON을 만드는 에디터입니다. 화폐 정의는 `config/dochi_rpg_maker/currency/definitions`에 저장되고, 런타임에서는 플레이어 PersistentData의 잔액 키와 연결됩니다.
+Currency Editor에서 돈의 이름·아이콘·아이템 변환·사망 시 잃는 양을 정합니다. 만든 화폐는 상점이나 보상, HUD에서 선택해 사용합니다.
 
 화폐는 단순 표시값이 아닙니다. NPC Shop 결제, 아이템 픽업 변환, HUD 표시, 사망 시 잔액 처리에 모두 사용됩니다.
 

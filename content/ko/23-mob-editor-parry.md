@@ -36,7 +36,7 @@ tags:
 | 공통 Magic Projectile Parry | 지원되는 Iron's Spellbooks 투사체 반사 연동 |
 | 공통 Lock-on | 전역 허용 설정과 클라이언트 표현 설정 |
 | Hitbox Debug | 실제 판정 확인용 표시. 별도 피해를 만들지 않음 |
-| 문서의 Parry Window·Posture·Riposte 값 | 저장·편집되지만 해당 BattleWorks 패턴 런타임 소비는 확인되지 않음 |
+| 문서의 Parry Window·Posture·Riposte 값 | 저장·편집되지만 해당 BattleWorks 패턴 플레이 소비는 확인되지 않음 |
 | 패턴의 Parryable·Posture Damage On Parry | 이것만으로 체간 감소·근접 패링·리포스트가 완성되지 않음 |
 | guard / evade 즉시 반응 패턴 | 별도 피해 반응 기능. [패시브 안내](#mob-editor/battleworks-passives) 참조 |
 

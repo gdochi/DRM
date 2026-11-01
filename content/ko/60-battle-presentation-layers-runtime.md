@@ -1,8 +1,8 @@
 ---
-title: 레이어와 런타임
+title: 글자·그림·모델과 재생 타이밍
 slug: battle-presentation-layers-runtime
 order: 531
-description: 연출 레이어, 타임라인, 액터, 오디오와 런타임 동작입니다.
+description: 글자·모델을 배치하고 움직임·그림·소리의 재생 시점을 정합니다.
 product: drm-cobblemon-editor
 category: Battle Presentation Maker
 section: presentation
@@ -24,7 +24,7 @@ tags:
 | `Texture` | Minecraft 리소스 이미지를 박스에 그립니다. 이미지가 없거나 잘못되면 색상 사각형으로 표시될 수 있습니다. | Image, Opacity, Fit, Crop |
 | `Color` | 단색 ARGB 사각형을 그립니다. | Color, 박스 크기, Alpha |
 
-Label의 `{player_name}`과 `{opponent_name}`은 런타임 참가자 이름으로 치환됩니다. 부분 글자 색상은 원본 문자열 인덱스에 저장되고, 플레이스홀더가 치환되면 해당 토큰의 스타일을 새 이름이 상속합니다.
+Label에 `{player_name}`을 쓰면 플레이어 이름, `{opponent_name}`을 쓰면 상대 이름이 표시됩니다.
 
 Texture의 Image는 `namespace:textures/...png` 형식의 리소스 ID입니다. 파일 시스템 절대 경로는 사용할 수 없습니다.
 
@@ -55,7 +55,7 @@ Texture의 Image는 `namespace:textures/...png` 형식의 리소스 ID입니다.
 | Animation | Start/Final Alpha | 기본 투명도 보간 |
 | Animation | Easing | From에서 To로 이동하는 진행 곡선 |
 
-Color 요소는 Image 설정을 사용하지 않고, Texture 요소는 Text 스타일을 사용하지 않습니다. 공통 구조에 필드가 남아 있어도 현재 Type의 렌더러가 사용하는 값만 화면 결과에 반영됩니다.
+Color 요소는 Image 설정을 사용하지 않고, Texture 요소는 Text 스타일을 사용하지 않습니다. 선택한 종류에 맞는 설정만 사용합니다.
 
 ## 위치값과 Canvas 드래그
 
@@ -97,7 +97,7 @@ Start Tick은 0–600, End Tick은 Start보다 최소 1틱 뒤로 보정됩니�
 
 ## Z값과 액터가 섞이는 순서
 
-Player와 Opponent도 각각 Z값을 가진 렌더 항목입니다. 런타임은 일반 요소의 Z 순서를 순회하면서 액터 Z가 해당 요소보다 작거나 같아지는 지점에 모델을 끼워 그립니다.
+Player와 Opponent 모델도 Z값으로 앞뒤 순서를 정합니다. 글자가 모델 뒤에 가려지면 글자 레이어의 Z를 더 크게 정합니다.
 
 예시 구성:
 
@@ -138,9 +138,9 @@ Actor 위치와 회전 제한:
 
 Humanoid Pose는 Head, Body, Left/Right Arm, Left/Right Leg를 각각 Pitch/Yaw/Roll -360–360도 범위에서 편집합니다. `Reset Pose`는 선택 액터의 관절을 중립 자세로 되돌립니다. Pokemon 모델은 관절 Pose를 지원하지 않고 전체 Yaw/Pitch/Roll만 사용합니다.
 
-런타임 Player 액터는 실제 플레이어 엔티티를 사용하고, 선두 포켓몬의 Poké Ball을 Main Hand 표시용으로 넘깁니다. Opponent는 대상 CustomNPCs NPC 엔티티를 사용합니다. 대상이 살아 있는 LivingEntity가 아니면 액터는 그려지지 않습니다.
+플레이 Player 액터는 실제 플레이어 엔티티를 사용하고, 선두 포켓몬의 Poké Ball을 Main Hand 표시용으로 넘깁니다. Opponent는 대상 CustomNPCs NPC 엔티티를 사용합니다. 대상이 살아 있는 LivingEntity가 아니면 액터는 그려지지 않습니다.
 
-에디터를 NPC 대상 없이 열면 Opponent 미리보기에 샘플 이상해씨를 사용할 수 있습니다. 이 샘플이 잘 보여도 실제 트레이너 NPC 타입과 맞는다는 뜻은 아니므로 런타임 테스트가 필요합니다.
+에디터를 NPC 대상 없이 열면 Opponent 미리보기에 샘플 이상해씨를 사용할 수 있습니다. 이 샘플이 잘 보여도 실제 트레이너 NPC 타입과 맞는다는 뜻은 아니므로 플레이 테스트가 필요합니다.
 
 ## World Background와 Stage Image
 
@@ -193,7 +193,7 @@ Battle Audio에는 타임라인 Start Tick이 없습니다. 서버가 실제 Cob
 
 기본 파일을 직접 덮어쓰지 말고 `Save As`로 `custom/` 아래에 복사하세요. 기본 파일은 애드온 업데이트에서 보호·업그레이드 대상이 될 수 있지만 사용자 `custom/` 파일은 별도 콘텐츠로 유지됩니다.
 
-## 런타임 검증표
+## 플레이 검증표
 
 1. GUI Scale 최소·중간·최대에서 Stage 잘림을 확인합니다.
 2. 16:9가 아닌 창 비율에서 World Background와 Stage Fit을 확인합니다.

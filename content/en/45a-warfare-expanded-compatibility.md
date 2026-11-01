@@ -1,8 +1,8 @@
 ---
-title: Vehicle Addon Compatibility and Fixes
+title: Compatible Vehicle Packs
 slug: expanded-compatibility
 order: 315
-description: DNPC crews, SuperbWarfare versions and representative verified addon vehicles.
+description: Check supported representative vehicles and known conflicting combinations.
 product: dochi-warfare-expanded
 category: Setup
 section: overview
@@ -11,17 +11,11 @@ version: 0.3.1
 audience: Server operators / creators
 ---
 
-## Update the pair
+## Choose a vehicle pack
 
-Install current **DW and DWE 0.3.1 patches together** on server and clients. Targets are Forge 1.20.1 and NeoForge 1.21.1. DNPC crews work without CustomNPCs; existing CNPC integration remains available. DRM is optional.
+The following vehicles were checked with NPC crews for movement, firing and reloads in DW/DWE 0.3.1. Unlisted vehicles and special weapons in the same pack need separate checking.
 
-Current metadata accepts SuperbWarfare **0.8.9 / 0.8.9.1 / 0.8.9.2 on Forge**, and **0.8.9.1 / 0.8.9.2 on NeoForge**. Native structural checks must also pass. A newer release number alone does not invalidate compatible older builds.
-
-## Representative verified vehicles
-
-The following vehicles were checked with actual NPC crews for movement, firing and reloading. This does not establish support for every vehicle or special weapon in a pack.
-
-| Addon | Checked targets | Vehicles |
+| Pack | Minecraft / loader | Vehicles |
 | --- | --- | --- |
 | AshVehicle | Forge 1.20.1 / NeoForge 1.21.1 | M3A3 Bradley, AH-64, F-22 |
 | HaloVehicles | Forge 1.20.1 / NeoForge 1.21.1 | M12 HMG |
@@ -30,17 +24,15 @@ The following vehicles were checked with actual NPC crews for movement, firing a
 | Frontline Combat Pack | Forge 1.20.1 | BMP-2 |
 | Spectacular Machines Addon | Forge 1.20.1 | Type 10 |
 
-MCSP Bradley results do not establish M1A2 support: inspected M1A2 part definitions did not match the target SW serializer.
+Use current 0.3.1 patches of DW and DWE together. Follow [vehicle setup](#dochi-warfare-expanded/expanded-overview) to assign drivers, gunners and ammunition.
 
-**SuperbAddon 1.0.1 with SW 0.8.9.2** failed during native explosions because of an external Mixin conflict; the corresponding SW 0.8.9.1 explosion test passed. Shell-casing generation or a successful shot alone does not establish complete compatibility.
+## Known problem combinations
 
-## Current 0.3.1 fixes
+- **SuperbAddon 1.0.1 + SuperbWarfare 0.8.9.2:** explosions can crash. The corresponding SW 0.8.9.1 explosion test worked.
+- **MCSP M1A2:** not included in this guide's supported vehicles. Start with the listed Bradley instead.
 
-- DNPC drivers and gunners use relationship targeting, ally protection and combat dismounting.
-- Vehicle-destruction settings control NPC crew handling.
-- Restored reload timers no longer wait excessively after moving between world clocks; ammo policy changes during reload no longer duplicate rounds or exceed capacity.
-- The firing vehicle no longer blocks itself as a friendly obstacle; other allies remain protected.
-- AH-6 ground-target aiming, fixed-wing body weapons and excessive climbing near unloaded terrain were corrected.
-- Repeated ammo, weapon and lookup work was reduced. Results depend on the world and fleet.
+## Changes in current patches
 
-F-22 firing failed in an earlier report, then passed actual firing checks on both loaders after later fixes. This does not establish automatic landing or complete coverage of every flight path. After updating, check native weapons, seats, stock and targets in [vehicle AI](#dochi-warfare/warfare-vehicle-ai).
+DNPC crews and ally protection are supported, with settings for handling crews when vehicles are destroyed. Ammo duplication and magazine overflow after changing settings during reload have been fixed.
+
+AH-6 ground-target fire, F-22 fixed-weapon aiming and excessive climbing near unloaded terrain were corrected. Automatic landing is not provided.

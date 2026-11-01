@@ -42,7 +42,3 @@ Unloading, death, dimension changes and disconnects clear stale entries. Version
 | Icons disappear far away | Unloaded NPCs are outside the current live-display scope |
 
 Editing, file browsing and saving require permission level 2, while ordinary players can view map icons. Back up map profiles, DRM assets and the world's NPC data together.
-
-## JourneyMap 6
-
-Version 0.1.2 supports JourneyMap 6 / API 2 with the same icon policies and ordinary-radar suppression. Saves synchronize while paused; unloaded NPCs do not become persistent POIs.

@@ -66,7 +66,7 @@ Mega, Tera, and Dynamax permission is a server rule for both sides. Permission d
 | Setting | Runtime effect |
 | --- | --- |
 | Allow items | When off, block all covered battle-item actions |
-| Banned items | Block individual registry IDs chosen through name/ID search |
+| Banned items | Block individual IDs chosen through name/ID search |
 | Use limit | Per actor and per battle, 0–999 uses or unlimited |
 | Minimum turn | Allow use only on or after this turn |
 | Target HP cap | Allow use only when the target's current HP percentage is at or below the value |

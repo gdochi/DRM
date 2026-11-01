@@ -51,6 +51,6 @@ Immersive Vehicles 목록은 설치된 팩의 차종·색상을 직접 열거합
 
 차량 모드가 NBT에 저장한 부품·인벤토리·연료와 방향을 복원하고 새 UUID를 부여합니다. 탑승자는 복제하지 않으며 연료·탄약을 자동 충전하지 않습니다. 템플릿을 배포할 때 차량 모드·콘텐츠 팩과 `vehicles/` 파일도 함께 준비하세요.
 
-## DNPC 생성
+## NPC도 저장한 모습으로 등장시키려면
 
-DNPC의 기본 EntityType 생성은 DRM 공통 NPC API v1과 DNPC 제공자가 필요합니다. 생성 시 DNPC 자체 부활을 끄고 생성 위치를 집으로 정합니다. API가 없으면 해당 생성을 실패시키며, 기본 EntityType 경로는 저장 NPC를 복제하지 않습니다. 저장 외형·장비·연결을 재사용하려면 별도 [NPC 복제 템플릿 소스](#dochi-spawn-control/spawn-control-npc-templates)를 선택합니다.
+DNPC와 DRM을 설치하고 [NPC 복제 템플릿](#dochi-spawn-control/spawn-control-npc-templates)을 선택합니다. 기본 NPC 종류를 고르면 저장한 외형·장비는 따라오지 않습니다.

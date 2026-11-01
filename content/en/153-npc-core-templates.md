@@ -1,8 +1,8 @@
 ---
-title: NPC clone templates
+title: Save and Reuse an NPC
 slug: npc-core-templates
 order: 1530
-description: Create v3 templates with equipment and understand legacy files.
+description: Keep a finished NPC as a template, clone it or load it onto an existing NPC.
 product: dochi-npc-core
 category: NPC clone templates
 section: operations
@@ -11,36 +11,28 @@ version: 0.1.2
 audience: Creators / server operators
 ---
 
-## 0.1.2 clone versus apply
+## Save a finished NPC
 
-New clones, including those created from older templates, discard source block cargo, riding sessions/timeouts, spawner runtime markers and combat progress. Applying to an existing NPC preserves that target's real cargo and runtime ownership. Authored equipment, inventory, appearance and integration settings are distinct from active cargo.
+1. Open the NPC and finish its appearance, equipment and behavior.
+2. Press **Save to NPC**.
+3. Choose **Save as clone template** and enter a name.
 
-## Save an NPC for reuse
+Files are kept in `config/dochi_npc_core/templates/`. Use Ctrl+C / Ctrl+V for a quick copy; use a template to keep an NPC for later.
 
-Temporary Ctrl+C copies and file templates serve different purposes. **0.1.1 v3 clone templates** preserve authored NPC data, current equipment, inventory, loadouts and supported addon bindings.
+## What is reused?
 
-1. Open the NPC with NPC Core.
-2. Edit appearance, equipment and behavior, then **save to the NPC**.
-3. Choose **Save as clone template** and use a new name.
-4. Manage files under server `config/dochi_npc_core/templates/`.
-5. Select the template in [Spawn Control](#dochi-spawn-control/spawn-control-npc-templates).
+Templates reuse appearance, equipment, inventory, behavior and linked dialogue/shop settings. New NPCs start fresh rather than inheriting an active delivery, ride or battle.
 
-DNPC template storage works without DRM. Spawn Control integration needs both DRM's public template API and the DNPC provider. DRM 0.2.9 / DNPC 0.1.1 / Spawn Control 0.1.4 is the checked combination, not a newly inferred minimum.
+Loading a template onto an existing NPC keeps that NPC's location and active cargo. Choose the intended operation: creating a new NPC or applying settings to an existing one.
 
-## What is copied?
+## Spawn guards in several places
 
-| Preserved | Starts fresh |
-| --- | --- |
-| Appearance, behavior and authored destinations | UUID and actual spawn position |
-| Equipment, inventory, loadouts and item data | Transient damage, death, navigation and work state |
-| Supported authored addon bindings | Prior spawner membership, employment owner and bed occupancy |
+Choose your saved NPC from **NPC clone template** in [Spawn Control](#dochi-spawn-control/spawn-control-npc-templates). Use it for a fixed guard post or scheduled/location-based appearances. This connection also needs DRM.
 
-The initial SPAWN equipment pool does not reroll the copied equipment. Authored later day/combat/interval changes still run. A clone does not resume the source NPC's entire live session.
+Saving DNPC templates by itself does not require DRM.
 
-Loading into an existing NPC preserves that target's UUID, location and current spawner membership. Distinguish loading into a target from creating a new entity.
+## An old file is missing from the list
 
-## Older templates
+Load a settings-only or v2 template onto an NPC, then use **Save to NPC → Save as clone template**. Use a new name to keep the old file.
 
-Settings-only and v2 files remain readable through the existing load workflow. Without an exact snapshot they are excluded from Spawn Control's clone list. Load one onto an NPC, **save to the NPC**, then **save as clone template** using a new name. Existing files are not automatically overwritten. Older DNPC versions do not gain v3 reading support.
-
-Missing files or providers fail that clone request; they do not spawn a blank replacement NPC. Prepared snapshots are fixed. Reload through the consuming editor/server workflow after changing the source file.
+If edited templates still show old equipment, reload and reapply the template in Spawn Control.

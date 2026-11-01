@@ -78,7 +78,7 @@ Combat reads cached data instead of polling disk every tick. Catalog Refresh alo
 | [training_swordsman.json](./assets/media/battleworks/training_swordsman.json) | mobs/patterns/training/ | Normal humanoid NPC with a hostile CustomNPCs target |
 | [training_ring.json](./assets/media/battleworks/training_ring.json) | particles/ | Particle Maker or the particle command |
 
-If the browser opens JSON, save it as a file. Check that it did not become .json.txt. The combat sample uses a basic swing and vanilla sound without a model snapshot. The particle sample uses a vanilla particle.
+If the browser opens JSON, save it as a file. Check that it did not become .json.txt. The combat sample uses a basic swing and vanilla sound without a saved model settings. The particle sample uses a vanilla particle.
 
 ## 6. Separate training packs and Jar Fist
 

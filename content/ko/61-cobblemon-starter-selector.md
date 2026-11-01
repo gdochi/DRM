@@ -2,7 +2,7 @@
 title: Starter Selector Editor
 slug: cobblemon-starter-selector
 order: 551
-description: 스타터 카드, 조건, 지급 후 액션, 오디오와 런타임 GUI입니다.
+description: 스타터 카드, 조건, 지급 후 액션, 오디오와 플레이 GUI입니다.
 product: drm-cobblemon-editor
 category: 서비스 NPC
 section: services
@@ -23,7 +23,7 @@ tags:
 
 `Starter Selector Editor`는 서버가 허용한 포켓몬 카드 중 하나를 플레이어가 고르게 합니다. 서버는 선택 직전에 조건을 다시 검사하고, 지급에 성공한 뒤에만 성공 액션을 실행합니다.
 
-문서는 `config/dochi_rpg_maker/cobblemon/starter_selectors/`에 저장되며 현재 스키마는 `2`입니다. 기본 런타임 배치는 `config/dochi_rpg_maker/gui/starter_selector_gui.json`입니다.
+문서는 `config/dochi_rpg_maker/cobblemon/starter_selectors/`에 저장되며 현재 스키마는 `2`입니다. 기본 플레이 배치는 `config/dochi_rpg_maker/gui/starter_selector_gui.json`입니다.
 
 ## 에디터와 GUI Maker
 
@@ -31,7 +31,7 @@ tags:
 | --- | --- |
 | Starter Selector Editor | 옵션 포켓몬, 표시 문구, 조건, 오디오, 성공 액션, 제한형 대화 |
 | DRM GUI Maker | 카드 목록, 상세 정보, 미리보기, 버튼, 페이지 이동의 화면 배치 |
-| 플레이어 런타임 | 서버가 허용한 카드 표시와 실제 선택 요청 |
+| 플레이어 플레이 | 서버가 허용한 카드 표시와 실제 선택 요청 |
 
 GUI Maker에서 포켓몬이나 조건을 추가할 수는 없습니다. 레이아웃 JSON의 컴포넌트를 지워 필수 동작이 사라지지 않도록 기본 파일을 복제해 편집하세요.
 
@@ -100,7 +100,7 @@ Starter Selector 자체에는 모든 문서에 강제되는 영구 1회 제한�
 
 서버가 옵션 조건을 화면을 열 때와 선택을 확정할 때 다시 검사하므로 오래된 화면에서 조건을 우회할 수 없습니다.
 
-## 플레이어 런타임
+## 플레이어 플레이
 
 - 서버가 허용한 옵션만 카드로 전송합니다.
 - 기본 레이아웃은 페이지당 카드 3개를 표시합니다.
@@ -109,7 +109,7 @@ Starter Selector 자체에는 모든 문서에 강제되는 영구 1회 제한�
 - 파티에 공간이 없으면 PC 저장을 시도합니다.
 - 파티와 PC 모두 지급할 수 없으면 성공 액션을 실행하지 않습니다.
 
-Cry를 선택하면 해당 포켓몬 울음소리를 사용하고, Custom Sound는 현재 레지스트리의 Sound ID를 사용합니다.
+Cry를 선택하면 해당 포켓몬 울음소리를 사용하고, Custom Sound는 현재 목록의 Sound ID를 사용합니다.
 
 ## 저장과 Apply
 

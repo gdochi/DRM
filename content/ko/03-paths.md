@@ -111,7 +111,7 @@ tags:
 
 ## 레거시 호환
 
-대화 저장소는 오래된 NPC 데이터의 `dc_dialogue_json_path`를 읽을 수 있습니다. 이 경우 `customnpcs/dc_data/dc_dialogues` 아래의 JSON을 읽어 현재 `DialogueDocument`로 변환합니다.
+대화 저장소는 오래된 NPC 데이터의 `dc_dialogue_json_path`를 읽을 수 있습니다. 이 경우 `customnpcs/dc_data/dc_dialogues` 아래의 JSON을 읽어 현재 대화 형식으로 불러옵니다.
 
 새 문서와 새 제작 흐름에서는 `customnpcs/dc_data`를 주 저장소로 쓰지 않습니다. 기존 데이터를 유지해야 할 때만 레거시 경로를 확인하세요.
 
