@@ -32,6 +32,8 @@ tags:
 
 파일은 서버의 `config/dochi_rpg_maker/spawn_control/spawners/`에 저장됩니다. 싱글플레이에서는 인스턴스의 게임 폴더가 기준이며 월드마다 따로 문서를 만들지 않습니다. 자세한 경로와 백업은 [공유와 운영](#dochi-spawn-control/dochi-spawn-control-presets-operations)을 참고하세요.
 
+![Spawner Editor의 Spawn Target와 좀비 한 항목.](assets/media/guides/spawn-control-014-neo1211/spawn-placed.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Entities per activation 1은 한 번에 한 마리를 시도한다는 뜻입니다. Chance 1.0이 Actual chance 100%인 이유는 현재 목록에 한 항목만 있기 때문입니다. 전체 작동 확률이나 생성 성공 보장은 아닙니다.")
+
 ## 화면 구성
 
 왼쪽 패널에서 카테고리를 선택하고 오른쪽에서 값을 편집합니다. JSON 파일 경로는 현재 문서를 알려 주는 라벨입니다. 경로를 바꾸려면 `Save As`를 사용하세요.
@@ -68,9 +70,11 @@ tags:
 | 돼지 1, 소 1 | 각각 50% |
 | 돼지 10, 소 0 | 돼지만 선택 |
 
-`Entities per attempt`를 `3`으로 두면 한 번의 작동에서 최대 3마리를 시도합니다. 각 마리마다 목록에서 다시 뽑으므로 같은 대상이 연속해서 나올 수 있습니다. 70:30 목록에서 3마리를 뽑는다고 항상 돼지 2마리와 소 1마리가 나오지는 않습니다. 공간 부족이나 생성 제한 때문에 실제 생성 수는 더 적을 수 있습니다.
+`Entities per activation`를 `3`으로 두면 한 번의 작동에서 최대 3마리를 시도합니다. 각 마리마다 목록에서 다시 뽑으므로 같은 대상이 연속해서 나올 수 있습니다. 70:30 목록에서 3마리를 뽑는다고 항상 돼지 2마리와 소 1마리가 나오지는 않습니다. 공간 부족이나 생성 제한 때문에 실제 생성 수는 더 적을 수 있습니다.
 
 `Maximum owned entities`는 그 스포너가 만든 개체의 총 보유 제한이고, `Total spawn limit`는 누적 생성 제한입니다. 둘 다 목록 전체에 적용되며 항목별 제한이 아닙니다. 누적 제한 `0`은 무제한입니다.
+
+![Appearance에서 Block 모델 minecraft:spawner를 미리 보는 화면.](assets/media/guides/spawn-control-014-neo1211/spawn-appearance.png "Spawn Control 0.1.4 / NeoForge 1.21.1. 오른쪽은 스포너 자체의 외형 미리보기입니다. 소환할 좀비를 보여 주는 패널이 아닙니다. Model source와 크기·회전·수직 위치는 Spawn Target의 목록과 별개입니다.")
 
 ## 스포너 외형과 미리보기
 

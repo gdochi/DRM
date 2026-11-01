@@ -13,6 +13,10 @@ audience: 제작자 / 운영자
 
 ## 대화를 마친 뒤 보상 지급
 
+![배틀 후 액션의 순서를 정하는 After Actions 화면.](assets/media/guides/cobble-029-neo1211/cobble-after-actions.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1 영문 화면. Battle Config → After Actions에서 Action mode를 고릅니다. 이 사진은 All·액션 0개인 시작 상태이며 Sequential로 대화 후 보상을 완주한 결과는 아닙니다.")
+
+대화 다음 보상을 원하면 Action mode를 **Sequential**로 바꾸고 대화 액션을 보상보다 앞에 둡니다. 플레이어가 대화를 닫는 시점과 보상 지급 시점을 한 흐름으로 관리할 때 사용하는 설정입니다.
+
 배틀 후 액션의 **Sequential / 순차 실행**을 쓰면 대화가 끝난 다음에 보상을 줍니다. 취소·접속 종료 뒤에는 남은 액션을 다음 상호작용에서 이어갈 수 있습니다.
 
 라운드당 대화 액션은 한 개입니다. [설정 순서](#drm-cobblemon-editor/cobblemon-trainer-editor)를 확인하세요.

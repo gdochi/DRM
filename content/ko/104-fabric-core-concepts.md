@@ -25,6 +25,9 @@ tags:
 
 **Close**나 뒤로·앞으로 화살표는 저장 버튼이 아닙니다. 화면을 옮기기 전에 작업을 저장하세요.
 
+
+![NPC에 적용할 서버 대화 세트를 고른 적용 화면.](assets/media/guides/drm-031-neo1211/npc-apply-result.png "DRM 0.3.1 / NeoForge 1.21.1. 저장한 village_guide를 골라 Apply Dialogue로 NPC에 연결한 화면입니다. 다른 이름으로 저장했다면 여기에서도 새 파일을 선택합니다.")
+
 ## 대화 내용과 창 모양은 따로 만듭니다
 
 ‘안녕하세요’라는 대사와 선택지는 **Dialogue Editor**, 그 대화를 담을 창의 위치·색·이미지는 **GUI Maker**에서 만듭니다. 상품과 가격은 **NPC Shop**에서 정합니다.

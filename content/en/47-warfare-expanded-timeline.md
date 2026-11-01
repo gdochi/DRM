@@ -33,6 +33,8 @@ The server supplies eligible gun-support weapons. Bombs, rockets, missiles, and 
 
 Choose NPC clones from the DW library. Area selection requires CustomNPCs with DW AI enabled and excludes riding, hired, or already-directed NPCs. Existing combat takes priority before movement resumes. There is no teleport fallback. Factions use numeric IDs; clone file references differ from display names.
 
+![Gimmick Editor with steps, top view, settings and timeline.](assets/media/guides/warfare-expanded-031-neo1211/dwe-gimmick.png "DWE 0.3.1 / NeoForge 1.21.1. The default draft uses A-10A, MK-82 and Point, with the first drop at tick 20. Match Entry, Target and Exit to the timeline before running.")
+
 ## Timing and origin
 
 20 ticks equal one second at 20 TPS. A bombing action's tick is the **first bomb release**, not impact. Vehicle, gun, and NPC support ticks start spawning or movement. Gun-support duration starts on entering weapon range; exit or lifetime expiry may end it sooner.

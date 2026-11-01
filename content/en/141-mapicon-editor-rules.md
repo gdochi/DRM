@@ -13,7 +13,11 @@ audience: NPC creators
 
 ## Defaults by JSON type
 
-Select a JSON type on the left, edit its icon in the center, and check the preview on the right. The list uses actual DRM Apply targets: dialogue, NPC Shop and teleporter by default. Cobblemon Editor adds targets such as Trainer, Pokemon Itself, PokéMart, Nurse Joy and Starter Selector.
+Select **Type defaults** on the left, then choose **NPC**, **Dialogue JSON**, **NPC Shop JSON** or another category in the middle. Edit the image, size, tint and map visibility in **Icon settings** on the right. Check its appearance in **Icon preview** below the middle list.
+
+![MapIcon's Type defaults with NPC selected in the middle and image, Size, Tint, Minimap and World map settings on the right.](assets/media/guides/mapicon-012-neo1211/type-defaults.png "MapIcon 0.1.2 on NeoForge 1.21.1. To change shop icons, select NPC Shop JSON in the middle, then edit its settings on the right.")
+
+**NPC** is the basic NPC icon. The dialogue, shop and teleporter categories below it choose icons for the functions applied to NPCs. Cobblemon Editor adds targets such as Trainer, Pokemon Itself, PokéMart, Nurse Joy and Starter Selector.
 
 **Type Default Icons** gives NPCs an icon based on applied JSON even without an exception rule. NPC defaults and individual type defaults are saved independently. Presentation and scheduler files are not NPC Apply targets and do not appear in this list.
 
@@ -40,11 +44,15 @@ Rules match JSON type and file path. An empty path matches every file of that ty
 
 Add, duplicate, delete and search rules, and select actual JSON files in the file picker. **Apply Type Icon** replaces an existing rule's image with the type icon.
 
+![A new NPC Shop rule in JSON Rules.](assets/media/guides/mapicon-012-neo1211/mapicon-rule-added.png "MapIcon 0.1.2 / NeoForge 1.21.1. After Add rule, choose NPC Shop JSON as DRM source kind. An empty JSON file matches every file of that kind. For one shop, choose its file with the magnifying glass, set Priority and save.")
+
 ## Override one NPC
 
-Inside NPC Basic's **Map Icon** category, choose Follow JSON Rules, Show or Hide and an optional custom image. Save with the existing Basic toolbar. Category changes preserve the draft and participate in the unsaved-changes check. Saving this NPC does not change the global profile.
+Open **Addons → Map icon** in the DNPC editor. The individual screen has only **Selected NPC**. Use **Icon** to show or hide it, choose its own image, size, tint and map switches, then **Save**. Wait for **Settings saved** at the bottom.
 
-NPC Basic Display's **Edit Conditions** belongs to Core's NPC rendering visibility system. It also affects map visibility; it is not a separate map-addon condition editor.
+![The individual editor after saving an NPC icon.](assets/media/guides/mapicon-012-neo1211/mapicon-npc-saved.png "MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1. This NPC-only screen has no Type defaults or JSON Rules. Its save is separate from the full editor's server-profile save.")
+
+An icon switch does not bypass Core NPC visibility conditions for that player. Compare the result using the [actual minimap example](#dochi-mapicon-integration/mapicon-setup).
 
 ## Save and apply
 

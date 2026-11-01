@@ -2,7 +2,7 @@
 title: 경매와 GUI
 slug: pokemart-auction-gui-runtime
 order: 542
-description: Auction 정산과 PokéMart Runtime GUI 구성입니다.
+description: 경매장 NPC를 만들고 등록·입찰·수령과 플레이어 화면을 설정합니다.
 product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
@@ -15,20 +15,42 @@ tags:
   - gui-maker
 ---
 
-## Auction Policy 범위
+## 경매장 NPC 만들기
+
+[PokéMart Editor](#drm-cobblemon-editor/cobblemon-pokemart)의 **General → NPC Role → Auction**을 고르고 결제 수단을 정합니다. 왼쪽 **Auction**에서 경매장 이름표인 **Auction House ID**, 등록 수수료와 세율을 입력합니다. **Save As**로 내 파일을 저장한 뒤 경매장 NPC에 적용합니다.
+
+![Auction 설정의 경매장 ID, 등록 제한, 수수료와 세율.](assets/media/guides/cobble-029-neo1211-flow/cobble-mart-auction.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1의 제작자 화면. 예제는 House ID default, 1인 등록 5개, 최대 1440분, 수수료 500, 판매세 5%, 최소 입찰 증가액 100입니다. 실제 매물 등록이나 낙찰 결과를 보여 주는 화면은 아닙니다.")
+
+여러 마을에서 같은 매물을 보여 주려면 **같은 House ID와 호환되는 통화 설정**을 사용합니다. House ID가 다르면 같은 통화를 써도 별도 경매장입니다.
+
+## 플레이어의 등록·입찰·수령
+
+1. **옥션 등록**에서 맡길 포켓몬과 시작 입찰가를 고릅니다. 현재 기본 화면은 경매장에 설정한 기간을 사용합니다. 즉시 구매를 허용한 경매장이라면 즉시 구매가도 정할 수 있습니다. 등록하면 수수료를 내고 포켓몬을 경매에 맡깁니다.
+2. 다른 플레이어는 **경매**에서 매물을 선택하고 입찰하거나 즉시 구매합니다. 자신의 매물에는 입찰할 수 없습니다.
+3. 낙찰 뒤 **정산/수령함 → 모두 수령**으로 구매자는 포켓몬을, 판매자는 세금을 뺀 대금을 받습니다. 상위 입찰에 밀린 이전 입찰금도 이 수령함에서 받습니다.
+
+**포켓몬 수령 전에는 활성 파티에 빈칸을 만듭니다.** PC에만 빈칸이 있어도 Pokémon Claim은 남을 수 있습니다. 지급하지 못한 항목은 수령함에 남으므로 공간이나 통화 문제를 해결한 뒤 다시 수령합니다.
+
+![옥션 등록에 해당하는 Auction Listing의 꼬렛 선택과 가격 입력.](assets/media/guides/cobble-029-neo1211-player/cobble-auction-player.png "0.2.9 / NeoForge 1.21.1의 실제 플레이 화면. 이 실습은 에메랄드 결제, 시작가 10, 즉시 구매가 20, 등록 수수료 2입니다. 아래 List Pokémon · Fee 2로 등록합니다.")
+
+![등록된 꼬렛 매물과 수수료를 낸 뒤 잔액 62.](assets/media/guides/cobble-029-neo1211-player/cobble-auction-listed.png "등록 뒤 에메랄드 64→62, 파티에서 꼬렛 제거, 활성 매물 한 개를 확인했습니다. 자기 매물이므로 Bid와 Buyout이 비활성이고 Cancel Listing이 가능합니다.")
+
+![입찰 없이 만료된 꼬렛 한 마리가 기다리는 Settlement Inbox.](assets/media/guides/cobble-029-neo1211-player/cobble-auction-inbox.png "테스트 월드의 게임 시각을 진행시켜 입찰 없는 만료를 확인했습니다. Pokémon waiting: 1에서 Claim All을 눌렀습니다.")
+
+![Claim All 뒤 대기 포켓몬 0과 Auction claims delivered 메시지.](assets/media/guides/cobble-029-neo1211-player/cobble-auction-claimed.png "실제 수령 뒤 서버 파티에 꼬렛이 돌아오고 대기 수가 1→0이 됐습니다. 등록 수수료를 낸 뒤 잔액 62는 유지됐습니다. 다른 플레이어의 입찰·낙찰·판매세 정산은 이 실습에 포함하지 않았습니다.")
+
+## 경매장 설정값 참고
 
 | 설정 | 범위 | 실제 동작 |
 | --- | ---: | --- |
 | House ID | 최대 64자 토큰 | 같은 ID를 가진 Auction NPC가 활성 매물과 정산 범위를 공유합니다. |
 | Max Listings | 1–64 | 같은 House ID에서 플레이어 한 명이 동시에 올릴 수 있는 매물 수 |
-| Maximum Duration | 5–10,080분 | 플레이어가 선택할 수 있는 등록 기간의 상한 |
+| Maximum Duration | 5–10,080분 | 등록 기간 상한. 현재 기본 등록 화면은 이 값을 사용 |
 | Listing Fee | 0 이상의 정수 | 등록 시 먼저 차감. 포켓몬 에스크로 이동이 실패하면 환불 시도 |
 | Sale Tax | 0–100% | 판매 완료 금액에서 차감하고 판매자 정산액을 계산 |
 | Minimum Bid Increment | 최소 1 | 현재 입찰가 다음에 요구되는 증가액 |
 | Allow Buyout | On/Off | 즉시 구매 가격 입력과 실행 허용 |
 | Allow Shiny / Legendary | On/Off | 해당 포켓몬의 등록 허용 여부 |
-
-House ID가 다르면 같은 통화를 쓰더라도 별도 경매장입니다. 여러 마을 NPC가 하나의 글로벌 경매를 보여야 한다면 같은 House ID와 호환되는 통화 설정을 사용하세요.
 
 매물에는 생성 당시의 House ID, 통화 공급자·ID·Item NBT, 최소 증가액과 세율이 함께 저장됩니다. 운영 중 Auction 문서의 통화나 세율을 바꿔도 이미 만들어진 매물이 전부 새 정책으로 변환되는 구조가 아닙니다. 활성 매물이 있는 House의 경제 설정은 유지하는 편이 안전합니다.
 
@@ -45,7 +67,7 @@ House ID가 다르면 같은 통화를 쓰더라도 별도 경매장입니다. �
 
 경매를 등록하면 수수료를 내고 포켓몬을 경매에 맡깁니다. 등록에 실패하면 수수료를 돌려주고 매물을 만들지 않습니다.
 
-플레이어가 선택한 기간은 최소 5분이며 Auction Policy의 Maximum Duration을 넘을 수 없습니다. 매물 종료 시각은 실제 시계가 아니라 서버 월드 틱으로 저장됩니다. 서버가 꺼져 있는 동안의 현실 시간만으로 경매가 만료되지는 않습니다.
+등록 기간의 허용 범위는 최소 5분부터 Auction Policy의 Maximum Duration까지이며, 현재 기본 등록 화면은 경매장에 설정한 기간을 보냅니다. 매물 종료 시각은 실제 시계가 아니라 서버 월드 틱으로 저장됩니다. 서버가 꺼져 있는 동안의 현실 시간만으로 경매가 만료되지는 않습니다.
 
 등록 가능한 포켓몬은 활성 파티와 PC에서 찾지만 다음 상태는 거부됩니다.
 
@@ -57,7 +79,7 @@ House ID가 다르면 같은 통화를 쓰더라도 별도 경매장입니다. �
 
 ## 입찰과 즉시 구매
 
-자기 매물에는 입찰할 수 없습니다. 플레이이 보낸 매물 Revision이 서버 최신 값과 다르면 오래된 가격으로 처리하지 않고 새로고침을 요구합니다.
+화면을 연 뒤 다른 사람이 먼저 입찰했다면 다른 탭에 갔다 돌아오거나 창을 다시 열어 바뀐 가격을 확인한 뒤 입찰합니다.
 
 - 새 입찰자는 입찰액 전부를 에스크로 결제합니다.
 - 현재 최고 입찰자가 다시 올리면 기존 입찰액과 새 입찰액의 차액만 차감합니다.
@@ -67,9 +89,7 @@ House ID가 다르면 같은 통화를 쓰더라도 별도 경매장입니다. �
 
 Claim 방식은 오프라인 플레이어, 활성 파티 공간 부족, 사용할 수 없는 통화 상황에서도 데이터를 서버에 남기기 위한 안전장치입니다.
 
-일반 입찰은 현재 입찰가에 Minimum Bid Increment를 더한 최소 금액 이상이어야 합니다. 현재 최고 입찰자가 다시 입찰하면 기존 에스크로 금액과 새 금액의 차액만 차감합니다. 다른 플레이어가 상위 입찰하면 이전 입찰자의 금액은 Money Claim으로 전환되므로 자동으로 지갑에 즉시 돌아오지 않습니다.
-
-클라이언트가 보낸 매물 Revision이 현재 서버 Revision과 다르면 가격과 최고 입찰자가 바뀐 오래된 화면으로 보고 요청을 거부합니다. 새로고침 후 다시 입찰해야 합니다.
+일반 입찰은 현재 입찰가에 **Minimum Bid Increment**를 더한 최소 금액 이상이어야 합니다.
 
 ## 취소와 만료
 
@@ -95,12 +115,14 @@ Money Claim은 같은 플레이어와 같은 통화 키의 금액을 합산해 �
 
 ## PokéMart Runtime GUI 구성 요소
 
+상점 기능을 먼저 확인한 뒤 [GUI Maker](#core/gui-system)에서 **PokéMart** 타입의 화면을 편집합니다. 기본 파일을 바꿀 때는 **Save As**로 내 레이아웃을 만들고, PokéMart Editor의 **General → Runtime GUI**에 연결합니다. 상품 편집 화면과 플레이어가 보는 거래창은 별도입니다.
+
 PokéMart GUI 타입의 논리 Stage는 800×450입니다. GUI Maker 팔레트의 구성 요소는 플레이 데이터와 다음처럼 연결됩니다.
 
 | Component | 플레이 기능 | 주요 Inspector 값 |
 | --- | --- | --- |
 | `Header and Balance` | Display Name, 잔액, 통화 오류 | 제목·잔액·경고 색상 |
-| `Toolbar` | 새로고침, 닫기 | 버튼 채움·테두리·글자 색 |
+| `Toolbar` | 닫기 | 버튼 채움·테두리·글자 색 |
 | `Mode Tabs` | 역할에 맞는 탭 전환 | 탭 간격, 활성/비활성 색 |
 | `Search` | 현재 상품·교환·매물 목록 필터 | Placeholder 번역 키 |
 | `Catalog` | 스크롤 가능한 행 목록 | 행 높이/간격, 선택 색, 스크롤바 |

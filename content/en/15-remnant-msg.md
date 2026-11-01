@@ -14,7 +14,24 @@ tags:
   - message
 ---
 
-## Role
+## Leave A Message In The World
+
+Use **Remnant Msg Editor** for a message attached to a place without an NPC. Open it from the core's editor selector and write its name and text under **Message**. These English screens are from **DRM 0.3.1 / Forge 1.20.1**.
+
+![Remnant Msg Editor's Message page, with page navigation on the left and message settings on the right.](assets/media/guides/drm-031-forge1201/remnant-editor.png "Write the text under Message first. The saved message and its placed world marker are separate steps.")
+
+1. Write the text under **Message** and save your copy with **Save As**.
+2. Right-click a block face with the Remnant setter to place a marker. Saving the message file alone does not place it in the world.
+3. Select the saved message at the marker. Use **World List** to find, edit or teleport to existing markers.
+4. Use the marker as a player and check the displayed text. Configure the conditions below if access needs to be restricted.
+
+### Interaction And Viewing Have Separate Conditions
+
+**Interact Conditions** controls use of the marker; **View Conditions** controls showing the message. **View Actions** runs actions after viewing. A simple notice does not need every condition and action configured.
+
+![View Conditions with Enable, AND mode, Add and an empty condition list.](assets/media/guides/drm-031-forge1201/remnant-view-conditions.png "Add the desired condition and check Enable. This screenshot has no conditions configured yet.")
+
+## Connections To Other Tools
 
 Remnant Msg manages world-placed interaction messages separately from NPC dialogue nodes. Message documents, policies, the display GUI, marker blocks/entities, and the setter item work together.
 
@@ -62,6 +79,8 @@ Message documents support `message`, ranged `messageStyles`, separate interactio
 | Sneak-right-click a block | Opens the list without placing a marker. |
 
 The paged `World List` provides `Edit`, `Teleport`, `Delete`, and `Refresh`. Policy fields determine whether a general user may use the flow, write embedded text, select JSON, use triggers, or consume the setter. Runtime checks interaction/view conditions and runs enabled actions according to `messageTrigger`.
+
+In 0.1.8, message and policy selectors search the server JSON lists. A marker appearance can be `Default`, `Item`, or `Block`; item/block choices search localized names, namespaces, and IDs. `Scale` accepts `0.05` through `16.0`. Billboard modes are `fixed`, `vertical`, `horizontal`, and `center`. Item appearances support `none`, first/third-person hand transforms, `head`, `gui`, `ground`, and `fixed`. The server validates these settings and persists them with marker saved data and the display entity.
 
 The bundled policy allows general use and direct writing but reserves JSON and triggers for administrators. It defaults to no setter consumption, unlimited marker lifetime, and a 4096-character message limit. Existing policy files are not overwritten during updates.
 

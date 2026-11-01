@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: 참고
-version: 0.1.5
+version: 0.1.6
 audience: JSON을 직접 편집하는 제작자
 tags:
   - battleworks
@@ -19,6 +19,10 @@ tags:
 처음 만드는 사람은 [첫 공격 실습](#mob-editor/battleworks-first-attack)처럼 화면에서 작성하고 저장하면 됩니다. 이 페이지는 외부 파일을 수정하거나 구조를 비교하는 제작자를 위한 참고입니다.
 
 [전체 전투 예제 다운로드](./assets/media/battleworks/training_swordsman.json)와 [파티클 예제 다운로드](./assets/media/battleworks/training_ring.json)를 제공합니다. 두 파일은 다른 schema와 저장 폴더를 사용합니다.
+
+![화면에서 첫 공격을 저장한 BattleWorks 문서.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 먼저 화면에서 패턴을 저장한 뒤 그 파일과 필드를 비교합니다. 처음부터 아래 전체 JSON을 입력해야 하는 것은 아닙니다.")
+
+실제 UI 저장과 DNPC 피해 판정을 확인한 짧은 자료는 [첫 공격 실습](#mob-editor/battleworks-first-attack)의 first_sword 다운로드입니다. 두 페이즈로 확장하려면 [보스 실습](#mob-editor/battleworks-encounters)을 보세요.
 
 ## 1. 최소 문서 구조 읽기
 
@@ -38,17 +42,17 @@ tags:
 | previewNpcModel / previewTexture | 미리보기 전용 정보 |
 | particleEffects | 이전 내장 효과 호환 데이터. 새 작업은 별도 particleFile 연결 권장 |
 
-이름·장비·팩션·드롭·리스폰은 CustomNPCs에서 준비합니다. 고급 npcStats를 켠 외부 문서는 최대 체력·이동 속도·회복을 바꿀 수 있으므로 가져올 때 확인합니다. 알 수 없는 기존 필드나 모델 스냅샷을 정리 목적으로 지우지 마세요.
+이름·장비·팩션·드롭·리스폰은 사용하는 NPC의 편집기에서 준비합니다. DNPC는 자체 편집기를, 지원되는 기존 CustomNPCs NPC는 해당 모드의 편집기를 사용합니다. 고급 npcStats를 켠 외부 문서는 최대 체력·이동 속도·회복을 바꿀 수 있으므로 가져올 때 확인합니다. 알 수 없는 기존 필드나 모델 스냅샷을 정리 목적으로 지우지 마세요.
 
 ## 2. 예제를 적용하는 순서
 
 1. 아래 전체 객체를 파일로 저장하거나 다운로드합니다.
 2. 서버의 `config/dochi_rpg_maker/mobs/patterns/training/training_swordsman.json`에 둡니다.
-3. 일반 인간형 CustomNPC에 검·기본 능력치·적대 타겟을 준비합니다.
+3. 일반 인간형 DNPC 또는 지원되는 기존 CustomNPCs NPC에 검·기본 능력치를 준비합니다.
 4. BattleWorks에서 파일을 Load한 뒤 검증 오류가 없는지 봅니다.
 5. NPC에 적용하고 생존 모드에서 시험합니다.
 
-선택 애니메이션·마법 모드는 요구하지 않습니다. 기본 팔 휘두르기는 일반 인간형 NPC를 전제로 하며, Gecko·모디드 엔티티 모델에는 그대로 적용하지 않습니다. 자동 보조 탐색은 꺼져 있어 CustomNPCs가 적대 타겟을 정해야 합니다.
+선택 애니메이션·마법 모드는 요구하지 않습니다. 기본 팔 휘두르기는 일반 인간형 NPC를 전제로 하며, Gecko·모디드 엔티티 모델에는 그대로 적용하지 않습니다. 예제의 보조 탐색은 켜져 있습니다. 크리에이티브로 NPC를 편집한 뒤 서바이벌로 바꾸어 타겟·시야·거리와 실제 공격을 확인합니다.
 
 ## 3. 전체 전투 JSON 예제
 
@@ -60,7 +64,7 @@ tags:
   "id": "training_swordsman",
   "displayName": "Training Swordsman",
   "enabled": true,
-  "description": "Beginner Forge 1.20.1 / BattleWorks 0.1.5 example. Normal humanoid NPC; CustomNPCs supplies the hostile target.",
+  "description": "BattleWorks 0.1.6 teaching sample. Normal humanoid DNPC or supported legacy actor; fallback target scanning enabled.",
   "combat": {
     "suppressNativeAttacks": true,
     "suppressCustomNpcScripts": false,
@@ -69,7 +73,7 @@ tags:
     "combatResetDelayTicks": 100,
     "retryDelayTicks": 10,
     "targeting": {
-      "scanWhenNoTarget": false,
+      "scanWhenNoTarget": true,
       "scanRange": 16,
       "requireLineOfSight": true,
       "fovDegrees": 360,

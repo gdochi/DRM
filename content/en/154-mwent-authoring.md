@@ -7,7 +7,7 @@ product: mwent
 category: Operations and authoring
 section: authoring
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Creators / server operators
 ---
 
@@ -27,6 +27,16 @@ The current game editor manages rules, start conditions, rewards, presentation a
 
 Saving registers a definition; it grants neither physical items nor owned copies. Cosmetic variants of existing cards share the original's ownership and duplicate limits and retain its combat values. Running matches retain the definitions they started with.
 
+### Read The Card Editor
+
+These **Minigames 0.1.5 / NeoForge 1.21.1** screens show the built-in **Imperial Artisan**. Use **Save As** to create a custom card before attempting to edit disabled built-in fields.
+
+![Card Editor's Basic tab with the card preview, name, kind, faction, description and custom-card list.](assets/media/guides/minigames-015-neo1211/minigames-card-basic.png "Basic sets identity and kind. Appearance handles model/equipment, Stats handles power and states, and Abilities handles triggered effects.")
+
+![Stats with the existing Salvage 1 keyword, initial counter/timer, special states and Power.](assets/media/guides/minigames-015-neo1211/minigames-card-stats.png "Stats includes keywords and initial states as well as power. This built-in example has Salvage 1.")
+
+![Abilities with the existing ability selected, showing Boost and Amount 2.](assets/media/guides/minigames-015-neo1211/minigames-card-abilities.png "Select an ability on the left first. Its Boost 2 effect is separate from the card's own Power 4.")
+
 Each card supports up to twelve abilities, with eight conditions and eight operations per ability. Connect Deploy, Order, turn end, destruction, movement, healing and card-play events. Direct target selection is used for Deploy and Order; automatic triggers use selections such as all or random. Scenarios, locations, traps and chapters can also be authored.
 
 ## Siege models and optional providers
@@ -38,6 +48,10 @@ DNPC clone appearances are optional. Save a fallback entity so missing providers
 ## Make card packs
 
 The pack editor controls fixed cards, weighted pools, quantities, final card choices and appearance. Check whether recipients can use the selected cards. The server owns opening results. Connect merchant and chest distribution through [acquisition settings](#mwent/acquisition).
+
+![The Volkar Muster Pack example, with a weighted card pool on the left, opening options above and card details on the right.](assets/media/guides/minigames-015-neo1211/minigames-card-packs.png "Weight is a relative selection weight within the pool. Read Guaranteed cards for quantity and Choice options for the final choice separately.")
+
+Use **Get saved pack** at the top to obtain a saved pack. Save your own first, then open its physical item to check the guaranteed count and choice sequence.
 
 ## Storage reference
 

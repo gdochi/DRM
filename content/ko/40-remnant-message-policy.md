@@ -14,9 +14,23 @@ tags:
   - policy
 ---
 
-## 메시지 문서
+## 안내문을 볼 사람과 볼 때 할 일 정하기
 
-메시지 문서는 실제로 보여줄 내용을 담습니다.
+먼저 [Remnant 안내문](#core/remnant-msg)을 만들고 **Interact Conditions / View Conditions / View Actions**를 설정합니다. 월드에 놓는 순서는 [마커 설치](#core/remnant-marker-gui)를 따릅니다.
+
+| 만들고 싶은 동작 | 열 곳 |
+| --- | --- |
+| 특정 플레이어만 마커를 사용 | **Interact Conditions** |
+| 조건에 맞는 사람에게만 본문 표시 | **View Conditions** |
+| 읽었을 때 태그·아이템 같은 동작 실행 | **View Actions** |
+
+조건을 넣은 뒤 **Enable**도 켭니다. 여러 조건을 모두 만족해야 하면 **and**, 하나만 만족해도 되면 **or**입니다. 보기 액션을 매번 실행할지 플레이어마다 한 번만 실행할지도 정한 뒤 저장합니다. 이 설정은 해당 메시지에 적용됩니다.
+
+![View Conditions의 Enable과 조건 목록.](assets/media/guides/drm-031-forge1201/remnant-view-conditions.png "DRM 0.3.1 / Forge 1.20.1. 조건을 추가하는 것과 조건 검사를 켜는 것은 별도입니다. Interact는 사용 허용, View는 표시 허용을 다룹니다.")
+
+## 메시지 파일 참고
+
+외부에서 파일 내용을 확인할 때 쓰는 필드입니다. 문구·조건·액션은 편집 화면에서 작성해도 됩니다.
 
 | 필드 | 설명 |
 | --- | --- |

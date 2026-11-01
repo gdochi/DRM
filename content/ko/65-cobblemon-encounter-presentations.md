@@ -23,6 +23,8 @@ audience: 제작자와 운영자
 
 신규 설정의 글로벌 스위치는 기본 OFF입니다. 기존 애드온 NPC 트레이너의 연출은 해당 Trainer 설정을 사용하며 이 정책으로 이중 재생하지 않습니다. RCT API는 선택 연동입니다.
 
+![Pokémon·Trainers·PvP별 연출 적용과 Category global presentation.](assets/media/guides/cobble-029-neo1211/cobble-encounters.png "0.2.9 / NeoForge 1.21.1. 위쪽 카테고리 OFF는 전체를 끕니다. 아래 Category global presentation에 공통 파일을 고르고 개별 예외는 목록의 대상을 선택해 편집합니다.")
+
 ## 적용 우선순위
 
 | 설정 | 결과 |

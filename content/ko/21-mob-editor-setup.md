@@ -15,59 +15,52 @@ tags:
   - combat
 ---
 
-BattleWorks **0.1.6**은 DRM 필수 애드온입니다. Forge 1.20.1은 DRM 0.2.8 이상, Fabric·NeoForge 1.21.1은 0.2.9 이상을 현재 JAR에 선언합니다. CustomNPCs는 선택 설치이지만 **아래 Forge 실습에서는 CustomNPCs NPC를 사용**합니다. 별도 Java 25의 26.3 DNPC 흐름과 플랫폼 조건은 [0.1.6 안내](#mob-editor/battleworks-update-0-1-6)를 확인하세요.
+## 1. 실습 환경 준비하기
 
-## 1. 같은 버전의 실행 환경 준비하기
+아래는 실제 화면 촬영과 첫 공격 시험에 사용한 조합입니다. **BattleWorks와 DRM**, 전투를 붙일 **NPC 모드**를 준비합니다. 다른 Minecraft·로더 파일은 [설치 파일 고르기](#mob-editor/battleworks-update-0-1-6)에서 확인하세요.
 
-| 항목 | 이 안내의 기준 |
+| 구성 | 이번 실습 |
 | --- | --- |
-| Minecraft | Java Edition 1.20.1 |
-| 로더 | Minecraft 1.20.1용 Forge 47 계열 |
-| Java | 17 |
+| Minecraft / 로더 | 1.21.1 / NeoForge |
+| Java | 21 |
 | BattleWorks | 0.1.6 |
-| Dochi RPG Maker / DRM | Forge 1.20.1용 0.2.8 이상, 필수 |
-| CustomNPCs | Forge 1.20.1 호환 버전, 이 실습에 필요 |
+| DRM | 0.3.1 |
+| NPC | DNPC 0.1.3 |
 
-1. 사용할 Minecraft 인스턴스의 `mods` 폴더에 BattleWorks, DRM, CustomNPCs와 각 모드가 요구하는 의존성을 넣습니다.
-2. 이전 BattleWorks나 구형 Mob Editor JAR가 함께 들어 있지 않은지 확인합니다. 0.1.6의 모드 ID는 `dochi_battleworks`입니다.
-3. 게임을 실행하고 모드 목록에서 세 모드가 로드되었는지 확인합니다.
-4. 멀티플레이에서는 서버와 접속 클라이언트의 BattleWorks·DRM 버전을 맞춥니다. 연결해서 사용할 스킬·모델 모드와 리소스도 함께 맞춥니다.
+각 모드의 의존성도 같은 인스턴스에 설치합니다. 위 표는 확인한 실습 조합입니다. 기존 호환 버전을 일괄 교체하는 기준으로 쓰지 말고, 사용할 파일의 Minecraft·로더와 요구 모드를 확인하세요. 서버와 접속 클라이언트도 맞춥니다.
 
-위 표는 Forge 실습 환경입니다. NeoForge 설치에는 페이지 첫머리의 별도 요구 조건을 사용하세요.
+Forge 1.20.1과 Fabric·NeoForge 1.21.1에서 지원되는 CustomNPCs NPC를 쓸 수도 있습니다. **26.3 이상은 DNPC 흐름을 사용**하며 CustomNPCs를 설치하지 않습니다.
 
-## 2. 선택 모드는 나중에 붙이기
+## 2. 연습용 DNPC 만들기
+
+1. 크리에이티브에서 [DNPC 만들기](#dochi-npc-core/npc-core-setup)를 따라 NPC 한 명을 배치합니다.
+2. 이름을 알아보기 쉽게 정하고 일반 플레이어 모델로 시작합니다.
+3. 주변에 다른 NPC·몹이 없는 평평한 공간을 준비합니다.
+4. 이번 첫 공격은 BattleWorks의 **Scan Without Target**로 플레이어를 찾습니다. DNPC의 작업·다른 전투 모드로 같은 NPC를 동시에 움직이지 않게 합니다.
+5. 제작은 크리에이티브, 공격 시험은 서바이벌에서 진행합니다.
+
+![DNPC의 Identity 화면에서 연습 NPC를 준비하는 예.](assets/media/guides/dnpc-013-neo1211/dnpc-identity.png "DNPC 0.1.3 / NeoForge 1.21.1. 이 NPC에 BattleWorks 전투 파일을 연결합니다. 외형·장비를 바꾸는 것과 BattleWorks의 실제 피해·판정 설정은 따로입니다.")
+
+검을 쥐여 주면 공격 의도를 보여 주기 좋습니다. 이 실습의 피해는 검 아이템의 공격력 대신 BattleWorks Hitbox에 입력합니다. NPC의 체력을 높이는 것은 이후 보스 실습에서 진행해도 됩니다.
+
+## 3. NPC를 대상으로 BattleWorks 열기
+
+DRM 코어로 연습 NPC를 선택하고 BattleWorks 편집 기능을 엽니다. 기존 전투 파일이 있으면 불러오고, 새로 만들려면 **Create New**를 사용합니다. [첫 근접 공격 실습](#mob-editor/battleworks-first-attack)의 제작 보조로 이어집니다.
+
+NPC에 파일을 붙이는 적용 목록은 **Battlework JSON**입니다. 파일 없이 허공에서 작업을 시작했다면, 저장을 마친 뒤 NPC의 이 목록에서 파일을 선택해 **Apply Battlework**합니다. 모델을 바꿀 때는 DNPC 외형 설정과 [모션 연결](#mob-editor/battleworks-animation)을 먼저 확인합니다.
+
+## 4. 추가 모드는 필요한 기능부터 준비하기
 
 | 하고 싶은 일 | 추가로 준비할 것 |
 | --- | --- |
-| 일반 NPC의 기본 팔 휘두르기와 히트박스 공격 | 위 필수 환경으로 시작 |
-| Better Combat 무기 모션 | 호환 Better Combat과 해당 의존성·지원 무기 |
-| Gecko 모델의 클립 재생 | DRM NPC Basic의 모델·텍스처·애니메이션 설정과 해당 제공 모드 |
+| 기본 팔 휘두르기와 히트박스 공격 | 위 실습 환경으로 시작 |
+| Better Combat 무기 모션 | 호환 Better Combat과 해당 모션·지원 무기 |
+| Gecko 모델의 클립 | 모델·텍스처·애니메이션 자산과 제공 모드 |
 | Player Animator 클립 | 호환 제공 모드와 실제 클립 |
-| Iron's Spellbooks, Cataclysm, Mowzie 마법 | 해당 모드와 의존성, 게임 안 목록에 표시되는 스킬 |
-| 사용자 사운드·텍스처 | 실제 ID를 등록하는 모드 또는 리소스팩 |
+| 타 모드 마법·스킬 | 해당 모드와 의존성, 게임 안에 등록된 스킬 |
+| 사용자 사운드·텍스처 | 해당 ID를 제공하는 모드 또는 리소스팩 |
 
-처음부터 모든 선택 모드를 설치할 필요는 없습니다. [첫 공격 실습](#mob-editor/battleworks-first-attack)은 추가 마법·애니메이션 모드 없이 진행합니다.
-
-## 3. 연습용 NPC와 공간 준비하기
-
-1. 크리에이티브에서 CustomNPCs의 제작 도구로 일반 인간형 NPC 한 명을 만듭니다.
-2. CustomNPCs에서 이름을 “연습 검사”, 최대 체력을 `100` 정도로 설정합니다. 이 값은 실습 권장값입니다.
-3. NPC에 검을 쥐여 줍니다. 피해량은 뒤에서 BattleWorks Hitbox에 별도로 입력합니다.
-4. 생존 플레이어를 적대 대상으로 삼도록 CustomNPCs의 팩션·타겟 설정을 준비합니다.
-5. 주변에 다른 NPC·주민이 없는 평평한 연습장을 마련합니다. 처음에는 계단, 물, 좁은 문을 피합니다.
-
-**완료 확인:** NPC가 존재하고, CustomNPCs 설정 화면에서 체력·장비·적대 대상을 확인할 수 있으면 다음으로 갑니다.
-
-## 4. NPC를 대상으로 에디터 열기
-
-1. 크리에이티브 검색에서 DRM의 **Dochi RPG Maker Core** 아이템을 준비합니다.
-2. Core로 연습 NPC를 우클릭하여 대상이 있는 에디터 선택 화면을 엽니다.
-3. **BattleWorks**를 선택합니다. 대상 NPC가 맞는지 확인합니다.
-4. 모델을 바꿀 계획이라면 **NPC Basic**에서 먼저 모델과 자산을 준비한 뒤 BattleWorks로 돌아옵니다.
-
-Core를 허공에 사용하면 NPC 없이 새 전투 파일을 만들 수도 있습니다. 이때는 파일 제작과 미리보기는 가능하지만, 저장만으로 월드의 NPC가 자동 선택되지는 않습니다. Particle Maker는 NPC 없이도 사용할 수 있습니다.
-
-편집 작업은 크리에이티브 상태에서 진행합니다. 전투 시험 때는 에디터를 닫고 생존 상태로 바꿉니다. 크리에이티브·관전자 플레이어는 전투 대상에서 제외됩니다.
+기본 첫 공격을 확인한 뒤 추가 모션이나 스킬을 연결하면, 파일 적용 문제와 외부 자산 문제를 구분하기 쉽습니다.
 
 ## 5. 파일 저장과 NPC 적용 구분하기
 

@@ -2,7 +2,7 @@
 title: 버튼 설정
 slug: gui-maker-button-config
 order: 103
-description: GUI Maker의 buttonConfig와 바닐라 버튼 정책이 어떤 컴포넌트에 적용되는지 설명합니다.
+description: 대화 선택지와 화면 버튼의 기본·사용자 스타일을 인게임에서 바꿉니다.
 product: core
 category: GUI Maker
 section: gui-maker
@@ -14,53 +14,27 @@ tags:
   - button
 ---
 
-## buttonConfig 역할
+## 선택지를 마인크래프트 기본 버튼으로 바꾸기
 
-`buttonConfig`는 버튼처럼 동작하는 일부 컴포넌트를 어떤 방식으로 그릴지 정합니다. DRM GUI는 기본적으로 커스텀 패널과 색상을 사용할 수 있지만, 선택에 따라 Minecraft 바닐라 버튼 렌더링을 쓸 수 있습니다.
+1. [GUI Maker](#core/gui-system)에서 사용할 대화 GUI를 엽니다.
+2. 위쪽 **Button Config**를 누릅니다.
+3. **Choice / choice_box** 행 오른쪽 스위치를 켜 기본 버튼 표시로 바꿉니다. 꺼진 **Custom**은 DRM의 사용자 스타일입니다.
+4. **Done**으로 돌아와 **Preview**에서 읽기 편한지 확인합니다.
+5. 기본 파일은 **Save As**로 내 이름에 저장하고, Dialogue Editor의 GUI 설정에서 이 파일을 선택합니다.
 
-```json
-{
-  "buttonConfig": {
-    "vanillaButtons": true
-  }
-}
-```
+![Button Config에서 Choice / choice_box가 Custom으로 설정된 화면.](assets/media/guides/drm-031-forge1201/gui-button-config.png "DRM 0.3.1 / Forge 1.20.1. 목록에는 현재 GUI에서 설정할 수 있는 버튼 종류가 나옵니다. 오른쪽 스위치는 그 종류 전체의 표시 방식을 바꿉니다.")
 
-## 주로 영향을 받는 요소
+이 설정은 버튼의 **그림을 그리는 방식**을 바꿉니다. 눌렀을 때 상점으로 갈지, 다음 대사로 갈지는 Dialogue Editor의 **Choice actions**에서 정합니다.
 
-| GUI | 요소 |
+![Choice / choice_box 스위치를 켜 Vanilla로 바꾼 Button Config.](assets/media/guides/drm-031-forge1201/gui-vanilla-buttons.png "DRM 0.3.1 / Forge 1.20.1. Choice 행이 Vanilla로 바뀐 상태입니다. Done으로 돌아간 뒤 Preview에서 선택지의 크기와 긴 문장 표시를 확인합니다.")
+
+## 버튼의 크기와 문구는 어디서 바꾸나요?
+
+| 바꿀 것 | 편집 위치 |
 | --- | --- |
-| 대화 | 선택지 버튼 |
-| 상점 | 구매/판매 실행 버튼 |
-| 상점 | 페이지 이동 버튼 |
-| 상점 | 수량 조절 버튼 |
-| 상점 | 인벤토리 토글 버튼 |
+| 선택지에 쓸 말 | Dialogue Editor → Choices → Label |
+| 선택지 영역의 위치·크기 | GUI Maker 캔버스의 Choice 영역 |
+| 글자 크기·긴 문장·펄스 강조 | [선택지 크기와 펄스](#core/dialogue-choice-style) |
+| 기본 버튼 또는 사용자 스타일 | 이 페이지의 Button Config |
 
-텍스트 입력 칸, 상품 행, 일반 이미지 요소는 버튼 설정과 별개입니다.
-
-## 바닐라 버튼을 쓸 때
-
-바닐라 버튼 렌더링을 켜면 버튼은 Minecraft 기본 버튼처럼 보입니다. 이때 일부 커스텀 색상, crop, 이미지, 테두리 설정은 버튼 렌더링에 직접 반영되지 않을 수 있습니다.
-
-| 설정 | 바닐라 버튼에서의 의미 |
-| --- | --- |
-| 위치/크기 | 계속 중요합니다. |
-| 텍스트 | 버튼 라벨로 사용됩니다. |
-| 커스텀 배경 이미지 | 제한될 수 있습니다. |
-| 커스텀 테두리와 색상 | 제한될 수 있습니다. |
-| 비활성 상태 | 버튼 정책에 맞춰 표시됩니다. |
-
-## 선택 기준
-
-| 원하는 스타일 | 선택 |
-| --- | --- |
-| Minecraft 기본 UI와 맞추기 | 바닐라 버튼 사용 |
-| RPG 창처럼 꾸미기 | 커스텀 버튼 사용 |
-| 아이콘/이미지 중심 버튼 | 커스텀 버튼 사용 |
-| 번역 키 기반 텍스트 버튼 | 둘 다 가능 |
-
-## 제한
-
-- `buttonConfig`는 버튼 렌더링 정책입니다. 버튼을 눌렀을 때의 거래, 노드 이동, 액션 실행 로직을 바꾸지는 않습니다.
-- 선택지 텍스트가 비어 있으면 버튼도 비어 보입니다. 선택지 라벨은 Dialogue Editor에서 입력해야 합니다.
-- 상점 액션 버튼은 NPC Shop의 거래 모드와 선택 상품이 있어야 의미가 생깁니다.
+상점처럼 다른 GUI를 열면 그 화면이 지원하는 버튼 목록이 나옵니다. 대화 GUI에서 바꾼 설정이 모든 화면의 버튼을 한꺼번에 바꾸는 것은 아닙니다.

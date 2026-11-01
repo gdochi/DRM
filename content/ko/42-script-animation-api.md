@@ -15,22 +15,23 @@ tags:
   - animation
 ---
 
+## NPC의 외형과 동작을 스크립트에서 바꾸기
+
+이 문서는 CustomNPCs 스크립트로 NPC의 모델과 동작을 바꾸는 고급 참고입니다. 이름·스킨만 바꾸려면 먼저 [외형 안내](#core/assets-models)를 사용하세요. 아래 화면은 실제 API로 기존 NPC의 외형을 minecraft:zombie로 지정한 결과입니다. 애니메이션을 재생하려면 그 모델이나 설치된 공급자가 제공하는 동작 ID가 추가로 필요합니다.
+
+![실제 NPC의 외형과 동작을 스크립트에서 바꾸기 결과.](assets/media/guides/drm-031-forge1201-apis/api-model-zombie.png "DRM 0.3.1 / Forge 1.20.1 + CustomNPCs. useModdedEntityModel 호출 뒤 좀비 외형으로 표시된 NPC입니다. 플레이어용 wave 리소스를 설치하거나 재생한 장면으로 제시하지 않습니다.")
+
 ## 시작하기
 
-Dochi's RPG Maker Forge 0.1.4는 CustomNPCs 스크립트 전역 객체 `drmAnimation`을 등록합니다. 모든 메서드의 첫 번째 인자는 CustomNPCs 스크립트 엔티티 래퍼 또는 Minecraft 엔티티입니다. 보통 이벤트의 `event.npc`를 그대로 넘기면 됩니다.
+Dochi's RPG Maker Forge 0.3.1은 CustomNPCs 스크립트 전역 객체 `drmAnimation`을 등록합니다. 모든 메서드의 첫 번째 인자는 CustomNPCs 스크립트 엔티티 래퍼 또는 Minecraft 엔티티입니다. 보통 이벤트의 `event.npc`를 그대로 넘기면 됩니다.
 
 ```js
 function interact(event) {
-    drmAnimation.playPlayerAnimator(
-        event.npc,
-        "mypack:wave",
-        1.0,
-        80
-    );
+    drmAnimation.useModdedEntityModel(event.npc, "minecraft:zombie");
 }
 ```
 
-`80`틱 동안 `mypack:wave`를 재생합니다. 일반적으로 20틱은 약 1초입니다.
+먼저 준비한 NPC의 외형이 위 화면처럼 바뀌는지 확인합니다. 걷기·공격 등 동작 재생은 아래 공급자와 실제 동작 리소스를 준비한 뒤 연결합니다.
 
 :::note 사용 조건
 `drmAnimation`은 CustomNPCs가 있는 환경에서만 전역 객체로 등록됩니다. 선택한 공급자의 모드와 애니메이션 리소스도 서버와 접속 클라이언트에 준비되어 있어야 합니다.
@@ -38,7 +39,7 @@ function interact(event) {
 
 ## 직접 재생
 
-가장 짧은 호출은 재생 정책을 생략하며, 이 경우 `once`로 처리됩니다.
+가장 짧은 호출은 재생 정책을 생략하며, 이 경우 `once`로 처리됩니다. 아래 `mypack:wave` 같은 이름은 실제 리소스가 필요한 예시 ID입니다. 그대로 입력하는 것만으로 동작 파일이 설치되지는 않습니다.
 
 ```js
 drmAnimation.play(event.npc, "entity", "attack_animation", 1.0, 40);

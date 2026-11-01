@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -120,6 +120,8 @@ BGM loops for the **current player target**, not every player inside a radius. W
 The player's **Music** volume must be audible. Custom audio resources must exist on each receiving client. Vanilla music suppression uses the independent Disable vanilla music preference.
 
 Add one cast, then sound, title, popup, and BGM in that order. Continue with [Particle Maker](#mob-editor/battleworks-particles).
+
+![Combat Rules → BGM settings.](assets/media/guides/battleworks-016-neo1211/battleworks-bgm.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Enable BGM is off and Sound ID is empty here. Select the sound, enable BGM and adjust Volume and Pitch. This shows configuration, not a verified music playback result.")
 
 ## Visual previews for supported skills
 

@@ -12,10 +12,16 @@ audience: Creators / Operators
 ---
 
 :::note Historical release record
-This page records the earlier release. The current Core installation baseline is 0.2.2.
+This page records the earlier release. Use the current 0.3.1 installation guide.
 :::
 
-## Current version
+## Find the restock clock
+
+Select a product in NPC Shop, then open Restock. Real ticks ignores time skipped by sleeping; World ticks follows world time. Set finite and maximum stock under Product first. Continue with the [current guide](#core/shop-system) for saving and applying it.
+
+![Find the restock clock.](assets/media/guides/drm-031-forge1201/shop-restock.png "DRM 0.3.1 / Forge 1.20.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
+
+## Environment at this release
 
 Minecraft 1.20.1 · Forge · DRM **0.2.1**. Update the server and all clients together and back up `config/dochi_rpg_maker` and the world.
 

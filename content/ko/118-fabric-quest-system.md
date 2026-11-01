@@ -14,6 +14,19 @@ tags:
   - journal
 ---
 
+## 첫 퀘스트의 이름과 수락 방법 정하기
+
+코어의 에디터 선택 화면에서 **Quest Editor → Create New**를 엽니다. 왼쪽 **+ Category**로 장을 만든 다음 **+ Quest**로 그 장에 퀘스트를 추가합니다. 아래는 **DRM 0.3.1 / NeoForge 1.21.1의 영문 화면**입니다.
+
+![새 카테고리 New Chapter 안에 New Quest를 추가한 Quest Editor. 오른쪽 Info에 제목, 설명, 수락 방식이 보입니다.](assets/media/guides/drm-031-neo1211/quest-info.png "왼쪽은 퀘스트 목록, 오른쪽은 선택한 퀘스트의 설정입니다. Info → Objectives → Rewards 순서로 작성합니다.")
+
+1. **Info → Quest ID**에는 나중에 대화에서 찾을 이름을, **Title**에는 플레이어에게 보여 줄 제목을 씁니다. **Description**에는 무엇을 해야 하는지 적습니다.
+2. **Start Policy**를 **Manual Accept**로 두었다면 **Accept Sources**를 확인합니다. NPC 대화에서 받게 하려면 **NPC Interaction / Dialogue**, 저널의 수락 버튼을 쓰려면 **Player Quest Journal**을 켭니다. 화면의 예제는 NPC 쪽만 켜져 있습니다.
+3. **Objectives**에서 완료할 목표를 추가합니다. ‘빵 세 개 가져오기’라면 단순히 갖고 있는지 검사할지, 실제로 납품할지에 맞는 아이템 목표를 고릅니다.
+4. **Rewards**에 지급할 보상을 넣고 **Save As**로 팩을 저장합니다. 현재 에디터에서는 목표를 달성하면 자동 완료되므로, 목표 없는 이름만 저장해 끝내지 마세요.
+
+NPC가 임무를 주는 방식은 아래 **NPC 대화와 연결**에서 이어집니다. 대화에 넣은 퀘스트 ID, 저널에 보이는 제목, 목표 달성 뒤 지급되는 보상을 각각 확인합니다.
+
 ## 저장 위치
 
 퀘스트 팩은 `config/dochi_rpg_maker/quests/<pack>/`에 저장됩니다. `pack.json`은 팩과 카테고리 순서를, `quests/` 폴더는 개별 퀘스트를 담습니다.

@@ -15,7 +15,15 @@ tags:
   - toughness
 ---
 
-## 방어 수치 출처
+## 어떤 효과를 적용할지 고르기
+
+![Real Armor 0.1.4 NeoForge 1.21.1의 General Armor 화면. 강인함, 보호 인챈트와 넉백 저항을 각각 켜고 끌 수 있습니다.](assets/media/guides/armor-014-neo1211/armor-config.png "Armor toughness, Protection enchantments, Armor knockback resistance는 서로 다른 효과입니다. 피해 감소와 밀려나는 거리를 한 스위치로 바꾸는 것이 아닙니다.")
+
+투구 없는 머리를 더 약하게 만들려면 **Body-part armor**를 켭니다. 장비 전체가 함께 보호하게 하려면 끕니다. 갑옷이 닳지 않게 하려면 **Damage armor items**를 끄며, 방어 계산 자체는 그대로 켜 둘 수 있습니다.
+
+## 설정 파일 참고: 방어 수치 출처
+
+아래는 설정 파일을 직접 조정할 때의 참고입니다. 기본 설정 화면만 사용할 때 이 값들을 모두 입력할 필요는 없습니다.
 
 `armorStatSource`는 방어력, 강인함, 넉백 저항을 어디서 읽을지 정합니다.
 

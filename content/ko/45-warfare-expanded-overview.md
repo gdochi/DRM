@@ -25,6 +25,8 @@ DWE는 **DW에 추가하는 차량 기능 모드**입니다. 지원하는 Superb
 
 DW의 TACZ·Player Animator도 필요합니다. [DW 설치](#dochi-warfare/warfare-setup)를 함께 확인하세요.
 
+![실제 M1A2 차량을 대상으로 연 DWE 차량 편집기의 Overview.](assets/media/guides/warfare-expanded-031-neo1211/dwe-ai.png "DWE·DW 0.3.1 / SuperbWarfare 0.8.9.1 / NeoForge 1.21.1. NPC 편집창과 항목이 다릅니다. 왼쪽 AI·Targets·Weapons·Gimmicks·Crew에서 설정하고, 오른쪽 위 AI enabled로 작동 여부를 정합니다. 현재 예제는 OFF입니다.")
+
 ## 첫 차량 설정하기
 
 1. 지원 차량을 배치합니다.

@@ -14,6 +14,19 @@ tags:
   - journal
 ---
 
+## Name Your First Quest And Choose How To Accept It
+
+Open **Quest Editor → Create New** from the core's editor selector. Use **+ Category**, then **+ Quest** to add a quest to that chapter. These are the English screens from **DRM 0.3.1 / NeoForge 1.21.1**.
+
+![Quest Editor with New Quest selected inside New Chapter. Info contains its title, description and acceptance settings.](assets/media/guides/drm-031-neo1211/quest-info.png "The left tree selects a quest. Work through Info, Objectives and Rewards on the right.")
+
+1. Give **Quest ID** a name you can find later in dialogue. **Title** is the player-facing name; **Description** explains the task.
+2. With **Start Policy → Manual Accept**, check **Accept Sources**. Enable **NPC Interaction / Dialogue** for an NPC offer, or **Player Quest Journal** for the journal's Accept button. Only the NPC source is enabled in this example.
+3. Add the task under **Objectives**. For “bring three loaves,” choose whether the player only needs to possess them or must actually deliver them.
+4. Set **Rewards**, then save the pack with **Save As**. Current editor-authored quests complete automatically when their objectives are met; a title alone does not make a finished quest.
+
+Continue with NPC Dialogue Links below to let an NPC offer the quest. Check the dialogue's selected quest ID, the journal title and the reward received after completing the objective.
+
 ## Storage
 
 Quest packs are stored under `config/dochi_rpg_maker/quests/<pack>/`. `pack.json` owns the pack and category order, while `quests/` contains the individual quests.

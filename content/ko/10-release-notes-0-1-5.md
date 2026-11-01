@@ -14,11 +14,17 @@ tags:
   - migration
 ---
 
-이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.2.8](#core/release-notes-0-2-8)을 확인하세요.
+이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.3.1](#core/release-notes-0-3-1)을 확인하세요.
 
 Minecraft 1.20.1 · Forge
 
 아이템 설명창을 직접 꾸미는 **Tooltip Maker**가 추가되었습니다. 대화 선택지의 글자 크기와 강조 효과를 설정할 수 있고, 아이템 미리보기와 HUD의 표시 문제도 개선했습니다.
+
+## 툴팁 제작 도구 찾기
+
+Tooltip Maker에서는 가운데 아이템 설명창을 편집합니다. 왼쪽 Rendered Item은 아이템 모습, Tooltip Text는 이름·설명에 해당하는 요소입니다. Preview에서 확인하고 Save As로 자신의 디자인을 저장합니다. [현재 사용법](#core/tooltip-maker)에서 저장과 적용까지 이어서 볼 수 있습니다.
+
+![툴팁 제작 도구 찾기.](assets/media/guides/drm-031-forge1201/tooltip-maker.png "DRM 0.3.1 / Forge 1.20.1. 위 변경과 관련된 기능을 현재 배포본에서 연 화면입니다. 아래 릴리스 기록의 당시 UI와 구분합니다.")
 
 ## 추가
 

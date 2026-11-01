@@ -13,7 +13,7 @@ audience: Creators / Operators
 
 ## Documentation scope
 
-**Fabric and NeoForge 1.21.1 share this documentation.** Dialogue, NPC Shop, GUI Maker, currency, HUD, quests, Scene Maker, and Core NPC Spawner use the same normal authoring workflow. Select the matching JAR and platform dependencies for your loader.
+**Fabric and NeoForge 1.21.1 share this documentation.** Dialogue, NPC Shop, GUI Maker, currency, HUD, quests, Scene Maker, and Core NPC Spawner use the same normal authoring workflow. Choose files for the same Minecraft version and loader. Follow each guide's loader notes for differences such as apply buttons, quest completion and HUD activation.
 
 Forge 1.20.1 has a separate documentation entry. The existing `core-fabric` route remains for link compatibility and also serves NeoForge readers.
 
@@ -21,9 +21,9 @@ Forge 1.20.1 has a separate documentation entry. The existing `core-fabric` rout
 
 | Loader | Minecraft | DRM | Java | Optional NPC integration |
 | --- | --- | --- | --- | --- |
-| Forge 47+ | 1.20.1 | 0.2.9 | 17 | Compatible CustomNPCs 1.20.1 build (optional) |
-| Fabric | 1.21.1 | 0.2.9 | 21 | Compatible CustomNPCs Fabric build (optional) |
-| NeoForge 21.1+ | 1.21.1 | 0.2.9 | 21 | Compatible CustomNPCs NeoForge 1.21.1 build (optional) |
+| Forge 47+ | 1.20.1 | 0.3.1 | 17 | DNPC or compatible CustomNPCs |
+| Fabric | 1.21.1 | 0.3.1 | 21 | DNPC or compatible CustomNPCs |
+| NeoForge 21.1+ | 1.21.1 | 0.3.1 | 21 | DNPC or compatible CustomNPCs |
 
 Fabric also requires Loader 0.18.0+ and Fabric API 0.116.11+1.21.1+. See [Installation](#core-fabric/installation) for files and optional integrations.
 
@@ -38,6 +38,12 @@ Authoring documents use `config/dochi_rpg_maker`. Server files provide the share
 5. Test dialogue, buying/selling/restocking, quest rewards, and reconnect persistence.
 
 Shared authoring guidance does not automatically convert Minecraft/mod IDs or CustomNPCs world data. Core's `dochi_rpg_maker:npc_spawner` and the separate Spawn Control addon's spawner documents each use their own data paths.
+
+## Check the migrated conversation on its NPC
+
+After moving the files, open the NPC with DRM Core and use **Dialogue JSON → your set → Apply Dialogue**. Empty both hands, speak to the actual NPC and check the text, choices and rewards.
+
+![Applying a moved dialogue set to an NPC.](assets/media/guides/drm-031-neo1211/npc-apply-result.png "DRM 0.3.1 / NeoForge 1.21.1. village_guide was selected and applied; Applied JSON on the right shows the connection. Finding a file and connecting it to an NPC are separate checks.")
 
 ## Direct quest controls
 
@@ -55,6 +61,6 @@ Available on Fabric and NeoForge with permission level 2.
 
 Quests created in the current editor use automatic completion on both loaders. When migrating older JSON with `completionMode: turn_in`, Fabric retains manual turn-in while NeoForge completes automatically. Check the reward timing when importing that legacy data.
 
-Current changes: [DRM 0.2.9](#core-fabric/release-notes-0-2-9).
+Current changes: [DRM 0.3.1](#core-fabric/release-notes-0-3-1).
 
 Minecraft 26.3 uses separate Java 25 builds. See [26.3 setup and exclusions](#core-fabric/minecraft-26-3).

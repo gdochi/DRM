@@ -45,6 +45,8 @@ For example, `13000` through `23000` is a night range. `22000` through `2000` cr
 
 Candidates are searched only in already-loaded chunks. A matching coordinate outside loaded chunks or beyond the world border is rejected.
 
+![Dimension, biome, height, light and time in Rule Inspector.](assets/media/guides/spawn-control-014-neo1211/spawn-rule.png "Spawn Control 0.1.4 / NeoForge 1.21.1. DNPC 0.1.2. Any for Dimensions and Biomes removes those restrictions. Also check Minimum Distance 24 and time 0–23999. A disabled rule does not run even when conditions match.")
+
 ## Spawn Rate and Group
 
 | Field | Meaning |

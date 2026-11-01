@@ -28,6 +28,8 @@ tags:
 
 Right-click air with the DRM Core and choose a tool under **Add-on**. Create NPCs with DNPC or CustomNPCs.
 
+![Actual editor for the trainer’s Pokémon party.](assets/media/guides/cobble-029-neo1211/cobble-party.png "Choose species and level, configure the battle, then apply it to an NPC. Version 0.2.9 / NeoForge 1.21.1, English UI.")
+
 ## Start with one trainer
 
 Follow [installation and the first battle](#drm-cobblemon-editor/cobblemon-editor-setup). Give the trainer one Pokémon, save, apply to an NPC and talk with both hands empty.

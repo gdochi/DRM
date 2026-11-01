@@ -2,7 +2,7 @@
 title: 필드와 버튼
 slug: currency-fields
 order: 91
-description: Currency Editor의 주요 버튼, 입력 필드, 저장되는 JSON 값을 설명합니다.
+description: 이름·금액 표시·아이템 변환 가치와 실물 화폐 설정을 구분합니다.
 product: core
 category: 커런시 에디터
 section: currency-editor
@@ -14,63 +14,39 @@ tags:
   - fields
 ---
 
-## 기본 입력 필드
+## 화폐 이름과 금액 표시 맞추기
 
-| 화면 항목 | 저장 필드 | 설명 |
-| --- | --- | --- |
-| ID | `id` | 화폐 고유 ID입니다. 파일명과 잔액 키에 연결됩니다. |
-| Name | `name` | 화면에 표시할 이름입니다. |
-| Display Format | `displayFormat` | 숫자를 표시할 형식입니다. `%s` 자리에 잔액이 들어갑니다. |
-| HUD Amount | `hudAmountFormat` | HUD 표시를 `compact` 또는 `full`로 정합니다. |
-| Death | `deathRule`, `deathLossPercent` | 사망 시 잔액 보존 또는 손실 비율입니다. |
-| Item Icon | `itemIcon`, `itemNbt` | 대표 아이콘과 아이템 기반 변환 기준입니다. |
+Currency Editor의 **General settings**에서 이름과 규칙을 정합니다. 상점이 한 번에 얼마를 받을지는 [NPC Shop의 Payment](#core/shop-system)에서 따로 설정합니다.
 
-ID는 소문자, 숫자, `_`, `-` 중심으로 쓰는 것이 관리하기 쉽습니다. 파일명은 ID를 기준으로 만들어집니다.
+![Currency Editor의 Name·Display format·사망 처리·아이템 변환 설정.](assets/media/guides/drm-031-forge1201/currency-editor.png "DRM 0.3.1 / Forge 1.20.1. 돈의 종류를 만드는 화면입니다. 상품 가격이나 플레이어의 현재 잔액을 직접 입력하는 화면이 아닙니다.")
 
-## 스위치
-
-| 스위치 | 저장 필드 | 의미 |
-| --- | --- | --- |
-| `Shared` | settings 기본 화폐 | 새 상점에서 기본으로 사용할 화폐로 등록합니다. |
-| `Enable` | `enabled` | 화폐 사용 여부입니다. |
-| `Convert Items` | `autoConvertOnPickup` | 해당 아이템을 주웠을 때 잔액으로 변환합니다. |
-| `Always` | `hudAlwaysVisible` | HUD에서 항상 표시합니다. |
-| `Pickup Flash` | `hudShowOnPickup` | 잔액 변화가 있을 때 잠시 표시합니다. |
-| `Inventory` | `hudShowInInventory` | 인벤토리 화면에서 표시합니다. |
-
-`Shared`는 화폐 정의 자체가 아니라 DRM 기본 설정에도 영향을 주는 버튼입니다. 모든 상점이 반드시 이 화폐를 써야 한다는 뜻은 아닙니다.
-
-## Load와 Save As
-
-`Load`는 화폐 JSON 목록을 열고 검색어로 필터링합니다. 검색 대상은 화폐 ID, 파일명, 표시 이름입니다.
-
-`Save As`는 입력한 이름을 파일명으로 사용합니다. 이미 존재하는 화폐 ID를 다른 파일에 중복 저장하면 나중에 상점 연결이 헷갈릴 수 있으므로, 하나의 화폐는 하나의 ID와 하나의 파일을 기준으로 관리하는 것이 좋습니다.
-
-## Item Icon
-
-`Item Icon`은 화폐를 대표하는 아이템을 고릅니다.
-
-| 값 | 예시 | 의미 |
-| --- | --- | --- |
-| 아이템 ID | `minecraft:emerald` | 상점과 HUD에서 화폐 아이콘처럼 표시됩니다. |
-| NBT | `{CustomModelData:1}` | 특정 모델이나 아이템 데이터를 구분할 때 사용합니다. |
-
-아이템 픽업 변환을 켜면 이 아이템 기준으로 잔액 변환이 일어납니다.
-
-## 표시 형식
-
-`displayFormat`의 기본값은 `%s`입니다.
-
-| 값 | 표시 예 |
+| 화면 항목 | 정할 것 |
 | --- | --- |
-| `%s` | `1200` |
-| `%s G` | `1200 G` |
-| `Gold: %s` | `Gold: 1200` |
+| **Enabled** | 이 화폐를 사용할지 |
+| **Name** | 플레이어에게 보일 이름 |
+| **Display format** | 금액 표기. `%s G`는 1200을 `1200 G`로 표시 |
+| 사망 처리 | 잔액 유지 또는 잃을 비율·방식 |
+| **Use as shared currency** | 공용 화폐로 사용할지 |
+| **Item Icon** | 화폐를 대표할 그림 |
 
-`hudAmountFormat`은 숫자를 축약해서 보일지, 전체 숫자로 보일지 정합니다. 표시 형식과 HUD 형식은 함께 적용될 수 있으므로 너무 긴 접두어나 접미사는 피하는 편이 좋습니다.
+ID는 표시 이름과 별개입니다. **Save As**로 `town_coin`처럼 겹치지 않는 이름에 저장하고, 상점·보상·HUD에서는 같은 화폐를 선택합니다. 이름을 예쁘게 바꾸는 것과 다른 화폐를 새 ID로 만드는 것을 구분하세요.
 
-## 제한
+## 주운 아이템을 잔액으로 바꾸기
 
-- 화폐 정의는 잔액 규칙입니다. 아이템 드롭률이나 몹 보상은 이 에디터가 직접 만들지 않습니다.
-- `itemIcon`은 대표 아이콘입니다. HUD의 위치와 크기는 HUD Maker나 GUI Maker에서 정합니다.
-- `enabled`를 끄면 해당 화폐를 사용하는 상점이나 HUD 표시에서 의도한 결과가 나오지 않을 수 있습니다.
+**Convert items on pickup**을 켜고 **Item Prices**에서 변환할 아이템과 한 개의 가치를 정합니다. 아이콘만 고르는 것으로 변환 목록이 완성되지는 않습니다.
+
+![Item Prices에서 연 Pickup Conversion Items 창.](assets/media/guides/drm-031-forge1201/currency-item-prices.png "DRM 0.3.1 / Forge 1.20.1. 처음 목록은 비어 있습니다. Add Item으로 대상을 넣고, 선택한 행의 Value / Item을 정한 뒤 Apply Selected를 누릅니다.")
+
+1. **Add Item**에서 아이템을 검색해 체크하고 **Add Selected**로 넣습니다.
+2. 목록에서 바꿀 아이템을 체크합니다.
+3. **Value / Item**에 한 개가 될 잔액을 넣고 **Apply Selected**합니다. 예를 들어 10이면 해당 아이템 1개가 잔액 10입니다.
+4. 창을 닫고 화폐를 **Save / Save As**합니다.
+5. 실제 플레이어로 아이템을 주워 아이템 수와 잔액 변화를 함께 확인합니다.
+
+![에메랄드만 변환 목록에 넣고 Value / Item 10으로 저장한 town_coin 화폐.](assets/media/guides/drm-031-forge1201/currency-emerald-prices.png "DRM 0.3.1 / Forge 1.20.1. Emerald 행의 값이 10이고 위 저장 경로가 town_coin.json인지 확인합니다. 이 화면은 변환 대상과 가치의 저장 결과이며, 실제 습득 후 잔액 확인은 별도로 합니다.")
+
+검색어 `emerald`에는 에메랄드 광석·블록도 함께 나옵니다. **Emerald / minecraft:emerald** 행만 체크한 뒤 **Add Selected (1)**을 누르세요. **Select Visible**은 검색 결과 전체를 고르므로, 이 예제에서는 사용하지 않습니다.
+
+## 인벤토리에서 건네는 실물 화폐
+
+**Physical currency**는 화폐를 아이템으로 건네기 위한 설정입니다. 이름·고유 ID·한 개의 가치를 정하고 저장합니다. 단순 아이콘, 주운 아이템 변환, 실물 화폐는 사용하는 위치가 다릅니다. [화폐 시작 안내](#core/currency-editor)에서 상점과 연결하세요.

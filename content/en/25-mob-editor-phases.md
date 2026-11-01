@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -25,6 +25,8 @@ Patterns are not simply executed from top to bottom.
 | Combat Rules → Manager | How should repetition, movement, and waiting be handled? |
 
 Higher scores do not bypass disabled state, target/range/phase/health requirements, cooldowns, or additional conditions.
+
+![Pattern selection, repetition penalties and recovery in Manager.](assets/media/guides/battleworks-016-neo1211/battleworks-manager.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Same Pattern Penalty affects reselection scoring, not stage length. The captured default differs from the 1.0 setting used to test a single attack.")
 
 ## 2. Test two ordinary attacks
 
@@ -104,6 +106,8 @@ Passive patterns cannot own combo links or be combo destinations.
 The editor percentage is **50**; JSON `enterAtHealthRatio` is **0.5**.
 
 Phases latch upward during combat. Healing does not return phase 2 to phase 1. Target loss plus Combat Reset Delay resets combat state, but low remaining health can trigger the higher phase again on re-engagement.
+
+![Boss Phases with the opening phase selected.](assets/media/guides/battleworks-016-neo1211/battleworks-phases.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Opening currently uses 100. In this build the Health At or Below (%) label has a Format error prefix; the adjacent number is the entry-health percentage. Select the second phase to set it to 50.")
 
 ## 8. Add a transition-only announcement
 

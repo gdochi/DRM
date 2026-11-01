@@ -14,6 +14,14 @@ tags:
   - reference
 ---
 
+## Start with a file saved by the editor
+
+Dialogue, shops and GUIs create files through **Save As**. This page is for importing externally edited files or inspecting saved settings. The JSON below is a structural outline: copying empty routes or items does not create a finished conversation or shop.
+
+![Saving a dialogue set with Save As.](assets/media/guides/drm-031-forge1201/dialogue-save-result.png "DRM 0.3.1 / Forge 1.20.1. village_guide names the set folder. Keep dialogue_set.json and the individual node files together.")
+
+For a working download, follow the [one-time reward conversation](#core/dialogue-rewards). Find each file location in [storage paths](#core/paths).
+
 ## Common Rules
 
 - Save JSON as UTF-8.
@@ -161,20 +169,29 @@ The separate `remnant_msg_policy` document controls general/admin JSON and trigg
 ```json
 {
   "type": "currency",
-  "id": "gold",
-  "name": "Gold",
+  "id": "town_coin",
+  "name": "Town Coin",
   "enabled": true,
   "iconType": "item",
-  "itemIcon": "minecraft:gold_nugget",
+  "itemIcon": "minecraft:emerald",
   "itemBacked": true,
   "autoConvertOnPickup": true,
   "displayFormat": "%s",
-  "hudAmountFormat": "compact",
   "deathRule": "KEEP",
   "deathLossPercent": 0,
-  "hudShowOnPickup": true
+  "conversionItems": [
+    {
+      "itemId": "minecraft:emerald",
+      "nbt": "",
+      "unitValue": 10
+    }
+  ]
 }
 ```
+
+![Setting the conversion value of one emerald.](assets/media/guides/drm-031-forge1201/currency-emerald-prices.png "DRM 0.3.1 / Forge 1.20.1. minecraft:emerald and Value / Item 10 map to conversionItems itemId and unitValue. This verifies the saved definition, not a pickup conversion result.")
+
+Use [HUD Maker](#core/hud-maker) for HUD appearance and visibility. The old hudAmountFormat and hudShowOnPickup fields are removed from currency definitions.
 
 Currency IDs use lowercase letters, numbers, underscore, dash, or dot. `deathRule` is `KEEP` or `LOSE`.
 

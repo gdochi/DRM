@@ -64,6 +64,8 @@ Test in this order:
 3. Interact normally as a non-owner test player when owner bypass is enabled.
 4. Verify the effect and lifecycle before adding password failures, potion effects, or LRT payloads.
 
+![Registered Booby Traps with search, selection, Settings, Disarm trap and Remove block.](assets/media/guides/warfare-031-neo1211/dw-traps.png "DW 0.3.1 / NeoForge 1.21.1. This list manages registered traps. It currently has 0 selected; choose an entry to use settings or disarm controls.")
+
 ## Manager, markers, and profiles
 
 Right-click air with the core to search registered traps and inspect status such as active, disabled, disarmed, unloaded chunk, stale block, pending delayed explosion, or missing dependency. `Remove Trap` removes only the trap state; `Destroy Block` removes the state and target block. Destructive manager actions require a second confirmation.

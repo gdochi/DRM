@@ -36,6 +36,8 @@ Neither tool locks the result. Every applied value remains editable in the norma
 6. Press `Apply`.
 7. Return to the normal editor, inspect the gun and generated values, then press `Save`.
 
+![Easy Build opening with Beginner, Intermediate and Expert.](assets/media/guides/warfare-031-neo1211/dw-easy.png "DW 0.3.1 / NeoForge 1.21.1. Start with seven Beginner questions, apply the resulting behavior, then Save the NPC settings.")
+
 ## Detail levels
 
 | Level | Question style |
@@ -58,6 +60,8 @@ Easy Build composes behavior while preserving content owned by other editors:
 * Current virtual `Ammo Stock` and its maximum
 
 You can inspect these unchanged values afterward in `Gun`, `Targets`, `Ammo`, `Visual & FX`, and the other normal categories.
+
+![Guard Rifleman, Patroller and Assault preset cards with horizontal scrolling.](assets/media/guides/warfare-031-neo1211/dw-presets.png "Click a Presets card to apply it. Scroll horizontally for the support gunner and sniper cards. Check the gun, targets and current ammo stock separately.")
 
 ## Combat presets
 

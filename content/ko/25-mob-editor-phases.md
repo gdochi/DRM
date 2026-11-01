@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -25,6 +25,8 @@ tags:
 | Combat Rules → Manager | 반복·이동·대기를 어떻게 조절하는가? | 같은 패턴 반복 점수 낮추기 |
 
 점수를 높여도 꺼진 패턴, 범위 밖의 타겟, 맞지 않는 페이즈, 남은 쿨다운을 무시하지 않습니다. 패턴·이벤트에 추가 Conditions가 있으면 그 조건도 영향을 줍니다.
+
+![Combat Rules → Manager의 선택·반복 보정·회복 대기.](assets/media/guides/battleworks-016-neo1211/battleworks-manager.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Same Pattern Penalty는 같은 패턴의 재선택 점수에 영향을 줍니다. 공격 단계 길이를 바꾸는 입력이 아니며, 첫 공격 하나만 시험할 때는 본문의 1.0 설정과 구분합니다.")
 
 ## 2. 두 공격이 선택되는지 시험하기
 
@@ -105,6 +107,8 @@ Global Cooldown은 모든 패턴을 한꺼번에 잠그는 별도 공용 타이�
 **화면의 퍼센트 입력은 50, JSON의 enterAtHealthRatio는 0.5**입니다.
 
 페이즈는 한 전투에서 도달한 가장 높은 번호를 유지합니다. 회복해서 체력이 80%가 되어도 2페이즈에서 1페이즈로 내려가지 않습니다. 타겟 상실 후 Combat Reset Delay가 지나면 전투 상태가 초기화되지만, 남은 체력이 낮으면 다음 전투에서 다시 높은 페이즈에 들어갈 수 있습니다.
+
+![Boss Phases에서 시작 페이즈의 체력 기준을 편집하는 화면.](assets/media/guides/battleworks-016-neo1211/battleworks-phases.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 현재 Opening의 기준은 100입니다. 화면에 Format error가 붙은 Health At or Below (%) 행 오른쪽 숫자가 진입 체력 퍼센트입니다. 두 번째 페이즈를 선택해 50으로 바꿉니다.")
 
 ## 8. 전환 연출 추가하기
 

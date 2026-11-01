@@ -11,7 +11,13 @@ version: 0.2.2
 audience: Creators / operators
 ---
 
-## Current installation
+## Find editor favorites
+
+Use a star beside an editor to favorite it, then return through Favorites on the left. Load, Use Default and Create New start work in the selected editor. Continue with the [current guide](#core/quick-start) for saving and applying it.
+
+![Find editor favorites.](assets/media/guides/drm-031-forge1201/editor-selector.png "DRM 0.3.1 / Forge 1.20.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
+
+## Installation at this release
 
 The current DRM Core for Minecraft 1.20.1 / Forge / Java 17 is **0.2.2**. Fabric and NeoForge 1.21.1 use Core 0.2.5; select the JAR for your loader. Update server and clients together and back up settings and the world.
 

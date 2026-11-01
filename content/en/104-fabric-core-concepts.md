@@ -25,6 +25,9 @@ tags:
 
 **Close** and the Back/Forward arrows do not save your work.
 
+
+![The NPC apply screen after selecting a saved server conversation.](assets/media/guides/drm-031-neo1211/npc-apply-result.png "DRM 0.3.1 / NeoForge 1.21.1. village_guide was selected and linked with Apply Dialogue. After Save As under another name, select the new file here too.")
+
 ## Content and appearance are separate
 
 Write dialogue and choices in **Dialogue Editor**. Arrange the dialogue window, colors and images in **GUI Maker**. Set products and prices in **NPC Shop**.

@@ -25,6 +25,9 @@ tags:
 
 **Close** and the Back/Forward arrows do not save your work.
 
+![NPC Apply with functions on the left, files in the middle and applied bindings on the right.](assets/media/guides/drm-031-forge1201/npc-apply-result.png "DRM 0.3.1 / Forge 1.20.1. Create the file with Save As, then connect it to the NPC here. Dialogue shows village_guide in this example.")
+
+
 ## Content and appearance are separate
 
 Write dialogue and choices in **Dialogue Editor**. Arrange the dialogue window, colors and images in **GUI Maker**. Set products and prices in **NPC Shop**.

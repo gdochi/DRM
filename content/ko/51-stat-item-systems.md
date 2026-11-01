@@ -16,7 +16,9 @@ tags:
 
 ## Stat Builder
 
-스탯 세트는 `config/dochi_rpg_maker/stats/sets/`에 저장되고 `stats/active_set.json`이 플레이 세트를 선택합니다. 각 스탯에는 ID, 이름, 설명, 아이템 아이콘, 최소/최대/기본값, 투자 비용, 바닐라/모드 속성 효과를 설정할 수 있습니다.
+플레이어가 포인트를 투자하는 능력치를 만듭니다. 처음에는 **Add**로 스탯 하나를 추가해 이름과 최소·최대·기본값을 정합니다. 오른쪽 **Provider**에서 투자할 때 낼 XP 레벨·DRM 화폐·아이템을 고릅니다.
+
+체력이나 공격력이 실제로 달라지게 하려면 **Attribute**와 **Base effect / Per point**도 연결합니다. 저장한 뒤 **Set Active**로 사용할 세트를 정하고 **Y**에서 투자 비용과 결과를 확인합니다.
 
 투자 재화는 Minecraft XP 레벨, DRM 커런시, 아이템 중에서 선택합니다. 비용 증가는 base, step, multiplier로 계산합니다.
 
@@ -24,9 +26,11 @@ tags:
 
 번들 `default_stat_gui.json`은 왼쪽의 넓은 스크롤 목록과 오른쪽의 값, 비용, 설명, 투자 버튼을 분리합니다. GUI Maker에서 복사본을 수정하세요.
 
+![Stat Builder의 Strength와 투자 비용·속성 효과 설정.](assets/media/guides/drm-031-forge1201/registry-stat_builder.png "DRM 0.3.1 / Forge 1.20.1. 왼쪽에서 스탯을 고르고 가운데에서 범위, 오른쪽에서 비용·효과를 정합니다. Attribute: Not selected인 현재 예제는 속성 효과가 아직 연결되지 않았습니다.")
+
 ## Item Editor
 
-아이템 정의는 `config/dochi_rpg_maker/items/definitions/`에 저장되고, 공용 카테고리, 희귀도, 툴팁 형식은 `items/editor_settings.json`에 저장됩니다.
+**Item template**에서 바탕이 될 아이템을 먼저 고릅니다. 이름과 설명을 바꾸고 **Stat Rules**에서 필요한 능력치와 장착 보너스를, **Vanilla Attribute**에서 속성 효과를 정합니다. **Save As**로 내 파일을 만든 뒤 **Give Test Item**으로 받아 확인합니다.
 
 아이템 정의에서 설정할 수 있는 항목은 다음과 같습니다.
 
@@ -36,6 +40,8 @@ tags:
 - 바닐라/모드 속성 수정치와 장비 슬롯
 - 스탯 포인트당 스케일링
 - 툴팁 섹션 순서와 표시 여부
+
+![Item Editor의 Item Definition과 Tooltip Lines·Stat Rules·Vanilla Attribute 탭.](assets/media/guides/drm-031-forge1201/registry-item_editor.png "DRM 0.3.1 / Forge 1.20.1. 현재 Item template은 Not selected입니다. 쓸 원본 아이템을 먼저 고르고 이름·속성·요구치를 정한 뒤 저장하고 Give Test Item으로 확인합니다.")
 
 ## 요구치 미달 페널티
 
@@ -66,3 +72,11 @@ NPC 적용 화면에서 **Stat Builder** 파일을 연결하세요. 이후 그 N
 Forge Item Editor에서 아이템의 `setId`와 툴팁 템플릿을 선택할 수 있습니다. 장비 세트는 `items/sets/`에 저장하며, 필요한 장착 수와 스탯 보너스·속성 수정치를 단계별로 정의합니다. 툴팁 템플릿은 `items/tooltip_templates/`에서 재사용합니다.
 
 아이템 하나의 정의, 여러 장비가 공유하는 세트, 설명창의 표현 템플릿을 구분해 저장하세요. 같은 스탯 세트를 참조하는지 확인한 뒤 실제 장착 수를 바꿔 보너스와 툴팁을 시험합니다. 이 Forge 기능을 다른 로더의 동일 기능으로 간주하지 마세요.
+
+## 저장 파일을 옮길 때
+
+| 내용 | 위치 |
+| --- | --- |
+| 스탯 세트 / 활성 세트 | `config/dochi_rpg_maker/stats/sets/` / `stats/active_set.json` |
+| 아이템 정의 | `config/dochi_rpg_maker/items/definitions/` |
+| 카테고리·희귀도·툴팁 공용 설정 | `config/dochi_rpg_maker/items/editor_settings.json` |

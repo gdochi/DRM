@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -27,6 +27,10 @@ BattleWorks uses DRM's model and playback APIs. Configure geometry, textures, an
 | Geometry-only test | Explicit No Animation / None |
 
 A Gecko clip and a humanoid Better Combat pose layer are not interchangeable.
+
+![Action stage Animation + Hitbox settings with main_hand.](assets/media/guides/battleworks-016-neo1211/battleworks-stage-animation.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Build Assist generated Vanilla Swing / main_hand at speed 1. Choose animation opens clips; Edit this hitbox opens hit detection.")
+
+For ordinary DNPCs, prepare appearance in the **DNPC editor → Appearance & Model**. Find the stage mapping through timeline **Action → Stage → Animation + Hitbox**. The NPC Basic instructions apply to DRM model settings.
 
 ## 2. Select a clip in Hitbox Library
 

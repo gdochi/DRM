@@ -35,6 +35,16 @@ Fabric also needs Fabric API. Use DNPC, Easy NPC or CustomNPCs on older targets.
 
 Changing multiplayer settings needs permission level 2.
 
+These are the standalone settings from **Real Armor 0.1.4 / NeoForge 1.21.1**. Use **General Armor** for armor behavior and **NPC Compatibility** for your NPC integration.
+
+![General Armor with calculation, body-part armor, durability, toughness, Protection and knockback-resistance switches.](assets/media/guides/armor-014-neo1211/armor-config.png "Enable armor calculation controls the whole feature. Body-part armor selects equipment by hit region; Damage armor items enables durability loss.")
+
+![NPC Compatibility with Dochi NPC Core, Easy NPC, CustomNPCs and debug settings.](assets/media/guides/armor-014-neo1211/armor-compatibility.png "Check Dochi NPC Core when using DNPC. This capture is 1.21.1; CustomNPCs is unavailable on 26.3.")
+
+DRM's shared settings show the same options in two columns.
+
+![Dochi Real Armor selected in DRM's shared settings, with armor rules on the left and integrations on the right.](assets/media/guides/armor-014-neo1211/shared-armor.png "Select Dochi Real Armor in Mods Config. Check the main calculation switch as well as the NPC integration.")
+
 ## Choose the basics
 
 1. Enable the NPC integration you use.

@@ -14,28 +14,45 @@ tags:
   - operations
 ---
 
-## Opening DRM Admin
+## Enable the server tool first
 
-The default key is `F7`. The key does not grant permission; the server checks the operator's access before opening the screen.
+A new server policy starts with DRM Admin **OFF**. F7 cannot open it in that state, even for an operator.
 
-Authorized operators can inspect or change:
+1. Join the world or server and right-click air with DRM Core.
+2. Open **Default Configs → Admin** at the bottom of the editor selector.
+3. Turn on **Enable DRM Admin** and click **Apply**.
+4. Wait for **Saved and applied on the server**.
+5. Close settings and press **F7**. Editing this policy requires operator permission level 2 or higher.
 
-- Player tags and DRM currency
-- DRM quest state
-- Advancements
-- CustomNPCs faction scores and storeddata
-- FTB Quests progress when FTB Quests is installed
+![Enabling DRM Admin and applying its server policy.](assets/media/guides/drm-031-neo1211/admin-server-policy.png "DRM 0.3.1 / NeoForge 1.21.1. Apply actually saved enabled: true in config/dochi_rpg_maker-admin.json and received the server acknowledgement. This policy is separate from enabling the keyboard shortcut.")
 
-Sections for unavailable integrations are disabled.
+If F7 does nothing, also check **Keyboard shortcuts → Open DRM Admin** and Minecraft's key bindings. The server policy file is `config/dochi_rpg_maker-admin.json`, outside the `config/dochi_rpg_maker/` folder.
 
-## Operating Safely
+## Choose a player and data category
 
-- Recheck the selected player before applying a change.
-- Read the confirmation for resets, completion, and other important actions.
-- Resetting a quest does not take back rewards that were already granted.
-- FTB Quests progress may belong to a team rather than one player.
+Read the panels left to right: **Players → Data categories → Data list → Edit tools**. Select the player first, then a category such as Tags, DRM Quests or Currency. Clicking a data row opens its details on the right.
 
-Create definitions and content in their normal editors. Use DRM Admin for player-state inspection and recovery.
+![The selected player in DRM Admin Overview.](assets/media/guides/drm-031-neo1211/admin-overview.png "DRM 0.3.1 / NeoForge 1.21.1. This is the single documentation player DocsGuide. Factions, FTB Quests, Trainer battles and Stored data are Unavailable because their integrations are absent in this environment.")
+
+**Checkboxes mark mutation targets**; the blue selected row chooses the details being viewed. Batch deletion and resets act on checked entries. Check the search results and player before selecting all.
+
+## Check a one-time gift record
+
+If the [one-time reward conversation](#core/dialogue-rewards) shows the wrong gift state, find `welcome_received` in that player's **Tags**. Its presence means the claim condition is met. Removing the tag for another test does not take back previously granted apples. No data on a new player means no tags exist yet. Enter a name under Tag to add and click Add to create one; check an existing tag before deleting it.
+
+![welcome_received added through DRM Admin and confirmed by the server.](assets/media/guides/drm-031-neo1211/admin-tag-added.png "DRM 0.3.1 / NeoForge 1.21.1. Entering welcome_received under Tag to add and clicking Add created this row. Server confirmed and the actual server player tag were checked. Delete is disabled because the row is not checked.")
+
+## State resets versus content editing
+
+| Task | Tool or effect |
+| --- | --- |
+| Change dialogue, products, objectives or rewards | Edit and apply the document in its authoring editor |
+| Inspect tags, balances or quest state | Select the player and category in DRM Admin |
+| Reset a quest | Changes progress; does not automatically reclaim granted items or money |
+| Change FTB Quests progress | May affect the player's team |
+| Change DNPC friendly/hostile relationships | Use DNPC relationships; these differ from CustomNPCs Factions here |
+
+CustomNPCs Factions and Stored data apply to supported older Minecraft targets. CustomNPCs is excluded on 26.3.
 
 ## 0.2.8 administration
 

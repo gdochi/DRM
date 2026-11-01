@@ -15,6 +15,12 @@ tags:
   - overview
 ---
 
+## NPC의 총기 설정 화면
+
+**DW Npc Core**로 NPC를 열면 왼쪽에서 무기·감지·탄약·공격 대상을 고를 수 있습니다. 다음은 **DW 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1**의 영문 화면입니다.
+
+![총기 모드를 켠 Overview의 감지·전투·피해 설정 요약.](assets/media/guides/warfare-031-neo1211/dw-overview.png "Overview는 현재 값을 읽는 곳입니다. 총을 바꾸려면 Gun, 재장전은 Ammo, 감지·발사 속도는 Senses로 이동합니다.")
+
 ## Warfare로 할 수 있는 일
 
 NPC에게 총을 들려주고 누구를 공격할지, 얼마나 가까이 갈지, 언제 재장전할지 정합니다. 가까운 적에게는 근접 무기를 쓰게 하거나 엄폐·순찰·용병 지휘도 설정할 수 있습니다.

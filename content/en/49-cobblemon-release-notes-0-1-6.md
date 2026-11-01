@@ -14,11 +14,16 @@ tags:
   - changelog
 ---
 
+
+This page is a **historical 0.1.6 change record**. For present installation use [0.2.9 setup](#drm-cobblemon-editor/cobblemon-editor-setup); for controls use [Battle Rules](#drm-cobblemon-editor/cobblemon-battle-rules).
+
+![The current per-round battle-settings screen.](assets/media/guides/cobble-029-neo1211/cobble-battle-rules.png "Current 0.2.9 / NeoForge 1.21.1 illustrates common and round-specific rules. It is not an archived 0.1.6 screenshot and can contain later controls.")
+
 ## At a glance
 
 Version 0.1.6 reorganizes battle settings into common and per-round rules and supports Cobblemon 1.7.3 and 1.8.0 with one JAR. It also adds trainer battle sounds and corrects learnable-move lists, item enforcement, spread-move AI evaluation, editor state, and shared DRM navigation.
 
-## Installation and compatibility
+## Installation at the time of 0.1.6
 
 - Minecraft 1.21.1, Java 21, Fabric Loader 0.17.2+, Fabric API 0.116.6+1.21.1+
 - Required: DRM Core 0.1.9+, Cobblemon 1.7.3 to below 1.9.0, CustomNPCs Fabric 1.0.0

@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -36,6 +36,10 @@ tags:
 7. Save/apply and confirm retreat followed by renewed pursuit.
 
 Mobility tells the manager how to record the pattern. It does not create movement by itself.
+
+![The Action stage under Stage → Movement.](assets/media/guides/battleworks-016-neo1211/battleworks-stage-movement.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Select Action above the timeline, then change the Stage subpage to Movement. Movement: None means no stage movement is configured yet.")
+
+Use **Stage → Movement** for stage movement, or timeline **+ Action → Caster Movement** for an action at a particular tick. This shows the editing location rather than a completed retreat.
 
 ## 2. Understand the three dedicated movement actions
 

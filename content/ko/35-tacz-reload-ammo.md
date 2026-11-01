@@ -15,6 +15,12 @@ tags:
   - magazine
 ---
 
+## 재장전하는 경비병부터 설정하기
+
+**Ammo**에서 **Reload**와 **Supply Ammo**를 켜고, 처음에는 **Reload Type: Normal**로 둡니다. **Ammo Stock**은 예비 탄약이며 총 안의 장전탄과 다릅니다.
+
+![Ammo의 재장전·예비 탄약·재생·소진 전환 설정.](assets/media/guides/warfare-031-neo1211/dw-ammo.png "DW 0.3.1 / NeoForge 1.21.1. 예제 Stock -1은 무한 예비 탄약, Reload Duration 0은 총기의 원래 재장전 시간을 사용합니다. NPC 보조 손에 탄창 소품을 넣는 설정이 아닙니다.")
+
 ## 탄약 모델
 
 도치 워페어는 관리 NPC가 여분 TACZ·PointBlank·SuperbWarfare 탄약이나 탄창 아이템을 오프핸드에 들게 만들지 않습니다. NPC는 지원되는 원본 총기를 사용하지만 예비 탄약은 DW 데이터로 표현합니다.

@@ -27,16 +27,20 @@ tags:
 
 One NPC uses one role. Use separate NPCs for a shop and a trading service.
 
+![PokéMart General role and payment settings.](assets/media/guides/cobble-029-neo1211/cobble-pokemart.png "Choose NPC Role and Currency on the right. The default Provider is CobbleDollars; change it to an available payment provider if that mod is absent. Version 0.2.9 / NeoForge 1.21.1.")
+
 ## Make the first shop
 
 1. Open **Add-on → PokéMart Editor** from DRM's editor list.
-2. Load a default and choose **Role → Sales**.
+2. Load a default and choose **General → NPC Role → Sales**.
 3. Set the name and payment under **General**.
-4. Add a product and edit its species, level, form and other Pokémon details.
-5. Set its price and **Initial Stock**. **-1** is unlimited.
+4. Use **Pokémon Catalog → Add**, then **Edit Detailed Pokémon Data** at the lower right to choose species, level, form and other details.
+5. Set its price and **NPC Stock → Initial**. **-1** is unlimited.
 6. **Save As** your own file.
 7. Open a DNPC or CustomNPCs NPC with the DRM Core and apply **PokéMart**.
 8. Interact with empty hands. Buyers need a free party slot.
+
+![Pokémon Catalog editing a level 5 Bulbasaur product, price and stock.](assets/media/guides/cobble-029-neo1211/cobble-catalog.png "Select a product on the left to edit it on the right. This example costs 5000, starts/caps at 3, and restocks 1 every 72000 ticks: one hour at 20 ticks per second.")
 
 ## Choose payment
 

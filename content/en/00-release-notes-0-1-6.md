@@ -16,6 +16,12 @@ tags:
 
 Minecraft 1.20.1 · Forge
 
+## Shared editor controls
+
+The document, folder and save icons keep the same roles across editors. The two arrows move through visited screens; use the disk icon or Save As to save. Continue with the [current guide](#core/gui-system) for saving and applying it.
+
+![Shared editor controls.](assets/media/guides/drm-031-forge1201/gui-text.png "DRM 0.3.1 / Forge 1.20.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
+
 ## Changed
 
 - Unified the top menu and navigation UI across editors.

@@ -7,19 +7,28 @@ product: dochi-npc-core
 category: 작업
 section: editor
 status: 사용 안내
-version: 0.1.2
+version: 0.1.3
 audience: NPC 제작자
 ---
 
 ## 조리 작업 준비하기
 
 1. NPC가 걸어갈 수 있는 곳에 조리 장치와 재료·완성품 보관함을 놓습니다.
-2. 데이사이클의 **채취·생산 → 조리 작업**을 고릅니다.
-3. 조리법 목록에서 만들 음식을 선택합니다.
-4. 재료 보관함, 작업할 장치, 완성품을 넣을 보관함을 지정합니다.
-5. 재료·도구·연료를 준비하고 저장합니다.
+2. NPC 편집기의 **Schedule → Add time**으로 시간대를 만들고, 그 행의 **+**를 누릅니다. 행동 목록에서 **Cooking**을 검색해 고릅니다. **Gathering and production** 분류에서도 찾을 수 있습니다.
+3. 오른쪽 **Food to cook** 옆 찾기 버튼으로 만들 음식을 고릅니다. 조리법을 고르기 전에는 재료를 가져오지 않습니다.
+4. **Ingredient source / Cooking block / Output**으로 재료 보관함·작업 장치·완성품 보관함을 지정합니다. 아래쪽 설정은 Inspector를 스크롤해 찾습니다.
+5. 재료·필요한 도구·연료를 준비하고 **Batch / Repeat**를 정합니다.
+6. **Enable schedule**을 켜고 **Save to NPC**로 실제 NPC에 저장합니다. 현재 게임 시간이 설정한 시간대에 들어가는지도 확인합니다.
 
-**반복**을 켜면 계속 만듭니다. 끄면 한 배치를 만들어 납품한 뒤 기다립니다.
+![Schedule에 Cooking을 추가하고 Food to cook·Ingredient source를 설정하는 화면.](assets/media/guides/dnpc-013-neo1211/dnpc-cooking.png "DNPC 0.1.3 / Farmer’s Delight 1.3.4 / NeoForge 1.21.1. 이 준비 화면은 음식·장치가 미지정이고 Enable schedule도 OFF입니다. 필요한 위치를 지정하고 시간표를 켠 뒤 저장합니다.")
+
+**Repeat**를 켜면 계속 만들고, 끄면 한 배치를 만들어 납품한 뒤 기다립니다.
+
+## 음식 선택 창에서 확인할 것
+
+찾기 버튼을 누른 뒤 음식 이름이나 아이템 ID로 검색하고, 왼쪽에서 조리법 한 행을 고릅니다. 같은 스테이크라도 화로·훈연기 등 만드는 장치가 다르면 별도 행입니다. 오른쪽 **Cooking block / Recipe cooking time / Ingredients for one recipe batch**를 읽고 준비할 장치와 재료를 정하세요.
+
+![스테이크의 화로 조리법을 선택해 생소고기 1개와 조리 시간 200틱이 표시된 화면.](assets/media/guides/dnpc-013-neo1211/dnpc-cooking-beef.png "DNPC 0.1.3 / NeoForge 1.21.1. 검색어는 minecraft:cooked_beef입니다. 선택한 행은 Furnace, 200 ticks, Raw Beef ×1입니다. 아래 Apply는 이 선택을 편집 중 초안에 반영하며, 마지막 Save to NPC는 별도로 누릅니다.")
 
 ## 어떤 장치를 쓸 수 있나요?
 

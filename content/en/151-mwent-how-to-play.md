@@ -7,7 +7,7 @@ product: mwent
 category: Playing
 section: play
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Players
 ---
 
@@ -17,6 +17,8 @@ Win **two rounds** in a match lasting up to three rounds. Each player has front 
 
 When both players pass, compare scores. The higher score earns a round win; a tied round gives both players a win. The whole match can therefore finish as a draw.
 
+![MWENT battle with ten hand cards, front/back rows, scores and the pass control.](assets/media/guides/minigames-015-neo1211/mwent-battle.png "Minigames 0.1.5 / NeoForge 1.21.1, English UI. Scores and round markers are left, your hand is below, and decks, graveyards and Pass round are right. Each side has two rows of nine sockets.")
+
 ## 1. Select a deck and mulligan
 
 Check your faction, deck and leader. Draw ten cards at the start. A coin toss chooses the starting player. The first player can replace up to three cards in the opening mulligan; the second can replace up to two. Replacements are optional. Continue starts the battle.
@@ -24,6 +26,8 @@ Check your faction, deck and leader. Draw ten cards at the start. A coin toss ch
 Later rounds draw up to three cards while the deck has cards left. The hand limit is ten. Draws blocked by a full hand add to that round's two base mulligan opportunities. The previous round's winner starts the next round.
 
 ## 2. Play a card on your turn
+
+The first player may use the **opening tactic** chosen during preparation once. It is separate from playing a hand card, and 0.1.6 offers five choices. See [selection and actual use](#mwent/version-0-1-6) for Golem seal core turning into a four-power Golem in the same socket.
 
 1. Select a hand card. Right-click first to inspect its abilities and current status.
 2. Place units in a legal empty socket. Rows and immediate neighbors can affect abilities.

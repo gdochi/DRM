@@ -7,7 +7,7 @@ product: dochi-npc-core
 category: NPC Core 설치와 시작
 section: setup
 status: 사용 안내
-version: 0.1.2
+version: 0.1.3
 audience: 제작자 / 서버 운영자
 ---
 
@@ -32,6 +32,10 @@ DNPC만으로 NPC를 만들고 꾸미고 일을 시킬 수 있습니다. 대화�
 3. 코어로 그 NPC를 우클릭해 편집 화면을 엽니다.
 4. 이름을 쓰고 스킨과 장비를 고른 뒤 저장합니다.
 5. 코어를 내려놓고 NPC의 모습을 확인합니다.
+
+![DNPC 0.1.3 편집기의 Identity 화면. 왼쪽 기능 목록, 가운데 NPC 미리보기, 오른쪽 Name과 Title이 보입니다.](assets/media/guides/dnpc-013-neo1211/dnpc-identity.png "NeoForge 1.21.1의 영문 화면입니다. 첫 NPC의 이름은 Identity → Name에 씁니다. 스킨은 왼쪽 Appearance & Model, 갑옷은 Inventory & Equipment에서 고릅니다.")
+
+이름과 외형을 다 바꾼 뒤에는 상단 디스크 모양 **Save to NPC**를 누릅니다. 나중에도 같은 NPC를 꺼내 쓰려면 별도로 [Save As로 템플릿 저장](#dochi-npc-core/npc-core-templates)을 합니다.
 
 ## 코어로 할 수 있는 일
 

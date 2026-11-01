@@ -23,6 +23,8 @@ Battle Presentation Maker's **Region** embeds selected block states in the prese
 
 Capture alone does not persist the stage to disk. Capture again after changing the selected area. World selection never changes blocks, and Esc cancels it.
 
+![Captured flooring and pillars saved as a presentation file.](assets/media/guides/cobble-029-neo1211-flow/cobble-region-captured.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. After capturing 31 blocks and two block states, Save As created custom/guide_stage.json. Saved on the right and the bottom status confirm the save.")
+
 ## Capture limits
 
 | Item | Current limit / behavior |
@@ -31,15 +33,17 @@ Capture alone does not persist the stage to disk. Capture again after changing t
 | Stored blocks | Up to 32,768 supported non-air blocks |
 | Distinct block states | Up to 512 |
 | Chunks | Entire region must be loaded |
-| Block entities such as chests | Skipped; inventories, NBT and entities are not stored |
+| Block entities such as chests | Reject capture when present; select a region excluding them |
 
 Oversized regions, too many states or no capturable blocks prevent capture. The visual stage does not tick, so it does not reproduce functional redstone or container behavior.
 
 ## Author FX
 
-Add a particle entry in **FX**, choose its particle ID/options, then use Emit, Motion, Path and Cues to set timing, count/interval, shape, dimensions, position, velocity and path. Copy/Paste transfers entry settings.
+Add a particle entry in **Particles**, choose its particle ID/options, then use Emit, Motion, Path and Cues to set timing, count/interval, shape, dimensions, position, velocity and path. Copy/Paste transfers entry settings.
 
 Start with one particle and a short interval, then preview it with the actor, block stage and camera. These are presentation visuals, not world attacks or damage hitboxes. External-mod particles require their provider mod.
+
+![A particle layer added under Particles, with the presentation playing.](assets/media/guides/cobble-029-neo1211-flow/cobble-presentation-fx.png "Choose Particles → Add layer, then edit Emit on the right. This entry uses minecraft:end_rod, ticks 0–39, Interval 2 and Samples 24. Play runs the editor’s presentation preview.")
 
 ## Connect the result
 

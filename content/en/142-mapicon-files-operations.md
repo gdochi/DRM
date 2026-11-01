@@ -30,6 +30,8 @@ Only server-loaded NPCs in the player's dimension are displayed: within 4096 blo
 
 Unloading, death, dimension changes and disconnects clear stale entries. Version 0.1.2 does not store fixed POIs or last-known locations for unloaded NPCs. Managed NPCs suppress their normal Xaero radar marker to reduce duplicates. Xaero Fair Play mode does not draw the addon minimap layer.
 
+![The received DNPC marker rendered on the actual Xaero minimap.](assets/media/guides/mapicon-012-neo1211/mapicon-minimap.png "MapIcon 0.1.2 / NeoForge 1.21.1 / Xaero’s Minimap 26.6.0. The blue humanoid above the white player marker represents the NPC visible in the world. Check the actual map after saving, as well as the editor preview.")
+
 ## Troubleshooting
 
 | Symptom | Check |

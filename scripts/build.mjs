@@ -13,6 +13,7 @@ const modLogoDir = path.join(root, "_modLogo");
 const distModLogoDir = path.join(assetsDir, "mod-logos");
 
 const config = JSON.parse(await readFile(path.join(root, "site.config.json"), "utf8"));
+const captureManifest = JSON.parse(await readFile(path.join(srcDir, "guide-environments.json"), "utf8")).captures;
 const docsByLocale = {};
 
 for (const locale of Object.keys(config.locales || {})) {
@@ -61,6 +62,10 @@ async function loadLocale(locale) {
     if (data.hiddenNav) continue;
     const slug = data.slug || file.replace(/^\d+-/, "").replace(/\.md$/, "");
     const rendered = renderMarkdown(body, slug);
+    const captureEnvironments = [...new Map([...rendered.html.matchAll(/<img[^>]+src="([^"]+)"/g)]
+      .map(match => captureManifest[match[1]])
+      .filter(Boolean)
+      .map(capture => [`${capture.loader}/${capture.minecraft}`, { loader: capture.loader, minecraft: capture.minecraft }])).values()];
     docs.push({
       slug,
       title: data.title || titleFromSlug(slug),
@@ -77,6 +82,7 @@ async function loadLocale(locale) {
       sourcePath: path.relative(root, path.join(localeDir, file)).replace(/\\/g, "/"),
       html: rendered.html,
       headings: rendered.headings,
+      captureEnvironments,
       searchText: stripMarkdown(body)
     });
   }
@@ -185,6 +191,17 @@ function renderMarkdown(markdown, docSlug) {
       continue;
     }
 
+    const imageMatch = trimmed.match(/^!\[([^\]]*)\]\(([^\s)]+)(?:\s+"([^"]*)")?\)$/);
+    if (imageMatch) {
+      flushParagraph();
+      const [, alt, source, caption] = imageMatch;
+      const href = imageSource(source);
+      const dimensions = captureManifest[href];
+      html.push(`<figure class="doc-image"><a href="${escapeAttr(href)}" target="_blank" rel="noreferrer"><img src="${escapeAttr(href)}" alt="${escapeAttr(alt)}"${dimensions ? ` width="${dimensions.width}" height="${dimensions.height}"` : ""} loading="lazy" decoding="async" /></a>${caption ? `<figcaption>${renderInline(caption)}</figcaption>` : ""}</figure>`);
+      i += 1;
+      continue;
+    }
+
     const calloutMatch = trimmed.match(/^:::(note|tip|warning|danger)\s*(.*)$/);
     if (calloutMatch) {
       flushParagraph();
@@ -273,6 +290,17 @@ function renderMarkdown(markdown, docSlug) {
   return { html: html.join("\n"), headings };
 }
 
+function imageSource(source) {
+  // Keep local images relative so the same build works under a GitHub Pages subpath.
+  if (/^(?:\.\/)?assets\/media\/[A-Za-z0-9_./-]+\.(?:png|jpe?g|webp|gif|svg)$/i.test(source)
+    && !source.split("/").includes("..")) return source;
+  if (/^https:\/\//i.test(source)) {
+    const url = new URL(source);
+    if (!url.username && !url.password) return source;
+  }
+  throw new Error(`Invalid document image URL: ${source}`);
+}
+
 function isTableStart(lines, index) {
   if (!lines[index]?.trim().startsWith("|")) return false;
   const next = lines[index + 1]?.trim();
@@ -313,6 +341,7 @@ function stripMarkdown(value) {
   return String(value)
     .replace(/```[\s\S]*?```/g, " ")
     .replace(/:::(note|tip|warning|danger)[\s\S]*?:::/g, " ")
+    .replace(/!\[([^\]]*)\]\([^\s)]+(?:\s+"[^"]*")?\)/g, "$1")
     .replace(/\[(.+?)\]\((.+?)\)/g, "$1")
     .replace(/[#>*_`|-]/g, " ")
     .replace(/\s+/g, " ")

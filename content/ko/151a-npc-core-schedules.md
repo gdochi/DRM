@@ -7,18 +7,22 @@ product: dochi-npc-core
 category: 시간표
 section: editor
 status: 사용 안내
-version: 0.1.2
+version: 0.1.3
 audience: NPC 제작자
 ---
 
 ## 낮에는 일하고 밤에는 쉬게 하기
 
-1. NPC 편집기의 **데이사이클**을 엽니다.
-2. 시간대를 추가하고 ‘낮 근무’처럼 이름을 씁니다.
-3. 시작·종료 시각을 입력하고 할 일을 고릅니다.
-4. 시간대 옆 **✓**로 내용을 반영합니다.
-5. 밤 시간대를 하나 더 만들어 **Rest / Bed**를 고르고 쉴 곳이나 침대를 지정합니다.
-6. **스케줄 활성화**를 켜고 NPC를 저장합니다.
+1. NPC 편집기 왼쪽의 **Schedule**을 엽니다.
+2. 가운데 **Add time**을 누릅니다. 오른쪽 **Time slot name**에 ‘낮 근무’처럼 이름을 쓰고 바로 옆 **✓**로 이름을 반영합니다.
+3. 오른쪽 **Start (world ticks) / End (world ticks)**에 시작·종료 시각을 입력합니다.
+4. 가운데 시간대 행의 **+**로 할 일을 추가하고 그 액션을 골라 장소·대상을 정합니다.
+5. 밤 시간대를 하나 더 만들고 **Rest** 또는 **Sleep in assigned bed**와 쉴 곳이나 침대를 지정합니다.
+6. 가운데 위 **Enable schedule**을 켠 뒤, 상단 **Save to NPC**로 NPC에 저장합니다.
+
+![DNPC의 Schedule에서 Add time을 누른 직후. 가운데 0–1000 시간대, 오른쪽에 이름과 시작·종료 시각이 있습니다.](assets/media/guides/dnpc-012-neo1211/dnpc-schedule-add.png "DNPC 0.1.2 / NeoForge 1.21.1. 시간대 행의 +가 할 일 추가입니다. 이름 옆 ✓는 이름 반영이며 NPC 전체 저장은 상단 Save to NPC로 합니다.")
+
+화면의 `0–1000`은 막 추가한 기본 시간대입니다. 낮 내내 일하게 하려면 종료 시각도 원하는 시간으로 바꿉니다. 시간대만 만들고 할 일을 넣지 않았거나 **Enable schedule**이 꺼져 있으면 작업 예제가 완성된 상태가 아닙니다.
 
 | 하루 시각 | 입력할 틱 |
 | --- | --- |
@@ -29,9 +33,15 @@ audience: NPC 제작자
 
 액션 추가 목록에서는 ‘벌목’, ‘운반’, ‘탑승’처럼 검색할 수 있습니다. 분류와 검색을 함께 사용합니다.
 
+![시간대 행의 +를 눌러 연 액션 선택기. 왼쪽 작업 분류, 오른쪽 구체적인 행동과 위쪽 검색창이 보입니다.](assets/media/guides/dnpc-012-neo1211/dnpc-action-picker.png "Movement and waiting에는 이동·대기·탑승·순찰이 있습니다. 분류를 고른 뒤 오른쪽의 실제 행동을 선택합니다.")
+
 ## 예시 시간표 불러오기
 
 **스케줄 불러오기**에서 원하는 예시를 고른 뒤 장소·대상만 내 월드에 맞게 바꿉니다. ‘일반/군용’과 ‘필요 애드온’ 필터로 찾습니다.
+
+![Load schedule로 연 Schedule library. 작업 예시와 필요한 애드온, 카테고리 필터와 Select 버튼이 보입니다.](assets/media/guides/dnpc-012-neo1211/dnpc-schedule-load.png "설명을 읽고 예시를 고른 뒤 Select로 불러옵니다. 필요한 애드온이 없는 조리 예시는 사용할 수 없다는 안내가 표시됩니다.")
+
+예를 들어 **Wheat delivery task**는 밀만 모아 옮기는 시작 예시입니다. 납품할 보관함을 지정해야 움직입니다. **Cooking task**는 조리 모드가 필요하며 재료 출처·작업 장치·완성품 보관함·조리법을 지정해야 합니다. [조리 작업](#dochi-npc-core/npc-core-cooking)으로 이어집니다.
 
 1.20.1·1.21.1에서는 DW 경비·순찰·호위 예시와 DWE 승무원 예시도 있습니다. DW는 Forge·NeoForge용이며, 차량 예시에는 DW·DWE·SuperbWarfare가 필요합니다. 사용할 수 없는 예시는 필요한 모드를 표시합니다. DW 군용 일정은 시간대마다 액션 하나를 사용합니다.
 
@@ -54,3 +64,7 @@ NPC는 탈것까지 걸어가서 탑니다. 기본 시도 시간은 600틱이며
 ## 영업 시간이 있는 상점
 
 DRM 상점을 일정에 연결하면 정해진 시간에만 거래할 수 있습니다. 영업이 끝났다면 전에 열어 둔 상점 화면에서도 거래가 되지 않습니다.
+
+**DRM functions → Use DNPC function schedule**도 확인합니다. 꺼져 있으면 직접 적용한 DRM 파일을 사용하고, 켜면 시간표의 연결이 직접 연결보다 우선합니다. 시간표의 파일 경로가 비어 있으면 해당 기능이 꺼지므로, 스위치를 켜는 것만으로 영업 시간을 만든 상태가 아닙니다.
+
+![DRM functions 화면의 DRM Apply 버튼과 Use DNPC function schedule 스위치.](assets/media/guides/dnpc-012-neo1211/dnpc-drm.png "DRM Apply는 기능 파일을 붙이는 창을 엽니다. 아래 스위치는 시간표의 연결을 우선할지 정합니다.")

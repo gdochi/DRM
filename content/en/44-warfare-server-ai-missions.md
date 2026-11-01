@@ -15,20 +15,36 @@ tags:
   - missions
 ---
 
-## Server-wide AI controls
+## If an NPC's enabled AI still does nothing
 
-Version 0.2.9 separates optional server AI systems from each NPC's saved configuration. Operators can allow or disable DW idle movement, custom targeting, advanced rules, hearing, awareness, combat memory, tactical movement, cover, suppression fire, grenades, faction assistance, and booby traps. Vehicle AI and mercenary AI have independent global switches.
+A server policy can block a feature enabled on an individual NPC. Open **Minecraft Mods → Dochi’s Warfare → Config → DW Server AI** to check the server-wide permission. This is separate from the Senses or Cover page opened by right-clicking an NPC. Saving changes requires server permission level two.
 
-The server owns the settings and synchronizes them to clients. Editing requires operator permission level 2. A disabled feature remains saved on the NPC but does not run until the server allows it again. Disabling mercenary AI does not pause or erase contract time.
+![Server AI policy in DW's own Config screen.](assets/media/guides/warfare-031-neo1211/dw-server-ai-policy.png "Actual server policy in DW 0.3.1 / NeoForge 1.21.1. Read the feature’s ON/OFF button, Available status and explanation of OFF together. This instance initially allowed every feature.")
 
-Settings are stored at:
+1. Find the blocked feature, such as **Cover AI** or **Hearing / investigation**.
+2. Set it ON to allow it on the server.
+3. Press **Save** below to submit the policy.
+4. Return to the NPC's individual Cover, Senses or other settings and configure its conditions.
 
-```text
-config/dochi_warfare/server-ai.json
-```
+**Basic combat preset** restricts the extended AI features together. **Allow all features** removes those global locks. These buttons do not overwrite every NPC's detailed behavior with identical values. Check the current policy before selecting a preset.
 
-## Vehicle policy and combat support
+## Features that depend on each other
 
-On Forge and NeoForge 0.3.1, DWE owns global vehicle AI at `config/dochi_warfare/vehicle_ai/server-ai.json`. It suspends vehicle behavior separately from NPC policy while preserving per-vehicle settings.
+| Server policy | Related behavior |
+| --- | --- |
+| Combat target memory | Turning it off also prevents Suppression fire, which depends on combat memory. |
+| Tactical movement / Cover AI | Global permission still needs per-NPC settings and reachable terrain. |
+| Mercenary AI | Contract expiry, ownership protection and hold-fire orders remain. This does not pause contract time. |
+| NPC grenade AI / Booby traps | Thrown grenades and placed traps have separate permissions. |
 
-Author bombing, gun support, vehicle reinforcements, and NPC movement in the [DWE timeline](#dochi-warfare-expanded/expanded-support-timeline), then invoke `/dw callgimmicks <name> [x y z]`. The previously documented Mission Core Planner and `/dw planner` could not be found in current sources and are excluded from current authoring instructions.
+Disabling a feature retains NPC values for reuse when allowed again. The server policy file is `config/dochi_warfare/server-ai.json`.
+
+## Vehicles and support sequences
+
+**DWE 0.3.1** manages vehicle AI's global policy separately. Changing NPC policy does not apply every change to vehicle behavior. Vehicle policy is stored in `config/dochi_warfare/vehicle_ai/server-ai.json`.
+
+Build bombing, strafing, vehicle reinforcements and NPC movement in the [DWE support timeline](#dochi-warfare-expanded/expanded-support-timeline).
+
+![DWE support timeline editor.](assets/media/guides/warfare-expanded-031-neo1211/dwe-gimmick.png "Actual DWE 0.3.1 / NeoForge 1.21.1 editor. Server policy grants permission; the timeline defines the sequence when called. This screenshot alone does not verify an executed bombing run.")
+
+Call a saved support name with `/dw callgimmicks <name> [x y z]`. Follow the linked timeline guide from authoring through world execution.

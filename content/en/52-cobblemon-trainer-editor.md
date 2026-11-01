@@ -15,54 +15,57 @@ tags:
   - party
 ---
 
-## Build a party
+## Start with one Pokémon
 
-Use **Pokemon Party → Add Pokémon**. A Trainer can have up to six Pokémon per round; Pokemon Itself uses one.
+Select a Pokémon in the middle **Pokemon Party** list to edit it on the right. Screens use the English UI of **Cobblemon Editor 0.2.9, DRM 0.3.1 and Cobblemon 1.8.4 on NeoForge 1.21.1**.
 
-Set species, form, level, moves, ability and held item. **Stats** edits IVs/EVs; **Battle Mechanics** sets Tera type, Dynamax and related options. The Pokémon's learnset moves sort first.
+![Level 5 Bulbasaur selected, with Basic settings on the right.](assets/media/guides/cobble-029-neo1211/cobble-party.png "Left: categories. Middle: the current round’s party and model. Right: the selected Pokémon.")
 
-| Value | Range |
+1. Use **Add**. Trainers support up to six Pokémon per round; Pokemon Itself uses one.
+2. Click the species name under **Basic → Pokemon** to choose a species. The example button says **Bulbasaur**.
+3. Set **Level**, then choose supported **Form / Aspects**, **Nature** and **Ability**.
+4. Choose a **Held Item**. Potions used by the trainer belong in the separate **Battle Item Inventory** below the party list.
+5. **Save As** your own file, then apply it to an NPC. See [the first battle](#drm-cobblemon-editor/cobblemon-editor-setup) for the binding steps.
+
+![Species picker opened from the Bulbasaur button, with search, Filters and pages.](assets/media/guides/cobble-029-neo1211/cobble-pokemon-picker.png "Search by name or narrow the catalog with Filters; you do not need to memorize species IDs.")
+
+## Set stats and moves
+
+**Stats** shows calculated values at the authored level. Use **Edit IV / EV** to change IVs and EVs. Random IVs or nature produce a possible range rather than a single fixed value.
+
+![Level 5 stat ranges with IV Random and EV 0/510.](assets/media/guides/cobble-029-neo1211/cobble-stats.png "Battle-level adjustment and other battle rules can change the values used during a battle.")
+
+| Setting | Range |
 | --- | --- |
 | Level | 1–100 |
 | Moves | Up to 4 |
 | IVs | 0–31 per stat |
 | EVs | 0–252 per stat; 510 total |
 
-**Random Party** generates a party from filters, **Battle Strategy** chooses AI, and **Trainer Items** sets consumable battle items. See [advanced party settings](#drm-cobblemon-editor/cobblemon-trainer-ai-party-items).
+In **Moves**, use each slot’s browse button to select a move. Drag an assigned move to reorder it. Empty slots use the existing moveset rules; four None labels do not mean the Pokémon is unable to use any moves.
 
-## Add rounds
+![Four move slots with individual selection buttons.](assets/media/guides/cobble-029-neo1211/cobble-moves.png "Set moves here when the trainer needs a particular moveset. The species’ learnset moves appear first in the picker.")
 
-One NPC can have up to 16 rounds. **Add Round** creates one; **Duplicate Round** copies the current one.
+Use **Generate Party** for a party built from filters. Continue to [AI, party generation and mechanics](#drm-cobblemon-editor/cobblemon-trainer-ai-party-items) for more control.
 
-Give rounds their own parties, conditions, dialogue and rewards. Reordering also affects how existing player progress refers to the rounds. Applying again does not automatically clear win records.
+## Connect triggers, rounds and dialogue
 
-## Battle triggers and rules
+Choose **Battle Config** on the left to switch to battle settings.
 
-Use **Encounter** for click-to-start or nearby-player detection. **Enabled** must be on.
+![General battle settings showing Trainer Battle, battle type, name source and presentation.](assets/media/guides/cobble-029-neo1211/cobble-config.png "General: identity and type. Encounter: triggers. Rounds: round setup. Dialogue: pre-battle conversation. After Actions: what follows a result.")
 
-In **Rounds → Edit battle rules**, choose Singles/Doubles, level adjustment, items and legendary/mechanic permissions. Use shared rules or individual round rules. See [battle rules](#drm-cobblemon-editor/cobblemon-battle-rules).
+1. Under **General**, enable **Trainer Battle** and choose **Battle type**. **Name source → Trainer Profile** uses **Trainer Name** here; **Applied NPC Name** uses the applied NPC’s name.
+2. In **Encounter**, choose interaction or nearby-player detection. See [encounters and rematches](#drm-cobblemon-editor/cobblemon-encounters-rematches) for conditions and waiting periods.
+3. In **Rounds**, use **Add / Duplicate** for up to 16 rounds. Each can have its own party, rules, conditions, dialogue and rewards. Existing progress follows round order, so review changes before reordering an operating trainer. Applying again does not clear win records.
+4. In **Dialogue**, select the current round’s dialogue and put **go_battle** on its battle choice. Without a dialogue set, the normal battle confirmation is used.
+5. Choose an entrance in **General → Battle presentation**. Set Singles/Doubles and level adjustments in [battle rules](#drm-cobblemon-editor/cobblemon-battle-rules).
 
-## Add pre-battle dialogue
-
-Choose a dialogue set in the round's **Dialogue** settings. Add **go_battle** to a choice such as “Let's battle.”
-
-Without a dialogue set, the normal battle confirmation is used. Choose an entrance separately under **General → Battle Presentation**.
+![Current-round rules, AI, gimmicks and rematch settings.](assets/media/guides/cobble-029-neo1211/cobble-rounds.png "The round controls are Add / Duplicate. Click the current value beside AI skill on the right to open strategy settings.")
 
 ## Give rewards after dialogue
 
-1. Open **Battle Config → After Actions**.
-2. Choose **Action Mode → Sequential**.
-3. Add a dialogue action, then put item/currency rewards below it.
-4. Choose the result that triggers it, such as win, loss or flee, then save.
+In **Battle Config → After Actions**, choose **Action Mode → Sequential**. Put the dialogue first and item/currency rewards after it. Select which result triggers the sequence: win, loss or flee.
 
-Sequential mode waits for dialogue completion. Cancelling or disconnecting stops later rewards. Interacting with the NPC again continues from the remaining actions.
+Sequential execution waits for the dialogue to finish. Cancellation or disconnect stops later rewards; interacting again resumes the remaining actions. Each round allows one dialogue action. Reduce older multi-dialogue setups to one before saving or applying.
 
-Each round allows one dialogue action. Reduce older multi-dialogue setups to one before saving/applying.
-
-## Names and mechanic key items
-
-Under **General**, name source **NPC** uses the NPC's current name; **Profile** uses the name in this setup.
-
-Put required possessions, such as Mega keys, in **General Item Inv**. **My Inventory → Add selected** copies the player's item without consuming it. This is separate from consumable **Trainer Items**.
-
-See [the first battle](#drm-cobblemon-editor/cobblemon-editor-setup) for applying a file to an NPC.
+**General Item Inventory** holds possession requirements such as Mega keys. It is separate from consumable **Battle Item Inventory**. Copying an item from the player’s inventory does not consume it.

@@ -15,6 +15,8 @@ tags:
   - forge
 ---
 
+![Spawn Control for natural spawn rules.](assets/media/guides/spawn-control-014-neo1211/spawn-rule.png "Spawn Control 0.1.4 / NeoForge 1.21.1. DNPC 0.1.2. The left selects the target, the middle lists its rules, and the right edits the selected rule. Placed Spawners opens the separate placed-spawner editor.")
+
 ## Choose how they appear
 
 | Goal | Use |

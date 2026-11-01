@@ -16,7 +16,7 @@ tags:
 
 ## 컴포넌트의 의미
 
-컴포넌트는 화면에 배치되는 요소입니다. 단순 장식 요소도 있고, 플레이 데이터와 연결되는 요소도 있습니다.
+대화창을 꾸민다면 먼저 **대사와 선택지 영역**을 배치합니다. 그다음 배경 이미지·패널·장식 글자를 더합니다. 실제 대사와 답변은 Dialogue Editor에서 만들고, GUI Maker에서는 그 정보가 들어갈 위치와 모양을 정합니다.
 
 이 문서에서 설명하는 컴포넌트는 GUI Maker 에디터에서 배치하는 화면 부품입니다. 플레이어가 보는 플레이 화면에서는 이 부품 안에 Dialogue Editor의 대사와 선택지, NPC Shop의 상품과 가격, Currency Editor의 잔액 같은 실제 데이터가 들어옵니다.
 
@@ -26,6 +26,9 @@ tags:
 | 표시 요소 | `dialog`, `currency_amount` | 대사, 메시지, 화폐 수량 같은 값을 표시합니다. |
 | 조작 요소 | `choice`, `shop_action_button`, `shop_page_selector` | 플레이어 입력과 연결됩니다. |
 | 목록 요소 | `item_slot`, `currency_list`, `player_inventory` | 여러 데이터를 반복 표시합니다. |
+
+![대화 GUI의 NPC 미리보기·대사·선택지 영역이 보이는 캔버스.](assets/media/guides/drm-031-forge1201/gui-maker.png "DRM 0.3.1 / Forge 1.20.1. 게임에서 채울 대사·선택지와 장식용 Text를 구분해 배치합니다. 실제 대사는 Dialogue Editor에서 씁니다.")
+
 
 ## 대화 GUI 컴포넌트
 

@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -24,7 +24,7 @@ JSON keys below are reference material for direct authoring.
 
 1. Create a Cylinder hitbox with ID warning_blast, Radius 2.4, Height 3, Damage 4.
 2. Create a pattern with Windup 40, Action 10, Recovery 20.
-3. Add **Save Position** at Windup tick 0.
+3. Add **Save World Position** at Windup tick 0.
 4. Set Position ID blast_spot, Source Target, Mode Exact.
 5. At Windup tick 1, add **Particle Shape**.
 6. Use Saved position, Position ID blast_spot.
@@ -34,6 +34,8 @@ JSON keys below are reference material for direct authoring.
 10. Use compatible stage animation or an explicit None.
 
 Expected result: moving away after the warning starts leaves the hit at the earlier location. Saved-position hitboxes use the anchor as their center; check height instead of assuming ordinary NPC body-center offsets apply identically.
+
+![Save World Position with Saved position ID, Target and Exact.](assets/media/guides/battleworks-016-neo1211/battleworks-save-position.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Added through + Action → Summons / Positions → Save World Position. Change initial ID main to blast_spot and use the same ID in later actions.")
 
 ## 2. Manage position names
 
@@ -50,7 +52,7 @@ Random Ring and Random Box choose random locations. Safe searches nearby heights
 
 ## 3. Begin with one managed projectile
 
-1. Add **Spawn Projectile**.
+1. Add **Spawn Projectile / Construct**.
 2. Start with the editor's basic minecraft:snowball ID.
 3. Set Group ID training_shots and Count 1.
 4. Use Spawn At Caster and Direction Target.
@@ -68,6 +70,8 @@ Random Ring and Random Box choose random locations. Safe searches nearby heights
 | Trail Particle | Registered trail ID |
 
 Not every registered mod entity supports generic creation. Use a real Skill integration first for complex external spells.
+
+![Default snowball in Spawn Projectile / Construct.](assets/media/guides/battleworks-016-neo1211/battleworks-projectile.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Added through + Action → Skills / Projectiles. This example is placed in Windup; select Action before adding it if that is the intended firing stage.")
 
 ## 4. Release a held group
 

@@ -21,16 +21,18 @@ tags:
 
 **Save & Apply**를 누르면 NPC의 기본 비전투 포즈로 저장합니다. 전투 중에는 해당 전투 포즈를 쓰고, 전투가 끝나면 기본 포즈로 돌아옵니다.
 
-현재 포즈 편집기는 Steve/Alex CustomNPCs 플레이어 모델을 지원합니다.
+DNPC의 플레이어형 NPC와 지원되는 Steve/Alex CustomNPCs 플레이어 모델을 편집할 수 있습니다. 아래는 DNPC를 실제 편집 대상으로 연 화면입니다.
 
 ## 포즈 편집기 열기
 
 1. 크리에이티브 모드에서 `DW Pose Core`를 듭니다.
-2. Steve 또는 Alex 모델을 쓰는 CustomNPCs NPC를 우클릭합니다.
+2. DNPC의 플레이어형 NPC 또는 Steve/Alex 모델의 CustomNPCs NPC를 우클릭합니다.
 3. NPC에서 12블록 안에 머물고 편집 중에는 코어를 주손이나 보조손에 계속 듭니다.
 4. `NPC Pose Editor`에서 포즈를 수정합니다.
 
-지원하지 않는 모델, 너무 먼 NPC, CustomNPCs가 아닌 엔티티는 편집할 수 없습니다.
+지원하지 않는 모델이나 너무 먼 대상에서는 열리지 않습니다. 처음에는 기본 플레이어형 DNPC로 확인하세요.
+
+![DW Pose Core로 DNPC를 열어 Body 회전 축을 편집하는 화면.](assets/media/guides/warfare-031-neo1211/dw-pose-editor.png "DW 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1. 왼쪽에서 Body를 고르면 오른쪽에 X·Y·Z가 나옵니다. Animation은 기존 동작을 따르고 Custom은 정한 값을 사용합니다. 위쪽 Save & Apply는 저장과 현재 NPC 적용을 함께 합니다.")
 
 ## NPC 미리보기와 몸 파트
 
@@ -87,6 +89,8 @@ config/dochi_warfare/poses/
 JSON을 직접 편집할 필요는 없습니다. 파일 구조는 외부 도구나 버전 관리가 필요한 제작자를 위한 참고 형식입니다.
 
 0.2.9의 내장 목록에는 Low Ready, High Ready와 여러 전투·평시·걷기·이동 사격 포즈가 포함됩니다. 내장 포즈를 적용한 뒤 필요한 축과 총기 위치만 조정하고 `Save As`로 사용자 JSON을 만들면 원본 내장 값은 변경되지 않습니다.
+
+![Pose 카테고리에서 정지·걷기·조준·사격·재장전에 포즈를 연결하는 화면.](assets/media/guides/warfare-031-neo1211/dw-pose.png "DW 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1. 각 행의 소스를 Built-in·Inherit·사용자 포즈 등으로 고르고, 오른쪽에서 적용할 포즈를 정합니다.")
 
 ## 행동별 포즈 연결
 

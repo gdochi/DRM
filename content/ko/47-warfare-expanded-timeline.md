@@ -22,6 +22,8 @@ audience: 맵 제작자와 운영자
 
 미저장 변경이 있거나 다른 사용자가 파일을 바꿨다면 먼저 저장하거나 새로고침해야 합니다. 화면의 미리보기는 배치 제작용이며 실제 지형에서의 이동·명중 결과를 대신하지 않습니다.
 
+![단계 목록·상면 미리보기·설정·하단 타임라인이 있는 Gimmick Editor.](assets/media/guides/warfare-expanded-031-neo1211/dwe-gimmick.png "DWE 0.3.1 / NeoForge 1.21.1. 기본 초안은 A-10A·MK-82·Point이며 첫 투하가 20틱입니다. 가운데 Entry·Target·Exit와 아래 타임라인을 함께 보며 좌표와 시점을 맞춥니다.")
+
 ## 동작 종류
 
 | 동작 | 설정과 결과 |

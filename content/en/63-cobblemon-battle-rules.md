@@ -18,9 +18,11 @@ tags:
 
 ## Open the editor
 
-Open a Trainer or Pokemon Itself document in `Cobblemon Editor`, then choose `Battle Rules` from `Rounds`. This is a child authoring screen, not a standalone JSON editor. Choose `Done`, return to the parent editor, and use `Save` or `Save As` there to write the Trainer/Pokemon Itself document.
+Open a Trainer or Pokemon Itself document in `Cobblemon Editor`, then choose **Battle Config → Rounds → Edit** to open Battle Rules. This is a child authoring screen, not a standalone JSON editor. Choose `Done`, return to the parent editor, and use `Save` or `Save As` there to write the Trainer/Pokemon Itself document.
 
 The shared DRM Back and Forward arrows always remain visible; they become disabled when no history is available. Invalid numbers or item IDs block navigation and completion so the current draft is not silently lost.
+
+![Round-one Battle setup.](assets/media/guides/cobble-029-neo1211/cobble-battle-rules.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. Common and 1 at the top choose scope; Using common rules at bottom-left shows inheritance. Distinguish allowed mechanics on the right from NPC gimmick equipment, currently None.")
 
 ## Common and per-round rules
 
@@ -72,9 +74,11 @@ Mega, Tera, and Dynamax permission is a server rule for both sides. Permission d
 | Target HP cap | Allow use only when the target's current HP percentage is at or below the value |
 | Allow held items | When off, refuse battle startup if a participating Pokémon holds an item |
 
-The banned list accepts up to 128 unique IDs. Clicking a catalog row immediately bans it; click again or remove it from the center list to allow it. IDs from a currently missing mod stay visible without an icon instead of being silently deleted.
+The banned list accepts up to 128 unique IDs. Check entries in the right catalog, then press **Add (selected count)**. To allow an item again, check it in the center banned list and press **Remove**. IDs from a currently missing mod stay visible without an icon instead of being silently deleted.
 
 The server rechecks battle bag items, revives, and capture items before consumption. An allowed capture throw counts toward the limit. When several opponents are active, every target must satisfy the HP rule. Creative players also follow use limits.
+
+![Items screen with selection and Add controls.](assets/media/guides/cobble-029-neo1211/cobble-battle-rules-items.png "Search on the right, check entries, then Add. Add (0) means nothing is selected; the banned list in the center is also empty. Allow battle items is separate from individual bans.")
 
 ## Legendary Pokémon
 

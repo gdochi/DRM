@@ -2,7 +2,7 @@
 title: 판매와 교환
 slug: pokemart-sales-trade-behavior
 order: 541
-description: Sales와 Trade의 상품, 재고, 거래와 실패 복구입니다.
+description: 포켓몬 판매 상품과 교환 조건을 만들고 재고를 운영합니다.
 product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
@@ -15,7 +15,17 @@ tags:
   - stock
 ---
 
-## Sales 상품 편집
+## 포켓몬 한 마리를 판매 상품으로 만들기
+
+[PokéMart 기본 설정](#drm-cobblemon-editor/cobblemon-pokemart)에서 **Sales**와 결제 수단을 고른 뒤 **Pokémon Catalog → Add**를 누릅니다. 상품을 선택하고 **Edit Detailed Pokémon Data**에서 종·레벨·기술을 정합니다. 오른쪽에서 가격과 재고를 입력하고 **Save As**로 내 파일을 저장한 뒤 NPC에 적용합니다.
+
+![이상해씨 상품의 가격과 재고를 정하는 Pokémon Catalog.](assets/media/guides/cobble-029-neo1211/cobble-catalog.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1의 제작자 화면. Price 5000, Initial 3, Maximum 3, Restock 1, Interval 72000은 한 시간마다 한 마리씩 최대 세 마리까지 보충하는 예제입니다. 실제 구매 결과 화면은 아닙니다.")
+
+**구매자는 파티에 빈칸을 준비합니다.** 구매한 포켓몬은 활성 파티로 들어가며 PC로 자동 전송되지 않습니다. 결제 수단과 실제 지급 포켓몬을 확인한 다음 상품 수를 늘리세요.
+
+![실제 NPC 상점에서 이상해씨를 구매한 뒤 잔액 60과 재고 2가 된 화면.](assets/media/guides/cobble-029-neo1211-player/cobble-sales-purchased.png "같은 버전에서 가격을 에메랄드 4개로 저장·적용한 실습입니다. Buy · 4를 눌러 에메랄드 64→60, 재고 3→2, 서버 파티에 레벨 5 이상해씨 한 마리 지급을 확인했습니다.")
+
+### 가격·재고 입력값 참고
 
 Sales 문서는 최대 256개 상품을 저장합니다. 목록의 `추가`, `복제`, `삭제`로 상품을 관리하고, `상세 포켓몬 데이터 편집`에서 실제 지급 포켓몬을 설정합니다.
 
@@ -65,7 +75,16 @@ Sales와 Trade에서 NPC가 주는 포켓몬은 Trainer 슬롯과 같은 생성 
 
 ## Trade 제안 편집
 
-Trade 문서는 최대 128개 제안을 저장합니다. 각 제안은 `NPC가 주는 포켓몬`과 `NPC가 원하는 포켓몬 조건`을 별도로 가집니다.
+**General → Trade**로 바꾸고 **Pokémon Trades → Add**를 누릅니다. 가운데 모델은 NPC가 주는 포켓몬이고, 아래 **Requests**는 플레이어가 내야 하는 포켓몬입니다. 두 방향을 먼저 구분하세요.
+
+![Bulbasaur ← Rattata 교환 제안. 가운데 이상해씨 모델과 Requests Rattata, 오른쪽 레벨·재고·편집 버튼이 보입니다.](assets/media/guides/cobble-029-neo1211-flow/cobble-mart-trades.png "0.2.9 / NeoForge 1.21.1에서 Add로 만든 실제 편집 항목입니다. 플레이어가 꼬렛을 내고 이상해씨를 받는 구성입니다. NPC Offered와 Requested를 각각 편집하며, 실제 교환 완료 장면은 아닙니다.")
+
+1. **Edit NPC Offered Pokémon**에서 NPC가 줄 포켓몬을 정합니다.
+2. **Edit Requested Pokémon**에서 받을 종·폼·Aspects를 정합니다.
+3. 오른쪽 **Minimum / Maximum level**, **Shiny rule**, **NPC Stock**을 정합니다.
+4. **Save As**로 저장하고 교환소 NPC에 적용합니다. 플레이어는 제안과 조건에 맞는 보유 포켓몬을 고른 뒤 교환을 확정합니다.
+
+Trade 문서는 최대 128개 제안을 저장합니다. 아래는 **플레이어가 내는 포켓몬**의 조건입니다.
 
 | 요청 조건 | 판정 |
 | --- | --- |
@@ -90,13 +109,14 @@ Nature, Ability, Moves, Poké Ball, Held Item은 NPC가 주는 포켓몬에는 �
 ## Trade 플레이 처리
 
 1. 플레이어가 교환 제안을 선택합니다.
-2. 실제 플레이에서는 플레이어 보유 포켓몬 목록에서 조건을 만족하는 후보만 표시합니다.
-3. 플레이어가 한 마리를 선택하고 영구 교환을 확정합니다.
-4. 서버가 소유권과 교환 가능 상태, 조건, 제안 재고를 다시 검사합니다.
-5. 플레이어 포켓몬 NBT를 백업한 뒤 소유 저장소에서 제거합니다.
-6. NPC가 주는 포켓몬을 생성해 전달합니다.
+2. 조건에 맞는 파티·PC 포켓몬 중 내줄 한 마리를 고릅니다.
+3. 받을 포켓몬을 확인하고 영구 교환을 확정합니다.
 
-새 포켓몬 전달이 실패하면 원래 포켓몬 복구를 시도합니다. 즉시 복구할 수 없으면 경매와 같은 Pokémon Claim 저장소에 넣어 유실을 방지하고 제안 재고를 되돌립니다.
+![내줄 꼬렛을 고른 플레이어 교환 화면.](assets/media/guides/cobble-029-neo1211-player/cobble-trade-player.png "Choose Your Pokémon으로 보유 목록을 열면 조건에 맞는 꼬렛이 나옵니다. 오른쪽의 조건 통과 문구와 내줄 개체를 확인한 뒤 Confirm Trade를 누릅니다.")
+
+![교환 완료 뒤 제안 재고 0과 Pokémon trade completed 메시지.](assets/media/guides/cobble-029-neo1211-player/cobble-trade-completed.png "실제 Confirm Trade 뒤 서버 파티에서 꼬렛이 빠지고 레벨 5 이상해씨가 추가됐으며 제안 재고가 1→0이 됐습니다. 이 예제의 교환에는 화폐를 쓰지 않았습니다.")
+
+새 포켓몬 전달이 실패하면 원래 포켓몬 복구를 시도하고 제안 재고를 되돌립니다. 즉시 복구할 수 없으면 [Pokémon Claim 수령함](#drm-cobblemon-editor/pokemart-auction-gui-runtime)에 보관합니다.
 
 :::warning Trade의 새 포켓몬도 활성 파티로 전달됩니다
 교환 대상은 파티 또는 PC에서 고를 수 있지만 NPC가 주는 새 포켓몬은 활성 파티에만 추가됩니다. 파티 포켓몬을 내면 제거된 자리가 생기지만, PC 포켓몬을 내고 활성 파티가 가득 차 있으면 새 포켓몬 전달이 실패할 수 있습니다.

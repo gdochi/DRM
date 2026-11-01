@@ -15,6 +15,12 @@ tags:
   - battle-config
 ---
 
+## 클릭·자동 감지와 재대전 설정 위치
+
+**Battle Config → Encounter**에서 배틀 시작 방식을 고릅니다. 예제 **Trigger: Interaction**은 플레이어가 말을 걸어 시작하는 설정입니다. 자동 감지를 쓰려면 Trigger를 바꾼 뒤 시야·거리·추격을 함께 조절합니다.
+
+![Encounter의 Trigger, 시야, 추격과 배틀 시작 위치.](assets/media/guides/cobble-029-neo1211/cobble-encounter.png "0.2.9 / NeoForge 1.21.1. Battle start 거리와 Vision distance는 서로 다른 설정입니다. 재대전은 Rounds → Rematch Policy에서 정합니다.")
+
 ## 전투 요청 순서
 
 ```text

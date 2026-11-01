@@ -16,6 +16,12 @@ tags:
   - condition
 ---
 
+## Use a saved quest stage as a dialogue condition
+
+Use this to record player quest stage three and allow a choice only for stage three or higher. Decide the key and number first, then enter the same key in the condition editor. For a simple one-time reward, the [tag-based dialogue reward](#core/dialogue-rewards) is another available workflow.
+
+![Actual use a saved quest stage as a dialogue condition result.](assets/media/guides/drm-031-forge1201-apis/api-stored-condition.png "DRM 0.3.1 / Forge 1.20.1 with CustomNPCs. Actual Player Stored Data my_pack.quest.stage=3 passes Number / >= 3. The zombie appearance comes from the earlier model example; this condition reads the player’s value.")
+
 ## What This Integration Does
 
 The `cnpc_stored_data` condition lets DRM read values written through the CustomNPCs script API's `getStoreddata()`. A script can record a quest stage, boss phase, or world chapter, then DRM can use that value to control dialogue, teleporters, quest availability, and Remnant Messages.

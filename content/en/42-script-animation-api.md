@@ -15,22 +15,23 @@ tags:
   - animation
 ---
 
+## Change an NPC model and motion from a script
+
+This is an advanced reference for CustomNPCs scripts. For a name or skin change, start with [appearance settings](#core/assets-models). The actual API result below assigns minecraft:zombie as an existing NPC’s model. Animation playback additionally needs a motion ID supplied by that model or an installed provider.
+
+![Actual change an npc model and motion from a script result.](assets/media/guides/drm-031-forge1201-apis/api-model-zombie.png "DRM 0.3.1 / Forge 1.20.1 with CustomNPCs. The NPC uses a zombie appearance after useModdedEntityModel. This is not a demonstration of installing or playing a wave resource.")
+
 ## Getting Started
 
-Dochi's RPG Maker Forge 0.1.4 registers the CustomNPCs script global `drmAnimation`. The first argument of every method is a CustomNPCs script entity wrapper or a Minecraft entity. In most event scripts, pass `event.npc` directly.
+Dochi's RPG Maker Forge 0.3.1 registers the CustomNPCs script global `drmAnimation`. The first argument of every method is a CustomNPCs script entity wrapper or a Minecraft entity. In most event scripts, pass `event.npc` directly.
 
 ```js
 function interact(event) {
-    drmAnimation.playPlayerAnimator(
-        event.npc,
-        "mypack:wave",
-        1.0,
-        80
-    );
+    drmAnimation.useModdedEntityModel(event.npc, "minecraft:zombie");
 }
 ```
 
-This plays `mypack:wave` for 80 ticks. Twenty ticks is normally about one second.
+First confirm that the prepared NPC takes the model shown above. Connect walking, attack and other animation playback only after preparing the provider and actual motion resources.
 
 :::note Requirements
 `drmAnimation` is registered only when CustomNPCs is present. The selected provider mod and animation resources must also be available on the server and connecting clients.

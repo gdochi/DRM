@@ -45,6 +45,8 @@ DRM alone opens its editing tools. See [DNPC getting started](#dochi-npc-core/np
 
 Examples and configuration folders are created on the first run. Fabric excludes Item Editor and Stat Builder.
 
+![The editor selector opened with Core after installation.](assets/media/guides/drm-031-neo1211/editor-selector.png "DRM 0.3.1 / NeoForge 1.21.1. Selecting Dialogue Editor exposes Load, Use Default and Create New. Start with Use Default, then Save As your own work. Installed addons change the available list.")
+
 ## Move a server
 
 Keep `config/dochi_rpg_maker/` and the world together. Configuration alone does not include placed NPCs, quest progress or spawner state.

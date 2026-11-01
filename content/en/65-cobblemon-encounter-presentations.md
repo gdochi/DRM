@@ -34,6 +34,8 @@ New category switches default to OFF. Existing addon NPC trainers retain their o
 
 Wild exceptions use **species IDs**, such as `cobblemon:pikachu`, rather than individual world entities. RCT exceptions use **world entity UUIDs**. PvP provides only a global switch and scene path, without per-player exceptions.
 
+![Pokémon, Trainers and PvP presentation binding with category defaults.](assets/media/guides/cobble-029-neo1211/cobble-encounters.png "0.2.9 / NeoForge 1.21.1. A category’s top OFF disables it entirely. Choose its shared file under Category global presentation, then select an entry for an individual override.")
+
 ## PvP and skipping
 
 Two-player PvP with one player on each side supports singles and doubles formats. Two-versus-two multi battles are outside this presentation workflow. Each participant sees themselves as Player and their rival as Opponent.

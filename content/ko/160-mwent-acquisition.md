@@ -7,16 +7,16 @@ product: mwent
 category: MWENT 카드 획득
 section: authoring
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 제작자 / 서버 운영자
 ---
 
 ## 어디에서 설정하나요?
 
-Minigames **0.1.5**은 주민·떠돌이 상인 거래와 자연 생성 상자에 실물 카드·카드팩을 추가합니다. DRM 없이도 동작합니다.
+Minigames **0.1.6**에서는 주민·떠돌이 상인 거래와 자연 생성 상자에 실물 카드·카드팩을 추가할 수 있습니다. DRM 없이도 동작합니다.
 
 1. Minigames 설정을 열고 **MWENT 편집**을 누릅니다.
-2. 왼쪽에서 일반 / 상인 거래 / 상자 보상 / 카드 풀을 고릅니다.
+2. 왼쪽에서 **General / Merchant trades / Chest rewards / Product pools**를 고릅니다.
 3. 목록에서 규칙을 선택하고 가운데에서 수치·조건을 편집합니다.
 4. 오른쪽에서 카드·팩 또는 대상 전리품 테이블을 고릅니다.
 5. 상단 **Apply**로 활성 설정에 반영합니다.
@@ -25,6 +25,8 @@ Minigames **0.1.5**은 주민·떠돌이 상인 거래와 자연 생성 상자�
 
 ## 세 종류의 규칙
 
+![카드 획득의 전체 활성화와 거래·상자별 스위치.](assets/media/guides/minigames-016-neo1211/mwent-acquisition-general.png "Minigames 0.1.6 / NeoForge 1.21.1. Enabled는 전체 기능, 아래 세 스위치는 주민·떠돌이 상인·자연 상자의 개별 허용입니다. Server draft는 편집 중이라는 뜻이며 위 Apply로 활성 설정에 반영합니다.")
+
 | 분류 | 설정하는 내용 |
 | --- | --- |
 | 상인 거래 | 직업·레벨, 상품 풀, 결제 아이템, 가격 범위, 수량·재고·경험치 |
@@ -32,6 +34,12 @@ Minigames **0.1.5**은 주민·떠돌이 상인 거래와 자연 생성 상자�
 | 카드 풀 | 자동 카드, 선택 모드 카드, 진영·등급·판본, 지정 카드·팩 가중치와 제외 카드 |
 
 결제는 에메랄드 같은 실물 아이템입니다. 계좌형 DRM·CobbleDollars 결제와 구분합니다. 지정 카드와 제외 카드의 🔍는 MWENT 카드만 보여주며 인벤토리 아이템을 소비하지 않습니다.
+
+## 주민 거래의 수치 읽기
+
+**Merchant trades**에서 왼쪽 규칙을 고릅니다. 가운데에서 직업·레벨·상품 풀과 결제 아이템을 정합니다. 가격은 에메랄드 같은 결제 아이템의 최소·최대 수량이며 **Items per offer**는 한 번 거래할 때 받는 상품 수입니다.
+
+![Librarian cards 거래 규칙의 직업·가격·수량.](assets/media/guides/minigames-016-neo1211/mwent-acquisition-trades.png "Minigames 0.1.6 / NeoForge 1.21.1. 이 예제는 사서 레벨 2, 가격 6~12, 한 번에 상품 1개, 재입고 전 재고 12입니다. 오른쪽 Cards·Packs·Excluded는 선택한 상품 풀의 명시 상품과 제외 항목을 다룹니다.")
 
 ## 던전 상자에 카드 추가하기
 
@@ -44,6 +52,14 @@ Minigames **0.1.5**은 주민·떠돌이 상인 거래와 자연 생성 상자�
 위 예시는 상자별 20% 확률로 풀에서 고른 카드 또는 팩 하나를 추가합니다. 이미 연 상자는 재추첨하지 않습니다. 가중치는 풀 안의 상품 비율이며 상자 등장 확률과 다릅니다.
 
 `minecraft:chests/village/*`는 바닐라 마을 상자입니다. 포켓몬센터 같은 모드 전리품은 별도 ID를 추가해야 합니다. `minecraft:chests/`만 쓰면 하위 전체가 선택되지 않습니다. 기본 마을 카드 규칙의 18%도 마을 전체가 아니라 대상 상자 하나당 확률입니다.
+
+![Chest rewards에서 상자 확률과 대상 전리품 테이블을 편집하는 화면.](assets/media/guides/minigames-016-neo1211/mwent-acquisition-chests.png "Minigames 0.1.6 / NeoForge 1.21.1. 사진은 기본 Exploration cards의 0.18, 추첨 1회, 수량 1~1입니다. 위 실습의 20%를 쓰려면 Chance per roll을 0.2로 바꿉니다. Targets가 포함 대상, Excluded가 제외 대상입니다.")
+
+## 나올 카드 범위 정하기
+
+**Product pools**에서 상점·상자가 참조할 풀을 편집합니다. **Card edition**은 판본, **Rarity filter**는 희귀도, **Faction filter**는 진영을 제한합니다. 특정 카드·팩만 추가하려면 오른쪽 Cards·Packs를 사용합니다. 같은 풀이 여러 규칙에 연결되면 풀 수정이 그 규칙들에 함께 영향을 줍니다.
+
+![Standard cards 상품 풀의 자동 카드·선택 모드·판본·필터.](assets/media/guides/minigames-016-neo1211/mwent-acquisition-pools.png "Minigames 0.1.6 / NeoForge 1.21.1. 상품 풀은 ‘어떤 상품에서 고를지’를 정합니다. 상자에서 그 풀을 몇 번·몇 %로 뽑을지는 Chest rewards의 별도 설정입니다.")
 
 ## 프로필 저장과 활성화
 

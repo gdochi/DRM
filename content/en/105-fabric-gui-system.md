@@ -25,6 +25,10 @@ tags:
 
 Preview text and products help you arrange the layout. Write actual dialogue in Dialogue Editor and set products/prices in NPC Shop.
 
+![GUI Maker with Tools on the left, Canvas in the middle and the selected element's position and size in Inspector on the right.](assets/media/guides/drm-031-neo1211/gui-maker.png "DRM 0.3.1 on NeoForge 1.21.1. Add elements on the left, select them on the canvas, then edit them in Inspector.")
+
+The default conversation layout already contains dialogue and choice areas. Keep those while starting, and select the element you want to change. **X / Y** sets position, **W / H** sets width and height, and **Layer #** sets drawing order. Use **Preview** at the top to inspect the result.
+
 ## Choose an element
 
 | What you want | Element |
@@ -45,8 +49,12 @@ Use functional elements, such as shop products and transaction buttons, with the
 
 Add **Text** to a dialogue layout and choose **Content**.
 
+![A text box added with + Text, with Content, Direct input, Text and Translation Key settings in Inspector.](assets/media/guides/drm-031-neo1211/gui-text.png "Use + Text for a separate label. Content chooses between a fixed label and the current NPC's name.")
+
 - **Direct input:** enter a fixed label, such as “Blacksmith.”
 - **NPC name:** display the current conversation partner's name.
+
+For your own wording, enter it in **Text** and change **Translation Key** to **Literal Text** if necessary. Use Translation Key for a name registered in a language file.
 
 Add several text boxes for separate labels. Each has its own position, size, fill and border.
 

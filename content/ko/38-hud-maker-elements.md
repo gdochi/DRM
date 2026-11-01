@@ -2,7 +2,7 @@
 title: HUD 요소
 slug: hud-maker-elements
 order: 111
-description: HUD Maker의 GROUP, TEXT, BAR, IMAGE 요소와 transform, binding, renderer 구조입니다.
+description: 체력·잔액 등 표시를 추가하고 위치·크기·겹침 순서를 조정합니다.
 product: core
 category: HUD Maker
 section: hud-maker
@@ -14,69 +14,27 @@ tags:
   - elements
 ---
 
-## 요소 추가 버튼
+## 표시할 정보부터 추가하기
 
-HUD Maker의 HUD 편집 영역에는 요소 추가 버튼이 있습니다.
+[HUD Maker](#core/hud-maker)를 열면 왼쪽 **HUD TYPE** 목록이 나옵니다. 체력은 **+ Health**, 허기는 **+ Food**, 잔액은 **+ Currency**로 추가합니다. 추가한 뒤에는 아래 **ADDED HUD TYPES**에서 해당 항목을 골라야 오른쪽에 그 항목의 설정이 나옵니다.
 
-| 버튼 | 생성 요소 |
+![Health를 추가해 선택한 HUD 캔버스와 Inspector.](assets/media/guides/drm-031-forge1201/forge-hud-health.png "DRM 0.3.1 / Forge 1.20.1. ADDED HUD TYPES의 선택 항목 앞에 *가 붙습니다. 예제는 체력 표시를 X 400 / Y 250에 놓고 guide_hud로 저장했습니다.")
+
+| 추가 버튼 | 표시할 정보 |
 | --- | --- |
-| `Add Text` | `TEXT` |
-| `Add Bar` | `BAR` |
-| `Add Image` | `IMAGE` |
+| **+ Currency** | Currency Editor에서 만든 화폐의 잔액 |
+| **+ Health / Food / Armor / Air / Level** | 체력·허기·방어도·산소·경험치 |
+| **+ Player Head** | 플레이어 얼굴 |
+| 마나·스태미나 등 연동 항목 | 설치한 해당 모드의 정보 |
 
-선택한 요소가 `GROUP`이면 새 요소가 그 그룹의 자식으로 들어갈 수 있습니다. 그렇지 않으면 현재 HUD 정의의 최상위 요소로 들어갑니다.
+버튼이 회색이면 먼저 필요한 화폐나 연동 모드가 있는지 확인합니다. **CNPC Tempdata / Storeddata**는 CustomNPCs가 설치된 지원 환경에서 쓰는 항목입니다.
 
-## 요소 구조
+## 위치·크기·표시 모양 바꾸기
 
-| 구조 | 의미 |
-| --- | --- |
-| `id` | 요소 고유 ID입니다. |
-| `type` | `GROUP`, `TEXT`, `BAR`, `IMAGE`, `ICON_LIST` 중 하나입니다. |
-| `transform` | 위치, 크기, 앵커, z 순서입니다. |
-| `binding` | 플레이어 데이터나 화폐 값과 연결하는 정보입니다. |
-| `renderer` | 색상, 텍스트, 이미지, 바 표시 방식입니다. |
-| `visibility` | 언제 보일지 정하는 조건입니다. |
-| `animation` | 표시 애니메이션 설정입니다. |
-| `children` | 그룹 안의 자식 요소입니다. |
+오른쪽 Inspector를 스크롤해 **Box ID / Layer # / X / Y / W / H**를 찾습니다. Box ID는 표시 하나를 구분하는 이름이고, Layer는 겹쳤을 때 앞뒤 순서입니다. X/Y는 위치, W/H는 크기입니다. 화면에서 직접 골라 옮겨도 됩니다.
 
-## transform
+표시 종류에 따라 글자·막대·아이콘 설정이 다릅니다. 한 종류를 여러 개 만들었다면 Added 목록에서 무엇을 선택했는지 먼저 확인하세요. **Duplicate**는 현재 표시를 복사하며, 복사한 뒤에는 위치도 옮겨 겹침을 확인합니다.
 
-| 필드 | 설명 |
-| --- | --- |
-| `anchor` | 화면 기준 위치입니다. |
-| `x`, `y` | 앵커 기준 좌표입니다. |
-| `width`, `height` | 요소 크기입니다. |
-| `zIndex` | 앞뒤 순서입니다. |
+크리에이티브에서 생존 정보가 숨겨지면 **Render survival HUD**를 확인하고 서바이벌에서도 시험합니다. 구성 요소를 지우는 것과 [기본 하트를 숨기는 것](#core/hud-maker-vanilla)은 다른 설정입니다.
 
-HUD는 화면 해상도와 GUI 스케일에 영향을 받으므로, 앵커와 크기를 같이 고려해야 합니다.
-
-## binding
-
-`binding`은 화면 요소가 어떤 값을 표시할지 정합니다.
-
-| 예시 | 설명 |
-| --- | --- |
-| 화폐 연결 | Currency Editor의 화폐 ID를 기준으로 잔액을 표시합니다. |
-| 바닐라 체력 연결 | 플레이어 체력 값을 읽습니다. |
-| 바닐라 방어도 연결 | 플레이어 방어도 값을 읽습니다. |
-| 바닐라 허기 연결 | 플레이어 허기 값을 읽습니다. |
-
-TEXT는 선택한 값을 글자로, BAR는 막대 길이로 보여 줍니다.
-
-## renderer
-
-| 요소 타입 | 주요 렌더러 설정 |
-| --- | --- |
-| `TEXT` | 텍스트, 색상, 정렬, 그림자 |
-| `BAR` | 채움 색상, 배경, 비율 방향 |
-| `IMAGE` | 이미지 경로, crop, fill mode |
-| `GROUP` | 자식 요소를 담는 영역 |
-| `ICON_LIST` | 아이콘 개수, 크기, 간격, 채움/배경 색상 |
-
-## 제한
-
-- 요소를 추가하는 것만으로 값이 생기지는 않습니다. 값을 표시하려면 적절한 binding이 필요합니다.
-- IMAGE는 텍스처 경로가 맞아야 보입니다.
-- BAR는 숫자 또는 비율로 해석할 수 있는 값과 함께 써야 합니다.
-- GROUP은 직접 값을 표시하는 요소가 아니라 자식 요소를 묶는 구조입니다.
-- ICON_LIST는 방어도처럼 단계형 아이콘 표시에 적합하며 숫자 binding이 필요합니다.
+**Save As**로 세트를 저장합니다. 현재 Forge 0.3.1의 Apply 오류와 저장·적용 구분은 [HUD 시작 안내](#core/hud-maker)에 정리했습니다.

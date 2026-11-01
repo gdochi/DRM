@@ -11,7 +11,13 @@ version: 0.2.0
 audience: Creators / Operators
 ---
 
-This is a historical release record. See [DRM 0.2.8](#core-fabric/release-notes-0-2-8) for current guidance.
+This is a historical release record. See [DRM 0.3.1](#core-fabric/release-notes-0-3-1) for current guidance.
+
+## Customize an item tooltip
+
+Tooltip Maker arranges the name, description and item preview. Select an element on the center canvas, edit it on the right and use Preview. This is a current NeoForge screen, not the historical Fabric 0.2.0 UI. Continue with the [current guide](#core-fabric/tooltip-maker) for saving and applying it.
+
+![Customize an item tooltip.](assets/media/guides/drm-031-neo1211/tooltip-maker.png "DRM 0.3.1 / NeoForge 1.21.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
 
 ## Change Log 0.2.0
 

@@ -14,98 +14,48 @@ tags:
   - files
 ---
 
-## Official Data Root
+## Where is the conversation I saved?
 
-The current DRM Core data root is `config/dochi_rpg_maker` under the game or server root.
+In singleplayer, open the **game folder for your current launcher instance**. In multiplayer, use the **connected server's folder**. Authoring files live under `config/dochi_rpg_maker/` there.
 
-```text
-<game-or-server-root>/
-  config/
-    dochi_rpg_maker/
-```
+For **Dialogue Editor → Save As → village_guide**, look in `config/dochi_rpg_maker/dialogue_sets/village_guide/`. One conversation set is a folder: copy the **whole folder** when moving it to another server.
 
-If the legacy `<game-or-server-root>/dochi_rpg_maker` folder exists and the new root does not, startup migrates the legacy folder to the new root.
+![Dialogue Editor shows the saved conversation's folder path.](assets/media/guides/drm-031-neo1211/dialogue-save-result.png "DRM 0.3.1 / NeoForge 1.21.1. After Save As, SET FOLDER / TOOLS shows the current set folder. Use that path to identify the correct instance.")
 
-## Main Folders
+## Files to bring for each task
 
-| Data | Path | Description |
+All paths below are inside `config/dochi_rpg_maker/`. Find the name you actually saved in the editor.
+
+| What you made | Location | Bring along |
 | --- | --- | --- |
-| Dialogue sets | `config/dochi_rpg_maker/dialogue_sets/<set>/` | Stores `dialogue_set.json` plus node `*.json` files. |
-| GUI layouts | `config/dochi_rpg_maker/gui/` | Screen GUI JSON for dialogue, shops, Teleporter, Remnant Msg, and related layouts. |
-| NPC shops | `config/dochi_rpg_maker/npc_shops/` | File-based shop JSON. |
-| Teleporter Sets | `config/dochi_rpg_maker/teleporters/` | Destination sets, categories, conditions, and transition settings. |
-| Quest packs | `config/dochi_rpg_maker/quests/<pack>/` | Pack settings and individual quests. |
-| Faction presentation | `config/dochi_rpg_maker/factions/` | CustomNPCs faction presentation and presets. |
-| Popups | `config/dochi_rpg_maker/popups/` | Popup definitions and display policies. |
-| Creator textures | `config/dochi_rpg_maker/assets/textures/` | PNG and matching `.png.mcmeta` files for GUI and NPC use. |
-| NPC Spawner templates | `config/dochi_rpg_maker/npc_spawner/entity_clones/<classification>/` | Reusable CustomNPC source templates. |
-| NPC Spawner snapshots | `config/dochi_rpg_maker/npc_spawner/spawner_snapshots/` | Atomic Filled Soul Stone snapshots owned by spawner sources. |
-| Currency definitions | `config/dochi_rpg_maker/currency/definitions/` | Currency ID, name, icon, pickup conversion, and death rules. |
-| HUD sets | `config/dochi_rpg_maker/hud/sets/` | HUD Maker set JSON. |
-| HUD definitions | `config/dochi_rpg_maker/hud/definitions/` | Vanilla replacement and custom HUD definitions. |
-| Settings | `config/dochi_rpg_maker/settings/` | `reload_policy.json`, `defaults.json`, and related settings. |
-| Remnant Msg | `config/dochi_rpg_maker/remnant_msg/` | Message and policy JSON. |
-| Debug log | `config/dochi_rpg_maker/debug.log` | Extra log file written by the core mod. |
+| NPC dialogue | `dialogue_sets/village_guide/` | Whole set folder and linked GUI, shop or quests |
+| NPC shop | `npc_shops/village_shop.json` | Currency, GUI and item mods it uses |
+| Dialogue/shop layout | `gui/` | Referenced pictures and textures |
+| Currency type | `currency/definitions/town_coin.json` | Shops and HUD using that currency |
+| HUD | `hud/sets/guide_hud/` | Entire hud_set.json and components/. Active selection: hud/active_set.json |
+| Quests | `quests/<pack-name>/` | pack.json and individual quests under quests/ |
+| Stats | `stats/sets/` | Active selection stats/active_set.json |
+| Database items | `items/definitions/` | Authoring rules items/editor_settings.json |
+| Travel destinations | `teleporters/` | Destination set and linked GUI |
+| Popups | `popups/definitions/` | Display policies under popups/policies/ if used |
+| World messages | `remnant_msg/messages/` | remnant_msg/policies/ and linked GUI |
+| Creator PNGs | `assets/textures/` | Matching .png.mcmeta for animated textures |
+| Faction display | `factions/` | Settings and required presets |
+| Defaults/shared settings | `settings/` | Review the settings you changed before moving them |
 
-## Server JSON Kinds
+DNPC's own NPC templates use a **separate folder**, `config/dochi_npc_core/templates/`. See [saving NPCs](#dochi-npc-core/npc-core-templates). Check each addon's storage guide for BattleWorks, Spawn Control and other addon files.
 
-Client and server exchange JSON by `kind` and `path`.
+## The file moved, but the NPC did not change
 
-| kind | Folder | Notes |
-| --- | --- | --- |
-| `dialogue_set` | `dialogue_sets` | Folder-based. Save writes both `dialogue_set.json` and node files. |
-| `gui` | `gui` | Supports recursive search up to depth 3. |
-| `npc_shop` | `npc_shops` | File-based shop JSON. |
-| `teleporter_set` | `teleporters` | Teleporter Set JSON. Supports recursive search up to depth 3. |
-| `quest_pack` | `quests` | Reads and writes a pack folder with its quest files. |
-| `faction_settings` | `factions/settings.json` | Active faction presentation settings. |
-| `faction_preset` | `factions/presets` | Reusable faction presentation presets. |
-| `popup_definition` | `popups/definitions` | Popup content and presentation. |
-| `popup_policy` | `popups/policies` | Popup permission and display limits. |
-| `currency` | `currency/definitions` | Currency definition file. |
-| `currency_index` | All currency definitions | Read-only index for lists and previews. |
-| `currency_hud_layout` | `hud/sets` | HUD set storage. Legacy `currency_hud` maps here. |
-| `hud_active_set` | `hud/active_set.json` | Current active HUD set. |
-| `hud_definition` | `hud/definitions` | Vanilla replacement and custom HUD definitions. |
-| `remnant_msg` | `remnant_msg/messages` | Remnant Msg document. |
-| `remnant_msg_policy` | `remnant_msg/policies` | Remnant Msg policy document. |
-| `settings` | `settings/defaults.json` | Default currency and default GUI references. |
+Authoring files and world NPCs are separate. On the destination server, check the file, then **right-click the NPC with DRM Core → select the file → Apply**. Bring referenced pictures and shops as well.
 
-Placed NPC Spawner settings are in the world. Reusable templates and copies taken from Filled Soul Stones use the config folders above.
+See [saving and NPC application](#core-fabric/core-concepts) for the buttons. Back up **config and world saves together** when moving or restoring a whole server; authoring files alone do not restore NPC placement, spawners and progress.
 
-## Input Rules
+## A saved file is missing from the list
 
-- Use folder-relative paths such as `gui/default_shop_gui.json`.
-- Display paths like `config/dochi_rpg_maker/gui/default_shop_gui.json` are accepted by some loaders.
-- Windows backslashes are normalized to `/`.
-- Blank filenames may become `default.json`; name files explicitly.
-- Paths that escape the storage root with `..` are rejected.
-- `default_set`, GUI files beginning with `default`, known default GUI paths, shops beginning with `default`, the sample shop, and `default_teleporter_set.json` are protected. Server save/delete rejects them; use `Save As`.
+1. Check the server's actual game folder. A client-only copy does not appear in the server list.
+2. Use the correct folder for a conversation, shop or GUI file.
+3. Open **Load / Refresh** and clear search filters.
+4. Use **Save As** with your own name when customizing a bundled example.
 
-## Default Content During Updates
-
-| Data | Startup behavior |
-| --- | --- |
-| Bundled dialogue, GUI, shop, and Teleporter defaults | Refreshed from the 0.2.4 JAR. |
-| Sample quest pack, popup definitions, and policies | Installed from the 0.2.4 samples when missing. |
-| `default_teleporter_set.json` | Installed as a protected Teleporter template. |
-| Remnant Msg sample message | Refreshed from the JAR. |
-| HUD definitions | Installed only when missing and default to `enabled: false`. |
-| Remnant Msg default policy | Installed only when missing. |
-
-Keep production files under non-default names so they remain separate from bundled refreshes.
-
-## Legacy Compatibility
-
-Dialogue storage can read old NPC data from `dc_dialogue_json_path`. That loader resolves files under `customnpcs/dc_data/dc_dialogues` and converts them to the current conversation format shape.
-
-New content should not use `customnpcs/dc_data` as the primary storage root. Treat it as import compatibility only.
-
-:::danger Operator Note
-When editing JSON by hand, make sure you are changing the server-side `config/dochi_rpg_maker` file, not only a client copy.
-:::
-
-
-## Scene files
-
-Scene Maker saves scenes under `config/dochi_rpg_maker/scene/`. Save after applying world-position changes. Shared scene GUI layouts use the regular `config/dochi_rpg_maker/gui/` folder.
+Enter names such as `village_shop.json` in editor filename fields; the editor already selects its own storage folder. For external file edits, see [reloading saved work](#core-fabric/data-flow).

@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -24,7 +24,7 @@ tags:
 
 1. 기존 첫 공격을 Load합니다.
 2. **Save As → bosses/training_captain.json**으로 저장합니다.
-3. CustomNPCs에서 최대 체력을 `100`으로 준비합니다.
+3. DNPC의 **Combat AI → Max health**에서 최대 체력을 `100`으로 준비합니다. 지원되는 기존 CustomNPCs NPC라면 그 NPC의 능력치 화면에서 정합니다.
 4. 일반 공격·마법을 담당하는 기존 스크립트가 함께 움직이지 않는지 확인합니다.
 5. 전투를 시험할 생존 플레이어와 장비를 일정하게 유지합니다.
 
@@ -65,13 +65,17 @@ tags:
 
 ## 5. 2페이즈 추가하기
 
-1. [페이즈 안내](#mob-editor/mob-editor-phases)에 따라 1페이즈 100%, 2페이즈 50%를 만듭니다.
+1. **Combat Rules → Boss Phases**에서 목록을 확인합니다. 새 기본 문서에 이미 P1·P2가 있으면 P2를 선택하고 체력 기준을 **50**으로 바꿉니다. 두 번째가 없을 때만 Add합니다. P1은 100%를 유지합니다.
 2. 강화 베기는 별도 패턴으로 만들고 Min Phase `2`로 제한합니다.
 3. 기존 공격은 1~2페이즈에서 모두 허용합니다.
 4. 강화 베기는 피해를 올리기 전에 Windup을 `24 → 18`로 줄여 차이를 시험합니다.
 5. 너무 빠르다면 20~24틱 사이에서 조절합니다.
 
 피해·속도·공격 횟수를 동시에 올리면 초보 플레이어가 반응하기 어렵습니다. 한 가지 차이부터 확인합니다.
+
+![기존 P2의 체력 기준을 50으로 저장한 실제 화면.](assets/media/guides/battleworks-016-neo1211/battleworks-boss-phases-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 왼쪽 P2 · Enraged를 선택하고 오른쪽 체력 기준 50을 저장했습니다. 이 배포 파일의 해당 라벨에는 Format error 문구가 붙지만 저장은 Warnings 0이고 실제 100/100 → 49/100 조건에서 서버 페이즈 1→2를 확인했습니다.")
+
+[첫 베기 + 두 페이즈 기본 파일](assets/media/battleworks/first_two_phases.json)은 위 화면에서 실제 저장한 원본입니다. 이것에는 **기본 베기 하나와 체력 페이즈 두 개**만 있습니다. 강화 공격·분노 연출은 아래 단계에서 추가합니다. 파일은 `config/dochi_rpg_maker/mobs/patterns/` 아래에 두고 Load한 뒤 NPC에 저장합니다.
 
 ## 6. 분노 시작 연출 연결하기
 

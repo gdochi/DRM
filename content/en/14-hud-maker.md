@@ -14,90 +14,55 @@ tags:
   - editor
 ---
 
-## Role
+## Place a health bar on the screen
 
-HUD Maker creates layouts that appear on the player's screen. DRM Core can handle currency HUDs, player status HUDs, and custom HUD layouts.
+A HUD displays health, hunger or balances during play. Open **HUD Maker** from the DRM Core to position it over the game view. This English screen uses **DRM 0.3.1 / Forge 1.20.1**.
 
-Choose the information to show, then position its text, icons and bars in HUD Maker.
+![Health component positioned at X 400, Y 250 and saved as guide_hud.](assets/media/guides/drm-031-forge1201/forge-hud-health.png "Add it with + Health on the left, select Health under Added HUD Types, then scroll the right Inspector for placement and component settings. The green outline marks the edited health display.")
 
-## Storage
+1. Click **+ Health** on the left.
+2. Select **Added HUD Types → Health**. A `*` marks the selected item.
+3. Scroll the **Inspector** to **X / Y**. The example uses **400 / 250** so it is easy to see near the center; move it to the intended corner for normal play.
+4. Use **Box ID** to identify the component, then adjust size, text and bar appearance. Collapse overlapping editor panels with their `-` controls to inspect placement.
+5. **Save As** a new set such as `guide_hud`. Check **Loaded JSON: guide_hud**.
+6. Choose **Apply**, close the editor and check the HUD in the intended game mode and GUI scale.
 
-HUD files use these paths.
+Saving keeps the files; Apply selects the set to display. Use **Unapply** to stop using it. Load the same set to continue editing and saving its layout.
 
-| Data | Path |
+
+## If Apply reports an error
+
+The current Forge 0.3.1 build was observed to report `JSON save failed: too many requests` after **Apply**. The set can be saved without being activated. **Applying HUD Set** alone does not confirm success; check the error output and actual gameplay display. The screenshot above documents layout saving.
+
+## Add other information
+
+| Left button | Information |
 | --- | --- |
-| HUD sets | `config/dochi_rpg_maker/hud/sets` |
-| Active HUD set | `config/dochi_rpg_maker/hud/active_set.json` |
-| HUD definitions | `config/dochi_rpg_maker/hud/definitions` |
-| Legacy currency HUD compatibility | `currency_hud_layout` maps to `hud/sets`. |
+| **+ Currency** | Balance of a currency created in Currency Editor |
+| **+ Health / Food / Armor / Air / Level** | Player health, hunger, armor, air and experience |
+| **+ Player Head** | Player face |
+| Installed integration entries | Mana, stamina or other values supplied by that mod |
 
-HUD sets are managed by the server, then sent to the client for rendering.
+For money, select the **same currency ID** created in [Currency Editor](#core/currency-editor). Adding a balance display does not grant money.
 
-0.1.4 installs disabled starter definitions for the currency wallet plus health, food, armor, air, and experience. Enable or clone only the definitions you intend to use.
+Mod-specific values require their provider. **CNPC Tempdata / Storeddata** applies only to supported environments with CustomNPCs installed. Minecraft 26.3 and later excludes CustomNPCs; do not build HUDs around those entries there.
 
-## Basic Workflow
+![Vanilla HUD Guide expanded to show default display switches.](assets/media/guides/drm-031-forge1201/forge-hud-guide.png "DRM 0.3.1 / Forge 1.20.1. Use these Visible switches to hide vanilla hearts or other default displays. Add a new DRM health display with + Health on the left.")
 
-1. Open the editor selector with the `Dochi RPG Maker Core` item.
-2. Choose `HUD Maker`.
-3. Select the HUD profile.
-4. Place the required components.
-5. Save the HUD set under a clear name.
-6. Make it the active set.
-7. Check the actual position and scale in game.
+## Check the editor and normal play
 
-## Common Components
+Creative-mode display policy may hide survival information such as health and hunger. Check **Render survival HUD** in the editor and the actual game mode, then test in the survival environment intended for players.
 
-| Component | Purpose |
-| --- | --- |
-| currency display | Shows a specific currency balance. |
-| image | Displays a background panel or icon. |
-| text | Displays fixed text or status text. |
-| panel | Groups several elements into a background area. |
-| player health/food/armor/air/XP | Shows player status values in a HUD layout. |
-| Iron's Spells mana | Shows current/max mana when the integration is installed. |
-| Combat Roll stamina | Shows current/max roll stamina when the integration is installed. |
-| CustomNPCs tempdata | Shows a numeric `tempdata` key with a configured max key or max value. |
-| CustomNPCs storeddata | Shows a numeric `storeddata` key with a configured max key or max value. |
-
-Currency HUD components connect directly to Currency Editor IDs. If the HUD component exists but the currency definition does not, the display will not be reliable.
-
-## External Gauges And Native HUD Visibility
-
-The Inspector's `Mod HUD Guide` sits below `Vanilla HUD Guide`. It independently controls whether Iron's Spells mana and Combat Roll's native HUD are hidden. This does not create a DRM component by itself; add the matching DRM HUD component and configure its layout separately.
-
-External bars use the DRM gauge sprite as their base design. Change the component tint/color rather than replacing the fill with an unstyled solid rectangle.
-
-CustomNPCs data components can be added multiple times. Configure `Data Key`, then either a `Max Key` or numeric `Max Value`. The server config entry `hud_maker.customNpcsDataHudMaxInstances` limits each data component type; the default is three and the accepted range is 1–16.
-
-## Layout Guidelines
-
-HUD elements are visible during normal play, so place them more conservatively than dialogue or shop GUI elements.
-
-- Decide the screen corner or anchor first.
-- Avoid placing large panels in the center.
-- Leave enough margin for different resolutions.
-- Prioritize number readability over long currency names.
-- Check overlap with vanilla HUD elements.
-
-## Runtime Updates
-
-HUD display depends on the server active set and player data. If you edit JSON manually, check server reload and HUD sync together.
+If the DRM bar overlaps vanilla hearts, hide the relevant default display in the Inspector’s **Vanilla HUD Guide**. Hiding a vanilla element does not create its replacement.
 
 | Symptom | Check |
 | --- | --- |
-| HUD does not appear | `hud/active_set.json` and the referenced HUD set file. |
-| Number does not update | Currency balance storage and server sync. |
-| Position is wrong | Anchor, coordinates, and GUI scale. |
-| Overlaps another HUD | Vanilla HUD replacement settings and component coordinates. |
+| Saved HUD is absent | Saved and applied set names, enabled components |
+| Visible only while editing | Check the saved/applied set and reconnect. If still absent, check game mode, visibility conditions and F3 debug overlay. |
+| Wrong placement | X/Y, anchor, screen size and GUI scale |
+| Balance stays unchanged | Currency ID and the player’s actual balance |
+| Other mod HUD overlaps | Each mod’s visibility settings and DRM component placement |
 
-## Vanilla HUD Visibility
+## Keep the complete set
 
-`Vanilla HUD` exposes independent `Hide Health`, `Hide Armor`, `Hide Food`, `Hide Air`, `Hide XP Bar`, `Hide XP Level`, `Hide Hotbar`, `Hide Crosshair`, and `Hide Boss Bar` switches. These hide vanilla surfaces; a `VANILLA_REPLACEMENT` definition supplies the custom replacement. Chat, debug text, the scoreboard, and the player list are left untouched.
-
-HUD definitions use `GROUP`, `TEXT`, `BAR`, `IMAGE`, and `ICON_LIST` elements. The bundled armor definition demonstrates `ICON_LIST`; bundled definitions start with `enabled: false`.
-
-## F3 and inventory display in 0.1.5
-
-Opening **F3** keeps your custom HUD and its vanilla-bar replacement active. For example, a custom health bar stays visible instead of switching back to vanilla hearts.
-
-A currency HUD with **Inventory** display turned off stays hidden in both Survival and Creative inventories, even when **Always** or change notifications are enabled.
+Sets are under `config/dochi_rpg_maker/hud/sets/<set name>/`. This `guide_hud` example creates **hud_set.json** and **components/hp/hp.json**. Keep the whole set folder rather than moving only its health component. `hud/active_set.json` records the selected set.

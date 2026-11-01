@@ -23,6 +23,8 @@ Battle Presentation Maker의 **Region**은 선택한 월드 블록 상태를 연
 
 캡처만 하고 파일을 저장하지 않으면 다음 로드에 남지 않습니다. 영역을 바꾼 뒤에는 다시 캡처해야 합니다. 월드 선택은 블록을 변경하지 않고 Esc로 취소할 수 있습니다.
 
+![실제 월드의 바닥과 기둥을 캡처하고 저장한 Region 미리보기.](assets/media/guides/cobble-029-neo1211-flow/cobble-region-captured.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. 31블록·두 가지 블록 상태를 캡처한 뒤 Save As로 custom/guide_stage.json 파일이 실제 생성된 것을 확인했습니다. 오른쪽 Saved와 아래쪽 저장 메시지가 그 결과입니다.")
+
 ## 캡처 제한
 
 | 항목 | 현재 한도 / 처리 |
@@ -31,15 +33,17 @@ Battle Presentation Maker의 **Region**은 선택한 월드 블록 상태를 연
 | 저장 블록 수 | 공기를 제외한 지원 블록 최대 32,768개 |
 | 서로 다른 블록 상태 | 최대 512개 |
 | 청크 | 전체 영역이 로드되어 있어야 함 |
-| 상자 같은 블록 엔티티 | 캡처에서 제외. 인벤토리·NBT·엔티티를 저장하지 않음 |
+| 상자 같은 블록 엔티티 | 범위에 있으면 캡처 거절. 상자 등을 빼고 영역을 다시 선택 |
 
 크기·상태 수를 넘기거나 저장할 블록이 없으면 캡처하지 못합니다. 캡처된 무대는 틱을 실행하지 않으므로 레드스톤 장치나 상자 기능을 재현하지 않습니다.
 
 ## FX 제작
 
-**FX** 모드에서 입자 항목을 추가하고 입자 ID·옵션을 고른 뒤 Emit, Motion, Path, Cues 페이지에서 발생 구간, 개수·간격, 모양, 크기·위치·속도와 이동 경로를 정합니다. Copy/Paste로 항목 설정을 옮길 수 있습니다.
+**Particles**에서 입자 항목을 추가하고 입자 ID·옵션을 고른 뒤 Emit, Motion, Path, Cues 페이지에서 발생 구간, 개수·간격, 모양, 크기·위치·속도와 이동 경로를 정합니다. Copy/Paste로 항목 설정을 옮길 수 있습니다.
 
 먼저 한 입자와 짧은 구간으로 시작하고 배우 모델·블록 무대·카메라와 함께 미리보기를 재생하세요. 연출 안의 시각 효과이며 실제 월드 공격이나 피해 판정을 만드는 기능은 아닙니다. 외부 모드 입자는 그 제공 모드가 설치되어야 합니다.
+
+![Particles에서 Add layer로 만든 입자 항목과 재생 중인 연출 미리보기.](assets/media/guides/cobble-029-neo1211-flow/cobble-presentation-fx.png "왼쪽 Particles → Add layer, 오른쪽 Emit에서 발생 설정을 편집합니다. 예제 입자는 minecraft:end_rod, 구간 0~39틱, Interval 2, Samples 24입니다. Play는 편집기 안의 연출 미리보기를 재생합니다.")
 
 ## 함께 사용할 설정
 

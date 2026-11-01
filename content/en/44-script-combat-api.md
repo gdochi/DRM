@@ -16,6 +16,12 @@ tags:
   - ai
 ---
 
+## Disable built-in attacks for a scripted NPC
+
+A CustomNPCs actor using spells or custom attacks can disable its built-in melee and ranged attacks. The result below checks both stored switches after disabling them. This setting alone adds no spell or combat pattern. For screen-based attacks, start with [BattleWorks](#mob-editor/battleworks-first-attack).
+
+![Actual disable built-in attacks for a scripted npc result.](assets/media/guides/drm-031-forge1201-apis/api-combat-switches.png "DRM 0.3.1 / Forge 1.20.1 with CustomNPCs. true in chat means the change was accepted; melee=false / ranged=false are the queried disabled states. This checks switch state rather than a complete combat cycle.")
+
 ## Getting Started
 
 `drmCombat` is a server-authoritative script API for independently enabling or disabling a CustomNPCs NPC's built-in melee and ranged attacks.

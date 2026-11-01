@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -18,10 +18,10 @@ tags:
 
 | Method | Setting | Use |
 | --- | --- | --- |
-| CustomNPCs targeting | Scan Without Target Off | Preserve faction-based hostile targeting |
+| Use the NPC mod's existing target | Scan Without Target Off | Use DNPC combat AI targets or CustomNPCs targets on older Minecraft versions |
 | BattleWorks fallback scan | Scan Without Target On | Search nearby living entities when no valid target exists |
 
-Fallback scanning is not the same as CustomNPCs faction filtering. Test carefully around villagers or other NPCs. Creative and Spectator players are excluded.
+Fallback scanning is not the same as DNPC relationship or CustomNPCs faction filtering. Test carefully around villagers or other NPCs. Creative and Spectator players are excluded.
 
 ## 2. Test fallback scanning in isolation
 
@@ -40,6 +40,8 @@ In **Combat Rules → Combat**, start with:
 4. Disable scanning again if using CustomNPCs factions.
 
 The scan's line-of-sight setting affects acquisition. Pattern Core's line-of-sight requirement affects starting that move.
+
+![Target scanning, line of sight and pursuit in Combat Rules → Combat.](assets/media/guides/battleworks-016-neo1211/battleworks-combat.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Scan Without Target and Target Scan Range find a target. Chase Target and Approach Distance control approach after acquiring it.")
 
 ## 3. Configure pursuit between patterns
 

@@ -13,6 +13,10 @@ audience: Creators / Operators
 
 ## Rewards after dialogue
 
+![After Actions controls for post-battle ordering.](assets/media/guides/cobble-029-neo1211/cobble-after-actions.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1, English UI. Open Battle Config → After Actions and choose Action mode. This photo shows the initial All mode with zero actions, not a completed Sequential dialogue-and-reward run.")
+
+For rewards after dialogue, choose **Sequential** and place the dialogue action before its reward. This coordinates dialogue completion with the later payout.
+
 **Sequential** after-actions wait until dialogue ends before granting later rewards. After cancellation/disconnection, the next NPC interaction can continue the remaining actions.
 
 Each round allows one dialogue action. See [setup steps](#drm-cobblemon-editor/cobblemon-trainer-editor).

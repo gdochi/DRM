@@ -14,11 +14,24 @@ tags:
   - journal
 ---
 
-## 저장과 플레이
+## NPC가 주는 첫 임무 만들기
 
-퀘스트 팩은 `config/dochi_rpg_maker/quests/<pack>/`에 저장됩니다. `pack.json`은 팩/카테고리 순서를, `quests/` 폴더는 개별 퀘스트 JSON을 가집니다. 진행도는 서버가 소유하고 클라이언트에는 저널 뷰를 전송합니다.
+코어의 에디터 목록에서 **Quest Editor → Create New**를 엽니다. **+ Category**로 장을 만들고 **+ Quest**로 그 장에 임무를 추가합니다. 아래는 **DRM 0.3.1 / Forge 1.20.1** 화면입니다.
 
-번들 샘플 팩은 비활성 상태입니다. 운영에는 복제하거나 별도 팩을 만드세요.
+![Forge Quest Editor에서 첫 퀘스트의 이름과 수락·완료 방식을 정하는 Info 화면.](assets/media/guides/drm-031-forge1201/quest-info.png "Title은 플레이어에게 보일 제목입니다. NPC Interaction / Dialogue는 켜져 있고 Player Quest Journal은 꺼져 있습니다. Forge의 Completion Mode는 이 예제에서 Turn in입니다.")
+
+1. **Info → Quest ID / Title / Description**에 참조할 이름·표시 제목·해야 할 일을 적습니다.
+2. **Start Policy → Manual Accept**라면 수락할 경로도 켭니다. 대화로 줄 때는 **NPC Interaction / Dialogue**, 저널의 수락 버튼을 쓸 때는 **Player Quest Journal**입니다.
+3. **Objectives → + Add**로 목표를 넣고 종류와 필요 횟수를 정합니다. 처음 추가된 목표는 아래처럼 **Dialogue Signal**일 수 있으므로 원하는 종류인지 확인합니다.
+4. **Rewards → + Add**로 보상을 넣습니다.
+5. **Completion Mode**가 **Turn in**이면 목표 달성 뒤 제출하는 흐름까지 만들고, **Automatic**이면 목표 달성 후 완료되도록 설정합니다. 이 부분은 NeoForge 안내와 다릅니다.
+6. **Save As**로 팩을 저장하고 NPC 대화의 **quest_start**에 연결합니다. Turn in이라면 완료 대화에 **quest_turn_in**도 연결합니다.
+
+![새로 추가한 Dialogue Signal 목표의 신호 이름과 Required 횟수.](assets/media/guides/drm-031-forge1201/quest-objective-detail.png "이 목표는 물건을 갖고 있는지 세지 않습니다. 해당 신호를 보내야 진행합니다. 예를 들어 Signal에 적은 이름을 대화의 quest_signal과 맞춥니다.")
+
+**U**로 저널을 열어 수락·진행·완료를 시험하고, 실제 보상을 받는지도 확인합니다. 샘플 팩은 비활성 상태이므로 내 팩을 켜고 저장해야 합니다.
+
+팩은 `config/dochi_rpg_maker/quests/<pack>/`에 저장됩니다. 옮길 때는 `pack.json`과 `quests/`가 들어 있는 팩 폴더 전체를 복사합니다.
 
 ## 퀘스트 구조
 

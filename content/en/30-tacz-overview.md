@@ -15,6 +15,12 @@ tags:
   - overview
 ---
 
+## The NPC firearm editor
+
+Open the NPC with **DW Npc Core**. The left categories contain weapons, senses, ammunition and target selection. This English UI uses **DW 0.3.1, DNPC 0.1.3 and NeoForge 1.21.1**.
+
+![Overview with firearm mode enabled and current detection, combat and damage settings.](assets/media/guides/warfare-031-neo1211/dw-overview.png "Overview summarizes the settings. Use Gun for the weapon, Ammo for reloads, and Senses for detection and fire rate.")
+
 ## What Warfare does
 
 Give an NPC a gun and choose its targets, movement and reloads. You can also make it switch to melee nearby, use cover, patrol or follow mercenary commands.

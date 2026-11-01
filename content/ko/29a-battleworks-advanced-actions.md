@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -26,7 +26,7 @@ tags:
 
 1. Hitbox Library에 `warning_blast`라는 Cylinder를 만듭니다. Radius `2.4`, Height `3`, Damage `4`로 시작합니다.
 2. 새 패턴을 만들고 Windup `40`, Action `10`, Recovery `20`으로 둡니다.
-3. Windup 0틱에 **Save Position** 액션을 추가합니다.
+3. Windup 0틱에 **Save World Position** 액션을 추가합니다.
 4. Position ID를 `blast_spot`, Source를 Target, Mode를 Exact로 둡니다.
 5. Windup 1틱에 **Particle Shape**를 추가합니다.
 6. Origin을 Saved position, Position ID를 `blast_spot`로 맞춥니다.
@@ -36,6 +36,8 @@ tags:
 10. 두 단계의 애니메이션은 의도에 맞게 지정하거나 명시적인 None으로 둡니다.
 
 **완료 확인:** 예고가 시작된 뒤 옆으로 이동해도 원래 자리에 판정이 발생합니다. 저장 위치 판정은 저장한 앵커를 중심으로 사용하므로 일반 NPC Hitbox의 몸 중앙 보정과 같다고 가정하지 말고 높이를 시험합니다.
+
+![Save World Position 액션의 Saved position ID, Target, Exact 설정.](assets/media/guides/battleworks-016-neo1211/battleworks-save-position.png "BattleWorks 0.1.6 / NeoForge 1.21.1. + Action → Summons / Positions → Save World Position으로 추가한 화면입니다. 초기 ID main을 실습의 blast_spot로 바꾸고, 나중에 사용하는 액션에도 같은 ID를 지정합니다.")
 
 ## 2. 위치 이름 관리하기
 
@@ -52,7 +54,7 @@ Random Ring / Random Box는 무작위 위치를 구하는 방식입니다. Safe�
 
 ## 3. 관리형 투사체 한 개부터 발사하기
 
-1. **Spawn Projectile**을 추가합니다.
+1. **Spawn Projectile / Construct**를 추가합니다.
 2. 우선 기본값으로 제공되는 `minecraft:snowball`을 사용해 연결을 확인합니다.
 3. Group ID를 `training_shots`, Count를 `1`로 둡니다.
 4. Spawn At은 Caster, Direction은 Target로 시작합니다.
@@ -70,6 +72,8 @@ Random Ring / Random Box는 무작위 위치를 구하는 방식입니다. Safe�
 | Trail Particle | 이동 흔적용 실제 파티클 ID |
 
 외부 엔티티는 등록 ID가 있다고 모두 이 방식으로 생성 가능한 것은 아닙니다. 특수 주문은 별도 생성 로직을 요구할 수 있습니다. 복잡한 마법은 먼저 실제 Skill 연동을 사용하세요.
+
+![Spawn Projectile / Construct 액션의 기본 snowball 한 발 설정.](assets/media/guides/battleworks-016-neo1211/battleworks-projectile.png "BattleWorks 0.1.6 / NeoForge 1.21.1. + Action → Skills / Projectiles에서 추가합니다. 이 화면은 Windup에 넣은 기본 설정이며, Action 단계에서 발사하려면 먼저 Action을 선택해 추가하세요.")
 
 ## 4. 떠 있는 탄을 나중에 함께 발사하기
 

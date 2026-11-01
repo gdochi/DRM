@@ -11,6 +11,15 @@ version: 0.2.8
 audience: Creators / server operators
 ---
 
+This page records an **older release**. Use [DRM 0.3.1](#core-fabric/release-notes-0-3-1) for current installation and usage. Current-version illustrations below are separate from the historical release record.
+
+
+## Read choice and action lists
+
+Select the blue Choices row to edit that choice on the right. A checkbox is separate from the editing selection. This actual example separates the item grant and claim record into two actions. Continue with the [current guide](#core-fabric/dialogue-system) for saving and applying it.
+
+![Read choice and action lists.](assets/media/guides/drm-031-neo1211/dialogue-reward-once-actions.png "DRM 0.3.1 / NeoForge 1.21.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
+
 ## Installation
 
 DRM **0.2.8** targets Forge 1.20.1 / Java 17 and Fabric / NeoForge 1.21.1 / Java 21. Match the loader and build on the server and every client. Filter [Modrinth files](https://modrinth.com/mod/drm/versions) by both Minecraft version and loader.

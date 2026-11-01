@@ -33,11 +33,13 @@ Check whether players are required, whether Creative players count, the minimum 
 
 Time uses `0–23999`. A start greater than the end spans midnight. Weather and the required redstone state can impose further restrictions.
 
+![Player activation and interval in Conditions.](assets/media/guides/spawn-control-014-neo1211/spawn-conditions.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Require player is on and Include creative players is off here. A nearby Creative author does not count toward activation in this state. At normal speed, 200 ticks is about ten seconds.")
+
 ## Counts and placement
 
 | Setting | Purpose |
 | --- | --- |
-| `Entities per attempt` | Number attempted per activation, 1–64 |
+| `Entities per activation` | Number attempted per activation, 1–64 |
 | `Maximum owned entities` | Total owned population cap for this spawner |
 | `Total spawn limit` | Cumulative creation cap; 0 means unlimited |
 | Radius, vertical range, minimum/maximum Y | Candidate search area |
@@ -47,6 +49,8 @@ Time uses `0–23999`. A start greater than the end spans midnight. Weather and 
 | Light source and minimum/maximum light | Combined, block, or sky light range |
 
 Candidates are checked only in loaded chunks; the spawner does not force-load chunks. World-border and collision checks also apply. Raising the count cannot guarantee that many entities if space or caps prevent spawning. Large operations may be spread across the server's processing budget.
+
+![Ownership limits and placement in Spawn Settings.](assets/media/guides/spawn-control-014-neo1211/spawn-settings.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Maximum owned entities 6 limits living owned entities; Total spawn limit 0 removes the cumulative limit. Large entities also need sufficient vertical and collision space.")
 
 ## Destruction
 
@@ -59,11 +63,15 @@ Choose harvesting or health-based destruction in `Destruction`.
 
 You can also choose whether destruction drops the configured spawner item. Health-mode hit effects run only when the server accepts damage. Rejected attacks and attacks within the damage cooldown do not replay them.
 
+![Destruction with Harvest selected.](assets/media/guides/spawn-control-014-neo1211/spawn-destruction.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Harvest uses Mining hardness and Required tool. Maximum health and Hitbox are gray because health-based destruction is not selected.")
+
 ## Hit particles and sounds
 
 In `Effects`, enable hit particles, choose the registered particle type, and set particles per hit. Search the list of particles registered in the current instance. Types that require additional data also need matching parameters.
 
 Hit sounds and break sounds have independent enable switches. Choose a sound ID and configure volume and pitch. Referenced modded particles and sounds require the mod supplying those resources in the running environment.
+
+![Hit particles, hit sound and destruction sound in Effects.](assets/media/guides/spawn-control-014-neo1211/spawn-effects.png "Spawn Control 0.1.4 / NeoForge 1.21.1. The switches are off, so related inputs are gray. Entering an ID alone does not enable the effect. Enable it, then set the type and count or volume.")
 
 ## Spawner boss bar
 

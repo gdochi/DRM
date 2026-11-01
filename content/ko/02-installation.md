@@ -42,6 +42,8 @@ Gecko 모델에는 GeckoLib, FTB 퀘스트 연결에는 FTB Quests처럼 사용�
 
 기본 예제는 첫 실행 때 준비됩니다. 따로 JSON 파일을 작성해 놓을 필요는 없습니다.
 
+![설치 후 코어로 여는 에디터 선택 화면.](assets/media/guides/drm-031-forge1201/editor-selector.png "DRM 0.3.1 / Forge 1.20.1. Dialogue Editor를 고르면 오른쪽에 Load·Use Default·Create New가 나옵니다. 처음에는 Use Default로 예제를 열고 Save As로 자신의 작업을 저장합니다. 추가 모드에 따라 목록은 달라집니다.")
+
 ## 업데이트하거나 서버를 옮길 때
 
 같은 모드의 예전 파일과 새 파일을 동시에 넣지 않습니다. 설정은 `config/dochi_rpg_maker/`, 배치한 NPC와 플레이어 진행도는 월드에도 저장되므로 둘을 함께 보관합니다.

@@ -1,8 +1,8 @@
 ---
-title: Sales, Trade, and Stock Processing
+title: Sell and Trade Pokémon
 slug: pokemart-sales-trade-behavior
 order: 541
-description: Follow Sales transactions, Trade matching, per-NPC stock, restocking, and failure recovery.
+description: Create Pokémon products and trade offers, then manage prices and stock.
 product: drm-cobblemon-editor
 category: PokéMart Editor
 section: pokemart
@@ -15,7 +15,17 @@ tags:
   - stock
 ---
 
-## Sales products
+## Make a Pokémon product
+
+Choose **Sales** and a payment method in [PokéMart setup](#drm-cobblemon-editor/cobblemon-pokemart), then open **Pokémon Catalog → Add**. Select the product and use **Edit Detailed Pokémon Data** for species, level and moves. Set its price and stock, **Save As** your own file, then apply it to the shop NPC.
+
+![Bulbasaur product with price and stock fields.](assets/media/guides/cobble-029-neo1211/cobble-catalog.png "Creator screen in Cobblemon Editor 0.2.9 / NeoForge 1.21.1. Price 5000, Initial 3, Maximum 3, Restock 1 and Interval 72000 replenish one Pokémon per hour up to three. This is an editing example, not a completed purchase.")
+
+**Buyers need a free active-party slot.** Purchases are not automatically sent to the PC. Check the payment method and delivered Pokémon before expanding the catalog.
+
+![Actual NPC shop after a purchase, with balance 60 and stock 2.](assets/media/guides/cobble-029-neo1211-player/cobble-sales-purchased.png "In the same version, the saved and applied product costs four emeralds. Buy · 4 changed emeralds 64→60 and stock 3→2, and added one level 5 Bulbasaur to the server party.")
+
+### Price and stock reference
 
 A Sales document supports up to 256 products. Add, duplicate, or remove rows, then use the detailed Pokémon editor for the delivered Pokémon.
 
@@ -46,7 +56,16 @@ Purchases go to the active party. **Keep a free party slot before buying.** Sale
 
 ## Trade offers
 
-A Trade document supports up to 128 offers. Each offer has one Pokémon given by the NPC and one request matcher for the player's Pokémon.
+Choose **General → Trade**, then **Pokémon Trades → Add**. The middle model is the Pokémon given by the NPC; **Requests** below it identifies what the player must give.
+
+![Bulbasaur ← Rattata offer with requested levels, stock and both Pokémon editor buttons.](assets/media/guides/cobble-029-neo1211-flow/cobble-mart-trades.png "An actual Add result in 0.2.9 / NeoForge 1.21.1: the player gives Rattata and receives Bulbasaur. Offered and Requested are edited separately. This does not show a completed exchange.")
+
+1. Use **Edit NPC Offered Pokémon** to choose the reward Pokémon.
+2. Use **Edit Requested Pokémon** to choose the required species, form and aspects.
+3. Set **Minimum / Maximum level**, **Shiny rule** and **NPC Stock** on the right.
+4. **Save As** and apply the file to the trade NPC. Players select an offer and an eligible owned Pokémon, then confirm the exchange.
+
+A Trade document supports up to 128 offers. The following rules match the **player’s Pokémon**.
 
 | Request field | Match rule |
 | --- | --- |
@@ -60,16 +79,19 @@ A Trade document supports up to 128 offers. Each offer has one Pokémon given by
 
 Nature, ability, moves, ball, and held item affect the offered Pokémon but are not request-matching fields.
 
-## Trade transaction
+## Complete an exchange
 
 1. The player selects an offer.
-2. Runtime filters owned Pokémon to eligible candidates.
-3. The player confirms a permanent exchange.
-4. The server rechecks ownership, tradeability, matcher rules, and offer stock.
-5. It saves the original Pokémon NBT and removes that Pokémon.
-6. It creates and delivers the offered Pokémon.
+2. Choose an eligible Pokémon from the active party or PC.
+3. Check the offered Pokémon and confirm the permanent exchange.
 
-If delivery fails, the server tries to restore the original. If immediate restoration fails, it stores the Pokémon in the same Pokémon Claim ledger used by auctions, and restores offer stock.
+![Player-owned Rattata selected for the exchange.](assets/media/guides/cobble-029-neo1211-player/cobble-trade-player.png "Choose Your Pokémon opens the eligible owned list. Check the individual and the green requirement message, then press Confirm Trade.")
+
+![Trade completed with offer stock zero and the success message.](assets/media/guides/cobble-029-neo1211-player/cobble-trade-completed.png "After the actual Confirm Trade, Rattata was removed from the server party, a level 5 Bulbasaur was added and offer stock changed 1→0. This exchange used no currency.")
+
+If delivery fails, the server tries to restore the original and restores offer stock. If immediate restoration fails, the Pokémon is kept in [Pokémon Claims](#drm-cobblemon-editor/pokemart-auction-gui-runtime).
+
+The offered Pokémon goes to the **active party**. Giving a party Pokémon frees its slot, but trading a PC Pokémon with a full party can fail delivery. Keep a party slot free.
 
 Trade stock uses `NPC UUID + Trade ID` and the same Initial/Maximum/Restock rules. Trade IDs must also be unique.
 

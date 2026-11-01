@@ -21,6 +21,9 @@ tags:
 
 저장은 파일을 만들고, Apply는 그 파일을 쓸 NPC를 정합니다. 저장만 했다면 NPC를 코어로 우클릭해 적용할 파일을 선택하세요.
 
+![Save As 뒤 village_guide로 바뀐 세트 폴더.](assets/media/guides/drm-031-forge1201/dialogue-save-result.png "DRM 0.3.1 / Forge 1.20.1. 파일 저장 결과입니다. 실제로 쓸 NPC는 NPC Apply에서 별도로 정합니다.")
+
+
 ## 전에 적용한 내용을 수정할 때
 
 같은 파일을 열어 **Save**한 뒤 NPC와 다시 상호작용합니다. 다른 이름으로 저장했다면 NPC에도 새 파일을 선택해 적용합니다.

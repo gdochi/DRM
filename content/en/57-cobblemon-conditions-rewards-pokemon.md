@@ -15,6 +15,14 @@ tags:
   - pokemon-itself
 ---
 
+## Select the round before conditions or rewards
+
+In **Battle Config → Conditions**, check the round number above the list, then use **Add**. **All (AND)** requires every condition in the group.
+
+![Round 1 Conditions and All AND.](assets/media/guides/cobble-029-neo1211/cobble-conditions.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1, English UI. Check Editing again after switching rounds.")
+
+![After Actions with Action mode and Run policy.](assets/media/guides/cobble-029-neo1211/cobble-after-actions.png "Action mode controls execution order; Run policy controls repetition. For rewards after conversation, change the default All to Sequential and place rewards after the dialogue.")
+
 ## Sequential dialogue and rewards
 
 Set Trainer Editor Action Mode to Sequential to wait for dialogue completion before subsequent rewards. Each round permits one dialogue. Cancellation or disconnect stops later grants; after reconnecting or restarting, interact with the NPC again to continue remaining actions. See the [setup steps](#drm-cobblemon-editor/cobblemon-trainer-editor).

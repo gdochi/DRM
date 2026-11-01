@@ -16,6 +16,12 @@ tags:
   - gimmicks
 ---
 
+## AI·자동 편성·아이템 설정으로 들어가기
+
+**Battle Config → Rounds**에서 수정할 라운드를 고른 뒤 **AI skill** 옆 현재 값 버튼을 누릅니다. 아래 예제는 Advanced입니다. 파티 편성과 배틀 가방도 이 라운드에 맞춰 정합니다. 화면은 **0.2.9 / NeoForge 1.21.1 영문 UI**입니다.
+
+![Rounds에서 AI skill과 현재 라운드를 확인하는 화면.](assets/media/guides/cobble-029-neo1211/cobble-rounds.png "포켓몬에게 지닌 도구를 주는 것과 트레이너가 회복약을 사용하는 설정은 별도입니다.")
+
 ## 라운드별 전투 두뇌
 
 Trainer의 `Battle Strategy`는 현재 라운드에 저장됩니다. 라운드를 복제하면 AI 설정도 함께 복제되고, 다른 라운드로 이동하면 해당 라운드의 설정을 편집합니다.
@@ -55,6 +61,8 @@ AI가 사용할 수 없는 행동을 골라도 배틀을 멈추거나 턴을 헛
 
 ## 랜덤 파티 생성기
 
+![자동 파티 생성기의 Basics와 Generate·Apply.](assets/media/guides/cobble-029-neo1211/cobble-party-generator.png "Pokemon Party → Generate Party로 엽니다. 수·레벨·필터를 정한 뒤 Generate로 결과를 보고, Apply로 현재 파티에 반영합니다.")
+
 `Random Party`는 현재 라운드의 생성 프로필을 저장하고 파티를 만듭니다.
 
 | 그룹 | 설정 |
@@ -88,6 +96,8 @@ RCT API가 설치되어 있으면 `General`의 RCT 포터에서 활성 데이터
 
 ## General Inventory
 
+![일반 아이템과 플레이어 인벤토리를 고르는 Trainer General Inventory.](assets/media/guides/cobble-029-neo1211/cobble-general-items.png "General Item Inventory는 기믹 키 등 소지 조건에 쓰입니다. All items 또는 Player inv에서 고른 뒤 Add selected, 마지막에 Apply합니다.")
+
 Trainer 전체에서 공유하는 최대 64개 등록 아이템 항목입니다. 키 아이템은 보유 조건으로 사용되며 소비되지 않습니다.
 
 Mega Showdown 기본 키 아이템:
@@ -103,6 +113,8 @@ Mega Showdown 기본 키 아이템:
 서버팩이 아이템 태그나 ID를 바꿨다면 현재 Mega Showdown 설정을 기준으로 확인하세요.
 
 ## Trainer Items
+
+![배틀 아이템 카탈로그·라운드 가방·사용 정책.](assets/media/guides/cobble-029-neo1211/cobble-battle-items.png "Pokemon Party → Battle Item Inventory입니다. 기본 Disabled는 가방을 저장해도 AI가 사용하지 않는 설정입니다. 아이템을 넣은 뒤 정책도 정하고 Apply합니다.")
 
 라운드별 가상 배틀 가방입니다.
 

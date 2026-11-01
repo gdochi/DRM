@@ -14,89 +14,62 @@ tags:
   - action
 ---
 
-Use the [quest guide](#core-fabric/quest-system) for current action choices and completion behavior. Old turn-in, signal, fail, abandon, and pin actions are legacy JSON compatibility paths.
+## Who sees a choice, and what happens when they click?
 
-## Where Conditions Run
+**Condition list** controls whether a choice is visible. **Choice actions** controls what clicking it does. “Has not received the gift” is a condition; “give apples and record the claim” is an action.
 
-Conditions can be attached to nodes, start routes, and choices. Empty condition arrays pass.
+Select a general node, open **Choices**, then select the choice on the left. **Label** on the right is the player's button text. The two tabs below edit conditions and actions separately.
 
-| Location | Field | Mode Field |
+## Show it only before the gift is claimed
+
+1. Open the choice's **Condition list → Add**.
+2. Choose **Type: tag**.
+3. Choose **Op: not** and enter **Tag** `welcome_received`.
+
+![A choice requiring the absence of welcome_received.](assets/media/guides/drm-031-neo1211/dialogue-choice-condition-tag.png "DRM 0.3.1 / NeoForge 1.21.1. tag / not / welcome_received passes when the tag is absent. has does the opposite.")
+
+The condition does not record a claim by itself. Add the **same tag through a Tag action** when granting the gift. Follow [one-time rewards](#core/dialogue-rewards) for the full flow.
+
+No conditions means everyone passes. For several conditions, **and** requires all; **or** requires at least one. Use and for “permission tag and at least three emeralds,” or for “either of two permission tags.”
+
+## Give three apples on click
+
+In **Choice actions**, change the action **Type** to **Item**, then set **Item: give**, **ID: minecraft:apple**, **Count: 3**. Use **+ Action** to add another action. If the example already has Goto, decide whether to replace it or keep it after the reward.
+
+![Item give, minecraft:apple and Count 3 on a choice.](assets/media/guides/drm-031-neo1211/dialogue-item-reward-editor.png "DRM 0.3.1 / NeoForge 1.21.1. Label supplies the button text; the Item action grants the actual item. Scroll the right panel to reach Count.")
+
+After **Save As → NPC Apply**, clicking this choice gave three apples in the server inventory. This item-only example closes the window after granting the items. To show a reply afterward, add **Goto last and select the destination general node**.
+
+## Choose a common action
+
+| Goal | Action | Values to choose |
 | --- | --- | --- |
-| Node | `conditions` | `conditionMode` |
-| Start route | `conditions` | `mode` |
-| Choice | `conditions` | `conditionMode` |
+| Next dialogue scene | Goto | Destination general node |
+| End conversation | Close | No extra values |
+| Open an NPC shop | Go Shop | Bound shop or saved shop file |
+| Open travel destinations | Go Teleporter | Saved teleporter set |
+| Give or take items | Item | give / take / set, item and count |
+| Mark a claim | Tag | add and the tag name |
+| Remove a mark | Tag | remove and the same tag name |
+| Run a command | Command | Server command without its leading / |
+| Connect a quest | Current quest action | Follow the current choices in the [quest guide](#core-fabric/quest-system) |
 
-Modes are `and` and `or`. Blank or unknown modes are treated as `and`.
+Arrange actions in list order and put **Goto, shop opening or Close last**. For example: Item grant → Tag add → Goto.
 
-## Condition Types
+## Where should the condition go?
 
-| type | Main Fields | Behavior |
-| --- | --- | --- |
-| `tag` | `key`, `tag`, `value`, `op` | Checks whether the player has a tag. `op: "not"` means absent. |
-| `stored` | `key`, `value`, `op` | Compares CustomNPCs script storeddata for script-oriented workflows. |
-| `item` | `key`, `value`, `op` | Compares player inventory count for an item. |
-| `faction_score` | `faction`, `key`, `amount`, `value`, `op` | Compares CustomNPCs faction points. |
-| `advancement` | `advancement`, `key`, `op` | Checks advancement completion. |
-| `ftb` | `quest`, `key`, `value`, `op` | Checks FTB quest state. |
-| `ftb_task` | `quest`, `task`, `op` | Checks FTB task state. |
-| `quest_state` | `quest`, `state`, `op` | Compares the current DRM quest state. |
-| `quest_can_start` | `quest`, `op` | Checks whether a DRM quest can start now. |
-| `quest_can_turn_in` | `quest`, `op` | Checks whether a DRM quest can be turned in now. |
-| `quest_objective` | `quest`, `objective`, `value`, `op` | Compares objective progress. |
-
-Numeric comparisons support `>`, `>=`, `<`, `<=`, `==`, and `!=`. Tags and advancements usually use `has` or `not`.
-
-## Action Types
-
-The current shared Condition Editor supports drag-and-drop reordering with edge auto-scroll and an insertion guide. `item`, `faction_score`, `advancement`, `ftb`, `ftb_task`, and DRM quest ID fields provide searchable `Find` flows. FTB discovery and evaluation require FTB Quests and a synchronized client quest file.
-
-| type | Main Fields | Behavior |
-| --- | --- | --- |
-| `goto` | `value` | Move to a node in the same dialogue document. |
-| `go_shop` | `shop`, `value` | Open a bound NPC shop or a file shop from `npc_shops`. |
-| `go_teleporter` | `teleporter`, `value` | Open the NPC-bound Teleporter Set or an explicit file from `teleporters`. |
-| `close` | none | Close the dialogue screen. |
-| `command` | `command`, `value` | Run a server command as/at the player. |
-| `tag` | `key`, `op` | Add or remove a player tag. |
-| `item` | `itemId`, `count`, `itemOp` | Give, take, or set an item count. |
-| `faction_score` | `faction`, `amount`, `factionOp` | Change CustomNPCs faction points. |
-| `advancement` | `advancement`, `criterion`, `advancementOp` | Grant or revoke an advancement. |
-| `ftb_task` | `quest`, `task` | Complete an FTB task. |
-| `ftb_complete` | `quest` | Complete an FTB quest. |
-| `gecko_animation` | Animation settings | Play a GeckoLib animation on the target NPC. |
-
-`goto`, `go_shop`, `go_teleporter`, and `close` are navigation actions. Other actions are server side effects.
-
-For `go_teleporter`, use `bound` or leave the target blank to use the Teleporter Set applied to that NPC. To open a specific set, store its normalized path in `teleporter` or `value`, for example `town_network.json`.
-
-## Command Action
-
-`command` strips a leading `/` and runs as the player.
-
-```json
-{
-  "type": "command",
-  "command": "title {player} actionbar {\"text\":\"Quest started\",\"color\":\"green\"}"
-}
-```
-
-Placeholders:
-
-| Placeholder | Replacement |
+| Location | Purpose |
 | --- | --- |
-| `{player}` / `%player%` / `${player}` | Player name |
-| `{uuid}` / `%uuid%` | Player UUID |
+| General node conditions | Restrict access to the whole scene |
+| start Routes | Choose the first scene when interaction begins |
+| Choices → Condition list | Hide or show individual choices within a scene |
 
-## Item Action
+To hide one button, condition that choice. To change the whole greeting, condition a start route leading to another general node. See [creating a conversation](#core-fabric/dialogue-system).
 
-| itemOp | Behavior |
-| --- | --- |
-| `give` | Gives `count` items. |
-| `take` or `remove` | Removes `count` items. |
-| `set` | Adjusts the inventory so the player has exactly `count`. |
+## Conditions needing another mod
 
-Item IDs should include namespaces, for example `minecraft:apple`.
+Items, tags and advancements compare their corresponding values. FTB quest conditions require FTB Quests. `faction_score` reads CustomNPCs faction points, not DNPC friendship or hostility.
 
-:::warning Action Order
-If `command` is followed by `goto`, the command runs first and then the node changes. Put state-changing actions before navigation actions.
-:::
+**CustomNPCs Stored Data** is an advanced connection to script-written data. The Tag example is enough for an ordinary one-time gift. CustomNPCs conditions are limited to supported older Minecraft targets and are unavailable on 26.3.
+
+Use the [JSON reference](#core-fabric/json-reference) only when editing files directly.

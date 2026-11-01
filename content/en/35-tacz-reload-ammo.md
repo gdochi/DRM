@@ -15,6 +15,12 @@ tags:
   - magazine
 ---
 
+## Start with a guard that reloads
+
+In **Ammo**, enable **Reload** and **Supply Ammo**, then start with **Reload Type: Normal**. **Ammo Stock** is reserve ammunition, separate from the rounds already loaded in the gun.
+
+![Ammo reload, reserves, regeneration and exhaustion settings.](assets/media/guides/warfare-031-neo1211/dw-ammo.png "DW 0.3.1 / NeoForge 1.21.1. Stock -1 gives unlimited reserves; Reload Duration 0 uses the gun’s native reload time. These reserves do not require an offhand magazine prop.")
+
 ## Ammo model
 
 Dochi's Warfare does not make managed NPCs carry spare TACZ, PointBlank, or SuperbWarfare ammunition in the offhand. The NPC uses a supported native gun, while reserve ammunition is represented by DW data:

@@ -11,7 +11,13 @@ version: 0.1.9
 audience: Creators / Operators
 ---
 
-This is a historical release record. See [DRM 0.2.8](#core-fabric/release-notes-0-2-8) for current guidance.
+This is a historical release record. See [DRM 0.3.1](#core-fabric/release-notes-0-3-1) for current guidance.
+
+## Find the scene timeline
+
+Use the bottom timeline for camera, subtitle and effect timing. Add clips with + Camera or + Subtitle, then edit their properties on the right. World position opens placement against the actual world. Continue with the [current guide](#core-fabric/scene-maker) for saving and applying it.
+
+![Find the scene timeline.](assets/media/guides/drm-031-neo1211/scene-maker.png "DRM 0.3.1 / NeoForge 1.21.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
 
 ## Change Log 0.1.9
 

@@ -7,7 +7,7 @@ product: dochi-minigames
 category: 파일과 운영
 section: operations
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 제작자 / 운영자
 ---
 
@@ -21,9 +21,13 @@ audience: 제작자 / 운영자
 
 게임 규칙 JSON은 참가비·제한 시간·심볼·보상을 저장합니다. GUI JSON은 플레이어가 보는 경기판·점수 패널 배치를 저장합니다. NPC 연결은 NPC 저장 데이터에 남으며 같은 게임 ID를 연결한 NPC들은 같은 게임 설정을 사용합니다.
 
+룰렛의 기본 **Spin on block**은 GUI 레이아웃 파일 없이도 기계에서 시작합니다. **Game screen**을 선택한 룰렛과 기존 화면형 게임의 배치를 바꿀 때 GUI 파일을 사용합니다.
+
 ## GUI Maker에서 화면 편집
 
-DRM이 설치된 환경에서 게임 규칙 탭의 **GUI Maker** 버튼으로 현재 게임의 GUI 파일을 엽니다. 경기판과 점수 패널의 위치·크기를 편집한 뒤 저장합니다. 기본 GUI를 별도로 꾸밀 때는 `Save As`로 복사하고 게임의 `guiLayout`에 해당 GUI를 연결하세요.
+DRM이 설치된 환경에서 **Open GUI Maker**로 현재 게임의 GUI 파일을 엽니다. 경기판과 점수 패널의 위치·크기를 편집한 뒤 저장합니다. 기본 GUI를 별도로 꾸밀 때는 `Save As`로 복사하고 게임의 **General → GUI JSON**에 복사한 GUI를 연결하세요.
+
+![미니게임 편집기의 General. GUI JSON 입력란과 찾기 버튼, 아래 Open GUI Maker 버튼이 보입니다.](assets/media/guides/minigames-015-neo1211/minigames-editor.png "Minigames 0.1.5 / NeoForge 1.21.1. 게임의 제목·시간·보상은 미니게임 편집기에서, 경기판의 위치·모양은 Open GUI Maker에서 정합니다.")
 
 **게임판 → 메모리 카드 크기**는 16–96px, 기본 40px입니다. 카드가 많으면 경기판에 맞춰 자동 축소되며 클릭 판정도 표시 크기에 맞춥니다. `previewGame`은 GUI Maker의 예시 화면에만 영향을 주고 실제 게임 규칙을 바꾸지 않습니다.
 
@@ -44,7 +48,7 @@ DRM이 설치된 환경에서 게임 규칙 탭의 **GUI Maker** 버튼으로 �
 
 ## JSON 참고
 
-직접 JSON을 편집하는 도구를 위한 참고입니다. 규칙 스키마는 `dochi.minigames.v1`, 타입은 `monty`·`slots`·`memory`·`whack`·`timing`·`highlow`·`shooting`·`mob_battle`입니다. `guiLayout`은 DRM `gui/` 기준 상대 경로이며 기본값은 `minigames/minigames_gui.json`입니다. 숨겨진 정답이나 진행 세션은 규칙 파일에 저장하지 않습니다.
+직접 JSON을 편집하는 도구를 위한 참고입니다. 규칙 스키마는 `dochi.minigames.v1`, 타입은 `monty`·`slots`·`memory`·`whack`·`timing`·`highlow`·`shooting`·`mob_battle`·`roulette`입니다. `guiLayout`은 DRM `gui/` 기준 상대 경로이며 기본값은 `minigames/minigames_gui.json`입니다. 숨겨진 정답이나 진행 세션은 규칙 파일에 저장하지 않습니다.
 
 ## 단독 실행과 이전 파일
 

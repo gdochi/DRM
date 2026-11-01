@@ -7,13 +7,17 @@ product: mwent
 category: Factions and cards
 section: cards
 status: Specification reference
-version: 0.1.5
+version: 0.1.6
 audience: Players / creators
 ---
 
 ## Catalog baseline
 
-This **reference table** covers 335 built-in and 89 optional-mod definitions in the current 0.1.5 catalog. Read values as power / provisions. Non-unit power is —. Ability summaries describe default definitions; use in-game inspection and Rulebook for legal targets, current statuses and full keyword explanations.
+This **reference table** covers 335 built-in and 89 optional-mod definitions in the current 0.1.6 production file. Extraction from the actual artifact confirmed that these card definitions match 0.1.5. Read values as power / provisions. Non-unit power is —. Ability summaries describe default definitions; use in-game inspection and Rulebook for legal targets, current statuses and full keyword explanations.
+
+![Card power, provisions and quantity controls in the MWENT deck builder.](assets/media/guides/minigames-016-neo1211/mwent016-deck-catalog.png "Minigames 0.1.6 / NeoForge 1.21.1, English UI. Top-left is power; bottom-right is provisions. The − / + controls change deck quantities; compare totals and the provision limit on the left. Moon Rabbit shows 5 power and 4 provisions.")
+
+For a first deck, begin with [faction strategies](#mwent/factions). Opening tactics are not collectible entries in this table; see the [0.1.6 tactic guide](#mwent/version-0-1-6).
 
 Cards marked 0.1.1 have identical definitions in actual 0.1.1–0.1.4 uploads. Optional numeric IDs can be remapped per session, so stable item keys distinguish them. The 72 entries marked 0.1.5 are workspace additions. Counts do not duplicate animated prints or include 512 unused custom-card slots.
 

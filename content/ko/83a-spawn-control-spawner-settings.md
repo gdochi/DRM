@@ -33,11 +33,13 @@ tags:
 
 시각은 `0–23999` 범위입니다. 시작이 종료보다 크면 자정을 넘는 구간입니다. 날씨와 레드스톤 필요 상태도 함께 제한할 수 있습니다.
 
+![Conditions의 플레이어 감지와 작동 간격.](assets/media/guides/spawn-control-014-neo1211/spawn-conditions.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Require player는 ON, Include creative players는 OFF인 기본 예입니다. 이 상태에서는 크리에이티브 제작자가 곁에 있어도 작동 인원으로 세지 않습니다. 정상 속도에서 간격 200틱은 약 10초입니다.")
+
 ## 소환 수와 위치
 
 | 설정 | 용도 |
 | --- | --- |
-| `Entities per attempt` | 한 번의 작동에서 시도할 개체 수, 1–64 |
+| `Entities per activation` | 한 번의 작동에서 시도할 개체 수, 1–64 |
 | `Maximum owned entities` | 해당 스포너의 총 보유 개체 제한 |
 | `Total spawn limit` | 누적 생성 제한, 0이면 무제한 |
 | 반경·수직 범위·최소/최대 Y | 후보 위치를 찾을 공간 |
@@ -47,6 +49,8 @@ tags:
 | 조도 종류와 최소·최대 조도 | 종합·블록·하늘 조도 범위 |
 
 불러온 청크 안에서만 후보를 찾으며 강제로 청크를 불러오지 않습니다. 월드 경계와 충돌 검사도 적용됩니다. 소환 수를 높여도 공간이 없거나 제한에 도달하면 그 수를 보장하지 않습니다. 큰 작업은 서버 처리 예산에 따라 나누어 실행될 수 있습니다.
+
+![Spawn Settings의 보유 제한과 위치 검사.](assets/media/guides/spawn-control-014-neo1211/spawn-settings.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Maximum owned entities 6은 동시에 보유할 개체 제한, Total spawn limit 0은 누적 제한 없음입니다. 큰 몹은 반경뿐 아니라 높이·충돌 공간도 확인합니다.")
 
 ## 파괴 방식
 
@@ -59,11 +63,15 @@ tags:
 
 설정된 스포너 아이템을 떨어뜨릴지도 선택할 수 있습니다. 체력 방식의 피격 효과는 서버가 실제 피해를 받아들였을 때 발생합니다. 피해 간격 제한 중이거나 거부된 타격은 효과를 다시 재생하지 않습니다.
 
+![Destruction에서 Harvest를 고른 기본 상태.](assets/media/guides/spawn-control-014-neo1211/spawn-destruction.png "Spawn Control 0.1.4 / NeoForge 1.21.1. 채집 방식에서는 Mining hardness와 Required tool을 조절합니다. Maximum health와 Hitbox가 회색인 이유는 체력 파괴 방식을 선택하지 않았기 때문입니다.")
+
 ## 피격 파티클과 사운드
 
 `Effects`에서 피격 파티클 사용 여부, 파티클 타입과 타격당 수를 정합니다. 목록은 현재 인스턴스에 등록된 파티클을 검색해 선택합니다. 추가 데이터가 필요한 파티클은 해당 타입에 맞는 파라미터도 지정해야 합니다.
 
 피격 사운드와 파괴 사운드는 각각 켜거나 끌 수 있습니다. 사운드 ID를 고르고 음량과 피치를 설정하세요. 모드 사운드·파티클을 사용하면 실제 실행 환경에도 그 리소스를 제공하는 모드가 필요합니다.
+
+![Effects의 피격 파티클·피격 소리·파괴 소리.](assets/media/guides/spawn-control-014-neo1211/spawn-effects.png "Spawn Control 0.1.4 / NeoForge 1.21.1. 각 스위치가 OFF여서 관련 입력도 회색입니다. ID만 입력한 것으로 효과가 켜지지 않습니다. 사용할 효과를 켠 뒤 종류와 수량·음량을 정합니다.")
 
 ## 스포너 보스바
 

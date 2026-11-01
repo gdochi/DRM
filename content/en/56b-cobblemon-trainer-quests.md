@@ -13,18 +13,20 @@ audience: Creators
 
 ## Requirements
 
-Use current Fabric/NeoForge Cobblemon Editor 0.2.4 with matching-loader DRM 0.2.4 or newer; current Core is 0.2.5. The addon registers the `Trainer Victory` objective in DRM quests.
+The checked environment is Cobblemon Editor **0.2.9 + DRM 0.3.1 + DNPC 0.1.3 / NeoForge 1.21.1**. The addon adds **Trainer Victory** to DRM quests. First give the trainer a readable identity, then link that same identity in the quest.
 
 ## Link a trainer ID
 
 1. Select the `Trainer` battle type in Cobblemon Editor.
-2. Open Trainer ID settings below the trainer name.
+2. Open **Battle Config → General → Set ID**. The field is labeled **NPC ID**.
 3. Enter a readable ID such as `gym_brock` and press `Use ID`. An existing ID is reused; a new ID is created and linked in the same action.
 4. Save the document and apply it to the battle NPC.
 
 IDs are trimmed and lowercased. They must start with a letter or digit, may contain lowercase letters, digits, `_`, `.`, and `-`, and are limited to 64 characters. NPC names and JSON filenames do not replace trainer identity.
 
 The ID picker lists trainer-victory objectives from currently loaded quests. Search and select an existing quest's trainer ID when building an NPC for a quest you already authored. An NPC does not need to exist in the world before quest design.
+
+![NPC ID entered as gym_guide in the actual picker.](assets/media/guides/cobble-029-neo1211/cobble-trainer-id-entry.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. Link the upper NPC ID with Use ID. Search quests below reuses an identity from a loaded quest; none match in this instance. Inspecting identity controls is separate from verifying real victory counting.")
 
 ## Create the objective
 

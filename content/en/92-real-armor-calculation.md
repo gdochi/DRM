@@ -15,7 +15,15 @@ tags:
   - toughness
 ---
 
-## Armor stat source
+## Choose Which Armor Effects Apply
+
+![General Armor in Real Armor 0.1.4 on NeoForge 1.21.1, with separate toughness, Protection and knockback-resistance switches.](assets/media/guides/armor-014-neo1211/armor-config.png "Armor toughness, Protection enchantments and Armor knockback resistance control separate effects. Damage reduction and knockback are not one setting.")
+
+Enable **Body-part armor** to make gaps such as an unhelmeted head matter. Disable it for equipment to protect together. Disable **Damage armor items** for armor that does not wear down while keeping armor calculation enabled.
+
+## File Reference: Armor Stat Source
+
+The following values are for direct configuration-file editing. The basic settings screen does not require entering all of them.
 
 The `armorStatSource` setting controls how armor, toughness, and knockback resistance are read.
 

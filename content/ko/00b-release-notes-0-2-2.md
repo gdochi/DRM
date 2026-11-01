@@ -11,9 +11,15 @@ version: 0.2.2
 audience: 제작자 / 운영자
 ---
 
-이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.2.8](#core/release-notes-0-2-8)을 확인하세요.
+이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.3.1](#core/release-notes-0-3-1)을 확인하세요.
 
-## 현재 설치 기준
+## 즐겨찾기를 찾는 위치
+
+목록 오른쪽 별로 자주 쓰는 도구를 등록하고 왼쪽 Favorites에서 다시 엽니다. 오른쪽 Load·Use Default·Create New는 선택한 에디터의 작업 시작 방법입니다. [현재 사용법](#core/quick-start)에서 저장과 적용까지 이어서 볼 수 있습니다.
+
+![즐겨찾기를 찾는 위치.](assets/media/guides/drm-031-forge1201/editor-selector.png "DRM 0.3.1 / Forge 1.20.1. 위 변경과 관련된 기능을 현재 배포본에서 연 화면입니다. 아래 릴리스 기록의 당시 UI와 구분합니다.")
+
+## 당시 설치 환경
 
 Minecraft 1.20.1 / Forge / Java 17용 DRM Core는 **0.2.2**입니다. Fabric·NeoForge 1.21.1의 현재 Core는 0.2.5이며 해당 로더 JAR을 선택합니다. 서버와 클라이언트를 함께 교체하고 설정·월드를 백업하세요.
 

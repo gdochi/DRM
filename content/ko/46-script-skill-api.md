@@ -16,9 +16,15 @@ tags:
   - forge
 ---
 
+## NPC가 준비된 주문을 쓰게 하기
+
+이 API는 설치된 다른 모드의 주문을 CustomNPCs NPC가 사용하게 연결합니다. 먼저 공급자가 설치돼 있고 원하는 주문이 available인지 확인한 뒤 시전합니다. 화면은 Iron’s Spells 화염구 1레벨을 호출한 실제 결과입니다. 주기·거리·페이즈를 화면에서 정하려면 [BattleWorks 스킬과 효과](#mob-editor/battleworks-skills-effects)를 사용하세요.
+
+![실제 NPC가 준비된 주문을 쓰게 하기 결과.](assets/media/guides/drm-031-forge1201-apis/api-skill-fireball.png "DRM 0.3.1 / Forge 1.20.1 + CustomNPCs + Iron’s Spells 3.4.0.9. 시전 승인 success와 실제 주문 효과를 확인했고 준비한 소의 서버 체력은 100→90이었습니다. 이 한 번의 수치를 모든 레벨·방어구 조합의 피해로 사용하지 않습니다.")
+
 ## 개요
 
-`drmSkill`은 CustomNPCs NPC가 다른 Forge 모드의 공개 주문·효과·투사체를 서버에서 시전하도록 연결하는 전역 스크립트 객체입니다. DRM 0.1.4가 직접 지원하는 공급자는 다음과 같습니다.
+`drmSkill`은 CustomNPCs NPC가 다른 Forge 모드의 공개 주문·효과·투사체를 서버에서 시전하도록 연결하는 전역 스크립트 객체입니다. DRM 0.3.1이 직접 지원하는 공급자는 다음과 같습니다.
 
 | 공급자 ID | 대상 모드 | 제공 방식 |
 | --- | --- | --- |

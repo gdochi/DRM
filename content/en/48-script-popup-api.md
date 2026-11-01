@@ -16,13 +16,19 @@ tags:
   - forge
 ---
 
+## Show a saved popup from a script
+
+First create the title and body in [Popup Maker](#core/world-npc-tools) and save a definition. A script then selects that filename and plays it for a player. This example saves village_entry and calls it with 10-tick fade-in, 80-tick hold and 20-tick fade-out.
+
+![Actual show a saved popup from a script result.](assets/media/guides/drm-031-forge1201-apis/api-popup-shown.png "DRM 0.3.1 / Forge 1.20.1 with CustomNPCs. The real PopupScriptApi.timed call sends to one player and displays Village Gate. It is not an automatic region-entry trigger.")
+
 ## Overview
 
 `drmPopup` is a global CustomNPCs script object that plays definitions saved by Popup Maker for server players. It exposes presentation actions only. Definition editing, listing, and reload operations stay in the Popup Maker GUI.
 
 ```js
 function interact(event) {
-    drmPopup.show(event.player, "area_title.json");
+    drmPopup.show(event.player, "village_entry.json");
 }
 ```
 

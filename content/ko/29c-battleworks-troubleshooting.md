@@ -7,22 +7,25 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
   - combat
 ---
 
-## 가장 먼저 확인할 다섯 가지
 
-1. BattleWorks 0.1.5, DRM 0.1.7 이상, 호환 CustomNPCs가 실제로 로드되었는지 봅니다.
-2. 지금 NPC에 연결된 파일이 수정한 파일인지 확인합니다.
-3. 문서와 사용할 패턴의 Enabled를 확인합니다.
-4. 전투 테스트는 생존 플레이어로 하고 유효한 적대 타겟을 준비합니다.
-5. 에디터 검증 오류와 서버 `logs/latest.log`를 확인합니다.
+## 먼저 확인할 것
 
-그다음 아래에서 현재 증상 하나를 골라 순서대로 검사합니다.
+1. 사용하는 Minecraft·로더와 BattleWorks·DRM 파일이 맞는지 확인합니다.
+2. DNPC를 쓰는 현재 첫 실습은 [NPC 준비](#mob-editor/mob-editor-setup)를 따릅니다. 26.3 이상에서는 CustomNPCs를 사용하지 않습니다.
+3. 저장한 경로와 NPC에 연결한 경로가 같은지 확인합니다.
+4. 크리에이티브 편집과 서바이벌 전투를 나누어 시험합니다.
+5. 기본 팔 휘두르기와 Hitbox부터 확인한 뒤 외부 모델·스킬을 추가합니다.
+
+![실제 저장·적용 확인에 사용한 Combat 화면.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. Scan Without Target 16블록·FOV 360과 Saved. Warnings: 0을 확인한 뒤 서바이벌 체력 감소를 검증했습니다. 저장 성공과 모델 미리보기 경고는 따로 판단합니다.")
+
+같은 조합에서 일반 팔 휘두르기의 실제 피해는 동작했지만, 모델·애니메이션 경고 또는 Simulation 창이 열리지 않는 미리보기 문제도 확인했습니다. 미리보기 문제만 보고 NPC에 적용한 파일을 삭제하지 말고 [확인한 첫 공격 파일](#mob-editor/battleworks-first-attack)과 실제 전투를 비교하세요.
 
 ## 파일이 목록에 없습니다
 

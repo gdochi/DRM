@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -16,9 +16,9 @@ tags:
 
 ## What you will build
 
-A normal humanoid NPC approaches a player, prepares for about 1.2 seconds, sweeps in front, and recovers. Complete [installation and NPC preparation](#mob-editor/mob-editor-setup) first and open BattleWorks with the practice NPC selected.
+A DNPC using a normal player model approaches a player, prepares for about 1.2 seconds, sweeps in front, and recovers. Complete [installation and NPC preparation](#mob-editor/mob-editor-setup) first and open BattleWorks with the practice NPC selected.
 
-These values are teaching starting points. Gecko and modded-entity models need their own compatible [animation setup](#mob-editor/battleworks-animation).
+The new captures were verified with BattleWorks 0.1.6, DRM 0.3.1 and DNPC 0.1.3 on NeoForge 1.21.1. These values are teaching starting points. Gecko and modded-entity models need their own compatible [animation setup](#mob-editor/battleworks-animation).
 
 ## 1. Create the document
 
@@ -37,9 +37,11 @@ If working on an existing boss, first create a separate practice copy with Save 
 | Attack Shape | Wide Sweep |
 | Attack Tempo | Measured |
 
-Choose each answer, continue with Next, and inspect **Review Choices**. Revisit a question if necessary, then press **Create Pattern**.
+Choose **Beginner → Wide Sweep → Measured**. Each answer advances to the next question automatically. Inspect **Review Choices**, revisit a question if needed, then press **Create Pattern**.
 
 Completion check: a pattern and a reusable hitbox appear. The assistant adds them without replacing existing patterns.
+
+![Attack choices in Pattern Build Assist.](assets/media/guides/battleworks-016-neo1211/battleworks-assist.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Start with Beginner, then choose Wide Sweep and Measured. Return to a question to change an earlier answer.")
 
 ## 3. Read the generated timing
 
@@ -55,16 +57,20 @@ Completion check: a pattern and a reusable hitbox appear. The assistant adds the
 
 The three stages total **64 ticks**, about 3.2 seconds. The contact marker is at overall tick `24 + 3 = 27`. Reuse and post-pattern delays also affect the time between attacks.
 
-## 4. Match the attack and hitbox ranges
+![Generated Wide Sweep pattern with a 24/16/24-tick timeline.](assets/media/guides/battleworks-016-neo1211/battleworks-assist-built.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Compare Windup, Action, Recovery and the Hitbox marker at tick 27. This shows pattern creation; it does not demonstrate a successful hit in combat.")
+
+## 4. Narrow the range after the first test
+
+The generator starts with Max Range `3.5` and Max Vertical `32`. You can save, apply and test those values first. Use the following adjustments afterward to narrow the practice attack.
 
 1. Select the new pattern's **Core** settings.
 2. Set Min Range `0`, Max Range `2.7`, and Max Vertical `2.5`.
 3. Under Score, use Ideal Distance `2.0`.
 4. Select its Hitbox action and choose **Edit this hitbox**.
-5. Confirm Radius `2.4`, Thickness `0.5`, and Damage `4`.
+5. Confirm Reach `2.4`, Thickness `0.5`, and Damage `4`.
 6. Enable **Locked Target Only** for the practice fight.
 
-Max Range determines when the pattern can start. Hitbox Radius determines its geometry. Raising Max Range to 10 does not make the weapon reach 10 blocks.
+Max Range determines when the pattern can start. Sweep Reach determines the hitbox reach. Raising Max Range to 10 does not make the weapon reach 10 blocks.
 
 ## 5. Stop and face the player during the attack
 
@@ -74,7 +80,7 @@ Max Range determines when the pattern can start. Hitbox Radius determines its ge
 4. Keep the generated main-hand swing on Action.
 5. Use **Simulation** or Hitbox Library Play to inspect direction and contact.
 
-Completion check: the sweep appears in front of the model. Preview does not damage a real player.
+Check preview warnings or a preview window that fails to open separately from real combat. A visible model alone does not verify its motion or contact. Confirm actual damage in the Survival test below.
 
 ## 6. Configure combat behavior
 
@@ -87,25 +93,25 @@ Open **Combat Rules → Combat**.
 | Face Between Patterns | On |
 | Chase Speed Multiplier | 1.0 |
 | Approach Distance | 2.0 |
-| Scan Without Target | Off when CustomNPCs supplies hostile targets |
+| Scan Without Target | On for this DNPC exercise |
 
-For an isolated scan test, enable Scan Without Target with Scan Range 16 and FOV 360. This fallback scan does not reproduce CustomNPCs faction filtering; keep unrelated living entities out of the test area.
+Use Scan Range 16 and FOV 360 in an isolated arena. The scan can select other living entities; keep friendly NPCs and other mobs out of this test. Supported older CustomNPCs installations can instead supply a faction target with fallback scanning off.
 
 In **Manager**, set **Same Pattern Penalty to 1.0**. With only one pattern, a value of 0 can remove the only candidate after its first use.
 
 ## 7. Save and apply
 
-1. Save As `training/first_sword.json`.
+1. Choose **Save As**, enter `training/first_sword.json`, then confirm with **Save** in the flyout.
 2. With the NPC attached, press **Save** to bind it to that path.
 3. If authoring without an NPC, select the practice NPC with Core and apply the file from its catalog.
 4. Close the editor.
 
-You can also save the [complete practice JSON](./assets/media/battleworks/training_swordsman.json) into the server's `mobs/patterns/training/` folder and Load it. It disables fallback scanning, so CustomNPCs must supply the hostile target.
+You can also download the [UI-saved first_sword.json](./assets/media/battleworks/first_sword.json) into `config/dochi_rpg_maker/mobs/patterns/training/` and Load it. This file was tested in combat with Scan Range 16, FOV 360 and Same Pattern Penalty 1.0. It retains the generated attack values before the optional adjustments in section 4.
 
 ## 8. Test in the world
 
 1. Switch to Survival and stand about six blocks away.
-2. Let CustomNPCs acquire you as a hostile target.
+2. Confirm Scan Without Target is on and no other living entities are nearby.
 3. Confirm approach, preparation, contact, and recovery.
 4. Move sideways during another attack and observe facing.
 5. Move away and confirm pursuit resumes.
@@ -117,6 +123,10 @@ You can also save the [complete practice JSON](./assets/media/battleworks/traini
 | Swings without damage | Hitbox link, event time, height, geometry, damage |
 | Extra attacks outside timing | Native attack suppression and legacy combat scripts |
 | Damage differs from 4 | Armor, invulnerability frames, effects, other mods |
+
+![Combat settings after saving the file and binding it to the NPC.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Check Saved. Warnings: 0, Scan Without Target, Scan Range 16 and FOV 360. The server file is mobs/patterns/training/first_sword.json.")
+
+![The Survival player facing the DNPC after receiving Wide Sweep damage.](assets/media/guides/battleworks-016-neo1211/battleworks-first-fight.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. The unarmored player server health fell from 20 to 12. Natural spawning and regeneration were excluded in the owned capture world, and the NPC target was verified as this player. This total is not the damage of one attack.")
 
 ## 9. Change one value at a time
 

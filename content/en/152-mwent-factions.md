@@ -7,11 +7,15 @@ product: mwent
 category: Factions and cards
 section: cards
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Players
 ---
 
 ## Choose a faction
+
+Start with a preset and inspect its cards on the right. **Use this deck** opens the builder, where you can adjust quantities, leader and opening tactic. If deck names are unfamiliar, find a play style in the table below and try that faction's preset.
+
+![Avalin's Companion Chorus preset with faction, strategy and mod filters.](assets/media/guides/minigames-016-neo1211/mwent016-faction-select.png "Minigames 0.1.6 / NeoForge 1.21.1, English UI. Use All factions to narrow the list and inspect cards on the right. Locked optional-mod presets cannot be selected because their providers are absent in this instance.")
 
 A deck combines its chosen faction with neutral cards. There are four basic presets per faction, 24 total, and three leader choices per faction. The core strategies below were already present in the 0.1.1 upload. See [0.1.5 changes](#mwent/version-0-1-5) for new scenarios, locations, traps and siege cards.
 

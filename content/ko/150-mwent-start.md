@@ -7,7 +7,7 @@ product: mwent
 category: 시작하기
 section: play
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 플레이어 / 서버 운영자
 ---
 
@@ -17,11 +17,13 @@ audience: 플레이어 / 서버 운영자
 
 뭰트는 **Dochi`s Minigames에 포함된 게임**입니다. 이 문서는 플레이와 카드 정보를 따로 찾기 위한 전용 문서이며, 별도 MWENT 모드를 설치하지 않습니다. 공개 버전에는 **0.1.1에서 처음 포함**되었습니다. [미니게임스 설치 안내](#dochi-minigames/minigames-setup)에서 대상 Minecraft와 로더에 맞는 파일을 선택하세요.
 
+![손패 10장과 전열·후열, 점수·패스 버튼이 보이는 MWENT 전투 시작 화면.](assets/media/guides/minigames-015-neo1211/mwent-battle.png "Minigames 0.1.5 / NeoForge 1.21.1 영문 화면. 왼쪽은 점수와 라운드 표시, 아래는 내 손패, 오른쪽은 덱·묘지와 Pass round입니다. 각 진영의 두 줄은 각각 소켓 9개를 사용합니다.")
+
 ## 설치와 문서 기준
 
 서버와 클라이언트 모두 같은 대상의 Minigames 빌드를 사용합니다. 기본 카드 대전·테이블·학습에는 DRM이 필요하지 않습니다. Fabric API 등 플랫폼의 필수 파일은 별도로 설치합니다. DRM은 NPC·대화·통화 연동을 추가하고, 선택 모드 카드는 해당 모드와 실제 자산을 사용할 수 있을 때 활성화됩니다. Minecraft 26.3은 Java 25를 사용하며 CustomNPCs를 지원하지 않습니다.
 
-이 가이드는 0.1.5의 게임 방법을 설명합니다. 이전 카드 변경은 [버전 이력](#mwent/releases)에서 확인하세요.
+이 가이드는 0.1.6의 게임 방법을 설명합니다. 이전 카드 변경은 [버전 이력](#mwent/releases)에서 확인하세요.
 
 ## 처음이라면 배우면서 하기
 

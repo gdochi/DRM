@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "verify": "node scripts/verify-docs.mjs",
+    "verify:ui": "node scripts/verify-reader-ui.mjs",
     "dev": "node scripts/dev-server.mjs",
     "preview": "node scripts/preview-server.mjs"
   }

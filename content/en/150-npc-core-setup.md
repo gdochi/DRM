@@ -7,7 +7,7 @@ product: dochi-npc-core
 category: NPC Core setup
 section: setup
 status: Guide
-version: 0.1.2
+version: 0.1.3
 audience: Creators / server operators
 ---
 
@@ -32,6 +32,10 @@ DNPC alone lets you create, customize and assign jobs to NPCs. Add DRM when you 
 3. Right-click that NPC with the Core to edit it.
 4. Enter a name, choose a skin and equipment, then save.
 5. Put the Core away and look at your NPC.
+
+![Identity in the DNPC 0.1.3 editor, with categories on the left, the preview in the middle and Name and Title on the right.](assets/media/guides/dnpc-013-neo1211/dnpc-identity.png "English UI on NeoForge 1.21.1. Name your NPC under Identity → Name. Use Appearance & Model for skins and Inventory & Equipment for armor.")
+
+Use the disk-shaped **Save to NPC** control after editing. To keep the NPC for later reuse, also [save a template with Save As](#dochi-npc-core/npc-core-templates).
 
 ## Core controls
 

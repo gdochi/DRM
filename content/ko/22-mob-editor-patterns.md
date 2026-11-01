@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -28,6 +28,8 @@ tags:
 | Pattern Build Assist | 질문에 답해 물리 공격의 시작 구조 생성 |
 | Pattern Graph | 패턴과 콤보 연결 관계 확인 |
 | Simulation | 선택 패턴의 움직임·모션·판정 위치를 재생 |
+
+![패턴 하나를 만든 Pattern Workbench와 세 단계 타임라인.](assets/media/guides/battleworks-016-neo1211/battleworks-assist-built.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 왼쪽 Wide Sweep을 고른 상태입니다. 가운데는 단계와 실행 시점, 오른쪽은 선택 항목의 Inspector입니다. 액션 행을 선택하면 오른쪽에서 그 액션의 값을 바꿉니다.")
 
 ## 1. 패턴 선택하고 이름 바꾸기
 

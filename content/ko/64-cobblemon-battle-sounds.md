@@ -24,6 +24,8 @@ tags:
 - `DRM Strategy`, RCT, Cobblemon Strong 중 어느 AI 엔진을 쓰든 동일한 사운드 규칙을 사용합니다.
 - Trainer 배틀에만 적용됩니다.
 
+![남은 포켓몬 수와 Global을 선택하는 Battle sounds 화면.](assets/media/guides/cobble-029-neo1211/cobble-sounds.png "Battle Config → Battle sounds. 남은 한 마리일 때 음악을 바꾸려면 1을 선택하고 Play at this count를 켠 뒤 Sound ID를 고릅니다. Apply 후 상위 문서를 저장합니다. 0.2.9 / NeoForge 1.21.1.")
+
 ## 편집 절차
 
 1. `Cobblemon Editor`에서 Trainer 문서를 엽니다.

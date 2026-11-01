@@ -7,18 +7,22 @@ product: dochi-npc-core
 category: Schedules
 section: editor
 status: Guide
-version: 0.1.2
+version: 0.1.3
 audience: NPC creators
 ---
 
 ## Work by day, rest at night
 
-1. Open **Daycycle** in the NPC editor.
-2. Add a period and name it, such as “Day shift.”
-3. Enter its start/end times and choose an activity.
-4. Press **✓** beside the period to keep those edits.
-5. Add a night period, choose **Rest / Bed**, and assign a resting place or bed.
-6. Enable the schedule and save the NPC.
+1. Open **Schedule** on the NPC editor's left rail.
+2. Press **Add time** in the middle. Enter a **Time slot name**, such as “Day shift,” on the right and press the **✓** beside it to apply that name.
+3. Enter **Start (world ticks) / End (world ticks)** on the right.
+4. Use **+** on the time row to add an activity, then select that activity to configure its location and targets.
+5. Add a night period with **Rest** or **Sleep in assigned bed**, and assign its resting place or bed.
+6. Enable **Enable schedule** above the list, then use **Save to NPC** at the top.
+
+![Schedule immediately after Add time, with a 0–1000 period in the middle and name, start and end fields on the right.](assets/media/guides/dnpc-012-neo1211/dnpc-schedule-add.png "DNPC 0.1.2 / NeoForge 1.21.1. The row's + adds an activity. The name's ✓ applies its name; Save to NPC saves the entire NPC.")
+
+The pictured `0–1000` is the initial period. Change its end time if it should cover a whole working day. A period with no activity, or a disabled schedule, is not a completed worker setup.
 
 | Time | Tick value |
 | --- | --- |
@@ -29,9 +33,15 @@ audience: NPC creators
 
 Search the action list for jobs such as lumbering, transport or riding. Categories can narrow the search.
 
+![The time row's action picker with categories on the left, specific activities on the right and search above.](assets/media/guides/dnpc-012-neo1211/dnpc-action-picker.png "Movement and waiting contains movement, waiting, riding and patrol. Choose a category, then the actual activity on the right.")
+
 ## Start from an example
 
 Use **Load schedule**, pick an example, then change its locations and targets for your world. Filter by general/military schedules and required addons.
+
+![Schedule library opened through Load schedule, showing examples, required addons, category filters and Select.](assets/media/guides/dnpc-012-neo1211/dnpc-schedule-load.png "Read an example, select it and press Select. Cooking examples report unavailable requirements when their addon is missing.")
+
+For example, **Wheat delivery task** collects only wheat, but still needs an output container. **Cooking task** needs a cooking mod and an ingredient source, workstation, output container and recipe. Continue with [cooking](#dochi-npc-core/npc-core-cooking).
 
 On 1.20.1 / 1.21.1, examples also cover DW guard, patrol and escort duties and DWE crews. DW is available on Forge/NeoForge; vehicle duties need DW, DWE and SuperbWarfare. Unavailable examples show what is missing. DW military schedules use one action per period.
 
@@ -54,3 +64,7 @@ Dismounting waits until the vehicle stops and a safe exit is available. Configur
 ## Shop opening hours
 
 Connect a DRM shop to a schedule to limit trading hours. Once it closes, trades from an already-open shop screen are also refused.
+
+Check **DRM functions → Use DNPC function schedule** too. When off, directly applied DRM files are used. When on, scheduled bindings take priority; an empty scheduled path disables that function. Enabling this switch alone does not configure opening hours.
+
+![DRM functions with DRM Apply and Use DNPC function schedule.](assets/media/guides/dnpc-012-neo1211/dnpc-drm.png "DRM Apply opens the function-file binding screen. The switch below decides whether scheduled bindings take priority.")

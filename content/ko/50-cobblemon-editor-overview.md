@@ -28,6 +28,8 @@ tags:
 
 도구는 DRM 코어로 허공을 우클릭한 뒤 **Add-on**에서 엽니다. NPC는 DNPC 또는 CustomNPCs로 만듭니다.
 
+![트레이너가 사용할 포켓몬 파티의 실제 편집 화면.](assets/media/guides/cobble-029-neo1211/cobble-party.png "포켓몬 한 마리의 종·레벨부터 정하고, 배틀 설정을 붙인 뒤 NPC에 적용합니다. 0.2.9 / NeoForge 1.21.1 영문 화면.")
+
 ## 첫 트레이너부터 만들기
 
 [설치와 첫 배틀](#drm-cobblemon-editor/cobblemon-editor-setup)을 따라 포켓몬 한 마리를 가진 트레이너를 만듭니다. 저장한 뒤 NPC에 적용하고, 양손을 비운 채 말을 걸면 배틀을 시작합니다.

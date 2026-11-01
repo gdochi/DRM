@@ -21,6 +21,9 @@ Use this order: **edit → Save As → Apply to an NPC → interact with empty h
 
 Saving creates the file. Apply chooses the NPC that uses it. If you only saved, right-click the NPC with the Core and select the file to apply.
 
+![The set folder after Save As changes it to village_guide.](assets/media/guides/drm-031-forge1201/dialogue-save-result.png "DRM 0.3.1 / Forge 1.20.1. This confirms the saved file. Choose its NPC separately in NPC Apply.")
+
+
 ## Change something already applied
 
 Open the same file, use **Save**, then interact with the NPC again. If you saved under a new name, apply that new file to the NPC.

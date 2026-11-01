@@ -1,8 +1,8 @@
 ---
-title: Starter Selector Editor
+title: 스타터 포켓몬 선택 NPC 만들기
 slug: cobblemon-starter-selector
 order: 551
-description: 스타터 카드, 조건, 지급 후 액션, 오디오와 플레이 GUI입니다.
+description: 선택 카드와 지급할 포켓몬을 정하고 한 번만 받는 조건을 붙입니다.
 product: drm-cobblemon-editor
 category: 서비스 NPC
 section: services
@@ -15,115 +15,55 @@ tags:
   - runtime-gui
 ---
 
-## DNPC 스타터 NPC
+## 세 마리 중 한 마리를 고르는 NPC 만들기
 
-0.2.9 최신 수정본에서는 DNPC에도 Starter Selector를 Apply할 수 있습니다. 같은 로더의 DRM·DNPC·애드온을 최신 수정본으로 맞추고, 적용한 NPC의 실제 선택 화면과 지급 조건을 확인하세요. CustomNPCs는 필수가 아닙니다.
+**Starter Selector Editor**에서 선택 후보를 만들고 NPC에 연결합니다. 플레이어는 카드에서 포켓몬을 고르고 확정합니다. **Minecraft 1.21.1의 Fabric·NeoForge**에서 DNPC 또는 CustomNPCs NPC를 사용합니다.
 
-## 역할
+![이상해씨·파이리·꼬부기 세 후보가 있는 Starter Selector Editor. 가운데 카드 문구, 오른쪽 포켓몬 설정이 보입니다.](assets/media/guides/cobble-029-neo1211/cobble-starter.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1 영문 화면. 왼쪽에서 고른 후보의 카드 이름·설명은 가운데, 실제 지급할 포켓몬은 오른쪽에서 바꿉니다.")
 
-`Starter Selector Editor`는 서버가 허용한 포켓몬 카드 중 하나를 플레이어가 고르게 합니다. 서버는 선택 직전에 조건을 다시 검사하고, 지급에 성공한 뒤에만 성공 액션을 실행합니다.
+1. DRM 에디터 목록에서 **Starter Selector Editor → Use Default**를 엽니다.
+2. 왼쪽 후보를 고르고 가운데 **Card Name / Pokémon Description**을 씁니다. **Option ID**는 후보마다 겹치지 않게 정합니다.
+3. 오른쪽 **Starter settings → Edit Pokémon**에서 종·레벨·폼·성격·특성·지닌 도구·기술을 정합니다. 카드 이름만 바꿔서는 지급할 종이 바뀌지 않습니다.
+4. **Add / Delete**로 후보를 조절합니다. 최소 한 개, 최대 32개입니다.
+5. **Save As**로 `custom/village_starters.json`을 저장합니다.
+6. DRM 코어로 NPC를 열고 **Starter Selector**에 이 파일을 **Apply**합니다.
+7. 양손을 비우고 NPC에게 말을 걸어 카드·상세 정보·확정까지 확인합니다.
 
-문서는 `config/dochi_rpg_maker/cobblemon/starter_selectors/`에 저장되며 현재 스키마는 `2`입니다. 기본 플레이 배치는 `config/dochi_rpg_maker/gui/starter_selector_gui.json`입니다.
+일반 DRM 대화나 상점이 먼저 열리면 양손을 비운 **Shift+우클릭**으로 전용 역할에 접근합니다. 일반 대화의 선택지에서 열고 싶다면 **go_starter_selector** 액션을 넣습니다. 특정 파일을 고르거나 **bound**로 현재 NPC에 적용한 스타터를 사용합니다.
 
-## 에디터와 GUI Maker
+![Save As 후 내 파일 경로와 Saved 표시.](assets/media/guides/cobble-029-neo1211/cobble-starter-save.png "Save As로 위 예제 경로를 저장한 화면입니다. 파일이 생긴 것과 NPC에 역할을 연결한 것은 별도 단계입니다.")
 
-| 도구 | 편집 범위 |
+![NPC와 상호작용해 열린 세 장의 스타터 카드와 Choose This Pokemon 버튼.](assets/media/guides/cobble-029-neo1211/cobble-starter-runtime.png "플레이어 화면: 카드를 먼저 고른 뒤 오른쪽 아래 Choose This Pokemon으로 확정합니다. 이 예제는 기본 세 후보 중 이상해씨를 선택했습니다.")
+
+확정 뒤에는 화면이 닫히고 파티에 포켓몬이 들어옵니다. 아래 왼쪽 파티 목록에 **Bulbasaur / Lv.5**가 표시됩니다. 이 예제는 실제 서버 파티에도 이상해씨 한 마리가 들어온 것을 확인했습니다.
+
+![스타터 확정 뒤 왼쪽 파티에 레벨 5 이상해씨가 추가된 게임 화면.](assets/media/guides/cobble-029-neo1211/cobble-starter-granted.png "Cobblemon Editor 0.2.9 / DNPC 0.1.3 / NeoForge 1.21.1. 지급 결과입니다. 한 번만 받기 제한은 아래 조건을 별도로 설정합니다.")
+
+## 한 번만 받게 하기
+
+기본 스타터 선택기는 모든 플레이어에게 영구 1회 제한을 자동으로 붙이지 않습니다. 다음 두 설정을 함께 만듭니다.
+
+1. **Dialogue and GUI → Success Tag (optional)**에 `starter_chosen`을 쓰고, 아래 버튼을 **Add tag after grant**로 둡니다.
+2. 후보의 **Card display conditions**에 플레이어가 **starter_chosen 태그를 가지고 있지 않음** 조건을 넣습니다. 조건의 **Enabled**도 켜고, 모든 후보에 같은 제한을 둡니다.
+3. 앞에 안내 대화를 사용한다면, 그 대화의 선택 화면 열기 조건에도 같은 제한을 둡니다.
+4. 처음 받는 플레이어로 선택한 뒤 다시 말을 걸어, 이미 받은 사람에게 카드가 다시 제공되지 않는지 확인합니다.
+
+포켓몬 지급에 성공한 뒤에만 태그 등 성공 액션이 실행됩니다. 파티가 꽉 찼으면 PC 저장을 시도하고, 둘 다 지급할 수 없으면 성공 액션도 실행하지 않습니다.
+
+![Dialogue and GUI의 Success Tag와 Add tag after grant.](assets/media/guides/cobble-029-neo1211/cobble-starter-dialogue.png "Success Tag에 지급 완료 태그를 쓰고 Add tag after grant로 둡니다. Dialogue GUI 경로가 비어 있으면 안내 대화를 건너뛰고 카드 화면으로 들어갑니다.")
+
+## 카드·대화·소리 바꾸기
+
+| 위치 | 바꿀 내용 |
 | --- | --- |
-| Starter Selector Editor | 옵션 포켓몬, 표시 문구, 조건, 오디오, 성공 액션, 제한형 대화 |
-| DRM GUI Maker | 카드 목록, 상세 정보, 미리보기, 버튼, 페이지 이동의 화면 배치 |
-| 플레이어 플레이 | 서버가 허용한 카드 표시와 실제 선택 요청 |
+| **Starter settings → Edit Pokémon** | 실제 받을 포켓몬 |
+| **Card display conditions** | 후보가 보이고 선택될 조건 |
+| **Card Selection Audio** | 포켓몬 울음소리 또는 사용자 지정 사운드 |
+| **Dialogue and GUI** | 선택 전 안내 대화, 화면 경로와 지급 성공 후 액션 |
+| **DRM GUI Maker** | 플레이어 카드 목록·미리보기·버튼의 배치 |
 
-GUI Maker에서 포켓몬이나 조건을 추가할 수는 없습니다. 레이아웃 JSON의 컴포넌트를 지워 필수 동작이 사라지지 않도록 기본 파일을 복제해 편집하세요.
+**Dialogue GUI (optional)** 경로를 비우면 바로 카드 화면으로 들어갑니다. 대화를 쓰면 고정된 **Open Selector / Close** 흐름을 거칩니다. 자유로운 분기는 [DRM 대화](#core-fabric/dialogue-system)에서 만들고 스타터 액션으로 연결합니다.
 
-## 문서 구성
+기본 플레이 화면은 한 페이지에 카드 세 개를 보여 줍니다. 선택 세션은 60초이므로 오래 열어 둔 뒤 확정이 안 되면 다시 NPC에게 말을 겁니다. 오디오는 Volume 0~4, Pitch 0.05~4 범위입니다.
 
-- 선택 옵션 최대 32개
-- 성공 액션 최대 32개
-- 선택형 제한 대화
-- 공용 Runtime GUI 경로
-
-### 옵션 필드
-
-| 필드 | 설명 |
-| --- | --- |
-| Option ID | 문서 안에서 고유한 ID |
-| Display Name | 최대 96자의 카드 이름 |
-| Description | 최대 1024자의 설명 |
-| Pokémon | Species부터 IV/EV, 기술, Tera/Dynamax/GMax까지 전체 슬롯 데이터 |
-| Conditions | 이 옵션이 보이고 선택될 조건 그룹 |
-| Audio | 포켓몬 울음소리 또는 사용자 지정 Sound ID |
-| Volume / Pitch | Volume 0–4, Pitch 0.05–4 |
-
-옵션 ID는 운영 중 바꾸지 않는 편이 좋습니다. 표시 이름은 번역과 연출에 맞춰 바꿀 수 있지만, 내부 ID는 테스트·로그·추적 기준으로 사용합니다.
-
-## 제한형 대화
-
-대화를 비우면 NPC 클릭 시 바로 Starter Selector를 엽니다. 대화를 사용하면 고정된 `Open Selector`와 `Close` 선택 흐름을 거쳐 화면으로 이동합니다.
-
-`Open Selector` 선택지에도 DRM 조건을 둘 수 있습니다. 예를 들어 특정 퀘스트를 시작한 플레이어만 선택 화면을 열게 만들 수 있습니다.
-
-일반 분기 대화나 복잡한 액션은 DRM Dialogue Editor에서 만들고, Starter Selector는 스타터 선택 역할에 집중하세요.
-
-## DRM 대화에서 선택 화면 열기
-
-0.1.6에서는 DRM Dialogue Editor의 `go_starter_selector` 액션으로 일반 분기 대화에서 스타터 선택 화면을 열 수 있습니다.
-
-- 특정 Starter Selector JSON을 지정하면 그 문서를 엽니다.
-- `bound`를 선택하면 현재 NPC에 Apply된 Starter Selector를 엽니다.
-- 액션이 실행되면 대화 화면을 닫고 선택 화면으로 전환합니다.
-
-여러 대화 분기 중 하나에서 스타터를 고르게 하거나, DRM Core 대화가 일반 클릭을 소유하는 통합 NPC에 권장합니다. 특정 JSON을 지정한 경우에도 플레이어가 확정할 때 서버가 같은 문서와 조건을 다시 확인합니다.
-
-## 성공 액션
-
-포켓몬이 파티 또는 PC에 실제로 들어간 뒤 다음 액션을 실행할 수 있습니다.
-
-| Type | 용도 |
-| --- | --- |
-| `tag` | 선택 완료 태그 추가/제거 |
-| `command` | 서버 명령 실행 |
-| `item` | 아이템 지급/회수 |
-| `faction_score` | CustomNPCs 세력 점수 변경 |
-| `advancement` | 발전과제 변경 |
-| `ftb_task` | FTB Task 연동 |
-| `ftb_complete` | FTB Quest/Task 완료 연동 |
-
-액션은 포켓몬 지급에 성공한 뒤에만 실행됩니다. 선택 세션은 부작용 실행 전에 닫히므로 같은 클릭을 반복해 포켓몬을 중복 지급하지 않습니다.
-
-## 한 번만 선택하게 만들기
-
-Starter Selector 자체에는 모든 문서에 강제되는 영구 1회 제한이 없습니다. 콘텐츠에 맞는 태그 조건으로 만듭니다.
-
-1. 성공 액션에 `tag add starter_chosen`을 넣습니다.
-2. 대화의 Open 조건 또는 각 옵션 조건에 `starter_chosen` 미보유를 넣습니다.
-3. 태그를 가진 플레이어에게 보여 줄 안내 대화 또는 별도 NPC 반응을 준비합니다.
-
-서버가 옵션 조건을 화면을 열 때와 선택을 확정할 때 다시 검사하므로 오래된 화면에서 조건을 우회할 수 없습니다.
-
-## 플레이어 플레이
-
-- 서버가 허용한 옵션만 카드로 전송합니다.
-- 기본 레이아웃은 페이지당 카드 3개를 표시합니다.
-- 카드 선택 후 상세 정보, 포켓몬 미리보기와 확정 버튼을 사용합니다.
-- 세션 유효 시간은 60초입니다.
-- 파티에 공간이 없으면 PC 저장을 시도합니다.
-- 파티와 PC 모두 지급할 수 없으면 성공 액션을 실행하지 않습니다.
-
-Cry를 선택하면 해당 포켓몬 울음소리를 사용하고, Custom Sound는 현재 목록의 Sound ID를 사용합니다.
-
-## 저장과 Apply
-
-1. 옵션을 한 개만 만든 간단한 문서로 시작합니다.
-2. `Save As`로 `custom/starter_selector.json`을 저장합니다.
-3. 대상 NPC에 `Starter Selector` 역할로 한 번 Apply합니다.
-4. 빈손 우클릭으로 대화와 카드 화면을 시험합니다.
-5. 같은 JSON 경로에 저장한 변경은 다음 세션에서 자동 반영됩니다.
-
-## 테스트 체크리스트
-
-1. 조건을 만족하는 플레이어와 만족하지 않는 플레이어를 비교합니다.
-2. 파티가 찬 상태에서 PC 지급을 확인합니다.
-3. 60초가 지난 화면에서 확정이 거부되는지 확인합니다.
-4. 두 번 빠르게 확정해도 중복 지급되지 않는지 확인합니다.
-5. 1회 선택 태그가 대화 열기와 옵션 선택 양쪽을 막는지 확인합니다.
-6. FTB Quests 없이 선택 모드 액션이 실패할 때 포켓몬 지급과 운영 정책을 확인합니다.
+같은 파일에 **Save**한 변경은 다음 이용부터 반영됩니다. 파일을 바꿨다면 다시 Apply합니다. 역할 파일은 `config/dochi_rpg_maker/cobblemon/starter_selectors/`, 기본 화면은 `gui/starter_selector_gui.json`입니다. 화면을 꾸밀 때는 기본 파일을 **Save As**로 복사하고 카드·확정 버튼을 남깁니다.

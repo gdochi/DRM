@@ -11,9 +11,15 @@ version: 0.2.5
 audience: 제작자 / 운영자
 ---
 
-이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.2.8](#core-fabric/release-notes-0-2-8)을 확인하세요.
+이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.3.1](#core-fabric/release-notes-0-3-1)을 확인하세요.
 
-## 현재 설치 기준
+## 즐겨찾기로 다시 열기
+
+에디터 옆 별을 누르고 Favorites에서 다시 찾습니다. 즐겨찾기는 자주 쓰는 도구를 찾는 기능이며 NPC에 대화나 상점을 적용하는 작업과 별개입니다. [현재 사용법](#core-fabric/quick-start)에서 저장과 적용까지 이어서 볼 수 있습니다.
+
+![즐겨찾기로 다시 열기.](assets/media/guides/drm-031-neo1211/editor-selector.png "DRM 0.3.1 / NeoForge 1.21.1. 위 변경과 관련된 기능을 현재 배포본에서 연 화면입니다. 아래 릴리스 기록의 당시 UI와 구분합니다.")
+
+## 당시 설치 환경
 
 Minecraft 1.21.1 / Java 21의 Fabric·NeoForge DRM Core는 **0.2.5**입니다. 기존 두 로더 공용 문서를 사용하되 JAR과 의존성은 같은 로더로 맞춥니다. [설치 준비](#core-fabric/installation)를 확인하세요.
 
@@ -31,4 +37,4 @@ Minecraft 1.21.1 / Java 21의 Fabric·NeoForge DRM Core는 **0.2.5**입니다. �
 | Minigames 0.1.0 | [몬티홀·슬롯·기억력](#dochi-minigames/minigames-setup), 참가비·보상, NPC·대화 연결 |
 | MapIcon Integration 0.1.0 | [Xaero 지도 아이콘](#dochi-mapicon-integration/mapicon-setup), JSON 규칙·NPC별 설정 |
 
-각 기능은 별도 애드온을 설치해야 합니다. 현재 Core의 CustomNPCs 필수 조건도 함께 충족하세요. 이전 [0.2.4 기록](#core-fabric/release-notes-0-2-4)은 재입고 시간 기준·GUI 타일 변경의 당시 안내로 유지합니다.
+각 기능은 별도 애드온을 설치해야 합니다. 0.2.5 당시의 CustomNPCs 필수 조건도 함께 충족해야 했습니다. 현재 설치 조건은 위 0.3.1 안내를 따릅니다. 이전 [0.2.4 기록](#core-fabric/release-notes-0-2-4)은 재입고 시간 기준·GUI 타일 변경의 당시 안내로 유지합니다.

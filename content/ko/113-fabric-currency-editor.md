@@ -2,7 +2,7 @@
 title: 커런시 에디터
 slug: currency-editor
 order: 90
-description: Currency Editor에서 디지털·실물 화폐, 아이템 변환, 사망 규칙과 HUD 표시를 설정하는 방법입니다.
+description: 잔액·실물 화폐를 만들고 아이템 변환·사망 규칙과 상점·HUD 연결을 설정합니다.
 product: core-fabric
 category: 커런시 에디터
 section: currency-editor
@@ -14,7 +14,31 @@ tags:
   - editor
 ---
 
-## 역할
+## 상점에서 쓸 돈 만들기
+
+코어의 에디터 선택 화면에서 **Currency Editor**를 엽니다. 아래 화면은 **DRM 0.3.1 / NeoForge 1.21.1의 영문 UI**입니다.
+
+![Currency Editor의 기본 화폐 설정 화면. 화폐 이름과 아이콘, 표시 형식, 사망 처리와 HUD 설정을 편집합니다.](assets/media/guides/drm-031-neo1211/currency-editor.png "돈의 종류를 만드는 화면입니다. 상품 가격은 여기서 정하지 않고 NPC Shop에서 정합니다.")
+
+1. **Name**에 표시 이름을 정합니다. 예제의 `Town Coin`과 저장할 ID `town_coin`은 구분합니다.
+2. 오른쪽 **Item Icon** 돋보기에서 에메랄드처럼 실제 아이템을 고르고 선택창의 **Apply**를 누릅니다. 아이콘이 비어 있으면 `Invalid item icon`으로 저장이 막힐 수 있습니다.
+3. 금액 표시를 정하고 **Save As**의 **Currency ID**에 `town_coin`을 입력해 확인창의 **Save As**로 저장합니다. 저장 후 상점과 HUD는 이 ID로 화폐를 찾습니다.
+4. [NPC Shop](#core-fabric/shop-system)의 결제 설정에서 이 화폐를 선택하고 상품 가격을 넣습니다. 아이템으로 직접 교환하는 상점과 DRM 잔액을 사용하는 상점은 결제 대상을 다르게 고릅니다.
+5. 잔액을 화면에 보이게 하려면 [HUD Maker](#core-fabric/hud-maker)에서도 이 화폐를 표시할 요소를 준비합니다.
+
+### 에메랄드 한 개를 잔액 10으로 정하기
+
+**Convert items on pickup → Item Prices → Add Item**에서 `minecraft:emerald`를 검색합니다. 에메랄드 행 하나만 체크해 **Add Selected (1)**로 넣고, 변환 목록에서 체크한 뒤 **Value / Item 10 → Apply Selected**를 누릅니다. 창을 닫고 화폐를 저장하세요.
+
+![town_coin에 에메랄드 한 항목과 Value / Item 10을 저장한 변환 목록.](assets/media/guides/drm-031-neo1211/currency-emerald-prices.png "DRM 0.3.1 / NeoForge 1.21.1. 저장한 화폐의 목록을 다시 연 화면입니다. 에메랄드 광석·블록까지 고르지 않도록 정확한 minecraft:emerald 행을 선택합니다. 실제 습득 후 잔액 변화는 별도로 확인합니다.")
+
+### 인벤토리에서 주고받는 돈도 필요하다면
+
+**Physical currency**에서 실물 화폐를 설정합니다. 한 개의 가치를 `10`으로 정했다면 그 아이템 한 개가 화폐 10에 해당합니다. 상점 상품의 판매 수량과 혼동하지 마세요.
+
+![Currency Editor의 Physical currency 화면. 실물 아이템의 이름과 ID, 한 개의 가치를 정하는 설정이 보입니다.](assets/media/guides/drm-031-neo1211/currency-physical.png "지갑의 잔액과 인벤토리의 실물 화폐는 구분해서 설정합니다. 사용할 결제 방식은 상점에서도 확인합니다.")
+
+## 화폐가 쓰이는 곳
 
 Currency Editor에서 돈의 이름·아이콘·아이템 변환·사망 시 잃는 양을 정합니다. 만든 화폐는 상점이나 보상, HUD에서 선택해 사용합니다.
 
@@ -29,9 +53,11 @@ config/dochi_rpg_maker/
       <currency_id>.json
 ```
 
-서버 JSON kind는 `currency`입니다. 에디터의 Load 화면은 `currency_index`를 받아 파일 목록을 보여주고, 검색어로 ID/파일명/표시 이름을 필터링합니다.
+**Load**에서 ID·파일명·표시 이름으로 저장한 화폐를 검색할 수 있습니다.
 
-## 기본 필드
+## 파일을 직접 편집할 때의 참고
+
+아래 필드 이름은 JSON을 직접 수정할 때 보는 참고입니다. 인게임 에디터로 만들 때 외울 필요는 없습니다.
 
 | 필드 | 의미 |
 | --- | --- |
@@ -70,8 +96,6 @@ config/dochi_rpg_maker/
 | `Save As` | 새 파일명으로 저장합니다. |
 | `Reset` | 현재 초안을 기본값으로 되돌립니다. |
 | `Delete` | 선택한 화폐 JSON 삭제 흐름을 엽니다. |
-| `HUD GUI` | `currency_hud` 타입 GUI 편집으로 이동합니다. |
-| `HUD` | 클라이언트 HUD 표시 자체를 켜거나 끕니다. |
 
 ## 사망 규칙
 
@@ -84,17 +108,9 @@ config/dochi_rpg_maker/
 
 DRM은 플레이어가 사망 후 새 엔티티로 교체될 때 DRM 지갑과 호환 은행 잔액 키를 복사합니다. `KEEP`은 잔액을 유지하고, `LOSE`는 손실 규칙을 적용한 결과를 이어받습니다. 아이템 자동 변환과 사망 손실이 실제로 발생하면 플레이어 채팅에 안내가 표시됩니다. 일반 픽업은 방금 주운 스택만 변환하며 인벤토리의 다른 화폐 스택을 함께 훑지 않습니다.
 
-## HUD 표시 설정
+## 잔액을 HUD에 표시하기
 
-| 필드 | 의미 |
-| --- | --- |
-| `hudAmountFormat` | `compact` 또는 `full`입니다. |
-| `hudAlwaysVisible` | 항상 HUD에 보이게 할지 정합니다. |
-| `hudShowOnPickup` | 화폐 변화가 있을 때 잠시 보이게 할지 정합니다. |
-| `hudShowInInventory` | 인벤토리 화면에서 보이게 할지 정합니다. |
-| `hudPickupTicks` | 픽업 표시가 유지되는 tick 수입니다. 기본값은 80입니다. |
-
-화폐 정의가 HUD 표시를 허용해도, 실제 HUD 화면에는 HUD Maker 또는 `currency_hud` GUI에 화폐 컴포넌트가 있어야 표시됩니다.
+[HUD Maker](#core-fabric/hud-maker)에서 Currency 요소를 추가하고 저장한 화폐를 고릅니다. 금액 서식·위치·표시 조건은 HUD 쪽에서 정합니다. 화폐 정의에 옛 HUD 허용 필드를 직접 넣지 않습니다.
 
 ## Shared 설정
 
@@ -102,13 +118,6 @@ DRM은 플레이어가 사망 후 새 엔티티로 교체될 때 DRM 지갑과 �
 
 상점마다 다른 화폐를 쓰려면 `Shared` 기본값과 별개로 NPC Shop에서 `currencyId`를 직접 지정하면 됩니다.
 
-## 가능한 것
-
-- 서버 공용 화폐 정의를 만들 수 있습니다.
-- 아이템을 주웠을 때 잔액으로 변환되게 할 수 있습니다.
-- 상점 결제용 화폐로 연결할 수 있습니다.
-- HUD 표시 방식과 사망 시 잔액 손실 비율을 정할 수 있습니다.
-- 명령으로 잔액을 지급, 차감, 설정, 조회할 수 있습니다.
 
 ## 제한
 

@@ -16,9 +16,12 @@ tags:
 
 ## 선택지 글자 크기 바꾸기
 
-다이얼로그 노드의 **Choices**를 엽니다. **Choice text px (0 = GUI)**에서 그 노드의 선택지 글자 크기를 정합니다. **0**은 연결된 GUI의 설정을 그대로 사용한다는 뜻입니다. 양수를 넣으면 해당 노드에 그 크기를 적용합니다.
+다이얼로그 노드의 **Choices**를 엽니다. **Choice text size (px; 0 = GUI default)**에서 그 노드의 선택지 글자 크기를 정합니다. **0**은 연결된 GUI의 설정을 그대로 사용한다는 뜻입니다. 양수를 넣으면 해당 노드에 그 크기를 적용합니다.
 
 여러 대화에서 공통으로 쓸 크기는 **GUI Maker**에서 대화 레이아웃을 열고 **Choice** 요소의 **Text size (px)**로 정합니다. 글자 크기는 6~32 GUI 픽셀입니다. Minecraft의 GUI 배율에 따라 실제 화면에서 보이는 크기는 달라집니다.
+
+![Choices의 글자 크기 0과 선택한 행의 Pulse highlight OFF.](assets/media/guides/drm-031-forge1201/dialogue-choices.png "DRM 0.3.1 / Forge 1.20.1. 글자 크기 0은 GUI 설정을 따릅니다. Pulse highlight는 왼쪽에서 선택한 선택지에만 설정합니다.")
+
 
 ## 긴 문장이 잘리지 않게 하기
 

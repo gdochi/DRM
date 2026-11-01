@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -20,10 +20,10 @@ BattleWorks 파일을 적용하는 것과 적대 대상을 정하는 것은 별�
 
 | 방식 | 설정 | 적합한 경우 |
 | --- | --- | --- |
-| CustomNPCs가 타겟 선택 | Scan Without Target Off | 팩션과 적대 관계를 그대로 쓰는 전투 |
+| NPC 모드가 정한 타겟 사용 | Scan Without Target Off | DNPC의 전투 AI 또는 구형 대상 CustomNPCs의 기존 타겟을 이어서 사용 |
 | BattleWorks 보조 탐색 | Scan Without Target On | 타겟이 없을 때 가까운 생명체를 탐색하는 연습·특정 전투 |
 
-보조 탐색은 **CustomNPCs 팩션 적대 필터와 동일하지 않습니다.** 주변 주민이나 다른 생명체가 있는 곳에서는 의도한 대상이 잡히는지 확인해야 합니다. 크리에이티브·관전자 플레이어는 제외됩니다.
+보조 탐색은 **DNPC 관계나 CustomNPCs 팩션 적대 필터와 동일하지 않습니다.** 주변 주민이나 다른 생명체가 있는 곳에서는 의도한 대상이 잡히는지 확인해야 합니다. 크리에이티브·관전자 플레이어는 제외됩니다.
 
 ## 2. 보조 탐색을 시험하는 설정
 
@@ -44,6 +44,8 @@ BattleWorks 파일을 적용하는 것과 적대 대상을 정하는 것은 별�
 
 이 시야 조건은 **타겟 탐색**에 사용됩니다. 패턴 Core의 시야 조건은 **해당 패턴을 시작할 때** 사용됩니다.
 
+![Combat Rules → Combat의 탐색·시선·추적 설정.](assets/media/guides/battleworks-016-neo1211/battleworks-combat.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Scan Without Target와 Target Scan Range는 대상을 찾는 설정입니다. Chase Target와 Approach Distance는 대상을 정한 뒤 접근하는 설정입니다.")
+
 ## 3. 공격 사이의 접근과 바라보기
 
 BattleWorks가 기본 공격을 억제하는 전투에서는 전용 추적 제어를 사용합니다.
@@ -58,7 +60,7 @@ BattleWorks가 기본 공격을 억제하는 전투에서는 전용 추적 제�
 
 Approach Distance는 현재 페이즈의 사용 가능한 비이동 공격 거리 안으로 보정될 수 있습니다. 그래도 공격 범위·실제 히트박스·경로를 함께 맞춰야 합니다.
 
-기본 공격 억제를 끄면 CustomNPCs의 기존 공격 AI가 계속 개입할 수 있습니다. 추적 문제를 해결하려고 두 전투 제어를 무작정 함께 켜지 마세요.
+기본 공격 억제를 끄면 NPC 모드의 기존 공격 AI가 계속 개입할 수 있습니다. 추적 문제를 해결하려고 두 전투 제어를 무작정 함께 켜지 마세요.
 
 ## 4. 공격 단계가 시작되면 별도 설정을 따릅니다
 

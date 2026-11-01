@@ -2,7 +2,7 @@
 title: BattleWorks 0.1.4 업데이트
 slug: battleworks-release-0-1-4
 order: 211
-description: Forge·NeoForge 현재 빌드와 NPC 모델·스킬·제작 도구 안내입니다.
+description: 0.1.4의 제작 흐름 기록과 현재 설치·첫 공격 안내입니다.
 product: mob-editor
 category: BattleWorks
 section: start
@@ -11,11 +11,13 @@ version: 0.1.4
 audience: 전투 콘텐츠 제작자
 ---
 
-## 현재 빌드
+## 0.1.4 기록과 현재 안내
 
-BattleWorks **0.1.4**는 Forge 1.20.1과 NeoForge 1.21.1을 지원합니다. CustomNPCs와 같은 로더의 DRM이 필수이며 현재 Core는 각각 0.2.2와 0.2.5입니다. 서버·클라이언트의 실제 빌드를 함께 맞추세요.
+이 페이지는 **0.1.4 당시의 제작 흐름 기록**입니다. 현재 확인한 BattleWorks는 0.1.6이며 설치 파일과 NPC 준비는 [현재 설치 안내](#mob-editor/mob-editor-setup)를 따릅니다. DNPC를 사용할 수 있는 현재 버전에 과거의 CustomNPCs 필수 조건을 적용하지 않습니다.
 
-## 현재 제작 흐름
+![현재 BattleWorks에서 첫 베기를 저장한 화면.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1 영문 화면입니다. 패턴을 만들고 별도 파일로 저장하는 흐름을 보여 주는 현재 예시이며 0.1.4 당시 촬영본은 아닙니다.")
+
+## 당시 제작 흐름에서 이어지는 작업
 
 - NPC 모델·외부 텍스처는 DRM NPC Basic에서 준비하며 Hitbox Library와 패턴 미리보기에서 사용합니다.
 - 패턴은 Windup·Action·Recovery의 선택한 트랙에 액션을 추가해 제작합니다. 스킬 선택기는 설치·등록된 제공자의 지원 스킬을 보여 줍니다.

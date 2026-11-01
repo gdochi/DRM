@@ -11,7 +11,13 @@ version: 0.1.9
 audience: Creators / Operators
 ---
 
-이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.2.8](#core-fabric/release-notes-0-2-8)을 확인하세요.
+이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.3.1](#core-fabric/release-notes-0-3-1)을 확인하세요.
+
+## 장면을 편집하는 화면
+
+Scene Maker의 아래 타임라인에서 카메라·자막·효과의 시간을 고릅니다. 왼쪽 + Camera·+ Subtitle로 추가하고 오른쪽에서 속성을 정합니다. World position은 월드 풍경을 보며 카메라 위치를 잡는 진입입니다. [현재 사용법](#core-fabric/scene-maker)에서 저장과 적용까지 이어서 볼 수 있습니다.
+
+![장면을 편집하는 화면.](assets/media/guides/drm-031-neo1211/scene-maker.png "DRM 0.3.1 / NeoForge 1.21.1. 위 변경과 관련된 기능을 현재 배포본에서 연 화면입니다. 아래 릴리스 기록의 당시 UI와 구분합니다.")
 
 ## 변경 사항 0.1.9
 

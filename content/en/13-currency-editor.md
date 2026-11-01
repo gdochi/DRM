@@ -14,7 +14,24 @@ tags:
   - editor
 ---
 
-## Role
+## Create Money For Your Shop
+
+Open **Currency Editor** from the core's editor selector. The following English screens are from **DRM 0.3.1 / Forge 1.20.1**.
+
+![Currency Editor with currency identity, icon, amount display, death rules and HUD settings.](assets/media/guides/drm-031-forge1201/currency-editor.png "Define a kind of money here. Set product prices separately in NPC Shop.")
+
+1. Choose an **ID** and a display name: for example, `town_coin` and “Town Coin.” Shops refer to the ID after saving, rather than looking up the display name.
+2. Choose an icon and amount display, then use **Save As** to save your own currency file.
+3. Select the currency in [NPC Shop](#core/shop-system) and set product prices. Direct item exchange and payment from a DRM balance use different payment sources.
+4. To show the balance during play, add an element for this currency in [HUD Maker](#core/hud-maker).
+
+### Money Players Can Carry
+
+Open **Physical currency** to configure a currency item. A value of `10` means one item represents ten units of that currency; it is separate from the number of products sold by a shop.
+
+![Currency Editor's Physical currency page with an item name, identity and value per item.](assets/media/guides/drm-031-forge1201/currency-physical.png "Configure the wallet balance and carried currency separately, then check which payment method the shop uses.")
+
+## Where Currency Is Used
 
 Use Currency Editor to choose money names, icons, pickup conversion and death losses. Select that currency in shops, rewards and HUDs.
 
@@ -28,6 +45,18 @@ Currencies are not only display labels. They connect to shop payments, item pick
 | Format | Display format for balances. |
 | Item conversion | Whether picked-up items become currency balance. |
 | Death rule | Whether the player keeps or loses balance on death. |
+
+## Physical Currency Items
+
+In 0.1.8, enabling `physicalItem` creates a currency form that can be carried and traded in the inventory.
+
+| Setting | Meaning |
+| --- | --- |
+| Name | Display name or translation key shown on the item. |
+| ID | Unique value that distinguishes this currency on the shared physical-currency item. |
+| Unit value | Currency value represented by one item. |
+
+Shops can accept physical currency as payment or pay it out when configured to do so. Keep each physical ID unique.
 
 ## Storage
 
@@ -52,6 +81,8 @@ The server JSON `kind` is `currency`. Currency list and preview reads use `curre
 6. Set the death rule to `KEEP` or `LOSE`.
 7. Save, then run `/drm currency reload` or `/drm reload`.
 
+DRM copies wallet and compatible bank balance keys when Minecraft replaces the player entity after death. `KEEP` preserves the balance, while `LOSE` carries forward the post-deduction value. Automatic item conversion and death loss notify the affected player in chat. Ordinary pickup conversion processes only the newly picked-up stack, not unrelated currency stacks already in the inventory.
+
 ## Command Checks
 
 Saved currencies can be checked through server commands.
@@ -73,10 +104,7 @@ When a shop uses multiple currencies, create all currencies first, then connect 
 
 ## HUD Connection
 
-For a currency to appear in HUD, two things must match.
-
-- The currency definition must allow display.
-- The active HUD set must contain a currency display component.
+Add a Currency component in [HUD Maker](#core/hud-maker) and select the saved currency. Configure its amount format, position and visibility in the HUD. Do not add obsolete display-permission fields to the currency definition.
 
 The server balance is authoritative. If the client display does not update, check `/drm currency reload` and the active HUD set.
 
@@ -88,7 +116,3 @@ The server balance is authoritative. If the client display does not update, chec
 | Pickup does not convert to balance | Item ID, conversion amount, and server reload. |
 | Shop payment fails | Currency ID in shop price and definition file. |
 | Balance after death is unexpected | Whether death rule is `KEEP` or `LOSE`. |
-
-## Inventory display in 0.1.5
-
-Turning **Inventory** display off hides that currency HUD while the inventory is open, in both Survival and Creative. **Always** and change notifications do not override this setting. Close the inventory to return to the normal HUD display rules.

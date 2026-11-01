@@ -14,9 +14,15 @@ tags:
   - changelog
 ---
 
-This is a historical release record. See [DRM 0.2.8](#core-fabric/release-notes-0-2-8) for current guidance.
+This is a historical release record. See [DRM 0.3.1](#core-fabric/release-notes-0-3-1) for current guidance.
 
 0.1.8 is a major update built on the dialogue, shop, Teleporter, and NPC Spawner tools from 0.1.7. It adds quests, factions, popups, administration, and a much larger asset and NPC presentation toolset.
+
+## Find objectives and rewards
+
+Add a Category and Quest in Quest Editor, then fill Info, Objectives and Rewards. The player journal is a separate screen. This current NeoForge editor does not establish every completion rule in historical Fabric. Continue with the [current guide](#core-fabric/quest-system) for saving and applying it.
+
+![Find objectives and rewards.](assets/media/guides/drm-031-neo1211/quest-info.png "DRM 0.3.1 / NeoForge 1.21.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
 
 ## New At A Glance
 

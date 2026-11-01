@@ -18,7 +18,7 @@ tags:
 
 BattleWorks **0.1.6** is DRM's NPC combat addon for Forge 1.20.1, Fabric / NeoForge 1.21.1 and separate 26.3 builds. Author combat timing, hitboxes, movement and phases.
 
-The exercises below use **Forge 1.20.1 and CustomNPCs**. Check [0.1.6 installation boundaries](#mob-editor/battleworks-update-0-1-6) for other loaders and 26.3 DNPC. Existing `mob-editor` routes remain available.
+The exercises below use **Forge 1.20.1 and CustomNPCs**. Check [0.1.6 installation boundaries](#mob-editor/battleworks-update-0-1-6) for other loaders and 26.3 DNPC.
 
 Start with one slow melee attack on a normal humanoid NPC; optional spell and animation mods are unnecessary for the first exercise.
 
@@ -38,6 +38,10 @@ Start with one slow melee attack on a normal humanoid NPC; optional spell and an
 Continue with [skills and presentation](#mob-editor/battleworks-skills-effects), [Particle Maker](#mob-editor/battleworks-particles), and [advanced actions](#mob-editor/battleworks-advanced-actions) when the basic encounter works.
 
 ## Where each setting belongs
+
+![BattleWorks Pattern Workbench with patterns on the left, Windup/Action/Recovery in the middle and selected pattern/stage properties on the right.](assets/media/guides/battleworks-016-neo1211/workbench.png "The default Basic Slash example in BattleWorks 0.1.6 on NeoForge 1.21.1. Select a pattern on the left, a stage in the middle, then edit its properties on the right.")
+
+Use **Pattern Workbench** for the attack sequence, **Hitbox Library** for the shape that deals damage, and **Combat Rules** for chasing and pattern selection. To build a first attack by answering questions, start with **Create New → Pattern Build Assist**. The assist is disabled after loading an existing example.
 
 | Task | Editor |
 | --- | --- |

@@ -11,23 +11,25 @@ version: Fabric / NeoForge 0.2.9
 audience: Encounter creators / server operators
 ---
 
-## DNPC actor sources
+## Choose the NPC that enters the battle
 
-Current patches let battle schedulers select editor clones or NPC templates. Choose a source containing the actual DNPC role and check entry, battle, return and cleanup. A matching name does not automatically convert an old CNPC clone into a DNPC template.
+Choose an editor clone or NPC template in **Actor**. To reuse a finished DNPC trainer, first save it with its role in [Clone Library](#drm-cobblemon-editor/cobblemon-clone-library-spawner), then connect Arena positions and Sequence scenes. Existing CustomNPCs clones and DNPC templates use different formats; matching names do not make them interchangeable.
 
 ## What it connects
 
-The scheduler runs **NPC clone spawn → intro scene → battle presentation → Cobblemon battle → existing rewards/progression → result scene → actor cleanup and exit**. It is available in Fabric and NeoForge Cobblemon Editor 0.2.4 for Minecraft 1.21.1. RCT is optional.
+The scheduler runs **NPC clone spawn → intro scene → battle presentation → Cobblemon battle → existing rewards/progression → result scene → actor cleanup and exit**. It is available in Fabric and NeoForge Cobblemon Editor 0.2.9 for Minecraft 1.21.1. RCT is optional.
 
 The clone provides the NPC and appearance; Trainer or Pokemon Itself JSON provides battle settings. Scene Maker supplies intro/result scenes, while Battle Presentation Maker supplies the battle entrance. Running a scheduler does not modify the saved clone.
 
+![Scheduler with Actor, Arena, Sequence, Policy, Preview, Validate and Run.](assets/media/guides/cobble-029-neo1211/cobble-scheduler.png "0.2.9 / NeoForge 1.21.1. Select an actor source, then connect Arena positions, Sequence scenes and Policy triggers. Enabled alone does not spawn an actor.")
+
 ## Create a first encounter
 
-1. Prepare a CNPC server clone and a working Trainer or Pokemon Itself battle JSON.
+1. Prepare an NPC clone or template and a working Trainer or Pokemon Itself battle file.
 2. Open **Battle Scheduler** in DRM's addon editor list.
 3. In **Actor**, select the clone and choose **Use Existing Settings** or **Apply New JSON**. Use new JSON when the clone has no battle binding.
-4. In **Area**, configure room ID, bounds, actor/player/exit positions and facing. Taking the current position also records its world.
-5. In **Presentation**, connect intro, battle presentation and win/loss/flee scenes. Scenes are optional; an empty presentation uses the actor's battle binding.
+4. In **Arena**, configure room ID, bounds, actor/player/exit positions and facing. Taking the current position also records its world.
+5. In **Sequence**, connect intro, battle presentation and win/loss/flee scenes. Scenes are optional; an empty presentation uses the actor's battle binding.
 6. In **Policy**, set command/area/both triggering, admission, leave cancellation, cooldown, start timeout and progression scope.
 7. In **Preview**, play/stop and choose win, loss or flee. Reload references after changing their files.
 8. Validate, save a user file with `Save As`, and use Run to test actual spawning and battle.
@@ -36,7 +38,7 @@ Preview reads referenced files, clone appearance, scenes and presentation. Test 
 
 ## Select an area in the world
 
-Use **Area → Select area** to move the box or drag its corners, then Apply. Esc cancels, and blocks are never changed. Maximum bounds are exclusive. Put actor/player starting positions inside the area and choose a usable exit.
+Use **Arena → Select area** to move the box or drag its corners, then Apply. Esc cancels, and blocks are never changed. Maximum bounds are exclusive. Put actor/player starting positions inside the area and choose a usable exit.
 
 Enable **Show scheduler areas** in Mods Config and hold the DRM Core in Creative to see up to 16 nearby areas within 64 blocks. Green means ON, gray OFF and orange in use. Editing permission is required; guides are hidden during scenes or battles. This local display setting is separate from automatic-entry control.
 

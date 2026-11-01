@@ -15,6 +15,16 @@ tags:
   - ai
 ---
 
+## 총을 고르고 사격 행동으로 이어가기
+
+먼저 사용할 총기를 **플레이어 인벤토리**에 넣습니다. **Gun**에서 아이콘을 누르면 아래 무기 목록과 오른쪽 NPC 미리보기에 반영됩니다. 화면은 **DW 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1**입니다.
+
+![플레이어 인벤토리의 M4A1을 무기 목록에 선택한 화면. 한 항목의 확률은 100%입니다.](assets/media/guides/warfare-031-neo1211/dw-gun.png "이 화면은 무기 선택과 미리보기입니다. Save로 NPC에 저장한 뒤 실제 사격을 확인합니다. 여러 무기 후보를 넣으면 합계 100%를 맞춥니다.")
+
+![Senses의 Stance Mode, Awareness와 Combat Mode.](assets/media/guides/warfare-031-neo1211/dw-senses.png "Senses 오른쪽 Quick View는 긴 설정 화면의 이동 목록입니다. Awareness는 적을 알아보는 조건, Combat Mode는 총·근접 전환을 정합니다.")
+
+![Senses의 Fire Modes·Suppressive Fire·Tactical Behavior.](assets/media/guides/warfare-031-neo1211/dw-fire.png "독립된 Fire 탭이 아닙니다. Senses → Quick View → Fire Modes로 이동합니다. 발사 속도와 명중률은 같은 목록의 Fire Rate에서 찾습니다.")
+
 ## 스탠스 모드
 
 `Stance`는 관리 중인 NPC가 어떤 전투 형태를 사용할지 정합니다.

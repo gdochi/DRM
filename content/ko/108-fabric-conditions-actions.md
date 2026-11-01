@@ -14,105 +14,62 @@ tags:
   - action
 ---
 
-퀘스트 액션의 현재 선택 항목과 완료 방식은 [퀘스트 가이드](#core-fabric/quest-system)를 따릅니다. 이전 제출·신호·실패·포기·추적 액션은 기존 JSON 호환용입니다.
+## 선택지를 보여 줄 사람과 눌렀을 때 할 일
 
-## 적용 위치
+**Condition list**는 선택지가 보일 조건, **Choice actions**는 눌렀을 때 실행할 동작입니다. 예를 들어 ‘선물을 아직 안 받은 사람’은 조건이고, ‘사과를 주고 받은 것으로 기록하기’는 액션입니다.
 
-조건과 액션은 대화 문서의 여러 위치에 붙습니다.
+일반 대화 노드를 고르고 **Choices**를 연 뒤 왼쪽에서 수정할 선택지를 고릅니다. 오른쪽 **Label**은 플레이어에게 보이는 문구입니다. 그 아래 두 탭에서 조건과 동작을 따로 편집합니다.
 
-| 위치 | 조건 필드 | 액션 필드 | 설명 |
-| --- | --- | --- | --- |
-| 노드 | `conditions` | 없음 | 노드 자체가 진입 가능한지 정합니다. |
-| 시작 route | `conditions` | route 자체 필드 | 시작 노드에서 어느 흐름으로 갈지 정합니다. |
-| 선택지 | `conditions` | `actions` | 선택지가 보일지, 눌렀을 때 무엇을 할지 정합니다. |
+## 아직 선물을 안 받은 사람에게만 보이기
 
-조건 배열이 비어 있으면 통과합니다. 모드는 `and`와 `or`를 지원합니다. 값이 비어 있거나 알 수 없으면 `and`로 처리됩니다.
+1. 해당 선택지의 **Condition list → Add**를 누릅니다.
+2. **Type: tag**를 고릅니다.
+3. **Op: not**을 고르고 **Tag**에 `welcome_received`를 입력합니다.
 
-## 조건 타입
+![welcome_received 태그가 없는 사람에게만 보이는 선택지 조건.](assets/media/guides/drm-031-neo1211/dialogue-choice-condition-tag.png "DRM 0.3.1 / NeoForge 1.21.1. tag / not / welcome_received는 ‘이 태그가 없어야 통과’입니다. has를 고르면 반대로 이미 태그를 가진 사람에게 보입니다.")
 
-| type | 주요 필드 | 동작 |
+이 조건만으로 ‘받음’ 표시가 생기지는 않습니다. 선물을 줄 때 **Tag 액션으로 같은 이름을 추가**해야 다음 방문에 선택지가 숨겨집니다. [1회 보상 만들기](#core/dialogue-rewards)에서 전체 순서를 따릅니다.
+
+조건이 없으면 누구나 볼 수 있습니다. 조건이 여러 개일 때 **and**는 전부 만족, **or**는 하나 이상 만족입니다. 예를 들어 ‘허가 태그가 있고 에메랄드도 세 개 이상’은 and, ‘두 허가 태그 중 하나가 있음’은 or입니다.
+
+## 선택지를 누르면 사과 세 개 주기
+
+**Choice actions**에서 액션의 **Type**을 **Item**으로 바꾸고 **Item: give**, **ID: minecraft:apple**, **Count: 3**으로 정합니다. 새 액션은 **+ Action**으로 추가합니다. 이미 Goto가 있는 예제를 수정한다면 그 행을 Item으로 바꿀지, 남겨 두고 액션을 추가할지 먼저 정하세요.
+
+![Item give와 minecraft:apple, Count 3을 설정한 선택지.](assets/media/guides/drm-031-neo1211/dialogue-item-reward-editor.png "DRM 0.3.1 / NeoForge 1.21.1. Label은 버튼 글자이고 Item 액션이 실제 지급을 담당합니다. 오른쪽 패널을 스크롤하면 아래 Count까지 볼 수 있습니다.")
+
+이 설정을 **Save As → NPC Apply**한 뒤 선택지를 눌러 실제 인벤토리의 사과 세 개를 확인했습니다. 아이템 액션만 있는 이 예제는 지급 후 창이 닫힙니다. 보상 뒤 다음 대사를 보여 주려면 **마지막에 Goto를 추가하고 이동할 일반 노드**를 고릅니다.
+
+## 자주 쓰는 동작 고르기
+
+| 원하는 일 | 고를 액션 | 함께 정할 값 |
 | --- | --- | --- |
-| `tag` | `key`, `tag`, `value`, `op` | 플레이어 태그가 있는지 봅니다. |
-| `stored` | `key`, `value`, `op` | CustomNPCs 스크립트의 storeddata 연동 값을 비교합니다. |
-| `item` | `key`, `value`, `op` | 플레이어 인벤토리의 아이템 수량을 비교합니다. |
-| `faction_score` | `faction`, `key`, `amount`, `value`, `op` | CustomNPCs faction point를 비교합니다. |
-| `advancement` | `advancement`, `key`, `op` | 발전 과제 완료 여부를 봅니다. |
-| `ftb` | `quest`, `key`, `value`, `op` | FTB 퀘스트 상태를 봅니다. |
-| `ftb_task` | `quest`, `task`, `op` | FTB 퀘스트 태스크 상태를 봅니다. |
-| `quest_state` | `quest`, `state`, `op` | DRM 퀘스트의 현재 상태를 비교합니다. |
-| `quest_can_start` | `quest`, `op` | DRM 퀘스트를 지금 시작할 수 있는지 봅니다. |
-| `quest_can_turn_in` | `quest`, `op` | DRM 퀘스트를 지금 제출할 수 있는지 봅니다. |
-| `quest_objective` | `quest`, `objective`, `value`, `op` | 목표 진행 수치를 비교합니다. |
+| 다음 대사로 이동 | Goto | 이동할 일반 노드 |
+| 대화 종료 | Close | 추가 값 없음 |
+| NPC 상점 열기 | Go Shop | NPC에 붙은 상점 또는 저장한 상점 |
+| 이동 목적지 목록 열기 | Go Teleporter | 저장한 텔레포터 세트 |
+| 아이템 지급·회수 | Item | give / take / set, 아이템과 수량 |
+| 받은 사람 표시 | Tag | add, 기억할 태그 이름 |
+| 표시 지우기 | Tag | remove, 같은 태그 이름 |
+| 명령 실행 | Command | 앞의 /를 뺀 서버 명령 |
+| 퀘스트 연결 | 현재 퀘스트 액션 | [퀘스트 안내](#core-fabric/quest-system)의 현재 선택 항목 사용 |
 
-숫자 비교 조건은 `>`, `>=`, `<`, `<=`, `==`, `!=`를 사용할 수 있습니다. 태그와 발전 과제는 보통 `has` 또는 `not`을 사용합니다.
+여러 동작은 목록 순서대로 구성하고 **Goto·상점 열기·Close 같은 화면 전환은 마지막**에 둡니다. 예를 들어 ‘Item 지급 → Tag 추가 → Goto’로 보상과 다음 대사를 연결합니다.
 
-`stored` 조건은 CustomNPCs 스크립트에서 storeddata를 쓰는 제작자를 위한 조건입니다. 일반 대화 제작에서 플레이어 태그나 아이템 조건만 쓰는 경우에는 이 타입을 몰라도 됩니다.
+## 어느 곳에 조건을 붙이나요?
 
-## 액션 타입
-
-0.1.8의 공용 Condition Editor에서는 조건 행을 드래그해 순서를 바꿀 수 있고, 목록 가장자리에서 자동 스크롤과 삽입 가이드를 제공합니다. `item`, `faction_score`, `advancement`, `ftb`, `ftb_task`와 DRM 퀘스트의 ID 필드는 `Find`로 검색할 수 있습니다. FTB 검색과 판정은 FTB Quests가 실제로 설치되고 클라이언트 데이터가 동기화된 경우에만 사용할 수 있습니다.
-
-| type | 주요 필드 | 동작 |
-| --- | --- | --- |
-| `goto` | `value` | 같은 대화 문서 안의 노드로 이동합니다. |
-| `go_shop` | `shop`, `value` | NPC에 붙은 상점 또는 `npc_shops` 파일 상점을 엽니다. |
-| `go_teleporter` | `teleporter`, `value` | NPC에 적용된 Teleporter Set 또는 `teleporters`의 지정 파일을 엽니다. |
-| `close` | 없음 | 대화 화면을 닫습니다. |
-| `command` | `command`, `value` | 서버 명령을 플레이어 기준으로 실행합니다. |
-| `tag` | `key`, `op` | 플레이어 태그를 추가하거나 제거합니다. |
-| `item` | `itemId`, `count`, `itemOp` | 아이템을 지급, 회수, 수량 맞춤 처리합니다. |
-| `faction_score` | `faction`, `amount`, `factionOp` | CustomNPCs faction point를 변경합니다. |
-| `advancement` | `advancement`, `criterion`, `advancementOp` | 발전 과제를 지급하거나 회수합니다. |
-| `ftb_task` | `quest`, `task` | FTB 퀘스트 태스크를 완료 처리합니다. |
-| `ftb_complete` | `quest` | FTB 퀘스트를 완료 처리합니다. |
-| `gecko_animation` | 애니메이션 설정 | 대상 NPC의 GeckoLib 애니메이션을 재생합니다. |
-
-`goto`, `go_shop`, `go_teleporter`, `close`는 화면 이동 액션입니다. 선택지의 액션 배열에서 이 타입을 만나면 다음 화면이 결정됩니다. 그 외 타입은 서버에서 결과를 처리하는 액션입니다.
-
-`go_teleporter`에서 대상 값을 `bound`로 두거나 비우면 현재 NPC에 적용된 Teleporter Set을 사용합니다. 특정 세트를 직접 열려면 `teleporter` 또는 `value`에 `town_network.json` 같은 정규화된 경로를 넣습니다.
-
-## 보상형 액션
-
-보상은 별도 보상 시스템이 아니라 액션 조합으로 만듭니다.
-
-| 원하는 결과 | 쓰는 액션 |
+| 위치 | 사용 목적 |
 | --- | --- |
-| 아이템 지급 | `item` + `itemOp: "give"` |
-| 아이템 회수 | `item` + `itemOp: "take"` 또는 `"remove"` |
-| 특정 수량으로 맞춤 | `item` + `itemOp: "set"` |
-| 태그 부여 | `tag` + `op: "add"` |
-| 태그 제거 | `tag` + `op: "remove"` |
-| 호감도/팩션 점수 변경 | `faction_score` |
-| 발전 과제 지급 | `advancement` + `advancementOp: "grant"` |
-| FTB 퀘스트 처리 | `ftb_task`, `ftb_complete` |
+| 일반 노드의 조건 | 그 장면 자체에 들어갈 수 있는지 제한 |
+| start의 Routes | 말을 걸었을 때 어떤 장면을 먼저 열지 선택 |
+| Choices의 Condition list | 같은 장면에서 선택지별로 표시 여부 제한 |
 
-한 선택지에 여러 액션을 넣을 수 있습니다. 예를 들어 아이템을 주고 태그를 붙인 다음 다음 노드로 이동하려면 `item`, `tag`, `goto` 순서로 넣습니다.
+선택지 하나만 숨기려면 그 선택지에 조건을 붙입니다. 인사말 전체를 바꾸려면 start의 Routes에 조건을 붙이고 다른 일반 노드로 연결합니다. [대화 만들기](#core-fabric/dialogue-system)의 start와 일반 노드 예제를 함께 보세요.
 
-## 명령 액션
+## 연동이 필요한 조건
 
-`command` 액션에는 마인크래프트 명령어를 그대로 넣습니다. 채팅에 입력할 때 붙이는 앞의 `/`는 제거하고, 명령은 플레이어 기준으로 실행됩니다.
+아이템·태그·발전 과제는 해당 값으로 비교합니다. FTB 퀘스트 조건은 FTB Quests가 있는 환경에서 사용합니다. `faction_score`는 CustomNPCs의 팩션 점수이며 DNPC의 우호·적대 관계와 다릅니다.
 
-사용 가능한 플레이스홀더는 다음과 같습니다.
+**CustomNPCs Stored Data**는 스크립트로 저장한 값을 읽는 고급 연동입니다. 일반적인 1회 보상에는 위 Tag 예제를 쓰면 됩니다. CustomNPCs 관련 조건은 지원되는 구형 Minecraft 대상에 한정되며 26.3에서는 사용하지 않습니다.
 
-| 플레이스홀더 | 치환 값 |
-| --- | --- |
-| `{player}` / `%player%` / `${player}` | 플레이어 이름 |
-| `{uuid}` / `%uuid%` | 플레이어 UUID |
-
-## 아이템 액션
-
-| itemOp | 동작 |
-| --- | --- |
-| `give` | `count`만큼 아이템을 지급합니다. |
-| `take` 또는 `remove` | `count`만큼 아이템을 회수합니다. |
-| `set` | 현재 수량이 `count`가 되도록 지급 또는 회수합니다. |
-
-아이템 ID는 `minecraft:apple`처럼 네임스페이스를 포함해야 합니다.
-
-## 제한
-
-- 조건은 등록된 타입만 사용할 수 있습니다. 임의의 JavaScript나 스크립트 조건을 직접 실행하지 않습니다.
-- 액션 결과는 서버 기준으로 처리됩니다. 클라이언트 화면 텍스트만 바꾼다고 실제 보상이 지급되지는 않습니다.
-- FTB 관련 조건과 액션은 FTB Quests가 로드된 환경에서 의미가 있습니다.
-- 상점 열기는 `go_shop`으로 연결하지만, 상점 상품과 가격은 NPC Shop 문서가 담당합니다.
-- 텔레포터 열기는 `go_teleporter`로 연결하지만, 목적지와 접근 조건은 Teleporter Set이 담당합니다.
+파일을 직접 편집해야 할 때만 [JSON 참고](#core-fabric/json-reference)를 확인하세요.

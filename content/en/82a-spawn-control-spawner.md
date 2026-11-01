@@ -32,6 +32,8 @@ tags:
 
 Documents are stored on the server under `config/dochi_rpg_maker/spawn_control/spawners/`. In singleplayer, the instance's game directory is the root; documents are shared across its worlds. See [Sharing and Operations](#dochi-spawn-control/dochi-spawn-control-presets-operations) for paths and backups.
 
+![One zombie entry in Spawn Target.](assets/media/guides/spawn-control-014-neo1211/spawn-placed.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Entities per activation 1 attempts one entity. Chance 1.0 is 100% because it is the only entry. Successful placement still depends on the conditions and available space.")
+
 ## Editor layout
 
 Select a category in the left panel and edit values on the right. The JSON path is a label identifying the current document. Use `Save As` to change its destination.
@@ -68,9 +70,11 @@ Chance values are relative to the other entries. A higher value makes that targe
 | Pig 1, cow 1 | 50% each |
 | Pig 10, cow 0 | Pig only |
 
-Set `Entities per attempt` to `3` to attempt up to three entities in one activation. Each entity is drawn independently, so repeats are possible. A 70:30 list does not guarantee two pigs and one cow. Placement failures and caps can reduce the number actually spawned.
+Set `Entities per activation` to `3` to attempt up to three entities in one activation. Each entity is drawn independently, so repeats are possible. A 70:30 list does not guarantee two pigs and one cow. Placement failures and caps can reduce the number actually spawned.
 
 `Maximum owned entities` limits the spawner's total owned population. `Total spawn limit` limits its cumulative creations; `0` means unlimited. Both caps cover the entire list, not each entry separately.
+
+![Appearance preview of the minecraft:spawner Block model.](assets/media/guides/spawn-control-014-neo1211/spawn-appearance.png "Spawn Control 0.1.4 / NeoForge 1.21.1. The right panel previews the spawner body, not the entity it will create. Model source, scale, rotation and vertical offset are separate from Spawn Target.")
 
 ## Appearance and preview
 

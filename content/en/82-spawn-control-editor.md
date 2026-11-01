@@ -21,6 +21,10 @@ This page describes **natural-spawn profiles**. For placed spawners, use the [Sp
 
 Spawn Control is an **authoring editor** for the server's active natural-spawn configuration. It is not a player-facing in-game screen. Changes remain in the current draft until you complete `Save` or a preset operation.
 
+![Spawn Control with Entity / Clone Catalog on the left, a target preview and Natural Spawn Rules in the middle, and Rule Inspector on the right.](assets/media/guides/spawn-control-014-neo1211/catalog.png "Spawn Control 0.1.4 on NeoForge 1.21.1. Select a target, add a rule with Add Rule, then edit its spawn conditions on the right.")
+
+Find the mob in the left search field. **Selected Target** shows its rules; **All Configured** includes other targets. If the right panel says “No rule is selected,” select a rule in the middle.
+
 ## Topbar
 
 | Action | Behavior |
@@ -37,7 +41,7 @@ Spawn Control is an **authoring editor** for the server's active natural-spawn c
 
 The catalog chooses the target for new rules.
 
-- Search registered mobs and saved CustomNPCs clones together.
+- Search registered mobs and supported saved NPC templates together. See [spawning saved NPCs](#dochi-spawn-control/spawn-control-npc-templates) for DNPC templates.
 - Search by ID, display name, or mod name.
 - Use `mod:<id>` or `support:<state>` queries.
 - Combine entity/clone source, support state, and installed-mod filters.

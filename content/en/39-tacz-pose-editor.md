@@ -21,16 +21,18 @@ tags:
 
 **Save & Apply** saves the default non-combat pose. Combat uses its own poses; afterward the NPC returns to its default.
 
-The pose editor currently supports Steve/Alex CustomNPCs player models.
+The editor supports player-model DNPCs and supported Steve/Alex CustomNPCs models. The screenshot below uses an actual DNPC target.
 
 ## Open the pose editor
 
 1. Hold `DW Pose Core` in Creative mode.
-2. Right-click a CustomNPCs NPC using a Steve or Alex model.
+2. Right-click a player-model DNPC or a Steve/Alex CustomNPCs NPC.
 3. Stay within 12 blocks and keep the core in either hand while editing.
 4. Edit the pose in `NPC Pose Editor`.
 
-Unsupported models, distant NPCs, and non-CustomNPCs entities cannot be edited.
+Unsupported models and distant targets cannot be edited. Start with a default player-model DNPC when checking the workflow.
+
+![Editing Body rotation axes on a DNPC opened with DW Pose Core.](assets/media/guides/warfare-031-neo1211/dw-pose-editor.png "DW 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1. Select Body on the left to show its X/Y/Z axes. Animation follows existing motion; Custom uses the chosen value. Save & Apply saves the profile and applies it to this NPC.")
 
 ## NPC preview and body parts
 
@@ -87,6 +89,8 @@ config/dochi_warfare/poses/
 You do not need to edit this JSON by hand. Its structure is reference material for creators who use external tools or version control.
 
 The 0.2.9 built-in library includes Low Ready, High Ready, and multiple combat, idle, walking, and moving-fire poses. Apply one, adjust only the needed axes and gun transform, then use `Save As` to create a user JSON without modifying the bundled values.
+
+![Pose category mapping standing, walking, aiming, firing and reloading.](assets/media/guides/warfare-031-neo1211/dw-pose.png "DW 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1. Choose Built-in, Inherit or another source for each action, then select the pose on its right.")
 
 ## Map poses to actions
 

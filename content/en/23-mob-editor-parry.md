@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -52,6 +52,8 @@ Projectile reflection is not universal support for every mod projectile. Do not 
 Global defaults enable magic parry and lock-on and disable hitbox debug.
 
 **Disable vanilla music** is an independent local audio preference. It suppresses vanilla music regardless of combat state and does not overwrite the music volume value. See [BGM setup](#mob-editor/battleworks-skills-effects).
+
+![Death settings and an empty death event schedule.](assets/media/guides/battleworks-016-neo1211/battleworks-death.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Enabled is off and Duration is 60 ticks in this capture. Enable it, set the desired length and add events with Add Death Event.")
 
 ## 5. Make a short death sequence
 

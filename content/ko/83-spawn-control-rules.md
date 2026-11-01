@@ -45,6 +45,8 @@ tags:
 
 스폰 후보는 이미 로드된 청크에서만 찾습니다. 설정 반경 안에 맞는 좌표가 있어도 청크가 로드되지 않았거나 월드 경계 밖이면 실패합니다.
 
+![Rule Inspector의 차원·바이옴·높이·조도·시간 조건.](assets/media/guides/spawn-control-014-neo1211/spawn-rule.png "Spawn Control 0.1.4 / NeoForge 1.21.1. DNPC 0.1.2. Dimensions와 Biomes의 Any는 해당 제한이 없다는 뜻입니다. Minimum Distance 24와 시간 0~23999도 확인합니다. 조건이 맞아도 꺼진 규칙은 작동하지 않습니다.")
+
 ## 스폰 확률과 무리
 
 | 필드 | 의미 |

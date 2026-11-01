@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -22,25 +22,27 @@ tags:
 
 ## 1. 일반 대기형 트리거 고르기
 
-패턴 선택 → **Core → Passive trigger**에서 다음 중 고릅니다.
+패턴을 고른 뒤 **Core → Identity → Trigger: Pattern manager**를 누릅니다. **Passive trigger** 화면에서 Trigger 목록을 열어 종류를 고릅니다.
 
 | 종류 | 시작 조건 |
 | --- | --- |
-| Manager | 일반 선택용 패턴 |
-| Health Below | 체력이 기준 위에서 기준 이하로 내려감. 처음 관찰할 때 이미 낮은 경우도 해당 |
+| Pattern manager | 일반 선택용 패턴 |
+| Health threshold | 체력이 기준 위에서 기준 이하로 내려감. 처음 관찰할 때 이미 낮은 경우도 해당 |
 | Melee Damage | 살아 있는 직접 공격자로부터 양의 피해를 받음 |
 | Ranged Damage | 살아 있는 소유자가 있는 투사체·간접 피해를 받음 |
 | Any Damage | 그 밖의 유효한 양의 피해도 포함 |
 
 여기서 설명하는 네 가지 기본 패시브는 현재 타임라인을 피해 콜백 안에서 즉시 끊는 방식이 아닙니다. 요청을 대기시키고 시작 가능한 시점에 처리합니다. 0.1.5의 별도 즉시 반응형 트리거는 아래에서 구분합니다.
 
+![Core의 Passive trigger에서 Health threshold를 고른 화면.](assets/media/guides/battleworks-016-neo1211/battleworks-passive-health.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 체력 50%, 발동 확률 100%, 재요청 간격 100틱, 대기 수명 200틱을 따로 설정합니다. 왼쪽 이름 앞 [Passive]로 일반 선택 패턴과 구분됩니다.")
+
 ## 2. 체력 50%에서 한 번 알리는 실습
 
 1. 새 패턴 이름을 “절반 체력 안내”로 정합니다.
-2. Passive trigger를 **Health Below**로 고릅니다.
+2. Passive trigger를 **Health threshold**로 고릅니다.
 3. 체력 퍼센트 입력을 `50`, Chance를 `100`으로 둡니다.
 4. **Once Per Combat**을 켭니다.
-5. Busy Policy는 **Queue**, Queue Ticks는 `200`, Trigger Cooldown은 `100`으로 둡니다.
+5. **When busy: Wait for completion**으로 대기를 허용하고, **Queue lifetime**은 `200`, **Trigger cooldown**은 `100`틱으로 둡니다.
 6. Windup `0`, Action `20`, Recovery `10`으로 정합니다.
 7. Action 0틱에 Title 액션을 넣고 “이제부터 진짜다!” 같은 짧은 문장을 입력합니다.
 8. 타이틀의 수신 대상을 현재 플레이어 타겟으로 설정합니다.

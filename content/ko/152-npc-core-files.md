@@ -7,13 +7,17 @@ product: dochi-npc-core
 category: NPC 파일·연동·변환
 section: operations
 status: 사용 안내
-version: 0.1.2
+version: 0.1.3
 audience: 제작자 / 서버 운영자
 ---
 
 ## NPC에게 대화나 상점 붙이기
 
 **DRM**을 설치하면 DNPC에 대화·상점 등을 붙일 수 있습니다. DRM 코어로 NPC를 우클릭해 **NPC Apply**에서 사용할 파일을 고릅니다.
+
+![NPC Apply에서 마을 안내 대화 village_guide를 적용한 화면. 오른쪽 APPLIED JSON에 Dialogue 연결 이름이 표시됩니다.](assets/media/guides/drm-031-neo1211/npc-apply-result.png "DRM 0.3.1 + DNPC 0.1.2 / NeoForge 1.21.1의 적용 예시입니다. 왼쪽 기능 → 가운데 파일 → 아래 Apply 순서로 진행하고 오른쪽 연결 결과를 확인합니다.")
+
+대화는 **Dialogue JSON → 파일 선택 → Apply Dialogue**, 상점은 **NPC Shop JSON → 파일 선택 → Apply Shop** 순서입니다. 에디터에서 파일을 저장한 것과 이 NPC에게 연결한 것은 다른 단계입니다. 적용을 끝낸 뒤 코어를 내려놓고 NPC에게 말을 걸어 확인합니다.
 
 [첫 대화 만들기](#core/quick-start) 또는 [Fabric·NeoForge 대화 만들기](#core-fabric/quick-start)를 따라 시작할 수 있습니다.
 

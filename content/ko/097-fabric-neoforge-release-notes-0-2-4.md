@@ -11,11 +11,17 @@ version: 0.2.4
 audience: 제작자 / 운영자
 ---
 
-이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.2.8](#core-fabric/release-notes-0-2-8)을 확인하세요.
+이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.3.1](#core-fabric/release-notes-0-3-1)을 확인하세요.
 
 :::note 이전 변경 기록
-이 페이지는 당시 릴리스 기록입니다. 현재 Core 설치 기준은 0.2.8입니다.
+이 페이지는 당시 릴리스 기록입니다. 현재 설치는 위 0.3.1 안내를 따릅니다.
 :::
+
+## 재입고 옵션 찾기
+
+NPC Shop의 Restock에서 Enable restock과 Timer basis를 정합니다. 먼저 Product에서 유한 재고와 최대 재고를 준비합니다. 화면의 24000틱은 예제 값이며 실제 서버에서 원하는 주기에 맞춰 정합니다. [현재 사용법](#core-fabric/shop-system)에서 저장과 적용까지 이어서 볼 수 있습니다.
+
+![재입고 옵션 찾기.](assets/media/guides/drm-031-neo1211/shop-restock.png "DRM 0.3.1 / NeoForge 1.21.1. 위 변경과 관련된 기능을 현재 배포본에서 연 화면입니다. 아래 릴리스 기록의 당시 UI와 구분합니다.")
 
 ## 공용 문서와 설치
 

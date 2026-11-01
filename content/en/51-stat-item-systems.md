@@ -16,7 +16,9 @@ tags:
 
 ## Stat Builder
 
-Stat sets are stored in `config/dochi_rpg_maker/stats/sets/`; `stats/active_set.json` selects the runtime set. Each stat can define an ID, name, description, item icon, min/max/default value, investment cost, and one or more vanilla/modded attribute effects.
+Create stats that players can invest in. Start with **Add**, name one stat and set its minimum, maximum and default value. Choose the investment cost **Provider** on the right: XP levels, a DRM currency or an item.
+
+Connect **Attribute** and **Base effect / Per point** to change actual health, attack or another attribute. Save, use **Set Active**, then open **Y** to check the allocation cost and result.
 
 Investment providers are Minecraft XP levels, a DRM currency, or an item. Cost progression uses base, step, and multiplier settings.
 
@@ -24,9 +26,11 @@ The player allocation screen opens with `Y` by default. `Allow Y key allocation 
 
 The bundled `default_stat_gui.json` uses a wide scrollable list on the left and separated value, cost, description, and increase controls on the right. Modify a copy in GUI Maker.
 
+![Stat Builder with Strength, point costs and attribute effects.](assets/media/guides/drm-031-forge1201/registry-stat_builder.png "DRM 0.3.1 / Forge 1.20.1. Choose the stat on the left, its limits in the middle and costs/effects on the right. Attribute: Not selected means no attribute effect is connected yet.")
+
 ## Item Editor
 
-Item definitions are stored in `config/dochi_rpg_maker/items/definitions/`; global categories, rarities, and tooltip formatting live in `items/editor_settings.json`.
+Choose the base **Item template** first. Set its name and description, use **Stat Rules** for requirements and equipped bonuses, and **Vanilla Attribute** for attribute effects. **Save As** your file, then use **Give Test Item** to inspect the result.
 
 An item definition can configure:
 
@@ -36,6 +40,8 @@ An item definition can configure:
 - vanilla/modded attribute modifiers and equipment slots;
 - per-point stat scaling;
 - tooltip section order and visibility.
+
+![Item Editor Item Definition with Tooltip Lines, Stat Rules and Vanilla Attribute tabs.](assets/media/guides/drm-031-forge1201/registry-item_editor.png "DRM 0.3.1 / Forge 1.20.1. Item template is currently Not selected. Choose the base item, configure its name, effects and requirements, save, then use Give Test Item.")
 
 ## Requirement Penalty
 
@@ -66,3 +72,11 @@ Use **Visual → Tooltip Maker** to design how item information is presented. Se
 Forge Item Editor lets an item select a `setId` and a tooltip template. Equipment sets live in `items/sets/` and define required equipped-piece counts, stat bonuses, and attribute modifiers by tier. Reusable tooltip templates live in `items/tooltip_templates/`.
 
 Keep the individual item, shared equipment set, and presentation template as separate documents. Check their stat-set references and test bonuses/tooltips while changing equipped pieces. This Forge feature is not a claim of identical implementation on other loaders.
+
+## Move saved files
+
+| Contents | Location |
+| --- | --- |
+| Stat sets / active set | `config/dochi_rpg_maker/stats/sets/` / `stats/active_set.json` |
+| Item definitions | `config/dochi_rpg_maker/items/definitions/` |
+| Shared categories, rarities and tooltip settings | `config/dochi_rpg_maker/items/editor_settings.json` |

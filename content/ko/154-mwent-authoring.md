@@ -7,7 +7,7 @@ product: mwent
 category: 운영과 제작
 section: authoring
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 제작자 / 서버 운영자
 ---
 
@@ -27,6 +27,16 @@ audience: 제작자 / 서버 운영자
 
 저장은 카드 정의를 등록하며 실물 카드나 소유 수량을 지급하지 않습니다. 기본 카드를 외형 변형으로 복제한 경우 원본과 소유 수량·복사 제한을 공유하고 전투 수치는 원본을 따릅니다. 진행 중인 경기는 시작할 때의 카드 내용을 유지합니다.
 
+### 카드 편집 화면 읽기
+
+아래는 **Minigames 0.1.5 / NeoForge 1.21.1**에서 내장 **Imperial Artisan**을 연 화면입니다. 내장 카드의 비활성 입력란을 그대로 수정하려 하지 말고 **Save As**로 사용자 카드부터 만듭니다.
+
+![Card Editor의 Basic 탭. 가운데 카드 미리보기, 오른쪽 이름·카드 종류·진영·설명과 왼쪽 사용자 카드 목록이 있습니다.](assets/media/guides/minigames-015-neo1211/minigames-card-basic.png "Basic은 이름과 카드 종류를 정합니다. Appearance는 모델·장비, Stats는 전력과 상태, Abilities는 실제 발동 능력을 다룹니다.")
+
+![Stats 탭의 기존 키워드 Salvage 1과 초기 카운터·타이머·특수 상태·Power 설정.](assets/media/guides/minigames-015-neo1211/minigames-card-stats.png "Stats는 전력만 바꾸는 탭이 아닙니다. 키워드와 초기 상태도 확인합니다. 이 내장 카드 예제는 Salvage 1을 가집니다.")
+
+![Abilities 탭에서 기존 카드 능력을 선택한 화면. Boost와 Amount 2가 표시됩니다.](assets/media/guides/minigames-015-neo1211/minigames-card-abilities.png "왼쪽에서 편집할 능력을 먼저 고릅니다. 예제의 Boost 2는 능력의 효과이며 카드 자체 Power 4와 다른 값입니다.")
+
 능력은 카드당 최대 12개이며 각 능력은 조건 8개·작동 8개를 지원합니다. 배치·명령·턴 종료·파괴·이동·회복·카드 사용 등의 사건을 연결합니다. 직접 대상 선택은 배치와 명령에 사용하고, 자동 발동에는 전체·무작위 대상 등을 사용합니다. 시나리오·장소·함정과 장 진행도 작성할 수 있습니다.
 
 ## 공성 모델과 선택 연동
@@ -38,6 +48,10 @@ DNPC 클론 외형은 선택 연동입니다. 기본 대체 엔티티를 함께 
 ## 카드팩 만들기
 
 카드팩 편집기는 고정 카드·가중치 풀·수량·마지막 선택 카드와 팩 외형을 설정합니다. 카드 풀에 넣은 카드가 플레이어에게 사용 가능한지 확인하세요. 팩의 표시와 개봉 결과는 서버가 관리합니다. 상인·상자 배포는 [획득 설정](#mwent/acquisition)에 연결합니다.
+
+![카드팩 편집기의 Volkar Muster Pack 예제. 왼쪽 카드 풀과 Weight, 위쪽 개봉 방식과 보장 카드 수, 오른쪽 카드 상세가 보입니다.](assets/media/guides/minigames-015-neo1211/minigames-card-packs.png "Weight는 풀 안에서 뽑힐 상대 비율입니다. 카드 개수는 Guaranteed cards, 마지막 선택지는 Choice options처럼 별도 설정을 읽습니다.")
+
+상단 **Get saved pack**은 저장한 팩을 받을 때 사용합니다. 먼저 자신의 팩을 저장하고, 받은 실물을 개봉해 보장 수량과 선택 과정이 의도대로 나오는지 확인합니다.
 
 ## 저장 위치 참고
 

@@ -25,6 +25,8 @@ DWE **adds vehicle features to DW**. Move supported SuperbWarfare vehicles, use 
 
 DW's TACZ and Player Animator requirements still apply. See [DW setup](#dochi-warfare/warfare-setup).
 
+![DWE vehicle Overview opened for an actual M1A2.](assets/media/guides/warfare-expanded-031-neo1211/dwe-ai.png "DWE/DW 0.3.1, SuperbWarfare 0.8.9.1, NeoForge 1.21.1. Use AI, Targets, Weapons, Gimmicks and Crew on the left; AI enabled at the upper right controls activation. This example is OFF.")
+
 ## Set up the first vehicle
 
 1. Place a supported vehicle.

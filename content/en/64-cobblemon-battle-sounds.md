@@ -24,6 +24,8 @@ tags:
 - They work independently of DRM Strategy, RCT, or Cobblemon Strong AI.
 - They apply to Trainer battles, not Pokemon Itself encounters.
 
+![Battle sounds with remaining-Pokémon count and Global selection.](assets/media/guides/cobble-029-neo1211/cobble-sounds.png "Battle Config → Battle sounds. To change music at one remaining Pokémon, select 1, enable Play at this count and choose Sound ID. Apply, then save the parent document. 0.2.9 / NeoForge 1.21.1.")
+
 ## Authoring workflow
 
 1. Open a Trainer document in `Cobblemon Editor`.

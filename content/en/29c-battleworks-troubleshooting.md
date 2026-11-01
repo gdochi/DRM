@@ -7,22 +7,25 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
   - combat
 ---
 
-## Check these five things first
 
-1. Verify BattleWorks 0.1.5, DRM 0.1.7 or newer, and compatible CustomNPCs are loaded.
-2. Confirm the NPC references the file you edited.
-3. Check document and pattern Enabled.
-4. Test with a Survival player and a valid hostile target.
-5. Read validation errors and the server's logs/latest.log.
+## First checks
 
-Then follow the section matching one symptom.
+1. Match Minecraft, loader, BattleWorks and DRM files.
+2. Follow [NPC preparation](#mob-editor/mob-editor-setup) for the current DNPC exercise. CustomNPCs is excluded on 26.3 and later.
+3. Confirm that the saved path is the path bound to the NPC.
+4. Separate Creative authoring from Survival combat tests.
+5. Verify the basic arm swing and Hitbox before adding external models or skills.
+
+![Combat settings used for the actual save/apply test.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. Scan Range 16, FOV 360 and Saved. Warnings: 0 were checked before verifying Survival health loss. Treat saving and model-preview warnings separately.")
+
+In this combination the basic swing caused real damage, while preview model/animation warnings and a Simulation window that did not open were also observed. Compare the [verified first-attack file](#mob-editor/battleworks-first-attack) and actual combat before discarding the NPC binding because of a preview issue.
 
 ## The file is missing from the list
 

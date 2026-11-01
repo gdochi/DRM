@@ -7,7 +7,7 @@ product: mwent
 category: Getting started
 section: play
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Players / server operators
 ---
 
@@ -17,11 +17,13 @@ audience: Players / server operators
 
 MWENT is **included in Dochi`s Minigames**. This dedicated documentation does not represent a separate mod download. Its first public Minigames release was **0.1.1**. Choose the correct Minecraft and loader file using the [Minigames setup guide](#dochi-minigames/minigames-setup).
 
+![MWENT battle with ten hand cards, front/back rows, scores and the pass control.](assets/media/guides/minigames-015-neo1211/mwent-battle.png "Minigames 0.1.5 / NeoForge 1.21.1, English UI. Scores and round markers are left, your hand is below, and decks, graveyards and Pass round are right. Each side has two rows of nine sockets.")
+
 ## Installation and documentation baseline
 
 Install matching Minigames builds on the server and client. Basic battles, tables and lessons work without DRM. Install platform requirements such as Fabric API separately. DRM adds NPC, dialogue and currency integrations. Optional-mod cards require their provider and actual assets. Minecraft 26.3 uses Java 25 and excludes CustomNPCs.
 
-This guide explains 0.1.5 gameplay. See the [release history](#mwent/releases) for earlier card changes.
+This guide explains 0.1.6 gameplay. See the [release history](#mwent/releases) for earlier card changes.
 
 ## Learn by Playing
 

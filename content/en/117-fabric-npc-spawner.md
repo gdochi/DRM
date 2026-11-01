@@ -17,9 +17,9 @@ tags:
 
 ## Which spawner is this?
 
-This is **DRM Core's NPC Spawner**, using CustomNPCs clones and Filled Soul Stones on the older 1.21.1 targets.
+This is **DRM Core's NPC Spawner**, using Core-format NPC clones readable by its Source list. Cobblemon Editor's Clone Library also connects role-configured DNPCs to this workflow. Importing CustomNPCs Filled Soul Stones on older 1.21.1 targets is a separate provider path.
 
-For DNPC, use [Spawn Control's NPC-template spawner](#dochi-spawn-control/spawn-control-npc-templates). Core and Spawn Control spawners are separate tools.
+Starting with DNPC's own Save As template? Use [Spawn Control's NPC-template spawner](#dochi-spawn-control/spawn-control-npc-templates). For Cobblemon-role clones, follow [Clone Library](#drm-cobblemon-editor/cobblemon-clone-library-spawner). Match the template format to its spawner.
 
 ## Place and open the block
 
@@ -40,12 +40,16 @@ A new choice is made for each attempt. **Max Active** caps living NPCs from the 
 
 ## Choose when it runs
 
+![Core spawner Spawn settings.](assets/media/guides/drm-031-neo1211/core-npc-spawner-rules.png "DRM 0.3.1 / NeoForge 1.21.1, English UI. Mode selects the trigger, Cooldown the tick interval, Max active the living cap and Wave size the per-attempt count. Assigned sources is zero in this instance: this verifies the settings screen, not successful NPC spawning.")
+
 | Mode | Behavior |
 | --- | --- |
 | continuous | Attempts at intervals |
 | target_nearby | Attempts while a target is nearby |
 | target_enter | Attempts when a target enters |
 | redstone_pulse | Attempts on a redstone pulse |
+
+For example, Cooldown 200 is about ten seconds between attempts; Max active 1 prevents additional spawning while one remains alive; Wave size 1 attempts one NPC per activation.
 
 Cooldown is 20–72,000 ticks. Active cap and wave size are each 1–32. Target radius is up to 64 blocks; spawn radius is up to 32.
 

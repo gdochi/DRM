@@ -14,59 +14,52 @@ tags:
   - combat
 ---
 
-BattleWorks **0.1.6** requires DRM. Current JARs declare DRM 0.2.8+ on Forge 1.20.1 and 0.2.9+ on Fabric / NeoForge 1.21.1. CustomNPCs is optional metadata, but **this Forge exercise uses CustomNPCs NPCs**. See [0.1.6 setup](#mob-editor/battleworks-update-0-1-6) for separate Java 25 / 26.3 DNPC builds and platform requirements.
+## 1. Prepare the practice installation
 
-## 1. Prepare a matching installation
+This is the combination used for the captured screens and first-attack test. Install **BattleWorks, DRM and an NPC mod**. For other Minecraft/loader files, see [installation choices](#mob-editor/battleworks-update-0-1-6).
 
-| Component | This guide |
+| Component | This exercise |
 | --- | --- |
-| Minecraft | Java Edition 1.20.1 |
-| Loader | Forge 47 series for Minecraft 1.20.1 |
-| Java | 17 |
+| Minecraft / loader | 1.21.1 / NeoForge |
+| Java | 21 |
 | BattleWorks | 0.1.6 |
-| Dochi RPG Maker / DRM | Forge 1.20.1, 0.2.8 or newer; required |
-| CustomNPCs | Compatible Forge 1.20.1 build; used by this exercise |
+| DRM | 0.3.1 |
+| NPC | DNPC 0.1.3 |
 
-1. Put the required mods and their dependencies in the selected instance's mods folder.
-2. Check that an older BattleWorks or Mob Editor JAR is not installed alongside the new one. The current mod ID is `dochi_battleworks`.
-3. Launch and verify that the mods loaded.
-4. On multiplayer servers, match BattleWorks and DRM on server and clients. Install the providers and resources needed by the encounter too.
+Install their matching dependencies in the same instance. This table records a tested combination; check the selected files' Minecraft, loader and requirements before replacing an existing compatible installation. Match server and client installations too.
 
-This guide targets the Forge source. Do not infer the requirements of a separate NeoForge build from this table.
+Supported CustomNPCs actors are also available on Forge 1.20.1 and Fabric/NeoForge 1.21.1. **Use the DNPC workflow on 26.3 and later**; CustomNPCs is excluded there.
 
-## 2. Add optional integrations when needed
+## 2. Create a practice DNPC
 
-| Feature | Additional preparation |
+1. Follow [creating a DNPC](#dochi-npc-core/npc-core-setup) in Creative to place one NPC.
+2. Give it a recognizable name and start with a normal player model.
+3. Prepare flat ground without other NPCs or mobs nearby.
+4. This exercise uses BattleWorks **Scan Without Target** to find the player. Avoid assigning work or another combat controller to the same NPC during the exercise.
+5. Author in Creative and test attacks in Survival.
+
+![Preparing the actor in DNPC's Identity screen.](assets/media/guides/dnpc-013-neo1211/dnpc-identity.png "DNPC 0.1.3 / NeoForge 1.21.1. The BattleWorks file will be attached to this actor. Appearance and equipment are separate from BattleWorks damage and hitboxes.")
+
+A held sword helps communicate the attack. The exercise sets damage in the BattleWorks Hitbox rather than relying on the item's attack damage. Raising NPC health can wait until the boss exercise.
+
+## 3. Open BattleWorks for the NPC
+
+Select the practice NPC with the DRM Core and open its BattleWorks editor. Load an existing combat file or choose **Create New**, then continue with [your first melee attack](#mob-editor/battleworks-first-attack).
+
+The NPC's file-application category is **Battlework JSON**. If you started authoring without an NPC, save the file, select it in that NPC's catalog and press **Apply Battlework**. For another model, configure DNPC appearance and its [animation connection](#mob-editor/battleworks-animation) first.
+
+## 4. Add integrations when the feature needs them
+
+| Goal | Additional preparation |
 | --- | --- |
-| Basic humanoid swing and physical hitbox | Start with the required installation above. |
-| Better Combat weapon motion | Compatible Better Combat, dependencies, and supported weapon |
-| Gecko model clips | DRM NPC Basic model, texture, animation file, and provider |
-| Player Animator motion | Compatible provider and real clips |
-| Iron's Spellbooks, Cataclysm, Mowzie skills | Provider mod, dependencies, and a skill exposed in the installed catalog |
-| Custom sounds and textures | The mod or resource pack supplying the real IDs |
+| Basic arm swing and hitbox | Start with the tested installation above |
+| Better Combat motion | Compatible Better Combat, the motion and a supported weapon |
+| Gecko clips | Model, texture and animation assets plus their provider |
+| Player Animator clips | Compatible provider and actual clips |
+| Other mods' spells/skills | The mod, dependencies and registered skill |
+| Custom sounds/textures | A mod or resource pack providing their IDs |
 
-The [first attack](#mob-editor/battleworks-first-attack) uses no optional magic or animation provider.
-
-## 3. Prepare a practice NPC
-
-1. In Creative mode, create a normal humanoid CustomNPC.
-2. Give it a recognizable name and approximately 100 maximum health for testing.
-3. Equip a sword. BattleWorks hitbox damage will be configured separately.
-4. Configure CustomNPCs factions and targeting so a Survival player is hostile.
-5. Use a flat practice area without other NPCs or villagers.
-
-Completion check: you can find the NPC and confirm its stats, equipment, and hostile-target settings.
-
-## 4. Open the editor with that NPC selected
-
-1. Find DRM's **Dochi RPG Maker Core** item in the Creative inventory.
-2. Right-click the practice NPC with Core.
-3. Select **BattleWorks** and confirm the intended target.
-4. If changing the model, configure it in **NPC Basic** before choosing combat clips.
-
-Using Core in the air also allows file authoring without an NPC. Saving from that detached editor does not automatically select a world NPC. Particle Maker can be used independently too.
-
-Author in Creative mode. Close the editor and use Survival mode for combat: Creative and Spectator players are excluded as combat targets.
+Verify the basic attack first, then add motions or skills so file-application failures remain easy to distinguish from missing external assets.
 
 ## 5. Understand Save, Save As, Load, and Apply
 

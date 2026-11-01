@@ -11,11 +11,17 @@ version: 0.2.5
 audience: Creators / operators
 ---
 
-This is a historical release record. See [DRM 0.2.8](#core-fabric/release-notes-0-2-8) for current guidance.
+This is a historical release record. See [DRM 0.3.1](#core-fabric/release-notes-0-3-1) for current guidance.
 
-## Current installation
+## Return through Favorites
 
-DRM Core for Minecraft 1.21.1 / Java 21 is now **0.2.5** on Fabric and NeoForge. Both use the shared documentation; choose matching-loader JARs and dependencies. See [installation](#core-fabric/installation).
+Click the star beside an editor and find it under Favorites. Favorites helps you reopen tools; applying a conversation or shop to an NPC is a separate step. Continue with the [current guide](#core-fabric/quick-start) for saving and applying it.
+
+![Return through Favorites.](assets/media/guides/drm-031-neo1211/editor-selector.png "DRM 0.3.1 / NeoForge 1.21.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
+
+## Installation at this release
+
+DRM Core for Minecraft 1.21.1 / Java 21 was **0.2.5** on Fabric and NeoForge. Both use the shared documentation; choose matching-loader JARs and dependencies. See [installation](#core-fabric/installation).
 
 ## Favorites and textures
 

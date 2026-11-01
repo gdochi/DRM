@@ -6,7 +6,7 @@ description: Save and load policy, storage paths, target conflicts, sharing, and
 product: dochi-spawn-control
 category: Presets and Operations
 section: operations
-status: Draft
+status: Guide
 version: 0.1.4
 audience: Server operators and content distributors
 tags:
@@ -27,6 +27,18 @@ The following table describes the **natural-spawn editor**. Placed-spawner savin
 | `Create New` | Start an empty set draft without changing the active server configuration until save |
 
 A target preset excludes global scheduler budgets. This allows one mob's rules to move between servers without replacing the destination server's operating budget.
+
+## Move only the cow rules to another server
+
+Find `minecraft:cow` in the natural-spawn catalog and use **Add Rule**. Finish its conditions, then press **Save As** to choose the scope.
+
+![The Save As scope picker offers Complete Set and Current Target Preset.](assets/media/guides/spawn-control-014-neo1211/spawn-preset-scope.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Complete Set moves the server configuration; Current Target Preset moves only rules for the selected cow target.")
+
+Choose **Current Target Preset**, enter **Display Name** `Meadow Cows` and **Stable ID** `meadow_cows`, then press **Save As**. The response `Target preset saved. The active set was not changed.` confirms saving. **This operation does not change the server's active rules.** Return to the editor and use the top **Save** to activate the draft here too.
+
+![Successful save of the meadow_cows target preset.](assets/media/guides/spawn-control-014-neo1211/spawn-target-preset-saved.png "Spawn Control 0.1.4 / NeoForge 1.21.1. The actual targets/meadow_cows.json file was checked. Display Name labels the list; Stable ID identifies the file.")
+
+Put the file in the destination server's `targets/`, then select it under **Load → Target Presets**. Use the conflict policy below to replace the existing cow rules or keep them.
 
 ## Storage paths
 

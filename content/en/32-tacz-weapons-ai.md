@@ -15,6 +15,16 @@ tags:
   - ai
 ---
 
+## Choose a gun, then its combat behavior
+
+Put the intended firearm in the **player inventory** first. In **Gun**, click its icon to add it to the lower weapon list and the NPC preview on the right. Screens use **DW 0.3.1, DNPC 0.1.3 and NeoForge 1.21.1**.
+
+![M4A1 selected from player inventory; the single weapon entry has 100% probability.](assets/media/guides/warfare-031-neo1211/dw-gun.png "This shows weapon selection and preview. Save to the NPC before testing actual fire. Multiple weapon candidates must total 100%.")
+
+![Senses showing Stance Mode, Awareness and Combat Mode.](assets/media/guides/warfare-031-neo1211/dw-senses.png "Quick View on the right navigates the long Senses page. Awareness controls acquisition; Combat Mode controls ranged/melee behavior.")
+
+![Senses Fire Modes, Suppressive Fire and Tactical Behavior.](assets/media/guides/warfare-031-neo1211/dw-fire.png "There is no separate Fire tab. Use Senses → Quick View → Fire Modes. Find rate and accuracy under Fire Rate in the same list.")
+
 ## Stance modes
 
 `Stance` decides which combat form the managed NPC should use.

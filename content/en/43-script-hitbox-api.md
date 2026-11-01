@@ -16,6 +16,12 @@ tags:
   - combat
 ---
 
+## See where a one-shot attack hits
+
+Check the shape particles separately from actual damage. This example gives a single cow to a sphere centered on the player, radius six, and applies six damage once. Even with the same cow listed twice, the hit count is one and health changes from 20 to 14. For screen-based pattern authoring, start with [BattleWorks first attack](#mob-editor/battleworks-first-attack).
+
+![Actual see where a one-shot attack hits result.](assets/media/guides/drm-031-forge1201-apis/api-hitbox-one-shot.png "DRM 0.3.1 / Forge 1.20.1. Compare white debug particles, matched=1 / damaged=1 in chat and cow health 20→14. This is a one-shot server test against a prepared cow.")
+
 ## Getting Started
 
 `drmHitbox` is a server-authoritative attack-volume API that evaluates once when called. Pass an attacker and candidate targets; targets whose entity bounds intersect the requested shape receive damage.

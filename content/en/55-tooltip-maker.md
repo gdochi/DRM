@@ -38,29 +38,32 @@ You can temporarily place elements around the canvas while arranging them. **An 
 ## Item preview controls
 
 | Control | Use |
-| --- | --- |
-| Item presentation | Choose a still or spinning item, armor stand, player model, or no item model. |
-| Model view | Choose a 3D model or a 2D inventory icon for the item presentation. |
-| Item size / Model scale | Adjust how large the item appears within its allotted box. |
-| Spin speed | Change rotation speed and direction. |
-| Rotation X / Y / Z | Adjust the viewing angle. |
-| Sprite slot frame | Show or hide the slot background. Its size follows the item box. |
-| Item entrance | Choose how the item appears. Use the play button beside it to replay the entrance. |
+| --- | ---
 
-Armor stand and player presentations are for equipment that can be worn in a supported equipment slot. Ordinary blocks, materials, and other non-wearable items display as the item itself. Blocks that can actually be worn on the head still follow their equipment behavior.
+## What Tooltip Maker does
 
-3D previews are fitted around the model's own center before rotation. DRM improves the fit of modded weapons, including models with extra empty texture space. TaCZ previews keep the gun's item details and installed attachments. Select 2D explicitly if you want an inventory icon.
+Tooltip Maker designs the panel shown when a player hovers over an item. Arrange where its name, information and item preview appear.
 
-The editor's sample item is a layout aid. The live tooltip uses the actual hovered item, including its saved item data.
+Open the editor selector with the **Dochi RPG Maker Core**, choose **Tooltip Maker**, then load a tooltip layout or create one. Bundled defaults are protected templates, so use `Save As` before customizing them.
 
-## Text, images, and entrance effects
+Tooltip layouts are stored in `config/dochi_rpg_maker/gui/`. The bundled starting layout is `default_tooltip_gui.json`.
 
-Use text, paired values, stat sections, and dividers to organize the information. Images and cropped texture regions can decorate the layout. Text size and section spacing can be adjusted independently of item size.
+![Tooltip Maker's default layout, with item icon, name and information areas in the middle and canvas and element dimensions on the right.](assets/media/guides/drm-031-forge1201/tooltip-maker.png "DRM 0.3.1 / Forge 1.20.1. The black panel is the tooltip. The surrounding blue workspace is outside its output canvas.")
 
-Entrance settings control how the tooltip's surface, frame, text, and item appear. The play button restarts the preview once each time you press it; it does not switch the tooltip into endless playback.
+1. Select an element in the middle. The sword icon, a **Rendered Item**, is selected here.
+2. Change its **X / Y** position and **W / H** dimensions on the right. Set the whole tooltip's size with **Tooltip W / H → Apply** above.
+3. Add displays with **+ Tooltip Text**, **+ Divider**, **+ Rendered Item** or the other tools on the left.
+4. Check **Preview**, then **Save As** your layout. Use **Use Globally** when selecting it as the layout for all items.
 
-## Long tooltips and other screens
+Configure an item's actual stats and description in Item Editor. Tooltip Maker arranges how that information is presented.
 
-When a live tooltip is too tall for the screen, use its mouse wheel or scrollbar to read the rest. The frame stays in place while the contents scroll. Very wide tooltips are scaled to fit the screen.
+## Main controls
 
-Creative inventory items can use the custom item tooltip. Creative tab names and ordinary button hints do not receive that item layout.
+- Set the canvas size and arrange text, values, dividers, images, and the item preview.
+- Choose a 2D icon or fitted 3D item model and adjust scale, rotation, and spin.
+- Configure surface, frame, text, and item entrance effects, then replay them in the editor.
+- Keep elements fully inside the output canvas if they must be included when saving.
+
+The runtime tooltip uses the actual hovered item and its item data. If the result is taller than the screen, players can scroll its content while the outer frame stays in place.
+
+Creative inventory items can use the custom item tooltip. Ordinary button hints and editor hover-help cards use their own rendering and are not replaced by Tooltip Maker.

@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -27,6 +27,8 @@ Select a pattern in the left list, choose Windup / Action / Recovery, then selec
 | Pattern Build Assist | Generate a physical attack from answers |
 | Pattern Graph | Inspect pattern and combo links |
 | Simulation | Rehearse motion and hitbox placement |
+
+![Pattern Workbench after generating one attack.](assets/media/guides/battleworks-016-neo1211/battleworks-assist-built.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Wide Sweep is selected on the left. The middle shows stages and timing; the right is the selected item inspector. Select an action row to edit that action.")
 
 ## 1. Select a pattern
 

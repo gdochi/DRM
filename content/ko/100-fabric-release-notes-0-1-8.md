@@ -14,9 +14,15 @@ tags:
   - changelog
 ---
 
-이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.2.8](#core-fabric/release-notes-0-2-8)을 확인하세요.
+이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.3.1](#core-fabric/release-notes-0-3-1)을 확인하세요.
 
 0.1.8은 0.1.7의 대화·상점·텔레포터·NPC Spawner 제작 도구 위에 퀘스트, 팩션, 팝업, 관리자 도구와 확장된 에셋·NPC 연출 기능을 더한 대규모 업데이트입니다.
+
+## 목표와 보상을 만드는 곳
+
+Quest Editor에서 Category와 Quest를 추가하고 Info·Objectives·Rewards 순서로 내용을 채웁니다. 플레이어가 보는 저널은 별도 화면입니다. 아래는 현재 NeoForge 제작 화면으로, 당시 Fabric의 모든 완료 규칙을 보여 주는 자료는 아닙니다. [현재 사용법](#core-fabric/quest-system)에서 저장과 적용까지 이어서 볼 수 있습니다.
+
+![목표와 보상을 만드는 곳.](assets/media/guides/drm-031-neo1211/quest-info.png "DRM 0.3.1 / NeoForge 1.21.1. 위 변경과 관련된 기능을 현재 배포본에서 연 화면입니다. 아래 릴리스 기록의 당시 UI와 구분합니다.")
 
 ## 한눈에 보는 새 기능
 

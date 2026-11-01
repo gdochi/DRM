@@ -11,6 +11,15 @@ version: 0.2.8
 audience: 제작자 / 서버 운영자
 ---
 
+이 페이지는 **이전 버전의 변경 기록**입니다. 현재 설치와 사용법은 [DRM 0.3.1](#core/release-notes-0-3-1)을 따릅니다. 아래 현재 화면 예시는 과거 버전의 촬영 화면과 구분합니다.
+
+
+## 선택한 행과 체크한 행 구분하기
+
+Choices의 파란 행은 오른쪽에서 편집할 선택지입니다. 행 왼쪽 체크는 여러 항목을 묶어 처리할 때 사용합니다. 선택지 안의 Choice actions도 편집할 액션을 따로 고릅니다. [현재 사용법](#core/dialogue-system)에서 저장과 적용까지 이어서 볼 수 있습니다.
+
+![선택한 행과 체크한 행 구분하기.](assets/media/guides/drm-031-forge1201/dialogue-reward-template-actions.png "DRM 0.3.1 / Forge 1.20.1. 위 변경과 관련된 기능을 현재 배포본에서 연 화면입니다. 아래 릴리스 기록의 당시 UI와 구분합니다.")
+
 ## 설치 기준
 
 DRM **0.2.8**은 Forge 1.20.1 / Java 17, Fabric·NeoForge 1.21.1 / Java 21을 제공합니다. 서버와 모든 클라이언트의 로더·빌드를 맞추세요. [Modrinth 배포 파일](https://modrinth.com/mod/drm/versions)에서 Minecraft 버전과 로더를 함께 선택합니다.

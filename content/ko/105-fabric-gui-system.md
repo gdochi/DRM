@@ -25,6 +25,10 @@ tags:
 
 GUI Maker의 예시 상품이나 대사는 배치를 돕는 미리보기입니다. 실제 대사는 Dialogue Editor, 상품·가격은 NPC Shop에서 정합니다.
 
+![DRM GUI Maker. 왼쪽 Tools, 가운데 Canvas, 오른쪽 Inspector에 선택한 요소의 위치와 크기가 표시됩니다.](assets/media/guides/drm-031-neo1211/gui-maker.png "DRM 0.3.1 / NeoForge 1.21.1의 편집 화면입니다. 왼쪽에서 요소를 추가하고 가운데에서 고른 뒤 오른쪽 Inspector에서 바꿉니다.")
+
+기본 대화 화면에는 대사와 선택지 영역이 준비되어 있습니다. 처음에는 이 영역을 유지하고, 바꾸고 싶은 요소만 캔버스에서 고르세요. 오른쪽 **X / Y**는 위치, **W / H**는 가로·세로 크기, **Layer #**는 겹쳐 그릴 순서입니다. 위쪽 **Preview**로 결과를 확인합니다.
+
 ## 어떤 요소를 넣으면 되나요?
 
 | 화면에 넣을 것 | 요소 |
@@ -45,8 +49,12 @@ GUI Maker의 예시 상품이나 대사는 배치를 돕는 미리보기입니�
 
 대화 화면에 **Text**를 추가하고 **Content / 표시 내용**을 고릅니다.
 
+![GUI Maker에서 + Text로 추가한 글자 상자를 선택한 화면. Inspector에 Content, Direct input, Text와 Translation Key 설정이 보입니다.](assets/media/guides/drm-031-neo1211/gui-text.png "왼쪽 + Text로 별도 글자 상자를 추가합니다. 오른쪽 Content에서 고정 문구를 쓸지 NPC 이름을 보여 줄지 정합니다.")
+
 - **Direct input / 직접 입력:** ‘대장간’처럼 늘 보여 줄 문구를 입력합니다.
 - **NPC name / NPC 이름:** 현재 대화 중인 NPC의 이름을 보여 줍니다.
+
+직접 문구를 쓸 때는 아래 **Text** 칸에 입력하고, 옆 버튼이 **Translation Key**라면 **Literal Text**로 바꿉니다. Translation Key는 언어 파일에 등록한 번역 이름을 사용할 때 고릅니다.
 
 상자는 여러 개 넣을 수 있습니다. 하나는 이름, 다른 하나는 안내 문구로 쓰고 각각 위치·크기·배경·테두리를 정하세요.
 

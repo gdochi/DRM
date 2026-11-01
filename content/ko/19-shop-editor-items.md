@@ -2,7 +2,7 @@
 title: 상품과 매입 목록
 slug: shop-editor-items
 order: 81
-description: NPC Shop에서 구매 상품과 매입 상품을 구성하는 필드와 버튼 기준입니다.
+description: 빵 세 개를 에메랄드 네 개에 파는 상품을 만들고 결제·재고·재입고를 맞춥니다.
 product: core
 category: NPC Shop
 section: npc-shop
@@ -14,96 +14,70 @@ tags:
   - items
 ---
 
-## 구매 목록과 판매 목록
+## NPC가 팔 것과 사들일 것 나누기
 
-이 문서에서 설명하는 목록은 제작자가 NPC Shop 에디터에서 편집하는 상품 목록입니다. 플레이어가 인게임 상점 게임에서 보는 상품 행은 이 에디터 목록을 바탕으로 표시되지만, 그 화면 배치는 GUI Maker의 `npc_shop` GUI가 담당합니다.
+**NPC Shop** 위쪽의 **Buy items**는 플레이어가 살 상품, **Sell items**는 플레이어가 NPC에게 팔 아이템입니다. 먼저 [상점 시작 안내](#core/shop-system)에서 기본 상점을 열어 두세요. 아래 화면은 DRM 0.3.1 / Forge 1.20.1입니다.
 
-NPC Shop 에디터 화면에는 구매 목록과 판매 목록을 전환하는 `List: Buy` / `List: Sell` 버튼이 있습니다.
-
-| 모드 | 편집하는 배열 | 의미 |
+| 만들 거래 | 고를 목록 | 한 번 거래하면 |
 | --- | --- | --- |
-| `List: Buy` | `items` | NPC가 플레이어에게 판매하는 상품입니다. |
-| `List: Sell` | `sellItems` | NPC가 플레이어에게서 매입하는 아이템입니다. |
+| NPC가 빵을 판매 | Buy items | 플레이어가 돈을 내고 빵을 받음 |
+| NPC가 밀을 매입 | Sell items | 플레이어가 밀을 내고 보상을 받음 |
 
-상점의 `tradeMode`가 `buy_only`이면 구매 목록만 의미가 있고, `sell_only`이면 매입 목록이 중심이 됩니다. `buy_sell`은 둘 다 사용합니다.
+상점의 거래 모드에서도 구매·판매를 허용해야 해당 목록을 쓸 수 있습니다. 상품만 추가하고 상점 모드를 구매 전용으로 두면 매입 기능은 열리지 않습니다.
 
-## 상품 행 버튼
+## 빵 세 개짜리 상품 만들기
 
-| 버튼 | 기능 |
-| --- | --- |
-| `Add` | 현재 목록에 새 상품 행을 추가합니다. |
-| `Delete` | 선택한 상품 행을 삭제합니다. |
-| `Duplicate` | 선택한 상품 행을 복제합니다. |
-| 위/아래 이동 | 목록 순서를 바꿉니다. |
-| `Item` 선택 | Minecraft 아이템 ID를 고릅니다. |
+![Buy items의 Bread를 선택한 Product 탭.](assets/media/guides/drm-031-forge1201/shop-bread-product.png "Item은 minecraft:bread, Quantity는 3, Stock과 Maximum stock은 12입니다. Quantity는 지급할 빵 개수이고 Stock은 이 묶음을 구매할 수 있는 횟수입니다.")
 
-구매 상품과 매입 상품은 비슷해 보이지만 저장 필드가 다릅니다. 구매 상품은 `stock`을 쓰고, 매입 상품은 `stock`을 쓰지 않습니다.
+1. **Buy items**에서 **Add**로 행을 추가하거나 기본 **Bread**를 선택합니다.
+2. **Product → Item**에서 빵을 고릅니다.
+3. **Name**은 플레이어에게 보일 상품명으로 정합니다.
+4. **Quantity**를 `3`으로 둡니다. 한 번 결제하면 빵 세 개를 받습니다.
+5. **Stock**을 `12`, **Maximum stock**을 `12`로 두면 처음에는 열두 번 구매할 수 있습니다.
+6. **Description**에 필요한 설명을 넣습니다. 지급 아이템 자체의 이름·효과와 상점 설명은 별개입니다.
 
-## 구매 상품 필드
+같은 상품을 변형하려면 **Duplicate**, 필요 없는 행은 **Delete**를 사용합니다. 특수 아이템은 Item 선택과 NBT를 함께 확인하세요. 일반 빵을 만드는 예제에서는 NBT를 비워 둡니다.
 
-| 필드 | 설명 |
-| --- | --- |
-| `productId` | 상품 행 고유 ID입니다. |
-| `name` | 상품 표시 이름입니다. |
-| `item` | 플레이어에게 지급할 아이템 ID입니다. |
-| `count` | 한 번 구매할 때 받는 수량입니다. |
-| `price` | 한 번 구매할 때 내는 가격입니다. |
-| `stock` | 남은 재고입니다. `-1`은 무제한입니다. |
-| `maxStock` | 재입고 후 도달할 최대 재고입니다. |
-| `restock.enabled` | 자동 재입고 사용 여부입니다. 유한 재고에서만 사용합니다. |
-| `restock.amount` | 한 번에 회복할 재고 수입니다. |
-| `restock.intervalTicks` | 재입고 간격입니다. 24000틱은 게임 내 하루입니다. |
-| `restock.nextGameTime` | 서버가 관리하는 다음 재입고 게임 시각입니다. |
-| `currencyType` | `inherit`, `item`, `currency` 중 상품별 결제 모드입니다. |
-| `currencyItem` / `currencyItemNbt` | 상품별 아이템 결제 ID와 정확한 NBT 조건입니다. |
-| `currencyId` | 상품별 DRM 화폐 ID입니다. |
-| `action` | 구매 성공 후 실행할 명령형 문자열입니다. |
-| `nbt` | 지급 아이템에 붙일 NBT 문자열입니다. |
-| `descriptionKey` / `description` | 설명 패널에 보여줄 내용입니다. |
+## 한 묶음의 가격 정하기
 
-## 매입 상품 필드
+![Bread의 Payment 탭과 에메랄드 결제 표시.](assets/media/guides/drm-031-forge1201/shop-bread-payment.png "Price 4는 Quantity 3 전체의 가격입니다. 아래 item:minecraft:emerald가 현재 결제 수단을 보여 줍니다.")
 
-| 필드 | 설명 |
-| --- | --- |
-| `productId` | 매입 행 고유 ID입니다. |
-| `name` | 매입 항목 표시 이름입니다. |
-| `item` | 플레이어에게서 받을 아이템 ID입니다. |
-| `count` | 한 번 판매할 때 필요한 단위 수량입니다. |
-| `price` | 단위 판매 보상입니다. |
-| `nbt` | 특정 NBT가 붙은 아이템만 받으려면 사용합니다. |
+1. 같은 상품의 **Payment**를 엽니다.
+2. **Price**를 `4`로 둡니다.
+3. **Payment method → Inherit Shop**이면 **Shop settings**의 기본 결제를 따릅니다.
+4. 에메랄드 네 개를 내고 빵 세 개를 받는 거래인지 **Preview**에서 읽어 봅니다.
 
-아이템 선택 기능으로 인벤토리 아이템을 고르면 아이템 ID와 NBT가 자동으로 채워질 수 있습니다. 자동 입력된 NBT를 그대로 사용하면 같은 커스텀 아이템을 기준으로 거래하고, 직접 고치면 더 좁거나 다른 조건으로 거래 대상을 조정할 수 있습니다.
+이 상품만 다른 돈을 받으려면 **Override: Item** 또는 **Override: Currency**를 고릅니다. 아이템 결제는 인벤토리 수량을, DRM 화폐 결제는 저장된 잔액을 사용합니다. 여러 재료를 요구하는 거래는 **Required items**에서 구성합니다. [화폐와 상점 연결](#core/currency-hud-shop)에서 공통 결제와 상품별 결제를 구분하세요.
 
-매입 상품은 같은 아이템을 여러 가격으로 등록할 수 있습니다. 이 경우 실제 플레이에서는 플레이어가 선택한 매입 행을 기준으로 처리합니다.
+## 재고와 재입고 맞추기
 
-## 재고 값
+![상품의 자동 재입고를 설정하는 Restock 탭.](assets/media/guides/drm-031-forge1201/shop-restock.png "Enable restock을 켠 뒤 Restock interval과 Restock amount를 정합니다. 재입고는 Maximum stock을 넘기지 않습니다.")
 
-| 값 | 의미 |
-| --- | --- |
-| `-1` | 무제한 재고 |
-| `0` | 품절 |
-| `1` 이상 | 남은 구매 가능 횟수 |
+| 설정 | 예제 | 게임에서의 의미 |
+| --- | --- | --- |
+| Stock | 12 | 이 묶음을 열두 번 살 수 있음 |
+| Stock | 0 | 품절 |
+| Stock | -1 | 무제한 재고 |
+| Maximum stock | 12 | 재입고로 채울 상한 |
+| Restock amount | 2 | 재입고 한 번에 구매 가능 횟수 두 번 회복 |
+| Restock interval | 24000틱 | 기본 20틱/초 기준 게임 내 하루 |
 
-Forge 0.2.1에서 유한 재고를 구매하면 해당 NPC의 실행 재고가 줄어듭니다. 원본 JSON의 `stock`은 초기 재고이며, 실행 중 재고와 재입고 예정 시각은 개별 NPC NBT에 저장됩니다. 같은 JSON을 쓰는 다른 NPC는 별도 재고를 가집니다.
+유한 재고에 **Enable restock**을 켜고 간격·수량·최대치를 양수로 둡니다. 상점 전체의 **Timer basis**는 잠으로 건너뛴 시간 처리에 영향을 줍니다. [상점 시작 안내](#core/shop-system)의 시간 기준 설명을 확인하세요.
 
-재입고를 켜려면 `stock`을 0 이상, `maxStock`·`amount`·`intervalTicks`를 양수로 둡니다. 재고가 최대치보다 낮아지면 타이머가 시작되고, 시간이 되면 `amount`만큼 `maxStock`까지 회복합니다. `nextGameTime`은 플레이이 저장하는 값이므로 보통 직접 계산하지 않습니다.
+운영 중 재고는 NPC별로 줄어듭니다. 같은 상점 파일을 다른 NPC에 적용했다고 두 NPC의 남은 재고가 하나로 합쳐지지는 않습니다. 상품 **Quantity 3**을 재고 3으로 오해하지 마세요.
 
-## 상품별 결제
+## 매입 상품 만들기
 
-| 에디터 모드 | 동작 |
-| --- | --- |
-| `Inherit Shop` | 상점 루트의 결제 수단을 그대로 씁니다. |
-| `Override: Item` | 이 상품만 다른 아이템과 선택적 `Payment NBT`를 요구합니다. |
-| `Override: Currency` | 이 상품만 다른 DRM 화폐 잔액을 사용합니다. |
-| `Legacy: Item` / `Legacy: Currency` | 0.1.2 상점 필드를 읽었을 때 표시되는 호환 모드입니다. |
+**Sell items → Add**에서 받을 아이템과 **Quantity**, 보상을 정합니다. 예를 들어 밀 세 개를 한 단위로 정했다면 플레이어가 그 단위를 충족해야 판매할 수 있습니다. 상점의 결제·보상 수단도 함께 확인합니다.
 
-`Payment NBT`는 SNBT 문법이어야 합니다. 예를 들어 TACZ 9mm 탄약 결제를 구분하려면 `{AmmoId:"tacz:9mm"}`처럼 입력할 수 있습니다. `Invalid payment NBT` 또는 `Invalid currency override`가 보이면 저장·운영 전에 수정하세요.
+매입 목록은 판매 재고를 쓰지 않습니다. 같은 아이템을 서로 다른 조건·가격으로 등록했다면 플레이어가 어떤 행을 선택했는지에 따라 거래를 확인하세요. 특정 커스텀 아이템만 받으려면 NBT 조건을 사용하되, 먼저 실제 그 아이템으로 시험합니다.
 
-## 제한
+## 저장한 뒤 실제 거래 확인하기
 
-- `stock`은 구매 상품에만 의미가 있습니다.
-- 매입 상품은 플레이어 인벤토리의 아이템과 `sellItems` 행이 맞아야 실행됩니다.
-- `price`가 0 이하인 판매 보상은 실제 운영용 매입 상품으로 쓰기 적합하지 않습니다.
-- 상품 이미지나 행 모양은 NPC Shop이 아니라 GUI Maker의 `npc_shop` GUI에서 조정합니다.
+1. 기본 상점을 편집했다면 **Save As**로 `village_shop` 같은 새 이름에 저장합니다.
+2. DRM 코어로 NPC를 선택하고 **NPC Shop JSON → 저장한 상점 → Apply Shop**을 누릅니다.
+3. 결제 수단을 준비한 플레이어가 빈손으로 NPC를 엽니다.
+4. 상품을 체크하고 **Buy Selected**로 한 번 구매합니다.
+5. 받은 아이템·남은 돈·남은 재고를 함께 확인합니다. 이 예제는 빵 세 개 지급, 에메랄드 네 개 차감, 구매 가능 횟수 한 번 차감입니다.
 
-[재입고 시간 기준](#core/shop-system)에서 RESTOCK의 `Timer basis`와 잠으로 건너뛴 시간의 처리 방법을 확인하세요.
+상품 행의 배치·글자·이미지를 바꾸려면 [GUI Maker](#core/gui-system)를 사용합니다. 상품·가격·재고는 계속 NPC Shop에서 편집합니다.

@@ -19,21 +19,23 @@ tags:
 
 When a firearm NPC fails, reduce the setup before changing many values:
 
-1. Use one fresh CustomNPCs NPC.
+1. Use one fresh DNPC. Supported CustomNPCs actors are also available on 1.20.1 and 1.21.1.
 2. Use one plain TACZ 1.1.8 gun before testing an optional PointBlank or SuperbWarfare adapter.
 3. Turn on `TACZ Fire NPC Mode` and `Enabled`.
 4. Use `Stance: Ranged` or `Stance: Auto`.
 5. Keep `Ammo Stock: -1`.
-6. Remove target filters.
+6. In Targets, select the intended test target. An empty list does not automatically make every entity hostile.
 7. Test with one visible target inside `Max Distance`.
 
 If this works, the addon and gun loop are fine. Add filters, finite ammo, movement, pools, and FX one step at a time.
+
+![M4A1 selected in the actual DW gun screen.](assets/media/guides/warfare-031-neo1211/dw-gun.png "DW 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, English UI. Confirm the desired weapon in both Stored gun and NPC Preview. This shows selection, not proof of firing.")
 
 ## Symptom guide
 
 | Symptom | Likely checks |
 | --- | --- |
-| `DW Npc Core` does not open the expected GUI | Use Creative mode. Right-click a CustomNPCs NPC for NPC settings, a supported SuperbWarfare vehicle for vehicle settings, or air for the clone library. |
+| `DW Npc Core` does not open the expected GUI | Use Creative mode. Right-click a DNPC or supported CustomNPCs NPC for NPC settings, a supported SuperbWarfare vehicle for vehicle settings, or air for the clone library. |
 | NPC never fires | Check `TACZ Fire NPC Mode`, `Enabled`, stance, selected supported gun, target visibility, `Max Distance`, target rules, and ammo stock. |
 | NPC sees the target but waits | Check `Combat Delay Ms`, `Detect Angle`, `Instant Combat Angle`, and line of sight. |
 | NPC misses a nearby target behind it | Check `Close Detection` and `Close Detect Distance`. OFF is expected for an intentional backstab-style NPC. |
@@ -44,9 +46,9 @@ If this works, the addon and gun loop are fine. Add filters, finite ammo, moveme
 | Custom damage, knockback, or attack speed is not used | Check the `Gun Spec`/`Weapon Spec` or `Custom` selection and values in `Gun` and `Melee`. |
 | Better Combat weapon motion does not appear | Check Better Combat, Mob Player Animator, the NPC's `Better Combat Compatibility`, and registered attacks for the weapon. A vanilla main-hand swing is expected when the registered motion cannot be played. |
 | Custom attack speed is ignored during Better Combat compatibility | Compatibility locks timing to the weapon's effective `ATTACK_SPEED`. Disable `Better Combat Compatibility` to use a `Custom` attack speed. |
-| Patrol walks into a wall or pauses every step | Check `Default Walk Speed`, patrol points, vertical height, and A* reachability. Also confirm 0.2.9 is installed on both client and server. |
+| Patrol walks into a wall or pauses every step | Check `Default Walk Speed`, patrol points, vertical height, and A* reachability. Also confirm current 0.3.1 is installed on both client and server. |
 | NPC attacks the wrong target | Clear entity ID filters, required tags, rejected tags, and same-faction tag rules, then re-add them gradually. |
-| NPC keeps showing the previous or wrong weapon | Confirm both sides use 0.2.9, then save again. Verify the item is supported by its TACZ, PointBlank, or SuperbWarfare adapter and remove physical offhand ammo props. |
+| NPC keeps showing the previous or wrong weapon | Confirm both sides use current 0.3.1, then save again. Verify the item is supported by its TACZ, PointBlank, or SuperbWarfare adapter and remove physical offhand ammo props. |
 | `DW Pose Core` does not open the editor | Confirm Creative mode, a Steve/Alex CustomNPCs player model, a distance within 12 blocks, and that the core remains in either hand. |
 | A saved custom pose is not visible | In `DW Npc Core > Pose`, confirm that the action uses `Custom JSON` and the intended profile. The file must exist under `config/dochi_warfare/poses/`. |
 | Pool changes cannot be saved | Make the inline chance total `100%` or press `Equalize`. Editing one row does not automatically redistribute the others. |
@@ -54,9 +56,9 @@ If this works, the addon and gun loop are fine. Add filters, finite ammo, moveme
 | Visual alert icons are missing | Check the per-NPC `Alert Icons` setting and the client-side `dochi_warfare Config` marker visibility settings. |
 | GUI looks distorted | Adjust `GUI Scale` in vanilla video settings, then check the screen again. |
 | Cover never starts | Check global `[experimentalCover].enabled`, per-NPC `Enable Cover`, the individual trigger, combat phase, search radius, cooldown, and whether a reachable blast/shot-blocking position exists. |
-| Cover starts but the NPC never resumes fighting | Check `Max Duration`, `Hold Time`, peek settings, route reachability, and that 0.2.9 is installed. Cover must protect both chest and head; the server retries another reachable candidate after an initial search failure. |
+| Cover starts but the NPC never resumes fighting | Check `Max Duration`, `Hold Time`, peek settings, route reachability, and that current 0.3.1 is installed. Cover must protect both chest and head; the server retries another reachable candidate after an initial search failure. |
 | Hire confirmation does not open | The NPC must be a DW-managed NPC with `Hire available` enabled. Use an empty hand or normal interaction item; `DW Npc Core`, `DW Mercenary Core`, and CustomNPCs interaction tools keep their own editor behavior. |
-| Mercenary GUI clicks or tooltips are offset | Use 0.2.9 on both sides. The mercenary settings, confirmation screen, and command HUD use fit-to-viewport scaling and translated mouse coordinates. |
+| Mercenary GUI clicks or tooltips are offset | Use current 0.3.1 on both sides. The mercenary settings, confirmation screen, and command HUD use fit-to-viewport scaling and translated mouse coordinates. |
 | PointBlank gun is not accepted | Install exactly one supported branch, 1.11.1 or 2.1.0. If both are detected, the bridge disables itself. |
 | SuperbWarfare gun or vehicle is unavailable | Check the loader-specific supported versions in [setup](#dochi-warfare/warfare-setup). |
 | Vehicle AI is enabled but does not move | Remove player passengers, confirm the compatible SuperbWarfare version, movement mode, home/destination, and loaded terrain. Helicopters and fixed-wing aircraft need enough climb and turn space. |
@@ -67,7 +69,7 @@ If this works, the addon and gun loop are fine. Add filters, finite ammo, moveme
 
 ## GUI access problems
 
-`DW Npc Core` is a Creative-mode editor item with three contexts: CustomNPCs NPC, supported SuperbWarfare vehicle, and air for the clone library. If the NPC editor never opens, confirm the target is actually a CustomNPCs NPC and both sides have the addon. If the vehicle editor is unavailable, check the compatible SuperbWarfare version rather than treating it as an NPC-target failure.
+`DW Npc Core` is a Creative-mode editor item with three contexts: DNPC or supported CustomNPCs NPC, supported SuperbWarfare vehicle, and air for the clone library. If the NPC editor never opens, confirm the target is a supported DNPC or CustomNPCs actor and both sides have the addon. If the vehicle editor is unavailable, check the compatible SuperbWarfare version rather than treating it as an NPC-target failure.
 
 ## Fire and line-of-sight problems
 
@@ -88,9 +90,11 @@ For diagnosis:
 
 If infinite stock works but finite stock fails, the NPC probably reaches `0` spare rounds or regeneration is not configured.
 
+![Reload and reserve-ammo settings.](assets/media/guides/warfare-031-neo1211/dw-ammo.png "Ammo Stock −1 means unlimited reserve ammunition. Reload Duration Ms 0 uses the gun’s native reload duration. These controls are separate from placing a physical ammo item in the NPC’s hand.")
+
 ## Sound detection problems
 
-Version 0.2.9 uses one stimulus system for managed gunshots, reloads, block sounds, entity sounds, and position-only world sounds. Survival and Creative players are handled consistently. Each configured range remains bounded, and `Move To Source` still yields to active combat or a position-locked stance.
+Version 0.2.9 uses one stimulus system for managed gunshots, reloads, block sounds, entity sounds, and position-only world sounds. Use a Survival player when testing sounds, and check target detection separately from sound investigation; and `Move To Source` still yields to active combat or a position-locked stance.
 
 ## Patrol and pathfinding problems
 
@@ -102,7 +106,7 @@ For a failed one-block descent, confirm that a direct Route point uses the inten
 
 `Gun Spec` preserves the operated gun's native damage behavior, while `Custom` applies the supported DW override for this NPC. Melee `Weapon Spec` uses item attributes; melee `Custom` can independently set damage, knockback, and attacks per second. Switch one policy at a time when isolating an unexpected result.
 
-Enabling `Better Combat Compatibility` locks attack speed to the held item's effective `ATTACK_SPEED`, and `Overview` shows `Weapon Spec (locked)`. If weapon attributes fail to apply on an older build, update both client and server to 0.2.9 before testing again.
+Enabling `Better Combat Compatibility` locks attack speed to the held item's effective `ATTACK_SPEED`, and `Overview` shows `Weapon Spec (locked)`. If weapon attributes fail to apply on an older build, update both client and server to current 0.3.1 before testing again.
 
 ## Weapon switching and melee animation problems
 

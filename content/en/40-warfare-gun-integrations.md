@@ -17,11 +17,13 @@ tags:
 
 Current builds: DW 0.3.1 for Forge 1.20.1 and DW 0.3.1 for NeoForge 1.21.1. Vehicle AI on both loaders requires the separate DWE 0.3.1 addon. Check [loader-specific installation](#dochi-warfare/warfare-setup) for external gun/vehicle dependencies.
 
-## One controller, native gun mechanics
+## Give an NPC a gun from another mod
 
-Dochi's Warfare 0.2.9 routes supported guns through one managed combat controller. DW owns target selection, stance, tactical movement, accuracy policy, firing opportunities, reload timing, reserve `Ammo Stock`, animation signals, and persistence.
+With a supported gun mod installed, choose its gun in DW's **Gun** page. Put the real item in the creator's inventory, open the NPC with DW Npc Core, select the item, then confirm both the preview and **Stored gun** before saving.
 
-The gun mod keeps the parts that define the weapon itself: item and model rendering, native projectile or hitscan, intrinsic sounds, loaded-ammo state, native reload phases, and gun-specific mechanics. This boundary prevents an external gun from being reduced to a TACZ-looking imitation.
+![Gun selection and a stored M4A1 pool.](assets/media/guides/warfare-031-neo1211/dw-gun.png "DW 0.3.1 / NeoForge 1.21.1, English UI. The upper icon comes from the creator’s inventory; the lower list is the pool to store on the NPC. This example has one M4A1 at 100%.")
+
+DW controls whom the NPC detects and when it fires or reloads. The original gun mod supplies the model, projectile, intrinsic sounds and supported firing mechanics. When switching weapons, check the weapon’s own range, cadence and supported special actions alongside DW settings.
 
 ## Supported adapters
 
@@ -33,8 +35,6 @@ The gun mod keeps the parts that define the weapon itself: item and model render
 
 TACZ and Player Animator remain the runtime and animation baseline even when the managed item comes from PointBlank or SuperbWarfare.
 
-In 0.2.9, PointBlank hitscan keeps later pellets from being discarded by vanilla hurt immunity when several pellets rapidly hit the same target, then restores the target's previous immunity state after delivery. Long-range pellet candidates are collected through bounded segments to reduce repeated entity queries in large fights, while knockback and camera-shake intervals can be throttled independently from damage.
-
 :::warning Version gates
 Install one supported PointBlank branch: 1.11.1 or 2.1.0. Use the loader-specific SuperbWarfare versions above.
 :::
@@ -44,7 +44,7 @@ Install one supported PointBlank branch: 1.11.1 or 2.1.0. Use the loader-specifi
 1. Confirm a plain TACZ 1.1.8 gun works on the NPC.
 2. Install exactly one supported optional gun mod version on both sides.
 3. Put the native gun item in the creator's inventory.
-4. Open the NPC with `DW Npc Core` and select the item in `Gun`.
+4. Open the NPC with `DW Npc Core` and select the item in `Gun`. For multiple guns, make pool chances total 100% or press `Even`.
 5. Keep `Ammo Stock: -1`, `Reload Duration Ms: 0`, and a simple visible target for the first test.
 6. Save, verify native rendering and firing, then add finite ammo, pools, custom RPM, or advanced AI.
 

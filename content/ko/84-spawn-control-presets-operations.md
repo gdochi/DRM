@@ -6,7 +6,7 @@ description: 저장과 불러오기, 파일 경로, 프리셋 충돌 정책과 �
 product: dochi-spawn-control
 category: 프리셋과 운영
 section: operations
-status: Draft
+status: 사용 안내
 version: 0.1.4
 audience: 서버 운영자와 콘텐츠 배포자
 tags:
@@ -27,6 +27,18 @@ tags:
 | `새로 만들기` | 빈 세트 초안을 시작. 저장하기 전에는 서버 활성 설정을 바꾸지 않음 |
 
 대상 프리셋에는 전역 스케줄러 예산이 들어가지 않습니다. 다른 서버에 몹 한 종류의 규칙만 가져갈 때 기존 서버 운영 예산을 덮지 않기 위한 정책입니다.
+
+## 소 규칙만 다른 서버로 가져가기
+
+자연 스폰 편집기 왼쪽에서 `minecraft:cow`를 찾고 **Add Rule**로 규칙을 만듭니다. 조건을 완성한 뒤 **Save As**를 누르면 저장 범위를 고르는 창이 나옵니다.
+
+![Complete Set과 Current Target Preset을 고르는 Save As 창.](assets/media/guides/spawn-control-014-neo1211/spawn-preset-scope.png "Spawn Control 0.1.4 / NeoForge 1.21.1. 서버 전체 구성을 옮길 때는 Complete Set, 지금 선택한 소의 규칙만 옮길 때는 Current Target Preset을 고릅니다.")
+
+**Current Target Preset**을 고르고 **Display Name**에 `Meadow Cows`, **Stable ID**에 `meadow_cows`를 입력한 뒤 **Save As**를 누릅니다. `Target preset saved. The active set was not changed.`가 나오면 저장된 것입니다. **이 저장은 현재 서버의 활성 규칙을 바꾸지 않습니다.** 지금 서버에서도 작동시키려면 편집기로 돌아가 상단 **Save**를 사용합니다.
+
+![meadow_cows 대상 프리셋을 저장한 응답.](assets/media/guides/spawn-control-014-neo1211/spawn-target-preset-saved.png "Spawn Control 0.1.4 / NeoForge 1.21.1. 실제 생성된 targets/meadow_cows.json을 확인했습니다. 이름은 목록 표시용이고 Stable ID가 파일을 구분합니다.")
+
+받는 서버의 `targets/`에 파일을 넣고 **Load → Target Presets**에서 선택합니다. 같은 소 규칙을 바꿀지, 기존 규칙도 남길지는 아래 충돌 정책에서 정합니다.
 
 ## 저장 경로
 
@@ -103,6 +115,16 @@ config/dochi_rpg_maker/spawn_control/
 5. 서버, 차원, 청크, 플레이어, 프로필, 대상, 공유 그룹 제한 확인
 6. 후보 청크가 실제로 로드돼 있는지 확인
 7. 다른 모드가 Forge 스폰 이벤트를 거부하는지 서버 로그 확인
+
+### Check Here에서 거리만 FAIL이라고 나옴
+
+![현재 위치 검사 결과에서 Player Distance만 FAIL인 예.](assets/media/guides/spawn-control-014-neo1211/spawn-diagnostics-check.png "Spawn Control 0.1.4 / NeoForge 1.21.1. 현재 위치는 플레이어 바로 옆이라 nearest=0.5, 규칙은 24.0~96.0블록을 요구합니다. 다른 조건이 PASS여도 이 자리에는 생성되지 않습니다.")
+
+**Check Here**는 내가 서 있는 위치를 검사합니다. 기본 최소 거리가 24블록이라면 내 발밑 검사에서 거리가 실패하는 것이 자연스럽습니다. 이 결과만으로 주변 모든 후보 위치도 실패한다고 판단하지 마세요.
+
+**Spawn One → Confirm Spawn**은 실제 관리 엔티티 한 마리를 생성하는 시험입니다. 저장 전 초안을 사용하며 자연 생성 한 주기를 기다리는 기능과 다릅니다. 시험한 개체를 지우려면 해당 규칙의 **Clear Generated**를 누릅니다.
+
+![Spawn One과 Confirm Spawn 뒤 PASS와 생성한 개체 UUID가 표시된 모습.](assets/media/guides/spawn-control-014-neo1211/spawn-diagnostics-spawn.png "Spawn Control 0.1.4 / NeoForge 1.21.1. cow 규칙의 수동 생성 요청이 성공했습니다. 프리셋 저장과 활성 세트 저장은 별도 작업입니다.")
 
 ### 프로필이 자동 비활성화됨
 

@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -34,7 +34,7 @@ A BattleWorks Particle Shape action can also open the same editor with **Open Pa
 | Control | Value |
 | --- | --- |
 | Effect name | Training Ring |
-| Duration (ticks) | 40 |
+| Emission (ticks) | 40 |
 | + Layer | One layer |
 | Start / End tick | 0 / 39 |
 | Interval | 2 |
@@ -54,6 +54,8 @@ A BattleWorks Particle Shape action can also open the same editor with **Open Pa
 A particle layer's End tick is inclusive but must be **less than Duration**. A 40-tick effect uses ticks 0–39. This differs from combat stage-event bounds.
 
 At interval 2, this example emits at 0, 2, 4 through 38: 20 emissions of 24 particles, requesting 480 total.
+
+![Layer timing in Particle Maker and its Timing / names settings.](assets/media/guides/battleworks-016-neo1211/battleworks-particles.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Read Emission (ticks) 40 with Start 0, End 39 and Interval 2. The preview panel above is folded; expand it to inspect the particle geometry.")
 
 ## 3. Animate the radius
 

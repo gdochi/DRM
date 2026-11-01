@@ -15,6 +15,12 @@ tags:
   - workflow
 ---
 
+## Edit the scene at a specific time
+
+Use the middle preview together with the timeline below it. This is the default Trainer entrance at **tick 0**. Use **Play** or drag the ruler to the time when its text, models and effects appear.
+
+![Default entrance canvas and layer timeline at 0/144 ticks.](assets/media/guides/cobble-029-neo1211/cobble-presentation.png "0.2.9 / NeoForge 1.21.1. Layers/categories are left; settings for the selected layer are right. This is the authoring view, before runtime playback.")
+
 ## Make an entrance
 
 1. Open **Battle Presentation Maker** from DRM's editor list and load an example.

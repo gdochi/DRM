@@ -7,13 +7,17 @@ product: dochi-npc-core
 category: NPC files and integrations
 section: operations
 status: Guide
-version: 0.1.2
+version: 0.1.3
 audience: Creators / server operators
 ---
 
 ## Add conversations or shops
 
 Install **DRM**, right-click the DNPC with the DRM Core, then choose a saved file in **NPC Apply**.
+
+![NPC Apply after applying village_guide, with its Dialogue binding shown under APPLIED JSON on the right.](assets/media/guides/drm-031-neo1211/npc-apply-result.png "Example from DRM 0.3.1 + DNPC 0.1.2 / NeoForge 1.21.1. Choose a function on the left, a file in the middle and Apply below; check the resulting binding on the right.")
+
+For dialogue, use **Dialogue JSON → select file → Apply Dialogue**. For a shop, use **NPC Shop JSON → select file → Apply Shop**. Saving an editor file and connecting it to this NPC are separate steps. Put the Core away and interact with the NPC afterward.
 
 Start with [Forge dialogue](#core/quick-start) or [Fabric/NeoForge dialogue](#core-fabric/quick-start).
 

@@ -2,7 +2,7 @@
 title: Tooltip Maker
 slug: tooltip-maker
 order: 105
-description: Fabric·NeoForge 0.2.4에서 아이템 툴팁 레이아웃과 미리보기를 제작합니다.
+description: 아이템에 마우스를 올렸을 때 보이는 이름·설명·모델의 배치를 바꿉니다.
 product: core-fabric
 category: GUI Maker
 section: gui-maker
@@ -13,11 +13,20 @@ audience: 제작자
 
 ## Tooltip Maker의 역할
 
-Tooltip Maker는 플레이어가 아이템 위에 마우스를 올렸을 때 표시되는 정보 패널을 제작합니다. Fabric·NeoForge 0.2.4의 기본 에디터이며, 대화·상점 같은 전체 화면을 제작하는 GUI Maker와는 별도 도구입니다.
+Tooltip Maker는 플레이어가 아이템 위에 마우스를 올렸을 때 표시되는 정보 패널을 제작합니다. 이름과 설명, 아이템 미리보기가 들어갈 위치를 정합니다.
 
 **Dochi RPG Maker Core**로 에디터 선택 화면을 열고 **Tooltip Maker**를 선택한 다음 기존 레이아웃을 불러오거나 새로 만드세요. 번들 기본본은 보호된 템플릿이므로 수정할 때는 `Save As`를 사용합니다.
 
 툴팁 레이아웃은 `config/dochi_rpg_maker/gui/`에 저장됩니다. 번들 시작 파일은 `default_tooltip_gui.json`입니다.
+
+![Tooltip Maker의 기본 레이아웃. 가운데에 검 아이콘·이름·설명 영역, 오른쪽에 캔버스 크기와 선택 요소의 좌표·크기가 보입니다.](assets/media/guides/drm-031-neo1211/tooltip-maker.png "DRM 0.3.1 / NeoForge 1.21.1. 가운데 검은 패널 안이 툴팁입니다. 바깥의 파란 작업 영역까지 함께 저장되는 것은 아닙니다.")
+
+1. 가운데 캔버스에서 바꿀 요소를 고릅니다. 위 화면에서는 검 아이콘인 **Rendered Item**이 선택되어 있습니다.
+2. 오른쪽 **X / Y**로 위치, **W / H**로 크기를 바꿉니다. 전체 툴팁 크기는 위의 **Tooltip W / H → Apply**로 정합니다.
+3. 왼쪽 **+ Tooltip Text**, **+ Divider**, **+ Rendered Item** 등으로 필요한 표시를 추가합니다.
+4. **Preview**로 확인하고 **Save As**로 내 레이아웃을 저장합니다. 전체 아이템에 사용할 레이아웃으로 지정할 때는 **Use Globally**를 사용합니다.
+
+아이템의 능력치나 설명 내용 자체를 만들려면 아이템 에디터에서 설정합니다. Tooltip Maker는 그 내용이 표시되는 모양을 정합니다.
 
 ## 주요 기능
 

@@ -2,7 +2,7 @@
 title: Clone Library와 DRM Core NPC Spawner
 slug: cobblemon-clone-library-spawner
 order: 560
-description: Trainer/Pokemon 클론, Soul Stone 가져오기와 최신 Core 스포너 사용법입니다.
+description: 역할을 적용한 트레이너를 클론으로 저장하고 Core 스포너에 연결합니다.
 product: drm-cobblemon-editor
 category: 클론과 스포너
 section: world-tools
@@ -15,9 +15,21 @@ tags:
   - soul-stone
 ---
 
-## DNPC 클론과 NPC 템플릿
+## 완성한 트레이너를 다시 배치하기
 
-최신 수정본은 DNPC 역할을 보존한 클론·스포너 생성과 배틀 스케줄러의 에디터 클론·NPC 템플릿 선택을 지원합니다. DRM Core·DNPC·Cobblemon Editor를 해당 로더의 최신 수정본으로 함께 교체하세요. 기존 CNPC Soul Stone 가져오기는 별도 제공자의 흐름으로 유지합니다.
+**Clone Library**는 Trainer 또는 Pokemon Itself 역할을 이미 적용한 NPC를 저장합니다. 저장한 클론은 **DRM Core NPC Spawner**의 소스로 고릅니다. DNPC 자체의 Save As 템플릿과는 형식이 다릅니다. 그 템플릿으로 시작한다면 [Spawn Control 안내](#dochi-spawn-control/spawn-control-npc-templates)를 보세요.
+
+아래는 **Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1**에서 트레이너 파일을 저장하고 실제 DNPC에 적용한 뒤 클론으로 보관한 흐름입니다.
+
+1. [트레이너 편집기](#drm-cobblemon-editor/cobblemon-trainer-editor)에서 파티를 만든 뒤 **Save As**로 내 파일을 저장합니다.
+2. DRM 코어로 NPC를 열고 **vs Trainer → 내 파일 → Apply vs Trainer**를 누릅니다. 오른쪽 **APPLIED JSON**에 파일 이름이 나타나는지 확인합니다.
+3. 같은 NPC를 대상으로 **Clone Library**를 열고 **Save As**를 누릅니다.
+4. 원본 파일 변경을 따라가게 하려면 **Follow applied JSON source**를 켭니다. 이름을 확인하고 **Confirm**합니다.
+5. **Saved Clones**에 저장된 NPC가 나타나는지 확인합니다. 항목을 선택하면 상세 정보와 **Test Spawn**을 사용할 수 있습니다.
+
+![NPC Apply 오른쪽 vs Trainer에 guide_trainer가 연결된 화면.](assets/media/guides/cobble-029-neo1211-flow/cobble-trainer-applied.png "왼쪽 vs Trainer는 목록 분류이고, 실제 적용 버튼은 아래 Apply vs Trainer입니다. custom/guide_trainer.json의 적용 성공 응답과 오른쪽 파일 이름을 확인했습니다.")
+
+![Clone Library에 저장된 Oakridge guide 트레이너 클론.](assets/media/guides/cobble-029-neo1211-flow/cobble-clone-library.png "Saved clone: trainer/guide_trainer_clone 응답과 실제 서버 파일 생성을 확인했습니다. 저장 파일의 entityType은 dochi_npc:npc, bindingPolicy는 follow_source입니다. 이 화면은 클론 저장 결과이며 스포너 생성 완료 장면은 아닙니다.")
 
 ## 역할 분담
 
@@ -44,15 +56,6 @@ Clone Library는 Trainer와 Pokemon NPC를 분류해 저장하고 검색합니�
 
 콘텐츠 파일을 고치면 모든 스포너 NPC도 같이 최신화되어야 할 때는 Follow Source가 적합합니다. 이벤트 당시 상태를 고정하거나 원본 파일 없이 배포해야 할 때만 Snapshot을 사용하세요.
 
-### 기본 흐름
-
-1. Cobblemon Editor에서 문서를 저장하고 테스트 NPC에 Apply합니다.
-2. NPC의 외형과 실제 전투를 확인합니다.
-3. `Clone Library`에서 대상 NPC 또는 채워진 Soul Stone을 가져옵니다.
-4. Trainer/Pokemon 분류와 저장 방식을 확인합니다.
-5. 고유한 Clone ID와 표시 이름으로 저장합니다.
-6. `Test Spawn`으로 외형, 역할과 원본 추적을 확인합니다.
-
 클론 삭제 전에 어떤 스포너가 해당 Clone ID를 참조하는지 확인하세요. 소스 ID를 삭제하면 기존 스포너의 해당 항목은 더 이상 소환할 수 없습니다.
 
 ## 저장 경로와 호환
@@ -71,6 +74,10 @@ Clone Library는 Trainer와 Pokemon NPC를 분류해 저장하고 검색합니�
 3. 블록을 우클릭해 편집 화면을 엽니다.
 
 스포너 에디터는 `Source`, `Spawn`, `Conditions`, `Effects` 탭으로 구성됩니다. 이는 Clone Library와 별도인 DRM Core 편집 화면입니다.
+
+처음에는 **Source 한 개 → Wave size 1 → Max active 1**로 설정하고 Save합니다. 대상 감지를 쓴다면 플레이어를 서바이벌로 바꿔 시험합니다. 크리에이티브·관전자는 감지 대상에서 제외됩니다.
+
+![Core NPC Spawner의 작동 방식과 수량 설정.](assets/media/guides/drm-031-neo1211/core-npc-spawner-rules.png "Mode는 작동 계기, Cooldown은 간격, Max active는 살아 있는 수, Wave size는 한 번 생성 수입니다. 이 별도 실행의 Assigned sources는 0이므로 화면은 설정 위치를 보여 줍니다. 클론 저장 사진과 합쳐 소환까지 검증한 결과로 해석하지 마세요.")
 
 ## Source
 
@@ -112,7 +119,7 @@ Clone Library는 Trainer와 Pokemon NPC를 분류해 저장하고 검색합니�
 - Happy Villager, Enchant, Portal, Reverse Portal
 - End Rod, Flame
 
-블록 외형은 기본, 아이템, 블록 표시 방식으로 바꿀 수 있습니다. 외형은 스포너 블록의 표시일 뿐 소환 NPC의 CustomNPCs/Cobblemon 외형을 바꾸지 않습니다.
+블록 외형은 기본, 아이템, 블록 표시 방식으로 바꿀 수 있습니다. 여기서 바꾸는 것은 스포너 블록의 모습입니다. 소환 NPC의 외형은 저장한 클론을 따릅니다.
 
 ## Cobblemon 전투 보호
 

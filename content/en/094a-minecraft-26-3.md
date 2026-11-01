@@ -17,6 +17,8 @@ Use **Fabric or NeoForge / Java 25**. Install each mod's 26.3 files on server an
 
 Create NPCs with **DNPC**. **CustomNPCs is unavailable on 26.3.** DRM and DNPC can also run independently.
 
+![DNPC native editor on Minecraft 26.3.](assets/media/guides/dnpc-013-neo263/core263-dnpc-identity.png "DNPC 0.1.3 + DRM 0.3.1 / NeoForge 26.3.0.95 / Java 25.0.2. This is an actual DNPC in a fresh world. Identity edits the name; Appearance & Model edits appearance. DRM functions connects DRM features.")
+
 ## Choose the features you want
 
 | Feature | Mods |
@@ -37,6 +39,10 @@ Cobblemon Editor and DW/DWE are not included as 26.3 mods here. Use their older 
 26.3 DRM has no **Faction Editor, player faction screen or GUI Maker faction elements**. Fabric also excludes **Item Editor and Stat Builder**.
 
 Follow [NPC creation](#dochi-npc-core/npc-core-setup) and [DRM getting started](#core-fabric/quick-start) for NPCs with conversations or shops.
+
+![Adding an independent Text box in the 26.3 GUI Maker.](assets/media/guides/drm-031-neo263/core263-independent-text.png "DRM 0.3.1 / NeoForge 26.3.0.95. + Text adds a box separate from the dialogue body. Content chooses direct text or NPC name. Save As stores your GUI. This verifies the editing screen, not an applied dialogue result.")
+
+![Item Editor on NeoForge 26.3.](assets/media/guides/drm-031-neo263/core263-item-editor.png "DRM 0.3.1 / NeoForge 26.3.0.95. Item Definition, Tooltip Lines, Stat Rules and Vanilla Attribute are editing tabs. Fabric 26.3 excludes Item Editor. Item template: not selected means this example has no item appearance selected yet.")
 
 Use [placed NPC templates](#dochi-spawn-control/spawn-control-npc-templates) in Spawn Control. Old CustomNPCs clones are not directly converted into DNPC spawns.
 

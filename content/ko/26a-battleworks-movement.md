@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -36,6 +36,10 @@ tags:
 7. 저장·적용 후 가까이 접근했을 때 후퇴하고 추적으로 돌아오는지 확인합니다.
 
 Mobility는 Manager가 “이동 패턴을 사용했다”고 기록할 표시입니다. 스위치만 켠다고 자동으로 이동 액션이 생기지는 않습니다.
+
+![Action 단계의 Stage → Movement 화면.](assets/media/guides/battleworks-016-neo1211/battleworks-stage-movement.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 타임라인 위 Action을 누르고 오른쪽 Stage의 하위 목록을 Movement로 바꿉니다. Movement: None은 아직 단계 이동을 넣지 않은 상태입니다.")
+
+단계 이동은 오른쪽 **Stage → Movement**, 정해진 틱에 실행할 이동은 타임라인의 **+ Action → Caster Movement**에서 추가합니다. 위 화면은 설정 위치이며 실제 후퇴 결과 화면은 아닙니다.
 
 ## 2. 세 가지 이동 액션의 차이
 

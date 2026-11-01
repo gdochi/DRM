@@ -30,6 +30,8 @@ audience: 제작자 / 운영자
 
 NPC 언로드·사망, 차원 이동·접속 종료 시 이전 표시를 정리합니다. 0.1.2은 언로드된 NPC의 고정 POI나 마지막 위치를 저장하지 않습니다. 관리 대상 NPC의 기본 Xaero 레이더 표시를 숨겨 중복을 줄이며 Xaero Fair Play 모드에서는 애드온 미니맵 레이어를 그리지 않습니다.
 
+![서버에서 받은 DNPC 아이콘이 실제 Xaero 미니맵에 표시된 예.](assets/media/guides/mapicon-012-neo1211/mapicon-minimap.png "MapIcon 0.1.2 / NeoForge 1.21.1 / Xaero’s Minimap 26.6.0. 흰 플레이어 표시 위의 파란 사람 아이콘과 월드 안의 NPC가 같은 대상입니다. 편집기 미리보기만 확인하지 말고 저장 후 해당 지도에서 확인합니다.")
+
 ## 문제 해결
 
 | 증상 | 확인할 것 |

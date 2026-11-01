@@ -16,6 +16,12 @@ tags:
   - ai
 ---
 
+## 별도 공격을 쓸 NPC의 기본 공격 끄기
+
+마법·직접 만든 공격만 사용할 CustomNPCs NPC라면 내장 근접·원거리 공격이 끼어들지 않도록 끌 수 있습니다. 아래는 두 스위치를 끈 뒤 조회값까지 확인한 결과입니다. 이 설정만으로 마법이나 새 전투 패턴이 추가되지는 않습니다. 화면으로 만드는 공격은 [BattleWorks](#mob-editor/battleworks-first-attack)에서 시작하세요.
+
+![실제 별도 공격을 쓸 NPC의 기본 공격 끄기 결과.](assets/media/guides/drm-031-forge1201-apis/api-combat-switches.png "DRM 0.3.1 / Forge 1.20.1 + CustomNPCs. 채팅의 true는 요청 성공, melee=false / ranged=false는 꺼진 상태의 조회값입니다. 전투 중 공격 억제 한 주기를 촬영한 결과와는 구분합니다.")
+
 ## 시작하기
 
 `drmCombat`은 CustomNPCs NPC가 기본으로 수행하는 근접 공격과 원거리 공격을 각각 켜거나 끄는 서버 권한형 스크립트 API입니다.

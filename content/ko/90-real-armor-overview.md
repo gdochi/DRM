@@ -28,6 +28,10 @@ DNPC·Easy NPC·CustomNPCs를 지원하며 DRM은 필수가 아닙니다. 26.3�
 3. 같은 공격을 했을 때 갑옷을 입기 전보다 피해가 줄어드는지 봅니다.
 4. 원하는 전투 방식에 맞춰 부위별 방어와 내구도를 조절합니다.
 
+![DNPC가 철 갑옷 한 벌을 착용한 편집 화면. 오른쪽 Head, Chest, Legs, Feet에 철 방어구가 들어 있고 가운데에도 착용한 모습이 표시됩니다.](assets/media/guides/armor-014-neo1211/armor-equipped.png "Real Armor 0.1.4 + DNPC 0.1.3 / NeoForge 1.21.1의 예제입니다. 갑옷은 NPC storage에 보관하는 대신 오른쪽 착용 슬롯에 넣습니다.")
+
+이 환경에서 인챈트 없는 철 갑옷 한 벌을 입히고 동일한 기본 피해 `10`을 비교하면, 장비 없을 때 체력 `10`, 입었을 때 체력 `6`이 줄었습니다. 전체 방어 설정의 예시이며 부위별 모드·무기·인챈트에 따라 결과가 달라집니다. 피해가 전혀 들어오지 않는 NPC는 먼저 DNPC의 **Combat AI → Invulnerable**과 **Allow player damage**도 확인하세요.
+
 ## 전체 방어와 부위별 방어
 
 | 설정 | 방어구 사용 방식 |

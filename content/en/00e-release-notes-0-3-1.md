@@ -17,6 +17,8 @@ In **GUI Maker → Text → Content**, choose your own text or **NPC name**. Pla
 
 Set each box's position, size, fill and border, **Save As**, then select it for the conversation. Follow [screen customization](#core/gui-system).
 
+![An independent Text box selected in GUI Maker.](assets/media/guides/drm-031-forge1201/gui-text.png "DRM 0.3.1 / Forge 1.20.1. Add it with + Text and choose Direct input or NPC name under Content. The Text box above Dialogue text is positioned independently of the dialogue body.")
+
 ## Updated DNPC trainer and dialogue support
 
 On the older 1.20.1 / 1.21.1 targets, compatible DNPC and Cobblemon Editor patches let position-locked trainers dash and return.

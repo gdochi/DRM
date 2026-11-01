@@ -19,7 +19,7 @@ tags:
 
 BattleWorks **0.1.6**은 DRM의 NPC 전투 애드온입니다. Forge 1.20.1·Fabric/NeoForge 1.21.1과 별도 26.3 빌드가 있습니다. 공격 순서·타격 판정·이동·페이즈를 제작합니다.
 
-아래 입문 실습은 **Forge 1.20.1·CustomNPCs**를 기준으로 합니다. 다른 로더와 26.3 DNPC는 [0.1.6 설치 범위](#mob-editor/battleworks-update-0-1-6)를 먼저 확인하세요. 기존 `mob-editor` 주소는 유지합니다.
+아래 입문 실습은 **Forge 1.20.1·CustomNPCs**를 기준으로 합니다. 다른 로더와 26.3 DNPC는 [0.1.6 설치 범위](#mob-editor/battleworks-update-0-1-6)를 먼저 확인하세요.
 
 처음에는 일반 인간형 NPC로 느린 근접 공격 하나를 완성하세요. JSON을 직접 작성하거나 마법·모델 모드를 추가할 필요 없이 시작할 수 있습니다.
 
@@ -39,6 +39,10 @@ BattleWorks **0.1.6**은 DRM의 NPC 전투 애드온입니다. Forge 1.20.1·Fab
 마법과 연출은 [스킬·사운드·대사](#mob-editor/battleworks-skills-effects), 시각 효과는 [Particle Maker](#mob-editor/battleworks-particles), 소환·지연 공격은 [고급 액션](#mob-editor/battleworks-advanced-actions)에서 이어갑니다.
 
 ## 어떤 설정을 어디서 하나요?
+
+![BattleWorks Pattern Workbench. 왼쪽 패턴 목록, 가운데 Windup·Action·Recovery 타임라인, 오른쪽 선택한 패턴과 단계 설정이 보입니다.](assets/media/guides/battleworks-016-neo1211/workbench.png "BattleWorks 0.1.6 / NeoForge 1.21.1의 기본 Basic Slash 예제입니다. 왼쪽에서 공격을 고르고, 가운데에서 단계를 고른 뒤 오른쪽 값을 바꿉니다.")
+
+위쪽 **Pattern Workbench**에서 공격 순서를 만들고, **Hitbox Library**에서 피해가 닿는 모양을, **Combat Rules**에서 추적과 패턴 선택 규칙을 정합니다. 질문에 답하며 처음 공격을 만들려면 **Create New → Pattern Build Assist**로 시작합니다. 기존 예제를 불러온 상태에서는 제작 보조가 꺼져 있습니다.
 
 | 만들 내용 | 설정하는 곳 | 예시 |
 | --- | --- | --- |

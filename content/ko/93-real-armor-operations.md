@@ -30,6 +30,8 @@ tags:
 
 ## 디버그 사용법
 
+![NPC Compatibility 탭의 Debug damage messages 스위치.](assets/media/guides/armor-014-neo1211/armor-compatibility.png "Real Armor 0.1.4 / NeoForge 1.21.1. GUI에서는 Debug damage messages, 명령어에서는 /dochi_real_armor debug true로 같은 관찰 기능을 켭니다.")
+
 피격 부위와 감소 전후 피해를 확인할 때만 디버그를 잠시 켭니다. 디버그는 결과 관찰 기능이므로 `/dochi_real_armor debug false` 이후에도 방어가 동일하게 작동해야 정상입니다.
 
 ## 문제 점검표

@@ -32,6 +32,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify docs and assets
+        run: npm run verify
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:

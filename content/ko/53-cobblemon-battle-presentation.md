@@ -15,6 +15,12 @@ tags:
   - workflow
 ---
 
+## 재생 시각을 보며 연출 편집하기
+
+**Battle Presentation Maker**는 가운데 미리보기와 아래 타임라인을 함께 사용합니다. 다음 화면은 기본 Trainer 연출의 **0틱**입니다. **Play**로 재생하거나 눈금자를 드래그해, 글자·모델·효과가 나오는 시각으로 이동합니다.
+
+![기본 연출 0/144틱의 캔버스와 레이어 타임라인.](assets/media/guides/cobble-029-neo1211/cobble-presentation.png "0.2.9 / NeoForge 1.21.1. 왼쪽은 레이어와 큰 분류, 오른쪽은 선택한 레이어의 설정입니다. 이 편집 화면은 실제 배틀에서 재생을 완료한 결과 화면과 구분합니다.")
+
 ## 첫 등장 연출 만들기
 
 1. DRM 에디터 목록에서 **Battle Presentation Maker**를 열고 기본 예제를 불러옵니다.

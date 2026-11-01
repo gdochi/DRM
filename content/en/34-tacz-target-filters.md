@@ -15,6 +15,12 @@ tags:
   - faction
 ---
 
+## Choose which mobs to attack
+
+Search for a target such as `minecraft:zombie` at the top of **Targets**, then check its row. **Type / View / Mods** filter the catalog; **All / None** select or clear the entries currently shown.
+
+![Targets entity list with Selected 0 and Tag Conditions below.](assets/media/guides/warfare-031-neo1211/dw-targets.png "DW 0.3.1 / NeoForge 1.21.1. This example has zero explicit selections. Zero does not mean attack every mob; hostility and tag rules below still matter.")
+
 ## Why targets need extra care
 
 Firearm NPCs can attack from farther away than most melee NPCs, so a wrong target rule is immediately visible. Build target rules in small steps: first confirm the NPC can fire, then add entity IDs, then tags, then advanced faction or stance behavior.

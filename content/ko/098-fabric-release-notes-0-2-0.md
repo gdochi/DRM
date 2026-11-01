@@ -11,7 +11,13 @@ version: 0.2.0
 audience: 제작자 / 운영자
 ---
 
-이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.2.8](#core-fabric/release-notes-0-2-8)을 확인하세요.
+이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.3.1](#core-fabric/release-notes-0-3-1)을 확인하세요.
+
+## 아이템 설명창 꾸미기
+
+Tooltip Maker는 아이템의 이름·설명·미리보기를 배치하는 제작 화면입니다. 가운데 선택한 요소를 오른쪽에서 수정하고 Preview로 확인합니다. 아래 그림은 현재 NeoForge 화면이며 Fabric 0.2.0 당시 화면은 아닙니다. [현재 사용법](#core-fabric/tooltip-maker)에서 저장과 적용까지 이어서 볼 수 있습니다.
+
+![아이템 설명창 꾸미기.](assets/media/guides/drm-031-neo1211/tooltip-maker.png "DRM 0.3.1 / NeoForge 1.21.1. 위 변경과 관련된 기능을 현재 배포본에서 연 화면입니다. 아래 릴리스 기록의 당시 UI와 구분합니다.")
 
 ## 변경 사항 0.2.0
 

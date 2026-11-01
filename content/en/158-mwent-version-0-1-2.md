@@ -30,6 +30,10 @@ These values compare the final built-in and optional catalogs from the **actual 
 
 ## Gameplay and server stability
 
+![Current deck toolbar and quantity controls.](assets/media/guides/minigames-016-neo1211/mwent016-deck-catalog.png "Current 0.1.6 / NeoForge 1.21.1 screen. Change deck, Default deck and Begin match are separate from card quantity controls. The stability notes below concern 0.1.2; this is not a screenshot captured on that version.")
+
+For present-day controls, follow [collections and decks](#mwent/cards-decks) from editing to match start.
+
 The 0.1.2 implementation records confirm repairs to overlapping deck-selection toolbar controls, player-skin display in table lobbies and villager previews on unassigned AI screens. Starting an unassigned AI profile remains disabled.
 
 Server work reduces repeated state copies and duplicate same-tick broadcasts, suppresses unnecessary broadcasts for invalid PvP inputs, distributes AI decisions across ticks and stops unchanged periodic broadcasts after matches finish. These are processing and display improvements rather than card power or provision buffs and nerfs.

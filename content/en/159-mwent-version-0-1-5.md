@@ -11,13 +11,17 @@ version: 0.1.5
 audience: Players / creators
 ---
 
-## Current workspace baseline
+## Historical 0.1.5 workspace baseline
 
 Based on the independent Minecraft 26.3 Fabric / NeoForge sources and production 0.1.5 JAR on October 30, 2026. This is separate from the [CurseForge upload history](#mwent/releases).
 
 Built-in definitions increase **263 → 335**, optional definitions remain **89**, and the total increases **352 → 424**. Regular and animated prints total 848. Existing power, provisions, frames, rarities and legacy Deploy, Order and keyword definitions remain intact. Added IDs are 1700–1759 and 1800–1811.
 
 ## Added mechanics
+
+![Custom-card ability editor with conditions, targets and operations.](assets/media/guides/minigames-015-neo1211/minigames-card-abilities.png "Actual Minigames 0.1.5 / NeoForge 1.21.1 ability screen. The mechanics below relate to these authoring controls. Saving a definition is separate from granting ownership.")
+
+To build a card, start with [custom-card authoring](#mwent/authoring). For current opening-tactic behavior continue to [0.1.6](#mwent/version-0-1-6).
 
 - Scenarios advance chapters through qualifying plays, locations offer persistent Orders, and traps provide hidden reactions. They occupy sockets without adding unit points.
 - Veil, Immunity, Rupture, Infusion, Resilience, counters, timers and round evolution are supported.

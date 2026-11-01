@@ -11,7 +11,10 @@ version: 0.2.9
 audience: Creators / server operators
 ---
 
-## Current version
+This page records an **older release**. Use [DRM 0.3.1](#core/release-notes-0-3-1) for current installation and usage. Current-version illustrations below are separate from the historical release record.
+
+
+## 0.2.9 change record
 
 DRM **0.2.9** targets Forge 1.20.1 / Java 17 and Fabric / NeoForge 1.21.1 / Java 21. Separate Fabric / NeoForge 26.3 builds use Java 25. See the [26.3 guide](#core-fabric/minecraft-26-3) for exclusions and verification limits.
 
@@ -25,6 +28,12 @@ CustomNPCs and DNPC are optional integrations. Basic authoring tools do not requ
 - **Trainer history deletion:** compatible Cobblemon Editor builds on Fabric / NeoForge 1.21.1 expose full battle-record deletion in Admin. This differs from a count reset and removes pending rewards and reward markers. Read the [Admin guide](#core-fabric/drm-administration).
 
 Older cores without the template capability retain their other features. Ecosystem mods do not need matching version numbers.
+
+## From an NPC to a reusable template
+
+Save the NPC appearance and equipment, then select that NPC in Spawn Control. This screen shows the integration used in current versions; it is not a historical 0.2.9 screen.
+
+![Selecting a saved DNPC template in Spawn Control.](assets/media/guides/spawn-control-014-neo1211/spawn-npc-template-picker.png "Spawn Control 0.1.4 + DRM 0.3.1 + DNPC 0.1.3 / NeoForge 1.21.1. DNPC saved guide_guard appears as dochi_npc:actor/guide_guard. Save the spawner definition and apply it to a placed spawner before expecting a spawn.")
 
 ## Update
 

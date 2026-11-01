@@ -11,11 +11,17 @@ version: 0.2.4
 audience: Creators / Operators
 ---
 
-This is a historical release record. See [DRM 0.2.8](#core-fabric/release-notes-0-2-8) for current guidance.
+This is a historical release record. See [DRM 0.3.1](#core-fabric/release-notes-0-3-1) for current guidance.
 
 :::note Historical release record
 This page records the earlier release. The current Core installation baseline is 0.2.5.
 :::
+
+## Find restock options
+
+Open NPC Shop Restock for Enable restock and Timer basis. Set finite and maximum stock under Product first. The pictured 24000 ticks is an example, so choose a period suitable for your server. Continue with the [current guide](#core-fabric/shop-system) for saving and applying it.
+
+![Find restock options.](assets/media/guides/drm-031-neo1211/shop-restock.png "DRM 0.3.1 / NeoForge 1.21.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
 
 ## Shared documentation and installation
 

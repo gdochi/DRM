@@ -11,65 +11,48 @@ version: 0.3.1
 audience: Creators and server operators
 ---
 
-## Official data root
+## Where is the conversation I saved?
 
-Authoring files live under `config/dochi_rpg_maker` in the game or server directory. In multiplayer, the server's files are authoritative. Editing only a client's copy does not update the server.
+In singleplayer, open the **game folder for your current launcher instance**. In multiplayer, use the **connected server's folder**. Authoring files live under `config/dochi_rpg_maker/` there.
 
-```text
-<game-or-server-root>/config/dochi_rpg_maker/
-```
+For **Dialogue Editor → Save As → village_guide**, look in `config/dochi_rpg_maker/dialogue_sets/village_guide/`. One conversation set is a folder: copy the **whole folder** when moving it to another server.
 
-If the legacy top-level `dochi_rpg_maker` directory exists and the new root does not, startup copies the legacy data into the new root. Back up both locations before migration.
+![Dialogue Editor shows the saved conversation's folder path.](assets/media/guides/drm-031-forge1201/dialogue-save-result.png "DRM 0.3.1 / Forge 1.20.1. After Save As, SET FOLDER / TOOLS shows the current set folder. Use that path to identify the correct instance.")
 
-## Main folders
+## Files to bring for each task
 
-The following paths are relative to the data root.
+All paths below are inside `config/dochi_rpg_maker/`. Find the name you actually saved in the editor.
 
-| Path | Contents |
-| --- | --- |
-| `dialogue_sets/<set>/` | `dialogue_set.json` and individual node JSON files |
-| `gui/` | Dialogue, shop, message, and tooltip layouts |
-| `npc_shops/` | File-based shops |
-| `quests/<pack>/` | `pack.json` and individual quests in `quests/` |
-| `stats/sets/` | Stat definitions; `stats/active_set.json` selects the active set |
-| `items/definitions/` | Database item definitions |
-| `items/sets/` | Equipment set definitions referenced by items |
-| `items/tooltip_templates/` | Item tooltip templates |
-| `items/editor_settings.json` | Shared item editor settings |
-| `teleporters/` | Destination sets |
-| `factions/` | Faction settings and presets |
-| `popups/definitions/`, `popups/policies/` | Popup content and access/resource policies |
-| `assets/textures/` | Server PNG assets and companion `.png.mcmeta` files |
-| `currency/definitions/` | Currency IDs, display, pickup conversion, and death rules |
-| `hud/sets/`, `hud/definitions/` | HUD layouts and element definitions |
-| `settings/` | Default GUI/currency references and reload policy |
-| `remnant_msg/messages/`, `remnant_msg/policies/` | Message documents and display policy |
-| `debug.log` | Core diagnostic output |
+| What you made | Location | Bring along |
+| --- | --- | --- |
+| NPC dialogue | `dialogue_sets/village_guide/` | Whole set folder and linked GUI, shop or quests |
+| NPC shop | `npc_shops/village_shop.json` | Currency, GUI and item mods it uses |
+| Dialogue/shop layout | `gui/` | Referenced pictures and textures |
+| Currency type | `currency/definitions/town_coin.json` | Shops and HUD using that currency |
+| HUD | `hud/sets/guide_hud/` | Entire hud_set.json and components/. Active selection: hud/active_set.json |
+| Quests | `quests/<pack-name>/` | pack.json and individual quests under quests/ |
+| Stats | `stats/sets/` | Active selection stats/active_set.json |
+| Database items | `items/definitions/` | Authoring rules items/editor_settings.json |
+| Travel destinations | `teleporters/` | Destination set and linked GUI |
+| Popups | `popups/definitions/` | Display policies under popups/policies/ if used |
+| World messages | `remnant_msg/messages/` | remnant_msg/policies/ and linked GUI |
+| Creator PNGs | `assets/textures/` | Matching .png.mcmeta for animated textures |
+| Faction display | `factions/` | Settings and required presets |
+| Defaults/shared settings | `settings/` | Review the settings you changed before moving them |
 
-A dialogue set is a folder of documents. Most other entries are individual JSON documents. Layout files do not contain the shop products or dialogue text they display. Copy referenced equipment sets and tooltip templates together with item definitions.
+DNPC's own NPC templates use a **separate folder**, `config/dochi_npc_core/templates/`. See [saving NPCs](#dochi-npc-core/npc-core-templates). Check each addon's storage guide for BattleWorks, Spawn Control and other addon files.
 
-## Server document kinds
+## The file moved, but the NPC did not change
 
-Editors exchange a document kind and a path with the server. Important kinds include `dialogue_set`, `gui`, `npc_shop`, `currency`, `teleporter_set`, `stat_set`, `item_definition`, `item_editor_settings`, `popup_definition`, `popup_policy`, `remnant_msg`, and `remnant_msg_policy`.
+Authoring files and world NPCs are separate. On the destination server, check the file, then **right-click the NPC with DRM Core → select the file → Apply**. Bring referenced pictures and shops as well.
 
-`currency_index` is a read-only currency listing. `currency_hud_layout` stores HUD sets; the legacy `currency_hud` name remains compatible. `hud_active_set` selects `hud/active_set.json`; `hud_definition` stores element definitions. `faction_settings` maps to `factions/settings.json`, and `faction_preset` to `factions/presets/`. The `settings` kind maps to `settings/defaults.json`.
+See [saving and NPC application](#core/core-concepts) for the buttons. Back up **config and world saves together** when moving or restoring a whole server; authoring files alone do not restore NPC placement, spawners and progress.
 
-## Path and save rules
+## A saved file is missing from the list
 
-- Use paths relative to the selected document store. Some loaders also accept the displayed full config path.
-- Windows separators are normalized to `/`; parent traversal using `..` is rejected.
-- Use explicit names. An empty filename may normalize to `default.json`.
-- GUI discovery supports subfolders up to three levels deep.
-- Protected defaults cannot be saved over or deleted through the server editor. Use `Save As` with a new name.
+1. Check the server's actual game folder. A client-only copy does not appear in the server list.
+2. Use the correct folder for a conversation, shop or GUI file.
+3. Open **Load / Refresh** and clear search filters.
+4. Use **Save As** with your own name when customizing a bundled example.
 
-## Defaults, updates, and backups
-
-Bundled defaults follow per-store installation policies. Dialogue, GUI, shop, faction, teleporter, quest, stat, item, and popup defaults may be installed or refreshed. Remnant Msg samples are refreshed from the JAR. HUD definitions and the default Remnant Msg policy are installed only when absent; bundled HUD definitions start disabled.
-
-Use distinct user filenames instead of editing protected defaults for production content. Back up the config root and world together: files hold authoring data, while the world holds NPC bindings and player state.
-
-Tooltip Maker saves layouts in `gui/`. Open `default_tooltip_gui.json`, use `Save As`, and edit it under Visual → Tooltip Maker. These layouts are separate from the item tooltip templates in `items/tooltip_templates/`.
-
-## Legacy dialogue data
-
-Old NPC data may reference `dc_dialogue_json_path` under `customnpcs/dc_data/dc_dialogues`. The dialogue repository can read and convert it. New projects should use `config/dochi_rpg_maker`, keeping the legacy path only for existing content that still references it.
+Enter names such as `village_shop.json` in editor filename fields; the editor already selects its own storage folder. For external file edits, see [reloading saved work](#core/core-concepts).

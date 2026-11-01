@@ -15,6 +15,13 @@ tags:
   - release
 ---
 
+
+## 저장한 파일과 NPC 연결부터 확인하기
+
+**Save As는 서버 파일 저장, NPC Apply는 월드의 NPC에 역할을 붙이는 단계**입니다. 파일은 만들었는데 NPC가 그대로라면 연결한 역할·파일 경로를 먼저 확인하세요. Trainer는 [NPC Apply의 vs Trainer](#drm-cobblemon-editor/cobblemon-trainer-editor)에서 적용하고, Starter Selector처럼 자체 Apply to NPC가 있는 역할은 그 버튼을 사용합니다.
+
+![custom/village_starters.json을 저장한 실제 Starter Selector.](assets/media/guides/cobble-029-neo1211/cobble-starter-save.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. 왼쪽 Current File과 아래 Saved 응답이 파일 저장을 확인해 줍니다. 이 파일은 starter_selectors 폴더에 저장하며 Trainer 파일의 폴더와 다릅니다.")
+
 ## 저장 경로
 
 모든 기준 경로는 `config/dochi_rpg_maker`입니다.
@@ -93,7 +100,7 @@ DRM Core 대화/상점과 Nurse Joy·Starter Selector를 함께 적용한 NPC는
 ### 파일을 저장했는데 NPC가 옛 설정을 사용함
 
 1. NPC가 추적하는 원본 경로와 편집한 파일이 같은지 확인합니다.
-2. 새 창·새 전투 요청으로 플레이을 다시 엽니다.
+2. 창을 닫고 NPC에게 다시 말을 걸거나 새 전투를 요청합니다.
 3. 서버 밖에서 고쳤다면 `/drm reload`를 실행합니다.
 4. 파일에 오류가 있으면 이전 설정이 열릴 수 있으므로 저장 오류 메시지를 확인합니다.
 5. Snapshot 클론인지 확인합니다.

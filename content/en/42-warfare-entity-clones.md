@@ -19,10 +19,12 @@ tags:
 
 The Entity Clone Library stores server-owned JSON templates for two domains:
 
-* CustomNPCs NPCs with their current DW settings
+* DNPC or CustomNPCs NPCs with their current DW settings
 * Supported SuperbWarfare vehicles with native data and reusable DW combat settings
 
 This is different from `Save As` in the NPC or vehicle editor. A setup profile copies configuration into an existing target; an entity clone creates a sanitized new entity.
+
+![Empty Entity Clone Library with NPC and Vehicle filters.](assets/media/guides/warfare-031-neo1211/dw-clones.png "DW 0.3.1 / NeoForge 1.21.1. A fresh setup may have no entries. Save with Clone in the target editor before selecting it here and using Summon.")
 
 ## Save a template
 

@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -60,6 +60,8 @@ Save As와 전투 파일 참조에는 `bosses/training_captain.json`처럼 patte
 
 Load는 편집 화면에 파일을 여는 작업이고, Apply는 NPC를 그 파일에 연결하는 작업입니다. Save As 이후 NPC 적용 여부는 [설치 안내](#mob-editor/mob-editor-setup)의 표를 따릅니다.
 
+![서버 파일로 저장하고 DNPC에 연결한 전투 편집 화면.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 화면의 경로 표시는 짧게 보이지만 실제 확인한 파일은 config/dochi_rpg_maker/mobs/patterns/training/first_sword.json입니다. 다른 서버로 옮길 때도 이 전투 파일을 함께 준비합니다.")
+
 ## 4. 외부 편집기의 수정 반영하기
 
 1. 해당 JSON의 백업을 만듭니다.
@@ -75,8 +77,11 @@ Load는 편집 화면에 파일을 여는 작업이고, Apply는 NPC를 그 파�
 
 | 파일 | 사용하는 곳 | 필요한 준비 |
 | --- | --- | --- |
+| [first_sword.json](./assets/media/battleworks/first_sword.json) | `mobs/patterns/training/` | BattleWorks 0.1.6·DNPC 0.1.3·NeoForge 1.21.1에서 실제 저장·적용·피해 확인 |
 | [training_swordsman.json](./assets/media/battleworks/training_swordsman.json) | `mobs/patterns/training/` | 일반 인간형 NPC, CustomNPCs 적대 타겟 |
 | [training_ring.json](./assets/media/battleworks/training_ring.json) | `particles/` | Particle Maker 또는 /drm particle 명령 |
+
+**first_sword.json**은 현재 첫 공격 실습에서 실제 UI로 저장한 파일입니다. **training_swordsman.json**은 이전 Forge·CustomNPCs 실습 자료로 보조 탐색이 꺼져 있습니다. 사용할 NPC 흐름에 맞게 골라 주세요.
 
 브라우저에서 JSON이 열리면 파일로 저장합니다. `.json.txt`로 저장되지 않았는지 확장자를 확인하세요. 두 파일은 각각 전투와 시각 효과이므로 서로 폴더를 바꿔 넣지 않습니다.
 
@@ -101,7 +106,7 @@ Load는 편집 화면에 파일을 여는 작업이고, Apply는 NPC를 그 파�
 
 1. 게임·서버를 종료하고 config와 월드를 백업합니다.
 2. 기존 BattleWorks / 구형 Mob Editor JAR 중복을 제거하고 호환 버전으로 교체합니다.
-3. Forge 0.1.5는 DRM 0.1.7 이상을 요구합니다. NeoForge 최소 조건은 설치 페이지에서 확인하세요.
+3. 사용할 Minecraft·로더의 DRM·NPC 모드와 맞는 파일을 선택합니다. 현재 설치 안내의 요구 조건을 확인합니다.
 4. 실행 후 파일 목록과 NPC 참조를 확인합니다.
 5. 모델·스킬·사운드와 실제 전투를 다시 확인합니다.
 

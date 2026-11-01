@@ -20,6 +20,9 @@ Open a dialogue node's **Choices** section. **Choice text px (0 = GUI)** sets th
 
 For a shared appearance, open the dialogue layout in **GUI Maker**, select its **Choice** component, and adjust **Text size (px)**. The available text sizes are 6–32 GUI pixels. These are Minecraft GUI units, so the on-screen size also depends on GUI scale.
 
+![Choices with text size 0 and Pulse highlight OFF for the selected row.](assets/media/guides/drm-031-forge1201/dialogue-choices.png "DRM 0.3.1 / Forge 1.20.1. Text size 0 follows the GUI. Pulse highlight applies to the choice selected on the left.")
+
+
 ## Make long answers fit
 
 Use automatic button width when answers have different lengths. DRM measures the displayed text, including resource-pack translations, and uses the available width before wrapping. A long answer can grow to the choice area's inner width; short answers keep a compact width.

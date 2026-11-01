@@ -7,15 +7,17 @@ product: dochi-minigames
 category: Minigame tables
 section: setup
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Creators / server operators
 ---
 
 ## Get a table
 
-Eight game-specific tables can be crafted. Check their recipes in the in-game recipe book. Each keeps its own game type.
+Nine game-specific tables and machines can be crafted. Check their recipes in the in-game recipe book. Each keeps its own game type.
 
 The Creative **Minigame Table** lets creators switch game types and has no crafting recipe.
+
+![Whack-a-Mole, Roulette and Slots machines in the actual world.](assets/media/guides/minigames-016-neo1211/roulette-native-world-stopped.png "Minigames 0.1.6 / NeoForge 1.21.1. The center block is the dedicated Roulette Machine. Appearance and the linked profile are separate settings; check the game triggered by right-clicking. Default roulette spins without a window.")
 
 ## Choose its game
 

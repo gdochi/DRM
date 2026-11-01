@@ -28,6 +28,10 @@ It supports DNPC, Easy NPC and CustomNPCs. DRM is optional. CustomNPCs is unavai
 3. Compare damage from the same attack before and after equipping it.
 4. Choose body-part armor and durability settings.
 
+![A DNPC wearing a full iron armor set, with iron items in Head, Chest, Legs and Feet and the equipped model in the preview.](assets/media/guides/armor-014-neo1211/armor-equipped.png "Example with Real Armor 0.1.4 + DNPC 0.1.3 / NeoForge 1.21.1. Put armor in the equipment slots on the right rather than merely storing it in NPC storage.")
+
+In this setup, a base-damage `10` hit removed `10` health without armor and `6` with the unenchanted iron set. This is a whole-body example; hit-region mode, weapons and enchantments can change the result. If a DNPC takes no damage at all, also check **Combat AI → Invulnerable** and **Allow player damage**.
+
 ## Whole-body or body-part armor
 
 | Setting | Armor used |

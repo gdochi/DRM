@@ -7,7 +7,7 @@ product: dochi-minigames
 category: Files and Operations
 section: operations
 status: Usage guide
-version: 0.1.5
+version: 0.1.6
 audience: Creators / operators
 ---
 
@@ -21,9 +21,13 @@ audience: Creators / operators
 
 Game-rule JSON stores fees, time limits, symbols and rewards. GUI JSON stores the player's board and score-panel layout. NPC bindings persist in NPC data; NPCs using the same game ID share that game's configuration.
 
+Roulette’s default **Spin on block** starts at the machine without a GUI layout file. GUI files arrange existing screen-based games and roulette configured for **Game screen**.
+
 ## Edit the screen in GUI Maker
 
-Use **GUI Maker** in the game's Rules tab to open its linked layout. Edit board and score-panel position and size, then save. To customize a default separately, create a copy with `Save As` and connect the game's `guiLayout` to that copy.
+Use **Open GUI Maker** to open the game's linked layout. Edit board and score-panel position and size, then save. To customize a default separately, create a copy with `Save As` and select it in **General → GUI JSON**.
+
+![The minigame editor's General page with GUI JSON, its finder and Open GUI Maker below.](assets/media/guides/minigames-015-neo1211/minigames-editor.png "Minigames 0.1.5 / NeoForge 1.21.1. Set title, time and rewards in the game editor; use Open GUI Maker for board position and appearance.")
 
 **Game Board → Memory Card Size** accepts 16–96px, defaulting to 40px. Large boards shrink cards to fit, and click detection follows the displayed size. `previewGame` changes only GUI Maker's sample screen, not the actual game rules.
 
@@ -44,7 +48,7 @@ Back up `config/dochi_rpg_maker` and the world before updating. Use ordinary rel
 
 ## JSON reference
 
-For external editors: the rule schema is `dochi.minigames.v1`, with types `monty`, `slots`, `memory`, `whack`, `timing`, `highlow`, `shooting` and `mob_battle`. `guiLayout` is relative to DRM's `gui/` folder and defaults to `minigames/minigames_gui.json`. Rule files do not store hidden answers or live sessions.
+For external editors: the rule schema is `dochi.minigames.v1`, with types `monty`, `slots`, `memory`, `whack`, `timing`, `highlow`, `shooting`, `mob_battle` and `roulette`. `guiLayout` is relative to DRM's `gui/` folder and defaults to `minigames/minigames_gui.json`. Rule files do not store hidden answers or live sessions.
 
 ## Standalone files and migration
 

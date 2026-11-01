@@ -14,11 +14,24 @@ tags:
   - journal
 ---
 
-## Storage And Runtime
+## Make the first NPC quest
 
-Each quest pack is stored under `config/dochi_rpg_maker/quests/<pack>/`. `pack.json` owns pack/category ordering and the `quests/` folder contains individual quest JSON files. The server owns quest progress and sends a journal view to the client.
+Open **Quest Editor → Create New** from the core's editor list. Use **+ Category** for a chapter, then **+ Quest** for a quest inside it. These are **DRM 0.3.1 / Forge 1.20.1** screenshots.
 
-The bundled sample pack is disabled. Duplicate or create a separate pack before production use.
+![Forge Quest Editor Info page with quest identity, acceptance sources and completion mode.](assets/media/guides/drm-031-forge1201/quest-info.png "Title is shown to players. NPC Interaction / Dialogue is on; Player Quest Journal is off. This Forge example uses Completion Mode: Turn in.")
+
+1. Fill **Info → Quest ID / Title / Description** with its reference name, player title and task.
+2. With **Start Policy → Manual Accept**, enable the acceptance source: **NPC Interaction / Dialogue** for dialogue, or **Player Quest Journal** for its Accept button.
+3. Add a goal with **Objectives → + Add** and choose its type and required count. A new goal may initially be **Dialogue Signal**, as below; check the type.
+4. Add rewards with **Rewards → + Add**.
+5. For **Completion Mode → Turn in**, provide a submission step after meeting the goals. **Automatic** completes after the goals are met. This differs from the NeoForge guide.
+6. **Save As** the pack and connect **quest_start** in the NPC dialogue. For Turn in, connect **quest_turn_in** in the completion dialogue too.
+
+![A new Dialogue Signal objective with Signal and Required fields.](assets/media/guides/drm-031-forge1201/quest-objective-detail.png "This objective does not count held items. It progresses when it receives the matching signal; match Signal with the dialogue quest_signal action.")
+
+Open the journal with **U** to test acceptance, progress, completion and actual reward delivery. The bundled sample pack is disabled; enable and save your own pack.
+
+Packs are saved in `config/dochi_rpg_maker/quests/<pack>/`. Copy the whole pack folder, including `pack.json` and `quests/`, when moving it.
 
 ## Quest Structure
 

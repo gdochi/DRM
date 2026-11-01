@@ -21,9 +21,11 @@ Current builds: DW 0.3.1 for Forge 1.20.1 and DW 0.3.1 for NeoForge 1.21.1. Vehi
 
 ## Requirements and editor
 
-Vehicle AI is an optional SuperbWarfare integration. Match the loader and supported version described in the installation guide. In Creative mode, hold `DW Npc Core` and right-click a supported vehicle. This opens a vehicle editor separate from the CustomNPCs NPC editor.
+Vehicle AI is an optional SuperbWarfare integration. Match the loader and supported version described in the installation guide. In Creative mode, hold `DW Npc Core` and right-click a supported vehicle. This opens a vehicle editor separate from the infantry NPC editor.
 
-DW uses the native engine's `processInput` or flight controls. SuperbWarfare continues to own engine physics, velocity, collision, energy, turrets, weapons, reloads, projectiles, and sounds; DW does not directly overwrite position, rotation, or velocity. A player who boards an AI vehicle is dismounted for safety, so disable AI before driving it. CustomNPC crew placed through the vehicle editor can remain aboard.
+DW uses the native engine's `processInput` or flight controls. SuperbWarfare continues to own engine physics, velocity, collision, energy, turrets, weapons, reloads, projectiles, and sounds; DW does not directly overwrite position, rotation, or velocity. A player who boards an AI vehicle is dismounted for safety, so disable AI before driving it. DNPC or CustomNPCs crew placed through the vehicle editor can remain aboard.
+
+![Vehicle Overview summary of detection, memory and friendly protection.](assets/media/guides/warfare-expanded-031-neo1211/dwe-ai.png "DWE 0.3.1 / NeoForge 1.21.1. Overview summarizes current values; vehicle settings are stored separately from infantry NPC Senses.")
 
 ## Movement modes
 
@@ -64,7 +66,7 @@ The `Weapons` page owns weapon enablement. Every native mount has independent se
 - Native/default or manual minimum and maximum range
 - Pause-before-fire behavior (except fixed-wing) and fire-wait ticks
 - Global ammo inheritance or per-weapon infinite/limited magazine, reserve, and reload timing
-- Always active or require a CustomNPC in the linked control seat
+- Always active or require DNPC/CustomNPCs crew in the linked control seat
 
 `Weapon use mode` selects only weapons that are ON and currently eligible, then uses one, a configured count, or every eligible weapon per attack opportunity. An OFF weapon does not participate in candidate or reference-range selection.
 
@@ -79,7 +81,9 @@ For an empty seat, `Board NPC` can use:
 - An NPC JSON clone from the server Entity Clone Library
 - An NPC-filled soul stone in the player's main inventory, armor, or offhand slot
 
-The server revalidates Creative permission, 64-block distance, seat state, NPC type, clone path, soul-stone slot, and faction hostility. A new NPC is sanitized of UUID, position, ownership, and live combat state, then placed in the exact selected seat. Only CustomNPC occupants can be dismounted from this editor.
+The server revalidates Creative permission, 64-block distance, seat state, NPC type, clone path, soul-stone slot, and faction hostility. A new NPC is sanitized of UUID, position, ownership, and live combat state, then placed in the exact selected seat. NPC crew can be dismounted from this editor. DNPC uses NPC JSON clones; soulstones are a separate source requiring CustomNPCs.
+
+![The Crew seat map of the base SuperbWarfare M1A2.](assets/media/guides/warfare-expanded-031-neo1211/dwe-crew.png "DWE 0.3.1 / NeoForge 1.21.1. Select a seat number to inspect its role and occupant on the right. This is an empty seat map, not a completed boarding result. It is the base SuperbWarfare vehicle, distinct from MCSP M1A2.")
 
 ## Profiles, soul stones, and clones
 

@@ -17,6 +17,8 @@ audience: 제작자 / 서버 운영자
 
 각 상자의 위치·크기·배경·테두리를 바꾸고 **Save As**한 뒤 대화에 연결합니다. [화면 꾸미기](#core-fabric/gui-system)에서 따라 할 수 있습니다.
 
+![GUI Maker에서 독립 Text 상자를 선택한 화면.](assets/media/guides/drm-031-neo1211/gui-text.png "DRM 0.3.1 / NeoForge 1.21.1. 왼쪽 + Text로 상자를 추가하고 오른쪽 Content에서 Direct input 또는 NPC name을 고릅니다. 가운데 Text 상자는 아래 Dialogue text 본문과 별개로 위치를 바꿀 수 있습니다.")
+
 ## DNPC 트레이너와 대화 연결
 
 기존 1.20.1·1.21.1에서는 호환 DNPC·Cobblemon Editor와 함께 위치 고정을 켠 트레이너의 대시·복귀를 사용할 수 있습니다.

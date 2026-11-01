@@ -14,7 +14,31 @@ tags:
   - editor
 ---
 
-## Role
+## Create Money For Your Shop
+
+Open **Currency Editor** from the core's editor selector. The following English screens are from **DRM 0.3.1 / NeoForge 1.21.1**.
+
+![Currency Editor with currency identity, icon, amount display, death rules and HUD settings.](assets/media/guides/drm-031-neo1211/currency-editor.png "Define a kind of money here. Set product prices separately in NPC Shop.")
+
+1. Set the display **Name**, such as `Town Coin`. The saved ID `town_coin` is separate.
+2. Open the magnifying glass beside **Item Icon**, choose a real item such as emerald, then **Apply** in the picker. An empty icon can block saving with `Invalid item icon`.
+3. Set the amount display, choose **Save As**, enter `town_coin` in **Currency ID**, then confirm with **Save As**. Shops and HUDs use this saved ID.
+4. Select the currency in [NPC Shop](#core-fabric/shop-system) and set product prices. Direct item exchange and payment from a DRM balance use different payment sources.
+5. To display its balance, add the same currency in [HUD Maker](#core-fabric/hud-maker).
+
+### Set one emerald to ten currency units
+
+Open **Convert items on pickup → Item Prices → Add Item** and search `minecraft:emerald`. Check only the emerald row and choose **Add Selected (1)**. Check it in the conversion list, set **Value / Item 10**, then press **Apply Selected**. Close the list and save the currency.
+
+![Saved town_coin conversion list with one emerald entry at Value / Item 10.](assets/media/guides/drm-031-neo1211/currency-emerald-prices.png "DRM 0.3.1 / NeoForge 1.21.1. The saved list was reopened here. Select the exact minecraft:emerald row rather than emerald ores or blocks. Verify pickup and the balance change separately.")
+
+### Money Players Can Carry
+
+Open **Physical currency** to configure a currency item. A value of `10` means one item represents ten units of that currency; it is separate from the number of products sold by a shop.
+
+![Currency Editor's Physical currency page with an item name, identity and value per item.](assets/media/guides/drm-031-neo1211/currency-physical.png "Configure the wallet balance and carried currency separately, then check which payment method the shop uses.")
+
+## Where Currency Is Used
 
 Use Currency Editor to choose money names, icons, pickup conversion and death losses. Select that currency in shops, rewards and HUDs.
 
@@ -87,10 +111,7 @@ When a shop uses multiple currencies, create all currencies first, then connect 
 
 ## HUD Connection
 
-For a currency to appear in HUD, two things must match.
-
-- The currency definition must allow display.
-- The active HUD set must contain a currency display component.
+Add a Currency component in [HUD Maker](#core-fabric/hud-maker) and select the saved currency. Configure its amount format, position and visibility in the HUD. Do not add obsolete display-permission fields to the currency definition.
 
 The server balance is authoritative. If the client display does not update, check `/drm currency reload` and the active HUD set.
 

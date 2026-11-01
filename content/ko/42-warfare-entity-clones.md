@@ -19,15 +19,17 @@ tags:
 
 `Entity Clone Library`는 두 종류의 서버 소유 JSON 템플릿을 보관합니다.
 
-* 현재 DW 설정을 포함한 CustomNPCs NPC
+* 현재 DW 설정을 포함한 DNPC 또는 CustomNPCs NPC
 * 원본 데이터와 재사용 DW 전투 설정을 포함한 지원 SuperbWarfare 차량
 
 NPC·차량 편집기의 `Save As`와는 다릅니다. 설정 프로필은 이미 존재하는 대상에 설정을 복사하고, 엔티티 클론은 정리된 새 엔티티를 만듭니다.
 
+![아직 저장한 클론이 없는 Entity Clone Library와 NPC·Vehicle 필터.](assets/media/guides/warfare-031-neo1211/dw-clones.png "DW 0.3.1 / NeoForge 1.21.1. 새 월드에는 저장 항목이 없을 수 있습니다. 먼저 대상 편집기의 Clone으로 보관한 뒤 이 목록에서 찾아 Summon합니다.")
+
 ## 템플릿 저장
 
 1. 크리에이티브 모드로 들어갑니다.
-2. `DW Npc Core`로 CustomNPCs NPC 또는 지원 SuperbWarfare 차량을 엽니다.
+2. `DW Npc Core`로 DNPC·CustomNPCs NPC 또는 지원 SuperbWarfare 차량을 엽니다.
 3. 편집기 상단의 `Clone`을 누릅니다.
 4. 이름을 입력하고 확인합니다. 같은 이름을 덮어쓰려면 두 번째 확인이 필요합니다.
 

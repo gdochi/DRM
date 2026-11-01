@@ -18,9 +18,11 @@ tags:
 
 ## 어디서 편집하나요?
 
-`Cobblemon Editor`에서 Trainer 또는 Pokemon Itself 문서를 연 뒤 `Rounds` 영역의 `배틀 룰 편집`을 누릅니다. 배틀 룰 화면은 제작자용 하위 에디터이며 독립 JSON을 저장하지 않습니다. `완료`로 돌아온 뒤 상위 Cobblemon Editor의 `Save` 또는 `Save As`로 Trainer/Pokemon Itself 문서를 저장해야 합니다.
+`Cobblemon Editor`에서 Trainer 또는 Pokemon Itself 문서를 연 뒤 **Battle Config → Rounds → Edit**를 누릅니다. Edit은 Battle Rules 설정을 엽니다. 배틀 룰 화면은 제작자용 하위 에디터이며 독립 JSON을 저장하지 않습니다. `완료`로 돌아온 뒤 상위 Cobblemon Editor의 `Save` 또는 `Save As`로 Trainer/Pokemon Itself 문서를 저장해야 합니다.
 
 화면 상단에는 DRM Core의 공유 Back/Forward 화살표가 항상 표시됩니다. 이동 기록이 없으면 숨지 않고 비활성화됩니다. 잘못된 숫자나 아이템 ID가 있으면 초안을 잃지 않도록 이동·완료를 막습니다.
+
+![1라운드의 Battle setup 화면.](assets/media/guides/cobble-029-neo1211/cobble-battle-rules.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. 위 Common과 1은 편집 범위이며 왼쪽 아래 Using common rules가 현재 상속 상태입니다. 오른쪽 기믹 허용과 NPC 기믹 장비 None을 구분합니다.")
 
 ## 공통 규칙과 라운드 규칙
 
@@ -74,9 +76,11 @@ Mega, Tera, Dynamax 허용은 플레이어와 NPC 양쪽의 서버 규칙입니�
 | 대상 HP 상한 | 대상의 현재 HP 비율이 설정값 이하일 때만 사용 |
 | 지닌물건 허용 | 끄면 지닌물건이 있는 참가 포켓몬 때문에 배틀 시작을 거부 |
 
-금지 목록은 최대 128개입니다. 우측 카탈로그에서 행을 누르면 즉시 금지 목록에 추가되고, 다시 누르거나 가운데 목록에서 해제하면 허용됩니다. 미설치 모드의 기존 ID도 아이콘 없는 항목으로 보존하므로 의도하지 않은 자동 삭제를 하지 않습니다.
+금지 목록은 최대 128개입니다. 우측 카탈로그에서 항목을 체크하고 **Add (선택 수)**로 추가합니다. 허용으로 되돌릴 항목은 가운데 금지 목록에서 체크하고 **Remove**로 뺍니다. 미설치 모드의 기존 ID도 아이콘 없는 항목으로 보존하므로 의도하지 않은 자동 삭제를 하지 않습니다.
 
 배틀 가방 아이템, 부활, 포획 아이템은 소비 전에 서버가 다시 검사합니다. 포획 투척은 허용된 시도부터 횟수에 포함되며, 여러 상대가 활성 상태면 HP 조건을 모두 만족해야 합니다. Creative 플레이어도 횟수 제한을 따릅니다.
+
+![금지 아이템을 체크해 추가하는 Items 화면.](assets/media/guides/cobble-029-neo1211/cobble-battle-rules-items.png "오른쪽 검색 → 체크 → Add 순서입니다. Add (0)은 아직 고른 항목이 없다는 뜻이며 가운데 금지 목록도 비어 있습니다. 전체 Allow battle items와 개별 금지 목록은 별도 설정입니다.")
 
 ## Legendary Pokémon
 

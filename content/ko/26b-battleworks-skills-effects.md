@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -119,6 +119,8 @@ Command 액션 입력에서는 앞의 `/` 없이 작성합니다. 실행자는 N
 BGM은 **현재 플레이어 타겟**에게 반복 재생됩니다. 반경 안의 모든 플레이어에게 자동 전송되는 방식이 아닙니다. 여러 NPC가 같은 플레이어를 노리면 최근 확보된 BGM 소유자가 우선합니다.
 
 플레이어의 **음악 볼륨**이 0이면 들리지 않습니다. 사용자 사운드라면 모든 수신 클라이언트에 리소스가 있어야 합니다. 기본 Minecraft 음악 억제는 별도 **Disable vanilla music** 설정이며 전투 시작·종료와 독립적입니다.
+
+![Combat Rules → BGM의 전투 음악 설정.](assets/media/guides/battleworks-016-neo1211/battleworks-bgm.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 현재 Enable BGM은 OFF이고 Sound ID는 비어 있습니다. 사용할 사운드를 Select로 고르고 켠 뒤 Volume·Pitch를 맞춥니다. 이 사진은 설정 위치를 보여 주며 실제 전투 음악 재생 완료 화면은 아닙니다.")
 
 ## 연출 확인 순서
 

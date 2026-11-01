@@ -2,7 +2,7 @@
 title: 씬 메이커
 slug: scene-maker
 order: 150
-description: Create and edit camera scenes in the world.
+description: 카메라·자막·소리를 시간에 맞춰 배치하고 월드에서 재생합니다.
 product: core-fabric
 category: Scene Maker
 section: scene-maker
@@ -11,13 +11,11 @@ version: 0.3.1
 audience: Creators / Operators
 ---
 
-## 이동 대상 카메라 보간
-
-Fabric·NeoForge 1.21.1과 별도 26.3의 Follow·Orbit·Path+LookAt 카메라는 대상 엔티티와 같은 프레임의 보간 위치를 사용합니다. 재생과 에디터 미리보기에서 움직이는 대상을 따라갈 때 발생하던 틱 단위 흔들림을 줄였습니다. 기존 Scene JSON이나 저장 설정을 바꿀 필요는 없습니다. Forge 1.20.1에는 Scene Maker가 없습니다.
-
 ## 첫 씬 만들기
 
 Scene Maker는 카메라 이동과 화면 효과를 배치하는 제작 도구입니다. 플레이어에게는 편집용 타임라인이 아니라 저장한 연출 장면이 재생됩니다.
+
+![Scene Maker의 10초 장면. 왼쪽은 카메라·자막 추가, 가운데는 미리보기와 타임라인, 오른쪽은 선택 항목의 Properties입니다.](assets/media/guides/drm-031-neo1211/scene-maker.png "DRM 0.3.1 / NeoForge 1.21.1. 왼쪽에서 추가하고, 아래 타임라인에서 고른 뒤 오른쪽에서 값을 정합니다. Apply Fields로 반영하고 Play로 확인합니다.")
 
 1. DRM 에디터 선택 화면에서 **Scene Maker**를 엽니다.
 2. 씬 이름과 길이를 정합니다. 플레이어를 기준으로 연출하려면 **Player**, 월드의 정해진 장소를 쓰려면 **Fixed Position**을 선택합니다. 필요에 따라 디멘션과 기준점을 정합니다. NPC 기준 위치는 제공하지 않습니다.
@@ -28,7 +26,7 @@ Scene Maker는 카메라 이동과 화면 효과를 배치하는 제작 도구�
 
 ## 타임라인 보기
 
-빨간 핀은 재생 위치입니다. 직접 잡아 끌 때 재생 위치가 바뀌며, 카드를 선택하는 것만으로는 움직이지 않습니다. 아래 가로 스크롤바는 보고 있는 시간 구간만 옮깁니다. 긴 씬은 이 스크롤바로 살펴보고, −/＋로 배율을 조절하세요. 반복 미리보기는 Loop 스위치로 켭니다.
+빨간 핀은 재생 위치입니다. 직접 잡아 끌 때 재생 위치가 바뀌며, 카드를 선택하는 것만으로는 움직이지 않습니다. 위 화면의 **Camera** 행은 카메라, **Effects** 행의 **opening / closing**은 시작과 끝 효과입니다. 아래 가로 스크롤바는 보고 있는 시간 구간만 옮깁니다. 긴 씬은 이 스크롤바로 살펴보고, −/＋로 배율을 조절하세요. 반복 미리보기는 Loop 스위치로 켭니다.
 
 ## 월드에서 핀 옮기기
 
@@ -78,3 +76,7 @@ Orbit 방식은 거리와 각도로 돌아가는 경로를 정합니다. Orbit �
 ## 전체 씬 중지
 
 `/drm scene stop @a`는 선택한 플레이어들의 현재 씬을 파일명 지정 없이 중지합니다. 명령어 루트는 `/drm scene`입니다. 별도 `/drmscene` 명령으로 안내하지 않습니다.
+
+## 움직이는 대상의 카메라
+
+Follow·Orbit·Path+LookAt은 움직이는 대상을 따라가는 연출에 사용합니다. 1.21.1과 별도 26.3 빌드는 대상의 움직임을 부드럽게 따라가도록 개선되었으며 기존 씬 파일을 바꿀 필요는 없습니다. Forge 1.20.1에는 Scene Maker가 없습니다.

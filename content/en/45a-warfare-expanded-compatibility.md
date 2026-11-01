@@ -36,3 +36,9 @@ Use current 0.3.1 patches of DW and DWE together. Follow [vehicle setup](#dochi-
 DNPC crews and ally protection are supported, with settings for handling crews when vehicles are destroyed. Ammo duplication and magazine overflow after changing settings during reload have been fixed.
 
 AH-6 ground-target fire, F-22 fixed-weapon aiming and excessive climbing near unloaded terrain were corrected. Automatic landing is not provided.
+
+## Check the vehicle after opening it
+
+After installing a vehicle pack, inspect its actual seats and roles in **Crew**. Continue with [vehicle AI](#dochi-warfare/warfare-vehicle-ai) for boarding sources and per-weapon crew requirements.
+
+![The Crew seat map of the base SuperbWarfare M1A2.](assets/media/guides/warfare-expanded-031-neo1211/dwe-crew.png "DWE 0.3.1 / NeoForge 1.21.1. Select a seat number to inspect its role and occupant on the right. This is an empty seat map, not a completed boarding result. It is the base SuperbWarfare vehicle, distinct from MCSP M1A2.")

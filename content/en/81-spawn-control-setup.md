@@ -33,6 +33,8 @@ Press **K**. If another mod uses it, change **Open Spawn Control** in Minecraft'
 6. Set chance, check interval, group size and population limits.
 7. Enable the rule and press **Save**.
 
+![Conditions immediately after Add Rule.](assets/media/guides/spawn-control-014-neo1211/spawn-rule.png "Spawn Control 0.1.4 / NeoForge 1.21.1. DNPC 0.1.2. This example selects the default DNPC entity, not a saved NPC template. The new rule is still off. Select your target, configure it, enable the rule and save.")
+
 ## Check the current location
 
 Use **Advanced diagnostics → Check current position** to see failed conditions. **Spawn one mob** creates a real mob. Use **Clean spawned entities** to remove test spawns.

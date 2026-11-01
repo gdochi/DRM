@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -20,19 +20,23 @@ Ordinary patterns are chosen by the manager. A passive requests a pattern when a
 
 Add one passive to an NPC whose ordinary attacks already work.
 
+Select the pattern, then **Core → Identity → Trigger: Pattern manager**. Open the Trigger list on the **Passive trigger** page. **When busy: Wait for completion** is the queue behavior; **Queue lifetime** controls how long it can wait.
+
 ## 1. Choose a basic queued trigger
 
 Open the pattern's **Core → Passive trigger**.
 
 | Trigger | Event |
 | --- | --- |
-| Manager | Ordinary scored selection |
-| Health Below | Cross from above to at/below a health threshold; an initial observation already below also qualifies |
+| Pattern manager | Ordinary scored selection |
+| Health threshold | Cross from above to at/below a health threshold; an initial observation already below also qualifies |
 | Melee Damage | Positive damage from a direct living attacker |
 | Ranged Damage | Positive projectile/indirect damage with a living owner |
 | Any Damage | Other eligible positive damage too |
 
 These four basic passives queue requests instead of interrupting the active timeline inside the damage callback. The additional immediate reaction types are described separately below.
+
+![Health threshold selected under Core → Passive trigger.](assets/media/guides/battleworks-016-neo1211/battleworks-passive-health.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Health 50%, trigger chance 100%, cooldown 100 ticks and queue lifetime 200 ticks are separate controls. [Passive] distinguishes this pattern in the list.")
 
 ## 2. Announce half health once
 

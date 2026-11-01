@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -54,6 +54,8 @@ tags:
 공통 규칙의 기본값은 마법 패링 On, 락온 On, 히트박스 디버그 Off입니다. 특정 NPC의 Pattern Core를 바꾸는 것과 전역 허용 설정을 바꾸는 것은 다릅니다.
 
 **Disable vanilla music**은 클라이언트의 별도 오디오 설정입니다. 보스 전투 중인지와 무관하게 기본 음악을 억제하며 음악 볼륨 숫자 자체를 덮어쓰지 않습니다. 전투 BGM 설정은 [스킬·사운드·대사](#mob-editor/battleworks-skills-effects)를 참고하세요.
+
+![Combat Rules의 Death와 비어 있는 사망 이벤트 목록.](assets/media/guides/battleworks-016-neo1211/battleworks-death.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 현재 Enabled는 꺼져 있고 Duration은 60틱입니다. 사망 연출을 만들 때 켜고 길이를 정한 뒤 Add Death Event로 이벤트를 넣습니다.")
 
 ## 5. 사망 후 짧은 안내 만들기
 

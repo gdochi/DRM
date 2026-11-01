@@ -14,11 +14,17 @@ tags:
   - migration
 ---
 
-This is a historical release record. See [DRM 0.2.8](#core/release-notes-0-2-8) for current guidance.
+This is a historical release record. See [DRM 0.3.1](#core/release-notes-0-3-1) for current guidance.
 
 Minecraft 1.20.1 · Forge
 
 This update adds a dedicated Tooltip Maker and gives creators more control over dialogue choices. It also improves item previews and fixes several HUD display problems.
+
+## Find Tooltip Maker
+
+Edit the item tooltip on the center canvas. Rendered Item displays the item; Tooltip Text adds text sections. Check Preview and Save As your own layout. Continue with the [current guide](#core/tooltip-maker) for saving and applying it.
+
+![Find Tooltip Maker.](assets/media/guides/drm-031-forge1201/tooltip-maker.png "DRM 0.3.1 / Forge 1.20.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
 
 ## Added
 

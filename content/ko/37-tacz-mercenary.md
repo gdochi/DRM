@@ -27,6 +27,8 @@ tags:
 
 `DW Mercenary Core`는 `DW Npc Core` 총기 편집기의 일부가 아닙니다. 별도 편집기를 열며 DW가 관리하는 CustomNPCs만 받습니다.
 
+![용병 고용 허용·비용·계약 시간·공격 시 반응을 정하는 Mercenary Contract Settings.](assets/media/guides/warfare-031-neo1211/dw-mercenary.png "DW 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1. DW 총기 설정을 먼저 NPC에 Save한 뒤 DW Mercenary Core를 들고 엽니다. 이 예제의 Hire available은 아직 OFF입니다.")
+
 ## 제작자 설정
 
 1. `DW Npc Core`로 NPC의 총기 전투를 먼저 설정하고 테스트합니다.

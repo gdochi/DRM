@@ -11,13 +11,11 @@ version: 0.3.1
 audience: Creators / Operators
 ---
 
-## Moving-target camera interpolation
-
-On Fabric/NeoForge 1.21.1 and separate 26.3 builds, Follow, Orbit and Path+LookAt sample the target's interpolated render position for the current frame. This reduces tick-step judder in playback and editor preview without changing scene JSON or saved settings. Forge 1.20.1 does not include Scene Maker.
-
 ## Make your first scene
 
 Scene Maker is a creator tool for arranging camera movement and screen effects. Players see the saved scene when it is played, not the editing timeline.
+
+![Scene Maker with a ten-second scene. Addition tools are on the left, preview and timeline in the middle, and selected Properties on the right.](assets/media/guides/drm-031-neo1211/scene-maker.png "DRM 0.3.1 / NeoForge 1.21.1. Add on the left, select a timeline card, then edit Properties. Use Apply Fields, followed by Play to inspect the result.")
 
 1. Open the DRM editor selector and choose **Scene Maker**.
 2. Choose your scene settings, name, and length. Use **Player** to place the scene relative to the player, or **Fixed Position** for a specific world location. Choose the dimension and origin as needed. NPC anchors are not offered.
@@ -29,6 +27,8 @@ Scene Maker is a creator tool for arranging camera movement and screen effects. 
 ## Move through the timeline
 
 The red pin is the playback position. Drag it deliberately to seek. Selecting a card does not seek. The bottom horizontal scrollbar moves the visible time range independently; use the minus/plus controls to adjust zoom. Use the Loop switch when you want repeated preview playback.
+
+In the screenshot, **Camera** contains the camera clip, while **opening / closing** in **Effects** marks the beginning and ending effects.
 
 ## Work with camera points
 
@@ -78,3 +78,7 @@ If a scene is not listed, check that it was saved and that its anchor and refere
 ## Stop all active scenes
 
 `/drm scene stop @a` stops the selected players' current scenes without naming a file. Use the `/drm scene` root; there is no separate `/drmscene` command.
+
+## Cameras Following A Moving Target
+
+Use Follow, Orbit or Path+LookAt for moving targets. The 1.21.1 and separate 26.3 builds follow their movement more smoothly without requiring existing scene files to change. Forge 1.20.1 does not include Scene Maker.

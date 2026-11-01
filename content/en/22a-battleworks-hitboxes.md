@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -28,6 +28,8 @@ A visible sword or animation does not create BattleWorks damage on its own. Conn
 
 Unattached hitboxes can be previewed, but actual execution timing belongs to a linked action.
 
+![Geometry and timing of the generated Wide Sweep Hitbox.](assets/media/guides/battleworks-016-neo1211/battleworks-hitbox-geometry.png "BattleWorks 0.1.6 / NeoForge 1.21.1. The model panel is folded using its header arrow. Damage 4, Reach 2.4 and Thickness 0.5 define the hitbox; the marker at tick 27 defines when it runs.")
+
 ## 2. Choose a shape
 
 | Shape | Main controls | Typical use |
@@ -36,7 +38,7 @@ Unattached hitboxes can be previewed, but actual execution timing belongs to a l
 | Sphere | Radius | Surrounding burst |
 | Cylinder | Radius, Height | Ground area |
 | Capsule | Thickness, Height | Rounded vertical volume |
-| Sweep | Radius, Thickness, angles, Sweep Steps | Curved slash |
+| Sweep | Reach, Thickness, angles, Sweep Steps | Curved slash |
 | Polygon | At least three vertices and Height | Irregular area |
 
 Sweep Steps samples the arc; it is not a hit count. Custom Sweep points replace the automatically generated arc.

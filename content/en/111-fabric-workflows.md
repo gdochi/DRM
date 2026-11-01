@@ -14,86 +14,48 @@ tags:
   - examples
 ---
 
-## Dialogue NPC
+## Build a village NPC in this order
 
-1. In `GUI Maker`, create a `dialogue` GUI and save it as `gui/my_dialogue_gui.json`.
-2. In `Dialogue Editor`, choose `Create New Dialogue Set`.
-3. Point `dialogueDefaultGui.guiJsonPath` at your GUI file.
-4. Make the `start` node route point to the first general node.
-5. Add text, choices, conditions, and actions to general nodes.
-6. For repeated flows, select nodes with `Shift+Click`, use `Copy` / `Paste`, and drag node/route/choice/condition/action rows into order.
-7. Use `Save As` and save to `dialogue_sets/my_npc_dialogue`.
-8. Right-click the target NPC with the core item and apply the dialogue.
-9. The saved dialogue opens as runtime dialogue when the NPC is right-clicked without the core item.
+Start with **one conversation scene → real interaction → shop or travel → custom appearance**. Default layouts are enough to test dialogue and transactions.
 
-## File-Based Shop NPC
+## Guide NPC: greeting and reply
 
-1. In `GUI Maker`, create an `npc_shop` GUI or use `default_shop_gui.json`.
-2. In `NPC Shop`, choose `Create New NPC Shop`.
-3. Set `id`, `title`, `tradeMode`, and `currency` or `currencyId`.
-4. Add buy products to `items` and sale offers to `sellItems`. Change a product's `Payment` from inherited to an item/DRM currency override when needed.
-5. For finite products, configure `Stock`, `Max Stock`, `Restock`, `Amount`, and `Interval`.
-6. Connect `shopDefaultGui`, and optionally `shopGuis.buy` and `shopGuis.sell`.
-7. Save as `npc_shops/blacksmith.json`.
-8. Add a dialogue `go_shop` action with `shop: "blacksmith"`.
-9. The selected dialogue choice opens the file-based shop.
+1. [Place a DNPC](#dochi-npc-core/npc-core-setup).
+2. Write a greeting in a general Dialogue Editor node and a question in Choices.
+3. Create its reply node and connect Goto. Point start Routes to the greeting.
+4. Save As `village_guide` and Apply Dialogue to the NPC.
+5. Empty both hands and test question → reply → close.
 
-## NPC-Bound Shop
+![An actual NPC reply after selecting the question.](assets/media/guides/drm-031-neo1211/dialogue-npc-reply.png "DRM 0.3.1 / NeoForge 1.21.1. Check the connection between the authored text and the reply the player actually sees.")
 
-1. Right-click the target NPC with the core item.
-2. Open `NPC Shop` for that NPC.
-3. Save the shop to saved NPC settings.
-4. Use a blank or `bound` `go_shop` value to open that NPC-bound shop.
+Follow the [conversation tutorial](#core-fabric/dialogue-system) for each screen. For a one-time gift, connect a claim tag as shown in [conditions and actions](#core-fabric/conditions-actions).
 
-This is convenient for one-off NPCs. File-based shops are easier when multiple NPCs share the same shop.
+## Shop NPC: sell one bread bundle
 
-## Teleporter NPC
+Select Bread in the default NPC Shop. Check Product quantity `3` and price `4`, and use emerald payment under Shop settings. Save As and Apply NPC Shop to the NPC.
 
-1. In `GUI Maker`, create a `teleporter` GUI or start with `default_teleporter_gui.json`.
-2. Open `Teleporter` from the shared editor selector, then choose `Create New` or clone the protected default with `Save As`.
-3. Add categories and destinations. Each destination uses coordinates and rotation in the player's current dimension.
-4. Configure interaction/destination conditions, locked presentation, fade ticks, sounds, and optional image/item media.
-5. Save as `teleporters/town_network.json`.
-6. Right-click the target CustomNPCs NPC with the core item. In NPC Apply, search `FUNCTION` for Teleporter, select the saved JSON, and choose `Apply Teleporter`.
-7. Right-click that NPC without the core item and verify search, category selection, destination details, and travel.
-8. To open it from dialogue instead, add `go_teleporter` with `bound` or an explicit set path.
+In the actual shop, check Bread and press **Buy Selected**. Verify **three bread granted, four emeralds taken and one stock bundle consumed** before adding other reward systems.
 
-The travel request is rechecked by the server for the current NPC binding, session distance/dimension, interaction conditions, and destination access conditions.
+![The actual shop after Bread was purchased.](assets/media/guides/drm-031-neo1211/shop-bread-purchased.png "DRM 0.3.1 / NeoForge 1.21.1. Server checks confirmed bread 0→3, emeralds 10→6 and Bread stock 12→11. The footer follows the currently selected product.")
 
-## NPC Spawner Block
+Follow [the shop tutorial](#core-fabric/shop-system). Add [Currency Editor](#core-fabric/currency-editor) when you need account money. Use Go Shop to connect the saved shop from a dialogue choice.
 
-1. Place `dochi_rpg_maker:npc_spawner` and right-click it with `dochi_rpg_maker:dialogue_editor`. You need edit permission and must remain within eight blocks.
-2. Put reusable templates under `npc_spawner/entity_clones/<classification>`, or keep a CustomNPCs Filled Soul Stone in your inventory for an saved NPC source.
-3. On `Source`, search/filter available sources, add up to 64 entries, and set each weight from 1 to 10,000.
-4. On `Spawn`, choose the mode, redstone gate, cooldown, target radius, offsets/radius, `Max Active`, and `Wave Size`.
-5. On `Conditions`, build the target condition group. On `Effects`, set visibility, particles, and Default/Item/Block appearance.
-6. Choose `Save`, enable the block, and test both spawn behavior and restart persistence.
+## Travel NPC: save a destination, then Travel
 
-`Max Active` is global across the whole weighted pool, while `Wave Size` is the number of spawn attempts. Reweighting or removing a source affects future selections; it does not remove unrelated NPCs that already spawned.
+In Teleporter Editor, name a destination and choose coordinates in the same dimension. Save As and Apply Teleporter to the NPC. Open it empty-handed, select the destination and press **Travel**.
 
-## Currency And HUD
+![Arrival at the saved Travel destination.](assets/media/guides/drm-031-neo1211/teleporter-arrived.png "DRM 0.3.1 / NeoForge 1.21.1. Server coordinates confirmed arrival at 20.5 / -60 / 0.5. The landmark was prepared beforehand for location checking.")
 
-1. In `Currency Editor`, create a currency ID and name.
-2. Set `itemIcon` to a real item ID such as `minecraft:emerald`.
-3. Enable `autoConvertOnPickup` if pickups should become balance.
-4. For death loss, set `deathRule: "LOSE"` and `deathLossPercent`.
-5. In `HUD Maker` or GUI Maker `currency_hud`, place currency display components.
-6. Run `/drm currency reload` so the server reads the new currency definition.
+See [the teleporter guide](#core-fabric/teleporter) for conditions and locked destinations. Use Go Teleporter to connect the saved set from dialogue.
 
-## Before Production
+## Extend a working NPC
 
-| Item | Rule |
+| Next task | Guide |
 | --- | --- |
-| Filenames | Dialogue set, GUI, shop, Teleporter, and currency filenames should match intended IDs. |
-| Defaults | Do not overwrite bundled defaults directly. |
-| Links | Dialogue/shop/Teleporter GUI and shop currency IDs should point to real files and definitions. |
-| World data | Keep file-based server JSON separate from saved NPC settings and NPC Spawner block-entity data. |
-| Reload | If server JSON is edited directly, run `/drm reload` or the matching reload command. |
+| Dialogue/shop appearance | [GUI Maker](#core-fabric/gui-system) |
+| Persistent health or money display | [HUD Maker](#core-fabric/hud-maker) |
+| Reuse an NPC at several spawn points | [DNPC templates and Spawn Control](#dochi-spawn-control/spawn-control-npc-templates) |
+| Older Core NPC Spawner | [Its own guide](#core-fabric/npc-spawner); CustomNPCs workflows belong only to older supported targets |
+| Move work to another server | [Folders](#core-fabric/paths) and [applying changes](#core-fabric/data-flow) |
 
-:::tip Production Copy
-Manage production data from the full `config/dochi_rpg_maker` folder and the world save. Data stored only in saved NPC settings or NPC Spawner blocks does not move with config file copies alone.
-:::
-
-:::tip Editing Shortcuts
-Supported editors use `Ctrl+S`, `Ctrl+Z`, and `Ctrl+Y` or `Ctrl+Shift+Z`. On protected defaults, create a new ID with `Save As` instead of quick-saving.
-:::
+After Save As under a new name, select that new file for the NPC too. Bring linked pictures, currencies and shops, and preserve world NPC placement and progress separately.

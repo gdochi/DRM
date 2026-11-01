@@ -16,13 +16,19 @@ tags:
   - forge
 ---
 
+## 저장한 팝업을 스크립트에서 띄우기
+
+먼저 [Popup Maker](#core/world-npc-tools)에서 제목·본문을 만들고 파일로 저장합니다. 스크립트는 그 파일 이름을 골라 플레이어에게 재생합니다. 아래 예시는 village_entry를 실제 저장한 뒤 나타나기 10틱·유지 80틱·사라지기 20틱으로 호출한 화면입니다.
+
+![실제 저장한 팝업을 스크립트에서 띄우기 결과.](assets/media/guides/drm-031-forge1201-apis/api-popup-shown.png "DRM 0.3.1 / Forge 1.20.1 + CustomNPCs. 실제 PopupScriptApi.timed 호출이 플레이어 1명에게 전송되고 Village Gate 팝업이 표시됐습니다. 지역 자동 진입 감지와 연결한 장면은 아닙니다.")
+
 ## 개요
 
 `drmPopup`은 팝업 메이커에서 저장한 정의 JSON을 서버 플레이어에게 재생하는 CustomNPCs 전역 스크립트 객체입니다. 스크립트에는 실제 연출 메서드만 노출됩니다. 정의 목록, 리로드, 편집 같은 관리 작업은 팝업 메이커 GUI에서 처리합니다.
 
 ```js
 function interact(event) {
-    drmPopup.show(event.player, "area_title.json");
+    drmPopup.show(event.player, "village_entry.json");
 }
 ```
 

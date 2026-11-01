@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -24,7 +24,7 @@ Begin with the working [first attack](#mob-editor/battleworks-first-attack).
 
 1. Load the first attack.
 2. Save As `bosses/training_captain.json`.
-3. Set maximum health around 100 in CustomNPCs.
+3. Set maximum health to **100** in DNPC **Combat AI → Max health**. For a supported legacy CustomNPCs actor, use its own stats screen.
 4. Check that old combat scripts are not competing.
 5. Keep the player's gear and health consistent between tests.
 
@@ -65,13 +65,17 @@ If movement dominates, check whether attacks are failing their range conditions 
 
 ## 5. Add phase 2
 
-1. Configure phase 1 at 100% and phase 2 at 50%.
+1. Open **Combat Rules → Boss Phases**. If P1 and P2 already exist, select P2 and set its threshold to **50**; Add only if it is absent. Keep P1 at 100%.
 2. Create a separate enhanced slash and set Min Phase 2.
 3. Keep ordinary attacks available in both phases.
 4. Before increasing damage, shorten enhanced Windup from 24 to 18.
 5. If too abrupt, tune between 20 and 24.
 
 Change timing, damage, or hit count one at a time.
+
+![The existing P2 health threshold saved at fifty.](assets/media/guides/battleworks-016-neo1211/battleworks-boss-phases-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Select P2 · Enraged on the left and save threshold 50 on the right. This artifact prefixes that caption with Format error; saving reports Warnings 0, and controlled server health 100/100 → 49/100 confirms phase 1→2.")
+
+The [first slash plus two-phase starter file](assets/media/battleworks/first_two_phases.json) is the exact native UI save shown above. It contains **one basic slash and two health phases**. Add the enhanced attack and enrage sequence in the following steps. Place it below `config/dochi_rpg_maker/mobs/patterns/`, Load it and save it to the NPC.
 
 ## 6. Connect the transition
 

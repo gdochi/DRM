@@ -30,6 +30,10 @@ Providers are required only for their optional content. Some built-in definition
 
 ## Public gameplay baseline
 
+![Preset selection in current MWENT.](assets/media/guides/minigames-016-neo1211/mwent016-faction-select.png "0.1.6 / NeoForge 1.21.1 illustrates preset selection; it is not an archived 0.1.1 screen. Later cards and tactics in current decks are excluded from this debut count.")
+
+Choose a preset on the left, inspect its cards on the right and press Use this deck. Follow the [current play guide](#mwent/how-to-play) for the full procedure.
+
 The release includes six factions—Volkar, Avalin, Nevra, Mistwake, Roden and Morga—plus neutral cards, faction leaders and decks. It includes placement, Orders, passing and round battles; vault storage, print variants, deck building and encyclopedia; packs and table matches. This page records the debut baseline. Use the [current guide](#mwent/start) for present-day operator UI and later card-authoring features.
 
 ## Next release

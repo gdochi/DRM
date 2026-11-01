@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -31,6 +31,8 @@ tags:
 
 이 순서를 쓰면 이름이 비슷한 다른 히트박스를 잘못 수정하는 일을 줄일 수 있습니다. 아직 패턴에 연결하지 않은 히트박스도 모양과 클립을 미리 볼 수 있지만, 실제 실행 시점은 연결한 액션에서 정합니다.
 
+![Wide Sweep Hitbox의 Geometry와 연결된 타격 시점.](assets/media/guides/battleworks-016-neo1211/battleworks-hitbox-geometry.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 모델 패널은 위 화살표로 접은 상태입니다. 오른쪽 Damage 4·Reach 2.4·Thickness 0.5는 판정 설정이고, 가운데 27틱 표시는 그 판정을 실행할 때입니다.")
+
 ## 2. 공격에 맞는 모양 고르기
 
 | Shape | 모양 | 주로 조절할 값 | 시작 용도 |
@@ -39,7 +41,7 @@ tags:
 | Sphere | 구 | Radius | NPC 주변의 원형 범위 공격 |
 | Cylinder | 수직 원기둥 | Radius, Height | 바닥 장판이나 세로 범위 |
 | Capsule | 끝이 둥근 수직 기둥 | Thickness, Height | 좁은 기둥 판정 |
-| Sweep | 굵기가 있는 연결 경로 | Radius, Thickness, 각도, Sweep Steps | 검을 휘두르는 호 |
+| Sweep | 굵기가 있는 연결 경로 | Reach, Thickness, 각도, Sweep Steps | 검을 휘두르는 호 |
 | Polygon | 평면 다각형에 높이를 준 모양 | 3개 이상의 점, Height | 불규칙한 바닥 영역 |
 
 **Sweep Steps**는 자동 곡선을 구성하는 점 수입니다. 공격 횟수나 초당 타격 수가 아닙니다. 직접 Points를 넣은 Sweep은 자동 원호 대신 그 경로를 사용합니다.

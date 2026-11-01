@@ -14,21 +14,47 @@ tags:
   - operations
 ---
 
-## Opening The Admin Screen
+## Enable the server tool first
 
-`F7` is the default DRM Admin key. The server still authorizes the request; a keybind does not grant permission.
+**The tested DRM 0.3.1 file on Forge 1.20.1 has an opening issue.** Applying the policy below succeeded, but opening the Admin inspection screen crashed the client. F7 inspection is not a verified working procedure in that file. The screenshots and successful player/tag operations below are from NeoForge 1.21.1; use the same setup path after obtaining a Forge build that fixes this issue.
 
-The screen can inspect and, when authorized, mutate player tags, DRM quest state, optional FTB Quests progress, advancements, CustomNPCs faction points, and CustomNPCs stored data. Available sections depend on installed integrations and server policy.
+A new server policy starts with DRM Admin **OFF**. F7 cannot open it in that state, even for an operator.
 
-## Safety Rules
+1. Join the world or server and right-click air with DRM Core.
+2. Open **Default Configs → Admin** at the bottom of the editor selector.
+3. Turn on **Enable DRM Admin** and click **Apply**.
+4. Wait for **Saved and applied on the server**.
+5. Close settings and press **F7**. Editing this policy requires operator permission level 2 or higher.
 
-- Select and verify the target player before every mutation.
-- Destructive or side-effecting changes require confirmation.
-- Resetting a DRM quest does not reclaim rewards that were already granted.
-- FTB Quests progress may be team-scoped and can affect other team members.
-- Keep server logs/audit data when diagnosing an operator action.
+![Enabling DRM Admin and applying its server policy.](assets/media/guides/drm-031-neo1211/admin-server-policy.png "DRM 0.3.1 / NeoForge 1.21.1. Apply actually saved enabled: true in config/dochi_rpg_maker-admin.json and received the server acknowledgement. This policy is separate from enabling the keyboard shortcut.")
 
-Use editor screens for authoring definitions. Use DRM Admin only for player-state operations and recovery.
+If F7 does nothing, also check **Keyboard shortcuts → Open DRM Admin** and Minecraft's key bindings. The server policy file is `config/dochi_rpg_maker-admin.json`, outside the `config/dochi_rpg_maker/` folder.
+
+## Choose a player and data category
+
+Read the panels left to right: **Players → Data categories → Data list → Edit tools**. Select the player first, then a category such as Tags, DRM Quests or Currency. Clicking a data row opens its details on the right.
+
+![The selected player in DRM Admin Overview.](assets/media/guides/drm-031-neo1211/admin-overview.png "DRM 0.3.1 / NeoForge 1.21.1. This is the single documentation player DocsGuide. Factions, FTB Quests, Trainer battles and Stored data are Unavailable because their integrations are absent in this environment.")
+
+**Checkboxes mark mutation targets**; the blue selected row chooses the details being viewed. Batch deletion and resets act on checked entries. Check the search results and player before selecting all.
+
+## Check a one-time gift record
+
+If the [one-time reward conversation](#core/dialogue-rewards) shows the wrong gift state, find `welcome_received` in that player's **Tags**. Its presence means the claim condition is met. Removing the tag for another test does not take back previously granted apples. No data on a new player means no tags exist yet. Enter a name under Tag to add and click Add to create one; check an existing tag before deleting it.
+
+![welcome_received added through DRM Admin and confirmed by the server.](assets/media/guides/drm-031-neo1211/admin-tag-added.png "DRM 0.3.1 / NeoForge 1.21.1. Entering welcome_received under Tag to add and clicking Add created this row. Server confirmed and the actual server player tag were checked. Delete is disabled because the row is not checked.")
+
+## State resets versus content editing
+
+| Task | Tool or effect |
+| --- | --- |
+| Change dialogue, products, objectives or rewards | Edit and apply the document in its authoring editor |
+| Inspect tags, balances or quest state | Select the player and category in DRM Admin |
+| Reset a quest | Changes progress; does not automatically reclaim granted items or money |
+| Change FTB Quests progress | May affect the player's team |
+| Change DNPC friendly/hostile relationships | Use DNPC relationships; these differ from CustomNPCs Factions here |
+
+CustomNPCs Factions and Stored data apply to supported older Minecraft targets. CustomNPCs is excluded on 26.3.
 
 ## 0.2.8 administration
 

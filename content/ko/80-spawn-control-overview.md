@@ -15,6 +15,8 @@ tags:
   - forge
 ---
 
+![자연 스폰 규칙을 만드는 Spawn Control.](assets/media/guides/spawn-control-014-neo1211/spawn-rule.png "Spawn Control 0.1.4 / NeoForge 1.21.1. DNPC 0.1.2. 왼쪽은 등장 대상, 가운데는 그 대상의 규칙, 오른쪽은 선택 규칙의 조건입니다. 설치형 스포너를 만들 때는 위 Placed Spawners로 다른 편집기를 엽니다.")
+
 ## 두 방식 중 하나로 시작하세요
 
 | 만들고 싶은 상황 | 사용할 것 |

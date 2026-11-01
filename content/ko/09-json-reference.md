@@ -14,6 +14,14 @@ tags:
   - reference
 ---
 
+## 화면에서 저장한 파일을 기준으로 보기
+
+대화·상점·GUI는 각 에디터에서 **Save As**하면 파일이 만들어집니다. 이 페이지는 다른 도구에서 만든 파일을 가져오거나 저장 내용을 직접 점검할 때 쓰는 참고입니다. 아래 JSON은 구조 요약이므로 빈 routes·items를 그대로 복사하면 완성된 대화나 상품이 생기지 않습니다.
+
+![대화 세트를 Save As로 저장한 화면.](assets/media/guides/drm-031-forge1201/dialogue-save-result.png "DRM 0.3.1 / Forge 1.20.1. village_guide는 세트 폴더 이름입니다. dialogue_set.json과 개별 노드 파일을 폴더째 보관합니다.")
+
+실행 가능한 예제가 필요하면 [1회 보상 대화](#core/dialogue-rewards)의 다운로드와 적용 순서를 사용하세요. 파일 위치는 [저장 경로](#core/paths)에서 작업별로 찾을 수 있습니다.
+
 ## 공통 규칙
 
 - 서버 JSON 경로는 `config/dochi_rpg_maker` 아래 상대 경로로 생각합니다.
@@ -162,20 +170,29 @@ GUI 요소는 `id`, `type`, `x`, `y`, `w`, `h`, `z`를 기본으로 갖습니다
 ```json
 {
   "type": "currency",
-  "id": "gold",
-  "name": "Gold",
+  "id": "town_coin",
+  "name": "Town Coin",
   "enabled": true,
   "iconType": "item",
-  "itemIcon": "minecraft:gold_nugget",
+  "itemIcon": "minecraft:emerald",
   "itemBacked": true,
   "autoConvertOnPickup": true,
   "displayFormat": "%s",
-  "hudAmountFormat": "compact",
   "deathRule": "KEEP",
   "deathLossPercent": 0,
-  "hudShowOnPickup": true
+  "conversionItems": [
+    {
+      "itemId": "minecraft:emerald",
+      "nbt": "",
+      "unitValue": 10
+    }
+  ]
 }
 ```
+
+![에메랄드 한 개의 환산 가치를 정한 화폐 화면.](assets/media/guides/drm-031-forge1201/currency-emerald-prices.png "DRM 0.3.1 / Forge 1.20.1. Item Prices의 minecraft:emerald와 Value / Item 10이 conversionItems의 itemId·unitValue에 해당합니다. 이 사진은 정의 저장 확인이며 실제 습득 환전 결과는 아닙니다.")
+
+HUD 모양과 표시 조건은 화폐 정의의 옛 hudAmountFormat·hudShowOnPickup 값 대신 [HUD Maker](#core/hud-maker)에서 설정합니다.
 
 화폐 ID는 소문자, 숫자, 밑줄, 대시, 점을 사용합니다. `deathRule`은 `KEEP` 또는 `LOSE`입니다.
 

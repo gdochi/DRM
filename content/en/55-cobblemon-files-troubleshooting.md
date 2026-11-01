@@ -15,6 +15,13 @@ tags:
   - release
 ---
 
+
+## Check the saved file and NPC binding first
+
+**Save As stores a server file; NPC Apply attaches a role to a world NPC.** If the file exists but the NPC is unchanged, check its selected role and source path. Apply Trainers through [NPC Apply’s vs Trainer](#drm-cobblemon-editor/cobblemon-trainer-editor); roles such as Starter Selector provide their own Apply to NPC button.
+
+![Starter Selector saved as custom/village_starters.json.](assets/media/guides/cobble-029-neo1211/cobble-starter-save.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. Current File on the left and Saved below confirm the file save. This belongs under starter_selectors, a different domain from Trainer files.")
+
 ## Save-path map
 
 All server-edited JSON starts under `config/dochi_rpg_maker`.

@@ -27,6 +27,13 @@ Enable an entry in the vehicle editor's gimmick list, set its conditions, and sa
 | Hit sidestep | Moves perpendicular to the target direction after sufficient damage. |
 | Bombing | Uses `LEVEL`, `DIVE`, or `CARPET` on validated fixed-wing aircraft with free-fall weapons. |
 
+1. Open the vehicle with **DW Npc Core**, then select **Gimmicks** on the left.
+2. Select a reaction name, configure its conditions and timing on the right, and switch its **OFF** button on.
+3. Configure firing cues per weapon under **Weapons → chosen weapon → Fire wait / Preparation cue**. A zero firing wait produces no cue.
+4. Check **AI enabled** and the movement mode, then **Save**. The screenshot below is the initial state with AI and reactions still off.
+
+![The M1A2 Gimmicks list and Shot preparation cue instructions.](assets/media/guides/warfare-expanded-031-neo1211/dwe-reactions.png "DWE 0.3.1 / base SuperbWarfare M1A2 / NeoForge 1.21.1. Show: supported only filters reactions for this vehicle. OFF is the unconfigured state, not a running effect.")
+
 ## Health and timing
 
 For 500 maximum HP, **2% health loss** means at least 10 actual HP lost since the previous AI update. **25% remaining health** means 125 HP or less. Low-health reactions require recovery above the threshold by 5 percentage points before rearming.
@@ -37,7 +44,7 @@ For 500 maximum HP, **2% health loss** means at least 10 actual HP lost since th
 
 Simultaneous movement priority is hit retreat → hit sidestep → low-health escape → reload retreat. Reactions use existing home bounds and navigation without teleporting. Disable movement in `STATIONARY` or `HOLD` to block reactions in those modes. Firing during a reaction still respects normal stop-before-fire, aim, and safety rules.
 
-Combat dismounts affect existing CustomNPCs transport passengers on wheel/track vehicles. Drivers, gunners, weapon seats, and players are excluded. Unsafe exits prevent dismounting. It neither creates NPCs nor automatically boards them again; per-seat/NPC completion records persist.
+Combat dismounts affect existing DNPC or CustomNPCs transport passengers on wheel/track vehicles. Drivers, gunners, weapon seats, and players are excluded. Unsafe exits prevent dismounting. It neither creates NPCs nor automatically boards them again; per-seat/NPC completion records persist.
 
 ## Bombing versus support calls
 

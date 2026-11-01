@@ -13,18 +13,20 @@ audience: Creators
 
 ## 준비
 
-현재 Fabric·NeoForge Cobblemon Editor 0.2.4와 같은 로더의 DRM 0.2.4 이상을 사용합니다. 현재 Core는 0.2.5이며 애드온이 DRM 퀘스트에 `Trainer Victory` 목표를 추가합니다.
+현재 확인한 환경은 Cobblemon Editor **0.2.9 + DRM 0.3.1 + DNPC 0.1.3 / NeoForge 1.21.1**입니다. 애드온이 DRM 퀘스트에 **Trainer Victory** 목표를 추가합니다. 먼저 트레이너에 읽기 쉬운 ID를 정하고 퀘스트에도 같은 ID를 연결합니다.
 
 ## 트레이너 ID 연결
 
 1. Cobblemon Editor에서 전투 유형을 `Trainer`로 선택합니다.
-2. 트레이너 이름 아래의 Trainer ID 설정을 엽니다.
+2. **Battle Config → General → Set ID**를 엽니다. 화면의 필드 이름은 **NPC ID**입니다.
 3. `gym_brock`처럼 알아보기 쉬운 ID를 입력하고 `Use ID`를 누릅니다. 기존 ID이면 재사용하고, 없는 ID이면 생성해 바로 연결합니다.
 4. 문서를 저장하고 전투 NPC에 적용합니다.
 
 ID는 앞뒤 공백을 제거하고 소문자로 정리됩니다. 영문 소문자·숫자로 시작하며 영문 소문자, 숫자, `_`, `.`, `-`를 사용할 수 있고 최대 64자입니다. NPC 이름이나 JSON 파일 이름은 트레이너 ID를 대신하지 않습니다.
 
 ID 설정 목록에는 현재 불러온 퀘스트의 트레이너 승리 목표가 표시됩니다. 검색해서 기존 퀘스트의 트레이너 ID를 선택할 수도 있습니다. 퀘스트를 먼저 설계했다면 이 목록에서 연결하세요. 월드에 NPC를 먼저 배치할 필요는 없습니다.
+
+![NPC ID를 gym_guide로 입력한 실제 선택창.](assets/media/guides/cobble-029-neo1211/cobble-trainer-id-entry.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. 위 NPC ID와 Use ID로 연결합니다. 아래 Search quests는 기존 퀘스트에서 ID를 가져오는 목록이며, 이 실행에는 일치하는 퀘스트가 없습니다. ID 연결 화면 확인과 실제 승리 횟수 집계 검증은 별도입니다.")
 
 ## 퀘스트 목표 만들기
 

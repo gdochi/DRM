@@ -16,6 +16,15 @@ tags:
   - audio
 ---
 
+
+## 글자 하나를 움직여 보기
+
+Battle Presentation Maker에서 **Element → Add Label → Content**로 글자를 추가합니다. Label은 본문, Font Size는 글자 크기, Color는 글자 색입니다. 위치와 상자는 Layout, 등장·이동 시간은 Animation에서 따로 정합니다.
+
+![Label을 추가한 뒤 연 Content 속성.](assets/media/guides/cobble-029-neo1211/cobble-layer-content.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. 오른쪽 Label의 {opponent_name}은 상대 이름으로 바뀝니다. 현재 커서는 0틱이고 Fade In 시작점이라 캔버스의 글자가 아직 보이지 않습니다. Play로 활성 구간을 확인합니다.")
+
+![같은 Label의 Animation 속성.](assets/media/guides/cobble-029-neo1211/cobble-layer-animation.png "Start/End Tick은 보이는 구간, Start/Final X는 출발·도착 위치입니다. 예시는 0~144틱 동안 X 280→360, Y 220을 유지하며 크기 0.8→1로 변합니다. 아래 타임라인과 같은 요소를 선택했는지 확인하세요.")
+
 ## Label, Texture, Color의 차이
 
 | Type | 실제 렌더 | 중요한 설정 |

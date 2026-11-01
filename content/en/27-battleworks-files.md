@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -60,6 +60,8 @@ NPC NBT stores a combat path and small flags instead of a full JSON copy.
 
 Load opens the file. Apply binds it. See [save/apply behavior](#mob-editor/mob-editor-setup).
 
+![The combat file saved on the server and bound to a DNPC.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. The title abbreviates the path; the verified file is config/dochi_rpg_maker/mobs/patterns/training/first_sword.json. Transfer this file with the NPC to another server.")
+
 ## 4. Refresh external edits
 
 1. Back up the JSON.
@@ -75,6 +77,7 @@ Combat reads cached data instead of polling disk every tick. Catalog Refresh alo
 
 | File | Folder | Preparation |
 | --- | --- | --- |
+| [first_sword.json](./assets/media/battleworks/first_sword.json) | `mobs/patterns/training/` | Saved, applied and damage-tested with BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1 |
 | [training_swordsman.json](./assets/media/battleworks/training_swordsman.json) | mobs/patterns/training/ | Normal humanoid NPC with a hostile CustomNPCs target |
 | [training_ring.json](./assets/media/battleworks/training_ring.json) | particles/ | Particle Maker or the particle command |
 

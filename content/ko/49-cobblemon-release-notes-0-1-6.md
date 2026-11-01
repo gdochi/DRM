@@ -14,11 +14,16 @@ tags:
   - changelog
 ---
 
+
+이 페이지는 **0.1.6 당시의 변경 기록**입니다. 현재 설치는 [0.2.9 설치 안내](#drm-cobblemon-editor/cobblemon-editor-setup), 실제 규칙 편집은 [배틀 룰](#drm-cobblemon-editor/cobblemon-battle-rules)을 보세요.
+
+![라운드별 배틀 설정을 확인하는 현재 화면.](assets/media/guides/cobble-029-neo1211/cobble-battle-rules.png "현재 0.2.9 / NeoForge 1.21.1 영문 화면으로 공통·라운드별 규칙 구조를 보여 줍니다. 0.1.6 당시 촬영본은 아니며 이후 추가된 조작도 포함할 수 있습니다.")
+
 ## 한눈에 보기
 
 0.1.6은 배틀 설정을 공통/라운드별 룰로 재구성하고, Cobblemon 1.7.3과 1.8.0을 하나의 JAR로 지원합니다. 트레이너 사운드, 습득 가능 기술 목록, 아이템 제한, 광역기 AI 평가와 에디터 탐색도 현재 구현에 맞게 보완되었습니다.
 
-## 설치·호환성
+## 0.1.6 당시 설치·호환성
 
 - Minecraft 1.21.1, Java 21, Fabric Loader 0.17.2+, Fabric API 0.116.6+1.21.1+
 - 필수: DRM Core 0.1.9+, Cobblemon 1.7.3 이상 1.9.0 미만, CustomNPCs Fabric 1.0.0

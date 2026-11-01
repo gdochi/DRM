@@ -25,6 +25,9 @@ tags:
 
 **Close**나 뒤로·앞으로 화살표는 저장 버튼이 아닙니다. 화면을 옮기기 전에 작업을 저장하세요.
 
+![NPC Apply의 왼쪽 기능·가운데 파일·오른쪽 적용 결과.](assets/media/guides/drm-031-forge1201/npc-apply-result.png "DRM 0.3.1 / Forge 1.20.1. Save As로 파일을 만든 뒤 이 화면에서 대상 NPC에 연결합니다. 이 예제는 Dialogue에 village_guide가 표시됩니다.")
+
+
 ## 대화 내용과 창 모양은 따로 만듭니다
 
 ‘안녕하세요’라는 대사와 선택지는 **Dialogue Editor**, 그 대화를 담을 창의 위치·색·이미지는 **GUI Maker**에서 만듭니다. 상품과 가격은 **NPC Shop**에서 정합니다.

@@ -16,6 +16,12 @@ tags:
   - forge
 ---
 
+## Let an NPC cast an installed spell
+
+This API connects an installed provider’s spell to a CustomNPCs caster. Check that the provider is present and the spell is available before casting. The screen shows an actual level-one Iron’s Spells Fireball call. To configure timing, range and phases through an editor, use [BattleWorks skills and effects](#mob-editor/battleworks-skills-effects).
+
+![Actual let an npc cast an installed spell result.](assets/media/guides/drm-031-forge1201-apis/api-skill-fireball.png "DRM 0.3.1 / Forge 1.20.1 with CustomNPCs and Iron’s Spells 3.4.0.9. The call returns success and produces the real spell effect; the prepared cow’s server health changes from 100 to 90. This single case is not a universal damage value for other levels or defenses.")
+
 ## Overview
 
 `drmSkill` is a global CustomNPCs script object that lets a CustomNPCs NPC cast public spells, effects, and projectiles supplied by other Forge mods. DRM 0.1.4 includes these providers:

@@ -15,6 +15,14 @@ tags:
   - pokemon-itself
 ---
 
+## 어느 라운드의 조건과 보상인지 먼저 확인하기
+
+**Battle Config → Conditions**에서 위쪽 라운드 번호를 확인하고 **Add**로 조건을 넣습니다. **All (AND)**는 모두 만족해야 하는 묶음입니다.
+
+![라운드 1의 Conditions 목록과 All AND.](assets/media/guides/cobble-029-neo1211/cobble-conditions.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1 영문 화면. 다른 라운드로 옮겼다면 상단 Editing 표시를 다시 확인합니다.")
+
+![After Actions의 Action mode와 Run policy.](assets/media/guides/cobble-029-neo1211/cobble-after-actions.png "After Actions에서 Action mode는 실행 순서, Run policy는 반복 실행 정책입니다. 대화를 끝낸 뒤 보상을 주려면 기본 All에서 Sequential로 바꾸고 대화 뒤에 보상 액션을 둡니다.")
+
 ## 대화 후 순차 보상
 
 대화 완료를 기다린 뒤 다음 보상을 지급하려면 Trainer Editor의 Action Mode를 Sequential로 설정합니다. 라운드당 대화는 한 개이며 취소·접속 종료 후에는 후속 지급을 중단합니다. 재접속·서버 재시작 뒤 NPC와 다시 상호작용해 남은 액션을 이어갑니다. [설정 순서](#drm-cobblemon-editor/cobblemon-trainer-editor)를 확인하세요.

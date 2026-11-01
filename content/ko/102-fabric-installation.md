@@ -45,6 +45,8 @@ DRM만으로도 기본 편집 도구를 열 수 있습니다. NPC를 만들려�
 
 기본 예제와 설정 폴더는 첫 실행 때 생성됩니다. Fabric은 Item Editor·Stat Builder를 제공하지 않습니다.
 
+![설치 후 코어로 여는 에디터 선택 화면.](assets/media/guides/drm-031-neo1211/editor-selector.png "DRM 0.3.1 / NeoForge 1.21.1. Dialogue Editor를 고르면 오른쪽에 Load·Use Default·Create New가 나옵니다. 처음에는 Use Default로 예제를 열고 Save As로 자신의 작업을 저장합니다. 추가 모드에 따라 목록은 달라집니다.")
+
 ## 서버를 옮길 때
 
 `config/dochi_rpg_maker/`와 월드를 함께 보관합니다. 설정 파일만 옮기면 배치한 NPC·퀘스트 진행도·스포너 상태는 따라가지 않습니다.

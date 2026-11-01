@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Reference
-version: 0.1.5
+version: 0.1.6
 audience: Creators editing JSON directly
 tags:
   - battleworks
@@ -19,6 +19,10 @@ tags:
 Beginners can follow the [editor exercise](#mob-editor/battleworks-first-attack) without memorizing the schema. This page is for inspecting or modifying external files.
 
 Download the [complete combat sample](./assets/media/battleworks/training_swordsman.json) and [particle sample](./assets/media/battleworks/training_ring.json). They use different schemas and folders.
+
+![A first attack saved through the BattleWorks screen.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Save a pattern through the editor first, then compare its file and fields. Entering the complete JSON below is not required to begin.")
+
+For a short native save with verified DNPC damage, use the first_sword download in [first attack](#mob-editor/battleworks-first-attack). Continue with the [boss exercise](#mob-editor/battleworks-encounters) for two phases.
 
 ## 1. Top-level fields
 
@@ -38,17 +42,17 @@ Download the [complete combat sample](./assets/media/battleworks/training_swords
 | previewNpcModel / previewTexture | Detached-preview data |
 | particleEffects | Older inline effect compatibility data |
 
-New particle work should use a separate particleFile reference. Prepare name, equipment, factions, drops, and respawn in CustomNPCs. Imported npcStats can override selected health/speed/regeneration behavior. Preserve unknown data and opaque model snapshots when editing existing documents.
+New particle work should use a separate particleFile reference. Prepare name, equipment, factions, drops and respawn in the editor belonging to your NPC: DNPC’s own editor or the supported legacy CustomNPCs editor. Imported npcStats can override selected health/speed/regeneration behavior. Preserve unknown data and opaque model snapshots when editing existing documents.
 
 ## 2. Apply the sample
 
 1. Save the complete object below or download it.
 2. Place it at config/dochi_rpg_maker/mobs/patterns/training/training_swordsman.json.
-3. Prepare a normal humanoid NPC, sword, base stats, and hostile target in CustomNPCs.
+3. Prepare a normal humanoid DNPC or supported legacy CustomNPCs actor, a sword and base stats.
 4. Load and check validation.
 5. Apply and test in Survival.
 
-The sample needs no optional spell or animation provider. Main-hand swing targets normal humanoids, not Gecko or modded-entity models. Fallback scanning is disabled, so CustomNPCs must supply the target.
+The sample needs no optional spell or animation provider. Main-hand swing targets normal humanoids, not Gecko or modded-entity models. Fallback scanning is enabled in this example. After editing in Creative, switch to Survival to check target acquisition, visibility, range and actual attacks.
 
 ## 3. Complete combat document
 
@@ -60,7 +64,7 @@ This is one complete JSON object with no comments or omissions. Damage 4 is conf
   "id": "training_swordsman",
   "displayName": "Training Swordsman",
   "enabled": true,
-  "description": "Beginner Forge 1.20.1 / BattleWorks 0.1.5 example. Normal humanoid NPC; CustomNPCs supplies the hostile target.",
+  "description": "BattleWorks 0.1.6 teaching sample. Normal humanoid DNPC or supported legacy actor; fallback target scanning enabled.",
   "combat": {
     "suppressNativeAttacks": true,
     "suppressCustomNpcScripts": false,
@@ -69,7 +73,7 @@ This is one complete JSON object with no comments or omissions. Damage 4 is conf
     "combatResetDelayTicks": 100,
     "retryDelayTicks": 10,
     "targeting": {
-      "scanWhenNoTarget": false,
+      "scanWhenNoTarget": true,
       "scanRange": 16,
       "requireLineOfSight": true,
       "fovDegrees": 360,

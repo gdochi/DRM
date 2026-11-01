@@ -25,7 +25,9 @@ The mercenary workflow deliberately separates creator tools from player in-game 
 | `Mercenary Contract` confirmation | Player | Review cost, duration, roster usage, and owner-attack terms before paying. |
 | `Mercenary Status` command HUD | Player with active contracts | Inspect, select, command, summon, recall, or release hired mercenaries. |
 
-`DW Mercenary Core` is not part of the `DW Npc Core` firearm editor. It opens a separate editor and accepts only DW-managed CustomNPCs.
+`DW Mercenary Core` is not part of the `DW Npc Core` firearm editor. It opens a separate editor and accepts DW-managed DNPC or CustomNPCs NPCs.
+
+![Mercenary Contract Settings for availability, payment, duration and owner attacks.](assets/media/guides/warfare-031-neo1211/dw-mercenary.png "DW 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1. Save the NPC’s firearm setup first, then open it while holding DW Mercenary Core. Hire available is still OFF in this example.")
 
 ## Creator setup
 

@@ -11,19 +11,21 @@ version: Fabric / NeoForge 0.2.9
 audience: 보스전 제작자 / 서버 운영자
 ---
 
-## DNPC 배우 소스
+## 배틀에 등장할 NPC 고르기
 
-최신 수정본에서는 배틀 스케줄러의 배우 소스로 에디터 클론 또는 NPC 템플릿을 고를 수 있습니다. 실제 DNPC 역할이 저장된 소스를 선택하고 등장·배틀·복귀·정리를 확인하세요. 구형 CNPC 클론과 DNPC 템플릿을 이름만으로 자동 변환하지 않습니다.
+**Actor**에서 에디터 클론 또는 NPC 템플릿을 고릅니다. 완성한 DNPC 트레이너를 다시 쓰려면 먼저 [Clone Library](#drm-cobblemon-editor/cobblemon-clone-library-spawner)에 역할과 함께 저장하세요. 그다음 Arena의 위치와 Sequence의 장면을 연결합니다. 기존 CustomNPCs 클론과 DNPC 템플릿은 저장 형식이 다르므로 같은 이름만으로 바꾸어 쓸 수 없습니다.
 
 ## 무엇을 연결하나요?
 
-배틀 스케줄러는 **NPC 클론 소환 → 등장 장면 → 배틀 프레젠테이션 → Cobblemon 배틀 → 기존 보상·진행 처리 → 결과 장면 → 배우 정리·퇴장**을 연결합니다. Minecraft 1.21.1의 Fabric·NeoForge Cobblemon Editor 0.2.4에서 사용할 수 있습니다. RCT는 필수가 아닙니다.
+배틀 스케줄러는 **NPC 클론 소환 → 등장 장면 → 배틀 프레젠테이션 → Cobblemon 배틀 → 기존 보상·진행 처리 → 결과 장면 → 배우 정리·퇴장**을 연결합니다. Minecraft 1.21.1의 Fabric·NeoForge Cobblemon Editor 0.2.9에서 사용할 수 있습니다. RCT는 필수가 아닙니다.
 
 클론은 NPC 객체와 외형을 제공하고 Trainer 또는 Pokemon Itself JSON은 배틀 설정을 제공합니다. Scene Maker 장면은 등장·결과 연출, Battle Presentation Maker는 배틀 진입 연출입니다. 저장한 클론 원본은 스케줄러 실행 중 바꾸지 않습니다.
 
+![Actor·Arena·Sequence·Policy·Preview와 Validate·Run이 있는 배틀 스케줄러.](assets/media/guides/cobble-029-neo1211/cobble-scheduler.png "0.2.9 / NeoForge 1.21.1. Actor에서 배우 소스를 고른 뒤 Arena의 위치, Sequence의 연출, Policy의 시작 조건을 연결합니다. Enabled만 켜는 것으로 소환되지 않습니다.")
+
 ## 첫 보스전 만들기
 
-1. CNPC 서버 클론과 정상 작동하는 Trainer 또는 Pokemon Itself 배틀 JSON을 준비합니다.
+1. 사용할 NPC 클론 또는 템플릿과 정상 작동하는 Trainer 또는 Pokemon Itself 배틀 파일을 준비합니다.
 2. DRM 애드온 에디터 목록에서 **배틀 스케줄러**를 엽니다.
 3. **배우**에서 클론을 고르고 **기존 설정 사용** 또는 **새 JSON 적용**을 선택합니다. 기존 클론에 배틀 연결이 없다면 새 JSON을 적용하세요.
 4. **구역**에서 방 ID·영역·배우 위치·플레이어 위치·퇴장 위치와 방향을 정합니다. 현재 위치를 가져오면 해당 월드도 기록합니다.

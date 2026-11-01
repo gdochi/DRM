@@ -13,7 +13,7 @@ audience: 제작자 / 운영자
 
 ## 문서 범위
 
-**Fabric·NeoForge 1.21.1은 이 문서 묶음을 함께 사용합니다.** 대화, NPC Shop, GUI Maker, 화폐, HUD, 퀘스트, Scene Maker와 Core NPC Spawner의 제작 순서는 같습니다. 로더를 고르면 설치 파일과 플랫폼 의존성만 해당 빌드에 맞춥니다.
+**Fabric·NeoForge 1.21.1은 이 문서 묶음을 함께 사용합니다.** 대화, NPC Shop, GUI Maker, 화폐, HUD, 퀘스트, Scene Maker와 Core NPC Spawner의 제작 순서는 같습니다. 설치 파일은 같은 Minecraft·로더용으로 고릅니다. 적용 버튼·퀘스트 완료 방식·HUD 적용처럼 차이가 있는 부분은 각 안내의 로더 표시를 따릅니다.
 
 Forge 1.20.1은 별도 문서 묶음입니다. 사이트 주소의 `core-fabric`은 기존 링크를 유지하기 위한 식별자이며 NeoForge 사용자도 이 항목을 이용합니다.
 
@@ -21,11 +21,11 @@ Forge 1.20.1은 별도 문서 묶음입니다. 사이트 주소의 `core-fabric`
 
 | 로더 | Minecraft | DRM | Java | NPC 연동 (선택) |
 | --- | --- | --- | --- | --- |
-| Forge 47+ | 1.20.1 | 0.2.9 | 17 | CustomNPCs 1.20.1 호환 빌드 (선택) |
-| Fabric | 1.21.1 | 0.2.9 | 21 | CustomNPCs Fabric 호환 빌드 (선택) |
-| NeoForge 21.1+ | 1.21.1 | 0.2.9 | 21 | CustomNPCs NeoForge 1.21.1 호환 빌드 (선택) |
+| Forge 47+ | 1.20.1 | 0.3.1 | 17 | DNPC 또는 호환 CustomNPCs |
+| Fabric | 1.21.1 | 0.3.1 | 21 | DNPC 또는 호환 CustomNPCs |
+| NeoForge 21.1+ | 1.21.1 | 0.3.1 | 21 | DNPC 또는 호환 CustomNPCs |
 
-Fabric에는 Loader 0.18.0 이상과 Fabric API 0.116.11+1.21.1 이상도 필요합니다. 자세한 설치 파일과 선택 설치은 [설치 준비](#core-fabric/installation)에 있습니다.
+Fabric에는 Loader 0.18.0 이상과 Fabric API 0.116.11+1.21.1 이상도 필요합니다. 자세한 설치 파일과 선택 설치는 [설치 준비](#core-fabric/installation)에 있습니다.
 
 ## 제작 데이터 이동
 
@@ -38,6 +38,12 @@ Fabric에는 Loader 0.18.0 이상과 Fabric API 0.116.11+1.21.1 이상도 필요
 5. 대화, 구매·판매·재입고, 퀘스트 보상과 재접속 후 상태를 확인합니다.
 
 제작 기능을 함께 안내하더라도 Minecraft/모드 ID와 CustomNPCs 월드 데이터가 자동 변환되지는 않습니다. Core의 `dochi_rpg_maker:npc_spawner`와 별도 Spawn Control 애드온의 스포너 문서는 각각의 경로에서 사용합니다.
+
+## 옮긴 대화가 실제 NPC에 연결됐는지 확인
+
+파일을 옮긴 뒤에도 DRM Core로 NPC를 열고 **Dialogue JSON → 해당 세트 → Apply Dialogue**를 진행합니다. 양손을 비우고 실제 NPC에게 말을 걸어 본문·선택지·보상이 맞는지 확인합니다.
+
+![옮긴 파일을 NPC에 적용하는 화면.](assets/media/guides/drm-031-neo1211/npc-apply-result.png "DRM 0.3.1 / NeoForge 1.21.1. 가운데에서 village_guide를 고르고 적용한 뒤 오른쪽 Applied JSON에서 연결을 확인합니다. 파일 존재와 NPC 연결은 서로 다른 확인 단계입니다.")
 
 ## 퀘스트 직접 제어
 
@@ -55,6 +61,6 @@ Fabric·NeoForge에서 권한 레벨 2로 사용합니다.
 
 현재 두 로더의 에디터에서 만드는 퀘스트는 자동 완료를 사용합니다. 구형 JSON의 `completionMode: turn_in`을 이관할 때는 Fabric이 제출 대기를 유지하고 NeoForge는 자동 완료하므로, 목표 달성 후 보상 시점을 확인하세요. 이 항목은 기존 데이터 이관 참고 사항입니다.
 
-최신 변경은 [DRM 0.2.9](#core-fabric/release-notes-0-2-9).
+최신 변경은 [DRM 0.3.1](#core-fabric/release-notes-0-3-1).
 
 Minecraft 26.3은 Java 25의 별도 빌드입니다. [26.3 설치·제외 기능](#core-fabric/minecraft-26-3)을 확인하세요.

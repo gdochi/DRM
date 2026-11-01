@@ -35,6 +35,16 @@ Fabric에는 Fabric API도 설치합니다. NPC는 DNPC·Easy NPC 또는 기존 
 
 멀티플레이의 설정 변경은 OP 2 이상이 필요합니다.
 
+아래는 **Real Armor 0.1.4 / NeoForge 1.21.1**의 독립 설정 화면입니다. **General Armor**에서 방어 계산과 부위별 방어를 정하고, **NPC Compatibility**에서 사용하는 NPC 종류의 연동을 확인합니다.
+
+![Real Armor의 General Armor 설정. 방어 계산·부위별 방어·내구도·강인함·보호 인챈트·넉백 저항 스위치가 있습니다.](assets/media/guides/armor-014-neo1211/armor-config.png "Enable armor calculation이 전체 방어 계산입니다. Body-part armor는 맞은 부위의 장비만 사용할지, Damage armor items는 내구도를 닳게 할지 정합니다.")
+
+![NPC Compatibility의 Dochi NPC Core, Easy NPC, CustomNPCs 연동과 디버그 설정.](assets/media/guides/armor-014-neo1211/armor-compatibility.png "DNPC를 쓰면 Dochi NPC Core를 확인합니다. 이 화면은 1.21.1이며 26.3에서는 CustomNPCs를 사용할 수 없습니다.")
+
+DRM의 공용 설정에서는 같은 옵션을 한 화면의 두 열로 보여 줍니다.
+
+![DRM 공용 설정에서 Dochi Real Armor를 고른 화면. 왼쪽 열은 방어 규칙, 오른쪽 열은 NPC 연동입니다.](assets/media/guides/armor-014-neo1211/shared-armor.png "Mods Config에서 Dochi Real Armor를 선택합니다. 오른쪽 NPC 연동만 켜고 왼쪽 전체 방어 계산을 꺼 두지 않았는지도 확인합니다.")
+
 ## 먼저 정할 것
 
 1. 사용하는 NPC 종류의 연동을 켭니다.

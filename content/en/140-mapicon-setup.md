@@ -11,23 +11,31 @@ version: 0.1.2
 audience: Creators / server operators
 ---
 
-## Mark a shop NPC
+## Give one NPC a blue icon
 
-Install DRM, MapIcon Integration and the map you want: **Xaero’s Minimap / World Map** or **JourneyMap 6**.
+Prepare DRM, MapIcon Integration and the map you want to display. These screens were verified with **MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1 / Xaero’s Minimap 26.6.0**. Icon editing also works without a map installed.
 
-1. Apply a DRM shop to an NPC.
-2. Open the icon editor from DRM's editor list or **Mods Config**.
-3. Enable global display and select **NPC Shop**.
-4. Choose the picture, size, color and minimap/world-map visibility.
-5. Press **Save & Apply**, then open the map.
+1. [Place a DNPC](#dochi-npc-core/npc-core-setup).
+2. Open **NPC editor → Addons → Map icon**. The individual editor has only **Selected NPC** on the left.
+3. Enable **Icon** and choose an image. This example uses the built-in blue humanoid icon.
+4. Use **Size 16**, **Tint 4AB7FF** and enable **Minimap**. Enable **World map** for that map as well.
+5. Press **Save** and wait for **Settings saved**.
+6. Close the editor and find the NPC icon on the minimap.
 
-Use the same process for dialogue NPCs and trainers. Cobblemon role types appear when Cobblemon Editor is installed.
+![The blue humanoid icon saved for Selected NPC.](assets/media/guides/mapicon-012-neo1211/mapicon-npc-saved.png "Save in this screen saves the selected NPC. The middle panel is an icon preview, not a map. Check Texture resource, Size, Tint and the map switches together.")
 
-## Change just one NPC
+![The DNPC displayed as a blue humanoid on the actual Xaero minimap.](assets/media/guides/mapicon-012-neo1211/mapicon-minimap.png "On the upper-left minimap, the blue humanoid just above the white player marker is Oakridge guide. Yellow markers are other animals. The NPC was placed about twenty blocks away to compare its map and world positions.")
 
-For DNPC, use **NPC editor → Addons → Map icon**. For CustomNPCs, use **NPC Basic → Map icon**.
+## Use one icon for all shops
 
-Give a special shop its own icon or hide it. See [individual settings and priority](#dochi-mapicon-integration/mapicon-editor-rules).
+For a whole category, open the full icon editor from DRM's editor list or **Mods Config**.
+
+1. Enable global display and select **Type defaults → NPC Shop JSON**.
+2. Choose the image, size, tint and map visibility.
+3. Use **Save & Apply** to save and activate the server profile.
+4. Check an NPC with a real DRM shop applied.
+
+Choose the corresponding default for dialogue NPCs or trainers. Cobblemon roles appear when Cobblemon Editor is installed. Individual NPC artwork takes priority; see [icon priority](#dochi-mapicon-integration/mapicon-editor-rules).
 
 ## Installation
 

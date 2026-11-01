@@ -15,6 +15,12 @@ tags:
   - faction
 ---
 
+## Find cover and suppressive fire
+
+**Cover** controls movement toward protective terrain. Enable **Enable Cover**, then choose triggers such as **On Reload / On Damage**. Shooting toward a target’s last seen position is configured separately in **Senses → Quick View → Suppressive Fire**.
+
+![Cover enable switch, triggers, search radius and timing.](assets/media/guides/warfare-031-neo1211/dw-cover.png "DW 0.3.1 / NeoForge 1.21.1. Enable Cover is off in this example. Even when enabled, an open flat field may provide no valid cover.")
+
 ## Where these settings are edited
 
 These are creator settings, not player in-game screens.

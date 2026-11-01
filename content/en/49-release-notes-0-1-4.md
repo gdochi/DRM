@@ -14,11 +14,17 @@ tags:
   - migration
 ---
 
-This is a historical release record. See [DRM 0.2.8](#core/release-notes-0-2-8) for current guidance.
+This is a historical release record. See [DRM 0.3.1](#core/release-notes-0-3-1) for current guidance.
+
+## Find quest authoring
+
+Create a Category and Quest, then set the title and start/completion behavior under Info. Objectives contains the task; Rewards contains the payout. Follow the current quest guide for accepting and completing it. Continue with the [current guide](#core/quest-system) for saving and applying it.
+
+![Find quest authoring.](assets/media/guides/drm-031-forge1201/quest-info.png "DRM 0.3.1 / Forge 1.20.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
 
 ## Release Scope
 
-0.1.4 is a major systems release rather than a small maintenance patch. A direct JAR comparison against 0.1.3 found 706 added classes and 60 added non-class resources. The original dialogue, shop, currency, GUI, HUD, and Remnant Message systems remain, while the editor suite now also covers quests, stats, database items, factions, teleporters, popups, administration, NPC models, and animation/combat scripting.
+0.1.4 added tools for quests, player stats, custom items, teleporters and popups. Conversations and shops could be connected to quest rewards and travel destinations.
 
 ## New Authoring Systems
 

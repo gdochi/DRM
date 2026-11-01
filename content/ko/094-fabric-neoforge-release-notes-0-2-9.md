@@ -11,7 +11,10 @@ version: 0.2.9
 audience: 제작자 / 서버 운영자
 ---
 
-## 현재 버전
+이 페이지는 **이전 버전의 변경 기록**입니다. 현재 설치와 사용법은 [DRM 0.3.1](#core-fabric/release-notes-0-3-1)을 따릅니다. 아래 현재 화면 예시는 과거 버전의 촬영 화면과 구분합니다.
+
+
+## 0.2.9 변경 기록
 
 DRM **0.2.9**의 기존 대상은 Forge 1.20.1 / Java 17, Fabric·NeoForge 1.21.1 / Java 21입니다. 별도 Fabric·NeoForge 26.3 빌드는 Java 25를 사용합니다. 26.3의 제외 기능과 검증 범위는 [26.3 안내](#core-fabric/minecraft-26-3)에서 확인하세요.
 
@@ -25,6 +28,12 @@ CustomNPCs와 DNPC는 선택 연동입니다. 기본 제작 도구를 쓰는 데
 - **트레이너 기록 정리:** Fabric·NeoForge 1.21.1의 호환 Cobblemon Editor와 함께 Admin에서 전체 배틀 기록을 삭제할 수 있습니다. 횟수 초기화와 다른 작업이며 미지급 보상과 지급 표식도 지워집니다. [관리자 안내](#core-fabric/drm-administration)를 먼저 확인하세요.
 
 템플릿 공급자 API가 없는 이전 코어에서는 그 연동만 사용할 수 없습니다. 모든 모드의 버전 번호를 같게 맞추는 규칙은 없습니다.
+
+## 템플릿으로 이어지는 작업
+
+NPC의 외형·장비를 저장한 뒤 Spawn Control에서 같은 NPC를 고를 수 있습니다. 아래는 이 연동을 현재 버전에서 실제로 사용한 화면입니다. 0.2.9 당시의 화면은 아닙니다.
+
+![Spawn Control에서 저장한 DNPC 템플릿을 고르는 목록.](assets/media/guides/spawn-control-014-neo1211/spawn-npc-template-picker.png "Spawn Control 0.1.4 + DRM 0.3.1 + DNPC 0.1.3 / NeoForge 1.21.1. DNPC에서 저장한 guide_guard가 dochi_npc:actor/guide_guard로 나타납니다. 파일 저장 후 설치형 스포너에 적용해야 생성됩니다.")
 
 ## 교체 순서
 

@@ -27,16 +27,20 @@ tags:
 
 한 NPC는 한 역할을 사용합니다. 판매점과 교환소를 함께 만들려면 NPC를 따로 배치합니다.
 
+![PokéMart General의 역할과 화폐 설정.](assets/media/guides/cobble-029-neo1211/cobble-pokemart.png "General 오른쪽 NPC Role과 Currency를 먼저 정합니다. 예제 Provider는 CobbleDollars이므로, 설치하지 않았다면 사용할 결제 수단으로 바꿉니다. 0.2.9 / NeoForge 1.21.1.")
+
 ## 첫 판매점 만들기
 
 1. DRM 에디터 목록의 **Add-on → PokéMart Editor**를 엽니다.
-2. 기본 예제를 불러오고 **Role → Sales**를 고릅니다.
+2. 기본 예제를 불러오고 **General → NPC Role → Sales**를 고릅니다.
 3. **General**에서 상점 이름과 결제 수단을 정합니다.
-4. 포켓몬 상품을 추가하고 **상세 포켓몬 데이터 편집**에서 종·레벨·폼 등을 고릅니다.
-5. 가격과 **Initial Stock**을 정합니다. **-1**은 무제한 재고입니다.
+4. 왼쪽 **Pokémon Catalog → Add**로 상품을 추가하고, 오른쪽 아래 **Edit Detailed Pokémon Data**에서 종·레벨·폼 등을 고릅니다.
+5. 가격과 **NPC Stock → Initial**을 정합니다. **-1**은 무제한 재고입니다.
 6. **Save As**로 내 파일을 저장합니다.
 7. DRM 코어로 DNPC 또는 CustomNPCs NPC를 열고 **PokéMart**로 적용합니다.
 8. 양손을 비우고 NPC와 거래합니다. 구매자는 파티에 빈칸이 필요합니다.
+
+![Pokémon Catalog에서 레벨 5 이상해씨 상품과 가격·재고를 편집하는 화면.](assets/media/guides/cobble-029-neo1211/cobble-catalog.png "왼쪽은 상품 목록, 오른쪽은 선택한 상품입니다. 예제 가격 5000, Initial 3, Maximum 3, Restock 1, Interval 72000틱은 20틱/초 기준 한 시간마다 한 마리 보충하는 설정입니다.")
 
 ## 돈은 무엇으로 받나요?
 

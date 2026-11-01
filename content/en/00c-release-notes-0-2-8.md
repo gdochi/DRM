@@ -11,6 +11,15 @@ version: 0.2.8
 audience: Creators / server operators
 ---
 
+This page records an **older release**. Use [DRM 0.3.1](#core/release-notes-0-3-1) for current installation and usage. Current-version illustrations below are separate from the historical release record.
+
+
+## Selection and checkboxes
+
+The blue Choices row is the choice being edited on the right. Row checkboxes mark groups for batch operations. Choice actions has its own selection for the action being edited. Continue with the [current guide](#core/dialogue-system) for saving and applying it.
+
+![Selection and checkboxes.](assets/media/guides/drm-031-forge1201/dialogue-reward-template-actions.png "DRM 0.3.1 / Forge 1.20.1. This is the related feature in the current production build, not a capture of the historical UI described below.")
+
 ## Installation
 
 DRM **0.2.8** targets Forge 1.20.1 / Java 17 and Fabric / NeoForge 1.21.1 / Java 21. Match the loader and build on the server and every client. Filter [Modrinth files](https://modrinth.com/mod/drm/versions) by both Minecraft version and loader.

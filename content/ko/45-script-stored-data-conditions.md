@@ -16,6 +16,12 @@ tags:
   - condition
 ---
 
+## 저장한 퀘스트 단계를 대화 조건으로 쓰기
+
+예를 들어 플레이어에게 퀘스트 단계 3을 기록하고 “3 이상인 사람만 이 선택지를 볼 수 있음”으로 연결할 때 사용합니다. 먼저 저장할 키와 숫자를 정한 뒤, 같은 키를 조건 편집기에 넣습니다. 단순한 1회 보상은 [태그를 쓰는 대화 보상](#core/dialogue-rewards)으로도 만들 수 있습니다.
+
+![실제 저장한 퀘스트 단계를 대화 조건으로 쓰기 결과.](assets/media/guides/drm-031-forge1201-apis/api-stored-condition.png "DRM 0.3.1 / Forge 1.20.1 + CustomNPCs. 플레이어 Stored Data의 my_pack.quest.stage=3을 실제로 기록하고 Number / >= 3 조건이 PASS인지 확인했습니다. 화면의 좀비 외형은 앞선 모델 API 예시의 NPC이며 이 조건은 플레이어 값을 읽습니다.")
+
 ## 무엇을 연결하는 기능인가
 
 `cnpc_stored_data` 조건은 CustomNPCs 스크립트 API의 `getStoreddata()`에 저장된 값을 DRM 조건 에디터에서 읽게 해 줍니다. 스크립트가 퀘스트 단계, 보스 페이즈, 월드 챕터 같은 값을 기록하고, DRM의 대화·텔레포터·퀘스트·Remnant Message가 그 값을 조건으로 사용할 수 있습니다.

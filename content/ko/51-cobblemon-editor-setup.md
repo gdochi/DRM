@@ -21,8 +21,8 @@ tags:
 | --- | --- |
 | Minecraft | 1.21.1 / Java 21 |
 | 로더 | Fabric 또는 NeoForge |
-| DRM Core | 0.2.8 이상 |
-| Cobblemon | 1.7.3 이상 1.9.0 미만 |
+| DRM Core | 같은 로더용. 이 안내는 0.3.1로 실행 확인 |
+| Cobblemon | 이 안내는 1.8.4로 실행 확인 |
 | Cobblemon Editor | 해당 로더의 0.2.9 |
 | NPC | DNPC 또는 CustomNPCs |
 
@@ -32,16 +32,20 @@ tags:
 
 1. NPC 한 명을 배치합니다. NPC가 없다면 [DNPC 시작](#dochi-npc-core/npc-core-setup)을 먼저 봅니다.
 2. **Dochi RPG Maker Core**로 허공을 우클릭하고 **Add-on → Cobblemon Editor**를 엽니다.
-3. **Use Default**로 기본 예제를 불러오고 유형을 **Trainer**로 둡니다.
+3. 기본 파티에서 시작하거나 **Create New**로 새 문서를 만듭니다. **Battle Config → General**에서 **Trainer Battle**을 켜고 **Battle type → vs Trainer**로 둡니다.
 4. **Pokemon Party**에서 포켓몬 한 마리와 레벨을 정합니다.
 5. 첫 배틀은 **Singles**, 시작 방식은 **Interaction**으로 둡니다.
 6. **Save As**로 `custom/first_trainer.json`을 저장합니다.
-7. DRM 코어로 NPC를 우클릭해 **Cobblemon Trainer**를 고르고 저장한 파일을 **Apply**합니다.
+7. DRM 코어로 NPC를 우클릭해 **vs Trainer → 저장한 파일 → Apply vs Trainer**를 누릅니다. 오른쪽 **APPLIED JSON**의 파일 이름을 확인합니다.
 8. 플레이어 파티에 전투 가능한 포켓몬을 넣고 양손을 비운 채 NPC에게 말을 겁니다.
+
+![첫 트레이너의 General 설정.](assets/media/guides/cobble-029-neo1211/cobble-config.png "Battle Config → General에서 Trainer Battle과 배틀 유형을 확인합니다. 여기서 작성한 이름과 실제 NPC 이름은 Name source로 구분합니다.")
+
+![NPC Apply에서 트레이너 파일을 실제 연결한 결과.](assets/media/guides/cobble-029-neo1211-flow/cobble-trainer-applied.png "Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1. 예제 파일 custom/guide_trainer.json을 적용해 오른쪽 vs Trainer에 guide_trainer가 표시됐습니다. 문서 저장과 NPC 연결은 별도 단계입니다.")
 
 ## 포켓몬 자체와 싸우게 하려면
 
-유형을 **Pokemon Itself**로 바꾸고 종·외형·레벨을 정합니다. 다른 이름으로 저장한 뒤 NPC에 **Cobblemon Pokemon Itself**로 적용합니다. 이 유형은 라운드당 한 마리를 사용합니다.
+**Battle type → vs Cobblemon**으로 바꾸고 종·외형·레벨을 정합니다. 다른 이름으로 저장한 뒤 NPC Apply의 **vs Cobblemon**에서 적용합니다. Pokemon Itself 유형은 라운드당 한 마리를 사용합니다.
 
 ## 저장 후 다시 Apply해야 하나요?
 

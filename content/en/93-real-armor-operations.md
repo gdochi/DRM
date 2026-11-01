@@ -30,6 +30,8 @@ All commands require permission level 2.
 
 ## Debug safely
 
+![Debug damage messages under NPC Compatibility.](assets/media/guides/armor-014-neo1211/armor-compatibility.png "Real Armor 0.1.4 / NeoForge 1.21.1. Use Debug damage messages in the GUI or /dochi_real_armor debug true to enable damage observations.")
+
 Enable debug temporarily to see the selected body part and reduced damage. Debug is an observer: armor must continue working after `/dochi_real_armor debug false`.
 
 ## Troubleshooting checklist

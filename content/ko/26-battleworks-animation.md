@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -20,13 +20,17 @@ BattleWorks는 DRM이 제공하는 모델과 재생 기능을 사용합니다. �
 
 | 사용하는 모델 / 방식 | 연결할 애니메이션 |
 | --- | --- |
-| 일반 인간형 CustomNPC | 기본 Main-Hand Swing 또는 설치된 인간형 모션 |
+| 일반 인간형 DNPC / 구형 대상의 CustomNPC | 기본 Main-Hand Swing 또는 설치된 인간형 모션 |
 | DRM Gecko 모델 | 해당 모델의 애니메이션 파일에 실제 존재하는 Gecko 클립 |
 | DRM 모디드 엔티티 모델 | 해당 DRM 연동이 노출하는 네이티브 엔티티 클립 |
 | DRM Behavior | NPC Basic에 이미 연결된 attack 같은 의미별 동작 |
 | 애니메이션 없이 판정만 확인 | 명시적으로 No Animation / None 선택 |
 
 Gecko 모델에 인간형 Better Combat 모션을 연결해도 같은 방식으로 움직이지 않습니다. 제공 모드가 없거나 모델과 맞지 않으면 미리보기 경고나 검증 오류가 생길 수 있습니다.
+
+![Action 단계의 Animation + Hitbox 설정과 main_hand 모션.](assets/media/guides/battleworks-016-neo1211/battleworks-stage-animation.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 제작 보조가 만든 Action은 Vanilla Swing / main_hand / 속도 1입니다. Choose animation으로 클립을 고르고 Edit this hitbox로 판정 편집을 엽니다.")
+
+일반 DNPC는 **DNPC 편집기의 Appearance & Model**에서 외형을 준비합니다. BattleWorks에서는 타임라인 위 **Action → 오른쪽 Stage → Animation + Hitbox**로 단계 모션을 찾습니다. 아래 NPC Basic 설명은 DRM의 모델 설정을 사용하는 경로에 해당합니다.
 
 ## 2. Hitbox Library에서 클립 고르기
 

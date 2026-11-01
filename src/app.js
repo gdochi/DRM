@@ -25,6 +25,37 @@
     feedbackOpen: false
   };
   let giscusMounted = false;
+  let headingObserver = null;
+  const searchIndexes = new Map();
+  let previousRoute = "";
+
+  function ui(key) {
+    const copy = {
+      ko: {
+        search: "문서 검색", searchHint: "기능 이름이나 화면의 버튼명을 입력하세요", allMods: "모든 모드", thisMod: "현재 모드",
+        noResults: "일치하는 설명을 찾지 못했습니다. 다른 이름이나 영어 버튼명으로 검색해 보세요.", searchEmpty: "예: 상점, 탄약, 시간표, Save As", results: "검색 결과",
+        docsMenu: "문서 목록", toc: "이 페이지 목차", close: "닫기", theme: "밝은 화면 / 어두운 화면", skip: "본문으로 이동",
+        chooseMod: "모드 선택", tasks: "무엇을 만들고 싶나요?", homeLead: "만들고 싶은 것을 고르거나, 아래에서 사용하는 모드의 설명을 여세요.",
+        history: "변경 기록", guideVersion: "설명 기준", captures: "수록 화면", missing: "문서를 찾을 수 없습니다", missingHint: "주소가 변경되었거나 존재하지 않는 문서입니다.", start: "처음 사용하기",
+        zoom: "화면 확대", fit: "전체 보기", actualSize: "원본 크기", original: "원본 열기", zoomIn: "확대", zoomOut: "축소", imageHint: "자세히 볼 곳을 누르세요. 확대한 뒤 끌어서 이동할 수 있습니다.",
+        english: "영문 문서", related: "이어서 볼 문서", filter: "목록에서 찾기", filterHint: "이름이나 설명으로 찾기", matches: "표시한 항목", section: "항목"
+      },
+      en: {
+        search: "Search docs", searchHint: "Search a feature or an in-game button name", allMods: "All mods", thisMod: "This mod",
+        noResults: "No matching instructions. Try another name or an in-game button label.", searchEmpty: "Try: shop, ammunition, schedule, Save As", results: "Search results",
+        docsMenu: "Documents", toc: "On this page", close: "Close", theme: "Light / dark theme", skip: "Skip to content",
+        chooseMod: "Choose a mod", tasks: "What would you like to make?", homeLead: "Choose what you want to make, or open the guide for your mod below.",
+        history: "Release history", guideVersion: "Guide version", captures: "Screens shown", missing: "Document not found", missingHint: "This address has changed or does not exist.", start: "Get started",
+        zoom: "Enlarge screenshot", fit: "Fit image", actualSize: "Actual size", original: "Open original", zoomIn: "Zoom in", zoomOut: "Zoom out", imageHint: "Click an area to enlarge it. Drag to move when zoomed in.",
+        english: "English guide", related: "Continue with", filter: "Find in this list", filterHint: "Find a name or description", matches: "Visible entries", section: "Section"
+      }
+    };
+    return copy[state.locale]?.[key] || copy.en[key] || key;
+  }
+
+  function isHistory(doc) {
+    return doc.section === "releases" || /(?:release|current-update|battleworks-update|^version-)/.test(doc.slug);
+  }
 
   if (!config.locales?.[state.locale]) state.locale = config.defaultLocale || localeKeys[0] || "en";
   document.documentElement.lang = state.locale;
@@ -227,8 +258,10 @@
   function parseHash() {
     const raw = window.location.hash.replace(/^#/, "");
     if (!raw || raw === "home") return { view: "home", product: "", doc: "", section: "" };
-    const [base, section = ""] = raw.split("::");
-    const [product = "", doc = ""] = base.split("/");
+    const decode = value => { try { return decodeURIComponent(value); } catch { return value; } };
+    const [base, rawSection = ""] = raw.split("::");
+    const [product = "", doc = ""] = base.split("/").map(decode);
+    const section = decode(rawSection);
     if (!product) return { view: "home", product: "", doc: "", section: "" };
     return { view: "doc", product, doc, section };
   }
@@ -287,7 +320,8 @@
   }
 
   function getDocsByProduct(product) {
-    return getAllDocs().filter((doc) => doc.product === product);
+    return getAllDocs().filter((doc) => doc.product === product)
+      .sort((a, b) => Number(isHistory(a)) - Number(isHistory(b)) || a.order - b.order);
   }
 
   function isProductOpen(product) {
@@ -304,7 +338,8 @@
   }
 
   function getDefaultDoc(product) {
-    return getDocsByProduct(product)[0] || null;
+    const docs = getDocsByProduct(product);
+    return docs.find(doc => doc.slug === config.startPages?.[product]) || docs.find(doc => !isHistory(doc)) || docs[0] || null;
   }
 
   function findDoc(product, slug) {
@@ -631,6 +666,7 @@
           ${renderModLogo(meta)}
           <div class="track-body">
             <h3>${escapeHtml(modText(meta, "label") || meta.id || "")}</h3>
+            <p>${escapeHtml(modText(meta, "description") || productText(config.products?.[meta.product || meta.id] || {}, "description"))}</p>
           </div>
       `;
       const actions = `
@@ -664,22 +700,48 @@
       <section class="home-shell">
         <header class="home-hero">
           <h1>${t("homeTitle")}</h1>
+          <p class="hero-lead">${escapeHtml(ui("homeLead"))}</p>
           ${renderHomeImage()}
         </header>
+        ${renderHomeTasks()}
         <div class="track-sections">${sections}</div>
       </section>
     `;
   }
 
+  function renderHomeTasks() {
+    const tasks = (config.homeTasks || []).map(task => {
+      const links = (task.links || []).map(link => ({ ...link, doc: findDoc(link.product, link.doc) })).filter(link => link.doc);
+      if (!links.length) return "";
+      const doc = links[0].doc;
+      const image = doc.html.match(/<img[^>]+src="([^"]+)"[^>]+alt="([^"]*)"/);
+      return `<article class="task-card">
+        ${image ? `<a class="task-preview" href="${linkForDoc(doc)}" tabindex="-1" aria-hidden="true"><img src="${escapeAttr(image[1])}" alt="" loading="lazy" width="480" height="270" /></a>` : ""}
+        <div class="task-body"><h3><a href="${linkForDoc(doc)}">${escapeHtml(localizedConfigText(task, "label"))}</a></h3>
+        <p>${escapeHtml(localizedConfigText(task, "description"))}</p>
+        <div class="task-links">${links.map(link => `<a href="${linkForDoc(link.doc)}">${escapeHtml(localizedConfigText(link, "label") || productText(config.products[link.product], "shortLabel"))}${icon("arrowRight")}</a>`).join("")}</div></div>
+      </article>`;
+    }).join("");
+    return tasks ? `<section class="home-tasks" aria-labelledby="tasks-title"><h2 id="tasks-title">${escapeHtml(ui("tasks"))}</h2><div class="task-grid">${tasks}</div></section>` : "";
+  }
+
+  function renderModPicker(product) {
+    return `<label class="mod-picker"><span>${escapeHtml(ui("chooseMod"))}</span><select data-mod-picker aria-label="${escapeAttr(ui("chooseMod"))}">
+      ${getWikiMods().map(mod => { const key = mod.product || mod.id; return isProductOpen(key) ? `<option value="${escapeAttr(key)}"${key === product ? " selected" : ""}>${escapeHtml(modText(mod, "label"))}</option>` : ""; }).join("")}
+    </select></label>`;
+  }
+
   function renderSidebar(product, activeDoc) {
     const sections = getProductSections(product);
     return `
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-head">
-          <button class="back-link" type="button" data-home-link>${icon("home")} ${t("backToProducts")}</button>
-        </div>
-        <nav class="doc-nav" aria-label="Documentation">
-          ${sections.map((section) => `<a class="doc-nav-link section-nav-link${activeDoc && (activeDoc.section || activeDoc.category) === section.id ? " is-active" : ""}" href="${linkForDoc(section.firstDoc)}"><span>${escapeHtml(sectionText(section, "label") || section.id)}</span><small>${escapeHtml(sectionText(section, "description") || "")}</small></a>`).join("")}
+      <aside class="sidebar" id="doc-sidebar" data-sidebar>
+        ${renderModPicker(product)}
+        <nav class="doc-nav" aria-label="${escapeAttr(ui("docsMenu"))}">
+          ${sections.sort((a, b) => Number(a.items.every(isHistory)) - Number(b.items.every(isHistory))).map(section => {
+            const active = !!activeDoc && section.items.some(doc => doc.slug === activeDoc.slug);
+            return `<details class="nav-group"${active ? " open" : ""}><summary>${escapeHtml(sectionText(section, "label") || section.id)}<small>${section.items.length}</small></summary>
+              <div>${section.items.map(doc => `<a class="doc-nav-link${activeDoc?.slug === doc.slug ? " is-active" : ""}" href="${linkForDoc(doc)}"${activeDoc?.slug === doc.slug ? ' aria-current="page"' : ""}>${escapeHtml(doc.title)}</a>`).join("")}</div></details>`;
+          }).join("")}
         </nav>
       </aside>
     `;
@@ -702,55 +764,104 @@
     const docs = getDocsByProduct(product);
     const index = docs.findIndex((doc) => doc.slug === activeDoc.slug);
     const pageLabel = `${t("document")} ${index + 1} / ${docs.length}`;
+    const meta = config.products[product];
+    const section = getProductSections(product).find(item => item.items.some(doc => doc.slug === activeDoc.slug));
+    const environments = (activeDoc.captureEnvironments || []).map(env => `${env.loader} ${env.minecraft}`);
     return `
       <div class="doc-shell">
-        <article class="doc-page" data-doc-page data-product="${escapeAttr(product)}" data-doc="${escapeAttr(activeDoc.slug)}">
+        ${renderToc(activeDoc, true)}
+        <article class="doc-page" lang="${escapeAttr(activeDoc.sourcePath?.split("/")[1] || state.locale)}" data-doc-page data-product="${escapeAttr(product)}" data-doc="${escapeAttr(activeDoc.slug)}">
           <header class="doc-page-head">
+            <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home">Wiki</a>${icon("chevron")}<a href="${linkForProduct(product)}">${escapeHtml(productText(meta, "shortLabel") || productText(meta, "label"))}</a>${section ? `${icon("chevron")}<span>${escapeHtml(sectionText(section, "label"))}</span>` : ""}</nav>
             <h1>${escapeHtml(activeDoc.title)}</h1>
+            ${activeDoc.description ? `<p class="doc-description">${escapeHtml(activeDoc.description)}</p>` : ""}
+            <div class="doc-context">${activeDoc.version ? `<span>${escapeHtml(ui("guideVersion"))} <strong>${escapeHtml(activeDoc.version)}</strong></span>` : ""}${isHistory(activeDoc) ? `<span class="history-badge">${escapeHtml(ui("history"))}</span>` : ""}${activeDoc.sourcePath?.split("/")[1] !== state.locale ? `<span>${escapeHtml(ui("english"))}</span>` : ""}</div>
+            ${environments.length ? `<p class="capture-context">${escapeHtml(ui("captures"))}: ${environments.map(escapeHtml).join(" · ")}</p>` : ""}
           </header>
           <div class="doc-page-body">${activeDoc.html}</div>
+          ${renderRelated(activeDoc)}
+          ${renderDocFollowNav(product, activeDoc, pageLabel)}
         </article>
-        ${renderDocFollowNav(product, activeDoc, pageLabel)}
+        ${renderToc(activeDoc, false)}
       </div>
     `;
   }
 
-  function renderPage() {
-    const route = parseHash();
-    let view = route.view;
-    let product = route.product;
-    let activeDoc = null;
+  function renderToc(doc, mobile) {
+    const headings = (doc.headings || []).filter(heading => heading.level === 2 || heading.level === 3);
+    if (!headings.length) return "";
+    const links = `<nav aria-label="${escapeAttr(ui("toc"))}">${headings.map(heading => `<a href="${linkForDoc(doc, heading.id)}" data-toc-link="${escapeAttr(heading.id)}" class="toc-level-${heading.level}">${escapeHtml(heading.text)}</a>`).join("")}</nav>`;
+    return mobile ? `<details class="mobile-toc"><summary>${escapeHtml(ui("toc"))}${icon("chevronDown")}</summary>${links}</details>` : `<aside class="page-toc"><h2>${escapeHtml(ui("toc"))}</h2>${links}</aside>`;
+  }
 
+  function renderRelated(doc) {
+    const links = [];
+    const seen = new Set();
+    for (const match of doc.html.matchAll(/href="#([^"/:]+)\/([^":]+)(?:::[^"]*)?"/g)) {
+      const related = findDoc(match[1], match[2]);
+      if (!related || getDocKey(related) === getDocKey(doc) || seen.has(getDocKey(related))) continue;
+      seen.add(getDocKey(related));
+      links.push(related);
+    }
+    return links.length ? `<nav class="related-docs" aria-label="${escapeAttr(ui("related"))}"><h2>${escapeHtml(ui("related"))}</h2>${links.slice(0, 5).map(item => `<a href="${linkForDoc(item)}"><small>${escapeHtml(productText(config.products[item.product], "shortLabel"))}</small><span>${escapeHtml(item.title)}${icon("arrowRight")}</span></a>`).join("")}</nav>` : "";
+  }
+
+  function renderNotFound(product) {
+    const doc = product ? getDefaultDoc(product) : null;
+    return `<article class="not-found"><h1>${escapeHtml(ui("missing"))}</h1><p>${escapeHtml(ui("missingHint"))}</p>${doc ? `<a class="primary-action" href="${linkForDoc(doc)}">${escapeHtml(ui("start"))}${icon("arrowRight")}</a>` : `<a class="primary-action" href="#home">${escapeHtml(t("backToProducts"))}</a>`}<button class="ghost-action" data-search-open type="button">${icon("search")}${escapeHtml(ui("search"))}</button></article>`;
+  }
+
+  function scrollToSection(section) {
+    if (!section) return;
+    const target = document.getElementById(section);
+    target?.scrollIntoView({ behavior: "instant", block: "start" });
+  }
+
+  function renderPage(options = {}) {
+    const route = parseHash();
+    const { view, product } = route;
+    const routeKey = `${state.locale}:${view}/${product}/${route.doc}`;
+    if (routeKey === previousRoute && !options.preserveReading) {
+      app.querySelector(".mobile-toc")?.removeAttribute("open");
+      scrollToSection(route.section);
+      return;
+    }
+    const reading = options.preserveReading ? captureReadingPosition() : null;
+    previousRoute = routeKey;
+    headingObserver?.disconnect();
+    let activeDoc = null;
     if (view === "doc") {
-      if (!config.products?.[product] || !isProductOpen(product)) {
-        view = "home";
-        product = "";
-      } else {
-        activeDoc = findDoc(product, route.doc) || getDefaultDoc(product);
-        if (!activeDoc) {
-          view = "home";
-          product = "";
-        }
+      if (config.products?.[product] && isProductOpen(product)) {
+        activeDoc = route.doc ? findDoc(product, route.doc) : getDefaultDoc(product);
       }
     }
-
+    document.title = activeDoc ? `${activeDoc.title} · ${productText(config.products[product], "shortLabel")} · Dochi's Wiki` : ui(view === "home" ? "tasks" : "missing") + " · Dochi's Wiki";
     app.innerHTML = `
+      <a class="skip-link" href="#main-content">${escapeHtml(ui("skip"))}</a>
       <header class="topbar">
+        <a class="site-brand" href="#home">Dochi's <strong>Wiki</strong></a>
+        <button class="search-trigger" data-search-open type="button" aria-label="${escapeAttr(ui("search"))}">${icon("search")}<span>${escapeHtml(ui("search"))}</span><kbd>Ctrl K</kbd></button>
         <div class="top-actions">
           <button class="feedback-top-button" data-feedback-link type="button" aria-label="${escapeAttr(t("feedbackOpen"))}" title="${escapeAttr(t("feedbackOpen"))}" aria-controls="feedback" aria-expanded="${state.feedbackOpen ? "true" : "false"}">${icon("message")}<span>${escapeHtml(t("feedbackButton"))}</span></button>
           ${renderLocaleSelector()}
-          <button class="icon-button" data-theme-toggle type="button" aria-label="Theme">${icon(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button>
+          <button class="icon-button" data-theme-toggle type="button" aria-label="${escapeAttr(ui("theme"))}">${icon(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button>
           ${renderSocialLinks()}
         </div>
       </header>
-      ${view === "home" ? `<main class="main-home">${renderHome()}</main>` : `<div class="layout">${renderSidebar(product, activeDoc)}<main class="content">${renderDoc(product, activeDoc)}</main></div>`}
+      ${view === "home" ? `<main class="main-home" id="main-content" tabindex="-1">${renderHome()}</main>` : activeDoc ? `<div class="layout"><div class="mobile-doc-bar"><button type="button" data-mobile-menu aria-expanded="false" aria-controls="doc-sidebar">${icon("menu")}${escapeHtml(ui("docsMenu"))}${icon("chevronDown")}</button><span>${escapeHtml(productText(config.products[product], "shortLabel"))}</span></div>${renderSidebar(product, activeDoc)}<main class="content" id="main-content" tabindex="-1">${renderDoc(product, activeDoc)}</main></div>` : `<main class="main-home" id="main-content" tabindex="-1">${renderNotFound(config.products?.[product] ? product : "")}</main>`}
+      <footer class="mobile-social-links">${renderSocialLinks()}</footer>
     `;
 
     ensureFeedbackSection();
     if (state.feedbackOpen) {
       openFeedbackFlyout();
     }
-    bindEvents(view, product, activeDoc, route.section);
+    bindEvents(view, product, activeDoc);
+    if (reading) restoreReadingPosition(reading);
+    else {
+      window.scrollTo({ top: 0, behavior: "instant" });
+      scrollToSection(route.section);
+    }
   }
 
   function bindEvents(view, product, activeDoc, section) {
@@ -764,8 +875,7 @@
 
     app.querySelector("[data-locale-toggle]")?.addEventListener("click", (event) => {
       event.stopPropagation();
-      state.localeMenuOpen = !state.localeMenuOpen;
-      renderPage();
+      setLocaleMenu(!state.localeMenuOpen);
     });
 
     app.querySelectorAll("[data-locale]").forEach((button) => {
@@ -775,7 +885,8 @@
         state.localeMenuOpen = false;
         safeSet("drm-docs-locale", state.locale);
         document.documentElement.lang = state.locale;
-        renderPage();
+        renderPage({ preserveReading: true });
+        app.querySelector("[data-locale-toggle]")?.focus({ preventScroll: true });
       });
     });
 
@@ -784,46 +895,354 @@
       document.documentElement.dataset.theme = next;
       safeSet("drm-docs-theme", next);
       state.localeMenuOpen = false;
-      renderPage();
+      setLocaleMenu(false);
+      app.querySelector("[data-theme-toggle]").innerHTML = icon(next === "dark" ? "sun" : "moon");
     });
-
-    if (state.localeMenuOpen) {
-      requestAnimationFrame(() => {
-        const closeLocaleMenu = (event) => {
-          if (!app.querySelector("[data-locale-menu]")?.contains(event.target)) {
-            state.localeMenuOpen = false;
-            renderPage();
-          }
-        };
-        const closeOnEscape = (event) => {
-          if (event.key === "Escape") {
-            state.localeMenuOpen = false;
-            renderPage();
-          }
-        };
-        document.addEventListener("click", closeLocaleMenu, { once: true });
-        document.addEventListener("keydown", closeOnEscape, { once: true });
-      });
-    }
-
-    if (view === "doc") {
-      app.querySelector("[data-home-link]")?.addEventListener("click", () => {
-        window.location.hash = "home";
-      });
-
-      if (section) {
-        const target = document.getElementById(section);
-        if (target) {
-          requestAnimationFrame(() => {
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
-          });
-        }
-      } else {
-        window.scrollTo({ top: 0, behavior: "auto" });
-      }
+    app.querySelectorAll("[data-search-open]").forEach(button => button.addEventListener("click", () => openSearch(product)));
+    app.querySelector("[data-mobile-menu]")?.addEventListener("click", event => {
+      const button = event.currentTarget;
+      const open = button.getAttribute("aria-expanded") !== "true";
+      button.setAttribute("aria-expanded", String(open));
+      app.querySelector("[data-sidebar]")?.classList.toggle("is-open", open);
+    });
+    app.querySelector("[data-mod-picker]")?.addEventListener("change", event => { location.hash = linkForProduct(event.target.value); });
+    app.querySelectorAll(".doc-nav-link").forEach(link => link.addEventListener("click", event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      app.querySelector("[data-sidebar]")?.classList.remove("is-open");
+      app.querySelector("[data-mobile-menu]")?.setAttribute("aria-expanded", "false");
+      if (location.hash === link.getAttribute("href")) window.scrollTo({ top: 0, behavior: "instant" });
+    }));
+    app.querySelectorAll(".doc-image a").forEach(link => link.addEventListener("click", event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      openImage(link);
+    }));
+    app.querySelectorAll(".doc-image a").forEach(link => { link.setAttribute("aria-label", `${ui("zoom")}: ${link.querySelector("img").alt}`); link.title = ui("zoom"); });
+    if (activeDoc) {
+      bindToc();
+      if (product === "mwent" && activeDoc.slug === "card-catalog") bindCatalogFilter();
     }
   }
 
-  window.addEventListener("hashchange", renderPage);
+  function setLocaleMenu(open) {
+    state.localeMenuOpen = open;
+    app.querySelector("[data-locale-menu]")?.classList.toggle("is-open", open);
+    app.querySelector("[data-locale-toggle]")?.setAttribute("aria-expanded", String(open));
+  }
+
+  function captureReadingPosition() {
+    const headings = [...app.querySelectorAll(".doc-page-body h2, .doc-page-body h3")];
+    let index = -1;
+    headings.forEach((heading, i) => { if (heading.getBoundingClientRect().top <= 150) index = i; });
+    return { y: scrollY, index, offset: index >= 0 ? headings[index].getBoundingClientRect().top : 0 };
+  }
+
+  function restoreReadingPosition(reading) {
+    const restore = () => {
+      const target = app.querySelectorAll(".doc-page-body h2, .doc-page-body h3")[reading.index];
+      window.scrollTo({ top: target ? scrollY + target.getBoundingClientRect().top - reading.offset : reading.y, behavior: "instant" });
+    };
+    restore();
+    requestAnimationFrame(restore);
+  }
+
+  function bindToc() {
+    const headings = [...app.querySelectorAll(".doc-page-body h2, .doc-page-body h3")];
+    const update = () => {
+      let active = headings[0]?.id;
+      for (const heading of headings) {
+        if (heading.getBoundingClientRect().top <= 180) active = heading.id;
+      }
+      app.querySelectorAll("[data-toc-link]").forEach(link => {
+        const selected = link.dataset.tocLink === active;
+        link.classList.toggle("is-active", selected);
+        if (selected) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      });
+    };
+    headingObserver = new IntersectionObserver(update, { rootMargin: "-80px 0px -65% 0px" });
+    headings.forEach(heading => headingObserver.observe(heading));
+    update();
+    app.querySelectorAll("[data-toc-link]").forEach(link => link.addEventListener("click", () => {
+      app.querySelector(".mobile-toc")?.removeAttribute("open");
+      if (location.hash === link.getAttribute("href")) scrollToSection(link.dataset.tocLink);
+    }));
+  }
+
+  function bindCatalogFilter() {
+    const body = app.querySelector(".doc-page-body");
+    const tables = [...body.querySelectorAll(".table-wrap")];
+    if (!tables.length) return;
+    const controls = document.createElement("div");
+    controls.className = "catalog-filter";
+    controls.innerHTML = `<label for="catalog-query">${escapeHtml(ui("filter"))}</label><input id="catalog-query" type="search" placeholder="${escapeAttr(ui("filterHint"))}" /><span role="status"></span>`;
+    tables[0].before(controls);
+    const rows = tables.flatMap(table => [...table.querySelectorAll("tbody tr")]);
+    const texts = rows.map(row => normalizeSearch(row.textContent));
+    controls.querySelector("input").addEventListener("input", event => {
+      const query = normalizeSearch(event.target.value);
+      rows.forEach((row, index) => { row.hidden = !texts[index].includes(query); });
+      tables.forEach(table => { table.hidden = !table.querySelector("tbody tr:not([hidden])"); });
+      controls.querySelector("[role=status]").textContent = `${ui("matches")}: ${rows.filter(row => !row.hidden).length} / ${rows.length}`;
+    });
+  }
+
+  function normalizeSearch(text) {
+    return String(text).normalize("NFKC").toLocaleLowerCase().replace(/\s+/g, " ").trim();
+  }
+
+  function getSearchIndex() {
+    if (searchIndexes.has(state.locale)) return searchIndexes.get(state.locale);
+    const index = [];
+    for (const doc of getAllDocs().filter(doc => isProductOpen(doc.product))) {
+      const parsed = new DOMParser().parseFromString(doc.html, "text/html");
+      let section = { id: "", title: doc.title, text: "" };
+      const sections = [section];
+      for (const child of parsed.body.children) {
+        if (/^H[234]$/.test(child.tagName)) {
+          section = { id: child.id, title: child.textContent, text: "" };
+          sections.push(section);
+        } else section.text += " " + child.textContent;
+      }
+      for (const section of sections) {
+        const text = section.text.replace(/\s+/g, " ").trim();
+        index.push({ doc, ...section, text, titleText: normalizeSearch(doc.title + " " + section.title), bodyText: normalizeSearch(text), metaText: normalizeSearch(productText(config.products[doc.product], "label") + " " + (doc.tags || []).join(" ")) });
+      }
+    }
+    searchIndexes.set(state.locale, index);
+    return index;
+  }
+
+  function queryGroups(value) {
+    const aliases = [
+      ["상점", "shop", "pokemart"], ["돈", "화폐", "currency"], ["탄약", "ammo", "ammunition"],
+      ["시간표", "schedule", "schedules"], ["대화", "dialogue", "dialog"], ["적용", "apply"],
+      ["저장", "save"], ["스킨", "skin"], ["보상", "reward", "rewards"], ["퀘스트", "quest"],
+      ["총", "총기", "gun", "firearm"], ["스포너", "spawner"], ["뭰트", "mwent"], ["엔피시", "npc", "dnpc"]
+    ];
+    return normalizeSearch(value).split(" ").filter(Boolean).map(term => aliases.find(group => group.includes(term)) || [term]);
+  }
+
+  function snippet(text, groups) {
+    const normalized = normalizeSearch(text);
+    const matches = groups.flat().map(term => normalized.indexOf(term)).filter(index => index >= 0);
+    const start = matches.length ? Math.max(0, Math.min(...matches) - 42) : 0;
+    return `${start ? "…" : ""}${text.slice(start, start + 160)}${text.length > start + 160 ? "…" : ""}`;
+  }
+
+  function showDialog(dialog, opener) {
+    document.querySelectorAll("dialog[open]").forEach(item => item.close());
+    dialog.showModal();
+    document.body.classList.add("has-reader-dialog");
+    dialog.addEventListener("close", () => {
+      if (!document.querySelector("dialog[open]")) document.body.classList.remove("has-reader-dialog");
+      if (opener?.isConnected) opener.focus({ preventScroll: true });
+      dialog.remove();
+    }, { once: true });
+    dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
+  }
+
+  function openSearch(product = parseHash().product) {
+    setLocaleMenu(false);
+    if (state.feedbackOpen) closeFeedbackFlyout();
+    const opener = document.activeElement;
+    const dialog = document.createElement("dialog");
+    dialog.className = "search-dialog";
+    dialog.setAttribute("aria-labelledby", "search-title");
+    dialog.innerHTML = `<div class="search-panel"><header><h2 id="search-title">${escapeHtml(ui("search"))}</h2><button class="icon-button" data-dialog-close type="button" aria-label="${escapeAttr(ui("close"))}">${icon("x")}</button></header>
+      <label class="sr-only" for="docs-query">${escapeHtml(ui("searchHint"))}</label><input id="docs-query" type="search" placeholder="${escapeAttr(ui("searchHint"))}" autocomplete="off" maxlength="160" />
+      <label class="search-scope">${escapeHtml(ui("chooseMod"))}<select aria-label="${escapeAttr(ui("chooseMod"))}"><option value="">${escapeHtml(ui("allMods"))}</option>${getProductEntries().filter(([key]) => isProductOpen(key)).map(([key, meta]) => `<option value="${escapeAttr(key)}"${key === product ? " selected" : ""}>${escapeHtml(productText(meta, "label"))}</option>`).join("")}</select></label>
+      <p class="search-status" role="status"></p><div class="search-results" aria-label="${escapeAttr(ui("results"))}"></div></div>`;
+    document.body.append(dialog);
+    showDialog(dialog, opener);
+    const input = dialog.querySelector("input");
+    const results = dialog.querySelector(".search-results");
+    const status = dialog.querySelector(".search-status");
+    const scope = dialog.querySelector("select");
+    let timer;
+    const search = () => {
+      const value = normalizeSearch(input.value);
+      if (!value) { results.innerHTML = ""; status.textContent = ui("searchEmpty"); return; }
+      const groups = queryGroups(value);
+      const matches = [];
+      for (const entry of getSearchIndex()) {
+        if (scope.value && entry.doc.product !== scope.value) continue;
+        const haystack = `${entry.titleText} ${entry.bodyText} ${entry.metaText}`;
+        if (!groups.every(group => group.some(term => haystack.includes(term)))) continue;
+        const score = groups.reduce((sum, group) => sum + Math.max(...group.map(term => entry.titleText.includes(term) ? 12 : entry.bodyText.includes(term) ? 3 : 1)), 0) + (entry.titleText.includes(value) ? 8 : 0) - (isHistory(entry.doc) ? 12 : 0);
+        matches.push({ ...entry, score });
+      }
+      matches.sort((a, b) => b.score - a.score || a.doc.order - b.doc.order);
+      const unique = [];
+      const counts = new Map();
+      for (const entry of matches) {
+        const key = getDocKey(entry.doc);
+        if ((counts.get(key) || 0) >= 2) continue;
+        counts.set(key, (counts.get(key) || 0) + 1);
+        unique.push(entry);
+      }
+      status.textContent = unique.length ? `${ui("results")}: ${unique.length}${unique.length > 40 ? " · 40" : ""}` : ui("noResults");
+      results.innerHTML = unique.slice(0, 40).map(entry => `<a class="search-result" href="${linkForDoc(entry.doc, entry.id)}"><small>${escapeHtml(productText(config.products[entry.doc.product], "shortLabel"))}${isHistory(entry.doc) ? ` · ${escapeHtml(ui("history"))}` : ""}</small><strong>${escapeHtml(entry.doc.title)}</strong>${entry.id ? `<span>${escapeHtml(entry.title)}</span>` : ""}<p>${escapeHtml(snippet(entry.text || entry.doc.description, groups))}</p></a>`).join("");
+    };
+    input.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(search, 100); });
+    scope.addEventListener("change", search);
+    dialog.querySelector("[data-dialog-close]").addEventListener("click", () => dialog.close());
+    results.addEventListener("click", event => {
+      const link = event.target.closest("a");
+      if (link && !event.ctrlKey && !event.metaKey && !event.shiftKey) {
+        const section = link.hash.split("::")[1];
+        dialog.close();
+        if (link.hash === location.hash && section) { try { scrollToSection(decodeURIComponent(section)); } catch {} }
+      }
+    });
+    dialog.addEventListener("keydown", event => {
+      const links = [...results.querySelectorAll("a")];
+      if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+        if (event.target === scope) return;
+        event.preventDefault();
+        const index = links.indexOf(document.activeElement);
+        const next = event.key === "ArrowDown" ? index + 1 : index - 1;
+        (links[Math.max(0, Math.min(links.length - 1, next))] || input).focus();
+      } else if (event.key === "Enter" && event.target === input && links[0]) {
+        event.preventDefault(); links[0].click();
+      }
+    });
+    search();
+    input.focus();
+    dialog.addEventListener("close", () => clearTimeout(timer), { once: true });
+  }
+
+  async function openImage(link) {
+    if (state.feedbackOpen) closeFeedbackFlyout();
+    const source = link.querySelector("img");
+    const dialog = document.createElement("dialog");
+    dialog.className = "image-dialog";
+    dialog.setAttribute("aria-label", ui("zoom"));
+    dialog.innerHTML = `<div class="image-panel"><header class="image-toolbar"><button class="icon-button" data-zoom-out aria-label="${escapeAttr(ui("zoomOut"))}" type="button">−</button><output data-zoom-level></output><button class="icon-button" data-zoom-in aria-label="${escapeAttr(ui("zoomIn"))}" type="button">+</button><button data-image-fit type="button">${escapeHtml(ui("fit"))}</button><button data-image-actual type="button">${escapeHtml(ui("actualSize"))}</button><a href="${escapeAttr(link.href)}" target="_blank" rel="noreferrer">${escapeHtml(ui("original"))}${icon("external")}</a><button class="icon-button" data-dialog-close aria-label="${escapeAttr(ui("close"))}" type="button">${icon("x")}</button></header>
+      <div class="image-viewport" tabindex="0" aria-label="${escapeAttr(ui("imageHint"))}"><div class="image-stage"><img src="${escapeAttr(source.currentSrc || source.src)}" alt="${escapeAttr(source.alt)}" draggable="false" /></div></div><footer><p>${escapeHtml(link.closest("figure").querySelector("figcaption")?.textContent || source.alt)}</p><small>${escapeHtml(ui("imageHint"))}</small></footer></div>`;
+    document.body.append(dialog);
+    showDialog(dialog, link);
+    dialog.querySelector("[data-dialog-close]").addEventListener("click", () => dialog.close());
+    const image = dialog.querySelector("img");
+    try { await image.decode(); } catch { return; }
+    if (!dialog.open) return;
+    const viewport = dialog.querySelector(".image-viewport");
+    const stage = dialog.querySelector(".image-stage");
+    let scale = 1;
+    let fit = 1;
+    const fitScale = () => Math.min(1, (viewport.clientWidth - 24) / image.naturalWidth, (viewport.clientHeight - 24) / image.naturalHeight);
+    const zoom = (next, x = viewport.clientWidth / 2, y = viewport.clientHeight / 2) => {
+      const rect = image.getBoundingClientRect();
+      const box = viewport.getBoundingClientRect();
+      const imageX = (box.left + x - rect.left) / scale;
+      const imageY = (box.top + y - rect.top) / scale;
+      scale = Math.max(fit, Math.min(4, next));
+      image.style.width = `${image.naturalWidth * scale}px`;
+      image.style.height = `${image.naturalHeight * scale}px`;
+      stage.style.width = `${Math.max(viewport.clientWidth, image.naturalWidth * scale + 24)}px`;
+      stage.style.height = `${Math.max(viewport.clientHeight, image.naturalHeight * scale + 24)}px`;
+      const newRect = image.getBoundingClientRect();
+      viewport.scrollLeft += newRect.left - box.left + imageX * scale - x;
+      viewport.scrollTop += newRect.top - box.top + imageY * scale - y;
+      dialog.querySelector("[data-zoom-level]").textContent = `${Math.round(scale * 100)}%`;
+      dialog.querySelector("[data-zoom-out]").disabled = scale <= fit + 0.001;
+      dialog.querySelector("[data-zoom-in]").disabled = scale >= 4;
+    };
+    const reset = () => { fit = fitScale(); zoom(fit); viewport.scrollLeft = 0; viewport.scrollTop = 0; };
+    dialog.querySelector("[data-zoom-in]").addEventListener("click", () => zoom(scale * 1.5));
+    dialog.querySelector("[data-zoom-out]").addEventListener("click", () => zoom(scale / 1.5));
+    dialog.querySelector("[data-image-fit]").addEventListener("click", reset);
+    dialog.querySelector("[data-image-actual]").addEventListener("click", () => zoom(1));
+    const pointers = new Map();
+    let gesture = null;
+    const pinch = () => {
+      const [a, b] = [...pointers.values()];
+      return { distance: Math.hypot(a.x - b.x, a.y - b.y), x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+    };
+    viewport.addEventListener("pointerdown", event => {
+      if (event.pointerType === "mouse" && event.button !== 0) return;
+      pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+      viewport.setPointerCapture(event.pointerId);
+      if (pointers.size === 1) gesture = { type: "pan", x: event.clientX, y: event.clientY, left: viewport.scrollLeft, top: viewport.scrollTop, moved: false };
+      else if (pointers.size === 2) gesture = { type: "pinch", ...pinch(), scale };
+    });
+    viewport.addEventListener("pointermove", event => {
+      if (!pointers.has(event.pointerId) || !gesture) return;
+      pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+      if (gesture.type === "pinch" && pointers.size >= 2) {
+        const current = pinch();
+        const box = viewport.getBoundingClientRect();
+        viewport.scrollLeft -= current.x - gesture.x;
+        viewport.scrollTop -= current.y - gesture.y;
+        zoom(gesture.scale * current.distance / Math.max(1, gesture.distance), current.x - box.left, current.y - box.top);
+        gesture.x = current.x;
+        gesture.y = current.y;
+      } else {
+        if (Math.abs(event.clientX - gesture.x) + Math.abs(event.clientY - gesture.y) > 5) gesture.moved = true;
+        viewport.scrollLeft = gesture.left - (event.clientX - gesture.x);
+        viewport.scrollTop = gesture.top - (event.clientY - gesture.y);
+      }
+    });
+    const releasePointer = event => {
+      if (gesture?.type === "pan" && !gesture.moved && event.type === "pointerup") {
+        const box = viewport.getBoundingClientRect();
+        zoom(scale <= fit + 0.001 ? Math.max(1, fit * 2) : fit, event.clientX - box.left, event.clientY - box.top);
+      }
+      pointers.delete(event.pointerId);
+      if (pointers.size === 1) {
+        const [point] = pointers.values();
+        gesture = { type: "pan", ...point, left: viewport.scrollLeft, top: viewport.scrollTop, moved: true };
+      } else if (!pointers.size) gesture = null;
+    };
+    viewport.addEventListener("pointerup", releasePointer);
+    viewport.addEventListener("pointercancel", releasePointer);
+    viewport.addEventListener("keydown", event => {
+      if (["+", "=", "-", "0"].includes(event.key)) {
+        event.preventDefault();
+        if (event.key === "0") reset();
+        else zoom(event.key === "-" ? scale / 1.5 : scale * 1.5);
+      }
+    });
+    viewport.addEventListener("wheel", event => {
+      if (!event.ctrlKey && !event.metaKey) return;
+      event.preventDefault();
+      const box = viewport.getBoundingClientRect();
+      zoom(scale * (event.deltaY < 0 ? 1.12 : 0.89), event.clientX - box.left, event.clientY - box.top);
+    }, { passive: false });
+    const resize = new ResizeObserver(reset);
+    resize.observe(viewport);
+    dialog.addEventListener("close", () => resize.disconnect(), { once: true });
+    reset();
+  }
+
+  document.addEventListener("click", event => {
+    if (!event.target.closest("[data-locale-menu]")) setLocaleMenu(false);
+  });
+  document.addEventListener("keydown", event => {
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+      event.preventDefault();
+      if (!document.querySelector(".search-dialog[open]")) openSearch();
+    }
+    if (event.key === "Escape" && state.localeMenuOpen) {
+      setLocaleMenu(false);
+      app.querySelector("[data-locale-toggle]")?.focus({ preventScroll: true });
+    }
+    if (event.key === "Escape" && app.querySelector(".sidebar.is-open")) {
+      app.querySelector(".sidebar.is-open").classList.remove("is-open");
+      app.querySelector("[data-mobile-menu]")?.setAttribute("aria-expanded", "false");
+      app.querySelector("[data-mobile-menu]")?.focus({ preventScroll: true });
+    }
+  });
+  document.addEventListener("click", event => {
+    const skip = event.target.closest(".skip-link");
+    if (skip) {
+      event.preventDefault();
+      document.getElementById("main-content")?.focus();
+    }
+  });
+  window.addEventListener("hashchange", () => {
+    document.querySelectorAll("dialog[open]").forEach(dialog => dialog.close());
+    renderPage();
+  });
   renderPage();
 })();

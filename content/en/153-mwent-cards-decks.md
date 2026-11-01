@@ -7,13 +7,9 @@ product: mwent
 category: Factions and cards
 section: cards
 status: Guide
-version: 0.1.5
+version: 0.1.6
 audience: Players
 ---
-
-## DNPC card models
-
-Current Minigames 0.1.5 patches read DNPC Gecko model settings and refresh temporary previews created during asset loading. The DNPC model, assets and optional rendering libraries must be available; a catalog entry does not install an integration.
 
 ## Acquire and store cards
 
@@ -31,10 +27,14 @@ Regular and animated prints are separate physical items and owned counts, but sh
 
 ## Create a deck
 
+![The preparation deck browser, with preset filters on the left and Companion Chorus cards, counts and provisions on the right.](assets/media/guides/minigames-015-neo1211/minigames-mwent-play.png "Test play in Minigames 0.1.5 / NeoForge 1.21.1. Use this deck opens preparation with the selected deck; My decks finds your saved decks.")
+
 1. Open **My Decks → New Deck** from the vault, encyclopedia or battle preparation.
 2. Choose a faction and check the leader and provision limit.
 3. Add faction or neutral cards, name the deck and save it.
 4. Select the saved deck before a match. Fix incomplete requirements or missing owned copies first.
+
+In 0.1.6 preparation, also choose one of [five opening tactics](#mwent/version-0-1-6). It is separate from hand cards and is placed for the player who wins the first-player coin toss.
 
 | Requirement | Complete deck |
 | --- | --- |
@@ -48,6 +48,8 @@ Regular and animated prints are separate physical items and owned counts, but sh
 
 Save up to sixteen decks. Incomplete drafts can be saved but cannot automatically enter a match. Changing faction clears the composition and requires a new leader; changing only the leader preserves cards and rechecks the new limit.
 
+![Deck preparation with faction, leader and provisions on the left, plus/minus card controls on the right and Begin match above.](assets/media/guides/minigames-015-neo1211/minigames-mwent-mulligan.png "Adjust counts with + / −, check total cards, units and Provisions, then Begin match. This is deck preparation, before the opening-hand redraw.")
+
 ## Encyclopedia and inspection
 
 The encyclopedia grants or consumes no cards. Select cards to read names, factions, rarity, power, provisions and abilities. Right-click in battle for details. Distinguish base values from current values affected by damage or boosts.
@@ -55,3 +57,7 @@ The encyclopedia grants or consumes no cards. Select cards to read names, factio
 Unowned cards can still be inspected. An optional card appearing in the list does not mean it can be played without its provider. The current catalog contains 335 built-in definitions and 89 optional-mod definitions; actual availability depends on installed mods and assets. Unused custom-card slots are excluded from these counts.
 
 Use the [specification catalog](#mwent/card-catalog) for card values and abilities and the [release history](#mwent/releases) for additions and changes.
+
+## If a DNPC card model is missing
+
+Since 0.1.5, DNPC Gecko model settings are read and temporary previews created during asset loading are refreshed. The model, assets and optional rendering libraries must be available; a catalog entry does not install the integration.

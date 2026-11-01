@@ -15,6 +15,12 @@ tags:
   - faction
 ---
 
+## 엄폐와 제압 사격의 설정 위치
+
+**Cover**는 적의 공격을 피할 지형으로 움직이는 설정입니다. **Enable Cover**를 켜고 **On Reload / On Damage** 등 언제 숨을지 고릅니다. 시야를 잃은 적의 마지막 위치에 쏘는 **Suppressive Fire**는 **Senses → Quick View → Suppressive Fire**에서 따로 정합니다.
+
+![Cover에서 Enable Cover와 발동 조건·탐색 반경·시간을 정하는 화면.](assets/media/guides/warfare-031-neo1211/dw-cover.png "DW 0.3.1 / NeoForge 1.21.1. 예제는 Enable Cover가 꺼져 있습니다. 켠 뒤에도 열린 평지에는 숨을 지형이 없으므로 엄폐 동작이 나오지 않을 수 있습니다.")
+
 ## 설정 화면 위치
 
 이 기능들은 제작자 설정이며 플레이어용 플레이 화면이 아닙니다.

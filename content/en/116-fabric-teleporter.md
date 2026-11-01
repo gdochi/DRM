@@ -15,96 +15,69 @@ tags:
   - gui
 ---
 
-## Overview
+## Make a destination back to town
 
-The Teleporter editor creates file-based `teleporter_set` documents under `config/dochi_rpg_maker/teleporters`. A set contains categories, destinations, access conditions, locked-state presentation, media, transition timing, and sound settings.
+Let players interact with an NPC, choose a destination and travel. Finish one destination before adding access conditions or presentation. These are English screenshots from **DRM 0.3.1 / NeoForge 1.21.1**.
 
-The protected starter files are:
+1. Stand at the destination and note its **F3** coordinates. Check the floor and headroom.
+2. Right-click the air with the core and open **Teleporter Editor → Create New**.
+3. In **Category Settings**, rename **Towns** or use **Add** for a new category. **Display name** names the whole destination list.
 
-- `teleporters/default_teleporter_set.json`
-- `gui/default_teleporter_gui.json`
+![Category Settings for the list display name and the Towns category.](assets/media/guides/drm-031-neo1211/teleporter-editor.png "The middle contains list settings and categories; the right edits the selected category name and icon. Set destination coordinates in Destination Settings next.")
 
-Use `Save As` to create production files instead of changing protected defaults.
+### Name and arrival position
 
-## Open And Save
+Open **Destination Settings**. Use **Add** or select the sample **Spawn**, then configure **Info** on the right.
 
-1. Right-click air with `dochi_rpg_maker:dialogue_editor`.
-2. Choose `Teleporter` in the shared editor selector.
-3. Choose `Load Existing`, `Use Default`, or `Create New`.
-4. Edit the set, then use `Save As` with a non-default name such as `town_network.json`.
-
-The top bar provides `Editors`, `Create New`, `Load`, `Save`, `Save As`, and `Reset`. The main sections are `Categories`, `Interaction`, `Destinations`, and `Presentation`. Category and destination lists are searchable.
-
-## Categories And Destinations
-
-One schemaVersion 2 set supports up to 256 categories and 1,024 destinations.
-
-| Area | Important Fields |
+| Control | What to enter |
 | --- | --- |
-| Set | `setId`, `displayName`, `gui` |
-| Category | `id`, `name`, `iconMedia` |
-| Destination | `id`, `enabled`, `categoryId`, `name`, `description`, `descriptionStyles`, `iconMedia` |
-| Target | `x`, `y`, `z`, `yaw`, `pitch` |
-| Access | `accessConditions`, optional locked presentation and transition overrides |
+| **Name / Description** | A location name and directions players can recognize |
+| **Enabled** | Whether this destination is available |
+| **Category** | The category prepared above |
+| **Position → X / Y / Z** | Arrival coordinates; Y is the player's feet height |
+| **Yaw / Pitch** | Facing direction and vertical view angle after arrival |
 
-Targets are coordinates and rotation in the player's current dimension. DRM Core 0.1.8 does not provide a destination dimension field, so this system is not a cross-dimension teleporter.
+![The Spawn Info page with its name, description, category, position and rotation.](assets/media/guides/drm-031-neo1211/teleporter-destinations.png "Replace the sample 0.5 / 64 / 0.5 with a safe position in your world. Renaming the destination does not change its coordinates.")
 
-Category and destination media can use an image or item. Image media supports fit and crop settings; item media stores an item ID, count, and display size.
+Travel stays **in the current dimension**. Entering Nether coordinates alone does not move the player into the Nether.
 
-## Conditions, Locked State, And Transitions
+### Choose who may use it
 
-`interactionConditions` gates opening the whole set. Each destination also has `accessConditions`. Both use DRM's shared condition model and are checked by the server.
+Leave conditions empty for the first test. After travel works, configure these separately:
 
-The set-level locked presentation supports `visible`, `dimmed`, `hidden`, `unknown`, and `custom`. A destination can inherit the set value or override it. Presentation controls whether unavailable destinations remain visible and how they appear; it does not bypass the server condition check.
+- **Interaction Conditions:** who may open the entire list.
+- **Destination Settings → destination → Conditions:** who may use that destination.
 
-Transitions can set `fadeOutTicks`, `fadeInTicks`, and optional departure/arrival sounds. Sound entries use a ID plus volume and pitch. The editor includes a searchable sound picker and preview.
+For example, everyone can open the list while only players who finished a quest can visit the ruins. **Category Settings → Locked destination presentation** controls whether locked entries appear dimmed, hidden or otherwise styled. It does not grant access.
 
-0.1.8 also lets destination commands run before or during fade-out, immediately before or after travel, during fade-in, or after fade-in finishes. Choose the point that matches the presentation.
+![Interaction Conditions with Enabled, Mode AND and Add.](assets/media/guides/drm-031-neo1211/teleporter-conditions.png "Use Add to configure a condition and check Enabled. This screenshot is the initial state with no conditions.")
 
-## Bind A Set To An NPC
+### Screen transitions and sounds
 
-1. Save the Teleporter Set.
-2. Right-click the target CustomNPCs NPC with the core item.
-3. In NPC Apply, use the `FUNCTION` search field to find `Teleporter`.
-4. Select the set in the JSON list and choose `Apply Teleporter`.
-5. Right-click the NPC without the core item to open the player runtime.
+In **Travel Presentation**, **Fade out / Fade in** set the darkening and return durations in ticks. At normal speed, 20 ticks equal one second; the shown value of 10 is about half a second each. Choose **Departure sound / Arrival sound** with the search buttons and audition them with Play.
 
-The function search covers localized action names, target IDs, server JSON kinds, editor IDs, and binding groups. Switching functions no longer renders the redundant transient loading label at the lower-left; actual apply/load feedback still appears when work is in progress.
+![Travel Presentation with fade durations and separate departure and arrival sounds.](assets/media/guides/drm-031-neo1211/teleporter-presentation.png "Choose each sound separately. If a destination also runs commands, configure their timing in its Commands tab.")
 
-Use `Remove Teleporter` in the same target to clear the binding.
+## Save and connect the NPC
 
-## Open From Dialogue
+1. **Save As** a new name such as `guide_travel`. The editor adds the extension and saves `guide_travel.json`.
+2. Right-click a **DNPC or CustomNPCs NPC** with the core.
+3. In **NPC Apply**, choose **Teleporter JSON** on the left and your file in the middle. Use **Refresh** if needed.
+4. Click **Apply Teleporter** and check the applied list on the right.
+5. Interact with both hands empty, select a destination and travel. Check opening the list, arrival coordinates and facing separately.
 
-The `go_teleporter` action opens a Teleporter from a dialogue choice.
+![The player teleporter shows Village gate after applying the set to the NPC.](assets/media/guides/drm-031-neo1211/teleporter-npc-player.png "Select a destination in the middle, then press Travel at the lower right. This example leaves the large image region empty.")
 
-```json
-{
-  "type": "go_teleporter",
-  "teleporter": "bound"
-}
-```
+![After Travel, the player arrives at the preplaced oak entrance.](assets/media/guides/drm-031-neo1211/teleporter-arrived.png "The server confirmed arrival at the saved X 20.5 / Y -60 / Z 0.5. The floor and oak posts were prepared in the capture world to identify the arrival point. Use your own destination coordinates.")
 
-Use `bound` or a blank value for the set applied to the current NPC. To open a file directly, put a normalized path such as `town_network.json` in `teleporter` or `value`.
+Use **Remove Teleporter** on that NPC to remove the connection. Apply again when switching to a file saved under another name.
 
-## Player Runtime And GUI
+To open it from a regular dialogue choice, add **go_teleporter** in [Choice actions](#core-fabric/dialogue-system). Choose **bound** for this NPC's applied list or select a saved file for another list.
 
-The default Teleporter GUI uses an 800 × 450 stage. GUI Maker registers these Teleporter components:
+## Layout and saved files
 
-- `teleporter_search_bar`
-- `teleporter_category_list`
-- `teleporter_destination_list`
-- `teleporter_destination_name`
-- `teleporter_destination_description`
-- `teleporter_destination_icon`
-- `teleporter_action_button`
-- `teleporter_close_button`
+Edit destinations and conditions here; edit list placement, artwork and buttons in [GUI Maker](#core-fabric/gui-system). The connection is **Category Settings → GUI JSON / Open GUI Maker**. Keep a destination list, travel button and close button in the custom layout.
 
-Generic `image` components can also be used in a `teleporter` layout. The 0.1.8 player runtime does not apply the vanilla blur that previously covered the screen, so search, destination selection, travel, and close controls remain usable.
+Sets are saved in `config/dochi_rpg_maker/teleporters/`. `default_teleporter_set.json` and `gui/default_teleporter_gui.json` are starting templates. Keep your work separately with **Save As**.
 
-## Server Validation
-
-Players see destinations they can use. Moving too far from the NPC or no longer meeting access conditions can prevent travel.
-
-:::warning Current-dimension targets
-Changing only the coordinates does not move a player to another dimension. Build separate travel logic if the destination must cross dimensions.
-:::
+For a missing destination, check Enabled, category, search text and conditions. If the list opens but travel is rejected, check distance to the NPC and changed conditions, then interact again to reopen it.

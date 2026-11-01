@@ -16,6 +16,15 @@ tags:
   - audio
 ---
 
+
+## Move one text layer
+
+In Battle Presentation Maker follow **Element → Add Label → Content**. Label sets text, Font Size sets its size and Color its color. Layout controls position and box dimensions; Animation separately controls timing and movement.
+
+![Content properties after adding a Label.](assets/media/guides/cobble-029-neo1211/cobble-layer-content.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. {opponent_name} in Label resolves to the opponent’s name. The cursor is at tick zero, the beginning of Fade In, so the canvas text is not yet visible. Use Play to inspect its active interval.")
+
+![Animation properties for that Label.](assets/media/guides/cobble-029-neo1211/cobble-layer-animation.png "Start/End Tick is the visible interval; Start/Final X are departure and arrival positions. This example runs 0–144 ticks, moves X 280→360 while keeping Y 220, and grows from 0.8 to 1. Check that the same element is selected in the timeline.")
+
 ## Element types
 
 | Type | Rendering | Important fields |

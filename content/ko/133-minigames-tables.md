@@ -7,15 +7,17 @@ product: dochi-minigames
 category: 미니게임 테이블
 section: setup
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 제작자 / 서버 운영자
 ---
 
 ## 테이블 준비하기
 
-게임별 테이블 8종은 제작대에서 만들 수 있습니다. 재료 배치는 게임의 레시피 북에서 확인하세요. 각 테이블은 자기 게임 종류를 사용합니다.
+게임별 테이블·기계 9종은 제작대에서 만들 수 있습니다. 재료 배치는 게임의 레시피 북에서 확인하세요. 각 테이블은 자기 게임 종류를 사용합니다.
 
 크리에이티브의 **Minigame Table**은 게임 종류를 바꿔 쓰는 제작용 테이블이며 제작법은 없습니다.
+
+![실제 월드의 두더지·룰렛·슬롯 기계.](assets/media/guides/minigames-016-neo1211/roulette-native-world-stopped.png "Minigames 0.1.6 / NeoForge 1.21.1. 가운데 룰렛은 전용 Roulette Machine입니다. 모습과 연결한 게임 프로필은 별도 설정입니다. 우클릭했을 때 연결한 게임이 작동하는지 확인합니다. 기본 룰렛은 창 없이 회전합니다.")
 
 ## 게임 연결하기
 

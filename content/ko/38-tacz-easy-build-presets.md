@@ -36,6 +36,8 @@ tags:
 6. `Apply`를 누릅니다.
 7. 일반 편집기로 돌아와 총기와 생성된 값을 확인한 뒤 `Save`합니다.
 
+![Beginner·Intermediate·Expert를 고르는 Easy Build 시작 화면.](assets/media/guides/warfare-031-neo1211/dw-easy.png "DW 0.3.1 / NeoForge 1.21.1. 처음에는 Beginner의 7개 질문으로 시작합니다. 답한 내용으로 행동을 만들고 마지막 Apply 후 NPC 설정을 Save합니다.")
+
 ## 상세 수준
 
 | 수준 | 질문 방식 |
@@ -58,6 +60,8 @@ Easy Build는 행동을 구성하는 도구입니다. 다음 콘텐츠는 유지
 * 현재 가상 `Ammo Stock`과 최대 재고
 
 적용 후에는 `Gun`, `Targets`, `Ammo`, `Visual & FX` 같은 카테고리에서 그대로 확인할 수 있습니다.
+
+![Guard Rifleman·Patroller·Assault 프리셋 카드와 가로 스크롤.](assets/media/guides/warfare-031-neo1211/dw-presets.png "Presets는 카드를 눌러 적용합니다. 가로로 스크롤하면 나머지 지원 사수·저격수 카드도 볼 수 있습니다. 총·공격 대상·현재 탄약 재고는 별도로 확인합니다.")
 
 ## 전투 프리셋
 

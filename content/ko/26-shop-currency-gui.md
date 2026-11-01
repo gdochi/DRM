@@ -15,67 +15,45 @@ tags:
   - gui
 ---
 
-## 화폐 선택
+## 에메랄드를 받을지, 마을 주화를 받을지
 
-NPC Shop은 두 가지 결제 방식을 다룹니다.
+**NPC Shop → Shop settings → Shop currency**에서 상점의 기본 결제 수단을 정합니다. 에메랄드 아이템을 직접 받는 상점과, Currency Editor에서 만든 잔액을 받는 상점은 다른 방식입니다.
 
-| 방식 | 주요 필드 | 설명 |
+| 받을 돈 | 선택 | 준비 |
 | --- | --- | --- |
-| 아이템 화폐 | `currency`, `currencyItem` | 에메랄드 같은 아이템을 가격으로 사용합니다. |
-| DRM 화폐 | `currencyType`, `currencyId` | Currency Editor에서 만든 잔액을 가격으로 사용합니다. |
+| 인벤토리의 에메랄드 | Same required item → Payment item: minecraft:emerald | 별도 화폐 정의 없이 시작 가능 |
+| 플레이어의 마을 주화 잔액 | DRM 화폐를 선택하고 저장한 town_coin 지정 | [Currency Editor](#core/currency-editor)에서 먼저 저장 |
 
-`currencyType`이 `currency`이면 `currencyId`를 기준으로 DRM 화폐 정의를 찾습니다. 그 외에는 `currencyItem`이 기준이 됩니다.
+![Shop settings의 Shop currency와 Payment item 설정.](assets/media/guides/drm-031-forge1201/shop-settings.png "DRM 0.3.1 / Forge 1.20.1. 현재 화면은 Same required item이며 에메랄드를 직접 받습니다. 상품마다 바꾸려면 Payment 탭에서 설정합니다.")
 
-## Currency Picker
+## 한 상품만 다른 돈 받기
 
-상점 에디터는 서버 또는 로컬 화폐 정의 목록을 읽어 Currency Picker에 표시합니다. 여기서 화폐를 고르면 상점 문서의 `currencyType`, `currencyId`, `currency`, `currencyItem` 값이 함께 정리됩니다.
+왼쪽에서 상품을 고르고 **Payment**를 엽니다. **Inherit shop**이면 방금 정한 상점 기본 결제를 사용합니다. 상품 자체의 아이템/화폐 방식을 선택하면 그 상품만 다른 결제를 사용합니다.
 
-| 선택 결과 | 저장되는 방향 |
+예를 들어 빵은 에메랄드로 팔고 특별한 검은 마을 주화로 팔 수 있습니다. 가격 숫자만 바꾸어서는 결제 방식이 바뀌지 않습니다. 어떤 아이템이나 잔액을 받는지도 함께 선택합니다.
+
+![Bread의 Payment 설정.](assets/media/guides/drm-031-forge1201/shop-bread-payment.png "DRM 0.3.1 / Forge 1.20.1. 상점 기본 결제를 상속하는지, 이 상품에 별도 결제를 지정했는지 확인합니다. Product의 Quantity는 지급할 상품 수량이고 Price는 한 묶음 가격입니다.")
+
+## 상점 창 모양 바꾸기
+
+1. **GUI Maker**에서 **npc_shop** 화면을 열고 기본 상점 화면을 불러옵니다.
+2. 상품 행·가격·거래 버튼의 위치를 조정한 뒤 **Save As**로 저장합니다.
+3. **NPC Shop → Shop settings → Shop interface**에서 내 화면을 사용하는 방식으로 바꿉니다.
+4. **Interface JSON** 옆 돋보기로 저장한 상점 GUI를 선택합니다.
+5. 상점도 **Save As / Save**하고 NPC에 적용한 뒤 실제 상점을 다시 엽니다.
+
+구매·매입 화면을 따로 꾸미는 설정을 쓰는 경우 각각 같은 `npc_shop` 화면 종류로 만듭니다. 대화용 GUI를 골라 놓으면 상점 목록과 거래 버튼을 기대한 대로 표시할 수 없습니다.
+
+## 화면에서 무엇을 확인하나요?
+
+![Bread를 선택한 실제 NPC 상점의 결제 요약.](assets/media/guides/drm-031-forge1201/shop-bread-selected.png "DRM 0.3.1 / Forge 1.20.1. 이 실습은 빵 3개 한 묶음에 에메랄드 4개입니다. 체크한 상품과 아래 합계의 결제 수단을 확인하고 Buy Selected를 누릅니다.")
+
+| 바꾸고 싶은 것 | 여는 곳 |
 | --- | --- |
-| DRM 화폐 선택 | `currencyType: "currency"`, `currencyId: "<id>"` |
-| 아이템 화폐 선택 | `currencyType`은 아이템 방식, `currencyItem`에 아이템 ID |
+| 상품·묶음 수량·가격·재고 | NPC Shop → Product / Restock |
+| 받을 아이템·화폐 | Shop settings 또는 상품의 Payment |
+| 상품 행·합계·버튼의 배치 | GUI Maker의 npc_shop 화면 |
+| 화폐 이름·아이콘·아이템 변환 | Currency Editor |
+| 게임 화면에 계속 보이는 잔액 | HUD Maker |
 
-## GUI 연결 필드
-
-| 필드 | 의미 |
-| --- | --- |
-| `shopDefaultGui` | 구매/판매 공통 기본 GUI입니다. |
-| `shopGuis.buy` | 구매 화면 전용 GUI입니다. |
-| `shopGuis.sell` | 판매 화면 전용 GUI입니다. |
-
-구매와 판매 화면을 같은 구조로 쓰면 `shopDefaultGui`만으로 충분합니다. 두 화면의 목록, 버튼, 설명 패널 구성을 다르게 만들려면 `shopGuis.buy`와 `shopGuis.sell`을 나눕니다.
-
-## 상점 GUI에 필요한 컴포넌트
-
-아래 컴포넌트는 GUI Maker에서 `npc_shop` 타입 GUI를 만들 때 배치하는 화면 요소입니다. 플레이어 상점창은 이 배치에 따라 상품·가격·재고를 보여 줍니다.
-
-| 컴포넌트 | 역할 |
-| --- | --- |
-| `item_slot` | 상품 목록 행입니다. |
-| `shop_action_button` | 구매 또는 판매 실행 버튼입니다. |
-| `shop_transaction_viewer` | 선택한 거래의 수량, 단가, 총액을 보여줍니다. |
-| `currency_display` | 플레이어 잔액 또는 보유 화폐를 보여줍니다. |
-| `shop_search_bar` | 상품 목록 필터 입력입니다. |
-| `shop_page_selector` | 여러 페이지를 이동하는 UI입니다. |
-| `player_inventory` | 판매 모드에서 플레이어 인벤토리를 보여줍니다. |
-| `shop_item_description` | 선택한 상품 설명을 표시합니다. |
-
-## GUI Maker와 역할 분리
-
-NPC Shop은 상품 데이터와 거래 규칙을 저장합니다. GUI Maker는 그 상품을 화면에 어떤 모양으로 보여줄지 저장합니다.
-
-즉, NPC Shop 에디터에서 `items`와 `sellItems`를 고치면 무엇을 사고팔 수 있는지가 바뀝니다. GUI Maker에서 `item_slot`, `shop_action_button`, `currency_display` 위치를 고치면 플레이어가 플레이 상점 화면에서 그것을 어디에 어떤 모양으로 보는지가 바뀝니다.
-
-따라서 상품이 보이지 않을 때 먼저 봐야 할 기준은 다음처럼 나뉩니다.
-
-| 확인 대상 | 담당 에디터 |
-| --- | --- |
-| 상품 ID, 가격, 재고, 매입 목록 | NPC Shop |
-| 상품 행 위치, 버튼 위치, 검색 바, 페이지 버튼 | GUI Maker |
-| 화폐 ID와 HUD 표시 규칙 | Currency Editor / HUD Maker |
-
-## 제한
-
-- 상점 GUI 파일만 만들어서는 거래 상품이 생기지 않습니다.
-- 상점 문서에 없는 컴포넌트 역할을 GUI에서 만들어도 서버 거래 규칙은 바뀌지 않습니다.
-- 구매와 판매를 다른 GUI로 나눌 때도 두 GUI 모두 `guiType: "npc_shop"`이어야 합니다.
+상점의 잔액 요소는 플레이어가 가진 돈을 표시합니다. 아이콘과 글자를 그려 놓는 것으로 잔액이 지급되지는 않습니다. 돈을 만들고 잔액을 확인하는 순서는 [화폐와 HUD 연결](#core/currency-hud-shop), 실제 거래 예제는 [상점 만들기](#core/shop-system)를 따릅니다.

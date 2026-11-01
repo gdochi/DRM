@@ -21,6 +21,9 @@ Use this order: **edit → Save As → Apply to an NPC → interact with empty h
 
 Saving creates the file. Apply chooses the NPC that uses it. If you only saved, right-click the NPC with the Core and select the file to apply.
 
+
+![The NPC apply screen after selecting a saved server conversation.](assets/media/guides/drm-031-neo1211/npc-apply-result.png "DRM 0.3.1 / NeoForge 1.21.1. village_guide was selected and linked with Apply Dialogue. After Save As under another name, select the new file here too.")
+
 ## Change something already applied
 
 Open the same file, use **Save**, then interact with the NPC again. If you saved under a new name, apply that new file to the NPC.

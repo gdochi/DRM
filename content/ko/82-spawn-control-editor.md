@@ -21,6 +21,10 @@ tags:
 
 스폰 컨트롤 화면은 서버의 활성 자연 스폰 설정을 받아 편집하는 **제작자용 에디터**입니다. 플레이어에게 표시되는 플레이 GUI가 아닙니다. 화면에서 바꾼 값은 초안이며, 상단 `저장` 또는 프리셋 작업을 완료해야 서버 설정에 반영됩니다.
 
+![Spawn Control 편집기. 왼쪽 Entity / Clone Catalog, 가운데 대상 미리보기와 Natural Spawn Rules, 오른쪽 Rule Inspector가 있습니다.](assets/media/guides/spawn-control-014-neo1211/catalog.png "Spawn Control 0.1.4 / NeoForge 1.21.1 화면입니다. 대상을 고른 뒤 Add Rule로 규칙을 만들면 오른쪽에서 등장 조건을 설정할 수 있습니다.")
+
+찾는 몹은 왼쪽 검색 칸에서 고릅니다. 가운데 **Selected Target**은 그 대상의 규칙만, **All Configured**는 다른 대상까지 포함한 규칙을 보여 줍니다. 오른쪽에 ‘No rule is selected’가 나오면 가운데에서 편집할 규칙을 골랐는지 확인하세요.
+
 ## 상단바
 
 | 버튼 | 동작 |
@@ -37,7 +41,7 @@ tags:
 
 카탈로그는 규칙을 만들 대상을 고르는 영역입니다.
 
-- 일반 등록 `Mob`과 CustomNPCs 저장 클론을 함께 검색합니다.
+- 일반 몹과 지원되는 NPC 저장 템플릿을 함께 검색합니다. DNPC 템플릿은 [저장한 NPC 스폰하기](#dochi-spawn-control/spawn-control-npc-templates)에서 이어서 설명합니다.
 - 검색어는 ID, 표시 이름, 모드 이름을 찾습니다.
 - `mod:<id>` 또는 `support:<state>` 검색을 사용할 수 있습니다.
 - `필터`에서는 엔티티/클론, 지원 상태, 설치 모드를 조합합니다.

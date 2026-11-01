@@ -42,6 +42,8 @@ Add optional mods for the features you use, such as GeckoLib for Gecko models or
 
 Bundled examples are prepared on the first run; no hand-written JSON is needed to begin.
 
+![The editor selector opened with Core after installation.](assets/media/guides/drm-031-forge1201/editor-selector.png "DRM 0.3.1 / Forge 1.20.1. Selecting Dialogue Editor exposes Load, Use Default and Create New. Start with Use Default, then Save As your own work. Installed addons change the available list.")
+
 ## Updates and moving servers
 
 Replace old mod files rather than keeping both versions. Keep `config/dochi_rpg_maker/` together with the world, which also stores placed NPCs and player progress.

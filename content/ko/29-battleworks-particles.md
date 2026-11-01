@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: 사용 안내
-version: 0.1.5
+version: 0.1.6
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -34,7 +34,7 @@ BattleWorks의 Particle Shape 액션에서도 **Open Particle Maker**로 같은 
 | 위치 / 값 | 실습 입력 |
 | --- | --- |
 | Effect name | Training Ring |
-| Duration (ticks) | 40 |
+| Emission (ticks) | 40 |
 | + Layer | 레이어 1개 |
 | Start tick / End tick | 0 / 39 |
 | Interval (ticks) | 2 |
@@ -56,6 +56,8 @@ BattleWorks의 Particle Shape 액션에서도 **Open Particle Maker**로 같은 
 파티클 레이어의 End tick은 포함되지만 **Duration보다 작아야** 합니다. 40틱 효과의 유효 범위는 0~39입니다. 전투 Stage의 Event Tick 경계와 혼동하지 마세요.
 
 이 설정은 0, 2, 4, …, 38틱에 총 20회 방출합니다. 한 번에 24개를 요청하므로 전체 요청은 480개입니다. Count와 Sample points를 동시에 크게 올리면 입자 수가 빠르게 증가합니다.
+
+![Particle Maker의 레이어 타이밍과 Timing / names 설정.](assets/media/guides/battleworks-016-neo1211/battleworks-particles.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 이 화면의 Emission (ticks) 40과 Start 0 / End 39 / Interval 2를 함께 봅니다. 위쪽 미리보기 패널은 접혀 있으며, 실제 입자 모양은 펼친 뒤 별도로 확인합니다.")
 
 ## 3. 반지름이 커지는 효과로 바꾸기
 

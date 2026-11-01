@@ -16,6 +16,12 @@ tags:
   - effect
 ---
 
+## Read Speed II level and remaining time
+
+Use this to branch dialogue or behavior based on a potion effect. Check has first, then use level for a player-facing level number. This API only reads effects; prepare the effect separately.
+
+![Actual read speed ii level and remaining time result.](assets/media/guides/drm-031-forge1201-apis/api-effect-speed.png "DRM 0.3.1 / Forge 1.20.1. An actual Speed II player effect returns has=true, level=2 and amplifier=1. The query reports 1200 ticks; time passes before capture, so the inventory shows 00:57.")
+
 ## Overview
 
 `drmEffect` is a global CustomNPCs script object for reading active Mob Effects, commonly called potion effects, from living entities. It reports whether an NPC or player has an effect, how many ticks or seconds remain, and both the internal amplifier and user-facing level.

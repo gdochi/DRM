@@ -14,62 +14,32 @@ tags:
   - examples
 ---
 
-## Dialogue NPC
+## Finish one dialogue NPC
 
-1. In `GUI Maker`, create a `dialogue` GUI and save it as `gui/my_dialogue_gui.json`.
-2. In `Dialogue Editor`, choose `Create New Dialogue Set`.
-3. Point `dialogueDefaultGui.guiJsonPath` at your GUI file.
-4. Make the `start` node route point to the first general node.
-5. Add text, choices, conditions, and actions to general nodes.
-6. For repeated flows, select nodes with `Shift+Click`, use `Copy` / `Paste`, and drag node/route/choice/condition/action rows into order.
-7. Use `Save As` and save to `dialogue_sets/my_npc_dialogue`.
-8. Right-click the target NPC with the core item and apply the dialogue.
-9. The saved dialogue opens as runtime dialogue when the NPC is right-clicked without the core item.
+1. Open the example in [Dialogue Editor](#core/dialogue-system) and write the greeting in **Text**.
+2. In **Choices**, create a reply choice and a closing choice.
+3. Check that **start → Routes** points to the greeting.
+4. **Save As** `village_guide`.
+5. Open the NPC with the core and choose **Dialogue JSON → village_guide → Apply Dialogue**.
+6. Interact with both hands empty and test every choice.
 
-## File-Based Shop NPC
+![village_guide applied as the NPC Dialogue.](assets/media/guides/drm-031-forge1201/npc-apply-result.png "DRM 0.3.1 / Forge 1.20.1. Select the file, press Apply Dialogue, then check its name on the right.")
 
-1. In `GUI Maker`, create an `npc_shop` GUI or use `default_shop_gui.json`.
-2. In `NPC Shop`, choose `Create New NPC Shop`.
-3. Set `id`, `title`, `tradeMode`, and `currency` or `currencyId`.
-4. Add buy products to `items` and sale offers to `sellItems`. Change a product's `Payment` from inherited to an item/DRM currency override when needed.
-5. For finite products, configure `Stock`, `Max Stock`, `Restock`, `Amount`, and `Interval`.
-6. Connect `shopDefaultGui`, and optionally `shopGuis.buy` and `shopGuis.sell`.
-7. Save as `npc_shops/blacksmith.json`.
-8. Add a dialogue `go_shop` action with `shop: "blacksmith"`.
-9. The selected dialogue choice opens the file-based shop.
+Complete the conversation with the default layout first. To change its appearance, copy a layout in [GUI Maker](#core/gui-system) and connect it in the dialogue’s **GUI** settings.
 
-## NPC-Bound Shop
+## Connect a shop
 
-1. Right-click the target NPC with the core item.
-2. Open `NPC Shop` for that NPC.
-3. Save the shop to saved NPC settings.
-4. Use a blank or `bound` `go_shop` value to open that NPC-bound shop.
+In [NPC Shop](#core/shop-system), set **Product → Payment → Restock** for goods, price and stock. Check **Preview**, Save As the file and apply it under **NPC Shop JSON**. Prepare payment, buy once, then check inventory and stock.
 
-This is convenient for one-off NPCs. File-based shops are easier when multiple NPCs share the same shop.
+![Bread price 4 with Inherit Shop payment.](assets/media/guides/drm-031-forge1201/shop-bread-payment.png "DRM 0.3.1 / Forge 1.20.1. Quantity 3 is the bread received per purchase; Price 4 is the emeralds paid per purchase.")
 
-## Currency And HUD
+To enter through dialogue, add **go_shop** in **Choice actions** and choose the saved shop. Use **bound** for the shop applied to the current NPC.
 
-1. In `Currency Editor`, create a currency ID and name.
-2. Set `itemIcon` to a real item ID such as `minecraft:emerald`.
-3. Enable `autoConvertOnPickup` if pickups should become balance.
-4. For death loss, set `deathRule: "LOSE"` and `deathLossPercent`.
-5. In `HUD Maker` or GUI Maker `currency_hud`, place currency display components.
-6. Run `/drm currency reload` so the server reads the new currency definition.
+## Add currency and a balance display
 
-## Before Production
+1. Create a currency in [Currency Editor](#core/currency-editor) and Save As.
+2. Select it for shop payment, matching physical items or DRM balance to the intended method.
+3. Add Currency in [HUD Maker](#core/hud-maker) and select the same currency.
+4. Test granting money, purchasing and the balance display together. Adding a HUD does not grant money.
 
-| Item | Rule |
-| --- | --- |
-| Filenames | Dialogue set, GUI, shop, and currency filenames should match intended IDs. |
-| Defaults | Do not overwrite bundled defaults directly. |
-| Links | Dialogue GUI, shop GUI, and shop currency IDs should point to real files and definitions. |
-| NPC data | Keep file-based server JSON separate from saved NPC settings. |
-| Reload | If server JSON is edited directly, run `/drm reload` or the matching reload command. |
-
-:::tip Production Copy
-Manage production data from the full `config/dochi_rpg_maker` folder. Data stored only in saved NPC settings does not move with file copies alone.
-:::
-
-:::tip Editing Shortcuts
-Supported editors use `Ctrl+S`, `Ctrl+Z`, and `Ctrl+Y` or `Ctrl+Shift+Z`. On protected defaults, create a new ID with `Save As` instead of quick-saving.
-:::
+When moving files, check the connected GUI, shop and currency in [saved folders](#core/paths).

@@ -15,6 +15,12 @@ tags:
   - rematch
 ---
 
+## Find triggers and rematches
+
+Choose the battle trigger under **Battle Config → Encounter**. The example **Trigger: Interaction** starts when the player interacts. For automatic detection, change Trigger and review sight, distance and pursuit together.
+
+![Encounter trigger, sight, pursuit and battle positioning.](assets/media/guides/cobble-029-neo1211/cobble-encounter.png "0.2.9 / NeoForge 1.21.1. Battle start distance and Vision distance are different settings. Configure rematches in Rounds → Rematch Policy.")
+
 ## Trigger evaluation
 
 | Trigger | Server check | Typical use |
