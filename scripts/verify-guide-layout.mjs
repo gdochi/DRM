@@ -3,7 +3,7 @@ import { cp, mkdir, readFile, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import os from "node:os";
 import path from "node:path";
-import vm from "node:vm";
+import { loadBuiltDocs } from "./load-built-docs.mjs";
 import { fileURLToPath } from "node:url";
 import { serve } from "./preview-server.mjs";
 
@@ -16,7 +16,7 @@ await mkdir(output, { recursive: true });
 const snapshot = path.join(output, `site-${Date.now()}`);
 await cp(path.join(root, "dist"), snapshot, { recursive: true, errorOnExist: true });
 const context = { window: {} };
-vm.runInNewContext(await readFile(path.join(snapshot, "assets/docs-data.js"), "utf8"), context);
+context.window.DRM_DOCS_DATA = (await loadBuiltDocs(snapshot)).data;
 const server = serve(snapshot, 0);
 if (!server.listening) await new Promise(resolve => server.once("listening", resolve));
 const origin = `http://127.0.0.1:${server.address().port}`;

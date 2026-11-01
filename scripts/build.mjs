@@ -13,6 +13,10 @@ const modLogoDir = path.join(root, "_modLogo");
 const distModLogoDir = path.join(assetsDir, "mod-logos");
 
 const config = JSON.parse(await readFile(path.join(root, "site.config.json"), "utf8"));
+config.translations = {};
+for (const locale of ["pt", "es", "fr"]) {
+  config.translations[locale] = JSON.parse(await readFile(path.join(srcDir, "locales", `${locale}.json`), "utf8"));
+}
 const captureManifest = JSON.parse(await readFile(path.join(srcDir, "guide-environments.json"), "utf8")).captures;
 const docsByLocale = {};
 
@@ -24,6 +28,14 @@ await rm(distDir, { recursive: true, force: true });
 await mkdir(assetsDir, { recursive: true });
 
 const assetVersion = Date.now().toString(36);
+const bootstrapLocale = config.fallbackLocale || "en";
+config.localeFiles = {};
+for (const [locale, documents] of Object.entries(docsByLocale)) {
+  if (locale === bootstrapLocale || !documents.length) continue;
+  const filename = `docs-${locale}.js`;
+  config.localeFiles[locale] = `assets/${filename}?v=${assetVersion}`;
+  await writeFile(path.join(assetsDir, filename), `window.DRM_DOCS_DATA[${JSON.stringify(locale)}] = ${JSON.stringify(documents)};\n`, "utf8");
+}
 let template = await readFile(path.join(srcDir, "template.html"), "utf8");
 template = template
   .replace(/<html lang="[^"]*">/, `<html lang="${escapeAttr(config.defaultLocale || "ko")}">`)
@@ -40,7 +52,7 @@ await copyDirectory(mediaDir, distMediaDir);
 await copyDirectory(modLogoDir, distModLogoDir);
 await writeFile(
   path.join(assetsDir, "docs-data.js"),
-  `window.DRM_DOCS_CONFIG = ${JSON.stringify(config)};\nwindow.DRM_DOCS_DATA = ${JSON.stringify(docsByLocale)};\n`,
+  `window.DRM_DOCS_CONFIG = ${JSON.stringify(config)};\nwindow.DRM_DOCS_DATA = ${JSON.stringify({ [bootstrapLocale]: docsByLocale[bootstrapLocale] })};\n`,
   "utf8"
 );
 
@@ -80,6 +92,8 @@ async function loadLocale(locale) {
       version: data.version || "",
       audience: data.audience || "",
       sourcePath: path.relative(root, path.join(localeDir, file)).replace(/\\/g, "/"),
+      translationSource: data.translationSource || "",
+      translationMethod: data.translationMethod || "",
       html: rendered.html,
       headings: rendered.headings,
       captureEnvironments,

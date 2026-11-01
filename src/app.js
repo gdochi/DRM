@@ -19,17 +19,23 @@
   }
 
   const localeKeys = Object.keys(config.locales || {});
+  const requestedLocale = new URLSearchParams(location.search).get("lang");
   const state = {
-    locale: safeGet("drm-docs-locale", config.defaultLocale || "en"),
+    locale: config.locales?.[requestedLocale] ? requestedLocale : safeGet("drm-docs-locale", config.defaultLocale || "en"),
     localeMenuOpen: false,
     feedbackOpen: false
   };
   let giscusMounted = false;
   let headingObserver = null;
   const searchIndexes = new Map();
+  const localeLoads = new Map();
+  let localeRequest = 0;
+  let booting = true;
   let previousRoute = "";
 
   function ui(key) {
+    const translated = config.translations?.[state.locale]?.ui?.[key];
+    if (translated) return translated;
     const copy = {
       ko: {
         search: "문서 검색", searchHint: "기능 이름이나 화면의 버튼명을 입력하세요", allMods: "모든 모드", thisMod: "현재 모드",
@@ -38,7 +44,8 @@
         chooseMod: "모드 선택", tasks: "무엇을 만들고 싶나요?", homeLead: "만들고 싶은 것을 고르거나, 아래에서 사용하는 모드의 설명을 여세요.",
         history: "변경 기록", guideVersion: "설명 기준", captures: "수록 화면", missing: "문서를 찾을 수 없습니다", missingHint: "주소가 변경되었거나 존재하지 않는 문서입니다.", start: "처음 사용하기",
         zoom: "화면 확대", fit: "전체 보기", actualSize: "원본 크기", original: "원본 열기", zoomIn: "확대", zoomOut: "축소", imageHint: "자세히 볼 곳을 누르세요. 확대한 뒤 끌어서 이동할 수 있습니다.",
-        english: "영문 문서", related: "이어서 볼 문서", filter: "목록에서 찾기", filterHint: "이름이나 설명으로 찾기", matches: "표시한 항목", section: "항목"
+        english: "영문 문서", related: "이어서 볼 문서", filter: "목록에서 찾기", filterHint: "이름이나 설명으로 찾기", matches: "표시한 항목", section: "항목",
+        loading: "언어를 불러오는 중…", loadFailed: "언어를 불러오지 못했습니다. 다시 시도해 주세요.", retry: "다시 시도", sourceEnglish: "영어 원문", assisted: "번역 문서"
       },
       en: {
         search: "Search docs", searchHint: "Search a feature or an in-game button name", allMods: "All mods", thisMod: "This mod",
@@ -47,7 +54,8 @@
         chooseMod: "Choose a mod", tasks: "What would you like to make?", homeLead: "Choose what you want to make, or open the guide for your mod below.",
         history: "Release history", guideVersion: "Guide version", captures: "Screens shown", missing: "Document not found", missingHint: "This address has changed or does not exist.", start: "Get started",
         zoom: "Enlarge screenshot", fit: "Fit image", actualSize: "Actual size", original: "Open original", zoomIn: "Zoom in", zoomOut: "Zoom out", imageHint: "Click an area to enlarge it. Drag to move when zoomed in.",
-        english: "English guide", related: "Continue with", filter: "Find in this list", filterHint: "Find a name or description", matches: "Visible entries", section: "Section"
+        english: "English guide", related: "Continue with", filter: "Find in this list", filterHint: "Find a name or description", matches: "Visible entries", section: "Section",
+        loading: "Loading language…", loadFailed: "Could not load this language. Please try again.", retry: "Retry", sourceEnglish: "English original", assisted: "Assisted translation"
       }
     };
     return copy[state.locale]?.[key] || copy.en[key] || key;
@@ -58,7 +66,7 @@
   }
 
   if (!config.locales?.[state.locale]) state.locale = config.defaultLocale || localeKeys[0] || "en";
-  document.documentElement.lang = state.locale;
+  document.documentElement.lang = config.locales?.[state.locale]?.htmlLang || state.locale;
 
   const app = document.getElementById("app");
 
@@ -88,6 +96,8 @@
   }
 
   function t(key) {
+    const translated = config.translations?.[state.locale]?.common?.[key];
+    if (translated) return translated;
     const copy = {
       ko: {
         repo: "GitHub",
@@ -330,11 +340,11 @@
   }
 
   function statusText(meta) {
-    return meta[`statusText_${state.locale}`] || meta[`statusText_${getFallbackLocale()}`] || meta.statusText || "";
+    return localizedConfigText(meta, "statusText");
   }
 
   function localizedConfigText(source, field) {
-    return source?.[`${field}_${state.locale}`] || source?.[`${field}_${getFallbackLocale()}`] || source?.[field] || "";
+    return source?.[`${field}_${state.locale}`] || config.translations?.[state.locale]?.config?.[source?.[field]] || source?.[`${field}_${getFallbackLocale()}`] || source?.[field] || "";
   }
 
   function getDefaultDoc(product) {
@@ -347,11 +357,11 @@
   }
 
   function productText(meta, field) {
-    return meta[`${field}_${state.locale}`] || meta[`${field}_${getFallbackLocale()}`] || meta[field] || "";
+    return localizedConfigText(meta, field);
   }
 
   function modText(meta, field) {
-    return meta?.[`${field}_${state.locale}`] || meta?.[`${field}_${getFallbackLocale()}`] || meta?.[field] || "";
+    return localizedConfigText(meta, field);
   }
 
   function feedbackModLabel(meta) {
@@ -379,7 +389,7 @@
   }
 
   function sectionText(section, field) {
-    return section?.[`${field}_${state.locale}`] || section?.[`${field}_${getFallbackLocale()}`] || section?.[field] || "";
+    return localizedConfigText(section, field);
   }
 
   function getProductSections(product) {
@@ -567,7 +577,8 @@
       en: "en",
       ru: "ru",
       zh: "zh-CN",
-      ja: "ja"
+      ja: "ja",
+      pt: "pt", es: "es", fr: "fr"
     }[state.locale] || "en";
   }
 
@@ -770,12 +781,13 @@
     return `
       <div class="doc-shell">
         ${renderToc(activeDoc, true)}
-        <article class="doc-page" lang="${escapeAttr(activeDoc.sourcePath?.split("/")[1] || state.locale)}" data-doc-page data-product="${escapeAttr(product)}" data-doc="${escapeAttr(activeDoc.slug)}">
+        <article class="doc-page" lang="${escapeAttr(getLocaleMeta(activeDoc.sourcePath?.split("/")[1] || state.locale).htmlLang || activeDoc.sourcePath?.split("/")[1] || state.locale)}" data-doc-page data-product="${escapeAttr(product)}" data-doc="${escapeAttr(activeDoc.slug)}">
           <header class="doc-page-head">
             <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home">Wiki</a>${icon("chevron")}<a href="${linkForProduct(product)}">${escapeHtml(productText(meta, "shortLabel") || productText(meta, "label"))}</a>${section ? `${icon("chevron")}<span>${escapeHtml(sectionText(section, "label"))}</span>` : ""}</nav>
             <h1>${escapeHtml(activeDoc.title)}</h1>
             ${activeDoc.description ? `<p class="doc-description">${escapeHtml(activeDoc.description)}</p>` : ""}
             <div class="doc-context">${activeDoc.version ? `<span>${escapeHtml(ui("guideVersion"))} <strong>${escapeHtml(activeDoc.version)}</strong></span>` : ""}${isHistory(activeDoc) ? `<span class="history-badge">${escapeHtml(ui("history"))}</span>` : ""}${activeDoc.sourcePath?.split("/")[1] !== state.locale ? `<span>${escapeHtml(ui("english"))}</span>` : ""}</div>
+            ${activeDoc.translationSource ? `<div class="translation-context"><span>${escapeHtml(ui("assisted"))}</span><button type="button" data-source-locale="${escapeAttr(activeDoc.translationSource)}">${escapeHtml(ui("sourceEnglish"))}${icon("arrowRight")}</button></div>` : ""}
             ${environments.length ? `<p class="capture-context">${escapeHtml(ui("captures"))}: ${environments.map(escapeHtml).join(" · ")}</p>` : ""}
           </header>
           <div class="doc-page-body">${activeDoc.html}</div>
@@ -881,12 +893,7 @@
     app.querySelectorAll("[data-locale]").forEach((button) => {
       button.addEventListener("click", (event) => {
         event.stopPropagation();
-        state.locale = button.dataset.locale;
-        state.localeMenuOpen = false;
-        safeSet("drm-docs-locale", state.locale);
-        document.documentElement.lang = state.locale;
-        renderPage({ preserveReading: true });
-        app.querySelector("[data-locale-toggle]")?.focus({ preventScroll: true });
+        changeLocale(button.dataset.locale);
       });
     });
 
@@ -899,6 +906,7 @@
       app.querySelector("[data-theme-toggle]").innerHTML = icon(next === "dark" ? "sun" : "moon");
     });
     app.querySelectorAll("[data-search-open]").forEach(button => button.addEventListener("click", () => openSearch(product)));
+    app.querySelector("[data-source-locale]")?.addEventListener("click", event => changeLocale(event.currentTarget.dataset.sourceLocale));
     app.querySelector("[data-mobile-menu]")?.addEventListener("click", event => {
       const button = event.currentTarget;
       const open = button.getAttribute("aria-expanded") !== "true";
@@ -928,6 +936,66 @@
     state.localeMenuOpen = open;
     app.querySelector("[data-locale-menu]")?.classList.toggle("is-open", open);
     app.querySelector("[data-locale-toggle]")?.setAttribute("aria-expanded", String(open));
+  }
+
+  async function ensureLocale(locale) {
+    if (getLocaleDocs(locale).length || !config.localeFiles?.[locale]) return;
+    if (localeLoads.has(locale)) return localeLoads.get(locale);
+    const pending = new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = new URL(config.localeFiles[locale], document.baseURI).href;
+      script.async = true;
+      script.onload = () => {
+        script.remove();
+        if (getLocaleDocs(locale).length) resolve();
+        else reject(new Error("Missing language content"));
+      };
+      script.onerror = () => { script.remove(); reject(new Error("Language unavailable")); };
+      document.head.append(script);
+    });
+    localeLoads.set(locale, pending);
+    try { await pending; } catch (error) { localeLoads.delete(locale); throw error; }
+  }
+
+  function languageStatus(message, retryLocale) {
+    document.querySelector(".language-status")?.remove();
+    const status = document.createElement("div");
+    status.className = "language-status";
+    status.setAttribute("role", "status");
+    status.textContent = message;
+    if (retryLocale) {
+      const retry = document.createElement("button");
+      retry.type = "button";
+      retry.textContent = ui("retry");
+      retry.addEventListener("click", () => changeLocale(retryLocale));
+      status.append(retry);
+    }
+    document.body.append(status);
+  }
+
+  async function changeLocale(locale) {
+    if (!config.locales?.[locale]) return;
+    const request = ++localeRequest;
+    setLocaleMenu(false);
+    app.setAttribute("aria-busy", "true");
+    languageStatus(ui("loading"));
+    try {
+      await ensureLocale(locale);
+      if (request !== localeRequest) return;
+      state.locale = locale;
+      safeSet("drm-docs-locale", locale);
+      const url = new URL(location.href);
+      url.searchParams.set("lang", locale);
+      history.replaceState(null, "", url);
+      document.documentElement.lang = getLocaleMeta(locale).htmlLang || locale;
+      renderPage({ preserveReading: true });
+      app.querySelector("[data-locale-toggle]")?.focus({ preventScroll: true });
+      document.querySelector(".language-status")?.remove();
+    } catch (error) {
+      if (request === localeRequest) languageStatus(ui("loadFailed"), locale);
+    } finally {
+      if (request === localeRequest) app.removeAttribute("aria-busy");
+    }
   }
 
   function captureReadingPosition() {
@@ -988,7 +1056,7 @@
   }
 
   function normalizeSearch(text) {
-    return String(text).normalize("NFKC").toLocaleLowerCase().replace(/\s+/g, " ").trim();
+    return String(text).normalize("NFKC").toLocaleLowerCase().normalize("NFD").replace(/\p{M}/gu, "").normalize("NFC").replace(/\s+/g, " ").trim();
   }
 
   function getSearchIndex() {
@@ -1015,12 +1083,13 @@
 
   function queryGroups(value) {
     const aliases = [
-      ["상점", "shop", "pokemart"], ["돈", "화폐", "currency"], ["탄약", "ammo", "ammunition"],
-      ["시간표", "schedule", "schedules"], ["대화", "dialogue", "dialog"], ["적용", "apply"],
+      ["상점", "shop", "pokemart", "loja", "tienda", "boutique", "magasin"], ["돈", "화폐", "currency", "dinheiro", "moeda", "moneda", "argent", "monnaie"], ["탄약", "ammo", "ammunition", "munição", "munición", "munition", "munitions"],
+      ["시간표", "schedule", "schedules", "horários", "horarios", "horaires"], ["대화", "dialogue", "dialog", "diálogo", "dialogo"], ["적용", "apply", "aplicar", "appliquer"],
       ["저장", "save"], ["스킨", "skin"], ["보상", "reward", "rewards"], ["퀘스트", "quest"],
-      ["총", "총기", "gun", "firearm"], ["스포너", "spawner"], ["뭰트", "mwent"], ["엔피시", "npc", "dnpc"]
+      ["총", "총기", "gun", "firearm", "arma"], ["스포너", "spawner", "generador", "gerador", "générateur"], ["뭰트", "mwent"], ["엔피시", "npc", "dnpc", "pnj"]
     ];
-    return normalizeSearch(value).split(" ").filter(Boolean).map(term => aliases.find(group => group.includes(term)) || [term]);
+    const normalized = aliases.map(group => group.map(normalizeSearch));
+    return normalizeSearch(value).split(" ").filter(Boolean).map(term => normalized.find(group => group.includes(term)) || [term]);
   }
 
   function snippet(text, groups) {
@@ -1096,6 +1165,11 @@
       }
     });
     dialog.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        dialog.close();
+        return;
+      }
       const links = [...results.querySelectorAll("a")];
       if (event.key === "ArrowDown" || event.key === "ArrowUp") {
         if (event.target === scope) return;
@@ -1241,8 +1315,20 @@
     }
   });
   window.addEventListener("hashchange", () => {
+    if (booting) return;
     document.querySelectorAll("dialog[open]").forEach(dialog => dialog.close());
     renderPage();
   });
-  renderPage();
+  const preferredLocale = state.locale;
+  app.innerHTML = `<main class="main-home" role="status">${escapeHtml(ui("loading"))}</main>`;
+  ensureLocale(preferredLocale).then(() => {
+    booting = false;
+    renderPage();
+  }).catch(() => {
+    state.locale = getFallbackLocale();
+    document.documentElement.lang = getLocaleMeta(state.locale).htmlLang || state.locale;
+    booting = false;
+    renderPage();
+    languageStatus(ui("loadFailed"), preferredLocale);
+  });
 })();

@@ -312,6 +312,18 @@
     }
   ],
   "locales": {
+    "pt": {
+      "label": "Português", "shortLabel": "PT", "htmlLang": "pt-BR",
+      "description": "Guias dos mods Dochi: NPCs, diálogos, lojas, missões, combate e minijogos."
+    },
+    "es": {
+      "label": "Español", "shortLabel": "ES",
+      "description": "Guías de los mods Dochi: NPCs, diálogos, tiendas, misiones, combate y minijuegos."
+    },
+    "fr": {
+      "label": "Français", "shortLabel": "FR",
+      "description": "Guides des mods Dochi : PNJ, dialogues, boutiques, quêtes, combats et mini-jeux."
+    },
     "en": {
       "label": "English",
       "shortLabel": "EN",

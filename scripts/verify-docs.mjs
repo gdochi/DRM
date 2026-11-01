@@ -1,14 +1,11 @@
 import assert from "node:assert/strict";
 import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
-import vm from "node:vm";
+import { loadBuiltDocs } from "./load-built-docs.mjs";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const context = { window: {} };
-vm.runInNewContext(await readFile(path.join(root, "dist/assets/docs-data.js"), "utf8"), context);
-const config = context.window.DRM_DOCS_CONFIG;
-const data = context.window.DRM_DOCS_DATA;
+const { config, data } = await loadBuiltDocs(path.join(root, "dist"));
 const captures = JSON.parse(await readFile(path.join(root, "src/guide-environments.json"), "utf8")).captures;
 const links = JSON.parse(await readFile(path.join(root, "_links/mod-links.json"), "utf8"));
 const mappings = new Map(links.mods.map((entry) => [entry.wikiModId, entry]));

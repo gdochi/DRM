@@ -704,6 +704,12 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
 .doc-context strong { color: var(--ink); font-weight: 650; }
 .doc-context .history-badge { color: var(--amber); border-color: var(--amber); }
 .capture-context { margin: 12px 0 0; color: var(--muted); font-size: .75rem; line-height: 1.6; }
+.translation-context { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 10px; color: var(--muted); font-size: .74rem; line-height: 1.5; }
+.translation-context button { display: inline-flex; align-items: center; gap: 5px; color: var(--brand); border: 1px solid var(--line); background: var(--surface-2); border-radius: 5px; padding: 5px 8px; font-size: inherit; }
+.translation-context svg { width: 13px; height: 13px; }
+.language-status { position: fixed; z-index: 90; right: 12px; top: calc(var(--topbar) + 12px); max-width: min(400px, calc(100vw - 24px)); padding: 14px; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); font-size: .88rem; line-height: 1.6; }
+.language-status button { margin-left: 10px; padding: 6px 10px; border: 1px solid var(--line); background: var(--surface-2); color: var(--brand); border-radius: 5px; font: inherit; }
+.locale-flyout { max-height: calc(100dvh - var(--topbar) - 30px); overflow-y: auto; }
 .page-toc { position: sticky; top: calc(var(--topbar) + 22px); max-height: calc(100dvh - var(--topbar) - 44px); overflow: auto; padding: 8px 0 12px 14px; border-left: 1px solid var(--line); }
 .page-toc h2 { font-size: .8rem; margin: 0 0 12px; }
 .page-toc nav, .mobile-toc nav { display: grid; gap: 3px; }
