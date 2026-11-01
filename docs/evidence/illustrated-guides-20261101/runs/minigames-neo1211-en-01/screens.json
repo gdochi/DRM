@@ -1,0 +1,57 @@
+[
+  {
+    "id": "minigames-editor",
+    "screenClass": "net.dochi.minigames.client.MinigameEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "minigames-slots",
+    "screenClass": "net.dochi.minigames.client.MinigameEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "Slots"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "minigames-memory",
+    "screenClass": "net.dochi.minigames.client.MinigameEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "Memory"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "minigames-mwent",
+    "screenClass": "net.dochi.minigames.client.MinigameEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "MWENT"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

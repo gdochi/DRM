@@ -1,0 +1,160 @@
+[
+  {
+    "id": "core-npc-spawner-rules",
+    "actualScreenAtFailure": "net.dochi.gameeditor.client.NpcSpawnerScreen",
+    "screenClass": "net.dochi.gameeditor.client.NpcSpawnerScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "attemptedActions": [
+      "wait:60",
+      "[ Spawn ]"
+    ],
+    "status": "failed",
+    "error": "java.lang.NoSuchFieldException: x"
+  },
+  {
+    "id": "gui-image-asset-picker",
+    "actualScreenAtFailure": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Back",
+      "Forward",
+      "Editors",
+      "Create New",
+      "Load",
+      "Save",
+      "Save As",
+      "Reset",
+      "?",
+      "Preview",
+      "Background",
+      "Button Config",
+      "Viewport: Current",
+      "Reset",
+      "+ Image",
+      "+ Entity",
+      "+ Item",
+      "+ Text",
+      "+ Pager",
+      "Duplicate",
+      "Layer -",
+      "Layer +",
+      "Back",
+      "Front",
+      "Delete",
+      "guiName",
+      "Default UI: ON · Texture",
+      "gridX",
+      "gridY",
+      "OFF",
+      "id",
+      "layerOrder",
+      "x",
+      "y",
+      "w",
+      "h",
+      "text",
+      "Literal Text",
+      "fillColor",
+      "fillOpacity",
+      "None",
+      "borderColor",
+      "outlineGlow",
+      "None",
+      "Anim: typing",
+      "typingSpeed",
+      "Test",
+      "Cursor: block",
+      "cursorBlink",
+      "Asset: (none)",
+      "Clear",
+      "Crop: none",
+      "Fit: Stretch",
+      "Center",
+      "Solo"
+    ],
+    "attemptedActions": [
+      "+ Image"
+    ],
+    "status": "failed",
+    "error": "java.lang.NoSuchMethodException: y/0"
+  },
+  {
+    "id": "remnant-placed-setter",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgSetterScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Marker model: Default icon",
+        "active": true
+      },
+      {
+        "label": "Scale",
+        "active": true
+      },
+      {
+        "label": "Billboard: fixed",
+        "active": true
+      },
+      {
+        "label": "Model offset (blocks)",
+        "active": true
+      },
+      {
+        "label": "Model offset (blocks)",
+        "active": true
+      },
+      {
+        "label": "Model offset (blocks)",
+        "active": true
+      },
+      {
+        "label": "Message JSON",
+        "active": true
+      },
+      {
+        "label": "Clear JSON",
+        "active": true
+      },
+      {
+        "label": "Policy",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

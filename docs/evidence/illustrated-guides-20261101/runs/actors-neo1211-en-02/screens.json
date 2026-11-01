@@ -1,0 +1,797 @@
+[
+  {
+    "id": "dnpc-inventory",
+    "screenClass": "net.dochi.npc.client.NpcInventoryScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "next-screen:NpcInventoryScreen",
+      "Inventory \u0026 Equipment"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Equipment",
+        "active": true
+      },
+      {
+        "label": "Weapons",
+        "active": true
+      },
+      {
+        "label": "Name or namespace:item",
+        "active": true
+      },
+      {
+        "label": "Count",
+        "active": true
+      },
+      {
+        "label": "Storage slots (1–27)",
+        "active": true
+      },
+      {
+        "label": "Copy my equipment",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dnpc-relations",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Button click rejected: Relations"
+  },
+  {
+    "id": "dnpc-drm",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "DRM functions"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DRM Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Draft",
+        "active": true
+      },
+      {
+        "label": "Load NPC template",
+        "active": true
+      },
+      {
+        "label": "Save to NPC",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Delete NPC",
+        "active": true
+      },
+      {
+        "label": "Load category",
+        "active": true
+      },
+      {
+        "label": "Save category",
+        "active": true
+      },
+      {
+        "label": "Identity",
+        "active": true
+      },
+      {
+        "label": "Appearance \u0026 Model",
+        "active": true
+      },
+      {
+        "label": "Part scales",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "Animation",
+        "active": true
+      },
+      {
+        "label": "Inventory \u0026 Equipment",
+        "active": true
+      },
+      {
+        "label": "Death drops",
+        "active": true
+      },
+      {
+        "label": "Schedule",
+        "active": true
+      },
+      {
+        "label": "DRM functions",
+        "active": true
+      },
+      {
+        "label": "Movement AI",
+        "active": true
+      },
+      {
+        "label": "Houses",
+        "active": true
+      },
+      {
+        "label": "Combat AI",
+        "active": true
+      },
+      {
+        "label": "Weapon \u0026 ammunition",
+        "active": true
+      },
+      {
+        "label": "Combat distances",
+        "active": true
+      },
+      {
+        "label": "Respawn",
+        "active": true
+      },
+      {
+        "label": "Relations",
+        "active": true
+      },
+      {
+        "label": "Follow cursor",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "DRM Apply",
+        "active": true
+      },
+      {
+        "label": "Use DNPC function schedule",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dnpc-templates-save",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Save As"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DRM Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Draft",
+        "active": true
+      },
+      {
+        "label": "Load NPC template",
+        "active": true
+      },
+      {
+        "label": "Save to NPC",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Delete NPC",
+        "active": true
+      },
+      {
+        "label": "Load category",
+        "active": true
+      },
+      {
+        "label": "Save category",
+        "active": true
+      },
+      {
+        "label": "Identity",
+        "active": true
+      },
+      {
+        "label": "Appearance \u0026 Model",
+        "active": true
+      },
+      {
+        "label": "Part scales",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "Animation",
+        "active": true
+      },
+      {
+        "label": "Inventory \u0026 Equipment",
+        "active": true
+      },
+      {
+        "label": "Death drops",
+        "active": true
+      },
+      {
+        "label": "Schedule",
+        "active": true
+      },
+      {
+        "label": "DRM functions",
+        "active": true
+      },
+      {
+        "label": "Movement AI",
+        "active": true
+      },
+      {
+        "label": "Houses",
+        "active": true
+      },
+      {
+        "label": "Combat AI",
+        "active": true
+      },
+      {
+        "label": "Weapon \u0026 ammunition",
+        "active": true
+      },
+      {
+        "label": "Combat distances",
+        "active": true
+      },
+      {
+        "label": "Respawn",
+        "active": true
+      },
+      {
+        "label": "Relations",
+        "active": true
+      },
+      {
+        "label": "Follow cursor",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "Information",
+        "active": true
+      },
+      {
+        "label": "Messages",
+        "active": true
+      },
+      {
+        "label": "Nameplate",
+        "active": true
+      },
+      {
+        "label": "Name",
+        "active": true
+      },
+      {
+        "label": "Style",
+        "active": true
+      },
+      {
+        "label": "Title",
+        "active": true
+      },
+      {
+        "label": "Style",
+        "active": true
+      },
+      {
+        "label": "Chat interaction",
+        "active": true
+      },
+      {
+        "label": "Face on right-click",
+        "active": true
+      },
+      {
+        "label": "Show bossbar",
+        "active": true
+      },
+      {
+        "label": "Bar RGB",
+        "active": true
+      },
+      {
+        "label": "Bar RGB",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-target-hitboxes",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Hitbox Library"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "scene_animation_search",
+        "active": true
+      },
+      {
+        "label": "hitbox_id",
+        "active": true
+      },
+      {
+        "label": "hitbox_name",
+        "active": true
+      },
+      {
+        "label": "damage",
+        "active": true
+      },
+      {
+        "label": "radius",
+        "active": true
+      },
+      {
+        "label": "thickness",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "employment-npc",
+    "screenClass": "net.dochi.npc.client.NpcEmploymentEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_npc:employment",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "NPC"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DRM Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Draft",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Search name or role",
+        "active": true
+      },
+      {
+        "label": "Select all recruitment entries",
+        "active": true
+      },
+      {
+        "label": "NPC\nEnabled",
+        "active": true
+      },
+      {
+        "label": "NPC\nEnabled",
+        "active": true
+      },
+      {
+        "label": "Recruitment",
+        "active": true
+      },
+      {
+        "label": "NPC",
+        "active": true
+      },
+      {
+        "label": "Start location",
+        "active": true
+      },
+      {
+        "label": "Contract",
+        "active": true
+      },
+      {
+        "label": "Allowed Work",
+        "active": true
+      },
+      {
+        "label": "Player Permissions",
+        "active": true
+      },
+      {
+        "label": "NPC display name",
+        "active": true
+      },
+      {
+        "label": "Prepared NPC JSON set",
+        "active": true
+      },
+      {
+        "label": "Prepared NPC JSON set",
+        "active": true
+      },
+      {
+        "label": "Worker",
+        "active": true
+      },
+      {
+        "label": "Offer this NPC for hire",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "employment-contract",
+    "screenClass": "net.dochi.npc.client.NpcEmploymentEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_npc:employment",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Contract"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DRM Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Draft",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Search name or role",
+        "active": true
+      },
+      {
+        "label": "Select all recruitment entries",
+        "active": true
+      },
+      {
+        "label": "NPC\nEnabled",
+        "active": true
+      },
+      {
+        "label": "NPC\nEnabled",
+        "active": true
+      },
+      {
+        "label": "Recruitment",
+        "active": true
+      },
+      {
+        "label": "NPC",
+        "active": true
+      },
+      {
+        "label": "Start location",
+        "active": true
+      },
+      {
+        "label": "Contract",
+        "active": true
+      },
+      {
+        "label": "Allowed Work",
+        "active": true
+      },
+      {
+        "label": "Player Permissions",
+        "active": true
+      },
+      {
+        "label": "Item payment",
+        "active": true
+      },
+      {
+        "label": "Payment item",
+        "active": true
+      },
+      {
+        "label": "Payment item",
+        "active": true
+      },
+      {
+        "label": "Employment cost",
+        "active": true
+      },
+      {
+        "label": "Employment period",
+        "active": true
+      },
+      {
+        "label": "Minutes",
+        "active": true
+      },
+      {
+        "label": "Real Ticks",
+        "active": true
+      },
+      {
+        "label": "Renew contract",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "employment-work",
+    "screenClass": "net.dochi.npc.client.NpcEmploymentEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_npc:employment",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Allowed Work"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DRM Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Draft",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Search name or role",
+        "active": true
+      },
+      {
+        "label": "Select all recruitment entries",
+        "active": true
+      },
+      {
+        "label": "NPC\nEnabled",
+        "active": true
+      },
+      {
+        "label": "NPC\nEnabled",
+        "active": true
+      },
+      {
+        "label": "Recruitment",
+        "active": true
+      },
+      {
+        "label": "NPC",
+        "active": true
+      },
+      {
+        "label": "Start location",
+        "active": true
+      },
+      {
+        "label": "Contract",
+        "active": true
+      },
+      {
+        "label": "Allowed Work",
+        "active": true
+      },
+      {
+        "label": "Player Permissions",
+        "active": true
+      },
+      {
+        "label": "Escort",
+        "active": true
+      },
+      {
+        "label": "Guard",
+        "active": true
+      },
+      {
+        "label": "Maximum work radius",
+        "active": true
+      },
+      {
+        "label": "Continue work while employer is offline",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "global": [
+    {
+      "id": "dochi_npc:employment",
+      "title": "dochi_npc.employment.editor",
+      "sortOrder": 16,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "addon",
+      "category": "general"
+    },
+    {
+      "id": "dialogue",
+      "title": "dochi.editor.name.dialogue",
+      "sortOrder": 100,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "dialogue",
+      "category": "general"
+    },
+    {
+      "id": "gui_maker",
+      "title": "dochi.editor.name.gui_maker",
+      "sortOrder": 200,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "none",
+      "category": "visual"
+    },
+    {
+      "id": "tooltip_maker",
+      "title": "dochi.editor.name.tooltip_maker",
+      "sortOrder": 225,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "none",
+      "category": "visual"
+    },
+    {
+      "id": "npc_shop",
+      "title": "dochi.editor.name.npc_shop",
+      "sortOrder": 300,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "npc_shop",
+      "category": "general"
+    },
+    {
+      "id": "currency",
+      "title": "dochi.editor.name.currency",
+      "sortOrder": 450,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "currency",
+      "category": "config"
+    },
+    {
+      "id": "hud_maker",
+      "title": "dochi.editor.name.hud_maker",
+      "sortOrder": 475,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "none",
+      "category": "visual"
+    },
+    {
+      "id": "popup_maker",
+      "title": "dochi.editor.name.popup_maker",
+      "sortOrder": 490,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "none",
+      "category": "visual"
+    },
+    {
+      "id": "scene_maker",
+      "title": "dochi.editor.name.scene_maker",
+      "sortOrder": 495,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "addon",
+      "category": "visual"
+    },
+    {
+      "id": "quest",
+      "title": "dochi.editor.name.quest",
+      "sortOrder": 525,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "quest",
+      "category": "general"
+    },
+    {
+      "id": "teleporter",
+      "title": "dochi.editor.name.teleporter",
+      "sortOrder": 550,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "teleporter",
+      "category": "general"
+    },
+    {
+      "id": "remnant_msg",
+      "title": "dochi.editor.name.remnant_msg",
+      "sortOrder": 600,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "none",
+      "category": "general"
+    },
+    {
+      "id": "stat_builder",
+      "title": "dochi.editor.name.stat_builder",
+      "sortOrder": 625,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "none",
+      "category": "general"
+    },
+    {
+      "id": "item_editor",
+      "title": "dochi.editor.name.item_editor",
+      "sortOrder": 650,
+      "requiresNpcTarget": false,
+      "sourceChoicePolicy": "none",
+      "category": "general"
+    }
+  ]
+}

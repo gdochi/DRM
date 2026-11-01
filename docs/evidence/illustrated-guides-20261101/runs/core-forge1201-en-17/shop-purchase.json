@@ -1,0 +1,22 @@
+{
+  "emeralds": 6,
+  "bread": 3,
+  "breadProductAfterPurchase": {
+    "productId": "item_2",
+    "item": "minecraft:bread",
+    "count": 3,
+    "price": 4,
+    "stock": 11,
+    "maxStock": 12,
+    "restock": {
+      "enabled": true,
+      "amount": 12,
+      "intervalTicks": 24000,
+      "nextGameTime": 24451
+    },
+    "description": "shop.sample.bread.description",
+    "descriptionTranslationKey": true,
+    "action": "say Three loaves. Enough to reach the next gate.",
+    "currencyType": "inherit"
+  }
+}

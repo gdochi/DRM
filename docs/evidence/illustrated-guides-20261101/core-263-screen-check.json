@@ -1,0 +1,112 @@
+{
+  "runs": [
+    {
+      "run": "build\\task\\guide-capture\\core263-first-neoforge-en-06\\captures",
+      "environment": {
+        "minecraft": "26.3",
+        "loader": "NeoForge 26.3.0.95",
+        "locale": "en_us",
+        "java": "25.0.2",
+        "mods": [
+          {
+            "source": "C:\\Users\\hodu3\\Desktop\\[26.3] DRM\\jar-26.3\\dochi_rpg_maker-0.3.1-neoforge-26.3.jar",
+            "sha256": "7382fa27da83e61dc8505f54a19253cd7a204f2cf2652febdb37299603fe6de9"
+          },
+          {
+            "source": "C:\\Users\\hodu3\\Desktop\\[26.3] Dochi`s Npc Core\\jar-26.3\\dochi_npc_core-0.1.3-neoforge-26.3.jar",
+            "sha256": "24ffab1171a06d9a5db2665677a0880e5bb7af7a9213933c8fb8ffd16d61a575"
+          },
+          {
+            "source": "documentation native 26.3 fixture",
+            "sha256": "5f53e56e0ffe44ddf86cc635f8545f2d134d1ddc22f14f6c0244c944d95133a1"
+          }
+        ]
+      },
+      "screens": [
+        {
+          "id": "core263-editor-selector",
+          "status": "captured_in_game",
+          "screenClass": "net.dochi.gameeditor.client.EditorSelectScreen"
+        },
+        {
+          "id": "core263-dialogue",
+          "status": "captured_in_game",
+          "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen"
+        },
+        {
+          "id": "core263-gui-components",
+          "status": "captured_in_game",
+          "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen"
+        },
+        {
+          "id": "core263-item-editor",
+          "status": "captured_in_game",
+          "screenClass": "net.dochi.gameeditor.client.ItemEditorScreen"
+        },
+        {
+          "id": "core263-shop",
+          "status": "captured_in_game",
+          "screenClass": "net.dochi.gameeditor.client.NpcShopSelectScreen"
+        },
+        {
+          "id": "core263-npc-native",
+          "status": "captured_in_game",
+          "screenClass": "net.dochi.npc.client.NpcEditorScreen"
+        },
+        {
+          "id": "core263-npc-apply",
+          "status": "captured_in_game",
+          "screenClass": "net.dochi.gameeditor.client.NpcApplyTargetScreen"
+        }
+      ]
+    },
+    {
+      "run": "build\\task\\guide-capture\\core263-details-neoforge-en-01\\captures",
+      "environment": {
+        "minecraft": "26.3",
+        "loader": "NeoForge 26.3.0.95",
+        "locale": "en_us",
+        "java": "25.0.2",
+        "mods": [
+          {
+            "source": "C:\\Users\\hodu3\\Desktop\\[26.3] DRM\\jar-26.3\\dochi_rpg_maker-0.3.1-neoforge-26.3.jar",
+            "sha256": "7382fa27da83e61dc8505f54a19253cd7a204f2cf2652febdb37299603fe6de9"
+          },
+          {
+            "source": "C:\\Users\\hodu3\\Desktop\\[26.3] Dochi`s Npc Core\\jar-26.3\\dochi_npc_core-0.1.3-neoforge-26.3.jar",
+            "sha256": "24ffab1171a06d9a5db2665677a0880e5bb7af7a9213933c8fb8ffd16d61a575"
+          },
+          {
+            "source": "documentation native 26.3 fixture",
+            "sha256": "e859114e9542dbaaed99fdc245ec6809b11563f3b3560a6c3cc2e32067d74349"
+          }
+        ]
+      },
+      "screens": [
+        {
+          "id": "core263-dnpc-identity",
+          "status": "captured_in_game",
+          "screenClass": "net.dochi.npc.client.NpcEditorScreen"
+        },
+        {
+          "id": "core263-dnpc-apply",
+          "status": "captured_in_game",
+          "screenClass": "net.dochi.gameeditor.client.NpcApplyTargetScreen"
+        },
+        {
+          "id": "core263-independent-text",
+          "status": "captured_in_game",
+          "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen"
+        }
+      ]
+    }
+  ],
+  "adopted": [
+    "dnpc-013-neo263/core263-dnpc-identity",
+    "drm-031-neo263/core263-independent-text",
+    "drm-031-neo263/core263-item-editor"
+  ],
+  "scope": "Real production JARs, fresh native integrated world and DNPC; native editor source/openers and actual rendered screen checks. Does not establish complete dialogue/item authoring, application and player runtime on 26.3.",
+  "excluded": "First selector displayed a mismatched details pane; first native NPC screenshot had tutorial overlay; these were not adopted. Earlier native process exits and fixture API errors are not successful captures.",
+  "fixture": "scripts/guide-capture/GuideCapture263.java"
+}

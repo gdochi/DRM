@@ -1,0 +1,68 @@
+{
+  "run": "build\\task\\guide-capture\\spawn-natural-neo1211-en-01",
+  "savedTargetPreset": {
+    "path": "build\\task\\guide-capture\\spawn-natural-neo1211-en-01\\game\\config\\dochi_rpg_maker\\spawn_control\\targets\\meadow_cows.json",
+    "sha256": "891851952716739b47cf8b2eb1019a1dcf727e70690e82d83d06d3052c7eb34c",
+    "document": {
+      "schemaVersion": 1,
+      "kind": "TARGET",
+      "id": "meadow_cows",
+      "displayName": "Meadow Cows",
+      "targetKey": "entity:minecraft:cow",
+      "recommendedNativePolicy": "KEEP_NATIVE",
+      "requiredMods": [],
+      "profiles": [
+        {
+          "id": "cow",
+          "displayName": "cow",
+          "enabled": true,
+          "priority": 100,
+          "targetKind": "ENTITY_TYPE",
+          "entityId": "minecraft:cow",
+          "cloneTab": 1,
+          "cloneName": "",
+          "npcTemplateId": "",
+          "notes": "",
+          "dimensionIds": [],
+          "biomeIds": [],
+          "minY": -64,
+          "maxY": 320,
+          "minLight": 0,
+          "maxLight": 15,
+          "startTime": 0,
+          "endTime": 23999,
+          "minPlayerDistance": 24.0,
+          "maxPlayerDistance": 96.0,
+          "chance": 0.25,
+          "intervalTicks": 200,
+          "groupMin": 1,
+          "groupMax": 1,
+          "spawnRadius": 64,
+          "positionAttempts": 8,
+          "placement": "SURFACE",
+          "profileCap": 16,
+          "targetCap": 48,
+          "sharedGroup": "",
+          "sharedGroupCap": 64,
+          "playerCap": 24,
+          "chunkCap": 8,
+          "dimensionCap": 128,
+          "serverCap": 256,
+          "persistent": false,
+          "maxLifetimeTicks": 0,
+          "despawnWhenNoPlayer": true,
+          "noPlayerDespawnTicks": 1200
+        }
+      ]
+    }
+  },
+  "observations": [
+    "Native Save As scope and target preset save acknowledged; active set unchanged.",
+    "Check Here: Player Distance FAIL at nearest 0.5 vs required 24..96.",
+    "Native Spawn One -> Confirm Spawn returned PASS with entity UUID 13199b33-cdc7-4598-9dff-c9e265a82418."
+  ],
+  "limits": [
+    "No scheduled natural-spawn cycle verified.",
+    "Destination preset load/merge not yet exercised."
+  ]
+}

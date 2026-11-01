@@ -1,0 +1,190 @@
+[
+  {
+    "id": "mwent016-faction-select",
+    "status": "captured_in_game",
+    "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+    "actions": [
+      "Cancel",
+      "MWENT",
+      "next-screen:@changed",
+      "Test play",
+      "wait:40",
+      "snapshot:mwent016-faction-select"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "mwent016-deck-catalog",
+    "status": "captured_in_game",
+    "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+    "actions": [
+      "Cancel",
+      "MWENT",
+      "next-screen:@changed",
+      "Test play",
+      "wait:40",
+      "snapshot:mwent016-faction-select",
+      "Use this deck",
+      "wait:40",
+      "snapshot:mwent016-deck-catalog"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "mwent016-tactic-options",
+    "status": "captured_in_game",
+    "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+    "actions": [
+      "Cancel",
+      "MWENT",
+      "next-screen:@changed",
+      "Test play",
+      "wait:40",
+      "snapshot:mwent016-faction-select",
+      "Use this deck",
+      "wait:40",
+      "snapshot:mwent016-deck-catalog",
+      "Golden apple altar: +5 power",
+      "snapshot:mwent016-tactic-options"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "mwent-opening-tactic",
+    "status": "verified_server_view_tactic_selection",
+    "detail": "Golem seal core / 4"
+  },
+  {
+    "id": "mwent016-golem-selected",
+    "status": "captured_in_game",
+    "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+    "actions": [
+      "Cancel",
+      "MWENT",
+      "next-screen:@changed",
+      "Test play",
+      "wait:40",
+      "snapshot:mwent016-faction-select",
+      "Use this deck",
+      "wait:40",
+      "snapshot:mwent016-deck-catalog",
+      "Golden apple altar: +5 power",
+      "snapshot:mwent016-tactic-options",
+      "mini-choice:4",
+      "wait:40",
+      "verify:mwent-tactic",
+      "snapshot:mwent016-golem-selected"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "minigames-phase",
+    "status": "verified_runtime_phase",
+    "detail": "mulligan"
+  },
+  {
+    "id": "minigames-phase",
+    "status": "verified_runtime_phase",
+    "detail": "battle"
+  },
+  {
+    "id": "mwent016-battle-start",
+    "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "MWENT",
+      "next-screen:@changed",
+      "Test play",
+      "wait:40",
+      "snapshot:mwent016-faction-select",
+      "Use this deck",
+      "wait:40",
+      "snapshot:mwent016-deck-catalog",
+      "Golden apple altar: +5 power",
+      "snapshot:mwent016-tactic-options",
+      "mini-choice:4",
+      "wait:40",
+      "verify:mwent-tactic",
+      "snapshot:mwent016-golem-selected",
+      "Begin match",
+      "wait-phase:mulligan",
+      "wait-control:Continue",
+      "Continue",
+      "wait-phase:battle",
+      "wait:20"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Rulebook",
+        "active": true
+      },
+      {
+        "label": "Stop BGM",
+        "active": true
+      },
+      {
+        "label": "BGM volume: 100%",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Pass round",
+        "active": true
+      },
+      {
+        "label": "End turn",
+        "active": false
+      },
+      {
+        "label": "Breath of Spring (2 / 2)",
+        "active": false
+      },
+      {
+        "label": "Heart of the Foundry (2 / 2)",
+        "active": true
+      },
+      {
+        "label": "Reset camera",
+        "active": true
+      },
+      {
+        "label": "Top view (fixed)",
+        "active": true
+      },
+      {
+        "label": "Diagonal view (fixed)",
+        "active": true
+      },
+      {
+        "label": "NPC graveyard",
+        "active": true
+      },
+      {
+        "label": "Your graveyard",
+        "active": true
+      }
+    ],
+    "gamePhase": "battle",
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

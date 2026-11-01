@@ -1,0 +1,170 @@
+[
+  {
+    "id": "core-npc-spawner-rules",
+    "screenClass": "net.dochi.gameeditor.client.NpcSpawnerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:60",
+      "[ Spawn ]",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "gui-image-asset-picker",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "editorId": "gui_maker",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "+ Image",
+      "find:Asset:",
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "assetSearch",
+        "active": true
+      },
+      {
+        "label": "Mod: All",
+        "active": true
+      },
+      {
+        "label": "Parent folder: All",
+        "active": true
+      },
+      {
+        "label": "assetPageNumber",
+        "active": true
+      },
+      {
+        "label": "Go",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Prev",
+        "active": true
+      },
+      {
+        "label": "Next",
+        "active": true
+      },
+      {
+        "label": "Refresh",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "remnant-message-ready",
+    "status": "captured_in_game",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgSetterScreen",
+    "actions": [
+      "wait:60",
+      "field:body\u003dFollow the lanterns to reach the village.",
+      "snapshot:remnant-message-ready"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "remnant-marker-picker",
+    "status": "captured_in_game",
+    "screenClass": "net.dochi.gameeditor.client.RegistryAssetPickerScreen",
+    "actions": [
+      "wait:60",
+      "field:body\u003dFollow the lanterns to reach the village.",
+      "snapshot:remnant-message-ready",
+      "find:Marker model:",
+      "wait:40",
+      "snapshot:remnant-marker-picker"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "remnant-placed-setter",
+    "actualScreenAtFailure": "world",
+    "attemptedActions": [
+      "wait:60",
+      "field:body\u003dFollow the lanterns to reach the village.",
+      "snapshot:remnant-message-ready",
+      "find:Marker model:",
+      "wait:40",
+      "snapshot:remnant-marker-picker",
+      "Cancel",
+      "next-screen:RemnantMsgSetterScreen",
+      "Save"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Expected screen did not open: RemnantMsgSetterScreen"
+  },
+  {
+    "id": "remnant-populated-world-list",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgWorldListScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Previous page",
+        "active": true
+      },
+      {
+        "label": "Next page",
+        "active": true
+      },
+      {
+        "label": "Previous message",
+        "active": true
+      },
+      {
+        "label": "Next message",
+        "active": true
+      },
+      {
+        "label": "Edit",
+        "active": true
+      },
+      {
+        "label": "Teleport",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Refresh",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

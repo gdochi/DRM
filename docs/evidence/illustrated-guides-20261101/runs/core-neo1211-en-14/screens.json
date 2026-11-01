@@ -1,0 +1,37 @@
+[
+  {
+    "id": "dialogue-close",
+    "status": "verified_runtime_closed",
+    "detail": ""
+  },
+  {
+    "id": "dialogue-npc-close",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "apply:dialogue",
+      "wait:40",
+      "interact:npc",
+      "wait:140",
+      "runtime-choice:Goodbye.",
+      "wait:40",
+      "verify:closed"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "hud-health-canvas",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Screen Editor",
+      "+ Health",
+      "wait:180"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

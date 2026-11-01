@@ -1,0 +1,27 @@
+{
+  "minecraft": "1.21.1",
+  "loader": "NeoForge 21.1.259",
+  "locale": "en_us",
+  "mods": [
+    {
+      "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\jar\\dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar",
+      "sha256": "00adcf6446e36c47d36a691f1614806b5c05aee30f2523a2616db8a1bf9b29fe"
+    },
+    {
+      "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.2-neoforge-1.21.1.jar",
+      "sha256": "1eab89df265888a2aebfcd8c6cddfc7447b87df92d64fac42ed189a4b180897d"
+    },
+    {
+      "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\geckolib-neoforge-1.21.1-4.9.2.jar",
+      "sha256": "5e548466af9ab6aca7a91a7c7d4dc0dc8bc385e22958aed5da0e7bebd0fa3fba"
+    },
+    {
+      "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\architectury-13.0.11-neoforge.jar",
+      "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb"
+    },
+    {
+      "source": "documentation capture fixture",
+      "sha256": "1e33ca4de79936c58829c39449b85be027d93c6530d00246cd24570e4defce4c"
+    }
+  ]
+}

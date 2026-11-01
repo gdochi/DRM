@@ -1,0 +1,8 @@
+{
+  "source": "real server LivingEntity.hurt with player_attack, base damage 10",
+  "unarmoredAccepted": true,
+  "armoredAccepted": true,
+  "unarmoredHealthLoss": 10.0,
+  "ironArmorHealthLoss": 6.0,
+  "equipment": "iron helmet, chestplate, leggings and boots; no enchantments"
+}

@@ -1,0 +1,84 @@
+{
+  "environment": {
+    "minecraft": "1.20.1",
+    "loader": "Forge 47.4.20",
+    "locale": "en_us",
+    "mods": [
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\jar\\dochi_rpg_maker-0.3.1-1.20.1-forge.jar",
+        "sha256": "da7fb3b8f06ff3b6758d01e9b39a41445aefd5474c0f657203192ca579c9b217"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-forge-1.20.1.jar",
+        "sha256": "c5257c0bd7c60cf0ac3ba943ff326c8b5bc54a15f976da1c2bae6fb16f8998f8"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\[FORGE] DRM\\build\\deps\\geckolib-forge-1.20.1-4.8.3.jar",
+        "sha256": "8b90e11871a58b63816e99c529e6c932bc88e6beb3fec97ad618e22217df3250"
+      },
+      {
+        "source": "documentation capture fixture",
+        "sha256": "be370d22eebe1438427732f81e0e9499bf77cf504d674baec2da44ca22373c9c"
+      }
+    ],
+    "mappingSha256": "f44ff54ae6accb5a61c90562190afa68f69e36cc2450730272505538abc06954"
+  },
+  "run": "build\\task\\guide-capture\\dialogue-template-forge1201-en-01\\captures",
+  "procedure": "Load exact native NeoForge Save As folder; inspect existing Item/Tag actions; native NPC Apply Dialogue; click gift; check server inventory and player tag; reopen and verify only Goodbye.",
+  "verified": [
+    {
+      "id": "dialogue-reward",
+      "status": "verified_server_inventory_count",
+      "detail": "minecraft:apple=3"
+    },
+    {
+      "id": "dialogue-reward-tag",
+      "status": "verified_server_player_tag",
+      "detail": "welcome_received"
+    },
+    {
+      "id": "dialogue-reward-once",
+      "status": "verified_runtime_choice_hidden",
+      "detail": "[Goodbye.]"
+    }
+  ],
+  "download": {
+    "asset": "assets/media/dialogue/welcome_reward_once.zip",
+    "sha256": "584aba439dd4b375e5d781264cb49bfb2a8aecb27cf905635c34bf5d0d3112cf",
+    "files": [
+      {
+        "path": "welcome_reward_once/dialogue_1.json",
+        "sha256": "05eaba617926edca603179dfd3dab5bc9444118cab545f3fbba16cde0da47f37"
+      },
+      {
+        "path": "welcome_reward_once/dialogue_reply_1.json",
+        "sha256": "f35be19dabb4d4cf7397acc83eb36e4a8da48fc1efc5214a5effb24d12e00aa1"
+      },
+      {
+        "path": "welcome_reward_once/dialogue_set.json",
+        "sha256": "0bc14f1e2cc113b56a210d7c5c34fc1b2aa3d6fbe3c42b79b1a391d648696837"
+      },
+      {
+        "path": "welcome_reward_once/start.json",
+        "sha256": "0bcd032af0575b526f80a5cda9fd9fb98023e54c4896cca7da833bebb14d1cd0"
+      }
+    ]
+  },
+  "typeSelectionIssue": {
+    "wanted": "item",
+    "clickX": 732.0,
+    "clickY": 361.0,
+    "screenReplaced": true,
+    "oldActionAfterClick": {
+      "type": "goto",
+      "linkMode": "internal",
+      "value": "dialogue_reply_1"
+    },
+    "newActionAfterClick": {
+      "type": "goto",
+      "linkMode": "internal",
+      "value": "dialogue_reply_1"
+    }
+  },
+  "limits": "Same-session reinteraction verified. No mod implementation changed. New Item type selection remains Goto in the tested Forge build; imported existing Item/Tag actions work."
+}

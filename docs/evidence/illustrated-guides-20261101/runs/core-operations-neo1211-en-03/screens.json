@@ -1,0 +1,714 @@
+[
+  {
+    "id": "admin-server-policy",
+    "screenClass": "net.dochi.gameeditor.client.DochiRpgMakerConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Admin",
+      "wait:60",
+      "Enable DRM Admin",
+      "Apply",
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Core",
+        "active": true
+      },
+      {
+        "label": "Admin",
+        "active": true
+      },
+      {
+        "label": "Keyboard shortcuts",
+        "active": true
+      },
+      {
+        "label": "Dochi`s Npc Core",
+        "active": true
+      },
+      {
+        "label": "Enable DRM Admin",
+        "active": true
+      },
+      {
+        "label": "FTB Quests management",
+        "active": true
+      },
+      {
+        "label": "Manage stored data",
+        "active": true
+      },
+      {
+        "label": "Advancement management",
+        "active": true
+      },
+      {
+        "label": "Faction management",
+        "active": true
+      },
+      {
+        "label": "Cache offline player data",
+        "active": true
+      },
+      {
+        "label": "Refresh",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "admin-overview",
+    "screenClass": "net.dochi.gameeditor.client.DrmAdminScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Refresh",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "admin-tags",
+    "screenClass": "net.dochi.gameeditor.client.DrmAdminScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:60",
+      "admin-tab:tags",
+      "wait:40",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Refresh",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Select filtered results · 0",
+        "active": false
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Rename",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "remnant-world-list",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgWorldListScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Previous page",
+        "active": true
+      },
+      {
+        "label": "Next page",
+        "active": true
+      },
+      {
+        "label": "Previous message",
+        "active": true
+      },
+      {
+        "label": "Next message",
+        "active": true
+      },
+      {
+        "label": "Edit",
+        "active": true
+      },
+      {
+        "label": "Teleport",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Refresh",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "core-npc-spawner-source",
+    "screenClass": "net.dochi.gameeditor.client.NpcSpawnerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "core-npc-spawner-spawn",
+    "actualScreenAtFailure": "net.dochi.gameeditor.client.NpcSpawnerScreen",
+    "screenClass": "net.dochi.gameeditor.client.NpcSpawnerScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "attemptedActions": [
+      "wait:60",
+      "Spawn"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active labeled control \u0027Spawn\u0027 in NpcSpawnerScreen"
+  },
+  {
+    "id": "gui-image-inspector",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "editorId": "gui_maker",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "+ Image",
+      "scroll-page:-5"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Background",
+        "active": true
+      },
+      {
+        "label": "Button Config",
+        "active": true
+      },
+      {
+        "label": "Viewport: Current",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "+ Image",
+        "active": true
+      },
+      {
+        "label": "+ Entity",
+        "active": true
+      },
+      {
+        "label": "+ Item",
+        "active": true
+      },
+      {
+        "label": "+ Text",
+        "active": true
+      },
+      {
+        "label": "+ Pager",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Layer -",
+        "active": true
+      },
+      {
+        "label": "Layer +",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Front",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "guiName",
+        "active": true
+      },
+      {
+        "label": "Default UI: ON · Texture",
+        "active": true
+      },
+      {
+        "label": "gridX",
+        "active": true
+      },
+      {
+        "label": "gridY",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "id",
+        "active": true
+      },
+      {
+        "label": "layerOrder",
+        "active": true
+      },
+      {
+        "label": "x",
+        "active": true
+      },
+      {
+        "label": "y",
+        "active": true
+      },
+      {
+        "label": "w",
+        "active": true
+      },
+      {
+        "label": "h",
+        "active": true
+      },
+      {
+        "label": "text",
+        "active": true
+      },
+      {
+        "label": "Literal Text",
+        "active": true
+      },
+      {
+        "label": "fillColor",
+        "active": true
+      },
+      {
+        "label": "fillOpacity",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "borderColor",
+        "active": true
+      },
+      {
+        "label": "outlineGlow",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "Asset: (none)",
+        "active": true
+      },
+      {
+        "label": "Clear",
+        "active": true
+      },
+      {
+        "label": "Crop: none",
+        "active": true
+      },
+      {
+        "label": "Fit: Stretch",
+        "active": true
+      },
+      {
+        "label": "Scope: dialogue",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Solo",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "gui-image-picker",
+    "actualScreenAtFailure": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Back",
+      "Forward",
+      "Editors",
+      "Create New",
+      "Load",
+      "Save",
+      "Save As",
+      "Reset",
+      "?",
+      "Preview",
+      "Background",
+      "Button Config",
+      "Viewport: Current",
+      "Reset",
+      "+ Image",
+      "+ Entity",
+      "+ Item",
+      "+ Text",
+      "+ Pager",
+      "Duplicate",
+      "Layer -",
+      "Layer +",
+      "Back",
+      "Front",
+      "Delete",
+      "guiName",
+      "Default UI: ON · Texture",
+      "gridX",
+      "gridY",
+      "OFF",
+      "id",
+      "layerOrder",
+      "x",
+      "y",
+      "w",
+      "h",
+      "text",
+      "Literal Text",
+      "fillColor",
+      "fillOpacity",
+      "None",
+      "borderColor",
+      "outlineGlow",
+      "None",
+      "Asset: (none)",
+      "Clear",
+      "Crop: none",
+      "Fit: Stretch",
+      "Scope: dialogue",
+      "Center",
+      "Solo"
+    ],
+    "attemptedActions": [
+      "+ Image",
+      "scroll-page:-5",
+      "find:Asset:"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active labeled control \u0027\u0001drm.find:Asset:\u0027 in GuiMakerScreen"
+  },
+  {
+    "id": "dialogue-choice-pulse",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "node:dialogue_1",
+      "Choices",
+      "OFF"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "+ General",
+        "active": true
+      },
+      {
+        "label": "+ Start",
+        "active": true
+      },
+      {
+        "label": "Copy",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "FTB",
+        "active": true
+      },
+      {
+        "label": "GeckoLib",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Info",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Choices",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Blueprint",
+        "active": true
+      },
+      {
+        "label": "+ Choice",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Reveal after typing",
+        "active": true
+      },
+      {
+        "label": "choiceTextSize",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "choiceLabel",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      },
+      {
+        "label": "choicePulseTicks",
+        "active": true
+      },
+      {
+        "label": "choicePulseCount",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "choicePulseIntensity",
+        "active": true
+      },
+      {
+        "label": "\u003e",
+        "active": true
+      },
+      {
+        "label": "choicePulseColor",
+        "active": true
+      },
+      {
+        "label": "Condition list",
+        "active": true
+      },
+      {
+        "label": "Choice actions",
+        "active": true
+      },
+      {
+        "label": "Choice FX",
+        "active": true
+      },
+      {
+        "label": "Condition: and",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "^",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

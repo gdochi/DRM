@@ -1,0 +1,295 @@
+[
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-forge1201-en-14\\game\\config\\dochi_rpg_maker\\npc_shops\\village_shop.json"
+  },
+  {
+    "id": "shop-save",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Save As",
+      "input:shopSaveAsName\u003dvillage_shop",
+      "Save As",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/npc_shops/village_shop.json",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Buy items",
+        "active": true
+      },
+      {
+        "label": "Sell items",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Shop settings",
+        "active": true
+      },
+      {
+        "label": "Product",
+        "active": true
+      },
+      {
+        "label": "Payment",
+        "active": true
+      },
+      {
+        "label": "Restock",
+        "active": true
+      },
+      {
+        "label": "itemId",
+        "active": true
+      },
+      {
+        "label": "Item",
+        "active": true
+      },
+      {
+        "label": "name",
+        "active": true
+      },
+      {
+        "label": "count",
+        "active": true
+      },
+      {
+        "label": "stock",
+        "active": true
+      },
+      {
+        "label": "maxStock",
+        "active": true
+      },
+      {
+        "label": "Description",
+        "active": true
+      },
+      {
+        "label": "nbt",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-bread-selected",
+    "screenClass": "net.dochi.gameeditor.client.NpcApplyTargetScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Categories",
+      "Dialogue JSON",
+      "NPC Shop JSON",
+      "Teleporter JSON",
+      "Stat Builder JSON",
+      "Hire NPCs JSON",
+      "NPC Basic",
+      "npcApplySearch",
+      "Cancel",
+      "Refresh",
+      "Remove Shop",
+      "Apply Shop"
+    ],
+    "attemptedActions": [
+      "NPC Shop JSON",
+      "wait:40",
+      "candidate:village_shop",
+      "Apply NPC Shop"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active labeled control \u0027Apply NPC Shop\u0027 in NpcApplyTargetScreen"
+  },
+  {
+    "id": "shop-bread-purchased",
+    "screenClass": "net.dochi.gameeditor.client.NpcApplyTargetScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Categories",
+      "Dialogue JSON",
+      "NPC Shop JSON",
+      "Teleporter JSON",
+      "Stat Builder JSON",
+      "Hire NPCs JSON",
+      "NPC Basic",
+      "npcApplySearch",
+      "Cancel",
+      "Refresh",
+      "Remove Shop",
+      "Apply Shop"
+    ],
+    "attemptedActions": [
+      "NPC Shop JSON",
+      "wait:40",
+      "candidate:village_shop",
+      "Apply NPC Shop"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active labeled control \u0027Apply NPC Shop\u0027 in NpcApplyTargetScreen"
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-forge1201-en-14\\game\\config\\dochi_rpg_maker\\popups\\definitions\\village_entry.json"
+  },
+  {
+    "id": "popup-village-save",
+    "screenClass": "net.dochi.gameeditor.client.PopupMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "input:id\u003dvillage_entry",
+      "input:title\u003dVillage Gate",
+      "input:hold\u003d200",
+      "Save As",
+      "input:saveAsName\u003dvillage_entry",
+      "Save As",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/popups/definitions/village_entry.json",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "name",
+        "active": true
+      },
+      {
+        "label": "id",
+        "active": true
+      },
+      {
+        "label": "gui",
+        "active": true
+      },
+      {
+        "label": "title",
+        "active": true
+      },
+      {
+        "label": "subtitle",
+        "active": true
+      },
+      {
+        "label": "fadeIn",
+        "active": true
+      },
+      {
+        "label": "hold",
+        "active": true
+      },
+      {
+        "label": "fadeOut",
+        "active": true
+      },
+      {
+        "label": "channel",
+        "active": true
+      },
+      {
+        "label": "instanceKey",
+        "active": true
+      },
+      {
+        "label": "priority",
+        "active": true
+      },
+      {
+        "label": "soundId",
+        "active": true
+      },
+      {
+        "label": "Play",
+        "active": true
+      },
+      {
+        "label": "Stop",
+        "active": true
+      },
+      {
+        "label": "soundVolume",
+        "active": true
+      },
+      {
+        "label": "soundPitch",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "popup-command",
+    "status": "verified_active_client_instance",
+    "detail": "village_entry"
+  },
+  {
+    "id": "popup-village-runtime",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "command:drm popup show @s village_entry",
+      "wait:20",
+      "verify:popup-active",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

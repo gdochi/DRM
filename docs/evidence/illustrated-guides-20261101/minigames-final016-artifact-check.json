@@ -1,0 +1,20 @@
+{
+  "artifact": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Minigames\\jar\\dochi_minigames-0.1.6-neoforge-1.21.1.jar",
+  "sha256": "6ce22d05a98e25b6dc6019e9e6a249d1df4984d7a3f9d0b6bfe4c399f316fca4",
+  "previousCaptureSha256": "aa24a6d1ba45bd14d1c9f8b033d9beded2f350369dd6fcb6256e8629605937b9",
+  "builtIn": 335,
+  "optional": 89,
+  "cardsEqualEarlier016": true,
+  "optionalEqualEarlier016": true,
+  "packagedDefaultPresentation": {
+    "roulette": "block",
+    "roulette_weighted": "block"
+  },
+  "changesAffectingDocs": [
+    "Default roulette mode is now Spin on block",
+    "Block roulette no longer needs a GUI layout to start",
+    "Winner sector/prize row contrast changed"
+  ],
+  "provenance": "Read current production artifact and current primary source, plus existing mod-owner release records. No production source, resource or JAR was written.",
+  "scope": "Current catalog extraction is separate from earlier native gameplay receipts. No attribution of the external artifact writer is inferred."
+}

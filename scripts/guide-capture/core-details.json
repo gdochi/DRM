@@ -1,0 +1,65 @@
+[
+  {
+    "id": "native-hud-health",
+    "editor": "hud_maker",
+    "actions": [
+      "+ Health",
+      "Render survival HUD",
+      "* Health",
+      "input:x=400",
+      "input:y=250",
+      "Save As",
+      "input:guiExportName=guide_hud",
+      "Save As",
+      "wait:60",
+      "verify:hud-saved",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "native-hud-runtime",
+    "editor": "hud_maker",
+    "actions": [
+      "+ Health",
+      "Render survival HUD",
+      "* Health",
+      "input:x=400",
+      "input:y=250",
+      "Save As",
+      "input:guiExportName=guide_hud",
+      "Save As",
+      "wait:60",
+      "verify:hud-saved",
+      "Apply",
+      "wait:60",
+      "verify:hud-active",
+      "fixture:survival",
+      "close:screen",
+      "wait:80",
+      "diagnose:hud",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "gui-button-config",
+    "editor": "gui_maker",
+    "actions": [
+      "Button Config"
+    ]
+  },
+  {
+    "id": "currency-item-prices",
+    "editor": "currency",
+    "actions": [
+      "Item Prices (0)"
+    ]
+  },
+  {
+    "id": "currency-conversion-picker",
+    "editor": "currency",
+    "actions": [
+      "Item Prices (0)",
+      "Add Item"
+    ]
+  }
+]

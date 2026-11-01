@@ -1,0 +1,6 @@
+[
+  {"id":"core-npc-spawner-rules","screen":"@core-spawner","actions":["wait:60","[ Spawn ]","clear:chat"]},
+  {"id":"gui-image-asset-picker","editor":"gui_maker","actions":["+ Image","find:Asset:","wait:60","clear:chat"]},
+  {"id":"remnant-placed-setter","screen":"@remnant-place","actions":["wait:60","field:body=Follow the lanterns to reach the village.","snapshot:remnant-message-ready","find:Marker model:","wait:40","snapshot:remnant-marker-picker","next-screen:RemnantMsgSetterScreen","Cancel","Save","wait:60","verify:remnant-saved","remnant-read","wait:60","clear:chat"]},
+  {"id":"remnant-populated-world-list","screen":"@remnant-list","actions":["wait:60","clear:chat"]}
+]

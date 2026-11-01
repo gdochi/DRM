@@ -1,0 +1,7 @@
+{
+  "status": "remaining_intermediates_retained",
+  "completedCleanup": "292 owned runtime/class directories and 45 unreferenced task-created PNGs removed; no failed removals.",
+  "rejectedAction": "Bulk removal of 150 capture directories and one-off files under build/task.",
+  "reviewReason": "Automatic approval review considered the additional bulk deletion broader than authorized temporary-world and duplicate cleanup.",
+  "response": "Did not retry the rejected bulk deletion or use an indirect workaround. Kept remaining capture receipts, patches and task helpers; documentation work proceeds."
+}

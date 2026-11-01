@@ -1,0 +1,201 @@
+[
+  {
+    "id": "remnant-message-ready",
+    "status": "captured_in_game",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgSetterScreen",
+    "actions": [
+      "wait:60",
+      "field:body\u003dFollow the lanterns to reach the village.",
+      "snapshot:remnant-message-ready"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "remnant-marker-picker",
+    "status": "captured_in_game",
+    "screenClass": "net.dochi.gameeditor.client.RegistryAssetPickerScreen",
+    "actions": [
+      "wait:60",
+      "field:body\u003dFollow the lanterns to reach the village.",
+      "snapshot:remnant-message-ready",
+      "find:Marker model:",
+      "wait:40",
+      "snapshot:remnant-marker-picker"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "remnant-setter",
+    "status": "verified_native_saved_marker",
+    "detail": "Actual setter placement and Save request; text retained by server"
+  },
+  {
+    "id": "remnant-placed-setter",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgViewScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:60",
+      "field:body\u003dFollow the lanterns to reach the village.",
+      "snapshot:remnant-message-ready",
+      "find:Marker model:",
+      "wait:40",
+      "snapshot:remnant-marker-picker",
+      "next-screen:RemnantMsgSetterScreen",
+      "Cancel",
+      "Save",
+      "wait:60",
+      "verify:remnant-saved",
+      "remnant-read",
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "remnant-populated-world-list",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgWorldListScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Previous page",
+        "active": true
+      },
+      {
+        "label": "Next page",
+        "active": true
+      },
+      {
+        "label": "Previous message",
+        "active": true
+      },
+      {
+        "label": "Next message",
+        "active": true
+      },
+      {
+        "label": "Edit",
+        "active": true
+      },
+      {
+        "label": "Teleport",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Refresh",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-remnant-boss-neo1211-en-01\\game\\config\\dochi_rpg_maker\\mobs\\patterns\\bosses\\training_captain.json"
+  },
+  {
+    "id": "battleworks-boss-phases-saved",
+    "status": "captured_in_game",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Combat Rules",
+      "Manager",
+      "input:same_pattern\u003d1.0",
+      "Combat",
+      "input:fov\u003d360",
+      "input:scan_range\u003d16",
+      "Boss Phases",
+      "Add",
+      "input:phase_name\u003dEnraged",
+      "input:phase_health\u003d50",
+      "Save As",
+      "input:save_as\u003dbosses/training_captain.json",
+      "Save",
+      "wait:60",
+      "Save",
+      "wait:40",
+      "verify:file\u003dconfig/dochi_rpg_maker/mobs/patterns/bosses/training_captain.json",
+      "clear:chat",
+      "snapshot:battleworks-boss-phases-saved"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "battleworks-boss",
+    "status": "verified_runtime_phase",
+    "detail": "{\"phase\":1,\"health\":100.0,\"maxHealth\":100.0,\"lastPattern\":\"\"}"
+  },
+  {
+    "id": "battleworks-boss-phase-threshold",
+    "actualScreenAtFailure": "world",
+    "attemptedActions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Combat Rules",
+      "Manager",
+      "input:same_pattern\u003d1.0",
+      "Combat",
+      "input:fov\u003d360",
+      "input:scan_range\u003d16",
+      "Boss Phases",
+      "Add",
+      "input:phase_name\u003dEnraged",
+      "input:phase_health\u003d50",
+      "Save As",
+      "input:save_as\u003dbosses/training_captain.json",
+      "Save",
+      "wait:60",
+      "Save",
+      "wait:40",
+      "verify:file\u003dconfig/dochi_rpg_maker/mobs/patterns/bosses/training_captain.json",
+      "clear:chat",
+      "snapshot:battleworks-boss-phases-saved",
+      "close:screen",
+      "fixture:bw-boss",
+      "wait:40",
+      "verify:bw-phase:1",
+      "fixture:bw-health:49",
+      "wait:20",
+      "verify:bw-phase:2"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Runtime phase differs: {\"phase\":3,\"health\":49.0,\"maxHealth\":100.0,\"lastPattern\":\"assisted_pattern\"}"
+  }
+]

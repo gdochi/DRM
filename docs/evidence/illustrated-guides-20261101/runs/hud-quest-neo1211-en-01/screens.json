@@ -1,0 +1,22 @@
+[
+  {
+    "id": "hud-health-positioned",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Input click rejected"
+  },
+  {
+    "id": "quest-objective-detail",
+    "screenClass": "net.dochi.gameeditor.client.QuestEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "+ Category",
+      "+ Quest",
+      "Objectives",
+      "+ Add"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

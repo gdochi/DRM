@@ -1,0 +1,247 @@
+[
+  {
+    "id": "battleworks-simulation-built",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "⌕ Pattern",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "pattern_name",
+      "pattern_role",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "attemptedActions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Simulation",
+      "verify:bw-simulation"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Simulation did not open"
+  },
+  {
+    "id": "battleworks-hitbox-geometry",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Hitbox Library",
+      "bw-fold-scene"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "hitbox_id",
+        "active": true
+      },
+      {
+        "label": "hitbox_name",
+        "active": true
+      },
+      {
+        "label": "damage",
+        "active": true
+      },
+      {
+        "label": "radius",
+        "active": true
+      },
+      {
+        "label": "thickness",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-manager",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Combat Rules",
+      "Manager"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "global_cd",
+        "active": true
+      },
+      {
+        "label": "max_combo",
+        "active": true
+      },
+      {
+        "label": "selection_floor",
+        "active": true
+      },
+      {
+        "label": "random_factor",
+        "active": true
+      },
+      {
+        "label": "same_pattern",
+        "active": true
+      },
+      {
+        "label": "recent_penalty",
+        "active": true
+      },
+      {
+        "label": "role_penalty",
+        "active": true
+      },
+      {
+        "label": "mobility_urgency",
+        "active": true
+      },
+      {
+        "label": "mobility_bonus",
+        "active": true
+      },
+      {
+        "label": "stationary_streak",
+        "active": true
+      },
+      {
+        "label": "stationary_penalty",
+        "active": true
+      },
+      {
+        "label": "recovery_min",
+        "active": true
+      },
+      {
+        "label": "recovery_max",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-phases",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Combat Rules",
+      "Boss Phases"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "phase_name",
+        "active": true
+      },
+      {
+        "label": "phase_health",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-death",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Combat Rules",
+      "Death"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "death_duration",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-particles",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "particle_maker",
+    "entry": "registered editor source/target opener",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "particle_name",
+        "active": true
+      },
+      {
+        "label": "particle_duration",
+        "active": true
+      },
+      {
+        "label": "layer_name",
+        "active": true
+      },
+      {
+        "label": "layer_start",
+        "active": true
+      },
+      {
+        "label": "layer_end",
+        "active": true
+      },
+      {
+        "label": "layer_interval",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

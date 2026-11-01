@@ -1,0 +1,10 @@
+[
+  {"id":"spawn-conditions", "editor":"spawn_control_spawner", "actions":["Conditions"]},
+  {"id":"spawn-settings", "editor":"spawn_control_spawner", "actions":["Spawn Settings"]},
+  {"id":"spawn-destruction", "editor":"spawn_control_spawner", "actions":["Destruction"]},
+  {"id":"spawn-effects", "editor":"spawn_control_spawner", "actions":["Effects"]},
+  {"id":"spawn-appearance", "editor":"spawn_control_spawner", "actions":["Appearance"]},
+  {"id":"mapicon-rule-added", "editor":"dochi_mapicon_integration:icons", "actions":["JSON Rules","Add rule"]},
+  {"id":"mapicon-npc-saved", "class":"net.dochi.mapicon.client.MapIconEditorScreen", "target":true, "actions":["wait:60","Save","wait:80","verify:map-marker","clear:chat"]},
+  {"id":"mapicon-minimap", "class":"net.dochi.mapicon.client.MapIconEditorScreen", "target":true, "actions":["wait:60","Save","wait:80","fixture:map-position","close:screen","wait:120","verify:map-marker","look-at:npc","clear:chat"]}
+]

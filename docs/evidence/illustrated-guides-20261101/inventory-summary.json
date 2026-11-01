@@ -1,0 +1,24 @@
+{
+  "candidateFiles": 18570,
+  "uniqueLargeImages": 14638,
+  "skipped": {
+    "small": 1174
+  },
+  "documents": 372,
+  "documentsWithImages": 372,
+  "documentsByProduct": {
+    "core": 100,
+    "core-fabric": 66,
+    "dochi-minigames": 14,
+    "dochi-mapicon-integration": 6,
+    "mwent": 24,
+    "dochi-npc-core": 12,
+    "mob-editor": 40,
+    "dochi-warfare": 30,
+    "dochi-warfare-expanded": 8,
+    "drm-cobblemon-editor": 46,
+    "dochi-spawn-control": 18,
+    "dochi-real-armor": 8
+  },
+  "note": "Candidate dimensions and hashes do not establish in-game provenance, version compatibility or successful actions."
+}

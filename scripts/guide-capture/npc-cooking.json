@@ -1,0 +1,31 @@
+[
+  {
+    "id": "dnpc-cooking",
+    "editor": "npc_basic",
+    "target": true,
+    "actions": [
+      "Schedule",
+      "Add time",
+      "+",
+      "type:Cooking",
+      "key:enter",
+      "verify:work=COOK"
+    ]
+  },
+  {
+    "id": "dnpc-cooking-recipes",
+    "editor": "npc_basic",
+    "target": true,
+    "actions": [
+      "Schedule",
+      "Add time",
+      "+",
+      "type:Cooking",
+      "key:enter",
+      "verify:work=COOK",
+      "next-screen:NpcCookingRecipeScreen",
+      "Select food recipe and inspect ingredients",
+      "wait:100"
+    ]
+  }
+]

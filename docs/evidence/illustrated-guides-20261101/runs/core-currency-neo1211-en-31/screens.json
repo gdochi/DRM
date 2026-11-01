@@ -1,0 +1,62 @@
+[
+  {
+    "id": "currency-save-modal",
+    "screenClass": "net.dochi.gameeditor.client.CurrencyEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "currency",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Save As",
+      "input:currencySaveAsName\u003dtown_coin",
+      "diagnose:controls"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "currencySaveAsName",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "currency-save-click",
+    "screenClass": "net.dochi.gameeditor.client.CurrencyEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "currency",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Save As",
+      "input:currencySaveAsName\u003dtown_coin",
+      "Save As",
+      "wait:60",
+      "diagnose:controls"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "currencySaveAsName",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

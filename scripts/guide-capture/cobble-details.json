@@ -1,0 +1,107 @@
+[
+  {
+    "id": "cobble-rounds",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "Battle Config",
+      "Rounds"
+    ]
+  },
+  {
+    "id": "cobble-encounter",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "Battle Config",
+      "Encounter"
+    ]
+  },
+  {
+    "id": "cobble-dialogue",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "Battle Config",
+      "Dialogue"
+    ]
+  },
+  {
+    "id": "cobble-conditions",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "Battle Config",
+      "Conditions"
+    ]
+  },
+  {
+    "id": "cobble-after-actions",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "Battle Config",
+      "After Actions"
+    ]
+  },
+  {
+    "id": "cobble-sounds",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "Battle Config",
+      "Battle sounds"
+    ]
+  },
+  {
+    "id": "cobble-party-generator",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "Generate Party"
+    ]
+  },
+  {
+    "id": "cobble-battle-items",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "Battle Item Inventory"
+    ]
+  },
+  {
+    "id": "cobble-general-items",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "General Item Inventory"
+    ]
+  },
+  {
+    "id": "cobble-nurse-save",
+    "editor": "cobble_npc:nurse_joy",
+    "actions": [
+      "Save As",
+      "field:jsonName=custom/village_healer.json",
+      "Save",
+      "wait:40",
+      "verify:file=config/dochi_rpg_maker/cobblemon/nurse_joy/custom/village_healer.json"
+    ]
+  },
+  {
+    "id": "cobble-starter-conditions",
+    "editor": "cobble_npc:starter_selector",
+    "actions": [
+      "Card display conditions"
+    ]
+  },
+  {
+    "id": "cobble-starter-dialogue",
+    "editor": "cobble_npc:starter_selector",
+    "actions": [
+      "Dialogue and GUI"
+    ]
+  },
+  {
+    "id": "cobble-starter-save",
+    "editor": "cobble_npc:starter_selector",
+    "actions": [
+      "Save As",
+      "field:jsonName=custom/village_starters.json",
+      "Save",
+      "wait:40",
+      "verify:file=config/dochi_rpg_maker/cobblemon/starter_selectors/custom/village_starters.json"
+    ]
+  }
+]

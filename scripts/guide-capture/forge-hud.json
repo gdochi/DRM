@@ -1,0 +1,42 @@
+[
+  {
+    "id": "forge-hud-health",
+    "editor": "hud_maker",
+    "actions": [
+      "+ Health",
+      "Render survival HUD",
+      "* Health",
+      "input:x=400",
+      "input:y=250",
+      "Save As",
+      "input:guiExportName=guide_hud",
+      "Save As",
+      "wait:60",
+      "verify:hud-saved",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "forge-hud-runtime",
+    "editor": "hud_maker",
+    "actions": [
+      "+ Health",
+      "Render survival HUD",
+      "* Health",
+      "input:x=400",
+      "input:y=250",
+      "Save As",
+      "input:guiExportName=guide_hud",
+      "Save As",
+      "wait:60",
+      "verify:hud-saved",
+      "Apply",
+      "wait:60",
+      "verify:hud-active",
+      "fixture:survival",
+      "close:screen",
+      "wait:80",
+      "clear:chat"
+    ]
+  }
+]

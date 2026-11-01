@@ -1,0 +1,63 @@
+[
+  {
+    "id": "currency-emerald-prices",
+    "editor": "currency",
+    "actions": [
+      "next-screen:EditorItemPickerScreen",
+      "find:Item Icon",
+      "wait:40",
+      "picker-item:minecraft:emerald",
+      "next-screen:CurrencyEditorScreen",
+      "picker-apply",
+      "wait:40",
+      "input:name=Town Coin",
+      "Item Prices (0)",
+      "Add Item",
+      "input:itemSearch=minecraft:emerald",
+      "currency-item:minecraft:emerald",
+      "Add Selected (1)",
+      "input:conversionPrice=10",
+      "Apply Selected",
+      "Close",
+      "Save As",
+      "input:currencySaveAsName=town_coin",
+      "Save As",
+      "wait:60",
+      "verify:file=config/dochi_rpg_maker/currency/definitions/town_coin.json",
+      "clear:chat",
+      "Item Prices (1)"
+    ]
+  },
+  {
+    "id": "hud-currency-picker",
+    "editor": "hud_maker",
+    "actions": [
+      "wait:60",
+      "+ Currency",
+      "input:currencyPickerSearch=town_coin",
+      "wait:40",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "hud-currency-bound",
+    "editor": "hud_maker",
+    "actions": [
+      "wait:60",
+      "+ Currency",
+      "input:currencyPickerSearch=town_coin",
+      "wait:40",
+      "Apply",
+      "* Currency",
+      "Render survival HUD",
+      "clear:chat",
+      "input:x=400",
+      "input:y=250",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "faction-editor",
+    "editor": "faction"
+  }
+]

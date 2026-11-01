@@ -1,0 +1,12 @@
+[
+  {
+    "id": "teleporter-save",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active labeled control \u0027Save As\u0027 in TeleporterEditorScreen"
+  },
+  {
+    "id": "teleporter-npc-player",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: No candidate guide_travel"
+  }
+]

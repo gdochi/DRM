@@ -1,0 +1,11 @@
+{
+  "artifact": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Minigames\\jar\\dochi_minigames-0.1.6-neoforge-1.21.1.jar",
+  "sha256": "aa24a6d1ba45bd14d1c9f8b033d9beded2f350369dd6fcb6256e8629605937b9",
+  "version": "0.1.6",
+  "builtIn": 335,
+  "optional": 89,
+  "cardsEqual015": true,
+  "optionalEqual015": true,
+  "method": "Read compiled MobCards.ALL and MobOptionalDecks.ALL from exact production artifact with existing Java exporter; no source substitution.",
+  "comparisonNote": "Historical snapshot intentionally retains only optional preset identity and cards; full export also includes icon/decks/variants metadata, excluded from card-definition comparison."
+}

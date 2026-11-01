@@ -1,0 +1,83 @@
+[
+  {
+    "id": "minigames-phase",
+    "status": "verified_runtime_phase",
+    "detail": "mulligan"
+  },
+  {
+    "id": "mwent-redraw",
+    "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "MWENT",
+      "next-screen:@changed",
+      "Test play",
+      "Use this deck",
+      "Begin match",
+      "wait-phase:mulligan"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Rulebook",
+        "active": false
+      },
+      {
+        "label": "Stop BGM",
+        "active": false
+      },
+      {
+        "label": "BGM volume: 100%",
+        "active": false
+      },
+      {
+        "label": "Continue",
+        "active": false
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Reset camera",
+        "active": false
+      },
+      {
+        "label": "Top view (fixed)",
+        "active": false
+      },
+      {
+        "label": "Diagonal view (fixed)",
+        "active": false
+      },
+      {
+        "label": "NPC graveyard",
+        "active": false
+      },
+      {
+        "label": "Your graveyard",
+        "active": false
+      }
+    ],
+    "gamePhase": "mulligan",
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "minigames-phase",
+    "status": "verified_runtime_phase",
+    "detail": "mulligan"
+  },
+  {
+    "id": "mwent-battle",
+    "status": "failed",
+    "error": "java.lang.NoSuchFieldException: buttons"
+  }
+]

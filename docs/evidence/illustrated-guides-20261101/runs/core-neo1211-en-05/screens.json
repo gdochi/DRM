@@ -1,0 +1,196 @@
+[
+  {
+    "id": "editor-selector",
+    "screenClass": "net.dochi.gameeditor.client.EditorSelectScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-open-default",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active button \u0027Dialogue Editor\u0027 in EditorSelectScreen; buttons\u003d[Back, Forward, Favorites, \u003e All, General, Visual, Addons, \u003e Dialogue Editor, Add to favorites, GUI Maker, Add to favorites, Tooltip Maker, Add to favorites, NPC Shop, Add to favorites, Currency Editor, Add to favorites, HUD Maker, Add to favorites, Popup Maker, Add to favorites, Scene Maker, Add to favorites, Faction Editor, Add to favorites, Quest Editor, Add to favorites, Teleporter Editor, Add to favorites, Remnant Message Editor, Add to favorites, Stat Builder, Add to favorites, Item Editor, Add to favorites, Employment Editor, Add to favorites, Default Configs, ?, Load, Use Default, Create New, Cancel]"
+  },
+  {
+    "id": "dialogue-editor",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-start-routes",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-text",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-choices",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-blueprint",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-save-as",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-save-result",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Input differs: setName"
+  },
+  {
+    "id": "dialogue-load",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-player",
+    "screenClass": "net.dochi.gameeditor.client.DialogueRuntimeScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-editor",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-settings",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-payment",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-restock",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-player-preview",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopRuntimeScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "gui-maker",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "hud-maker",
+    "screenClass": "net.dochi.gameeditor.client.HudMakerScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "currency-editor",
+    "screenClass": "net.dochi.gameeditor.client.CurrencyEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "quest-editor",
+    "screenClass": "net.dochi.gameeditor.client.QuestEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "teleporter-editor",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "remnant-editor",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgEditorScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "popup-maker",
+    "screenClass": "net.dochi.gameeditor.client.PopupMakerScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "tooltip-maker",
+    "screenClass": "net.dochi.gameeditor.client.TooltipMakerScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "scene-maker",
+    "screenClass": "net.dochi.gameeditor.client.SceneMakerScreen",
+    "status": "captured_in_game",
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

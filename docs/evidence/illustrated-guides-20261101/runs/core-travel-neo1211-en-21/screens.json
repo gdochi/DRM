@@ -1,0 +1,168 @@
+[
+  {
+    "id": "teleporter-editor",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterEditorScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "set.displayName",
+        "active": true
+      },
+      {
+        "label": "set.gui.readonly",
+        "active": true
+      },
+      {
+        "label": "Choose GUI",
+        "active": true
+      },
+      {
+        "label": "category.search",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "category.name",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "teleporter-destinations",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Destination Settings"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "destination.search",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "destination.name",
+        "active": true
+      },
+      {
+        "label": "destination.x",
+        "active": true
+      },
+      {
+        "label": "destination.y",
+        "active": true
+      },
+      {
+        "label": "destination.z",
+        "active": true
+      },
+      {
+        "label": "destination.yaw",
+        "active": true
+      },
+      {
+        "label": "destination.pitch",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "teleporter-conditions",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Interaction Conditions"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Select All",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "teleporter-presentation",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Travel Presentation"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "set.fadeOut",
+        "active": true
+      },
+      {
+        "label": "set.fadeIn",
+        "active": true
+      },
+      {
+        "label": "sound.departure.id",
+        "active": true
+      },
+      {
+        "label": "Select",
+        "active": true
+      },
+      {
+        "label": "Play",
+        "active": true
+      },
+      {
+        "label": "Stop",
+        "active": true
+      },
+      {
+        "label": "sound.departure.volume",
+        "active": true
+      },
+      {
+        "label": "sound.departure.pitch",
+        "active": true
+      },
+      {
+        "label": "sound.arrival.id",
+        "active": true
+      },
+      {
+        "label": "Select",
+        "active": true
+      },
+      {
+        "label": "Play",
+        "active": true
+      },
+      {
+        "label": "Stop",
+        "active": true
+      },
+      {
+        "label": "sound.arrival.volume",
+        "active": true
+      },
+      {
+        "label": "sound.arrival.pitch",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

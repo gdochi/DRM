@@ -1,0 +1,75 @@
+[
+  {
+    "id": "dialogue-choice-actions",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "node:dialogue_1",
+      "Choices",
+      "Choice actions"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-bread-payment",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "shop-item:1",
+      "Payment"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "gui-text",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "+ Text"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "hud-screen-editor",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Screen Editor"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "currency-physical",
+    "screenClass": "net.dochi.gameeditor.client.CurrencyEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Physical currency"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "quest-category",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active button \u0027+ Category\u0027 in QuestEditorScreen; buttons\u003d[, , , , , , , , , , , , , , ]"
+  },
+  {
+    "id": "quest-info",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active button \u0027+ Category\u0027 in QuestEditorScreen; buttons\u003d[, , , , , , , , , , , , , , ]"
+  },
+  {
+    "id": "remnant-view-conditions",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active button \u0027View Conditions\u0027 in RemnantMsgEditorScreen; buttons\u003d[, , , , , , , , , , , , , , , Find]"
+  }
+]

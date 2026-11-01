@@ -1,0 +1,16 @@
+{
+  "wanted": "item",
+  "clickX": 732.0,
+  "clickY": 361.0,
+  "screenReplaced": true,
+  "oldActionAfterClick": {
+    "type": "goto",
+    "linkMode": "internal",
+    "value": "dialogue_reply_1"
+  },
+  "newActionAfterClick": {
+    "type": "goto",
+    "linkMode": "internal",
+    "value": "dialogue_reply_1"
+  }
+}

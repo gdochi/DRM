@@ -1,0 +1,220 @@
+[
+  {
+    "id": "battleworks-action",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Action"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-hitboxes",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Hitbox Library"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-combat",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Combat Rules"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-action-picker",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Action",
+      "+ Action"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-assist",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-simulation",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Simulation"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-rule",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnControlScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Add Rule"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-placed",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "mapicon-rules",
+    "screenClass": "net.dochi.mapicon.client.MapIconEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_mapicon_integration:icons",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "JSON Rules"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "mapicon-npc",
+    "screenClass": "net.dochi.mapicon.client.MapIconEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_mapicon_integration:icons",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Selected NPC"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "minigames-editor",
+    "status": "failed",
+    "error": "java.lang.NoSuchFieldException: buttons"
+  },
+  {
+    "id": "minigames-slots",
+    "status": "failed",
+    "error": "java.lang.NoSuchFieldException: buttons"
+  },
+  {
+    "id": "minigames-memory",
+    "status": "failed",
+    "error": "java.lang.NoSuchFieldException: buttons"
+  },
+  {
+    "id": "minigames-mwent",
+    "status": "failed",
+    "error": "java.lang.NoSuchFieldException: buttons"
+  },
+  {
+    "id": "minigames-test-play",
+    "status": "failed",
+    "error": "java.lang.NoSuchFieldException: buttons"
+  },
+  {
+    "id": "dnpc-identity",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dnpc-appearance",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Appearance \u0026 Model"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dnpc-movement",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Movement AI"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dnpc-combat",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Combat AI"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dnpc-schedule",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Schedule"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

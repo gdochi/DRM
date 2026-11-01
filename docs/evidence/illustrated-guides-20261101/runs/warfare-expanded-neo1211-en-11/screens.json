@@ -1,0 +1,852 @@
+[
+  {
+    "id": "dwe-ai-settings",
+    "screenClass": "net.dochi.warfare.vehicle.client.SuperbVehicleAiConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "AI"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Overview",
+        "active": true
+      },
+      {
+        "label": "AI",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Weapons",
+        "active": true
+      },
+      {
+        "label": "Gimmicks",
+        "active": true
+      },
+      {
+        "label": "Crew",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Clone",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Open a guided tour of the current editor.|Explanations moved out of the form are available here and through hover help.",
+        "active": true
+      },
+      {
+        "label": "Toggle hover explanations.|ON shows descriptions when your cursor is over controls.",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "No faction",
+        "active": true
+      },
+      {
+        "label": "ADVANCE",
+        "active": true
+      },
+      {
+        "label": "Vehicle angle",
+        "active": true
+      },
+      {
+        "label": "Awareness",
+        "active": false
+      },
+      {
+        "label": "Sound",
+        "active": false
+      },
+      {
+        "label": "Movement",
+        "active": false
+      },
+      {
+        "label": "Fire",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-targets",
+    "screenClass": "net.dochi.warfare.vehicle.client.SuperbVehicleAiConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Targets"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Overview",
+        "active": true
+      },
+      {
+        "label": "AI",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Weapons",
+        "active": true
+      },
+      {
+        "label": "Gimmicks",
+        "active": true
+      },
+      {
+        "label": "Crew",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Clone",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Open a guided tour of the current editor.|Explanations moved out of the form are available here and through hover help.",
+        "active": true
+      },
+      {
+        "label": "Toggle hover explanations.|ON shows descriptions when your cursor is over controls.",
+        "active": true
+      },
+      {
+        "label": "Priority: NEAREST",
+        "active": true
+      },
+      {
+        "label": "Infantry",
+        "active": false
+      },
+      {
+        "label": "Vehicle",
+        "active": false
+      },
+      {
+        "label": "Air",
+        "active": false
+      },
+      {
+        "label": "Search target IDs",
+        "active": true
+      },
+      {
+        "label": "Type: All",
+        "active": true
+      },
+      {
+        "label": "View: All",
+        "active": true
+      },
+      {
+        "label": "Mods: All",
+        "active": true
+      },
+      {
+        "label": "Select shown",
+        "active": true
+      },
+      {
+        "label": "Clear shown",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": false
+      },
+      {
+        "label": "0 tags",
+        "active": false
+      },
+      {
+        "label": "0 tags",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-weapons",
+    "screenClass": "net.dochi.warfare.vehicle.client.SuperbVehicleAiConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Weapons"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Overview",
+        "active": true
+      },
+      {
+        "label": "AI",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Weapons",
+        "active": true
+      },
+      {
+        "label": "Gimmicks",
+        "active": true
+      },
+      {
+        "label": "Crew",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Clone",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Open a guided tour of the current editor.|Explanations moved out of the form are available here and through hover help.",
+        "active": true
+      },
+      {
+        "label": "Toggle hover explanations.|ON shows descriptions when your cursor is over controls.",
+        "active": true
+      },
+      {
+        "label": "All eligible weapons",
+        "active": true
+      },
+      {
+        "label": "Weapons per attack",
+        "active": false
+      },
+      {
+        "label": "Global",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      },
+      {
+        "label": "Weapon preference (0-100)",
+        "active": true
+      },
+      {
+        "label": "Weapon accuracy (0-100%)",
+        "active": true
+      },
+      {
+        "label": "Always active",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Fire wait (ticks)",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Gimmicks",
+        "active": true
+      },
+      {
+        "label": "Infinite",
+        "active": true
+      },
+      {
+        "label": "Magazine (0 \u003d native)",
+        "active": true
+      },
+      {
+        "label": "Reserve rounds",
+        "active": false
+      },
+      {
+        "label": "Reload time (seconds)",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-reactions",
+    "screenClass": "net.dochi.warfare.vehicle.client.SuperbVehicleAiConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Gimmicks"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Overview",
+        "active": true
+      },
+      {
+        "label": "AI",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Weapons",
+        "active": true
+      },
+      {
+        "label": "Gimmicks",
+        "active": true
+      },
+      {
+        "label": "Crew",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Clone",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Open a guided tour of the current editor.|Explanations moved out of the form are available here and through hover help.",
+        "active": true
+      },
+      {
+        "label": "Toggle hover explanations.|ON shows descriptions when your cursor is over controls.",
+        "active": true
+      },
+      {
+        "label": "Show: supported only",
+        "active": true
+      },
+      {
+        "label": "\u003e Shot preparation cue",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Damage retreat",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Emergency smoke",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Low-health burst",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": false
+      },
+      {
+        "label": "NPC combat exit",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Low-health withdrawal",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Reload retreat",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Damage sidestep",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Open weapon settings",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-crew",
+    "screenClass": "net.dochi.warfare.vehicle.client.SuperbVehicleAiConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Crew",
+      "wait:40"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Overview",
+        "active": true
+      },
+      {
+        "label": "AI",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Weapons",
+        "active": true
+      },
+      {
+        "label": "Gimmicks",
+        "active": true
+      },
+      {
+        "label": "Crew",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Clone",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Open a guided tour of the current editor.|Explanations moved out of the form are available here and through hover help.",
+        "active": true
+      },
+      {
+        "label": "Toggle hover explanations.|ON shows descriptions when your cursor is over controls.",
+        "active": true
+      },
+      {
+        "label": "Evacuate",
+        "active": true
+      },
+      {
+        "label": "Refresh",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-world",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "look-at:vehicle",
+      "wait:40"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dw-pose-editor",
+    "screenClass": "net.dochi.tacznpcfire.client.TaczNpcPoseEditorScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DW Editors",
+        "active": true
+      },
+      {
+        "label": "New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Save \u0026 Apply",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Pose JSON name",
+        "active": true
+      },
+      {
+        "label": "Head",
+        "active": true
+      },
+      {
+        "label": "↺",
+        "active": true
+      },
+      {
+        "label": "Body",
+        "active": true
+      },
+      {
+        "label": "↺",
+        "active": true
+      },
+      {
+        "label": "Right Arm",
+        "active": true
+      },
+      {
+        "label": "↺",
+        "active": true
+      },
+      {
+        "label": "Left Arm",
+        "active": true
+      },
+      {
+        "label": "↺",
+        "active": true
+      },
+      {
+        "label": "Right Leg",
+        "active": true
+      },
+      {
+        "label": "↺",
+        "active": true
+      },
+      {
+        "label": "Left Leg",
+        "active": true
+      },
+      {
+        "label": "↺",
+        "active": true
+      },
+      {
+        "label": "Gun Render",
+        "active": true
+      },
+      {
+        "label": "↺",
+        "active": true
+      },
+      {
+        "label": "Rotation",
+        "active": true
+      },
+      {
+        "label": "Position",
+        "active": true
+      },
+      {
+        "label": "X rotation",
+        "active": true
+      },
+      {
+        "label": "↺",
+        "active": true
+      },
+      {
+        "label": "Custom",
+        "active": true
+      },
+      {
+        "label": "Y rotation",
+        "active": true
+      },
+      {
+        "label": "↺",
+        "active": true
+      },
+      {
+        "label": "Custom",
+        "active": true
+      },
+      {
+        "label": "Z rotation",
+        "active": true
+      },
+      {
+        "label": "↺",
+        "active": true
+      },
+      {
+        "label": "Custom",
+        "active": true
+      },
+      {
+        "label": "Walking Preview: OFF",
+        "active": true
+      },
+      {
+        "label": "Use Base Preset ▾",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

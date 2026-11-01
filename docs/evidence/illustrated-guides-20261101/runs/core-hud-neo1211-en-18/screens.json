@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hud-save-as",
+    "status": "verified_set_and_component_saved",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-hud-neo1211-en-18\\game\\config\\dochi_rpg_maker\\hud\\sets\\guide_hud"
+  },
+  {
+    "id": "hud-apply",
+    "status": "verified_active_set_file",
+    "detail": "{\n  \"schema\": \"dochi_rpg_maker.hud_active_set\",\n  \"version\": 1,\n  \"activeSet\": \"guide_hud\",\n  \"enabled\": true\n}\r\n"
+  },
+  {
+    "id": "hud-health-runtime",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "Screen Editor",
+      "+ Health",
+      "Render survival HUD",
+      "* Health",
+      "input:x\u003d400",
+      "input:y\u003d250",
+      "Save As",
+      "input:guiExportName\u003dguide_hud",
+      "Save As",
+      "wait:40",
+      "verify:hud-saved",
+      "Apply",
+      "wait:60",
+      "verify:hud-active",
+      "fixture:survival",
+      "close:screen",
+      "wait:40",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

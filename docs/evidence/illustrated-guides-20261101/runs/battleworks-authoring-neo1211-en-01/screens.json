@@ -1,0 +1,189 @@
+[
+  {
+    "id": "battleworks-passive-health",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Trigger: Pattern manager",
+      "Trigger: Pattern manager",
+      "bw-choice:health_below"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "⌕ Pattern",
+        "active": true
+      },
+      {
+        "label": "passive_health",
+        "active": true
+      },
+      {
+        "label": "passive_chance",
+        "active": true
+      },
+      {
+        "label": "passive_cooldown",
+        "active": true
+      },
+      {
+        "label": "passive_queue",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-stage-movement",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Action",
+      "Timing",
+      "bw-choice:1"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "⌕ Pattern",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-stage-animation",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Action",
+      "Timing",
+      "bw-choice:4"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "⌕ Pattern",
+        "active": true
+      },
+      {
+        "label": "animation",
+        "active": true
+      },
+      {
+        "label": "animation_speed",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-save-position",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "+ Action",
+      "bw-choice:summon_position",
+      "bw-choice:dochi_battleworks:save_position"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "⌕ Pattern",
+        "active": true
+      },
+      {
+        "label": "action_chance",
+        "active": true
+      },
+      {
+        "label": "action_position_id",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-projectile",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "+ Action",
+      "bw-choice:skill",
+      "bw-choice:dochi_battleworks:spawn_projectile"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "⌕ Pattern",
+        "active": true
+      },
+      {
+        "label": "action_chance",
+        "active": true
+      },
+      {
+        "label": "action_projectile_entity",
+        "active": true
+      },
+      {
+        "label": "action_projectile_item",
+        "active": true
+      },
+      {
+        "label": "action_projectile_group",
+        "active": true
+      },
+      {
+        "label": "action_projectile_count",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

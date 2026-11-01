@@ -1,0 +1,31 @@
+[
+  {
+    "id": "currency-emerald-prices",
+    "editor": "currency",
+    "actions": [
+      "Item Prices (0)",
+      "Add Item",
+      "input:itemSearch=minecraft:emerald",
+      "currency-item:minecraft:emerald",
+      "Add Selected (1)",
+      "input:conversionPrice=10",
+      "Apply Selected",
+      "Close",
+      "Save As",
+      "input:currencySaveAsName=town_coin",
+      "Save As",
+      "wait:60",
+      "verify:file=config/dochi_rpg_maker/currency/definitions/town_coin.json",
+      "clear:chat",
+      "Item Prices (1)"
+    ]
+  },
+  {
+    "id": "gui-vanilla-buttons",
+    "editor": "gui_maker",
+    "actions": [
+      "Button Config",
+      "Choice / choice_box : Custom"
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "api-combat-switches",
+    "screen": "@world",
+    "actions": [
+      "clear:chat",
+      "fixture:api-combat",
+      "look-at:npc",
+      "wait:8"
+    ]
+  },
+  {
+    "id": "api-hitbox-one-shot",
+    "screen": "@world",
+    "actions": [
+      "clear:chat",
+      "fixture:api-hitbox",
+      "look-at:npc"
+    ]
+  },
+  {
+    "id": "api-model-zombie",
+    "screen": "@world",
+    "actions": [
+      "clear:chat",
+      "fixture:api-model",
+      "look-at:npc",
+      "wait:20"
+    ]
+  },
+  {
+    "id": "api-stored-condition",
+    "screen": "@world",
+    "actions": [
+      "clear:chat",
+      "fixture:api-stored",
+      "look-at:npc"
+    ]
+  },
+  {
+    "id": "api-effect-speed",
+    "screen": "@world",
+    "actions": [
+      "clear:chat",
+      "fixture:api-effect",
+      "inventory:player",
+      "wait:20"
+    ]
+  },
+  {
+    "id": "api-skill-fireball",
+    "screen": "@world",
+    "actions": [
+      "clear:chat",
+      "fixture:api-skill",
+      "look-at:api-scene",
+      "wait:20",
+      "verify:api-skill-impact"
+    ]
+  },
+  {
+    "id": "api-popup-definition",
+    "screen": "PopupMakerScreen",
+    "actions": [
+      "input:id=village_entry",
+      "input:title=Village Gate",
+      "input:hold=200",
+      "Save As",
+      "input:saveAsName=village_entry",
+      "Save As",
+      "wait:60",
+      "verify:file=config/dochi_rpg_maker/popups/definitions/village_entry.json",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "api-popup-shown",
+    "screen": "@world",
+    "actions": [
+      "clear:chat",
+      "fixture:api-popup",
+      "wait:20",
+      "verify:popup-active"
+    ]
+  }
+]

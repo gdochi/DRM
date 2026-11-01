@@ -1,0 +1,98 @@
+[
+  {
+    "id": "minigames-phase",
+    "status": "verified_runtime_phase",
+    "detail": "mulligan"
+  },
+  {
+    "id": "minigames-phase",
+    "status": "verified_runtime_phase",
+    "detail": "battle"
+  },
+  {
+    "id": "mwent-battle",
+    "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "MWENT",
+      "next-screen:@changed",
+      "Test play",
+      "Use this deck",
+      "Begin match",
+      "wait-phase:mulligan",
+      "wait-control:Continue",
+      "Continue",
+      "wait-phase:battle",
+      "wait:20"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Rulebook",
+        "active": true
+      },
+      {
+        "label": "Stop BGM",
+        "active": true
+      },
+      {
+        "label": "BGM volume: 100%",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Pass round",
+        "active": true
+      },
+      {
+        "label": "End turn",
+        "active": false
+      },
+      {
+        "label": "Breath of Spring (2 / 2)",
+        "active": false
+      },
+      {
+        "label": "Heart of the Foundry (2 / 2)",
+        "active": true
+      },
+      {
+        "label": "Golden apple altar",
+        "active": false
+      },
+      {
+        "label": "Reset camera",
+        "active": true
+      },
+      {
+        "label": "Top view (fixed)",
+        "active": true
+      },
+      {
+        "label": "Diagonal view (fixed)",
+        "active": true
+      },
+      {
+        "label": "NPC graveyard",
+        "active": true
+      },
+      {
+        "label": "Your graveyard",
+        "active": true
+      }
+    ],
+    "gamePhase": "battle",
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

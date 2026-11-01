@@ -1,0 +1,21 @@
+[
+  {
+    "id": "dialogue-applied-to-dnpc",
+    "status": "verified_server_binding"
+  },
+  {
+    "id": "dialogue-npc-player",
+    "screenClass": "net.dochi.gameeditor.client.DialogueRuntimeScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "apply:dialogue",
+      "wait:40",
+      "verify:npc-dialogue",
+      "interact:npc",
+      "wait:140"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

@@ -1,0 +1,5 @@
+[
+  {"id":"forge-action-before","screen":"DialogueEditorScreen","actions":["node:dialogue_1","Choices","Choice actions","diagnose:controls"]},
+  {"id":"forge-action-dropdown","screen":"DialogueEditorScreen","actions":["node:dialogue_1","Choices","Choice actions","Type: Goto","diagnose:dropdown"]},
+  {"id":"forge-action-after","screen":"DialogueEditorScreen","actions":["node:dialogue_1","Choices","Choice actions","Type: Goto","drm-choice:item","diagnose:dropdown","diagnose:controls"]}
+]

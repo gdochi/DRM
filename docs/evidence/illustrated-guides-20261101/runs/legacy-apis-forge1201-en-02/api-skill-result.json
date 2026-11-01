@@ -1,0 +1,11 @@
+{
+  "kind": "skill",
+  "actor": "noppes.npcs.entity.EntityCustomNpc",
+  "providers": [
+    "irons_spellbooks"
+  ],
+  "available": true,
+  "accepted": true,
+  "code": "success",
+  "targetId": 20
+}

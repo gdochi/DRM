@@ -1,0 +1,86 @@
+[
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-travel-neo1211-en-23\\game\\config\\dochi_rpg_maker\\teleporters\\guide_travel.json"
+  },
+  {
+    "id": "teleporter-save",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Destination Settings",
+      "input:destination.name\u003dVillage gate",
+      "input:destination.x\u003d20.5",
+      "input:destination.y\u003d-60",
+      "input:destination.z\u003d0.5",
+      "Save As",
+      "input:save_as.name\u003dguide_travel",
+      "Save",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/teleporters/guide_travel.json",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "destination.search",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "destination.name",
+        "active": true
+      },
+      {
+        "label": "destination.x",
+        "active": true
+      },
+      {
+        "label": "destination.y",
+        "active": true
+      },
+      {
+        "label": "destination.z",
+        "active": true
+      },
+      {
+        "label": "destination.yaw",
+        "active": true
+      },
+      {
+        "label": "destination.pitch",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "teleporter-npc-player",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterRuntimeScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Teleporter JSON",
+      "wait:40",
+      "candidate:guide_travel",
+      "Apply Teleporter",
+      "wait:60",
+      "interact:teleporter",
+      "wait:80",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Search destinations",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

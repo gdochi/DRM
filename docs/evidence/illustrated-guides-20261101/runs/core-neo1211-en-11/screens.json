@@ -1,0 +1,25 @@
+[
+  {
+    "id": "quest-category",
+    "screenClass": "net.dochi.gameeditor.client.QuestEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "+ Category"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "quest-info",
+    "screenClass": "net.dochi.gameeditor.client.QuestEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "+ Category",
+      "+ Quest"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

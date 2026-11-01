@@ -1,0 +1,356 @@
+[
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\spawn-vehicle-neo1211-en-02\\game\\config\\dochi_rpg_maker\\spawn_control\\vehicles\\guide_tank.json"
+  },
+  {
+    "id": "spawn-vehicle-saved",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "close:screen",
+      "command:spawncontrolvehicle save guide_tank @e[type\u003dsuperbwarfare:m_1a_2,sort\u003dnearest,limit\u003d1,distance\u003d..32]",
+      "wait:80",
+      "verify:file\u003dconfig/dochi_rpg_maker/spawn_control/vehicles/guide_tank.json",
+      "look-at:vehicle"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-vehicle-picker",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Choose",
+      "wait:80",
+      "spawn-input:search\u003dguide_tank",
+      "wait:40"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Get Spawner",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Spawn Target",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "Spawn Settings",
+        "active": true
+      },
+      {
+        "label": "Destruction",
+        "active": true
+      },
+      {
+        "label": "Effects",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Name",
+        "active": true
+      },
+      {
+        "label": "On",
+        "active": true
+      },
+      {
+        "label": "Entities per activation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Remove",
+        "active": false
+      },
+      {
+        "label": "Entity",
+        "active": true
+      },
+      {
+        "label": "CNPC clone tab",
+        "active": false
+      },
+      {
+        "label": "Entity / Clone",
+        "active": true
+      },
+      {
+        "label": "Choose",
+        "active": true
+      },
+      {
+        "label": "Chance",
+        "active": true
+      },
+      {
+        "label": "Choose",
+        "active": true
+      },
+      {
+        "label": "Search ID or @mod",
+        "active": true
+      },
+      {
+        "label": "Select",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      },
+      {
+        "label": "Previous",
+        "active": true
+      },
+      {
+        "label": "Next",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\spawn-vehicle-neo1211-en-02\\game\\config\\dochi_rpg_maker\\spawn_control\\spawners\\guide_tank_spawner.json"
+  },
+  {
+    "id": "spawn-vehicle-spawner-saved",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Choose",
+      "wait:80",
+      "spawn-input:search\u003dguide_tank",
+      "spawn-catalog:guide_tank",
+      "Select",
+      "Spawn Settings",
+      "spawn-input:maxAlive\u003d1",
+      "spawn-input:radius\u003d12",
+      "Ground",
+      "spawn-choice:air",
+      "Save As",
+      "spawn-input:saveName\u003dguide_tank_spawner.json",
+      "Confirm",
+      "wait:80",
+      "verify:file\u003dconfig/dochi_rpg_maker/spawn_control/spawners/guide_tank_spawner.json",
+      "Spawn Target",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Get Spawner",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Spawn Target",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "Spawn Settings",
+        "active": true
+      },
+      {
+        "label": "Destruction",
+        "active": true
+      },
+      {
+        "label": "Effects",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Name",
+        "active": true
+      },
+      {
+        "label": "On",
+        "active": true
+      },
+      {
+        "label": "Entities per activation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Remove",
+        "active": false
+      },
+      {
+        "label": "Entity",
+        "active": true
+      },
+      {
+        "label": "CNPC clone tab",
+        "active": false
+      },
+      {
+        "label": "Entity / Clone",
+        "active": true
+      },
+      {
+        "label": "Choose",
+        "active": true
+      },
+      {
+        "label": "Chance",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "vehicle-template",
+    "status": "verified_spawned_vehicle_new_uuid",
+    "detail": "{\"file\":\"guide_tank_spawner.json\",\"total\":1,\"status\":\"ready\",\"detail\":\"\",\"clones\":[{\"id\":34,\"uuid\":\"12d16914-c28f-420e-b900-2396fcece997\",\"originalUuid\":\"012231fd-b715-4589-91d5-e7236c7ec317\",\"passengers\":0}]}"
+  },
+  {
+    "id": "spawn-vehicle-runtime",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Get Spawner",
+      "wait:60",
+      "close:screen",
+      "place:spawner",
+      "wait:60",
+      "fixture:core",
+      "wait:40",
+      "interact:spawner",
+      "wait:80",
+      "spawn-apply-file:guide_tank_spawner.json",
+      "next-screen:@closed",
+      "Apply JSON",
+      "wait:40",
+      "fixture:survival",
+      "wait:160",
+      "verify:spawn-vehicle",
+      "wait:30",
+      "look-at:clone",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

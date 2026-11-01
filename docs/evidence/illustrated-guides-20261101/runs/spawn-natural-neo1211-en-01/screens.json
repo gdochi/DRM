@@ -1,0 +1,200 @@
+[
+  {
+    "id": "spawn-preset-scope",
+    "screenClass": "net.dochi.spawncontrol.client.SaveAsScopeScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "native-input:search\u003dminecraft:cow",
+      "natural-catalog:entity:minecraft:cow",
+      "Add Rule",
+      "next-screen:SaveAsScopeScreen",
+      "Save As"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Complete Set",
+        "active": true
+      },
+      {
+        "label": "Current Target Preset",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\spawn-natural-neo1211-en-01\\game\\config\\dochi_rpg_maker\\spawn_control\\targets\\meadow_cows.json"
+  },
+  {
+    "id": "spawn-target-preset-saved",
+    "screenClass": "net.dochi.spawncontrol.client.PresetSaveAsScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "native-input:search\u003dminecraft:cow",
+      "natural-catalog:entity:minecraft:cow",
+      "Add Rule",
+      "natural-enable",
+      "next-screen:SaveAsScopeScreen",
+      "Save As",
+      "next-screen:PresetSaveAsScreen",
+      "Current Target Preset",
+      "native-input:nameField\u003dMeadow Cows",
+      "native-input:idField\u003dmeadow_cows",
+      "Save As",
+      "wait:80",
+      "verify:file\u003dconfig/dochi_rpg_maker/spawn_control/targets/meadow_cows.json",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Display Name",
+        "active": true
+      },
+      {
+        "label": "Stable ID",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-diagnostics-check",
+    "screenClass": "net.dochi.spawncontrol.client.DiagnosticsScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "native-input:search\u003dminecraft:cow",
+      "natural-catalog:entity:minecraft:cow",
+      "Add Rule",
+      "natural-enable",
+      "next-screen:DiagnosticsScreen",
+      "Diagnostics",
+      "Check Here",
+      "wait:80",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Check Here",
+        "active": true
+      },
+      {
+        "label": "Spawn One",
+        "active": true
+      },
+      {
+        "label": "Clear Generated",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-diagnostics-spawn",
+    "screenClass": "net.dochi.spawncontrol.client.DiagnosticsScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "native-input:search\u003dminecraft:cow",
+      "natural-catalog:entity:minecraft:cow",
+      "Add Rule",
+      "natural-enable",
+      "next-screen:DiagnosticsScreen",
+      "Diagnostics",
+      "Spawn One",
+      "Confirm Spawn",
+      "wait:100",
+      "diagnose:controls",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Check Here",
+        "active": true
+      },
+      {
+        "label": "Spawn One",
+        "active": true
+      },
+      {
+        "label": "Clear Generated",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-preset-load",
+    "screenClass": "net.dochi.spawncontrol.client.PresetLoadScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "next-screen:PresetLoadScreen",
+      "Load",
+      "wait:80",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "\u003e Complete Sets",
+        "active": true
+      },
+      {
+        "label": "Target Presets",
+        "active": true
+      },
+      {
+        "label": "Search preset name, ID, target, or required mod",
+        "active": true
+      },
+      {
+        "label": "Confirm Load",
+        "active": false
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

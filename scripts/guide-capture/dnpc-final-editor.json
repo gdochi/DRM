@@ -1,0 +1,4 @@
+[
+  {"id":"dnpc-movement","editor":"npc_basic","target":true,"actions":["Movement AI","wait:30"]},
+  {"id":"dnpc-weapons","editor":"npc_basic","target":true,"actions":["next-screen:NpcInventoryScreen","Weapon & ammunition","wait:30"]}
+]

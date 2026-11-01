@@ -1,0 +1,142 @@
+[
+  {
+    "id": "cobble-trainer-id",
+    "editor": "cobble_npc:editor",
+    "target": true,
+    "actions": [
+      "Battle Config",
+      "General",
+      "next-screen:TrainerRegistryScreen",
+      "Set ID",
+      "field:directId=gym_guide",
+      "snapshot:cobble-trainer-id-entry",
+      "next-screen:CobbleTrainerEditorScreen",
+      "Use ID",
+      "Save As",
+      "field:jsonName=custom/guide_trainer.json",
+      "Save",
+      "wait:60",
+      "verify:file=config/dochi_rpg_maker/cobblemon/trainers/custom/guide_trainer.json",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "cobble-trainer-applied",
+    "screen": "NpcApplyTargetScreen",
+    "actions": [
+      "vs Trainer",
+      "wait:60",
+      "candidate:custom/guide_trainer",
+      "Apply vs Trainer",
+      "wait:60",
+      "verify:trainer-binding",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "cobble-clone-library",
+    "editor": "cobble_npc:clone_library",
+    "target": true,
+    "actions": [
+      "wait:80",
+      "Save As",
+      "Follow applied JSON source",
+      "field:nameField=guide_trainer_clone",
+      "Confirm",
+      "wait:80",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "cobble-battle-rules",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "Battle Config",
+      "Rounds",
+      "next-screen:CobbleBattleConfigEditorScreen",
+      "Edit",
+      "wait:30"
+    ]
+  },
+  {
+    "id": "cobble-battle-rules-items",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "Battle Config",
+      "Rounds",
+      "next-screen:CobbleBattleConfigEditorScreen",
+      "Edit",
+      "Items",
+      "wait:30"
+    ]
+  },
+  {
+    "id": "cobble-layer-content",
+    "editor": "cobble_npc:battle_presentation_maker",
+    "actions": [
+      "Add Label",
+      "Content"
+    ]
+  },
+  {
+    "id": "cobble-layer-animation",
+    "editor": "cobble_npc:battle_presentation_maker",
+    "actions": [
+      "Add Label",
+      "Animation"
+    ]
+  },
+  {
+    "id": "cobble-region-captured",
+    "editor": "cobble_npc:battle_presentation_maker",
+    "actions": [
+      "fixture:cobble-stage",
+      "wait:60",
+      "Region",
+      "input:regionCorner0=4",
+      "input:regionCorner1=-61",
+      "input:regionCorner2=4",
+      "input:regionCorner3=8",
+      "input:regionCorner4=-58",
+      "input:regionCorner5=8",
+      "Capture region",
+      "wait:40",
+      "clear:chat",
+      "Save As",
+      "field:saveNameField=custom/guide_stage.json",
+      "Save",
+      "wait:60",
+      "verify:file=config/dochi_rpg_maker/cobblemon/battle_presentations/custom/guide_stage.json"
+    ]
+  },
+  {
+    "id": "cobble-presentation-fx",
+    "editor": "cobble_npc:battle_presentation_maker",
+    "actions": [
+      "Particles",
+      "Add layer",
+      "Emit",
+      "Play",
+      "wait:20"
+    ]
+  },
+  {
+    "id": "cobble-mart-trades",
+    "editor": "cobble_npc:pokemart",
+    "actions": [
+      "Trade",
+      "Pokémon Trades",
+      "Add",
+      "wait:20"
+    ]
+  },
+  {
+    "id": "cobble-mart-auction",
+    "editor": "cobble_npc:pokemart",
+    "actions": [
+      "Auction",
+      "rail:Auction",
+      "wait:20"
+    ]
+  }
+]

@@ -1,0 +1,1452 @@
+[
+  {
+    "id": "dialogue-start-routes",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Routes"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "+ General",
+        "active": true
+      },
+      {
+        "label": "+ Start",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "FTB",
+        "active": true
+      },
+      {
+        "label": "GeckoLib",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Info",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Routes",
+        "active": true
+      },
+      {
+        "label": "Choices",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Blueprint",
+        "active": true
+      },
+      {
+        "label": "+ Route",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Mode: and",
+        "active": true
+      },
+      {
+        "label": "Action: Goto",
+        "active": true
+      },
+      {
+        "label": "Goto: dialogue_1",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-choices",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "node:dialogue_1",
+      "Choices"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "+ General",
+        "active": true
+      },
+      {
+        "label": "+ Start",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "FTB",
+        "active": true
+      },
+      {
+        "label": "GeckoLib",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Info",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Choices",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Blueprint",
+        "active": true
+      },
+      {
+        "label": "+ Choice",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Reveal after typing",
+        "active": true
+      },
+      {
+        "label": "choiceTextSize",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "choiceLabel",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Condition list",
+        "active": true
+      },
+      {
+        "label": "Choice actions",
+        "active": true
+      },
+      {
+        "label": "Choice FX",
+        "active": true
+      },
+      {
+        "label": "Condition: and",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "^",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-choice-actions",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "node:dialogue_1",
+      "Choices",
+      "Choice actions"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "+ General",
+        "active": true
+      },
+      {
+        "label": "+ Start",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "FTB",
+        "active": true
+      },
+      {
+        "label": "GeckoLib",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Info",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Choices",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Blueprint",
+        "active": true
+      },
+      {
+        "label": "+ Choice",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Reveal after typing",
+        "active": true
+      },
+      {
+        "label": "choiceTextSize",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "choiceLabel",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Condition list",
+        "active": true
+      },
+      {
+        "label": "Choice actions",
+        "active": true
+      },
+      {
+        "label": "Choice FX",
+        "active": true
+      },
+      {
+        "label": "+ Action",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "^",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Type: Goto",
+        "active": true
+      },
+      {
+        "label": "Node: dialogue_reply_1",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-blueprint",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Blueprint"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-save-file",
+    "status": "verified_save_as_file",
+    "file": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-forge1201-en-04\\game\\config\\dochi_rpg_maker\\dialogue_sets\\village_guide\\dialogue_set.json"
+  },
+  {
+    "id": "dialogue-save-result",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Save As",
+      "input:setName\u003dvillage_guide",
+      "Save As",
+      "verify:saved-dialogue"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "+ General",
+        "active": true
+      },
+      {
+        "label": "+ Start",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "FTB",
+        "active": true
+      },
+      {
+        "label": "GeckoLib",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Info",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Routes",
+        "active": true
+      },
+      {
+        "label": "Choices",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Blueprint",
+        "active": true
+      },
+      {
+        "label": "nodeName",
+        "active": true
+      },
+      {
+        "label": "Rename",
+        "active": true
+      },
+      {
+        "label": "Start",
+        "active": true
+      },
+      {
+        "label": "Speaker: NPC name",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-applied-to-dnpc",
+    "status": "verified_server_binding"
+  },
+  {
+    "id": "dialogue-npc-player",
+    "screenClass": "net.dochi.gameeditor.client.DialogueRuntimeScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "apply:dialogue",
+      "wait:40",
+      "verify:npc-dialogue",
+      "interact:npc",
+      "wait:140"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-applied-to-dnpc",
+    "status": "verified_server_binding"
+  },
+  {
+    "id": "npc-apply-result",
+    "screenClass": "net.dochi.gameeditor.client.NpcApplyTargetScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "candidate:village_guide",
+      "Apply Dialogue",
+      "wait:60",
+      "verify:npc-dialogue"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Categories",
+        "active": true
+      },
+      {
+        "label": "Dialogue JSON",
+        "active": true
+      },
+      {
+        "label": "NPC Shop JSON",
+        "active": true
+      },
+      {
+        "label": "Teleporter JSON",
+        "active": true
+      },
+      {
+        "label": "Stat Builder JSON",
+        "active": true
+      },
+      {
+        "label": "Hire NPCs JSON",
+        "active": true
+      },
+      {
+        "label": "NPC Basic",
+        "active": true
+      },
+      {
+        "label": "npcApplySearch",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      },
+      {
+        "label": "Refresh",
+        "active": true
+      },
+      {
+        "label": "Remove Dialogue",
+        "active": true
+      },
+      {
+        "label": "Apply Dialogue",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-npc-reply",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Expected screen did not open: DialogueRuntimeScreen"
+  },
+  {
+    "id": "dialogue-close",
+    "status": "verified_runtime_closed",
+    "detail": ""
+  },
+  {
+    "id": "dialogue-npc-close",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "apply:dialogue",
+      "wait:40",
+      "interact:npc",
+      "wait:140",
+      "runtime-choice:Goodbye.",
+      "wait:40",
+      "verify:closed"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-bread-product",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "shop-item:1",
+      "Product"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Buy items",
+        "active": true
+      },
+      {
+        "label": "Sell items",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Shop settings",
+        "active": true
+      },
+      {
+        "label": "Product",
+        "active": true
+      },
+      {
+        "label": "Payment",
+        "active": true
+      },
+      {
+        "label": "Restock",
+        "active": true
+      },
+      {
+        "label": "itemId",
+        "active": true
+      },
+      {
+        "label": "Item",
+        "active": true
+      },
+      {
+        "label": "name",
+        "active": true
+      },
+      {
+        "label": "count",
+        "active": true
+      },
+      {
+        "label": "stock",
+        "active": true
+      },
+      {
+        "label": "maxStock",
+        "active": true
+      },
+      {
+        "label": "Description",
+        "active": true
+      },
+      {
+        "label": "nbt",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-bread-payment",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "shop-item:1",
+      "Payment"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Buy items",
+        "active": true
+      },
+      {
+        "label": "Sell items",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Shop settings",
+        "active": true
+      },
+      {
+        "label": "Product",
+        "active": true
+      },
+      {
+        "label": "Payment",
+        "active": true
+      },
+      {
+        "label": "Restock",
+        "active": true
+      },
+      {
+        "label": "Inherit Shop",
+        "active": true
+      },
+      {
+        "label": "price",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-restock",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Restock"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Buy items",
+        "active": true
+      },
+      {
+        "label": "Sell items",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Shop settings",
+        "active": true
+      },
+      {
+        "label": "Product",
+        "active": true
+      },
+      {
+        "label": "Payment",
+        "active": true
+      },
+      {
+        "label": "Restock",
+        "active": true
+      },
+      {
+        "label": "Enable restock",
+        "active": true
+      },
+      {
+        "label": "Real ticks",
+        "active": true
+      },
+      {
+        "label": "restockTicks",
+        "active": true
+      },
+      {
+        "label": "restockAmount",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-player-preview",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopRuntimeScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Preview"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Buy",
+        "active": true
+      },
+      {
+        "label": "search",
+        "active": true
+      },
+      {
+        "label": "quantity",
+        "active": true
+      },
+      {
+        "label": "Buy Selected",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "gui-text",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "+ Text"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Background",
+        "active": true
+      },
+      {
+        "label": "Button Config",
+        "active": true
+      },
+      {
+        "label": "Viewport: Current",
+        "active": true
+      },
+      {
+        "label": "+ Image",
+        "active": true
+      },
+      {
+        "label": "+ Entity",
+        "active": true
+      },
+      {
+        "label": "+ Item",
+        "active": true
+      },
+      {
+        "label": "+ Text",
+        "active": true
+      },
+      {
+        "label": "+ Pager",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Layer -",
+        "active": true
+      },
+      {
+        "label": "Layer +",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Front",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "guiName",
+        "active": true
+      },
+      {
+        "label": "Default UI: ON · Sprite",
+        "active": true
+      },
+      {
+        "label": "gridX",
+        "active": true
+      },
+      {
+        "label": "gridY",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "id",
+        "active": true
+      },
+      {
+        "label": "layerOrder",
+        "active": true
+      },
+      {
+        "label": "x",
+        "active": true
+      },
+      {
+        "label": "y",
+        "active": true
+      },
+      {
+        "label": "w",
+        "active": true
+      },
+      {
+        "label": "h",
+        "active": true
+      },
+      {
+        "label": "Direct input",
+        "active": true
+      },
+      {
+        "label": "text",
+        "active": true
+      },
+      {
+        "label": "Translation Key",
+        "active": true
+      },
+      {
+        "label": "fillColor",
+        "active": true
+      },
+      {
+        "label": "fillOpacity",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "borderColor",
+        "active": true
+      },
+      {
+        "label": "outlineGlow",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "Asset: (none)",
+        "active": true
+      },
+      {
+        "label": "Clear",
+        "active": true
+      },
+      {
+        "label": "Crop: none",
+        "active": true
+      },
+      {
+        "label": "Fit: Stretch",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Solo",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "currency-physical",
+    "screenClass": "net.dochi.gameeditor.client.CurrencyEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Physical currency"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "HUD GUI",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "General settings",
+        "active": true
+      },
+      {
+        "label": "Physical currency",
+        "active": true
+      },
+      {
+        "label": "Enable physical currency",
+        "active": true
+      },
+      {
+        "label": "physicalItemName",
+        "active": true
+      },
+      {
+        "label": "physicalItemId",
+        "active": true
+      },
+      {
+        "label": "physicalItemValue",
+        "active": true
+      },
+      {
+        "label": "Item Icon",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "quest-info",
+    "screenClass": "net.dochi.gameeditor.client.QuestEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "+ Category",
+      "+ Quest"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "quest-objective-detail",
+    "screenClass": "net.dochi.gameeditor.client.QuestEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "+ Category",
+      "+ Quest",
+      "Objectives",
+      "+ Add"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "quest-rewards",
+    "screenClass": "net.dochi.gameeditor.client.QuestEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "+ Category",
+      "+ Quest",
+      "Rewards"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "remnant-view-conditions",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "View Conditions"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

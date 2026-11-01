@@ -1,0 +1,10 @@
+{
+  "run": "core-forge1201-en-13",
+  "minecraft": "1.20.1",
+  "loader": "Forge",
+  "drm": "0.3.1",
+  "steps": ["Item Prices (0)", "Add Item", "search minecraft:emerald", "select exact Emerald row", "Add Selected (1)", "Value / Item 10", "Apply Selected", "Close", "Save As town_coin"],
+  "savedFile": "config/dochi_rpg_maker/currency/definitions/town_coin.json",
+  "verifiedDefinition": {"id": "town_coin", "enabled": true, "autoConvertOnPickup": true, "conversionItems": [{"itemId": "minecraft:emerald", "nbt": "", "unitValue": 10}]},
+  "scope": "Native editor interaction and saved definition verified. Actual pickup conversion and balance change remain unverified."
+}

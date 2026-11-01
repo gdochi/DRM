@@ -1,0 +1,209 @@
+[
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-forge1201-en-16\\game\\config\\dochi_rpg_maker\\npc_shops\\village_shop.json"
+  },
+  {
+    "id": "shop-save",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Save As",
+      "input:shopSaveAsName\u003dvillage_shop",
+      "Save As",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/npc_shops/village_shop.json",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Buy items",
+        "active": true
+      },
+      {
+        "label": "Sell items",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Shop settings",
+        "active": true
+      },
+      {
+        "label": "Product",
+        "active": true
+      },
+      {
+        "label": "Payment",
+        "active": true
+      },
+      {
+        "label": "Restock",
+        "active": true
+      },
+      {
+        "label": "itemId",
+        "active": true
+      },
+      {
+        "label": "Item",
+        "active": true
+      },
+      {
+        "label": "name",
+        "active": true
+      },
+      {
+        "label": "count",
+        "active": true
+      },
+      {
+        "label": "stock",
+        "active": true
+      },
+      {
+        "label": "maxStock",
+        "active": true
+      },
+      {
+        "label": "Description",
+        "active": true
+      },
+      {
+        "label": "nbt",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-apply-control",
+    "status": "native_button_used",
+    "detail": "Apply Shop"
+  },
+  {
+    "id": "shop-bread-selected",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopRuntimeScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "NPC Shop JSON",
+      "wait:40",
+      "candidate:village_shop",
+      "apply:shop-file",
+      "wait:60",
+      "fixture:shop-funds",
+      "interact:shop",
+      "wait:60",
+      "shop-check:1",
+      "wait:40",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Buy",
+        "active": true
+      },
+      {
+        "label": "search",
+        "active": true
+      },
+      {
+        "label": "quantity",
+        "active": true
+      },
+      {
+        "label": "Buy Selected",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-apply-control",
+    "status": "native_button_used",
+    "detail": "Apply Shop"
+  },
+  {
+    "id": "shop-bread-purchased",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopRuntimeScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Buy",
+      "search",
+      "",
+      "quantity",
+      "",
+      "",
+      "",
+      "Buy Selected"
+    ],
+    "attemptedActions": [
+      "NPC Shop JSON",
+      "wait:40",
+      "candidate:village_shop",
+      "apply:shop-file",
+      "wait:60",
+      "fixture:shop-funds",
+      "interact:shop",
+      "wait:60",
+      "shop-check:1"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Native checkbox did not select requested product"
+  }
+]

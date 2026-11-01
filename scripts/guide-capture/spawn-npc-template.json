@@ -1,0 +1,87 @@
+[
+  {
+    "id": "dnpc-template-saved",
+    "editor": "npc_basic",
+    "target": true,
+    "actions": [
+      "fixture:template-helmet",
+      "Save to NPC",
+      "wait:40",
+      "Save As",
+      "type:guide_guard",
+      "Save",
+      "wait:60",
+      "verify:file=config/dochi_npc_core/templates/guide_guard.json",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "spawn-npc-template-picker",
+    "editor": "spawn_control_spawner",
+    "actions": [
+      "Entity",
+      "spawn-choice:npc_template",
+      "Choose",
+      "wait:80",
+      "spawn-input:search=guide_guard",
+      "wait:80"
+    ]
+  },
+  {
+    "id": "spawn-npc-template-saved",
+    "editor": "spawn_control_spawner",
+    "actions": [
+      "Entity",
+      "spawn-choice:npc_template",
+      "Choose",
+      "wait:80",
+      "spawn-input:search=guide_guard",
+      "wait:80",
+      "spawn-catalog:guide_guard",
+      "Select",
+      "Save As",
+      "spawn-input:saveName=guide_guard_spawner.json",
+      "Confirm",
+      "wait:80",
+      "verify:file=config/dochi_rpg_maker/spawn_control/spawners/guide_guard_spawner.json",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "spawn-block-apply",
+    "editor": "spawn_control_spawner",
+    "actions": [
+      "Get Spawner",
+      "wait:60",
+      "close:screen",
+      "place:spawner",
+      "wait:60",
+      "fixture:core",
+      "wait:40",
+      "interact:spawner",
+      "wait:80",
+      "spawn-apply-file:guide_guard_spawner.json"
+    ]
+  },
+  {
+    "id": "spawn-template-runtime",
+    "editor": "spawn_control_spawner",
+    "actions": [
+      "close:screen",
+      "interact:spawner",
+      "wait:60",
+      "spawn-apply-file:guide_guard_spawner.json",
+      "next-screen:@closed",
+      "Apply JSON",
+      "wait:60",
+      "verify:spawner-applied",
+      "fixture:survival",
+      "wait:120",
+      "verify:spawn-clone",
+      "fixture:frame-clone",
+      "wait:30",
+      "look-at:clone",
+      "clear:chat"
+    ]
+  }
+]

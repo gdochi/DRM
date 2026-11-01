@@ -1,0 +1,459 @@
+[
+  {
+    "id": "dialogue-reward-once-actions",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "node:dialogue_1",
+      "Choices",
+      "input:choiceLabel\u003dReceive three apples",
+      "Choice actions",
+      "Type: Goto",
+      "drm-choice:item",
+      "input:action.itemId\u003dminecraft:apple",
+      "scroll-page:-4",
+      "input:action.count\u003d3",
+      "+ Action",
+      "Type: Goto",
+      "drm-choice:tag",
+      "input:action.key\u003dwelcome_received",
+      "Info",
+      "Choices",
+      "Choice actions",
+      "scroll-page:-8"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "+ General",
+        "active": true
+      },
+      {
+        "label": "+ Start",
+        "active": true
+      },
+      {
+        "label": "Copy",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "FTB",
+        "active": true
+      },
+      {
+        "label": "GeckoLib",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Info",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Choices",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Blueprint",
+        "active": true
+      },
+      {
+        "label": "+ Choice",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Reveal after typing",
+        "active": true
+      },
+      {
+        "label": "choiceTextSize",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "choiceLabel",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Condition list",
+        "active": true
+      },
+      {
+        "label": "Choice actions",
+        "active": true
+      },
+      {
+        "label": "Choice FX",
+        "active": true
+      },
+      {
+        "label": "+ Action",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "^",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Type: Tag",
+        "active": true
+      },
+      {
+        "label": "Op: add",
+        "active": true
+      },
+      {
+        "label": "action.key",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\dialogue-rewards-once-neo1211-en-03\\game\\config\\dochi_rpg_maker\\dialogue_sets\\welcome_reward_once\\dialogue_set.json"
+  },
+  {
+    "id": "dialogue-reward-once-condition",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "node:dialogue_1",
+      "Choices",
+      "input:choiceLabel\u003dReceive three apples",
+      "Choice actions",
+      "Type: Goto",
+      "drm-choice:item",
+      "input:action.itemId\u003dminecraft:apple",
+      "scroll-page:-4",
+      "input:action.count\u003d3",
+      "+ Action",
+      "Type: Goto",
+      "drm-choice:tag",
+      "input:action.key\u003dwelcome_received",
+      "Condition list",
+      "Add",
+      "input:choiceCond.key\u003dwelcome_received",
+      "Op: has",
+      "drm-choice:not",
+      "Save As",
+      "input:setName\u003dwelcome_reward_once",
+      "Save As",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/dialogue_sets/welcome_reward_once/dialogue_set.json",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "+ General",
+        "active": true
+      },
+      {
+        "label": "+ Start",
+        "active": true
+      },
+      {
+        "label": "Copy",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "FTB",
+        "active": true
+      },
+      {
+        "label": "GeckoLib",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Info",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Choices",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Blueprint",
+        "active": true
+      },
+      {
+        "label": "+ Choice",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Reveal after typing",
+        "active": true
+      },
+      {
+        "label": "choiceTextSize",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "choiceLabel",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Condition list",
+        "active": true
+      },
+      {
+        "label": "Choice actions",
+        "active": true
+      },
+      {
+        "label": "Choice FX",
+        "active": true
+      },
+      {
+        "label": "Condition: and",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "^",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Type: tag",
+        "active": true
+      },
+      {
+        "label": "Op: not",
+        "active": true
+      },
+      {
+        "label": "choiceCond.key",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-reward",
+    "status": "verified_server_inventory_count",
+    "detail": "minecraft:apple\u003d3"
+  },
+  {
+    "id": "dialogue-reward-tag",
+    "status": "verified_server_player_tag",
+    "detail": "welcome_received"
+  },
+  {
+    "id": "dialogue-reward-once",
+    "status": "verified_runtime_choice_hidden",
+    "detail": "[Goodbye.]"
+  },
+  {
+    "id": "dialogue-reward-once-hidden",
+    "screenClass": "net.dochi.gameeditor.client.DialogueRuntimeScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "candidate:welcome_reward_once",
+      "Apply Dialogue",
+      "wait:60",
+      "fixture:empty-inventory",
+      "wait:40",
+      "fixture:approach-npc",
+      "wait:40",
+      "look-at:npc",
+      "interact:npc",
+      "wait:140",
+      "next-screen:@closed",
+      "runtime-choice:Receive three apples",
+      "wait:60",
+      "verify:apple-reward",
+      "verify:reward-tag",
+      "interact:npc",
+      "wait:140",
+      "verify:reward-hidden",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-reward",
+    "status": "verified_server_inventory_count",
+    "detail": "minecraft:apple\u003d3"
+  },
+  {
+    "id": "dialogue-reward-inventory",
+    "screenClass": "net.minecraft.client.gui.screens.inventory.InventoryScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "fixture:survival",
+      "wait:40",
+      "fixture:inventory-screen",
+      "wait:30",
+      "verify:apple-reward",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

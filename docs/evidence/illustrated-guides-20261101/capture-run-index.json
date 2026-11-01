@@ -1,0 +1,1767 @@
+[
+  {
+    "run": "actors-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "failure.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "ffc33e7913606c5caa343793b770bc28366b79ae7ec1e6d2fd654d1ee59b0945",
+    "ownedRuntime": true
+  },
+  {
+    "run": "actors-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "d46da4554be3053bed1ee0548b673e3a2f6931eaf328c9a974a56a27450a90b2",
+    "ownedRuntime": true
+  },
+  {
+    "run": "addons-neo1211-en-01",
+    "receiptFiles": [
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "c35d6a3f556f14f27e7c49a7abdc45a4566260fd1ddd553f9e6e1455584ddabf",
+    "ownedRuntime": true
+  },
+  {
+    "run": "addons-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "03f3f8a5b06686092f5fec2bd794a81cf9d9f1e9df29b69bd33380ede5560b92",
+    "ownedRuntime": true
+  },
+  {
+    "run": "armor-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "armor-damage-check.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "cc80f3c74dc5264afc5039301c7f8db7212e86325478e3092ab2da790b7bde24",
+    "ownedRuntime": true
+  },
+  {
+    "run": "battleworks-authoring-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "6c73b026151f327a644519658947d300f0306eb96109d4befe218ce68e875a2e",
+    "ownedRuntime": true
+  },
+  {
+    "run": "battleworks-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "c07aa31252f87bd0595c0ed8e727f5b043d3a81f9d17cb37b4e701c6473bca3d",
+    "ownedRuntime": true
+  },
+  {
+    "run": "battleworks-neo1211-en-04",
+    "receiptFiles": [],
+    "fullClientLogSha256": null,
+    "ownedRuntime": true
+  },
+  {
+    "run": "battleworks-neo1211-en-05",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "4b92818c4a0ca91f898115d2a6cf2114e29b28842223967e01150833aa65e356",
+    "ownedRuntime": true
+  },
+  {
+    "run": "battleworks-neo1211-en-06",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "eab50f59e35c7b78dc9bde7a6639ab62d158bb53c5058afb57ebe305272c9554",
+    "ownedRuntime": true
+  },
+  {
+    "run": "battleworks-neo1211-en-07",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "240a27e94f57b07b5037f479b912b824168481b6eba3ff5af7d039533310336d",
+    "ownedRuntime": true
+  },
+  {
+    "run": "battleworks-neo1211-en-08",
+    "receiptFiles": [
+      "actor-editors.json",
+      "battleworks-combat-result.json",
+      "battleworks-generated.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "6840bcb425992afdeb9e2df98229bea4fb54d2e0f52c9e0dfd6169c465b6247b",
+    "ownedRuntime": true
+  },
+  {
+    "run": "battleworks-neo1211-en-09",
+    "receiptFiles": [
+      "actor-editors.json",
+      "battleworks-combat-result.json",
+      "battleworks-generated.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "4e41a4770c04c3b5bf4bded39dae067511bdfdbead8641cb79e254561332559b",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-auction-player-neo1211-en-04",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "mart-auction-claimed.json",
+      "mart-auction-inbox.json",
+      "mart-auction-listed.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "b4ed21f9eb8a4098ab89f572dfabf7ea561e46abb82035e1731eae9ce0ca588d",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-clone-flow-neo1211-en-04",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "e370c5297715138d5cb3c573339a757874a375c8a13de28fb8cae3b6a1af157e",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-final-guides-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "failure.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "672a26e6c7a29f2844766247c3d4f29277648f838c433bcbd2de5a92462716c6",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-final-guides-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "429c779dba4553429f8b40986f09ab05600c9c7ae9b76b2108e294479b5123a3",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-final-guides-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "c873689111ae27e4cda2d0f2ce4ddfd4c2e81e9d9674cf2529215e4d73643c07",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-mart-player-neo1211-en-01",
+    "receiptFiles": [],
+    "fullClientLogSha256": null,
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-mart-player-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "mart-bound.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "305cdb023ec82e7ffb9f048219b01b900ce51f184f3bb1fb166766d61f3c66e5",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-mart-player-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "mart-bound.json",
+      "mart-buy.json",
+      "mart-claimed.json",
+      "mart-trade.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "c8ab1bc2cd2491ed8d90526a271d55f94270b297146af8a09c2542e5f140ead7",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-neo1211-en-01",
+    "receiptFiles": [
+      "environment.json"
+    ],
+    "fullClientLogSha256": "bb0e4660d48f0813b0aad8f9a13cc08c96dd7a9ce23865cadc7836c573ccc927",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "fd5b8d4494be252cbe692c4270f85134082038c871f3b648f38f9f70d9a6c17f",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "eb764fa3acdc0df306bf3040faa74cd65993ad385bf0f7bf7d1bc14170034f02",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-neo1211-en-04",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "a95832d73036be18f8f4ba68b5e1a31510537fb53e60f9e0857e403627b9eabf",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-starter-neo1211-en-05",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "9d1ebc2c50e986f1dfc6a92ddf404ca337295a8f6b7e8dc704baf6b7a3bef9d4",
+    "ownedRuntime": true
+  },
+  {
+    "run": "cobble-starter-neo1211-en-06",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json",
+      "starter-granted-party.json"
+    ],
+    "fullClientLogSha256": "9a43989f8441a275cfff722ec1b71aaee6fb0848bfe83f9bc58c8a8dbaac80ac",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-assets-remnant-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "378267324d7b3048c5b7cf67093441fe8b905bf5a8b3013b7b6d4bc4397ec4ee",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-assets-remnant-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "09ab9de9e036441d7415f626527775874623236a8b6c8003ba1f922180aaf5c0",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-currency-forge1201-en-15",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "195308fd7ded8a1cb6dd406d90e4af7b876059ba57d970182f6c0fed924fe50e",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-currency-neo1211-en-29",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "b1ab885138497b6bc31172fca38fc86caffc44173a7e7d42877785c4b0a00d2b",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-currency-neo1211-en-30",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "53448d07187ab7c7be85512eecadaf67f5f69ccc5ed735e3c321bb144f2f5871",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-currency-neo1211-en-31",
+    "receiptFiles": [
+      "actor-editors.json",
+      "currency-save-click-controls.json",
+      "currency-save-modal-controls.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "758bf38fa2abfd3a00f64d547f20c774fdfa7e04865f77d49463024070b90a51",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-currency-neo1211-en-32",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "57e6d0eb41f705bd527eb71684eb86105abe454e3979ce25b1572c2e9e440613",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-currency-neo1211-en-33",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "e1c4b9e2102ab206dc52f853046e29f7e5bda810e30111c14c267072b391a0d3",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-details-neo1211-en-25",
+    "receiptFiles": [
+      "active-hud-set.json",
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "hud-runtime-diagnostic.json",
+      "saved-hud-component.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "6e30c2e43d0108eeac730cb39ba81ddd0f53a201424ca169f0c0e153fd716c55",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-01",
+    "receiptFiles": [],
+    "fullClientLogSha256": null,
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-02",
+    "receiptFiles": [
+      "environment.json",
+      "failure.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "c042ebd6f6155556f5e858ef6bbeb8f9889c27bab4d50507a7a1239cec1c563d",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "2773253ac370ea342a4f9e45e65cf7bc3ed3e8537c4300d044a6a87779efb24b",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-04",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "6ab944b91a55c4255f9a5be3a9fca80367dce35f10ae7ce19b5747cac4004e7f",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-05",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "584aa632f345313f425f5d4f9e6100b071c1b48d2a3f8482c39efc863dda21b9",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-06",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "fa43adbfe6b6a598f821407cea1163b3461056f089a8bad74cb53f53dbd2bf3f",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-07",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "d45fb53be4219558cebf3b83c90b541be45b82fe40926df2d2cf652553d51630",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-08",
+    "receiptFiles": [
+      "active-hud-set.json",
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "saved-hud-component.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "b739edd4043c3f9d12f08694612cd500a28bd8696a4ba4f322812015d68e98a4",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-09",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "saved-hud-component.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "5ca168e3725cda9ce4e137d7c57aae1f39e712d6587ae7e83782a85b4ab48054",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-10",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "saved-hud-component.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "eaff7a4b2d8cfac7d68672f31206622ae64acf7f1fc2fd623881388a35db9892",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-11",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "2a5427aa8f616589824060e7308ec291cf615ee93f9024da04ac79baa93d517c",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-12",
+    "receiptFiles": [],
+    "fullClientLogSha256": null,
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-13",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "aefb833437909ee0b8eae812c9db275543966b2e33ca46756077eb56e9723d77",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-14",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "e6a24df0b10f17ac1789d69dd3b05c4614d0e156ba5cb96ae6708abeb3f92ab2",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-16",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "b3b0a0f8317f52f53f0daa692da5df79d98112bfc20010c731f7b3be754f6ad1",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-forge1201-en-17",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json",
+      "shop-purchase.json"
+    ],
+    "fullClientLogSha256": "ef651b7e2f70a4942b6d6411d2d0b563133762eb8ef97876e30b7efbd0938f78",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-hud-loaded-neo1211-en-20",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "hud-runtime-diagnostic.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "986240a00ed69de9d710ae3d7aa30364f623f95203e8999277e78513efb2ce65",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-hud-neo1211-en-16",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "saved-hud-component.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "f61386015307cd33745b3361286bd38cddcf82ded3bf2a9e033054e60a490af9",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-hud-neo1211-en-17",
+    "receiptFiles": [
+      "active-hud-set.json",
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "saved-hud-component.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "e83fcfe2dbbc1cffcf64f336a3b2ccd00c85affb5136c145ea00133d3ff8f9d0",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-hud-neo1211-en-18",
+    "receiptFiles": [
+      "active-hud-set.json",
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "saved-hud-component.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "01c00180ff5a6b8eae591f88bbc50c61290a39d873a6a8e212fe64dc1bde6c66",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-hud-neo1211-en-19",
+    "receiptFiles": [
+      "active-hud-set.json",
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "hud-runtime-diagnostic.json",
+      "saved-hud-component.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "1175e383b8ac9999e58f84012984cc5002bad9ee616fbeaca3eaf411d68ebd19",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-01",
+    "receiptFiles": [
+      "environment.json",
+      "failure.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "bca3d8bb83b87b2de3f006eacf9253fc2bcafc176f80746d1bd6971281d50f5c",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-02",
+    "receiptFiles": [
+      "environment.json"
+    ],
+    "fullClientLogSha256": "115174ce59573deaa1d59204fa92977770c3e0fc9dd2a643af2c602206d043d8",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-03",
+    "receiptFiles": [
+      "environment.json"
+    ],
+    "fullClientLogSha256": "63fc11159c7f65798f1b2e945a758d2c67798867cf7f34ec80368e992492b560",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-04",
+    "receiptFiles": [
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "c2622d168f4a2e4291a6f54ab5d826276e864dc24ef72826d24fbb464dd34f7a",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-05",
+    "receiptFiles": [
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "3879b94d889a12e72ce621b2f3e018576ad04c021bfb12bd32d58927efff0158",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-06",
+    "receiptFiles": [
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "3f889247d2a86ef142c6c4facfc971425ce66be44142c986fccb4c219edb48a5",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-07",
+    "receiptFiles": [
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "866f4a40fe90e43993b7c4b6badd97e7e4e918342b57f0b137aca2b703a798d5",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-08",
+    "receiptFiles": [
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "d93005d9f06c095c33157af59f98552d8b4d2320beb36820eee18915bfe897fb",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-09",
+    "receiptFiles": [
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "23d32efd099a88b0f7c8a963fbe73622ecbebe4251495032e3f1648283095cb5",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-10",
+    "receiptFiles": [
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "c70cc30fbc9949a2eda34c8d316534102476a9b011404638df62dac3be4bd054",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-11",
+    "receiptFiles": [
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "e4edac66039ffe677485e958d1cc8e0f5cbd09ba0410f3fe5ab0a6f3b7e9b6ac",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-12",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "9f5825bc1161205cb4272c65294c4b60175a7aad9988917224f2cce332869e09",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-13",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "failure.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "46eec368f39e1849421705ed6c5224ea0c02fb744dfa3dca29b76b3c0b2e477a",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-14",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "fa01622936e875d383a29537793d8f3aae197481c68e6b196dd03ca772785713",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-15",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "e8083888086512254fe2b72faf4625810c6d33ff8958701cb67c44c0348076bd",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-26",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "9cd5312832df5a8ad4a4cf81268737fff8a5926ebe03954f1dbd80b7438af285",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-27",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "d53e658841ef4946dd37df51f3694bca50bfcd63a5575ec8304072f4fc110833",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-neo1211-en-28",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json",
+      "shop-purchase.json"
+    ],
+    "fullClientLogSha256": "a41dd3d9777b5db123fb6a1190e739a7eef08436d7eefa2c2603dd914c101ac0",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-operations-forge1201-en-01",
+    "receiptFiles": [],
+    "fullClientLogSha256": null,
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-operations-forge1201-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "e69906ce0430178da95f4dc8a85e0084deea8424bbadd71a4e7e71f44f4b8efb",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-operations-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "failure.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "94a145dc6289f23192171a435af777e7054fff7982193de8d0fad58649155320",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-operations-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "failure.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "4fdc1d905a555c1cec939245a2b55b354a63f71096b038bed66a219ce19685d8",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-operations-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "fb687eb6766fa78e15a9fc1a5a00060e9432ba57a3d6a4ad4c55175cbe312cb9",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-operations-neo1211-en-04",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "842e4e1c94ce7f41f094c1d689ec63f9cd6eb7555a3d5ab52d9b326214d4df12",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-remnant-boss-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "battleworks-boss-phase-1.json",
+      "battleworks-boss-phase-2.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "remnant-saved-marker.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "1ee3adc474205cda2718ad2cb1f2322c9b79bc146a892c0af84772e02fe64bbb",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-travel-neo1211-en-21",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "1bfa48d91b8fdc8d1282aab2e9a50316f7b398c216ee1606006794d3b1ae9c61",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-travel-neo1211-en-22",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "e986d7370774e53d5530a8848b483f4ea45ff23f6ba5a3f8232105e67728647a",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-travel-neo1211-en-23",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "8b0ac342055358bd1de5c1bb347441bce6d89f53af8fc0c4821a91ade55de0e4",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core-travel-neo1211-en-24",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json",
+      "teleporter-arrival.json",
+      "teleporter-selected.json"
+    ],
+    "fullClientLogSha256": "63ddcd2a7007d198620cc61809d5c29390cac16874e0816f7bb9902b8d42b2a8",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core263-details-neoforge-en-01",
+    "receiptFiles": [
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "c261e95f40fe7212b061e46b640e747b941a9737975f3e5f0a747eebca549d33",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core263-first-neoforge-en-01",
+    "receiptFiles": [
+      "environment.json"
+    ],
+    "fullClientLogSha256": "7b4486353e9f268ceca983c0292934c19a0d8666ca9dafda5a9708a306988ea4",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core263-first-neoforge-en-02",
+    "receiptFiles": [
+      "environment.json"
+    ],
+    "fullClientLogSha256": "b53aba99a1cbe4f803862ec8a5544c4898f4c6a43d8e583b5ecf1b9d124a56d4",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core263-first-neoforge-en-03",
+    "receiptFiles": [
+      "environment.json"
+    ],
+    "fullClientLogSha256": "0bca8f250cb2b9ab3daf0715659a3b21dc093010cdfcd5e0672d4f1fc7294916",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core263-first-neoforge-en-04",
+    "receiptFiles": [
+      "environment.json"
+    ],
+    "fullClientLogSha256": "6c63a05f3c42964cda5681903606a33769f76f2a1ab14436183a7d4f3f311fc3",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core263-first-neoforge-en-05",
+    "receiptFiles": [
+      "environment.json",
+      "failure.txt"
+    ],
+    "fullClientLogSha256": "ad36b979f0fef16174077cdd73a7519a14df7b067573f1ba05301033a45ff692",
+    "ownedRuntime": true
+  },
+  {
+    "run": "core263-first-neoforge-en-06",
+    "receiptFiles": [
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "f35d66f42026b435781ca85a06695dbdbbbe853637ef384d551b051584a29e68",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-dropdown-forge1201-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "forge-action-after-controls.json",
+      "forge-action-after-dropdown.json",
+      "forge-action-before-controls.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "b284763864a9c78b7dc19cca1c6acc8969991ad7b719f7e2bb803a30fe8b3a8a",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-dropdown-forge1201-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "forge-action-before-controls.json",
+      "forge-action-dropdown-dropdown.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "d716bb2539025ad2975d18d23598be1673d5af7f199669dfd5bd59922d11d0a7",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-rewards-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "dialogue-choice-condition-tag-controls.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "1a8a13e93cb2bc562ae45d54017c8c6fa45c5f2e7b89f75f070724797b004526",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-rewards-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "dialogue-choice-condition-tag-controls.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "bf756444a0b2833931d38700200b8828fff9569609614d799c2153d8db0f8bdf",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-rewards-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "dialogue-choice-condition-tag-controls.json",
+      "dialogue-item-reward-result-interaction.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "15dc094a13280b2104d8a6286389fcac48b7cdfd8dc902f4f037a3763c1d1682",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-rewards-neo1211-en-04",
+    "receiptFiles": [
+      "actor-editors.json",
+      "dialogue-item-reward-result-interaction.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "989c70dfc38039a7be36777777ed2f12749ffcf7364a34dc4358a37a7769cb1f",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-rewards-neo1211-en-05",
+    "receiptFiles": [
+      "actor-editors.json",
+      "dialogue-item-reward-result-interaction.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "131c41470872253409ec4f2ffee4b32574f05376c8d2f5afaa8dee1c07af496a",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-rewards-once-forge1201-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "66352c912bc6f8502ba0847b3c416f6fcd121ed6db3ec6b05b2f4b240f7a1972",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-rewards-once-forge1201-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "81b7149e0f60506059d049a622f73ea267fbb306857fe5fac755c14f362ad88e",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-rewards-once-forge1201-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "dialogue-reward-once-actions-choice-item.json",
+      "dialogue-reward-once-condition-choice-item.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "10a5839a70f4719b1f514ac61b1ecf8f44e918fc3812ae1dfecd6314f0996f43",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-rewards-once-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "dialogue-reward-once-hidden-interaction.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "e588d6571538c12ef7241491910bf47378f12ba091b8f5db05b773815c236a41",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-rewards-once-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "dialogue-reward-once-hidden-interaction.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "20dbbee8b9bba65c10021d272f8de8fcb14d1d033e1bb6946794e1f303b11b3b",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-rewards-once-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "dialogue-reward-once-hidden-interaction.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "7753d1d384f8969bb6e4011df1400a600f9cd099434e1a926f981259ff10769a",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dialogue-template-forge1201-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "dialogue-reward-template-hidden-interaction.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "2466d5ba8fa6b272beb7e8f621ea7f3599e51c69bdc863e5de984af8514286e5",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dnpc-cooking-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "5f6956b269923d129bc4dfa3085d416bf42aa7095378d02a726b07057b04da0a",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dnpc-cooking-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "dc3d9405691444abb0a9fa1cefec0d14926c385ed10d5cf9e45c56674f15fd0c",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dnpc-cooking-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "bfbe75efcc7187ab22fbf5e7a09e85e15aa654e00377d77373622412e4e12c44",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dnpc-final-editor-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "1960a14178b94a79bcf6451f4aa3102da1dfe11b58d42cd0e59db2ad434307a5",
+    "ownedRuntime": true
+  },
+  {
+    "run": "dnpc-final-editor-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "f6ecd6d1dae62dbcce51a9cf18f656c9947d9dda1eb9889e4fdd7d0e2436493e",
+    "ownedRuntime": true
+  },
+  {
+    "run": "extra-tools-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "919e0c1267ac9d9c1d26ea8fe6c0035f2edc7b2474018e1bb553bf760f9f7933",
+    "ownedRuntime": true
+  },
+  {
+    "run": "extra-tools-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "ff5374264e08247ee26688f6bfecdc4ed86c3e52031352622fabe1544d1822fa",
+    "ownedRuntime": true
+  },
+  {
+    "run": "extra-tools-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "4380fdcec86f3718aa2b127d0c09c579ef34daf4f10cc9d544d74cc41dc32749",
+    "ownedRuntime": true
+  },
+  {
+    "run": "hud-quest-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "247aab9935333d1e7ba6642ef2a99d5116ad9f10f9a18c925ec860de5d149eed",
+    "ownedRuntime": true
+  },
+  {
+    "run": "image-boss-dw-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "battleworks-boss-phase-1.json",
+      "battleworks-boss-phase-2.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "53f5dbc0ffc4c4145e7460165b61dfed5e009db3e88ff1e01994c23b123e24ed",
+    "ownedRuntime": true
+  },
+  {
+    "run": "image-dw-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "055df679dac6ec3c20f69c0e66c4742ca03c24a2139d8c1e8cc69a19e7e3d87a",
+    "ownedRuntime": true
+  },
+  {
+    "run": "legacy-apis-forge1201-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "api-combat-result.json",
+      "api-effect-result.json",
+      "api-model-result.json",
+      "api-popup-result.json",
+      "api-skill-result.json",
+      "api-stored-result.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "f80e8fccdeb81b43bb4d6e3dd81acd11f250a6f8eecd38a79a49fa9056e74c94",
+    "ownedRuntime": true
+  },
+  {
+    "run": "legacy-apis-forge1201-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "api-combat-result.json",
+      "api-effect-result.json",
+      "api-hitbox-result.json",
+      "api-model-result.json",
+      "api-popup-result.json",
+      "api-skill-impact.json",
+      "api-skill-result.json",
+      "api-stored-result.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "37dc5c4306d9fe06bb0615bde3a44b9fdb04aaca37665dfbe5cf91f61a8fa735",
+    "ownedRuntime": true
+  },
+  {
+    "run": "minigames-016-details-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "e49dcf54bc851ff7168a2e517ba270bfc88fe95e698ad4b679a7c6e8bc34ba76",
+    "ownedRuntime": true
+  },
+  {
+    "run": "minigames-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "failure.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "28ad12208dc04f0b1d700d5f0a5af8d6e0e20ac9312baa69f682eebdff7b726b",
+    "ownedRuntime": true
+  },
+  {
+    "run": "minigames-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "02f8e3fe7e867cafacd9bd7a9999b2dbf4d2fa952e309c7e7730c0d9e5c44d8f",
+    "ownedRuntime": true
+  },
+  {
+    "run": "mwent-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "1c47def05662ce4ab9ebb357278af54f12da45acd6509f2b26b0e351a69cca45",
+    "ownedRuntime": true
+  },
+  {
+    "run": "mwent-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "27858b4da1f1f34861935c1de511a44ab8f9a60a900988c10787a55ec4c9b4e5",
+    "ownedRuntime": true
+  },
+  {
+    "run": "mwent-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "c76801012d4aad5a817c3c63826549fb46144ee9f2f1b97cb1a891cdc691934e",
+    "ownedRuntime": true
+  },
+  {
+    "run": "mwent016-decks-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "f11d138041feac58e2cb487a2f9d94f865a385406fcce3783f1b44970584cbe6",
+    "ownedRuntime": true
+  },
+  {
+    "run": "mwent016-golem-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "mwent-opening-after.json",
+      "mwent-opening-before.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "1b3abd2c2413a556bd9c10dd8364ea7346f8aafb1b52c5207e179c7b482178e7",
+    "ownedRuntime": true
+  },
+  {
+    "run": "npc013-armor-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "15a29d610e22207da82e7faabad6260dbf75c6448ca56291ee64f7be6162aaf0",
+    "ownedRuntime": true
+  },
+  {
+    "run": "source-roulette-016-neo1211",
+    "receiptFiles": [
+      "environment.json"
+    ],
+    "fullClientLogSha256": null,
+    "ownedRuntime": true
+  },
+  {
+    "run": "spawn-map-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "mapicon-marker.json",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "eecab03bcbfdf6fd24f0dc3bffd6fe23e1c9ea1d749f83d4a11338fa82c0481d",
+    "ownedRuntime": true
+  },
+  {
+    "run": "spawn-natural-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json",
+      "spawn-diagnostics-spawn-controls.json"
+    ],
+    "fullClientLogSha256": "00e59bc2e784dedc6b7a25ade7bd28634957b288f8a8a06af992af422197f355",
+    "ownedRuntime": true
+  },
+  {
+    "run": "spawn-template-neo1211-en-04",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "dfe65e8d7dbe2115ea84c0faaab5676029ec4544af35bed731e5f2f7860af83e",
+    "ownedRuntime": true
+  },
+  {
+    "run": "spawn-template-neo1211-en-05",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "failure.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "818b61fb5ba90b4409b204e0a4df6ac4d26482f6668462973786307aefea5404",
+    "ownedRuntime": true
+  },
+  {
+    "run": "spawn-template-neo1211-en-06",
+    "receiptFiles": [],
+    "fullClientLogSha256": null,
+    "ownedRuntime": false
+  },
+  {
+    "run": "spawn-template-neo1211-en-07",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json",
+      "spawn-template-result.json"
+    ],
+    "fullClientLogSha256": "46de218da5d280e7ab583083514e9b6e0c99b160aaee6cca21dc0b9c1d853b2b",
+    "ownedRuntime": true
+  },
+  {
+    "run": "spawn-template-neo1211-en-08",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json",
+      "spawn-template-result.json"
+    ],
+    "fullClientLogSha256": "60eedfc0a52d15254672974eef2ee6ca758e2f7a228eaf3c52cac7f86a3d75c9",
+    "ownedRuntime": true
+  },
+  {
+    "run": "spawn-vehicle-neo1211-en-01",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json",
+      "spawn-vehicle-result.json"
+    ],
+    "fullClientLogSha256": "96d6b861015b92a229378b005e78dbfba1ecd89205a750d8ac7ec965df3afb3b",
+    "ownedRuntime": true
+  },
+  {
+    "run": "spawn-vehicle-neo1211-en-02",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json",
+      "spawn-vehicle-result.json"
+    ],
+    "fullClientLogSha256": "16997934e4758beac8955885bb27ec7350d45005e455e9876b03ff3f6d33dfe4",
+    "ownedRuntime": true
+  },
+  {
+    "run": "warfare-expanded-neo1211-en-09",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "failure.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "1b85f2b377f588cafbb16b2b6fcc7c5153b080a81692904dd4e9cabf1fffd3de",
+    "ownedRuntime": true
+  },
+  {
+    "run": "warfare-expanded-neo1211-en-10",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "de9473c2266d4b7106dc8ebb352a71beccaf1a415d02b7b3dfbdb539ab5ccda8",
+    "ownedRuntime": true
+  },
+  {
+    "run": "warfare-expanded-neo1211-en-11",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "35bfcd48e8a7fa338aecc12c74955347a038cbf0604960ec34845bc260d98412",
+    "ownedRuntime": true
+  },
+  {
+    "run": "warfare-neo1211-en-01",
+    "receiptFiles": [],
+    "fullClientLogSha256": null,
+    "ownedRuntime": false
+  },
+  {
+    "run": "warfare-neo1211-en-02",
+    "receiptFiles": [
+      "environment.json"
+    ],
+    "fullClientLogSha256": "740c4020f69399ae95490a98ef8cfc6ad06dca7c36a2add84ee6961aff81f5f6",
+    "ownedRuntime": true
+  },
+  {
+    "run": "warfare-neo1211-en-03",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "a44d3097c24f8b663e5a7ab16b481a3eb31cfe4a34549d33e6aa099e51fc8e53",
+    "ownedRuntime": true
+  },
+  {
+    "run": "warfare-neo1211-en-04",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "3ad95d495b0a475c5ff4fc7b51e97ea847e8d6a8d587ff41055e136828fe96e7",
+    "ownedRuntime": true
+  },
+  {
+    "run": "warfare-neo1211-en-05",
+    "receiptFiles": [
+      "environment.json"
+    ],
+    "fullClientLogSha256": "0adb08ffb2af6b98c950b9e7936e36bc768df7c383b7efa562c67a8a177791eb",
+    "ownedRuntime": true
+  },
+  {
+    "run": "warfare-neo1211-en-06",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "bb4a6a84d8f75001df31a7b7dd14eb805970adfc488b873bcb93a899286f0216",
+    "ownedRuntime": true
+  },
+  {
+    "run": "warfare-neo1211-en-07",
+    "receiptFiles": [],
+    "fullClientLogSha256": null,
+    "ownedRuntime": false
+  },
+  {
+    "run": "warfare-neo1211-en-08",
+    "receiptFiles": [
+      "actor-editors.json",
+      "editors.json",
+      "environment.json",
+      "finished.txt",
+      "screens.json"
+    ],
+    "fullClientLogSha256": "08e6f33e2b5a0e70f4afc2e2d34b1b606b2a77a07d8ec9e9eadb564880e5223d",
+    "ownedRuntime": true
+  }
+]

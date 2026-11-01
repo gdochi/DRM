@@ -1,0 +1,23 @@
+[
+  {
+    "id": "quest-category",
+    "status": "failed",
+    "error": "java.lang.NoSuchFieldException: styledButtons"
+  },
+  {
+    "id": "quest-info",
+    "status": "failed",
+    "error": "java.lang.NoSuchFieldException: styledButtons"
+  },
+  {
+    "id": "remnant-view-conditions",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "View Conditions"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

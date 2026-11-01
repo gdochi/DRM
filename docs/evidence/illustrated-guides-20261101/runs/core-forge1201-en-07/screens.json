@@ -1,0 +1,12 @@
+[
+  {
+    "id": "forge-hud-health",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active labeled control \u0027+ Health\u0027 in GuiMakerScreen"
+  },
+  {
+    "id": "forge-hud-runtime",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active labeled control \u0027+ Health\u0027 in GuiMakerScreen"
+  }
+]

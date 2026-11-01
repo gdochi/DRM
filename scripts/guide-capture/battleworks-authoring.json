@@ -1,0 +1,7 @@
+[
+  {"id":"battleworks-passive-health","editor":"battleworks","target":true,"actions":["Create New","Pattern Build Assist","Beginner","Wide Sweep","Measured","Create Pattern","Trigger: Pattern manager","Trigger: Pattern manager","bw-choice:health_below"]},
+  {"id":"battleworks-stage-movement","editor":"battleworks","target":true,"actions":["Create New","Pattern Build Assist","Beginner","Wide Sweep","Measured","Create Pattern","Action","Timing","bw-choice:1"]},
+  {"id":"battleworks-stage-animation","editor":"battleworks","target":true,"actions":["Create New","Pattern Build Assist","Beginner","Wide Sweep","Measured","Create Pattern","Action","Timing","bw-choice:4"]},
+  {"id":"battleworks-save-position","editor":"battleworks","target":true,"actions":["Create New","Pattern Build Assist","Beginner","Wide Sweep","Measured","Create Pattern","+ Action","bw-choice:summon_position","bw-choice:dochi_battleworks:save_position"]},
+  {"id":"battleworks-projectile","editor":"battleworks","target":true,"actions":["Create New","Pattern Build Assist","Beginner","Wide Sweep","Measured","Create Pattern","+ Action","bw-choice:skill","bw-choice:dochi_battleworks:spawn_projectile"]}
+]

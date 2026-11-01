@@ -1,0 +1,1606 @@
+[
+  {
+    "id": "editor-selector",
+    "screenClass": "net.dochi.gameeditor.client.EditorSelectScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Dialogue Editor"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Favorites",
+        "active": true
+      },
+      {
+        "label": "\u003e All",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Visual",
+        "active": true
+      },
+      {
+        "label": "Addons",
+        "active": true
+      },
+      {
+        "label": "editorSearch",
+        "active": true
+      },
+      {
+        "label": "\u003e Dialogue Editor",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "GUI Maker",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Tooltip Maker",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Currency Editor",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "HUD Maker",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Popup Maker",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Scene Maker",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Faction Editor",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Quest Editor",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Teleporter Editor",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Remnant Message Editor",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Stat Builder",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Item Editor",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Employment Editor",
+        "active": true
+      },
+      {
+        "label": "Add to favorites",
+        "active": true
+      },
+      {
+        "label": "Default Configs",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Use Default",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-open-default",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Dialogue Editor",
+      "Use Default"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "+ General",
+        "active": true
+      },
+      {
+        "label": "+ Start",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "FTB",
+        "active": true
+      },
+      {
+        "label": "GeckoLib",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Info",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Routes",
+        "active": true
+      },
+      {
+        "label": "Choices",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Blueprint",
+        "active": true
+      },
+      {
+        "label": "nodeName",
+        "active": true
+      },
+      {
+        "label": "Rename",
+        "active": true
+      },
+      {
+        "label": "Start",
+        "active": true
+      },
+      {
+        "label": "Speaker: NPC name",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "+ General",
+        "active": true
+      },
+      {
+        "label": "+ Start",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "FTB",
+        "active": true
+      },
+      {
+        "label": "GeckoLib",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Info",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Routes",
+        "active": true
+      },
+      {
+        "label": "Choices",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Blueprint",
+        "active": true
+      },
+      {
+        "label": "nodeName",
+        "active": true
+      },
+      {
+        "label": "Rename",
+        "active": true
+      },
+      {
+        "label": "Start",
+        "active": true
+      },
+      {
+        "label": "Speaker: NPC name",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-text",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "node:dialogue_1",
+      "Text"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "+ General",
+        "active": true
+      },
+      {
+        "label": "+ Start",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "FTB",
+        "active": true
+      },
+      {
+        "label": "GeckoLib",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Info",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Choices",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Blueprint",
+        "active": true
+      },
+      {
+        "label": "Sound ON",
+        "active": true
+      },
+      {
+        "label": "textSoundId",
+        "active": true
+      },
+      {
+        "label": "Select",
+        "active": true
+      },
+      {
+        "label": "Play",
+        "active": true
+      },
+      {
+        "label": "Stop",
+        "active": true
+      },
+      {
+        "label": "textSoundVolume",
+        "active": true
+      },
+      {
+        "label": "textSoundPitch",
+        "active": true
+      },
+      {
+        "label": "textSoundDelay",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-editor",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Buy items",
+        "active": true
+      },
+      {
+        "label": "Sell items",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Shop settings",
+        "active": true
+      },
+      {
+        "label": "Product",
+        "active": true
+      },
+      {
+        "label": "Payment",
+        "active": true
+      },
+      {
+        "label": "Restock",
+        "active": true
+      },
+      {
+        "label": "itemId",
+        "active": true
+      },
+      {
+        "label": "Item",
+        "active": true
+      },
+      {
+        "label": "name",
+        "active": true
+      },
+      {
+        "label": "count",
+        "active": true
+      },
+      {
+        "label": "stock",
+        "active": true
+      },
+      {
+        "label": "maxStock",
+        "active": true
+      },
+      {
+        "label": "Description",
+        "active": true
+      },
+      {
+        "label": "nbt",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Buy items",
+        "active": true
+      },
+      {
+        "label": "Sell items",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Shop settings",
+        "active": true
+      },
+      {
+        "label": "Product",
+        "active": true
+      },
+      {
+        "label": "Payment",
+        "active": true
+      },
+      {
+        "label": "Restock",
+        "active": true
+      },
+      {
+        "label": "itemId",
+        "active": true
+      },
+      {
+        "label": "Item",
+        "active": true
+      },
+      {
+        "label": "name",
+        "active": true
+      },
+      {
+        "label": "count",
+        "active": true
+      },
+      {
+        "label": "stock",
+        "active": true
+      },
+      {
+        "label": "maxStock",
+        "active": true
+      },
+      {
+        "label": "Description",
+        "active": true
+      },
+      {
+        "label": "nbt",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "gui-maker",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Background",
+        "active": true
+      },
+      {
+        "label": "Button Config",
+        "active": true
+      },
+      {
+        "label": "Viewport: Current",
+        "active": true
+      },
+      {
+        "label": "+ Image",
+        "active": true
+      },
+      {
+        "label": "+ Entity",
+        "active": true
+      },
+      {
+        "label": "+ Item",
+        "active": true
+      },
+      {
+        "label": "+ Text",
+        "active": true
+      },
+      {
+        "label": "+ Pager",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Layer -",
+        "active": true
+      },
+      {
+        "label": "Layer +",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Front",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "guiName",
+        "active": true
+      },
+      {
+        "label": "Default UI: ON · Sprite",
+        "active": true
+      },
+      {
+        "label": "gridX",
+        "active": true
+      },
+      {
+        "label": "gridY",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "id",
+        "active": true
+      },
+      {
+        "label": "layerOrder",
+        "active": true
+      },
+      {
+        "label": "x",
+        "active": true
+      },
+      {
+        "label": "y",
+        "active": true
+      },
+      {
+        "label": "w",
+        "active": true
+      },
+      {
+        "label": "h",
+        "active": true
+      },
+      {
+        "label": "text",
+        "active": true
+      },
+      {
+        "label": "Literal Text",
+        "active": true
+      },
+      {
+        "label": "fillColor",
+        "active": true
+      },
+      {
+        "label": "fillOpacity",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "borderColor",
+        "active": true
+      },
+      {
+        "label": "outlineGlow",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "Anim: typing",
+        "active": true
+      },
+      {
+        "label": "typingSpeed",
+        "active": true
+      },
+      {
+        "label": "Test",
+        "active": true
+      },
+      {
+        "label": "Cursor: block",
+        "active": true
+      },
+      {
+        "label": "cursorBlink",
+        "active": true
+      },
+      {
+        "label": "Asset: (none)",
+        "active": true
+      },
+      {
+        "label": "Clear",
+        "active": true
+      },
+      {
+        "label": "Crop: none",
+        "active": true
+      },
+      {
+        "label": "Fit: Stretch",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Solo",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "hud-maker",
+    "status": "failed",
+    "error": "java.lang.StackOverflowError"
+  },
+  {
+    "id": "currency-editor",
+    "screenClass": "net.dochi.gameeditor.client.CurrencyEditorScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "HUD GUI",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "General settings",
+        "active": true
+      },
+      {
+        "label": "Physical currency",
+        "active": true
+      },
+      {
+        "label": "Enabled",
+        "active": true
+      },
+      {
+        "label": "Use as shared currency",
+        "active": true
+      },
+      {
+        "label": "name",
+        "active": true
+      },
+      {
+        "label": "displayFormat",
+        "active": true
+      },
+      {
+        "label": "Keep balance",
+        "active": true
+      },
+      {
+        "label": "deathLossPercent",
+        "active": true
+      },
+      {
+        "label": "Convert items on pickup",
+        "active": true
+      },
+      {
+        "label": "Item Prices (0)",
+        "active": true
+      },
+      {
+        "label": "Item Icon",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "quest-editor",
+    "screenClass": "net.dochi.gameeditor.client.QuestEditorScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "teleporter-editor",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterEditorScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "set.displayName",
+        "active": true
+      },
+      {
+        "label": "set.gui.readonly",
+        "active": true
+      },
+      {
+        "label": "Choose GUI",
+        "active": true
+      },
+      {
+        "label": "category.search",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "category.name",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "remnant-editor",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgEditorScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "name",
+        "active": true
+      },
+      {
+        "label": "gui",
+        "active": true
+      },
+      {
+        "label": "Find",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "popup-maker",
+    "screenClass": "net.dochi.gameeditor.client.PopupMakerScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "name",
+        "active": true
+      },
+      {
+        "label": "id",
+        "active": true
+      },
+      {
+        "label": "gui",
+        "active": true
+      },
+      {
+        "label": "title",
+        "active": true
+      },
+      {
+        "label": "subtitle",
+        "active": true
+      },
+      {
+        "label": "fadeIn",
+        "active": true
+      },
+      {
+        "label": "hold",
+        "active": true
+      },
+      {
+        "label": "fadeOut",
+        "active": true
+      },
+      {
+        "label": "channel",
+        "active": true
+      },
+      {
+        "label": "instanceKey",
+        "active": true
+      },
+      {
+        "label": "priority",
+        "active": true
+      },
+      {
+        "label": "soundId",
+        "active": true
+      },
+      {
+        "label": "Play",
+        "active": true
+      },
+      {
+        "label": "Stop",
+        "active": true
+      },
+      {
+        "label": "soundVolume",
+        "active": true
+      },
+      {
+        "label": "soundPitch",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "tooltip-maker",
+    "screenClass": "net.dochi.gameeditor.client.TooltipMakerScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Background",
+        "active": true
+      },
+      {
+        "label": "Stat Data: default_stats",
+        "active": true
+      },
+      {
+        "label": "Use Globally",
+        "active": true
+      },
+      {
+        "label": "+ Panel",
+        "active": true
+      },
+      {
+        "label": "+ Image",
+        "active": true
+      },
+      {
+        "label": "+ Rendered Item",
+        "active": true
+      },
+      {
+        "label": "+ Tooltip Text",
+        "active": true
+      },
+      {
+        "label": "+ Left / Right Text",
+        "active": true
+      },
+      {
+        "label": "+ Dynamic Section",
+        "active": true
+      },
+      {
+        "label": "+ Divider",
+        "active": true
+      },
+      {
+        "label": "+ Tooltip Split",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Layer -",
+        "active": true
+      },
+      {
+        "label": "Layer +",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Front",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "guiName",
+        "active": true
+      },
+      {
+        "label": "Tooltip Surface",
+        "active": true
+      },
+      {
+        "label": "stageWidth",
+        "active": true
+      },
+      {
+        "label": "stageHeight",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "gridX",
+        "active": true
+      },
+      {
+        "label": "gridY",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "id",
+        "active": true
+      },
+      {
+        "label": "layerOrder",
+        "active": true
+      },
+      {
+        "label": "x",
+        "active": true
+      },
+      {
+        "label": "y",
+        "active": true
+      },
+      {
+        "label": "w",
+        "active": true
+      },
+      {
+        "label": "h",
+        "active": true
+      },
+      {
+        "label": "text",
+        "active": true
+      },
+      {
+        "label": "Literal Text",
+        "active": true
+      },
+      {
+        "label": "fillColor",
+        "active": true
+      },
+      {
+        "label": "fillOpacity",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "borderColor",
+        "active": true
+      },
+      {
+        "label": "outlineGlow",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "Asset: (none)",
+        "active": true
+      },
+      {
+        "label": "Clear",
+        "active": true
+      },
+      {
+        "label": "Crop: none",
+        "active": true
+      },
+      {
+        "label": "Fit: Stretch",
+        "active": true
+      },
+      {
+        "label": "registeredInspector.0",
+        "active": true
+      },
+      {
+        "label": "Find",
+        "active": true
+      },
+      {
+        "label": "1-2. Item - spin",
+        "active": true
+      },
+      {
+        "label": "3D equipped model",
+        "active": true
+      },
+      {
+        "label": "Grow in place",
+        "active": true
+      },
+      {
+        "label": "Replay",
+        "active": true
+      },
+      {
+        "label": "registeredInspector.4",
+        "active": true
+      },
+      {
+        "label": "registeredInspector.5",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "registeredInspector.8",
+        "active": true
+      },
+      {
+        "label": "\u003e",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "registeredInspector.9",
+        "active": true
+      },
+      {
+        "label": "\u003e",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "registeredInspector.10",
+        "active": true
+      },
+      {
+        "label": "\u003e",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "registeredInspector.11",
+        "active": true
+      },
+      {
+        "label": "\u003e",
+        "active": true
+      },
+      {
+        "label": "Rendered item",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Solo",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "scene-maker",
+    "screenClass": "net.dochi.gameeditor.client.SceneMakerScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "scene_id",
+        "active": true
+      },
+      {
+        "label": "scene_name",
+        "active": true
+      },
+      {
+        "label": "scene_duration",
+        "active": true
+      },
+      {
+        "label": "scene_anchorPosition.x",
+        "active": true
+      },
+      {
+        "label": "scene_anchorPosition.y",
+        "active": true
+      },
+      {
+        "label": "scene_anchorPosition.z",
+        "active": true
+      },
+      {
+        "label": "scene_anchorYaw",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

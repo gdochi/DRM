@@ -1,0 +1,119 @@
+[
+  {
+    "id": "shop-save",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Back",
+      "Forward",
+      "Editors",
+      "Create New",
+      "Load",
+      "Save",
+      "Save As",
+      "Reset",
+      "Preview",
+      "?",
+      "Buy items",
+      "Sell items",
+      "Add",
+      "Duplicate",
+      "Delete",
+      "Shop settings",
+      "Product",
+      "Payment",
+      "Restock",
+      "itemId",
+      "Item",
+      "name",
+      "count",
+      "stock",
+      "maxStock",
+      "Description",
+      "nbt"
+    ],
+    "attemptedActions": [
+      "Save As",
+      "input:shopSaveAsName\u003dvillage_shop",
+      "Save As",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/npc_shops/village_shop.json"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing saved file: C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-neo1211-en-26\\game\\config\\dochi_rpg_maker\\npc_shops\\village_shop.json"
+  },
+  {
+    "id": "shop-npc-player",
+    "screenClass": "net.dochi.gameeditor.client.NpcApplyTargetScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Categories",
+      "Dialogue JSON",
+      "NPC Shop JSON",
+      "Teleporter JSON",
+      "Stat Builder JSON",
+      "Hire NPCs JSON",
+      "NPC Basic",
+      "filter json...",
+      "Cancel",
+      "Refresh",
+      "Remove NPC Shop",
+      "Apply NPC Shop"
+    ],
+    "attemptedActions": [
+      "NPC Shop JSON",
+      "wait:40",
+      "candidate:village_shop"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: No candidate village_shop"
+  },
+  {
+    "id": "shop-bread-selected",
+    "screenClass": "net.dochi.gameeditor.client.NpcApplyTargetScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Categories",
+      "Dialogue JSON",
+      "NPC Shop JSON",
+      "Teleporter JSON",
+      "Stat Builder JSON",
+      "Hire NPCs JSON",
+      "NPC Basic",
+      "filter json...",
+      "Cancel",
+      "Refresh",
+      "Remove NPC Shop",
+      "Apply NPC Shop"
+    ],
+    "attemptedActions": [
+      "NPC Shop JSON",
+      "wait:40",
+      "candidate:village_shop"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: No candidate village_shop"
+  },
+  {
+    "id": "shop-bread-purchased",
+    "screenClass": "net.dochi.gameeditor.client.NpcApplyTargetScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Categories",
+      "Dialogue JSON",
+      "NPC Shop JSON",
+      "Teleporter JSON",
+      "Stat Builder JSON",
+      "Hire NPCs JSON",
+      "NPC Basic",
+      "filter json...",
+      "Cancel",
+      "Refresh",
+      "Remove NPC Shop",
+      "Apply NPC Shop"
+    ],
+    "attemptedActions": [
+      "NPC Shop JSON",
+      "wait:40",
+      "candidate:village_shop"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: No candidate village_shop"
+  }
+]

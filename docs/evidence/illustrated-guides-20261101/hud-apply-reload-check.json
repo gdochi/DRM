@@ -1,0 +1,20 @@
+[
+  {
+    "run": "core-hud-neo1211-en-19",
+    "callbacksRegistered": true,
+    "serverActive": true,
+    "serverElements": 1,
+    "clientActiveElements": 1,
+    "clientRenderedLayoutElements": 0,
+    "note": "Apply and UI close"
+  },
+  {
+    "run": "core-hud-loaded-neo1211-en-20",
+    "callbacksRegistered": true,
+    "serverActive": true,
+    "serverElements": 1,
+    "clientActiveElements": 1,
+    "clientRenderedLayoutElements": 1,
+    "note": "Fresh process loads unmodified files saved by UI in previous run"
+  }
+]

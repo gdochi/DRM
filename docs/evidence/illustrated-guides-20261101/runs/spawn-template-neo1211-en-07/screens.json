@@ -1,0 +1,555 @@
+[
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\spawn-template-neo1211-en-07\\game\\config\\dochi_npc_core\\templates\\guide_guard.json"
+  },
+  {
+    "id": "dnpc-template-saved",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "fixture:template-helmet",
+      "Save to NPC",
+      "wait:40",
+      "Save As",
+      "type:guide_guard",
+      "Save",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_npc_core/templates/guide_guard.json",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DRM Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Draft",
+        "active": true
+      },
+      {
+        "label": "Load NPC template",
+        "active": true
+      },
+      {
+        "label": "Save to NPC",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Delete NPC",
+        "active": true
+      },
+      {
+        "label": "Load category",
+        "active": true
+      },
+      {
+        "label": "Save category",
+        "active": true
+      },
+      {
+        "label": "Identity",
+        "active": true
+      },
+      {
+        "label": "Appearance \u0026 Model",
+        "active": true
+      },
+      {
+        "label": "Part scales",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "Animation",
+        "active": true
+      },
+      {
+        "label": "Inventory \u0026 Equipment",
+        "active": true
+      },
+      {
+        "label": "Death drops",
+        "active": true
+      },
+      {
+        "label": "Schedule",
+        "active": true
+      },
+      {
+        "label": "DRM functions",
+        "active": true
+      },
+      {
+        "label": "Movement AI",
+        "active": true
+      },
+      {
+        "label": "Houses",
+        "active": true
+      },
+      {
+        "label": "Combat AI",
+        "active": true
+      },
+      {
+        "label": "Weapon \u0026 ammunition",
+        "active": true
+      },
+      {
+        "label": "Combat distances",
+        "active": true
+      },
+      {
+        "label": "Respawn",
+        "active": true
+      },
+      {
+        "label": "Relations",
+        "active": true
+      },
+      {
+        "label": "Follow cursor",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "Information",
+        "active": true
+      },
+      {
+        "label": "Messages",
+        "active": true
+      },
+      {
+        "label": "Nameplate",
+        "active": true
+      },
+      {
+        "label": "Name",
+        "active": true
+      },
+      {
+        "label": "Style",
+        "active": true
+      },
+      {
+        "label": "Title",
+        "active": true
+      },
+      {
+        "label": "Style",
+        "active": true
+      },
+      {
+        "label": "Chat interaction",
+        "active": true
+      },
+      {
+        "label": "Face on right-click",
+        "active": true
+      },
+      {
+        "label": "Show bossbar",
+        "active": true
+      },
+      {
+        "label": "Bar RGB",
+        "active": true
+      },
+      {
+        "label": "Bar RGB",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-npc-template-picker",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Entity",
+      "spawn-choice:npc_template",
+      "Choose",
+      "wait:80",
+      "spawn-input:search\u003dguide_guard",
+      "wait:80"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Get Spawner",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Spawn Target",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "Spawn Settings",
+        "active": true
+      },
+      {
+        "label": "Destruction",
+        "active": true
+      },
+      {
+        "label": "Effects",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Name",
+        "active": true
+      },
+      {
+        "label": "On",
+        "active": true
+      },
+      {
+        "label": "Entities per activation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Remove",
+        "active": false
+      },
+      {
+        "label": "NPC clone template",
+        "active": true
+      },
+      {
+        "label": "CNPC clone tab",
+        "active": false
+      },
+      {
+        "label": "Entity / Clone",
+        "active": true
+      },
+      {
+        "label": "Choose",
+        "active": true
+      },
+      {
+        "label": "Chance",
+        "active": true
+      },
+      {
+        "label": "Choose",
+        "active": true
+      },
+      {
+        "label": "Search ID or @mod",
+        "active": true
+      },
+      {
+        "label": "Select",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      },
+      {
+        "label": "Previous",
+        "active": true
+      },
+      {
+        "label": "Next",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\spawn-template-neo1211-en-07\\game\\config\\dochi_rpg_maker\\spawn_control\\spawners\\guide_guard_spawner.json"
+  },
+  {
+    "id": "spawn-npc-template-saved",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Entity",
+      "spawn-choice:npc_template",
+      "Choose",
+      "wait:80",
+      "spawn-input:search\u003dguide_guard",
+      "wait:80",
+      "spawn-catalog:guide_guard",
+      "Select",
+      "Save As",
+      "spawn-input:saveName\u003dguide_guard_spawner.json",
+      "Confirm",
+      "wait:80",
+      "verify:file\u003dconfig/dochi_rpg_maker/spawn_control/spawners/guide_guard_spawner.json",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Get Spawner",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Spawn Target",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "Spawn Settings",
+        "active": true
+      },
+      {
+        "label": "Destruction",
+        "active": true
+      },
+      {
+        "label": "Effects",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Name",
+        "active": true
+      },
+      {
+        "label": "On",
+        "active": true
+      },
+      {
+        "label": "Entities per activation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Remove",
+        "active": false
+      },
+      {
+        "label": "NPC clone template",
+        "active": true
+      },
+      {
+        "label": "CNPC clone tab",
+        "active": false
+      },
+      {
+        "label": "Entity / Clone",
+        "active": true
+      },
+      {
+        "label": "Choose",
+        "active": true
+      },
+      {
+        "label": "Chance",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-block-apply",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerApplyScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Get Spawner",
+      "wait:60",
+      "close:screen",
+      "place:spawner",
+      "wait:60",
+      "fixture:core",
+      "wait:40",
+      "interact:spawner",
+      "wait:80",
+      "spawn-apply-file:guide_guard_spawner.json"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "context",
+        "active": true
+      },
+      {
+        "label": "Search ID or @mod",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawner-apply",
+    "status": "verified_server_bound_file",
+    "detail": "guide_guard_spawner.json"
+  },
+  {
+    "id": "spawner-template",
+    "status": "verified_spawned_clone_and_equipment",
+    "detail": "{\"file\":\"guide_guard_spawner.json\",\"total\":1,\"status\":\"ready\",\"detail\":\"\",\"clones\":[{\"id\":32,\"name\":\"NPC\",\"head\":\"minecraft:iron_helmet\"}]}"
+  },
+  {
+    "id": "spawn-template-runtime",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "close:screen",
+      "interact:spawner",
+      "wait:60",
+      "spawn-apply-file:guide_guard_spawner.json",
+      "next-screen:@closed",
+      "Apply JSON",
+      "wait:60",
+      "verify:spawner-applied",
+      "fixture:survival",
+      "wait:120",
+      "verify:spawn-clone",
+      "look-at:clone",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

@@ -1,0 +1,473 @@
+[
+  {
+    "id": "dnpc-schedule-add",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Schedule",
+      "Add time"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DRM Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Draft",
+        "active": true
+      },
+      {
+        "label": "Load NPC template",
+        "active": true
+      },
+      {
+        "label": "Save to NPC",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Delete NPC",
+        "active": true
+      },
+      {
+        "label": "Load schedule",
+        "active": true
+      },
+      {
+        "label": "Save schedule",
+        "active": true
+      },
+      {
+        "label": "Identity",
+        "active": true
+      },
+      {
+        "label": "Appearance \u0026 Model",
+        "active": true
+      },
+      {
+        "label": "Part scales",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "Animation",
+        "active": true
+      },
+      {
+        "label": "Inventory \u0026 Equipment",
+        "active": true
+      },
+      {
+        "label": "Death drops",
+        "active": true
+      },
+      {
+        "label": "Schedule",
+        "active": true
+      },
+      {
+        "label": "DRM functions",
+        "active": true
+      },
+      {
+        "label": "Movement AI",
+        "active": true
+      },
+      {
+        "label": "Houses",
+        "active": true
+      },
+      {
+        "label": "Combat AI",
+        "active": true
+      },
+      {
+        "label": "Weapon \u0026 ammunition",
+        "active": true
+      },
+      {
+        "label": "Combat distances",
+        "active": true
+      },
+      {
+        "label": "Respawn",
+        "active": true
+      },
+      {
+        "label": "Relations",
+        "active": true
+      },
+      {
+        "label": "DNPC general schedule",
+        "active": true
+      },
+      {
+        "label": "Add time",
+        "active": true
+      },
+      {
+        "label": "Remove",
+        "active": false
+      },
+      {
+        "label": "Enable schedule",
+        "active": true
+      },
+      {
+        "label": "Expand / collapse actions",
+        "active": true
+      },
+      {
+        "label": "Select time and actions",
+        "active": true
+      },
+      {
+        "label": "Unnamed time",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "Delete checked actions",
+        "active": false
+      },
+      {
+        "label": "✎",
+        "active": true
+      },
+      {
+        "label": "Time slot name",
+        "active": true
+      },
+      {
+        "label": "✓",
+        "active": true
+      },
+      {
+        "label": "Start (world ticks)",
+        "active": true
+      },
+      {
+        "label": "End (world ticks)",
+        "active": true
+      },
+      {
+        "label": "Always first action",
+        "active": true
+      },
+      {
+        "label": "Position 1 of 1",
+        "active": true
+      },
+      {
+        "label": "Even",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dnpc-schedule-load",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Schedule",
+      "Load schedule"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DRM Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Draft",
+        "active": true
+      },
+      {
+        "label": "Load NPC template",
+        "active": true
+      },
+      {
+        "label": "Save to NPC",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Delete NPC",
+        "active": true
+      },
+      {
+        "label": "Load schedule",
+        "active": true
+      },
+      {
+        "label": "Save schedule",
+        "active": true
+      },
+      {
+        "label": "Identity",
+        "active": true
+      },
+      {
+        "label": "Appearance \u0026 Model",
+        "active": true
+      },
+      {
+        "label": "Part scales",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "Animation",
+        "active": true
+      },
+      {
+        "label": "Inventory \u0026 Equipment",
+        "active": true
+      },
+      {
+        "label": "Death drops",
+        "active": true
+      },
+      {
+        "label": "Schedule",
+        "active": true
+      },
+      {
+        "label": "DRM functions",
+        "active": true
+      },
+      {
+        "label": "Movement AI",
+        "active": true
+      },
+      {
+        "label": "Houses",
+        "active": true
+      },
+      {
+        "label": "Combat AI",
+        "active": true
+      },
+      {
+        "label": "Weapon \u0026 ammunition",
+        "active": true
+      },
+      {
+        "label": "Combat distances",
+        "active": true
+      },
+      {
+        "label": "Respawn",
+        "active": true
+      },
+      {
+        "label": "Relations",
+        "active": true
+      },
+      {
+        "label": "DNPC general schedule",
+        "active": true
+      },
+      {
+        "label": "Add time",
+        "active": true
+      },
+      {
+        "label": "Remove",
+        "active": false
+      },
+      {
+        "label": "Enable schedule",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dnpc-houses",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Houses"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DRM Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Draft",
+        "active": true
+      },
+      {
+        "label": "Load NPC template",
+        "active": true
+      },
+      {
+        "label": "Save to NPC",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Delete NPC",
+        "active": true
+      },
+      {
+        "label": "Load category",
+        "active": true
+      },
+      {
+        "label": "Save category",
+        "active": true
+      },
+      {
+        "label": "Identity",
+        "active": true
+      },
+      {
+        "label": "Appearance \u0026 Model",
+        "active": true
+      },
+      {
+        "label": "Part scales",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "Animation",
+        "active": true
+      },
+      {
+        "label": "Inventory \u0026 Equipment",
+        "active": true
+      },
+      {
+        "label": "Death drops",
+        "active": true
+      },
+      {
+        "label": "Schedule",
+        "active": true
+      },
+      {
+        "label": "DRM functions",
+        "active": true
+      },
+      {
+        "label": "Movement AI",
+        "active": true
+      },
+      {
+        "label": "Houses",
+        "active": true
+      },
+      {
+        "label": "Combat AI",
+        "active": true
+      },
+      {
+        "label": "Weapon \u0026 ammunition",
+        "active": true
+      },
+      {
+        "label": "Combat distances",
+        "active": true
+      },
+      {
+        "label": "Respawn",
+        "active": true
+      },
+      {
+        "label": "Relations",
+        "active": true
+      },
+      {
+        "label": "Follow cursor",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

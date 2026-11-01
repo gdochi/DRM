@@ -1,0 +1,92 @@
+[
+  {
+    "id": "dialogue-reward-once-actions",
+    "screen": "DialogueEditorScreen",
+    "actions": [
+      "node:dialogue_1",
+      "Choices",
+      "input:choiceLabel=Receive three apples",
+      "Choice actions",
+      "Type: Goto",
+      "drm-choice:item",
+      "input:action.itemId=minecraft:apple",
+      "scroll-page:-4",
+      "input:action.count=3",
+      "+ Action",
+      "Type: Goto",
+      "drm-choice:tag",
+      "input:action.key=welcome_received",
+      "Info",
+      "Choices",
+      "Choice actions",
+      "scroll-page:-8"
+    ]
+  },
+  {
+    "id": "dialogue-reward-once-condition",
+    "screen": "DialogueEditorScreen",
+    "actions": [
+      "node:dialogue_1",
+      "Choices",
+      "input:choiceLabel=Receive three apples",
+      "Choice actions",
+      "Type: Goto",
+      "drm-choice:item",
+      "input:action.itemId=minecraft:apple",
+      "scroll-page:-4",
+      "input:action.count=3",
+      "+ Action",
+      "Type: Goto",
+      "drm-choice:tag",
+      "input:action.key=welcome_received",
+      "Condition list",
+      "Add",
+      "input:choiceCond.key=welcome_received",
+      "Op: has",
+      "drm-choice:not",
+      "Save As",
+      "input:setName=welcome_reward_once",
+      "Save As",
+      "wait:60",
+      "verify:file=config/dochi_rpg_maker/dialogue_sets/welcome_reward_once/dialogue_set.json",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "dialogue-reward-once-hidden",
+    "screen": "NpcApplyTargetScreen",
+    "actions": [
+      "candidate:welcome_reward_once",
+      "Apply Dialogue",
+      "wait:60",
+      "fixture:empty-inventory",
+      "wait:40",
+      "fixture:approach-npc",
+      "wait:40",
+      "look-at:npc",
+      "interact:npc",
+      "wait:140",
+      "next-screen:@closed",
+      "runtime-choice:Receive three apples",
+      "wait:60",
+      "verify:apple-reward",
+      "verify:reward-tag",
+      "interact:npc",
+      "wait:140",
+      "verify:reward-hidden",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "dialogue-reward-inventory",
+    "screen": "NpcApplyTargetScreen",
+    "actions": [
+      "fixture:survival",
+      "wait:40",
+      "fixture:inventory-screen",
+      "wait:30",
+      "verify:apple-reward",
+      "clear:chat"
+    ]
+  }
+]

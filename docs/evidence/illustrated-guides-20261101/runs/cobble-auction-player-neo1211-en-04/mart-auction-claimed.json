@@ -1,0 +1,45 @@
+{
+  "enabled": true,
+  "document": "{\n  \"schema\": 7,\n  \"type\": \"cobble_npc:pokemart\",\n  \"id\": \"pokemart\",\n  \"displayName\": \"PokéMart\",\n  \"role\": \"auction\",\n  \"interactionConditions\": {\n    \"enabled\": false,\n    \"conditionMode\": \"and\",\n    \"conditions\": []\n  },\n  \"gui\": {\n    \"guiType\": \"cobble_npc:pokemart\",\n    \"guiJsonPath\": \"pokemart_auction_gui.json\"\n  },\n  \"currency\": {\n    \"provider\": \"item\",\n    \"id\": \"minecraft:emerald\"\n  },\n  \"auction\": {\n    \"houseId\": \"guide_auction\",\n    \"maxListingsPerPlayer\": 5,\n    \"durationMinutes\": 5,\n    \"listingFee\": \"2\",\n    \"saleTaxPercent\": 5,\n    \"minimumBidIncrement\": \"1\",\n    \"allowBuyout\": true,\n    \"allowShiny\": true,\n    \"allowLegendary\": true\n  },\n  \"products\": [\n    {\n      \"productId\": \"bulbasaur_5\",\n      \"pokemon\": {\n        \"species\": \"cobblemon:bulbasaur\",\n        \"form\": \"\",\n        \"aspects\": \"\",\n        \"gender\": \"random\",\n        \"shiny\": false,\n        \"level\": 5,\n        \"nature\": \"\",\n        \"ability\": \"\",\n        \"moves\": [],\n        \"pokeball\": \"cobblemon:poke_ball\",\n        \"heldItem\": \"\"\n      },\n      \"description\": \"\",\n      \"descriptionStyles\": [],\n      \"price\": \"5000\",\n      \"stock\": {\n        \"initial\": 3,\n        \"maximum\": 3,\n        \"restockAmount\": 1,\n        \"restockIntervalTicks\": 72000\n      }\n    },\n    {\n      \"productId\": \"charmander_5\",\n      \"pokemon\": {\n        \"species\": \"cobblemon:charmander\",\n        \"form\": \"\",\n        \"aspects\": \"\",\n        \"gender\": \"random\",\n        \"shiny\": false,\n        \"level\": 5,\n        \"nature\": \"\",\n        \"ability\": \"\",\n        \"moves\": [],\n        \"pokeball\": \"cobblemon:poke_ball\",\n        \"heldItem\": \"\"\n      },\n      \"description\": \"\",\n      \"descriptionStyles\": [],\n      \"price\": \"5000\",\n      \"stock\": {\n        \"initial\": 3,\n        \"maximum\": 3,\n        \"restockAmount\": 1,\n        \"restockIntervalTicks\": 72000\n      }\n    },\n    {\n      \"productId\": \"squirtle_5\",\n      \"pokemon\": {\n        \"species\": \"cobblemon:squirtle\",\n        \"form\": \"\",\n        \"aspects\": \"\",\n        \"gender\": \"random\",\n        \"shiny\": false,\n        \"level\": 5,\n        \"nature\": \"\",\n        \"ability\": \"\",\n        \"moves\": [],\n        \"pokeball\": \"cobblemon:poke_ball\",\n        \"heldItem\": \"\"\n      },\n      \"description\": \"\",\n      \"descriptionStyles\": [],\n      \"price\": \"5000\",\n      \"stock\": {\n        \"initial\": 3,\n        \"maximum\": 3,\n        \"restockAmount\": 1,\n        \"restockIntervalTicks\": 72000\n      }\n    }\n  ]\n}",
+  "emeralds": 62,
+  "party": [
+    {
+      "species": "cobblemon:rattata",
+      "level": 5
+    }
+  ],
+  "snapshot": {
+    "entityId": 3,
+    "martId": "pokemart",
+    "displayName": "PokéMart",
+    "guiJsonPath": "pokemart_auction_gui.json",
+    "guiJson": "{\"guiType\":\"cobble_npc:pokemart\",\"id\":\"pokemart_auction_gui\",\"renderStyle\":\"sprite\",\"spriteSheet\":\"dochi_rpg_maker:textures/gui/drm_ui_1.png\",\"spriteLayout\":\"drm_v1\",\"layoutVersion\":2,\"roleProfile\":\"auction\",\"designPreset\":\"standard\",\"defaultUiStyle\":{\"enabled\":true,\"fillColor\":\"#171D25\",\"fillNone\":false,\"fillOpacity\":92,\"borderColor\":\"#3D4857\",\"borderNone\":false,\"outlineGlow\":0},\"buttonConfig\":{\"vanillaButtons\":[]},\"stage\":{\"width\":800,\"height\":450,\"baseResolution\":{\"width\":800,\"height\":450},\"backgroundColor\":\"\",\"backgroundColorNone\":true,\"backgroundColorOpacity\":100,\"backgroundOverlayColor\":\"\",\"backgroundOverlayColorNone\":true,\"backgroundOverlayOpacity\":0,\"placementMode\":\"grid\",\"grid\":{\"width\":4,\"height\":4}},\"elements\":[{\"id\":\"pokemart_header\",\"type\":\"cobble_npc:pokemart_header\",\"x\":20,\"y\":16,\"w\":520,\"h\":30,\"z\":1,\"previewRole\":\"auction\",\"fillNone\":true,\"borderNone\":true,\"titleColor\":\"#A7FF70\",\"balanceColor\":\"#8DBBFF\",\"warningColor\":\"#FF6E6E\"},{\"id\":\"pokemart_toolbar\",\"type\":\"cobble_npc:pokemart_toolbar\",\"x\":650,\"y\":16,\"w\":130,\"h\":20,\"z\":2,\"previewRole\":\"auction\",\"fillNone\":true,\"borderNone\":true,\"buttonFillColor\":\"#20252D\",\"buttonBorderColor\":\"#48515F\",\"buttonTextColor\":\"#D8DDE8\"},{\"id\":\"pokemart_tabs\",\"type\":\"cobble_npc:pokemart_tabs\",\"x\":20,\"y\":54,\"w\":560,\"h\":24,\"z\":3,\"previewRole\":\"auction\",\"fillNone\":true,\"borderNone\":true,\"tabGap\":8,\"activeTabColor\":\"#2C405A\",\"inactiveTabColor\":\"#19212B\",\"tabBorderColor\":\"#48515F\",\"tabTextColor\":\"#D8DDE8\"},{\"id\":\"pokemart_search\",\"type\":\"cobble_npc:pokemart_search\",\"x\":20,\"y\":90,\"w\":250,\"h\":20,\"z\":4,\"previewRole\":\"auction\",\"placeholderKey\":\"screen.cobble_npc.pokemart.runtime.search\"},{\"id\":\"pokemart_catalog\",\"type\":\"cobble_npc:pokemart_catalog\",\"x\":20,\"y\":118,\"w\":250,\"h\":308,\"z\":5,\"previewRole\":\"auction\",\"rowHeight\":30,\"rowGap\":5,\"rowColor\":\"#19212B\",\"selectedRowColor\":\"#2C405A\",\"scrollbarColor\":\"#8DBBFF\",\"scrollbarTrackColor\":\"#202A36\"},{\"id\":\"pokemart_preview\",\"type\":\"cobble_npc:pokemart_preview\",\"x\":282,\"y\":90,\"w\":210,\"h\":336,\"z\":6,\"previewRole\":\"auction\",\"modelScale\":100,\"showLevel\":true,\"showShiny\":true},{\"id\":\"pokemart_details\",\"type\":\"cobble_npc:pokemart_details\",\"x\":504,\"y\":90,\"w\":276,\"h\":224,\"z\":7,\"previewRole\":\"auction\",\"primaryTextColor\":\"#E6EBF2\",\"secondaryTextColor\":\"#91A0B2\",\"accentTextColor\":\"#FFD37A\"},{\"id\":\"pokemart_action\",\"type\":\"cobble_npc:pokemart_action\",\"x\":504,\"y\":326,\"w\":276,\"h\":100,\"z\":8,\"fillNone\":true,\"borderNone\":true,\"previewRole\":\"auction\",\"controlGap\":8,\"labelColor\":\"#91A0B2\",\"buttonFillColor\":\"#20252D\",\"buttonBorderColor\":\"#48515F\",\"buttonTextColor\":\"#D8DDE8\"}]}",
+    "role": "auction",
+    "currencyProvider": "item",
+    "currencyId": "minecraft:emerald",
+    "currencyItemNbt": "",
+    "currencyAvailable": true,
+    "balance": "62",
+    "messageKey": "message.cobble_npc.pokemart.claim_success",
+    "serverTick": 7161,
+    "auctionPolicy": {
+      "houseId": "guide_auction",
+      "maxListingsPerPlayer": 5,
+      "durationMinutes": 5,
+      "listingFee": "2",
+      "saleTaxPercent": 5,
+      "minimumBidIncrement": "1",
+      "allowBuyout": true
+    },
+    "products": [],
+    "trades": [],
+    "listings": [],
+    "ownedPokemon": [],
+    "view": "claims",
+    "pageOffset": 0,
+    "pageTotal": 0,
+    "pageLimit": 20,
+    "moneyClaims": [],
+    "pokemonClaimCount": 0
+  }
+}

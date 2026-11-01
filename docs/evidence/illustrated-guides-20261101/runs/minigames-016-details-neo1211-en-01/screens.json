@@ -1,0 +1,951 @@
+[
+  {
+    "id": "mwent-acquisition-general",
+    "screenClass": "net.dochi.minigames.client.AcquisitionSettingsScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Edit MWENT",
+      "wait:100"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Load rule JSON",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save as",
+        "active": true
+      },
+      {
+        "label": "Reload server settings",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Merchant trades",
+        "active": true
+      },
+      {
+        "label": "Chest rewards",
+        "active": true
+      },
+      {
+        "label": "Product pools",
+        "active": true
+      },
+      {
+        "label": "Enabled: On",
+        "active": true
+      },
+      {
+        "label": "Villager trades: On",
+        "active": true
+      },
+      {
+        "label": "Wandering trader trades: On",
+        "active": true
+      },
+      {
+        "label": "Natural chest loot: On",
+        "active": true
+      },
+      {
+        "label": "Maximum bonus stacks per chest",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "mwent-acquisition-trades",
+    "screenClass": "net.dochi.minigames.client.AcquisitionSettingsScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Edit MWENT",
+      "wait:100",
+      "Merchant trades"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Load rule JSON",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save as",
+        "active": true
+      },
+      {
+        "label": "Reload server settings",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Merchant trades",
+        "active": true
+      },
+      {
+        "label": "Chest rewards",
+        "active": true
+      },
+      {
+        "label": "Product pools",
+        "active": true
+      },
+      {
+        "label": "Search rules",
+        "active": true
+      },
+      {
+        "label": "Select all",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Librarian cards",
+        "active": true
+      },
+      {
+        "label": "Librarian cards",
+        "active": true
+      },
+      {
+        "label": "Librarian card packs",
+        "active": true
+      },
+      {
+        "label": "Librarian card packs",
+        "active": true
+      },
+      {
+        "label": "Cartographer cards",
+        "active": true
+      },
+      {
+        "label": "Cartographer cards",
+        "active": true
+      },
+      {
+        "label": "Wandering trader cards",
+        "active": true
+      },
+      {
+        "label": "Wandering trader cards",
+        "active": true
+      },
+      {
+        "label": "Wandering trader packs",
+        "active": true
+      },
+      {
+        "label": "Wandering trader packs",
+        "active": true
+      },
+      {
+        "label": "Display name",
+        "active": true
+      },
+      {
+        "label": "Enabled: On",
+        "active": true
+      },
+      {
+        "label": "Librarian",
+        "active": true
+      },
+      {
+        "label": "Trade level / wandering tier",
+        "active": true
+      },
+      {
+        "label": "Standard cards",
+        "active": true
+      },
+      {
+        "label": "Payment item",
+        "active": true
+      },
+      {
+        "label": "Browse",
+        "active": true
+      },
+      {
+        "label": "Minimum price",
+        "active": true
+      },
+      {
+        "label": "Maximum price",
+        "active": true
+      },
+      {
+        "label": "Items per offer",
+        "active": true
+      },
+      {
+        "label": "Stock before restock",
+        "active": true
+      },
+      {
+        "label": "Villager experience",
+        "active": true
+      },
+      {
+        "label": "Reputation price multiplier",
+        "active": true
+      },
+      {
+        "label": "Cards",
+        "active": true
+      },
+      {
+        "label": "Packs",
+        "active": true
+      },
+      {
+        "label": "Excluded",
+        "active": true
+      },
+      {
+        "label": "Select all",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "mwent-acquisition-chests",
+    "screenClass": "net.dochi.minigames.client.AcquisitionSettingsScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Edit MWENT",
+      "wait:100",
+      "Chest rewards"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Load rule JSON",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save as",
+        "active": true
+      },
+      {
+        "label": "Reload server settings",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Merchant trades",
+        "active": true
+      },
+      {
+        "label": "Chest rewards",
+        "active": true
+      },
+      {
+        "label": "Product pools",
+        "active": true
+      },
+      {
+        "label": "Search rules",
+        "active": true
+      },
+      {
+        "label": "Select all",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Exploration cards",
+        "active": true
+      },
+      {
+        "label": "Exploration cards",
+        "active": true
+      },
+      {
+        "label": "Treasure cards",
+        "active": true
+      },
+      {
+        "label": "Treasure cards",
+        "active": true
+      },
+      {
+        "label": "Exploration packs",
+        "active": true
+      },
+      {
+        "label": "Exploration packs",
+        "active": true
+      },
+      {
+        "label": "Display name",
+        "active": true
+      },
+      {
+        "label": "Enabled: On",
+        "active": true
+      },
+      {
+        "label": "Standard cards",
+        "active": true
+      },
+      {
+        "label": "Chance per roll (0-1)",
+        "active": true
+      },
+      {
+        "label": "Rolls per chest",
+        "active": true
+      },
+      {
+        "label": "Minimum stack count",
+        "active": true
+      },
+      {
+        "label": "Maximum stack count",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Excluded",
+        "active": true
+      },
+      {
+        "label": "Select all",
+        "active": true
+      },
+      {
+        "label": "Select row: minecraft:chests/abandoned_mineshaft",
+        "active": true
+      },
+      {
+        "label": "Target loot tables",
+        "active": true
+      },
+      {
+        "label": "Delete: minecraft:chests/abandoned_mineshaft",
+        "active": true
+      },
+      {
+        "label": "Select row: minecraft:chests/simple_dungeon",
+        "active": true
+      },
+      {
+        "label": "Target loot tables",
+        "active": true
+      },
+      {
+        "label": "Delete: minecraft:chests/simple_dungeon",
+        "active": true
+      },
+      {
+        "label": "Select row: minecraft:chests/shipwreck_treasure",
+        "active": true
+      },
+      {
+        "label": "Target loot tables",
+        "active": true
+      },
+      {
+        "label": "Delete: minecraft:chests/shipwreck_treasure",
+        "active": true
+      },
+      {
+        "label": "Select row: minecraft:chests/ruined_portal",
+        "active": true
+      },
+      {
+        "label": "Target loot tables",
+        "active": true
+      },
+      {
+        "label": "Delete: minecraft:chests/ruined_portal",
+        "active": true
+      },
+      {
+        "label": "Select row: minecraft:chests/village/*",
+        "active": true
+      },
+      {
+        "label": "Target loot tables",
+        "active": true
+      },
+      {
+        "label": "Delete: minecraft:chests/village/*",
+        "active": true
+      },
+      {
+        "label": "Select row: minecraft:chests/abandoned_camp_*",
+        "active": true
+      },
+      {
+        "label": "Target loot tables",
+        "active": true
+      },
+      {
+        "label": "Delete: minecraft:chests/abandoned_camp_*",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Browse",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "mwent-acquisition-pools",
+    "screenClass": "net.dochi.minigames.client.AcquisitionSettingsScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Edit MWENT",
+      "wait:100",
+      "Product pools"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Load rule JSON",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save as",
+        "active": true
+      },
+      {
+        "label": "Reload server settings",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Merchant trades",
+        "active": true
+      },
+      {
+        "label": "Chest rewards",
+        "active": true
+      },
+      {
+        "label": "Product pools",
+        "active": true
+      },
+      {
+        "label": "Search rules",
+        "active": true
+      },
+      {
+        "label": "Select all",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Standard cards",
+        "active": true
+      },
+      {
+        "label": "Standard cards",
+        "active": true
+      },
+      {
+        "label": "Treasure cards",
+        "active": true
+      },
+      {
+        "label": "Treasure cards",
+        "active": true
+      },
+      {
+        "label": "Card packs",
+        "active": true
+      },
+      {
+        "label": "Card packs",
+        "active": true
+      },
+      {
+        "label": "Display name",
+        "active": true
+      },
+      {
+        "label": "Automatic cards: On",
+        "active": true
+      },
+      {
+        "label": "Integration cards: On",
+        "active": true
+      },
+      {
+        "label": "Normal",
+        "active": true
+      },
+      {
+        "label": "Avalin",
+        "active": true
+      },
+      {
+        "label": "Volkar Empire",
+        "active": true
+      },
+      {
+        "label": "Nevra",
+        "active": true
+      },
+      {
+        "label": "Mistwake Clans",
+        "active": true
+      },
+      {
+        "label": "Roden League",
+        "active": true
+      },
+      {
+        "label": "Morga Brood",
+        "active": true
+      },
+      {
+        "label": "Neutral",
+        "active": true
+      },
+      {
+        "label": "Common",
+        "active": true
+      },
+      {
+        "label": "Rare",
+        "active": true
+      },
+      {
+        "label": "Epic",
+        "active": true
+      },
+      {
+        "label": "Legendary",
+        "active": true
+      },
+      {
+        "label": "Cards",
+        "active": true
+      },
+      {
+        "label": "Packs",
+        "active": true
+      },
+      {
+        "label": "Excluded",
+        "active": true
+      },
+      {
+        "label": "Select all",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "roulette-editor-rules",
+    "screenClass": "net.dochi.minigames.client.MinigameEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "Item Roulette",
+      "Rules"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New",
+        "active": true
+      },
+      {
+        "label": "Load JSON",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save as",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Test play",
+        "active": true
+      },
+      {
+        "label": "Presets",
+        "active": true
+      },
+      {
+        "label": "Monty Hall",
+        "active": true
+      },
+      {
+        "label": "Slots",
+        "active": true
+      },
+      {
+        "label": "Memory",
+        "active": true
+      },
+      {
+        "label": "Whack-a-Mole",
+        "active": true
+      },
+      {
+        "label": "Timing Challenge",
+        "active": true
+      },
+      {
+        "label": "High Low",
+        "active": true
+      },
+      {
+        "label": "Shooting Gallery",
+        "active": true
+      },
+      {
+        "label": "MWENT",
+        "active": true
+      },
+      {
+        "label": "Item Roulette",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Rules",
+        "active": true
+      },
+      {
+        "label": "Prize slots",
+        "active": true
+      },
+      {
+        "label": "Assets",
+        "active": true
+      },
+      {
+        "label": "Game screen",
+        "active": true
+      },
+      {
+        "label": "Spin time (seconds)",
+        "active": true
+      },
+      {
+        "label": "Weighted chances: Off",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "roulette-editor-prizes",
+    "screenClass": "net.dochi.minigames.client.MinigameEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "Item Roulette",
+      "Prize slots"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New",
+        "active": true
+      },
+      {
+        "label": "Load JSON",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save as",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Test play",
+        "active": true
+      },
+      {
+        "label": "Presets",
+        "active": true
+      },
+      {
+        "label": "Monty Hall",
+        "active": true
+      },
+      {
+        "label": "Slots",
+        "active": true
+      },
+      {
+        "label": "Memory",
+        "active": true
+      },
+      {
+        "label": "Whack-a-Mole",
+        "active": true
+      },
+      {
+        "label": "Timing Challenge",
+        "active": true
+      },
+      {
+        "label": "High Low",
+        "active": true
+      },
+      {
+        "label": "Shooting Gallery",
+        "active": true
+      },
+      {
+        "label": "MWENT",
+        "active": true
+      },
+      {
+        "label": "Item Roulette",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Rules",
+        "active": true
+      },
+      {
+        "label": "Prize slots",
+        "active": true
+      },
+      {
+        "label": "Assets",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Prize slots",
+        "active": true
+      },
+      {
+        "label": "Reward ID",
+        "active": true
+      },
+      {
+        "label": "Browse",
+        "active": true
+      },
+      {
+        "label": "Count",
+        "active": true
+      },
+      {
+        "label": "Weight",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

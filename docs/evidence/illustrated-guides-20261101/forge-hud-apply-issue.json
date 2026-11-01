@@ -1,0 +1,21 @@
+{
+  "status": "reproduced; production source and JAR unchanged",
+  "minecraft": "1.20.1",
+  "loader": "Forge 47.4.20",
+  "mod": "DRM 0.3.1",
+  "modSha256": "da7fb3b8f06ff3b6758d01e9b39a41445aefd5474c0f657203192ca579c9b217",
+  "run": "core-forge1201-en-09",
+  "entry": "registered hud_maker source opener; native GuiMakerScreen",
+  "observed": [
+    "Health component set to 400/250 and Save As guide_hud creates manifest and hp.json",
+    "native Apply reports Applying HUD Set: guide_hud",
+    "first currency_hud_layout save succeeds",
+    "next server JSON save is rejected: too many requests",
+    "hud/active_set.json is absent; activation is not verified"
+  ],
+  "sourceCheck": {
+    "GuiMakerScreen.applyCurrentHudSet": "consecutive currency_hud_layout and hud_active_set saves; deployed JAR javap confirms both calls",
+    "DochiGameEditorNetwork.ServerJsonSavePacket.handle": "ServerRequestLimiter.allow(sender, server-json-save, 300L) before each save"
+  },
+  "documentationAction": "Use editor screenshot for layout steps; do not publish a false gameplay result or claim that retry/reconnect fixes activation."
+}

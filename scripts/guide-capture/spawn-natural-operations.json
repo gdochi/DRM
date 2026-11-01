@@ -1,0 +1,7 @@
+[
+  {"id":"spawn-preset-scope","editor":"spawn_control","actions":["native-input:search=minecraft:cow","natural-catalog:entity:minecraft:cow","Add Rule","next-screen:SaveAsScopeScreen","Save As"]},
+  {"id":"spawn-target-preset-saved","editor":"spawn_control","actions":["native-input:search=minecraft:cow","natural-catalog:entity:minecraft:cow","Add Rule","natural-enable","next-screen:SaveAsScopeScreen","Save As","next-screen:PresetSaveAsScreen","Current Target Preset","native-input:nameField=Meadow Cows","native-input:idField=meadow_cows","Save As","wait:80","verify:file=config/dochi_rpg_maker/spawn_control/targets/meadow_cows.json","clear:chat"]},
+  {"id":"spawn-diagnostics-check","editor":"spawn_control","actions":["native-input:search=minecraft:cow","natural-catalog:entity:minecraft:cow","Add Rule","natural-enable","next-screen:DiagnosticsScreen","Diagnostics","Check Here","wait:80","clear:chat"]},
+  {"id":"spawn-diagnostics-spawn","editor":"spawn_control","actions":["native-input:search=minecraft:cow","natural-catalog:entity:minecraft:cow","Add Rule","natural-enable","next-screen:DiagnosticsScreen","Diagnostics","Spawn One","Confirm Spawn","wait:100","diagnose:controls","clear:chat"]},
+  {"id":"spawn-preset-load","editor":"spawn_control","actions":["next-screen:PresetLoadScreen","Load","wait:80","clear:chat"]}
+]

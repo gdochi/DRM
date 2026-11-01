@@ -1,0 +1,47 @@
+{
+  "run": "core-neo1211-en-28",
+  "environment": "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1",
+  "entry": "Native Save As village_shop, NPC Shop JSON candidate, Apply NPC Shop, empty-hand NPC interaction",
+  "purchase": "Native Bread checkbox followed by Buy Selected",
+  "before": {
+    "emeralds": 10,
+    "bread": 0,
+    "breadStock": 12
+  },
+  "after": {
+    "emeralds": 6,
+    "bread": 3,
+    "breadStock": 11,
+    "maxStock": 12
+  },
+  "verified": "Server player inventory and native runtime stock; no direct inventory mutation after purchase",
+  "scope": "Single buy transaction. Sell/buyback and full restock-cycle completion remain unverified.",
+  "forgeRepeat": {
+    "run": "core-forge1201-en-17",
+    "environment": "DRM 0.3.1 / Forge 1.20.1",
+    "verified": "Same native save/apply/runtime flow; actual result reviewed",
+    "result": {
+      "emeralds": 6,
+      "bread": 3,
+      "breadProductAfterPurchase": {
+        "productId": "item_2",
+        "item": "minecraft:bread",
+        "count": 3,
+        "price": 4,
+        "stock": 11,
+        "maxStock": 12,
+        "restock": {
+          "enabled": true,
+          "amount": 12,
+          "intervalTicks": 24000,
+          "nextGameTime": 24451
+        },
+        "description": "shop.sample.bread.description",
+        "descriptionTranslationKey": true,
+        "action": "say Three loaves. Enough to reach the next gate.",
+        "currencyType": "inherit"
+      }
+    },
+    "applyButton": "Apply Shop"
+  }
+}

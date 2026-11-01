@@ -1,0 +1,10 @@
+[
+  {"id":"cobble-sales-player","editor":"cobble_npc:pokemart","target":true,"actions":["fixture:mart-funds","wait:80","CobbleDollars","field:currencySearch=emerald","wait:40","label-row:currencyLabels:0","Select","Pokémon Catalog","field:price=4","Save As","field:jsonName=custom/guide_sales.json","Save","wait:60","verify:file=config/dochi_rpg_maker/cobblemon/pokemarts/custom/guide_sales.json","Apply to NPC","wait:60","verify:mart-bound","interact:mart","wait:100","clear:chat"]},
+  {"id":"cobble-sales-purchased","screen":"@current","actions":["wait:60","find:Buy","wait:100","verify:mart-buy","clear:chat"]},
+  {"id":"cobble-trade-player","editor":"cobble_npc:pokemart","target":true,"actions":["fixture:mart-rattata","wait:60","Trade","Pokémon Trades","Add","Save As","field:jsonName=custom/guide_trade.json","Save","wait:60","Apply to NPC","wait:60","interact:mart","wait:100","Choose Your Pokémon","wait:80","clear:chat"]},
+  {"id":"cobble-trade-completed","screen":"@current","actions":["Confirm Trade","wait:100","verify:mart-trade","clear:chat"]},
+  {"id":"cobble-auction-player","editor":"cobble_npc:pokemart","target":true,"actions":["Auction","rail:Auction","field:houseId=guide_auction","field:listingFee=2","field:durationMinutes=5","Save As","field:jsonName=custom/guide_auction.json","Save","wait:60","Apply to NPC","wait:60","interact:mart","wait:100","Auction Listing","wait:80","clear:chat"]},
+  {"id":"cobble-auction-listed","screen":"@current","actions":["field:startingBid=10","field:buyout=20","find:List Pokémon","wait:100","verify:mart-listed","Auction","wait:80","clear:chat"]},
+  {"id":"cobble-auction-inbox","screen":"@current","actions":["fixture:auction-expire","wait:80","Auction","wait:80","Settlement Inbox","wait:80","clear:chat"]},
+  {"id":"cobble-auction-claimed","screen":"@current","actions":["Claim All","wait:100","verify:mart-claimed","clear:chat"]}
+]

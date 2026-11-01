@@ -1,0 +1,235 @@
+[
+  {
+    "id": "script-api-combat",
+    "status": "verified_direct_production_api_call",
+    "detail": "{\"kind\":\"combat\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"accepted\":true,\"meleeEnabled\":false,\"rangedEnabled\":false}"
+  },
+  {
+    "id": "api-combat-switches",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "clear:chat",
+      "fixture:api-combat",
+      "look-at:npc",
+      "wait:8"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "api-hitbox-one-shot",
+    "actualScreenAtFailure": "world",
+    "attemptedActions": [
+      "clear:chat",
+      "fixture:api-hitbox"
+    ],
+    "status": "failed",
+    "error": "java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.IllegalStateException: One-shot hitbox result differs: {\"kind\":\"hitbox\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"hits\":0,\"health\":20.0}"
+  },
+  {
+    "id": "script-api-model",
+    "status": "verified_direct_production_api_call",
+    "detail": "{\"kind\":\"model\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"accepted\":true,\"model\":\"minecraft:zombie\"}"
+  },
+  {
+    "id": "api-model-zombie",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "clear:chat",
+      "fixture:api-model",
+      "look-at:npc",
+      "wait:20"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "script-api-stored",
+    "status": "verified_direct_production_api_call",
+    "detail": "{\"kind\":\"stored\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"condition\":{\"type\":\"cnpc_stored_data\",\"scope\":\"player\",\"key\":\"my_pack.quest.stage\",\"op\":\"\u003e\u003d\",\"valueType\":\"number\",\"value\":\"3\"},\"stored\":3.0,\"pass\":true}"
+  },
+  {
+    "id": "api-stored-condition",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "clear:chat",
+      "fixture:api-stored",
+      "look-at:npc"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "script-api-effect",
+    "status": "verified_direct_production_api_call",
+    "detail": "{\"kind\":\"effect\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"has\":true,\"level\":2,\"amplifier\":1,\"ticks\":1200}"
+  },
+  {
+    "id": "api-effect-speed",
+    "screenClass": "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "clear:chat",
+      "fixture:api-effect",
+      "inventory:player",
+      "wait:20"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "\u003e",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "script-api-skill",
+    "status": "verified_direct_production_api_call",
+    "detail": "{\"kind\":\"skill\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"providers\":[\"irons_spellbooks\"],\"available\":true,\"accepted\":true,\"code\":\"success\",\"targetId\":27}"
+  },
+  {
+    "id": "api-skill-fireball",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "clear:chat",
+      "fixture:api-skill",
+      "look-at:npc",
+      "wait:20"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\legacy-apis-forge1201-en-01\\game\\config\\dochi_rpg_maker\\popups\\definitions\\village_entry.json"
+  },
+  {
+    "id": "api-popup-definition",
+    "screenClass": "net.dochi.gameeditor.client.PopupMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "input:id\u003dvillage_entry",
+      "input:title\u003dVillage Gate",
+      "input:hold\u003d200",
+      "Save As",
+      "input:saveAsName\u003dvillage_entry",
+      "Save As",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/popups/definitions/village_entry.json",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "name",
+        "active": true
+      },
+      {
+        "label": "id",
+        "active": true
+      },
+      {
+        "label": "gui",
+        "active": true
+      },
+      {
+        "label": "title",
+        "active": true
+      },
+      {
+        "label": "subtitle",
+        "active": true
+      },
+      {
+        "label": "fadeIn",
+        "active": true
+      },
+      {
+        "label": "hold",
+        "active": true
+      },
+      {
+        "label": "fadeOut",
+        "active": true
+      },
+      {
+        "label": "channel",
+        "active": true
+      },
+      {
+        "label": "instanceKey",
+        "active": true
+      },
+      {
+        "label": "priority",
+        "active": true
+      },
+      {
+        "label": "soundId",
+        "active": true
+      },
+      {
+        "label": "Play",
+        "active": true
+      },
+      {
+        "label": "Stop",
+        "active": true
+      },
+      {
+        "label": "soundVolume",
+        "active": true
+      },
+      {
+        "label": "soundPitch",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "script-api-popup",
+    "status": "verified_direct_production_api_call",
+    "detail": "{\"kind\":\"popup\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"sent\":1}"
+  },
+  {
+    "id": "popup-command",
+    "status": "verified_active_client_instance",
+    "detail": "village_entry"
+  },
+  {
+    "id": "api-popup-shown",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "clear:chat",
+      "fixture:api-popup",
+      "wait:20",
+      "verify:popup-active"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

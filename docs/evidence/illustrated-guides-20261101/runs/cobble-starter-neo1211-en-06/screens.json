@@ -1,0 +1,84 @@
+[
+  {
+    "id": "starter-apply",
+    "status": "verified_server_binding",
+    "detail": ""
+  },
+  {
+    "id": "cobble-starter-runtime",
+    "screenClass": "net.hodu.cobblenpc.client.StarterSelectorRuntimeScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:starter_selector",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Save As",
+      "field:jsonName\u003dcustom/village_starters.json",
+      "Save",
+      "wait:40",
+      "Apply to NPC",
+      "wait:40",
+      "verify:starter-bound",
+      "interact:starter",
+      "wait:140",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Choose This Pokemon",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": false
+      },
+      {
+        "label": "\u003e",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "starter-apply",
+    "status": "verified_server_binding",
+    "detail": ""
+  },
+  {
+    "id": "starter-selection",
+    "status": "verified_server_party",
+    "detail": "[{\"species\":\"cobblemon:bulbasaur\",\"level\":5}]"
+  },
+  {
+    "id": "cobble-starter-granted",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:starter_selector",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Save As",
+      "field:jsonName\u003dcustom/village_starters.json",
+      "Save",
+      "wait:40",
+      "Apply to NPC",
+      "wait:40",
+      "verify:starter-bound",
+      "interact:starter",
+      "wait:140",
+      "clear:chat",
+      "next-screen:@closed",
+      "Choose This Pokemon",
+      "wait:40",
+      "verify:starter-granted"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

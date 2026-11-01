@@ -1,0 +1,389 @@
+[
+  {
+    "id": "custom-png",
+    "status": "fixture_copied_original_png",
+    "detail": "Original DNPC icon copied unchanged as guide_icon.png in owned server texture directory"
+  },
+  {
+    "id": "gui-custom-png-search",
+    "status": "captured_in_game",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "actions": [
+      "fixture:asset-file",
+      "+ Image",
+      "find:Asset:",
+      "Refresh",
+      "wait:60",
+      "input:assetSearch\u003dguide_icon",
+      "wait:80",
+      "snapshot:gui-custom-png-search"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "custom-png",
+    "status": "verified_native_picker_apply",
+    "detail": "dochi_rpg_maker:textures/guide_icon.png"
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\image-dw-neo1211-en-02\\game\\config\\dochi_rpg_maker\\gui\\guide_image.json"
+  },
+  {
+    "id": "gui-custom-png-applied",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "editorId": "gui_maker",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "fixture:asset-file",
+      "+ Image",
+      "find:Asset:",
+      "Refresh",
+      "wait:60",
+      "input:assetSearch\u003dguide_icon",
+      "wait:80",
+      "snapshot:gui-custom-png-search",
+      "Apply",
+      "wait:40",
+      "verify:gui-image",
+      "Save As",
+      "input:guiExportName\u003dguide_image",
+      "Save As",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/gui/guide_image.json",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Background",
+        "active": true
+      },
+      {
+        "label": "Button Config",
+        "active": true
+      },
+      {
+        "label": "Viewport: Current",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "+ Image",
+        "active": true
+      },
+      {
+        "label": "+ Entity",
+        "active": true
+      },
+      {
+        "label": "+ Item",
+        "active": true
+      },
+      {
+        "label": "+ Text",
+        "active": true
+      },
+      {
+        "label": "+ Pager",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Layer -",
+        "active": true
+      },
+      {
+        "label": "Layer +",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Front",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "guiName",
+        "active": true
+      },
+      {
+        "label": "Default UI: ON · Texture",
+        "active": true
+      },
+      {
+        "label": "gridX",
+        "active": true
+      },
+      {
+        "label": "gridY",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "id",
+        "active": true
+      },
+      {
+        "label": "layerOrder",
+        "active": true
+      },
+      {
+        "label": "x",
+        "active": true
+      },
+      {
+        "label": "y",
+        "active": true
+      },
+      {
+        "label": "w",
+        "active": true
+      },
+      {
+        "label": "h",
+        "active": true
+      },
+      {
+        "label": "text",
+        "active": true
+      },
+      {
+        "label": "Literal Text",
+        "active": true
+      },
+      {
+        "label": "fillColor",
+        "active": true
+      },
+      {
+        "label": "fillOpacity",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "borderColor",
+        "active": true
+      },
+      {
+        "label": "outlineGlow",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "Asset: dochi_rpg_maker:textures/guide_icon.png",
+        "active": true
+      },
+      {
+        "label": "Clear",
+        "active": true
+      },
+      {
+        "label": "Crop: none",
+        "active": true
+      },
+      {
+        "label": "Fit: Stretch",
+        "active": true
+      },
+      {
+        "label": "Scope: dialogue",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Solo",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dw-server-ai-policy",
+    "screenClass": "net.dochi.tacznpcfire.client.TaczNpcFireModConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "DW Server AI",
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "DW Server AI",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Sound",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Guns",
+        "active": true
+      },
+      {
+        "label": "Visibility",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Colors",
+        "active": true
+      },
+      {
+        "label": "Position",
+        "active": true
+      },
+      {
+        "label": "DW idle / patrol: ON",
+        "active": true
+      },
+      {
+        "label": "Extra target scanning: ON",
+        "active": true
+      },
+      {
+        "label": "Advanced conditions: ON",
+        "active": true
+      },
+      {
+        "label": "Hearing / investigation: ON",
+        "active": true
+      },
+      {
+        "label": "Awareness / detection delay: ON",
+        "active": true
+      },
+      {
+        "label": "Combat target memory: ON",
+        "active": true
+      },
+      {
+        "label": "Tactical movement: ON",
+        "active": true
+      },
+      {
+        "label": "Cover AI: ON",
+        "active": true
+      },
+      {
+        "label": "Suppression fire: ON",
+        "active": true
+      },
+      {
+        "label": "NPC grenade AI: ON",
+        "active": true
+      },
+      {
+        "label": "Faction defense assist: ON",
+        "active": true
+      },
+      {
+        "label": "Booby traps: ON",
+        "active": true
+      },
+      {
+        "label": "Mercenary AI: ON",
+        "active": true
+      },
+      {
+        "label": "Basic combat preset",
+        "active": true
+      },
+      {
+        "label": "Allow all features",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

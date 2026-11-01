@@ -1,0 +1,11 @@
+[
+  {"id":"admin-server-policy","class":"net.dochi.gameeditor.client.DochiRpgMakerConfigScreen","actions":["Admin","wait:60","Enable DRM Admin","Apply","wait:60","clear:chat"]},
+  {"id":"admin-overview","screen":"@admin","actions":["wait:60","clear:chat"]},
+  {"id":"admin-tags","screen":"@admin","actions":["wait:60","admin-tab:tags","wait:40","clear:chat"]},
+  {"id":"remnant-world-list","screen":"@remnant-list","actions":["wait:60","clear:chat"]},
+  {"id":"core-npc-spawner-source","screen":"@core-spawner","actions":["wait:60","clear:chat"]},
+  {"id":"core-npc-spawner-spawn","screen":"@core-spawner","actions":["wait:60","Spawn","clear:chat"]},
+  {"id":"gui-image-inspector","editor":"gui_maker","actions":["+ Image","scroll-page:-5"]},
+  {"id":"gui-image-picker","editor":"gui_maker","actions":["+ Image","scroll-page:-5","find:Asset:","wait:80"]},
+  {"id":"dialogue-choice-pulse","screen":"DialogueEditorScreen","actions":["node:dialogue_1","Choices","OFF"]}
+]

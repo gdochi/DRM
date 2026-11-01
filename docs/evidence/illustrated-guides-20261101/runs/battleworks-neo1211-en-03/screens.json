@@ -1,0 +1,145 @@
+[
+  {
+    "id": "battleworks-target-hitboxes",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Hitbox Library"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "scene_animation_search",
+        "active": true
+      },
+      {
+        "label": "hitbox_id",
+        "active": true
+      },
+      {
+        "label": "hitbox_name",
+        "active": true
+      },
+      {
+        "label": "damage",
+        "active": true
+      },
+      {
+        "label": "radius",
+        "active": true
+      },
+      {
+        "label": "thickness",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-target-simulation",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Simulation"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "⌕ Pattern",
+        "active": true
+      },
+      {
+        "label": "pattern_name",
+        "active": true
+      },
+      {
+        "label": "pattern_role",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-assist-built",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "⌕ Pattern",
+        "active": true
+      },
+      {
+        "label": "pattern_name",
+        "active": true
+      },
+      {
+        "label": "pattern_role",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-assisted-hitboxes",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Hitbox Library"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "scene_animation_search",
+        "active": true
+      },
+      {
+        "label": "hitbox_id",
+        "active": true
+      },
+      {
+        "label": "hitbox_name",
+        "active": true
+      },
+      {
+        "label": "damage",
+        "active": true
+      },
+      {
+        "label": "radius",
+        "active": true
+      },
+      {
+        "label": "thickness",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

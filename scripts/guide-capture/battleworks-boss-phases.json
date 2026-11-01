@@ -1,0 +1,43 @@
+[
+  {
+    "id": "battleworks-boss-phase-threshold",
+    "editor": "battleworks",
+    "target": true,
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Combat Rules",
+      "Manager",
+      "input:same_pattern=1.0",
+      "Combat",
+      "input:fov=360",
+      "input:scan_range=16",
+      "Boss Phases",
+      "find:P2",
+      "input:phase_name=Enraged",
+      "input:phase_health=50",
+      "Save As",
+      "input:save_as=bosses/training_captain.json",
+      "Save",
+      "wait:60",
+      "Save",
+      "wait:40",
+      "verify:file=config/dochi_rpg_maker/mobs/patterns/bosses/training_captain.json",
+      "clear:chat",
+      "snapshot:battleworks-boss-phases-saved",
+      "close:screen",
+      "fixture:bw-boss",
+      "wait:40",
+      "verify:bw-phase:1",
+      "fixture:bw-health:49",
+      "wait:20",
+      "verify:bw-phase:2",
+      "look-at:npc",
+      "clear:chat"
+    ]
+  }
+]

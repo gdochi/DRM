@@ -1,0 +1,640 @@
+{
+  "screen": "net.dochi.gameeditor.client.DialogueEditorScreen",
+  "scale": 1.0,
+  "widgets": [
+    {
+      "label": "Back",
+      "x": 16,
+      "y": 16,
+      "w": 24,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Forward",
+      "x": 42,
+      "y": 16,
+      "w": 24,
+      "h": 20,
+      "active": false
+    },
+    {
+      "label": "Editors",
+      "x": 68,
+      "y": 16,
+      "w": 24,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Create New",
+      "x": 94,
+      "y": 16,
+      "w": 24,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Load",
+      "x": 120,
+      "y": 16,
+      "w": 24,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Save As",
+      "x": 172,
+      "y": 16,
+      "w": 24,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Reset",
+      "x": 198,
+      "y": 16,
+      "w": 24,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "?",
+      "x": 228,
+      "y": 16,
+      "w": 24,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "\u003c",
+      "x": 144,
+      "y": 58,
+      "w": 28,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "+ General",
+      "x": 22,
+      "y": 118,
+      "w": 72,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "+ Start",
+      "x": 100,
+      "y": 118,
+      "w": 72,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Select All",
+      "x": 22,
+      "y": 181,
+      "w": 72,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Delete",
+      "x": 100,
+      "y": 181,
+      "w": 72,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "FTB",
+      "x": 200,
+      "y": 112,
+      "w": 74,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "GeckoLib",
+      "x": 282,
+      "y": 112,
+      "w": 102,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "NPC Shop",
+      "x": 392,
+      "y": 112,
+      "w": 102,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Info",
+      "x": 200,
+      "y": 138,
+      "w": 82,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Text",
+      "x": 287,
+      "y": 138,
+      "w": 82,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Choices",
+      "x": 374,
+      "y": 138,
+      "w": 82,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "GUI",
+      "x": 461,
+      "y": 138,
+      "w": 82,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Blueprint",
+      "x": 548,
+      "y": 138,
+      "w": 82,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "+ Choice",
+      "x": 200,
+      "y": 197,
+      "w": 72,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Delete",
+      "x": 282,
+      "y": 197,
+      "w": 62,
+      "h": 20,
+      "active": false
+    },
+    {
+      "label": "Reveal after typing",
+      "x": 420,
+      "y": 197,
+      "w": 144,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "choiceTextSize",
+      "x": 432,
+      "y": 228,
+      "w": 48,
+      "h": 18,
+      "active": true
+    },
+    {
+      "label": "Select All",
+      "x": 200,
+      "y": 255,
+      "w": 24,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "choiceLabel",
+      "x": 512,
+      "y": 280,
+      "w": 360,
+      "h": 18,
+      "active": true
+    },
+    {
+      "label": "OFF",
+      "x": 606,
+      "y": 309,
+      "w": 76,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Condition list",
+      "x": 460,
+      "y": 343,
+      "w": 150,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Choice actions",
+      "x": 616,
+      "y": 343,
+      "w": 150,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Choice FX",
+      "x": 772,
+      "y": 343,
+      "w": 150,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "+ Action",
+      "x": 572,
+      "y": 401,
+      "w": 72,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Delete",
+      "x": 654,
+      "y": 401,
+      "w": 62,
+      "h": 20,
+      "active": false
+    },
+    {
+      "label": "^",
+      "x": 722,
+      "y": 401,
+      "w": 24,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Select All",
+      "x": 460,
+      "y": 431,
+      "w": 24,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Type: Goto",
+      "x": 666,
+      "y": 459,
+      "w": 132,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Node: dialogue_reply_1",
+      "x": 712,
+      "y": 489,
+      "w": 210,
+      "h": 20,
+      "active": true
+    }
+  ],
+  "styles": [
+    {
+      "label": "Back",
+      "x": "16",
+      "y": "16",
+      "width": "24",
+      "height": "20",
+      "widgetX": 16,
+      "widgetY": 16
+    },
+    {
+      "label": "Forward",
+      "x": "42",
+      "y": "16",
+      "width": "24",
+      "height": "20",
+      "widgetX": 42,
+      "widgetY": 16
+    },
+    {
+      "label": "Editors",
+      "x": "68",
+      "y": "16",
+      "width": "24",
+      "height": "20",
+      "widgetX": 68,
+      "widgetY": 16
+    },
+    {
+      "label": "Create New",
+      "x": "94",
+      "y": "16",
+      "width": "24",
+      "height": "20",
+      "widgetX": 94,
+      "widgetY": 16
+    },
+    {
+      "label": "Load",
+      "x": "120",
+      "y": "16",
+      "width": "24",
+      "height": "20",
+      "widgetX": 120,
+      "widgetY": 16
+    },
+    {
+      "label": "Save",
+      "x": "146",
+      "y": "16",
+      "width": "24",
+      "height": "20"
+    },
+    {
+      "label": "Save As",
+      "x": "172",
+      "y": "16",
+      "width": "24",
+      "height": "20",
+      "widgetX": 172,
+      "widgetY": 16
+    },
+    {
+      "label": "Reset",
+      "x": "198",
+      "y": "16",
+      "width": "24",
+      "height": "20",
+      "widgetX": 198,
+      "widgetY": 16
+    },
+    {
+      "label": "?",
+      "x": "228",
+      "y": "16",
+      "width": "24",
+      "height": "20",
+      "widgetX": 228,
+      "widgetY": 16
+    },
+    {
+      "label": "\u003c",
+      "x": "144",
+      "y": "58",
+      "width": "28",
+      "height": "20",
+      "widgetX": 144,
+      "widgetY": 58
+    },
+    {
+      "label": "+ General",
+      "x": "22",
+      "y": "118",
+      "width": "72",
+      "height": "20",
+      "widgetX": 22,
+      "widgetY": 118
+    },
+    {
+      "label": "+ Start",
+      "x": "100",
+      "y": "118",
+      "width": "72",
+      "height": "20",
+      "widgetX": 100,
+      "widgetY": 118
+    },
+    {
+      "label": "Copy",
+      "x": "22",
+      "y": "142",
+      "width": "72",
+      "height": "20"
+    },
+    {
+      "label": "Paste",
+      "x": "100",
+      "y": "142",
+      "width": "72",
+      "height": "20"
+    },
+    {
+      "label": "Select All",
+      "x": "22",
+      "y": "181",
+      "width": "72",
+      "height": "20",
+      "widgetX": 22,
+      "widgetY": 181
+    },
+    {
+      "label": "Delete",
+      "x": "100",
+      "y": "181",
+      "width": "72",
+      "height": "20",
+      "widgetX": 100,
+      "widgetY": 181
+    },
+    {
+      "label": "FTB",
+      "x": "200",
+      "y": "112",
+      "width": "74",
+      "height": "20",
+      "widgetX": 200,
+      "widgetY": 112
+    },
+    {
+      "label": "GeckoLib",
+      "x": "282",
+      "y": "112",
+      "width": "102",
+      "height": "20",
+      "widgetX": 282,
+      "widgetY": 112
+    },
+    {
+      "label": "NPC Shop",
+      "x": "392",
+      "y": "112",
+      "width": "102",
+      "height": "20",
+      "widgetX": 392,
+      "widgetY": 112
+    },
+    {
+      "label": "Info",
+      "x": "200",
+      "y": "138",
+      "width": "82",
+      "height": "20",
+      "widgetX": 200,
+      "widgetY": 138
+    },
+    {
+      "label": "Text",
+      "x": "287",
+      "y": "138",
+      "width": "82",
+      "height": "20",
+      "widgetX": 287,
+      "widgetY": 138
+    },
+    {
+      "label": "Choices",
+      "x": "374",
+      "y": "138",
+      "width": "82",
+      "height": "20",
+      "widgetX": 374,
+      "widgetY": 138
+    },
+    {
+      "label": "GUI",
+      "x": "461",
+      "y": "138",
+      "width": "82",
+      "height": "20",
+      "widgetX": 461,
+      "widgetY": 138
+    },
+    {
+      "label": "Blueprint",
+      "x": "548",
+      "y": "138",
+      "width": "82",
+      "height": "20",
+      "widgetX": 548,
+      "widgetY": 138
+    },
+    {
+      "label": "+ Choice",
+      "x": "200",
+      "y": "197",
+      "width": "72",
+      "height": "20",
+      "widgetX": 200,
+      "widgetY": 197
+    },
+    {
+      "label": "Delete",
+      "x": "282",
+      "y": "197",
+      "width": "62",
+      "height": "20",
+      "widgetX": 282,
+      "widgetY": 197
+    },
+    {
+      "label": "Reveal after typing",
+      "x": "420",
+      "y": "197",
+      "width": "144",
+      "height": "20",
+      "widgetX": 420,
+      "widgetY": 197
+    },
+    {
+      "label": "",
+      "x": "200",
+      "y": "255",
+      "width": "24",
+      "height": "20",
+      "widgetX": 200,
+      "widgetY": 255
+    },
+    {
+      "label": "OFF",
+      "x": "606",
+      "y": "309",
+      "width": "76",
+      "height": "20",
+      "widgetX": 606,
+      "widgetY": 309
+    },
+    {
+      "label": "Condition list",
+      "x": "460",
+      "y": "343",
+      "width": "150",
+      "height": "20",
+      "widgetX": 460,
+      "widgetY": 343
+    },
+    {
+      "label": "Choice actions",
+      "x": "616",
+      "y": "343",
+      "width": "150",
+      "height": "20",
+      "widgetX": 616,
+      "widgetY": 343
+    },
+    {
+      "label": "Choice FX",
+      "x": "772",
+      "y": "343",
+      "width": "150",
+      "height": "20",
+      "widgetX": 772,
+      "widgetY": 343
+    },
+    {
+      "label": "+ Action",
+      "x": "572",
+      "y": "401",
+      "width": "72",
+      "height": "20",
+      "widgetX": 572,
+      "widgetY": 401
+    },
+    {
+      "label": "Delete",
+      "x": "654",
+      "y": "401",
+      "width": "62",
+      "height": "20",
+      "widgetX": 654,
+      "widgetY": 401
+    },
+    {
+      "label": "^",
+      "x": "722",
+      "y": "401",
+      "width": "24",
+      "height": "20",
+      "widgetX": 722,
+      "widgetY": 401
+    },
+    {
+      "label": "",
+      "x": "460",
+      "y": "431",
+      "width": "24",
+      "height": "20",
+      "widgetX": 460,
+      "widgetY": 431
+    },
+    {
+      "label": "Type: Goto",
+      "x": "666",
+      "y": "459",
+      "width": "132",
+      "height": "20",
+      "widgetX": 666,
+      "widgetY": 459
+    },
+    {
+      "label": "Node: dialogue_reply_1",
+      "x": "712",
+      "y": "489",
+      "width": "210",
+      "height": "20",
+      "widgetX": 712,
+      "widgetY": 489
+    }
+  ]
+}

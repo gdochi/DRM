@@ -1,0 +1,64 @@
+[
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-forge1201-en-13\\game\\config\\dochi_rpg_maker\\currency\\definitions\\town_coin.json"
+  },
+  {
+    "id": "currency-emerald-prices",
+    "screenClass": "net.dochi.gameeditor.client.CurrencyEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "currency",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Item Prices (0)",
+      "Add Item",
+      "input:itemSearch\u003dminecraft:emerald",
+      "currency-item:minecraft:emerald",
+      "Add Selected (1)",
+      "input:conversionPrice\u003d10",
+      "Apply Selected",
+      "Close",
+      "Save As",
+      "input:currencySaveAsName\u003dtown_coin",
+      "Save As",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/currency/definitions/town_coin.json",
+      "clear:chat",
+      "Item Prices (1)"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "conversionSearch",
+        "active": true
+      },
+      {
+        "label": "Mod: All",
+        "active": true
+      },
+      {
+        "label": "Category: All",
+        "active": true
+      },
+      {
+        "label": "Select Visible",
+        "active": true
+      },
+      {
+        "label": "conversionPrice",
+        "active": true
+      },
+      {
+        "label": "Add Item",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

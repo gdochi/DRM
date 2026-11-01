@@ -1,0 +1,410 @@
+[
+  {
+    "id": "dialogue-save-as",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Save As"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "+ General",
+        "active": true
+      },
+      {
+        "label": "+ Start",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "FTB",
+        "active": true
+      },
+      {
+        "label": "GeckoLib",
+        "active": true
+      },
+      {
+        "label": "NPC Shop",
+        "active": true
+      },
+      {
+        "label": "Info",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Routes",
+        "active": true
+      },
+      {
+        "label": "Choices",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Blueprint",
+        "active": true
+      },
+      {
+        "label": "nodeName",
+        "active": true
+      },
+      {
+        "label": "Rename",
+        "active": true
+      },
+      {
+        "label": "Start",
+        "active": true
+      },
+      {
+        "label": "Speaker: NPC name",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "setName",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-choice-navigation",
+    "status": "verified_runtime_node",
+    "detail": "dialogue_reply_1"
+  },
+  {
+    "id": "dialogue-npc-reply",
+    "screenClass": "net.dochi.gameeditor.client.DialogueRuntimeScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "apply:dialogue",
+      "wait:40",
+      "interact:npc",
+      "wait:140",
+      "runtime-choice:Tell me about the village.",
+      "wait:140",
+      "verify:node\u003ddialogue_reply_1"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shop-settings",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Shop settings"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Buy items",
+        "active": true
+      },
+      {
+        "label": "Sell items",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Shop settings",
+        "active": true
+      },
+      {
+        "label": "Product",
+        "active": true
+      },
+      {
+        "label": "Payment",
+        "active": true
+      },
+      {
+        "label": "Restock",
+        "active": true
+      },
+      {
+        "label": "shopId",
+        "active": true
+      },
+      {
+        "label": "title",
+        "active": true
+      },
+      {
+        "label": "Default interface",
+        "active": true
+      },
+      {
+        "label": "shopGuiJson",
+        "active": true
+      },
+      {
+        "label": "Interface JSON",
+        "active": true
+      },
+      {
+        "label": "Same required item",
+        "active": true
+      },
+      {
+        "label": "currency",
+        "active": true
+      },
+      {
+        "label": "Payment item",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "teleporter-destinations",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Destination Settings"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "destination.search",
+        "active": true
+      },
+      {
+        "label": "Select All",
+        "active": true
+      },
+      {
+        "label": "destination.name",
+        "active": true
+      },
+      {
+        "label": "destination.x",
+        "active": true
+      },
+      {
+        "label": "destination.y",
+        "active": true
+      },
+      {
+        "label": "destination.z",
+        "active": true
+      },
+      {
+        "label": "destination.yaw",
+        "active": true
+      },
+      {
+        "label": "destination.pitch",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "teleporter-conditions",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Interaction Conditions"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Select All",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "teleporter-presentation",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Travel Presentation"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "global.fadeOut",
+        "active": true
+      },
+      {
+        "label": "global.fadeIn",
+        "active": true
+      },
+      {
+        "label": "global.sound.departure.id",
+        "active": true
+      },
+      {
+        "label": "Select",
+        "active": true
+      },
+      {
+        "label": "Play",
+        "active": true
+      },
+      {
+        "label": "Stop",
+        "active": true
+      },
+      {
+        "label": "global.sound.departure.volume",
+        "active": true
+      },
+      {
+        "label": "global.sound.departure.pitch",
+        "active": true
+      },
+      {
+        "label": "global.sound.arrival.id",
+        "active": true
+      },
+      {
+        "label": "Select",
+        "active": true
+      },
+      {
+        "label": "Play",
+        "active": true
+      },
+      {
+        "label": "Stop",
+        "active": true
+      },
+      {
+        "label": "global.sound.arrival.volume",
+        "active": true
+      },
+      {
+        "label": "global.sound.arrival.pitch",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

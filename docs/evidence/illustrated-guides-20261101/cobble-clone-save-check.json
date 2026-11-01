@@ -1,0 +1,422 @@
+{
+  "run": "cobble-clone-flow-neo1211-en-04",
+  "environment": {
+    "minecraft": "1.21.1",
+    "loader": "NeoForge 21.1.259",
+    "locale": "en_us",
+    "actor": "dnpc",
+    "mods": [
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\jar\\dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar",
+        "sha256": "00adcf6446e36c47d36a691f1614806b5c05aee30f2523a2616db8a1bf9b29fe"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-neoforge-1.21.1.jar",
+        "sha256": "cf01bfc2203b755adc8a968ce760b4a01ed764e74d9e69be6da2e4ce85811d6a"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\geckolib-neoforge-1.21.1-4.9.2.jar",
+        "sha256": "5e548466af9ab6aca7a91a7c7d4dc0dc8bc385e22958aed5da0e7bebd0fa3fba"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\architectury-13.0.11-neoforge.jar",
+        "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Cobblemon Editor\\jar\\dochi_cobblemon_editor-0.2.9-neoforge-1.21.1.jar",
+        "sha256": "32209a5e35e810aff8b088fb348baa7aff1b8e73e3532a74211b220db4f74044"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Cobblemon Editor\\libs\\Cobblemon-neoforge-1.8.4+1.21.1.jar",
+        "sha256": "89306baca7b4332fc4dcc448507b45ca0133254c70f77990a63c500ed9a7b863"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\kotlinforforge-5.12.0-all.jar",
+        "sha256": "095aed94f21b4e55895b21ea957750ae3ab829fbcfc6d3c66a3489f5f1128d46"
+      },
+      {
+        "source": "documentation capture fixture",
+        "sha256": "174bfd4f037f488d416d9c95d29a42ca72a606fefe8e5c128e74a40b27961714"
+      }
+    ],
+    "seededHudFiles": []
+  },
+  "cloneFile": "build\\task\\guide-capture\\cobble-clone-flow-neo1211-en-04\\game\\config\\dochi_rpg_maker\\cobblemon\\entity_clones\\trainer\\guide_trainer_clone.json",
+  "sha256": "2b08616610dc1e77b5fe6de52fdd1de30cf924fae027354d627f96fc47927f83",
+  "metadata": {
+    "format": "cobble_npc_entity_clone",
+    "schemaVersion": 1,
+    "name": "guide_trainer_clone",
+    "kind": "trainer",
+    "entityType": "dochi_npc:npc",
+    "minecraftVersion": "1.21.1",
+    "requiredMods": [
+      "cobble_npc",
+      "cobblemon",
+      "dochi_rpg_maker",
+      "dochi_npc"
+    ],
+    "bindingPolicy": "follow_source",
+    "displayName": "Oakridge guide",
+    "subject": "Trainer",
+    "partySize": 1,
+    "level": 0,
+    "payloadEncoding": "snbt"
+  },
+  "screens": [
+    {
+      "id": "cobble-trainer-id-entry",
+      "status": "captured_in_game",
+      "screenClass": "net.hodu.cobblenpc.client.TrainerRegistryScreen",
+      "actions": [
+        "Battle Config",
+        "General",
+        "next-screen:TrainerRegistryScreen",
+        "Set ID",
+        "field:directId=gym_guide",
+        "snapshot:cobble-trainer-id-entry"
+      ],
+      "width": 1920,
+      "height": 1080,
+      "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+    },
+    {
+      "id": "saved-file",
+      "status": "verified_file_exists",
+      "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\cobble-clone-flow-neo1211-en-04\\game\\config\\dochi_rpg_maker\\cobblemon\\trainers\\custom\\guide_trainer.json"
+    },
+    {
+      "id": "cobble-trainer-id",
+      "screenClass": "net.hodu.cobblenpc.client.CobbleTrainerEditorScreen",
+      "status": "captured_in_game",
+      "editorId": "cobble_npc:editor",
+      "entry": "registered editor source/target opener",
+      "actions": [
+        "Battle Config",
+        "General",
+        "next-screen:TrainerRegistryScreen",
+        "Set ID",
+        "field:directId=gym_guide",
+        "snapshot:cobble-trainer-id-entry",
+        "next-screen:CobbleTrainerEditorScreen",
+        "Use ID",
+        "Save As",
+        "field:jsonName=custom/guide_trainer.json",
+        "Save",
+        "wait:60",
+        "verify:file=config/dochi_rpg_maker/cobblemon/trainers/custom/guide_trainer.json",
+        "clear:chat"
+      ],
+      "width": 1920,
+      "height": 1080,
+      "visibleWidgetLabels": [
+        {
+          "label": "Back",
+          "active": false
+        },
+        {
+          "label": "Forward",
+          "active": false
+        },
+        {
+          "label": "Editors",
+          "active": true
+        },
+        {
+          "label": "Create New",
+          "active": true
+        },
+        {
+          "label": "Load",
+          "active": true
+        },
+        {
+          "label": "Save",
+          "active": true
+        },
+        {
+          "label": "Save As",
+          "active": true
+        },
+        {
+          "label": "Reset",
+          "active": true
+        },
+        {
+          "label": "Pokemon Party",
+          "active": true
+        },
+        {
+          "label": "> Battle Config",
+          "active": true
+        },
+        {
+          "label": "General",
+          "active": true
+        },
+        {
+          "label": "Encounter",
+          "active": true
+        },
+        {
+          "label": "Detection FX",
+          "active": true
+        },
+        {
+          "label": "Rounds",
+          "active": true
+        },
+        {
+          "label": "Dialogue",
+          "active": true
+        },
+        {
+          "label": "Conditions",
+          "active": true
+        },
+        {
+          "label": "After Actions",
+          "active": true
+        },
+        {
+          "label": "Scenes",
+          "active": true
+        },
+        {
+          "label": "Battle sounds",
+          "active": true
+        },
+        {
+          "label": "Trainer Battle",
+          "active": true
+        },
+        {
+          "label": "vs Trainer",
+          "active": true
+        },
+        {
+          "label": "Trainer Profile",
+          "active": true
+        },
+        {
+          "label": "Trainer Name",
+          "active": true
+        },
+        {
+          "label": "NPC ID",
+          "active": true
+        },
+        {
+          "label": "Set ID",
+          "active": true
+        },
+        {
+          "label": "Battle presentation",
+          "active": true
+        },
+        {
+          "label": "Battle presentation",
+          "active": true
+        },
+        {
+          "label": "0 items",
+          "active": true
+        },
+        {
+          "label": "0 / 1 linked",
+          "active": true
+        },
+        {
+          "label": "Port Radical Trainers",
+          "active": true
+        }
+      ],
+      "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+    },
+    {
+      "id": "trainer-binding",
+      "status": "verified_server_acknowledged_binding",
+      "detail": "guide_trainer"
+    },
+    {
+      "id": "cobble-trainer-applied",
+      "screenClass": "net.dochi.gameeditor.client.NpcApplyTargetScreen",
+      "status": "captured_in_game",
+      "actions": [
+        "vs Trainer",
+        "wait:60",
+        "candidate:custom/guide_trainer",
+        "Apply vs Trainer",
+        "wait:60",
+        "verify:trainer-binding",
+        "clear:chat"
+      ],
+      "width": 1920,
+      "height": 1080,
+      "visibleWidgetLabels": [
+        {
+          "label": "Categories",
+          "active": true
+        },
+        {
+          "label": "Dialogue JSON",
+          "active": true
+        },
+        {
+          "label": "NPC Shop JSON",
+          "active": true
+        },
+        {
+          "label": "Teleporter JSON",
+          "active": true
+        },
+        {
+          "label": "Stat Builder JSON",
+          "active": true
+        },
+        {
+          "label": "vs Trainer",
+          "active": true
+        },
+        {
+          "label": "vs Cobblemon",
+          "active": true
+        },
+        {
+          "label": "PokéMart",
+          "active": true
+        },
+        {
+          "label": "Nurse Joy JSON",
+          "active": true
+        },
+        {
+          "label": "Starter Selector",
+          "active": true
+        },
+        {
+          "label": "Hire NPCs JSON",
+          "active": true
+        },
+        {
+          "label": "NPC Basic",
+          "active": true
+        },
+        {
+          "label": "Pokemon Appearance",
+          "active": true
+        },
+        {
+          "label": "filter json...",
+          "active": true
+        },
+        {
+          "label": "Cancel",
+          "active": true
+        },
+        {
+          "label": "Refresh",
+          "active": true
+        },
+        {
+          "label": "Remove vs Trainer",
+          "active": true
+        },
+        {
+          "label": "Apply vs Trainer",
+          "active": true
+        }
+      ],
+      "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+    },
+    {
+      "id": "cobble-clone-library",
+      "screenClass": "net.hodu.cobblenpc.client.CobbleCloneLibraryScreen",
+      "status": "captured_in_game",
+      "editorId": "cobble_npc:clone_library",
+      "entry": "registered editor source/target opener",
+      "actions": [
+        "wait:80",
+        "Save As",
+        "Follow applied JSON source",
+        "field:nameField=guide_trainer_clone",
+        "Confirm",
+        "wait:80",
+        "clear:chat"
+      ],
+      "width": 1920,
+      "height": 1080,
+      "visibleWidgetLabels": [
+        {
+          "label": "Back",
+          "active": true
+        },
+        {
+          "label": "Forward",
+          "active": false
+        },
+        {
+          "label": "Editors",
+          "active": true
+        },
+        {
+          "label": "Create New",
+          "active": false
+        },
+        {
+          "label": "Load",
+          "active": true
+        },
+        {
+          "label": "Save",
+          "active": false
+        },
+        {
+          "label": "Save As",
+          "active": true
+        },
+        {
+          "label": "Reset",
+          "active": true
+        },
+        {
+          "label": "Saved Clones",
+          "active": true
+        },
+        {
+          "label": "Filled Soul Stones",
+          "active": true
+        },
+        {
+          "label": "All",
+          "active": true
+        },
+        {
+          "label": "Trainer",
+          "active": true
+        },
+        {
+          "label": "Pokemon",
+          "active": true
+        },
+        {
+          "label": "Trainer & Pokemon Clone Library",
+          "active": true
+        },
+        {
+          "label": "Previous",
+          "active": false
+        },
+        {
+          "label": "Next",
+          "active": false
+        }
+      ],
+      "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+    }
+  ],
+  "notVerified": [
+    "Test Spawn or a Core spawner using this clone",
+    "Follow-source refresh after an edit"
+  ]
+}

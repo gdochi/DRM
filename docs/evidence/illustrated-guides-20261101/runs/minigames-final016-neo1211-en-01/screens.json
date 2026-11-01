@@ -1,0 +1,123 @@
+[
+  {
+    "id": "roulette-editor-rules",
+    "screenClass": "net.dochi.minigames.client.MinigameEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "Item Roulette",
+      "Rules"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New",
+        "active": true
+      },
+      {
+        "label": "Load JSON",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save as",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Test play",
+        "active": true
+      },
+      {
+        "label": "Presets",
+        "active": true
+      },
+      {
+        "label": "Monty Hall",
+        "active": true
+      },
+      {
+        "label": "Slots",
+        "active": true
+      },
+      {
+        "label": "Memory",
+        "active": true
+      },
+      {
+        "label": "Whack-a-Mole",
+        "active": true
+      },
+      {
+        "label": "Timing Challenge",
+        "active": true
+      },
+      {
+        "label": "High Low",
+        "active": true
+      },
+      {
+        "label": "Shooting Gallery",
+        "active": true
+      },
+      {
+        "label": "MWENT",
+        "active": true
+      },
+      {
+        "label": "Item Roulette",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Rules",
+        "active": true
+      },
+      {
+        "label": "Prize slots",
+        "active": true
+      },
+      {
+        "label": "Assets",
+        "active": true
+      },
+      {
+        "label": "Spin on block",
+        "active": true
+      },
+      {
+        "label": "Spin time (seconds)",
+        "active": true
+      },
+      {
+        "label": "Weighted chances: Off",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

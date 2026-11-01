@@ -1,0 +1,11 @@
+{
+  "run": "cobble-starter-neo1211-en-06",
+  "entry": "native Starter Selector editor Apply to NPC; empty-hand NPC interaction; native Choose This Pokemon button",
+  "result": [
+    {
+      "species": "cobblemon:bulbasaur",
+      "level": 5
+    }
+  ],
+  "limit": "This run verifies a grant; it does not verify one-time tag conditions or later file-following updates."
+}

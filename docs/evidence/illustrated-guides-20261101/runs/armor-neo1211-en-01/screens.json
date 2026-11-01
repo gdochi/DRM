@@ -1,0 +1,65 @@
+[
+  {
+    "id": "real-armor-damage",
+    "status": "verified_server_damage_reduced",
+    "detail": "{\"source\":\"real server LivingEntity.hurt with player_attack, base damage 10\",\"unarmoredAccepted\":true,\"armoredAccepted\":true,\"unarmoredHealthLoss\":10.0,\"ironArmorHealthLoss\":6.0,\"equipment\":\"iron helmet, chestplate, leggings and boots; no enchantments\"}"
+  },
+  {
+    "id": "armor-equipped",
+    "screenClass": "net.dochi.npc.client.NpcInventoryScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "fixture:armor-check",
+      "wait:20",
+      "next-screen:NpcInventoryScreen",
+      "Inventory \u0026 Equipment"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Equipment",
+        "active": true
+      },
+      {
+        "label": "Weapons",
+        "active": true
+      },
+      {
+        "label": "Name or namespace:item",
+        "active": true
+      },
+      {
+        "label": "Count",
+        "active": true
+      },
+      {
+        "label": "Storage slots (1–27)",
+        "active": true
+      },
+      {
+        "label": "Copy my equipment",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

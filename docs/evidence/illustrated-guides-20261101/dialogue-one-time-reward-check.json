@@ -1,0 +1,62 @@
+{
+  "run": "build\\task\\guide-capture\\dialogue-rewards-once-neo1211-en-03",
+  "environment": {
+    "minecraft": "1.21.1",
+    "loader": "NeoForge 21.1.259",
+    "locale": "en_us",
+    "actor": "dnpc",
+    "mods": [
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\jar\\dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar",
+        "sha256": "00adcf6446e36c47d36a691f1614806b5c05aee30f2523a2616db8a1bf9b29fe"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-neoforge-1.21.1.jar",
+        "sha256": "cf01bfc2203b755adc8a968ce760b4a01ed764e74d9e69be6da2e4ce85811d6a"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\geckolib-neoforge-1.21.1-4.9.2.jar",
+        "sha256": "5e548466af9ab6aca7a91a7c7d4dc0dc8bc385e22958aed5da0e7bebd0fa3fba"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\architectury-13.0.11-neoforge.jar",
+        "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb"
+      },
+      {
+        "source": "documentation capture fixture",
+        "sha256": "b1066f9b8b61be65e6c384d546d2e899034bffefdefd205b3de7621018ae1f19"
+      }
+    ],
+    "seededHudFiles": []
+  },
+  "procedure": "Native Item give 3 apples -> Tag add welcome_received; choice tag not condition; Save As; native NPC Apply Dialogue; actual choice click; server inventory/tag checks; reopen and inspect only Goodbye.",
+  "fileSha256": "0bc14f1e2cc113b56a210d7c5c34fc1b2aa3d6fbe3c42b79b1a391d648696837",
+  "verified": [
+    {
+      "id": "saved-file",
+      "status": "verified_file_exists",
+      "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\dialogue-rewards-once-neo1211-en-03\\game\\config\\dochi_rpg_maker\\dialogue_sets\\welcome_reward_once\\dialogue_set.json"
+    },
+    {
+      "id": "dialogue-reward",
+      "status": "verified_server_inventory_count",
+      "detail": "minecraft:apple=3"
+    },
+    {
+      "id": "dialogue-reward-tag",
+      "status": "verified_server_player_tag",
+      "detail": "welcome_received"
+    },
+    {
+      "id": "dialogue-reward-once",
+      "status": "verified_runtime_choice_hidden",
+      "detail": "[Goodbye.]"
+    },
+    {
+      "id": "dialogue-reward",
+      "status": "verified_server_inventory_count",
+      "detail": "minecraft:apple=3"
+    }
+  ],
+  "limits": "Verified same-session reinteraction. Restart persistence, separate players and external integrations not retested here."
+}

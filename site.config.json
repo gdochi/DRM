@@ -20,42 +20,99 @@
   },
   "homeTasks": [
     {
-      "label": "Create an NPC", "label_ko": "NPC 만들기",
-      "description": "Place your first NPC, then change its looks and equipment.", "description_ko": "NPC 한 명을 배치하고 외형과 장비를 바꿉니다.",
-      "links": [{ "product": "dochi-npc-core", "doc": "npc-core-setup", "label": "NPC Core", "label_ko": "NPC Core 사용법" }]
-    },
-    {
-      "label": "Make conversations and shops", "label_ko": "대화·상점 만들기",
-      "description": "Give an NPC dialogue choices and a shop of your own.", "description_ko": "NPC에게 대화 선택지와 내 상점을 붙입니다.",
+      "label": "Create an NPC",
+      "label_ko": "NPC 만들기",
+      "description": "Place your first NPC, then change its looks and equipment.",
+      "description_ko": "NPC 한 명을 배치하고 외형과 장비를 바꿉니다.",
       "links": [
-        { "product": "core-fabric", "doc": "quick-start", "label": "Fabric / NeoForge" },
-        { "product": "core", "doc": "quick-start", "label": "Forge 1.20.1" }
+        {
+          "product": "dochi-npc-core",
+          "doc": "npc-core-setup",
+          "label": "NPC Core",
+          "label_ko": "NPC Core 사용법"
+        }
       ]
     },
     {
-      "label": "Make a Pokémon trainer", "label_ko": "포켓몬 트레이너 만들기",
-      "description": "Set a trainer's Pokémon and start your first battle.", "description_ko": "NPC의 포켓몬을 정하고 첫 배틀을 시작합니다.",
-      "links": [{ "product": "drm-cobblemon-editor", "doc": "cobblemon-editor-setup", "label": "Cobblemon Editor" }]
-    },
-    {
-      "label": "Build NPC combat", "label_ko": "NPC 전투 만들기",
-      "description": "Equip a gun or build an enemy's attack patterns.", "description_ko": "NPC에게 총을 들려주거나 적의 공격 패턴을 만듭니다.",
+      "label": "Make conversations and shops",
+      "label_ko": "대화·상점 만들기",
+      "description": "Give an NPC dialogue choices and a shop of your own.",
+      "description_ko": "NPC에게 대화 선택지와 내 상점을 붙입니다.",
       "links": [
-        { "product": "dochi-warfare", "doc": "warfare-setup", "label": "Guns · Warfare", "label_ko": "총기 · Warfare" },
-        { "product": "mob-editor", "doc": "mob-editor-setup", "label": "Patterns · BattleWorks", "label_ko": "패턴 · BattleWorks" }
+        {
+          "product": "core-fabric",
+          "doc": "quick-start",
+          "label": "Fabric / NeoForge"
+        },
+        {
+          "product": "core",
+          "doc": "quick-start",
+          "label": "Forge 1.20.1"
+        }
       ]
     },
     {
-      "label": "Control mob spawning", "label_ko": "몹 등장 설정하기",
-      "description": "Choose which mobs appear, where and when.", "description_ko": "어떤 몹이 어디서, 언제 등장할지 정합니다.",
-      "links": [{ "product": "dochi-spawn-control", "doc": "dochi-spawn-control-setup", "label": "Spawn Control" }]
+      "label": "Make a Pokémon trainer",
+      "label_ko": "포켓몬 트레이너 만들기",
+      "description": "Set a trainer's Pokémon and start your first battle.",
+      "description_ko": "NPC의 포켓몬을 정하고 첫 배틀을 시작합니다.",
+      "links": [
+        {
+          "product": "drm-cobblemon-editor",
+          "doc": "cobblemon-editor-setup",
+          "label": "Cobblemon Editor"
+        }
+      ]
     },
     {
-      "label": "Set up a minigame", "label_ko": "미니게임 만들기",
-      "description": "Place game tables, choose rewards or learn MWENT.", "description_ko": "게임 테이블과 보상을 정하거나 MWENT를 시작합니다.",
+      "label": "Build NPC combat",
+      "label_ko": "NPC 전투 만들기",
+      "description": "Equip a gun or build an enemy's attack patterns.",
+      "description_ko": "NPC에게 총을 들려주거나 적의 공격 패턴을 만듭니다.",
       "links": [
-        { "product": "dochi-minigames", "doc": "minigames-setup", "label": "Minigames" },
-        { "product": "mwent", "doc": "start", "label": "MWENT" }
+        {
+          "product": "dochi-warfare",
+          "doc": "warfare-setup",
+          "label": "Guns · Warfare",
+          "label_ko": "총기 · Warfare"
+        },
+        {
+          "product": "mob-editor",
+          "doc": "mob-editor-setup",
+          "label": "Patterns · BattleWorks",
+          "label_ko": "패턴 · BattleWorks"
+        }
+      ]
+    },
+    {
+      "label": "Control mob spawning",
+      "label_ko": "몹 등장 설정하기",
+      "description": "Choose which mobs appear, where and when.",
+      "description_ko": "어떤 몹이 어디서, 언제 등장할지 정합니다.",
+      "links": [
+        {
+          "product": "dochi-spawn-control",
+          "doc": "dochi-spawn-control-setup",
+          "label": "Spawn Control"
+        }
+      ]
+    },
+    {
+      "label": "Set up a minigame",
+      "label_ko": "미니게임 만들기",
+      "description": "Place game tables, choose rewards or learn MWENT.",
+      "description_ko": "게임 테이블과 보상을 정하거나 MWENT를 시작합니다.",
+      "links": [
+        {
+          "product": "dochi-minigames",
+          "doc": "minigames-setup",
+          "label": "Minigames"
+        },
+        {
+          "product": "mwent",
+          "doc": "start",
+          "label": "MWENT"
+        }
       ]
     }
   ],
@@ -313,15 +370,19 @@
   ],
   "locales": {
     "pt": {
-      "label": "Português", "shortLabel": "PT", "htmlLang": "pt-BR",
+      "label": "Português",
+      "shortLabel": "PT",
+      "htmlLang": "pt-BR",
       "description": "Guias dos mods Dochi: NPCs, diálogos, lojas, missões, combate e minijogos."
     },
     "es": {
-      "label": "Español", "shortLabel": "ES",
+      "label": "Español",
+      "shortLabel": "ES",
       "description": "Guías de los mods Dochi: NPCs, diálogos, tiendas, misiones, combate y minijuegos."
     },
     "fr": {
-      "label": "Français", "shortLabel": "FR",
+      "label": "Français",
+      "shortLabel": "FR",
       "description": "Guides des mods Dochi : PNJ, dialogues, boutiques, quêtes, combats et mini-jeux."
     },
     "en": {

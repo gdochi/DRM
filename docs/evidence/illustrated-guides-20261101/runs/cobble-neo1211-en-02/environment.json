@@ -1,0 +1,39 @@
+{
+  "minecraft": "1.21.1",
+  "loader": "NeoForge 21.1.259",
+  "locale": "en_us",
+  "mods": [
+    {
+      "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\jar\\dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar",
+      "sha256": "00adcf6446e36c47d36a691f1614806b5c05aee30f2523a2616db8a1bf9b29fe"
+    },
+    {
+      "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.2-neoforge-1.21.1.jar",
+      "sha256": "646e1f5f12c3bb367bc66fb3c9efd711b1a0d60789731bdb067d7655d2aeb9b6"
+    },
+    {
+      "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\geckolib-neoforge-1.21.1-4.9.2.jar",
+      "sha256": "5e548466af9ab6aca7a91a7c7d4dc0dc8bc385e22958aed5da0e7bebd0fa3fba"
+    },
+    {
+      "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\architectury-13.0.11-neoforge.jar",
+      "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb"
+    },
+    {
+      "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Cobblemon Editor\\jar\\dochi_cobblemon_editor-0.2.9-neoforge-1.21.1.jar",
+      "sha256": "4433aa44d3770e2a9decac1c04fd3e0b7ef63e91e6126e6ed8124e9803fe1077"
+    },
+    {
+      "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Cobblemon Editor\\libs\\Cobblemon-neoforge-1.8.4+1.21.1.jar",
+      "sha256": "89306baca7b4332fc4dcc448507b45ca0133254c70f77990a63c500ed9a7b863"
+    },
+    {
+      "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\kotlinforforge-5.12.0-all.jar",
+      "sha256": "095aed94f21b4e55895b21ea957750ae3ab829fbcfc6d3c66a3489f5f1128d46"
+    },
+    {
+      "source": "documentation capture fixture",
+      "sha256": "fb4d0a0792a70603cc686795e49a590956f5424765c08f56e0ee59cdc707fc57"
+    }
+  ]
+}

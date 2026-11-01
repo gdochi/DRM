@@ -1,0 +1,24 @@
+{
+  "run": "spawn-map-neo1211-en-03",
+  "environment": "MapIcon 0.1.2 / DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1 / Xaero Minimap 26.6.0 / Xaero World Map 1.47.0",
+  "entry": "Native NPC-only MapIconEditorScreen and Save acknowledgement",
+  "receivedMarker": {
+    "id": 3,
+    "uuid": "1a9c62ee-3303-4eb6-874a-1d2b4d30aa03",
+    "dimension": "minecraft:overworld",
+    "name": "Oakridge guide",
+    "x": 16.5,
+    "y": -60.0,
+    "z": 17.5,
+    "icon": {
+      "texture": "dochi_rpg_maker:textures/icons/nikoichu/rpg_character_humanoid.png",
+      "size": 16,
+      "color": 4896767,
+      "minimap": true,
+      "worldmap": true,
+      "showName": true
+    }
+  },
+  "renderVerified": "Blue humanoid marker visible in actual Xaero minimap capture",
+  "scope": "Xaero minimap only. World map rendering and JourneyMap not verified by this capture."
+}

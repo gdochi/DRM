@@ -1,0 +1,62 @@
+[
+  {
+    "id": "dialogue-item-reward-editor",
+    "screen": "DialogueEditorScreen",
+    "actions": [
+      "node:dialogue_1",
+      "Choices",
+      "input:choiceLabel=Receive three apples",
+      "Choice actions",
+      "Type: Goto",
+      "drm-choice:item",
+      "input:action.itemId=minecraft:apple",
+      "scroll-page:-4",
+      "input:action.count=3",
+      "Save As",
+      "input:setName=welcome_reward",
+      "Save As",
+      "wait:60",
+      "verify:file=config/dochi_rpg_maker/dialogue_sets/welcome_reward/dialogue_set.json",
+      "clear:chat",
+      "scroll-page:-5"
+    ]
+  },
+  {
+    "id": "dialogue-item-reward-result",
+    "screen": "NpcApplyTargetScreen",
+    "actions": [
+      "candidate:welcome_reward",
+      "Apply Dialogue",
+      "wait:60",
+      "fixture:empty-inventory",
+      "wait:40",
+      "fixture:approach-npc",
+      "wait:40",
+      "look-at:npc",
+      "interact:npc",
+      "wait:140",
+      "next-screen:@closed",
+      "runtime-choice:Receive three apples",
+      "wait:80",
+      "verify:apple-reward",
+      "wait:60",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "dialogue-choice-condition-tag",
+    "screen": "DialogueEditorScreen",
+    "actions": [
+      "node:dialogue_1",
+      "Choices",
+      "Condition list",
+      "Add",
+      "input:choiceCond.key=welcome_received",
+      "Op: has",
+      "drm-choice:not",
+      "Info",
+      "Choices",
+      "Condition list"
+    ]
+  }
+]

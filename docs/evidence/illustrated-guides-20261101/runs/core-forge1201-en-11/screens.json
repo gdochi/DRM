@@ -1,0 +1,52 @@
+[
+  {
+    "id": "currency-emerald-prices",
+    "screenClass": "net.dochi.gameeditor.client.CurrencyEditorScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "itemSearch",
+      "Mod: All",
+      "Category: All",
+      "Select Visible",
+      "Clear Selection",
+      "Add Selected (3)",
+      "Close"
+    ],
+    "attemptedActions": [
+      "Item Prices (0)",
+      "Add Item",
+      "input:itemSearch\u003dminecraft:emerald",
+      "Select Visible",
+      "Add Selected (1)"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active labeled control \u0027Add Selected (1)\u0027 in CurrencyEditorScreen"
+  },
+  {
+    "id": "gui-vanilla-buttons",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "editorId": "gui_maker",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Button Config",
+      "Choice / choice_box : Custom"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Choice / choice_box : Vanilla",
+        "active": true
+      },
+      {
+        "label": "Done",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

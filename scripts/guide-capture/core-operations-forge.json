@@ -1,0 +1,7 @@
+[
+  {"id":"admin-server-policy","class":"net.dochi.gameeditor.client.DochiRpgMakerConfigScreen","actions":["Admin","wait:60","Enable DRM Admin","Apply","wait:60","clear:chat"]},
+  {"id":"admin-overview","screen":"@admin","actions":["wait:60","clear:chat"]},
+  {"id":"admin-tag-added","screen":"@admin","actions":["wait:60","admin-tab:tags","wait:20","input:keyBox=welcome_received","Add","wait:60","verify:reward-tag","clear:chat"]},
+  {"id":"gui-image-assets","editor":"gui_maker","actions":["+ Image","find:Asset:","wait:80"]},
+  {"id":"core-npc-spawner-limits","screen":"@core-spawner","actions":["wait:60","[ Spawn ]","clear:chat"]}
+]

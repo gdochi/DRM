@@ -1,0 +1,88 @@
+[
+  {
+    "id": "dnpc-cooking-beef",
+    "screenClass": "net.dochi.npc.client.NpcCookingRecipeScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Schedule",
+      "Add time",
+      "+",
+      "type:Cooking",
+      "key:enter",
+      "verify:work\u003dCOOK",
+      "next-screen:NpcCookingRecipeScreen",
+      "Select food recipe and inspect ingredients",
+      "wait:100",
+      "field:search\u003dminecraft:cooked_beef",
+      "recipe:minecraft:cooked_beef",
+      "wait:60"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Search",
+        "active": true
+      },
+      {
+        "label": "All",
+        "active": true
+      },
+      {
+        "label": "Cooking pot",
+        "active": true
+      },
+      {
+        "label": "Stove / skillet",
+        "active": true
+      },
+      {
+        "label": "Cutting board",
+        "active": true
+      },
+      {
+        "label": "Smoker",
+        "active": true
+      },
+      {
+        "label": "Furnace",
+        "active": true
+      },
+      {
+        "label": "Pizza worktop",
+        "active": true
+      },
+      {
+        "label": "Cheese mold",
+        "active": true
+      },
+      {
+        "label": "Refresh recipes",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Steak × 1",
+        "active": true
+      },
+      {
+        "label": "Steak × 1",
+        "active": true
+      },
+      {
+        "label": "Steak × 1",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

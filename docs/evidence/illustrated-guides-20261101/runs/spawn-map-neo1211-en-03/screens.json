@@ -1,0 +1,904 @@
+[
+  {
+    "id": "spawn-conditions",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Conditions"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Get Spawner",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Spawn Target",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "Spawn Settings",
+        "active": true
+      },
+      {
+        "label": "Destruction",
+        "active": true
+      },
+      {
+        "label": "Effects",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Interval",
+        "active": true
+      },
+      {
+        "label": "Initial delay (ticks)",
+        "active": true
+      },
+      {
+        "label": "Minimum interval (ticks)",
+        "active": true
+      },
+      {
+        "label": "Maximum interval (ticks)",
+        "active": true
+      },
+      {
+        "label": "Shared Conditions",
+        "active": true
+      },
+      {
+        "label": "On",
+        "active": true
+      },
+      {
+        "label": "Off",
+        "active": true
+      },
+      {
+        "label": "Minimum players",
+        "active": true
+      },
+      {
+        "label": "Minimum player distance",
+        "active": true
+      },
+      {
+        "label": "Activation distance",
+        "active": true
+      },
+      {
+        "label": "Exit distance",
+        "active": true
+      },
+      {
+        "label": "Start time (0–23999)",
+        "active": true
+      },
+      {
+        "label": "End time (0–23999)",
+        "active": true
+      },
+      {
+        "label": "Any",
+        "active": true
+      },
+      {
+        "label": "Ignore",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-settings",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Spawn Settings"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Get Spawner",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Spawn Target",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "Spawn Settings",
+        "active": true
+      },
+      {
+        "label": "Destruction",
+        "active": true
+      },
+      {
+        "label": "Effects",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Maximum owned entities",
+        "active": true
+      },
+      {
+        "label": "Total spawn limit (0 \u003d unlimited)",
+        "active": true
+      },
+      {
+        "label": "Spawn radius",
+        "active": true
+      },
+      {
+        "label": "Vertical range",
+        "active": true
+      },
+      {
+        "label": "Minimum Y",
+        "active": true
+      },
+      {
+        "label": "Maximum Y",
+        "active": true
+      },
+      {
+        "label": "Ground",
+        "active": true
+      },
+      {
+        "label": "Off",
+        "active": true
+      },
+      {
+        "label": "Position attempts per entity",
+        "active": true
+      },
+      {
+        "label": "Biome / #tag (optional)",
+        "active": true
+      },
+      {
+        "label": "Combined",
+        "active": true
+      },
+      {
+        "label": "Minimum light",
+        "active": true
+      },
+      {
+        "label": "Maximum light",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-destruction",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Destruction"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Get Spawner",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Spawn Target",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "Spawn Settings",
+        "active": true
+      },
+      {
+        "label": "Destruction",
+        "active": true
+      },
+      {
+        "label": "Effects",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Harvest",
+        "active": true
+      },
+      {
+        "label": "Off",
+        "active": true
+      },
+      {
+        "label": "Maximum health",
+        "active": false
+      },
+      {
+        "label": "Mining hardness",
+        "active": true
+      },
+      {
+        "label": "Any",
+        "active": true
+      },
+      {
+        "label": "Hitbox width",
+        "active": false
+      },
+      {
+        "label": "Hitbox height",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-effects",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Effects"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Get Spawner",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Spawn Target",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "Spawn Settings",
+        "active": true
+      },
+      {
+        "label": "Destruction",
+        "active": true
+      },
+      {
+        "label": "Effects",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "On",
+        "active": false
+      },
+      {
+        "label": "Particles per hit",
+        "active": false
+      },
+      {
+        "label": "Particle type",
+        "active": false
+      },
+      {
+        "label": "Choose Particle type",
+        "active": false
+      },
+      {
+        "label": "Particle data",
+        "active": false
+      },
+      {
+        "label": "Off",
+        "active": false
+      },
+      {
+        "label": "Hit sound ID",
+        "active": false
+      },
+      {
+        "label": "Choose Hit sound ID",
+        "active": false
+      },
+      {
+        "label": "Hit volume",
+        "active": false
+      },
+      {
+        "label": "Hit pitch",
+        "active": false
+      },
+      {
+        "label": "Off",
+        "active": true
+      },
+      {
+        "label": "Destruction sound ID",
+        "active": false
+      },
+      {
+        "label": "Choose Destruction sound ID",
+        "active": false
+      },
+      {
+        "label": "Destruction volume",
+        "active": false
+      },
+      {
+        "label": "Destruction pitch",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "spawn-appearance",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "spawn_control_spawner",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Appearance"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Get Spawner",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Spawn Target",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "Spawn Settings",
+        "active": true
+      },
+      {
+        "label": "Destruction",
+        "active": true
+      },
+      {
+        "label": "Effects",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Block",
+        "active": true
+      },
+      {
+        "label": "Model",
+        "active": true
+      },
+      {
+        "label": "Choose Model",
+        "active": true
+      },
+      {
+        "label": "Model scale",
+        "active": true
+      },
+      {
+        "label": "Model rotation",
+        "active": true
+      },
+      {
+        "label": "Model vertical offset",
+        "active": true
+      },
+      {
+        "label": "Block properties (JSON)",
+        "active": true
+      },
+      {
+        "label": "Model NBT (SNBT)",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "mapicon-rule-added",
+    "screenClass": "net.dochi.mapicon.client.MapIconEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_mapicon_integration:icons",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "JSON Rules",
+      "Add rule"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save \u0026 Apply",
+        "active": true
+      },
+      {
+        "label": "Save As \u0026 Apply",
+        "active": true
+      },
+      {
+        "label": "Reload saved settings",
+        "active": true
+      },
+      {
+        "label": "Type defaults",
+        "active": true
+      },
+      {
+        "label": "JSON Rules",
+        "active": true
+      },
+      {
+        "label": "Selected NPC",
+        "active": false
+      },
+      {
+        "label": "Search",
+        "active": true
+      },
+      {
+        "label": "Add rule",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Rule name",
+        "active": true
+      },
+      {
+        "label": "Rule visibility",
+        "active": true
+      },
+      {
+        "label": "NPC Shop JSON",
+        "active": true
+      },
+      {
+        "label": "JSON file (empty \u003d all)",
+        "active": true
+      },
+      {
+        "label": "Find",
+        "active": true
+      },
+      {
+        "label": "Priority",
+        "active": true
+      },
+      {
+        "label": "Use type icon",
+        "active": true
+      },
+      {
+        "label": "Texture resource (namespace:textures/...png)",
+        "active": true
+      },
+      {
+        "label": "Choose icon",
+        "active": true
+      },
+      {
+        "label": "Size (8–64)",
+        "active": true
+      },
+      {
+        "label": "Tint (RRGGBB)",
+        "active": true
+      },
+      {
+        "label": "Choose color",
+        "active": true
+      },
+      {
+        "label": "Minimap",
+        "active": true
+      },
+      {
+        "label": "World map",
+        "active": true
+      },
+      {
+        "label": "Show name",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "mapicon-npc",
+    "status": "verified_received_npc_marker",
+    "detail": ""
+  },
+  {
+    "id": "mapicon-npc-saved",
+    "screenClass": "net.dochi.mapicon.client.MapIconEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:60",
+      "Save",
+      "wait:80",
+      "verify:map-marker",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": false
+      },
+      {
+        "label": "New",
+        "active": false
+      },
+      {
+        "label": "Load",
+        "active": false
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As \u0026 Apply",
+        "active": false
+      },
+      {
+        "label": "Reload saved settings",
+        "active": true
+      },
+      {
+        "label": "Selected NPC",
+        "active": true
+      },
+      {
+        "label": "Icon",
+        "active": true
+      },
+      {
+        "label": "Texture resource (namespace:textures/...png)",
+        "active": true
+      },
+      {
+        "label": "Choose icon",
+        "active": true
+      },
+      {
+        "label": "Size (8–64)",
+        "active": true
+      },
+      {
+        "label": "Tint (RRGGBB)",
+        "active": true
+      },
+      {
+        "label": "Choose color",
+        "active": true
+      },
+      {
+        "label": "Minimap",
+        "active": true
+      },
+      {
+        "label": "World map",
+        "active": true
+      },
+      {
+        "label": "Show name",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "mapicon-npc",
+    "status": "verified_received_npc_marker",
+    "detail": ""
+  },
+  {
+    "id": "mapicon-minimap",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:60",
+      "Save",
+      "wait:80",
+      "fixture:map-position",
+      "close:screen",
+      "wait:120",
+      "verify:map-marker",
+      "look-at:npc",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

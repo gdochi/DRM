@@ -1,0 +1,8 @@
+[
+  {"id":"battleworks-simulation-built", "editor":"battleworks", "target":true, "actions":["Create New","Pattern Build Assist","Beginner","Wide Sweep","Measured","Create Pattern","Simulation","verify:bw-simulation","wait:40"]},
+  {"id":"battleworks-hitbox-geometry", "editor":"battleworks", "target":true, "actions":["Create New","Pattern Build Assist","Beginner","Wide Sweep","Measured","Create Pattern","Hitbox Library","bw-fold-scene"]},
+  {"id":"battleworks-manager", "editor":"battleworks", "actions":["Combat Rules","Manager"]},
+  {"id":"battleworks-phases", "editor":"battleworks", "actions":["Combat Rules","Boss Phases"]},
+  {"id":"battleworks-death", "editor":"battleworks", "actions":["Combat Rules","Death"]},
+  {"id":"battleworks-particles", "editor":"particle_maker"}
+]

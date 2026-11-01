@@ -1,0 +1,3 @@
+[
+  {"id":"gui-custom-png-applied","editor":"gui_maker","actions":["fixture:asset-file","+ Image","find:Asset:","Refresh","wait:60","input:assetSearch=guide_icon","wait:80","snapshot:gui-custom-png-search","Apply","wait:40","verify:gui-image","Save As","input:guiExportName=guide_image","Save As","wait:60","verify:file=config/dochi_rpg_maker/gui/guide_image.json","clear:chat"]}
+]

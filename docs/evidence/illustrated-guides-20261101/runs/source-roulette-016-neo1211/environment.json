@@ -1,0 +1,39 @@
+{
+  "minecraft": "1.21.1",
+  "loader": "NeoForge",
+  "version": "0.1.6",
+  "mods": [
+    {
+      "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Minigames\\jar\\dochi_minigames-0.1.6-neoforge-1.21.1.jar",
+      "sha256": "aa24a6d1ba45bd14d1c9f8b033d9beded2f350369dd6fcb6256e8629605937b9"
+    }
+  ],
+  "sourceVerification": {
+    "report": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Minigames\\build\\task\\roulette\\roulette-release-verification.json",
+    "sha256": "283e78c1f4e4f867ce4326c5bd5f300cf597bb3379190b885508bea60b8051d6",
+    "checks": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Minigames\\build\\task\\roulette\\neoforge-angular-native\\checks.json",
+    "checksSha256": "3efbb071a617633b4395a3d0eb2566266daeabae9d35d72af347919e96deff13",
+    "nativeChecks": 48
+  },
+  "originals": [
+    {
+      "id": "roulette-native-world-stopped",
+      "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Minigames\\build\\task\\roulette\\neoforge-angular-native\\roulette-native-world-stopped.png",
+      "sha256": "ca9b0f13b12ac1bfb18798678ab86bc34ca904259ff8275682cd80cc5080406b",
+      "origin": "project native QA original; not captured by documentation fixture"
+    },
+    {
+      "id": "roulette-native-entry",
+      "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Minigames\\build\\task\\roulette\\neoforge-angular-native\\roulette-native-entry.png",
+      "sha256": "8cbe1221f9551e737d003aee00d02a5bdfacb6a6439651e12ef80cf74fade342",
+      "origin": "project native QA original; not captured by documentation fixture"
+    },
+    {
+      "id": "roulette-native-editor-prizes",
+      "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Minigames\\build\\task\\roulette\\neoforge-angular-native\\roulette-native-editor-prizes.png",
+      "sha256": "b0737ddce6532a611468f3deb7c31903bf05a9cb52d3146c9bbafbbb54fd408d",
+      "origin": "project native QA original; not captured by documentation fixture"
+    }
+  ],
+  "note": "Original native in-game captures from project QA; source reports checked, originals opened before adoption. Not a new docs-owned game run."
+}

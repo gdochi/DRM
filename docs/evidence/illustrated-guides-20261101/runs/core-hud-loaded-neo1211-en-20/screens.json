@@ -1,0 +1,17 @@
+[
+  {
+    "id": "hud-loaded-world",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "fixture:survival",
+      "wait:80",
+      "diagnose:hud",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

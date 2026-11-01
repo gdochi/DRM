@@ -1,0 +1,632 @@
+[
+  {
+    "id": "minigames-card-basic",
+    "screenClass": "net.dochi.minigames.client.CardDesignerScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:cards",
+    "entry": "registered editor source/target opener",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load JSON",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": false
+      },
+      {
+        "label": "Save as",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Archive / restore",
+        "active": false
+      },
+      {
+        "label": "Basic",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Stats",
+        "active": true
+      },
+      {
+        "label": "Abilities",
+        "active": true
+      },
+      {
+        "label": "Custom cards",
+        "active": true
+      },
+      {
+        "label": "Search profiles",
+        "active": true
+      },
+      {
+        "label": "Name",
+        "active": false
+      },
+      {
+        "label": "Entity",
+        "active": false
+      },
+      {
+        "label": "Volkar Empire",
+        "active": false
+      },
+      {
+        "label": "Description",
+        "active": false
+      },
+      {
+        "label": "Browse",
+        "active": false
+      },
+      {
+        "label": "Delete: Original card for appearance variant",
+        "active": false
+      },
+      {
+        "label": "Select row",
+        "active": false
+      },
+      {
+        "label": "Add",
+        "active": false
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Guard",
+        "active": false
+      },
+      {
+        "label": "Select row",
+        "active": false
+      },
+      {
+        "label": "Guard",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "minigames-card-stats",
+    "screenClass": "net.dochi.minigames.client.CardDesignerScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:cards",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Stats"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load JSON",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": false
+      },
+      {
+        "label": "Save as",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Archive / restore",
+        "active": false
+      },
+      {
+        "label": "Basic",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Stats",
+        "active": true
+      },
+      {
+        "label": "Abilities",
+        "active": true
+      },
+      {
+        "label": "Custom cards",
+        "active": true
+      },
+      {
+        "label": "Search profiles",
+        "active": true
+      },
+      {
+        "label": "Initial counter",
+        "active": false
+      },
+      {
+        "label": "Initial timer",
+        "active": false
+      },
+      {
+        "label": "Browse",
+        "active": false
+      },
+      {
+        "label": "Delete: Next round form",
+        "active": false
+      },
+      {
+        "label": "Veil: Off",
+        "active": false
+      },
+      {
+        "label": "Immunity: Off",
+        "active": false
+      },
+      {
+        "label": "Resilience: Off",
+        "active": false
+      },
+      {
+        "label": "Doomed: Off",
+        "active": false
+      },
+      {
+        "label": "Power",
+        "active": false
+      },
+      {
+        "label": "Armor",
+        "active": false
+      },
+      {
+        "label": "Select row",
+        "active": false
+      },
+      {
+        "label": "Add",
+        "active": false
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Salvage · 1",
+        "active": false
+      },
+      {
+        "label": "Select row",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "minigames-card-abilities",
+    "screenClass": "net.dochi.minigames.client.CardDesignerScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:cards",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Abilities"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load JSON",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": false
+      },
+      {
+        "label": "Save as",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Archive / restore",
+        "active": false
+      },
+      {
+        "label": "Basic",
+        "active": true
+      },
+      {
+        "label": "Appearance",
+        "active": true
+      },
+      {
+        "label": "Stats",
+        "active": true
+      },
+      {
+        "label": "Abilities",
+        "active": true
+      },
+      {
+        "label": "Custom cards",
+        "active": true
+      },
+      {
+        "label": "Search profiles",
+        "active": true
+      },
+      {
+        "label": "Select row",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Copy",
+        "active": false
+      },
+      {
+        "label": "Existing card abilities",
+        "active": true
+      },
+      {
+        "label": "Boost",
+        "active": false
+      },
+      {
+        "label": "Amount",
+        "active": false
+      },
+      {
+        "label": "None",
+        "active": false
+      },
+      {
+        "label": "Order amount",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "minigames-card-packs",
+    "screenClass": "net.dochi.minigames.client.CardPackEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:card_packs",
+    "entry": "registered editor source/target opener",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New",
+        "active": true
+      },
+      {
+        "label": "Load JSON",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save as",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Get saved pack",
+        "active": true
+      },
+      {
+        "label": "Pack name",
+        "active": true
+      },
+      {
+        "label": "Pack design 1",
+        "active": true
+      },
+      {
+        "label": "Pack design 2",
+        "active": true
+      },
+      {
+        "label": "Pack design 3",
+        "active": true
+      },
+      {
+        "label": "Pack design 4",
+        "active": true
+      },
+      {
+        "label": "Pack design 5",
+        "active": true
+      },
+      {
+        "label": "Pack design 6",
+        "active": true
+      },
+      {
+        "label": "Pack design 7",
+        "active": true
+      },
+      {
+        "label": "Pack design 8",
+        "active": true
+      },
+      {
+        "label": "Search cards",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Opening: Choice",
+        "active": true
+      },
+      {
+        "label": "Guaranteed cards: 4",
+        "active": true
+      },
+      {
+        "label": "Choice options: 3",
+        "active": true
+      },
+      {
+        "label": "Copies",
+        "active": true
+      },
+      {
+        "label": "Copies",
+        "active": true
+      },
+      {
+        "label": "Copies",
+        "active": true
+      },
+      {
+        "label": "Copies",
+        "active": true
+      },
+      {
+        "label": "Copies",
+        "active": true
+      },
+      {
+        "label": "Copies",
+        "active": true
+      },
+      {
+        "label": "Copies",
+        "active": true
+      },
+      {
+        "label": "Copies",
+        "active": true
+      },
+      {
+        "label": "Copies",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "armor-config",
+    "screenClass": "com.hodu.cnpcrealarmor.client.CnpcRealArmorConfigScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "General Armor",
+        "active": true
+      },
+      {
+        "label": "NPC Compatibility",
+        "active": true
+      },
+      {
+        "label": "Done",
+        "active": true
+      },
+      {
+        "label": "Enable armor calculation: ON",
+        "active": true
+      },
+      {
+        "label": "Body-part armor: OFF",
+        "active": true
+      },
+      {
+        "label": "Damage armor items: ON",
+        "active": true
+      },
+      {
+        "label": "Armor toughness: ON",
+        "active": true
+      },
+      {
+        "label": "Protection enchantments: ON",
+        "active": true
+      },
+      {
+        "label": "Armor knockback resistance: ON",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "shared-config",
+    "screenClass": "net.dochi.gameeditor.client.DochiRpgMakerConfigScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Core",
+        "active": true
+      },
+      {
+        "label": "Admin",
+        "active": true
+      },
+      {
+        "label": "Keyboard shortcuts",
+        "active": true
+      },
+      {
+        "label": "Dochi`s Npc Core",
+        "active": true
+      },
+      {
+        "label": "Dochi Real Armor",
+        "active": true
+      },
+      {
+        "label": "Minigames",
+        "active": true
+      },
+      {
+        "label": "Reload JSON on trigger",
+        "active": true
+      },
+      {
+        "label": "Manual reload command",
+        "active": true
+      },
+      {
+        "label": "Texture",
+        "active": true
+      },
+      {
+        "label": "Classic",
+        "active": true
+      },
+      {
+        "label": "Interface sounds",
+        "active": true
+      },
+      {
+        "label": "Text shadow",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

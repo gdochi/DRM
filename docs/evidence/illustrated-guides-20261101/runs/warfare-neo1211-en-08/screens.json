@@ -1,0 +1,429 @@
+[
+  {
+    "id": "dw-gun",
+    "screenClass": "net.dochi.tacznpcfire.client.TaczNpcFireConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "OFF",
+      "fixture:gun",
+      "Gun",
+      "gun-slot:0"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Overview",
+        "active": true
+      },
+      {
+        "label": "Senses",
+        "active": true
+      },
+      {
+        "label": "Pose",
+        "active": true
+      },
+      {
+        "label": "Cover",
+        "active": true
+      },
+      {
+        "label": "Ammo",
+        "active": true
+      },
+      {
+        "label": "Gun",
+        "active": true
+      },
+      {
+        "label": "Armor",
+        "active": true
+      },
+      {
+        "label": "Melee",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Visual \u0026 FX",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DW Editors",
+        "active": true
+      },
+      {
+        "label": "New draft",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset draft",
+        "active": true
+      },
+      {
+        "label": "Clone",
+        "active": true
+      },
+      {
+        "label": "Start a guided tour of the current editor section.",
+        "active": true
+      },
+      {
+        "label": "Toggle hover explanations.|ON shows descriptions when your cursor is over controls.",
+        "active": true
+      },
+      {
+        "label": "Easy Build",
+        "active": true
+      },
+      {
+        "label": "Presets",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      },
+      {
+        "label": "Remove Weapon",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      },
+      {
+        "label": "Ranged Damage: Gun Spec",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dw-fire",
+    "screenClass": "net.dochi.tacznpcfire.client.TaczNpcFireConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "OFF",
+      "Senses",
+      "quick-nav:Fire Modes"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Overview",
+        "active": true
+      },
+      {
+        "label": "Senses",
+        "active": true
+      },
+      {
+        "label": "Pose",
+        "active": true
+      },
+      {
+        "label": "Cover",
+        "active": true
+      },
+      {
+        "label": "Ammo",
+        "active": true
+      },
+      {
+        "label": "Gun",
+        "active": true
+      },
+      {
+        "label": "Armor",
+        "active": true
+      },
+      {
+        "label": "Melee",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Visual \u0026 FX",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DW Editors",
+        "active": true
+      },
+      {
+        "label": "New draft",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset draft",
+        "active": true
+      },
+      {
+        "label": "Clone",
+        "active": true
+      },
+      {
+        "label": "Start a guided tour of the current editor section.",
+        "active": true
+      },
+      {
+        "label": "Toggle hover explanations.|ON shows descriptions when your cursor is over controls.",
+        "active": true
+      },
+      {
+        "label": "Easy Build",
+        "active": true
+      },
+      {
+        "label": "Presets",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      },
+      {
+        "label": "Mode: General",
+        "active": true
+      },
+      {
+        "label": "Idle Movement: Stationary",
+        "active": true
+      },
+      {
+        "label": "Pose Mapping...",
+        "active": true
+      },
+      {
+        "label": "Detect Distance",
+        "active": true
+      },
+      {
+        "label": "Detect Angle",
+        "active": true
+      },
+      {
+        "label": "Combat Delay Ms",
+        "active": true
+      },
+      {
+        "label": "Instant Combat Angle",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      },
+      {
+        "label": "Close Detect Distance",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Faction Alert Radius",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Idle Facing Yaw",
+        "active": true
+      },
+      {
+        "label": "Stance: 3 - Auto",
+        "active": true
+      },
+      {
+        "label": "Engagement: Hold",
+        "active": true
+      },
+      {
+        "label": "Melee Switch Range",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Burst Minimum Shots",
+        "active": true
+      },
+      {
+        "label": "Burst Pause Ms",
+        "active": true
+      },
+      {
+        "label": "Burst Maximum Shots",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Suppression Time Ms",
+        "active": true
+      },
+      {
+        "label": "Post-Fire Watch Ms",
+        "active": true
+      },
+      {
+        "label": "Ally Spacing",
+        "active": true
+      },
+      {
+        "label": "Approach Distance",
+        "active": true
+      },
+      {
+        "label": "Retreat Distance",
+        "active": true
+      },
+      {
+        "label": "Step Distance",
+        "active": true
+      },
+      {
+        "label": "Reposition Minimum Ms",
+        "active": true
+      },
+      {
+        "label": "Reposition Maximum Ms",
+        "active": true
+      },
+      {
+        "label": "Step Speed",
+        "active": true
+      },
+      {
+        "label": "Default Walk Speed",
+        "active": true
+      },
+      {
+        "label": "Move-Fire Speed",
+        "active": true
+      },
+      {
+        "label": "Retreat-Fire Speed",
+        "active": true
+      },
+      {
+        "label": "Reload Speed Multiplier",
+        "active": true
+      },
+      {
+        "label": "RPM Mode: TACZ Native",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Fixed Accuracy %",
+        "active": true
+      },
+      {
+        "label": "Maximum Detection Distance: 64.0 blocks",
+        "active": false
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Sound Investigation: Off",
+        "active": true
+      },
+      {
+        "label": "Gunshot Range",
+        "active": true
+      },
+      {
+        "label": "Reload Range",
+        "active": true
+      },
+      {
+        "label": "Block Break Range",
+        "active": true
+      },
+      {
+        "label": "Block Place Range",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

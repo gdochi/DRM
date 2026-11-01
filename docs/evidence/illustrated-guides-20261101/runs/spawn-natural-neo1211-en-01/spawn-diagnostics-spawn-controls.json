@@ -1,0 +1,39 @@
+{
+  "screen": "net.dochi.spawncontrol.client.DiagnosticsScreen",
+  "scale": 1.0,
+  "widgets": [
+    {
+      "label": "Check Here",
+      "x": 180,
+      "y": 414,
+      "w": 122,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Spawn One",
+      "x": 310,
+      "y": 414,
+      "w": 130,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Clear Generated",
+      "x": 448,
+      "y": 414,
+      "w": 126,
+      "h": 20,
+      "active": true
+    },
+    {
+      "label": "Close",
+      "x": 700,
+      "y": 414,
+      "w": 80,
+      "h": 20,
+      "active": true
+    }
+  ],
+  "styles": []
+}

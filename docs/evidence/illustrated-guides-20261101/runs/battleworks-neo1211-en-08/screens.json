@@ -1,0 +1,178 @@
+[
+  {
+    "id": "battleworks-assist",
+    "status": "verified_generated_document",
+    "detail": ""
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\battleworks-neo1211-en-08\\game\\config\\dochi_rpg_maker\\mobs\\patterns\\training\\first_sword.json"
+  },
+  {
+    "id": "battleworks-first-saved",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Combat Rules",
+      "Manager",
+      "input:same_pattern\u003d1.0",
+      "Combat",
+      "input:fov\u003d360",
+      "input:scan_range\u003d16",
+      "verify:bw-document",
+      "Save As",
+      "input:save_as\u003dtraining/first_sword.json",
+      "Save",
+      "wait:80",
+      "verify:file\u003dconfig/dochi_rpg_maker/mobs/patterns/training/first_sword.json",
+      "Save",
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "scan_range",
+        "active": true
+      },
+      {
+        "label": "fov",
+        "active": true
+      },
+      {
+        "label": "chase_speed",
+        "active": true
+      },
+      {
+        "label": "preferred_distance",
+        "active": true
+      },
+      {
+        "label": "engage_min",
+        "active": true
+      },
+      {
+        "label": "engage_max",
+        "active": true
+      },
+      {
+        "label": "combat_reset",
+        "active": true
+      },
+      {
+        "label": "retry_delay",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-combat",
+    "status": "verified_server_health_reduction",
+    "detail": "8.0"
+  },
+  {
+    "id": "battleworks-first-fight",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "close:screen",
+      "fixture:bw-combat",
+      "wait:240",
+      "verify:bw-hit",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-bgm",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Combat Rules",
+      "BGM"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "bgm_sound",
+        "active": true
+      },
+      {
+        "label": "bgm_volume",
+        "active": true
+      },
+      {
+        "label": "bgm_pitch",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-parry",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Combat Rules",
+      "Parry"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "parry_window",
+        "active": true
+      },
+      {
+        "label": "parry_cooldown",
+        "active": true
+      },
+      {
+        "label": "front_angle",
+        "active": true
+      },
+      {
+        "label": "parry_distance",
+        "active": true
+      },
+      {
+        "label": "stagger_ticks",
+        "active": true
+      },
+      {
+        "label": "riposte_window",
+        "active": true
+      },
+      {
+        "label": "riposte_multiplier",
+        "active": true
+      },
+      {
+        "label": "max_posture",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

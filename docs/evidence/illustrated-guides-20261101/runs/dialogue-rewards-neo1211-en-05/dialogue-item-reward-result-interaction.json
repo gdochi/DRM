@@ -1,0 +1,181 @@
+{
+  "distance": 2.0,
+  "held": "minecraft:air",
+  "hasDialogue": true,
+  "enabled": true,
+  "document": {
+    "version": 1,
+    "dialogueScript": true,
+    "globals": {
+      "ftb": false,
+      "geckolib": false,
+      "shopScript": false
+    },
+    "globalCompatibility": {
+      "ftb": false,
+      "geckolib": false,
+      "shopScript": false
+    },
+    "dialogueDefaultGui": {
+      "guiSource": "default",
+      "guiJsonSubPath": "",
+      "guiJsonFileName": "default_dialogue_gui.json",
+      "guiJsonPath": "default_dialogue_gui.json"
+    },
+    "nodes": {
+      "start": {
+        "type": "start",
+        "speakerMode": "npc",
+        "title": "",
+        "titleTranslationKey": false,
+        "text": "",
+        "textTranslationKey": false,
+        "textAlignment": "left",
+        "choiceHideUntilTypingComplete": false,
+        "conditions": [],
+        "routes": [
+          {
+            "mode": "and",
+            "actionType": "goto",
+            "goto": "dialogue_1",
+            "linkMode": "internal",
+            "filePath": "",
+            "conditions": [],
+            "actions": []
+          }
+        ],
+        "choice": [],
+        "meta": {
+          "kind": "set",
+          "setName": "welcome_reward"
+        },
+        "textStyles": []
+      },
+      "dialogue_1": {
+        "type": "general",
+        "speakerMode": "npc",
+        "title": "",
+        "titleTranslationKey": false,
+        "text": "Welcome to Oakridge. What would you like to know?",
+        "textTranslationKey": false,
+        "textAlignment": "left",
+        "choiceHideUntilTypingComplete": false,
+        "conditions": [],
+        "routes": [],
+        "choice": [
+          {
+            "label": "Receive three apples",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "item",
+                "itemOp": "give",
+                "itemId": "minecraft:apple",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "label": "Goodbye.",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "close",
+                "value": "",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          }
+        ],
+        "textFx": {
+          "image": [],
+          "sound": [
+            {
+              "id": "minecraft:block.note_block.pling",
+              "vol": 1,
+              "pitch": 1,
+              "delay": 0
+            }
+          ]
+        },
+        "meta": {
+          "kind": "set",
+          "setName": "welcome_reward"
+        },
+        "textStyles": []
+      },
+      "dialogue_reply_1": {
+        "type": "general",
+        "speakerMode": "npc",
+        "title": "",
+        "titleTranslationKey": false,
+        "text": "The inn is beside the fountain. Follow the path to the square.",
+        "textTranslationKey": false,
+        "textAlignment": "left",
+        "choiceHideUntilTypingComplete": false,
+        "conditions": [],
+        "routes": [],
+        "choice": [
+          {
+            "label": "Thank you. Goodbye.",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "close",
+                "value": "",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          }
+        ],
+        "meta": {
+          "kind": "set",
+          "setName": "welcome_reward"
+        },
+        "textStyles": []
+      }
+    },
+    "setRegistry": [
+      "welcome_reward"
+    ],
+    "current": "dialogue_1",
+    "selectedSetScope": "welcome_reward",
+    "rightToolMode": "blueprint"
+  },
+  "shift": false,
+  "npcScheduled": false
+}

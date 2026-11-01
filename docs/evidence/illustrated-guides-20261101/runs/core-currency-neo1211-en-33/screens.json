@@ -1,0 +1,496 @@
+[
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-currency-neo1211-en-33\\game\\config\\dochi_rpg_maker\\currency\\definitions\\town_coin.json"
+  },
+  {
+    "id": "currency-emerald-prices",
+    "screenClass": "net.dochi.gameeditor.client.CurrencyEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "currency",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "next-screen:EditorItemPickerScreen",
+      "find:Item Icon",
+      "wait:40",
+      "picker-item:minecraft:emerald",
+      "next-screen:CurrencyEditorScreen",
+      "picker-apply",
+      "wait:40",
+      "input:name\u003dTown Coin",
+      "Item Prices (0)",
+      "Add Item",
+      "input:itemSearch\u003dminecraft:emerald",
+      "currency-item:minecraft:emerald",
+      "Add Selected (1)",
+      "input:conversionPrice\u003d10",
+      "Apply Selected",
+      "Close",
+      "Save As",
+      "input:currencySaveAsName\u003dtown_coin",
+      "Save As",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/currency/definitions/town_coin.json",
+      "clear:chat",
+      "Item Prices (1)"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "conversionSearch",
+        "active": true
+      },
+      {
+        "label": "Mod: All",
+        "active": true
+      },
+      {
+        "label": "Category: All",
+        "active": true
+      },
+      {
+        "label": "Select Visible",
+        "active": true
+      },
+      {
+        "label": "conversionPrice",
+        "active": true
+      },
+      {
+        "label": "Add Item",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "hud-currency-picker",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "editorId": "hud_maker",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "wait:60",
+      "+ Currency",
+      "input:currencyPickerSearch\u003dtown_coin",
+      "wait:40",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "currencyPickerSearch",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "hud-currency-bound",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "editorId": "hud_maker",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "wait:60",
+      "+ Currency",
+      "input:currencyPickerSearch\u003dtown_coin",
+      "wait:40",
+      "Apply",
+      "* Currency",
+      "Render survival HUD",
+      "clear:chat",
+      "input:x\u003d400",
+      "input:y\u003d250",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Currency Editor",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Unapply",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "-",
+        "active": true
+      },
+      {
+        "label": "-",
+        "active": true
+      },
+      {
+        "label": "+ Currency",
+        "active": true
+      },
+      {
+        "label": "+ Health",
+        "active": true
+      },
+      {
+        "label": "+ Food",
+        "active": true
+      },
+      {
+        "label": "+ Armor",
+        "active": true
+      },
+      {
+        "label": "+ Air",
+        "active": true
+      },
+      {
+        "label": "+ Level",
+        "active": true
+      },
+      {
+        "label": "+ Iron\u0027s Mana",
+        "active": true
+      },
+      {
+        "label": "+ Combat Roll Stamina",
+        "active": true
+      },
+      {
+        "label": "+ CNPC Tempdata",
+        "active": true
+      },
+      {
+        "label": "+ CNPC Storeddata",
+        "active": true
+      },
+      {
+        "label": "+ Player Head",
+        "active": true
+      },
+      {
+        "label": "* Currency",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Layer -",
+        "active": true
+      },
+      {
+        "label": "Layer +",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Front",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "-",
+        "active": true
+      },
+      {
+        "label": "guiName",
+        "active": true
+      },
+      {
+        "label": "Default UI: ON · Texture",
+        "active": true
+      },
+      {
+        "label": "Render survival HUD",
+        "active": true
+      },
+      {
+        "label": "HUD Guide +",
+        "active": true
+      },
+      {
+        "label": "HUD Guide -",
+        "active": true
+      },
+      {
+        "label": "MP Iron\u0027s Spells Mana",
+        "active": true
+      },
+      {
+        "label": "ST Combat Roll Stamina",
+        "active": true
+      },
+      {
+        "label": "gridX",
+        "active": true
+      },
+      {
+        "label": "gridY",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "id",
+        "active": true
+      },
+      {
+        "label": "layerOrder",
+        "active": true
+      },
+      {
+        "label": "x",
+        "active": true
+      },
+      {
+        "label": "y",
+        "active": true
+      },
+      {
+        "label": "w",
+        "active": true
+      },
+      {
+        "label": "h",
+        "active": true
+      },
+      {
+        "label": "text",
+        "active": true
+      },
+      {
+        "label": "Literal Text",
+        "active": true
+      },
+      {
+        "label": "fillColor",
+        "active": true
+      },
+      {
+        "label": "fillOpacity",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "borderColor",
+        "active": true
+      },
+      {
+        "label": "outlineGlow",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "Title",
+        "active": true
+      },
+      {
+        "label": "Icon",
+        "active": true
+      },
+      {
+        "label": "Name",
+        "active": true
+      },
+      {
+        "label": "Amount",
+        "active": true
+      },
+      {
+        "label": "hudMaxRows",
+        "active": true
+      },
+      {
+        "label": "hudTextSize",
+        "active": true
+      },
+      {
+        "label": "currencyIconSize",
+        "active": true
+      },
+      {
+        "label": "currencyIconOffsetX",
+        "active": true
+      },
+      {
+        "label": "currencyIconOffsetY",
+        "active": true
+      },
+      {
+        "label": "hudAmountTextSize",
+        "active": true
+      },
+      {
+        "label": "hudAmountOffsetX",
+        "active": true
+      },
+      {
+        "label": "hudAmountOffsetY",
+        "active": true
+      },
+      {
+        "label": "hudDeltaTextSize",
+        "active": true
+      },
+      {
+        "label": "hudDeltaOffsetX",
+        "active": true
+      },
+      {
+        "label": "hudDeltaOffsetY",
+        "active": true
+      },
+      {
+        "label": "hudIconAmountGap",
+        "active": true
+      },
+      {
+        "label": "hudTextColor",
+        "active": true
+      },
+      {
+        "label": "hudAmountColor",
+        "active": true
+      },
+      {
+        "label": "Text",
+        "active": true
+      },
+      {
+        "label": "Amount",
+        "active": true
+      },
+      {
+        "label": "Render",
+        "active": true
+      },
+      {
+        "label": "Amount: inherit",
+        "active": true
+      },
+      {
+        "label": "Always",
+        "active": true
+      },
+      {
+        "label": "On Change",
+        "active": true
+      },
+      {
+        "label": "Inventory",
+        "active": true
+      },
+      {
+        "label": "hudPolicyChangeTicks",
+        "active": true
+      },
+      {
+        "label": "hudDisplayFormat",
+        "active": true
+      },
+      {
+        "label": "(none)",
+        "active": true
+      },
+      {
+        "label": "Clear",
+        "active": true
+      },
+      {
+        "label": "none",
+        "active": true
+      },
+      {
+        "label": "Stretch",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Solo",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

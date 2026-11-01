@@ -1,0 +1,30 @@
+[
+  {
+    "id": "dialogue-save-file",
+    "status": "verified_save_as_file",
+    "file": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-neo1211-en-12\\game\\config\\dochi_rpg_maker\\dialogue_sets\\village_guide\\dialogue_set.json"
+  },
+  {
+    "id": "dialogue-save-result",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Save As",
+      "input:setName\u003dvillage_guide",
+      "Save As",
+      "verify:saved-dialogue"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "npc-apply",
+    "screenClass": "net.dochi.gameeditor.client.NpcApplyTargetScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

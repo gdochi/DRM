@@ -1,0 +1,59 @@
+[
+  {
+    "id": "battleworks-first-saved",
+    "editor": "battleworks",
+    "target": true,
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Combat Rules",
+      "Manager",
+      "input:same_pattern=1.0",
+      "Combat",
+      "input:fov=360",
+      "input:scan_range=16",
+      "verify:bw-document",
+      "Save As",
+      "input:save_as=training/first_sword.json",
+      "Save",
+      "wait:80",
+      "verify:file=config/dochi_rpg_maker/mobs/patterns/training/first_sword.json",
+      "Save",
+      "wait:60",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "battleworks-first-fight",
+    "editor": "battleworks",
+    "target": true,
+    "actions": [
+      "close:screen",
+      "fixture:bw-combat",
+      "wait:120",
+      "look-at:npc",
+      "verify:bw-hit",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "battleworks-bgm",
+    "editor": "battleworks",
+    "actions": [
+      "Combat Rules",
+      "BGM"
+    ]
+  },
+  {
+    "id": "battleworks-parry",
+    "editor": "battleworks",
+    "actions": [
+      "Combat Rules",
+      "Parry"
+    ]
+  }
+]

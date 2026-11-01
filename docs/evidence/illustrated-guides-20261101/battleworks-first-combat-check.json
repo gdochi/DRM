@@ -1,0 +1,19 @@
+{
+  "run": "battleworks-neo1211-en-09",
+  "environment": "BattleWorks 0.1.6 / DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1",
+  "entry": "Registered target editor; native build assist; native Save As and Save",
+  "fileReference": "training/first_sword.json",
+  "sampleAsset": "src/media/battleworks/first_sword.json",
+  "sampleSha256": "0dd7fb3c15ab93f370a3e04ab02607190b306593df2bbbcca8c1aeaf53ca28e5",
+  "beforeHealth": 20,
+  "afterHealth": 12.0,
+  "targetUuid": "00000000-0000-0000-0000-000000000001",
+  "controls": {
+    "naturalRegeneration": false,
+    "naturalMobSpawning": false,
+    "otherLivingEntitiesWithin80Blocks": "removed in this owned world only",
+    "playerArmor": "none",
+    "nativeAttacksSuppressed": true
+  },
+  "scope": "Actual server health reduction and expected player target verified. Does not verify preview simulation, boss phases, parry, or modded animations."
+}

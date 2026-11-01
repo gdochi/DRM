@@ -1,0 +1,21 @@
+{
+  "run": "core-neo1211-en-28",
+  "environment": "DRM 0.3.1 / NeoForge 1.21.1",
+  "savedFile": "config/dochi_rpg_maker/popups/definitions/village_entry.json",
+  "savedDefinition": {
+    "id": "village_entry",
+    "title": "Village Gate",
+    "text": "A new region has been discovered.",
+    "fadeInTicks": 10,
+    "holdTicks": 80,
+    "fadeOutTicks": 20
+  },
+  "command": "/drm popup show @s village_entry",
+  "verified": "Native editor Save As file, active client instance with expected definition ID, and actual world overlay image",
+  "scope": "Command display only; entering a geographical region does not automatically trigger this definition.",
+  "forgeRepeat": {
+    "run": "core-forge1201-en-14",
+    "environment": "DRM 0.3.1 / Forge 1.20.1",
+    "verified": "Same native save/apply/runtime flow; actual result reviewed"
+  }
+}

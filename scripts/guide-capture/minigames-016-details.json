@@ -1,0 +1,8 @@
+[
+  {"id":"mwent-acquisition-general","class":"net.dochi.minigames.client.MinigamesConfigScreen","actions":["Edit MWENT","wait:100"]},
+  {"id":"mwent-acquisition-trades","class":"net.dochi.minigames.client.MinigamesConfigScreen","actions":["Edit MWENT","wait:100","Merchant trades"]},
+  {"id":"mwent-acquisition-chests","class":"net.dochi.minigames.client.MinigamesConfigScreen","actions":["Edit MWENT","wait:100","Chest rewards"]},
+  {"id":"mwent-acquisition-pools","class":"net.dochi.minigames.client.MinigamesConfigScreen","actions":["Edit MWENT","wait:100","Product pools"]},
+  {"id":"roulette-editor-rules","editor":"dochi_minigames:editor","actions":["Cancel","Item Roulette","Rules"]},
+  {"id":"roulette-editor-prizes","editor":"dochi_minigames:editor","actions":["Cancel","Item Roulette","Prize slots"]}
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "spawn-vehicle-saved",
+    "editor": "spawn_control_spawner",
+    "actions": [
+      "close:screen",
+      "command:spawncontrolvehicle save guide_tank @e[type=superbwarfare:m_1a_2,sort=nearest,limit=1,distance=..32]",
+      "wait:80",
+      "verify:file=config/dochi_rpg_maker/spawn_control/vehicles/guide_tank.json",
+      "look-at:vehicle"
+    ]
+  },
+  {
+    "id": "spawn-vehicle-picker",
+    "editor": "spawn_control_spawner",
+    "actions": [
+      "Choose",
+      "wait:80",
+      "spawn-input:search=guide_tank",
+      "wait:40"
+    ]
+  },
+  {
+    "id": "spawn-vehicle-spawner-saved",
+    "editor": "spawn_control_spawner",
+    "actions": [
+      "Choose",
+      "wait:80",
+      "spawn-input:search=guide_tank",
+      "spawn-catalog:guide_tank",
+      "Select",
+      "Spawn Settings",
+      "spawn-input:maxAlive=1",
+      "spawn-input:radius=12",
+      "Ground",
+      "spawn-choice:air",
+      "Save As",
+      "spawn-input:saveName=guide_tank_spawner.json",
+      "Confirm",
+      "wait:80",
+      "verify:file=config/dochi_rpg_maker/spawn_control/spawners/guide_tank_spawner.json",
+      "Spawn Target",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "spawn-vehicle-runtime",
+    "editor": "spawn_control_spawner",
+    "actions": [
+      "Get Spawner",
+      "wait:60",
+      "close:screen",
+      "place:spawner",
+      "wait:60",
+      "fixture:core",
+      "wait:40",
+      "interact:spawner",
+      "wait:80",
+      "spawn-apply-file:guide_tank_spawner.json",
+      "next-screen:@closed",
+      "Apply JSON",
+      "wait:40",
+      "fixture:survival",
+      "wait:160",
+      "verify:spawn-vehicle",
+      "wait:30",
+      "look-at:clone",
+      "clear:chat"
+    ]
+  }
+]

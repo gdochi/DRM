@@ -1,0 +1,45 @@
+[
+  {
+    "id": "battleworks-target-hitboxes",
+    "editor": "battleworks",
+    "target": true,
+    "actions": [
+      "Hitbox Library"
+    ]
+  },
+  {
+    "id": "battleworks-target-simulation",
+    "editor": "battleworks",
+    "target": true,
+    "actions": [
+      "Simulation"
+    ]
+  },
+  {
+    "id": "battleworks-assist-built",
+    "editor": "battleworks",
+    "target": true,
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern"
+    ]
+  },
+  {
+    "id": "battleworks-assisted-hitboxes",
+    "editor": "battleworks",
+    "target": true,
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Hitbox Library"
+    ]
+  }
+]

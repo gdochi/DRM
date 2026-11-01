@@ -1,0 +1,289 @@
+[
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\cobble-mart-player-neo1211-en-02\\game\\config\\dochi_rpg_maker\\cobblemon\\pokemarts\\custom\\guide_sales.json"
+  },
+  {
+    "id": "mart-bound",
+    "status": "verified_native_flow_state",
+    "detail": "{\"enabled\":true,\"document\":\"{\\n  \\\"schema\\\": 7,\\n  \\\"type\\\": \\\"cobble_npc:pokemart\\\",\\n  \\\"id\\\": \\\"pokemart\\\",\\n  \\\"displayName\\\": \\\"PokéMart\\\",\\n  \\\"role\\\": \\\"sales\\\",\\n  \\\"interactionConditions\\\": {\\n    \\\"enabled\\\": false,\\n    \\\"conditionMode\\\": \\\"and\\\",\\n    \\\"conditions\\\": []\\n  },\\n  \\\"gui\\\": {\\n    \\\"guiType\\\": \\\"cobble_npc:pokemart\\\",\\n    \\\"guiJsonPath\\\": \\\"pokemart_sales_gui.json\\\"\\n  },\\n  \\\"currency\\\": {\\n    \\\"provider\\\": \\\"item\\\",\\n    \\\"id\\\": \\\"minecraft:emerald\\\"\\n  },\\n  \\\"products\\\": [\\n    {\\n      \\\"productId\\\": \\\"bulbasaur_5\\\",\\n      \\\"pokemon\\\": {\\n        \\\"species\\\": \\\"cobblemon:bulbasaur\\\",\\n        \\\"form\\\": \\\"\\\",\\n        \\\"aspects\\\": \\\"\\\",\\n        \\\"gender\\\": \\\"random\\\",\\n        \\\"shiny\\\": false,\\n        \\\"level\\\": 5,\\n        \\\"nature\\\": \\\"\\\",\\n        \\\"ability\\\": \\\"\\\",\\n        \\\"moves\\\": [],\\n        \\\"pokeball\\\": \\\"cobblemon:poke_ball\\\",\\n        \\\"heldItem\\\": \\\"\\\"\\n      },\\n      \\\"description\\\": \\\"\\\",\\n      \\\"descriptionStyles\\\": [],\\n      \\\"price\\\": \\\"4\\\",\\n      \\\"stock\\\": {\\n        \\\"initial\\\": 3,\\n        \\\"maximum\\\": 3,\\n        \\\"restockAmount\\\": 1,\\n        \\\"restockIntervalTicks\\\": 72000\\n      }\\n    },\\n    {\\n      \\\"productId\\\": \\\"charmander_5\\\",\\n      \\\"pokemon\\\": {\\n        \\\"species\\\": \\\"cobblemon:charmander\\\",\\n        \\\"form\\\": \\\"\\\",\\n        \\\"aspects\\\": \\\"\\\",\\n        \\\"gender\\\": \\\"random\\\",\\n        \\\"shiny\\\": false,\\n        \\\"level\\\": 5,\\n        \\\"nature\\\": \\\"\\\",\\n        \\\"ability\\\": \\\"\\\",\\n        \\\"moves\\\": [],\\n        \\\"pokeball\\\": \\\"cobblemon:poke_ball\\\",\\n        \\\"heldItem\\\": \\\"\\\"\\n      },\\n      \\\"description\\\": \\\"\\\",\\n      \\\"descriptionStyles\\\": [],\\n      \\\"price\\\": \\\"5000\\\",\\n      \\\"stock\\\": {\\n        \\\"initial\\\": 3,\\n        \\\"maximum\\\": 3,\\n        \\\"restockAmount\\\": 1,\\n        \\\"restockIntervalTicks\\\": 72000\\n      }\\n    },\\n    {\\n      \\\"productId\\\": \\\"squirtle_5\\\",\\n      \\\"pokemon\\\": {\\n        \\\"species\\\": \\\"cobblemon:squirtle\\\",\\n        \\\"form\\\": \\\"\\\",\\n        \\\"aspects\\\": \\\"\\\",\\n        \\\"gender\\\": \\\"random\\\",\\n        \\\"shiny\\\": false,\\n        \\\"level\\\": 5,\\n        \\\"nature\\\": \\\"\\\",\\n        \\\"ability\\\": \\\"\\\",\\n        \\\"moves\\\": [],\\n        \\\"pokeball\\\": \\\"cobblemon:poke_ball\\\",\\n        \\\"heldItem\\\": \\\"\\\"\\n      },\\n      \\\"description\\\": \\\"\\\",\\n      \\\"descriptionStyles\\\": [],\\n      \\\"price\\\": \\\"5000\\\",\\n      \\\"stock\\\": {\\n        \\\"initial\\\": 3,\\n        \\\"maximum\\\": 3,\\n        \\\"restockAmount\\\": 1,\\n        \\\"restockIntervalTicks\\\": 72000\\n      }\\n    }\\n  ]\\n}\",\"emeralds\":64,\"party\":[]}"
+  },
+  {
+    "id": "cobble-sales-player",
+    "screenClass": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:pokemart",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "fixture:mart-funds",
+      "wait:80",
+      "CobbleDollars",
+      "field:currencySearch\u003demerald",
+      "wait:40",
+      "label-row:currencyLabels:0",
+      "Select",
+      "Pokémon Catalog",
+      "field:price\u003d4",
+      "Save As",
+      "field:jsonName\u003dcustom/guide_sales.json",
+      "Save",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/cobblemon/pokemarts/custom/guide_sales.json",
+      "Apply to NPC",
+      "wait:60",
+      "verify:mart-bound",
+      "interact:mart",
+      "wait:100",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Previous",
+        "active": false
+      },
+      {
+        "label": "Next",
+        "active": false
+      },
+      {
+        "label": "Buy · 4",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-sales-purchased",
+    "actualScreenAtFailure": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "screenClass": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Close",
+      "",
+      "Previous",
+      "Next",
+      "Buy · 4"
+    ],
+    "attemptedActions": [
+      "find:Buy",
+      "wait:100",
+      "verify:mart-buy",
+      "clear:chat"
+    ],
+    "status": "failed",
+    "error": "java.lang.ClassNotFoundException: net.dochi.gameeditor.client.PokeMartRuntimeScreen"
+  },
+  {
+    "id": "cobble-trade-player",
+    "screenClass": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:pokemart",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "fixture:mart-rattata",
+      "wait:60",
+      "Trade",
+      "Pokémon Trades",
+      "Add",
+      "Save As",
+      "field:jsonName\u003dcustom/guide_trade.json",
+      "Save",
+      "wait:60",
+      "Apply to NPC",
+      "wait:60",
+      "interact:mart",
+      "wait:100",
+      "Choose Your Pokémon",
+      "wait:80",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Previous",
+        "active": false
+      },
+      {
+        "label": "Next",
+        "active": false
+      },
+      {
+        "label": "Back to Offers",
+        "active": true
+      },
+      {
+        "label": "Confirm Trade",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-trade-completed",
+    "actualScreenAtFailure": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "screenClass": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Close",
+      "",
+      "Previous",
+      "Next",
+      "Back to Offers",
+      "Confirm Trade"
+    ],
+    "attemptedActions": [
+      "wait:100",
+      "verify:mart-trade",
+      "clear:chat"
+    ],
+    "status": "failed",
+    "error": "java.lang.ClassNotFoundException: net.dochi.gameeditor.client.PokeMartRuntimeScreen"
+  },
+  {
+    "id": "cobble-auction-player",
+    "screenClass": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:pokemart",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Auction",
+      "rail:Auction",
+      "field:houseId\u003dguide_auction",
+      "field:listingFee\u003d2",
+      "field:durationMinutes\u003d5",
+      "Save As",
+      "field:jsonName\u003dcustom/guide_auction.json",
+      "Save",
+      "wait:60",
+      "Apply to NPC",
+      "wait:60",
+      "interact:mart",
+      "wait:100",
+      "Auction Listing",
+      "wait:80",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Auction",
+        "active": true
+      },
+      {
+        "label": "Auction Listing",
+        "active": true
+      },
+      {
+        "label": "Settlement Inbox",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Previous",
+        "active": false
+      },
+      {
+        "label": "Next",
+        "active": false
+      },
+      {
+        "label": "List Pokémon · Fee 2",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-auction-listed",
+    "actualScreenAtFailure": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "screenClass": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Auction",
+      "Auction Listing",
+      "Settlement Inbox",
+      "Close",
+      "",
+      "Previous",
+      "Next",
+      "",
+      "",
+      "List Pokémon · Fee 2"
+    ],
+    "attemptedActions": [
+      "field:buyout\u003d20",
+      "find:List Pokémon",
+      "wait:100",
+      "verify:mart-listed",
+      "Auction",
+      "wait:80",
+      "clear:chat"
+    ],
+    "status": "failed",
+    "error": "java.lang.ClassNotFoundException: net.dochi.gameeditor.client.PokeMartRuntimeScreen"
+  },
+  {
+    "id": "cobble-auction-inbox",
+    "actualScreenAtFailure": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "screenClass": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Auction",
+      "Auction Listing",
+      "Settlement Inbox",
+      "Close",
+      "",
+      "Previous",
+      "Next",
+      "",
+      "",
+      "List Pokémon · Fee 2"
+    ],
+    "attemptedActions": [
+      "wait:80",
+      "Refresh",
+      "wait:80",
+      "Settlement Inbox",
+      "wait:80",
+      "clear:chat"
+    ],
+    "status": "failed",
+    "error": "java.lang.ClassNotFoundException: net.dochi.gameeditor.client.PokeMartRuntimeScreen"
+  },
+  {
+    "id": "cobble-auction-claimed",
+    "actualScreenAtFailure": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "screenClass": "net.hodu.cobblenpc.client.PokeMartRuntimeScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Auction",
+      "Auction Listing",
+      "Settlement Inbox",
+      "Close",
+      "",
+      "Previous",
+      "Next",
+      "",
+      "",
+      "List Pokémon · Fee 2"
+    ],
+    "attemptedActions": [
+      "wait:100",
+      "verify:mart-claimed",
+      "clear:chat"
+    ],
+    "status": "failed",
+    "error": "java.lang.ClassNotFoundException: net.dochi.gameeditor.client.PokeMartRuntimeScreen"
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "dialogue-reward-template-load",
+    "screen": "DialogueEditorScreen",
+    "actions": [
+      "Load",
+      "wait:80",
+      "dialogue-load-entry:welcome_reward_once"
+    ]
+  },
+  {
+    "id": "dialogue-reward-template-actions",
+    "screen": "DialogueEditorScreen",
+    "actions": [
+      "Load",
+      "wait:80",
+      "dialogue-load-entry:welcome_reward_once",
+      "next-screen:@changed",
+      "Load",
+      "wait:80",
+      "node:dialogue_1",
+      "Choices",
+      "Choice actions",
+      "scroll-page:-8",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "dialogue-reward-template-hidden",
+    "screen": "NpcApplyTargetScreen",
+    "actions": [
+      "candidate:welcome_reward_once",
+      "Apply Dialogue",
+      "wait:60",
+      "fixture:empty-inventory",
+      "wait:40",
+      "fixture:approach-npc",
+      "wait:40",
+      "look-at:npc",
+      "interact:npc",
+      "wait:140",
+      "next-screen:@closed",
+      "runtime-choice:Receive three apples",
+      "wait:60",
+      "verify:apple-reward",
+      "verify:reward-tag",
+      "interact:npc",
+      "wait:140",
+      "verify:reward-hidden",
+      "clear:chat"
+    ]
+  }
+]

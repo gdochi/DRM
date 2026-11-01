@@ -1,0 +1,14 @@
+{
+  "kind": "stored",
+  "actor": "noppes.npcs.entity.EntityCustomNpc",
+  "condition": {
+    "type": "cnpc_stored_data",
+    "scope": "player",
+    "key": "my_pack.quest.stage",
+    "op": "\u003e\u003d",
+    "valueType": "number",
+    "value": "3"
+  },
+  "stored": 3.0,
+  "pass": true
+}

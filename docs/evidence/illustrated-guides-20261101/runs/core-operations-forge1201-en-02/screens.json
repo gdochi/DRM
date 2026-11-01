@@ -1,0 +1,72 @@
+[
+  {
+    "id": "admin-server-policy",
+    "screenClass": "net.dochi.gameeditor.client.DochiRpgMakerConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Admin",
+      "wait:60",
+      "Enable DRM Admin",
+      "Apply",
+      "wait:60",
+      "clear:chat"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Core",
+        "active": true
+      },
+      {
+        "label": "Admin",
+        "active": true
+      },
+      {
+        "label": "Keyboard shortcuts",
+        "active": true
+      },
+      {
+        "label": "Dochi`s Npc Core",
+        "active": true
+      },
+      {
+        "label": "Enable DRM Admin",
+        "active": true
+      },
+      {
+        "label": "FTB Quests management",
+        "active": true
+      },
+      {
+        "label": "Manage stored data",
+        "active": true
+      },
+      {
+        "label": "Advancement management",
+        "active": true
+      },
+      {
+        "label": "Faction management",
+        "active": true
+      },
+      {
+        "label": "Cache offline player data",
+        "active": true
+      },
+      {
+        "label": "Refresh",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

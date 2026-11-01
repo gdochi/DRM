@@ -1,0 +1,41 @@
+{
+  "run": "core-travel-neo1211-en-24",
+  "steps": [
+    "native Teleporter Editor destination name/coordinates",
+    "native Save As then Save; actual file exists",
+    "native NPC Apply Teleporter JSON; file chosen; Apply Teleporter",
+    "empty-hand NPC interaction",
+    "native Travel button; selected.available is true",
+    "server arrival coordinates checked"
+  ],
+  "selected": {
+    "id": "spawn",
+    "categoryId": "towns",
+    "available": true,
+    "lockedMode": "available",
+    "name": "Village gate",
+    "description": "Default teleporter destination",
+    "descriptionStyles": [],
+    "iconMedia": {
+      "mode": "image",
+      "image": "",
+      "imageFit": "contain",
+      "cropEnabled": false,
+      "cropX": 0,
+      "cropY": 0,
+      "cropW": 0,
+      "cropH": 0,
+      "sourceW": 0,
+      "sourceH": 0,
+      "itemId": "",
+      "itemCount": 1,
+      "itemSize": 32
+    }
+  },
+  "arrival": {
+    "x": 20.5,
+    "y": -60.0,
+    "z": 0.5
+  },
+  "worldPreparation": "Cobblestone floor and oak posts preplaced only to make the arrival location visible."
+}

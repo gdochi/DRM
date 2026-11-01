@@ -1,0 +1,61 @@
+{
+  "run": "build/task/guide-capture/spawn-template-neo1211-en-07",
+  "environment": {
+    "minecraft": "1.21.1",
+    "loader": "NeoForge 21.1.259",
+    "locale": "en_us",
+    "actor": "dnpc",
+    "mods": [
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\jar\\dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar",
+        "sha256": "00adcf6446e36c47d36a691f1614806b5c05aee30f2523a2616db8a1bf9b29fe"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-neoforge-1.21.1.jar",
+        "sha256": "cf01bfc2203b755adc8a968ce760b4a01ed764e74d9e69be6da2e4ce85811d6a"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\geckolib-neoforge-1.21.1-4.9.2.jar",
+        "sha256": "5e548466af9ab6aca7a91a7c7d4dc0dc8bc385e22958aed5da0e7bebd0fa3fba"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\architectury-13.0.11-neoforge.jar",
+        "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Spawn Control\\jar\\dochi_spawn_control-0.1.4-neoforge-1.21.1.jar",
+        "sha256": "50dc518a8b3da915a41c3dea0c1f598054d87df4e2e9ff211baf74499a10055c"
+      },
+      {
+        "source": "documentation capture fixture",
+        "sha256": "204676668e72f746e2f52744a615b27678ce59114243e95bed72aad37252d020"
+      }
+    ],
+    "seededHudFiles": []
+  },
+  "procedure": "Native DNPC Save to NPC/Save As; native Spawner source picker and Save As; Get Spawner placement; DRM Core right click; native Apply JSON; Survival activation.",
+  "result": {
+    "file": "guide_guard_spawner.json",
+    "total": 1,
+    "status": "ready",
+    "detail": "",
+    "clones": [
+      {
+        "id": 32,
+        "name": "NPC",
+        "head": "minecraft:iron_helmet"
+      }
+    ]
+  },
+  "savedFiles": [
+    {
+      "file": "config/dochi_npc_core/templates/guide_guard.json",
+      "sha256": "9dba9b29f782c4106e405fe4fb5ba5bf8d8675ffc9e3e0f9f47ee7627eec125d"
+    },
+    {
+      "file": "config/dochi_rpg_maker/spawn_control/spawners/guide_guard_spawner.json",
+      "sha256": "502d27cffc2e8ae01e8805b4af00a6bb675fea88a56a5b1827a3cf88d933d63c"
+    }
+  ],
+  "limits": "One placed-spawner activation verified. Natural spawning, respawn cycles and 26.3 runtime are separate checks."
+}

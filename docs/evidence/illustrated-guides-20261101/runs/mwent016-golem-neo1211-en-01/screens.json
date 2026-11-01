@@ -1,0 +1,144 @@
+[
+  {
+    "id": "mwent-opening-tactic",
+    "status": "verified_server_view_tactic_selection",
+    "detail": "Golem seal core / 4"
+  },
+  {
+    "id": "minigames-phase",
+    "status": "verified_runtime_phase",
+    "detail": "mulligan"
+  },
+  {
+    "id": "minigames-phase",
+    "status": "verified_runtime_phase",
+    "detail": "battle"
+  },
+  {
+    "id": "mwent016-golem-installed",
+    "status": "captured_in_game",
+    "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+    "actions": [
+      "Cancel",
+      "MWENT",
+      "next-screen:@changed",
+      "Test play",
+      "wait:40",
+      "Use this deck",
+      "wait:40",
+      "Golden apple altar: +5 power",
+      "mini-choice:4",
+      "wait:40",
+      "verify:mwent-tactic",
+      "Begin match",
+      "wait-phase:mulligan",
+      "wait-control:Continue",
+      "Continue",
+      "wait-phase:battle",
+      "wait:8",
+      "record:mwent-opening",
+      "snapshot:mwent016-golem-installed"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "mwent-golem",
+    "status": "verified_native_same_socket_transform",
+    "detail": "4 power; same row/socket; opening tactic consumed"
+  },
+  {
+    "id": "mwent016-golem-transformed",
+    "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "MWENT",
+      "next-screen:@changed",
+      "Test play",
+      "wait:40",
+      "Use this deck",
+      "wait:40",
+      "Golden apple altar: +5 power",
+      "mini-choice:4",
+      "wait:40",
+      "verify:mwent-tactic",
+      "Begin match",
+      "wait-phase:mulligan",
+      "wait-control:Continue",
+      "Continue",
+      "wait-phase:battle",
+      "wait:8",
+      "record:mwent-opening",
+      "snapshot:mwent016-golem-installed",
+      "Golem seal core",
+      "wait:20",
+      "verify:mwent-golem"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Rulebook",
+        "active": true
+      },
+      {
+        "label": "Stop BGM",
+        "active": true
+      },
+      {
+        "label": "BGM volume: 100%",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Pass round",
+        "active": false
+      },
+      {
+        "label": "End turn",
+        "active": false
+      },
+      {
+        "label": "Breath of Spring (2 / 2)",
+        "active": true
+      },
+      {
+        "label": "Heart of the Foundry (2 / 2)",
+        "active": true
+      },
+      {
+        "label": "Reset camera",
+        "active": true
+      },
+      {
+        "label": "Top view (fixed)",
+        "active": true
+      },
+      {
+        "label": "Diagonal view (fixed)",
+        "active": true
+      },
+      {
+        "label": "NPC graveyard",
+        "active": true
+      },
+      {
+        "label": "Your graveyard",
+        "active": true
+      }
+    ],
+    "gamePhase": "battle",
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

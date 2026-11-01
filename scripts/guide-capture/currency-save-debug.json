@@ -1,0 +1,4 @@
+[
+  {"id":"currency-save-modal", "editor":"currency", "actions":["Save As","input:currencySaveAsName=town_coin","diagnose:controls"]},
+  {"id":"currency-save-click", "editor":"currency", "actions":["Save As","input:currencySaveAsName=town_coin","Save As","wait:60","diagnose:controls"]}
+]

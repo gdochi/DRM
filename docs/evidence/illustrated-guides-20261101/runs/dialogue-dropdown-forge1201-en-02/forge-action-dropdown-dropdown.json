@@ -1,0 +1,68 @@
+{
+  "scale": 1.0,
+  "x": 666.0,
+  "y": 177.0,
+  "width": 132.0,
+  "height": 280.0,
+  "scroll": 0.0,
+  "focus": 0.0,
+  "options": [
+    {
+      "id": "goto",
+      "label": "Goto"
+    },
+    {
+      "id": "command",
+      "label": "Command"
+    },
+    {
+      "id": "go_shop",
+      "label": "Shop"
+    },
+    {
+      "id": "go_teleporter",
+      "label": "Teleporter"
+    },
+    {
+      "id": "go_stat_builder",
+      "label": "Stat Builder"
+    },
+    {
+      "id": "tag",
+      "label": "Tag"
+    },
+    {
+      "id": "close",
+      "label": "Close"
+    },
+    {
+      "id": "item",
+      "label": "Item"
+    },
+    {
+      "id": "faction_score",
+      "label": "Faction Score"
+    },
+    {
+      "id": "advancement",
+      "label": "Advancement"
+    },
+    {
+      "id": "quest_start",
+      "label": "Quest Start"
+    },
+    {
+      "id": "quest_turn_in",
+      "label": "Quest Complete"
+    },
+    {
+      "id": "dochi:scene",
+      "label": "dochi:scene"
+    }
+  ],
+  "selectedAction": {
+    "type": "goto",
+    "linkMode": "internal",
+    "value": "dialogue_reply_1"
+  }
+}

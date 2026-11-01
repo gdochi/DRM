@@ -1,0 +1,478 @@
+[
+  {
+    "id": "dw-save",
+    "status": "verified_server_mode_and_weapon",
+    "detail": ""
+  },
+  {
+    "id": "dw-gun-saved",
+    "screenClass": "net.dochi.tacznpcfire.client.TaczNpcFireConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "OFF",
+      "fixture:gun",
+      "Gun",
+      "gun-slot:0",
+      "Save",
+      "wait:60",
+      "verify:dw-saved"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Overview",
+        "active": true
+      },
+      {
+        "label": "Senses",
+        "active": true
+      },
+      {
+        "label": "Pose",
+        "active": true
+      },
+      {
+        "label": "Cover",
+        "active": true
+      },
+      {
+        "label": "Ammo",
+        "active": true
+      },
+      {
+        "label": "Gun",
+        "active": true
+      },
+      {
+        "label": "Armor",
+        "active": true
+      },
+      {
+        "label": "Melee",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Visual \u0026 FX",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DW Editors",
+        "active": true
+      },
+      {
+        "label": "New draft",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset draft",
+        "active": true
+      },
+      {
+        "label": "Clone",
+        "active": true
+      },
+      {
+        "label": "Start a guided tour of the current editor section.",
+        "active": true
+      },
+      {
+        "label": "Toggle hover explanations.|ON shows descriptions when your cursor is over controls.",
+        "active": true
+      },
+      {
+        "label": "Easy Build",
+        "active": true
+      },
+      {
+        "label": "Presets",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      },
+      {
+        "label": "Remove Weapon",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      },
+      {
+        "label": "Ranged Damage: Gun Spec",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dw-mercenary",
+    "screenClass": "net.dochi.tacznpcfire.client.MercenaryTestConfigScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Disabled",
+        "active": true
+      },
+      {
+        "label": "Cost item ID",
+        "active": true
+      },
+      {
+        "label": "Cost item count",
+        "active": true
+      },
+      {
+        "label": "Hire duration (seconds)",
+        "active": true
+      },
+      {
+        "label": "Recall windup (seconds)",
+        "active": true
+      },
+      {
+        "label": "Summon windup (seconds)",
+        "active": true
+      },
+      {
+        "label": "Enabled",
+        "active": true
+      },
+      {
+        "label": "Hits before faction hostility",
+        "active": true
+      },
+      {
+        "label": "Disabled",
+        "active": true
+      },
+      {
+        "label": "Hits before contract break",
+        "active": true
+      },
+      {
+        "label": "Hit reset window (seconds)",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dw-traps",
+    "screenClass": "net.dochi.tacznpcfire.client.BoobyTrapManagerScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Search",
+        "active": true
+      },
+      {
+        "label": "Search",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": true
+      },
+      {
+        "label": "\u003e",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Settings",
+        "active": false
+      },
+      {
+        "label": "Disarm trap",
+        "active": false
+      },
+      {
+        "label": "Remove block",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-ai",
+    "screenClass": "net.dochi.warfare.vehicle.client.SuperbVehicleAiConfigScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Overview",
+        "active": true
+      },
+      {
+        "label": "AI",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Weapons",
+        "active": true
+      },
+      {
+        "label": "Gimmicks",
+        "active": true
+      },
+      {
+        "label": "Crew",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Clone",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "Open a guided tour of the current editor.|Explanations moved out of the form are available here and through hover help.",
+        "active": true
+      },
+      {
+        "label": "Toggle hover explanations.|ON shows descriptions when your cursor is over controls.",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-gimmick",
+    "screenClass": "net.dochi.warfare.vehicle.client.GimmickEditorScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Load Existing",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Gimmick Editor",
+        "active": true
+      },
+      {
+        "label": "Origin X",
+        "active": true
+      },
+      {
+        "label": "Origin Y",
+        "active": true
+      },
+      {
+        "label": "Origin Z",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Remove",
+        "active": true
+      },
+      {
+        "label": "Run at my position",
+        "active": true
+      },
+      {
+        "label": "First drop (ticks)",
+        "active": true
+      },
+      {
+        "label": "Bombardment",
+        "active": true
+      },
+      {
+        "label": "A-10A",
+        "active": true
+      },
+      {
+        "label": "MK-82",
+        "active": true
+      },
+      {
+        "label": "Point",
+        "active": true
+      },
+      {
+        "label": "Level",
+        "active": true
+      },
+      {
+        "label": "X",
+        "active": true
+      },
+      {
+        "label": "Y",
+        "active": true
+      },
+      {
+        "label": "Z",
+        "active": true
+      },
+      {
+        "label": "Heading",
+        "active": true
+      },
+      {
+        "label": "Length",
+        "active": false
+      },
+      {
+        "label": "Width",
+        "active": false
+      },
+      {
+        "label": "Altitude",
+        "active": true
+      },
+      {
+        "label": "Interval (ticks)",
+        "active": false
+      },
+      {
+        "label": "Bombs / aircraft",
+        "active": false
+      },
+      {
+        "label": "Explosion damage (HP)",
+        "active": true
+      },
+      {
+        "label": "Direct damage (HP)",
+        "active": true
+      },
+      {
+        "label": "Lifetime (ticks)",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

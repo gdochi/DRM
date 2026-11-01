@@ -1,0 +1,24 @@
+{
+  "id": "spawn",
+  "categoryId": "towns",
+  "available": true,
+  "lockedMode": "available",
+  "name": "Village gate",
+  "description": "Default teleporter destination",
+  "descriptionStyles": [],
+  "iconMedia": {
+    "mode": "image",
+    "image": "",
+    "imageFit": "contain",
+    "cropEnabled": false,
+    "cropX": 0,
+    "cropY": 0,
+    "cropW": 0,
+    "cropH": 0,
+    "sourceW": 0,
+    "sourceH": 0,
+    "itemId": "",
+    "itemCount": 1,
+    "itemSize": 32
+  }
+}

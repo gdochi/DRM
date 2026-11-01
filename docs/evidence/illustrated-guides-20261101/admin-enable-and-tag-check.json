@@ -1,0 +1,364 @@
+{
+  "runs": [
+    {
+      "run": "build\\task\\guide-capture\\core-operations-neo1211-en-03\\captures",
+      "environment": {
+        "minecraft": "1.21.1",
+        "loader": "NeoForge 21.1.259",
+        "locale": "en_us",
+        "actor": "dnpc",
+        "mods": [
+          {
+            "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\jar\\dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar",
+            "sha256": "00adcf6446e36c47d36a691f1614806b5c05aee30f2523a2616db8a1bf9b29fe"
+          },
+          {
+            "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-neoforge-1.21.1.jar",
+            "sha256": "cf01bfc2203b755adc8a968ce760b4a01ed764e74d9e69be6da2e4ce85811d6a"
+          },
+          {
+            "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\geckolib-neoforge-1.21.1-4.9.2.jar",
+            "sha256": "5e548466af9ab6aca7a91a7c7d4dc0dc8bc385e22958aed5da0e7bebd0fa3fba"
+          },
+          {
+            "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\architectury-13.0.11-neoforge.jar",
+            "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb"
+          },
+          {
+            "source": "documentation capture fixture",
+            "sha256": "fa59155277ffe0922f7f8ee49c3359bbcd3418dcf859c57e3d97acc5036da766"
+          }
+        ],
+        "seededHudFiles": []
+      },
+      "records": [
+        {
+          "id": "admin-server-policy",
+          "screenClass": "net.dochi.gameeditor.client.DochiRpgMakerConfigScreen",
+          "status": "captured_in_game",
+          "actions": [
+            "Admin",
+            "wait:60",
+            "Enable DRM Admin",
+            "Apply",
+            "wait:60",
+            "clear:chat"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [
+            {
+              "label": "Core",
+              "active": true
+            },
+            {
+              "label": "Admin",
+              "active": true
+            },
+            {
+              "label": "Keyboard shortcuts",
+              "active": true
+            },
+            {
+              "label": "Dochi`s Npc Core",
+              "active": true
+            },
+            {
+              "label": "Enable DRM Admin",
+              "active": true
+            },
+            {
+              "label": "FTB Quests management",
+              "active": true
+            },
+            {
+              "label": "Manage stored data",
+              "active": true
+            },
+            {
+              "label": "Advancement management",
+              "active": true
+            },
+            {
+              "label": "Faction management",
+              "active": true
+            },
+            {
+              "label": "Cache offline player data",
+              "active": true
+            },
+            {
+              "label": "Refresh",
+              "active": true
+            },
+            {
+              "label": "Apply",
+              "active": true
+            },
+            {
+              "label": "Close",
+              "active": true
+            }
+          ],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        },
+        {
+          "id": "admin-overview",
+          "screenClass": "net.dochi.gameeditor.client.DrmAdminScreen",
+          "status": "captured_in_game",
+          "actions": [
+            "wait:60",
+            "clear:chat"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [
+            {
+              "label": "Back",
+              "active": true
+            },
+            {
+              "label": "Forward",
+              "active": false
+            },
+            {
+              "label": "Refresh",
+              "active": true
+            },
+            {
+              "label": "Close",
+              "active": true
+            }
+          ],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        },
+        {
+          "id": "admin-tags",
+          "screenClass": "net.dochi.gameeditor.client.DrmAdminScreen",
+          "status": "captured_in_game",
+          "actions": [
+            "wait:60",
+            "admin-tab:tags",
+            "wait:40",
+            "clear:chat"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [
+            {
+              "label": "Back",
+              "active": true
+            },
+            {
+              "label": "Forward",
+              "active": false
+            },
+            {
+              "label": "Refresh",
+              "active": true
+            },
+            {
+              "label": "Close",
+              "active": true
+            },
+            {
+              "label": "Select filtered results · 0",
+              "active": false
+            },
+            {
+              "label": "Add",
+              "active": true
+            },
+            {
+              "label": "Delete",
+              "active": false
+            },
+            {
+              "label": "Rename",
+              "active": false
+            }
+          ],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        }
+      ],
+      "savedPolicy": {
+        "enabled": true,
+        "ftbQuests": true,
+        "storedData": true,
+        "advancements": true,
+        "factions": true,
+        "cacheOfflineSnapshots": false
+      }
+    },
+    {
+      "run": "build\\task\\guide-capture\\core-operations-neo1211-en-04\\captures",
+      "environment": {
+        "minecraft": "1.21.1",
+        "loader": "NeoForge 21.1.259",
+        "locale": "en_us",
+        "actor": "dnpc",
+        "mods": [
+          {
+            "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\jar\\dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar",
+            "sha256": "00adcf6446e36c47d36a691f1614806b5c05aee30f2523a2616db8a1bf9b29fe"
+          },
+          {
+            "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-neoforge-1.21.1.jar",
+            "sha256": "cf01bfc2203b755adc8a968ce760b4a01ed764e74d9e69be6da2e4ce85811d6a"
+          },
+          {
+            "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\geckolib-neoforge-1.21.1-4.9.2.jar",
+            "sha256": "5e548466af9ab6aca7a91a7c7d4dc0dc8bc385e22958aed5da0e7bebd0fa3fba"
+          },
+          {
+            "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\architectury-13.0.11-neoforge.jar",
+            "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb"
+          },
+          {
+            "source": "documentation capture fixture",
+            "sha256": "e44510603c8a37e5b1a51b5f23c8cbc82e1936cf3015f8fab7103bd880b3f2c9"
+          }
+        ],
+        "seededHudFiles": []
+      },
+      "records": [
+        {
+          "id": "admin-server-policy",
+          "screenClass": "net.dochi.gameeditor.client.DochiRpgMakerConfigScreen",
+          "status": "captured_in_game",
+          "actions": [
+            "Admin",
+            "wait:60",
+            "Enable DRM Admin",
+            "Apply",
+            "wait:60",
+            "clear:chat"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [
+            {
+              "label": "Core",
+              "active": true
+            },
+            {
+              "label": "Admin",
+              "active": true
+            },
+            {
+              "label": "Keyboard shortcuts",
+              "active": true
+            },
+            {
+              "label": "Dochi`s Npc Core",
+              "active": true
+            },
+            {
+              "label": "Enable DRM Admin",
+              "active": true
+            },
+            {
+              "label": "FTB Quests management",
+              "active": true
+            },
+            {
+              "label": "Manage stored data",
+              "active": true
+            },
+            {
+              "label": "Advancement management",
+              "active": true
+            },
+            {
+              "label": "Faction management",
+              "active": true
+            },
+            {
+              "label": "Cache offline player data",
+              "active": true
+            },
+            {
+              "label": "Refresh",
+              "active": true
+            },
+            {
+              "label": "Apply",
+              "active": true
+            },
+            {
+              "label": "Close",
+              "active": true
+            }
+          ],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        },
+        {
+          "id": "dialogue-reward-tag",
+          "status": "verified_server_player_tag",
+          "detail": "welcome_received"
+        },
+        {
+          "id": "admin-tag-added",
+          "screenClass": "net.dochi.gameeditor.client.DrmAdminScreen",
+          "status": "captured_in_game",
+          "actions": [
+            "wait:60",
+            "admin-tab:tags",
+            "wait:20",
+            "input:keyBox=welcome_received",
+            "Add",
+            "wait:60",
+            "verify:reward-tag",
+            "clear:chat"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [
+            {
+              "label": "Back",
+              "active": true
+            },
+            {
+              "label": "Forward",
+              "active": false
+            },
+            {
+              "label": "Refresh",
+              "active": true
+            },
+            {
+              "label": "Close",
+              "active": true
+            },
+            {
+              "label": "Select filtered results · 0",
+              "active": true
+            },
+            {
+              "label": "Add",
+              "active": true
+            },
+            {
+              "label": "Delete",
+              "active": false
+            },
+            {
+              "label": "Rename",
+              "active": false
+            }
+          ],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        }
+      ],
+      "savedPolicy": {
+        "enabled": true,
+        "ftbQuests": true,
+        "storedData": true,
+        "advancements": true,
+        "factions": true,
+        "cacheOfflineSnapshots": false
+      }
+    }
+  ],
+  "limits": "Own local documentation player only. Offline mutations, external quests and trainer-history deletion were not retested. Forge opening crash recorded separately."
+}

@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 23,
+  "enabled": true,
+  "name": "Trainer",
+  "trainerNameSource": "profile",
+  "trainerKey": "9c03e8d7-a25f-4797-894f-fd948fc67f20",
+  "battleType": "trainer",
+  "presentationProfile": "presets/vs_trainer.json",
+  "generalInventory": {
+    "items": []
+  },
+  "trainerOptions": {
+    "trigger": {
+      "mode": "interaction",
+      "checkIntervalTicks": 20,
+      "requireLineOfSight": true,
+      "visionDistance": 8.0,
+      "visionAngle": 45.0,
+      "radius": 10.0
+    },
+    "detectionFeedback": {
+      "markerEnabled": true,
+      "markerText": "!",
+      "reactionTicks": 20,
+      "markerAppearance": {
+        "color": "#FFB347",
+        "scale": 1.0,
+        "yOffset": 0.72,
+        "textShadow": true,
+        "maxDistance": 64.0,
+        "holdTicks": 24
+      },
+      "soundEnabled": true,
+      "sound": "minecraft:block.note_block.pling",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    "chase": {
+      "enabled": false,
+      "walkingSpeed": 6,
+      "stopDistance": 2.0,
+      "maxDistance": 16.0,
+      "durationTicks": 100,
+      "returnHome": true
+    },
+    "battlePositioning": {
+      "enabled": true,
+      "playerDistance": 3.0,
+      "mode": "front",
+      "offsetX": 0.0,
+      "offsetY": 0.0,
+      "offsetZ": 3.0
+    },
+    "encounterPolicy": {
+      "rematch": {
+        "enabled": false,
+        "maxRematches": 0,
+        "startRound": 0,
+        "roundMode": "fixed"
+      },
+      "requireVisibleNpc": true
+    },
+    "battleConfig": {
+      "levelSettings": {
+        "mode": "keep",
+        "fixedLevel": 50,
+        "averageOffset": 0,
+        "scope": "trainer"
+      },
+      "levelPolicy": "keep",
+      "fixedLevel": 50,
+      "naturalDrops": false,
+      "capturePolicy": "allow",
+      "rules": {
+        "format": "inherit",
+        "fleeMode": "native",
+        "fleeDistance": 32,
+        "itemsAllowed": true,
+        "bannedItems": [],
+        "itemLimit": -1,
+        "itemMinTurn": 0,
+        "itemMaxHpPercent": 100,
+        "heldItemsAllowed": true,
+        "legendaryAllowed": true,
+        "megaAllowed": true,
+        "teraAllowed": true,
+        "dynamaxAllowed": true,
+        "leadDuel": false,
+        "playerLead": "selected",
+        "playerSlot": 0,
+        "trainerLead": "selected",
+        "trainerSlot": 0,
+        "trainerSwitch": "engine",
+        "trainerSlotOrder": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      }
+    },
+    "battleSound": {
+      "rules": []
+    },
+    "battlePresentations": {
+      "rules": []
+    }
+  },
+  "rounds": [
+    {
+      "startDelayTicks": 0,
+      "format": "singles",
+      "aiSkill": 3,
+      "party": [
+        {
+          "species": "cobblemon:bulbasaur",
+          "form": "",
+          "aspects": "",
+          "gender": "random",
+          "shiny": false,
+          "level": 5,
+          "nature": "",
+          "ability": "",
+          "moves": [],
+          "pokeball": "cobblemon:poke_ball",
+          "heldItem": ""
+        }
+      ],
+      "dialogue": {
+        "beforeBattleSet": ""
+      },
+      "conditions": {
+        "mode": "and",
+        "list": []
+      },
+      "afterActions": {
+        "mode": "all",
+        "runPolicy": "every_clear",
+        "list": []
+      },
+      "trainerBrain": {
+        "schemaVersion": 4,
+        "enabled": true,
+        "aiEngine": "drm",
+        "temperament": "balanced",
+        "knowledge": "observed",
+        "aiTuning": {
+          "decisionQuality": 60,
+          "knowledge": 40,
+          "aggression": 50,
+          "defense": 50,
+          "trickery": 50,
+          "switching": 56
+        },
+        "strategyPlan": {
+          "primary": "standard_offense",
+          "secondary": [],
+          "winConditions": [
+            "gain_damage_advantage"
+          ],
+          "fallbackPlans": [
+            "standard_offense"
+          ],
+          "leadSlot": 0,
+          "aceSlot": 0,
+          "preserveSlots": [],
+          "roleOverrides": {},
+          "tactics": [
+            "prioritize_confirmed_ko"
+          ],
+          "phasePlans": {},
+          "switchPolicy": "smart",
+          "itemPolicy": "disabled",
+          "gimmickPolicy": "disabled",
+          "itemSettings": {
+            "priority": 0,
+            "healingThresholdPercent": 0,
+            "boostTurnLimit": 0,
+            "allowRevive": false,
+            "allowStatusCure": false,
+            "allowPpRestore": false
+          }
+        },
+        "consultant": {
+          "mode": "analyze_current_party",
+          "lockedSlots": [],
+          "suppressedRecommendationIds": []
+        }
+      },
+      "battleSoundOverride": {
+        "rules": [],
+        "mode": "inherit"
+      },
+      "trainerGimmick": {
+        "type": "none",
+        "keyItem": "",
+        "showInPresentation": true
+      }
+    }
+  ]
+}

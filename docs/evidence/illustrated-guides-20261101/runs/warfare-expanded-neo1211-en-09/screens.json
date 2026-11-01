@@ -1,0 +1,424 @@
+[
+  {
+    "id": "dw-pose",
+    "screenClass": "net.dochi.tacznpcfire.client.TaczNpcFireConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "OFF",
+      "Pose"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Overview",
+        "active": true
+      },
+      {
+        "label": "Senses",
+        "active": true
+      },
+      {
+        "label": "Pose",
+        "active": true
+      },
+      {
+        "label": "Cover",
+        "active": true
+      },
+      {
+        "label": "Ammo",
+        "active": true
+      },
+      {
+        "label": "Gun",
+        "active": true
+      },
+      {
+        "label": "Armor",
+        "active": true
+      },
+      {
+        "label": "Melee",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Visual \u0026 FX",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DW Editors",
+        "active": true
+      },
+      {
+        "label": "New draft",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset draft",
+        "active": true
+      },
+      {
+        "label": "Clone",
+        "active": true
+      },
+      {
+        "label": "Start a guided tour of the current editor section.",
+        "active": true
+      },
+      {
+        "label": "Toggle hover explanations.|ON shows descriptions when your cursor is over controls.",
+        "active": true
+      },
+      {
+        "label": "Easy Build",
+        "active": true
+      },
+      {
+        "label": "Presets",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      },
+      {
+        "label": "Built-in",
+        "active": true
+      },
+      {
+        "label": "Low Ready",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Inherit",
+        "active": true
+      },
+      {
+        "label": "Idle - Standing",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Inherit",
+        "active": true
+      },
+      {
+        "label": "Idle - Standing",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Built-in",
+        "active": true
+      },
+      {
+        "label": "TACZ Default",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Inherit",
+        "active": true
+      },
+      {
+        "label": "Combat Aim",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Inherit",
+        "active": true
+      },
+      {
+        "label": "Firing",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Inherit",
+        "active": true
+      },
+      {
+        "label": "Combat Aim",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Inherit",
+        "active": true
+      },
+      {
+        "label": "Combat Aim",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Built-in",
+        "active": true
+      },
+      {
+        "label": "TACZ Default",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Built-in",
+        "active": true
+      },
+      {
+        "label": "TACZ Default",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Built-in",
+        "active": true
+      },
+      {
+        "label": "TACZ Default",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Built-in",
+        "active": true
+      },
+      {
+        "label": "TACZ Default",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      },
+      {
+        "label": "Built-in",
+        "active": true
+      },
+      {
+        "label": "TACZ Default",
+        "active": true
+      },
+      {
+        "label": "↶",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dw-presets",
+    "screenClass": "net.dochi.tacznpcfire.client.TaczNpcFireConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "OFF",
+      "Presets"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Overview",
+        "active": true
+      },
+      {
+        "label": "Senses",
+        "active": true
+      },
+      {
+        "label": "Pose",
+        "active": true
+      },
+      {
+        "label": "Cover",
+        "active": true
+      },
+      {
+        "label": "Ammo",
+        "active": true
+      },
+      {
+        "label": "Gun",
+        "active": true
+      },
+      {
+        "label": "Armor",
+        "active": true
+      },
+      {
+        "label": "Melee",
+        "active": true
+      },
+      {
+        "label": "Targets",
+        "active": true
+      },
+      {
+        "label": "Visual \u0026 FX",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DW Editors",
+        "active": true
+      },
+      {
+        "label": "New draft",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset draft",
+        "active": true
+      },
+      {
+        "label": "Clone",
+        "active": true
+      },
+      {
+        "label": "Start a guided tour of the current editor section.",
+        "active": true
+      },
+      {
+        "label": "Toggle hover explanations.|ON shows descriptions when your cursor is over controls.",
+        "active": true
+      },
+      {
+        "label": "Easy Build",
+        "active": true
+      },
+      {
+        "label": "Presets",
+        "active": true
+      },
+      {
+        "label": "ON",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dw-easy",
+    "screenClass": "net.dochi.tacznpcfire.client.TaczNpcFireEasyBuilderScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "OFF",
+      "next-screen:TaczNpcFireEasyBuilderScreen",
+      "Easy Build"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Cancel",
+        "active": true
+      },
+      {
+        "label": "Beginner",
+        "active": true
+      },
+      {
+        "label": "Intermediate",
+        "active": true
+      },
+      {
+        "label": "Expert",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dw-clones",
+    "screenClass": "net.dochi.tacznpcfire.client.EntityCloneLibraryScreen",
+    "status": "captured_in_game",
+    "actions": [],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Search NPC and vehicle JSON",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

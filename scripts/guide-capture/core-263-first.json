@@ -1,0 +1,9 @@
+[
+  {"id":"core263-editor-selector"},
+  {"id":"core263-dialogue","editor":"dialogue"},
+  {"id":"core263-gui-components","editor":"gui_maker"},
+  {"id":"core263-item-editor","editor":"item_editor"},
+  {"id":"core263-shop","editor":"npc_shop"},
+  {"id":"core263-npc-native","nativeNpc":true},
+  {"id":"core263-npc-apply","apply":true}
+]

@@ -1,0 +1,1393 @@
+[
+  {
+    "id": "cobble-rounds",
+    "screenClass": "net.hodu.cobblenpc.client.CobbleTrainerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Battle Config",
+      "Rounds"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Pokemon Party",
+        "active": true
+      },
+      {
+        "label": "\u003e Battle Config",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Encounter",
+        "active": true
+      },
+      {
+        "label": "Detection FX",
+        "active": true
+      },
+      {
+        "label": "Rounds",
+        "active": true
+      },
+      {
+        "label": "Dialogue",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "After Actions",
+        "active": true
+      },
+      {
+        "label": "Scenes",
+        "active": true
+      },
+      {
+        "label": "Battle sounds",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Rounds",
+        "active": true
+      },
+      {
+        "label": "Edit",
+        "active": true
+      },
+      {
+        "label": "Advanced",
+        "active": true
+      },
+      {
+        "label": "Battle start delay (ticks)",
+        "active": true
+      },
+      {
+        "label": "1 Pokemon",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": false
+      },
+      {
+        "label": "Show in VS Presentation",
+        "active": false
+      },
+      {
+        "label": "Rematch",
+        "active": true
+      },
+      {
+        "label": "Fixed",
+        "active": true
+      },
+      {
+        "label": "Max rematches",
+        "active": false
+      },
+      {
+        "label": "Start round",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-encounter",
+    "screenClass": "net.hodu.cobblenpc.client.CobbleTrainerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Battle Config",
+      "Encounter"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Pokemon Party",
+        "active": true
+      },
+      {
+        "label": "\u003e Battle Config",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Encounter",
+        "active": true
+      },
+      {
+        "label": "Detection FX",
+        "active": true
+      },
+      {
+        "label": "Rounds",
+        "active": true
+      },
+      {
+        "label": "Dialogue",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "After Actions",
+        "active": true
+      },
+      {
+        "label": "Scenes",
+        "active": true
+      },
+      {
+        "label": "Battle sounds",
+        "active": true
+      },
+      {
+        "label": "Interaction",
+        "active": true
+      },
+      {
+        "label": "Line of Sight",
+        "active": true
+      },
+      {
+        "label": "Detection interval (ticks)",
+        "active": true
+      },
+      {
+        "label": "Vision distance",
+        "active": false
+      },
+      {
+        "label": "Vision half-angle",
+        "active": false
+      },
+      {
+        "label": "Detection radius",
+        "active": false
+      },
+      {
+        "label": "Dash / chase",
+        "active": true
+      },
+      {
+        "label": "Return home",
+        "active": true
+      },
+      {
+        "label": "Dash speed (0-100)",
+        "active": false
+      },
+      {
+        "label": "Dash duration (ticks)",
+        "active": false
+      },
+      {
+        "label": "Battle start (0.5-96)",
+        "active": false
+      },
+      {
+        "label": "Maximum chase distance",
+        "active": false
+      },
+      {
+        "label": "Align battle positions",
+        "active": true
+      },
+      {
+        "label": "Placement: NPC facing",
+        "active": true
+      },
+      {
+        "label": "Player distance",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-dialogue",
+    "screenClass": "net.hodu.cobblenpc.client.CobbleTrainerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Battle Config",
+      "Dialogue"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Pokemon Party",
+        "active": true
+      },
+      {
+        "label": "\u003e Battle Config",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Encounter",
+        "active": true
+      },
+      {
+        "label": "Detection FX",
+        "active": true
+      },
+      {
+        "label": "Rounds",
+        "active": true
+      },
+      {
+        "label": "Dialogue",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "After Actions",
+        "active": true
+      },
+      {
+        "label": "Scenes",
+        "active": true
+      },
+      {
+        "label": "Battle sounds",
+        "active": true
+      },
+      {
+        "label": "Round Mappings",
+        "active": true
+      },
+      {
+        "label": "Dialogue set",
+        "active": true
+      },
+      {
+        "label": "Select",
+        "active": true
+      },
+      {
+        "label": "Unlink",
+        "active": false
+      },
+      {
+        "label": "Fill Unmapped",
+        "active": true
+      },
+      {
+        "label": "Overwrite All",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-conditions",
+    "screenClass": "net.hodu.cobblenpc.client.CobbleTrainerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Battle Config",
+      "Conditions"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Pokemon Party",
+        "active": true
+      },
+      {
+        "label": "\u003e Battle Config",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Encounter",
+        "active": true
+      },
+      {
+        "label": "Detection FX",
+        "active": true
+      },
+      {
+        "label": "Rounds",
+        "active": true
+      },
+      {
+        "label": "Dialogue",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "After Actions",
+        "active": true
+      },
+      {
+        "label": "Scenes",
+        "active": true
+      },
+      {
+        "label": "Battle sounds",
+        "active": true
+      },
+      {
+        "label": "1",
+        "active": true
+      },
+      {
+        "label": "All (AND)",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Condition list",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-after-actions",
+    "screenClass": "net.hodu.cobblenpc.client.CobbleTrainerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Battle Config",
+      "After Actions"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Pokemon Party",
+        "active": true
+      },
+      {
+        "label": "\u003e Battle Config",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Encounter",
+        "active": true
+      },
+      {
+        "label": "Detection FX",
+        "active": true
+      },
+      {
+        "label": "Rounds",
+        "active": true
+      },
+      {
+        "label": "Dialogue",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "After Actions",
+        "active": true
+      },
+      {
+        "label": "Scenes",
+        "active": true
+      },
+      {
+        "label": "Battle sounds",
+        "active": true
+      },
+      {
+        "label": "1",
+        "active": true
+      },
+      {
+        "label": "All",
+        "active": true
+      },
+      {
+        "label": "Every trigger",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "After action list",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-sounds",
+    "screenClass": "net.hodu.cobblenpc.client.BattleSoundEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Battle Config",
+      "Battle sounds"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "1",
+        "active": true
+      },
+      {
+        "label": "2",
+        "active": true
+      },
+      {
+        "label": "3",
+        "active": true
+      },
+      {
+        "label": "4",
+        "active": true
+      },
+      {
+        "label": "5",
+        "active": true
+      },
+      {
+        "label": "6",
+        "active": true
+      },
+      {
+        "label": "Play at this count",
+        "active": true
+      },
+      {
+        "label": "Sound ID",
+        "active": true
+      },
+      {
+        "label": "Select",
+        "active": true
+      },
+      {
+        "label": "Volume (0–4)",
+        "active": true
+      },
+      {
+        "label": "Pitch (0.05–4)",
+        "active": true
+      },
+      {
+        "label": "Stop sounds first",
+        "active": true
+      },
+      {
+        "label": "Loop entire track",
+        "active": true
+      },
+      {
+        "label": "▶",
+        "active": true
+      },
+      {
+        "label": "■",
+        "active": true
+      },
+      {
+        "label": "Reset rule",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Pokemon Party",
+        "active": true
+      },
+      {
+        "label": "\u003e Battle Config",
+        "active": true
+      },
+      {
+        "label": "General",
+        "active": true
+      },
+      {
+        "label": "Encounter",
+        "active": true
+      },
+      {
+        "label": "Detection FX",
+        "active": true
+      },
+      {
+        "label": "Rounds",
+        "active": true
+      },
+      {
+        "label": "Dialogue",
+        "active": true
+      },
+      {
+        "label": "Conditions",
+        "active": true
+      },
+      {
+        "label": "After Actions",
+        "active": true
+      },
+      {
+        "label": "Scenes",
+        "active": true
+      },
+      {
+        "label": "Battle sounds",
+        "active": true
+      },
+      {
+        "label": "Apply to",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-party-generator",
+    "screenClass": "net.hodu.cobblenpc.client.RandomTrainerPartyScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Generate Party"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Basics",
+        "active": true
+      },
+      {
+        "label": "Options",
+        "active": true
+      },
+      {
+        "label": "Species",
+        "active": true
+      },
+      {
+        "label": "Types",
+        "active": true
+      },
+      {
+        "label": "Party size",
+        "active": true
+      },
+      {
+        "label": "Minimum level",
+        "active": true
+      },
+      {
+        "label": "Maximum level",
+        "active": true
+      },
+      {
+        "label": "Shiny chance (%)",
+        "active": true
+      },
+      {
+        "label": "\u003c",
+        "active": false
+      },
+      {
+        "label": "\u003e",
+        "active": false
+      },
+      {
+        "label": "Generate",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": false
+      },
+      {
+        "label": "Cancel",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-battle-items",
+    "screenClass": "net.hodu.cobblenpc.client.TrainerItemsEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Battle Item Inventory"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Search battle items",
+        "active": true
+      },
+      {
+        "label": "Battle Item Inventory",
+        "active": true
+      },
+      {
+        "label": "Battle Item Inventory",
+        "active": true
+      },
+      {
+        "label": "Add selected",
+        "active": false
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Disabled",
+        "active": true
+      },
+      {
+        "label": "Conservative",
+        "active": true
+      },
+      {
+        "label": "Smart",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-general-items",
+    "screenClass": "net.hodu.cobblenpc.client.TrainerGeneralInventoryScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "General Item Inventory"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "All items",
+        "active": true
+      },
+      {
+        "label": "Player inv",
+        "active": true
+      },
+      {
+        "label": "Search all items",
+        "active": true
+      },
+      {
+        "label": "Trainer General Inventory",
+        "active": true
+      },
+      {
+        "label": "Trainer General Inventory",
+        "active": true
+      },
+      {
+        "label": "Add selected",
+        "active": false
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Apply",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\cobble-neo1211-en-04\\game\\config\\dochi_rpg_maker\\cobblemon\\nurse_joy\\custom\\village_healer.json"
+  },
+  {
+    "id": "cobble-nurse-save",
+    "screenClass": "net.hodu.cobblenpc.client.NurseJoyEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:nurse_joy",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Save As",
+      "field:jsonName\u003dcustom/village_healer.json",
+      "Save",
+      "wait:40",
+      "verify:file\u003dconfig/dochi_rpg_maker/cobblemon/nurse_joy/custom/village_healer.json"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Find GUI",
+        "active": true
+      },
+      {
+        "label": "Edit GUI",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-starter-conditions",
+    "screenClass": "net.hodu.cobblenpc.client.StarterSelectorEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:starter_selector",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Card display conditions"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Selected Starter",
+        "active": true
+      },
+      {
+        "label": "\u003e Starter settings",
+        "active": true
+      },
+      {
+        "label": "Dialogue and GUI",
+        "active": true
+      },
+      {
+        "label": "Edit Pokemon",
+        "active": true
+      },
+      {
+        "label": "Card display conditions",
+        "active": true
+      },
+      {
+        "label": "Card Selection Audio",
+        "active": true
+      },
+      {
+        "label": "Enabled",
+        "active": true
+      },
+      {
+        "label": "All (AND)",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Type",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "cobble-starter-dialogue",
+    "screenClass": "net.hodu.cobblenpc.client.StarterSelectorEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:starter_selector",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Dialogue and GUI"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Selected Starter",
+        "active": true
+      },
+      {
+        "label": "Starter settings",
+        "active": true
+      },
+      {
+        "label": "\u003e Dialogue and GUI",
+        "active": true
+      },
+      {
+        "label": "Find",
+        "active": true
+      },
+      {
+        "label": "Edit",
+        "active": false
+      },
+      {
+        "label": "Find",
+        "active": true
+      },
+      {
+        "label": "Edit",
+        "active": true
+      },
+      {
+        "label": "Add tag after grant",
+        "active": true
+      },
+      {
+        "label": "Enabled",
+        "active": true
+      },
+      {
+        "label": "All (AND)",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Type",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\cobble-neo1211-en-04\\game\\config\\dochi_rpg_maker\\cobblemon\\starter_selectors\\custom\\village_starters.json"
+  },
+  {
+    "id": "cobble-starter-save",
+    "screenClass": "net.hodu.cobblenpc.client.StarterSelectorEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:starter_selector",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Save As",
+      "field:jsonName\u003dcustom/village_starters.json",
+      "Save",
+      "wait:40",
+      "verify:file\u003dconfig/dochi_rpg_maker/cobblemon/starter_selectors/custom/village_starters.json"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Selected Starter",
+        "active": true
+      },
+      {
+        "label": "\u003e Starter settings",
+        "active": true
+      },
+      {
+        "label": "Dialogue and GUI",
+        "active": true
+      },
+      {
+        "label": "Edit Pokemon",
+        "active": true
+      },
+      {
+        "label": "Card display conditions",
+        "active": true
+      },
+      {
+        "label": "Card Selection Audio",
+        "active": true
+      },
+      {
+        "label": "#1 Bulbasaur",
+        "active": true
+      },
+      {
+        "label": "Level",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "Random nature",
+        "active": true
+      },
+      {
+        "label": "Automatic ability",
+        "active": true
+      },
+      {
+        "label": "Random",
+        "active": true
+      },
+      {
+        "label": "Shiny",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "Poké Ball",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

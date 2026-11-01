@@ -1,0 +1,428 @@
+[
+  {
+    "id": "dnpc-relations",
+    "status": "failed",
+    "error": "java.lang.NoSuchFieldException: x"
+  },
+  {
+    "id": "shared-armor",
+    "screenClass": "net.dochi.gameeditor.client.DochiRpgMakerConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Dochi Real Armor"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Core",
+        "active": true
+      },
+      {
+        "label": "Admin",
+        "active": true
+      },
+      {
+        "label": "Keyboard shortcuts",
+        "active": true
+      },
+      {
+        "label": "Dochi`s Npc Core",
+        "active": true
+      },
+      {
+        "label": "Dochi Real Armor",
+        "active": true
+      },
+      {
+        "label": "Minigames",
+        "active": true
+      },
+      {
+        "label": "Enable armor calculation: ON",
+        "active": true
+      },
+      {
+        "label": "Body-part armor: OFF",
+        "active": true
+      },
+      {
+        "label": "Damage armor items: ON",
+        "active": true
+      },
+      {
+        "label": "Armor toughness: ON",
+        "active": true
+      },
+      {
+        "label": "Protection enchantments: ON",
+        "active": true
+      },
+      {
+        "label": "Armor knockback resistance: ON",
+        "active": true
+      },
+      {
+        "label": "CustomNPCs support: ON",
+        "active": true
+      },
+      {
+        "label": "Easy NPC support: ON",
+        "active": true
+      },
+      {
+        "label": "Dochi NPC Core: ON",
+        "active": true
+      },
+      {
+        "label": "Override companion armor: OFF",
+        "active": true
+      },
+      {
+        "label": "Debug damage messages: OFF",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "armor-compatibility",
+    "screenClass": "com.hodu.cnpcrealarmor.client.CnpcRealArmorConfigScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "NPC Compatibility"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "General Armor",
+        "active": true
+      },
+      {
+        "label": "NPC Compatibility",
+        "active": true
+      },
+      {
+        "label": "Done",
+        "active": true
+      },
+      {
+        "label": "CustomNPCs support: ON",
+        "active": true
+      },
+      {
+        "label": "Easy NPC support: ON",
+        "active": true
+      },
+      {
+        "label": "Dochi NPC Core: ON",
+        "active": true
+      },
+      {
+        "label": "Override companion armor: OFF",
+        "active": true
+      },
+      {
+        "label": "Debug damage messages: OFF",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dnpc-action-picker",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Schedule",
+      "Add time",
+      "+"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DRM Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Draft",
+        "active": true
+      },
+      {
+        "label": "Load NPC template",
+        "active": true
+      },
+      {
+        "label": "Save to NPC",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Delete NPC",
+        "active": true
+      },
+      {
+        "label": "Load schedule",
+        "active": true
+      },
+      {
+        "label": "Save schedule",
+        "active": true
+      },
+      {
+        "label": "Identity",
+        "active": true
+      },
+      {
+        "label": "Appearance \u0026 Model",
+        "active": true
+      },
+      {
+        "label": "Part scales",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "Animation",
+        "active": true
+      },
+      {
+        "label": "Inventory \u0026 Equipment",
+        "active": true
+      },
+      {
+        "label": "Death drops",
+        "active": true
+      },
+      {
+        "label": "Schedule",
+        "active": true
+      },
+      {
+        "label": "DRM functions",
+        "active": true
+      },
+      {
+        "label": "Movement AI",
+        "active": true
+      },
+      {
+        "label": "Houses",
+        "active": true
+      },
+      {
+        "label": "Combat AI",
+        "active": true
+      },
+      {
+        "label": "Weapon \u0026 ammunition",
+        "active": true
+      },
+      {
+        "label": "Combat distances",
+        "active": true
+      },
+      {
+        "label": "Respawn",
+        "active": true
+      },
+      {
+        "label": "Relations",
+        "active": true
+      },
+      {
+        "label": "DNPC general schedule",
+        "active": true
+      },
+      {
+        "label": "Add time",
+        "active": true
+      },
+      {
+        "label": "Remove",
+        "active": false
+      },
+      {
+        "label": "Enable schedule",
+        "active": true
+      },
+      {
+        "label": "Expand / collapse actions",
+        "active": true
+      },
+      {
+        "label": "Select time and actions",
+        "active": true
+      },
+      {
+        "label": "Unnamed time",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "Delete checked actions",
+        "active": false
+      },
+      {
+        "label": "✎",
+        "active": true
+      },
+      {
+        "label": "Time slot name",
+        "active": true
+      },
+      {
+        "label": "✓",
+        "active": true
+      },
+      {
+        "label": "Start (world ticks)",
+        "active": true
+      },
+      {
+        "label": "End (world ticks)",
+        "active": true
+      },
+      {
+        "label": "Always first action",
+        "active": true
+      },
+      {
+        "label": "Position 1 of 1",
+        "active": true
+      },
+      {
+        "label": "Even",
+        "active": false
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "minigames-mwent-play",
+    "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "MWENT",
+      "next-screen:@changed",
+      "Test play"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Rulebook",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "All decks",
+        "active": true
+      },
+      {
+        "label": "All factions",
+        "active": true
+      },
+      {
+        "label": "All strategies",
+        "active": true
+      },
+      {
+        "label": "All mods",
+        "active": true
+      },
+      {
+        "label": "Companion Chorus. Avalin. Nature \u0026 companions",
+        "active": true
+      },
+      {
+        "label": "Living Grove. Avalin. Summons \u0026 recurrence",
+        "active": true
+      },
+      {
+        "label": "Nurturing Spring. Avalin. Nature \u0026 companions",
+        "active": true
+      },
+      {
+        "label": "Blossom Pact. Avalin. Nature \u0026 companions",
+        "active": true
+      },
+      {
+        "label": "Avalin · Cobblemon. Cobblemon. Nature \u0026 companions. Install Cobblemon on the server and client to unlock.",
+        "active": true
+      },
+      {
+        "label": "Avalin · Mowzie\u0027s Mobs. Mowzie\u0027s Mobs. Nature \u0026 companions. Install Mowzie\u0027s Mobs on the server and client to unlock.",
+        "active": true
+      },
+      {
+        "label": "Avalin · Iron\u0027s Spells \u0027n Spellbooks. Iron\u0027s Spells \u0027n Spellbooks. Nature \u0026 companions. Install Iron\u0027s Spells \u0027n Spellbooks on the server and client to unlock.",
+        "active": true
+      },
+      {
+        "label": "Crew Battery. Volkar Empire. Armor \u0026 crews",
+        "active": true
+      },
+      {
+        "label": "Unbroken Line. Volkar Empire. Armor \u0026 crews",
+        "active": true
+      },
+      {
+        "label": "Salvage Foundry. Volkar Empire. Armor \u0026 crews",
+        "active": true
+      },
+      {
+        "label": "Random deck",
+        "active": true
+      },
+      {
+        "label": "My decks",
+        "active": true
+      },
+      {
+        "label": "Use this deck",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

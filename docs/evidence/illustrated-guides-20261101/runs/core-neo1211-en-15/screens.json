@@ -1,0 +1,341 @@
+[
+  {
+    "id": "hud-health-saved",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Screen Editor",
+      "+ Health",
+      "Save As",
+      "input:guiExportName\u003dguide_hud",
+      "Save As",
+      "wait:60"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "Preview",
+        "active": true
+      },
+      {
+        "label": "Currency Editor",
+        "active": true
+      },
+      {
+        "label": "Apply",
+        "active": true
+      },
+      {
+        "label": "Unapply",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "-",
+        "active": true
+      },
+      {
+        "label": "-",
+        "active": true
+      },
+      {
+        "label": "+ Health",
+        "active": true
+      },
+      {
+        "label": "+ Food",
+        "active": true
+      },
+      {
+        "label": "+ Armor",
+        "active": true
+      },
+      {
+        "label": "+ Air",
+        "active": true
+      },
+      {
+        "label": "+ Level",
+        "active": true
+      },
+      {
+        "label": "+ Iron\u0027s Mana",
+        "active": true
+      },
+      {
+        "label": "+ Combat Roll Stamina",
+        "active": true
+      },
+      {
+        "label": "+ CNPC Tempdata",
+        "active": true
+      },
+      {
+        "label": "+ CNPC Storeddata",
+        "active": true
+      },
+      {
+        "label": "+ Player Head",
+        "active": true
+      },
+      {
+        "label": "* Health",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Layer -",
+        "active": true
+      },
+      {
+        "label": "Layer +",
+        "active": true
+      },
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Front",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "-",
+        "active": true
+      },
+      {
+        "label": "guiName",
+        "active": true
+      },
+      {
+        "label": "Default UI: ON · Texture",
+        "active": true
+      },
+      {
+        "label": "Render survival HUD",
+        "active": true
+      },
+      {
+        "label": "HUD Guide +",
+        "active": true
+      },
+      {
+        "label": "HUD Guide -",
+        "active": true
+      },
+      {
+        "label": "MP Iron\u0027s Spells Mana",
+        "active": true
+      },
+      {
+        "label": "ST Combat Roll Stamina",
+        "active": true
+      },
+      {
+        "label": "gridX",
+        "active": true
+      },
+      {
+        "label": "gridY",
+        "active": true
+      },
+      {
+        "label": "OFF",
+        "active": true
+      },
+      {
+        "label": "id",
+        "active": true
+      },
+      {
+        "label": "layerOrder",
+        "active": true
+      },
+      {
+        "label": "x",
+        "active": true
+      },
+      {
+        "label": "y",
+        "active": true
+      },
+      {
+        "label": "w",
+        "active": true
+      },
+      {
+        "label": "h",
+        "active": true
+      },
+      {
+        "label": "text",
+        "active": true
+      },
+      {
+        "label": "Literal Text",
+        "active": true
+      },
+      {
+        "label": "fillColor",
+        "active": true
+      },
+      {
+        "label": "fillOpacity",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "borderColor",
+        "active": true
+      },
+      {
+        "label": "outlineGlow",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "HUD PNG: drm_forge_hud / Gauge",
+        "active": true
+      },
+      {
+        "label": "hudLossColor",
+        "active": true
+      },
+      {
+        "label": "hudLossDelayTicks",
+        "active": true
+      },
+      {
+        "label": "hudLossDurationTicks",
+        "active": true
+      },
+      {
+        "label": "hudTextSize",
+        "active": true
+      },
+      {
+        "label": "hudTextColor",
+        "active": true
+      },
+      {
+        "label": "hudAmountColor",
+        "active": true
+      },
+      {
+        "label": "Amount",
+        "active": true
+      },
+      {
+        "label": "(none)",
+        "active": true
+      },
+      {
+        "label": "Clear",
+        "active": true
+      },
+      {
+        "label": "none",
+        "active": true
+      },
+      {
+        "label": "Stretch",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Solo",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "quest-objectives",
+    "screenClass": "net.dochi.gameeditor.client.QuestEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "+ Category",
+      "+ Quest",
+      "Objectives"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "quest-add-objective",
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Missing active labeled control \u0027Add\u0027 in QuestEditorScreen"
+  },
+  {
+    "id": "quest-rewards",
+    "screenClass": "net.dochi.gameeditor.client.QuestEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "+ Category",
+      "+ Quest",
+      "Rewards"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

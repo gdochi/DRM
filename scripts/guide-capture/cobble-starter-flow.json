@@ -1,0 +1,40 @@
+[
+  {
+    "id": "cobble-starter-runtime",
+    "editor": "cobble_npc:starter_selector",
+    "target": true,
+    "actions": [
+      "Save As",
+      "field:jsonName=custom/village_starters.json",
+      "Save",
+      "wait:40",
+      "Apply to NPC",
+      "wait:40",
+      "verify:starter-bound",
+      "interact:starter",
+      "wait:140",
+      "clear:chat"
+    ]
+  },
+  {
+    "id": "cobble-starter-granted",
+    "editor": "cobble_npc:starter_selector",
+    "target": true,
+    "actions": [
+      "Save As",
+      "field:jsonName=custom/village_starters.json",
+      "Save",
+      "wait:40",
+      "Apply to NPC",
+      "wait:40",
+      "verify:starter-bound",
+      "interact:starter",
+      "wait:140",
+      "clear:chat",
+      "next-screen:@closed",
+      "Choose This Pokemon",
+      "wait:40",
+      "verify:starter-granted"
+    ]
+  }
+]

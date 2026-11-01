@@ -1,0 +1,17 @@
+[
+  {
+    "id": "minigames-test-play",
+    "screenClass": "net.dochi.minigames.client.GameRuntimeScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_minigames:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Cancel",
+      "next-screen:GameRuntimeScreen",
+      "Test play"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

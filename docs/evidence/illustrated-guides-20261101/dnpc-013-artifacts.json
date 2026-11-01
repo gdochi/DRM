@@ -1,0 +1,37 @@
+[
+  {
+    "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-fabric-1.21.1.jar",
+    "sha256": "ae514a70cdb9ef42c6091be6c4513b9fe9c04e7f8ec1dd340820013233c25645",
+    "metadata": {
+      "fabric.mod.json": "{\n    \"schemaVersion\": 1,\n    \"id\": \"dochi_npc\",\n    \"version\": \"0.1.3\",\n    \"name\": \"Dochi`s NPC Core\",\n    \"description\": \"NPC creation, AI and daily routines for Dochi's RPG Maker.\",\n    \"authors\": [\n        \"Great_dochi\"\n    ],\n    \"license\": \"All-Rights-Reserved\",\n    \"environment\": \"*\",\n    \"entrypoints\": {\n        \"modmenu\": [\n            \"net.dochi.npc.client.NpcModMenuIntegration\"\n        ],\n        \"main\": [\n            \"net.dochi.npc.DochiNpc\"\n        ],\n        \"client\": [\n            \"net.dochi.npc.client.DochiNpcClient\"\n        ]\n    },\n    \"mixins\": [\n        \"dochi_npc.mixins.json\",\n        {\n            \"config\": \"dochi_npc.client.mixins.json\",\n            \"environment\": \"client\"\n        }\n    ],\n    \"depends\": {\n        \"fabricloader\": \">=0.18.0\",\n        \"minecraft\": \"1.21.1\",\n        \"java\": \">=21\",\n        \"fabric-api\": \">=0.116.11+1.21.1\"\n    },\n    \"suggests\": {\n        \"geckolib\": \">=4.7.5\",\n        \"dochi_rpg_maker\": \">=0.2.7\"\n    },\n    \"breaks\": {\n        \n    }\n}"
+    }
+  },
+  {
+    "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-forge-1.20.1.jar",
+    "sha256": "432a3541bdff9d558854f70c25ffe68105a11f490b86086ba76ef71015b16e04",
+    "metadata": {
+      "META-INF/mods.toml": "modLoader=\"javafml\"\r\nloaderVersion=\"[47,)\"\r\nlicense=\"All Rights Reserved\"\r\n[[mods]]\r\nmodId=\"dochi_npc\"\r\nversion=\"0.1.3\"\r\ndisplayName=\"Dochi`s NPC Core\"\r\ndescription=\"NPC actors, editor and temporary clipboard utilities.\"\r\n[[dependencies.dochi_npc]]\r\nmodId=\"forge\"\r\nmandatory=true\r\nversionRange=\"[47.2,)\"\r\nordering=\"NONE\"\r\nside=\"BOTH\"\r\n[[dependencies.dochi_npc]]\r\nmodId=\"minecraft\"\r\nmandatory=true\r\nversionRange=\"[1.20.1,1.20.2)\"\r\nordering=\"NONE\"\r\nside=\"BOTH\"\r\n[[dependencies.dochi_npc]]\r\nmodId=\"dochi_rpg_maker\"\r\nmandatory=false\r\nversionRange=\"[0.2.4,)\"\r\nordering=\"AFTER\"\r\nside=\"BOTH\"\r\n"
+    }
+  },
+  {
+    "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-neoforge-1.21.1.jar",
+    "sha256": "fd853dd0e68d8204d528b18108d708d13c867805a4e0aad8971a5591c21fc284",
+    "metadata": {
+      "META-INF/neoforge.mods.toml": "modLoader=\"javafml\"\nloaderVersion=\"[4,)\"\nlicense=\"All Rights Reserved\"\n[[mods]]\nmodId=\"dochi_npc\"\nversion=\"0.1.3\"\ndisplayName=\"Dochi's NPC Core\"\ndescription=\"NPC actors, editor, JSON poses, server assets and temporary clipboard utilities.\"\n[[mixins]]\nconfig=\"dochi_npc.mixins.json\"\n\n[[dependencies.dochi_npc]]\nmodId=\"neoforge\"\ntype=\"required\"\nversionRange=\"[21.1.216,)\"\nordering=\"AFTER\"\nside=\"BOTH\"\n\n[[dependencies.dochi_npc]]\nmodId=\"minecraft\"\ntype=\"required\"\nversionRange=\"[1.21.1]\"\nordering=\"AFTER\"\nside=\"BOTH\"\n\n[[dependencies.dochi_npc]]\nmodId=\"dochi_rpg_maker\"\ntype=\"optional\"\nversionRange=\"[0.2.7,)\"\nordering=\"AFTER\"\nside=\"BOTH\"\n\n[[dependencies.dochi_npc]]\nmodId=\"geckolib\"\ntype=\"optional\"\nversionRange=\"[4.7.5,5)\"\nordering=\"AFTER\"\nside=\"BOTH\"\n\n[[dependencies.dochi_npc]]\nmodId=\"curios\"\ntype=\"optional\"\nversionRange=\"[9.2.3,10)\"\nordering=\"AFTER\"\nside=\"BOTH\"\n"
+    }
+  },
+  {
+    "path": "C:\\Users\\hodu3\\Desktop\\[26.3] Dochi`s Npc Core\\jar-26.3\\dochi_npc_core-0.1.3-fabric-26.3.jar",
+    "sha256": "71b38ec85aed4c755c663b66e12dd09286597b94dbb5f052c22a21e5806328f1",
+    "metadata": {
+      "fabric.mod.json": "{\n  \"schemaVersion\": 1,\n  \"id\": \"dochi_npc\",\n  \"version\": \"0.1.3\",\n  \"name\": \"Dochi`s NPC Core\",\n  \"description\": \"NPC creation, AI and daily routines for Dochi's RPG Maker.\",\n  \"authors\": [\n    \"Great_dochi\"\n  ],\n  \"license\": \"All-Rights-Reserved\",\n  \"environment\": \"*\",\n  \"entrypoints\": {\n    \"modmenu\": [\n      \"net.dochi.npc.client.NpcModMenuIntegration\"\n    ],\n    \"main\": [\n      \"net.dochi.npc.DochiNpc\"\n    ],\n    \"client\": [\n      \"net.dochi.npc.client.DochiNpcClient\"\n    ]\n  },\n  \"mixins\": [\n    \"dochi_npc.mixins.json\",\n    {\n      \"config\": \"dochi_npc.client.mixins.json\",\n      \"environment\": \"client\"\n    }\n  ],\n  \"depends\": {\n    \"fabricloader\": \">=0.19.3\",\n    \"minecraft\": \"26.3\",\n    \"java\": \">=25\",\n    \"fabric-api\": \">=0.160.3+26.3\"\n  },\n  \"suggests\": {\n    \"dochi_rpg_maker\": \"*\"\n  },\n  \"breaks\": {}\n}\n"
+    }
+  },
+  {
+    "path": "C:\\Users\\hodu3\\Desktop\\[26.3] Dochi`s Npc Core\\jar-26.3\\dochi_npc_core-0.1.3-neoforge-26.3.jar",
+    "sha256": "39ca5829155e1a42b6371566de6ae10597b3d845600c8184718ef17c18788cf6",
+    "metadata": {
+      "META-INF/neoforge.mods.toml": "modLoader=\"javafml\"\nlicense=\"All Rights Reserved\"\n[[mods]]\nmodId=\"dochi_npc\"\nversion=\"0.1.3\"\ndisplayName=\"Dochi's NPC Core\"\ndescription=\"NPC actors, editor, JSON poses, server assets and temporary clipboard utilities.\"\n[[mixins]]\nconfig=\"dochi_npc.mixins.json\"\n\n[[dependencies.dochi_npc]]\nmodId=\"neoforge\"\ntype=\"required\"\nversionRange=\"[26.3.0.76,)\"\nordering=\"AFTER\"\nside=\"BOTH\"\n\n[[dependencies.dochi_npc]]\nmodId=\"minecraft\"\ntype=\"required\"\nversionRange=\"[26.3]\"\nordering=\"AFTER\"\nside=\"BOTH\"\n\n[[dependencies.dochi_npc]]\nmodId=\"dochi_rpg_maker\"\ntype=\"optional\"\nversionRange=\"[0,)\"\nordering=\"AFTER\"\nside=\"BOTH\"\n\n[[dependencies.dochi_npc]]\nmodId=\"curios\"\ntype=\"optional\"\nversionRange=\"[17.0.0-beta.3+26.3,)\"\nordering=\"AFTER\"\nside=\"BOTH\"\n"
+    }
+  }
+]

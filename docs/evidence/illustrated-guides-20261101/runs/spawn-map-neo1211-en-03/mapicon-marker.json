@@ -1,0 +1,17 @@
+{
+  "id": 3,
+  "uuid": "1a9c62ee-3303-4eb6-874a-1d2b4d30aa03",
+  "dimension": "minecraft:overworld",
+  "name": "Oakridge guide",
+  "x": 16.5,
+  "y": -60.0,
+  "z": 17.5,
+  "icon": {
+    "texture": "dochi_rpg_maker:textures/icons/nikoichu/rpg_character_humanoid.png",
+    "size": 16,
+    "color": 4896767,
+    "minimap": true,
+    "worldmap": true,
+    "showName": true
+  }
+}

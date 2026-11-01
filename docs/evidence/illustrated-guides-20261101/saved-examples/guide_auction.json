@@ -1,0 +1,108 @@
+{
+  "schema": 7,
+  "type": "cobble_npc:pokemart",
+  "id": "pokemart",
+  "displayName": "PokéMart",
+  "role": "auction",
+  "interactionConditions": {
+    "enabled": false,
+    "conditionMode": "and",
+    "conditions": []
+  },
+  "gui": {
+    "guiType": "cobble_npc:pokemart",
+    "guiJsonPath": "pokemart_auction_gui.json"
+  },
+  "currency": {
+    "provider": "item",
+    "id": "minecraft:emerald"
+  },
+  "auction": {
+    "houseId": "guide_auction",
+    "maxListingsPerPlayer": 5,
+    "durationMinutes": 5,
+    "listingFee": "2",
+    "saleTaxPercent": 5,
+    "minimumBidIncrement": "1",
+    "allowBuyout": true,
+    "allowShiny": true,
+    "allowLegendary": true
+  },
+  "products": [
+    {
+      "productId": "bulbasaur_5",
+      "pokemon": {
+        "species": "cobblemon:bulbasaur",
+        "form": "",
+        "aspects": "",
+        "gender": "random",
+        "shiny": false,
+        "level": 5,
+        "nature": "",
+        "ability": "",
+        "moves": [],
+        "pokeball": "cobblemon:poke_ball",
+        "heldItem": ""
+      },
+      "description": "",
+      "descriptionStyles": [],
+      "price": "5000",
+      "stock": {
+        "initial": 3,
+        "maximum": 3,
+        "restockAmount": 1,
+        "restockIntervalTicks": 72000
+      }
+    },
+    {
+      "productId": "charmander_5",
+      "pokemon": {
+        "species": "cobblemon:charmander",
+        "form": "",
+        "aspects": "",
+        "gender": "random",
+        "shiny": false,
+        "level": 5,
+        "nature": "",
+        "ability": "",
+        "moves": [],
+        "pokeball": "cobblemon:poke_ball",
+        "heldItem": ""
+      },
+      "description": "",
+      "descriptionStyles": [],
+      "price": "5000",
+      "stock": {
+        "initial": 3,
+        "maximum": 3,
+        "restockAmount": 1,
+        "restockIntervalTicks": 72000
+      }
+    },
+    {
+      "productId": "squirtle_5",
+      "pokemon": {
+        "species": "cobblemon:squirtle",
+        "form": "",
+        "aspects": "",
+        "gender": "random",
+        "shiny": false,
+        "level": 5,
+        "nature": "",
+        "ability": "",
+        "moves": [],
+        "pokeball": "cobblemon:poke_ball",
+        "heldItem": ""
+      },
+      "description": "",
+      "descriptionStyles": [],
+      "price": "5000",
+      "stock": {
+        "initial": 3,
+        "maximum": 3,
+        "restockAmount": 1,
+        "restockIntervalTicks": 72000
+      }
+    }
+  ]
+}

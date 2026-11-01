@@ -1,0 +1,282 @@
+{
+  "run": "mwent016-golem-neo1211-en-01",
+  "environment": {
+    "minecraft": "1.21.1",
+    "loader": "NeoForge 21.1.259",
+    "locale": "en_us",
+    "actor": "dnpc",
+    "mods": [
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\jar\\dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar",
+        "sha256": "00adcf6446e36c47d36a691f1614806b5c05aee30f2523a2616db8a1bf9b29fe"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-neoforge-1.21.1.jar",
+        "sha256": "cf01bfc2203b755adc8a968ce760b4a01ed764e74d9e69be6da2e4ce85811d6a"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\geckolib-neoforge-1.21.1-4.9.2.jar",
+        "sha256": "5e548466af9ab6aca7a91a7c7d4dc0dc8bc385e22958aed5da0e7bebd0fa3fba"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\architectury-13.0.11-neoforge.jar",
+        "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Minigames\\jar\\dochi_minigames-0.1.6-neoforge-1.21.1.jar",
+        "sha256": "aa24a6d1ba45bd14d1c9f8b033d9beded2f350369dd6fcb6256e8629605937b9"
+      },
+      {
+        "source": "documentation capture fixture",
+        "sha256": "5a43a87558211cf4ebcc84eb7cb34632527efdfb2928b4ead17f8692fe138693"
+      }
+    ],
+    "seededHudFiles": []
+  },
+  "results": {
+    "screens.json": {
+      "sha256": "166593a5aa4ffa746bcf0fc41498da925530df4502c643112d39a7342a6e86d5",
+      "data": [
+        {
+          "id": "mwent-opening-tactic",
+          "status": "verified_server_view_tactic_selection",
+          "detail": "Golem seal core / 4"
+        },
+        {
+          "id": "minigames-phase",
+          "status": "verified_runtime_phase",
+          "detail": "mulligan"
+        },
+        {
+          "id": "minigames-phase",
+          "status": "verified_runtime_phase",
+          "detail": "battle"
+        },
+        {
+          "id": "mwent016-golem-installed",
+          "status": "captured_in_game",
+          "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+          "actions": [
+            "Cancel",
+            "MWENT",
+            "next-screen:@changed",
+            "Test play",
+            "wait:40",
+            "Use this deck",
+            "wait:40",
+            "Golden apple altar: +5 power",
+            "mini-choice:4",
+            "wait:40",
+            "verify:mwent-tactic",
+            "Begin match",
+            "wait-phase:mulligan",
+            "wait-control:Continue",
+            "Continue",
+            "wait-phase:battle",
+            "wait:8",
+            "record:mwent-opening",
+            "snapshot:mwent016-golem-installed"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+        },
+        {
+          "id": "mwent-golem",
+          "status": "verified_native_same_socket_transform",
+          "detail": "4 power; same row/socket; opening tactic consumed"
+        },
+        {
+          "id": "mwent016-golem-transformed",
+          "screenClass": "net.dochi.minigames.client.MobBattleScreen",
+          "status": "captured_in_game",
+          "editorId": "dochi_minigames:editor",
+          "entry": "registered editor source/target opener",
+          "actions": [
+            "Cancel",
+            "MWENT",
+            "next-screen:@changed",
+            "Test play",
+            "wait:40",
+            "Use this deck",
+            "wait:40",
+            "Golden apple altar: +5 power",
+            "mini-choice:4",
+            "wait:40",
+            "verify:mwent-tactic",
+            "Begin match",
+            "wait-phase:mulligan",
+            "wait-control:Continue",
+            "Continue",
+            "wait-phase:battle",
+            "wait:8",
+            "record:mwent-opening",
+            "snapshot:mwent016-golem-installed",
+            "Golem seal core",
+            "wait:20",
+            "verify:mwent-golem"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [
+            {
+              "label": "Rulebook",
+              "active": true
+            },
+            {
+              "label": "Stop BGM",
+              "active": true
+            },
+            {
+              "label": "BGM volume: 100%",
+              "active": true
+            },
+            {
+              "label": "Back",
+              "active": true
+            },
+            {
+              "label": "Forward",
+              "active": false
+            },
+            {
+              "label": "Pass round",
+              "active": false
+            },
+            {
+              "label": "End turn",
+              "active": false
+            },
+            {
+              "label": "Breath of Spring (2 / 2)",
+              "active": true
+            },
+            {
+              "label": "Heart of the Foundry (2 / 2)",
+              "active": true
+            },
+            {
+              "label": "Reset camera",
+              "active": true
+            },
+            {
+              "label": "Top view (fixed)",
+              "active": true
+            },
+            {
+              "label": "Diagonal view (fixed)",
+              "active": true
+            },
+            {
+              "label": "NPC graveyard",
+              "active": true
+            },
+            {
+              "label": "Your graveyard",
+              "active": true
+            }
+          ],
+          "gamePhase": "battle",
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        }
+      ]
+    },
+    "mwent-opening-before.json": {
+      "sha256": "5d80e25903a85c6f48b1270f79379ecf5fb6060e80c469c930075407df9ea8c1",
+      "data": {
+        "uid": 51,
+        "card": 4096,
+        "power": 0,
+        "row": 0,
+        "armor": 0,
+        "poison": 0,
+        "bleeding": 0,
+        "vitality": 0,
+        "orders": 0,
+        "deployedTurn": 0,
+        "cooldown": 0,
+        "patience": 0,
+        "procMask": 0,
+        "procTurn": -1,
+        "slot": 4,
+        "openingTactic": true,
+        "token": true,
+        "shield": false,
+        "locked": false,
+        "doomed": true,
+        "defender": false,
+        "marked": false,
+        "bounty": false,
+        "zeal": false,
+        "graceUsed": false,
+        "spying": false,
+        "berserkUsed": false,
+        "confluenceUsed": false,
+        "basePower": 0,
+        "chapter": 0,
+        "counter": 0,
+        "timer": 0,
+        "rupture": 0,
+        "retained": 0,
+        "veteranApplied": 0,
+        "veil": false,
+        "immunity": false,
+        "resilience": false,
+        "hidden": false,
+        "generated": false,
+        "infusions": [],
+        "infusedTags": [],
+        "infusedKeywords": []
+      }
+    },
+    "mwent-opening-after.json": {
+      "sha256": "e0e13508117c716b83d9725d3d2307a3b31f07ed557cb387c1af189f0db02a88",
+      "data": {
+        "uid": 52,
+        "card": 1,
+        "power": 4,
+        "row": 0,
+        "armor": 0,
+        "poison": 0,
+        "bleeding": 0,
+        "vitality": 0,
+        "orders": 0,
+        "deployedTurn": 1,
+        "cooldown": 0,
+        "patience": 0,
+        "procMask": 0,
+        "procTurn": -1,
+        "slot": 4,
+        "openingTactic": false,
+        "token": true,
+        "shield": false,
+        "locked": false,
+        "doomed": true,
+        "defender": false,
+        "marked": false,
+        "bounty": false,
+        "zeal": false,
+        "graceUsed": false,
+        "spying": false,
+        "berserkUsed": false,
+        "confluenceUsed": false,
+        "basePower": 4,
+        "chapter": 0,
+        "counter": 0,
+        "timer": 0,
+        "rupture": 0,
+        "retained": 0,
+        "veteranApplied": 0,
+        "veil": false,
+        "immunity": false,
+        "resilience": false,
+        "hidden": false,
+        "generated": true,
+        "infusions": [],
+        "infusedTags": [],
+        "infusedKeywords": []
+      }
+    }
+  },
+  "scope": "Native deck selection/tactic choice/coin toss/mulligan/battle; used real shortcut. Tactic row0/socket4/power0 became generated Doomed Iron Golem card1/row0/socket4/power4. Full-row behavior and saved-deck reload are source-checked, not rerun here."
+}

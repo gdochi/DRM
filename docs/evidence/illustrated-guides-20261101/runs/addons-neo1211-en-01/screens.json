@@ -1,0 +1,266 @@
+[
+  {
+    "id": "registry-dochi_npc-employment",
+    "screenClass": "net.dochi.npc.client.NpcEmploymentEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "dochi_npc:employment"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-dialogue",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "dialogue"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-gui_maker",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "gui_maker"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-tooltip_maker",
+    "screenClass": "net.dochi.gameeditor.client.TooltipMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "tooltip_maker"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-npc_shop",
+    "screenClass": "net.dochi.gameeditor.client.NpcShopSelectScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "npc_shop"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-battleworks",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "battleworks"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-particle_maker",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "particle_maker"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-battleworks_tutorial",
+    "screenClass": "net.dochi.cnpcirons.tutorial.client.TutorialScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "battleworks_tutorial"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-spawn_control",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnControlScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "spawn_control"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-spawn_control_spawner",
+    "screenClass": "net.dochi.spawncontrol.client.SpawnerEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "spawn_control_spawner"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-currency",
+    "screenClass": "net.dochi.gameeditor.client.CurrencyEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "currency"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-hud_maker",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "hud_maker"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-popup_maker",
+    "screenClass": "net.dochi.gameeditor.client.PopupMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "popup_maker"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-scene_maker",
+    "screenClass": "net.dochi.gameeditor.client.SceneMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "scene_maker"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-faction",
+    "screenClass": "net.dochi.gameeditor.client.FactionEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "faction"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-quest",
+    "screenClass": "net.dochi.gameeditor.client.QuestEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "quest"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-teleporter",
+    "screenClass": "net.dochi.gameeditor.client.TeleporterEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "teleporter"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-dochi_minigames-editor",
+    "screenClass": "net.dochi.minigames.client.MinigameEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "dochi_minigames:editor"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-dochi_minigames-card_packs",
+    "screenClass": "net.dochi.minigames.client.CardPackEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "dochi_minigames:card_packs"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-dochi_minigames-cards",
+    "screenClass": "net.dochi.minigames.client.CardDesignerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "dochi_minigames:cards"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-remnant_msg",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "remnant_msg"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-stat_builder",
+    "screenClass": "net.dochi.gameeditor.client.StatBuilderScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "stat_builder"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-item_editor",
+    "screenClass": "net.dochi.gameeditor.client.ItemEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "item_editor"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "registry-dochi_mapicon_integration-icons",
+    "screenClass": "net.dochi.mapicon.client.MapIconEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "dochi_mapicon_integration:icons"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

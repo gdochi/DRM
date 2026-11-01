@@ -1,0 +1,61 @@
+[
+  {
+    "id": "dialogue-save-file",
+    "status": "verified_save_as_file",
+    "file": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\core-neo1211-en-13\\game\\config\\dochi_rpg_maker\\dialogue_sets\\village_guide\\dialogue_set.json"
+  },
+  {
+    "id": "dialogue-save-result",
+    "screenClass": "net.dochi.gameeditor.client.DialogueEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "Save As",
+      "input:setName\u003dvillage_guide",
+      "Save As",
+      "verify:saved-dialogue"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-applied-to-dnpc",
+    "status": "verified_server_binding"
+  },
+  {
+    "id": "npc-apply-result",
+    "screenClass": "net.dochi.gameeditor.client.NpcApplyTargetScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "candidate:village_guide",
+      "Apply Dialogue",
+      "wait:60",
+      "verify:npc-dialogue"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-choice-navigation",
+    "status": "verified_runtime_node",
+    "detail": "dialogue_reply_1"
+  },
+  {
+    "id": "dialogue-npc-reply",
+    "screenClass": "net.dochi.gameeditor.client.DialogueRuntimeScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "apply:dialogue",
+      "wait:40",
+      "interact:npc",
+      "wait:140",
+      "runtime-choice:Tell me about the village.",
+      "wait:140",
+      "verify:node\u003ddialogue_reply_1"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

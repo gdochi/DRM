@@ -1,0 +1,389 @@
+{
+  "run": "legacy-apis-forge1201-en-02",
+  "environment": {
+    "minecraft": "1.20.1",
+    "loader": "Forge 47.4.20",
+    "locale": "en_us",
+    "mods": [
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\jar\\dochi_rpg_maker-0.3.1-1.20.1-forge.jar",
+        "sha256": "da7fb3b8f06ff3b6758d01e9b39a41445aefd5474c0f657203192ca579c9b217"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-forge-1.20.1.jar",
+        "sha256": "c5257c0bd7c60cf0ac3ba943ff326c8b5bc54a15f976da1c2bae6fb16f8998f8"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\[FORGE] DRM\\build\\deps\\geckolib-forge-1.20.1-4.8.3.jar",
+        "sha256": "8b90e11871a58b63816e99c529e6c932bc88e6beb3fec97ad618e22217df3250"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\[FORGE] DRM\\build\\deps\\CustomNPCs-1.20.1-GBPort-Unofficial-1.20.1.20260227.jar",
+        "sha256": "3756bed8a2b8b2a45fd8ba8aab2be54b0ea3d2e258819426f65e00a5f83ef4d9"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.20.1(1)\\minecraft\\mods\\irons_spellbooks-1.20.1-3.4.0.9.jar",
+        "sha256": "0508d3e12e8d93a1159b94cf6545e7478114d1739eaaf5b79e6ed4b5725373dc"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.20.1(1)\\minecraft\\mods\\curios-forge-5.14.1+1.20.1.jar",
+        "sha256": "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.20.1(1)\\minecraft\\mods\\caelus-forge-3.2.0+1.20.1.jar",
+        "sha256": "37495445e79df8b30a3a038a0051f3c8aa8447f91a9d0aa0d20baef69dda9368"
+      },
+      {
+        "source": "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.20.1(1)\\minecraft\\mods\\player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+        "sha256": "90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691"
+      },
+      {
+        "source": "documentation capture fixture",
+        "sha256": "7d702b6a6bc4a06121ef1dfaf4d6def9b4af546592b1f5f29bf5f8174c07cfb7"
+      }
+    ],
+    "mappingSha256": "f44ff54ae6accb5a61c90562190afa68f69e36cc2450730272505538abc06954"
+  },
+  "results": {
+    "screens.json": {
+      "sha256": "27bb9a80d565bd20f6eb0afa015618ef814dcc0e04b55ba3cf091b190560631e",
+      "data": [
+        {
+          "id": "script-api-combat",
+          "status": "verified_direct_production_api_call",
+          "detail": "{\"kind\":\"combat\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"accepted\":true,\"meleeEnabled\":false,\"rangedEnabled\":false}"
+        },
+        {
+          "id": "api-combat-switches",
+          "screenClass": "world",
+          "status": "captured_in_game",
+          "actions": [
+            "clear:chat",
+            "fixture:api-combat",
+            "look-at:npc",
+            "wait:8"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        },
+        {
+          "id": "script-api-hitbox",
+          "status": "verified_direct_production_api_call",
+          "detail": "{\"kind\":\"hitbox\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"hits\":1,\"health\":14.0,\"targetId\":8}"
+        },
+        {
+          "id": "api-hitbox-one-shot",
+          "screenClass": "world",
+          "status": "captured_in_game",
+          "actions": [
+            "clear:chat",
+            "fixture:api-hitbox",
+            "look-at:npc"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        },
+        {
+          "id": "script-api-model",
+          "status": "verified_direct_production_api_call",
+          "detail": "{\"kind\":\"model\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"accepted\":true,\"model\":\"minecraft:zombie\"}"
+        },
+        {
+          "id": "api-model-zombie",
+          "screenClass": "world",
+          "status": "captured_in_game",
+          "actions": [
+            "clear:chat",
+            "fixture:api-model",
+            "look-at:npc",
+            "wait:20"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        },
+        {
+          "id": "script-api-stored",
+          "status": "verified_direct_production_api_call",
+          "detail": "{\"kind\":\"stored\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"condition\":{\"type\":\"cnpc_stored_data\",\"scope\":\"player\",\"key\":\"my_pack.quest.stage\",\"op\":\">=\",\"valueType\":\"number\",\"value\":\"3\"},\"stored\":3.0,\"pass\":true}"
+        },
+        {
+          "id": "api-stored-condition",
+          "screenClass": "world",
+          "status": "captured_in_game",
+          "actions": [
+            "clear:chat",
+            "fixture:api-stored",
+            "look-at:npc"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        },
+        {
+          "id": "script-api-effect",
+          "status": "verified_direct_production_api_call",
+          "detail": "{\"kind\":\"effect\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"has\":true,\"level\":2,\"amplifier\":1,\"ticks\":1200}"
+        },
+        {
+          "id": "api-effect-speed",
+          "screenClass": "net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen",
+          "status": "captured_in_game",
+          "actions": [
+            "clear:chat",
+            "fixture:api-effect",
+            "inventory:player",
+            "wait:20"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [
+            {
+              "label": "<",
+              "active": true
+            },
+            {
+              "label": ">",
+              "active": true
+            }
+          ],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        },
+        {
+          "id": "script-api-skill",
+          "status": "verified_direct_production_api_call",
+          "detail": "{\"kind\":\"skill\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"providers\":[\"irons_spellbooks\"],\"available\":true,\"accepted\":true,\"code\":\"success\",\"targetId\":20}"
+        },
+        {
+          "id": "script-api-skill-impact",
+          "status": "observed_server_target_health",
+          "detail": "{\"health\":90.0,\"alive\":true}"
+        },
+        {
+          "id": "api-skill-fireball",
+          "screenClass": "world",
+          "status": "captured_in_game",
+          "actions": [
+            "clear:chat",
+            "fixture:api-skill",
+            "look-at:api-scene",
+            "wait:20",
+            "verify:api-skill-impact"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        },
+        {
+          "id": "saved-file",
+          "status": "verified_file_exists",
+          "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\legacy-apis-forge1201-en-02\\game\\config\\dochi_rpg_maker\\popups\\definitions\\village_entry.json"
+        },
+        {
+          "id": "api-popup-definition",
+          "screenClass": "net.dochi.gameeditor.client.PopupMakerScreen",
+          "status": "captured_in_game",
+          "actions": [
+            "input:id=village_entry",
+            "input:title=Village Gate",
+            "input:hold=200",
+            "Save As",
+            "input:saveAsName=village_entry",
+            "Save As",
+            "wait:60",
+            "verify:file=config/dochi_rpg_maker/popups/definitions/village_entry.json",
+            "clear:chat"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [
+            {
+              "label": "name",
+              "active": true
+            },
+            {
+              "label": "id",
+              "active": true
+            },
+            {
+              "label": "gui",
+              "active": true
+            },
+            {
+              "label": "title",
+              "active": true
+            },
+            {
+              "label": "subtitle",
+              "active": true
+            },
+            {
+              "label": "fadeIn",
+              "active": true
+            },
+            {
+              "label": "hold",
+              "active": true
+            },
+            {
+              "label": "fadeOut",
+              "active": true
+            },
+            {
+              "label": "channel",
+              "active": true
+            },
+            {
+              "label": "instanceKey",
+              "active": true
+            },
+            {
+              "label": "priority",
+              "active": true
+            },
+            {
+              "label": "soundId",
+              "active": true
+            },
+            {
+              "label": "Play",
+              "active": true
+            },
+            {
+              "label": "Stop",
+              "active": true
+            },
+            {
+              "label": "soundVolume",
+              "active": true
+            },
+            {
+              "label": "soundPitch",
+              "active": true
+            }
+          ],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        },
+        {
+          "id": "script-api-popup",
+          "status": "verified_direct_production_api_call",
+          "detail": "{\"kind\":\"popup\",\"actor\":\"noppes.npcs.entity.EntityCustomNpc\",\"sent\":1}"
+        },
+        {
+          "id": "popup-command",
+          "status": "verified_active_client_instance",
+          "detail": "village_entry"
+        },
+        {
+          "id": "api-popup-shown",
+          "screenClass": "world",
+          "status": "captured_in_game",
+          "actions": [
+            "clear:chat",
+            "fixture:api-popup",
+            "wait:20",
+            "verify:popup-active"
+          ],
+          "width": 1920,
+          "height": 1080,
+          "visibleWidgetLabels": [],
+          "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+        }
+      ]
+    },
+    "api-combat-result.json": {
+      "sha256": "aeac3bf86e7dbdbf182355af8a376e8baaca7528a97c32130d5092643d00e1dc",
+      "data": {
+        "kind": "combat",
+        "actor": "noppes.npcs.entity.EntityCustomNpc",
+        "accepted": true,
+        "meleeEnabled": false,
+        "rangedEnabled": false
+      }
+    },
+    "api-hitbox-result.json": {
+      "sha256": "0ea879c83e3dec9c304ff64208904da4f389afd1b5af479b6d1daefd23cdea94",
+      "data": {
+        "kind": "hitbox",
+        "actor": "noppes.npcs.entity.EntityCustomNpc",
+        "hits": 1,
+        "health": 14.0,
+        "targetId": 8
+      }
+    },
+    "api-model-result.json": {
+      "sha256": "b3388418f82d7f734b34a1164e2d3151b651ce7cfee31eb9c116ada6a574e925",
+      "data": {
+        "kind": "model",
+        "actor": "noppes.npcs.entity.EntityCustomNpc",
+        "accepted": true,
+        "model": "minecraft:zombie"
+      }
+    },
+    "api-stored-result.json": {
+      "sha256": "ebd38bb2015e9c9fe0a92aed82797d3577f1b86a011b2ae0d85247a03656a65d",
+      "data": {
+        "kind": "stored",
+        "actor": "noppes.npcs.entity.EntityCustomNpc",
+        "condition": {
+          "type": "cnpc_stored_data",
+          "scope": "player",
+          "key": "my_pack.quest.stage",
+          "op": ">=",
+          "valueType": "number",
+          "value": "3"
+        },
+        "stored": 3.0,
+        "pass": true
+      }
+    },
+    "api-effect-result.json": {
+      "sha256": "048785dffb673de148b7a4d4af6a1f9d849fd6344447baacd8c2d243f95e6b57",
+      "data": {
+        "kind": "effect",
+        "actor": "noppes.npcs.entity.EntityCustomNpc",
+        "has": true,
+        "level": 2,
+        "amplifier": 1,
+        "ticks": 1200
+      }
+    },
+    "api-skill-result.json": {
+      "sha256": "b73223ae39f6df427c8e7658f46b1ac87f3d4c5383e7b4396d747aae9e73b8bc",
+      "data": {
+        "kind": "skill",
+        "actor": "noppes.npcs.entity.EntityCustomNpc",
+        "providers": [
+          "irons_spellbooks"
+        ],
+        "available": true,
+        "accepted": true,
+        "code": "success",
+        "targetId": 20
+      }
+    },
+    "api-skill-impact.json": {
+      "sha256": "7c9e417a412f30fe9a96983332451273853c1bd0b0ed0c9e144d335f24148a7f",
+      "data": {
+        "health": 90.0,
+        "alive": true
+      }
+    },
+    "api-popup-result.json": {
+      "sha256": "009eab8dc6f182efe505557907a43d1c02a013106e02b67dfcb00ac37bbdf304",
+      "data": {
+        "kind": "popup",
+        "actor": "noppes.npcs.entity.EntityCustomNpc",
+        "sent": 1
+      }
+    }
+  },
+  "scope": "Calls the actual production API objects in the owned Forge 1.20.1 runtime, not a CustomNPCs Interact script engine event. Hitbox target is a prepared vanilla cow, max health 20. Skill target is another cow, max health 100. Attack-switch verification is stored/query state, not a complete AI attack suppression cycle."
+}

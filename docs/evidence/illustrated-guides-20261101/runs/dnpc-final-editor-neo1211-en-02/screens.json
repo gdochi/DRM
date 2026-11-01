@@ -1,0 +1,79 @@
+[
+  {
+    "id": "dnpc-weapons",
+    "screenClass": "net.dochi.npc.client.NpcInventoryScreen",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "next-screen:NpcInventoryScreen",
+      "Weapon \u0026 ammunition",
+      "wait:30"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Equipment",
+        "active": true
+      },
+      {
+        "label": "Weapons",
+        "active": true
+      },
+      {
+        "label": "Name or namespace:item",
+        "active": true
+      },
+      {
+        "label": "Count",
+        "active": true
+      },
+      {
+        "label": "Storage slots (1–27)",
+        "active": true
+      },
+      {
+        "label": "Copy my equipment",
+        "active": true
+      },
+      {
+        "label": "Close for melee",
+        "active": true
+      },
+      {
+        "label": "Consume ammo",
+        "active": true
+      },
+      {
+        "label": "Charge time (ticks)",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      },
+      {
+        "label": "▤",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]
