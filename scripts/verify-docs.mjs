@@ -61,8 +61,10 @@ for (const [locale, documents] of Object.entries(data)) {
       if (relative.startsWith("assets/media/guides/")) {
         const capture = captures[relative];
         assert(capture?.minecraft && capture?.loader, `Missing reviewed screenshot environment: ${relative}`);
-        assert.equal(capture.width, original.readUInt32BE(16), `Incorrect screenshot width: ${relative}`);
-        assert.equal(capture.height, original.readUInt32BE(20), `Incorrect screenshot height: ${relative}`);
+        const gif = original.subarray(0, 6).toString("ascii");
+        const animatedGif = gif === "GIF87a" || gif === "GIF89a";
+        assert.equal(capture.width, animatedGif ? original.readUInt16LE(6) : original.readUInt32BE(16), `Incorrect screenshot width: ${relative}`);
+        assert.equal(capture.height, animatedGif ? original.readUInt16LE(8) : original.readUInt32BE(20), `Incorrect screenshot height: ${relative}`);
         assert(match[0].includes(`width="${capture.width}" height="${capture.height}"`), `Missing reserved screenshot dimensions: ${doc.sourcePath}`);
       }
       checkedImages.add(relative);

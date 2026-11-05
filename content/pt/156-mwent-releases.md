@@ -29,13 +29,13 @@ Os condes representam distintos **definições do cartão**. Impressões regular
 | 0.1.2 | 2026-1024 / [1.21.1 upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9309263); 26.3 arquivos adicionados em outubro 25 | Zero adicionado, removido ou alterado definições. 352 retido. [ Detalhes](#mwent/version-0-1-2) |
 | 0.1.3 | 2026-1025 / [CurseForge upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9322373) | Definições incorporadas e opcionais idênticas a 0.1.2. 352 retido. |
 | 0.1.4 | 2026-1028 / [CurseForge upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9349914) | Definições incorporadas e opcionais idênticas a 0.1.3. 352 retido. |
-| 0.1.5 | 2026-1030 / novo guia de cartão | 60 cartões de sinergia + 12 cartões de cerco adicionados. 335 built-in + 89 opcional ? 424. [ Detalhes](#mwent/version-0-1-5) |
-| 0.1.6 | 2026-11-01 / artefato de produção local | 335 + 89 = 424 definições mantidas. Cinco táticas de abertura, ocupação real e transformação Golem. [ Guia](#mwent/version-0-1-6) |
+| 0.1.5 | 2026-10-30 / estado local de desenvolvimento | Registro das mesmas 72 adições, agora reunidas na versão 0.1.6. [Registro](#mwent/version-0-1-5) |
+| 0.1.6 | 2026-11-03 / registro de lançamento consolidado | 60 cartas de facção + 12 de cerco, 424 definições no total. Cinco táticas de abertura, ocupação real de espaço e Golem com poder 4. [Especificações e guia](#mwent/version-0-1-6) |
 
 0.1.1–0.1.4 Compartilhe poder, provisões, quadros, raridades, Implantação, Ordens, palavras-chave, referências de aparência e definições opcionais de cartões. ** Definições idênticas não implicam comportamento de motor de combate inalterado, interface do usuário, aquisição ou processamento de servidor.**
 
 ## Leia as especificações
 
-O [catálogo atual](#mwent/card-catalog) lista identidades estáveis, poder, provisões e habilidades, separando cartas presentes em 0.1.1 de 0.1.5 Adições. Em 0.1.5, o poder existente, provisões, molduras, raridade e legado Implantação, Ordem e definições de palavras-chave permanecem intactas. Novos campos padrão para habilidades de autoria não são contados como mudanças de equilíbrio para cartões existentes.
+O [catálogo atual](#mwent/card-catalog) lista identidades estáveis, poder, provisões e habilidades, separando cartas presentes em 0.1.1 de 0.1.6 Adições. Em 0.1.6, o poder existente, provisões, molduras, raridade e legado Implantação, Ordem e definições de palavras-chave permanecem intactas. Novos campos padrão para habilidades de autoria não são contados como mudanças de equilíbrio para cartões existentes.
 
 Extração do real 0.1.6 O artefato também confirma que essas definições são mantidas. Táticas de abertura não são extraídas de um convés, então elas não aumentam o 424 Conte. O status de download público permanece separado da verificação de arquivo local.

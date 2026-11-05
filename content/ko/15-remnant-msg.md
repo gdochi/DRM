@@ -16,6 +16,10 @@ tags:
 
 ## 월드에 안내문 남기기
 
+![레머넌트 세터로 블록에 마커를 놓고 문구를 저장한 뒤 메시지를 여는 과정.](assets/media/guides/short-gifs-20261105/remnant-place-and-read.gif "DRM 0.3.1 / NeoForge 1.21.1, 영문 UI의 실제 촬영입니다. 세터 배치 → 문구 입력 → Save → 마커 사용 순서이며, 서버에 저장된 본문과 읽기 화면을 확인했습니다.")
+
+GIF는 세터로 놓은 마커에 글을 **직접 입력**하는 간단한 예시입니다. 블록 면을 우클릭하고 본문을 쓴 뒤 **Save**합니다. 아래 절차는 저장한 JSON 메시지를 연결하는 방법입니다.
+
 NPC 없이 장소에 글을 남기려면 **Remnant Msg Editor**를 사용합니다. 코어의 에디터 선택 화면에서 열고 **Message**에서 이름과 본문을 작성합니다. 아래는 **DRM 0.3.1 / Forge 1.20.1의 영문 화면**입니다.
 
 ![Remnant Msg Editor의 Message 화면. 왼쪽 페이지 목록과 오른쪽 메시지 본문 설정이 보입니다.](assets/media/guides/drm-031-forge1201/remnant-editor.png "먼저 Message에서 보여 줄 글을 작성합니다. 저장한 메시지와 월드에 놓는 마커는 따로 준비합니다.")

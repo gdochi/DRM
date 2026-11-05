@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Conditions and Effects
 section: rules
 status: Draft
-version: 0.1.4
+version: 0.1.5
 audience: Spawner creators
 tags:
   - spawner

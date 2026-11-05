@@ -36,7 +36,11 @@ Le traitement et les actions proches ont un comportement et un ordre fixes. Reno
 
 ## Relier la machine de guérison
 
-1. Dans l’éditeur du PNJ appliqué, choisissez **Link Machine**.
+![Appliquer le rôle à un PNJ portant le skin de Nurse Joy, relier la machine puis soigner et revenir.](assets/media/guides/short-gifs-20261105/nurse-joy-treatment.gif "Capture réelle : Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, interface anglaise. Bulbizarre est passé de 1 à ses 19 PV maximum et le PNJ est revenu à son point de départ.")
+
+La capture utilise le [skin Nurse Joy de caidencestudio](https://www.planetminecraft.com/skin/nurse-joy-5942860/) avec le modèle aux bras fins.
+
+1. Dans l’éditeur du PNJ appliqué, choisissez **Link Healing Machine**.
 2. En **60 secondes**, **Shift+right-click** une Cobblemon machine de guérison dans la même dimension.
 3. Gardez-le dans **Max Distance**, de 1 à 16 blocs; cet exemple utilise 16.
 4. Laissez le sol et l'espace sûrs à côté de la machine pour que le PNJ se tienne debout et revienne.
@@ -51,7 +55,7 @@ Une machine liée est utilisée par l'infirmière Joy. Conservez une machine sé
 | Problème | Vérifier |
 | --- | --- |
 | Un autre dialogue ou boutique s’ouvre | Utilisez la main vide **Shift+right-click** pour accéder à Nurse Joy. |
-| La demande de lien a expiré | Choisissez Link Machine à nouveau et liez dans les 60 secondes. |
+| La demande de lien a expiré | Choisissez Link Healing Machine à nouveau et liez dans les 60 secondes. |
 | Le PNJ ne peut pas atteindre la machine | Même dimension, distance autorisée, sol sûr et un espace adjacent libre. |
 | Le traitement ne commencera pas | Joueur dans les blocs 12, pas de bataille active et une machine chargée/utilisable. Attendez tout traitement déjà en cours. |
 | L'ancienne formulation reste | Enregistrez le chemin réellement appliqué au PNJ. |

@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Sinopsis
 section: overview
 status: Proyecto
-version: 0.1.4
+version: 0.1.5
 audience: Operadores de servidores y creadores de modpack
 tags:
   - spawn control
@@ -54,3 +54,5 @@ Esto no bloquea los comandos, la cría u otros generadores.
 Utilice una plantilla [NPC](#dochi-spawn-control/spawn-control-npc-templates) para mantener la apariencia y el equipo de un DNPC. También puedes [spawn vehículos guardados ](#dochi-spawn-control/spawn-control-vehicles).
 
 Las reglas ordinarias de criaturas naturales no necesitan ni DRM ni un mod NPC. Añadir los respectivos mods para NPCs o vehículos.
+
+En 0.1.5 puedes limitar lugares mediante ID y etiquetas de biomas y estructuras, y reunir criaturas o PNJ en una escuadra. Sigue la guía de [guardias de estructuras](#dochi-spawn-control/spawn-control-guards).

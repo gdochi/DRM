@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Frayage du véhicule
 section: operations
 status: Guide
-version: 0.1.4
+version: 0.1.5
 audience: Créateurs / opérateurs de serveur
 translationSource: en
 translationMethod: assisted
@@ -15,7 +15,7 @@ translationMethod: assisted
 
 ## Portée
 
-Spawn Control ** 0.1.4 ** crée des véhicules modifiés enregistrés et des EntityTypes de véhicules pris en charge à partir de géniteurs placés et de profils d'apparition naturelle. DRM et les mods de véhicule sont des intégrations optionnelles.
+Spawn Control ** 0.1.5 ** crée des véhicules modifiés enregistrés et des EntityTypes de véhicules pris en charge à partir de géniteurs placés et de profils d'apparition naturelle. DRM et les mods de véhicule sont des intégrations optionnelles.
 
 | Véhicule mod | Objectifs |
 | --- | --- |

@@ -7,13 +7,13 @@ product: dochi-spawn-control
 category: 탈것 스폰
 section: operations
 status: Guide
-version: 0.1.4
+version: 0.1.5
 audience: Creators / server operators
 ---
 
 ## 지원 범위
 
-Spawn Control **0.1.4**은 저장한 모드 탈것과 지원 차량 EntityType을 고정 스포너·자연 스폰 프로필에서 생성합니다. DRM과 차량 모드는 선택 연동입니다.
+Spawn Control **0.1.5**은 저장한 모드 탈것과 지원 차량 EntityType을 고정 스포너·자연 스폰 프로필에서 생성합니다. DRM과 차량 모드는 선택 연동입니다.
 
 | 차량 모드 | 사용할 대상 |
 | --- | --- |

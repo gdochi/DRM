@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Predefinições e Operações
 section: operations
 status: Guia
-version: 0.1.4
+version: 0.1.5
 audience: Operadores de servidor e distribuidores de conteúdo
 tags:
   - presets
@@ -139,6 +139,12 @@ Verifique se a geração nativa e um perfil gerenciado estão habilitados. Depoi
 
 Fazer backup do JSON sozinho não restaura entidades já presentes no mundo ou dados de propriedade de outros mods.
 
-## 0.1.4 NPC e integração de veículos
+## Integrações de NPCs e veículos na 0.1.5
 
-DRM, CustomNPCs, DNPC e Warfare são integrações opcionais. A inicialização padrão DNPC precisa da API NPC compatível DRM; ela não clona modelos salvos DNPC. Veja. [economia de veículos e geração](#dochi-spawn-control/spawn-control-vehicles) para MTS, Superb Warfare, Aeronaves e Automobilidade.
+DRM, DNPC e Warfare são opcionais; CustomNPCs é opcional apenas em 1.20.1/1.21.1. Gerar o DNPC padrão exige a API de atores do DRM; clonar um NPC salvo exige a API provedora de modelos do DRM e seu modelo DNPC. Veja [salvar e gerar veículos](#dochi-spawn-control/spawn-control-vehicles) para os passos de cada veículo.
+
+## Predefinições 0.1.5 e backups do mundo
+
+Documentos naturais usam o esquema 4. Os esquemas 2 e 3 continuam legíveis, mas evite salvar predefinições com novos filtros, esquadrões ou equipamentos em versões antigas do Spawn Control. Forneça os mods dos alvos e itens, além dos modelos DNPC originais. O NBT avançado de itens da 1.20.1 e os componentes posteriores não são convertidos automaticamente entre versões.
+
+A ocupação por estrutura e as esperas ficam nos dados do mundo; faça backup do mundo junto com os JSON. Veja [limites de estruturas](#dochi-spawn-control/spawn-control-guards).

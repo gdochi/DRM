@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: geração de veículos
 section: operations
 status: Guia
-version: 0.1.4
+version: 0.1.5
 audience: Criadores / operadores de servidor
 translationSource: en
 translationMethod: assisted
@@ -15,7 +15,7 @@ translationMethod: assisted
 
 ## Escopo
 
-Spawn Control**0.1.4** cria veículos modded salvos e veículos suportados EntityTypes a partir de reprodutores colocados e perfis naturais. DRM e mods são integrações opcionais.
+Spawn Control**0.1.5** cria veículos modded salvos e veículos suportados EntityTypes a partir de reprodutores colocados e perfis naturais. DRM e mods são integrações opcionais.
 
 | Mod de veículo | Alvos |
 | --- | --- |

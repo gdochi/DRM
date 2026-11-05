@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: DNPC template spawning
 section: editor
 status: Guide
-version: 0.1.4
+version: 0.1.5
 audience: Creators / server operators
 ---
 
@@ -47,9 +47,9 @@ Following this flow created one new NPC and preserved the original iron helmet. 
 
 ![The original and spawned helmet-equipped NPCs beside the spawner.](assets/media/guides/spawn-control-014-neo1211/spawn-template-runtime.png "Spawn Control 0.1.4 + DNPC 0.1.3 / NeoForge 1.21.1. New NPCs retain the saved iron helmet. The default owned limit is 6, so later activations can add more NPCs.")
 
-## Natural spawning — 1.20.1 / 1.21.1
+## Natural spawning — all 0.1.5 targets
 
-Open the natural-spawn editor with the default **K** key and find the saved NPC template. Use **Add Rule**, set its biome, hours, distances and quantities, enable it and save. The default NPC and a saved template are separate targets. For 26.3, use the placed-spawner method above.
+In 0.1.5, saved DNPC templates work in natural-spawn rules on Forge 1.20.1, Fabric/NeoForge 1.21.1 and 26.3. Open the editor with **K**, find the saved template, use **Add Rule**, set biome, time, distance and quantities, enable it and save. The default NPC and a saved template are separate targets. A missing template or DRM provider API rejects that spawn instead of creating a blank NPC.
 
 ## Missing entries or wrong appearance
 

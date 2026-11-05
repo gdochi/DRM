@@ -27,13 +27,13 @@ Counts represent distinct **card definitions**. Regular and animated prints are 
 | 0.1.2 | 2026-10-24 / [1.21.1 upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9309263); 26.3 files added October 25 | Zero added, removed or changed definitions. 352 retained. [Details](#mwent/version-0-1-2) |
 | 0.1.3 | 2026-10-25 / [CurseForge upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9322373) | Built-in and optional definitions identical to 0.1.2. 352 retained. |
 | 0.1.4 | 2026-10-28 / [CurseForge upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9349914) | Built-in and optional definitions identical to 0.1.3. 352 retained. |
-| 0.1.5 | 2026-10-30 / new card guide | 60 synergy cards + twelve siege cards added. 335 built-in + 89 optional = 424. [Details](#mwent/version-0-1-5) |
-| 0.1.6 | 2026-11-01 / local production artifact | 335 + 89 = 424 definitions retained. Five opening tactics, real socket occupancy and Golem transformation. [Guide](#mwent/version-0-1-6) |
+| 0.1.5 | 2026-10-30 / local workspace snapshot | Development record containing the same 72 additions, now consolidated into 0.1.6. [Snapshot](#mwent/version-0-1-5) |
+| 0.1.6 | 2026-11-03 / consolidated release record | 60 faction + 12 siege additions, 424 total definitions. Five opening tactics, real socket occupancy and a 4-power Golem. [Specifications and guide](#mwent/version-0-1-6) |
 
 0.1.1–0.1.4 share power, provisions, frames, rarities, Deploy, Orders, keywords, appearance references and optional card definitions. **Identical definitions do not imply unchanged combat-engine behavior, UI, acquisition or server processing.**
 
 ## Read the specifications
 
-The [current catalog](#mwent/card-catalog) lists stable identities, power, provisions and abilities, separating cards present in 0.1.1 from 0.1.5 additions. In 0.1.5, existing power, provisions, frames, rarity and legacy Deploy, Order and keyword definitions remain intact. New default fields for authored abilities are not counted as balance changes to existing cards.
+The [current catalog](#mwent/card-catalog) lists stable identities, power, provisions and abilities, separating cards present in 0.1.1 from 0.1.6 additions. In 0.1.6, existing power, provisions, frames, rarity and legacy Deploy, Order and keyword definitions remain intact. New default fields for authored abilities are not counted as balance changes to existing cards.
 
 Extraction from the actual 0.1.6 artifact also confirms these definitions are retained. Opening tactics are not drawn from a deck, so they do not increase the 424 count. Public download status remains separate from local-file verification.

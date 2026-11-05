@@ -11,6 +11,8 @@ version: 0.1.5
 audience: Players / creators
 ---
 
+> This page preserves the local 0.1.5 workspace snapshot. Release documentation for card additions and specifications is consolidated in [0.1.6 cards and tactics](#mwent/version-0-1-6). The 72 cards below are the same additions, not a second set.
+
 ## Historical 0.1.5 workspace baseline
 
 Based on the independent Minecraft 26.3 Fabric / NeoForge sources and production 0.1.5 JAR on October 30, 2026. This is separate from the [CurseForge upload history](#mwent/releases).

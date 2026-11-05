@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: DNPC el aparición de plantilla
 section: editor
 status: Guía
-version: 0.1.4
+version: 0.1.5
 audience: Creadores / operadores de servidores
 translationSource: en
 translationMethod: assisted
@@ -49,9 +49,9 @@ Después de este flujo creó un nuevo NPC y conservó el casco de hierro origina
 
 ![Los NPC originales y equipados con casco junto al reproductor.](assets/media/guides/spawn-control-014-neo1211/spawn-template-runtime.png "Spawn Control 0.1.4  +  DNPC 0.1.3 / NeoForge 1.21.1. Los nuevos PNJ conservan el casco de hierro guardado. El límite de propiedad predeterminado es 6, por lo que las activaciones posteriores pueden agregar más NPC.")
 
-## aparición natural — 1.20.1 / 1.21.1
+## Aparición natural — todos los destinos de 0.1.5
 
-Abra el editor de engendro natural con la tecla predeterminada **K** y busque la plantilla NPC guardada. Usar **Add Rule**, establecer su bioma, horas, distancias y cantidades, habilitarlo y guardarlo. El NPC predeterminado y una plantilla guardada son objetivos separados. Para 26.3, utilice el método colocado-spawner anterior.
+En 0.1.5, las plantillas DNPC guardadas funcionan en reglas naturales en Forge 1.20.1, Fabric/NeoForge 1.21.1 y 26.3. Abre el editor con **K**, busca la plantilla, usa **Add Rule**, ajusta bioma, hora, distancia y cantidades, activa la regla y guarda. El PNJ predeterminado y la plantilla son destinos distintos. Si falta la plantilla o la API proveedora de DRM, se rechaza esa aparición en vez de crear un PNJ vacío.
 
 ## Entradas faltantes o apariencia incorrecta
 

@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: 개요
 section: overview
 status: Draft
-version: 0.1.4
+version: 0.1.5
 audience: 서버 운영자와 모드팩 제작자
 tags:
   - spawn control
@@ -52,3 +52,5 @@ DRM 에디터 선택 화면에서 **Spawner Editor**를 열고 소환할 몹·�
 DNPC의 외형·장비까지 그대로 등장시키려면 [NPC 템플릿](#dochi-spawn-control/spawn-control-npc-templates)을 사용합니다. [저장한 탈것](#dochi-spawn-control/spawn-control-vehicles)도 소환할 수 있습니다.
 
 일반 몹의 자연 스폰에는 DRM이나 NPC 모드가 필요하지 않습니다. NPC·탈것을 선택할 때 해당 모드를 추가합니다.
+
+0.1.5에서는 구조물·바이옴의 ID/태그로 장소를 제한하고, 여러 몹·NPC를 한 경비대로 편성할 수 있습니다. [구조물 경비대 만들기](#dochi-spawn-control/spawn-control-guards)를 따라 해보세요.

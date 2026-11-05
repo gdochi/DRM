@@ -13,6 +13,8 @@ translationSource: en
 translationMethod: assisted
 ---
 
+> Cette page conserve l’état de l’espace de travail local 0.1.5. La documentation de publication des nouvelles cartes et de leurs caractéristiques est regroupée dans [cartes et tactiques de la version 0.1.6](#mwent/version-0-1-6). Les 72 cartes ci-dessous sont les mêmes ajouts, pas un second ensemble.
+
 ## Historique 0.1.5 espace de travail
 
 Sur la base des sources indépendantes Minecraft 26.3 Fabric / NeoForge et de la production 0.1.5 JAR en octobre 30, 2026. Ceci est séparé de l'historique de téléchargement [CurseForge](#mwent/releases).

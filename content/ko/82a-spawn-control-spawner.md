@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: 에디터 사용법
 section: editor
 status: Draft
-version: 0.1.4
+version: 0.1.5
 audience: 스포너 제작자
 tags:
   - spawner
@@ -59,6 +59,8 @@ tags:
 | `CNPC Clone` | CustomNPCs 서버 클론의 탭과 이름 |
 | `DW Clone` | Dochi’s Warfare의 저장된 클론 템플릿 |
 | `NPC clone template` | DNPC에서 저장한 정확한 v3 복제 템플릿 |
+
+CustomNPCs의 CNPC Clone은 1.20.1·1.21.1에서만 사용합니다. Minecraft 26.3에서는 NPC clone template으로 저장한 DNPC를 선택하세요. 0.1.5의 역할별 수량·장비 편성은 자연 스폰 규칙에 적용되며, 이 스포너의 확률형 목록과는 별개입니다.
 
 필요한 모드와 클론이 설치된 서버에서 사용할 수 있습니다. 일반 엔티티만 사용할 때 두 클론 모드가 필수 의존성이 되지는 않습니다.
 

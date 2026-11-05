@@ -45,6 +45,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--run", required=True, help="Unique run name; an existing world is never overwritten")
     parser.add_argument("--locale", choices=["en_us", "ko_kr"], default="en_us")
+    parser.add_argument("--width",type=int,default=1920)
+    parser.add_argument("--height",type=int,default=1080)
     parser.add_argument("--actor", choices=["dnpc", "customnpcs"], default="dnpc", help="Owned actor for this pre-26.3 capture runtime")
     parser.add_argument("--views", default="", help="Comma-separated capture IDs for a focused rerun")
     parser.add_argument("--extra-mod", action="append", default=[], help="Existing production mod JAR to copy into the isolated instance")
@@ -53,6 +55,8 @@ def main():
     parser.add_argument("--seed-hud-from", help="Copy the GUI-saved guide_hud and activation file from an owned capture run to verify startup loading")
     parser.add_argument("--npc-mod", default=str(DESKTOP / "[COMMON] Dochi`s Npc Core/jar/dochi_npc_core-0.1.3-neoforge-1.21.1.jar"), help="Exact DNPC production JAR; its hash is retained in the environment receipt")
     args = parser.parse_args()
+    if args.width<1280 or args.height<720:
+        raise ValueError("Capture framebuffer must be at least 1280x720")
     if not args.run.replace("-", "").isalnum():
         raise ValueError("Use letters, numbers and hyphens in the run name")
     run = ROOT / "build/task/guide-capture" / args.run
@@ -95,7 +99,7 @@ def main():
     compile_paths += [str(CORE_PROJECT / "build/moddev/artifacts/neoforge-21.1.216-merged.jar")]
     compile_cp = os.pathsep.join(path for path in compile_paths if path)
     compile_result = subprocess.run([str(JAVA / "javac.exe"), "-encoding", "UTF-8", "-proc:none", "-cp", compile_cp,
-                                     "-d", str(classes), str(ROOT / "scripts/guide-capture/GuideCapture.java")], capture_output=True, text=True)
+                                     "-d", str(classes), str(ROOT / "scripts/guide-capture/GuideCapture.java"), str(ROOT / "scripts/guide-capture/GuideScenes.java")], capture_output=True, text=True)
     (run / "compile.log").write_text(compile_result.stdout + compile_result.stderr, encoding="utf-8")
     if compile_result.returncode:
         raise RuntimeError(compile_result.stderr)
@@ -104,6 +108,8 @@ def main():
         jar.writestr("META-INF/neoforge.mods.toml", 'modLoader="javafml"\nloaderVersion="[4,)"\nlicense="All Rights Reserved"\n[[mods]]\nmodId="dochi_docs_capture"\nversion="1.0.0"\ndisplayName="Dochi Documentation Capture"\n')
         for item in classes.rglob("*.class"):
             jar.write(item, item.relative_to(classes).as_posix())
+        for item in (ROOT / "scripts/guide-capture/assets").rglob("*.png"):
+            jar.write(item, item.relative_to(ROOT / "scripts/guide-capture").as_posix())
     receipts.append({"source": "documentation capture fixture", "sha256": hashlib.sha256(probe.read_bytes()).hexdigest()})
     version = "21.1.259"
     installer = LIBRARIES / f"net/neoforged/neoforge/{version}/neoforge-{version}-installer.jar"
@@ -136,7 +142,7 @@ def main():
     command += [expand(value) for value in neo["arguments"]["jvm"]]
     command += ["-cp", cp, neo["mainClass"], "--username", "DocsGuide", "--version", "1.21.1", "--gameDir", str(runtime),
                 "--assetsDir", str(PRISM / "assets"), "--assetIndex", "17", "--uuid", "00000000000000000000000000000001", "--accessToken", "0",
-                "--userType", "legacy", "--versionType", "release", "--width", "1920", "--height", "1080"] + neo["arguments"]["game"]
+                "--userType", "legacy", "--versionType", "release", "--width", str(args.width), "--height", str(args.height)] + neo["arguments"]["game"]
     (output / "environment.json").write_text(json.dumps({"minecraft": "1.21.1", "loader": "NeoForge " + version, "locale": args.locale, "actor": args.actor, "mods": receipts, "seededHudFiles": seeded}, indent=2) + "\n", encoding="utf-8")
     print(f"Starting isolated capture: {run}", flush=True)
     with (run / "client.log").open("w", encoding="utf-8") as log:

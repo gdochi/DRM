@@ -1,0 +1,2589 @@
+{
+  "asset": "assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif",
+  "sha256": "207ba43638eb1675f2d9de1fb884a5e067d66fbde2011af4a003a3763483466a",
+  "width": 1280,
+  "height": 720,
+  "frameCount": 361,
+  "durationMs": 18800,
+  "sourceFrameCount": 508,
+  "encodedFps": 20,
+  "retainedSourceFrameCount": 361,
+  "finalWorldLimitSeconds": 6.0,
+  "sourceGapMedianMs": 50.178100000000086,
+  "sourceGapP95Ms": 54.067299999998795,
+  "sourceGapMaxMs": 77.28119999999944,
+  "resampledFrameCount": 361,
+  "selectedFrames": [
+    {
+      "file": "00000.png",
+      "elapsedMs": 2.958,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 0,
+      "sha256": "8990abf654392c0005009a2cebb34ab46b0f00f460628dbd3faf2492bc7f4385"
+    },
+    {
+      "file": "00001.png",
+      "elapsedMs": 51.9789,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 50,
+      "sha256": "e054f5d3aeb3b513266f4aa1660dd9ca818dd1982745aa725ac6c7dd6fe8dc97"
+    },
+    {
+      "file": "00002.png",
+      "elapsedMs": 103.9765,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 100,
+      "sha256": "60036bc4840470806b9d46a117a6bdff413cc1d29d5a59efae5dbe77be3c8715"
+    },
+    {
+      "file": "00003.png",
+      "elapsedMs": 153.6427,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 150,
+      "sha256": "9e31b2d3dbde32c7e9b029003fc4d5c5444db6eba95f0123fc785b3e58db10f4"
+    },
+    {
+      "file": "00004.png",
+      "elapsedMs": 203.1622,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 200,
+      "sha256": "e6972cb314ded317cb5037d1748b05c8295d8ceb445b7452c141f987fd6c81fa"
+    },
+    {
+      "file": "00005.png",
+      "elapsedMs": 254.5972,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 250,
+      "sha256": "c68e6a2407bcf0215eb81e98dd8e3f9de3c3727c377011663e980ec4711e9a4d"
+    },
+    {
+      "file": "00006.png",
+      "elapsedMs": 304.5521,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 300,
+      "sha256": "cb806c3e90054d08b12bc84af01b2e169934c0cc9cdf3b6c4af768d2744f16a0"
+    },
+    {
+      "file": "00007.png",
+      "elapsedMs": 354.3958,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 350,
+      "sha256": "8712de95d82e5cc05abfdb4a035a3814843ba0815e78fa236e4d75392e2e1c99"
+    },
+    {
+      "file": "00008.png",
+      "elapsedMs": 404.8389,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 400,
+      "sha256": "15c39672f78fb6820a34aa684ff9fa856f4ce1e5f65be18c0fdb161bc72e6d9d"
+    },
+    {
+      "file": "00009.png",
+      "elapsedMs": 456.0623,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 450,
+      "sha256": "d1231778afb34ccf9f137e8434ab1efa19afb73154d304fe86795f430007b15a"
+    },
+    {
+      "file": "00010.png",
+      "elapsedMs": 505.573,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 500,
+      "sha256": "fe72cd5ea9d2cbbfa00a21daba73537fbd79ff5500603e32b0cc6f90352a1a7c"
+    },
+    {
+      "file": "00011.png",
+      "elapsedMs": 556.1619,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 550,
+      "sha256": "8db8e94aba5ea09344cefc38d6f2bb03b95e4ae1f14ff6474c8d9f79914a2d9f"
+    },
+    {
+      "file": "00012.png",
+      "elapsedMs": 606.9113,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 600,
+      "sha256": "f0dad2a4f120a1e71488be41ebeaefa73fed003b51ad82283573ee8c7ccdaf55"
+    },
+    {
+      "file": "00013.png",
+      "elapsedMs": 658.7517,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 650,
+      "sha256": "d9efb6e86a90cf723e1158bba4ef9b075f77b904ff0c8d3cd531a33a51503bdd"
+    },
+    {
+      "file": "00014.png",
+      "elapsedMs": 712.8045,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 700,
+      "sha256": "59fb726d62bc0f596fbcf978f9f77bdbd6f6f252744b7b114278db7a971ebf41"
+    },
+    {
+      "file": "00015.png",
+      "elapsedMs": 758.1208,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 750,
+      "sha256": "80e12cbf03b4afff158e514d03be5aeec9952b653b1e527c161b93098cf0dd98"
+    },
+    {
+      "file": "00016.png",
+      "elapsedMs": 807.5079,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 800,
+      "sha256": "058ef41eca95ea248b2d6a7d8a3a3ad1eed78a534b6a90277fd1104577d0f589"
+    },
+    {
+      "file": "00017.png",
+      "elapsedMs": 858.5352,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 850,
+      "sha256": "fcc86f1e4b9d6b965e3fd2246c6e896fb058e3f5d13ec6bdc6f7c6bf2e730cc9"
+    },
+    {
+      "file": "00018.png",
+      "elapsedMs": 908.5231,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 900,
+      "sha256": "09365140bbd2257d1b4f0cda4665ae7399245d25f7122709467c588b2c2e3ea7"
+    },
+    {
+      "file": "00019.png",
+      "elapsedMs": 958.0791,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 950,
+      "sha256": "d7ceb7e0438f5b99bdfb2fdc5c11e98a66c1f6af82ab8e77ef00c1d72c86db5c"
+    },
+    {
+      "file": "00020.png",
+      "elapsedMs": 1009.0093,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1000,
+      "sha256": "41cc4ae3a359d647ecc99a66886465085870c5102052b74df3efdaecb51e72b6"
+    },
+    {
+      "file": "00021.png",
+      "elapsedMs": 1060.0908,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1050,
+      "sha256": "6b82c772131a2c6379763fbaf3017de9231783dd0d903a5742ec63ccdb8e7f43"
+    },
+    {
+      "file": "00022.png",
+      "elapsedMs": 1109.3959,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1100,
+      "sha256": "bcc5f79d2b77b25a197edd0fcab3036b04a8aaa31254924f87a619aa66a6ced6"
+    },
+    {
+      "file": "00023.png",
+      "elapsedMs": 1158.9523,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1150,
+      "sha256": "42623bfa3c5531bc019f67e732e2462db3da0e7e0c454420f7fc9bb0b9985e3c"
+    },
+    {
+      "file": "00024.png",
+      "elapsedMs": 1208.4088,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1200,
+      "sha256": "d66f289c61f465b74627008c8ba041df1d68f4f84011eac959f0a75d5d39423e"
+    },
+    {
+      "file": "00025.png",
+      "elapsedMs": 1258.7757,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1250,
+      "sha256": "01326ed6f1f76b4c2a93547e8f70ea9c4e9115a39f7d08809059badaf0402597"
+    },
+    {
+      "file": "00026.png",
+      "elapsedMs": 1309.7753,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1300,
+      "sha256": "8a487dfa5daf3275899dc3c614dbfd94ccfff6dcb700e52f84765e56cd168fe5"
+    },
+    {
+      "file": "00027.png",
+      "elapsedMs": 1362.3092,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1350,
+      "sha256": "759906014a7e2d8af3b115a1366fb3aaf827a734bb59bc7d77002a1e32e6c909"
+    },
+    {
+      "file": "00028.png",
+      "elapsedMs": 1411.9807,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1400,
+      "sha256": "d51b10ba0c54e9b31da49b44b9bbd9862bcdb68ff3b1837d119ac9edcff11b3e"
+    },
+    {
+      "file": "00029.png",
+      "elapsedMs": 1461.9649,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1450,
+      "sha256": "d23febd3c67ded0617370fa1678efbafc409850fcafe6184adc5825b805abee9"
+    },
+    {
+      "file": "00030.png",
+      "elapsedMs": 1512.2847,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1500,
+      "sha256": "3ad0f320d1fb2728f8e1e57a8461509563ca99015296a45e3350c43e4b742a13"
+    },
+    {
+      "file": "00031.png",
+      "elapsedMs": 1564.051,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1550,
+      "sha256": "24247da7ff047670d627fa25a31c241e1b2e19eb3c5dcd98c4910c3d0d02f7bf"
+    },
+    {
+      "file": "00032.png",
+      "elapsedMs": 1613.9303,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1600,
+      "sha256": "8fc5963ac344e73cc41faaa95363619499896c8af9b4a7a422504ee8f3945aef"
+    },
+    {
+      "file": "00033.png",
+      "elapsedMs": 1664.1487,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1650,
+      "sha256": "faf010203630631df579b1615b78e5bc6d4addbf454d88fb7e2987dab983d615"
+    },
+    {
+      "file": "00034.png",
+      "elapsedMs": 1701.5252,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1700,
+      "sha256": "b20cf3912d1d867a447fb7d953e33977652bcd9fa6072a09d72115505701b14c"
+    },
+    {
+      "file": "00035.png",
+      "elapsedMs": 1763.898,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1750,
+      "sha256": "84567e5ad7ef68d668c5a4196b89a6e75722753b1b7a9b88a86a3b9259ad2730"
+    },
+    {
+      "file": "00036.png",
+      "elapsedMs": 1800.1401,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1800,
+      "sha256": "55978d33a456994c99f6ad993e9184ae68cca3aa2822fae531e972eceeb81577"
+    },
+    {
+      "file": "00037.png",
+      "elapsedMs": 1865.9387,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1850,
+      "sha256": "29042b21f174c66ecaf35c7ef5c1ef3fbba6d3a92b2dd9d0c624dc3d7d0a8c4d"
+    },
+    {
+      "file": "00038.png",
+      "elapsedMs": 1901.2531,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1900,
+      "sha256": "07ec9965b5b2c8ca33cb4819f0d2772b11a625c935bfe2385e494b54328ab0d4"
+    },
+    {
+      "file": "00039.png",
+      "elapsedMs": 1950.5746,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 1950,
+      "sha256": "5327fc1df9d550c0ed64248a77ef26f4aa688da525898ecce4f298877b9eef69"
+    },
+    {
+      "file": "00040.png",
+      "elapsedMs": 2002.134,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2000,
+      "sha256": "38e5821135d21f3e64403499fe0d73ad24367ec3a799a186d0c3eacd647a1800"
+    },
+    {
+      "file": "00041.png",
+      "elapsedMs": 2053.0107,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2050,
+      "sha256": "63e3abca02f6132038998c1397dc175bce520a056a2cbbaa62b02108a0a64e93"
+    },
+    {
+      "file": "00042.png",
+      "elapsedMs": 2102.3998,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2100,
+      "sha256": "d5e7022eefd164d0c4f85be27bdd14316347d55fd2f2c3653cfc768abf2802d0"
+    },
+    {
+      "file": "00043.png",
+      "elapsedMs": 2152.4342,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2150,
+      "sha256": "b8fdb42797eb7fab9d51830b1467fb07d803fb82471c55140dffc6d9914e3faf"
+    },
+    {
+      "file": "00044.png",
+      "elapsedMs": 2202.1561,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2200,
+      "sha256": "3c72c8576bcb3146be521f73243a4bd3610cc027946c1aad09e3c27cb56aeaf4"
+    },
+    {
+      "file": "00045.png",
+      "elapsedMs": 2251.7666,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2250,
+      "sha256": "cae04f05b2d3a8065cbf9f70b512498ebc81f56450daa8274d46665211e662ca"
+    },
+    {
+      "file": "00046.png",
+      "elapsedMs": 2301.9447,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2300,
+      "sha256": "be0203f9cb58574680b36eae2090632f383c74816a0608756b62f50a97857bae"
+    },
+    {
+      "file": "00047.png",
+      "elapsedMs": 2352.5412,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2350,
+      "sha256": "1d4a810b5870937a84e666d8c1f2b81703cba392da11bef6b1d98a1ec9d2a9c4"
+    },
+    {
+      "file": "00048.png",
+      "elapsedMs": 2403.3615,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2400,
+      "sha256": "57746bebd37ef93e24bbae324d214272357e0d23ff45b6ec3e7f4e325bf961b9"
+    },
+    {
+      "file": "00049.png",
+      "elapsedMs": 2453.7949,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2450,
+      "sha256": "bc792c3980db12b8ed03fe6498c0e283dca5f6362b48e00c7cd59f6db4f61e6c"
+    },
+    {
+      "file": "00050.png",
+      "elapsedMs": 2503.541,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2500,
+      "sha256": "fb119eb50612adcb333c18cb67603c9b9856a0a78e8408e235a461e651f039b6"
+    },
+    {
+      "file": "00051.png",
+      "elapsedMs": 2554.3205,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2550,
+      "sha256": "e79865bd27f35f01e643bf5fd8be897dd921d1ab92a7b5314846de7e50b4beb4"
+    },
+    {
+      "file": "00052.png",
+      "elapsedMs": 2604.8287,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2600,
+      "sha256": "8b39856e583d315b0368992614956db3c596e55c81211141d659d35195f3e38f"
+    },
+    {
+      "file": "00053.png",
+      "elapsedMs": 2654.4884,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2650,
+      "sha256": "8d14b93722ad1d701519da67e140c53567203064ff2863328c1027cfa697c88e"
+    },
+    {
+      "file": "00054.png",
+      "elapsedMs": 2707.4629,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2700,
+      "sha256": "9abe3de78c39e55846931a2e535a98a02011fa74c59dc14a6f1dd21398658345"
+    },
+    {
+      "file": "00055.png",
+      "elapsedMs": 2756.351,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2750,
+      "sha256": "91b7f128b76cb410a88b904fc550817e5f1a64d898bb476412e043bdee3341bf"
+    },
+    {
+      "file": "00056.png",
+      "elapsedMs": 2807.9184,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 2800,
+      "sha256": "c02e658eedea24690084292ef71b587c776cf20fd6a60a9fe7532995ddd827ea"
+    },
+    {
+      "file": "00057.png",
+      "elapsedMs": 2855.362,
+      "screen": "world",
+      "playbackMs": 2850,
+      "sha256": "1b68f29d0338e2599c7f90e4d289910c9971d21c2b463d705046873d56d34b11"
+    },
+    {
+      "file": "00058.png",
+      "elapsedMs": 2904.9399,
+      "screen": "world",
+      "playbackMs": 2900,
+      "sha256": "d0252e384b7dd6971169733b965e29a45d04be8b58f817fcd83d436bfc18edf3"
+    },
+    {
+      "file": "00059.png",
+      "elapsedMs": 2955.1378,
+      "screen": "world",
+      "playbackMs": 2950,
+      "sha256": "9e9a691b0a1e71e7dd4c37a7dd9720dbc9549bef0cbe70a10c81ae7f6ce17920"
+    },
+    {
+      "file": "00060.png",
+      "elapsedMs": 3004.6645,
+      "screen": "world",
+      "playbackMs": 3000,
+      "sha256": "380b2ba0a762239d0eb9cd7b453e783e0a2f06cb552fcd5572ed513f06cd9e0c"
+    },
+    {
+      "file": "00061.png",
+      "elapsedMs": 3055.4761,
+      "screen": "world",
+      "playbackMs": 3050,
+      "sha256": "b3ebf407c6632eb4a454eb910c636e60c7f07a737cf351517693949bca95b553"
+    },
+    {
+      "file": "00062.png",
+      "elapsedMs": 3105.5823,
+      "screen": "world",
+      "playbackMs": 3100,
+      "sha256": "cd585940223192f5a16f5593a0323c6bdbb1e1117bb553b58618823fd4d415ba"
+    },
+    {
+      "file": "00063.png",
+      "elapsedMs": 3156.4209,
+      "screen": "world",
+      "playbackMs": 3150,
+      "sha256": "b1d25c5e2b55f326e7b9f692358e3807bbb0960cf6daa0071f7e0c85c26c7c96"
+    },
+    {
+      "file": "00064.png",
+      "elapsedMs": 3206.3277,
+      "screen": "world",
+      "playbackMs": 3200,
+      "sha256": "dc890fe28ae6130f7ce4461452be989f97b75ff0c0a0a2eb822b7fe93aafd486"
+    },
+    {
+      "file": "00065.png",
+      "elapsedMs": 3255.8411,
+      "screen": "world",
+      "playbackMs": 3250,
+      "sha256": "510e1be67b58e1454492b523dfe28868fd8b8ae2b588a932f282d19db4f517c7"
+    },
+    {
+      "file": "00066.png",
+      "elapsedMs": 3307.5795,
+      "screen": "world",
+      "playbackMs": 3300,
+      "sha256": "040ac5d63233281b126c8857ef3beb266debf3df8fef9f2f92224fc32f2cb511"
+    },
+    {
+      "file": "00067.png",
+      "elapsedMs": 3356.5848,
+      "screen": "world",
+      "playbackMs": 3350,
+      "sha256": "f542dd36258c968a9b18d884a7680dd2e7cd9925835ebbf482785d26dc7de103"
+    },
+    {
+      "file": "00068.png",
+      "elapsedMs": 3407.29,
+      "screen": "world",
+      "playbackMs": 3400,
+      "sha256": "c7f533ed5473b84e4847c239a21736d308406d8337290f5343b07cead26e3af4"
+    },
+    {
+      "file": "00069.png",
+      "elapsedMs": 3457.5905,
+      "screen": "world",
+      "playbackMs": 3450,
+      "sha256": "98fa4f0499ceef716f140082014e62b35a461f6bb53ab9fa8df595884308a480"
+    },
+    {
+      "file": "00070.png",
+      "elapsedMs": 3507.179,
+      "screen": "world",
+      "playbackMs": 3500,
+      "sha256": "d4a8983994f23dedbf3a33ffcfb6975bb535f5bdcbed50b56ec87a749d7c063c"
+    },
+    {
+      "file": "00071.png",
+      "elapsedMs": 3557.5093,
+      "screen": "world",
+      "playbackMs": 3550,
+      "sha256": "13d6f56fc5062d12f3c97fc765f860a9dbee9d8afd9f66b4a24dc86287a9a4df"
+    },
+    {
+      "file": "00072.png",
+      "elapsedMs": 3607.4328,
+      "screen": "world",
+      "playbackMs": 3600,
+      "sha256": "68a15c39eb9ebb8a764ba9c1a78b2609ab76ab0f5391fd18b5c78ec8b5982818"
+    },
+    {
+      "file": "00073.png",
+      "elapsedMs": 3657.4347,
+      "screen": "world",
+      "playbackMs": 3650,
+      "sha256": "401cd47e4996b7d2fc4390141406c0e099d3d3945eb881c27b626a6294fe04c1"
+    },
+    {
+      "file": "00074.png",
+      "elapsedMs": 3708.1608,
+      "screen": "world",
+      "playbackMs": 3700,
+      "sha256": "9620000d39a8e6c7e9ffbff2cd29d7fe3f1a49240aa64f5784d74901fba13222"
+    },
+    {
+      "file": "00075.png",
+      "elapsedMs": 3756.598,
+      "screen": "world",
+      "playbackMs": 3750,
+      "sha256": "c363f02890e65e8ebac37d3ebd45e95b1c78d8b2d0cb131c40a7066f6fa91890"
+    },
+    {
+      "file": "00076.png",
+      "elapsedMs": 3806.8095,
+      "screen": "world",
+      "playbackMs": 3800,
+      "sha256": "4902d6bdcccc3f8002b7a3c8aaa27df8ce9a9dd5d35932ef7426a49ee418f17e"
+    },
+    {
+      "file": "00077.png",
+      "elapsedMs": 3856.8863,
+      "screen": "world",
+      "playbackMs": 3850,
+      "sha256": "ab161e380a07e54622d3be4af6294b703d3ce604cac163f83d5dc19ba812da43"
+    },
+    {
+      "file": "00078.png",
+      "elapsedMs": 3906.6469,
+      "screen": "world",
+      "playbackMs": 3900,
+      "sha256": "b564a45d8552fe7d943bea7487d5aca10c9c893a092e685ce8a8d2049aa6d9ea"
+    },
+    {
+      "file": "00079.png",
+      "elapsedMs": 3956.9792,
+      "screen": "world",
+      "playbackMs": 3950,
+      "sha256": "5f106141d3cdb48a8a1db7da06f554b065ff93fcc58dc552c524649637a61870"
+    },
+    {
+      "file": "00080.png",
+      "elapsedMs": 4008.656,
+      "screen": "world",
+      "playbackMs": 4000,
+      "sha256": "ece86b117e8eab7744df9343c9ee5b4e14163051f6154d692afda12f966c1219"
+    },
+    {
+      "file": "00081.png",
+      "elapsedMs": 4056.1905,
+      "screen": "world",
+      "playbackMs": 4050,
+      "sha256": "41cf1aa376a3aa7488dcfb341e44dc21175a028b0180fd4e26607bc859f2ff99"
+    },
+    {
+      "file": "00082.png",
+      "elapsedMs": 4105.8475,
+      "screen": "world",
+      "playbackMs": 4100,
+      "sha256": "f48fff6f292a45242efb0f7825e58fb2a3ce46aa7199b3bb0261e9fd4017432f"
+    },
+    {
+      "file": "00083.png",
+      "elapsedMs": 4156.104,
+      "screen": "world",
+      "playbackMs": 4150,
+      "sha256": "89fec65abe24ed22b1413c4b288e6c78f68adcffc56b9d298156ad77909e1595"
+    },
+    {
+      "file": "00084.png",
+      "elapsedMs": 4218.3393,
+      "screen": "world",
+      "playbackMs": 4200,
+      "sha256": "e031d14e645f4155c138462f04248c346fcfd47ff9b2a76904ce472aab3e2ddc"
+    },
+    {
+      "file": "00085.png",
+      "elapsedMs": 4258.8305,
+      "screen": "world",
+      "playbackMs": 4250,
+      "sha256": "f1035ad5ebd51f401d390a91431a4f1cd1c0c98af3d069debdfadb17079d5b8c"
+    },
+    {
+      "file": "00086.png",
+      "elapsedMs": 4307.9436,
+      "screen": "world",
+      "playbackMs": 4300,
+      "sha256": "2e4a81a224076913bfbbe41844082fb908c12e1139c73dc396e1d783bca7c596"
+    },
+    {
+      "file": "00087.png",
+      "elapsedMs": 4357.8649,
+      "screen": "world",
+      "playbackMs": 4350,
+      "sha256": "abf415473b87386fd4d91cc09981fe2a6ed87746fe5743f152cf0c868d57ccf1"
+    },
+    {
+      "file": "00088.png",
+      "elapsedMs": 4408.3274,
+      "screen": "world",
+      "playbackMs": 4400,
+      "sha256": "09ccf59af5d032de19b3ef6eba69f07f5e93b56920ec803a0ebbe7d2d7a6e141"
+    },
+    {
+      "file": "00089.png",
+      "elapsedMs": 4458.0413,
+      "screen": "world",
+      "playbackMs": 4450,
+      "sha256": "140a4bd043d04fcb5961328f2be7483149d517df735c4d3bed0a1d00e1ca7371"
+    },
+    {
+      "file": "00090.png",
+      "elapsedMs": 4509.1071,
+      "screen": "world",
+      "playbackMs": 4500,
+      "sha256": "c48a6cd5861e1123fe2c46dcf7cff9022435101dcf894c2dfa621e05f376d9b6"
+    },
+    {
+      "file": "00091.png",
+      "elapsedMs": 4558.716,
+      "screen": "world",
+      "playbackMs": 4550,
+      "sha256": "65764a57134414c3c7a69e4e3432756a70c89656f0f374a41a60b1a7d5eed187"
+    },
+    {
+      "file": "00092.png",
+      "elapsedMs": 4609.0595,
+      "screen": "world",
+      "playbackMs": 4600,
+      "sha256": "17d10920eca66d3abee33ddde8135a4cafa29e4af58b71779ce001e0838424a8"
+    },
+    {
+      "file": "00093.png",
+      "elapsedMs": 4659.6423,
+      "screen": "world",
+      "playbackMs": 4650,
+      "sha256": "6c456bb5451b822c7dd5b3f730f1998665911a0ec907ccbbf455400206691c3f"
+    },
+    {
+      "file": "00094.png",
+      "elapsedMs": 4710.107,
+      "screen": "world",
+      "playbackMs": 4700,
+      "sha256": "80038417881d947467dffd4b5f7f22fa33c9110ec6a3edc71e7cfb828c77a97a"
+    },
+    {
+      "file": "00095.png",
+      "elapsedMs": 4760.0943,
+      "screen": "world",
+      "playbackMs": 4750,
+      "sha256": "531cc76223bd2d6032f7c6ed7b2dd63f9084a2ace0f13bd13fadf7d48fcb9393"
+    },
+    {
+      "file": "00096.png",
+      "elapsedMs": 4835.9545,
+      "screen": "world",
+      "playbackMs": 4800,
+      "sha256": "1fee6298adecc508ec7065a43af7daf13f4acf8b219d3bc8fcc2a8cf2bc5f3c6"
+    },
+    {
+      "file": "00097.png",
+      "elapsedMs": 4862.4485,
+      "screen": "world",
+      "playbackMs": 4850,
+      "sha256": "330be92c1f23c331e7857b1ac53c2d9e4e26ef6c2e05053fab261847b9337fe7"
+    },
+    {
+      "file": "00098.png",
+      "elapsedMs": 4910.679,
+      "screen": "world",
+      "playbackMs": 4900,
+      "sha256": "677ad7ec56a87f5a58a2f593c28210ed7d37fb4e2cac553bda723b360e34641e"
+    },
+    {
+      "file": "00099.png",
+      "elapsedMs": 4961.7777,
+      "screen": "world",
+      "playbackMs": 4950,
+      "sha256": "109d7e51966601341973ca257c71ba063591457103b1bd94e63b3e6bf2c81292"
+    },
+    {
+      "file": "00100.png",
+      "elapsedMs": 5011.3746,
+      "screen": "world",
+      "playbackMs": 5000,
+      "sha256": "4366c2e57955b533a377efaef8db55fe29bb71f7cefb9982fb69cc952be56842"
+    },
+    {
+      "file": "00101.png",
+      "elapsedMs": 5061.6115,
+      "screen": "world",
+      "playbackMs": 5050,
+      "sha256": "61f86bca6b662009688efc2a38a342d57b66d5d41adfeeb57495026516722f2d"
+    },
+    {
+      "file": "00102.png",
+      "elapsedMs": 5111.3445,
+      "screen": "world",
+      "playbackMs": 5100,
+      "sha256": "3e2590c1ab58a656f49ef15c90e994aa3f5d3d1aa24c8aab1a2da329cf34710a"
+    },
+    {
+      "file": "00103.png",
+      "elapsedMs": 5163.0612,
+      "screen": "world",
+      "playbackMs": 5150,
+      "sha256": "5f66b14071f06090ebe73dc6210835df6842d159a751db1a767bbf16e67cd225"
+    },
+    {
+      "file": "00104.png",
+      "elapsedMs": 5212.8422,
+      "screen": "world",
+      "playbackMs": 5200,
+      "sha256": "43049952ca68581dd8b9c9e3689f39fcdf85d9368e6830bbaa53faaed6d9a8de"
+    },
+    {
+      "file": "00105.png",
+      "elapsedMs": 5262.8107,
+      "screen": "world",
+      "playbackMs": 5250,
+      "sha256": "953a9e7ea937fb80b474546e2ef75458a94d0295e7ee36d33b0ea828b0e994ca"
+    },
+    {
+      "file": "00106.png",
+      "elapsedMs": 5313.0532,
+      "screen": "world",
+      "playbackMs": 5300,
+      "sha256": "b5cbb21967754194c9c7917ad19e68bda767816d6e12e83830a38612e8c45725"
+    },
+    {
+      "file": "00107.png",
+      "elapsedMs": 5363.4696,
+      "screen": "world",
+      "playbackMs": 5350,
+      "sha256": "d101d129a46070c499d8496f2206d3b9e16754e96ba57fbd28b364701f87548f"
+    },
+    {
+      "file": "00108.png",
+      "elapsedMs": 5419.078,
+      "screen": "world",
+      "playbackMs": 5400,
+      "sha256": "da6e491f3700433ef8912908a9aeb98d5af1b56a02173fcf8d3461ce7f9afa74"
+    },
+    {
+      "file": "00109.png",
+      "elapsedMs": 5453.2083,
+      "screen": "world",
+      "playbackMs": 5450,
+      "sha256": "5ab659567d3d8129a0a76cb485cebdfceb4f68ba74afc94dd93dc519aa87ad7c"
+    },
+    {
+      "file": "00110.png",
+      "elapsedMs": 5503.2873,
+      "screen": "world",
+      "playbackMs": 5500,
+      "sha256": "72de916ea4b87c1880ab8c65f71b0d44431d75118789cdf1532d9114a9904d0e"
+    },
+    {
+      "file": "00111.png",
+      "elapsedMs": 5552.7039,
+      "screen": "world",
+      "playbackMs": 5550,
+      "sha256": "e62619df938cff203f5f77ff8a456abf727286d4350ab1f3a54291c8b9368fbb"
+    },
+    {
+      "file": "00112.png",
+      "elapsedMs": 5605.1962,
+      "screen": "world",
+      "playbackMs": 5600,
+      "sha256": "086ec991a369c848a303cf244f52cca43aafb78f0f555705bea34151c8ae6a44"
+    },
+    {
+      "file": "00113.png",
+      "elapsedMs": 5653.2306,
+      "screen": "world",
+      "playbackMs": 5650,
+      "sha256": "d0ab5d0a83a666a77944b45eed8d98db61d5c275351df79befb7f55fb387d386"
+    },
+    {
+      "file": "00114.png",
+      "elapsedMs": 5708.2407,
+      "screen": "world",
+      "playbackMs": 5700,
+      "sha256": "fcfbb17f30c30c83d1fa1ec90081d7b279a412fdf8ea39f0d93a04f7265ebeb2"
+    },
+    {
+      "file": "00115.png",
+      "elapsedMs": 5756.8839,
+      "screen": "world",
+      "playbackMs": 5750,
+      "sha256": "1bc21e32c73e5dd85582e599802d5339528e043c63009b0d8c5429ac8d54143b"
+    },
+    {
+      "file": "00116.png",
+      "elapsedMs": 5807.1211,
+      "screen": "world",
+      "playbackMs": 5800,
+      "sha256": "9b06e78cc27391b371d9deb174cec4bc957699f20b8e791594bd9d4f741403c4"
+    },
+    {
+      "file": "00117.png",
+      "elapsedMs": 5855.6987,
+      "screen": "world",
+      "playbackMs": 5850,
+      "sha256": "41a94594199f892858ec055bf3314890fb43ab955596518e3408bf287eaeba1f"
+    },
+    {
+      "file": "00118.png",
+      "elapsedMs": 5906.8055,
+      "screen": "world",
+      "playbackMs": 5900,
+      "sha256": "4a21ce18b26df83c840bb6cd3b1e68036b220ed44b1140f32da035c5ce79e141"
+    },
+    {
+      "file": "00119.png",
+      "elapsedMs": 5958.072,
+      "screen": "world",
+      "playbackMs": 5950,
+      "sha256": "af90ab4898ef96e990efedbb51d7beb82f8998feacdb9e3fda69d476d293efad"
+    },
+    {
+      "file": "00120.png",
+      "elapsedMs": 6005.8745,
+      "screen": "world",
+      "playbackMs": 6000,
+      "sha256": "50237b7829d744e20de08d7c7edd55b63687630dab95ba54921f6d723c56e33a"
+    },
+    {
+      "file": "00121.png",
+      "elapsedMs": 6058.9091,
+      "screen": "world",
+      "playbackMs": 6050,
+      "sha256": "5bda256f4f40b1a5cad041f688995d08d3dd1c0d5efa96e62482c9c0432c09ca"
+    },
+    {
+      "file": "00122.png",
+      "elapsedMs": 6114.2607,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6100,
+      "sha256": "fd207baf465c0f3fadac19f8a1cb3b658586757661fea88b4339704f845c42b9"
+    },
+    {
+      "file": "00123.png",
+      "elapsedMs": 6159.2239,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6150,
+      "sha256": "097a2e3e865f9da8ed6f9ac1b0ed020435e0e19696726030c7a043abba0af386"
+    },
+    {
+      "file": "00124.png",
+      "elapsedMs": 6208.9786,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6200,
+      "sha256": "f0e762b6f68fe54a30d93d2b05f771d7a9fdec81fd6bbf4dcf3217dbcbed6e3a"
+    },
+    {
+      "file": "00125.png",
+      "elapsedMs": 6260.9706,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6250,
+      "sha256": "ae3461c0dfa3626edcbf89404c0d902a9052ce0d0f4eb2d7bf5ca0eafafc0789"
+    },
+    {
+      "file": "00126.png",
+      "elapsedMs": 6311.2188,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6300,
+      "sha256": "2b2f404aa49b4d8578c95d6ae465b6a7a81d58a5e2a6ba6dc82604834071c9fc"
+    },
+    {
+      "file": "00127.png",
+      "elapsedMs": 6361.1291,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6350,
+      "sha256": "67b75251a135cc3a4e09c1512d902fa67e3a919cc2c7e1da1bb1b51c840e74f3"
+    },
+    {
+      "file": "00128.png",
+      "elapsedMs": 6410.4203,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6400,
+      "sha256": "410bd274068d8e58c6f86dce24ef2713be375d4f1b523641dbba148945f87a16"
+    },
+    {
+      "file": "00129.png",
+      "elapsedMs": 6461.2417,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6450,
+      "sha256": "2433d44fd8689c42b03ec19e4624e9535abe6eb579d727910bd1948e3db6014d"
+    },
+    {
+      "file": "00130.png",
+      "elapsedMs": 6512.2634,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6500,
+      "sha256": "33de8855000baf0616d73b049681627882d4a6686296606c8fcbabd3e95c91ee"
+    },
+    {
+      "file": "00131.png",
+      "elapsedMs": 6561.7584,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6550,
+      "sha256": "1e131de6b8418aedb10c519252959b630bdc68fb209590816958de48488511cf"
+    },
+    {
+      "file": "00132.png",
+      "elapsedMs": 6611.4697,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6600,
+      "sha256": "bb1628f09e252eb513a745eb61d8c98f7de7d124f016321a236881b51765cba5"
+    },
+    {
+      "file": "00133.png",
+      "elapsedMs": 6662.8848,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6650,
+      "sha256": "3a1e105292579e31d188d6e0197c4a317ad7f8f63a6106ba45a0e67c22238584"
+    },
+    {
+      "file": "00134.png",
+      "elapsedMs": 6712.0664,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6700,
+      "sha256": "d2052d5ec4cd077a9ae553930c949939ff46c33085bfa1cfab55e187e9d46a93"
+    },
+    {
+      "file": "00135.png",
+      "elapsedMs": 6762.8075,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6750,
+      "sha256": "c32e1201c95507e532e9fd4f38b514f8cb83272201754d718e08d1c6d47a3bc5"
+    },
+    {
+      "file": "00136.png",
+      "elapsedMs": 6812.9854,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6800,
+      "sha256": "448f225c40be9c26c4b250881a06eee8690cc9c222353bc6d3064708f3834b60"
+    },
+    {
+      "file": "00137.png",
+      "elapsedMs": 6863.3881,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6850,
+      "sha256": "f77f0eb22ac5813b72032988f911069d06b5e4df237193a6153365e6cb3f54d6"
+    },
+    {
+      "file": "00138.png",
+      "elapsedMs": 6917.7017,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6900,
+      "sha256": "daec16b649c57861ae37149be865b9cf52c62d30e9add77c4cfa9f27941b22c5"
+    },
+    {
+      "file": "00139.png",
+      "elapsedMs": 6963.9106,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 6950,
+      "sha256": "5762e31cf4a81291003e67f4ee8f80fd5e8b82dca9afaea795f99e30e397bdbd"
+    },
+    {
+      "file": "00140.png",
+      "elapsedMs": 7000.7676,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7000,
+      "sha256": "65b8acaff34da25f0b0e765583d1b0c55e2110c4ff2331fbe44ac9d28441860e"
+    },
+    {
+      "file": "00141.png",
+      "elapsedMs": 7050.3906,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7050,
+      "sha256": "bb6421e9cb329ccb1df5448571379fd2288b90bfc4f7fa11942553ef2c6b1118"
+    },
+    {
+      "file": "00142.png",
+      "elapsedMs": 7100.3707,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7100,
+      "sha256": "85a3be7d2b13fc14a1072b2ebe152df9e7458f91d72e6ec8a335255afe44c46b"
+    },
+    {
+      "file": "00143.png",
+      "elapsedMs": 7164.55,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7150,
+      "sha256": "341e739941ca1e9c1e6ac98825535cd775943a51a54d4cfaf7c3d3e6dac99a55"
+    },
+    {
+      "file": "00144.png",
+      "elapsedMs": 7213.394,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7200,
+      "sha256": "80a754b41d93782f9a93ee752559c1112653311adfe47c93ec7c185c84b0ad3d"
+    },
+    {
+      "file": "00145.png",
+      "elapsedMs": 7263.2632,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7250,
+      "sha256": "4bf33703ec7456beaa338729379c83f539dffa635678d070942dc90b612314d7"
+    },
+    {
+      "file": "00146.png",
+      "elapsedMs": 7300.6805,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7300,
+      "sha256": "51a06bf5a6d3018d0bd700452afe07e41b7a91e270fef1ee3ce125101718273a"
+    },
+    {
+      "file": "00147.png",
+      "elapsedMs": 7365.4543,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7350,
+      "sha256": "891d7137ba2422a3fbfc7069c72209f9d0e38596c0044943cf0672465d636276"
+    },
+    {
+      "file": "00148.png",
+      "elapsedMs": 7400.5873,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7400,
+      "sha256": "6b6d1aa0c8480ee11ee4e713f523168d253b65c39915307893151233fe6a1c6a"
+    },
+    {
+      "file": "00149.png",
+      "elapsedMs": 7451.2535,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7450,
+      "sha256": "0d141524828fe373be9d503868a52d65da2ea1fddf39cd564a5332979c6e684d"
+    },
+    {
+      "file": "00150.png",
+      "elapsedMs": 7501.8808,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7500,
+      "sha256": "5c87c8f1b0d1410a0fee4014912d3e8c355fe19c6fe12df4dce4bac70e33d9cc"
+    },
+    {
+      "file": "00151.png",
+      "elapsedMs": 7550.3176,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7550,
+      "sha256": "891d7137ba2422a3fbfc7069c72209f9d0e38596c0044943cf0672465d636276"
+    },
+    {
+      "file": "00152.png",
+      "elapsedMs": 7600.4371,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7600,
+      "sha256": "e53dc3bb302ef61ebf46c89c45ef9ecdaa10afd8436c11d6b627796ff20af75c"
+    },
+    {
+      "file": "00153.png",
+      "elapsedMs": 7653.6284,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7650,
+      "sha256": "4ac77654be8efa822816f14f9dface0142d5aa9dd8fd9fd49ce6a93adc1595a3"
+    },
+    {
+      "file": "00154.png",
+      "elapsedMs": 7705.2614,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7700,
+      "sha256": "36a8747566a1e4e7767525862dbbc6de2bdb9d25b368998402cc2f750e732a3e"
+    },
+    {
+      "file": "00155.png",
+      "elapsedMs": 7752.3255,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7750,
+      "sha256": "2a961e681dff23629f72329e83814f868b5650221771bdf7212a1fc813505a4b"
+    },
+    {
+      "file": "00156.png",
+      "elapsedMs": 7809.4926,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7800,
+      "sha256": "030c6d7a841a147a5e2486441c66b2cc86e26ec4758825e6b8890d88d3c815ae"
+    },
+    {
+      "file": "00157.png",
+      "elapsedMs": 7858.8193,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7850,
+      "sha256": "25f72401d7145801868c878d43c3219abc6c75986f5e9048468dcd303ace543f"
+    },
+    {
+      "file": "00158.png",
+      "elapsedMs": 7908.9495,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7900,
+      "sha256": "c9cdc54ea52b371c090b8cbe2151419660f85f47d1340252cf6bf806ee6be109"
+    },
+    {
+      "file": "00159.png",
+      "elapsedMs": 7959.2451,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7950,
+      "sha256": "b7a4a8c0c15033a0fb0e521078767a2c4a7b60cacace7eb9c179768a0b079aae"
+    },
+    {
+      "file": "00160.png",
+      "elapsedMs": 8009.3042,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8000,
+      "sha256": "9a34ef75acb1355e1c6e1bd2039c94028a33ce79eb6f56ea3480ec20dbbf7d8c"
+    },
+    {
+      "file": "00161.png",
+      "elapsedMs": 8060.4516,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8050,
+      "sha256": "c6e3e25628723df70efb234e28262f15b89dc5998f2d66e0d96c2665281a2ffb"
+    },
+    {
+      "file": "00162.png",
+      "elapsedMs": 8109.9248,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8100,
+      "sha256": "78a1b8c84a6d17b2ab319ace776c414990309b0212a558a7130bc641c44aa137"
+    },
+    {
+      "file": "00163.png",
+      "elapsedMs": 8161.0469,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8150,
+      "sha256": "8e47f1d101cd7a18406e89874998e4fd8604e739bae4cc26f0b7f17279e88e4e"
+    },
+    {
+      "file": "00164.png",
+      "elapsedMs": 8211.8304,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8200,
+      "sha256": "03a8d3cd7c70f35b9345725557a0cc6aeb70f76de7a9d2260830e4ef8bfc41ca"
+    },
+    {
+      "file": "00165.png",
+      "elapsedMs": 8262.0801,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8250,
+      "sha256": "2dfd7139d6acaeded1604c537bf92f29850ef3803a458cbad1197b3fdf1c181a"
+    },
+    {
+      "file": "00166.png",
+      "elapsedMs": 8310.8697,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8300,
+      "sha256": "6adbc31e7915498e32ba92371c6c41cfa305fe522c4a0a09b1910718892d9543"
+    },
+    {
+      "file": "00167.png",
+      "elapsedMs": 8361.3249,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8350,
+      "sha256": "230314bf8a9c53f204984f21dab8e26b466bcead1b6684eb59705e9de4d1d3f0"
+    },
+    {
+      "file": "00168.png",
+      "elapsedMs": 8407.5424,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8400,
+      "sha256": "126fd9e17c648de2b92bade475f1a8952251a2d59ed966d8101d1ab6cfe3d06f"
+    },
+    {
+      "file": "00169.png",
+      "elapsedMs": 8458.3304,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8450,
+      "sha256": "8e4f5c62423d104f2a4e54600975960a5a53164766e6484115af94ad5298e118"
+    },
+    {
+      "file": "00170.png",
+      "elapsedMs": 8508.7861,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8500,
+      "sha256": "ecec559b5c85efc0556de0a5938c411075165753aa8c4b826c9063105a2d82c9"
+    },
+    {
+      "file": "00171.png",
+      "elapsedMs": 8558.2425,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8550,
+      "sha256": "265aacea0287d00e695994adf8737b50ffdb17c327a9bcf5b96e0be49c034798"
+    },
+    {
+      "file": "00172.png",
+      "elapsedMs": 8609.5545,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8600,
+      "sha256": "ba684578e4dc1564f89e4846a99767067237d90e4efbf160b4c4abd6e96dab59"
+    },
+    {
+      "file": "00173.png",
+      "elapsedMs": 8659.8576,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8650,
+      "sha256": "f2b4e080a16bd3125ee7bcf135cabbebb0645d2bf0dce559ddcbc670a7582f08"
+    },
+    {
+      "file": "00174.png",
+      "elapsedMs": 8709.1334,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8700,
+      "sha256": "3101762718c626a33c911dce6e666fcdf17e2a5cd2b5565f8a06f0dd11a681bd"
+    },
+    {
+      "file": "00175.png",
+      "elapsedMs": 8759.5659,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8750,
+      "sha256": "42b26f9490ddedd55d5a1e933f2a0c8cec8264eab663fccfa63953d6bc9bdb01"
+    },
+    {
+      "file": "00176.png",
+      "elapsedMs": 8808.4626,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8800,
+      "sha256": "2f3f2650e5897914160daebf1ed4713b586a272654f75e640907c971ba23743a"
+    },
+    {
+      "file": "00177.png",
+      "elapsedMs": 8859.6334,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8850,
+      "sha256": "4d6cc08d178e9d6a1f5a1aec2f39a89c12f597624dde6912873c8c04f4c106fd"
+    },
+    {
+      "file": "00178.png",
+      "elapsedMs": 8909.8843,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8900,
+      "sha256": "ab43433151c51c116315c0f28e3d866ad8e703e8be0a6756f1a3f5f77c61157a"
+    },
+    {
+      "file": "00179.png",
+      "elapsedMs": 8960.001,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 8950,
+      "sha256": "5f5a11274a26458bdb3d53aef6f4ead5527b0954810f6f425d60706e3e275ad2"
+    },
+    {
+      "file": "00180.png",
+      "elapsedMs": 9009.4025,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9000,
+      "sha256": "f7be269997eedfcac6fd262330bab1d118dc463106bf2fb71cd08f1bb0368c16"
+    },
+    {
+      "file": "00181.png",
+      "elapsedMs": 9058.9574,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9050,
+      "sha256": "9c98c67f8c9a6f44cd22d70a603da6d2ceccd0395b3e6b6c8cb1ba5e82b12669"
+    },
+    {
+      "file": "00182.png",
+      "elapsedMs": 9109.7021,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9100,
+      "sha256": "add58324ab68a497213d1e51364198f015ec2077a82591f5c5c83f8b92dd3770"
+    },
+    {
+      "file": "00183.png",
+      "elapsedMs": 9159.6814,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9150,
+      "sha256": "f3bfecf07e7629fc776487c33a6de115d3a3fe7860995e776d83212d2eb8ef25"
+    },
+    {
+      "file": "00184.png",
+      "elapsedMs": 9210.2158,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9200,
+      "sha256": "1df9fda4fc22965670cb21df7787c25ece08cef1a0293c3ea54ef967212cbf2b"
+    },
+    {
+      "file": "00185.png",
+      "elapsedMs": 9260.4791,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9250,
+      "sha256": "b204752377deca1165b27fbdfa78204ed67579c54a826faa2e5a698e55131acb"
+    },
+    {
+      "file": "00186.png",
+      "elapsedMs": 9323.301,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9300,
+      "sha256": "2ebade932d31247c4dce93132c2b8649ffe948c25ee39aa60b1f3716d9202c18"
+    },
+    {
+      "file": "00187.png",
+      "elapsedMs": 9352.7475,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9350,
+      "sha256": "2ee8e1553e6346e3328b0909fcbef2a694fec6c88da5c035b7e01735bf592311"
+    },
+    {
+      "file": "00188.png",
+      "elapsedMs": 9405.7189,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9400,
+      "sha256": "696129c4a24a77528856c933391055affbbc52887f27f0cc1000ea214f51d8ab"
+    },
+    {
+      "file": "00189.png",
+      "elapsedMs": 9455.8386,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9450,
+      "sha256": "892d71276ae0d8840c20d79855164eda312c5e19b056af312af9d868607f05a3"
+    },
+    {
+      "file": "00190.png",
+      "elapsedMs": 9506.4957,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9500,
+      "sha256": "f74ba793a4f45ef9145f163f52ece6e0bcc1a8e27ab7a0287c616bf6540139dc"
+    },
+    {
+      "file": "00191.png",
+      "elapsedMs": 9555.8645,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9550,
+      "sha256": "c734a43e037528340dfde9187c93057eb1f5a3a7ed14e705b6b866446fe02b90"
+    },
+    {
+      "file": "00192.png",
+      "elapsedMs": 9606.0146,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9600,
+      "sha256": "5b68c1a52f64d30840cea39d910761d8f88bce2f73bdf66c47f554ebdf3a2bd5"
+    },
+    {
+      "file": "00193.png",
+      "elapsedMs": 9657.2891,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9650,
+      "sha256": "08faf67ace2169cf1160dbd36d5a637a15081482efa73c97c220dc9e77c80840"
+    },
+    {
+      "file": "00194.png",
+      "elapsedMs": 9706.4642,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9700,
+      "sha256": "45985100b29a0fad444650ec8e1c34b2111c7b028e6b48e5eb873a433bdb09d8"
+    },
+    {
+      "file": "00195.png",
+      "elapsedMs": 9756.3649,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9750,
+      "sha256": "020bcc3d93864db3470c81e2c1d73c9d3dd33e91cf9fd104106e802e23c40407"
+    },
+    {
+      "file": "00196.png",
+      "elapsedMs": 9805.1715,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9800,
+      "sha256": "1eca3c665845ffb2b97ce274aee907e42ce7c39e0191124992dc39fca95dce54"
+    },
+    {
+      "file": "00197.png",
+      "elapsedMs": 9856.0762,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9850,
+      "sha256": "2f30fdf7ee787a527ac09524f2c6ed851826a30751f50e01e5ae75d384594ab6"
+    },
+    {
+      "file": "00198.png",
+      "elapsedMs": 9905.9264,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9900,
+      "sha256": "ecba9af958995708f5fcf8cbb6ee328c8e4681bada3e4946b5fb1713e9607f6d"
+    },
+    {
+      "file": "00199.png",
+      "elapsedMs": 9955.7647,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 9950,
+      "sha256": "ecab17ba224a4ec85fc0b7fea240e267b0fae9143edf9039b136f944d1b2d19a"
+    },
+    {
+      "file": "00200.png",
+      "elapsedMs": 10006.4895,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10000,
+      "sha256": "cd2dcdbea63df90ceba29144f2465594039593e7a5f5975de2a18284a254a55a"
+    },
+    {
+      "file": "00201.png",
+      "elapsedMs": 10057.248,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10050,
+      "sha256": "fbcd4ad43a3c46c455a99ab9792ceb474dfe49845615f8e90918bbb0a708500e"
+    },
+    {
+      "file": "00202.png",
+      "elapsedMs": 10106.4153,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10100,
+      "sha256": "30d6794726dcc08ae665fc3928fcf32406b5c301b80418bbba73f4b3c7ecae80"
+    },
+    {
+      "file": "00203.png",
+      "elapsedMs": 10157.1151,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10150,
+      "sha256": "3dbfa8674377a7271b3d0bc40e76017d0a6627bed295afc445d502a0c21397e5"
+    },
+    {
+      "file": "00204.png",
+      "elapsedMs": 10206.9476,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10200,
+      "sha256": "2ff08a6988a4657d994a5afdb9bbb73ad640e771c474ac079980ab5ff250821a"
+    },
+    {
+      "file": "00205.png",
+      "elapsedMs": 10256.1436,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10250,
+      "sha256": "6d955a4d915c439894d09c7d3b77567a9b7ca9681d71c21677ff5c99f9592f2a"
+    },
+    {
+      "file": "00206.png",
+      "elapsedMs": 10306.4188,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10300,
+      "sha256": "b18cfd87386ecf3e6f3322835376fcf2f0f2b91b9971d0764d10b03262728a42"
+    },
+    {
+      "file": "00207.png",
+      "elapsedMs": 10365.5165,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10350,
+      "sha256": "f077646a74a83c634990caf0176b9581e7d23b3390bb33d15b854e3acddd3662"
+    },
+    {
+      "file": "00208.png",
+      "elapsedMs": 10405.7588,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10400,
+      "sha256": "74cba19d3a384a228bbcb86e3888cd4a62bb4efbbb17b02cf24cd22c4a042649"
+    },
+    {
+      "file": "00209.png",
+      "elapsedMs": 10456.7952,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10450,
+      "sha256": "7cf5746ee3766c13ef6922887fe23a81d62206dae0dcc6ca0a3dddedf8c1ea2d"
+    },
+    {
+      "file": "00210.png",
+      "elapsedMs": 10506.4439,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10500,
+      "sha256": "cdbe502ed96303563553d70d5956ef4ec69d85d9d360a57d5f4116c2af098703"
+    },
+    {
+      "file": "00211.png",
+      "elapsedMs": 10557.1824,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10550,
+      "sha256": "1de8b0abd037fa6ce6a30aff90b9ab7d51ec5160f452df3c261f8720817e887d"
+    },
+    {
+      "file": "00212.png",
+      "elapsedMs": 10607.3312,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10600,
+      "sha256": "0e810379604c3e2dd46f95d0f2e84ddffa57bdba786a90b5b117760b0f279cf3"
+    },
+    {
+      "file": "00213.png",
+      "elapsedMs": 10657.319,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10650,
+      "sha256": "1ae00f22776080d4a8f0a14494717a61d06eaf8060d0a90649b1bb8a870c7c77"
+    },
+    {
+      "file": "00214.png",
+      "elapsedMs": 10707.8677,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10700,
+      "sha256": "b63928262db3b8ebb6dc71a39229441ae356faa638583d6fecda9791c7c93a38"
+    },
+    {
+      "file": "00215.png",
+      "elapsedMs": 10758.7621,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10750,
+      "sha256": "8e75965b412eb0e11aa17c14587c20f78ddfd5c268cb3a5768a1d1962f1eaa01"
+    },
+    {
+      "file": "00216.png",
+      "elapsedMs": 10809.0482,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10800,
+      "sha256": "dc2c71025c2ba13732905562cea0bf38d585360324b2917d8e6662e93ef730ab"
+    },
+    {
+      "file": "00217.png",
+      "elapsedMs": 10862.8359,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10850,
+      "sha256": "f9063ffc6e84bd521c1850a08570a4bc0bfdd69def2b214dbf2058df23fe58c6"
+    },
+    {
+      "file": "00218.png",
+      "elapsedMs": 10912.3106,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10900,
+      "sha256": "67964c1b7856e95ff05110819e3c441308d1586ab3f7ad938d1f8beca1ec48d2"
+    },
+    {
+      "file": "00219.png",
+      "elapsedMs": 10963.9162,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10950,
+      "sha256": "bc691f95ae007ee65782e97992d6341718789814bdfcf4b21ba88bf858d5441c"
+    },
+    {
+      "file": "00220.png",
+      "elapsedMs": 11013.5897,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11000,
+      "sha256": "2f77525f71df0752288dcbe4afde1b89fb88a49c6aa3d51f1543a8a297dd75d0"
+    },
+    {
+      "file": "00221.png",
+      "elapsedMs": 11051.2712,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11050,
+      "sha256": "29352c4769a83e735d4186e230afbf268bfa7fef46100dd9b2480823b9b9cf2d"
+    },
+    {
+      "file": "00222.png",
+      "elapsedMs": 11108.2509,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11100,
+      "sha256": "ee83bfea56ddfb1d8a6ff4fc6b20b3565e6664ae0469cfef3ad3359d8e2a9945"
+    },
+    {
+      "file": "00223.png",
+      "elapsedMs": 11156.8495,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11150,
+      "sha256": "143c4a5a3f2b8b6e392b88413e687932b715fd2829826721cada7a5591faccd1"
+    },
+    {
+      "file": "00224.png",
+      "elapsedMs": 11206.1936,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11200,
+      "sha256": "a312d17c5141f07bb57ad6b743b01c8b6864b12c586b169cfc8deeb2a6ba21da"
+    },
+    {
+      "file": "00225.png",
+      "elapsedMs": 11258.6115,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11250,
+      "sha256": "8833ae6f6d14d5306f3015dc07e21f8d2ec56bffe98863369402f4ee5ddf6498"
+    },
+    {
+      "file": "00226.png",
+      "elapsedMs": 11335.8927,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11300,
+      "sha256": "6cdae6016520d9517517686cff4872b0591568c32846043147a93f6f4cce7672"
+    },
+    {
+      "file": "00227.png",
+      "elapsedMs": 11353.2087,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11350,
+      "sha256": "d2d2df2b4807cb05102f4ac711c90cfb6cfc09e8f7dcc917120ae0f4660bb02e"
+    },
+    {
+      "file": "00228.png",
+      "elapsedMs": 11408.9933,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11400,
+      "sha256": "b79080d394525ce790d8163b236e7cb2c389ecbb66e7e6ef7478d63a35b89bac"
+    },
+    {
+      "file": "00229.png",
+      "elapsedMs": 11452.4599,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11450,
+      "sha256": "2a3b84ac914668b75e32ce0e9fb91a3cdc4942db2813ec2730aaef3f52cbd314"
+    },
+    {
+      "file": "00230.png",
+      "elapsedMs": 11501.22,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11500,
+      "sha256": "058e9b0d422ed2927475be1f6eea2eb74dd4b79ab6d0f124213b9a14f225120e"
+    },
+    {
+      "file": "00231.png",
+      "elapsedMs": 11551.1625,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11550,
+      "sha256": "553e4e346705faf5cd99c026c50be29f09c462e682ced10e6adb3a5196e40a25"
+    },
+    {
+      "file": "00232.png",
+      "elapsedMs": 11604.9149,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11600,
+      "sha256": "0fceb9dee5d13eff49176896b2163498a7af50879b77d22123348fd5cb856098"
+    },
+    {
+      "file": "00233.png",
+      "elapsedMs": 11654.6034,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11650,
+      "sha256": "f1c814d063f575709353cacb2b1afd24f15f2f460c4b7129d6326b3a62ca77d4"
+    },
+    {
+      "file": "00234.png",
+      "elapsedMs": 11705.3088,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11700,
+      "sha256": "e20ebf908fac38ae1369470c94d37615d21d7d4a082a0e28bfa9031dfe1af377"
+    },
+    {
+      "file": "00235.png",
+      "elapsedMs": 11756.1174,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11750,
+      "sha256": "e58b0e0a96b1670251fab878119db897b7d1ee46dc78ee9dbda52dec0867a109"
+    },
+    {
+      "file": "00236.png",
+      "elapsedMs": 11806.076,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11800,
+      "sha256": "9d1cb45ab00302d58d4bf59c63a2793085889f4dc35fb5132e0c01dd00a8521a"
+    },
+    {
+      "file": "00237.png",
+      "elapsedMs": 11855.8237,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11850,
+      "sha256": "646bb130bc2034d65f9c537315513f321c860f6d62667a70c4ad5353721c0cb7"
+    },
+    {
+      "file": "00238.png",
+      "elapsedMs": 11905.1569,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11900,
+      "sha256": "a36348efa12527aac55d55c167a590c3a67b1a1228cd913611c6856cf7906abb"
+    },
+    {
+      "file": "00239.png",
+      "elapsedMs": 11955.7923,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 11950,
+      "sha256": "53491dad95ebea5af6bd2710a223344e111304a957b00b39eb3b78624d2b15f1"
+    },
+    {
+      "file": "00240.png",
+      "elapsedMs": 12008.6345,
+      "screen": "world",
+      "playbackMs": 12000,
+      "sha256": "c2dcb8bd46d764af5a3d2b14ae9934b0f7db27d4e02b6e9bedcdaafe519e9ea6"
+    },
+    {
+      "file": "00241.png",
+      "elapsedMs": 12055.0555,
+      "screen": "world",
+      "playbackMs": 12050,
+      "sha256": "29c0162b2ddb2f3dfcf5d11c7b9225c54d5c44997bd53e2f6711800968008f03"
+    },
+    {
+      "file": "00242.png",
+      "elapsedMs": 12105.0229,
+      "screen": "world",
+      "playbackMs": 12100,
+      "sha256": "314e386919863a8e669c83f9e67aa3a2badc250b80d98c8e0711d5e4839aa165"
+    },
+    {
+      "file": "00243.png",
+      "elapsedMs": 12167.33,
+      "screen": "world",
+      "playbackMs": 12150,
+      "sha256": "bf8f6ae3a56bf94d4a5177ca35d9afb571744462a6d9cb86511a72f9c842de04"
+    },
+    {
+      "file": "00244.png",
+      "elapsedMs": 12200.6829,
+      "screen": "world",
+      "playbackMs": 12200,
+      "sha256": "a639f3b3441e5a7cda712157efbbe41638e1bf8694bf07cd6e85af08a0bcf26f"
+    },
+    {
+      "file": "00245.png",
+      "elapsedMs": 12250.5067,
+      "screen": "world",
+      "playbackMs": 12250,
+      "sha256": "ab9b85da2ab74d4a0e2b6356d415d96b2036c6e447be1c8d2cd20a38c59099c1"
+    },
+    {
+      "file": "00246.png",
+      "elapsedMs": 12300.4199,
+      "screen": "world",
+      "playbackMs": 12300,
+      "sha256": "eb7d4fc28fbd651d6ca83fbaae097724c2ea19f08b247b8f74c1d3c0d1353546"
+    },
+    {
+      "file": "00247.png",
+      "elapsedMs": 12350.4277,
+      "screen": "world",
+      "playbackMs": 12350,
+      "sha256": "42660380fc417ae857e012500b274ffad6ada9812ea270b4aa46ea02ecd023dc"
+    },
+    {
+      "file": "00248.png",
+      "elapsedMs": 12400.7642,
+      "screen": "world",
+      "playbackMs": 12400,
+      "sha256": "2cd88a37a797d27057e9aefbf3c731cc305573b8c1ceab2c7662138fbca9676e"
+    },
+    {
+      "file": "00249.png",
+      "elapsedMs": 12450.4341,
+      "screen": "world",
+      "playbackMs": 12450,
+      "sha256": "4e3bef8469973efcfe196629103c547eac906ff6105b563ea8318b191aae22af"
+    },
+    {
+      "file": "00250.png",
+      "elapsedMs": 12500.5079,
+      "screen": "world",
+      "playbackMs": 12500,
+      "sha256": "98120c955a69e5c774edc4c58a2271cd8aec42c27b42470279bb8095642bf06f"
+    },
+    {
+      "file": "00251.png",
+      "elapsedMs": 12551.105,
+      "screen": "world",
+      "playbackMs": 12550,
+      "sha256": "862f6e646bbb658ee95ab3c3e969abc1c8269d8beb89bfebc51f01129e3e9209"
+    },
+    {
+      "file": "00252.png",
+      "elapsedMs": 12601.6487,
+      "screen": "world",
+      "playbackMs": 12600,
+      "sha256": "707e06e745e6d89951456fabf53e5902639a4450bb3547634432af6b544fdeae"
+    },
+    {
+      "file": "00253.png",
+      "elapsedMs": 12651.9178,
+      "screen": "world",
+      "playbackMs": 12650,
+      "sha256": "6d64473e2d3514f11ce3087e37d2cd8dee84f9f4a9b76e18e5b1c58f29d06070"
+    },
+    {
+      "file": "00254.png",
+      "elapsedMs": 12704.3784,
+      "screen": "world",
+      "playbackMs": 12700,
+      "sha256": "69dc911b235d5b5294d3ee49c78df5030e2ac82b93455f9f5eb831ee5768c639"
+    },
+    {
+      "file": "00255.png",
+      "elapsedMs": 12752.2737,
+      "screen": "world",
+      "playbackMs": 12750,
+      "sha256": "d491e7e8e7e9af39eefd1ecca9ac861f734f871b973a365dd8ba8f6621ceb2cf"
+    },
+    {
+      "file": "00256.png",
+      "elapsedMs": 12801.5364,
+      "screen": "world",
+      "playbackMs": 12800,
+      "sha256": "2f130e48db8f493182d8f3316325cf6d2ecd3b82aa6a8a2fd85e2e4e9e05c0bb"
+    },
+    {
+      "file": "00257.png",
+      "elapsedMs": 12850.8798,
+      "screen": "world",
+      "playbackMs": 12850,
+      "sha256": "de9694a73ec074be68ebbd23f6ed6a5781beed37a4e3dfbdceac44a82118c1c3"
+    },
+    {
+      "file": "00258.png",
+      "elapsedMs": 12901.5644,
+      "screen": "world",
+      "playbackMs": 12900,
+      "sha256": "8820d80d816b6c5084f781f24a8226f3bed30d4b1721eb0c29603c34ad7d8797"
+    },
+    {
+      "file": "00259.png",
+      "elapsedMs": 12951.9327,
+      "screen": "world",
+      "playbackMs": 12950,
+      "sha256": "e2da61db5b732b9c0460d6596887b5bc082897ffa80e10f86180c032e9a10e04"
+    },
+    {
+      "file": "00260.png",
+      "elapsedMs": 13004.8789,
+      "screen": "world",
+      "playbackMs": 13000,
+      "sha256": "ae49a92eb80651ff17213eb63d10b726c4a20d7cff4fd89a9bf03ca123963c8f"
+    },
+    {
+      "file": "00261.png",
+      "elapsedMs": 13056.1934,
+      "screen": "world",
+      "playbackMs": 13050,
+      "sha256": "8b8097e3a7b22dc7720c4495500035b66676f9c0327ff88a6815f9b1f8f07f18"
+    },
+    {
+      "file": "00262.png",
+      "elapsedMs": 13105.0547,
+      "screen": "world",
+      "playbackMs": 13100,
+      "sha256": "778c4c1d3c91a1b6d7d514415750113b06d4d2f51bf5a075beb7e6e45c1603ea"
+    },
+    {
+      "file": "00263.png",
+      "elapsedMs": 13158.1221,
+      "screen": "world",
+      "playbackMs": 13150,
+      "sha256": "e4d7c080e8934cbe5fde1ba66c11f5fbd83fe6e1a38f3c1faa5d82ebdea84790"
+    },
+    {
+      "file": "00264.png",
+      "elapsedMs": 13206.8838,
+      "screen": "world",
+      "playbackMs": 13200,
+      "sha256": "3ab581637207c34d191d8428f2277854a243371aca807b5a7b279aefbf33edeb"
+    },
+    {
+      "file": "00265.png",
+      "elapsedMs": 13258.1068,
+      "screen": "world",
+      "playbackMs": 13250,
+      "sha256": "4ee9dd99542d4e64078ece439fd4d8d08fac89442b9ea9b14e3ff9f4cd352ef8"
+    },
+    {
+      "file": "00266.png",
+      "elapsedMs": 13307.4254,
+      "screen": "world",
+      "playbackMs": 13300,
+      "sha256": "05528a5fb3dd503bf06e42f972c101d4dd5b4d0e57397d8b9ce0532410c0f9bf"
+    },
+    {
+      "file": "00267.png",
+      "elapsedMs": 13356.222,
+      "screen": "world",
+      "playbackMs": 13350,
+      "sha256": "5ecd7129e53fb00488f5755b25339c1c92518a2d895bdc359ea1ae768d93f9fb"
+    },
+    {
+      "file": "00268.png",
+      "elapsedMs": 13405.9671,
+      "screen": "world",
+      "playbackMs": 13400,
+      "sha256": "753302164241eac2d4e2235c6c71fe26115ec5278ff0222a3bd13517ab5a7669"
+    },
+    {
+      "file": "00269.png",
+      "elapsedMs": 13455.8393,
+      "screen": "world",
+      "playbackMs": 13450,
+      "sha256": "6cedc59a1a98d31e72ed4bd43a5893e7bce201dec2d7b91b7ffe838d220ae4f4"
+    },
+    {
+      "file": "00270.png",
+      "elapsedMs": 13505.9289,
+      "screen": "world",
+      "playbackMs": 13500,
+      "sha256": "f6f6080b26d1d03ebee67e9b22e004739d017d66ffd5eb8b30379e9da6eb02d1"
+    },
+    {
+      "file": "00271.png",
+      "elapsedMs": 13556.1955,
+      "screen": "world",
+      "playbackMs": 13550,
+      "sha256": "3dd15d9a240f3d6ff7254182ceebd7a40cfc41afe996bb5063c6413471f8658a"
+    },
+    {
+      "file": "00272.png",
+      "elapsedMs": 13606.8803,
+      "screen": "world",
+      "playbackMs": 13600,
+      "sha256": "854eefdbba15a20350b313b64f899ae4f6d172c6725b220186f3ffc4aaef178a"
+    },
+    {
+      "file": "00273.png",
+      "elapsedMs": 13657.5453,
+      "screen": "world",
+      "playbackMs": 13650,
+      "sha256": "76512f7ca05de067837acebd5a1eb5df52f86417807a7541854c9366bd1ce326"
+    },
+    {
+      "file": "00274.png",
+      "elapsedMs": 13707.9274,
+      "screen": "world",
+      "playbackMs": 13700,
+      "sha256": "719d0117540686dc140836430da7236e686f6d99b1bbb49511b12f11768f7f36"
+    },
+    {
+      "file": "00275.png",
+      "elapsedMs": 13757.6499,
+      "screen": "world",
+      "playbackMs": 13750,
+      "sha256": "4fbb12d32e74c5d25e39f9dc3710dc8db149606769959f03386cbf17ea6da860"
+    },
+    {
+      "file": "00276.png",
+      "elapsedMs": 13808.0495,
+      "screen": "world",
+      "playbackMs": 13800,
+      "sha256": "3f16560626fb9a36bd1de1b9675032d626dcd99f59ae865561e0ad44ddf22f51"
+    },
+    {
+      "file": "00277.png",
+      "elapsedMs": 13858.0764,
+      "screen": "world",
+      "playbackMs": 13850,
+      "sha256": "ed1267390ad7098661049eb819ffad5bf815a355859a5e41fa05532898fbc726"
+    },
+    {
+      "file": "00278.png",
+      "elapsedMs": 13908.4028,
+      "screen": "world",
+      "playbackMs": 13900,
+      "sha256": "6f5633aab46579e1fe157fe32072d36ac30c57b23193d0d96f678bf44a28f0d8"
+    },
+    {
+      "file": "00279.png",
+      "elapsedMs": 13958.9184,
+      "screen": "world",
+      "playbackMs": 13950,
+      "sha256": "2328cff81e2ebb55e4688f999af894df514c27a540be1bfb63c58057acaa0d97"
+    },
+    {
+      "file": "00280.png",
+      "elapsedMs": 14009.3105,
+      "screen": "world",
+      "playbackMs": 14000,
+      "sha256": "0ec770efddd1de8ba44ee3ff8bc255d22893009e70f64faba025a3996ea26b20"
+    },
+    {
+      "file": "00281.png",
+      "elapsedMs": 14059.5404,
+      "screen": "world",
+      "playbackMs": 14050,
+      "sha256": "de0efed4d3a6b6e61aebd9361aedc77fbbabe567fe35805bf7b2d4739f2866d5"
+    },
+    {
+      "file": "00282.png",
+      "elapsedMs": 14109.0613,
+      "screen": "world",
+      "playbackMs": 14100,
+      "sha256": "5e7fdb2c44a1fc3ddd7e2946aa7d272b93c4714d19f48aac65e8ce998d39275a"
+    },
+    {
+      "file": "00283.png",
+      "elapsedMs": 14159.3922,
+      "screen": "world",
+      "playbackMs": 14150,
+      "sha256": "454e77da3bf744ed7df04b28c4b2178f1771775b0d706579a5891f1f12b16b13"
+    },
+    {
+      "file": "00284.png",
+      "elapsedMs": 14210.3249,
+      "screen": "world",
+      "playbackMs": 14200,
+      "sha256": "78c9842f076011202cacdfa9c07e363fc92779d1c7a165e14e76ceaa0b262828"
+    },
+    {
+      "file": "00285.png",
+      "elapsedMs": 14260.6791,
+      "screen": "world",
+      "playbackMs": 14250,
+      "sha256": "721cd02f2cc51ea201e9a6d6c42a224597316735ff0422016e8cdc448d7e3125"
+    },
+    {
+      "file": "00286.png",
+      "elapsedMs": 14310.1261,
+      "screen": "world",
+      "playbackMs": 14300,
+      "sha256": "95ae08e3a7f41a833e5275920f6ddeebb8fbcf4dab090530795e9eff20bc20c6"
+    },
+    {
+      "file": "00287.png",
+      "elapsedMs": 14360.7409,
+      "screen": "world",
+      "playbackMs": 14350,
+      "sha256": "c5d7c17873db5d2b16f7ba87c13326957c060bf66fd936ee84be75e1fad3d8dc"
+    },
+    {
+      "file": "00288.png",
+      "elapsedMs": 14411.4427,
+      "screen": "world",
+      "playbackMs": 14400,
+      "sha256": "20973fd1bdfea155b03268fbce7e5b0b7d3b7bf2498b84df6b0ebae12c6173a8"
+    },
+    {
+      "file": "00289.png",
+      "elapsedMs": 14461.5965,
+      "screen": "world",
+      "playbackMs": 14450,
+      "sha256": "d5f82dc3e1bd69c716ae910bfc74af14c43f24229597959b0d8abb3ca2eb390d"
+    },
+    {
+      "file": "00290.png",
+      "elapsedMs": 14511.5849,
+      "screen": "world",
+      "playbackMs": 14500,
+      "sha256": "8359242b9383b1b35c6c65a9db6f19fd0328c80c6c562bdeb0c5727e2afdfcf1"
+    },
+    {
+      "file": "00291.png",
+      "elapsedMs": 14561.773,
+      "screen": "world",
+      "playbackMs": 14550,
+      "sha256": "a7a67b3e6f00bb6595a0df6f020dc7001e2e046b680d2ddb3806e9de943c9445"
+    },
+    {
+      "file": "00292.png",
+      "elapsedMs": 14611.9275,
+      "screen": "world",
+      "playbackMs": 14600,
+      "sha256": "47dfdca7cdc9e4868df53fbc3ee9a164868d2dfe98cb43f3302815b046fe3be4"
+    },
+    {
+      "file": "00293.png",
+      "elapsedMs": 14661.9669,
+      "screen": "world",
+      "playbackMs": 14650,
+      "sha256": "b4093ec55fc4dc5e334e7aee590df21a9bacdac2f28d13271b87d4674fe4741b"
+    },
+    {
+      "file": "00294.png",
+      "elapsedMs": 14711.9978,
+      "screen": "world",
+      "playbackMs": 14700,
+      "sha256": "4e9ccebe3be5cf26b56cae81abafae7357080eeca5eade5599af682664ac3e7b"
+    },
+    {
+      "file": "00295.png",
+      "elapsedMs": 14762.6228,
+      "screen": "world",
+      "playbackMs": 14750,
+      "sha256": "ee610405a291b5a252107aae0759e78132f2a0ed6a20972742dec43b16111f0e"
+    },
+    {
+      "file": "00296.png",
+      "elapsedMs": 14812.3943,
+      "screen": "world",
+      "playbackMs": 14800,
+      "sha256": "9d69742bb570105af0ca2594a10f6734f1585b251ae4e1fafeba7bad93ed985e"
+    },
+    {
+      "file": "00297.png",
+      "elapsedMs": 14884.1426,
+      "screen": "world",
+      "playbackMs": 14850,
+      "sha256": "267ebe2a5d4fca0b5359662e00e600996a1f1a02f0e455819bf1962a27872f39"
+    },
+    {
+      "file": "00298.png",
+      "elapsedMs": 14902.684,
+      "screen": "world",
+      "playbackMs": 14900,
+      "sha256": "59f77c829ac726fa034dc237b16479c23aef7a623746570126d9178da845ddc3"
+    },
+    {
+      "file": "00299.png",
+      "elapsedMs": 14952.8044,
+      "screen": "world",
+      "playbackMs": 14950,
+      "sha256": "dcb3c486b7ed55d7140ac7a6b3580a610ddfa38d0443a1d8b7eb52533800d3a3"
+    },
+    {
+      "file": "00300.png",
+      "elapsedMs": 15004.2026,
+      "screen": "world",
+      "playbackMs": 15000,
+      "sha256": "d4b067afdcfc8b1fbf27e735055999f017c9da1701524475dbb4bb30e2aca444"
+    },
+    {
+      "file": "00301.png",
+      "elapsedMs": 15053.9496,
+      "screen": "world",
+      "playbackMs": 15050,
+      "sha256": "bc3a877b864b4918e033600a164ea220d6d3df0bf2b60ba011931450b041f385"
+    },
+    {
+      "file": "00302.png",
+      "elapsedMs": 15104.1838,
+      "screen": "world",
+      "playbackMs": 15100,
+      "sha256": "530d47e46ba0973fd541df9728da5ed058fd349944a0b1a580c1b6fd45875d47"
+    },
+    {
+      "file": "00303.png",
+      "elapsedMs": 15154.9507,
+      "screen": "world",
+      "playbackMs": 15150,
+      "sha256": "47dc4bcad0b62ca70de5972c40af4ae576dde0094cb6c26ff94c2cf53df4999a"
+    },
+    {
+      "file": "00304.png",
+      "elapsedMs": 15205.4633,
+      "screen": "world",
+      "playbackMs": 15200,
+      "sha256": "23787d92296e7907f4a336391e90cbaf684941cdbba9536b22e5e82e6358eb55"
+    },
+    {
+      "file": "00305.png",
+      "elapsedMs": 15254.9432,
+      "screen": "world",
+      "playbackMs": 15250,
+      "sha256": "85a12a6a8be981c96e632b1ead55c7ff1761377e70b062f2adec6d66dbbce858"
+    },
+    {
+      "file": "00306.png",
+      "elapsedMs": 15305.0418,
+      "screen": "world",
+      "playbackMs": 15300,
+      "sha256": "4bb082fee84a8f5b9fdbfa7f31f9889fdf94a4ad21ac8815cf6b21478a5b8458"
+    },
+    {
+      "file": "00307.png",
+      "elapsedMs": 15356.092,
+      "screen": "world",
+      "playbackMs": 15350,
+      "sha256": "b3dd5a06d412971e323bf4c8955297e21086465af2b6eb0264aa21f5c98944c5"
+    },
+    {
+      "file": "00308.png",
+      "elapsedMs": 15407.3464,
+      "screen": "world",
+      "playbackMs": 15400,
+      "sha256": "a6c4087de46f4bb62f8e417ec870ce5efcaa4958d1de6891b7f18473122d8f9f"
+    },
+    {
+      "file": "00309.png",
+      "elapsedMs": 15457.3224,
+      "screen": "world",
+      "playbackMs": 15450,
+      "sha256": "d73d28fa30fe8ed644c86daabb63046e0a44e9a7fb559d9fa0b70b95c44593b9"
+    },
+    {
+      "file": "00310.png",
+      "elapsedMs": 15508.3535,
+      "screen": "world",
+      "playbackMs": 15500,
+      "sha256": "68981a4b7de221f82ee09e7c718c88dc2fce2b130f1545cc16ef4c19356b306d"
+    },
+    {
+      "file": "00311.png",
+      "elapsedMs": 15559.3255,
+      "screen": "world",
+      "playbackMs": 15550,
+      "sha256": "84007b8eb7ec58c18c1d2c2d94684059a1f12b26ffedeabfdeaceeddfa5c2f71"
+    },
+    {
+      "file": "00312.png",
+      "elapsedMs": 15608.1943,
+      "screen": "world",
+      "playbackMs": 15600,
+      "sha256": "08c19799780f7c1cf21a9b894c5635c79b0f7df97e69f12987db473f64b756be"
+    },
+    {
+      "file": "00313.png",
+      "elapsedMs": 15658.883,
+      "screen": "world",
+      "playbackMs": 15650,
+      "sha256": "afe9608886042d86d27edfeb0a42cbe853d066f057736a490ae9e1b1ee21d9ad"
+    },
+    {
+      "file": "00314.png",
+      "elapsedMs": 15708.9907,
+      "screen": "world",
+      "playbackMs": 15700,
+      "sha256": "2d6c6591c32ee56f5c50eda8bcc5d4ac74f185444557b1ba83bff7de70c48199"
+    },
+    {
+      "file": "00315.png",
+      "elapsedMs": 15759.1377,
+      "screen": "world",
+      "playbackMs": 15750,
+      "sha256": "f4158caf734b4614af06efb9261918ce437c69c891541216a8d57e9f0a56803b"
+    },
+    {
+      "file": "00316.png",
+      "elapsedMs": 15808.7767,
+      "screen": "world",
+      "playbackMs": 15800,
+      "sha256": "21d12059c609594c3c1d2762d796c59afbf0153ddb20606e5815a9197f777e1b"
+    },
+    {
+      "file": "00317.png",
+      "elapsedMs": 15860.1719,
+      "screen": "world",
+      "playbackMs": 15850,
+      "sha256": "3f21ee58afd33b387bc5224eb1128d91aa7510faa9a4cda0198823ca073b0ffe"
+    },
+    {
+      "file": "00318.png",
+      "elapsedMs": 15908.9351,
+      "screen": "world",
+      "playbackMs": 15900,
+      "sha256": "4982c5ed140049eb48081863fa1360bd6fecd2e5f156e436c1df8103ca0dac82"
+    },
+    {
+      "file": "00319.png",
+      "elapsedMs": 15958.9101,
+      "screen": "world",
+      "playbackMs": 15950,
+      "sha256": "bb488b5482626e413c84260910edc3d6596ea182def6b3c68565c1cba802d00e"
+    },
+    {
+      "file": "00320.png",
+      "elapsedMs": 16009.0691,
+      "screen": "world",
+      "playbackMs": 16000,
+      "sha256": "05979dd23bbc7edfc8a6a669f6e55c0686c766eb2bdcd82fc8b81b3238c2f26a"
+    },
+    {
+      "file": "00321.png",
+      "elapsedMs": 16058.9297,
+      "screen": "world",
+      "playbackMs": 16050,
+      "sha256": "4218d60ae899d5d21ecd4f874822dae15eed76d3d9319e0aec8791c77d021da6"
+    },
+    {
+      "file": "00322.png",
+      "elapsedMs": 16109.0347,
+      "screen": "world",
+      "playbackMs": 16100,
+      "sha256": "469313cee75b44229d3952500a20587802befc6cd3184c9f4bd195fe3941f426"
+    },
+    {
+      "file": "00323.png",
+      "elapsedMs": 16159.9111,
+      "screen": "world",
+      "playbackMs": 16150,
+      "sha256": "3057961e422caf3f4f1837c7efd1a121374121f7429fcd026470acab31811a09"
+    },
+    {
+      "file": "00324.png",
+      "elapsedMs": 16211.004,
+      "screen": "world",
+      "playbackMs": 16200,
+      "sha256": "ea2be93ea29200a103a67bcb8f1f34d0b53f1807667afc6c70c85d963d729a87"
+    },
+    {
+      "file": "00325.png",
+      "elapsedMs": 16261.1491,
+      "screen": "world",
+      "playbackMs": 16250,
+      "sha256": "c43875cbf5528b299f4f8788ad0589bd8639d2f60c4384cb6a644605c024981d"
+    },
+    {
+      "file": "00326.png",
+      "elapsedMs": 16311.5301,
+      "screen": "world",
+      "playbackMs": 16300,
+      "sha256": "f5cbd38963af77100d294064b02ec6679234a8b814769fe78b5e4deacddc35ea"
+    },
+    {
+      "file": "00327.png",
+      "elapsedMs": 16362.3075,
+      "screen": "world",
+      "playbackMs": 16350,
+      "sha256": "29c320df6c2baed219e745061ebf75acccc0e72fdcdfa925d8a4b16a011c9888"
+    },
+    {
+      "file": "00328.png",
+      "elapsedMs": 16401.708,
+      "screen": "world",
+      "playbackMs": 16400,
+      "sha256": "d4f1b1d93cf8932d6b498151028cf4e43e9237619b90ce347a23831e6241865c"
+    },
+    {
+      "file": "00329.png",
+      "elapsedMs": 16462.4676,
+      "screen": "world",
+      "playbackMs": 16450,
+      "sha256": "798c8aea8c9d22e58925cad7f3a87570a71ae97652c4669fc22348698478fa5f"
+    },
+    {
+      "file": "00330.png",
+      "elapsedMs": 16512.6344,
+      "screen": "world",
+      "playbackMs": 16500,
+      "sha256": "2803c5c02f3e22268c223ea0ecac897bb3329a552129eca5b96b99042a4fc866"
+    },
+    {
+      "file": "00331.png",
+      "elapsedMs": 16562.3595,
+      "screen": "world",
+      "playbackMs": 16550,
+      "sha256": "49ce1e1f1df9f0a9d32bcf0660be5573bb06e737af754e3e124331268971002f"
+    },
+    {
+      "file": "00332.png",
+      "elapsedMs": 16612.5633,
+      "screen": "world",
+      "playbackMs": 16600,
+      "sha256": "da338ae8e60e70ba21c928bf50d8e592aed10b348a5d7b338587645419537741"
+    },
+    {
+      "file": "00333.png",
+      "elapsedMs": 16662.7363,
+      "screen": "world",
+      "playbackMs": 16650,
+      "sha256": "0b38a4135a788edbb5f16103a5e3a056633d755a984ada1c962d4c4caa66ce3d"
+    },
+    {
+      "file": "00334.png",
+      "elapsedMs": 16716.8036,
+      "screen": "world",
+      "playbackMs": 16700,
+      "sha256": "c8325c82907fb74b25355995da773ada889736e65f64dcd03152e9017349d96e"
+    },
+    {
+      "file": "00335.png",
+      "elapsedMs": 16762.6405,
+      "screen": "world",
+      "playbackMs": 16750,
+      "sha256": "f3bec88bed15ad00aa2c262f286c48deecd7f0f4fba13a761b6c46df2f06209c"
+    },
+    {
+      "file": "00336.png",
+      "elapsedMs": 16812.5061,
+      "screen": "world",
+      "playbackMs": 16800,
+      "sha256": "27971304b7fdbfd27d2a666067cfa4bba6fdeae9ae41150210db0fd23377ec8d"
+    },
+    {
+      "file": "00337.png",
+      "elapsedMs": 16863.7764,
+      "screen": "world",
+      "playbackMs": 16850,
+      "sha256": "50cea6f4a593c040f0451576be658cd28e276ac053f7797ffd01cd1ccbaed581"
+    },
+    {
+      "file": "00338.png",
+      "elapsedMs": 16912.9397,
+      "screen": "world",
+      "playbackMs": 16900,
+      "sha256": "a764426f74aed24e7b6ef42113ba974132824fcc20356918d288e5cf6bc69531"
+    },
+    {
+      "file": "00339.png",
+      "elapsedMs": 16963.4245,
+      "screen": "world",
+      "playbackMs": 16950,
+      "sha256": "c36af1ff449f727639affe6608f751c40efb820221b051f8c197af62f0989a48"
+    },
+    {
+      "file": "00340.png",
+      "elapsedMs": 17013.1951,
+      "screen": "world",
+      "playbackMs": 17000,
+      "sha256": "6befcce989f9f8ca847ffcdbbc61e27116a1ae71f8ea46656530eff7b50f3354"
+    },
+    {
+      "file": "00341.png",
+      "elapsedMs": 17063.0061,
+      "screen": "world",
+      "playbackMs": 17050,
+      "sha256": "d103150a43d5e05e39b564961f8353916d274885cf08e5a3c7309e3b4e8044f4"
+    },
+    {
+      "file": "00342.png",
+      "elapsedMs": 17113.0169,
+      "screen": "world",
+      "playbackMs": 17100,
+      "sha256": "43b1ea88c0b483dd55dfd536d6e41459bfc2c457e2f22bcd5d068c4c8f2cc33e"
+    },
+    {
+      "file": "00343.png",
+      "elapsedMs": 17163.3728,
+      "screen": "world",
+      "playbackMs": 17150,
+      "sha256": "e66ce51517524652df141c30ec95b452945c416f4f1dea0a1951797f093584da"
+    },
+    {
+      "file": "00344.png",
+      "elapsedMs": 17213.9425,
+      "screen": "world",
+      "playbackMs": 17200,
+      "sha256": "d12fc039ac77e8799ec7a6c7a71bb6e7844fb504889fbabf0154af91623b59bf"
+    },
+    {
+      "file": "00345.png",
+      "elapsedMs": 17264.0961,
+      "screen": "world",
+      "playbackMs": 17250,
+      "sha256": "f7df721d192aa5a94a79d3c0926c4d0c92760c3905e035837329eaaa1ce76312"
+    },
+    {
+      "file": "00346.png",
+      "elapsedMs": 17314.1458,
+      "screen": "world",
+      "playbackMs": 17300,
+      "sha256": "b11412cb978ec801bce5e83a8b0c66b1485a7e6cfe9f30f3c99fa56597d79877"
+    },
+    {
+      "file": "00347.png",
+      "elapsedMs": 17364.7041,
+      "screen": "world",
+      "playbackMs": 17350,
+      "sha256": "be71fbb3332fb71c82af5355703ec0989b5ec9b2b74dad874cf710417567ebfe"
+    },
+    {
+      "file": "00348.png",
+      "elapsedMs": 17400.5164,
+      "screen": "world",
+      "playbackMs": 17400,
+      "sha256": "dc1b81deb9397468fc865fa4ea860864decbd10e482de8e7a1bbd0f374891b15"
+    },
+    {
+      "file": "00349.png",
+      "elapsedMs": 17450.515,
+      "screen": "world",
+      "playbackMs": 17450,
+      "sha256": "4cd06780d0c8e6416701ec5be4c6097ff1a9b0c081d9a84c384018fc89e259f1"
+    },
+    {
+      "file": "00350.png",
+      "elapsedMs": 17500.7602,
+      "screen": "world",
+      "playbackMs": 17500,
+      "sha256": "5e37671b5d860433bd06ee8e1abc0b2336602dfa865e9eea3a722aa7f5fe4130"
+    },
+    {
+      "file": "00351.png",
+      "elapsedMs": 17550.0553,
+      "screen": "world",
+      "playbackMs": 17550,
+      "sha256": "66ea8091b721adcc2b22ae8600fabed84635d26025a1e17fbd69200a6294921c"
+    },
+    {
+      "file": "00352.png",
+      "elapsedMs": 17614.5536,
+      "screen": "world",
+      "playbackMs": 17600,
+      "sha256": "9945aec6930437afc969a3858ca3c0b9e425ba835a3cd18489bfe1daadd7b0ac"
+    },
+    {
+      "file": "00353.png",
+      "elapsedMs": 17664.8688,
+      "screen": "world",
+      "playbackMs": 17650,
+      "sha256": "f534889415591b8aca908ccc15141efc22da7acfecd0172e5701a9a9e73f7cee"
+    },
+    {
+      "file": "00354.png",
+      "elapsedMs": 17703.3159,
+      "screen": "world",
+      "playbackMs": 17700,
+      "sha256": "52fe422073ffebb216bc5664fc5a16c38e7bea58d330af4addd7d7da9e77485f"
+    },
+    {
+      "file": "00355.png",
+      "elapsedMs": 17750.7082,
+      "screen": "world",
+      "playbackMs": 17750,
+      "sha256": "dc3f3dd32e28ef6b76183347e62aa09715a74180e24ef95943bc02f4abd99b1a"
+    },
+    {
+      "file": "00356.png",
+      "elapsedMs": 17801.8876,
+      "screen": "world",
+      "playbackMs": 17800,
+      "sha256": "771060849f750245b63ba8c4232fea85a6bf3cc91b1ad931208c95e523498a7a"
+    },
+    {
+      "file": "00357.png",
+      "elapsedMs": 17853.4399,
+      "screen": "world",
+      "playbackMs": 17850,
+      "sha256": "4e99da7d68f7d57620e8427b81cfebc1daed7d87bb1f3cbdfde75abb3d894716"
+    },
+    {
+      "file": "00358.png",
+      "elapsedMs": 17903.7214,
+      "screen": "world",
+      "playbackMs": 17900,
+      "sha256": "8078fc501cdea88d6c38d731cc776d1da1a57ae3b6b9ef9ff0288314a94c3338"
+    },
+    {
+      "file": "00359.png",
+      "elapsedMs": 17953.663,
+      "screen": "world",
+      "playbackMs": 17950,
+      "sha256": "085fa19e3416de83564d8872ac67ea31684ec2ea921988f35b5467f4abf59def"
+    },
+    {
+      "file": "00360.png",
+      "elapsedMs": 18004.0167,
+      "screen": "world",
+      "playbackMs": 18000,
+      "sha256": "693d6d8891d3e9ada3e39af1e5cb0ccd5bb04f7aff0342e39d33bb517ac4f7b5"
+    }
+  ],
+  "retainedOriginals": [
+    {
+      "file": "00000.png",
+      "elapsedMs": 2.958,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 0,
+      "sha256": "8990abf654392c0005009a2cebb34ab46b0f00f460628dbd3faf2492bc7f4385"
+    },
+    {
+      "file": "00072.png",
+      "elapsedMs": 3607.4328,
+      "screen": "world",
+      "playbackMs": 3600,
+      "sha256": "68a15c39eb9ebb8a764ba9c1a78b2609ab76ab0f5391fd18b5c78ec8b5982818"
+    },
+    {
+      "file": "00144.png",
+      "elapsedMs": 7213.394,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 7200,
+      "sha256": "80a754b41d93782f9a93ee752559c1112653311adfe47c93ec7c185c84b0ad3d"
+    },
+    {
+      "file": "00216.png",
+      "elapsedMs": 10809.0482,
+      "screen": "NpcEditorScreen",
+      "playbackMs": 10800,
+      "sha256": "dc2c71025c2ba13732905562cea0bf38d585360324b2917d8e6662e93ef730ab"
+    },
+    {
+      "file": "00288.png",
+      "elapsedMs": 14411.4427,
+      "screen": "world",
+      "playbackMs": 14400,
+      "sha256": "20973fd1bdfea155b03268fbce7e5b0b7d3b7bf2498b84df6b0ebae12c6173a8"
+    },
+    {
+      "file": "00360.png",
+      "elapsedMs": 18004.0167,
+      "screen": "world",
+      "playbackMs": 18000,
+      "sha256": "693d6d8891d3e9ada3e39af1e5cb0ccd5bb04f7aff0342e39d33bb517ac4f7b5"
+    }
+  ]
+}

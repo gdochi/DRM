@@ -1,0 +1,385 @@
+{
+  "asset": "assets/media/guides/short-gifs-20261105/nurse-joy-treatment.gif",
+  "sha256": "8f97927df9c27d48d50794956808208452c524812f9b72ac555b9b8d19e071cb",
+  "width": 1280,
+  "height": 720,
+  "frameCount": 56,
+  "durationMs": 22390,
+  "sourceFrameCount": 351,
+  "selectedFrames": [
+    {
+      "file": "00000.png",
+      "clientTick": 2,
+      "screen": "NurseJoyEditorScreen",
+      "sha256": "d3f8381bd78697761bceb76c48713238ba230cee6140748501f7614a39053e8f"
+    },
+    {
+      "file": "00014.png",
+      "clientTick": 30,
+      "screen": "world",
+      "sha256": "c2de98996576faa38d0a6b0067047c77080394767c220e4ba218d1d9deb19d19"
+    },
+    {
+      "file": "00018.png",
+      "clientTick": 38,
+      "screen": "world",
+      "sha256": "bea215881d12180e1bed7a263af10f4a08b61f9121052faa7cb546a7d1e6a724"
+    },
+    {
+      "file": "00020.png",
+      "clientTick": 42,
+      "screen": "world",
+      "sha256": "1d99e7f72f5bdee1a854585d7e75d39cc34ab00f5880b6f9010788e09336721d"
+    },
+    {
+      "file": "00024.png",
+      "clientTick": 50,
+      "screen": "world",
+      "sha256": "8f352a1b791fc3532dd9256ebe646113ad7ea37dd2cb36de87a3932315c471fe"
+    },
+    {
+      "file": "00028.png",
+      "clientTick": 58,
+      "screen": "world",
+      "sha256": "dcf99a884f2aa76fdd1b253fa3a33a0f14c55d4440a832acbb676ee4e2454b21"
+    },
+    {
+      "file": "00034.png",
+      "clientTick": 70,
+      "screen": "world",
+      "sha256": "ec3b4ac402c3206bb07ff0e6f7a473dcbba3c907441cf0fda6abc5439bab294d"
+    },
+    {
+      "file": "00038.png",
+      "clientTick": 78,
+      "screen": "world",
+      "sha256": "e6a166696b57f71c4ce55262c0a29e7f9ba7e092fdc9c06bc1e0fdb88a660080"
+    },
+    {
+      "file": "00044.png",
+      "clientTick": 90,
+      "screen": "NurseJoyEditorScreen",
+      "sha256": "c86fc2755b439a4ae30b7a57bf2dea25b76a9359620490839dfa4b995961d5d1"
+    },
+    {
+      "file": "00048.png",
+      "clientTick": 98,
+      "screen": "NurseJoyEditorScreen",
+      "sha256": "d5e7d833434b54ddff32945282be2410eed0e9e70bc15321bb9e475f30c1f1f3"
+    },
+    {
+      "file": "00054.png",
+      "clientTick": 110,
+      "screen": "NurseJoyEditorScreen",
+      "sha256": "2aa904050367e2438f4fdedfb647ba5863330fb995d8dc78c21a3c49579b8612"
+    },
+    {
+      "file": "00077.png",
+      "clientTick": 156,
+      "screen": "world",
+      "sha256": "80217da92e2501f7607dc19b924fd6ecf1070d5e9a77d268b7e5a1acc96968d0"
+    },
+    {
+      "file": "00078.png",
+      "clientTick": 158,
+      "screen": "world",
+      "sha256": "3a6b804e64768d15844cf7562409db00c84bad774a2803e6104b38ced1f17009"
+    },
+    {
+      "file": "00084.png",
+      "clientTick": 170,
+      "screen": "world",
+      "sha256": "8387b453dc5064247a9093d1c70d49cecca8460de3f295ae136d00b5fa2eca60"
+    },
+    {
+      "file": "00088.png",
+      "clientTick": 178,
+      "screen": "world",
+      "sha256": "f253938c251d95a5c087dfda39e60e148ab175a8c07ebc9aff6b3fd4d144dd76"
+    },
+    {
+      "file": "00094.png",
+      "clientTick": 190,
+      "screen": "world",
+      "sha256": "834627c11c812b4fdb26893feed5217524a05f0559f6bc083942c3bf17b38353"
+    },
+    {
+      "file": "00098.png",
+      "clientTick": 198,
+      "screen": "world",
+      "sha256": "8ed3cb7e3f68875ab11b4150686f937661322fecad8982cd99e34e63d3d974b8"
+    },
+    {
+      "file": "00104.png",
+      "clientTick": 210,
+      "screen": "world",
+      "sha256": "023f5916e1da5ad233b1224310d455d75c97de91b208969ec52cbf6fcb1f4086"
+    },
+    {
+      "file": "00108.png",
+      "clientTick": 218,
+      "screen": "world",
+      "sha256": "0b8f6e558c969d05f3a3f536b0d737a885889a3ec05f8c8c305cd294e8e16d63"
+    },
+    {
+      "file": "00114.png",
+      "clientTick": 230,
+      "screen": "world",
+      "sha256": "24630d9885fe08d89fc89852e4a82edec1349974104e0c030fee7d69115fc738"
+    },
+    {
+      "file": "00118.png",
+      "clientTick": 238,
+      "screen": "world",
+      "sha256": "d3c7e17b54482f3611941d82738569cf7a29b5cc6691c704c085c8a69b49d574"
+    },
+    {
+      "file": "00124.png",
+      "clientTick": 250,
+      "screen": "world",
+      "sha256": "eb690d83ea1ba4cde19ec1570098047db9321d65c7b4c9b63f0936446fffe985"
+    },
+    {
+      "file": "00128.png",
+      "clientTick": 258,
+      "screen": "world",
+      "sha256": "50322e143f632f9d8c22ead649254dad4fab2b73f89cac95f45cc0aba5301693"
+    },
+    {
+      "file": "00134.png",
+      "clientTick": 270,
+      "screen": "world",
+      "sha256": "4ce448ecd2f2aa52affb16ce94fafe2b0496956e2205444c5a30b7002edd1e46"
+    },
+    {
+      "file": "00138.png",
+      "clientTick": 278,
+      "screen": "DialogueRuntimeScreen",
+      "sha256": "ff941271fb8bb7d26d965d4fbbe1458f9e3e670e1104ecd4ceea366e38bb33a1"
+    },
+    {
+      "file": "00144.png",
+      "clientTick": 290,
+      "screen": "DialogueRuntimeScreen",
+      "sha256": "a55e1e3476da31b801ad847768c62cc0ab6bff76b7f6a5f7182c80c72d39e431"
+    },
+    {
+      "file": "00148.png",
+      "clientTick": 298,
+      "screen": "DialogueRuntimeScreen",
+      "sha256": "9158d017bb85a6b1286aafb485535051c3c36b12977de56085c8b7de0ee9eb38"
+    },
+    {
+      "file": "00188.png",
+      "clientTick": 378,
+      "screen": "world",
+      "sha256": "a66123a9fbe26433bc1d9eef626443c52019cc85d53bc73f3ec6047348c1cb40"
+    },
+    {
+      "file": "00194.png",
+      "clientTick": 390,
+      "screen": "world",
+      "sha256": "6b71dcbc0e1978f8cd6030f4b34f4046738573b8727fee82c5c843e22a0a0abd"
+    },
+    {
+      "file": "00198.png",
+      "clientTick": 398,
+      "screen": "world",
+      "sha256": "a99d2a7f5b946adff41aa4a19cd8bdb6d4d47449dec0cbc52a7c35c243011fac"
+    },
+    {
+      "file": "00204.png",
+      "clientTick": 410,
+      "screen": "world",
+      "sha256": "c06a45ee4b3366d6764482fd2ab253dccf7b4ae6f6e2e1d74369e723643800cd"
+    },
+    {
+      "file": "00208.png",
+      "clientTick": 418,
+      "screen": "world",
+      "sha256": "89068cdabb10edae13ca73a7c67928c3d211c5e958d3f68d8936d30689214756"
+    },
+    {
+      "file": "00214.png",
+      "clientTick": 430,
+      "screen": "world",
+      "sha256": "a5954c14a9a2d1781ffe80d827f1d08e421910234b4b32702365729dddcaa591"
+    },
+    {
+      "file": "00218.png",
+      "clientTick": 438,
+      "screen": "world",
+      "sha256": "917e036bfa5ce12156ccde33eecff21dc0a722623593091afd7c03051424bb83"
+    },
+    {
+      "file": "00224.png",
+      "clientTick": 450,
+      "screen": "world",
+      "sha256": "421dc650028723a351cb3c4e349e45536d10a19319f89eaecee7a7a123a8e71e"
+    },
+    {
+      "file": "00228.png",
+      "clientTick": 458,
+      "screen": "world",
+      "sha256": "e68779e1f3b9445422c017c79a6c3dc23d1b01d95ba1acea07d0a277c61c04a9"
+    },
+    {
+      "file": "00234.png",
+      "clientTick": 470,
+      "screen": "world",
+      "sha256": "8b2e934a7812f50f685eb4bd978d5b6755272f5cc39285f317d869eb626fbba5"
+    },
+    {
+      "file": "00238.png",
+      "clientTick": 478,
+      "screen": "world",
+      "sha256": "58f34851f37918c00e9e538476ab365fb23da3ce253c97b71254e0ff350f4fda"
+    },
+    {
+      "file": "00244.png",
+      "clientTick": 490,
+      "screen": "world",
+      "sha256": "872408a8cd879beadcc941414a33d70043611ddc61286e176b5c40b4ce646784"
+    },
+    {
+      "file": "00248.png",
+      "clientTick": 498,
+      "screen": "world",
+      "sha256": "a7d3d253fac3d0ba57e2fa8a75955f647f250b2ac9be9a97f64591e9f8330d78"
+    },
+    {
+      "file": "00254.png",
+      "clientTick": 510,
+      "screen": "world",
+      "sha256": "0401ecc6503689539850149bd26860c6f0cd8e8ad12cbf43fd1571e3634263b9"
+    },
+    {
+      "file": "00264.png",
+      "clientTick": 530,
+      "screen": "world",
+      "sha256": "18452f22631ceedadbfd0579d1b4df294a30582a649d934c4a756d8947fe62b4"
+    },
+    {
+      "file": "00268.png",
+      "clientTick": 538,
+      "screen": "world",
+      "sha256": "3083af75e0f768c548e9f232ad8bbe794477c930d55a8693702af3c2eb275bbf"
+    },
+    {
+      "file": "00274.png",
+      "clientTick": 550,
+      "screen": "world",
+      "sha256": "17ae6656e931525d736e4834543ca0b0d319b2555c00997fe017dbedec741a2d"
+    },
+    {
+      "file": "00278.png",
+      "clientTick": 558,
+      "screen": "world",
+      "sha256": "b9f744544c3d278a098e7b2a03c484fbe81b7eb6351370085ce761a55c2e1bcd"
+    },
+    {
+      "file": "00284.png",
+      "clientTick": 570,
+      "screen": "world",
+      "sha256": "432a4146c7e1adc609dac7950db1de0fae8afce7d43991ee5b8166faedd71ccc"
+    },
+    {
+      "file": "00294.png",
+      "clientTick": 590,
+      "screen": "world",
+      "sha256": "2047e1408160beb86bf720d8beaa6356d308e4c06cd402c6b6f2950ba2685064"
+    },
+    {
+      "file": "00298.png",
+      "clientTick": 598,
+      "screen": "world",
+      "sha256": "67239a098a6a01f2d373c600f56b0bfb0ae8c7803d5e59857f9d7379a2087fee"
+    },
+    {
+      "file": "00304.png",
+      "clientTick": 610,
+      "screen": "world",
+      "sha256": "7bf9c72f1b2fa9f31e3afe6ee94025adc9e2d71bf2e723c29d7b6002a11b3f4d"
+    },
+    {
+      "file": "00308.png",
+      "clientTick": 618,
+      "screen": "world",
+      "sha256": "786346670b2770fcd8c90376985341910aa5c72d8b5c7a6ac420c65136b0f827"
+    },
+    {
+      "file": "00314.png",
+      "clientTick": 630,
+      "screen": "world",
+      "sha256": "5da6b49cb404fb7ca2028faafc3dd5cdb9133e1c01613ba5d8050bedd8622b7b"
+    },
+    {
+      "file": "00318.png",
+      "clientTick": 638,
+      "screen": "world",
+      "sha256": "4e57f2f4f5eb3d0472fe8925deb84c6e21dc0faa42d0b22d1f752af75d86e003"
+    },
+    {
+      "file": "00324.png",
+      "clientTick": 650,
+      "screen": "world",
+      "sha256": "84a777e27c31c359a60fdc1a56bd496014c50d9ede61b0ec32069307aa3e2455"
+    },
+    {
+      "file": "00334.png",
+      "clientTick": 670,
+      "screen": "world",
+      "sha256": "828b54459480a62c0d9328bff153b0186141d468ea2a067e69732697ea22befd"
+    },
+    {
+      "file": "00338.png",
+      "clientTick": 678,
+      "screen": "world",
+      "sha256": "b8db361c64f03c052d5b15d5d48c19ca0e67e8b01e7c4665f32e2fb9dd9fe7f5"
+    },
+    {
+      "file": "00348.png",
+      "clientTick": 698,
+      "screen": "world",
+      "sha256": "ec5b5ca972fe7b61c9133ad50d11cd94f946d8080133777c7404cfe7930ff3b8"
+    }
+  ],
+  "retainedOriginals": [
+    {
+      "file": "00000.png",
+      "clientTick": 2,
+      "screen": "NurseJoyEditorScreen",
+      "sha256": "d3f8381bd78697761bceb76c48713238ba230cee6140748501f7614a39053e8f"
+    },
+    {
+      "file": "00077.png",
+      "clientTick": 156,
+      "screen": "world",
+      "sha256": "80217da92e2501f7607dc19b924fd6ecf1070d5e9a77d268b7e5a1acc96968d0"
+    },
+    {
+      "file": "00128.png",
+      "clientTick": 258,
+      "screen": "world",
+      "sha256": "50322e143f632f9d8c22ead649254dad4fab2b73f89cac95f45cc0aba5301693"
+    },
+    {
+      "file": "00218.png",
+      "clientTick": 438,
+      "screen": "world",
+      "sha256": "917e036bfa5ce12156ccde33eecff21dc0a722623593091afd7c03051424bb83"
+    },
+    {
+      "file": "00278.png",
+      "clientTick": 558,
+      "screen": "world",
+      "sha256": "b9f744544c3d278a098e7b2a03c484fbe81b7eb6351370085ce761a55c2e1bcd"
+    },
+    {
+      "file": "00348.png",
+      "clientTick": 698,
+      "screen": "world",
+      "sha256": "ec5b5ca972fe7b61c9133ad50d11cd94f946d8080133777c7404cfe7930ff3b8"
+    }
+  ]
+}

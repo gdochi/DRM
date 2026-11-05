@@ -7,13 +7,13 @@ product: dochi-spawn-control
 category: Vehicle spawning
 section: operations
 status: Guide
-version: 0.1.4
+version: 0.1.5
 audience: Creators / server operators
 ---
 
 ## Scope
 
-Spawn Control **0.1.4** creates saved modded vehicles and supported vehicle EntityTypes from placed spawners and natural-spawn profiles. DRM and vehicle mods are optional integrations.
+Spawn Control **0.1.5** creates saved modded vehicles and supported vehicle EntityTypes from placed spawners and natural-spawn profiles. DRM and vehicle mods are optional integrations.
 
 | Vehicle mod | Targets |
 | --- | --- |

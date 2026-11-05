@@ -18,6 +18,10 @@ translationMethod: assisted
 
 ## Deja un mensaje en el mundo
 
+![Colocar un marcador con Remnant Setter, guardar el texto y abrir el mensaje.](assets/media/guides/short-gifs-20261105/remnant-place-and-read.gif "Captura real: DRM 0.3.1 / NeoForge 1.21.1, interfaz en inglés. Colocar → escribir → Save → leer. Se verificaron el texto guardado en el servidor y la pantalla de lectura.")
+
+El GIF muestra la opción sencilla de **escribir directamente**: haz clic derecho en una cara de bloque con el setter, escribe el texto y pulsa **Save**. Los pasos siguientes explican cómo vincular un mensaje JSON guardado.
+
 Utilice **Remnant Msg Editor** para un mensaje adjunto a un lugar sin NPC. Ábrelo desde el selector del editor del núcleo y escribe su nombre y texto bajo **Message**. Estas pantallas inglesas son de **DRM 0.3.1 / Forge 1.20.1**.
 
 ![Remnant Msg Página de mensaje del editor, con navegación por la página a la izquierda y configuración de mensajes a la derecha.](assets/media/guides/drm-031-forge1201/remnant-editor.png "Escribe el texto bajo Mensaje primero. El mensaje guardado y su marcador de mundo colocado son pasos separados.")

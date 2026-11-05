@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Overview
 section: overview
 status: Draft
-version: 0.1.4
+version: 0.1.5
 audience: Server operators and modpack creators
 tags:
   - spawn control
@@ -52,3 +52,5 @@ This does not block commands, breeding or other spawners.
 Use an [NPC template](#dochi-spawn-control/spawn-control-npc-templates) to keep a DNPC's appearance and equipment. You can also [spawn saved vehicles](#dochi-spawn-control/spawn-control-vehicles).
 
 Ordinary natural mob rules need neither DRM nor an NPC mod. Add the respective mods for NPCs or vehicles.
+
+In 0.1.5, restrict locations with biome/structure IDs and tags, then compose mobs or NPCs into one squad. Follow [creating structure guards](#dochi-spawn-control/spawn-control-guards).

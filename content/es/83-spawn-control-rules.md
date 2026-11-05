@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Normas
 section: rules
 status: Proyecto
-version: 0.1.4
+version: 0.1.5
 audience: Operadores que equilibran los aparición naturales
 tags:
   - conditions
@@ -37,7 +37,7 @@ Todas las condiciones aplicables deben pasar por un puesto de candidato.
 | Campo | Significado |
 | --- | --- |
 | `Dimensions` | Vacío permite cada dimensión; IDs seleccionados forman una lista de permisos |
-| `Biomes` | Vacío permite cada bioma; IDs seleccionados forman una lista de permisos |
+| `Biomes` | Coincide con cualquier ID/etiqueta incluida; una inclusión vacía permite todo. Las exclusiones tienen prioridad |
 | `Minimum Y` / `Maximum Y` | Rango de altura del bloque candidato |
 | `Minimum Light` / `Maximum Light` | Rango de brillo local de 0 a 15 |
 | `Start Time` / `End Time` | Hora mundial de 0 a 23999; un rango invertido cruza la medianoche |
@@ -117,3 +117,9 @@ La política de ciclo de vida se aplica solo a las entidades creadas y marcadas 
 :::tip Orden de equilibrio
 Verifique primero las condiciones y la ubicación del mundo, luego ajuste el azar y el intervalo, y ajuste los límites al final. Esto mantiene los intentos fallidos más fáciles de diagnosticar.
 :::
+
+## Filtros de estructuras y escuadras
+
+En 0.1.5, Locations and guard squad ofrece ID y etiquetas de biomas y estructuras incluidos y excluidos. Se usan los límites registrados de estructuras ya generadas; no se reconocen edificios construidos a mano ni se generan estructuras nuevas. Se siguen aplicando dimensión, hora, luz, distancia y límites de población.
+
+Una escuadra activa usa cantidades explícitas por miembro en lugar de Minimum/Maximum Group, con un máximo total de 64 entidades. Una tirada prepara toda la composición; cada miembro necesita espacio, condiciones y límites válidos antes de añadir el grupo junto. Consulta la [guía de guardias](#dochi-spawn-control/spawn-control-guards) para el límite por estructura y la espera tras retirar al último miembro.

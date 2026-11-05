@@ -35,6 +35,12 @@ Search the action list for jobs such as lumbering, transport or riding. Categori
 
 ![The time row's action picker with categories on the left, specific activities on the right and search above.](assets/media/guides/dnpc-012-neo1211/dnpc-action-picker.png "Movement and waiting contains movement, waiting, riding and patrol. Choose a category, then the actual activity on the right.")
 
+## Assign a bed
+
+![Choose Assign bed in Houses, bind and save the bed, then watch the NPC walk over and sleep.](assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif "Recorded in game with DNPC 0.1.3 / NeoForge 1.21.1, English UI. A night schedule was prepared in the capture world; bed binding and actual sleep were verified.")
+
+Choose **Houses → Assign bed**, then **Shift+right-click** the intended bed in the world. Back in the editor, check **Bed assigned** and use **Save to NPC**. Add **Sleep in assigned bed** to the night period and turn on **Enable schedule**. Setting a home's location and assigning its bed are separate steps.
+
 ## Start from an example
 
 Use **Load schedule**, pick an example, then change its locations and targets for your world. Filter by general/military schedules and required addons.

@@ -29,13 +29,13 @@ Los conteos representan distintas definiciones de **carta**. Las impresiones reg
 | 0.1.2 | 2026-10-24 / [1.21.1 subir](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9309263); 26.3 archivos añadidos en octubre 25 | Cero definiciones añadidas, eliminadas o cambiadas. 352 Retenido. [Details](#mwent/version-0-1-2) |
 | 0.1.3 | 2026-10-25 / [CurseForge subir](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9322373) | Definiciones integradas y opcionales idénticas a 0.1.2. 352 Retenido. |
 | 0.1.4 | 2026-10-28 / [CurseForge subir](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9349914) | Definiciones integradas y opcionales idénticas a 0.1.3. 352 Retenido. |
-| 0.1.5 | 2026-10-30 / nueva guía de tarjetas | 60 tarjetas de sinergia + doce tarjetas de asedio añadidas. 335 incorporado + 89 opcional + 424. [Details](#mwent/version-0-1-5) |
-| 0.1.6 | 2026-11-01 / artefacto de producción local | 335 + 89 = 424 definiciones retenidas. Cinco tácticas de apertura, ocupación de sockets reales y transformación de Golem. [Guía](#mwent/version-0-1-6) |
+| 0.1.5 | 2026-10-30 / estado local de desarrollo | Registro de las mismas 72 adiciones, ahora reunidas en la versión 0.1.6. [Registro](#mwent/version-0-1-5) |
+| 0.1.6 | 2026-11-03 / registro de lanzamiento unificado | 60 cartas de facción + 12 de asedio, 424 definiciones en total. Cinco tácticas de apertura, ocupación real de casilla y Golem con poder 4. [Especificaciones y guía](#mwent/version-0-1-6) |
 
 0.1.1–0.1.4 compartir el poder, las provisiones, los marcos, las rarezas, la implementación, las órdenes, las palabras clave, las referencias de apariencia y las definiciones de tarjetas opcionales. **Las definiciones idénticas no implican un comportamiento de motor de combate, interfaz de usuario, adquisición o procesamiento del servidor sin cambios.**
 
 ## Lea las especificaciones
 
-Los [catálogo actual](#mwent/card-catalog) identidades estables, poder, provisiones y habilidades, separando las cartas presentes en 0.1.1 desde 0.1.5 adiciones. En 0.1.5, el poder existente, las provisiones, los marcos, la rareza y las definiciones heredadas de implementación, orden y palabras clave permanecen intactas. Los nuevos campos predeterminados para las habilidades creadas no se cuentan como cambios de saldo en las cartas existentes.
+Los [catálogo actual](#mwent/card-catalog) identidades estables, poder, provisiones y habilidades, separando las cartas presentes en 0.1.1 desde 0.1.6 adiciones. En 0.1.6, el poder existente, las provisiones, los marcos, la rareza y las definiciones heredadas de implementación, orden y palabras clave permanecen intactas. Los nuevos campos predeterminados para las habilidades creadas no se cuentan como cambios de saldo en las cartas existentes.
 
 La extracción del artefacto real 0.1.6 también confirma que estas definiciones se conservan. Las tácticas de apertura no se sacan de una baraja, por lo que no aumentan la cuenta 424. El estado de descarga pública permanece separado de la verificación de archivos locales.

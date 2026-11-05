@@ -37,6 +37,12 @@ Buscar en la lista de acciones para trabajos como la madera, el transporte o mon
 
 ![El selector de acción de la fila de tiempo con categorías a la izquierda, actividades específicas a la derecha y búsqueda arriba.](assets/media/guides/dnpc-012-neo1211/dnpc-action-picker.png "Movimiento y espera contiene movimiento, esperando, montando y patrullando. Elija una categoría, luego la actividad real a la derecha.")
 
+## Asignar una cama
+
+![Elegir Assign bed en Houses, vincular y guardar la cama y ver al PNJ caminar y dormir.](assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif "Grabado en el juego con DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. El horario nocturno se preparó en el mundo de captura; se verificaron la asignación y el sueño real.")
+
+Elige **Houses → Assign bed** y haz **Shift+clic derecho** en la cama. Al volver al editor, comprueba **Bed assigned** y pulsa **Save to NPC**. Añade **Sleep in assigned bed** al período nocturno y activa **Enable schedule**. La ubicación de la casa y su cama se asignan por separado.
+
 ## Partir de un ejemplo
 
 Usa **Load schedule**, elige un ejemplo y luego cambia sus ubicaciones y objetivos para tu mundo. Filtrar por programas generales / militares y complementos requeridos.

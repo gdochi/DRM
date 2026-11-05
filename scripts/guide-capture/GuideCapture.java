@@ -135,8 +135,16 @@ public final class GuideCapture {
     private String nextScreen="";
     private int screenWait;
     private int phaseWait;
+    private final Class<?> guideScenes=optionalGuideScenes();
 
-    public GuideCapture(){NeoForge.EVENT_BUS.addListener((ClientTickEvent.Post event)->tick());}
+    private static Class<?> optionalGuideScenes(){
+        try{return Class.forName("dochi.docs.capture.GuideScenes");}catch(ClassNotFoundException ignored){return null;}
+    }
+
+    public GuideCapture(){
+        NeoForge.EVENT_BUS.addListener((ClientTickEvent.Post event)->tick());
+        if(guideScenes!=null)try{call(guideScenes,"register",output);}catch(Exception error){throw new RuntimeException(error);}
+    }
 
     private void tick(){
         if(done)return;
@@ -347,6 +355,13 @@ public final class GuideCapture {
     }
 
     private void perform(Minecraft mc,String action)throws Exception{
+        if(action.startsWith("gif:")||action.startsWith("scene:")){
+            if(guideScenes==null)throw new IllegalStateException("Animated guide fixture is not installed for this runtime");
+            call(guideScenes,"perform",mc,action,npcId,output);current=mc.screen;
+            String expected=String.valueOf(call(guideScenes,"takeExpected"));
+            if(!expected.isEmpty()){expectedScreen=expected;screenWait=0;}
+            return;
+        }
         if(action.startsWith("label-row:")){
             String[] parts=action.substring(10).split(":");int wanted=Integer.parseInt(parts[1]);Object row=null;
             for(Object entry:(List<?>)call(get(current,parts[0]),"visibleRows"))if(((Number)get(entry,"index")).intValue()==wanted)row=entry;
@@ -1051,8 +1066,7 @@ public final class GuideCapture {
             if(!current.mouseClicked(x,y,0))throw new IllegalStateException("Labeled control click rejected: "+label);
             current.mouseReleased(x,y,0);expectNextScreen();return;
         }
-        Button button=matches.get(matches.size()-1);double scale=1;
-        try{scale=((Number)call(current,"renderScale")).doubleValue();}catch(NoSuchMethodException ignored){}
+        Button button=matches.get(matches.size()-1);double scale=nativeUiScale();
         if(current.getClass().getSimpleName().equals("GuiMakerScreen"))try{
             for(int attempt=0;attempt<32;attempt++){
                 Object clip=((Map<?,?>)get(current,"widgetClips")).get(button);if(clip==null)break;
@@ -1106,6 +1120,7 @@ public final class GuideCapture {
     }
 
     private void recordFailure(String name,Throwable error)throws Exception{
+        if(guideScenes!=null)call(guideScenes,"abort");
         error.printStackTrace();JsonObject record=new JsonObject();record.addProperty("id",name);
         var mc=Minecraft.getInstance();record.addProperty("actualScreenAtFailure",mc.screen==null?"world":mc.screen.getClass().getName());
         try(var frame=Screenshot.takeScreenshot(mc.getMainRenderTarget())){frame.writeToFile(output.resolve(name+"-failure.png"));}
@@ -1145,17 +1160,17 @@ public final class GuideCapture {
         for(Constructor<?> constructor:Class.forName(name).getDeclaredConstructors())if(matches(constructor.getParameterTypes(),args)){constructor.setAccessible(true);return constructor.newInstance(args);}
         throw new NoSuchMethodException(name+" constructor "+args.length);
     }
-    private static Object get(Object target,String name)throws Exception{
+    static Object get(Object target,String name)throws Exception{
         for(Class<?> cls=target instanceof Class<?> type?type:target.getClass();cls!=null;cls=cls.getSuperclass())try{
             Field field=cls.getDeclaredField(name);field.setAccessible(true);return field.get(target instanceof Class<?>?null:target);
         }catch(NoSuchFieldException ignored){}
         throw new NoSuchFieldException(name);
     }
-    private static void set(Object target,String name,Object value)throws Exception{
+    static void set(Object target,String name,Object value)throws Exception{
         for(Class<?> cls=target.getClass();cls!=null;cls=cls.getSuperclass())try{Field field=cls.getDeclaredField(name);field.setAccessible(true);field.set(target,value);return;}catch(NoSuchFieldException ignored){}
         throw new NoSuchFieldException(name);
     }
-    private static Object call(Object target,String name,Object...args)throws Exception{
+    static Object call(Object target,String name,Object...args)throws Exception{
         for(Class<?> cls=target instanceof Class<?> type?type:target.getClass();cls!=null;cls=cls.getSuperclass())
             for(Method method:cls.getDeclaredMethods())if(method.getName().equals(name)&&matches(method.getParameterTypes(),args)){
                 method.setAccessible(true);try{return method.invoke(target instanceof Class<?>?null:target,args);}catch(InvocationTargetException error){throw new RuntimeException(name,error.getCause());}

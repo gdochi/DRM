@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: DNPC Modèle de recherche
 section: editor
 status: Guide
-version: 0.1.4
+version: 0.1.5
 audience: Créateurs / opérateurs de serveur
 translationSource: en
 translationMethod: assisted
@@ -49,9 +49,9 @@ Utilisez **Save As**, entrez `guide_guard_spawner.json`, puis appuyez sur **Conf
 
 ![Les PNJ équipés de casques originaux et engendrés à côté du géniteur.](assets/media/guides/spawn-control-014-neo1211/spawn-template-runtime.png "Spawn Control 0.1.4  +  DNPC 0.1.3 / NeoForge 1.21.1. Les nouveaux PNJ conservent le casque de fer sauvé. La limite par défaut est 6, de sorte que les activations ultérieures peuvent ajouter plus de PNJ.")
 
-## Frayage naturel — 1.20.1 / 1.21.1
+## Apparition naturelle — toutes les cibles de 0.1.5
 
-Ouvrez l'éditeur natural-spawn avec la clé **K** par défaut et trouvez le modèle PNJ enregistré. Utilisez **Add Rule**, définissez son biome, les heures, les distances et les quantités, activez-le et économisez. Le PNJ par défaut et un modèle enregistré sont des cibles distinctes. Pour 26.3, utilisez la méthode du pion placé ci-dessus.
+En 0.1.5, les modèles DNPC enregistrés fonctionnent dans les règles naturelles sur Forge 1.20.1, Fabric/NeoForge 1.21.1 et 26.3. Ouvrez l'éditeur avec **K**, trouvez le modèle, utilisez **Add Rule**, réglez biome, heure, distance et effectifs, activez puis enregistrez. Le PNJ par défaut et le modèle enregistré sont distincts. Si le modèle ou l'API fournisseur de DRM manque, cette apparition est refusée sans créer de PNJ vide.
 
 ## Entrées manquantes ou mauvaise apparence
 

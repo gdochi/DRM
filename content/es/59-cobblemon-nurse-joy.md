@@ -36,7 +36,11 @@ El tratamiento y las acciones cercanas tienen un comportamiento y orden fijos. C
 
 ## Enlace de la máquina de curación
 
-1. En el editor del NPC aplicado, elija **Link Machine**.
+![Aplicar el rol a un PNJ con la skin de Nurse Joy, enlazar la máquina y completar la curación y el regreso.](assets/media/guides/short-gifs-20261105/nurse-joy-treatment.gif "Captura real: Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. Bulbasaur recuperó sus 19 PS desde 1 PS y el PNJ regresó al punto inicial.")
+
+La grabación utiliza la [skin de Nurse Joy de caidencestudio](https://www.planetminecraft.com/skin/nurse-joy-5942860/) con el modelo de brazos delgados.
+
+1. En el editor del NPC aplicado, elija **Link Healing Machine**.
 2. Dentro de **60 segundos**, **Shift+right-click** una Cobblemon máquina de curación en la misma dimensión.
 3. Manténgalo dentro de **Max Distance**, de 1 a 16 bloques; este ejemplo usa 16.
 4. Deja espacio y terreno seguros al lado de la máquina para que el NPC se pare y regrese.

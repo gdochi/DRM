@@ -1,0 +1,35 @@
+[
+  {
+    "id": "dnpc-bed-assignment",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "scene:bed-setup",
+      "wait:40",
+      "scene:look-bed",
+      "scene:bed-editor",
+      "wait:40",
+      "Movement AI",
+      "Houses",
+      "gif:start:dnpc-bed-assignment",
+      "wait:20",
+      "next-screen:@closed",
+      "Assign bed",
+      "wait:30",
+      "scene:look-bed",
+      "scene:bed-select",
+      "wait:40",
+      "Save to NPC",
+      "wait:30",
+      "scene:bed-sleep",
+      "wait:200",
+      "scene:verify-bed",
+      "wait:20",
+      "gif:stop"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

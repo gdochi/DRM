@@ -1,0 +1,481 @@
+{
+  "asset": "assets/media/guides/short-gifs-20261105/remnant-place-and-read.gif",
+  "sha256": "824b419ce2064c582a2557992abf2d203ec6c008764decde0403f54928c534f7",
+  "width": 1280,
+  "height": 720,
+  "frameCount": 72,
+  "durationMs": 14260,
+  "sourceFrameCount": 190,
+  "selectedFrames": [
+    {
+      "file": "00000.png",
+      "clientTick": 2,
+      "screen": "world",
+      "sha256": "a75586bc870afa54c7c552292ccfed574edf034255e60967e8cee5912419268d"
+    },
+    {
+      "file": "00002.png",
+      "clientTick": 6,
+      "screen": "world",
+      "sha256": "bf3728791fd19d5daee7560ebc1f244e290b615da42237add99d0db3c79e7bcc"
+    },
+    {
+      "file": "00004.png",
+      "clientTick": 10,
+      "screen": "world",
+      "sha256": "ffc26a39590ed5320346385d807c94d40be0567e0746900f9b5491b4a52d9a37"
+    },
+    {
+      "file": "00006.png",
+      "clientTick": 14,
+      "screen": "world",
+      "sha256": "43b3a1ce472bf8b032b09adab0f58c3cc96595f5d3667f3a651089947413ff38"
+    },
+    {
+      "file": "00008.png",
+      "clientTick": 18,
+      "screen": "world",
+      "sha256": "1a70e290679d1d6d3542c8b2d1f3b326eeb2fc559d94cf78d16811232fd70838"
+    },
+    {
+      "file": "00010.png",
+      "clientTick": 22,
+      "screen": "world",
+      "sha256": "fd836c3ac0cfd16254b187b9af3da999b1cd2c8091cfb2785a6dc5d30ccd089f"
+    },
+    {
+      "file": "00012.png",
+      "clientTick": 26,
+      "screen": "world",
+      "sha256": "7a042a7f3ee72a54399ff59377da76cc3719e436c9c2f125ad7d339e44642272"
+    },
+    {
+      "file": "00014.png",
+      "clientTick": 30,
+      "screen": "world",
+      "sha256": "59f289ae5c17f1e265dff097ba1185b30e955b7916113435f05b0d5afd0ea0c1"
+    },
+    {
+      "file": "00016.png",
+      "clientTick": 34,
+      "screen": "world",
+      "sha256": "9779515c4754de0d3c0437f65ace16cc2befd9123e98bfde41a0f460686be7c9"
+    },
+    {
+      "file": "00018.png",
+      "clientTick": 38,
+      "screen": "world",
+      "sha256": "5e577a4fb5e850c83d004a19a5eaf57d5055973841d7699066be29067f4d801b"
+    },
+    {
+      "file": "00020.png",
+      "clientTick": 42,
+      "screen": "world",
+      "sha256": "c064dc2a3915a1085c1a8f4f128034d461896ef42d0d9e48cc2f2fc64fc139e4"
+    },
+    {
+      "file": "00022.png",
+      "clientTick": 46,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "b713281db3976c3d3dad91b8f23e9f90c8ea48a69e0570a4c122b62ac7dcadac"
+    },
+    {
+      "file": "00024.png",
+      "clientTick": 50,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "b620570e67bdfdf5e4e0551ca3c45c584b95964aa182c51ae237fd0a18fa71f5"
+    },
+    {
+      "file": "00026.png",
+      "clientTick": 54,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "f991095bad83b3e9f7a7cb815825ba3c95234adc92fd0a92a4e8d1bc6a192d27"
+    },
+    {
+      "file": "00028.png",
+      "clientTick": 58,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "3160c415cad15e75692e93a23e43a96bc441650ac4cd18643bd3c57a8fed9c3a"
+    },
+    {
+      "file": "00030.png",
+      "clientTick": 62,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "bd4136f459fb83c1ecb631fdbf18e440d99fb79076193963d671d30b61beac68"
+    },
+    {
+      "file": "00032.png",
+      "clientTick": 66,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "1f6ac782743a228024c256f88371f2d7c1fc8daa8aa14ee79da0bb69bc8c34ae"
+    },
+    {
+      "file": "00034.png",
+      "clientTick": 70,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "95e9c67db4d0cbe83140a3eaa69e442bafaf9834c525df6220d90a1134b3cf3a"
+    },
+    {
+      "file": "00036.png",
+      "clientTick": 74,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "adcc185a6f2cb34b2f661e49d07233ce65d19c340658409684958aa16ec65859"
+    },
+    {
+      "file": "00038.png",
+      "clientTick": 78,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "879e1f3df81f1dc8f20c1a79ed212c668e39033154403fcb485049dd718cc5bd"
+    },
+    {
+      "file": "00040.png",
+      "clientTick": 82,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "4e256b7ea92afc42f5ecbee5525113c046ae22f8217aeaf50823484ad90dff65"
+    },
+    {
+      "file": "00042.png",
+      "clientTick": 86,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "dc2613ff15fb682b05c8c12651582c6b47a6e1826f708f95e5bbc83fd6da7c9d"
+    },
+    {
+      "file": "00044.png",
+      "clientTick": 90,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "9a9e7b5ec4407133ca39022d828a087824c9444ba518c482f40d68c391394bc9"
+    },
+    {
+      "file": "00046.png",
+      "clientTick": 94,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "3ce2294ef7f9d530cb68cd9f81a768b6fe48c35a7768283c49d9843f9c06b3cc"
+    },
+    {
+      "file": "00048.png",
+      "clientTick": 98,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "525f18312a18a5989c930289a5947f074ba44eef62f89bb67c12565cc7ed0b2d"
+    },
+    {
+      "file": "00050.png",
+      "clientTick": 102,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "6b94947139567053a8eb85f8cec73d8b1f456301798652e0d6c9b5b9cb9056f0"
+    },
+    {
+      "file": "00052.png",
+      "clientTick": 106,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "cefe0b082d411069167df7be4e58711a946788a267f5c9da72b5218d706e1c25"
+    },
+    {
+      "file": "00054.png",
+      "clientTick": 110,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "a0aa8bee5e8b16714511aa893b3d15b86603bf7a0433d0d5fa95b1143890f1ab"
+    },
+    {
+      "file": "00056.png",
+      "clientTick": 114,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "1b8a6a8707f1b73666bbd49bf7bea366c0b56475721970e93ab36be3bfbd263d"
+    },
+    {
+      "file": "00058.png",
+      "clientTick": 118,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "32be27a3944ca1a370fec69ab66ef1a977a85849cd707e2dacb21dcbf020bf85"
+    },
+    {
+      "file": "00060.png",
+      "clientTick": 122,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "6fa6c44f6e8d1fc5feb2d9c0926bc734546666f42c291c997b029b4a1329aaec"
+    },
+    {
+      "file": "00062.png",
+      "clientTick": 126,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "5c2c4eb0809ac0afb4a05af35b85b1c9edbe52ce37b3127340aa8b9b609f76ca"
+    },
+    {
+      "file": "00064.png",
+      "clientTick": 130,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "22c1b3a61d5e05b0e03130b1187642fcbff6542ecc25b042b341023a24d55e1a"
+    },
+    {
+      "file": "00066.png",
+      "clientTick": 134,
+      "screen": "world",
+      "sha256": "37dd194141938360470a65b6d4b9d14e51e4403382719f6355ac64f8eb46c1ed"
+    },
+    {
+      "file": "00068.png",
+      "clientTick": 138,
+      "screen": "world",
+      "sha256": "82ba01bcb327107244191464ac2c2736817e8007f48c3c352b0cd4acbb2ff076"
+    },
+    {
+      "file": "00072.png",
+      "clientTick": 146,
+      "screen": "world",
+      "sha256": "b61be00b244ae2c729981733488c22e68e411545ac9fefacc7df02e85c8ac5a6"
+    },
+    {
+      "file": "00076.png",
+      "clientTick": 154,
+      "screen": "world",
+      "sha256": "6631a03f152972607a7793b7bbd42d465d7b33e0d69232235bb7d541278f2839"
+    },
+    {
+      "file": "00080.png",
+      "clientTick": 162,
+      "screen": "world",
+      "sha256": "3e446e0dc547291654cee182d6d023a2358442e98380375e4dd9af39d5773481"
+    },
+    {
+      "file": "00084.png",
+      "clientTick": 170,
+      "screen": "world",
+      "sha256": "225ae3f85a1900e83b6f348a150fcf0a4f903093ed7a0d71303ca8dfcdaf8cf5"
+    },
+    {
+      "file": "00088.png",
+      "clientTick": 178,
+      "screen": "world",
+      "sha256": "10efd1a58d02a4f8dc5ca1bf2d22a40a8b825af07c0ee661f320669de19e7a1a"
+    },
+    {
+      "file": "00092.png",
+      "clientTick": 186,
+      "screen": "world",
+      "sha256": "acb497664b9f0ad0bcd9a936ab264c8970ff97e8d9aec0cfa5d4f6e722a7504d"
+    },
+    {
+      "file": "00096.png",
+      "clientTick": 194,
+      "screen": "world",
+      "sha256": "ad96cf8f4d60f29b1f70af54d8b216e7c84f4a302e65dd599bb25becbd56ddc0"
+    },
+    {
+      "file": "00100.png",
+      "clientTick": 202,
+      "screen": "world",
+      "sha256": "37bb8fff45d4e1dd1b775100fe3b91788f30db517ff6827a951deb9b3a0d6483"
+    },
+    {
+      "file": "00104.png",
+      "clientTick": 210,
+      "screen": "world",
+      "sha256": "00e1676abcc3db2f15395df67085e0d961b0c0bdff7d979fcf25a652c4d5316e"
+    },
+    {
+      "file": "00108.png",
+      "clientTick": 218,
+      "screen": "world",
+      "sha256": "2198a9e2e2968e9001a1f69340c5d82f0e0c30fd4787999eb301c511094e7412"
+    },
+    {
+      "file": "00112.png",
+      "clientTick": 226,
+      "screen": "world",
+      "sha256": "c0db23052c6e11cc48c2038216ffba28ede27026e2146e46c12e3f6f709c9d76"
+    },
+    {
+      "file": "00116.png",
+      "clientTick": 234,
+      "screen": "world",
+      "sha256": "14bc5aabfbb30328cc8a58f63a060fbd8e9cc19fe122d32631fcdee4620b0796"
+    },
+    {
+      "file": "00122.png",
+      "clientTick": 246,
+      "screen": "world",
+      "sha256": "0e52a98ddf00b521da0969a818ff9949f41f28ccd715bacbfb7803ee74805389"
+    },
+    {
+      "file": "00128.png",
+      "clientTick": 258,
+      "screen": "world",
+      "sha256": "0862cb94e7bee7756a6bbf36d5b1d6d830eb1486c4babf898aa1b5261b5b295e"
+    },
+    {
+      "file": "00131.png",
+      "clientTick": 264,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "1b39bca2e925e3f18e752707c972f5d49ee473cfca5d749a377d3ac4d128032e"
+    },
+    {
+      "file": "00132.png",
+      "clientTick": 266,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "4d23f33db6a6284b9dba6f0bb3645be2da389e7bdaa617567ea8076ce8c2c54d"
+    },
+    {
+      "file": "00134.png",
+      "clientTick": 270,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "2872a3a628a05d7fa0de1495f4b92651bbb916c446f80b95038c879737c3a106"
+    },
+    {
+      "file": "00136.png",
+      "clientTick": 274,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "e120c379c67f12e06953a28ed08e8b286835372c3f18a165bac4636010cf18da"
+    },
+    {
+      "file": "00138.png",
+      "clientTick": 278,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "170defcb94a64f62ea9ab6327d7adfc8c151a0c29d92833477ddc637a9f6b81e"
+    },
+    {
+      "file": "00140.png",
+      "clientTick": 282,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "032d4113c7b64c8247e39b32f5df095b68bf66490a5a8cf04fa2a97df90f5787"
+    },
+    {
+      "file": "00142.png",
+      "clientTick": 286,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "611003dfdfa961e2ba82664a5694ce1ee41deb8bdcd1979afcca0368a00279c7"
+    },
+    {
+      "file": "00144.png",
+      "clientTick": 290,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "26beb2410131088feabb041e91b6ea308f4c338826ff17c6db510fa373323867"
+    },
+    {
+      "file": "00146.png",
+      "clientTick": 294,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "f95b46b95a635f3fbbfca41e60f113b099dcc5288049343cc40c4e8d2a822687"
+    },
+    {
+      "file": "00150.png",
+      "clientTick": 302,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "b54e35606964d4c036c81f881b88a1b223522e2513c742f645bd2715e2043b12"
+    },
+    {
+      "file": "00152.png",
+      "clientTick": 306,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "f2182f82dec71385e3a075cc9e64acb3b7e0608ab164f5398606dd58e403d965"
+    },
+    {
+      "file": "00154.png",
+      "clientTick": 310,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "49a0296fbe0cfc28c32e048aa92ad6ef42b006e2c00501131690d8c91e1279b3"
+    },
+    {
+      "file": "00158.png",
+      "clientTick": 318,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "25d80ebc68100d282e6c2b7aef13c853c1fb7622029a0df9b9a0a0888d3e77a3"
+    },
+    {
+      "file": "00160.png",
+      "clientTick": 322,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "ef1ca01c5837c79ec281e90c8ffe11be8b17afdf6eef3367ce17d489ebd56c43"
+    },
+    {
+      "file": "00162.png",
+      "clientTick": 326,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "0b95daa99e9d1d0d1668953b038b0974e8a8e8f84dbda662dc17d8dfa2d3833b"
+    },
+    {
+      "file": "00164.png",
+      "clientTick": 330,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "925f3ddd4da56a02920b7005caaf0a3e08cc78aa498f40c462ada641b3e8130d"
+    },
+    {
+      "file": "00166.png",
+      "clientTick": 334,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "0f789c469778c18ddd845a3a14f511aa93731ed95ccddaaf4a5ad785b752a23c"
+    },
+    {
+      "file": "00168.png",
+      "clientTick": 338,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "81c9daf6d2535d38091cbba2d16117c9415b42a587b78cff73817e11fd329ecf"
+    },
+    {
+      "file": "00170.png",
+      "clientTick": 342,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "8378ecd081ef59d8a47fd1f742b4baac5d4f09c5b8b804791aea31ec15417b67"
+    },
+    {
+      "file": "00174.png",
+      "clientTick": 350,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "037b9c5c51af6af5300960f7a4eca34437dc216cd3cb6df09f664a4df72a3c90"
+    },
+    {
+      "file": "00176.png",
+      "clientTick": 354,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "d9e2f4756cec022aeaaf1371681f9410a95203a2a7858b031412f50f35fbba62"
+    },
+    {
+      "file": "00182.png",
+      "clientTick": 366,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "6fc8988f8b442dd2ea8b1e210c33bd3e3d761bb6b3223f1d3c65aee83d6f930f"
+    },
+    {
+      "file": "00184.png",
+      "clientTick": 370,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "96816b8ea2479ca7deb3df27c7aaff02543d9cbd19e663223f208310cf40ac3e"
+    }
+  ],
+  "retainedOriginals": [
+    {
+      "file": "00000.png",
+      "clientTick": 2,
+      "screen": "world",
+      "sha256": "a75586bc870afa54c7c552292ccfed574edf034255e60967e8cee5912419268d"
+    },
+    {
+      "file": "00028.png",
+      "clientTick": 58,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "3160c415cad15e75692e93a23e43a96bc441650ac4cd18643bd3c57a8fed9c3a"
+    },
+    {
+      "file": "00056.png",
+      "clientTick": 114,
+      "screen": "RemnantMsgSetterScreen",
+      "sha256": "1b8a6a8707f1b73666bbd49bf7bea366c0b56475721970e93ab36be3bfbd263d"
+    },
+    {
+      "file": "00104.png",
+      "clientTick": 210,
+      "screen": "world",
+      "sha256": "00e1676abcc3db2f15395df67085e0d961b0c0bdff7d979fcf25a652c4d5316e"
+    },
+    {
+      "file": "00146.png",
+      "clientTick": 294,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "f95b46b95a635f3fbbfca41e60f113b099dcc5288049343cc40c4e8d2a822687"
+    },
+    {
+      "file": "00184.png",
+      "clientTick": 370,
+      "screen": "RemnantMsgViewScreen",
+      "sha256": "96816b8ea2479ca7deb3df27c7aaff02543d9cbd19e663223f208310cf40ac3e"
+    }
+  ]
+}

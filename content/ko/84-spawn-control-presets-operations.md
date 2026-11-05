@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: 프리셋과 운영
 section: operations
 status: 사용 안내
-version: 0.1.4
+version: 0.1.5
 audience: 서버 운영자와 콘텐츠 배포자
 tags:
   - presets
@@ -147,6 +147,12 @@ config/dochi_rpg_maker/spawn_control/
 
 JSON만 백업하면 이미 월드에 존재하는 엔티티와 다른 모드의 데이터까지 복구되지는 않습니다.
 
-## 0.1.4 NPC·탈것 연동
+## 0.1.5 NPC·탈것 연동
 
-DRM·CustomNPCs·DNPC·Warfare는 선택 연동입니다. DNPC를 생성할 때는 DRM도 설치합니다. 꾸며 둔 NPC를 그대로 쓰려면 기본 NPC 대신 복제 템플릿을 고릅니다. [탈것 저장·스폰](#dochi-spawn-control/spawn-control-vehicles)에서 MTS·Superb Warfare·Aircraft·Automobility 사용법을 확인하세요.
+DRM·DNPC·Warfare는 선택 연동이며, CustomNPCs는 1.20.1·1.21.1에서만 선택 연동입니다. DNPC의 기본 NPC 생성에는 DRM actor API가, 저장한 NPC 복제에는 DRM template provider API와 해당 DNPC 템플릿이 필요합니다. [탈것 저장·스폰](#dochi-spawn-control/spawn-control-vehicles)에서 차량별 절차를 확인하세요.
+
+## 0.1.5 프리셋과 월드 백업
+
+자연 스폰 문서 스키마는 4입니다. 기존 스키마 2·3은 읽을 수 있지만, 새 장소 필터·편성·장비가 있는 프리셋을 구버전 Spawn Control에서 다시 저장하지 마세요. 구성원 대상과 아이템을 제공하는 모드, DNPC 원본 템플릿도 함께 준비합니다. 1.20.1 아이템 NBT와 이후 버전의 컴포넌트 데이터는 자동 상호 변환하지 않습니다.
+
+구조물별 부대 점유와 재생성 대기는 월드 저장 데이터에 있으므로 JSON과 월드를 함께 백업합니다. [구조물별 제한](#dochi-spawn-control/spawn-control-guards)을 참고하세요.

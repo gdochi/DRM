@@ -35,6 +35,12 @@ audience: NPC 제작자
 
 ![시간대 행의 +를 눌러 연 액션 선택기. 왼쪽 작업 분류, 오른쪽 구체적인 행동과 위쪽 검색창이 보입니다.](assets/media/guides/dnpc-012-neo1211/dnpc-action-picker.png "Movement and waiting에는 이동·대기·탑승·순찰이 있습니다. 분류를 고른 뒤 오른쪽의 실제 행동을 선택합니다.")
 
+## 침대 지정하기
+
+![Houses에서 Assign bed를 누르고 침대를 지정·저장한 뒤 NPC가 침대로 걸어가 잠드는 과정.](assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif "DNPC 0.1.3 / NeoForge 1.21.1, 영문 UI의 실제 촬영입니다. 밤 시간표는 촬영용 월드에 미리 구성했으며, 침대 연결과 실제 수면을 확인했습니다.")
+
+**Houses → Assign bed**를 누른 뒤 월드에서 사용할 침대를 **Shift+우클릭**합니다. 편집기로 돌아오면 **Bed assigned**를 확인하고 **Save to NPC**로 저장합니다. 시간표의 밤 시간대에는 **Sleep in assigned bed**를 넣고 **Enable schedule**을 켭니다. 집 위치만 정하는 것과 침대를 연결하는 것은 별도 단계입니다.
+
 ## 예시 시간표 불러오기
 
 **스케줄 불러오기**에서 원하는 예시를 고른 뒤 장소·대상만 내 월드에 맞게 바꿉니다. ‘일반/군용’과 ‘필요 애드온’ 필터로 찾습니다.

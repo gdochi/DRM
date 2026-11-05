@@ -37,6 +37,12 @@ Procure na lista de ações por trabalhos como madeireiras, transporte ou equita
 
 ![O selecionador de ação da fila do tempo com categorias à esquerda, atividades específicas à direita e pesquisa acima.](assets/media/guides/dnpc-012-neo1211/dnpc-action-picker.png "Movimento e espera contém movimento, espera, equitação e patrulha. Escolha uma categoria, então a atividade real à direita.")
 
+## Atribuir uma cama
+
+![Escolher Assign bed em Houses, associar e guardar a cama e ver o NPC caminhar e dormir.](assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif "Gravado no jogo com DNPC 0.1.3 / NeoForge 1.21.1, interface em inglês. Um horário noturno foi preparado no mundo de captura; a associação da cama e o sono real foram verificados.")
+
+Escolha **Houses → Assign bed** e faça **Shift+clique direito** na cama. Ao regressar ao editor, confirme **Bed assigned** e use **Save to NPC**. Adicione **Sleep in assigned bed** ao período noturno e ative **Enable schedule**. A localização da casa e a sua cama são definidas separadamente.
+
 ## Comece com um exemplo
 
 Use **Load schedule**, escolha um exemplo, então mude suas localizações e alvos para o seu mundo. Filtre por horários gerais/militares e complementos necessários.

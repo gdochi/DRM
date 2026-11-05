@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Editor
 section: editor
 status: Rascunho
-version: 0.1.4
+version: 0.1.5
 audience: Criadores de Spawners
 tags:
   - spawner
@@ -61,6 +61,8 @@ Adicione entradas, selecione uma linha e, em seguida, edite seu alvo e chance. R
 | `CNPC Clone` | Um clone de servidor salvo CustomNPCs, identificado por guia e nome |
 | `DW Clone` | Um modelo de clone de Dochi salvo |
 | `NPC clone template` | Um modelo de clone v3 exato salvo em DNPC |
+
+CNPC Clone está disponível apenas em 1.20.1/1.21.1. No Minecraft 26.3, escolha um DNPC salvo em NPC clone template. As quantidades por função e o equipamento dos esquadrões da 0.1.5 pertencem às regras naturais, separadamente desta lista de probabilidades.
 
 Fontes de clones exigem seu correspondente mod e clone salvo. Os alvos comuns da entidade não fazem de nenhum clone mod uma dependência necessária.
 

@@ -34,7 +34,11 @@ The treatment and close actions have fixed behavior and order. Renaming a choice
 
 ## Link the healing machine
 
-1. In the applied NPC’s editor, choose **Link Machine**.
+![A Nurse Joy skin, role application, machine linking and treatment followed by the NPC returning home.](assets/media/guides/short-gifs-20261105/nurse-joy-treatment.gif "Captured in game: Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, English UI. Bulbasaur recovered from 1 to its full 19 HP and the NPC returned to her starting position.")
+
+The recording uses [caidencestudio's Nurse Joy skin](https://www.planetminecraft.com/skin/nurse-joy-5942860/) with the slim model.
+
+1. In the applied NPC’s editor, choose **Link Healing Machine**.
 2. Within **60 seconds**, **Shift+right-click** a Cobblemon healing machine in the same dimension.
 3. Keep it within **Max Distance**, from 1 to 16 blocks; this example uses 16.
 4. Leave safe ground and space beside the machine for the NPC to stand and return.
@@ -49,7 +53,7 @@ A linked machine is used through Nurse Joy. Keep a separate machine for direct p
 | Problem | Check |
 | --- | --- |
 | Another dialogue or shop opens | Use empty-hand **Shift+right-click** to access Nurse Joy. |
-| Link request expired | Choose Link Machine again and link within 60 seconds. |
+| Link request expired | Choose Link Healing Machine again and link within 60 seconds. |
 | NPC cannot reach the machine | Same dimension, allowed distance, safe ground and a free adjacent space. |
 | Treatment will not start | Player within 12 blocks, no active battle, and a charged/usable machine. Wait for any treatment already in progress. |
 | Old wording remains | Save to the path actually applied to the NPC. |

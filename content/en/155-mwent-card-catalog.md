@@ -19,7 +19,7 @@ This **reference table** covers 335 built-in and 89 optional-mod definitions in 
 
 For a first deck, begin with [faction strategies](#mwent/factions). Opening tactics are not collectible entries in this table; see the [0.1.6 tactic guide](#mwent/version-0-1-6).
 
-Cards marked 0.1.1 have identical definitions in actual 0.1.1–0.1.4 uploads. Optional numeric IDs can be remapped per session, so stable item keys distinguish them. The 72 entries marked 0.1.5 are workspace additions. Counts do not duplicate animated prints or include 512 unused custom-card slots.
+Cards marked 0.1.1 have identical definitions in actual 0.1.1–0.1.4 uploads. Optional numeric IDs can be remapped per session, so stable item keys distinguish them. The 72 entries marked 0.1.6 are the faction and siege additions consolidated into this release. They also appeared in the local 0.1.5 snapshot and are counted only once. Counts do not duplicate animated prints or include 512 unused custom-card slots.
 
 ## Volkar Empire — 65
 
@@ -70,28 +70,28 @@ On mobile, scroll inside the table horizontally to read the ability column.
 | Jar Knight (card_1200) · 0.1.1 | 5 / 6 | Bronze · Rare | Armor 2; Base ability: Barricade 1; Order: Damage 2; Crew 1; Salvage 1; Cooldown 2; Model jar_fist (GeckoLib) |
 | Imperial Reconnaissance (card_1600) · 0.1.1 | — / 4 | Bronze · Rare | Base ability: Unit search 12 |
 | Arcane Scribe (card_1610) · 0.1.1 | 3 / 6 | Bronze · Rare | Order: Boost 1; Spellcraft 1; Resupply 1; Cooldown 2 |
-| Volkar Founding Chronicle (card_1700) · 0.1.5 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Construct; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #0 · per turn 1; Chapter 1: Ally Unit Board All · Target: Armor 2 · per turn 1; Chapter 2: Ally Unit Board All · Target: Rearm 2 · per turn 1 |
-| Volkar Field Workshop (card_1701) · 0.1.5 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #0 · per turn 1 |
-| Volkar Hidden Snare (card_1702) · 0.1.5 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy unit played; Trap reaction · Enemy Unit Board Highest power · Target: Damage 3 · per turn 1 |
-| Volkar Signal Keeper (card_1703) · 0.1.5 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Volkar Unexpected Ally (card_1704) · 0.1.5 | 4 / 5 | Bronze · Rare | Ally Played · if the triggering card has category Construct · Self Unit Board All · Target: Armor 1 · per turn 1 |
-| Volkar Sworn Vanguard (card_1705) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
-| Volkar Challenge Bearer (card_1706) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Volkar Unwritten Possibilities (card_1707) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
-| Volkar Shared Instinct (card_1708) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1704 · per turn 1 |
-| Volkar Relic Breaker (card_1709) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
-| Volkar Timber Ballista (card_1800) · 0.1.5 | 4 / 5 | Bronze · Rare | Armor 1; Order: Damage 2; Cooldown 2; Resupply 1; Crew 1; Machine Wooden Ballista |
-| Volkar Counterweight Catapult (card_1801) · 0.1.5 | 5 / 7 | Bronze · Rare | Armor 1; Order: Socket burst 2; Cooldown 3; Resupply 1; Patience 1; Machine Counterweight Catapult |
-| Volkar Armored Cannon (card_1802) · 0.1.5 | 5 / 8 | Gold · Epic | Armor 2; Order: Armor piercing 3; Cooldown 3; Resupply 1; Expense 1; Machine Armored Cannon |
-| Volkar Automatic Loader (card_1803) · 0.1.5 | 4 / 6 | Bronze · Rare | Armor 1; Turn End · Ally Unit Adjacent All Siege engine · Target: Reduce cooldown only 1 · per turn 1; Machine Automatic Loader |
-| Volkar Steam Ballista (card_1804) · 0.1.5 | 5 / 7 | Bronze · Rare | Armor 3; Order: Armor discharge 2; Cooldown 2; Resupply 1; Crew 1; Machine Steam Ballista |
-| Volkar Repeating Cannon (card_1805) · 0.1.5 | 4 / 10 | Gold · Epic | Armor 1; Order: Damage 1; Cooldown 2; Resupply 1; An allied cooldown decreases · if the triggering card has category Siege engine · Enemy Unit Board Random · Target: Damage 1 · per turn 3; Machine Repeating Cannon |
-| Volkar Armored Crew (card_1806) · 0.1.5 | 4 / 5 | Bronze · Rare | Armor 2; Defender 1; Deploy · Ally Unit Adjacent All · Target: Armor 1 · per turn 1 |
-| Volkar Field Engineer (card_1807) · 0.1.5 | 4 / 5 | Bronze · Rare | Armor 1; Deploy · Ally Unit Board Choose Siege engine · Target: Rearm 2 · per turn 1 |
-| Volkar Ammunition Cart (card_1808) · 0.1.5 | 5 / 5 | Bronze · Rare | Armor 1; Trade 1; Turn End · Self Unit Board All · Target: Supply delivery 1 · per turn 1; Machine Ammunition Cart |
-| Volkar Field Maintenance (card_1809) · 0.1.5 | — / 5 | Bronze · Rare | Deploy · Ally Unit Board Choose Siege engine · Target: Rearm 2 · per turn 1 |
-| Volkar Bombardment Order (card_1810) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Enemy Unit Row All · Target: Damage 1 · per turn 1 |
-| Volkar Siege Encampment (card_1811) · 0.1.5 | — / 12 | Gold · Legendary | Scenario; Progress: Ally Played Siege engine; Doomed; Deploy · Self Unit Board All · Target: Summon 1 unit with abilities and Doomed; no Deploy #1800 · per turn 1; Chapter 1: Self Unit Board All · Target: Summon 1 unit with abilities and Doomed; no Deploy #1801 · per turn 1; Chapter 2: Ally Unit Board All Siege engine · Target: Rearm 2 · per turn 1 |
+| Volkar Founding Chronicle (card_1700) · 0.1.6 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Construct; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #0 · per turn 1; Chapter 1: Ally Unit Board All · Target: Armor 2 · per turn 1; Chapter 2: Ally Unit Board All · Target: Rearm 2 · per turn 1 |
+| Volkar Field Workshop (card_1701) · 0.1.6 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #0 · per turn 1 |
+| Volkar Hidden Snare (card_1702) · 0.1.6 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy unit played; Trap reaction · Enemy Unit Board Highest power · Target: Damage 3 · per turn 1 |
+| Volkar Signal Keeper (card_1703) · 0.1.6 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Volkar Unexpected Ally (card_1704) · 0.1.6 | 4 / 5 | Bronze · Rare | Ally Played · if the triggering card has category Construct · Self Unit Board All · Target: Armor 1 · per turn 1 |
+| Volkar Sworn Vanguard (card_1705) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
+| Volkar Challenge Bearer (card_1706) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Volkar Unwritten Possibilities (card_1707) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
+| Volkar Shared Instinct (card_1708) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1704 · per turn 1 |
+| Volkar Relic Breaker (card_1709) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
+| Volkar Timber Ballista (card_1800) · 0.1.6 | 4 / 5 | Bronze · Rare | Armor 1; Order: Damage 2; Cooldown 2; Resupply 1; Crew 1; Machine Wooden Ballista |
+| Volkar Counterweight Catapult (card_1801) · 0.1.6 | 5 / 7 | Bronze · Rare | Armor 1; Order: Socket burst 2; Cooldown 3; Resupply 1; Patience 1; Machine Counterweight Catapult |
+| Volkar Armored Cannon (card_1802) · 0.1.6 | 5 / 8 | Gold · Epic | Armor 2; Order: Armor piercing 3; Cooldown 3; Resupply 1; Expense 1; Machine Armored Cannon |
+| Volkar Automatic Loader (card_1803) · 0.1.6 | 4 / 6 | Bronze · Rare | Armor 1; Turn End · Ally Unit Adjacent All Siege engine · Target: Reduce cooldown only 1 · per turn 1; Machine Automatic Loader |
+| Volkar Steam Ballista (card_1804) · 0.1.6 | 5 / 7 | Bronze · Rare | Armor 3; Order: Armor discharge 2; Cooldown 2; Resupply 1; Crew 1; Machine Steam Ballista |
+| Volkar Repeating Cannon (card_1805) · 0.1.6 | 4 / 10 | Gold · Epic | Armor 1; Order: Damage 1; Cooldown 2; Resupply 1; An allied cooldown decreases · if the triggering card has category Siege engine · Enemy Unit Board Random · Target: Damage 1 · per turn 3; Machine Repeating Cannon |
+| Volkar Armored Crew (card_1806) · 0.1.6 | 4 / 5 | Bronze · Rare | Armor 2; Defender 1; Deploy · Ally Unit Adjacent All · Target: Armor 1 · per turn 1 |
+| Volkar Field Engineer (card_1807) · 0.1.6 | 4 / 5 | Bronze · Rare | Armor 1; Deploy · Ally Unit Board Choose Siege engine · Target: Rearm 2 · per turn 1 |
+| Volkar Ammunition Cart (card_1808) · 0.1.6 | 5 / 5 | Bronze · Rare | Armor 1; Trade 1; Turn End · Self Unit Board All · Target: Supply delivery 1 · per turn 1; Machine Ammunition Cart |
+| Volkar Field Maintenance (card_1809) · 0.1.6 | — / 5 | Bronze · Rare | Deploy · Ally Unit Board Choose Siege engine · Target: Rearm 2 · per turn 1 |
+| Volkar Bombardment Order (card_1810) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Enemy Unit Row All · Target: Damage 1 · per turn 1 |
+| Volkar Siege Encampment (card_1811) · 0.1.6 | — / 12 | Gold · Legendary | Scenario; Progress: Ally Played Siege engine; Doomed; Deploy · Self Unit Board All · Target: Summon 1 unit with abilities and Doomed; no Deploy #1800 · per turn 1; Chapter 1: Self Unit Board All · Target: Summon 1 unit with abilities and Doomed; no Deploy #1801 · per turn 1; Chapter 2: Ally Unit Board All Siege engine · Target: Rearm 2 · per turn 1 |
 
 ## Avalin — 52
 
@@ -139,16 +139,16 @@ On mobile, scroll inside the table horizontally to read the ability column.
 | Bloom Again (card_1047) · 0.1.1 | — / 12 | Gold · Legendary | Base ability: Resurrect 8 |
 | Mycelial Guardian (card_1201) · 0.1.1 | 4 / 5 | Bronze · Rare | Base ability: Heal 2; Order: Vitality 2; Symbiosis 1; Nurture 1; Cooldown 2; Companion #1024; Model mushroom (GeckoLib) |
 | Forest Trail (card_1601) · 0.1.1 | — / 4 | Bronze · Rare | Base ability: Unit search 12 |
-| Avalin Founding Chronicle (card_1710) · 0.1.5 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Beast; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #8 · per turn 1; Chapter 1: Ally Unit Board All · Target: Heal 2 · per turn 1; Chapter 2: Self Unit Board All · Target: Summon one token with power 4 #8 · per turn 1 |
-| Avalin Field Workshop (card_1711) · 0.1.5 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #8 · per turn 1 |
-| Avalin Hidden Snare (card_1712) · 0.1.5 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy special played; Trap reaction · Ally Unit Board Lowest power · Target: Boost 3 · per turn 1 |
-| Avalin Signal Keeper (card_1713) · 0.1.5 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Avalin Unexpected Ally (card_1714) · 0.1.5 | 4 / 5 | Bronze · Rare | Special Played · if the triggering card has category Nature · Self Unit Board All · Target: Boost 1 · per turn 1 |
-| Avalin Sworn Vanguard (card_1715) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
-| Avalin Challenge Bearer (card_1716) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Avalin Unwritten Possibilities (card_1717) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
-| Avalin Shared Instinct (card_1718) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1714 · per turn 1 |
-| Avalin Relic Breaker (card_1719) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
+| Avalin Founding Chronicle (card_1710) · 0.1.6 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Beast; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #8 · per turn 1; Chapter 1: Ally Unit Board All · Target: Heal 2 · per turn 1; Chapter 2: Self Unit Board All · Target: Summon one token with power 4 #8 · per turn 1 |
+| Avalin Field Workshop (card_1711) · 0.1.6 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #8 · per turn 1 |
+| Avalin Hidden Snare (card_1712) · 0.1.6 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy special played; Trap reaction · Ally Unit Board Lowest power · Target: Boost 3 · per turn 1 |
+| Avalin Signal Keeper (card_1713) · 0.1.6 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Avalin Unexpected Ally (card_1714) · 0.1.6 | 4 / 5 | Bronze · Rare | Special Played · if the triggering card has category Nature · Self Unit Board All · Target: Boost 1 · per turn 1 |
+| Avalin Sworn Vanguard (card_1715) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
+| Avalin Challenge Bearer (card_1716) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Avalin Unwritten Possibilities (card_1717) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
+| Avalin Shared Instinct (card_1718) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1714 · per turn 1 |
+| Avalin Relic Breaker (card_1719) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
 
 ## Nevra — 61
 
@@ -205,16 +205,16 @@ On mobile, scroll inside the table horizontally to read the ability column.
 | Secret Dossier (card_1326) · 0.1.1 | — / 4 | Bronze · Common | Base ability: Infiltrate 1 |
 | Change of Allegiance (card_1327) · 0.1.1 | — / 8 | Gold · Epic | Base ability: Seize 3 |
 | Echo Tracing (card_1603) · 0.1.1 | — / 4 | Bronze · Rare | Base ability: Unit search 15 |
-| Nevra Founding Chronicle (card_1730) · 0.1.5 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Agent; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #24 · per turn 1; Chapter 1: Enemy Unit Board Highest power · Target: Infiltrate 1 · per turn 1; Chapter 2: Target Spying ≥ 1 · Enemy Unit Board Highest power · Target: Lock 1, Target: Damage 3 · per turn 1 |
-| Nevra Field Workshop (card_1731) · 0.1.5 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #24 · per turn 1 |
-| Nevra Hidden Snare (card_1732) · 0.1.5 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy special played; Trap reaction · Enemy Unit Board Highest power · Target: Lock 1 · per turn 1 |
-| Nevra Signal Keeper (card_1733) · 0.1.5 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Nevra Unexpected Ally (card_1734) · 0.1.5 | 4 / 5 | Bronze · Rare | Ally Played · Event Generated outside starting deck ≥ 1 · Self Unit Board All · Target: Boost 1 · per turn 1 |
-| Nevra Sworn Vanguard (card_1735) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
-| Nevra Challenge Bearer (card_1736) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Nevra Unwritten Possibilities (card_1737) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
-| Nevra Shared Instinct (card_1738) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1734 · per turn 1 |
-| Nevra Relic Breaker (card_1739) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
+| Nevra Founding Chronicle (card_1730) · 0.1.6 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Agent; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #24 · per turn 1; Chapter 1: Enemy Unit Board Highest power · Target: Infiltrate 1 · per turn 1; Chapter 2: Target Spying ≥ 1 · Enemy Unit Board Highest power · Target: Lock 1, Target: Damage 3 · per turn 1 |
+| Nevra Field Workshop (card_1731) · 0.1.6 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #24 · per turn 1 |
+| Nevra Hidden Snare (card_1732) · 0.1.6 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy special played; Trap reaction · Enemy Unit Board Highest power · Target: Lock 1 · per turn 1 |
+| Nevra Signal Keeper (card_1733) · 0.1.6 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Nevra Unexpected Ally (card_1734) · 0.1.6 | 4 / 5 | Bronze · Rare | Ally Played · Event Generated outside starting deck ≥ 1 · Self Unit Board All · Target: Boost 1 · per turn 1 |
+| Nevra Sworn Vanguard (card_1735) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
+| Nevra Challenge Bearer (card_1736) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Nevra Unwritten Possibilities (card_1737) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
+| Nevra Shared Instinct (card_1738) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1734 · per turn 1 |
+| Nevra Relic Breaker (card_1739) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
 
 ## Mistwake Clans — 41
 
@@ -251,16 +251,16 @@ On mobile, scroll inside the table horizontally to read the ability column.
 | Bloodbound Oath (card_1348) · 0.1.1 | — / 4 | Bronze · Rare | Base ability: Blood rite 4 |
 | Tidal Veil (card_1349) · 0.1.1 | — / 5 | Bronze · Rare | Base ability: Rain field 3 |
 | Ancestral Bearings (card_1605) · 0.1.1 | — / 4 | Bronze · Rare | Base ability: Unit search 12 |
-| Haemu Founding Chronicle (card_1740) · 0.1.5 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Raider; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #1300 · per turn 1; Chapter 1: Ally Unit Board All · Target: Heal 2 · per turn 1; Chapter 2: Ally Unit Board Lowest power · Target: Blood rite 5 · per turn 1 |
-| Haemu Field Workshop (card_1741) · 0.1.5 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #1300 · per turn 1 |
-| Haemu Hidden Snare (card_1742) · 0.1.5 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy unit played; Trap reaction · Enemy Unit Board Highest power · Target: Bleeding 3 · per turn 1 |
-| Haemu Signal Keeper (card_1743) · 0.1.5 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Haemu Unexpected Ally (card_1744) · 0.1.5 | 4 / 5 | Bronze · Rare | Ally damaged · Self Unit Board All · Target: Boost 1 · per turn 1 |
-| Haemu Sworn Vanguard (card_1745) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
-| Haemu Challenge Bearer (card_1746) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Haemu Unwritten Possibilities (card_1747) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
-| Haemu Shared Instinct (card_1748) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1744 · per turn 1 |
-| Haemu Relic Breaker (card_1749) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
+| Haemu Founding Chronicle (card_1740) · 0.1.6 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Raider; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #1300 · per turn 1; Chapter 1: Ally Unit Board All · Target: Heal 2 · per turn 1; Chapter 2: Ally Unit Board Lowest power · Target: Blood rite 5 · per turn 1 |
+| Haemu Field Workshop (card_1741) · 0.1.6 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #1300 · per turn 1 |
+| Haemu Hidden Snare (card_1742) · 0.1.6 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy unit played; Trap reaction · Enemy Unit Board Highest power · Target: Bleeding 3 · per turn 1 |
+| Haemu Signal Keeper (card_1743) · 0.1.6 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Haemu Unexpected Ally (card_1744) · 0.1.6 | 4 / 5 | Bronze · Rare | Ally damaged · Self Unit Board All · Target: Boost 1 · per turn 1 |
+| Haemu Sworn Vanguard (card_1745) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
+| Haemu Challenge Bearer (card_1746) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Haemu Unwritten Possibilities (card_1747) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
+| Haemu Shared Instinct (card_1748) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1744 · per turn 1 |
+| Haemu Relic Breaker (card_1749) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
 
 ## Roden League — 52
 
@@ -308,16 +308,16 @@ On mobile, scroll inside the table horizontally to read the ability column.
 | Expedition Gear (card_1071) · 0.1.1 | — / 4 | Bronze · Common | Base ability: Supply delivery 3 |
 | Bone Skirmisher (card_1202) · 0.1.1 | 4 / 5 | Bronze · Rare | Base ability: Damage 2; Order: Damage 1; Formation 1; Trade 1; Expense 1; Model skeleton (GeckoLib) |
 | Caravan Dispatch (card_1602) · 0.1.1 | — / 4 | Bronze · Rare | Base ability: Unit search 14 |
-| Roden Founding Chronicle (card_1720) · 0.1.5 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Merchant; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #16 · per turn 1; Chapter 1: Self Unit Board All · Target: Supply delivery 3 · per turn 1; Chapter 2: Enemy Unit Board Highest power · Target: Mark and strike 4 · per turn 1 |
-| Roden Field Workshop (card_1721) · 0.1.5 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #16 · per turn 1 |
-| Roden Hidden Snare (card_1722) · 0.1.5 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy unit played; Trap reaction · Enemy Unit Board Highest power · Target: Mark and strike 1 · per turn 1 |
-| Roden Signal Keeper (card_1723) · 0.1.5 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Roden Unexpected Ally (card_1724) · 0.1.5 | 4 / 5 | Bronze · Rare | Supplies spent · Self Unit Board All · Target: Boost 1 · per turn 1 |
-| Roden Sworn Vanguard (card_1725) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
-| Roden Challenge Bearer (card_1726) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Roden Unwritten Possibilities (card_1727) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
-| Roden Shared Instinct (card_1728) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1724 · per turn 1 |
-| Roden Relic Breaker (card_1729) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
+| Roden Founding Chronicle (card_1720) · 0.1.6 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Merchant; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #16 · per turn 1; Chapter 1: Self Unit Board All · Target: Supply delivery 3 · per turn 1; Chapter 2: Enemy Unit Board Highest power · Target: Mark and strike 4 · per turn 1 |
+| Roden Field Workshop (card_1721) · 0.1.6 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #16 · per turn 1 |
+| Roden Hidden Snare (card_1722) · 0.1.6 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy unit played; Trap reaction · Enemy Unit Board Highest power · Target: Mark and strike 1 · per turn 1 |
+| Roden Signal Keeper (card_1723) · 0.1.6 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Roden Unexpected Ally (card_1724) · 0.1.6 | 4 / 5 | Bronze · Rare | Supplies spent · Self Unit Board All · Target: Boost 1 · per turn 1 |
+| Roden Sworn Vanguard (card_1725) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
+| Roden Challenge Bearer (card_1726) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Roden Unwritten Possibilities (card_1727) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
+| Roden Shared Instinct (card_1728) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1724 · per turn 1 |
+| Roden Relic Breaker (card_1729) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
 
 ## Morga Brood — 41
 
@@ -354,16 +354,16 @@ On mobile, scroll inside the table horizontally to read the ability column.
 | Miasma Grove (card_1428) · 0.1.1 | — / 5 | Bronze · Rare | Base ability: Miasma Field 3 |
 | Colony Pulse (card_1429) · 0.1.1 | — / 4 | Bronze · Rare | Base ability: Row boost 1 |
 | Mycelial Trail (card_1606) · 0.1.1 | — / 4 | Bronze · Rare | Base ability: Unit search 12 |
-| Morga Founding Chronicle (card_1750) · 0.1.5 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Swarm; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #1400 · per turn 1; Chapter 1: Ally Unit Board All · Target: Seed a Husk 1 · per turn 1; Chapter 2: Self Unit Board All · Target: Summon one token with power 4 #1400 · per turn 1 |
-| Morga Field Workshop (card_1751) · 0.1.5 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #1400 · per turn 1 |
-| Morga Hidden Snare (card_1752) · 0.1.5 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy unit played; Trap reaction · Enemy Unit Board Highest power · Target: Poison 1 · per turn 1 |
-| Morga Signal Keeper (card_1753) · 0.1.5 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Morga Unexpected Ally (card_1754) · 0.1.5 | 4 / 5 | Bronze · Rare | Ally Destroyed · Self Unit Board All · Target: Boost 1 · per turn 1 |
-| Morga Sworn Vanguard (card_1755) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
-| Morga Challenge Bearer (card_1756) · 0.1.5 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
-| Morga Unwritten Possibilities (card_1757) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
-| Morga Shared Instinct (card_1758) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1754 · per turn 1 |
-| Morga Relic Breaker (card_1759) · 0.1.5 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
+| Morga Founding Chronicle (card_1750) · 0.1.6 | — / 10 | Gold · Legendary | Scenario; Progress: Ally Played Swarm; Doomed; Deploy · Self Unit Board All · Target: Summon one token with power 2 #1400 · per turn 1; Chapter 1: Ally Unit Board All · Target: Seed a Husk 1 · per turn 1; Chapter 2: Self Unit Board All · Target: Summon one token with power 4 #1400 · per turn 1 |
+| Morga Field Workshop (card_1751) · 0.1.6 | — / 7 | Gold · Epic | Location; Resilience; Deploy · Ally Unit Board All · Target: Armor 1 · per turn 1; Order · Self Unit Board All · Target: Generate in hand #1400 · per turn 1 |
+| Morga Hidden Snare (card_1752) · 0.1.6 | — / 4 | Bronze · Rare | Trap; Reveal: Enemy unit played; Trap reaction · Enemy Unit Board Highest power · Target: Poison 1 · per turn 1 |
+| Morga Signal Keeper (card_1753) · 0.1.6 | 4 / 5 | Bronze · Rare | Counter 2; Timer 2; Turn End · Self Unit Board All · Target: Reduce counter 1 · per turn 1; Counter reaches zero · Self Unit Board All · Target: Shield 1 · per turn 1; Timer expires · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Morga Unexpected Ally (card_1754) · 0.1.6 | 4 / 5 | Bronze · Rare | Ally Destroyed · Self Unit Board All · Target: Boost 1 · per turn 1 |
+| Morga Sworn Vanguard (card_1755) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · if the starting deck contains no neutrals · Self Unit Board All · Target: Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Target: Boost 1 · per turn 1 |
+| Morga Challenge Bearer (card_1756) · 0.1.6 | 4 / 5 | Bronze · Rare | Deploy · Enemy Unit Board Choose · Target: Clash · per turn 1; Deathblow · Self Unit Board All · Target: Boost 2 · per turn 1 |
+| Morga Unwritten Possibilities (card_1757) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Self Unit Board All · Target: Create and play one of up to three choices costing at most 5 · per turn 1 |
+| Morga Shared Instinct (card_1758) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Ally Unit Board Choose · Target: Infuse abilities and categories #1754 · per turn 1 |
+| Morga Relic Breaker (card_1759) · 0.1.6 | — / 4 | Bronze · Rare | Deploy · Enemy Artifact Board Choose · Target: Destroy artifact · per turn 1 |
 
 ## Neutral — 23
 

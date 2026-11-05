@@ -1,6 +1,41 @@
 {
   "description": "Screenshot environments from reviewed capture records; these describe the images, not a mod compatibility matrix.",
   "captures": {
+    "assets/media/guides/spawn-control-015-fabric263/guard-locations-en.png": {
+      "minecraft": "26.3",
+      "loader": "Fabric",
+      "locale": "en_us",
+      "width": 854,
+      "height": 480
+    },
+    "assets/media/guides/spawn-control-015-fabric263/guard-members-en.png": {
+      "minecraft": "26.3",
+      "loader": "Fabric",
+      "locale": "en_us",
+      "width": 854,
+      "height": 480
+    },
+    "assets/media/guides/short-gifs-20261105/nurse-joy-treatment.gif": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/short-gifs-20261105/remnant-place-and-read.gif": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
+    },
     "assets/media/guides/drm-031-neo1211/editor-selector.png": {
       "minecraft": "1.21.1",
       "loader": "NeoForge",

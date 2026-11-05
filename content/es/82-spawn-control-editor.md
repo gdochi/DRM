@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Editor
 section: editor
 status: Proyecto
-version: 0.1.4
+version: 0.1.5
 audience: Creadores de reglas de spawn
 tags:
   - editor
@@ -50,7 +50,7 @@ El catálogo elige el destino para las nuevas reglas.
 - Vista previa del objetivo seleccionado en el panel central.
 - Utilice la acción inferior `Native: ON/OFF` para una entidad registrada. No se aplica a los clones.
 
-Se excluyen los proyectiles, efectos, vehículos y otros EntityTypes que no sean criaturas. Pueden aparecer jefes especiales con estado de soporte experimental.
+Los proyectiles, efectos y otros EntityTypes que no sean criaturas se excluyen de los destinos normales. Los vehículos compatibles y sus plantillas guardadas aparecen mediante integraciones específicas; consulta [aparición de vehículos](#dochi-spawn-control/spawn-control-vehicles). Los jefes especiales pueden tener soporte experimental.
 
 ## Medio: vista previa y reglas de spawn natural
 
@@ -96,9 +96,17 @@ La etiqueta EntityType o clon bajo el inspector es el objetivo real ** propiedad
 | Medidas adoptadas | Impacto mundial |
 | --- | --- |
 | `Check Here` | Evaluar las condiciones y límites en la ubicación actual sin crear una entidad |
-| `Spawn One` | Crear una entidad administrada real después de la confirmación |
+| `Spawn One` | Crear una entidad gestionada tras confirmar, o la escuadra completa si está activa |
 | `Clear Generated` | Eliminar entidades generadas actualmente rastreadas por este mod |
 
 Los diagnósticos envían el borrador actual para una evaluación temporal del lado del servidor sin reemplazar primero el archivo de configuración activo.
 
 Los filtros de reglas cambian la presentación de la lista sin guardar el documento. Escape o un clic externo cancela un menú desplegable abierto sin activar los controles de fondo. Los paneles estrechos envuelven los controles en la siguiente línea.
+
+## Composición y diagnóstico en 0.1.5
+
+En Forge 1.20.1, el inspector tiene las pestañas World, Spawn, Gear, Squad y Advanced. Abre **World → Locations and guard squad → Edit** para los filtros de lugar. En Squad también puedes buscar en el catálogo izquierdo, usar **Add to squad** y editar cantidades y equipo. Explorar el catálogo mantiene seleccionada la regla de la escuadra.
+
+En Fabric/NeoForge, desplázate hacia abajo en el inspector hasta **Locations and guard squad → Edit**. Consulta [guardias de estructuras](#dochi-spawn-control/spawn-control-guards) para las dos pestañas de detalle. Apply actualiza el borrador; Save en el editor principal lo aplica al servidor.
+
+Advanced Diagnostics abre una ventana centrada. Lee resultados largos con la rueda o la barra de desplazamiento. Con la escuadra activada, la prueba confirmada crea la escuadra completa. Forge llama a esta acción **Spawn Squad**.

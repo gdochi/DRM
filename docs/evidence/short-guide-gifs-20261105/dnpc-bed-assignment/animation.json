@@ -1,0 +1,325 @@
+{
+  "asset": "assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif",
+  "sha256": "b356e37345f1bb0af5c3c058c9915492ab0e85da71605fa531cdd1283cc6d9b0",
+  "width": 1280,
+  "height": 720,
+  "frameCount": 46,
+  "durationMs": 18160,
+  "sourceFrameCount": 254,
+  "selectedFrames": [
+    {
+      "file": "00000.png",
+      "clientTick": 2,
+      "screen": "NpcEditorScreen",
+      "sha256": "cfd9ea7fb512e1ab6ca7b16dde8092a540ad9f88446dff9d1ff460e557d0c314"
+    },
+    {
+      "file": "00008.png",
+      "clientTick": 18,
+      "screen": "NpcEditorScreen",
+      "sha256": "ee2c97821640b9d359c8fa225005a9c8ebdac8b5039157e3bb4ac3263489dad2"
+    },
+    {
+      "file": "00016.png",
+      "clientTick": 34,
+      "screen": "NpcEditorScreen",
+      "sha256": "c4a4a9fbd9082bdcbbe7421e916013f3099138918e559e8519b7a368658282f8"
+    },
+    {
+      "file": "00020.png",
+      "clientTick": 42,
+      "screen": "NpcEditorScreen",
+      "sha256": "ad32a4834720aeea14dc153c21694a50f77d9b5b4b741d58d20a11847f9f5224"
+    },
+    {
+      "file": "00026.png",
+      "clientTick": 54,
+      "screen": "NpcEditorScreen",
+      "sha256": "e9336e931627e4170b9ce747870a4bc8e70c496392211b9486e1353a0b8071fd"
+    },
+    {
+      "file": "00030.png",
+      "clientTick": 62,
+      "screen": "world",
+      "sha256": "81bce28233f05d874dc9e55599ab1b19edd8060a8e6a47a78e10c6046558ad08"
+    },
+    {
+      "file": "00036.png",
+      "clientTick": 74,
+      "screen": "world",
+      "sha256": "b1b3f0106ca3b0146e7c48964673ef471f03ab1f9174bd586d9aaf2638d57d28"
+    },
+    {
+      "file": "00040.png",
+      "clientTick": 82,
+      "screen": "world",
+      "sha256": "c3e2a6dcd20ed5d1066d20409b530b44fa8afa4c48a7d62562cf878ad25f01cf"
+    },
+    {
+      "file": "00046.png",
+      "clientTick": 94,
+      "screen": "world",
+      "sha256": "ebd0f0d5ac600baaca199f2cc1431577df8734c72955f6b05e573c0af66ce372"
+    },
+    {
+      "file": "00050.png",
+      "clientTick": 102,
+      "screen": "world",
+      "sha256": "608041d3d85191797abed4b41a3e2f9d148a9c0b5ba84ca524e7860333d5b259"
+    },
+    {
+      "file": "00056.png",
+      "clientTick": 114,
+      "screen": "world",
+      "sha256": "6092b9fb736ebedfc99904d2a1f12b17f16897372e744c2939720a48db98e362"
+    },
+    {
+      "file": "00060.png",
+      "clientTick": 122,
+      "screen": "world",
+      "sha256": "c697bf89a2c7a71fbef7a621e62eff9f9760375d25076846810d3b7014459f26"
+    },
+    {
+      "file": "00065.png",
+      "clientTick": 132,
+      "screen": "NpcEditorScreen",
+      "sha256": "428f7c7777cca576c3a584841a5cb8c67d621de5f8f2d802430190e36fad676e"
+    },
+    {
+      "file": "00070.png",
+      "clientTick": 142,
+      "screen": "NpcEditorScreen",
+      "sha256": "9ae18b49c740104483010a009b37e8b85c3f503fc2c588950024f8bf1b1af55b"
+    },
+    {
+      "file": "00076.png",
+      "clientTick": 154,
+      "screen": "NpcEditorScreen",
+      "sha256": "cad7ff0ca98d1636b00bf586a30b71ec5da3d3707de45b8aa7569fff27f35bc8"
+    },
+    {
+      "file": "00080.png",
+      "clientTick": 162,
+      "screen": "NpcEditorScreen",
+      "sha256": "daa95179099bdf7c2d4fede8b542922d0e1ec912abfbc18cbb096cad03d2a0c3"
+    },
+    {
+      "file": "00090.png",
+      "clientTick": 182,
+      "screen": "NpcEditorScreen",
+      "sha256": "c8dde039295760bc0e7f04e57e324734d503c410716ad7cd5561df2253b38c44"
+    },
+    {
+      "file": "00096.png",
+      "clientTick": 194,
+      "screen": "NpcEditorScreen",
+      "sha256": "a7fec7c7f29bced47c8bb124bb0806ba7e0e3d362a83591850e16bf87037b5ea"
+    },
+    {
+      "file": "00100.png",
+      "clientTick": 202,
+      "screen": "NpcEditorScreen",
+      "sha256": "b7a568a4ca057185bcd648db1ed1d5d745a2ab93229e426dd3f2d212aab8ed69"
+    },
+    {
+      "file": "00106.png",
+      "clientTick": 214,
+      "screen": "NpcEditorScreen",
+      "sha256": "48d150aa1089573316866a43cd82ab06642cef944165b20fb6d4386d9154594e"
+    },
+    {
+      "file": "00116.png",
+      "clientTick": 234,
+      "screen": "NpcEditorScreen",
+      "sha256": "5f839898a3bf3da13897b1b75618ec9a74aa1130c26cc407206687206d5e8fcd"
+    },
+    {
+      "file": "00120.png",
+      "clientTick": 242,
+      "screen": "world",
+      "sha256": "7085359cb6a3c5787b982cc39322846000438034ad7853c8b9a478137ca0913d"
+    },
+    {
+      "file": "00126.png",
+      "clientTick": 254,
+      "screen": "world",
+      "sha256": "d7edcaf3aecd3fa6db4a8f6fc781533351ce90b597ccbe2eecb7b8fe4e8ddf59"
+    },
+    {
+      "file": "00130.png",
+      "clientTick": 262,
+      "screen": "world",
+      "sha256": "034173bb437a5a7e48bc0ca3ab4285efdfccb48c722325a5d6deb9dc6b0224ec"
+    },
+    {
+      "file": "00136.png",
+      "clientTick": 274,
+      "screen": "world",
+      "sha256": "c08baa7f160a451044dcf974ea32b6e2c4297d846436a6f39108120daa4a6ba7"
+    },
+    {
+      "file": "00140.png",
+      "clientTick": 282,
+      "screen": "world",
+      "sha256": "60b4f6897d6e346b24f70513be6d00f841823d37c1428bf180ac32a1b753dd2c"
+    },
+    {
+      "file": "00146.png",
+      "clientTick": 294,
+      "screen": "world",
+      "sha256": "1f72b335275b755594671c7357bffdf05a7d4d9ec51871d8fcac51577d7f3e79"
+    },
+    {
+      "file": "00150.png",
+      "clientTick": 302,
+      "screen": "world",
+      "sha256": "9899126d689ae2dd811fca09f46deffbb1922f5261fa0f3a2d202fcceff0fad9"
+    },
+    {
+      "file": "00156.png",
+      "clientTick": 314,
+      "screen": "world",
+      "sha256": "ff4df91c8c4ebb400aae664592f51b4aa6be82327caa7493dc6557e8a2c72f74"
+    },
+    {
+      "file": "00160.png",
+      "clientTick": 322,
+      "screen": "world",
+      "sha256": "27e24661ff64c5fce8ffc0f14d03185f1db8ddf744e0c952e4a8a33f651b47d1"
+    },
+    {
+      "file": "00166.png",
+      "clientTick": 334,
+      "screen": "world",
+      "sha256": "7ca1fced4dd369138b7626f314b273bbf7f750b88d6e4de296244fb18b97f56d"
+    },
+    {
+      "file": "00170.png",
+      "clientTick": 342,
+      "screen": "world",
+      "sha256": "1bb025952219b7fa2cf3d90f72e03a2cc259c1a35d219ec213efcc1501fc1201"
+    },
+    {
+      "file": "00176.png",
+      "clientTick": 354,
+      "screen": "world",
+      "sha256": "50c6ee05ecbab15e71f74265dcb00e759ab9c6d0c58ccfdf0caf9fb19a9e009a"
+    },
+    {
+      "file": "00180.png",
+      "clientTick": 362,
+      "screen": "world",
+      "sha256": "8088fd2dac36a655f929664eccc25b7c66ce235a94f27583dea5660f72958618"
+    },
+    {
+      "file": "00186.png",
+      "clientTick": 374,
+      "screen": "world",
+      "sha256": "761a585bef347d9a4a3e5cf8476056f655eff87bc633a4f04954f6af4f756aa2"
+    },
+    {
+      "file": "00190.png",
+      "clientTick": 382,
+      "screen": "world",
+      "sha256": "920dc8ef9d2557852de91a654894484c73cbce36dc860f082589883ba6b1e661"
+    },
+    {
+      "file": "00200.png",
+      "clientTick": 402,
+      "screen": "world",
+      "sha256": "376b1aa92ca6a13178a520a86f4c09369305b960df47d6c46e57db64874008c0"
+    },
+    {
+      "file": "00206.png",
+      "clientTick": 414,
+      "screen": "world",
+      "sha256": "898fed8cf97cfaec0f25ec5c3f99878b36e2bf0d69ca3e6246660c3a8e3bdc8a"
+    },
+    {
+      "file": "00210.png",
+      "clientTick": 422,
+      "screen": "world",
+      "sha256": "3266e47ee66e76ab3cc0eab1ebe1fafdcefda54431a574d2935c2d39b8d14a41"
+    },
+    {
+      "file": "00216.png",
+      "clientTick": 434,
+      "screen": "world",
+      "sha256": "a4b58ea0b53de3b61a90717978d46f8857cf83d460d239d13089d2f44a301fe8"
+    },
+    {
+      "file": "00220.png",
+      "clientTick": 442,
+      "screen": "world",
+      "sha256": "5f331fc9bb2c2733f6463323498e926ce32066280f22835d944c78aa65ff0ae2"
+    },
+    {
+      "file": "00226.png",
+      "clientTick": 454,
+      "screen": "world",
+      "sha256": "dfd9db8dcd07cfa888ade3b444e18d50626de41f9773234bb2e740d6527ce0d2"
+    },
+    {
+      "file": "00230.png",
+      "clientTick": 462,
+      "screen": "world",
+      "sha256": "b3d2262423d9309ac7ff786b456c09a2261e6c713e1902b3e5dfccb0b8a80231"
+    },
+    {
+      "file": "00236.png",
+      "clientTick": 474,
+      "screen": "world",
+      "sha256": "a159d8b07aaea4024c11a28bf8be1a9c47550707700c8c452082fd5a8caaa09a"
+    },
+    {
+      "file": "00246.png",
+      "clientTick": 494,
+      "screen": "world",
+      "sha256": "4bb2c86472adb05c204cbc0f45b44c11e731905eb45389512aaf62f857762621"
+    },
+    {
+      "file": "00250.png",
+      "clientTick": 502,
+      "screen": "world",
+      "sha256": "b7396132b90e517c8e84b04088df373f1af1b7752fae9eb5e0d1c1e0ea6db894"
+    }
+  ],
+  "retainedOriginals": [
+    {
+      "file": "00000.png",
+      "clientTick": 2,
+      "screen": "NpcEditorScreen",
+      "sha256": "cfd9ea7fb512e1ab6ca7b16dde8092a540ad9f88446dff9d1ff460e557d0c314"
+    },
+    {
+      "file": "00050.png",
+      "clientTick": 102,
+      "screen": "world",
+      "sha256": "608041d3d85191797abed4b41a3e2f9d148a9c0b5ba84ca524e7860333d5b259"
+    },
+    {
+      "file": "00100.png",
+      "clientTick": 202,
+      "screen": "NpcEditorScreen",
+      "sha256": "b7a568a4ca057185bcd648db1ed1d5d745a2ab93229e426dd3f2d212aab8ed69"
+    },
+    {
+      "file": "00150.png",
+      "clientTick": 302,
+      "screen": "world",
+      "sha256": "9899126d689ae2dd811fca09f46deffbb1922f5261fa0f3a2d202fcceff0fad9"
+    },
+    {
+      "file": "00200.png",
+      "clientTick": 402,
+      "screen": "world",
+      "sha256": "376b1aa92ca6a13178a520a86f4c09369305b960df47d6c46e57db64874008c0"
+    },
+    {
+      "file": "00250.png",
+      "clientTick": 502,
+      "screen": "world",
+      "sha256": "b7396132b90e517c8e84b04088df373f1af1b7752fae9eb5e0d1c1e0ea6db894"
+    }
+  ]
+}

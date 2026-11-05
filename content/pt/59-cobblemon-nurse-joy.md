@@ -36,7 +36,11 @@ O tratamento e as ações próximas têm um comportamento e ordem fixos. Renomar
 
 ## Ligar a máquina de cura
 
-1. No editor do NPC aplicado, escolha **Link Machine**.
+![Aplicar a função a um NPC com a skin de Nurse Joy, ligar a máquina, curar e regressar.](assets/media/guides/short-gifs-20261105/nurse-joy-treatment.gif "Captura real: Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, interface em inglês. Bulbasaur recuperou de 1 para os seus 19 PV máximos e o NPC regressou à posição inicial.")
+
+A gravação utiliza a [skin de Nurse Joy de caidencestudio](https://www.planetminecraft.com/skin/nurse-joy-5942860/) com o modelo de braços finos.
+
+1. No editor do NPC aplicado, escolha **Link Healing Machine**.
 2. Dentro **60 segundos**, **Shift+right-click** a Cobblemon máquina de cura na mesma dimensão.
 3. Mantenha-o dentro de **Max Distance**, de 1 a 16 blocos; este exemplo usa 16.
 4. Deixem um terreno seguro e espaço ao lado da máquina para o NPC ficar de pé e voltar.
@@ -51,7 +55,7 @@ Uma máquina ligada é usada através da enfermeira Joy. Mantenha uma máquina s
 | Problema | Verificar |
 | --- | --- |
 | Outro diálogo ou loja abre | Use a mão vazia **Shift+right-click** Para acessar a Enfermeira Joy. |
-| Pedido de ligação expirado | Escolha Link Machine novamente e link dentro de 60 segundos. |
+| Pedido de ligação expirado | Escolha Link Healing Machine novamente e link dentro de 60 segundos. |
 | NPC não pode alcançar a máquina | Mesma dimensão, distância permitida, terreno seguro e um espaço adjacente livre. |
 | O tratamento não começará. | Jogador dentro de 12 blocos, nenhuma batalha ativa, e uma máquina carregada/utilizável. Espere por qualquer tratamento já em andamento. |
 | O velho texto permanece. | Salvar no caminho realmente aplicado ao NPC. |

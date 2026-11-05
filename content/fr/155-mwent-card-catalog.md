@@ -21,7 +21,7 @@ Ce **tableau de référence** couvre 335 les définitions intégrées et 89 les 
 
 Pour un premier jeu, commencez par [stratégies de faction](#mwent/factions). Les tactiques d'ouverture ne sont pas des entrées de collection dans ce tableau; voir le [0.1.6 Guide tactique](#mwent/version-0-1-6).
 
-Les cartes marquées 0.1.1 ont des définitions identiques dans les téléchargements réels 0.1.1–0.1.4. Les identifiants numériques optionnels peuvent être remappés par session, de sorte que les clés d'élément stables les distinguent. Les 72 entrées marquées 0.1.5 sont des ajouts d'espace de travail. Les comptes ne dupliquent pas les impressions animées et n'incluent pas 512 les emplacements de cartes personnalisées inutilisés.
+Les cartes marquées 0.1.1 ont des définitions identiques dans les publications réelles 0.1.1–0.1.4. Les identifiants numériques optionnels peuvent changer selon la session ; des clés d’objet stables les distinguent. Les 72 entrées marquées 0.1.6 sont les cartes de faction et de siège regroupées dans cette publication. Elles figuraient déjà dans l’état local 0.1.5 et ne sont comptées qu’une fois. Le total ne double pas les éditions animées et n’inclut pas les 512 emplacements de cartes personnalisées.
 
 ## Volkar Empire — 65
 
@@ -72,28 +72,28 @@ Sur mobile, faites défiler la table horizontalement pour lire la colonne de cap
 | Jar Knight (card_1200) · 0.1.1 | 5 / 6 | Bronze · Rare | Armure 2; Capacité de base: Barricade 1; Ordre: Dégâts 2; Équipage 1; Récupération 1; Refroidissement 2; Modèle jar_fist (GeckoLib) |
 | Imperial Reconnaissance (card_1600) · 0.1.1 | — / 4 | Bronze · Rare | Capacité de base : Unité de recherche 12 |
 | Arcane Scribe (card_1610) · 0.1.1 | 3 / 6 | Bronze · Rare | Commande: Boost 1; Spellcraft 1; Resupply 1; Cooldown 2 |
-| Volkar Founding Chronicle (card_1700) · 0.1.5 | — / 10 | Or · Légendaire | Scénario; Progrès: Ally Played Construct; Doomed; Déployer · Self Unit Board All · Cible: Invoquer un jeton avec puissance 2 #0 · par tour 1; Chapitre 1: Ally Unit Board All · Cible: Armure 2 · par tour 1; Chapitre 2: Ally Unit Board All · Cible: Réarme 2 · par tour 1 |
-| Volkar Field Workshop (card_1701) · 0.1.5 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 0 · par tour 1 |
-| Volkar Hidden Snare (card_1702) · 0.1.5 | — / 4 | Bronze · Rare | Piège; Révéler: Unité ennemie jouée; Réaction au piège · Conseil d'unité ennemie Puissance la plus élevée · Cible: Dégâts 3 · par tour 1 |
-| Volkar Signal Keeper (card_1703) · 0.1.5 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
-| Volkar Unexpected Ally (card_1704) · 0.1.5 | 4 / 5 | Bronze · Rare | Ally Joue · si la carte de déclenchement a une catégorie Construct · Self Unit Board All · Cible : Armure 1 · par tour 1 |
-| Volkar Sworn Vanguard (card_1705) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
-| Volkar Challenge Bearer (card_1706) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
-| Volkar Unwritten Possibilities (card_1707) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
-| Volkar Shared Instinct (card_1708) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1704 · par tour 1 |
-| Volkar Relic Breaker (card_1709) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
-| Volkar Timber Ballista (card_1800) · 0.1.5 | 4 / 5 | Bronze · Rare | Armure 1; Ordre: Dommages 2; Temps de recharge 2; Réapprovisionnement 1; Équipage 1; Machine Ballista en bois |
-| Volkar Counterweight Catapult (card_1801) · 0.1.5 | 5 / 7 | Bronze · Rare | Armure 1; Ordre: Socket burst 2; Refroidissement 3; Réapprovisionnement 1; Patience 1; Catapulte à contrepoids machine |
-| Volkar Armored Cannon (card_1802) · 0.1.5 | 5 / 8 | Or · Epic | Armure 2; Ordre: Piercing d'armure 3; Temps de recharge 3; Réapprovisionnement 1; Dépenses 1; Canon blindé |
-| Volkar Automatic Loader (card_1803) · 0.1.5 | 4 / 6 | Bronze · Rare | Armure 1; Turn End · Moteur Ally Unit adjacent à All Siege · Cible: Réduire le temps de recharge uniquement 1 · par tour 1; Chargeur automatique de machine |
-| Volkar Steam Ballista (card_1804) · 0.1.5 | 5 / 7 | Bronze · Rare | Armure 3; Ordre: Décharge d'armure 2; Temps de recharge 2; Réapprovisionnement 1; Équipage 1; Machine à vapeur Ballista |
-| Volkar Repeating Cannon (card_1805) · 0.1.5 | 4 / 10 | Or · Epic | Armure 1; Ordre: Dégâts 1; Temps de recharge 2; Réapprovisionnement 1; Un temps de recharge allié diminue · si la carte de déclenchement a catégorie Siège moteur · Unité de l'ennemi Conseil aléatoire · Cible: Dégâts 1 · par tour 3; Machine répétition Canon |
-| Volkar Armored Crew (card_1806) · 0.1.5 | 4 / 5 | Bronze · Rare | Armure 2; Défenseur 1; Déploiement · Unité alliée adjacente à toutes · Cible : Armure 1 · par tour 1 |
-| Volkar Field Engineer (card_1807) · 0.1.5 | 4 / 5 | Bronze · Rare | Armure 1 ; Déployer · Ally Unit Board Choisir le moteur de siège · Cible : Réarme 2 · par tour 1 |
-| Volkar Ammunition Cart (card_1808) · 0.1.5 | 5 / 5 | Bronze · Rare | Armor 1; Trade 1; Turn End · Self Unit Board Tous · Cible: Livraison 1 · par tour 1; Chariot de munitions machine |
-| Volkar Field Maintenance (card_1809) · 0.1.5 | — / 5 | Bronze · Rare | Déployez · Ally Unit Board Choisissez le moteur de siège · Cible : Arrière 2 · par tour 1 |
-| Volkar Bombardment Order (card_1810) · 0.1.5 | — / 4 | Bronze · Rare | Déploiement · Rangée de l'unité ennemie Tous · Cible : Dégâts 1 · par tour 1 |
-| Volkar Siege Encampment (card_1811) · 0.1.5 | — / 12 | Or · Légendaire | Scénario ; Progrès : Moteur de siège allié ; Destiné ; Déployer · Self Unit Board Tous · Cible : Invoquer 1 unité avec des capacités et Doomed; pas de déploiement1800 · par tour 1; Chapitre 1: Self Unit Board Tous · Cible : Invoquer 1 unité avec des capacités et Doomed; pas de déploiement1801 · par tour 1; Chapitre 2: Ally Unit Board All Siege moteur · Cible: Rearm 2 · par tour 1 |
+| Volkar Founding Chronicle (card_1700) · 0.1.6 | — / 10 | Or · Légendaire | Scénario; Progrès: Ally Played Construct; Doomed; Déployer · Self Unit Board All · Cible: Invoquer un jeton avec puissance 2 #0 · par tour 1; Chapitre 1: Ally Unit Board All · Cible: Armure 2 · par tour 1; Chapitre 2: Ally Unit Board All · Cible: Réarme 2 · par tour 1 |
+| Volkar Field Workshop (card_1701) · 0.1.6 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 0 · par tour 1 |
+| Volkar Hidden Snare (card_1702) · 0.1.6 | — / 4 | Bronze · Rare | Piège; Révéler: Unité ennemie jouée; Réaction au piège · Conseil d'unité ennemie Puissance la plus élevée · Cible: Dégâts 3 · par tour 1 |
+| Volkar Signal Keeper (card_1703) · 0.1.6 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
+| Volkar Unexpected Ally (card_1704) · 0.1.6 | 4 / 5 | Bronze · Rare | Ally Joue · si la carte de déclenchement a une catégorie Construct · Self Unit Board All · Cible : Armure 1 · par tour 1 |
+| Volkar Sworn Vanguard (card_1705) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
+| Volkar Challenge Bearer (card_1706) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
+| Volkar Unwritten Possibilities (card_1707) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
+| Volkar Shared Instinct (card_1708) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1704 · par tour 1 |
+| Volkar Relic Breaker (card_1709) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
+| Volkar Timber Ballista (card_1800) · 0.1.6 | 4 / 5 | Bronze · Rare | Armure 1; Ordre: Dommages 2; Temps de recharge 2; Réapprovisionnement 1; Équipage 1; Machine Ballista en bois |
+| Volkar Counterweight Catapult (card_1801) · 0.1.6 | 5 / 7 | Bronze · Rare | Armure 1; Ordre: Socket burst 2; Refroidissement 3; Réapprovisionnement 1; Patience 1; Catapulte à contrepoids machine |
+| Volkar Armored Cannon (card_1802) · 0.1.6 | 5 / 8 | Or · Epic | Armure 2; Ordre: Piercing d'armure 3; Temps de recharge 3; Réapprovisionnement 1; Dépenses 1; Canon blindé |
+| Volkar Automatic Loader (card_1803) · 0.1.6 | 4 / 6 | Bronze · Rare | Armure 1; Turn End · Moteur Ally Unit adjacent à All Siege · Cible: Réduire le temps de recharge uniquement 1 · par tour 1; Chargeur automatique de machine |
+| Volkar Steam Ballista (card_1804) · 0.1.6 | 5 / 7 | Bronze · Rare | Armure 3; Ordre: Décharge d'armure 2; Temps de recharge 2; Réapprovisionnement 1; Équipage 1; Machine à vapeur Ballista |
+| Volkar Repeating Cannon (card_1805) · 0.1.6 | 4 / 10 | Or · Epic | Armure 1; Ordre: Dégâts 1; Temps de recharge 2; Réapprovisionnement 1; Un temps de recharge allié diminue · si la carte de déclenchement a catégorie Siège moteur · Unité de l'ennemi Conseil aléatoire · Cible: Dégâts 1 · par tour 3; Machine répétition Canon |
+| Volkar Armored Crew (card_1806) · 0.1.6 | 4 / 5 | Bronze · Rare | Armure 2; Défenseur 1; Déploiement · Unité alliée adjacente à toutes · Cible : Armure 1 · par tour 1 |
+| Volkar Field Engineer (card_1807) · 0.1.6 | 4 / 5 | Bronze · Rare | Armure 1 ; Déployer · Ally Unit Board Choisir le moteur de siège · Cible : Réarme 2 · par tour 1 |
+| Volkar Ammunition Cart (card_1808) · 0.1.6 | 5 / 5 | Bronze · Rare | Armor 1; Trade 1; Turn End · Self Unit Board Tous · Cible: Livraison 1 · par tour 1; Chariot de munitions machine |
+| Volkar Field Maintenance (card_1809) · 0.1.6 | — / 5 | Bronze · Rare | Déployez · Ally Unit Board Choisissez le moteur de siège · Cible : Arrière 2 · par tour 1 |
+| Volkar Bombardment Order (card_1810) · 0.1.6 | — / 4 | Bronze · Rare | Déploiement · Rangée de l'unité ennemie Tous · Cible : Dégâts 1 · par tour 1 |
+| Volkar Siege Encampment (card_1811) · 0.1.6 | — / 12 | Or · Légendaire | Scénario ; Progrès : Moteur de siège allié ; Destiné ; Déployer · Self Unit Board Tous · Cible : Invoquer 1 unité avec des capacités et Doomed; pas de déploiement1800 · par tour 1; Chapitre 1: Self Unit Board Tous · Cible : Invoquer 1 unité avec des capacités et Doomed; pas de déploiement1801 · par tour 1; Chapitre 2: Ally Unit Board All Siege moteur · Cible: Rearm 2 · par tour 1 |
 
 ## Avalin — 52
 
@@ -141,16 +141,16 @@ Sur mobile, faites défiler la table horizontalement pour lire la colonne de cap
 | Bloom Again (card_1047) · 0.1.1 | — / 12 | Or · Légendaire | Capacité de base : Resurrection 8 |
 | Mycelial Guardian (card_1201) · 0.1.1 | 4 / 5 | Bronze · Rare | Capacité de base: Guérir 2; Ordre: Vitalité 2; Symbiose 1; Nourriture 1; Refroidissement 2; Compagnon + 1024; Modèle de champignon (GeckoLib) |
 | Forest Trail (card_1601) · 0.1.1 | — / 4 | Bronze · Rare | Capacité de base : Unité de recherche 12 |
-| Avalin Founding Chronicle (card_1710) · 0.1.5 | — / 10 | Or · Légendaire | Scénario; Progrès: Ally Played Beast; Doomed; Déployer · Self Unit Board All · Cible: Invoquer un jeton avec puissance 2 #8 · par tour 1; Chapitre 1: Ally Unit Board All · Cible: Guérir 2 · par tour 1; Chapitre 2: Self Unit Board All · Cible: Invoquer un jeton avec puissance 4 #8 · par tour 1 |
-| Avalin Field Workshop (card_1711) · 0.1.5 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 8 · par tour 1 |
-| Avalin Hidden Snare (card_1712) · 0.1.5 | — / 4 | Bronze · Rare | Piège; Révéler: Ennemi spécial joué; Réaction de piège · Ally Unit Board Puissance la plus faible · Cible: Boost 3 · par tour 1 |
-| Avalin Signal Keeper (card_1713) · 0.1.5 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
-| Avalin Unexpected Ally (card_1714) · 0.1.5 | 4 / 5 | Bronze · Rare | Spécial Joué · si la carte déclenchante a la catégorie Nature · Self Unit Board All · Cible : Boost 1 · par tour 1 |
-| Avalin Sworn Vanguard (card_1715) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
-| Avalin Challenge Bearer (card_1716) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
-| Avalin Unwritten Possibilities (card_1717) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
-| Avalin Shared Instinct (card_1718) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1714 · par tour 1 |
-| Avalin Relic Breaker (card_1719) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
+| Avalin Founding Chronicle (card_1710) · 0.1.6 | — / 10 | Or · Légendaire | Scénario; Progrès: Ally Played Beast; Doomed; Déployer · Self Unit Board All · Cible: Invoquer un jeton avec puissance 2 #8 · par tour 1; Chapitre 1: Ally Unit Board All · Cible: Guérir 2 · par tour 1; Chapitre 2: Self Unit Board All · Cible: Invoquer un jeton avec puissance 4 #8 · par tour 1 |
+| Avalin Field Workshop (card_1711) · 0.1.6 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 8 · par tour 1 |
+| Avalin Hidden Snare (card_1712) · 0.1.6 | — / 4 | Bronze · Rare | Piège; Révéler: Ennemi spécial joué; Réaction de piège · Ally Unit Board Puissance la plus faible · Cible: Boost 3 · par tour 1 |
+| Avalin Signal Keeper (card_1713) · 0.1.6 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
+| Avalin Unexpected Ally (card_1714) · 0.1.6 | 4 / 5 | Bronze · Rare | Spécial Joué · si la carte déclenchante a la catégorie Nature · Self Unit Board All · Cible : Boost 1 · par tour 1 |
+| Avalin Sworn Vanguard (card_1715) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
+| Avalin Challenge Bearer (card_1716) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
+| Avalin Unwritten Possibilities (card_1717) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
+| Avalin Shared Instinct (card_1718) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1714 · par tour 1 |
+| Avalin Relic Breaker (card_1719) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
 
 ## Nevra — 61
 
@@ -207,16 +207,16 @@ Sur mobile, faites défiler la table horizontalement pour lire la colonne de cap
 | Secret Dossier (card_1326) · 0.1.1 | — / 4 | Bronze · Fréquent | Capacité de base : Infiltrat 1 |
 | Change of Allegiance (card_1327) · 0.1.1 | — / 8 | Or · Epic | Capacité de base : Saisie 3 |
 | Echo Tracing (card_1603) · 0.1.1 | — / 4 | Bronze · Rare | Capacité de base : Unité de recherche 15 |
-| Nevra Founding Chronicle (card_1730) · 0.1.5 | — / 10 | Or · Légendaire | Scénario; Progrès: Agent Allié Joué; Doomed; Déployer · Self Unit Board Tous · Cible : Invoquez un jeton avec puissance 2 #24 · par tour 1; Chapitre 1: Enemy Unit Board Puissance maximale · Cible : Infiltrer 1 · par tour 1; Chapitre 2: Espionnage de cible ≥ 1 · Enemy Unit Board Puissance maximale · Cible : Verrouillage 1Cible : Dégâts 3 · par tour 1 |
-| Nevra Field Workshop (card_1731) · 0.1.5 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 24 · par tour 1 |
-| Nevra Hidden Snare (card_1732) · 0.1.5 | — / 4 | Bronze · Rare | Piège; Révéler: Ennemi spécial joué; Piège réaction · Ennemi Unité Conseil Plus grande puissance · Cible: Verrouillage 1 · par tour 1 |
-| Nevra Signal Keeper (card_1733) · 0.1.5 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
-| Nevra Unexpected Ally (card_1734) · 0.1.5 | 4 / 5 | Bronze · Rare | Ally · Évènement généré à l'extérieur du pont de départ ≥ 1 · Conseil d'administration de l'unité autonome Tous · Cible : Boost 1 · par tour 1 |
-| Nevra Sworn Vanguard (card_1735) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
-| Nevra Challenge Bearer (card_1736) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
-| Nevra Unwritten Possibilities (card_1737) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
-| Nevra Shared Instinct (card_1738) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1734 · par tour 1 |
-| Nevra Relic Breaker (card_1739) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
+| Nevra Founding Chronicle (card_1730) · 0.1.6 | — / 10 | Or · Légendaire | Scénario; Progrès: Agent Allié Joué; Doomed; Déployer · Self Unit Board Tous · Cible : Invoquez un jeton avec puissance 2 #24 · par tour 1; Chapitre 1: Enemy Unit Board Puissance maximale · Cible : Infiltrer 1 · par tour 1; Chapitre 2: Espionnage de cible ≥ 1 · Enemy Unit Board Puissance maximale · Cible : Verrouillage 1Cible : Dégâts 3 · par tour 1 |
+| Nevra Field Workshop (card_1731) · 0.1.6 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 24 · par tour 1 |
+| Nevra Hidden Snare (card_1732) · 0.1.6 | — / 4 | Bronze · Rare | Piège; Révéler: Ennemi spécial joué; Piège réaction · Ennemi Unité Conseil Plus grande puissance · Cible: Verrouillage 1 · par tour 1 |
+| Nevra Signal Keeper (card_1733) · 0.1.6 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
+| Nevra Unexpected Ally (card_1734) · 0.1.6 | 4 / 5 | Bronze · Rare | Ally · Évènement généré à l'extérieur du pont de départ ≥ 1 · Conseil d'administration de l'unité autonome Tous · Cible : Boost 1 · par tour 1 |
+| Nevra Sworn Vanguard (card_1735) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
+| Nevra Challenge Bearer (card_1736) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
+| Nevra Unwritten Possibilities (card_1737) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
+| Nevra Shared Instinct (card_1738) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1734 · par tour 1 |
+| Nevra Relic Breaker (card_1739) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
 
 ## Clans de Mistwake — 41
 
@@ -253,16 +253,16 @@ Sur mobile, faites défiler la table horizontalement pour lire la colonne de cap
 | Bloodbound Oath (card_1348) · 0.1.1 | — / 4 | Bronze · Rare | Capacité de base : Rite sanguin 4 |
 | Tidal Veil (card_1349) · 0.1.1 | — / 5 | Bronze · Rare | Capacité de base : Champ de pluie 3 |
 | Ancestral Bearings (card_1605) · 0.1.1 | — / 4 | Bronze · Rare | Capacité de base : Unité de recherche 12 |
-| Haemu Founding Chronicle (card_1740) · 0.1.5 | — / 10 | Or · Légendaire | Scénario; Progrès: Ally Played Raider; Doomed; Déployer · Self Unit Board Tous · Cible: Invoquer un jeton avec puissance 2 #1300 · par tour 1; Chapitre 1: Ally Unit Board Tous · Cible: Guérir 2 · par tour 1; Chapitre 2: Ally Unit Board Puissance la plus faible · Cible: Rite sanguin 5 · par tour 1 |
-| Haemu Field Workshop (card_1741) · 0.1.5 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 1300 · par tour 1 |
-| Haemu Hidden Snare (card_1742) · 0.1.5 | — / 4 | Bronze · Rare | Piège; Révéler: Unité ennemie jouée; Réaction au piège · Tableau de l'unité ennemie Puissance la plus élevée · Cible: Saignement 3 · par tour 1 |
-| Haemu Signal Keeper (card_1743) · 0.1.5 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
-| Haemu Unexpected Ally (card_1744) · 0.1.5 | 4 / 5 | Bronze · Rare | Ally endommagé · Self Unit Board Tous · Cible: Boost 1 · per turn 1 |
-| Haemu Sworn Vanguard (card_1745) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
-| Haemu Challenge Bearer (card_1746) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
-| Haemu Unwritten Possibilities (card_1747) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
-| Haemu Shared Instinct (card_1748) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1744 · par tour 1 |
-| Haemu Relic Breaker (card_1749) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
+| Haemu Founding Chronicle (card_1740) · 0.1.6 | — / 10 | Or · Légendaire | Scénario; Progrès: Ally Played Raider; Doomed; Déployer · Self Unit Board Tous · Cible: Invoquer un jeton avec puissance 2 #1300 · par tour 1; Chapitre 1: Ally Unit Board Tous · Cible: Guérir 2 · par tour 1; Chapitre 2: Ally Unit Board Puissance la plus faible · Cible: Rite sanguin 5 · par tour 1 |
+| Haemu Field Workshop (card_1741) · 0.1.6 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 1300 · par tour 1 |
+| Haemu Hidden Snare (card_1742) · 0.1.6 | — / 4 | Bronze · Rare | Piège; Révéler: Unité ennemie jouée; Réaction au piège · Tableau de l'unité ennemie Puissance la plus élevée · Cible: Saignement 3 · par tour 1 |
+| Haemu Signal Keeper (card_1743) · 0.1.6 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
+| Haemu Unexpected Ally (card_1744) · 0.1.6 | 4 / 5 | Bronze · Rare | Ally endommagé · Self Unit Board Tous · Cible: Boost 1 · per turn 1 |
+| Haemu Sworn Vanguard (card_1745) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
+| Haemu Challenge Bearer (card_1746) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
+| Haemu Unwritten Possibilities (card_1747) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
+| Haemu Shared Instinct (card_1748) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1744 · par tour 1 |
+| Haemu Relic Breaker (card_1749) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
 
 ## Roden League — 52
 
@@ -310,16 +310,16 @@ Sur mobile, faites défiler la table horizontalement pour lire la colonne de cap
 | Expedition Gear (card_1071) · 0.1.1 | — / 4 | Bronze · Fréquent | Capacité de base: Livraison d'approvisionnement 3 |
 | Bone Skirmisher (card_1202) · 0.1.1 | 4 / 5 | Bronze · Rare | Capacité de base: Dégâts 2; Ordre: Dégâts 1; Formation 1; Commerce 1; Dépenses 1; Modèle squelette (GeckoLib) |
 | Caravan Dispatch (card_1602) · 0.1.1 | — / 4 | Bronze · Rare | Capacité de base : Unité de recherche 14 |
-| Roden Founding Chronicle (card_1720) · 0.1.5 | — / 10 | Or · Légendaire | Scénario; Progrès: Ally Played Merchant; Doomed; Déployer · Self Unit Board All · Cible: Invoquer un jeton avec puissance 2 #16 · par tour 1; Chapitre 1: Self Unit Board All · Cible: Livraison 3 · par tour 1; Chapitre 2: Ennemi Unit Board Puissance la plus élevée · Cible: Marquer et frapper 4 · par tour 1 |
-| Roden Field Workshop (card_1721) · 0.1.5 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 16 · par tour 1 |
-| Roden Hidden Snare (card_1722) · 0.1.5 | — / 4 | Bronze · Rare | Piège; Révéler: Unité ennemie jouée; Réaction au piège · Unité ennemie Conseil Puissance la plus élevée · Cible: Marquer et frapper 1 · par tour 1 |
-| Roden Signal Keeper (card_1723) · 0.1.5 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
-| Roden Unexpected Ally (card_1724) · 0.1.5 | 4 / 5 | Bronze · Rare | Fournitures dépensées · Self Unit Board All · Cible : Boost 1 · par tour 1 |
-| Roden Sworn Vanguard (card_1725) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
-| Roden Challenge Bearer (card_1726) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
-| Roden Unwritten Possibilities (card_1727) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
-| Roden Shared Instinct (card_1728) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1724 · par tour 1 |
-| Roden Relic Breaker (card_1729) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
+| Roden Founding Chronicle (card_1720) · 0.1.6 | — / 10 | Or · Légendaire | Scénario; Progrès: Ally Played Merchant; Doomed; Déployer · Self Unit Board All · Cible: Invoquer un jeton avec puissance 2 #16 · par tour 1; Chapitre 1: Self Unit Board All · Cible: Livraison 3 · par tour 1; Chapitre 2: Ennemi Unit Board Puissance la plus élevée · Cible: Marquer et frapper 4 · par tour 1 |
+| Roden Field Workshop (card_1721) · 0.1.6 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 16 · par tour 1 |
+| Roden Hidden Snare (card_1722) · 0.1.6 | — / 4 | Bronze · Rare | Piège; Révéler: Unité ennemie jouée; Réaction au piège · Unité ennemie Conseil Puissance la plus élevée · Cible: Marquer et frapper 1 · par tour 1 |
+| Roden Signal Keeper (card_1723) · 0.1.6 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
+| Roden Unexpected Ally (card_1724) · 0.1.6 | 4 / 5 | Bronze · Rare | Fournitures dépensées · Self Unit Board All · Cible : Boost 1 · par tour 1 |
+| Roden Sworn Vanguard (card_1725) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
+| Roden Challenge Bearer (card_1726) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
+| Roden Unwritten Possibilities (card_1727) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
+| Roden Shared Instinct (card_1728) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1724 · par tour 1 |
+| Roden Relic Breaker (card_1729) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
 
 ## Morga Brood — 41
 
@@ -356,16 +356,16 @@ Sur mobile, faites défiler la table horizontalement pour lire la colonne de cap
 | Miasma Grove (card_1428) · 0.1.1 | — / 5 | Bronze · Rare | Capacité de base: Miasma Field 3 |
 | Colony Pulse (card_1429) · 0.1.1 | — / 4 | Bronze · Rare | Capacité de base : Coup de pouce 1 |
 | Mycelial Trail (card_1606) · 0.1.1 | — / 4 | Bronze · Rare | Capacité de base : Unité de recherche 12 |
-| Morga Founding Chronicle (card_1750) · 0.1.5 | — / 10 | Or · Légendaire | Scénario; Progrès: Ally Played Swarm; Doomed; Déployer · Self Unit Board All · Cible: Invoquer un jeton avec puissance 2  # 1400 · par tour 1; Chapitre 1: Ally Unit Board All · Cible: Semer un husk 1 · par tour 1; Chapitre 2: Self Unit Board All · Cible: Invoquer un jeton avec puissance 4 #1400· par tour 1 |
-| Morga Field Workshop (card_1751) · 0.1.5 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 1400 · par tour 1 |
-| Morga Hidden Snare (card_1752) · 0.1.5 | — / 4 | Bronze · Rare | Piège; Révéler: Unité ennemie jouée; Réaction au piège · Unité ennemie Conseil Puissance la plus élevée · Cible: Poison 1 · par tour 1 |
-| Morga Signal Keeper (card_1753) · 0.1.5 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
-| Morga Unexpected Ally (card_1754) · 0.1.5 | 4 / 5 | Bronze · Rare | Ally Détruit · Self Unit Board Tous · Cible : Boost 1 · par tour 1 |
-| Morga Sworn Vanguard (card_1755) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
-| Morga Challenge Bearer (card_1756) · 0.1.5 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
-| Morga Unwritten Possibilities (card_1757) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
-| Morga Shared Instinct (card_1758) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1754 · par tour 1 |
-| Morga Relic Breaker (card_1759) · 0.1.5 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
+| Morga Founding Chronicle (card_1750) · 0.1.6 | — / 10 | Or · Légendaire | Scénario; Progrès: Ally Played Swarm; Doomed; Déployer · Self Unit Board All · Cible: Invoquer un jeton avec puissance 2  # 1400 · par tour 1; Chapitre 1: Ally Unit Board All · Cible: Semer un husk 1 · par tour 1; Chapitre 2: Self Unit Board All · Cible: Invoquer un jeton avec puissance 4 #1400· par tour 1 |
+| Morga Field Workshop (card_1751) · 0.1.6 | — / 7 | Or · Epic | Emplacement; Résilience; Déployer · Ally Unit Board All · Cible: Armure 1 · par tour 1; Ordre · Self Unit Board All · Cible: Générer en main 1400 · par tour 1 |
+| Morga Hidden Snare (card_1752) · 0.1.6 | — / 4 | Bronze · Rare | Piège; Révéler: Unité ennemie jouée; Réaction au piège · Unité ennemie Conseil Puissance la plus élevée · Cible: Poison 1 · par tour 1 |
+| Morga Signal Keeper (card_1753) · 0.1.6 | 4 / 5 | Bronze · Rare | Compteur 2 ; Minuterie 2 ; Tour de fin · Self Unit Board All · Cible : Réduire compteur 1 · par tour 1 ; Compteur atteint zéro · Self Unit Board All · Cible : Bouclier 1 · par tour 1 ; Minuterie expire · Self Unit Board All · Cible : Boost 2 · par tour 1 |
+| Morga Unexpected Ally (card_1754) · 0.1.6 | 4 / 5 | Bronze · Rare | Ally Détruit · Self Unit Board Tous · Cible : Boost 1 · par tour 1 |
+| Morga Sworn Vanguard (card_1755) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · si le deck de départ ne contient pas de neutres · Self Unit Board All · Cible : Boost units in deck 1 · per turn 1; Turn End · Self Hand size ≤ 3 · Self Unit Board All · Cible : Boost 1 · per turn 1 |
+| Morga Challenge Bearer (card_1756) · 0.1.6 | 4 / 5 | Bronze · Rare | Déployez · Carte d'unité ennemie Choisissez · Cible: Clash · par tour 1; Coup fatal · Carte d'unité autonome Tous · Cible: Boost 2 · par tour 1 |
+| Morga Unwritten Possibilities (card_1757) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Self Unit Board Tous · Cible : Créez et jouez à l'un des trois choix au maximum 5 · par tour 1 |
+| Morga Shared Instinct (card_1758) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Ally Unit Board Choisir · Cible : Infuser des capacités et des catégories  1754 · par tour 1 |
+| Morga Relic Breaker (card_1759) · 0.1.6 | — / 4 | Bronze · Rare | Déployer · Planche d'artefact ennemi Choisir · Cible : Détruire l'artefact · par tour 1 |
 
 ## Neutre — 23
 

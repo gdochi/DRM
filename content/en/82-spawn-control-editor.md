@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Editor
 section: editor
 status: Draft
-version: 0.1.4
+version: 0.1.5
 audience: Spawn-rule creators
 tags:
   - editor
@@ -48,7 +48,7 @@ The catalog chooses the target for new rules.
 - Preview the selected target in the middle panel.
 - Use the bottom `Native: ON/OFF` action for a registered entity. It does not apply to clones.
 
-Projectiles, effects, vehicles, and other non-Mob EntityTypes are excluded. Special bosses may appear with Experimental support status.
+Ordinary projectiles, effects and other non-Mob EntityTypes are excluded from standard targets. Supported vehicles and saved vehicle templates appear through dedicated integrations; see [vehicle spawning](#dochi-spawn-control/spawn-control-vehicles). Special bosses may have Experimental support status.
 
 ## Middle: preview and Natural Spawn Rules
 
@@ -94,9 +94,17 @@ The EntityType or clone label under the inspector is the **actual target owned b
 | Action | World impact |
 | --- | --- |
 | `Check Here` | Evaluate conditions and caps at the current location without creating an entity |
-| `Spawn One` | Create one real managed entity after confirmation |
+| `Spawn One` | Create a real managed entity after confirmation, or the complete enabled squad |
 | `Clear Generated` | Remove generated entities currently tracked by this mod |
 
 Diagnostics submit the current draft for temporary server-side evaluation without first replacing the active configuration file.
 
 Rule filters change list presentation without saving the document. Escape or an outside click cancels an open dropdown without activating background controls. Narrow panels wrap controls onto the next line.
+
+## Composition and diagnostics in 0.1.5
+
+On Forge 1.20.1, the inspector has World, Spawn, Gear, Squad and Advanced tabs. Open **World → Locations and guard squad → Edit** for location filters. The Squad tab also lets you browse the left catalog, use **Add to squad**, and edit member counts and equipment. Browsing keeps the current squad rule selected.
+
+On Fabric/NeoForge, scroll down the inspector to **Locations and guard squad → Edit**. See [structure guards](#dochi-spawn-control/spawn-control-guards) for the two detail tabs. Apply updates the rule draft; Save in the main editor applies it to the server.
+
+Advanced Diagnostics opens a centered detail window. Read long results with the wheel or scrollbar. With a squad enabled, the confirmed spawn test creates the entire squad. Forge labels that action **Spawn Squad**.

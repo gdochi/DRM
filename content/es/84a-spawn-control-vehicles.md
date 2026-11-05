@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: aparición de vehículos
 section: operations
 status: Guía
-version: 0.1.4
+version: 0.1.5
 audience: Creadores / operadores de servidores
 translationSource: en
 translationMethod: assisted
@@ -15,7 +15,7 @@ translationMethod: assisted
 
 ## Ámbito
 
-Spawn Control **0.1.4** crea vehículos modificados guardados y vehículos compatibles EntityTypes a partir de generadores colocados y perfiles de engendro natural. DRM y mods de vehículos son integraciones opcionales.
+Spawn Control **0.1.5** crea vehículos modificados guardados y vehículos compatibles EntityTypes a partir de generadores colocados y perfiles de engendro natural. DRM y mods de vehículos son integraciones opcionales.
 
 | Mod vehículo | Objetivos |
 | --- | --- |

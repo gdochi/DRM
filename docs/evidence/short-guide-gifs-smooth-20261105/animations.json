@@ -1,0 +1,38 @@
+[
+  {
+    "asset": "assets/media/guides/short-gifs-20261105/nurse-joy-treatment.gif",
+    "sha256": "f35ce1ca5594bf4e4b4458d1cd89e590a5952b4c6d6de5691f97da1fb05d73b5",
+    "frameCount": 547,
+    "durationMs": 35900,
+    "encodedFps": 20,
+    "sourceFrameCount": 703,
+    "sourceGapMedianMs": 50.17349999999897,
+    "sourceGapP95Ms": 53.147000000000844,
+    "sourceGapMaxMs": 82.58430000000044,
+    "finalWorldLimitSeconds": null
+  },
+  {
+    "asset": "assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif",
+    "sha256": "207ba43638eb1675f2d9de1fb884a5e067d66fbde2011af4a003a3763483466a",
+    "frameCount": 361,
+    "durationMs": 18800,
+    "encodedFps": 20,
+    "sourceFrameCount": 508,
+    "sourceGapMedianMs": 50.178100000000086,
+    "sourceGapP95Ms": 54.067299999998795,
+    "sourceGapMaxMs": 77.28119999999944,
+    "finalWorldLimitSeconds": 6.0
+  },
+  {
+    "asset": "assets/media/guides/short-gifs-20261105/remnant-place-and-read.gif",
+    "sha256": "e465f07163ac3738a634dc623c8ddb06ffc03be2b68da7ab2dd83b30720f9606",
+    "frameCount": 380,
+    "durationMs": 19750,
+    "encodedFps": 20,
+    "sourceFrameCount": 380,
+    "sourceGapMedianMs": 50.19710000000123,
+    "sourceGapP95Ms": 63.943599999999606,
+    "sourceGapMaxMs": 68.6300999999994,
+    "finalWorldLimitSeconds": null
+  }
+]

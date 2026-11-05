@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: DNPC modelo geração
 section: editor
 status: Guia
-version: 0.1.4
+version: 0.1.5
 audience: Criadores / operadores de servidor
 translationSource: en
 translationMethod: assisted
@@ -49,9 +49,9 @@ Seguindo esse fluxo criou um novo NPC e preservou o capacete de ferro original. 
 
 ![Os originais e gerados NPCs equipados com capacete ao lado do desovador.](assets/media/guides/spawn-control-014-neo1211/spawn-template-runtime.png "Spawn Control 0.1.4  +  DNPC 0.1.3 / NeoForge 1.21.1. Novos NPCs retêm o capacete de ferro salvo. O limite de propriedade padrão é 6, então ativações posteriores podem adicionar mais NPCs.")
 
-## geração natural — 1.20.1 / 1.21.1
+## Geração natural — todos os alvos da 0.1.5
 
-Abra o editor com a tecla **K** padrão e encontre o modelo NPC salvo. Use **Add Rule**, defina seu bioma, horas, distâncias e quantidades, habilite-o e economize. O NPC padrão e um modelo salvo são alvos separados. Para 26.3, use o método place-spawner acima.
+Na 0.1.5, modelos DNPC salvos funcionam em regras naturais no Forge 1.20.1, Fabric/NeoForge 1.21.1 e 26.3. Abra o editor com **K**, encontre o modelo, use **Add Rule**, configure bioma, horário, distância e quantidades, ative e salve. O NPC padrão e o modelo salvo são alvos distintos. A falta do modelo ou da API provedora do DRM rejeita essa geração em vez de criar um NPC vazio.
 
 ## Entradas perdidas ou aparência errada
 

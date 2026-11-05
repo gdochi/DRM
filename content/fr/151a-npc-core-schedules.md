@@ -37,6 +37,12 @@ Recherchez dans la liste des actions des emplois tels que l'exploitation foresti
 
 ![Le sélecteur d'action de la ligne de temps avec des catégories à gauche, des activités spécifiques à droite et une recherche ci-dessus.](assets/media/guides/dnpc-012-neo1211/dnpc-action-picker.png "Le mouvement et l’attente contiennent le mouvement, l’attente, l’équitation et la patrouille. Choisissez une catégorie, puis l'activité réelle à droite.")
 
+## Attribuer un lit
+
+![Choisir Assign bed dans Houses, attribuer et enregistrer le lit, puis voir le PNJ marcher et dormir.](assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif "Capture en jeu avec DNPC 0.1.3 / NeoForge 1.21.1, interface anglaise. Un horaire nocturne était préparé dans le monde de capture ; l'attribution du lit et le sommeil réel ont été vérifiés.")
+
+Choisissez **Houses → Assign bed**, puis faites **Maj+clic droit** sur le lit. De retour dans l'éditeur, vérifiez **Bed assigned** et cliquez sur **Save to NPC**. Ajoutez **Sleep in assigned bed** à la période nocturne et activez **Enable schedule**. La position de la maison et son lit se définissent séparément.
+
 ## Commencer par un exemple
 
 Utilisez **Load schedule**, choisissez un exemple, puis modifiez ses emplacements et ses cibles pour votre monde. Filtrer selon les horaires généraux / militaires et les addons requis.

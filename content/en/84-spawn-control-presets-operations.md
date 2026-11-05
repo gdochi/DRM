@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Presets and Operations
 section: operations
 status: Guide
-version: 0.1.4
+version: 0.1.5
 audience: Server operators and content distributors
 tags:
   - presets
@@ -137,6 +137,12 @@ Check whether native spawning and a managed profile are both enabled. After the 
 
 Backing up JSON alone does not restore entities already present in the world or data owned by other mods.
 
-## 0.1.4 NPC and vehicle integration
+## NPC and vehicle integration in 0.1.5
 
-DRM, CustomNPCs, DNPC and Warfare are optional integrations. Default DNPC initialization needs the compatible DRM NPC API; it does not clone saved DNPC templates. See [vehicle saving and spawning](#dochi-spawn-control/spawn-control-vehicles) for MTS, Superb Warfare, Aircraft and Automobility.
+DRM, DNPC and Warfare are optional integrations; CustomNPCs is optional only on 1.20.1/1.21.1. Default DNPC spawning needs the DRM actor API; cloning a saved NPC needs the DRM template provider API and its DNPC template. See [vehicle saving and spawning](#dochi-spawn-control/spawn-control-vehicles) for vehicle-specific steps.
+
+## 0.1.5 presets and world backups
+
+Natural-spawn documents use schema 4. Schemas 2 and 3 remain readable, but avoid resaving presets with new location, squad or equipment settings in older Spawn Control versions. Supply the mods registering member targets and items, plus the original DNPC templates. Advanced 1.20.1 item NBT and later component data are not automatically converted between versions.
+
+Per-structure occupancy and respawn delays live in world saved data, so back up the world with the JSON files. See [structure limits](#dochi-spawn-control/spawn-control-guards).

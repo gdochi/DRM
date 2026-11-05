@@ -1,0 +1,43 @@
+[
+  {
+    "id": "remnant-setter",
+    "status": "verified_native_saved_marker",
+    "detail": "Actual setter placement and Save request; text retained by server"
+  },
+  {
+    "id": "remnant-place-and-read",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgViewScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "scene:remnant-setup",
+      "wait:40",
+      "scene:look-remnant",
+      "wait:20",
+      "gif:start:remnant-place-and-read",
+      "wait:20",
+      "scene:remnant-place",
+      "wait:20",
+      "field:body\u003dFollow the lanterns to reach the village.",
+      "wait:20",
+      "Save",
+      "wait:40",
+      "scene:look-remnant",
+      "verify:remnant-saved",
+      "wait:30",
+      "remnant-read",
+      "wait:40",
+      "clear:chat",
+      "wait:30",
+      "gif:stop"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

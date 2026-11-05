@@ -29,13 +29,13 @@ Les nombres représentent des définitions distinctes de **cartes**. Les tirages
 | 0.1.2 | 2026-10-24 / [1.21.1 télécharger ](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9309263); 26.3 fichiers ajoutés Octobre 25 | Zéro ajout, suppression ou modification des définitions. 352 est conservé. [Détails](#mwent/version-0-1-2) |
 | 0.1.3 | 2026-10-25 / [CurseForge upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9322373) | Définitions intégrées et optionnelles identiques à 0.1.2. 352 est conservé. |
 | 0.1.4 | 2026-10-28 / [CurseForge upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9349914) | Définitions intégrées et optionnelles identiques à 0.1.3. 352 est conservé. |
-| 0.1.5 | 2026-10-30 / nouveau guide de carte | 60 cartes de synergie + douze cartes de siège ajoutées. 335 encastrable + 89 en option + 424. [Détails](#mwent/version-0-1-5) |
-| 0.1.6 | 2026-11-01 / artefact de production locale | 335 + 89 = 424 définitions conservées. Cinq tactiques d'ouverture, l'occupation réelle et la transformation Golem. [Guide](#mwent/version-0-1-6) |
+| 0.1.5 | 2026-10-30 / état local de développement | Registre des mêmes 72 ajouts, désormais regroupés dans la version 0.1.6. [Registre](#mwent/version-0-1-5) |
+| 0.1.6 | 2026-11-03 / registre de publication regroupé | 60 cartes de faction + 12 de siège, soit 424 définitions. Cinq tactiques d’ouverture, occupation réelle d’un emplacement et Golem de puissance 4. [Caractéristiques et guide](#mwent/version-0-1-6) |
 
 0.1.1–0.1.4 partager la puissance, les provisions, les cadres, les raretés, Déployer, Commandes, mots-clés, les références d'apparence et les définitions de cartes facultatives. **Les définitions identiques n'impliquent pas le comportement inchangé du moteur de combat, l'interface utilisateur, l'acquisition ou le traitement du serveur.**
 
 ## Lire les spécifications
 
-Les [catalogue actuel](#mwent/card-catalog) liste les identités stables, le pouvoir, les provisions et les capacités, 0.1.1 des 0.1.5 additions. En 0.1.5, la puissance existante, les provisions, les cadres, la rareté et l'héritage Déploiement, Ordre et définitions de mots clés restent intacts. Les nouveaux champs par défaut pour les capacités créées ne sont pas comptés comme des modifications de solde des cartes existantes.
+Les [catalogue actuel](#mwent/card-catalog) liste les identités stables, le pouvoir, les provisions et les capacités, 0.1.1 des 0.1.6 additions. En 0.1.6, la puissance existante, les provisions, les cadres, la rareté et l'héritage Déploiement, Ordre et définitions de mots clés restent intacts. Les nouveaux champs par défaut pour les capacités créées ne sont pas comptés comme des modifications de solde des cartes existantes.
 
 L'extraction de l'artefact réel 0.1.6 confirme également que ces définitions sont conservées. Les tactiques d'ouverture ne sont pas tirées d'un jeu, elles n'augmentent donc pas le nombre 424. Le statut de téléchargement public reste distinct de la vérification des fichiers locaux.

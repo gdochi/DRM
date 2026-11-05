@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Configuração
 section: setup
 status: Rascunho
-version: 0.1.4
+version: 0.1.5
 audience: Operadores de servidor pela primeira vez
 tags:
   - installation
@@ -19,7 +19,9 @@ translationMethod: assisted
 
 ## Instalar e abrir o editor
 
-Use Spawn Control 0.1.4 para Forge 1.20.1, Fabric/NeoForge 1.21.1 ou o alvo separado 26.3. Corresponder versões de servidor/cliente e carregadores; Fabric também precisa de Fabric API.
+Use Spawn Control 0.1.5 para Forge 1.20.1, Fabric/NeoForge 1.21.1 ou o alvo separado 26.3. Corresponder versões de servidor/cliente e carregadores; Fabric também precisa de Fabric API.
+
+Os alvos Java da 0.1.5 são 17 para Forge 1.20.1, 21 para Fabric/NeoForge 1.21.1 e 25 para Fabric/NeoForge 26.3. A integração CustomNPCs se limita a 1.20.1/1.21.1; use DNPC na 26.3. Regras de criaturas comuns não exigem um mod de NPC.
 
 Regras comuns de criaturas não exigem outros mods de Dochi. A edição precisa de nível de permissão 2 ou permissão criativa.
 

@@ -18,6 +18,10 @@ translationMethod: assisted
 
 ## Laissez un message dans le monde
 
+![Placer un marqueur avec Remnant Setter, enregistrer son texte et ouvrir le message.](assets/media/guides/short-gifs-20261105/remnant-place-and-read.gif "Capture réelle : DRM 0.3.1 / NeoForge 1.21.1, interface anglaise. Placer → écrire → Save → lire. Le texte enregistré sur le serveur et l'écran de lecture ont été vérifiés.")
+
+Le GIF montre l'option simple pour **écrire directement** : faites un clic droit sur une face de bloc avec le setter, saisissez le texte et choisissez **Save**. Les étapes suivantes expliquent comment lier un message JSON enregistré.
+
 Utilisez **Remnant Msg Editor** pour un message attaché à un endroit sans PNJ. Ouvrez-le à partir du sélecteur d'éditeur du noyau et écrivez son nom et son texte sous **Message**. Ces écrans anglais sont de **DRM 0.3.1 / NeoForge 1.21.1**.
 
 ![Remnant Msg Page Message de l'éditeur, avec navigation de la page à gauche et paramètres de message à droite.](assets/media/guides/drm-031-neo1211/remnant-editor.png "Écrivez d'abord le texte sous Message. Le message enregistré et son marqueur mondial placé sont des étapes distinctes.")

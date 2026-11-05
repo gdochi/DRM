@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Rules
 section: rules
 status: Draft
-version: 0.1.4
+version: 0.1.5
 audience: Operators balancing natural spawns
 tags:
   - conditions
@@ -35,7 +35,7 @@ Every applicable condition must pass for a candidate position.
 | Field | Meaning |
 | --- | --- |
 | `Dimensions` | Empty allows every dimension; selected IDs form an allowlist |
-| `Biomes` | Empty allows every biome; selected IDs form an allowlist |
+| `Biomes` | Match any included ID/tag; empty inclusion allows all. Exclusions take priority |
 | `Minimum Y` / `Maximum Y` | Candidate block height range |
 | `Minimum Light` / `Maximum Light` | Local brightness range from 0 to 15 |
 | `Start Time` / `End Time` | World time from 0 to 23999; an inverted range crosses midnight |
@@ -115,3 +115,9 @@ Lifecycle policy applies only to entities created and marked by this mod. It doe
 :::tip Balancing order
 Verify world conditions and placement first, then tune chance and interval, and adjust caps last. This keeps failed attempts easier to diagnose.
 :::
+
+## Structure filters and squads
+
+In 0.1.5, Locations and guard squad offers included/excluded biome and structure IDs and tags. Structures use the registered bounds of existing generated structures; the filter does not recognize hand-built buildings or generate new structures. Dimension, time, light, distance and existing population caps still apply.
+
+An enabled squad uses explicit member counts instead of Minimum/Maximum Group, with at most 64 entities in total. One probability roll prepares the entire composition; every member needs valid space, conditions and caps before the group is inserted together. See the [guard guide](#dochi-spawn-control/spawn-control-guards) for one-group-per-structure limits and the delay after the last member is removed.

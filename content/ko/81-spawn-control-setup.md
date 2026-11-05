@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: 설치와 첫 규칙
 section: setup
 status: Draft
-version: 0.1.4
+version: 0.1.5
 audience: 처음 사용하는 서버 운영자
 tags:
   - installation
@@ -17,7 +17,9 @@ tags:
 
 ## 설치와 화면 열기
 
-Spawn Control 0.1.4는 Forge 1.20.1, Fabric·NeoForge 1.21.1과 별도 26.3 파일을 사용합니다. 서버와 클라이언트의 버전·로더를 맞추고, Fabric은 Fabric API도 설치합니다.
+Spawn Control 0.1.5는 Forge 1.20.1, Fabric·NeoForge 1.21.1과 별도 26.3 파일을 사용합니다. 서버와 클라이언트의 버전·로더를 맞추고, Fabric은 Fabric API도 설치합니다.
+
+0.1.5의 Java 대상은 Forge 1.20.1이 17, Fabric·NeoForge 1.21.1이 21, Fabric·NeoForge 26.3이 25입니다. CustomNPCs 연동은 1.20.1·1.21.1에만 해당하며, 26.3에서는 DNPC를 사용합니다. 일반 몹 규칙에는 NPC 모드가 필요하지 않습니다.
 
 일반 몹 규칙은 다른 도치 모드 없이 만들 수 있습니다. 편집하려면 OP 2 이상 또는 크리에이티브 권한이 필요합니다.
 

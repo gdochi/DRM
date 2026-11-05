@@ -7,7 +7,7 @@ product: dochi-spawn-control
 category: Règles
 section: rules
 status: Projet
-version: 0.1.4
+version: 0.1.5
 audience: Opérateurs équilibrant les apparition naturels
 tags:
   - conditions
@@ -37,7 +37,7 @@ Chaque condition applicable doit être acceptée pour un poste de candidat.
 | Terrain | Signification |
 | --- | --- |
 | `Dimensions` | Vide autorise toutes les dimensions ; les ID sélectionnés forment une liste d'autorisations |
-| `Biomes` | Empty permet à chaque biome ; les ID sélectionnés forment une liste d'autorisations |
+| `Biomes` | Correspond à un ID/tag inclus ; une inclusion vide autorise tout. Les exclusions sont prioritaires |
 | `Minimum Y` / `Maximum Y` | Plage de hauteur des blocs candidats |
 | `Minimum Light` / `Maximum Light` | Gamme de luminosité locale de 0 à 15 |
 | `Start Time` / `End Time` | Temps du monde de 0 à 23999; une plage inversée traverse minuit |
@@ -117,3 +117,9 @@ La politique de cycle de vie s'applique uniquement aux entités créées et marq
 :::tip Ordre d'équilibrage
 Vérifiez d'abord les conditions et le placement du monde, puis accordez la chance et l'intervalle, et ajustez les capuchons en dernier. Cela rend les tentatives échouées plus faciles à diagnostiquer.
 :::
+
+## Filtres de structures et escouades
+
+En 0.1.5, Locations and guard squad propose des ID et tags de biomes et structures à inclure ou exclure. Les limites enregistrées des structures déjà générées servent de référence ; le filtre ne reconnaît pas les bâtiments manuels et ne génère pas de structures. Dimension, heure, lumière, distance et plafonds restent applicables.
+
+Une escouade activée utilise les effectifs explicites au lieu de Minimum/Maximum Group, avec 64 entités au total au maximum. Un tirage prépare toute la composition ; chaque membre doit satisfaire espace, conditions et plafonds avant l'ajout du groupe complet. Consultez le [guide des gardes](#dochi-spawn-control/spawn-control-guards) pour la limite par structure et le délai après le retrait du dernier membre.
