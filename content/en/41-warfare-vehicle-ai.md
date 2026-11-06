@@ -85,6 +85,12 @@ The server revalidates Creative permission, 64-block distance, seat state, NPC t
 
 ![The Crew seat map of the base SuperbWarfare M1A2.](assets/media/guides/warfare-expanded-031-neo1211/dwe-crew.png "DWE 0.3.1 / NeoForge 1.21.1. Select a seat number to inspect its role and occupant on the right. This is an empty seat map, not a completed boarding result. It is the base SuperbWarfare vehicle, distinct from MCSP M1A2.")
 
+### Watch the crew and vehicle AI
+
+Two prepared DNPC crew members board the base SuperbWarfare M1A2, which follows a **Move To** order. It then switches to stationary combat and fires at a practice target. This is the runtime result; use the Crew page above to choose NPC sources and seats, and configure movement and target rules before enabling AI.
+
+![Two NPCs board an M1A2, the AI drives it, and its weapons fire at a practice target.](assets/media/guides/runtime-videos-20261106/vehicle-ai-crew-drive.mp4 "DW + DWE 0.3.2 + DNPC 0.1.3 + SuperbWarfare 0.8.9.1 / NeoForge 1.21.1, English UI. Prepared crew and policy → boarding → AI movement → target detection and fire.")
+
 ## Profiles, soul stones, and clones
 
 `Save As` and `Load` store reusable vehicle AI profiles under:

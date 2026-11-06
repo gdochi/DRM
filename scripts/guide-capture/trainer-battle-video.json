@@ -1,0 +1,3 @@
+[
+  {"id":"trainer-battle-video","screen":"@world","actions":["scene:trainer-setup","wait:60","look-at:npc","clear:chat","gif:start:trainer-battle-start","scene:trainer-interact","wait:30","scene:trainer-click","wait:220","scene:trainer-verify","gif:stop"]}
+]

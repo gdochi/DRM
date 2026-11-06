@@ -1,0 +1,50 @@
+{
+  "type": "start",
+  "speakerMode": "npc",
+  "title": "",
+  "titleTranslationKey": false,
+  "text": "",
+  "textTranslationKey": false,
+  "textAlignment": "left",
+  "choiceHideUntilTypingComplete": false,
+  "conditions": [],
+  "routes": [
+    {
+      "mode": "and",
+      "actionType": "goto",
+      "goto": "dialogue_1",
+      "linkMode": "internal",
+      "filePath": "",
+      "conditions": [
+        {
+          "type": "tag",
+          "key": "tutorial_enabled",
+          "op": "not",
+          "tag": "",
+          "advancement": "",
+          "faction": "",
+          "objective": "",
+          "quest": "",
+          "task": 0,
+          "amount": 0
+        }
+      ],
+      "actions": []
+    },
+    {
+      "mode": "and",
+      "actionType": "goto",
+      "goto": "dialogue_1",
+      "linkMode": "internal",
+      "filePath": "",
+      "conditions": [],
+      "actions": []
+    }
+  ],
+  "choice": [],
+  "meta": {
+    "kind": "set",
+    "setName": "default_set"
+  },
+  "textStyles": []
+}

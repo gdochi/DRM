@@ -59,15 +59,52 @@ final class GuideScenes {
     private static int warfareNpcId,warfareTargetId;
     private static boolean warfareTracking;
     private static final JsonArray warfareSamples=new JsonArray();
-    static void abort(){recording="";frames.clear();motionScreen=null;spawnWalking=false;warfareTracking=false;Minecraft.getInstance().options.keyUp.setDown(false);}
+    private static int haulNpcId;
+    private static BlockPos haulSource,haulDestination;
+    private static boolean haulTracking;
+    private static final JsonArray haulSamples=new JsonArray();
+    private static int aiVehicleId,driverId,gunnerId,vehicleTargetId;
+    private static Vec3 vehicleOrigin;
+    private static boolean vehicleTracking;
+    private static final JsonArray vehicleSamples=new JsonArray();
+    private static boolean trainerTransitions;
+    static boolean allowsScreenTransition(){return trainerTransitions;}
+    static void abort(){recording="";frames.clear();motionScreen=null;spawnWalking=false;warfareTracking=false;haulTracking=false;vehicleTracking=false;trainerTransitions=false;Minecraft.getInstance().options.keyUp.setDown(false);}
 
     static void register(Path output){
         NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.tick.ServerTickEvent.Post event)->{
             if(warfareTracking)try{sampleWarfare(event.getServer());}catch(Throwable error){frameFailure=error;}
+            if(haulTracking)try{sampleHaul(event.getServer());}catch(Throwable error){frameFailure=error;}
+            if(vehicleTracking)try{sampleVehicle(event.getServer());}catch(Throwable error){frameFailure=error;}
         });
         NeoForge.EVENT_BUS.addListener((RenderFrameEvent.Post event)->{
             try{frame(Minecraft.getInstance(),output);}catch(Throwable error){frameFailure=error;}
         });
+    }
+
+    private static int wheat(net.minecraft.world.Container container){int result=0;for(int i=0;i<container.getContainerSize();i++)if(container.getItem(i).is(net.minecraft.world.item.Items.WHEAT))result+=container.getItem(i).getCount();return result;}
+    private static void sampleVehicle(net.minecraft.server.MinecraftServer server)throws Exception{
+        var level=server.overworld();var vehicle=level.getEntity(aiVehicleId);Object state=call(Class.forName("net.dochi.warfare.vehicle.runtime.SuperbVehicleAiStorage"),"get",vehicle);
+        JsonObject row=new JsonObject();row.addProperty("tick",level.getGameTime());row.addProperty("x",vehicle.getX());row.addProperty("z",vehicle.getZ());row.addProperty("distance",vehicle.position().distanceTo(vehicleOrigin));
+        row.addProperty("passengers",vehicle.getPassengers().size());row.addProperty("driverSeat",((Number)call(vehicle,"getSeatIndex",level.getEntity(driverId))).intValue());row.addProperty("gunnerSeat",((Number)call(vehicle,"getSeatIndex",level.getEntity(gunnerId))).intValue());
+        for(String field:List.of("enabled","mode","lastFailureReason","lastNavigationFailureReason","lastInputMask","selectedWeaponName","lastFiredTickByWeapon","lastWeaponStatuses"))row.add(field,new Gson().toJsonTree(get(state,field)));
+        var target=level.getEntity(vehicleTargetId);if(target instanceof net.minecraft.world.entity.LivingEntity living)row.addProperty("targetHealth",living.getHealth());vehicleSamples.add(row);
+    }
+
+    private static void boardVehicle(net.minecraft.world.entity.Entity vehicle,net.minecraft.world.entity.Entity crew,int seat)throws Exception{
+        var previous=(java.util.function.Function<net.minecraft.world.entity.Entity,Integer>)call(vehicle,"getEntityIndexOverride");
+        java.util.function.Function<net.minecraft.world.entity.Entity,Integer> override=entity->entity==crew?seat:previous==null?-1:previous.apply(entity);
+        call(vehicle,"setEntityIndexOverride",override);boolean mounted;
+        try{mounted=crew.startRiding(vehicle,true);}finally{call(vehicle,"setEntityIndexOverride",previous);}
+        if(!mounted||((Number)call(vehicle,"getSeatIndex",crew)).intValue()!=seat)throw new IllegalStateException("Native crew boarding failed for seat "+seat);
+    }
+    private static void sampleHaul(net.minecraft.server.MinecraftServer server)throws Exception{
+        var level=server.overworld();var npc=(Mob)level.getEntity(haulNpcId);JsonObject row=new JsonObject();
+        row.addProperty("tick",level.getGameTime());row.addProperty("x",npc.getX());row.addProperty("z",npc.getZ());
+        row.addProperty("source",wheat((net.minecraft.world.Container)level.getBlockEntity(haulSource)));
+        row.addProperty("destination",wheat((net.minecraft.world.Container)level.getBlockEntity(haulDestination)));
+        row.addProperty("cargo",wheat((net.minecraft.world.Container)call(npc,"inventory")));haulSamples.add(row);
+        row.addProperty("ownsAi",(boolean)call(npc,"ownsAi"));row.addProperty("noAi",npc.isNoAi());row.addProperty("dayEntry",String.valueOf(call(npc,"dayEntry")));row.addProperty("activity",String.valueOf(call(npc,"activity")));
     }
 
     private static void sampleWarfare(net.minecraft.server.MinecraftServer server)throws Exception{
@@ -117,6 +154,115 @@ final class GuideScenes {
 
     static void perform(Minecraft mc,String action,int npcId,Path output)throws Exception {
         if(frameFailure!=null)throw new IllegalStateException("Frame writer failed",frameFailure);
+        if(action.equals("scene:vehicle-setup")){
+            mc.setScreen(null);mc.options.fov().set(70);mc.options.bobView().set(false);
+            mc.getSingleplayerServer().submit(()->{try{
+                var server=mc.getSingleplayerServer();var level=server.overworld();var player=server.getPlayerList().getPlayer(mc.player.getUUID());var driver=(Mob)level.getEntity(npcId);driverId=npcId;
+                server.setDifficulty(net.minecraft.world.Difficulty.NORMAL,true);level.getGameRules().getRule(net.minecraft.world.level.GameRules.RULE_DOMOBSPAWNING).set(false,server);level.setDayTime(6000);
+                vehicleOrigin=driver.position().add(6,0,0);BlockPos center=BlockPos.containing(vehicleOrigin);
+                for(var entity:level.getEntitiesOfClass(net.minecraft.world.entity.Entity.class,new net.minecraft.world.phys.AABB(center).inflate(40)))if(BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString().equals("superbwarfare:m_1a_2"))entity.discard();
+                for(int dx=-22;dx<=22;dx++)for(int dz=-10;dz<=48;dz++){BlockPos pos=center.offset(dx,0,dz);level.setBlock(pos.below(),Blocks.SMOOTH_STONE.defaultBlockState(),3);for(int dy=0;dy<=5;dy++)level.setBlock(pos.above(dy),Blocks.AIR.defaultBlockState(),3);}
+                var vehicle=BuiltInRegistries.ENTITY_TYPE.get(ResourceLocation.parse("superbwarfare:m_1a_2")).create(level);if(vehicle==null)throw new IllegalStateException("M1A2 unavailable");vehicle.moveTo(vehicleOrigin.x,vehicleOrigin.y+.1,vehicleOrigin.z,0,0);vehicle.setInvulnerable(true);level.addFreshEntity(vehicle);aiVehicleId=vehicle.getId();
+                if((boolean)call(vehicle,"hasEnergyStorage"))call(vehicle,"setEnergy",((Number)call(vehicle,"getMaxEnergy")).intValue());
+                driver.setNoAi(true);driver.setCustomName(net.minecraft.network.chat.Component.literal("Driver"));driver.moveTo(vehicleOrigin.x-3,vehicleOrigin.y,vehicleOrigin.z,0,0);
+                var gunner=(Mob)BuiltInRegistries.ENTITY_TYPE.get(ResourceLocation.parse("dochi_npc:npc")).create(level);gunner.setNoAi(true);gunner.setPersistenceRequired();gunner.setCustomName(net.minecraft.network.chat.Component.literal("Gunner"));gunner.moveTo(vehicleOrigin.x-3,vehicleOrigin.y,vehicleOrigin.z+2,0,0);level.addFreshEntity(gunner);gunnerId=gunner.getId();
+                Object state=call(Class.forName("net.dochi.warfare.vehicle.runtime.SuperbVehicleAiStorage"),"get",vehicle);set(state,"awarenessFovDegrees",360d);set(state,"detectionDelayTicks",0);set(state,"combatMovementMode",Enum.valueOf((Class)Class.forName("net.dochi.warfare.vehicle.runtime.SuperbVehicleCombatMovementMode"),"HOLD"));
+                set(state,"targetPolicy",construct("net.dochi.tacznpcfire.CombatTargetPolicy",List.of("minecraft:husk"),false,false,List.of(),List.of()));call(Class.forName("net.dochi.warfare.vehicle.runtime.SuperbVehicleAiStorage"),"save",vehicle,state);
+                player.getInventory().clearContent();player.teleportTo(vehicleOrigin.x-14,vehicleOrigin.y,vehicleOrigin.z+8);return true;
+            }catch(Exception e){throw new RuntimeException(e);}}).get(15,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:vehicle-look")){mc.player.lookAt(EntityAnchorArgument.Anchor.EYES,vehicleOrigin.add(0,1.7,6));return;}
+        if(action.equals("scene:vehicle-combat-look")){mc.player.lookAt(EntityAnchorArgument.Anchor.EYES,vehicleOrigin.add(2,1.6,15));return;}
+        if(action.equals("scene:vehicle-board")){
+            mc.getSingleplayerServer().submit(()->{try{var level=mc.getSingleplayerServer().overworld();var vehicle=level.getEntity(aiVehicleId);vehicleSamples.asList().clear();sampleVehicle(mc.getSingleplayerServer());boardVehicle(vehicle,level.getEntity(driverId),0);boardVehicle(vehicle,level.getEntity(gunnerId),1);vehicleTracking=true;return true;}catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:vehicle-drive")){
+            mc.getSingleplayerServer().submit(()->{try{var vehicle=mc.getSingleplayerServer().overworld().getEntity(aiVehicleId);if(!(boolean)call(Class.forName("net.dochi.warfare.vehicle.api.SuperbWarfareVehicleBridge"),"moveTo",vehicle,vehicleOrigin.x,vehicleOrigin.y,vehicleOrigin.z+14))throw new IllegalStateException("Native Move To rejected");return true;}catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:vehicle-target")){
+            mc.getSingleplayerServer().submit(()->{try{var level=mc.getSingleplayerServer().overworld();var vehicle=level.getEntity(aiVehicleId);
+                if(vehicle.position().distanceTo(vehicleOrigin)<3)throw new IllegalStateException("Vehicle did not drive before combat");
+                if(!(boolean)call(Class.forName("net.dochi.warfare.vehicle.api.SuperbWarfareVehicleBridge"),"setMode",vehicle,"STATIONARY"))throw new IllegalStateException("Stationary command rejected");
+                var target=net.minecraft.world.entity.EntityType.HUSK.create(level);target.moveTo(vehicle.getX()+9,vehicleOrigin.y,vehicle.getZ()+25,180,0);target.setNoAi(true);target.setPersistenceRequired();target.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).setBaseValue(2000);target.setHealth(2000);target.addTag("dochi_warfare_vehicle_target");level.addFreshEntity(target);vehicleTargetId=target.getId();return true;
+            }catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:vehicle-verify")){
+            mc.getSingleplayerServer().submit(()->{vehicleTracking=false;return true;}).get(5,TimeUnit.SECONDS);Files.writeString(output.resolve("vehicle-ai-runtime.json"),new GsonBuilder().setPrettyPrinting().create().toJson(vehicleSamples));
+            boolean boarded=false,moved=false,fired=false;for(JsonElement sample:vehicleSamples){var row=sample.getAsJsonObject();boarded|=row.get("driverSeat").getAsInt()==0&&row.get("gunnerSeat").getAsInt()==1;moved|=row.get("distance").getAsDouble()>3;fired|=!row.getAsJsonObject("lastFiredTickByWeapon").isEmpty();}
+            if(!boarded||!moved||!fired)throw new IllegalStateException("Incomplete vehicle AI: boarded="+boarded+", moved="+moved+", fired="+fired);return;
+        }
+        if(action.equals("scene:trainer-setup")){
+            mc.setScreen(null);mc.options.fov().set(60);mc.options.bobView().set(false);
+            mc.getSingleplayerServer().submit(()->{try{
+                var server=mc.getSingleplayerServer();var level=server.overworld();var player=server.getPlayerList().getPlayer(mc.player.getUUID());var npc=(Mob)level.getEntity(npcId);
+                level.getGameRules().getRule(net.minecraft.world.level.GameRules.RULE_DOMOBSPAWNING).set(false,server);level.setDayTime(6000);player.getInventory().clearContent();
+                npc.setNoAi(true);npc.setCustomName(net.minecraft.network.chat.Component.literal("Meadow Trainer"));player.teleportTo(npc.getX(),npc.getY(),npc.getZ()+3);
+                var pokemonNbt=new net.minecraft.nbt.CompoundTag();pokemonNbt.putString("Species","cobblemon:bulbasaur");pokemonNbt.putInt("Level",10);
+                Object slot=call(Class.forName("net.hodu.cobblenpc.CobbleTrainerData$PokemonSlot"),"fromNbt",pokemonNbt);
+                Object pokemon=call(Class.forName("net.hodu.cobblenpc.pokemart.PokeMartPokemonService"),"create",slot,player);
+                if(!(boolean)call(Class.forName("net.hodu.cobblenpc.pokemart.PokeMartPokemonService"),"give",player,pokemon))throw new IllegalStateException("Practice Pokemon not granted");
+                Class<?> dialogue=Class.forName("net.dochi.gameeditor.dialogue.DialogueDocument");Object document=call(dialogue,"fromLegacy",true,"Practice battle","Ready for a practice battle?",new String[]{"Let's battle!","Maybe later."},new String[]{"",""});
+                JsonObject nodes=(JsonObject)call(document,"nodes");JsonArray choices=nodes.getAsJsonObject("dialogue_1").getAsJsonArray("choice");
+                for(int i=0;i<2;i++){JsonArray actions=choices.get(i).getAsJsonObject().getAsJsonArray("actions");actions.asList().clear();actions.add((JsonObject)call(dialogue,"defaultAction",i==0?"cobble_npc:go_battle":"close",""));}
+                call(Class.forName("net.dochi.gameeditor.ServerJsonStorage"),"save","dialogue_set","guide_trainer_challenge",call(document,"toJson"));
+                Class<?> trainers=Class.forName("net.hodu.cobblenpc.CobbleTrainerData");Object trainer=call(trainers,"defaultTrainer");var nbt=(net.minecraft.nbt.CompoundTag)call(trainer,"toNbt");nbt.putString("Name","Meadow Trainer");
+                var rounds=nbt.getList("Rounds",10);var mapping=new net.minecraft.nbt.CompoundTag();mapping.putString("BeforeBattleSet","guide_trainer_challenge");rounds.getCompound(0).put("Dialogue",mapping);
+                trainer=call(trainers,"fromNbt",nbt);call(trainer,"saveToNpc",npc);Files.writeString(output.resolve("trainer-profile.snbt"),nbt.toString());return true;
+            }catch(Exception e){throw new RuntimeException(e);}}).get(10,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:trainer-interact")){trainerTransitions=true;mc.gameMode.interact(mc.player,mc.level.getEntity(npcId),InteractionHand.MAIN_HAND);return;}
+        if(action.equals("scene:trainer-click")){
+            if(mc.screen==null)throw new IllegalStateException("Trainer dialogue was not opened");Object chosen=null;
+            for(Object row:(List<?>)get(mc.screen,"runtimeButtons"))if("Let's battle!".equals(get(row,"label")))chosen=row;
+            if(chosen==null)throw new IllegalStateException("Battle challenge choice missing");
+            double x=((Number)get(chosen,"x")).doubleValue()+((Number)get(chosen,"w")).doubleValue()/2,y=((Number)get(chosen,"y")).doubleValue()+((Number)get(chosen,"h")).doubleValue()/2;
+            if(!mc.screen.mouseClicked(x,y,0))throw new IllegalStateException("Trainer choice click rejected");return;
+        }
+        if(action.equals("scene:trainer-verify")){
+            JsonObject result=mc.getSingleplayerServer().submit(()->{try{
+                var player=mc.getSingleplayerServer().getPlayerList().getPlayer(mc.player.getUUID());Object battle=call(Class.forName("com.cobblemon.mod.common.battles.BattleRegistry"),"getBattleByParticipatingPlayer",player);
+                if(battle==null)throw new IllegalStateException("No actual Cobblemon battle for player");JsonObject r=new JsonObject();r.addProperty("battleClass",battle.getClass().getName());r.addProperty("player",player.getUUID().toString());return r;
+            }catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);Files.writeString(output.resolve("trainer-battle-verified.json"),result.toString());trainerTransitions=false;return;
+        }
+        if(action.equals("scene:haul-setup")){
+            mc.setScreen(null);mc.options.fov().set(60);mc.options.bobView().set(false);haulNpcId=npcId;
+            mc.getSingleplayerServer().submit(()->{try{
+                var server=mc.getSingleplayerServer();var level=server.overworld();var player=server.getPlayerList().getPlayer(mc.player.getUUID());var npc=(Mob)level.getEntity(npcId);BlockPos center=npc.blockPosition();
+                level.getGameRules().getRule(net.minecraft.world.level.GameRules.RULE_DOMOBSPAWNING).set(false,server);level.getGameRules().getRule(net.minecraft.world.level.GameRules.RULE_DAYLIGHT).set(false,server);level.setDayTime(6000);
+                for(int x=-7;x<=7;x++)for(int z=-3;z<=10;z++){
+                    level.setBlock(center.offset(x,-1,z),Blocks.SMOOTH_QUARTZ.defaultBlockState(),3);
+                    for(int y=0;y<=4;y++)level.setBlock(center.offset(x,y,z),Blocks.AIR.defaultBlockState(),3);
+                }
+                haulSource=center.offset(-4,0,0);haulDestination=center.offset(4,0,0);
+                level.setBlock(haulSource,Blocks.CHEST.defaultBlockState(),3);level.setBlock(haulDestination,Blocks.CHEST.defaultBlockState(),3);
+                ((net.minecraft.world.Container)level.getBlockEntity(haulSource)).setItem(0,new ItemStack(net.minecraft.world.item.Items.WHEAT,32));
+                ((net.minecraft.world.Container)call(npc,"inventory")).clearContent();
+                Object settings=call(npc,"settings"),cycle=get(settings,"dayCycle");set(cycle,"enabled",false);((List)get(cycle,"entries")).clear();
+                Object entry=construct("net.dochi.npc.NpcDayCycle$Entry");set(entry,"name","Wheat delivery");set(entry,"start",0);set(entry,"end",23999);
+                set(entry,"activity",Enum.valueOf((Class)Class.forName("net.dochi.npc.NpcDayCycle$Activity"),"WORK"));set(entry,"work",Enum.valueOf((Class)Class.forName("net.dochi.npc.NpcDayCycle$Work"),"HAUL"));
+                set(entry,"located",true);set(entry,"x",haulSource.getX());set(entry,"y",haulSource.getY());set(entry,"z",haulSource.getZ());set(entry,"radius",1);
+                Object workSite=get(entry,"workSite");set(workSite,"origin",Enum.valueOf((Class)Class.forName("net.dochi.npc.NpcWorkSiteSettings$Origin"),"CUSTOM"));Object workPoint=get(workSite,"point");set(workPoint,"x",haulSource.getX()+1);set(workPoint,"y",haulSource.getY());set(workPoint,"z",haulSource.getZ()+1);
+                Object transfer=get(entry,"transfer");set(transfer,"count",32);set(transfer,"interval",20);((List<String>)get(get(transfer,"filter"),"ids")).add("minecraft:wheat");
+                Object job=get(entry,"job");set(job,"outputSet",true);set(job,"deliver",true);Object point=get(job,"output");set(point,"x",haulDestination.getX());set(point,"y",haulDestination.getY());set(point,"z",haulDestination.getZ());
+                ((List)get(cycle,"entries")).add(entry);set(settings,"fixedPosition",false);set(settings,"fixedRotation",false);set(settings,"speed",.25d);call(npc,"applySettings",settings);
+                npc.setNoAi(false);npc.moveTo(haulSource.getX()+1.5,center.getY(),center.getZ()+1.5,90,0);
+                Files.writeString(output.resolve("haul-settings.json"),String.valueOf(call(npc,"editorJson")));
+                player.teleportTo(center.getX()+.5,center.getY(),center.getZ()+8.5);return true;
+            }catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:haul-look")){mc.player.lookAt(EntityAnchorArgument.Anchor.EYES,Vec3.atCenterOf(haulSource).add(4,.4,0));return;}
+        if(action.equals("scene:haul-start")){
+            mc.getSingleplayerServer().submit(()->{try{
+                haulSamples.asList().clear();sampleHaul(mc.getSingleplayerServer());var npc=(Mob)mc.getSingleplayerServer().overworld().getEntity(npcId);Object settings=call(npc,"settings");set(get(settings,"dayCycle"),"enabled",true);call(npc,"applySettings",settings);npc.setNoAi(false);call(Class.forName("net.dochi.npc.NpcEditSessions"),"end",mc.getSingleplayerServer().getPlayerList().getPlayer(mc.player.getUUID()));mc.getSingleplayerServer().overworld().setDayTime(6001);haulTracking=true;return true;
+            }catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:haul-verify")){
+            mc.getSingleplayerServer().submit(()->{haulTracking=false;return true;}).get(5,TimeUnit.SECONDS);
+            Files.writeString(output.resolve("haul-runtime.json"),new GsonBuilder().setPrettyPrinting().create().toJson(haulSamples));
+            boolean carried=false;for(JsonElement item:haulSamples)carried|=item.getAsJsonObject().get("cargo").getAsInt()>0;
+            JsonObject last=haulSamples.get(haulSamples.size()-1).getAsJsonObject();
+            if(!carried||last.get("source").getAsInt()!=0||last.get("destination").getAsInt()!=32||last.get("cargo").getAsInt()!=0)throw new IllegalStateException("Native hauling not completed: "+last);return;
+        }
         if(action.equals("scene:dw-setup")||action.equals("scene:dw-setup-reload")){
             boolean coverDemo=action.equals("scene:dw-setup");
             mc.setScreen(null);mc.options.fov().set(65);mc.options.bobView().set(false);warfareNpcId=npcId;

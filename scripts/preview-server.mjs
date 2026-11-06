@@ -26,11 +26,35 @@ export function serve(baseDir, listenPort) {
     }
 
     const target = existsSync(file) && (await stat(file)).isFile() ? file : path.join(baseDir, "index.html");
-    response.writeHead(200, {
+    const { size } = await stat(target);
+    const headers = {
       "Content-Type": contentType(target),
-      "Cache-Control": "no-store, max-age=0"
-    });
-    createReadStream(target).pipe(response);
+      "Cache-Control": "no-store, max-age=0",
+      "Accept-Ranges": "bytes",
+      "Content-Length": size
+    };
+    let status = 200, streamOptions;
+    // Browsers need byte ranges to seek within WebM/MP4 recordings.
+    const range = request.method === "GET" && request.headers.range?.match(/^bytes=(\d*)-(\d*)$/);
+    if (range) {
+      const start = range[1] ? Number(range[1]) : Math.max(0, size - Number(range[2]));
+      const end = range[1] && range[2] ? Math.min(Number(range[2]), size - 1) : size - 1;
+      if ((!range[1] && !range[2]) || !Number.isSafeInteger(start) || !Number.isSafeInteger(end) || start >= size || end < start) {
+        response.writeHead(416, { ...headers, "Content-Range": `bytes */${size}`, "Content-Length": 0 });
+        response.end();
+        return;
+      }
+      status = 206;
+      headers["Content-Range"] = `bytes ${start}-${end}/${size}`;
+      headers["Content-Length"] = end - start + 1;
+      streamOptions = { start, end };
+    }
+    response.writeHead(status, headers);
+    if (request.method === "HEAD") { response.end(); return; }
+    const stream = createReadStream(target, streamOptions);
+    response.on("close", () => stream.destroy());
+    stream.on("error", () => response.destroy());
+    stream.pipe(response);
   });
 
   server.listen(listenPort, () => {

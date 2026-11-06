@@ -305,7 +305,10 @@ public final class GuideCapture {
                     }
                     current=mc.screen;expectedScreen="";screenWait=0;
                 }
-                if(mc.screen!=current){recordFailure(views[index][0],new IllegalStateException("Unexpected screen for "+views[index][0]+": "+mc.screen));index++;phase=2;return;}
+                if(mc.screen!=current){
+                    if(guideScenes!=null&&(boolean)call(guideScenes,"allowsScreenTransition"))current=mc.screen;
+                    else{recordFailure(views[index][0],new IllegalStateException("Unexpected screen for "+views[index][0]+": "+mc.screen));index++;phase=2;return;}
+                }
                 if(actionIndex<views[index].length){
                     String action=views[index][actionIndex++];
                     try{perform(mc,action);current=mc.screen;}catch(Throwable error){recordFailure(views[index][0],error);index++;phase=2;}

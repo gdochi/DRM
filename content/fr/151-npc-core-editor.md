@@ -50,6 +50,12 @@ Si le PNJ ne fonctionne pas, vérifiez les heures actives, les outils et les iti
 
 Voir [calendriers](#dochi-npc-core/npc-core-schedules) pour les heures et [cuisson](#dochi-npc-core/npc-core-cooking) pour la production alimentaire.
 
+### Voir le transport en jeu
+
+Dans cet exemple en jeu, un PNJ dont le travail de transport est déjà configuré prend 32 unités de blé dans le coffre de gauche, les apporte à celui de droite, puis revient. Placez l'origine du travail sur un emplacement accessible à côté du coffre d'entrée et dégagez le chemin vers le coffre de sortie.
+
+![Un PNJ transporte du blé entre deux coffres, puis revient au départ.](assets/media/guides/runtime-videos-20261106/npc-haul.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, interface en anglais. Résultat d'un travail enregistré ; sa configuration dans l'éditeur est décrite ci-dessus.")
+
 ## Faire un guide stationnaire
 
 ![DNPCde Movement AI écran, avec Lock position et Lock rotation Commutateurs près du bas à droite.](assets/media/guides/dnpc-013-neo1211/dnpc-movement.png "DNPC 0.1.3 / NeoForge 1.21.1, anglais UI. Sélectionnez Movement AI sur la gauche. Lock position Il fixe l'emplacement du PNJ; Lock rotation Il fixe sa direction.")

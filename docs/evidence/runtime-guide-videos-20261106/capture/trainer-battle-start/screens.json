@@ -1,0 +1,29 @@
+[
+  {
+    "id": "trainer-battle-video",
+    "screenClass": "com.cobblemon.mod.common.client.gui.battle.BattleGUI",
+    "status": "captured_in_game",
+    "actions": [
+      "scene:trainer-setup",
+      "wait:60",
+      "look-at:npc",
+      "clear:chat",
+      "gif:start:trainer-battle-start",
+      "scene:trainer-interact",
+      "wait:30",
+      "scene:trainer-click",
+      "wait:220",
+      "scene:trainer-verify",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [
+      {
+        "label": "cobblemon.battle.choose_action",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

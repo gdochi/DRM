@@ -62,6 +62,12 @@ tags:
 
 ![현재 라운드의 배틀 규칙·AI·기믹·재대전 설정.](assets/media/guides/cobble-029-neo1211/cobble-rounds.png "Rounds의 실제 추가·복사 버튼은 Add / Duplicate입니다. 오른쪽 AI skill의 현재 값 버튼을 누르면 전략 설정을 엽니다.")
 
+### 대화에서 배틀로 이어지는 모습
+
+트레이너와 라운드 대화를 적용한 뒤 NPC에게 말을 걸고 **Let's battle!**을 고릅니다. 선택지의 **go_battle**이 실행되면 설정한 등장 연출을 거쳐 Cobblemon 배틀 화면으로 넘어갑니다. 편집기 설정을 마친 뒤 플레이어가 경험하는 실제 흐름입니다.
+
+![Meadow Trainer와 대화하고 Let's battle!을 선택하면 등장 연출 뒤 포켓몬 배틀이 시작됩니다.](assets/media/guides/runtime-videos-20261106/trainer-battle-start.mp4 "Cobblemon Editor 0.2.9 + DRM 0.3.1 + DNPC 0.1.3 + Cobblemon 1.8.4 / NeoForge 1.21.1, 영어 UI. 적용한 라운드 대화 → go_battle → 등장 연출 → 배틀.")
+
 ## 대화를 마친 뒤 보상 주기
 
 **Battle Config → After Actions**에서 **Action Mode → Sequential**을 고릅니다. 대화 액션을 먼저 넣고 아이템·화폐 보상은 그 아래에 둡니다. 승리·패배·도주 중 실행할 결과도 정합니다.

@@ -48,6 +48,12 @@ audience: 제작자 / 서버 운영자
 
 구체적인 시간 설정은 [시간표](#dochi-npc-core/npc-core-schedules), 음식 만들기는 [조리 작업](#dochi-npc-core/npc-core-cooking)에서 설명합니다.
 
+### 운반 작업이 실행되는 모습
+
+운반 작업을 미리 설정한 NPC가 왼쪽 상자에서 밀 32개를 꺼내 오른쪽 상자로 옮긴 뒤 돌아오는 실제 실행 화면입니다. 작업 기준점은 입력 상자 옆의 걸어갈 수 있는 위치로 정하고, 출력 상자까지의 길을 비워 두세요.
+
+![NPC가 두 상자 사이에서 밀을 운반하고 입력 상자로 돌아옵니다.](assets/media/guides/runtime-videos-20261106/npc-haul.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, 영어 UI. 저장한 작업의 실행 결과이며, 편집기 설정 순서는 위 설명을 따릅니다.")
+
 ## 움직이지 않는 안내 NPC 만들기
 
 ![DNPC의 Movement AI 화면. 오른쪽 아래에 Lock position과 Lock rotation 스위치가 있습니다.](assets/media/guides/dnpc-013-neo1211/dnpc-movement.png "DNPC 0.1.3 / NeoForge 1.21.1 영문 UI. 왼쪽 Movement AI를 엽니다. 오른쪽 아래 Lock position이 위치 고정, Lock rotation이 회전 고정입니다.")

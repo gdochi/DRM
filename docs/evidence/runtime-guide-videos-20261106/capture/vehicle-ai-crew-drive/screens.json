@@ -1,0 +1,27 @@
+[
+  {
+    "id": "vehicle-ai-video",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "scene:vehicle-setup",
+      "wait:100",
+      "scene:vehicle-look",
+      "clear:chat",
+      "gif:start:vehicle-ai-crew-drive",
+      "scene:vehicle-board",
+      "wait:20",
+      "scene:vehicle-drive",
+      "wait:140",
+      "scene:vehicle-target",
+      "scene:vehicle-combat-look",
+      "wait:100",
+      "scene:vehicle-verify",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

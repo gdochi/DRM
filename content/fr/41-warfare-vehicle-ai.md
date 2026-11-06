@@ -87,6 +87,12 @@ Le serveur revalide l'autorisation créative, la distance de bloc 64, l'état du
 
 ![La carte des sièges de l'équipage de base SuperbWarfare M1A2.](assets/media/guides/warfare-expanded-031-neo1211/dwe-crew.png "DWE 0.3.1 / NeoForge 1.21.1. Sélectionnez un numéro de siège pour inspecter son rôle et son occupant à droite. Il s'agit d'une carte de siège vide, pas d'un résultat d'embarquement terminé. C'est le véhicule de base SuperbWarfare, distinct du MCSP M1A2.")
 
+### Voir l'équipage et l'IA du véhicule
+
+Deux membres d'équipage DNPC déjà préparés montent dans le M1A2 de base de SuperbWarfare, qui suit un ordre **Move To**. Le véhicule passe ensuite au combat stationnaire et tire sur une cible d'entraînement. La vidéo montre le résultat en jeu ; utilisez la page Crew ci-dessus pour choisir les sources de PNJ et les sièges, puis configurez les règles de déplacement et de ciblage avant d'activer l'IA.
+
+![Deux PNJ montent dans un M1A2, l'IA le conduit et ses armes tirent sur une cible d'entraînement.](assets/media/guides/runtime-videos-20261106/vehicle-ai-crew-drive.mp4 "DW + DWE 0.3.2 + DNPC 0.1.3 + SuperbWarfare 0.8.9.1 / NeoForge 1.21.1, interface en anglais. Équipage et règles préparés → embarquement → déplacement par IA → détection et tir.")
+
 ## Profils, pierres d'âme et clones
 
 `Save As` et `Load` stockent les profils IA des véhicules réutilisables sous :

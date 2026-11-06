@@ -50,6 +50,12 @@ Si el NPC no funciona, revisa las horas activas, las herramientas y las rutas tr
 
 Véase [schedules](#dochi-npc-core/npc-core-schedules) para horas y [cocción](#dochi-npc-core/npc-core-cooking) para producción de alimentos.
 
+### Mira el transporte en acción
+
+En este ejemplo en juego, un NPC con el trabajo de transporte ya configurado recoge 32 unidades de trigo del cofre izquierdo, las lleva al derecho y regresa. Sitúa el origen del trabajo en un punto accesible junto al cofre de entrada y deja libre el camino hasta el de salida.
+
+![Un NPC transporta trigo entre dos cofres y regresa a la entrada.](assets/media/guides/runtime-videos-20261106/npc-haul.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. Resultado de un trabajo guardado; la configuración en el editor se explica arriba.")
+
 ## Hacer una guía estacionaria
 
 ![DNPC pantalla Movement AI, con Lock position y Lock rotation cambia cerca de la parte inferior derecha.](assets/media/guides/dnpc-013-neo1211/dnpc-movement.png "DNPC 0.1.3 / NeoForge 1.21.1, Inglés UI. Seleccione Movement AI a la izquierda. Lock position fija la ubicación del NPC; Lock rotation fija su dirección de orientación.")

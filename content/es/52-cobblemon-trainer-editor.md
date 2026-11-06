@@ -64,6 +64,12 @@ Elija **Battle Config** a la izquierda para cambiar a la configuración de batal
 
 ![Reglas de la ronda actual, AI, trucos y configuraciones de revancha.](assets/media/guides/cobble-029-neo1211/cobble-rounds.png "Los controles redondos son Agregar / Duplicar. Haga clic en el valor actual junto a la habilidad AI a la derecha para abrir la configuración de la estrategia.")
 
+### Mira cómo el diálogo inicia una batalla
+
+Con el entrenador y el diálogo de la ronda ya aplicados, interactúa con el NPC y elige **Let's battle!**. La opción ejecuta **go_battle**, reproduce la introducción configurada y abre la pantalla de batalla de Cobblemon. Este es el recorrido del jugador después de la configuración en el editor.
+
+![Habla con Meadow Trainer, elige Let's battle! y entra en la batalla Pokémon tras la introducción.](assets/media/guides/runtime-videos-20261106/trainer-battle-start.mp4 "Cobblemon Editor 0.2.9 + DRM 0.3.1 + DNPC 0.1.3 + Cobblemon 1.8.4 / NeoForge 1.21.1, interfaz en inglés. Diálogo de la ronda → go_battle → introducción → batalla.")
+
 ## Recompensa después del diálogo
 
 En **Battle Config → After Actions**, elija **Action Mode → Sequential**. Ponga el diálogo primero y el artículo / recompensas de moneda después de él. Selecciona qué resultado activa la secuencia: ganar, perder o huir.

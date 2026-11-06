@@ -62,6 +62,12 @@ Choose **Battle Config** on the left to switch to battle settings.
 
 ![Current-round rules, AI, gimmicks and rematch settings.](assets/media/guides/cobble-029-neo1211/cobble-rounds.png "The round controls are Add / Duplicate. Click the current value beside AI skill on the right to open strategy settings.")
 
+### Watch dialogue start a battle
+
+With the trainer and round dialogue already applied, interact with the NPC and choose **Let's battle!**. The choice runs **go_battle**, plays the configured introduction and opens the Cobblemon battle screen. This is the player experience after setup, rather than the trainer editor.
+
+![Talk to Meadow Trainer, choose Let's battle!, and enter the Pokémon battle after the introduction.](assets/media/guides/runtime-videos-20261106/trainer-battle-start.mp4 "Cobblemon Editor 0.2.9 + DRM 0.3.1 + DNPC 0.1.3 + Cobblemon 1.8.4 / NeoForge 1.21.1, English UI. Prepared round dialogue → go_battle → introduction → battle.")
+
 ## Give rewards after dialogue
 
 In **Battle Config → After Actions**, choose **Action Mode → Sequential**. Put the dialogue first and item/currency rewards after it. Select which result triggers the sequence: win, loss or flee.

@@ -85,6 +85,12 @@ DW는 원본 엔진의 `processInput` 또는 비행 입력을 사용합니다. S
 
 ![Crew에서 본 SuperbWarfare 기본 M1A2의 다섯 좌석.](assets/media/guides/warfare-expanded-031-neo1211/dwe-crew.png "DWE 0.3.1 / NeoForge 1.21.1. 번호를 누르면 오른쪽에 그 좌석의 역할과 탑승 상태가 나옵니다. 이 사진은 빈 좌석 지도이며 NPC 탑승을 완료한 결과는 아닙니다. MCSP M1A2와는 다른 기본 SuperbWarfare 차량입니다.")
 
+### 승무원 탑승부터 차량 AI 전투까지
+
+미리 준비한 DNPC 승무원 두 명이 SuperbWarfare 기본 M1A2에 탑승하고, 차량이 **Move To** 명령에 따라 움직입니다. 이어서 정지 전투 모드로 전환해 연습용 타겟을 사격합니다. 실제 실행 결과를 보여 주는 영상입니다. NPC 공급원과 좌석은 위의 Crew 페이지에서 고르고, AI를 켜기 전에 이동·타겟 규칙을 설정하세요.
+
+![NPC 두 명이 M1A2에 탑승한 뒤 AI가 차량을 움직이고 연습용 타겟을 사격합니다.](assets/media/guides/runtime-videos-20261106/vehicle-ai-crew-drive.mp4 "DW + DWE 0.3.2 + DNPC 0.1.3 + SuperbWarfare 0.8.9.1 / NeoForge 1.21.1, 영어 UI. 준비한 승무원·정책 → 탑승 → AI 주행 → 타겟 인식과 사격.")
+
 ## 프로필, 소울스톤, 클론
 
 `Save As`와 `Load`는 재사용 차량 AI 프로필을 아래에 저장합니다.

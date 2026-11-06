@@ -1,0 +1,3 @@
+[
+  {"id":"npc-haul-video","screen":"@world","actions":["scene:haul-setup","wait:40","scene:haul-look","clear:chat","gif:start:npc-haul","scene:haul-start","wait:160","scene:haul-verify","gif:stop"]}
+]

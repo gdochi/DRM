@@ -30,50 +30,78 @@ try {
         await page.setViewportSize({ width, height: 1000 });
         await page.goto(`${origin}/?lang=${locale}&video-check=${width}#${doc.product}/${doc.slug}`);
         await page.waitForSelector('.doc-video video');
-        const video = page.locator('.doc-video video').first();
-        await video.scrollIntoViewIfNeeded();
-        await page.waitForFunction(() => {
-          const video = document.querySelector('.doc-video video');
-          return video?.readyState >= 2 && !video.paused;
-        });
-        const state = await video.evaluate(v => ({ width: v.videoWidth, height: v.videoHeight, muted: v.muted, loop: v.loop, controls: v.controls, inline: v.playsInline, paused: v.paused, label: v.getAttribute('aria-label'), source: v.currentSrc, duration: v.duration }));
-        assert.equal(state.width, 1280);
-        assert.equal(state.height, 720);
-        assert(state.muted && state.loop && state.controls && state.inline && !state.paused && state.label, JSON.stringify(state));
-        assert(state.duration > 0 && state.duration < 60);
-        assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${locale}/${doc.slug}/${width}`);
-        views.push({ locale, route: `${doc.product}/${doc.slug}`, width, ...state });
-        if (locale === 'ko') await video.screenshot({ path: path.join(output, `${doc.product}-${doc.slug}-${width}.png`) });
-        if (seen.has(state.source)) continue;
-        seen.add(state.source);
-        for (const source of await video.locator('source').all()) {
-          const url = new URL(await source.getAttribute('src'), origin).href;
-          const response = await context.request.get(url);
-          assert(response.ok());
-          assert(response.headers()['content-type'].startsWith(await source.getAttribute('type')));
+        for (let index = 0; index < await page.locator('.doc-video video').count(); index++) {
+          const video = page.locator('.doc-video video').nth(index);
+          const element = await video.elementHandle();
+          await video.scrollIntoViewIfNeeded();
+          await page.waitForFunction(video => video.readyState >= 2 && !video.paused, element);
+          const state = await video.evaluate(v => ({ width: v.videoWidth, height: v.videoHeight, muted: v.muted, loop: v.loop, controls: v.controls, inline: v.playsInline, paused: v.paused, label: v.getAttribute('aria-label'), source: v.currentSrc, duration: v.duration }));
+          assert.equal(state.width, 1280);
+          assert.equal(state.height, 720);
+          assert(state.muted && state.loop && state.controls && state.inline && !state.paused && state.label, JSON.stringify(state));
+          assert(state.duration > 0 && state.duration < 60);
+          assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${locale}/${doc.slug}/${width}`);
+          views.push({ locale, route: `${doc.product}/${doc.slug}`, viewportWidth: width, index, ...state });
+          if (locale === 'ko') await video.screenshot({ path: path.join(output, `${doc.product}-${doc.slug}-${width}-${index}.png`) });
+          if (seen.has(state.source)) { await element.dispose(); continue; }
+          seen.add(state.source);
+          for (const source of await video.locator('source').all()) {
+            const url = new URL(await source.getAttribute('src'), origin).href;
+            const response = await context.request.get(url);
+            assert(response.ok());
+            assert(response.headers()['content-type'].startsWith(await source.getAttribute('type')));
+            const bytes = await response.body();
+            assert.equal(Number(response.headers()['content-length']), bytes.length);
+            const partial = await context.request.get(url, { headers: { Range: 'bytes=0-31' } });
+            assert.equal(partial.status(), 206);
+            assert.equal(partial.headers()['content-range'], `bytes 0-31/${bytes.length}`);
+            assert.deepEqual(await partial.body(), bytes.subarray(0, 32));
+            if (!playback.length) {
+              for (const range of ['bytes=-16', `bytes=${bytes.length - 16}-`]) {
+                const tail = await context.request.get(url, { headers: { Range: range } });
+                assert.equal(tail.status(), 206);
+                assert.deepEqual(await tail.body(), bytes.subarray(-16));
+              }
+              const invalid = await context.request.get(url, { headers: { Range: `bytes=${bytes.length}-` } });
+              assert.equal(invalid.status(), 416);
+              assert.equal(invalid.headers()['content-range'], `bytes */${bytes.length}`);
+              const head = await context.request.head(url);
+              assert.equal(Number(head.headers()['content-length']), bytes.length);
+              assert.equal((await head.body()).length, 0);
+            }
+          }
+          const frames = await video.evaluate(async v => {
+            v.pause();
+            const target = Math.min(2, v.duration / 2);
+            v.currentTime = target;
+            await new Promise(resolve => v.addEventListener('seeked', resolve, { once: true }));
+            const seekTime = v.currentTime;
+            await v.play();
+            const before = v.getVideoPlaybackQuality().totalVideoFrames;
+            await new Promise(resolve => setTimeout(resolve, 650));
+            const decoded = v.getVideoPlaybackQuality().totalVideoFrames - before;
+            v.pause();
+            return { decoded, paused: v.paused, target, seekTime };
+          });
+          assert(frames.decoded >= 5 && frames.paused, JSON.stringify(frames));
+          assert(Math.abs(frames.seekTime - frames.target) < 0.15, JSON.stringify(frames));
+          // Observe the actual loop boundary, not just the HTML loop attribute.
+          const boundary = await video.evaluate(async v => {
+            const target = v.duration - 0.2;
+            v.currentTime = target;
+            await new Promise(resolve => v.addEventListener('seeked', resolve, { once: true }));
+            const seekTime = v.currentTime;
+            await v.play();
+            return { target, seekTime };
+          });
+          assert(Math.abs(boundary.seekTime - boundary.target) < 0.15, JSON.stringify(boundary));
+          await page.waitForFunction(video => video.currentTime < 2, element);
+          await video.evaluate(async v => { v.pause(); v.querySelector('source[type="video/webm"]').remove(); v.load(); await v.play(); });
+          assert((await video.evaluate(v => v.currentSrc)).endsWith('.mp4'));
+          assert(await video.evaluate(v => v.videoWidth === 1280 && !v.error));
+          playback.push({ source: state.source, decodedFrames: frames.decoded, seekTime: frames.seekTime, seek: true, byteRanges: true, pause: true, loop: true, mp4Fallback: true });
+          await element.dispose();
         }
-        const frames = await video.evaluate(async v => {
-          v.currentTime = Math.min(2, v.duration / 2);
-          await new Promise(resolve => v.addEventListener('seeked', resolve, { once: true }));
-          await v.play();
-          const before = v.getVideoPlaybackQuality().totalVideoFrames;
-          await new Promise(resolve => setTimeout(resolve, 650));
-          const decoded = v.getVideoPlaybackQuality().totalVideoFrames - before;
-          v.pause();
-          return { decoded, paused: v.paused };
-        });
-        assert(frames.decoded >= 5 && frames.paused, JSON.stringify(frames));
-        // Observe the actual loop boundary, not just the HTML loop attribute.
-        await video.evaluate(async v => {
-          v.currentTime = v.duration - 0.2;
-          await new Promise(resolve => v.addEventListener('seeked', resolve, { once: true }));
-          await v.play();
-        });
-        await page.waitForFunction(() => document.querySelector('.doc-video video').currentTime < 2);
-        await video.evaluate(async v => { v.pause(); v.querySelector('source[type="video/webm"]').remove(); v.load(); await v.play(); });
-        assert((await video.evaluate(v => v.currentSrc)).endsWith('.mp4'));
-        assert(await video.evaluate(v => v.videoWidth === 1280 && !v.error));
-        playback.push({ source: state.source, decodedFrames: frames.decoded, seek: true, pause: true, loop: true, mp4Fallback: true });
       }
     }
   }

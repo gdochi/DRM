@@ -1,0 +1,39 @@
+{
+  "npcHaul": {
+    "initialSource": 32,
+    "finalDestination": 32,
+    "finalCargo": 0,
+    "conservedEveryTick": true
+  },
+  "vehicleAi": {
+    "maxDistance": 10.41742438525838,
+    "driverSeat": 0,
+    "gunnerSeat": 1,
+    "nativeWeaponsFired": [
+      "PassengerMachineGun",
+      "Cannon",
+      "MachineGun"
+    ],
+    "targetDefeated": true
+  },
+  "trainer": {
+    "screens": [
+      "world",
+      "DialogueRuntimeScreen",
+      "BattlePresentationScreen",
+      "BattleGUI"
+    ],
+    "battleClass": "com.cobblemon.mod.common.api.battles.model.PokemonBattle"
+  },
+  "encodedAndBuiltAssets": [
+    "npc-haul.mp4",
+    "npc-haul.webm",
+    "npc-haul.png",
+    "trainer-battle-start.mp4",
+    "trainer-battle-start.webm",
+    "trainer-battle-start.png",
+    "vehicle-ai-crew-drive.mp4",
+    "vehicle-ai-crew-drive.webm",
+    "vehicle-ai-crew-drive.png"
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "npc-haul-video",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "scene:haul-setup",
+      "wait:40",
+      "scene:haul-look",
+      "clear:chat",
+      "gif:start:npc-haul",
+      "scene:haul-start",
+      "wait:160",
+      "scene:haul-verify",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

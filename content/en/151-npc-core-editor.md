@@ -48,6 +48,12 @@ If the NPC does not work, check the active hours, tools and walkable routes to t
 
 See [schedules](#dochi-npc-core/npc-core-schedules) for hours and [cooking](#dochi-npc-core/npc-core-cooking) for food production.
 
+### Watch a hauling job
+
+This runtime example uses a prepared transport job: the NPC collects 32 wheat from the left chest, carries it to the right chest and returns. Set a walkable work origin beside the input chest and keep the route to the output chest clear.
+
+![An NPC carries wheat between two chests and returns to the input.](assets/media/guides/runtime-videos-20261106/npc-haul.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, English UI. Runtime result of a saved job; the editor setup is described above.")
+
 ## Make a stationary guide
 
 ![DNPC's Movement AI screen, with Lock position and Lock rotation switches near the bottom right.](assets/media/guides/dnpc-013-neo1211/dnpc-movement.png "DNPC 0.1.3 / NeoForge 1.21.1, English UI. Select Movement AI on the left. Lock position fixes the NPC's location; Lock rotation fixes its facing direction.")

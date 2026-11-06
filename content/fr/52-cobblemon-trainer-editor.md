@@ -64,6 +64,12 @@ Choisissez **Battle Config** sur la gauche pour passer aux paramètres de combat
 
 ![Règles actuelles, IA, gimmicks et paramètres de match.](assets/media/guides/cobble-029-neo1211/cobble-rounds.png "Les contrôles ronds sont Add / Duplicate. Cliquez sur la valeur actuelle à côté de la compétence IA sur la droite pour ouvrir les paramètres de stratégie.")
 
+### Voir le dialogue lancer un combat
+
+Une fois le dresseur et le dialogue de la manche appliqués, interagissez avec le PNJ et choisissez **Let's battle!**. Ce choix exécute **go_battle**, joue l'introduction configurée et ouvre l'écran de combat Cobblemon. La vidéo montre le parcours du joueur après la configuration dans l'éditeur.
+
+![Parlez à Meadow Trainer, choisissez Let's battle!, puis entrez dans le combat Pokémon après l'introduction.](assets/media/guides/runtime-videos-20261106/trainer-battle-start.mp4 "Cobblemon Editor 0.2.9 + DRM 0.3.1 + DNPC 0.1.3 + Cobblemon 1.8.4 / NeoForge 1.21.1, interface en anglais. Dialogue de manche → go_battle → introduction → combat.")
+
 ## Donner des récompenses après le dialogue
 
 Dans **Battle Config → After Actions**, choisissez **Action Mode → Sequential**. Mettez le dialogue en premier et les récompenses article / devise après lui. Sélectionnez le résultat qui déclenche la séquence : gagner, perdre ou fuir.
