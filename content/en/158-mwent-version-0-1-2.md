@@ -5,7 +5,7 @@ order: 1580
 description: Zero new or rebalanced cards, UI and server stability work, and later 26.3 uploads.
 product: mwent
 category: Release history
-section: releases
+section: card-history
 status: Public release record
 version: 0.1.2
 audience: Players / server operators

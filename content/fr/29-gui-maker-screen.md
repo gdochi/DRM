@@ -19,6 +19,8 @@ Ouvrez la mise en page prévue en [GUI Maker](#core/gui-system), cliquez sur un 
 
 ![Élément Texte sélectionné et son Inspecteur.](assets/media/guides/drm-031-forge1201/gui-text.png "DRM 0.3.1 / Forge 1.20.1. Sélectionnez sur le canevas, puis modifiez l'élément correspondant à droite. Le texte ici peut être une décoration; les lignes de dialogue réelles proviennent de Dialogue Editor.")
 
+![Déplacer et redimensionner un composant Text puis vérifier l’aperçu de l’éditeur.](assets/media/guides/extra-videos-20261106/gui-drag-resize.mp4 "DRM 0.3.1 / NeoForge 1.21.1, interface anglaise. Glisser, redimensionner et Preview ; la disposition reste un brouillon.")
+
 | Zone | Utilisation |
 | --- | --- |
 | Barre | Nouveau, charger, enregistrer, Save As et réinitialiser |

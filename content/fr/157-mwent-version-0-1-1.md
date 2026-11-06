@@ -5,7 +5,7 @@ order: 1570
 description: Le téléchargement de 23 CurseForge d'octobre, son catalogue initial de cartes et ses fonctionnalités publiques.
 product: mwent
 category: Historique de publication
-section: releases
+section: card-history
 status: Disque de libération publique
 version: 0.1.1
 audience: Joueurs / opérateurs de serveur

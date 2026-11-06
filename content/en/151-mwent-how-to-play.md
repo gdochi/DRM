@@ -29,6 +29,8 @@ Later rounds draw up to three cards while the deck has cards left. The hand limi
 
 The first player may use the **opening tactic** chosen during preparation once. It is separate from playing a hand card, and 0.1.6 offers five choices. See [selection and actual use](#mwent/version-0-1-6) for Golem seal core turning into a four-power Golem in the same socket.
 
+![Use Golem seal core and watch a four-power Golem appear in the same socket.](assets/media/guides/extra-videos-20261106/mwent-golem.mp4 "Minigames 0.1.6 / NeoForge 1.21.1, English UI. This is the first player’s opening tactic; board power changes from 0 to 4.")
+
 1. Select a hand card. Right-click first to inspect its abilities and current status.
 2. Place units in a legal empty socket. Rows and immediate neighbors can affect abilities.
 3. Resolve targeted abilities by choosing a highlighted legal target.

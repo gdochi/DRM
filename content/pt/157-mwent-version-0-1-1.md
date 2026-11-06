@@ -5,7 +5,7 @@ order: 1570
 description: O Outubro 23 CurseForge upload, seu catálogo de cartões inicial e recursos públicos.
 product: mwent
 category: Lançar histórico
-section: releases
+section: card-history
 status: Registro de lançamento público
 version: 0.1.1
 audience: Jogadores / operadores de servidor

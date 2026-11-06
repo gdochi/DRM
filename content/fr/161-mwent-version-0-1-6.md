@@ -5,7 +5,7 @@ order: 1610
 description: Caractéristiques de 60 cartes de faction et de 12 cartes de siège, avec cinq tactiques d’ouverture.
 product: mwent
 category: Historique de publication
-section: releases
+section: card-history
 status: Guide
 version: 0.1.6
 audience: Joueurs / opérateurs de serveur

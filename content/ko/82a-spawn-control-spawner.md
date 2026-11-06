@@ -34,6 +34,8 @@ tags:
 
 ![Spawner Editor의 Spawn Target와 좀비 한 항목.](assets/media/guides/spawn-control-014-neo1211/spawn-placed.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Entities per activation 1은 한 번에 한 마리를 시도한다는 뜻입니다. Chance 1.0이 Actual chance 100%인 이유는 현재 목록에 한 항목만 있기 때문입니다. 전체 작동 확률이나 생성 성공 보장은 아닙니다.")
 
+![활성화 범위에 들어가면 돼지 한 마리를 유지하고 처치 후 다시 생성하는 과정.](assets/media/guides/extra-videos-20261106/spawn-cap-respawn.mp4 "Spawn Control 0.1.5 / NeoForge 1.21.1. 미리 설정한 범위 5·보유 제한 1·누적 제한 2의 스포너입니다. 이 예시는 Creative 플레이어도 포함합니다.")
+
 ## 화면 구성
 
 왼쪽 패널에서 카테고리를 선택하고 오른쪽에서 값을 편집합니다. JSON 파일 경로는 현재 문서를 알려 주는 라벨입니다. 경로를 바꾸려면 `Save As`를 사용하세요.

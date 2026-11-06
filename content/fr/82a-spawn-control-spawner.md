@@ -36,6 +36,8 @@ Les documents sont stockés sur le serveur sous `config/dochi_rpg_maker/spawn_co
 
 ![Une entrée zombie dans Spawn Target.](assets/media/guides/spawn-control-014-neo1211/spawn-placed.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Entités par activation 1 tente une entité. Chance 1.0 est 100% car c'est la seule entrée. Le placement réussi dépend toujours des conditions et de l'espace disponible.")
 
+![Entrer dans la portée d’activation, observer la limite d’un cochon puis son remplacement après sa défaite.](assets/media/guides/extra-videos-20261106/spawn-cap-respawn.mp4 "Spawn Control 0.1.5 / NeoForge 1.21.1. Générateur préparé : portée 5, maximum actif 1, limite totale 2 ; les joueurs en Créatif sont inclus.")
+
 ## Mise en page de l'éditeur
 
 Sélectionnez une catégorie dans le panneau de gauche et modifiez les valeurs à droite. Le chemin JSON est une étiquette identifiant le document courant. Utilisez `Save As` pour changer sa destination.

@@ -52,6 +52,8 @@ Bring ten emeralds and check only the box beside **Bread**. Confirm that the sum
 
 ![After purchase, Emerald is 6 and Bread stock is 11/12.](assets/media/guides/drm-031-neo1211/shop-bread-purchased.png "The server inventory received three bread and emeralds fell from ten to six. Bread stock fell from 12/12 to 11/12 and its restock timer started. The lower summary follows the current selection; it is not a receipt for the previous purchase.")
 
+![Select Bread and buy one bundle; payment and stock update.](assets/media/guides/extra-videos-20261106/shop-purchase.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, English UI. Three bread received, emeralds 10→6, stock 12→11.")
+
 ## Selling and buying back
 
 | Goal | Setup |

@@ -5,7 +5,7 @@ order: 1580
 description: Zero cartões novos ou reequilibrados, interface do usuário e trabalho de estabilidade do servidor, e mais tarde 26.3 uploads.
 product: mwent
 category: Lançar histórico
-section: releases
+section: card-history
 status: Registro de lançamento público
 version: 0.1.2
 audience: Jogadores / operadores de servidor

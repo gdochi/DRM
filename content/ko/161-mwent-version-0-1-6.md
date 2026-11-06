@@ -5,7 +5,7 @@ order: 1610
 description: 신규 연계 카드 60종·공성 카드 12종의 스펙과 선공 전술 5종의 사용법입니다.
 product: mwent
 category: 버전별 변경
-section: releases
+section: card-history
 status: 사용 안내
 version: 0.1.6
 audience: 플레이어 / 서버 운영자

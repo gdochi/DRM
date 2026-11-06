@@ -19,6 +19,8 @@ Abra o layout pretendido em [GUI Maker](#core/gui-system), clique em um elemento
 
 ![Elemento de texto selecionado e seu inspetor.](assets/media/guides/drm-031-forge1201/gui-text.png "DRM 0.3.1 / Forge 1.20.1. Selecione na tela e edite o elemento correspondente à direita. Texto aqui pode ser decoração; linhas de diálogo reais vêm de Dialogue Editor.")
 
+![Mover e redimensionar um componente Text e conferir a pré-visualização do editor.](assets/media/guides/extra-videos-20261106/gui-drag-resize.mp4 "DRM 0.3.1 / NeoForge 1.21.1, interface em inglês. Arrastar, redimensionar e Preview; a disposição ainda é um rascunho.")
+
 | Área | Usar |
 | --- | --- |
 | Barra de ferramentas | Novo, carregar, salvar, Save As e redefinir |

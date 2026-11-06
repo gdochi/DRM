@@ -21,6 +21,8 @@ tags:
 
 ![Ammo의 재장전·예비 탄약·재생·소진 전환 설정.](assets/media/guides/warfare-031-neo1211/dw-ammo.png "DW 0.3.1 / NeoForge 1.21.1. 예제 Stock -1은 무한 예비 탄약, Reload Duration 0은 총기의 원래 재장전 시간을 사용합니다. NPC 보조 손에 탄창 소품을 넣는 설정이 아닙니다.")
 
+![경비 NPC가 세 발을 쏘고 재장전한 뒤 다시 사격하는 과정.](assets/media/guides/extra-videos-20261106/warfare-fire-reload.mp4 "DW 0.3.2 / TACZ 1.1.8 / DNPC 0.1.3 / NeoForge 1.21.1. 세 발마다 재장전하도록 설정한 연습 예시입니다. 사격과 재장전을 보여 줍니다.")
+
 ## 탄약 모델
 
 도치 워페어는 관리 NPC가 여분 TACZ·PointBlank·SuperbWarfare 탄약이나 탄창 아이템을 오프핸드에 들게 만들지 않습니다. NPC는 지원되는 원본 총기를 사용하지만 예비 탄약은 DW 데이터로 표현합니다.

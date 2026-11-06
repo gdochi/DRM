@@ -5,7 +5,7 @@ order: 1570
 description: La carga de octubre 23 CurseForge, su catálogo inicial de tarjetas y características públicas.
 product: mwent
 category: Historial de lanzamientos
-section: releases
+section: card-history
 status: Registro de liberación pública
 version: 0.1.1
 audience: Jugadores / operadores de servidores

@@ -1,0 +1,649 @@
+{
+  "distance": 2.0,
+  "held": "minecraft:air",
+  "hasDialogue": false,
+  "enabled": false,
+  "document": {
+    "version": 1,
+    "dialogueScript": true,
+    "globals": {
+      "ftb": false,
+      "geckolib": false,
+      "shopScript": false
+    },
+    "globalCompatibility": {
+      "ftb": false,
+      "geckolib": false,
+      "shopScript": false
+    },
+    "dialogueDefaultGui": {
+      "guiSource": "default",
+      "guiJsonSubPath": "",
+      "guiJsonFileName": "default_dialogue_gui.json",
+      "guiJsonPath": "default_dialogue_gui.json"
+    },
+    "setRegistry": [
+      "default_set"
+    ],
+    "nodes": {
+      "start": {
+        "type": "start",
+        "speakerMode": "npc",
+        "title": "",
+        "titleTranslationKey": false,
+        "text": "",
+        "textTranslationKey": false,
+        "textAlignment": "left",
+        "choiceHideUntilTypingComplete": false,
+        "conditions": [],
+        "routes": [
+          {
+            "mode": "and",
+            "actionType": "goto",
+            "goto": "dialogue_1",
+            "linkMode": "internal",
+            "filePath": "",
+            "conditions": [
+              {
+                "type": "tag",
+                "key": "tutorial_enabled",
+                "op": "not",
+                "tag": "",
+                "advancement": "",
+                "faction": "",
+                "objective": "",
+                "quest": "",
+                "task": 0,
+                "amount": 0
+              }
+            ],
+            "actions": []
+          }
+        ],
+        "choice": [],
+        "meta": {
+          "kind": "set",
+          "setName": "default_set"
+        },
+        "textStyles": []
+      },
+      "dialogue_1": {
+        "type": "general",
+        "speakerMode": "npc",
+        "title": "",
+        "titleTranslationKey": false,
+        "text": "Default dialogue sample. It shows text, routes, conditions, choices, actions, FX, GUI, and shop links in a small tutorial document.",
+        "textTranslationKey": false,
+        "textAlignment": "left",
+        "choiceHideUntilTypingComplete": false,
+        "conditions": [],
+        "routes": [],
+        "choice": [
+          {
+            "label": "Show action examples",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [
+              {
+                "type": "tag",
+                "key": "tutorial_seen",
+                "op": "not",
+                "tag": "",
+                "advancement": "",
+                "faction": "",
+                "objective": "",
+                "quest": "",
+                "task": 0,
+                "amount": 0
+              }
+            ],
+            "actions": [
+              {
+                "type": "goto",
+                "value": "action_examples",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ],
+            "fx": {
+              "editorType": "sound",
+              "items": [
+                {
+                  "fxType": "sound",
+                  "type": "sound",
+                  "soundId": "minecraft:block.note_block.pling",
+                  "volume": 1,
+                  "pitch": 1
+                },
+                {
+                  "fxType": "item",
+                  "type": "item",
+                  "renderType": "item",
+                  "itemId": "minecraft:apple",
+                  "count": 1
+                }
+              ]
+            }
+          },
+          {
+            "label": "Open sample shop",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "go_shop",
+                "value": "bound",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0,
+                "shop": "bound"
+              }
+            ]
+          },
+          {
+            "label": "Close",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "close",
+                "value": "",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          },
+          {
+            "label": "Choice layout test",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "goto",
+                "value": "choice_layout_test",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          }
+        ],
+        "textFx": {
+          "image": [],
+          "sound": [
+            {
+              "id": "minecraft:block.note_block.pling",
+              "vol": 1,
+              "pitch": 1,
+              "delay": 0
+            }
+          ]
+        },
+        "meta": {
+          "kind": "set",
+          "setName": "default_set"
+        },
+        "textStyles": []
+      },
+      "action_examples": {
+        "type": "general",
+        "speakerMode": "npc",
+        "title": "",
+        "titleTranslationKey": false,
+        "text": "These choices demonstrate command, item, faction, tag, and advancement actions. Replace the example values with your own server content.",
+        "textTranslationKey": false,
+        "textAlignment": "left",
+        "choiceHideUntilTypingComplete": false,
+        "conditions": [],
+        "routes": [],
+        "choice": [
+          {
+            "label": "Command + tag",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "command",
+                "value": "title @s actionbar {\"text\":\"Dochi command action ran for @s\",\"color\":\"green\"}",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0,
+                "command": "title @s actionbar {\"text\":\"Dochi command action ran for @s\",\"color\":\"green\"}"
+              },
+              {
+                "type": "tag",
+                "value": "dochi_sample",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "dochi_sample",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          },
+          {
+            "label": "Item + faction score",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "item",
+                "value": "",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:apple",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              },
+              {
+                "type": "faction_score",
+                "value": "",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "Friendly",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 10,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          },
+          {
+            "label": "Advancement sample",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "advancement",
+                "value": "",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "minecraft:story/root",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          },
+          {
+            "label": "Back",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "goto",
+                "value": "dialogue_1",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          }
+        ],
+        "meta": {
+          "kind": "set",
+          "setName": "default_set"
+        },
+        "textStyles": []
+      },
+      "choice_layout_test": {
+        "type": "general",
+        "speakerMode": "npc",
+        "title": "",
+        "titleTranslationKey": false,
+        "text": "Eight-choice layout test for GUI Maker flow and scrollbar settings.",
+        "textTranslationKey": false,
+        "textAlignment": "left",
+        "choiceHideUntilTypingComplete": false,
+        "conditions": [],
+        "routes": [],
+        "choice": [
+          {
+            "label": "Choice 1",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "goto",
+                "value": "choice_layout_test",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          },
+          {
+            "label": "Choice 2",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "goto",
+                "value": "choice_layout_test",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          },
+          {
+            "label": "Choice 3",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "goto",
+                "value": "choice_layout_test",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          },
+          {
+            "label": "Choice 4",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "goto",
+                "value": "choice_layout_test",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          },
+          {
+            "label": "Choice 5",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "goto",
+                "value": "choice_layout_test",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          },
+          {
+            "label": "Choice 6",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "goto",
+                "value": "choice_layout_test",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          },
+          {
+            "label": "Choice 7",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "goto",
+                "value": "choice_layout_test",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          },
+          {
+            "label": "Choice 8 - Back",
+            "labelTranslationKey": false,
+            "conditionMode": "and",
+            "conditions": [],
+            "actions": [
+              {
+                "type": "goto",
+                "value": "dialogue_1",
+                "linkMode": "internal",
+                "filePath": "",
+                "key": "",
+                "op": "add",
+                "itemOp": "give",
+                "itemId": "minecraft:stone",
+                "count": 1,
+                "factionOp": "add",
+                "faction": "",
+                "advancementOp": "grant",
+                "advancement": "",
+                "criterion": "",
+                "amount": 0,
+                "quest": "",
+                "task": 0
+              }
+            ]
+          }
+        ],
+        "meta": {
+          "kind": "set",
+          "setName": "default_set"
+        },
+        "textStyles": []
+      }
+    },
+    "current": "start",
+    "selectedSetScope": "default_set",
+    "rightToolMode": "blueprint"
+  },
+  "shift": false,
+  "npcScheduled": false
+}

@@ -18,7 +18,7 @@ translationMethod: assisted
 
 ## Faire un magasin qui vend du pain
 
-Cet exemple vend ** trois pains pour quatre émeraudes **. Les captures montrent **DRM 0.3.1 on Forge 1.20.1, in English**.
+Cet exemple vend ** trois pains pour quatre émeraudes **. Les captures statiques montrent **DRM 0.3.1 on Forge 1.20.1, in English**.
 
 ### 1. Choisissez le produit et la quantité
 
@@ -53,6 +53,8 @@ Utilisez le noyau DRM sur le PNJ et choisissez **NPC Shop JSON → saved shop �
 ![Seul Bread vérifié dans la boutique PNJ.](assets/media/guides/drm-031-forge1201/shop-bread-selected.png "DRM 0.3.1 / Forge 1.20.1. Le 3 sur l'icône est la taille du paquet de pain; le milieu 1 est le nombre de paquets à acheter. Le résumé montre trois pains pour quatre émeraudes.")
 
 ![Après l'achat, Emerald est 6 et le bouillon de pain est 11/12.](assets/media/guides/drm-031-forge1201/shop-bread-purchased.png "L'inventaire du serveur a reçu trois pains et les émeraudes sont passées de dix à six. Le stock de pain est tombé de douze à onze et sa minuterie de réapprovisionnement a commencé. Le résumé inférieur suit la lanterne actuellement sélectionnée; ce n'est pas un reçu pour le commerce précédent.")
+
+![Sélectionner Bread et acheter un lot ; le paiement et le stock sont actualisés.](assets/media/guides/extra-videos-20261106/shop-purchase.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, interface anglaise. Trois pains reçus, émeraudes 10→6, stock 12→11.")
 
 ## Vente et rachat
 

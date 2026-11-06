@@ -83,7 +83,7 @@ try {
     await page.waitForSelector('[data-doc-page]');
     assert.equal(await page.locator('[data-doc-page]').getAttribute('data-doc'), slug);
     assert.equal(await page.locator('.doc-nav .nav-group').filter({ hasText: 'Change Log' }).count(), 0);
-    await page.locator('.sidebar .product-tabs a').last().evaluate(element => element.click());
+    await page.locator('.sidebar .product-tabs a[href^="#changelog/"]').evaluate(element => element.click());
     await page.waitForSelector('[data-changelog]');
     assert.equal(await page.locator('[data-changelog]').getAttribute('data-product'), product === 'mwent' ? 'dochi-minigames' : product);
   }

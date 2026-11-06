@@ -1,0 +1,32 @@
+[
+  {
+    "id": "spawn-cap-video",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "scene:spawn-setup",
+      "scene:spawn-look",
+      "scene:spawn-warm",
+      "wait:30",
+      "scene:spawn-warm-clear",
+      "wait:50",
+      "scene:spawn-check:0",
+      "clear:chat",
+      "gif:start:spawn-cap-respawn",
+      "scene:spawn-enter",
+      "wait:25",
+      "scene:spawn-check:1",
+      "wait:15",
+      "scene:spawn-check:1",
+      "scene:spawn-clear-first",
+      "wait:25",
+      "scene:spawn-check:2",
+      "wait:15",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

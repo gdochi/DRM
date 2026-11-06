@@ -30,6 +30,8 @@ tags:
 
 ![가운데 캔버스에서 고른 Text 요소와 오른쪽 Inspector.](assets/media/guides/drm-031-forge1201/gui-text.png "DRM 0.3.1 / Forge 1.20.1. X/Y는 위치, W/H는 크기입니다. 겹침 순서는 Layer #와 왼쪽 Layer - / Layer +에서 조정합니다.")
 
+![Text 요소를 드래그로 옮기고 크기를 바꾼 뒤 편집기 미리보기로 확인하는 과정.](assets/media/guides/extra-videos-20261106/gui-drag-resize.mp4 "DRM 0.3.1 / NeoForge 1.21.1, 영문 UI. 실제 드래그·크기 조절·Preview 과정이며 아직 편집 중인 배치입니다.")
+
 
 ## Screen Editor
 

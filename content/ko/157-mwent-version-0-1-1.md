@@ -5,7 +5,7 @@ order: 1570
 description: 2026-10-23 CurseForge 업로드의 카드 구성과 초기 공개 기능입니다.
 product: mwent
 category: 버전별 변경
-section: releases
+section: card-history
 status: 공개 버전 기록
 version: 0.1.1
 audience: 플레이어 / 서버 운영자

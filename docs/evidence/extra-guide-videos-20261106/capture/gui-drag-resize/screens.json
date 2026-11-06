@@ -1,0 +1,49 @@
+[
+  {
+    "id": "warfare-cover-reload-video",
+    "actualScreenAtFailure": "world",
+    "attemptedActions": [
+      "scene:dw-setup",
+      "wait:60",
+      "scene:dw-look",
+      "clear:chat",
+      "gif:start:warfare-cover-reload",
+      "scene:dw-start",
+      "wait:220",
+      "scene:dw-verify"
+    ],
+    "status": "failed",
+    "error": "java.lang.RuntimeException: perform"
+  },
+  {
+    "id": "gui-drag-resize-preview-video",
+    "screenClass": "net.dochi.gameeditor.client.GuiMakerScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "+ Text",
+      "wait:20",
+      "gif:start:gui-drag-resize",
+      "scene:gui-motion:move",
+      "wait:20",
+      "scene:gui-motion:resize",
+      "wait:20",
+      "scene:gui-verify",
+      "Preview",
+      "wait:20",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "100%",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

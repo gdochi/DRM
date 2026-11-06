@@ -16,7 +16,7 @@ tags:
 
 ## Make a shop that sells bread
 
-This example sells **three bread for four emeralds**. The captures show **DRM 0.3.1 on Forge 1.20.1, in English**.
+This example sells **three bread for four emeralds**. The screenshots show **DRM 0.3.1 on Forge 1.20.1, in English**.
 
 ### 1. Choose the product and quantity
 
@@ -51,6 +51,8 @@ Use the DRM Core on the NPC and choose **NPC Shop JSON → saved shop → Apply 
 ![Only Bread checked in the actual NPC shop.](assets/media/guides/drm-031-forge1201/shop-bread-selected.png "DRM 0.3.1 / Forge 1.20.1. The 3 on the icon is the bread bundle size; the middle 1 is the number of bundles to buy. The summary shows three bread for four emeralds.")
 
 ![After purchase, Emerald is 6 and Bread stock is 11/12.](assets/media/guides/drm-031-forge1201/shop-bread-purchased.png "The server inventory received three bread and emeralds fell from ten to six. Bread stock fell from twelve to eleven and its restock timer started. The lower summary follows the currently selected lantern; it is not a receipt for the previous trade.")
+
+![Select Bread and buy one bundle; payment and stock update.](assets/media/guides/extra-videos-20261106/shop-purchase.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, English UI. Three bread received, emeralds 10→6, stock 12→11.")
 
 ## Selling and buying back
 

@@ -54,6 +54,8 @@ Traiga diez esmeraldas y marque solo la casilla al lado **Bread**. Confirme que 
 
 ![Después de la compra, la esmeralda es 6 y el stock de pan es 11/12.](assets/media/guides/drm-031-neo1211/shop-bread-purchased.png "El inventario del servidor recibió tres panes y las esmeraldas cayeron de diez a seis. El stock de pan cayó de 12/12 a 11/12 y comenzó su temporizador de reabastecimiento. El resumen inferior sigue a la selección actual; no es un recibo de la compra anterior.")
 
+![Seleccionar Bread y comprar un lote; el pago y las existencias se actualizan.](assets/media/guides/extra-videos-20261106/shop-purchase.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. Tres panes recibidos, esmeraldas 10→6, existencias 12→11.")
+
 ## Vender y comprar de nuevo
 
 | Objetivo | Configuración |

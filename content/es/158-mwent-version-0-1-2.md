@@ -5,7 +5,7 @@ order: 1580
 description: Cero tarjetas nuevas o reequilibradas, la interfaz de usuario y el trabajo de estabilidad del servidor, y más tarde 26.3 cargas.
 product: mwent
 category: Historial de lanzamientos
-section: releases
+section: card-history
 status: Registro de liberación pública
 version: 0.1.2
 audience: Jugadores / operadores de servidores

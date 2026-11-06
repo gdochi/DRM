@@ -5,7 +5,7 @@ order: 1610
 description: Especificaciones de 60 cartas de facción y 12 de asedio, además de cinco tácticas de apertura.
 product: mwent
 category: Historial de lanzamientos
-section: releases
+section: card-history
 status: Guía
 version: 0.1.6
 audience: Jugadores / operadores de servidores

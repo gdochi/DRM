@@ -17,6 +17,8 @@ Open the intended layout in [GUI Maker](#core/gui-system), click a canvas elemen
 
 ![Selected Text element and its Inspector.](assets/media/guides/drm-031-forge1201/gui-text.png "DRM 0.3.1 / Forge 1.20.1. Select on the canvas, then edit the corresponding element on the right. Text here can be decoration; actual dialogue lines come from Dialogue Editor.")
 
+![Move and resize a Text component, then inspect the editor preview.](assets/media/guides/extra-videos-20261106/gui-drag-resize.mp4 "DRM 0.3.1 / NeoForge 1.21.1, English UI. Native drag, resize and Preview; the layout is still an editor draft.")
+
 | Area | Use |
 | --- | --- |
 | Toolbar | New, load, save, Save As and reset |

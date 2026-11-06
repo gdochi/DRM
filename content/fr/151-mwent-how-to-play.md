@@ -31,6 +31,8 @@ Les tours suivants tirent jusqu'à trois cartes alors que le paquet a des cartes
 
 Le premier joueur peut utiliser **tactique d'ouverture** choisi lors de la préparation une fois. Il est séparé de jouer une carte de main, et 0.1.6 offre cinq choix. Voir [sélection et utilisation réelle](#mwent/version-0-1-6) pour le noyau de joint de Golem se transformant en un Golem à quatre puissances dans la même prise.
 
+![Utiliser Golem seal core et voir un Golem de puissance quatre apparaître sur la même case.](assets/media/guides/extra-videos-20261106/mwent-golem.mp4 "Minigames 0.1.6 / NeoForge 1.21.1, interface anglaise. Tactique initiale du premier joueur ; la puissance du plateau passe de 0 à 4.")
+
 1. Sélectionnez une carte à main. Cliquez d'abord avec le bouton droit pour inspecter ses capacités et son état actuel.
 2. Placez les unités dans une prise vide légale. Les rangées et les voisins immédiats peuvent affecter les capacités.
 3. Résoudre les capacités ciblées en choisissant une cible juridique mise en évidence.

@@ -339,6 +339,7 @@
     },
     {
       "id": "mwent",
+      "cardHistoryPage": "releases",
       "label": "MWENT — Minigames Card Game",
       "label_ko": "뭰트 — 미니게임스 카드 게임",
       "shortLabel": "MWENT",
@@ -1600,6 +1601,17 @@
       "description_ko": "카드를 모아 진영 덱을 만들고 친구나 AI와 겨룹니다.",
       "accent": "blue",
       "sections": [
+        {
+          "id": "card-history",
+          "label": "Card changes by version",
+          "label_ko": "버전별 카드 변경",
+          "label_pt": "Alterações de cartas por versão",
+          "label_es": "Cambios de cartas por versión",
+          "label_fr": "Modifications des cartes par version",
+          "label_ru": "Изменения карт по версиям",
+          "label_zh": "各版本卡牌变更",
+          "label_ja": "バージョン別カード変更"
+        },
         {
           "id": "play",
           "label": "Start and Play",

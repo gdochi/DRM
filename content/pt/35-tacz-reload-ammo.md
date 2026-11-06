@@ -23,6 +23,8 @@ Em **Ammo**, habilite **Reload** e **Supply Ammo**, então comece com **Reload T
 
 ![Recarga de munição, reservas, regeneração e exaustão.](assets/media/guides/warfare-031-neo1211/dw-ammo.png "DW 0.3.1 / NeoForge 1.21.1. Stock -1 dá reservas ilimitadas; Reload Duration 0 usa o tempo de recarga nativo da arma. Essas reservas não exigem um suporte de revista offhand.")
 
+![Ver um guarda disparar três tiros, recarregar e voltar a disparar.](assets/media/guides/extra-videos-20261106/warfare-fire-reload.mp4 "DW 0.3.2 / TACZ 1.1.8 / DNPC 0.1.3 / NeoForge 1.21.1. Exemplo preparado: recarregar a cada três tiros. Demonstra disparos e recarga.")
+
 ## Modelo de munição
 
 Dochi's Warfare não faz NPCs gerenciados transportar munição de reposição TACZ, PointBlank, ou SuperbWarfare na mão. O NPC usa uma arma nativa suportada, enquanto a munição de reserva é representada pelos dados da DW:

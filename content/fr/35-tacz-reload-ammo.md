@@ -23,6 +23,8 @@ Dans **Ammo**, activez **Reload** et **Supply Ammo**, puis commencez par **Reloa
 
 ![Rechargement de munitions, réserves, régénération et épuisement.](assets/media/guides/warfare-031-neo1211/dw-ammo.png "DW 0.3.1 / NeoForge 1.21.1. Stock -1 donne des réserves illimitées; Durée de rechargement 0 utilise le temps de rechargement natif du pistolet. Ces réserves ne nécessitent pas un accessoire de magazine désinvolte.")
 
+![Voir un garde tirer trois coups, recharger puis reprendre le tir.](assets/media/guides/extra-videos-20261106/warfare-fire-reload.mp4 "DW 0.3.2 / TACZ 1.1.8 / DNPC 0.1.3 / NeoForge 1.21.1. Exemple préparé : recharge tous les trois tirs. Montre le tir et la recharge.")
+
 ## Modèle de munitions
 
 Dochi's Warfare ne permet pas aux PNJ gérés de transporter des munitions de rechange TACZ, PointBlank ou SuperbWarfare à la main. Le PNJ utilise un canon natif pris en charge, tandis que les munitions de réserve sont représentées par des données DW:

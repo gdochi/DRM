@@ -5,7 +5,7 @@ order: 1610
 description: Specifications for 60 faction cards and 12 siege cards, plus five opening tactics.
 product: mwent
 category: Release history
-section: releases
+section: card-history
 status: Guide
 version: 0.1.6
 audience: Players / server operators

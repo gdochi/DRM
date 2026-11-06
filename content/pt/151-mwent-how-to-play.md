@@ -31,6 +31,8 @@ Mais tarde, as rodadas desenham até três cartas enquanto o baralho ainda tem c
 
 O primeiro jogador pode usar o **tática de abertura** escolhido durante a preparação uma vez. É separado de jogar uma carta de mão, e 0.1.6 oferece cinco opções. Veja. [seleção e uso real](#mwent/version-0-1-6) para o núcleo do selo Golem se transformar em um Golem de quatro potências no mesmo soquete.
 
+![Usar Golem seal core e ver um Golem de quatro pontos surgir no mesmo espaço.](assets/media/guides/extra-videos-20261106/mwent-golem.mp4 "Minigames 0.1.6 / NeoForge 1.21.1, interface em inglês. Tática inicial do primeiro jogador; a força do tabuleiro passa de 0 para 4.")
+
 1. Selecione um cartão de mão. Clique com o botão direito primeiro para inspecionar suas habilidades e status atual.
 2. Coloque unidades em um soquete vazio legal. Linhas e vizinhos imediatos podem afetar habilidades.
 3. Resolva suas habilidades escolhendo um alvo legal destacado.

@@ -21,6 +21,8 @@ In **Ammo**, enable **Reload** and **Supply Ammo**, then start with **Reload Typ
 
 ![Ammo reload, reserves, regeneration and exhaustion settings.](assets/media/guides/warfare-031-neo1211/dw-ammo.png "DW 0.3.1 / NeoForge 1.21.1. Stock -1 gives unlimited reserves; Reload Duration 0 uses the gun’s native reload time. These reserves do not require an offhand magazine prop.")
 
+![Watch a guard fire three shots, reload and resume firing.](assets/media/guides/extra-videos-20261106/warfare-fire-reload.mp4 "DW 0.3.2 / TACZ 1.1.8 / DNPC 0.1.3 / NeoForge 1.21.1. Prepared fixed-shot reload: three shots per reload. This clip demonstrates firing and reloading.")
+
 ## Ammo model
 
 Dochi's Warfare does not make managed NPCs carry spare TACZ, PointBlank, or SuperbWarfare ammunition in the offhand. The NPC uses a supported native gun, while reserve ammunition is represented by DW data:

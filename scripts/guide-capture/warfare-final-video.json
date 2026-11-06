@@ -1,0 +1,4 @@
+[
+  {"id":"warfare-cover-reload-video","screen":"@world","actions":["scene:dw-setup","wait:60","scene:dw-look","clear:chat","gif:start:warfare-cover-reload","scene:dw-start","wait:200","scene:dw-verify","gif:stop"]},
+  {"id":"warfare-fire-reload-video","screen":"@world","actions":["scene:dw-setup-reload","wait:60","scene:dw-look","clear:chat","gif:start:warfare-fire-reload","scene:dw-start","wait:140","scene:dw-verify-reload","gif:stop"]}
+]

@@ -36,6 +36,8 @@ Os documentos são armazenados no servidor em `config/dochi_rpg_maker/spawn_cont
 
 ![Uma entrada de zumbis em Spawn Target.](assets/media/guides/spawn-control-014-neo1211/spawn-placed.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Entidades por ativação 1 tenta uma entidade. Chance 1.0 é 100% porque é a única entrada. A colocação bem-sucedida ainda depende das condições e do espaço disponível.")
 
+![Entrar no alcance de ativação, observar o limite de um porco e a sua substituição após a derrota.](assets/media/guides/extra-videos-20261106/spawn-cap-respawn.mp4 "Spawn Control 0.1.5 / NeoForge 1.21.1. Gerador preparado: alcance 5, máximo ativo 1, limite total 2; inclui jogadores em Criativo.")
+
 ## Layout do editor
 
 Selecione uma categoria no painel esquerdo e edite valores à direita. O caminho JSON é um rótulo que identifica o documento atual. Use `Save As` para mudar seu destino.

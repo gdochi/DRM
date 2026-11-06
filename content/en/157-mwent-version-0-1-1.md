@@ -5,7 +5,7 @@ order: 1570
 description: The October 23 CurseForge upload, its initial card catalog and public features.
 product: mwent
 category: Release history
-section: releases
+section: card-history
 status: Public release record
 version: 0.1.1
 audience: Players / server operators

@@ -5,7 +5,7 @@ order: 1610
 description: Especificações de 60 cartas de facção e 12 de cerco, além de cinco táticas de abertura.
 product: mwent
 category: Lançar histórico
-section: releases
+section: card-history
 status: Guia
 version: 0.1.6
 audience: Jogadores / operadores de servidor

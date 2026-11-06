@@ -8,7 +8,7 @@ import { loadBuiltDocs } from './load-built-docs.mjs';
 import { serve } from './preview-server.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const output = path.join(root, 'docs/evidence/guide-videos-20261106/browser');
+const output = path.resolve(root, process.env.DOCHI_VIDEO_EVIDENCE || 'docs/evidence/guide-videos-20261106/browser');
 await mkdir(output, { recursive: true });
 const { data } = await loadBuiltDocs(path.join(root, 'dist'));
 const require = createRequire(import.meta.url);

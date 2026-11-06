@@ -18,7 +18,7 @@ translationMethod: assisted
 
 ## Faça uma loja que venda pão
 
-Este exemplo vende **Três pães para quatro esmeraldas**. As capturas mostram **DRM 0.3.1 on Forge 1.20.1, in English**.
+Este exemplo vende **Três pães para quatro esmeraldas**. As imagens estáticas mostram **DRM 0.3.1 on Forge 1.20.1, in English**.
 
 ### 1. Escolha o produto e a quantidade
 
@@ -53,6 +53,8 @@ Use o DRM Núcleo no NPC e escolha **NPC Shop JSON → saved shop → Apply Shop
 ![Só o Pão verificou na loja do NPC.](assets/media/guides/drm-031-forge1201/shop-bread-selected.png "DRM 0.3.1 / Forge 1.20.1. O 3 no ícone é o tamanho do pacote de pão; o meio 1 é o número de pacotes para comprar. O resumo mostra três pães para quatro esmeraldas.")
 
 ![Após a compra, a Esmeralda é 6 e o estoque de pão é 11 / 12.](assets/media/guides/drm-031-forge1201/shop-bread-purchased.png "O inventário de servidores recebeu três pães e esmeraldas caiu de dez para seis. O estoque de pão caiu de doze para onze e seu temporizador de reabastecimento começou. O resumo inferior segue a lanterna atualmente selecionada, não é um recibo para o comércio anterior.")
+
+![Selecionar Bread e comprar um conjunto; o pagamento e o stock são atualizados.](assets/media/guides/extra-videos-20261106/shop-purchase.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, interface em inglês. Três pães recebidos, esmeraldas 10→6, stock 12→11.")
 
 ## Vendendo e comprando de volta
 

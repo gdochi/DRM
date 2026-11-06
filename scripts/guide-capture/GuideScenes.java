@@ -55,12 +55,37 @@ final class GuideScenes {
     private static Object spawnState;
     private static BlockPos spawnAnchor;
     private static boolean spawnWalking;
-    static void abort(){recording="";frames.clear();}
+    private static int warmPigId;
+    private static int warfareNpcId,warfareTargetId;
+    private static boolean warfareTracking;
+    private static final JsonArray warfareSamples=new JsonArray();
+    static void abort(){recording="";frames.clear();motionScreen=null;spawnWalking=false;warfareTracking=false;Minecraft.getInstance().options.keyUp.setDown(false);}
 
     static void register(Path output){
+        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.tick.ServerTickEvent.Post event)->{
+            if(warfareTracking)try{sampleWarfare(event.getServer());}catch(Throwable error){frameFailure=error;}
+        });
         NeoForge.EVENT_BUS.addListener((RenderFrameEvent.Post event)->{
             try{frame(Minecraft.getInstance(),output);}catch(Throwable error){frameFailure=error;}
         });
+    }
+
+    private static void sampleWarfare(net.minecraft.server.MinecraftServer server)throws Exception{
+        var npc=(Mob)server.overworld().getEntity(warfareNpcId);
+        Object mod=get(Class.forName("net.dochi.tacznpcfire.TaczNpcFireMod"),"instance");
+        Object state=call(get(mod,"stateRegistry"),"get",npc);
+        JsonObject row=new JsonObject();row.addProperty("tick",server.overworld().getGameTime());row.addProperty("x",npc.getX());row.addProperty("z",npc.getZ());
+        if(state!=null){
+            row.addProperty("shots",((Number)get(state,"successShots")).longValue());
+            row.addProperty("reloadSequence",((Number)get(state,"reloadSequenceId")).longValue());
+            row.addProperty("reloading",((Number)get(state,"reloadUntilMs")).longValue()>System.currentTimeMillis());
+            row.addProperty("coverPhase",((Number)get(get(state,"reloadCover"),"phase")).intValue());
+            row.addProperty("coverResult",String.valueOf(get(get(state,"reloadCover"),"result")));
+            row.addProperty("coverAbort",String.valueOf(get(get(state,"reloadCover"),"abortReason")));
+            row.addProperty("lastResult",String.valueOf(get(state,"lastResult")));
+        }
+        var target=(net.minecraft.world.entity.LivingEntity)server.overworld().getEntity(warfareTargetId);
+        row.addProperty("targetHealth",target==null?0:target.getHealth());warfareSamples.add(row);
     }
 
     static void frame(Minecraft mc,Path output)throws Exception {
@@ -92,6 +117,65 @@ final class GuideScenes {
 
     static void perform(Minecraft mc,String action,int npcId,Path output)throws Exception {
         if(frameFailure!=null)throw new IllegalStateException("Frame writer failed",frameFailure);
+        if(action.equals("scene:dw-setup")||action.equals("scene:dw-setup-reload")){
+            boolean coverDemo=action.equals("scene:dw-setup");
+            mc.setScreen(null);mc.options.fov().set(65);mc.options.bobView().set(false);warfareNpcId=npcId;
+            mc.getSingleplayerServer().submit(()->{try{
+                var server=mc.getSingleplayerServer();var player=server.getPlayerList().getPlayer(mc.player.getUUID());var level=player.serverLevel();var npc=(Mob)level.getEntity(npcId);
+                server.setDifficulty(net.minecraft.world.Difficulty.NORMAL,true);
+                double x=npc.getX(),y=npc.getY(),z=npc.getZ();
+                if(warfareTargetId!=0&&level.getEntity(warfareTargetId)!=null)level.getEntity(warfareTargetId).discard();
+                if(coverDemo&&npc.getClass().getName().startsWith("net.dochi.npc.")){
+                    Object settings=call(npc,"settings");set(settings,"mode",Enum.valueOf((Class)Class.forName("net.dochi.npc.NpcSettings$Mode"),"GUARD"));
+                    set(settings,"fixedPosition",false);set(settings,"fixedRotation",false);set(settings,"speed",.25d);call(npc,"applySettings",settings);
+                }
+                level.getGameRules().getRule(net.minecraft.world.level.GameRules.RULE_DOMOBSPAWNING).set(false,server);level.setDayTime(6000);
+                for(int dx=-8;dx<=8;dx++)for(int dz=-5;dz<=17;dz++){
+                    BlockPos pos=BlockPos.containing(x+dx,y,z+dz);level.setBlock(pos.below(),Blocks.SMOOTH_STONE.defaultBlockState(),3);
+                    for(int dy=0;dy<=4;dy++)level.setBlock(pos.above(dy),Blocks.AIR.defaultBlockState(),3);
+                }
+                // Real high cover beside the initial firing lane, with navigable ground.
+                if(coverDemo)for(int dx=-3;dx<=-1;dx++)for(int dy=0;dy<=2;dy++)level.setBlock(BlockPos.containing(x+dx,y+dy,z+1),Blocks.STONE_BRICKS.defaultBlockState(),3);
+                var target=net.minecraft.world.entity.EntityType.HUSK.create(level);target.moveTo(x,y,z+12,180,0);target.setNoAi(true);target.setPersistenceRequired();
+                target.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).setBaseValue(500);target.setHealth(500);level.addFreshEntity(target);warfareTargetId=target.getId();
+                Object builder=call(Class.forName("com.tacz.guns.api.item.builder.GunItemBuilder"),"create");call(builder,"setId",ResourceLocation.parse("tacz:m4a1"));call(builder,"setCount",1);call(builder,"setAmmoCount",30);call(builder,"setAmmoInBarrel",true);
+                ItemStack gun=(ItemStack)call(builder,"build",player.registryAccess());if(gun.isEmpty())throw new IllegalStateException("TACZ M4A1 unavailable");
+                Class<?> store=Class.forName("net.dochi.tacznpcfire.TaczNpcFirePolicyStore");Object policy=call(store,"loadForUi",npc);
+                set(policy,"taczFireNpc",true);set(policy,"enabled",false);set(policy,"reload",true);set(policy,"storedRangedWeapon",gun);
+                set(policy,"ammoStock",-1);set(policy,"ammoStockMax",-1);set(policy,"rpmOverride",300);set(policy,"accuracy",100d);set(policy,"maxDistance",32d);
+                set(policy,"moveWhileFiring",coverDemo);
+                set(policy,"reloadType",1);set(policy,"forceReloadShots",3);set(policy,"forceReloadMinShots",3);set(policy,"forceReloadMaxShots",3);set(policy,"reloadDurationMs",4000L);
+                set(policy,"coverEnabled",coverDemo);set(policy,"coverOnReload",coverDemo);set(policy,"coverOnDamage",false);set(policy,"coverPeekEnabled",true);
+                set(policy,"coverSearchRadius",8);set(policy,"coverMoveSpeed",5d);set(policy,"coverMinReloadRemainingMs",200L);
+                set(policy,"coverCooldownMs",1000L);set(policy,"coverMaxDurationMs",12000L);set(policy,"detectToCombatMs",0L);set(policy,"awarenessFovDegrees",360d);
+                ((List<String>)get(policy,"targetEntityIds")).clear();((List<String>)get(policy,"targetEntityIds")).add("minecraft:husk");
+                call(store,"save",npc,policy);npc.setItemSlot(net.minecraft.world.entity.EquipmentSlot.MAINHAND,gun.copy());npc.setNoAi(false);
+                call(Class.forName("net.dochi.tacznpcfire.TaczNpcFireMod"),"onGuiPolicySaved",npc);
+                JsonObject receipt=new JsonObject();receipt.addProperty("gun","tacz:m4a1");receipt.addProperty("target","minecraft:husk");
+                for(String field:List.of("enabled","reload","coverEnabled","coverOnReload","coverPeekEnabled","forceReloadShots","reloadDurationMs","coverSearchRadius","coverMoveSpeed"))receipt.add(field,new Gson().toJsonTree(get(policy,field)));
+                Files.writeString(output.resolve("warfare-video-policy.json"),receipt.toString());
+                player.teleportTo(x-6,y,z-2);return true;
+            }catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:dw-look")){
+            var npc=mc.level.getEntity(npcId);mc.player.lookAt(EntityAnchorArgument.Anchor.EYES,npc.position().add(-1,1,2));return;
+        }
+        if(action.equals("scene:dw-start")){
+            mc.getSingleplayerServer().submit(()->{try{
+                var level=mc.getSingleplayerServer().overworld();var npc=(Mob)level.getEntity(npcId);
+                if(!(level.getEntity(warfareTargetId) instanceof net.minecraft.world.entity.LivingEntity target)||!target.isAlive())throw new IllegalStateException("Warfare practice target is absent");
+                Class<?> store=Class.forName("net.dochi.tacznpcfire.TaczNpcFirePolicyStore");Object policy=call(store,"loadForUi",npc);set(policy,"enabled",true);call(store,"save",npc,policy);
+                call(Class.forName("net.dochi.tacznpcfire.TaczNpcFireMod"),"onGuiPolicySaved",npc);
+                npc.setTarget((net.minecraft.world.entity.LivingEntity)level.getEntity(warfareTargetId));warfareSamples.asList().clear();warfareTracking=true;return true;
+            }catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:dw-verify")||action.equals("scene:dw-verify-reload")){
+            mc.getSingleplayerServer().submit(()->{warfareTracking=false;return true;}).get(5,TimeUnit.SECONDS);
+            Files.writeString(output.resolve("warfare-video-runtime.json"),new GsonBuilder().setPrettyPrinting().create().toJson(warfareSamples));
+            boolean shots=false,reload=false,cover=false;
+            for(JsonElement entry:warfareSamples){JsonObject row=entry.getAsJsonObject();shots|=row.has("shots")&&row.get("shots").getAsLong()>=3;reload|=row.has("reloadSequence")&&row.get("reloadSequence").getAsLong()>0;cover|=row.has("coverPhase")&&row.get("coverPhase").getAsInt()==2;}
+            if(!shots||!reload||action.equals("scene:dw-verify")&&!cover)throw new IllegalStateException("Incomplete real Warfare sequence: shots="+shots+", reload="+reload+", cover="+cover);return;
+        }
         if(action.equals("scene:spawn-setup")){
             mc.setScreen(null);mc.options.fov().set(65);mc.options.bobView().set(false);
             mc.getSingleplayerServer().submit(()->{try{
@@ -115,6 +199,16 @@ final class GuideScenes {
             }catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);return;
         }
         if(action.equals("scene:spawn-look")){mc.player.lookAt(EntityAnchorArgument.Anchor.EYES,Vec3.atCenterOf(spawnAnchor).add(0,.2,0));return;}
+        if(action.equals("scene:spawn-warm")){
+            mc.getSingleplayerServer().submit(()->{var player=mc.getSingleplayerServer().getPlayerList().getPlayer(mc.player.getUUID());
+                var pig=net.minecraft.world.entity.EntityType.PIG.create(player.serverLevel());pig.moveTo(player.getX(),player.getY(),player.getZ()-2,0,0);pig.setNoAi(true);player.serverLevel().addFreshEntity(pig);warmPigId=pig.getId();return true;
+            }).get(5,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:spawn-warm-clear")){
+            mc.getSingleplayerServer().submit(()->{var player=mc.getSingleplayerServer().getPlayerList().getPlayer(mc.player.getUUID());
+                var pig=(Mob)player.serverLevel().getEntity(warmPigId);pig.hurt(player.damageSources().playerAttack(player),100);return true;
+            }).get(5,TimeUnit.SECONDS);return;
+        }
         if(action.equals("scene:spawn-enter")){spawnWalking=true;mc.options.keyUp.setDown(true);return;}
         if(action.startsWith("scene:spawn-check:")){
             int expectedTotal=Integer.parseInt(action.substring("scene:spawn-check:".length()));

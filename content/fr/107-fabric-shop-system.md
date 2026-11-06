@@ -54,6 +54,8 @@ Apportez dix émeraudes et cochez seulement la case à côté **Bread**. Confirm
 
 ![Après l'achat, Emerald est 6 et le bouillon de pain est 11/12.](assets/media/guides/drm-031-neo1211/shop-bread-purchased.png "L'inventaire du serveur a reçu trois pains et les émeraudes sont passées de dix à six. Le stock de pain est passé de 12/12 à 11/12 et sa minuterie de réapprovisionnement a commencé. Le résumé inférieur suit la sélection actuelle; ce n'est pas un reçu pour l'achat précédent.")
 
+![Sélectionner Bread et acheter un lot ; le paiement et le stock sont actualisés.](assets/media/guides/extra-videos-20261106/shop-purchase.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, interface anglaise. Trois pains reçus, émeraudes 10→6, stock 12→11.")
+
 ## Vente et rachat
 
 | Objectif | Configuration |

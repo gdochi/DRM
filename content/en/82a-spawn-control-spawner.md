@@ -34,6 +34,8 @@ Documents are stored on the server under `config/dochi_rpg_maker/spawn_control/s
 
 ![One zombie entry in Spawn Target.](assets/media/guides/spawn-control-014-neo1211/spawn-placed.png "Spawn Control 0.1.4 / NeoForge 1.21.1. Entities per activation 1 attempts one entity. Chance 1.0 is 100% because it is the only entry. Successful placement still depends on the conditions and available space.")
 
+![Enter the activation range, observe the one-pig cap and a replacement after defeat.](assets/media/guides/extra-videos-20261106/spawn-cap-respawn.mp4 "Spawn Control 0.1.5 / NeoForge 1.21.1. Prepared spawner: range 5, maximum owned 1, total limit 2; Creative players count in this example.")
+
 ## Editor layout
 
 Select a category in the left panel and edit values on the right. The JSON path is a label identifying the current document. Use `Save As` to change its destination.

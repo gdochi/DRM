@@ -1,0 +1,22 @@
+[
+  {
+    "id": "warfare-fire-reload-video",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "scene:dw-setup-reload",
+      "wait:60",
+      "scene:dw-look",
+      "clear:chat",
+      "gif:start:warfare-fire-reload",
+      "scene:dw-start",
+      "wait:140",
+      "scene:dw-verify-reload",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

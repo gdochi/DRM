@@ -5,7 +5,7 @@ order: 1580
 description: 신규 카드·수치 변경 0종과 화면·서버 안정화, 26.3 추가 업로드 기록입니다.
 product: mwent
 category: 버전별 변경
-section: releases
+section: card-history
 status: 공개 버전 기록
 version: 0.1.2
 audience: 플레이어 / 서버 운영자

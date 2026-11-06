@@ -1,0 +1,11 @@
+{
+  "completedAt": "2026-11-06T12:46:13.988Z",
+  "preview": "http://127.0.0.1:59107",
+  "checks": [
+    "Exactly one MWENT card-shaped button sits immediately right of Changelog in all 8 interface languages at 320/390/768/1440px, with localized tooltip and accessible label.",
+    "The button opens five separate version rows; detailed 0.1.6, 0.1.2 and 0.1.1 card documents remain accessible in all interface languages and do not redirect to the general changelog. Mobile pages do not overflow.",
+    "The version table follows the existing new-tab link behavior and reloads correctly. Sidebar links and Back work; Changelog still opens the Minigames changelog.",
+    "The hidden 0.1.5 workspace snapshot stays unpublished."
+  ],
+  "errors": []
+}

@@ -31,6 +31,8 @@ Las rondas posteriores dibujan hasta tres cartas mientras que el mazo tiene cart
 
 El primer jugador puede usar el **Táctica de apertura** elegido durante la preparación una vez. Está separado de jugar una carta de mano, y 0.1.6 ofrece cinco opciones. Ver [selección y uso real](#mwent/version-0-1-6) para el núcleo del sello Golem que se convierte en un Golem de cuatro potencias en el mismo zócalo.
 
+![Usar Golem seal core y ver un Golem de cuatro puntos en la misma casilla.](assets/media/guides/extra-videos-20261106/mwent-golem.mp4 "Minigames 0.1.6 / NeoForge 1.21.1, interfaz en inglés. Táctica inicial del primer jugador; la fuerza del tablero pasa de 0 a 4.")
+
 1. Seleccione una tarjeta de mano. Haga clic con el botón derecho primero para inspeccionar sus habilidades y estado actual.
 2. Coloque las unidades en un enchufe vacío legal. Las filas y los vecinos inmediatos pueden afectar las habilidades.
 3. Resolver habilidades específicas eligiendo un objetivo legal destacado.

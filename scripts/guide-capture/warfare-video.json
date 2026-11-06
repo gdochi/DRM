@@ -1,0 +1,4 @@
+[
+  {"id":"warfare-cover-reload-video","screen":"@world","actions":["scene:dw-setup","wait:60","scene:dw-look","clear:chat","gif:start:warfare-cover-reload","scene:dw-start","wait:220","scene:dw-verify","wait:15","gif:stop"]},
+  {"id":"gui-drag-resize-preview-video","screen":"GuiMakerScreen","actions":["+ Text","wait:20","gif:start:gui-drag-resize","scene:gui-motion:move","wait:20","scene:gui-motion:resize","wait:20","scene:gui-verify","Preview","wait:20","gif:stop"]}
+]

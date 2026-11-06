@@ -18,7 +18,7 @@ translationMethod: assisted
 
 ## Hacer una tienda que vende pan
 
-Este ejemplo vende **tres panes por cuatro esmeraldas**. Las capturas muestran **DRM 0.3.1 on Forge 1.20.1, in English**.
+Este ejemplo vende **tres panes por cuatro esmeraldas**. Las capturas estáticas muestran **DRM 0.3.1 on Forge 1.20.1, in English**.
 
 ### 1. Elija el producto y la cantidad
 
@@ -53,6 +53,8 @@ Utilice el núcleo DRM en el NPC y elija **NPC Shop JSON → saved shop → Appl
 ![Solo se comprobó Pan en la tienda de PNJ real.](assets/media/guides/drm-031-forge1201/shop-bread-selected.png "DRM 0.3.1 / Forge 1.20.1. El 3 en el icono es el tamaño del paquete de pan; el medio 1 es el número de paquetes a comprar. El resumen muestra tres panes para cuatro esmeraldas.")
 
 ![Después de la compra, la esmeralda es 6 y el stock de pan es 11/12.](assets/media/guides/drm-031-forge1201/shop-bread-purchased.png "El inventario del servidor recibió tres panes y las esmeraldas cayeron de diez a seis. El stock de pan cayó de doce a once y comenzó su temporizador de reabastecimiento. El resumen inferior sigue a la linterna seleccionada actualmente; no es un recibo de la operación anterior.")
+
+![Seleccionar Bread y comprar un lote; el pago y las existencias se actualizan.](assets/media/guides/extra-videos-20261106/shop-purchase.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. Tres panes recibidos, esmeraldas 10→6, existencias 12→11.")
 
 ## Vender y comprar de nuevo
 

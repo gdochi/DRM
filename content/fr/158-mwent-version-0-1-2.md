@@ -5,7 +5,7 @@ order: 1580
 description: Zéro nouvelle ou rééquilibrée cartes, UI et serveur de stabilité travail, et plus tard 26.3 téléchargements.
 product: mwent
 category: Historique de publication
-section: releases
+section: card-history
 status: Disque de libération publique
 version: 0.1.2
 audience: Joueurs / opérateurs de serveur

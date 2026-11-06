@@ -1,0 +1,183 @@
+[
+  {
+    "run": "extra-ui-videos-neo1211-en-01",
+    "results": [
+      {
+        "id": "gui-drag-resize-video",
+        "status": "captured_in_game"
+      },
+      {
+        "id": "saved-file",
+        "status": "verified_file_exists",
+        "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\extra-ui-videos-neo1211-en-01\\game\\config\\dochi_rpg_maker\\npc_shops\\village_shop.json"
+      },
+      {
+        "id": "video-shop-setup",
+        "status": "captured_in_game"
+      },
+      {
+        "id": "shop-apply-control",
+        "status": "native_button_used",
+        "detail": "Apply NPC Shop"
+      },
+      {
+        "id": "shop-purchase",
+        "status": "verified_server_inventory_and_runtime_stock",
+        "detail": "{\"emeralds\":6,\"bread\":3,\"breadProductAfterPurchase\":{\"productId\":\"item_2\",\"item\":\"minecraft:bread\",\"count\":3,\"price\":4,\"stock\":11,\"maxStock\":12,\"restock\":{\"enabled\":true,\"amount\":12,\"intervalTicks\":24000,\"nextGameTime\":24192},\"description\":\"shop.sample.bread.description\",\"descriptionTranslationKey\":true,\"action\":\"say Three loaves. Enough to reach the next gate.\",\"currencyType\":\"inherit\"}}"
+      },
+      {
+        "id": "shop-purchase-video",
+        "status": "captured_in_game"
+      },
+      {
+        "id": "mwent-golem-video",
+        "status": "failed",
+        "error": "java.lang.NoSuchFieldException: buttons"
+      }
+    ]
+  },
+  {
+    "run": "spawn-mwent-videos-neo1211-en-01",
+    "results": [
+      {
+        "id": "spawn-cap-video",
+        "status": "captured_in_game"
+      },
+      {
+        "id": "mwent-opening-tactic",
+        "status": "verified_server_view_tactic_selection",
+        "detail": "Golem seal core / 4"
+      },
+      {
+        "id": "minigames-phase",
+        "status": "verified_runtime_phase",
+        "detail": "mulligan"
+      },
+      {
+        "id": "minigames-phase",
+        "status": "verified_runtime_phase",
+        "detail": "battle"
+      },
+      {
+        "id": "mwent-golem-video",
+        "status": "failed",
+        "error": "java.lang.IllegalStateException: This random coin toss gave the player no opening tactic; do not treat it as a use test"
+      }
+    ]
+  },
+  {
+    "run": "mwent-video-neo1211-en-02",
+    "results": [
+      {
+        "id": "mwent-opening-tactic",
+        "status": "verified_server_view_tactic_selection",
+        "detail": "Golem seal core / 4"
+      },
+      {
+        "id": "minigames-phase",
+        "status": "verified_runtime_phase",
+        "detail": "mulligan"
+      },
+      {
+        "id": "minigames-phase",
+        "status": "verified_runtime_phase",
+        "detail": "battle"
+      },
+      {
+        "id": "mwent-golem",
+        "status": "verified_native_same_socket_transform",
+        "detail": "4 power; same row/socket; opening tactic consumed"
+      },
+      {
+        "id": "mwent-golem-video",
+        "status": "captured_in_game"
+      }
+    ]
+  },
+  {
+    "run": "spawn-video-neo1211-en-02",
+    "results": [
+      {
+        "id": "spawn-cap-video",
+        "status": "captured_in_game"
+      }
+    ]
+  },
+  {
+    "run": "warfare-video-neo1211-en-01",
+    "results": [
+      {
+        "id": "warfare-cover-reload-video",
+        "status": "failed",
+        "error": "java.lang.RuntimeException: perform"
+      }
+    ]
+  },
+  {
+    "run": "warfare-video-neo1211-en-02",
+    "results": [
+      {
+        "id": "warfare-cover-reload-video",
+        "status": "failed",
+        "error": "java.lang.RuntimeException: perform"
+      },
+      {
+        "id": "gui-drag-resize-preview-video",
+        "status": "captured_in_game"
+      }
+    ]
+  },
+  {
+    "run": "warfare-video-neo1211-en-03",
+    "results": [
+      {
+        "id": "warfare-cover-reload-video",
+        "status": "failed",
+        "error": "java.lang.RuntimeException: perform"
+      }
+    ]
+  },
+  {
+    "run": "warfare-video-neo1211-en-04",
+    "results": [
+      {
+        "id": "warfare-cover-reload-video",
+        "status": "captured_in_game"
+      }
+    ]
+  },
+  {
+    "run": "warfare-video-neo1211-en-05",
+    "results": [
+      {
+        "id": "warfare-cover-reload-video",
+        "status": "failed",
+        "error": "java.lang.RuntimeException: perform"
+      }
+    ]
+  },
+  {
+    "run": "warfare-video-neo1211-en-06",
+    "results": [
+      {
+        "id": "warfare-cover-reload-video",
+        "status": "failed",
+        "error": "java.lang.RuntimeException: perform"
+      },
+      {
+        "id": "warfare-fire-reload-video",
+        "status": "failed",
+        "error": "java.lang.RuntimeException: perform"
+      }
+    ]
+  },
+  {
+    "run": "warfare-video-neo1211-en-07",
+    "results": [
+      {
+        "id": "warfare-fire-reload-video",
+        "status": "captured_in_game"
+      }
+    ]
+  }
+]
