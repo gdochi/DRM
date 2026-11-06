@@ -350,6 +350,10 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
 .track-primary-actions { display: flex; gap: 8px; min-width: 0; }
 .track-primary-actions .track-open { white-space: normal; text-align: center; }
 .track-primary-actions svg { flex-shrink: 0; }
+.track-actions .track-icon { justify-content: center; width: 40px; height: 40px; min-height: 40px; padding: 0; flex-shrink: 0; }
+.track-icon svg { width: 20px; height: 20px; }
+.track-open.track-curseforge { color: #f16436; }
+.track-open.track-modrinth { color: #1b9f64; }
 
 .product-tabs { display: flex; flex-wrap: wrap; gap: 6px; border-bottom: 1px solid var(--line); margin-bottom: 16px; padding-bottom: 10px; }
 .product-tabs a { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 9px 12px; color: var(--muted); border-radius: 6px; font-size: .85rem; font-weight: 700; }
