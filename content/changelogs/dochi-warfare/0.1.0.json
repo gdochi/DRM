@@ -1,0 +1,20 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.1.0",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:40.534Z",
+  "files": [
+    {
+      "id": 8142248,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "cnpc_tacz_fire-0.1.0.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8142248",
+      "uploadedAt": "2026-05-25T06:58:56.767Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8142248",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8142248/change-log",
+      "html": "<p>Initial release.</p>\n<ul>\n<li>Added CustomNPCs + TACZ firing bridge</li>\n<li>Added per-NPC configuration GUI</li>\n<li>Added ranged/melee/auto stance policy</li>\n<li>Added script and storeddata integration</li>\n<li>Added ammo stock and reload policy</li>\n<li>Added RPM control</li>\n<li>Added melee weapon selection</li>\n<li>Added optional grenade configuration support</li>\n</ul>\n"
+    }
+  ]
+}

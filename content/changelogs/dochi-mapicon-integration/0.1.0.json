@@ -1,0 +1,44 @@
+{
+  "product": "dochi-mapicon-integration",
+  "version": "0.1.0",
+  "projectId": 1738703,
+  "checkedAt": "2026-11-06T08:49:43.363Z",
+  "files": [
+    {
+      "id": 9127456,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_mapicon_integration-0.1.0-forge-1.20.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9127456",
+      "uploadedAt": "2026-10-11T09:33:59.687Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9127456",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9127456/change-log",
+      "html": "<h1>Dochi's MapIcon Integration 0.1.0</h1>\n<ul>\n<li>Added NPC map icons for Xaero's Minimap and World Map.</li>\n<li>Added defaults by applied JSON type and individual NPC icon settings.</li>\n<li>Added bundled/custom PNG icons, size controls, and a full RGB color picker.</li>\n<li>Added icon visibility, map selection, and name display controls.</li>\n</ul>\n<p>Requires Dochi RPG Maker and its dependencies. Xaero map mods are optional. Currently supports Xaero's Minimap and World Map. JourneyMap support is planned for a future update.</p>\n"
+    },
+    {
+      "id": 9127461,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_mapicon_integration-0.1.0-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9127461",
+      "uploadedAt": "2026-10-11T09:34:36.03Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9127461",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9127461/change-log",
+      "html": "<h1>Dochi's MapIcon Integration 0.1.0</h1>\n<ul>\n<li>Added NPC map icons for Xaero's Minimap and World Map.</li>\n<li>Added defaults by applied JSON type and individual NPC icon settings.</li>\n<li>Added bundled/custom PNG icons, size controls, and a full RGB color picker.</li>\n<li>Added icon visibility, map selection, and name display controls.</li>\n</ul>\n<p>Requires Dochi RPG Maker and its dependencies. Xaero map mods are optional. Currently supports Xaero's Minimap and World Map. JourneyMap support is planned for a future update.</p>\n"
+    },
+    {
+      "id": 9127463,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_mapicon_integration-0.1.0-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9127463",
+      "uploadedAt": "2026-10-11T09:35:04.14Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9127463",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9127463/change-log",
+      "html": "<h1>Dochi's MapIcon Integration 0.1.0</h1>\n<ul>\n<li>Added NPC map icons for Xaero's Minimap and World Map.</li>\n<li>Added defaults by applied JSON type and individual NPC icon settings.</li>\n<li>Added bundled/custom PNG icons, size controls, and a full RGB color picker.</li>\n<li>Added icon visibility, map selection, and name display controls.</li>\n</ul>\n<p>Requires Dochi RPG Maker and its dependencies. Xaero map mods are optional. Currently supports Xaero's Minimap and World Map. JourneyMap support is planned for a future update.</p>\n"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ version: 0.3.1
 audience: Créateurs / opérateurs de serveur
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 ## Ajouter des noms et des étiquettes aux dialogues

@@ -14,6 +14,7 @@ tags:
   - migration
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 Minecraft 1.20.1 · Forge

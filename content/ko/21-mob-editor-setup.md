@@ -17,7 +17,7 @@ tags:
 
 ## 1. 실습 환경 준비하기
 
-아래는 실제 화면 촬영과 첫 공격 시험에 사용한 조합입니다. **BattleWorks와 DRM**, 전투를 붙일 **NPC 모드**를 준비합니다. 다른 Minecraft·로더 파일은 [설치 파일 고르기](#mob-editor/battleworks-update-0-1-6)에서 확인하세요.
+아래는 실제 화면 촬영과 첫 공격 시험에 사용한 조합입니다. **BattleWorks와 DRM**, 전투를 붙일 **NPC 모드**를 준비합니다. 다른 Minecraft·로더 파일은 [설치 파일 고르기](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660)에서 확인하세요.
 
 | 구성 | 이번 실습 |
 | --- | --- |

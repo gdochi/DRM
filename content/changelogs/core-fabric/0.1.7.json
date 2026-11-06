@@ -1,0 +1,20 @@
+{
+  "product": "core-fabric",
+  "version": "0.1.7",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:37.359Z",
+  "files": [
+    {
+      "id": 8639561,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.1.7-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/8639561",
+      "uploadedAt": "2026-08-13T11:55:38.027Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8639561",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8639561/change-log",
+      "html": "<h1>0.1.7 Change Log</h1>\n<h2>Added</h2>\n<ul>\n<li>Added the complete Teleporter Set editor and player-facing Teleporter runtime, including category and destination search, locked destinations, shared conditions, configurable media and sounds, server-validated travel, and transition fades.</li>\n<li>Added Teleporter Set support to NPC Apply, including Apply/Remove actions, authoritative Applied JSON state, direct NPC interaction, and dialogue <code>go_teleporter</code> routing.</li>\n<li>Added the generic NPC Spawner block, item, editor, persistence, networking, and public NPC-classification APIs to DRM Core, allowing Core and addon NPC sources to share one spawner system.</li>\n<li>Added continuous, nearby-target, target-enter, and redstone-pulse spawning with shared DRM conditions, cooldown, wave size, global active limits, safe placement, visibility, cleanup leases, and configurable spawn particles.</li>\n<li>Added Default, Item, and Block NPC Spawner appearances with scale, billboard, item-transform controls, server validation, and persistent display-entity recovery and cleanup.</li>\n<li>Added live FUNCTION search to NPC Apply. Functions can be found by localized label, action name, target ID, server JSON kind, editor ID, or binding group.</li>\n</ul>\n<h2>Changed</h2>\n<ul>\n<li>Changed the NPC Spawner editor to use the standard DRM editor layout with a source table and inspector, compact switches and fields, bounded selector flyouts, inline conditions, and consistent section separation.</li>\n<li>Changed NPC Spawner source management from one future source to a weighted multi-source pool. Adding, removing, or reweighting sources no longer removes unrelated NPCs that have already spawned.</li>\n<li>Changed NPC Spawner condition controls to a single Disabled/AND/OR selector while preserving the stored condition mode when conditions are disabled.</li>\n<li>Changed NPC Spawner enum and particle selection to searchable or scrollable flyouts, and added draggable Source, Conditions, and flyout scrollbars plus condition drag-and-drop ordering.</li>\n<li>Changed NPC Spawner rendering to use the supplied model and texture with glass-like transparency, lighting, and optional hidden-model behavior for custom appearances.</li>\n<li>Changed NPC Apply filtering so search never silently replaces the explicitly selected function, and the Applied JSON panel always continues to show the complete function registry.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fixed the Teleporter editor becoming blurred or smeared after opening Load, Save As, or confirmation flyouts.</li>\n<li>Fixed the NPC-bound Teleporter destination screen being covered by vanilla menu blur, which prevented players from using search, categories, destinations, and Travel controls.</li>\n<li>Fixed Teleporter editor buttons, text fields, multiline input, focus, and sound preview silently failing because reflected widget method names were not remapped in the Fabric release.</li>\n<li>Fixed a short-lived lower-left <code>Loading server ... JSON</code> label flashing whenever the selected NPC Apply function changed; the JSON list now owns loading feedback without duplicating it in the footer.</li>\n</ul>"
+    }
+  ]
+}

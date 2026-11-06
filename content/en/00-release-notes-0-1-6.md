@@ -12,6 +12,7 @@ audience: Creators / Operators
 tags:
   - release
   - migration
+hiddenNav: true
 ---
 
 Minecraft 1.20.1 · Forge

@@ -1,6 +1,7 @@
 (function () {
   const config = window.DRM_DOCS_CONFIG || {};
   const docsData = window.DRM_DOCS_DATA || {};
+  const changelogs = window.DOCHI_CHANGELOGS || [];
 
   function safeGet(key, fallback) {
     try {
@@ -65,6 +66,36 @@
     return doc.section === "releases" || /(?:release|current-update|battleworks-update|^version-)/.test(doc.slug);
   }
 
+  function changelogText(key) {
+    const copy = {
+      en: { title: "Changelog", lead: "Choose a loader, Minecraft version and mod version.", loader: "Mod loader", minecraft: "Minecraft version", versions: "Mod versions", download: "Download", notes: "Published English release notes.", empty: "No published release notes for this version.", select: "Choose a mod" },
+      ko: { title: "체인지로그", lead: "로더, 마인크래프트 버전, 모드 버전을 선택하세요.", loader: "모드 로더", minecraft: "마인크래프트 버전", versions: "모드 버전", download: "다운로드", notes: "공개된 영문 릴리스 노트입니다.", empty: "이 버전에 공개된 릴리스 노트가 없습니다.", select: "모드 선택" },
+      pt: { title: "Histórico de alterações", lead: "Escolha o carregador, a versão do Minecraft e a versão do mod.", loader: "Carregador", minecraft: "Versão do Minecraft", versions: "Versões do mod", download: "Baixar", notes: "Notas de lançamento publicadas em inglês.", empty: "Não há notas publicadas para esta versão.", select: "Escolher mod" },
+      es: { title: "Registro de cambios", lead: "Elige el cargador, la versión de Minecraft y la versión del mod.", loader: "Cargador", minecraft: "Versión de Minecraft", versions: "Versiones del mod", download: "Descargar", notes: "Notas de lanzamiento publicadas en inglés.", empty: "No hay notas publicadas para esta versión.", select: "Elegir mod" },
+      fr: { title: "Journal des modifications", lead: "Choisissez le chargeur, la version de Minecraft et la version du mod.", loader: "Chargeur", minecraft: "Version de Minecraft", versions: "Versions du mod", download: "Télécharger", notes: "Notes de version publiées en anglais.", empty: "Aucune note publiée pour cette version.", select: "Choisir un mod" },
+      ru: { title: "История изменений", lead: "Выберите загрузчик, версию Minecraft и версию мода.", loader: "Загрузчик", minecraft: "Версия Minecraft", versions: "Версии мода", download: "Скачать", notes: "Опубликованные примечания на английском языке.", empty: "Для этой версии нет опубликованных примечаний.", select: "Выбрать мод" },
+      zh: { title: "更新日志", lead: "选择加载器、Minecraft 版本和模组版本。", loader: "模组加载器", minecraft: "Minecraft 版本", versions: "模组版本", download: "下载", notes: "已发布的英文更新说明。", empty: "此版本暂无已发布的更新说明。", select: "选择模组" },
+      ja: { title: "更新履歴", lead: "ローダー、Minecraft のバージョン、MOD のバージョンを選択してください。", loader: "MOD ローダー", minecraft: "Minecraft バージョン", versions: "MOD バージョン", download: "ダウンロード", notes: "公開された英語のリリースノートです。", empty: "このバージョンの公開リリースノートはありません。", select: "MOD を選択" }
+    };
+    return (copy[state.locale] || copy.en)[key];
+  }
+
+  function changelogProduct(product) {
+    return product === "mwent" ? "dochi-minigames" : product;
+  }
+
+  function changelogLink(product, loader = "", minecraft = "", version = "") {
+    return `#changelog/${[changelogProduct(product), loader, minecraft, version].filter(Boolean).map(encodeURIComponent).join("/")}`;
+  }
+
+  function hasChangelog(product) {
+    return changelogs.some(release => release.product === changelogProduct(product));
+  }
+
+  function renderProductTabs(product, active) {
+    return `<nav class="product-tabs" aria-label="${escapeAttr(productText(config.products[product], "shortLabel"))}"><a href="${linkForProduct(product)}"${active === "docs" ? ' aria-current="page"' : ""}>${icon("book")}${escapeHtml(t("openDocs"))}</a>${hasChangelog(product) ? `<a href="${changelogLink(product)}"${active === "changelog" ? ' aria-current="page"' : ""}>${icon("history")}${escapeHtml(changelogText("title"))}</a>` : ""}</nav>`;
+  }
+
   if (!config.locales?.[state.locale]) state.locale = config.defaultLocale || localeKeys[0] || "en";
   document.documentElement.lang = config.locales?.[state.locale]?.htmlLang || state.locale;
 
@@ -72,6 +103,7 @@
 
   function icon(name) {
     const icons = {
+      history: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11a9 9 0 1 1 2.5 7"></path><path d="M3 4v7h7M12 7v5l3 2"></path></svg>',
       search: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.6-3.6"></path></svg>',
       menu: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>',
       github: '<svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3A12 12 0 0 0 8.2 23.7c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C15.2 5.1 16.2 5.4 16.2 5.4c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A12 12 0 0 0 12 .3Z"></path></svg>',
@@ -270,6 +302,10 @@
     if (!raw || raw === "home") return { view: "home", product: "", doc: "", section: "" };
     const decode = value => { try { return decodeURIComponent(value); } catch { return value; } };
     const [base, rawSection = ""] = raw.split("::");
+    if (base.startsWith("changelog/")) {
+      const [, product = "", loader = "", minecraft = "", version = "", ...extra] = base.split("/").map(decode);
+      return { view: "changelog", product, loader, minecraft, version, doc: "", section: "", invalid: extra.length > 0 };
+    }
     const [product = "", doc = ""] = base.split("/").map(decode);
     const section = decode(rawSection);
     if (!product) return { view: "home", product: "", doc: "", section: "" };
@@ -330,7 +366,7 @@
   }
 
   function getDocsByProduct(product) {
-    return getAllDocs().filter((doc) => doc.product === product)
+    return getAllDocs().filter((doc) => doc.product === product && doc.section !== "releases")
       .sort((a, b) => Number(isHistory(a)) - Number(isHistory(b)) || a.order - b.order);
   }
 
@@ -353,7 +389,7 @@
   }
 
   function findDoc(product, slug) {
-    return getDocsByProduct(product).find((doc) => doc.slug === slug) || null;
+    return getAllDocs().find((doc) => doc.product === product && doc.slug === slug) || null;
   }
 
   function productText(meta, field) {
@@ -682,7 +718,7 @@
       `;
       const actions = `
         <div class="track-actions">
-          ${docsHref ? `<a class="track-open" href="${docsHref}">${t("openDocs")}${icon("chevron")}</a>` : ""}
+          ${docsHref ? `<div class="track-primary-actions"><a class="track-open" href="${docsHref}">${t("openDocs")}${icon("chevron")}</a>${hasChangelog(meta.product) ? `<a class="track-open track-changelog" href="${changelogLink(meta.product)}">${escapeHtml(changelogText("title"))}${icon("history")}</a>` : ""}</div>` : ""}
           ${curseForgeHref ? `<a class="track-open external" href="${escapeAttr(curseForgeHref)}" target="_blank" rel="noreferrer">${t("curseForge")}${icon("external")}</a>` : ""}
           ${modrinthHref ? `<a class="track-open external" href="${escapeAttr(modrinthHref)}" target="_blank" rel="noreferrer">${t("modrinth")}${icon("external")}</a>` : ""}
           ${!docsHref && !curseForgeHref && !modrinthHref ? `<span class="track-status">${escapeHtml(statusText(meta))}</span>` : ""}
@@ -747,6 +783,7 @@
     return `
       <aside class="sidebar" id="doc-sidebar" data-sidebar>
         ${renderModPicker(product)}
+        ${renderProductTabs(product, "docs")}
         <nav class="doc-nav" aria-label="${escapeAttr(ui("docsMenu"))}">
           ${sections.sort((a, b) => Number(a.items.every(isHistory)) - Number(b.items.every(isHistory))).map(section => {
             const active = !!activeDoc && section.items.some(doc => doc.slug === activeDoc.slug);
@@ -829,10 +866,37 @@
     target?.scrollIntoView({ behavior: "instant", block: "start" });
   }
 
+  function renderChangelog(route) {
+    const { product } = route;
+    if (!config.products?.[product] || !isProductOpen(product) || route.invalid) return renderNotFound(product);
+    const releases = changelogs.filter(release => release.product === changelogProduct(product));
+    const loaders = ["Forge", "NeoForge", "Fabric"].filter(loader => releases.some(release => release.loader === loader));
+    const loader = route.loader || loaders[0];
+    const minecraftVersions = [...new Set(releases.filter(release => release.loader === loader).map(release => release.minecraft))].sort((a,b) => a.localeCompare(b, undefined, { numeric: true }));
+    const minecraft = route.minecraft || minecraftVersions[0];
+    const versions = [...new Set(releases.filter(release => release.loader === loader && release.minecraft === minecraft).map(release => release.version))].sort((a,b) => b.localeCompare(a, undefined, { numeric: true }));
+    const version = route.version || versions[0];
+    const files = releases.filter(release => release.loader === loader && release.minecraft === minecraft && release.version === version).sort((a,b) => b.uploadedAt.localeCompare(a.uploadedAt));
+    if (!files.length) return renderNotFound(product);
+    const release = files[0];
+    const tab = (label, href, active) => `<a href="${href}"${active ? ' aria-current="page"' : ""}>${escapeHtml(label)}</a>`;
+    return `<section class="changelog-shell" data-changelog data-product="${escapeAttr(product)}" data-loader="${escapeAttr(loader)}" data-minecraft="${escapeAttr(minecraft)}" data-version="${escapeAttr(version)}">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home">Dochi's Wiki</a>${icon("chevron")}<span>${escapeHtml(productText(config.products[product], "shortLabel"))}</span></nav>
+      <header class="changelog-heading"><div><h1>${escapeHtml(changelogText("title"))}</h1><p>${escapeHtml(productText(config.products[product], "shortLabel"))}</p></div><label class="changelog-mod-picker"><span>${escapeHtml(changelogText("select"))}</span><select data-changelog-mod>${getWikiMods().filter(mod => mod.product !== "mwent" && hasChangelog(mod.product)).map(mod => `<option value="${escapeAttr(mod.product)}"${mod.product === product ? " selected" : ""}>${escapeHtml(modText(mod, "shortLabel") || modText(mod, "label"))}</option>`).join("")}</select></label></header>
+      ${renderProductTabs(product, "changelog")}
+      <p class="changelog-lead">${escapeHtml(changelogText("lead"))}</p>
+      <div class="changelog-filters"><div><h2>${escapeHtml(changelogText("loader"))}</h2><nav class="changelog-options" aria-label="${escapeAttr(changelogText("loader"))}">${loaders.map(item => tab(item, changelogLink(product, item), loader === item)).join("")}</nav></div>
+      <div><h2>${escapeHtml(changelogText("minecraft"))}</h2><nav class="changelog-options" aria-label="${escapeAttr(changelogText("minecraft"))}">${minecraftVersions.map(item => tab(item, changelogLink(product, loader, item), minecraft === item)).join("")}</nav></div></div>
+      <div class="changelog-layout"><aside class="changelog-versions"><h2>${escapeHtml(changelogText("versions"))}</h2><nav aria-label="${escapeAttr(changelogText("versions"))}">${versions.map(item => tab(item, changelogLink(product, loader, minecraft, item), version === item)).join("")}</nav></aside>
+      <article class="changelog-release"><header><div class="release-context"><span>${escapeHtml(loader)} ${escapeHtml(minecraft)}</span><time datetime="${escapeAttr(release.uploadedAt)}">${escapeHtml(release.uploadedAt.slice(0,10))} UTC</time></div><div class="release-title"><h2>${escapeHtml(version)}</h2>${files.map(file => `<a class="track-open" href="${escapeAttr(file.url)}" target="_blank" rel="noreferrer">${escapeHtml(changelogText("download"))}${icon("external")}</a>`).join("")}</div><p>${escapeHtml(changelogText("notes"))}</p></header>
+      <div class="doc-page-body changelog-notes" lang="en">${release.html || `<p>${escapeHtml(changelogText("empty"))}</p>`}</div></article></div>
+    </section>`;
+  }
+
   function renderPage(options = {}) {
     const route = parseHash();
     const { view, product } = route;
-    const routeKey = `${state.locale}:${view}/${product}/${route.doc}`;
+    const routeKey = `${state.locale}:${view}/${product}/${route.doc}/${route.loader || ""}/${route.minecraft || ""}/${route.version || ""}/${route.invalid || ""}`;
     if (routeKey === previousRoute && !options.preserveReading) {
       app.querySelector(".mobile-toc")?.removeAttribute("open");
       scrollToSection(route.section);
@@ -845,9 +909,15 @@
     if (view === "doc") {
       if (config.products?.[product] && isProductOpen(product)) {
         activeDoc = route.doc ? findDoc(product, route.doc) : getDefaultDoc(product);
+        if (activeDoc?.section === "releases") {
+          const version = activeDoc.releaseVersion || activeDoc.version;
+          const first = changelogs.find(release => release.product === changelogProduct(product) && release.version === version);
+          if (first) { location.replace(changelogLink(product, first.loader, first.minecraft, version)); return; }
+        }
       }
     }
-    document.title = activeDoc ? `${activeDoc.title} · ${productText(config.products[product], "shortLabel")} · Dochi's Wiki` : ui(view === "home" ? "tasks" : "missing") + " · Dochi's Wiki";
+    const changelogPage = view === "changelog" ? renderChangelog(route) : "";
+    document.title = activeDoc ? `${activeDoc.title} · ${productText(config.products[product], "shortLabel")} · Dochi's Wiki` : view === "changelog" && !changelogPage.includes('class="not-found"') ? `${changelogText("title")} · ${productText(config.products[product], "shortLabel")} · Dochi's Wiki` : ui(view === "home" ? "tasks" : "missing") + " · Dochi's Wiki";
     app.innerHTML = `
       <a class="skip-link" href="#main-content">${escapeHtml(ui("skip"))}</a>
       <header class="topbar">
@@ -860,7 +930,7 @@
           ${renderSocialLinks()}
         </div>
       </header>
-      ${view === "home" ? `<main class="main-home" id="main-content" tabindex="-1">${renderHome()}</main>` : activeDoc ? `<div class="layout"><div class="mobile-doc-bar"><button type="button" data-mobile-menu aria-expanded="false" aria-controls="doc-sidebar">${icon("menu")}${escapeHtml(ui("docsMenu"))}${icon("chevronDown")}</button><span>${escapeHtml(productText(config.products[product], "shortLabel"))}</span></div>${renderSidebar(product, activeDoc)}<main class="content" id="main-content" tabindex="-1">${renderDoc(product, activeDoc)}</main></div>` : `<main class="main-home" id="main-content" tabindex="-1">${renderNotFound(config.products?.[product] ? product : "")}</main>`}
+      ${view === "home" ? `<main class="main-home" id="main-content" tabindex="-1">${renderHome()}</main>` : view === "changelog" ? `<main class="main-home" id="main-content" tabindex="-1">${changelogPage}</main>` : activeDoc ? `<div class="layout"><div class="mobile-doc-bar"><button type="button" data-mobile-menu aria-expanded="false" aria-controls="doc-sidebar">${icon("menu")}${escapeHtml(ui("docsMenu"))}${icon("chevronDown")}</button><span>${escapeHtml(productText(config.products[product], "shortLabel"))}</span></div>${renderSidebar(product, activeDoc)}<main class="content" id="main-content" tabindex="-1">${renderDoc(product, activeDoc)}</main></div>` : `<main class="main-home" id="main-content" tabindex="-1">${renderNotFound(config.products?.[product] ? product : "")}</main>`}
       <footer class="mobile-social-links">${renderSocialLinks()}</footer>
     `;
 
@@ -877,6 +947,7 @@
   }
 
   function bindEvents(view, product, activeDoc, section) {
+    app.querySelector("[data-changelog-mod]")?.addEventListener("change", event => { location.hash = changelogLink(event.target.value); });
     app.querySelector("[data-feedback-link]")?.addEventListener("click", () => {
       if (state.feedbackOpen) {
         closeFeedbackFlyout();
@@ -1062,7 +1133,7 @@
   function getSearchIndex() {
     if (searchIndexes.has(state.locale)) return searchIndexes.get(state.locale);
     const index = [];
-    for (const doc of getAllDocs().filter(doc => isProductOpen(doc.product))) {
+    for (const doc of getAllDocs().filter(doc => isProductOpen(doc.product) && doc.section !== "releases")) {
       const parsed = new DOMParser().parseFromString(doc.html, "text/html");
       let section = { id: "", title: doc.title, text: "" };
       const sections = [section];

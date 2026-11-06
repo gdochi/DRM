@@ -14,6 +14,7 @@ tags:
   - migration
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 Este es un registro de liberación histórico. Ver [ DRM 0.3.1 ](#core/release-notes-0-3-1) para la dirección actual.

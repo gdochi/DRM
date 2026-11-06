@@ -1,0 +1,20 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.1.1",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.905Z",
+  "files": [
+    {
+      "id": 8471611,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "drm_cobblemon_editor-0.1.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/8471611",
+      "uploadedAt": "2026-07-20T13:39:18.333Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8471611",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8471611/change-log",
+      "html": "<div><div># 0.1.1 Change Log</div><br><div>## Added</div><br><div>- Added the Nurse Joy Editor and Nurse Joy NPC role. A CustomNPC can now use a nearby Cobblemon healing machine to run dialogue, movement, treatment animations, and party healing.</div><div>- Added Pokemon gender selection with Random, Male, Female, and Genderless options.</div><div>- Added CobbleDollars as a trainer victory reward.</div><br><div>## Changed</div><br><div>- Existing trainer JSON files are upgraded automatically, with older Pokemon entries defaulting to Random gender.</div><div>- Trainer previews, battles, and PokeMart Pokemon now use the same form, Aspect, and gender handling.</div><br><div>## Fixed</div><br><div>- Fixed species-specific forms missing from the form selector.</div><div>- Fixed Hisuian and other alternate forms falling back to the base Pokemon when no Aspect was selected manually.</div><div>- Fixed disabled Trainer and Pokemon-self roles still opening battle interactions.</div><div>- Fixed NPC Apply status and removal for Trainer and Pokemon-self bindings.</div></div>"
+    }
+  ]
+}

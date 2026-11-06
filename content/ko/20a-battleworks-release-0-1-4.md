@@ -9,6 +9,7 @@ section: start
 status: 사용 안내
 version: 0.1.4
 audience: 전투 콘텐츠 제작자
+hiddenNav: true
 ---
 
 ## 0.1.4 기록과 현재 안내

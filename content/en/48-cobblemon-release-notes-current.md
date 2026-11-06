@@ -9,6 +9,7 @@ section: overview
 status: Stable
 version: Fabric / NeoForge 0.2.9
 audience: Creators / Operators
+hiddenNav: true
 ---
 
 ## Rewards after dialogue

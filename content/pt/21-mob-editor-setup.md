@@ -18,7 +18,7 @@ translationMethod: assisted
 
 ## 1. Preparar a instalação prática
 
-Esta é a combinação usada para as telas capturadas e teste de primeiro ataque. Instale **BattleWorks, DRM and an NPC mod**. Para outros arquivos Minecraft/loader, veja [opções de instalação](#mob-editor/battleworks-update-0-1-6).
+Esta é a combinação usada para as telas capturadas e teste de primeiro ataque. Instale **BattleWorks, DRM and an NPC mod**. Para outros arquivos Minecraft/loader, veja [opções de instalação](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660).
 
 | Componente | Este exercício. |
 | --- | --- |

@@ -1,0 +1,32 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.2.9",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:39.755Z",
+  "files": [
+    {
+      "id": 8918916,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_warfare-0.2.9.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8918916",
+      "uploadedAt": "2026-09-19T08:42:55.857Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8918916",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8918916/change-log",
+      "html": "<h1>0.2.9 Change Log</h1>\n<ul>\n<li>Fixed an issue in singleplayer where NPCs using Better Combat animations could revert to vanilla animations or lose their animations entirely after killing the player.</li>\n<li>Added support for Superb Warfare 0.8.9.1.</li>\n</ul>\n"
+    },
+    {
+      "id": 8946751,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_warfare-0.2.9-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8946751",
+      "uploadedAt": "2026-09-22T12:40:38.163Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8946751",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8946751/change-log",
+      "html": "<h1>0.2.9 Change Log</h1>\n<ul>\n<li>Ported the Forge 0.2.9 version to NeoForge.</li>\n</ul>\n"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "product": "dochi-npc-core",
+  "version": "0.1.1",
+  "projectId": 1764663,
+  "checkedAt": "2026-11-06T08:49:37.621Z",
+  "files": [
+    {
+      "id": 9349518,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_npc_core-0.1.1-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9349518",
+      "uploadedAt": "2026-10-28T04:41:14.557Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9349518",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9349518/change-log",
+      "html": "<h1>0.1.1 Change Log</h1>\n<ul>\n<li>Added NPC head angle adjustment settings.</li>\n<li>Added an option to make NPCs immune to damage.</li>\n<li>Improved the UI structure.</li>\n<li>Added Immersive Melodies integration as a DayCycle work activity for NPCs (Forge 1.20.1, NeoForge/Fabric 1.21.1).</li>\n</ul>\n"
+    },
+    {
+      "id": 9349520,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_npc_core-0.1.1-forge-1.20.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9349520",
+      "uploadedAt": "2026-10-28T04:41:26.72Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9349520",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9349520/change-log",
+      "html": "<h1>0.1.1 Change Log</h1>\n<ul>\n<li>Added NPC head angle adjustment settings.</li>\n<li>Added an option to make NPCs immune to damage.</li>\n<li>Improved the UI structure.</li>\n<li>Added Immersive Melodies integration as a DayCycle work activity for NPCs (Forge 1.20.1, NeoForge/Fabric 1.21.1).</li>\n</ul>"
+    },
+    {
+      "id": 9349523,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_npc_core-0.1.1-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9349523",
+      "uploadedAt": "2026-10-28T04:41:57.863Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9349523",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9349523/change-log",
+      "html": "<h1>0.1.1 Change Log</h1>\n<ul>\n<li>Added NPC head angle adjustment settings.</li>\n<li>Added an option to make NPCs immune to damage.</li>\n<li>Improved the UI structure.</li>\n<li>Added Immersive Melodies integration as a DayCycle work activity for NPCs (Forge 1.20.1, NeoForge/Fabric 1.21.1).</li>\n</ul>\n"
+    },
+    {
+      "id": 9349524,
+      "loader": "NeoForge",
+      "minecraft": "26.3",
+      "name": "dochi_npc_core-0.1.1-neoforge-26.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9349524",
+      "uploadedAt": "2026-10-28T04:42:20.453Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9349524",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9349524/change-log",
+      "html": "<h1>0.1.1 Change Log</h1>\n<ul>\n<li>Added NPC head angle adjustment settings.</li>\n<li>Added an option to make NPCs immune to damage.</li>\n<li>Improved the UI structure.</li>\n<li>Added Immersive Melodies integration as a DayCycle work activity for NPCs (Forge 1.20.1, NeoForge/Fabric 1.21.1).</li>\n</ul>\n"
+    },
+    {
+      "id": 9349525,
+      "loader": "Fabric",
+      "minecraft": "26.3",
+      "name": "dochi_npc_core-0.1.1-fabric-26.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9349525",
+      "uploadedAt": "2026-10-28T04:42:37.817Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9349525",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9349525/change-log",
+      "html": "<h1>0.1.1 Change Log</h1>\n<ul>\n<li>Added NPC head angle adjustment settings.</li>\n<li>Added an option to make NPCs immune to damage.</li>\n<li>Improved the UI structure.</li>\n<li>Added Immersive Melodies integration as a DayCycle work activity for NPCs (Forge 1.20.1, NeoForge/Fabric 1.21.1).</li>\n</ul>\n"
+    }
+  ]
+}

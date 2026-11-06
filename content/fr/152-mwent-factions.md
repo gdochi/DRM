@@ -19,7 +19,7 @@ Commencez avec un préréglage et inspectez ses cartes sur la droite. **Use this
 
 ![Préréglage du Chœur Compagnon d'Avalin avec filtres de faction, stratégie et mod.](assets/media/guides/minigames-016-neo1211/mwent016-faction-select.png "Minijeux 0.1.6 / NeoForge 1.21.1, interface utilisateur anglaise. Utilisez toutes les factions pour affiner la liste et inspecter les cartes sur la droite. Les préréglages de mod optionnel verrouillés ne peuvent pas être sélectionnés car leurs fournisseurs sont absents dans ce cas.")
 
-Un deck combine sa faction choisie avec des cartes neutres. Il y a quatre préréglages de base par faction, 24 au total, et trois choix de leader par faction. Les stratégies de base ci-dessous étaient déjà présentes dans le téléchargement 0.1.1. Voir [0.1.5 changements](#mwent/version-0-1-5) pour de nouveaux scénarios, emplacements, pièges et cartes de siège.
+Un deck combine sa faction choisie avec des cartes neutres. Il y a quatre préréglages de base par faction, 24 au total, et trois choix de leader par faction. Les stratégies de base ci-dessous étaient déjà présentes dans le téléchargement 0.1.1. Voir [0.1.6 changements](#mwent/version-0-1-6) pour de nouveaux scénarios, emplacements, pièges et cartes de siège.
 
 | Faction | Principales synergies | Contre-jeu |
 | --- | --- | --- |

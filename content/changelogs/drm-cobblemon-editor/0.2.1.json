@@ -1,0 +1,32 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.2.1",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.376Z",
+  "files": [
+    {
+      "id": 9043939,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.1-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9043939",
+      "uploadedAt": "2026-10-03T04:35:25.807Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9043939",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9043939/change-log",
+      "html": "<p># 0.2.1 Change Log<br>* Fixed an issue in the Trainer Editor's After Action where CobbleDollar was always set to Add.<br>* Added player inventory support to the Trainer Inventory, in addition to the world item list.</p>"
+    },
+    {
+      "id": 9070061,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.1-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9070061",
+      "uploadedAt": "2026-10-05T14:40:10.89Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9070061",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9070061/change-log",
+      "html": "<h1>0.2.1 Change Log</h1>\n<ul>\n<li>Fixed an issue where the On Flee event in Trainer Battle After Actions was not being detected.</li>\n<li>Fixed After Action reward item selection so that items from the player's inventory can now be selected.</li>\n<li>Significantly upgraded the default Battle Presentation JSON.</li>\n</ul>\n"
+    }
+  ]
+}

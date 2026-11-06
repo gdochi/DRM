@@ -9,6 +9,7 @@ section: getting-started
 status: Guide
 version: 0.2.9
 audience: Creators / server operators
+hiddenNav: true
 ---
 
 This page records an **older release**. Use [DRM 0.3.1](#core-fabric/release-notes-0-3-1) for current installation and usage. Current-version illustrations below are separate from the historical release record.

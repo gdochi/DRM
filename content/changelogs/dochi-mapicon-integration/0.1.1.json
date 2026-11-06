@@ -1,0 +1,44 @@
+{
+  "product": "dochi-mapicon-integration",
+  "version": "0.1.1",
+  "projectId": 1738703,
+  "checkedAt": "2026-11-06T08:49:43.216Z",
+  "files": [
+    {
+      "id": 9222784,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_mapicon_integration-0.1.1-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9222784",
+      "uploadedAt": "2026-10-17T12:28:19.287Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9222784",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9222784/change-log",
+      "html": "<h1>0.1.1 Change Log</h1>\n<ul>\n<li>Added JourneyMap compatibility.</li>\n<li>Added compatibility with Dochi's NPC Core (currently in development).</li>\n<li>Improved the UI structure for a more intuitive user experience.</li>\n</ul>\n"
+    },
+    {
+      "id": 9222788,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_mapicon_integration-0.1.1-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9222788",
+      "uploadedAt": "2026-10-17T12:28:47.73Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9222788",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9222788/change-log",
+      "html": "<h1>0.1.1 Change Log</h1>\n<ul>\n<li>Added JourneyMap compatibility.</li>\n<li>Added compatibility with Dochi's NPC Core (currently in development).</li>\n<li>Improved the UI structure for a more intuitive user experience.</li>\n</ul>\n"
+    },
+    {
+      "id": 9222795,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_mapicon_integration-0.1.1-forge-1.20.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9222795",
+      "uploadedAt": "2026-10-17T12:29:17.997Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9222795",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9222795/change-log",
+      "html": "<h1>0.1.1 Change Log</h1>\n<ul>\n<li>Added JourneyMap compatibility.</li>\n<li>Added compatibility with Dochi's NPC Core (currently in development).</li>\n<li>Improved the UI structure for a more intuitive user experience.</li>\n</ul>\n"
+    }
+  ]
+}

@@ -9,6 +9,7 @@ section: getting-started
 status: Guide
 version: 0.3.1
 audience: Creators / server operators
+hiddenNav: true
 ---
 
 ## Add names and labels to dialogue

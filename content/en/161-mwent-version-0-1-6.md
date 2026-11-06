@@ -17,8 +17,6 @@ The 0.1.6 release adds **60 faction synergy cards and 12 siege cards: 72 in tota
 
 Existing power, provisions, frames, rarities and legacy Deploy, Order and keyword definitions remain intact. The tables below list each new card’s power / provisions, frame, rarity and abilities. Opening-tactic instructions come first, followed by the faction and siege specifications.
 
-The 72 cards previously recorded in the local 0.1.5 workspace are consolidated into the 0.1.6 release record. They are not another 72 cards added twice. Original file and screenshot version labels remain in the [0.1.5 workspace record](#mwent/version-0-1-5).
-
 ## Choose before the match
 
 An opening tactic is a **one-use tool for the player going first in round one**. Open its list below the leader in the deck builder. From a preset, follow **Use this deck → choose a tactic → Begin match**. Saving your deck preserves its tactic choice for later loading.
@@ -50,9 +48,7 @@ Unused tactics disappear during first-round cleanup. They are not drawn, crafted
 
 ## Related changes
 
-This page collects card specifications and opening-tactic changes. The earlier [0.1.5 workspace](#mwent/version-0-1-5) remains a historical record. The same Minigames update adds [Item Roulette](#dochi-minigames/minigames-roulette), a separate game.
-
-This guide checks local 0.1.6 production files dated November 1. [Release history](#mwent/releases) distinguishes those from verified public uploads. Continue with [how to play](#mwent/how-to-play) or [collections and decks](#mwent/cards-decks).
+Published on CurseForge on November 3–4, 2026. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9432406) · [Changelog](#mwent/releases) · [MWENT](#mwent/how-to-play) · [Cards](#mwent/cards-decks)
 
 ## Added mechanics
 

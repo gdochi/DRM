@@ -1,0 +1,20 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.1.4",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.798Z",
+  "files": [
+    {
+      "id": 8791972,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.1.4-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/8791972",
+      "uploadedAt": "2026-09-02T11:34:09.227Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8791972",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8791972/change-log",
+      "html": "<h2>Change Log 0.1.4</h2>\n<h3>Added</h3>\n<ul>\n<li><strong>Player party level matching</strong> — Added <code>Match player party average</code> mode, which sets trainer levels based on the player's current party average with an adjustable offset from -99 to 99.</li>\n<li><strong>Level gap preservation</strong> — Trainer parties keep their originally authored level differences where possible when level matching is applied.</li>\n<li><strong>Battle level scope</strong> — Fixed level rules can now affect only the trainer party or both sides of the battle.</li>\n<li><strong>DRM Trainer AI controls</strong> — Decision Quality, Battle Knowledge, Aggression, Defense, Trickery, and Switching can now be configured independently from 0–100.</li>\n<li><strong>Trainer AI presets</strong> — Added Beginner, Standard, Expert, and Boss presets. Any preset can be further customized after selection.</li>\n<li><strong>AI profile overview</strong> — Trainer AI settings now include descriptions for difficulty, information use, battle style, switching behavior, consistency, strengths, and warnings.</li>\n<li><strong>Trainer item-use controls</strong> — Added item-use presets with configurable priority, healing threshold, boost turn limit, Revive usage, status recovery, and PP recovery.</li>\n<li><strong>Large-list search and paging</strong> — Pokémon pickers, item catalogs, Clone Library, RCT imports, and presentation image lists now support search and pagination.</li>\n<li><strong>PokéMart list controls</strong> — Added server-side search and paging for products, trades, owned Pokémon, listings, selling choices, and claims.</li>\n<li><strong>Starter Selector dialogue action</strong> — DRM Dialogue can now open a specific Starter Selector JSON or the selector bound to the current NPC using <code>go_starter_selector</code>.</li>\n<li><strong>Clone overwrite confirmation</strong> — Clone Library now asks for confirmation before overwriting an existing Clone ID.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li><strong>Safe battle-level overrides</strong> — Level matching and fixed-level rules now modify battle copies only and never change the player's actual Pokémon levels.</li>\n<li><strong>Trainer AI migration</strong> — Existing AI Skill, Temperament, and Knowledge values are automatically converted to equivalent settings in the new Trainer AI system.</li>\n<li><strong>Unified DRM interface</strong> — Cobblemon editor screens now use the DRM Core panel, topbar, button, field, card, and scrollbar styles.</li>\n<li><strong>Presentation image loading</strong> — Presentation thumbnails now load only when needed to reduce unnecessary resource usage.</li>\n<li><strong>Default GUI upgrade</strong> — Untouched PokéMart and Starter Selector GUIs automatically upgrade to the DRM sprite-based style while preserving customized GUI files.</li>\n<li><strong>Clone Library loading</strong> — Clone Library search and pagination are now handled server-side for better performance with large clone collections.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li><strong>Trainer AI fallback handling</strong> — Invalid AI decisions now fall back to a valid server action instead of causing the battle to stall.</li>\n</ul>\n"
+    }
+  ]
+}

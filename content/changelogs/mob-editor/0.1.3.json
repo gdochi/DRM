@@ -1,0 +1,32 @@
+{
+  "product": "mob-editor",
+  "version": "0.1.3",
+  "projectId": 1682651,
+  "checkedAt": "2026-11-06T08:49:39.328Z",
+  "files": [
+    {
+      "id": 8869662,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_battleworks-0.1.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/8869662",
+      "uploadedAt": "2026-09-13T03:15:30.21Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1682651/files/8869662",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1682651/files/8869662/change-log",
+      "html": "<h1>0.1.3 Change Log</h1>\n<ul>\n<li>Added a visual tutorial</li>\n<li>Expanded the variety of available pattern actions</li>\n<li>Improved and expanded the Particle Maker</li>\n<li>Fixed GeckoLib-related bugs</li>\n<li>Fixed crashes caused by large JSON files</li>\n<li>Various other improvements and fixes</li>\n</ul>\n"
+    },
+    {
+      "id": 8869814,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_battleworks-0.1.3-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/8869814",
+      "uploadedAt": "2026-09-13T04:06:36.733Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1682651/files/8869814",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1682651/files/8869814/change-log",
+      "html": "<h1>0.1.3 Chnage Log</h1>\n<ul>\n<li>Ported based on Forge version 0.1.3.</li>\n</ul>\n"
+    }
+  ]
+}

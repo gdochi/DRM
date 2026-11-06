@@ -1,0 +1,20 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.2.7",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:39.890Z",
+  "files": [
+    {
+      "id": 8843899,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_warfare-0.2.7.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8843899",
+      "uploadedAt": "2026-09-09T13:08:32.023Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8843899",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8843899/change-log",
+      "html": "<h1>0.2.7 Change Log</h1>\n<h2>Changed</h2>\n<ul>\n<li>Improved server-side NPC AI performance and reduced unnecessary repeated calculations.</li>\n<li>Improved the Mods configuration screen layout, readability, and multilingual text support.</li>\n<li>Improved vehicle pathfinding recovery and target search efficiency.</li>\n</ul>\n<h2>Added</h2>\n<ul>\n<li>Added server-wide controls for optional NPC AI features.</li>\n<li>Added separate toggles for vehicle AI and mercenary AI.</li>\n<li>Added server AI settings synchronization and clearer status logging.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fixed NPCs continuing to target or fire at players after switching to Creative or Spectator mode.</li>\n<li>Fixed stale target data and combat memory not being cleared correctly.</li>\n<li>Fixed repeated vehicle pathfinding attempts when a vehicle is blocked.</li>\n<li>Fixed several NPC pose, idle movement, and runtime cache issues.</li>\n</ul>\n"
+    }
+  ]
+}

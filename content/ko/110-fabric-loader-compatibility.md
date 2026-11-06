@@ -61,6 +61,6 @@ Fabric·NeoForge에서 권한 레벨 2로 사용합니다.
 
 현재 두 로더의 에디터에서 만드는 퀘스트는 자동 완료를 사용합니다. 구형 JSON의 `completionMode: turn_in`을 이관할 때는 Fabric이 제출 대기를 유지하고 NeoForge는 자동 완료하므로, 목표 달성 후 보상 시점을 확인하세요. 이 항목은 기존 데이터 이관 참고 사항입니다.
 
-최신 변경은 [DRM 0.3.1](#core-fabric/release-notes-0-3-1).
+최신 변경은 [DRM 0.3.0](#core-fabric/changelog-0-3-0).
 
 Minecraft 26.3은 Java 25의 별도 빌드입니다. [26.3 설치·제외 기능](#core-fabric/minecraft-26-3)을 확인하세요.

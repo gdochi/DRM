@@ -63,6 +63,6 @@ Disponível em Fabric e NeoForge com nível de permissão 2.
 
 As missões criadas no editor atual usam a conclusão automática em ambas as carregadores de mods. Ao migrar o JSON mais antigo com `completionMode: turn_in`, Fabric retém o turn-in manual enquanto NeoForge completa automaticamente. Verifique o momento da recompensa ao importar esses dados legados.
 
-Mudanças atuais: [ DRM 0.3.1 ](#core-fabric/release-notes-0-3-1).
+Mudanças atuais: [ DRM 0.3.1 ](#core-fabric/changelog-0-3-0).
 
 Minecraft 26.3 usa compilações Java 25 separadas. Veja [26.3 configuração e exclusões](#core-fabric/minecraft-26-3).

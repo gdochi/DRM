@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.2.0",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:36.280Z",
+  "files": [
+    {
+      "id": 8930534,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.2.0-1.20.1-forge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/8930534",
+      "uploadedAt": "2026-09-20T12:31:03.253Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8930534",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8930534/change-log",
+      "html": "<h1>0.2.0 Change Log</h1>\n<ul>\n<li>Improved Popup Maker command structure</li>\n<li>Unified show and stop command formats</li>\n<li>Added support for entering titles and subtitles directly through comman</li>\n<li>Fixed NPC bulk purchases bypassing item stack limits, which also caused issues such as Quark sorting resetting stacked items to 1.</li>\n</ul>\n"
+    }
+  ]
+}

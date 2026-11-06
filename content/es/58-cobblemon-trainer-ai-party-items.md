@@ -76,4 +76,4 @@ DRM La estrategia evalúa las etapas estadísticas reales y el campo actual para
 
 La búsqueda de movimientos incluye primero cada movimiento registrado, clasificación normal, evento y movimientos de conjunto de aprendizaje pasado. La selección no establece la capacidad de aprendizaje de las especies ni garantiza un comportamiento arbitrario del proveedor. Compruebe permisos de truco, políticas, elementos clave y proveedores compatibles.
 
-Véase [0.2.7 compatibilidad](#drm-cobblemon-editor/cobblemon-editor-current-update) para las versiones Cobblemon realmente ejercidas.
+Cambios publicados: [0.2.8 Change Log](#drm-cobblemon-editor/changelog-0-2-8).

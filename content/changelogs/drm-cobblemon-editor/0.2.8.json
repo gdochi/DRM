@@ -1,0 +1,32 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.2.8",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:37.939Z",
+  "files": [
+    {
+      "id": 9378027,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.8-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9378027",
+      "uploadedAt": "2026-10-30T22:43:07.383Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9378027",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9378027/change-log",
+      "html": "<h1>0.2.8 Change Log</h1>\n<ul>\n<li>Added DNPC support for Pokémon Itself, Poké Mart, Nurse Joy, and starter Pokémon.</li>\n<li>Added temporary hand-held item visuals and improved profile persistence.</li>\n<li>Linked DNPC clones to the Clone Library, Spawners, and Battle Scheduler.</li>\n<li>Fixed trainer detection icons and improved Nurse Joy AI behavior.</li>\n</ul>\n"
+    },
+    {
+      "id": 9378028,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.8-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9378028",
+      "uploadedAt": "2026-10-30T22:43:22.717Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9378028",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9378028/change-log",
+      "html": "<h1>0.2.8 Change Log</h1>\n<ul>\n<li>Added DNPC support for Pokémon Itself, Poké Mart, Nurse Joy, and starter Pokémon.</li>\n<li>Added temporary hand-held item visuals and improved profile persistence.</li>\n<li>Linked DNPC clones to the Clone Library, Spawners, and Battle Scheduler.</li>\n<li>Fixed trainer detection icons and improved Nurse Joy AI behavior.</li>\n</ul>"
+    }
+  ]
+}

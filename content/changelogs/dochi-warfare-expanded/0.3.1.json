@@ -1,0 +1,32 @@
+{
+  "product": "dochi-warfare-expanded",
+  "version": "0.3.1",
+  "projectId": 1723538,
+  "checkedAt": "2026-11-06T08:49:40.607Z",
+  "files": [
+    {
+      "id": 9384017,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_warfare_expanded-0.3.1-forge-1.20.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-warfare-expanded/files/9384017",
+      "uploadedAt": "2026-10-31T13:24:23.7Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9384017",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9384017/change-log",
+      "html": "<h3>0.3.1 Change Log</h3>\n<blockquote>\n<p><strong>Update Notice:</strong> Version 0.3.1 adds compatibility with <strong>DNPC (Dochi's NPC Core)</strong>. Users who only use <strong>CNPC (CustomNPCs)</strong> do not need to update.\n<strong>Important:</strong> Update both DW and DWE together.</p>\n</blockquote>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added DNPC crew support for vehicle drivers, gunners, and other crew roles.</li>\n<li>Added DNPC friendly/hostile relationship support for vehicle targeting and ally protection.</li>\n<li>Added combat dismount support for DNPC crews without requiring CNPC.</li>\n<li>Added support for Superb Warfare 0.8.9.2 vehicles.</li>\n<li>Added settings for handling NPC crews when vehicles are destroyed.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed vehicle AI ammo and weapon processing to reduce unnecessary repeated operations.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved update warnings when using incompatible older DW versions.</li>\n<li>Improved vehicle AI performance by reducing redundant processing.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed AH-6 patrols failing to aim and fire fixed machine guns at ground targets.</li>\n<li>Fixed fixed-wing aircraft failing to aim with mounted weapons.</li>\n<li>Fixed fixed-wing aircraft climbing excessively near unloaded terrain.</li>\n<li>Fixed reloads taking too long after restoring vehicles from another world.</li>\n<li>Fixed ammo duplication and magazine capacity overflow when changing ammo settings during reloading.</li>\n<li>Fixed vehicles incorrectly blocking their own fire as friendly obstacles.</li>\n<li>Fixed unresponsive entries in crew and Soulstone selection screens.</li>\n</ul>\n<h5>Expanded Addon Compatibility</h5>\n<p>Verified vehicle AI movement, firing, and reloading with NPC crews.</p>\n<table>\n<thead>\n<tr>\n<th>Addon</th>\n<th>Supported Versions</th>\n<th>Verified Vehicles</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>AshVehicle</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M3A3 Bradley, AH-64, F-22</td>\n</tr>\n<tr>\n<td>HaloVehicles</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M12 HMG</td>\n</tr>\n<tr>\n<td>MCSP</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M3A3 Bradley</td>\n</tr>\n<tr>\n<td>Vintage Vehicle Pack (VVP)</td>\n<td>Forge 1.20.1</td>\n<td>BMP-2</td>\n</tr>\n<tr>\n<td>Frontline Combat Pack (FCP)</td>\n<td>Forge 1.20.1</td>\n<td>BMP-2</td>\n</tr>\n<tr>\n<td>Spectacular Machines Addon (SMA)</td>\n<td>Forge 1.20.1</td>\n<td>Type 10</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>Compatibility is verified for the listed vehicles only. Not all vehicles or special weapons are supported.</li>\n</ul>\n"
+    },
+    {
+      "id": 9384019,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-warfare-expanded/files/9384019",
+      "uploadedAt": "2026-10-31T13:24:35.45Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9384019",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9384019/change-log",
+      "html": "<h3>0.3.1 Change Log</h3>\n<blockquote>\n<p><strong>Update Notice:</strong> Version 0.3.1 adds compatibility with <strong>DNPC (Dochi's NPC Core)</strong>. Users who only use <strong>CNPC (CustomNPCs)</strong> do not need to update.\n<strong>Important:</strong> Update both DW and DWE together.</p>\n</blockquote>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added DNPC crew support for vehicle drivers, gunners, and other crew roles.</li>\n<li>Added DNPC friendly/hostile relationship support for vehicle targeting and ally protection.</li>\n<li>Added combat dismount support for DNPC crews without requiring CNPC.</li>\n<li>Added support for Superb Warfare 0.8.9.2 vehicles.</li>\n<li>Added settings for handling NPC crews when vehicles are destroyed.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed vehicle AI ammo and weapon processing to reduce unnecessary repeated operations.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved update warnings when using incompatible older DW versions.</li>\n<li>Improved vehicle AI performance by reducing redundant processing.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed AH-6 patrols failing to aim and fire fixed machine guns at ground targets.</li>\n<li>Fixed fixed-wing aircraft failing to aim with mounted weapons.</li>\n<li>Fixed fixed-wing aircraft climbing excessively near unloaded terrain.</li>\n<li>Fixed reloads taking too long after restoring vehicles from another world.</li>\n<li>Fixed ammo duplication and magazine capacity overflow when changing ammo settings during reloading.</li>\n<li>Fixed vehicles incorrectly blocking their own fire as friendly obstacles.</li>\n<li>Fixed unresponsive entries in crew and Soulstone selection screens.</li>\n</ul>\n<h5>Expanded Addon Compatibility</h5>\n<p>Verified vehicle AI movement, firing, and reloading with NPC crews.</p>\n<table>\n<thead>\n<tr>\n<th>Addon</th>\n<th>Supported Versions</th>\n<th>Verified Vehicles</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>AshVehicle</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M3A3 Bradley, AH-64, F-22</td>\n</tr>\n<tr>\n<td>HaloVehicles</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M12 HMG</td>\n</tr>\n<tr>\n<td>MCSP</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M3A3 Bradley</td>\n</tr>\n<tr>\n<td>Vintage Vehicle Pack (VVP)</td>\n<td>Forge 1.20.1</td>\n<td>BMP-2</td>\n</tr>\n<tr>\n<td>Frontline Combat Pack (FCP)</td>\n<td>Forge 1.20.1</td>\n<td>BMP-2</td>\n</tr>\n<tr>\n<td>Spectacular Machines Addon (SMA)</td>\n<td>Forge 1.20.1</td>\n<td>Type 10</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>Compatibility is verified for the listed vehicles only. Not all vehicles or special weapons are supported.</li>\n</ul>\n"
+    }
+  ]
+}

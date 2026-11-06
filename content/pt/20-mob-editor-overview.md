@@ -20,7 +20,7 @@ translationMethod: assisted
 
 BattleWorks ** 0.1.6** é o complemento de combate NPC do DRM para Forge 1.20.1, Fabric / NeoForge 1.21.1 e construções separadas 26.3. Tempo de combate do autor, hitboxes, movimento e fases.
 
-Os exercícios abaixo usam **Forge 1.20.1 and CustomNPCs**. Verifique [0.1.6 limites de instalação](#mob-editor/battleworks-update-0-1-6) para outras carregadores de mods e 26.3 DNPC.
+Os exercícios abaixo usam **Forge 1.20.1 and CustomNPCs**. Verifique [0.1.6 limites de instalação](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660) para outras carregadores de mods e 26.3 DNPC.
 
 Comece com um ataque corpo a corpo lento em um NPC humanoide normal; feitiços opcionais e mods de animação são desnecessários para o primeiro exercício.
 

@@ -1,0 +1,20 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.1.5",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:40.372Z",
+  "files": [
+    {
+      "id": 8209005,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "cnpc_tacz_fire-0.1.5.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8209005",
+      "uploadedAt": "2026-06-07T04:34:17.24Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8209005",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8209005/change-log",
+      "html": "<h2>0.1.5. Changelog</h2>\n<h3>Added</h3>\n<ul>\n<li>Added a weapon pool system with randomized weapon and skin assignment support.</li>\n<li>Random assignment currently runs on the NPC init event.</li>\n<li>More trigger conditions may be added in future updates.</li>\n<li>Added new filtering options to the target settings, including quick filtering for hostile mobs.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>Fixed an issue where cloned NPCs could spawn without the correct TACZ Fire pose.</li>\n<li>Fixed an issue where machine guns would not fire correctly.</li>\n</ul>\n"
+    }
+  ]
+}

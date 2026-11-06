@@ -1,0 +1,15 @@
+{
+  "name": "drm-docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "verify": "node scripts/verify-docs.mjs",
+    "verify:ui": "node scripts/verify-reader-ui.mjs",
+    "verify:translations": "node scripts/verify-translations.mjs",
+    "verify:languages": "node scripts/verify-language-ui.mjs",
+    "dev": "node scripts/dev-server.mjs",
+    "preview": "node scripts/preview-server.mjs"
+  }
+}

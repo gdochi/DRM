@@ -1,0 +1,32 @@
+{
+  "product": "dochi-warfare-expanded",
+  "version": "0.3.0",
+  "projectId": 1723538,
+  "checkedAt": "2026-11-06T08:49:40.611Z",
+  "files": [
+    {
+      "id": 9069278,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_warfare_expanded-0.3.0.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-warfare-expanded/files/9069278",
+      "uploadedAt": "2026-10-05T13:11:19.783Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9069278",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9069278/change-log",
+      "html": "<h1>Dochi's Warfare Expanded 0.3.0</h1>\n<h2>Features</h2>\n<ul>\n<li>Vehicle AI tools separated into the DWE addon.</li>\n<li>Ground vehicle, helicopter, and fixed-wing AI control.</li>\n<li>Weapon, ammunition, target, faction, crew, and patrol settings.</li>\n<li>Vehicle combat reactions, including retreat, smoke, and NPC dismounts.</li>\n<li>Timeline editor for bombing, strafing, vehicle reinforcements, and NPC advances.</li>\n<li>NPC clone deployment and movement orders for existing NPCs.</li>\n<li>Per-action deployment times, factions, positions, and lifetimes.</li>\n<li>Reusable JSON scenarios, coordinate-based calls, and six built-in examples.</li>\n</ul>\n<h2>Fixes</h2>\n<ul>\n<li>Fixed the NPC support summon-sound crash with earlier DW 0.3.0 builds.</li>\n<li>Corrected gun-support loading and airborne aiming behavior.</li>\n<li>Improved bombing release timing and aircraft terrain clearance.</li>\n<li>Improved editor layout and file-dialog readability.</li>\n</ul>\n"
+    },
+    {
+      "id": 9118401,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_warfare_expanded-0.3.0-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-warfare-expanded/files/9118401",
+      "uploadedAt": "2026-10-10T14:09:07.68Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9118401",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9118401/change-log",
+      "html": "<h1>0.3.0 Change Log</h1>\n<ul>\n<li>Ported the Forge 0.3.0 version to NeoForge.</li>\n</ul>\n"
+    }
+  ]
+}

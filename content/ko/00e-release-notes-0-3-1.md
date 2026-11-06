@@ -9,6 +9,7 @@ section: getting-started
 status: 사용 안내
 version: 0.3.1
 audience: 제작자 / 서버 운영자
+hiddenNav: true
 ---
 
 ## 대화창에 이름과 문구 넣기

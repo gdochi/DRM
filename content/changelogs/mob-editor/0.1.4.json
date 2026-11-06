@@ -1,0 +1,32 @@
+{
+  "product": "mob-editor",
+  "version": "0.1.4",
+  "projectId": 1682651,
+  "checkedAt": "2026-11-06T08:49:39.318Z",
+  "files": [
+    {
+      "id": 9048740,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_battleworks-0.1.4.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9048740",
+      "uploadedAt": "2026-10-03T15:45:20.85Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9048740",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9048740/change-log",
+      "html": "<h1>0.1.4 Change Log</h1>\n<ul>\n<li>Removed unnecessary log output triggered by magic parrying.</li>\n<li>Reworked and optimized the magic parry system.</li>\n</ul>"
+    },
+    {
+      "id": 9048750,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_battleworks-0.1.4-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9048750",
+      "uploadedAt": "2026-10-03T15:46:31.97Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9048750",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9048750/change-log",
+      "html": "<p># 0.1.4 Change Log<br>* Removed unnecessary log output triggered by magic parrying.<br>* Reworked and optimized the magic parry system.</p>"
+    }
+  ]
+}

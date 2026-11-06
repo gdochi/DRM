@@ -9,6 +9,7 @@ section: overview
 status: 안정
 version: Fabric / NeoForge 0.2.9
 audience: 제작자 / 운영자
+hiddenNav: true
 ---
 
 ## 대화를 마친 뒤 보상 지급

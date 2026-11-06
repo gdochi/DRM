@@ -1,0 +1,32 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.2.7",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.003Z",
+  "files": [
+    {
+      "id": 9348602,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.7-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9348602",
+      "uploadedAt": "2026-10-28T01:34:58.917Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9348602",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9348602/change-log",
+      "html": "<h1>0.2.7 Change Log</h1>\n<ul>\n<li>Battle AI: Improved decision-making for screens, Trick Room, stat-boosting moves, switching, battle gimmicks, and team synergy.</li>\n<li>Move Selection: Added support for selecting all registered moves, with regular, event-exclusive, and legacy moves prioritized in the list.</li>\n<li>Added compatibility with Cobblemon 1.8.3 / 1.8.4.</li>\n<li>Added the ability to open dialogues through After Actions.</li>\n</ul>\n"
+    },
+    {
+      "id": 9348603,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.7-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9348603",
+      "uploadedAt": "2026-10-28T01:35:16.927Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9348603",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9348603/change-log",
+      "html": "<h1>0.2.7 Change Log</h1>\n<ul>\n<li>Battle AI: Improved decision-making for screens, Trick Room, stat-boosting moves, switching, battle gimmicks, and team synergy.</li>\n<li>Move Selection: Added support for selecting all registered moves, with regular, event-exclusive, and legacy moves prioritized in the list.</li>\n<li>Added compatibility with Cobblemon 1.8.3 / 1.8.4.</li>\n<li>Added the ability to open dialogues through After Actions.</li>\n</ul>\n"
+    }
+  ]
+}

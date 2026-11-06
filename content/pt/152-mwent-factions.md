@@ -19,7 +19,7 @@ Comece com uma pré-ajuste e inspecione suas cartas à direita. **Use this deck*
 
 ![O Coro Companheiro de Avalin com facção, estratégia e filtros modernos.](assets/media/guides/minigames-016-neo1211/mwent016-faction-select.png "Minigames 0.1.6 / NeoForge 1.21.1, interface inglesa. Use todas as facções para restringir a lista e inspecionar os cartões à direita. Predefinições de mod opcional bloqueadas não podem ser selecionadas porque seus provedores estão ausentes neste caso.")
 
-Um baralho combina sua facção escolhida com cartas neutras. Há quatro predefinições básicas por facção, 24 total, e três escolhas de líder por facção. As principais estratégias abaixo já estavam presentes no upload 0.1.1. Veja. [0.1.5 alterações](#mwent/version-0-1-5) para novos cenários, locais, armadilhas e cartas de cerco.
+Um baralho combina sua facção escolhida com cartas neutras. Há quatro predefinições básicas por facção, 24 total, e três escolhas de líder por facção. As principais estratégias abaixo já estavam presentes no upload 0.1.1. Veja. [0.1.6 alterações](#mwent/version-0-1-6) para novos cenários, locais, armadilhas e cartas de cerco.
 
 | Facção | Principais sinergias | Counterplay |
 | --- | --- | --- |

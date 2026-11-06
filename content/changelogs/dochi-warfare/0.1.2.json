@@ -1,0 +1,20 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.1.2",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:40.458Z",
+  "files": [
+    {
+      "id": 8164828,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "cnpc_tacz_fire-0.1.2.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8164828",
+      "uploadedAt": "2026-05-29T14:54:19.067Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8164828",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8164828/change-log",
+      "html": "<p><strong>Added</strong></p>\n<ul>\n<li>Added NPC ranged accuracy support.</li>\n<li>Added NPC walking speed controls while firing.</li>\n<li>Added script API for setting NPC accuracy.</li>\n</ul>\n<p><strong>Changed</strong></p>\n<ul>\n<li>Improved the configuration UI for better readability and usability.</li>\n</ul>\n<p><strong>Fixed</strong></p>\n<ul>\n<li>Fixed melee range being treated as the actual attack reach.</li>\n<li>Fixed custom gun reload state not being detected correctly.</li>\n</ul>\n"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ version: 0.2.1
 audience: Creadores / Operadores
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 :::note Registro histórico de lanzamientos

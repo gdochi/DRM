@@ -18,7 +18,7 @@ tags:
 
 BattleWorks **0.1.6** is DRM's NPC combat addon for Forge 1.20.1, Fabric / NeoForge 1.21.1 and separate 26.3 builds. Author combat timing, hitboxes, movement and phases.
 
-The exercises below use **Forge 1.20.1 and CustomNPCs**. Check [0.1.6 installation boundaries](#mob-editor/battleworks-update-0-1-6) for other loaders and 26.3 DNPC.
+The exercises below use **Forge 1.20.1 and CustomNPCs**. Check [0.1.6 installation boundaries](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660) for other loaders and 26.3 DNPC.
 
 Start with one slow melee attack on a normal humanoid NPC; optional spell and animation mods are unnecessary for the first exercise.
 

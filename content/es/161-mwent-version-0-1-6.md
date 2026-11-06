@@ -19,8 +19,6 @@ La versión 0.1.6 añade **60 cartas de facción y 12 cartas de asedio: 72 en to
 
 Se conservan el poder, las provisiones, los marcos, las rarezas y las definiciones anteriores de Deploy, Order y palabras clave de las cartas existentes. Las tablas siguientes muestran poder / provisiones, marco, rareza y habilidades de cada carta nueva. Primero se explica el uso de las tácticas; después aparecen las especificaciones de facción y asedio.
 
-Las 72 cartas registradas antes en el espacio de trabajo local 0.1.5 se reúnen en el registro de la versión 0.1.6. No son otras 72 cartas añadidas de nuevo. Las versiones originales de los archivos y las capturas se conservan en el [registro de trabajo 0.1.5](#mwent/version-0-1-5).
-
 ## Elige antes del partido
 
 Una táctica de apertura es un **Herramienta de un solo uso para el jugador que va primero en la primera ronda**. Abre la lista debajo del líder en el constructor de mazos. Desde un preset, siga **Use this deck → choose a tactic → Begin match**. Guardar su cubierta conserva su elección táctica para la carga posterior.
@@ -52,9 +50,7 @@ Las tácticas no utilizadas desaparecen durante la limpieza de la primera ronda.
 
 ## Cambios relacionados
 
-Esta página reúne las especificaciones de cartas y los cambios de tácticas de apertura. El [espacio de trabajo 0.1.5](#mwent/version-0-1-5) permanece como registro histórico. La misma actualización de Minigames añade la [Ruleta de objetos](#dochi-minigames/minigames-roulette), un juego independiente.
-
-Esta guía comprueba los archivos de producción locales 0.1.6 con fecha de noviembre 1. [Historial de lanzamientos](#mwent/releases) distingue a los de las cargas públicas verificadas. Continúe con [cómo jugar](#mwent/how-to-play) o [colecciones y mazos](#mwent/cards-decks).
+Versión publicada en CurseForge el 3–4 de noviembre de 2026. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9432406) · [Registro de cambios](#mwent/releases) · [MWENT](#mwent/how-to-play) · [Cards](#mwent/cards-decks)
 
 ## Añadida mecánica
 

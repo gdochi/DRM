@@ -19,7 +19,7 @@ tags:
 
 BattleWorks **0.1.6**은 DRM의 NPC 전투 애드온입니다. Forge 1.20.1·Fabric/NeoForge 1.21.1과 별도 26.3 빌드가 있습니다. 공격 순서·타격 판정·이동·페이즈를 제작합니다.
 
-아래 입문 실습은 **Forge 1.20.1·CustomNPCs**를 기준으로 합니다. 다른 로더와 26.3 DNPC는 [0.1.6 설치 범위](#mob-editor/battleworks-update-0-1-6)를 먼저 확인하세요.
+아래 입문 실습은 **Forge 1.20.1·CustomNPCs**를 기준으로 합니다. 다른 로더와 26.3 DNPC는 [0.1.6 설치 범위](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660)를 먼저 확인하세요.
 
 처음에는 일반 인간형 NPC로 느린 근접 공격 하나를 완성하세요. JSON을 직접 작성하거나 마법·모델 모드를 추가할 필요 없이 시작할 수 있습니다.
 

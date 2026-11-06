@@ -20,7 +20,7 @@ translationMethod: assisted
 
 BattleWorks **0.1.6** est DRMaddon de combat PNJ pour Forge 1.20.1, Fabric / NeoForge 1.21.1 et séparés 26.3 Builds. Auteur combat timing, hitboxes, le mouvement et les phases.
 
-Les exercices ci-dessous utilisent **Forge 1.20.1 and CustomNPCs**. Vérifiez [0.1.6 les limites d'installation](#mob-editor/battleworks-update-0-1-6) pour les autres chargeurs et 26.3 DNPC.
+Les exercices ci-dessous utilisent **Forge 1.20.1 and CustomNPCs**. Vérifiez [0.1.6 les limites d'installation](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660) pour les autres chargeurs et 26.3 DNPC.
 
 Commencez par une attaque de mêlée lente sur un PNJ humanoïde normal ; les mods optionnels de sort et d'animation ne sont pas nécessaires pour le premier exercice.
 

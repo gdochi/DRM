@@ -19,8 +19,6 @@ A versão 0.1.6 adiciona **60 cartas de facção e 12 cartas de cerco: 72 no tot
 
 O poder, as provisões, as molduras, as raridades e as definições anteriores de Deploy, Order e palavras-chave das cartas existentes são mantidos. As tabelas abaixo mostram poder / provisões, moldura, raridade e habilidades de cada nova carta. Primeiro vêm as instruções das táticas; depois, as especificações das cartas de facção e de cerco.
 
-As 72 cartas registradas anteriormente no espaço de trabalho local 0.1.5 foram reunidas no registro da versão 0.1.6. Não são outras 72 cartas. As versões originais dos arquivos e das capturas permanecem no [registro de trabalho 0.1.5](#mwent/version-0-1-5).
-
 ## Escolha antes da partida
 
 Uma tática de abertura é uma **ferramenta de uso único para o jogador indo primeiro na primeira rodada**. Abra sua lista abaixo do líder do construtor de convés. De uma predefinição, siga **Use this deck → choose a tactic → Begin match**. Salvar seu baralho preserva sua escolha tática para carregar mais tarde.
@@ -52,9 +50,7 @@ Táticas não usadas desaparecem durante a limpeza da primeira rodada. Eles não
 
 ## Alterações relacionadas
 
-Esta página reúne especificações de cartas e mudanças nas táticas de abertura. O [espaço de trabalho 0.1.5](#mwent/version-0-1-5) permanece como registro histórico. A mesma atualização de Minigames adiciona a [Roleta de itens](#dochi-minigames/minigames-roulette), um jogo separado.
-
-Este guia verifica local 0.1.6 Arquivos de produção datados de novembro 1. [Release history](#mwent/releases) distingue aqueles de uploads públicos verificados. Continue com [como jogar ](#mwent/how-to-play) ou [coleções e baralhos](#mwent/cards-decks).
+Versão publicada no CurseForge em 3–4 de novembro de 2026. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9432406) · [Histórico de alterações](#mwent/releases) · [MWENT](#mwent/how-to-play) · [Cards](#mwent/cards-decks)
 
 ## Adicionado mecânica
 

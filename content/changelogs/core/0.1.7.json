@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.1.7",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:36.370Z",
+  "files": [
+    {
+      "id": 8856607,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.1.7-1.20.1-forge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/8856607",
+      "uploadedAt": "2026-09-11T09:53:14.087Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8856607",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8856607/change-log",
+      "html": "<h1>0.1.7 Change Log</h1>\n<ul>\n<li>Removed unnecessary calculations when checking GeckoLib models.</li>\n<li>Improved the way JSON files are loaded to prevent server crashes caused by large file sizes.</li>\n<li>Added a default keybind setting with an on/off toggle.</li>\n</ul>"
+    }
+  ]
+}

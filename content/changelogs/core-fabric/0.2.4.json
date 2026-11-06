@@ -1,0 +1,20 @@
+{
+  "product": "core-fabric",
+  "version": "0.2.4",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:37.075Z",
+  "files": [
+    {
+      "id": 9043899,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.2.4-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9043899",
+      "uploadedAt": "2026-10-03T04:26:13.337Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9043899",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9043899/change-log",
+      "html": "<h1>0.2.4 Change Log</h1>\n<ul>\n<li>Added a tile mode for applying asset textures in GUI Maker.</li>\n<li>Fixed awkward GUI frame proportions in GUI Maker.</li>\n<li>Added World Tick and Real-Time modes for NPC Shop restocking.</li>\n<li>Fixed an issue where the Save button in the Quest Editor was not working.</li>\n</ul>\n"
+    }
+  ]
+}

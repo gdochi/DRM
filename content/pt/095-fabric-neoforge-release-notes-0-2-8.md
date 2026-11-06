@@ -11,6 +11,7 @@ version: 0.2.8
 audience: Criadores / operadores de servidor
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 Esta página registra uma versão ** mais antiga**. Use [DRM0.3.1](#core-fabric/release-notes-0-3-1) para instalação e uso atuais. As ilustrações da versão atual abaixo são separadas do histórico de lançamento.

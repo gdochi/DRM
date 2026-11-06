@@ -1,0 +1,20 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.2.2",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.387Z",
+  "files": [
+    {
+      "id": 9070056,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.2-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9070056",
+      "uploadedAt": "2026-10-05T14:39:31.423Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9070056",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9070056/change-log",
+      "html": "<h1>0.2.2 Change Log</h1>\n<ul>\n<li>Fixed an issue where the On Flee event in Trainer Battle After Actions was not being detected.</li>\n<li>Fixed After Action reward item selection so that items from the player's inventory can now be selected.</li>\n<li>Significantly upgraded the default Battle Presentation JSON.</li>\n</ul>\n"
+    }
+  ]
+}

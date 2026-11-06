@@ -11,6 +11,7 @@ version: 0.1.6
 audience: Creadores / operadores de servidores
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 ## Mods requeridos

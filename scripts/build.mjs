@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, rm, writeFile, copyFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadChangelogs } from "./changelog-data.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const srcDir = path.join(root, "src");
@@ -13,6 +14,8 @@ const modLogoDir = path.join(root, "_modLogo");
 const distModLogoDir = path.join(assetsDir, "mod-logos");
 
 const config = JSON.parse(await readFile(path.join(root, "site.config.json"), "utf8"));
+const publishedReleases = JSON.parse(await readFile(path.join(contentDir, "changelogs", "published.json"), "utf8"));
+const changelogs = await loadChangelogs(path.join(contentDir, "changelogs"), publishedReleases);
 config.translations = {};
 for (const locale of ["pt", "es", "fr"]) {
   config.translations[locale] = JSON.parse(await readFile(path.join(srcDir, "locales", `${locale}.json`), "utf8"));
@@ -43,11 +46,13 @@ template = template
   .replace(/<title>.*<\/title>/, `<title>${escapeHtml(config.title)}</title>`)
   .replace(/\.\/assets\/styles\.css(?:\?v=[^"]*)?/g, `./assets/styles.css?v=${assetVersion}`)
   .replace(/\.\/assets\/docs-data\.js(?:\?v=[^"]*)?/g, `./assets/docs-data.js?v=${assetVersion}`)
+  .replace(/\.\/assets\/changelogs\.js(?:\?v=[^"]*)?/g, `./assets/changelogs.js?v=${assetVersion}`)
   .replace(/\.\/assets\/app\.js(?:\?v=[^"]*)?/g, `./assets/app.js?v=${assetVersion}`);
 
 await writeFile(path.join(distDir, "index.html"), template, "utf8");
 await copyFile(path.join(srcDir, "styles.css"), path.join(assetsDir, "styles.css"));
 await copyFile(path.join(srcDir, "app.js"), path.join(assetsDir, "app.js"));
+await writeFile(path.join(assetsDir, "changelogs.js"), `window.DOCHI_CHANGELOGS = ${JSON.stringify(changelogs)};\n`, "utf8");
 await copyDirectory(mediaDir, distMediaDir);
 await copyDirectory(modLogoDir, distModLogoDir);
 await writeFile(
@@ -73,6 +78,7 @@ async function loadLocale(locale) {
     const { data, body } = parseFrontMatter(raw);
     if (data.hiddenNav) continue;
     const slug = data.slug || file.replace(/^\d+-/, "").replace(/\.md$/, "");
+    validatePublishedRelease(data, slug, `${locale}/${file}`);
     const rendered = renderMarkdown(body, slug);
     const captureEnvironments = [...new Map([...rendered.html.matchAll(/<img[^>]+src="([^"]+)"/g)]
       .map(match => captureManifest[match[1]])
@@ -90,6 +96,8 @@ async function loadLocale(locale) {
       hiddenNav: Boolean(data.hiddenNav),
       status: data.status || "Draft",
       version: data.version || "",
+      releaseVersion: data.releaseVersion || "",
+      curseForgeFiles: data.curseForgeFiles || [],
       audience: data.audience || "",
       sourcePath: path.relative(root, path.join(localeDir, file)).replace(/\\/g, "/"),
       translationSource: data.translationSource || "",
@@ -102,6 +110,28 @@ async function loadLocale(locale) {
   }
 
   return docs.sort((a, b) => a.order - b.order);
+}
+
+function validatePublishedRelease(data, slug, source) {
+  const history = data.section === "releases" || /(?:release|current-update|battleworks-update|^version-)/.test(slug);
+  if (!history) return;
+  const product = data.product === "mwent" ? "dochi-minigames" : (data.product || "core");
+  const project = publishedReleases.projects.find(project => project.product === product);
+  const version = data.releaseVersion || data.version;
+  const files = project?.files.filter(file => file.version === version) || [];
+  if (!files.length) throw new Error(`Changelog version has no verified CurseForge upload: ${source} (${version})`);
+  if (data.releaseVersion && data.version !== data.releaseVersion) {
+    throw new Error(`Changelog version must match its verified releaseVersion: ${source}`);
+  }
+  if (data.product !== "mwent" && !data.releaseVersion) {
+    throw new Error(`Changelogs must declare releaseVersion: ${source}`);
+  }
+  if (data.releaseVersion && (!Array.isArray(data.curseForgeFiles) || !data.curseForgeFiles.length)) {
+    throw new Error(`Changelogs must list verified curseForgeFiles: ${source}`);
+  }
+  if ((data.curseForgeFiles || []).some(id => !files.some(file => file.id === Number(id)))) {
+    throw new Error(`Changelog contains a file from another version or project: ${source}`);
+  }
 }
 
 async function copyDirectory(source, target) {

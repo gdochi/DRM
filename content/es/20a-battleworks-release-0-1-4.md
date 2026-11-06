@@ -11,6 +11,7 @@ version: 0.1.4
 audience: Creadores de contenido de combate
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 ## El 0.1.4 registro y la dirección actual

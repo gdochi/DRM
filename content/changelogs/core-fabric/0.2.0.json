@@ -1,0 +1,20 @@
+{
+  "product": "core-fabric",
+  "version": "0.2.0",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:37.207Z",
+  "files": [
+    {
+      "id": 8843692,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.2.0-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/8843692",
+      "uploadedAt": "2026-09-09T12:37:10.377Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8843692",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8843692/change-log",
+      "html": "<h1>0.2.0 Change Log</h1>\n<h2>Changed</h2>\n<ul>\n<li>Improved editor control sizing, text clipping, and layout across Quest, Faction, GUI, and HUD editors.</li>\n<li>Unified hover help with localized, adaptive DRM-styled tooltips.</li>\n<li>Improved Gecko animation preview and multiplayer synchronization.</li>\n</ul>\n<h2>Added</h2>\n<ul>\n<li>Added Tooltip Maker with custom layouts, item models, images, text, scrolling, resizing, and entrance animations.</li>\n<li>Added player-head HUD rendering and dialogue choice text size and pulse effects.</li>\n<li>Added Gecko animation routes with Goto target support.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fixed dialogue navigation stopping later actions such as animations and commands.</li>\n<li>Fixed late Gecko animation playback, preview seeking, retry handling, and fallback rendering.</li>\n<li>Fixed overlapping, stretched, or incorrectly clipped controls in multiple editors.</li>\n</ul>\n"
+    }
+  ]
+}

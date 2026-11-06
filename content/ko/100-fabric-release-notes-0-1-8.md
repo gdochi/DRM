@@ -12,6 +12,7 @@ audience: 사용자 / 제작자 / 운영자
 tags:
   - release
   - changelog
+hiddenNav: true
 ---
 
 이 페이지는 이전 버전의 릴리스 기록입니다. 현재 안내는 [DRM 0.3.1](#core-fabric/release-notes-0-3-1)을 확인하세요.

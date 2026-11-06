@@ -1,0 +1,20 @@
+{
+  "product": "mob-editor",
+  "version": "0.1.1",
+  "projectId": 1682651,
+  "checkedAt": "2026-11-06T08:49:39.530Z",
+  "files": [
+    {
+      "id": 8822032,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_battleworks-0.1.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/8822032",
+      "uploadedAt": "2026-09-06T12:55:26.3Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1682651/files/8822032",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1682651/files/8822032/change-log",
+      "html": "<h1>Change Log 0.1.1</h1>\n<h2>Added</h2>\n<ul>\n<li><strong>Boss battle music</strong> — Give an NPC its own music. Its current player target hears the track, and playback stops when the NPC loses that target.</li>\n<li><strong>Passive attacks</strong> — Make enemies react to melee hits, ranged hits, other damage, or low health. Choose how often these reactions happen and what to do when the enemy is already attacking.</li>\n<li><strong>More movement choices</strong> — Combine walking with momentum-based dashes and teleports.</li>\n<li><strong>Sounds, messages and commands</strong> — Add effects to attack timelines and connect encounters with DRM's Popup Maker.</li>\n<li><strong>Chance for individual actions</strong> — Enter a percentage for an action. Leaving it blank uses 100%, so important attacks can always happen while optional effects stay less frequent.</li>\n</ul>\n<h2>Improved</h2>\n<ul>\n<li><strong>Skill selection</strong> — Filter spells by mod and choose one spell per skill action.</li>\n<li><strong>Casting animations</strong> — Use DRM's animation playback for spells and previews, including Better Combat motions.</li>\n<li><strong>Command editing</strong> — Larger command fields make long commands easier to read and edit.</li>\n<li><strong>Cleaner panels</strong> — Fewer repeated labels, shorter lists, and buttons that do not stretch across the whole panel when it is resized.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Minecraft's normal background music no longer mixes with active boss BGM. Normal music scheduling returns after the encounter releases its target.</li>\n<li>Removed the duplicate toolbar hover description.</li>\n<li>Fixed the command field that could appear empty in the editor.</li>\n</ul>\n"
+    }
+  ]
+}

@@ -9,6 +9,7 @@ section: releases
 status: 스펙 참고
 version: 0.1.5
 audience: 플레이어 / 제작자
+hiddenNav: true
 ---
 
 > 이 페이지는 0.1.5 당시 로컬 작업본의 기록입니다. 카드 추가·스펙의 릴리스 안내는 [0.1.6 신규 카드·전술 문서](#mwent/version-0-1-6)로 통합했습니다. 아래 72종은 같은 카드이며 중복 추가가 아닙니다.

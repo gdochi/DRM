@@ -61,6 +61,6 @@ Available on Fabric and NeoForge with permission level 2.
 
 Quests created in the current editor use automatic completion on both loaders. When migrating older JSON with `completionMode: turn_in`, Fabric retains manual turn-in while NeoForge completes automatically. Check the reward timing when importing that legacy data.
 
-Current changes: [DRM 0.3.1](#core-fabric/release-notes-0-3-1).
+Current changes: [DRM 0.3.0](#core-fabric/changelog-0-3-0).
 
 Minecraft 26.3 uses separate Java 25 builds. See [26.3 setup and exclusions](#core-fabric/minecraft-26-3).

@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.2.2",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:36.187Z",
+  "files": [
+    {
+      "id": 9127963,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.2.2-1.20.1-forge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/9127963",
+      "uploadedAt": "2026-10-11T10:35:28.107Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9127963",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9127963/change-log",
+      "html": "<h1>0.2.2 Change Log</h1>\n<ul>\n<li>Added an Editor Favorites feature.</li>\n<li>Added categories for organizing editors.</li>\n<li>Fixed an issue where GeckoLib built-in models could not use custom textures instead of their default textures.</li>\n</ul>\n"
+    }
+  ]
+}

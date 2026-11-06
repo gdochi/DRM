@@ -74,4 +74,4 @@ DRM Strategy evaluates actual stat stages and the current field for setup, scree
 
 Move search includes every registered move, sorting normal, event and past learnset moves first. Selection does not establish species learnability or guarantee arbitrary provider behavior. Check gimmick permissions, policies, key items and compatible providers.
 
-See [0.2.7 compatibility](#drm-cobblemon-editor/cobblemon-editor-current-update) for the Cobblemon versions actually exercised.
+Published changes: [0.2.8 Change Log](#drm-cobblemon-editor/changelog-0-2-8).

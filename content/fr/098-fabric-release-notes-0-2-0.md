@@ -11,6 +11,7 @@ version: 0.2.0
 audience: Créateurs / Opérateurs
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 Il s'agit d'un record de libération historique. Voir [DRM 0.3.1](#core-fabric/release-notes-0-3-1) pour les orientations actuelles.

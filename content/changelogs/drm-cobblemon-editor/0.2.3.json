@@ -1,0 +1,32 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.2.3",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.286Z",
+  "files": [
+    {
+      "id": 9120056,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.3-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9120056",
+      "uploadedAt": "2026-10-10T16:59:28.417Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9120056",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9120056/change-log",
+      "html": "<h1>0.2.3 Change Log</h1>\n<ul>\n<li>Added world terrain capture to Battle Presentation, allowing captured scenes to be used as background images.</li>\n<li>Added particle effects to Battle Presentation and improved its UI.</li>\n<li>Added customizable facing directions before Trainer Battles begin.</li>\n<li>Fixed various bugs in the battle engine.</li>\n<li>Fixed a bug with the Cobblemon trading GUI in Poké Mart.</li>\n</ul>"
+    },
+    {
+      "id": 9120063,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.3-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9120063",
+      "uploadedAt": "2026-10-10T16:59:57.953Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9120063",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9120063/change-log",
+      "html": "<p># 0.2.3 Change Log</p>\n<p>- Added world terrain capture to Battle Presentation, allowing captured scenes to be used as background images.<br>- Added particle effects to Battle Presentation and improved its UI.<br>- Added customizable facing directions before Trainer Battles begin.<br>- Fixed various bugs in the battle engine.<br>- Fixed a bug with the Cobblemon trading GUI in Pok&eacute; Mart.</p>"
+    }
+  ]
+}

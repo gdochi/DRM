@@ -1,0 +1,20 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.1.7",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:40.319Z",
+  "files": [
+    {
+      "id": 8279445,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "cnpc_tacz_fire-0.1.7.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8279445",
+      "uploadedAt": "2026-06-19T12:17:27.053Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8279445",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8279445/change-log",
+      "html": "<h2>0.1.7 Changelog</h2>\n<ul>\n<li>Added automatic GUI scale correction for better config screen display.</li>\n<li>Fixed a server-side JSON path issue that could prevent JSON data from loading/saving correctly.</li>\n</ul>\n"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ version: 0.2.5
 audience: Criadores/operadores
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 Este é um registro histórico de lançamento. Veja [DRM0.3.1](#core-fabric/release-notes-0-3-1) para orientação atual.

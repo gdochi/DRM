@@ -1,41 +1,27 @@
 ---
-title: MWENT Histórico de liberação do cartão
+title: Histórico de alterações
 slug: releases
 order: 1560
-description: Cartões adicionados ou alterados em cada versão MWENT.
+description: Alterações das versões publicadas no CurseForge.
 product: mwent
-category: Lançar histórico
+category: Histórico de alterações
 section: releases
-status: Registro de versão
-version: 0.1.1–0.1.6
-audience: Jogadores / operadores de servidor
+status: Published
+version: 0.1.6
+releaseVersion: 0.1.6
+curseForgeFiles:
+  - 9432406
+  - 9422602
+  - 9422599
+  - 9422590
+  - 9422582
 translationSource: en
 translationMethod: assisted
 ---
-
-## Linha de base da versão
-
-Versões 0.1.1–0.1.4 seguem os uploads verificados do CurseForge; 0.1.5 e 0.1.6 descrevem arquivos de produção locais verificados. Datas usam o Horário Padrão da Coreia. Para uma primeira partida use o [guia de início atual](#mwent/start); para as últimas ferramentas de abertura ver [0.1.6 Táticas](#mwent/version-0-1-6).
-
-![Atual MWENT Tela de construção do convés.](assets/media/guides/minigames-016-neo1211/mwent016-deck-catalog.png "Minigames 0.1.6 / NeoForge 1.21.1, interface inglesa. Total de cheques, provisões e a tática abaixo do líder. Esta é uma ilustração atual, não uma histórica. 0.1.1 screenshot.")
-
-Os condes representam distintos **definições do cartão**. Impressões regulares e animadas não são cartas de combate separadas. Definições para provedores opcionais ausentes ainda podem existir, portanto, o tamanho do catálogo é diferente da disponibilidade do cartão jogável.
-
-## Adições e alterações
-
-| Versão | Data / evidência | Status do cartão |
-| --- | --- | --- |
-| 0.1.1 | 2026-1023 / [CurseForge upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9299087) | MWENT Estreia pública. 263 built-in + 89 definições opcionais - 352. [ Detalhes](#mwent/version-0-1-1) |
-| 0.1.2 | 2026-1024 / [1.21.1 upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9309263); 26.3 arquivos adicionados em outubro 25 | Zero adicionado, removido ou alterado definições. 352 retido. [ Detalhes](#mwent/version-0-1-2) |
-| 0.1.3 | 2026-1025 / [CurseForge upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9322373) | Definições incorporadas e opcionais idênticas a 0.1.2. 352 retido. |
-| 0.1.4 | 2026-1028 / [CurseForge upload](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9349914) | Definições incorporadas e opcionais idênticas a 0.1.3. 352 retido. |
-| 0.1.5 | 2026-10-30 / estado local de desenvolvimento | Registro das mesmas 72 adições, agora reunidas na versão 0.1.6. [Registro](#mwent/version-0-1-5) |
-| 0.1.6 | 2026-11-03 / registro de lançamento consolidado | 60 cartas de facção + 12 de cerco, 424 definições no total. Cinco táticas de abertura, ocupação real de espaço e Golem com poder 4. [Especificações e guia](#mwent/version-0-1-6) |
-
-0.1.1–0.1.4 Compartilhe poder, provisões, quadros, raridades, Implantação, Ordens, palavras-chave, referências de aparência e definições opcionais de cartões. ** Definições idênticas não implicam comportamento de motor de combate inalterado, interface do usuário, aquisição ou processamento de servidor.**
-
-## Leia as especificações
-
-O [catálogo atual](#mwent/card-catalog) lista identidades estáveis, poder, provisões e habilidades, separando cartas presentes em 0.1.1 de 0.1.6 Adições. Em 0.1.6, o poder existente, provisões, molduras, raridade e legado Implantação, Ordem e definições de palavras-chave permanecem intactas. Novos campos padrão para habilidades de autoria não são contados como mudanças de equilíbrio para cartões existentes.
-
-Extração do real 0.1.6 O artefato também confirma que essas definições são mantidas. Táticas de abertura não são extraídas de um convés, então elas não aumentam o 424 Conte. O status de download público permanece separado da verificação de arquivo local.
+MWENT faz parte de Minigames e usa os mesmos números de versão.
+Aqui aparecem apenas versões enviadas ao CurseForge. As versões anteriores estão no CurseForge.
+## Histórico de alterações
+* [Histórico de Minigames — 0.1.6](#dochi-minigames/changelog-0-1-6)
+* [Especificações das cartas de MWENT e táticas iniciais — 0.1.6](#mwent/version-0-1-6)
+## Versões anteriores
+[Ver versões anteriores no CurseForge](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/all)

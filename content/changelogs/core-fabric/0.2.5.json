@@ -1,0 +1,20 @@
+{
+  "product": "core-fabric",
+  "version": "0.2.5",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:36.996Z",
+  "files": [
+    {
+      "id": 9127959,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.2.5-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9127959",
+      "uploadedAt": "2026-10-11T10:34:56.52Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9127959",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9127959/change-log",
+      "html": "<h1>0.2.5 Change Log</h1>\n<ul>\n<li>Added an Editor Favorites feature.</li>\n<li>Added categories for organizing editors.</li>\n<li>Fixed an issue where GeckoLib built-in models could not use custom textures instead of their default textures.</li>\n</ul>\n"
+    }
+  ]
+}

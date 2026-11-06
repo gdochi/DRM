@@ -1,0 +1,20 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.1.2",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.822Z",
+  "files": [
+    {
+      "id": 8485457,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "drm_cobblemon_editor-0.1.2-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/8485457",
+      "uploadedAt": "2026-07-22T10:10:39.573Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8485457",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8485457/change-log",
+      "html": "<h1>0.1.2 Change Log</h1>\n<h2>Added</h2>\n<ul>\n<li>Added per-round DRM Dialogue Set integration for Trainer profiles, including a new Dialogue tab with search and bulk mapping tools.</li>\n<li>Added the <code>cobble_npc:go_battle</code> dialogue action, which starts the NPC's current trainer round after server-side validation.</li>\n<li>Added dialogue link status, mapping validation, and warnings for incomplete round mappings or invalid battle settings.</li>\n</ul>\n<h2>Changed</h2>\n<ul>\n<li>Trainer JSON files now use schema 9 for round dialogue mappings. Older profiles remain compatible and keep their original direct-battle behavior.</li>\n<li>Battle requests from prompts, dialogues, and automatic detection now share the same server-side checks. Manual requests require the player to be within 12 blocks, and dialogue battles require the Interaction trigger.</li>\n<li>Trainer prompts and battles now use the name saved in the Trainer profile.</li>\n<li>Updated the required DRM Core version to 0.1.5.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fixed Pokemon-Itself battles sometimes showing missing opponent names, levels, or models by starting the battle one server tick after the Pokemon spawns.</li>\n<li>Fixed disabled chase behavior incorrectly limiting vision and radius detection to the chase maximum distance.</li>\n<li>Fixed failed trainer rewards being lost or marked as completed. Failed rewards are now saved and retried without rerolling or repeating successful rewards.</li>\n<li>Fixed custom battle music not being assigned to Cobblemon's battle theme system.</li>\n<li>Fixed Minecraft 1.21 global blur affecting Trainer, Pokemon Slot, Nurse Joy, PokeMart, and Battle Presentation screens.</li>\n</ul>"
+    }
+  ]
+}

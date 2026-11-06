@@ -12,6 +12,7 @@ audience: 제작자 / 운영자
 tags:
   - release
   - changelog
+hiddenNav: true
 ---
 
 

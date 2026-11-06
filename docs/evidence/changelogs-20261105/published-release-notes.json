@@ -1,0 +1,846 @@
+{
+  "checkedAt": "2026-11-05T14:55:36.705Z",
+  "source": "CurseForge public file metadata and change-log endpoints. Status 4 is the public file status returned by CurseForge.",
+  "releases": [
+    {
+      "product": "core",
+      "projectId": 1575859,
+      "title": "[Forge] Dochi`s RPG Maker",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker",
+      "version": "0.3.0",
+      "files": [
+        {
+          "id": 9378110,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/9378110",
+          "name": "dochi_rpg_maker-0.3.0-1.20.1-forge.jar",
+          "version": "0.3.0",
+          "minecraft": "1.20.1",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-30T22:52:35.973Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9378110",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9378110/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.3.0 Change Log</h1>\n<h2>Common Changes</h2>\n<ul>\n<li>Added independent text boxes to the Dialogue GUI Editor for displaying NPC names and custom text. Supports multiple text boxes, duplication, and saving.</li>\n<li>Added an optional API for addon integration, allowing access to and creation of NPC clone templates from mods such as DNPC.</li>\n<li>Improved keybind category sorting to keep Dochi's mod categories grouped together.</li>\n</ul>\n<h3>Fabric / NeoForge 1.21.1 &amp; 26.3</h3>\n<ul>\n<li>Fixed an issue where Creative Tab search failed when used alongside mods such as Axiom.</li>\n<li>Fixed camera jitter when tracking moving entities or using previews in the Scene Maker.</li>\n</ul>\n<h3>Fabric / NeoForge 1.21.1</h3>\n<ul>\n<li>Added the ability to delete trainer battle records through the Admin menu (Cobble NPC integration).</li>\n<li>Added manual cleanup of battle records for despawned trainers.</li>\n</ul>\n<h3>Forge 1.20.1 / Fabric / NeoForge 1.21.1</h3>\n<ul>\n<li>Fixed a crash when using NPC model animations without CNPC installed.</li>\n<li>Improved Creative Tab integration by registering DRM tools directly under the DNPC and CNPC tabs.</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "core-fabric",
+      "projectId": 1645661,
+      "title": "[Fabric] Dochi`s RPG Maker",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker",
+      "version": "0.3.0",
+      "files": [
+        {
+          "id": 9378098,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9378098",
+          "name": "dochi_rpg_maker-0.3.0-fabric-26.3.jar",
+          "version": "0.3.0",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-30T22:51:28.19Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9378098",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9378098/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.3.0 Change Log</h1>\n<h2>Common Changes</h2>\n<ul>\n<li>Added independent text boxes to the Dialogue GUI Editor for displaying NPC names and custom text. Supports multiple text boxes, duplication, and saving.</li>\n<li>Added an optional API for addon integration, allowing access to and creation of NPC clone templates from mods such as DNPC.</li>\n<li>Improved keybind category sorting to keep Dochi's mod categories grouped together.</li>\n</ul>\n<h3>Fabric / NeoForge 1.21.1 &amp; 26.3</h3>\n<ul>\n<li>Fixed an issue where Creative Tab search failed when used alongside mods such as Axiom.</li>\n<li>Fixed camera jitter when tracking moving entities or using previews in the Scene Maker.</li>\n</ul>\n<h3>Fabric / NeoForge 1.21.1</h3>\n<ul>\n<li>Added the ability to delete trainer battle records through the Admin menu (Cobble NPC integration).</li>\n<li>Added manual cleanup of battle records for despawned trainers.</li>\n</ul>\n<h3>Forge 1.20.1 / Fabric / NeoForge 1.21.1</h3>\n<ul>\n<li>Fixed a crash when using NPC model animations without CNPC installed.</li>\n<li>Improved Creative Tab integration by registering DRM tools directly under the DNPC and CNPC tabs.</li>\n</ul>\n"
+        },
+        {
+          "id": 9378087,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9378087",
+          "name": "dochi_rpg_maker-0.3.0-fabric-1.21.1.jar",
+          "version": "0.3.0",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-30T22:50:30.07Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9378087",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9378087/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.3.0 Change Log</h1>\n<h2>Common Changes</h2>\n<ul>\n<li>Added independent text boxes to the Dialogue GUI Editor for displaying NPC names and custom text. Supports multiple text boxes, duplication, and saving.</li>\n<li>Added an optional API for addon integration, allowing access to and creation of NPC clone templates from mods such as DNPC.</li>\n<li>Improved keybind category sorting to keep Dochi's mod categories grouped together.</li>\n</ul>\n<h3>Fabric / NeoForge 1.21.1 &amp; 26.3</h3>\n<ul>\n<li>Fixed an issue where Creative Tab search failed when used alongside mods such as Axiom.</li>\n<li>Fixed camera jitter when tracking moving entities or using previews in the Scene Maker.</li>\n</ul>\n<h3>Fabric / NeoForge 1.21.1</h3>\n<ul>\n<li>Added the ability to delete trainer battle records through the Admin menu (Cobble NPC integration).</li>\n<li>Added manual cleanup of battle records for despawned trainers.</li>\n</ul>\n<h3>Forge 1.20.1 / Fabric / NeoForge 1.21.1</h3>\n<ul>\n<li>Fixed a crash when using NPC model animations without CNPC installed.</li>\n<li>Improved Creative Tab integration by registering DRM tools directly under the DNPC and CNPC tabs.</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "dochi-npc-core",
+      "projectId": 1764663,
+      "title": "Dochi`s NPC Core",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core",
+      "version": "0.1.2",
+      "files": [
+        {
+          "id": 9383998,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9383998",
+          "name": "dochi_npc_core-0.1.2-neoforge-26.3.jar",
+          "version": "0.1.2",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-31T13:21:02.54Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9383998",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9383998/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.2 Change Log</h3>\n<h4>Global</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed carried blocks and contents disappearing when applying templates to existing NPCs.</li>\n<li>Fixed carried items being copied to newly cloned NPCs.</li>\n<li>Fixed old mount records, timeout data, squad states, and combat progress persisting in new NPCs or clones.</li>\n<li>Fixed NPC jobs interfering with movement and actions controlled by other mods.</li>\n<li>Fixed hired NPCs failing to resume jobs and contract expiration handling after external control ends.</li>\n<li>Fixed DRM scheduled shops remaining accessible after closing, being disabled, or switching shops.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved NPC pathfinding accuracy.</li>\n</ul>\n<h4>Forge 1.20.1 / Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added NPC deletion using the Delete key in the NPC screen.</li>\n<li>Added Farmer's Delight cooking jobs.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved default job schedules.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed NPCs waiting unnecessarily in front of trees that cannot be chopped.</li>\n<li>Fixed NPCs returning after mining only one block.</li>\n<li>Fixed incorrect songs playing during Immersive Melodies performances or after resuming.</li>\n<li>Fixed fuel and ingredients disappearing during cooking.</li>\n<li>Fixed empty buckets not being returned after cheese production.</li>\n<li>Fixed cooking stations becoming unusable after resetting pizza jobs.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed stationary Cobblemon trainers being unable to dash and return to position.</li>\n<li>Fixed trainers failing to lock their position again after movement.</li>\n</ul>\n<h4>Fabric 1.21.1 / Fabric &amp; NeoForge 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed previous movement and sleep states interfering with external NPC control.</li>\n</ul>\n<h4>NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added cutting board, furnace, smoker, pizza assembly, and French Delight cheese mold jobs.</li>\n<li>Added ingredient and product transfers using baskets and cabinets.</li>\n<li>Added cabinet opening and closing animations during cooking jobs.</li>\n</ul>\n"
+        },
+        {
+          "id": 9383997,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9383997",
+          "name": "dochi_npc_core-0.1.2-fabric-26.3.jar",
+          "version": "0.1.2",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-31T13:20:45.963Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9383997",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9383997/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.2 Change Log</h3>\n<h4>Global</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed carried blocks and contents disappearing when applying templates to existing NPCs.</li>\n<li>Fixed carried items being copied to newly cloned NPCs.</li>\n<li>Fixed old mount records, timeout data, squad states, and combat progress persisting in new NPCs or clones.</li>\n<li>Fixed NPC jobs interfering with movement and actions controlled by other mods.</li>\n<li>Fixed hired NPCs failing to resume jobs and contract expiration handling after external control ends.</li>\n<li>Fixed DRM scheduled shops remaining accessible after closing, being disabled, or switching shops.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved NPC pathfinding accuracy.</li>\n</ul>\n<h4>Forge 1.20.1 / Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added NPC deletion using the Delete key in the NPC screen.</li>\n<li>Added Farmer's Delight cooking jobs.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved default job schedules.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed NPCs waiting unnecessarily in front of trees that cannot be chopped.</li>\n<li>Fixed NPCs returning after mining only one block.</li>\n<li>Fixed incorrect songs playing during Immersive Melodies performances or after resuming.</li>\n<li>Fixed fuel and ingredients disappearing during cooking.</li>\n<li>Fixed empty buckets not being returned after cheese production.</li>\n<li>Fixed cooking stations becoming unusable after resetting pizza jobs.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed stationary Cobblemon trainers being unable to dash and return to position.</li>\n<li>Fixed trainers failing to lock their position again after movement.</li>\n</ul>\n<h4>Fabric 1.21.1 / Fabric &amp; NeoForge 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed previous movement and sleep states interfering with external NPC control.</li>\n</ul>\n<h4>NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added cutting board, furnace, smoker, pizza assembly, and French Delight cheese mold jobs.</li>\n<li>Added ingredient and product transfers using baskets and cabinets.</li>\n<li>Added cabinet opening and closing animations during cooking jobs.</li>\n</ul>\n"
+        },
+        {
+          "id": 9383992,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9383992",
+          "name": "dochi_npc_core-0.1.2-neoforge-1.21.1.jar",
+          "version": "0.1.2",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-31T13:19:34.607Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9383992",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9383992/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.2 Change Log</h3>\n<h4>Global</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed carried blocks and contents disappearing when applying templates to existing NPCs.</li>\n<li>Fixed carried items being copied to newly cloned NPCs.</li>\n<li>Fixed old mount records, timeout data, squad states, and combat progress persisting in new NPCs or clones.</li>\n<li>Fixed NPC jobs interfering with movement and actions controlled by other mods.</li>\n<li>Fixed hired NPCs failing to resume jobs and contract expiration handling after external control ends.</li>\n<li>Fixed DRM scheduled shops remaining accessible after closing, being disabled, or switching shops.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved NPC pathfinding accuracy.</li>\n</ul>\n<h4>Forge 1.20.1 / Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added NPC deletion using the Delete key in the NPC screen.</li>\n<li>Added Farmer's Delight cooking jobs.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved default job schedules.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed NPCs waiting unnecessarily in front of trees that cannot be chopped.</li>\n<li>Fixed NPCs returning after mining only one block.</li>\n<li>Fixed incorrect songs playing during Immersive Melodies performances or after resuming.</li>\n<li>Fixed fuel and ingredients disappearing during cooking.</li>\n<li>Fixed empty buckets not being returned after cheese production.</li>\n<li>Fixed cooking stations becoming unusable after resetting pizza jobs.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed stationary Cobblemon trainers being unable to dash and return to position.</li>\n<li>Fixed trainers failing to lock their position again after movement.</li>\n</ul>\n<h4>Fabric 1.21.1 / Fabric &amp; NeoForge 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed previous movement and sleep states interfering with external NPC control.</li>\n</ul>\n<h4>NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added cutting board, furnace, smoker, pizza assembly, and French Delight cheese mold jobs.</li>\n<li>Added ingredient and product transfers using baskets and cabinets.</li>\n<li>Added cabinet opening and closing animations during cooking jobs.</li>\n</ul>\n"
+        },
+        {
+          "id": 9383987,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9383987",
+          "name": "dochi_npc_core-0.1.2-fabric-1.21.1.jar",
+          "version": "0.1.2",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-31T13:19:11.377Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9383987",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9383987/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.2 Change Log</h3>\n<h4>Global</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed carried blocks and contents disappearing when applying templates to existing NPCs.</li>\n<li>Fixed carried items being copied to newly cloned NPCs.</li>\n<li>Fixed old mount records, timeout data, squad states, and combat progress persisting in new NPCs or clones.</li>\n<li>Fixed NPC jobs interfering with movement and actions controlled by other mods.</li>\n<li>Fixed hired NPCs failing to resume jobs and contract expiration handling after external control ends.</li>\n<li>Fixed DRM scheduled shops remaining accessible after closing, being disabled, or switching shops.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved NPC pathfinding accuracy.</li>\n</ul>\n<h4>Forge 1.20.1 / Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added NPC deletion using the Delete key in the NPC screen.</li>\n<li>Added Farmer's Delight cooking jobs.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved default job schedules.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed NPCs waiting unnecessarily in front of trees that cannot be chopped.</li>\n<li>Fixed NPCs returning after mining only one block.</li>\n<li>Fixed incorrect songs playing during Immersive Melodies performances or after resuming.</li>\n<li>Fixed fuel and ingredients disappearing during cooking.</li>\n<li>Fixed empty buckets not being returned after cheese production.</li>\n<li>Fixed cooking stations becoming unusable after resetting pizza jobs.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed stationary Cobblemon trainers being unable to dash and return to position.</li>\n<li>Fixed trainers failing to lock their position again after movement.</li>\n</ul>\n<h4>Fabric 1.21.1 / Fabric &amp; NeoForge 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed previous movement and sleep states interfering with external NPC control.</li>\n</ul>\n<h4>NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added cutting board, furnace, smoker, pizza assembly, and French Delight cheese mold jobs.</li>\n<li>Added ingredient and product transfers using baskets and cabinets.</li>\n<li>Added cabinet opening and closing animations during cooking jobs.</li>\n</ul>\n"
+        },
+        {
+          "id": 9383985,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9383985",
+          "name": "dochi_npc_core-0.1.2-forge-1.20.1.jar",
+          "version": "0.1.2",
+          "minecraft": "1.20.1",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-31T13:18:45.977Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9383985",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9383985/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.2 Change Log</h3>\n<h4>Global</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed carried blocks and contents disappearing when applying templates to existing NPCs.</li>\n<li>Fixed carried items being copied to newly cloned NPCs.</li>\n<li>Fixed old mount records, timeout data, squad states, and combat progress persisting in new NPCs or clones.</li>\n<li>Fixed NPC jobs interfering with movement and actions controlled by other mods.</li>\n<li>Fixed hired NPCs failing to resume jobs and contract expiration handling after external control ends.</li>\n<li>Fixed DRM scheduled shops remaining accessible after closing, being disabled, or switching shops.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved NPC pathfinding accuracy.</li>\n</ul>\n<h4>Forge 1.20.1 / Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added NPC deletion using the Delete key in the NPC screen.</li>\n<li>Added Farmer's Delight cooking jobs.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved default job schedules.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed NPCs waiting unnecessarily in front of trees that cannot be chopped.</li>\n<li>Fixed NPCs returning after mining only one block.</li>\n<li>Fixed incorrect songs playing during Immersive Melodies performances or after resuming.</li>\n<li>Fixed fuel and ingredients disappearing during cooking.</li>\n<li>Fixed empty buckets not being returned after cheese production.</li>\n<li>Fixed cooking stations becoming unusable after resetting pizza jobs.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed stationary Cobblemon trainers being unable to dash and return to position.</li>\n<li>Fixed trainers failing to lock their position again after movement.</li>\n</ul>\n<h4>Fabric 1.21.1 / Fabric &amp; NeoForge 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed previous movement and sleep states interfering with external NPC control.</li>\n</ul>\n<h4>NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added cutting board, furnace, smoker, pizza assembly, and French Delight cheese mold jobs.</li>\n<li>Added ingredient and product transfers using baskets and cabinets.</li>\n<li>Added cabinet opening and closing animations during cooking jobs.</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "drm-cobblemon-editor",
+      "projectId": 1614833,
+      "title": "Dochi`s  Cobblemon Editor",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor",
+      "version": "0.2.8",
+      "files": [
+        {
+          "id": 9378028,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9378028",
+          "name": "dochi_cobblemon_editor-0.2.8-fabric-1.21.1.jar",
+          "version": "0.2.8",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-30T22:43:22.717Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9378028",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9378028/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.2.8 Change Log</h1>\n<ul>\n<li>Added DNPC support for Pokémon Itself, Poké Mart, Nurse Joy, and starter Pokémon.</li>\n<li>Added temporary hand-held item visuals and improved profile persistence.</li>\n<li>Linked DNPC clones to the Clone Library, Spawners, and Battle Scheduler.</li>\n<li>Fixed trainer detection icons and improved Nurse Joy AI behavior.</li>\n</ul>"
+        },
+        {
+          "id": 9378027,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9378027",
+          "name": "dochi_cobblemon_editor-0.2.8-neoforge-1.21.1.jar",
+          "version": "0.2.8",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-30T22:43:07.383Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9378027",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9378027/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.2.8 Change Log</h1>\n<ul>\n<li>Added DNPC support for Pokémon Itself, Poké Mart, Nurse Joy, and starter Pokémon.</li>\n<li>Added temporary hand-held item visuals and improved profile persistence.</li>\n<li>Linked DNPC clones to the Clone Library, Spawners, and Battle Scheduler.</li>\n<li>Fixed trainer detection icons and improved Nurse Joy AI behavior.</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "mob-editor",
+      "projectId": 1682651,
+      "title": "Dochi`s BattleWorkes",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes",
+      "version": "0.1.6",
+      "files": [
+        {
+          "id": 9348660,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660",
+          "name": "dochi_battleworks-0.1.6-neoforge-26.3.jar",
+          "version": "0.1.6",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-28T01:48:53.447Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9348660",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9348660/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Added compatibility with Dochi's NPC Core (DNPC).</li>\n<li>Improved the UI.</li>\n</ul>\n"
+        },
+        {
+          "id": 9348658,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348658",
+          "name": "dochi_battleworks-0.1.6-fabric-26.3.jar",
+          "version": "0.1.6",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-28T01:48:34.727Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9348658",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9348658/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Added compatibility with Dochi's NPC Core (DNPC).</li>\n<li>Improved the UI.</li>\n</ul>\n"
+        },
+        {
+          "id": 9348655,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348655",
+          "name": "dochi_battleworks-0.1.6-forge-1.20.1.jar",
+          "version": "0.1.6",
+          "minecraft": "1.20.1",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-28T01:47:38.173Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9348655",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9348655/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Added compatibility with Dochi's NPC Core (DNPC).</li>\n<li>Improved the UI.</li>\n</ul>\n"
+        },
+        {
+          "id": 9348653,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348653",
+          "name": "dochi_battleworks-0.1.6-neoforge-1.21.1.jar",
+          "version": "0.1.6",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-28T01:47:18.76Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9348653",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9348653/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Added compatibility with Dochi's NPC Core (DNPC).</li>\n<li>Improved the UI.</li>\n</ul>\n"
+        },
+        {
+          "id": 9348652,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348652",
+          "name": "dochi_battleworks-0.1.6-fabric-1.21.1.jar",
+          "version": "0.1.6",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-28T01:47:03.203Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9348652",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1682651/files/9348652/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Added compatibility with Dochi's NPC Core (DNPC).</li>\n<li>Improved the UI.</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "dochi-warfare",
+      "projectId": 1553237,
+      "title": "Dochi`s Warfare",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare",
+      "version": "0.3.1",
+      "files": [
+        {
+          "id": 9384015,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/9384015",
+          "name": "dochi_warfare-0.3.1-neoforge-1.21.1.jar",
+          "version": "0.3.1",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-31T13:23:36.45Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9384015",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9384015/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.3.1 Change Log</h3>\n<blockquote>\n<p><strong>Update Notice:</strong> Version 0.3.1 adds compatibility with <strong>DNPC (Dochi's NPC Core)</strong>. Users who only use <strong>CNPC (CustomNPCs)</strong> do not need to update.</p>\n</blockquote>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added DW firearm and melee combat support for DNPC without requiring CNPC.</li>\n<li>Added support for DNPC's friendly/hostile relationships and friendly group protection.</li>\n<li>Added movement slowdown during reloading and stationary shooting for DNPC.</li>\n<li>Added DNPC configuration, pose preview, and event dialogue integration.</li>\n<li>Added support for DNPC's Military Bed &quot;Wake Up When Damaged&quot; setting.</li>\n<li>Added PointBlank firearm model previews in the DNPC Pose Editor.</li>\n<li>Added checkbox selection, Select All, and Delete Selected to weapon, armor, and skin lists.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed DW combat behavior to respect DNPC's external AI control.</li>\n<li>Changed DW to preserve movement paths, targets, and equipment during external control.</li>\n<li>Changed DW to resume combat when external control ends.</li>\n<li>Changed DW tools to appear in DNPC and CNPC Creative Tabs when available.</li>\n<li>Changed the layout of NPC, pose, booby trap, clone, and mercenary editors.</li>\n<li>Changed the Pose Editor layout into separate editing and preview sections.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved movement speed restoration when DW combat control ends.</li>\n<li>Improved editor buttons, input fields, and overall UI visibility.</li>\n<li>Improved settings categories and back/forward navigation.</li>\n<li>Improved profile search and scrolling.</li>\n<li>Improved skin previews, preset cards, descriptions, and scroll indicators.</li>\n<li>Improved button spacing, text alignment, and long weapon name wrapping.</li>\n<li>Improved panel background rendering.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed automatic switching between firearms and melee weapons repeatedly stopping.</li>\n<li>Fixed incorrect text in the overview and probability totals.</li>\n<li>Fixed probability values disappearing during list editing or page navigation.</li>\n</ul>\n<h4>NeoForge 1.21.1</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed a crash when opening the Mercenary Configuration screen.</li>\n</ul>\n"
+        },
+        {
+          "id": 9384011,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/9384011",
+          "name": "dochi_warfare-0.3.1-forge-1.20.1.jar",
+          "version": "0.3.1",
+          "minecraft": "1.20.1",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-31T13:23:19.457Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9384011",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9384011/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.3.1 Change Log</h3>\n<blockquote>\n<p><strong>Update Notice:</strong> Version 0.3.1 adds compatibility with <strong>DNPC (Dochi's NPC Core)</strong>. Users who only use <strong>CNPC (CustomNPCs)</strong> do not need to update.</p>\n</blockquote>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added DW firearm and melee combat support for DNPC without requiring CNPC.</li>\n<li>Added support for DNPC's friendly/hostile relationships and friendly group protection.</li>\n<li>Added movement slowdown during reloading and stationary shooting for DNPC.</li>\n<li>Added DNPC configuration, pose preview, and event dialogue integration.</li>\n<li>Added support for DNPC's Military Bed &quot;Wake Up When Damaged&quot; setting.</li>\n<li>Added PointBlank firearm model previews in the DNPC Pose Editor.</li>\n<li>Added checkbox selection, Select All, and Delete Selected to weapon, armor, and skin lists.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed DW combat behavior to respect DNPC's external AI control.</li>\n<li>Changed DW to preserve movement paths, targets, and equipment during external control.</li>\n<li>Changed DW to resume combat when external control ends.</li>\n<li>Changed DW tools to appear in DNPC and CNPC Creative Tabs when available.</li>\n<li>Changed the layout of NPC, pose, booby trap, clone, and mercenary editors.</li>\n<li>Changed the Pose Editor layout into separate editing and preview sections.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved movement speed restoration when DW combat control ends.</li>\n<li>Improved editor buttons, input fields, and overall UI visibility.</li>\n<li>Improved settings categories and back/forward navigation.</li>\n<li>Improved profile search and scrolling.</li>\n<li>Improved skin previews, preset cards, descriptions, and scroll indicators.</li>\n<li>Improved button spacing, text alignment, and long weapon name wrapping.</li>\n<li>Improved panel background rendering.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed automatic switching between firearms and melee weapons repeatedly stopping.</li>\n<li>Fixed incorrect text in the overview and probability totals.</li>\n<li>Fixed probability values disappearing during list editing or page navigation.</li>\n</ul>\n<h4>NeoForge 1.21.1</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed a crash when opening the Mercenary Configuration screen.</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "dochi-warfare-expanded",
+      "projectId": 1723538,
+      "title": "Dochi`s Warfare Expanded",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-warfare-expanded",
+      "version": "0.3.1",
+      "files": [
+        {
+          "id": 9384019,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-warfare-expanded/files/9384019",
+          "name": "dochi_warfare_expanded-0.3.1-neoforge-1.21.1.jar",
+          "version": "0.3.1",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-31T13:24:35.45Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9384019",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9384019/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.3.1 Change Log</h3>\n<blockquote>\n<p><strong>Update Notice:</strong> Version 0.3.1 adds compatibility with <strong>DNPC (Dochi's NPC Core)</strong>. Users who only use <strong>CNPC (CustomNPCs)</strong> do not need to update.\n<strong>Important:</strong> Update both DW and DWE together.</p>\n</blockquote>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added DNPC crew support for vehicle drivers, gunners, and other crew roles.</li>\n<li>Added DNPC friendly/hostile relationship support for vehicle targeting and ally protection.</li>\n<li>Added combat dismount support for DNPC crews without requiring CNPC.</li>\n<li>Added support for Superb Warfare 0.8.9.2 vehicles.</li>\n<li>Added settings for handling NPC crews when vehicles are destroyed.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed vehicle AI ammo and weapon processing to reduce unnecessary repeated operations.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved update warnings when using incompatible older DW versions.</li>\n<li>Improved vehicle AI performance by reducing redundant processing.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed AH-6 patrols failing to aim and fire fixed machine guns at ground targets.</li>\n<li>Fixed fixed-wing aircraft failing to aim with mounted weapons.</li>\n<li>Fixed fixed-wing aircraft climbing excessively near unloaded terrain.</li>\n<li>Fixed reloads taking too long after restoring vehicles from another world.</li>\n<li>Fixed ammo duplication and magazine capacity overflow when changing ammo settings during reloading.</li>\n<li>Fixed vehicles incorrectly blocking their own fire as friendly obstacles.</li>\n<li>Fixed unresponsive entries in crew and Soulstone selection screens.</li>\n</ul>\n<h5>Expanded Addon Compatibility</h5>\n<p>Verified vehicle AI movement, firing, and reloading with NPC crews.</p>\n<table>\n<thead>\n<tr>\n<th>Addon</th>\n<th>Supported Versions</th>\n<th>Verified Vehicles</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>AshVehicle</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M3A3 Bradley, AH-64, F-22</td>\n</tr>\n<tr>\n<td>HaloVehicles</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M12 HMG</td>\n</tr>\n<tr>\n<td>MCSP</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M3A3 Bradley</td>\n</tr>\n<tr>\n<td>Vintage Vehicle Pack (VVP)</td>\n<td>Forge 1.20.1</td>\n<td>BMP-2</td>\n</tr>\n<tr>\n<td>Frontline Combat Pack (FCP)</td>\n<td>Forge 1.20.1</td>\n<td>BMP-2</td>\n</tr>\n<tr>\n<td>Spectacular Machines Addon (SMA)</td>\n<td>Forge 1.20.1</td>\n<td>Type 10</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>Compatibility is verified for the listed vehicles only. Not all vehicles or special weapons are supported.</li>\n</ul>\n"
+        },
+        {
+          "id": 9384017,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-warfare-expanded/files/9384017",
+          "name": "dochi_warfare_expanded-0.3.1-forge-1.20.1.jar",
+          "version": "0.3.1",
+          "minecraft": "1.20.1",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-31T13:24:23.7Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9384017",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1723538/files/9384017/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.3.1 Change Log</h3>\n<blockquote>\n<p><strong>Update Notice:</strong> Version 0.3.1 adds compatibility with <strong>DNPC (Dochi's NPC Core)</strong>. Users who only use <strong>CNPC (CustomNPCs)</strong> do not need to update.\n<strong>Important:</strong> Update both DW and DWE together.</p>\n</blockquote>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added DNPC crew support for vehicle drivers, gunners, and other crew roles.</li>\n<li>Added DNPC friendly/hostile relationship support for vehicle targeting and ally protection.</li>\n<li>Added combat dismount support for DNPC crews without requiring CNPC.</li>\n<li>Added support for Superb Warfare 0.8.9.2 vehicles.</li>\n<li>Added settings for handling NPC crews when vehicles are destroyed.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed vehicle AI ammo and weapon processing to reduce unnecessary repeated operations.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved update warnings when using incompatible older DW versions.</li>\n<li>Improved vehicle AI performance by reducing redundant processing.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed AH-6 patrols failing to aim and fire fixed machine guns at ground targets.</li>\n<li>Fixed fixed-wing aircraft failing to aim with mounted weapons.</li>\n<li>Fixed fixed-wing aircraft climbing excessively near unloaded terrain.</li>\n<li>Fixed reloads taking too long after restoring vehicles from another world.</li>\n<li>Fixed ammo duplication and magazine capacity overflow when changing ammo settings during reloading.</li>\n<li>Fixed vehicles incorrectly blocking their own fire as friendly obstacles.</li>\n<li>Fixed unresponsive entries in crew and Soulstone selection screens.</li>\n</ul>\n<h5>Expanded Addon Compatibility</h5>\n<p>Verified vehicle AI movement, firing, and reloading with NPC crews.</p>\n<table>\n<thead>\n<tr>\n<th>Addon</th>\n<th>Supported Versions</th>\n<th>Verified Vehicles</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>AshVehicle</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M3A3 Bradley, AH-64, F-22</td>\n</tr>\n<tr>\n<td>HaloVehicles</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M12 HMG</td>\n</tr>\n<tr>\n<td>MCSP</td>\n<td>Forge 1.20.1 / NeoForge 1.21.1</td>\n<td>M3A3 Bradley</td>\n</tr>\n<tr>\n<td>Vintage Vehicle Pack (VVP)</td>\n<td>Forge 1.20.1</td>\n<td>BMP-2</td>\n</tr>\n<tr>\n<td>Frontline Combat Pack (FCP)</td>\n<td>Forge 1.20.1</td>\n<td>BMP-2</td>\n</tr>\n<tr>\n<td>Spectacular Machines Addon (SMA)</td>\n<td>Forge 1.20.1</td>\n<td>Type 10</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>Compatibility is verified for the listed vehicles only. Not all vehicles or special weapons are supported.</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "dochi-spawn-control",
+      "projectId": 1665161,
+      "title": "Dochi`s Spawn Control",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control",
+      "version": "0.1.5",
+      "files": [
+        {
+          "id": 9433974,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control/files/9433974",
+          "name": "dochi_spawn_control-0.1.5-neoforge-1.21.1.jar",
+          "version": "0.1.5",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-11-04T13:54:16.163Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433974",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433974/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added biome and structure ID/tag filters with inclusion and exclusion lists.</li>\n<li>Added shared guard squad composition and equipment across all supported loaders.</li>\n<li>Added persistent per-structure squad limits and respawn delays.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed nested location pickers showing parent controls and editor labels through their panels.</li>\n<li>Fixed oversized advanced diagnostics and kept long results inside a scrollable viewport.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed guard equipment clearing to standalone switches beside item selectors.</li>\n<li>Changed spawn placement choices to inline dropdowns.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved guard flyouts with section dividers and visible structure linkage guidance.</li>\n<li>Improved guard forms with compact actions, aligned fields, and readable selection summaries.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added saved DNPC clone templates to natural spawn rules.</li>\n</ul>\n"
+        },
+        {
+          "id": 9433970,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control/files/9433970",
+          "name": "dochi_spawn_control-0.1.5-fabric-1.21.1.jar",
+          "version": "0.1.5",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-11-04T13:53:58.66Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433970",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433970/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added biome and structure ID/tag filters with inclusion and exclusion lists.</li>\n<li>Added shared guard squad composition and equipment across all supported loaders.</li>\n<li>Added persistent per-structure squad limits and respawn delays.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed nested location pickers showing parent controls and editor labels through their panels.</li>\n<li>Fixed oversized advanced diagnostics and kept long results inside a scrollable viewport.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed guard equipment clearing to standalone switches beside item selectors.</li>\n<li>Changed spawn placement choices to inline dropdowns.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved guard flyouts with section dividers and visible structure linkage guidance.</li>\n<li>Improved guard forms with compact actions, aligned fields, and readable selection summaries.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added saved DNPC clone templates to natural spawn rules.</li>\n</ul>\n"
+        },
+        {
+          "id": 9433969,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control/files/9433969",
+          "name": "dochi_spawn_control-0.1.5-forge-1.20.1.jar",
+          "version": "0.1.5",
+          "minecraft": "1.20.1",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-11-04T13:53:33.497Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433969",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433969/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added biome and structure ID/tag filters with inclusion and exclusion lists.</li>\n<li>Added shared guard squad composition and equipment across all supported loaders.</li>\n<li>Added persistent per-structure squad limits and respawn delays.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed nested location pickers showing parent controls and editor labels through their panels.</li>\n<li>Fixed oversized advanced diagnostics and kept long results inside a scrollable viewport.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed guard equipment clearing to standalone switches beside item selectors.</li>\n<li>Changed spawn placement choices to inline dropdowns.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved guard flyouts with section dividers and visible structure linkage guidance.</li>\n<li>Improved guard forms with compact actions, aligned fields, and readable selection summaries.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added saved DNPC clone templates to natural spawn rules.</li>\n</ul>\n"
+        },
+        {
+          "id": 9433965,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control/files/9433965",
+          "name": "dochi_spawn_control-0.1.5-neoforge-26.3.jar",
+          "version": "0.1.5",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-11-04T13:52:59.883Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433965",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433965/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added biome and structure ID/tag filters with inclusion and exclusion lists.</li>\n<li>Added shared guard squad composition and equipment across all supported loaders.</li>\n<li>Added persistent per-structure squad limits and respawn delays.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed nested location pickers showing parent controls and editor labels through their panels.</li>\n<li>Fixed oversized advanced diagnostics and kept long results inside a scrollable viewport.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed guard equipment clearing to standalone switches beside item selectors.</li>\n<li>Changed spawn placement choices to inline dropdowns.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved guard flyouts with section dividers and visible structure linkage guidance.</li>\n<li>Improved guard forms with compact actions, aligned fields, and readable selection summaries.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added saved DNPC clone templates to natural spawn rules.</li>\n</ul>\n"
+        },
+        {
+          "id": 9433964,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control/files/9433964",
+          "name": "dochi_spawn_control-0.1.5-fabric-26.3.jar",
+          "version": "0.1.5",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-11-04T13:52:41.38Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433964",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433964/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added biome and structure ID/tag filters with inclusion and exclusion lists.</li>\n<li>Added shared guard squad composition and equipment across all supported loaders.</li>\n<li>Added persistent per-structure squad limits and respawn delays.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed nested location pickers showing parent controls and editor labels through their panels.</li>\n<li>Fixed oversized advanced diagnostics and kept long results inside a scrollable viewport.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed guard equipment clearing to standalone switches beside item selectors.</li>\n<li>Changed spawn placement choices to inline dropdowns.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved guard flyouts with section dividers and visible structure linkage guidance.</li>\n<li>Improved guard forms with compact actions, aligned fields, and readable selection summaries.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added saved DNPC clone templates to natural spawn rules.</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "dochi-real-armor",
+      "projectId": 1567803,
+      "title": "Dochi`s Real Armor",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor",
+      "version": "0.1.4",
+      "files": [
+        {
+          "id": 9342433,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9342433",
+          "name": "dochi_real_armor-0.1.4-neoforge-26.3.jar",
+          "version": "0.1.4",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-27T11:39:50.697Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9342433",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9342433/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.4 Change Log</h1>\n<ul>\n<li>Completely removed the mandatory CustomNPCs dependency.</li>\n<li>Added compatibility with Dochi's NPC Core (DNPC).</li>\n<li>Improved UI.</li>\n</ul>\n"
+        },
+        {
+          "id": 9342430,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9342430",
+          "name": "dochi_real_armor-0.1.4-fabric-26.3.jar",
+          "version": "0.1.4",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-27T11:39:32.87Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9342430",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9342430/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.4 Change Log</h1>\n<ul>\n<li>Completely removed the mandatory CustomNPCs dependency.</li>\n<li>Added compatibility with Dochi's NPC Core (DNPC).</li>\n<li>Improved UI.</li>\n</ul>\n"
+        },
+        {
+          "id": 9342424,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9342424",
+          "name": "dochi_real_armor-0.1.4-neoforge-1.21.1.jar",
+          "version": "0.1.4",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-27T11:38:47.203Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9342424",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9342424/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.4 Change Log</h1>\n<ul>\n<li>Completely removed the mandatory CustomNPCs dependency.</li>\n<li>Added compatibility with Dochi's NPC Core (DNPC).</li>\n<li>Improved UI.</li>\n</ul>\n"
+        },
+        {
+          "id": 9342422,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9342422",
+          "name": "dochi_real_armor-0.1.4-fabric-1.21.1.jar",
+          "version": "0.1.4",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-27T11:38:17.527Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9342422",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9342422/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.4 Change Log</h1>\n<ul>\n<li>Completely removed the mandatory CustomNPCs dependency.</li>\n<li>Added compatibility with Dochi's NPC Core (DNPC).</li>\n<li>Improved UI.</li>\n</ul>\n"
+        },
+        {
+          "id": 9342419,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9342419",
+          "name": "dochi_real_armor-0.1.4-forge-1.20.1.jar",
+          "version": "0.1.4",
+          "minecraft": "1.20.1",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-27T11:37:43.243Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9342419",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9342419/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.4 Change Log</h1>\n<ul>\n<li>Completely removed the mandatory CustomNPCs dependency.</li>\n<li>Added compatibility with Dochi's NPC Core (DNPC).</li>\n<li>Improved UI.</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "dochi-minigames",
+      "projectId": 1739148,
+      "title": "Dochi`s MiniGames",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames",
+      "version": "0.1.6",
+      "files": [
+        {
+          "id": 9432406,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9432406",
+          "name": "dochi_minigames-0.1.6-forge-1.20.1.jar",
+          "version": "0.1.6",
+          "minecraft": "1.20.1",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-11-04T10:36:15.003Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9432406",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9432406/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.6 Change Log</h3>\n<blockquote>\n<p>MWENT card additions, specifications, and opening tactics: <a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%253flang%253den%2523mwent%252fversion-0-1-6\" rel=\"nofollow\">0.1.6 card notes</a>.</p>\n</blockquote>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added faction and mechanic-specific MWENT card sound effects with CC0 source credits.</li>\n<li>Added seven siege engine models with loading and firing animations.</li>\n<li>Added card creator options for the new mechanics, effect costs, and siege commands.</li>\n<li>Added saved opening tactic choices in the deck builder.</li>\n<li>Added configurable MWENT player, player-versus-AI, and AI-versus-AI table matches.</li>\n<li>Added optional spectator cameras and hand visibility settings.</li>\n<li>Added commands to start or cancel AI table matches and enter spectator view.</li>\n<li>Added spectator item betting with refunds and persistent settlements.</li>\n<li>Added craftable roulette machines with weighted prizes, direct right-click play, and in-world prize effects.</li>\n<li>Added shared reward conditions, selection policies, and persistent pending rewards across minigames.</li>\n<li>Added optional Cobblemon Pokemon prizes with party and PC delivery.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed DNPC Gecko cards showing default appearances instead of their selected models.</li>\n<li>Fixed misplaced deck selection hitboxes and controls overlapping the selected card list.</li>\n<li>Fixed modified card states being lost during draws, revivals, or AI predictions.</li>\n<li>Fixed hidden trap identities leaking to opponents and spectators.</li>\n<li>Fixed Ender Dragon battlefield models appearing smaller than ordinary troops.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved MWENT audio mixing by suppressing overlapping voices and repeated area impacts.</li>\n<li>Improved spinning slot performance.</li>\n<li>Improved MWENT betting amount field sizing.</li>\n</ul>\n<h4>Forge 1.20.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added optional siege engine palettes using compatible Create and Big Cannons blocks.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed missing Controls category names.</li>\n</ul>\n"
+        },
+        {
+          "id": 9422602,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9422602",
+          "name": "dochi_minigames-0.1.6-neoforge-26.3.jar",
+          "version": "0.1.6",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-11-03T12:38:20.773Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9422602",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9422602/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.6 Change Log</h3>\n<blockquote>\n  <p>MWENT card additions, specifications, and opening tactics: <a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%253flang%253den%2523mwent%252fversion-0-1-6\" target=\"_blank\" rel=\"nofollow\">0.1.6 card notes</a>.</p>\n</blockquote>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added faction and mechanic-specific MWENT card sound effects with CC0 source credits.</li>\n<li>Added seven siege engine models with loading and firing animations.</li>\n<li>Added card creator options for the new mechanics, effect costs, and siege commands.</li>\n<li>Added saved opening tactic choices in the deck builder.</li>\n<li>Added configurable MWENT player, player-versus-AI, and AI-versus-AI table matches.</li>\n<li>Added optional spectator cameras and hand visibility settings.</li>\n<li>Added commands to start or cancel AI table matches and enter spectator view.</li>\n<li>Added spectator item betting with refunds and persistent settlements.</li>\n<li>Added craftable roulette machines with weighted prizes, direct right-click play, and in-world prize effects.</li>\n<li>Added shared reward conditions, selection policies, and persistent pending rewards across minigames.</li>\n<li>Added optional Cobblemon Pokemon prizes with party and PC delivery.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed DNPC Gecko cards showing default appearances instead of their selected models.</li>\n<li>Fixed misplaced deck selection hitboxes and controls overlapping the selected card list.</li>\n<li>Fixed modified card states being lost during draws, revivals, or AI predictions.</li>\n<li>Fixed hidden trap identities leaking to opponents and spectators.</li>\n<li>Fixed Ender Dragon battlefield models appearing smaller than ordinary troops.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved MWENT audio mixing by suppressing overlapping voices and repeated area impacts.</li>\n<li>Improved spinning slot performance.</li>\n<li>Improved MWENT betting amount field sizing.</li>\n</ul>\n<h4>Forge 1.20.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added optional siege engine palettes using compatible Create and Big Cannons blocks.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed missing Controls category names.</li>\n</ul>"
+        },
+        {
+          "id": 9422599,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9422599",
+          "name": "dochi_minigames-0.1.6-fabric-26.3.jar",
+          "version": "0.1.6",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-11-03T12:38:04.887Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9422599",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9422599/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.6 Change Log</h3>\n<blockquote>\n<p>MWENT card additions, specifications, and opening tactics: <a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%253flang%253den%2523mwent%252fversion-0-1-6\" rel=\"nofollow\">0.1.6 card notes</a>.</p>\n</blockquote>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added faction and mechanic-specific MWENT card sound effects with CC0 source credits.</li>\n<li>Added seven siege engine models with loading and firing animations.</li>\n<li>Added card creator options for the new mechanics, effect costs, and siege commands.</li>\n<li>Added saved opening tactic choices in the deck builder.</li>\n<li>Added configurable MWENT player, player-versus-AI, and AI-versus-AI table matches.</li>\n<li>Added optional spectator cameras and hand visibility settings.</li>\n<li>Added commands to start or cancel AI table matches and enter spectator view.</li>\n<li>Added spectator item betting with refunds and persistent settlements.</li>\n<li>Added craftable roulette machines with weighted prizes, direct right-click play, and in-world prize effects.</li>\n<li>Added shared reward conditions, selection policies, and persistent pending rewards across minigames.</li>\n<li>Added optional Cobblemon Pokemon prizes with party and PC delivery.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed DNPC Gecko cards showing default appearances instead of their selected models.</li>\n<li>Fixed misplaced deck selection hitboxes and controls overlapping the selected card list.</li>\n<li>Fixed modified card states being lost during draws, revivals, or AI predictions.</li>\n<li>Fixed hidden trap identities leaking to opponents and spectators.</li>\n<li>Fixed Ender Dragon battlefield models appearing smaller than ordinary troops.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved MWENT audio mixing by suppressing overlapping voices and repeated area impacts.</li>\n<li>Improved spinning slot performance.</li>\n<li>Improved MWENT betting amount field sizing.</li>\n</ul>\n<h4>Forge 1.20.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added optional siege engine palettes using compatible Create and Big Cannons blocks.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed missing Controls category names.</li>\n</ul>\n"
+        },
+        {
+          "id": 9422590,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9422590",
+          "name": "dochi_minigames-0.1.6-neoforge-1.21.1.jar",
+          "version": "0.1.6",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-11-03T12:37:03.043Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9422590",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9422590/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.6 Change Log</h3>\n<blockquote>\n<p>MWENT card additions, specifications, and opening tactics: <a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%253flang%253den%2523mwent%252fversion-0-1-6\" rel=\"nofollow\">0.1.6 card notes</a>.</p>\n</blockquote>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added faction and mechanic-specific MWENT card sound effects with CC0 source credits.</li>\n<li>Added seven siege engine models with loading and firing animations.</li>\n<li>Added card creator options for the new mechanics, effect costs, and siege commands.</li>\n<li>Added saved opening tactic choices in the deck builder.</li>\n<li>Added configurable MWENT player, player-versus-AI, and AI-versus-AI table matches.</li>\n<li>Added optional spectator cameras and hand visibility settings.</li>\n<li>Added commands to start or cancel AI table matches and enter spectator view.</li>\n<li>Added spectator item betting with refunds and persistent settlements.</li>\n<li>Added craftable roulette machines with weighted prizes, direct right-click play, and in-world prize effects.</li>\n<li>Added shared reward conditions, selection policies, and persistent pending rewards across minigames.</li>\n<li>Added optional Cobblemon Pokemon prizes with party and PC delivery.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed DNPC Gecko cards showing default appearances instead of their selected models.</li>\n<li>Fixed misplaced deck selection hitboxes and controls overlapping the selected card list.</li>\n<li>Fixed modified card states being lost during draws, revivals, or AI predictions.</li>\n<li>Fixed hidden trap identities leaking to opponents and spectators.</li>\n<li>Fixed Ender Dragon battlefield models appearing smaller than ordinary troops.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved MWENT audio mixing by suppressing overlapping voices and repeated area impacts.</li>\n<li>Improved spinning slot performance.</li>\n<li>Improved MWENT betting amount field sizing.</li>\n</ul>\n<h4>Forge 1.20.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added optional siege engine palettes using compatible Create and Big Cannons blocks.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed missing Controls category names.</li>\n</ul>\n"
+        },
+        {
+          "id": 9422582,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9422582",
+          "name": "dochi_minigames-0.1.6-fabric-1.21.1.jar",
+          "version": "0.1.6",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-11-03T12:36:06.457Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9422582",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9422582/change-log",
+          "status": 4,
+          "changelogHtml": "<h3>0.1.6 Change Log</h3>\n<blockquote>\n<p>MWENT card additions, specifications, and opening tactics: <a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%253flang%253den%2523mwent%252fversion-0-1-6\" rel=\"nofollow\">0.1.6 card notes</a>.</p>\n</blockquote>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added faction and mechanic-specific MWENT card sound effects with CC0 source credits.</li>\n<li>Added seven siege engine models with loading and firing animations.</li>\n<li>Added card creator options for the new mechanics, effect costs, and siege commands.</li>\n<li>Added saved opening tactic choices in the deck builder.</li>\n<li>Added configurable MWENT player, player-versus-AI, and AI-versus-AI table matches.</li>\n<li>Added optional spectator cameras and hand visibility settings.</li>\n<li>Added commands to start or cancel AI table matches and enter spectator view.</li>\n<li>Added spectator item betting with refunds and persistent settlements.</li>\n<li>Added craftable roulette machines with weighted prizes, direct right-click play, and in-world prize effects.</li>\n<li>Added shared reward conditions, selection policies, and persistent pending rewards across minigames.</li>\n<li>Added optional Cobblemon Pokemon prizes with party and PC delivery.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed DNPC Gecko cards showing default appearances instead of their selected models.</li>\n<li>Fixed misplaced deck selection hitboxes and controls overlapping the selected card list.</li>\n<li>Fixed modified card states being lost during draws, revivals, or AI predictions.</li>\n<li>Fixed hidden trap identities leaking to opponents and spectators.</li>\n<li>Fixed Ender Dragon battlefield models appearing smaller than ordinary troops.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved MWENT audio mixing by suppressing overlapping voices and repeated area impacts.</li>\n<li>Improved spinning slot performance.</li>\n<li>Improved MWENT betting amount field sizing.</li>\n</ul>\n<h4>Forge 1.20.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added optional siege engine palettes using compatible Create and Big Cannons blocks.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed missing Controls category names.</li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "dochi-mapicon-integration",
+      "projectId": 1738703,
+      "title": "Dochi`s MapIcon Integration",
+      "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration",
+      "version": "0.1.2",
+      "files": [
+        {
+          "id": 9348627,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9348627",
+          "name": "dochi_mapicon_integration-0.1.2-neoforge-26.3.jar",
+          "version": "0.1.2",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-28T01:42:29.147Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9348627",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9348627/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.2 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Improved the UI.</li>\n<li>Applied several mod compatibility fixes.</li>\n</ul>\n"
+        },
+        {
+          "id": 9348624,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9348624",
+          "name": "dochi_mapicon_integration-0.1.2-fabric-26.3.jar",
+          "version": "0.1.2",
+          "minecraft": "26.3",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-28T01:42:13.907Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9348624",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9348624/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.2 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Improved the UI.</li>\n<li>Applied several mod compatibility fixes.</li>\n</ul>\n"
+        },
+        {
+          "id": 9348623,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9348623",
+          "name": "dochi_mapicon_integration-0.1.2-fabric-1.21.1.jar",
+          "version": "0.1.2",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-28T01:41:44.83Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9348623",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9348623/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.2 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Improved the UI.</li>\n<li>Applied several mod compatibility fixes.</li>\n</ul>\n"
+        },
+        {
+          "id": 9348622,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9348622",
+          "name": "dochi_mapicon_integration-0.1.2-neoforge-1.21.1.jar",
+          "version": "0.1.2",
+          "minecraft": "1.21.1",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-28T01:41:25.813Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9348622",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9348622/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.2 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Improved the UI.</li>\n<li>Applied several mod compatibility fixes.</li>\n</ul>\n"
+        },
+        {
+          "id": 9348621,
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9348621",
+          "name": "dochi_mapicon_integration-0.1.2-forge-1.20.1.jar",
+          "version": "0.1.2",
+          "minecraft": "1.20.1",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "type": "release",
+          "uploadedAt": "2026-10-28T01:41:03.347Z",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9348621",
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9348621/change-log",
+          "status": 4,
+          "changelogHtml": "<h1>0.1.2 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Improved the UI.</li>\n<li>Applied several mod compatibility fixes.</li>\n</ul>\n"
+        }
+      ]
+    }
+  ]
+}

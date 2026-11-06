@@ -1,0 +1,20 @@
+{
+  "product": "core-fabric",
+  "version": "0.1.6",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:37.400Z",
+  "files": [
+    {
+      "id": 8609204,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.1.6-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/8609204",
+      "uploadedAt": "2026-08-09T13:22:52.217Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8609204",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8609204/change-log",
+      "html": "<h1>0.1.6 Change Log</h1>\n<h2>Added</h2>\n<ul>\n<li>Added full dialogue text pagination, including configurable previous/next controls that preserve typing-reveal behavior and saved GUI layout values.</li>\n<li>Added searchable Item ID selection to the NPC Shop Editor and searchable Item, CustomNPCs faction, advancement, and FTB Quest ID pickers to the shared Condition Editor.</li>\n<li>Added an optional public FTB Quests compatibility service and picker for quest/task discovery, state checks, and verified completion without making FTB Quests a hard dependency.</li>\n<li>Added public item-picker and render-neutral item-catalog APIs, allowing addons to reuse DRM's localized item registry search without importing internal screens.</li>\n<li>Added searchable Remnant Message and policy JSON selectors, plus per-marker scale, billboard, and item-transform settings with server-side validation and persistence.</li>\n<li>Added validated <code>#RRGGBB</code> input and color-code copy/paste controls to the Dialogue Editor's text-style tools.</li>\n</ul>\n<h2>Changed</h2>\n<ul>\n<li>Changed the shared Condition Editor to use compact key/value fields and support drag-and-drop condition reordering with auto-scroll and an insertion guide.</li>\n<li>Changed long dialogue choices to fit their configured viewport while preserving scrolling for genuinely overflowing choice lists.</li>\n<li>Changed built-in editor names and the NPC Apply interface to use localization keys; all 11 bundled locales now share the same key set.</li>\n<li>Changed NPC Apply text layout to use font-width clipping and pixel-aligned scaling for sharper text at fractional GUI scales.</li>\n<li>Changed the Remnant Message Setter item to use its dedicated model texture instead of the vanilla stick texture.</li>\n<li>Changed automatic currency conversion and death-loss handling to notify the affected player in chat.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fixed wallet and bank balances not being copied to the replacement player after respawn.</li>\n<li>Fixed ordinary currency pickup processing sweeping unrelated currency stacks already present in the player's inventory.</li>\n<li>Fixed HUD Maker recursively requesting a valid empty currency catalog until a <code>StackOverflowError</code> occurred.</li>\n<li>Fixed Remnant condition and action edits mutating detached JSON arrays, causing successful-looking changes to be lost when saved.</li>\n<li>Fixed Dialogue Editor Save followed by Close showing a false unsaved-change warning while the matching save acknowledgement was pending.</li>\n<li>Fixed long translated dialogue choice labels moving whole buttons instead of remaining inside stable configured rows.</li>\n</ul>\n"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ version: 0.2.8
 audience: Créateurs / opérateurs de serveur
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 Cette page enregistre un **Libération plus ancienne**. Utilisation [DRM 0.3.1](#core/release-notes-0-3-1) pour l'installation et l'utilisation actuelles. Les illustrations de la version actuelle ci-dessous sont distinctes de l'historique de publication.

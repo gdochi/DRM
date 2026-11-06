@@ -1,0 +1,20 @@
+{
+  "product": "core-fabric",
+  "version": "0.1.8",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:37.301Z",
+  "files": [
+    {
+      "id": 8792104,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.1.8-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/8792104",
+      "uploadedAt": "2026-09-02T12:01:05.647Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8792104",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8792104/change-log",
+      "html": "<h2>Change Log 0.1.8</h2>\n<h3>Added</h3>\n<ul>\n<li><strong>Quest Editor</strong> — Create quest packs with objectives, prerequisites, rewards, repeat rules, and NPC dialogue links.</li>\n<li><strong>Quest Journal</strong> — Players can search, track, accept, and turn in quests. Opens with <code>U</code> by default.</li>\n<li><strong>Faction Editor</strong> — Add names, icons, descriptions, categories, and relationship presentation to CustomNPCs factions.</li>\n<li><strong>Faction Overview</strong> — Players can view their faction scores and relationships. Opens with <code>J</code> by default.</li>\n<li><strong>Popup Maker</strong> — Create announcements with custom text, images, sounds, display timing, and priority.</li>\n<li><strong>DRM Admin</strong> — Authorized operators can manage player tags, currency, quests, advancements, faction points, and stored data through <code>F7</code>.</li>\n<li><strong>Asset Browser</strong> — PNG files in <code>config/dochi_rpg_maker/assets/textures</code> can now be searched, filtered, and previewed directly from DRM editors.</li>\n<li><strong>Animated PNG textures</strong> — PNG assets can use a matching <code>.png.mcmeta</code> file for texture animation.</li>\n<li><strong>Expanded NPC Basic editor</strong> — Added deeper NPC texture, model, animation, preview-camera, and hitbox controls.</li>\n<li><strong>GeckoLib NPC integration</strong> — When GeckoLib is installed, NPCs can use custom models and animations, including animation actions triggered through dialogue.</li>\n<li><strong>Physical currency items</strong> — DRM currencies can now have a physical item form with a configurable value per item.</li>\n<li><strong>HUD data values</strong> — HUD Maker can display CustomNPCs <code>storeddata</code> and <code>tempdata</code> values.</li>\n<li><strong>Teleporter command timing</strong> — Teleporter commands can now run at selected stages before, during, or after the fade and teleport sequence.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li><strong>Unified editor interface</strong> — Editor top bars, panels, lists, alignment, and input focus have been standardized for clearer and more consistent navigation.</li>\n<li><strong>Dialogue improvements</strong> — Improved search, scrolling, input handling, and editor usability.</li>\n<li><strong>NPC Shop improvements</strong> — Improved search, scrolling, input handling, and preview behavior.</li>\n<li><strong>NPC Apply improvements</strong> — Improved editor input and NPC preview handling.</li>\n<li><strong>NPC Spawner improvements</strong> — Improved search, scrolling, input handling, and preview behavior.</li>\n<li><strong>Remnant Msg improvements</strong> — Improved search, scrolling, input handling, and preview behavior.</li>\n<li><strong>Asset loading optimization</strong> — Large asset collections and editor screens now avoid unnecessary repeated loading.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li><strong>Editor input handling</strong> — Fixed multiple focus, scrolling, and text-input issues across DRM editors.</li>\n<li><strong>NPC preview handling</strong> — Fixed several preview-related issues affecting NPC editing and presentation.</li>\n<li><strong>Large-list performance</strong> — Reduced unnecessary repeated processing when browsing large asset and editor lists.</li>\n</ul>\n"
+    }
+  ]
+}

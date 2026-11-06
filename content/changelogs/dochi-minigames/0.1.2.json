@@ -1,0 +1,68 @@
+{
+  "product": "dochi-minigames",
+  "version": "0.1.2",
+  "projectId": 1739148,
+  "checkedAt": "2026-11-06T08:49:42.580Z",
+  "files": [
+    {
+      "id": 9309263,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_minigames-0.1.2-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9309263",
+      "uploadedAt": "2026-10-24T13:05:18.7Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9309263",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9309263/change-log",
+      "html": "<h1>0.1.2 Change Log</h1>\n<ul>\n<li>Added a coin toss to determine who goes first in MWENT. AI battles now use a Villager entity as a fallback when no NPC is available.</li>\n<li>Added an in-game tutorial for MWENT.</li>\n<li>Fixed a background rendering bug affecting MWENT card items.</li>\n<li>Optimized MWENT's PvP system and overall performance.</li>\n</ul>\n"
+    },
+    {
+      "id": 9309265,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_minigames-0.1.2-forge-1.20.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9309265",
+      "uploadedAt": "2026-10-24T13:05:45.86Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9309265",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9309265/change-log",
+      "html": "<h1>0.1.2 Change Log</h1>\n<ul>\n<li>Added a coin toss to determine who goes first in MWENT. AI battles now use a Villager entity as a fallback when no NPC is available.</li>\n<li>Added an in-game tutorial for MWENT.</li>\n<li>Fixed a background rendering bug affecting MWENT card items.</li>\n<li>Optimized MWENT's PvP system and overall performance.</li>\n</ul>\n"
+    },
+    {
+      "id": 9309269,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_minigames-0.1.2-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9309269",
+      "uploadedAt": "2026-10-24T13:06:02.333Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9309269",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9309269/change-log",
+      "html": "<h1>0.1.2 Change Log</h1>\n<ul>\n<li>Added a coin toss to determine who goes first in MWENT. AI battles now use a Villager entity as a fallback when no NPC is available.</li>\n<li>Added an in-game tutorial for MWENT.</li>\n<li>Fixed a background rendering bug affecting MWENT card items.</li>\n<li>Optimized MWENT's PvP system and overall performance.</li>\n</ul>\n"
+    },
+    {
+      "id": 9317311,
+      "loader": "NeoForge",
+      "minecraft": "26.3",
+      "name": "dochi_minigames-0.1.2-neoforge-26.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9317311",
+      "uploadedAt": "2026-10-25T03:38:30.483Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9317311",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9317311/change-log",
+      "html": "<h1>0.1.2 Change Log</h1>\n<ul>\n<li>Added a coin toss to determine who goes first in MWENT. AI battles now use a Villager entity as a fallback when no NPC is available.</li>\n<li>Added an in-game tutorial for MWENT.</li>\n<li>Fixed a background rendering bug affecting MWENT card items.</li>\n<li>Optimized MWENT's PvP system and overall performance.</li>\n</ul>\n"
+    },
+    {
+      "id": 9317314,
+      "loader": "Fabric",
+      "minecraft": "26.3",
+      "name": "dochi_minigames-0.1.2-fabric-26.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9317314",
+      "uploadedAt": "2026-10-25T03:38:52.323Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9317314",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1739148/files/9317314/change-log",
+      "html": "<h1>0.1.2 Change Log</h1>\n<ul>\n<li>Added a coin toss to determine who goes first in MWENT. AI battles now use a Villager entity as a fallback when no NPC is available.</li>\n<li>Added an in-game tutorial for MWENT.</li>\n<li>Fixed a background rendering bug affecting MWENT card items.</li>\n<li>Optimized MWENT's PvP system and overall performance.</li>\n</ul>\n"
+    }
+  ]
+}

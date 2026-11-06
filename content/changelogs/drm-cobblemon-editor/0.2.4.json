@@ -1,0 +1,32 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.2.4",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.223Z",
+  "files": [
+    {
+      "id": 9146491,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.4-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9146491",
+      "uploadedAt": "2026-10-12T14:26:33.943Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9146491",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9146491/change-log",
+      "html": "<h1>0.2.4 Change Log</h1>\n<ul>\n<li>Added Battle Presentation support during battles.</li>\n<li>Added Pokémon rotation in the Cobblemon configuration screen.</li>\n<li>Added compatibility with Cobblemon 1.8.2.</li>\n<li>Added the Battle Scheduler Editor to manage field battles and integrate Scene Maker with Battle Presentation.</li>\n</ul>\n"
+    },
+    {
+      "id": 9146500,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.4-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9146500",
+      "uploadedAt": "2026-10-12T14:28:04.283Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9146500",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9146500/change-log",
+      "html": "<h1>0.2.4 Change Log</h1>\n<ul>\n<li>Added Battle Presentation support during battles.</li>\n<li>Added Pokémon rotation in the Cobblemon configuration screen.</li>\n<li>Added compatibility with Cobblemon 1.8.2.</li>\n<li>Added the Battle Scheduler Editor to manage field battles and integrate Scene Maker with Battle Presentation.</li>\n</ul>\n"
+    }
+  ]
+}

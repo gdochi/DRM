@@ -9,6 +9,7 @@ section: getting-started
 status: 사용 안내
 version: 0.2.8
 audience: 제작자 / 서버 운영자
+hiddenNav: true
 ---
 
 이 페이지는 **이전 버전의 변경 기록**입니다. 현재 설치와 사용법은 [DRM 0.3.1](#core-fabric/release-notes-0-3-1)을 따릅니다. 아래 현재 화면 예시는 과거 버전의 촬영 화면과 구분합니다.

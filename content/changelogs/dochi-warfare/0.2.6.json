@@ -1,0 +1,20 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.2.6",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:39.929Z",
+  "files": [
+    {
+      "id": 8813428,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_warfare-0.2.6.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8813428",
+      "uploadedAt": "2026-09-05T10:55:38.227Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8813428",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8813428/change-log",
+      "html": "<h1>0.2.6 Change Log</h1>\n<ul>\n<li>NPC pose optimization</li>\n<li>Booby trap optimization</li>\n<li>Data-related optimizations</li>\n<li>Vehicle detection logic optimization</li>\n</ul>"
+    }
+  ]
+}

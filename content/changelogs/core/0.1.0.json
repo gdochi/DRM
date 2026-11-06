@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.1.0",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:36.778Z",
+  "files": [
+    {
+      "id": 8250262,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.1.0.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/8250262",
+      "uploadedAt": "2026-06-15T00:32:18.753Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8250262",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8250262/change-log",
+      "html": "<h1>Dochi RPG Maker v0.1.0 Release Notes</h1>\n<p>Initial public release of Dochi RPG Maker, an in-game RPG maker toolkit for Forge 1.20.1 and CustomNPCs-based modpacks.</p>\n<h2>Added</h2>\n<ul>\n<li>Dialogue Editor for dialogue sets, nodes, routes, choices, conditions, and actions.</li>\n<li>GUI Maker for dialogue, shop, currency HUD, and RPG layout JSON editing.</li>\n<li>NPC Shop Editor for buy/sell shop JSON, shop GUI selection, item setup, stock, prices, and currency selection.</li>\n<li>Item-based Currency Editor with pickup absorption, balance display, price policies, death loss rules, and HUD settings.</li>\n<li>Currency HUD editing through JSON-backed GUI layout data.</li>\n<li>NPC Basic Editor for selected CustomNPCs NPCs, including display, faction, combat, AI, inventory, equipment, and drop table settings.</li>\n<li>Server-side JSON load, save, delete, and refresh workflow for multiplayer use.</li>\n<li>OP permission checks for server editing actions.</li>\n<li>Editor selection and NPC target workflows using the Dochi RPG Maker Core item.</li>\n<li>Early public API/registry structure for future editor and addon expansion.</li>\n</ul>\n<h2>Work in Progress</h2>\n<ul>\n<li>Bank and banker tools are experimental.</li>\n<li>Some CustomNPCs advanced systems may still need further polish.</li>\n<li>Addon-facing API compatibility is being improved over time.</li>\n</ul>\n<h2>Notes</h2>\n<p>Runtime data is stored in the <code>dochi_rpg_maker</code> folder. The internal mod id may still appear as <code>dochi_game_editor</code> for compatibility with earlier development builds.</p>\n"
+    }
+  ]
+}

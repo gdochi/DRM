@@ -9,6 +9,7 @@ section: getting-started
 status: Stable
 version: 0.1.9
 audience: Creators / Operators
+hiddenNav: true
 ---
 
 This is a historical release record. See [DRM 0.3.1](#core-fabric/release-notes-0-3-1) for current guidance.

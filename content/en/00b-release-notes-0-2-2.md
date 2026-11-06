@@ -9,6 +9,7 @@ section: getting-started
 status: Usage guide
 version: 0.2.2
 audience: Creators / operators
+hiddenNav: true
 ---
 
 ## Find editor favorites

@@ -11,6 +11,7 @@ version: 0.2.1
 audience: Créateurs / Opérateurs
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 :::note Record de sortie historique

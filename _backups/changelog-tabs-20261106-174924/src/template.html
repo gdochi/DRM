@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="DRM" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>DRM</title>
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("drm-docs-theme");
+          var theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          document.documentElement.dataset.theme = theme;
+        } catch (error) {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="./assets/docs-data.js"></script>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.2.4",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:36.129Z",
+  "files": [
+    {
+      "id": 9236773,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.2.4-1.20.1-forge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/9236773",
+      "uploadedAt": "2026-10-18T07:18:41.697Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9236773",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9236773/change-log",
+      "html": "<h1>0.2.4 Change Log</h1>\n<ul>\n<li>Improved and reorganized the Mods Config UI design.</li>\n<li>Significantly improved UI visibility and layout structure across all editors.</li>\n<li>Added compatibility with Dochi's NPC Core (in development). The mod is still under development.</li>\n<li>Expanded NPC Shops to support multiple items as payment.</li>\n<li>Fixed various UI layout issues caused by different GUI scale settings.</li>\n</ul>\n"
+    }
+  ]
+}

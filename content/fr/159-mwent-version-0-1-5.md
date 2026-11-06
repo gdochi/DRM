@@ -11,6 +11,7 @@ version: 0.1.5
 audience: Joueurs / créateurs
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 > Cette page conserve l’état de l’espace de travail local 0.1.5. La documentation de publication des nouvelles cartes et de leurs caractéristiques est regroupée dans [cartes et tactiques de la version 0.1.6](#mwent/version-0-1-6). Les 72 cartes ci-dessous sont les mêmes ajouts, pas un second ensemble.

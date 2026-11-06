@@ -14,6 +14,7 @@ tags:
   - changelog
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 

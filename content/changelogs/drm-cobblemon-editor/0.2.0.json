@@ -1,0 +1,32 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.2.0",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.439Z",
+  "files": [
+    {
+      "id": 8981151,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.0-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/8981151",
+      "uploadedAt": "2026-09-26T13:29:45.243Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8981151",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8981151/change-log",
+      "html": "<h1>0.2.0 Change Log</h1>\n<ul>\n<li>Added Trainer Battle support to the Quest Editor</li>\n<li>Improved the Battle Engine</li>\n</ul>\n"
+    },
+    {
+      "id": 9047015,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.0-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9047015",
+      "uploadedAt": "2026-10-03T12:46:59.503Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9047015",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9047015/change-log",
+      "html": "<h1>0.2.0 Change Log</h1>\n<ul>\n<li>Fixed an issue in the Trainer Editor's After Action where CobbleDollar was always set to Add.</li>\n<li>Added player inventory support to the Trainer Inventory, in addition to the world item list.</li>\n</ul>\n"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ version: 0.2.2
 audience: Creadores / operadores
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 ## Buscar favoritos del editor

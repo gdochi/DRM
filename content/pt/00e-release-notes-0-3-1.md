@@ -11,6 +11,7 @@ version: 0.3.1
 audience: Criadores / operadores de servidor
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 ## Adicionar nomes e rótulos ao diálogo

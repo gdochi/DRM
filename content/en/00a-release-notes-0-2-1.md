@@ -9,6 +9,7 @@ section: getting-started
 status: Stable
 version: 0.2.1
 audience: Creators / Operators
+hiddenNav: true
 ---
 
 :::note Historical release record

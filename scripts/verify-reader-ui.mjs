@@ -211,7 +211,7 @@ try {
     if (!docs.length) continue;
     await page.evaluate(locale => localStorage.setItem('drm-docs-locale', locale), locale);
     await page.reload();
-    for (const doc of docs) {
+    for (const doc of docs.filter(doc => doc.section !== 'releases')) {
       await page.setViewportSize({ width: 1440, height: 1000 });
       await go(`${origin}/#${doc.product}/${doc.slug}`);
       assert.equal(await page.locator('.doc-page-head h1').textContent(), doc.title, doc.sourcePath);

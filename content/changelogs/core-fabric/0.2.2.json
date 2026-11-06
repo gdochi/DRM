@@ -1,0 +1,20 @@
+{
+  "product": "core-fabric",
+  "version": "0.2.2",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:37.170Z",
+  "files": [
+    {
+      "id": 8911787,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.2.2-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/8911787",
+      "uploadedAt": "2026-09-18T13:30:37.293Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8911787",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8911787/change-log",
+      "html": "<h1>0.2.2 Change Log</h1>\n<ul>\n<li>Added a panel adjustment bar to the Scene Editor, added nodes, and improved the UI</li>\n<li>Added translation keys</li>\n<li>Other GeckoLib-related improvements</li>\n<li>Fixed a bug with flyout UI blocks.</li>\n<li>Added custom quest linking to the Go To action in the Dialogue Editor.</li>\n<li>Fixed a bug where the description could not be entered in the Quest Editor.</li>\n</ul>\n"
+    }
+  ]
+}

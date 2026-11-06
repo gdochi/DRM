@@ -1,0 +1,20 @@
+{
+  "product": "core-fabric",
+  "version": "0.2.6",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:36.993Z",
+  "files": [
+    {
+      "id": 9190180,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.2.6-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9190180",
+      "uploadedAt": "2026-10-15T11:36:32.78Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9190180",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9190180/change-log",
+      "html": "<h1>0.2.6 Change Log</h1>\n<ul>\n<li>Optimized the Admin system to eliminate unnecessary repetitive data processing during server startup and shutdown.</li>\n<li>Added config options to enable or disable Admin features and customize Admin data collection.</li>\n<li>Fixed an issue where DW and DWE were incorrectly displayed as DRM addons.</li>\n<li>Fixed a bug with the Quest Editor's visibility settings.</li>\n</ul>\n"
+    }
+  ]
+}

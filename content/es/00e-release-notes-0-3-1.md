@@ -11,6 +11,7 @@ version: 0.3.1
 audience: Creadores / operadores de servidores
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 ## Agregar nombres y etiquetas al diálogo

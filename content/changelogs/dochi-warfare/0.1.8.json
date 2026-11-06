@@ -1,0 +1,20 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.1.8",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:40.242Z",
+  "files": [
+    {
+      "id": 8322982,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "cnpc_tacz_fire-0.1.8.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8322982",
+      "uploadedAt": "2026-06-26T09:50:30.11Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8322982",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8322982/change-log",
+      "html": "<h2>0.1.8 Changelog</h2>\n<h3>Added</h3>\n<ul>\n<li>Added per-NPC FX settings for detected and shoot events.</li>\n<li>Added target-player-only sound playback for detected/shoot events.</li>\n<li>Added detected/shoot NPC say message settings.</li>\n<li>Added sound search, preview, volume, pitch, and delay controls.</li>\n<li>Added alert icon state syncing for suspicious/detected combat states.</li>\n<li>Added improved idle movement support, including area patrol, return-only, and route patrol behavior.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Reworked the NPC config GUI with clearer categories and quick navigation.</li>\n<li>Moved detected/shoot sound and message settings into a dedicated FX category.</li>\n<li>Reorganized AI, fire mode, movement, and distance-related settings.</li>\n<li>Removed separate Max Distance UI usage; Detect Distance is now the main distance control.</li>\n<li>Improved melee stance behavior so melee/ranged modes share the same combat flow more consistently.</li>\n<li>Navigation speed now uses the configured movement speed directly instead of silently reducing it.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>Fixed melee NPCs stopping or failing to approach after switching weapons.</li>\n<li>Fixed melee tactical step conflicts during melee stance.</li>\n<li>Fixed slow return/patrol movement caused by hidden navigation speed reduction.</li>\n<li>Fixed event sounds not reliably playing to the targeted player.</li>\n<li>Fixed several GUI layout overlap and clipping issues.</li>\n</ul>\n"
+    }
+  ]
+}

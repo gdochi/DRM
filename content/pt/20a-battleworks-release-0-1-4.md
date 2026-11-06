@@ -11,6 +11,7 @@ version: 0.1.4
 audience: Combater criadores de conteúdo
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 ## O 0.1.4 registro e orientação atual

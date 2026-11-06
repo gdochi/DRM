@@ -1,0 +1,494 @@
+{
+  "checkedAt": "2026-11-05T15:09:07.489Z",
+  "checks": [
+    "Build rejects 0.3.1 / 9378110: has no verified CurseForge upload.",
+    "Build rejects 0.3.0 / 9383985: file from another version or project.",
+    "Build rejects 0.3.0 / 9378110: must match its verified releaseVersion.",
+    "All five content languages publish exactly the verified latest version and exact file IDs for each of the eleven mod documentation products.",
+    "Retired release guides and the MWENT 0.1.5 development page are absent from public data and search.",
+    "A reader can expand the Changelog category from the setup guide and open the published version."
+  ],
+  "routes": [
+    {
+      "locale": "en",
+      "product": "mwent",
+      "slug": "releases",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "en",
+      "product": "core",
+      "slug": "changelog-0-3-0",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 1
+    },
+    {
+      "locale": "en",
+      "product": "core-fabric",
+      "slug": "changelog-0-3-0",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "en",
+      "product": "dochi-mapicon-integration",
+      "slug": "changelog-0-1-2",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "en",
+      "product": "dochi-minigames",
+      "slug": "changelog-0-1-6",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "en",
+      "product": "dochi-npc-core",
+      "slug": "changelog-0-1-2",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "en",
+      "product": "dochi-real-armor",
+      "slug": "changelog-0-1-4",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "en",
+      "product": "dochi-spawn-control",
+      "slug": "changelog-0-1-5",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "en",
+      "product": "dochi-warfare",
+      "slug": "changelog-0-3-1",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "en",
+      "product": "dochi-warfare-expanded",
+      "slug": "changelog-0-3-1",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "en",
+      "product": "drm-cobblemon-editor",
+      "slug": "changelog-0-2-8",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "en",
+      "product": "mob-editor",
+      "slug": "changelog-0-1-6",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "pt",
+      "product": "mwent",
+      "slug": "releases",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "pt",
+      "product": "core",
+      "slug": "changelog-0-3-0",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 1
+    },
+    {
+      "locale": "pt",
+      "product": "core-fabric",
+      "slug": "changelog-0-3-0",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "pt",
+      "product": "dochi-mapicon-integration",
+      "slug": "changelog-0-1-2",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "pt",
+      "product": "dochi-minigames",
+      "slug": "changelog-0-1-6",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "pt",
+      "product": "dochi-npc-core",
+      "slug": "changelog-0-1-2",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "pt",
+      "product": "dochi-real-armor",
+      "slug": "changelog-0-1-4",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "pt",
+      "product": "dochi-spawn-control",
+      "slug": "changelog-0-1-5",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "pt",
+      "product": "dochi-warfare",
+      "slug": "changelog-0-3-1",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "pt",
+      "product": "dochi-warfare-expanded",
+      "slug": "changelog-0-3-1",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "pt",
+      "product": "drm-cobblemon-editor",
+      "slug": "changelog-0-2-8",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "pt",
+      "product": "mob-editor",
+      "slug": "changelog-0-1-6",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "es",
+      "product": "mwent",
+      "slug": "releases",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "es",
+      "product": "core",
+      "slug": "changelog-0-3-0",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 1
+    },
+    {
+      "locale": "es",
+      "product": "core-fabric",
+      "slug": "changelog-0-3-0",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "es",
+      "product": "dochi-mapicon-integration",
+      "slug": "changelog-0-1-2",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "es",
+      "product": "dochi-minigames",
+      "slug": "changelog-0-1-6",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "es",
+      "product": "dochi-npc-core",
+      "slug": "changelog-0-1-2",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "es",
+      "product": "dochi-real-armor",
+      "slug": "changelog-0-1-4",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "es",
+      "product": "dochi-spawn-control",
+      "slug": "changelog-0-1-5",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "es",
+      "product": "dochi-warfare",
+      "slug": "changelog-0-3-1",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "es",
+      "product": "dochi-warfare-expanded",
+      "slug": "changelog-0-3-1",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "es",
+      "product": "drm-cobblemon-editor",
+      "slug": "changelog-0-2-8",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "es",
+      "product": "mob-editor",
+      "slug": "changelog-0-1-6",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "fr",
+      "product": "mwent",
+      "slug": "releases",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "fr",
+      "product": "core",
+      "slug": "changelog-0-3-0",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 1
+    },
+    {
+      "locale": "fr",
+      "product": "core-fabric",
+      "slug": "changelog-0-3-0",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "fr",
+      "product": "dochi-mapicon-integration",
+      "slug": "changelog-0-1-2",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "fr",
+      "product": "dochi-minigames",
+      "slug": "changelog-0-1-6",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "fr",
+      "product": "dochi-npc-core",
+      "slug": "changelog-0-1-2",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "fr",
+      "product": "dochi-real-armor",
+      "slug": "changelog-0-1-4",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "fr",
+      "product": "dochi-spawn-control",
+      "slug": "changelog-0-1-5",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "fr",
+      "product": "dochi-warfare",
+      "slug": "changelog-0-3-1",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "fr",
+      "product": "dochi-warfare-expanded",
+      "slug": "changelog-0-3-1",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "fr",
+      "product": "drm-cobblemon-editor",
+      "slug": "changelog-0-2-8",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "fr",
+      "product": "mob-editor",
+      "slug": "changelog-0-1-6",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "ko",
+      "product": "mwent",
+      "slug": "releases",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "ko",
+      "product": "core",
+      "slug": "changelog-0-3-0",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 1
+    },
+    {
+      "locale": "ko",
+      "product": "core-fabric",
+      "slug": "changelog-0-3-0",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "ko",
+      "product": "dochi-mapicon-integration",
+      "slug": "changelog-0-1-2",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "ko",
+      "product": "dochi-minigames",
+      "slug": "changelog-0-1-6",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "ko",
+      "product": "dochi-npc-core",
+      "slug": "changelog-0-1-2",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "ko",
+      "product": "dochi-real-armor",
+      "slug": "changelog-0-1-4",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "ko",
+      "product": "dochi-spawn-control",
+      "slug": "changelog-0-1-5",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    },
+    {
+      "locale": "ko",
+      "product": "dochi-warfare",
+      "slug": "changelog-0-3-1",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "ko",
+      "product": "dochi-warfare-expanded",
+      "slug": "changelog-0-3-1",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "ko",
+      "product": "drm-cobblemon-editor",
+      "slug": "changelog-0-2-8",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 2
+    },
+    {
+      "locale": "ko",
+      "product": "mob-editor",
+      "slug": "changelog-0-1-6",
+      "desktop": "passed",
+      "mobile": "passed",
+      "fileLinks": 5
+    }
+  ],
+  "errors": []
+}

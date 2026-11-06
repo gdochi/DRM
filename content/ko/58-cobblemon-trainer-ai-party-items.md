@@ -196,4 +196,4 @@ DRM Strategy는 실제 능력치 변화와 현재 전장을 기준으로 강화�
 
 기술 찾기는 등록된 전체 기술을 제공하고 일반·이벤트·과거 습득 기술을 우선 정렬합니다. 목록 선택이 종별 정상 습득이나 임의의 제공 모드 기술 실행을 보증하지는 않습니다. 기믹이 없으면 키 아이템·권한·정책과 호환 제공 모드를 먼저 확인하세요.
 
-[0.2.7 호환 범위](#drm-cobblemon-editor/cobblemon-editor-current-update)에서 실제 시험한 Cobblemon 버전을 확인할 수 있습니다.
+공개된 변경 사항: [0.2.8 Change Log](#drm-cobblemon-editor/changelog-0-2-8).

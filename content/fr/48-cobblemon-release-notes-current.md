@@ -11,6 +11,7 @@ version: Fabric / NeoForge 0.2.9
 audience: Créateurs / Opérateurs
 translationSource: en
 translationMethod: assisted
+hiddenNav: true
 ---
 
 ## Récompenses après le dialogue

@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.2.3",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:36.147Z",
+  "files": [
+    {
+      "id": 9190174,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.2.3-1.20.1-forge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/9190174",
+      "uploadedAt": "2026-10-15T11:35:15.763Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9190174",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9190174/change-log",
+      "html": "<h1>0.2.3 Change Log</h1>\n<ul>\n<li>Optimized the Admin system to eliminate unnecessary repetitive data processing during server startup and shutdown.</li>\n<li>Added config options to enable or disable Admin features and customize Admin data collection.</li>\n<li>Fixed an issue where DW and DWE were incorrectly displayed as DRM addons.</li>\n<li>Fixed a bug with the Quest Editor's visibility settings.</li>\n</ul>\n"
+    }
+  ]
+}

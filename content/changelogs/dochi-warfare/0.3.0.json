@@ -1,0 +1,32 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.3.0",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:39.717Z",
+  "files": [
+    {
+      "id": 9069389,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_warfare-0.3.0.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/9069389",
+      "uploadedAt": "2026-10-05T13:27:03.697Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9069389",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9069389/change-log",
+      "html": "<h1>0.3.0 Change Log</h1>\n<ul>\n<li>Vehicle-related AI has been separated into Dochi’s Warfare Expanded.</li>\n</ul>\n"
+    },
+    {
+      "id": 9118395,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_warfare-0.3.0-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/9118395",
+      "uploadedAt": "2026-10-10T14:08:19.927Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9118395",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9118395/change-log",
+      "html": "<h1>0.3.0 Change Log</h1>\n<ul>\n<li>Ported the Forge 0.3.0 version to NeoForge.</li>\n</ul>\n"
+    }
+  ]
+}

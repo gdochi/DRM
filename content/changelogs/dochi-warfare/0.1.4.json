@@ -1,0 +1,20 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.1.4",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:40.392Z",
+  "files": [
+    {
+      "id": 8196985,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "cnpc_tacz_fire-0.1.4.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8196985",
+      "uploadedAt": "2026-06-04T17:12:48.703Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8196985",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8196985/change-log",
+      "html": "<p>0.1.4. Changelog</p>\n<p>Fixes</p>\n<ul>\n<li>Fixed NPC gun damage calculation when Pillager’s Gun is installed.</li>\n<li>Fixed animation errors when NPCs attack with an empty hand.</li>\n<li>Fixed several NPC firearm and combat animation playback issues.</li>\n<li>Fixed NPCs freezing in mid-air while reloading after knockback or while in water.</li>\n</ul>\n<p>Added / Improved</p>\n<ul>\n<li>Improved GUI readability, layout, and overall usability.</li>\n<li>Added item rendering for grenade selection.</li>\n<li>Added Advanced Stance rules, allowing NPC combat behavior to change based on health, target faction, target tags, and target entity IDs.</li>\n<li>Added multi-select support for Advanced target factions, tags, and entity IDs.</li>\n<li>Added default/general fallback behavior for Advanced Stance mode.</li>\n<li>Added empty-hand attack animation support.</li>\n<li>Added configurable NPC default movement speed.</li>\n<li>Added stored weapon removal controls for gun and melee weapon settings.</li>\n<li>Added Chinese and Japanese language support.</li>\n</ul>"
+    }
+  ]
+}

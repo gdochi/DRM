@@ -63,6 +63,6 @@ Disponible en Fabric et NeoForge avec niveau d'autorisation 2.
 
 Les quêtes créées dans l'éditeur actuel utilisent la complétion automatique sur les deux chargeurs. Lors de la migration de l'ancien JSON avec `completionMode: turn_in`, Fabric conserve l'activation manuelle tandis que NeoForge se termine automatiquement. Vérifiez le moment de la récompense lors de l'importation de ces données héritées.
 
-Changements actuels: [ DRM 0.3.1 ](#core-fabric/release-notes-0-3-1).
+Changements actuels: [ DRM 0.3.1 ](#core-fabric/changelog-0-3-0).
 
 Minecraft 26.3 utilise des builds Java 25 séparés. Voir [26.3 et exclusions](#core-fabric/minecraft-26-3).

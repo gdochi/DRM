@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.1.2",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:36.568Z",
+  "files": [
+    {
+      "id": 8333387,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.1.2.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/8333387",
+      "uploadedAt": "2026-06-28T07:32:56.483Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8333387",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8333387/change-log",
+      "html": "<h1>Changelog 0.1.2</h1>\n<h2>Currency Editor</h2>\n<ul>\n<li>Completely reworked the Currency Editor structure.</li>\n<li>Added an option to choose whether designated items are automatically converted into currency.</li>\n<li>Fixed multiple bugs related to the Currency Editor.</li>\n</ul>\n<h2>Fixes</h2>\n<ul>\n<li>Fixed an issue where NPC textures would break when editing NPCs that use player skin URLs.</li>\n<li>Fixed missing item tooltip rendering in the NPC Shop Editor.</li>\n</ul>\n"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "product": "core-fabric",
+  "version": "0.2.9",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:36.779Z",
+  "files": [
+    {
+      "id": 9348612,
+      "loader": "Fabric",
+      "minecraft": "26.3",
+      "name": "dochi_rpg_maker-0.2.9-fabric-26.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9348612",
+      "uploadedAt": "2026-10-28T01:37:24.54Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9348612",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9348612/change-log",
+      "html": "<h1>0.2.9 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Updated the keybind organization across Dochi's mods to ensure they are displayed in a consistent order.</li>\n</ul>\n"
+    },
+    {
+      "id": 9349542,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.2.9-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9349542",
+      "uploadedAt": "2026-10-28T04:45:27.933Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9349542",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9349542/change-log",
+      "html": "<h1>0.2.9 Change Log</h1>\n<ul>\n<li>Completely removed CustomNPCs (CNPC) as a required dependency.</li>\n<li>Updated the keybind organization across Dochi's mods to ensure they are displayed in a consistent order.</li>\n<li>Updated Creative Mode tab behavior to support DNPC integration.</li>\n<li>Fabric/NeoForge only:\n<ul>\n<li>Added the ability to delete trainer battle logs.</li>\n<li>Added a cleanup feature for battle data associated with despawned trainers.</li>\n</ul>\n</li>\n</ul>"
+    }
+  ]
+}

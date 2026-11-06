@@ -1,0 +1,20 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.1.3",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:40.399Z",
+  "files": [
+    {
+      "id": 8174753,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "cnpc_tacz_fire-0.1.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8174753",
+      "uploadedAt": "2026-05-31T12:52:41.497Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8174753",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8174753/change-log",
+      "html": "<p><img src=\"\"></p>\n<p>## Changelog</p>\n<p>### Added<br>- TACZ Fire NPC mode so only configured NPCs are controlled by the mod<br>- Configurable attack target entity rules with entity ID selection<br>- Target import/export support<br>- Target filtering by search, checked state, and mod ID<br>- Vanilla scoreboard tag-based target conditions<br>- Same-faction tag targeting option<br>- Default walking speed control<br>- NPC core item texture</p>\n<p>### Improved<br>- UI layout and controls<br>- Target validation to use visible targets<br>- Performance by limiting target scans to relevant managed NPCs and attack ranges</p>\n<p>### Fixed<br>- Magazine placement issues in armor/offhand slots<br>- NPC death pose behavior</p>"
+    }
+  ]
+}

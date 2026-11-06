@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.1.6",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:36.403Z",
+  "files": [
+    {
+      "id": 8843848,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.1.6-1.20.1-forge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/8843848",
+      "uploadedAt": "2026-09-09T13:01:00.193Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8843848",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8843848/change-log",
+      "html": "<h1>0.1.6 Change Log</h1>\n<h2>Changed</h2>\n<ul>\n<li>Unified the top menu and navigation UI across editors.</li>\n<li>Improved the UI and usability of the configuration screen and various editors.</li>\n<li>Improved item tooltip model rendering and NPC GeckoLib animation handling.</li>\n</ul>\n<h2>Added</h2>\n<ul>\n<li>Added shared hover help for editors.</li>\n<li>Added a player head HUD component.</li>\n<li>Added popup layout, viewport cropping, and JSON list request state management.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fixed rendering, buffer, and stencil issues in TaCZ gun tooltips.</li>\n<li>Fixed NPC model preview and animation synchronization issues.</li>\n<li>Fixed layout, selection, and display issues across editor screens.</li>\n</ul>\n"
+    }
+  ]
+}

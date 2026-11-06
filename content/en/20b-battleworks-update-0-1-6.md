@@ -9,6 +9,7 @@ section: start
 status: Guide
 version: 0.1.6
 audience: Creators / server operators
+hiddenNav: true
 ---
 
 ## Required mods

@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.1.9",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:36.344Z",
+  "files": [
+    {
+      "id": 8911839,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.1.9-1.20.1-forge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/8911839",
+      "uploadedAt": "2026-09-18T13:34:24.417Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8911839",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8911839/change-log",
+      "html": "<h1>0.1.9 Change Log</h1>\n<ul>\n<li>Improved Stat Builder panel components</li>\n<li>Fixed the Stat Builder save bug</li>\n<li>Fixed config policy conflicts with Dochi's Warfare</li>\n<li>Improved DRM addon policy in Mods Config</li>\n<li>Improved the Remnant Message UI</li>\n<li>Fixed the Faction Editor not working in a server environment</li>\n<li>Fixed GeckoLib compatibility options not being selectable in the Dialogue Editor</li>\n<li>Fixed GeckoLib animations not playing in the Dialogue Editor</li>\n<li>Added many missing translation keys</li>\n</ul>\n"
+    }
+  ]
+}

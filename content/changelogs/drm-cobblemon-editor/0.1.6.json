@@ -1,0 +1,32 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.1.6",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.687Z",
+  "files": [
+    {
+      "id": 8843667,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.1.6-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/8843667",
+      "uploadedAt": "2026-09-09T12:32:15.377Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8843667",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8843667/change-log",
+      "html": "<h1>0.1.6 Change Log</h1>\n<h2>Changed</h2>\n<ul>\n<li>Redesigned the Battle Rules editor into a clear three-panel workspace.</li>\n<li>Merged Level Rules into Battle Setup.</li>\n<li>Changed item rule editing to checkbox selection with search and multi-mod filters.</li>\n</ul>\n<h2>Added</h2>\n<ul>\n<li>Added common rules and per-round rule overrides.</li>\n<li>Added Singles, Doubles, Triples, and Lead Duel battle formats.</li>\n<li>Added controls for levels, battle items, held items, Legendary Pokemon, battle gimmicks, and lead selection.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fixed battle item restrictions for bag items, revives, and capture items.</li>\n<li>Fixed rule state when switching rounds or returning to common rules.</li>\n<li>Fixed editor navigation, layout overlap, and localized text display.</li>\n</ul>\n"
+    },
+    {
+      "id": 8850544,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.1.6-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/8850544",
+      "uploadedAt": "2026-09-10T12:56:22.093Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8850544",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8850544/change-log",
+      "html": "<h1>0.1.6 Changelog</h1>\n<ul>\n<li>Ported the <strong>Fabric 0.1.6</strong> version to <strong>NeoForge</strong>.</li>\n</ul>\n"
+    }
+  ]
+}

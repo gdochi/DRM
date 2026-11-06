@@ -1,0 +1,20 @@
+{
+  "product": "core-fabric",
+  "version": "0.1.9",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:37.224Z",
+  "files": [
+    {
+      "id": 8819716,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.1.9-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/8819716",
+      "uploadedAt": "2026-09-06T05:37:09.353Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8819716",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8819716/change-log",
+      "html": "<h2>Change Log 0.1.9</h2>\n<h3>Added</h3>\n<ul>\n<li><strong>Scene Maker</strong> — Create camera tours and story scenes inside Minecraft. Arrange camera movement, subtitles, images, sounds, fades, cinematic bars, and camera shake on a timeline.</li>\n<li><strong>World camera points</strong> — Place points while looking around your world. Grab a diamond-shaped pin with the mouse to move it directly.</li>\n<li><strong>Editable camera routes</strong> — Use straight or smooth paths and add points between existing ones to shape the camera’s journey.</li>\n<li><strong>Scene playback commands</strong> — Use <code>/drm scene</code> to see playable scenes. The next argument suggests saved scenes, making them easier to start.</li>\n<li><strong>Back and forward arrows</strong> — Move between editor screens from the shared topbar. Hover over an arrow to see what it does.</li>\n</ul>\n<h3>Improved</h3>\n<ul>\n<li><strong>Timeline browsing</strong> — A separate bottom scrollbar lets you look through a long scene without moving its playback marker.</li>\n<li><strong>Card editing</strong> — Right-click a timeline card to find actions such as split and delete. Available actions depend on the card type.</li>\n<li><strong>Easier settings</strong> — Choose options from lists, use switches for on/off settings, and select colors with the color picker.</li>\n<li><strong>World editing</strong> — Camera movement feels smoother, camera paths are clearer, and solid diamond pins are easier to recognize.</li>\n<li><strong>Point controls</strong> — Clicking a pin selects it. Right-click it to move the camera there, move the point to the camera, edit its outgoing path, or delete it.</li>\n<li><strong>Safe dragging</strong> — Release the mouse to keep a point move, or press Esc/right-click to cancel that move. A completed drag can be undone in one step.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>Clicking timeline cards no longer makes the playback marker jump.</li>\n<li>Adding scene elements is more reliable.</li>\n<li>Dimension names and timeline time labels stay within their intended areas.</li>\n<li>Applying world-position edits keeps the points you arranged instead of moving the selected point to the viewing camera.</li>\n<li>The Save As toolbar action uses its proper icon.</li>\n</ul>\n"
+    }
+  ]
+}

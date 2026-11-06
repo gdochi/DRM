@@ -9,6 +9,7 @@ section: start
 status: Usage guide
 version: 0.1.4
 audience: Combat content creators
+hiddenNav: true
 ---
 
 ## The 0.1.4 record and current guidance

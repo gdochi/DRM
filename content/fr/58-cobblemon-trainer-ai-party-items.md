@@ -76,4 +76,4 @@ DRM Strategy évalue les étapes de statistiques réelles et le champ actuel pou
 
 La recherche de mouvement inclut chaque mouvement enregistré, triant les mouvements normaux, d'événement et passés en premier. La sélection n'établit pas la capacité d'apprentissage des espèces ni ne garantit un comportement arbitraire du fournisseur. Vérifiez les autorisations, les politiques, les éléments clés et les fournisseurs compatibles.
 
-Voir [0.2.7 compatibilité](#drm-cobblemon-editor/cobblemon-editor-current-update) pour les Cobblemon Versions effectivement utilisées.
+Modifications publiées: [0.2.8 Change Log](#drm-cobblemon-editor/changelog-0-2-8).

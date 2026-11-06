@@ -19,7 +19,7 @@ Comience con un preajuste e inspeccione sus tarjetas a la derecha. **Use this de
 
 ![Coro acompañante de Avalin con filtros de facción, estrategia y mod.](assets/media/guides/minigames-016-neo1211/mwent016-faction-select.png "Minijuegos 0.1.6 / NeoForge 1.21.1, Inglés UI. Usa Todas las facciones para reducir la lista e inspeccionar las cartas de la derecha. No se pueden seleccionar preajustes de mod opcional bloqueados porque sus proveedores están ausentes en este caso.")
 
-Una baraja combina su facción elegida con cartas neutrales. Hay cuatro preajustes básicos por facción, 24 en total y tres opciones de líder por facción. Las estrategias centrales a continuación ya estaban presentes en la carga 0.1.1. Ver [0.1.5 cambios](#mwent/version-0-1-5) para nuevos escenarios, ubicaciones, trampas y cartas de asedio.
+Una baraja combina su facción elegida con cartas neutrales. Hay cuatro preajustes básicos por facción, 24 en total y tres opciones de líder por facción. Las estrategias centrales a continuación ya estaban presentes en la carga 0.1.1. Ver [0.1.6 cambios](#mwent/version-0-1-6) para nuevos escenarios, ubicaciones, trampas y cartas de asedio.
 
 | Facción | Principales sinergias | Contrajuego |
 | --- | --- | --- |

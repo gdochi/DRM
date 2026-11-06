@@ -1,0 +1,20 @@
+{
+  "product": "core-fabric",
+  "version": "0.2.8",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:36.953Z",
+  "files": [
+    {
+      "id": 9309060,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.2.8-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9309060",
+      "uploadedAt": "2026-10-24T12:36:56.67Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9309060",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9309060/change-log",
+      "html": "<h1>0.2.8 Change Log</h1>\n<h2>Added</h2>\n<ul>\n<li>Added double-click shortcuts for supported built-in editors.</li>\n<li>Added hidden markers and persistent once-per-player triggers for Remnant Messages.</li>\n<li>Added checkbox-based multi-selection, Select All, bulk deletion, and copy/paste support across supported editor lists.</li>\n<li>Added trainer progress inspection and victory-count resets to Admin tools. Requires a compatible Cobble NPC addon on Fabric or NeoForge.</li>\n<li>Added progress feedback for Admin batch operations.</li>\n</ul>\n<h2>Improved</h2>\n<ul>\n<li>Changed CustomNPCs from a required dependency to an optional dependency.</li>\n<li>Relaxed version restrictions for optional integrations.</li>\n<li>Reworked layouts, navigation, panel boundaries, and control placement across many editors.</li>\n<li>Improved text wrapping, scrolling, overflow handling, and dropdown sizing.</li>\n<li>Improved dialogue node, choice, condition, and action editing.</li>\n<li>Improved quest hierarchy display, action configuration, target selection, and JSON pickers.</li>\n<li>Improved item, image, sound, and color pickers, including filtering and parent-screen visibility.</li>\n<li>Improved NPC Apply filters and Mods Config navigation.</li>\n<li>Improved item lore formatting and Stat Builder previews on Forge and NeoForge.</li>\n<li>Improved Korean terminology and corrected missing or unresolved UI translations.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fixed duplicate labels, clipped text, overlapping controls, and mismatched input bounds.</li>\n<li>Fixed Forge crashes involving multiline input and dialogue node dragging.</li>\n<li>Fixed Remnant Message editor crashes and once-per-player trigger behavior.</li>\n<li>Fixed selection state being lost during editor updates.</li>\n<li>Fixed tag toggle actions and several quest action configuration issues.</li>\n<li>Fixed invisible dialogue load-list names and untranslated addon titles on Forge.</li>\n</ul>\n<h2>Performance</h2>\n<ul>\n<li>Reduced repeated GUI preview preparation and unnecessary component processing.</li>\n<li>Improved caching for editor searches, NPC previews, and Admin lists.</li>\n<li>Reduced redundant data transfers during Admin batch operations.</li>\n</ul>\n"
+    }
+  ]
+}

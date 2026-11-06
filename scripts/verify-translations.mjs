@@ -21,7 +21,12 @@ for (const locale of ['pt', 'es', 'fr']) {
   assert(!/[\u2047\ufffd]/u.test(JSON.stringify(copy)), `Damaged interface translation: ${locale}`);
   assert.equal(data[locale].length, data.en.length, `Missing documents: ${locale}`);
   const filenames = await readdir(path.join(root, 'content', locale));
-  assert.equal(filenames.filter(file => file.endsWith('.md')).length, data.en.length);
+  const visibleFiles = await Promise.all(filenames.filter(file => file.endsWith('.md')).map(async file => {
+    const source = await readFile(path.join(root, 'content', locale, file), 'utf8');
+    const metadata = source.replace(/\r\n/g, '\n').split('\n---\n')[0];
+    return !/^hiddenNav:\s*true\s*$/m.test(metadata);
+  }));
+  assert.equal(visibleFiles.filter(Boolean).length, data.en.length);
   for (const source of data.en) {
     const doc = data[locale].find(doc => doc.slug === source.slug && doc.product === source.product);
     assert(doc, `Missing route: ${locale}/${source.product}/${source.slug}`);

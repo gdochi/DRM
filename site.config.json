@@ -296,7 +296,7 @@
       "logoAlt_ja": "Dochi's Spawn Control ロゴ",
       "type": "standalone",
       "product": "dochi-spawn-control",
-      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-controll"
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control"
     },
     {
       "id": "dochi-real-armor",
@@ -320,7 +320,7 @@
       "logoAlt_ja": "Dochi's Real Armor ロゴ",
       "type": "standalone",
       "product": "dochi-real-armor",
-      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/cnpc-real-armor"
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor"
     },
     {
       "id": "dochi-minigames",
@@ -582,6 +582,25 @@
           "description_ru": "Справочник JSON, поток данных и рабочие процессы.",
           "description_zh": "JSON 参考、数据流和工作流程。",
           "description_ja": "JSONリファレンス、データフロー、作業フロー。"
+        },
+        {
+          "id": "releases",
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     },
@@ -765,6 +784,25 @@
           "label_ja": "Scene Maker",
           "description": "Move the camera and time a scene in your world.",
           "description_ko": "카메라 이동과 장면의 재생 순서를 만듭니다."
+        },
+        {
+          "id": "releases",
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     },
@@ -818,6 +856,25 @@
           "label_ko": "파일과 테스트",
           "description": "Keep and share patterns or diagnose an attack that fails.",
           "description_ko": "패턴을 보관·공유하고 공격이 작동하지 않는 원인을 찾습니다."
+        },
+        {
+          "id": "releases",
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     },
@@ -946,6 +1003,25 @@
           "description_ru": "Пути хранения, защищённые шаблоны, приоритет взаимодействий и проверки.",
           "description_zh": "存储路径、受保护模板、交互优先级和检查方法。",
           "description_ja": "保存先、保護テンプレート、インタラクション優先順位、確認方法。"
+        },
+        {
+          "id": "releases",
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     },
@@ -1093,6 +1169,25 @@
           "description_ru": "Устранение неполадок и эксплуатационные проверки.",
           "description_zh": "故障排查和运维检查。",
           "description_ja": "トラブルシューティングと運用チェック。"
+        },
+        {
+          "id": "releases",
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     },
@@ -1175,6 +1270,25 @@
           "description_ru": "Сохранение, загрузка, пути, диагностика, команды и устранение неполадок.",
           "description_zh": "保存与加载策略、文件路径、诊断、命令、分享与故障排查。",
           "description_ja": "保存・読込方針、ファイルパス、診断、コマンド、共有、トラブル対処。"
+        },
+        {
+          "id": "releases",
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     },
@@ -1244,6 +1358,25 @@
           "description_ru": "Команды администратора, диагностика и проверка совместимости.",
           "description_zh": "管理员命令、诊断与兼容性检查。",
           "description_ja": "管理者コマンド、診断、互換性チェック。"
+        },
+        {
+          "id": "releases",
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     },
@@ -1276,6 +1409,25 @@
           "label_ko": "폭격·증원 타임라인",
           "description": "Time bombing and reinforcement requests.",
           "description_ko": "폭격·증원 요청의 시점과 순서를 정합니다."
+        },
+        {
+          "id": "releases",
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     },
@@ -1315,6 +1467,25 @@
           "label_ko": "GUI와 파일",
           "description": "Find saved files, move work and fix problems.",
           "description_ko": "저장한 파일을 찾거나 옮기고 문제를 해결합니다."
+        },
+        {
+          "id": "releases",
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     },
@@ -1347,6 +1518,25 @@
           "label_ko": "파일과 문제 해결",
           "description": "Find saved files, move work and fix problems.",
           "description_ko": "저장한 파일을 찾거나 옮기고 문제를 해결합니다."
+        },
+        {
+          "id": "releases",
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     },
@@ -1379,6 +1569,25 @@
           "label_ko": "파일과 연동",
           "description": "Find saved files, move work and fix problems.",
           "description_ko": "저장한 파일을 찾거나 옮기고 문제를 해결합니다."
+        },
+        {
+          "id": "releases",
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     },
@@ -1414,10 +1623,22 @@
         },
         {
           "id": "releases",
-          "label": "Release History",
-          "label_ko": "버전별 변경",
-          "description": "Find cards added or changed in each version.",
-          "description_ko": "버전별로 추가·변경된 카드를 찾습니다."
+          "label": "Changelog",
+          "description": "Changes published on CurseForge.",
+          "label_ko": "체인지로그",
+          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "label_pt": "Histórico de alterações",
+          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "label_es": "Registro de cambios",
+          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "label_fr": "Historique des modifications",
+          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "label_ru": "Список изменений",
+          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "label_zh": "更新日志",
+          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "label_ja": "更新履歴",
+          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
         }
       ]
     }

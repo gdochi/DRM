@@ -19,8 +19,6 @@ La version 0.1.6 ajoute **60 cartes de faction et 12 cartes de siège, soit 72 a
 
 La puissance, les provisions, les cadres, les raretés et les anciennes définitions de Deploy, Order et mots-clés des cartes existantes sont conservés. Les tableaux ci-dessous indiquent puissance / provisions, cadre, rareté et capacités de chaque nouvelle carte. Les instructions des tactiques précèdent les caractéristiques des cartes de faction et de siège.
 
-Les 72 cartes auparavant consignées dans l’espace de travail local 0.1.5 sont regroupées dans le registre de la version 0.1.6. Il ne s’agit pas de 72 cartes supplémentaires ajoutées une seconde fois. Les versions originales des fichiers et des captures restent dans le [registre de travail 0.1.5](#mwent/version-0-1-5).
-
 ## Choisir avant le match
 
 Une tactique d’ouverture est une **outil à usage unique pour le joueur qui passe en premier au premier tour**. Ouvrez sa liste ci-dessous le leader dans le constructeur de deck. À partir d'un préréglage, suivez **Use this deck → choose a tactic → Begin match**. Sauvegarder votre deck conserve son choix tactique pour un chargement ultérieur.
@@ -52,9 +50,7 @@ Les tactiques inutilisées disparaissent lors du nettoyage du premier tour. Ils 
 
 ## Changements connexes
 
-Cette page regroupe les caractéristiques des cartes et les changements des tactiques d’ouverture. L’ancien [espace de travail 0.1.5](#mwent/version-0-1-5) reste un registre historique. La même mise à jour de Minigames ajoute la [Roulette d’objets](#dochi-minigames/minigames-roulette), un jeu distinct.
-
-Ce guide vérifie les fichiers de production locaux 0.1.6 datés de novembre 1. [L'historique de publication](#mwent/releases) distingue les téléchargements publics vérifiés. Poursuivre avec [comment jouer](#mwent/how-to-play) ou [collections et decks](#mwent/cards-decks).
+Version publiée sur CurseForge les 3–4 novembre 2026. [CurseForge](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9432406) · [Historique des modifications](#mwent/releases) · [MWENT](#mwent/how-to-play) · [Cards](#mwent/cards-decks)
 
 ## Ajout de mécaniques
 

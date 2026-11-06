@@ -1,0 +1,20 @@
+{
+  "product": "dochi-spawn-control",
+  "version": "0.1.0",
+  "projectId": 1665161,
+  "checkedAt": "2026-11-06T08:49:41.462Z",
+  "files": [
+    {
+      "id": 8730654,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_spawn_control-0.1.0.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control/files/8730654",
+      "uploadedAt": "2026-08-25T11:25:33.49Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1665161/files/8730654",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1665161/files/8730654/change-log",
+      "html": "<div>\n<div># dochi spawn control 0.1.0</div>\n<br>\n<div>## Initial Release</div>\n<br>\n<div>The first public release of **dochi spawn control** for Minecraft Forge 1.20.1.</div>\n<br>\n<div>### Added</div>\n<br>\n<div>- Server-authoritative natural spawn profiles for registered living mob types.</div>\n<div>- Optional CustomNPCs server-clone targets and clone spawning.</div>\n<div>- In-game editor with entity catalog search, target preview, profile inspector, bulk selection, filtering, and sorting.</div>\n<div>- Target-owned profile views that prevent rules from appearing under unrelated entities.</div>\n<div>- Dimension, biome, height, light, time, and player-distance conditions.</div>\n<div>- Spawn chance, interval, group size, radius, position-attempt, and placement controls.</div>\n<div>- Surface, cave, air, and water placement modes.</div>\n<div>- Per-profile, target, shared-group, player, chunk, dimension, and server population caps.</div>\n<div>- Persistent, maximum-lifetime, and no-nearby-player despawn policies.</div>\n<div>- Per-entity native spawn policy for Forge natural and chunk-generation spawns.</div>\n<div>- Full-set and per-target presets with replace, merge-by-ID, and keep-both conflict handling.</div>\n<div>- Server-side JSON validation, atomic saving, backups, and reusable preset storage.</div>\n<div>- Current-location diagnostics, confirmed test spawning, managed-entity statistics, and cleanup tools.</div>\n<div>- English and Korean interface localization.</div>\n<div>- Optional integration with Dochi RPG Maker 0.1.4+, CustomNPCs 1.20.1+, and Dochi Warfare 0.2.5+.</div>\n<br>\n<div>### Fixed Before Release</div>\n<br>\n<div>- Selecting a new entity now clears an unrelated previous profile selection.</div>\n<div>- The default profile list only shows rules owned by the selected target.</div>\n<div>- Selecting a rule from the all-configured view moves the catalog to that rule's real target.</div>\n<br>\n<div>### Important Notes</div>\n<br>\n<div>- Install the same JAR on the client and server.</div>\n<div>- Editing requires permission level 2 or creative-mode access.</div>\n<div>- Native spawn blocking affects `NATURAL` and `CHUNK_GENERATION`; it does not globally block commands, spawners, structures, breeding, buckets, or scripted spawning.</div>\n<div>- CustomNPCs clone presets reference existing clone data. The matching clone must be distributed separately.</div>\n<div>- Back up `&lt;world&gt;/serverconfig/dochi_rpg_maker/spawn_control/` before replacing an important server configuration.</div>\n</div>"
+    }
+  ]
+}

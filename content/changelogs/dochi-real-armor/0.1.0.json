@@ -1,0 +1,20 @@
+{
+  "product": "dochi-real-armor",
+  "version": "0.1.0",
+  "projectId": 1567803,
+  "checkedAt": "2026-11-06T08:49:41.844Z",
+  "files": [
+    {
+      "id": 8211619,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "cnpc_real_armor-0.1.0.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/8211619",
+      "uploadedAt": "2026-06-07T16:01:07.65Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/8211619",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/8211619/change-log",
+      "html": "<h1>CNPC Real Armor 0.1.0</h1>\n<p>Initial release for Minecraft Forge 1.20.1 and CustomNPCs 1.20.1.</p>\n<h2>Added</h2>\n<ul>\n<li>Added vanilla-style armor damage reduction for CustomNPCs NPC armor slots.</li>\n<li>Added optional armor toughness support.</li>\n<li>Added optional Protection enchantment support.</li>\n<li>Added optional armor knockback resistance support.</li>\n<li>Added configurable CustomNPCs resistance and vanilla armor calculation order.</li>\n<li>Added optional companion armor override.</li>\n<li>Added optional split NPC armor damage for humanoid <code>EntityCustomNpc</code> NPCs.</li>\n<li>Added head, chest, and legs hit regions:</li>\n<li>Head uses helmet armor.</li>\n<li>Chest uses chestplate armor.</li>\n<li>Legs use leggings and boots.</li>\n<li>Added optional armor durability damage.</li>\n<li>Added in-game debug damage messages.</li>\n<li>Added Forge Mods menu config screen.</li>\n<li>Added runtime commands:</li>\n</ul>\n"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.2.5",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.150Z",
+  "files": [
+    {
+      "id": 9236795,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.5-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9236795",
+      "uploadedAt": "2026-10-18T07:20:39.423Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9236795",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9236795/change-log",
+      "html": "<h1>0.2.5 Change Log</h1>\n<ul>\n<li>Added compatibility with Dochi's NPC Core (in development). The mod is still under development.</li>\n<li>Improved the overall UI structure and layout.</li>\n<li>Fixed an issue where battle intervals were forcibly locked when battling Pokémon Itself NPCs.</li>\n<li>Added Pokémon Itself capture quests (DRM integration).</li>\n<li>Added Ctrl+S quick-save support in GUI screens where it was previously unavailable.</li>\n<li>Added support for playing Cobblemon-specific animations in Battle Presentation.</li>\n<li>Added a looping feature for Battle Sounds.</li>\n</ul>\n"
+    },
+    {
+      "id": 9236802,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.5-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9236802",
+      "uploadedAt": "2026-10-18T07:20:56.66Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9236802",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9236802/change-log",
+      "html": "<h1>0.2.5 Change Log</h1>\n<ul>\n<li>Added compatibility with Dochi's NPC Core (in development). The mod is still under development.</li>\n<li>Improved the overall UI structure and layout.</li>\n<li>Fixed an issue where battle intervals were forcibly locked when battling Pokémon Itself NPCs.</li>\n<li>Added Pokémon Itself capture quests (DRM integration).</li>\n<li>Added Ctrl+S quick-save support in GUI screens where it was previously unavailable.</li>\n<li>Added support for playing Cobblemon-specific animations in Battle Presentation.</li>\n<li>Added a looping feature for Battle Sounds.</li>\n</ul>\n"
+    }
+  ]
+}

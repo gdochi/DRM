@@ -16,7 +16,7 @@ tags:
 
 ## 1. Prepare the practice installation
 
-This is the combination used for the captured screens and first-attack test. Install **BattleWorks, DRM and an NPC mod**. For other Minecraft/loader files, see [installation choices](#mob-editor/battleworks-update-0-1-6).
+This is the combination used for the captured screens and first-attack test. Install **BattleWorks, DRM and an NPC mod**. For other Minecraft/loader files, see [installation choices](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660).
 
 | Component | This exercise |
 | --- | --- |

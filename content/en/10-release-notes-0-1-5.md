@@ -12,6 +12,7 @@ audience: Creators / Operators
 tags:
   - release
   - migration
+hiddenNav: true
 ---
 
 This is a historical release record. See [DRM 0.3.1](#core/release-notes-0-3-1) for current guidance.

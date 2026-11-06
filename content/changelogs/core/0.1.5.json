@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.1.5",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:36.494Z",
+  "files": [
+    {
+      "id": 8815105,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.1.5-1.20.1-forge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/8815105",
+      "uploadedAt": "2026-09-05T15:08:32.97Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8815105",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/8815105/change-log",
+      "html": "<h1>Change Log 0.1.5</h1>\n<h2>Added</h2>\n<ul>\n<li><strong>Tooltip Maker:</strong> Design item tooltips in their own editor, available under <strong>Visual</strong>. Arrange item previews, text, stat sections, images, and dividers.</li>\n<li><strong>Tooltip effects:</strong> Add entrance effects and replay them with the play button while editing. Choose 2D item icons, rotating 3D items, or wearable equipment previews.</li>\n<li><strong>Long tooltip scrolling:</strong> Read information that does not fit on screen by scrolling the tooltip.</li>\n<li><strong>Choice text size:</strong> Change dialogue choice text size in the dialogue editor or its GUI layout.</li>\n<li><strong>Choice pulse highlight:</strong> Make an individual choice gently flash when it appears. Choose the color, total duration, pulse count, and strength from <strong>0 to 100</strong>. Existing conversations stay unchanged unless you enable the effect.</li>\n<li><strong>NPC stat screens:</strong> Connect a Stat Builder file to an NPC so interacting with that NPC opens the player's stat allocation screen.</li>\n</ul>\n<h2>Improved</h2>\n<ul>\n<li>Choice buttons now use the available width before wrapping long text, including text translated through a resource pack.</li>\n<li>Long choices grow taller when needed. Lists with too many choices can be scrolled.</li>\n<li>Default choice buttons have about <strong>5 GUI pixels of space above and below the text</strong>, instead of oversized empty padding.</li>\n<li>Tooltip editing has clearer canvas boundaries, size controls, and space for temporarily placing elements outside the canvas. Only elements fully inside the output canvas are saved.</li>\n<li>Improved tooltip saving, loading, and reopening so the default design no longer flashes before the previously loaded design.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fixed ordinary blocks and other non-wearable items being shown in an armor stand's or player's hand when an equipment preview was selected.</li>\n<li>Improved the size and rotation center of modded item previews, including Epic Knights weapons. Reduced clipping and corrected causes of dark flickering while items rotate.</li>\n<li>Fixed TaCZ guns missing from tooltip previews. Gun details and installed attachments are kept when displaying their models.</li>\n<li>Fixed item-slot backgrounds staying small when their tooltip box was enlarged.</li>\n<li>Fixed Creative tab names incorrectly receiving the custom item tooltip layout.</li>\n<li>Fixed currency appearing in the Survival inventory when its inventory display option was turned off.</li>\n<li>Fixed custom HUD bars switching back to vanilla bars when <strong>F3</strong> was opened.</li>\n<li>Fixed the hurt effect playing when removing equipment only lowered the player's maximum health.</li>\n<li>Improved custom NPC model loading to avoid briefly showing mismatched model and texture parts.</li>\n</ul>\n"
+    }
+  ]
+}

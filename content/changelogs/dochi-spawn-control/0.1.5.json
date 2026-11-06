@@ -1,0 +1,68 @@
+{
+  "product": "dochi-spawn-control",
+  "version": "0.1.5",
+  "projectId": 1665161,
+  "checkedAt": "2026-11-06T08:49:40.757Z",
+  "files": [
+    {
+      "id": 9433964,
+      "loader": "Fabric",
+      "minecraft": "26.3",
+      "name": "dochi_spawn_control-0.1.5-fabric-26.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control/files/9433964",
+      "uploadedAt": "2026-11-04T13:52:41.38Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433964",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433964/change-log",
+      "html": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added biome and structure ID/tag filters with inclusion and exclusion lists.</li>\n<li>Added shared guard squad composition and equipment across all supported loaders.</li>\n<li>Added persistent per-structure squad limits and respawn delays.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed nested location pickers showing parent controls and editor labels through their panels.</li>\n<li>Fixed oversized advanced diagnostics and kept long results inside a scrollable viewport.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed guard equipment clearing to standalone switches beside item selectors.</li>\n<li>Changed spawn placement choices to inline dropdowns.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved guard flyouts with section dividers and visible structure linkage guidance.</li>\n<li>Improved guard forms with compact actions, aligned fields, and readable selection summaries.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added saved DNPC clone templates to natural spawn rules.</li>\n</ul>\n"
+    },
+    {
+      "id": 9433965,
+      "loader": "NeoForge",
+      "minecraft": "26.3",
+      "name": "dochi_spawn_control-0.1.5-neoforge-26.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control/files/9433965",
+      "uploadedAt": "2026-11-04T13:52:59.883Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433965",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433965/change-log",
+      "html": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added biome and structure ID/tag filters with inclusion and exclusion lists.</li>\n<li>Added shared guard squad composition and equipment across all supported loaders.</li>\n<li>Added persistent per-structure squad limits and respawn delays.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed nested location pickers showing parent controls and editor labels through their panels.</li>\n<li>Fixed oversized advanced diagnostics and kept long results inside a scrollable viewport.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed guard equipment clearing to standalone switches beside item selectors.</li>\n<li>Changed spawn placement choices to inline dropdowns.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved guard flyouts with section dividers and visible structure linkage guidance.</li>\n<li>Improved guard forms with compact actions, aligned fields, and readable selection summaries.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added saved DNPC clone templates to natural spawn rules.</li>\n</ul>\n"
+    },
+    {
+      "id": 9433969,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_spawn_control-0.1.5-forge-1.20.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control/files/9433969",
+      "uploadedAt": "2026-11-04T13:53:33.497Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433969",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433969/change-log",
+      "html": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added biome and structure ID/tag filters with inclusion and exclusion lists.</li>\n<li>Added shared guard squad composition and equipment across all supported loaders.</li>\n<li>Added persistent per-structure squad limits and respawn delays.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed nested location pickers showing parent controls and editor labels through their panels.</li>\n<li>Fixed oversized advanced diagnostics and kept long results inside a scrollable viewport.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed guard equipment clearing to standalone switches beside item selectors.</li>\n<li>Changed spawn placement choices to inline dropdowns.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved guard flyouts with section dividers and visible structure linkage guidance.</li>\n<li>Improved guard forms with compact actions, aligned fields, and readable selection summaries.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added saved DNPC clone templates to natural spawn rules.</li>\n</ul>\n"
+    },
+    {
+      "id": 9433970,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_spawn_control-0.1.5-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control/files/9433970",
+      "uploadedAt": "2026-11-04T13:53:58.66Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433970",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433970/change-log",
+      "html": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added biome and structure ID/tag filters with inclusion and exclusion lists.</li>\n<li>Added shared guard squad composition and equipment across all supported loaders.</li>\n<li>Added persistent per-structure squad limits and respawn delays.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed nested location pickers showing parent controls and editor labels through their panels.</li>\n<li>Fixed oversized advanced diagnostics and kept long results inside a scrollable viewport.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed guard equipment clearing to standalone switches beside item selectors.</li>\n<li>Changed spawn placement choices to inline dropdowns.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved guard flyouts with section dividers and visible structure linkage guidance.</li>\n<li>Improved guard forms with compact actions, aligned fields, and readable selection summaries.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added saved DNPC clone templates to natural spawn rules.</li>\n</ul>\n"
+    },
+    {
+      "id": 9433974,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_spawn_control-0.1.5-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-spawn-control/files/9433974",
+      "uploadedAt": "2026-11-04T13:54:16.163Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433974",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1665161/files/9433974/change-log",
+      "html": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added biome and structure ID/tag filters with inclusion and exclusion lists.</li>\n<li>Added shared guard squad composition and equipment across all supported loaders.</li>\n<li>Added persistent per-structure squad limits and respawn delays.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed nested location pickers showing parent controls and editor labels through their panels.</li>\n<li>Fixed oversized advanced diagnostics and kept long results inside a scrollable viewport.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed guard equipment clearing to standalone switches beside item selectors.</li>\n<li>Changed spawn placement choices to inline dropdowns.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved guard flyouts with section dividers and visible structure linkage guidance.</li>\n<li>Improved guard forms with compact actions, aligned fields, and readable selection summaries.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added saved DNPC clone templates to natural spawn rules.</li>\n</ul>\n"
+    }
+  ]
+}

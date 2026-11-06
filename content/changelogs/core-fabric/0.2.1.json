@@ -1,0 +1,20 @@
+{
+  "product": "core-fabric",
+  "version": "0.2.1",
+  "projectId": 1645661,
+  "checkedAt": "2026-11-06T08:49:37.204Z",
+  "files": [
+    {
+      "id": 8885445,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_rpg_maker-0.2.1-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/8885445",
+      "uploadedAt": "2026-09-15T10:29:56.297Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8885445",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/8885445/change-log",
+      "html": "<h1>0.2.1 Change Log</h1>\n<ul>\n<li>Adjusted some UI texture UV mapping.</li>\n<li>Fixed a GeckoLib animation playback bug</li>\n<li>Removed unnecessary calculations when checking GeckoLib models.</li>\n<li>Improved the way JSON files are loaded to prevent server crashes caused by large file sizes.</li>\n<li>Added a default keybind setting with an on/off toggle.</li>\n</ul>\n"
+    }
+  ]
+}

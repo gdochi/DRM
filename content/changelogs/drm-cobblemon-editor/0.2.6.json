@@ -1,0 +1,32 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.2.6",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.050Z",
+  "files": [
+    {
+      "id": 9309132,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.6-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9309132",
+      "uploadedAt": "2026-10-24T12:47:51.927Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9309132",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9309132/change-log",
+      "html": "<h1>0.2.6 Change Log</h1>\n<p><strong>Requires DRM Core 0.2.8 or later.</strong></p>\n<ul>\n<li>Improved overall UI layout and usability.</li>\n<li>Fixed various GUI issues.</li>\n<li>Fixed NPC hiding behavior after battles.</li>\n<li>Hidden NPCs are now visible while holding the DRM Core item.</li>\n<li>Resetting the battle count now also unhides the NPC.</li>\n<li>Fixed NPC detection, pursuit, and dash behavior before battles.</li>\n<li>Fixed Pokémon NPC animation and preview issues in basic settings.</li>\n</ul>\n"
+    },
+    {
+      "id": 9309134,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.2.6-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9309134",
+      "uploadedAt": "2026-10-24T12:48:19.487Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9309134",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9309134/change-log",
+      "html": "<h1>0.2.6 Change Log</h1>\n<p><strong>Requires DRM Core 0.2.8 or later.</strong></p>\n<ul>\n<li>Improved overall UI layout and usability.</li>\n<li>Fixed various GUI issues.</li>\n<li>Fixed NPC hiding behavior after battles.</li>\n<li>Hidden NPCs are now visible while holding the DRM Core item.</li>\n<li>Resetting the battle count now also unhides the NPC.</li>\n<li>Fixed NPC detection, pursuit, and dash behavior before battles.</li>\n<li>Fixed Pokémon NPC animation and preview issues in basic settings.</li>\n</ul>\n"
+    }
+  ]
+}

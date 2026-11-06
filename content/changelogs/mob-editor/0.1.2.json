@@ -1,0 +1,20 @@
+{
+  "product": "mob-editor",
+  "version": "0.1.2",
+  "projectId": 1682651,
+  "checkedAt": "2026-11-06T08:49:39.539Z",
+  "files": [
+    {
+      "id": 8844097,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_battleworks-0.1.2.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/8844097",
+      "uploadedAt": "2026-09-09T13:50:34.147Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1682651/files/8844097",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1682651/files/8844097/change-log",
+      "html": "<p># 0.1.2 Change Log</p>\n<p>## Changed</p>\n<p>- Improved the Battleworks editor layout, panel resizing, timeline controls, and option flyouts.<br>- Improved animation, hitbox, sound, and encounter previews.<br>- Updated the client/server network protocol. Both sides must use 0.1.2.</p>\n<p>## Added</p>\n<p>- Added Pattern Build Assist for quickly creating starter attack patterns and hitboxes.<br>- Added a draggable and resizable combat Simulation panel with playback speed controls.<br>- Added bundled Battleworks training samples for combat, GUI, and popup setup.<br>- Added sound pitch controls and synchronized encounter playback.</p>\n<p>## Fixed</p>\n<p>- Fixed NPC combat facing, target tracking, and combat AI ownership issues.<br>- Fixed hitbox preview alignment and animation playback consistency.<br>- Fixed editor hover text, overlapping controls, and unintended clicks through flyouts.<br>- Fixed saved JSON references and updated-file application behavior.</p>"
+    }
+  ]
+}

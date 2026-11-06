@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.3.0",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:35.950Z",
+  "files": [
+    {
+      "id": 9378110,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.3.0-1.20.1-forge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/9378110",
+      "uploadedAt": "2026-10-30T22:52:35.973Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9378110",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9378110/change-log",
+      "html": "<h1>0.3.0 Change Log</h1>\n<h2>Common Changes</h2>\n<ul>\n<li>Added independent text boxes to the Dialogue GUI Editor for displaying NPC names and custom text. Supports multiple text boxes, duplication, and saving.</li>\n<li>Added an optional API for addon integration, allowing access to and creation of NPC clone templates from mods such as DNPC.</li>\n<li>Improved keybind category sorting to keep Dochi's mod categories grouped together.</li>\n</ul>\n<h3>Fabric / NeoForge 1.21.1 &amp; 26.3</h3>\n<ul>\n<li>Fixed an issue where Creative Tab search failed when used alongside mods such as Axiom.</li>\n<li>Fixed camera jitter when tracking moving entities or using previews in the Scene Maker.</li>\n</ul>\n<h3>Fabric / NeoForge 1.21.1</h3>\n<ul>\n<li>Added the ability to delete trainer battle records through the Admin menu (Cobble NPC integration).</li>\n<li>Added manual cleanup of battle records for despawned trainers.</li>\n</ul>\n<h3>Forge 1.20.1 / Fabric / NeoForge 1.21.1</h3>\n<ul>\n<li>Fixed a crash when using NPC model animations without CNPC installed.</li>\n<li>Improved Creative Tab integration by registering DRM tools directly under the DNPC and CNPC tabs.</li>\n</ul>\n"
+    }
+  ]
+}

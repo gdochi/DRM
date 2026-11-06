@@ -1,40 +1,25 @@
 ---
-title: 뭰트 버전별 카드 이력
+title: 체인지로그
 slug: releases
 order: 1560
-description: 공개 업로드와 로컬 배포 파일을 구분하고 카드 추가·선공 전술 변경을 연결합니다.
+description: CurseForge에 공개된 버전의 변경 기록입니다.
 product: mwent
-category: 버전별 변경
+category: 체인지로그
 section: releases
-status: 버전 기록
-version: 0.1.1–0.1.6
-audience: 플레이어 / 서버 운영자
+status: Published
+version: 0.1.6
+releaseVersion: 0.1.6
+curseForgeFiles:
+  - 9432406
+  - 9422602
+  - 9422599
+  - 9422590
+  - 9422582
 ---
-
-## 버전 기준
-
-0.1.1~0.1.4는 확인한 CurseForge 배포 기록이며, 0.1.5와 0.1.6은 로컬 배포 파일을 확인한 안내입니다. 날짜는 한국 시간입니다. 처음 플레이한다면 [현재 시작 안내](#mwent/start), 최신 선공 도구는 [0.1.6 전술 사용법](#mwent/version-0-1-6)을 보세요.
-
-![현재 MWENT의 카드 편성 화면.](assets/media/guides/minigames-016-neo1211/mwent016-deck-catalog.png "Minigames 0.1.6 / NeoForge 1.21.1 영문 화면입니다. 카드 수·편성 비용·리더 아래 선공 전술을 확인할 수 있습니다. 과거 0.1.1 화면으로 제시한 자료는 아닙니다.")
-
-카드 수는 서로 다른 **정의의 종류 수**입니다. 일반판과 애니메이티드판을 두 종류의 전투 카드로 세지 않습니다. 설치되지 않은 모드의 카드 정의가 포함될 수 있으므로 사용 가능 카드 수와는 다릅니다.
-
-## 추가·변경 현황
-
-| 버전 | 기준일 / 근거 | 카드 현황 |
-| --- | --- | --- |
-| 0.1.1 | 2026-10-23 / [CurseForge 업로드](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9299087) | 뭰트 첫 공개. 기본 정의 263종 + 선택 모드 89종 = 352종. [상세](#mwent/version-0-1-1) |
-| 0.1.2 | 2026-10-24 / [1.21.1 업로드](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9309263), 26.3은 10-25 추가 | 신규·삭제·카드 정의 변경 0종. 352종 유지. [상세](#mwent/version-0-1-2) |
-| 0.1.3 | 2026-10-25 / [CurseForge 업로드](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9322373) | 0.1.2 대비 기본·선택 모드 카드 정의 동일. 352종 유지. |
-| 0.1.4 | 2026-10-28 / [CurseForge 업로드](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/9349914) | 0.1.3 대비 기본·선택 모드 카드 정의 동일. 352종 유지. |
-| 0.1.5 | 2026-10-30 / 로컬 작업본 | 신규 72종을 확인한 개발 중간 기록. 릴리스 항목은 0.1.6으로 통합. [작업본](#mwent/version-0-1-5) |
-| 0.1.6 | 2026-11-03 / 릴리스 기록 통합 | 연계 60종 + 공성 12종, 합계 424종. 선공 전술 5종·실제 전열 점유·전력 4 골렘 변신. [카드 스펙·사용법](#mwent/version-0-1-6) |
-
-0.1.1~0.1.4는 전력·편성 비용·프레임·희귀도뿐 아니라 배치·명령·키워드·외형 참조·선택 모드 카드 정의도 같습니다. **카드 정의가 같다는 것은 전투 엔진·UI·획득·서버 처리까지 변경이 없었다는 뜻은 아닙니다.**
-
-
-## 카드 스펙 읽기
-
-[현재 카드 목록](#mwent/card-catalog)에는 카드의 안정된 ID, 전력, 편성 비용과 능력을 표시합니다. 0.1.1에 있던 카드와 0.1.6에 추가된 카드를 구분합니다. 0.1.6에서도 기존 카드의 전력·비용·프레임·희귀도·기존 배치·명령·키워드 정의는 유지합니다. 새 능력 저장용 기본 필드가 생긴 것을 기존 카드의 밸런스 변경으로 세지 않습니다.
-
-0.1.6의 실제 배포 파일에서도 이 카드 정의가 유지되는지 대조했습니다. 선공 전술은 덱에서 뽑는 카드가 아니므로 424종에 더하지 않습니다. 공개 다운로드 여부와 로컬 파일 확인은 별개로 표시합니다.
+MWENT는 Minigames에 포함되며 같은 모드 버전을 사용합니다.
+CurseForge에 업로드된 버전만 기록합니다. 이전 버전은 CurseForge에서 확인하세요.
+## 체인지로그
+* [Minigames 체인지로그 — 0.1.6](#dochi-minigames/changelog-0-1-6)
+* [MWENT 카드 스펙과 선공 전술 — 0.1.6](#mwent/version-0-1-6)
+## 이전 버전
+[CurseForge에서 이전 버전 보기](https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames/files/all)

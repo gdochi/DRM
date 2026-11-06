@@ -9,6 +9,7 @@ section: releases
 status: Specification reference
 version: 0.1.5
 audience: Players / creators
+hiddenNav: true
 ---
 
 > This page preserves the local 0.1.5 workspace snapshot. Release documentation for card additions and specifications is consolidated in [0.1.6 cards and tactics](#mwent/version-0-1-6). The 72 cards below are the same additions, not a second set.

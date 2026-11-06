@@ -1,0 +1,20 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.1.9",
+  "projectId": 1553237,
+  "checkedAt": "2026-11-06T08:49:40.186Z",
+  "files": [
+    {
+      "id": 8373608,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "cnpc_tacz_fire-0.1.9.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8373608",
+      "uploadedAt": "2026-07-05T08:28:48.53Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8373608",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8373608/change-log",
+      "html": "<h2>0.1.9 Changelog</h2>\n<h3>Added</h3>\n<ul>\n<li>Added Russian language support.</li>\n<li>Added idle firearm pose selection: Low Ready or Aim Ready for stationary idle NPCs.</li>\n<li>Added patrol wait time setting in ticks for area patrol and route patrol.</li>\n<li>Added event sound playback modes:</li>\n<li>Target: plays directly to the detected/targeted player.</li>\n<li>At NPC: plays from the NPC position with a configurable range.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Improved idle patrol behavior so NPCs face their movement direction while patrolling.</li>\n<li>Changed idle visual scanning so circular/idle scan behavior only affects NPCs while they are standing still and guarding.</li>\n<li>Improved patrol and return movement speed to better match the configured CustomNPCs-style walk speed.</li>\n<li>Improved walking animation speed sync so movement animations better match the configured movement speed.</li>\n<li>Reduced unnecessary console output by removing temporary/debug spam from melee signals, weapon switching, managed state requests, idle combat, alert icons, and combat phase diagnostics.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>Fixed cases where NPCs could fail to detect a target standing almost right next to them because of detect angle checks.</li>\n<li>Fixed patrol movement sometimes looking like the NPC was being dragged instead of walking normally.</li>\n<li>Fixed cases where NPCs appeared to slide or moonwalk because movement speed and walking animation speed did not match.</li>\n<li>Fixed cases where NPCs could keep playing walking animations while barely moving or already stopped.</li>\n<li>Fixed abnormal head/aim direction behavior during patrol movement.</li>\n<li>Fixed cases where NPCs could rush forward at extreme speed after being hit or entering alert movement.</li>\n</ul>\n"
+    }
+  ]
+}

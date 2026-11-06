@@ -1,0 +1,20 @@
+{
+  "product": "core",
+  "version": "0.2.1",
+  "projectId": 1575859,
+  "checkedAt": "2026-11-06T08:49:36.130Z",
+  "files": [
+    {
+      "id": 9044226,
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "name": "dochi_rpg_maker-0.2.1-1.20.1-forge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/9044226",
+      "uploadedAt": "2026-10-03T05:31:00.23Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9044226",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9044226/change-log",
+      "html": "<h1>0.2.1 Change Log</h1>\n<ul>\n<li>Added a tile mode for applying asset textures in GUI Maker.</li>\n<li>Fixed awkward GUI frame proportions in GUI Maker.</li>\n<li>Added World Tick and Real-Time modes for NPC Shop restocking.</li>\n</ul>\n"
+    }
+  ]
+}

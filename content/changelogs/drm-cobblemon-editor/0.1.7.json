@@ -1,0 +1,20 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.1.7",
+  "projectId": 1614833,
+  "checkedAt": "2026-11-06T08:49:38.587Z",
+  "files": [
+    {
+      "id": 8911745,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_cobblemon_editor-0.1.7-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/8911745",
+      "uploadedAt": "2026-09-18T13:26:50.033Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8911745",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/8911745/change-log",
+      "html": "<h1>0.1.7 Change Log</h1>\n<ul>\n<li>Fixed numerous bugs in the battle engine</li>\n<li>Fixed an issue with overlapping battle sounds</li>\n<li>Fixed battles freezing when using the Switcher</li>\n<li>Added custom battle slot functionality</li>\n<li>Removed unnecessary encounter policies</li>\n<li>Cleaned up UI issues, including duplicate buttons</li>\n<li>Fixed a bug where trainers wouldn’t dash</li>\n</ul>\n"
+    }
+  ]
+}

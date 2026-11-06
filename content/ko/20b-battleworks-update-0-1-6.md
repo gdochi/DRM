@@ -9,6 +9,7 @@ section: start
 status: 사용 안내
 version: 0.1.6
 audience: 제작자 / 서버 운영자
+hiddenNav: true
 ---
 
 ## 필요한 모드
