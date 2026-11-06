@@ -1,0 +1,4 @@
+[
+  {"id":"spawn-cap-video","screen":"@world","actions":["scene:spawn-setup","wait:20","scene:spawn-look","scene:spawn-check:0","clear:chat","gif:start:spawn-cap-respawn","scene:spawn-enter","wait:30","scene:spawn-check:1","wait:20","scene:spawn-check:1","scene:spawn-clear-first","wait:35","scene:spawn-check:2","wait:15","gif:stop"]},
+  {"id":"mwent-golem-video","editor":"dochi_minigames:editor","actions":["Cancel","MWENT","next-screen:@changed","Test play","wait:40","Use this deck","wait:40","Golden apple altar: +5 power","mini-choice:4","wait:40","verify:mwent-tactic","Begin match","wait-phase:mulligan","wait-control:Continue","Continue","wait-phase:battle","wait:20","record:mwent-opening","gif:start:mwent-golem","wait:20","Golem seal core","wait:30","verify:mwent-golem","wait:20","gif:stop"]}
+]

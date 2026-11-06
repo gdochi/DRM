@@ -1,0 +1,10 @@
+{
+  "completedAt": "2026-11-06T12:33:32.022Z",
+  "checks": [
+    "All five content languages use Related documents. NPC editor shows only Cooking and Templates, no repeated mod labels, and retains Document 2/6 and correct Previous/Next. No overflow at 320/390/1440px.",
+    "A real page with only neighbor links hides related documents and retains page navigation.",
+    "Other-mod links retain identifying mod names; same-mod links omit them.",
+    "Related links, browser Back and Next open the intended documents."
+  ],
+  "errors": []
+}

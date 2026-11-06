@@ -52,6 +52,9 @@ final class GuideScenes {
     private static double motionX,motionY,motionDx,motionDy;
     private static long motionStarted;
     private static JsonObject motionBefore;
+    private static Object spawnState;
+    private static BlockPos spawnAnchor;
+    private static boolean spawnWalking;
     static void abort(){recording="";frames.clear();}
 
     static void register(Path output){
@@ -63,6 +66,7 @@ final class GuideScenes {
     static void frame(Minecraft mc,Path output)throws Exception {
         if(recording.isEmpty()||mc.level==null||mc.player==null||frameFailure!=null)return;
         long now=System.nanoTime();if(now<nextFrameNanos)return;
+        if(spawnWalking&&mc.player.distanceToSqr(Vec3.atCenterOf(spawnAnchor))<16){mc.options.keyUp.setDown(false);spawnWalking=false;}
         if(motionScreen!=null){
             double fraction=Math.min(1,(now-motionStarted)/1_000_000_000d);
             double x=motionX+motionDx*fraction,y=motionY+motionDy*fraction;
@@ -88,6 +92,47 @@ final class GuideScenes {
 
     static void perform(Minecraft mc,String action,int npcId,Path output)throws Exception {
         if(frameFailure!=null)throw new IllegalStateException("Frame writer failed",frameFailure);
+        if(action.equals("scene:spawn-setup")){
+            mc.setScreen(null);mc.options.fov().set(65);mc.options.bobView().set(false);
+            mc.getSingleplayerServer().submit(()->{try{
+                var server=mc.getSingleplayerServer();var player=server.getPlayerList().getPlayer(mc.player.getUUID());var level=player.serverLevel();
+                spawnAnchor=player.blockPosition().offset(6,0,0);
+                level.getGameRules().getRule(net.minecraft.world.level.GameRules.RULE_DOMOBSPAWNING).set(false,server);
+                level.getGameRules().getRule(net.minecraft.world.level.GameRules.RULE_DAYLIGHT).set(false,server);level.setDayTime(6000);
+                for(int x=-5;x<=5;x++)for(int z=-5;z<=10;z++){
+                    level.setBlock(spawnAnchor.offset(x,-1,z),Blocks.SMOOTH_QUARTZ.defaultBlockState(),3);
+                    for(int y=0;y<=4;y++)level.setBlock(spawnAnchor.offset(x,y,z),Blocks.AIR.defaultBlockState(),3);
+                }
+                var block=BuiltInRegistries.BLOCK.get(ResourceLocation.parse("drm_spawn_control:spawner"));if(block==Blocks.AIR)throw new IllegalStateException("Spawn Control block unavailable");
+                level.setBlock(spawnAnchor,block.defaultBlockState(),3);
+                Object definition=call(Class.forName("net.dochi.spawncontrol.spawner.SpawnerDefinition"),"defaults");
+                String[][] settings={{"target","minecraft:pig"},{"initialDelay","1"},{"intervalMin","20"},{"intervalMax","20"},{"includeCreative","true"},{"playerRange","5"},{"exitRange","7"},{"radius","1.5"},{"verticalRange","0"},{"amount","1"},{"maxAlive","1"},{"maxTotal","2"}};
+                for(String[] setting:settings)call(definition,"set",setting[0],setting[1]);
+                call(definition,"validate");Files.writeString(output.resolve("spawn-video-definition.json"),String.valueOf(call(definition,"serialize")));
+                Object instance=call(level.getBlockEntity(spawnAnchor),"instance");
+                player.teleportTo(spawnAnchor.getX()+.5,spawnAnchor.getY(),spawnAnchor.getZ()+9);
+                spawnState=call(Class.forName("net.dochi.spawncontrol.spawner.SpawnerRuntime"),"apply",instance,definition,"guides/video-cap.json");return true;
+            }catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:spawn-look")){mc.player.lookAt(EntityAnchorArgument.Anchor.EYES,Vec3.atCenterOf(spawnAnchor).add(0,.2,0));return;}
+        if(action.equals("scene:spawn-enter")){spawnWalking=true;mc.options.keyUp.setDown(true);return;}
+        if(action.startsWith("scene:spawn-check:")){
+            int expectedTotal=Integer.parseInt(action.substring("scene:spawn-check:".length()));
+            JsonObject report=mc.getSingleplayerServer().submit(()->{try{
+                JsonObject result=new JsonObject();result.addProperty("total",((Number)get(spawnState,"total")).intValue());
+                result.addProperty("owned",((Number)call(Class.forName("net.dochi.spawncontrol.spawner.SpawnerRuntime"),"owned",spawnState)).intValue());
+                result.addProperty("status",String.valueOf(get(spawnState,"status")));return result;
+            }catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);
+            Files.writeString(output.resolve("spawn-video-count-"+expectedTotal+".json"),report.toString());
+            if(report.get("total").getAsInt()!=expectedTotal||report.get("owned").getAsInt()!=(expectedTotal==0?0:1))throw new IllegalStateException("Spawner cap/replacement differs: "+report);return;
+        }
+        if(action.equals("scene:spawn-clear-first")){
+            mc.getSingleplayerServer().submit(()->{var player=mc.getSingleplayerServer().getPlayerList().getPlayer(mc.player.getUUID());
+                var pigs=player.serverLevel().getEntitiesOfClass(net.minecraft.world.entity.animal.Pig.class,new net.minecraft.world.phys.AABB(spawnAnchor).inflate(5));
+                if(pigs.size()!=1)throw new IllegalStateException("Expected one owned practice pig");
+                pigs.get(0).hurt(player.damageSources().playerAttack(player),100);return true;
+            }).get(5,TimeUnit.SECONDS);return;
+        }
         if(action.startsWith("scene:gui-motion:")){
             if(motionScreen!=null)throw new IllegalStateException("Previous drag is still active");
             motionKind=action.substring("scene:gui-motion:".length());

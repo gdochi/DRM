@@ -1089,7 +1089,10 @@ public final class GuideCapture {
     private void expectNextScreen(){if(!nextScreen.isBlank()){expectedScreen=nextScreen;nextScreen="";screenWait=0;}}
     private double nativeUiScale()throws Exception{
         try{return ((Number)call(current,"renderScale")).doubleValue();}
-        catch(NoSuchMethodException ignored){try{return ((Number)get(current,"zoom")).doubleValue();}catch(NoSuchFieldException absent){return 1;}}
+        catch(NoSuchMethodException ignored){
+            for(String field:List.of("zoom","scale"))try{return ((Number)get(current,field)).doubleValue();}catch(NoSuchFieldException absent){}
+            return 1;
+        }
     }
     private Object inputBox(String name)throws Exception{
         if(name.startsWith("regionCorner"))return ((Object[])get(current,"regionCorners"))[Integer.parseInt(name.substring(12))];

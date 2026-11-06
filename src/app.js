@@ -45,7 +45,7 @@
         chooseMod: "모드 선택", tasks: "무엇을 만들고 싶나요?", homeLead: "만들고 싶은 것을 고르거나, 아래에서 사용하는 모드의 설명을 여세요.",
         history: "변경 기록", guideVersion: "설명 기준", captures: "수록 화면", missing: "문서를 찾을 수 없습니다", missingHint: "주소가 변경되었거나 존재하지 않는 문서입니다.", start: "처음 사용하기",
         zoom: "화면 확대", fit: "전체 보기", actualSize: "원본 크기", original: "원본 열기", zoomIn: "확대", zoomOut: "축소", imageHint: "자세히 볼 곳을 누르세요. 확대한 뒤 끌어서 이동할 수 있습니다.",
-        english: "영문 문서", related: "이어서 볼 문서", filter: "목록에서 찾기", filterHint: "이름이나 설명으로 찾기", matches: "표시한 항목", section: "항목",
+        english: "영문 문서", related: "관련 문서", filter: "목록에서 찾기", filterHint: "이름이나 설명으로 찾기", matches: "표시한 항목", section: "항목",
         loading: "언어를 불러오는 중…", loadFailed: "언어를 불러오지 못했습니다. 다시 시도해 주세요.", retry: "다시 시도", sourceEnglish: "영어 원문", assisted: "번역 문서"
       },
       en: {
@@ -55,7 +55,7 @@
         chooseMod: "Choose a mod", tasks: "What would you like to make?", homeLead: "Choose what you want to make, or open the guide for your mod below.",
         history: "Release history", guideVersion: "Guide version", captures: "Screens shown", missing: "Document not found", missingHint: "This address has changed or does not exist.", start: "Get started",
         zoom: "Enlarge screenshot", fit: "Fit image", actualSize: "Actual size", original: "Open original", zoomIn: "Zoom in", zoomOut: "Zoom out", imageHint: "Click an area to enlarge it. Drag to move when zoomed in.",
-        english: "English guide", related: "Continue with", filter: "Find in this list", filterHint: "Find a name or description", matches: "Visible entries", section: "Section",
+        english: "English guide", related: "Related documents", filter: "Find in this list", filterHint: "Find a name or description", matches: "Visible entries", section: "Section",
         loading: "Loading language…", loadFailed: "Could not load this language. Please try again.", retry: "Retry", sourceEnglish: "English original", assisted: "Assisted translation"
       }
     };
@@ -852,14 +852,15 @@
 
   function renderRelated(doc) {
     const links = [];
-    const seen = new Set();
+    const { prev, next } = getNeighborDocs(doc.product, doc);
+    const seen = new Set([doc, prev, next].filter(Boolean).map(getDocKey));
     for (const match of doc.html.matchAll(/href="#([^"/:]+)\/([^":]+)(?:::[^"]*)?"/g)) {
       const related = findDoc(match[1], match[2]);
-      if (!related || getDocKey(related) === getDocKey(doc) || seen.has(getDocKey(related))) continue;
+      if (!related || seen.has(getDocKey(related))) continue;
       seen.add(getDocKey(related));
       links.push(related);
     }
-    return links.length ? `<nav class="related-docs" aria-label="${escapeAttr(ui("related"))}"><h2>${escapeHtml(ui("related"))}</h2>${links.slice(0, 5).map(item => `<a href="${linkForDoc(item)}"><small>${escapeHtml(productText(config.products[item.product], "shortLabel"))}</small><span>${escapeHtml(item.title)}${icon("arrowRight")}</span></a>`).join("")}</nav>` : "";
+    return links.length ? `<nav class="related-docs" aria-label="${escapeAttr(ui("related"))}"><h2>${escapeHtml(ui("related"))}</h2>${links.slice(0, 5).map(item => `<a href="${linkForDoc(item)}">${item.product !== doc.product ? `<small>${escapeHtml(productText(config.products[item.product], "shortLabel"))}</small>` : ""}<span>${escapeHtml(item.title)}${icon("arrowRight")}</span></a>`).join("")}</nav>` : "";
   }
 
   function renderNotFound(product) {
