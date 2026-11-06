@@ -16,9 +16,9 @@ tags:
 
 ## Leave A Message In The World
 
-![Place a marker with the Remnant Setter, save its text and open the message.](assets/media/guides/short-gifs-20261105/remnant-place-and-read.gif "Recorded in game: DRM 0.3.1 / NeoForge 1.21.1, English UI. Setter placement → text entry → Save → read the marker. Both the server-stored text and reader screen were verified.")
+![Place a marker with the Remnant Setter, save its text and open the message.](assets/media/guides/short-videos-20261106/remnant-place-and-read.mp4 "Recorded in game: DRM 0.3.1 / NeoForge 1.21.1, English UI. Setter placement → text entry → Save → read the marker. Both the server-stored text and reader screen were verified.")
 
-The GIF shows the simple **write directly** option: right-click a block face with the setter, enter the text and choose **Save**. The steps below describe linking a saved JSON message instead.
+The video shows the simple **write directly** option: right-click a block face with the setter, enter the text and choose **Save**. The steps below describe linking a saved JSON message instead.
 
 Use **Remnant Msg Editor** for a message attached to a place without an NPC. Open it from the core's editor selector and write its name and text under **Message**. These English screens are from **DRM 0.3.1 / Forge 1.20.1**.
 

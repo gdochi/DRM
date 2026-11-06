@@ -80,7 +80,7 @@ async function loadLocale(locale) {
     const slug = data.slug || file.replace(/^\d+-/, "").replace(/\.md$/, "");
     validatePublishedRelease(data, slug, `${locale}/${file}`);
     const rendered = renderMarkdown(body, slug);
-    const captureEnvironments = [...new Map([...rendered.html.matchAll(/<img[^>]+src="([^"]+)"/g)]
+    const captureEnvironments = [...new Map([...rendered.html.matchAll(/<(?:img\b[^>]*\bsrc|video\b[^>]*\bposter)="([^"]+)"/g)]
       .map(match => captureManifest[match[1]])
       .filter(Boolean)
       .map(capture => [`${capture.loader}/${capture.minecraft}`, { loader: capture.loader, minecraft: capture.minecraft }])).values()];
@@ -239,6 +239,16 @@ function renderMarkdown(markdown, docSlug) {
     if (imageMatch) {
       flushParagraph();
       const [, alt, source, caption] = imageMatch;
+      if (/\.mp4$/i.test(source)) {
+        const href = videoSource(source);
+        const dimensions = captureManifest[href];
+        if (!alt || !dimensions?.poster || !dimensions?.webm) throw new Error(`Incomplete guide video: ${source}`);
+        const poster = imageSource(dimensions.poster);
+        const webm = videoSource(dimensions.webm);
+        html.push(`<figure class="doc-video"><video controls autoplay loop muted playsinline preload="metadata" width="${dimensions.width}" height="${dimensions.height}" poster="${escapeAttr(poster)}" aria-label="${escapeAttr(alt)}"><source src="${escapeAttr(webm)}" type="video/webm" /><source src="${escapeAttr(href)}" type="video/mp4" /><a href="${escapeAttr(href)}">${escapeHtml(alt)}</a></video>${caption ? `<figcaption>${renderInline(caption)}</figcaption>` : ""}</figure>`);
+        i += 1;
+        continue;
+      }
       const href = imageSource(source);
       const dimensions = captureManifest[href];
       html.push(`<figure class="doc-image"><a href="${escapeAttr(href)}" target="_blank" rel="noreferrer"><img src="${escapeAttr(href)}" alt="${escapeAttr(alt)}"${dimensions ? ` width="${dimensions.width}" height="${dimensions.height}"` : ""} loading="lazy" decoding="async" /></a>${caption ? `<figcaption>${renderInline(caption)}</figcaption>` : ""}</figure>`);
@@ -332,6 +342,13 @@ function renderMarkdown(markdown, docSlug) {
 
   flushParagraph();
   return { html: html.join("\n"), headings };
+}
+
+function videoSource(source) {
+  // Videos ship with the site, including when hosted under a Pages subpath.
+  if (/^(?:\.\/)?assets\/media\/[A-Za-z0-9_./-]+\.(?:mp4|webm)$/i.test(source)
+    && !source.split("/").includes("..")) return source;
+  throw new Error(`Invalid document video URL: ${source}`);
 }
 
 function imageSource(source) {

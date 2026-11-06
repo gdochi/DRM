@@ -73,6 +73,8 @@ Videz les deux mains, parlez au PNJ, puis vérifiez la salutation, le choix de r
 
 ![La conversation du joueur s'est ouverte en interagissant avec un DNPC nommé guide Oakridge, montrant le message d'accueil et deux choix.](assets/media/guides/drm-031-neo1211/dialogue-npc-player.png "Le résultat du joueur : Dialogue Text devient la ligne PNJ, et chaque Étiquette devient un choix en dessous.")
 
+![Choisir la question sur le village et suivre la conversation vers la réponse.](assets/media/guides/short-videos-20261106/dialogue-branch.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, interface anglaise. Une conversation préparée montre la liaison Goto.")
+
 Le premier choix ouvre la réponse ci-dessous. Vérifiez cette connexion ainsi que la salutation initiale.
 
 ![La réponse après avoir sélectionné Parlez-moi du village, avec les directions à l'auberge et un choix de fermeture.](assets/media/guides/drm-031-neo1211/dialogue-npc-reply.png "Goto ouvre dialogue_reply_1. Donnez à la réponse un moyen de continuer, de revenir ou de fermer aussi.")

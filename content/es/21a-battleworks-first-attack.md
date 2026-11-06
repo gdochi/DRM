@@ -130,6 +130,8 @@ También puede descargar el [UI-saved first_sword.json](./assets/media/battlewor
 
 ![El jugador Supervivencia se enfrenta al DNPC después de recibir daño de barrido amplio.](assets/media/guides/battleworks-016-neo1211/battleworks-first-fight.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. La salud del servidor del jugador sin armadura cayó de 20 a 12. El aparición natural y la regeneración se excluyeron en el mundo de captura de propiedad, y el objetivo NPC se verificó como este jugador. Este total no es el daño de un ataque.")
 
+![Probar Wide Sweep contra un jugador en Supervivencia y observar su salud.](assets/media/guides/short-videos-20261106/battleworks-first-attack.mp4 "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. La salud del servidor pasó de 20 a 16.")
+
 ## 9. Cambiar un valor a la vez
 
 Primero cambia Windup de 24 a 40, guarda/aplica y observa los 0.8 segundos adicionales. Restaurarlo, luego cambiar el daño de 4 a 2. Finalmente mueva Event Tick de 3 a 8 y compare el tiempo de contacto.

@@ -128,6 +128,8 @@ You can also download the [UI-saved first_sword.json](./assets/media/battleworks
 
 ![The Survival player facing the DNPC after receiving Wide Sweep damage.](assets/media/guides/battleworks-016-neo1211/battleworks-first-fight.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. The unarmored player server health fell from 20 to 12. Natural spawning and regeneration were excluded in the owned capture world, and the NPC target was verified as this player. This total is not the damage of one attack.")
 
+![Test Wide Sweep against a Survival player and observe the health change.](assets/media/guides/short-videos-20261106/battleworks-first-attack.mp4 "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. Server health changed from 20 to 16.")
+
 ## 9. Change one value at a time
 
 First change Windup from 24 to 40, save/apply, and observe the extra 0.8 seconds. Restore it, then change Damage from 4 to 2. Finally move Event Tick from 3 to 8 and compare contact timing.

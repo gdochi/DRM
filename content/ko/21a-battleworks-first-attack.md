@@ -132,6 +132,8 @@ Max Range는 **공격을 시작하는 거리**, Reach는 **Sweep 판정의 도�
 
 ![Wide Sweep을 적용한 DNPC 앞에서 피해를 받은 서바이벌 플레이어.](assets/media/guides/battleworks-016-neo1211/battleworks-first-fight.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. 방어구 없는 플레이어의 서버 체력이 20에서 12로 줄었습니다. 다른 몹 생성과 자연 회복을 제외한 촬영 월드에서 NPC의 타겟도 해당 플레이어인지 확인했습니다. 이 합계가 한 번의 공격 피해라는 뜻은 아닙니다.")
 
+![Wide Sweep을 서바이벌 플레이어에게 실행하고 체력 변화를 확인하는 과정.](assets/media/guides/short-videos-20261106/battleworks-first-attack.mp4 "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. 서버에서 체력 20→16을 확인했습니다.")
+
 ## 9. 한 가지씩 바꾸며 배우기
 
 첫 번째 비교에서는 Windup만 `24 → 40`으로 바꿉니다. 저장·적용 후 준비 시간이 약 0.8초 늘어나는지 봅니다. 두 번째 비교에서는 원래대로 돌린 뒤 Damage만 `4 → 2`로 낮춥니다. 세 번째 비교에서는 Event Tick만 `3 → 8`로 옮겨 모션과 판정의 차이를 봅니다.

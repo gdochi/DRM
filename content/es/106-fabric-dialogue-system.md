@@ -73,6 +73,8 @@ Vacíe ambas manos, hable con el NPC, luego verifique el saludo, la opción de r
 
 ![La conversación del jugador se abrió interactuando con una guía DNPC llamada Oakridge, mostrando el saludo y dos opciones.](assets/media/guides/drm-031-neo1211/dialogue-npc-player.png "El resultado del jugador: Dialogue Text se convierte en la línea NPC, y cada etiqueta se convierte en una opción debajo de ella.")
 
+![Elegir la pregunta sobre la aldea y seguir la conversación hasta su respuesta.](assets/media/guides/short-videos-20261106/dialogue-branch.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. Una conversación preparada muestra la conexión Goto.")
+
 La primera opción abre la respuesta a continuación. Compruebe esta conexión, así como el saludo inicial.
 
 ![La respuesta después de seleccionar Cuéntame sobre el pueblo, con instrucciones para la posada y una opción de cierre.](assets/media/guides/drm-031-neo1211/dialogue-npc-reply.png "Goto abre dialogue_reply_1. Dar a la respuesta una manera de continuar, volver o cerrar también.")

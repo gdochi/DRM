@@ -1,0 +1,43 @@
+[
+  {
+    "id": "npc-appearance-video",
+    "editor": "npc_basic",
+    "target": true,
+    "actions": [
+      "scene:video-framing", "wait:20", "look-at:npc", "scene:bed-editor", "wait:20",
+      "Appearance & Model", "wait:20", "clear:chat", "gif:start:npc-appearance",
+      "input:scale=1.15", "wait:25", "Save to NPC", "wait:35",
+      "scene:verify-scale", "look-at:npc", "close:screen", "wait:35", "gif:stop"
+    ]
+  },
+  {
+    "id": "dialogue-branch-video",
+    "screen": "DialogueEditorScreen",
+    "actions": [
+      "apply:dialogue", "wait:40", "verify:npc-dialogue", "close:screen", "clear:chat",
+      "gif:start:dialogue-branch", "interact:npc", "wait:30",
+      "runtime-choice:Tell me about the village.", "wait:35",
+      "verify:node=dialogue_reply_1", "gif:stop"
+    ]
+  },
+  {
+    "id": "battleworks-video-setup",
+    "editor": "battleworks",
+    "target": true,
+    "actions": [
+      "Create New", "Pattern Build Assist", "Beginner", "Wide Sweep", "Measured", "Create Pattern",
+      "Combat Rules", "Manager", "input:same_pattern=1.0", "Combat", "input:fov=360", "input:scan_range=16",
+      "verify:bw-document", "Save As", "input:save_as=training/first_sword.json", "Save", "wait:60",
+      "verify:file=config/dochi_rpg_maker/mobs/patterns/training/first_sword.json", "Save", "wait:40"
+    ]
+  },
+  {
+    "id": "battleworks-first-attack-video",
+    "editor": "battleworks",
+    "target": true,
+    "actions": [
+      "close:screen", "look-at:npc", "clear:chat", "gif:start:battleworks-first-attack",
+      "fixture:bw-combat", "wait:120", "verify:bw-hit", "gif:stop"
+    ]
+  }
+]

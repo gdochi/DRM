@@ -25,6 +25,8 @@ Sélectionnez **Appearance & Model**. Avec **Humanoid**, utilisez le Finder à c
 
 ![DNPC 0.1.2 sur NeoForge 1.21.1, montrant Appearance & Model avec Humanoid, Skin, Scale et Slim arms.](assets/media/guides/dnpc-012-neo1211/dnpc-appearance.png "Vérifiez l'apparence dans l'aperçu du milieu. Scale modifie la taille globale du modèle, plutôt que son lieu de travail ou sa portée d'attaque.")
 
+![Passer Scale à 1.15, enregistrer le PNJ puis le vérifier dans le monde.](assets/media/guides/short-videos-20261106/npc-appearance.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, interface anglaise. Appearance & Model → Scale → Save to NPC.")
+
 Utilisez le poseur pour faire des poses et les joindre à des animations. Pour l'équipement aléatoire, choisissez les candidats et les chances pour chaque emplacement.
 
 ### Trouvez les emplacements pour armes et munitions

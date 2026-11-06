@@ -50,6 +50,8 @@ function contentType(file) {
     ".svg": "image/svg+xml",
     ".png": "image/png",
     ".gif": "image/gif",
+    ".mp4": "video/mp4",
+    ".webm": "video/webm",
     ".jpg": "image/jpeg",
     ".jpeg": "image/jpeg",
     ".webp": "image/webp"

@@ -10,6 +10,7 @@ const sorted = values => [...values].sort();
 const fenced = text => [...text.matchAll(/```[^\n]*\n[\s\S]*?```/g)].map(match => match[0]);
 const inline = text => [...text.replace(/```[^\n]*\n[\s\S]*?```/g, '').matchAll(/`[^`\n]+`/g)].map(match => match[0]);
 const images = doc => [...doc.html.matchAll(/<img[^>]+src="([^"]+)"/g)].map(match => match[1]);
+const videos = doc => [...doc.html.matchAll(/<(?:source\b[^>]*\bsrc|video\b[^>]*\bposter)="([^"]+)"/g)].map(match => match[1]);
 const links = doc => [...doc.html.matchAll(/<a[^>]+href="([^"]+)"/g)].map(match => match[1]);
 let count = 0;
 for (const locale of ['pt', 'es', 'fr']) {
@@ -39,6 +40,7 @@ for (const locale of ['pt', 'es', 'fr']) {
     assert.deepEqual(fenced(translated), fenced(original), `Changed code block: ${doc.sourcePath}`);
     assert.deepEqual(sorted(inline(translated)), sorted(inline(original)), `Changed inline command or identifier: ${doc.sourcePath}`);
     assert.deepEqual(sorted(images(doc)), sorted(images(source)), `Changed screenshot set: ${doc.sourcePath}`);
+    assert.deepEqual(sorted(videos(doc)), sorted(videos(source)), `Changed guide video set: ${doc.sourcePath}`);
     assert.deepEqual(sorted(links(doc)), sorted(links(source)), `Changed link destinations: ${doc.sourcePath}`);
     assert.equal(doc.headings.length, source.headings.length, `Changed section structure: ${doc.sourcePath}`);
     count++;

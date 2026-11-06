@@ -15,27 +15,6 @@
       "width": 854,
       "height": 480
     },
-    "assets/media/guides/short-gifs-20261105/nurse-joy-treatment.gif": {
-      "minecraft": "1.21.1",
-      "loader": "NeoForge",
-      "locale": "en_us",
-      "width": 1280,
-      "height": 720
-    },
-    "assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif": {
-      "minecraft": "1.21.1",
-      "loader": "NeoForge",
-      "locale": "en_us",
-      "width": 1280,
-      "height": 720
-    },
-    "assets/media/guides/short-gifs-20261105/remnant-place-and-read.gif": {
-      "minecraft": "1.21.1",
-      "loader": "NeoForge",
-      "locale": "en_us",
-      "width": 1280,
-      "height": 720
-    },
     "assets/media/guides/drm-031-neo1211/editor-selector.png": {
       "minecraft": "1.21.1",
       "loader": "NeoForge",
@@ -1825,6 +1804,102 @@
       "locale": "en_us",
       "width": 1920,
       "height": 1080
+    },
+    "assets/media/guides/short-videos-20261106/nurse-joy-treatment.mp4": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720,
+      "poster": "assets/media/guides/short-videos-20261106/nurse-joy-treatment.png",
+      "webm": "assets/media/guides/short-videos-20261106/nurse-joy-treatment.webm"
+    },
+    "assets/media/guides/short-videos-20261106/nurse-joy-treatment.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/short-videos-20261106/dnpc-bed-assignment.mp4": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720,
+      "poster": "assets/media/guides/short-videos-20261106/dnpc-bed-assignment.png",
+      "webm": "assets/media/guides/short-videos-20261106/dnpc-bed-assignment.webm"
+    },
+    "assets/media/guides/short-videos-20261106/dnpc-bed-assignment.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/short-videos-20261106/remnant-place-and-read.mp4": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720,
+      "poster": "assets/media/guides/short-videos-20261106/remnant-place-and-read.png",
+      "webm": "assets/media/guides/short-videos-20261106/remnant-place-and-read.webm"
+    },
+    "assets/media/guides/short-videos-20261106/remnant-place-and-read.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/short-videos-20261106/npc-appearance.mp4": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720,
+      "poster": "assets/media/guides/short-videos-20261106/npc-appearance.png",
+      "webm": "assets/media/guides/short-videos-20261106/npc-appearance.webm"
+    },
+    "assets/media/guides/short-videos-20261106/npc-appearance.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/short-videos-20261106/dialogue-branch.mp4": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720,
+      "poster": "assets/media/guides/short-videos-20261106/dialogue-branch.png",
+      "webm": "assets/media/guides/short-videos-20261106/dialogue-branch.webm"
+    },
+    "assets/media/guides/short-videos-20261106/dialogue-branch.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/short-videos-20261106/battleworks-first-attack.mp4": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720,
+      "poster": "assets/media/guides/short-videos-20261106/battleworks-first-attack.png",
+      "webm": "assets/media/guides/short-videos-20261106/battleworks-first-attack.webm"
+    },
+    "assets/media/guides/short-videos-20261106/battleworks-first-attack.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
     }
   }
 }

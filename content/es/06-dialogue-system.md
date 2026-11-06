@@ -20,7 +20,7 @@ translationMethod: assisted
 
 Construir un guía de la aldea: hablar abre un saludo, “Háblame de la aldea” abre una respuesta, y “Adiós” cierra la conversación.
 
-Estas capturas muestran **DRM 0.3.1 on Forge 1.20.1, in English**. El editor captura el uso de un ejemplo preparado que contiene el saludo y la respuesta.
+Las capturas estáticas muestran **DRM 0.3.1 on Forge 1.20.1, in English**. El editor captura el uso de un ejemplo preparado que contiene el saludo y la respuesta.
 
 ### 1. Abrir el editor de conversaciones
 
@@ -72,6 +72,8 @@ Si necesitas un NPC primero, sigue [DNPC setup](#dochi-npc-core/npc-core-setup).
 Vacíe ambas manos, hable con el NPC, luego verifique el saludo, la opción de respuesta y la opción de cierre en orden.
 
 ![La conversación del jugador se abrió interactuando con una guía DNPC llamada Oakridge, mostrando el saludo y dos opciones.](assets/media/guides/drm-031-forge1201/dialogue-npc-player.png "El resultado del jugador: Dialogue Text se convierte en la línea NPC, y cada etiqueta se convierte en una opción debajo de ella.")
+
+![Elegir la pregunta sobre la aldea y seguir la conversación hasta su respuesta.](assets/media/guides/short-videos-20261106/dialogue-branch.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. Una conversación preparada muestra la conexión Goto.")
 
 La primera opción abre la respuesta a continuación. Compruebe esta conexión, así como el saludo inicial.
 

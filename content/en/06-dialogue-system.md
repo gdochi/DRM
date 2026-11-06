@@ -18,7 +18,7 @@ tags:
 
 Build a village guide: talking opens a greeting, “Tell me about the village” opens a reply, and “Goodbye” closes the conversation.
 
-These captures show **DRM 0.3.1 on Forge 1.20.1, in English**. The editor captures use a prepared example containing the greeting and reply.
+The static screenshots show **DRM 0.3.1 on Forge 1.20.1, in English**. The editor captures use a prepared example containing the greeting and reply.
 
 ### 1. Open the conversation editor
 
@@ -70,6 +70,8 @@ If you need an NPC first, follow [DNPC setup](#dochi-npc-core/npc-core-setup). R
 Empty both hands, talk to the NPC, then check the greeting, reply choice and closing choice in order.
 
 ![The player conversation opened by interacting with a DNPC named Oakridge guide, showing the greeting and two choices.](assets/media/guides/drm-031-forge1201/dialogue-npc-player.png "The player's result: Dialogue Text becomes the NPC line, and each Label becomes a choice below it.")
+
+![Choose the village question and follow the conversation into its reply.](assets/media/guides/short-videos-20261106/dialogue-branch.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, English UI. A prepared conversation demonstrates the Goto branch.")
 
 The first choice opens the reply below. Check this connection as well as the initial greeting.
 

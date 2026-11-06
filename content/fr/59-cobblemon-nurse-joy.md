@@ -36,7 +36,7 @@ Le traitement et les actions proches ont un comportement et un ordre fixes. Reno
 
 ## Relier la machine de guérison
 
-![Appliquer le rôle à un PNJ portant le skin de Nurse Joy, relier la machine puis soigner et revenir.](assets/media/guides/short-gifs-20261105/nurse-joy-treatment.gif "Capture réelle : Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, interface anglaise. Bulbizarre est passé de 1 à ses 19 PV maximum et le PNJ est revenu à son point de départ.")
+![Appliquer le rôle à un PNJ portant le skin de Nurse Joy, relier la machine puis soigner et revenir.](assets/media/guides/short-videos-20261106/nurse-joy-treatment.mp4 "Capture réelle : Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, interface anglaise. Bulbizarre est passé de 1 à ses 19 PV maximum et le PNJ est revenu à son point de départ.")
 
 La capture utilise le [skin Nurse Joy de caidencestudio](https://www.planetminecraft.com/skin/nurse-joy-5942860/) avec le modèle aux bras fins.
 

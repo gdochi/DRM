@@ -23,6 +23,8 @@ Select **Appearance & Model**. With **Humanoid**, use the finder beside **Skin**
 
 ![DNPC 0.1.2 on NeoForge 1.21.1, showing Appearance & Model with Humanoid, Skin, Scale and Slim arms.](assets/media/guides/dnpc-012-neo1211/dnpc-appearance.png "Check appearance in the middle preview. Scale changes the model's overall size, rather than its workplace or attack range.")
 
+![Change Scale to 1.15, save the NPC and check the result in the world.](assets/media/guides/short-videos-20261106/npc-appearance.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, English UI. Appearance & Model → Scale → Save to NPC.")
+
 Use the poser to make poses and join them into animations. For randomized equipment, choose candidates and chances for each slot.
 
 ### Find the weapon and ammunition slots

@@ -71,6 +71,8 @@ Empty both hands, talk to the NPC, then check the greeting, reply choice and clo
 
 ![The player conversation opened by interacting with a DNPC named Oakridge guide, showing the greeting and two choices.](assets/media/guides/drm-031-neo1211/dialogue-npc-player.png "The player's result: Dialogue Text becomes the NPC line, and each Label becomes a choice below it.")
 
+![Choose the village question and follow the conversation into its reply.](assets/media/guides/short-videos-20261106/dialogue-branch.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, English UI. A prepared conversation demonstrates the Goto branch.")
+
 The first choice opens the reply below. Check this connection as well as the initial greeting.
 
 ![The reply after selecting Tell me about the village, with directions to the inn and a closing choice.](assets/media/guides/drm-031-neo1211/dialogue-npc-reply.png "Goto opens dialogue_reply_1. Give the reply a way to continue, return or close too.")

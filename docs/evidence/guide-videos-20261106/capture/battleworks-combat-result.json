@@ -1,0 +1,349 @@
+{
+  "playerHealth": 16.0,
+  "targetUuid": "00000000-0000-0000-0000-000000000001",
+  "file": "training/first_sword.json",
+  "document": {
+    "schema": "dochi.battleworks.v1",
+    "id": "new_battlework",
+    "displayName": "New Battlework",
+    "enabled": true,
+    "description": "",
+    "combat": {
+      "suppressNativeAttacks": true,
+      "suppressCustomNpcScripts": false,
+      "engageDelayMin": 10,
+      "engageDelayMax": 18,
+      "combatResetDelayTicks": 100,
+      "retryDelayTicks": 10,
+      "targeting": {
+        "scanWhenNoTarget": true,
+        "scanRange": 16.0,
+        "requireLineOfSight": false,
+        "fovDegrees": 360.0,
+        "chaseTarget": true,
+        "faceTarget": true,
+        "chaseSpeed": 1.0,
+        "preferredDistance": 2.0
+      },
+      "parry": {
+        "mode": "magic_and_melee",
+        "magicProjectileDeflect": true,
+        "betterCombatMelee": true,
+        "inputWindowTicks": 6,
+        "cooldownTicks": 18,
+        "frontAngleDegrees": 100.0,
+        "maxDistance": 3.2,
+        "staggerTicks": 40,
+        "riposteWindowTicks": 50,
+        "riposteDamageMultiplier": 2.5,
+        "usePosture": false,
+        "maxPosture": 100.0
+      },
+      "bgm": {
+        "enabled": false,
+        "soundId": "",
+        "volume": 0.7,
+        "pitch": 1.0
+      }
+    },
+    "npcStats": {
+      "enabled": false,
+      "maxHealth": 0.0,
+      "movementSpeed": 0.0,
+      "phase2MovementSpeed": 0.0,
+      "phase3MovementSpeed": 0.0,
+      "followRange": 0.0,
+      "idleRegenPerSecond": 0.0,
+      "combatRegenPerSecond": 0.0
+    },
+    "manager": {
+      "globalCooldownTicks": 0,
+      "avoidImmediateRepeat": true,
+      "maxCombo": 3,
+      "maxComboPhase2": -1,
+      "maxComboPhase3": -1,
+      "selectionFloor": 0.68,
+      "samePatternPenalty": 1.0,
+      "recentPatternPenalty": 0.55,
+      "sameRolePenalty": 0.45,
+      "randomFactor": 0.12,
+      "mobilityUrgencyTicks": 80,
+      "mobilityBonus": 0.8,
+      "maxStationaryStreak": 2,
+      "stationaryChainPenalty": 0.25,
+      "recoveryMin": 8,
+      "recoveryMax": 14
+    },
+    "phases": [
+      {
+        "index": 1,
+        "id": "phase_1",
+        "name": "Phase 1",
+        "enabled": true,
+        "enterAtHealthRatio": 1.0,
+        "transitionPatternId": ""
+      },
+      {
+        "index": 2,
+        "id": "phase_2",
+        "name": "Phase 2",
+        "enabled": true,
+        "enterAtHealthRatio": 0.58,
+        "transitionPatternId": ""
+      }
+    ],
+    "hitboxes": [
+      {
+        "id": "assisted_hitbox",
+        "name": "Wide Sweep Hitbox",
+        "shape": "sweep",
+        "damage": 4.0,
+        "radius": 2.4,
+        "width": 1.5,
+        "height": 1.8,
+        "depth": 1.5,
+        "thickness": 0.5,
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "offsetX": 0.0,
+        "offsetY": 0.0,
+        "offsetZ": 0.0,
+        "sweepSteps": 6,
+        "arcStartYaw": 90.0,
+        "arcStartPitch": 20.0,
+        "arcEndYaw": -90.0,
+        "arcEndPitch": -20.0,
+        "lockedTargetOnly": false,
+        "effectId": "",
+        "effectAmplifier": 0,
+        "effectDurationTicks": 100,
+        "effectShowParticles": true,
+        "effectAmbient": false,
+        "points": []
+      }
+    ],
+    "particleEffects": [],
+    "patterns": [
+      {
+        "id": "assisted_pattern",
+        "name": "Wide Sweep",
+        "enabled": true,
+        "role": "melee",
+        "trigger": {
+          "type": "manager",
+          "chancePercent": 100.0,
+          "chancePhase2": -1.0,
+          "chancePhase3": -1.0,
+          "healthRatio": 0.5,
+          "minimumDamage": 1.0,
+          "cooldownTicks": 100,
+          "queueTicks": 200,
+          "oncePerCombat": true,
+          "busyPolicy": "queue",
+          "interruptActive": false,
+          "cancelDamage": false,
+          "frontAngleDegrees": 360.0,
+          "windowTicks": 20,
+          "threshold": 1.0,
+          "thresholdPhase2": -1.0,
+          "thresholdPhase3": -1.0,
+          "successState": ""
+        },
+        "priority": 0,
+        "minPhase": 1,
+        "maxPhase": 16,
+        "minDistance": 0.0,
+        "maxDistance": 3.5,
+        "maxVertical": 32.0,
+        "minBossHealth": 0.0,
+        "maxBossHealth": 1.0,
+        "minTargetHealth": 0.0,
+        "maxTargetHealth": 1.0,
+        "requiresLineOfSight": true,
+        "targetRequired": true,
+        "mobility": false,
+        "stationary": false,
+        "uninterruptible": false,
+        "parryable": true,
+        "postureDamageOnParry": 25.0,
+        "cooldownTicks": 40,
+        "recoveryTicks": 8,
+        "recoveryMinTicks": -1,
+        "recoveryMaxTicks": -1,
+        "comboChancePercent": 100.0,
+        "comboChancePhase2": -1.0,
+        "comboChancePhase3": -1.0,
+        "positioning": "neutral",
+        "conditions": [],
+        "score": {
+          "base": 10.0,
+          "idealDistance": -1.0,
+          "distancePeak": 0.0,
+          "phase2Bonus": 0.0,
+          "phase3Bonus": 0.0,
+          "missingBossHealth": 0.0,
+          "lowTargetAt": -1.0,
+          "lowTargetBonus": 0.0,
+          "closeAt": -1.0,
+          "closeBonus": 0.0,
+          "farAt": -1.0,
+          "farBonus": 0.0,
+          "noLineOfSightBonus": 0.0,
+          "lineOfSightBonus": 0.0,
+          "mobilityAgeRate": 0.0,
+          "mobilityAgeCap": 30.0,
+          "stationaryStreakRate": 0.0,
+          "closingAt": -1.0,
+          "closingBonus": 0.0,
+          "retreatingAt": -1.0,
+          "retreatingBonus": 0.0,
+          "targetSpeedRate": 0.0,
+          "targetSpeedCap": 0.0,
+          "phaseWeights": {}
+        },
+        "windup": {
+          "id": "windup",
+          "ticks": 24,
+          "faceTarget": true,
+          "stopHorizontal": true,
+          "movement": {
+            "type": "none",
+            "speed": 0.0,
+            "direction": "toward",
+            "radius": 6.0,
+            "distance": 4.0,
+            "durationTicks": 20,
+            "arriveDistance": 1.5,
+            "slowDistance": 4.0,
+            "leadTicks": 0,
+            "tracking": false,
+            "switchTicks": 6,
+            "verticalPower": 0.72,
+            "segments": []
+          },
+          "animation": {
+            "explicitSelection": false,
+            "provider": "none",
+            "id": "",
+            "playback": "once",
+            "speed": 1.0,
+            "fadeTicks": 2
+          },
+          "telegraph": {
+            "particle": "",
+            "interval": 1,
+            "count": 1,
+            "spread": 0.0,
+            "yOffset": 0.55,
+            "speed": 0.01
+          },
+          "events": []
+        },
+        "action": {
+          "id": "action",
+          "ticks": 16,
+          "faceTarget": false,
+          "stopHorizontal": true,
+          "movement": {
+            "type": "none",
+            "speed": 0.0,
+            "direction": "toward",
+            "radius": 6.0,
+            "distance": 4.0,
+            "durationTicks": 20,
+            "arriveDistance": 1.5,
+            "slowDistance": 4.0,
+            "leadTicks": 0,
+            "tracking": false,
+            "switchTicks": 6,
+            "verticalPower": 0.72,
+            "segments": []
+          },
+          "animation": {
+            "explicitSelection": true,
+            "provider": "vanilla_swing",
+            "id": "main_hand",
+            "playback": "once",
+            "speed": 1.0,
+            "fadeTicks": 0
+          },
+          "telegraph": {
+            "particle": "",
+            "interval": 1,
+            "count": 1,
+            "spread": 0.0,
+            "yOffset": 0.55,
+            "speed": 0.01
+          },
+          "events": [
+            {
+              "id": "strike",
+              "at": 3,
+              "interval": 0,
+              "count": 1,
+              "chancePercent": 100.0,
+              "actions": [
+                {
+                  "type": "dochi_battleworks:hitbox",
+                  "chancePercent": 100.0,
+                  "params": {
+                    "hitboxId": "assisted_hitbox"
+                  }
+                }
+              ],
+              "conditions": []
+            }
+          ]
+        },
+        "recovery": {
+          "id": "recovery",
+          "ticks": 24,
+          "faceTarget": false,
+          "stopHorizontal": true,
+          "movement": {
+            "type": "none",
+            "speed": 0.0,
+            "direction": "toward",
+            "radius": 6.0,
+            "distance": 4.0,
+            "durationTicks": 20,
+            "arriveDistance": 1.5,
+            "slowDistance": 4.0,
+            "leadTicks": 0,
+            "tracking": false,
+            "switchTicks": 6,
+            "verticalPower": 0.72,
+            "segments": []
+          },
+          "animation": {
+            "explicitSelection": false,
+            "provider": "none",
+            "id": "",
+            "playback": "once",
+            "speed": 1.0,
+            "fadeTicks": 2
+          },
+          "telegraph": {
+            "particle": "",
+            "interval": 1,
+            "count": 1,
+            "spread": 0.0,
+            "yOffset": 0.55,
+            "speed": 0.01
+          },
+          "events": []
+        },
+        "combos": [],
+        "tags": [],
+        "canvasX": 0.0,
+        "canvasY": 0.0
+      }
+    ],
+    "death": {
+      "enabled": false,
+      "durationTicks": 60,
+      "lockCorpse": true,
+      "events": []
+    }
+  }
+}

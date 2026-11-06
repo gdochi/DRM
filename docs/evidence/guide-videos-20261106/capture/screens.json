@@ -1,0 +1,167 @@
+[
+  {
+    "id": "npc-appearance-video",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "editorId": "npc_basic",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "scene:video-framing",
+      "wait:20",
+      "look-at:npc",
+      "scene:bed-editor",
+      "wait:20",
+      "Appearance \u0026 Model",
+      "wait:20",
+      "clear:chat",
+      "gif:start:npc-appearance",
+      "input:scale\u003d1.15",
+      "wait:25",
+      "Save to NPC",
+      "wait:35",
+      "scene:verify-scale",
+      "look-at:npc",
+      "close:screen",
+      "wait:35",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dialogue-applied-to-dnpc",
+    "status": "verified_server_binding"
+  },
+  {
+    "id": "dialogue-choice-navigation",
+    "status": "verified_runtime_node",
+    "detail": "dialogue_reply_1"
+  },
+  {
+    "id": "dialogue-branch-video",
+    "screenClass": "net.dochi.gameeditor.client.DialogueRuntimeScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "apply:dialogue",
+      "wait:40",
+      "verify:npc-dialogue",
+      "close:screen",
+      "clear:chat",
+      "gif:start:dialogue-branch",
+      "interact:npc",
+      "wait:30",
+      "runtime-choice:Tell me about the village.",
+      "wait:35",
+      "verify:node\u003ddialogue_reply_1",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-assist",
+    "status": "verified_generated_document",
+    "detail": ""
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\short-videos-neo1211-en-04\\game\\config\\dochi_rpg_maker\\mobs\\patterns\\training\\first_sword.json"
+  },
+  {
+    "id": "battleworks-video-setup",
+    "screenClass": "net.dochi.cnpcirons.battleworks.client.BattleworkEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "Create New",
+      "Pattern Build Assist",
+      "Beginner",
+      "Wide Sweep",
+      "Measured",
+      "Create Pattern",
+      "Combat Rules",
+      "Manager",
+      "input:same_pattern\u003d1.0",
+      "Combat",
+      "input:fov\u003d360",
+      "input:scan_range\u003d16",
+      "verify:bw-document",
+      "Save As",
+      "input:save_as\u003dtraining/first_sword.json",
+      "Save",
+      "wait:60",
+      "verify:file\u003dconfig/dochi_rpg_maker/mobs/patterns/training/first_sword.json",
+      "Save",
+      "wait:40"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [
+      {
+        "label": "scan_range",
+        "active": true
+      },
+      {
+        "label": "fov",
+        "active": true
+      },
+      {
+        "label": "chase_speed",
+        "active": true
+      },
+      {
+        "label": "preferred_distance",
+        "active": true
+      },
+      {
+        "label": "engage_min",
+        "active": true
+      },
+      {
+        "label": "engage_max",
+        "active": true
+      },
+      {
+        "label": "combat_reset",
+        "active": true
+      },
+      {
+        "label": "retry_delay",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "battleworks-combat",
+    "status": "verified_server_health_reduction",
+    "detail": "16.0"
+  },
+  {
+    "id": "battleworks-first-attack-video",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "editorId": "battleworks",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "close:screen",
+      "look-at:npc",
+      "clear:chat",
+      "gif:start:battleworks-first-attack",
+      "fixture:bw-combat",
+      "wait:120",
+      "verify:bw-hit",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

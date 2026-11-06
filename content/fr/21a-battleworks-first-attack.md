@@ -130,6 +130,8 @@ Vous pouvez également télécharger le [UI-sauvegardé first_sword.json ](./ass
 
 ![Le joueur de survie faisant face au DNPC après avoir reçu des dégâts de balayage large.](assets/media/guides/battleworks-016-neo1211/battleworks-first-fight.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. La santé du serveur du joueur non blindé est passée de 20 à 12. Le apparition naturel et la régénération ont été exclus dans le monde de capture possédé, et la cible PNJ a été vérifiée en tant que ce joueur. Ce total n'est pas les dégâts d'une seule attaque.")
 
+![Tester Wide Sweep sur un joueur en Survie et observer sa santé.](assets/media/guides/short-videos-20261106/battleworks-first-attack.mp4 "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. La santé sur le serveur est passée de 20 à 16.")
+
 ## 9. Changer une valeur à la fois
 
 Tout d'abord changer Windup de 24 à 40, enregistrer/appliquer, et observer les 0.8 secondes supplémentaires. Restaurez-le, puis remplacez Dégâts de 4 par 2. Enfin, déplacez Event Tick de 3 vers 8 et comparez le timing des contacts.

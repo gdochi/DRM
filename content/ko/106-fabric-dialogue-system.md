@@ -71,6 +71,8 @@ NPC가 없다면 [DNPC 시작하기](#dochi-npc-core/npc-core-setup)에서 먼�
 
 ![Oakridge guide라는 DNPC에 말을 걸어 열린 플레이어 대화창. 인사말과 두 선택지가 표시됩니다.](assets/media/guides/drm-031-neo1211/dialogue-npc-player.png "플레이어가 보는 결과입니다. 위의 Text에 쓴 내용이 대사로, Label에 쓴 내용이 아래 선택지로 표시됩니다.")
 
+![마을에 관한 선택지를 고르면 인사말에서 안내 답변으로 넘어가는 과정.](assets/media/guides/short-videos-20261106/dialogue-branch.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, 영문 UI. 준비한 대화 예제로 Goto 분기를 보여 줍니다.")
+
 첫 선택지를 누르면 아래처럼 답변 노드의 대사로 바뀝니다. 첫 화면이 열린 것에 그치지 않고 선택지 연결도 여기서 확인합니다.
 
 ![마을을 알려 달라는 선택지를 누른 뒤 답변 노드가 열린 플레이어 화면. 여관 위치 안내와 닫기 선택지가 표시됩니다.](assets/media/guides/drm-031-neo1211/dialogue-npc-reply.png "Goto가 가리킨 dialogue_reply_1의 대사가 표시됩니다. 답변 뒤 돌아갈 곳이나 닫기 선택지도 준비합니다.")

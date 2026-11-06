@@ -81,6 +81,25 @@ final class GuideScenes {
             if(droppedFrames!=0)throw new IllegalStateException("Capture writer dropped "+droppedFrames+" frames; retry rather than publish a stuttering clip");
             Files.writeString(output.resolve(completed+"-frames.json"),new GsonBuilder().setPrettyPrinting().create().toJson(frames));return;
         }
+        if(action.equals("scene:video-framing")) {
+            mc.setScreen(null);
+            mc.options.fov().set(60);mc.options.bobView().set(false);
+            mc.getSingleplayerServer().submit(()->{
+                var player=mc.getSingleplayerServer().getPlayerList().getPlayer(mc.player.getUUID());
+                var npc=(Mob)player.serverLevel().getEntity(npcId);
+                npc.setNoAi(true);npc.moveTo(npc.getX(),npc.getY(),npc.getZ(),0,0);
+                npc.setYHeadRot(0);npc.setYBodyRot(0);
+                player.teleportTo(npc.getX(),npc.getY(),npc.getZ()+2.5);return true;
+            }).get(5,TimeUnit.SECONDS);return;
+        }
+        if(action.equals("scene:verify-scale")) {
+            double scale=mc.getSingleplayerServer().submit(()->{try{
+                var npc=mc.getSingleplayerServer().overworld().getEntity(npcId);
+                return ((Number)get(call(npc,"settings"),"scale")).doubleValue();
+            }catch(Exception e){throw new RuntimeException(e);}}).get(5,TimeUnit.SECONDS);
+            if(Math.abs(scale-1.15)>.001)throw new IllegalStateException("NPC scale was not saved: "+scale);
+            Files.writeString(output.resolve("npc-scale-verified.json"),"{\"savedScale\":"+scale+"}\n");return;
+        }
         if(action.endsWith("-setup")) {
             String kind=action.substring(6,action.length()-6);
             mc.setScreen(null);mc.options.fov().set(55);mc.options.bobView().set(false);

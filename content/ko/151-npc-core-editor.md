@@ -23,6 +23,8 @@ audience: 제작자 / 서버 운영자
 
 ![DNPC 0.1.2 NeoForge 1.21.1의 Appearance & Model. 오른쪽에 Humanoid 모델, Skin, Scale과 Slim arms 설정이 보입니다.](assets/media/guides/dnpc-012-neo1211/dnpc-appearance.png "외형은 가운데 미리보기에서 확인합니다. 이 화면의 Scale은 전체 외형 크기이며, 작업 장소나 공격 범위를 정하는 값이 아닙니다.")
 
+![Scale을 1.15로 바꾸고 NPC에 저장한 뒤 월드에서 확인하는 과정.](assets/media/guides/short-videos-20261106/npc-appearance.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, 영문 UI. Appearance & Model → Scale → Save to NPC 순서입니다.")
+
 포저에서는 자세를 만들고 여러 자세를 이어 움직임을 만듭니다. 장비를 무작위로 바꾸고 싶으면 슬롯별 후보와 확률을 정합니다.
 
 ### 무기·탄약 설정 찾기

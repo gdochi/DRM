@@ -100,6 +100,10 @@
   document.documentElement.lang = config.locales?.[state.locale]?.htmlLang || state.locale;
 
   const app = document.getElementById("app");
+  const guideMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  guideMotion.addEventListener("change", () => {
+    if (guideMotion.matches) app.querySelectorAll(".doc-video video").forEach(video => video.pause());
+  });
 
   function icon(name) {
     const icons = {
@@ -1000,6 +1004,10 @@
       openImage(link);
     }));
     app.querySelectorAll(".doc-image a").forEach(link => { link.setAttribute("aria-label", `${ui("zoom")}: ${link.querySelector("img").alt}`); link.title = ui("zoom"); });
+    if (guideMotion.matches) app.querySelectorAll(".doc-video video").forEach(video => {
+      video.removeAttribute("autoplay");
+      video.pause();
+    });
     if (activeDoc) {
       bindToc();
       if (product === "mwent" && activeDoc.slug === "card-catalog") bindCatalogFilter();

@@ -1,0 +1,1830 @@
+{
+  "description": "Screenshot environments from reviewed capture records; these describe the images, not a mod compatibility matrix.",
+  "captures": {
+    "assets/media/guides/spawn-control-015-fabric263/guard-locations-en.png": {
+      "minecraft": "26.3",
+      "loader": "Fabric",
+      "locale": "en_us",
+      "width": 854,
+      "height": 480
+    },
+    "assets/media/guides/spawn-control-015-fabric263/guard-members-en.png": {
+      "minecraft": "26.3",
+      "loader": "Fabric",
+      "locale": "en_us",
+      "width": 854,
+      "height": 480
+    },
+    "assets/media/guides/short-gifs-20261105/nurse-joy-treatment.gif": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/short-gifs-20261105/remnant-place-and-read.gif": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/drm-031-neo1211/editor-selector.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/shop-settings.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/shop-restock.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/shop-player-preview.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/gui-maker.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/currency-editor.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/teleporter-editor.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/remnant-editor.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/tooltip-maker.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/scene-maker.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-start-routes.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-save-as.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-save-result.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-npc-player.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-text.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-choices.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/shop-bread-product.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-choice-actions.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/shop-bread-payment.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/gui-text.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/currency-physical.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/catalog.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/mapicon-012-neo1211/type-defaults.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/workbench.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/quest-info.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/remnant-view-conditions.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-012-neo1211/dnpc-appearance.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-012-neo1211/dnpc-combat.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-combat.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-assist.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/minigames-test-play.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/npc-apply-result.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-npc-reply.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/minigames-editor.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/minigames-slots.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/minigames-memory.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/minigames-mwent.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-012-neo1211/dnpc-schedule-add.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-012-neo1211/dnpc-schedule-load.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/armor-014-neo1211/armor-config.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/minigames-card-basic.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/minigames-card-stats.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/minigames-card-abilities.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/minigames-card-packs.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-012-neo1211/dnpc-inventory.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-012-neo1211/dnpc-drm.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-012-neo1211/dnpc-templates-save.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-012-neo1211/employment-npc.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-012-neo1211/employment-contract.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/armor-014-neo1211/shared-armor.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/armor-014-neo1211/armor-compatibility.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-012-neo1211/dnpc-action-picker.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/minigames-mwent-play.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-013-neo1211/dnpc-identity.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/minigames-mwent-mulligan.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/armor-014-neo1211/armor-equipped.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-party.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-config.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-stats.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-moves.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-pokemon-picker.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-nurse.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-pokemart.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-catalog.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-starter.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-scheduler.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-encounters.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-presentation.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-rounds.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-encounter.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-conditions.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-after-actions.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-sounds.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-party-generator.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-battle-items.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-general-items.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-nurse-save.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-starter-dialogue.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-starter-save.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-015-neo1211/mwent-battle.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-overview.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-senses.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-targets.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-ammo.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-cover.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-gun.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-fire.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/hud-loaded-world.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-013-neo1211/dnpc-cooking.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-easy.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-presets.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-pose.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-clones.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-mercenary.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-traps.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-expanded-031-neo1211/dwe-ai.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-expanded-031-neo1211/dwe-gimmick.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/editor-selector.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/dialogue-text.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/gui-maker.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/currency-editor.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/remnant-editor.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/popup-maker.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/tooltip-maker.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-starter-runtime.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-starter-granted.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-expanded-031-neo1211/dwe-reactions.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-expanded-031-neo1211/dwe-crew.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-pose-editor.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/dialogue-start-routes.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/dialogue-choices.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/dialogue-choice-actions.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/dialogue-save-result.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/npc-apply-result.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/dialogue-npc-player.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/shop-bread-product.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/shop-bread-payment.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/shop-restock.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/shop-player-preview.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/gui-text.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/currency-physical.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-013-neo1211/dnpc-cooking-beef.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/quest-info.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/quest-objective-detail.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/remnant-view-conditions.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/dialogue-blueprint.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/registry-faction.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/registry-stat_builder.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/registry-item_editor.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/teleporter-destinations.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/teleporter-conditions.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/teleporter-presentation.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/shop-settings.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/teleporter-destinations.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/forge-hud-health.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/teleporter-npc-player.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/teleporter-arrived.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/forge-hud-guide.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/gui-button-config.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/currency-item-prices.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/native-hud-health.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/currency-emerald-prices.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/gui-vanilla-buttons.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-assist-built.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-rule.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-placed.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/shop-bread-purchased.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/popup-village-save.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/popup-village-runtime.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/shop-bread-selected.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/faction-editor.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-hitbox-geometry.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-manager.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-phases.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-death.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-particles.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/currency-emerald-prices.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/hud-currency-picker.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-bgm.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-first-fight.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/hud-currency-picker.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/popup-village-save.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/popup-village-runtime.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-conditions.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-settings.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-destruction.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-effects.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-appearance.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/mapicon-012-neo1211/mapicon-minimap.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/mapicon-012-neo1211/mapicon-npc-saved.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/mapicon-012-neo1211/mapicon-rule-added.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/shop-bread-selected.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/shop-bread-purchased.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-013-neo1211/dnpc-template-saved.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-npc-template-picker.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-npc-template-saved.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-block-apply.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-preset-scope.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-target-preset-saved.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-diagnostics-check.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-diagnostics-spawn.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-template-runtime.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-vehicle-picker.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-vehicle-spawner-saved.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/spawn-control-014-neo1211/spawn-vehicle-runtime.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-passive-health.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-stage-movement.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-stage-animation.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-save-position.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-projectile.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-item-reward-editor.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-choice-condition-tag.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-reward-once-actions.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-reward-once-condition.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-reward-once-hidden.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/dialogue-reward-template-load.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/dialogue-reward-template-actions.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201/dialogue-reward-template-hidden.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-013-neo263/core263-dnpc-identity.png": {
+      "minecraft": "26.3",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo263/core263-independent-text.png": {
+      "minecraft": "26.3",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo263/core263-item-editor.png": {
+      "minecraft": "26.3",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/admin-server-policy.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/admin-overview.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/dialogue-choice-pulse.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/admin-tag-added.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-neo1211/roulette-native-world-stopped.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/minigames-016-neo1211/roulette-native-entry.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "width": 1280,
+      "height": 720
+    },
+    "assets/media/guides/minigames-016-neo1211/mwent-acquisition-general.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-neo1211/mwent-acquisition-trades.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-neo1211/mwent-acquisition-chests.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-neo1211/mwent-acquisition-pools.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-neo1211/roulette-editor-rules.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-neo1211/roulette-editor-prizes.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-neo1211/mwent016-faction-select.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-neo1211/mwent016-deck-catalog.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-neo1211/mwent016-tactic-options.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-neo1211/mwent016-golem-installed.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-neo1211/mwent016-golem-transformed.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/core-npc-spawner-rules.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/remnant-message-ready.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/remnant-marker-picker.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/remnant-populated-world-list.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/remnant-placed-setter.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/gui-custom-png-search.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-neo1211/gui-custom-png-applied.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/warfare-031-neo1211/dw-server-ai-policy.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201-apis/api-combat-switches.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201-apis/api-hitbox-one-shot.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201-apis/api-model-zombie.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201-apis/api-stored-condition.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201-apis/api-effect-speed.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201-apis/api-skill-fireball.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/drm-031-forge1201-apis/api-popup-shown.png": {
+      "minecraft": "1.20.1",
+      "loader": "Forge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/battleworks-016-neo1211/battleworks-boss-phases-saved.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-trainer-id-entry.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-battle-rules.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-battle-rules-items.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-layer-content.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211/cobble-layer-animation.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-flow/cobble-region-captured.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-flow/cobble-presentation-fx.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-flow/cobble-mart-trades.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-flow/cobble-mart-auction.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-flow/cobble-trainer-applied.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-flow/cobble-clone-library.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-player/cobble-sales-purchased.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-player/cobble-trade-player.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-player/cobble-trade-completed.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-player/cobble-auction-player.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-player/cobble-auction-listed.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-player/cobble-auction-inbox.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-029-neo1211-player/cobble-auction-claimed.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-013-neo1211/dnpc-movement.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/dnpc-013-neo1211/dnpc-weapons.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/minigames-016-final-neo1211/roulette-editor-rules.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    }
+  }
+}

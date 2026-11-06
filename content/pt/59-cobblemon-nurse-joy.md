@@ -36,7 +36,7 @@ O tratamento e as ações próximas têm um comportamento e ordem fixos. Renomar
 
 ## Ligar a máquina de cura
 
-![Aplicar a função a um NPC com a skin de Nurse Joy, ligar a máquina, curar e regressar.](assets/media/guides/short-gifs-20261105/nurse-joy-treatment.gif "Captura real: Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, interface em inglês. Bulbasaur recuperou de 1 para os seus 19 PV máximos e o NPC regressou à posição inicial.")
+![Aplicar a função a um NPC com a skin de Nurse Joy, ligar a máquina, curar e regressar.](assets/media/guides/short-videos-20261106/nurse-joy-treatment.mp4 "Captura real: Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, interface em inglês. Bulbasaur recuperou de 1 para os seus 19 PV máximos e o NPC regressou à posição inicial.")
 
 A gravação utiliza a [skin de Nurse Joy de caidencestudio](https://www.planetminecraft.com/skin/nurse-joy-5942860/) com o modelo de braços finos.
 

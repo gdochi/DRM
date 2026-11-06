@@ -73,6 +73,8 @@ Esvazie as duas mãos, fale com o NPC, depois verifique a saudação, responda e
 
 ![A conversa do jogador foi aberta interagindo com um DNPC Guia Oakridge, mostrando a saudação e duas escolhas.](assets/media/guides/drm-031-neo1211/dialogue-npc-player.png "O resultado do jogador: Dialogue Text torna-se a linha NPC, e cada etiqueta torna-se uma escolha abaixo dela.")
 
+![Escolher a pergunta sobre a vila e acompanhar a conversa até à resposta.](assets/media/guides/short-videos-20261106/dialogue-branch.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, interface em inglês. Uma conversa preparada demonstra a ligação Goto.")
+
 A primeira escolha abre a resposta abaixo. Verifique esta conexão, bem como a saudação inicial.
 
 ![A resposta depois de selecionar Conte-me sobre a aldeia, com instruções para a pousada e uma escolha final.](assets/media/guides/drm-031-neo1211/dialogue-npc-reply.png "Vai abrir dialogue_reply_1. Dê a resposta uma maneira de continuar, voltar ou fechar também.")

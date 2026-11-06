@@ -37,7 +37,7 @@ Search the action list for jobs such as lumbering, transport or riding. Categori
 
 ## Assign a bed
 
-![Choose Assign bed in Houses, bind and save the bed, then watch the NPC walk over and sleep.](assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif "Recorded in game with DNPC 0.1.3 / NeoForge 1.21.1, English UI. A night schedule was prepared in the capture world; bed binding and actual sleep were verified.")
+![Choose Assign bed in Houses, bind and save the bed, then watch the NPC walk over and sleep.](assets/media/guides/short-videos-20261106/dnpc-bed-assignment.mp4 "Recorded in game with DNPC 0.1.3 / NeoForge 1.21.1, English UI. A night schedule was prepared in the capture world; bed binding and actual sleep were verified.")
 
 Choose **Houses → Assign bed**, then **Shift+right-click** the intended bed in the world. Back in the editor, check **Bed assigned** and use **Save to NPC**. Add **Sleep in assigned bed** to the night period and turn on **Enable schedule**. Setting a home's location and assigning its bed are separate steps.
 

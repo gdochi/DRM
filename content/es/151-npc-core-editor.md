@@ -25,6 +25,8 @@ Seleccione **Appearance & Model**. Con **Humanoid**, use el buscador al lado **S
 
 ![DNPC 0.1.2 en NeoForge 1.21.1, mostrando Appearance & Model con Humanoid, Skin, Scale y Slim arms.](assets/media/guides/dnpc-012-neo1211/dnpc-appearance.png "Compruebe la apariencia en la vista previa del medio. Scale cambia el tamaño total del modelo, en lugar de su lugar de trabajo o rango de ataque.")
 
+![Cambiar Scale a 1.15, guardar el PNJ y comprobarlo en el mundo.](assets/media/guides/short-videos-20261106/npc-appearance.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. Appearance & Model → Scale → Save to NPC.")
+
 Usa el poser para hacer poses y unirlas en animaciones. Para equipos aleatorios, elija candidatos y oportunidades para cada ranura.
 
 ### Encuentra el arma y las ranuras de municiones

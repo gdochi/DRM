@@ -39,7 +39,7 @@ Recherchez dans la liste des actions des emplois tels que l'exploitation foresti
 
 ## Attribuer un lit
 
-![Choisir Assign bed dans Houses, attribuer et enregistrer le lit, puis voir le PNJ marcher et dormir.](assets/media/guides/short-gifs-20261105/dnpc-bed-assignment.gif "Capture en jeu avec DNPC 0.1.3 / NeoForge 1.21.1, interface anglaise. Un horaire nocturne était préparé dans le monde de capture ; l'attribution du lit et le sommeil réel ont été vérifiés.")
+![Choisir Assign bed dans Houses, attribuer et enregistrer le lit, puis voir le PNJ marcher et dormir.](assets/media/guides/short-videos-20261106/dnpc-bed-assignment.mp4 "Capture en jeu avec DNPC 0.1.3 / NeoForge 1.21.1, interface anglaise. Un horaire nocturne était préparé dans le monde de capture ; l'attribution du lit et le sommeil réel ont été vérifiés.")
 
 Choisissez **Houses → Assign bed**, puis faites **Maj+clic droit** sur le lit. De retour dans l'éditeur, vérifiez **Bed assigned** et cliquez sur **Save to NPC**. Ajoutez **Sleep in assigned bed** à la période nocturne et activez **Enable schedule**. La position de la maison et son lit se définissent séparément.
 

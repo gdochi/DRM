@@ -130,6 +130,8 @@ Você também pode baixar o [ UI-salvo first_sword.json](./assets/media/battlewo
 
 ![O jogador de sobrevivência enfrenta o DNPC depois de receber dano de varredura larga.](assets/media/guides/battleworks-016-neo1211/battleworks-first-fight.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. A saúde do servidor de jogadores desarmados caiu de 20 para 12. A geração natural e a regeneração foram excluídas no mundo de captura de propriedade, e o alvo NPC foi verificado como este jogador. Este total não é o dano de um ataque.")
 
+![Testar Wide Sweep num jogador em Sobrevivência e observar a alteração da vida.](assets/media/guides/short-videos-20261106/battleworks-first-attack.mp4 "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. A vida no servidor passou de 20 para 16.")
+
 ## 9. Alterar um valor de cada vez
 
 Primeira mudança Windup de 24 para 40, salvar/aplicar, e observar o extra 0.8 segundos. Restaurar, em seguida, alterar Dano de 4 para 2. Finalmente, mova Event Tick de 3 para 8 e compare o tempo de contato.

@@ -20,7 +20,7 @@ translationMethod: assisted
 
 Construire un guide de village: parler ouvre une salutation, «Parlez-moi du village» ouvre une réponse, et «Au revoir» ferme la conversation.
 
-Ces captures montrent **DRM 0.3.1 on Forge 1.20.1, in English**. Les captures de l'éditeur utilisent un exemple préparé contenant la salutation et la réponse.
+Les captures statiques montrent **DRM 0.3.1 on Forge 1.20.1, in English**. Les captures de l'éditeur utilisent un exemple préparé contenant la salutation et la réponse.
 
 ### 1. Ouvrir l'éditeur de conversation
 
@@ -72,6 +72,8 @@ Si vous avez besoin d'un PNJ en premier, suivez [DNPC configuration](#dochi-npc-
 Videz les deux mains, parlez au PNJ, puis vérifiez la salutation, le choix de réponse et le choix de fermeture dans l'ordre.
 
 ![La conversation du joueur s'est ouverte en interagissant avec un DNPC nommé guide Oakridge, montrant le message d'accueil et deux choix.](assets/media/guides/drm-031-forge1201/dialogue-npc-player.png "Le résultat du joueur : Dialogue Text devient la ligne PNJ, et chaque Étiquette devient un choix en dessous.")
+
+![Choisir la question sur le village et suivre la conversation vers la réponse.](assets/media/guides/short-videos-20261106/dialogue-branch.mp4 "DRM 0.3.1 / DNPC 0.1.3 / NeoForge 1.21.1, interface anglaise. Une conversation préparée montre la liaison Goto.")
 
 Le premier choix ouvre la réponse ci-dessous. Vérifiez cette connexion ainsi que la salutation initiale.
 
