@@ -42,7 +42,16 @@ final class GuideScenes {
     private static final List<Future<?>> pending=new ArrayList<>();
     private static final List<JsonObject> frames=new ArrayList<>();
     private static final BlockPos MACHINE=new BlockPos(3,-60,0), BED=new BlockPos(3,-60,0);
+    private static JsonObject guiBounds(Object element)throws Exception{
+        if(element==null)throw new IllegalStateException("No selected GUI component");
+        JsonObject result=new JsonObject();for(String field:List.of("x","y","w","h"))result.addProperty(field,((Number)get(element,field)).intValue());return result;
+    }
     private static BlockPos marker;
+    private static Screen motionScreen;
+    private static String motionKind;
+    private static double motionX,motionY,motionDx,motionDy;
+    private static long motionStarted;
+    private static JsonObject motionBefore;
     static void abort(){recording="";frames.clear();}
 
     static void register(Path output){
@@ -54,6 +63,17 @@ final class GuideScenes {
     static void frame(Minecraft mc,Path output)throws Exception {
         if(recording.isEmpty()||mc.level==null||mc.player==null||frameFailure!=null)return;
         long now=System.nanoTime();if(now<nextFrameNanos)return;
+        if(motionScreen!=null){
+            double fraction=Math.min(1,(now-motionStarted)/1_000_000_000d);
+            double x=motionX+motionDx*fraction,y=motionY+motionDy*fraction;
+            if(!motionScreen.mouseDragged(x,y,0,motionDx/20,motionDy/20))throw new IllegalStateException("Native GUI drag rejected");
+            if(fraction>=1){
+                motionScreen.mouseReleased(x,y,0);
+                JsonObject report=new JsonObject();report.add("before",motionBefore);report.add("after",guiBounds(call(motionScreen,"selectedElement")));
+                Files.writeString(output.resolve("gui-motion-"+motionKind+".json"),new GsonBuilder().setPrettyPrinting().create().toJson(report));
+                motionScreen=null;
+            }
+        }
         nextFrameNanos=Math.max(nextFrameNanos+50_000_000L,now);
         Path folder=output.resolve(recording+"-frames");Files.createDirectories(folder);
         String file=String.format(Locale.ROOT,"%05d.png",frameNumber);
@@ -68,6 +88,29 @@ final class GuideScenes {
 
     static void perform(Minecraft mc,String action,int npcId,Path output)throws Exception {
         if(frameFailure!=null)throw new IllegalStateException("Frame writer failed",frameFailure);
+        if(action.startsWith("scene:gui-motion:")){
+            if(motionScreen!=null)throw new IllegalStateException("Previous drag is still active");
+            motionKind=action.substring("scene:gui-motion:".length());
+            Object element=call(mc.screen,"selectedElement");motionBefore=guiBounds(element);
+            int x=motionBefore.get("x").getAsInt(),y=motionBefore.get("y").getAsInt();
+            int w=motionBefore.get("w").getAsInt(),h=motionBefore.get("h").getAsInt();
+            boolean resize=motionKind.equals("resize");
+            int sx=x+(resize?w-2:w/2),sy=y+(resize?h-2:h/2);
+            double scale=((Number)call(mc.screen,"renderScale")).doubleValue();
+            motionX=((Number)call(mc.screen,"stageScreenX",sx)).doubleValue()*scale;
+            motionY=((Number)call(mc.screen,"stageScreenY",sy)).doubleValue()*scale;
+            motionDx=(((Number)call(mc.screen,"stageScreenX",sx+32)).doubleValue()*scale)-motionX;
+            motionDy=(((Number)call(mc.screen,"stageScreenY",sy+16)).doubleValue()*scale)-motionY;
+            if(!mc.screen.mouseClicked(motionX,motionY,0))throw new IllegalStateException("Native GUI drag start rejected");
+            motionScreen=mc.screen;motionStarted=System.nanoTime();return;
+        }
+        if(action.equals("scene:gui-verify")){
+            for(String kind:List.of("move","resize")){
+                JsonObject report=JsonParser.parseString(Files.readString(output.resolve("gui-motion-"+kind+".json"))).getAsJsonObject();
+                String field=kind.equals("move")?"x":"w";
+                if(report.getAsJsonObject("before").get(field).equals(report.getAsJsonObject("after").get(field)))throw new IllegalStateException("GUI "+kind+" did not change "+field);
+            }return;
+        }
         if(action.startsWith("gif:start:")) {
             if(!recording.isEmpty())throw new IllegalStateException("Recording already active");
             recording=action.substring(10);if(!recording.matches("[a-z0-9-]+"))throw new IllegalArgumentException(recording);

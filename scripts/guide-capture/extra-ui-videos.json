@@ -1,0 +1,6 @@
+[
+  {"id":"gui-drag-resize-video","screen":"GuiMakerScreen","actions":["+ Text","wait:20","gif:start:gui-drag-resize","scene:gui-motion:move","wait:20","scene:gui-motion:resize","wait:20","scene:gui-verify","wait:20","gif:stop"]},
+  {"id":"video-shop-setup","screen":"NpcShopEditorScreen","actions":["Save As","input:shopSaveAsName=village_shop","Save As","wait:40","verify:file=config/dochi_rpg_maker/npc_shops/village_shop.json"]},
+  {"id":"shop-purchase-video","screen":"NpcApplyTargetScreen","actions":["NPC Shop JSON","wait:20","candidate:village_shop","apply:shop-file","wait:40","fixture:shop-funds","fixture:approach-npc","wait:20","look-at:npc","interact:shop","wait:40","clear:chat","gif:start:shop-purchase","shop-check:1","wait:20","Buy Selected","wait:35","verify:shop-purchase","wait:20","gif:stop"]},
+  {"id":"mwent-golem-video","editor":"dochi_minigames:editor","actions":["Cancel","MWENT","next-screen:@changed","Test play","wait:40","Use this deck","wait:40","Golden apple altar: +5 power","mini-choice:4","wait:40","verify:mwent-tactic","Begin match","wait-phase:mulligan","wait-control:Continue","Continue","wait-phase:battle","wait:20","record:mwent-opening","gif:start:mwent-golem","wait:20","Golem seal core","wait:30","verify:mwent-golem","wait:20","gif:stop"]}
+]
