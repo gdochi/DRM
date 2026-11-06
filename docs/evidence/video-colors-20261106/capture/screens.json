@@ -1,0 +1,112 @@
+[
+  {
+    "id": "nurse-joy-treatment",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "scene:nurse-setup",
+      "wait:50",
+      "scene:look-nurse",
+      "wait:30",
+      "scene:nurse-editor",
+      "wait:60",
+      "gif:start:nurse-joy-treatment",
+      "next-screen:@closed",
+      "Apply to NPC",
+      "wait:40",
+      "scene:nurse-editor",
+      "wait:30",
+      "next-screen:@closed",
+      "Link Healing Machine",
+      "wait:20",
+      "scene:look-nurse",
+      "scene:nurse-link",
+      "wait:25",
+      "clear:chat",
+      "scene:nurse-interact",
+      "wait:80",
+      "scene:heal-choice",
+      "wait:260",
+      "scene:verify-nurse",
+      "wait:20",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dnpc-bed-assignment",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "scene:bed-setup",
+      "wait:40",
+      "scene:look-bed",
+      "scene:bed-editor",
+      "wait:40",
+      "Houses",
+      "gif:start:dnpc-bed-assignment",
+      "wait:20",
+      "next-screen:@closed",
+      "Assign bed",
+      "wait:30",
+      "scene:look-bed",
+      "scene:bed-select",
+      "wait:40",
+      "Save to NPC",
+      "wait:30",
+      "scene:bed-sleep",
+      "wait:200",
+      "scene:verify-bed",
+      "wait:20",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "remnant-setter",
+    "status": "verified_native_saved_marker",
+    "detail": "Actual setter placement and Save request; text retained by server"
+  },
+  {
+    "id": "remnant-place-and-read",
+    "screenClass": "net.dochi.gameeditor.client.RemnantMsgViewScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "scene:remnant-setup",
+      "wait:40",
+      "scene:look-remnant",
+      "wait:20",
+      "gif:start:remnant-place-and-read",
+      "wait:20",
+      "scene:remnant-place",
+      "wait:20",
+      "field:body\u003dFollow the lanterns to reach the village.",
+      "wait:20",
+      "Save",
+      "wait:40",
+      "scene:look-remnant",
+      "verify:remnant-saved",
+      "wait:30",
+      "remnant-read",
+      "wait:40",
+      "clear:chat",
+      "wait:30",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [
+      {
+        "label": "Close",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

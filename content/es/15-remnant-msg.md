@@ -18,7 +18,7 @@ translationMethod: assisted
 
 ## Deja un mensaje en el mundo
 
-![Colocar un marcador con Remnant Setter, guardar el texto y abrir el mensaje.](assets/media/guides/short-videos-20261106/remnant-place-and-read.mp4 "Captura real: DRM 0.3.1 / NeoForge 1.21.1, interfaz en inglés. Colocar → escribir → Save → leer. Se verificaron el texto guardado en el servidor y la pantalla de lectura.")
+![Colocar un marcador con Remnant Setter, guardar el texto y abrir el mensaje.](assets/media/guides/short-videos-color-20261106/remnant-place-and-read.mp4 "Captura real: DRM 0.3.1 / NeoForge 1.21.1, interfaz en inglés. Colocar → escribir → Save → leer. Se verificaron el texto guardado en el servidor y la pantalla de lectura.")
 
 El vídeo muestra la opción sencilla de **escribir directamente**: haz clic derecho en una cara de bloque con el setter, escribe el texto y pulsa **Save**. Los pasos siguientes explican cómo vincular un mensaje JSON guardado.
 

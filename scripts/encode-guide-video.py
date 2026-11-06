@@ -1,4 +1,4 @@
-"""Convert reviewed game GIFs or timestamped PNG captures to silent video.
+"""Encode original timestamped game PNG captures to silent video.
 
 Pass a local FFmpeg executable with --ffmpeg. Original timing and resolution
 are retained; no interpolated frames or artificial UI are introduced.
@@ -21,16 +21,21 @@ def digest(file):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("source", type=Path, help="Reviewed GIF or capture -frames.json")
+    parser.add_argument("source", type=Path, help="Original capture -frames.json")
     parser.add_argument("output", type=Path, help="Output .mp4 path; also writes .webm and .png")
     parser.add_argument("--ffmpeg", required=True, type=Path)
+    parser.add_argument("--allow-gif", action="store_true", help="Legacy conversion only; GIF palette loss cannot be restored")
     args = parser.parse_args()
     if args.output.suffix != ".mp4":
         parser.error("Output must have the .mp4 extension")
+    if args.source.suffix != ".json" and not (args.allow_gif and args.source.suffix == ".gif"):
+        parser.error("Use original timestamped PNG captures. GIF input requires --allow-gif and cannot preserve original game colors.")
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with ExitStack() as stack:
         if args.source.suffix == ".json":
             rows = json.loads(args.source.read_text(encoding="utf-8"))
+            if len(rows) < 8 or any(b["elapsedMs"] <= a["elapsedMs"] for a, b in zip(rows, rows[1:])):
+                parser.error("A timestamped capture with at least eight ordered frames is required")
             folder = args.source.with_suffix("")
             with Image.open(folder / rows[0]["file"]) as source:
                 width, height = source.size
@@ -56,8 +61,11 @@ def main():
                     source.seek(frame)
                     duration += source.info.get("duration", 0)
             inputs = ["-ignore_loop", "1", "-i", str(args.source)]
+        # Convert full-range RGB explicitly to limited-range BT.709, then tag both
+        # codecs consistently so browsers do not guess a different color matrix.
         base = [str(args.ffmpeg), "-hide_banner", "-loglevel", "error", "-y",
-                *inputs, "-an", "-vf", "fps=20"]
+                *inputs, "-an", "-vf", "fps=20,scale=in_range=full:out_range=limited:out_color_matrix=bt709,format=yuv420p",
+                "-color_range", "tv", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709"]
         subprocess.run(base + ["-c:v", "libx264", "-preset", "slow", "-crf", "18",
                               "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(args.output)], check=True)
         subprocess.run(base + ["-c:v", "libvpx-vp9", "-crf", "28", "-b:v", "0", "-row-mt", "1",
@@ -70,7 +78,9 @@ def main():
         outputs.append({"file": file.name, "bytes": file.stat().st_size, "sha256": digest(file)})
     receipt = {"source": args.source.as_posix(), "sourceBytes": args.source.stat().st_size,
                "sourceSha256": digest(args.source), "width": width, "height": height,
-               "durationMs": duration, "fps": 20, "audio": False, "outputs": outputs}
+               "durationMs": duration, "fps": 20, "audio": False,
+               "sourceType": "original_timestamped_png" if args.source.suffix == ".json" else "palette_reduced_gif",
+               "colorSpace": "bt709", "colorRange": "limited", "outputs": outputs}
     print(json.dumps(receipt))
 
 

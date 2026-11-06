@@ -1,0 +1,26 @@
+{
+  "uuid": "194f6764-a514-4b42-a77d-58cc2038a101",
+  "message": "Follow the lanterns to reach the village.",
+  "messageFile": "marker_194f6764_a514_4b42_a77d_58cc2038a101.json",
+  "definition": {
+    "root": {
+      "type": "remnant_msg",
+      "id": "marker_194f6764_a514_4b42_a77d_58cc2038a101",
+      "name": "Marker 194f6764",
+      "enabled": true,
+      "message": "Follow the lanterns to reach the village.",
+      "messageStyles": [],
+      "messageAlignment": "left",
+      "useConditionsEnabled": false,
+      "useConditionMode": "and",
+      "useConditions": [],
+      "messageConditionsEnabled": false,
+      "messageConditionMode": "and",
+      "messageConditions": [],
+      "messageActionsEnabled": false,
+      "messageTrigger": "every_view",
+      "messageActions": [],
+      "gui": "default_remnant_msg_gui.json"
+    }
+  }
+}

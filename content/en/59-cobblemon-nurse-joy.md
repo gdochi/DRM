@@ -34,7 +34,7 @@ The treatment and close actions have fixed behavior and order. Renaming a choice
 
 ## Link the healing machine
 
-![A Nurse Joy skin, role application, machine linking and treatment followed by the NPC returning home.](assets/media/guides/short-videos-20261106/nurse-joy-treatment.mp4 "Captured in game: Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, English UI. Bulbasaur recovered from 1 to its full 19 HP and the NPC returned to her starting position.")
+![A Nurse Joy skin, role application, machine linking and treatment followed by the NPC returning home.](assets/media/guides/short-videos-color-20261106/nurse-joy-treatment.mp4 "Captured in game: Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, English UI. Bulbasaur recovered from 1 to its full 19 HP and the NPC returned to her starting position.")
 
 The recording uses [caidencestudio's Nurse Joy skin](https://www.planetminecraft.com/skin/nurse-joy-5942860/) with the slim model.
 

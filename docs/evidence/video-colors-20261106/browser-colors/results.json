@@ -1,0 +1,65 @@
+{
+  "completedAt": "2026-11-06T13:13:08.098Z",
+  "comparisons": [
+    {
+      "clip": "nurse-joy-treatment",
+      "format": "mp4",
+      "meanAbsoluteRgbError": 0.9403522858796296,
+      "meanSaturatedError": 16.519907829162424,
+      "greenPixels": 664,
+      "greenHueRetention": 0.947289156626506,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "clip": "nurse-joy-treatment",
+      "format": "webm",
+      "meanAbsoluteRgbError": 0.9048213252314815,
+      "meanSaturatedError": 16.499151528142473,
+      "greenPixels": 664,
+      "greenHueRetention": 0.9518072289156626,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "clip": "dnpc-bed-assignment",
+      "format": "mp4",
+      "meanAbsoluteRgbError": 1.1435051359953703,
+      "meanSaturatedError": 8.7084771004748,
+      "greenPixels": 0,
+      "greenHueRetention": null,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "clip": "dnpc-bed-assignment",
+      "format": "webm",
+      "meanAbsoluteRgbError": 1.1320500578703703,
+      "meanSaturatedError": 8.702991831077295,
+      "greenPixels": 0,
+      "greenHueRetention": null,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "clip": "remnant-place-and-read",
+      "format": "mp4",
+      "meanAbsoluteRgbError": 0.7844842303240741,
+      "meanSaturatedError": 1.152918438058777,
+      "greenPixels": 1193,
+      "greenHueRetention": 0.9538977367979883,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "clip": "remnant-place-and-read",
+      "format": "webm",
+      "meanAbsoluteRgbError": 0.9631416377314815,
+      "meanSaturatedError": 1.3903777238631558,
+      "greenPixels": 1193,
+      "greenHueRetention": 0.9480301760268232,
+      "width": 1280,
+      "height": 720
+    }
+  ]
+}

@@ -36,7 +36,7 @@ El tratamiento y las acciones cercanas tienen un comportamiento y orden fijos. C
 
 ## Enlace de la máquina de curación
 
-![Aplicar el rol a un PNJ con la skin de Nurse Joy, enlazar la máquina y completar la curación y el regreso.](assets/media/guides/short-videos-20261106/nurse-joy-treatment.mp4 "Captura real: Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. Bulbasaur recuperó sus 19 PS desde 1 PS y el PNJ regresó al punto inicial.")
+![Aplicar el rol a un PNJ con la skin de Nurse Joy, enlazar la máquina y completar la curación y el regreso.](assets/media/guides/short-videos-color-20261106/nurse-joy-treatment.mp4 "Captura real: Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. Bulbasaur recuperó sus 19 PS desde 1 PS y el PNJ regresó al punto inicial.")
 
 La grabación utiliza la [skin de Nurse Joy de caidencestudio](https://www.planetminecraft.com/skin/nurse-joy-5942860/) con el modelo de brazos delgados.
 

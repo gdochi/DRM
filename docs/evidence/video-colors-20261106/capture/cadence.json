@@ -1,0 +1,23 @@
+[
+  {
+    "clip": "nurse-joy-treatment",
+    "frameCount": 704,
+    "durationMs": 35203.1207,
+    "gapP95Ms": 53.87172999999911,
+    "gapMaxMs": 79.69700000000012
+  },
+  {
+    "clip": "dnpc-bed-assignment",
+    "frameCount": 508,
+    "durationMs": 25407.6319,
+    "gapP95Ms": 52.32814000000053,
+    "gapMaxMs": 66.71270000000004
+  },
+  {
+    "clip": "remnant-place-and-read",
+    "frameCount": 380,
+    "durationMs": 19005.2907,
+    "gapP95Ms": 51.285020000000074,
+    "gapMaxMs": 64.65810000000056
+  }
+]

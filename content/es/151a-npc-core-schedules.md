@@ -39,7 +39,7 @@ Buscar en la lista de acciones para trabajos como la madera, el transporte o mon
 
 ## Asignar una cama
 
-![Elegir Assign bed en Houses, vincular y guardar la cama y ver al PNJ caminar y dormir.](assets/media/guides/short-videos-20261106/dnpc-bed-assignment.mp4 "Grabado en el juego con DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. El horario nocturno se preparó en el mundo de captura; se verificaron la asignación y el sueño real.")
+![Elegir Assign bed en Houses, vincular y guardar la cama y ver al PNJ caminar y dormir.](assets/media/guides/short-videos-color-20261106/dnpc-bed-assignment.mp4 "Grabado en el juego con DNPC 0.1.3 / NeoForge 1.21.1, interfaz en inglés. El horario nocturno se preparó en el mundo de captura; se verificaron la asignación y el sueño real.")
 
 Elige **Houses → Assign bed** y haz **Shift+clic derecho** en la cama. Al volver al editor, comprueba **Bed assigned** y pulsa **Save to NPC**. Añade **Sleep in assigned bed** al período nocturno y activa **Enable schedule**. La ubicación de la casa y su cama se asignan por separado.
 

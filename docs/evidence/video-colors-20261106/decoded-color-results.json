@@ -1,0 +1,68 @@
+[
+  {
+    "clip": "nurse-joy-treatment",
+    "format": "mp4",
+    "meanAbsoluteRgbError": 0.917861328125,
+    "meanAbsoluteRgbErrorOnSaturatedPixels": 8.395941625136203,
+    "greenPixels": 664,
+    "greenHueRetention": 0.9307228915662651,
+    "posterMatchesOriginal": true,
+    "metadata": "limited-range BT.709",
+    "sourceFrameCount": 704
+  },
+  {
+    "clip": "nurse-joy-treatment",
+    "format": "webm",
+    "meanAbsoluteRgbError": 0.8846459056712963,
+    "meanAbsoluteRgbErrorOnSaturatedPixels": 8.41360770233821,
+    "greenPixels": 664,
+    "greenHueRetention": 0.9352409638554217,
+    "posterMatchesOriginal": true,
+    "metadata": "limited-range BT.709",
+    "sourceFrameCount": 704
+  },
+  {
+    "clip": "dnpc-bed-assignment",
+    "format": "mp4",
+    "meanAbsoluteRgbError": 1.4781658709490741,
+    "meanAbsoluteRgbErrorOnSaturatedPixels": 5.382604913149901,
+    "greenPixels": 0,
+    "greenHueRetention": null,
+    "posterMatchesOriginal": true,
+    "metadata": "limited-range BT.709",
+    "sourceFrameCount": 508
+  },
+  {
+    "clip": "dnpc-bed-assignment",
+    "format": "webm",
+    "meanAbsoluteRgbError": 1.4685018807870371,
+    "meanAbsoluteRgbErrorOnSaturatedPixels": 5.298969300185791,
+    "greenPixels": 0,
+    "greenHueRetention": null,
+    "posterMatchesOriginal": true,
+    "metadata": "limited-range BT.709",
+    "sourceFrameCount": 508
+  },
+  {
+    "clip": "remnant-place-and-read",
+    "format": "mp4",
+    "meanAbsoluteRgbError": 1.609291087962963,
+    "meanAbsoluteRgbErrorOnSaturatedPixels": 1.7936856827000838,
+    "greenPixels": 1193,
+    "greenHueRetention": 0.9522212908633697,
+    "posterMatchesOriginal": true,
+    "metadata": "limited-range BT.709",
+    "sourceFrameCount": 380
+  },
+  {
+    "clip": "remnant-place-and-read",
+    "format": "webm",
+    "meanAbsoluteRgbError": 1.6831300636574074,
+    "meanAbsoluteRgbErrorOnSaturatedPixels": 1.8663183237993486,
+    "greenPixels": 1193,
+    "greenHueRetention": 0.9513830678960603,
+    "posterMatchesOriginal": true,
+    "metadata": "limited-range BT.709",
+    "sourceFrameCount": 380
+  }
+]

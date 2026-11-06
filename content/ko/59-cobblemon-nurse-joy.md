@@ -34,7 +34,7 @@ tags:
 
 ## 치료기 연결하기
 
-![간호순 스킨을 입힌 NPC에 역할을 적용하고 치료기를 연결한 뒤, 치료를 선택해 이동·치료·복귀하는 과정.](assets/media/guides/short-videos-20261106/nurse-joy-treatment.mp4 "실제 인게임 촬영: Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, 영문 UI. 체력 1인 이상해씨가 최대 체력 19로 회복되고 NPC가 원래 자리로 돌아오는 것까지 확인했습니다.")
+![간호순 스킨을 입힌 NPC에 역할을 적용하고 치료기를 연결한 뒤, 치료를 선택해 이동·치료·복귀하는 과정.](assets/media/guides/short-videos-color-20261106/nurse-joy-treatment.mp4 "실제 인게임 촬영: Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 / NeoForge 1.21.1, 영문 UI. 체력 1인 이상해씨가 최대 체력 19로 회복되고 NPC가 원래 자리로 돌아오는 것까지 확인했습니다.")
 
 촬영에는 [caidencestudio의 Nurse Joy 스킨](https://www.planetminecraft.com/skin/nurse-joy-5942860/)을 슬림 모델로 적용했습니다.
 

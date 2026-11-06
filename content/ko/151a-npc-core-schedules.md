@@ -37,7 +37,7 @@ audience: NPC 제작자
 
 ## 침대 지정하기
 
-![Houses에서 Assign bed를 누르고 침대를 지정·저장한 뒤 NPC가 침대로 걸어가 잠드는 과정.](assets/media/guides/short-videos-20261106/dnpc-bed-assignment.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, 영문 UI의 실제 촬영입니다. 밤 시간표는 촬영용 월드에 미리 구성했으며, 침대 연결과 실제 수면을 확인했습니다.")
+![Houses에서 Assign bed를 누르고 침대를 지정·저장한 뒤 NPC가 침대로 걸어가 잠드는 과정.](assets/media/guides/short-videos-color-20261106/dnpc-bed-assignment.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, 영문 UI의 실제 촬영입니다. 밤 시간표는 촬영용 월드에 미리 구성했으며, 침대 연결과 실제 수면을 확인했습니다.")
 
 **Houses → Assign bed**를 누른 뒤 월드에서 사용할 침대를 **Shift+우클릭**합니다. 편집기로 돌아오면 **Bed assigned**를 확인하고 **Save to NPC**로 저장합니다. 시간표의 밤 시간대에는 **Sleep in assigned bed**를 넣고 **Enable schedule**을 켭니다. 집 위치만 정하는 것과 침대를 연결하는 것은 별도 단계입니다.
 
