@@ -881,8 +881,8 @@
     const release = files[0];
     const tab = (label, href, active) => `<a href="${href}"${active ? ' aria-current="page"' : ""}>${escapeHtml(label)}</a>`;
     return `<section class="changelog-shell" data-changelog data-product="${escapeAttr(product)}" data-loader="${escapeAttr(loader)}" data-minecraft="${escapeAttr(minecraft)}" data-version="${escapeAttr(version)}">
-      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home">Dochi's Wiki</a>${icon("chevron")}<span>${escapeHtml(productText(config.products[product], "shortLabel"))}</span></nav>
-      <header class="changelog-heading"><div><h1>${escapeHtml(changelogText("title"))}</h1><p>${escapeHtml(productText(config.products[product], "shortLabel"))}</p></div><label class="changelog-mod-picker"><span>${escapeHtml(changelogText("select"))}</span><select data-changelog-mod>${getWikiMods().filter(mod => mod.product !== "mwent" && hasChangelog(mod.product)).map(mod => `<option value="${escapeAttr(mod.product)}"${mod.product === product ? " selected" : ""}>${escapeHtml(modText(mod, "shortLabel") || modText(mod, "label"))}</option>`).join("")}</select></label></header>
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home">Dochi's Wiki</a>${icon("chevron")}<span>${escapeHtml(productText(config.products[product], "label"))}</span></nav>
+      <header class="changelog-heading"><div><h1>${escapeHtml(changelogText("title"))}</h1><p>${escapeHtml(productText(config.products[product], "label"))}</p></div><label class="changelog-mod-picker"><span>${escapeHtml(changelogText("select"))}</span><select data-changelog-mod>${getWikiMods().filter(mod => mod.product !== "mwent" && hasChangelog(mod.product)).map(mod => `<option value="${escapeAttr(mod.product)}"${mod.product === product ? " selected" : ""}>${escapeHtml(modText(mod, "label") || modText(mod, "shortLabel"))}</option>`).join("")}</select></label></header>
       ${renderProductTabs(product, "changelog")}
       <p class="changelog-lead">${escapeHtml(changelogText("lead"))}</p>
       <div class="changelog-filters"><div><h2>${escapeHtml(changelogText("loader"))}</h2><nav class="changelog-options" aria-label="${escapeAttr(changelogText("loader"))}">${loaders.map(item => tab(item, changelogLink(product, item), loader === item)).join("")}</nav></div>
@@ -917,7 +917,7 @@
       }
     }
     const changelogPage = view === "changelog" ? renderChangelog(route) : "";
-    document.title = activeDoc ? `${activeDoc.title} · ${productText(config.products[product], "shortLabel")} · Dochi's Wiki` : view === "changelog" && !changelogPage.includes('class="not-found"') ? `${changelogText("title")} · ${productText(config.products[product], "shortLabel")} · Dochi's Wiki` : ui(view === "home" ? "tasks" : "missing") + " · Dochi's Wiki";
+    document.title = activeDoc ? `${activeDoc.title} · ${productText(config.products[product], "shortLabel")} · Dochi's Wiki` : view === "changelog" && !changelogPage.includes('class="not-found"') ? `${changelogText("title")} · ${productText(config.products[product], "label")} · Dochi's Wiki` : ui(view === "home" ? "tasks" : "missing") + " · Dochi's Wiki";
     app.innerHTML = `
       <a class="skip-link" href="#main-content">${escapeHtml(ui("skip"))}</a>
       <header class="topbar">
