@@ -8,16 +8,13 @@
 - 예: `content/changelogs/dochi-npc-core/0.1.2.json`. `Forge / 1.20.1`, `NeoForge / 1.21.1`, `NeoForge / 26.3`, `Fabric / 1.21.1`, `Fabric / 26.3`은 화면에서 별도 선택 항목이다.
 - 주소는 `#changelog/<product>/<loader>/<minecraft>/<mod-version>`이다. 예: `#changelog/dochi-npc-core/NeoForge/26.3/0.1.2`.
 - `Global`·`Common Changes`는 선택한 환경에 포함한다. 환경별 제목·중첩 목록·호환 표는 해당 로더와 Minecraft 버전에 맞는 항목만 표시한다. 같은 환경의 Added·Fixed·Changed·Improved 분류는 각각 한 번으로 합친다.
-- 지원 환경이 다른 모드 버전을 합쳐 쓰거나, 한 파일의 본문을 다른 파일·버전의 기록으로 대체하지 않는다. CurseForge 파일 이력에는 공개된 파일이 있는 환경만 표시하며, 명시적으로 게시한 작성자 기록은 그 원문의 확정 적용 환경을 표시한다.
+- 지원 환경이 다른 모드 버전을 합쳐 쓰거나, 한 파일의 본문을 다른 파일·버전의 기록으로 대체하지 않는다. 공개된 파일이 없는 환경은 선택 목록에 만들지 않는다.
 - 기존 `content/<언어>/200-changelog-*.md` 주소는 유지하되, 같은 모드 버전의 새 체인지로그 화면으로 연결한다. 일반 문서 메뉴·검색에는 혼합 릴리스 본문을 표시하지 않는다.
 - MWENT 카드 이력은 `#mwent/releases`에서 버전별로 확인한다. `section: card-history`인 카드 비교·스펙 문서는 일반 릴리스 화면으로 넘기지 않는다. 공개된 카드 비교 근거의 로더·Minecraft 범위를 보존하며, 비공개 0.1.5 작업본은 숨김 상태를 유지한다. 홈 버튼은 MWENT의 `wikiMods.cardHistoryPage` 설정을 따른다.
 
 ## 공개 기준
 
-- 2026-11-07 사용자 지시로 DW·DWE 0.3.2는 작성자가 확정한 `[LOG] Change Log` 원문을 CurseForge 업로드에 앞서 docs에 게시한다. 이 명시적 작성자 게시 경로는 `source: "author"`, `publishedAt`, `environments`, 원문 `markdown`과 `html`로 기록하며, 아래 CurseForge 파일 검증 기준과 분리한다. 로더·Minecraft 범위는 확정 원문의 범위만 사용한다.
-- 작성자 기록에는 공개 파일 ID·업로드 시각·다운로드 URL·`status: 4`를 만들지 않는다. 화면에는 실제 문서 게시 날짜와 해당 로더의 본문이 표시되고 다운로드 버튼은 생략된다. 실제 공개 파일이 확인되면 확인 목록과 공식 파일별 원문으로 전환한다. 기존 공개 버전·검증 목록은 유지한다.
-
-- **CurseForge 파일 이력에는 실제 업로드된 버전만** 기록한다. 명시적인 작성자 게시 지시 없이 로컬 JAR, 개발 소스의 버전, `[LOG] Change Log` 파일의 존재만으로 공개된 버전으로 취급하지 않는다.
+- **CurseForge에 실제 업로드된 버전만** 공개 문서에 기록한다. 로컬 JAR, 개발 소스의 버전, `[LOG] Change Log` 파일의 존재만으로 공개된 버전으로 취급하지 않는다.
 - 같은 버전의 로컬 체인지로그가 게시 후 추가 수정되었을 수 있으므로, 최초 공개 기록은 CurseForge에 게시된 본문을 기준으로 삼는다.
 - 파일 목록에는 실제 업로드된 로더·Minecraft 조합만 적는다. 다른 로더의 빌드 성공으로 공개 범위를 확대하지 않는다.
 - 모드 버전은 그대로 사용한다. 문서 수정은 모드의 릴리스 변경 사항에 넣지 않는다.
