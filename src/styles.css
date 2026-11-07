@@ -359,6 +359,14 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
 .product-tabs a { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 9px 12px; color: var(--muted); border-radius: 6px; font-size: .85rem; font-weight: 700; }
 .product-tabs a[aria-current] { background: var(--brand-soft); color: var(--brand); }
 .product-tabs a:hover { background: var(--surface-3); }
+.environment-switch { display: grid; gap: 8px; margin-bottom: 18px; min-width: 0; }
+.environment-switch > span { color: var(--muted); font-size: .78rem; font-weight: 700; }
+.environment-switch > div { display: flex; flex-wrap: wrap; gap: 8px; }
+.environment-switch a { padding: 9px 12px; min-height: 42px; border: 1px solid var(--line); border-radius: 6px; color: var(--muted); font-size: .84rem; overflow-wrap: anywhere; }
+.environment-switch a:hover { background: var(--surface-3); }
+.environment-switch a[aria-current] { color: var(--brand); background: var(--brand-soft); border-color: var(--brand); font-weight: 700; }
+.track-curseforge:has(small) { gap: 4px; }
+.track-curseforge small { font-size: .65rem; }
 .sidebar .product-tabs a { padding: 8px; font-size: .78rem; }
 .sidebar .product-tabs svg { width: 15px; height: 15px; }
 .changelog-shell { min-width: 0; }

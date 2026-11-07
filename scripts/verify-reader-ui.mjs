@@ -44,7 +44,10 @@ try {
   await page.evaluate(() => { localStorage.setItem('drm-docs-locale', 'ko'); localStorage.setItem('drm-docs-theme', 'light'); });
   await page.reload();
   assert.equal(await page.locator('.task-card').count(), 6);
-  assert.equal(await page.locator('.track-card p').count(), 12);
+  assert.equal(await page.locator('.track-card p').count(), 11);
+  const drmCard = page.locator('.track-card').filter({ has: page.locator('h3', { hasText: /^Dochi's RPG Maker$/ }) });
+  assert.equal(await drmCard.count(), 1);
+  assert.equal(await drmCard.locator('.track-curseforge').count(), 2);
   await page.locator('.task-preview img').evaluateAll(images => Promise.all(images.map(image => image.decode())));
   await page.screenshot({ path: path.join(output, 'home-desktop.png') });
   for (const [product, slug] of Object.entries(data.window.DRM_DOCS_CONFIG.startPages)) {
@@ -52,6 +55,19 @@ try {
     assert.equal(await page.locator('[data-doc-page]').getAttribute('data-doc'), slug, product);
   }
   checks.push('All 12 mod entries open their configured beginner guide.');
+
+  await go(`${origin}/#core/dialogue-system`);
+  assert.equal(await page.locator('[data-mod-picker]').inputValue(), 'core');
+  await page.locator('.environment-switch a').nth(1).click();
+  await page.waitForSelector('[data-doc-page][data-product="core-fabric"][data-doc="dialogue-system"]');
+  assert.equal(await page.locator('[data-mod-picker]').inputValue(), 'core');
+  assert.equal(await page.locator('[data-mod-picker] option[value="core-fabric"]').count(), 0);
+  await page.locator('.product-tabs a').filter({ hasText: '체인지로그' }).click();
+  await page.waitForSelector('[data-changelog][data-product="core-fabric"]');
+  assert.equal(await page.locator('[data-changelog-mod]').inputValue(), 'core');
+  await page.locator('.environment-switch a').first().click();
+  await page.waitForSelector('[data-changelog][data-product="core"]');
+  checks.push('One DRM card and mod entry retain both downloads, matching guide topics and environment-specific changelogs.');
 
   await go(`${origin}/#core/dialogue-system`);
   await page.setViewportSize({ width: 390, height: 844 });

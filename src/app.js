@@ -107,6 +107,21 @@
     return `<nav class="product-tabs" aria-label="${escapeAttr(productText(config.products[product], "shortLabel"))}"><a href="${linkForProduct(product)}"${active === "docs" ? ' aria-current="page"' : ""}>${icon("book")}${escapeHtml(t("openDocs"))}</a>${hasChangelog(product) ? `<a href="${changelogLink(product)}"${active === "changelog" ? ' aria-current="page"' : ""}>${icon("history")}${escapeHtml(changelogText("title"))}</a>` : ""}${cardsHref ? `<a href="${cardsHref}"${active === "cards" ? ' aria-current="page"' : ""}>${icon("cards")}${escapeHtml(cardHistoryText())}</a>` : ""}</nav>`;
   }
 
+  function productFamily(product) {
+    return getWikiMods().find(mod => mod.documentVariants?.some(variant => variant.product === product))?.product || product;
+  }
+
+  function renderEnvironmentSwitch(product, activeDoc, changelog = false) {
+    const mod = getWikiMods().find(mod => mod.product === productFamily(product));
+    if (!mod?.documentVariants) return "";
+    const label = { ko: "문서 환경", en: "Guide environment", pt: "Ambiente do guia", es: "Entorno de la guía", fr: "Environnement du guide", ru: "Среда руководства", zh: "文档环境", ja: "ガイドの環境" }[state.locale] || "Guide environment";
+    return `<nav class="environment-switch" aria-label="${escapeAttr(label)}"><span>${escapeHtml(label)}</span><div>${mod.documentVariants.map(variant => {
+      const doc = activeDoc && findDoc(variant.product, activeDoc.slug);
+      const href = changelog ? changelogLink(variant.product) : doc ? linkForDoc(doc) : linkForProduct(variant.product);
+      return `<a href="${href}"${variant.product === product ? ' aria-current="page"' : ""}>${escapeHtml(variant.label)}</a>`;
+    }).join("")}</div></nav>`;
+  }
+
   if (!config.locales?.[state.locale]) state.locale = config.defaultLocale || localeKeys[0] || "en";
   document.documentElement.lang = config.locales?.[state.locale]?.htmlLang || state.locale;
 
@@ -729,6 +744,7 @@
       const cardsHref = cardHistoryLink(meta.product);
       const curseForgeHref = meta.curseForgeUrl || meta.url || meta.href || "";
       const modrinthHref = meta.modrinthUrl || "";
+      const curseForgeLinks = meta.documentVariants ? meta.documentVariants.map(variant => ({ label: variant.label, href: config.wikiMods.find(mod => mod.product === variant.product)?.curseForgeUrl })).filter(link => link.href) : curseForgeHref ? [{ label: "", href: curseForgeHref }] : [];
       const body = `
           ${renderModLogo(meta)}
           <div class="track-body">
@@ -739,7 +755,7 @@
       const actions = `
         <div class="track-actions">
           ${docsHref ? `<div class="track-primary-actions"><a class="track-open track-icon" href="${docsHref}" title="${escapeAttr(t("openDocs"))}" aria-label="${escapeAttr(t("openDocs"))}">${icon("book")}</a>${hasChangelog(meta.product) ? `<a class="track-open track-icon track-changelog" href="${changelogLink(meta.product)}" title="${escapeAttr(changelogText("title"))}" aria-label="${escapeAttr(changelogText("title"))}">${icon("history")}</a>` : ""}${cardsHref ? `<a class="track-open track-icon track-card-history" href="${cardsHref}" title="${escapeAttr(cardHistoryText())}" aria-label="${escapeAttr(cardHistoryText())}">${icon("cards")}</a>` : ""}</div>` : ""}
-          ${curseForgeHref ? `<a class="track-open track-icon external track-curseforge" href="${escapeAttr(curseForgeHref)}" target="_blank" rel="noreferrer" title="${escapeAttr(t("curseForge"))}" aria-label="${escapeAttr(t("curseForge"))}">${icon("curseforge")}</a>` : ""}
+          ${curseForgeLinks.map(link => `<a class="track-open track-icon external track-curseforge" href="${escapeAttr(link.href)}" target="_blank" rel="noreferrer" title="${escapeAttr(t("curseForge") + (link.label ? ": " + link.label : ""))}" aria-label="${escapeAttr(t("curseForge") + (link.label ? ": " + link.label : ""))}">${icon("curseforge")}${link.label ? `<small>${escapeHtml(link.label.split(" ")[0])}</small>` : ""}</a>`).join("")}
           ${modrinthHref ? `<a class="track-open track-icon external track-modrinth" href="${escapeAttr(modrinthHref)}" target="_blank" rel="noreferrer" title="${escapeAttr(t("modrinth"))}" aria-label="${escapeAttr(t("modrinth"))}">${icon("modrinth")}</a>` : ""}
           ${!docsHref && !curseForgeHref && !modrinthHref ? `<span class="track-status">${escapeHtml(statusText(meta))}</span>` : ""}
         </div>
@@ -794,7 +810,7 @@
 
   function renderModPicker(product) {
     return `<label class="mod-picker"><span>${escapeHtml(ui("chooseMod"))}</span><select data-mod-picker aria-label="${escapeAttr(ui("chooseMod"))}">
-      ${getWikiMods().map(mod => { const key = mod.product || mod.id; return isProductOpen(key) ? `<option value="${escapeAttr(key)}"${key === product ? " selected" : ""}>${escapeHtml(modText(mod, "label"))}</option>` : ""; }).join("")}
+      ${getWikiMods().map(mod => { const key = mod.product || mod.id; return isProductOpen(key) ? `<option value="${escapeAttr(key)}"${key === productFamily(product) ? " selected" : ""}>${escapeHtml(modText(mod, "label"))}</option>` : ""; }).join("")}
     </select></label>`;
   }
 
@@ -840,6 +856,7 @@
         ${renderToc(activeDoc, true)}
         <article class="doc-page" lang="${escapeAttr(getLocaleMeta(activeDoc.sourcePath?.split("/")[1] || state.locale).htmlLang || activeDoc.sourcePath?.split("/")[1] || state.locale)}" data-doc-page data-product="${escapeAttr(product)}" data-doc="${escapeAttr(activeDoc.slug)}">
           <header class="doc-page-head">
+            ${renderEnvironmentSwitch(product, activeDoc)}
             <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home">Wiki</a>${icon("chevron")}<a href="${linkForProduct(product)}">${escapeHtml(productText(meta, "shortLabel") || productText(meta, "label"))}</a>${section ? `${icon("chevron")}<span>${escapeHtml(sectionText(section, "label"))}</span>` : ""}</nav>
             <h1>${escapeHtml(activeDoc.title)}</h1>
             ${activeDoc.description ? `<p class="doc-description">${escapeHtml(activeDoc.description)}</p>` : ""}
@@ -903,7 +920,8 @@
     const tab = (label, href, active) => `<a href="${href}"${active ? ' aria-current="page"' : ""}>${escapeHtml(label)}</a>`;
     return `<section class="changelog-shell" data-changelog data-product="${escapeAttr(product)}" data-loader="${escapeAttr(loader)}" data-minecraft="${escapeAttr(minecraft)}" data-version="${escapeAttr(version)}">
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home">Dochi's Wiki</a>${icon("chevron")}<span>${escapeHtml(productText(config.products[product], "label"))}</span></nav>
-      <header class="changelog-heading"><div><h1>${escapeHtml(changelogText("title"))}</h1><p>${escapeHtml(productText(config.products[product], "label"))}</p></div><label class="changelog-mod-picker"><span>${escapeHtml(changelogText("select"))}</span><select data-changelog-mod>${getWikiMods().filter(mod => mod.product !== "mwent" && hasChangelog(mod.product)).map(mod => `<option value="${escapeAttr(mod.product)}"${mod.product === product ? " selected" : ""}>${escapeHtml(modText(mod, "label") || modText(mod, "shortLabel"))}</option>`).join("")}</select></label></header>
+      <header class="changelog-heading"><div><h1>${escapeHtml(changelogText("title"))}</h1><p>${escapeHtml(productText(config.products[product], "label"))}</p></div><label class="changelog-mod-picker"><span>${escapeHtml(changelogText("select"))}</span><select data-changelog-mod>${getWikiMods().filter(mod => mod.product !== "mwent" && hasChangelog(mod.product)).map(mod => `<option value="${escapeAttr(mod.product)}"${mod.product === productFamily(product) ? " selected" : ""}>${escapeHtml(modText(mod, "label") || modText(mod, "shortLabel"))}</option>`).join("")}</select></label></header>
+      ${renderEnvironmentSwitch(product, null, true)}
       ${renderProductTabs(product, "changelog")}
       <p class="changelog-lead">${escapeHtml(changelogText("lead"))}</p>
       <div class="changelog-filters"><div><h2>${escapeHtml(changelogText("loader"))}</h2><nav class="changelog-options" aria-label="${escapeAttr(changelogText("loader"))}">${loaders.map(item => tab(item, changelogLink(product, item), loader === item)).join("")}</nav></div>

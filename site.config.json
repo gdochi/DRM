@@ -40,14 +40,9 @@
       "description_ko": "NPC에게 대화 선택지와 내 상점을 붙입니다.",
       "links": [
         {
-          "product": "core-fabric",
-          "doc": "quick-start",
-          "label": "Fabric / NeoForge"
-        },
-        {
           "product": "core",
           "doc": "quick-start",
-          "label": "Forge 1.20.1"
+          "label": "Dochi's RPG Maker"
         }
       ]
     },
@@ -131,28 +126,38 @@
   "wikiMods": [
     {
       "id": "drm",
-      "label": "Dochi's RPG Maker Forge 1.20.1",
-      "label_ko": "Dochi's RPG Maker Forge 1.20.1",
-      "label_ru": "Dochi's RPG Maker Forge 1.20.1",
-      "label_zh": "Dochi's RPG Maker Forge 1.20.1",
-      "label_ja": "Dochi's RPG Maker Forge 1.20.1",
-      "shortLabel": "Dochi's RPG Maker Forge",
-      "shortLabel_ko": "Dochi's RPG Maker Forge",
-      "shortLabel_ru": "Dochi's RPG Maker Forge",
-      "shortLabel_zh": "Dochi's RPG Maker Forge",
-      "shortLabel_ja": "Dochi's RPG Maker Forge",
+      "label": "Dochi's RPG Maker",
+      "label_ko": "Dochi's RPG Maker",
+      "label_ru": "Dochi's RPG Maker",
+      "label_zh": "Dochi's RPG Maker",
+      "label_ja": "Dochi's RPG Maker",
+      "shortLabel": "Dochi's RPG Maker",
+      "shortLabel_ko": "Dochi's RPG Maker",
+      "shortLabel_ru": "Dochi's RPG Maker",
+      "shortLabel_zh": "Dochi's RPG Maker",
+      "shortLabel_ja": "Dochi's RPG Maker",
       "description": "Make NPC conversations, shops and quests, then customize their screens.",
       "description_ko": "NPC 대화·상점·퀘스트를 만들고 화면을 내 스타일로 꾸밉니다.",
       "logo": "assets/mod-logos/drm_forge.png",
-      "logoAlt": "Dochi's RPG Maker Forge logo",
-      "logoAlt_ko": "Dochi's RPG Maker Forge 로고",
-      "logoAlt_ru": "Логотип Dochi's RPG Maker Forge",
-      "logoAlt_zh": "Dochi's RPG Maker Forge 标志",
-      "logoAlt_ja": "Dochi's RPG Maker Forge ロゴ",
+      "logoAlt": "Dochi's RPG Maker logo",
+      "logoAlt_ko": "Dochi's RPG Maker logo",
+      "logoAlt_ru": "Dochi's RPG Maker logo",
+      "logoAlt_zh": "Dochi's RPG Maker logo",
+      "logoAlt_ja": "Dochi's RPG Maker logo",
       "type": "standalone",
       "product": "core",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker",
-      "modrinthUrl": "https://modrinth.com/mod/drm"
+      "modrinthUrl": "https://modrinth.com/mod/drm",
+      "documentVariants": [
+        {
+          "product": "core",
+          "label": "Forge 1.20.1"
+        },
+        {
+          "product": "core-fabric",
+          "label": "Fabric / NeoForge 1.21.1 / 26.3"
+        }
+      ]
     },
     {
       "id": "drm-fabric",
@@ -177,7 +182,8 @@
       "type": "standalone",
       "product": "core-fabric",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker",
-      "modrinthUrl": "https://modrinth.com/mod/drm"
+      "modrinthUrl": "https://modrinth.com/mod/drm",
+      "hidden": true
     },
     {
       "id": "dochi-npc-core",
