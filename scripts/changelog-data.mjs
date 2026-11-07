@@ -45,7 +45,7 @@ export function scopeMatches(label, loader, minecraft) {
   return groups.some(group => (!group.loaders.length || group.loaders.includes(loader)) && (!group.versions.length || group.versions.includes(minecraft)));
 }
 
-export function scopedNotes(html, loader, minecraft, { inferItemPlatforms = true } = {}) {
+export function scopedNotes(html, loader, minecraft, { inferItemPlatforms = true, preserveSubcategories = false } = {}) {
   // A few early uploads contain Markdown headings/lists inside HTML paragraphs.
   const normalized = html.replace(/\r\n/g, '\n').replace(/<p>([\s\S]*?)<\/p>/g, (original, body) => {
     if (!/^(?:#{1,6}\s|[-*]\s)/.test(body.trim())) return original;
@@ -63,7 +63,7 @@ export function scopedNotes(html, loader, minecraft, { inferItemPlatforms = true
     return output.join('');
   });
   const root = parse(normalized);
-  const allowed = new Set(['p','ul','ol','li','strong','b','em','i','code','pre','blockquote','a','br','table','thead','tbody','tr','td','th']);
+  const allowed = new Set(['h4','p','ul','ol','li','strong','b','em','i','code','pre','blockquote','a','br','table','thead','tbody','tr','td','th']);
   const render = node => {
     if (node.text !== undefined) return escape(node.text);
     const label = textOf(node).trim();
@@ -92,16 +92,23 @@ export function scopedNotes(html, loader, minecraft, { inferItemPlatforms = true
   const flatten = nodes => nodes.flatMap(node => node.tag === 'div' ? flatten(node.children) : [node]);
   let include = true;
   let scopeLevel = 0;
+  let categoryLevel = 0;
   const output = [];
   for (const node of flatten(root.children)) {
     const label = textOf(node).trim();
     if (/^h[1-6]$/.test(node.tag || '')) {
       const level = Number(node.tag[1]);
       if (/\b\d+\.\d+\.\d+\b.*(?:Change\s*Log|Release)/i.test(label) || /(?:Change\s*Log|Release).*\b\d+\.\d+\.\d+\b/i.test(label)) continue;
-      if (/^(?:Global|Common Changes)$/i.test(label)) { include = true; scopeLevel = level; continue; }
-      if (isScope(label)) { include = scopeMatches(label, loader, minecraft); scopeLevel = level; continue; }
+      if (/^(?:Global|Common Changes)$/i.test(label)) { include = true; scopeLevel = level; categoryLevel = 0; continue; }
+      if (isScope(label)) { include = scopeMatches(label, loader, minecraft); scopeLevel = level; categoryLevel = 0; continue; }
       if (scopeLevel && level < scopeLevel) { include = true; scopeLevel = 0; }
-      if (include) output.push(`<h3>${escape(label)}</h3>`);
+      if (include) {
+        const isCategory = /^(Added|Fixed|Changed|Improved)$/.test(label);
+        const tag = preserveSubcategories && !isCategory && categoryLevel && level > categoryLevel ? 'h4' : 'h3';
+        if (isCategory) categoryLevel = level;
+        else if (tag === 'h3') categoryLevel = 0;
+        output.push(`<${tag}>${escape(label)}</${tag}>`);
+      }
     } else if (include) output.push(render(node));
   }
   // Merge categories repeated by Global and environment-specific sections.
@@ -115,6 +122,10 @@ export function scopedNotes(html, loader, minecraft, { inferItemPlatforms = true
     if (node.tag === 'h3') {
       const title = textOf(node).trim();
       category = categories.has(title) ? title : '';
+      // Keep loader-specific additions out of the last Global subcategory.
+      if (category && categories.get(category).some(block => block.startsWith('<h4>'))) {
+        categories.get(category).push(`<h4>${escape(loader)} ${escape(minecraft)}</h4>`);
+      }
       otherSection = !category;
       if (otherSection) after.push(`<h3>${escape(title)}</h3>`);
       continue;
@@ -163,7 +174,9 @@ export async function loadChangelogs(directory, published) {
           environments.add(key);
           releases.push({ product: release.product, version: release.version, loader: environment.loader, minecraft: environment.minecraft,
             source: 'author', publishedAt: release.publishedAt, url: '', uploadedAt: '',
-            html: scopedNotes(release.html, environment.loader, environment.minecraft, { inferItemPlatforms: false }) });
+            html: scopedNotes(release.html, environment.loader, environment.minecraft, {
+              inferItemPlatforms: false, preserveSubcategories: /^###### /m.test(release.markdown || '')
+            }) });
         }
         continue;
       }
