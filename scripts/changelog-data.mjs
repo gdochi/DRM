@@ -143,6 +143,30 @@ export async function loadChangelogs(directory, published) {
     for (const filename of (await readdir(folder)).filter(name => name.endsWith('.json'))) {
       const release = JSON.parse(await readFile(path.join(folder, filename), 'utf8'));
       if (release.product !== project.product || filename !== `${release.version}.json`) throw new Error(`Changelog path/version mismatch: ${folder}/${filename}`);
+      if (release.source === 'author') {
+        if (release.projectId !== project.projectId || !/^\d+\.\d+\.\d+$/.test(release.version)
+            || !Number.isFinite(Date.parse(release.publishedAt)) || !release.html?.trim()
+            || !Array.isArray(release.environments) || !release.environments.length
+            || ['files','id','status','uploadedAt','url'].some(key => Object.hasOwn(release, key))) {
+          throw new Error(`Invalid author changelog: ${folder}/${filename}`);
+        }
+        const environments = new Set();
+        for (const environment of release.environments) {
+          const key = `${environment.loader}/${environment.minecraft}`;
+          if (!['Forge', 'NeoForge', 'Fabric'].includes(environment.loader)
+              || !/^\d+\.\d+(?:\.\d+)?$/.test(environment.minecraft) || environments.has(key)) {
+            throw new Error(`Invalid author changelog environment: ${release.product}/${release.version}/${key}`);
+          }
+          if (project.files.some(file => file.version === release.version && file.versions.includes(environment.loader) && file.minecraft === environment.minecraft)) {
+            throw new Error(`Use verified public-file notes for this published environment: ${release.product}/${release.version}/${key}`);
+          }
+          environments.add(key);
+          releases.push({ product: release.product, version: release.version, loader: environment.loader, minecraft: environment.minecraft,
+            source: 'author', publishedAt: release.publishedAt, url: '', uploadedAt: '',
+            html: scopedNotes(release.html, environment.loader, environment.minecraft) });
+        }
+        continue;
+      }
       const ids = new Set();
       for (const file of release.files) {
         const verified = project.files.find(item => item.id === file.id && item.version === release.version);
@@ -156,6 +180,6 @@ export async function loadChangelogs(directory, published) {
       }
     }
   }
-  if (releases.length !== published.projects.reduce((count, project) => count + project.files.length, 0)) throw new Error('Missing public changelog files');
+  if (releases.filter(release => release.source !== 'author').length !== published.projects.reduce((count, project) => count + project.files.length, 0)) throw new Error('Missing public changelog files');
   return releases;
 }
