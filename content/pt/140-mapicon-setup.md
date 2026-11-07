@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: Iniciar
 section: setup
 status: Guia de uso
-version: 0.1.2
+version: 0.1.3
 audience: Criadores / operadores de servidor
 translationSource: en
 translationMethod: assisted
@@ -15,7 +15,7 @@ translationMethod: assisted
 
 ## Dê a um NPC um ícone azul
 
-Prepare DRM, MapIcon Integração e o mapa que deseja exibir. Essas telas foram verificadas com **MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1 / Minimapa de Xaero 26.6.0**. A edição de ícones também funciona sem um mapa instalado.
+Prepare DRM, **MapIcon Integration 0.1.3** e o mapa em que deseja exibir os ícones. As capturas abaixo foram feitas com **MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1 / Minimapa de Xaero 26.6.0**. A edição de ícones também funciona sem um mapa instalado.
 
 1. [ Coloque um DNPC ](#dochi-npc-core/npc-core-setup).
 2. Abra **NPC editor → Addons → Map icon**. O editor individual tem apenas **Selected NPC** à esquerda.
@@ -47,8 +47,8 @@ Escolha o padrão correspondente para diálogo NPCs ou treinadores. Cobblemon fu
 | 1.21.1 | Fabric / NeoForge | 21 |
 | 26.3 | Fabric / NeoForge | 25 |
 
-Instale arquivos correspondentes DRM e MapIcon no servidor e nos clientes. Instale o(s) mapa(s) desejado(s) e as bibliotecas necessárias. Fabric também precisa de Fabric API.
+Instale DRM e MapIcon para o mesmo carregador no servidor e nos clientes. Xaero’s Minimap, Xaero’s World Map e JourneyMap são opcionais: instale apenas um ou qualquer combinação, com as bibliotecas exigidas pelos mapas escolhidos. Fabric também precisa de Fabric API.
 
-Você pode editar ícones sem um mapa instalado, mas não pode vê-los em um mapa. Use DNPC em 26.3; CustomNPCs não está disponível lá.
+Sem nenhum mapa instalado, o editor, as configurações do servidor e o salvamento continuam disponíveis. Instale um mapa para ver os ícones nele. Use DNPC em 26.3; essa versão não oferece suporte a CustomNPCs.
 
 Para imagens personalizadas ou ícones ausentes, consulte [imagens e solução de problemas](#dochi-mapicon-integration/mapicon-files-operations).

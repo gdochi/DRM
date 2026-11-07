@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: Criação de ícones
 section: editor
 status: Guia de uso
-version: 0.1.2
+version: 0.1.3
 audience: Criadores de NPC
 translationSource: en
 translationMethod: assisted
@@ -59,5 +59,7 @@ Um interruptor de ícone não ignora as condições de visibilidade do Core NPC 
 ## Salvar e aplicar
 
 O carregamento abre um perfil para edição sem alterar a política do servidor. **Save & Apply**, Salvar e Save As salvar o perfil e ativá-lo. O nome de arquivo inferior **Active** relata o perfil confirmado pelo servidor. Mods Config alterna atualizar a exibição imediatamente; pressione **Apply** para salvá-los no servidor.
+
+MapIcon 0.1.3 verifica o NPC selecionado antes de salvar um perfil do servidor. Tanto o editor completo quanto o editor individual rejeitam edições desatualizadas do NPC; um salvamento rejeitado mantém intactos o perfil e as configurações atuais do NPC no servidor. Anote as alterações que deseja manter, use **Reload saved settings** e reaplique-as. Recarregar descarta as alterações não salvas.
 
 Veja [arquivos e solução de problemas](#dochi-mapicon-integration/mapicon-files-operations) para caminhos de textura e limites de exibição.

@@ -4,6 +4,9 @@
 
 ## 파일과 화면 단위
 
+- 체인지로그의 모드 단위는 홈의 모드 카드와 같다. DRM은 `#changelog/core` 한 화면에 Forge, NeoForge, Fabric을 함께 표시한다. Forge 안에는 `1.20.1`, NeoForge와 Fabric 안에는 각각 `1.21.1`과 `26.3`을 두고, 그 아래에서 모드 버전을 선택한다.
+- 문서용 `Forge 1.20.1` / `Fabric / NeoForge 1.21.1 / 26.3` 환경 전환은 체인지로그에 표시하지 않는다. 체인지로그 제목과 모드 선택에는 공통 모드 이름을 쓰며, **Open docs**는 선택한 릴리스 환경의 문서로 연결한다.
+- `core`와 `core-fabric` 원문 폴더는 출처별로 유지하되 화면에서는 같은 DRM 모드로 모은다. 기존 `#changelog/core-fabric/...` 주소는 로더·Minecraft 버전·모드 버전을 보존해 `#changelog/core/...`로 연결한다.
 - 공개 원문은 `content/changelogs/<product>/<모드 버전>.json`에 보관한다. 파일 하나에 모드 버전 하나만 담고, `files` 안에서 공개 파일 ID·로더·Minecraft 버전·업로드 날짜·원문을 각각 유지한다.
 - 예: `content/changelogs/dochi-npc-core/0.1.2.json`. `Forge / 1.20.1`, `NeoForge / 1.21.1`, `NeoForge / 26.3`, `Fabric / 1.21.1`, `Fabric / 26.3`은 화면에서 별도 선택 항목이다.
 - 주소는 `#changelog/<product>/<loader>/<minecraft>/<mod-version>`이다. 예: `#changelog/dochi-npc-core/NeoForge/26.3/0.1.2`.

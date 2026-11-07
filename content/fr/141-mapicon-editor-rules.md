@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: Création d'icônes
 section: editor
 status: Guide d'utilisation
-version: 0.1.2
+version: 0.1.3
 audience: Créateurs PNJ
 translationSource: en
 translationMethod: assisted
@@ -59,5 +59,7 @@ Un commutateur d'icônes ne contourne pas les conditions de visibilité du Core 
 ## Enregistrer et appliquer
 
 Load ouvre un profil pour l'édition sans changer de stratégie de serveur. **Save & Apply**, Enregistrer et Save As enregistrer le profil et l'activer. Le fichier bas **Active** signale le profil confirmé par le serveur. Mods Config bascule mettre à jour l'affichage immédiatement; appuyez sur **Apply** pour les enregistrer sur le serveur.
+
+MapIcon 0.1.3 vérifie le PNJ sélectionné avant d'enregistrer un profil serveur. L'éditeur complet et l'éditeur individuel refusent les modifications obsolètes du PNJ ; un enregistrement refusé laisse intacts le profil et les paramètres actuels du PNJ sur le serveur. Notez les modifications à conserver, utilisez **Reload saved settings**, puis réappliquez-les. Le rechargement abandonne les modifications non enregistrées.
 
 Voir [fichiers et dépannage](#dochi-mapicon-integration/mapicon-files-operations) pour les chemins de texture et les limites d'affichage.

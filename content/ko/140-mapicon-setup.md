@@ -7,13 +7,13 @@ product: dochi-mapicon-integration
 category: 시작하기
 section: setup
 status: 사용 안내
-version: 0.1.2
+version: 0.1.3
 audience: 제작자 / 서버 운영자
 ---
 
 ## NPC 한 명을 파란 아이콘으로 표시하기
 
-DRM·MapIcon Integration과 실제 지도를 표시할 모드를 준비합니다. 아래는 **MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1 / Xaero’s Minimap 26.6.0**에서 확인한 화면입니다. 아이콘 설정 편집은 지도 모드 없이도 할 수 있습니다.
+DRM·**MapIcon Integration 0.1.3**과 실제 지도를 표시할 모드를 준비합니다. 아래 스크린샷은 **MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1 / Xaero’s Minimap 26.6.0**에서 확인한 예시입니다. 아이콘 설정 편집은 지도 모드 없이도 할 수 있습니다.
 
 1. [DNPC](#dochi-npc-core/npc-core-setup)를 한 명 배치합니다.
 2. **NPC 편집기 → Addons → Map icon**을 엽니다. NPC 하나를 바꾸는 화면은 왼쪽에 **Selected NPC**만 있습니다.
@@ -45,8 +45,8 @@ DRM·MapIcon Integration과 실제 지도를 표시할 모드를 준비합니다
 | 1.21.1 | Fabric / NeoForge | 21 |
 | 26.3 | Fabric / NeoForge | 25 |
 
-서버와 클라이언트에 같은 로더의 DRM·MapIcon을 설치합니다. 지도 모드는 각각 골라 설치하며, 해당 지도가 요구하는 라이브러리도 필요합니다. Fabric에는 Fabric API를 준비합니다.
+서버와 클라이언트에 같은 로더의 DRM·MapIcon을 설치합니다. Xaero’s Minimap, Xaero’s World Map, JourneyMap은 각각 선택 사항이므로 하나만 설치하거나 원하는 조합으로 사용할 수 있습니다. 설치한 지도가 요구하는 라이브러리도 준비하고, Fabric에는 Fabric API를 설치합니다.
 
-지도 모드가 없어도 아이콘 설정은 편집할 수 있지만 지도 표시는 볼 수 없습니다. 26.3에서는 DNPC를 사용하며 CustomNPCs는 사용할 수 없습니다.
+지도 모드가 하나도 없어도 편집기, 서버 설정과 저장은 사용할 수 있습니다. 지도에서 아이콘을 보려면 해당 지도 모드를 설치합니다. 26.3에서는 DNPC를 사용하며 CustomNPCs를 지원하지 않습니다.
 
 아이콘이 안 보이거나 내 그림을 넣고 싶으면 [그림 추가와 문제 해결](#dochi-mapicon-integration/mapicon-files-operations)을 보세요.

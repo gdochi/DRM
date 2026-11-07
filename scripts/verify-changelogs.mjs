@@ -16,7 +16,8 @@ const { config, data } = await loadBuiltDocs(path.join(root, 'dist'));
 const context = { window: {} };
 vm.runInNewContext(await readFile(path.join(root, 'dist/assets/changelogs.js'), 'utf8'), context);
 const releases = JSON.parse(JSON.stringify(context.window.DOCHI_CHANGELOGS));
-const link = r => `#changelog/${r.product}/${r.loader}/${r.minecraft}/${r.version}`;
+const productFor = product => product === 'core-fabric' ? 'core' : product === 'mwent' ? 'dochi-minigames' : product;
+const link = r => `#changelog/${productFor(r.product)}/${r.loader}/${r.minecraft}/${r.version}`;
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.DOCHI_PLAYWRIGHT_MODULE || path.join(os.homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'));
 const server = serve(path.join(root, 'dist'), 0);
@@ -44,7 +45,8 @@ try {
     await go(link(release));
     await page.waitForSelector('[data-changelog]');
     const actual = await page.locator('[data-changelog]').evaluate(element => ({ ...element.dataset }));
-    for (const key of ['product', 'loader', 'minecraft', 'version']) assert.equal(actual[key], release[key], link(release));
+    assert.equal(actual.product, productFor(release.product), link(release));
+    for (const key of ['loader', 'minecraft', 'version']) assert.equal(actual[key], release[key], link(release));
     assert.equal(await page.locator('.changelog-release').count(), 1);
     assert.equal(await page.locator('.release-title h2').textContent(), release.version);
     if (release.source === 'author') assert.equal(await page.locator('.release-title a').count(), 0, 'Author notes have no unverified download');
@@ -86,7 +88,7 @@ try {
     assert.equal(await page.locator('.doc-nav .nav-group').filter({ hasText: 'Change Log' }).count(), 0);
     await page.locator('.sidebar .product-tabs a[href^="#changelog/"]').evaluate(element => element.click());
     await page.waitForSelector('[data-changelog]');
-    assert.equal(await page.locator('[data-changelog]').getAttribute('data-product'), product === 'mwent' ? 'dochi-minigames' : product);
+    assert.equal(await page.locator('[data-changelog]').getAttribute('data-product'), productFor(product));
   }
   checks.push('All 12 beginner guides retain navigation and expose the separate changelog; MWENT opens Minigames history.');
 
@@ -96,6 +98,45 @@ try {
     assert.equal(await page.locator('[data-changelog]').getAttribute('data-version'), doc.releaseVersion || doc.version);
   }
   checks.push('Existing release links redirect to the same mod version in the separate changelog.');
+
+  for (const release of releases.filter(release => release.product === 'core-fabric')) {
+    await go(`#changelog/core-fabric/${release.loader}/${release.minecraft}/${release.version}`);
+    await page.waitForSelector('[data-changelog][data-product="core"]');
+    assert.equal(new URL(page.url()).hash, link(release));
+    for (const key of ['loader', 'minecraft', 'version']) assert.equal(await page.locator('[data-changelog]').getAttribute(`data-${key}`), release[key]);
+  }
+  await go('#changelog/core-fabric');
+  await page.waitForSelector('[data-changelog][data-product="core"][data-loader="NeoForge"]');
+  checks.push('All legacy DRM Fabric/NeoForge release addresses resolve to the unified DRM changelog without changing their environment or mod version.');
+
+  for (const locale of Object.keys(config.locales)) {
+    await page.goto(`${origin}/?lang=${locale}#changelog/core`);
+    await page.waitForSelector('[data-changelog][data-product="core"]');
+    assert.equal(await page.locator('.environment-switch').count(), 0);
+    assert.equal(await page.locator('.changelog-heading p').textContent(), "Dochi's RPG Maker");
+    assert(!(await page.title()).includes('Forge'));
+    assert.equal(await page.locator('[data-changelog-mod] option[value="core"]').count(), 1);
+    assert.equal(await page.locator('[data-changelog-mod] option[value="core-fabric"]').count(), 0);
+    assert.equal(await page.locator('[data-changelog-mod]').inputValue(), 'core');
+    assert.deepEqual(await page.locator('.changelog-filters nav').first().locator('a').allTextContents(), ['Forge', 'NeoForge', 'Fabric']);
+    for (const [loader, minecraftVersions] of [['Forge', ['1.20.1']], ['NeoForge', ['1.21.1', '26.3']], ['Fabric', ['1.21.1', '26.3']]]) {
+      await page.locator(`.changelog-options a[href="#changelog/core/${loader}"]`).click();
+      await page.waitForSelector(`[data-changelog][data-loader="${loader}"]`);
+      assert.deepEqual(await page.locator('.changelog-filters nav').nth(1).locator('a').allTextContents(), minecraftVersions);
+      for (const minecraft of minecraftVersions) {
+        await page.locator(`.changelog-options a[href="#changelog/core/${loader}/${minecraft}"]`).click();
+        await page.waitForSelector(`[data-changelog][data-loader="${loader}"][data-minecraft="${minecraft}"]`);
+        assert.equal(await page.locator('.release-title h2').textContent(), '0.3.1');
+        assert.equal(await page.locator('.product-tabs a').first().getAttribute('href'), loader === 'Forge' ? '#core/quick-start' : '#core-fabric/quick-start');
+        assert((await page.locator('.changelog-versions a').count()) >= 1);
+      }
+    }
+    await page.goBack();
+    await page.waitForSelector('[data-changelog][data-loader="Fabric"][data-minecraft="1.21.1"]');
+    await page.reload();
+    await page.waitForSelector('[data-changelog][data-loader="Fabric"][data-minecraft="1.21.1"]');
+  }
+  checks.push('All eight languages show one DRM changelog with Forge → 1.20.1, NeoForge → 1.21.1/26.3 and Fabric → 1.21.1/26.3; each opens matching docs and retains selection on back/reload.');
 
   await go('#changelog/dochi-npc-core/NeoForge/26.3/0.1.2');
   let text = await page.locator('.changelog-notes').textContent();
@@ -127,6 +168,11 @@ try {
   }
   checks.push('Unknown mods, loaders, Minecraft versions, mod versions and malformed routes show not found.');
 
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await go('#changelog/core/NeoForge/26.3/0.3.1');
+  await page.screenshot({ path: path.join(output, 'drm-unified-desktop.png'), fullPage: true });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.screenshot({ path: path.join(output, 'drm-unified-mobile.png'), fullPage: true });
   await page.setViewportSize({ width: 1440, height: 1000 });
   await go('#changelog/dochi-npc-core/NeoForge/1.21.1/0.1.2');
   await page.screenshot({ path: path.join(output, 'changelog-desktop.png'), fullPage: true });

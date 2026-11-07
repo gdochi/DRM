@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: Inicio
 section: setup
 status: Guía de uso
-version: 0.1.2
+version: 0.1.3
 audience: Creadores / operadores de servidores
 translationSource: en
 translationMethod: assisted
@@ -15,7 +15,7 @@ translationMethod: assisted
 
 ## Dar a un NPC un icono azul
 
-Prepare DRM, MapIcon Integración y el mapa que desea mostrar. Estas pantallas se verificaron con **MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1 / Xaero’s Minimap 26.6.0**. La edición de iconos también funciona sin un mapa instalado.
+Prepare DRM, **MapIcon Integration 0.1.3** y el mapa en el que desea mostrar los iconos. Las capturas siguientes se tomaron con **MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1 / Xaero’s Minimap 26.6.0**. La edición de iconos también funciona sin un mapa instalado.
 
 1. [Colocar a DNPC](#dochi-npc-core/npc-core-setup).
 2. Abrir **NPC editor → Addons → Map icon**. El editor individual solo tiene **Selected NPC** a la izquierda.
@@ -47,8 +47,8 @@ Elija el valor predeterminado correspondiente para los NPC o entrenadores de di�
 | 1.21.1 | Fabric / NeoForge | 21 |
 | 26.3 | Fabric / NeoForge | 25 |
 
-Instalar archivos match-loader DRM y MapIcon en el servidor y los clientes. Instale los mapas que desee y sus bibliotecas requeridas. Fabric también necesita Fabric API.
+Instale DRM y MapIcon para el mismo cargador en el servidor y los clientes. Xaero’s Minimap, Xaero’s World Map y JourneyMap son opcionales: puede instalar uno o cualquier combinación, junto con las bibliotecas que requieran los mapas elegidos. Fabric también necesita Fabric API.
 
-Puede editar iconos sin un mapa instalado, pero no puede verlos en un mapa. El uso DNPC en 26.3; CustomNPCs no está disponible allí.
+Sin ningún mapa instalado, el editor, los ajustes del servidor y el guardado siguen disponibles. Instale un mapa para ver los iconos en él. Use DNPC en 26.3; esa versión no admite CustomNPCs.
 
 Para obtener imágenes personalizadas o iconos que faltan, consulte [imágenes y solución de problemas](#dochi-mapicon-integration/mapicon-files-operations).

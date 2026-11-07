@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: Démarrage
 section: setup
 status: Guide d'utilisation
-version: 0.1.2
+version: 0.1.3
 audience: Créateurs / opérateurs de serveur
 translationSource: en
 translationMethod: assisted
@@ -15,7 +15,7 @@ translationMethod: assisted
 
 ## Donner à un PNJ une icône bleue
 
-Préparez DRM, MapIcon Intégration et la carte que vous souhaitez afficher. Ces écrans ont été vérifiés avec **MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1 / Minimap de Xaero 26.6.0**. L'édition d'icônes fonctionne également sans carte installée.
+Préparez DRM, **MapIcon Integration 0.1.3** et la carte sur laquelle afficher les icônes. Les captures ci-dessous ont été réalisées avec **MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1 / Minimap de Xaero 26.6.0**. La modification des icônes fonctionne aussi sans carte installée.
 
 1. [ Placer un DNPC ](#dochi-npc-core/npc-core-setup).
 2. Ouvrir **NPC editor → Addons → Map icon**. L'éditeur individuel n'a que **Selected NPC** sur la gauche.
@@ -47,8 +47,8 @@ Choisissez la valeur par défaut correspondante pour les PNJ ou les formateurs d
 | 1.21.1 | Fabric / NeoForge | 21 |
 | 26.3 | Fabric / NeoForge | 25 |
 
-Installez les fichiers matching-loader DRM et MapIcon sur le serveur et les clients. Installez la (les) carte(s) que vous voulez et leurs bibliothèques requises. Fabric a également besoin de Fabric API.
+Installez DRM et MapIcon pour le même chargeur sur le serveur et les clients. Xaero’s Minimap, Xaero’s World Map et JourneyMap sont facultatifs : installez-en un seul ou une combinaison, avec les bibliothèques requises par les cartes choisies. Fabric nécessite aussi Fabric API.
 
-Vous pouvez modifier des icônes sans installer de carte, mais vous ne pouvez pas les voir sur une carte. Utilisez DNPC sur 26.3; CustomNPCs est indisponible là-bas.
+Sans aucune carte installée, l'éditeur, les paramètres du serveur et l'enregistrement restent disponibles. Installez une carte pour y voir les icônes. Utilisez DNPC sur 26.3 ; cette version ne prend pas en charge CustomNPCs.
 
 Pour les images personnalisées ou les icônes manquantes, voir [images et dépannage](#dochi-mapicon-integration/mapicon-files-operations).

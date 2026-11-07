@@ -1529,21 +1529,21 @@
         {
           "id": "releases",
           "label": "Changelog",
-          "description": "Changes published on CurseForge.",
+          "description": "Version changes and release notes.",
           "label_ko": "체인지로그",
-          "description_ko": "CurseForge에 공개된 버전의 변경 기록입니다.",
+          "description_ko": "버전별 변경사항과 릴리스 안내입니다.",
           "label_pt": "Histórico de alterações",
-          "description_pt": "Alterações das versões publicadas no CurseForge.",
+          "description_pt": "Alterações por versão e notas de lançamento.",
           "label_es": "Registro de cambios",
-          "description_es": "Cambios de las versiones publicadas en CurseForge.",
+          "description_es": "Cambios por versión y notas de la versión.",
           "label_fr": "Historique des modifications",
-          "description_fr": "Modifications des versions publiées sur CurseForge.",
+          "description_fr": "Modifications par version et notes de publication.",
           "label_ru": "Список изменений",
-          "description_ru": "Изменения версий, опубликованных на CurseForge.",
+          "description_ru": "Изменения по версиям и примечания к выпускам.",
           "label_zh": "更新日志",
-          "description_zh": "CurseForge 已发布版本的更新记录。",
+          "description_zh": "各版本的更新记录与发布说明。",
           "label_ja": "更新履歴",
-          "description_ja": "CurseForge で公開されたバージョンの変更記録です。"
+          "description_ja": "バージョンごとの変更記録とリリース情報です。"
         }
       ]
     },

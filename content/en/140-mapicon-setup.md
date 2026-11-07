@@ -7,13 +7,13 @@ product: dochi-mapicon-integration
 category: Start
 section: setup
 status: Usage guide
-version: 0.1.2
+version: 0.1.3
 audience: Creators / server operators
 ---
 
 ## Give one NPC a blue icon
 
-Prepare DRM, MapIcon Integration and the map you want to display. These screens were verified with **MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1 / Xaero’s Minimap 26.6.0**. Icon editing also works without a map installed.
+Prepare DRM, **MapIcon Integration 0.1.3** and the map you want to display. The screenshots below were captured with **MapIcon 0.1.2 / DNPC 0.1.3 / NeoForge 1.21.1 / Xaero’s Minimap 26.6.0**. Icon editing also works without a map installed.
 
 1. [Place a DNPC](#dochi-npc-core/npc-core-setup).
 2. Open **NPC editor → Addons → Map icon**. The individual editor has only **Selected NPC** on the left.
@@ -45,8 +45,8 @@ Choose the corresponding default for dialogue NPCs or trainers. Cobblemon roles 
 | 1.21.1 | Fabric / NeoForge | 21 |
 | 26.3 | Fabric / NeoForge | 25 |
 
-Install matching-loader DRM and MapIcon files on server and clients. Install the map(s) you want and their required libraries. Fabric also needs Fabric API.
+Install matching-loader DRM and MapIcon files on server and clients. Xaero’s Minimap, Xaero’s World Map and JourneyMap are each optional; install any one or any combination, along with the libraries required by those maps. Fabric also needs Fabric API.
 
-You can edit icons without a map installed, but cannot see them on a map. Use DNPC on 26.3; CustomNPCs is unavailable there.
+Without any map installed, editor access, server settings and saving remain available. Install a map to see icons in it. Use DNPC on 26.3; that target does not support CustomNPCs.
 
 For custom pictures or missing icons, see [images and troubleshooting](#dochi-mapicon-integration/mapicon-files-operations).

@@ -81,15 +81,28 @@
   }
 
   function changelogProduct(product) {
-    return product === "mwent" ? "dochi-minigames" : product;
+    return product === "mwent" ? "dochi-minigames" : productFamily(product);
+  }
+
+  function getChangelogReleases(product) {
+    const family = changelogProduct(product);
+    return changelogs.filter(release => changelogProduct(release.product) === family);
+  }
+
+  function changelogLabel(product) {
+    const mod = getWikiMods().find(mod => mod.product === changelogProduct(product));
+    return modText(mod || {}, "label") || productText(config.products[product], "label");
   }
 
   function changelogLink(product, loader = "", minecraft = "", version = "") {
+    if (!loader && changelogProduct(product) !== product) {
+      loader = ["Forge", "NeoForge", "Fabric"].find(loader => changelogs.some(release => release.product === product && release.loader === loader)) || "";
+    }
     return `#changelog/${[changelogProduct(product), loader, minecraft, version].filter(Boolean).map(encodeURIComponent).join("/")}`;
   }
 
   function hasChangelog(product) {
-    return changelogs.some(release => release.product === changelogProduct(product));
+    return getChangelogReleases(product).length > 0;
   }
 
   function cardHistoryText() {
@@ -111,13 +124,13 @@
     return getWikiMods().find(mod => mod.documentVariants?.some(variant => variant.product === product))?.product || product;
   }
 
-  function renderEnvironmentSwitch(product, activeDoc, changelog = false) {
+  function renderEnvironmentSwitch(product, activeDoc) {
     const mod = getWikiMods().find(mod => mod.product === productFamily(product));
     if (!mod?.documentVariants) return "";
     const label = { ko: "문서 환경", en: "Guide environment", pt: "Ambiente do guia", es: "Entorno de la guía", fr: "Environnement du guide", ru: "Среда руководства", zh: "文档环境", ja: "ガイドの環境" }[state.locale] || "Guide environment";
     return `<nav class="environment-switch" aria-label="${escapeAttr(label)}"><span>${escapeHtml(label)}</span><div>${mod.documentVariants.map(variant => {
       const doc = activeDoc && findDoc(variant.product, activeDoc.slug);
-      const href = changelog ? changelogLink(variant.product) : doc ? linkForDoc(doc) : linkForProduct(variant.product);
+      const href = doc ? linkForDoc(doc) : linkForProduct(variant.product);
       return `<a href="${href}"${variant.product === product ? ' aria-current="page"' : ""}>${escapeHtml(variant.label)}</a>`;
     }).join("")}</div></nav>`;
   }
@@ -907,7 +920,7 @@
   function renderChangelog(route) {
     const { product } = route;
     if (!config.products?.[product] || !isProductOpen(product) || route.invalid) return renderNotFound(product);
-    const releases = changelogs.filter(release => release.product === changelogProduct(product));
+    const releases = getChangelogReleases(product);
     const loaders = ["Forge", "NeoForge", "Fabric"].filter(loader => releases.some(release => release.loader === loader));
     const loader = route.loader || loaders[0];
     const minecraftVersions = [...new Set(releases.filter(release => release.loader === loader).map(release => release.minecraft))].sort((a,b) => a.localeCompare(b, undefined, { numeric: true }));
@@ -920,10 +933,9 @@
     const date = release.publishedAt || release.uploadedAt;
     const tab = (label, href, active) => `<a href="${href}"${active ? ' aria-current="page"' : ""}>${escapeHtml(label)}</a>`;
     return `<section class="changelog-shell" data-changelog data-product="${escapeAttr(product)}" data-loader="${escapeAttr(loader)}" data-minecraft="${escapeAttr(minecraft)}" data-version="${escapeAttr(version)}">
-      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home">Dochi's Wiki</a>${icon("chevron")}<span>${escapeHtml(productText(config.products[product], "label"))}</span></nav>
-      <header class="changelog-heading"><div><h1>${escapeHtml(changelogText("title"))}</h1><p>${escapeHtml(productText(config.products[product], "label"))}</p></div><label class="changelog-mod-picker"><span>${escapeHtml(changelogText("select"))}</span><select data-changelog-mod>${getWikiMods().filter(mod => mod.product !== "mwent" && hasChangelog(mod.product)).map(mod => `<option value="${escapeAttr(mod.product)}"${mod.product === productFamily(product) ? " selected" : ""}>${escapeHtml(modText(mod, "label") || modText(mod, "shortLabel"))}</option>`).join("")}</select></label></header>
-      ${renderEnvironmentSwitch(product, null, true)}
-      ${renderProductTabs(product, "changelog")}
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home">Dochi's Wiki</a>${icon("chevron")}<span>${escapeHtml(changelogLabel(product))}</span></nav>
+      <header class="changelog-heading"><div><h1>${escapeHtml(changelogText("title"))}</h1><p>${escapeHtml(changelogLabel(product))}</p></div><label class="changelog-mod-picker"><span>${escapeHtml(changelogText("select"))}</span><select data-changelog-mod>${getWikiMods().filter(mod => mod.product !== "mwent" && hasChangelog(mod.product)).map(mod => `<option value="${escapeAttr(mod.product)}"${mod.product === productFamily(product) ? " selected" : ""}>${escapeHtml(modText(mod, "label") || modText(mod, "shortLabel"))}</option>`).join("")}</select></label></header>
+      ${renderProductTabs(release.product, "changelog")}
       <p class="changelog-lead">${escapeHtml(changelogText("lead"))}</p>
       <div class="changelog-filters"><div><h2>${escapeHtml(changelogText("loader"))}</h2><nav class="changelog-options" aria-label="${escapeAttr(changelogText("loader"))}">${loaders.map(item => tab(item, changelogLink(product, item), loader === item)).join("")}</nav></div>
       <div><h2>${escapeHtml(changelogText("minecraft"))}</h2><nav class="changelog-options" aria-label="${escapeAttr(changelogText("minecraft"))}">${minecraftVersions.map(item => tab(item, changelogLink(product, loader, item), minecraft === item)).join("")}</nav></div></div>
@@ -936,6 +948,10 @@
   function renderPage(options = {}) {
     const route = parseHash();
     const { view, product } = route;
+    if (view === "changelog" && config.products?.[product] && !route.invalid && changelogProduct(product) !== product) {
+      location.replace(changelogLink(product, route.loader, route.minecraft, route.version));
+      return;
+    }
     const routeKey = `${state.locale}:${view}/${product}/${route.doc}/${route.loader || ""}/${route.minecraft || ""}/${route.version || ""}/${route.invalid || ""}`;
     if (routeKey === previousRoute && !options.preserveReading) {
       app.querySelector(".mobile-toc")?.removeAttribute("open");
@@ -951,13 +967,14 @@
         activeDoc = route.doc ? findDoc(product, route.doc) : getDefaultDoc(product);
         if (activeDoc?.section === "releases") {
           const version = activeDoc.releaseVersion || activeDoc.version;
-          const first = changelogs.find(release => release.product === changelogProduct(product) && release.version === version);
+          const first = changelogs.find(release => release.product === product && release.version === version)
+            || getChangelogReleases(product).find(release => release.version === version);
           if (first) { location.replace(changelogLink(product, first.loader, first.minecraft, version)); return; }
         }
       }
     }
     const changelogPage = view === "changelog" ? renderChangelog(route) : "";
-    document.title = activeDoc ? `${activeDoc.title} · ${productText(config.products[product], "shortLabel")} · Dochi's Wiki` : view === "changelog" && !changelogPage.includes('class="not-found"') ? `${changelogText("title")} · ${productText(config.products[product], "label")} · Dochi's Wiki` : ui(view === "home" ? "tasks" : "missing") + " · Dochi's Wiki";
+    document.title = activeDoc ? `${activeDoc.title} · ${productText(config.products[product], "shortLabel")} · Dochi's Wiki` : view === "changelog" && !changelogPage.includes('class="not-found"') ? `${changelogText("title")} · ${changelogLabel(product)} · Dochi's Wiki` : ui(view === "home" ? "tasks" : "missing") + " · Dochi's Wiki";
     app.innerHTML = `
       <a class="skip-link" href="#main-content">${escapeHtml(ui("skip"))}</a>
       <header class="topbar">

@@ -63,11 +63,14 @@ try {
   assert.equal(await page.locator('[data-mod-picker]').inputValue(), 'core');
   assert.equal(await page.locator('[data-mod-picker] option[value="core-fabric"]').count(), 0);
   await page.locator('.product-tabs a').filter({ hasText: '체인지로그' }).click();
-  await page.waitForSelector('[data-changelog][data-product="core-fabric"]');
+  await page.waitForSelector('[data-changelog][data-product="core"][data-loader="NeoForge"]');
   assert.equal(await page.locator('[data-changelog-mod]').inputValue(), 'core');
-  await page.locator('.environment-switch a').first().click();
-  await page.waitForSelector('[data-changelog][data-product="core"]');
-  checks.push('One DRM card and mod entry retain both downloads, matching guide topics and environment-specific changelogs.');
+  assert.equal(await page.locator('.environment-switch').count(), 0);
+  assert.deepEqual(await page.locator('.changelog-filters nav').first().locator('a').allTextContents(), ['Forge', 'NeoForge', 'Fabric']);
+  await page.locator('.changelog-options a[href="#changelog/core/Forge"]').click();
+  await page.waitForSelector('[data-changelog][data-product="core"][data-loader="Forge"]');
+  assert.deepEqual(await page.locator('.changelog-filters nav').nth(1).locator('a').allTextContents(), ['1.20.1']);
+  checks.push('One DRM card retains both downloads and matching guide topics; its single changelog groups versions under Forge, NeoForge and Fabric.');
 
   await go(`${origin}/#core/dialogue-system`);
   await page.setViewportSize({ width: 390, height: 844 });

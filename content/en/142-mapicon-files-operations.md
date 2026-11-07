@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: Files and Operations
 section: operations
 status: Usage guide
-version: 0.1.2
+version: 0.1.3
 audience: Creators / operators
 ---
 
@@ -24,11 +24,13 @@ Place custom PNGs in the server texture folder and search **Choose Icon → Exte
 
 For a resource pack's `assets/myserver/textures/icons/vendor.png`, enter `myserver:textures/icons/vendor.png`. Static 32×32 or 64×64 PNGs are recommended; the maximum is 1024×1024. Missing or pending images use the default NPC icon. Server initialization installs only missing bundled PNGs and preserves existing files.
 
+MapIcon 0.1.3 reuses unchanged images and JourneyMap markers. After replacing a resource-pack PNG under the same resource ID, reload resource packs to refresh the image on the maps.
+
 ## Live display limits
 
 Only server-loaded NPCs in the player's dimension are displayed: within 4096 blocks, nearest first, up to 512 entries. The server updates every second; clients tracking an entity use its actual position.
 
-Unloading, death, dimension changes and disconnects clear stale entries. Version 0.1.2 does not store fixed POIs or last-known locations for unloaded NPCs. Managed NPCs suppress their normal Xaero radar marker to reduce duplicates. Xaero Fair Play mode does not draw the addon minimap layer.
+Unloading, death, dimension changes and disconnects clear stale entries. Version 0.1.3 does not store fixed POIs or last-known locations for unloaded NPCs. Managed NPCs suppress their normal Xaero radar marker to reduce duplicates. Xaero Fair Play mode does not draw the addon minimap layer.
 
 ![The received DNPC marker rendered on the actual Xaero minimap.](assets/media/guides/mapicon-012-neo1211/mapicon-minimap.png "MapIcon 0.1.2 / NeoForge 1.21.1 / Xaero’s Minimap 26.6.0. The blue humanoid above the white player marker represents the NPC visible in the world. Check the actual map after saving, as well as the editor preview.")
 
@@ -40,7 +42,7 @@ Unloading, death, dimension changes and disconnects clear stale entries. Version
 | Hidden only for one player | DRM NPC visibility conditions, per-NPC Hide and a matching disabled rule |
 | Unexpected icon | Per-NPC override, JSON path, rule priority and type-default order |
 | Duplicate markers | Whether the addon manages that NPC and compatibility of the installed Xaero build |
-| Save conflict | Reload the server profile, then reapply edits |
+| Save conflict | Use **Reload saved settings**, then reapply edits; another editor may have changed the profile or selected NPC |
 | Icons disappear far away | Unloaded NPCs are outside the current live-display scope |
 
 Editing, file browsing and saving require permission level 2, while ordinary players can view map icons. Back up map profiles, DRM assets and the world's NPC data together.

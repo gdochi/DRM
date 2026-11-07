@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: 아이콘 제작
 section: editor
 status: 사용 안내
-version: 0.1.2
+version: 0.1.3
 audience: NPC 제작자
 ---
 
@@ -57,5 +57,7 @@ Core의 NPC 표시 조건 때문에 해당 플레이어에게 숨겨진 NPC는 �
 ## 저장과 적용
 
 Load는 편집할 프로필을 불러오며 서버 활성 정책은 바꾸지 않습니다. **Save & Apply**, Save 또는 Save As는 저장한 프로필을 서버 정책으로 적용합니다. 하단 **적용 중** 파일명으로 서버가 응답한 활성 프로필을 확인하세요. Mods Config 스위치는 화면에 즉시 반영되고 **Apply**로 서버에 저장합니다.
+
+MapIcon 0.1.3은 서버 프로필을 저장하기 전에 선택한 NPC의 변경 여부를 확인합니다. 전체 편집기와 NPC 전용 편집기 모두 오래된 NPC 편집의 저장을 거부하며, 거부된 저장은 서버의 최신 프로필과 NPC 설정을 덮어쓰지 않습니다. 유지할 편집 내용을 따로 확인한 뒤 **Reload saved settings**로 다시 불러오고 변경사항을 재적용하세요. 다시 불러오면 저장하지 않은 편집 내용은 사라집니다.
 
 [파일과 문제 해결](#dochi-mapicon-integration/mapicon-files-operations)에서 이미지 경로와 표시 범위를 확인하세요.

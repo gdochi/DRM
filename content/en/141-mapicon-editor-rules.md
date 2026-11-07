@@ -7,7 +7,7 @@ product: dochi-mapicon-integration
 category: Icon Authoring
 section: editor
 status: Usage guide
-version: 0.1.2
+version: 0.1.3
 audience: NPC creators
 ---
 
@@ -57,5 +57,7 @@ An icon switch does not bypass Core NPC visibility conditions for that player. C
 ## Save and apply
 
 Load opens a profile for editing without switching server policy. **Save & Apply**, Save and Save As save the profile and activate it. The bottom **Active** filename reports the server-confirmed profile. Mods Config toggles update the display immediately; press **Apply** to save them on the server.
+
+MapIcon 0.1.3 checks the selected NPC before saving a server profile. Both the full editor and the individual NPC editor reject stale NPC edits; a rejected save leaves the server's current profile and NPC settings intact. Note the edits you want to keep, use **Reload saved settings**, then reapply them. Reloading discards unsaved changes.
 
 See [files and troubleshooting](#dochi-mapicon-integration/mapicon-files-operations) for texture paths and display limits.
