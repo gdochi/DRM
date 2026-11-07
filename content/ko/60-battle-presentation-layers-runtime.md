@@ -25,6 +25,25 @@ Battle Presentation Maker에서 **Element → Add Label → Content**로 글자�
 
 ![같은 Label의 Animation 속성.](assets/media/guides/cobble-029-neo1211/cobble-layer-animation.png "Start/End Tick은 보이는 구간, Start/Final X는 출발·도착 위치입니다. 예시는 0~144틱 동안 X 280→360, Y 220을 유지하며 크기 0.8→1로 변합니다. 아래 타임라인과 같은 요소를 선택했는지 확인하세요.")
 
+## 영상으로 등장·이동·퇴장 맞추기
+
+아래 영상은 [첫 글자 배치](#drm-cobblemon-editor/cobblemon-battle-presentation)에서 만든 **RIVAL CHALLENGE**를 이어서 편집합니다. 틱은 시간 단위이며 정상 재생에서 **20틱 = 1초**입니다. 씬 메이커의 초 단위 입력과 구분하세요.
+
+![글자의 활성 구간·페이드·출발 위치와 도착 위치를 설정하고 재생·스크럽으로 비교합니다.](assets/media/guides/tutorial-videos-20261107/battle-animation-timing.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. 실제 Animation 입력 → Restart → 구간 전·중간 스크럽. 영문 UI·설명 자막, 무음.")
+
+| 영상의 입력값 | 의미 |
+| --- | --- |
+| Start **20**, End **120** | 장면 시작 1초 뒤부터 6초 지점까지 활성화 |
+| Fade In **12**, Fade Out **12** | 활성 구간의 처음과 끝에서 각각 0.6초 동안 서서히 표시·숨김 |
+| Start X **−300**, Final X **320** | 화면 왼쪽 밖에서 최종 위치로 이동 |
+| Start Y / Final Y **70** | 높이를 유지하며 가로로 이동 |
+
+1. 글자 레이어를 선택하고 **Animation**을 엽니다. 모델을 선택한 상태라면 글자용 필드가 나오지 않습니다.
+2. 표의 값을 입력합니다. 위치는 활성 구간 전체에 걸쳐 보간되며 Fade는 그 결과의 투명도에 추가로 적용됩니다.
+3. **Layout → Animation**으로 탭을 전환해 입력값을 반영한 뒤 **Restart**로 처음부터 끝까지 재생합니다. Duration은 기본 **144틱 / 7.2초**이므로 글자의 120틱 퇴장 이후도 볼 수 있습니다.
+4. **10틱**에서는 활성 구간 전이라 숨겨지고 **75틱**에서는 이동 중인 글자가 보입니다. 눈금자를 눌러 확인한 뒤 변경 내용을 저장하세요.
+5. 빠르거나 느리면 Start/End 간격과 Easing을 조절합니다. Layer/Z는 앞뒤 순서이고 Start/End는 시간입니다. 글자가 가려지는 문제와 아직 등장하지 않은 문제를 구분하세요.
+
 ## Label, Texture, Color의 차이
 
 | Type | 실제 렌더 | 중요한 설정 |

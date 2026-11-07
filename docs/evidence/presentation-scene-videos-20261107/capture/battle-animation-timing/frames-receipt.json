@@ -1,0 +1,4153 @@
+{
+  "source": "C:/Users/hodu3/Desktop/[DOCHI] DOCS/build/task/guide-capture/presentation-tutorial-05/captures/battle-animation-timing-frames.json",
+  "frames": 581,
+  "selected": [
+    {
+      "frame": 0,
+      "file": "00000.png",
+      "elapsedMs": 9.3381,
+      "screen": "BattlePresentationEditorScreen"
+    },
+    {
+      "frame": 53,
+      "file": "00053.png",
+      "elapsedMs": 2663.5082,
+      "screen": "BattlePresentationEditorScreen"
+    },
+    {
+      "frame": 105,
+      "file": "00105.png",
+      "elapsedMs": 5266.0521,
+      "screen": "BattlePresentationEditorScreen"
+    },
+    {
+      "frame": 158,
+      "file": "00158.png",
+      "elapsedMs": 7901.5012,
+      "screen": "BattlePresentationEditorScreen"
+    },
+    {
+      "frame": 211,
+      "file": "00211.png",
+      "elapsedMs": 10566.0778,
+      "screen": "BattlePresentationEditorScreen"
+    },
+    {
+      "frame": 264,
+      "file": "00264.png",
+      "elapsedMs": 13203.2733,
+      "screen": "BattlePresentationEditorScreen"
+    },
+    {
+      "frame": 316,
+      "file": "00316.png",
+      "elapsedMs": 15806.339,
+      "screen": "BattlePresentationEditorScreen"
+    },
+    {
+      "frame": 369,
+      "file": "00369.png",
+      "elapsedMs": 18457.1348,
+      "screen": "BattlePresentationEditorScreen"
+    },
+    {
+      "frame": 422,
+      "file": "00422.png",
+      "elapsedMs": 21115.6199,
+      "screen": "BattlePresentationEditorScreen"
+    },
+    {
+      "frame": 475,
+      "file": "00475.png",
+      "elapsedMs": 23757.7518,
+      "screen": "BattlePresentationEditorScreen"
+    },
+    {
+      "frame": 527,
+      "file": "00527.png",
+      "elapsedMs": 26367.1108,
+      "screen": "BattlePresentationEditorScreen"
+    },
+    {
+      "frame": 580,
+      "file": "00580.png",
+      "elapsedMs": 29003.7236,
+      "screen": "BattlePresentationEditorScreen"
+    }
+  ],
+  "durationMs": 29044.3855,
+  "intervalMs": {
+    "median": 50.1749000000018,
+    "p95": 56.65549999999712,
+    "max": 67.60900000000038
+  },
+  "originalFrames": [
+    {
+      "file": "00000.png",
+      "elapsedMs": 9.3381,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135624,
+      "sha256": "13bbe23f882caa43de55d3190f75b69b82a7c84b4d9cebec89d4916d4bff050d"
+    },
+    {
+      "file": "00001.png",
+      "elapsedMs": 65.0978,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135721,
+      "sha256": "4b3312ec81e83c957e7e95f30fc64e935afd20c3722f4987aa527fe11ea952b8"
+    },
+    {
+      "file": "00002.png",
+      "elapsedMs": 116.1352,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135664,
+      "sha256": "b51deaa412aec13a707bbed31a48cfdd3181954a209b8827c8dfb67ade0d7d8b"
+    },
+    {
+      "file": "00003.png",
+      "elapsedMs": 168.8263,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135715,
+      "sha256": "dc0e8d508e64e971a42a42e1b19a2f9220af060e1d0ed09d5fa3533b69bee2d3"
+    },
+    {
+      "file": "00004.png",
+      "elapsedMs": 216.9692,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135605,
+      "sha256": "e9a0616202f88f7450043c0c014dc3e1e3c248a8d9d4a45f236ab7646cd1bc56"
+    },
+    {
+      "file": "00005.png",
+      "elapsedMs": 265.8971,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135738,
+      "sha256": "feab58845b9d5d5edd1ee0f4aa8a0839869133f70b316aa4dd8237ef3408fad8"
+    },
+    {
+      "file": "00006.png",
+      "elapsedMs": 315.9576,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135569,
+      "sha256": "568d31a3845579749020bbbfde520dd0c6faf83bcc3ee5921df8be1ba37b5e04"
+    },
+    {
+      "file": "00007.png",
+      "elapsedMs": 365.4747,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135536,
+      "sha256": "e5d1d5fea1e67bcedf011bd7bbce2bcfd4e8c2a0e4617e70412f9c2d1edbbfbc"
+    },
+    {
+      "file": "00008.png",
+      "elapsedMs": 415.9871,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135671,
+      "sha256": "fc11239806b69dee7789dab2e613c3b9f803dd9f204ebef86effcc05350458e2"
+    },
+    {
+      "file": "00009.png",
+      "elapsedMs": 465.7295,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135666,
+      "sha256": "b8a29e357d281bcc589dcec31312488bc3b3149bea2bdcb77eb0ca78074fd67f"
+    },
+    {
+      "file": "00010.png",
+      "elapsedMs": 517.4636,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135670,
+      "sha256": "9945798465b0b9a37c9fcbe11f38f0b4864f50dc603c2cac1e3781ca8390efe6"
+    },
+    {
+      "file": "00011.png",
+      "elapsedMs": 552.6517,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135670,
+      "sha256": "9945798465b0b9a37c9fcbe11f38f0b4864f50dc603c2cac1e3781ca8390efe6"
+    },
+    {
+      "file": "00012.png",
+      "elapsedMs": 600.0182,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135720,
+      "sha256": "e36abd0e3fac586a2375cd8e3e26e7d8e5e50da638140beaa09c52139f45f2e5"
+    },
+    {
+      "file": "00013.png",
+      "elapsedMs": 667.1004,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137355,
+      "sha256": "01c92ab828f3f4d78060f1ce905319f26c8236d36fe0a6a24061ad45eee91536"
+    },
+    {
+      "file": "00014.png",
+      "elapsedMs": 717.1062,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137355,
+      "sha256": "01c92ab828f3f4d78060f1ce905319f26c8236d36fe0a6a24061ad45eee91536"
+    },
+    {
+      "file": "00015.png",
+      "elapsedMs": 767.2002,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137355,
+      "sha256": "01c92ab828f3f4d78060f1ce905319f26c8236d36fe0a6a24061ad45eee91536"
+    },
+    {
+      "file": "00016.png",
+      "elapsedMs": 817.4516,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137355,
+      "sha256": "01c92ab828f3f4d78060f1ce905319f26c8236d36fe0a6a24061ad45eee91536"
+    },
+    {
+      "file": "00017.png",
+      "elapsedMs": 867.6544,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137355,
+      "sha256": "01c92ab828f3f4d78060f1ce905319f26c8236d36fe0a6a24061ad45eee91536"
+    },
+    {
+      "file": "00018.png",
+      "elapsedMs": 918.0052,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137234,
+      "sha256": "52f81c70c1ef499d22c4d99c21907f0f2df7491a86eb3ef73bcdf0d469e9e5db"
+    },
+    {
+      "file": "00019.png",
+      "elapsedMs": 951.9728,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137234,
+      "sha256": "52f81c70c1ef499d22c4d99c21907f0f2df7491a86eb3ef73bcdf0d469e9e5db"
+    },
+    {
+      "file": "00020.png",
+      "elapsedMs": 1001.0566,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137234,
+      "sha256": "52f81c70c1ef499d22c4d99c21907f0f2df7491a86eb3ef73bcdf0d469e9e5db"
+    },
+    {
+      "file": "00021.png",
+      "elapsedMs": 1050.5435,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137535,
+      "sha256": "902212c37988fd4e167bdd43f7a61af64eeacca407e7596e1d4dc71195697737"
+    },
+    {
+      "file": "00022.png",
+      "elapsedMs": 1100.8306,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137452,
+      "sha256": "ba46585c37e9234f10db81b7ddb7087f42a28c876a29f2fa4ca355552ddfafee"
+    },
+    {
+      "file": "00023.png",
+      "elapsedMs": 1151.5783,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137452,
+      "sha256": "ba46585c37e9234f10db81b7ddb7087f42a28c876a29f2fa4ca355552ddfafee"
+    },
+    {
+      "file": "00024.png",
+      "elapsedMs": 1202.0306,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137452,
+      "sha256": "ba46585c37e9234f10db81b7ddb7087f42a28c876a29f2fa4ca355552ddfafee"
+    },
+    {
+      "file": "00025.png",
+      "elapsedMs": 1251.4677,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137452,
+      "sha256": "ba46585c37e9234f10db81b7ddb7087f42a28c876a29f2fa4ca355552ddfafee"
+    },
+    {
+      "file": "00026.png",
+      "elapsedMs": 1302.202,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137452,
+      "sha256": "ba46585c37e9234f10db81b7ddb7087f42a28c876a29f2fa4ca355552ddfafee"
+    },
+    {
+      "file": "00027.png",
+      "elapsedMs": 1353.1385,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138469,
+      "sha256": "799288ef22382d9aa496ed00363190974270f2c97e66cb51d56f2b86e4b08dc1"
+    },
+    {
+      "file": "00028.png",
+      "elapsedMs": 1404.8909,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138469,
+      "sha256": "799288ef22382d9aa496ed00363190974270f2c97e66cb51d56f2b86e4b08dc1"
+    },
+    {
+      "file": "00029.png",
+      "elapsedMs": 1454.9375,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138469,
+      "sha256": "799288ef22382d9aa496ed00363190974270f2c97e66cb51d56f2b86e4b08dc1"
+    },
+    {
+      "file": "00030.png",
+      "elapsedMs": 1503.1226,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138469,
+      "sha256": "799288ef22382d9aa496ed00363190974270f2c97e66cb51d56f2b86e4b08dc1"
+    },
+    {
+      "file": "00031.png",
+      "elapsedMs": 1551.8702,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138483,
+      "sha256": "cf16dfdbbbb535a9cb24a9b77e1b243cab7e201e2d8a8ece32a97b8e9dbc2c24"
+    },
+    {
+      "file": "00032.png",
+      "elapsedMs": 1605.7818,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138484,
+      "sha256": "322d8293c7f24fbac8604b77965b7cd2ab176132993de963adf143d4e07edcfe"
+    },
+    {
+      "file": "00033.png",
+      "elapsedMs": 1654.5591,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138484,
+      "sha256": "322d8293c7f24fbac8604b77965b7cd2ab176132993de963adf143d4e07edcfe"
+    },
+    {
+      "file": "00034.png",
+      "elapsedMs": 1704.1796,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137601,
+      "sha256": "ed30a8e78e55ac3d14073e0905742516d9baa96f1c827ebdcbdffd4943f91385"
+    },
+    {
+      "file": "00035.png",
+      "elapsedMs": 1753.3026,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137601,
+      "sha256": "ed30a8e78e55ac3d14073e0905742516d9baa96f1c827ebdcbdffd4943f91385"
+    },
+    {
+      "file": "00036.png",
+      "elapsedMs": 1803.788,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137601,
+      "sha256": "ed30a8e78e55ac3d14073e0905742516d9baa96f1c827ebdcbdffd4943f91385"
+    },
+    {
+      "file": "00037.png",
+      "elapsedMs": 1852.9692,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137693,
+      "sha256": "2ee9e087ce2849f709a609be1540bc64233702e3a600eb426cbc9cc60285ed6c"
+    },
+    {
+      "file": "00038.png",
+      "elapsedMs": 1903.6078,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137693,
+      "sha256": "2ee9e087ce2849f709a609be1540bc64233702e3a600eb426cbc9cc60285ed6c"
+    },
+    {
+      "file": "00039.png",
+      "elapsedMs": 1953.9576,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137693,
+      "sha256": "2ee9e087ce2849f709a609be1540bc64233702e3a600eb426cbc9cc60285ed6c"
+    },
+    {
+      "file": "00040.png",
+      "elapsedMs": 2004.1056,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137693,
+      "sha256": "2ee9e087ce2849f709a609be1540bc64233702e3a600eb426cbc9cc60285ed6c"
+    },
+    {
+      "file": "00041.png",
+      "elapsedMs": 2060.5218,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144401,
+      "sha256": "ad56152f9e9651b20d0756ae5ea5a2a723229ec981a7f954287029fbcbbd1b0a"
+    },
+    {
+      "file": "00042.png",
+      "elapsedMs": 2119.546,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144336,
+      "sha256": "31b17e47e8a5f0d1303550f60d65c01d1901410ced96fb39c62d2262f7dd92f2"
+    },
+    {
+      "file": "00043.png",
+      "elapsedMs": 2156.7099,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144309,
+      "sha256": "f43fc7337c63bbb0f5e566ac2e0d97ae6efc65b0ba3a9d5a09e7f756c1a782d7"
+    },
+    {
+      "file": "00044.png",
+      "elapsedMs": 2203.5385,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144393,
+      "sha256": "86044139bb1ef4e42cbb6f3445989d4bd2d259fd6cb415d5f0ec98d95cceb75c"
+    },
+    {
+      "file": "00045.png",
+      "elapsedMs": 2250.3443,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144261,
+      "sha256": "96d8847b49d94307588beda87e12548b276b4c91ea4baae189d88eee31332676"
+    },
+    {
+      "file": "00046.png",
+      "elapsedMs": 2311.4056,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144316,
+      "sha256": "830ca9a17648803480f89f546bf073cd6ab5179de13e79c9711db05edc142b4b"
+    },
+    {
+      "file": "00047.png",
+      "elapsedMs": 2352.7062,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144561,
+      "sha256": "8f5a8a98ee7a1b6ab9a44960f168699baf391e46cd886a0bde4edb34fba9375e"
+    },
+    {
+      "file": "00048.png",
+      "elapsedMs": 2412.2319,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144726,
+      "sha256": "5daf2684a0b243d751e9aeeab3fc5123e2cff5f1d68016b65e12a7d20dc3dc22"
+    },
+    {
+      "file": "00049.png",
+      "elapsedMs": 2460.4885,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144459,
+      "sha256": "cb939f67a3baad37a5fa07ab9e8302e985bb76825fcc97fed8f2a64b97629578"
+    },
+    {
+      "file": "00050.png",
+      "elapsedMs": 2512.2819,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144597,
+      "sha256": "679405342368ab0fd1b1bdef3eea53888d3f6a7826d4b1c8564c93d594b1c572"
+    },
+    {
+      "file": "00051.png",
+      "elapsedMs": 2567.5965,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144529,
+      "sha256": "5133da5d8c3500b84865f488e6345bb9d38977a6057d6dc170648ece6f1bcad1"
+    },
+    {
+      "file": "00052.png",
+      "elapsedMs": 2605.6893,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144769,
+      "sha256": "a83229305ad31ac55e4771c7b6aafc6b429394d38fbf16e0312c77f76687c105"
+    },
+    {
+      "file": "00053.png",
+      "elapsedMs": 2663.5082,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144909,
+      "sha256": "b188b364c1cc457fc6f783a516d556d4f9e99b2df3d946247724a267a39c43f3"
+    },
+    {
+      "file": "00054.png",
+      "elapsedMs": 2714.5462,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144823,
+      "sha256": "3f298a173e7cd52135a5c1600af90bce7bdd2459b4ff7cf4365d7faac84c7823"
+    },
+    {
+      "file": "00055.png",
+      "elapsedMs": 2761.8311,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 145050,
+      "sha256": "3be0dd9d919c6185e4a3208e525a8a27eaaf96a1fd938e9ec5337929b969f579"
+    },
+    {
+      "file": "00056.png",
+      "elapsedMs": 2814.6969,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 145262,
+      "sha256": "5a2d31fbe65af5fb887b8b8c43c00e0b187207f647ec3824febbb2d00a636420"
+    },
+    {
+      "file": "00057.png",
+      "elapsedMs": 2862.3726,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 145408,
+      "sha256": "cd61e334b15cd7e29b2aa7a1afff46c0104015e8fe9e76be09da030d1d205450"
+    },
+    {
+      "file": "00058.png",
+      "elapsedMs": 2913.4979,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 145274,
+      "sha256": "81b236c742a91dd678ccfb0b553600902962bd38362b39cbc02c122d6f7c58ee"
+    },
+    {
+      "file": "00059.png",
+      "elapsedMs": 2962.9544,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 145911,
+      "sha256": "174669605e6770af9ec6cde84a03730ff2a610bc6961dbb48ad108d3f40f318a"
+    },
+    {
+      "file": "00060.png",
+      "elapsedMs": 3018.8009,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 146046,
+      "sha256": "bed1f470915463bfec9118b894b0a2f0810b98b216344b9177381917a7b6dd50"
+    },
+    {
+      "file": "00061.png",
+      "elapsedMs": 3072.3283,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 145370,
+      "sha256": "9171b69b973dee5a896d287e3c556f895d9cf2ee8f5d08d95938ae7600bec0a4"
+    },
+    {
+      "file": "00062.png",
+      "elapsedMs": 3101.8501,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144505,
+      "sha256": "7725ad1c79ff4c96c691a6bf83102a553800d452a9d0adb5a6bbe5c0a9a14582"
+    },
+    {
+      "file": "00063.png",
+      "elapsedMs": 3152.2194,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144497,
+      "sha256": "3d3062491bc21fc8f2e4560550cccb690482669b8c0c9a4f83fa8764f28ad2a0"
+    },
+    {
+      "file": "00064.png",
+      "elapsedMs": 3200.8929,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143394,
+      "sha256": "3c970505932f60f4b0db8e5f1784a5a30611c0e8360407f5af03bf2d491276d8"
+    },
+    {
+      "file": "00065.png",
+      "elapsedMs": 3255.6189,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143275,
+      "sha256": "f95613c117aab938023cd042550675410880bea749c92a12ecabe272f99be776"
+    },
+    {
+      "file": "00066.png",
+      "elapsedMs": 3301.9364,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143902,
+      "sha256": "5b310c4ab56d6b78840af50680983eb156d570a0d05aa8ea917bb337aa060f56"
+    },
+    {
+      "file": "00067.png",
+      "elapsedMs": 3351.8893,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143747,
+      "sha256": "b02e90c22fb42d4c2d97448aef0038a63bab1d9e160d102270b27349797b39c4"
+    },
+    {
+      "file": "00068.png",
+      "elapsedMs": 3401.1974,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144222,
+      "sha256": "714905f23cfdb2c59be7a491773852095f84b121b60a61de72fc966bc8d6832e"
+    },
+    {
+      "file": "00069.png",
+      "elapsedMs": 3451.5594,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144111,
+      "sha256": "0cd595361d9063864dbf00ba7ad1567b8e243eaee6e480fe03a1079e13f55f2b"
+    },
+    {
+      "file": "00070.png",
+      "elapsedMs": 3501.409,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144170,
+      "sha256": "d3dc9aa57c24eca52cdea87e2243202bd9c57e4914a96837149fcb75adb141a1"
+    },
+    {
+      "file": "00071.png",
+      "elapsedMs": 3551.5687,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144109,
+      "sha256": "08c77c1f1bdc430e64bc528d05be1ea45e8651d1a4023fab41dbbd69c1846a7a"
+    },
+    {
+      "file": "00072.png",
+      "elapsedMs": 3603.4727,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144208,
+      "sha256": "23f7ae28e92823bd72035bcb4ebfb41c59d543d0e1650c43e995ae6603ed2949"
+    },
+    {
+      "file": "00073.png",
+      "elapsedMs": 3654.5816,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144110,
+      "sha256": "e006646ba6df1f59f8d166571d6e240f46110f7e0d26d30ea92e0ffa384e09ba"
+    },
+    {
+      "file": "00074.png",
+      "elapsedMs": 3703.6343,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144152,
+      "sha256": "f1a6338664313cb6b5bc28372ccebad0a764cfcb8cb04dd68eb877e45c0a5506"
+    },
+    {
+      "file": "00075.png",
+      "elapsedMs": 3754.5253,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144201,
+      "sha256": "36a2d61386bacbd9bb0a80c915927eb0e0f243e418a4646a1342e301a02641c8"
+    },
+    {
+      "file": "00076.png",
+      "elapsedMs": 3803.5149,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143951,
+      "sha256": "ac8a78edd56f9b77e069c84e68ff1d1615dd03f8797158df4881aeef933b94d5"
+    },
+    {
+      "file": "00077.png",
+      "elapsedMs": 3853.8877,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144173,
+      "sha256": "5715d77cbae56b03e87cbc3cfa3df3c437c695c46587a98d6d1d2060e6818843"
+    },
+    {
+      "file": "00078.png",
+      "elapsedMs": 3904.2463,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144226,
+      "sha256": "b4c61bd77b61d40e46936bf6962a5d1f2df1b37694f436e090bd861a9946dbfc"
+    },
+    {
+      "file": "00079.png",
+      "elapsedMs": 3954.2833,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144546,
+      "sha256": "f3d66cc4fdd21b0ad1250f20140b41769dcf3e30f8fc54f14486a12f49211a97"
+    },
+    {
+      "file": "00080.png",
+      "elapsedMs": 4004.5831,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144717,
+      "sha256": "a7a3460a1f39fd532b494f2c60d7885a475c5f58315375937aed9848a87fc74f"
+    },
+    {
+      "file": "00081.png",
+      "elapsedMs": 4055.669,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144970,
+      "sha256": "f1d5ab3f55d10995469995b4b83140ec03b095b5fcf89c8b593e4f3f3d039b9d"
+    },
+    {
+      "file": "00082.png",
+      "elapsedMs": 4105.218,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144585,
+      "sha256": "593cc0f8c2af90f605ac23c027ac17c3dafcb34249024e13146edf3511364b06"
+    },
+    {
+      "file": "00083.png",
+      "elapsedMs": 4155.6668,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144767,
+      "sha256": "57516249d2b0df2e588ee3a458ae87b3935cfdf05c5c15c8d3616bb099220848"
+    },
+    {
+      "file": "00084.png",
+      "elapsedMs": 4205.3684,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144445,
+      "sha256": "8ba6b20aa4b68b946aa66fc045ea7e5a5ad4b56538ea70f9bdbe80551b3db29c"
+    },
+    {
+      "file": "00085.png",
+      "elapsedMs": 4255.9582,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143928,
+      "sha256": "7b88d265fba5033b2588a8ed6f9c12a5d778587acb4c4b1b9a2b35d1fb8a4956"
+    },
+    {
+      "file": "00086.png",
+      "elapsedMs": 4306.7886,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143506,
+      "sha256": "f5e0cade4a3a737e34a0225554be098e2ac9b37f03bd43c74415945591570ecd"
+    },
+    {
+      "file": "00087.png",
+      "elapsedMs": 4355.9244,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144011,
+      "sha256": "4f1c346fc16cda97f124680307ce23e2e8c68aa3b7adc45eed864c14e68e645e"
+    },
+    {
+      "file": "00088.png",
+      "elapsedMs": 4407.5811,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143793,
+      "sha256": "8b64a572f835ae39dc66c4f4e606d4dbace12eec269e4153d75fbffbd507072d"
+    },
+    {
+      "file": "00089.png",
+      "elapsedMs": 4457.3937,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142896,
+      "sha256": "6a96cdfc27e468daad314bb5cd5a74e847d44faf1480376c181fa985660ad35e"
+    },
+    {
+      "file": "00090.png",
+      "elapsedMs": 4507.8776,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142945,
+      "sha256": "63164d4c19cd525107bd5ec7bd1957ae2fbe2198484f13de6312bd7e6bb60573"
+    },
+    {
+      "file": "00091.png",
+      "elapsedMs": 4559.8422,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142856,
+      "sha256": "092f8492e2371a7de5107b8dd4c489a06c4c15df7369c08570be43e7c5faa4f6"
+    },
+    {
+      "file": "00092.png",
+      "elapsedMs": 4609.5162,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143074,
+      "sha256": "9b92b7f84f078193b7ea67135ae24a61009a9f0a9a27c2f381709367ec6fdec1"
+    },
+    {
+      "file": "00093.png",
+      "elapsedMs": 4658.3937,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142829,
+      "sha256": "dcc87f1534e7cca98f2c3776d418bb9b69478ab373dc7ea919ab4fba1075a159"
+    },
+    {
+      "file": "00094.png",
+      "elapsedMs": 4710.3764,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142886,
+      "sha256": "2a0de1c852ce809033c4188cce89d4d440f666d70f078d92b75ac6b4e078aef2"
+    },
+    {
+      "file": "00095.png",
+      "elapsedMs": 4758.4861,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142676,
+      "sha256": "e9c26b4c29405865410cf9147d14d0607b7f08f7e347651b915ccc6b4fc46859"
+    },
+    {
+      "file": "00096.png",
+      "elapsedMs": 4810.278,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143373,
+      "sha256": "79b5e25a1674f4e109e2d71c983774268fe0249406fb22e963af8627353c51fc"
+    },
+    {
+      "file": "00097.png",
+      "elapsedMs": 4860.3636,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143375,
+      "sha256": "d5bc9c995678bf68a525d5ce0fe3bf57c594dc412cbd21ffeea023a182e43e60"
+    },
+    {
+      "file": "00098.png",
+      "elapsedMs": 4911.0294,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143328,
+      "sha256": "02f5b146ba8b5d7fbcb6e37196e0b2f63df79c00d64b448a9303283ed408631a"
+    },
+    {
+      "file": "00099.png",
+      "elapsedMs": 4960.0087,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143405,
+      "sha256": "e9c6851300ae6aaba6a98ec41d45ccc4f1b12547b5c6c8f7aa53eba8a8e030e3"
+    },
+    {
+      "file": "00100.png",
+      "elapsedMs": 5011.1224,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143333,
+      "sha256": "4396c476403e5fe2419e6c2e1d838dce17d0f3784bd0c7ecd5cd8dd3c802cb77"
+    },
+    {
+      "file": "00101.png",
+      "elapsedMs": 5060.7555,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143303,
+      "sha256": "cfe45bf84d19570c7633f041b1174e4b60cf6250f577ff2605fa173298f5f31a"
+    },
+    {
+      "file": "00102.png",
+      "elapsedMs": 5110.5997,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143404,
+      "sha256": "af2f66930940e04aaff5c3aec0e04aafba3d937fcdddeacb92b256120236f2ca"
+    },
+    {
+      "file": "00103.png",
+      "elapsedMs": 5160.7224,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143256,
+      "sha256": "d01794555698442802b05659155cef8c14a8d3723eddfa0174dd786b00f840c9"
+    },
+    {
+      "file": "00104.png",
+      "elapsedMs": 5212.5136,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143385,
+      "sha256": "e821c59073a82c44a5a54a56c80784a30cb78422d797d93c66b7ad01a6fce1b5"
+    },
+    {
+      "file": "00105.png",
+      "elapsedMs": 5266.0521,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143251,
+      "sha256": "51579098c9031b43c95047248d0e70bbf4d1f8a697621bb462dc74cad0dd2908"
+    },
+    {
+      "file": "00106.png",
+      "elapsedMs": 5300.1073,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143176,
+      "sha256": "0c3e6131c515eabc5713c653f287f3d1678ba8cd52bdc76323dfae842b4ed6d1"
+    },
+    {
+      "file": "00107.png",
+      "elapsedMs": 5350.0816,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143060,
+      "sha256": "5e79a368471418396fe73ef2ce337b9e7b7db7c77cd56e1af5fab3dfbfc7412c"
+    },
+    {
+      "file": "00108.png",
+      "elapsedMs": 5401.3097,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143206,
+      "sha256": "89ddda20247fa6857c32c4542ee86129121eb9f711e29edfba6ec33aaa8dc5f2"
+    },
+    {
+      "file": "00109.png",
+      "elapsedMs": 5452.3207,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143284,
+      "sha256": "f9b670cece9c58380c0e9dd93b7275c58b8e2b8dc23de8bed9b4d1e18635b702"
+    },
+    {
+      "file": "00110.png",
+      "elapsedMs": 5502.2412,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143276,
+      "sha256": "174d246fa4b01d0dfcf4a0d344688ea2f81a63d28d38a8a940051f800eba3c5e"
+    },
+    {
+      "file": "00111.png",
+      "elapsedMs": 5551.9552,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143643,
+      "sha256": "fc50e69e569cc44c992ca4c870db194bd1c09ccaf29e32599737a2adb55a701b"
+    },
+    {
+      "file": "00112.png",
+      "elapsedMs": 5606.5054,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143854,
+      "sha256": "aa8a74e10b6cfd839fc5d32dd90d4a963f64c6ee80e128f145d7c2dcae18d4e4"
+    },
+    {
+      "file": "00113.png",
+      "elapsedMs": 5652.9539,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143730,
+      "sha256": "9f7afca5554b45c4930d885cbe004edc9973ec917c5389b9e8573f02965c0e8c"
+    },
+    {
+      "file": "00114.png",
+      "elapsedMs": 5703.137,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143877,
+      "sha256": "6235ab554acb91b247682e5b3b83335a065e3ca484cbd67aaeb1454843bca5ec"
+    },
+    {
+      "file": "00115.png",
+      "elapsedMs": 5753.6765,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143765,
+      "sha256": "29e7230607c1b40a9b675e16003964aec2b4a654d827e91a1f082d7e7f986aac"
+    },
+    {
+      "file": "00116.png",
+      "elapsedMs": 5804.9685,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143700,
+      "sha256": "03cd41ab014b59471205943e23331aa268f6a097bf69a7dd5cd385e4fed700d8"
+    },
+    {
+      "file": "00117.png",
+      "elapsedMs": 5859.2771,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143845,
+      "sha256": "bddcf1bdc8bad475bfd710e554f55dfd39ae97a4217bf0af84378d52ad6a91db"
+    },
+    {
+      "file": "00118.png",
+      "elapsedMs": 5909.5522,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143748,
+      "sha256": "aedc670e9ac4f97212b2778370b539a6bb1d872dfe7f430c877ec628ff0ac45b"
+    },
+    {
+      "file": "00119.png",
+      "elapsedMs": 5959.5773,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143751,
+      "sha256": "19e19905c5fa938b7b30fa139e2fc31b7b5e6d7fd651fd3580958e5db401c18d"
+    },
+    {
+      "file": "00120.png",
+      "elapsedMs": 6009.1771,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143699,
+      "sha256": "d5a725c97094040d1d02c88b6d40b88f9f7903bb14385c848ffc6339b6a4696a"
+    },
+    {
+      "file": "00121.png",
+      "elapsedMs": 6059.2694,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143697,
+      "sha256": "a26823a5a18c08b3d1b440fe6303c99fe8e349a0d1f0750f91e5ff79019fd942"
+    },
+    {
+      "file": "00122.png",
+      "elapsedMs": 6109.2119,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143745,
+      "sha256": "e5ea0ce707384b1f5617e5e892cb3dc146cf22aff947986be5063d1816439d3f"
+    },
+    {
+      "file": "00123.png",
+      "elapsedMs": 6165.8233,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142869,
+      "sha256": "a293573747f8a5f02cfaf19c5920e14d97ef4be7c5e8f4ddbcdc15a169ce7a23"
+    },
+    {
+      "file": "00124.png",
+      "elapsedMs": 6213.3121,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142836,
+      "sha256": "a96606d76f880cc061ce5761809e2f1e7a02adeb84ad96cdb37d20c36327b5c6"
+    },
+    {
+      "file": "00125.png",
+      "elapsedMs": 6264.2915,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142790,
+      "sha256": "722cc3959f1956dd947add97807a77ebb8d0c49a29b5fa83b8748fa1f5c10302"
+    },
+    {
+      "file": "00126.png",
+      "elapsedMs": 6313.3644,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142681,
+      "sha256": "3975e61f7f2b5458ddd00ebc00add7833594741248a3e871cf9bd8ecf7eb53ec"
+    },
+    {
+      "file": "00127.png",
+      "elapsedMs": 6364.0923,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142660,
+      "sha256": "e68a4ac7a4b5017f39f7b001204fe8748264d9f85e20905f783bd4367d90786a"
+    },
+    {
+      "file": "00128.png",
+      "elapsedMs": 6414.8434,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142759,
+      "sha256": "3a308ecf68cba2cef42fd2bbe36994588a63e9ddbb9c0dc7faaf9fc2db334418"
+    },
+    {
+      "file": "00129.png",
+      "elapsedMs": 6464.0923,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142669,
+      "sha256": "6bc75a5d1d8158c18e938e020e77ca70bea7b48f2912538957cb938fbff59183"
+    },
+    {
+      "file": "00130.png",
+      "elapsedMs": 6514.6889,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142758,
+      "sha256": "ef8bc4d9599313df2128b9486bf0c22647eeb115c5f89bbf5cdb400d4aa39307"
+    },
+    {
+      "file": "00131.png",
+      "elapsedMs": 6567.9225,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142689,
+      "sha256": "018daf0c9ae41b09fcea6c770baa6bb9ff4c748fab647e1b14e61fc70534348f"
+    },
+    {
+      "file": "00132.png",
+      "elapsedMs": 6603.4032,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142860,
+      "sha256": "bd84af33b2346b5c0b72629f2ce5d4b0b49a5cb29acf5dc72af21f2ae4b6950a"
+    },
+    {
+      "file": "00133.png",
+      "elapsedMs": 6650.9748,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142894,
+      "sha256": "25400a9766d504a19a7ed3c2485f8552bac1b33b76e7cc995b6b646bcfbcaa20"
+    },
+    {
+      "file": "00134.png",
+      "elapsedMs": 6715.1722,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142830,
+      "sha256": "1038c3ed0c233565c8051a4b226be44ce3cc71f1fffc9ea357db4f53997adabf"
+    },
+    {
+      "file": "00135.png",
+      "elapsedMs": 6760.8257,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142995,
+      "sha256": "79ade0c6f7a590721f096179a7536e6082531b9272216b1f0d13f276e78a71c2"
+    },
+    {
+      "file": "00136.png",
+      "elapsedMs": 6806.4238,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142004,
+      "sha256": "916790f857dc647b675f8f0901a671e0da33a2780744ad0da7ef6dd95961d9cb"
+    },
+    {
+      "file": "00137.png",
+      "elapsedMs": 6851.0936,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142577,
+      "sha256": "f9a117aebcf932381000b0f3da28523bd0d4041979556e47a901d1980063f92e"
+    },
+    {
+      "file": "00138.png",
+      "elapsedMs": 6910.2362,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142439,
+      "sha256": "66781274f70fa5d7ccc95f3ab62aea57b3f9fecbb1d9a23e5869f00ad2f9af83"
+    },
+    {
+      "file": "00139.png",
+      "elapsedMs": 6955.8368,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142469,
+      "sha256": "95cf36c6228e36b6b67aaae0303d477afedf005c7375fa2d4fa10348cf321ee9"
+    },
+    {
+      "file": "00140.png",
+      "elapsedMs": 7010.102,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142393,
+      "sha256": "acef24d19e82536f1b56eaf078715cd70a0e87d62b037d3bb0a47b93510674f0"
+    },
+    {
+      "file": "00141.png",
+      "elapsedMs": 7067.5586,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142459,
+      "sha256": "b9426316fe93578652799e93300758537ad97062cd2b5e8f41a7d74c1860d656"
+    },
+    {
+      "file": "00142.png",
+      "elapsedMs": 7104.0171,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142595,
+      "sha256": "d0046781f8b63a0baf6e39fccb3da0608ae17d9df7fe0f39a0f06ed8bd00b0c9"
+    },
+    {
+      "file": "00143.png",
+      "elapsedMs": 7168.5286,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142617,
+      "sha256": "572180c64eac6b3e247eeadf6f1a0f2771f45fe0ad2f677246591351e36b1ae9"
+    },
+    {
+      "file": "00144.png",
+      "elapsedMs": 7203.0574,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142908,
+      "sha256": "de92b5fe54beb9aa70c87aec3990a4a3426b11fcb592aa656ed472114bb95708"
+    },
+    {
+      "file": "00145.png",
+      "elapsedMs": 7257.2604,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142940,
+      "sha256": "34a7ca4a73d15bb7ccda618171e7999632e71f8188e9422482585c94f3a15a2c"
+    },
+    {
+      "file": "00146.png",
+      "elapsedMs": 7303.7811,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142882,
+      "sha256": "a4313ac3a3c5831566082fa5b43e41311d036d42539ea1a26f3583653d08fffb"
+    },
+    {
+      "file": "00147.png",
+      "elapsedMs": 7359.9665,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142950,
+      "sha256": "0d4c3cba7fdacecce48194fcdcef68ffe0a5bad1ccca76bca17ee8e385a253ac"
+    },
+    {
+      "file": "00148.png",
+      "elapsedMs": 7412.594,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142775,
+      "sha256": "da2ee7f00a76639d3064e967b452e46b37f2c4d3f9194476ede923f5739e72b6"
+    },
+    {
+      "file": "00149.png",
+      "elapsedMs": 7466.1465,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142853,
+      "sha256": "33bb447ee70ac3c7bdd4886ee61e18d591035509decb53c31ff1e30dd5082cf8"
+    },
+    {
+      "file": "00150.png",
+      "elapsedMs": 7500.9682,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142768,
+      "sha256": "006e95b8ca68c8579a15a938315481d68a910eff22c61fdded3fa2681301e033"
+    },
+    {
+      "file": "00151.png",
+      "elapsedMs": 7565.4121,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142751,
+      "sha256": "8d1f1695c83737ed031cc98935191d77d50cc1e55eb7921463d26a3007de418e"
+    },
+    {
+      "file": "00152.png",
+      "elapsedMs": 7615.9216,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142653,
+      "sha256": "e30c3ae87af8ba202620239119c4d33f987c5e0fc595b6513350d6614b0b5199"
+    },
+    {
+      "file": "00153.png",
+      "elapsedMs": 7667.1415,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142849,
+      "sha256": "6e7b3c787bc2b119711c3f719bd41af55b9216784ebb73917d3a364ad1e9a55f"
+    },
+    {
+      "file": "00154.png",
+      "elapsedMs": 7715.4776,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142918,
+      "sha256": "8094bea8796e4e004d767a7ae18fde674f3f45df9fd86de36a0d0dd549ee2927"
+    },
+    {
+      "file": "00155.png",
+      "elapsedMs": 7767.1414,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142746,
+      "sha256": "03861aaa282b178add3d1193b714b57ab6e6a04be3fb016a640712c34da5591f"
+    },
+    {
+      "file": "00156.png",
+      "elapsedMs": 7820.9021,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142964,
+      "sha256": "b16f78858a28c0b6072d152ffc29dd52feecf332e4790aef5f265bab618c6be6"
+    },
+    {
+      "file": "00157.png",
+      "elapsedMs": 7868.1594,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142794,
+      "sha256": "648656a32af53fb9c25fb079180c88fb4f199b0b9713fcaf347ca1f433dbc7bc"
+    },
+    {
+      "file": "00158.png",
+      "elapsedMs": 7901.5012,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142677,
+      "sha256": "9fbee92273eabd625618df0481c27bb4efeb2ea7a022b86007ea079877e3da47"
+    },
+    {
+      "file": "00159.png",
+      "elapsedMs": 7967.3316,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142694,
+      "sha256": "a6d865992c4ed1aca427201c91f424eefcc1f6806bff99fdefb2f9f69f056658"
+    },
+    {
+      "file": "00160.png",
+      "elapsedMs": 8001.0294,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142666,
+      "sha256": "a5252e0783cb15a23bffe3993a65aee1b8f61062bda620d05cbf5a80d3487be1"
+    },
+    {
+      "file": "00161.png",
+      "elapsedMs": 8050.2863,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142621,
+      "sha256": "cc3e074d65ab1ecd1b36035a385270586616687956ad8da0d6cfea1c9c5ec95a"
+    },
+    {
+      "file": "00162.png",
+      "elapsedMs": 8116.0827,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142771,
+      "sha256": "7882b426ede2124dc152b8dc1124e511b583737fbfbcfc3bb1a097efcec71190"
+    },
+    {
+      "file": "00163.png",
+      "elapsedMs": 8171.916,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142560,
+      "sha256": "aefceb5d022b3bf8d7d7b199fda24f5c6269fbc7accc46ec322d3026e97a7bcf"
+    },
+    {
+      "file": "00164.png",
+      "elapsedMs": 8209.9376,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142632,
+      "sha256": "f49cf57661721eed5d21c75d564b696ef5653aafbe5e3e3396ba002a33b5998b"
+    },
+    {
+      "file": "00165.png",
+      "elapsedMs": 8264.1326,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142481,
+      "sha256": "54f672a1acaf8af9c6af51de77b2f5fafaab7827580147367316c0120c503442"
+    },
+    {
+      "file": "00166.png",
+      "elapsedMs": 8313.2879,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142452,
+      "sha256": "017e28eb939422364a3f3d92d78630cc199a77be3c5e262cc3558973396d433e"
+    },
+    {
+      "file": "00167.png",
+      "elapsedMs": 8361.3946,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142732,
+      "sha256": "94932e4594a74685727c845b296a57a11048996f135a5cd22e3aea58f5782cb4"
+    },
+    {
+      "file": "00168.png",
+      "elapsedMs": 8412.0879,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142769,
+      "sha256": "fc7eaa04357819db65ab2e81053d968637b1d1507f740fbb49cc96709595ce55"
+    },
+    {
+      "file": "00169.png",
+      "elapsedMs": 8461.9943,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143126,
+      "sha256": "2ea298a182b347b0d9933c8c38f86dab8601235cdea30e92b57a07872bcb60b0"
+    },
+    {
+      "file": "00170.png",
+      "elapsedMs": 8512.0516,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143174,
+      "sha256": "8e682083718a0c020e6cee651ada725de70d1c838afb03bcab16fb9b68fe3820"
+    },
+    {
+      "file": "00171.png",
+      "elapsedMs": 8563.8803,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143087,
+      "sha256": "b25880a1fa6331fc072b4fac93f7d17651818679eeefcf33da62fd98d13f8227"
+    },
+    {
+      "file": "00172.png",
+      "elapsedMs": 8612.3722,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142506,
+      "sha256": "9e76acf7b96b3178fdfa9211a299d38ccde4e560061add144c967a9b60568b3a"
+    },
+    {
+      "file": "00173.png",
+      "elapsedMs": 8662.2274,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142598,
+      "sha256": "fecb21ec5f378713cdebbbbf728aa59331299a188aee6e04c3a1d3d887da28de"
+    },
+    {
+      "file": "00174.png",
+      "elapsedMs": 8712.4804,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142747,
+      "sha256": "d441e39a1a63421d673c39b5a98955c98693d0e8a98c9105dbde1c1d677de354"
+    },
+    {
+      "file": "00175.png",
+      "elapsedMs": 8763.0606,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142987,
+      "sha256": "99606c1f09882b14fd7eb304d323ebf4daa101833396b422b80f881ea645b4ce"
+    },
+    {
+      "file": "00176.png",
+      "elapsedMs": 8812.6807,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143041,
+      "sha256": "b9511eb338e4920a87e445790c4d51b0523b28144ac90ff896c7eb5284b76a38"
+    },
+    {
+      "file": "00177.png",
+      "elapsedMs": 8864.8439,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143154,
+      "sha256": "550c7153ed59b3717ff3278af89a787e0f2d84d074bf1824dcd5c7dc0cce6366"
+    },
+    {
+      "file": "00178.png",
+      "elapsedMs": 8913.073,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143125,
+      "sha256": "65bdc8f4020c9ad7a3bfd97fc47b62600f1b6a732b7173a3dd1adcbf92d9a72a"
+    },
+    {
+      "file": "00179.png",
+      "elapsedMs": 8963.3097,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143157,
+      "sha256": "5c1457d2402fb22dff4f606f463482e20d693854df8e0c71f7387dfd59f16976"
+    },
+    {
+      "file": "00180.png",
+      "elapsedMs": 9017.5616,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143223,
+      "sha256": "671f88f8a1186f95d53324894df1a21fbdd27c4dd35e8a0e77cf79cda1cf279e"
+    },
+    {
+      "file": "00181.png",
+      "elapsedMs": 9066.7261,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143250,
+      "sha256": "63b888ba9db0a3fce33f86471c97fec9cf3f83e43cfb233d9eb3cf04a3c90014"
+    },
+    {
+      "file": "00182.png",
+      "elapsedMs": 9104.158,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143200,
+      "sha256": "0d21ca40e33278cffd111fb35dc3ed39450806d42506fff82a65ec731cfae366"
+    },
+    {
+      "file": "00183.png",
+      "elapsedMs": 9157.554,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142967,
+      "sha256": "c21bc08c0cf9b472f46ed1c1bdcaa4b1dd5d45a084b865d009d6afd14d0e095e"
+    },
+    {
+      "file": "00184.png",
+      "elapsedMs": 9208.7068,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143123,
+      "sha256": "e580bd3e370937970b269159e5885dcffa140b842abf750df947b32d80e57532"
+    },
+    {
+      "file": "00185.png",
+      "elapsedMs": 9257.9283,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143088,
+      "sha256": "49a85afcd45211d5d7a0e6e33102738a1d713246b3f85638c6e09b394e1759ea"
+    },
+    {
+      "file": "00186.png",
+      "elapsedMs": 9309.6625,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142825,
+      "sha256": "88fef991da2664fd6accc1d491707be22255c27c5de99c06a3870493704280d9"
+    },
+    {
+      "file": "00187.png",
+      "elapsedMs": 9361.7385,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142840,
+      "sha256": "44082de29d848dbaabc65a8dc84978963df89ff6f6e22b1d41a6dc75f7d4119f"
+    },
+    {
+      "file": "00188.png",
+      "elapsedMs": 9400.2514,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142907,
+      "sha256": "761994cb13925675a9a7275588cfaa048255545588e770eba974a7af2ae34614"
+    },
+    {
+      "file": "00189.png",
+      "elapsedMs": 9452.7095,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143003,
+      "sha256": "9ac76335c7ae180093bbf3c917cc9c7b6fa0ce1f5a5e7e7bdad9df49f2eb272d"
+    },
+    {
+      "file": "00190.png",
+      "elapsedMs": 9505.5095,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142942,
+      "sha256": "17e6056bbbc4c4051f1cfe1e00ab358022074fae798bf825b3452873df5a0e17"
+    },
+    {
+      "file": "00191.png",
+      "elapsedMs": 9554.6766,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142991,
+      "sha256": "845cbb9abf1d6d000033bb6f3167044e1ec84f7eb08a2df06e7e3162fcf30a54"
+    },
+    {
+      "file": "00192.png",
+      "elapsedMs": 9601.6688,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143008,
+      "sha256": "718e73fbf32af56fa4f83a048e0188ce4aa1cf7b9b03627e7e92447c552b5660"
+    },
+    {
+      "file": "00193.png",
+      "elapsedMs": 9651.248,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142975,
+      "sha256": "c5b03fded824fac8a1dfd831a464acb2c24795affe97e445c28546c4ea0914b4"
+    },
+    {
+      "file": "00194.png",
+      "elapsedMs": 9702.7266,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142954,
+      "sha256": "9324faa6931a317ebe9b767303d1bbcb70673249283758baedbafc6ae53f61c3"
+    },
+    {
+      "file": "00195.png",
+      "elapsedMs": 9751.5443,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143072,
+      "sha256": "d47476a3d64437017281f21aca9f3ff125ae02f38334922f8457d70a676644a2"
+    },
+    {
+      "file": "00196.png",
+      "elapsedMs": 9803.2638,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143165,
+      "sha256": "43af6ec3d4dcbcd1f565e49e5be6ba28569b57f86026dfbe1b09a907a772b572"
+    },
+    {
+      "file": "00197.png",
+      "elapsedMs": 9852.2075,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143081,
+      "sha256": "9a51b22e0df5d5787e52013a88444e920c37d83032166a7a505b9fced31cd211"
+    },
+    {
+      "file": "00198.png",
+      "elapsedMs": 9902.1649,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143359,
+      "sha256": "82ea17c2f786ad2a646797798f856acb3bf8db7db735af4dd266240492976215"
+    },
+    {
+      "file": "00199.png",
+      "elapsedMs": 9956.5012,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143271,
+      "sha256": "786daf0978df080718dfc814ec7dce48177ebc76a283101d3a17e19b2075e139"
+    },
+    {
+      "file": "00200.png",
+      "elapsedMs": 10009.6953,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143174,
+      "sha256": "c86a7d3cfc912ee3c27234f6a893402a271d7873da732a3df21e96df66fa2174"
+    },
+    {
+      "file": "00201.png",
+      "elapsedMs": 10061.14,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143179,
+      "sha256": "26dc6f20a8ac00aa33a8133e00ca62d365e2fa70ebe682b1cc89fdb2b0b07b28"
+    },
+    {
+      "file": "00202.png",
+      "elapsedMs": 10110.7731,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143232,
+      "sha256": "4f2339e9dc0d242e94669e2f8e7cbe2afbd8771c3241363a773ad85c0db06a3d"
+    },
+    {
+      "file": "00203.png",
+      "elapsedMs": 10160.6373,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143322,
+      "sha256": "0053d654b1b2ec70e5f18f217a20300497fe8b950c40ccef04e1ff8a9dc6334e"
+    },
+    {
+      "file": "00204.png",
+      "elapsedMs": 10210.9611,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143272,
+      "sha256": "360734817d3c25607e8ee77f472f4d93259074e5b4170e92a24c1086895bcb9b"
+    },
+    {
+      "file": "00205.png",
+      "elapsedMs": 10260.4933,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143124,
+      "sha256": "28042fdb0645eee1a11659dab9d1bc3ac6b2fb31e719b6ed16b2011ecff17bd0"
+    },
+    {
+      "file": "00206.png",
+      "elapsedMs": 10310.7409,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143188,
+      "sha256": "0f05dd89f8b95cc40fe8e05ed8bd914894954d583184759bb8643812dfa3eda7"
+    },
+    {
+      "file": "00207.png",
+      "elapsedMs": 10362.999,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143321,
+      "sha256": "729cb11ef29c49ff7eac29562bf7c5324eb9b54252579a0a4ee0dc869d12b25f"
+    },
+    {
+      "file": "00208.png",
+      "elapsedMs": 10413.3377,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143268,
+      "sha256": "dc6700271468d59cb74100828d2d39bbb1b35ebec762c6bb6bd8ba0c8c5fe454"
+    },
+    {
+      "file": "00209.png",
+      "elapsedMs": 10462.8819,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143166,
+      "sha256": "f0e7b2d65c310c6d9e08a5ffdea4bafc6d80b9be0cd508f826dd6815b84a18f5"
+    },
+    {
+      "file": "00210.png",
+      "elapsedMs": 10511.4569,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143413,
+      "sha256": "6544a3cc729984671bffd605c6212456f0b99da79d3d2a40c4d53d5e76dc62a1"
+    },
+    {
+      "file": "00211.png",
+      "elapsedMs": 10566.0778,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143507,
+      "sha256": "38752b60611b73a437b7f82f12df1a7a84fc0e91330a651a3d83f37dc0d5fabb"
+    },
+    {
+      "file": "00212.png",
+      "elapsedMs": 10613.2294,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143103,
+      "sha256": "a02a71ffa26d9702207de17978ef0d873b858379450350d27ca060ddf5a91c44"
+    },
+    {
+      "file": "00213.png",
+      "elapsedMs": 10663.0907,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143185,
+      "sha256": "f6a57a8166dd6be5b8e324e981850b7d6b495ec3ccc876a3cbd27753334bab6a"
+    },
+    {
+      "file": "00214.png",
+      "elapsedMs": 10713.6857,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143167,
+      "sha256": "c21d332c39e089985da4cdd768170b0ee08f23a4f3e8462557e361f1b2bdc008"
+    },
+    {
+      "file": "00215.png",
+      "elapsedMs": 10763.6321,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143063,
+      "sha256": "6a196dc63959aa4598b163c5b3de9891a9e7ab31a2886881e4a8300837849d60"
+    },
+    {
+      "file": "00216.png",
+      "elapsedMs": 10813.9262,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143089,
+      "sha256": "8c41d41b9a993f82ce35d50bc020613cad12bc6ca31306670920b416f27aea89"
+    },
+    {
+      "file": "00217.png",
+      "elapsedMs": 10864.2934,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143046,
+      "sha256": "2fddd9d7846b8a1c12018fff2e5635f6c1db2bdcc07df7f8a3beefce3e9ada24"
+    },
+    {
+      "file": "00218.png",
+      "elapsedMs": 10914.2132,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143073,
+      "sha256": "61fabf486a58abfe142c2fc3dc4525f39e98eb95332cfe3aed173d1d59a64430"
+    },
+    {
+      "file": "00219.png",
+      "elapsedMs": 10963.8019,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143089,
+      "sha256": "cb7aea802c59f82334da5f511803889c379a043b7c35f9fe242711738e20b1f1"
+    },
+    {
+      "file": "00220.png",
+      "elapsedMs": 11014.0878,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142972,
+      "sha256": "a29d4ac6b27ab0f17ba151a5b86fb25828c07b0034c68923476041e80e9743f7"
+    },
+    {
+      "file": "00221.png",
+      "elapsedMs": 11050.5864,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142900,
+      "sha256": "a5cb8f511c5f39a9f8d9a1b2d8fdf69d26a43a91fef8844e65857a0d031daecd"
+    },
+    {
+      "file": "00222.png",
+      "elapsedMs": 11118.1502,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144019,
+      "sha256": "2fa4943ecc1c8672986c99c00c6530dc2d4b3cde1f010efbcf1cf4650b71e4fd"
+    },
+    {
+      "file": "00223.png",
+      "elapsedMs": 11151.7904,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144034,
+      "sha256": "fb967d4547779aec69639ed48eb70cbdadde22a7d6a916dcaeddb0925714921d"
+    },
+    {
+      "file": "00224.png",
+      "elapsedMs": 11215.8591,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143910,
+      "sha256": "ae8551bfe13067ca5dd380c46112c154f4068608acdaa8a3362e6d78035fc149"
+    },
+    {
+      "file": "00225.png",
+      "elapsedMs": 11267.1793,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144017,
+      "sha256": "24c9c65da876cdc3ba416a4063390f8bfbb2756da562a07c71f7c097b5c59435"
+    },
+    {
+      "file": "00226.png",
+      "elapsedMs": 11315.754,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144254,
+      "sha256": "67f8fe896edb13a9b214b244f433872667035130b2c58f5af9174720cf1b2f4b"
+    },
+    {
+      "file": "00227.png",
+      "elapsedMs": 11366.2701,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143801,
+      "sha256": "c70acb88773a169f2ae8d04f5429ace173716ff096052a69b9d4a9f68a1d944e"
+    },
+    {
+      "file": "00228.png",
+      "elapsedMs": 11400.6383,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143874,
+      "sha256": "e176b84c9840e79b85fd83bf5513dbd57b5177a69e657b2f8c958de34f113441"
+    },
+    {
+      "file": "00229.png",
+      "elapsedMs": 11466.603,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143573,
+      "sha256": "e6484306252720b97c253f33746b7688fe04ef9b4038b2edeae7d4db11525c0a"
+    },
+    {
+      "file": "00230.png",
+      "elapsedMs": 11517.0799,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143609,
+      "sha256": "d493b801fd69fcfb141eb1cdacdb0b4e428e7e68943baf798eeac2382c210e53"
+    },
+    {
+      "file": "00231.png",
+      "elapsedMs": 11567.268,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143769,
+      "sha256": "e6a7a1fa26b72669d286488fafe9587791a84bde112f5bc4de5926583c10efb9"
+    },
+    {
+      "file": "00232.png",
+      "elapsedMs": 11617.3114,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143374,
+      "sha256": "dc2d390adefd5747269c5590a744e13e78d19f3e2c5d622db28cb73ad3d0c74c"
+    },
+    {
+      "file": "00233.png",
+      "elapsedMs": 11667.5612,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141912,
+      "sha256": "86a575bd8673848ed7fc9ac3898977d18220439c10fc907f0d08c5f9f20458d0"
+    },
+    {
+      "file": "00234.png",
+      "elapsedMs": 11717.6472,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143132,
+      "sha256": "9b9992afc462acedd639d9ee616a70f80589bf2b0a1c737152e5d1e79f452730"
+    },
+    {
+      "file": "00235.png",
+      "elapsedMs": 11767.3376,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143210,
+      "sha256": "9b713fa4a8b14d4e5ee45573982c375d25c3db14422bd889232655e80d0ed9c3"
+    },
+    {
+      "file": "00236.png",
+      "elapsedMs": 11800.784,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142261,
+      "sha256": "8f968b39a07446023953edbc3ef3efcab38f0bf5d513dfbe6b03a7def1a272f7"
+    },
+    {
+      "file": "00237.png",
+      "elapsedMs": 11868.393,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142472,
+      "sha256": "4411f14da50651e6c54638c8038e85e78e92f553f22cb504941932bb5e779a8c"
+    },
+    {
+      "file": "00238.png",
+      "elapsedMs": 11900.4861,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142341,
+      "sha256": "14ded7bea25ba075d329d650eb639d977229e190b464ee1592fe33472cc9e093"
+    },
+    {
+      "file": "00239.png",
+      "elapsedMs": 11951.5456,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142113,
+      "sha256": "acc8368daeddfd5a4e53e6252a24d31d77b469a9f37e44d3fb025705b7d57878"
+    },
+    {
+      "file": "00240.png",
+      "elapsedMs": 12001.3157,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142024,
+      "sha256": "6edf1c4f5dcde10c476f714e11be3118573c7fe7e92bcac70e61bb8e25511784"
+    },
+    {
+      "file": "00241.png",
+      "elapsedMs": 12051.0336,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141930,
+      "sha256": "bd7f12f03c669b37771e88670a3cff589c5e66aa63070b786441112c2d9901fe"
+    },
+    {
+      "file": "00242.png",
+      "elapsedMs": 12103.4287,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141730,
+      "sha256": "3b61f03bee60247ed4885738b19ca7cbeef4f60acada62b26e452d953156320d"
+    },
+    {
+      "file": "00243.png",
+      "elapsedMs": 12151.5999,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141667,
+      "sha256": "c46c1d99a80e4187b69d5ff0c8d88d284a7aac441219e78c9eafe01f790a0818"
+    },
+    {
+      "file": "00244.png",
+      "elapsedMs": 12201.589,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141881,
+      "sha256": "c8646c2be52f44c548b9831913e41c66008a07d8ba7e6af28a51896c987d2b8c"
+    },
+    {
+      "file": "00245.png",
+      "elapsedMs": 12252.142,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141937,
+      "sha256": "396df8b93da1b7c954a9d0aa7d33b3fda7562ab326a1b7b5e8ae3f165bbe3de4"
+    },
+    {
+      "file": "00246.png",
+      "elapsedMs": 12301.6935,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142001,
+      "sha256": "4a682443f3d662ba1c8949a141c923cd33e448a664ee56a1d8c81916926498fd"
+    },
+    {
+      "file": "00247.png",
+      "elapsedMs": 12351.549,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142001,
+      "sha256": "906383d7deeed0bfbe30c12f9a99c7e3e5c0061ff5be2d9dc38cf8ade8eb5a5e"
+    },
+    {
+      "file": "00248.png",
+      "elapsedMs": 12401.7046,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141692,
+      "sha256": "688ceacfb6d97f8e54faa1909c5791812f404a9968a93bcbe54d67516dd84fd4"
+    },
+    {
+      "file": "00249.png",
+      "elapsedMs": 12451.8511,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141642,
+      "sha256": "cbaa0ac2f19d3c170bb618a4c2f64ab58cacf2476a442dbe8c64721b95c63c50"
+    },
+    {
+      "file": "00250.png",
+      "elapsedMs": 12501.7008,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141843,
+      "sha256": "7c9538142a33568a8d9545dacbd30f507ee9536a7e24117e83b2b6bd70aef4c9"
+    },
+    {
+      "file": "00251.png",
+      "elapsedMs": 12551.576,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142826,
+      "sha256": "10ddbeb68791684de4ecebeffa9fe9f02825a3530b1de6a877bea8fddc99041f"
+    },
+    {
+      "file": "00252.png",
+      "elapsedMs": 12601.8878,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142801,
+      "sha256": "eb7aa9c79debfdf1bf3d2d21bd7970ca68255ce2a927bf94d1f19a70fe0150d9"
+    },
+    {
+      "file": "00253.png",
+      "elapsedMs": 12651.826,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142708,
+      "sha256": "a260e297cd486b39a8b02d6237b9aefc06f2436b6a171d830ed788e1b0db4341"
+    },
+    {
+      "file": "00254.png",
+      "elapsedMs": 12702.4031,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142665,
+      "sha256": "f9ca88bfc3ccd0b57b7090acd7f072704dfa84d0c45629d3df374cfa91e48033"
+    },
+    {
+      "file": "00255.png",
+      "elapsedMs": 12751.6569,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141950,
+      "sha256": "92275e7cc26c2ef79b1ab12ee05943d748b6228d8c90edc373a97888dd375ae3"
+    },
+    {
+      "file": "00256.png",
+      "elapsedMs": 12801.7263,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141852,
+      "sha256": "b46bd28c83097f7f05404e0d793efec51507070689bb8952ed346b00d4ecf473"
+    },
+    {
+      "file": "00257.png",
+      "elapsedMs": 12851.6035,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142298,
+      "sha256": "0a66c061b55f82e2bbd9b2cdc8ce4c2a6eaa92c819a725e41246199dd730192c"
+    },
+    {
+      "file": "00258.png",
+      "elapsedMs": 12902.2373,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142277,
+      "sha256": "0cca34727933ddd59a923c6d43cfc8f8d9b7dd0508f1da15f93cf57a05314812"
+    },
+    {
+      "file": "00259.png",
+      "elapsedMs": 12952.2973,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141872,
+      "sha256": "e749d0ba5bb0c460fcf575e06c49d18ff89329acbe839087cd6f77c7125b5dc5"
+    },
+    {
+      "file": "00260.png",
+      "elapsedMs": 13003.347,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141625,
+      "sha256": "dcd185569434e1e75821b8ac672361738b73976fb67ad414b9857875ee2ab052"
+    },
+    {
+      "file": "00261.png",
+      "elapsedMs": 13052.6258,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141250,
+      "sha256": "ecce4495602ea680998d4189e5ec946341e30f48c6aba6396cb1cce5905e7dcc"
+    },
+    {
+      "file": "00262.png",
+      "elapsedMs": 13103.8341,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141042,
+      "sha256": "8bdb8cf80dbc20a3a2948fe95b7287113247cd8dc45e46dfbab9bd3bcbbd770a"
+    },
+    {
+      "file": "00263.png",
+      "elapsedMs": 13153.1108,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140986,
+      "sha256": "2039db672b4a1253bdfc868f99ca3ac53fb81c679bcd42a43538bbb6713755b1"
+    },
+    {
+      "file": "00264.png",
+      "elapsedMs": 13203.2733,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141012,
+      "sha256": "a4b25274b41f791f8932a6232e91ebb9a15506e74e6dea19942759fd2ce95c89"
+    },
+    {
+      "file": "00265.png",
+      "elapsedMs": 13253.6671,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140944,
+      "sha256": "8004ad1437836a8fc6705dd60a46f9326a0486425849f65e607f2890d15af458"
+    },
+    {
+      "file": "00266.png",
+      "elapsedMs": 13304.8836,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141174,
+      "sha256": "633fdda49cf3a6dfe3b3681fb89892895351de97c8aaf25de4da7cf077d6abc2"
+    },
+    {
+      "file": "00267.png",
+      "elapsedMs": 13354.6549,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140969,
+      "sha256": "8a5303dbba8c1eba6fb30fde6b9eb0349c11d0e993f698ce04b8637798fc125c"
+    },
+    {
+      "file": "00268.png",
+      "elapsedMs": 13404.556,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140774,
+      "sha256": "1fab3a33c1ed2d47194b2680f03d2d6101c0e153b83bd0cfcc100e1de8cf62af"
+    },
+    {
+      "file": "00269.png",
+      "elapsedMs": 13456.5521,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140694,
+      "sha256": "72639467ec56e2ec10c34c332d06cb47ebe6c474c410f3179da068f7e646a63f"
+    },
+    {
+      "file": "00270.png",
+      "elapsedMs": 13506.8538,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140467,
+      "sha256": "b415d01f5eb5843fe08615bf9c28ec07f019b2da9be39e47155a4132033c3412"
+    },
+    {
+      "file": "00271.png",
+      "elapsedMs": 13555.9489,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140697,
+      "sha256": "c70a334919c3b37cb104fd32d00c34803476ec67a04a16e0b5aaddd621c32121"
+    },
+    {
+      "file": "00272.png",
+      "elapsedMs": 13609.2816,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140593,
+      "sha256": "14037fa3baf677c1b798c8d13b8e97c9fcdd2ee514f01c01fe7551590f0ed934"
+    },
+    {
+      "file": "00273.png",
+      "elapsedMs": 13657.9612,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140787,
+      "sha256": "238a7c7d84ba430f8404703c6070f23943df1350feeb71789ec7266397c1a86b"
+    },
+    {
+      "file": "00274.png",
+      "elapsedMs": 13709.8763,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 128353,
+      "sha256": "f5addb439bb5f4c41b48b5ce1c0c75eee1797a16efd1e4f3d50b26c77cdf5966"
+    },
+    {
+      "file": "00275.png",
+      "elapsedMs": 13758.488,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 128859,
+      "sha256": "5e4f626509d7ffb0d301c493d6bb867b3757547789653afa40e0b09b5ab36a7e"
+    },
+    {
+      "file": "00276.png",
+      "elapsedMs": 13806.9078,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129484,
+      "sha256": "2bca55519cb7955eace83b79cef19ffcb3c7909fa3439da55e1158d8c267366b"
+    },
+    {
+      "file": "00277.png",
+      "elapsedMs": 13857.5942,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129947,
+      "sha256": "5542cd2b743766c3bfba1b08cd7d50e393e235fea78bc0d80a5619b43a04156f"
+    },
+    {
+      "file": "00278.png",
+      "elapsedMs": 13908.1346,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130110,
+      "sha256": "9175e01470202bf896f0e0fe474763eca34a570f6a33e5a18ee7f98c9b4bfb12"
+    },
+    {
+      "file": "00279.png",
+      "elapsedMs": 13956.9178,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129840,
+      "sha256": "380a8019632585a978b0ea486d9b37791a793822daa9e6330844498760addb53"
+    },
+    {
+      "file": "00280.png",
+      "elapsedMs": 14013.7021,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129972,
+      "sha256": "a6fd57d13408f718e44f08e2059c635647a1718bfde1766ba1a5fa3f51a28574"
+    },
+    {
+      "file": "00281.png",
+      "elapsedMs": 14065.4355,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129899,
+      "sha256": "8b3ce5f74fe69cb72d49f67b6e84263beccfd0a498b695ba1ee8c7e5b996f840"
+    },
+    {
+      "file": "00282.png",
+      "elapsedMs": 14116.265,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129928,
+      "sha256": "f62ed3f568078f4b8a17262d45bade7db4da6dd50cefd8dce7ec9d66a0e841ea"
+    },
+    {
+      "file": "00283.png",
+      "elapsedMs": 14160.4917,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129937,
+      "sha256": "edb2eede0c07b486799a5e95a0776404bd48067a30c9350cfee5dfe57b3f3702"
+    },
+    {
+      "file": "00284.png",
+      "elapsedMs": 14210.8974,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129884,
+      "sha256": "6ee38e222599db0cc9d496ddc8e94bf17fa0959fd678c1d90f00a1ba694d9157"
+    },
+    {
+      "file": "00285.png",
+      "elapsedMs": 14261.1843,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129816,
+      "sha256": "c25b573a3a1b2a36838280cffee3a6164617623add0d2e639e475105af983da7"
+    },
+    {
+      "file": "00286.png",
+      "elapsedMs": 14313.9788,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129981,
+      "sha256": "156bb8db369424de843fd7e11780ed98d25908ed1a671297b5e84cb8864be905"
+    },
+    {
+      "file": "00287.png",
+      "elapsedMs": 14362.054,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129941,
+      "sha256": "ec8f3436374003f68fac82e561039bdec279fc31e310c90f8b010e47f064ae43"
+    },
+    {
+      "file": "00288.png",
+      "elapsedMs": 14411.3393,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129887,
+      "sha256": "4ef3c68d5a3da12e9e542d129d7b620576b83ce37f9f741a67d241ed2918486c"
+    },
+    {
+      "file": "00289.png",
+      "elapsedMs": 14466.7482,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130067,
+      "sha256": "c9801b5f92ff2b5babff52f2ad58b863272523a29238e4b6154a6ffe878c55c2"
+    },
+    {
+      "file": "00290.png",
+      "elapsedMs": 14516.1357,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130094,
+      "sha256": "6b410583ce111b3a98fdddf37975e5aad504f2148b39cbafa2f0e658d9fe9104"
+    },
+    {
+      "file": "00291.png",
+      "elapsedMs": 14564.3321,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 132999,
+      "sha256": "3b6f1db73cb8f740def5c435ab794be56b9f6a6f4bcae4a19eb166b71317d0c5"
+    },
+    {
+      "file": "00292.png",
+      "elapsedMs": 14613.7856,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 133380,
+      "sha256": "eec53728b195070a0cf48727bfef37094214c873593c7af872bbc98f8657da49"
+    },
+    {
+      "file": "00293.png",
+      "elapsedMs": 14663.642,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 133444,
+      "sha256": "e7b6f8da74b5f28a264bf023a5222b3deefa56f3d0c7171d2f47d4136cec464f"
+    },
+    {
+      "file": "00294.png",
+      "elapsedMs": 14715.2999,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 133798,
+      "sha256": "b6c1ec4d6d0a1feddcb11bfc959d24d6b4a9d442526f22b66543aec4169d05fd"
+    },
+    {
+      "file": "00295.png",
+      "elapsedMs": 14765.0939,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 134356,
+      "sha256": "cb8d0049fa94381b54045f8895fb8779ab43ca17ba3f4103cec91c496d2fca27"
+    },
+    {
+      "file": "00296.png",
+      "elapsedMs": 14815.3622,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 134264,
+      "sha256": "33b36464ccc6b64b1f8abb074f12c29194c747095743ed26d510ea20806e74a9"
+    },
+    {
+      "file": "00297.png",
+      "elapsedMs": 14851.2345,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 134278,
+      "sha256": "cd21cd73239f91ac73fd92145e7314162380b23a29f1159613fb14bae6ab9014"
+    },
+    {
+      "file": "00298.png",
+      "elapsedMs": 14904.5355,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 134121,
+      "sha256": "0e817e128cbc621635b736ce99b5613ee798ab1f38064f118f91aca1cb0cbf17"
+    },
+    {
+      "file": "00299.png",
+      "elapsedMs": 14954.3783,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 134286,
+      "sha256": "dea0cc04c61ffd01e11ebe7135725609d8888165a9bac0c25b6796240d280fd8"
+    },
+    {
+      "file": "00300.png",
+      "elapsedMs": 15006.4239,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 134229,
+      "sha256": "6d20969567b0712b9a0b5cfbe97361581e1fd7d79667315a524426807e247d01"
+    },
+    {
+      "file": "00301.png",
+      "elapsedMs": 15056.6519,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138450,
+      "sha256": "427b2e82f827f4c98a214d294bbcf394edd29a23dc984e575396b265893ea004"
+    },
+    {
+      "file": "00302.png",
+      "elapsedMs": 15106.8502,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139070,
+      "sha256": "cd9ce7eb7d95b0bea11bbe97060a294a5d4e15e0ec34e4dfc1950e60ce32d5bd"
+    },
+    {
+      "file": "00303.png",
+      "elapsedMs": 15159.271,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138622,
+      "sha256": "9b8b02e58b301c11e7647bfeb8008617ad2538be75b5fee16341eb9bcc69ed46"
+    },
+    {
+      "file": "00304.png",
+      "elapsedMs": 15208.8107,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139550,
+      "sha256": "3118bbb6b7f330a93713be6da39689407550d82c63fb207d31e25ca28764296a"
+    },
+    {
+      "file": "00305.png",
+      "elapsedMs": 15260.014,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141493,
+      "sha256": "649043958499993622e8e0318a0838ece0dd79417296326cbc797e0487cee4a4"
+    },
+    {
+      "file": "00306.png",
+      "elapsedMs": 15310.3999,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142128,
+      "sha256": "6a8400e0f83439091058e31ab27ba00b7cc81f3659617e76c4e86a5711f5b615"
+    },
+    {
+      "file": "00307.png",
+      "elapsedMs": 15366.2385,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142209,
+      "sha256": "b30e0cb2634ca3165c3c24c9eb4da2599b47d495077cf56a1ff97d4b90192156"
+    },
+    {
+      "file": "00308.png",
+      "elapsedMs": 15402.4428,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142103,
+      "sha256": "85cc914239cdd4f7f96ee05322f8c1b6def007a5b98e65735f735b5ee3db9a11"
+    },
+    {
+      "file": "00309.png",
+      "elapsedMs": 15452.4156,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142123,
+      "sha256": "86ee47330185541fb43c7d62f08d8ae0d8158003745b54bf3f3b217b04079a6f"
+    },
+    {
+      "file": "00310.png",
+      "elapsedMs": 15506.9356,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142274,
+      "sha256": "516a5177442b45d93ba2b3a22103de7ea005171b0e7317678789799cf91a0ac7"
+    },
+    {
+      "file": "00311.png",
+      "elapsedMs": 15552.8951,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142015,
+      "sha256": "b5fe47a1ac41c8783c486802b093b992e40239c0cb2e1e12b19dca0d4aa059ad"
+    },
+    {
+      "file": "00312.png",
+      "elapsedMs": 15603.254,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141966,
+      "sha256": "6a5278d877740e7a7fb0de0b90d4e6f2cd8f2ef419fc415211aaf1a9370fd512"
+    },
+    {
+      "file": "00313.png",
+      "elapsedMs": 15653.2503,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141954,
+      "sha256": "77bf78c17af483024b4e7e715069cd5a291abb215a0e64c28a868fca8fe4293c"
+    },
+    {
+      "file": "00314.png",
+      "elapsedMs": 15705.6268,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141953,
+      "sha256": "af82ea4e8422d9481d22417c8de472f6c0c1ef7eec3ed54dbabead0e296bcc45"
+    },
+    {
+      "file": "00315.png",
+      "elapsedMs": 15754.3448,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142285,
+      "sha256": "09dee68c63a6a20bdbca2913bc366bd993dde5182a6701dbc5dee6cd3343ae33"
+    },
+    {
+      "file": "00316.png",
+      "elapsedMs": 15806.339,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142375,
+      "sha256": "bdd00eeaace10df1d90a86eb937ed399adc81e989c06143c15a8c6bc2d575b2b"
+    },
+    {
+      "file": "00317.png",
+      "elapsedMs": 15859.2195,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143796,
+      "sha256": "032af75477be2219c9fec8dd0933897a60a2b2f46b5068f466a290585b1c952d"
+    },
+    {
+      "file": "00318.png",
+      "elapsedMs": 15910.7241,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 144224,
+      "sha256": "809b49ac8a486547c9d358dc205972e95709025c36ffc197293945200c799ed7"
+    },
+    {
+      "file": "00319.png",
+      "elapsedMs": 15961.3143,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 143355,
+      "sha256": "8072c0664c0bb0a745174d532b4d749c3e2e219500e2e65d2e9b81e2d938bc6c"
+    },
+    {
+      "file": "00320.png",
+      "elapsedMs": 16011.0315,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142897,
+      "sha256": "b8770ceb3df0956213847a661f9ca454c8d9d267c406a1f2e2bbc92be9ef432f"
+    },
+    {
+      "file": "00321.png",
+      "elapsedMs": 16062.0768,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142507,
+      "sha256": "06fed2f8380f1540e92922ceada09fc625d045854dab170db6de185742a8242c"
+    },
+    {
+      "file": "00322.png",
+      "elapsedMs": 16112.6872,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 142010,
+      "sha256": "3b49937b37d791759c7a98e438735f52fa2cf83f3e661fe75b349d639c84ab33"
+    },
+    {
+      "file": "00323.png",
+      "elapsedMs": 16166.3605,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141704,
+      "sha256": "c31af8073d98159c3fe62e5d7774d1d5111807221b8d3a3032ba274287a15f2c"
+    },
+    {
+      "file": "00324.png",
+      "elapsedMs": 16204.525,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141756,
+      "sha256": "3b84752c6192a74106710241d613240fee4390f5a407df772d92c71d30d03e4f"
+    },
+    {
+      "file": "00325.png",
+      "elapsedMs": 16264.9747,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141598,
+      "sha256": "500a5a9b6a17525d94d5a45b2c74daa2de3cd7170f10ac75ea35d69658b5d2c7"
+    },
+    {
+      "file": "00326.png",
+      "elapsedMs": 16310.0793,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141541,
+      "sha256": "3e7df9d6f8284b3e503a9a3ccb398d1ee721c6beaedd19bb027ff021533d0b42"
+    },
+    {
+      "file": "00327.png",
+      "elapsedMs": 16366.6421,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141521,
+      "sha256": "6bbbac5ab5f035711cbd50ac05f81257ac5102b90b0f601f6989292864bcb4e7"
+    },
+    {
+      "file": "00328.png",
+      "elapsedMs": 16408.2002,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 141429,
+      "sha256": "1d8f6862a9f440af8685a24a5edd778bf8d7a541f7a9312b971b224f8533bfd9"
+    },
+    {
+      "file": "00329.png",
+      "elapsedMs": 16467.4533,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140156,
+      "sha256": "0c12490e73b4418256c40398d58b39560dd994e3830f9d545b7dfa89802a02d4"
+    },
+    {
+      "file": "00330.png",
+      "elapsedMs": 16517.7613,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140095,
+      "sha256": "5f917bab08556550738b2ce6f8df7760b66c42fe106db45f9dfd5837b99a1e32"
+    },
+    {
+      "file": "00331.png",
+      "elapsedMs": 16568.3022,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139707,
+      "sha256": "dce7556ec1c0a6df511d7f676a853a22dbd2138c4f2b7e1c6665860d23669a09"
+    },
+    {
+      "file": "00332.png",
+      "elapsedMs": 16616.8757,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139945,
+      "sha256": "c266fb1d90fa349a20b3792314efb697dc205c4d171790d55d3f67f28113a403"
+    },
+    {
+      "file": "00333.png",
+      "elapsedMs": 16651.3214,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140004,
+      "sha256": "f206ecd6e5bf468c77fd39c216f63dda16a6b5ece3414eb6ea5483f7710d211e"
+    },
+    {
+      "file": "00334.png",
+      "elapsedMs": 16715.8242,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140033,
+      "sha256": "61de1f5687eccd298717129a0a880f4df57134b8648501fdb598d886b059b604"
+    },
+    {
+      "file": "00335.png",
+      "elapsedMs": 16766.8282,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140239,
+      "sha256": "0613c9732275fdc983bc6b7d0f22ae3244990c0e5fea71c988a14e233d2e4549"
+    },
+    {
+      "file": "00336.png",
+      "elapsedMs": 16819.0242,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140160,
+      "sha256": "ddc5eb216e22cca169d00c22a9f415b23e1ee260387d41fbcd5fe977413a6161"
+    },
+    {
+      "file": "00337.png",
+      "elapsedMs": 16853.0299,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140135,
+      "sha256": "597be9a2570b4172ea63e5b68247e1b2574e8d34f0081d4661b1f683271212b6"
+    },
+    {
+      "file": "00338.png",
+      "elapsedMs": 16902.5073,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140230,
+      "sha256": "45b30bcf705fbd2ef62e3111382ff2303aba6c9dcbd5a6909bd1fd5117a8c3f2"
+    },
+    {
+      "file": "00339.png",
+      "elapsedMs": 16968.0166,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140104,
+      "sha256": "51e8b5f53489af391253503ccd2d61488fbeb9934bf631a48f56bc5bed8a179e"
+    },
+    {
+      "file": "00340.png",
+      "elapsedMs": 17000.5114,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140118,
+      "sha256": "bee9a0cf7e5529d50e4bf0b9058e346fd5248bab5898b7953a415577aa0889f2"
+    },
+    {
+      "file": "00341.png",
+      "elapsedMs": 17067.5211,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140067,
+      "sha256": "ba8a96dcd880f8f48f157653eee48cb7f35a6680ef9e6473386ab040c9ccffe6"
+    },
+    {
+      "file": "00342.png",
+      "elapsedMs": 17101.263,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140192,
+      "sha256": "df86c89f7b845dfca30a153f3dcc61945cdd4f9307abe42298ef9c62a3ca2ebd"
+    },
+    {
+      "file": "00343.png",
+      "elapsedMs": 17155.345,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140093,
+      "sha256": "6b2fad7b25ce3d377cdeae9228a10c11643fb744d109621df676628ac6e5fba1"
+    },
+    {
+      "file": "00344.png",
+      "elapsedMs": 17206.8346,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139967,
+      "sha256": "bc419b5a34aea80a07f67bc6459c33b468549ecd8dd2dc589ef603aba1601a8f"
+    },
+    {
+      "file": "00345.png",
+      "elapsedMs": 17259.3634,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140205,
+      "sha256": "4b4c1b3ece7bb2c2dff1d7b996822dbb986de7dc4e319544c2dbbfd1320e4d75"
+    },
+    {
+      "file": "00346.png",
+      "elapsedMs": 17307.5506,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140105,
+      "sha256": "1f56e8d73c40e8ce53e791b8dd7a2b125c8d28a73383483c9c8c04b2413f6113"
+    },
+    {
+      "file": "00347.png",
+      "elapsedMs": 17371.0266,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140105,
+      "sha256": "ad634c15528b0822c9606aced1bc5b05aabf33e20099d6cbb7e958bafd64b4d4"
+    },
+    {
+      "file": "00348.png",
+      "elapsedMs": 17409.2462,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140029,
+      "sha256": "1412e0dff1729d57b4d775d5fef619547092db4567531d0f43a83a90c209eb21"
+    },
+    {
+      "file": "00349.png",
+      "elapsedMs": 17450.0764,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140146,
+      "sha256": "9af01cc9e2854f6243a0fa3e8471727b4c49913ffeb5378a2f258ebc4dbed10c"
+    },
+    {
+      "file": "00350.png",
+      "elapsedMs": 17504.5417,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140046,
+      "sha256": "cf25f339ecf95b7ae0436586b24ef73c96d1ef98c590707ffdb3fd4b492726d6"
+    },
+    {
+      "file": "00351.png",
+      "elapsedMs": 17554.5313,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139998,
+      "sha256": "40ca01391f6cbce40dd70fca4bf8d6d936716c1484578f9efdd064b90f3ff2b3"
+    },
+    {
+      "file": "00352.png",
+      "elapsedMs": 17604.6883,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139780,
+      "sha256": "5bad092e6299ae3bdcd9eff715ba291219ae73c602e19567aca8f0f69d448fcf"
+    },
+    {
+      "file": "00353.png",
+      "elapsedMs": 17654.5219,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139636,
+      "sha256": "30c60c80750ddecf4be3855621a46242d50c2d3536193de99b5417a9e7fd772c"
+    },
+    {
+      "file": "00354.png",
+      "elapsedMs": 17705.6959,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139631,
+      "sha256": "ca96418c34c0f845db8d79556ea5486ea88e3d2b14d6747c9054f83ba9fa26cf"
+    },
+    {
+      "file": "00355.png",
+      "elapsedMs": 17754.3504,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139621,
+      "sha256": "dcce64ed31c20bb1292bfaa258c145b1745a98db7856a0b58a695a6e670f3921"
+    },
+    {
+      "file": "00356.png",
+      "elapsedMs": 17804.2921,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139565,
+      "sha256": "eec062cf9445f8aa90d4bcb58b76d276439a96933bf589a2b5eb1dd5bed9a07f"
+    },
+    {
+      "file": "00357.png",
+      "elapsedMs": 17854.5761,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139661,
+      "sha256": "5fe9dea5c0cb8fe327a305a4df7b1ee750b65c3efde927753cfd6deb0c8e1cf3"
+    },
+    {
+      "file": "00358.png",
+      "elapsedMs": 17905.8481,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139587,
+      "sha256": "8794a928eed85fcab1e9392f952063ab9139f062489a3b11e7ccdecb17017275"
+    },
+    {
+      "file": "00359.png",
+      "elapsedMs": 17954.6132,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139433,
+      "sha256": "4824d471ae3ea61087a392b6c8061d112092d238869d4e9caa5f6ec3eb688579"
+    },
+    {
+      "file": "00360.png",
+      "elapsedMs": 18004.8226,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139506,
+      "sha256": "8fbcb2ef85399a6ef390f711686092f26c0f30b20d49374af5ccca14a70e1d85"
+    },
+    {
+      "file": "00361.png",
+      "elapsedMs": 18056.509,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139428,
+      "sha256": "5042018a1adcd691c4ecd9b38156f71ec7aee7bfadfd62fc4d71d8ca05c60fa6"
+    },
+    {
+      "file": "00362.png",
+      "elapsedMs": 18106.6073,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139537,
+      "sha256": "c44cfeb296120cf8109b0f0059df8c0e8b966a8fd94143cb54113bb9305cb93e"
+    },
+    {
+      "file": "00363.png",
+      "elapsedMs": 18156.6813,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139529,
+      "sha256": "d8b05c7625246fb4d313e5960fb2b11c143f0f23336971f2d860fd51ef012c2a"
+    },
+    {
+      "file": "00364.png",
+      "elapsedMs": 18207.3229,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139456,
+      "sha256": "88a2991c79f6bb6e35c65cc317e5786c039962592f98e2069fb767a54bc76ab0"
+    },
+    {
+      "file": "00365.png",
+      "elapsedMs": 18256.2705,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139363,
+      "sha256": "90f5d0f4eb620ea50b54926eeb48c9feb970dd0ea7a4bc8fa3ff3f3074ec553f"
+    },
+    {
+      "file": "00366.png",
+      "elapsedMs": 18306.228,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139525,
+      "sha256": "bab5b42166216ebeb1988351957cc714c91a5e6b6f429ec2e014df58be9df1fe"
+    },
+    {
+      "file": "00367.png",
+      "elapsedMs": 18356.7376,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139414,
+      "sha256": "df84e54149fb39ed67a09aaa026282ec92bbe71b3d25ad703184fc933bb83460"
+    },
+    {
+      "file": "00368.png",
+      "elapsedMs": 18409.4556,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139275,
+      "sha256": "558b0810bb9635002b3f64503a96ca15fe0713a0e617706e92485758db910769"
+    },
+    {
+      "file": "00369.png",
+      "elapsedMs": 18457.1348,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139158,
+      "sha256": "19e0eec1e85580e3ab6fba37852b3471769823ecc46d837ce918bd29d3ece800"
+    },
+    {
+      "file": "00370.png",
+      "elapsedMs": 18506.8632,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139437,
+      "sha256": "c9d5cd621430a3830dfaf65d53e3e48f2b20aef64665e978470a13f7d724de6e"
+    },
+    {
+      "file": "00371.png",
+      "elapsedMs": 18557.2319,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139321,
+      "sha256": "5bf6bdb3e100f9ab8d0212efb383ca3b8ac1bfe145b3531d8564c12897ee544b"
+    },
+    {
+      "file": "00372.png",
+      "elapsedMs": 18606.9656,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139444,
+      "sha256": "24c69dfc17b518df7a796cd52ee53fc71315cac42043ca382b23d59ac0df0a99"
+    },
+    {
+      "file": "00373.png",
+      "elapsedMs": 18657.0958,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139437,
+      "sha256": "6ac87509e89966c7b98d6d8491269da90abf07d74e19289a2c0529241b21aaf2"
+    },
+    {
+      "file": "00374.png",
+      "elapsedMs": 18707.3339,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139423,
+      "sha256": "82724d82f84787f3f0716f40c44f11efbcf0b259e1ba0397dac60885867492cb"
+    },
+    {
+      "file": "00375.png",
+      "elapsedMs": 18757.3754,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139556,
+      "sha256": "f1ced5ccac0cfb59163f83e196062f8abe70c3f4e624511b2cceffbc0732a07b"
+    },
+    {
+      "file": "00376.png",
+      "elapsedMs": 18807.5637,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139450,
+      "sha256": "3dbfa55d68adc653aff47597168fac5cc910c247591c39d3081f971dcd3141ee"
+    },
+    {
+      "file": "00377.png",
+      "elapsedMs": 18858.4775,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139481,
+      "sha256": "607eb25d7f9f5c8dbc55c8f85716812834a2cb42577c2429180d783a5dd2437e"
+    },
+    {
+      "file": "00378.png",
+      "elapsedMs": 18907.8349,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139513,
+      "sha256": "9707596f104cda2836c366eab4f1b885986edb493e9678c5a925c3b9a740cec1"
+    },
+    {
+      "file": "00379.png",
+      "elapsedMs": 18957.683,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139388,
+      "sha256": "3b9ef647ea238e22f20a749ac1b9dd9d52c3527ae25d3dbae659ef3d11b622d7"
+    },
+    {
+      "file": "00380.png",
+      "elapsedMs": 19007.9571,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139448,
+      "sha256": "8c29255afe2acd566163a80dcad986cd5aa110128e1268b9c890a90b7ee8c48f"
+    },
+    {
+      "file": "00381.png",
+      "elapsedMs": 19058.344,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139503,
+      "sha256": "ac0ce21f6711cf1bc8f34aca3795712bb8e95967a081fae2c72b70c2677b3c40"
+    },
+    {
+      "file": "00382.png",
+      "elapsedMs": 19108.3322,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139631,
+      "sha256": "c86071f80923981ba4a026577a9fcbd3509e715c062f779c4a3bb5ddb0f1839c"
+    },
+    {
+      "file": "00383.png",
+      "elapsedMs": 19158.6653,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139549,
+      "sha256": "8ef4a635ab6b7900fd270897b80ee2a1088de45cd2f687cae581b70b3bf76c23"
+    },
+    {
+      "file": "00384.png",
+      "elapsedMs": 19208.9537,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139643,
+      "sha256": "b66a59624ae997872b9e2191b472f96d3dc102b2653fc831c1fac55a39d261ce"
+    },
+    {
+      "file": "00385.png",
+      "elapsedMs": 19259.2969,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139581,
+      "sha256": "b20d0ff30bbd26e76cf956d3739da421140c0ca86da811fb6f7ee6c6fd425c7a"
+    },
+    {
+      "file": "00386.png",
+      "elapsedMs": 19310.3617,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139512,
+      "sha256": "a7c1ba3b02a12ccc383ea31132752eaac3ad69eb322b4b6c1ccf0285a9a84265"
+    },
+    {
+      "file": "00387.png",
+      "elapsedMs": 19360.3955,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139526,
+      "sha256": "c9bc507b0366f9ab26b7cb6be6163159403707892390cf772c39d8e05be80912"
+    },
+    {
+      "file": "00388.png",
+      "elapsedMs": 19411.1632,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139461,
+      "sha256": "d5581bee3dbcee818c6021f42ec27389df1eae5323a957052d2cb40c72a5b841"
+    },
+    {
+      "file": "00389.png",
+      "elapsedMs": 19462.3153,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139311,
+      "sha256": "0ce497eb911bc7388e4df628356519327fa62d458643499014af13ecefb6b52d"
+    },
+    {
+      "file": "00390.png",
+      "elapsedMs": 19511.8626,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139302,
+      "sha256": "efcc109e18db8d5e5e4a2e2582f221fa6ac30c96f8b5dd6b83219e403fc6d58b"
+    },
+    {
+      "file": "00391.png",
+      "elapsedMs": 19562.438,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139295,
+      "sha256": "9afac3891ff793800afd2631d5fa2b13a6f080c9ca8c0a892766300b505ceb32"
+    },
+    {
+      "file": "00392.png",
+      "elapsedMs": 19612.4867,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139488,
+      "sha256": "ca4928490315ccc3211f947fd12c40ba65340baf4688e6b1fbdc99e194a22f98"
+    },
+    {
+      "file": "00393.png",
+      "elapsedMs": 19662.8549,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138930,
+      "sha256": "fb2a5c4e7ea7ee036089a552170c1862f9753436352bef94cfd50a314fdee47a"
+    },
+    {
+      "file": "00394.png",
+      "elapsedMs": 19712.8521,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138929,
+      "sha256": "8861975ded0acbfbc039d99830d1347632de08bf0310c1f99fec54dbac9b3b0d"
+    },
+    {
+      "file": "00395.png",
+      "elapsedMs": 19767.1668,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138783,
+      "sha256": "c91588f7ce7fffbbb1f116d2feea8364e99169e7d7fd7977c2d7f876949b9ec2"
+    },
+    {
+      "file": "00396.png",
+      "elapsedMs": 19800.5537,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138765,
+      "sha256": "215f9adc522d79c58d11dcf4f5d250ce903ea08350be82c98186b4c8808360df"
+    },
+    {
+      "file": "00397.png",
+      "elapsedMs": 19851.1108,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138776,
+      "sha256": "75a31b898602a7785b04919ed3f566d157ed640102c9daaaa641009cd14bc9c6"
+    },
+    {
+      "file": "00398.png",
+      "elapsedMs": 19902.6767,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138671,
+      "sha256": "4b36f8d040749c493c35a89c54c08e8b65c31f21e74c448e27a47e849655caf6"
+    },
+    {
+      "file": "00399.png",
+      "elapsedMs": 19953.6129,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138442,
+      "sha256": "4b0a1169aed661016531d177aff9730c074ac43643a573dd53cc07cf8aa1ac4a"
+    },
+    {
+      "file": "00400.png",
+      "elapsedMs": 20004.6436,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138444,
+      "sha256": "21802c1c4645a49f1bc117257f43bbf27d605259729160571c8157589bce28a3"
+    },
+    {
+      "file": "00401.png",
+      "elapsedMs": 20054.1658,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138385,
+      "sha256": "6d9dce7ed71eb080dd697ec7ac06859f5a43b45983bf5471a9520ebce9bd2695"
+    },
+    {
+      "file": "00402.png",
+      "elapsedMs": 20104.7338,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138375,
+      "sha256": "ddbbf83222dc227ad792f126d1143ec71e84fc5d3d35798455613d4333dc2526"
+    },
+    {
+      "file": "00403.png",
+      "elapsedMs": 20154.3286,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138030,
+      "sha256": "72da41df13b2fc6cca08fa414a09ec2dcc7c078998d2d3011e0bc6a33787544b"
+    },
+    {
+      "file": "00404.png",
+      "elapsedMs": 20204.2557,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 138201,
+      "sha256": "54dba56baaa30b23947cf895074e2107e27106b713a48183156fce0638275318"
+    },
+    {
+      "file": "00405.png",
+      "elapsedMs": 20254.5214,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137890,
+      "sha256": "ae9c9536b1542cad4997e897427a57efd5c4677737f919618e6bb89958d0f8a0"
+    },
+    {
+      "file": "00406.png",
+      "elapsedMs": 20305.0931,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137683,
+      "sha256": "cb6725e55b7f9085b16f908228776da372eb916d0b4d951dbf8164ead4029a25"
+    },
+    {
+      "file": "00407.png",
+      "elapsedMs": 20351.136,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137723,
+      "sha256": "4dd9eb9233ba63e610c991162783e3faeae18f5f0774d1add22a47a35c8b6a15"
+    },
+    {
+      "file": "00408.png",
+      "elapsedMs": 20416.3178,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137477,
+      "sha256": "3a89d576e01b2156a9ca810251ea33182e931ade95eea28f6bfe699dcd3225e3"
+    },
+    {
+      "file": "00409.png",
+      "elapsedMs": 20467.1389,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 137300,
+      "sha256": "d6e09b620e363b95b63f3697b9e8b1828c1a95bc0d261edcac84ad29d4a239a5"
+    },
+    {
+      "file": "00410.png",
+      "elapsedMs": 20517.3198,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 136940,
+      "sha256": "8fe6f2bca984bca62694d2e34952c2aa5b2029edf5ca519b80efbec0230f69d7"
+    },
+    {
+      "file": "00411.png",
+      "elapsedMs": 20566.9169,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 136455,
+      "sha256": "309dba84c409e38467dc37eda18607dc09c732c5803d3b33d9fd01306d3a0ad2"
+    },
+    {
+      "file": "00412.png",
+      "elapsedMs": 20616.8402,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 135562,
+      "sha256": "321ebde7992499bd8a4f2c65ef90d5f0991082fa030f855b5b1c15ba71fbfa9c"
+    },
+    {
+      "file": "00413.png",
+      "elapsedMs": 20666.9277,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 133598,
+      "sha256": "f920e873c6f7dfa6860567ad822d59c46eedf280e188cdffff0bfd0ccba5f919"
+    },
+    {
+      "file": "00414.png",
+      "elapsedMs": 20717.035,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125953,
+      "sha256": "87c71c51d469b9dc4a78cb8f3b4e6525ab02ce2ae2fb6a5434804167909bc0d4"
+    },
+    {
+      "file": "00415.png",
+      "elapsedMs": 20766.9333,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125901,
+      "sha256": "32660572f1a7319ef027371159a7ea394934fbc566e14a5914583b9a3d67b2b4"
+    },
+    {
+      "file": "00416.png",
+      "elapsedMs": 20817.4423,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125889,
+      "sha256": "ed1110b9b3357a0616a3c0aeb9165873be9094343773fde672207e7155bc17bb"
+    },
+    {
+      "file": "00417.png",
+      "elapsedMs": 20850.3473,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125922,
+      "sha256": "d054e83d34f8e629d385d840eaa8331a93dfe79bf2cb2ce64e8dbe0d94e7aacc"
+    },
+    {
+      "file": "00418.png",
+      "elapsedMs": 20917.1228,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126009,
+      "sha256": "c30053870b443f7c7e1af9aa41e5ac7bd6ffbe2178f2593c16c3d73e747a1bda"
+    },
+    {
+      "file": "00419.png",
+      "elapsedMs": 20965.1962,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125576,
+      "sha256": "cabf2402d98a3e3ef0c5a644315d655b7895812fc1755728bc3d4f975a73b75d"
+    },
+    {
+      "file": "00420.png",
+      "elapsedMs": 21015.2067,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125569,
+      "sha256": "45a8aca8ac5ec05e71e3184f6576b05f08216fe26b98bad9e11033cf8ba34ab1"
+    },
+    {
+      "file": "00421.png",
+      "elapsedMs": 21066.4959,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125507,
+      "sha256": "4fa8c3f805563db9f9c95f29bb5ea1be4fafec055e2ae3faa5f2b9b2c08fb6aa"
+    },
+    {
+      "file": "00422.png",
+      "elapsedMs": 21115.6199,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125265,
+      "sha256": "b32b10583a7eaf00d3908c806933e56270ddd8a5bf0d311ff1019a55ee99b5b9"
+    },
+    {
+      "file": "00423.png",
+      "elapsedMs": 21165.7583,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125425,
+      "sha256": "f99d48843246f5b77d8b28a101f8043821484f7df6e2e59dea065d52d1ddcb2e"
+    },
+    {
+      "file": "00424.png",
+      "elapsedMs": 21215.6477,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125428,
+      "sha256": "a418cce5f5583d32e0be7109f119a0f1a0526f012a719b9474ff722fb7a434fa"
+    },
+    {
+      "file": "00425.png",
+      "elapsedMs": 21266.1381,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125514,
+      "sha256": "9842ed161ea51dd1694ca84c03a4529a590a3e8dee77b3e4351d1e89c0560d26"
+    },
+    {
+      "file": "00426.png",
+      "elapsedMs": 21315.6005,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125489,
+      "sha256": "92ec288728a34ae1e28290e26b6321475babe583d280cc80493d04bfc09d177a"
+    },
+    {
+      "file": "00427.png",
+      "elapsedMs": 21365.4146,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125485,
+      "sha256": "b0b5a3f2e65eb22e2ad92470462fa7564f044267db1a57d19f841207958445da"
+    },
+    {
+      "file": "00428.png",
+      "elapsedMs": 21415.9627,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125679,
+      "sha256": "716f51a3e114fb424535e375b2038c0545b919badb5859c4372ebdc10b00c0a9"
+    },
+    {
+      "file": "00429.png",
+      "elapsedMs": 21465.8719,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125462,
+      "sha256": "4ff78a9e5aa2eecee73ef86639dfce675380f006e7ad46961a092756f4424772"
+    },
+    {
+      "file": "00430.png",
+      "elapsedMs": 21516.4203,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125579,
+      "sha256": "a5db38f6e85db64aa55815398a2dffde11d26a7a51b335011b44a7e31145a159"
+    },
+    {
+      "file": "00431.png",
+      "elapsedMs": 21550.3893,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125606,
+      "sha256": "99f74a2a77fd2e5bd3fe8a4a7527fa8af770633d7a33b81f4006f5e04cdbe9f0"
+    },
+    {
+      "file": "00432.png",
+      "elapsedMs": 21600.404,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125611,
+      "sha256": "28eab3269e8e93625d9aa078d74012074727379c8f90450f334c52ed1cf377cf"
+    },
+    {
+      "file": "00433.png",
+      "elapsedMs": 21651.1699,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125679,
+      "sha256": "1367fe371513470f62571eadcec02443482ef15978b41a8e6c0dbda69e527b71"
+    },
+    {
+      "file": "00434.png",
+      "elapsedMs": 21700.965,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125638,
+      "sha256": "ac808adf9f59e7f5cfc8756a97e7fa3400a4f4cbac7c3d260206f05674e5396b"
+    },
+    {
+      "file": "00435.png",
+      "elapsedMs": 21750.7643,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125614,
+      "sha256": "c8695fe9025891f3f2da90117edc0a2eefe4575278cecca035998035c36787a0"
+    },
+    {
+      "file": "00436.png",
+      "elapsedMs": 21800.9167,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125912,
+      "sha256": "6cb1cf265c898effc21c45f5d56c09cd135fac03d845da0208a51400458f8f5e"
+    },
+    {
+      "file": "00437.png",
+      "elapsedMs": 21850.8293,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125869,
+      "sha256": "5dbd19eaaf4d6a237542b6bc86b97c65eada25c86b223eb632a5e242f27b3d1e"
+    },
+    {
+      "file": "00438.png",
+      "elapsedMs": 21901.4835,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125743,
+      "sha256": "e8cb43779666ac731fc1b66dcf563154790ee17eb069767cf7478cfafbaae9b7"
+    },
+    {
+      "file": "00439.png",
+      "elapsedMs": 21950.8708,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 125960,
+      "sha256": "87151b881bf7a9a2540e1d227e91d6756ede566a66b1401a77e1b124467d168f"
+    },
+    {
+      "file": "00440.png",
+      "elapsedMs": 22001.838,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126082,
+      "sha256": "8aafa06c75ca9b8dad5f4a35f224d8848d968741f414930ed6c54e3b92e27990"
+    },
+    {
+      "file": "00441.png",
+      "elapsedMs": 22051.7514,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126056,
+      "sha256": "07db1c017626e80002ff3121ab6fef62a8c8babf75ca8a9c75aedbfddc6d99d0"
+    },
+    {
+      "file": "00442.png",
+      "elapsedMs": 22102.5834,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126250,
+      "sha256": "47108c24d56e12f51423549e073fafb741ddafb238168e217f9048cf7dff96a0"
+    },
+    {
+      "file": "00443.png",
+      "elapsedMs": 22152.4347,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126258,
+      "sha256": "58060cb025afb7c277cbfa335bf02da52d5b2cd29779aac7c8728865308b8af9"
+    },
+    {
+      "file": "00444.png",
+      "elapsedMs": 22202.7573,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126075,
+      "sha256": "48042bff0deed16e62c493afd34da0d12c6840a6ef8bce1005a8e5ad1890e5d3"
+    },
+    {
+      "file": "00445.png",
+      "elapsedMs": 22253.0041,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126384,
+      "sha256": "2d86ea5a4024ec7ea906f2db8503bf048b7c75772d66f42fa22b8aa5ca445a17"
+    },
+    {
+      "file": "00446.png",
+      "elapsedMs": 22302.904,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126633,
+      "sha256": "9895c467a6569d1f32d91b07d3bb3a8bed542b841cd56203b95d445e18c5049c"
+    },
+    {
+      "file": "00447.png",
+      "elapsedMs": 22353.5846,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126592,
+      "sha256": "b466f20e98f9f1a6621201d337c23a6a4e3aae7ac729a1a9c626b2d6acd8abb5"
+    },
+    {
+      "file": "00448.png",
+      "elapsedMs": 22405.564,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126431,
+      "sha256": "33361a34c74034f83263bd47ff06d401d1d1ce6e0f3cf4a6f54d80ffc079633a"
+    },
+    {
+      "file": "00449.png",
+      "elapsedMs": 22455.189,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126100,
+      "sha256": "5a26f3c0f63aac3fb4022cf3839394b8ac8023173debf8655099009f15d7be8f"
+    },
+    {
+      "file": "00450.png",
+      "elapsedMs": 22505.2848,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126000,
+      "sha256": "14791b656af28020c135cfecdcfeb9feef23a16144997441f6ede035800cf719"
+    },
+    {
+      "file": "00451.png",
+      "elapsedMs": 22555.2579,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126398,
+      "sha256": "6afaac110ec519e046cbe38cf907459f7c407580fd63f18dedc3298bbfedae61"
+    },
+    {
+      "file": "00452.png",
+      "elapsedMs": 22606.1779,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126346,
+      "sha256": "c30a7c0479e832455c20a5834b7b7662d4f949e6954d8139a3f82de1435909a9"
+    },
+    {
+      "file": "00453.png",
+      "elapsedMs": 22656.6151,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126365,
+      "sha256": "c5b62699ca40616da7313712c0c8f31fba44e3131afc1de02e5c6b23d2b0f619"
+    },
+    {
+      "file": "00454.png",
+      "elapsedMs": 22707.2693,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126394,
+      "sha256": "fbb994334145363e30c0f66037df4d5f32b94de056b40bb01f619f853f5d9023"
+    },
+    {
+      "file": "00455.png",
+      "elapsedMs": 22756.9486,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126502,
+      "sha256": "f7fb9a029cde7a27aa690806ad18c7d16b076ff4e9eb84bf1edb628d22fb9173"
+    },
+    {
+      "file": "00456.png",
+      "elapsedMs": 22806.8675,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126771,
+      "sha256": "8f8bec858cdd299c3706070851d1863092a580ddd991f19ddd04d5368ea54f2b"
+    },
+    {
+      "file": "00457.png",
+      "elapsedMs": 22856.7623,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126705,
+      "sha256": "819330eab06baeaa7dc667d69908ae63980bae3607702660cbf109ca51ff2908"
+    },
+    {
+      "file": "00458.png",
+      "elapsedMs": 22906.9094,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126470,
+      "sha256": "ac02c81fc62622ba9e4fd337707f4de38c08e0e4feddf98eb2f7fe4a776f7d68"
+    },
+    {
+      "file": "00459.png",
+      "elapsedMs": 22956.8951,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 126326,
+      "sha256": "7d5e784cd649c495f58646a14166299dc9de88a9e1033e3bcbaa49e89714ba78"
+    },
+    {
+      "file": "00460.png",
+      "elapsedMs": 23005.594,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130520,
+      "sha256": "3f92354ba90483034750e42ccb11a4c78e0f0fa059ef05243d9fdc9a871990c4"
+    },
+    {
+      "file": "00461.png",
+      "elapsedMs": 23054.1121,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130514,
+      "sha256": "d441a72b879613d205b321f4174873e66be2019543d27d3f7f48d4317b342120"
+    },
+    {
+      "file": "00462.png",
+      "elapsedMs": 23105.9188,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130566,
+      "sha256": "9a982e840fb4d15794c081405d9e013cdcc09ac482a911c01b911787918f4187"
+    },
+    {
+      "file": "00463.png",
+      "elapsedMs": 23156.0509,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130715,
+      "sha256": "a9e75c33fc941ce935043bab56858c5f9be1b95405c1b67d5718c21c21641143"
+    },
+    {
+      "file": "00464.png",
+      "elapsedMs": 23206.6715,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130859,
+      "sha256": "7359d8d3210a6e66cfacf4625d44c4c32bd8186ec3d4b055d69050b8d7072b88"
+    },
+    {
+      "file": "00465.png",
+      "elapsedMs": 23256.0429,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130454,
+      "sha256": "1f67a9f97e1168482f543762122cc0e6ae39d891505f8511bc75752abd1282bb"
+    },
+    {
+      "file": "00466.png",
+      "elapsedMs": 23306.1841,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130950,
+      "sha256": "ccca14516f233987cacb51ed5c2bd2fccef8ba59b9c7424a629a8b057902cf33"
+    },
+    {
+      "file": "00467.png",
+      "elapsedMs": 23356.5634,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 131024,
+      "sha256": "5e679b0369780fa50c0c76552f6c82d3e76be76edefc92630ae7a2f9a25c8527"
+    },
+    {
+      "file": "00468.png",
+      "elapsedMs": 23407.4098,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 131048,
+      "sha256": "019f218bce08c0c231bca0133076be8a856a557ed141e630366ff54c49931b57"
+    },
+    {
+      "file": "00469.png",
+      "elapsedMs": 23456.8624,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130741,
+      "sha256": "961585b74a7a78aa94994d4481fa5929c3ce97296236d625a9c3cdbef44bf32d"
+    },
+    {
+      "file": "00470.png",
+      "elapsedMs": 23506.972,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130669,
+      "sha256": "f03f534c9ea20ee751b6b74cceb66f97bc224052c645bc09344d638eb323bdd0"
+    },
+    {
+      "file": "00471.png",
+      "elapsedMs": 23556.8091,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130856,
+      "sha256": "5901758b7c23d7f6366dd846d264c9ed02d0e6f9d5c05988ad19bef50928a449"
+    },
+    {
+      "file": "00472.png",
+      "elapsedMs": 23608.3564,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130938,
+      "sha256": "7f3242e498b987723eece16f64161eee1fb4fca33854ece0a3e47f0f0e41025f"
+    },
+    {
+      "file": "00473.png",
+      "elapsedMs": 23658.2561,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130820,
+      "sha256": "718b7bedf163a512d2282a32786a00b2f0bde8380811c3fe0b98b06c954d0066"
+    },
+    {
+      "file": "00474.png",
+      "elapsedMs": 23707.8915,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130965,
+      "sha256": "bafe37b8d52c8ed44614053ca12077a0260c436ba5306d2b060f075b79f2c8ec"
+    },
+    {
+      "file": "00475.png",
+      "elapsedMs": 23757.7518,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 131019,
+      "sha256": "26a72c5046e25cef941cd3046984e152f8b6c77bd3db00fdee7b87035a598eae"
+    },
+    {
+      "file": "00476.png",
+      "elapsedMs": 23808.0086,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 131097,
+      "sha256": "51cf1af701f1862a19a0e910fe505102a94ee73fcfc23492d0472e41c139b50e"
+    },
+    {
+      "file": "00477.png",
+      "elapsedMs": 23857.9226,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130811,
+      "sha256": "6e517a95a4f76a444011ccf2205c69ae1ded2d42c1c7f2ceae231628b27d9026"
+    },
+    {
+      "file": "00478.png",
+      "elapsedMs": 23908.1073,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130539,
+      "sha256": "748deed16cf0d96158cdba58ab609509da51e5a49e173a0a06ea80c4ddc7b5c4"
+    },
+    {
+      "file": "00479.png",
+      "elapsedMs": 23958.461,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130550,
+      "sha256": "ec1900aa6365802856617d1ae625e636d9c967d8837f5f7d536cc97a66858bbf"
+    },
+    {
+      "file": "00480.png",
+      "elapsedMs": 24011.0762,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130431,
+      "sha256": "20344090d65de6d031d2f1313c2bd43531d028131722019333b2d9307b1c9423"
+    },
+    {
+      "file": "00481.png",
+      "elapsedMs": 24059.9999,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130379,
+      "sha256": "5b958e425b5c5d269230e52f82a7797e706ebd0a2514f7b5d6598e756a4750cb"
+    },
+    {
+      "file": "00482.png",
+      "elapsedMs": 24110.1093,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130383,
+      "sha256": "8a34ce96590665b203ab0d1d35af099309bc69fb601c7db7e19c6e9179d243ad"
+    },
+    {
+      "file": "00483.png",
+      "elapsedMs": 24159.9578,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130476,
+      "sha256": "1e48e5a8adda82ecf0bf4c129c4b739bdd5822153fcff34ff6fe691bb608e68a"
+    },
+    {
+      "file": "00484.png",
+      "elapsedMs": 24210.4077,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130284,
+      "sha256": "032550b41c303f18228e4091ddf48791c71669bb9a4472fdf34b2847557d7168"
+    },
+    {
+      "file": "00485.png",
+      "elapsedMs": 24260.5401,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130185,
+      "sha256": "d59ee035b5ebfb52f18397a5fefd0febde08afe172a4e2ccdc6ee89ff1db82ef"
+    },
+    {
+      "file": "00486.png",
+      "elapsedMs": 24311.0002,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130273,
+      "sha256": "b1f4e1d5abcd1de292a251d27cfc038584aaab672a9e270d6bb70b919d936379"
+    },
+    {
+      "file": "00487.png",
+      "elapsedMs": 24365.2062,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130033,
+      "sha256": "601ed822cb23906084e6bb55b30239294274ff61c5864e43f93f7aab1c039f5a"
+    },
+    {
+      "file": "00488.png",
+      "elapsedMs": 24412.1379,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130213,
+      "sha256": "e3a2c86de5df89e64bca00ce6d2643b14f7ce9e139808b3d13ba48daaeb56754"
+    },
+    {
+      "file": "00489.png",
+      "elapsedMs": 24463.7539,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130078,
+      "sha256": "035ecf59aa5ace36018dce9984b89bd88eaa7b768e1ba12113871443da6fcc3a"
+    },
+    {
+      "file": "00490.png",
+      "elapsedMs": 24515.136,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130061,
+      "sha256": "2e0373a74e5f3f501f3f087ab0c44b99105eead82943af95764efd57d1d40a4b"
+    },
+    {
+      "file": "00491.png",
+      "elapsedMs": 24564.4592,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130111,
+      "sha256": "037845639ba78c437d8fafa39e4ef29a0ce72f0ed89e32ba5a8f40887bce2fd2"
+    },
+    {
+      "file": "00492.png",
+      "elapsedMs": 24614.1782,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130081,
+      "sha256": "393313e53799fcb738dd0ad35b131b0a1fd7151c6032d838e8a0875bb953352e"
+    },
+    {
+      "file": "00493.png",
+      "elapsedMs": 24665.761,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129895,
+      "sha256": "e618471ab00dca5e99495befc79fd2ee63163b4a4eebae0583a272c592025444"
+    },
+    {
+      "file": "00494.png",
+      "elapsedMs": 24715.9359,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129998,
+      "sha256": "e381e8de50941ed05ef3ec82161c5834c779dfca54c596b86e6ad18d49f1698e"
+    },
+    {
+      "file": "00495.png",
+      "elapsedMs": 24765.6736,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 129980,
+      "sha256": "f9dd87d241d44ca010f8a727bb5b78aa68908ee2b96558a9b9ab38871e93a196"
+    },
+    {
+      "file": "00496.png",
+      "elapsedMs": 24816.4392,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130145,
+      "sha256": "67d4aceec8831b7dfc1e44e4f398ebbc6c2e1974fa24d9d44b6a19dd2f04007a"
+    },
+    {
+      "file": "00497.png",
+      "elapsedMs": 24866.6372,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130149,
+      "sha256": "c1e5c065fdc5423645e2819f78c4a3e43fb0ac541e39d0c171f02650968a730c"
+    },
+    {
+      "file": "00498.png",
+      "elapsedMs": 24916.778,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130333,
+      "sha256": "388bbda7bb3dfbb261f7a667531db798ca8ab81aa412b13976b360c032361713"
+    },
+    {
+      "file": "00499.png",
+      "elapsedMs": 24966.8667,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130121,
+      "sha256": "34d5aed3f874bed2dd4bfd9328e0c828858ececfafb3c8cc6034cf943d45e727"
+    },
+    {
+      "file": "00500.png",
+      "elapsedMs": 25017.0738,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130186,
+      "sha256": "abdcf8bf081fb6aea6461883953edc1aecdf60a4e6e2c68d363d6d2bb91ee583"
+    },
+    {
+      "file": "00501.png",
+      "elapsedMs": 25066.8212,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130107,
+      "sha256": "40b8f2d0a57374f17ce74218dd082aba52d887ecaa5947f9c3152a6dd58500ac"
+    },
+    {
+      "file": "00502.png",
+      "elapsedMs": 25117.0797,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130068,
+      "sha256": "7cf29a32536d2afd0650c6a50c216028a778c184a99d429b11f69ac229140c11"
+    },
+    {
+      "file": "00503.png",
+      "elapsedMs": 25167.165,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130111,
+      "sha256": "39b52ccd303a66ec33ec546409d6fa18673f4e214c1d09e53bdf7d5595ac3a73"
+    },
+    {
+      "file": "00504.png",
+      "elapsedMs": 25217.529,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130107,
+      "sha256": "ae15afdf3f8f8140420bb893cfa5039a024438eca591fbef71fc535ead0d3e08"
+    },
+    {
+      "file": "00505.png",
+      "elapsedMs": 25267.4918,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130189,
+      "sha256": "6dd81f9fe745d3825bcb9054646b4d65a645e4cdb154a487ef130650e78fa42f"
+    },
+    {
+      "file": "00506.png",
+      "elapsedMs": 25300.0946,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130103,
+      "sha256": "173bc5f4a49b4a2a7b5ee53a366f8df7ed006d482007242a76f2432cd27a59b8"
+    },
+    {
+      "file": "00507.png",
+      "elapsedMs": 25350.5103,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130319,
+      "sha256": "38518badffb7ad0566d129fc92f5539e610d071a51965fb1ec47ec36e9023dca"
+    },
+    {
+      "file": "00508.png",
+      "elapsedMs": 25400.4879,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130192,
+      "sha256": "e6b4465534a70cb6036d478ede727835f2741242d245b8807a7702175340ec5c"
+    },
+    {
+      "file": "00509.png",
+      "elapsedMs": 25450.7848,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 130167,
+      "sha256": "cac85798b5ee1f083b5e48715d3584b5bdbf9f9b708c19b4824bd936c09b8e2f"
+    },
+    {
+      "file": "00510.png",
+      "elapsedMs": 25504.423,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140267,
+      "sha256": "8762f212ff287a66f97a7c44b7886f8ae52e8af6db2b6b67681f232a0e72a382"
+    },
+    {
+      "file": "00511.png",
+      "elapsedMs": 25559.6025,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140186,
+      "sha256": "f2aa25e5718f57d52cf0a212e956143ed30b0dd516c4ab5f539bb13ae330ed44"
+    },
+    {
+      "file": "00512.png",
+      "elapsedMs": 25609.1121,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140315,
+      "sha256": "29a206ad5e840f484aaf8995c34c015e9901e05673cbbedb1124b0fccde6d509"
+    },
+    {
+      "file": "00513.png",
+      "elapsedMs": 25659.3522,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140294,
+      "sha256": "bb4f8c3ee73a9591715adb68b03188922d53405809606ee9f4410dbfde06ea23"
+    },
+    {
+      "file": "00514.png",
+      "elapsedMs": 25709.8977,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140179,
+      "sha256": "bcb7ab1c8fd13a82eb1c6f273c1bce4baa40f7feef31ec6f6ffe8eee065e6115"
+    },
+    {
+      "file": "00515.png",
+      "elapsedMs": 25761.1578,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140103,
+      "sha256": "a8cb40a2b10923a6d737227e381b02d80d9a8f5ab074f6a73f2fcf35e06f9764"
+    },
+    {
+      "file": "00516.png",
+      "elapsedMs": 25811.2968,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139950,
+      "sha256": "3fd4b7c9835749daf1dd95c42de5adacb95ed1ea3c8814ef5dbac36e2a8ef9a3"
+    },
+    {
+      "file": "00517.png",
+      "elapsedMs": 25850.3925,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140223,
+      "sha256": "e2b60600adba7cc72c22ade0da51d272190018b24ced92c3e139abe30c3834a5"
+    },
+    {
+      "file": "00518.png",
+      "elapsedMs": 25914.5115,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139965,
+      "sha256": "fd9557c0f1f558e5e54eeeb8478c8cad728ba113e5ace8e814b0b7b281c770c4"
+    },
+    {
+      "file": "00519.png",
+      "elapsedMs": 25964.3593,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140045,
+      "sha256": "3c771978ff2d6ed1e8d644473181a937d310f12d6905569bcceb8fab758e9179"
+    },
+    {
+      "file": "00520.png",
+      "elapsedMs": 26014.8198,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140249,
+      "sha256": "c8e32139af910e54576ee9df682e0fc539f41e01901376a159c3e5713d333fce"
+    },
+    {
+      "file": "00521.png",
+      "elapsedMs": 26065.8225,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140248,
+      "sha256": "0683afeb91b513bf0793a0a74daf94bd652ee494980a5a39fcf68594d2f77285"
+    },
+    {
+      "file": "00522.png",
+      "elapsedMs": 26116.0588,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140107,
+      "sha256": "f0a36badd2c5cbd80a8d383433070e8d430ed33b5f733036cd207160434cdb99"
+    },
+    {
+      "file": "00523.png",
+      "elapsedMs": 26166.6082,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140072,
+      "sha256": "62fe0cdd92964fd74800d9e0b7a3e0036e0852d06ed814c0898256e4a16ae4b7"
+    },
+    {
+      "file": "00524.png",
+      "elapsedMs": 26217.6311,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140139,
+      "sha256": "956c6630f877a213bfd38f5a57c1caa57fc93bd74976afb3b835d4ca10dc2d49"
+    },
+    {
+      "file": "00525.png",
+      "elapsedMs": 26266.5577,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140194,
+      "sha256": "47741ecdf2311b8c1af5b91076c422848e4e388665700e9f6b8f2fc6b6e68f1a"
+    },
+    {
+      "file": "00526.png",
+      "elapsedMs": 26301.5898,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140257,
+      "sha256": "65b37ce989383fd369739be2872187b30b8f489b575ff0508b42285c77ff9168"
+    },
+    {
+      "file": "00527.png",
+      "elapsedMs": 26367.1108,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140281,
+      "sha256": "4564ecbca814693c5c0d95511d3e14cbc1de482bf22cf903c128f25cfe2edfe9"
+    },
+    {
+      "file": "00528.png",
+      "elapsedMs": 26417.0669,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140263,
+      "sha256": "acfcccccc468d7bb1a4e4ce62d1ea1f82e24fc37cfbe4ae3e8fdd9633f110263"
+    },
+    {
+      "file": "00529.png",
+      "elapsedMs": 26469.1995,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140209,
+      "sha256": "e08bc8b1be00783e48b4a0ea928c3fe6623bdcbe4bab49041445951d38ff6f0e"
+    },
+    {
+      "file": "00530.png",
+      "elapsedMs": 26500.6832,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139978,
+      "sha256": "044786eb7654cbbd160e4c66a2474f550cd860adaa2c791ba2062b84c1ebb097"
+    },
+    {
+      "file": "00531.png",
+      "elapsedMs": 26551.3729,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140173,
+      "sha256": "13e808835399e14c13d0bac5caf1490de372ff5fd55214b155101c164710043c"
+    },
+    {
+      "file": "00532.png",
+      "elapsedMs": 26601.2436,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140201,
+      "sha256": "1d69f9461508a83ff628394353ebe11a137c7f177b8a439b276da644928bb35f"
+    },
+    {
+      "file": "00533.png",
+      "elapsedMs": 26651.6346,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140226,
+      "sha256": "a28b06aec85def148875a15d3624cee38adeb0b6e8fc4a640ee1eab75f18f309"
+    },
+    {
+      "file": "00534.png",
+      "elapsedMs": 26701.4004,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140383,
+      "sha256": "5444fa0ebdfd1b05ab534cdbb6ac74ac9dbe2560991a34b6a1f9b221d2204ef4"
+    },
+    {
+      "file": "00535.png",
+      "elapsedMs": 26754.6194,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140487,
+      "sha256": "93bac9b2fb35ef04a9681da0cd97b77d5b4b6eeab502724a6ea58bcc4378fcc8"
+    },
+    {
+      "file": "00536.png",
+      "elapsedMs": 26801.2304,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140631,
+      "sha256": "02270d2e2d130d6a3e11bcc9ab38c36894a6de932c3fbf2cfc23ae234f42727c"
+    },
+    {
+      "file": "00537.png",
+      "elapsedMs": 26851.6296,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140612,
+      "sha256": "9d22c5bf104e71722da59672b4b9778a6137ad43c3d816605eb43b46992ac41a"
+    },
+    {
+      "file": "00538.png",
+      "elapsedMs": 26902.9048,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140640,
+      "sha256": "f18840dd891e8cc10d9c2aeadfca537c22c0ff9699ccf7daf644585136b88012"
+    },
+    {
+      "file": "00539.png",
+      "elapsedMs": 26953.044,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140577,
+      "sha256": "4fabaa5b28104310a551b35fdced402e1d8cb08dfc67840d7ac8d764bfb25e0e"
+    },
+    {
+      "file": "00540.png",
+      "elapsedMs": 27003.2052,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140536,
+      "sha256": "d8f55d31176fd9df7700948e81cd6c11359b9d7d34b88bac484a30d8b080780b"
+    },
+    {
+      "file": "00541.png",
+      "elapsedMs": 27053.822,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140558,
+      "sha256": "f56498305a6503fb974f55bccd2d32791080e763b773cce40b3d0dee02da288f"
+    },
+    {
+      "file": "00542.png",
+      "elapsedMs": 27103.7201,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140439,
+      "sha256": "d8e85094f7ef71d3fbce96710df52be5c0aec6f21c60a411f6e65419a72292cd"
+    },
+    {
+      "file": "00543.png",
+      "elapsedMs": 27151.1991,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140542,
+      "sha256": "d921000689184df1f042f405d31e01d4a36bb21fbddd9f873b8cf9bc71075c1d"
+    },
+    {
+      "file": "00544.png",
+      "elapsedMs": 27215.0725,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140347,
+      "sha256": "4e4ad33ebc8323802eed3be7fe5d7cf708341e9e0af0cb1e3f6529e5b795ec47"
+    },
+    {
+      "file": "00545.png",
+      "elapsedMs": 27265.2124,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140463,
+      "sha256": "ffc7151ae755dd7f55b5ad46203d4643be70ad5e1bbb728d141504819fc4f223"
+    },
+    {
+      "file": "00546.png",
+      "elapsedMs": 27316.2056,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140310,
+      "sha256": "45bc3881c23be360153e1e3bfee670785336a7defc56b44adbba9ce0ae39ea10"
+    },
+    {
+      "file": "00547.png",
+      "elapsedMs": 27365.232,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140400,
+      "sha256": "dd31a0e43cbe13baeac04b35354e02d9607e2f87bd3109f1b51a08bc7025ce30"
+    },
+    {
+      "file": "00548.png",
+      "elapsedMs": 27415.6285,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140568,
+      "sha256": "a54b904b2719ff799ae8ecc2fcda9c3cc04931a22547c05509cceb4f2f2ef976"
+    },
+    {
+      "file": "00549.png",
+      "elapsedMs": 27465.437,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140563,
+      "sha256": "6ed0ca081c27a2fb4998c61d9eaa12f32ddd38b151c4f255b93bd78bfe687a36"
+    },
+    {
+      "file": "00550.png",
+      "elapsedMs": 27515.9688,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140425,
+      "sha256": "795916242e743a29499e42f38e109cd4317df5c160629d96b7c9052bd95aa525"
+    },
+    {
+      "file": "00551.png",
+      "elapsedMs": 27572.4155,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140377,
+      "sha256": "50de60f71dfdb1aa8fdfe40551e21935b90b1b5f2a3d285a954a3835fb9fc6ed"
+    },
+    {
+      "file": "00552.png",
+      "elapsedMs": 27604.5088,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140279,
+      "sha256": "09ad119a3c8de0bdec19096f99045555ed102ec769eeb94593c690e8a71ccf5f"
+    },
+    {
+      "file": "00553.png",
+      "elapsedMs": 27654.4345,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140282,
+      "sha256": "f096aa74354b7bdcf288340d349887fe73a9f4ebec502e53a47c33de213868fb"
+    },
+    {
+      "file": "00554.png",
+      "elapsedMs": 27705.7861,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140283,
+      "sha256": "5f043fa95c8a31cc8428be9aaf2fdb04a626b2e2c0e868e7af600ed723796e20"
+    },
+    {
+      "file": "00555.png",
+      "elapsedMs": 27755.6767,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140242,
+      "sha256": "0bda826a030d565cd77e107f79fb3d3a9cf70382266f18fefbba8b0777f57000"
+    },
+    {
+      "file": "00556.png",
+      "elapsedMs": 27805.9004,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140377,
+      "sha256": "6f43e3b7f5913325f76b26733d20dad10973e8bfc7ff9f7f853fa709bc66cf38"
+    },
+    {
+      "file": "00557.png",
+      "elapsedMs": 27855.6687,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140236,
+      "sha256": "044d1faf386e7cdeac0434ff7679b85cbe5d3ff1ca1397f712474c0d2d3de9e9"
+    },
+    {
+      "file": "00558.png",
+      "elapsedMs": 27906.5966,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140166,
+      "sha256": "f7ef1bb590fcbeae10cb835cad3cbd144b6ed3dc0715082a13a4750508c84316"
+    },
+    {
+      "file": "00559.png",
+      "elapsedMs": 27956.832,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140291,
+      "sha256": "7a00cf64afbcb50d99516e60c83c738e032d0750279dc27487ecff60470a9cf9"
+    },
+    {
+      "file": "00560.png",
+      "elapsedMs": 28007.7565,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140270,
+      "sha256": "d99e9999f1ed5f3e29ee298aac4f1f375d23699b4d26efad7f7915010490aec2"
+    },
+    {
+      "file": "00561.png",
+      "elapsedMs": 28057.0752,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139898,
+      "sha256": "3aaea1298a3aaf9eab0b8f98cd36520467a60ec5cde6d5fec2f27dad2a32454d"
+    },
+    {
+      "file": "00562.png",
+      "elapsedMs": 28107.0089,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139927,
+      "sha256": "2efd572e8c30563d289f39c2fa7b8b042f284f90c7eeaccc4e6717cf7e8f6a3b"
+    },
+    {
+      "file": "00563.png",
+      "elapsedMs": 28157.758,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140030,
+      "sha256": "9b436b5d2e7c255eb1d8e72e5ae093a36af6da1fa83dcbde37d61f9db08e74a0"
+    },
+    {
+      "file": "00564.png",
+      "elapsedMs": 28207.6762,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139927,
+      "sha256": "d972ccce32e5a0732fa8eb248bc4c111be57d07bf2318cbafec815ab211efc09"
+    },
+    {
+      "file": "00565.png",
+      "elapsedMs": 28264.3317,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140056,
+      "sha256": "ee9889b594991210ea28f460221512b8387bb34eaa76d1a5a776c4af5200c911"
+    },
+    {
+      "file": "00566.png",
+      "elapsedMs": 28314.358,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140360,
+      "sha256": "c055e8343df45ba2518309736d51fc0940948fea871c2162f48b62770d1a25f3"
+    },
+    {
+      "file": "00567.png",
+      "elapsedMs": 28365.0817,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140290,
+      "sha256": "7708cfb0bff993c31f655359d5e831a99c663052aceed453d439a30e9f157068"
+    },
+    {
+      "file": "00568.png",
+      "elapsedMs": 28419.2571,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140257,
+      "sha256": "8dcd6be2ef27f70d3d47af5b9ac4a8cbb8d3798c59441c5f6342e69aed836026"
+    },
+    {
+      "file": "00569.png",
+      "elapsedMs": 28452.8109,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140349,
+      "sha256": "1202df863ba273c2aa45351a6001d26d454051f42a1f96b96de4ce4e90452459"
+    },
+    {
+      "file": "00570.png",
+      "elapsedMs": 28503.3499,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140207,
+      "sha256": "a38a32dabad0ed7a8c0d1c5a68882fd0ae65a5eb8125a82ffad9f55710640b26"
+    },
+    {
+      "file": "00571.png",
+      "elapsedMs": 28553.0998,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140333,
+      "sha256": "099c37a758ea6347a99a36f6bce3bce63fb554e8b30d3ad8b4d767f5e2a51892"
+    },
+    {
+      "file": "00572.png",
+      "elapsedMs": 28603.9764,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140302,
+      "sha256": "7e2f3c02312e039a33567d487f3a7c9714978c234da1cdebc791a0061b4f03e1"
+    },
+    {
+      "file": "00573.png",
+      "elapsedMs": 28653.1594,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140150,
+      "sha256": "4ba9ad5a4af82d8bcc4ee2fa4f8f70e2a0ae11a559b16c46df8edef64bdad769"
+    },
+    {
+      "file": "00574.png",
+      "elapsedMs": 28703.7306,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140359,
+      "sha256": "85b394e510d309d1b757e5f24eeb14e173976616aeb3df38a1014a35b1714d68"
+    },
+    {
+      "file": "00575.png",
+      "elapsedMs": 28753.5328,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140438,
+      "sha256": "6f256d19523cf704d9cad76cf5967ea9b8b7d6a4785ce4cde3e1cb5cff523285"
+    },
+    {
+      "file": "00576.png",
+      "elapsedMs": 28803.7485,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140468,
+      "sha256": "5acf8112d8d6b07ad847f297ac81d32abe5a9f3de2b7337dcf7f0419b4505021"
+    },
+    {
+      "file": "00577.png",
+      "elapsedMs": 28853.7044,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140593,
+      "sha256": "452b98e25805201b55c57902bc32ee3a197c362767684c68fc3751638318e3f8"
+    },
+    {
+      "file": "00578.png",
+      "elapsedMs": 28903.5221,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140401,
+      "sha256": "bc07ceff1b68a2026f248ffc461dbcea6fb75e0c2919891d3439c47818996480"
+    },
+    {
+      "file": "00579.png",
+      "elapsedMs": 28953.7763,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 140236,
+      "sha256": "056738b14237ea89ec0fcce607e8c185cfcb6e3a871af9259ef0ae974808c603"
+    },
+    {
+      "file": "00580.png",
+      "elapsedMs": 29003.7236,
+      "screen": "BattlePresentationEditorScreen",
+      "bytes": 139983,
+      "sha256": "c4734186227d1dc75f4b781edbf10779d6912f9154e7d08ccdd280ef3a5c7a52"
+    }
+  ]
+}

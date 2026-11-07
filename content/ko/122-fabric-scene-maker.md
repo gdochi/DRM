@@ -24,6 +24,39 @@ Scene Maker는 카메라 이동과 화면 효과를 배치하는 제작 도구�
 5. **World positions**에서 카메라 위치와 이동 경로를 배치합니다.
 6. **Play**로 미리 보고 **Save As**로 자신의 씬을 저장합니다. **Run Saved**는 저장된 내용을 재생하므로 수정 후에는 다시 저장하세요.
 
+## 세 영상으로 첫 씬 완성하기
+
+아래 영상은 **DRM 0.3.1 / NeoForge 1.21.1**의 실제 편집 화면을 사용하며 한 씬을 순서대로 이어 만듭니다. 영문 UI에 영문 설명 자막과 클릭 표시를 덧붙인 무음 영상입니다. 예제 월드의 문·가로등은 카메라 이동을 구분하기 위해 미리 준비했습니다.
+
+### 1. 씬 길이와 자막
+
+![10초 씬의 기본 설정을 정하고 1~5초에 표시할 자막을 입력·반영합니다.](assets/media/guides/tutorial-videos-20261107/scene-settings-subtitle.mp4 "Scene Settings → + Subtitle → Edit Subtitle → Apply Fields. 시간 입력은 초 단위입니다.")
+
+1. **Scene Settings**에서 ID를 **tutorial_gate**, Name을 **Village gate**, Duration을 기본값인 **10**으로 두고 **Apply Fields**를 누릅니다. 영상은 **Player** 기준점을 유지합니다. 같은 씬을 다른 장소에서 재생하면 플레이어 기준으로 이동합니다. 씬 길이를 줄이려면 기존 카메라·효과 카드의 끝 시각도 새 길이 안으로 맞춰야 합니다.
+2. **+ Subtitle**을 눌러 자막 카드를 만들고 Start를 **1**, End를 **5**로 입력한 뒤 **Apply Fields**를 누릅니다. 10초 씬 중 1~5초에 자막이 보입니다.
+3. **Edit Subtitle**에서 **Welcome to the village!**를 입력하고 그 창의 **Apply Fields**로 돌아옵니다. 텍스트 창의 Cancel은 입력한 변경을 버립니다.
+4. 빨간 재생 핀을 **3초** 지점으로 옮겨 자막을 확인합니다. 카드 선택은 편집 대상 선택이며 재생 위치 이동과 다릅니다. 기본 opening/closing 페이드가 있는 0초는 검게 보일 수 있습니다.
+
+### 2. 월드에서 카메라 경로 만들기
+
+![카메라 카드를 선택하고 월드 위치 창에서 작업 카메라를 이동해 지점을 기록한 뒤 Apply하고 재생합니다.](assets/media/guides/tutorial-videos-20261107/scene-world-camera-path.mp4 "카메라 선택 → World positions → WASD/Space → P/N → Enter로 Apply → Play. 실제 월드 위치 편집 과정입니다.")
+
+1. 타임라인의 **Camera 카드 본문**을 누르고 **World positions**를 엽니다. 자막이나 효과 카드를 선택한 상태에서는 카메라 위치를 편집할 수 없습니다.
+2. 마우스 휠을 내려 이동 속도를 낮춘 뒤 **WASD / Space / Shift**로 작업 카메라를 움직입니다. **P**는 현재 재생 시점에 위치를 기록합니다. 카메라만 이동하고 P를 누르지 않으면 경로 지점으로 저장되지 않습니다.
+3. 다른 곳으로 이동한 뒤 **N**으로 다음 시점의 지점을 추가합니다. 기존 지점을 바꾸는 P와 다음 지점을 추가하는 N을 구분하세요. 지점 사이 이동 시간은 타임라인의 시각으로 정합니다.
+4. **Enter 또는 Apply**로 배치를 편집 중인 씬에 반영합니다. Cancel로 나가면 이 창의 변경은 반영되지 않습니다.
+5. **Stop → Play**로 처음부터 카메라와 자막을 함께 확인합니다. 경로를 수정했다면 월드 위치 창의 Apply와 씬 파일 저장을 모두 마쳐야 나중에 재생할 수 있습니다.
+
+### 3. 화면 효과·파일 저장·실제 실행
+
+![Letterbox의 시간 구간을 정하고 씬을 저장한 뒤 Run Saved로 서버 재생과 종료를 확인합니다.](assets/media/guides/tutorial-videos-20261107/scene-effects-save-run.mp4 "+ Letterbox → Apply Fields → Save As → Run Saved. 마지막은 편집기 미리보기가 아닌 저장한 씬의 실제 재생입니다.")
+
+1. **+ Letterbox**로 상하 검은 띠를 추가하고 Start **0**, End **10**을 입력한 뒤 **Apply Fields**를 누릅니다. 화면 효과도 별도 카드와 활성 구간을 가집니다.
+2. **Save As**에서 **tutorial_gate**로 저장합니다. 파일은 **config/dochi_rpg_maker/scene/tutorial_gate.json**에 생성됩니다. 월드 위치 창의 Apply나 편집기의 Apply Fields는 파일 저장을 대신하지 않습니다.
+3. **Run Saved**를 눌러 저장된 파일을 서버에서 재생합니다. 저장 후 값을 바꿨다면 다시 저장해야 그 변경이 반영됩니다.
+4. 명령어로 다시 재생할 때는 **/drm scene tutorial_gate.json**을 사용합니다. 플레이어들에게 재생하려면 아래 명령어 절의 대상 지정 방법을 따르세요.
+5. 자막이 사라지고 카메라가 원래 플레이로 돌아오는 것까지 확인합니다. 영상의 재생 결과는 촬영한 단독 테스트 월드에서 확인한 범위입니다.
+
 ## 타임라인 보기
 
 빨간 핀은 재생 위치입니다. 직접 잡아 끌 때 재생 위치가 바뀌며, 카드를 선택하는 것만으로는 움직이지 않습니다. 위 화면의 **Camera** 행은 카메라, **Effects** 행의 **opening / closing**은 시작과 끝 효과입니다. 아래 가로 스크롤바는 보고 있는 시간 구간만 옮깁니다. 긴 씬은 이 스크롤바로 살펴보고, −/＋로 배율을 조절하세요. 반복 미리보기는 Loop 스위치로 켭니다.

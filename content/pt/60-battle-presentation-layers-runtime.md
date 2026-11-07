@@ -27,6 +27,25 @@ Em Battle Presentation Maker siga **Element → Add Label → Content**. A etiqu
 
 ![Propriedades de animação para esse rótulo.](assets/media/guides/cobble-029-neo1211/cobble-layer-animation.png "Start/End Tick é o intervalo visível; Start/Final X são posições de partida e chegada. Este exemplo corre 0–144 carrapatos, se move X 280→360 enquanto mantém Y 220, e cresce de 0.8 para 1. Verifique se o mesmo elemento está selecionado na linha do tempo.")
 
+## Ajustar entrada, movimento e saída em vídeo
+
+Continue o **RIVAL CHALLENGE** do [primeiro Label](#drm-cobblemon-editor/cobblemon-battle-presentation). Na reprodução normal, **20 ticks = 1 segundo**. Os campos de tempo do Scene Maker usam segundos.
+
+![Definir intervalo, fades e posições do Label e comparar reprodução com a régua.](assets/media/guides/tutorial-videos-20261107/battle-animation-timing.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. Animation → Restart → momentos antes e durante o intervalo. Interface e anotações em inglês; sem áudio.")
+
+| Valor no vídeo | Significado |
+| --- | --- |
+| Start **20**, End **120** | Ativo de 1 a 6 segundos após o início |
+| Fade In **12**, Fade Out **12** | Transição de 0,6 segundo em cada ponta do intervalo |
+| Start X **−300**, Final X **320** | Move da borda esquerda externa até a posição final |
+| Start Y / Final Y **70** | Mantém a altura no movimento horizontal |
+
+1. Selecione o Label e abra **Animation**. Um ator selecionado apresenta outros campos.
+2. Digite os valores da tabela. A posição é interpolada durante o intervalo; Fade multiplica a opacidade resultante.
+3. Alterne **Layout → Animation** para confirmar e use **Restart**. A Duration padrão é **144 ticks / 7,2 segundos**, incluindo o trecho após a saída do Label.
+4. Confira o **tick 10**, ainda inativo, e o **tick 75**, durante o movimento. Salve após editar.
+5. Ajuste o intervalo e Easing para mudar a velocidade. Layer/Z define sobreposição; Start/End define tempo. Diferencie texto encoberto de texto que ainda não começou.
+
 ## Tipos de elementos
 
 | Tipo | Renderização | Campos importantes |

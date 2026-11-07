@@ -25,6 +25,16 @@ Battle Presentation Maker의 **Region**은 선택한 월드 블록 상태를 연
 
 ![실제 월드의 바닥과 기둥을 캡처하고 저장한 Region 미리보기.](assets/media/guides/cobble-029-neo1211-flow/cobble-region-captured.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. 31블록·두 가지 블록 상태를 캡처한 뒤 Save As로 custom/guide_stage.json 파일이 실제 생성된 것을 확인했습니다. 오른쪽 Saved와 아래쪽 저장 메시지가 그 결과입니다.")
 
+## 영상으로 블록 무대와 입자 추가하기
+
+![두 모서리를 입력하고 월드 블록을 캡처한 뒤 입자 레이어를 추가·재생하고 사용자 파일로 저장합니다.](assets/media/guides/tutorial-videos-20261107/battle-region-particles.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. 촬영용 월드에 미리 만든 바닥·기둥을 실제 Region으로 캡처했습니다. 영문 UI·설명 자막, 무음.")
+
+1. 월드에서 작은 구조물부터 준비합니다. 영상의 두 모서리 **(4, −61, 4)**와 **(8, −58, 8)**은 촬영 월드의 예시이므로 자신의 구조물 좌표로 바꿉니다.
+2. **Region → Capture region**을 누르고 블록 모양이 캔버스에 나타나는지 확인합니다. 좌표 입력만으로 캡처되지는 않습니다. 보이지 않으면 청크 로드·범위·공기만 있는 영역인지 확인하세요. Region 미리보기에서는 보이지만 전체 재생에서 가려지면 프리셋의 불투명 배경·Color 레이어도 확인합니다.
+3. **Particles → Add layer → Emit**으로 입자를 하나 추가합니다. 영상은 새 항목의 기본 입자를 사용합니다. 먼저 기본값으로 재생한 뒤 발생 구간·Interval·Samples를 한 번에 하나씩 바꾸어 차이를 비교하세요.
+4. **Motion**은 입자의 움직임, **Path**는 이동 경로, **Cues**는 시점에 맞춘 효과를 다룹니다. 처음에는 Emit 한 항목을 확인한 뒤 확장하세요. 영상은 이 세 페이지의 상세 편집까지 보여 주는 자료는 아닙니다.
+5. **Play**로 블록 무대·모델·입자를 함께 확인하고 **Save As → custom/tutorial_stage.json → Save**로 저장합니다. 캡처와 입자 추가는 편집 중인 상태이며 파일 저장이 별도로 필요합니다.
+
 ## 캡처 제한
 
 | 항목 | 현재 한도 / 처리 |

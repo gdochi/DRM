@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "completedAt": "2026-11-07T10:47:53.228Z",
+  "routes": [
+    {
+      "route": "#changelog/dochi-real-armor/Forge/1.20.1/0.1.5",
+      "passed": true,
+      "entries": 7,
+      "legacy014": true
+    },
+    {
+      "route": "#changelog/dochi-real-armor/Fabric/1.21.1/0.1.5",
+      "passed": true,
+      "entries": 7,
+      "legacy014": true
+    },
+    {
+      "route": "#changelog/dochi-real-armor/NeoForge/1.21.1/0.1.5",
+      "passed": true,
+      "entries": 7,
+      "legacy014": true
+    },
+    {
+      "route": "#changelog/dochi-real-armor/Fabric/26.3/0.1.5",
+      "passed": true,
+      "entries": 6,
+      "legacy014": true
+    },
+    {
+      "route": "#changelog/dochi-real-armor/NeoForge/26.3/0.1.5",
+      "passed": true,
+      "entries": 6,
+      "legacy014": true
+    }
+  ],
+  "locales": [
+    "ko",
+    "en",
+    "pt",
+    "es",
+    "fr",
+    "ru",
+    "zh",
+    "ja"
+  ],
+  "errors": []
+}

@@ -1,0 +1,150 @@
+[
+  {
+    "action": "caption:1. Start with the Trainer example. Add one Label.",
+    "nanoTime": 42606553298300
+  },
+  {
+    "action": "click:Add Label",
+    "nanoTime": 42609850105300
+  },
+  {
+    "action": "click:Content",
+    "nanoTime": 42612044365800
+  },
+  {
+    "action": "caption:Content changes the words. Font Size changes the letters.",
+    "nanoTime": 42612647653900
+  },
+  {
+    "action": "input:textField\u003dRIVAL CHALLENGE",
+    "nanoTime": 42613243629200
+  },
+  {
+    "action": "input:fontSizeField\u003d30",
+    "nanoTime": 42615447349100
+  },
+  {
+    "action": "click:Layout",
+    "nanoTime": 42617660368400
+  },
+  {
+    "action": "caption:Layout sets the final position, box size and front/back order.",
+    "nanoTime": 42618252002100
+  },
+  {
+    "action": "input:xField\u003d320",
+    "nanoTime": 42618847054400
+  },
+  {
+    "action": "input:yField\u003d70",
+    "nanoTime": 42619454242900
+  },
+  {
+    "action": "input:wField\u003d360",
+    "nanoTime": 42620049476400
+  },
+  {
+    "action": "input:hField\u003d70",
+    "nanoTime": 42620656934500
+  },
+  {
+    "action": "input:zField\u003d60",
+    "nanoTime": 42621242847000
+  },
+  {
+    "action": "caption:The first frame can be invisible during Fade In. Scrub forward.",
+    "nanoTime": 42623700978900
+  },
+  {
+    "action": "scrub-battle:60",
+    "nanoTime": 42624295056700
+  },
+  {
+    "action": "caption:4. Region copies a loaded building into the presentation.",
+    "nanoTime": 42629698731300
+  },
+  {
+    "action": "click:Region",
+    "nanoTime": 42630907535000
+  },
+  {
+    "action": "input:regionCorner0\u003d4",
+    "nanoTime": 42633096599400
+  },
+  {
+    "action": "input:regionCorner1\u003d-61",
+    "nanoTime": 42633698562800
+  },
+  {
+    "action": "input:regionCorner2\u003d4",
+    "nanoTime": 42634300765800
+  },
+  {
+    "action": "input:regionCorner3\u003d8",
+    "nanoTime": 42634904788200
+  },
+  {
+    "action": "input:regionCorner4\u003d-58",
+    "nanoTime": 42635492803600
+  },
+  {
+    "action": "input:regionCorner5\u003d8",
+    "nanoTime": 42636096472900
+  },
+  {
+    "action": "caption:Capture region stores the block shape. The world is unchanged.",
+    "nanoTime": 42638298932900
+  },
+  {
+    "action": "click:Capture region",
+    "nanoTime": 42638900239000
+  },
+  {
+    "action": "caption:Particles -\u003e Add layer -\u003e Emit defines one particle layer.",
+    "nanoTime": 42642102174900
+  },
+  {
+    "action": "click:Particles",
+    "nanoTime": 42642706921100
+  },
+  {
+    "action": "click:Add layer",
+    "nanoTime": 42643293767500
+  },
+  {
+    "action": "click:Emit",
+    "nanoTime": 42643907486200
+  },
+  {
+    "action": "dump:battle-particle-fields",
+    "nanoTime": 42646845374600
+  },
+  {
+    "action": "caption:Play checks the Stage, models and particle timing together.",
+    "nanoTime": 42647452771400
+  },
+  {
+    "action": "click:Play",
+    "nanoTime": 42648046004300
+  },
+  {
+    "action": "caption:Capture is an editing step. Save the presentation to keep it.",
+    "nanoTime": 42654502658700
+  },
+  {
+    "action": "click:Save As",
+    "nanoTime": 42655105911800
+  },
+  {
+    "action": "input:saveNameField\u003dcustom/tutorial_stage.json",
+    "nanoTime": 42655707863800
+  },
+  {
+    "action": "click:Save",
+    "nanoTime": 42656294163900
+  },
+  {
+    "action": "off",
+    "nanoTime": 42662804307000
+  }
+]

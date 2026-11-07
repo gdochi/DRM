@@ -24,6 +24,39 @@ Scene Maker is a creator tool for arranging camera movement and screen effects. 
 5. Open **World positions** to place and adjust camera points.
 6. Use **Play** to preview, then save your own scene with **Save As**. **Run Saved** plays the saved version, so save again after making changes.
 
+## Complete one scene in three videos
+
+These sequential videos show real **DRM 0.3.1 / NeoForge 1.21.1** screens, with English tutorial captions and click markers. They are silent. The gate and lamps were prepared in the test world to make camera movement visible.
+
+### 1. Scene length and subtitle
+
+![Configure a ten-second scene and edit a subtitle visible from one to five seconds.](assets/media/guides/tutorial-videos-20261107/scene-settings-subtitle.mp4 "Scene Settings → + Subtitle → Edit Subtitle → Apply Fields. Time fields use seconds.")
+
+1. In **Scene Settings**, enter ID **tutorial_gate**, Name **Village gate**, and keep Duration **10**. Use **Apply Fields**. The video keeps the **Player** anchor, so playback is relative to the player. To shorten a scene, first bring existing camera/effect end times inside the new duration.
+2. Choose **+ Subtitle**, enter Start **1** and End **5**, then **Apply Fields**. The subtitle is active during seconds 1–5 of the ten-second scene.
+3. Open **Edit Subtitle**, enter **Welcome to the village!**, and use that window's **Apply Fields** to return. Cancel discards its text changes.
+4. Move the red playhead to **3 seconds** to inspect the text. Selecting a card selects an editing target; it does not seek. The default opening/closing fades can make time zero black.
+
+### 2. Build the camera path in the world
+
+![Select the camera, move the work camera in World positions, mark points, apply, and preview.](assets/media/guides/tutorial-videos-20261107/scene-world-camera-path.mp4 "Camera card → World positions → WASD/Space → P/N → Enter to Apply → Play. Real world-position editing.")
+
+1. Click the **body of the Camera card**, then **World positions**. A subtitle or effect card is not a camera selection.
+2. Scroll the mouse wheel down to reduce speed, then move the work camera with **WASD / Space / Shift**. **P** records its position at the current time. Moving the camera alone does not record a path point.
+3. Move elsewhere and use **N** to add the next point. P records the current time; N adds a point at a later time. Timeline times determine travel duration.
+4. Use **Enter or Apply** to return the edited positions to the scene draft. Cancel discards changes made in this window.
+5. Use **Stop → Play** to inspect camera and subtitle together. Keep both the position window's Apply and the scene file save in your workflow.
+
+### 3. Effects, saving and real playback
+
+![Set Letterbox timing, save the scene, and use Run Saved to verify server playback and completion.](assets/media/guides/tutorial-videos-20261107/scene-effects-save-run.mp4 "+ Letterbox → Apply Fields → Save As → Run Saved. The final playback uses the saved file rather than the editor preview.")
+
+1. Choose **+ Letterbox**, enter Start **0**, End **10**, then **Apply Fields**. Effects have their own cards and active intervals.
+2. Use **Save As** with **tutorial_gate**. The file is **config/dochi_rpg_maker/scene/tutorial_gate.json**. Neither position Apply nor Apply Fields saves the file.
+3. Use **Run Saved** to play the saved file through the server. Save again after further edits.
+4. To replay with a command, use **/drm scene tutorial_gate.json**. See the command section below for player selectors.
+5. Check subtitle removal and the return to normal gameplay. The recorded runtime result was verified in the isolated single-player test world.
+
 ## Move through the timeline
 
 The red pin is the playback position. Drag it deliberately to seek. Selecting a card does not seek. The bottom horizontal scrollbar moves the visible time range independently; use the minus/plus controls to adjust zoom. Use the Loop switch when you want repeated preview playback.

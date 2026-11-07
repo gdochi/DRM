@@ -1,0 +1,218 @@
+[
+  {
+    "action": "scrub-battle:60",
+    "nanoTime": 43656215335900
+  },
+  {
+    "action": "caption:1. Start with the Trainer example. Add one Label.",
+    "nanoTime": 43656800302300
+  },
+  {
+    "action": "click:Add Label",
+    "nanoTime": 43660107188700
+  },
+  {
+    "action": "click:Content",
+    "nanoTime": 43662299653100
+  },
+  {
+    "action": "caption:Content changes the words. Font Size changes the letters.",
+    "nanoTime": 43662898142700
+  },
+  {
+    "action": "input:textField\u003dRIVAL CHALLENGE",
+    "nanoTime": 43663502932800
+  },
+  {
+    "action": "input:fontSizeField\u003d30",
+    "nanoTime": 43665705874800
+  },
+  {
+    "action": "click:Layout",
+    "nanoTime": 43667909233600
+  },
+  {
+    "action": "caption:Layout sets the final position, box size and front/back order.",
+    "nanoTime": 43668512529500
+  },
+  {
+    "action": "input:xField\u003d320",
+    "nanoTime": 43669114029000
+  },
+  {
+    "action": "input:yField\u003d70",
+    "nanoTime": 43669699571400
+  },
+  {
+    "action": "input:wField\u003d360",
+    "nanoTime": 43670302564000
+  },
+  {
+    "action": "input:hField\u003d70",
+    "nanoTime": 43670904797300
+  },
+  {
+    "action": "input:zField\u003d60",
+    "nanoTime": 43671503467100
+  },
+  {
+    "action": "caption:Switch tabs to keep the typed values before scrubbing or playback.",
+    "nanoTime": 43673961119900
+  },
+  {
+    "action": "click:Content",
+    "nanoTime": 43674561037800
+  },
+  {
+    "action": "click:Layout",
+    "nanoTime": 43675162435000
+  },
+  {
+    "action": "caption:The first frame can be invisible during Fade In. Scrub forward.",
+    "nanoTime": 43677352102500
+  },
+  {
+    "action": "scrub-battle:60",
+    "nanoTime": 43677953159500
+  },
+  {
+    "action": "dump:battle-label-result",
+    "nanoTime": 43681155266200
+  },
+  {
+    "action": "caption:2. Animation controls WHEN the selected Label is visible.",
+    "nanoTime": 43682363307600
+  },
+  {
+    "action": "click:Animation",
+    "nanoTime": 43683556539100
+  },
+  {
+    "action": "input:startField\u003d20",
+    "nanoTime": 43685752065000
+  },
+  {
+    "action": "input:endField\u003d120",
+    "nanoTime": 43686359888100
+  },
+  {
+    "action": "input:fadeInField\u003d12",
+    "nanoTime": 43686964976700
+  },
+  {
+    "action": "input:fadeOutField\u003d12",
+    "nanoTime": 43687548585500
+  },
+  {
+    "action": "caption:Start X is outside the Stage. Final X is the arrival position.",
+    "nanoTime": 43690001498800
+  },
+  {
+    "action": "input:fromXField\u003d-300",
+    "nanoTime": 43690606065600
+  },
+  {
+    "action": "input:fromYField\u003d70",
+    "nanoTime": 43691199959800
+  },
+  {
+    "action": "input:toXField\u003d320",
+    "nanoTime": 43691803197200
+  },
+  {
+    "action": "input:toYField\u003d70",
+    "nanoTime": 43692409179900
+  },
+  {
+    "action": "caption:Switch tabs to keep the values, then Restart from the beginning.",
+    "nanoTime": 43694859312000
+  },
+  {
+    "action": "click:Layout",
+    "nanoTime": 43695460289700
+  },
+  {
+    "action": "click:Animation",
+    "nanoTime": 43696061304800
+  },
+  {
+    "action": "click:Restart",
+    "nanoTime": 43696648233700
+  },
+  {
+    "action": "caption:Scrub before the start: hidden. Scrub inside the interval: visible.",
+    "nanoTime": 43705346609000
+  },
+  {
+    "action": "scrub-battle:10",
+    "nanoTime": 43705948828200
+  },
+  {
+    "action": "scrub-battle:75",
+    "nanoTime": 43708412990700
+  },
+  {
+    "action": "dump:battle-animation-result",
+    "nanoTime": 43711356246600
+  },
+  {
+    "action": "caption:3. Actors are models. Select Player or Opponent before editing.",
+    "nanoTime": 43712548573200
+  },
+  {
+    "action": "click:Actors",
+    "nanoTime": 43713751920400
+  },
+  {
+    "action": "dump:battle-actors-before",
+    "nanoTime": 43716208562900
+  },
+  {
+    "action": "input:actorScaleField\u003d60",
+    "nanoTime": 43716810741800
+  },
+  {
+    "action": "input:actorYawField\u003d-25",
+    "nanoTime": 43718996978900
+  },
+  {
+    "action": "caption:Audio has separate Intro and Battle cues.",
+    "nanoTime": 43721210638900
+  },
+  {
+    "action": "click:Audio",
+    "nanoTime": 43721812494000
+  },
+  {
+    "action": "input:introSoundField\u003dminecraft:ui.toast.challenge_complete",
+    "nanoTime": 43724258188200
+  },
+  {
+    "action": "input:introStartField\u003d20",
+    "nanoTime": 43724861842800
+  },
+  {
+    "action": "caption:Save As creates your own file. Keep the supplied presets as templates.",
+    "nanoTime": 43727297487700
+  },
+  {
+    "action": "click:Save As",
+    "nanoTime": 43727899283900
+  },
+  {
+    "action": "input:saveNameField\u003dcustom/tutorial_rival.json",
+    "nanoTime": 43730109006800
+  },
+  {
+    "action": "click:Save",
+    "nanoTime": 43730710675900
+  },
+  {
+    "action": "dump:battle-saved-result",
+    "nanoTime": 43735013222500
+  },
+  {
+    "action": "off",
+    "nanoTime": 43738047700100
+  }
+]

@@ -1,0 +1,492 @@
+{
+  "screen": "net.dochi.gameeditor.client.SceneMakerScreen",
+  "scale": 0.5,
+  "widgets": [
+    {
+      "class": "Control",
+      "label": "",
+      "x": 16,
+      "y": 16,
+      "width": 20,
+      "active": false
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 42,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 68,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 94,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 120,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 146,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 172,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 198,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 228,
+      "y": 16,
+      "width": 64,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 298,
+      "y": 16,
+      "width": 64,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 368,
+      "y": 16,
+      "width": 98,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 472,
+      "y": 16,
+      "width": 80,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 558,
+      "y": 16,
+      "width": 80,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 36,
+      "y": 112,
+      "width": 140,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 36,
+      "y": 138,
+      "width": 140,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 36,
+      "y": 162,
+      "width": 140,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 36,
+      "y": 186,
+      "width": 140,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 36,
+      "y": 210,
+      "width": 140,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 36,
+      "y": 234,
+      "width": 140,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 36,
+      "y": 258,
+      "width": 140,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 36,
+      "y": 282,
+      "width": 140,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 36,
+      "y": 306,
+      "width": 140,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 190,
+      "y": 508,
+      "width": 60,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 256,
+      "y": 508,
+      "width": 52,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 314,
+      "y": 508,
+      "width": 76,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 396,
+      "y": 508,
+      "width": 98,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 1172,
+      "y": 536,
+      "width": 30,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 1208,
+      "y": 536,
+      "width": 30,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 46,
+      "y": 679,
+      "width": 72,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 122,
+      "y": 679,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 146,
+      "y": 679,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 1112,
+      "y": 128,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "EditorTextField",
+      "label": "scene_id",
+      "x": 1112,
+      "y": 156,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 1112,
+      "y": 184,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "EditorTextField",
+      "label": "scene_start",
+      "x": 1112,
+      "y": 212,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "EditorTextField",
+      "label": "scene_end",
+      "x": 1112,
+      "y": 240,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "EditorTextField",
+      "label": "scene_fadeIn",
+      "x": 1112,
+      "y": 268,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "EditorTextField",
+      "label": "scene_fadeOut",
+      "x": 1112,
+      "y": 296,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "EditorTextField",
+      "label": "scene_opacity",
+      "x": 1112,
+      "y": 324,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 1112,
+      "y": 352,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "EditorTextField",
+      "label": "scene_height",
+      "x": 1112,
+      "y": 380,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "EditorTextField",
+      "label": "scene_layer",
+      "x": 1112,
+      "y": 408,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "EditorTextField",
+      "label": "scene_slideIn",
+      "x": 1112,
+      "y": 436,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "EditorTextField",
+      "label": "scene_slideOut",
+      "x": 1112,
+      "y": 464,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 1112,
+      "y": 492,
+      "width": 132,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 1018,
+      "y": 508,
+      "width": 108,
+      "active": true
+    },
+    {
+      "class": "Control",
+      "label": "",
+      "x": 1132,
+      "y": 508,
+      "width": 112,
+      "active": true
+    }
+  ],
+  "boxes": [
+    "scene_id",
+    "scene_start",
+    "scene_end",
+    "scene_fadeIn",
+    "scene_fadeOut",
+    "scene_opacity",
+    "scene_height",
+    "scene_layer",
+    "scene_slideIn",
+    "scene_slideOut"
+  ],
+  "document": {
+    "version": 1,
+    "id": "tutorial_gate",
+    "name": "Village gate",
+    "duration": 200.0,
+    "anchor": "player",
+    "origin": "eyes",
+    "conflict": "replace",
+    "skippable": true,
+    "hideHud": true,
+    "lockInput": true,
+    "cameras": [
+      {
+        "id": "camera_1",
+        "start": 0,
+        "end": 200,
+        "space": "local",
+        "mode": "path",
+        "spots": [
+          {
+            "time": 0,
+            "x": 0,
+            "y": 1,
+            "z": -4,
+            "yaw": 0,
+            "pitch": 10,
+            "fov": 70,
+            "easing": "in_out"
+          },
+          {
+            "space": "local",
+            "time": 60.0,
+            "x": 3.431089896205096,
+            "y": 1.216000000000001,
+            "z": -3.3049205481347537,
+            "yaw": -5.4,
+            "pitch": 11.08,
+            "roll": 0.0,
+            "fov": 67.84
+          },
+          {
+            "space": "local",
+            "time": 80.0,
+            "x": 3.0901416062406817,
+            "y": 1.216000000000001,
+            "z": 0.3019364239092468,
+            "yaw": -5.4,
+            "pitch": 11.08,
+            "roll": 0.0,
+            "fov": 67.84
+          },
+          {
+            "time": 200,
+            "x": 3,
+            "y": 2,
+            "z": -2,
+            "yaw": -25,
+            "pitch": 15,
+            "fov": 60
+          }
+        ]
+      }
+    ],
+    "overlays": [
+      {
+        "id": "opening",
+        "type": "fade",
+        "start": 0,
+        "end": 20,
+        "fadeOut": 20
+      },
+      {
+        "id": "closing",
+        "type": "fade",
+        "start": 180,
+        "end": 200,
+        "fadeIn": 20
+      },
+      {
+        "id": "subtitle_7fc776cf",
+        "start": 20.0,
+        "end": 100.0,
+        "type": "subtitle",
+        "text": "Welcome to the village!",
+        "track": 1
+      },
+      {
+        "id": "letterbox_12907375",
+        "start": 0.0,
+        "end": 200.0,
+        "type": "letterbox",
+        "height": 0.12,
+        "track": 2
+      }
+    ],
+    "audio": [],
+    "events": []
+  }
+}

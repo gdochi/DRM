@@ -9,6 +9,7 @@ import { serve } from './preview-server.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const output = path.resolve(root, process.env.DOCHI_VIDEO_EVIDENCE || 'docs/evidence/guide-videos-20261106/browser');
+const routes = new Set((process.env.DOCHI_VIDEO_ROUTES || '').split(',').filter(Boolean));
 await mkdir(output, { recursive: true });
 const { data } = await loadBuiltDocs(path.join(root, 'dist'));
 const require = createRequire(import.meta.url);
@@ -25,7 +26,7 @@ try {
   page.on('pageerror', error => errors.push(error.message));
   const seen = new Set();
   for (const [locale, docs] of Object.entries(data)) {
-    for (const doc of docs.filter(doc => doc.html.includes('class="doc-video"'))) {
+    for (const doc of docs.filter(doc => doc.html.includes('class="doc-video"') && (!routes.size || routes.has(`${doc.product}/${doc.slug}`)))) {
       for (const width of [1440, 390]) {
         await page.setViewportSize({ width, height: 1000 });
         await page.goto(`${origin}/?lang=${locale}&video-check=${width}#${doc.product}/${doc.slug}`);
@@ -42,7 +43,10 @@ try {
           assert(state.duration > 0 && state.duration < 60);
           assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${locale}/${doc.slug}/${width}`);
           views.push({ locale, route: `${doc.product}/${doc.slug}`, viewportWidth: width, index, ...state });
-          if (locale === 'ko') await video.screenshot({ path: path.join(output, `${doc.product}-${doc.slug}-${width}-${index}.png`) });
+          if (locale === 'ko') {
+            await video.screenshot({ path: path.join(output, `${doc.product}-${doc.slug}-${width}-${index}.png`) });
+            if (index === 0) await page.screenshot({ path: path.join(output, `${doc.product}-${doc.slug}-${width}-layout.png`) });
+          }
           if (seen.has(state.source)) { await element.dispose(); continue; }
           seen.add(state.source);
           for (const source of await video.locator('source').all()) {

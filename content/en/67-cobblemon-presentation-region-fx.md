@@ -25,6 +25,16 @@ Capture alone does not persist the stage to disk. Capture again after changing t
 
 ![Captured flooring and pillars saved as a presentation file.](assets/media/guides/cobble-029-neo1211-flow/cobble-region-captured.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. After capturing 31 blocks and two block states, Save As created custom/guide_stage.json. Saved on the right and the bottom status confirm the save.")
 
+## Capture a block stage and add particles on video
+
+![Enter two corners, capture real world blocks, add a particle layer, preview, and save a custom file.](assets/media/guides/tutorial-videos-20261107/battle-region-particles.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. The floor and pillars were prepared in the recording world. English UI and annotations; silent.")
+
+1. Start with a small structure. The corners **(4, −61, 4)** and **(8, −58, 8)** belong to the recording world; substitute your own coordinates.
+2. Use **Region → Capture region** and check that the block shape appears. Entering coordinates alone does not capture it. Check loaded chunks, bounds and empty regions if nothing appears. If Region preview works but full playback hides the stage, also check opaque backgrounds and Color layers in the preset.
+3. Choose **Particles → Add layer → Emit**. The video uses the new layer's default particle. Preview it first, then change the interval, Interval or Samples one setting at a time.
+4. **Motion** controls particle motion, **Path** controls its route, and **Cues** handles timed effects. Expand after understanding one Emit layer. The video does not demonstrate detailed edits on those three pages.
+5. Use **Play**, then **Save As → custom/tutorial_stage.json → Save**. Capturing blocks and adding particles edit the draft; saving the file is a separate step.
+
 ## Capture limits
 
 | Item | Current limit / behavior |

@@ -25,6 +25,25 @@ In Battle Presentation Maker follow **Element → Add Label → Content**. Label
 
 ![Animation properties for that Label.](assets/media/guides/cobble-029-neo1211/cobble-layer-animation.png "Start/End Tick is the visible interval; Start/Final X are departure and arrival positions. This example runs 0–144 ticks, moves X 280→360 while keeping Y 220, and grows from 0.8 to 1. Check that the same element is selected in the timeline.")
 
+## Set entrance, movement and exit on video
+
+Continue with **RIVAL CHALLENGE** from the [first Label guide](#drm-cobblemon-editor/cobblemon-battle-presentation). In normal playback, **20 ticks = 1 second**. Scene Maker's time fields use seconds instead.
+
+![Set the Label interval, fades and start/final positions, then compare playback and timeline seeks.](assets/media/guides/tutorial-videos-20261107/battle-animation-timing.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. Real Animation inputs → Restart → seek before and inside the interval. English UI and annotations; silent.")
+
+| Video value | Meaning |
+| --- | --- |
+| Start **20**, End **120** | Active from 1 to 6 seconds after the presentation begins |
+| Fade In **12**, Fade Out **12** | Fade for 0.6 seconds at each end of the active interval |
+| Start X **−300**, Final X **320** | Move from outside the left edge to the final position |
+| Start Y / Final Y **70** | Keep the same height while moving horizontally |
+
+1. Select the Label and open **Animation**. Selecting an actor shows different fields.
+2. Enter the table's values. Position interpolates across the active interval; Fade multiplies the resulting opacity.
+3. Switch **Layout → Animation** to commit the values, then use **Restart**. The default Duration is **144 ticks / 7.2 seconds**, so you can also inspect the time after the Label's exit.
+4. Seek to **tick 10** to see the inactive state, then **tick 75** to see the moving Label. Save after editing.
+5. Adjust Start/End spacing and Easing for speed. Layer/Z controls overlap; Start/End controls time. A covered Label and a Label that has not started require different fixes.
+
 ## Element types
 
 | Type | Rendering | Important fields |

@@ -26,6 +26,39 @@ Scene Maker es una herramienta creadora para organizar el movimiento de la cáma
 5. Abra **World positions** para colocar y ajustar los puntos de la cámara.
 6. Utilice **Play** para previsualizar y, a continuación, guarde su propia escena con **Save As**. **Run Saved** reproduce la versión guardada, así que guarda de nuevo después de hacer cambios.
 
+## Completar una escena en tres vídeos
+
+Los vídeos consecutivos muestran pantallas reales de **DRM 0.3.1 / NeoForge 1.21.1**, con subtítulos y marcas de clic en inglés, sin audio. La puerta y las farolas estaban preparadas para distinguir el movimiento de la cámara.
+
+### 1. Duración y subtítulo
+
+![Configurar una escena de diez segundos y un subtítulo visible entre uno y cinco segundos.](assets/media/guides/tutorial-videos-20261107/scene-settings-subtitle.mp4 "Scene Settings → + Subtitle → Edit Subtitle → Apply Fields. Los tiempos se introducen en segundos.")
+
+1. En **Scene Settings**, introduce ID **tutorial_gate**, Name **Village gate** y conserva Duration **10**. Usa **Apply Fields**. El anclaje **Player** sitúa la escena respecto al jugador. Antes de acortar la duración, ajusta los finales de las cámaras y efectos al nuevo límite.
+2. Usa **+ Subtitle**, Start **1**, End **5** y **Apply Fields**. El subtítulo estará activo entre los segundos 1 y 5 de la escena de diez segundos.
+3. Abre **Edit Subtitle**, escribe **Welcome to the village!** y vuelve con **Apply Fields**. Cancel descarta los cambios de esa ventana.
+4. Mueve el indicador rojo a **3 segundos**. Seleccionar una tarjeta cambia el objetivo de edición, no la posición de reproducción. Los fundidos predeterminados pueden dejar negro el instante cero.
+
+### 2. Crear la ruta de cámara en el mundo
+
+![Seleccionar la cámara, mover la cámara de trabajo, registrar puntos, aplicar y previsualizar.](assets/media/guides/tutorial-videos-20261107/scene-world-camera-path.mp4 "Tarjeta Camera → World positions → WASD/Space → P/N → Enter para Apply → Play. Edición real de posiciones.")
+
+1. Pulsa el **cuerpo de la tarjeta Camera** y **World positions**. Una tarjeta de subtítulo o efecto no selecciona la cámara.
+2. Gira la rueda del ratón hacia abajo para reducir la velocidad y mueve la cámara de trabajo con **WASD / Space / Shift**. **P** registra la posición en el instante actual. Moverla por sí solo no registra un punto.
+3. Muévete y usa **N** para añadir el siguiente punto. P registra el momento actual; N añade un punto posterior. Los tiempos determinan la duración del recorrido.
+4. Usa **Enter o Apply** para incorporar las posiciones al borrador. Cancel descarta los cambios de esta ventana.
+5. Usa **Stop → Play** para comprobar cámara y subtítulo juntos. Aplica las posiciones y guarda el archivo de escena.
+
+### 3. Efectos, guardado y reproducción real
+
+![Ajustar Letterbox, guardar y usar Run Saved para comprobar reproducción y finalización en el servidor.](assets/media/guides/tutorial-videos-20261107/scene-effects-save-run.mp4 "+ Letterbox → Apply Fields → Save As → Run Saved. La reproducción final utiliza el archivo guardado.")
+
+1. Usa **+ Letterbox**, Start **0**, End **10** y **Apply Fields**. Los efectos tienen tarjetas e intervalos propios.
+2. Usa **Save As** con **tutorial_gate**. El archivo es **config/dochi_rpg_maker/scene/tutorial_gate.json**. Apply de las posiciones y Apply Fields no guardan el archivo.
+3. Usa **Run Saved** para reproducirlo mediante el servidor. Vuelve a guardar después de modificarlo.
+4. Para repetir con un comando, usa **/drm scene tutorial_gate.json**. Consulta la sección de comandos para seleccionar jugadores.
+5. Comprueba la desaparición del subtítulo y el regreso al juego. La reproducción se verificó en el mundo aislado de prueba de un jugador.
+
 ## Moverse a través de la línea de tiempo
 
 El pin rojo es la posición de reproducción. Arrastrarlo deliberadamente para buscar. Seleccionar una tarjeta no busca. La barra de desplazamiento horizontal inferior mueve el intervalo de tiempo visible de forma independiente; utilice los controles menos/más para ajustar el zoom. Utilice el interruptor de bucle cuando desee reproducir una vista previa repetida.

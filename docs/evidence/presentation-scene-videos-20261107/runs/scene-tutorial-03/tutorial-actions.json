@@ -1,0 +1,214 @@
+[
+  {
+    "action": "landmarks",
+    "nanoTime": 43491239563200
+  },
+  {
+    "action": "scrub-scene:60",
+    "nanoTime": 43494444433300
+  },
+  {
+    "action": "caption:1. Scene Settings: keep the 10-second scene and the Player anchor.",
+    "nanoTime": 43495046086600
+  },
+  {
+    "action": "input:scene_id\u003dtutorial_gate",
+    "nanoTime": 43498094522600
+  },
+  {
+    "action": "input:scene_name\u003dVillage gate",
+    "nanoTime": 43498700256200
+  },
+  {
+    "action": "input:scene_duration\u003d10",
+    "nanoTime": 43499285247300
+  },
+  {
+    "action": "click:Apply Fields",
+    "nanoTime": 43499895546500
+  },
+  {
+    "action": "caption:Add Subtitle, then set its visible interval in SECONDS.",
+    "nanoTime": 43502350583300
+  },
+  {
+    "action": "click:+ Subtitle",
+    "nanoTime": 43502940862800
+  },
+  {
+    "action": "input:scene_start\u003d1",
+    "nanoTime": 43503540495400
+  },
+  {
+    "action": "input:scene_end\u003d5",
+    "nanoTime": 43504143727100
+  },
+  {
+    "action": "click:Apply Fields",
+    "nanoTime": 43504750853900
+  },
+  {
+    "action": "caption:Edit Subtitle opens the text editor. Apply Fields keeps the text.",
+    "nanoTime": 43507196317500
+  },
+  {
+    "action": "click:Edit Subtitle",
+    "nanoTime": 43507799205400
+  },
+  {
+    "action": "input:box\u003dWelcome to the village!",
+    "nanoTime": 43510000934800
+  },
+  {
+    "action": "click:Apply Fields",
+    "nanoTime": 43510588808100
+  },
+  {
+    "action": "caption:Preview the text at the red playhead. The cards keep their own timing.",
+    "nanoTime": 43513045184100
+  },
+  {
+    "action": "scrub-scene:60",
+    "nanoTime": 43513645527300
+  },
+  {
+    "action": "dump:scene-subtitle-result",
+    "nanoTime": 43516586376300
+  },
+  {
+    "action": "caption:2. Select the Camera card, then open World positions.",
+    "nanoTime": 43517789540500
+  },
+  {
+    "action": "scene-card:cameras",
+    "nanoTime": 43518983860500
+  },
+  {
+    "action": "click:World positions",
+    "nanoTime": 43521193130400
+  },
+  {
+    "action": "caption:Wheel down reduces speed. WASD moves the WORK camera; P records.",
+    "nanoTime": 43523892580600
+  },
+  {
+    "action": "wheel:-6",
+    "nanoTime": 43524496859300
+  },
+  {
+    "action": "hold:68",
+    "nanoTime": 43525089159500
+  },
+  {
+    "action": "release:68",
+    "nanoTime": 43526784348300
+  },
+  {
+    "action": "key:80",
+    "nanoTime": 43527396907600
+  },
+  {
+    "action": "caption:N creates the next point at the work camera. Existing points stay.",
+    "nanoTime": 43529843242900
+  },
+  {
+    "action": "hold:87",
+    "nanoTime": 43530449018800
+  },
+  {
+    "action": "release:87",
+    "nanoTime": 43532638764100
+  },
+  {
+    "action": "key:78",
+    "nanoTime": 43533241464500
+  },
+  {
+    "action": "caption:Enter applies the position edit. You still need to save the scene.",
+    "nanoTime": 43535943371500
+  },
+  {
+    "action": "key:257",
+    "nanoTime": 43536551362000
+  },
+  {
+    "action": "dump:scene-path-result",
+    "nanoTime": 43538985447900
+  },
+  {
+    "action": "caption:Play previews the camera path together with the subtitle.",
+    "nanoTime": 43539587013300
+  },
+  {
+    "action": "click:Stop",
+    "nanoTime": 43540199723200
+  },
+  {
+    "action": "click:Play",
+    "nanoTime": 43540793385400
+  },
+  {
+    "action": "click:Stop",
+    "nanoTime": 43548483934900
+  },
+  {
+    "action": "caption:3. Add Letterbox. Start and End set when the bars are visible.",
+    "nanoTime": 43551031935300
+  },
+  {
+    "action": "click:+ Letterbox",
+    "nanoTime": 43552237575600
+  },
+  {
+    "action": "input:scene_start\u003d0",
+    "nanoTime": 43552842008200
+  },
+  {
+    "action": "input:scene_end\u003d10",
+    "nanoTime": 43553446297900
+  },
+  {
+    "action": "click:Apply Fields",
+    "nanoTime": 43554033473900
+  },
+  {
+    "action": "caption:Save As stores the draft as your own scene file.",
+    "nanoTime": 43556485062000
+  },
+  {
+    "action": "click:Save As",
+    "nanoTime": 43557088919000
+  },
+  {
+    "action": "input:saveAsName\u003dtutorial_gate",
+    "nanoTime": 43559296005000
+  },
+  {
+    "action": "click:Save As",
+    "nanoTime": 43559883475100
+  },
+  {
+    "action": "dump:scene-saved-result",
+    "nanoTime": 43564193502600
+  },
+  {
+    "action": "caption:Run Saved asks the server to play the SAVED file.",
+    "nanoTime": 43566642474700
+  },
+  {
+    "action": "runtime-begin",
+    "nanoTime": 43567246196000
+  },
+  {
+    "action": "click:Run Saved",
+    "nanoTime": 43567840224000
+  },
+  {
+    "action": "runtime-verify",
+    "nanoTime": 43580542072700
+  },
+  {
+    "action": "off",
+    "nanoTime": 43581741412800
+  }
+]

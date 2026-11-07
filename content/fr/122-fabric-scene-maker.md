@@ -26,6 +26,39 @@ Scene Maker est un outil de création pour organiser le mouvement de la caméra 
 5. Ouvrez **World positions** pour placer et ajuster les points de la caméra.
 6. Utilisez **Play** pour prévisualiser, puis enregistrez votre propre scène avec **Save As**. **Run Saved** joue la version enregistrée, donc enregistrer à nouveau après avoir apporté des modifications.
 
+## Terminer une scène en trois vidéos
+
+Ces vidéos successives montrent les vrais écrans de **DRM 0.3.1 / NeoForge 1.21.1**, avec consignes et repères de clic en anglais, sans audio. La porte et les lampes étaient préparées pour rendre le déplacement de caméra visible.
+
+### 1. Durée et sous-titre
+
+![Configurer une scène de dix secondes et un sous-titre actif entre une et cinq secondes.](assets/media/guides/tutorial-videos-20261107/scene-settings-subtitle.mp4 "Scene Settings → + Subtitle → Edit Subtitle → Apply Fields. Les temps sont saisis en secondes.")
+
+1. Dans **Scene Settings**, saisissez ID **tutorial_gate**, Name **Village gate** et conservez Duration **10**. Utilisez **Apply Fields**. L’ancrage **Player** rend la scène relative au joueur. Avant de raccourcir la durée, ramenez les fins des caméras et effets dans la nouvelle limite.
+2. Utilisez **+ Subtitle**, Start **1**, End **5**, puis **Apply Fields**. Le sous-titre est actif entre 1 et 5 secondes de cette scène de dix secondes.
+3. Ouvrez **Edit Subtitle**, saisissez **Welcome to the village!**, puis revenez avec **Apply Fields**. Cancel abandonne les modifications de cette fenêtre.
+4. Déplacez le repère rouge à **3 secondes**. Sélectionner une carte change la cible d’édition, pas le temps de lecture. Les fondus par défaut peuvent rendre l’instant zéro noir.
+
+### 2. Construire le parcours de caméra dans le monde
+
+![Sélectionner la caméra, déplacer la caméra de travail, marquer des points, appliquer et prévisualiser.](assets/media/guides/tutorial-videos-20261107/scene-world-camera-path.mp4 "Carte Camera → World positions → WASD/Space → P/N → Enter pour Apply → Play. Édition réelle des positions.")
+
+1. Cliquez sur le **corps de la carte Camera**, puis sur **World positions**. Une carte de sous-titre ou d’effet ne sélectionne pas la caméra.
+2. Faites défiler la molette vers le bas pour réduire la vitesse, puis déplacez la caméra de travail avec **WASD / Space / Shift**. **P** enregistre sa position à l’instant courant. Le déplacement seul ne crée pas de point.
+3. Déplacez-vous ailleurs et utilisez **N** pour ajouter le point suivant. P enregistre l’instant courant ; N ajoute un point ultérieur. Les temps déterminent la durée du trajet.
+4. Utilisez **Enter ou Apply** pour intégrer les positions au brouillon. Cancel abandonne les modifications de cette fenêtre.
+5. Utilisez **Stop → Play** pour vérifier caméra et sous-titre ensemble. Appliquez les positions et enregistrez le fichier de scène.
+
+### 3. Effets, enregistrement et lecture réelle
+
+![Régler Letterbox, enregistrer et utiliser Run Saved pour vérifier lecture et fin côté serveur.](assets/media/guides/tutorial-videos-20261107/scene-effects-save-run.mp4 "+ Letterbox → Apply Fields → Save As → Run Saved. La lecture finale utilise le fichier enregistré.")
+
+1. Utilisez **+ Letterbox**, Start **0**, End **10**, puis **Apply Fields**. Les effets ont leurs propres cartes et intervalles.
+2. Utilisez **Save As** avec **tutorial_gate**. Le fichier est **config/dochi_rpg_maker/scene/tutorial_gate.json**. Apply des positions et Apply Fields n’enregistrent pas le fichier.
+3. Utilisez **Run Saved** pour lire le fichier via le serveur. Enregistrez de nouveau après toute modification.
+4. Pour relancer par commande, utilisez **/drm scene tutorial_gate.json**. Consultez la section des commandes pour sélectionner les joueurs.
+5. Vérifiez la disparition du sous-titre et le retour au jeu. La lecture a été vérifiée dans le monde de test isolé à un joueur.
+
 ## Se déplacer dans la timeline
 
 La broche rouge est la position de lecture. Faites-le glisser délibérément pour le chercher. Choisir une carte ne cherche pas. La barre de défilement horizontale inférieure déplace la plage de temps visible indépendamment ; utilisez les commandes moins/plus pour ajuster le zoom. Utilisez le commutateur de boucle lorsque vous voulez la lecture répétée d'aperçu.

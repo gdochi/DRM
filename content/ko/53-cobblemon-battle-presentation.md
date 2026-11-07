@@ -32,6 +32,31 @@ tags:
 
 이 장면은 배틀 시작 전에 보여 줍니다. **Duration**은 장면 길이이며, 라운드의 **Battle start delay**는 그 뒤의 추가 대기 시간입니다. **Skippable**을 켜면 플레이어가 건너뛸 수 있습니다.
 
+## 영상으로 첫 연출 따라 만들기
+
+배틀 프레젠테이션은 **배틀에 진입할 때 보여 줄 화면**을 만드는 도구입니다. 월드 안에서 카메라를 이동시키는 [씬 메이커](#core-fabric/scene-maker)와 작업 대상이 다릅니다. 처음에는 기본 Trainer 예제에 글자 하나만 추가하고, 아래 순서로 움직임과 모델 설정을 확장하세요.
+
+영상은 실제 **Cobblemon Editor 0.2.9 / DRM 0.3.1 / NeoForge 1.21.1** 편집 화면을 촬영했습니다. 영문 UI에 영문 설명 자막과 클릭 표시를 덧붙인 무음 영상입니다. 본문의 순서와 함께 보고, 작은 입력값은 전체 화면으로 확대하거나 일시정지해 확인하세요.
+
+### 1. 글자 추가와 화면 배치
+
+![Label을 추가하고 내용·글자 크기·최종 위치·앞뒤 순서를 정한 뒤 타임라인으로 확인합니다.](assets/media/guides/tutorial-videos-20261107/battle-label-layout.mp4 "Add Label → Content → Layout → 타임라인 확인. 촬영 도구가 실제 편집기의 입력 경로를 조작한 예제입니다.")
+
+1. **Add Label → Content**에서 문구를 **RIVAL CHALLENGE**, **Font Size**를 **30**으로 정합니다. Width와 Height는 글자가 들어가는 상자이고, 글자 크기는 Font Size로 따로 바꿉니다.
+2. **Layout**에서 Final X **320**, Final Y **70**, Width **360**, Height **70**, Layer **60**을 입력합니다. 위치는 Stage 안의 좌표이며 Layer는 모델·장식과 겹칠 때 앞뒤 순서를 정합니다.
+3. 영상처럼 **Content → Layout**으로 탭을 한 번 전환해 입력을 반영한 뒤 아래 눈금자의 **60틱** 부근을 눌러 글자를 확인합니다. 0틱에서 보이지 않더라도 삭제하기 전에 활성 구간과 Fade In을 확인하세요.
+4. 다음 [움직임 영상](#drm-cobblemon-editor/battle-presentation-layers-runtime)에서 같은 글자의 등장·이동·퇴장을 설정합니다.
+
+### 2. 모델·오디오와 사용자 파일 저장
+
+![Actors에서 모델 크기와 회전을 바꾸고 Intro 사운드 시작점을 설정한 뒤 사용자 연출 파일로 저장합니다.](assets/media/guides/tutorial-videos-20261107/battle-actors-audio.mp4 "Actors → Audio → Save As. 편집·파일 저장 과정이며 실제 전투의 음향 재생을 녹음한 영상은 아닙니다.")
+
+1. **Actors**에서 Player/Opponent와 Trainer/파티 슬롯 중 편집할 대상을 먼저 확인합니다. 영상은 기본으로 선택된 Opponent의 Scale을 **60**, Yaw를 **−25**로 바꿉니다. Pokemon 타입에는 사람형 관절 Pose를 적용하지 않습니다.
+2. **Audio**에서 Intro Sound를 **minecraft:ui.toast.challenge_complete**, Start Tick을 **20**으로 입력합니다. Intro는 등장 연출의 소리이고, Battle은 실제 배틀 시작 뒤의 소리입니다. 이 영상은 무음이므로 직접 **Play/Stop**으로 미리 들으세요. 사용 여부도 확인합니다.
+3. **Save As**에 **custom/tutorial_rival.json**을 입력하고 **Save**합니다. Name은 표시 이름이며, 다음 단계에서 연결할 값은 저장 경로입니다.
+4. 트레이너 편집기의 **General → Battle Presentation**에서 저장한 파일을 선택하고 **트레이너 파일도 저장**합니다. 이미 같은 원본 파일을 추적하는 NPC라면 다음 전투에서 확인합니다. 새 NPC에는 해당 트레이너 파일을 적용하세요.
+5. 실제 전투에서 이름·상대 모델·소리·종료 후 배틀 전환을 확인합니다. 편집기 미리보기와 파일 저장만으로 NPC 연결까지 완료되는 것은 아닙니다. [트레이너의 실제 배틀 시작 영상](#drm-cobblemon-editor/cobblemon-trainer-editor)도 함께 보세요.
+
 ## 네 개의 작업 영역
 
 | 영역 | 조작 | 저장 결과 |

@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "id": "tutorial_gate",
+  "name": "Village gate",
+  "duration": 200.0,
+  "anchor": "player",
+  "origin": "eyes",
+  "conflict": "replace",
+  "skippable": true,
+  "hideHud": true,
+  "lockInput": true,
+  "cameras": [
+    {
+      "id": "camera_1",
+      "start": 0,
+      "end": 200,
+      "space": "local",
+      "mode": "path",
+      "spots": [
+        {
+          "time": 0,
+          "x": 0,
+          "y": 1,
+          "z": -4,
+          "yaw": 0,
+          "pitch": 10,
+          "fov": 70,
+          "easing": "in_out"
+        },
+        {
+          "space": "local",
+          "time": 60.0,
+          "x": 3.431089896205096,
+          "y": 1.216000000000001,
+          "z": -3.3049205481347537,
+          "yaw": -5.4,
+          "pitch": 11.08,
+          "roll": 0.0,
+          "fov": 67.84
+        },
+        {
+          "space": "local",
+          "time": 80.0,
+          "x": 3.0901416062406817,
+          "y": 1.216000000000001,
+          "z": 0.3019364239092468,
+          "yaw": -5.4,
+          "pitch": 11.08,
+          "roll": 0.0,
+          "fov": 67.84
+        },
+        {
+          "time": 200,
+          "x": 3,
+          "y": 2,
+          "z": -2,
+          "yaw": -25,
+          "pitch": 15,
+          "fov": 60
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "id": "opening",
+      "type": "fade",
+      "start": 0,
+      "end": 20,
+      "fadeOut": 20
+    },
+    {
+      "id": "closing",
+      "type": "fade",
+      "start": 180,
+      "end": 200,
+      "fadeIn": 20
+    },
+    {
+      "id": "subtitle_7fc776cf",
+      "start": 20.0,
+      "end": 100.0,
+      "type": "subtitle",
+      "text": "Welcome to the village!",
+      "track": 1
+    },
+    {
+      "id": "letterbox_12907375",
+      "start": 0.0,
+      "end": 200.0,
+      "type": "letterbox",
+      "height": 0.12,
+      "track": 2
+    }
+  ],
+  "audio": [],
+  "events": []
+}

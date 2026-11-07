@@ -1,0 +1,215 @@
+[
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\presentation-tutorial-05\\game\\config\\dochi_rpg_maker\\cobblemon\\battle_presentations\\custom\\tutorial_rival.json"
+  },
+  {
+    "id": "battle-tutorial",
+    "screenClass": "net.hodu.cobblenpc.client.BattlePresentationEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:battle_presentation_maker",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "tutorial:scrub-battle:60",
+      "tutorial:caption:1. Start with the Trainer example. Add one Label.",
+      "gif:start:battle-label-layout",
+      "wait:30",
+      "tutorial:click:Add Label",
+      "wait:20",
+      "tutorial:click:Content",
+      "tutorial:caption:Content changes the words. Font Size changes the letters.",
+      "tutorial:input:textField\u003dRIVAL CHALLENGE",
+      "wait:20",
+      "tutorial:input:fontSizeField\u003d30",
+      "wait:20",
+      "tutorial:click:Layout",
+      "tutorial:caption:Layout sets the final position, box size and front/back order.",
+      "tutorial:input:xField\u003d320",
+      "tutorial:input:yField\u003d70",
+      "tutorial:input:wField\u003d360",
+      "tutorial:input:hField\u003d70",
+      "tutorial:input:zField\u003d60",
+      "wait:25",
+      "tutorial:caption:Switch tabs to keep the typed values before scrubbing or playback.",
+      "tutorial:click:Content",
+      "tutorial:click:Layout",
+      "wait:20",
+      "tutorial:caption:The first frame can be invisible during Fade In. Scrub forward.",
+      "tutorial:scrub-battle:60",
+      "wait:40",
+      "tutorial:dump:battle-label-result",
+      "gif:stop",
+      "tutorial:caption:2. Animation controls WHEN the selected Label is visible.",
+      "gif:start:battle-animation-timing",
+      "tutorial:click:Animation",
+      "wait:20",
+      "tutorial:input:startField\u003d20",
+      "tutorial:input:endField\u003d120",
+      "tutorial:input:fadeInField\u003d12",
+      "tutorial:input:fadeOutField\u003d12",
+      "wait:25",
+      "tutorial:caption:Start X is outside the Stage. Final X is the arrival position.",
+      "tutorial:input:fromXField\u003d-300",
+      "tutorial:input:fromYField\u003d70",
+      "tutorial:input:toXField\u003d320",
+      "tutorial:input:toYField\u003d70",
+      "wait:25",
+      "tutorial:caption:Switch tabs to keep the values, then Restart from the beginning.",
+      "tutorial:click:Layout",
+      "tutorial:click:Animation",
+      "tutorial:click:Restart",
+      "wait:150",
+      "tutorial:caption:Scrub before the start: hidden. Scrub inside the interval: visible.",
+      "tutorial:scrub-battle:10",
+      "wait:25",
+      "tutorial:scrub-battle:75",
+      "wait:35",
+      "tutorial:dump:battle-animation-result",
+      "gif:stop",
+      "tutorial:caption:3. Actors are models. Select Player or Opponent before editing.",
+      "gif:start:battle-actors-audio",
+      "tutorial:click:Actors",
+      "wait:25",
+      "tutorial:dump:battle-actors-before",
+      "tutorial:input:actorScaleField\u003d60",
+      "wait:20",
+      "tutorial:input:actorYawField\u003d-25",
+      "wait:20",
+      "tutorial:caption:Audio has separate Intro and Battle cues.",
+      "tutorial:click:Audio",
+      "wait:25",
+      "tutorial:input:introSoundField\u003dminecraft:ui.toast.challenge_complete",
+      "tutorial:input:introStartField\u003d20",
+      "wait:25",
+      "tutorial:caption:Save As creates your own file. Keep the supplied presets as templates.",
+      "tutorial:click:Save As",
+      "wait:20",
+      "tutorial:input:saveNameField\u003dcustom/tutorial_rival.json",
+      "tutorial:click:Save",
+      "wait:50",
+      "verify:file\u003dconfig/dochi_rpg_maker/cobblemon/battle_presentations/custom/tutorial_rival.json",
+      "tutorial:dump:battle-saved-result",
+      "wait:25",
+      "gif:stop",
+      "tutorial:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Help",
+        "active": true
+      },
+      {
+        "label": "Element",
+        "active": true
+      },
+      {
+        "label": "Actors",
+        "active": true
+      },
+      {
+        "label": "Background",
+        "active": true
+      },
+      {
+        "label": "Region",
+        "active": true
+      },
+      {
+        "label": "Particles",
+        "active": true
+      },
+      {
+        "label": "\u003e Audio",
+        "active": true
+      },
+      {
+        "label": "Before battle",
+        "active": true
+      },
+      {
+        "label": "Skippable",
+        "active": true
+      },
+      {
+        "label": "Intro Sound",
+        "active": true
+      },
+      {
+        "label": "Select",
+        "active": true
+      },
+      {
+        "label": "Play",
+        "active": true
+      },
+      {
+        "label": "Stop",
+        "active": true
+      },
+      {
+        "label": "In-Battle Music",
+        "active": true
+      },
+      {
+        "label": "Select",
+        "active": true
+      },
+      {
+        "label": "Play",
+        "active": true
+      },
+      {
+        "label": "Stop",
+        "active": true
+      },
+      {
+        "label": "Play",
+        "active": true
+      },
+      {
+        "label": "Restart",
+        "active": true
+      },
+      {
+        "label": "Layers - drag to reorder",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

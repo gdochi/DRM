@@ -27,6 +27,16 @@ La capture seule ne persiste pas sur le disque. Capturez à nouveau après avoir
 
 ![Plancher et piliers capturés enregistrés en tant que fichier de présentation.](assets/media/guides/cobble-029-neo1211-flow/cobble-region-captured.png "Cobblemon Éditeur 0.2.9 / NeoForge 1.21.1. Après avoir capturé des blocs 31 et deux états de bloc, Save As a créé custom/guide_stage.json. Enregistré à droite et l'état inférieur confirment l'enregistrement.")
 
+## Capturer un décor et ajouter des particules en vidéo
+
+![Définir les coins, capturer de vrais blocs, ajouter des particules, prévisualiser et enregistrer.](assets/media/guides/tutorial-videos-20261107/battle-region-particles.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. Le sol et les piliers étaient préparés dans le monde de capture. Interface et annotations en anglais ; sans audio.")
+
+1. Commencez par une petite structure. Les coins **(4, −61, 4)** et **(8, −58, 8)** correspondent au monde de capture ; utilisez vos coordonnées.
+2. Utilisez **Region → Capture region** et vérifiez que les blocs apparaissent. Saisir les coordonnées ne suffit pas. Vérifiez les chunks chargés, les limites et les régions vides. Si l’aperçu Region fonctionne mais que la lecture masque le décor, vérifiez aussi les fonds opaques et les calques Color du preset.
+3. Utilisez **Particles → Add layer → Emit**. La vidéo conserve la particule par défaut du nouveau calque. Prévisualisez avant de modifier période, Interval ou Samples, un réglage à la fois.
+4. **Motion** règle le mouvement, **Path** la trajectoire et **Cues** les effets temporisés. Approfondissez après un premier calque Emit. La vidéo ne montre pas l’édition détaillée de ces trois pages.
+5. Utilisez **Play**, puis **Save As → custom/tutorial_stage.json → Save**. Capture et particules modifient le brouillon ; l’enregistrement du fichier reste une étape distincte.
+
 ## Limites de capture
 
 | Poste | Limite actuelle / comportement |

@@ -1,0 +1,30 @@
+{
+  "source": "C:/Users/hodu3/Desktop/[DOCHI] DOCS/build/task/guide-capture/presentation-tutorial-05/captures/battle-actors-audio-frames.json",
+  "sourceBytes": 53184,
+  "sourceSha256": "5da16c5be86e1ba52106e0cc537e6bfe3b56978b72b6d81d91ba64e9087908db",
+  "width": 1280,
+  "height": 720,
+  "durationMs": 24304.9213,
+  "fps": 20,
+  "audio": false,
+  "sourceType": "original_timestamped_png",
+  "colorSpace": "bt709",
+  "colorRange": "limited",
+  "outputs": [
+    {
+      "file": "battle-actors-audio.mp4",
+      "bytes": 439066,
+      "sha256": "ae354188459c723bbb7bfd54fce53541e4e7a95b0f1504af1328459ccb1800cb"
+    },
+    {
+      "file": "battle-actors-audio.webm",
+      "bytes": 417261,
+      "sha256": "c7ee111d889995816f4134e776dfc341d133fbc4a8b544389d053ad56c51aae0"
+    },
+    {
+      "file": "battle-actors-audio.png",
+      "bytes": 90645,
+      "sha256": "aa8e33c9a1e3a695df2324e23bf6072b09674ec2a1be2f9e784d486ab7e1931d"
+    }
+  ]
+}

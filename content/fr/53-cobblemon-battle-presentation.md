@@ -34,6 +34,31 @@ Utilisez l'aperçu du milieu avec la chronologie ci-dessous. Il s'agit de l'entr
 
 La scène se joue avant la bataille. **Duration** est sa longueur; le tour **Battle start delay** est en attente supplémentaire par la suite. **Skippable** Les joueurs l'ignorent.
 
+## Suivre une première présentation en vidéo
+
+Battle Presentation Maker crée **l’écran d’entrée dans le combat**. [Scene Maker](#core-fabric/scene-maker) contrôle une caméra dans le monde. Commencez par le modèle Trainer et un Label avant d’ajouter mouvements et modèles.
+
+Ces vidéos montrent les vrais écrans de **Cobblemon Editor 0.2.9 / DRM 0.3.1 / NeoForge 1.21.1**, avec interface, consignes et repères de clic en anglais. Elles sont muettes. Suivez les étapes et utilisez la pause ou le plein écran pour lire les valeurs.
+
+### 1. Ajouter et placer un Label
+
+![Ajouter un Label, modifier texte et taille, régler position et calque puis vérifier la timeline.](assets/media/guides/tutorial-videos-20261107/battle-label-layout.mp4 "Add Label → Content → Layout → timeline. L’outil de capture utilise les véritables entrées de l’éditeur.")
+
+1. Dans **Add Label → Content**, saisissez **RIVAL CHALLENGE** et **Font Size 30**. Width et Height dimensionnent la boîte ; Font Size dimensionne les lettres.
+2. Dans **Layout**, utilisez Final X **320**, Final Y **70**, Width **360**, Height **70** et Layer **60**. Les coordonnées appartiennent au Stage ; Layer règle la superposition avec les modèles et les décors.
+3. Passez de **Content → Layout** pour valider les champs avant de cliquer vers le **tick 60**. Si le tick zéro est vide, vérifiez l’intervalle actif et Fade In.
+4. Continuez avec la [vidéo du mouvement](#drm-cobblemon-editor/battle-presentation-layers-runtime) pour animer ce même Label.
+
+### 2. Modèles, audio et fichier personnalisé
+
+![Modifier échelle et rotation du modèle, régler Intro et enregistrer une présentation personnalisée.](assets/media/guides/tutorial-videos-20261107/battle-actors-audio.mp4 "Actors → Audio → Save As. Cette vidéo montre l’édition et l’enregistrement, sans enregistrer la lecture audio du combat.")
+
+1. Dans **Actors**, vérifiez Player/Opponent et Trainer/emplacement d’équipe. La vidéo règle l’Opponent sélectionné sur Scale **60** et Yaw **−25**. Les modèles Pokemon n’utilisent pas les poses articulaires humaines.
+2. Dans **Audio**, saisissez Intro Sound **minecraft:ui.toast.challenge_complete** et Start Tick **20**. Intro accompagne la présentation ; Battle commence avec le combat réel. Utilisez **Play/Stop** pour écouter et vérifiez l’activation du son.
+3. Utilisez **Save As → custom/tutorial_rival.json → Save**. Name est un nom affiché ; la référence à relier est le chemin enregistré.
+4. Dans l’éditeur du dresseur, choisissez le fichier sous **General → Battle Presentation**, puis **enregistrez aussi le dresseur**. Un NPC qui suit ce fichier l’utilisera au prochain combat. Appliquez le dresseur pour configurer un nouveau NPC.
+5. Vérifiez noms, modèle, son et transition en jeu. L’aperçu et l’enregistrement ne créent pas seuls le lien au NPC. Consultez la [vidéo du vrai combat de dresseur](#drm-cobblemon-editor/cobblemon-trainer-editor).
+
 ## Quatre domaines de travail
 
 | Zone | Interaction | Résultat enregistré |

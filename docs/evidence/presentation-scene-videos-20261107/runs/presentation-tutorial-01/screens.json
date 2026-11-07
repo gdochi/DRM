@@ -1,0 +1,240 @@
+[
+  {
+    "id": "battle-tutorial",
+    "actualScreenAtFailure": "net.hodu.cobblenpc.client.BattlePresentationEditorScreen",
+    "screenClass": "net.hodu.cobblenpc.client.BattlePresentationEditorScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Back",
+      "Forward",
+      "Editors",
+      "Create New",
+      "Load",
+      "Save",
+      "Save As",
+      "Reset",
+      "Help",
+      "\u003e Element",
+      "Actors",
+      "Background",
+      "Region",
+      "Particles",
+      "Audio",
+      "Add Label",
+      "Add Texture",
+      "Add Color Layer",
+      "Add effect",
+      "Remove Layer",
+      "",
+      "Before battle",
+      "",
+      "Skippable",
+      "\u003e Layout",
+      "Content",
+      "Animation",
+      "GeckoLib",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Play",
+      "Restart",
+      "Layers - drag to reorder"
+    ],
+    "attemptedActions": [
+      "tutorial:caption:1. Start with the Trainer example. Add one Label.",
+      "gif:start:battle-label-layout",
+      "wait:30",
+      "tutorial:click:Add Label",
+      "wait:20",
+      "tutorial:click:Content",
+      "tutorial:caption:Content changes the words. Font Size changes the letters.",
+      "tutorial:input:textField\u003dRIVAL CHALLENGE",
+      "wait:20",
+      "tutorial:input:fontSizeField\u003d30",
+      "wait:20",
+      "tutorial:click:Layout",
+      "tutorial:caption:Layout sets the final position, box size and front/back order.",
+      "tutorial:input:xField\u003d320",
+      "tutorial:input:yField\u003d70",
+      "tutorial:input:wField\u003d360",
+      "tutorial:input:hField\u003d70",
+      "tutorial:input:zField\u003d60",
+      "wait:25",
+      "tutorial:caption:The first frame can be invisible during Fade In. Scrub forward.",
+      "tutorial:scrub-battle:60"
+    ],
+    "status": "failed",
+    "error": "java.lang.RuntimeException: perform"
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\presentation-tutorial-01\\game\\config\\dochi_rpg_maker\\cobblemon\\battle_presentations\\custom\\tutorial_stage.json"
+  },
+  {
+    "id": "battle-stage-tutorial",
+    "screenClass": "net.hodu.cobblenpc.client.BattlePresentationEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:battle_presentation_maker",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "fixture:cobble-stage",
+      "wait:60",
+      "tutorial:caption:4. Region copies a loaded building into the presentation.",
+      "gif:start:battle-region-particles",
+      "tutorial:click:Region",
+      "wait:20",
+      "tutorial:input:regionCorner0\u003d4",
+      "tutorial:input:regionCorner1\u003d-61",
+      "tutorial:input:regionCorner2\u003d4",
+      "tutorial:input:regionCorner3\u003d8",
+      "tutorial:input:regionCorner4\u003d-58",
+      "tutorial:input:regionCorner5\u003d8",
+      "wait:20",
+      "tutorial:caption:Capture region stores the block shape. The world is unchanged.",
+      "tutorial:click:Capture region",
+      "wait:40",
+      "tutorial:caption:Particles -\u003e Add layer -\u003e Emit defines one particle layer.",
+      "tutorial:click:Particles",
+      "tutorial:click:Add layer",
+      "tutorial:click:Emit",
+      "wait:35",
+      "tutorial:dump:battle-particle-fields",
+      "tutorial:caption:Play checks the Stage, models and particle timing together.",
+      "tutorial:click:Play",
+      "wait:105",
+      "tutorial:caption:Capture is an editing step. Save the presentation to keep it.",
+      "tutorial:click:Save As",
+      "tutorial:input:saveNameField\u003dcustom/tutorial_stage.json",
+      "tutorial:click:Save",
+      "wait:50",
+      "verify:file\u003dconfig/dochi_rpg_maker/cobblemon/battle_presentations/custom/tutorial_stage.json",
+      "wait:20",
+      "gif:stop",
+      "tutorial:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Help",
+        "active": true
+      },
+      {
+        "label": "Element",
+        "active": true
+      },
+      {
+        "label": "Actors",
+        "active": true
+      },
+      {
+        "label": "Background",
+        "active": true
+      },
+      {
+        "label": "Region",
+        "active": true
+      },
+      {
+        "label": "\u003e Particles",
+        "active": true
+      },
+      {
+        "label": "Audio",
+        "active": true
+      },
+      {
+        "label": "Before battle",
+        "active": true
+      },
+      {
+        "label": "Skippable",
+        "active": true
+      },
+      {
+        "label": "Add layer",
+        "active": true
+      },
+      {
+        "label": "Delete layer",
+        "active": true
+      },
+      {
+        "label": "Paste",
+        "active": true
+      },
+      {
+        "label": "Copy",
+        "active": true
+      },
+      {
+        "label": "Emit",
+        "active": true
+      },
+      {
+        "label": "Motion",
+        "active": true
+      },
+      {
+        "label": "Path",
+        "active": true
+      },
+      {
+        "label": "Cues",
+        "active": true
+      },
+      {
+        "label": "Shape: ring",
+        "active": true
+      },
+      {
+        "label": "Pause",
+        "active": true
+      },
+      {
+        "label": "Restart",
+        "active": true
+      },
+      {
+        "label": "Layers - drag to reorder",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

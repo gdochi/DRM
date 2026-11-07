@@ -144,6 +144,7 @@ public final class GuideCapture {
     public GuideCapture(){
         NeoForge.EVENT_BUS.addListener((ClientTickEvent.Post event)->tick());
         if(guideScenes!=null)try{call(guideScenes,"register",output);}catch(Exception error){throw new RuntimeException(error);}
+        try{call(Class.forName("dochi.docs.capture.GuideTutorials"),"register",output);}catch(ClassNotFoundException ignored){}catch(Exception error){throw new RuntimeException(error);}
     }
 
     private void tick(){
@@ -306,7 +307,7 @@ public final class GuideCapture {
                     current=mc.screen;expectedScreen="";screenWait=0;
                 }
                 if(mc.screen!=current){
-                    if(guideScenes!=null&&(boolean)call(guideScenes,"allowsScreenTransition"))current=mc.screen;
+                    if((guideScenes!=null&&(boolean)call(guideScenes,"allowsScreenTransition"))||tutorialTransitions())current=mc.screen;
                     else{recordFailure(views[index][0],new IllegalStateException("Unexpected screen for "+views[index][0]+": "+mc.screen));index++;phase=2;return;}
                 }
                 if(actionIndex<views[index].length){
@@ -358,6 +359,7 @@ public final class GuideCapture {
     }
 
     private void perform(Minecraft mc,String action)throws Exception{
+        if(action.startsWith("tutorial:")){call(Class.forName("dochi.docs.capture.GuideTutorials"),"perform",mc,action,output);current=mc.screen;return;}
         if(action.startsWith("gif:")||action.startsWith("scene:")){
             if(guideScenes==null)throw new IllegalStateException("Animated guide fixture is not installed for this runtime");
             call(guideScenes,"perform",mc,action,npcId,output);current=mc.screen;
@@ -1090,6 +1092,9 @@ public final class GuideCapture {
         }
     }
     private void expectNextScreen(){if(!nextScreen.isBlank()){expectedScreen=nextScreen;nextScreen="";screenWait=0;}}
+    private static boolean tutorialTransitions()throws Exception{
+        try{return (boolean)call(Class.forName("dochi.docs.capture.GuideTutorials"),"allowsScreenTransition");}catch(ClassNotFoundException ignored){return false;}
+    }
     private double nativeUiScale()throws Exception{
         try{return ((Number)call(current,"renderScale")).doubleValue();}
         catch(NoSuchMethodException ignored){

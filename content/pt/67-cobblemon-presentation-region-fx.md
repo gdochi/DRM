@@ -27,6 +27,16 @@ A captura por si só não persiste o estágio em disco. Capture novamente depois
 
 ![Piso capturado e pilares salvos como um arquivo de apresentação.](assets/media/guides/cobble-029-neo1211-flow/cobble-region-captured.png "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. Depois de capturar 31 blocos e dois estados de bloco, Save As criou custom/guide_stage.json. Salvo à direita e o status inferior confirmar a salvar.")
 
+## Capturar um palco e adicionar partículas em vídeo
+
+![Definir cantos, capturar blocos reais, adicionar partículas, visualizar e salvar.](assets/media/guides/tutorial-videos-20261107/battle-region-particles.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. Piso e pilares foram preparados no mundo de gravação. Interface e anotações em inglês; sem áudio.")
+
+1. Comece com uma estrutura pequena. Os cantos **(4, −61, 4)** e **(8, −58, 8)** são exemplos do mundo de gravação; use suas próprias coordenadas.
+2. Use **Region → Capture region** e confira a forma dos blocos no Canvas. Digitar coordenadas não realiza a captura. Confira chunks carregados, limites e regiões vazias. Se a prévia Region funcionar, mas o palco sumir na reprodução completa, confira fundos opacos e camadas Color do preset.
+3. Use **Particles → Add layer → Emit**. O vídeo usa a partícula padrão da nova camada. Visualize antes de alterar período, Interval ou Samples, um por vez.
+4. **Motion** controla movimento, **Path** controla a rota e **Cues** trata efeitos no tempo. Expanda após entender uma camada Emit. O vídeo não mostra edições detalhadas dessas três páginas.
+5. Use **Play** e **Save As → custom/tutorial_stage.json → Save**. Captura e partículas alteram o rascunho; salvar o arquivo é outra etapa.
+
 ## Limites de captura
 
 | Item | Limite atual / comportamento |

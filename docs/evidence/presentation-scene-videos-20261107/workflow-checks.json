@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "videos": 7,
+  "totalSeconds": 192.73,
+  "labelLayoutAndAnimation": true,
+  "opponentTransform": true,
+  "introCueSaved": true,
+  "capturedBlocks": 31,
+  "particleLayers": 1,
+  "sceneSubtitleAndLetterbox": true,
+  "cameraSpots": 4,
+  "serverPlaybackStartedAndFinished": true,
+  "savedFiles": [
+    {
+      "file": "tutorial_gate.json",
+      "sha256": "a3f3c5a6d2ed214b00b96bdae2be9febf92864db8441eecbb5a3b0a75949c7c5"
+    },
+    {
+      "file": "tutorial_rival.json",
+      "sha256": "aca0806eafc1e66ff0488f3c57a504c172a2c78493de4ed1428dc88247f6121a"
+    },
+    {
+      "file": "tutorial_stage.json",
+      "sha256": "325c19431c867fe87e7f28022248c6978c8961580c0b1f8936f353707dcc5877"
+    }
+  ]
+}

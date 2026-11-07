@@ -1,0 +1,31 @@
+{
+  "product": "dochi-real-armor",
+  "version": "0.1.5",
+  "projectId": 1567803,
+  "source": "author",
+  "publishedAt": "2026-11-07T10:34:41.953037+00:00",
+  "environments": [
+    {
+      "loader": "Forge",
+      "minecraft": "1.20.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "26.3"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "26.3"
+    }
+  ],
+  "markdown": "## 리얼아머\n### 0.1.5 Change Log\n#### Global\n##### Added\n* Added armor stat source selection with server confirmation.\n##### Fixed\n* Fixed negative and percentage armor modifiers across equipped items.\n* Fixed durability loss on Elytra and armor resistant to fire.\n##### Changed\n* Removed unverified version limits for optional NPC integrations.\n##### Improved\n* Improved setting availability when connected to older servers.\n#### Forge 1.20.1 / Fabric & NeoForge 1.21.1\n##### Added\n* Added configuration controls for the CustomNPCs resistance order.\n#### Fabric 1.21.1 / Fabric 26.3\n##### Fixed\n* Fixed failed configuration saves reporting success instead of restoring previous values.\n#### Forge 1.20.1 / NeoForge 1.21.1 & 26.3\n##### Added\n* Added Curios slot defense calculations for DNPC only, including body-part armor.\n",
+  "html": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added armor stat source selection with server confirmation.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed negative and percentage armor modifiers across equipped items.</li>\n<li>Fixed durability loss on Elytra and armor resistant to fire.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Removed unverified version limits for optional NPC integrations.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved setting availability when connected to older servers.</li>\n</ul>\n<h4>Forge 1.20.1 / Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added configuration controls for the CustomNPCs resistance order.</li>\n</ul>\n<h4>Fabric 1.21.1 / Fabric 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed failed configuration saves reporting success instead of restoring previous values.</li>\n</ul>\n<h4>Forge 1.20.1 / NeoForge 1.21.1 &amp; 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added Curios slot defense calculations for DNPC only, including body-part armor.</li>\n</ul>"
+}

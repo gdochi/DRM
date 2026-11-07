@@ -27,6 +27,25 @@ En Battle Presentation Maker suivre **Element → Add Label → Content**. L'ét
 
 ![Propriétés d'animation pour cette étiquette.](assets/media/guides/cobble-029-neo1211/cobble-layer-animation.png "La case Start/End est l'intervalle visible ; Start/Final X sont les positions de départ et d'arrivée. Cet exemple fonctionne 0 – 144 ticks, se déplace X 280 → 360 tout en gardant Y 220, et se développe de 0.8 à 1. Vérifiez que le même élément est sélectionné dans la timeline.")
 
+## Régler entrée, mouvement et sortie en vidéo
+
+Reprenez **RIVAL CHALLENGE** du [premier Label](#drm-cobblemon-editor/cobblemon-battle-presentation). En lecture normale, **20 ticks = 1 seconde**. Les champs de temps de Scene Maker utilisent des secondes.
+
+![Régler intervalle, fondus et positions du Label puis comparer lecture et déplacement temporel.](assets/media/guides/tutorial-videos-20261107/battle-animation-timing.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. Animation → Restart → instants avant et pendant l’intervalle. Interface et annotations en anglais ; sans audio.")
+
+| Valeur de la vidéo | Signification |
+| --- | --- |
+| Start **20**, End **120** | Actif entre 1 et 6 secondes après le début |
+| Fade In **12**, Fade Out **12** | Fondu de 0,6 seconde à chaque extrémité de l’intervalle |
+| Start X **−300**, Final X **320** | Déplacement depuis le bord gauche extérieur jusqu’à la position finale |
+| Start Y / Final Y **70** | Hauteur constante pendant le déplacement horizontal |
+
+1. Sélectionnez le Label et ouvrez **Animation**. Un acteur sélectionné affiche d’autres champs.
+2. Saisissez les valeurs du tableau. La position est interpolée sur l’intervalle actif ; Fade multiplie l’opacité obtenue.
+3. Passez de **Layout → Animation** pour valider, puis utilisez **Restart**. Duration vaut **144 ticks / 7,2 secondes**, permettant d’inspecter aussi le temps après la sortie du Label.
+4. Vérifiez le **tick 10**, encore inactif, puis le **tick 75**, pendant le mouvement. Enregistrez après modification.
+5. Ajustez l’intervalle et Easing pour régler la vitesse. Layer/Z contrôle la superposition ; Start/End contrôle le temps. Distinguez texte masqué et texte pas encore actif.
+
 ## Types d'éléments
 
 | Type | Rendu | Champs importants |

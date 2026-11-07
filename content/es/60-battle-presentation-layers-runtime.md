@@ -27,6 +27,25 @@ En Battle Presentation Maker seguir **Element → Add Label → Content**. La et
 
 ![Propiedades de animación para esa etiqueta.](assets/media/guides/cobble-029-neo1211/cobble-layer-animation.png "Start/End Tick es el intervalo visible; Start/Final X son las posiciones de salida y llegada. Este ejemplo ejecuta 0–144 garrapatas, mueve X 280→360 mientras mantiene Y 220, y crece de 0.8 a 1. Compruebe que el mismo elemento está seleccionado en la línea de tiempo.")
 
+## Ajustar entrada, movimiento y salida en vídeo
+
+Continúa con **RIVAL CHALLENGE** de la [primera guía del Label](#drm-cobblemon-editor/cobblemon-battle-presentation). En reproducción normal, **20 ticks = 1 segundo**. Scene Maker usa segundos en sus campos de tiempo.
+
+![Definir intervalo, fundidos y posiciones del Label y comparar reproducción y búsqueda temporal.](assets/media/guides/tutorial-videos-20261107/battle-animation-timing.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1. Animation → Restart → instantes antes y durante el intervalo. Interfaz y anotaciones en inglés; sin audio.")
+
+| Valor del vídeo | Significado |
+| --- | --- |
+| Start **20**, End **120** | Activo entre los segundos 1 y 6 desde el inicio |
+| Fade In **12**, Fade Out **12** | Fundido de 0,6 segundos en cada extremo del intervalo |
+| Start X **−300**, Final X **320** | Desplazamiento desde fuera del borde izquierdo a la posición final |
+| Start Y / Final Y **70** | Mantiene la altura durante el desplazamiento horizontal |
+
+1. Selecciona el Label y abre **Animation**. Un actor seleccionado muestra otros campos.
+2. Introduce los valores de la tabla. La posición se interpola durante el intervalo; Fade multiplica la opacidad resultante.
+3. Cambia **Layout → Animation** para confirmar y usa **Restart**. Duration es **144 ticks / 7,2 segundos**, por lo que puedes ver el tramo posterior a la salida.
+4. Comprueba el **tick 10**, todavía inactivo, y el **tick 75**, durante el movimiento. Guarda después de editar.
+5. Ajusta el intervalo y Easing para cambiar la velocidad. Layer/Z controla superposición; Start/End controla tiempo. Distingue texto tapado de texto que aún no ha comenzado.
+
 ## Tipos de elementos
 
 | Tipo | Representación | Campos importantes |

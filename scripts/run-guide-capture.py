@@ -99,7 +99,8 @@ def main():
     compile_paths += [str(CORE_PROJECT / "build/moddev/artifacts/neoforge-21.1.216-merged.jar")]
     compile_cp = os.pathsep.join(path for path in compile_paths if path)
     compile_result = subprocess.run([str(JAVA / "javac.exe"), "-encoding", "UTF-8", "-proc:none", "-cp", compile_cp,
-                                     "-d", str(classes), str(ROOT / "scripts/guide-capture/GuideCapture.java"), str(ROOT / "scripts/guide-capture/GuideScenes.java")], capture_output=True, text=True)
+                                     "-d", str(classes), *[str(ROOT / "scripts/guide-capture" / name) for name in
+                                         ("GuideCapture.java", "GuideScenes.java", "GuideTutorials.java")]], capture_output=True, text=True)
     (run / "compile.log").write_text(compile_result.stdout + compile_result.stderr, encoding="utf-8")
     if compile_result.returncode:
         raise RuntimeError(compile_result.stderr)

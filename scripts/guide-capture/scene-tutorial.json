@@ -1,0 +1,17 @@
+[
+  {"id":"scene-tutorial","screen":"SceneMakerScreen","actions":[
+    "tutorial:landmarks","wait:40","tutorial:scrub-scene:60","tutorial:caption:1. Scene Settings: keep the 10-second scene and the Player anchor.","gif:start:scene-settings-subtitle","wait:25",
+    "tutorial:input:scene_id=tutorial_gate","tutorial:input:scene_name=Village gate","tutorial:input:scene_duration=10","tutorial:click:Apply Fields","wait:25",
+    "tutorial:caption:Add Subtitle, then set its visible interval in SECONDS.","tutorial:click:+ Subtitle","tutorial:input:scene_start=1","tutorial:input:scene_end=5","tutorial:click:Apply Fields","wait:25",
+    "tutorial:caption:Edit Subtitle opens the text editor. Apply Fields keeps the text.","tutorial:click:Edit Subtitle","wait:20","tutorial:input:box=Welcome to the village!","tutorial:click:Apply Fields","wait:25",
+    "tutorial:caption:Preview the text at the red playhead. The cards keep their own timing.","tutorial:scrub-scene:60","wait:35","tutorial:dump:scene-subtitle-result","gif:stop",
+    "tutorial:caption:2. Select the Camera card, then open World positions.","gif:start:scene-world-camera-path","tutorial:scene-card:cameras","wait:20","tutorial:click:World positions","wait:30",
+    "tutorial:caption:Wheel down reduces speed. WASD moves the WORK camera; P records.","tutorial:wheel:-6","tutorial:hold:68","wait:10","tutorial:release:68","tutorial:key:80","wait:25",
+    "tutorial:caption:N creates the next point at the work camera. Existing points stay.","tutorial:hold:87","wait:20","tutorial:release:87","tutorial:key:78","wait:30",
+    "tutorial:caption:Enter applies the position edit. You still need to save the scene.","tutorial:key:257","wait:25","tutorial:dump:scene-path-result",
+    "tutorial:caption:Play previews the camera path together with the subtitle.","tutorial:click:Stop","tutorial:click:Play","wait:130","tutorial:click:Stop","wait:15","gif:stop",
+    "tutorial:caption:3. Add Letterbox. Start and End set when the bars are visible.","gif:start:scene-effects-save-run","tutorial:click:+ Letterbox","tutorial:input:scene_start=0","tutorial:input:scene_end=10","tutorial:click:Apply Fields","wait:25",
+    "tutorial:caption:Save As stores the draft as your own scene file.","tutorial:click:Save As","wait:20","tutorial:input:saveAsName=tutorial_gate","tutorial:click:Save As","wait:50","verify:file=config/dochi_rpg_maker/scene/tutorial_gate.json","tutorial:dump:scene-saved-result","wait:25",
+    "tutorial:caption:Run Saved asks the server to play the SAVED file.","tutorial:runtime-begin","tutorial:click:Run Saved","wait:230","tutorial:runtime-verify","gif:stop","tutorial:off"
+  ]}
+]

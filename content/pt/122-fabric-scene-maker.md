@@ -26,6 +26,39 @@ Scene Maker é uma ferramenta criadora para organizar o movimento da câmera e e
 5. Abra **World positions** para colocar e ajustar os pontos da câmera.
 6. Use **Play** para pré-visualizar e salve sua própria cena com **Save As**. **Run Saved** reproduz a versão salva, então salve novamente depois de fazer alterações.
 
+## Completar uma cena em três vídeos
+
+Os vídeos sequenciais mostram telas reais de **DRM 0.3.1 / NeoForge 1.21.1**, com legendas e indicadores de clique em inglês, sem áudio. O portão e as lâmpadas foram preparados no mundo de teste para tornar o movimento visível.
+
+### 1. Duração e legenda
+
+![Configurar uma cena de dez segundos e uma legenda ativa entre um e cinco segundos.](assets/media/guides/tutorial-videos-20261107/scene-settings-subtitle.mp4 "Scene Settings → + Subtitle → Edit Subtitle → Apply Fields. O tempo é informado em segundos.")
+
+1. Em **Scene Settings**, digite ID **tutorial_gate**, Name **Village gate** e mantenha Duration **10**. Use **Apply Fields**. A âncora **Player** torna a cena relativa ao jogador. Antes de reduzir a duração, ajuste o fim das câmeras e efeitos existentes ao novo limite.
+2. Use **+ Subtitle**, Start **1**, End **5** e **Apply Fields**. A legenda fica ativa entre 1 e 5 segundos da cena de dez segundos.
+3. Abra **Edit Subtitle**, escreva **Welcome to the village!** e volte com **Apply Fields**. Cancel descarta as alterações dessa janela.
+4. Mova o indicador vermelho para **3 segundos**. Selecionar um cartão muda o alvo de edição, não o tempo. Os fades padrão podem deixar o instante zero preto.
+
+### 2. Construir a rota da câmera no mundo
+
+![Selecionar a câmera, mover a câmera de trabalho, registrar pontos, aplicar e visualizar.](assets/media/guides/tutorial-videos-20261107/scene-world-camera-path.mp4 "Cartão Camera → World positions → WASD/Space → P/N → Enter para Apply → Play. Edição real das posições.")
+
+1. Clique no **corpo do cartão Camera** e em **World positions**. Um cartão de legenda ou efeito não seleciona a câmera.
+2. Role a roda do mouse para baixo para reduzir a velocidade e mova a câmera de trabalho com **WASD / Space / Shift**. **P** registra a posição no tempo atual; apenas mover a câmera não cria um ponto.
+3. Vá a outro lugar e use **N** para adicionar o próximo ponto. P registra o momento atual; N adiciona um ponto posterior. Os tempos da linha do tempo determinam a duração do percurso.
+4. Use **Enter ou Apply** para incorporar as posições ao rascunho. Cancel descarta as alterações da janela.
+5. Use **Stop → Play** para conferir câmera e legenda juntas. Aplique as posições e salve o arquivo da cena.
+
+### 3. Efeitos, arquivo e reprodução real
+
+![Ajustar Letterbox, salvar e usar Run Saved para conferir reprodução e término no servidor.](assets/media/guides/tutorial-videos-20261107/scene-effects-save-run.mp4 "+ Letterbox → Apply Fields → Save As → Run Saved. A reprodução final usa o arquivo salvo.")
+
+1. Use **+ Letterbox**, Start **0**, End **10** e **Apply Fields**. Efeitos possuem cartões e intervalos próprios.
+2. Use **Save As** com **tutorial_gate**. O arquivo é **config/dochi_rpg_maker/scene/tutorial_gate.json**. Apply das posições e Apply Fields não salvam o arquivo.
+3. Use **Run Saved** para reproduzir o arquivo pelo servidor. Salve novamente após novas alterações.
+4. Para repetir por comando, use **/drm scene tutorial_gate.json**. Consulte os seletores de jogadores na seção de comandos abaixo.
+5. Confira o desaparecimento da legenda e a volta ao jogo. A reprodução foi verificada no mundo de teste isolado de um jogador.
+
 ## Percorra a linha do tempo
 
 O pino vermelho é a posição de reprodução. Arraste-o deliberadamente para procurar. Selecionar um cartão não procura. A barra de rolagem horizontal inferior move o intervalo de tempo visível de forma independente; use os controles de menos/mais para ajustar o zoom. Use o interruptor Loop quando você quiser reprodução de visualização repetida.
