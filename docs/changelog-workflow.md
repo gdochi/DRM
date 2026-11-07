@@ -14,6 +14,7 @@
 
 ## 공개 기준
 
+- 2026-11-07 사용자 지시로 DRM 0.3.1과 코블몬 에디터 0.2.9도 `[LOG] Change Log` 원문을 작성자 기록으로 게시한다. DRM은 Forge 1.20.1과 Fabric·NeoForge 1.21.1/26.3, 코블몬 에디터는 Fabric·NeoForge 1.21.1로 구분한다.
 - 2026-11-07 사용자 지시로 DW·DWE 0.3.2는 작성자가 확정한 `[LOG] Change Log` 원문을 CurseForge 업로드에 앞서 docs에 게시한다. 이 명시적 작성자 게시 경로는 `source: "author"`, `publishedAt`, `environments`, 원문 `markdown`과 `html`로 기록하며, 아래 CurseForge 파일 검증 기준과 분리한다. 로더·Minecraft 범위는 확정 원문의 범위만 사용한다.
 - 작성자 기록에는 공개 파일 ID·업로드 시각·다운로드 URL·`status: 4`를 만들지 않는다. 화면에는 실제 문서 게시 날짜와 해당 로더의 본문이 표시되고 다운로드 버튼은 생략된다. 실제 공개 파일이 확인되면 확인 목록과 공식 파일별 원문으로 전환한다. 기존 공개 버전·검증 목록은 유지한다.
 

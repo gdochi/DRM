@@ -45,7 +45,7 @@ export function scopeMatches(label, loader, minecraft) {
   return groups.some(group => (!group.loaders.length || group.loaders.includes(loader)) && (!group.versions.length || group.versions.includes(minecraft)));
 }
 
-export function scopedNotes(html, loader, minecraft) {
+export function scopedNotes(html, loader, minecraft, { inferItemPlatforms = true } = {}) {
   // A few early uploads contain Markdown headings/lists inside HTML paragraphs.
   const normalized = html.replace(/\r\n/g, '\n').replace(/<p>([\s\S]*?)<\/p>/g, (original, body) => {
     if (!/^(?:#{1,6}\s|[-*]\s)/.test(body.trim())) return original;
@@ -72,7 +72,7 @@ export function scopedNotes(html, loader, minecraft) {
       const prefix = node.children.filter(child => !['ul','ol'].includes(child.tag)).map(textOf).join('').trim();
       if (isScope(prefix) && node.children.some(child => ['ul','ol'].includes(child.tag))) return scopeMatches(prefix, loader, minecraft) ? `<li>${node.children.filter(child => ['ul','ol'].includes(child.tag)).map(render).join('')}</li>` : '';
       // Some older releases put target-specific changes directly in list items.
-      if (/^(?:Added|Fixed|Improved|Changed)\b/.test(prefix) && /\b(?:Forge|NeoForge|Fabric)\b/.test(prefix)) {
+      if (inferItemPlatforms && /^(?:Added|Fixed|Improved|Changed)\b/.test(prefix) && /\b(?:Forge|NeoForge|Fabric)\b/.test(prefix)) {
         const platforms = prefix.match(/\b(?:NeoForge|Forge|Fabric)\b/g);
         if (!platforms.includes(loader)) return '';
       }
@@ -163,7 +163,7 @@ export async function loadChangelogs(directory, published) {
           environments.add(key);
           releases.push({ product: release.product, version: release.version, loader: environment.loader, minecraft: environment.minecraft,
             source: 'author', publishedAt: release.publishedAt, url: '', uploadedAt: '',
-            html: scopedNotes(release.html, environment.loader, environment.minecraft) });
+            html: scopedNotes(release.html, environment.loader, environment.minecraft, { inferItemPlatforms: false }) });
         }
         continue;
       }

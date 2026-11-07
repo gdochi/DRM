@@ -10,7 +10,7 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const output=path.join(root,'docs/evidence/dw-dwe-032-20261107');await mkdir(output,{recursive:true});
 const context={window:{}};vm.runInNewContext(await readFile(path.join(root,'dist/assets/changelogs.js'),'utf8'),context);
 const releases=JSON.parse(JSON.stringify(context.window.DOCHI_CHANGELOGS));
-const authored=releases.filter(r=>r.source==='author');assert.equal(authored.length,6);
+const authored=releases.filter(r=>r.source==='author'&&['dochi-warfare','dochi-warfare-expanded'].includes(r.product));assert.equal(authored.length,6);
 const published=JSON.parse(await readFile(path.join(root,'content/changelogs/published.json'),'utf8'));
 assert.equal(releases.filter(r=>r.source!=='author').length,published.projects.reduce((n,p)=>n+p.files.length,0));
 const require=createRequire(import.meta.url);
