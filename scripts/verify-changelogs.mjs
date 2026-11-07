@@ -10,7 +10,7 @@ import { serve } from './preview-server.mjs';
 import { scopeMatches, scopedNotes } from './changelog-data.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const output = path.join(root, 'docs/evidence/changelog-tabs-20261106');
+const output = path.join(root, process.env.DOCHI_CHANGELOG_EVIDENCE || 'docs/evidence/changelog-tabs-20261106');
 await mkdir(output, { recursive: true });
 const { config, data } = await loadBuiltDocs(path.join(root, 'dist'));
 const context = { window: {} };
@@ -47,7 +47,8 @@ try {
     for (const key of ['product', 'loader', 'minecraft', 'version']) assert.equal(actual[key], release[key], link(release));
     assert.equal(await page.locator('.changelog-release').count(), 1);
     assert.equal(await page.locator('.release-title h2').textContent(), release.version);
-    assert.equal(await page.locator('.release-title a').getAttribute('href'), release.url);
+    if (release.source === 'author') assert.equal(await page.locator('.release-title a').count(), 0, 'Author notes have no unverified download');
+    else assert.equal(await page.locator('.release-title a').getAttribute('href'), release.url);
     const categories = await page.locator('.changelog-notes h3').allTextContents();
     for (const title of ['Added','Fixed','Changed','Improved']) assert(categories.filter(item => item === title).length <= 1, `Repeated category ${link(release)} ${title}`);
     const expectedHtml = await page.evaluate(html => new DOMParser().parseFromString(html, 'text/html').body.innerHTML, release.html);
@@ -57,7 +58,7 @@ try {
     await page.setViewportSize({ width: 1440, height: 1000 });
     routes.push(link(release));
   }
-  checks.push(`All ${routes.length} public environment/version routes show exactly one release, its exact download and no mobile overflow.`);
+  checks.push(`All ${routes.length} environment/version routes show exactly one release, verified downloads when available and no mobile overflow.`);
 
   for (const locale of Object.keys(config.locales)) {
     await page.goto(`${origin}/?lang=${locale}#home`);
@@ -65,15 +66,15 @@ try {
     for (const width of [320, 390, 768, 1440]) {
       await page.setViewportSize({ width, height: 1000 });
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `Home overflow ${locale} ${width}`);
-      assert.equal(await page.locator('.track-changelog').count(), config.wikiMods.length);
+      assert.equal(await page.locator('.track-changelog').count(), config.wikiMods.filter(mod => !mod.hidden).length);
       for (const group of await page.locator('.track-primary-actions').all()) {
         const boxes = await group.locator('a').evaluateAll(links => links.map(link => { const r=link.getBoundingClientRect(); return {x:r.x,y:r.y,right:r.right,bottom:r.bottom}; }));
         assert(boxes[1].x >= boxes[0].right && Math.abs(boxes[1].y - boxes[0].y) < 1, `Changelog must sit right of Open docs: ${locale} ${width}`);
       }
     }
     await page.setViewportSize({ width: 390, height: 844 });
-    await page.locator('.track-changelog').nth(1).click();
-    await page.waitForSelector('[data-changelog][data-product="core-fabric"]');
+    await page.locator('.track-changelog[href="#changelog/core"]').click();
+    await page.waitForSelector('[data-changelog][data-product="core"]');
     assert.equal(await page.locator('.product-tabs [aria-current]').count(), 1);
   }
   checks.push('All eight interface languages keep Changelog immediately right of Open docs at 320, 390, 768 and 1440px.');

@@ -365,7 +365,7 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
 .environment-switch a { padding: 9px 12px; min-height: 42px; border: 1px solid var(--line); border-radius: 6px; color: var(--muted); font-size: .84rem; overflow-wrap: anywhere; }
 .environment-switch a:hover { background: var(--surface-3); }
 .environment-switch a[aria-current] { color: var(--brand); background: var(--brand-soft); border-color: var(--brand); font-weight: 700; }
-.track-curseforge:has(small) { gap: 4px; }
+.track-actions .track-curseforge:has(small) { flex-direction: column; gap: 1px; }
 .track-curseforge small { font-size: .65rem; }
 .sidebar .product-tabs a { padding: 8px; font-size: .78rem; }
 .sidebar .product-tabs svg { width: 15px; height: 15px; }

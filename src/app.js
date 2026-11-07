@@ -914,9 +914,10 @@
     const minecraft = route.minecraft || minecraftVersions[0];
     const versions = [...new Set(releases.filter(release => release.loader === loader && release.minecraft === minecraft).map(release => release.version))].sort((a,b) => b.localeCompare(a, undefined, { numeric: true }));
     const version = route.version || versions[0];
-    const files = releases.filter(release => release.loader === loader && release.minecraft === minecraft && release.version === version).sort((a,b) => b.uploadedAt.localeCompare(a.uploadedAt));
+    const files = releases.filter(release => release.loader === loader && release.minecraft === minecraft && release.version === version).sort((a,b) => (b.publishedAt || b.uploadedAt).localeCompare(a.publishedAt || a.uploadedAt));
     if (!files.length) return renderNotFound(product);
     const release = files[0];
+    const date = release.publishedAt || release.uploadedAt;
     const tab = (label, href, active) => `<a href="${href}"${active ? ' aria-current="page"' : ""}>${escapeHtml(label)}</a>`;
     return `<section class="changelog-shell" data-changelog data-product="${escapeAttr(product)}" data-loader="${escapeAttr(loader)}" data-minecraft="${escapeAttr(minecraft)}" data-version="${escapeAttr(version)}">
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home">Dochi's Wiki</a>${icon("chevron")}<span>${escapeHtml(productText(config.products[product], "label"))}</span></nav>
@@ -927,7 +928,7 @@
       <div class="changelog-filters"><div><h2>${escapeHtml(changelogText("loader"))}</h2><nav class="changelog-options" aria-label="${escapeAttr(changelogText("loader"))}">${loaders.map(item => tab(item, changelogLink(product, item), loader === item)).join("")}</nav></div>
       <div><h2>${escapeHtml(changelogText("minecraft"))}</h2><nav class="changelog-options" aria-label="${escapeAttr(changelogText("minecraft"))}">${minecraftVersions.map(item => tab(item, changelogLink(product, loader, item), minecraft === item)).join("")}</nav></div></div>
       <div class="changelog-layout"><aside class="changelog-versions"><h2>${escapeHtml(changelogText("versions"))}</h2><nav aria-label="${escapeAttr(changelogText("versions"))}">${versions.map(item => tab(item, changelogLink(product, loader, minecraft, item), version === item)).join("")}</nav></aside>
-      <article class="changelog-release"><header><div class="release-context"><span>${escapeHtml(loader)} ${escapeHtml(minecraft)}</span><time datetime="${escapeAttr(release.uploadedAt)}">${escapeHtml(release.uploadedAt.slice(0,10))} UTC</time></div><div class="release-title"><h2>${escapeHtml(version)}</h2>${files.map(file => `<a class="track-open" href="${escapeAttr(file.url)}" target="_blank" rel="noreferrer">${escapeHtml(changelogText("download"))}${icon("external")}</a>`).join("")}</div><p>${escapeHtml(changelogText("notes"))}</p></header>
+      <article class="changelog-release"><header><div class="release-context"><span>${escapeHtml(loader)} ${escapeHtml(minecraft)}</span><time datetime="${escapeAttr(date)}">${escapeHtml(date.slice(0,10))} UTC</time></div><div class="release-title"><h2>${escapeHtml(version)}</h2>${files.filter(file => file.url).map(file => `<a class="track-open" href="${escapeAttr(file.url)}" target="_blank" rel="noreferrer">${escapeHtml(changelogText("download"))}${icon("external")}</a>`).join("")}</div><p>${escapeHtml(changelogText("notes"))}</p></header>
       <div class="doc-page-body changelog-notes" lang="en">${release.html || `<p>${escapeHtml(changelogText("empty"))}</p>`}</div></article></div>
     </section>`;
   }
