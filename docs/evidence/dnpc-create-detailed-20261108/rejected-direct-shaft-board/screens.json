@@ -1,0 +1,15 @@
+[
+  {
+    "id": "lesson-inspection-board",
+    "actualScreenAtFailure": "world",
+    "attemptedActions": [
+      "lesson:prepare:inspect",
+      "wait:30",
+      "lesson:power-board",
+      "wait:40",
+      "lesson:check-board-power"
+    ],
+    "status": "failed",
+    "error": "java.lang.RuntimeException: perform"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "startMs": 605.0648,
+    "step": 1,
+    "title": "Stock Ticker 창구 · 연결과 실제 주문 화면",
+    "body": "좌석 옆에는 Stock Ticker 하나만 있습니다. 공급 Packager와 같은 네트워크로 미리 연결했습니다."
+  },
+  {
+    "startMs": 8263.0451,
+    "step": 2,
+    "title": "빈 시간표에서 시작",
+    "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+  },
+  {
+    "startMs": 15305.4698,
+    "step": 3,
+    "title": "근무 시간 만들기",
+    "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+  },
+  {
+    "startMs": 28558.3675,
+    "step": 4,
+    "title": "시간대에 할 일 추가",
+    "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+  },
+  {
+    "startMs": 40310.8996,
+    "step": 5,
+    "title": "Stock Ticker와 좌석을 각각 지정",
+    "body": "먼저 Ticker 블록을 고르고, 다음에 Create seat를 별도로 고릅니다."
+  },
+  {
+    "startMs": 56502.4899,
+    "step": 6,
+    "title": "활성화하고 NPC에 저장",
+    "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+  },
+  {
+    "startMs": 66207.2651,
+    "step": 7,
+    "title": "저장 확인 후 편집기 닫기",
+    "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+  },
+  {
+    "startMs": 70705.0022,
+    "step": 8,
+    "title": "근무 자리로 이동해 앉기",
+    "body": "NPC가 창구 좌석에 앉을 때까지 기다립니다. 빈손으로 일반 상호작용을 합니다."
+  },
+  {
+    "startMs": 83055.149,
+    "step": 9,
+    "title": "연결된 실제 재고가 보이는 Create 화면",
+    "body": "공급 재고인 철괴 16개가 표시됩니다. Create 주문 화면에서 네트워크 연결과 재고를 먼저 확인하세요."
+  }
+]

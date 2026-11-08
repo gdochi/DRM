@@ -1,0 +1,86 @@
+[
+  {
+    "startMs": 600.4806,
+    "step": 1,
+    "title": "조건 제어 · 하한과 상한을 직접 설정",
+    "body": "크랭크와 오른쪽 센서 통은 다른 대상입니다. 철괴 재고가 부족할 때만 돌리도록 만듭니다."
+  },
+  {
+    "startMs": 4557.1882,
+    "step": 2,
+    "title": "빈 시간표에서 시작",
+    "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+  },
+  {
+    "startMs": 11599.5008,
+    "step": 3,
+    "title": "근무 시간 만들기",
+    "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+  },
+  {
+    "startMs": 24856.0271,
+    "step": 4,
+    "title": "시간대에 할 일 추가",
+    "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+  },
+  {
+    "startMs": 36592.9809,
+    "step": 5,
+    "title": "조작할 장치 지정",
+    "body": "Control device가 Hand crank인지 확인하고 Machine control position에서 크랭크를 고릅니다."
+  },
+  {
+    "startMs": 45002.8174,
+    "step": 6,
+    "title": "센서 종류를 Item quantity로 전환",
+    "body": "Sensor reading의 Redstone strength를 한 번 눌러 Item quantity로 바꿉니다."
+  },
+  {
+    "startMs": 48003.0639,
+    "step": 7,
+    "title": "읽을 보관함 지정",
+    "body": "Sensor position에서 오른쪽 IRON STOCK 통을 고릅니다. 조작 장치와 혼동하지 마세요."
+  },
+  {
+    "startMs": 56400.9542,
+    "step": 8,
+    "title": "셀 아이템 선택",
+    "body": "Counted item은 Iron Ingot입니다. 다른 아이템은 이 재고 수량에 포함되지 않습니다."
+  },
+  {
+    "startMs": 71844.737,
+    "step": 9,
+    "title": "하한 2 / 상한 6 입력",
+    "body": "Activate at the lower threshold는 ON입니다. 먼저 상한 6, 다음 하한 2를 입력해 유효한 범위를 유지합니다."
+  },
+  {
+    "startMs": 79641.85,
+    "step": 10,
+    "title": "활성화하고 NPC에 저장",
+    "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+  },
+  {
+    "startMs": 89351.8051,
+    "step": 11,
+    "title": "저장 확인 후 편집기 닫기",
+    "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+  },
+  {
+    "startMs": 93849.1247,
+    "step": 12,
+    "title": "빈 재고에서 크랭크 작동",
+    "body": "재고가 0이므로 하한 조건을 만족합니다. NPC가 장치에 접근해 실제 입력을 시작합니다."
+  },
+  {
+    "startMs": 100550.4372,
+    "step": 13,
+    "title": "센서 재고를 6으로 바꿔 정지 재현",
+    "body": "검증 도구가 철괴 여섯 개를 넣습니다. 크랭크가 철괴를 생산한 장면이 아닙니다."
+  },
+  {
+    "startMs": 108402.6305,
+    "step": 14,
+    "title": "상한 도달과 이전 상태 유지",
+    "body": "6 이상이면 입력을 멈춥니다. 이후 3이나 4로 줄어도 하한 2에 닿기 전에는 정지 상태를 유지합니다."
+  }
+]

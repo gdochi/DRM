@@ -21,10 +21,12 @@ audience: Creators / server operators
 2. Choose **Control device → Hand crank** and assign the crank to **Machine control position**.
 3. Choose **Sensor reading → Item quantity**, then assign a barrel to **Sensor position**.
 4. Set **Counted item → Iron Ingot**. Only that item ID is counted.
-5. Turn on **Activate at the lower threshold** and set **Lower threshold 2 / Upper threshold 6**.
+5. Turn on **Activate at the lower threshold**. Enter **6** in **Upper threshold** first, then **2** in **Lower threshold** to keep the range valid.
 6. Set **Work interval (ticks)**, enable the schedule and save.
 
-![Cranking while iron stock is low and stopping input when stock reaches six.](assets/media/guides/create-tutorials-20261108/create-condition.mp4 "The fixture changes the sensor inventory from zero to six to demonstrate thresholds. This crank does not produce the added ingots.")
+![Author conditional control, assign actuator, sensor and iron, enter upper six then lower two, and observe start and stop.](assets/media/guides/create-lessons-20261108/lesson-conditional-control.mp4 "Enter the upper value first to keep a valid range. The fixture's explicit 0→6 stock change is test input; the crank does not produce those ingots.")
+
+**Jump points**: 0:04 Empty schedule · 0:36 Actuator · 0:45 Sensor · 0:56 Item selection · 1:11 Thresholds · 1:19 Enable/save · 1:33 Native execution · 1:40 Stop at six.
 
 ## Two thresholds preserve the previous state between them
 
@@ -71,13 +73,15 @@ Players retain manual priority. Editing, combat, interaction and disabled AI pau
 4. Set **Work interval (ticks)**. Inspection reads use a minimum interval of **20 ticks**.
 5. Optionally assign a Display Board, then save.
 
-![Visiting the crank and an empty Create tank in order to read their native state.](assets/media/guides/create-tutorials-20261108/create-inspection.mp4 "Inspection only: the clip does not repair, refuel, fill tanks or demonstrate Display Board output.")
+![Assign two inspection positions and a real Display Board, enter its first and reserved rows, then observe the route and board report.](assets/media/guides/create-lessons-20261108/lesson-inspection-board.mp4 "The crank and empty tank are selected separately. A powered, assembled native board receives the report and is shown close up.")
+
+**Jump points**: 0:05 Board power · 0:09 Empty schedule · 0:41 Inspection targets · 1:01 Assign board · 1:09 First/reserved rows · 1:14 Enable/save · 1:29 Native execution · 1:41 Board report.
 
 Supported readings include stopped/running rotation, overstress, Burner heat and tank fill. Inspection does not repair devices or change their contents. Use a separate conditional action to respond to measurements.
 
 ## Display Board reports
 
-Prepare a correctly assembled Create board and its normal power. Assign **Display Board (optional)** and set:
+Prepare a correctly assembled Create board and its normal power. The video drives the board with a meshing **Cogwheel** beside it. Receiving report text alone does not make an unpowered board settle into readable characters; check the actual gear connection and running state first. Assign **Display Board (optional)** and set:
 
 | Field | Meaning |
 | --- | --- |

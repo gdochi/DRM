@@ -1,0 +1,74 @@
+[
+  {
+    "startMs": 611.7392,
+    "step": 1,
+    "title": "Material Ordering · 재고 목표와 주소 입력",
+    "body": "공급망에는 철괴 16개가 있고, 초록 수령 통은 비어 있습니다. 목표 재고를 네 개로 설정합니다."
+  },
+  {
+    "startMs": 4558.3622,
+    "step": 2,
+    "title": "빈 시간표에서 시작",
+    "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+  },
+  {
+    "startMs": 11598.58,
+    "step": 3,
+    "title": "근무 시간 만들기",
+    "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+  },
+  {
+    "startMs": 24850.0581,
+    "step": 4,
+    "title": "시간대에 할 일 추가",
+    "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+  },
+  {
+    "startMs": 36610.4978,
+    "step": 5,
+    "title": "재료가 실제 도착할 수령 통",
+    "body": "Receiving inventory to maintain에는 목표 재고를 검사할 초록 통을 지정합니다."
+  },
+  {
+    "startMs": 45011.3767,
+    "step": 6,
+    "title": "유지할 아이템과 목표 수량",
+    "body": "Material item에서 철괴를 선택하고 수량 4를 입력합니다. 여기서는 배치 소비량이 아닌 목표 재고입니다."
+  },
+  {
+    "startMs": 62847.2586,
+    "step": 7,
+    "title": "연결된 Ticker와 배송 주소",
+    "body": "공급망에 연결된 Stock Ticker를 선택하고 Delivery address에 Workshop A를 입력합니다."
+  },
+  {
+    "startMs": 77258.6829,
+    "step": 8,
+    "title": "활성화하고 NPC에 저장",
+    "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+  },
+  {
+    "startMs": 86950.1256,
+    "step": 9,
+    "title": "저장 확인 후 편집기 닫기",
+    "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+  },
+  {
+    "startMs": 91448.6547,
+    "step": 10,
+    "title": "실제 네트워크 주문과 포장",
+    "body": "NPC가 Ticker로 접근합니다. 공급 Packager가 철괴 네 개를 예약·포장하는 과정을 보세요."
+  },
+  {
+    "startMs": 104956.2781,
+    "step": 11,
+    "title": "공급 재고 16 → 12",
+    "body": "실제로 철괴 네 개가 빠졌습니다. 접수한 주문은 배송이 늦어도 자동 중복 발송하지 않습니다."
+  },
+  {
+    "startMs": 109762.0177,
+    "step": 12,
+    "title": "주문과 도착은 별도 단계",
+    "body": "이 강의는 주문 접수까지입니다. 실제 경로로 배송·개봉해 수령 통에 재료가 들어와야 완료됩니다."
+  }
+]

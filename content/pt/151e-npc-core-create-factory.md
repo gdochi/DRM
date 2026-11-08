@@ -40,7 +40,9 @@ Entrada e resultado podem compartilhar o Depot. Origem deve diferir da entrada; 
 6. Ative **Repeat throughout shift** ou escolha **Batch size** finito, que aqui conta lotes.
 7. Configure **Processing timeout in ticks / Work interval (ticks)**, ative e salve.
 
-![Definir dois lingotes e duas chapas por lote e salvar a máquina preparada.](assets/media/guides/create-tutorials-20261108/create-factory-settings.mp4 "Posições e itens preparados. A execução abaixo usa dois lotes de um item.")
+![Escolher quatro posições e os dois itens de Factory Process, informar quantidades e tempos e produzir duas chapas.](assets/media/guides/create-lessons-20261108/lesson-factory-process.mp4 "Parte de horário vazio. Entrada e resultado selecionam o mesmo Depot. Um lingote e uma chapa por lote, Batch size 2; o inventário final é aberto.")
+
+**Momentos**: 0:10 Horário vazio · 0:42 Quatro posições · 1:15 Escolher itens · 1:49 Quantidade/contagem · 2:03 Ativar/salvar · 2:17 Execução real · 2:35 Resultado no inventário.
 
 ## Quantidades dos lotes
 
@@ -52,8 +54,6 @@ Entrada e resultado podem compartilhar o Depot. Origem deve diferir da entrada; 
 Isso pressupõe receita garantida 1:1. Resultados aleatórios podem deixar o NPC esperando uma quantidade impossível. **IDs de matéria-prima e produto devem ser diferentes**.
 
 ## Reunir, inserir, aguardar e entregar
-
-![Dois lotes completos com a prensa nativa e entrega de chapas.](assets/media/guides/create-tutorials-20261108/create-factory-process.mp4 "Um lingote e uma chapa por lote; Batch size 2. Dois resultados reais chegam ao barril final.")
 
 Remova o produto configurado que já estiver na saída da máquina antes do início. O NPC reúne, insere, espera o resultado real e entrega. Um trabalhador reserva entrada/resultado; outro compartilhando pode esperar em **Workstation is reserved by another worker**.
 
@@ -76,7 +76,9 @@ Prepare o lado Create:
 
 Depois adicione **Material Ordering**, atribua receptor, itens/metas, **Stock Ticker**, **Delivery address** e intervalo; salve.
 
-![Pedir quatro lingotes na rede preparada e aguardar um pedido aceito.](assets/media/guides/create-tutorials-20261108/create-material-order.mp4 "Estoque fornecedor 16→12 e um registro persistente. O exemplo não conecta rota de entrega; chegada e abertura não são demonstradas.")
+![Definir inventário receptor, ferro, meta quatro, Ticker e endereço e conferir pedido e estoque 16→12.](assets/media/guides/create-lessons-20261108/lesson-material-order.mp4 "Inclui pesquisa, seleção e Apply no seletor real. Mostra pedido aceito e embalagem; chegada e abertura exigem rota de entrega separada.")
+
+**Momentos**: 0:04 Horário vazio · 0:36 Estoque receptor · 0:45 Meta de estoque · 1:02 Ticker/endereço · 1:17 Ativar/salvar · 1:31 Execução real · 1:44 Estoque fornecedor · 1:49 Pedido/chegada.
 
 ## Pedidos pendentes não são reenviados automaticamente
 

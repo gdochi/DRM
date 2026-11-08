@@ -13,7 +13,7 @@ audience: Creators / server operators
 
 ## Before starting
 
-These are creator-side **Schedule** settings followed by their in-world execution. Read [Create setup](#dochi-npc-core/npc-core-create-start) for installation and saving. The silent clips use DNPC 0.1.3 + Create 6.0.10 / NeoForge 1.21.1. Runtime examples have prepared devices and shifts; editor clips show the stated field edits.
+These lessons follow creator-side **Schedule** authoring through native execution. Read [Create setup](#dochi-npc-core/npc-core-create-start) for installation and saving. Silent DNPC 0.1.3 + Create 6.0.10 / NeoForge 1.21.1 recordings use English UI and Korean step captions. Each task starts with an empty schedule and ends with its result; the return lesson continues the configuration saved in the preceding storage-delivery lesson.
 
 ## Sandpaper polishing
 
@@ -23,7 +23,9 @@ These are creator-side **Schedule** settings followed by their in-world executio
 4. Choose **Repeat throughout shift**, or **Finish one batch per shift** with a finite **Batch size**. This example polishes two Rose Quartz into two Polished Rose Quartz.
 5. Set **Work interval (ticks)**, enable the schedule and save. **20 ticks** is one second at 20 TPS.
 
-![Collecting real sandpaper and rose quartz, polishing at the assigned position and delivering two results.](assets/media/guides/create-tutorials-20261108/create-polish.mp4 "Prepared schedule using Create's actual recipe and tool wear. Counters are read from server inventories.")
+![Inspect the ingredients, author an empty schedule, assign source, output and workplace, polish two items and open the result storage.](assets/media/guides/create-lessons-20261108/lesson-polish.mp4 "Sandpaper and two rose quartz are prepared. The task uses Create's actual recipe and tool wear; the final inventory contains two Polished Rose Quartz.")
+
+**Jump points**: 0:09 Ingredients · 0:12 Empty schedule · 0:44 Source · 0:53 Finished storage · 1:01 Workplace · 1:10 Quantity/count · 1:17 Enable/save · 1:32 Native execution · 1:53 Inventory result.
 
 Sandpaper loses real durability. A full result storage leaves finished goods with the NPC, and the NPC needs inventory space. Assigning a work position alone does not supply paper, materials or a destination.
 
@@ -51,17 +53,19 @@ There are up to **32 routes**. Finite delivery **Batch size 1–64 counts sealed
 4. Replace the generated address with **Workshop A**. Check the recipient, or reselect it with **🔍**.
 5. Configure waiting time, repeat/finite work, batch and interval. Save the NPC.
 
-![Editing Workshop A and an 80-tick recipient wait, then saving the prepared route.](assets/media/guides/create-tutorials-20261108/create-parcel-routes.mp4 "The recipient and storage are preassigned. 80 ticks is four seconds at 20 TPS, rather than the 400-tick default.")
-
 A route stores the recipient's **UUID**, not its display name. Recreating or cloning a same-named NPC does not replace that identity. Reselect a replacement recipient; see [NPC templates](#dochi-npc-core/npc-core-templates).
 
-![Delivering Workshop A to the recipient while Unknown remains at the source.](assets/media/guides/create-tutorials-20261108/create-parcel-npc.mp4 "One sealed package reaches the recipient's inventory; the unmatched package stays at the source.")
+![Author a route from an empty schedule, assign source and returns, choose the real recipient and Workshop A, then deliver the parcel.](assets/media/guides/create-lessons-20261108/lesson-parcel-npc.mp4 "Receiving Clerk is selected in the native recipient picker. One sealed package reaches that NPC; the unmatched Unknown package remains at the source.")
+
+**Jump points**: 0:10 Empty schedule · 0:42 Source/returns · 0:58 Recipient NPC · 1:08 Address · 1:11 Quantity/count · 1:22 Enable/save · 1:36 Native execution · 1:52 Inventory result.
 
 ## Route to an inventory
 
 Choose **Add inventory delivery route**, sneak-right-click the receiving storage and enter its address. Existing rows can switch through **Choose a receiving inventory / Choose an NPC recipient**.
 
-![Delivering an addressed sealed package to a receiving barrel.](assets/media/guides/create-tutorials-20261108/create-parcel-container.mp4 "This clip demonstrates intact storage delivery, without Packager unpacking or downstream transport.")
+![Add a storage-delivery route, assign source, returns, destination and address, then open the receiving inventory.](assets/media/guides/create-lessons-20261108/lesson-parcel-container.mp4 "Starts with an empty schedule. The final blue barrel contains the sealed package; packing ordinary items is a separate Create operation.")
+
+**Jump points**: 0:10 Empty schedule · 0:42 Source/returns · 0:58 World targets · 1:06 Address · 1:10 Quantity/count · 1:21 Enable/save · 1:35 Native execution · 1:52 Inventory result.
 
 A package must match **exactly one** route. Create address patterns apply: overlapping **Workshop *** and **Workshop A** routes can match the same package. DNPC leaves ambiguous packages at the source instead of choosing the first row. Start with distinct exact addresses.
 
@@ -69,7 +73,9 @@ A package must match **exactly one** route. Create address patterns apply: overl
 
 If the recipient is already missing/full before pickup, the package stays at the source. If that happens after pickup, the courier waits, then carries it to **Return inventory**. A full return storage leaves the parcel in the courier's inventory.
 
-![Returning a package when its destination fills after pickup.](assets/media/guides/create-tutorials-20261108/create-parcel-return.mp4 "The capture fixture deliberately fills the destination with stone after pickup to demonstrate obstruction. The courier returns the package intact.")
+![Reopen the preceding lesson's saved route, change recipient wait, then inspect obstruction, waiting and the returned parcel.](assets/media/guides/create-lessons-20261108/lesson-parcel-return.mp4 "The fixture explicitly fills the destination with stone just after pickup. Both the full destination and the returned sealed package are shown in real inventories.")
+
+**Jump points**: 0:15 Extra pause · 0:19 Enable/save · 0:33 Obstruction · 0:53 Destination check · 0:58 Returned parcel.
 
 | State | Action |
 | --- | --- |
@@ -89,9 +95,11 @@ Ending a shift does not erase cargo. An already collected package can retain its
 4. Save, close the editor and wait for **Attending the Stock Ticker**.
 5. Ordinary NPC interaction opens Create's native ordering screen. NPC editing tools retain editing priority.
 
-![The NPC sits at the counter and opens Create's actual ordering screen.](assets/media/guides/create-tutorials-20261108/create-stock-keeper.mp4 "Shows attendance and native menu entry, without completing payment or logistics delivery.")
+![Author a counter job, assign Stock Ticker and Create seat separately, then open Create's ordering screen with connected stock.](assets/media/guides/create-lessons-20261108/lesson-stock-ticker.mp4 "A supplier Packager and Stock Link are connected. The lesson includes approach, seating, empty-hand interaction and the native ordering screen.")
 
-**No Packagers Linked** appears because this counter example has no supplier Packager connection. Connect a real Create logistics network and stock for usable orders. The material-ordering guide uses a separate connected network.
+**Jump points**: 0:08 Empty schedule · 0:40 World targets · 0:56 Enable/save · 1:10 Native execution · 1:23 Order screen.
+
+The recorded counter connects a supplier Packager, Stock Link and real iron stock on the same network. Empty-hand interaction opens Create's ordering screen with that stock visible. Payment and completed delivery to a receiving address are outside this lesson.
 
 This is Create's player-facing menu, distinct from a DRM shop editor. Missing/ambiguous tickers or an occupied seat prevent attendance. The NPC leaves safely after the shift. Sitting, attendance and [automatic material ordering](#dochi-npc-core/npc-core-create-factory) are separate actions.
 

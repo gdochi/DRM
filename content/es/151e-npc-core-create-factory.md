@@ -40,7 +40,9 @@ Entrada y resultado pueden compartir Depot. Origen debe diferir de entrada; dest
 6. Activa **Repeat throughout shift** o define **Batch size** finito, que aquí cuenta lotes.
 7. Configura **Processing timeout in ticks / Work interval (ticks)**, activa y guarda.
 
-![Definir dos lingotes y dos placas por lote y guardar los ajustes preparados.](assets/media/guides/create-tutorials-20261108/create-factory-settings.mp4 "Posiciones y tipos preparados. La ejecución siguiente usa dos lotes de un objeto.")
+![Elegir las cuatro posiciones y ambos objetos de Factory Process, introducir cantidades y tiempos y producir dos placas.](assets/media/guides/create-lessons-20261108/lesson-factory-process.mp4 "Parte de horario vacío. Entrada y resultado eligen el mismo Depot. Un lingote y una placa por lote, Batch size 2; se abre el inventario final.")
+
+**Momentos**: 0:10 Horario vacío · 0:42 Cuatro posiciones · 1:15 Elegir objetos · 1:49 Cantidad/número · 2:03 Activar/guardar · 2:17 Ejecución real · 2:35 Resultado en inventario.
 
 ## Cantidades por lote
 
@@ -52,8 +54,6 @@ Entrada y resultado pueden compartir Depot. Origen debe diferir de entrada; dest
 Se presupone receta garantizada 1:1. Los resultados aleatorios pueden dejar al NPC esperando una cantidad inalcanzable. **Los IDs de materia prima y producto deben diferir**.
 
 ## Reunir, insertar, esperar y entregar
-
-![Dos lotes con la prensa nativa y entrega de placas.](assets/media/guides/create-tutorials-20261108/create-factory-process.mp4 "Un lingote y una placa por lote; Batch size 2. El barril final recibe dos resultados reales.")
 
 Retira el producto configurado que ya esté en la salida antes de empezar. El NPC reúne, inserta, espera el resultado real y entrega. Un trabajador reserva entrada/resultado; otro que los comparta puede esperar con **Workstation is reserved by another worker**.
 
@@ -76,7 +76,9 @@ Prepara Create:
 
 Después añade **Material Ordering**, asigna receptor, materiales/objetivos, **Stock Ticker**, **Delivery address** e intervalo; guarda.
 
-![Pedir cuatro lingotes a la red preparada y esperar un pedido aceptado.](assets/media/guides/create-tutorials-20261108/create-material-order.mp4 "Existencias 16→12 y un registro persistente. El ejemplo no conecta ruta de entrega, por lo que no muestra llegada ni apertura.")
+![Asignar inventario receptor, hierro, objetivo cuatro, Ticker y dirección y comprobar pedido y existencias 16→12.](assets/media/guides/create-lessons-20261108/lesson-material-order.mp4 "Incluye búsqueda, selección y Apply reales. Muestra pedido aceptado y embalaje; llegada y apertura necesitan una ruta separada.")
+
+**Momentos**: 0:04 Horario vacío · 0:36 Inventario receptor · 0:45 Objetivo de existencias · 1:02 Ticker/dirección · 1:17 Activar/guardar · 1:31 Ejecución real · 1:44 Existencias proveedor · 1:49 Pedido/llegada.
 
 ## Los pedidos pendientes no se reenvían automáticamente
 

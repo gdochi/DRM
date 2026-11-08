@@ -1,0 +1,137 @@
+[
+  {
+    "atMs": 4547.3663,
+    "command": "view:seat",
+    "screen": "world"
+  },
+  {
+    "atMs": 8858.6136,
+    "command": "editor",
+    "screen": "world"
+  },
+  {
+    "atMs": 11053.8409,
+    "command": "button:Schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 15903.2199,
+    "command": "button:Add time",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 18304.7248,
+    "command": "input:cycle.name\u003d주문 창구",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 21306.3145,
+    "command": "input:cycle.start\u003d0",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 23707.3302,
+    "command": "input:cycle.end\u003d12000",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 29161.7667,
+    "command": "button:+",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 31555.0886,
+    "command": "category:Create",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 35807.0524,
+    "command": "action:Stock Ticker Attendance",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 40899.176,
+    "command": "button:Stock Ticker",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 43312.4818,
+    "command": "view:ticker",
+    "screen": "world"
+  },
+  {
+    "atMs": 46248.2795,
+    "command": "choose:ticker",
+    "screen": "world"
+  },
+  {
+    "atMs": 48712.2597,
+    "command": "button:Create seat",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 51098.9753,
+    "command": "view:seat",
+    "screen": "world"
+  },
+  {
+    "atMs": 54047.5804,
+    "command": "choose:seat",
+    "screen": "world"
+  },
+  {
+    "atMs": 57112.4016,
+    "command": "button:Enable schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 61100.1477,
+    "command": "button:Save to NPC",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 65609.6008,
+    "command": "verify-saved",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 68901.9248,
+    "command": "arm",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 69509.5454,
+    "command": "close",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 70107.9664,
+    "command": "camera",
+    "screen": "world"
+  },
+  {
+    "atMs": 78899.7167,
+    "command": "verify",
+    "screen": "world"
+  },
+  {
+    "atMs": 79508.6887,
+    "command": "interact",
+    "screen": "world"
+  },
+  {
+    "atMs": 82462.6574,
+    "command": "verify-orders",
+    "screen": "StockKeeperRequestScreen"
+  },
+  {
+    "atMs": 89247.4004,
+    "command": "close",
+    "screen": "StockKeeperRequestScreen"
+  },
+  {
+    "atMs": 92706.8325,
+    "command": "finish",
+    "screen": "world"
+  }
+]

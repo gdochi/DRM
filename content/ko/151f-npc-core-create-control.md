@@ -24,10 +24,12 @@ audience: NPC 제작자 / 서버 운영자
 3. **Machine control position → 🔍**로 조작할 실제 크랭크를 지정합니다.
 4. **Sensor reading → Item quantity**를 고르고 **Sensor position → 🔍**로 재고 통을 지정합니다. 조작할 장치와 값을 읽을 보관함은 서로 다른 위치여도 됩니다.
 5. **Counted item**을 Iron Ingot으로 선택합니다. 통의 모든 아이템 개수를 합치는 설정이 아닙니다.
-6. **Activate at the lower threshold**를 켜고 **Lower threshold 2 / Upper threshold 6**을 입력합니다.
+6. **Activate at the lower threshold**를 켭니다. **Upper threshold**에 먼저 **6**, **Lower threshold**에 **2**를 입력해 유효한 범위를 유지합니다.
 7. **Work interval (ticks)**를 정하고 시간표 활성화·저장을 마칩니다.
 
-![철괴 재고가 부족할 때 크랭크를 돌리다가 재고가 여섯 개에 도달하면 입력을 멈추는 NPC.](assets/media/guides/create-tutorials-20261108/create-condition.mp4 "센서 통의 0→6 변화는 임계값 반응을 보여 주려고 촬영 도구가 넣은 재고입니다. 크랭크가 철괴를 생산한 장면이 아닙니다. NPC의 실제 조건 판정과 Create 입력 중단을 확인합니다.")
+![조건 제어 액션을 처음부터 만들고 장치·센서·철괴를 선택해 상한 6과 하한 2를 입력하고 실제 시작·정지를 확인하는 과정.](assets/media/guides/create-lessons-20261108/lesson-conditional-control.mp4 "상한을 먼저 입력해 유효한 범위를 유지합니다. 센서 재고 0→6은 촬영 도구가 넣은 검증 입력이며, 크랭크가 철괴를 생산한 장면이 아닙니다.")
+
+**영상 구간**: 0:04 빈 시간표 · 0:36 조작 장치 · 0:45 센서 · 0:56 아이템 선택 · 1:11 상·하한 · 1:19 활성화·저장 · 1:33 실제 실행 · 1:40 재고 6에서 정지.
 
 ## 두 임계값 사이에서는 이전 상태를 유지합니다
 
@@ -74,13 +76,15 @@ Linked Controller를 쓰려면 **실제로 주파수 아이템을 설정한 Crea
 4. **Work interval (ticks)**를 정합니다. 점검 판독 간격은 최소 20틱으로 처리됩니다.
 5. 전광판이 필요하면 아래 항목까지 지정한 뒤 저장합니다. 없으면 점검 경로만으로 시작할 수 있습니다.
 
-![NPC가 크랭크와 빈 Create 탱크 두 곳을 순서대로 방문해 설비를 점검하는 모습.](assets/media/guides/create-tutorials-20261108/create-inspection.mp4 "실제 장치의 상태를 읽는 순회 예제입니다. 고장 수리, 연료 보충, 탱크 채우기 또는 Display Board 출력까지 수행한 영상은 아닙니다.")
+![빈 시간표에 두 점검 위치와 실제 Display Board를 지정하고 시작 줄·예약 줄을 입력한 뒤 순회와 보드 보고를 확인하는 과정.](assets/media/guides/create-lessons-20261108/lesson-inspection-board.mp4 "크랭크와 빈 탱크를 하나씩 선택합니다. 정상 조립·동력이 준비된 실제 보드에 보고를 쓰며, 마지막에 보드를 가까이서 보여 줍니다.")
+
+**영상 구간**: 0:05 보드 동력 · 0:09 빈 시간표 · 0:41 점검 대상 · 1:01 전광판 지정 · 1:09 시작·예약 줄 · 1:14 활성화·저장 · 1:29 실제 실행 · 1:41 보드 보고.
 
 점검은 지원 장치의 **회전/정지, 응력 초과, Burner 열 상태, 탱크 비율**을 읽습니다. 점검을 시켰다고 멈춘 축이 돌아가거나 탱크가 채워지지는 않습니다. 값을 자동 운전에 사용하려면 별도 Conditional Machine Operation을 구성하세요.
 
 ## Display Board에 보고하기
 
-점검 액션의 **Display Board (optional)**은 선택 기능입니다. Create 쪽에서 정상 조립된 보드와 필요한 동력을 먼저 준비합니다. 🔍로 실제 보드를 고른 뒤 다음 두 항목을 설정합니다.
+점검 액션의 **Display Board (optional)**은 선택 기능입니다. Create 쪽에서 정상 조립된 보드와 필요한 동력을 먼저 준비합니다. 영상에서는 보드 옆 **Cogwheel**을 맞물려 구동합니다. 보고 데이터를 받아도 동력이 연결되지 않으면 글자가 정상 표시 상태로 전환되지 않을 수 있으므로, 실제 톱니 연결과 구동 상태부터 확인하세요. 🔍로 실제 보드를 고른 뒤 다음 두 항목을 설정합니다.
 
 | 항목 | 의미 | 예 |
 | --- | --- | --- |

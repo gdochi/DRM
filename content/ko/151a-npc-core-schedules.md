@@ -69,7 +69,7 @@ NPC는 탈것까지 걸어가서 탑니다. 기본 시도 시간은 600틱이며
 
 ## Create 작업 시간표
 
-시간대의 **+ → Create**에서 크랭크·밸브·연마·주소 배송·주문 창구·공장 가공·자재 주문·조건 제어·점검을 고릅니다. [Create 연계 시작과 영상](#dochi-npc-core/npc-core-create-start)에서 월드 블록 선택과 저장부터 따라 하세요. Create 좌석은 **Ride vehicle → Create seat**, 주문 창구는 별도의 **Stock Ticker Attendance**입니다.
+시간대의 **+ → Create**에서 크랭크·밸브·연마·주소 배송·주문 창구·공장 가공·자재 주문·조건 제어·점검을 고릅니다. [Create 연계 시작과 영상](#dochi-npc-core/npc-core-create-start)에서 월드 블록 선택과 저장부터 따라 하세요. Create 좌석은 **Mount vehicle → Create seat**, 주문 창구는 별도의 **Stock Ticker Attendance**입니다.
 
 ## 영업 시간이 있는 상점
 

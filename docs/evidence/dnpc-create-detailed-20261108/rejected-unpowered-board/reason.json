@@ -1,0 +1,4 @@
+{
+  "adopted": false,
+  "reason": "Native server report received, but visual QA found an unpowered display with unsettled characters. The board shaft axis follows facing Z; the side X motor did not power it. Replaced by a rear-facing Z-axis motor and a focused re-recording with actual client power and settled-title checks."
+}

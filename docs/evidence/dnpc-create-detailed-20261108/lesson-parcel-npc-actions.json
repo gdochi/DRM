@@ -1,0 +1,187 @@
+[
+  {
+    "atMs": 4545.7901,
+    "command": "view:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 5142.0026,
+    "command": "open:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 9691.8396,
+    "command": "close",
+    "screen": "ContainerScreen"
+  },
+  {
+    "atMs": 10886.1549,
+    "command": "editor",
+    "screen": "world"
+  },
+  {
+    "atMs": 13097.5597,
+    "command": "button:Schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 17939.6834,
+    "command": "button:Add time",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 20342.62,
+    "command": "input:cycle.name\u003d주소 배송",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 23345.0698,
+    "command": "input:cycle.start\u003d0",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 25746.9911,
+    "command": "input:cycle.end\u003d12000",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 31190.2038,
+    "command": "button:+",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 33591.8504,
+    "command": "category:Create",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 37838.5075,
+    "command": "action:Addressed Parcel Delivery",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 42942.1627,
+    "command": "button:Source inventory",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 45351.7485,
+    "command": "view:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 48296.5886,
+    "command": "choose:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 50736.3946,
+    "command": "button:Return inventory",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 53149.3443,
+    "command": "view:returns",
+    "screen": "world"
+  },
+  {
+    "atMs": 56091.6902,
+    "command": "choose:returns",
+    "screen": "world"
+  },
+  {
+    "atMs": 59147.0925,
+    "command": "button:Add address route",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 61552.1532,
+    "command": "recipient:Receiving Clerk",
+    "screen": "NpcCreateRecipientPicker"
+  },
+  {
+    "atMs": 65801.34,
+    "command": "button:Apply",
+    "screen": "NpcCreateRecipientPicker"
+  },
+  {
+    "atMs": 68794.5203,
+    "command": "input:create_job.address.0\u003dWorkshop A",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 72395.5564,
+    "command": "input:create_job.recipient_wait\u003d80",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 75391.3735,
+    "command": "button:Repeat throughout shift",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 77788.4095,
+    "command": "input:create_job.batch\u003d1",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 80195.1586,
+    "command": "input:create_job.interval\u003d20",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 83187.743,
+    "command": "button:Enable schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 87201.2725,
+    "command": "button:Save to NPC",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 91699.6044,
+    "command": "verify-saved",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 94986.9555,
+    "command": "arm",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 95604.7327,
+    "command": "close",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 96188.6714,
+    "command": "camera",
+    "screen": "world"
+  },
+  {
+    "atMs": 111495.4211,
+    "command": "verify",
+    "screen": "world"
+  },
+  {
+    "atMs": 112701.27,
+    "command": "view:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 113296.7749,
+    "command": "open:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 117243.0799,
+    "command": "close",
+    "screen": "ContainerScreen"
+  },
+  {
+    "atMs": 120689.0811,
+    "command": "finish",
+    "screen": "world"
+  }
+]

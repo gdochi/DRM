@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createRequire } from 'node:module';
 import os from 'node:os';
 import path from 'node:path';
@@ -12,6 +12,7 @@ const output = path.resolve(root, process.env.DOCHI_VIDEO_EVIDENCE || 'docs/evid
 const routes = new Set((process.env.DOCHI_VIDEO_ROUTES || '').split(',').filter(Boolean));
 await mkdir(output, { recursive: true });
 const { data } = await loadBuiltDocs(path.join(root, 'dist'));
+const captureManifest = JSON.parse(await readFile(path.join(root, 'src/guide-environments.json'), 'utf8')).captures;
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.DOCHI_PLAYWRIGHT_MODULE || path.join(os.homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'));
 const server = serve(path.join(root, 'dist'), 0);
@@ -37,10 +38,14 @@ try {
           await video.scrollIntoViewIfNeeded();
           await page.waitForFunction(video => video.readyState >= 2 && !video.paused, element);
           const state = await video.evaluate(v => ({ width: v.videoWidth, height: v.videoHeight, muted: v.muted, loop: v.loop, controls: v.controls, inline: v.playsInline, paused: v.paused, label: v.getAttribute('aria-label'), source: v.currentSrc, duration: v.duration }));
-          assert.equal(state.width, 1280);
-          assert.equal(state.height, 720);
+          const asset = new URL(state.source).pathname.slice(1);
+          const metadata = captureManifest[asset] || captureManifest[asset.replace(/\.webm$/, '.mp4')];
+          assert(metadata, `Missing capture dimensions: ${asset}`);
+          assert.equal(state.width, metadata.width);
+          assert.equal(state.height, metadata.height);
           assert(state.muted && state.loop && state.controls && state.inline && !state.paused && state.label, JSON.stringify(state));
-          assert(state.duration > 0 && state.duration < 60);
+          assert(Number.isFinite(state.duration) && state.duration > 0);
+          if (metadata.durationMs) assert(Math.abs(state.duration * 1000 - metadata.durationMs) < 300, `${asset}: duration differs from the native capture receipt`);
           assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${locale}/${doc.slug}/${width}`);
           views.push({ locale, route: `${doc.product}/${doc.slug}`, viewportWidth: width, index, ...state });
           if (locale === 'ko') {
@@ -89,6 +94,17 @@ try {
           });
           assert(frames.decoded >= 5 && frames.paused, JSON.stringify(frames));
           assert(Math.abs(frames.seekTime - frames.target) < 0.15, JSON.stringify(frames));
+          if (metadata.steps?.length) {
+            const caption = await video.evaluate(v => {
+              const figure = v.closest('.doc-video'), panel = figure.querySelector('.doc-video-step');
+              return { time: v.currentTime * 1000, title: panel.querySelector('[data-step-title]').textContent, body: panel.querySelector('[data-step-body]').textContent, lang: panel.lang, bottom: panel.getBoundingClientRect().bottom, videoTop: v.getBoundingClientRect().top };
+            });
+            const expected = metadata.steps.filter(step => step.startMs <= caption.time).at(-1) || metadata.steps[0];
+            assert(caption.title.endsWith(expected.title));
+            assert.equal(caption.body, expected.body);
+            assert.equal(caption.lang, 'ko');
+            assert(caption.bottom <= caption.videoTop, 'Paused step text overlaps native video controls');
+          }
           // Observe the actual loop boundary, not just the HTML loop attribute.
           const boundary = await video.evaluate(async v => {
             const target = v.duration - 0.2;
@@ -102,7 +118,7 @@ try {
           await page.waitForFunction(video => video.currentTime < 2, element);
           await video.evaluate(async v => { v.pause(); v.querySelector('source[type="video/webm"]').remove(); v.load(); await v.play(); });
           assert((await video.evaluate(v => v.currentSrc)).endsWith('.mp4'));
-          assert(await video.evaluate(v => v.videoWidth === 1280 && !v.error));
+          assert(await video.evaluate((v, dimensions) => v.videoWidth === dimensions.width && v.videoHeight === dimensions.height && !v.error, metadata));
           playback.push({ source: state.source, decodedFrames: frames.decoded, seekTime: frames.seekTime, seek: true, byteRanges: true, pause: true, loop: true, mp4Fallback: true });
           await element.dispose();
         }

@@ -1,0 +1,156 @@
+{
+  "recordings": [
+    {
+      "id": "lesson-crank",
+      "run": "create-detailed-neo1211-en-03",
+      "nativeFrames": 1806,
+      "durationMs": 90348.248,
+      "steps": 12,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "9b422d1c046323f50ef2730ea50516457fca16f71ceded0b0ffd32f4f27d83cc"
+    },
+    {
+      "id": "lesson-valve",
+      "run": "create-detailed-neo1211-en-04",
+      "nativeFrames": 1897,
+      "durationMs": 94874.0095,
+      "steps": 12,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "389b0cc98819de04c381ef8979ada0bcd7da9f7ea7572f6035e6d0da5506e159"
+    },
+    {
+      "id": "lesson-seat",
+      "run": "create-detailed-neo1211-en-04",
+      "nativeFrames": 1670,
+      "durationMs": 83513.588,
+      "steps": 11,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "57a9b1a7f8f69bcf760f38d31093fa31e62115f83bea36482a481d1e171d39aa"
+    },
+    {
+      "id": "lesson-polish",
+      "run": "create-detailed-neo1211-en-04",
+      "nativeFrames": 2416,
+      "durationMs": 120814.0075,
+      "steps": 13,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "bf2bb4a0db1c7770af49af5f9313668e43410989d0b4612f68ae9746d3ae28e2"
+    },
+    {
+      "id": "lesson-parcel-npc",
+      "run": "create-detailed-neo1211-en-04",
+      "nativeFrames": 2414,
+      "durationMs": 120699.4832,
+      "steps": 13,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "bd330729e17c88289794d7def02204c81f28e8a7d6f3b393fd67fff359834cbb"
+    },
+    {
+      "id": "lesson-parcel-container",
+      "run": "create-detailed-neo1211-en-04",
+      "nativeFrames": 2394,
+      "durationMs": 119704.075,
+      "steps": 13,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "6fef2d155aa87ba423fddbadd68472463fe2eb595e834775f41c603d445f4d9e"
+    },
+    {
+      "id": "lesson-parcel-return",
+      "run": "create-detailed-neo1211-en-04",
+      "nativeFrames": 1320,
+      "durationMs": 66011.666,
+      "steps": 7,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "9e97edcc88b4924246915d9e698dd02b2d29df5c6226936b3c7f2c9b5e51cbfd"
+    },
+    {
+      "id": "lesson-stock-ticker",
+      "run": "create-detailed-neo1211-en-04",
+      "nativeFrames": 1854,
+      "durationMs": 92700.24339999999,
+      "steps": 9,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "0b9a849cb342ceb4ee0cb9128b601e1552a775663609479c0709c77e4bc9f5fc"
+    },
+    {
+      "id": "lesson-factory-process",
+      "run": "create-detailed-neo1211-en-04",
+      "nativeFrames": 3262,
+      "durationMs": 163165.0679,
+      "steps": 18,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "2a76f320405b1ef6dadd117ceb8575c4a753b3d0fc82c15ccaa61632670bf6b7"
+    },
+    {
+      "id": "lesson-material-order",
+      "run": "create-detailed-neo1211-en-04",
+      "nativeFrames": 2264,
+      "durationMs": 113212.9799,
+      "steps": 12,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "ef1df74cf9d29776d45b403d5241aaaf547b4fa13a70fddc0b14ea7e0489632a"
+    },
+    {
+      "id": "lesson-conditional-control",
+      "run": "create-detailed-neo1211-en-04",
+      "nativeFrames": 2326,
+      "durationMs": 116312.31999999999,
+      "steps": 14,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "64ff90229ae92e29c629c09b1773ace8e406657a6e2e14f2c74550d982d21d40"
+    },
+    {
+      "id": "lesson-inspection-board",
+      "run": "create-detailed-neo1211-en-06",
+      "nativeFrames": 2325,
+      "durationMs": 116285.0973,
+      "steps": 14,
+      "savedPolicyVerified": true,
+      "nativeExecutionVerified": true,
+      "rawFrameWidth": 1920,
+      "rawFrameHeight": 1080,
+      "frameManifestSha256": "dc934a46f0145e09f319cb0153adb3c4e80d0c05c85a6faae4a7257b6b96cb6a"
+    }
+  ],
+  "productionMods": {
+    "C:\\Users\\hodu3\\Desktop\\[COMMON] DRM\\jar\\dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar": "d3de3238deea16cb9114155642df404e85ef51c046ef074c3f54da8e5b4b2256",
+    "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-neoforge-1.21.1.jar": "f72b50517e77d0c6ee8c5e3c7e7148888cc38216f664d1ba9a961b3508e9857f",
+    "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\geckolib-neoforge-1.21.1-4.9.2.jar": "5e548466af9ab6aca7a91a7c7d4dc0dc8bc385e22958aed5da0e7bebd0fa3fba",
+    "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\architectury-13.0.11-neoforge.jar": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb",
+    "C:\\Users\\hodu3\\AppData\\Roaming\\PrismLauncher\\instances\\1.21.1(2)\\minecraft\\mods\\create-1.21.1-6.0.10.jar": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+  },
+  "obsAccessed": false
+}

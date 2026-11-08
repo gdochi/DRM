@@ -1,0 +1,1 @@
+java.lang.IllegalAccessException: class dochi.docs.capture.GuideCreateLessons (in module dochi_docs_capture) cannot access a member of class net.dochi.npc.client.NpcScheduleActionMenu$Row (in module dochi_npc) with modifiers "public"

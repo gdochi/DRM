@@ -1,0 +1,157 @@
+[
+  {
+    "atMs": 5147.9023,
+    "command": "editor",
+    "screen": "world"
+  },
+  {
+    "atMs": 7361.4702,
+    "command": "button:Schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 12201.1444,
+    "command": "button:Add time",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 14598.4672,
+    "command": "input:cycle.name\u003d설비 순회 점검",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 17613.5218,
+    "command": "input:cycle.start\u003d0",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 20004.9805,
+    "command": "input:cycle.end\u003d12000",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 25453.9058,
+    "command": "button:+",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 27860.4178,
+    "command": "category:Create",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 32099.3613,
+    "command": "action:Factory Inspection",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 37205.4648,
+    "command": "button:Add inspection position",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 39614.2225,
+    "command": "view:device",
+    "screen": "world"
+  },
+  {
+    "atMs": 42548.8555,
+    "command": "choose:device",
+    "screen": "world"
+  },
+  {
+    "atMs": 45611.0324,
+    "command": "button:Add inspection position",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 48011.5131,
+    "command": "view:tank",
+    "screen": "world"
+  },
+  {
+    "atMs": 50951.9293,
+    "command": "choose:tank",
+    "screen": "world"
+  },
+  {
+    "atMs": 54001.4656,
+    "command": "input:create_job.interval\u003d80",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 57007.0202,
+    "command": "button:Display Board (optional)",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 59406.0354,
+    "command": "view:board",
+    "screen": "world"
+  },
+  {
+    "atMs": 62348.9164,
+    "command": "choose:board",
+    "screen": "world"
+  },
+  {
+    "atMs": 65403.8803,
+    "command": "input:factory.display_line\u003d2",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 67807.4109,
+    "command": "input:factory.display_lines\u003d6",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 70810.7833,
+    "command": "button:Enable schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 74800.0617,
+    "command": "button:Save to NPC",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 79299.8271,
+    "command": "verify-saved",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 82600.5465,
+    "command": "arm",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 83206.3563,
+    "command": "close",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 83810.9117,
+    "command": "camera",
+    "screen": "world"
+  },
+  {
+    "atMs": 95598.4007,
+    "command": "verify",
+    "screen": "world"
+  },
+  {
+    "atMs": 96198.2078,
+    "command": "board-camera",
+    "screen": "world"
+  },
+  {
+    "atMs": 103011.6032,
+    "command": "verify-board",
+    "screen": "world"
+  },
+  {
+    "atMs": 106451.6064,
+    "command": "finish",
+    "screen": "world"
+  }
+]

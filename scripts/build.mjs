@@ -245,7 +245,10 @@ function renderMarkdown(markdown, docSlug) {
         if (!alt || !dimensions?.poster || !dimensions?.webm) throw new Error(`Incomplete guide video: ${source}`);
         const poster = imageSource(dimensions.poster);
         const webm = videoSource(dimensions.webm);
-        html.push(`<figure class="doc-video"><video controls autoplay loop muted playsinline preload="metadata" width="${dimensions.width}" height="${dimensions.height}" poster="${escapeAttr(poster)}" aria-label="${escapeAttr(alt)}"><source src="${escapeAttr(webm)}" type="video/webm" /><source src="${escapeAttr(href)}" type="video/mp4" /><a href="${escapeAttr(href)}">${escapeHtml(alt)}</a></video>${caption ? `<figcaption>${renderInline(caption)}</figcaption>` : ""}</figure>`);
+        const steps = dimensions.steps;
+        const stepData = steps?.length ? ` data-guide-steps="${escapeAttr(JSON.stringify(steps))}"` : "";
+        const stepPanel = steps?.length ? `<div class="doc-video-step" lang="ko"><strong data-step-title>${escapeHtml(`${String(steps[0].step).padStart(2, "0")} / ${steps.length}  ${steps[0].title}`)}</strong><p data-step-body>${escapeHtml(steps[0].body)}</p></div>` : "";
+        html.push(`<figure class="doc-video"${stepData}>${stepPanel}<video controls autoplay loop muted playsinline preload="metadata" width="${dimensions.width}" height="${dimensions.height}" poster="${escapeAttr(poster)}" aria-label="${escapeAttr(alt)}"><source src="${escapeAttr(webm)}" type="video/webm" /><source src="${escapeAttr(href)}" type="video/mp4" /><a href="${escapeAttr(href)}">${escapeHtml(alt)}</a></video>${caption ? `<figcaption>${renderInline(caption)}</figcaption>` : ""}</figure>`);
         i += 1;
         continue;
       }

@@ -23,10 +23,12 @@ translationMethod: assisted
 2. Choisissez **Control device → Hand crank** et affectez **Machine control position**.
 3. Choisissez **Sensor reading → Item quantity** et un tonneau dans **Sensor position**.
 4. Réglez **Counted item → Iron Ingot** ; seul cet ID est compté.
-5. Activez **Activate at the lower threshold**, avec **Lower threshold 2 / Upper threshold 6**.
+5. Activez **Activate at the lower threshold**. Saisissez d'abord **6** dans **Upper threshold**, puis **2** dans **Lower threshold** pour conserver une plage valide.
 6. Réglez l'intervalle, activez et sauvegardez.
 
-![Tourner quand le fer manque et arrêter à six.](assets/media/guides/create-tutorials-20261108/create-condition.mp4 "L'outil change le stock de zéro à six pour illustrer les seuils. La manivelle ne produit pas les lingots ajoutés.")
+![Créer le contrôle conditionnel, affecter appareil, capteur et fer, puis saisir plafond six avant plancher deux.](assets/media/guides/create-lessons-20261108/lesson-conditional-control.mp4 "Cet ordre conserve une plage valide. Le changement explicite 0→6 est une entrée de test ; la manivelle ne produit pas ces lingots.")
+
+**Repères**: 0:04 Planning vide · 0:36 Appareil · 0:45 Capteur · 0:56 Choisir les objets · 1:11 Seuils · 1:19 Activer/sauver · 1:33 Exécution native · 1:40 Arrêt à six.
 
 ## Entre les seuils, conserver l'état précédent
 
@@ -73,13 +75,15 @@ Le joueur garde la priorité. Édition, combat, interaction et IA désactivée s
 4. Réglez **Work interval (ticks)** ; lecture minimale de **20 ticks**.
 5. Affectez éventuellement un Display Board et sauvegardez.
 
-![Visiter la manivelle et le réservoir vide pour lire leur état réel.](assets/media/guides/create-tutorials-20261108/create-inspection.mp4 "Inspection seule : ni réparation, ni ravitaillement, ni remplissage, ni sortie Display Board.")
+![Affecter deux points d'inspection et un vrai Display Board, saisir ses lignes et vérifier tournée et rapport.](assets/media/guides/create-lessons-20261108/lesson-inspection-board.mp4 "Manivelle et réservoir vide sont choisis séparément. Le panneau assemblé et alimenté reçoit le rapport et apparaît en gros plan.")
+
+**Repères**: 0:05 Énergie du panneau · 0:09 Planning vide · 0:41 Cibles d'inspection · 1:01 Affecter panneau · 1:09 Première/lignes réservées · 1:14 Activer/sauver · 1:29 Exécution native · 1:41 Rapport du panneau.
 
 Lit rotation/arrêt, surcharge, chaleur du Burner et niveau du réservoir. Ne répare pas et ne change pas le contenu. Réagissez avec une action conditionnelle distincte.
 
 ## Rapports sur Display Board
 
-Assemblez correctement le panneau Create avec son énergie normale. Affectez **Display Board (optional)** et réglez :
+Assemblez correctement le panneau Create avec son énergie normale. La vidéo l'entraîne par un **Cogwheel** engrené à côté. Recevoir du texte ne suffit pas pour qu'un panneau sans énergie stabilise ses caractères ; vérifiez d'abord la liaison des engrenages et le fonctionnement. Affectez **Display Board (optional)** et réglez :
 
 | Champ | Signification |
 | --- | --- |

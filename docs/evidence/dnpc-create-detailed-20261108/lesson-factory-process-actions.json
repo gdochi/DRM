@@ -1,0 +1,247 @@
+[
+  {
+    "atMs": 4549.11,
+    "command": "view:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 5142.8632,
+    "command": "open:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 9699.2206,
+    "command": "close",
+    "screen": "ContainerScreen"
+  },
+  {
+    "atMs": 10898.133,
+    "command": "editor",
+    "screen": "world"
+  },
+  {
+    "atMs": 13099.7931,
+    "command": "button:Schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 17945.4433,
+    "command": "button:Add time",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 20349.1891,
+    "command": "input:cycle.name\u003d철판 가공",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 23345.3961,
+    "command": "input:cycle.start\u003d0",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 25745.2465,
+    "command": "input:cycle.end\u003d12000",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 31196.848,
+    "command": "button:+",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 33599.5397,
+    "command": "category:Create",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 37853.6883,
+    "command": "action:Factory Process",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 42940.7961,
+    "command": "button:Source inventory",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 45349.8377,
+    "command": "view:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 48295.9623,
+    "command": "choose:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 51348.1581,
+    "command": "button:Machine input inventory",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 53740.4642,
+    "command": "view:depot",
+    "screen": "world"
+  },
+  {
+    "atMs": 56699.9098,
+    "command": "choose:depot",
+    "screen": "world"
+  },
+  {
+    "atMs": 59744.0637,
+    "command": "button:Finished output inventory",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 62150.8646,
+    "command": "view:depot",
+    "screen": "world"
+  },
+  {
+    "atMs": 65096.6363,
+    "command": "choose:depot",
+    "screen": "world"
+  },
+  {
+    "atMs": 68147.2396,
+    "command": "button:Finished items inventory",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 70549.9789,
+    "command": "view:output",
+    "screen": "world"
+  },
+  {
+    "atMs": 73499.4609,
+    "command": "choose:output",
+    "screen": "world"
+  },
+  {
+    "atMs": 76541.8696,
+    "command": "button:Material item",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 78938.5188,
+    "command": "input:search\u003dminecraft:iron_ingot",
+    "screen": "NpcFactoryItemPicker"
+  },
+  {
+    "atMs": 83149.6283,
+    "command": "item:minecraft:iron_ingot",
+    "screen": "NpcFactoryItemPicker"
+  },
+  {
+    "atMs": 87391.3749,
+    "command": "button:Apply",
+    "screen": "NpcFactoryItemPicker"
+  },
+  {
+    "atMs": 91995.7475,
+    "command": "input:factory.material.count.0\u003d1",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 94995.3607,
+    "command": "button:Finished item",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 97400.6171,
+    "command": "input:search\u003dcreate:iron_sheet",
+    "screen": "NpcFactoryItemPicker"
+  },
+  {
+    "atMs": 101600.9012,
+    "command": "item:create:iron_sheet",
+    "screen": "NpcFactoryItemPicker"
+  },
+  {
+    "atMs": 105845.2229,
+    "command": "button:Apply",
+    "screen": "NpcFactoryItemPicker"
+  },
+  {
+    "atMs": 110444.1728,
+    "command": "input:factory.result_count\u003d1",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 112842.3327,
+    "command": "button:Repeat throughout shift",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 115254.1256,
+    "command": "input:create_job.batch\u003d2",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 118237.57,
+    "command": "input:factory.timeout\u003d1200",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 120640.8201,
+    "command": "input:create_job.interval\u003d20",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 123653.9884,
+    "command": "button:Enable schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 127652.7829,
+    "command": "button:Save to NPC",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 132145.0956,
+    "command": "verify-saved",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 135452.1109,
+    "command": "arm",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 136052.1781,
+    "command": "close",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 136639.745,
+    "command": "camera",
+    "screen": "world"
+  },
+  {
+    "atMs": 153447.5023,
+    "command": "verify",
+    "screen": "world"
+  },
+  {
+    "atMs": 154048.7988,
+    "command": "view:output",
+    "screen": "world"
+  },
+  {
+    "atMs": 154640.955,
+    "command": "open:output",
+    "screen": "world"
+  },
+  {
+    "atMs": 159701.5689,
+    "command": "close",
+    "screen": "ContainerScreen"
+  },
+  {
+    "atMs": 163150.7056,
+    "command": "finish",
+    "screen": "world"
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "atMs": 5144.331,
+    "command": "editor",
+    "screen": "world"
+  },
+  {
+    "atMs": 7345.4695,
+    "command": "button:Schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 12203.5339,
+    "command": "button:Add time",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 14602.5661,
+    "command": "input:cycle.name\u003d좌석 근무",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 17597.7597,
+    "command": "input:cycle.start\u003d0",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 19997.6014,
+    "command": "input:cycle.end\u003d12000",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 25456.1801,
+    "command": "button:+",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 27854.5782,
+    "command": "category:Movement and waiting",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 32101.4245,
+    "command": "action:Mount vehicle",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 37200.4594,
+    "command": "button:Vehicle",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 39608.643,
+    "command": "button:Select a Create seat in the world",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 42000.1269,
+    "command": "view:seat",
+    "screen": "world"
+  },
+  {
+    "atMs": 44951.8558,
+    "command": "choose:seat",
+    "screen": "world"
+  },
+  {
+    "atMs": 48007.7159,
+    "command": "input:ride.timeout\u003d200",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 53944.4556,
+    "command": "button:Enable schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 57954.818,
+    "command": "button:Save to NPC",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 62446.5888,
+    "command": "verify-saved",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 65746.8312,
+    "command": "arm",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 66345.9739,
+    "command": "close",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 66955.6762,
+    "command": "camera",
+    "screen": "world"
+  },
+  {
+    "atMs": 74349.3216,
+    "command": "end-shift",
+    "screen": "world"
+  },
+  {
+    "atMs": 80052.8616,
+    "command": "verify",
+    "screen": "world"
+  },
+  {
+    "atMs": 83502.0978,
+    "command": "finish",
+    "screen": "world"
+  }
+]

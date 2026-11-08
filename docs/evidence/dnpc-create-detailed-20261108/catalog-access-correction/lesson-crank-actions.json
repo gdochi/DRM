@@ -1,0 +1,47 @@
+[
+  {
+    "atMs": 5147.1731,
+    "command": "editor",
+    "screen": "world"
+  },
+  {
+    "atMs": 7341.5627,
+    "command": "button:Schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 12205.6628,
+    "command": "button:Add time",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 14597.214,
+    "command": "input:cycle.name\u003d크랭크 근무",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 17593.8172,
+    "command": "input:cycle.start\u003d0",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 19998.2696,
+    "command": "input:cycle.end\u003d12000",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 25448.8569,
+    "command": "button:+",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 27854.1514,
+    "command": "category:Create",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 32089.9036,
+    "command": "action:Operate hand crank",
+    "screen": "NpcEditorScreen"
+  }
+]

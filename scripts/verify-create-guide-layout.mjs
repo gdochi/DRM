@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { serve } from './preview-server.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const output = path.join(root, 'docs/evidence/dnpc-create-guides-20261108/layout');
+const output = path.resolve(root, process.env.DOCHI_CREATE_LAYOUT_EVIDENCE || 'docs/evidence/dnpc-create-detailed-20261108/layout');
 const require = createRequire(import.meta.url);
 const { chromium } = require(path.join(os.homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'));
 await mkdir(output, { recursive: true });
@@ -50,7 +50,12 @@ try {
           v.currentTime = Math.min(v.duration / 2, 6);
           await new Promise(resolve => v.addEventListener('seeked', resolve, { once: true }));
         });
+        await page.waitForFunction(v => v.readyState >= 2 && !v.seeking, await video.elementHandle());
+        await video.evaluate(async v => { await v.play(); await new Promise(resolve => setTimeout(resolve, 300)); v.pause(); });
         await video.screenshot({ path: path.join(output, `${slug}-${width}-video-${i}.png`) });
+        const figure = video.locator('..');
+        assert(await figure.locator('.doc-video-step').isVisible());
+        await figure.screenshot({ path: path.join(output, `${slug}-${width}-paused-step-${i}.png`) });
       }
       results.push({ slug, width, ...state });
     }

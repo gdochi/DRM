@@ -57,7 +57,7 @@ Un PNJ plus ancien **Legacy AI compatibility** conserve son comportement précé
 
 ## Embarquez à bord d’un bateau, d’un cheval ou d’un véhicule
 
-1. Définissez l'activité d'une période sur **Movement → Ride vehicle**.
+1. Définissez l'activité d'une période sur **Movement → Mount vehicle**.
 2. Recherchez automatiquement les véhicules vides à proximité, ou sélectionnez-en un avec .
 3. Définissez le centre de recherche et le rayon : blocs 16 par défaut, plage 1–32.
 4. Choisissez un siège. Commencez par la sélection automatique **-1** pour les bateaux vanillés, les charrettes et les chevaux.
@@ -71,7 +71,7 @@ Le démontage attend que le véhicule s'arrête et qu'une sortie sûre soit disp
 
 ## Plannings de tâches Create
 
-Dans **+ → Create** du service, choisissez manivelle, vanne, polissage, colis, comptoir, fabrication, commande, contrôle ou inspection. Suivez [Configuration Create et vidéos](#dochi-npc-core/npc-core-create-start) pour sélectionner les blocs et sauvegarder. Les sièges utilisent **Ride vehicle → Create seat** ; le comptoir utilise **Stock Ticker Attendance**.
+Dans **+ → Create** du service, choisissez manivelle, vanne, polissage, colis, comptoir, fabrication, commande, contrôle ou inspection. Suivez [Configuration Create et vidéos](#dochi-npc-core/npc-core-create-start) pour sélectionner les blocs et sauvegarder. Les sièges utilisent **Mount vehicle → Create seat** ; le comptoir utilise **Stock Ticker Attendance**.
 
 ## Heures d'ouverture du magasin
 

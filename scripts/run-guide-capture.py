@@ -52,9 +52,12 @@ def main():
     parser.add_argument("--extra-mod", action="append", default=[], help="Existing production mod JAR to copy into the isolated instance")
     parser.add_argument("--all-editors", action="store_true", help="Capture registered editor default entry points; inspect every result before use")
     parser.add_argument("--plan", help="JSON capture plan with registered editor IDs and observed UI actions")
+    parser.add_argument("--timeout-seconds", type=int, default=480, help="Bound the complete capture; longer lessons remain one owned client")
     parser.add_argument("--seed-hud-from", help="Copy the GUI-saved guide_hud and activation file from an owned capture run to verify startup loading")
     parser.add_argument("--npc-mod", default=str(DESKTOP / "[COMMON] Dochi`s Npc Core/jar/dochi_npc_core-0.1.3-neoforge-1.21.1.jar"), help="Exact DNPC production JAR; its hash is retained in the environment receipt")
     args = parser.parse_args()
+    if not 30 <= args.timeout_seconds <= 1800:
+        raise ValueError("Capture timeout must be between 30 and 1800 seconds")
     if args.width<1280 or args.height<720:
         raise ValueError("Capture framebuffer must be at least 1280x720")
     if not args.run.replace("-", "").isalnum():
@@ -100,7 +103,7 @@ def main():
     compile_cp = os.pathsep.join(path for path in compile_paths + [str(mod) for mod in mods] if path)
     compile_result = subprocess.run([str(JAVA / "javac.exe"), "-encoding", "UTF-8", "-proc:none", "-cp", compile_cp,
                                      "-d", str(classes), *[str(ROOT / "scripts/guide-capture" / name) for name in
-                                         ("GuideCapture.java", "GuideScenes.java", "GuideTutorials.java", "GuideArmorDrops.java", "GuideCreate.java")]], capture_output=True, text=True)
+                                         ("GuideCapture.java", "GuideScenes.java", "GuideTutorials.java", "GuideArmorDrops.java", "GuideCreate.java", "GuideCreateLessons.java")]], capture_output=True, text=True)
     (run / "compile.log").write_text(compile_result.stdout + compile_result.stderr, encoding="utf-8")
     if compile_result.returncode:
         raise RuntimeError(compile_result.stderr)
@@ -136,6 +139,7 @@ def main():
 
     command = [str(JAVA / "java.exe"), "-Xmx3G", f"-DlegacyClassPath={cp}", f"-Ddochi.docs.output={output}", f"-Ddochi.docs.locale={args.locale}", f"-Ddochi.docs.views={args.views}"]
     command.append(f"-Ddochi.docs.actor={args.actor}")
+    command.append(f"-Ddochi.docs.timeoutSeconds={args.timeout_seconds}")
     if args.all_editors:
         command.append("-Ddochi.docs.allEditors=true")
     if args.plan:
@@ -150,15 +154,16 @@ def main():
         result = subprocess.Popen(command, cwd=runtime, stdout=log, stderr=subprocess.STDOUT, creationflags=subprocess.CREATE_NO_WINDOW)
         (run / "process.json").write_text(json.dumps({"pid": result.pid, "parentPid": os.getpid(), "runtime": str(runtime)}, indent=2) + "\n", encoding="utf-8")
         try:
-            result.wait(timeout=600)
+            result.wait(timeout=args.timeout_seconds + 120)
         except subprocess.TimeoutExpired:
             result.kill()
             result.wait()
             raise
     print(f"Client exit: {result.returncode}; completed: {(output / 'finished.txt').exists()}")
-    if (output / "screens.json").exists():
-        print(json.dumps(json.loads((output / "screens.json").read_text(encoding="utf-8")), ensure_ascii=True, indent=2))
-    if result.returncode or not (output / "finished.txt").exists():
+    screens = json.loads((output / "screens.json").read_text(encoding="utf-8")) if (output / "screens.json").exists() else []
+    for screen in screens:
+        print(json.dumps({key: screen[key] for key in ["id", "status", "error"] if key in screen}))
+    if result.returncode or not (output / "finished.txt").exists() or any(screen.get("status") == "failed" for screen in screens):
         print((run / "client.log").read_text(encoding="utf-8", errors="replace")[-9000:])
         raise SystemExit(1)
 

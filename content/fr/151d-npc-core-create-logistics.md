@@ -15,7 +15,7 @@ translationMethod: assisted
 
 ## Avant de commencer
 
-Il s'agit des réglages créateur de **Schedule**, puis de leur exécution dans le monde. Lisez le [Démarrage Create](#dochi-npc-core/npc-core-create-start). Vidéos muettes : DNPC 0.1.3 + Create 6.0.10 / NeoForge 1.21.1. Les exécutions utilisent appareils et services préparés ; les éditions montrent les changements indiqués.
+Les leçons montrent la création dans **Schedule** et son exécution réelle. Consultez [Démarrer Create](#dochi-npc-core/npc-core-create-start) pour installation et sauvegarde. Vidéos muettes en DNPC 0.1.3 + Create 6.0.10 / NeoForge 1.21.1, interface anglaise et étapes coréennes. Chaque tâche part d'un planning vide ; le retour poursuit les réglages sauvegardés dans la livraison au stockage.
 
 ## Polissage au papier abrasif
 
@@ -25,7 +25,9 @@ Il s'agit des réglages créateur de **Schedule**, puis de leur exécution dans 
 4. Choisissez **Repeat throughout shift** ou **Finish one batch per shift** avec un **Batch size** fini. L'exemple transforme deux Rose Quartz en deux Polished Rose Quartz.
 5. Réglez **Work interval (ticks)**, activez et sauvegardez. **20 ticks** valent une seconde à 20 TPS.
 
-![Chercher papier et quartz, polir au poste affecté et livrer deux résultats.](assets/media/guides/create-tutorials-20261108/create-polish.mp4 "Recette et usure réelles ; les compteurs lisent les inventaires serveur.")
+![Vérifier les matériaux, créer le planning, affecter origine, sortie et poste, polir deux pièces et ouvrir le stockage final.](assets/media/guides/create-lessons-20261108/lesson-polish.mp4 "Papier abrasif et deux quartz sont préparés. Recette et usure réelles ; le stockage final contient deux Polished Rose Quartz.")
+
+**Repères**: 0:09 Matériaux · 0:12 Planning vide · 0:44 Origine · 0:53 Stockage final · 1:01 Poste · 1:10 Quantité/nombre · 1:17 Activer/sauver · 1:32 Exécution native · 1:53 Résultat en stock.
 
 Le papier perd sa durabilité réelle. Un stockage plein laisse les résultats au PNJ ; son inventaire doit aussi avoir de la place. Le seul poste de travail ne fournit ni outils, ni matières, ni destination.
 
@@ -53,17 +55,19 @@ Jusqu'à **32 itinéraires** sont possibles. Le **Batch size 1–64** fini compt
 4. Remplacez l'adresse proposée par **Workshop A** et vérifiez le destinataire avec **🔍**.
 5. Réglez attente, répétition/quantité finie et intervalle ; sauvegardez.
 
-![Modifier Workshop A, saisir 80 ticks d'attente et sauvegarder l'itinéraire préparé.](assets/media/guides/create-tutorials-20261108/create-parcel-routes.mp4 "Destinataire et stockages préparés. 80 ticks valent quatre secondes à 20 TPS, contre 400 par défaut.")
-
 L'itinéraire conserve l'**UUID**, pas le nom. Recréer ou cloner un PNJ du même nom ne remplace pas cette identité. Resélectionnez le remplaçant ; voir [Modèles PNJ](#dochi-npc-core/npc-core-templates).
 
-![Workshop A arrive au PNJ, tandis que Unknown reste à l'origine.](assets/media/guides/create-tutorials-20261108/create-parcel-npc.mp4 "Un colis scellé rejoint l'inventaire du destinataire ; l'autre ne correspond pas.")
+![Créer un itinéraire depuis un planning vide, définir origine et retour, choisir destinataire et Workshop A, puis livrer.](assets/media/guides/create-lessons-20261108/lesson-parcel-npc.mp4 "Receiving Clerk est choisi dans le sélecteur natif. Un colis scellé rejoint le PNJ et Unknown reste à l'origine.")
+
+**Repères**: 0:10 Planning vide · 0:42 Origine/retour · 0:58 PNJ destinataire · 1:08 Adresse · 1:11 Quantité/nombre · 1:22 Activer/sauver · 1:36 Exécution native · 1:52 Résultat en stock.
 
 ## Itinéraire vers un inventaire
 
 Choisissez **Add inventory delivery route**, sélectionnez le stockage par Maj + clic droit et indiquez l'adresse. Modifiez une ligne avec **Choose a receiving inventory / Choose an NPC recipient**.
 
-![Livrer un colis scellé dans un tonneau récepteur.](assets/media/guides/create-tutorials-20261108/create-parcel-container.mp4 "Livraison intacte, sans déballage Packager ni transport ultérieur.")
+![Créer un itinéraire vers un stockage, définir origine, retour, destination et adresse, puis vérifier la réception.](assets/media/guides/create-lessons-20261108/lesson-parcel-container.mp4 "Part d'un planning vide. Le tonneau bleu reçoit le colis scellé ; emballer des objets ordinaires est une autre opération Create.")
+
+**Repères**: 0:10 Planning vide · 0:42 Origine/retour · 0:58 Cibles du monde · 1:06 Adresse · 1:10 Quantité/nombre · 1:21 Activer/sauver · 1:35 Exécution native · 1:52 Résultat en stock.
 
 Un colis doit correspondre à **exactement un** itinéraire. Les motifs Create s'appliquent : **Workshop *** peut recouper **Workshop A**. Les colis ambigus restent à l'origine. Commencez avec des adresses exactes distinctes.
 
@@ -71,7 +75,9 @@ Un colis doit correspondre à **exactement un** itinéraire. Les motifs Create s
 
 Si le destinataire est déjà absent/plein avant collecte, le colis reste à l'origine. Si cela arrive en route, le PNJ attend puis retourne vers **Return inventory**. Un retour plein laisse le colis au livreur.
 
-![Retourner un colis lorsque sa destination se remplit après collecte.](assets/media/guides/create-tutorials-20261108/create-parcel-return.mp4 "L'outil remplit volontairement la destination de pierre après collecte pour illustrer le blocage. Le colis revient intact.")
+![Rouvrir l'itinéraire sauvegardé dans la leçon précédente, changer l'attente et vérifier destination pleine et colis retourné.](assets/media/guides/create-lessons-20261108/lesson-parcel-return.mp4 "L'outil remplit explicitement la destination de pierre après collecte. Les deux inventaires sont ouverts pour montrer le résultat.")
+
+**Repères**: 0:15 Pause ajoutée · 0:19 Activer/sauver · 0:33 Blocage · 0:53 Vérifier destination · 0:58 Colis retourné.
 
 | État | Action |
 | --- | --- |
@@ -91,9 +97,11 @@ Finir un service n'efface pas les marchandises. Un colis déjà pris peut garder
 4. Sauvegardez, fermez et attendez **Attending the Stock Ticker**.
 5. L'interaction ordinaire ouvre le menu natif. Les outils d'édition gardent leur priorité.
 
-![Le PNJ s'assoit au comptoir et ouvre le vrai menu de commande Create.](assets/media/guides/create-tutorials-20261108/create-stock-keeper.mp4 "Présence et ouverture du menu, sans paiement ni livraison complète.")
+![Créer le travail de comptoir, choisir Ticker et siège séparément et ouvrir les commandes avec un stock connecté.](assets/media/guides/create-lessons-20261108/lesson-stock-ticker.mp4 "Packager fournisseur et Stock Link sont reliés. Montre approche, siège, interaction à main vide et écran natif.")
 
-**No Packagers Linked** apparaît car ce comptoir de démonstration n'a pas de Packager fournisseur connecté. Reliez réseau logistique et stock réels pour commander. Le guide des commandes utilise un autre réseau connecté.
+**Repères**: 0:08 Planning vide · 0:40 Cibles du monde · 0:56 Activer/sauver · 1:10 Exécution native · 1:23 Écran de commande.
+
+Le comptoir filmé relie Packager fournisseur, Stock Link et véritable stock de fer au même réseau. Une interaction à main vide ouvre le menu Create avec ce stock visible. Paiement et livraison finale au destinataire ne font pas partie de cette leçon.
 
 C'est le menu Create pour joueurs, distinct de la boutique DRM. Tickers absents/ambigus ou siège occupé bloquent la présence. Le PNJ descend en sécurité après le service. S'asseoir, tenir le comptoir et [commander automatiquement](#dochi-npc-core/npc-core-create-factory) sont des actions distinctes.
 

@@ -21,7 +21,7 @@ O horário DNPC decide quando e onde o NPC trabalha. Create controla a rotação
 | --- | --- | --- |
 | Fornecer rotação manual | Operate hand crank | Esta página |
 | Girar pelo ângulo configurado | Operate valve handle | Esta página |
-| Sentar durante o turno | Ride vehicle → Create seat | Esta página |
+| Sentar durante o turno | Mount vehicle → Create seat | Esta página |
 | Polir, entregar ou atender | Sandpaper Polishing / Addressed Parcel Delivery / Stock Ticker Attendance | [Logística](#dochi-npc-core/npc-core-create-logistics) |
 | Abastecer máquinas e pedir materiais | Factory Process / Material Ordering | [Processamento](#dochi-npc-core/npc-core-create-factory) |
 | Reagir a sensores e inspecionar | Conditional Machine Operation / Factory Inspection | [Controle e inspeção](#dochi-npc-core/npc-core-create-control) |
@@ -32,20 +32,18 @@ Instale uma distribuição real de Create para sua versão de Minecraft e carreg
 
 Os registros anteriores de execução abrangem **Forge 1.20.1 / NeoForge 1.21.1 / Fabric 26.3**. Eles não comprovam disponibilidade ou compatibilidade de Create no Fabric 1.21.1 ou NeoForge 26.3. Confira a distribuição e as capacidades reais do alvo. CustomNPCs é excluído no 26.3.
 
-As gravações silenciosas usam **DNPC 0.1.3 + Create 6.0.10 / NeoForge 1.21.1**. **6.0.10 identifica a gravação, não um requisito mínimo universal.** A ferramenta opera telas e controladores reais num mundo isolado com dispositivos e turnos preparados. Legendas em inglês e contadores do servidor são anotações da gravação. Adapte as coordenadas ao seu mundo.
+As gravações silenciosas usam **DNPC 0.1.3 + Create 6.0.10 / NeoForge 1.21.1**. **6.0.10 identifica a gravação, não um requisito mínimo universal.** Somente dispositivos e materiais foram preparados. Cada aula começa com um horário vazio e mostra ação, alvos no mundo, campos, ativação, salvamento e execução real. A devolução continua a configuração salva na aula anterior. A interface é inglesa, com etapas em coreano num painel abaixo do jogo, campos ampliados e marcador de clique. Adapte as coordenadas ao seu mundo. A etapa acima de cada vídeo acompanha a reprodução e a busca e continua legível durante a pausa.
 
 ## Fluxo comum: horário, ação, alvo e salvar
 
 1. Abra **NPC editor → Schedule** com o item NPC Core; é uma ferramenta de criação.
 2. Use **Add time**, nomeie o turno e configure **Start / End (world ticks)**. Comece com **0 → 12000**.
-3. No **+** da linha do turno, escolha uma ação em **Create**. Assentos usam **Ride vehicle**, na categoria de movimento.
+3. No **+** da linha do turno, escolha uma ação em **Create**. Assentos usam **Mount vehicle**, na categoria de movimento.
 4. Selecione a ação e pressione **🔍** no alvo. Use **Shift + clique direito** no bloco correto.
 5. Confira nome, dimensão e coordenadas. **Esc** cancela a seleção.
 6. Ative **Enable schedule**, use **Save to NPC**, feche e observe.
 
 A seleção muda somente o rascunho. O **✓** do nome também não salva o NPC completo. Consulte [Horários](#dochi-npc-core/npc-core-schedules).
-
-![Selecionar a manivela, informar seis segundos e salvar a ação preparada.](assets/media/guides/create-tutorials-20261108/create-device-setup.mp4 "DNPC 0.1.3 / Create 6.0.10 / NeoForge 1.21.1. Turno e ação preparados. Este exemplo de edição mantém o horário OFF; ative antes de executar. As execuções abaixo são exemplos separados.")
 
 ## Manivela manual
 
@@ -57,7 +55,9 @@ Confira primeiro se a máquina funciona quando um jogador gira a manivela. Conex
 4. Em **Operating time (seconds)**, **6** significa seis segundos de entrada efetiva. Deslocamento e espera por outro operador não gastam esse tempo.
 5. Defina posição automática ou atribuída e salve.
 
-![O NPC se aproxima, gira a manivela real e para após o tempo permitido.](assets/media/guides/create-tutorials-20261108/create-crank.mp4 "Horário preparado e entrada nativa de Create. DNPC não fornece potência ilimitada.")
+![Criar o trabalho de manivela num horário vazio, escolher bloco e posição, informar seis segundos, salvar e observar a rotação.](assets/media/guides/create-lessons-20261108/lesson-crank.mp4 "Marcadores e detalhes ampliados mostram as entradas. Ative e salve o horário, feche o editor e observe mãos e manivela reais.")
+
+**Momentos**: 0:04 Horário vazio · 0:36 Alvos no mundo · 0:47 Tempo de operação · 0:59 Ativar/salvar · 1:13 Execução real.
 
 O tempo aceita **1–1200 segundos**. Um NPC usa o dispositivo por vez; o jogador tem prioridade manual. RPM, capacidade e sobrecarga pertencem ao Create.
 
@@ -80,15 +80,19 @@ Garanta piso plano, acesso e visibilidade; evite interiores bloqueados e posiç�
 4. Defina **Pause between operations (seconds)**. A rotação e a espera nativas precisam terminar primeiro.
 5. Confira a posição e salve.
 
-![Duas operações reais de uma válvula configurada para 90 graus.](assets/media/guides/create-tutorials-20261108/create-valve.mp4 "Create controla rotação e espera. Uma operação aceita pode terminar enquanto o trabalho está pausado.")
+![Criar o trabalho de válvula, escolher bloco e posição, informar duas operações e pausa adicional de um segundo e executar.](assets/media/guides/create-lessons-20261108/lesson-valve.mp4 "Os 90 graus do bloco diferem da contagem do NPC. Create controla rotação e espera.")
+
+**Momentos**: 0:04 Horário vazio · 0:36 Alvos no mundo · 0:44 Quantidade/contagem · 0:50 Pausa extra · 1:04 Ativar/salvar · 1:18 Execução real.
 
 São **1–64 operações** por ocorrência e **0,2–60 segundos** de pausa extra. A conclusão finita é salva. Editar, combater ou reconectar não reinicia o limite concluído do mesmo turno. Nova ocorrência e tarefa alterada são tratadas separadamente.
 
 ## Assentos Create
 
-Adicione **Ride vehicle**, troque para **Create seat**, selecione o bloco com **🔍** e confira tempo de tentativa e desembarque ao fim do turno antes de salvar.
+Adicione **Mount vehicle**, troque para **Create seat**, selecione o bloco com **🔍** e confira tempo de tentativa e desembarque ao fim do turno antes de salvar.
 
-![Aproximação, embarque e saída segura de um assento parado.](assets/media/guides/create-tutorials-20261108/create-seat.mp4 "Mostra somente embarque e desembarque estáticos, sem cobrir toda montagem, desmontagem e reconexão de estruturas móveis.")
+![Escolher Create seat em Mount vehicle, definir assento e prazo, salvar, embarcar e sair ao fim do turno.](assets/media/guides/create-lessons-20261108/lesson-seat.mp4 "Começa com horário vazio. A ferramenta muda explicitamente a hora para 12500 para demonstrar o fim do turno.")
+
+**Momentos**: 0:04 Horário vazio · 0:36 Alvos no mundo · 0:47 Prazo de embarque · 0:53 Ativar/salvar · 1:07 Execução real · 1:13 Fim/desembarque.
 
 O alvo é um bloco, não o número de assento de um veículo comum. Assentos ocupados, ausentes, descarregados ou inacessíveis aguardam até o limite. O desembarque espera parada e chão seguro. O rastreamento considera montagem/desmontagem e dados salvos, mas esta ação não cria condução de trens ou rotas de movimento.
 

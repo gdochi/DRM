@@ -23,10 +23,12 @@ translationMethod: assisted
 2. Elige **Control device → Hand crank** y asigna **Machine control position**.
 3. Elige **Sensor reading → Item quantity** y un barril en **Sensor position**.
 4. Configura **Counted item → Iron Ingot**; solo cuenta ese ID.
-5. Activa **Activate at the lower threshold** y define **Lower threshold 2 / Upper threshold 6**.
+5. Activa **Activate at the lower threshold**. Introduce primero **6** en **Upper threshold** y después **2** en **Lower threshold** para mantener un intervalo válido.
 6. Define intervalo, activa y guarda.
 
-![Girar con poco hierro y parar al alcanzar seis.](assets/media/guides/create-tutorials-20261108/create-condition.mp4 "La herramienta cambia existencias de cero a seis para mostrar umbrales. La manivela no fabrica los lingotes añadidos.")
+![Crear control condicional, asignar dispositivo, sensor y hierro e introducir límite superior seis antes del inferior dos.](assets/media/guides/create-lessons-20261108/lesson-conditional-control.mp4 "Ese orden mantiene un intervalo válido. El cambio explícito 0→6 es entrada de prueba; la manivela no fabrica esos lingotes.")
+
+**Momentos**: 0:04 Horario vacío · 0:36 Dispositivo · 0:45 Sensor · 0:56 Elegir objetos · 1:11 Umbrales · 1:19 Activar/guardar · 1:33 Ejecución real · 1:40 Parar en seis.
 
 ## Entre umbrales se conserva el estado anterior
 
@@ -73,13 +75,15 @@ El jugador tiene prioridad. Edición, combate, interacción e IA desactivada pau
 4. Define **Work interval (ticks)**; la lectura usa al menos **20 ticks**.
 5. Asigna opcionalmente un Display Board y guarda.
 
-![Visitar manivela y tanque vacío para leer su estado real.](assets/media/guides/create-tutorials-20261108/create-inspection.mp4 "Solo inspección: sin reparación, repostaje, llenado ni salida Display Board.")
+![Asignar dos puntos de inspección y un Display Board real, introducir filas y comprobar recorrido e informe.](assets/media/guides/create-lessons-20261108/lesson-inspection-board.mp4 "Manivela y tanque vacío se eligen por separado. El panel montado y con energía recibe el informe y se muestra de cerca.")
+
+**Momentos**: 0:05 Potencia del panel · 0:09 Horario vacío · 0:41 Puntos de inspección · 1:01 Asignar panel · 1:09 Filas inicial/reservadas · 1:14 Activar/guardar · 1:29 Ejecución real · 1:41 Informe en panel.
 
 Lee giro/parada, sobrecarga, calor del Burner y nivel del tanque. No repara ni altera contenido. Usa una acción condicional aparte para responder.
 
 ## Informes en Display Board
 
-Ensambla correctamente el panel Create y aporta su potencia normal. Asigna **Display Board (optional)** y configura:
+Ensambla correctamente el panel Create y aporta su potencia normal. El vídeo lo acciona con un **Cogwheel** engranado a su lado. Recibir texto no hace que un panel sin potencia termine de mostrar los caracteres; comprueba primero la conexión de engranajes y el funcionamiento. Asigna **Display Board (optional)** y configura:
 
 | Campo | Significado |
 | --- | --- |

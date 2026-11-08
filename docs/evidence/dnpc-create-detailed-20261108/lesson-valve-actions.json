@@ -1,0 +1,132 @@
+[
+  {
+    "atMs": 5162.2758,
+    "command": "editor",
+    "screen": "world"
+  },
+  {
+    "atMs": 7357.154,
+    "command": "button:Schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 12198.4699,
+    "command": "button:Add time",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 14596.8732,
+    "command": "input:cycle.name\u003d밸브 근무",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 17600.1148,
+    "command": "input:cycle.start\u003d0",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 19997.1331,
+    "command": "input:cycle.end\u003d12000",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 25448.4754,
+    "command": "button:+",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 27857.8885,
+    "command": "category:Create",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 32111.6169,
+    "command": "action:Operate valve handle",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 37206.3968,
+    "command": "button:Assign valve handle block",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 39601.4953,
+    "command": "view:device",
+    "screen": "world"
+  },
+  {
+    "atMs": 42546.5985,
+    "command": "choose:device",
+    "screen": "world"
+  },
+  {
+    "atMs": 45596.8539,
+    "command": "input:kinetic.repetitions\u003d2",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 48006.0225,
+    "command": "reuse-action",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 50999.4935,
+    "command": "input:kinetic.interval\u003d1",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 56607.2726,
+    "command": "button:Assign standing position",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 59006.5719,
+    "command": "view:standing",
+    "screen": "world"
+  },
+  {
+    "atMs": 61947.5007,
+    "command": "choose:standing",
+    "screen": "world"
+  },
+  {
+    "atMs": 65005.954,
+    "command": "button:Enable schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 69010.5917,
+    "command": "button:Save to NPC",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 73500.4951,
+    "command": "verify-saved",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 76797.1114,
+    "command": "arm",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 77398.1951,
+    "command": "close",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 78000.5755,
+    "command": "camera",
+    "screen": "world"
+  },
+  {
+    "atMs": 90810.3328,
+    "command": "verify",
+    "screen": "world"
+  },
+  {
+    "atMs": 94860.1177,
+    "command": "finish",
+    "screen": "world"
+  }
+]

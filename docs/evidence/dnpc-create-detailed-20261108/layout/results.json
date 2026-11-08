@@ -1,0 +1,284 @@
+{
+  "results": [
+    {
+      "slug": "start",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "headings": [
+        "무엇을 만들 수 있나요?",
+        "설치와 촬영 환경",
+        "공통 순서: 시간표 → 액션 → 대상 → 저장",
+        "손 크랭크: 동력을 공급하는 작업",
+        "서 있을 위치는 장치 좌표와 다릅니다",
+        "밸브: 각도는 블록에서, 횟수는 NPC에서",
+        "Create 좌석: 앉는 일정과 기계 운전은 별개",
+        "움직이지 않을 때 확인할 순서"
+      ],
+      "videos": [
+        {
+          "label": "빈 시간표부터 크랭크 액션 추가, 장치·발 위치 선택, 6초 입력과 저장, 실제 회전까지 이어지는 전체 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-crank.mp4"
+        },
+        {
+          "label": "빈 시간표에 밸브 작업을 만들고 밸브·서 있을 위치, 조작 횟수 2회와 추가 대기 1초를 설정해 실행하는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-valve.mp4"
+        },
+        {
+          "label": "Mount vehicle 액션에서 Create seat를 선택하고 좌석 지정·탑승 제한 시간 입력·저장·착석·근무 종료 하차까지 확인하는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-seat.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "start",
+      "width": 390,
+      "viewport": 390,
+      "documentWidth": 390,
+      "headings": [
+        "무엇을 만들 수 있나요?",
+        "설치와 촬영 환경",
+        "공통 순서: 시간표 → 액션 → 대상 → 저장",
+        "손 크랭크: 동력을 공급하는 작업",
+        "서 있을 위치는 장치 좌표와 다릅니다",
+        "밸브: 각도는 블록에서, 횟수는 NPC에서",
+        "Create 좌석: 앉는 일정과 기계 운전은 별개",
+        "움직이지 않을 때 확인할 순서"
+      ],
+      "videos": [
+        {
+          "label": "빈 시간표부터 크랭크 액션 추가, 장치·발 위치 선택, 6초 입력과 저장, 실제 회전까지 이어지는 전체 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-crank.mp4"
+        },
+        {
+          "label": "빈 시간표에 밸브 작업을 만들고 밸브·서 있을 위치, 조작 횟수 2회와 추가 대기 1초를 설정해 실행하는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-valve.mp4"
+        },
+        {
+          "label": "Mount vehicle 액션에서 Create seat를 선택하고 좌석 지정·탑승 제한 시간 입력·저장·착석·근무 종료 하차까지 확인하는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-seat.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "logistics",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "headings": [
+        "시작 전에",
+        "사포 연마: 재료 → 작업 자리 → 완성품 보관함",
+        "소포 배송: 주소와 목적지는 따로 지정합니다",
+        "NPC에게 주소 연결하기",
+        "보관함으로 배송하기",
+        "배송 실패와 반송을 구분하기",
+        "Stock Ticker 주문 창구 만들기",
+        "Blaze Burner에 연료를 옮기려면"
+      ],
+      "videos": [
+        {
+          "label": "원재료 확인부터 빈 시간표, 출처·완성품·작업 자리 선택, 두 개 연마 설정과 실제 결과 보관함 확인까지.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-polish.mp4"
+        },
+        {
+          "label": "빈 시간표에서 출처·반송 통을 고르고 실제 수신 NPC와 Workshop A 주소를 연결해 소포를 배달하는 전체 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-parcel-npc.mp4"
+        },
+        {
+          "label": "빈 시간표에서 보관함 배송 경로를 추가하고 출처·반송지·수령지·주소를 지정한 뒤 실제 수령 소포를 확인하는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-parcel-container.mp4"
+        },
+        {
+          "label": "직전 편에서 저장한 배송 설정을 열어 수신 대기 시간을 변경하고, 배송 실패·대기·반송 통의 소포까지 확인하는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-parcel-return.mp4"
+        },
+        {
+          "label": "빈 시간표에서 Stock Ticker와 Create seat를 각각 지정해 창구를 만들고 실제 연결 재고가 보이는 Create 화면을 여는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-stock-ticker.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "logistics",
+      "width": 390,
+      "viewport": 390,
+      "documentWidth": 390,
+      "headings": [
+        "시작 전에",
+        "사포 연마: 재료 → 작업 자리 → 완성품 보관함",
+        "소포 배송: 주소와 목적지는 따로 지정합니다",
+        "NPC에게 주소 연결하기",
+        "보관함으로 배송하기",
+        "배송 실패와 반송을 구분하기",
+        "Stock Ticker 주문 창구 만들기",
+        "Blaze Burner에 연료를 옮기려면"
+      ],
+      "videos": [
+        {
+          "label": "원재료 확인부터 빈 시간표, 출처·완성품·작업 자리 선택, 두 개 연마 설정과 실제 결과 보관함 확인까지.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-polish.mp4"
+        },
+        {
+          "label": "빈 시간표에서 출처·반송 통을 고르고 실제 수신 NPC와 Workshop A 주소를 연결해 소포를 배달하는 전체 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-parcel-npc.mp4"
+        },
+        {
+          "label": "빈 시간표에서 보관함 배송 경로를 추가하고 출처·반송지·수령지·주소를 지정한 뒤 실제 수령 소포를 확인하는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-parcel-container.mp4"
+        },
+        {
+          "label": "직전 편에서 저장한 배송 설정을 열어 수신 대기 시간을 변경하고, 배송 실패·대기·반송 통의 소포까지 확인하는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-parcel-return.mp4"
+        },
+        {
+          "label": "빈 시간표에서 Stock Ticker와 Create seat를 각각 지정해 창구를 만들고 실제 연결 재고가 보이는 Create 화면을 여는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-stock-ticker.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "factory",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "headings": [
+        "먼저 사람이 가동할 수 있는 기계를 만듭니다",
+        "네 보관 위치를 구분하세요",
+        "Factory Process 설정하기",
+        "수량 예: 재료 수량과 Batch size는 곱해집니다",
+        "실행: 모으기 → 투입 → 기다리기 → 납품",
+        "타임아웃이 떠도 재료는 사라지지 않습니다",
+        "Material Ordering: 목표 재고의 부족분 주문",
+        "접수된 주문을 반복해서 보내지 않는 이유",
+        "Factory Process에 자동 주문 붙이기"
+      ],
+      "videos": [
+        {
+          "label": "Factory Process의 네 보관 위치와 재료·완성품 아이템을 하나씩 선택하고 수량·반복·대기 시간을 입력해 철판 두 개를 완성하는 전체 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-factory-process.mp4"
+        },
+        {
+          "label": "빈 시간표에서 수령 통·철괴·목표 수량 4·Ticker·배송 주소를 지정하고 실제 네트워크 주문과 공급 재고 16→12를 확인하는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-material-order.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "factory",
+      "width": 390,
+      "viewport": 390,
+      "documentWidth": 390,
+      "headings": [
+        "먼저 사람이 가동할 수 있는 기계를 만듭니다",
+        "네 보관 위치를 구분하세요",
+        "Factory Process 설정하기",
+        "수량 예: 재료 수량과 Batch size는 곱해집니다",
+        "실행: 모으기 → 투입 → 기다리기 → 납품",
+        "타임아웃이 떠도 재료는 사라지지 않습니다",
+        "Material Ordering: 목표 재고의 부족분 주문",
+        "접수된 주문을 반복해서 보내지 않는 이유",
+        "Factory Process에 자동 주문 붙이기"
+      ],
+      "videos": [
+        {
+          "label": "Factory Process의 네 보관 위치와 재료·완성품 아이템을 하나씩 선택하고 수량·반복·대기 시간을 입력해 철판 두 개를 완성하는 전체 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-factory-process.mp4"
+        },
+        {
+          "label": "빈 시간표에서 수령 통·철괴·목표 수량 4·Ticker·배송 주소를 지정하고 실제 네트워크 주문과 공급 재고 16→12를 확인하는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-material-order.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "control",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "headings": [
+        "조건이 맞을 때만 조작하기",
+        "예제: 철괴가 2개 이하면 돌리고 6개면 멈추기",
+        "두 임계값 사이에서는 이전 상태를 유지합니다",
+        "센서 종류와 단위",
+        "크랭크·밸브·Linked Controller의 차이",
+        "Factory Inspection: 설비를 돌아다니며 읽기",
+        "Display Board에 보고하기",
+        "문제를 찾는 순서"
+      ],
+      "videos": [
+        {
+          "label": "조건 제어 액션을 처음부터 만들고 장치·센서·철괴를 선택해 상한 6과 하한 2를 입력하고 실제 시작·정지를 확인하는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-conditional-control.mp4"
+        },
+        {
+          "label": "빈 시간표에 두 점검 위치와 실제 Display Board를 지정하고 시작 줄·예약 줄을 입력한 뒤 순회와 보드 보고를 확인하는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-inspection-board.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "control",
+      "width": 390,
+      "viewport": 390,
+      "documentWidth": 390,
+      "headings": [
+        "조건이 맞을 때만 조작하기",
+        "예제: 철괴가 2개 이하면 돌리고 6개면 멈추기",
+        "두 임계값 사이에서는 이전 상태를 유지합니다",
+        "센서 종류와 단위",
+        "크랭크·밸브·Linked Controller의 차이",
+        "Factory Inspection: 설비를 돌아다니며 읽기",
+        "Display Board에 보고하기",
+        "문제를 찾는 순서"
+      ],
+      "videos": [
+        {
+          "label": "조건 제어 액션을 처음부터 만들고 장치·센서·철괴를 선택해 상한 6과 하한 2를 입력하고 실제 시작·정지를 확인하는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-conditional-control.mp4"
+        },
+        {
+          "label": "빈 시간표에 두 점검 위치와 실제 Display Board를 지정하고 시작 줄·예약 줄을 입력한 뒤 순회와 보드 보고를 확인하는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-lessons-20261108/lesson-inspection-board.mp4"
+        }
+      ],
+      "brokenLinks": []
+    }
+  ],
+  "errors": [],
+  "bind": {
+    "address": "127.0.0.1",
+    "family": "IPv4",
+    "port": 63426
+  }
+}

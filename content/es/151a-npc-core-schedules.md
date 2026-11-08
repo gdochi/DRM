@@ -57,7 +57,7 @@ Un NPC más antiguo **Legacy AI compatibility** mantiene su comportamiento anter
 
 ## A bordo de un barco, caballo o vehículo
 
-1. Establezca la actividad de un período en **Movement → Ride vehicle**.
+1. Establezca la actividad de un período en **Movement → Mount vehicle**.
 2. Encuentre vehículos vacíos cercanos automáticamente, o seleccione uno con .
 3. Establece el centro de búsqueda y el radio: bloques predeterminados 16, rango 1–32.
 4. Elige un asiento. Comience con **-1 ** selección automática para barcos de vainilla, carretas de minas y caballos.
@@ -71,7 +71,7 @@ El desmontaje espera hasta que el vehículo se detenga y haya una salida segura 
 
 ## Horarios de trabajos Create
 
-En **+ → Create** del turno, elige manivela, válvula, pulido, paquetes, atención, procesamiento, pedidos, control o inspección. Sigue [Configuración Create y vídeos](#dochi-npc-core/npc-core-create-start) para seleccionar bloques y guardar. Los asientos usan **Ride vehicle → Create seat**; el mostrador usa **Stock Ticker Attendance**.
+En **+ → Create** del turno, elige manivela, válvula, pulido, paquetes, atención, procesamiento, pedidos, control o inspección. Sigue [Configuración Create y vídeos](#dochi-npc-core/npc-core-create-start) para seleccionar bloques y guardar. Los asientos usan **Mount vehicle → Create seat**; el mostrador usa **Stock Ticker Attendance**.
 
 ## Horario de la tienda
 

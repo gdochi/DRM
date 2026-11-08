@@ -55,7 +55,7 @@ An older NPC's **Legacy AI compatibility** keeps its previous behavior. When swi
 
 ## Board a boat, horse or vehicle
 
-1. Set a period's activity to **Movement → Ride vehicle**.
+1. Set a period's activity to **Movement → Mount vehicle**.
 2. Find nearby empty vehicles automatically, or select one with 🔍.
 3. Set the search center and radius: default 16 blocks, range 1–32.
 4. Choose a seat. Start with **-1** automatic selection for vanilla boats, minecarts and horses.
@@ -69,7 +69,7 @@ Dismounting waits until the vehicle stops and a safe exit is available. Configur
 
 ## Create job schedules
 
-Choose crank, valve, polishing, parcel, attendance, processing, ordering, control or inspection from the shift's **+ → Create** category. Follow [Create setup and videos](#dochi-npc-core/npc-core-create-start) for world selection and saving. Seats use **Ride vehicle → Create seat**; counter work uses **Stock Ticker Attendance**.
+Choose crank, valve, polishing, parcel, attendance, processing, ordering, control or inspection from the shift's **+ → Create** category. Follow [Create setup and videos](#dochi-npc-core/npc-core-create-start) for world selection and saving. Seats use **Mount vehicle → Create seat**; counter work uses **Stock Ticker Attendance**.
 
 ## Shop opening hours
 

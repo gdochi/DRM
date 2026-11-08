@@ -146,13 +146,14 @@ public final class GuideCapture {
         if(guideScenes!=null)try{call(guideScenes,"register",output);}catch(Exception error){throw new RuntimeException(error);}
         try{call(Class.forName("dochi.docs.capture.GuideTutorials"),"register",output);}catch(ClassNotFoundException ignored){}catch(Exception error){throw new RuntimeException(error);}
         try{call(Class.forName("dochi.docs.capture.GuideCreate"),"register",output);}catch(ClassNotFoundException ignored){}catch(Exception error){throw new RuntimeException(error);}
+        try{call(Class.forName("dochi.docs.capture.GuideCreateLessons"),"register",output);}catch(ClassNotFoundException ignored){}catch(Exception error){throw new RuntimeException(error);}
     }
 
     private void tick(){
         if(done)return;
         Minecraft mc=Minecraft.getInstance();
         try{
-            if(System.nanoTime()-started>480_000_000_000L)throw new IllegalStateException("Capture timed out at phase "+phase);
+            if(System.nanoTime()-started>Long.getLong("dochi.docs.timeoutSeconds",480L)*1_000_000_000L)throw new IllegalStateException("Capture timed out at phase "+phase);
             if(mc.getOverlay()!=null||++ticks<12)return;
             ticks=0;Files.createDirectories(output);
             if(phase==0){
@@ -301,6 +302,8 @@ public final class GuideCapture {
                 return;
             }
             if(phase==3){
+                try{if((boolean)call(Class.forName("dochi.docs.capture.GuideCreateLessons"),"busy"))return;}catch(ClassNotFoundException ignored){}
+                catch(Throwable error){recordFailure(views[index][0],error);index++;phase=2;return;}
                 if(!expectedScreen.isBlank()){
                     if(expectedScreen.equals("@closed")?mc.screen!=null:expectedScreen.equals("@changed")?mc.screen==null||mc.screen==current:mc.screen==null||(!expectedScreen.equals("*")&&!mc.screen.getClass().getSimpleName().equals(expectedScreen))){
                         if(++screenWait>40){recordFailure(views[index][0],new IllegalStateException("Expected screen did not open: "+expectedScreen));index++;phase=2;expectedScreen="";}return;
@@ -360,6 +363,8 @@ public final class GuideCapture {
     }
 
     private void perform(Minecraft mc,String action)throws Exception{
+        if(action.startsWith("lesson:")){call(Class.forName("dochi.docs.capture.GuideCreateLessons"),"perform",mc,action,output);current=mc.screen;
+            if(action.equals("lesson:editor")||action.equals("lesson:interact")||action.startsWith("lesson:open:")){expectedScreen=action.equals("lesson:editor")?"NpcEditorScreen":"*";screenWait=0;}return;}
         if(action.startsWith("create:")){
             call(Class.forName("dochi.docs.capture.GuideCreate"),"perform",mc,action,output);current=mc.screen;
             if(action.equals("create:editor")||action.equals("create:orders")){expectedScreen=action.equals("create:editor")?"NpcEditorScreen":"*";screenWait=0;}
@@ -1100,6 +1105,7 @@ public final class GuideCapture {
     }
     private void expectNextScreen(){if(!nextScreen.isBlank()){expectedScreen=nextScreen;nextScreen="";screenWait=0;}}
     private static boolean tutorialTransitions()throws Exception{
+        try{if((boolean)call(Class.forName("dochi.docs.capture.GuideCreateLessons"),"allowsScreenTransition"))return true;}catch(ClassNotFoundException ignored){}
         try{return (boolean)call(Class.forName("dochi.docs.capture.GuideTutorials"),"allowsScreenTransition");}catch(ClassNotFoundException ignored){return false;}
     }
     private double nativeUiScale()throws Exception{
@@ -1139,6 +1145,7 @@ public final class GuideCapture {
 
     private void recordFailure(String name,Throwable error)throws Exception{
         if(guideScenes!=null)call(guideScenes,"abort");
+        try{call(Class.forName("dochi.docs.capture.GuideCreateLessons"),"abort");}catch(ClassNotFoundException ignored){}
         error.printStackTrace();JsonObject record=new JsonObject();record.addProperty("id",name);
         var mc=Minecraft.getInstance();record.addProperty("actualScreenAtFailure",mc.screen==null?"world":mc.screen.getClass().getName());
         try(var frame=Screenshot.takeScreenshot(mc.getMainRenderTarget())){frame.writeToFile(output.resolve(name+"-failure.png"));}

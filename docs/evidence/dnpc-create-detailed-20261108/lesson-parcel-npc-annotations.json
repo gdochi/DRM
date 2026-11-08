@@ -1,0 +1,80 @@
+[
+  {
+    "startMs": 591.2941,
+    "step": 1,
+    "title": "주소 소포 배송 · NPC 수신",
+    "body": "소포는 이미 Create에서 포장했습니다. Workshop A 주소를 실제 목적지와 연결합니다."
+  },
+  {
+    "startMs": 5749.7521,
+    "step": 2,
+    "title": "출발 소포 준비",
+    "body": "Workshop A와 Unknown 소포가 있습니다. 주소가 맞는 소포만 꺼내도록 경로를 만듭니다."
+  },
+  {
+    "startMs": 10301.6294,
+    "step": 3,
+    "title": "빈 시간표에서 시작",
+    "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+  },
+  {
+    "startMs": 17350.1331,
+    "step": 4,
+    "title": "근무 시간 만들기",
+    "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+  },
+  {
+    "startMs": 30598.6288,
+    "step": 5,
+    "title": "시간대에 할 일 추가",
+    "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+  },
+  {
+    "startMs": 42347.5277,
+    "step": 6,
+    "title": "출발지와 반송지 지정",
+    "body": "Source는 초록, Return inventory는 주황 보관함입니다. 두 곳을 각각 지정합니다."
+  },
+  {
+    "startMs": 58552.5738,
+    "step": 7,
+    "title": "수신 NPC 고르기",
+    "body": "Add address route를 누르고 Receiving Clerk를 고른 뒤 Apply를 누릅니다."
+  },
+  {
+    "startMs": 68194.0644,
+    "step": 8,
+    "title": "소포 주소와 같은 문자열 입력",
+    "body": "Address 1을 Workshop A로 바꿉니다. 수신자 이름과 소포 주소는 별개의 설정입니다."
+  },
+  {
+    "startMs": 71792.9686,
+    "step": 9,
+    "title": "대기 시간과 유한 배송 수량",
+    "body": "대기 80틱, Batch size 1로 설정합니다. Batch size는 소포 안 아이템 수가 아닌 봉인 소포 개수입니다."
+  },
+  {
+    "startMs": 82601.9758,
+    "step": 10,
+    "title": "활성화하고 NPC에 저장",
+    "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+  },
+  {
+    "startMs": 92302.5312,
+    "step": 11,
+    "title": "저장 확인 후 편집기 닫기",
+    "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+  },
+  {
+    "startMs": 96795.504,
+    "step": 12,
+    "title": "포장을 뜯지 않고 그대로 전달",
+    "body": "NPC가 상자를 양팔로 들고 수신 NPC에게 걸어갑니다. 수신자는 이름이 아닌 UUID로 연결됩니다."
+  },
+  {
+    "startMs": 112097.5333,
+    "step": 13,
+    "title": "주소가 맞지 않는 소포는 남습니다",
+    "body": "Workshop A 한 개는 수신자에게 갔고 Unknown은 출발지에 남았습니다."
+  }
+]

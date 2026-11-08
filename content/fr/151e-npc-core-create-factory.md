@@ -40,7 +40,9 @@ Entrée et résultat peuvent partager le Depot. L'origine doit différer de l'en
 6. Activez **Repeat throughout shift** ou définissez un **Batch size** fini, qui compte ici les lots.
 7. Réglez **Processing timeout in ticks / Work interval (ticks)**, activez et sauvegardez.
 
-![Définir deux lingots et deux plaques par lot, puis sauvegarder la machine préparée.](assets/media/guides/create-tutorials-20261108/create-factory-settings.mp4 "Positions et types préparés. L'exécution suivante utilise deux lots d'un objet.")
+![Choisir les quatre positions et les deux objets de Factory Process, saisir quantités et délais et produire deux plaques.](assets/media/guides/create-lessons-20261108/lesson-factory-process.mp4 "Part d'un planning vide. Entrée et résultat sélectionnent le même Depot. Un lingot et une plaque par lot, Batch size 2 ; le stockage final est ouvert.")
+
+**Repères**: 0:10 Planning vide · 0:42 Quatre positions · 1:15 Choisir les objets · 1:49 Quantité/nombre · 2:03 Activer/sauver · 2:17 Exécution native · 2:35 Résultat en stock.
 
 ## Quantités des lots
 
@@ -52,8 +54,6 @@ Entrée et résultat peuvent partager le Depot. L'origine doit différer de l'en
 Cela suppose une recette garantie 1:1. Des résultats aléatoires peuvent faire attendre une quantité impossible. **Les IDs de matière et de produit doivent différer**.
 
 ## Réunir, insérer, attendre, livrer
-
-![Deux lots avec la presse native et livraison des plaques.](assets/media/guides/create-tutorials-20261108/create-factory-process.mp4 "Un lingot et une plaque par lot ; Batch size 2. Deux résultats réels arrivent au tonneau final.")
 
 Retirez le produit configuré déjà présent dans la sortie avant de commencer. Le PNJ réunit, insère, attend le résultat réel et livre. Un travailleur réserve entrée/résultat ; un autre les partageant peut attendre avec **Workstation is reserved by another worker**.
 
@@ -76,7 +76,9 @@ Préparez Create :
 
 Ajoutez ensuite **Material Ordering**, affectez récepteur, objets/cibles, **Stock Ticker**, **Delivery address** et intervalle, puis sauvegardez.
 
-![Commander quatre lingots au réseau préparé et attendre une commande acceptée.](assets/media/guides/create-tutorials-20261108/create-material-order.mp4 "Stock fournisseur 16→12 et un reçu persistant. L'exemple ne connecte pas de trajet de livraison ; arrivée et déballage ne sont pas montrés.")
+![Affecter stockage récepteur, fer, objectif quatre, Ticker et adresse, puis vérifier commande et stock 16→12.](assets/media/guides/create-lessons-20261108/lesson-material-order.mp4 "Inclut recherche, sélection et Apply natifs. Montre commande acceptée et emballage ; arrivée et déballage exigent un trajet séparé.")
+
+**Repères**: 0:04 Planning vide · 0:36 Stockage récepteur · 0:45 Stock cible · 1:02 Ticker/adresse · 1:17 Activer/sauver · 1:31 Exécution native · 1:44 Stock fournisseur · 1:49 Commande/arrivée.
 
 ## Les commandes en attente ne sont pas renvoyées automatiquement
 

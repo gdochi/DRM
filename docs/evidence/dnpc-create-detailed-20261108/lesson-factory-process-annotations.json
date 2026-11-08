@@ -1,0 +1,110 @@
+[
+  {
+    "startMs": 598.2843,
+    "step": 1,
+    "title": "Factory Process · 네 위치를 하나씩 연결",
+    "body": "초록 통은 원재료, 프레스 아래 Depot은 투입·회수, 파란 통은 최종 완성품 위치입니다."
+  },
+  {
+    "startMs": 5740.0204,
+    "step": 2,
+    "title": "실제 철괴 두 개 준비",
+    "body": "이 예제는 철괴 한 개를 철판 한 개로 만드는 배치를 두 번 실행합니다."
+  },
+  {
+    "startMs": 10288.0287,
+    "step": 3,
+    "title": "빈 시간표에서 시작",
+    "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+  },
+  {
+    "startMs": 17350.7289,
+    "step": 4,
+    "title": "근무 시간 만들기",
+    "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+  },
+  {
+    "startMs": 30600.2707,
+    "step": 5,
+    "title": "시간대에 할 일 추가",
+    "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+  },
+  {
+    "startMs": 42353.3078,
+    "step": 6,
+    "title": "① Source inventory",
+    "body": "NPC가 원재료를 꺼낼 초록 통을 지정합니다. 기계 투입 위치와 다릅니다."
+  },
+  {
+    "startMs": 50751.0685,
+    "step": 7,
+    "title": "② Machine input inventory",
+    "body": "프레스 아래 Depot에 재료를 넣습니다. 보관함이 아니라 실제 투입 가능한 장치를 선택하세요."
+  },
+  {
+    "startMs": 59152.1389,
+    "step": 8,
+    "title": "③ Finished output inventory",
+    "body": "이 프레스는 같은 Depot에 완성품이 놓입니다. 이번에는 같은 Depot을 다시 선택합니다."
+  },
+  {
+    "startMs": 67541.1748,
+    "step": 9,
+    "title": "④ Finished items inventory",
+    "body": "완성된 철판을 최종 보관할 파란 통입니다. 기계의 결과 위치와 구분하세요."
+  },
+  {
+    "startMs": 75947.6556,
+    "step": 10,
+    "title": "재료 아이템 직접 선택",
+    "body": "Material item의 찾기에서 minecraft:iron_ingot을 검색하고 아이콘을 고른 뒤 Apply합니다."
+  },
+  {
+    "startMs": 91397.7335,
+    "step": 11,
+    "title": "한 배치에 사용할 수량",
+    "body": "Material quantity는 배치당 소비량입니다. 철괴 한 개로 입력합니다."
+  },
+  {
+    "startMs": 94387.5532,
+    "step": 12,
+    "title": "완성품도 직접 선택",
+    "body": "Finished item에서 create:iron_sheet를 검색하고 선택합니다. 원재료와 결과 ID는 달라야 합니다."
+  },
+  {
+    "startMs": 109852.5306,
+    "step": 13,
+    "title": "완성 수량과 배치 횟수",
+    "body": "한 배치의 완성 수량 1, 반복 OFF, Batch size 2로 설정합니다. 총 철판 두 개입니다."
+  },
+  {
+    "startMs": 117640.86,
+    "step": 14,
+    "title": "가공 대기 제한과 작업 간격",
+    "body": "Processing timeout 1200틱, Work interval 20틱입니다. 타임아웃이 나도 기존 재료는 보존됩니다."
+  },
+  {
+    "startMs": 123047.7111,
+    "step": 15,
+    "title": "활성화하고 NPC에 저장",
+    "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+  },
+  {
+    "startMs": 132750.6219,
+    "step": 16,
+    "title": "저장 확인 후 편집기 닫기",
+    "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+  },
+  {
+    "startMs": 137243.144,
+    "step": 17,
+    "title": "실제 프레스 가공을 가까이서 관찰",
+    "body": "재료를 넣은 뒤 프레스가 눌러 철판을 만듭니다. NPC가 결과를 회수해 최종 통으로 옮깁니다."
+  },
+  {
+    "startMs": 155254.3759,
+    "step": 18,
+    "title": "최종 통의 철판 두 개 확인",
+    "body": "원재료 두 개가 두 번의 실제 가공을 거쳐 납품됐습니다. NPC가 결과를 생성한 것이 아닙니다."
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "atMs": 4558.3204,
+    "command": "editor",
+    "screen": "world"
+  },
+  {
+    "atMs": 7009.8675,
+    "command": "button:Schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 9401.7359,
+    "command": "expand-time",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 13403.9651,
+    "command": "reuse-action",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 16396.5285,
+    "command": "input:create_job.recipient_wait\u003d40",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 20006.9119,
+    "command": "button:Enable schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 24010.204,
+    "command": "button:Save to NPC",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 28502.2151,
+    "command": "verify-saved",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 31798.6271,
+    "command": "arm",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 32397.5002,
+    "command": "close",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 33002.6535,
+    "command": "camera",
+    "screen": "world"
+  },
+  {
+    "atMs": 51302.5886,
+    "command": "verify",
+    "screen": "world"
+  },
+  {
+    "atMs": 51910.4442,
+    "command": "view:output",
+    "screen": "world"
+  },
+  {
+    "atMs": 52502.1395,
+    "command": "open:output",
+    "screen": "world"
+  },
+  {
+    "atMs": 56551.6029,
+    "command": "close",
+    "screen": "ContainerScreen"
+  },
+  {
+    "atMs": 57152.8331,
+    "command": "view:returns",
+    "screen": "world"
+  },
+  {
+    "atMs": 57748.7233,
+    "command": "open:returns",
+    "screen": "world"
+  },
+  {
+    "atMs": 62549.204,
+    "command": "close",
+    "screen": "ContainerScreen"
+  },
+  {
+    "atMs": 65997.0476,
+    "command": "finish",
+    "screen": "world"
+  }
+]

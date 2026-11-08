@@ -1,0 +1,177 @@
+[
+  {
+    "atMs": 4551.2494,
+    "command": "view:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 5158.04,
+    "command": "open:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 12306.3784,
+    "command": "close",
+    "screen": "ContainerScreen"
+  },
+  {
+    "atMs": 13498.7009,
+    "command": "editor",
+    "screen": "world"
+  },
+  {
+    "atMs": 15698.9415,
+    "command": "button:Schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 20552.595,
+    "command": "button:Add time",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 22960.6335,
+    "command": "input:cycle.name\u003d사포 연마",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 25953.5142,
+    "command": "input:cycle.start\u003d0",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 28353.8752,
+    "command": "input:cycle.end\u003d12000",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 33799.4217,
+    "command": "button:+",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 36207.8266,
+    "command": "category:Create",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 40448.5045,
+    "command": "action:Sandpaper Polishing",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 45556.7625,
+    "command": "button:Source inventory",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 47945.9263,
+    "command": "view:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 50901.8595,
+    "command": "choose:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 53956.1553,
+    "command": "button:Finished items inventory",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 56353.4114,
+    "command": "view:output",
+    "screen": "world"
+  },
+  {
+    "atMs": 59302.4961,
+    "command": "choose:output",
+    "screen": "world"
+  },
+  {
+    "atMs": 62346.43,
+    "command": "button:Working position and facing",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 64762.7772,
+    "command": "view:workplace",
+    "screen": "world"
+  },
+  {
+    "atMs": 67696.7889,
+    "command": "choose:workplace",
+    "screen": "world"
+  },
+  {
+    "atMs": 70749.2975,
+    "command": "button:Repeat throughout shift",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 73160.6533,
+    "command": "input:create_job.batch\u003d2",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 75545.6288,
+    "command": "input:create_job.interval\u003d20",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 78553.9406,
+    "command": "button:Enable schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 82559.9466,
+    "command": "button:Save to NPC",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 87054.1633,
+    "command": "verify-saved",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 90354.341,
+    "command": "arm",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 90948.9651,
+    "command": "close",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 91548.7722,
+    "command": "camera",
+    "screen": "world"
+  },
+  {
+    "atMs": 111347.4875,
+    "command": "verify",
+    "screen": "world"
+  },
+  {
+    "atMs": 111953.3012,
+    "command": "view:output",
+    "screen": "world"
+  },
+  {
+    "atMs": 112560.797,
+    "command": "open:output",
+    "screen": "world"
+  },
+  {
+    "atMs": 117354.2506,
+    "command": "close",
+    "screen": "ContainerScreen"
+  },
+  {
+    "atMs": 120799.0262,
+    "command": "finish",
+    "screen": "world"
+  }
+]

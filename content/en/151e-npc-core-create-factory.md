@@ -38,7 +38,9 @@ Input and machine result can share the same Depot. Source must differ from machi
 6. Enable **Repeat throughout shift**, or turn it off and choose a finite **Batch size**. Here that means the number of batches.
 7. Set **Processing timeout in ticks / Work interval (ticks)**, enable the schedule and save.
 
-![Setting two iron ingots and two finished sheets per batch and saving the prepared machine setup.](assets/media/guides/create-tutorials-20261108/create-factory-settings.mp4 "Positions and item types are prepared. The runtime example below instead uses two batches of one item each.")
+![Select all four Factory Process positions and both item types, enter quantities and timing, save and produce two iron sheets.](assets/media/guides/create-lessons-20261108/lesson-factory-process.mp4 "Starts with an empty schedule. Input and result each select the same Depot. One ingot and sheet per batch, Batch size 2; the final storage is opened.")
+
+**Jump points**: 0:10 Empty schedule · 0:42 Four positions · 1:15 Item selection · 1:49 Quantity/count · 2:03 Enable/save · 2:17 Native execution · 2:35 Inventory result.
 
 ## Batch quantities
 
@@ -50,8 +52,6 @@ Input and machine result can share the same Depot. Source must differ from machi
 These totals assume a guaranteed 1:1 recipe. Chance outputs can leave the NPC waiting for an unattainable configured result. **Raw and finished item IDs must differ** so input cannot be mistaken for completed work.
 
 ## Gather, insert, wait, deliver
-
-![Two batches: fetch iron, insert into the Depot, wait for the real press and deliver sheets.](assets/media/guides/create-tutorials-20261108/create-factory-process.mp4 "One ingot and one sheet per batch, Batch size 2. The final barrel receives two native Mechanical Press results.")
 
 Clear any existing configured finished item from the machine result inventory before starting. The NPC gathers the batch, inserts it, waits for the required actual result and delivers it. Input/result positions are reserved by one worker; another NPC sharing them may wait with **Workstation is reserved by another worker**.
 
@@ -74,7 +74,9 @@ Prepare the native logistics side:
 
 Then add **Material Ordering**, assign the receiving inventory, materials and target counts, **Stock Ticker**, **Delivery address** and work interval. Save.
 
-![Requesting four iron ingots through a prepared native logistics network and waiting on one accepted order.](assets/media/guides/create-tutorials-20261108/create-material-order.mp4 "Supplier stock changes 16→12 and one persistent request remains. The example has no connected delivery route, so arrival and unpacking are not demonstrated.")
+![Assign receiving storage, iron, target four, Ticker and delivery address, then observe ordering and supplier stock changing 16→12.](assets/media/guides/create-lessons-20261108/lesson-material-order.mp4 "Includes native item search, selection and Apply. It demonstrates accepted ordering and packing; arrival and unpacking require a separate delivery route.")
+
+**Jump points**: 0:04 Empty schedule · 0:36 Receiving storage · 0:45 Target stock · 1:02 Ticker/address · 1:17 Enable/save · 1:31 Native execution · 1:44 Supplier stock · 1:49 Order/arrival scope.
 
 ## Pending orders are not resent automatically
 

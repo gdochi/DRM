@@ -785,6 +785,22 @@
       openImage(link);
     }));
     app.querySelectorAll(".doc-image a").forEach(link => { link.setAttribute("aria-label", `${ui("zoom")}: ${link.querySelector("img").alt}`); link.title = ui("zoom"); });
+    app.querySelectorAll(".doc-video[data-guide-steps]").forEach(figure => {
+      const steps = JSON.parse(figure.dataset.guideSteps);
+      const video = figure.querySelector("video");
+      let current = -1;
+      const updateStep = () => {
+        let index = 0;
+        for (let i = 0; i < steps.length && steps[i].startMs <= video.currentTime * 1000; i++) index = i;
+        if (index === current) return;
+        current = index;
+        const step = steps[index];
+        figure.querySelector("[data-step-title]").textContent = `${String(step.step).padStart(2, "0")} / ${steps.length}  ${step.title}`;
+        figure.querySelector("[data-step-body]").textContent = step.body;
+      };
+      for (const event of ["loadedmetadata", "timeupdate", "seeking", "seeked", "ended"]) video.addEventListener(event, updateStep);
+      updateStep();
+    });
     if (guideMotion.matches) app.querySelectorAll(".doc-video video").forEach(video => {
       video.removeAttribute("autoplay");
       video.pause();

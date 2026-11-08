@@ -1,0 +1,167 @@
+[
+  {
+    "atMs": 5156.3952,
+    "command": "editor",
+    "screen": "world"
+  },
+  {
+    "atMs": 7357.2151,
+    "command": "button:Schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 12213.355,
+    "command": "button:Add time",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 14611.6111,
+    "command": "input:cycle.name\u003d자재 주문",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 17609.467,
+    "command": "input:cycle.start\u003d0",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 20000.595,
+    "command": "input:cycle.end\u003d12000",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 25454.0037,
+    "command": "button:+",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 27856.7283,
+    "command": "category:Create",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 32110.2567,
+    "command": "action:Material Ordering",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 37203.8752,
+    "command": "button:Receiving inventory to maintain",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 39607.4997,
+    "command": "view:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 42554.8932,
+    "command": "choose:source",
+    "screen": "world"
+  },
+  {
+    "atMs": 45599.4587,
+    "command": "button:Material item",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 48010.0945,
+    "command": "input:search\u003dminecraft:iron_ingot",
+    "screen": "NpcFactoryItemPicker"
+  },
+  {
+    "atMs": 52213.5755,
+    "command": "item:minecraft:iron_ingot",
+    "screen": "NpcFactoryItemPicker"
+  },
+  {
+    "atMs": 56459.1086,
+    "command": "button:Apply",
+    "screen": "NpcFactoryItemPicker"
+  },
+  {
+    "atMs": 60458.06,
+    "command": "input:factory.material.count.0\u003d4",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 63449.1014,
+    "command": "button:Stock Ticker",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 65847.3552,
+    "command": "view:ticker",
+    "screen": "world"
+  },
+  {
+    "atMs": 68808.5654,
+    "command": "choose:ticker",
+    "screen": "world"
+  },
+  {
+    "atMs": 71255.3326,
+    "command": "input:factory.address\u003dWorkshop A",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 74852.6773,
+    "command": "input:create_job.interval\u003d20",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 77856.5196,
+    "command": "button:Enable schedule",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 81855.3793,
+    "command": "button:Save to NPC",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 86349.7599,
+    "command": "verify-saved",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 89648.5568,
+    "command": "arm",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 90255.7551,
+    "command": "close",
+    "screen": "NpcEditorScreen"
+  },
+  {
+    "atMs": 90859.3984,
+    "command": "camera",
+    "screen": "world"
+  },
+  {
+    "atMs": 103152.47,
+    "command": "verify",
+    "screen": "world"
+  },
+  {
+    "atMs": 103757.1122,
+    "command": "view:network",
+    "screen": "world"
+  },
+  {
+    "atMs": 104350.6337,
+    "command": "open:network",
+    "screen": "world"
+  },
+  {
+    "atMs": 109154.5873,
+    "command": "close",
+    "screen": "ContainerScreen"
+  },
+  {
+    "atMs": 113198.785,
+    "command": "finish",
+    "screen": "world"
+  }
+]

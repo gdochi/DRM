@@ -15,7 +15,7 @@ translationMethod: assisted
 
 ## Antes de empezar
 
-Son ajustes de **Schedule** para creadores y su ejecución en el mundo. Lee [Inicio Create](#dochi-npc-core/npc-core-create-start). Vídeos sin sonido: DNPC 0.1.3 + Create 6.0.10 / NeoForge 1.21.1. Las ejecuciones tienen turnos y dispositivos preparados; la edición muestra los cambios indicados.
+Las lecciones muestran la creación en **Schedule** y su ejecución real. Lee [Inicio Create](#dochi-npc-core/npc-core-create-start) para instalación y guardado. Grabaciones sin sonido en DNPC 0.1.3 + Create 6.0.10 / NeoForge 1.21.1, con interfaz inglesa y pasos en coreano. Cada tarea parte de un horario vacío; la devolución continúa la configuración guardada en la entrega a inventario.
 
 ## Pulido con lija
 
@@ -25,7 +25,9 @@ Son ajustes de **Schedule** para creadores y su ejecución en el mundo. Lee [Ini
 4. Usa **Repeat throughout shift** o **Finish one batch per shift** con **Batch size** finito. El ejemplo convierte dos Rose Quartz en dos Polished Rose Quartz.
 5. Define **Work interval (ticks)**, activa y guarda. **20 ticks** son un segundo a 20 TPS.
 
-![Recoger lija y cuarzo, pulir en el lugar asignado y entregar dos resultados.](assets/media/guides/create-tutorials-20261108/create-polish.mp4 "Receta y desgaste reales; los contadores leen inventarios del servidor.")
+![Revisar ingredientes, crear horario, asignar origen, salida y puesto, pulir dos piezas y abrir el inventario final.](assets/media/guides/create-lessons-20261108/lesson-polish.mp4 "Lija y dos cuarzos están preparados. Receta y desgaste reales; el inventario final muestra dos Polished Rose Quartz.")
+
+**Momentos**: 0:09 Ingredientes · 0:12 Horario vacío · 0:44 Origen · 0:53 Inventario final · 1:01 Puesto · 1:10 Cantidad/número · 1:17 Activar/guardar · 1:32 Ejecución real · 1:53 Resultado en inventario.
 
 La lija pierde durabilidad. Un destino lleno deja productos con el NPC; su inventario también necesita espacio. Asignar solo el lugar no aporta herramientas, material o destino.
 
@@ -53,17 +55,19 @@ Se admiten **32 rutas**. **Batch size 1–64** finito cuenta **paquetes sellados
 4. Cambia la dirección generada a **Workshop A** y revisa destinatario con **🔍**.
 5. Configura espera, repetición/cantidad finita e intervalo; guarda.
 
-![Editar Workshop A, una espera de 80 ticks y guardar la ruta preparada.](assets/media/guides/create-tutorials-20261108/create-parcel-routes.mp4 "Destinatario e inventarios preparados. 80 ticks son cuatro segundos a 20 TPS; el valor predeterminado es 400.")
-
 Se guarda el **UUID**, no el nombre. Recrear o clonar un NPC con el mismo nombre no sustituye su identidad. Selecciona el reemplazo; consulta [Plantillas NPC](#dochi-npc-core/npc-core-templates).
 
-![Workshop A llega al NPC mientras Unknown queda en origen.](assets/media/guides/create-tutorials-20261108/create-parcel-npc.mp4 "Un paquete sellado llega al inventario receptor; el otro no coincide.")
+![Crear la ruta desde un horario vacío, asignar origen y devolución, elegir destinatario y Workshop A y entregar.](assets/media/guides/create-lessons-20261108/lesson-parcel-npc.mp4 "Receiving Clerk se elige en el selector nativo. Un paquete sellado llega al NPC y Unknown queda en origen.")
+
+**Momentos**: 0:10 Horario vacío · 0:42 Origen/devolución · 0:58 NPC destinatario · 1:08 Dirección · 1:11 Cantidad/número · 1:22 Activar/guardar · 1:36 Ejecución real · 1:52 Resultado en inventario.
 
 ## Ruta hacia un inventario
 
 Usa **Add inventory delivery route**, selecciona el contenedor con Mayús + clic derecho e introduce la dirección. Cambia rutas existentes con **Choose a receiving inventory / Choose an NPC recipient**.
 
-![Entregar un paquete sellado a un barril receptor.](assets/media/guides/create-tutorials-20261108/create-parcel-container.mp4 "Entrega intacta, sin apertura con Packager ni transporte posterior.")
+![Crear una ruta a inventario, asignar origen, devolución, destino y dirección y comprobar la recepción.](assets/media/guides/create-lessons-20261108/lesson-parcel-container.mp4 "Parte de horario vacío. El barril azul recibe el paquete sellado; embalar objetos normales es otra operación de Create.")
+
+**Momentos**: 0:10 Horario vacío · 0:42 Origen/devolución · 0:58 Objetivos del mundo · 1:06 Dirección · 1:10 Cantidad/número · 1:21 Activar/guardar · 1:35 Ejecución real · 1:52 Resultado en inventario.
 
 Cada paquete debe coincidir con **exactamente una** ruta. Se usan patrones Create: **Workshop *** puede solaparse con **Workshop A**. Los paquetes ambiguos quedan en origen. Empieza con direcciones exactas distintas.
 
@@ -71,7 +75,9 @@ Cada paquete debe coincidir con **exactamente una** ruta. Se usan patrones Creat
 
 Si el receptor ya falta o está lleno antes de recoger, el paquete queda en origen. Si ocurre durante el transporte, el NPC espera y vuelve a **Return inventory**. Una devolución llena deja el paquete con el mensajero.
 
-![Devolver el paquete si su destino se llena después de recogerlo.](assets/media/guides/create-tutorials-20261108/create-parcel-return.mp4 "La herramienta llena deliberadamente el destino con piedra tras la recogida para demostrar la obstrucción. El paquete vuelve intacto.")
+![Reabrir la ruta guardada en la lección anterior, cambiar la espera y revisar destino lleno y paquete devuelto.](assets/media/guides/create-lessons-20261108/lesson-parcel-return.mp4 "La herramienta llena explícitamente el destino de piedra tras la recogida. Se abren ambos inventarios para mostrar el resultado.")
+
+**Momentos**: 0:15 Pausa extra · 0:19 Activar/guardar · 0:33 Obstrucción · 0:53 Revisar destino · 0:58 Paquete devuelto.
 
 | Estado | Acción |
 | --- | --- |
@@ -91,9 +97,11 @@ Acabar el turno no borra la carga. Un paquete recogido puede conservar el destin
 4. Guarda, cierra y espera **Attending the Stock Ticker**.
 5. La interacción normal abre el menú nativo. Las herramientas de edición conservan prioridad.
 
-![El NPC se sienta en el mostrador y abre el menú real de Create.](assets/media/guides/create-tutorials-20261108/create-stock-keeper.mp4 "Muestra atención y entrada al menú; no completa pago ni envío.")
+![Crear el trabajo de mostrador, elegir Ticker y asiento por separado y abrir pedidos con existencias conectadas.](assets/media/guides/create-lessons-20261108/lesson-stock-ticker.mp4 "Packager proveedor y Stock Link están conectados. Muestra aproximación, asiento, interacción con mano vacía y pantalla nativa.")
 
-**No Packagers Linked** aparece porque este mostrador de ejemplo no conecta un Packager proveedor. Conecta una red logística y existencias reales para pedir. La guía de pedidos utiliza otra red conectada.
+**Momentos**: 0:08 Horario vacío · 0:40 Objetivos del mundo · 0:56 Activar/guardar · 1:10 Ejecución real · 1:23 Pantalla de pedidos.
+
+El mostrador grabado conecta Packager proveedor, Stock Link y existencias reales de hierro en la misma red. La interacción con la mano vacía abre el menú original con esas existencias visibles. El pago y la entrega final al destinatario quedan fuera de esta lección.
 
 Es el menú de Create para jugadores, separado de la tienda DRM. Tickers ausentes/ambiguos y asientos ocupados impiden atender. El NPC baja con seguridad al acabar. Sentarse, atender y [pedir materiales automáticamente](#dochi-npc-core/npc-core-create-factory) son acciones distintas.
 
