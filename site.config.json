@@ -233,6 +233,21 @@
       "modrinthUrl": "https://modrinth.com/mod/drm-cobblemon-editor"
     },
     {
+      "id": "mwent",
+      "cardHistoryPage": "releases",
+      "label": "MWENT — Minigames Card Game",
+      "label_ko": "뭰트 — 미니게임스 카드 게임",
+      "shortLabel": "MWENT",
+      "shortLabel_ko": "뭰트",
+      "description": "Collect cards, build a faction deck and play against friends or AI.",
+      "description_ko": "카드를 모아 진영 덱을 만들고 친구나 AI와 겨룹니다.",
+      "product": "mwent",
+      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames",
+      "logo": "assets/mod-logos/dochi_minigames.png",
+      "logoAlt": "MWENT — included in Dochi`s Minigames",
+      "logoAlt_ko": "Dochi`s Minigames에 포함된 뭰트"
+    },
+    {
       "id": "dochi-minigames",
       "label": "Dochi`s Minigames",
       "label_ko": "Dochi`s Minigames",
@@ -331,21 +346,6 @@
       "logoAlt_ja": "Dochi's Real Armor ロゴ",
       "product": "dochi-real-armor",
       "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor"
-    },
-    {
-      "id": "mwent",
-      "cardHistoryPage": "releases",
-      "label": "MWENT — Minigames Card Game",
-      "label_ko": "뭰트 — 미니게임스 카드 게임",
-      "shortLabel": "MWENT",
-      "shortLabel_ko": "뭰트",
-      "description": "Collect cards, build a faction deck and play against friends or AI.",
-      "description_ko": "카드를 모아 진영 덱을 만들고 친구나 AI와 겨룹니다.",
-      "product": "mwent",
-      "curseForgeUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-minigames",
-      "logo": "assets/mod-logos/dochi_minigames.png",
-      "logoAlt": "MWENT — included in Dochi`s Minigames",
-      "logoAlt_ko": "Dochi`s Minigames에 포함된 뭰트"
     },
     {
       "id": "dochi-mapicon-integration",

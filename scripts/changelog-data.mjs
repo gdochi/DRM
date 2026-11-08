@@ -113,37 +113,45 @@ export function scopedNotes(html, loader, minecraft, { inferItemPlatforms = true
   }
   // Merge categories repeated by Global and environment-specific sections.
   // This retains the source wording while presenting each category once.
-  const categories = new Map(['Added','Fixed','Changed','Improved'].map(title => [title, []]));
+  const categories = new Map(['Added','Fixed','Changed','Improved'].map(title => [title, new Map([['', []]])]));
+  const append = (title, section, html) => {
+    const sections = categories.get(title);
+    if (!sections.has(section)) sections.set(section, []);
+    sections.get(section).push(html);
+  };
   const before = [];
   const after = [];
   let category = '';
+  let subcategory = '';
   let otherSection = false;
   for (const node of parse(output.join('')).children) {
     if (node.tag === 'h3') {
       const title = textOf(node).trim();
       category = categories.has(title) ? title : '';
-      // Keep loader-specific additions out of the last Global subcategory.
-      if (category && categories.get(category).some(block => block.startsWith('<h4>'))) {
-        categories.get(category).push(`<h4>${escape(loader)} ${escape(minecraft)}</h4>`);
-      }
+      subcategory = '';
       otherSection = !category;
       if (otherSection) after.push(`<h3>${escape(title)}</h3>`);
       continue;
     }
-    if (category) categories.get(category).push(render(node));
+    if (category && node.tag === 'h4') subcategory = textOf(node).trim();
+    else if (category) append(category, subcategory, render(node));
     else if (otherSection) after.push(render(node));
     else if (node.tag === 'ul') {
       const remaining = [];
       for (const child of node.children) {
         if (child.tag !== 'li') continue;
         const inferred = textOf(child).trim().match(/^(Added|Fixed|Changed|Improved)\b/)?.[1];
-        if (inferred) categories.get(inferred).push(`<ul>${render(child)}</ul>`);
+        if (inferred) append(inferred, '', `<ul>${render(child)}</ul>`);
         else remaining.push(render(child));
       }
       if (remaining.length) before.push(`<ul>${remaining.join('')}</ul>`);
     } else before.push(render(node));
   }
-  const grouped = [...categories].flatMap(([title, blocks]) => blocks.some(block => block.trim()) ? [`<h3>${title}</h3>`, ...blocks] : []);
+  const grouped = [...categories].flatMap(([title, sections]) => {
+    const blocks = [...sections].flatMap(([section, content]) => content.some(block => block.trim())
+      ? [...(section ? [`<h4>${escape(section)}</h4>`] : []), ...content] : []);
+    return blocks.length ? [`<h3>${title}</h3>`, ...blocks] : [];
+  });
   return [...before, ...grouped, ...after].join('').replace(/<\/ul>\s*<ul>/g, '\n').trim();
 }
 
