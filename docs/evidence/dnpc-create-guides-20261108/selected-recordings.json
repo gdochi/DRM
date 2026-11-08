@@ -1,0 +1,107 @@
+[
+  {
+    "id": "create-device-setup",
+    "run": "create-tutorials-neo1211-en-04",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-device-setup.mp4",
+    "footerRepair": false,
+    "review": "capture/create-device-setup/frames-receipt.json"
+  },
+  {
+    "id": "create-crank",
+    "run": "create-tutorials-neo1211-en-02",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-crank.mp4",
+    "footerRepair": true,
+    "review": "capture/create-crank/frames-receipt.json"
+  },
+  {
+    "id": "create-valve",
+    "run": "create-tutorials-neo1211-en-02",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-valve.mp4",
+    "footerRepair": true,
+    "review": "capture/create-valve/frames-receipt.json"
+  },
+  {
+    "id": "create-seat",
+    "run": "create-tutorials-neo1211-en-02",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-seat.mp4",
+    "footerRepair": true,
+    "review": "capture/create-seat/frames-receipt.json"
+  },
+  {
+    "id": "create-polish",
+    "run": "create-tutorials-neo1211-en-02",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-polish.mp4",
+    "footerRepair": true,
+    "review": "capture/create-polish/frames-receipt.json"
+  },
+  {
+    "id": "create-parcel-routes",
+    "run": "create-tutorials-neo1211-en-03",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-parcel-routes.mp4",
+    "footerRepair": false,
+    "review": "capture/create-parcel-routes/frames-receipt.json"
+  },
+  {
+    "id": "create-parcel-npc",
+    "run": "create-tutorials-neo1211-en-02",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-parcel-npc.mp4",
+    "footerRepair": true,
+    "review": "capture/create-parcel-npc/frames-receipt.json"
+  },
+  {
+    "id": "create-parcel-container",
+    "run": "create-tutorials-neo1211-en-02",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-parcel-container.mp4",
+    "footerRepair": true,
+    "review": "capture/create-parcel-container/frames-receipt.json"
+  },
+  {
+    "id": "create-parcel-return",
+    "run": "create-tutorials-neo1211-en-02",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-parcel-return.mp4",
+    "footerRepair": true,
+    "review": "capture/create-parcel-return/frames-receipt.json"
+  },
+  {
+    "id": "create-stock-keeper",
+    "run": "create-tutorials-neo1211-en-04",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-stock-keeper.mp4",
+    "footerRepair": false,
+    "review": "capture/create-stock-keeper/frames-receipt.json"
+  },
+  {
+    "id": "create-factory-settings",
+    "run": "create-tutorials-neo1211-en-04",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-factory-settings.mp4",
+    "footerRepair": false,
+    "review": "capture/create-factory-settings/frames-receipt.json"
+  },
+  {
+    "id": "create-factory-process",
+    "run": "create-tutorials-neo1211-en-04",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-factory-process.mp4",
+    "footerRepair": false,
+    "review": "capture/create-factory-process/frames-receipt.json"
+  },
+  {
+    "id": "create-material-order",
+    "run": "create-tutorials-neo1211-en-04",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-material-order.mp4",
+    "footerRepair": false,
+    "review": "capture/create-material-order/frames-receipt.json"
+  },
+  {
+    "id": "create-condition",
+    "run": "create-tutorials-neo1211-en-02",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-condition.mp4",
+    "footerRepair": true,
+    "review": "capture/create-condition/frames-receipt.json"
+  },
+  {
+    "id": "create-inspection",
+    "run": "create-tutorials-neo1211-en-02",
+    "asset": "assets/media/guides/create-tutorials-20261108/create-inspection.mp4",
+    "footerRepair": true,
+    "review": "capture/create-inspection/frames-receipt.json"
+  }
+]

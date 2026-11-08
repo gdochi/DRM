@@ -1,0 +1,1577 @@
+{
+  "source": "C:/Users/hodu3/Desktop/[DOCHI] DOCS/build/task/guide-capture/create-tutorials-neo1211-en-03/captures/create-parcel-routes-frames.json",
+  "frames": 213,
+  "selected": [
+    {
+      "frame": 0,
+      "file": "00000.png",
+      "elapsedMs": 2.7536,
+      "screen": "NpcEditorScreen"
+    },
+    {
+      "frame": 19,
+      "file": "00019.png",
+      "elapsedMs": 955.4534,
+      "screen": "NpcEditorScreen"
+    },
+    {
+      "frame": 39,
+      "file": "00039.png",
+      "elapsedMs": 1958.5692,
+      "screen": "NpcEditorScreen"
+    },
+    {
+      "frame": 58,
+      "file": "00058.png",
+      "elapsedMs": 2913.7127,
+      "screen": "NpcEditorScreen"
+    },
+    {
+      "frame": 77,
+      "file": "00077.png",
+      "elapsedMs": 3865.5153,
+      "screen": "NpcEditorScreen"
+    },
+    {
+      "frame": 96,
+      "file": "00096.png",
+      "elapsedMs": 4802.8811,
+      "screen": "NpcEditorScreen"
+    },
+    {
+      "frame": 116,
+      "file": "00116.png",
+      "elapsedMs": 5814.8826,
+      "screen": "NpcEditorScreen"
+    },
+    {
+      "frame": 135,
+      "file": "00135.png",
+      "elapsedMs": 6756.9079,
+      "screen": "NpcEditorScreen"
+    },
+    {
+      "frame": 154,
+      "file": "00154.png",
+      "elapsedMs": 7710.169,
+      "screen": "NpcEditorScreen"
+    },
+    {
+      "frame": 173,
+      "file": "00173.png",
+      "elapsedMs": 8664.9906,
+      "screen": "NpcEditorScreen"
+    },
+    {
+      "frame": 193,
+      "file": "00193.png",
+      "elapsedMs": 9659.3059,
+      "screen": "NpcEditorScreen"
+    },
+    {
+      "frame": 212,
+      "file": "00212.png",
+      "elapsedMs": 10612.5558,
+      "screen": "NpcEditorScreen"
+    }
+  ],
+  "durationMs": 10659.8022,
+  "intervalMs": {
+    "median": 50.177200000000084,
+    "p95": 52.08860000000004,
+    "max": 73.61199999999963
+  },
+  "originalFrames": [
+    {
+      "file": "00000.png",
+      "elapsedMs": 2.7536,
+      "screen": "NpcEditorScreen",
+      "bytes": 120336,
+      "sha256": "157a6b8ebedc7cca28794b18453a3382fe5fdc7242a2e614b55523ee1b0dc0c7"
+    },
+    {
+      "file": "00001.png",
+      "elapsedMs": 52.4569,
+      "screen": "NpcEditorScreen",
+      "bytes": 120356,
+      "sha256": "4d609f1be1f5726f360189176ae119a2a30118482b776c32078f7faf39f75454"
+    },
+    {
+      "file": "00002.png",
+      "elapsedMs": 102.9409,
+      "screen": "NpcEditorScreen",
+      "bytes": 120368,
+      "sha256": "b327230bd5c1c47c96e730c6d90e7401b97116902f648767696ddeb8fb304dfc"
+    },
+    {
+      "file": "00003.png",
+      "elapsedMs": 152.2953,
+      "screen": "NpcEditorScreen",
+      "bytes": 120419,
+      "sha256": "6e8edf3b3e0d375f16312202268f01651a0bff71247c00c8027710d618c7b443"
+    },
+    {
+      "file": "00004.png",
+      "elapsedMs": 202.5157,
+      "screen": "NpcEditorScreen",
+      "bytes": 120352,
+      "sha256": "1b9f6d9c03965b8e3e83662c04d6770ed27c8ead898e2c04a71fe58e6940de53"
+    },
+    {
+      "file": "00005.png",
+      "elapsedMs": 252.3767,
+      "screen": "NpcEditorScreen",
+      "bytes": 120304,
+      "sha256": "ec94b12d0c39dca63d7b542d2319d0b3c09a513411d2ff3537739375ee855d66"
+    },
+    {
+      "file": "00006.png",
+      "elapsedMs": 303.1009,
+      "screen": "NpcEditorScreen",
+      "bytes": 120333,
+      "sha256": "b328f4c08469eea97ef8057bec01d3b3a80848694ef7e4fd1286e635f97f10b8"
+    },
+    {
+      "file": "00007.png",
+      "elapsedMs": 352.706,
+      "screen": "NpcEditorScreen",
+      "bytes": 120334,
+      "sha256": "216475e077016e7e77af4dc08dd528d476fd55f7351fceaa301b8425aaf5f115"
+    },
+    {
+      "file": "00008.png",
+      "elapsedMs": 402.9055,
+      "screen": "NpcEditorScreen",
+      "bytes": 120282,
+      "sha256": "10c98ad43cc7f90929e74f2be0706fe1dfd19b722c206b01076e8dc2b63ca060"
+    },
+    {
+      "file": "00009.png",
+      "elapsedMs": 452.5041,
+      "screen": "NpcEditorScreen",
+      "bytes": 120282,
+      "sha256": "0ca8f327ab182559de0bd83811039e456547109aaf2373b0e3352a208634326d"
+    },
+    {
+      "file": "00010.png",
+      "elapsedMs": 502.8165,
+      "screen": "NpcEditorScreen",
+      "bytes": 120353,
+      "sha256": "510bfca29ce885e12881fa7b5dfe59bd391114a0b33f723384030209baa1a502"
+    },
+    {
+      "file": "00011.png",
+      "elapsedMs": 552.809,
+      "screen": "NpcEditorScreen",
+      "bytes": 120312,
+      "sha256": "5f14b1ea1d07050d3bb0401736f2d0945c0717d84aafecc50c3a0cee9fd42353"
+    },
+    {
+      "file": "00012.png",
+      "elapsedMs": 604.5229,
+      "screen": "NpcEditorScreen",
+      "bytes": 120308,
+      "sha256": "ed2e80d1d69592dc4b5b2952c3261a97308c6cfaae05d1e90dba594a1ec9f8a5"
+    },
+    {
+      "file": "00013.png",
+      "elapsedMs": 652.7502,
+      "screen": "NpcEditorScreen",
+      "bytes": 120388,
+      "sha256": "2820eff32f483af96d0a3d666b2e1151bcea83c3c1c6ef66d92f591f16e793fa"
+    },
+    {
+      "file": "00014.png",
+      "elapsedMs": 703.3015,
+      "screen": "NpcEditorScreen",
+      "bytes": 120360,
+      "sha256": "73f04db0a99a98fbe600f3fa5b608c6944bd06d2f16feb42d1f787d3366ccc2b"
+    },
+    {
+      "file": "00015.png",
+      "elapsedMs": 754.4509,
+      "screen": "NpcEditorScreen",
+      "bytes": 120365,
+      "sha256": "10b593b29d3430b43dfe50b93f8322f9f6b66f7f684d8ebb658652a1472d0342"
+    },
+    {
+      "file": "00016.png",
+      "elapsedMs": 804.1515,
+      "screen": "NpcEditorScreen",
+      "bytes": 120370,
+      "sha256": "e7e7d735613c479006812fa75a881d7f06c15466072059db4be5c1253c6f1fe0"
+    },
+    {
+      "file": "00017.png",
+      "elapsedMs": 853.8273,
+      "screen": "NpcEditorScreen",
+      "bytes": 120356,
+      "sha256": "492de148c7cf929ffdfcd21e8d097517c44240c5bbe325d9d4d05c25718649de"
+    },
+    {
+      "file": "00018.png",
+      "elapsedMs": 903.8342,
+      "screen": "NpcEditorScreen",
+      "bytes": 120334,
+      "sha256": "8c84f0fc4133f5b052ced60ea2f0e19e14dbfa9caf3cf34d82340e8432dbcd94"
+    },
+    {
+      "file": "00019.png",
+      "elapsedMs": 955.4534,
+      "screen": "NpcEditorScreen",
+      "bytes": 120378,
+      "sha256": "4b4e3876c1141d3022c18dedffa8f89ea83b3fb213b0fdb7153cb8ef2fdd1425"
+    },
+    {
+      "file": "00020.png",
+      "elapsedMs": 1005.6356,
+      "screen": "NpcEditorScreen",
+      "bytes": 120340,
+      "sha256": "8f1799065f60105a07cc06c49580682dda3ca00b0be6b20b22f395a7f19047d0"
+    },
+    {
+      "file": "00021.png",
+      "elapsedMs": 1055.7371,
+      "screen": "NpcEditorScreen",
+      "bytes": 120375,
+      "sha256": "f6f780d5854c4f1bf059435456acf64293ff3214a1ccbece1d58f247c057f694"
+    },
+    {
+      "file": "00022.png",
+      "elapsedMs": 1105.8059,
+      "screen": "NpcEditorScreen",
+      "bytes": 120406,
+      "sha256": "c7dc4bb1f48d097be578f05f650f638e552e987c0dc3eab6a4eb88faff88663a"
+    },
+    {
+      "file": "00023.png",
+      "elapsedMs": 1155.7095,
+      "screen": "NpcEditorScreen",
+      "bytes": 120295,
+      "sha256": "74734ee44b23dae3cc34337867f14ea027cebf1f88f9ad15cfb6485435a49b34"
+    },
+    {
+      "file": "00024.png",
+      "elapsedMs": 1206.2247,
+      "screen": "NpcEditorScreen",
+      "bytes": 120335,
+      "sha256": "5b1d8fe16024574a2db41ab3fe8c4b2840a6d5ac9ec434110cd95f44371b3e42"
+    },
+    {
+      "file": "00025.png",
+      "elapsedMs": 1255.9525,
+      "screen": "NpcEditorScreen",
+      "bytes": 120388,
+      "sha256": "869056b1edc8cadb146a5c56a3120301519ae7481d9c21229a8b7fd6d54af721"
+    },
+    {
+      "file": "00026.png",
+      "elapsedMs": 1306.4865,
+      "screen": "NpcEditorScreen",
+      "bytes": 120347,
+      "sha256": "9de5f6358d016c383c29bd26fbfdd1b3adbe27e60710d137e0ed2e6acbf0cf72"
+    },
+    {
+      "file": "00027.png",
+      "elapsedMs": 1356.4122,
+      "screen": "NpcEditorScreen",
+      "bytes": 120380,
+      "sha256": "d3f0fa93a00a9ba0a5be46c8c3e1454b72fe9b1a3b7a9b4eb31696c878f1f9e4"
+    },
+    {
+      "file": "00028.png",
+      "elapsedMs": 1406.2594,
+      "screen": "NpcEditorScreen",
+      "bytes": 120363,
+      "sha256": "504c17a9766df2f6b2317ce62ba9132cd74b070e184965af56f3d0724adc0da7"
+    },
+    {
+      "file": "00029.png",
+      "elapsedMs": 1456.7566,
+      "screen": "NpcEditorScreen",
+      "bytes": 120363,
+      "sha256": "504c17a9766df2f6b2317ce62ba9132cd74b070e184965af56f3d0724adc0da7"
+    },
+    {
+      "file": "00030.png",
+      "elapsedMs": 1506.4815,
+      "screen": "NpcEditorScreen",
+      "bytes": 120396,
+      "sha256": "7bc2f99ba705fb0db0644e9da844e6109cde09ff95a4eb486554525844acf649"
+    },
+    {
+      "file": "00031.png",
+      "elapsedMs": 1556.3119,
+      "screen": "NpcEditorScreen",
+      "bytes": 120308,
+      "sha256": "835b79e7b9e76c86a5656cef0718dc0ed0b1e3db85b86e2af1a2638ae4768282"
+    },
+    {
+      "file": "00032.png",
+      "elapsedMs": 1606.4367,
+      "screen": "NpcEditorScreen",
+      "bytes": 120364,
+      "sha256": "84d3d6d0f20d778d9a1bf68fec38a70bf194e196fc31689893c8616d30d22a02"
+    },
+    {
+      "file": "00033.png",
+      "elapsedMs": 1656.9784,
+      "screen": "NpcEditorScreen",
+      "bytes": 120347,
+      "sha256": "e4c7164c23da0424bbed51e89cba5ad7949a86c41a34f602471b1ea65c938223"
+    },
+    {
+      "file": "00034.png",
+      "elapsedMs": 1706.6557,
+      "screen": "NpcEditorScreen",
+      "bytes": 120346,
+      "sha256": "8e43798f8453e1710aa8cf933fa7a4fff4e6e981c0dc170d19992a96e4fd6888"
+    },
+    {
+      "file": "00035.png",
+      "elapsedMs": 1756.7983,
+      "screen": "NpcEditorScreen",
+      "bytes": 120345,
+      "sha256": "2e041b3a414bbe597b32d66489da2e96a698c5e48778155bc48af6559ef26b19"
+    },
+    {
+      "file": "00036.png",
+      "elapsedMs": 1807.7323,
+      "screen": "NpcEditorScreen",
+      "bytes": 120449,
+      "sha256": "494aded88078db22351baa9c4204b03b489aaa71f2bb55bec7c838ae7769549c"
+    },
+    {
+      "file": "00037.png",
+      "elapsedMs": 1857.7677,
+      "screen": "NpcEditorScreen",
+      "bytes": 120354,
+      "sha256": "4ba775f5f42031acdd3473e146fc502a9320c646a6e73a42bc18ee0837575377"
+    },
+    {
+      "file": "00038.png",
+      "elapsedMs": 1908.4548,
+      "screen": "NpcEditorScreen",
+      "bytes": 120453,
+      "sha256": "f54e3fb1927e6a9ca95fa91a8659082417eca694e081ca010e8d6831c39a0f9f"
+    },
+    {
+      "file": "00039.png",
+      "elapsedMs": 1958.5692,
+      "screen": "NpcEditorScreen",
+      "bytes": 120386,
+      "sha256": "d2329b6b6af5691f078b2d8d16b8d0545afa5a86b177e55cd08bc22006cbe8eb"
+    },
+    {
+      "file": "00040.png",
+      "elapsedMs": 2009.5726,
+      "screen": "NpcEditorScreen",
+      "bytes": 120352,
+      "sha256": "448c15091811bccc5b1e9e20991b3f20208d43806a02dac51a213779173790df"
+    },
+    {
+      "file": "00041.png",
+      "elapsedMs": 2058.9681,
+      "screen": "NpcEditorScreen",
+      "bytes": 120361,
+      "sha256": "da73e50132cf5e5c085fd9cc707d00ccd81bb712b688623ccaf29c937fcecda2"
+    },
+    {
+      "file": "00042.png",
+      "elapsedMs": 2108.8437,
+      "screen": "NpcEditorScreen",
+      "bytes": 120317,
+      "sha256": "c8745b556ab871d35df5671534d257c84e751e3253daf10347e1d6e21b0a2260"
+    },
+    {
+      "file": "00043.png",
+      "elapsedMs": 2158.8915,
+      "screen": "NpcEditorScreen",
+      "bytes": 120331,
+      "sha256": "e180edf4088c54b543668872efea03dc03f209c4cfbff2a323726bed11e15a50"
+    },
+    {
+      "file": "00044.png",
+      "elapsedMs": 2209.6666,
+      "screen": "NpcEditorScreen",
+      "bytes": 120378,
+      "sha256": "5fd80e767b246d89106bdf16c30c936a45c4483353e8fb220d8c2c8e57b09b56"
+    },
+    {
+      "file": "00045.png",
+      "elapsedMs": 2260.7675,
+      "screen": "NpcEditorScreen",
+      "bytes": 120341,
+      "sha256": "43adaf9477581774572090cb74c081b96daef5acca7d70fa58cfc797403bcbcf"
+    },
+    {
+      "file": "00046.png",
+      "elapsedMs": 2310.6635,
+      "screen": "NpcEditorScreen",
+      "bytes": 120331,
+      "sha256": "42c1456fba9f588271541372f0f212b27a439de7b1d4216006c01069ad66747b"
+    },
+    {
+      "file": "00047.png",
+      "elapsedMs": 2360.0863,
+      "screen": "NpcEditorScreen",
+      "bytes": 120296,
+      "sha256": "f1b763d7c7d6d4099501a00c939493199d05ed866fb0f40250ebc2f6ad65b0d1"
+    },
+    {
+      "file": "00048.png",
+      "elapsedMs": 2409.8851,
+      "screen": "NpcEditorScreen",
+      "bytes": 120268,
+      "sha256": "935059e845d3c7e65448e65a6cab43d722b607f76f2df0419f813d1e80e9dbb8"
+    },
+    {
+      "file": "00049.png",
+      "elapsedMs": 2460.553,
+      "screen": "NpcEditorScreen",
+      "bytes": 120269,
+      "sha256": "50c1374a9d9d19930aececace9368f8a0ec972ef80440459430d9bf4a48d97c1"
+    },
+    {
+      "file": "00050.png",
+      "elapsedMs": 2510.9673,
+      "screen": "NpcEditorScreen",
+      "bytes": 120303,
+      "sha256": "b7b3d6a00860301796662cf9627a43a2bac9d99cb220916e8e039fbabdb35ef4"
+    },
+    {
+      "file": "00051.png",
+      "elapsedMs": 2561.6676,
+      "screen": "NpcEditorScreen",
+      "bytes": 120283,
+      "sha256": "aa0980b8b051ad665ec81743af418b83c7143da23461252c864551c649c9a22f"
+    },
+    {
+      "file": "00052.png",
+      "elapsedMs": 2611.5939,
+      "screen": "NpcEditorScreen",
+      "bytes": 120324,
+      "sha256": "09e92d69a54b77b1efd39f5431b5fecc1c2f7dc7f693b92f6d837eaa98318a04"
+    },
+    {
+      "file": "00053.png",
+      "elapsedMs": 2661.9797,
+      "screen": "NpcEditorScreen",
+      "bytes": 120314,
+      "sha256": "8caabdccae95a26cec4bd47aa452c9a137f67ee1c36f718bf5f07befebf01011"
+    },
+    {
+      "file": "00054.png",
+      "elapsedMs": 2712.2329,
+      "screen": "NpcEditorScreen",
+      "bytes": 120295,
+      "sha256": "c15bd0d60b3dbaa9ece6fc679726255dca0b047efd51f06a56b271199b1f65ea"
+    },
+    {
+      "file": "00055.png",
+      "elapsedMs": 2762.6229,
+      "screen": "NpcEditorScreen",
+      "bytes": 120350,
+      "sha256": "eb294b238da061633053e05d49909aeff03ff579655d5e0479c1399c2dde9f9d"
+    },
+    {
+      "file": "00056.png",
+      "elapsedMs": 2812.4213,
+      "screen": "NpcEditorScreen",
+      "bytes": 120288,
+      "sha256": "9f11cb78141404fc98eb7a749cfd78f430229dcccfb005f9ef22126d816598bd"
+    },
+    {
+      "file": "00057.png",
+      "elapsedMs": 2863.6584,
+      "screen": "NpcEditorScreen",
+      "bytes": 120343,
+      "sha256": "4114df33f44c914a7cfff23f04e1aa00aae725373f4c4b55acd6ff8ba76293c3"
+    },
+    {
+      "file": "00058.png",
+      "elapsedMs": 2913.7127,
+      "screen": "NpcEditorScreen",
+      "bytes": 120343,
+      "sha256": "4114df33f44c914a7cfff23f04e1aa00aae725373f4c4b55acd6ff8ba76293c3"
+    },
+    {
+      "file": "00059.png",
+      "elapsedMs": 2963.4619,
+      "screen": "NpcEditorScreen",
+      "bytes": 120343,
+      "sha256": "4114df33f44c914a7cfff23f04e1aa00aae725373f4c4b55acd6ff8ba76293c3"
+    },
+    {
+      "file": "00060.png",
+      "elapsedMs": 3013.3158,
+      "screen": "NpcEditorScreen",
+      "bytes": 120340,
+      "sha256": "82ef3a1367aa62cf6ec87aeb5fc4a86f7b76e1c92b7fdcefbdbe31d5f27b6896"
+    },
+    {
+      "file": "00061.png",
+      "elapsedMs": 3064.4474,
+      "screen": "NpcEditorScreen",
+      "bytes": 120386,
+      "sha256": "9979f7ee56313f4549b064b524567ee221fbd18edff5bdf7dece141c4f140ee8"
+    },
+    {
+      "file": "00062.png",
+      "elapsedMs": 3114.7865,
+      "screen": "NpcEditorScreen",
+      "bytes": 120333,
+      "sha256": "f53b111b4a570839c755f90c6d38fb8c0e34fe84e8d691080b00a83974677eb4"
+    },
+    {
+      "file": "00063.png",
+      "elapsedMs": 3165.3845,
+      "screen": "NpcEditorScreen",
+      "bytes": 120365,
+      "sha256": "50fe73b4ffab371d614a4a1286d58016de7a91367f4588755873f37ffafd8055"
+    },
+    {
+      "file": "00064.png",
+      "elapsedMs": 3214.7454,
+      "screen": "NpcEditorScreen",
+      "bytes": 120314,
+      "sha256": "787ca86a3621c38655f5f46d10ee05bdfae0e0f8528dbe87e460788d0edc5c9e"
+    },
+    {
+      "file": "00065.png",
+      "elapsedMs": 3265.239,
+      "screen": "NpcEditorScreen",
+      "bytes": 120317,
+      "sha256": "7d68408ddf122e22dfcbd04f1f56478d53e976667dd5de88693a548f35519dd8"
+    },
+    {
+      "file": "00066.png",
+      "elapsedMs": 3301.0922,
+      "screen": "NpcEditorScreen",
+      "bytes": 120327,
+      "sha256": "2db4153cad4dfe092ee031ce26ed6bc258b42f64bd016ce52338c61eb2c32e7b"
+    },
+    {
+      "file": "00067.png",
+      "elapsedMs": 3364.7347,
+      "screen": "NpcEditorScreen",
+      "bytes": 120273,
+      "sha256": "795c47bebff32c2891193069dd2069a53859cc8bbc79f1651fb68db863da168c"
+    },
+    {
+      "file": "00068.png",
+      "elapsedMs": 3414.8464,
+      "screen": "NpcEditorScreen",
+      "bytes": 120226,
+      "sha256": "8d6269195dce6508c7e4373b5781b5a460cd47e3877df9ca3cd9f2c5f34d1bbb"
+    },
+    {
+      "file": "00069.png",
+      "elapsedMs": 3464.979,
+      "screen": "NpcEditorScreen",
+      "bytes": 120305,
+      "sha256": "b4fa85382e2c84d173a972e40e3d6f322d01f8d4cbbdffb77eb2c3608fef71cc"
+    },
+    {
+      "file": "00070.png",
+      "elapsedMs": 3500.6869,
+      "screen": "NpcEditorScreen",
+      "bytes": 120343,
+      "sha256": "6aeb2c1a8eab2720da754c677688c1193c033a86e5a7f6c4f690a2fe39a4ad5e"
+    },
+    {
+      "file": "00071.png",
+      "elapsedMs": 3574.2989,
+      "screen": "NpcEditorScreen",
+      "bytes": 116796,
+      "sha256": "59bf83cc8b66969f9157a2135821e6ff4f205b6bd8642836f0ad3ceedac75230"
+    },
+    {
+      "file": "00072.png",
+      "elapsedMs": 3614.2441,
+      "screen": "NpcEditorScreen",
+      "bytes": 116825,
+      "sha256": "e9141bc0e236344354c6d41032c771aebee184b452d631181b497e68c433d9af"
+    },
+    {
+      "file": "00073.png",
+      "elapsedMs": 3664.6835,
+      "screen": "NpcEditorScreen",
+      "bytes": 116719,
+      "sha256": "dad8a528b324795653759bc555675219a50a1ef4e5f0547427448b9076ca2529"
+    },
+    {
+      "file": "00074.png",
+      "elapsedMs": 3714.8195,
+      "screen": "NpcEditorScreen",
+      "bytes": 116731,
+      "sha256": "0ddfdcf74baca8e818491822a23735c471a6d3ceb1b60696ae21b2b98517615f"
+    },
+    {
+      "file": "00075.png",
+      "elapsedMs": 3764.4326,
+      "screen": "NpcEditorScreen",
+      "bytes": 116805,
+      "sha256": "03ecfe0adf21b23342a48f8dff21a9dca09ecb6103d9c2d5fb34e3ec247e8fb9"
+    },
+    {
+      "file": "00076.png",
+      "elapsedMs": 3814.416,
+      "screen": "NpcEditorScreen",
+      "bytes": 116723,
+      "sha256": "81c0781a104f38f95d362ad0229221e386b88ed4625c22b7cd16137dbed7b62a"
+    },
+    {
+      "file": "00077.png",
+      "elapsedMs": 3865.5153,
+      "screen": "NpcEditorScreen",
+      "bytes": 116709,
+      "sha256": "65be6d5a1b49457c656502bc3f08bf17aa87d5b0b58ee303dea84b65b383a309"
+    },
+    {
+      "file": "00078.png",
+      "elapsedMs": 3914.9861,
+      "screen": "NpcEditorScreen",
+      "bytes": 116691,
+      "sha256": "5714a18ca555ceced6b8346bf119bfc7c19758292ae431c1011246b0520da801"
+    },
+    {
+      "file": "00079.png",
+      "elapsedMs": 3965.4595,
+      "screen": "NpcEditorScreen",
+      "bytes": 116739,
+      "sha256": "e9dbaf25d4e7290423f43f7d340a574cf8d2781c5561709610253d5d15654f3d"
+    },
+    {
+      "file": "00080.png",
+      "elapsedMs": 4015.2153,
+      "screen": "NpcEditorScreen",
+      "bytes": 116684,
+      "sha256": "c861c0676d5484ca664fbffa3d2935ecde9171690781cd1d237ab926041da6df"
+    },
+    {
+      "file": "00081.png",
+      "elapsedMs": 4065.6243,
+      "screen": "NpcEditorScreen",
+      "bytes": 116733,
+      "sha256": "c8d2295778252c8ad830b3eeceab215b51d210cbc3c3918db34a43fa80713dc2"
+    },
+    {
+      "file": "00082.png",
+      "elapsedMs": 4101.122,
+      "screen": "NpcEditorScreen",
+      "bytes": 116754,
+      "sha256": "3b6f9aa29a7b67315980ee4b8de66798f09bdd620f6c0447a0177ceaa529c48f"
+    },
+    {
+      "file": "00083.png",
+      "elapsedMs": 4150.2803,
+      "screen": "NpcEditorScreen",
+      "bytes": 116738,
+      "sha256": "5403ffbe3de8608f0e24106f7122f19efb48a0e888d0cfa741a55b4752e15057"
+    },
+    {
+      "file": "00084.png",
+      "elapsedMs": 4200.3866,
+      "screen": "NpcEditorScreen",
+      "bytes": 116878,
+      "sha256": "25ad67d1eafad47b91fb1e83b73928fadab5044ed0aef14894b80bad2d8a3bc2"
+    },
+    {
+      "file": "00085.png",
+      "elapsedMs": 4264.51,
+      "screen": "NpcEditorScreen",
+      "bytes": 116798,
+      "sha256": "8f8b3acae3b984d6b9c8b13dd51eee4ab0c9aed116808e3eae830028457d754e"
+    },
+    {
+      "file": "00086.png",
+      "elapsedMs": 4315.7313,
+      "screen": "NpcEditorScreen",
+      "bytes": 116799,
+      "sha256": "0b67599be892788cabedcfa868660aa884b7f4c975b5be7178ef44fd61d13ba0"
+    },
+    {
+      "file": "00087.png",
+      "elapsedMs": 4351.3088,
+      "screen": "NpcEditorScreen",
+      "bytes": 116829,
+      "sha256": "7bcfb6173654894d79f1eb33db11835171352e01946086177e108da9e5ebdef1"
+    },
+    {
+      "file": "00088.png",
+      "elapsedMs": 4400.532,
+      "screen": "NpcEditorScreen",
+      "bytes": 116712,
+      "sha256": "76ce723fb5ab14456a325de6870e8f2429ff788fdd749f8c4401702450740233"
+    },
+    {
+      "file": "00089.png",
+      "elapsedMs": 4451.7719,
+      "screen": "NpcEditorScreen",
+      "bytes": 116712,
+      "sha256": "76ce723fb5ab14456a325de6870e8f2429ff788fdd749f8c4401702450740233"
+    },
+    {
+      "file": "00090.png",
+      "elapsedMs": 4501.1391,
+      "screen": "NpcEditorScreen",
+      "bytes": 116688,
+      "sha256": "2b3a96ec314e98fe0e1876c5e9c770a061a49b0adfb197d80120cf0e7ad4d289"
+    },
+    {
+      "file": "00091.png",
+      "elapsedMs": 4552.179,
+      "screen": "NpcEditorScreen",
+      "bytes": 116775,
+      "sha256": "243302a205d53e3592070bcdf2933ebe3d99e0bef757431619dd5997f0b85e78"
+    },
+    {
+      "file": "00092.png",
+      "elapsedMs": 4602.4655,
+      "screen": "NpcEditorScreen",
+      "bytes": 116781,
+      "sha256": "8806b2784cb106f0fa08ac3618bb22fa16b1394ef86f969ca68bb817ffa923a9"
+    },
+    {
+      "file": "00093.png",
+      "elapsedMs": 4652.4819,
+      "screen": "NpcEditorScreen",
+      "bytes": 116763,
+      "sha256": "aed5650bc39d93f68451ebbfd6c08f45e52f95f2915044f3173e8746ac4a5da1"
+    },
+    {
+      "file": "00094.png",
+      "elapsedMs": 4702.8899,
+      "screen": "NpcEditorScreen",
+      "bytes": 116836,
+      "sha256": "3e1e83d35979764d9323dc144677a551f13258dd09fb079cb9a9628e60c36caf"
+    },
+    {
+      "file": "00095.png",
+      "elapsedMs": 4753.44,
+      "screen": "NpcEditorScreen",
+      "bytes": 116692,
+      "sha256": "b28c587b1516d437943ca143b91bd737b43fc98d7812b59c493eeef140f170c2"
+    },
+    {
+      "file": "00096.png",
+      "elapsedMs": 4802.8811,
+      "screen": "NpcEditorScreen",
+      "bytes": 116760,
+      "sha256": "89d2197b6dcdd2c2e494ed6955f3083463c5298ced755e1b30107a8fbc6fcc4c"
+    },
+    {
+      "file": "00097.png",
+      "elapsedMs": 4853.2226,
+      "screen": "NpcEditorScreen",
+      "bytes": 116724,
+      "sha256": "20ea45a7d5648d4fe46b1cdee40bd74b3f1515f43aa2516cfda336173a3daa98"
+    },
+    {
+      "file": "00098.png",
+      "elapsedMs": 4903.5999,
+      "screen": "NpcEditorScreen",
+      "bytes": 116705,
+      "sha256": "7e5208e6be9255746d2d31fb315609218a18ce97514437ece961044cfe7d4e42"
+    },
+    {
+      "file": "00099.png",
+      "elapsedMs": 4953.5091,
+      "screen": "NpcEditorScreen",
+      "bytes": 116718,
+      "sha256": "608f22ce025a001b62f04f96c734a1b7290f14f075629b24a5832db03d791015"
+    },
+    {
+      "file": "00100.png",
+      "elapsedMs": 5003.9725,
+      "screen": "NpcEditorScreen",
+      "bytes": 116761,
+      "sha256": "88c41a2f0361b727e4d59c8a66991bf203267afee07dc5ae135c1fbc0f8b02ac"
+    },
+    {
+      "file": "00101.png",
+      "elapsedMs": 5053.8003,
+      "screen": "NpcEditorScreen",
+      "bytes": 116706,
+      "sha256": "378c6ac8756edcfc819917caf41050a745c322d7ce10935f1e48045f3ff1a8e8"
+    },
+    {
+      "file": "00102.png",
+      "elapsedMs": 5104.3191,
+      "screen": "NpcEditorScreen",
+      "bytes": 116800,
+      "sha256": "888a7f9f031b67be96cc86b6aacefea990c03c423e855ec2b35e27e9aa57213b"
+    },
+    {
+      "file": "00103.png",
+      "elapsedMs": 5154.2419,
+      "screen": "NpcEditorScreen",
+      "bytes": 116723,
+      "sha256": "c6e56d091658b3d561fa0b1aff10080e259c54e40ea662a5c247d1be6e8781a5"
+    },
+    {
+      "file": "00104.png",
+      "elapsedMs": 5204.9401,
+      "screen": "NpcEditorScreen",
+      "bytes": 116724,
+      "sha256": "5d768b335d81c382b226029973978b5b0d7e8f571bce3f19e5fe7f2e41f6575e"
+    },
+    {
+      "file": "00105.png",
+      "elapsedMs": 5255.2845,
+      "screen": "NpcEditorScreen",
+      "bytes": 116785,
+      "sha256": "1c854e23fc70d52a23290a2fe58f0207d647d8dc39a6873db38210b98684f02f"
+    },
+    {
+      "file": "00106.png",
+      "elapsedMs": 5305.5215,
+      "screen": "NpcEditorScreen",
+      "bytes": 116771,
+      "sha256": "f721d340c5043f383f4a289568d85c03670d5f7db37623c8f400a8f850ce22b1"
+    },
+    {
+      "file": "00107.png",
+      "elapsedMs": 5355.8603,
+      "screen": "NpcEditorScreen",
+      "bytes": 116763,
+      "sha256": "9400a9948ca8074755f643e75ae28acb06c295fb12f164ee49f1a2802c29f666"
+    },
+    {
+      "file": "00108.png",
+      "elapsedMs": 5408.1963,
+      "screen": "NpcEditorScreen",
+      "bytes": 116736,
+      "sha256": "d2066a07d327e86c8fc282651bcab29a1808dda28b265c7b9e59ee7feba73306"
+    },
+    {
+      "file": "00109.png",
+      "elapsedMs": 5460.3276,
+      "screen": "NpcEditorScreen",
+      "bytes": 116684,
+      "sha256": "d7d1fb31983646eea0633109a0eae7a1971fcdb6a9dd6a2312fc2d7dfff6e3d1"
+    },
+    {
+      "file": "00110.png",
+      "elapsedMs": 5510.8367,
+      "screen": "NpcEditorScreen",
+      "bytes": 116722,
+      "sha256": "f7e94486b1772b77c3545d4a372e355f3c4c8b0f76e7a4fa53df3eddcb1316da"
+    },
+    {
+      "file": "00111.png",
+      "elapsedMs": 5561.3595,
+      "screen": "NpcEditorScreen",
+      "bytes": 116696,
+      "sha256": "3816f727ade8c06343bda8aa8c0598bfe46f1dec23cfcb8aba53a5fa6c0abcb1"
+    },
+    {
+      "file": "00112.png",
+      "elapsedMs": 5611.6328,
+      "screen": "NpcEditorScreen",
+      "bytes": 116697,
+      "sha256": "d6cdf7a9bc2b8c0bba5bd95468371f9ea027b96572d2d7a67b46cbfe92a6ea4b"
+    },
+    {
+      "file": "00113.png",
+      "elapsedMs": 5663.2306,
+      "screen": "NpcEditorScreen",
+      "bytes": 116697,
+      "sha256": "d6cdf7a9bc2b8c0bba5bd95468371f9ea027b96572d2d7a67b46cbfe92a6ea4b"
+    },
+    {
+      "file": "00114.png",
+      "elapsedMs": 5715.3192,
+      "screen": "NpcEditorScreen",
+      "bytes": 116643,
+      "sha256": "b9a16e02d4a5f36c93c28034e8ed84311d397b47f630fdc17492a16b45c04312"
+    },
+    {
+      "file": "00115.png",
+      "elapsedMs": 5766.6302,
+      "screen": "NpcEditorScreen",
+      "bytes": 116764,
+      "sha256": "b283eb8e34c9b8aa8526f443488e51fbff1e54b92c958cf38c8d76def39ab306"
+    },
+    {
+      "file": "00116.png",
+      "elapsedMs": 5814.8826,
+      "screen": "NpcEditorScreen",
+      "bytes": 116657,
+      "sha256": "5463c26c680e07c31619c05a9f392f83559d6499e907547e73996cd9bee7deac"
+    },
+    {
+      "file": "00117.png",
+      "elapsedMs": 5864.5424,
+      "screen": "NpcEditorScreen",
+      "bytes": 116668,
+      "sha256": "e19ac55773630617301dc3260a898e95ff067aefbd0116203ca85e4ccd495e8e"
+    },
+    {
+      "file": "00118.png",
+      "elapsedMs": 5900.0872,
+      "screen": "NpcEditorScreen",
+      "bytes": 116641,
+      "sha256": "2135b8906ad6b2e133f5c0e8988fbb33d2daa9ef3476d6ae9de829d93d8e61ae"
+    },
+    {
+      "file": "00119.png",
+      "elapsedMs": 5965.2244,
+      "screen": "NpcEditorScreen",
+      "bytes": 116680,
+      "sha256": "05341983843ed6a5a00439b13857d6e2cba57d62cfcf1d35e4946e0b88db3ec2"
+    },
+    {
+      "file": "00120.png",
+      "elapsedMs": 6001.7805,
+      "screen": "NpcEditorScreen",
+      "bytes": 116722,
+      "sha256": "5f9085fb1f90f42e70225311fd290e43258702a86db500aa5161d0bcd0280664"
+    },
+    {
+      "file": "00121.png",
+      "elapsedMs": 6050.3585,
+      "screen": "NpcEditorScreen",
+      "bytes": 116663,
+      "sha256": "76e622c2275eff3588c5e23260b8b6931ea59476bf0fe2fc87ecf7043f1c8bea"
+    },
+    {
+      "file": "00122.png",
+      "elapsedMs": 6101.7371,
+      "screen": "NpcEditorScreen",
+      "bytes": 116672,
+      "sha256": "81d01cfe31e0cc45d8294ef6019051f41350d9a6d5f30b4765d5f2635f9af2d9"
+    },
+    {
+      "file": "00123.png",
+      "elapsedMs": 6150.3774,
+      "screen": "NpcEditorScreen",
+      "bytes": 116683,
+      "sha256": "796c0d9af1ba9a256776fecb3032f111f31035806c3db6f13f5791be5bd33bd8"
+    },
+    {
+      "file": "00124.png",
+      "elapsedMs": 6202.0717,
+      "screen": "NpcEditorScreen",
+      "bytes": 116753,
+      "sha256": "90a4ce3ecd4d2ccd609fc81bc87a9aac555401e376eb3a1a20205a000a5d3d9a"
+    },
+    {
+      "file": "00125.png",
+      "elapsedMs": 6252.1409,
+      "screen": "NpcEditorScreen",
+      "bytes": 116697,
+      "sha256": "d6cdf7a9bc2b8c0bba5bd95468371f9ea027b96572d2d7a67b46cbfe92a6ea4b"
+    },
+    {
+      "file": "00126.png",
+      "elapsedMs": 6302.1676,
+      "screen": "NpcEditorScreen",
+      "bytes": 116674,
+      "sha256": "a062fe95155f58d1f9196a433636e14a0691433d9011049cc824721cc9e5b9f8"
+    },
+    {
+      "file": "00127.png",
+      "elapsedMs": 6351.448,
+      "screen": "NpcEditorScreen",
+      "bytes": 116667,
+      "sha256": "aa22b0805b4ff40d520918fcdd3e749c082d6fcc1b0fcf4f6bb4fb017bb8768d"
+    },
+    {
+      "file": "00128.png",
+      "elapsedMs": 6402.1668,
+      "screen": "NpcEditorScreen",
+      "bytes": 116660,
+      "sha256": "b4386ba07f3a2c3abd1ca83fd6ab62a0d3f106891bd02f23b78101bfecd4b58d"
+    },
+    {
+      "file": "00129.png",
+      "elapsedMs": 6452.4169,
+      "screen": "NpcEditorScreen",
+      "bytes": 116701,
+      "sha256": "f112226070f42b9c898760030098a334bf1dbe908961c5523845fe25120df8f1"
+    },
+    {
+      "file": "00130.png",
+      "elapsedMs": 6504.1271,
+      "screen": "NpcEditorScreen",
+      "bytes": 116670,
+      "sha256": "ae8831a184dd58d54915b5903a66a09b675f927290bf16091c35d60e19e60ba7"
+    },
+    {
+      "file": "00131.png",
+      "elapsedMs": 6553.5332,
+      "screen": "NpcEditorScreen",
+      "bytes": 116705,
+      "sha256": "2cc52187cbf1610ec801732f03d5186e125e7ee1977a506d5b479df62f878d51"
+    },
+    {
+      "file": "00132.png",
+      "elapsedMs": 6603.8408,
+      "screen": "NpcEditorScreen",
+      "bytes": 116774,
+      "sha256": "9409ec3feadabbb4726497d5cd46ba1b98ab96d2036846952fa98d7affb05c46"
+    },
+    {
+      "file": "00133.png",
+      "elapsedMs": 6654.0976,
+      "screen": "NpcEditorScreen",
+      "bytes": 116732,
+      "sha256": "d47a19022201487450108aaf65bcf49c84c59e9eb5c72e924d74f621a693ea27"
+    },
+    {
+      "file": "00134.png",
+      "elapsedMs": 6705.1775,
+      "screen": "NpcEditorScreen",
+      "bytes": 116710,
+      "sha256": "6a38f9346b18ea4316d97db509ea7e2d5aa1658202a8e6b3a87e332d1a0be82e"
+    },
+    {
+      "file": "00135.png",
+      "elapsedMs": 6756.9079,
+      "screen": "NpcEditorScreen",
+      "bytes": 116700,
+      "sha256": "4e29ab88f1da8d18c17cfdaa5547e47d69550c3927733de9cb5456438f9118aa"
+    },
+    {
+      "file": "00136.png",
+      "elapsedMs": 6806.6503,
+      "screen": "NpcEditorScreen",
+      "bytes": 116679,
+      "sha256": "913d714f7e6720e130b3ab87331e5f7e9a6f7361debae2dcf00d88bbddb5d476"
+    },
+    {
+      "file": "00137.png",
+      "elapsedMs": 6858.3143,
+      "screen": "NpcEditorScreen",
+      "bytes": 116680,
+      "sha256": "579c7db3c89a7fb9b4931363748022bae117651ef3944715c979337647578710"
+    },
+    {
+      "file": "00138.png",
+      "elapsedMs": 6907.5999,
+      "screen": "NpcEditorScreen",
+      "bytes": 116642,
+      "sha256": "904d593a6a8d7c7451755747a799868b1b8582e590cad8f6c30f89b760adb05a"
+    },
+    {
+      "file": "00139.png",
+      "elapsedMs": 6958.0913,
+      "screen": "NpcEditorScreen",
+      "bytes": 116690,
+      "sha256": "5777a8f15b2397599a1ea1b0fceef19284a2dd923fc393a5a737d9c8a75c0017"
+    },
+    {
+      "file": "00140.png",
+      "elapsedMs": 7008.7683,
+      "screen": "NpcEditorScreen",
+      "bytes": 116685,
+      "sha256": "e932d2bc93361aa743da1c6cb2c513956c12d6b12ba0d00d4be8904bb1f0bd5c"
+    },
+    {
+      "file": "00141.png",
+      "elapsedMs": 7058.9455,
+      "screen": "NpcEditorScreen",
+      "bytes": 116684,
+      "sha256": "3ab4b58a24c4f47fc8f644759d93d1830971add23c7be8e9f6fa4c008d63e3ea"
+    },
+    {
+      "file": "00142.png",
+      "elapsedMs": 7115.6509,
+      "screen": "NpcEditorScreen",
+      "bytes": 116714,
+      "sha256": "949a79a44193e237a2ffeef5887783f440c579aaee6fa5186aafe31febaf1f98"
+    },
+    {
+      "file": "00143.png",
+      "elapsedMs": 7158.7657,
+      "screen": "NpcEditorScreen",
+      "bytes": 120753,
+      "sha256": "5a808b28c69c584c3d0019a587c1a491e0cf216aa8d9caefbfc51983575bf37e"
+    },
+    {
+      "file": "00144.png",
+      "elapsedMs": 7208.9762,
+      "screen": "NpcEditorScreen",
+      "bytes": 120777,
+      "sha256": "3cc10f5bcfad89344bb672793dd86a75001d9f5d6b67c3671e070118537ad08e"
+    },
+    {
+      "file": "00145.png",
+      "elapsedMs": 7259.4239,
+      "screen": "NpcEditorScreen",
+      "bytes": 120777,
+      "sha256": "3cc10f5bcfad89344bb672793dd86a75001d9f5d6b67c3671e070118537ad08e"
+    },
+    {
+      "file": "00146.png",
+      "elapsedMs": 7309.6257,
+      "screen": "NpcEditorScreen",
+      "bytes": 120705,
+      "sha256": "59d16159755da6c35f34b2c105fd0d63701e8acf7733ccc73fff334618c5385b"
+    },
+    {
+      "file": "00147.png",
+      "elapsedMs": 7359.4175,
+      "screen": "NpcEditorScreen",
+      "bytes": 120725,
+      "sha256": "4654a080b4254076430c829837081daef06ccbea70b9ff134ef54e1651fe82cd"
+    },
+    {
+      "file": "00148.png",
+      "elapsedMs": 7409.4817,
+      "screen": "NpcEditorScreen",
+      "bytes": 120729,
+      "sha256": "f1b9d4e106857a177ea9de417211447ba3b16cc0e1386ec7a1b7e558095182e2"
+    },
+    {
+      "file": "00149.png",
+      "elapsedMs": 7459.8374,
+      "screen": "NpcEditorScreen",
+      "bytes": 120729,
+      "sha256": "f1b9d4e106857a177ea9de417211447ba3b16cc0e1386ec7a1b7e558095182e2"
+    },
+    {
+      "file": "00150.png",
+      "elapsedMs": 7510.9829,
+      "screen": "NpcEditorScreen",
+      "bytes": 120786,
+      "sha256": "824eba0850eec07a4b08ecd029abbfacc6988f6cfa2f9d721f845ccf5782f6a7"
+    },
+    {
+      "file": "00151.png",
+      "elapsedMs": 7560.0396,
+      "screen": "NpcEditorScreen",
+      "bytes": 120704,
+      "sha256": "ecc0c3d8d3b5a2cf024ed1346461a66c2cc751fc8ed39fb7b7431873e85b5da3"
+    },
+    {
+      "file": "00152.png",
+      "elapsedMs": 7610.5725,
+      "screen": "NpcEditorScreen",
+      "bytes": 120770,
+      "sha256": "f89878b3d5fc34229820c2bff2301ac4afb4e72f2a399c90c12d068a4e7381f6"
+    },
+    {
+      "file": "00153.png",
+      "elapsedMs": 7660.5262,
+      "screen": "NpcEditorScreen",
+      "bytes": 120777,
+      "sha256": "3cc10f5bcfad89344bb672793dd86a75001d9f5d6b67c3671e070118537ad08e"
+    },
+    {
+      "file": "00154.png",
+      "elapsedMs": 7710.169,
+      "screen": "NpcEditorScreen",
+      "bytes": 120715,
+      "sha256": "ed4c521a74421969abba9598249ea28d25e16544aa6f94245c4ff99f3e31e03d"
+    },
+    {
+      "file": "00155.png",
+      "elapsedMs": 7760.2202,
+      "screen": "NpcEditorScreen",
+      "bytes": 120707,
+      "sha256": "fb77d8638f15f22b9c7d806ef93bd33108a3c9ee6a83a57d6e50f6d00194ebb7"
+    },
+    {
+      "file": "00156.png",
+      "elapsedMs": 7810.545,
+      "screen": "NpcEditorScreen",
+      "bytes": 120841,
+      "sha256": "512cef67a5269c7cffabe4a4fd885d3d115d10147153ebcb2ceb47ff9cdcb876"
+    },
+    {
+      "file": "00157.png",
+      "elapsedMs": 7860.5812,
+      "screen": "NpcEditorScreen",
+      "bytes": 120765,
+      "sha256": "63354235514ef5bfc2cd928bfbdc01c64fef0219e3052a93f9739be211c2b408"
+    },
+    {
+      "file": "00158.png",
+      "elapsedMs": 7910.5562,
+      "screen": "NpcEditorScreen",
+      "bytes": 120719,
+      "sha256": "7e0ff3a3683273dddf40e09552fa35ef2d05c5dd1738cba4feb7391f4108badb"
+    },
+    {
+      "file": "00159.png",
+      "elapsedMs": 7961.5494,
+      "screen": "NpcEditorScreen",
+      "bytes": 120719,
+      "sha256": "7e0ff3a3683273dddf40e09552fa35ef2d05c5dd1738cba4feb7391f4108badb"
+    },
+    {
+      "file": "00160.png",
+      "elapsedMs": 8011.5536,
+      "screen": "NpcEditorScreen",
+      "bytes": 120747,
+      "sha256": "835cccf08ed5971ad417d5726695f387ee9caa8d42c233cc187982c6016eec33"
+    },
+    {
+      "file": "00161.png",
+      "elapsedMs": 8061.402,
+      "screen": "NpcEditorScreen",
+      "bytes": 120763,
+      "sha256": "cbfb45b37ff4c86a9c3b2b24e1d9ec1effc1d67b2fd64f5cd581ab0fa08b8f84"
+    },
+    {
+      "file": "00162.png",
+      "elapsedMs": 8112.2125,
+      "screen": "NpcEditorScreen",
+      "bytes": 120714,
+      "sha256": "15738857c18730cfbd472529f72a28ad39aa69dbba86b7b1b29225346a20a40b"
+    },
+    {
+      "file": "00163.png",
+      "elapsedMs": 8162.7738,
+      "screen": "NpcEditorScreen",
+      "bytes": 120736,
+      "sha256": "8a354b6af1f91a68eb258ad8ed76c5f570435309056dbf479425ea0939f22d8f"
+    },
+    {
+      "file": "00164.png",
+      "elapsedMs": 8212.874,
+      "screen": "NpcEditorScreen",
+      "bytes": 120747,
+      "sha256": "3c7ac95b092e80ed64e0cd1c1b12fcf0e010bd2a465c0ba4ef9c653ab79e31db"
+    },
+    {
+      "file": "00165.png",
+      "elapsedMs": 8262.814,
+      "screen": "NpcEditorScreen",
+      "bytes": 120790,
+      "sha256": "bf87dde009e4446ab384aa2e244b8622039cf15b0f9ffe6aee8984cf8cdbda1e"
+    },
+    {
+      "file": "00166.png",
+      "elapsedMs": 8312.784,
+      "screen": "NpcEditorScreen",
+      "bytes": 120667,
+      "sha256": "fb37a8e8d2d047020b6be464a9504e5663693035abe7c0a66e234b925ad11e7e"
+    },
+    {
+      "file": "00167.png",
+      "elapsedMs": 8363.1841,
+      "screen": "NpcEditorScreen",
+      "bytes": 120718,
+      "sha256": "86136e93cbe06c692ee99269c857e45a3b82f1a7e16d9dd7d033a39a211f6d37"
+    },
+    {
+      "file": "00168.png",
+      "elapsedMs": 8414.0328,
+      "screen": "NpcEditorScreen",
+      "bytes": 120715,
+      "sha256": "f47462e53225274d7417c5345696b03e4d183e3a2b8efb4b490cc9030ec58fad"
+    },
+    {
+      "file": "00169.png",
+      "elapsedMs": 8464.9129,
+      "screen": "NpcEditorScreen",
+      "bytes": 120688,
+      "sha256": "f9c3b0ed4633f5eba8490f733cb902f4e2b079ba353e04364d73bee06f0bde19"
+    },
+    {
+      "file": "00170.png",
+      "elapsedMs": 8514.4325,
+      "screen": "NpcEditorScreen",
+      "bytes": 120684,
+      "sha256": "df9983575a8e724efc8ce32538ea002bea0ff80b601b8809bda275cdd7e77aad"
+    },
+    {
+      "file": "00171.png",
+      "elapsedMs": 8564.5158,
+      "screen": "NpcEditorScreen",
+      "bytes": 120692,
+      "sha256": "344ec0b46de61cf5adcb1247187010da4bc2acb9f41424109cd9c6ad892e14f0"
+    },
+    {
+      "file": "00172.png",
+      "elapsedMs": 8614.709,
+      "screen": "NpcEditorScreen",
+      "bytes": 120682,
+      "sha256": "17cc1d6c8a49d3764309036234221fc8c6eeb80e37dc2c9973a04b465256b9ba"
+    },
+    {
+      "file": "00173.png",
+      "elapsedMs": 8664.9906,
+      "screen": "NpcEditorScreen",
+      "bytes": 120680,
+      "sha256": "1fcc48261e9d715b6a2db7088fd9db031afb94fa7ce0ab98a1feee64a982d054"
+    },
+    {
+      "file": "00174.png",
+      "elapsedMs": 8714.774,
+      "screen": "NpcEditorScreen",
+      "bytes": 120677,
+      "sha256": "0db9b1cd9b0fccc5d2ba7022d6db587425a9592ab1e571fd4b0d767895e3109b"
+    },
+    {
+      "file": "00175.png",
+      "elapsedMs": 8765.3262,
+      "screen": "NpcEditorScreen",
+      "bytes": 120799,
+      "sha256": "b3c8bbade80a3bf5d1a5fef9a91caee1a10f522d25c9ca228d29ae703b7aa922"
+    },
+    {
+      "file": "00176.png",
+      "elapsedMs": 8816.8926,
+      "screen": "NpcEditorScreen",
+      "bytes": 120750,
+      "sha256": "f41f408a7996f2b6f95d0f2cabfcdbacd11f064a53cec23cf42cac4f153f8f3d"
+    },
+    {
+      "file": "00177.png",
+      "elapsedMs": 8852.525,
+      "screen": "NpcEditorScreen",
+      "bytes": 120725,
+      "sha256": "18e78859ade2efe2d0a98023265a0b924566a1127d8b932b6eb2a30a4f477864"
+    },
+    {
+      "file": "00178.png",
+      "elapsedMs": 8902.7765,
+      "screen": "NpcEditorScreen",
+      "bytes": 120749,
+      "sha256": "4176430e4ae9d430eec28afb3fe862f5eb60a56ad31d81642241d2845d823506"
+    },
+    {
+      "file": "00179.png",
+      "elapsedMs": 8954.1077,
+      "screen": "NpcEditorScreen",
+      "bytes": 120729,
+      "sha256": "0b3fa923a2bb4b085ae0a18b7cddc6d15c4938c6ce0d88929409a23c42148280"
+    },
+    {
+      "file": "00180.png",
+      "elapsedMs": 9003.4154,
+      "screen": "NpcEditorScreen",
+      "bytes": 120729,
+      "sha256": "0b3fa923a2bb4b085ae0a18b7cddc6d15c4938c6ce0d88929409a23c42148280"
+    },
+    {
+      "file": "00181.png",
+      "elapsedMs": 9060.8273,
+      "screen": "NpcEditorScreen",
+      "bytes": 120761,
+      "sha256": "57d726be97823b953fcab22d11de6f10bc313c879cadb9c92cb11345d5643d6f"
+    },
+    {
+      "file": "00182.png",
+      "elapsedMs": 9106.8198,
+      "screen": "NpcEditorScreen",
+      "bytes": 120725,
+      "sha256": "18e78859ade2efe2d0a98023265a0b924566a1127d8b932b6eb2a30a4f477864"
+    },
+    {
+      "file": "00183.png",
+      "elapsedMs": 9156.1819,
+      "screen": "NpcEditorScreen",
+      "bytes": 120818,
+      "sha256": "b6ec53aa413e3dd26c92ae170906b37fbab720c4abf1f2370bbb00af6d52e7ad"
+    },
+    {
+      "file": "00184.png",
+      "elapsedMs": 9209.4178,
+      "screen": "NpcEditorScreen",
+      "bytes": 120693,
+      "sha256": "1b7fc2287a21eac3783bef2ce58643ffd8334ad305eb13d27ec7a20e7d8e755a"
+    },
+    {
+      "file": "00185.png",
+      "elapsedMs": 9256.7241,
+      "screen": "NpcEditorScreen",
+      "bytes": 120680,
+      "sha256": "1fcc48261e9d715b6a2db7088fd9db031afb94fa7ce0ab98a1feee64a982d054"
+    },
+    {
+      "file": "00186.png",
+      "elapsedMs": 9306.92,
+      "screen": "NpcEditorScreen",
+      "bytes": 120682,
+      "sha256": "17cc1d6c8a49d3764309036234221fc8c6eeb80e37dc2c9973a04b465256b9ba"
+    },
+    {
+      "file": "00187.png",
+      "elapsedMs": 9357.811,
+      "screen": "NpcEditorScreen",
+      "bytes": 120652,
+      "sha256": "5268980128863c96ab310b76dfe8bf0126127cdb5fad9181bbe8091bf00a9109"
+    },
+    {
+      "file": "00188.png",
+      "elapsedMs": 9407.6056,
+      "screen": "NpcEditorScreen",
+      "bytes": 120682,
+      "sha256": "e0494727196b008680b37d52774036babcd07a6b8d031582675e2430b03f59b2"
+    },
+    {
+      "file": "00189.png",
+      "elapsedMs": 9457.2594,
+      "screen": "NpcEditorScreen",
+      "bytes": 120716,
+      "sha256": "ca95b3be16b2560e0b04cbada3ac12ac8fd5347ce0e139c907866d6462ac6796"
+    },
+    {
+      "file": "00190.png",
+      "elapsedMs": 9508.8303,
+      "screen": "NpcEditorScreen",
+      "bytes": 120741,
+      "sha256": "6d7317066c19ca193af9df4fdead41d230e50c785e5980b34968145d927342f1"
+    },
+    {
+      "file": "00191.png",
+      "elapsedMs": 9558.8795,
+      "screen": "NpcEditorScreen",
+      "bytes": 120703,
+      "sha256": "46ffb2f863791f01e8f638782c73e674751411017e855baf7a2bed557c17cff9"
+    },
+    {
+      "file": "00192.png",
+      "elapsedMs": 9608.8683,
+      "screen": "NpcEditorScreen",
+      "bytes": 120683,
+      "sha256": "12f03d5a59d9b7f941b5c0e784570d0b050a03802f0710349dacd212673cd97d"
+    },
+    {
+      "file": "00193.png",
+      "elapsedMs": 9659.3059,
+      "screen": "NpcEditorScreen",
+      "bytes": 120726,
+      "sha256": "b54bceb47ebe2fee776744dfd820b4a1be399b90f9b46b50632a6c2718d7c7af"
+    },
+    {
+      "file": "00194.png",
+      "elapsedMs": 9709.3705,
+      "screen": "NpcEditorScreen",
+      "bytes": 120776,
+      "sha256": "3dd6871fc3f5d44a5ab7151e10def88dcb2746cdf4f083a7acae442cdb07cfb6"
+    },
+    {
+      "file": "00195.png",
+      "elapsedMs": 9759.4857,
+      "screen": "NpcEditorScreen",
+      "bytes": 120695,
+      "sha256": "b58a660b19ecfeaebe6047c400a7bef1926de2a3984ad6cc47bdfb0df6eba6aa"
+    },
+    {
+      "file": "00196.png",
+      "elapsedMs": 9809.5698,
+      "screen": "NpcEditorScreen",
+      "bytes": 120744,
+      "sha256": "71213505be114697e4b39703a5fbca266a5c66a5cf8884ed4b072845343a2f48"
+    },
+    {
+      "file": "00197.png",
+      "elapsedMs": 9859.5962,
+      "screen": "NpcEditorScreen",
+      "bytes": 120767,
+      "sha256": "f98a5ca22bf69647fbb0d3936be0e41214bac5e72b34c9505aec043f89617a65"
+    },
+    {
+      "file": "00198.png",
+      "elapsedMs": 9909.4723,
+      "screen": "NpcEditorScreen",
+      "bytes": 120747,
+      "sha256": "835cccf08ed5971ad417d5726695f387ee9caa8d42c233cc187982c6016eec33"
+    },
+    {
+      "file": "00199.png",
+      "elapsedMs": 9959.2204,
+      "screen": "NpcEditorScreen",
+      "bytes": 120802,
+      "sha256": "d7ac6df16753dfd0b088cb4bcc3ba6c7e5017300fcba359bf9b6338a01bf11df"
+    },
+    {
+      "file": "00200.png",
+      "elapsedMs": 10009.6242,
+      "screen": "NpcEditorScreen",
+      "bytes": 120747,
+      "sha256": "9074793d199ab1dfde69700f6380da6e7146aa010fdb3897ee67e4d301805a22"
+    },
+    {
+      "file": "00201.png",
+      "elapsedMs": 10062.2622,
+      "screen": "NpcEditorScreen",
+      "bytes": 120714,
+      "sha256": "6f744f89ad835b6e2991de81f19e9013096bbd18945a0fdaa97fe267cf696795"
+    },
+    {
+      "file": "00202.png",
+      "elapsedMs": 10109.2224,
+      "screen": "NpcEditorScreen",
+      "bytes": 120844,
+      "sha256": "43442c1f1d61d1da09d2e5190b3265a634ee4488dd6d1a343ea8aaf8bc8947e7"
+    },
+    {
+      "file": "00203.png",
+      "elapsedMs": 10159.3529,
+      "screen": "NpcEditorScreen",
+      "bytes": 120753,
+      "sha256": "5a808b28c69c584c3d0019a587c1a491e0cf216aa8d9caefbfc51983575bf37e"
+    },
+    {
+      "file": "00204.png",
+      "elapsedMs": 10210.0362,
+      "screen": "NpcEditorScreen",
+      "bytes": 120777,
+      "sha256": "3cc10f5bcfad89344bb672793dd86a75001d9f5d6b67c3671e070118537ad08e"
+    },
+    {
+      "file": "00205.png",
+      "elapsedMs": 10260.5649,
+      "screen": "NpcEditorScreen",
+      "bytes": 120777,
+      "sha256": "3cc10f5bcfad89344bb672793dd86a75001d9f5d6b67c3671e070118537ad08e"
+    },
+    {
+      "file": "00206.png",
+      "elapsedMs": 10310.5499,
+      "screen": "NpcEditorScreen",
+      "bytes": 120705,
+      "sha256": "59d16159755da6c35f34b2c105fd0d63701e8acf7733ccc73fff334618c5385b"
+    },
+    {
+      "file": "00207.png",
+      "elapsedMs": 10360.3505,
+      "screen": "NpcEditorScreen",
+      "bytes": 120729,
+      "sha256": "f1b9d4e106857a177ea9de417211447ba3b16cc0e1386ec7a1b7e558095182e2"
+    },
+    {
+      "file": "00208.png",
+      "elapsedMs": 10412.0034,
+      "screen": "NpcEditorScreen",
+      "bytes": 120729,
+      "sha256": "f1b9d4e106857a177ea9de417211447ba3b16cc0e1386ec7a1b7e558095182e2"
+    },
+    {
+      "file": "00209.png",
+      "elapsedMs": 10462.3498,
+      "screen": "NpcEditorScreen",
+      "bytes": 120729,
+      "sha256": "f1b9d4e106857a177ea9de417211447ba3b16cc0e1386ec7a1b7e558095182e2"
+    },
+    {
+      "file": "00210.png",
+      "elapsedMs": 10512.0596,
+      "screen": "NpcEditorScreen",
+      "bytes": 120786,
+      "sha256": "824eba0850eec07a4b08ecd029abbfacc6988f6cfa2f9d721f845ccf5782f6a7"
+    },
+    {
+      "file": "00211.png",
+      "elapsedMs": 10562.493,
+      "screen": "NpcEditorScreen",
+      "bytes": 120705,
+      "sha256": "59d16159755da6c35f34b2c105fd0d63701e8acf7733ccc73fff334618c5385b"
+    },
+    {
+      "file": "00212.png",
+      "elapsedMs": 10612.5558,
+      "screen": "NpcEditorScreen",
+      "bytes": 120770,
+      "sha256": "f89878b3d5fc34229820c2bff2301ac4afb4e72f2a399c90c12d068a4e7381f6"
+    }
+  ]
+}

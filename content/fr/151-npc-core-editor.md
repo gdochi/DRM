@@ -56,6 +56,10 @@ Dans cet exemple en jeu, un PNJ dont le travail de transport est déjà configur
 
 ![Un PNJ transporte du blé entre deux coffres, puis revient au départ.](assets/media/guides/runtime-videos-20261106/npc-haul.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, interface en anglais. Résultat d'un travail enregistré ; sa configuration dans l'éditeur est décrite ci-dessus.")
 
+## Tâches d'intégration Create
+
+Consultez les vidéos de [configuration, manivelles, vannes et sièges](#dochi-npc-core/npc-core-create-start), [polissage, colis et comptoirs](#dochi-npc-core/npc-core-create-logistics), [fabrication et commandes](#dochi-npc-core/npc-core-create-factory) et [commande et inspection](#dochi-npc-core/npc-core-create-control). Choisissez l'action Create, affectez appareils et inventaires réels, puis utilisez Save to NPC.
+
 ## Faire un guide stationnaire
 
 ![DNPCde Movement AI écran, avec Lock position et Lock rotation Commutateurs près du bas à droite.](assets/media/guides/dnpc-013-neo1211/dnpc-movement.png "DNPC 0.1.3 / NeoForge 1.21.1, anglais UI. Sélectionnez Movement AI sur la gauche. Lock position Il fixe l'emplacement du PNJ; Lock rotation Il fixe sa direction.")

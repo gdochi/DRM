@@ -63,9 +63,13 @@ An older NPC's **Legacy AI compatibility** keeps its previous behavior. When swi
 
 The NPC walks to the vehicle. Attempts default to 600 ticks, adjustable from 20–2400. A vehicle outside the search area or in another dimension cannot be boarded.
 
-Compatible SuperbWarfare vehicles on older targets accept seats 0–63. The 26.3 feature uses vanilla vehicles and cannot skip a preceding passenger seat; DW/DWE vehicle features are not available on 26.3.
+Compatible SuperbWarfare vehicles on older targets accept seats 0–63. The ordinary 26.3 vehicle selector uses vanilla vehicles and cannot skip a preceding passenger seat; DW/DWE vehicle features are not available on 26.3. In supported Create environments, **Create seat** is assigned separately as a block.
 
 Dismounting waits until the vehicle stops and a safe exit is available. Configure driving, patrols and weapons in DWE or the vehicle's own settings.
+
+## Create job schedules
+
+Choose crank, valve, polishing, parcel, attendance, processing, ordering, control or inspection from the shift's **+ → Create** category. Follow [Create setup and videos](#dochi-npc-core/npc-core-create-start) for world selection and saving. Seats use **Ride vehicle → Create seat**; counter work uses **Stock Ticker Attendance**.
 
 ## Shop opening hours
 

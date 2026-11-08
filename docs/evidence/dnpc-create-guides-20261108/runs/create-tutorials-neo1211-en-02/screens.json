@@ -1,0 +1,264 @@
+[
+  {
+    "id": "create-device-setup",
+    "actualScreenAtFailure": "net.dochi.npc.client.NpcEditorScreen",
+    "attemptedActions": [
+      "create:setup:setup",
+      "wait:25",
+      "create:look",
+      "create:editor"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Unexpected screen for create-device-setup: net.dochi.npc.client.NpcEditorScreen@5c432e40"
+  },
+  {
+    "id": "create-crank",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:crank",
+      "wait:25",
+      "create:look",
+      "create:caption:The scheduled NPC walks to the crank and supplies native rotation.",
+      "gif:start:create-crank",
+      "create:start",
+      "wait:180",
+      "create:verify",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "create-valve",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:valve",
+      "wait:25",
+      "create:look",
+      "create:caption:Two 90-degree operations. The valve owns rotation and cooldown.",
+      "gif:start:create-valve",
+      "create:start",
+      "wait:200",
+      "create:verify",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "create-seat",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:seat",
+      "wait:25",
+      "create:look",
+      "create:caption:A scheduled Create seat: approach, board, then leave after the shift.",
+      "gif:start:create-seat",
+      "create:start",
+      "wait:110",
+      "create:end-shift",
+      "wait:70",
+      "create:verify",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "create-polish",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:polish",
+      "wait:25",
+      "create:look",
+      "create:caption:Collect real sandpaper and rose quartz; polish and deliver two results.",
+      "gif:start:create-polish",
+      "create:start",
+      "wait:340",
+      "create:verify",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "create-parcel-routes",
+    "actualScreenAtFailure": "net.dochi.npc.client.NpcEditorScreen",
+    "attemptedActions": [
+      "create:setup:routes",
+      "wait:25",
+      "create:editor"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Unexpected screen for create-parcel-routes: net.dochi.npc.client.NpcEditorScreen@2f8c59d7"
+  },
+  {
+    "id": "create-parcel-npc",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:parcel-npc",
+      "wait:25",
+      "create:look",
+      "create:caption:Workshop A goes to the recipient NPC. Unknown stays at the source.",
+      "gif:start:create-parcel-npc",
+      "create:start",
+      "wait:250",
+      "create:verify",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "create-parcel-container",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:parcel-container",
+      "wait:25",
+      "create:look",
+      "create:caption:An inventory route delivers the sealed parcel without unpacking it.",
+      "gif:start:create-parcel-container",
+      "create:start",
+      "wait:250",
+      "create:verify",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "create-parcel-return",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:parcel-return",
+      "wait:25",
+      "create:look",
+      "create:caption:Example obstruction: destination fills after pickup. The parcel returns intact.",
+      "gif:start:create-parcel-return",
+      "create:start",
+      "wait:330",
+      "create:verify",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "create-stock-keeper",
+    "actualScreenAtFailure": "world",
+    "attemptedActions": [
+      "create:setup:keeper",
+      "wait:25",
+      "create:look",
+      "create:caption:Exactly one Stock Ticker beside the stationary Create seat.",
+      "gif:start:create-stock-keeper",
+      "create:start",
+      "wait:130",
+      "create:verify",
+      "create:orders",
+      "wait:65",
+      "create:verify-orders"
+    ],
+    "status": "failed",
+    "error": "java.lang.RuntimeException: perform"
+  },
+  {
+    "id": "create-factory-settings",
+    "actualScreenAtFailure": "world",
+    "attemptedActions": [
+      "create:setup:factory"
+    ],
+    "status": "failed",
+    "error": "java.lang.RuntimeException: perform"
+  },
+  {
+    "id": "create-factory-process",
+    "actualScreenAtFailure": "world",
+    "attemptedActions": [
+      "create:setup:process"
+    ],
+    "status": "failed",
+    "error": "java.lang.RuntimeException: perform"
+  },
+  {
+    "id": "create-material-order",
+    "actualScreenAtFailure": "world",
+    "attemptedActions": [
+      "create:setup:supply"
+    ],
+    "status": "failed",
+    "error": "java.lang.RuntimeException: perform"
+  },
+  {
+    "id": "create-condition",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:control",
+      "wait:25",
+      "create:look",
+      "create:caption:Iron stock \u003c\u003d 2 starts cranking. Reaching 6 stops it.",
+      "gif:start:create-condition",
+      "create:start",
+      "wait:100",
+      "create:fill-sensor",
+      "wait:90",
+      "create:verify",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "create-inspection",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:inspect",
+      "wait:25",
+      "create:look",
+      "create:caption:Inspect the crank and tank in order. Inspection reads; it does not repair.",
+      "gif:start:create-inspection",
+      "create:start",
+      "wait:220",
+      "create:verify",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

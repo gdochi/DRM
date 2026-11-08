@@ -57,8 +57,8 @@ export function serve(baseDir, listenPort) {
     stream.pipe(response);
   });
 
-  server.listen(listenPort, () => {
-    console.log(`Preview server running at http://localhost:${listenPort}`);
+  server.listen(listenPort, "127.0.0.1", () => {
+    console.log(`Preview server running at http://127.0.0.1:${server.address().port}`);
   });
 
   return server;

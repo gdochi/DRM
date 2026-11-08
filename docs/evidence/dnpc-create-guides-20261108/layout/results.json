@@ -1,0 +1,314 @@
+{
+  "results": [
+    {
+      "slug": "start",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "headings": [
+        "무엇을 만들 수 있나요?",
+        "설치와 촬영 환경",
+        "공통 순서: 시간표 → 액션 → 대상 → 저장",
+        "손 크랭크: 동력을 공급하는 작업",
+        "서 있을 위치는 장치 좌표와 다릅니다",
+        "밸브: 각도는 블록에서, 횟수는 NPC에서",
+        "Create 좌석: 앉는 일정과 기계 운전은 별개",
+        "움직이지 않을 때 확인할 순서"
+      ],
+      "videos": [
+        {
+          "label": "준비된 크랭크 액션에서 월드 장치를 선택하고 작동 시간을 6초로 바꾼 뒤 NPC에 저장하는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-device-setup.mp4"
+        },
+        {
+          "label": "NPC가 크랭크에 접근해 손으로 돌리고 제한 시간이 끝나면 작동을 멈추는 모습.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-crank.mp4"
+        },
+        {
+          "label": "NPC가 90도로 설정된 밸브를 두 번 조작하고 마치면 밸브를 바라보며 물러나는 모습.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-valve.mp4"
+        },
+        {
+          "label": "시간표가 시작되면 Create 좌석으로 이동해 앉고 근무가 끝나면 바닥으로 내려오는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-seat.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "start",
+      "width": 390,
+      "viewport": 390,
+      "documentWidth": 390,
+      "headings": [
+        "무엇을 만들 수 있나요?",
+        "설치와 촬영 환경",
+        "공통 순서: 시간표 → 액션 → 대상 → 저장",
+        "손 크랭크: 동력을 공급하는 작업",
+        "서 있을 위치는 장치 좌표와 다릅니다",
+        "밸브: 각도는 블록에서, 횟수는 NPC에서",
+        "Create 좌석: 앉는 일정과 기계 운전은 별개",
+        "움직이지 않을 때 확인할 순서"
+      ],
+      "videos": [
+        {
+          "label": "준비된 크랭크 액션에서 월드 장치를 선택하고 작동 시간을 6초로 바꾼 뒤 NPC에 저장하는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-device-setup.mp4"
+        },
+        {
+          "label": "NPC가 크랭크에 접근해 손으로 돌리고 제한 시간이 끝나면 작동을 멈추는 모습.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-crank.mp4"
+        },
+        {
+          "label": "NPC가 90도로 설정된 밸브를 두 번 조작하고 마치면 밸브를 바라보며 물러나는 모습.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-valve.mp4"
+        },
+        {
+          "label": "시간표가 시작되면 Create 좌석으로 이동해 앉고 근무가 끝나면 바닥으로 내려오는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-seat.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "logistics",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "headings": [
+        "시작 전에",
+        "사포 연마: 재료 → 작업 자리 → 완성품 보관함",
+        "소포 배송: 주소와 목적지는 따로 지정합니다",
+        "NPC에게 주소 연결하기",
+        "보관함으로 배송하기",
+        "배송 실패와 반송을 구분하기",
+        "Stock Ticker 주문 창구 만들기",
+        "Blaze Burner에 연료를 옮기려면"
+      ],
+      "videos": [
+        {
+          "label": "사포와 장미석을 가져와 지정한 방향으로 연마하고 결과 두 개를 오른쪽 보관함으로 옮기는 NPC.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-polish.mp4"
+        },
+        {
+          "label": "준비된 배송 경로에서 주소 Workshop A와 수신 대기 80틱을 입력하고 NPC에 저장하는 편집 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-parcel-routes.mp4"
+        },
+        {
+          "label": "Workshop A 소포는 수신 NPC에게 전달되고 Unknown 소포는 출발 보관함에 남는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-parcel-npc.mp4"
+        },
+        {
+          "label": "주소가 맞는 소포 한 개를 오른쪽 수령 보관함에 그대로 넣는 배송 NPC.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-parcel-container.mp4"
+        },
+        {
+          "label": "소포를 꺼낸 뒤 목적지에 공간이 없어지자 반송 보관함으로 돌려놓는 과정.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-parcel-return.mp4"
+        },
+        {
+          "label": "NPC가 좌석에 앉아 창구를 지키고 일반 상호작용으로 Create 주문 화면을 여는 모습.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-stock-keeper.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "logistics",
+      "width": 390,
+      "viewport": 390,
+      "documentWidth": 390,
+      "headings": [
+        "시작 전에",
+        "사포 연마: 재료 → 작업 자리 → 완성품 보관함",
+        "소포 배송: 주소와 목적지는 따로 지정합니다",
+        "NPC에게 주소 연결하기",
+        "보관함으로 배송하기",
+        "배송 실패와 반송을 구분하기",
+        "Stock Ticker 주문 창구 만들기",
+        "Blaze Burner에 연료를 옮기려면"
+      ],
+      "videos": [
+        {
+          "label": "사포와 장미석을 가져와 지정한 방향으로 연마하고 결과 두 개를 오른쪽 보관함으로 옮기는 NPC.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-polish.mp4"
+        },
+        {
+          "label": "준비된 배송 경로에서 주소 Workshop A와 수신 대기 80틱을 입력하고 NPC에 저장하는 편집 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-parcel-routes.mp4"
+        },
+        {
+          "label": "Workshop A 소포는 수신 NPC에게 전달되고 Unknown 소포는 출발 보관함에 남는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-parcel-npc.mp4"
+        },
+        {
+          "label": "주소가 맞는 소포 한 개를 오른쪽 수령 보관함에 그대로 넣는 배송 NPC.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-parcel-container.mp4"
+        },
+        {
+          "label": "소포를 꺼낸 뒤 목적지에 공간이 없어지자 반송 보관함으로 돌려놓는 과정.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-parcel-return.mp4"
+        },
+        {
+          "label": "NPC가 좌석에 앉아 창구를 지키고 일반 상호작용으로 Create 주문 화면을 여는 모습.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-stock-keeper.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "factory",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "headings": [
+        "먼저 사람이 가동할 수 있는 기계를 만듭니다",
+        "네 보관 위치를 구분하세요",
+        "Factory Process 설정하기",
+        "수량 예: 재료 수량과 Batch size는 곱해집니다",
+        "실행: 모으기 → 투입 → 기다리기 → 납품",
+        "타임아웃이 떠도 재료는 사라지지 않습니다",
+        "Material Ordering: 목표 재고의 부족분 주문",
+        "접수된 주문을 반복해서 보내지 않는 이유",
+        "Factory Process에 자동 주문 붙이기"
+      ],
+      "videos": [
+        {
+          "label": "준비된 프레스 작업에서 배치당 철괴 두 개와 완성 철판 두 개를 지정하고 저장하는 편집 화면.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-factory-settings.mp4"
+        },
+        {
+          "label": "원재료 통에서 철괴를 가져와 프레스 아래 Depot에 넣고 실제 철판을 회수·납품하는 두 배치.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-factory-process.mp4"
+        },
+        {
+          "label": "준비된 물류 네트워크에 철괴 네 개를 주문하고 접수된 주문을 대기하는 NPC.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-material-order.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "factory",
+      "width": 390,
+      "viewport": 390,
+      "documentWidth": 390,
+      "headings": [
+        "먼저 사람이 가동할 수 있는 기계를 만듭니다",
+        "네 보관 위치를 구분하세요",
+        "Factory Process 설정하기",
+        "수량 예: 재료 수량과 Batch size는 곱해집니다",
+        "실행: 모으기 → 투입 → 기다리기 → 납품",
+        "타임아웃이 떠도 재료는 사라지지 않습니다",
+        "Material Ordering: 목표 재고의 부족분 주문",
+        "접수된 주문을 반복해서 보내지 않는 이유",
+        "Factory Process에 자동 주문 붙이기"
+      ],
+      "videos": [
+        {
+          "label": "준비된 프레스 작업에서 배치당 철괴 두 개와 완성 철판 두 개를 지정하고 저장하는 편집 화면.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-factory-settings.mp4"
+        },
+        {
+          "label": "원재료 통에서 철괴를 가져와 프레스 아래 Depot에 넣고 실제 철판을 회수·납품하는 두 배치.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-factory-process.mp4"
+        },
+        {
+          "label": "준비된 물류 네트워크에 철괴 네 개를 주문하고 접수된 주문을 대기하는 NPC.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-material-order.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "control",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "headings": [
+        "조건이 맞을 때만 조작하기",
+        "예제: 철괴가 2개 이하면 돌리고 6개면 멈추기",
+        "두 임계값 사이에서는 이전 상태를 유지합니다",
+        "센서 종류와 단위",
+        "크랭크·밸브·Linked Controller의 차이",
+        "Factory Inspection: 설비를 돌아다니며 읽기",
+        "Display Board에 보고하기",
+        "문제를 찾는 순서"
+      ],
+      "videos": [
+        {
+          "label": "철괴 재고가 부족할 때 크랭크를 돌리다가 재고가 여섯 개에 도달하면 입력을 멈추는 NPC.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-condition.mp4"
+        },
+        {
+          "label": "NPC가 크랭크와 빈 Create 탱크 두 곳을 순서대로 방문해 설비를 점검하는 모습.",
+          "width": 862,
+          "src": "assets/media/guides/create-tutorials-20261108/create-inspection.mp4"
+        }
+      ],
+      "brokenLinks": []
+    },
+    {
+      "slug": "control",
+      "width": 390,
+      "viewport": 390,
+      "documentWidth": 390,
+      "headings": [
+        "조건이 맞을 때만 조작하기",
+        "예제: 철괴가 2개 이하면 돌리고 6개면 멈추기",
+        "두 임계값 사이에서는 이전 상태를 유지합니다",
+        "센서 종류와 단위",
+        "크랭크·밸브·Linked Controller의 차이",
+        "Factory Inspection: 설비를 돌아다니며 읽기",
+        "Display Board에 보고하기",
+        "문제를 찾는 순서"
+      ],
+      "videos": [
+        {
+          "label": "철괴 재고가 부족할 때 크랭크를 돌리다가 재고가 여섯 개에 도달하면 입력을 멈추는 NPC.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-condition.mp4"
+        },
+        {
+          "label": "NPC가 크랭크와 빈 Create 탱크 두 곳을 순서대로 방문해 설비를 점검하는 모습.",
+          "width": 328,
+          "src": "assets/media/guides/create-tutorials-20261108/create-inspection.mp4"
+        }
+      ],
+      "brokenLinks": []
+    }
+  ],
+  "errors": [],
+  "bind": {
+    "address": "127.0.0.1",
+    "family": "IPv4",
+    "port": 56122
+  }
+}

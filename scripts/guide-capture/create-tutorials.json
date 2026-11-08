@@ -1,0 +1,58 @@
+[
+  {"id":"create-device-setup","screen":"@world","actions":[
+    "create:setup:setup","wait:25","create:look","create:editor","wait:25","create:work-page",
+    "create:caption:Prepared shift: choose the crank, set operating time, then save the NPC.","gif:start:create-device-setup","wait:25",
+    "create:pick-device","wait:25","create:caption:Sneak + right-click the matching Create hand crank.","create:choose-device","wait:25",
+    "create:input:kinetic.duration=6","wait:30","create:caption:Operating time is in seconds. Travel time does not consume it.","wait:25",
+    "create:save","wait:35","create:verify-save","gif:stop","create:off"
+  ]},
+  {"id":"create-crank","screen":"@world","actions":[
+    "create:setup:crank","wait:25","create:look","create:caption:The scheduled NPC walks to the crank and supplies native rotation.","gif:start:create-crank","create:start","wait:180","create:verify","gif:stop","create:off"
+  ]},
+  {"id":"create-valve","screen":"@world","actions":[
+    "create:setup:valve","wait:25","create:look","create:caption:Two 90-degree operations. The valve owns rotation and cooldown.","gif:start:create-valve","create:start","wait:200","create:verify","gif:stop","create:off"
+  ]},
+  {"id":"create-seat","screen":"@world","actions":[
+    "create:setup:seat","wait:25","create:look","create:caption:A scheduled Create seat: approach, board, then leave after the shift.","gif:start:create-seat","create:start","wait:110","create:end-shift","wait:70","create:verify","gif:stop","create:off"
+  ]},
+  {"id":"create-polish","screen":"@world","actions":[
+    "create:setup:polish","wait:25","create:look","create:caption:Collect real sandpaper and rose quartz; polish and deliver two results.","gif:start:create-polish","create:start","wait:340","create:verify","gif:stop","create:off"
+  ]},
+  {"id":"create-parcel-routes","screen":"@world","actions":[
+    "create:setup:routes","wait:25","create:editor","wait:25","create:work-page",
+    "create:caption:Prepared route: match the parcel address to a specific NPC identity.","gif:start:create-parcel-routes",
+    "create:input:create_job.address.0=Workshop A","wait:35","create:input:create_job.recipient_wait=80","wait:35",
+    "create:caption:Recipient wait is in ticks: 80 ticks is four seconds at 20 TPS.","create:save","wait:35","create:verify-save","gif:stop","create:off"
+  ]},
+  {"id":"create-parcel-npc","screen":"@world","actions":[
+    "create:setup:parcel-npc","wait:25","create:look","create:caption:Workshop A goes to the recipient NPC. Unknown stays at the source.","gif:start:create-parcel-npc","create:start","wait:250","create:verify","gif:stop","create:off"
+  ]},
+  {"id":"create-parcel-container","screen":"@world","actions":[
+    "create:setup:parcel-container","wait:25","create:look","create:caption:An inventory route delivers the sealed parcel without unpacking it.","gif:start:create-parcel-container","create:start","wait:250","create:verify","gif:stop","create:off"
+  ]},
+  {"id":"create-parcel-return","screen":"@world","actions":[
+    "create:setup:parcel-return","wait:25","create:look","create:caption:Example obstruction: destination fills after pickup. The parcel returns intact.","gif:start:create-parcel-return","create:start","wait:330","create:verify","gif:stop","create:off"
+  ]},
+  {"id":"create-stock-keeper","screen":"@world","actions":[
+    "create:setup:keeper","wait:25","create:look","create:caption:Exactly one Stock Ticker beside the stationary Create seat.","gif:start:create-stock-keeper","create:start","wait:130","create:verify","create:orders","wait:65","create:verify-orders","gif:stop","create:off"
+  ]},
+  {"id":"create-factory-settings","screen":"@world","actions":[
+    "create:setup:factory","wait:25","create:editor","wait:25","create:work-page",
+    "create:caption:Prepared press: source, machine input, machine result, and final storage.","gif:start:create-factory-settings","wait:30",
+    "create:input:factory.material.count.0=2","wait:35","create:input:factory.result_count=2","wait:35",
+    "create:caption:Two iron ingots per batch; wait for two real iron sheets before delivery.","create:save","wait:35","create:verify-save","gif:stop","create:off"
+  ]},
+  {"id":"create-factory-process","screen":"@world","actions":[
+    "create:setup:process","wait:25","create:look","create:caption:Two batches: supply the depot, wait for the native press, deliver the sheets.","gif:start:create-factory-process","create:start","wait:420","create:verify","gif:stop","create:off"
+  ]},
+  {"id":"create-material-order","screen":"@world","actions":[
+    "create:setup:supply","wait:40","create:look","create:caption:Prepared network: request four iron ingots for the Workshop A address.","gif:start:create-material-order","create:start","wait:170",
+    "create:order-outcome","wait:65","create:verify","gif:stop","create:off"
+  ]},
+  {"id":"create-condition","screen":"@world","actions":[
+    "create:setup:control","wait:25","create:look","create:caption:Iron stock <= 2 starts cranking. Reaching 6 stops it.","gif:start:create-condition","create:start","wait:100","create:fill-sensor","wait:90","create:verify","gif:stop","create:off"
+  ]},
+  {"id":"create-inspection","screen":"@world","actions":[
+    "create:setup:inspect","wait:25","create:look","create:caption:Inspect the crank and tank in order. Inspection reads; it does not repair.","gif:start:create-inspection","create:start","wait:220","create:verify","gif:stop","create:off"
+  ]}
+]

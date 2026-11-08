@@ -54,6 +54,10 @@ audience: 제작자 / 서버 운영자
 
 ![NPC가 두 상자 사이에서 밀을 운반하고 입력 상자로 돌아옵니다.](assets/media/guides/runtime-videos-20261106/npc-haul.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, 영어 UI. 저장한 작업의 실행 결과이며, 편집기 설정 순서는 위 설명을 따릅니다.")
 
+## Create 연계 작업
+
+Create 작업은 [시작·크랭크·밸브·좌석](#dochi-npc-core/npc-core-create-start), [연마·주소 배송·주문 창구](#dochi-npc-core/npc-core-create-logistics), [공장 가공·자재 주문](#dochi-npc-core/npc-core-create-factory), [조건 제어·설비 점검](#dochi-npc-core/npc-core-create-control)의 네 상세 문서에서 실제 영상과 함께 설명합니다. 시간표의 Create 액션을 선택하고 장치·보관함을 연결한 뒤 Save to NPC로 저장하세요.
+
 ## 움직이지 않는 안내 NPC 만들기
 
 ![DNPC의 Movement AI 화면. 오른쪽 아래에 Lock position과 Lock rotation 스위치가 있습니다.](assets/media/guides/dnpc-013-neo1211/dnpc-movement.png "DNPC 0.1.3 / NeoForge 1.21.1 영문 UI. 왼쪽 Movement AI를 엽니다. 오른쪽 아래 Lock position이 위치 고정, Lock rotation이 회전 고정입니다.")

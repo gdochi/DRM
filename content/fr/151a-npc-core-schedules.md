@@ -65,9 +65,13 @@ Un PNJ plus ancien **Legacy AI compatibility** conserve son comportement précé
 
 Le PNJ se dirige vers le véhicule. Tentatives par défaut à 600 ticks, réglables à partir de 20–2400. Un véhicule en dehors de la zone de recherche ou dans une autre dimension ne peut pas être embarqué.
 
-Les véhicules compatibles SuperbWarfare sur les cibles plus anciennes acceptent les sièges 0–63. La fonction 26.3 utilise des véhicules à la vanille et ne peut pas sauter un siège passager précédent; les fonctions du véhicule DW / DWE ne sont pas disponibles sur 26.3.
+Les véhicules SuperbWarfare compatibles sur les anciennes cibles acceptent les sièges 0–63. Le sélecteur ordinaire de 26.3 utilise les véhicules vanilla sans sauter un siège précédent ; les véhicules DW/DWE ne sont pas disponibles en 26.3. Dans les environnements Create compatibles, **Create seat** s'affecte séparément comme bloc.
 
 Le démontage attend que le véhicule s'arrête et qu'une sortie sûre soit disponible. Configurez la conduite, les patrouilles et les armes dans DWE ou dans les paramètres du véhicule.
+
+## Plannings de tâches Create
+
+Dans **+ → Create** du service, choisissez manivelle, vanne, polissage, colis, comptoir, fabrication, commande, contrôle ou inspection. Suivez [Configuration Create et vidéos](#dochi-npc-core/npc-core-create-start) pour sélectionner les blocs et sauvegarder. Les sièges utilisent **Ride vehicle → Create seat** ; le comptoir utilise **Stock Ticker Attendance**.
 
 ## Heures d'ouverture du magasin
 

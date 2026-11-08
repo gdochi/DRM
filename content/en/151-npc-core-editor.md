@@ -54,6 +54,10 @@ This runtime example uses a prepared transport job: the NPC collects 32 wheat fr
 
 ![An NPC carries wheat between two chests and returns to the input.](assets/media/guides/runtime-videos-20261106/npc-haul.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, English UI. Runtime result of a saved job; the editor setup is described above.")
 
+## Create integration jobs
+
+Follow the detailed videos for [setup, cranks, valves and seats](#dochi-npc-core/npc-core-create-start), [polishing, parcels and counters](#dochi-npc-core/npc-core-create-logistics), [processing and material orders](#dochi-npc-core/npc-core-create-factory), and [condition control and inspection](#dochi-npc-core/npc-core-create-control). Choose a Create schedule action, assign real devices and inventories, then Save to NPC.
+
 ## Make a stationary guide
 
 ![DNPC's Movement AI screen, with Lock position and Lock rotation switches near the bottom right.](assets/media/guides/dnpc-013-neo1211/dnpc-movement.png "DNPC 0.1.3 / NeoForge 1.21.1, English UI. Select Movement AI on the left. Lock position fixes the NPC's location; Lock rotation fixes its facing direction.")

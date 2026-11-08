@@ -1,0 +1,693 @@
+{
+  "videos": [
+    {
+      "id": "create-device-setup",
+      "run": "create-tutorials-neo1211-en-04",
+      "durationMs": 16648.2393,
+      "frames": 333,
+      "intervalMs": {
+        "median": 50.13239999999996,
+        "p95": 51.40989999999874,
+        "max": 65.03310000000056
+      },
+      "footerRepair": false,
+      "outputs": [
+        {
+          "file": "create-device-setup.mp4",
+          "bytes": 537963,
+          "sha256": "0918996845f854fffc54ea7801fe213748472878bca5de2c70d9eb3518588ffb"
+        },
+        {
+          "file": "create-device-setup.webm",
+          "bytes": 314822,
+          "sha256": "044dcfb6102c532c4eba413133d31a0ae8132232067f076956985624ace0fb09"
+        },
+        {
+          "file": "create-device-setup.png",
+          "bytes": 62568,
+          "sha256": "616aadcffc9f3443fc161647643f9545b921be302f070dc98ef8a9d7845bbc10"
+        }
+      ]
+    },
+    {
+      "id": "create-crank",
+      "run": "create-tutorials-neo1211-en-02",
+      "durationMs": 11410.0012,
+      "frames": 228,
+      "intervalMs": {
+        "median": 50.13810000000012,
+        "p95": 51.73620000000028,
+        "max": 63.89300000000003
+      },
+      "footerRepair": true,
+      "outputs": [
+        {
+          "file": "create-crank.mp4",
+          "bytes": 633296,
+          "sha256": "9c7ae013bf5895b9a314061959357e5b06948462c3ca31188f4960f81935414c"
+        },
+        {
+          "file": "create-crank.webm",
+          "bytes": 523029,
+          "sha256": "bce0a52558c80563ba2e1be62734c31cb0457c41a3d57c18962e91d63d507473"
+        },
+        {
+          "file": "create-crank.png",
+          "bytes": 661717,
+          "sha256": "6212c8f665758b00c27a575c521a11c4d9781cdb304ae3578ffb0da11cb22e32"
+        }
+      ]
+    },
+    {
+      "id": "create-valve",
+      "run": "create-tutorials-neo1211-en-02",
+      "durationMs": 12402.8439,
+      "frames": 248,
+      "intervalMs": {
+        "median": 50.07619999999952,
+        "p95": 50.8995010000001,
+        "max": 55.25550000000021
+      },
+      "footerRepair": true,
+      "outputs": [
+        {
+          "file": "create-valve.mp4",
+          "bytes": 409281,
+          "sha256": "df04500d13130255ae57591fe6df3a6246ebdf32b6341139792d51921670e21b"
+        },
+        {
+          "file": "create-valve.webm",
+          "bytes": 460904,
+          "sha256": "21513ff19067733b6f0ae05d4679640f157a7de2e7c465560feb154bf686d2de"
+        },
+        {
+          "file": "create-valve.png",
+          "bytes": 631365,
+          "sha256": "8a73f99c32c26ee26df9e60f8e61a11d8bf08b9acb5b1cec5bf10a220e65858f"
+        }
+      ]
+    },
+    {
+      "id": "create-seat",
+      "run": "create-tutorials-neo1211-en-02",
+      "durationMs": 12604.3633,
+      "frames": 252,
+      "intervalMs": {
+        "median": 50.16320100000121,
+        "p95": 51.727199999999996,
+        "max": 66.41550000000007
+      },
+      "footerRepair": true,
+      "outputs": [
+        {
+          "file": "create-seat.mp4",
+          "bytes": 600397,
+          "sha256": "81acb0cb7e8f110c51298a4bfcc7944a807ef86f4f7fcf35793550ed93383e49"
+        },
+        {
+          "file": "create-seat.webm",
+          "bytes": 461208,
+          "sha256": "bcae5e82c92131f3aecb1bbf9a5c686fdb4674871b0673332e79675f01bcc19a"
+        },
+        {
+          "file": "create-seat.png",
+          "bytes": 635583,
+          "sha256": "364c92f35e164d89dab8a67881ff44d972cb437458a5e58d620d1df63e8f57d3"
+        }
+      ]
+    },
+    {
+      "id": "create-polish",
+      "run": "create-tutorials-neo1211-en-02",
+      "durationMs": 19409.045200999997,
+      "frames": 388,
+      "intervalMs": {
+        "median": 50.1148,
+        "p95": 51.383200000000215,
+        "max": 65.60610099999758
+      },
+      "footerRepair": true,
+      "outputs": [
+        {
+          "file": "create-polish.mp4",
+          "bytes": 865822,
+          "sha256": "1918adab9f54615ab1ecc72321ee9be9c0cf11b517cf393d803515ae72172dd2"
+        },
+        {
+          "file": "create-polish.webm",
+          "bytes": 933253,
+          "sha256": "afb0c6c921426a49a8d80fff20b7de599e0c52cbff65b6169147a7c4a638dc0f"
+        },
+        {
+          "file": "create-polish.png",
+          "bytes": 629360,
+          "sha256": "44cf12cf5bc74413259c7f623d3cf23ef2b2cfecd87075b3cf7dc41033eb6a67"
+        }
+      ]
+    },
+    {
+      "id": "create-parcel-routes",
+      "run": "create-tutorials-neo1211-en-03",
+      "durationMs": 10659.8022,
+      "frames": 213,
+      "intervalMs": {
+        "median": 50.177200000000084,
+        "p95": 52.08860000000004,
+        "max": 73.61199999999963
+      },
+      "footerRepair": false,
+      "outputs": [
+        {
+          "file": "create-parcel-routes.mp4",
+          "bytes": 143139,
+          "sha256": "14158012ca97496b7a1b9bb842bc81e1986b02210ba928f0f20284638640f6e5"
+        },
+        {
+          "file": "create-parcel-routes.webm",
+          "bytes": 157271,
+          "sha256": "bbe7adde34e1ed692c785d17ffac7a7543559f5880391d00c00508decff072f8"
+        },
+        {
+          "file": "create-parcel-routes.png",
+          "bytes": 69996,
+          "sha256": "c290697b857928d459b95022456ea1c4040e7f55624626a65a02b6fa5cfc7892"
+        }
+      ]
+    },
+    {
+      "id": "create-parcel-npc",
+      "run": "create-tutorials-neo1211-en-02",
+      "durationMs": 14910.1073,
+      "frames": 298,
+      "intervalMs": {
+        "median": 50.10379999999999,
+        "p95": 50.95350099999996,
+        "max": 58.803399000000354
+      },
+      "footerRepair": true,
+      "outputs": [
+        {
+          "file": "create-parcel-npc.mp4",
+          "bytes": 894053,
+          "sha256": "843ccddd3b94fbad55e4243e0201576b140cd472c520fb0218e1eebff23fd788"
+        },
+        {
+          "file": "create-parcel-npc.webm",
+          "bytes": 789270,
+          "sha256": "adcb32c2e2e7c8bcf848276c7e34b6efc9aa039aed7b6202cfd2622a041ca03c"
+        },
+        {
+          "file": "create-parcel-npc.png",
+          "bytes": 637830,
+          "sha256": "68c58864b16c2a6cab6eec6ef34b574228e2ca8a431b97f241e7c67f3822bc6e"
+        }
+      ]
+    },
+    {
+      "id": "create-parcel-container",
+      "run": "create-tutorials-neo1211-en-02",
+      "durationMs": 14904.8141,
+      "frames": 298,
+      "intervalMs": {
+        "median": 50.08550000000105,
+        "p95": 50.9186009999994,
+        "max": 65.57250000000022
+      },
+      "footerRepair": true,
+      "outputs": [
+        {
+          "file": "create-parcel-container.mp4",
+          "bytes": 875759,
+          "sha256": "9c0d3b416a805254f3172336c45ef863dcf4dd7d8dada1e705e2071ab118d9e5"
+        },
+        {
+          "file": "create-parcel-container.webm",
+          "bytes": 780624,
+          "sha256": "ebca6fd31f9903ff58f4980af9f1f15680c23f637490e99a172a41cff7b1d582"
+        },
+        {
+          "file": "create-parcel-container.png",
+          "bytes": 637925,
+          "sha256": "4772ddfc69fe87e4849b8b3535b039ff6d8958c7317f6e086d50fbccb1a9abdd"
+        }
+      ]
+    },
+    {
+      "id": "create-parcel-return",
+      "run": "create-tutorials-neo1211-en-02",
+      "durationMs": 18908.773701,
+      "frames": 378,
+      "intervalMs": {
+        "median": 50.08940100000018,
+        "p95": 50.97810000000027,
+        "max": 58.13169999999809
+      },
+      "footerRepair": true,
+      "outputs": [
+        {
+          "file": "create-parcel-return.mp4",
+          "bytes": 1177846,
+          "sha256": "bcee3443d968e845cef865a82fa44022064beec4d47f188fd1ca1cf8483b43df"
+        },
+        {
+          "file": "create-parcel-return.webm",
+          "bytes": 1031480,
+          "sha256": "a907447e68c9e1c12246ac2ec022c8fd00b3e446e7d13b4a181d1989274f7881"
+        },
+        {
+          "file": "create-parcel-return.png",
+          "bytes": 641923,
+          "sha256": "20340a56bf39984178da5242d864a09cf4474971874711faa395c2b255638678"
+        }
+      ]
+    },
+    {
+      "id": "create-stock-keeper",
+      "run": "create-tutorials-neo1211-en-04",
+      "durationMs": 13954.4311,
+      "frames": 279,
+      "intervalMs": {
+        "median": 50.21900000000005,
+        "p95": 52.17410000000018,
+        "max": 75.77019999999902
+      },
+      "footerRepair": false,
+      "outputs": [
+        {
+          "file": "create-stock-keeper.mp4",
+          "bytes": 428872,
+          "sha256": "23b467d528843bc8f904820a3fefb3f17dc236e5f26d4512f8a20ad96d9e79fb"
+        },
+        {
+          "file": "create-stock-keeper.webm",
+          "bytes": 476956,
+          "sha256": "b22f312bcd6dcf693928f8f12a85d1a6f0f3db924456ae23a06ce644842bcb71"
+        },
+        {
+          "file": "create-stock-keeper.png",
+          "bytes": 338014,
+          "sha256": "738b34195f04335132816294a38429cd55037bac098ae5ef199c76b2983bcbc1"
+        }
+      ]
+    },
+    {
+      "id": "create-factory-settings",
+      "run": "create-tutorials-neo1211-en-04",
+      "durationMs": 12754.160100000001,
+      "frames": 255,
+      "intervalMs": {
+        "median": 50.16679999999997,
+        "p95": 51.70519999999999,
+        "max": 65.22589999999946
+      },
+      "footerRepair": false,
+      "outputs": [
+        {
+          "file": "create-factory-settings.mp4",
+          "bytes": 256393,
+          "sha256": "6b3d18f2c1e4e5005694b33742dbc524f9fe332a2f12b476522fa0fc48c0ed02"
+        },
+        {
+          "file": "create-factory-settings.webm",
+          "bytes": 190293,
+          "sha256": "6ea129cbae6886181646452f96cf60b2afff9aeae45bf5bb40a3eef264cca544"
+        },
+        {
+          "file": "create-factory-settings.png",
+          "bytes": 69926,
+          "sha256": "d2c6d25c9874b199f62e19e2e8d5504e758e88de2f91ac09a199dbafcde884f9"
+        }
+      ]
+    },
+    {
+      "id": "create-factory-process",
+      "run": "create-tutorials-neo1211-en-04",
+      "durationMs": 23400.4099,
+      "frames": 468,
+      "intervalMs": {
+        "median": 50.18029999999999,
+        "p95": 51.30779999999868,
+        "max": 74.1877999999997
+      },
+      "footerRepair": false,
+      "outputs": [
+        {
+          "file": "create-factory-process.mp4",
+          "bytes": 910108,
+          "sha256": "42801f3ab528ddb76b9a36037fd8a97c5983bf341dfa9c96c73c7f29f32d1e49"
+        },
+        {
+          "file": "create-factory-process.webm",
+          "bytes": 982752,
+          "sha256": "5fe28ea2c0d320cc5c48a7bac8011d62998cb9e26dd2d75c13f4e812f644647d"
+        },
+        {
+          "file": "create-factory-process.png",
+          "bytes": 348788,
+          "sha256": "17f362e947385b0e8408caaf344d3c0217705c16e4458fd6027fbd6518144843"
+        }
+      ]
+    },
+    {
+      "id": "create-material-order",
+      "run": "create-tutorials-neo1211-en-04",
+      "durationMs": 15357.3154,
+      "frames": 307,
+      "intervalMs": {
+        "median": 50.13449999999921,
+        "p95": 51.27970000000005,
+        "max": 65.51650000000063
+      },
+      "footerRepair": false,
+      "outputs": [
+        {
+          "file": "create-material-order.mp4",
+          "bytes": 647704,
+          "sha256": "6332d456a6abb0ced48b2ffab95b4f981b215bd22c97bbb537f3264bbe7430fd"
+        },
+        {
+          "file": "create-material-order.webm",
+          "bytes": 590827,
+          "sha256": "b3547bf3567ec0eb41feddca3b198059d003a75e551358d3c416b629978ee546"
+        },
+        {
+          "file": "create-material-order.png",
+          "bytes": 346176,
+          "sha256": "6454f2a01bd6f9de73294b67af8b8f8fac0b241a4240578cb1a13a111d5150ce"
+        }
+      ]
+    },
+    {
+      "id": "create-condition",
+      "run": "create-tutorials-neo1211-en-02",
+      "durationMs": 13100.08,
+      "frames": 262,
+      "intervalMs": {
+        "median": 50.116399999999885,
+        "p95": 50.96340000000009,
+        "max": 65.09259999999995
+      },
+      "footerRepair": true,
+      "outputs": [
+        {
+          "file": "create-condition.mp4",
+          "bytes": 2192736,
+          "sha256": "7e9d5faa8d72fba30a0f6b5b796577aea75a8d4708da66a83472a1a2c00a59b4"
+        },
+        {
+          "file": "create-condition.webm",
+          "bytes": 1877436,
+          "sha256": "1be2ef2679ee69cf2d115b52295f7c21ac57c0c13af3135ff592ccfdbf8249b8"
+        },
+        {
+          "file": "create-condition.png",
+          "bytes": 658455,
+          "sha256": "eb9fe14ca7a20dd9bc6faff8bcebcaa730c0917df5f08d6e625a93906be6d378"
+        }
+      ]
+    },
+    {
+      "id": "create-inspection",
+      "run": "create-tutorials-neo1211-en-02",
+      "durationMs": 13401.717200000001,
+      "frames": 268,
+      "intervalMs": {
+        "median": 50.0667999999996,
+        "p95": 50.99589999999989,
+        "max": 71.63230000000112
+      },
+      "footerRepair": true,
+      "outputs": [
+        {
+          "file": "create-inspection.mp4",
+          "bytes": 2359893,
+          "sha256": "6bb09e50bbf819d1b9ef9a258cf835da04324ed521525de28407e58ca69c9d9b"
+        },
+        {
+          "file": "create-inspection.webm",
+          "bytes": 2020601,
+          "sha256": "804c53c9a1fae67285668fb3662ffa9f64e4afdbe8872057407054174acb9b28"
+        },
+        {
+          "file": "create-inspection.png",
+          "bytes": 651697,
+          "sha256": "aed1ca074abf510e23bb3bcfd8fedcd47706d845cef44b06e8549f1a0fb9aaef"
+        }
+      ]
+    }
+  ],
+  "totalDurationMs": 223826.103902,
+  "nativeResults": [
+    {
+      "job": "control",
+      "passed": true,
+      "samples": 239,
+      "lastStatus": "factory.status.condition",
+      "lastKineticStatus": "kinetic.status.idle",
+      "raw": 0,
+      "finished": 0,
+      "sourceParcels": 0,
+      "cargoParcels": 0,
+      "returnParcels": 0
+    },
+    {
+      "job": "crank",
+      "passed": true,
+      "samples": 204,
+      "lastStatus": "create_job.status.idle",
+      "lastKineticStatus": "kinetic.status.complete",
+      "raw": 0,
+      "finished": 0,
+      "sourceParcels": 0,
+      "cargoParcels": 0,
+      "returnParcels": 0
+    },
+    {
+      "job": "inspect",
+      "passed": true,
+      "samples": 245,
+      "lastStatus": "factory.status.inspecting",
+      "lastKineticStatus": "kinetic.status.idle",
+      "raw": 0,
+      "finished": 0,
+      "sourceParcels": 0,
+      "cargoParcels": 0,
+      "returnParcels": 0,
+      "visitedIndexes": [
+        0,
+        1
+      ]
+    },
+    {
+      "job": "keeper",
+      "passed": true,
+      "samples": 155,
+      "lastStatus": "create_job.status.attending",
+      "lastKineticStatus": "kinetic.status.idle",
+      "raw": 0,
+      "finished": 0,
+      "sourceParcels": 0,
+      "cargoParcels": 0,
+      "returnParcels": 0
+    },
+    {
+      "job": "parcel-container",
+      "passed": true,
+      "samples": 275,
+      "lastStatus": "create_job.status.complete",
+      "lastKineticStatus": "kinetic.status.idle",
+      "raw": 0,
+      "finished": 0,
+      "sourceParcels": 1,
+      "cargoParcels": 0,
+      "returnParcels": 0,
+      "recipientParcels": 0
+    },
+    {
+      "job": "parcel-npc",
+      "passed": true,
+      "samples": 275,
+      "lastStatus": "create_job.status.complete",
+      "lastKineticStatus": "kinetic.status.idle",
+      "raw": 0,
+      "finished": 0,
+      "sourceParcels": 1,
+      "cargoParcels": 0,
+      "returnParcels": 0,
+      "recipientParcels": 1
+    },
+    {
+      "job": "parcel-return",
+      "passed": true,
+      "samples": 355,
+      "lastStatus": "create_job.status.unmatched",
+      "lastKineticStatus": "kinetic.status.idle",
+      "raw": 0,
+      "finished": 0,
+      "sourceParcels": 1,
+      "cargoParcels": 0,
+      "returnParcels": 1,
+      "recipientParcels": 0
+    },
+    {
+      "job": "polish",
+      "passed": true,
+      "samples": 365,
+      "lastStatus": "create_job.status.complete",
+      "lastKineticStatus": "kinetic.status.idle",
+      "raw": 0,
+      "finished": 2,
+      "sourceParcels": 0,
+      "cargoParcels": 0,
+      "returnParcels": 0
+    },
+    {
+      "job": "process",
+      "passed": true,
+      "samples": 445,
+      "lastStatus": "factory.status.complete",
+      "lastKineticStatus": "kinetic.status.idle",
+      "raw": 0,
+      "finished": 2,
+      "sourceParcels": 0,
+      "cargoParcels": 0,
+      "returnParcels": 0
+    },
+    {
+      "job": "seat",
+      "passed": true,
+      "samples": 228,
+      "lastStatus": "create_job.status.idle",
+      "lastKineticStatus": "kinetic.status.idle",
+      "raw": 0,
+      "finished": 0,
+      "sourceParcels": 0,
+      "cargoParcels": 0,
+      "returnParcels": 0
+    },
+    {
+      "job": "supply",
+      "passed": true,
+      "samples": 284,
+      "lastStatus": "factory.status.order_pending",
+      "lastKineticStatus": "kinetic.status.idle",
+      "raw": 0,
+      "finished": 0,
+      "sourceParcels": 0,
+      "cargoParcels": 0,
+      "returnParcels": 0,
+      "networkIron": 12,
+      "pendingRequests": [
+        {
+          "item": "minecraft:iron_ingot",
+          "address": "Workshop A",
+          "count": 4,
+          "target": 4,
+          "credit": 0,
+          "pending": true,
+          "source": {
+            "set": true,
+            "dimension": "minecraft:overworld",
+            "x": -4,
+            "y": -60,
+            "z": 0
+          },
+          "ticker": {
+            "set": true,
+            "dimension": "minecraft:overworld",
+            "x": 0,
+            "y": -60,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "job": "valve",
+      "passed": true,
+      "samples": 225,
+      "lastStatus": "create_job.status.idle",
+      "lastKineticStatus": "kinetic.status.complete",
+      "raw": 0,
+      "finished": 0,
+      "sourceParcels": 0,
+      "cargoParcels": 0,
+      "returnParcels": 0
+    }
+  ],
+  "sameProductionModsAcrossSelectedRuns": true,
+  "audio": {
+    "music": 0.0,
+    "records": 0.0,
+    "existingSoundsStopped": true
+  },
+  "browser": {
+    "views": 150,
+    "uniqueRecordings": 15,
+    "errors": [],
+    "reducedMotion": true
+  },
+  "layout": {
+    "views": 8,
+    "errors": [],
+    "bind": {
+      "address": "127.0.0.1",
+      "family": "IPv4",
+      "port": 56122
+    }
+  },
+  "staticChecks": {
+    "buildDocuments": 910,
+    "verifiedDocuments": 910,
+    "videoPlacements": 200,
+    "translations": 546,
+    "captureJavaCompile": true,
+    "pythonSyntax": true,
+    "gitDiffCheck": true
+  },
+  "ownedCaptureJvmsAtCompletion": 0,
+  "cleanup": {
+    "ownedCaptureJvms": 0,
+    "targets": [
+      {
+        "path": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\create-tutorials-neo1211-en-01",
+        "files": 93,
+        "bytes": 31047647.0,
+        "removed": true
+      },
+      {
+        "path": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\create-tutorials-neo1211-en-02",
+        "files": 3093,
+        "bytes": 1536786985.0,
+        "removed": true
+      },
+      {
+        "path": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\create-tutorials-neo1211-en-03",
+        "files": 1727,
+        "bytes": 661657299.0,
+        "removed": true
+      },
+      {
+        "path": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\create-tutorials-neo1211-en-04",
+        "files": 1832,
+        "bytes": 651657346.0,
+        "removed": true
+      },
+      {
+        "path": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\dnpc-create-guides",
+        "files": 26,
+        "bytes": 87953792.0,
+        "removed": true
+      }
+    ],
+    "retained": [
+      "source documents",
+      "capture source and plan",
+      "encoded videos and posters",
+      "frame hashes and representative images",
+      "server results and logs",
+      "restore backup",
+      "loopback preview server"
+    ]
+  }
+}

@@ -1,0 +1,375 @@
+[
+  {
+    "id": "create-device-setup",
+    "actualScreenAtFailure": "world",
+    "attemptedActions": [
+      "create:setup:setup",
+      "wait:25",
+      "create:look",
+      "create:editor",
+      "wait:25",
+      "create:work-page",
+      "create:caption:Prepared shift: choose the crank, set operating time, then save the NPC.",
+      "gif:start:create-device-setup",
+      "wait:25",
+      "create:pick-device",
+      "wait:25",
+      "create:caption:Sneak + right-click the matching Create hand crank.",
+      "create:choose-device",
+      "wait:25",
+      "create:input:kinetic.duration\u003d6"
+    ],
+    "status": "failed",
+    "error": "java.lang.RuntimeException: perform"
+  },
+  {
+    "id": "create-parcel-routes",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:routes",
+      "wait:25",
+      "create:editor",
+      "wait:25",
+      "create:work-page",
+      "create:caption:Prepared route: match the parcel address to a specific NPC identity.",
+      "gif:start:create-parcel-routes",
+      "create:input:create_job.address.0\u003dWorkshop A",
+      "wait:35",
+      "create:input:create_job.recipient_wait\u003d80",
+      "wait:35",
+      "create:caption:Recipient wait is in ticks: 80 ticks is four seconds at 20 TPS.",
+      "create:save",
+      "wait:35",
+      "create:verify-save",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "DRM Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Draft",
+        "active": true
+      },
+      {
+        "label": "Load NPC template",
+        "active": true
+      },
+      {
+        "label": "Save to NPC",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Delete NPC",
+        "active": true
+      },
+      {
+        "label": "Load schedule",
+        "active": true
+      },
+      {
+        "label": "Save schedule",
+        "active": true
+      },
+      {
+        "label": "Identity",
+        "active": true
+      },
+      {
+        "label": "Appearance \u0026 Model",
+        "active": true
+      },
+      {
+        "label": "Part scales",
+        "active": true
+      },
+      {
+        "label": "Hitbox",
+        "active": true
+      },
+      {
+        "label": "Animation",
+        "active": true
+      },
+      {
+        "label": "Inventory \u0026 Equipment",
+        "active": true
+      },
+      {
+        "label": "Death drops",
+        "active": true
+      },
+      {
+        "label": "Schedule",
+        "active": true
+      },
+      {
+        "label": "DRM functions",
+        "active": true
+      },
+      {
+        "label": "Movement AI",
+        "active": true
+      },
+      {
+        "label": "Houses",
+        "active": true
+      },
+      {
+        "label": "Combat AI",
+        "active": true
+      },
+      {
+        "label": "Weapon \u0026 ammunition",
+        "active": true
+      },
+      {
+        "label": "Combat distances",
+        "active": true
+      },
+      {
+        "label": "Respawn",
+        "active": true
+      },
+      {
+        "label": "Relations",
+        "active": true
+      },
+      {
+        "label": "DNPC general schedule",
+        "active": true
+      },
+      {
+        "label": "Add time",
+        "active": true
+      },
+      {
+        "label": "Remove",
+        "active": false
+      },
+      {
+        "label": "Enable schedule",
+        "active": true
+      },
+      {
+        "label": "Expand / collapse actions",
+        "active": true
+      },
+      {
+        "label": "Select time and actions",
+        "active": true
+      },
+      {
+        "label": "Create day shift",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "Delete checked actions",
+        "active": false
+      },
+      {
+        "label": "✎",
+        "active": true
+      },
+      {
+        "label": "Action name",
+        "active": true
+      },
+      {
+        "label": "Probability (%)",
+        "active": true
+      },
+      {
+        "label": "Addressed Parcel Delivery",
+        "active": true
+      },
+      {
+        "label": "Source inventory",
+        "active": true
+      },
+      {
+        "label": "X",
+        "active": true
+      },
+      {
+        "label": "Return inventory",
+        "active": true
+      },
+      {
+        "label": "X",
+        "active": true
+      },
+      {
+        "label": "Address",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "create-stock-keeper",
+    "screenClass": "com.simibubi.create.content.logistics.stockTicker.StockKeeperRequestScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:keeper",
+      "wait:25",
+      "create:look",
+      "create:caption:Exactly one Stock Ticker beside the stationary Create seat.",
+      "gif:start:create-stock-keeper",
+      "create:start",
+      "wait:130",
+      "create:verify",
+      "create:orders",
+      "wait:65",
+      "create:verify-orders",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [
+      {
+        "label": "Search Items",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "create-factory-settings",
+    "actualScreenAtFailure": "net.dochi.npc.client.NpcEditorScreen",
+    "screenClass": "net.dochi.npc.client.NpcEditorScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Back",
+      "Forward",
+      "DRM Editors",
+      "Create New Draft",
+      "Load NPC template",
+      "Save to NPC",
+      "Save As",
+      "Reset",
+      "Delete NPC",
+      "Load schedule",
+      "Save schedule",
+      "Identity",
+      "Appearance \u0026 Model",
+      "Part scales",
+      "Hitbox",
+      "Animation",
+      "Inventory \u0026 Equipment",
+      "Death drops",
+      "Schedule",
+      "DRM functions",
+      "Movement AI",
+      "Houses",
+      "Combat AI",
+      "Weapon \u0026 ammunition",
+      "Combat distances",
+      "Respawn",
+      "Relations",
+      "DNPC general schedule",
+      "Add time",
+      "Remove",
+      "Enable schedule",
+      "Expand / collapse actions",
+      "Select time and actions",
+      "Create day shift",
+      "+",
+      "Delete checked actions",
+      "✎",
+      "Finished output inventory",
+      "X",
+      "Finished items inventory",
+      "X",
+      "Material item",
+      "Material quantity",
+      "Add material",
+      "Finished item",
+      "Finished quantity per batch"
+    ],
+    "attemptedActions": [
+      "create:setup:factory",
+      "wait:25",
+      "create:editor",
+      "wait:25",
+      "create:work-page",
+      "create:caption:Prepared press: source, machine input, machine result, and final storage.",
+      "gif:start:create-factory-settings",
+      "wait:30",
+      "create:input:factory.material.count.0\u003d2",
+      "wait:35",
+      "create:input:factory.result_count\u003d2"
+    ],
+    "status": "failed",
+    "error": "java.lang.RuntimeException: perform"
+  },
+  {
+    "id": "create-factory-process",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:process",
+      "wait:25",
+      "create:look",
+      "create:caption:Two batches: supply the depot, wait for the native press, deliver the sheets.",
+      "gif:start:create-factory-process",
+      "create:start",
+      "wait:420",
+      "create:verify",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "create-material-order",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "create:setup:supply",
+      "wait:40",
+      "create:look",
+      "create:caption:Prepared network: request four iron ingots for the Workshop A address.",
+      "gif:start:create-material-order",
+      "create:start",
+      "wait:170",
+      "create:order-outcome",
+      "wait:65",
+      "create:verify",
+      "gif:stop",
+      "create:off"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

@@ -145,6 +145,7 @@ public final class GuideCapture {
         NeoForge.EVENT_BUS.addListener((ClientTickEvent.Post event)->tick());
         if(guideScenes!=null)try{call(guideScenes,"register",output);}catch(Exception error){throw new RuntimeException(error);}
         try{call(Class.forName("dochi.docs.capture.GuideTutorials"),"register",output);}catch(ClassNotFoundException ignored){}catch(Exception error){throw new RuntimeException(error);}
+        try{call(Class.forName("dochi.docs.capture.GuideCreate"),"register",output);}catch(ClassNotFoundException ignored){}catch(Exception error){throw new RuntimeException(error);}
     }
 
     private void tick(){
@@ -359,6 +360,11 @@ public final class GuideCapture {
     }
 
     private void perform(Minecraft mc,String action)throws Exception{
+        if(action.startsWith("create:")){
+            call(Class.forName("dochi.docs.capture.GuideCreate"),"perform",mc,action,output);current=mc.screen;
+            if(action.equals("create:editor")||action.equals("create:orders")){expectedScreen=action.equals("create:editor")?"NpcEditorScreen":"*";screenWait=0;}
+            return;
+        }
         if(action.startsWith("armor:")){call(Class.forName("dochi.docs.capture.GuideArmorDrops"),"perform",mc,action,output);current=mc.screen;return;}
         if(action.startsWith("tutorial:")){call(Class.forName("dochi.docs.capture.GuideTutorials"),"perform",mc,action,output);current=mc.screen;return;}
         if(action.startsWith("gif:")||action.startsWith("scene:")){

@@ -68,7 +68,7 @@ def main():
     output = run / "captures"
     for directory in [mods_dir, classes, output]:
         directory.mkdir(parents=True)
-    (runtime / "options.txt").write_text(f"onboardAccessibility:false\nlang:{args.locale}\npauseOnLostFocus:false\nguiScale:2\nrenderDistance:4\nsimulationDistance:5\n", encoding="utf-8")
+    (runtime / "options.txt").write_text(f"onboardAccessibility:false\nlang:{args.locale}\npauseOnLostFocus:false\nguiScale:2\nrenderDistance:4\nsimulationDistance:5\nsoundCategory_music:0.0\nsoundCategory_record:0.0\n", encoding="utf-8")
     seeded = []
     if args.seed_hud_from:
         if not args.seed_hud_from.replace("-", "").isalnum():
@@ -97,10 +97,10 @@ def main():
         receipts.append({"source": str(source), "sha256": hashlib.sha256(source.read_bytes()).hexdigest()})
     compile_paths = (CORE_PROJECT / "build/moddev/clientLegacyClasspath.txt").read_text().splitlines()
     compile_paths += [str(CORE_PROJECT / "build/moddev/artifacts/neoforge-21.1.216-merged.jar")]
-    compile_cp = os.pathsep.join(path for path in compile_paths if path)
+    compile_cp = os.pathsep.join(path for path in compile_paths + [str(mod) for mod in mods] if path)
     compile_result = subprocess.run([str(JAVA / "javac.exe"), "-encoding", "UTF-8", "-proc:none", "-cp", compile_cp,
                                      "-d", str(classes), *[str(ROOT / "scripts/guide-capture" / name) for name in
-                                         ("GuideCapture.java", "GuideScenes.java", "GuideTutorials.java", "GuideArmorDrops.java")]], capture_output=True, text=True)
+                                         ("GuideCapture.java", "GuideScenes.java", "GuideTutorials.java", "GuideArmorDrops.java", "GuideCreate.java")]], capture_output=True, text=True)
     (run / "compile.log").write_text(compile_result.stdout + compile_result.stderr, encoding="utf-8")
     if compile_result.returncode:
         raise RuntimeError(compile_result.stderr)
@@ -147,7 +147,14 @@ def main():
     (output / "environment.json").write_text(json.dumps({"minecraft": "1.21.1", "loader": "NeoForge " + version, "locale": args.locale, "actor": args.actor, "mods": receipts, "seededHudFiles": seeded}, indent=2) + "\n", encoding="utf-8")
     print(f"Starting isolated capture: {run}", flush=True)
     with (run / "client.log").open("w", encoding="utf-8") as log:
-        result = subprocess.run(command, cwd=runtime, stdout=log, stderr=subprocess.STDOUT, timeout=600, creationflags=subprocess.CREATE_NO_WINDOW)
+        result = subprocess.Popen(command, cwd=runtime, stdout=log, stderr=subprocess.STDOUT, creationflags=subprocess.CREATE_NO_WINDOW)
+        (run / "process.json").write_text(json.dumps({"pid": result.pid, "parentPid": os.getpid(), "runtime": str(runtime)}, indent=2) + "\n", encoding="utf-8")
+        try:
+            result.wait(timeout=600)
+        except subprocess.TimeoutExpired:
+            result.kill()
+            result.wait()
+            raise
     print(f"Client exit: {result.returncode}; completed: {(output / 'finished.txt').exists()}")
     if (output / "screens.json").exists():
         print(json.dumps(json.loads((output / "screens.json").read_text(encoding="utf-8")), ensure_ascii=True, indent=2))

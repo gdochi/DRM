@@ -65,9 +65,13 @@ Un NPC más antiguo **Legacy AI compatibility** mantiene su comportamiento anter
 
 El PNJ camina hacia el vehículo. Intentos predeterminados a 600 ticks, ajustables desde 20–2400. Un vehículo fuera del área de búsqueda o en otra dimensión no puede ser abordado.
 
-Los vehículos compatibles SuperbWarfare en objetivos más antiguos aceptan asientos 0–63. La función 26.3 utiliza vehículos de vainilla y no puede omitir un asiento del pasajero anterior; Las características del vehículo DW / DWE no están disponibles en 26.3.
+Los vehículos SuperbWarfare compatibles en destinos antiguos admiten asientos 0–63. El selector común de 26.3 usa vehículos vanilla y no omite un asiento anterior; los vehículos DW/DWE no están disponibles en 26.3. En entornos Create compatibles, **Create seat** se asigna aparte como bloque.
 
 El desmontaje espera hasta que el vehículo se detenga y haya una salida segura disponible. Configure la conducción, las patrullas y las armas en DWE o en la configuración del vehículo.
+
+## Horarios de trabajos Create
+
+En **+ → Create** del turno, elige manivela, válvula, pulido, paquetes, atención, procesamiento, pedidos, control o inspección. Sigue [Configuración Create y vídeos](#dochi-npc-core/npc-core-create-start) para seleccionar bloques y guardar. Los asientos usan **Ride vehicle → Create seat**; el mostrador usa **Stock Ticker Attendance**.
 
 ## Horario de la tienda
 

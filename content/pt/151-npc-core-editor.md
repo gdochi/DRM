@@ -56,6 +56,10 @@ Neste exemplo em jogo, um NPC com o trabalho de transporte já configurado retir
 
 ![Um NPC transporta trigo entre dois baús e retorna à entrada.](assets/media/guides/runtime-videos-20261106/npc-haul.mp4 "DNPC 0.1.3 / NeoForge 1.21.1, interface em inglês. Resultado de um trabalho salvo; a configuração no editor está descrita acima.")
 
+## Trabalhos de integração Create
+
+Veja vídeos detalhados de [configuração, manivelas, válvulas e assentos](#dochi-npc-core/npc-core-create-start), [polimento, encomendas e balcões](#dochi-npc-core/npc-core-create-logistics), [processamento e pedidos](#dochi-npc-core/npc-core-create-factory) e [controle e inspeção](#dochi-npc-core/npc-core-create-control). Escolha a ação Create, atribua dispositivos e inventários reais e use Save to NPC.
+
 ## Faça um guia estacionário
 
 ![DNPC's Movement AI tela, com Lock position e Lock rotation interruptores perto do canto inferior direito.](assets/media/guides/dnpc-013-neo1211/dnpc-movement.png "DNPC 0.1.3 / NeoForge 1.21.1, IU Inglês. Selecione Movement AI à esquerda. Lock position corrige a localização do NPC; Lock rotation corrige sua direção de frente.")

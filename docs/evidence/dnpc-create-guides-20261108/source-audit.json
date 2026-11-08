@@ -1,0 +1,59 @@
+{
+  "target": "NeoForge 1.21.1",
+  "sourceFiles": [
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\[NEOFORGE] Dochi NPC\\src\\main\\java\\net\\dochi\\npc\\NpcDayCycle.java",
+      "sha256": "c379d511818853300de68ac923b975428df63593a0c6ff0fc2e08c16f9e0177c"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\[NEOFORGE] Dochi NPC\\src\\main\\java\\net\\dochi\\npc\\NpcCreateJobsController.java",
+      "sha256": "8f3340100baf6f7ff4770f7eda84f7154fa1347df27a74743e307e7643d5918f"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\[NEOFORGE] Dochi NPC\\src\\main\\java\\net\\dochi\\npc\\NpcCreateFactoryController.java",
+      "sha256": "87e9fc95a7c8dfa731631de54da493cda8aba70409274403832d10ac30f8842b"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\[NEOFORGE] Dochi NPC\\src\\main\\java\\net\\dochi\\npc\\NpcCreateAutomation.java",
+      "sha256": "4d5df0b8bbb3348cb23e6294202bd27220850be1db5d3baccce07bb5a3e42bee"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\[NEOFORGE] Dochi NPC\\src\\main\\java\\net\\dochi\\npc\\NpcCreateFactoryAccess.java",
+      "sha256": "e9f773e8a7f2b36da3644fb3562eee8e87fc2a7e86660c242f140e19ecb90b7c"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\[NEOFORGE] Dochi NPC\\src\\main\\java\\net\\dochi\\npc\\NpcKineticWorkController.java",
+      "sha256": "f0ccb7c4c1cdd19f0cf3266e5741638242b5bad84ad0427712ddde84f8c17b2e"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\[NEOFORGE] Dochi NPC\\src\\main\\java\\net\\dochi\\npc\\client\\NpcCreateJobForm.java",
+      "sha256": "9d34d250970f1212e9e587c169a44936482259ae8f8f7df2a81209ce8d96ccad"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\[NEOFORGE] Dochi NPC\\src\\main\\java\\net\\dochi\\npc\\client\\NpcCreateFactoryForm.java",
+      "sha256": "bae72e8ebc6436597fc911e1017edb5ed50230efe1b98b52357d14758f5f2858"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\[NEOFORGE] Dochi NPC\\src\\main\\java\\net\\dochi\\npc\\client\\NpcKineticWorkForm.java",
+      "sha256": "36de47b9c2634760dad95b071b88d989247ac1ba1fd43425696c0bb5180cd016"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\[NEOFORGE] Dochi NPC\\src\\main\\java\\net\\dochi\\npc\\client\\NpcCookingBlockPicker.java",
+      "sha256": "eabca7b3641afb5b9397a4158c6f532e4e7e5a9a6eefaa1c4dd80ace654febca"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\shared\\java\\net\\dochi\\npc\\core\\NpcCreateJobSettings.java",
+      "sha256": "c2b531503dc519b65e78afa8a6ec0fc13ef73cf7cb3bd44926741d3d382d9904"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\shared\\java\\net\\dochi\\npc\\core\\NpcCreateFactorySettings.java",
+      "sha256": "387ab6e774c21597a8dbbd6c016822542ab6f0777e4a71c1c6a5d3f744aed7ee"
+    },
+    {
+      "path": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\shared\\java\\net\\dochi\\npc\\core\\NpcKineticWorkSettings.java",
+      "sha256": "2dfcaddca7b7b2e179b06fc43d89cf9b57499dd8ae1984418918bc54cbb15ab6"
+    }
+  ],
+  "crossTargetExecutionReference": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\verification\\create-factory-regression-2026-11-07\\results.json",
+  "productionArtifact": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s Npc Core\\jar\\dochi_npc_core-0.1.3-neoforge-1.21.1.jar"
+}
