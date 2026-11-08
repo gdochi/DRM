@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "ko: latest selects 0.1.6",
+    "en: latest selects 0.1.6",
+    "pt: latest selects 0.1.6",
+    "es: latest selects 0.1.6",
+    "fr: latest selects 0.1.6",
+    "ru: latest selects 0.1.6",
+    "zh: latest selects 0.1.6",
+    "ja: latest selects 0.1.6"
+  ],
+  "exactAuthorSource": true,
+  "noUnverifiedDownloads": true,
+  "errors": []
+}
