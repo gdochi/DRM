@@ -535,21 +535,6 @@
       return `<article class="track-card">${body}${actions}</article>`;
     }).join("");
 
-    const groups = [
-      { id: "standalone", title: t("standaloneMods") },
-      { id: "addon", title: t("addons") }
-    ];
-    const sections = groups.map((group) => {
-      const groupEntries = entries.filter((meta) => (meta.type || "standalone") === group.id);
-      if (!groupEntries.length) return "";
-      const headingId = `home-${group.id}-title`;
-      return `
-        <section class="track-section" aria-labelledby="${headingId}">
-          <h2 id="${headingId}" class="track-section-title">${escapeHtml(group.title)}</h2>
-          <div class="track-list">${renderCards(groupEntries)}</div>
-        </section>
-      `;
-    }).join("");
 
     return `
       <section class="home-shell">
@@ -559,7 +544,7 @@
           ${renderHomeImage()}
         </header>
         ${renderHomeTasks()}
-        <div class="track-sections">${sections}</div>
+        <div class="track-list">${renderCards(entries)}</div>
       </section>
     `;
   }
