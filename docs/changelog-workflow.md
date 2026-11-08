@@ -31,6 +31,8 @@
 
 ## 확인과 추가
 
+- 2026-11-08 사용자 지시로 DNPC 0.1.3도 `[LOG] Change Log/DNPC/0.1.3.md` 원문을 작성자 기록으로 게시한다. Forge 1.20.1, Fabric·NeoForge 1.21.1/26.3의 5개 환경을 구분하고, Create 작업 등 환경별 변경은 원문의 적용 범위에만 표시한다. 기존 0.1.2 기록과 공개 파일 확인 목록은 보존한다.
+
 1. 모드의 CurseForge 파일 목록에서 버전과 파일 ID를 확인한다. 공개 CFWidget 인덱스 `https://api.cfwidget.com/<projectId>`는 목록을 조사하는 보조 수단이다.
 2. CurseForge 공개 파일 정보 `https://www.curseforge.com/api/v1/mods/<projectId>/files/<fileId>`와 게시된 변경 기록 `.../change-log`를 읽는다. 파일명, 버전, 로더, 게임 버전, 업로드 시각, 공개 상태를 대조한다.
 3. 검증 결과를 `content/changelogs/published.json`에 추가한다. 기존 공개 버전과 파일 ID는 보존한다. 조회할 수 없는 버전은 확인될 때까지 추가하지 않는다.

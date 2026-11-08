@@ -365,8 +365,9 @@ svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.9; fill: 
 .changelog-options a[aria-current] { color: var(--brand); border-color: var(--brand); background: var(--brand-soft); }
 .changelog-layout { display: grid; grid-template-columns: 160px minmax(0,1fr); gap: 24px; align-items: start; }
 .changelog-versions { position: sticky; top: calc(var(--topbar) + 20px); min-width: 0; }
-.changelog-versions nav { display: grid; gap: 4px; max-height: calc(100dvh - var(--topbar) - 90px); overflow: auto; }
-.changelog-versions a { padding: 11px 14px; color: var(--muted); border-left: 3px solid transparent; border-radius: 0 5px 5px 0; font-size: .9rem; font-variant-numeric: tabular-nums; }
+/* Eight 42px version rows and seven 4px gaps; additional versions scroll. */
+.changelog-versions nav { display: grid; grid-auto-rows: max-content; gap: 4px; max-height: min(364px, calc(100dvh - var(--topbar) - 90px)); overflow-y: auto; overflow-x: hidden; overscroll-behavior-y: contain; scrollbar-width: thin; scrollbar-color: var(--line-strong) var(--surface); }
+.changelog-versions a { padding: 11px 14px; color: var(--muted); border-left: 3px solid transparent; border-radius: 0 5px 5px 0; font-size: .9rem; line-height: 20px; font-variant-numeric: tabular-nums; }
 .changelog-versions a[aria-current] { color: var(--brand); border-color: var(--brand); background: var(--brand-soft); font-weight: 750; }
 .changelog-versions a:hover, .changelog-options a:hover { background: var(--surface-3); }
 .changelog-release { min-width: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); overflow: hidden; }
