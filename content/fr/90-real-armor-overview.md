@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: Aperçu général
 section: overview
 status: Stable
-version: 0.1.4
+version: 0.1.5
 audience: Joueurs, opérateurs de serveur et créateurs de modpack
 tags:
   - armor
@@ -22,6 +22,8 @@ translationMethod: assisted
 Real Armor utilise l'armure équipée, la ténacité et les enchantements de protection pour réduire les dégâts des PNJ. Vous pouvez également activer la perte de durabilité ou utiliser uniquement l'armure couvrant la région touchée.
 
 Il prend en charge DNPC, Easy NPC et CustomNPCs. DRM est facultatif. CustomNPCs n'est pas disponible sur 26.3.
+
+Dans la version 0.1.5, configurez dans la GUI les drops des armures qui perdent réellement de la durabilité. Consultez la [configuration des drops et la vidéo](#dochi-real-armor/dochi-real-armor-drops) pour les probabilités, quantités et l'enregistrement puis l'application des ensembles.
 
 ## Commencez
 

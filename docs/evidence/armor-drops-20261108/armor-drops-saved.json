@@ -1,0 +1,36 @@
+{
+  "stage": "saved",
+  "enabled": false,
+  "serverRevision": 1,
+  "preset": {
+    "format": "dochi.real_armor.drops.v1",
+    "name": "iron_salvage",
+    "enabled": true,
+    "rules": [
+      {
+        "armor": "minecraft:iron_chestplate",
+        "enabled": true,
+        "spread": 0.16,
+        "lift": 0.22,
+        "drops": [
+          {
+            "enabled": true,
+            "stack": {
+              "id": "minecraft:iron_nugget",
+              "count": 1
+            },
+            "chance": 100.0,
+            "min": 1.0,
+            "max": 3.0
+          }
+        ]
+      }
+    ]
+  },
+  "active": {
+    "format": "dochi.real_armor.drops.v1",
+    "name": "armor_drops",
+    "enabled": false,
+    "rules": []
+  }
+}

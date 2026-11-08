@@ -359,6 +359,7 @@ public final class GuideCapture {
     }
 
     private void perform(Minecraft mc,String action)throws Exception{
+        if(action.startsWith("armor:")){call(Class.forName("dochi.docs.capture.GuideArmorDrops"),"perform",mc,action,output);current=mc.screen;return;}
         if(action.startsWith("tutorial:")){call(Class.forName("dochi.docs.capture.GuideTutorials"),"perform",mc,action,output);current=mc.screen;return;}
         if(action.startsWith("gif:")||action.startsWith("scene:")){
             if(guideScenes==null)throw new IllegalStateException("Animated guide fixture is not installed for this runtime");

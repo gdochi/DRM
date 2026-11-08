@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: 설치와 설정
 section: setup
 status: Stable
-version: 0.1.4
+version: 0.1.5
 audience: 플레이어와 서버 운영자
 tags:
   - installation
@@ -17,7 +17,7 @@ tags:
 
 ## 설치
 
-Real Armor 0.1.4의 Minecraft·로더에 맞는 파일을 서버와 클라이언트에 넣습니다.
+Real Armor 0.1.5의 Minecraft·로더에 맞는 파일을 서버와 클라이언트에 넣습니다.
 
 | Minecraft | 로더 | Java |
 | --- | --- | --- |
@@ -44,6 +44,8 @@ Fabric에는 Fabric API도 설치합니다. NPC는 DNPC·Easy NPC 또는 기존 
 DRM의 공용 설정에서는 같은 옵션을 한 화면의 두 열로 보여 줍니다.
 
 ![DRM 공용 설정에서 Dochi Real Armor를 고른 화면. 왼쪽 열은 방어 규칙, 오른쪽 열은 NPC 연동입니다.](assets/media/guides/armor-014-neo1211/shared-armor.png "Mods Config에서 Dochi Real Armor를 선택합니다. 오른쪽 NPC 연동만 켜고 왼쪽 전체 방어 계산을 꺼 두지 않았는지도 확인합니다.")
+
+0.1.5에는 **Armor Drop Editor**가 추가됐습니다. [아이템 드롭 설정과 영상](#dochi-real-armor/dochi-real-armor-drops)에서 갑옷별 드롭을 만들고 **Save As → Save → Apply** 순서로 활성화하세요. 위 0.1.4 화면은 방어 계산 옵션을 설명하는 이전 촬영본입니다.
 
 ## 먼저 정할 것
 

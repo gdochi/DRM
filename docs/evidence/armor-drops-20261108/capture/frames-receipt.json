@@ -1,0 +1,5882 @@
+{
+  "source": "build/task/guide-capture/armor-drops-neo1211-en-01/captures/armor-drop-editor-frames.json",
+  "frames": 828,
+  "selected": [
+    {
+      "frame": 0,
+      "file": "00000.png",
+      "elapsedMs": 1.6858,
+      "screen": "ArmorDropEditorScreen"
+    },
+    {
+      "frame": 75,
+      "file": "00075.png",
+      "elapsedMs": 3787.694,
+      "screen": "EditorItemPickerScreen"
+    },
+    {
+      "frame": 150,
+      "file": "00150.png",
+      "elapsedMs": 7532.597,
+      "screen": "EditorItemPickerScreen"
+    },
+    {
+      "frame": 226,
+      "file": "00226.png",
+      "elapsedMs": 11334.1355,
+      "screen": "ArmorDropEditorScreen"
+    },
+    {
+      "frame": 301,
+      "file": "00301.png",
+      "elapsedMs": 15081.6495,
+      "screen": "EditorItemPickerScreen"
+    },
+    {
+      "frame": 376,
+      "file": "00376.png",
+      "elapsedMs": 18824.3783,
+      "screen": "ArmorDropEditorScreen"
+    },
+    {
+      "frame": 451,
+      "file": "00451.png",
+      "elapsedMs": 22581.5072,
+      "screen": "ArmorDropEditorScreen"
+    },
+    {
+      "frame": 526,
+      "file": "00526.png",
+      "elapsedMs": 26339.7803,
+      "screen": "ArmorDropEditorScreen"
+    },
+    {
+      "frame": 601,
+      "file": "00601.png",
+      "elapsedMs": 30081.0304,
+      "screen": "ArmorDropEditorScreen"
+    },
+    {
+      "frame": 677,
+      "file": "00677.png",
+      "elapsedMs": 33882.96,
+      "screen": "ArmorDropEditorScreen"
+    },
+    {
+      "frame": 752,
+      "file": "00752.png",
+      "elapsedMs": 37633.8133,
+      "screen": "ArmorDropEditorScreen"
+    },
+    {
+      "frame": 827,
+      "file": "00827.png",
+      "elapsedMs": 41380.0841,
+      "screen": "ArmorDropEditorScreen"
+    }
+  ],
+  "durationMs": 41428.3983,
+  "intervalMs": {
+    "median": 50.125,
+    "p95": 51.45259999999689,
+    "max": 115.56730000000016
+  },
+  "originalFrames": [
+    {
+      "file": "00000.png",
+      "elapsedMs": 1.6858,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49644,
+      "sha256": "470f05eb60a4a9e1177f56eeb5c108b990ebe0a0c9db747f78d541c2115a0c5e"
+    },
+    {
+      "file": "00001.png",
+      "elapsedMs": 62.3153,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49654,
+      "sha256": "7c0803ef8a66591a981ed5be68c8466bed19ad528c96f84f1ac564178482392e"
+    },
+    {
+      "file": "00002.png",
+      "elapsedMs": 112.2495,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49734,
+      "sha256": "545b11244b297b0dec4e5773d780561b390030c6ca16046249ac146d3978dd57"
+    },
+    {
+      "file": "00003.png",
+      "elapsedMs": 162.4197,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49672,
+      "sha256": "bd2ab98f59876da4fdfcb1c312a15bf3bc1d9c7ba493d3350af81b3df606cd7d"
+    },
+    {
+      "file": "00004.png",
+      "elapsedMs": 212.3407,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49706,
+      "sha256": "34948214d01b34d15e59f462ab6f4691fbd0d376da3704bbbc2a39b5544845ff"
+    },
+    {
+      "file": "00005.png",
+      "elapsedMs": 262.4683,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49738,
+      "sha256": "a24c3d1d14fcc11e399a944b29f561ebf45a5819df29bd75193fa916a734ebe4"
+    },
+    {
+      "file": "00006.png",
+      "elapsedMs": 312.6028,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49617,
+      "sha256": "6879d89d3fff8352364acc471cb6cf3241b7c2740f1431cfc61f0d10c34bed8c"
+    },
+    {
+      "file": "00007.png",
+      "elapsedMs": 362.5473,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49678,
+      "sha256": "354d1ba39805d9e25038e7f55425a00ed1669e5c20c568e6438aa955018e0941"
+    },
+    {
+      "file": "00008.png",
+      "elapsedMs": 412.75,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49795,
+      "sha256": "877ed212a2a72527a384db504a70cd923945e8a7f5211860d8bcb9537426461c"
+    },
+    {
+      "file": "00009.png",
+      "elapsedMs": 462.6352,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49916,
+      "sha256": "2f749c543aea7b7b899df572e1e66192c8a0ba801d2902059d2dfd861cd2e22e"
+    },
+    {
+      "file": "00010.png",
+      "elapsedMs": 512.6864,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 50006,
+      "sha256": "51793b5d29d023084f3fe2be87144be80e3065c5e69e8428f488c730c8c1bcc2"
+    },
+    {
+      "file": "00011.png",
+      "elapsedMs": 562.9972,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49998,
+      "sha256": "2ed330c67307c35dbf6c0f5330319142746bbed8333087fa8984ce373b491fd0"
+    },
+    {
+      "file": "00012.png",
+      "elapsedMs": 613.8039,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49828,
+      "sha256": "f82dbf19f6864721cdfeb097bd130d0bf165b893da16f43bf308f4f4612d03cc"
+    },
+    {
+      "file": "00013.png",
+      "elapsedMs": 664.2065,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49824,
+      "sha256": "c00eabe1374ae903224c52eec5babae44c4e55b49cab91c62a8e7e46bd2ff581"
+    },
+    {
+      "file": "00014.png",
+      "elapsedMs": 715.4865,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49676,
+      "sha256": "c9ec0beb091a8d782322cff5d695d7f1cb18341baf50b56779dd1dcf7a24afac"
+    },
+    {
+      "file": "00015.png",
+      "elapsedMs": 766.4158,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49730,
+      "sha256": "b36d082a8158d222cd1231973dd39df485490b80105f45757a86eeca193c7d93"
+    },
+    {
+      "file": "00016.png",
+      "elapsedMs": 800.9664,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49761,
+      "sha256": "5255eba617d6769539e4c6fdd3f98b628412112f7dda2c850cc9f37f3354ebcb"
+    },
+    {
+      "file": "00017.png",
+      "elapsedMs": 852.0727,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49714,
+      "sha256": "68cbdb7ddd4a0ddbd1cbb97b9ece066924e278743f16bab0444372b22cb49239"
+    },
+    {
+      "file": "00018.png",
+      "elapsedMs": 901.6017,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49727,
+      "sha256": "3c98d85e7cef3b74a355baec36b6fdf1c9f089061d4ab94fe51607bc113943c3"
+    },
+    {
+      "file": "00019.png",
+      "elapsedMs": 952.253,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49616,
+      "sha256": "1b31df1c8d0b4b8ac7816cb20bc94f1ea8ac9d9452236c20e3ddb9205b86013a"
+    },
+    {
+      "file": "00020.png",
+      "elapsedMs": 1001.114,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49573,
+      "sha256": "d8fd3148c64e4d6889357e66820897a655a86584bc50fff7b1bc623cfec08a11"
+    },
+    {
+      "file": "00021.png",
+      "elapsedMs": 1051.0184,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49580,
+      "sha256": "3bde76304144c6958bb54dbaadde29f65eb16d5d231133bcc5097b162a673a4a"
+    },
+    {
+      "file": "00022.png",
+      "elapsedMs": 1101.3426,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49606,
+      "sha256": "09cd3d47aa945e56ce14267e9a879b1923510d43ea0a254207db043d8459efab"
+    },
+    {
+      "file": "00023.png",
+      "elapsedMs": 1167.3898,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49519,
+      "sha256": "c14cef2e76e9882a304325aa031cbc720182734267cdd46b7a8b4874e536f771"
+    },
+    {
+      "file": "00024.png",
+      "elapsedMs": 1205.6483,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49407,
+      "sha256": "32347cf2de3d5cbb57e0bcd01718e943df943428cb2509d4e42496a07ee16951"
+    },
+    {
+      "file": "00025.png",
+      "elapsedMs": 1255.778,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49287,
+      "sha256": "8926bd7890319bfbf1e1889bff3f44f1cff36dbbfca6fd263cdabfc79b5200e4"
+    },
+    {
+      "file": "00026.png",
+      "elapsedMs": 1306.3531,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49344,
+      "sha256": "a798543bee4bbee2544d0e3b3dd497f37225b1cbf3b15d42ce6ab89a7fc27852"
+    },
+    {
+      "file": "00027.png",
+      "elapsedMs": 1356.2371,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49445,
+      "sha256": "46e6028dc5dfa55590bc32f3aceaa6d1f01ba73ca3554446187a92b9b2bbb3c8"
+    },
+    {
+      "file": "00028.png",
+      "elapsedMs": 1406.9509,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49457,
+      "sha256": "7692defd7431c09c5c0737299ee7b2610757fd226547f99bb14b4faf25aa532c"
+    },
+    {
+      "file": "00029.png",
+      "elapsedMs": 1456.3793,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49527,
+      "sha256": "703843fb3219775917536a2b582f4082e143235af7ec6ee4fe2126d9034a28b9"
+    },
+    {
+      "file": "00030.png",
+      "elapsedMs": 1506.6873,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49536,
+      "sha256": "18abf258b47dff45cb957eee118bb39c557c0865166261a3da0cd5c14dcd4d1b"
+    },
+    {
+      "file": "00031.png",
+      "elapsedMs": 1556.7316,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49567,
+      "sha256": "b643d18bb7b9c0c366114c5c43929ea170992386e942a6b35338812c66498e22"
+    },
+    {
+      "file": "00032.png",
+      "elapsedMs": 1606.8206,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49583,
+      "sha256": "91fd50e1c6ba6ec3e8f0b3172138b25e80d3970f2b536a0f7114a4139414513c"
+    },
+    {
+      "file": "00033.png",
+      "elapsedMs": 1656.9637,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49659,
+      "sha256": "e40409906029b18726132b5e7e3aa759b7bc741ee7531ad20f47fae58b5c40cc"
+    },
+    {
+      "file": "00034.png",
+      "elapsedMs": 1707.2429,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49661,
+      "sha256": "39248a65c90d3ca6469d377510f157f73f8f7fdadb9399301ad77c290680ce37"
+    },
+    {
+      "file": "00035.png",
+      "elapsedMs": 1757.5301,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49657,
+      "sha256": "8e12f1c6a7045b46aaab3842f70892c07f88e13f9d09c7548040c93897e311f4"
+    },
+    {
+      "file": "00036.png",
+      "elapsedMs": 1807.8506,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49714,
+      "sha256": "0be4c54cd09db8f6fcbf4faf72d95334836811a96810b97d53e53ec306b9ea38"
+    },
+    {
+      "file": "00037.png",
+      "elapsedMs": 1858.0423,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49626,
+      "sha256": "973a9df6b941bbde13d14294ee0af59b778708b63ab5c58399bbef2767eb2680"
+    },
+    {
+      "file": "00038.png",
+      "elapsedMs": 1908.0075,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49473,
+      "sha256": "c4165f7f843eeb0b7b8010e258cdb3427ca53d39a2d685165f525be00f0797f5"
+    },
+    {
+      "file": "00039.png",
+      "elapsedMs": 1958.1025,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49382,
+      "sha256": "ec0b9bfc3a5c38f6bcbb43549bc573474e84403ddd9bcc07576edc4136f2c4fd"
+    },
+    {
+      "file": "00040.png",
+      "elapsedMs": 2008.449,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49428,
+      "sha256": "133afa53430ee6910c5386e87db9f880e0610785838862da00c00e3c4158192b"
+    },
+    {
+      "file": "00041.png",
+      "elapsedMs": 2058.4445,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49411,
+      "sha256": "e964c525057174cb56fdf605ed6aaa23962ec6963df1bd2f7af3a9be36d0d293"
+    },
+    {
+      "file": "00042.png",
+      "elapsedMs": 2108.5673,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49469,
+      "sha256": "29c722fb9bef52cdd9c27f37f083117a887cc8a777673c9f7a0e6ae39991c259"
+    },
+    {
+      "file": "00043.png",
+      "elapsedMs": 2158.4873,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49556,
+      "sha256": "3a6eec36afa080a01ecac6b04fed754d2e30b83db23baa58b7b5b66f2e116064"
+    },
+    {
+      "file": "00044.png",
+      "elapsedMs": 2208.3725,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49703,
+      "sha256": "f6a9caedd7f33b638033d0a87f36983acc3b46fe0e40a212ec82e8256f88c566"
+    },
+    {
+      "file": "00045.png",
+      "elapsedMs": 2258.6117,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49721,
+      "sha256": "c863f084bbb6cee58412f88c7dce34e38ef4587363b6d4a3e4c09273d4ff8e19"
+    },
+    {
+      "file": "00046.png",
+      "elapsedMs": 2308.408,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49666,
+      "sha256": "cc7a54b8aca1ee110a1237b02a822b83702befbb41cc9fe313c305155bca4759"
+    },
+    {
+      "file": "00047.png",
+      "elapsedMs": 2358.5849,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 49718,
+      "sha256": "523b806a18c5e2bcf8d117726834dbdce1f80f6abb4756dc972f63c76592e589"
+    },
+    {
+      "file": "00048.png",
+      "elapsedMs": 2474.1522,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57842,
+      "sha256": "a3e976dde6bbba2b003f85200ea3fd1c819f61c128fcdb46c0e270903150fba3"
+    },
+    {
+      "file": "00049.png",
+      "elapsedMs": 2485.528,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58516,
+      "sha256": "206e78677e5436c7b01ee591dc3f3e7229785643fa74a03551d4c383468c2b3f"
+    },
+    {
+      "file": "00050.png",
+      "elapsedMs": 2530.7909,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58479,
+      "sha256": "248dc4714a4c8bc7f6cb7ec9fa265069897e4dd023a0ba05f1d74a615de9b76e"
+    },
+    {
+      "file": "00051.png",
+      "elapsedMs": 2581.35,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 59261,
+      "sha256": "dae6195a2b7c6cc3178153a55e9011dcfa2d4843762eb27a6a31b2949719218a"
+    },
+    {
+      "file": "00052.png",
+      "elapsedMs": 2631.5771,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 60471,
+      "sha256": "26a6efa44620c21f16e125c5a4eb9c3cfae9f3ecac3bc6e34a53f21d1afee165"
+    },
+    {
+      "file": "00053.png",
+      "elapsedMs": 2683.011,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 61551,
+      "sha256": "755c958652407a913578d28696368fdd9b69152e3787222ea829047f876558d6"
+    },
+    {
+      "file": "00054.png",
+      "elapsedMs": 2733.6407,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 62507,
+      "sha256": "0ec9fef1c539a4337d5877a134f66bc07687f39fede5b653c09c9b9f462a2c7a"
+    },
+    {
+      "file": "00055.png",
+      "elapsedMs": 2783.6526,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 62488,
+      "sha256": "8606d9266ee84904d402ed0331af857eabd9ecaa5dc3a56557922aadbb0c0423"
+    },
+    {
+      "file": "00056.png",
+      "elapsedMs": 2834.0543,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 62415,
+      "sha256": "3f03829af8600eb9f04d47ba61de54565b4ff6c88a578cfca4d63199d3099250"
+    },
+    {
+      "file": "00057.png",
+      "elapsedMs": 2884.4003,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 62672,
+      "sha256": "70b317ca374fabecfbec290654873011239e2d410802b37b9fb6bf085a235d05"
+    },
+    {
+      "file": "00058.png",
+      "elapsedMs": 2934.7906,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63090,
+      "sha256": "c4c0a7ff20ddc1719ac5463954ddb2bea1c1659d30479172efcb5b477594d06e"
+    },
+    {
+      "file": "00059.png",
+      "elapsedMs": 2984.8743,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63114,
+      "sha256": "1efb8ccb1353645a4e0886cbc2d2f506a508f8e4e3b1d234cf5258cdad25568d"
+    },
+    {
+      "file": "00060.png",
+      "elapsedMs": 3034.498,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63093,
+      "sha256": "da6a676f0860575b657c99c03423a7ccdf65f2e2344d01b06ab4a27726e771ff"
+    },
+    {
+      "file": "00061.png",
+      "elapsedMs": 3084.896,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63117,
+      "sha256": "e6960426064346fe2c43695da83a5e14375dc03caf3e9b1000d39842a753f609"
+    },
+    {
+      "file": "00062.png",
+      "elapsedMs": 3135.2686,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63195,
+      "sha256": "eea32b8ea41ca34f785c2b383e9470b945ad7b6375c4dcd7ab4993d5700d63e4"
+    },
+    {
+      "file": "00063.png",
+      "elapsedMs": 3185.6774,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63138,
+      "sha256": "d3049a2bf11f89646f67a8144b18eb6df995d98bb642885c777900f4affb98c9"
+    },
+    {
+      "file": "00064.png",
+      "elapsedMs": 3234.9882,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63122,
+      "sha256": "593df0676675119902d7f023bc70b346b7bb33c31ee3355dcc9c1c4f89cbb3c3"
+    },
+    {
+      "file": "00065.png",
+      "elapsedMs": 3285.8205,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63045,
+      "sha256": "f16d4bf48b291c42f589442e2bca37177d2550cd4ba17cb6673a739766326f73"
+    },
+    {
+      "file": "00066.png",
+      "elapsedMs": 3336.7072,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 62992,
+      "sha256": "38aeb45cb4f91c8c8db3143a1f85af5355433565787fbb121d778fd92ded3250"
+    },
+    {
+      "file": "00067.png",
+      "elapsedMs": 3386.8567,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 62987,
+      "sha256": "8a09c6776c63e07dad877bae0696d05c3487dea20d018dfd7dc82a9e6ec9c745"
+    },
+    {
+      "file": "00068.png",
+      "elapsedMs": 3436.9742,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 62949,
+      "sha256": "43b1c37fb605bfa86bd7093fe9be75f75e48897294d3d417ab530edc181c9679"
+    },
+    {
+      "file": "00069.png",
+      "elapsedMs": 3486.7656,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 62985,
+      "sha256": "ec4a538b6dd1cb91c093237003963aa74c68b6643438a3188f7aca9f37d7a668"
+    },
+    {
+      "file": "00070.png",
+      "elapsedMs": 3539.5799,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63067,
+      "sha256": "768550e17bea066f0191b7024ae3fa83621a11e95dc7c7b0231d32c2b3c72afe"
+    },
+    {
+      "file": "00071.png",
+      "elapsedMs": 3588.0421,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63178,
+      "sha256": "dd5f0316be25ff0b268c70c34a4ef0dfbef61bc2e09aac6df490733b28ada9d1"
+    },
+    {
+      "file": "00072.png",
+      "elapsedMs": 3637.2457,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63143,
+      "sha256": "fbf9a34ff9ac899b3f63ff1b4a586341299fd9e772129b4604a799f36f677346"
+    },
+    {
+      "file": "00073.png",
+      "elapsedMs": 3687.4403,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63229,
+      "sha256": "cd7e1452c7f639674f7cb62e09aa2a1345f0a23bf4114cb6e1303667ab5cb237"
+    },
+    {
+      "file": "00074.png",
+      "elapsedMs": 3738.2159,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63193,
+      "sha256": "17ead2e100ce9ba036f7f34167fbc4de96bf236c1a4bcc1e11be37c5bf1b7a66"
+    },
+    {
+      "file": "00075.png",
+      "elapsedMs": 3787.694,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63155,
+      "sha256": "1fc6d044633ec9006740fdf294e318eae039d63a604a96603b33d4047124c2a9"
+    },
+    {
+      "file": "00076.png",
+      "elapsedMs": 3841.6407,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63229,
+      "sha256": "87181f378e1806fbd34b16f1aed38d782c88781f9cad91223a0cd66790a9bf94"
+    },
+    {
+      "file": "00077.png",
+      "elapsedMs": 3908.2874,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63229,
+      "sha256": "87181f378e1806fbd34b16f1aed38d782c88781f9cad91223a0cd66790a9bf94"
+    },
+    {
+      "file": "00078.png",
+      "elapsedMs": 3933.0503,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63200,
+      "sha256": "b276d39e934e55f269113d749f184612804730621e557c62f5d6c8439e3f49e6"
+    },
+    {
+      "file": "00079.png",
+      "elapsedMs": 3978.7277,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63236,
+      "sha256": "019ca235ae0097b1ae9ce48f80854d6a7869c2eac80ae1b40a926250ccb6a001"
+    },
+    {
+      "file": "00080.png",
+      "elapsedMs": 4031.4102,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63298,
+      "sha256": "cb415e1234616d46a94070e819c2161defea1a5f2d39adec2182f4177704bc2b"
+    },
+    {
+      "file": "00081.png",
+      "elapsedMs": 4082.1944,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63345,
+      "sha256": "d29d5a14a3ed361af577c5e6d1510df4008dbc7a26928d4d95f5979acf5d91d7"
+    },
+    {
+      "file": "00082.png",
+      "elapsedMs": 4132.5099,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63338,
+      "sha256": "408889adf6d68648a13f3344fe13633473012c6b02f6257d3591c78c67ea2f8a"
+    },
+    {
+      "file": "00083.png",
+      "elapsedMs": 4187.8555,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63408,
+      "sha256": "a8b854e73f26031b1d0920c05ad64e56b918252613e04536b5fbfc3ea428be2e"
+    },
+    {
+      "file": "00084.png",
+      "elapsedMs": 4232.9993,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63506,
+      "sha256": "a649f712fa236633946765213c11fd924da93df7dc0671c98471aa4b9ebb913d"
+    },
+    {
+      "file": "00085.png",
+      "elapsedMs": 4282.6675,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63569,
+      "sha256": "eb886dd36a366223fa90b8f6eeac8684401eaf6664698d9399682515f0e87b38"
+    },
+    {
+      "file": "00086.png",
+      "elapsedMs": 4334.0535,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63518,
+      "sha256": "4f2fdf53cf0c799ab3496f4252400b4574f7ee23de1e1e7ff3e0534c028e0894"
+    },
+    {
+      "file": "00087.png",
+      "elapsedMs": 4384.2155,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63520,
+      "sha256": "fce8680f095b70b9ad292720004a8585bf27d333c760c97492ac32af47ad6027"
+    },
+    {
+      "file": "00088.png",
+      "elapsedMs": 4433.8145,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63534,
+      "sha256": "4ab80f43a83f3ed97da5f9798b01c51e1c810296015b5f5d52cb2f6f3a055624"
+    },
+    {
+      "file": "00089.png",
+      "elapsedMs": 4484.2829,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63495,
+      "sha256": "df88b716e0aa8bcd708a7a410b9f83b308518d7dc9d876e8214049ce4fee1c70"
+    },
+    {
+      "file": "00090.png",
+      "elapsedMs": 4533.5274,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63475,
+      "sha256": "2ce34be503693408fbae81fc06c33340e1cf62e397029556442617d8891d01b1"
+    },
+    {
+      "file": "00091.png",
+      "elapsedMs": 4583.8055,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63381,
+      "sha256": "ee8f14966817eb65ab86e14d6389190e4d2b7522fada87b3987305037cfb6008"
+    },
+    {
+      "file": "00092.png",
+      "elapsedMs": 4634.1475,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63245,
+      "sha256": "c7e1a2271eda352019ae0d3eba2e22cc244f08f311c20af29bc01834b5645390"
+    },
+    {
+      "file": "00093.png",
+      "elapsedMs": 4684.2251,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63168,
+      "sha256": "047df388063f089c9168585150c18d5eb4f35ef367cc905a9d9feff4206b3bb7"
+    },
+    {
+      "file": "00094.png",
+      "elapsedMs": 4734.0237,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63149,
+      "sha256": "b9382e88127118b747bf1b9b803f58435c2b264e584673b4aded20a2a1ca6dea"
+    },
+    {
+      "file": "00095.png",
+      "elapsedMs": 4783.9134,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 63039,
+      "sha256": "04b5eb97731e1fb87eb16f3ea7a4bf2b5c0487773e353a5adcad9708951c61db"
+    },
+    {
+      "file": "00096.png",
+      "elapsedMs": 4833.5386,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58217,
+      "sha256": "3412508038cfb15b9847d6f0675b94eac0583046957e492ec01217648d8dd77c"
+    },
+    {
+      "file": "00097.png",
+      "elapsedMs": 4883.799,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58116,
+      "sha256": "33b2c27b49a6ee2413451e5fc7efda6a3188888414068f64caa9d478f42171f8"
+    },
+    {
+      "file": "00098.png",
+      "elapsedMs": 4934.2465,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58106,
+      "sha256": "1474094bb4a77bbfa6ee940fac2086a1289f396ee27ffc245cf2d2853a18a873"
+    },
+    {
+      "file": "00099.png",
+      "elapsedMs": 4984.7596,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58112,
+      "sha256": "ce19e39714895ef07c978bb2c03795c1fb06b954137b2bc0abd1c9a2a5e9cbd6"
+    },
+    {
+      "file": "00100.png",
+      "elapsedMs": 5035.0348,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58198,
+      "sha256": "c1ec1c0612ea8b2ca6e996b898e767a1256312ac8151b796a931a5d7557fda57"
+    },
+    {
+      "file": "00101.png",
+      "elapsedMs": 5085.6416,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58260,
+      "sha256": "6b886e1adadba5b700372fdba8dcbc1c9254c11725971f3833833f266ca4d75d"
+    },
+    {
+      "file": "00102.png",
+      "elapsedMs": 5136.1905,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58196,
+      "sha256": "85405be7c5c3434c5afb0d3f297ef36bfc5abf90f603e840a5bde5b8bd76874b"
+    },
+    {
+      "file": "00103.png",
+      "elapsedMs": 5186.6852,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58205,
+      "sha256": "9ca4c090eb2efcee1622c2a859bf7845653d4fe09948b3854f5a5d54cbf9810b"
+    },
+    {
+      "file": "00104.png",
+      "elapsedMs": 5236.8963,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58117,
+      "sha256": "300aaa1dc23d9a7dcc44a36578ef3029b5a26af495234a0052df285b301cdfee"
+    },
+    {
+      "file": "00105.png",
+      "elapsedMs": 5286.8039,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58125,
+      "sha256": "6853e97fb8f9faf7250f8fccd79a2584d97d702236034a3c44ce5da90f398dde"
+    },
+    {
+      "file": "00106.png",
+      "elapsedMs": 5337.5794,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58020,
+      "sha256": "b4165a6157306c7ac143f4f4259f0252ad2c29a66b59357b99571b93e9638ba3"
+    },
+    {
+      "file": "00107.png",
+      "elapsedMs": 5387.4131,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57933,
+      "sha256": "e80c233248225775f253088da9e2d5503528573c8fb6f75aef99a75bf30ee256"
+    },
+    {
+      "file": "00108.png",
+      "elapsedMs": 5437.112,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57942,
+      "sha256": "6a3bd719e583b99afe98f119c7de9530c715346147d3c6e2caac271627aa2c85"
+    },
+    {
+      "file": "00109.png",
+      "elapsedMs": 5487.3114,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57878,
+      "sha256": "5b45a0646874f763c944850d6a2ae89a5963f3448b82c5c8e7d24e54b62f5f9a"
+    },
+    {
+      "file": "00110.png",
+      "elapsedMs": 5537.3846,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57911,
+      "sha256": "10dba4dee5b7af2e1b71d4ec6a45bbd9944f82a306c0ef893b21ea6510d45fd9"
+    },
+    {
+      "file": "00111.png",
+      "elapsedMs": 5587.2417,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57931,
+      "sha256": "9ac7313007022aed96550d1916284166acb4773e470d5152e8c28271fa9c41eb"
+    },
+    {
+      "file": "00112.png",
+      "elapsedMs": 5638.0567,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57933,
+      "sha256": "2e778b15adc5c9ea89cb815b818343f67826b777344de710424fe46bfa763506"
+    },
+    {
+      "file": "00113.png",
+      "elapsedMs": 5688.5123,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57967,
+      "sha256": "a45a192acb921c51a788290d63ddc32d1d46c2f8116f8d72b30156a0b5b937ac"
+    },
+    {
+      "file": "00114.png",
+      "elapsedMs": 5738.8855,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58009,
+      "sha256": "ca803d37ed87e665b964cc10d76a3dae055cf9346b016977712390760728638e"
+    },
+    {
+      "file": "00115.png",
+      "elapsedMs": 5789.2369,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58070,
+      "sha256": "4c2460c34eae514c483627e3e234b8390f03e48707592b4274357aa40a032fd4"
+    },
+    {
+      "file": "00116.png",
+      "elapsedMs": 5839.3198,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58017,
+      "sha256": "ecd5b9afba6fa18959bf69140d1017895190ef9125bead34ffb6cfa96c6d1678"
+    },
+    {
+      "file": "00117.png",
+      "elapsedMs": 5890.3929,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58082,
+      "sha256": "77120afd05daa5c026a645cfaf21c873f5d7950b7cd4936ff19204a4aeb0b286"
+    },
+    {
+      "file": "00118.png",
+      "elapsedMs": 5939.9957,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58073,
+      "sha256": "d68fd95c9d826b11bd55d02cb11f6917be04433824d2c5c320b4bd22f94c1b30"
+    },
+    {
+      "file": "00119.png",
+      "elapsedMs": 5990.0363,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58063,
+      "sha256": "c9cab0a3e0876368b3c5cf7d4bce44525a199fbd6a3e309c2a2e447556880fc3"
+    },
+    {
+      "file": "00120.png",
+      "elapsedMs": 6040.1848,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58091,
+      "sha256": "5e177cbb126c0da14e70450a5ed6b33011a3e5c343eb8181f16a6ba7b406d75d"
+    },
+    {
+      "file": "00121.png",
+      "elapsedMs": 6090.1621,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58059,
+      "sha256": "0afad6485ce48950fdeb327f4ae3652a70e473ea02daf8dcebd1599e2d247388"
+    },
+    {
+      "file": "00122.png",
+      "elapsedMs": 6140.5867,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58083,
+      "sha256": "3adf8f3db3dbc2725adccaf9594ae83adcf71e0879d7e762590014a605f30afb"
+    },
+    {
+      "file": "00123.png",
+      "elapsedMs": 6190.5272,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58137,
+      "sha256": "611d2f8694835d2af191e090b681a5fc6b25514d9d450b9c0e5410903f7f41b9"
+    },
+    {
+      "file": "00124.png",
+      "elapsedMs": 6240.7933,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58169,
+      "sha256": "4bff314e4cf05296f85a3a3f44e628f83aeda0bcd4f1a2d0b7edb658c1d87bf6"
+    },
+    {
+      "file": "00125.png",
+      "elapsedMs": 6291.1583,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58203,
+      "sha256": "f5962d3541a9cc9856dc3b181731aff0bd9f9ce8847aadc66504d0511606bc85"
+    },
+    {
+      "file": "00126.png",
+      "elapsedMs": 6340.8245,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58123,
+      "sha256": "76ec171eb378deb040c9d4d2b89ec2f979cbb69bc113f5f24c8abffa5e2c2fc3"
+    },
+    {
+      "file": "00127.png",
+      "elapsedMs": 6390.6794,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58163,
+      "sha256": "ed520040237ca3dabb8fb02c5fc704f759ca93c8ba9cbc77ec27d7e0637dcc9e"
+    },
+    {
+      "file": "00128.png",
+      "elapsedMs": 6441.0848,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58193,
+      "sha256": "1c6ac6fb544ebc1e3f5b7ea9cbf98f0a498e3d6250b24f2bd4dc69d5831b1bd4"
+    },
+    {
+      "file": "00129.png",
+      "elapsedMs": 6491.3598,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58123,
+      "sha256": "bbf379a2e239c552536901e23e1be43491d9899e1347808fd4df3cd6276fd6f0"
+    },
+    {
+      "file": "00130.png",
+      "elapsedMs": 6541.4968,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58142,
+      "sha256": "34bd445c40e22629bc5f7f309a0e2beabef2fa4ba85c55a5dd9775437b8c2127"
+    },
+    {
+      "file": "00131.png",
+      "elapsedMs": 6591.3372,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58142,
+      "sha256": "a94ec4431570087ef424efa97ac020cdf1a0e076bb7a70d14c82a4a9f781b472"
+    },
+    {
+      "file": "00132.png",
+      "elapsedMs": 6624.4778,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58146,
+      "sha256": "8c19b5223943f8c2bb37ede684b1a4435f307d3c047f2fcb404a4e4b5f19b1cf"
+    },
+    {
+      "file": "00133.png",
+      "elapsedMs": 6691.5286,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58133,
+      "sha256": "260f7f61576eb5aaef5e9d891eb5e3a2c999cd64087c1e247cb15e474eae250e"
+    },
+    {
+      "file": "00134.png",
+      "elapsedMs": 6741.3752,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58168,
+      "sha256": "961ec16cfcc3c163469dae6722cc206917a7f9b22bb7c9981405bf87eb777045"
+    },
+    {
+      "file": "00135.png",
+      "elapsedMs": 6774.6673,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58168,
+      "sha256": "961ec16cfcc3c163469dae6722cc206917a7f9b22bb7c9981405bf87eb777045"
+    },
+    {
+      "file": "00136.png",
+      "elapsedMs": 6841.6131,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58130,
+      "sha256": "fe0c47966a840492b56f7bab947f51bdb9327aaf817670827b8361cd91afea1d"
+    },
+    {
+      "file": "00137.png",
+      "elapsedMs": 6874.8032,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58130,
+      "sha256": "fe0c47966a840492b56f7bab947f51bdb9327aaf817670827b8361cd91afea1d"
+    },
+    {
+      "file": "00138.png",
+      "elapsedMs": 6924.6509,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58104,
+      "sha256": "34bb2b7b0b31ec94db35954ac73a752f4c60ff3b708e981a498c9145c81a96fa"
+    },
+    {
+      "file": "00139.png",
+      "elapsedMs": 6975.0507,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58111,
+      "sha256": "baa7dce838b278c36bdf1c71e0ff9db2a08e6c77df630218d0b125b2903f1ca1"
+    },
+    {
+      "file": "00140.png",
+      "elapsedMs": 7024.7316,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57814,
+      "sha256": "f8a6f7ee2525937f6b5ed5b983194c06f848d4b4f681a353a8a5b99d79fe2ee7"
+    },
+    {
+      "file": "00141.png",
+      "elapsedMs": 7075.2547,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57830,
+      "sha256": "9811714c815ea4aa9e963e1de0c586b2bf40f618915220e6c5a5af7b1af700af"
+    },
+    {
+      "file": "00142.png",
+      "elapsedMs": 7127.608,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57853,
+      "sha256": "19021014a155df5d9083efc51e5fbdeff4de44b831997d33f5053f2cbf0d03f4"
+    },
+    {
+      "file": "00143.png",
+      "elapsedMs": 7177.7914,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57836,
+      "sha256": "266ecfa9e649ccda56e8244c201ca9cb91377bf65be8511dbeb48bf7785176a8"
+    },
+    {
+      "file": "00144.png",
+      "elapsedMs": 7228.8983,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57834,
+      "sha256": "91d292e669f168e25a7c041fe113f2bb6dc7983e06397b622b233db67dfd0356"
+    },
+    {
+      "file": "00145.png",
+      "elapsedMs": 7278.577,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57939,
+      "sha256": "801e3c0e1e4d89d8d2d83be80e280d57f4b37466885880b503baf40343d452a9"
+    },
+    {
+      "file": "00146.png",
+      "elapsedMs": 7329.3367,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58025,
+      "sha256": "199a14c41d447fa004a002b821756bdd66338760a859d71d59def9ec10610eca"
+    },
+    {
+      "file": "00147.png",
+      "elapsedMs": 7379.7372,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58030,
+      "sha256": "0a9dc9a9e65444f71be8a888e41e0d114bec5abbe593d246cea677afaaf0a9c5"
+    },
+    {
+      "file": "00148.png",
+      "elapsedMs": 7430.6722,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57958,
+      "sha256": "a3c72056a00e2cf3f2b4dab34788240c1d99bbb72012e19e303803681a1aa760"
+    },
+    {
+      "file": "00149.png",
+      "elapsedMs": 7481.6656,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57947,
+      "sha256": "05aab8093c6b645b2550645f00890d307e177dafb3813fef3cb2085fa85f188c"
+    },
+    {
+      "file": "00150.png",
+      "elapsedMs": 7532.597,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57916,
+      "sha256": "b1f220575f4c1e86b048f056979a5fd04a932db22ab566df5570a98e8be6dee6"
+    },
+    {
+      "file": "00151.png",
+      "elapsedMs": 7582.7083,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57844,
+      "sha256": "a3aab53e702bf89509c07cb335ed82404a46762b220aeb95e6965d51b2fdb64e"
+    },
+    {
+      "file": "00152.png",
+      "elapsedMs": 7632.6225,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57773,
+      "sha256": "be552c38e55fc62303057f845fa26eea4b72eb1a81e90a8faebd2125adaeaf28"
+    },
+    {
+      "file": "00153.png",
+      "elapsedMs": 7682.8181,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57729,
+      "sha256": "255f44317a0bfb6e9caf0a83d5f65f62e8552174a055caf603ca536f69d99b19"
+    },
+    {
+      "file": "00154.png",
+      "elapsedMs": 7733.3839,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57666,
+      "sha256": "b46523d01b408cbb62a14cf9fef98141e7a52a3aaa2dde2e486da00fe7b74ed0"
+    },
+    {
+      "file": "00155.png",
+      "elapsedMs": 7783.2769,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57673,
+      "sha256": "636e9b1336811840932ce29ce5250963f5dfc9aa6c2c96448653908c2e33ccef"
+    },
+    {
+      "file": "00156.png",
+      "elapsedMs": 7833.1922,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57679,
+      "sha256": "19a0af13346687b23d4e285afa6f7307cb7f9c802622022dd0f1e93d1711a451"
+    },
+    {
+      "file": "00157.png",
+      "elapsedMs": 7883.9915,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57699,
+      "sha256": "ec781a8527a47fe7db11b223286ed0607b50192c9df2560c7a8a570c68e4b778"
+    },
+    {
+      "file": "00158.png",
+      "elapsedMs": 7934.6478,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57675,
+      "sha256": "8f97d1f01bf95fd54dbf5ebf2c733d9ff8d7d97a1edbe428f31405af0ad02cfd"
+    },
+    {
+      "file": "00159.png",
+      "elapsedMs": 7984.535,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57636,
+      "sha256": "b9bf92dc3bd4e90e308db7937fd5e363d1abcae89e0da8ded623a5c9f06522c1"
+    },
+    {
+      "file": "00160.png",
+      "elapsedMs": 8035.4451,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57571,
+      "sha256": "86febb5569a83ac89979ffbf770eb94079f46679cc778da89760bb6320c15529"
+    },
+    {
+      "file": "00161.png",
+      "elapsedMs": 8086.3817,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57548,
+      "sha256": "f24c536c7cfc188c37b806056fa7f81969b24b36b331a475eeff5faf654b27fd"
+    },
+    {
+      "file": "00162.png",
+      "elapsedMs": 8137.2537,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57531,
+      "sha256": "07f06aff4be6abac8de922b9777f7d049aca06bad5bf92f87d47070dbb3501ff"
+    },
+    {
+      "file": "00163.png",
+      "elapsedMs": 8187.626,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57547,
+      "sha256": "22ff3f4d85084663c24d208e2e13ca1325c2895050138ce2723a9baa443b4c3a"
+    },
+    {
+      "file": "00164.png",
+      "elapsedMs": 8238.5112,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57546,
+      "sha256": "9e27050c1c5ab6adea0a300cc50a0762fd21a69c17732894486c6a672d9a83d6"
+    },
+    {
+      "file": "00165.png",
+      "elapsedMs": 8289.7231,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57552,
+      "sha256": "97866b215536e3b20197fa7c829066b839acab0c01dfd534b617c703689d791f"
+    },
+    {
+      "file": "00166.png",
+      "elapsedMs": 8340.2086,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57569,
+      "sha256": "23b7b3e92276a3bcb8601e4856a735df54d0ffb16e911d96aaf3738dd4bea58b"
+    },
+    {
+      "file": "00167.png",
+      "elapsedMs": 8390.2133,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57594,
+      "sha256": "f669137f47bb177500171af6a20baadbfb61fc8bed77950b8dd11846744ac155"
+    },
+    {
+      "file": "00168.png",
+      "elapsedMs": 8440.3132,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57577,
+      "sha256": "b7ae647f4e2405b2e41374e093c289035b199613a6cc2b5d4d8b814f8684066c"
+    },
+    {
+      "file": "00169.png",
+      "elapsedMs": 8490.5276,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57586,
+      "sha256": "59b7463af3b6e60f2d347280e12dc561328ff7dd1bdf09e130e20bc1c67df4ec"
+    },
+    {
+      "file": "00170.png",
+      "elapsedMs": 8540.3476,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57568,
+      "sha256": "cb25ab12a450367d1c695970d7ac13f7f8d168f7781e949ba4700e314efcf87c"
+    },
+    {
+      "file": "00171.png",
+      "elapsedMs": 8590.1478,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57585,
+      "sha256": "c395f9bb768cda56eeda6d5b82db98d66d121bebadcf45ff48cb6b2543e2cfc8"
+    },
+    {
+      "file": "00172.png",
+      "elapsedMs": 8640.2568,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57578,
+      "sha256": "870313c6d0ab7c09fce5ba713ce43a9aaa2e9198f55f509d7253dc9bebfb89ef"
+    },
+    {
+      "file": "00173.png",
+      "elapsedMs": 8690.6033,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57539,
+      "sha256": "de6278b7a4c2910a9f422b7abea9ef1c0970d43a6a32d84eb39757931661c4de"
+    },
+    {
+      "file": "00174.png",
+      "elapsedMs": 8740.4714,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57515,
+      "sha256": "a690ed9ac03572a1261d54d919ddd7a21fa848622883bf8e6c0e9f87cdf42b92"
+    },
+    {
+      "file": "00175.png",
+      "elapsedMs": 8790.1437,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57474,
+      "sha256": "d7408da015f5f7c8780da8665c61965730ea9830b2e8d30c7728b7589c2c0fd2"
+    },
+    {
+      "file": "00176.png",
+      "elapsedMs": 8840.1637,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57445,
+      "sha256": "f2361b516874dc0735b1c23212bff5bf2e058e742a6f5ab089691dbc4b3073a4"
+    },
+    {
+      "file": "00177.png",
+      "elapsedMs": 8890.4337,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57459,
+      "sha256": "77b7ee25015a7c4e80ce0c6d728f3f2ba7c7799ddc9ceaced29266b43dc72ea9"
+    },
+    {
+      "file": "00178.png",
+      "elapsedMs": 8940.6353,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 57464,
+      "sha256": "615c450879b5e2dae68c50cff4ed30fa37220ae1229998055b1460a695d0da2d"
+    },
+    {
+      "file": "00179.png",
+      "elapsedMs": 9005.8612,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55582,
+      "sha256": "924fdc2a43f996e3f286cd6164b4c35de4d7f0eda2db4029cce2b0fee404e6d6"
+    },
+    {
+      "file": "00180.png",
+      "elapsedMs": 9027.0904,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55582,
+      "sha256": "924fdc2a43f996e3f286cd6164b4c35de4d7f0eda2db4029cce2b0fee404e6d6"
+    },
+    {
+      "file": "00181.png",
+      "elapsedMs": 9076.7399,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55612,
+      "sha256": "0292b8468be083308e18d6901ef06d6571e9fbe9973524b8669461b89cc07885"
+    },
+    {
+      "file": "00182.png",
+      "elapsedMs": 9127.3309,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55626,
+      "sha256": "94f33141f51d4cb0fc057d288c2001f7a8f29e2ac470264bd9b0dbca384cf21c"
+    },
+    {
+      "file": "00183.png",
+      "elapsedMs": 9176.9645,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55666,
+      "sha256": "1ffafb425984e79740a3d996d82d7f5ac93c105ee3f5904c678fa69fb13cb081"
+    },
+    {
+      "file": "00184.png",
+      "elapsedMs": 9226.8496,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55698,
+      "sha256": "e2b57a7c81e982e4d3b6cac6d44a2de6800456a7df6a61b28e9e3927ba51e222"
+    },
+    {
+      "file": "00185.png",
+      "elapsedMs": 9277.8081,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55681,
+      "sha256": "8b0e6f2abe484d8fea62525dcdc77a398f39037aae2b93a16b19305a8e92a4a3"
+    },
+    {
+      "file": "00186.png",
+      "elapsedMs": 9327.4437,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55715,
+      "sha256": "b1f2c33d1c6d00d3ab83b82afa811a765f93a49eee6c0d4166d6b68804f6cc58"
+    },
+    {
+      "file": "00187.png",
+      "elapsedMs": 9377.4742,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55696,
+      "sha256": "dcb4cfb5d0995ef48583aa80777743ea76e774e496f5e4cd9cbc917a687dc5eb"
+    },
+    {
+      "file": "00188.png",
+      "elapsedMs": 9427.5465,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55733,
+      "sha256": "e33fbe9cf5ac30537e23ce8e40ee735259e28eede3eb84d382e43588a71ecd2b"
+    },
+    {
+      "file": "00189.png",
+      "elapsedMs": 9477.6316,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55748,
+      "sha256": "74e17d0279c67eb3e246a30fffbeae6e7c1a6f14132434295c64d8dc5519e385"
+    },
+    {
+      "file": "00190.png",
+      "elapsedMs": 9527.9954,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55745,
+      "sha256": "1375c51ea31401e8732056007241dc08255b279dc3a0ebd5c2b903c219b0b047"
+    },
+    {
+      "file": "00191.png",
+      "elapsedMs": 9577.8415,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55821,
+      "sha256": "9672eebac3db59a07a0ad4dde93fd6eb15f1c40206af675099f3cc27e00486d3"
+    },
+    {
+      "file": "00192.png",
+      "elapsedMs": 9627.8729,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55732,
+      "sha256": "1f5dd6aee0890428e53fa0d07e75d91eae1e91c26f9add8ed2c21efacf693ec7"
+    },
+    {
+      "file": "00193.png",
+      "elapsedMs": 9677.9907,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55751,
+      "sha256": "7f37a7593e53d28f6de582513503651fd2224511aba9b3f049b33b1c1ffa8dd1"
+    },
+    {
+      "file": "00194.png",
+      "elapsedMs": 9727.7836,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55743,
+      "sha256": "8f12b8bfbdc689ea271dc34e386fa101e69272e4929847eb25d1201759507295"
+    },
+    {
+      "file": "00195.png",
+      "elapsedMs": 9778.704,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55730,
+      "sha256": "051db38a387aba08eb6f4f2cb078fc6295d222cd8320e9d3ae13f3021ae623a5"
+    },
+    {
+      "file": "00196.png",
+      "elapsedMs": 9828.9073,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55703,
+      "sha256": "459aaf56c8050d2b094c8374c58b74d427683296affa78540edc9fc338d68205"
+    },
+    {
+      "file": "00197.png",
+      "elapsedMs": 9879.0172,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55594,
+      "sha256": "9eee93c9998c014c07eaba694852c98e79ab9730e34e39b5103dce1497d6f555"
+    },
+    {
+      "file": "00198.png",
+      "elapsedMs": 9928.7384,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55620,
+      "sha256": "50a16f04b8e13000efcd41a1d4c829b55a6bfb1da1926c22cd10ca7b393bd053"
+    },
+    {
+      "file": "00199.png",
+      "elapsedMs": 9979.0938,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55684,
+      "sha256": "f51a5db9d7c343aa313c339ef739a9ec1295207a29966614b2f82204f034f1b5"
+    },
+    {
+      "file": "00200.png",
+      "elapsedMs": 10029.1351,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55678,
+      "sha256": "44ed6bbe22636a347938c2911700fb9ce26f564adcc5eb5a480435963aad1cdf"
+    },
+    {
+      "file": "00201.png",
+      "elapsedMs": 10079.0839,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55654,
+      "sha256": "37079a3441b67f2476a2f2f26b8104fe44f7e441768c9d008d8ff50e67019e93"
+    },
+    {
+      "file": "00202.png",
+      "elapsedMs": 10129.1165,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55636,
+      "sha256": "668b95f587977eb0ded8da3d91a44e1f7b4bde9373079161dd09e712b2eb0bad"
+    },
+    {
+      "file": "00203.png",
+      "elapsedMs": 10179.181,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55702,
+      "sha256": "505efadf5eea492d24d0c81c352c79b1ac0b2a6197eb1c8d885f4d182af0626e"
+    },
+    {
+      "file": "00204.png",
+      "elapsedMs": 10229.3521,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55678,
+      "sha256": "c374d4e1cdb734e067a75fce830ab71fc8fe8f683939ebee9068d44399f5a7c1"
+    },
+    {
+      "file": "00205.png",
+      "elapsedMs": 10280.2768,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55716,
+      "sha256": "a9303da8aebbde9d7f2852483ca1ef1496a7931495af73d306b2b90f5f77a390"
+    },
+    {
+      "file": "00206.png",
+      "elapsedMs": 10330.7423,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55746,
+      "sha256": "d9aa2e03af286dd7a68e65503f1a98f42dd8865e207c92f99d48dcf7db06d86c"
+    },
+    {
+      "file": "00207.png",
+      "elapsedMs": 10381.1908,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55740,
+      "sha256": "f1abc5a201244e2693c13cfcf27c24bfb365318ab726ec016f82542e6568e10f"
+    },
+    {
+      "file": "00208.png",
+      "elapsedMs": 10430.6509,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55754,
+      "sha256": "3b0c6984ea44f43f0cf730294de7bae7bcd13e44b9b76f7783b272e90c8792e5"
+    },
+    {
+      "file": "00209.png",
+      "elapsedMs": 10481.3988,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55784,
+      "sha256": "5f9cdb97c6db06a64c3cb9fe72329d319302c053585868a2cdd17a8fcf99bff7"
+    },
+    {
+      "file": "00210.png",
+      "elapsedMs": 10531.3919,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55804,
+      "sha256": "6f4b49b44de74a4e61956dbe53ac479a3323378e137c10e4059d02ed1fcad263"
+    },
+    {
+      "file": "00211.png",
+      "elapsedMs": 10581.5916,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55919,
+      "sha256": "b4e7d85c51becd28b91f80507fb88f400681de1bd5de5ac1276e84294652caea"
+    },
+    {
+      "file": "00212.png",
+      "elapsedMs": 10631.3396,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55901,
+      "sha256": "1947e05809cdaf5a4badfedc7d1d8fd6f6efe82d4b1ea2aa597842691abecadd"
+    },
+    {
+      "file": "00213.png",
+      "elapsedMs": 10681.5763,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55924,
+      "sha256": "246cd7912db8828f46e420c6b33700c1ad581d7949c69b50ac0f85d6ba187880"
+    },
+    {
+      "file": "00214.png",
+      "elapsedMs": 10733.3607,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55945,
+      "sha256": "531791bafec1b33bb6af4b585a02f3674b77ed6b0f381ac68ffdb850f5adefe2"
+    },
+    {
+      "file": "00215.png",
+      "elapsedMs": 10782.9029,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55924,
+      "sha256": "e12ef9642bd8c846634279cc090b5e28210383dd1907776380a2fb4278ddeb0e"
+    },
+    {
+      "file": "00216.png",
+      "elapsedMs": 10833.4598,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55982,
+      "sha256": "ef9de6a4bb90fc1cc4d21ffc76a2c2afe144b3e07878ae1c93bd64c327c65b5a"
+    },
+    {
+      "file": "00217.png",
+      "elapsedMs": 10883.4054,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55966,
+      "sha256": "190a47cd302a47b49e1a84d9ade5a0327576e2e20e4975819fb11945d20499f8"
+    },
+    {
+      "file": "00218.png",
+      "elapsedMs": 10933.4739,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55991,
+      "sha256": "9bee71ca537a8ef940a2a364e60dab6980466b0a53c0b29bf25251d26b488405"
+    },
+    {
+      "file": "00219.png",
+      "elapsedMs": 10983.4684,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55962,
+      "sha256": "b420ee8011699fa7d01d983ec599b77b42dbcf9a629e0fba6778aa783e29fbf3"
+    },
+    {
+      "file": "00220.png",
+      "elapsedMs": 11033.5172,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55971,
+      "sha256": "09501c759461ddc04a34a1832d75f7687fa7ab7b13651140e9c440fa8019689d"
+    },
+    {
+      "file": "00221.png",
+      "elapsedMs": 11085.1488,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55957,
+      "sha256": "67de5e525d8e6795277a17c1773bb90e87cf8f6d7664f498b20823a1d971b702"
+    },
+    {
+      "file": "00222.png",
+      "elapsedMs": 11133.6318,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55915,
+      "sha256": "3032544b4bde0ec5616043878dd08e9ca13b811d0f9b903f899813caa6483a19"
+    },
+    {
+      "file": "00223.png",
+      "elapsedMs": 11183.5304,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55897,
+      "sha256": "75f5d0b9772bcafac76796058d24b9caab3b9a17cb4f4917546f34e802c6f911"
+    },
+    {
+      "file": "00224.png",
+      "elapsedMs": 11234.1784,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55901,
+      "sha256": "ba2e9ec7103ee281211d8b9e955aa3f61d9527fbba340dd3592c5835023aa922"
+    },
+    {
+      "file": "00225.png",
+      "elapsedMs": 11284.3016,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55861,
+      "sha256": "f6f5011c253c67f52ce831a622bf14840cbfedc1fd54455dd6669ee8c94f966a"
+    },
+    {
+      "file": "00226.png",
+      "elapsedMs": 11334.1355,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55836,
+      "sha256": "829fa710ffdd0439545c25e4c452c8ebe1b65e5db3e25ee9a3400579370c2ac7"
+    },
+    {
+      "file": "00227.png",
+      "elapsedMs": 11384.3506,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 55840,
+      "sha256": "35580e895d0cfb729a152e8743c0e6823cee148c17b08c27b24118c8bd468103"
+    },
+    {
+      "file": "00228.png",
+      "elapsedMs": 11439.199,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157341,
+      "sha256": "1d4085fb448191591ee9e9acb1841eef93050b85adae08a8da7d82c048adacf5"
+    },
+    {
+      "file": "00229.png",
+      "elapsedMs": 11488.5587,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157317,
+      "sha256": "1c15b5615733004d8e4779475d6390d44d9396ad9ad0fef6888b99e644efb7e7"
+    },
+    {
+      "file": "00230.png",
+      "elapsedMs": 11538.0635,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157308,
+      "sha256": "7ec28d64f225a777b1b172275b0b2c54bd97dc21f87e5117180b8e4663e0e8d0"
+    },
+    {
+      "file": "00231.png",
+      "elapsedMs": 11588.4859,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157315,
+      "sha256": "e7b4a4024117412b06cf1136bbd50c7a967611845ff2494c071aa93cdce0592e"
+    },
+    {
+      "file": "00232.png",
+      "elapsedMs": 11639.076,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157302,
+      "sha256": "d233a77cf4d0c5069b9d3663c8015e08a5e17ffbd5d7fbf75b4e3d775e7716bb"
+    },
+    {
+      "file": "00233.png",
+      "elapsedMs": 11689.0259,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157314,
+      "sha256": "c2e714696adea7c07049390a9e503c2c9be1052d05354b124b90b8ad71b2400e"
+    },
+    {
+      "file": "00234.png",
+      "elapsedMs": 11738.5147,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157335,
+      "sha256": "1edf2c0214faae38f66a2f30639b96c04a9b67feef3cdf3e2af615c570fb048c"
+    },
+    {
+      "file": "00235.png",
+      "elapsedMs": 11788.3387,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157383,
+      "sha256": "ed47d5ffd2b9437589a15a524df7ff586e21eb32960e38461206d9d3d5a0c245"
+    },
+    {
+      "file": "00236.png",
+      "elapsedMs": 11838.2068,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157388,
+      "sha256": "e0131f9f23c797990544fac59e0e60f579fdda6be1c45ae38b65c6d007a5ba4a"
+    },
+    {
+      "file": "00237.png",
+      "elapsedMs": 11889.6829,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157386,
+      "sha256": "746dbaa2526edb481e3e17e8992d5860890e2fffc71803153c3b1bc0ba59c42e"
+    },
+    {
+      "file": "00238.png",
+      "elapsedMs": 11938.5465,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157375,
+      "sha256": "5ceaa99be3da29b7530be69ae414ea262eed8eb295d0f0e80aa175ee673d39bd"
+    },
+    {
+      "file": "00239.png",
+      "elapsedMs": 11988.4297,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157337,
+      "sha256": "9053393248e76c19fca4b3034d0878c6ad42f69b86475f6e01ad6d3e8b026668"
+    },
+    {
+      "file": "00240.png",
+      "elapsedMs": 12038.3074,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157335,
+      "sha256": "bbe627c0a770fb166e39ee414426a67400424ecd6e047deec37f7458df8cc85c"
+    },
+    {
+      "file": "00241.png",
+      "elapsedMs": 12088.3342,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157340,
+      "sha256": "f5c91c50144956a7fda29dcef29cb5ccdae70939745aad9b6c8a750294b512f6"
+    },
+    {
+      "file": "00242.png",
+      "elapsedMs": 12138.0193,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157347,
+      "sha256": "69646dc889c7a6bbba1f5e4289fdc5f75c7db8070c0ddb71386e2c5595729a87"
+    },
+    {
+      "file": "00243.png",
+      "elapsedMs": 12188.5143,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157338,
+      "sha256": "65a74e911d02784d220e620290147e861739350e47bcc2741a31740c80a3f3a2"
+    },
+    {
+      "file": "00244.png",
+      "elapsedMs": 12238.7118,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157334,
+      "sha256": "7889fe9ca94587e77054089e31a131051d90366355ca8f5ffd13178e9634da2d"
+    },
+    {
+      "file": "00245.png",
+      "elapsedMs": 12288.3704,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157348,
+      "sha256": "453e23d948012bd9fffeafce9a4a5801463d18eba282005fb0d8400d5950e337"
+    },
+    {
+      "file": "00246.png",
+      "elapsedMs": 12342.4747,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157328,
+      "sha256": "a6599a9f82a6ca48a905ec24b1465b7a8cc2d498d22b02746928a6249b84bdf3"
+    },
+    {
+      "file": "00247.png",
+      "elapsedMs": 12388.6209,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157331,
+      "sha256": "e5f6662bd901848617618e840c9516356b0a88d1afc30e247cbc4abb5cafa0c2"
+    },
+    {
+      "file": "00248.png",
+      "elapsedMs": 12438.9735,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157355,
+      "sha256": "51143d1d9931ece73c19a6c1f4477038c1d821c78da7d4c412c0e78ce71d1f0a"
+    },
+    {
+      "file": "00249.png",
+      "elapsedMs": 12489.8512,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157371,
+      "sha256": "a3de14b8ed9b070dc413a01a88ac6c390ef47c7eee5375d902ec1e75e308faa5"
+    },
+    {
+      "file": "00250.png",
+      "elapsedMs": 12539.7317,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157406,
+      "sha256": "d1817fe08a65ad7277f41df79ae24a7cebea991dd1c80834299c2ca191899707"
+    },
+    {
+      "file": "00251.png",
+      "elapsedMs": 12590.8525,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157385,
+      "sha256": "7721dbdd8de858d83572a2b77be3afdf47b7653755f794817492eec1643a9782"
+    },
+    {
+      "file": "00252.png",
+      "elapsedMs": 12624.5325,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157384,
+      "sha256": "9fbb7bff62dde90a5ac1c5d550a68c4dec61fca25af93f18caf611b9cb0831d3"
+    },
+    {
+      "file": "00253.png",
+      "elapsedMs": 12674.4238,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157441,
+      "sha256": "fc20a6025acb26f0dd0c6059ca3fc359f81c7aeb587971f369925865dd2d41d1"
+    },
+    {
+      "file": "00254.png",
+      "elapsedMs": 12724.7794,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157453,
+      "sha256": "0cf0b396303541378b4f38acd685b0291af4d28432467e18e8c95097d14e64d6"
+    },
+    {
+      "file": "00255.png",
+      "elapsedMs": 12774.2968,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157480,
+      "sha256": "67a47105b021f2af99e12e1fdb2eb656d9ab863e1a3e276c913da6fe0596240d"
+    },
+    {
+      "file": "00256.png",
+      "elapsedMs": 12825.2428,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157536,
+      "sha256": "d27bb6b7337c50d214bbfbf2715dbf198ed7abf2ae03694bd683cc5c22be94da"
+    },
+    {
+      "file": "00257.png",
+      "elapsedMs": 12874.7895,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157541,
+      "sha256": "1dde366818355670a5830320f31bcedc05670e16b7ecb421aaac3daab36b0795"
+    },
+    {
+      "file": "00258.png",
+      "elapsedMs": 12924.7304,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157565,
+      "sha256": "a66620a73508fbdc2eaa910bf397fc7574b6514d7d7ae1b64ceb02e0046e20bc"
+    },
+    {
+      "file": "00259.png",
+      "elapsedMs": 12974.6924,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157539,
+      "sha256": "12919722892e44e1b85285c4ec4ee2459e354a571bf4e3554a47510537e47e1d"
+    },
+    {
+      "file": "00260.png",
+      "elapsedMs": 13024.9521,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157543,
+      "sha256": "8fbd57bee0826b3b595a7fae7e7fbb53c90ffe09ba0a8736fd0b40ca6df9f789"
+    },
+    {
+      "file": "00261.png",
+      "elapsedMs": 13075.3926,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157510,
+      "sha256": "ccd26743ca76a3af830fd849c87897326f28a2efdb524f6bb2017f3fa92f5125"
+    },
+    {
+      "file": "00262.png",
+      "elapsedMs": 13125.5254,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157472,
+      "sha256": "ce22705bbe423361b7fbaf79fec147409e1ba9a3aec381775048c358d61a5341"
+    },
+    {
+      "file": "00263.png",
+      "elapsedMs": 13175.7572,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157454,
+      "sha256": "a62f3a0f0725fd897041408df27fddb13b217a8845b22959e02a8022142a8885"
+    },
+    {
+      "file": "00264.png",
+      "elapsedMs": 13226.5281,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157478,
+      "sha256": "38eaf1e48f45c63a187d431e1eaa5cca9b3bb18741301c328d2091e9fd6a0800"
+    },
+    {
+      "file": "00265.png",
+      "elapsedMs": 13278.2593,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157534,
+      "sha256": "18555b26c8f6d5ebc6b69eaefb10175b904bb74cbe4dd57edf33beabb58ec6b9"
+    },
+    {
+      "file": "00266.png",
+      "elapsedMs": 13326.7175,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157538,
+      "sha256": "67e32134f3520e29ff394bffd9acc5c6da13598cb5dc661369a6fe98a9a0f3bd"
+    },
+    {
+      "file": "00267.png",
+      "elapsedMs": 13376.9386,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157588,
+      "sha256": "da6eedde2c8fcd0360d44f0ef695b9dd50c8478af702fd09973c2e3b8a732d4e"
+    },
+    {
+      "file": "00268.png",
+      "elapsedMs": 13427.7444,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157567,
+      "sha256": "97e99653c8155a99a4df92df6fa920d1dceb3749b5bdfa27dc9e1f17198b6c08"
+    },
+    {
+      "file": "00269.png",
+      "elapsedMs": 13481.243,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157603,
+      "sha256": "9c8cdbf19e319fb94571102354c159b75cf5199028289211240ec8f09c68c09c"
+    },
+    {
+      "file": "00270.png",
+      "elapsedMs": 13530.3667,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157626,
+      "sha256": "38816bb144f7c8b6dea7674d7a132e64dc4461c163fe798176e31190aa21b829"
+    },
+    {
+      "file": "00271.png",
+      "elapsedMs": 13583.1229,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 157632,
+      "sha256": "5dbd174bbc0974ba0c3410e393f891c33e8eb21f1b0c5fa4e37fb56204991024"
+    },
+    {
+      "file": "00272.png",
+      "elapsedMs": 13627.8136,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58629,
+      "sha256": "7caa91999893828db45df0a37a5e8a802d5cbec968d9efa90a254e6c5c3b6bac"
+    },
+    {
+      "file": "00273.png",
+      "elapsedMs": 13678.6408,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58638,
+      "sha256": "f0654de6dadd5524d5d7ac91b1b452d48b5e0d112ee774e651ae808b8a3fd002"
+    },
+    {
+      "file": "00274.png",
+      "elapsedMs": 13728.7086,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58641,
+      "sha256": "3b1922133f220ff674c467ea18de20be80e2690fe537e6ba9a872b2ba90db030"
+    },
+    {
+      "file": "00275.png",
+      "elapsedMs": 13778.4672,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58632,
+      "sha256": "a39e06eb0ca17324159966206ee3eb55d664d2846055a2877f81fae4befbc75f"
+    },
+    {
+      "file": "00276.png",
+      "elapsedMs": 13828.5903,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58616,
+      "sha256": "2cc1aa01f3a5ffad51e10fe498f89bf428598126cdaa6765b6fca90ad6694739"
+    },
+    {
+      "file": "00277.png",
+      "elapsedMs": 13878.5294,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58605,
+      "sha256": "620385a0532e8834de697f6ded938e5c296e0d89de33c609ea85d24390e3543b"
+    },
+    {
+      "file": "00278.png",
+      "elapsedMs": 13928.6739,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58572,
+      "sha256": "54b571c92d1c7b7b4be81bc97425e379bf6b9457763cfd6873da3ffa47785d1c"
+    },
+    {
+      "file": "00279.png",
+      "elapsedMs": 13978.6342,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58594,
+      "sha256": "2f7806bd388d1bd6f1a31e2c7a93f0912188f457d806baa4744de155f5759095"
+    },
+    {
+      "file": "00280.png",
+      "elapsedMs": 14029.0302,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58613,
+      "sha256": "408a4adafb40824ec681c7c13880398ac66c50c72adeece6bfd3e41d5bbf385b"
+    },
+    {
+      "file": "00281.png",
+      "elapsedMs": 14080.1602,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58647,
+      "sha256": "26504aea680b8aa06450e65837a5a2aa562233b9abd91cdfb3acf015d2a2298e"
+    },
+    {
+      "file": "00282.png",
+      "elapsedMs": 14129.932,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58603,
+      "sha256": "f3e69ea20184725bac542f74eb1ddc4331be35dbf0f0ca1d7a2f371866a57660"
+    },
+    {
+      "file": "00283.png",
+      "elapsedMs": 14180.8446,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58614,
+      "sha256": "ed16079052e98b3f55fe61b7043696eb486d40b1ab086f13e6d5e8b8633068aa"
+    },
+    {
+      "file": "00284.png",
+      "elapsedMs": 14230.283,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58575,
+      "sha256": "1cc6efaedcfa041eb8b4e595d8154b5478b8fc0fb6099da897bb3b9211790834"
+    },
+    {
+      "file": "00285.png",
+      "elapsedMs": 14280.3599,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58558,
+      "sha256": "a8f69a6c8176a085f643a85884326ba2a8a2602ecdd15544b7afd6f134d0674e"
+    },
+    {
+      "file": "00286.png",
+      "elapsedMs": 14331.3835,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58524,
+      "sha256": "3272eb5de98fd91ba7810d0b671c41ec6f6bf87c4b349a2c55355b13efffac49"
+    },
+    {
+      "file": "00287.png",
+      "elapsedMs": 14380.3317,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58551,
+      "sha256": "024e68e8b6345c7f6ac69489c2de5deff1aad1f66c7e42f1989aa7a111313ab1"
+    },
+    {
+      "file": "00288.png",
+      "elapsedMs": 14431.6655,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58551,
+      "sha256": "e31944063748b483ec51ddac54b067a32469d3d2a7142d087efcdfc6a6624088"
+    },
+    {
+      "file": "00289.png",
+      "elapsedMs": 14481.0183,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58572,
+      "sha256": "718a5d53264c390756c9e7c30c7eb6f4160e5b062078518bba4938b12a17b665"
+    },
+    {
+      "file": "00290.png",
+      "elapsedMs": 14530.4989,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58587,
+      "sha256": "6d4b2810fdce993b55c7d131f02a41dce395f970a07bdbfe2ccc40cd65e453e6"
+    },
+    {
+      "file": "00291.png",
+      "elapsedMs": 14580.2047,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58586,
+      "sha256": "49bed704d9533fc629a702f366d793d036710440752c686ae4fc94a404772eb0"
+    },
+    {
+      "file": "00292.png",
+      "elapsedMs": 14631.2914,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58581,
+      "sha256": "8ccfa041f1a855980001684c7c9fdf07d72d087b2835da1e3a1031257c30fd68"
+    },
+    {
+      "file": "00293.png",
+      "elapsedMs": 14681.0954,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58525,
+      "sha256": "3fa6b1fefc9e68e21f1c2c3782fd7a5ce5ca312f1ae6985182c8436ab9962950"
+    },
+    {
+      "file": "00294.png",
+      "elapsedMs": 14730.8176,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58516,
+      "sha256": "b94b0386e9b79538bb7f279fabef7285a936d1d18458d6a8a3b4f5b7471e5f95"
+    },
+    {
+      "file": "00295.png",
+      "elapsedMs": 14781.1311,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58500,
+      "sha256": "904f59cb66af3aa74432eeceb84b6ea757fa3669c31dbe04e769ef43f6ec721d"
+    },
+    {
+      "file": "00296.png",
+      "elapsedMs": 14830.4436,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58504,
+      "sha256": "d73b06ba2399eb26f53925f9a8c04c55b199c634bc9b3e46c8b99505192478cc"
+    },
+    {
+      "file": "00297.png",
+      "elapsedMs": 14881.3596,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58583,
+      "sha256": "a0e9086418e156670fefc8d9efa023ad4ec0fea55c4b70dbd993c95b6c8f7108"
+    },
+    {
+      "file": "00298.png",
+      "elapsedMs": 14931.2597,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58581,
+      "sha256": "6b74c96d3072ee8d6fb9a1eb7ddd9f21760028516cc1db578f6d1ca678df438e"
+    },
+    {
+      "file": "00299.png",
+      "elapsedMs": 14981.7997,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58571,
+      "sha256": "4d0ffe9332c8438a8a51c708eb40b5e7945981621859581cc63a2145929a6973"
+    },
+    {
+      "file": "00300.png",
+      "elapsedMs": 15032.0503,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58580,
+      "sha256": "3fc7330582c0cde4ca20ed0f3f2a1db02f2841349c14155ba772e5819195aff0"
+    },
+    {
+      "file": "00301.png",
+      "elapsedMs": 15081.6495,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58591,
+      "sha256": "2585615c866f2fc689de0eb5d206f9bad0a667cf6b58d829cd8444291c2fa4e3"
+    },
+    {
+      "file": "00302.png",
+      "elapsedMs": 15133.0817,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58572,
+      "sha256": "b7a69ef98de8a201ee60fd1a77a462dfdfa3c1ad5c8542bba18cc9f52179f622"
+    },
+    {
+      "file": "00303.png",
+      "elapsedMs": 15182.6979,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58568,
+      "sha256": "ab86b974edff39d72b60d0f1dd3a3b6b110d6672968d17e18571f7f1f1a7dbbf"
+    },
+    {
+      "file": "00304.png",
+      "elapsedMs": 15233.7174,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58588,
+      "sha256": "601052f3698fba868d3d6ae74634bc1e9d9881af678a9541f514c4480154ee3e"
+    },
+    {
+      "file": "00305.png",
+      "elapsedMs": 15283.6408,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58583,
+      "sha256": "dbb5f8226e16a772763ed2533bdc2a2cc035f67ae772d6d2f1485ace6b198c7b"
+    },
+    {
+      "file": "00306.png",
+      "elapsedMs": 15334.284,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58589,
+      "sha256": "f9388ec3e2ea0c8ac92d3a163c9d4fecbf1f87a8531407996b7476ffb9053b72"
+    },
+    {
+      "file": "00307.png",
+      "elapsedMs": 15383.777,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58586,
+      "sha256": "e342377a7590f36b89486c25ce3ba6bbce30e40c6722976e5237a395955ccd64"
+    },
+    {
+      "file": "00308.png",
+      "elapsedMs": 15433.6394,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58622,
+      "sha256": "12aff2ed2176738b942376aa89b2020fd00a80ac0cd9365bea8bf0d261abc76d"
+    },
+    {
+      "file": "00309.png",
+      "elapsedMs": 15483.8301,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58607,
+      "sha256": "b80ff91abe6408a8bce9f74ce68685d10dd210033b67a978baf4f6a0d984c55f"
+    },
+    {
+      "file": "00310.png",
+      "elapsedMs": 15535.2601,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58614,
+      "sha256": "4082845158aa9a58bc3805341f52a49ad3c256e84b1b85f660b7d8454b65499d"
+    },
+    {
+      "file": "00311.png",
+      "elapsedMs": 15578.3935,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58623,
+      "sha256": "83b18e5a4f48168ffed188dbb2bf36b452b04ed4ba90adc1458b6c7d20b1806e"
+    },
+    {
+      "file": "00312.png",
+      "elapsedMs": 15628.3593,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58633,
+      "sha256": "36662b600c0c754cd48ca52888beeb75ea8fbf386289227bf7b8f1af4e3e488f"
+    },
+    {
+      "file": "00313.png",
+      "elapsedMs": 15679.1745,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58570,
+      "sha256": "64c42119fba1de441fec919cc8b7d026b391ca97eb73098ba35b6522725a8543"
+    },
+    {
+      "file": "00314.png",
+      "elapsedMs": 15728.9443,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58592,
+      "sha256": "03e120bc1001d20d153012681f1007d5c1453a9cb486c207b400161de0aef99d"
+    },
+    {
+      "file": "00315.png",
+      "elapsedMs": 15779.8866,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58598,
+      "sha256": "baed8d83654bd992bbfc7cbf4c2a564246d444374ba6465542e5d2b9ef73fe52"
+    },
+    {
+      "file": "00316.png",
+      "elapsedMs": 15830.0176,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58312,
+      "sha256": "bdc4585ee5eac1b598cdc364c40dea6f824df5cb5f45c3df66dc11dd94ce2131"
+    },
+    {
+      "file": "00317.png",
+      "elapsedMs": 15880.4446,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58310,
+      "sha256": "e1e242ccfe3d174253c65df03d4e703185050a5f1088e7b023612aef7c33c9cb"
+    },
+    {
+      "file": "00318.png",
+      "elapsedMs": 15930.021,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58296,
+      "sha256": "80e6208314166cf5f73877bc2849e604048b8339132a75904dbdbfaa26209210"
+    },
+    {
+      "file": "00319.png",
+      "elapsedMs": 15980.1315,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58276,
+      "sha256": "70ca5887d0e1de45dec648d4dbaecee105fc7e5b24536ab3af760506f30cff4b"
+    },
+    {
+      "file": "00320.png",
+      "elapsedMs": 16030.2565,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58282,
+      "sha256": "a51fea83bf749e9290e70a18acddb046e4cd21055d753c6a1d8ea18c1f439bd2"
+    },
+    {
+      "file": "00321.png",
+      "elapsedMs": 16080.455,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58236,
+      "sha256": "d8af6af535e1e44c03195b3c37e7557a8cbe11d3b6ad46824f695dbeb726420f"
+    },
+    {
+      "file": "00322.png",
+      "elapsedMs": 16130.3572,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58255,
+      "sha256": "aadbc4b7033f39b8ee1cc4009731f3cada14b818ab472a62c7c9f6cbef92644b"
+    },
+    {
+      "file": "00323.png",
+      "elapsedMs": 16180.558,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58278,
+      "sha256": "73614791373998a075cf71ab44ccd523c90c63d1f848115e9b97a64982311efd"
+    },
+    {
+      "file": "00324.png",
+      "elapsedMs": 16230.6308,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58270,
+      "sha256": "c8db550512c69e3151ecb8ac91a133e7c16c4f1a46318396358937cddb76ab37"
+    },
+    {
+      "file": "00325.png",
+      "elapsedMs": 16280.9427,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58350,
+      "sha256": "b6d2459c765c40535bc4013c0deb3cf6fdc322491beec4ccf1be04a4bc625fa3"
+    },
+    {
+      "file": "00326.png",
+      "elapsedMs": 16330.7327,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58374,
+      "sha256": "19a6fb82a1b03b2fb81cb21fdcf6e32bff2492b65199e48c224f2f2efed4a095"
+    },
+    {
+      "file": "00327.png",
+      "elapsedMs": 16381.0613,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58337,
+      "sha256": "6a3444543b8b7221b827d5aae32c94a69df6285ba9a4dde3a7a6e57ce9fd9c4d"
+    },
+    {
+      "file": "00328.png",
+      "elapsedMs": 16430.5616,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58339,
+      "sha256": "ff01e603c530d3ad3c1850276e53ae5e51ec956711a7199d3bb048f15660b7d3"
+    },
+    {
+      "file": "00329.png",
+      "elapsedMs": 16480.63,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58271,
+      "sha256": "dc0b54fcd3764b00dff50442376d211f973045747f4dc9fa2b8f0a5513d2cce3"
+    },
+    {
+      "file": "00330.png",
+      "elapsedMs": 16530.6476,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58263,
+      "sha256": "43abe8811b169631dc51c36d435b1aa31e2f0770c198f5fc2f586fd76b4c4c23"
+    },
+    {
+      "file": "00331.png",
+      "elapsedMs": 16580.6395,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58219,
+      "sha256": "b4944fb3d75e6c2ce48b7b44c49f0206596b18095301c75f9c7b3147dea47cd9"
+    },
+    {
+      "file": "00332.png",
+      "elapsedMs": 16631.3279,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58217,
+      "sha256": "f128159787596abddae03b145f960f87329c88a07a57ef693431f1c319f2a9c1"
+    },
+    {
+      "file": "00333.png",
+      "elapsedMs": 16682.5994,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58222,
+      "sha256": "87cb4dd2bc4dd6b8af906e710dc43267a49956f694bc1c2dbf512d84e7a4e233"
+    },
+    {
+      "file": "00334.png",
+      "elapsedMs": 16733.844,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58202,
+      "sha256": "0d23745d5a14501c622ab345c4c85d826e807b1b9c45160d7eb63e6910def64c"
+    },
+    {
+      "file": "00335.png",
+      "elapsedMs": 16784.1818,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58186,
+      "sha256": "04eda392c21ae90253d299043289248f437c39b2fd014cb5beae9a3b91e2cea8"
+    },
+    {
+      "file": "00336.png",
+      "elapsedMs": 16834.0929,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58200,
+      "sha256": "0e82632ad5a6c9dac6a86fff68768ecff97df16e2ba9f0325e5b18d7ac0a40b0"
+    },
+    {
+      "file": "00337.png",
+      "elapsedMs": 16884.4154,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58211,
+      "sha256": "cdedb622ddd2fb90264cec6de0fc5cc7f54be8cb55fd6413c9e25718bf2d9546"
+    },
+    {
+      "file": "00338.png",
+      "elapsedMs": 16934.6688,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58192,
+      "sha256": "8736fa9fe6f9603ebcba3a0618988576073633aa5fe1a5e6474837366cdc2b6f"
+    },
+    {
+      "file": "00339.png",
+      "elapsedMs": 16984.5758,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58153,
+      "sha256": "0cffc19a43c61842ac83ab4f5a7b1af4a07253127328b4202c355c98758007ce"
+    },
+    {
+      "file": "00340.png",
+      "elapsedMs": 17034.4548,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58119,
+      "sha256": "6e4fcb43cb9c75139fd681b6b29b920e79b670bbb95cf9e7cb486336716b3b8b"
+    },
+    {
+      "file": "00341.png",
+      "elapsedMs": 17084.6175,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58149,
+      "sha256": "24aff64158a3ccf53159ae1a321b9ab24b7992067c343b42e6192d008e439d59"
+    },
+    {
+      "file": "00342.png",
+      "elapsedMs": 17134.4994,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58125,
+      "sha256": "0bc96c5335b4e99a7dd889bdd4d88d0865905ec270aca093a3a35494815fefe2"
+    },
+    {
+      "file": "00343.png",
+      "elapsedMs": 17184.5525,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58129,
+      "sha256": "da6fec852cbf17cee03024a414771114c806130b65fdfc58b4e5246aa4d0f546"
+    },
+    {
+      "file": "00344.png",
+      "elapsedMs": 17234.6062,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58112,
+      "sha256": "1170014ae02912689cf3b455a28e0ffe681281b6a228cd1dd204de6708ef3fa4"
+    },
+    {
+      "file": "00345.png",
+      "elapsedMs": 17285.0352,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58147,
+      "sha256": "271e6cd41996a3c44e3e4880459f8944a3f2865043a27c5ee0e44735aeffa7a8"
+    },
+    {
+      "file": "00346.png",
+      "elapsedMs": 17335.3322,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58142,
+      "sha256": "1291f711da41481f7501ced758b4765a369913b5a30b959de3909bfae193feaa"
+    },
+    {
+      "file": "00347.png",
+      "elapsedMs": 17386.9029,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58143,
+      "sha256": "c1bb63ac6f3306eabd778c9643a36720bc53a68ff21e5e9132d2acddef26dea6"
+    },
+    {
+      "file": "00348.png",
+      "elapsedMs": 17436.86,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58143,
+      "sha256": "e50e8b7143a1e8b575e4b33c69e9eb95a19b96ab4ba624c5d06acb361c440aba"
+    },
+    {
+      "file": "00349.png",
+      "elapsedMs": 17487.5062,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58142,
+      "sha256": "3f781ff091a1d8284ebe72161b893617783cbbfae624a06ff8573526ea29d8ed"
+    },
+    {
+      "file": "00350.png",
+      "elapsedMs": 17536.9256,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58152,
+      "sha256": "91648d32ebd6b7ac0295796564f5b7952a81e7fe1bebee223ae853a81ed3ce4e"
+    },
+    {
+      "file": "00351.png",
+      "elapsedMs": 17586.9446,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58148,
+      "sha256": "792b838b0a1066e3e852bf2b2e76a608f885f5a2637dad88a6961cdd489366a4"
+    },
+    {
+      "file": "00352.png",
+      "elapsedMs": 17636.8407,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58165,
+      "sha256": "bf44df92860d45372374a6d7639337ddb9839c7c07365ece25028860d66d1a45"
+    },
+    {
+      "file": "00353.png",
+      "elapsedMs": 17688.4147,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58122,
+      "sha256": "3f2d766872a62fe04f1db9b09f5dec081f0934f3bfa3fd062936b962899361d1"
+    },
+    {
+      "file": "00354.png",
+      "elapsedMs": 17738.6448,
+      "screen": "EditorItemPickerScreen",
+      "bytes": 58123,
+      "sha256": "a1d7f4b18d32a43e08a07607a92e248fda8b5034ec007457a483f2011475f739"
+    },
+    {
+      "file": "00355.png",
+      "elapsedMs": 17790.9152,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57483,
+      "sha256": "d7b6bdc42f97c388c404818e29686671e786166b96800974da5d070c9f50ad18"
+    },
+    {
+      "file": "00356.png",
+      "elapsedMs": 17838.376,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57499,
+      "sha256": "dd627db5771941dae5c20018821bc87de4da9d067d41cd7465ba1b1869ca4079"
+    },
+    {
+      "file": "00357.png",
+      "elapsedMs": 17889.0821,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57542,
+      "sha256": "9d2e5bdec20fe21f63f4812b9643d0f0c26dc2bc1ea140e21f64bf0dc372de6b"
+    },
+    {
+      "file": "00358.png",
+      "elapsedMs": 17939.0458,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57556,
+      "sha256": "bef90fffd10371d8281552c7ecfaa3a3cc9cb49235c6d120564354d3c6187ec4"
+    },
+    {
+      "file": "00359.png",
+      "elapsedMs": 17989.3104,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57583,
+      "sha256": "ffb71bb93575383172f467087f9100ef50d29d116d5a81c51ea4f5422190bbc4"
+    },
+    {
+      "file": "00360.png",
+      "elapsedMs": 18039.3184,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57584,
+      "sha256": "15e7635fc7691703745ce6fd40aa60fd280572847f89937f0750333eca04de10"
+    },
+    {
+      "file": "00361.png",
+      "elapsedMs": 18089.2133,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57605,
+      "sha256": "eea18a105e332c3a8d34bfa7700f32270f0d4c642c331b9cf7eb3444088fc703"
+    },
+    {
+      "file": "00362.png",
+      "elapsedMs": 18139.6517,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57556,
+      "sha256": "be02057fc56e48257c8ec3a88aeb936f0b8512c374f418cc6a76189368832318"
+    },
+    {
+      "file": "00363.png",
+      "elapsedMs": 18189.4327,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57551,
+      "sha256": "3be79e0eb257963548e2ce2b1a4c0c2ba4dc3bb7970a0c4c8a641940081086a4"
+    },
+    {
+      "file": "00364.png",
+      "elapsedMs": 18239.7369,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57566,
+      "sha256": "c0a95a2ff71be91db00c9840f635449e447dd27dbac7dc1198d51a59951a805f"
+    },
+    {
+      "file": "00365.png",
+      "elapsedMs": 18289.8813,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57615,
+      "sha256": "5866bfe636754053eafc1c68fc234d2f83b99e4adf04246c79ef2e2fa07b2911"
+    },
+    {
+      "file": "00366.png",
+      "elapsedMs": 18339.8681,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57597,
+      "sha256": "76abfe85e66b79d4d524b72122ed12d36e9ad7e0891becf59d60d9f9abd9f041"
+    },
+    {
+      "file": "00367.png",
+      "elapsedMs": 18390.2665,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57609,
+      "sha256": "d062510afe8fa1c02f1ce580935d8681d58bbabf6433b87fea46b2abc89d191d"
+    },
+    {
+      "file": "00368.png",
+      "elapsedMs": 18440.3744,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57651,
+      "sha256": "ae1189e2e5a3a99a64f8df22a496cb641c38f74586c276418e95c5d783360bfd"
+    },
+    {
+      "file": "00369.png",
+      "elapsedMs": 18491.0838,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57640,
+      "sha256": "15ccee2578e49ec875731f82e7d745149ae87154fc0833f96f5de1bd5d1ebbba"
+    },
+    {
+      "file": "00370.png",
+      "elapsedMs": 18541.3383,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57603,
+      "sha256": "6dc0bde91c7881f164ee2fb616b634957f9e58185f2cfc9813b4a98a9f0a96bf"
+    },
+    {
+      "file": "00371.png",
+      "elapsedMs": 18591.2601,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57586,
+      "sha256": "913cba092b99893fca084ef5732a1ed1fcbb1473d32ff2ec980d546c5373532b"
+    },
+    {
+      "file": "00372.png",
+      "elapsedMs": 18641.7339,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57513,
+      "sha256": "18d5e9f033d86ae4e813e9c1ec1987355c415d88e101dee1b97b43ffb5256a7b"
+    },
+    {
+      "file": "00373.png",
+      "elapsedMs": 18674.5189,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57513,
+      "sha256": "18d5e9f033d86ae4e813e9c1ec1987355c415d88e101dee1b97b43ffb5256a7b"
+    },
+    {
+      "file": "00374.png",
+      "elapsedMs": 18724.1918,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57487,
+      "sha256": "0e9bcf6b41e00414deee01010763f9dbfe9852469109896be96b24a1b182e9f4"
+    },
+    {
+      "file": "00375.png",
+      "elapsedMs": 18774.4789,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57471,
+      "sha256": "e515d3b46650187d6ba0476626f9fec6be82f71425bd1fd17dfb6a106ae8b2fe"
+    },
+    {
+      "file": "00376.png",
+      "elapsedMs": 18824.3783,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57462,
+      "sha256": "046d654210979708aaf4927d2f9838baa9d23dfe9ce3b0b1e162a3b8375be043"
+    },
+    {
+      "file": "00377.png",
+      "elapsedMs": 18875.7584,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57431,
+      "sha256": "156d9ea55c871424e71366515596326aaba0ea511070bc2aa621a9ddcec63642"
+    },
+    {
+      "file": "00378.png",
+      "elapsedMs": 18924.8688,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57451,
+      "sha256": "3d8fae03f617471aab0f5604fa23a723e685fdbb9205e7d2dbdee88a3cb1113a"
+    },
+    {
+      "file": "00379.png",
+      "elapsedMs": 18975.0664,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57440,
+      "sha256": "86626f1548a834af375c9a3a3fc0f2d9e42e9368160055231062d53a17306210"
+    },
+    {
+      "file": "00380.png",
+      "elapsedMs": 19025.2151,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57428,
+      "sha256": "2077fde11a033b14efd933f73273050844fa433f557f22b688263e4a47aa1db4"
+    },
+    {
+      "file": "00381.png",
+      "elapsedMs": 19075.8779,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57440,
+      "sha256": "31406f52ef49e8ab482ea7562dc7294bde0f3c2ea0f0c89cd189150d39fd8652"
+    },
+    {
+      "file": "00382.png",
+      "elapsedMs": 19133.133,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57569,
+      "sha256": "bf279f6741d9d27921feeb233818cb7d27530456efcdd74a8a8ebcf4c5e080e9"
+    },
+    {
+      "file": "00383.png",
+      "elapsedMs": 19184.2001,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57564,
+      "sha256": "f97c5787d132c10947be48606a72239d22427ca8ce942e793c5e9f7f5b1a1b25"
+    },
+    {
+      "file": "00384.png",
+      "elapsedMs": 19234.241,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57547,
+      "sha256": "6423d0175ae680f398fa4385021b9ad0b2c799826c0f54482b25e5b8a84fbdb1"
+    },
+    {
+      "file": "00385.png",
+      "elapsedMs": 19284.4424,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57517,
+      "sha256": "5de6277da8e28e57de038a36cc83de92b83ec479a2f23b0b07985001de378e53"
+    },
+    {
+      "file": "00386.png",
+      "elapsedMs": 19334.2631,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57558,
+      "sha256": "0712ee628ad95e1239bf67a24772853ad12ea08b1fba4ae7eaf16893d80913f4"
+    },
+    {
+      "file": "00387.png",
+      "elapsedMs": 19384.5509,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57498,
+      "sha256": "715ac5145a68da536ba88fce2e9adcb1520cec2a2c0c614258acaee812e1a8e2"
+    },
+    {
+      "file": "00388.png",
+      "elapsedMs": 19435.2412,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57495,
+      "sha256": "21f7ea41347f9cda43971189632a664a867f9ffef4ba161ecb1da182fd1156a5"
+    },
+    {
+      "file": "00389.png",
+      "elapsedMs": 19485.2677,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57478,
+      "sha256": "0a0e0b02b9ac5a195371db0720373462466f5635fa8f8462b13c1e25a7c41184"
+    },
+    {
+      "file": "00390.png",
+      "elapsedMs": 19536.4869,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57521,
+      "sha256": "ab455b367394e857ae6f760c8b6b3e2b3aeebcd97f1f5d8cfea9f60f9f92879f"
+    },
+    {
+      "file": "00391.png",
+      "elapsedMs": 19586.6827,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57512,
+      "sha256": "0603ebbea0ce7529ef883ebde656f26f87c98ddb01b07626a12a08d4097c11a9"
+    },
+    {
+      "file": "00392.png",
+      "elapsedMs": 19636.3884,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57522,
+      "sha256": "332ff4c88bf4f4088ed026cf4cf54e43effd647fdd1aab683aa898ba542aac54"
+    },
+    {
+      "file": "00393.png",
+      "elapsedMs": 19686.6732,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57520,
+      "sha256": "7390e10d34dbff5ad811dbe85b478a5b1b84bc4afbfd9d74951df15ae660bc59"
+    },
+    {
+      "file": "00394.png",
+      "elapsedMs": 19736.765,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57518,
+      "sha256": "6ee6297ce5ff87f22a2a3590621fd62539bfc750b475a568dc7c327a90e22b71"
+    },
+    {
+      "file": "00395.png",
+      "elapsedMs": 19786.7807,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57538,
+      "sha256": "98871a8d466dac6a6ebb6dcfda95c42591767c23c24bdfd7c977e3506a3c5d62"
+    },
+    {
+      "file": "00396.png",
+      "elapsedMs": 19836.6589,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57541,
+      "sha256": "e276ed54e55aaea41182fee977198b3832a884cf9a46f94dab561b0d639d50ed"
+    },
+    {
+      "file": "00397.png",
+      "elapsedMs": 19888.0957,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57554,
+      "sha256": "6110a7f77a5380578ffa96083c201b77d968905446e79cbbb1492cb6022a74dd"
+    },
+    {
+      "file": "00398.png",
+      "elapsedMs": 19938.3851,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57548,
+      "sha256": "7c71ee9c3b4ec471dc6f6f4afdda5db70e860c3f58dfad893b1049f96b8bf531"
+    },
+    {
+      "file": "00399.png",
+      "elapsedMs": 19988.4773,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57552,
+      "sha256": "1715ebe0d9f70c5e0014aa83da083a9d113f7247f093d8db4d3b169621b11f23"
+    },
+    {
+      "file": "00400.png",
+      "elapsedMs": 20038.4478,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57539,
+      "sha256": "6ce2458251ce7ac9175a5826d346e09a0da594295eb275d6611e65ca182d4ebc"
+    },
+    {
+      "file": "00401.png",
+      "elapsedMs": 20088.862,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57544,
+      "sha256": "6ebbb8cd4c6abfb3d35d1ed6947c3ff809ce379e2f7e8077b1b2df0b4210312f"
+    },
+    {
+      "file": "00402.png",
+      "elapsedMs": 20139.0598,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57542,
+      "sha256": "2ef75417edd271648ea007a23dcf2be05bcaaeddd663608f6aa49d1a05ff4b9d"
+    },
+    {
+      "file": "00403.png",
+      "elapsedMs": 20191.2251,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57591,
+      "sha256": "679dcf397759df714515875c4f4e62db504e9c8adc123dab697f6ee01e44f07b"
+    },
+    {
+      "file": "00404.png",
+      "elapsedMs": 20239.0571,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57587,
+      "sha256": "8c8c8f72aab0060c3ba9d358abf057eb2cac94f982b786fa4113dcaf3b36e8ef"
+    },
+    {
+      "file": "00405.png",
+      "elapsedMs": 20289.1267,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57589,
+      "sha256": "679e7ba478c2c5d80cec5ea5321630807df5cc11a19102c68495db4abd34a6a2"
+    },
+    {
+      "file": "00406.png",
+      "elapsedMs": 20339.2941,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57639,
+      "sha256": "3751b27021dbffc2ed3912b8099f3cc4fa28db7f0aa11c67fe484e27c66ad516"
+    },
+    {
+      "file": "00407.png",
+      "elapsedMs": 20389.4279,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57682,
+      "sha256": "045f3def355ce75bc2885efd73b70072b390d12ace4056c16621bc70380655a3"
+    },
+    {
+      "file": "00408.png",
+      "elapsedMs": 20440.3407,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57638,
+      "sha256": "b8b8daf902668d1a277bd019733c9b2d4f5ca7cb092ff4f8a915b8a4d3f4eae2"
+    },
+    {
+      "file": "00409.png",
+      "elapsedMs": 20489.8352,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57642,
+      "sha256": "2f47649901f9d535e418e929fefa25a800facad5108f5c0714357e90b7fea8af"
+    },
+    {
+      "file": "00410.png",
+      "elapsedMs": 20539.9004,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57646,
+      "sha256": "5e799408991fb5677548cd1a08c9f12918ce332bba68d8accc322df47559a17a"
+    },
+    {
+      "file": "00411.png",
+      "elapsedMs": 20590.3142,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57636,
+      "sha256": "ca55a043e43b30b770cf6b9eee69532cf74611877047046d831a5074d2ba7b47"
+    },
+    {
+      "file": "00412.png",
+      "elapsedMs": 20640.4297,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57636,
+      "sha256": "515d28fe0762235addfd3022711ac69a68528fd493377a2d2056a9ac82b985e5"
+    },
+    {
+      "file": "00413.png",
+      "elapsedMs": 20691.3783,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57636,
+      "sha256": "dee2653c06936daeb4401c5560182db5363d971755181ca9be8e10ed374b4242"
+    },
+    {
+      "file": "00414.png",
+      "elapsedMs": 20724.2942,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57636,
+      "sha256": "dee2653c06936daeb4401c5560182db5363d971755181ca9be8e10ed374b4242"
+    },
+    {
+      "file": "00415.png",
+      "elapsedMs": 20791.7867,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57648,
+      "sha256": "39b763f0409d6679bf65a40185d2801ed78f6b9b1e17087a23d80273a056dd6a"
+    },
+    {
+      "file": "00416.png",
+      "elapsedMs": 20824.5469,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57648,
+      "sha256": "39b763f0409d6679bf65a40185d2801ed78f6b9b1e17087a23d80273a056dd6a"
+    },
+    {
+      "file": "00417.png",
+      "elapsedMs": 20874.6678,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57644,
+      "sha256": "4a166780d06f763b2e2bb90434ba38719854f1767b6aa4751b6d973bdbfccb19"
+    },
+    {
+      "file": "00418.png",
+      "elapsedMs": 20924.5546,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57629,
+      "sha256": "4ab1b9fc463e2df8c87b8b418f8ec27c7faa5f54de27a0d65590813e60ec6c93"
+    },
+    {
+      "file": "00419.png",
+      "elapsedMs": 20974.5493,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57629,
+      "sha256": "4ab1b9fc463e2df8c87b8b418f8ec27c7faa5f54de27a0d65590813e60ec6c93"
+    },
+    {
+      "file": "00420.png",
+      "elapsedMs": 21024.4311,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57645,
+      "sha256": "e3a950897daae8592f3f821b9175b39318a9bb1463ce49b877372621d2e165d4"
+    },
+    {
+      "file": "00421.png",
+      "elapsedMs": 21074.4786,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57643,
+      "sha256": "dc3be621c5a152c8c9dcc8cc903c702962bf8ec9310bc730bb53fcaa43da0e3c"
+    },
+    {
+      "file": "00422.png",
+      "elapsedMs": 21124.5759,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57641,
+      "sha256": "e16fde59bc64d9aa2b2c17c2bbff1efdfad1ce444578216dd3081e8e6c7141a2"
+    },
+    {
+      "file": "00423.png",
+      "elapsedMs": 21174.3864,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57647,
+      "sha256": "889978084f8146b311319ac4f8f01f97a4d83b0865317bfadda8a4e5d8d187d8"
+    },
+    {
+      "file": "00424.png",
+      "elapsedMs": 21224.5181,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57642,
+      "sha256": "ea104162f5fa11305c348458728375d798a8af7764d1a82b2583a97099274168"
+    },
+    {
+      "file": "00425.png",
+      "elapsedMs": 21274.4676,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57654,
+      "sha256": "04e025ff9e6930a89ee30c766fd490dfddb06d739adeaa22dccb1ac442d15c9b"
+    },
+    {
+      "file": "00426.png",
+      "elapsedMs": 21325.0549,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57748,
+      "sha256": "7b2fb1be6064aac25633a0f194395239fb61882ee37d974872eeb432f70aa18d"
+    },
+    {
+      "file": "00427.png",
+      "elapsedMs": 21374.8651,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57754,
+      "sha256": "2e322c1074909284ba4f32adc19a0d2c6d7c31715de310788cc0fb3c841b2955"
+    },
+    {
+      "file": "00428.png",
+      "elapsedMs": 21425.5075,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57752,
+      "sha256": "ac2973e2e139491b03fbae482c9226013015eb4c0e2126300b08628eb620130f"
+    },
+    {
+      "file": "00429.png",
+      "elapsedMs": 21475.5939,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57754,
+      "sha256": "60b55510ba6f275986211d0815e876a8915c6ffede78f849643f31e1276b4f98"
+    },
+    {
+      "file": "00430.png",
+      "elapsedMs": 21525.8415,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57724,
+      "sha256": "d526c00873e290c5e2c0070cac675e5cabb688a959b1c0717387a0bad1393a00"
+    },
+    {
+      "file": "00431.png",
+      "elapsedMs": 21576.2189,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57698,
+      "sha256": "fba9e02f2d2eccbe76abd20207ba4c7596335236942a6a35d13059e9377aed8b"
+    },
+    {
+      "file": "00432.png",
+      "elapsedMs": 21625.9192,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57693,
+      "sha256": "3c744134b7c501a806177c60b7375a76cdc5a236da9abd94785b42bf4b039080"
+    },
+    {
+      "file": "00433.png",
+      "elapsedMs": 21677.263,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57691,
+      "sha256": "9eae32158dd159b97a8dc3bfa90dc2f465edfe292595678a9387a3203fd84e2f"
+    },
+    {
+      "file": "00434.png",
+      "elapsedMs": 21726.1772,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57844,
+      "sha256": "669343fa3ca80b3ddcf60c2bbab2a070dd4dff0cdcfe54a11dcb37458be4ae4a"
+    },
+    {
+      "file": "00435.png",
+      "elapsedMs": 21775.9522,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57811,
+      "sha256": "ee3ce6c2563e33da1d2068e9ec611ed06e23ed784d04796d2b38401160dd9e67"
+    },
+    {
+      "file": "00436.png",
+      "elapsedMs": 21826.067,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57811,
+      "sha256": "ee3ce6c2563e33da1d2068e9ec611ed06e23ed784d04796d2b38401160dd9e67"
+    },
+    {
+      "file": "00437.png",
+      "elapsedMs": 21885.8818,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57811,
+      "sha256": "ee3ce6c2563e33da1d2068e9ec611ed06e23ed784d04796d2b38401160dd9e67"
+    },
+    {
+      "file": "00438.png",
+      "elapsedMs": 21926.6545,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57807,
+      "sha256": "1778d4f27092ea56367e0f3554a5b54e4b2d8304ec1f2786b199a07eec03aa94"
+    },
+    {
+      "file": "00439.png",
+      "elapsedMs": 21977.1617,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57807,
+      "sha256": "1778d4f27092ea56367e0f3554a5b54e4b2d8304ec1f2786b199a07eec03aa94"
+    },
+    {
+      "file": "00440.png",
+      "elapsedMs": 22028.325,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57807,
+      "sha256": "1778d4f27092ea56367e0f3554a5b54e4b2d8304ec1f2786b199a07eec03aa94"
+    },
+    {
+      "file": "00441.png",
+      "elapsedMs": 22078.2381,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57807,
+      "sha256": "1778d4f27092ea56367e0f3554a5b54e4b2d8304ec1f2786b199a07eec03aa94"
+    },
+    {
+      "file": "00442.png",
+      "elapsedMs": 22128.3982,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57795,
+      "sha256": "6900e1a066b91df6fd35489e35f9a4bffccedc2e82719163002e2f00a04c2e81"
+    },
+    {
+      "file": "00443.png",
+      "elapsedMs": 22179.2259,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57800,
+      "sha256": "674cf7827a5d681cc13cf209958d9326612461383580478ff4e6642d9161b665"
+    },
+    {
+      "file": "00444.png",
+      "elapsedMs": 22229.384,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57811,
+      "sha256": "c070054c1545a6846729106f143934836432626618d105d6762f145be3ec39c8"
+    },
+    {
+      "file": "00445.png",
+      "elapsedMs": 22279.4088,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57757,
+      "sha256": "0fbe9e34ea21d30a7f3e1e70f39510499bd1f8830d3433cd541946603e30195f"
+    },
+    {
+      "file": "00446.png",
+      "elapsedMs": 22329.5171,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57803,
+      "sha256": "9fa031bad8427e37348bee5a3f8dde5cf2bdec913bef0876c18d5469234d7892"
+    },
+    {
+      "file": "00447.png",
+      "elapsedMs": 22379.5701,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57827,
+      "sha256": "9ec3af2789e35423c725e05600f6002d37f9bc5bf8072b28330d8e7e148c72b0"
+    },
+    {
+      "file": "00448.png",
+      "elapsedMs": 22430.6678,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57817,
+      "sha256": "61d81410e93d3f06adcb19f267671293ee3024e42a53b10802d262e450a169d9"
+    },
+    {
+      "file": "00449.png",
+      "elapsedMs": 22480.8407,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57802,
+      "sha256": "494e9557bb5a0a6fdeff361681683de0ff9bf1197c0b9932b7688c0d912d7510"
+    },
+    {
+      "file": "00450.png",
+      "elapsedMs": 22530.6458,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57832,
+      "sha256": "76f030eb4f7901fe27387a33a75a3811dcb7f99e352af911e490351bbc0866ab"
+    },
+    {
+      "file": "00451.png",
+      "elapsedMs": 22581.5072,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57837,
+      "sha256": "ee40a7248549459210b3741d214b0a591f05fbe7dd4b27ea6daeec376c111c46"
+    },
+    {
+      "file": "00452.png",
+      "elapsedMs": 22631.3622,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57824,
+      "sha256": "de93612d6b3ce16f30369f4f897287325350e9c0192d5f89d37321c46def48d9"
+    },
+    {
+      "file": "00453.png",
+      "elapsedMs": 22681.9429,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57822,
+      "sha256": "6d04f2bdacef5f049dfa7edad98699ddae4883ce382a0a7ce59fe8d5b8c5b119"
+    },
+    {
+      "file": "00454.png",
+      "elapsedMs": 22731.74,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57841,
+      "sha256": "91ea15c507da10ed0de848e25a3ccd41e26ffa1e336220267264dca95565d2fd"
+    },
+    {
+      "file": "00455.png",
+      "elapsedMs": 22781.7894,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57847,
+      "sha256": "8bba3d7a4049a04927c29fce07d25c0e83cdf75ed992746f6597b1c5a8d96452"
+    },
+    {
+      "file": "00456.png",
+      "elapsedMs": 22831.9457,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57825,
+      "sha256": "03493f34ec26f2ed514c101b8856bdf2a3d414ea2d5bc6b51a5d293907591804"
+    },
+    {
+      "file": "00457.png",
+      "elapsedMs": 22882.7154,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57822,
+      "sha256": "dccc80e213e809934debdff47c86f75e7a2d6dd856ae872c36454339ef8db826"
+    },
+    {
+      "file": "00458.png",
+      "elapsedMs": 22933.1104,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57804,
+      "sha256": "7bede6af85997d51fba4dfd92a41e5908daf3b750e41e9a02cd713601b130d19"
+    },
+    {
+      "file": "00459.png",
+      "elapsedMs": 22983.2668,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57847,
+      "sha256": "36cc0cb8ee8f806d889f43e66cad6856f19b86ecdfebff52cc5c5f7f1b554e8e"
+    },
+    {
+      "file": "00460.png",
+      "elapsedMs": 23033.5068,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57907,
+      "sha256": "22eac33f5256419e37a92b4fa7af95bc20145fdf580fea7c563daa68ca735033"
+    },
+    {
+      "file": "00461.png",
+      "elapsedMs": 23083.1353,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57854,
+      "sha256": "88eb052b4dd1ea46bdf0d7b3f5fd8cca28cc808e3eddcf6899649b55eee9b046"
+    },
+    {
+      "file": "00462.png",
+      "elapsedMs": 23134.5879,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57858,
+      "sha256": "3ab8290898b873d60db03ad28d4715a5b1bc8901c005a0c1e0ab276256f9a8fe"
+    },
+    {
+      "file": "00463.png",
+      "elapsedMs": 23185.4828,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57827,
+      "sha256": "18932d663029e3ce454c7d5f67e79ff01de87b9e91d6c91e0b16b313e0b3710e"
+    },
+    {
+      "file": "00464.png",
+      "elapsedMs": 23236.1321,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57816,
+      "sha256": "1a59ad3c712db83037f57ed470db59ea73b434d425ded518d2bc5327096a6e9a"
+    },
+    {
+      "file": "00465.png",
+      "elapsedMs": 23288.1641,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57807,
+      "sha256": "9adb00cc54197eb54beffce0475ce624868614e0a5907b92d229f42a5fd17874"
+    },
+    {
+      "file": "00466.png",
+      "elapsedMs": 23334.6739,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57833,
+      "sha256": "55cb7da09d14150b5fc75199c3d1dfdd14bd7301b09ce6d27e0defca4e7a2ea5"
+    },
+    {
+      "file": "00467.png",
+      "elapsedMs": 23385.8295,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57831,
+      "sha256": "8b9e891ddb287e32fd3df701d71b5f3a212f7ddd58aa93f4c541668993e692ed"
+    },
+    {
+      "file": "00468.png",
+      "elapsedMs": 23436.4372,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57826,
+      "sha256": "57ca6e9a5236e34db8c9468e811406f669f69fe0bce000a5908f89e30360283e"
+    },
+    {
+      "file": "00469.png",
+      "elapsedMs": 23485.3783,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57826,
+      "sha256": "57ca6e9a5236e34db8c9468e811406f669f69fe0bce000a5908f89e30360283e"
+    },
+    {
+      "file": "00470.png",
+      "elapsedMs": 23535.3025,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57826,
+      "sha256": "57ca6e9a5236e34db8c9468e811406f669f69fe0bce000a5908f89e30360283e"
+    },
+    {
+      "file": "00471.png",
+      "elapsedMs": 23585.4926,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57810,
+      "sha256": "a0dedf07c48f5980f81276d85385b41005822ceac612576e9c381b9f441c8ecd"
+    },
+    {
+      "file": "00472.png",
+      "elapsedMs": 23635.4928,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57810,
+      "sha256": "a0dedf07c48f5980f81276d85385b41005822ceac612576e9c381b9f441c8ecd"
+    },
+    {
+      "file": "00473.png",
+      "elapsedMs": 23685.9194,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57810,
+      "sha256": "a0dedf07c48f5980f81276d85385b41005822ceac612576e9c381b9f441c8ecd"
+    },
+    {
+      "file": "00474.png",
+      "elapsedMs": 23735.5548,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57825,
+      "sha256": "d371f8da83eca6189e2a85b12efd14cdb742b92c7f21cdb4209bc37f6bc52dfe"
+    },
+    {
+      "file": "00475.png",
+      "elapsedMs": 23785.6934,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57825,
+      "sha256": "d371f8da83eca6189e2a85b12efd14cdb742b92c7f21cdb4209bc37f6bc52dfe"
+    },
+    {
+      "file": "00476.png",
+      "elapsedMs": 23836.7848,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57825,
+      "sha256": "d371f8da83eca6189e2a85b12efd14cdb742b92c7f21cdb4209bc37f6bc52dfe"
+    },
+    {
+      "file": "00477.png",
+      "elapsedMs": 23886.7023,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57825,
+      "sha256": "d371f8da83eca6189e2a85b12efd14cdb742b92c7f21cdb4209bc37f6bc52dfe"
+    },
+    {
+      "file": "00478.png",
+      "elapsedMs": 23937.3451,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57825,
+      "sha256": "d371f8da83eca6189e2a85b12efd14cdb742b92c7f21cdb4209bc37f6bc52dfe"
+    },
+    {
+      "file": "00479.png",
+      "elapsedMs": 23987.889,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57871,
+      "sha256": "f37ccec87662bfc3b4feed8341d86ed413591b03bc5c10bd51239e34fdb61118"
+    },
+    {
+      "file": "00480.png",
+      "elapsedMs": 24038.9088,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57903,
+      "sha256": "c5947d81f63ee9abfeec09b0df0ea370b62fbe93a75b2ed5f8ee4d5596f11880"
+    },
+    {
+      "file": "00481.png",
+      "elapsedMs": 24088.8979,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57913,
+      "sha256": "d5062e414afa0aa59f1145d30ad0e3b242cf7318efb48862e25c62d81e8c5dce"
+    },
+    {
+      "file": "00482.png",
+      "elapsedMs": 24138.5267,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57915,
+      "sha256": "31705d30d59824605cf87b28fd7aee629c4b34d64dece5a91b7c899ed26b7edd"
+    },
+    {
+      "file": "00483.png",
+      "elapsedMs": 24189.2073,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57911,
+      "sha256": "7c38725b8e23a9cea0f7cb09328d9be5ebb2e0bdddab6bd10630c0fbc3089ed0"
+    },
+    {
+      "file": "00484.png",
+      "elapsedMs": 24238.6395,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57906,
+      "sha256": "241a985bb73e2aa7bbfb0874ed1f08e8b6a6ca5e9773a6619c8d467926e68acd"
+    },
+    {
+      "file": "00485.png",
+      "elapsedMs": 24288.999,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57882,
+      "sha256": "363c9c76d7fb4bf9960ce56247a1cdf3f93b8a303b32bbb2dcaec37f4ea963ab"
+    },
+    {
+      "file": "00486.png",
+      "elapsedMs": 24339.0085,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57859,
+      "sha256": "652f24b944100fe8a512658a783a9f444553a591e32e967c96a814f27e5e9acd"
+    },
+    {
+      "file": "00487.png",
+      "elapsedMs": 24389.7575,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57865,
+      "sha256": "1a890817ef9fb1fc11670739eaf4e3fb0381ed88f8a1c13cfcb94f3995503037"
+    },
+    {
+      "file": "00488.png",
+      "elapsedMs": 24440.2139,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57865,
+      "sha256": "1a890817ef9fb1fc11670739eaf4e3fb0381ed88f8a1c13cfcb94f3995503037"
+    },
+    {
+      "file": "00489.png",
+      "elapsedMs": 24489.5654,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57865,
+      "sha256": "1a890817ef9fb1fc11670739eaf4e3fb0381ed88f8a1c13cfcb94f3995503037"
+    },
+    {
+      "file": "00490.png",
+      "elapsedMs": 24540.257,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57871,
+      "sha256": "0c62ca62ee0df12193bbda4b791759067180e0fe2525215e47e0ee8269411138"
+    },
+    {
+      "file": "00491.png",
+      "elapsedMs": 24590.4576,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57871,
+      "sha256": "0c62ca62ee0df12193bbda4b791759067180e0fe2525215e47e0ee8269411138"
+    },
+    {
+      "file": "00492.png",
+      "elapsedMs": 24640.8899,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57871,
+      "sha256": "0c62ca62ee0df12193bbda4b791759067180e0fe2525215e47e0ee8269411138"
+    },
+    {
+      "file": "00493.png",
+      "elapsedMs": 24690.5603,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57871,
+      "sha256": "0c62ca62ee0df12193bbda4b791759067180e0fe2525215e47e0ee8269411138"
+    },
+    {
+      "file": "00494.png",
+      "elapsedMs": 24724.6345,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57871,
+      "sha256": "0c62ca62ee0df12193bbda4b791759067180e0fe2525215e47e0ee8269411138"
+    },
+    {
+      "file": "00495.png",
+      "elapsedMs": 24791.3065,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57747,
+      "sha256": "8c9e8c07e5fb963731d56a44b2fd877ed0daaeb84be02c751d68d8360f99943d"
+    },
+    {
+      "file": "00496.png",
+      "elapsedMs": 24841.2126,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57747,
+      "sha256": "8c9e8c07e5fb963731d56a44b2fd877ed0daaeb84be02c751d68d8360f99943d"
+    },
+    {
+      "file": "00497.png",
+      "elapsedMs": 24891.8157,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57747,
+      "sha256": "8c9e8c07e5fb963731d56a44b2fd877ed0daaeb84be02c751d68d8360f99943d"
+    },
+    {
+      "file": "00498.png",
+      "elapsedMs": 24941.8533,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57747,
+      "sha256": "8c9e8c07e5fb963731d56a44b2fd877ed0daaeb84be02c751d68d8360f99943d"
+    },
+    {
+      "file": "00499.png",
+      "elapsedMs": 24974.3035,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57747,
+      "sha256": "8c9e8c07e5fb963731d56a44b2fd877ed0daaeb84be02c751d68d8360f99943d"
+    },
+    {
+      "file": "00500.png",
+      "elapsedMs": 25024.3845,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57747,
+      "sha256": "8c9e8c07e5fb963731d56a44b2fd877ed0daaeb84be02c751d68d8360f99943d"
+    },
+    {
+      "file": "00501.png",
+      "elapsedMs": 25074.4158,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57747,
+      "sha256": "8c9e8c07e5fb963731d56a44b2fd877ed0daaeb84be02c751d68d8360f99943d"
+    },
+    {
+      "file": "00502.png",
+      "elapsedMs": 25124.7738,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57747,
+      "sha256": "8c9e8c07e5fb963731d56a44b2fd877ed0daaeb84be02c751d68d8360f99943d"
+    },
+    {
+      "file": "00503.png",
+      "elapsedMs": 25175.3948,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57773,
+      "sha256": "4b4286c9200ba9f98475bfc140429279e311735932e2624f6dc7eda4cf94b6b6"
+    },
+    {
+      "file": "00504.png",
+      "elapsedMs": 25225.0326,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57773,
+      "sha256": "4b4286c9200ba9f98475bfc140429279e311735932e2624f6dc7eda4cf94b6b6"
+    },
+    {
+      "file": "00505.png",
+      "elapsedMs": 25277.123,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57773,
+      "sha256": "4b4286c9200ba9f98475bfc140429279e311735932e2624f6dc7eda4cf94b6b6"
+    },
+    {
+      "file": "00506.png",
+      "elapsedMs": 25326.059,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57773,
+      "sha256": "4b4286c9200ba9f98475bfc140429279e311735932e2624f6dc7eda4cf94b6b6"
+    },
+    {
+      "file": "00507.png",
+      "elapsedMs": 25376.7612,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57773,
+      "sha256": "4b4286c9200ba9f98475bfc140429279e311735932e2624f6dc7eda4cf94b6b6"
+    },
+    {
+      "file": "00508.png",
+      "elapsedMs": 25427.1048,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57773,
+      "sha256": "4b4286c9200ba9f98475bfc140429279e311735932e2624f6dc7eda4cf94b6b6"
+    },
+    {
+      "file": "00509.png",
+      "elapsedMs": 25478.3986,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57762,
+      "sha256": "4828a3df23fc13a4cf61c2b0f0ed39537863bef0151efb0501263818d2d37531"
+    },
+    {
+      "file": "00510.png",
+      "elapsedMs": 25524.8973,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57762,
+      "sha256": "4828a3df23fc13a4cf61c2b0f0ed39537863bef0151efb0501263818d2d37531"
+    },
+    {
+      "file": "00511.png",
+      "elapsedMs": 25587.5456,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 57762,
+      "sha256": "4828a3df23fc13a4cf61c2b0f0ed39537863bef0151efb0501263818d2d37531"
+    },
+    {
+      "file": "00512.png",
+      "elapsedMs": 25640.6173,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58964,
+      "sha256": "76c770a46b0ee8c285dad4b0ee322a1fafd0c9e0aeb009b1053bb4baab09f4e6"
+    },
+    {
+      "file": "00513.png",
+      "elapsedMs": 25691.7982,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58964,
+      "sha256": "76c770a46b0ee8c285dad4b0ee322a1fafd0c9e0aeb009b1053bb4baab09f4e6"
+    },
+    {
+      "file": "00514.png",
+      "elapsedMs": 25740.7839,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58974,
+      "sha256": "f93210e77d201ae1002369a8a59ff4f46e9905f89771eb952292f1a007eb7b5c"
+    },
+    {
+      "file": "00515.png",
+      "elapsedMs": 25774.6365,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58974,
+      "sha256": "f93210e77d201ae1002369a8a59ff4f46e9905f89771eb952292f1a007eb7b5c"
+    },
+    {
+      "file": "00516.png",
+      "elapsedMs": 25836.9106,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58974,
+      "sha256": "f93210e77d201ae1002369a8a59ff4f46e9905f89771eb952292f1a007eb7b5c"
+    },
+    {
+      "file": "00517.png",
+      "elapsedMs": 25887.2449,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58974,
+      "sha256": "f93210e77d201ae1002369a8a59ff4f46e9905f89771eb952292f1a007eb7b5c"
+    },
+    {
+      "file": "00518.png",
+      "elapsedMs": 25936.6153,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58974,
+      "sha256": "f93210e77d201ae1002369a8a59ff4f46e9905f89771eb952292f1a007eb7b5c"
+    },
+    {
+      "file": "00519.png",
+      "elapsedMs": 25986.6157,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58974,
+      "sha256": "f93210e77d201ae1002369a8a59ff4f46e9905f89771eb952292f1a007eb7b5c"
+    },
+    {
+      "file": "00520.png",
+      "elapsedMs": 26036.3566,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58974,
+      "sha256": "f93210e77d201ae1002369a8a59ff4f46e9905f89771eb952292f1a007eb7b5c"
+    },
+    {
+      "file": "00521.png",
+      "elapsedMs": 26087.5264,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58974,
+      "sha256": "f93210e77d201ae1002369a8a59ff4f46e9905f89771eb952292f1a007eb7b5c"
+    },
+    {
+      "file": "00522.png",
+      "elapsedMs": 26138.2145,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58936,
+      "sha256": "e062127392f69e3483b83256eed1370116688652e2c8bbb421367e66b2ea3e5b"
+    },
+    {
+      "file": "00523.png",
+      "elapsedMs": 26189.6209,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58951,
+      "sha256": "1c6af59f8ebd78bb9df918644d748312b6fca3b4cdd0009b7069017e36164d6c"
+    },
+    {
+      "file": "00524.png",
+      "elapsedMs": 26239.6221,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00525.png",
+      "elapsedMs": 26289.941,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00526.png",
+      "elapsedMs": 26339.7803,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00527.png",
+      "elapsedMs": 26391.9704,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00528.png",
+      "elapsedMs": 26429.9357,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00529.png",
+      "elapsedMs": 26477.5255,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00530.png",
+      "elapsedMs": 26528.6105,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00531.png",
+      "elapsedMs": 26578.6917,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00532.png",
+      "elapsedMs": 26629.2116,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00533.png",
+      "elapsedMs": 26678.8918,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00534.png",
+      "elapsedMs": 26729.0065,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00535.png",
+      "elapsedMs": 26779.2194,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00536.png",
+      "elapsedMs": 26828.9316,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58899,
+      "sha256": "f4afc41317f04765a2c974f1afcf41e8711d310fbcacf6b1580f746e28e1430d"
+    },
+    {
+      "file": "00537.png",
+      "elapsedMs": 26878.8871,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58988,
+      "sha256": "88ada6b404c967667434ca365c1281ed7ac321e448b8ed41e0315cde816d97ba"
+    },
+    {
+      "file": "00538.png",
+      "elapsedMs": 26929.0372,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58988,
+      "sha256": "88ada6b404c967667434ca365c1281ed7ac321e448b8ed41e0315cde816d97ba"
+    },
+    {
+      "file": "00539.png",
+      "elapsedMs": 26978.9122,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58988,
+      "sha256": "88ada6b404c967667434ca365c1281ed7ac321e448b8ed41e0315cde816d97ba"
+    },
+    {
+      "file": "00540.png",
+      "elapsedMs": 27029.2566,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58988,
+      "sha256": "88ada6b404c967667434ca365c1281ed7ac321e448b8ed41e0315cde816d97ba"
+    },
+    {
+      "file": "00541.png",
+      "elapsedMs": 27079.2323,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58988,
+      "sha256": "88ada6b404c967667434ca365c1281ed7ac321e448b8ed41e0315cde816d97ba"
+    },
+    {
+      "file": "00542.png",
+      "elapsedMs": 27129.443,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58999,
+      "sha256": "d3a26588168a5afd0baff1266d11bf4bff7351ab34c07810397073954ef50685"
+    },
+    {
+      "file": "00543.png",
+      "elapsedMs": 27179.6009,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58999,
+      "sha256": "d3a26588168a5afd0baff1266d11bf4bff7351ab34c07810397073954ef50685"
+    },
+    {
+      "file": "00544.png",
+      "elapsedMs": 27230.499,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58967,
+      "sha256": "db1bb8b2c719da3f8cdc980fbfa4034f75b65de8dcd3ddd9b4956e80d356a016"
+    },
+    {
+      "file": "00545.png",
+      "elapsedMs": 27280.404,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58967,
+      "sha256": "db1bb8b2c719da3f8cdc980fbfa4034f75b65de8dcd3ddd9b4956e80d356a016"
+    },
+    {
+      "file": "00546.png",
+      "elapsedMs": 27330.9854,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58967,
+      "sha256": "db1bb8b2c719da3f8cdc980fbfa4034f75b65de8dcd3ddd9b4956e80d356a016"
+    },
+    {
+      "file": "00547.png",
+      "elapsedMs": 27380.5891,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58967,
+      "sha256": "db1bb8b2c719da3f8cdc980fbfa4034f75b65de8dcd3ddd9b4956e80d356a016"
+    },
+    {
+      "file": "00548.png",
+      "elapsedMs": 27430.3892,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58967,
+      "sha256": "db1bb8b2c719da3f8cdc980fbfa4034f75b65de8dcd3ddd9b4956e80d356a016"
+    },
+    {
+      "file": "00549.png",
+      "elapsedMs": 27480.6784,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58982,
+      "sha256": "c2af8ec648dc306d4b6a86c80910be4cfa0d55ad90979c82e53123658c66ced7"
+    },
+    {
+      "file": "00550.png",
+      "elapsedMs": 27532.0002,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58982,
+      "sha256": "c2af8ec648dc306d4b6a86c80910be4cfa0d55ad90979c82e53123658c66ced7"
+    },
+    {
+      "file": "00551.png",
+      "elapsedMs": 27581.4213,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59000,
+      "sha256": "0584c76dc5bab2c882482091e04f4bf3888e293d8c6a3e55cf387814055e796e"
+    },
+    {
+      "file": "00552.png",
+      "elapsedMs": 27631.4245,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59000,
+      "sha256": "0584c76dc5bab2c882482091e04f4bf3888e293d8c6a3e55cf387814055e796e"
+    },
+    {
+      "file": "00553.png",
+      "elapsedMs": 27681.6892,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59000,
+      "sha256": "0584c76dc5bab2c882482091e04f4bf3888e293d8c6a3e55cf387814055e796e"
+    },
+    {
+      "file": "00554.png",
+      "elapsedMs": 27731.5858,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59000,
+      "sha256": "0584c76dc5bab2c882482091e04f4bf3888e293d8c6a3e55cf387814055e796e"
+    },
+    {
+      "file": "00555.png",
+      "elapsedMs": 27781.9034,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59000,
+      "sha256": "0584c76dc5bab2c882482091e04f4bf3888e293d8c6a3e55cf387814055e796e"
+    },
+    {
+      "file": "00556.png",
+      "elapsedMs": 27832.5044,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59000,
+      "sha256": "0584c76dc5bab2c882482091e04f4bf3888e293d8c6a3e55cf387814055e796e"
+    },
+    {
+      "file": "00557.png",
+      "elapsedMs": 27882.7553,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59000,
+      "sha256": "0584c76dc5bab2c882482091e04f4bf3888e293d8c6a3e55cf387814055e796e"
+    },
+    {
+      "file": "00558.png",
+      "elapsedMs": 27933.2348,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59000,
+      "sha256": "0584c76dc5bab2c882482091e04f4bf3888e293d8c6a3e55cf387814055e796e"
+    },
+    {
+      "file": "00559.png",
+      "elapsedMs": 27983.2761,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59015,
+      "sha256": "340589a6ffd3861c7a67b39d86f0277942d747234543ff4821174fed5a616bb7"
+    },
+    {
+      "file": "00560.png",
+      "elapsedMs": 28033.463,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59063,
+      "sha256": "53a2935c7a609b47d01c8004aa30a6666ecddbf3b96fea92ef22453096296608"
+    },
+    {
+      "file": "00561.png",
+      "elapsedMs": 28083.516,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59063,
+      "sha256": "53a2935c7a609b47d01c8004aa30a6666ecddbf3b96fea92ef22453096296608"
+    },
+    {
+      "file": "00562.png",
+      "elapsedMs": 28134.9226,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59063,
+      "sha256": "53a2935c7a609b47d01c8004aa30a6666ecddbf3b96fea92ef22453096296608"
+    },
+    {
+      "file": "00563.png",
+      "elapsedMs": 28186.4089,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59063,
+      "sha256": "53a2935c7a609b47d01c8004aa30a6666ecddbf3b96fea92ef22453096296608"
+    },
+    {
+      "file": "00564.png",
+      "elapsedMs": 28235.9261,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59063,
+      "sha256": "53a2935c7a609b47d01c8004aa30a6666ecddbf3b96fea92ef22453096296608"
+    },
+    {
+      "file": "00565.png",
+      "elapsedMs": 28286.4852,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59065,
+      "sha256": "153e87e5cc54ec39c3305c66d1cb006dfd162ad8e0480b3d3e148102bc6a9dbf"
+    },
+    {
+      "file": "00566.png",
+      "elapsedMs": 28336.8419,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59057,
+      "sha256": "aa1837a081c3958a34fec1c9e4317de6e250681795f2763ff9c1260374dd67c9"
+    },
+    {
+      "file": "00567.png",
+      "elapsedMs": 28387.3241,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59057,
+      "sha256": "aa1837a081c3958a34fec1c9e4317de6e250681795f2763ff9c1260374dd67c9"
+    },
+    {
+      "file": "00568.png",
+      "elapsedMs": 28436.8416,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59057,
+      "sha256": "aa1837a081c3958a34fec1c9e4317de6e250681795f2763ff9c1260374dd67c9"
+    },
+    {
+      "file": "00569.png",
+      "elapsedMs": 28486.8766,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59057,
+      "sha256": "aa1837a081c3958a34fec1c9e4317de6e250681795f2763ff9c1260374dd67c9"
+    },
+    {
+      "file": "00570.png",
+      "elapsedMs": 28538.0482,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59057,
+      "sha256": "aa1837a081c3958a34fec1c9e4317de6e250681795f2763ff9c1260374dd67c9"
+    },
+    {
+      "file": "00571.png",
+      "elapsedMs": 28588.286,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59087,
+      "sha256": "26ec6b7e46b49a733f05831641548830ba22e3959819b5e14f7bcc756c00dc07"
+    },
+    {
+      "file": "00572.png",
+      "elapsedMs": 28637.8828,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59096,
+      "sha256": "5326c6cd4846e207524782d6454e1588cb7acc172785f41931d396b4eac47641"
+    },
+    {
+      "file": "00573.png",
+      "elapsedMs": 28687.9334,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59096,
+      "sha256": "5326c6cd4846e207524782d6454e1588cb7acc172785f41931d396b4eac47641"
+    },
+    {
+      "file": "00574.png",
+      "elapsedMs": 28738.0541,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59096,
+      "sha256": "5326c6cd4846e207524782d6454e1588cb7acc172785f41931d396b4eac47641"
+    },
+    {
+      "file": "00575.png",
+      "elapsedMs": 28788.394,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59082,
+      "sha256": "19285b6d5bcb524e64c701795d484583ce203686ba530cc427af4933024f93b1"
+    },
+    {
+      "file": "00576.png",
+      "elapsedMs": 28838.4528,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59082,
+      "sha256": "19285b6d5bcb524e64c701795d484583ce203686ba530cc427af4933024f93b1"
+    },
+    {
+      "file": "00577.png",
+      "elapsedMs": 28889.114,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59082,
+      "sha256": "19285b6d5bcb524e64c701795d484583ce203686ba530cc427af4933024f93b1"
+    },
+    {
+      "file": "00578.png",
+      "elapsedMs": 28938.9936,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59065,
+      "sha256": "5d36fe6f639367a138b3fa9916872827821d4108f46d7a0328edf458f8c9547f"
+    },
+    {
+      "file": "00579.png",
+      "elapsedMs": 28988.6763,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59065,
+      "sha256": "5d36fe6f639367a138b3fa9916872827821d4108f46d7a0328edf458f8c9547f"
+    },
+    {
+      "file": "00580.png",
+      "elapsedMs": 29039.0111,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59065,
+      "sha256": "5d36fe6f639367a138b3fa9916872827821d4108f46d7a0328edf458f8c9547f"
+    },
+    {
+      "file": "00581.png",
+      "elapsedMs": 29102.1178,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59065,
+      "sha256": "5d36fe6f639367a138b3fa9916872827821d4108f46d7a0328edf458f8c9547f"
+    },
+    {
+      "file": "00582.png",
+      "elapsedMs": 29130.0649,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59065,
+      "sha256": "5d36fe6f639367a138b3fa9916872827821d4108f46d7a0328edf458f8c9547f"
+    },
+    {
+      "file": "00583.png",
+      "elapsedMs": 29179.9776,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59065,
+      "sha256": "5d36fe6f639367a138b3fa9916872827821d4108f46d7a0328edf458f8c9547f"
+    },
+    {
+      "file": "00584.png",
+      "elapsedMs": 29230.1132,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59073,
+      "sha256": "bed987fbffe6c3cac585599883c58afb88a454fbe76866182c4d2e7f1e4bf49e"
+    },
+    {
+      "file": "00585.png",
+      "elapsedMs": 29281.1126,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59073,
+      "sha256": "bed987fbffe6c3cac585599883c58afb88a454fbe76866182c4d2e7f1e4bf49e"
+    },
+    {
+      "file": "00586.png",
+      "elapsedMs": 29331.4234,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59073,
+      "sha256": "bed987fbffe6c3cac585599883c58afb88a454fbe76866182c4d2e7f1e4bf49e"
+    },
+    {
+      "file": "00587.png",
+      "elapsedMs": 29382.5871,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59073,
+      "sha256": "bed987fbffe6c3cac585599883c58afb88a454fbe76866182c4d2e7f1e4bf49e"
+    },
+    {
+      "file": "00588.png",
+      "elapsedMs": 29432.7061,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59073,
+      "sha256": "bed987fbffe6c3cac585599883c58afb88a454fbe76866182c4d2e7f1e4bf49e"
+    },
+    {
+      "file": "00589.png",
+      "elapsedMs": 29483.4262,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59073,
+      "sha256": "bed987fbffe6c3cac585599883c58afb88a454fbe76866182c4d2e7f1e4bf49e"
+    },
+    {
+      "file": "00590.png",
+      "elapsedMs": 29533.6715,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59065,
+      "sha256": "5d36fe6f639367a138b3fa9916872827821d4108f46d7a0328edf458f8c9547f"
+    },
+    {
+      "file": "00591.png",
+      "elapsedMs": 29584.6174,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59065,
+      "sha256": "5d36fe6f639367a138b3fa9916872827821d4108f46d7a0328edf458f8c9547f"
+    },
+    {
+      "file": "00592.png",
+      "elapsedMs": 29635.7525,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59143,
+      "sha256": "299a33e29cf1a646ccd8becede65590bf69e3327f9fb56d65a8643cad649e224"
+    },
+    {
+      "file": "00593.png",
+      "elapsedMs": 29685.2963,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59143,
+      "sha256": "299a33e29cf1a646ccd8becede65590bf69e3327f9fb56d65a8643cad649e224"
+    },
+    {
+      "file": "00594.png",
+      "elapsedMs": 29735.5382,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59147,
+      "sha256": "f2874bfa1fcf29935c4762de3e54b45cc4860884449a27a876236bfc9b1cce77"
+    },
+    {
+      "file": "00595.png",
+      "elapsedMs": 29785.0884,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59147,
+      "sha256": "f2874bfa1fcf29935c4762de3e54b45cc4860884449a27a876236bfc9b1cce77"
+    },
+    {
+      "file": "00596.png",
+      "elapsedMs": 29835.3441,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59155,
+      "sha256": "e45a03f70ef1f2213957da137e6cc33b1b57c894cb626d94b451713a6e2e92d3"
+    },
+    {
+      "file": "00597.png",
+      "elapsedMs": 29886.2971,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59155,
+      "sha256": "e45a03f70ef1f2213957da137e6cc33b1b57c894cb626d94b451713a6e2e92d3"
+    },
+    {
+      "file": "00598.png",
+      "elapsedMs": 29936.575,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59155,
+      "sha256": "e45a03f70ef1f2213957da137e6cc33b1b57c894cb626d94b451713a6e2e92d3"
+    },
+    {
+      "file": "00599.png",
+      "elapsedMs": 29984.7939,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59129,
+      "sha256": "4f7545d9aaf57fc0de2679e648136a2bfa34cef002ea75878f3a38e047373901"
+    },
+    {
+      "file": "00600.png",
+      "elapsedMs": 30031.004,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59129,
+      "sha256": "4f7545d9aaf57fc0de2679e648136a2bfa34cef002ea75878f3a38e047373901"
+    },
+    {
+      "file": "00601.png",
+      "elapsedMs": 30081.0304,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59129,
+      "sha256": "4f7545d9aaf57fc0de2679e648136a2bfa34cef002ea75878f3a38e047373901"
+    },
+    {
+      "file": "00602.png",
+      "elapsedMs": 30132.2277,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59121,
+      "sha256": "e9c80e01d7691f80a524024d7c7f4d0c425f2f846c7f0b7bd5861051cc772612"
+    },
+    {
+      "file": "00603.png",
+      "elapsedMs": 30182.3484,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59121,
+      "sha256": "e9c80e01d7691f80a524024d7c7f4d0c425f2f846c7f0b7bd5861051cc772612"
+    },
+    {
+      "file": "00604.png",
+      "elapsedMs": 30240.0303,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59118,
+      "sha256": "fd30f9f32243bf4f52edf8116159bde54ab152c849b8f193fa564cab92011845"
+    },
+    {
+      "file": "00605.png",
+      "elapsedMs": 30289.8439,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59118,
+      "sha256": "fd30f9f32243bf4f52edf8116159bde54ab152c849b8f193fa564cab92011845"
+    },
+    {
+      "file": "00606.png",
+      "elapsedMs": 30339.6853,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 59118,
+      "sha256": "fd30f9f32243bf4f52edf8116159bde54ab152c849b8f193fa564cab92011845"
+    },
+    {
+      "file": "00607.png",
+      "elapsedMs": 30391.3691,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 58848,
+      "sha256": "36c75f6f6b7356fd779268c8a89b1371eb53d54ec4a2f8b7aa3753a71e5c61b8"
+    },
+    {
+      "file": "00608.png",
+      "elapsedMs": 30439.4074,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52367,
+      "sha256": "4a124d3ba6dea5ab9435ba198ed3905ceb5dccba7de2a0ba982f7e219d935f3d"
+    },
+    {
+      "file": "00609.png",
+      "elapsedMs": 30489.8805,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52367,
+      "sha256": "4a124d3ba6dea5ab9435ba198ed3905ceb5dccba7de2a0ba982f7e219d935f3d"
+    },
+    {
+      "file": "00610.png",
+      "elapsedMs": 30539.6183,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52367,
+      "sha256": "4a124d3ba6dea5ab9435ba198ed3905ceb5dccba7de2a0ba982f7e219d935f3d"
+    },
+    {
+      "file": "00611.png",
+      "elapsedMs": 30589.5713,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52367,
+      "sha256": "4a124d3ba6dea5ab9435ba198ed3905ceb5dccba7de2a0ba982f7e219d935f3d"
+    },
+    {
+      "file": "00612.png",
+      "elapsedMs": 30640.6327,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52367,
+      "sha256": "4a124d3ba6dea5ab9435ba198ed3905ceb5dccba7de2a0ba982f7e219d935f3d"
+    },
+    {
+      "file": "00613.png",
+      "elapsedMs": 30690.9629,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52367,
+      "sha256": "4a124d3ba6dea5ab9435ba198ed3905ceb5dccba7de2a0ba982f7e219d935f3d"
+    },
+    {
+      "file": "00614.png",
+      "elapsedMs": 30742.4422,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52367,
+      "sha256": "4a124d3ba6dea5ab9435ba198ed3905ceb5dccba7de2a0ba982f7e219d935f3d"
+    },
+    {
+      "file": "00615.png",
+      "elapsedMs": 30791.4056,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52367,
+      "sha256": "4a124d3ba6dea5ab9435ba198ed3905ceb5dccba7de2a0ba982f7e219d935f3d"
+    },
+    {
+      "file": "00616.png",
+      "elapsedMs": 30841.3074,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52367,
+      "sha256": "4a124d3ba6dea5ab9435ba198ed3905ceb5dccba7de2a0ba982f7e219d935f3d"
+    },
+    {
+      "file": "00617.png",
+      "elapsedMs": 30891.4289,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52275,
+      "sha256": "1b2095604d3d9ea66d06f1e2687fa6cc2d4c480ba2e5f441f0163952e4b3b2a0"
+    },
+    {
+      "file": "00618.png",
+      "elapsedMs": 30941.4249,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52275,
+      "sha256": "1b2095604d3d9ea66d06f1e2687fa6cc2d4c480ba2e5f441f0163952e4b3b2a0"
+    },
+    {
+      "file": "00619.png",
+      "elapsedMs": 30974.7014,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52275,
+      "sha256": "1b2095604d3d9ea66d06f1e2687fa6cc2d4c480ba2e5f441f0163952e4b3b2a0"
+    },
+    {
+      "file": "00620.png",
+      "elapsedMs": 31024.3912,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00621.png",
+      "elapsedMs": 31074.5833,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00622.png",
+      "elapsedMs": 31124.5546,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00623.png",
+      "elapsedMs": 31175.6312,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00624.png",
+      "elapsedMs": 31225.5127,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00625.png",
+      "elapsedMs": 31275.3861,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00626.png",
+      "elapsedMs": 31327.0228,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00627.png",
+      "elapsedMs": 31376.7579,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00628.png",
+      "elapsedMs": 31427.3675,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00629.png",
+      "elapsedMs": 31477.0586,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00630.png",
+      "elapsedMs": 31527.0645,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00631.png",
+      "elapsedMs": 31577.3576,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00632.png",
+      "elapsedMs": 31627.3432,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00633.png",
+      "elapsedMs": 31677.3767,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00634.png",
+      "elapsedMs": 31727.3736,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00635.png",
+      "elapsedMs": 31777.6526,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00636.png",
+      "elapsedMs": 31827.5593,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00637.png",
+      "elapsedMs": 31877.765,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00638.png",
+      "elapsedMs": 31927.7154,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00639.png",
+      "elapsedMs": 31977.7546,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00640.png",
+      "elapsedMs": 32027.869,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00641.png",
+      "elapsedMs": 32078.8429,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00642.png",
+      "elapsedMs": 32128.0038,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00643.png",
+      "elapsedMs": 32178.6835,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00644.png",
+      "elapsedMs": 32228.0245,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00645.png",
+      "elapsedMs": 32278.2999,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00646.png",
+      "elapsedMs": 32328.1118,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00647.png",
+      "elapsedMs": 32378.3748,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00648.png",
+      "elapsedMs": 32428.7571,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00649.png",
+      "elapsedMs": 32479.4059,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00650.png",
+      "elapsedMs": 32530.6838,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00651.png",
+      "elapsedMs": 32580.9734,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00652.png",
+      "elapsedMs": 32630.9161,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00653.png",
+      "elapsedMs": 32680.9766,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00654.png",
+      "elapsedMs": 32731.1323,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00655.png",
+      "elapsedMs": 32781.2292,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00656.png",
+      "elapsedMs": 32831.2314,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00657.png",
+      "elapsedMs": 32881.1099,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00658.png",
+      "elapsedMs": 32931.2715,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00659.png",
+      "elapsedMs": 32981.1967,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00660.png",
+      "elapsedMs": 33031.4206,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00661.png",
+      "elapsedMs": 33081.3618,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00662.png",
+      "elapsedMs": 33131.3352,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00663.png",
+      "elapsedMs": 33181.3984,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00664.png",
+      "elapsedMs": 33231.4436,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00665.png",
+      "elapsedMs": 33281.5605,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00666.png",
+      "elapsedMs": 33331.3883,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00667.png",
+      "elapsedMs": 33381.6129,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00668.png",
+      "elapsedMs": 33431.69,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00669.png",
+      "elapsedMs": 33481.4353,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00670.png",
+      "elapsedMs": 33531.7681,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00671.png",
+      "elapsedMs": 33581.7478,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00672.png",
+      "elapsedMs": 33632.6139,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00673.png",
+      "elapsedMs": 33682.3923,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00674.png",
+      "elapsedMs": 33732.7962,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00675.png",
+      "elapsedMs": 33782.5304,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00676.png",
+      "elapsedMs": 33832.6094,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00677.png",
+      "elapsedMs": 33882.96,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00678.png",
+      "elapsedMs": 33933.3771,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00679.png",
+      "elapsedMs": 33983.2447,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00680.png",
+      "elapsedMs": 34033.1629,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00681.png",
+      "elapsedMs": 34083.4496,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00682.png",
+      "elapsedMs": 34133.9785,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00683.png",
+      "elapsedMs": 34183.3666,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00684.png",
+      "elapsedMs": 34233.4919,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00685.png",
+      "elapsedMs": 34283.5003,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00686.png",
+      "elapsedMs": 34333.6068,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00687.png",
+      "elapsedMs": 34383.5908,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00688.png",
+      "elapsedMs": 34433.4521,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00689.png",
+      "elapsedMs": 34483.756,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00690.png",
+      "elapsedMs": 34533.744,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00691.png",
+      "elapsedMs": 34583.6836,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00692.png",
+      "elapsedMs": 34633.7401,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00693.png",
+      "elapsedMs": 34683.7935,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00694.png",
+      "elapsedMs": 34733.8656,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00695.png",
+      "elapsedMs": 34783.717,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00696.png",
+      "elapsedMs": 34833.9455,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00697.png",
+      "elapsedMs": 34883.8731,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00698.png",
+      "elapsedMs": 34933.8996,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00699.png",
+      "elapsedMs": 34983.9172,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00700.png",
+      "elapsedMs": 35033.8733,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00701.png",
+      "elapsedMs": 35083.9512,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00702.png",
+      "elapsedMs": 35133.8879,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00703.png",
+      "elapsedMs": 35183.917,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00704.png",
+      "elapsedMs": 35234.1293,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00705.png",
+      "elapsedMs": 35283.8681,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00706.png",
+      "elapsedMs": 35333.9353,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00707.png",
+      "elapsedMs": 35384.0069,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00708.png",
+      "elapsedMs": 35434.0834,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00709.png",
+      "elapsedMs": 35483.9472,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52308,
+      "sha256": "0accd67393263f237323943c2352077778c8d3984e014401c8865492c5216097"
+    },
+    {
+      "file": "00710.png",
+      "elapsedMs": 35534.0047,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52133,
+      "sha256": "40585748797c0382cecf35c99537fa124c2a044c1b6e948e959b409e3c9a5a75"
+    },
+    {
+      "file": "00711.png",
+      "elapsedMs": 35584.1682,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00712.png",
+      "elapsedMs": 35634.6834,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00713.png",
+      "elapsedMs": 35688.1068,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00714.png",
+      "elapsedMs": 35738.4066,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00715.png",
+      "elapsedMs": 35788.2962,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00716.png",
+      "elapsedMs": 35838.5177,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52379,
+      "sha256": "97d7054501397e98656b9ec87576903554e767fb6439426b0f5cda71fe50e96e"
+    },
+    {
+      "file": "00717.png",
+      "elapsedMs": 35888.1789,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52359,
+      "sha256": "2a8dddbe61834bd6adbbd3514be6a0ce0b0dcae76a883d8204f5b3073bacb035"
+    },
+    {
+      "file": "00718.png",
+      "elapsedMs": 35938.3351,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52390,
+      "sha256": "2b00438f69fdb13678411a0637ff945aa1964ad5a9370aab8eee0bc7da477be0"
+    },
+    {
+      "file": "00719.png",
+      "elapsedMs": 35989.1684,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52379,
+      "sha256": "5eb6429d9e393d6d073a8c87cddc67d7a551423848cbfa567f86559b014fe7b7"
+    },
+    {
+      "file": "00720.png",
+      "elapsedMs": 36039.0531,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "a02e221148d782aa68e8d2d7f4ec6134b4d3c8625b2c6f3fc58956ededf2294b"
+    },
+    {
+      "file": "00721.png",
+      "elapsedMs": 36090.0415,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "a02e221148d782aa68e8d2d7f4ec6134b4d3c8625b2c6f3fc58956ededf2294b"
+    },
+    {
+      "file": "00722.png",
+      "elapsedMs": 36140.0206,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52354,
+      "sha256": "09860fa5dc5dd541b0e23f7fc6fc00e9cd84b830e3dae875fc917b7d3f379c30"
+    },
+    {
+      "file": "00723.png",
+      "elapsedMs": 36190.1567,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52355,
+      "sha256": "80497cc43a180742fa20886df4fa581cccb4cd4db251bf214737bf07a04e5078"
+    },
+    {
+      "file": "00724.png",
+      "elapsedMs": 36240.3927,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00725.png",
+      "elapsedMs": 36291.2612,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00726.png",
+      "elapsedMs": 36335.6981,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00727.png",
+      "elapsedMs": 36378.5066,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00728.png",
+      "elapsedMs": 36428.7461,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00729.png",
+      "elapsedMs": 36478.7817,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00730.png",
+      "elapsedMs": 36528.8014,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00731.png",
+      "elapsedMs": 36578.7693,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00732.png",
+      "elapsedMs": 36628.633,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00733.png",
+      "elapsedMs": 36678.8679,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00734.png",
+      "elapsedMs": 36730.0442,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00735.png",
+      "elapsedMs": 36779.9069,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00736.png",
+      "elapsedMs": 36830.7216,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52378,
+      "sha256": "327d01ffe95f45f50ae97f4483245761a8c12c88a6ee961db21493941c17ffe3"
+    },
+    {
+      "file": "00737.png",
+      "elapsedMs": 36880.5811,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52379,
+      "sha256": "896b199473ef3feeb846cb3fc64803d19a2ec22f5278bf1477a482657131b128"
+    },
+    {
+      "file": "00738.png",
+      "elapsedMs": 36931.1762,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00739.png",
+      "elapsedMs": 36981.3533,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00740.png",
+      "elapsedMs": 37032.1997,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00741.png",
+      "elapsedMs": 37082.4242,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00742.png",
+      "elapsedMs": 37132.2863,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00743.png",
+      "elapsedMs": 37182.4454,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00744.png",
+      "elapsedMs": 37232.6935,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00745.png",
+      "elapsedMs": 37283.0917,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00746.png",
+      "elapsedMs": 37333.6274,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00747.png",
+      "elapsedMs": 37383.3902,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00748.png",
+      "elapsedMs": 37433.3064,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00749.png",
+      "elapsedMs": 37483.6473,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00750.png",
+      "elapsedMs": 37534.1225,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00751.png",
+      "elapsedMs": 37583.6814,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00752.png",
+      "elapsedMs": 37633.8133,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00753.png",
+      "elapsedMs": 37683.9287,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00754.png",
+      "elapsedMs": 37734.0907,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00755.png",
+      "elapsedMs": 37784.1835,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00756.png",
+      "elapsedMs": 37833.9435,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52357,
+      "sha256": "590265e9c76a5f8f43ce42b443a64538c011b63756a18af7230f67b23af4dab0"
+    },
+    {
+      "file": "00757.png",
+      "elapsedMs": 37884.5059,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52360,
+      "sha256": "c74b5d19c32bb9c38a36e15a85e5e13b68b3356abd0670a7cc184f304fdc8c34"
+    },
+    {
+      "file": "00758.png",
+      "elapsedMs": 37934.7032,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52363,
+      "sha256": "3af72f82565a11cfe3e23713c650f4bf271edbffe900871792a3f067ffd92307"
+    },
+    {
+      "file": "00759.png",
+      "elapsedMs": 37984.6349,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52354,
+      "sha256": "165c08bacef29f23518160d2ee91f417c4eb6485391c249d7f79a9a740364340"
+    },
+    {
+      "file": "00760.png",
+      "elapsedMs": 38034.5728,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52355,
+      "sha256": "f46f1be48b3423a89736e5040b10b8e947b02eb6114dc54559450937bc8e3898"
+    },
+    {
+      "file": "00761.png",
+      "elapsedMs": 38084.7537,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "a02e221148d782aa68e8d2d7f4ec6134b4d3c8625b2c6f3fc58956ededf2294b"
+    },
+    {
+      "file": "00762.png",
+      "elapsedMs": 38135.6193,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52367,
+      "sha256": "56ee5972986114ef43235c2330aa0bdb9c7249a52f486b2ed683e07e3bc99e6b"
+    },
+    {
+      "file": "00763.png",
+      "elapsedMs": 38185.7519,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52365,
+      "sha256": "08343959cf2621ae8da42a1413f57ed3ee1bf44f71422b12deff9948559f5f1c"
+    },
+    {
+      "file": "00764.png",
+      "elapsedMs": 38235.7135,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00765.png",
+      "elapsedMs": 38286.5081,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00766.png",
+      "elapsedMs": 38336.4589,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00767.png",
+      "elapsedMs": 38387.3906,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00768.png",
+      "elapsedMs": 38437.9817,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00769.png",
+      "elapsedMs": 38487.5442,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00770.png",
+      "elapsedMs": 38537.4575,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52388,
+      "sha256": "f540f4d03c2ca5d47b85b20fc76f309940b3800c470ac61c65fb7913b70f8425"
+    },
+    {
+      "file": "00771.png",
+      "elapsedMs": 38587.4807,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52366,
+      "sha256": "2546af95ac68e5054138473d13f55d4257652b7390322d2e0f58be53b25c0ec8"
+    },
+    {
+      "file": "00772.png",
+      "elapsedMs": 38637.7832,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52378,
+      "sha256": "b3de2d76578a60e2bb5ab1fd51f658b4f7d16114f322f648dbdb9b6efb4db258"
+    },
+    {
+      "file": "00773.png",
+      "elapsedMs": 38687.6714,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52358,
+      "sha256": "bb7b6ee16e2f02e91fb414a8d1e73b185f2111deeb73158da1ff633775b7690f"
+    },
+    {
+      "file": "00774.png",
+      "elapsedMs": 38737.838,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52357,
+      "sha256": "97069b226e73dfc7d8045e33cf07a907759fa60783a86509248c14f4123f2802"
+    },
+    {
+      "file": "00775.png",
+      "elapsedMs": 38787.758,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52357,
+      "sha256": "0fbb6f2a80e700f65c85d8894f5fdaea89bef86f7651237d71e92d26d6d66818"
+    },
+    {
+      "file": "00776.png",
+      "elapsedMs": 38837.7813,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52379,
+      "sha256": "a99f75d7cc92f412d0135671a3a429277a9c31075cf74c9e469890c83edb5ec0"
+    },
+    {
+      "file": "00777.png",
+      "elapsedMs": 38889.0763,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52411,
+      "sha256": "14fd2fb3187f4d37609f9c21349c6264c03bc5a567f0bd2b2efae8296648acc6"
+    },
+    {
+      "file": "00778.png",
+      "elapsedMs": 38939.5853,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52427,
+      "sha256": "a6cee28a9c9473155c0e858e835543dbde3b157a99b5842762e6eb562ea3c03b"
+    },
+    {
+      "file": "00779.png",
+      "elapsedMs": 38989.2652,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52393,
+      "sha256": "b46bdc41684d80ecbb8b69160ac5ec357ddb52b7b24d674ce3f826b6dd842290"
+    },
+    {
+      "file": "00780.png",
+      "elapsedMs": 39039.3249,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52394,
+      "sha256": "0520c35082f5236ac24a739163908934528b6407cd092e2069533806039e6d1d"
+    },
+    {
+      "file": "00781.png",
+      "elapsedMs": 39089.1532,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52477,
+      "sha256": "35ae3a8072453a3edb83f8b0bd4f8c8cf5982055f672290c8440901ce39a77ab"
+    },
+    {
+      "file": "00782.png",
+      "elapsedMs": 39139.0204,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52470,
+      "sha256": "1592e157527b9a29d4690250b1c57230caa4d6e10c60228f1ff88cb53786617d"
+    },
+    {
+      "file": "00783.png",
+      "elapsedMs": 39189.4404,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52484,
+      "sha256": "cd8a76c083be1ef5eac960b5c986064eac3f2385560553b9680899908bd9aae7"
+    },
+    {
+      "file": "00784.png",
+      "elapsedMs": 39239.2573,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52450,
+      "sha256": "4c0386e9455074d1ee8f6b01600ab5df82e69634f3bec0565aadbf2acbe24639"
+    },
+    {
+      "file": "00785.png",
+      "elapsedMs": 39289.3534,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52452,
+      "sha256": "71dc7a50a8616363da83f4e5eb92652d977a465e89344d236ebf10b86942363b"
+    },
+    {
+      "file": "00786.png",
+      "elapsedMs": 39339.2646,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52487,
+      "sha256": "2cfccba2df78c259b3b80dbd0cac4d3798228fdc3378d129c65277190c744428"
+    },
+    {
+      "file": "00787.png",
+      "elapsedMs": 39389.362,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52460,
+      "sha256": "fbba2b0457312b8767f43dde2a9e467fdebf29c838c99e43cfe3915c748a6867"
+    },
+    {
+      "file": "00788.png",
+      "elapsedMs": 39439.7158,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52485,
+      "sha256": "d506c69c378bd6bb93876ade13fed71545d162c988f005493f3d1fb2bfdedbb5"
+    },
+    {
+      "file": "00789.png",
+      "elapsedMs": 39490.0126,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52484,
+      "sha256": "f29d740f6b4dcd978fe359e491733850a5b70690b982151394976b920a09ed59"
+    },
+    {
+      "file": "00790.png",
+      "elapsedMs": 39540.3416,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52406,
+      "sha256": "015cc26e2cda3c8560e1bb782f3263db68f4dc8a60d1a1c31bded14e73d1406c"
+    },
+    {
+      "file": "00791.png",
+      "elapsedMs": 39591.0758,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52447,
+      "sha256": "7556d4970dfc9d06fecb89190014c8b6412d5cb76e0fb5737dc73e33af1b5f0e"
+    },
+    {
+      "file": "00792.png",
+      "elapsedMs": 39640.9318,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52427,
+      "sha256": "1cccfa101a70111cec28c82f4b910db2693e0f3bdf13a8e1a2d4a1e47f5616d7"
+    },
+    {
+      "file": "00793.png",
+      "elapsedMs": 39674.268,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52394,
+      "sha256": "609a03822da6694114cf1c019a8cc2643a4348a9d23ee632c4a2ddd4d1d6bfa2"
+    },
+    {
+      "file": "00794.png",
+      "elapsedMs": 39724.1617,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52396,
+      "sha256": "37758ec45c9b976a438efd7ad9b2be6238c8ece1c8b418f28354455ead0890fd"
+    },
+    {
+      "file": "00795.png",
+      "elapsedMs": 39774.2829,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00796.png",
+      "elapsedMs": 39824.7566,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00797.png",
+      "elapsedMs": 39875.276,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00798.png",
+      "elapsedMs": 39925.3865,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00799.png",
+      "elapsedMs": 39975.8924,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00800.png",
+      "elapsedMs": 40026.7895,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00801.png",
+      "elapsedMs": 40076.4382,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00802.png",
+      "elapsedMs": 40126.5599,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00803.png",
+      "elapsedMs": 40177.0631,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00804.png",
+      "elapsedMs": 40227.0145,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00805.png",
+      "elapsedMs": 40276.8303,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00806.png",
+      "elapsedMs": 40327.0904,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00807.png",
+      "elapsedMs": 40377.9308,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52362,
+      "sha256": "0158113166a0156776811bc6508aba807e90ab8f4d0c449fac258498981bf781"
+    },
+    {
+      "file": "00808.png",
+      "elapsedMs": 40427.5617,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52358,
+      "sha256": "745d39019825bdcc4dcf79731eebae08376837102219bfba93ccdcbfa9fe523c"
+    },
+    {
+      "file": "00809.png",
+      "elapsedMs": 40477.5123,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52358,
+      "sha256": "c6118c35749f4ccea2d739838559ee060678f468aba0eec0e615d9f6168ba7b1"
+    },
+    {
+      "file": "00810.png",
+      "elapsedMs": 40528.1886,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52357,
+      "sha256": "f602cb67c526bad9b56abdadd26a3153ad71061c16acf30238c310b2e1cea27a"
+    },
+    {
+      "file": "00811.png",
+      "elapsedMs": 40577.7513,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52383,
+      "sha256": "c5c39885c3c1503deea31b00cdfed218b21de32689d562df0c7626c2f509b989"
+    },
+    {
+      "file": "00812.png",
+      "elapsedMs": 40627.6022,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52437,
+      "sha256": "f77a0cbd6d4bda2f0c15a21938dd05c1f8a44bf00f8502bc1f73a5d2b8215c7c"
+    },
+    {
+      "file": "00813.png",
+      "elapsedMs": 40677.869,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52396,
+      "sha256": "c8624fd2ed5a96131d9e1573da1a3c7c83bf8c036b2cf09bdb9ca466e80a2240"
+    },
+    {
+      "file": "00814.png",
+      "elapsedMs": 40727.8637,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52493,
+      "sha256": "7aea46ac8bf21c1ce58d59a12f5cf74d989468aa5b4b8e587ba159b8fd56d32b"
+    },
+    {
+      "file": "00815.png",
+      "elapsedMs": 40778.0059,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52478,
+      "sha256": "d42de80e2a49ed1fa836850ed24c18cb1d741c186a35aca1e62c6ccbe4cf81a6"
+    },
+    {
+      "file": "00816.png",
+      "elapsedMs": 40828.4965,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52441,
+      "sha256": "4a56a197ff7da70b9dc26e3cafaa8bf7936db171c743f93211715020d860cf39"
+    },
+    {
+      "file": "00817.png",
+      "elapsedMs": 40878.2822,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52446,
+      "sha256": "be9e081ab8b03a2d9279037063cb60f395d6e0736201dd9d5c93f8d9443e44b5"
+    },
+    {
+      "file": "00818.png",
+      "elapsedMs": 40928.827,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52485,
+      "sha256": "00d7d19a0b45ce19d90cf70eee28eb0665a8dd859864ad9ecd87ce0a4b7c050f"
+    },
+    {
+      "file": "00819.png",
+      "elapsedMs": 40978.7294,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52466,
+      "sha256": "5c40a8924e43a0cbd33832c672c8572c552431cdc8ef4d355a7a37533a24a7a1"
+    },
+    {
+      "file": "00820.png",
+      "elapsedMs": 41028.6615,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52447,
+      "sha256": "41730e03c5e2320f27514fc052a8da320e6a825aabc65b4ebaf36cd3db0e9824"
+    },
+    {
+      "file": "00821.png",
+      "elapsedMs": 41078.8425,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52448,
+      "sha256": "6b229d162740cf0037d6d404f74736c69e30e70af31c523c81042c55e6340bf7"
+    },
+    {
+      "file": "00822.png",
+      "elapsedMs": 41129.5653,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52474,
+      "sha256": "d754e6022ea575c9642eb17334f85a0860bd4445fba2f13a6a052bbf1321d2c9"
+    },
+    {
+      "file": "00823.png",
+      "elapsedMs": 41180.0688,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52457,
+      "sha256": "ffe4dc0e371ba16d3724bf42a9fbcf8bc4291414078aab980c7fe8e6dcd778e8"
+    },
+    {
+      "file": "00824.png",
+      "elapsedMs": 41230.2018,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52457,
+      "sha256": "a7c859e255e73b48b2f05dab549a9427e4278e06cce4022ea07538009a62e3d2"
+    },
+    {
+      "file": "00825.png",
+      "elapsedMs": 41280.1416,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52454,
+      "sha256": "241166a6a84bc5c0c1e77cd0ceab30f33e95db4b11c08878b439d8dbdd07fb17"
+    },
+    {
+      "file": "00826.png",
+      "elapsedMs": 41330.8338,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52466,
+      "sha256": "92deb19684b3fd89b9bd5a3e01ca357f9440b7263658f57ec4ca2ea305e95767"
+    },
+    {
+      "file": "00827.png",
+      "elapsedMs": 41380.0841,
+      "screen": "ArmorDropEditorScreen",
+      "bytes": 52493,
+      "sha256": "aac8feccf72b2467a7a5ca8adce693a81dfa81dcc79e701f329e031ae888b304"
+    }
+  ]
+}

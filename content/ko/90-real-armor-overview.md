@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: 개요
 section: overview
 status: Stable
-version: 0.1.4
+version: 0.1.5
 audience: 플레이어, 서버 운영자, 모드팩 제작자
 tags:
   - armor
@@ -20,6 +20,8 @@ tags:
 Real Armor는 NPC가 입은 방어구의 방어력·강인함·보호 인챈트를 피해에 반영합니다. 방어구 내구도를 닳게 하거나 맞은 부위의 장비만 쓰도록 정할 수도 있습니다.
 
 DNPC·Easy NPC·CustomNPCs를 지원하며 DRM은 필수가 아닙니다. 26.3에서는 CustomNPCs를 사용할 수 없습니다.
+
+0.1.5에서는 갑옷이 실제로 손상될 때 떨어질 아이템을 GUI로 설정합니다. [아이템 드롭 설정과 영상](#dochi-real-armor/dochi-real-armor-drops)에서 방어구별 확률·수량과 세트 저장·적용 방법을 확인하세요.
 
 ## 시작하는 순서
 

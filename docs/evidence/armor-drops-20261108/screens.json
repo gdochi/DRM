@@ -1,0 +1,133 @@
+[
+  {
+    "id": "armor-drop-editor-guide",
+    "screenClass": "com.hodu.realarmor.drops.client.ArmorDropEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "dochi_real_armor:armor_drops",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "wait:30",
+      "gif:start:armor-drop-editor",
+      "wait:24",
+      "armor:click:Add",
+      "wait:24",
+      "armor:field:search\u003dminecraft:iron_chestplate",
+      "wait:20",
+      "armor:pick:minecraft:iron_chestplate",
+      "wait:16",
+      "armor:click:Apply",
+      "wait:24",
+      "armor:click:Add:1",
+      "wait:20",
+      "armor:field:search\u003dminecraft:iron_nugget",
+      "wait:20",
+      "armor:pick:minecraft:iron_nugget",
+      "wait:16",
+      "armor:click:Apply",
+      "wait:24",
+      "armor:field:chance\u003d100",
+      "wait:20",
+      "armor:field:min\u003d1",
+      "armor:field:max\u003d3",
+      "wait:28",
+      "armor:click:Save As",
+      "wait:24",
+      "armor:field:save_name\u003diron_salvage",
+      "wait:24",
+      "armor:click:Save",
+      "wait:30",
+      "armor:verify:saved",
+      "wait:24",
+      "armor:click:Apply",
+      "wait:30",
+      "armor:verify:applied",
+      "wait:40",
+      "gif:stop"
+    ],
+    "width": 1280,
+    "height": 720,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "Unapply",
+        "active": true
+      },
+      {
+        "label": "Search",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Select armor rule: Iron Chestplate",
+        "active": true
+      },
+      {
+        "label": "Iron Chestplate",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Select drop item: Iron Nugget",
+        "active": true
+      },
+      {
+        "label": "Iron Nugget, 100%, ×1–3",
+        "active": true
+      },
+      {
+        "label": "Armor",
+        "active": true
+      },
+      {
+        "label": "Drop",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

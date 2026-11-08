@@ -100,7 +100,7 @@ def main():
     compile_cp = os.pathsep.join(path for path in compile_paths if path)
     compile_result = subprocess.run([str(JAVA / "javac.exe"), "-encoding", "UTF-8", "-proc:none", "-cp", compile_cp,
                                      "-d", str(classes), *[str(ROOT / "scripts/guide-capture" / name) for name in
-                                         ("GuideCapture.java", "GuideScenes.java", "GuideTutorials.java")]], capture_output=True, text=True)
+                                         ("GuideCapture.java", "GuideScenes.java", "GuideTutorials.java", "GuideArmorDrops.java")]], capture_output=True, text=True)
     (run / "compile.log").write_text(compile_result.stdout + compile_result.stderr, encoding="utf-8")
     if compile_result.returncode:
         raise RuntimeError(compile_result.stderr)
@@ -150,7 +150,7 @@ def main():
         result = subprocess.run(command, cwd=runtime, stdout=log, stderr=subprocess.STDOUT, timeout=600, creationflags=subprocess.CREATE_NO_WINDOW)
     print(f"Client exit: {result.returncode}; completed: {(output / 'finished.txt').exists()}")
     if (output / "screens.json").exists():
-        print((output / "screens.json").read_text(encoding="utf-8"))
+        print(json.dumps(json.loads((output / "screens.json").read_text(encoding="utf-8")), ensure_ascii=True, indent=2))
     if result.returncode or not (output / "finished.txt").exists():
         print((run / "client.log").read_text(encoding="utf-8", errors="replace")[-9000:])
         raise SystemExit(1)

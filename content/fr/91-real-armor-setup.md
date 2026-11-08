@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: Installer et configurer
 section: setup
 status: Stable
-version: 0.1.4
+version: 0.1.5
 audience: Joueurs et opérateurs de serveurs
 tags:
   - installation
@@ -19,7 +19,7 @@ translationMethod: assisted
 
 ## Installer
 
-Mettez les fichiers correspondants Minecraft / loader Real Armor 0.1.4 sur le serveur et les clients.
+Mettez les fichiers correspondants Minecraft / loader Real Armor 0.1.5 sur le serveur et les clients.
 
 | Minecraft | Chargeur | Java |
 | --- | --- | --- |
@@ -46,6 +46,8 @@ Ce sont les paramètres autonomes de **Real Armor 0.1.4 / NeoForge 1.21.1**. Uti
 Les paramètres partagés de DRM affichent les mêmes options dans deux colonnes.
 
 ![Dochi Real Armor sélectionné dans les paramètres partagés de DRM, avec les règles d'armure à gauche et les intégrations à droite.](assets/media/guides/armor-014-neo1211/shared-armor.png "Sélectionnez Dochi Real Armor en Mods Config. Vérifiez le commutateur de calcul principal ainsi que l'intégration de PNJ.")
+
+0.1.5 ajoute **Armor Drop Editor**. Suivez la [configuration des drops et la vidéo](#dochi-real-armor/dochi-real-armor-drops) pour créer des drops par armure et activer un ensemble avec **Save As → Save → Apply**. Les captures 0.1.4 ci-dessus sont des images antérieures des options de calcul d'armure.
 
 ## Choisissez les bases
 

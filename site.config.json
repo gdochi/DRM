@@ -1340,6 +1340,25 @@
           "description_ja": "要件、設定画面、初期値、旧設定の移行。"
         },
         {
+          "id": "drops",
+          "label": "Item Drops",
+          "label_ko": "아이템 드롭",
+          "label_pt": "Drops de itens",
+          "label_es": "Drops de objetos",
+          "label_fr": "Drops d'objets",
+          "label_ru": "Выпадение предметов",
+          "label_zh": "物品掉落",
+          "label_ja": "アイテムドロップ",
+          "description": "Choose armor drop items, chances and quantities, then save and apply a set.",
+          "description_ko": "갑옷별 드롭 아이템·확률·수량을 정하고 세트를 저장·적용합니다.",
+          "description_pt": "Escolha drops, probabilidades e quantidades por armadura e aplique um conjunto.",
+          "description_es": "Elige drops, probabilidades y cantidades por armadura y aplica un conjunto.",
+          "description_fr": "Choisissez les drops, probabilités et quantités par armure, puis appliquez un ensemble.",
+          "description_ru": "Настройте предметы, вероятности и количество, сохраните и примените набор.",
+          "description_zh": "设置每件护甲的掉落物、概率和数量，然后保存并应用方案。",
+          "description_ja": "防具ごとのドロップ、確率、個数を設定し、セットを保存して適用します。"
+        },
+        {
           "id": "calculation",
           "label": "Armor Calculation",
           "label_ko": "방어 계산",
