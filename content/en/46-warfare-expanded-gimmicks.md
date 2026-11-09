@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Vehicles
 section: vehicles
 status: Draft
-version: 0.3.1
+version: 0.3.2
 audience: Combat creators
 ---
 

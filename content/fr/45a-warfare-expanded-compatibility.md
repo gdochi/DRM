@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Configuration
 section: overview
 status: Guide
-version: 0.3.1
+version: 0.3.2
 audience: Opérateurs / créateurs de serveurs
 translationSource: en
 translationMethod: assisted
@@ -15,7 +15,7 @@ translationMethod: assisted
 
 ## Choisissez un pack véhicule
 
-Les véhicules suivants ont été vérifiés avec les équipages des PNJ pour le mouvement, le tir et les rechargements en DW/DWE 0.3.1. Les véhicules non répertoriés et les armes spéciales dans le même pack doivent être vérifiés séparément.
+Dans DWE 0.3.2, vérifiez chaque véhicule et arme. Le tableau conserve les **tests déplacement/tirs/rechargement de DW/DWE 0.3.1** ; il ne prouve pas une prise en charge générale de Fabric. Éditeur/simulation 0.3.2 ont été exécutés séparément sur Forge 1.20.1 et Fabric 1.21.1 ; ce tutoriel est filmé sur NeoForge 1.21.1.
 
 | Pack | Minecraft / chargeur | Véhicules |
 | --- | --- | --- |
@@ -26,7 +26,7 @@ Les véhicules suivants ont été vérifiés avec les équipages des PNJ pour le
 | Pack de combat de première ligne | Forge 1.20.1 | BMP-2 |
 | Spectaculaire Machines Addon | Forge 1.20.1 | Type 10 |
 
-Utilisez les patchs 0.3.1 actuels de DW et DWE ensemble. Suivre [configuration du véhicule](#dochi-warfare-expanded/expanded-overview) pour assigner des chauffeurs, des artilleurs et des munitions.
+Utilisez DWE 0.3.2 avec DW compatible. DW reste obligatoire ; les numéros de version identiques ne sont pas requis. Suivez la [configuration du véhicule](#dochi-warfare-expanded/expanded-overview).
 
 ## Combinaisons de problèmes connues
 

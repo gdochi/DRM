@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Configuração
 section: overview
 status: Guia
-version: 0.3.1
+version: 0.3.2
 audience: Operadores/criadores de servidores
 translationSource: en
 translationMethod: assisted
@@ -15,7 +15,7 @@ translationMethod: assisted
 
 ## Escolha um pacote de veículos
 
-Os seguintes veículos foram verificados com equipes NPC para movimento, disparo e recargas em DW / DWE 0.3.1. Veículos não listados e armas especiais na mesma matilha precisam de verificação separada.
+No DWE 0.3.2, confira cada veículo e arma. A tabela preserva **testes de movimento/tiros/recarga do DW/DWE 0.3.1**; não comprova suporte geral no Fabric. O editor/simulação 0.3.2 foi executado separadamente em Forge 1.20.1 e Fabric 1.21.1; este tutorial foi gravado no NeoForge 1.21.1.
 
 | Embalar | Minecraft / carregador | Veículos |
 | --- | --- | --- |
@@ -26,7 +26,7 @@ Os seguintes veículos foram verificados com equipes NPC para movimento, disparo
 | Pacote de Combate da Linha de Frente | Forge 1.20.1 | BMP-2 |
 | Espectacular Machines Addon | Forge 1.20.1 | Digite 10 |
 
-Usar atual 0.3.1 Patches de DW e DWE juntos. Seguir [configuração do veículo](#dochi-warfare-expanded/expanded-overview) Para atribuir motoristas, artilheiros e munição.
+Use DWE 0.3.2 com DW compatível. DW é obrigatório; os números de versão não precisam coincidir. Siga a [configuração do veículo](#dochi-warfare-expanded/expanded-overview) para tripulação e munição.
 
 ## Combinações de problemas conhecidas
 

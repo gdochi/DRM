@@ -7,13 +7,13 @@ product: dochi-warfare-expanded
 category: 설치와 시작
 section: overview
 status: 사용 안내
-version: 0.3.1
+version: 0.3.2
 audience: 서버 운영자 / 제작자
 ---
 
 ## 차량 팩 고르기
 
-DW·DWE 0.3.1에서 아래 기종은 NPC 승무원의 이동·사격·재장전을 확인한 차량입니다. 같은 팩이라도 표에 없는 기종이나 특수 무장은 따로 확인이 필요합니다.
+DWE 0.3.2에서도 차량 팩은 기종·무장별로 확인합니다. 아래 표는 **DW·DWE 0.3.1 당시의 이동·사격·재장전 확인 이력**이며 Fabric 전체의 지원 판정을 뜻하지 않습니다. 0.3.2의 월드 편집기·시뮬레이션은 Forge 1.20.1과 Fabric 1.21.1에서 별도로 확인했고, 이 튜토리얼 영상은 NeoForge 1.21.1로 촬영했습니다.
 
 | 차량 팩 | Minecraft / 로더 | 기종 |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ DW·DWE 0.3.1에서 아래 기종은 NPC 승무원의 이동·사격·재장전�
 | Frontline Combat Pack | Forge 1.20.1 | BMP-2 |
 | Spectacular Machines Addon | Forge 1.20.1 | Type 10 |
 
-DW와 DWE는 최신 0.3.1 수정본을 함께 사용합니다. [첫 차량 설정](#dochi-warfare-expanded/expanded-overview)을 따라 운전수·포수와 탄약을 정하세요.
+DWE 0.3.2와 호환 DW를 함께 사용합니다. DW는 필수이며 두 모드의 버전 번호를 맞추는 조건은 없습니다. [첫 차량 설정](#dochi-warfare-expanded/expanded-overview)에서 운전수·포수와 탄약을 정하세요.
 
 ## 피해야 할 조합
 

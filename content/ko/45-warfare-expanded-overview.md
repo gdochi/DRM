@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: 시작하기
 section: overview
 status: Draft
-version: 0.3.1
+version: 0.3.2
 audience: 제작자와 서버 운영자
 ---
 
@@ -17,13 +17,18 @@ DWE는 **DW에 추가하는 차량 기능 모드**입니다. 지원하는 Superb
 
 | 항목 | 필요 조건 |
 | --- | --- |
-| Minecraft / 로더 | Forge 1.20.1 또는 NeoForge 1.21.1 |
-| DW와 DWE | 둘 다 0.3.1, 서버·클라이언트에 함께 설치 |
-| SuperbWarfare | Forge 0.8.9 / 0.8.9.1 / 0.8.9.2, NeoForge 0.8.9.1 / 0.8.9.2 |
+| Minecraft / 로더 | Forge 1.20.1, NeoForge 1.21.1 또는 Fabric 1.21.1 |
+| DW와 DWE | DWE 0.3.2와 호환 DW를 서버·클라이언트에 함께 설치. 두 모드의 버전 번호가 같아야 하는 조건은 없음 |
+| SuperbWarfare | 목표 로더용 빌드 설치. Forge 0.8.9 / 0.8.9.1 / 0.8.9.2, NeoForge 0.8.9.1 / 0.8.9.2. Fabric은 0.8.9.2 조합의 실행 확인 이력 있음 |
 | NPC 승무원 | DNPC 또는 CustomNPCs |
 | DRM | 선택 |
 
 DW의 TACZ·Player Animator도 필요합니다. [DW 설치](#dochi-warfare/warfare-setup)를 함께 확인하세요.
+
+
+이 안내는 DWE **0.3.2** 기준입니다. DW는 필수 코어이며 실제 사용하는 API의 호환성을 시작할 때 검사합니다. 특정 DW 버전 번호를 DWE와 맞추도록 강제하지 않습니다. 촬영·실행에 사용한 버전은 모든 조합의 최소 요구 버전을 뜻하지 않습니다.
+
+**타임라인 에디터 열기:** DW Npc Core를 들고 블록·엔티티를 겨누지 않은 채 공중을 우클릭하면 독립 편집기 선택창이 열립니다. DRM이 있으면 DRM 편집기 선택 화면에서도 Gimmick Editor를 엽니다. [새 GUI 튜토리얼](#dochi-warfare-expanded/expanded-support-timeline)에서 화면·배치·시간·중심점을 순서대로 익히세요.
 
 ![실제 M1A2 차량을 대상으로 연 DWE 차량 편집기의 Overview.](assets/media/guides/warfare-expanded-031-neo1211/dwe-ai.png "DWE·DW 0.3.1 / SuperbWarfare 0.8.9.1 / NeoForge 1.21.1. NPC 편집창과 항목이 다릅니다. 왼쪽 AI·Targets·Weapons·Gimmicks·Crew에서 설정하고, 오른쪽 위 AI enabled로 작동 여부를 정합니다. 현재 예제는 OFF입니다.")
 

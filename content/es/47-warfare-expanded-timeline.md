@@ -1,64 +1,106 @@
 ---
-title: Cronologías de bombardeo y soporte
+title: Tu primera línea de tiempo de apoyo
 slug: expanded-support-timeline
 order: 330
-description: Programar bombardeos, apoyo de armas, refuerzos de vehículos y movimiento de NPC juntos.
+description: Usa el nuevo editor del mundo para bombardeos, tiempos y centro de colocación.
 product: dochi-warfare-expanded
 category: Apoyo de combate
 section: support
-status: Proyecto
-version: 0.3.1
-audience: Creadores y operadores de mapas
+status: Guía
+version: 0.3.2
+audience: Creadores de mapas y operadores principiantes
 translationSource: en
 translationMethod: assisted
 ---
 
-## Crear una línea de tiempo
+## Sigue estas tres lecciones
 
-1. Abra el editor de trucos desde la selección del editor.
-2. Elija `Create New` para un documento vacío o `Use Default` para un borrador de bombardeo en su posición.
-3. Establece el origen y añade tipos de acción a la línea de tiempo.
-4. Configure el tick, las coordenadas, la unidad de soporte y la vida útil de cada acción.
-5. Nombre y guarde el archivo con `Save As`.
-6. Utilice la acción run-at-my-position para invocar el diseño guardado en relación con su posición.
+**Gimmick Editor es una herramienta de creación.** Coloca el apoyo en la vista del mundo y elige cuándo comienza cada evento.
 
-Guarde los cambios pendientes primero. Si otro usuario cambió el archivo, refresque antes de ejecutarlo. La vista previa del editor muestra el diseño creado; prueba la navegación real y los golpes en el terreno previsto.
-
-| Medidas adoptadas | Configuración y resultado |
+| Lección | Objetivo |
 | --- | --- |
-| Bombardeos | Aviones, bombas, objetivos, rumbo, altitud, forma de ataque e intervalo; utiliza armas nativas de caída libre. |
-| Soporte de vehículos | Vehículo, cuenta, inicio/destino, espaciado, facción y radio de guardia; se mueve para defender el destino. |
-| Soporte de armas | Modo aire / tierra, arma real del vehículo, aproximación, corredor de tiro, duración y tapa de disparo. |
-| Movimiento NPC | Genera clones de NPC de DW seleccionados o dirige temporalmente los NPC de DW existentes en un área. |
+| 1. Esta página | Conocer la pantalla, crear bombardeos de punto/línea/área y ajustar tiempo y centro |
+| 2. [Vehículos, armas y NPC](#dochi-warfare-expanded/expanded-support-actions) | Salidas/destinos, vehículos, armas y fuentes de NPC |
+| 3. [Guardar, simular y ejecutar](#dochi-warfare-expanded/expanded-support-run) | Guardar, cargar, probar con Simulation e invocar el archivo |
 
-El servidor suministra armas de apoyo de armas elegibles. Se excluyen bombas, cohetes, misiles y armas principales de baja velocidad. Ataques de apoyo aéreo y salidas; apoyo en tierra barre un corredor con su torreta. Las RPM nativas, la munición, el calor, la recarga y los controles de seguridad permanecen activos.
+Las tres lecciones incluyen diez vídeos de **DWE 0.3.2 / NeoForge 1.21.1** con la interfaz real en inglés y explicaciones de pasos en coreano. No tienen audio: pausa para localizar cada control. Forge y Fabric comparten este flujo; la grabación es de NeoForge.
 
-Elija clones NPC de la biblioteca DW. La selección de área requiere CustomNPCs con DW AI habilitado y excluye los NPC de conducción, contratados o ya dirigidos. El combate existente tiene prioridad antes de que se reanude el movimiento. No hay teletransportación de reserva. Las facciones usan ID numéricos; las referencias de archivos clon difieren de los nombres de visualización.
+Consulta la [instalación y el primer vehículo](#dochi-warfare-expanded/expanded-overview), entra en un mundo con permisos de operador y abre **Gimmick Editor → Create New**. **Use Default** abre un borrador con un bombardeo de punto en la posición del jugador. Empieza con un solo evento.
 
-![Gimmick Editor con pasos, vista superior, configuración y línea de tiempo.](assets/media/guides/warfare-expanded-031-neo1211/dwe-gimmick.png "DWE 0.3.1 / NeoForge 1.21.1. El borrador predeterminado utiliza A-10A, MK-82 y Point, con la primera gota en el tick 20. Coincidir con la entrada, el objetivo y la salida a la línea de tiempo antes de correr.")
+## 1. Conoce la pantalla
 
-## Momento y origen
+| Zona | Uso |
+| --- | --- |
+| Superior | Nuevo, Load, Save, Save As, Reset, título, Simulation, coordenadas y Center |
+| Izquierda | Herramientas y selección, duplicación y eliminación de eventos |
+| Mundo | Colocar posiciones y rutas sobre bloques reales |
+| Derecha | Aeronave/vehículo, tiempos y cantidades; Advanced añade coordenadas y otros valores |
+| Timeline inferior | Filas de NPC, vehículos/armas y bombardeos; modificar inicios |
 
-20 ticks igual a un segundo a 20 TPS. La garrapata de un bombardeo es la **Primer lanzamiento de bomba**, no impacto. Las garrapatas de soporte para vehículos, armas y PNJ comienzan a desovar o moverse. La duración del soporte de armas comienza al entrar en el alcance del arma; la expiración de la salida o de por vida puede terminarlo antes.
+![Crea un documento, pliega y redimensiona paneles y mueve la cámara.](assets/media/guides/dwe-tutorials-20261109/dwe-workspace.mp4 "01 · Paneles, divisores, desplazamiento, rotación y zoom. DWE 0.3.2 / NeoForge 1.21.1.")
 
-`lifetime_ticks` limita el apoyo temporal. Los NPC desvencijados se eliminan al expirar; los NPC seleccionados por área existentes recuperan su configuración de movimiento anterior sin sobrescribir las ediciones realizadas durante la ejecución. Los vehículos de apoyo temporal no pueden ser abordados, clonados o capturados en piedras del alma.
+Usa las flechas de las esquinas para plegar/desplegar paneles y arrastra sus divisores. Desplázate **dentro de las propiedades** para acceder a más campos.
 
-## Comandos del operador
+En el mundo, la rueda ajusta el zoom, el arrastre central desplaza la vista y el derecho la gira. **F** enfoca el evento o centro seleccionado. WASD mueve al jugador con seguimiento; Jump/Sneak ajustan la altura de la cámara. Su velocidad −/+ no altera la ejecución.
 
-Se requiere un nivel de permiso 2. Guardar `my_support` primero y omitir `.json` de su nombre de comando.
+## 2. Crea el primer bombardeo de punto
 
-```text
-/dw callgimmicks my_support
-/dw callgimmicks my_support ~ ~ ~
-/dw bombard ~ ~ ~ superbwarfare:ju_87 superbwarfare:sc_250 10
-```
+Objetivo: **un blanco en el suelo, con primera suelta dos segundos después de invocar**.
 
-Sin coordenadas, el diseño guardado se ejecuta en su lugar. Con coordenadas, objetivos, inicios y destinos cambian por la diferencia del guardado `origin`. El último ejemplo lanza su primera bomba después de 10. Compruebe los ID de aeronave / carga útil instalados con la finalización del comando. El comando one-shot soporta puntos y `area`; diseños de línea de autor en el editor/JSON.
+1. Elige **Point bombing**.
+2. Pulsa una superficie de bloque cargada. Comprueba el evento en la lista y fila de bombardeo.
+3. Vuelve a **Select / move** y selecciona su marcador o fila.
+4. Revisa **Aircraft / Payload**. Las listas proceden del servidor; si están vacías, revisa instalación y compatibilidad.
+5. Introduce **Start (seconds) 2**, **Altitude 96** y **Lifetime (seconds) 30**.
+6. Revisa coordenadas en **Advanced**; **Basic** vuelve al formulario compacto.
 
-## Archivos y referencia JSON
+![Coloca un punto con inicio a dos segundos, altitud 96 y duración de 30 segundos.](assets/media/guides/dwe-tutorials-20261109/dwe-point.mp4 "02 · Explosion damage 20 establece un daño base de explosión de 20 HP. El vídeo no mide impactos ni daño.")
 
-Archivos en vivo en `config/dochi_warfare/vehicle_ai/gimmicks/<name>.json`. Los ejemplos incorporados se instalan solo cuando faltan, preservando los archivos del usuario.
+**Dos segundos es la primera suelta, no el impacto.** La altitud y física del arma retrasan la llegada al suelo. Lifetime es la vida del apoyo temporal.
 
-El esquema actual es `dochi.warfare.gimmicks.v6`; v1–v5 permanece legible. `origin` define el ancla de diseño, `steps` contiene acciones y `at_tick` las programa. Cada paso contiene uno de `bombard`, `vehicle_support`, `fire_support` o `npc_move`. Comience a partir de archivos generados por el editor al editar JSON.
+Los campos de cantidad/intervalo pueden estar desactivados para puntos. Usa línea/área para varias sueltas. Los marcadores muestran el plan; los impactos reales dependen de la física nativa.
 
-Los campos de bombardeo `explosion_damage` y `direct_damage` son valores de daño de HP base. Cero desactiva ese componente de daño; un valor de editor vacío conserva el valor de arma nativa. La caída nativa y la armadura todavía afectan el daño real. Estos campos no cambian el radio de explosión o la destrucción del terreno.
+## 3. Dibuja líneas y áreas
+
+1. Con **Line bombing**, arrastra un corredor por el suelo.
+2. Define cantidad e intervalo: **cuatro bombas, separadas 0,5 segundos** en el ejemplo.
+3. Dibuja otro corredor con **Area bombing**, que añade anchura.
+4. Arrastra los controles de longitud/anchura/dirección con **Select / move**, o usa **Advanced → Width / Heading**.
+
+![Configura cuatro bombas cada medio segundo y ajusta anchura y dirección de un área.](assets/media/guides/dwe-tutorials-20261109/dwe-corridors.mp4 "03 · Eventos de línea y área separados. Área: Width 24, Heading 0. Es configuración, no un ataque.")
+
+Si empiezas a dos segundos, las sueltas son **2,0 → 2,5 → 3,0 → 3,5 segundos**. La cantidad explícita es por aeronave; las áreas pueden usar varias pasadas paralelas. Cantidad, velocidad nativa e intervalo calculan la longitud y pueden bloquear su entrada. Una cantidad vacía conserva la carga nativa.
+
+Heading: **0 sur, 90 oeste, −90 este**. Comprueba el marcador de aproximación.
+
+## 4. Organiza varios eventos
+
+**Cambiar el tiempo y reordenar la lista son operaciones distintas.**
+
+- Basic usa segundos en incrementos de **0,05**. Advanced y los archivos usan ticks enteros; **20 ticks = un segundo** a 20 TPS.
+- Arrastra marcadores horizontalmente para cambiar inicios. Pulsa la regla para elegir el tiempo de nuevas colocaciones.
+- Timeline −/+ cambia el intervalo visible, no la velocidad.
+- Arrastrar filas reordena eventos conservando sus huecos temporales. Cambia el tiempo con campos/marcadores.
+- Tras **Duplicate**, revisa solapamiento e inicio. Las casillas permiten eliminar varios eventos.
+
+![Coloca vehículos a dos segundos y bombardeo a cinco, amplía el intervalo y mueve el marcador.](assets/media/guides/dwe-tutorials-20261109/dwe-timing.mp4 "04 · Tiempos, marcadores, Duplicate y Ctrl+Z / Ctrl+Y.")
+
+**Ctrl+Z / Ctrl+Y** deshacen/rehacen la edición. **Esc** o soltar fuera de la zona permitida cancela el arrastre. Un máximo de 16 eventos puede comenzar en un mismo tick; escalona grupos mayores.
+
+## 5. Usa el centro y coordenadas relativas
+
+La pantalla empieza en **Relative coordinates**. Cero en todos los ejes corresponde al **Center** superior.
+
+| Operación | Relativas | Absolutas |
+| --- | --- | --- |
+| Cambiar visualización | Conserva la disposición | Conserva la disposición |
+| Cambiar Center | Traslada salidas, destinos y blancos juntos | Conserva posiciones mundiales y cambia la referencia |
+| Introducir posiciones | Distancias desde el centro | Coordenadas del mundo |
+
+![Compara trasladar toda la disposición relativa con cambiar solo la referencia absoluta.](assets/media/guides/dwe-tutorials-20261109/dwe-center.mp4 "05 · Center X = 8 y deshacer. En Absolute coordinates, cambiar el centro conserva la ruta.")
+
+Usa **Center → X/Y/Z**, **Use player position**, o pulsa/arrastra el centro en el mundo. En modo relativo se trasladan todas las rutas y blancos. Decide si quieres editar un marcador o mover el conjunto.
+
+Cargar en modo relativo lleva la disposición al centro actual. Para conservar las posiciones guardadas, **cambia a Absolute coordinates antes de Load**. Los archivos antiguos sin origen usan el primer blanco como referencia.
+
+Continúa con [vehículos, armas y NPC](#dochi-warfare-expanded/expanded-support-actions) o [guarda, prueba y ejecuta](#dochi-warfare-expanded/expanded-support-run).

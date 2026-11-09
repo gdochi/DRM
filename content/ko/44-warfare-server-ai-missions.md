@@ -41,10 +41,12 @@ tags:
 
 ## 차량과 폭격 지원 연결
 
-차량 AI의 전역 정책은 **DWE 0.3.1**이 따로 관리합니다. NPC 정책을 바꿨다고 차량의 모든 동작까지 같은 방식으로 바뀌지는 않습니다. 차량 정책 파일은 `config/dochi_warfare/vehicle_ai/server-ai.json`입니다.
+차량 AI의 전역 정책은 **DWE 0.3.2**이 따로 관리합니다. NPC 정책을 바꿨다고 차량의 모든 동작까지 같은 방식으로 바뀌지는 않습니다. 차량 정책 파일은 `config/dochi_warfare/vehicle_ai/server-ai.json`입니다.
 
 폭격·기총 지원·차량 증원·NPC 이동은 [DWE 지원 타임라인](#dochi-warfare-expanded/expanded-support-timeline)에서 만듭니다.
 
-![DWE 지원 연출의 Timeline 편집 화면.](assets/media/guides/warfare-expanded-031-neo1211/dwe-gimmick.png "DWE 0.3.1 / NeoForge 1.21.1 실제 편집 화면입니다. 서버 정책은 기능 허용 여부, 이 타임라인은 호출했을 때의 실행 순서를 정합니다. 이 사진만으로 폭격 실행까지 검증한 것은 아닙니다.")
+![DWE 0.3.2의 월드 타임라인 화면과 패널·카메라 조작.](assets/media/guides/dwe-tutorials-20261109/dwe-workspace.mp4 "실제 NeoForge 1.21.1 제작 화면입니다. 서버 정책은 허용 여부, 타임라인은 호출 순서를 정합니다.")
 
 저장한 지원 이름은 `/dw callgimmicks <이름> [x y z]`로 호출합니다. 제작부터 월드 실행까지의 단계는 위 타임라인 안내를 따릅니다.
+
+제작은 [지원 종류별 설정](#dochi-warfare-expanded/expanded-support-actions), 저장·시험·명령 호출은 [저장·실행](#dochi-warfare-expanded/expanded-support-run)에서 단계별로 이어집니다.

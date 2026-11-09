@@ -41,10 +41,12 @@ Disabling a feature retains NPC values for reuse when allowed again. The server 
 
 ## Vehicles and support sequences
 
-**DWE 0.3.1** manages vehicle AI's global policy separately. Changing NPC policy does not apply every change to vehicle behavior. Vehicle policy is stored in `config/dochi_warfare/vehicle_ai/server-ai.json`.
+**DWE 0.3.2** manages vehicle AI's global policy separately. Changing NPC policy does not apply every change to vehicle behavior. Vehicle policy is stored in `config/dochi_warfare/vehicle_ai/server-ai.json`.
 
 Build bombing, strafing, vehicle reinforcements and NPC movement in the [DWE support timeline](#dochi-warfare-expanded/expanded-support-timeline).
 
-![DWE support timeline editor.](assets/media/guides/warfare-expanded-031-neo1211/dwe-gimmick.png "Actual DWE 0.3.1 / NeoForge 1.21.1 editor. Server policy grants permission; the timeline defines the sequence when called. This screenshot alone does not verify an executed bombing run.")
+![DWE 0.3.2 world timeline, panels, and camera controls.](assets/media/guides/dwe-tutorials-20261109/dwe-workspace.mp4 "Actual NeoForge 1.21.1 authoring screen. Server policy controls availability; the timeline controls invocation order.")
 
 Call a saved support name with `/dw callgimmicks <name> [x y z]`. Follow the linked timeline guide from authoring through world execution.
+
+Continue with [support settings](#dochi-warfare-expanded/expanded-support-actions) and [saving, simulation, and commands](#dochi-warfare-expanded/expanded-support-run).

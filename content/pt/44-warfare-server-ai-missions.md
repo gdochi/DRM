@@ -43,10 +43,12 @@ Desativar um recurso retém valores de NPC para reutilização quando permitido 
 
 ## Veículos e sequências de suporte
 
-**DWE 0.3.1** gerencia a política global da IA do veículo separadamente. Mudar a política de NPC não aplica todas as mudanças no comportamento do veículo. A política do veículo está armazenada em `config/dochi_warfare/vehicle_ai/server-ai.json`.
+**DWE 0.3.2** gerencia a política global da IA do veículo separadamente. Mudar a política de NPC não aplica todas as mudanças no comportamento do veículo. A política do veículo está armazenada em `config/dochi_warfare/vehicle_ai/server-ai.json`.
 
 Construa bombardeios, assaltos, reforços de veículos e movimento NPC no [Linha do tempo de suporte da DWE](#dochi-warfare-expanded/expanded-support-timeline).
 
-![Editor da linha do tempo.](assets/media/guides/warfare-expanded-031-neo1211/dwe-gimmick.png "Real DWE 0.3.1 / NeoForge 1.21.1 editor. A política do servidor concede permissão; a linha do tempo define a sequência quando chamada. Esta captura de tela sozinha não verifica uma execução de bombardeio.")
+![Timeline no mundo do DWE 0.3.2, painéis e câmera.](assets/media/guides/dwe-tutorials-20261109/dwe-workspace.mp4 "Tela real do NeoForge 1.21.1. A política do servidor permite funções; a timeline define a ordem da chamada.")
 
 Chame um nome de suporte salvo com `/dw callgimmicks <name> [x y z]`. Siga o guia da linha do tempo da autoria através da execução mundial.
+
+Continue com [ajustes de apoio](#dochi-warfare-expanded/expanded-support-actions) e [salvar, simular e chamar](#dochi-warfare-expanded/expanded-support-run).

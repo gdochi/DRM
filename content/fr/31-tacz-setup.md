@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Configuration
 section: setup
 status: Projet
-version: 0.3.1
+version: 0.3.2
 audience: Opérateurs de serveur
 tags:
   - setup
@@ -21,14 +21,15 @@ translationMethod: assisted
 
 | Poste | Besoins |
 | --- | --- |
-| Minecraft / chargeur | Forge 1.20.1 ou NeoForge 1.21.1 |
-| Java | Forge 17 / NeoForge 21 |
-| DW | Correspondant-chargeur 0.3.1 |
-| TACZ | Au moins 1.1.8, ci-dessous 1.2 |
-| Animateur joueur | Obligatoire pour les clients: Forge 1.0.0 + /  NeoForge 2.0 + |
+| Minecraft / chargeur | Forge 1.20.1, NeoForge 1.21.1 ou Fabric 1.21.1 |
+| Java | Forge 17 / NeoForge et Fabric 21 |
+| DW | 0.3.2 du bon chargeur |
+| TACZ | Requis : TACZ sur Forge/NeoForge ; TACZ Refabricated sur Fabric. L’ancienne restriction sous 1.2 ne s’applique plus |
+| Player Animator | Requis sur clients Forge/NeoForge : Forge 1.0.0+ / NeoForge 2.0+. Facultatif sur Fabric |
+| Fabric | Fabric API + Forge Config API Port (versions Fabric) |
 | NPC mod | DNPC ou CustomNPCs |
 
-Installez matching-loader DW et ses exigences sur le serveur et le client. DRM est facultatif. Pour les véhicules, ajouter **DWE 0.3.1** et SuperbWarfare. Les versions supportées SuperbWarfare sont ** 0.8.9 / 0.8.9.1 / 0.8.9.2 ** sur Forge et ** 0.8.9.1 / 0.8.9.2 ** sur NeoForge. Inclure SuperbWarfareses propres dépendances, comme Kotlin pour Forge.
+Installez matching-loader DW et ses exigences sur le serveur et le client. DRM est facultatif. Pour les véhicules, ajouter **DWE 0.3.2** et SuperbWarfare. Les versions supportées SuperbWarfare sont ** 0.8.9 / 0.8.9.1 / 0.8.9.2 ** sur Forge et ** 0.8.9.1 / 0.8.9.2 ** sur NeoForge. Inclure SuperbWarfareses propres dépendances, comme Kotlin pour Forge.
 
 ## Choisissez une arme dans l'inventaire du joueur
 

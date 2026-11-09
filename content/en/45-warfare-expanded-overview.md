@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Getting started
 section: overview
 status: Draft
-version: 0.3.1
+version: 0.3.2
 audience: Creators and server operators
 ---
 
@@ -17,13 +17,18 @@ DWE **adds vehicle features to DW**. Move supported SuperbWarfare vehicles, use 
 
 | Item | Requirement |
 | --- | --- |
-| Minecraft / loader | Forge 1.20.1 or NeoForge 1.21.1 |
-| DW and DWE | Both 0.3.1, installed together on server and clients |
-| SuperbWarfare | Forge 0.8.9 / 0.8.9.1 / 0.8.9.2; NeoForge 0.8.9.1 / 0.8.9.2 |
+| Minecraft / loader | Forge 1.20.1, NeoForge 1.21.1, or Fabric 1.21.1 |
+| DW and DWE | DWE 0.3.2 and compatible DW on server and clients; matching version numbers are not required |
+| SuperbWarfare | Install the matching loader build. Forge 0.8.9 / 0.8.9.1 / 0.8.9.2; NeoForge 0.8.9.1 / 0.8.9.2. Fabric has an exercised 0.8.9.2 combination |
 | NPC crews | DNPC or CustomNPCs |
 | DRM | Optional |
 
 DW's TACZ and Player Animator requirements still apply. See [DW setup](#dochi-warfare/warfare-setup).
+
+
+This guide targets DWE **0.3.2**. DW remains required; DWE checks the actual APIs it uses at startup instead of requiring a matching DW version number. Recorded/tested versions are not minimum requirements for every combination.
+
+**Open the timeline editor:** hold DW Npc Core and right-click air without targeting a block/entity to open the standalone selector. With DRM installed, Gimmick Editor is also available through DRM editor selection. Follow the [new GUI tutorial](#dochi-warfare-expanded/expanded-support-timeline) for workspace, placement, timing, and center.
 
 ![DWE vehicle Overview opened for an actual M1A2.](assets/media/guides/warfare-expanded-031-neo1211/dwe-ai.png "DWE/DW 0.3.1, SuperbWarfare 0.8.9.1, NeoForge 1.21.1. Use AI, Targets, Weapons, Gimmicks and Crew on the left; AI enabled at the upper right controls activation. This example is OFF.")
 

@@ -43,10 +43,12 @@ La désactivation d'une fonctionnalité conserve les valeurs PNJ pour réutilisa
 
 ## Véhicules et séquences de soutien
 
-**DWE 0.3.1** gère la politique globale de l'IA des véhicules séparément. La modification de la politique PNJ ne s'applique pas à chaque modification du comportement du véhicule. La politique du véhicule est stockée en `config/dochi_warfare/vehicle_ai/server-ai.json`.
+**DWE 0.3.2** gère la politique globale de l'IA des véhicules séparément. La modification de la politique PNJ ne s'applique pas à chaque modification du comportement du véhicule. La politique du véhicule est stockée en `config/dochi_warfare/vehicle_ai/server-ai.json`.
 
 Construisez des bombardements, des mitraillages, des renforts de véhicules et des mouvements PNJ dans la chronologie de soutien [DWE ](#dochi-warfare-expanded/expanded-support-timeline).
 
-![DWE soutient l'éditeur de chronologie.](assets/media/guides/warfare-expanded-031-neo1211/dwe-gimmick.png "Réel DWE 0.3.1 / NeoForge 1.21.1 éditeur. La stratégie serveur accorde la permission ; la chronologie définit la séquence lors de l'appel. Cette capture d'écran à elle seule ne permet pas de vérifier un bombardement exécuté.")
+![Timeline du monde DWE 0.3.2, panneaux et caméra.](assets/media/guides/dwe-tutorials-20261109/dwe-workspace.mp4 "Écran réel NeoForge 1.21.1. La politique autorise les fonctions ; la timeline règle l’ordre d’appel.")
 
 Appelez un nom de support enregistré avec `/dw callgimmicks <name> [x y z]`. Suivez le guide chronologique lié de la création à l'exécution mondiale.
+
+Continuez avec les [réglages d’appui](#dochi-warfare-expanded/expanded-support-actions) et [enregistrement, simulation et commandes](#dochi-warfare-expanded/expanded-support-run).

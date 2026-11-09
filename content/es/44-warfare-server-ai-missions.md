@@ -43,10 +43,12 @@ Deshabilitar una característica retiene los valores NPC para su reutilización 
 
 ## Vehículos y secuencias de apoyo
 
-**DWE 0.3.1** gestiona la política global de la IA del vehículo por separado. Cambiar la política de NPC no aplica todos los cambios al comportamiento del vehículo. La política del vehículo se almacena en `config/dochi_warfare/vehicle_ai/server-ai.json`.
+**DWE 0.3.2** gestiona la política global de la IA del vehículo por separado. Cambiar la política de NPC no aplica todos los cambios al comportamiento del vehículo. La política del vehículo se almacena en `config/dochi_warfare/vehicle_ai/server-ai.json`.
 
 Construir bombardeo, ametrallamiento, refuerzos de vehículos y movimiento NPC en la línea de tiempo de apoyo [DWE](#dochi-warfare-expanded/expanded-support-timeline).
 
-![DWE soporta el editor de línea de tiempo.](assets/media/guides/warfare-expanded-031-neo1211/dwe-gimmick.png "DWE real 0.3.1 / NeoForge 1.21.1 editor. La directiva del servidor otorga permiso; la línea de tiempo define la secuencia cuando se llama. Esta captura de pantalla por sí sola no verifica una ejecución de bombardeo.")
+![Timeline del mundo de DWE 0.3.2, paneles y cámara.](assets/media/guides/dwe-tutorials-20261109/dwe-workspace.mp4 "Pantalla real de NeoForge 1.21.1. La política permite funciones; la timeline define el orden de llamada.")
 
 Llame a un nombre de soporte guardado con `/dw callgimmicks <name> [x y z]`. Siga la guía de línea de tiempo vinculada desde la creación hasta la ejecución mundial.
+
+Continúa con [ajustes de apoyo](#dochi-warfare-expanded/expanded-support-actions) y [guardar, simular e invocar](#dochi-warfare-expanded/expanded-support-run).

@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Véhicule AI
 section: vehicles
 status: Projet
-version: 0.3.1
+version: 0.3.2
 audience: Créateurs et opérateurs de scénarios
 tags:
   - SuperbWarfare
@@ -17,9 +17,9 @@ translationSource: en
 translationMethod: assisted
 ---
 
-Sur Forge et NeoForge 0.3.1, **DWE** fournit les fonctions du véhicule ci-dessous. Voir [DWE setup et files](#dochi-warfare-expanded/expanded-overview), [vehicle reactions](#dochi-warfare-expanded/expanded-vehicle-gimmicks) et [support timelines](#dochi-warfare-expanded/expanded-support-timeline).
+**DWE 0.3.2** fournit les véhicules sur Forge 1.20.1, NeoForge 1.21.1 et Fabric 1.21.1. Voir [installation et fichiers](#dochi-warfare-expanded/expanded-overview), [réactions](#dochi-warfare-expanded/expanded-vehicle-gimmicks) et la [timeline remaniée](#dochi-warfare-expanded/expanded-support-timeline).
 
-Constructions actuelles: DW 0.3.1 pour Forge 1.20.1 et DW 0.3.1 pour NeoForge 1.21.1. L'IA du véhicule sur les deux chargeurs nécessite l'addon DWE 0.3.1 séparé. Vérifiez l'installation spécifique à [loader](#dochi-warfare/warfare-setup) pour les dépendances externes pistolet/véhicule.
+DW reste le noyau obligatoire. Les API utilisées sont vérifiées sans imposer des numéros DW/DWE identiques. Voir [installation par chargeur](#dochi-warfare/warfare-setup) pour les dépendances externes.
 
 ## Exigences et éditeur
 

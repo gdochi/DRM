@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Véhicules
 section: vehicles
 status: Projet
-version: 0.3.1
+version: 0.3.2
 audience: Créateurs de combat
 translationSource: en
 translationMethod: assisted

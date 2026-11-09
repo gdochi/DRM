@@ -7,13 +7,13 @@ product: dochi-warfare-expanded
 category: Setup
 section: overview
 status: Guide
-version: 0.3.1
+version: 0.3.2
 audience: Server operators / creators
 ---
 
 ## Choose a vehicle pack
 
-The following vehicles were checked with NPC crews for movement, firing and reloads in DW/DWE 0.3.1. Unlisted vehicles and special weapons in the same pack need separate checking.
+Check vehicle packs by vehicle and weapon in DWE 0.3.2. The table below preserves **movement/firing/reload checks from DW/DWE 0.3.1**; it does not establish Fabric-wide support. The 0.3.2 world editor/simulation was separately exercised on Forge 1.20.1 and Fabric 1.21.1; this tutorial was recorded on NeoForge 1.21.1.
 
 | Pack | Minecraft / loader | Vehicles |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ The following vehicles were checked with NPC crews for movement, firing and relo
 | Frontline Combat Pack | Forge 1.20.1 | BMP-2 |
 | Spectacular Machines Addon | Forge 1.20.1 | Type 10 |
 
-Use current 0.3.1 patches of DW and DWE together. Follow [vehicle setup](#dochi-warfare-expanded/expanded-overview) to assign drivers, gunners and ammunition.
+Use DWE 0.3.2 with compatible DW. DW is required; matching mod version numbers are not. Follow [vehicle setup](#dochi-warfare-expanded/expanded-overview) for drivers, gunners, and ammo.
 
 ## Known problem combinations
 
