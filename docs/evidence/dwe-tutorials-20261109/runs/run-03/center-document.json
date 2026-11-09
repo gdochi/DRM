@@ -1,0 +1,34 @@
+{
+  "schema": "dochi.warfare.gimmicks.v6",
+  "title": "",
+  "origin": [
+    8.0,
+    -60.0,
+    -16.0
+  ],
+  "steps": [
+    {
+      "id": "e8f92ffc-42b0-4c2c-b8d3-13f732286258",
+      "at_tick": 0,
+      "type": "vehicle_support",
+      "lifetime_ticks": 3600,
+      "vehicle_support": {
+        "vehicle": "superbwarfare:m_1a_2",
+        "count": 1,
+        "start": [
+          0.0,
+          -60.0,
+          -6.0
+        ],
+        "destination": [
+          0.0,
+          -60.0,
+          12.000000000000007
+        ],
+        "spacing": 12.0,
+        "faction": "0",
+        "guard_radius": 32.0
+      }
+    }
+  ]
+}

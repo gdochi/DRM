@@ -1,0 +1,4160 @@
+{
+  "source": "C:/Users/hodu3/Desktop/[DOCHI] DOCS/build/task/guide-capture/cobble-release-tutorials-20261109-02/captures/badge-presentation-frames.json",
+  "frames": 582,
+  "selected": [
+    {
+      "frame": 0,
+      "file": "00000.png",
+      "elapsedMs": 1.8934,
+      "screen": "BadgeEditorScreen"
+    },
+    {
+      "frame": 53,
+      "file": "00053.png",
+      "elapsedMs": 2659.5996,
+      "screen": "BadgeEditorScreen"
+    },
+    {
+      "frame": 106,
+      "file": "00106.png",
+      "elapsedMs": 5387.6137,
+      "screen": "BadgePresentationEditorScreen"
+    },
+    {
+      "frame": 158,
+      "file": "00158.png",
+      "elapsedMs": 7979.9118,
+      "screen": "BadgePresentationEditorScreen"
+    },
+    {
+      "frame": 211,
+      "file": "00211.png",
+      "elapsedMs": 10630.2109,
+      "screen": "BadgePresentationEditorScreen"
+    },
+    {
+      "frame": 264,
+      "file": "00264.png",
+      "elapsedMs": 13277.0436,
+      "screen": "BadgePresentationEditorScreen"
+    },
+    {
+      "frame": 317,
+      "file": "00317.png",
+      "elapsedMs": 15924.72,
+      "screen": "BadgePresentationEditorScreen"
+    },
+    {
+      "frame": 370,
+      "file": "00370.png",
+      "elapsedMs": 18583.9026,
+      "screen": "BadgePresentationEditorScreen"
+    },
+    {
+      "frame": 423,
+      "file": "00423.png",
+      "elapsedMs": 21290.1526,
+      "screen": "BadgeEditorScreen"
+    },
+    {
+      "frame": 475,
+      "file": "00475.png",
+      "elapsedMs": 23888.3978,
+      "screen": "BadgeEditorScreen"
+    },
+    {
+      "frame": 528,
+      "file": "00528.png",
+      "elapsedMs": 26549.1347,
+      "screen": "BadgeEditorScreen"
+    },
+    {
+      "frame": 581,
+      "file": "00581.png",
+      "elapsedMs": 29189.5915,
+      "screen": "BadgeEditorScreen"
+    }
+  ],
+  "durationMs": 29237.698099999998,
+  "intervalMs": {
+    "median": 50.10530000000006,
+    "p95": 51.57390000000123,
+    "max": 163.09189999999944
+  },
+  "originalFrames": [
+    {
+      "file": "00000.png",
+      "elapsedMs": 1.8934,
+      "screen": "BadgeEditorScreen",
+      "bytes": 188852,
+      "sha256": "4a49fc34f702ff2579823f4705a088904f1478a7f409d2a6f35b44eb72f8ff97"
+    },
+    {
+      "file": "00001.png",
+      "elapsedMs": 51.7942,
+      "screen": "BadgeEditorScreen",
+      "bytes": 188824,
+      "sha256": "bc1ffc7d6bc9938a5b9ff1f8e8cf561bbb8e1283b1d9c496bfe807b120ce2505"
+    },
+    {
+      "file": "00002.png",
+      "elapsedMs": 101.9236,
+      "screen": "BadgeEditorScreen",
+      "bytes": 188671,
+      "sha256": "220d90c0d6550075f4047da14c0d2a3a4a2ff280dc6f4123b2658a3c716ca562"
+    },
+    {
+      "file": "00003.png",
+      "elapsedMs": 151.8274,
+      "screen": "BadgeEditorScreen",
+      "bytes": 189085,
+      "sha256": "29d69ea43a0683fa478170853db7aa4b926ac2af420cb8f562ba76534a3a821e"
+    },
+    {
+      "file": "00004.png",
+      "elapsedMs": 202.1176,
+      "screen": "BadgeEditorScreen",
+      "bytes": 189298,
+      "sha256": "7b56bebe603b5121718a581345bbc844864171d895fae547a7272e748203d998"
+    },
+    {
+      "file": "00005.png",
+      "elapsedMs": 252.5363,
+      "screen": "BadgeEditorScreen",
+      "bytes": 189271,
+      "sha256": "183c724a29d153bddee9845783adc2f1173a863a4f6a9ac9557d03735ab9549a"
+    },
+    {
+      "file": "00006.png",
+      "elapsedMs": 303.1566,
+      "screen": "BadgeEditorScreen",
+      "bytes": 189540,
+      "sha256": "4b80703980c258cc5c03c09e79c86ee248f960929ab57f0624344b5a908c174c"
+    },
+    {
+      "file": "00007.png",
+      "elapsedMs": 352.673,
+      "screen": "BadgeEditorScreen",
+      "bytes": 189892,
+      "sha256": "fa0a91fbdd1d76b58dc4515ff4523b468e4a8558fdeb908ac64b0e9537742035"
+    },
+    {
+      "file": "00008.png",
+      "elapsedMs": 402.8541,
+      "screen": "BadgeEditorScreen",
+      "bytes": 189861,
+      "sha256": "011fbe6b52b849a1ea2a4809d5385d35d9212a5a27958e69405bf6b2711476e4"
+    },
+    {
+      "file": "00009.png",
+      "elapsedMs": 453.3335,
+      "screen": "BadgeEditorScreen",
+      "bytes": 189792,
+      "sha256": "c26d75be15cc04d7199c57f426f8449a2f201579937024aedcd54c9d73ba41e7"
+    },
+    {
+      "file": "00010.png",
+      "elapsedMs": 503.2208,
+      "screen": "BadgeEditorScreen",
+      "bytes": 189782,
+      "sha256": "f400b7ad53026d06bc9c0aec327bff0600113dcf8310ecb12bf30a1c6e28ba76"
+    },
+    {
+      "file": "00011.png",
+      "elapsedMs": 553.4397,
+      "screen": "BadgeEditorScreen",
+      "bytes": 189662,
+      "sha256": "e9b1700dbd42c6e7560083350f5ebd88322ea221066352eee6b6e65ca116a2d4"
+    },
+    {
+      "file": "00012.png",
+      "elapsedMs": 608.9779,
+      "screen": "BadgeEditorScreen",
+      "bytes": 204152,
+      "sha256": "3be7ad8f9fc3802342dc9af0402bf28c80a22b5de013402b427f6b5a2cb21444"
+    },
+    {
+      "file": "00013.png",
+      "elapsedMs": 654.4841,
+      "screen": "BadgeEditorScreen",
+      "bytes": 204566,
+      "sha256": "3a0a9204bc90e6d5b3f566df007511afd9a67dfbd5f267d4ea5bec11b7f53ddd"
+    },
+    {
+      "file": "00014.png",
+      "elapsedMs": 705.9589,
+      "screen": "BadgeEditorScreen",
+      "bytes": 204464,
+      "sha256": "e45a7d8e0b1b1229ce1ec1de87f7ae1dc9f2f223b76a67406fb17b28f25548f5"
+    },
+    {
+      "file": "00015.png",
+      "elapsedMs": 754.3027,
+      "screen": "BadgeEditorScreen",
+      "bytes": 204239,
+      "sha256": "ade139c42ef4442d49823fc698ba91ab3fbdc9664809e97993244305117e65cf"
+    },
+    {
+      "file": "00016.png",
+      "elapsedMs": 804.7779,
+      "screen": "BadgeEditorScreen",
+      "bytes": 204427,
+      "sha256": "3b315e02f9733356dfaa7529ebbef11fb8963d691f61e58ccf2169b80168416c"
+    },
+    {
+      "file": "00017.png",
+      "elapsedMs": 854.2637,
+      "screen": "BadgeEditorScreen",
+      "bytes": 204296,
+      "sha256": "a9a53e8ac7fbe2e4b62488b4bc404e3895f6bb2da2561ff115e9ed60be4af024"
+    },
+    {
+      "file": "00018.png",
+      "elapsedMs": 904.369,
+      "screen": "BadgeEditorScreen",
+      "bytes": 204385,
+      "sha256": "585ffffc09645118645268ac4c85b5c3c35edd9a001eaeb3f4b70e27ad5b9553"
+    },
+    {
+      "file": "00019.png",
+      "elapsedMs": 955.1989,
+      "screen": "BadgeEditorScreen",
+      "bytes": 204793,
+      "sha256": "b2baa0ce10409d45127abe185856a4e8fd34c8c18d269eb26abda0ca1c5892df"
+    },
+    {
+      "file": "00020.png",
+      "elapsedMs": 1004.2581,
+      "screen": "BadgeEditorScreen",
+      "bytes": 204448,
+      "sha256": "0c7c9c67e82e39812aa2a24f9eca284561552bb6d1f9e8e134aa4267a87b9701"
+    },
+    {
+      "file": "00021.png",
+      "elapsedMs": 1053.9536,
+      "screen": "BadgeEditorScreen",
+      "bytes": 204327,
+      "sha256": "a1cea324b32e343c26033fb15f29c61155fb307c9e8bb39c07c08c55421f67e1"
+    },
+    {
+      "file": "00022.png",
+      "elapsedMs": 1104.676,
+      "screen": "BadgeEditorScreen",
+      "bytes": 205570,
+      "sha256": "d26e015bbcac08b3031a72cb59bf16351985dddaf7418bbb0480bd786fdbadd3"
+    },
+    {
+      "file": "00023.png",
+      "elapsedMs": 1155.5375,
+      "screen": "BadgeEditorScreen",
+      "bytes": 205277,
+      "sha256": "789457ee45c088839794698bc8ef9b475efa873b197f0f5e2846bb810efa81ec"
+    },
+    {
+      "file": "00024.png",
+      "elapsedMs": 1205.301,
+      "screen": "BadgeEditorScreen",
+      "bytes": 205197,
+      "sha256": "504e8479b8df81e8d46bc97eca638b4f4e5ec7bfaff064167d2f9aee0a94c5c4"
+    },
+    {
+      "file": "00025.png",
+      "elapsedMs": 1255.0425,
+      "screen": "BadgeEditorScreen",
+      "bytes": 205345,
+      "sha256": "b2c1473097c34b70ab5b03c36db25c17bf55a4e61a7ba252a014398b023d1626"
+    },
+    {
+      "file": "00026.png",
+      "elapsedMs": 1305.5761,
+      "screen": "BadgeEditorScreen",
+      "bytes": 205160,
+      "sha256": "132f436dd74de945982cd692725cfbb412c114d45cb6e6a799bbbc6b7a3735b7"
+    },
+    {
+      "file": "00027.png",
+      "elapsedMs": 1354.9746,
+      "screen": "BadgeEditorScreen",
+      "bytes": 205429,
+      "sha256": "8e2896cec1cbdd86b950d1ccf5344414f209a140d9a52bdbe86f6ae6acd721d9"
+    },
+    {
+      "file": "00028.png",
+      "elapsedMs": 1405.1083,
+      "screen": "BadgeEditorScreen",
+      "bytes": 205480,
+      "sha256": "0eba31908d7e942279b7be35ab2abbafe42fc2be6171b2ca3f198aff653b8d21"
+    },
+    {
+      "file": "00029.png",
+      "elapsedMs": 1455.4098,
+      "screen": "BadgeEditorScreen",
+      "bytes": 205552,
+      "sha256": "96ad0ef5cb3b8c9dd1187ce255e6e4826b5cba49979fe69eb362d35d0f49023c"
+    },
+    {
+      "file": "00030.png",
+      "elapsedMs": 1505.3255,
+      "screen": "BadgeEditorScreen",
+      "bytes": 206627,
+      "sha256": "ed9571a0281edee1b4c28bd86312f8d0c606844038c939250eb724a6f9a5ab7b"
+    },
+    {
+      "file": "00031.png",
+      "elapsedMs": 1555.1655,
+      "screen": "BadgeEditorScreen",
+      "bytes": 206597,
+      "sha256": "184dc6ba9ac26a71fab6cb9a1f047fd84eee03ae7d428a6954443a2b1b68d1b1"
+    },
+    {
+      "file": "00032.png",
+      "elapsedMs": 1605.7022,
+      "screen": "BadgeEditorScreen",
+      "bytes": 206544,
+      "sha256": "1d5a5e656cae29813bd2cf866d793e57b542d06edb8ac6f0b88143ded925f26e"
+    },
+    {
+      "file": "00033.png",
+      "elapsedMs": 1655.5172,
+      "screen": "BadgeEditorScreen",
+      "bytes": 206348,
+      "sha256": "aa1992832282bd0abb383259731ad2bc2e421708e29f4055f4e26b69b481fdc3"
+    },
+    {
+      "file": "00034.png",
+      "elapsedMs": 1705.7495,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207375,
+      "sha256": "1db0be5e3923230d887e94cfe88ed6e141be75fd4ece2bff8b16a59c5c7cdb41"
+    },
+    {
+      "file": "00035.png",
+      "elapsedMs": 1755.4905,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207531,
+      "sha256": "33b6f93ee593893155567d7f75c70a0b4d80707f452acf15f37081c5c72a9b00"
+    },
+    {
+      "file": "00036.png",
+      "elapsedMs": 1805.6037,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207557,
+      "sha256": "2cae7f81ac046972293525514239c4843f09e35e4a1434a837403fd0bf773d70"
+    },
+    {
+      "file": "00037.png",
+      "elapsedMs": 1856.5843,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208128,
+      "sha256": "76d2cea12a2ec0a315338a2e468a387f80616bec690653d84e51ab6ca144fdfb"
+    },
+    {
+      "file": "00038.png",
+      "elapsedMs": 1907.1307,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207703,
+      "sha256": "ce3e0b7e47c4274c8d2f2545729cac838c9f2089a70b156e57062819e95d90a1"
+    },
+    {
+      "file": "00039.png",
+      "elapsedMs": 1957.1107,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207972,
+      "sha256": "334800127b055ad90dc3f08a5082dc4ecbb99a0a73eeeea0e0000fb8288ec1f9"
+    },
+    {
+      "file": "00040.png",
+      "elapsedMs": 2007.0809,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207483,
+      "sha256": "9de6088a29f440f75860f0260ec3ff97d4dd4f0f36a199095f6c56e04520f9cf"
+    },
+    {
+      "file": "00041.png",
+      "elapsedMs": 2056.8804,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207111,
+      "sha256": "4bfda397739d74bbaa78d867ee38f763c969de51fa7a9161d9a02002245c48d9"
+    },
+    {
+      "file": "00042.png",
+      "elapsedMs": 2106.5758,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207171,
+      "sha256": "87cc73ad61bbf32f536657614d1816180672d02da86ec84447417e97427b2596"
+    },
+    {
+      "file": "00043.png",
+      "elapsedMs": 2156.8848,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207078,
+      "sha256": "0223cee1f776bfe0a7d4e02e924c0dc108f227146e0d57d8b8a35bb5fc6e7eed"
+    },
+    {
+      "file": "00044.png",
+      "elapsedMs": 2207.0985,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207617,
+      "sha256": "4b07b4b3326ecacb4ddd143cc75012bca6820b39642e8ac8493f03ded4659d6d"
+    },
+    {
+      "file": "00045.png",
+      "elapsedMs": 2257.4241,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207780,
+      "sha256": "2b60e2412d47beb63db4fd3185244560e3a92b4d71e04c104f21ce2e20ef2fb5"
+    },
+    {
+      "file": "00046.png",
+      "elapsedMs": 2308.1291,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208179,
+      "sha256": "c7fd6965f9eece4bcec2d79accc5dd346e783765099258a6a31b5ee274025bfd"
+    },
+    {
+      "file": "00047.png",
+      "elapsedMs": 2358.4221,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208055,
+      "sha256": "3fbea7cb2eed62397bad9a75ef612b49c6de27fb93c9ac4598978dd5862058aa"
+    },
+    {
+      "file": "00048.png",
+      "elapsedMs": 2408.8657,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208121,
+      "sha256": "19158a90a4c13603afd979855575cda9a6ac0af915a29127913c62ba9123d5c7"
+    },
+    {
+      "file": "00049.png",
+      "elapsedMs": 2459.3171,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208653,
+      "sha256": "985d46c461554b3417a1f3d46a1be6a6a056b2c471c6c71eb1d5d35c62fc2086"
+    },
+    {
+      "file": "00050.png",
+      "elapsedMs": 2508.8599,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208561,
+      "sha256": "c8f44170cd0788e200f548b7472cf9cc0acc97e380e6d13ceca2a656823e87e3"
+    },
+    {
+      "file": "00051.png",
+      "elapsedMs": 2559.195,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208316,
+      "sha256": "7868da8223cd26bb105e3013793547e67577ae717896ca7598029b786b123d10"
+    },
+    {
+      "file": "00052.png",
+      "elapsedMs": 2609.7632,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208318,
+      "sha256": "dfeb7e569631eb66668596ab5a4d1e003cd75b323febad37a82996ba4568f115"
+    },
+    {
+      "file": "00053.png",
+      "elapsedMs": 2659.5996,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208195,
+      "sha256": "ba949ad00186e2b09e03422b94226c3144d35c4a0b0c1ae71c4d823d7d0da903"
+    },
+    {
+      "file": "00054.png",
+      "elapsedMs": 2709.5666,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208156,
+      "sha256": "6ae84aa2a297d53dcb7fc1988a1a0240988dbb4932900387098e773ce5c8eece"
+    },
+    {
+      "file": "00055.png",
+      "elapsedMs": 2759.8782,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208342,
+      "sha256": "e0cfa241a4466ac46b34218c67296627d77877dbb586ee6a2f19827383565b12"
+    },
+    {
+      "file": "00056.png",
+      "elapsedMs": 2810.0353,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208537,
+      "sha256": "a9be0142ccac1e64f3b729060593ae084b2ba735abeea322c84d0311336c8ca5"
+    },
+    {
+      "file": "00057.png",
+      "elapsedMs": 2860.4448,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208643,
+      "sha256": "3590008112b56c224f01680f11474f753a83660b8b52e980a59069bf12432bcf"
+    },
+    {
+      "file": "00058.png",
+      "elapsedMs": 2910.5849,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208712,
+      "sha256": "4d20a3530fa8debe423e873d4a8e43f590f70b692cf75e7b5059fc26a712b6b4"
+    },
+    {
+      "file": "00059.png",
+      "elapsedMs": 2960.3997,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208877,
+      "sha256": "1b913977641df2b1b351b20b94f0acdff4165f3e253708f25bef7f4ac0c151f6"
+    },
+    {
+      "file": "00060.png",
+      "elapsedMs": 3011.6149,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208788,
+      "sha256": "c0573bfc3e4855724c801bd9389f5beecc9df143acb5c965c1e570e0fa6c487e"
+    },
+    {
+      "file": "00061.png",
+      "elapsedMs": 3061.5223,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208846,
+      "sha256": "5efa4915861986de55f40a3662414d1bf34cf80a87e2ce7878ac65212dab963a"
+    },
+    {
+      "file": "00062.png",
+      "elapsedMs": 3111.7635,
+      "screen": "BadgeEditorScreen",
+      "bytes": 209118,
+      "sha256": "6f4cb2963ff7a9b44d18f5b1ce35dfcde5d4f8216d9cec9e64a087ab0d6ea994"
+    },
+    {
+      "file": "00063.png",
+      "elapsedMs": 3161.5957,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208921,
+      "sha256": "3fa6abc6bdb20202529230569081ea79f2233b79fa062ca9f10a4b1e2b419c63"
+    },
+    {
+      "file": "00064.png",
+      "elapsedMs": 3212.8544,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208798,
+      "sha256": "a707af3bbaf703ab9e00b3859e8f1a48ba185faa9dfeb5d655fc8fa72940691a"
+    },
+    {
+      "file": "00065.png",
+      "elapsedMs": 3262.9111,
+      "screen": "BadgeEditorScreen",
+      "bytes": 209006,
+      "sha256": "f0acfefd097434f3f8ed02f88b0c0fb04e0552369f1c21df19bf70cef55d5504"
+    },
+    {
+      "file": "00066.png",
+      "elapsedMs": 3420.6529,
+      "screen": "BadgeEditorScreen",
+      "bytes": 209107,
+      "sha256": "24a1a631090e65c00e347a0d4205f691b647fa65979c674f885d25bfffddf389"
+    },
+    {
+      "file": "00067.png",
+      "elapsedMs": 3430.8574,
+      "screen": "BadgeEditorScreen",
+      "bytes": 209320,
+      "sha256": "3f9ccc62800645d0fd1b7746a87c8ab62be1d9776ab49de9054f784e072b626a"
+    },
+    {
+      "file": "00068.png",
+      "elapsedMs": 3478.5783,
+      "screen": "BadgeEditorScreen",
+      "bytes": 209094,
+      "sha256": "e25cbc39298e2cc66aacd7000b1c99361a4a084572904627a3da3800cb04db4a"
+    },
+    {
+      "file": "00069.png",
+      "elapsedMs": 3528.6113,
+      "screen": "BadgeEditorScreen",
+      "bytes": 209182,
+      "sha256": "b212be8b02f622239969b07d78a97c3a05f666160189fe49855fd1019de8380b"
+    },
+    {
+      "file": "00070.png",
+      "elapsedMs": 3578.6437,
+      "screen": "BadgeEditorScreen",
+      "bytes": 209153,
+      "sha256": "d209bda317d37737b32035de66d296ad29deb61194e0ac5b248778ed76534748"
+    },
+    {
+      "file": "00071.png",
+      "elapsedMs": 3628.6694,
+      "screen": "BadgeEditorScreen",
+      "bytes": 209242,
+      "sha256": "a8d4f0ac3a722a5046e577f5d854bf927525eb4e66d5380b9af6c911c6f0d917"
+    },
+    {
+      "file": "00072.png",
+      "elapsedMs": 3678.8831,
+      "screen": "BadgeEditorScreen",
+      "bytes": 209302,
+      "sha256": "b538e722a65d1d04062e170d0edb4487850f679776113186e5d0de029da538f7"
+    },
+    {
+      "file": "00073.png",
+      "elapsedMs": 3728.7165,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208619,
+      "sha256": "8849369405f106da4d0a23eb332a28b1817bf9180d148a19f3c2a75a59450bc9"
+    },
+    {
+      "file": "00074.png",
+      "elapsedMs": 3779.2719,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208504,
+      "sha256": "2d85556754438cec57298c64a308b9acb82782ee5d7e913312e40549616b84ce"
+    },
+    {
+      "file": "00075.png",
+      "elapsedMs": 3829.268,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208642,
+      "sha256": "7402734d42edf37af33ec3bd56fe780e187ce315ae64fc8707adc632c596400e"
+    },
+    {
+      "file": "00076.png",
+      "elapsedMs": 3881.5054,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208572,
+      "sha256": "bec7eb7d0fd0102cad6b3f2c51e015a89b3dfcdc4795cf3e9434c5c44e342dbc"
+    },
+    {
+      "file": "00077.png",
+      "elapsedMs": 3929.7438,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208526,
+      "sha256": "d97c3c073cf1ad20b695f540434c3ac86d4468a2f320925114384e30e330665c"
+    },
+    {
+      "file": "00078.png",
+      "elapsedMs": 3995.0946,
+      "screen": "BadgeEditorScreen",
+      "bytes": 209028,
+      "sha256": "3a1a2d3fd095363717e8c63b755366f1df677b931ef2f3694d657a6828b0665c"
+    },
+    {
+      "file": "00079.png",
+      "elapsedMs": 4029.0327,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208944,
+      "sha256": "07bbb53dad4f2d9a9e172a7ab7280e782c8a69315a6c9174ba69057d7ffda4b1"
+    },
+    {
+      "file": "00080.png",
+      "elapsedMs": 4078.955,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208812,
+      "sha256": "496425d242b9abd9781ad241b10d0e4b735136402493c9affa214be3fade4af8"
+    },
+    {
+      "file": "00081.png",
+      "elapsedMs": 4129.3707,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208617,
+      "sha256": "0dead7cf07b67e069e5026e37381ce514c399ec5a468be166111bfe59f1f1ae0"
+    },
+    {
+      "file": "00082.png",
+      "elapsedMs": 4180.1105,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208462,
+      "sha256": "214618e7ef500a39f43afb99a5b93ad347d7566c53d7dae3f912a739471c4550"
+    },
+    {
+      "file": "00083.png",
+      "elapsedMs": 4230.7589,
+      "screen": "BadgeEditorScreen",
+      "bytes": 207929,
+      "sha256": "67402b7d4fc2f3d386dfc908413db3a1ed767b4e5b2197e1b51a0aa00a4b7c18"
+    },
+    {
+      "file": "00084.png",
+      "elapsedMs": 4280.9291,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208075,
+      "sha256": "5c9e8356fb1f9897786a92c951a7654be8c9df45f0ea0134430685be804c2aa7"
+    },
+    {
+      "file": "00085.png",
+      "elapsedMs": 4330.8834,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208293,
+      "sha256": "3175e2c0fc8fdb9458911cdba819dbb444805df747a3060b000a964deef492ba"
+    },
+    {
+      "file": "00086.png",
+      "elapsedMs": 4381.4502,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208295,
+      "sha256": "ec98f2e1f4a2ee21b953eb3dee52cb0af78216276417696962907f2aa0d0f755"
+    },
+    {
+      "file": "00087.png",
+      "elapsedMs": 4431.6414,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208130,
+      "sha256": "96c7ca74a28beb43bac768a2ee522bda2162662cae058a33cfc3c6a4e36800b7"
+    },
+    {
+      "file": "00088.png",
+      "elapsedMs": 4481.4599,
+      "screen": "BadgeEditorScreen",
+      "bytes": 208160,
+      "sha256": "e0b6e309cdaaafa70a865a97e8feb96179ebac21730249bd458f34ab0e5ee493"
+    },
+    {
+      "file": "00089.png",
+      "elapsedMs": 4532.1745,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212841,
+      "sha256": "76a2b2a33267644f72a9992e58c1320864fb88aade8f49d6c79aa47a2ff17698"
+    },
+    {
+      "file": "00090.png",
+      "elapsedMs": 4582.0002,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214094,
+      "sha256": "66c7f104204e46860fa2f0164fb5895c9feb71304c26e89a60726ff40e85dd1a"
+    },
+    {
+      "file": "00091.png",
+      "elapsedMs": 4631.9482,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213714,
+      "sha256": "98f96412aba45153bd38c1fef8f910320302ed84554a7e674fc42c148e1d0625"
+    },
+    {
+      "file": "00092.png",
+      "elapsedMs": 4681.7479,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213554,
+      "sha256": "603e952c3ef1895df948bfd3b51a78ef095f47ac16c615e20f1b2c843bb02778"
+    },
+    {
+      "file": "00093.png",
+      "elapsedMs": 4733.7584,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213440,
+      "sha256": "98bdde05b8e2ef74586d19c2db1c1d62e14b23442ba168d676a9c251180adc4e"
+    },
+    {
+      "file": "00094.png",
+      "elapsedMs": 4783.7734,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213124,
+      "sha256": "9bf9761837e8edd29cf1692dc78914f811b4659a15f71e9eafd631d285f749ad"
+    },
+    {
+      "file": "00095.png",
+      "elapsedMs": 4834.0257,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213250,
+      "sha256": "700456b4d05be95222f61d7cb706934f768a764827dd3a7e81a4def09c6d27ba"
+    },
+    {
+      "file": "00096.png",
+      "elapsedMs": 4883.9904,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213373,
+      "sha256": "d6051938bdd99e9d37ffb8caff5d920c2266f428910e3328d26341b649304ccc"
+    },
+    {
+      "file": "00097.png",
+      "elapsedMs": 4934.053,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213448,
+      "sha256": "3b6f8d6ec0439c401f9e4b5d81220bd087ee9a736007180c3eeede2030220b5f"
+    },
+    {
+      "file": "00098.png",
+      "elapsedMs": 4984.5687,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216273,
+      "sha256": "4070661e3cb619d99b64a0c51f1a2009b734f3b0c8181cae308bc3dca078677b"
+    },
+    {
+      "file": "00099.png",
+      "elapsedMs": 5034.3168,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215716,
+      "sha256": "0d8bd72f60f2dde7d679565cec961cae96a127c0fba491ce133345fec15d2b04"
+    },
+    {
+      "file": "00100.png",
+      "elapsedMs": 5084.5682,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215069,
+      "sha256": "ffce6c7443cc9ccda5964ff197ac38e0f30356a6e01bdca199d68f55c677cf0d"
+    },
+    {
+      "file": "00101.png",
+      "elapsedMs": 5134.8399,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214818,
+      "sha256": "2ea4f0e1b14576ee7a8391fad021e3b1d07552eba31a455dfe79df74d26ddd08"
+    },
+    {
+      "file": "00102.png",
+      "elapsedMs": 5184.9598,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214413,
+      "sha256": "1fea0739458b86837a728dec402e3799f14ed5834de02e831e841b2f03d7ae53"
+    },
+    {
+      "file": "00103.png",
+      "elapsedMs": 5235.5114,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214230,
+      "sha256": "c2769dc939276391dacd6946b20fc2bc84364d42fadc8cfb27398feba8e45e09"
+    },
+    {
+      "file": "00104.png",
+      "elapsedMs": 5285.7759,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213791,
+      "sha256": "c01541ee69ccb5696c5c528e43088257cb611e56cf73ff3a3dc8cd3f3bf7026e"
+    },
+    {
+      "file": "00105.png",
+      "elapsedMs": 5336.5967,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213405,
+      "sha256": "4bb13f626622c1e726ffc91318d4337eef78a069a7819e675135447e189920ef"
+    },
+    {
+      "file": "00106.png",
+      "elapsedMs": 5387.6137,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213504,
+      "sha256": "5f9e136a0046d7108d42e91a6a07948b5f23bffe717df8abe29e62196911ea9a"
+    },
+    {
+      "file": "00107.png",
+      "elapsedMs": 5436.5906,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213997,
+      "sha256": "461ceb8f387f0e57ba056cac9dd9588f41ad9446779f7769e63f99a9587c7c31"
+    },
+    {
+      "file": "00108.png",
+      "elapsedMs": 5486.7799,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213025,
+      "sha256": "907e24acca1589ee4469a59dcb15b0590d29bb137a2a9d7f89e83250d4574cc3"
+    },
+    {
+      "file": "00109.png",
+      "elapsedMs": 5538.2524,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212445,
+      "sha256": "0ed7ce13d7536bde5d3a0330edf09256a8bf4da61e8434aa6c62ba7aa13829a5"
+    },
+    {
+      "file": "00110.png",
+      "elapsedMs": 5571.1523,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213317,
+      "sha256": "cb2470640f68a4617b0c9b4fe9746e3132b0c2239083c452f89232da2df5e6a5"
+    },
+    {
+      "file": "00111.png",
+      "elapsedMs": 5621.6718,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213412,
+      "sha256": "2708e65b7bfc2bb9c1d6af50631491d621d5106a2e484df4fea010b26658a9f2"
+    },
+    {
+      "file": "00112.png",
+      "elapsedMs": 5671.0763,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213425,
+      "sha256": "75a5f17cc670e3e2560829ae0113819f48c50fa13d93e39946528105cb555e92"
+    },
+    {
+      "file": "00113.png",
+      "elapsedMs": 5721.1909,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213439,
+      "sha256": "0ec628eeefe59a3b75df45386b670d00d2367abfe42490ef99cc186e1a00e3c0"
+    },
+    {
+      "file": "00114.png",
+      "elapsedMs": 5771.4734,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213248,
+      "sha256": "157d44bde92c9df3ee40b2d377cb02dcfc677ea533ce227628f863439b33c3e0"
+    },
+    {
+      "file": "00115.png",
+      "elapsedMs": 5822.5911,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213115,
+      "sha256": "808b7ed02a0f3d4c36d6b69ee9116bf2a015be8e117e023ccee295860dbbfc0a"
+    },
+    {
+      "file": "00116.png",
+      "elapsedMs": 5873.4174,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213151,
+      "sha256": "1e694b37ef69206850b2cc6a58642685e086acd2c9c6ade8901799fafcd1e84b"
+    },
+    {
+      "file": "00117.png",
+      "elapsedMs": 5923.2675,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213471,
+      "sha256": "4fef4b1da3a9373def5ad833a78f664e0aeda89e0d354244cacd6ac2316a8e1d"
+    },
+    {
+      "file": "00118.png",
+      "elapsedMs": 5972.6714,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212566,
+      "sha256": "f53e61f5e9fde287c440fd5659646801a12b00e36080dde9f98f441bcbc951b5"
+    },
+    {
+      "file": "00119.png",
+      "elapsedMs": 6022.6666,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 211999,
+      "sha256": "13ececd5e1fe6a86902e16c0674c24a585a8b784e2faff9dbf83ec75d6122dd7"
+    },
+    {
+      "file": "00120.png",
+      "elapsedMs": 6072.4368,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 211425,
+      "sha256": "465d6cb0650a61150a53f214180e14ecff7eed625b5d2e5119ce97c771a9d100"
+    },
+    {
+      "file": "00121.png",
+      "elapsedMs": 6122.8487,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 210704,
+      "sha256": "ae7d058331735420319b81be36c651d2ae70d47fb16636d48fd15f1a22e26dfa"
+    },
+    {
+      "file": "00122.png",
+      "elapsedMs": 6172.6849,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 210719,
+      "sha256": "146562db6a290d283f4a9ccc8a20270e7a81287693b37cd4bdbc611d6d5af5bb"
+    },
+    {
+      "file": "00123.png",
+      "elapsedMs": 6222.4474,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 210774,
+      "sha256": "c562e3005a274d14acc0f3e09200e785c99a2d00e4e3a6b7d23b1594b7dcccb7"
+    },
+    {
+      "file": "00124.png",
+      "elapsedMs": 6272.3592,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 210760,
+      "sha256": "a14f7308dfd5407eb422ebbc85995451bb09c4fb78493f23a6f27848cd4f3213"
+    },
+    {
+      "file": "00125.png",
+      "elapsedMs": 6323.1244,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 210810,
+      "sha256": "3bf15117ff1f2f4e18a4d7f2233e973d038b6799e5942afc90de70b0ba84caa1"
+    },
+    {
+      "file": "00126.png",
+      "elapsedMs": 6373.2249,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 210953,
+      "sha256": "4c1e5b55a34718324742eeee456d345a1f60c6a0b8a1865808dccbf21b9f9459"
+    },
+    {
+      "file": "00127.png",
+      "elapsedMs": 6423.6272,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 210891,
+      "sha256": "b609a0aa94e98777e4548f1f2722309e036149fd9d99e68e02d69cd84cba26fb"
+    },
+    {
+      "file": "00128.png",
+      "elapsedMs": 6473.8858,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 210983,
+      "sha256": "e53bbbe6cf45d1aa8b098f97d10c16ca18bad5bcc9a25ebd285123fecae04e6e"
+    },
+    {
+      "file": "00129.png",
+      "elapsedMs": 6523.9513,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 210945,
+      "sha256": "d81ed753b485dd03f99e838871bfe7d0f92aaae2ce837bac0dc2a8a83ffec2de"
+    },
+    {
+      "file": "00130.png",
+      "elapsedMs": 6574.7638,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 210989,
+      "sha256": "f160ab2eac983004eca6cbe21ba73511888b843017a201caef451cdc606ff325"
+    },
+    {
+      "file": "00131.png",
+      "elapsedMs": 6624.7019,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 211038,
+      "sha256": "6e59e6fa2bc6951e4e42058b0cab1a94471ae0d8f368a52bfe197fa87765d674"
+    },
+    {
+      "file": "00132.png",
+      "elapsedMs": 6674.7574,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212377,
+      "sha256": "369f48ace7a67530c0011fc63832332107368348fb23315004f7a11afdf4272d"
+    },
+    {
+      "file": "00133.png",
+      "elapsedMs": 6724.9172,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212301,
+      "sha256": "f89306ea7a0a02fa0036d23ad73bfbed720916f1cd18c0396616dc820b9c9ff8"
+    },
+    {
+      "file": "00134.png",
+      "elapsedMs": 6774.9271,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 211738,
+      "sha256": "9662898558615401b42364fa4e80d24b1c234d360106fbff58c0e424cc5be8f5"
+    },
+    {
+      "file": "00135.png",
+      "elapsedMs": 6825.4141,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 211997,
+      "sha256": "0f07554c979e9f6f3c1ce476f483df0584169a1a8b1ab28727259b2ce624e60c"
+    },
+    {
+      "file": "00136.png",
+      "elapsedMs": 6876.9062,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 211930,
+      "sha256": "c1db82b8865bb0cfc8433a3b2cf7f6d4d1729fda3d971b4042c56d20a68c0560"
+    },
+    {
+      "file": "00137.png",
+      "elapsedMs": 6926.1899,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212617,
+      "sha256": "eb9fa52c3eabe8fa696ef9e5941b556d0ee1f5fa05cd811a4a7763d8dda616fa"
+    },
+    {
+      "file": "00138.png",
+      "elapsedMs": 6975.9259,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212495,
+      "sha256": "eefe9ef3f58a142bfb4c845fd96cf6271768730ee4f721e7fab01d94edc7be7f"
+    },
+    {
+      "file": "00139.png",
+      "elapsedMs": 7026.0766,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212920,
+      "sha256": "d43e276f062044ec0325315a53113d175ade853bd11b6cbc47c7b6b0d913f0df"
+    },
+    {
+      "file": "00140.png",
+      "elapsedMs": 7076.2325,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212702,
+      "sha256": "df6d01f7061cd823135ded4df0962c4834eff4636793ef8a9b9c82904aad7e0f"
+    },
+    {
+      "file": "00141.png",
+      "elapsedMs": 7126.5448,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212773,
+      "sha256": "fe9e2b64013ff92dd708d795420d177eb2687d5ee5a5562c09f980a44b7e9f14"
+    },
+    {
+      "file": "00142.png",
+      "elapsedMs": 7177.3595,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212854,
+      "sha256": "386872e2dcf401cc040d22b504c12870c8c54a18e1213d4250f33c51d23b9072"
+    },
+    {
+      "file": "00143.png",
+      "elapsedMs": 7227.2581,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213187,
+      "sha256": "eaf9d5633ce595fcad10b6cff4272b06b3408164758cdaee08952f298b720a76"
+    },
+    {
+      "file": "00144.png",
+      "elapsedMs": 7279.1481,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212480,
+      "sha256": "0c4ef2e38a115d56fc67de9c8c79d90ff2dad7108404a3893e2fc7874f6cd13e"
+    },
+    {
+      "file": "00145.png",
+      "elapsedMs": 7328.048,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212349,
+      "sha256": "7b59337731d049a4ed7c0f16c55d00444c5bc99c3309dafbfbdec8daf08e1aec"
+    },
+    {
+      "file": "00146.png",
+      "elapsedMs": 7377.995,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212338,
+      "sha256": "dc9a0f25df1d3423d548bae7e178567d64be921c0cc41b183768d05019cd6ec8"
+    },
+    {
+      "file": "00147.png",
+      "elapsedMs": 7429.338,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212692,
+      "sha256": "ef86863da8b15c86c6be08adfe91690408a57f79c1e43b83d659beae580e2c07"
+    },
+    {
+      "file": "00148.png",
+      "elapsedMs": 7478.2932,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212557,
+      "sha256": "4d69131d5b042ecb6c09044494c65bbfddf37ab90e147d3f838dfcc20efc7645"
+    },
+    {
+      "file": "00149.png",
+      "elapsedMs": 7528.4023,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212643,
+      "sha256": "76ab0f5e3a799fafdc80546258c40b213e0523914f95baf32ca759597c4b8d35"
+    },
+    {
+      "file": "00150.png",
+      "elapsedMs": 7579.0604,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212459,
+      "sha256": "2bc5345bcde54ece25d1213808d7a9a711f207f976adb3fea2fc2aeeb223c01d"
+    },
+    {
+      "file": "00151.png",
+      "elapsedMs": 7629.1296,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212486,
+      "sha256": "99d4a66c0cc996af21002a0e46fd3839bd2b534519395151372925d487b34169"
+    },
+    {
+      "file": "00152.png",
+      "elapsedMs": 7678.8274,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212328,
+      "sha256": "3d32c1656ff31d565a53c5ae890b55d15b897d4609d7e3553bd35b91220a17cb"
+    },
+    {
+      "file": "00153.png",
+      "elapsedMs": 7728.7654,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212494,
+      "sha256": "1b3c953a35e0fe94206841b8c9e9ad0fe17c6673c1ed0327563a82f9af2173d5"
+    },
+    {
+      "file": "00154.png",
+      "elapsedMs": 7778.8356,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213057,
+      "sha256": "4c2a9d0c73c6481951f93b5dc282239ebdb061ace912b912bafea3afcfb68538"
+    },
+    {
+      "file": "00155.png",
+      "elapsedMs": 7829.1029,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213425,
+      "sha256": "142d0eb30e4473d1a13e369062ed1ee854eaf25f510d1114eea4dd85513e90db"
+    },
+    {
+      "file": "00156.png",
+      "elapsedMs": 7880.4567,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213396,
+      "sha256": "25c1bdf506eff4910dd807f0a3c270efa663229c7e328cef09b9701365d19c0e"
+    },
+    {
+      "file": "00157.png",
+      "elapsedMs": 7929.6355,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213534,
+      "sha256": "ab2ab813e8d3ed2c8c076d1666cdbec14667c10098faf6701ce304317fcdddcd"
+    },
+    {
+      "file": "00158.png",
+      "elapsedMs": 7979.9118,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213515,
+      "sha256": "c1f228fb7e0f4f9709218fc9781b1e6e11fdf3dddb8630d2bd5cd3d959ca5fc5"
+    },
+    {
+      "file": "00159.png",
+      "elapsedMs": 8029.9291,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213370,
+      "sha256": "04b3f3147cf07a8857eab031beb79420c484c9010f3fded96dbb4baf38e4de65"
+    },
+    {
+      "file": "00160.png",
+      "elapsedMs": 8080.3014,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213246,
+      "sha256": "a2b2f44f5037e9423aa309ac5081f5805cdcddc741f92b0a966ca946b654ca8c"
+    },
+    {
+      "file": "00161.png",
+      "elapsedMs": 8129.8827,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212890,
+      "sha256": "a82ba9ba8d5528df0e87da71bdb071fb64bb5661be9d26052432fe145b30e38d"
+    },
+    {
+      "file": "00162.png",
+      "elapsedMs": 8180.1499,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213254,
+      "sha256": "b851aada05d76ed79cf3dd282175438becf96f1ae451c33b6d4812f00f13d341"
+    },
+    {
+      "file": "00163.png",
+      "elapsedMs": 8230.2767,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213579,
+      "sha256": "1b1f35de506b4096b694e96ba040082ad2881eb577c0d096c525dbfa6edc8785"
+    },
+    {
+      "file": "00164.png",
+      "elapsedMs": 8281.2973,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213614,
+      "sha256": "74f4474b8569ed773c836d1e852ca5a7911da4f0528b5cc2f0ba43b1e6bd4725"
+    },
+    {
+      "file": "00165.png",
+      "elapsedMs": 8331.78,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213757,
+      "sha256": "6454db09f6421370bbb8af282f340d4281b10081d02e4ccd7cfc2dd58a94e80a"
+    },
+    {
+      "file": "00166.png",
+      "elapsedMs": 8383.3576,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213670,
+      "sha256": "704795822459949e3aa625bff30d2a375bc5fe50241db5fe54086347fcbd1063"
+    },
+    {
+      "file": "00167.png",
+      "elapsedMs": 8432.7338,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212852,
+      "sha256": "48423ba191ef3f5d318dfedfb4a723df599f99b2e11e58d335df1259bfc1ca33"
+    },
+    {
+      "file": "00168.png",
+      "elapsedMs": 8483.6195,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212239,
+      "sha256": "b7bd8526820da2bf576c78f0476bddc2f395f1b41992b578fba1867c06830c0c"
+    },
+    {
+      "file": "00169.png",
+      "elapsedMs": 8534.5859,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212776,
+      "sha256": "f0d680b0e5194cf3fb469fa643fca85fbc176f48214e687720d7886e5828bf0c"
+    },
+    {
+      "file": "00170.png",
+      "elapsedMs": 8583.7968,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212804,
+      "sha256": "c0bdf61a069e5bb1174f3014f2f5b72c4132e8d01f336d2213ca990ff0b7a21f"
+    },
+    {
+      "file": "00171.png",
+      "elapsedMs": 8633.7706,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213432,
+      "sha256": "07439ad82ad1d8382610d647ffb7c64c955d58d6fbd7634843b8dc5af169b8d0"
+    },
+    {
+      "file": "00172.png",
+      "elapsedMs": 8683.8464,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213175,
+      "sha256": "dbddfc8833cc1837c80587514e64221a5f61b76a4cd0fa156ed003088502a183"
+    },
+    {
+      "file": "00173.png",
+      "elapsedMs": 8733.7978,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213309,
+      "sha256": "7666955b2d5a33dd9986d8632e2cbfb4a7659d023dc1c1db03d4ea6ef2a1341d"
+    },
+    {
+      "file": "00174.png",
+      "elapsedMs": 8799.8527,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213784,
+      "sha256": "8587791a3fc28ca968569508ae456163bbcafa7a5eb379977b9e67b0c332e24a"
+    },
+    {
+      "file": "00175.png",
+      "elapsedMs": 8825.2622,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213419,
+      "sha256": "b5cfb8183d9a66c4a2e682a1588ae8d100ad9324bef6a62e96b0a26cf70c1fa8"
+    },
+    {
+      "file": "00176.png",
+      "elapsedMs": 8876.8361,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213502,
+      "sha256": "be7cfcab22c676f8ce63715f3d59efe05ca34ee7df6bc4aba5b2ff573a7badaa"
+    },
+    {
+      "file": "00177.png",
+      "elapsedMs": 8925.4723,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213625,
+      "sha256": "6f2088d6cd132df326fc7f04858c40b47644cb81a693c121fad5e49b79faf19f"
+    },
+    {
+      "file": "00178.png",
+      "elapsedMs": 8975.1944,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213993,
+      "sha256": "ebb58f77ce282116acafc48300efe1d421031c1891e805c1d0a99456b5d74c24"
+    },
+    {
+      "file": "00179.png",
+      "elapsedMs": 9025.6452,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213568,
+      "sha256": "54f4550a944d414602e4bac1887cb215f3bd5c93b15ee56bc23a63a21b97fe29"
+    },
+    {
+      "file": "00180.png",
+      "elapsedMs": 9075.737,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213602,
+      "sha256": "c06aeea82036663e244262b54ebfb084dba4105ec169981e345e832e98a49b74"
+    },
+    {
+      "file": "00181.png",
+      "elapsedMs": 9126.0571,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213662,
+      "sha256": "508cafd4fa8cadc1cdd1b9d3d48fe11140473a765b476576ecce0b4dcfa7e2bd"
+    },
+    {
+      "file": "00182.png",
+      "elapsedMs": 9175.9149,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213381,
+      "sha256": "c8a9bd703a7a4f1e2a0a2c962c5260a0b968a8242d22a81916517f454b28c604"
+    },
+    {
+      "file": "00183.png",
+      "elapsedMs": 9226.4002,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212549,
+      "sha256": "8100956263112b256f9cfafa0850e32ebc6dbedc9acbb10e71c8ed24d16a6f4b"
+    },
+    {
+      "file": "00184.png",
+      "elapsedMs": 9276.3734,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212530,
+      "sha256": "8d6253f5d72fb9894927b3e7b8d6c2a36051320d49a6485b2684a7184756f980"
+    },
+    {
+      "file": "00185.png",
+      "elapsedMs": 9326.2755,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212811,
+      "sha256": "a2f71bd2180d149f589591bbd3bed494a9cb5f3fb44a4b13dfefad95b7f759ed"
+    },
+    {
+      "file": "00186.png",
+      "elapsedMs": 9377.1299,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212888,
+      "sha256": "dfa66a9f1e28445e43d5708f5d8ec29a6fedb85e0039f25d27a188a615177b26"
+    },
+    {
+      "file": "00187.png",
+      "elapsedMs": 9427.6323,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213217,
+      "sha256": "c7a50a9ccbcb01e35cef9c9460258fa5ef7741c36a4f3dc58b7af8860e1d48d5"
+    },
+    {
+      "file": "00188.png",
+      "elapsedMs": 9478.1201,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213724,
+      "sha256": "ba99a4b893b0c0f6cfd64dd6bc83cdb37be6c5d7611c5f98016a5f36116f365d"
+    },
+    {
+      "file": "00189.png",
+      "elapsedMs": 9527.7101,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213568,
+      "sha256": "a334858c40d33f6f3ca17516eaad4a802dacb8de4900b600368ca13eb3a7d1d2"
+    },
+    {
+      "file": "00190.png",
+      "elapsedMs": 9577.9988,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212746,
+      "sha256": "d127f631370681e26bc839433ebf7e96b936ddc341cce6ab38029b507767fa06"
+    },
+    {
+      "file": "00191.png",
+      "elapsedMs": 9628.3145,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213057,
+      "sha256": "2362298d9d5f49edc0fe0654dea35fa4d8702b913a8d075ec59507b38cad85e2"
+    },
+    {
+      "file": "00192.png",
+      "elapsedMs": 9678.096,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213234,
+      "sha256": "f3ec13cb5ab23a44bacce381707e17925a8ac3a74c3c1f28cb6eda18ef8978f4"
+    },
+    {
+      "file": "00193.png",
+      "elapsedMs": 9728.119,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213921,
+      "sha256": "e2b365483f4af7a88f5e5055380b36004af94fe06112e73a2bb475bc00ce983d"
+    },
+    {
+      "file": "00194.png",
+      "elapsedMs": 9778.3984,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214122,
+      "sha256": "2f7cc4575fe2e3e9c513f44a3f2eed3bf6d9a41ee4733f4b7fe50d9e26827ef1"
+    },
+    {
+      "file": "00195.png",
+      "elapsedMs": 9828.8136,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214229,
+      "sha256": "664f6938fb761d6cf99d6dbb28361ac76d4256275ea6ad69a805eeccc19400b8"
+    },
+    {
+      "file": "00196.png",
+      "elapsedMs": 9881.1791,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214610,
+      "sha256": "6f3903f04743d5723b40821c23126eb0b227b994ebcac03e9f8f1a73bc456845"
+    },
+    {
+      "file": "00197.png",
+      "elapsedMs": 9929.9934,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214646,
+      "sha256": "10db9541f3c0013eb76d31f1e73b2d4c4f7e8afc317ec2f2b7e7eba6dfbb084e"
+    },
+    {
+      "file": "00198.png",
+      "elapsedMs": 9979.6217,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214328,
+      "sha256": "1f76a5f700b99d2bcfb3a18af338d906d2d4551de73caae4958b41655ada4c9c"
+    },
+    {
+      "file": "00199.png",
+      "elapsedMs": 10029.7253,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213986,
+      "sha256": "db5dd355c786b6478a6f9d64f0072b78cb4d30a07b173f22752d5c87d0d043fe"
+    },
+    {
+      "file": "00200.png",
+      "elapsedMs": 10079.6845,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213707,
+      "sha256": "51d3c1cc1837e625c98c2cae41e6d0cf2b1888cd195e39b43d69bf98eb1f972a"
+    },
+    {
+      "file": "00201.png",
+      "elapsedMs": 10129.9775,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214375,
+      "sha256": "579ffe8e859cb191cf3b4a953d4de1ff5e38b41906ed5d890185205a5d70beab"
+    },
+    {
+      "file": "00202.png",
+      "elapsedMs": 10180.0516,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214800,
+      "sha256": "36b74ebdc77ce4b826c15ccba4bce6990db7f0ab34be7e8d4fabea31cf8b118a"
+    },
+    {
+      "file": "00203.png",
+      "elapsedMs": 10230.8453,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215039,
+      "sha256": "e6a8c431cba3cde0067651525dca8c0be51953b070b42c39c942e68ca17cc7a9"
+    },
+    {
+      "file": "00204.png",
+      "elapsedMs": 10280.0724,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215223,
+      "sha256": "d5a8bf30f9e1ac5515ed52110007259449253d32cacd318b5fe5de173561f577"
+    },
+    {
+      "file": "00205.png",
+      "elapsedMs": 10330.1052,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215416,
+      "sha256": "42104904bb63adc441d1eb478bf1da5c7f0e1c136ab31c8de4d7e1563f2c083d"
+    },
+    {
+      "file": "00206.png",
+      "elapsedMs": 10380.3254,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214845,
+      "sha256": "b4503dd105352b355acdc34b4465158d386ba8f71257c7df910a1961951f3691"
+    },
+    {
+      "file": "00207.png",
+      "elapsedMs": 10429.9526,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214810,
+      "sha256": "01b7a20ec75a4bdb3ddb819e775a5e4c8900e548aa168d15dd2170aa9727254e"
+    },
+    {
+      "file": "00208.png",
+      "elapsedMs": 10480.0457,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214555,
+      "sha256": "213f7f86fcbeb51b5e6086d33229670558e60277d7d176e4bee7cf7c6eb5ceb1"
+    },
+    {
+      "file": "00209.png",
+      "elapsedMs": 10530.4896,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215155,
+      "sha256": "badda93d295bac85acbbc1c6505d0068e3f9158b607d43c2816c0ddf7057733d"
+    },
+    {
+      "file": "00210.png",
+      "elapsedMs": 10580.1724,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215011,
+      "sha256": "8f64d14c1b35d0b96475754741997f7f63dd73a90cd2fe8ecd3592216059d401"
+    },
+    {
+      "file": "00211.png",
+      "elapsedMs": 10630.2109,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215091,
+      "sha256": "a4e79f65b7d02b0484cd19e4295f3aaa95e5a253e2afa574cffc48934563221b"
+    },
+    {
+      "file": "00212.png",
+      "elapsedMs": 10680.2972,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215594,
+      "sha256": "c175e37bd0f87578084db30f1b7671a353d59cae8a4dfbd1399822a8f00b9175"
+    },
+    {
+      "file": "00213.png",
+      "elapsedMs": 10730.3687,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215301,
+      "sha256": "0fb4aa68446d3fe0f785a6c320874dac96133b335e13ca9979b67fded5d40ca1"
+    },
+    {
+      "file": "00214.png",
+      "elapsedMs": 10780.7345,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214955,
+      "sha256": "d0269465b78bfbb3d62c271f242cee34c170516f9605c540d803bb4b992a296e"
+    },
+    {
+      "file": "00215.png",
+      "elapsedMs": 10831.0086,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214507,
+      "sha256": "23e0334653b8147d687f97f89261c070e3226ea283d90ee639e4b9f912ea2add"
+    },
+    {
+      "file": "00216.png",
+      "elapsedMs": 10880.9949,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214510,
+      "sha256": "5d7fd4e2e5124873606ee863d734a806286ea58040e6ad3c6778f819bf84e512"
+    },
+    {
+      "file": "00217.png",
+      "elapsedMs": 10930.7372,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214379,
+      "sha256": "84bcdadb17c265be2c1748987f0c529f51b6d66b61a202551d00ddfdbcc9edd3"
+    },
+    {
+      "file": "00218.png",
+      "elapsedMs": 10980.8889,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215526,
+      "sha256": "3baed6a0b4495b203ae2cc68cbbd634df638042a429bed5875f239952034e3d6"
+    },
+    {
+      "file": "00219.png",
+      "elapsedMs": 11030.7992,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 220817,
+      "sha256": "8ac62d02ed55273fc10ccb6ba515fb0f5fe6988635aa81fc5d6f3afc692674f7"
+    },
+    {
+      "file": "00220.png",
+      "elapsedMs": 11080.4928,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 222068,
+      "sha256": "5b21f6cafdd6fb84c3a61b1d4d6cf1afeb288559394c1525818e849c92f4cf71"
+    },
+    {
+      "file": "00221.png",
+      "elapsedMs": 11131.2237,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 222431,
+      "sha256": "4dba589da87fd847f883cdd1aabb0aa787db68403c2e0a02d40283251d410a74"
+    },
+    {
+      "file": "00222.png",
+      "elapsedMs": 11175.9922,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 223266,
+      "sha256": "3f30b2eff48fded35d9d79e59424467ee4221d83007548f1d14295443ea46646"
+    },
+    {
+      "file": "00223.png",
+      "elapsedMs": 11236.2623,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 223305,
+      "sha256": "2b734435d5e7211719e946293138bf26e7600e968e881d9717447954b25b9d7f"
+    },
+    {
+      "file": "00224.png",
+      "elapsedMs": 11286.502,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 221971,
+      "sha256": "dfffe1f2c17f0092dcae1c62646440c778d48a34531843fe9d9f882a3e5e85a5"
+    },
+    {
+      "file": "00225.png",
+      "elapsedMs": 11336.4239,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 221741,
+      "sha256": "a2b5b3537bb92ce71bdbb136f614d5a0ba4e8e2c3784b5c60e195e73eab2a7f1"
+    },
+    {
+      "file": "00226.png",
+      "elapsedMs": 11386.5431,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 222686,
+      "sha256": "3c04856cc13de2a39ff5672e320d9e1301efa6e3321ae44f33b0cede1300aa4d"
+    },
+    {
+      "file": "00227.png",
+      "elapsedMs": 11437.2447,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 222052,
+      "sha256": "fbfd5d97d6781c8c6f385f3264aafe6ccbfc8c8c65fd97d3d69ca684c96c4b0c"
+    },
+    {
+      "file": "00228.png",
+      "elapsedMs": 11487.3183,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 219832,
+      "sha256": "dcf44a6caffaa733f8ecea94b653e1c58bf247482e657bceadf367772fb32aec"
+    },
+    {
+      "file": "00229.png",
+      "elapsedMs": 11537.2443,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 219608,
+      "sha256": "db07c6df0b27c1d051a1dfe88f7cc46a446aee940f8d61624f029905e0131388"
+    },
+    {
+      "file": "00230.png",
+      "elapsedMs": 11571.7247,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 219107,
+      "sha256": "06cf3753ba59bf89207b98173dff8604ef3a6c6e866ead468b9c9c645dd4a200"
+    },
+    {
+      "file": "00231.png",
+      "elapsedMs": 11622.6535,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218260,
+      "sha256": "892f2eb435edc207f98fc0c1aae0f90b80004bd0a0205afd0c69aa3554f8b10f"
+    },
+    {
+      "file": "00232.png",
+      "elapsedMs": 11672.9433,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216553,
+      "sha256": "7d8095da6ac596c75a9bb3b5200e8e1ad43e380d8ff8f86630ad2d49fd466082"
+    },
+    {
+      "file": "00233.png",
+      "elapsedMs": 11723.1849,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215530,
+      "sha256": "a9c09efac667327665160052bddb04f255e56cb2d1fab38801ef59978eba5f46"
+    },
+    {
+      "file": "00234.png",
+      "elapsedMs": 11773.9661,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214641,
+      "sha256": "20e4fc0042d942add3e763cdd37f101fd688c164762e99f355aacfaa6b815ca6"
+    },
+    {
+      "file": "00235.png",
+      "elapsedMs": 11823.6509,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214574,
+      "sha256": "cd3119b1c4226234b0ed19a1230c827de4dc9844e802d446c31fd7706adbfed3"
+    },
+    {
+      "file": "00236.png",
+      "elapsedMs": 11875.6174,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214357,
+      "sha256": "d8c1e2a4792de180d99d0a6ccbb08924e6d67a5322a97d47013e86b92b6c7756"
+    },
+    {
+      "file": "00237.png",
+      "elapsedMs": 11924.2293,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214511,
+      "sha256": "e37a1c2447ad05a4bbeba00be2b79e5449e25081070f82c284e4d73e41e39aea"
+    },
+    {
+      "file": "00238.png",
+      "elapsedMs": 11974.1981,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214342,
+      "sha256": "bebb5788a9c53418cde43a2b02cfdc55643945c45e32adde893b4f01435ed71e"
+    },
+    {
+      "file": "00239.png",
+      "elapsedMs": 12023.8479,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214425,
+      "sha256": "a6ac81975bd51361e693ad9686d1231533d0b51f5ba17331093348699d91fe45"
+    },
+    {
+      "file": "00240.png",
+      "elapsedMs": 12073.8497,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214804,
+      "sha256": "ed394456385c96c823f063b57a386b000923fd97dc84aecda693e90f589475e1"
+    },
+    {
+      "file": "00241.png",
+      "elapsedMs": 12123.9739,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214659,
+      "sha256": "292ebb564b3ccf80177efcc5b5f0cd04a33b3ca1df8be2931ff5084525ce0b28"
+    },
+    {
+      "file": "00242.png",
+      "elapsedMs": 12174.1723,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215188,
+      "sha256": "cd4e62104aeafd4bd5877f7b9b90a752f9bd4a66b670162b421cd47eb61488fc"
+    },
+    {
+      "file": "00243.png",
+      "elapsedMs": 12223.9181,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215177,
+      "sha256": "28ff0fccf1ad56517c21a9a492073206cf53a1b519d5da3389e7e6cc28945f3b"
+    },
+    {
+      "file": "00244.png",
+      "elapsedMs": 12274.3106,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215213,
+      "sha256": "0825e10d6cd72cd1e03653d1f6a95b5b18114991cadde20964201f373b53d575"
+    },
+    {
+      "file": "00245.png",
+      "elapsedMs": 12324.2352,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215108,
+      "sha256": "b5d309241eb63c0b74045179d0a599283b537e04d8ee01f83bf75266f2738017"
+    },
+    {
+      "file": "00246.png",
+      "elapsedMs": 12375.0438,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214792,
+      "sha256": "867f6056d13d529ba931a61300bf791b088ec131546519a49404eb4c11000fb7"
+    },
+    {
+      "file": "00247.png",
+      "elapsedMs": 12425.3328,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214675,
+      "sha256": "0fdf4bfdf4b75d2ffe15ae1f4906d50e7f3bb9d2582960b2e79cc0baab22fcc1"
+    },
+    {
+      "file": "00248.png",
+      "elapsedMs": 12474.6441,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214230,
+      "sha256": "789bbf94a1ddd94d9a8e96e4cb00ebb15fe801b80b4c546b41e79dce7207488b"
+    },
+    {
+      "file": "00249.png",
+      "elapsedMs": 12524.46,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214323,
+      "sha256": "f733784c4a8c7590d5f6aa0f0b57e49d6289b51550347b5f897cf6012672bc80"
+    },
+    {
+      "file": "00250.png",
+      "elapsedMs": 12575.8382,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214071,
+      "sha256": "6fa5c44a6d996a3c4c4780d25d1eb15eff9056b49b1af26562d9c6d12fed3fb8"
+    },
+    {
+      "file": "00251.png",
+      "elapsedMs": 12624.4561,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213890,
+      "sha256": "dba02d837754855596cc50e8feba52ccca380e451da33d50a9feb8f048e0acd7"
+    },
+    {
+      "file": "00252.png",
+      "elapsedMs": 12674.3018,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213911,
+      "sha256": "e8953362d5afa8d12223cf317dd9911180b27da72fe0772586f0335597e73696"
+    },
+    {
+      "file": "00253.png",
+      "elapsedMs": 12724.5068,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214465,
+      "sha256": "656880b785293a0e07a7023b087295ac442122f9bfb5579799c86865e9544d1d"
+    },
+    {
+      "file": "00254.png",
+      "elapsedMs": 12775.8102,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214209,
+      "sha256": "67a7ac2ce768c5f4d3c49b0843adff9642a1e92c51f1c21ee7bac6490ab06411"
+    },
+    {
+      "file": "00255.png",
+      "elapsedMs": 12825.429,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214193,
+      "sha256": "54a38d5878f62c3687da81cb7bb39c1cfa58854c978a6270326c02f58150faa0"
+    },
+    {
+      "file": "00256.png",
+      "elapsedMs": 12875.5007,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214321,
+      "sha256": "025c34111850d27fb1eb7e8824f9ff02ad1c5af80bdbab6d8afb5fae464a0d5e"
+    },
+    {
+      "file": "00257.png",
+      "elapsedMs": 12925.5361,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214062,
+      "sha256": "bf600e02d515a36d62523d19093d7c0cf885643bfd8ea6cd2213689b6369a18a"
+    },
+    {
+      "file": "00258.png",
+      "elapsedMs": 12975.53,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213694,
+      "sha256": "a2333395d78801df374c2bf30fe6078e9527a1ba658edd03faefa11d89007e2a"
+    },
+    {
+      "file": "00259.png",
+      "elapsedMs": 13025.4999,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214048,
+      "sha256": "d9310802f284d841beba2bed136e4acf1e90925713f22044932c9c96a896ff7c"
+    },
+    {
+      "file": "00260.png",
+      "elapsedMs": 13076.1133,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214166,
+      "sha256": "26b72d43dce5e5fd3af767dfe7d212c96248debf30895ba6b7da4e2c63783d1b"
+    },
+    {
+      "file": "00261.png",
+      "elapsedMs": 13126.6488,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214023,
+      "sha256": "a4efcd799f9248224be91331272f7f57b773028688026fc3653eba0bf0b75450"
+    },
+    {
+      "file": "00262.png",
+      "elapsedMs": 13176.2196,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213838,
+      "sha256": "8380a3d7e6e8dfd8ee0b27353b1abc91e46c788c678169bcd3e532501f7626b6"
+    },
+    {
+      "file": "00263.png",
+      "elapsedMs": 13226.6235,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213499,
+      "sha256": "f359a59b2e5b65e23acebcdedfda47c4a3e5197e2a9d418db18efeb0cb43a880"
+    },
+    {
+      "file": "00264.png",
+      "elapsedMs": 13277.0436,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213581,
+      "sha256": "2223dfd0e3c9012c8c16d7f5451c561095107cfefa8c9fae1012045c7acc698c"
+    },
+    {
+      "file": "00265.png",
+      "elapsedMs": 13327.5605,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213505,
+      "sha256": "e4809ae245150ce66548d6ad9bb7b7d9f1cf302623ca00ae2cfd567456c5dfb9"
+    },
+    {
+      "file": "00266.png",
+      "elapsedMs": 13377.6558,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213152,
+      "sha256": "473fc00160e3e2917e80a16f7bb87719af07bb398bf09eccf04ec51c56f8296e"
+    },
+    {
+      "file": "00267.png",
+      "elapsedMs": 13426.7555,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213086,
+      "sha256": "c1d2eeb5d99b896b4f5af4a035117f26f83eca7da9185b9549d96935874fce02"
+    },
+    {
+      "file": "00268.png",
+      "elapsedMs": 13477.7994,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213069,
+      "sha256": "fbe6ad2061e500b156a14304998ffdd7eb292e1fa0f78795e9a06689b60204dd"
+    },
+    {
+      "file": "00269.png",
+      "elapsedMs": 13527.1068,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 212890,
+      "sha256": "cef7daeedb80d77a96419c28397405f3831dbd787d67e995983d7f42d995c828"
+    },
+    {
+      "file": "00270.png",
+      "elapsedMs": 13577.4395,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213459,
+      "sha256": "be4f01fae48a4801165930fedb6101b229ae458744d45966a3caeaa9354fc844"
+    },
+    {
+      "file": "00271.png",
+      "elapsedMs": 13627.4708,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213674,
+      "sha256": "9aa297c4ea826f31b1472783058b9441d3ab9eeb8fc4b6b1189f3f4c94b41de1"
+    },
+    {
+      "file": "00272.png",
+      "elapsedMs": 13677.488,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213723,
+      "sha256": "ef79faa9b476e81734e4786f251bd8f635be5fac312506fc57e4913166182927"
+    },
+    {
+      "file": "00273.png",
+      "elapsedMs": 13727.2623,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214131,
+      "sha256": "d5ad6b13d056e2a9b38166974cc601c2866b59e54b756689e8b35a9eb2670df1"
+    },
+    {
+      "file": "00274.png",
+      "elapsedMs": 13777.2387,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214019,
+      "sha256": "edf85927c152b1e3bda417ad99d32b57e4f8c591a9a64d2bfb5c5b624d3c3055"
+    },
+    {
+      "file": "00275.png",
+      "elapsedMs": 13827.8066,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215197,
+      "sha256": "bcd091c017ab5bb849b6454057da942c26f23b2b5f1ffaaef59bae784a1558b5"
+    },
+    {
+      "file": "00276.png",
+      "elapsedMs": 13877.8011,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215320,
+      "sha256": "53d18054f4ba141c3501ebda244486f92d7cfd148b7e7b0dc444636b93048ce6"
+    },
+    {
+      "file": "00277.png",
+      "elapsedMs": 13927.9124,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215694,
+      "sha256": "34c590a237bd03489ddf2f470c79e6604a9b35be0a6c748c8d6e6f070566c0ae"
+    },
+    {
+      "file": "00278.png",
+      "elapsedMs": 13977.7723,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215452,
+      "sha256": "5ffbc4031e72bff39baf92c42fe435dff894ced2ff8b2a5bd2770f7e31e709b6"
+    },
+    {
+      "file": "00279.png",
+      "elapsedMs": 14027.7397,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215308,
+      "sha256": "1237f6c823d7a92b6937910da1a0a2adce74032bc0a1abe1b1560865c21f67f5"
+    },
+    {
+      "file": "00280.png",
+      "elapsedMs": 14078.417,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214324,
+      "sha256": "87b1480047ed2bc31423035c3550760e38b1960d6ea3eea0289fcc1b1528f3c3"
+    },
+    {
+      "file": "00281.png",
+      "elapsedMs": 14128.3202,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214572,
+      "sha256": "2c13ef78d4009592861816d8fa2369a1a4d962b98486eb4c82e4da07bac5aaf9"
+    },
+    {
+      "file": "00282.png",
+      "elapsedMs": 14178.4022,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214729,
+      "sha256": "8935e02f190ce370b161a2e795373b81cd85287c65b124a2aff001cf6cb29af9"
+    },
+    {
+      "file": "00283.png",
+      "elapsedMs": 14228.4085,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214895,
+      "sha256": "95fc36ac359ce77c7279ab71e0d226c810b25fefb5b128abf385e7161536dd65"
+    },
+    {
+      "file": "00284.png",
+      "elapsedMs": 14280.0822,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214802,
+      "sha256": "f13899721addae46e6a49c4813e1c853b7b681d3dfd04e1c39f8205dda559ba0"
+    },
+    {
+      "file": "00285.png",
+      "elapsedMs": 14328.6011,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214941,
+      "sha256": "f3a70040b6f238bc98fe1959beed3cd56cca7fb7fc32a0249a9a38c58ccf02ae"
+    },
+    {
+      "file": "00286.png",
+      "elapsedMs": 14378.7648,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215334,
+      "sha256": "eadab883ce376b4d8baeec77039bcc1d87c337719a505f1f0a3534e0fd46ef52"
+    },
+    {
+      "file": "00287.png",
+      "elapsedMs": 14429.9088,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214900,
+      "sha256": "41a8b7a97474cd06b7d1d0ccfe1de345ac9504756966b7e825517b937d984b24"
+    },
+    {
+      "file": "00288.png",
+      "elapsedMs": 14480.0516,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214664,
+      "sha256": "8ee53d7a29c8f2213e04ee6a32775d0532af9f8ffa672085f4519840eb67fd12"
+    },
+    {
+      "file": "00289.png",
+      "elapsedMs": 14531.4374,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214472,
+      "sha256": "5154ec5a86232e9bedf3e3378115a68d7e17b9f7fe1be6da930197bdf593c3fd"
+    },
+    {
+      "file": "00290.png",
+      "elapsedMs": 14582.2417,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215418,
+      "sha256": "d953f5746c927ea8fa12ea6b34cb5552193deacb55aa411449a8592d06da1be7"
+    },
+    {
+      "file": "00291.png",
+      "elapsedMs": 14631.5658,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215321,
+      "sha256": "744434dc0b3632e536083a1c152dea669a32186c1132a765cffc6b9a4edc5531"
+    },
+    {
+      "file": "00292.png",
+      "elapsedMs": 14681.3121,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215122,
+      "sha256": "ed880168795fa7c935a5d4abc61ab6484f517e3a0102203df12c66cd758f0fc5"
+    },
+    {
+      "file": "00293.png",
+      "elapsedMs": 14733.018,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215373,
+      "sha256": "a52105ef539d9680917aecaa557ce707e6af9086e8ca9b55fd107aacd4c14ca5"
+    },
+    {
+      "file": "00294.png",
+      "elapsedMs": 14785.9254,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215116,
+      "sha256": "9956f62cc75a8f7469712e4311226a936f8e8b1ffb8c48ebeea608964fe6366d"
+    },
+    {
+      "file": "00295.png",
+      "elapsedMs": 14835.2389,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214592,
+      "sha256": "4d8c15f277da89932a75088805e6d3de5ef280fd4f6507742ff20af2a3b879f1"
+    },
+    {
+      "file": "00296.png",
+      "elapsedMs": 14885.4566,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213852,
+      "sha256": "61f956414f0b98d3265e28849203ea39c6bca7d288efa4d4fd84b3981a68c879"
+    },
+    {
+      "file": "00297.png",
+      "elapsedMs": 14934.9718,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214042,
+      "sha256": "d8710391fd0b17af982c6bcda4a8a59ca5523fb4ac16120f01355139f85f46e5"
+    },
+    {
+      "file": "00298.png",
+      "elapsedMs": 14985.4783,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214623,
+      "sha256": "cfddd7ea7c2da8817777ca2824bc48ce5b771b00b3a1ba3ba6229a9a044fef0e"
+    },
+    {
+      "file": "00299.png",
+      "elapsedMs": 15035.887,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215063,
+      "sha256": "e05f90b54369aa19a846c52aeab0cc4e70853d01c0b7006ae06cb1f461806b91"
+    },
+    {
+      "file": "00300.png",
+      "elapsedMs": 15087.2353,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215477,
+      "sha256": "258d24cfe9420edff61a5e0537e327a116e7c59a172e5cd9d9d9ea12077bed9d"
+    },
+    {
+      "file": "00301.png",
+      "elapsedMs": 15120.8728,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215332,
+      "sha256": "d2cf08fc42e2bc8787f1621ad0fd8e9af81df2b83016fb7b013c4ff0a3ecd2d0"
+    },
+    {
+      "file": "00302.png",
+      "elapsedMs": 15186.7606,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214548,
+      "sha256": "884770a0399029d7a89d37d7fed8fb4d77cfee9390c46d250e4e3846cda71d36"
+    },
+    {
+      "file": "00303.png",
+      "elapsedMs": 15220.8773,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214320,
+      "sha256": "d34c9e65fc00e809bfe364719e1df278c310ed70c3bd773448ae7e73ce5e7e2b"
+    },
+    {
+      "file": "00304.png",
+      "elapsedMs": 15286.8243,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214568,
+      "sha256": "9ed9e7dfcf003db98efaff94929545e25423afb3d75e6af8370bc2c5237991fe"
+    },
+    {
+      "file": "00305.png",
+      "elapsedMs": 15336.8401,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214993,
+      "sha256": "060dcf6eb2b318245b2e9c40d92cf1a03762cf91cd8e6f231fcb2bb6e2548036"
+    },
+    {
+      "file": "00306.png",
+      "elapsedMs": 15387.4015,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215126,
+      "sha256": "afc91dd4934a8212a7d64366cb609d31e9ebd506a29e53cc1b0de649afdd1a3e"
+    },
+    {
+      "file": "00307.png",
+      "elapsedMs": 15421.4503,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215647,
+      "sha256": "2a34af34b992aeafc8f1b723ba3df4cacda7d7a7902c1cd2152e059682192456"
+    },
+    {
+      "file": "00308.png",
+      "elapsedMs": 15472.0883,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216270,
+      "sha256": "4f5307e19ea243684b778b4dd785d96cd9af372662a059e78914d44933764c27"
+    },
+    {
+      "file": "00309.png",
+      "elapsedMs": 15535.9344,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215641,
+      "sha256": "897d31cc2dafe9bcade2ebca1721b6cf2e4c6af0167096675ef4e2068553d6ae"
+    },
+    {
+      "file": "00310.png",
+      "elapsedMs": 15575.334,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215761,
+      "sha256": "c48ac666c496567a95962d6225e852863e4f0b427d0c3f6ba8b225eece749779"
+    },
+    {
+      "file": "00311.png",
+      "elapsedMs": 15624.5044,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214618,
+      "sha256": "26c3b271bc8959e51c89de7908c84d305df7a57b96a84ea76fa76e8b1430a2b4"
+    },
+    {
+      "file": "00312.png",
+      "elapsedMs": 15674.5133,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213671,
+      "sha256": "6b6afc0689ed555fd966fb4e0b1737f998c8c2395a1d058e453d323e0a48cdcd"
+    },
+    {
+      "file": "00313.png",
+      "elapsedMs": 15724.8065,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214006,
+      "sha256": "095c2308d79bbbd30ee216f9056d2c38e194cc056e56a5f67d2163d9d4c21184"
+    },
+    {
+      "file": "00314.png",
+      "elapsedMs": 15774.7127,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214951,
+      "sha256": "ca7918d46a28421ebe9c27305bcb2c2225ce5319081c765d47f81710a8ff5689"
+    },
+    {
+      "file": "00315.png",
+      "elapsedMs": 15824.6943,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215131,
+      "sha256": "a239fc8ee20b1b9f5249f830d9d2029a3b00000f131d9a5a3377cabfd44c5abd"
+    },
+    {
+      "file": "00316.png",
+      "elapsedMs": 15874.4671,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215362,
+      "sha256": "53894ae53a09afde1ac0feab62222dbe0beaaabb5d775be196730eb9ef51426b"
+    },
+    {
+      "file": "00317.png",
+      "elapsedMs": 15924.72,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215193,
+      "sha256": "5e7601575376d234e9d44544d3539fff12abbc2db26acb78e41c9bbaa1e47b67"
+    },
+    {
+      "file": "00318.png",
+      "elapsedMs": 15975.2873,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215345,
+      "sha256": "ec51022b42c109977f6faadc8eab330db19744da3edfdae6f5087ac88b57f7ec"
+    },
+    {
+      "file": "00319.png",
+      "elapsedMs": 16025.4071,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214850,
+      "sha256": "e0f8f288ffa501e68d701676ec2a1483506103ce0256b1afda4ee151a055e0c3"
+    },
+    {
+      "file": "00320.png",
+      "elapsedMs": 16075.2417,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214595,
+      "sha256": "f8fc063bc431bc832e3ebdd59340dac6135e31e907eaf6c4763c8cc25d5b849a"
+    },
+    {
+      "file": "00321.png",
+      "elapsedMs": 16125.604,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215176,
+      "sha256": "0a483c56c8199346c093d549b11c623312a4cd94065b02f23cdfb41dba14d256"
+    },
+    {
+      "file": "00322.png",
+      "elapsedMs": 16175.7546,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215550,
+      "sha256": "4332af868fce2673eb2b1471e2c8b725e7c0c85f72605b2c59ec488bc4076e07"
+    },
+    {
+      "file": "00323.png",
+      "elapsedMs": 16225.7927,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216295,
+      "sha256": "b66f5855cc5f48c0b365fba6d1479156322178521c0d52556954b1f424ab699b"
+    },
+    {
+      "file": "00324.png",
+      "elapsedMs": 16275.7805,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216094,
+      "sha256": "8b845c3f9a8186f566162425f4088ad249f6f7da5ec44e29e7041c31a53c0016"
+    },
+    {
+      "file": "00325.png",
+      "elapsedMs": 16325.8046,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216029,
+      "sha256": "9259de24a40625f65c2e8db11096cfc939bfc9b81cb8de7130d35a4eef19e937"
+    },
+    {
+      "file": "00326.png",
+      "elapsedMs": 16375.7967,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215770,
+      "sha256": "4177d599bccdffbcdea4dfe83d42c620eba4756077e7b07fd0c41243fd031ddf"
+    },
+    {
+      "file": "00327.png",
+      "elapsedMs": 16426.6049,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215254,
+      "sha256": "b4b0eba696d64f414bcefbc31434da963d34c50a19ce83db6004b9bf3511dba9"
+    },
+    {
+      "file": "00328.png",
+      "elapsedMs": 16476.1095,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 213961,
+      "sha256": "779fdecdf47a2b70231ee33f2d9701be5ae5f38a3e37d3a7c14dd0b4b5b54e25"
+    },
+    {
+      "file": "00329.png",
+      "elapsedMs": 16527.0778,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214659,
+      "sha256": "30faa8af55ca1568882d17c404fafd91222e97cc5b8edc0c483d2fbb4394c17f"
+    },
+    {
+      "file": "00330.png",
+      "elapsedMs": 16577.5587,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 214951,
+      "sha256": "e2c342226161d93ff65d245a838f242a1f2625fef1c3ccbbf72abed952014190"
+    },
+    {
+      "file": "00331.png",
+      "elapsedMs": 16627.6107,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215172,
+      "sha256": "1efe7021f93a0166aeaca7b1c2c4f2306d4bb532d258f2ffc4c21f017a8ffad7"
+    },
+    {
+      "file": "00332.png",
+      "elapsedMs": 16678.1333,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215737,
+      "sha256": "6cccb739be3841ddbb4b6b6592f6ebd67fdea0c50b55c58c2bcd207d9629f028"
+    },
+    {
+      "file": "00333.png",
+      "elapsedMs": 16728.2976,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215813,
+      "sha256": "0a1342fd8979c09d77714ac4d60faff5abe4a64b7ea1490021ca49ff60989a98"
+    },
+    {
+      "file": "00334.png",
+      "elapsedMs": 16777.8852,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216027,
+      "sha256": "fed580edc5c366495d96d79c39536e56b5bd4919cf8cab56f35bd0f0e35d273b"
+    },
+    {
+      "file": "00335.png",
+      "elapsedMs": 16828.2542,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215250,
+      "sha256": "2680bd8a0826cea4335d44807373ee4fde711d636166b6e42cc907d81e002930"
+    },
+    {
+      "file": "00336.png",
+      "elapsedMs": 16879.8322,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215143,
+      "sha256": "8d923af0e3b60597c3de50a84d659915bfe70b0da333993ffea7e25619fd4739"
+    },
+    {
+      "file": "00337.png",
+      "elapsedMs": 16927.9193,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215698,
+      "sha256": "721c8828ba3abbc9bfc3b249d9369dd3a8440fd876977382f1863a7d8982270f"
+    },
+    {
+      "file": "00338.png",
+      "elapsedMs": 16978.1298,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217068,
+      "sha256": "c34e8139e4f41377810c0e24ac2823e76e6f31e6c1dcc7c33ac3cb8efa0f03d3"
+    },
+    {
+      "file": "00339.png",
+      "elapsedMs": 17028.1248,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218150,
+      "sha256": "9dc56237f4b99ec1dde2acd94661724307c861462e727c5971e68cab225f8595"
+    },
+    {
+      "file": "00340.png",
+      "elapsedMs": 17078.4241,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218838,
+      "sha256": "b2b7bc9d1817c8da56c8bd0506d6c0d0e5fe302c401192291f92de326e2b3963"
+    },
+    {
+      "file": "00341.png",
+      "elapsedMs": 17128.1728,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218445,
+      "sha256": "976d0942c4870b5e8dd5f7512267795a73d49a285cb6b558c6b164ed4ae2325e"
+    },
+    {
+      "file": "00342.png",
+      "elapsedMs": 17178.1262,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218335,
+      "sha256": "9d98970a57fc1cf72bc43c1f9846fc4d0d1576a78c2b3e46cc6e117b17b5a1c3"
+    },
+    {
+      "file": "00343.png",
+      "elapsedMs": 17228.3177,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217419,
+      "sha256": "25cdb103383c5f323bebd694b33e8cd46e89f044acfbf9bb920e43901ecd8d9c"
+    },
+    {
+      "file": "00344.png",
+      "elapsedMs": 17279.9812,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215600,
+      "sha256": "9bb1960a35bbae04d1954867dba9043937e1362d05f895ad721cff80fe35b520"
+    },
+    {
+      "file": "00345.png",
+      "elapsedMs": 17329.5165,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217320,
+      "sha256": "d1fd0ca09c1b9b110c48595bf2d3480738198a03f7f27e41c094164ce3754d9d"
+    },
+    {
+      "file": "00346.png",
+      "elapsedMs": 17380.2626,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217742,
+      "sha256": "fea953dee0d6a107ee83b39caa927dfc6bc2348ff6afcfef50d6b257d2d239bd"
+    },
+    {
+      "file": "00347.png",
+      "elapsedMs": 17430.1455,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218059,
+      "sha256": "e03b049640d5205f6fec5772bb7fd7412be6fac693786efa5953e9be7fb5cd68"
+    },
+    {
+      "file": "00348.png",
+      "elapsedMs": 17480.0491,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218359,
+      "sha256": "62a51e351d36e10a30d93c808d9fb101a7c567b0c31da08ca2de9e6836c05f79"
+    },
+    {
+      "file": "00349.png",
+      "elapsedMs": 17530.1878,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218375,
+      "sha256": "685dc400cf204363bcb5015edd8e2df83b3484fbc1fb1e07123c0a2e3da2e0a8"
+    },
+    {
+      "file": "00350.png",
+      "elapsedMs": 17580.2442,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217859,
+      "sha256": "7612a5ca60ba599deca62d76d9f0b48ae39c82351f1b4a2fdefa9e4ff14d0525"
+    },
+    {
+      "file": "00351.png",
+      "elapsedMs": 17631.4441,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217170,
+      "sha256": "2a19b7a6ca623fddbee701f9523333f39d4d8c8aa0bef05d116a593c1164cc29"
+    },
+    {
+      "file": "00352.png",
+      "elapsedMs": 17681.0135,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216566,
+      "sha256": "679fa0b255334dcafc3e6483a6b05f94f67ddd94b8804c19442049fe9275de6b"
+    },
+    {
+      "file": "00353.png",
+      "elapsedMs": 17730.3139,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217441,
+      "sha256": "c93b0a1b524b23f960beb9a42aa53f154f46ac5ed55928756c8de0c78ab4114c"
+    },
+    {
+      "file": "00354.png",
+      "elapsedMs": 17780.9532,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217969,
+      "sha256": "5600c8f0d69f902e6db5f4e3ec94a649105be3a083822e676a83ed3b8953c2aa"
+    },
+    {
+      "file": "00355.png",
+      "elapsedMs": 17830.405,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218830,
+      "sha256": "62b27ef4beee25599bd154da2a40fcdecb19d243a93236f6dc1de940c3bf6af3"
+    },
+    {
+      "file": "00356.png",
+      "elapsedMs": 17880.5004,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218953,
+      "sha256": "640036840eb920a41f6e060232bc282f574b44cd9cd38d6bbf4ca9f60fdcc8b9"
+    },
+    {
+      "file": "00357.png",
+      "elapsedMs": 17931.8507,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218284,
+      "sha256": "bc6aa251dd48c3e1562c589bc5d1d3986369e5e22bf9ef37460dc43d1090a0e3"
+    },
+    {
+      "file": "00358.png",
+      "elapsedMs": 17981.4313,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218412,
+      "sha256": "8c43846f44e4080b360f73b4684366601f2876a2be35dd83384427da942f9c63"
+    },
+    {
+      "file": "00359.png",
+      "elapsedMs": 18031.6803,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217476,
+      "sha256": "f3d4263c3d5932ec62c398cd397235e3ebfa7562469a2238df022f9b6e551378"
+    },
+    {
+      "file": "00360.png",
+      "elapsedMs": 18081.7283,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216328,
+      "sha256": "26759d7947c711641c12c0efe9017b78c8ca118a55a121a977a05608d5269b3d"
+    },
+    {
+      "file": "00361.png",
+      "elapsedMs": 18132.2285,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216979,
+      "sha256": "be4e9663df82affc990694e4267dcf0676de405f7a0d975635138345c08010c0"
+    },
+    {
+      "file": "00362.png",
+      "elapsedMs": 18182.7334,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218169,
+      "sha256": "0958b47cea75dda8c4a5d7d1eaa05bc585088bbdb8ca402171f26c8852ccbfb7"
+    },
+    {
+      "file": "00363.png",
+      "elapsedMs": 18231.9521,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217371,
+      "sha256": "0d34f991d1d62e904f691355ec4b45d5c489af5a7629472910dd2c557f5ed6af"
+    },
+    {
+      "file": "00364.png",
+      "elapsedMs": 18283.5551,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217920,
+      "sha256": "4fd211deb7ae0334e8391f108bb7832a156b936a7ba8eb7ae5c22a9fc967dc78"
+    },
+    {
+      "file": "00365.png",
+      "elapsedMs": 18334.7201,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217706,
+      "sha256": "71f35a890288c2f50eabcd7360ba23679c91403edf782eeeb1810dea46a8d8dd"
+    },
+    {
+      "file": "00366.png",
+      "elapsedMs": 18383.7193,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217891,
+      "sha256": "98fc750e8045586feea95a3ba38211e91f1ae8b31e54db3ce73cb7ee9d52b6ce"
+    },
+    {
+      "file": "00367.png",
+      "elapsedMs": 18433.6104,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217367,
+      "sha256": "af323dd7040575b05d2280146ea72dce9d37fd17fd41dd2171ef0563577eaa92"
+    },
+    {
+      "file": "00368.png",
+      "elapsedMs": 18483.7623,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216601,
+      "sha256": "811626b19edc94d3596930e4ab152481c4c008a2f3cfbe90a4283dcd0d341d3b"
+    },
+    {
+      "file": "00369.png",
+      "elapsedMs": 18534.6343,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217040,
+      "sha256": "5a5d79bdeec22dcd2bd6051e957c71459d3e62641970512341c52cc5267a0f21"
+    },
+    {
+      "file": "00370.png",
+      "elapsedMs": 18583.9026,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218257,
+      "sha256": "27aa7c1f61ed003ccc16626ae5ac4f98bd7f169d138e574211e628bad4abe57f"
+    },
+    {
+      "file": "00371.png",
+      "elapsedMs": 18633.9874,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218584,
+      "sha256": "0863227791165c6a3ac3b93a0981a44b2236cf7fff0af602eef18716fd730753"
+    },
+    {
+      "file": "00372.png",
+      "elapsedMs": 18683.6661,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 218224,
+      "sha256": "6c42aa02a4304d054bd97dc889bf599ec3cacf45b4b1b3eaba6647ac97c4f16b"
+    },
+    {
+      "file": "00373.png",
+      "elapsedMs": 18733.76,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217959,
+      "sha256": "5ab828f3945bcbbe20a504cecda19fd4dd4208fcee6be692d605765fe7fa5d90"
+    },
+    {
+      "file": "00374.png",
+      "elapsedMs": 18784.1493,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217281,
+      "sha256": "acab358067da7a198f2e8240da8034a878b52de01f2bce3513dadff5753667bd"
+    },
+    {
+      "file": "00375.png",
+      "elapsedMs": 18834.6598,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216213,
+      "sha256": "e6e3f2d518a920eb476e6504f6bc890124846d2d1d6f1b3e1aa804ce0e1fc91d"
+    },
+    {
+      "file": "00376.png",
+      "elapsedMs": 18885.9743,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215822,
+      "sha256": "2b07ff8f6e77e905dfc1f022e27c7663085f296d6c2cb56999c0d0529dce31d8"
+    },
+    {
+      "file": "00377.png",
+      "elapsedMs": 18936.0751,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217007,
+      "sha256": "67f3d6da2086866c3c6bda8bcf47d4ddfdc028619980c39b4feb282c2efdb1ea"
+    },
+    {
+      "file": "00378.png",
+      "elapsedMs": 18986.8533,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217734,
+      "sha256": "ce7be1563e7fead458469d381ea1300202e2599df99a50117b7b9887a70aab72"
+    },
+    {
+      "file": "00379.png",
+      "elapsedMs": 19036.7348,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217465,
+      "sha256": "6d8201db27a5d3063a20413af5c8ea85299380beb3017db3a8cf39db77a6fc53"
+    },
+    {
+      "file": "00380.png",
+      "elapsedMs": 19088.115,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217842,
+      "sha256": "63bfc4bb54ab9f30e903f5664f189e0e19e6848a687fdadd189503e6a48b5256"
+    },
+    {
+      "file": "00381.png",
+      "elapsedMs": 19134.599,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217675,
+      "sha256": "c875605cfa95a3ff0130f04597730f40e3b552a07ffabb4a525059e2ab589501"
+    },
+    {
+      "file": "00382.png",
+      "elapsedMs": 19184.5232,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217459,
+      "sha256": "652be1e71723a91deac58a9b0dc065bd37283cc6372eb26d384c67aa16aed573"
+    },
+    {
+      "file": "00383.png",
+      "elapsedMs": 19234.2313,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216195,
+      "sha256": "7e9d8d7992713e1b7a7ace22b79430a0f2302c0e197c0f5c7d02a24a978d3070"
+    },
+    {
+      "file": "00384.png",
+      "elapsedMs": 19284.3499,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215721,
+      "sha256": "de1f03c8896daf678eff9dc76e0d10b39c42cf4952e6c16c407f51b3fe7d4e2a"
+    },
+    {
+      "file": "00385.png",
+      "elapsedMs": 19334.407,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215427,
+      "sha256": "74a6c2a6a69fecaa30922c4ef1d007b08eca35cbe442908066634226bbd31128"
+    },
+    {
+      "file": "00386.png",
+      "elapsedMs": 19384.4461,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216691,
+      "sha256": "47087d5db7de4b9586e0881fb62f084537e6c978a2966034cd13b06d39d011bf"
+    },
+    {
+      "file": "00387.png",
+      "elapsedMs": 19435.981,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217614,
+      "sha256": "acd1fd7d778b4768ea3865bf1e213323795c01e4f3dae1e1e75d63c1e8d5c9a7"
+    },
+    {
+      "file": "00388.png",
+      "elapsedMs": 19486.0675,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217715,
+      "sha256": "059fed36ec478fe1d85f9cff2cb48a358c93a0b9a5897f93250dd07d2ef553ea"
+    },
+    {
+      "file": "00389.png",
+      "elapsedMs": 19535.8802,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217900,
+      "sha256": "4b511e6c5fd55d4923323b6636e97a68c4783d7c85971693ccc59b3b9ee4bd10"
+    },
+    {
+      "file": "00390.png",
+      "elapsedMs": 19585.9056,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217413,
+      "sha256": "5828ea91c8414a0c3c1ae04e642a987d44ec313249ce82eb609e6da99428aa66"
+    },
+    {
+      "file": "00391.png",
+      "elapsedMs": 19637.1246,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216030,
+      "sha256": "d494690e71c9e2e2bd08e31638f9eef974447b25f71e35c07b0dd4d8e5c73a9f"
+    },
+    {
+      "file": "00392.png",
+      "elapsedMs": 19687.2279,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215683,
+      "sha256": "19059aeb09a6b9de4beec24f51bc210d9af76bb807a3d798e98dcc53bf55aa00"
+    },
+    {
+      "file": "00393.png",
+      "elapsedMs": 19720.9654,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216392,
+      "sha256": "541bcaead85d760cb0db53754b16f2681321e96cf554f2e4079d584b84689866"
+    },
+    {
+      "file": "00394.png",
+      "elapsedMs": 19770.7955,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216836,
+      "sha256": "e4573d91e04235dcbb585421e1e040e6a35f5ac438f5b52d2c679a1262ab6f05"
+    },
+    {
+      "file": "00395.png",
+      "elapsedMs": 19821.1866,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217328,
+      "sha256": "3f3e8028a7dd17781a7069f58db525372ab27d0d538168a019ad45bcf7b56dbc"
+    },
+    {
+      "file": "00396.png",
+      "elapsedMs": 19871.6012,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217268,
+      "sha256": "c6ac7f93e36b1dc760cd506f362ded57a6322af6a979126a298a62749a8ae157"
+    },
+    {
+      "file": "00397.png",
+      "elapsedMs": 19921.6385,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216877,
+      "sha256": "a8f3b148be4dd6e3133627ca9ee183759a6104770a8fcb4523e4380b2ddb37c4"
+    },
+    {
+      "file": "00398.png",
+      "elapsedMs": 19972.0475,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217137,
+      "sha256": "0629e8010742f3ba094f7dea7521c90608c47a5de5bf6311159d8a93a2979bad"
+    },
+    {
+      "file": "00399.png",
+      "elapsedMs": 20022.4874,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216529,
+      "sha256": "1ee171f89ebfe3e3ccedcd4dfd3eebd1791f6060d82fb48781adac1c2d68466f"
+    },
+    {
+      "file": "00400.png",
+      "elapsedMs": 20073.5264,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216380,
+      "sha256": "1bd2a94c23c310ca469951a43a71c651b149165d312c30f34581a46dddc42358"
+    },
+    {
+      "file": "00401.png",
+      "elapsedMs": 20123.7782,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216250,
+      "sha256": "7c987f55868002c0577ab6d35bfef58898544558ec5f148cb7bf9eb9f3594de3"
+    },
+    {
+      "file": "00402.png",
+      "elapsedMs": 20173.6428,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216072,
+      "sha256": "ad22f535c9b293ee1be660b0d4e946574d90e940ec3037df9bf511e07d00fa7e"
+    },
+    {
+      "file": "00403.png",
+      "elapsedMs": 20224.087,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217397,
+      "sha256": "5668d039efd96975b077ed7de7a6169bd7eae46518d4d5ce66584bb9c3b9addb"
+    },
+    {
+      "file": "00404.png",
+      "elapsedMs": 20274.2887,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217545,
+      "sha256": "f37859a8e3659ee3aa4ac5041f4ac5868794b1ee45f19de3523c4adc3a906094"
+    },
+    {
+      "file": "00405.png",
+      "elapsedMs": 20324.3981,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217497,
+      "sha256": "ac643d850841b4e08b2f3aab56c17120e2506527a919e2c403c2db2badf904c0"
+    },
+    {
+      "file": "00406.png",
+      "elapsedMs": 20374.6263,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 217204,
+      "sha256": "1d734cc6e6c42c4020ea1c2ff1b4c8eed9ea3cf5398414d6b2bce4db0ed506c3"
+    },
+    {
+      "file": "00407.png",
+      "elapsedMs": 20424.8207,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216306,
+      "sha256": "da8de7684974cfb686d508a54f5de764fc3b7d4c3e2d20e4609e263615270945"
+    },
+    {
+      "file": "00408.png",
+      "elapsedMs": 20474.6688,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215967,
+      "sha256": "174bec3b5a02b1dbef5cad830147c680bda67e7886c96d9bfa4a2398060fa187"
+    },
+    {
+      "file": "00409.png",
+      "elapsedMs": 20637.7607,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216637,
+      "sha256": "fda34e09d1f7fbf07d2de526cd51a307f373bb1e872fe04080f209a4cb231b2f"
+    },
+    {
+      "file": "00410.png",
+      "elapsedMs": 20649.7127,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216783,
+      "sha256": "e3b1bc24337954c609b21b75f0f6d24399114d26381c0cd0e4fb6e4862cbcc06"
+    },
+    {
+      "file": "00411.png",
+      "elapsedMs": 20698.2642,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216178,
+      "sha256": "c2d208a75b783b7cc95f35359d1876df208c42ddcc9c2d2bf9c4738f20a820ac"
+    },
+    {
+      "file": "00412.png",
+      "elapsedMs": 20748.0093,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216459,
+      "sha256": "f949534c537c735875733e5ae89f5632f804e39b6e92db4cfab5f3da6217b906"
+    },
+    {
+      "file": "00413.png",
+      "elapsedMs": 20793.6734,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216611,
+      "sha256": "c5522fad673e8afb3ff50b56ea4065c92e8d695d77fcb6d64c092ef4b27335b9"
+    },
+    {
+      "file": "00414.png",
+      "elapsedMs": 20854.202,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215424,
+      "sha256": "7c8d4d9da71b241b6534557d19b79f76616f6b21a4ff212dc76925f1475d8b12"
+    },
+    {
+      "file": "00415.png",
+      "elapsedMs": 20889.8649,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215246,
+      "sha256": "c1fc251767ce0c4de6c1d8c434f0315132818c2a51927494337f72183559eab4"
+    },
+    {
+      "file": "00416.png",
+      "elapsedMs": 20954.399,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 215850,
+      "sha256": "980f997ef811069a60dd49fcb2b08a4aaff5eaff08c4db20b5af4e9bee741271"
+    },
+    {
+      "file": "00417.png",
+      "elapsedMs": 21005.5811,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216667,
+      "sha256": "30b809924590e3a320e2d30a61a54203412da29bfdbe1c42fa5fd69602dfaa97"
+    },
+    {
+      "file": "00418.png",
+      "elapsedMs": 21055.4838,
+      "screen": "BadgePresentationEditorScreen",
+      "bytes": 216509,
+      "sha256": "82c296c43dae32f396e75895af96d1e1293faffeb4deb73c3046938c71d9c6ea"
+    },
+    {
+      "file": "00419.png",
+      "elapsedMs": 21109.2579,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213250,
+      "sha256": "776d0ca000729f0267d9451575da23351a8e7ba9657bbb77541cd081713b08bf"
+    },
+    {
+      "file": "00420.png",
+      "elapsedMs": 21139.2396,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213218,
+      "sha256": "b1ee2e3ad7dd9cc8abcedab28ddc533a76e91a6c72846d83f6839aec39473260"
+    },
+    {
+      "file": "00421.png",
+      "elapsedMs": 21190.2797,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213098,
+      "sha256": "2cabed8c83c60d2f6bbdf31a38258962bdfe7789d6e4dc0ca711f9f9bb97aa33"
+    },
+    {
+      "file": "00422.png",
+      "elapsedMs": 21239.2247,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213049,
+      "sha256": "0d30be4392381761bbf0b2bf6d86bbcc77fa27a5310d92f8172794422bceeef4"
+    },
+    {
+      "file": "00423.png",
+      "elapsedMs": 21290.1526,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212639,
+      "sha256": "232138fe8c1f696b993c73c1948079be5aaf1de904946f57abf279e7e6ce11c5"
+    },
+    {
+      "file": "00424.png",
+      "elapsedMs": 21343.4812,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213441,
+      "sha256": "38c081963c94668721c283720d258ff726db78df7cf18e4a84ab0cd21878955f"
+    },
+    {
+      "file": "00425.png",
+      "elapsedMs": 21392.32,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213948,
+      "sha256": "d08a8996ca1599c96bc7e8e5de8b05407aaca0e0b4565fd6d307cf9a490e00da"
+    },
+    {
+      "file": "00426.png",
+      "elapsedMs": 21442.4038,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213133,
+      "sha256": "617437aa8ca7fd6b92dd3aa7cbe4fca8e0c2b39e393e1fc5b7390c4f89edadef"
+    },
+    {
+      "file": "00427.png",
+      "elapsedMs": 21492.8215,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212705,
+      "sha256": "a09891bebd4c9027492277612e14edfadd359d6557187a0c98716c8d0b0b2362"
+    },
+    {
+      "file": "00428.png",
+      "elapsedMs": 21544.0952,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212756,
+      "sha256": "4844fb7a24ec538673240632211622742d5a9194a3ad3d544113ef5df151acf1"
+    },
+    {
+      "file": "00429.png",
+      "elapsedMs": 21593.9013,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212429,
+      "sha256": "c8d7b7e78cd3821ab43c7508d35dc30afec1b61c957f5fdafed016f8139bcdba"
+    },
+    {
+      "file": "00430.png",
+      "elapsedMs": 21644.0023,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212217,
+      "sha256": "b75704bd70fa0b8b288456fcc8238cb16b7409b482d4c5c40187a9ca1183df05"
+    },
+    {
+      "file": "00431.png",
+      "elapsedMs": 21693.6288,
+      "screen": "BadgeEditorScreen",
+      "bytes": 211842,
+      "sha256": "641fb9661cc1ff2b32deb6f57fbbe4c9a1d1231e00387d014af1a7586e8ed127"
+    },
+    {
+      "file": "00432.png",
+      "elapsedMs": 21745.261,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212226,
+      "sha256": "7cbd604a5a6154c19916bd8ae950df392793048e766e54faf9a7ce508e84c5e2"
+    },
+    {
+      "file": "00433.png",
+      "elapsedMs": 21797.3198,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212040,
+      "sha256": "37ff1ff7446153762529487fa000a59317714ad86f4a55ac7e7812a4f21e41e1"
+    },
+    {
+      "file": "00434.png",
+      "elapsedMs": 21847.079,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212372,
+      "sha256": "e20d32083919a0ffd59f10506f97eb84f1e3f72262cbb22d809a17587758521a"
+    },
+    {
+      "file": "00435.png",
+      "elapsedMs": 21897.3339,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212409,
+      "sha256": "4f22a97638a6d094afc0dc48c3c45302d92907653f9c5a7ddf2b8bb9d67e7515"
+    },
+    {
+      "file": "00436.png",
+      "elapsedMs": 21947.6242,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212457,
+      "sha256": "ed27606a56f746ce62809aa62ddadc93a2b2ae948cea1e929b3df41d28903feb"
+    },
+    {
+      "file": "00437.png",
+      "elapsedMs": 21997.9926,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212480,
+      "sha256": "0bbc633d38b7c3afa9248a3afc3f593d65233238e5581f8c4dbf98ccce7f2a19"
+    },
+    {
+      "file": "00438.png",
+      "elapsedMs": 22048.093,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212165,
+      "sha256": "da78a5253714e95f5c8b2d62d2a41a9447ffd1b2607625101b40329850c86094"
+    },
+    {
+      "file": "00439.png",
+      "elapsedMs": 22098.3212,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212254,
+      "sha256": "94a9973f75189765042fa9b180de25b687666e5da3fc12692d8fe0264bffd9c2"
+    },
+    {
+      "file": "00440.png",
+      "elapsedMs": 22148.2114,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212638,
+      "sha256": "1100b9e348803087d11e3fc657693657acb9e65a97739cf74755332d6c3b8d31"
+    },
+    {
+      "file": "00441.png",
+      "elapsedMs": 22198.3398,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212392,
+      "sha256": "bc93159264f84f8c352bcd2f1b827a04ba9b95b4bd7cffc47a4bd47d38fe677b"
+    },
+    {
+      "file": "00442.png",
+      "elapsedMs": 22248.1252,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212170,
+      "sha256": "39d4b102edf1a68c5476438403f9c93d5f23e423f3563eb8e978b447db9ed484"
+    },
+    {
+      "file": "00443.png",
+      "elapsedMs": 22298.2797,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212131,
+      "sha256": "17b4e48d9afb37ab93dc0af3de8f3905860ecfca01c7f2854ad05c3839efda48"
+    },
+    {
+      "file": "00444.png",
+      "elapsedMs": 22349.3409,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212522,
+      "sha256": "adb6990c7444cc774e735bc3303e61b5978086e3f9c3eaae218f598b9c743908"
+    },
+    {
+      "file": "00445.png",
+      "elapsedMs": 22399.8915,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212975,
+      "sha256": "f9fe025a5faf3c6be8f02039b790616cf7424d9f294ea45a82e081a47a206654"
+    },
+    {
+      "file": "00446.png",
+      "elapsedMs": 22450.548,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212609,
+      "sha256": "e463dd6340c0f0598a9e9d9530922fb539d4ecc1b19114d38711e8f95001c82e"
+    },
+    {
+      "file": "00447.png",
+      "elapsedMs": 22501.1768,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212174,
+      "sha256": "7b0fd675961422069044c316d92e88b8f33b491d15d59cd59b65c6fc21076887"
+    },
+    {
+      "file": "00448.png",
+      "elapsedMs": 22550.5441,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212349,
+      "sha256": "f1dc7d68f1470d1a932ea90f94aa2de94001775329db5a5b3adf5e95af7342dd"
+    },
+    {
+      "file": "00449.png",
+      "elapsedMs": 22600.1404,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212800,
+      "sha256": "04dd74f9376bcaeae1b062b8a78c375942cd088d4b253f2bdb2a36dd5c906846"
+    },
+    {
+      "file": "00450.png",
+      "elapsedMs": 22650.508,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213730,
+      "sha256": "8217af2ccae3306a2f27a0610a37644e9f6719aa0aa86f3b2ace7c49a1a16844"
+    },
+    {
+      "file": "00451.png",
+      "elapsedMs": 22700.6526,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213830,
+      "sha256": "ab4c4e07445880712d87fe311b1ff3594072f4993555f737b9011fada2a0f027"
+    },
+    {
+      "file": "00452.png",
+      "elapsedMs": 22751.7692,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213637,
+      "sha256": "219cd276949b3ee6f760d90e06c569024863ef4dbb9b30a87980e3b8ab1820c4"
+    },
+    {
+      "file": "00453.png",
+      "elapsedMs": 22801.7554,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213233,
+      "sha256": "ad65312242d738cff15515a3b374276ea05099e1a4f33954d0cb4a4473355f05"
+    },
+    {
+      "file": "00454.png",
+      "elapsedMs": 22851.6975,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212545,
+      "sha256": "cd7978d2824d66102363174c767d5b9197ec31a8f1f0e3531299dd81a01f2f61"
+    },
+    {
+      "file": "00455.png",
+      "elapsedMs": 22902.0707,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212333,
+      "sha256": "8311ca1bc61fc744e7da348ce39003cd55aef12175e8dcff6d62f85755edd298"
+    },
+    {
+      "file": "00456.png",
+      "elapsedMs": 22951.6738,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212911,
+      "sha256": "3cbd09b7a308bfba1ce947b5d3b21e655f4cc2e96675876ea19ec14d76fb4bf0"
+    },
+    {
+      "file": "00457.png",
+      "elapsedMs": 23001.6831,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213266,
+      "sha256": "79e0cdcfbf37b522c50320d9979fc762dd1b35d4252dc88eaea86e20d1490908"
+    },
+    {
+      "file": "00458.png",
+      "elapsedMs": 23051.7248,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213013,
+      "sha256": "a0b065439db0d975601aeda695dcd3f5b94a34626b3495a532ecf9b3c903bf31"
+    },
+    {
+      "file": "00459.png",
+      "elapsedMs": 23102.4706,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213328,
+      "sha256": "2ced5f1a65aec1ff4aa62167552715668ec33a0011d0c6401ee8c1aad8df4109"
+    },
+    {
+      "file": "00460.png",
+      "elapsedMs": 23152.3439,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213533,
+      "sha256": "bac04aa4c40762676e37b218a2ddd5449f5934e082a6cf9e00462bf1306b2625"
+    },
+    {
+      "file": "00461.png",
+      "elapsedMs": 23202.7109,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213389,
+      "sha256": "23409e8d5c6956a348b6b8506e166843a95d00e3ffbe24b5f16036672df3d6f4"
+    },
+    {
+      "file": "00462.png",
+      "elapsedMs": 23252.6234,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212648,
+      "sha256": "105f9b125d21cf86c9338e91655f1f32e25c9e04287ce499940d0835b2a119e9"
+    },
+    {
+      "file": "00463.png",
+      "elapsedMs": 23303.1547,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212669,
+      "sha256": "dcec19d0d700da3a625e8401fca10434f412e6eed0575d16794d6c48642fe56b"
+    },
+    {
+      "file": "00464.png",
+      "elapsedMs": 23353.0092,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213083,
+      "sha256": "dfcba45917109588c2d076139722cfa9b375e6bf2d4d4ad6f1cb2ed4ee0f305e"
+    },
+    {
+      "file": "00465.png",
+      "elapsedMs": 23404.0455,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213600,
+      "sha256": "ecc191f42458f60bd5242c2229caabe2efe0c44040187f5da867dc6e47e4647b"
+    },
+    {
+      "file": "00466.png",
+      "elapsedMs": 23454.6547,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213922,
+      "sha256": "039e56868a78a20b547064cce1cde928adb58aadfbb314eb0c50d7a369ef8d8d"
+    },
+    {
+      "file": "00467.png",
+      "elapsedMs": 23505.0293,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213454,
+      "sha256": "195ba9339d6debcf7e6a967b0d357506342ef5cfd0a98e5bdcec0416a5cfec77"
+    },
+    {
+      "file": "00468.png",
+      "elapsedMs": 23554.8253,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212937,
+      "sha256": "19ddd561af8d4658aff6386c59b50d02ea69e5f4fc57b076c996e0f0af052993"
+    },
+    {
+      "file": "00469.png",
+      "elapsedMs": 23605.0158,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212805,
+      "sha256": "2aedce6bca567c8af7232c7366c077acbc8a2f308513f7ae27a8b90ca0c92a6c"
+    },
+    {
+      "file": "00470.png",
+      "elapsedMs": 23655.1858,
+      "screen": "BadgeEditorScreen",
+      "bytes": 211737,
+      "sha256": "e95ad45fd6c492df366a455ce9d02c8ffe8419e4a09bcf66e0e2fc80edbf0cf8"
+    },
+    {
+      "file": "00471.png",
+      "elapsedMs": 23705.1453,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212172,
+      "sha256": "61b61ae9a64e365427484f677fe1562bfe6613220d517a7396e9f4d759408bad"
+    },
+    {
+      "file": "00472.png",
+      "elapsedMs": 23738.1549,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212443,
+      "sha256": "e87dad327c03fcec398f9d50a5274e714737e66767cf1f8d8961e0a41af0eb41"
+    },
+    {
+      "file": "00473.png",
+      "elapsedMs": 23788.4069,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213012,
+      "sha256": "3090693c1f955717121ea3798e2ee3f5487590c62c30ece9229125cb67aa4d73"
+    },
+    {
+      "file": "00474.png",
+      "elapsedMs": 23838.7779,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212344,
+      "sha256": "afb8ed7a4f76438f71b4bf6b82cf1d5078c2d5594aa8b67fd13b6152d61504f3"
+    },
+    {
+      "file": "00475.png",
+      "elapsedMs": 23888.3978,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212602,
+      "sha256": "13c97a34b4dc0d563bba190b0656d25f75cf261e5219a231250cbdeaed6f055d"
+    },
+    {
+      "file": "00476.png",
+      "elapsedMs": 23938.3583,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212648,
+      "sha256": "bc0889f723857e6261d0472273faf8e534d3b575b7b13f3898878955f0d8e287"
+    },
+    {
+      "file": "00477.png",
+      "elapsedMs": 23988.4493,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212959,
+      "sha256": "25e8f0efd8abe1866646353e4c130c001a2e95c762512bcebada2f9a44ef9179"
+    },
+    {
+      "file": "00478.png",
+      "elapsedMs": 24038.5424,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213063,
+      "sha256": "98d5bb1ffc7a4399bf0b44273df46ef366764f01466f3a8c709e6a95eef049a4"
+    },
+    {
+      "file": "00479.png",
+      "elapsedMs": 24088.45,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212862,
+      "sha256": "70bc9e2c2444f5ffa52fae5e47a027203ff4d3fce75a3dd2ad780e249072dd40"
+    },
+    {
+      "file": "00480.png",
+      "elapsedMs": 24138.7068,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212886,
+      "sha256": "3c25841984ddd472dc596615db0bb14bd9ce5056f3facf0a16c38b414ab94075"
+    },
+    {
+      "file": "00481.png",
+      "elapsedMs": 24188.5924,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213348,
+      "sha256": "d57a311e4e69ecb4b206388fab48dda02e4a5f7c6b59dbb9c7fc94583c3c85ab"
+    },
+    {
+      "file": "00482.png",
+      "elapsedMs": 24239.914,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214219,
+      "sha256": "9f503792d4e848ab149df96228c630ec0e1404522c50d5b1d870b535063fae76"
+    },
+    {
+      "file": "00483.png",
+      "elapsedMs": 24290.2758,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214153,
+      "sha256": "79cd673e83fadf0d73c6dcc31a8c7ef61dd27b8baabdb0a481036cba49f5e2d4"
+    },
+    {
+      "file": "00484.png",
+      "elapsedMs": 24340.4079,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213938,
+      "sha256": "2acf65bd36c605652261f5fea6fd0597bb17f954b5d0b4fe21521a6ade34e833"
+    },
+    {
+      "file": "00485.png",
+      "elapsedMs": 24390.3805,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213739,
+      "sha256": "84a8c6ea67f532dce69a259a0b6e5ad7bd4285476bcc98f25608b78613e304de"
+    },
+    {
+      "file": "00486.png",
+      "elapsedMs": 24440.8109,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212385,
+      "sha256": "908f057aa8bc9024ba2cf97b9e9235e02e3dba64b6589e798852da758ac25f9d"
+    },
+    {
+      "file": "00487.png",
+      "elapsedMs": 24490.5295,
+      "screen": "BadgeEditorScreen",
+      "bytes": 211990,
+      "sha256": "c389075afe3aa766493138e10bdf8c4d65d21e0bc8c91877b25712d5dc806225"
+    },
+    {
+      "file": "00488.png",
+      "elapsedMs": 24540.6276,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212769,
+      "sha256": "1fd1350a1562ad6c3e6f817467d0e376a60369d0fcfe72405c1197de455a0bee"
+    },
+    {
+      "file": "00489.png",
+      "elapsedMs": 24591.4779,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213257,
+      "sha256": "917323e1e1328f5f5ba7f3e9431235bcd936a72fd1aa955a3e6c48b22f90af9c"
+    },
+    {
+      "file": "00490.png",
+      "elapsedMs": 24640.6613,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213596,
+      "sha256": "da4baeac97462ebcd7c6b8bb488d70e004fb7bf457de24f3262538ba838ecc0c"
+    },
+    {
+      "file": "00491.png",
+      "elapsedMs": 24690.6456,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213602,
+      "sha256": "006d6b43be8b2fbfe8b5c4a134ab0d72254e562cdb5a62f1c1877084ef3d5268"
+    },
+    {
+      "file": "00492.png",
+      "elapsedMs": 24740.7399,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212967,
+      "sha256": "e33824e55d37789bf959b1e14fefe9c1685e6961aa45b4026c2676c78fce3558"
+    },
+    {
+      "file": "00493.png",
+      "elapsedMs": 24790.6232,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212790,
+      "sha256": "ff5f56b3abbabbe800a160e3f113707ad90a0b68e568c94538e8e5e7b79ea726"
+    },
+    {
+      "file": "00494.png",
+      "elapsedMs": 24840.6704,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212220,
+      "sha256": "36d183767453914a4e8b544393d1951607f2919e6a05ab1516c740359c544c7c"
+    },
+    {
+      "file": "00495.png",
+      "elapsedMs": 24892.8375,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212879,
+      "sha256": "31d82fdc77dc7d8076895ed2fdce2b92932688da82791eca8a9b6ff23139e58c"
+    },
+    {
+      "file": "00496.png",
+      "elapsedMs": 24941.0727,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212937,
+      "sha256": "5b5a03eee914cfc117dc105af78a739e1e8cb695d1128b10e27382848661df25"
+    },
+    {
+      "file": "00497.png",
+      "elapsedMs": 24991.2213,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213718,
+      "sha256": "d79278a2d1beff2e67291efd6ee0103162848ebfceac7f95ef60a142c396bd66"
+    },
+    {
+      "file": "00498.png",
+      "elapsedMs": 25041.4158,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213830,
+      "sha256": "a9418ac6bbaaf93067328bc0c4936c8874712e2072eeda2e4da7cb11ca591c53"
+    },
+    {
+      "file": "00499.png",
+      "elapsedMs": 25093.7782,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214155,
+      "sha256": "2954388ace74558ae9d154c1b6dd6160f6568a3cc50daacb512cfda4bbc679e9"
+    },
+    {
+      "file": "00500.png",
+      "elapsedMs": 25144.1116,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213575,
+      "sha256": "a32f11575d55f4017dda13f2b65a0e67d3a817aabb845fe168161a439fd2d5bf"
+    },
+    {
+      "file": "00501.png",
+      "elapsedMs": 25194.1386,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212910,
+      "sha256": "2c37625520bbca0d31064e4df583bc79eeb0a09c20ee13fb30f8629fd60c60da"
+    },
+    {
+      "file": "00502.png",
+      "elapsedMs": 25244.0559,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212204,
+      "sha256": "75baa572b5237c95000b6bfd8fe93f5890eca8ccb0c6571d9f28c2f631e2ddce"
+    },
+    {
+      "file": "00503.png",
+      "elapsedMs": 25293.9634,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212477,
+      "sha256": "83f666ea982079e91f74062d8c300bbfaa8b9e880001bab96eada7977e6d98aa"
+    },
+    {
+      "file": "00504.png",
+      "elapsedMs": 25343.9995,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213088,
+      "sha256": "0b7f23947b8abdad9835aadcd348b49c650d764cd35e907699e91628a4f3683f"
+    },
+    {
+      "file": "00505.png",
+      "elapsedMs": 25394.3154,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213154,
+      "sha256": "5a35fbd4d8e11454ccd564c750fa58edc7f272db63cc79ef783950fc7f0ed3e6"
+    },
+    {
+      "file": "00506.png",
+      "elapsedMs": 25444.2375,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213289,
+      "sha256": "6dd7e5729954c42334babbb618f3d93a1f3d0ed8be762a78652e047d386a7baa"
+    },
+    {
+      "file": "00507.png",
+      "elapsedMs": 25495.4268,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212695,
+      "sha256": "d290ade880659ed8a27665061595675b7b6069ff8acc136af6eb33dc509b4322"
+    },
+    {
+      "file": "00508.png",
+      "elapsedMs": 25545.6675,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212574,
+      "sha256": "187a8dda462144b796e945ea4993d3aff3c20be7fe29bf4f510fe9c68bc29234"
+    },
+    {
+      "file": "00509.png",
+      "elapsedMs": 25595.5738,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212676,
+      "sha256": "3eda4561c3ef274d3b38298b514e2f7aaa6ff531cf870de5cb6a6ee1c0fc6d1c"
+    },
+    {
+      "file": "00510.png",
+      "elapsedMs": 25645.5699,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212475,
+      "sha256": "b17e345b0e478b36121d7259c41f9e95fd667e5674cee3f974760fc44fa543c8"
+    },
+    {
+      "file": "00511.png",
+      "elapsedMs": 25695.3374,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212339,
+      "sha256": "a97d567f3edfbf63d422c22587b2e44c38da407d04080dd90301e95a73b25cab"
+    },
+    {
+      "file": "00512.png",
+      "elapsedMs": 25745.7177,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212374,
+      "sha256": "9bb2c46115164839a93c2bdfe57a012c8eeebad24e624eb03c430548c9da57f0"
+    },
+    {
+      "file": "00513.png",
+      "elapsedMs": 25795.6299,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212463,
+      "sha256": "dfd1e08ed6702342fc2d02b9e4dbe3a65319fa76fdfa7a4993b82345024b9181"
+    },
+    {
+      "file": "00514.png",
+      "elapsedMs": 25845.6959,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213074,
+      "sha256": "dcdae564fea61586ca07cd7d8b703f2c2358b4eee797b5a0d2719bbe09d9af37"
+    },
+    {
+      "file": "00515.png",
+      "elapsedMs": 25895.5651,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213352,
+      "sha256": "8e78533c6445f62072d4d5bcf0b8c967b8a4c7ba1f9bec261d5480443236328e"
+    },
+    {
+      "file": "00516.png",
+      "elapsedMs": 25945.8558,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212844,
+      "sha256": "b199fb2c362f4f84e4a05f1afec6e8e0cf0225c6cb64dbb94f3cf1244b0f564e"
+    },
+    {
+      "file": "00517.png",
+      "elapsedMs": 25996.0041,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212676,
+      "sha256": "f16d5ccefc5c9745a578ffacd33369af6b44be7f2c5a88eaf09526a2ba97e47e"
+    },
+    {
+      "file": "00518.png",
+      "elapsedMs": 26046.9095,
+      "screen": "BadgeEditorScreen",
+      "bytes": 211814,
+      "sha256": "50b78c747a1233d6c32f469b9fb4783d8735934302bcbb6e3c003eac8db58f4b"
+    },
+    {
+      "file": "00519.png",
+      "elapsedMs": 26095.8551,
+      "screen": "BadgeEditorScreen",
+      "bytes": 211922,
+      "sha256": "ce8113c9cf21195bc8e63a8e113c55b41d984c516a2c49ff3ce84ce700cc3c97"
+    },
+    {
+      "file": "00520.png",
+      "elapsedMs": 26147.0119,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212408,
+      "sha256": "ea170ca47a6d7ba4f7799c13726038d15d9ef3ae78817a88b662c2ec49ec0a1c"
+    },
+    {
+      "file": "00521.png",
+      "elapsedMs": 26198.567,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212710,
+      "sha256": "fecfe1c5d63dc743aabafc4764f4e75bfa5a9195675a26fbac6b89ae6c9951ed"
+    },
+    {
+      "file": "00522.png",
+      "elapsedMs": 26248.7577,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212534,
+      "sha256": "fd1a70b53dc9864b0f25aacf9ef0867f994a9cad33a30298743b8341f353fb08"
+    },
+    {
+      "file": "00523.png",
+      "elapsedMs": 26298.5416,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212307,
+      "sha256": "8966784e47802e8407b4239db71fce22d86ac835bb74a4d9f03c3d27d3ad51ce"
+    },
+    {
+      "file": "00524.png",
+      "elapsedMs": 26348.5466,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212457,
+      "sha256": "5a8d38f821ee14927e2a7d6a912ff5e9f6b4f81dc7adad82fbebe8b2baa3d534"
+    },
+    {
+      "file": "00525.png",
+      "elapsedMs": 26398.4018,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212476,
+      "sha256": "10708f6cd824082c108348925903cf61225ccfe643d98602f139e5e4e9cde93c"
+    },
+    {
+      "file": "00526.png",
+      "elapsedMs": 26449.0006,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212155,
+      "sha256": "3444cb5283333adff986a8dc21b2567acbb232fb4ee6b372a0c51db9a9f09b6e"
+    },
+    {
+      "file": "00527.png",
+      "elapsedMs": 26498.9978,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212078,
+      "sha256": "6f108bd6ab776816eda5b3bf5474510c51ff860c33ccce6eb77b92dc6da2f4f4"
+    },
+    {
+      "file": "00528.png",
+      "elapsedMs": 26549.1347,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212197,
+      "sha256": "3351939cfe7e1f53e65fa4f66294b8678a6585b3aac9f526abb8cad7086e1453"
+    },
+    {
+      "file": "00529.png",
+      "elapsedMs": 26599.4683,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212481,
+      "sha256": "53926770d19bb0c95f191c9f2b175235d9211109df7408e638ce54a6cd7d8087"
+    },
+    {
+      "file": "00530.png",
+      "elapsedMs": 26649.3689,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212938,
+      "sha256": "649be5517dcd17ca1cdf5739fd99f877115c464c07731203849d5cc92bcd4ab1"
+    },
+    {
+      "file": "00531.png",
+      "elapsedMs": 26699.1849,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213033,
+      "sha256": "7fa5b6c089ceaa224a2b9daff90e2d1040c5488ba7f5f72e38da22d54a27ba09"
+    },
+    {
+      "file": "00532.png",
+      "elapsedMs": 26749.061,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212690,
+      "sha256": "e2dbc7d4908bf66db908b4d54b18e83819ba67aa999705705b8c14a6c0160cec"
+    },
+    {
+      "file": "00533.png",
+      "elapsedMs": 26799.4554,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212388,
+      "sha256": "eb6e0a6f5a77b661c65d91a799efedd270b201be2e15d7042853edcd275c1d3f"
+    },
+    {
+      "file": "00534.png",
+      "elapsedMs": 26849.7385,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212142,
+      "sha256": "9f5c325b5caf399b80d48338d9fc75130d4f66df01d7947aa4cc842fee35586a"
+    },
+    {
+      "file": "00535.png",
+      "elapsedMs": 26899.7149,
+      "screen": "BadgeEditorScreen",
+      "bytes": 211901,
+      "sha256": "1f9414aaf9c22aa564c550b17109bb6ca9a4e557dbe755a516fd5a171513dbec"
+    },
+    {
+      "file": "00536.png",
+      "elapsedMs": 26949.6881,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212814,
+      "sha256": "afdb6887ca5ddab73c6506ae645a09744edbd6ad2a698bb54a87db5c3b7ae244"
+    },
+    {
+      "file": "00537.png",
+      "elapsedMs": 27001.1083,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213127,
+      "sha256": "ae0f39217c85141c6489dcc3b21895ac88b7f4a5e74d8558e256aa62cb189044"
+    },
+    {
+      "file": "00538.png",
+      "elapsedMs": 27050.4833,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213711,
+      "sha256": "b18c9a569981c1a24d907993f367f6c757d219155794acf4e97085bd0bbf21a0"
+    },
+    {
+      "file": "00539.png",
+      "elapsedMs": 27100.9789,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213362,
+      "sha256": "9b1c622488d17a724fc1b539fa1a927c2e02c834d8061c89bd87d4a816152e17"
+    },
+    {
+      "file": "00540.png",
+      "elapsedMs": 27150.5874,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213639,
+      "sha256": "f8838958c1bc12e4b2d00ee8b776b44e766b0bf2dc4fb32c3b165e40b6e51d16"
+    },
+    {
+      "file": "00541.png",
+      "elapsedMs": 27200.705,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213362,
+      "sha256": "8ad9fd14aec98c9cd0f59d629cca075894f66917733c988fa1961362fe0931bd"
+    },
+    {
+      "file": "00542.png",
+      "elapsedMs": 27250.701,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212802,
+      "sha256": "65bfeee2d31da78cf4318a995933be77b0b5a349c4e640dcfcceb0812ae38bf3"
+    },
+    {
+      "file": "00543.png",
+      "elapsedMs": 27300.6095,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212795,
+      "sha256": "fc182254cd85b06352fe00c3609ed641bdf472d6981f0f8b8170ad4a9927bdb2"
+    },
+    {
+      "file": "00544.png",
+      "elapsedMs": 27350.4822,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213293,
+      "sha256": "8799b04f0df4e9b134347a6f99f3afb676e7fe9104241b5379ba3a6d098a33c5"
+    },
+    {
+      "file": "00545.png",
+      "elapsedMs": 27400.6141,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213783,
+      "sha256": "3d6548f7db1f42d5f67fad3a533cb9ab5f91d89dcba2fd6335336569bd1e217a"
+    },
+    {
+      "file": "00546.png",
+      "elapsedMs": 27450.5643,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213625,
+      "sha256": "4196db7bf42dd97ad1c7a43a5a0abdb14f9cf7511904e1c63923ccdeb70b3f0f"
+    },
+    {
+      "file": "00547.png",
+      "elapsedMs": 27500.757,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213401,
+      "sha256": "806f2e78499d4ff2d84932205921e25748bf6ab2ec83488ddc241a9397bab901"
+    },
+    {
+      "file": "00548.png",
+      "elapsedMs": 27551.1436,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213198,
+      "sha256": "a4e1fcf79d21ff77567f40c07fc0c9995aef1ce556d89d170443425475d2b03e"
+    },
+    {
+      "file": "00549.png",
+      "elapsedMs": 27601.8958,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212907,
+      "sha256": "d5e20530925e27f9741178903c10675cad55c1c352a834e62af90b15b394b7e1"
+    },
+    {
+      "file": "00550.png",
+      "elapsedMs": 27653.2629,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212309,
+      "sha256": "66183e9fa292c38281653c4a481b83ace73bf12b83e9d96140ba2f1e5e575fb2"
+    },
+    {
+      "file": "00551.png",
+      "elapsedMs": 27703.2774,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212248,
+      "sha256": "b262da6f4a694f6c1633ffb2628b10a8e41fd72aaa3b108a91d9fc49c747c8d4"
+    },
+    {
+      "file": "00552.png",
+      "elapsedMs": 27753.8322,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212289,
+      "sha256": "edc8dd4ac4dd2b400ddbd3f8f0d10254a34911d5981fbf701451b68ca528f9a2"
+    },
+    {
+      "file": "00553.png",
+      "elapsedMs": 27804.1493,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212792,
+      "sha256": "a1f26274b76f59c2ab6b6331f4cbd02d049636fb989697a73a75fde37bf8d0b7"
+    },
+    {
+      "file": "00554.png",
+      "elapsedMs": 27854.0156,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212986,
+      "sha256": "4427bc01dd2811abd1e1a0408927555a0bfd0f36ef6c9c180f8b27f0b6ea772f"
+    },
+    {
+      "file": "00555.png",
+      "elapsedMs": 27904.0572,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212771,
+      "sha256": "b94978d7c5755ab45f92955b33a8727d96ceb698b18a7c47a08d8ee8558e1a44"
+    },
+    {
+      "file": "00556.png",
+      "elapsedMs": 27954.0048,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212677,
+      "sha256": "ff68c7e9b0761cc96d2901cd9176ad55c52e332a556ac929955a5e31ca48f5be"
+    },
+    {
+      "file": "00557.png",
+      "elapsedMs": 28003.9959,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212985,
+      "sha256": "ce73e8dfffa19ff52895c691fc091911ded291c40d073835fb018bd0fe71179a"
+    },
+    {
+      "file": "00558.png",
+      "elapsedMs": 28054.8556,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212877,
+      "sha256": "879f55460548429c5ee944d2b8da4ab85c2653d8587ba2948a0045f77695d170"
+    },
+    {
+      "file": "00559.png",
+      "elapsedMs": 28105.2005,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212771,
+      "sha256": "124a5cacea5c0575b792250b72ae9e240be3d73abe6da34fbd69df0618587424"
+    },
+    {
+      "file": "00560.png",
+      "elapsedMs": 28155.1004,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212821,
+      "sha256": "d9a1f8562ed8102afad4b4c57f57d89c5190f1ce76e7239c469a30178468be7f"
+    },
+    {
+      "file": "00561.png",
+      "elapsedMs": 28205.2457,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212811,
+      "sha256": "c676bd74e50dedf2997fa07974626dcc27d08f8dccc8d0b0950f08674930b240"
+    },
+    {
+      "file": "00562.png",
+      "elapsedMs": 28255.0658,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213361,
+      "sha256": "2b396cd45ef41acdb360e47258f8c0f209d5f459cdbe178215a9d0dc990fdb65"
+    },
+    {
+      "file": "00563.png",
+      "elapsedMs": 28305.4966,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213238,
+      "sha256": "cc44a69e008806ae4742fdffb0fae4df4e38a315c7975c37484ff21f421475cc"
+    },
+    {
+      "file": "00564.png",
+      "elapsedMs": 28356.1565,
+      "screen": "BadgeEditorScreen",
+      "bytes": 212910,
+      "sha256": "0261e12e3a1c20a4ba7fb75b1059745a1b50301475c23d21875cef5d9fe6514e"
+    },
+    {
+      "file": "00565.png",
+      "elapsedMs": 28388.0522,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213201,
+      "sha256": "eb918e5ff9fd9ab2f046eb76691b2cb7e6bdbe257f6d5e7af39579eb2f7401f5"
+    },
+    {
+      "file": "00566.png",
+      "elapsedMs": 28438.7251,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213334,
+      "sha256": "2ef7f57cfa1eba6b1a5aa3c125d517a83f62697dc3f67b0a68d7ccb9bb0d5835"
+    },
+    {
+      "file": "00567.png",
+      "elapsedMs": 28488.7018,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213227,
+      "sha256": "ed1c92013f01e872e65d014a93f93302d5ebd809875723a3881015ddb415d645"
+    },
+    {
+      "file": "00568.png",
+      "elapsedMs": 28538.7238,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213850,
+      "sha256": "e1050639aba9e3a42e86fba6868f14421142c0d345ae27a2ace53e9ed8ee6ff9"
+    },
+    {
+      "file": "00569.png",
+      "elapsedMs": 28588.6322,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214417,
+      "sha256": "95297e9737d324953106dc29a15d193a82bab3b92249fc3644abba6ad5ceacd3"
+    },
+    {
+      "file": "00570.png",
+      "elapsedMs": 28639.0554,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214259,
+      "sha256": "0671b7ea410d7687defc8ea41db7dda84369cb577993ffaac3f712114a8e0bf6"
+    },
+    {
+      "file": "00571.png",
+      "elapsedMs": 28689.0728,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214135,
+      "sha256": "e9127286e4919e4568cf00946bac30ae75b4c7fd6ef83ca1c42a1722f47fe853"
+    },
+    {
+      "file": "00572.png",
+      "elapsedMs": 28738.985,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213962,
+      "sha256": "67e526277fd2f286a1138ce81aee4deb162d4fec1169af2053780d96768ad36d"
+    },
+    {
+      "file": "00573.png",
+      "elapsedMs": 28788.9081,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213995,
+      "sha256": "ea39a9f4ad5ba5835a82a71b9b6c99835647f6bad4e19d78d91a665a6169471b"
+    },
+    {
+      "file": "00574.png",
+      "elapsedMs": 28839.235,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213652,
+      "sha256": "a2fc8ba303b3cd81f0c9d8311eca24513e2e4df54a5d7278b71c9b75de761a0b"
+    },
+    {
+      "file": "00575.png",
+      "elapsedMs": 28889.4122,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214235,
+      "sha256": "d4ed95ec323cdf838ab061b8ae547907dadce58c3561d8a721d65c3d942585cf"
+    },
+    {
+      "file": "00576.png",
+      "elapsedMs": 28939.2151,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214461,
+      "sha256": "a62e8759419279e1759f02efefcb98b1ba5a48ad99acb62d52a734c349bb6eaf"
+    },
+    {
+      "file": "00577.png",
+      "elapsedMs": 28989.4157,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214704,
+      "sha256": "2da33cf397c2d9d99831d5ffe823b06c9a5a048fb4acf905a8e82bea4293e483"
+    },
+    {
+      "file": "00578.png",
+      "elapsedMs": 29039.9554,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214956,
+      "sha256": "9f82ce54a09e363040ce3374c935e70571e9764555b90b27756be8f040767490"
+    },
+    {
+      "file": "00579.png",
+      "elapsedMs": 29090.0913,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214683,
+      "sha256": "2774d528d61439feaaa7cf5ed5ccdfec4a1f74d6be4ca66d6b64513e106dbbf6"
+    },
+    {
+      "file": "00580.png",
+      "elapsedMs": 29139.6491,
+      "screen": "BadgeEditorScreen",
+      "bytes": 214294,
+      "sha256": "5184a92f5c4f1c2137a88f755548abbef3b48337d8d3002aa801962e79b22d7b"
+    },
+    {
+      "file": "00581.png",
+      "elapsedMs": 29189.5915,
+      "screen": "BadgeEditorScreen",
+      "bytes": 213637,
+      "sha256": "7713f0dff5200e9b67c915eeea2ff9eeb8cdd9f5fab4c38ed84d11560a174a8d"
+    }
+  ]
+}

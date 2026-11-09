@@ -1,0 +1,36 @@
+{
+  "schema": "dochi.warfare.gimmicks.v6",
+  "title": "",
+  "origin": [
+    0.0,
+    -60.0,
+    -16.0
+  ],
+  "steps": [
+    {
+      "id": "9aca4b53-da46-4cd9-af43-ace1f73e1aa9",
+      "at_tick": 40,
+      "type": "npc_move",
+      "lifetime_ticks": 600,
+      "npc_move": {
+        "source": "area",
+        "clone": "",
+        "count": 4,
+        "start": [
+          -8.0,
+          -60.0,
+          -6.0
+        ],
+        "destination": [
+          -8.0,
+          -59.999999999999986,
+          11.999999999999964
+        ],
+        "radius": 16.0,
+        "spacing": 2.0,
+        "speed": 5.0,
+        "faction": ""
+      }
+    }
+  ]
+}

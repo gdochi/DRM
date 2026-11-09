@@ -1,0 +1,445 @@
+[
+  {
+    "id": "badge-editor-saved",
+    "status": "captured_in_game",
+    "screenClass": "net.hodu.cobblenpc.client.BadgeEditorScreen",
+    "actions": [
+      "wait:40",
+      "tutorial:badge-enable-fixture",
+      "tutorial:caption:1. Copy the sample set, then give your league and badge a name.",
+      "gif:start:badge-create",
+      "tutorial:input-label:Set Name\u003dMeadow League",
+      "wait:25",
+      "tutorial:input-label:Name\u003dMeadow Badge",
+      "wait:30",
+      "tutorial:caption:Basic: choose Badge or Trophy, front and back textures, and a description.",
+      "wait:40",
+      "tutorial:click:Save",
+      "wait:45",
+      "tutorial:badge-verify",
+      "tutorial:dump:badge-editor-saved",
+      "snapshot:badge-editor-saved"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "badge-create",
+    "screenClass": "net.hodu.cobblenpc.client.BadgeEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:badges",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "wait:40",
+      "tutorial:badge-enable-fixture",
+      "tutorial:caption:1. Copy the sample set, then give your league and badge a name.",
+      "gif:start:badge-create",
+      "tutorial:input-label:Set Name\u003dMeadow League",
+      "wait:25",
+      "tutorial:input-label:Name\u003dMeadow Badge",
+      "wait:30",
+      "tutorial:caption:Basic: choose Badge or Trophy, front and back textures, and a description.",
+      "wait:40",
+      "tutorial:click:Save",
+      "wait:45",
+      "tutorial:badge-verify",
+      "tutorial:dump:badge-editor-saved",
+      "snapshot:badge-editor-saved",
+      "wait:25",
+      "gif:stop",
+      "tutorial:off"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Set",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save Set As Copy",
+        "active": true
+      },
+      {
+        "label": "Reset Draft",
+        "active": true
+      },
+      {
+        "label": "Select Set",
+        "active": true
+      },
+      {
+        "label": "Basic",
+        "active": true
+      },
+      {
+        "label": "Display",
+        "active": true
+      },
+      {
+        "label": "Presentation",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Set Name",
+        "active": true
+      },
+      {
+        "label": "Delete Set",
+        "active": true
+      },
+      {
+        "label": "Add Count",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Search",
+        "active": true
+      },
+      {
+        "label": "Badges and trophies",
+        "active": true
+      },
+      {
+        "label": "Name",
+        "active": true
+      },
+      {
+        "label": "Badge",
+        "active": true
+      },
+      {
+        "label": "Front Texture",
+        "active": true
+      },
+      {
+        "label": "Front Texture",
+        "active": true
+      },
+      {
+        "label": "Back Texture (empty uses front)",
+        "active": true
+      },
+      {
+        "label": "Back Texture (empty uses front)",
+        "active": true
+      },
+      {
+        "label": "Enabled",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "badge-presentation-bindings",
+    "status": "captured_in_game",
+    "screenClass": "net.hodu.cobblenpc.client.BadgeEditorScreen",
+    "actions": [
+      "tutorial:caption:2. Acquisition and selection have independent presentations.",
+      "gif:start:badge-presentation",
+      "tutorial:click:Presentation",
+      "wait:30",
+      "snapshot:badge-presentation-bindings"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "badge-presentation-editor",
+    "status": "captured_in_game",
+    "screenClass": "net.hodu.cobblenpc.client.BadgePresentationEditorScreen",
+    "actions": [
+      "tutorial:caption:2. Acquisition and selection have independent presentations.",
+      "gif:start:badge-presentation",
+      "tutorial:click:Presentation",
+      "wait:30",
+      "snapshot:badge-presentation-bindings",
+      "next-screen:BadgePresentationEditorScreen",
+      "tutorial:click-first:Copy and Edit",
+      "wait:40",
+      "tutorial:caption:Copy and Edit keeps the shared preset. Name and save your own version.",
+      "tutorial:input-label:Name\u003dMeadow Shine",
+      "wait:30",
+      "tutorial:click:Restart",
+      "wait:90",
+      "tutorial:click:Save",
+      "wait:40",
+      "tutorial:dump:badge-presentation-saved",
+      "snapshot:badge-presentation-editor"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "badge-presentation",
+    "screenClass": "net.hodu.cobblenpc.client.BadgeEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "tutorial:caption:2. Acquisition and selection have independent presentations.",
+      "gif:start:badge-presentation",
+      "tutorial:click:Presentation",
+      "wait:30",
+      "snapshot:badge-presentation-bindings",
+      "next-screen:BadgePresentationEditorScreen",
+      "tutorial:click-first:Copy and Edit",
+      "wait:40",
+      "tutorial:caption:Copy and Edit keeps the shared preset. Name and save your own version.",
+      "tutorial:input-label:Name\u003dMeadow Shine",
+      "wait:30",
+      "tutorial:click:Restart",
+      "wait:90",
+      "tutorial:click:Save",
+      "wait:40",
+      "tutorial:dump:badge-presentation-saved",
+      "snapshot:badge-presentation-editor",
+      "tutorial:click:Cancel",
+      "wait:30",
+      "tutorial:click:Save",
+      "wait:40",
+      "tutorial:badge-verify",
+      "wait:20",
+      "gif:stop",
+      "tutorial:off"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": true
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New Set",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save Set As Copy",
+        "active": true
+      },
+      {
+        "label": "Reset Draft",
+        "active": true
+      },
+      {
+        "label": "Select Set",
+        "active": true
+      },
+      {
+        "label": "Basic",
+        "active": true
+      },
+      {
+        "label": "Display",
+        "active": true
+      },
+      {
+        "label": "Presentation",
+        "active": true
+      },
+      {
+        "label": "GUI",
+        "active": true
+      },
+      {
+        "label": "Add Count",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": true
+      },
+      {
+        "label": "Search",
+        "active": true
+      },
+      {
+        "label": "Badges and trophies",
+        "active": true
+      },
+      {
+        "label": "Editing: This Badge",
+        "active": true
+      },
+      {
+        "label": "Meadow Shine",
+        "active": true
+      },
+      {
+        "label": "Presentation Library",
+        "active": true
+      },
+      {
+        "label": "Edit",
+        "active": true
+      },
+      {
+        "label": "Copy and Edit",
+        "active": true
+      },
+      {
+        "label": "Preview Acquisition",
+        "active": true
+      },
+      {
+        "label": "Use Set Default",
+        "active": true
+      },
+      {
+        "label": "Presentation Library",
+        "active": true
+      },
+      {
+        "label": "Edit",
+        "active": true
+      },
+      {
+        "label": "Copy and Edit",
+        "active": true
+      },
+      {
+        "label": "Preview Selection",
+        "active": true
+      },
+      {
+        "label": "Acquisition Display: Set Default",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "badge-acquired",
+    "status": "captured_in_game",
+    "screenClass": "world",
+    "actions": [
+      "clear:chat",
+      "tutorial:caption:3. Test the saved badge with an operator give command.",
+      "gif:start:badge-collection",
+      "command:drm badge give @s Meadow Badge",
+      "wait:210",
+      "tutorial:badge-verify",
+      "snapshot:badge-acquired"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "badge-collection",
+    "actualScreenAtFailure": "net.hodu.cobblenpc.client.BadgeCaseScreen",
+    "attemptedActions": [
+      "clear:chat",
+      "tutorial:caption:3. Test the saved badge with an operator give command.",
+      "gif:start:badge-collection",
+      "command:drm badge give @s Meadow Badge",
+      "wait:210",
+      "tutorial:badge-verify",
+      "snapshot:badge-acquired",
+      "next-screen:BadgeCaseScreen",
+      "command:badges"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Unexpected screen for badge-collection: net.hodu.cobblenpc.client.BadgeCaseScreen@17ad3008"
+  },
+  {
+    "id": "pokemon-alpha",
+    "actualScreenAtFailure": "net.hodu.cobblenpc.client.CobbleTrainerEditorScreen",
+    "screenClass": "net.hodu.cobblenpc.client.CobbleTrainerEditorScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Back",
+      "Forward",
+      "Editors",
+      "Create New",
+      "Load",
+      "Save",
+      "Save As",
+      "Reset",
+      "\u003e Pokemon Party",
+      "Battle Config",
+      "Add",
+      "Delete",
+      "Generate Party",
+      "Battle Item Inventory",
+      "General Item Inventory",
+      "\u003e. Bulbasaur  Lv.5",
+      "Basic",
+      "Stats",
+      "Moves",
+      "Bulbasaur",
+      "Level",
+      "None",
+      "None",
+      "Random",
+      "Shiny",
+      "Random nature",
+      "Alpha",
+      "Automatic ability",
+      "No held item",
+      "Poké Ball",
+      "Default"
+    ],
+    "attemptedActions": [
+      "tutorial:caption:4. Pokemon Party: choose a slot, then edit its Appearance.",
+      "gif:start:pokemon-alpha",
+      "Appearance"
+    ],
+    "status": "failed",
+    "error": "java.lang.NoSuchFieldException: buttons"
+  }
+]

@@ -1,0 +1,470 @@
+[
+  {
+    "action": "fixture",
+    "nanoTime": 17811528140300
+  },
+  {
+    "action": "begin:dwe-workspace",
+    "nanoTime": 17821623464500
+  },
+  {
+    "action": "note:새 문서로 시작|상단 새 문서 아이콘으로 빈 타임라인을 만듭니다.",
+    "nanoTime": 17822223754800
+  },
+  {
+    "action": "press:dwe.topbar.new",
+    "nanoTime": 17825670508700
+  },
+  {
+    "action": "note:목록·월드·속성·시간|왼쪽은 도구와 이벤트, 가운데는 실제 월드, 오른쪽은 선택한 이벤트 속성입니다.",
+    "nanoTime": 17828870411100
+  },
+  {
+    "action": "note:패널 접고 다시 펴기|오른쪽 패널의 화살표로 월드 작업 공간을 넓힐 수 있습니다.",
+    "nanoTime": 17834921840500
+  },
+  {
+    "action": "fold:INSPECTOR",
+    "nanoTime": 17838370362300
+  },
+  {
+    "action": "fold:INSPECTOR",
+    "nanoTime": 17841576634700
+  },
+  {
+    "action": "note:분할선으로 크기 조절|목록과 시간 패널의 경계를 드래그합니다.",
+    "nanoTime": 17844774113300
+  },
+  {
+    "action": "split:LIST",
+    "nanoTime": 17848222218500
+  },
+  {
+    "action": "split:TIMELINE",
+    "nanoTime": 17850026063100
+  },
+  {
+    "action": "note:시점 이동과 확대|가운데 버튼 드래그는 이동, 오른쪽 드래그는 회전, 휠은 줌입니다.",
+    "nanoTime": 17854413593700
+  },
+  {
+    "action": "camera:pan",
+    "nanoTime": 17857868099400
+  },
+  {
+    "action": "camera:look",
+    "nanoTime": 17859675476700
+  },
+  {
+    "action": "camera:zoom",
+    "nanoTime": 17861468747200
+  },
+  {
+    "action": "begin:dwe-point",
+    "nanoTime": 17870167395400
+  },
+  {
+    "action": "note:빈 문서와 점 폭격|왼쪽 Point bombing을 선택합니다.",
+    "nanoTime": 17870772366800
+  },
+  {
+    "action": "press:dwe.topbar.new",
+    "nanoTime": 17874212861300
+  },
+  {
+    "action": "tool:point",
+    "nanoTime": 17874812317500
+  },
+  {
+    "action": "note:지면 한 곳을 클릭|블록 표면을 클릭하면 목표와 첫 이벤트가 생깁니다.",
+    "nanoTime": 17878022428400
+  },
+  {
+    "action": "place:0,0",
+    "nanoTime": 17881473009600
+  },
+  {
+    "action": "note:첫 투하를 2초에 예약|Start (seconds)는 명중 시각이 아니라 첫 투하 시각입니다.",
+    "nanoTime": 17884668736400
+  },
+  {
+    "action": "input:start_seconds\u003d2",
+    "nanoTime": 17888125743000
+  },
+  {
+    "action": "note:고도와 임시 수명|고도 96블록, 수명 30초로 설정합니다.",
+    "nanoTime": 17891313439600
+  },
+  {
+    "action": "input:altitude\u003d96",
+    "nanoTime": 17894764424200
+  },
+  {
+    "action": "begin:dwe-corridors",
+    "nanoTime": 17899667170000
+  },
+  {
+    "action": "note:선 폭격 도구|Line bombing을 골라 시작점에서 끝점까지 드래그합니다.",
+    "nanoTime": 17900268971200
+  },
+  {
+    "action": "press:dwe.topbar.new",
+    "nanoTime": 17903728652800
+  },
+  {
+    "action": "tool:line",
+    "nanoTime": 17904314293300
+  },
+  {
+    "action": "place:-7,-3,-7,13",
+    "nanoTime": 17904917158800
+  },
+  {
+    "action": "note:개수와 간격|4발·0.5초 간격을 설정합니다. 마지막 투하까지 1.5초가 더 걸립니다.",
+    "nanoTime": 17909317365100
+  },
+  {
+    "action": "input:bomb_count\u003d4",
+    "nanoTime": 17912762450500
+  },
+  {
+    "action": "input:interval_seconds\u003d0.5",
+    "nanoTime": 17913364506300
+  },
+  {
+    "action": "begin:dwe-vehicles",
+    "nanoTime": 17918267276000
+  },
+  {
+    "action": "note:차량 지원 도구|Vehicle support를 골라 출발점에서 지원 지점까지 드래그합니다.",
+    "nanoTime": 17918868826800
+  },
+  {
+    "action": "press:dwe.topbar.new",
+    "nanoTime": 17922314928400
+  },
+  {
+    "action": "tool:support",
+    "nanoTime": 17922916219200
+  },
+  {
+    "action": "place:0,-6,0,12",
+    "nanoTime": 17923517844600
+  },
+  {
+    "action": "note:차량과 대수|기본 M1A2로 1대를 먼저 시험합니다. 실제 차량 종류는 선택기에서 고릅니다.",
+    "nanoTime": 17927925494600
+  },
+  {
+    "action": "input:count\u003d1",
+    "nanoTime": 17931370940600
+  },
+  {
+    "action": "note:출발 시각과 간격|3초에 출발, 차량 간격은 12블록으로 지정합니다.",
+    "nanoTime": 17934565332700
+  },
+  {
+    "action": "input:start_seconds\u003d3",
+    "nanoTime": 17938018871100
+  },
+  {
+    "action": "input:spacing\u003d12",
+    "nanoTime": 17938611824200
+  },
+  {
+    "action": "begin:dwe-fire",
+    "nanoTime": 17943527829100
+  },
+  {
+    "action": "note:사격 목표와 접근 방향|Fire support를 고르고 목표에서 드래그해 접근 방향을 정합니다.",
+    "nanoTime": 17944112125300
+  },
+  {
+    "action": "press:dwe.topbar.new",
+    "nanoTime": 17947562443100
+  },
+  {
+    "action": "tool:fire",
+    "nanoTime": 17948175764300
+  },
+  {
+    "action": "place:0,5,0,15",
+    "nanoTime": 17948776450000
+  },
+  {
+    "action": "note:사격 상한|발사 횟수는 20, 사격 시간은 3초로 정합니다.",
+    "nanoTime": 17953167866300
+  },
+  {
+    "action": "input:rounds\u003d20",
+    "nanoTime": 17956613734600
+  },
+  {
+    "action": "begin:dwe-npcs",
+    "nanoTime": 17961517369000
+  },
+  {
+    "action": "note:NPC 출발점과 목적지|NPC deployment로 이동 구간을 그립니다.",
+    "nanoTime": 17962120615600
+  },
+  {
+    "action": "press:dwe.topbar.new",
+    "nanoTime": 17965570928400
+  },
+  {
+    "action": "tool:npc",
+    "nanoTime": 17966176040000
+  },
+  {
+    "action": "place:-8,-6,-8,12",
+    "nanoTime": 17966776375100
+  },
+  {
+    "action": "note:기존 NPC 영역 선택|클론이 없는 예제라 Area source로 시작합니다. 실행 시점의 주변 NPC를 고릅니다.",
+    "nanoTime": 17971178358000
+  },
+  {
+    "action": "input:npc_count\u003d4",
+    "nanoTime": 17974619518100
+  },
+  {
+    "action": "input:npc_radius\u003d16",
+    "nanoTime": 17975221450200
+  },
+  {
+    "action": "begin:dwe-timing",
+    "nanoTime": 17980114019000
+  },
+  {
+    "action": "note:첫 번째 차량 지원|차량 이벤트를 배치하고 시작 시각을 2초로 정합니다.",
+    "nanoTime": 17980717632200
+  },
+  {
+    "action": "press:dwe.topbar.new",
+    "nanoTime": 17984175627000
+  },
+  {
+    "action": "tool:support",
+    "nanoTime": 17984762936000
+  },
+  {
+    "action": "place:0,-6,0,12",
+    "nanoTime": 17985364159300
+  },
+  {
+    "action": "input:start_seconds\u003d2",
+    "nanoTime": 17987172421000
+  },
+  {
+    "action": "note:두 번째 이벤트 추가|점 폭격을 5초에 배치합니다. 종류별 시간 행이 나뉩니다.",
+    "nanoTime": 17990375812300
+  },
+  {
+    "action": "tool:point",
+    "nanoTime": 17993821275900
+  },
+  {
+    "action": "place:8,5",
+    "nanoTime": 17994425563000
+  },
+  {
+    "action": "input:start_seconds\u003d5",
+    "nanoTime": 17995027200000
+  },
+  {
+    "action": "note:마커 드래그|선택한 폭격 마커를 약 7초 위치로 옮깁니다.",
+    "nanoTime": 17998224266900
+  },
+  {
+    "action": "timeline:140",
+    "nanoTime": 18001672916200
+  },
+  {
+    "action": "note:복제와 실행 취소|Duplicate로 같은 설정을 추가하고 Ctrl+Z·Ctrl+Y로 비교합니다.",
+    "nanoTime": 18006065097700
+  },
+  {
+    "action": "press:dwe.gimmick.duplicate",
+    "nanoTime": 18009524551900
+  },
+  {
+    "action": "key:90,2",
+    "nanoTime": 18010125351500
+  },
+  {
+    "action": "key:89,2",
+    "nanoTime": 18010711554000
+  },
+  {
+    "action": "verify:timing",
+    "nanoTime": 18011312862800
+  },
+  {
+    "action": "begin:dwe-center",
+    "nanoTime": 18020023701700
+  },
+  {
+    "action": "note:이동 구간 하나 배치|차량 출발점과 도착점을 먼저 만듭니다.",
+    "nanoTime": 18020622041800
+  },
+  {
+    "action": "press:dwe.topbar.new",
+    "nanoTime": 18024067263700
+  },
+  {
+    "action": "tool:support",
+    "nanoTime": 18024668754700
+  },
+  {
+    "action": "place:0,-6,0,12",
+    "nanoTime": 18025269652000
+  },
+  {
+    "action": "note:상대좌표의 중심 이동|Center를 누르고 X를 8로 바꾸면 전체 구간이 함께 이동합니다.",
+    "nanoTime": 18029667543800
+  },
+  {
+    "action": "press:dwe.world.center",
+    "nanoTime": 18033111959500
+  },
+  {
+    "action": "input:origin_x\u003d8",
+    "nanoTime": 18033713790000
+  },
+  {
+    "action": "begin:dwe-files",
+    "nanoTime": 18038621948700
+  },
+  {
+    "action": "note:차량 지원 초안|새 문서에서 지원 구간과 2초 시작 시각을 만듭니다.",
+    "nanoTime": 18039223736300
+  },
+  {
+    "action": "press:dwe.topbar.new",
+    "nanoTime": 18042672295000
+  },
+  {
+    "action": "tool:support",
+    "nanoTime": 18043275589300
+  },
+  {
+    "action": "place:0,-6,0,12",
+    "nanoTime": 18043877623900
+  },
+  {
+    "action": "input:start_seconds\u003d2",
+    "nanoTime": 18045666433500
+  },
+  {
+    "action": "note:문서 제목|화면용 제목과 저장 파일 이름은 따로 정합니다.",
+    "nanoTime": 18048877886100
+  },
+  {
+    "action": "input:title\u003dRoad reinforcement",
+    "nanoTime": 18052323092900
+  },
+  {
+    "action": "note:다른 이름으로 저장|Save As에서 tutorial_support를 입력합니다.",
+    "nanoTime": 18055516151200
+  },
+  {
+    "action": "press:dwe.topbar.save_as",
+    "nanoTime": 18058977825300
+  },
+  {
+    "action": "query\u003dtutorial_support",
+    "nanoTime": 18059578383400
+  },
+  {
+    "action": "note:서버 저장 완료 확인|저장 확인 뒤 문서 이름과 변경 표시를 확인합니다.",
+    "nanoTime": 18062764823100
+  },
+  {
+    "action": "file-action",
+    "nanoTime": 18066227129400
+  },
+  {
+    "action": "verify:saved",
+    "nanoTime": 18071415592700
+  },
+  {
+    "action": "note:불러오기와 검색|Load에서 이름을 검색하고 항목을 선택합니다.",
+    "nanoTime": 18074614654100
+  },
+  {
+    "action": "press:dwe.topbar.load",
+    "nanoTime": 18078078258300
+  },
+  {
+    "action": "query\u003dtutorial_support",
+    "nanoTime": 18081273743300
+  },
+  {
+    "action": "file-row",
+    "nanoTime": 18081875743700
+  },
+  {
+    "action": "note:선택한 문서 열기|Load를 눌러 저장한 배치를 다시 확인합니다.",
+    "nanoTime": 18088162986900
+  },
+  {
+    "action": "file-action",
+    "nanoTime": 18091616750300
+  },
+  {
+    "action": "verify:loaded",
+    "nanoTime": 18095322480500
+  },
+  {
+    "action": "begin:dwe-simulation",
+    "nanoTime": 18104025455400
+  },
+  {
+    "action": "note:차량 한 대로 시험|새 문서에서 짧은 차량 경로를 배치하고 1초에 시작합니다.",
+    "nanoTime": 18104614503300
+  },
+  {
+    "action": "press:dwe.topbar.new",
+    "nanoTime": 18108066841000
+  },
+  {
+    "action": "tool:support",
+    "nanoTime": 18108673196800
+  },
+  {
+    "action": "place:0,-6,0,10",
+    "nanoTime": 18109274492100
+  },
+  {
+    "action": "input:start_seconds\u003d1",
+    "nanoTime": 18111067129900
+  },
+  {
+    "action": "note:시뮬레이션 시작|Simulation은 저장 전 초안도 시험합니다. 실제 실행은 별도 명령입니다.",
+    "nanoTime": 18114264398800
+  },
+  {
+    "action": "press:dwe.preview.start",
+    "nanoTime": 18117716958200
+  },
+  {
+    "action": "verify:simulation-active",
+    "nanoTime": 18127923272700
+  },
+  {
+    "action": "note:실제 차량과 경과 시간|임시 차량이 월드에서 움직이는지 관찰합니다.",
+    "nanoTime": 18131118631700
+  },
+  {
+    "action": "note:Stop으로 종료|Stop을 누르면 이 시뮬레이션의 임시 지원이 정리됩니다.",
+    "nanoTime": 18145770838400
+  },
+  {
+    "action": "press:dwe.simulation.stop",
+    "nanoTime": 18149222117900
+  },
+  {
+    "action": "verify:simulation-stopped",
+    "nanoTime": 18153920054000
+  }
+]

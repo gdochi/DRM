@@ -1,0 +1,168 @@
+{
+  "recordings": 10,
+  "durationMs": 409088.9625,
+  "steps": 46,
+  "assets": 30,
+  "assetHashesAndBuildBytes": true,
+  "authoredValues": true,
+  "serverSaveEqualsReload": true,
+  "simulation": {
+    "samples": 160,
+    "movementBlocks": 35.38097405951849,
+    "finalTemporaryActors": 0,
+    "roadPreserved": true
+  },
+  "views": [
+    {
+      "locale": "ko",
+      "route": "expanded-support-timeline",
+      "width": 1440
+    },
+    {
+      "locale": "ko",
+      "route": "expanded-support-timeline",
+      "width": 390
+    },
+    {
+      "locale": "ko",
+      "route": "expanded-support-actions",
+      "width": 1440
+    },
+    {
+      "locale": "ko",
+      "route": "expanded-support-actions",
+      "width": 390
+    },
+    {
+      "locale": "ko",
+      "route": "expanded-support-run",
+      "width": 1440
+    },
+    {
+      "locale": "ko",
+      "route": "expanded-support-run",
+      "width": 390
+    },
+    {
+      "locale": "en",
+      "route": "expanded-support-timeline",
+      "width": 1440
+    },
+    {
+      "locale": "en",
+      "route": "expanded-support-timeline",
+      "width": 390
+    },
+    {
+      "locale": "en",
+      "route": "expanded-support-actions",
+      "width": 1440
+    },
+    {
+      "locale": "en",
+      "route": "expanded-support-actions",
+      "width": 390
+    },
+    {
+      "locale": "en",
+      "route": "expanded-support-run",
+      "width": 1440
+    },
+    {
+      "locale": "en",
+      "route": "expanded-support-run",
+      "width": 390
+    },
+    {
+      "locale": "pt",
+      "route": "expanded-support-timeline",
+      "width": 1440
+    },
+    {
+      "locale": "pt",
+      "route": "expanded-support-timeline",
+      "width": 390
+    },
+    {
+      "locale": "pt",
+      "route": "expanded-support-actions",
+      "width": 1440
+    },
+    {
+      "locale": "pt",
+      "route": "expanded-support-actions",
+      "width": 390
+    },
+    {
+      "locale": "pt",
+      "route": "expanded-support-run",
+      "width": 1440
+    },
+    {
+      "locale": "pt",
+      "route": "expanded-support-run",
+      "width": 390
+    },
+    {
+      "locale": "es",
+      "route": "expanded-support-timeline",
+      "width": 1440
+    },
+    {
+      "locale": "es",
+      "route": "expanded-support-timeline",
+      "width": 390
+    },
+    {
+      "locale": "es",
+      "route": "expanded-support-actions",
+      "width": 1440
+    },
+    {
+      "locale": "es",
+      "route": "expanded-support-actions",
+      "width": 390
+    },
+    {
+      "locale": "es",
+      "route": "expanded-support-run",
+      "width": 1440
+    },
+    {
+      "locale": "es",
+      "route": "expanded-support-run",
+      "width": 390
+    },
+    {
+      "locale": "fr",
+      "route": "expanded-support-timeline",
+      "width": 1440
+    },
+    {
+      "locale": "fr",
+      "route": "expanded-support-timeline",
+      "width": 390
+    },
+    {
+      "locale": "fr",
+      "route": "expanded-support-actions",
+      "width": 1440
+    },
+    {
+      "locale": "fr",
+      "route": "expanded-support-actions",
+      "width": 390
+    },
+    {
+      "locale": "fr",
+      "route": "expanded-support-run",
+      "width": 1440
+    },
+    {
+      "locale": "fr",
+      "route": "expanded-support-run",
+      "width": 390
+    }
+  ],
+  "errors": []
+}

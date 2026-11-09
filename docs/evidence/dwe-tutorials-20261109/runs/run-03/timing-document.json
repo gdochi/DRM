@@ -1,0 +1,78 @@
+{
+  "schema": "dochi.warfare.gimmicks.v6",
+  "title": "",
+  "origin": [
+    0.0,
+    -60.0,
+    -16.0
+  ],
+  "steps": [
+    {
+      "id": "5208fbab-05d7-44d7-82ed-de7e87be79b4",
+      "at_tick": 40,
+      "type": "vehicle_support",
+      "lifetime_ticks": 3600,
+      "vehicle_support": {
+        "vehicle": "superbwarfare:m_1a_2",
+        "count": 1,
+        "start": [
+          0.0,
+          -60.0,
+          -6.0
+        ],
+        "destination": [
+          0.0,
+          -60.0,
+          12.000000000000007
+        ],
+        "spacing": 12.0,
+        "faction": "0",
+        "guard_radius": 32.0
+      }
+    },
+    {
+      "id": "952cb2e3-d193-47ea-9c30-3f17ecd72218",
+      "at_tick": 140,
+      "type": "bombard",
+      "lifetime_ticks": 1200,
+      "bombard": {
+        "aircraft": "superbwarfare:a_10a",
+        "payload": "superbwarfare:mk_82",
+        "shape": "point",
+        "position": [
+          8.0,
+          -60.0,
+          5.0
+        ],
+        "heading": 0.0,
+        "length": 96.0,
+        "width": 32.0,
+        "attack": "LEVEL",
+        "altitude": 120.0,
+        "interval": 10
+      }
+    },
+    {
+      "id": "f11114b3-9664-4954-bee0-36f0331c12a6",
+      "at_tick": 140,
+      "type": "bombard",
+      "lifetime_ticks": 1200,
+      "bombard": {
+        "aircraft": "superbwarfare:a_10a",
+        "payload": "superbwarfare:mk_82",
+        "shape": "point",
+        "position": [
+          8.0,
+          -60.0,
+          5.0
+        ],
+        "heading": 0.0,
+        "length": 96.0,
+        "width": 32.0,
+        "attack": "LEVEL",
+        "altitude": 120.0,
+        "interval": 10
+      }
+    }
+  ]
+}

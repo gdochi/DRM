@@ -1,0 +1,1519 @@
+[
+  {
+    "id": "fixture",
+    "screenClass": "world",
+    "status": "captured_in_game",
+    "actions": [
+      "dwe:fixture",
+      "wait:80"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-point",
+    "screenClass": "net.dochi.warfare.vehicle.client.GimmickEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:50",
+      "gif:start:dwe-point",
+      "dwe:begin:dwe-point",
+      "dwe:note:빈 문서와 점 폭격|왼쪽 Point bombing을 선택합니다.",
+      "wait:45",
+      "dwe:press:dwe.topbar.new",
+      "dwe:tool:point",
+      "wait:40",
+      "dwe:note:지면 한 곳을 클릭|블록 표면을 클릭하면 목표와 첫 이벤트가 생깁니다.",
+      "wait:45",
+      "dwe:place:0,0",
+      "wait:40",
+      "dwe:note:첫 투하를 2초에 예약|Start (seconds)는 명중 시각이 아니라 첫 투하 시각입니다.",
+      "wait:45",
+      "dwe:input:start_seconds\u003d2",
+      "wait:40",
+      "dwe:note:고도와 임시 수명|고도 96블록, 수명 30초로 설정합니다.",
+      "wait:45",
+      "dwe:input:altitude\u003d96",
+      "dwe:input:lifetime_seconds\u003d30",
+      "wait:40",
+      "dwe:note:정밀 좌표와 피해값|Advanced에서 좌표를 확인합니다. 비어 있는 피해값은 원본 값을 유지합니다.",
+      "wait:45",
+      "dwe:press:dwe.dock.advanced",
+      "dwe:input:explosion_damage\u003d20",
+      "dwe:verify:point",
+      "wait:40",
+      "gif:stop"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Load Existing",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Gimmick Editor",
+        "active": true
+      },
+      {
+        "label": "Relative coordinates",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Simulation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "←",
+        "active": true
+      },
+      {
+        "label": "→",
+        "active": true
+      },
+      {
+        "label": "↓",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "F",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "A-10A",
+        "active": true
+      },
+      {
+        "label": "MK-82",
+        "active": true
+      },
+      {
+        "label": "Point",
+        "active": true
+      },
+      {
+        "label": "Level",
+        "active": true
+      },
+      {
+        "label": "X",
+        "active": true
+      },
+      {
+        "label": "Y",
+        "active": true
+      },
+      {
+        "label": "Z",
+        "active": true
+      },
+      {
+        "label": "Heading",
+        "active": true
+      },
+      {
+        "label": "Length",
+        "active": false
+      },
+      {
+        "label": "Width",
+        "active": false
+      },
+      {
+        "label": "Altitude",
+        "active": true
+      },
+      {
+        "label": "Interval (ticks)",
+        "active": false
+      },
+      {
+        "label": "Bombs / aircraft",
+        "active": false
+      },
+      {
+        "label": "Explosion damage (HP)",
+        "active": true
+      },
+      {
+        "label": "Direct damage (HP)",
+        "active": true
+      },
+      {
+        "label": "Lifetime (ticks)",
+        "active": true
+      },
+      {
+        "label": "Basic",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-corridors",
+    "screenClass": "net.dochi.warfare.vehicle.client.GimmickEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:50",
+      "gif:start:dwe-corridors",
+      "dwe:begin:dwe-corridors",
+      "dwe:note:선 폭격 도구|Line bombing을 골라 시작점에서 끝점까지 드래그합니다.",
+      "wait:45",
+      "dwe:press:dwe.topbar.new",
+      "dwe:tool:line",
+      "dwe:place:-7,-3,-7,13",
+      "wait:40",
+      "dwe:note:개수와 간격|4발·0.5초 간격을 설정합니다. 마지막 투하까지 1.5초가 더 걸립니다.",
+      "wait:45",
+      "dwe:input:bomb_count\u003d4",
+      "dwe:input:interval_seconds\u003d0.5",
+      "wait:40",
+      "dwe:note:영역 폭격 추가|Area bombing으로 두 번째 통로를 그립니다.",
+      "wait:45",
+      "dwe:tool:area",
+      "dwe:place:7,-3,7,13",
+      "wait:40",
+      "dwe:note:폭과 방향 정밀 조정|Advanced에서 Width와 Heading으로 배치를 다듬습니다.",
+      "wait:45",
+      "dwe:press:dwe.dock.advanced",
+      "dwe:input:width\u003d24",
+      "dwe:input:heading\u003d0",
+      "dwe:verify:corridors",
+      "wait:40",
+      "gif:stop"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Load Existing",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Gimmick Editor",
+        "active": true
+      },
+      {
+        "label": "Relative coordinates",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Simulation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "←",
+        "active": true
+      },
+      {
+        "label": "→",
+        "active": true
+      },
+      {
+        "label": "↓",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "F",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "Bombardment",
+        "active": true
+      },
+      {
+        "label": "First drop (ticks)",
+        "active": true
+      },
+      {
+        "label": "A-10A",
+        "active": true
+      },
+      {
+        "label": "MK-82",
+        "active": true
+      },
+      {
+        "label": "Area",
+        "active": true
+      },
+      {
+        "label": "Level",
+        "active": false
+      },
+      {
+        "label": "X",
+        "active": true
+      },
+      {
+        "label": "Y",
+        "active": true
+      },
+      {
+        "label": "Z",
+        "active": true
+      },
+      {
+        "label": "Heading",
+        "active": true
+      },
+      {
+        "label": "Length",
+        "active": true
+      },
+      {
+        "label": "Width",
+        "active": true
+      },
+      {
+        "label": "Altitude",
+        "active": true
+      },
+      {
+        "label": "Interval (ticks)",
+        "active": true
+      },
+      {
+        "label": "Bombs / aircraft",
+        "active": true
+      },
+      {
+        "label": "Basic",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-vehicles",
+    "screenClass": "net.dochi.warfare.vehicle.client.GimmickEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:50",
+      "gif:start:dwe-vehicles",
+      "dwe:begin:dwe-vehicles",
+      "dwe:note:차량 지원 도구|Vehicle support를 골라 출발점에서 지원 지점까지 드래그합니다.",
+      "wait:45",
+      "dwe:press:dwe.topbar.new",
+      "dwe:tool:support",
+      "dwe:place:0,-6,0,12",
+      "wait:40",
+      "dwe:note:차량과 대수|기본 M1A2로 1대를 먼저 시험합니다. 실제 차량 종류는 선택기에서 고릅니다.",
+      "wait:45",
+      "dwe:input:count\u003d1",
+      "wait:40",
+      "dwe:note:출발 시각과 간격|3초에 출발, 차량 간격은 12블록으로 지정합니다.",
+      "wait:45",
+      "dwe:input:start_seconds\u003d3",
+      "dwe:input:spacing\u003d12",
+      "wait:40",
+      "dwe:note:방어 범위와 수명|도착 후 24블록 주변을 방어하며 60초 뒤 정리합니다.",
+      "wait:45",
+      "dwe:input:guard_radius\u003d24",
+      "dwe:input:lifetime_seconds\u003d60",
+      "wait:40",
+      "dwe:note:출발·도착 좌표 확인|Advanced에서 두 위치가 서로 다른지 확인합니다.",
+      "wait:45",
+      "dwe:press:dwe.dock.advanced",
+      "dwe:verify:vehicles",
+      "wait:40",
+      "gif:stop"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Load Existing",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Gimmick Editor",
+        "active": true
+      },
+      {
+        "label": "Relative coordinates",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Simulation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "←",
+        "active": true
+      },
+      {
+        "label": "→",
+        "active": true
+      },
+      {
+        "label": "↓",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "F",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "Vehicle reinforcement",
+        "active": true
+      },
+      {
+        "label": "First drop (ticks)",
+        "active": true
+      },
+      {
+        "label": "Vehicle ID",
+        "active": true
+      },
+      {
+        "label": "Departure X",
+        "active": true
+      },
+      {
+        "label": "Departure Y",
+        "active": true
+      },
+      {
+        "label": "Departure Z",
+        "active": true
+      },
+      {
+        "label": "X",
+        "active": true
+      },
+      {
+        "label": "Y",
+        "active": true
+      },
+      {
+        "label": "Z",
+        "active": true
+      },
+      {
+        "label": "Vehicle count",
+        "active": true
+      },
+      {
+        "label": "Formation spacing",
+        "active": true
+      },
+      {
+        "label": "Faction ID",
+        "active": true
+      },
+      {
+        "label": "Defense radius",
+        "active": true
+      },
+      {
+        "label": "Lifetime (ticks)",
+        "active": true
+      },
+      {
+        "label": "Basic",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-fire",
+    "screenClass": "net.dochi.warfare.vehicle.client.GimmickEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:50",
+      "gif:start:dwe-fire",
+      "dwe:begin:dwe-fire",
+      "dwe:note:사격 목표와 접근 방향|Fire support를 고르고 목표에서 드래그해 접근 방향을 정합니다.",
+      "wait:45",
+      "dwe:press:dwe.topbar.new",
+      "dwe:tool:fire",
+      "dwe:place:0,5,0,15",
+      "wait:40",
+      "dwe:note:사격 상한|발사 횟수는 20, 사격 시간은 3초로 정합니다.",
+      "wait:45",
+      "dwe:input:rounds\u003d20",
+      "dwe:input:fire_seconds\u003d3",
+      "wait:40",
+      "dwe:note:사격 위치와 범위|거리 48블록, 좌우 사격 구간 16블록을 사용합니다.",
+      "wait:45",
+      "dwe:input:fire_distance\u003d48",
+      "dwe:input:sweep_length\u003d16",
+      "wait:40",
+      "dwe:note:시작과 수명|5초에 지원을 시작하고 30초 동안 임시 지원을 유지합니다.",
+      "wait:45",
+      "dwe:input:start_seconds\u003d5",
+      "dwe:input:lifetime_seconds\u003d30",
+      "dwe:verify:fire",
+      "wait:40",
+      "gif:stop"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Load Existing",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Gimmick Editor",
+        "active": true
+      },
+      {
+        "label": "Relative coordinates",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Simulation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "←",
+        "active": true
+      },
+      {
+        "label": "→",
+        "active": true
+      },
+      {
+        "label": "↓",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "F",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "Start (seconds)",
+        "active": true
+      },
+      {
+        "label": "M-1A-2",
+        "active": true
+      },
+      {
+        "label": "MachineGun",
+        "active": true
+      },
+      {
+        "label": "Ground firing position",
+        "active": true
+      },
+      {
+        "label": "Maximum shots",
+        "active": true
+      },
+      {
+        "label": "Fire duration (seconds)",
+        "active": true
+      },
+      {
+        "label": "Entry distance",
+        "active": true
+      },
+      {
+        "label": "Flight height",
+        "active": false
+      },
+      {
+        "label": "Sweep width",
+        "active": true
+      },
+      {
+        "label": "Lifetime (seconds)",
+        "active": true
+      },
+      {
+        "label": "Advanced",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-npcs",
+    "screenClass": "net.dochi.warfare.vehicle.client.GimmickEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:50",
+      "gif:start:dwe-npcs",
+      "dwe:begin:dwe-npcs",
+      "dwe:note:NPC 출발점과 목적지|NPC deployment로 이동 구간을 그립니다.",
+      "wait:45",
+      "dwe:press:dwe.topbar.new",
+      "dwe:tool:npc",
+      "dwe:place:-8,-6,-8,12",
+      "wait:40",
+      "dwe:note:기존 NPC 영역 선택|클론이 없는 예제라 Area source로 시작합니다. 실행 시점의 주변 NPC를 고릅니다.",
+      "wait:45",
+      "dwe:input:npc_count\u003d4",
+      "dwe:input:npc_radius\u003d16",
+      "wait:40",
+      "dwe:note:대형과 속도|간격 2블록, DW 이동 속도 5를 지정합니다.",
+      "wait:45",
+      "dwe:input:npc_spacing\u003d2",
+      "dwe:input:npc_speed\u003d5",
+      "wait:40",
+      "dwe:note:시작·종료와 좌표|2초에 시작해 30초 뒤 이전 이동 설정을 복구합니다.",
+      "wait:45",
+      "dwe:input:start_seconds\u003d2",
+      "dwe:input:lifetime_seconds\u003d30",
+      "dwe:press:dwe.dock.advanced",
+      "dwe:verify:npcs",
+      "wait:40",
+      "gif:stop"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Load Existing",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Gimmick Editor",
+        "active": true
+      },
+      {
+        "label": "Relative coordinates",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Simulation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "←",
+        "active": true
+      },
+      {
+        "label": "→",
+        "active": true
+      },
+      {
+        "label": "↓",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "F",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "NPC movement",
+        "active": true
+      },
+      {
+        "label": "First drop (ticks)",
+        "active": true
+      },
+      {
+        "label": "Move NPCs in area",
+        "active": true
+      },
+      {
+        "label": "Departure X",
+        "active": true
+      },
+      {
+        "label": "Departure Y",
+        "active": true
+      },
+      {
+        "label": "Departure Z",
+        "active": true
+      },
+      {
+        "label": "X",
+        "active": true
+      },
+      {
+        "label": "Y",
+        "active": true
+      },
+      {
+        "label": "Z",
+        "active": true
+      },
+      {
+        "label": "NPC count / area limit",
+        "active": true
+      },
+      {
+        "label": "Area radius (blocks)",
+        "active": true
+      },
+      {
+        "label": "Formation spacing",
+        "active": true
+      },
+      {
+        "label": "DW walking speed",
+        "active": true
+      },
+      {
+        "label": "NPC faction ID",
+        "active": true
+      },
+      {
+        "label": "Lifetime (ticks)",
+        "active": true
+      },
+      {
+        "label": "Basic",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-timing",
+    "screenClass": "net.dochi.warfare.vehicle.client.GimmickEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:50",
+      "gif:start:dwe-timing",
+      "dwe:begin:dwe-timing",
+      "dwe:note:첫 번째 차량 지원|차량 이벤트를 배치하고 시작 시각을 2초로 정합니다.",
+      "wait:45",
+      "dwe:press:dwe.topbar.new",
+      "dwe:tool:support",
+      "dwe:place:0,-6,0,12",
+      "dwe:input:start_seconds\u003d2",
+      "wait:40",
+      "dwe:note:두 번째 이벤트 추가|점 폭격을 5초에 배치합니다. 종류별 시간 행이 나뉩니다.",
+      "wait:45",
+      "dwe:tool:point",
+      "dwe:place:8,5",
+      "dwe:input:start_seconds\u003d5",
+      "wait:40",
+      "dwe:note:마커 드래그|선택한 폭격 마커를 약 7초 위치로 옮깁니다.",
+      "wait:45",
+      "dwe:timeline-zoom-out",
+      "dwe:timeline:140",
+      "wait:40",
+      "dwe:note:복제와 실행 취소|Duplicate로 같은 설정을 추가하고 Ctrl+Z·Ctrl+Y로 비교합니다.",
+      "wait:45",
+      "dwe:press:dwe.gimmick.duplicate",
+      "dwe:key:90,2",
+      "dwe:key:89,2",
+      "dwe:verify:timing",
+      "wait:40",
+      "gif:stop"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Load Existing",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Gimmick Editor",
+        "active": true
+      },
+      {
+        "label": "Relative coordinates",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Simulation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "←",
+        "active": true
+      },
+      {
+        "label": "→",
+        "active": true
+      },
+      {
+        "label": "↓",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "F",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "Start (seconds)",
+        "active": true
+      },
+      {
+        "label": "M-1A-2",
+        "active": true
+      },
+      {
+        "label": "Vehicle count",
+        "active": true
+      },
+      {
+        "label": "Formation spacing",
+        "active": true
+      },
+      {
+        "label": "Faction ID",
+        "active": true
+      },
+      {
+        "label": "Defense radius",
+        "active": true
+      },
+      {
+        "label": "Lifetime (seconds)",
+        "active": true
+      },
+      {
+        "label": "Advanced",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-center",
+    "screenClass": "net.dochi.warfare.vehicle.client.GimmickEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:50",
+      "gif:start:dwe-center",
+      "dwe:begin:dwe-center",
+      "dwe:note:이동 구간 하나 배치|차량 출발점과 도착점을 먼저 만듭니다.",
+      "wait:45",
+      "dwe:press:dwe.topbar.new",
+      "dwe:tool:support",
+      "dwe:place:0,-6,0,12",
+      "wait:40",
+      "dwe:note:상대좌표의 중심 이동|Center를 누르고 X를 8로 바꾸면 전체 구간이 함께 이동합니다.",
+      "wait:45",
+      "dwe:press:dwe.world.center",
+      "dwe:input:origin_x\u003d8",
+      "wait:40",
+      "dwe:note:한 번에 되돌리기|Ctrl+Z로 중심 이동과 배치 이동을 함께 취소합니다.",
+      "wait:45",
+      "dwe:key:90,2",
+      "wait:40",
+      "dwe:note:절대좌표로 전환|표시 방식만 전환할 때 배치 자체는 움직이지 않습니다.",
+      "wait:45",
+      "dwe:coordinates",
+      "dwe:choice:1",
+      "wait:40",
+      "dwe:note:절대 모드의 중심 이동|Center의 X를 8로 바꿔도 이벤트의 월드 위치는 유지됩니다.",
+      "wait:45",
+      "dwe:input:origin_x\u003d8",
+      "dwe:verify:center",
+      "wait:40",
+      "gif:stop"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Load Existing",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Gimmick Editor",
+        "active": true
+      },
+      {
+        "label": "Absolute coordinates",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Simulation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "←",
+        "active": true
+      },
+      {
+        "label": "→",
+        "active": true
+      },
+      {
+        "label": "↓",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "F",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "Origin X",
+        "active": true
+      },
+      {
+        "label": "Origin Y",
+        "active": true
+      },
+      {
+        "label": "Origin Z",
+        "active": true
+      },
+      {
+        "label": "Use player position",
+        "active": true
+      },
+      {
+        "label": "Place in world",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  },
+  {
+    "id": "dwe-simulation",
+    "screenClass": "net.dochi.warfare.vehicle.client.GimmickEditorScreen",
+    "status": "captured_in_game",
+    "actions": [
+      "wait:50",
+      "gif:start:dwe-simulation",
+      "dwe:begin:dwe-simulation",
+      "dwe:note:차량 한 대로 시험|새 문서에서 짧은 차량 경로를 배치하고 1초에 시작합니다.",
+      "wait:45",
+      "dwe:press:dwe.topbar.new",
+      "dwe:tool:support",
+      "dwe:place:0,-6,0,10",
+      "dwe:input:start_seconds\u003d1",
+      "wait:40",
+      "dwe:note:시뮬레이션 시작|Simulation은 저장 전 초안도 시험합니다. 실제 실행은 별도 명령입니다.",
+      "wait:45",
+      "dwe:runtime-begin",
+      "dwe:press:dwe.preview.start",
+      "wait:180",
+      "dwe:verify:simulation-active",
+      "wait:40",
+      "dwe:note:실제 차량과 경과 시간|임시 차량이 월드에서 움직이는지 관찰합니다.",
+      "wait:45",
+      "wait:160",
+      "wait:40",
+      "dwe:note:Stop으로 종료|Stop을 누르면 이 시뮬레이션의 임시 지원이 정리됩니다.",
+      "wait:45",
+      "dwe:press:dwe.simulation.stop",
+      "wait:70",
+      "dwe:verify:simulation-stopped",
+      "wait:40",
+      "dwe:runtime-verify",
+      "gif:stop"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": true
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "New settings",
+        "active": true
+      },
+      {
+        "label": "Load Existing",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Restore saved settings",
+        "active": true
+      },
+      {
+        "label": "Close",
+        "active": true
+      },
+      {
+        "label": "Gimmick Editor",
+        "active": true
+      },
+      {
+        "label": "Relative coordinates",
+        "active": true
+      },
+      {
+        "label": "Center",
+        "active": true
+      },
+      {
+        "label": "Simulation",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Duplicate",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "←",
+        "active": true
+      },
+      {
+        "label": "→",
+        "active": true
+      },
+      {
+        "label": "↓",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "F",
+        "active": true
+      },
+      {
+        "label": "?",
+        "active": true
+      },
+      {
+        "label": "−",
+        "active": true
+      },
+      {
+        "label": "+",
+        "active": true
+      },
+      {
+        "label": "Start (seconds)",
+        "active": true
+      },
+      {
+        "label": "M-1A-2",
+        "active": true
+      },
+      {
+        "label": "Vehicle count",
+        "active": true
+      },
+      {
+        "label": "Formation spacing",
+        "active": true
+      },
+      {
+        "label": "Faction ID",
+        "active": true
+      },
+      {
+        "label": "Defense radius",
+        "active": true
+      },
+      {
+        "label": "Lifetime (seconds)",
+        "active": true
+      },
+      {
+        "label": "Advanced",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

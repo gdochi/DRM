@@ -1,0 +1,20 @@
+{
+  "commit": "9a735990abd1e386306ad08ccd4e3cc71deb0f51",
+  "branch": "docs-pages",
+  "run": "https://github.com/gdochi/DRM/actions/runs/42638052991",
+  "attempt": 2,
+  "conclusion": "success",
+  "verifiedAt": "2026-11-10T00:06:06.1941755+09:00",
+  "payload": {
+    "files": 76,
+    "documents": 45,
+    "media": 30,
+    "backupsIncluded": false,
+    "environmentFiles": 1,
+    "unrelatedChangesIncluded": false
+  },
+  "publicationMethod": "Explicitly scoped commit after broad git add -A was rejected by automatic approval review",
+  "firstAttemptFailure": "Pages syncing_files exceeded 10-minute timeout",
+  "retry": "Re-ran failed deploy job only",
+  "liveVerification": "3 routes, 10 media HEAD checks, 10 decoded videos, mobile no-overflow"
+}

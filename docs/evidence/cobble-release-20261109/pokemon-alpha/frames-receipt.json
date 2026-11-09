@@ -1,0 +1,2438 @@
+{
+  "source": "C:/Users/hodu3/Desktop/[DOCHI] DOCS/build/task/guide-capture/cobble-release-tutorials-20261109-03/captures/pokemon-alpha-frames.json",
+  "frames": 336,
+  "selected": [
+    {
+      "frame": 0,
+      "file": "00000.png",
+      "elapsedMs": 2.2851,
+      "screen": "CobbleTrainerEditorScreen"
+    },
+    {
+      "frame": 30,
+      "file": "00030.png",
+      "elapsedMs": 1503.1076,
+      "screen": "CobbleTrainerEditorScreen"
+    },
+    {
+      "frame": 61,
+      "file": "00061.png",
+      "elapsedMs": 3062.4709,
+      "screen": "CobbleTrainerEditorScreen"
+    },
+    {
+      "frame": 91,
+      "file": "00091.png",
+      "elapsedMs": 4563.1406,
+      "screen": "CobbleTrainerEditorScreen"
+    },
+    {
+      "frame": 122,
+      "file": "00122.png",
+      "elapsedMs": 6109.1472,
+      "screen": "CobbleTrainerEditorScreen"
+    },
+    {
+      "frame": 152,
+      "file": "00152.png",
+      "elapsedMs": 7706.3307,
+      "screen": "CobbleTrainerEditorScreen"
+    },
+    {
+      "frame": 183,
+      "file": "00183.png",
+      "elapsedMs": 9252.8278,
+      "screen": "CobbleTrainerEditorScreen"
+    },
+    {
+      "frame": 213,
+      "file": "00213.png",
+      "elapsedMs": 10744.1627,
+      "screen": "CobbleTrainerEditorScreen"
+    },
+    {
+      "frame": 244,
+      "file": "00244.png",
+      "elapsedMs": 12301.5041,
+      "screen": "CobbleTrainerEditorScreen"
+    },
+    {
+      "frame": 274,
+      "file": "00274.png",
+      "elapsedMs": 13792.8896,
+      "screen": "CobbleTrainerEditorScreen"
+    },
+    {
+      "frame": 305,
+      "file": "00305.png",
+      "elapsedMs": 15351.6491,
+      "screen": "CobbleTrainerEditorScreen"
+    },
+    {
+      "frame": 335,
+      "file": "00335.png",
+      "elapsedMs": 16845.4914,
+      "screen": "CobbleTrainerEditorScreen"
+    }
+  ],
+  "durationMs": 16893.206299999998,
+  "intervalMs": {
+    "median": 50.16369999999915,
+    "p95": 51.881100000000515,
+    "max": 182.65810000000056
+  },
+  "originalFrames": [
+    {
+      "file": "00000.png",
+      "elapsedMs": 2.2851,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218008,
+      "sha256": "0a4f4b3dbe308cbe4005af84a5e734b2fc8b8ea413bc51c4b7d6879b3cfe44c6"
+    },
+    {
+      "file": "00001.png",
+      "elapsedMs": 53.0668,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218680,
+      "sha256": "ab9d49d2ef4b4af77d95c1ddb6f079dbc21a30149b34f90a8ef07eda16423609"
+    },
+    {
+      "file": "00002.png",
+      "elapsedMs": 103.2225,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218641,
+      "sha256": "033a46d2f8e20d6ad0309e675f1dd8da5473ba688fc6c039b7e0528f9bffbbca"
+    },
+    {
+      "file": "00003.png",
+      "elapsedMs": 152.6086,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218534,
+      "sha256": "5ee9827dee6f55d9fd01edfb474d64429499d40c4890bb4db59decbf82be1c92"
+    },
+    {
+      "file": "00004.png",
+      "elapsedMs": 203.3403,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218469,
+      "sha256": "35603e3584678c783558e735fcdeadddf4925eb084c63cc49ae8abf9d4cccea3"
+    },
+    {
+      "file": "00005.png",
+      "elapsedMs": 253.8139,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218634,
+      "sha256": "13595ea79226fab9a30d58d7028655c63895fd6afb9f1d25983c2058753bb3ae"
+    },
+    {
+      "file": "00006.png",
+      "elapsedMs": 304.1783,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218706,
+      "sha256": "1575721ec51b1a1b694d37074c40eeace68713da801f8ea094c95e37bff7a198"
+    },
+    {
+      "file": "00007.png",
+      "elapsedMs": 357.1837,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218843,
+      "sha256": "198a2285020e696505ae435dec7d2c232e8c9e4def89b154ce94e5d75e698e7b"
+    },
+    {
+      "file": "00008.png",
+      "elapsedMs": 400.085,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218912,
+      "sha256": "b7a76c92271368cf2c2c96bcf415a32f280043e3a32610b05307567e30662c4a"
+    },
+    {
+      "file": "00009.png",
+      "elapsedMs": 450.0787,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218885,
+      "sha256": "6bfd18466617744d84eeb313642b6314d3f939911241bdfa5efb70397dc89bd7"
+    },
+    {
+      "file": "00010.png",
+      "elapsedMs": 500.4097,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218760,
+      "sha256": "a8e6cacd5f8f046021d67cd316c51a7ea9919fadb5ae86d57de34edea34c6d74"
+    },
+    {
+      "file": "00011.png",
+      "elapsedMs": 550.3169,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218800,
+      "sha256": "f0fbecd12181fdfdcca1501d9e9674943ee3f68822af65f8f9235188895f9ec0"
+    },
+    {
+      "file": "00012.png",
+      "elapsedMs": 600.3806,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218909,
+      "sha256": "1f0a9ec8af3e5454bd8b8f5a875c4ca298872812d2b397a6a28dd266e8c843f5"
+    },
+    {
+      "file": "00013.png",
+      "elapsedMs": 650.2837,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 218751,
+      "sha256": "f97910c420631aa0738fd19ea40c6ac2ea41193e5c5150f3466e30b47523e261"
+    },
+    {
+      "file": "00014.png",
+      "elapsedMs": 700.0118,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 219896,
+      "sha256": "69658200aa54c305e38e032b186eb1777da595a3f7c71ee879af1d35dc22a3d8"
+    },
+    {
+      "file": "00015.png",
+      "elapsedMs": 750.399,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 220084,
+      "sha256": "fcd51318a5f9c29e7819480558d048bad893da0ed1f27bbfd85f039b429c9314"
+    },
+    {
+      "file": "00016.png",
+      "elapsedMs": 800.027,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 219895,
+      "sha256": "0168053631798925f159262865b9422fae0d3b26fd91559217d11921889ae995"
+    },
+    {
+      "file": "00017.png",
+      "elapsedMs": 850.1374,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 219863,
+      "sha256": "44d21e6b8b3d84c4fab38631fc9d42ed227c07c543cdf63f4852895216934f8c"
+    },
+    {
+      "file": "00018.png",
+      "elapsedMs": 915.8321,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 220355,
+      "sha256": "1583510794608b781ecf2d93470dd1897f729f4491b3bf4accfdfe2e662534ed"
+    },
+    {
+      "file": "00019.png",
+      "elapsedMs": 965.5139,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 220500,
+      "sha256": "db9a38badcecc0a5b920e2a60fcb4555d2739404980d19f2f59ba8f822e849b9"
+    },
+    {
+      "file": "00020.png",
+      "elapsedMs": 1000.0435,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 220418,
+      "sha256": "8a9ad233ef86dae5b5dd3f06f633c3bed7779bb5e08779ca5c538b75370f36dc"
+    },
+    {
+      "file": "00021.png",
+      "elapsedMs": 1053.781,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 220364,
+      "sha256": "fb2520f172bd540e99bc0d8a78765518e069a902d282c3ef93735d97610c0241"
+    },
+    {
+      "file": "00022.png",
+      "elapsedMs": 1100.3734,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221259,
+      "sha256": "78219f891bbad40c76eb2e8d360e3a4ae7ce1fa580fa2457fa3276600c6fadef"
+    },
+    {
+      "file": "00023.png",
+      "elapsedMs": 1150.4657,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221230,
+      "sha256": "4586d7152fd10b1b2ba721b3a2761a26a7d7b2af4cf5742067d9f9b1849dbf27"
+    },
+    {
+      "file": "00024.png",
+      "elapsedMs": 1200.9749,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221311,
+      "sha256": "36bacd02e2de2cef3d3b79fc2a412b55a58b4d9a25c9139fe1abaca238b32fe2"
+    },
+    {
+      "file": "00025.png",
+      "elapsedMs": 1250.761,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221353,
+      "sha256": "330f30cccecf04a32aed9fa3bc845a1e7b66541b485836629e338c8d0de34266"
+    },
+    {
+      "file": "00026.png",
+      "elapsedMs": 1301.3271,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 222079,
+      "sha256": "6be2b86c4156fa8e6b9c886a69a6d23bf6a409a77f24d205e84ff75bcffd1e88"
+    },
+    {
+      "file": "00027.png",
+      "elapsedMs": 1351.3465,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 222364,
+      "sha256": "72a4a4a0a0b64d60e9114633b1f5cea40c9b91954c868602fa11ed32b0af8e73"
+    },
+    {
+      "file": "00028.png",
+      "elapsedMs": 1401.0447,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 222513,
+      "sha256": "d5d072c71827760f807425426841b5cef4e5bca3ac893cae073d8d9c4adcf964"
+    },
+    {
+      "file": "00029.png",
+      "elapsedMs": 1452.1786,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 222636,
+      "sha256": "020b4051af29d8f024521af44d207547599362dd9deca05ae20acd72540cd25d"
+    },
+    {
+      "file": "00030.png",
+      "elapsedMs": 1503.1076,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 222083,
+      "sha256": "c43eed304a88cb504bafc54697af43ca2430f72c43900cfb90240979bccee7ed"
+    },
+    {
+      "file": "00031.png",
+      "elapsedMs": 1552.767,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221981,
+      "sha256": "b528e4be0eebf1da1dad89590ba3faab0bd8130cb4bc2f7fa3d23f71df13dfd7"
+    },
+    {
+      "file": "00032.png",
+      "elapsedMs": 1602.953,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 222092,
+      "sha256": "1ff27bb5ae69e58ee3bef5418759c41e3ba4e3ce76df4a105b2d30fb31275c4d"
+    },
+    {
+      "file": "00033.png",
+      "elapsedMs": 1653.1705,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221857,
+      "sha256": "d2986b8c39861616c89dd0e015e829b16b517b55944c5e906b69f72a03ed3c20"
+    },
+    {
+      "file": "00034.png",
+      "elapsedMs": 1703.4432,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 222160,
+      "sha256": "fdcff32958b6753c418417058c9b7d01e0a7a9e6e7e86c15f04997471578a505"
+    },
+    {
+      "file": "00035.png",
+      "elapsedMs": 1755.1203,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221717,
+      "sha256": "e7542e7308318d552ca342c93a4348410db215439b5cff671f50d5b8d2faa8f3"
+    },
+    {
+      "file": "00036.png",
+      "elapsedMs": 1805.6967,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221557,
+      "sha256": "e72e4a84a49560afb2b12f2083f632fb24391e5b9b00ed6c03bd339bccfe3ec8"
+    },
+    {
+      "file": "00037.png",
+      "elapsedMs": 1855.6102,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221651,
+      "sha256": "a324ba480e05ce58e03f0324b037ef16a9c43bf9f17a5a524e28beffb8ffbefc"
+    },
+    {
+      "file": "00038.png",
+      "elapsedMs": 1905.4629,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221037,
+      "sha256": "40ca9b01516ab93d580a02f32be0905397684b988b7ad8263044ba0071a5e5e5"
+    },
+    {
+      "file": "00039.png",
+      "elapsedMs": 1955.8865,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221282,
+      "sha256": "426bd923ed1da98bbf64bbc5b448815f9ef035f9242f1cce4e980fefa438a9a5"
+    },
+    {
+      "file": "00040.png",
+      "elapsedMs": 2005.9554,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221627,
+      "sha256": "0b3b21311d6c940e5fee6996ea6e3ee38e78ff5dc94402d0ad404a48c842f970"
+    },
+    {
+      "file": "00041.png",
+      "elapsedMs": 2056.4955,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221700,
+      "sha256": "d8df3f5d1eda00857eb8784ba94150274b6a4ee506290a5e823e3208336bf974"
+    },
+    {
+      "file": "00042.png",
+      "elapsedMs": 2106.4197,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 221965,
+      "sha256": "80f783e15b14edc50cbe7dd809f1f0b3a9d8a5f80e369afbb0fef28a1df522fa"
+    },
+    {
+      "file": "00043.png",
+      "elapsedMs": 2156.3911,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 222066,
+      "sha256": "deddc86866bbf6686e5a7071fabf1d3d7102309a2d4fb8ea190f40aae67ac36b"
+    },
+    {
+      "file": "00044.png",
+      "elapsedMs": 2207.5803,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 222154,
+      "sha256": "623c82cbedff417a7c1489a7790f83af1ed249e09632de04d7e8eb1b8c9f981a"
+    },
+    {
+      "file": "00045.png",
+      "elapsedMs": 2257.6567,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 222276,
+      "sha256": "94285b0e9ab6ff0706131678a0e562aa4f57c8854457767072ab2914b8882daf"
+    },
+    {
+      "file": "00046.png",
+      "elapsedMs": 2307.3863,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 222939,
+      "sha256": "d788807e869138520eed71a8ecfeca82426ba53e217f1836d03a324cd2dfec37"
+    },
+    {
+      "file": "00047.png",
+      "elapsedMs": 2358.1662,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 223118,
+      "sha256": "c0b1ec5f03f7b89ff3b1845a64ac26cbdb961f70566a3c2e8ae73cebbaee50a1"
+    },
+    {
+      "file": "00048.png",
+      "elapsedMs": 2408.2182,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 223726,
+      "sha256": "3ca26f8adffb16882055daddfec44e7e0c8cd77af58263196e9111b99e6b04db"
+    },
+    {
+      "file": "00049.png",
+      "elapsedMs": 2458.8074,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 223621,
+      "sha256": "c713f4b317abfb906d21075fab9a5701f1f36085d1d9168555bd501a101e5780"
+    },
+    {
+      "file": "00050.png",
+      "elapsedMs": 2508.9763,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 223459,
+      "sha256": "611ceebfda6d5e427b4d7d03cea1028aa08867a5158822c44ca35825c8106bdc"
+    },
+    {
+      "file": "00051.png",
+      "elapsedMs": 2559.2257,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 223630,
+      "sha256": "c93324158e36a4c64160436122762e720b0ed64149778b5ee6c37f63bd9702c3"
+    },
+    {
+      "file": "00052.png",
+      "elapsedMs": 2609.3593,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 223470,
+      "sha256": "2ef3bec691aed08628d64c014d9f48257083637eee2c7c187effd4fb365ad87e"
+    },
+    {
+      "file": "00053.png",
+      "elapsedMs": 2659.7619,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 223301,
+      "sha256": "a5e72ead112cc25371d946d616ef94341d3f3c77d7d6c6d6411584b735c4621e"
+    },
+    {
+      "file": "00054.png",
+      "elapsedMs": 2701.7731,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224349,
+      "sha256": "80a89d7493c390db94a25ea593628f8cbbdc48fd3aa5308cb715fb49e88f5453"
+    },
+    {
+      "file": "00055.png",
+      "elapsedMs": 2760.5635,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225010,
+      "sha256": "e99824556f41776d794943a734c75618c99131f35035ff2695286f866e23125c"
+    },
+    {
+      "file": "00056.png",
+      "elapsedMs": 2810.4625,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225393,
+      "sha256": "d787db088bd910ccec14a0afeb1f2eee5c0a77b581acdc2213d0257a8713e6d6"
+    },
+    {
+      "file": "00057.png",
+      "elapsedMs": 2861.5626,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225240,
+      "sha256": "09550fe617d27c0c7631eddff05a73bb452fa38aad220d7b3b4a429b5f73446f"
+    },
+    {
+      "file": "00058.png",
+      "elapsedMs": 2911.401,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225114,
+      "sha256": "fa203732da0f71dbead9d29c6819dbcf54812b23c6256fa1339d33b8e15116d3"
+    },
+    {
+      "file": "00059.png",
+      "elapsedMs": 2962.5868,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224902,
+      "sha256": "9d4ef88b8282d950108196f809109ccd344ceff59ea0d75a1bbb98c7c024b14b"
+    },
+    {
+      "file": "00060.png",
+      "elapsedMs": 3012.2533,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224946,
+      "sha256": "042b0b243b5949e6902f0ce59f48d72f4e9cea2c69c6784e12a070625ffbc06a"
+    },
+    {
+      "file": "00061.png",
+      "elapsedMs": 3062.4709,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224543,
+      "sha256": "e894b5147f43a95f9c48794c226591120b757ac114a152d20a41d258063ad1a4"
+    },
+    {
+      "file": "00062.png",
+      "elapsedMs": 3112.769,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224559,
+      "sha256": "1ff4f3f54d19caaa81ba87f7ada4c814e1ac4a2075067c22cffdb873e4deb18c"
+    },
+    {
+      "file": "00063.png",
+      "elapsedMs": 3163.7523,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225013,
+      "sha256": "703064070c0fa0786b4ceec7b300552f9c12479f47820c348bcccfa22a26ae1f"
+    },
+    {
+      "file": "00064.png",
+      "elapsedMs": 3213.7876,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225366,
+      "sha256": "8b403a1eacf1cd50ae3c1549fd0911cc21bc3f090b176cbeb8cc6a6a93d177e7"
+    },
+    {
+      "file": "00065.png",
+      "elapsedMs": 3263.5422,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225278,
+      "sha256": "56d942b7e2e7ee37b29cd3cf51254f66b6292e520d9e0b91153f866c2185e72b"
+    },
+    {
+      "file": "00066.png",
+      "elapsedMs": 3314.6979,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224998,
+      "sha256": "c972d724ee43e32edcb7c96818b6a3ed259c38121f16dcac0d8adef0c7c24f96"
+    },
+    {
+      "file": "00067.png",
+      "elapsedMs": 3364.5968,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225116,
+      "sha256": "4e6719f84ff1536bb8e42f3334c719e624655a1bc7bfee1e5f02856236c6a18e"
+    },
+    {
+      "file": "00068.png",
+      "elapsedMs": 3400.4261,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224701,
+      "sha256": "47b65cff8c410563ba7339d3768577fa695ad0500fbbcf9d89cb4615a8cef576"
+    },
+    {
+      "file": "00069.png",
+      "elapsedMs": 3450.8189,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225038,
+      "sha256": "ff162c5576084fc0e0080bc90ae6b997db0ebbe4eb078af05e166fddf7256115"
+    },
+    {
+      "file": "00070.png",
+      "elapsedMs": 3500.7317,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224860,
+      "sha256": "cb7e3602fab7f568031b93f6307117381234f01ae431633b753c523a6d16a7b2"
+    },
+    {
+      "file": "00071.png",
+      "elapsedMs": 3551.3303,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224561,
+      "sha256": "0610363b18e909c836282fca96c05ac04c1f4715986a21e823a327f47e6d0373"
+    },
+    {
+      "file": "00072.png",
+      "elapsedMs": 3600.9817,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224949,
+      "sha256": "a18ac8d169cdb6ea5f95641b2cf09b6e8029a4aed2e91a6528c1441439e9b218"
+    },
+    {
+      "file": "00073.png",
+      "elapsedMs": 3651.2911,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224774,
+      "sha256": "6b8ce11c5d9286e83a37315468571dbb3e4e4e94d9186805c034f602477d6b38"
+    },
+    {
+      "file": "00074.png",
+      "elapsedMs": 3700.7699,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225033,
+      "sha256": "a419a957e327a2ebc95000e9d4a4875ec8167c87b8bade5e37464f141da613e1"
+    },
+    {
+      "file": "00075.png",
+      "elapsedMs": 3750.6848,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225295,
+      "sha256": "418e54390ccc94f320fb149623456e68373cc783a513a9d41b07415b09e127cd"
+    },
+    {
+      "file": "00076.png",
+      "elapsedMs": 3800.6306,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225032,
+      "sha256": "62378a4d280a18b4951f5b91d731389f21f58126884a4268227cd59fe336a7f2"
+    },
+    {
+      "file": "00077.png",
+      "elapsedMs": 3850.8405,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224157,
+      "sha256": "89e0a32333cf2a4187849e7e61fadea07c96f962b7012b11d4d3ea0aed330286"
+    },
+    {
+      "file": "00078.png",
+      "elapsedMs": 3900.3636,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224188,
+      "sha256": "dbdf0bd41c808498592c0a26c9a0622da942a5b7066a92a97770bac4838e5dee"
+    },
+    {
+      "file": "00079.png",
+      "elapsedMs": 3950.5543,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224005,
+      "sha256": "86fef9daafc330e2d2a6cf5e491fb94d0fc7fb82d79ce674360207c837bfead0"
+    },
+    {
+      "file": "00080.png",
+      "elapsedMs": 4000.3885,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224264,
+      "sha256": "87a29c14256c52ffa677083f00a02531b207e4983566861c085dea0914c7022e"
+    },
+    {
+      "file": "00081.png",
+      "elapsedMs": 4050.8054,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224094,
+      "sha256": "00bde2e520936c65c7bd5aa3224f15de7548c3f2996316a78407a72cf7d24ed3"
+    },
+    {
+      "file": "00082.png",
+      "elapsedMs": 4101.7117,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224232,
+      "sha256": "51db121b97123972e8522ebdb0857bd45e7e25de2e007319d271f74b80115c87"
+    },
+    {
+      "file": "00083.png",
+      "elapsedMs": 4152.2533,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 224562,
+      "sha256": "704480b62867f88540c0a6f46f318bb0eade1787846a2dbdc9fb253bd1f820c3"
+    },
+    {
+      "file": "00084.png",
+      "elapsedMs": 4211.4422,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225832,
+      "sha256": "3c1755a15ed8b4c972762327d4b89b7704cc2c832cee1b557d6985f6d17f5a8b"
+    },
+    {
+      "file": "00085.png",
+      "elapsedMs": 4261.2663,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225759,
+      "sha256": "c94e3bbdcea9331c889fd61ccaefd9696c8b074474e5d9ac2ee5e8a459026862"
+    },
+    {
+      "file": "00086.png",
+      "elapsedMs": 4311.6265,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 226010,
+      "sha256": "8e688017b86b000b192db187f466a7dd3883a90527c4a2019f53a24085711523"
+    },
+    {
+      "file": "00087.png",
+      "elapsedMs": 4361.7883,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225861,
+      "sha256": "fb46da9215463e4493f009b9709d3d4ceb368aa0b07ec2b9b1f0d6a79a82853d"
+    },
+    {
+      "file": "00088.png",
+      "elapsedMs": 4411.8358,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225883,
+      "sha256": "ef662f7bc2098ce5e3c4da101da122f9fe806a09ad16803adb152d7f53fce5d4"
+    },
+    {
+      "file": "00089.png",
+      "elapsedMs": 4462.3986,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225630,
+      "sha256": "f95cdb367f7fc099f507ecc026f5d25fa69f5d0c06834fb8014e482da7eaf1ba"
+    },
+    {
+      "file": "00090.png",
+      "elapsedMs": 4512.4892,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 225664,
+      "sha256": "ecf9cc212cc24c1e9ccebec9ba87ec1513178aa7192a70ad26342f6a4781737e"
+    },
+    {
+      "file": "00091.png",
+      "elapsedMs": 4563.1406,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228977,
+      "sha256": "01357036af372be16545b6fc6f015ec9ea07b692fca40cc4b1d7bfc9b4d82109"
+    },
+    {
+      "file": "00092.png",
+      "elapsedMs": 4612.7791,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229148,
+      "sha256": "620e929fb9fa7958c10bdf72bb474237bceef94dc12c909eb7279f185cb5af1a"
+    },
+    {
+      "file": "00093.png",
+      "elapsedMs": 4662.646,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228785,
+      "sha256": "10f85d8f468ddf40cd5331f294e994f7df81b197d0da692dd6e7de61e71594d0"
+    },
+    {
+      "file": "00094.png",
+      "elapsedMs": 4712.7671,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229254,
+      "sha256": "ad2b4e1a965a45877306741ef25e0a1d2f73cb03d2223bbd563154e2312bc6d9"
+    },
+    {
+      "file": "00095.png",
+      "elapsedMs": 4754.5709,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229747,
+      "sha256": "2bcb24c54ec9d014194ce1eb4cbc396a0c1a765c4f309dc4ef72cd085c69d16e"
+    },
+    {
+      "file": "00096.png",
+      "elapsedMs": 4801.1304,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229918,
+      "sha256": "40c7b74c9cf6676e88e73a12fd512862cf5f6295a632daf7e91bdb661ccc3120"
+    },
+    {
+      "file": "00097.png",
+      "elapsedMs": 4851.508,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229802,
+      "sha256": "29de3f9f06863fcb3e9d92e50991f450bf34dff115e245356b19b9ca725f193d"
+    },
+    {
+      "file": "00098.png",
+      "elapsedMs": 4900.8724,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229911,
+      "sha256": "fda756b75a6be8438e587f0709a98b40a35b76f0ad6283f643ccbce23cd5cc8e"
+    },
+    {
+      "file": "00099.png",
+      "elapsedMs": 4951.7843,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229641,
+      "sha256": "d23ae93161658b7d05ba9bb6f183c1d1d6cb3efe5a31ee93b52e55d87abf22f1"
+    },
+    {
+      "file": "00100.png",
+      "elapsedMs": 5002.6265,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229531,
+      "sha256": "8d71574105f6a172da635ecd08521e8bbb4459236cb57f8924ca3f22fed5b66c"
+    },
+    {
+      "file": "00101.png",
+      "elapsedMs": 5053.7567,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229259,
+      "sha256": "fcaa89f1f722562a6ac3df0cb5c88c43e14a1547a312fa9e428ee10a99e91504"
+    },
+    {
+      "file": "00102.png",
+      "elapsedMs": 5103.9663,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229348,
+      "sha256": "ead6afc8c5a960021d5e19c905729b42d7838d6d365417ddb5279dd70525d681"
+    },
+    {
+      "file": "00103.png",
+      "elapsedMs": 5154.6562,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229601,
+      "sha256": "b4a087cd0a98a891e01de26a96986e2c4cb78f2d53d8c53fe83e4505fa74dc67"
+    },
+    {
+      "file": "00104.png",
+      "elapsedMs": 5204.8573,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229439,
+      "sha256": "34c147cb7ffd5d143f5238eeb76362e77cea3584918370d7ad4b65e125ab8eb3"
+    },
+    {
+      "file": "00105.png",
+      "elapsedMs": 5255.1969,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229055,
+      "sha256": "228484579633127d2d981cfe7920c598ddc8c7619d36ef6d2f0b0f7d78570316"
+    },
+    {
+      "file": "00106.png",
+      "elapsedMs": 5305.0883,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228852,
+      "sha256": "eb2f0025e4065e214545a9bb69bc7fcb4c0f1498388916f448cfa2de7b3da2d0"
+    },
+    {
+      "file": "00107.png",
+      "elapsedMs": 5356.6181,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228820,
+      "sha256": "7b0e884df81d001fa4a6f9b4de97332d5dad5ebd2c78578917c58f1f6a4d04a9"
+    },
+    {
+      "file": "00108.png",
+      "elapsedMs": 5407.3457,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228750,
+      "sha256": "3ea76e4c5078aae0332062cef48a307eb5755d8ad78efd1921e1225fff08b21f"
+    },
+    {
+      "file": "00109.png",
+      "elapsedMs": 5456.4774,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228893,
+      "sha256": "be3d3a69901ad79a91863c94e5694ff6d3edc2f7efa464a11a2e3239900c1d39"
+    },
+    {
+      "file": "00110.png",
+      "elapsedMs": 5508.9547,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228922,
+      "sha256": "0dc8bebb85daf30969fb5d2abd1b433987559bdf9f6c1ece05e3693b15c382dc"
+    },
+    {
+      "file": "00111.png",
+      "elapsedMs": 5558.3642,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228881,
+      "sha256": "30e4a5f6baec86e808a5361e7257bb4c15a0a991d78a9cb4e3f3d7dbf60cd9e0"
+    },
+    {
+      "file": "00112.png",
+      "elapsedMs": 5607.6979,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228475,
+      "sha256": "64f06a327e67a19d4d73941bc0a1634378597cb709d78c9beb4b206b18eea92f"
+    },
+    {
+      "file": "00113.png",
+      "elapsedMs": 5657.6236,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228553,
+      "sha256": "92daa19c76eee4815e5d455432926ea32cd4168c3b6555deb82580277ebb2c55"
+    },
+    {
+      "file": "00114.png",
+      "elapsedMs": 5707.1226,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228516,
+      "sha256": "d6b2ff23711bedb8722e03cddbb6f426425c780b975d738adf7f3d97c4e22ac3"
+    },
+    {
+      "file": "00115.png",
+      "elapsedMs": 5758.3852,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 227160,
+      "sha256": "7130bee969011bd0c6ab572fee6a17bd9d3d09cb1de60e8bdc292534bb35e61c"
+    },
+    {
+      "file": "00116.png",
+      "elapsedMs": 5808.6662,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 227146,
+      "sha256": "569d83099f6cf9203442d75ed11986b6049586874ceb9d7bf1a5b6c5576af550"
+    },
+    {
+      "file": "00117.png",
+      "elapsedMs": 5858.9616,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 227227,
+      "sha256": "dd8872d6acbb65b82d3de80fa113d4863a3a3bad25e947c372288da4d2e3435e"
+    },
+    {
+      "file": "00118.png",
+      "elapsedMs": 5909.1832,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 227034,
+      "sha256": "3b4bbae3038e5dbc51269bd1bb92ca33bf92aa6dc58f2aa4c339ad7ec1022dd8"
+    },
+    {
+      "file": "00119.png",
+      "elapsedMs": 5959.1295,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 226936,
+      "sha256": "c309e8c7bab42b0bdee2fcb5ad801a0c59ff66227b7504b1528868092a56e12d"
+    },
+    {
+      "file": "00120.png",
+      "elapsedMs": 6009.0182,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 226857,
+      "sha256": "b4fa746e72a653b0dae479c3fc0c9199bf95a5cd7339035d5a05be240e67dcc0"
+    },
+    {
+      "file": "00121.png",
+      "elapsedMs": 6059.0072,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 226556,
+      "sha256": "f5ac0b62f6b9c2054e19886488f27e86d627d9c4f4077fe5a855fd69b9c1476f"
+    },
+    {
+      "file": "00122.png",
+      "elapsedMs": 6109.1472,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 226773,
+      "sha256": "cc343e0c3890aad47c4cfe2dbe9987c1c294d482fcbf502b0646c3d150f15e8d"
+    },
+    {
+      "file": "00123.png",
+      "elapsedMs": 6160.2405,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 226856,
+      "sha256": "5d07ecb3fe4136e165d13cb58cf2bf2769014ff4043bc296d8f7e4d79ac83745"
+    },
+    {
+      "file": "00124.png",
+      "elapsedMs": 6210.1932,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 226973,
+      "sha256": "29b3b1de60905d252762212ef07d084800fcff86985e43af3634a0fb883ea7c9"
+    },
+    {
+      "file": "00125.png",
+      "elapsedMs": 6392.8513,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 226813,
+      "sha256": "86a1ef7b278dea778540642bcb4d8a64f2e9b662731e84f275ffbc5ad959dbeb"
+    },
+    {
+      "file": "00126.png",
+      "elapsedMs": 6403.3616,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228166,
+      "sha256": "fc53d8bff9510a39be2c68e69b061c2724af1abd78abab340c4acbcaff446243"
+    },
+    {
+      "file": "00127.png",
+      "elapsedMs": 6451.2124,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228474,
+      "sha256": "655153d1c896fc4b40d20dc92c4a5dfc1f9c4690b49e7dde2977c8b4025aaf6a"
+    },
+    {
+      "file": "00128.png",
+      "elapsedMs": 6501.391,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228431,
+      "sha256": "f56637745ef8340edddeda946bd4c73446784f786441cad1a4b98c4127dfa623"
+    },
+    {
+      "file": "00129.png",
+      "elapsedMs": 6551.0451,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228694,
+      "sha256": "998cf5e861be9ec7f7a89a05b684b2e111c6928aac77cd2e7cc8ce66829cd488"
+    },
+    {
+      "file": "00130.png",
+      "elapsedMs": 6601.3321,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228663,
+      "sha256": "c77a2f4c5f9a2dacb59cb876255ad5819b4bc08407f739e53271f425284565fe"
+    },
+    {
+      "file": "00131.png",
+      "elapsedMs": 6651.2493,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228700,
+      "sha256": "a2b23fbc4c215193096dfd79f005e378417bca44614d35eb9bfde0bb5b25b723"
+    },
+    {
+      "file": "00132.png",
+      "elapsedMs": 6701.6197,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228723,
+      "sha256": "1fb3df14c4b5c35e1c4b7efe0f79b2ada54f6163f40056372e824faa57df47fd"
+    },
+    {
+      "file": "00133.png",
+      "elapsedMs": 6753.0009,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228311,
+      "sha256": "489da7eaba993d85a4abf46612433711f6749ab74113af0701d38f1a462ae743"
+    },
+    {
+      "file": "00134.png",
+      "elapsedMs": 6803.6146,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228816,
+      "sha256": "a248f23f0f4882d87d2d96643402d7967792eca9d6faaf6907eb5c417644db22"
+    },
+    {
+      "file": "00135.png",
+      "elapsedMs": 6853.2799,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228865,
+      "sha256": "2af1c1b30d98512881d83c61b773652b4ca945d5b77ac3f99d82f7916ad88199"
+    },
+    {
+      "file": "00136.png",
+      "elapsedMs": 6903.7412,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228413,
+      "sha256": "ce896ba74fd669a4fbb279bbae764c7828e7b20d5c8e507a5a9b49d83acb2394"
+    },
+    {
+      "file": "00137.png",
+      "elapsedMs": 6954.2819,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228163,
+      "sha256": "ef9342c526e0971eefe853d98c56716c6787b57c77c72fea4349e84c134936c8"
+    },
+    {
+      "file": "00138.png",
+      "elapsedMs": 7003.8713,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228688,
+      "sha256": "8f30b4db42be3e8e7d8a5e4787beedb74b06c6e3eae2ba13cf955ea09d684fa0"
+    },
+    {
+      "file": "00139.png",
+      "elapsedMs": 7054.2187,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228235,
+      "sha256": "4c3d6df3f1fa7ae184a4ae4d19456c8ae12480ebd94894f5342f97fd53000b4d"
+    },
+    {
+      "file": "00140.png",
+      "elapsedMs": 7104.93,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228501,
+      "sha256": "b42ac34ff77ed817e191da4e35cbc4ed3aee492a9b10a3308a378b7e47962078"
+    },
+    {
+      "file": "00141.png",
+      "elapsedMs": 7155.0637,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228660,
+      "sha256": "139c0eb6e7b25da81a3b6e5647749ce3ee0862675bdd92484a2229e3657070e2"
+    },
+    {
+      "file": "00142.png",
+      "elapsedMs": 7204.4202,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228569,
+      "sha256": "2f948853d2d3377566b2d09dc3e2a24384ca78197a2bfe024f9728bf3f24b2cd"
+    },
+    {
+      "file": "00143.png",
+      "elapsedMs": 7254.696,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228658,
+      "sha256": "87551b8e6c8c1ba9cd5e3dbead23cee1f94e06a9e679b02ae8d47ea675282435"
+    },
+    {
+      "file": "00144.png",
+      "elapsedMs": 7304.8508,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228888,
+      "sha256": "fa556a8c8fa18116543436a1ec5032b780a002323366afee8afefb7473ec4c62"
+    },
+    {
+      "file": "00145.png",
+      "elapsedMs": 7354.695,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228869,
+      "sha256": "fbb76c02c37dd7093dd2c8db47015bf89b6fe1211051e8a95af11de395f82a1f"
+    },
+    {
+      "file": "00146.png",
+      "elapsedMs": 7405.1711,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229710,
+      "sha256": "4904aa8232980138e01893dac42ad0daaa9f97371092df71ab5a7b7aab2ffddc"
+    },
+    {
+      "file": "00147.png",
+      "elapsedMs": 7455.175,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229574,
+      "sha256": "af7463dc9558473989b92b103ffe349f30065f5f770e1c70aee723f2890dc279"
+    },
+    {
+      "file": "00148.png",
+      "elapsedMs": 7505.0712,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229534,
+      "sha256": "caa6616e47f8514c2ce3f187cfcfa5aa05c6f408e370e245a5e84d1972b8b0d1"
+    },
+    {
+      "file": "00149.png",
+      "elapsedMs": 7555.3291,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229503,
+      "sha256": "77fd5e825f9cbc1c3bc68bb8307178aebb4a0b020e153d1a3e2d40860386d568"
+    },
+    {
+      "file": "00150.png",
+      "elapsedMs": 7605.7877,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229332,
+      "sha256": "22eb43bf03e7aeb47c828b6a2ff9def60fc35fd138811802dc1b9b7a16b85f89"
+    },
+    {
+      "file": "00151.png",
+      "elapsedMs": 7655.8546,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229396,
+      "sha256": "364f9a1814069f4d566258e017ba01aa9095eb65635dc00173c357c831b850ec"
+    },
+    {
+      "file": "00152.png",
+      "elapsedMs": 7706.3307,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229417,
+      "sha256": "586339b9a106bafb1bba142f75d0e5d2a26c490177dbf0d97e4e4dd6259fcd11"
+    },
+    {
+      "file": "00153.png",
+      "elapsedMs": 7756.4944,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228842,
+      "sha256": "5658275cbf6cbce6cac141952fd3458499f3fe913d71efcb21b0386ea45c97af"
+    },
+    {
+      "file": "00154.png",
+      "elapsedMs": 7806.8611,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229638,
+      "sha256": "d42a047286d87ec6f5598d140f85f6803c1ba05e48c3862fa1e8094072ca7eb0"
+    },
+    {
+      "file": "00155.png",
+      "elapsedMs": 7856.6048,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229740,
+      "sha256": "d1b0b5451278a5f57548f975e40d209e6751fd32497a327a8270c9c300f11975"
+    },
+    {
+      "file": "00156.png",
+      "elapsedMs": 7907.8725,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229847,
+      "sha256": "c8ec5386bfc4e6c64dc8387b5e7ec3695d00485dae99b001edc8534ebc162bbf"
+    },
+    {
+      "file": "00157.png",
+      "elapsedMs": 7957.9932,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230021,
+      "sha256": "b3c4d415bc07ac757b1b5e9ebdabb91ffe19170d07b7ffef40404bd314a24ec9"
+    },
+    {
+      "file": "00158.png",
+      "elapsedMs": 8008.4992,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229627,
+      "sha256": "5eb9e760727f77ad939ae040f7fa4d42993b888f29fd89963607f08a20b6c1b5"
+    },
+    {
+      "file": "00159.png",
+      "elapsedMs": 8058.2332,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228906,
+      "sha256": "add9a2cc072ffe3e59f0ceaafccc7faf3214b8a5d5c6e94a1ea16093d0aa8bf5"
+    },
+    {
+      "file": "00160.png",
+      "elapsedMs": 8092.9357,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228524,
+      "sha256": "46d28ac56d0ffd793b153e9919bf40c283104fd4e91b040c825406efeab9fc6e"
+    },
+    {
+      "file": "00161.png",
+      "elapsedMs": 8142.8765,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228182,
+      "sha256": "8d7bc8eb2a07739a3926d3cede424f7da73f560887cd5d7b599df717ab200d72"
+    },
+    {
+      "file": "00162.png",
+      "elapsedMs": 8193.6777,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228326,
+      "sha256": "ead2e4c9425bce98998332ad7a6526bebd0d6dce0d7993da207269622590aa49"
+    },
+    {
+      "file": "00163.png",
+      "elapsedMs": 8244.8364,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228635,
+      "sha256": "8730878c6b2b7744b0f4b1183c16cc5a815a0b53424269c7c560d4b3d10655b6"
+    },
+    {
+      "file": "00164.png",
+      "elapsedMs": 8295.561,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229360,
+      "sha256": "61904b68f8a1d7d17319917c778a7c923f1f15f2c3b6e076b0524a99de9f174e"
+    },
+    {
+      "file": "00165.png",
+      "elapsedMs": 8346.0757,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229358,
+      "sha256": "ccd1c525b20053b6675e65fdaa937a83e4937a8ffc1962ac13aef999a48e2564"
+    },
+    {
+      "file": "00166.png",
+      "elapsedMs": 8397.3989,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229906,
+      "sha256": "775197818c39aba90457606f5e7663c6b5e6376f63951a003b8697f685b522ae"
+    },
+    {
+      "file": "00167.png",
+      "elapsedMs": 8446.8347,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230041,
+      "sha256": "db4d1a1eac5674450cb03a3879de989a4a4868c46660dca5745c24c7a44a7dc7"
+    },
+    {
+      "file": "00168.png",
+      "elapsedMs": 8496.8851,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229709,
+      "sha256": "e9dc0107b7d4949a0e112a520389e142d2c5b2038dbcabcc64faa94dfaf8cb57"
+    },
+    {
+      "file": "00169.png",
+      "elapsedMs": 8547.1498,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229515,
+      "sha256": "4525d4c8014c4cd7607fbd6670c564adfc67b98ce9d2d443f5f6d5c6684ee259"
+    },
+    {
+      "file": "00170.png",
+      "elapsedMs": 8598.0877,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229405,
+      "sha256": "1c8d9e0b9ea99c74959a3fe637bd1462b03b908169e032f620b38a320ee1cfc7"
+    },
+    {
+      "file": "00171.png",
+      "elapsedMs": 8647.8687,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229447,
+      "sha256": "5ffcec1888310d571564d3238cfc686eb0f250f2d9f5f086c3cd8bf2755ea99a"
+    },
+    {
+      "file": "00172.png",
+      "elapsedMs": 8698.5142,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229324,
+      "sha256": "bba68b5523178bbf5c8af4277dab34fc2cc94115ca6cb3e9ff6a747e8cb5ff7b"
+    },
+    {
+      "file": "00173.png",
+      "elapsedMs": 8749.0971,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 228855,
+      "sha256": "4aaf11a1fb1b4f4bb3e7dacdea08a26b3fb09747ddd95526f2fb601b25332d6e"
+    },
+    {
+      "file": "00174.png",
+      "elapsedMs": 8798.9401,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229049,
+      "sha256": "5933bc18953fc10d997502fdc900de288ecef5afa514147ab6048da15281e982"
+    },
+    {
+      "file": "00175.png",
+      "elapsedMs": 8849.2734,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229363,
+      "sha256": "6ca89b8db9ecc42e78ef82b9e02b112d6ac036cc7416afa83a0bd928142a82ad"
+    },
+    {
+      "file": "00176.png",
+      "elapsedMs": 8899.6793,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229268,
+      "sha256": "74b0846849771a49d4082bf6c37ad546def7f09933cc8ef43564e1d8311df94d"
+    },
+    {
+      "file": "00177.png",
+      "elapsedMs": 8950.6889,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229326,
+      "sha256": "c6a13ce51a054b2254c1ba6c3f5d17817f524e05324f8fc025f6612390df04e9"
+    },
+    {
+      "file": "00178.png",
+      "elapsedMs": 9000.6156,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229148,
+      "sha256": "9404f492fd0ada81d413482b3536fa29f44facd878cfe4d7504a72633020378d"
+    },
+    {
+      "file": "00179.png",
+      "elapsedMs": 9051.1529,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230118,
+      "sha256": "7fd77d5e4f599afb244e9298235ad5b8cd51a17b2ffd824bca5f6afa24c09bf4"
+    },
+    {
+      "file": "00180.png",
+      "elapsedMs": 9102.4498,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230028,
+      "sha256": "c4dad8e273675864cf80e37220ef87ece74b3c490e71cedfdd2c661c43481dfe"
+    },
+    {
+      "file": "00181.png",
+      "elapsedMs": 9152.4952,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229465,
+      "sha256": "205536e1f1ea6443fb3286bbdf7279616f5ec524fc73cc145039001d0d3cc65b"
+    },
+    {
+      "file": "00182.png",
+      "elapsedMs": 9203.1969,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229383,
+      "sha256": "372850f9820959635f3c1de90034d910c0128e01f581309597634fd7db0160de"
+    },
+    {
+      "file": "00183.png",
+      "elapsedMs": 9252.8278,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229168,
+      "sha256": "39cecb6879f659988558893ce78b03c743724a3dba1cde5ac9d0e14921225bd4"
+    },
+    {
+      "file": "00184.png",
+      "elapsedMs": 9302.7639,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229876,
+      "sha256": "e6034de7f9ebfdf469c760135e56d9f21191537d4499ce77ab1297436cc03bd2"
+    },
+    {
+      "file": "00185.png",
+      "elapsedMs": 9354.3545,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230340,
+      "sha256": "343b45467ec6d38737ef45df9c3c1902c1ad2dd5eb45d135e88c282858a8e2b0"
+    },
+    {
+      "file": "00186.png",
+      "elapsedMs": 9403.8469,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229800,
+      "sha256": "21f63eed484660b9832105688865cacd0d5de56d1ac5a34b9e6624442c926394"
+    },
+    {
+      "file": "00187.png",
+      "elapsedMs": 9454.3273,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229721,
+      "sha256": "1693bd6c56ed05d34efc0d15a3f17f52085700af54c99b90aca95479cf1ba3cd"
+    },
+    {
+      "file": "00188.png",
+      "elapsedMs": 9504.7785,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229615,
+      "sha256": "94b537386bd653938cbffc8d7b57b79693abf359edbed8602fcd90a7a8d0aa08"
+    },
+    {
+      "file": "00189.png",
+      "elapsedMs": 9554.7502,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229708,
+      "sha256": "cd0a68ecb07178ad90ba122440066b6426599b6899ed82e14c1874cc20c3000f"
+    },
+    {
+      "file": "00190.png",
+      "elapsedMs": 9604.5703,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229443,
+      "sha256": "fd7163416c493ce772aaba7664b84c270275451f2fa212824a4cb59d91d2ee0f"
+    },
+    {
+      "file": "00191.png",
+      "elapsedMs": 9654.5736,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 229797,
+      "sha256": "f1e32ed0044ec1c59c7c5c3cea91f61fd4983383b9d8e6292b782be1d435c361"
+    },
+    {
+      "file": "00192.png",
+      "elapsedMs": 9704.7187,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230441,
+      "sha256": "22620c93d45884851e943b9cfd9e22d40f94c6ec91128adfe28303a83768d399"
+    },
+    {
+      "file": "00193.png",
+      "elapsedMs": 9754.6895,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230466,
+      "sha256": "2b23b7ae1724d4c128d43428aeb72308c84bbdd032f7cc360c8cd273f84e3a18"
+    },
+    {
+      "file": "00194.png",
+      "elapsedMs": 9805.8825,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230744,
+      "sha256": "09bff0eba95986caf65ae562b775fc401dca4da7f727fa2d589a736bd753b571"
+    },
+    {
+      "file": "00195.png",
+      "elapsedMs": 9855.9591,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230973,
+      "sha256": "a6a01d948bb8d560de311e9a078d43a7b8886e54174d4a52898459a75e5c5886"
+    },
+    {
+      "file": "00196.png",
+      "elapsedMs": 9905.8871,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231105,
+      "sha256": "9ff07591d7261cd2fbd692f338442f29e0a389e532d64afb91ab9d026865c632"
+    },
+    {
+      "file": "00197.png",
+      "elapsedMs": 9956.0749,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230873,
+      "sha256": "ae59dde1e6b626f5a70160a8811206d473aee11a55e92ede8d442e0e478a8b39"
+    },
+    {
+      "file": "00198.png",
+      "elapsedMs": 10006.4808,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230977,
+      "sha256": "cd6a887f2203dcce1bd9c7d2ef916558504fb0b96cfaf67ace382bb8178056db"
+    },
+    {
+      "file": "00199.png",
+      "elapsedMs": 10044.7183,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116612,
+      "sha256": "4bf4cc12f218b16677307aba869ab4051518b35bde78a893084800a2573dcfd3"
+    },
+    {
+      "file": "00200.png",
+      "elapsedMs": 10107.555,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116643,
+      "sha256": "da3bd4bffc650fe38256eca2f57551fc5c3789fbebb8c4e51019f335bab7546c"
+    },
+    {
+      "file": "00201.png",
+      "elapsedMs": 10157.7023,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116744,
+      "sha256": "9357d6e5b9f8ae6f9096ee697350cb804cec6c067bb3f949a21c7023ac1e47e9"
+    },
+    {
+      "file": "00202.png",
+      "elapsedMs": 10207.7927,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116680,
+      "sha256": "cfb53a0ecdca1904715d28d05a6e8e4b88bba80d1910d085e21667da7bf2513d"
+    },
+    {
+      "file": "00203.png",
+      "elapsedMs": 10257.7635,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116870,
+      "sha256": "6662976e535db7967b7fa502af37351365b1e9710946f08a91cdbd8cbbd47c22"
+    },
+    {
+      "file": "00204.png",
+      "elapsedMs": 10308.3563,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116959,
+      "sha256": "0c95d11e3bf5af539bc2b5d7c16ca2a534745b0e99ec6e1e3afdd043a7bbf881"
+    },
+    {
+      "file": "00205.png",
+      "elapsedMs": 10343.1714,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116949,
+      "sha256": "d1a983bd7a850588e04608361bbeb981ff6bec6a94f4f6dc5c5d86fd6785655b"
+    },
+    {
+      "file": "00206.png",
+      "elapsedMs": 10393.0012,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116971,
+      "sha256": "ac633d5577c866c4a647e08e4fb8c5134e69454efa1103ae4034438b10858521"
+    },
+    {
+      "file": "00207.png",
+      "elapsedMs": 10443.5477,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 117091,
+      "sha256": "c457935b1986ec912358af4b643e15b20a0776b5e5b59263bfb70536e5960b72"
+    },
+    {
+      "file": "00208.png",
+      "elapsedMs": 10493.8322,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 117053,
+      "sha256": "c956a858d583721a79446a8af07be2d0910e06d56b44893e07994c90f5112f48"
+    },
+    {
+      "file": "00209.png",
+      "elapsedMs": 10543.9848,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 118001,
+      "sha256": "05c2a8673203585cdc10170d64ef7efc968125e011d7925a7214edf3dd90a7f3"
+    },
+    {
+      "file": "00210.png",
+      "elapsedMs": 10593.853,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 117969,
+      "sha256": "8e268fb002aed0891741242b2d2d95aee37fd83a1a705c708677e3da28cf2ac9"
+    },
+    {
+      "file": "00211.png",
+      "elapsedMs": 10644.7526,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 118113,
+      "sha256": "b91e6414ba256634c5e2651d45ba5ac5c5e0784cb58972ac7aef5a45d1d9c7a0"
+    },
+    {
+      "file": "00212.png",
+      "elapsedMs": 10694.1245,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 118009,
+      "sha256": "8ec3a19c8d1030c996bc66942ae0d9f8a340b2e2d28e12fdf7bb7b0a4bc14a9e"
+    },
+    {
+      "file": "00213.png",
+      "elapsedMs": 10744.1627,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 118067,
+      "sha256": "ff830b274d5a146eedad2ceaf6582f2d08bbeb0b88a9cf7df09f12a7c24f5dc0"
+    },
+    {
+      "file": "00214.png",
+      "elapsedMs": 10793.862,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 117944,
+      "sha256": "c23471fb819d4248d1206c85e8d389dc2911c878e5087c3ecd3f869646eeb4cb"
+    },
+    {
+      "file": "00215.png",
+      "elapsedMs": 10844.3567,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 117689,
+      "sha256": "b4f2a8290c955ab0286279dd8d66324e67ef987841ad12d5204a254df3f110b3"
+    },
+    {
+      "file": "00216.png",
+      "elapsedMs": 10895.0054,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 117465,
+      "sha256": "eb3f1f1076f682caa54d7636952ea33ba3a2b73f304a2c7f9ebe0ab39f5e60de"
+    },
+    {
+      "file": "00217.png",
+      "elapsedMs": 10945.1947,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 117097,
+      "sha256": "368072de5faa6092a3f45561170c7a2f37396599b0047b58ff0a2066a5ed2f42"
+    },
+    {
+      "file": "00218.png",
+      "elapsedMs": 10996.5273,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116905,
+      "sha256": "d9ec82593298c46b1e7738980593d22fab144e43e0603442707cb086050c657e"
+    },
+    {
+      "file": "00219.png",
+      "elapsedMs": 11048.5837,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116974,
+      "sha256": "89c2b0a40ceafa543b056d2687976b9607d0a45a58322a181fa97ff0b38f19ca"
+    },
+    {
+      "file": "00220.png",
+      "elapsedMs": 11098.1872,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116767,
+      "sha256": "e15e4e1a00a8ffa7bb15f58d4e886b0a72ee559b4903076c35368b8483310334"
+    },
+    {
+      "file": "00221.png",
+      "elapsedMs": 11149.4612,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116752,
+      "sha256": "188b83b1ccc11b071eac24ad0031778d286b63a0d310d4474870644fb3cd103a"
+    },
+    {
+      "file": "00222.png",
+      "elapsedMs": 11199.8363,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 116781,
+      "sha256": "e47a16f59ad5c6fd794eb8d4f817b732ab1f4772e99de753ae8002cf2d301347"
+    },
+    {
+      "file": "00223.png",
+      "elapsedMs": 11254.3453,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230888,
+      "sha256": "13b47a7948ef4056f746f2678a9fce0ee54179719ea81497a6518eb322536653"
+    },
+    {
+      "file": "00224.png",
+      "elapsedMs": 11303.2058,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231864,
+      "sha256": "346045a3f9ce6b8419234565f700dd6294e23967ac4307d0c5e4d9d661813600"
+    },
+    {
+      "file": "00225.png",
+      "elapsedMs": 11350.419,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231652,
+      "sha256": "05d69909b7ff2f29be4c876573b697dc3fba034b0f05f5b37256458960ee873a"
+    },
+    {
+      "file": "00226.png",
+      "elapsedMs": 11400.9021,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231792,
+      "sha256": "4b1e3c985da28cde122075dfd43c99c700fbb41f6367b3f126623f9ff5f720ed"
+    },
+    {
+      "file": "00227.png",
+      "elapsedMs": 11450.7919,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231736,
+      "sha256": "d4a86a792c961fa6ea03feda5472f77f5ea4aa6cb2ba55ff18429258d1aa7285"
+    },
+    {
+      "file": "00228.png",
+      "elapsedMs": 11500.8099,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231310,
+      "sha256": "2741848fa88fdc41574f04dce37be040510418a9f7f7562a87d8ea3dda92e9f8"
+    },
+    {
+      "file": "00229.png",
+      "elapsedMs": 11550.6543,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231209,
+      "sha256": "84f144371d6fe60db4b96bf78068d2947b9a4861402a083e3168b58ba7f67ff9"
+    },
+    {
+      "file": "00230.png",
+      "elapsedMs": 11600.6912,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231276,
+      "sha256": "d3aac1aab66870b78590a9fada73a7707c961ebe390bd1ad0976e384a7e46ca1"
+    },
+    {
+      "file": "00231.png",
+      "elapsedMs": 11650.9657,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231412,
+      "sha256": "baa1825b1e568a43f94970feaecaa40c198c5d40f7a718e3645a0ab6e947979c"
+    },
+    {
+      "file": "00232.png",
+      "elapsedMs": 11701.7492,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231288,
+      "sha256": "ec65decb7c0d85d2c34bef6c0c5596ad09fbe523711853dc5719fdb14aa3a046"
+    },
+    {
+      "file": "00233.png",
+      "elapsedMs": 11751.0737,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231208,
+      "sha256": "f855988024dd7a745a116b80938fbdb25c0a24d1ff92dcbc83ae4d5ee33e67db"
+    },
+    {
+      "file": "00234.png",
+      "elapsedMs": 11800.6668,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231303,
+      "sha256": "6c1f531356bdd7445cd4fab714994cbae1c2f8425b802c9380b839600b74aba1"
+    },
+    {
+      "file": "00235.png",
+      "elapsedMs": 11850.8173,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231409,
+      "sha256": "a36aa7da76859612a55e942489925949889a7689f81e21a1f87cb6a31bfe1549"
+    },
+    {
+      "file": "00236.png",
+      "elapsedMs": 11900.6939,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231851,
+      "sha256": "9c636755e40aeafede6019047071be52f8b67aa1a8599bda53c802ce9ab51293"
+    },
+    {
+      "file": "00237.png",
+      "elapsedMs": 11950.6818,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231983,
+      "sha256": "def35ab9b41f9e662ffcd98c3941fee4617ce899dde9c881b33cb681295df2eb"
+    },
+    {
+      "file": "00238.png",
+      "elapsedMs": 12000.7407,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231815,
+      "sha256": "f49a3f5060f8fe08835fdd821d87bd472169193584805821744457dd4885c288"
+    },
+    {
+      "file": "00239.png",
+      "elapsedMs": 12050.9108,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231535,
+      "sha256": "242a9db235c25d5fe7bb2ffbdb4b2024a71ad334faf3f7f69efab0a3b0d214c9"
+    },
+    {
+      "file": "00240.png",
+      "elapsedMs": 12100.6304,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231271,
+      "sha256": "cfd9552711451a52bf36288b78a92207e7d6aaf8e04516427a9475cb1adfbd67"
+    },
+    {
+      "file": "00241.png",
+      "elapsedMs": 12150.8067,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231684,
+      "sha256": "09529fe318aef689d56bf2369f112c45facaa49f89b56ba96f65462bc1a45152"
+    },
+    {
+      "file": "00242.png",
+      "elapsedMs": 12200.6853,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231549,
+      "sha256": "ac4aa469d86bfb9fb43326baee499496352039eb8a6d79b802d676a0fcdef0bc"
+    },
+    {
+      "file": "00243.png",
+      "elapsedMs": 12251.1453,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231411,
+      "sha256": "3a00e5cd324376ad4eb8da2860a12fd765fe67d0e3463d569365e0b31d40de4b"
+    },
+    {
+      "file": "00244.png",
+      "elapsedMs": 12301.5041,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231643,
+      "sha256": "03cb5b5a3e5f8f2f8731d31138b53753d97c1f9af5317a098821ede8d1b6caf8"
+    },
+    {
+      "file": "00245.png",
+      "elapsedMs": 12351.9805,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231797,
+      "sha256": "b28e773918bcd81d7a44dfbc14fcc1f98c64f2182c5982616a92b7b8170a4f1a"
+    },
+    {
+      "file": "00246.png",
+      "elapsedMs": 12402.4705,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231960,
+      "sha256": "30e75b9c851250b047e9a988709e15cc052ad13161c2df5fcaeeaa4e66884913"
+    },
+    {
+      "file": "00247.png",
+      "elapsedMs": 12453.9231,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231643,
+      "sha256": "c4c8ba1c005d08d917b26a4d0103f1e887e3effb378ef165a596fdeac3bc3fd1"
+    },
+    {
+      "file": "00248.png",
+      "elapsedMs": 12506.6005,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231645,
+      "sha256": "7cee3ec0b3ae4403871edcaf400f32919a1bd6990807b935c0002223a5427fa0"
+    },
+    {
+      "file": "00249.png",
+      "elapsedMs": 12552.9041,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231730,
+      "sha256": "28c8c9014ffa2c7ad6a87de442926607838eafc93805e8e41ea68b2281668a18"
+    },
+    {
+      "file": "00250.png",
+      "elapsedMs": 12602.4489,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231592,
+      "sha256": "e19ed85c09c7893b3662e716a417447b8af30e0d2c2262002d086fda3acbe71d"
+    },
+    {
+      "file": "00251.png",
+      "elapsedMs": 12653.6447,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231539,
+      "sha256": "45fbbe4451e81a660df16e5b4ccc54a786d2a84c0515ac226d1fad07ae0b12f3"
+    },
+    {
+      "file": "00252.png",
+      "elapsedMs": 12703.2326,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231383,
+      "sha256": "f4803ac717251ee220c97eecc798a16a30e5c778029ee1d40b777beb892ebb75"
+    },
+    {
+      "file": "00253.png",
+      "elapsedMs": 12752.7225,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231169,
+      "sha256": "c8f1dbd0c6e50180c7810872b0cf7b4d856370aa098c8603f3d88b4e6fe78117"
+    },
+    {
+      "file": "00254.png",
+      "elapsedMs": 12802.9198,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231492,
+      "sha256": "4bd8fb04fa1e9c22943d0ebcdecbedfbd13c27c87d43c12330c583c6ff5f189b"
+    },
+    {
+      "file": "00255.png",
+      "elapsedMs": 12853.6506,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231816,
+      "sha256": "aecdd4059baac0fd6bf8f4289ed36d1bbbea41081badc9c0ecdf3c441885a458"
+    },
+    {
+      "file": "00256.png",
+      "elapsedMs": 12903.3758,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231988,
+      "sha256": "5a9faba4f3ed76e10b2b42d50f8397db1a6faca48435397adf1c8fc1c57ae04b"
+    },
+    {
+      "file": "00257.png",
+      "elapsedMs": 12953.1509,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231753,
+      "sha256": "013b99b15d36311888af8a97b6a6b667d3b95ddee3c9356e5ce3a5b5999f70b6"
+    },
+    {
+      "file": "00258.png",
+      "elapsedMs": 13003.5298,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231496,
+      "sha256": "5b8493287b63febc5cf8192c8132e1c77c2d6f98eeb095c02a8f4f1c60fa5a9a"
+    },
+    {
+      "file": "00259.png",
+      "elapsedMs": 13053.4092,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231532,
+      "sha256": "d172a8e782ad6a53de55b5076e2b412295b46330ef5a6e4e3e658abbf13c592c"
+    },
+    {
+      "file": "00260.png",
+      "elapsedMs": 13103.2245,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231586,
+      "sha256": "22925bbdb4e55b0083e7b9dee581a8af6e3bcd1bd89027476402dfe83a1e34be"
+    },
+    {
+      "file": "00261.png",
+      "elapsedMs": 13153.7585,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231601,
+      "sha256": "00dd0f0bc35feaafd8f3d28eb304edd03a81bbb6a8c9e2df132bda323c2754eb"
+    },
+    {
+      "file": "00262.png",
+      "elapsedMs": 13203.9516,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231661,
+      "sha256": "28477e93ec0e49722c8d6505fe64e9f681bfe8c5abe5f0374bb3af819113b4d2"
+    },
+    {
+      "file": "00263.png",
+      "elapsedMs": 13254.651,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231488,
+      "sha256": "f208d78de757927c69cf88814c919288eff017bcdaf5f2e44dbb518fd40fc3d5"
+    },
+    {
+      "file": "00264.png",
+      "elapsedMs": 13304.6954,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231627,
+      "sha256": "6494c06c58e387a9c355257de76663a1907c0bdeaf245dc8e15a9dbd13d0491c"
+    },
+    {
+      "file": "00265.png",
+      "elapsedMs": 13354.7582,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232183,
+      "sha256": "f8d25b41d8ad3794e51c5443972b9bb94a59d1a493c1e11f7e2035de9c85d536"
+    },
+    {
+      "file": "00266.png",
+      "elapsedMs": 13404.4966,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232017,
+      "sha256": "3ec1aaa29c0e03e57096e7a74511638c6fd8b23d8aea9aeec8c27df3142a0574"
+    },
+    {
+      "file": "00267.png",
+      "elapsedMs": 13454.961,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231808,
+      "sha256": "b980956775c144acbf37d50f2426a3cadb73e57d364511f61392cc97eb9fd5f9"
+    },
+    {
+      "file": "00268.png",
+      "elapsedMs": 13505.9509,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231678,
+      "sha256": "de5ee12662ac13fe7416e504acf0605d3121e12749930e7801745a339a211f2a"
+    },
+    {
+      "file": "00269.png",
+      "elapsedMs": 13556.4889,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231468,
+      "sha256": "c852896a1e15d920cca9b14a1af8aa63dbc29afaa4f60b01b3a05a0176c39d31"
+    },
+    {
+      "file": "00270.png",
+      "elapsedMs": 13606.3887,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231104,
+      "sha256": "566bc31396c9e48631b1bfc5c37f66ecd67945bb1634aebf3ea80aebd6936d17"
+    },
+    {
+      "file": "00271.png",
+      "elapsedMs": 13656.9456,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231048,
+      "sha256": "9f447d3c60d60e95638368811b341bd66e086fa606adca9765760486d1de91a2"
+    },
+    {
+      "file": "00272.png",
+      "elapsedMs": 13707.58,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231398,
+      "sha256": "9f5353ca9465ec3bcef47a62c033038caa6f370091fcd28f30a3e496d505fa03"
+    },
+    {
+      "file": "00273.png",
+      "elapsedMs": 13758.2492,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230824,
+      "sha256": "aeaa1c6b01b3a4286c35567ed5c27237d49e7084dfd02b0d1b2dfb97920b818e"
+    },
+    {
+      "file": "00274.png",
+      "elapsedMs": 13792.8896,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231288,
+      "sha256": "ec07fa65eb8ebf69a4512d37aedc0c6b5ec7f57e85a747d1eca9cb5f65e23a45"
+    },
+    {
+      "file": "00275.png",
+      "elapsedMs": 13843.1966,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231546,
+      "sha256": "b81dafa152575a0fc74564fb5838cdc088bc6c7942246db0a9cf1d5dbe43fb79"
+    },
+    {
+      "file": "00276.png",
+      "elapsedMs": 13893.0235,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231522,
+      "sha256": "348fd1be409d6c3392a4a1b131460895e4344d670184d354789723f474e2aaf2"
+    },
+    {
+      "file": "00277.png",
+      "elapsedMs": 13943.9283,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231668,
+      "sha256": "8ad259a5fb3ede25812d6775e1688910625e642c203387f8594af443f125f322"
+    },
+    {
+      "file": "00278.png",
+      "elapsedMs": 13996.6412,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231218,
+      "sha256": "ae428ce24c3b8ea9635795ebaefdc4a5e0b5fc27594d78d086630893c5b9a153"
+    },
+    {
+      "file": "00279.png",
+      "elapsedMs": 14045.9916,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231110,
+      "sha256": "cc0f58b59c08206dc5cf26d6545cde5faf479475736011819123efeb854e9477"
+    },
+    {
+      "file": "00280.png",
+      "elapsedMs": 14095.6173,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231243,
+      "sha256": "c4ce388e712cd11347d0ee804fadaeaf13dac485936edaf102b061e2c139ddb2"
+    },
+    {
+      "file": "00281.png",
+      "elapsedMs": 14145.927,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231158,
+      "sha256": "ecd9053fc127f295ec05fd45984145923e7fa2655bda0efcf9f4fe8c0e07d727"
+    },
+    {
+      "file": "00282.png",
+      "elapsedMs": 14195.6564,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231535,
+      "sha256": "4617502bf756a51104cdeb64fb221aac3f9b0cd0892442441ec1ecf59aa96e49"
+    },
+    {
+      "file": "00283.png",
+      "elapsedMs": 14245.6859,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231501,
+      "sha256": "e43fd177f7a78010949ef47524b816a1f2d226f0f686824b7eae4df14855b8b6"
+    },
+    {
+      "file": "00284.png",
+      "elapsedMs": 14297.3586,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232125,
+      "sha256": "8f6a43ea63ecd4f99a4d48e03798366e1b88186047b4d899ee046f282c24b102"
+    },
+    {
+      "file": "00285.png",
+      "elapsedMs": 14346.886,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232175,
+      "sha256": "c8a553224649568caac9931798169fd61071cd554a183bfc49d212086142a304"
+    },
+    {
+      "file": "00286.png",
+      "elapsedMs": 14396.3423,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232225,
+      "sha256": "c220e1daf5f37413b53c2e2d0b8762e3546fa5b38e22beafb939d0271847c1ab"
+    },
+    {
+      "file": "00287.png",
+      "elapsedMs": 14448.2234,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232117,
+      "sha256": "e1ba59e06bc8c955fde5824bfe55cbdc92dcfe3aa9ea9f5de703a49e1997b649"
+    },
+    {
+      "file": "00288.png",
+      "elapsedMs": 14496.9621,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232209,
+      "sha256": "1287ef647bf12eda989ef53bf633b912b0d7b14f96868c5cd791730f57a96af2"
+    },
+    {
+      "file": "00289.png",
+      "elapsedMs": 14547.4921,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231915,
+      "sha256": "30f19d02a51714c36230c7a8ef7b6addede34e5da42bc9062cd55e8258799429"
+    },
+    {
+      "file": "00290.png",
+      "elapsedMs": 14597.1237,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231886,
+      "sha256": "bc5636a0c576c8b49b1f6dfcc6a4a4592d48268d706d2cdfd014da83c271a898"
+    },
+    {
+      "file": "00291.png",
+      "elapsedMs": 14646.8842,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231571,
+      "sha256": "068ffe8f4de6868ea3b186186ed26979faa40ec69d976a7393b60a81e2c79548"
+    },
+    {
+      "file": "00292.png",
+      "elapsedMs": 14698.7655,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232034,
+      "sha256": "77fd404dfbf5666d1314c383a8b4073afbd8a311f5fdde20cf8a8d14ecbbfd7b"
+    },
+    {
+      "file": "00293.png",
+      "elapsedMs": 14747.9931,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231983,
+      "sha256": "9d7cc4279661e760e5a4404e96f4d0d709432d2415420c8a1d814bfecf9c1f19"
+    },
+    {
+      "file": "00294.png",
+      "elapsedMs": 14797.8256,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232149,
+      "sha256": "e8c5b6307ddbc4b8fd8adcf0c3973f49d86dcc8d54e5f44a02ab64e558c81837"
+    },
+    {
+      "file": "00295.png",
+      "elapsedMs": 14847.41,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232071,
+      "sha256": "02b4f9d677e5fdb843a84c221c0652355b53986dc3deac60d59aac8431fd4644"
+    },
+    {
+      "file": "00296.png",
+      "elapsedMs": 14897.6468,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232125,
+      "sha256": "a9444926f881f19fbb1a03a3db3facc818175928384e1c7944a3f88bc4d112da"
+    },
+    {
+      "file": "00297.png",
+      "elapsedMs": 14948.6435,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231702,
+      "sha256": "ebcf4e4810ae8a5afadd7b28a4890767aaf15db74ebb078f7a8059f9605ed4d0"
+    },
+    {
+      "file": "00298.png",
+      "elapsedMs": 14997.7705,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231809,
+      "sha256": "622590da2ec2ad12f96ce8e1f171b6dca9517b0600cab0de7d76c1576bb0a048"
+    },
+    {
+      "file": "00299.png",
+      "elapsedMs": 15048.596,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231485,
+      "sha256": "82867a6366b6e95e049e8a9bf97da1b8b74768f2dce292f78d4c0b5e177d93d8"
+    },
+    {
+      "file": "00300.png",
+      "elapsedMs": 15100.0962,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231983,
+      "sha256": "a258bc0db89d30163c8d46d28bf48692f5af13f70e57e39f15f16630f5146361"
+    },
+    {
+      "file": "00301.png",
+      "elapsedMs": 15150.039,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231748,
+      "sha256": "3316478b61246c1942d9b227efbb47689a5998cb6cf9dc1cb78d81a0bfa20495"
+    },
+    {
+      "file": "00302.png",
+      "elapsedMs": 15200.1563,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231598,
+      "sha256": "d3628285547affca6c0959323c8319d1d6f858e4cdc12f8f44480aa8a5271a37"
+    },
+    {
+      "file": "00303.png",
+      "elapsedMs": 15250.3657,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231588,
+      "sha256": "023589bfea2bfd2a3fe9951cb4684bd4d24c306f5323457f0dd0dc5a1252c3ac"
+    },
+    {
+      "file": "00304.png",
+      "elapsedMs": 15300.5367,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232158,
+      "sha256": "dbd90280fbdf2fcbb7f2453bc1753cabee395d8cfbe0ab9698e6e2eff253ef05"
+    },
+    {
+      "file": "00305.png",
+      "elapsedMs": 15351.6491,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231906,
+      "sha256": "b55267c30572a8be981bddb7cad40ebbab91d30cbdcc87f91de8ca486ba73b0d"
+    },
+    {
+      "file": "00306.png",
+      "elapsedMs": 15400.6076,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231937,
+      "sha256": "9d0a534506601a79c0a1e9abe5b70e03c1562e7884d2b8e8a0b8c00af539afbb"
+    },
+    {
+      "file": "00307.png",
+      "elapsedMs": 15450.2319,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231851,
+      "sha256": "d4d15ce706df3e4c6027d3e20899ca5a737199447d55f78c1ebca412ab01ef10"
+    },
+    {
+      "file": "00308.png",
+      "elapsedMs": 15501.778,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232005,
+      "sha256": "a2e1e79be826410607357b6f7ca1c9c1c5c169524991b443d273a1735d7a6c0c"
+    },
+    {
+      "file": "00309.png",
+      "elapsedMs": 15550.6863,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231551,
+      "sha256": "6b3f0a02e67a0e70dddb39526b170eb46e02fe05dbe0adff69de8e3bb4ece283"
+    },
+    {
+      "file": "00310.png",
+      "elapsedMs": 15601.1245,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231423,
+      "sha256": "2152e43a2f771e3964a1b8c1b5e7ce7dc43d16ab5c6e8e14b04d1d9ca39f3be7"
+    },
+    {
+      "file": "00311.png",
+      "elapsedMs": 15650.4192,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231686,
+      "sha256": "3963b8c1ba4fab0989103cb2cbef925e0d7fdb16a659cc6d2c28724a5525bbac"
+    },
+    {
+      "file": "00312.png",
+      "elapsedMs": 15700.8134,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232062,
+      "sha256": "7eb91ade99aed0bda12841a25a5211d3e8a4acb1a34b5a0d2aef733a7458ca54"
+    },
+    {
+      "file": "00313.png",
+      "elapsedMs": 15750.6589,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231497,
+      "sha256": "06282d91cdf9ad686505d692652be9b63b204da948212eb842b689c0e65d9423"
+    },
+    {
+      "file": "00314.png",
+      "elapsedMs": 15804.9125,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231691,
+      "sha256": "9d12d8a915ba9857ad6cff4562cff6bd77b94babc7dd294d2a2d397433ec270b"
+    },
+    {
+      "file": "00315.png",
+      "elapsedMs": 15855.2943,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231442,
+      "sha256": "fbf6557bb67a6d8e9afb1fd45c67df5353b578f5be6c2aa98bd8b1d9782571f5"
+    },
+    {
+      "file": "00316.png",
+      "elapsedMs": 15905.613,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231730,
+      "sha256": "b837c9f2f464b9eff24a2a351a9e987f54ca3cefa257dac53825e93ca19542ce"
+    },
+    {
+      "file": "00317.png",
+      "elapsedMs": 15956.5674,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231150,
+      "sha256": "48d5650fa76f45c109efe72964c53a8b7b2c153b55ab2a7cef3d80383a7da526"
+    },
+    {
+      "file": "00318.png",
+      "elapsedMs": 16007.9637,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230975,
+      "sha256": "94785f0f1fce8ee82dd3b5f33802f116ff2b8e09c0c495b1e75a8181863d73b3"
+    },
+    {
+      "file": "00319.png",
+      "elapsedMs": 16042.8614,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230884,
+      "sha256": "0ac505c971b8467dfe08f816fd13c370f2a7931c9953e2e36f8807a12360398b"
+    },
+    {
+      "file": "00320.png",
+      "elapsedMs": 16093.2345,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230674,
+      "sha256": "5fbc251b257163e0215a3db349558fff7afd79a7686ed2db16ad0ad5507d3695"
+    },
+    {
+      "file": "00321.png",
+      "elapsedMs": 16142.9994,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230612,
+      "sha256": "4140df4b3aef87122ece8d676e094476ab033a661f9464dbeadd367bf7c7169e"
+    },
+    {
+      "file": "00322.png",
+      "elapsedMs": 16193.3328,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 230733,
+      "sha256": "2a1d4431ba64c250026451a02683aa18ba00fa8242cb20411510ae57cb9f090f"
+    },
+    {
+      "file": "00323.png",
+      "elapsedMs": 16258.0878,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231018,
+      "sha256": "49fcf35aa0284d762133109d7c4d674b92b329d572b378a004f8a04b8f64095a"
+    },
+    {
+      "file": "00324.png",
+      "elapsedMs": 16308.2042,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231534,
+      "sha256": "56afc9a6409d1405a61abdbca1166486ffd294bf8d26b16804c94363b4ae7a55"
+    },
+    {
+      "file": "00325.png",
+      "elapsedMs": 16343.507,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231457,
+      "sha256": "02554f5ece35c283f2588fe2aaca80d274a61d362f991f7113d492dc249f9826"
+    },
+    {
+      "file": "00326.png",
+      "elapsedMs": 16393.6011,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231898,
+      "sha256": "4dfbdb28ccc0984d01ec80b6ad72ddcba74f5114ba5aef9064c9845435f1999f"
+    },
+    {
+      "file": "00327.png",
+      "elapsedMs": 16442.9633,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 231938,
+      "sha256": "1e7d24406187c6f83f1cd36436d5c099db4638d711d553e08ef0867a89fba557"
+    },
+    {
+      "file": "00328.png",
+      "elapsedMs": 16493.0214,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232367,
+      "sha256": "548167345addec7407bf47ca87ce46aedc43b84b6ffee866622cca9ad634af7d"
+    },
+    {
+      "file": "00329.png",
+      "elapsedMs": 16558.078,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232219,
+      "sha256": "631116d5c93a17c5f167c1f0db2a5e0223c1c53b365fc5f97b03c1b7788ae1eb"
+    },
+    {
+      "file": "00330.png",
+      "elapsedMs": 16593.6177,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232129,
+      "sha256": "4269cb4cef2e0b280870bc01df273e72228208056fa648392e248e41c367139a"
+    },
+    {
+      "file": "00331.png",
+      "elapsedMs": 16644.3319,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232328,
+      "sha256": "f3a0ed627efcd1bf569e13bc77036d855b112e1a70de5e894130187666ae5da6"
+    },
+    {
+      "file": "00332.png",
+      "elapsedMs": 16693.9599,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232573,
+      "sha256": "86108f8c474132d303f24b1d81d653875232e7b0b1124ab7f4193001edf34dbc"
+    },
+    {
+      "file": "00333.png",
+      "elapsedMs": 16744.3244,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 232570,
+      "sha256": "26bf8e308880b24a5c362cdb930a8afd3378fd8c9afcd64ce17751d8b7722aa3"
+    },
+    {
+      "file": "00334.png",
+      "elapsedMs": 16794.3068,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 233160,
+      "sha256": "eea509464932871f409325ee99e4e937ab1353ca43430200e4a605afb918b314"
+    },
+    {
+      "file": "00335.png",
+      "elapsedMs": 16845.4914,
+      "screen": "CobbleTrainerEditorScreen",
+      "bytes": 233367,
+      "sha256": "dc6c751e3736d2034b7e0146a51cbd3d9652e56b9e8b20ccab83e079f0927288"
+    }
+  ]
+}

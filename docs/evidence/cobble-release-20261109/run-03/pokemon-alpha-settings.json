@@ -1,0 +1,294 @@
+{
+  "screen": "net.hodu.cobblenpc.client.CobbleTrainerEditorScreen",
+  "scale": 1.0,
+  "widgets": [
+    {
+      "class": "StyledButton",
+      "label": "Reset",
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "active": false
+    },
+    {
+      "class": "StyledButton",
+      "label": "Apply",
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "active": false
+    },
+    {
+      "class": "StyledButton",
+      "label": "Cancel",
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "active": false
+    },
+    {
+      "class": "StyledButton",
+      "label": "",
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "active": false
+    },
+    {
+      "class": "StyledButton",
+      "label": "",
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "active": false
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Back",
+      "x": 16,
+      "y": 16,
+      "width": 20,
+      "active": false
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Forward",
+      "x": 42,
+      "y": 16,
+      "width": 20,
+      "active": false
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Editors",
+      "x": 68,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Create New",
+      "x": 94,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Load",
+      "x": 120,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Save",
+      "x": 146,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Save As",
+      "x": 172,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Reset",
+      "x": 198,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "SelectionButton",
+      "label": "\u003e Pokemon Party",
+      "x": 34,
+      "y": 92,
+      "width": 130,
+      "active": true
+    },
+    {
+      "class": "SelectionButton",
+      "label": "Battle Config",
+      "x": 34,
+      "y": 120,
+      "width": 130,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "Add",
+      "x": 34,
+      "y": 462,
+      "width": 48,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "Delete",
+      "x": 88,
+      "y": 462,
+      "width": 51,
+      "active": false
+    },
+    {
+      "class": "ContentButton",
+      "label": "Generate Party",
+      "x": 145,
+      "y": 462,
+      "width": 98,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "Battle Item Inventory",
+      "x": 34,
+      "y": 488,
+      "width": 127,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "General Item Inventory",
+      "x": 167,
+      "y": 488,
+      "width": 137,
+      "active": true
+    },
+    {
+      "class": "StyledButton",
+      "label": "\u003e. Bulbasaur  Lv.5",
+      "x": 196,
+      "y": 92,
+      "width": 140,
+      "active": true
+    },
+    {
+      "class": "SelectionButton",
+      "label": "Basic",
+      "x": 602,
+      "y": 134,
+      "width": 103,
+      "active": true
+    },
+    {
+      "class": "SelectionButton",
+      "label": "Stats",
+      "x": 711,
+      "y": 134,
+      "width": 103,
+      "active": true
+    },
+    {
+      "class": "SelectionButton",
+      "label": "Moves",
+      "x": 820,
+      "y": 134,
+      "width": 103,
+      "active": true
+    },
+    {
+      "class": "SettingRowButton",
+      "label": "Bulbasaur",
+      "x": 699,
+      "y": 178,
+      "width": 56,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "Level",
+      "x": 868,
+      "y": 178,
+      "width": 56,
+      "active": true
+    },
+    {
+      "class": "SettingRowButton",
+      "label": "None",
+      "x": 699,
+      "y": 210,
+      "width": 48,
+      "active": true
+    },
+    {
+      "class": "SettingRowButton",
+      "label": "Alpha",
+      "x": 868,
+      "y": 210,
+      "width": 48,
+      "active": true
+    },
+    {
+      "class": "SettingRowButton",
+      "label": "Random",
+      "x": 697,
+      "y": 242,
+      "width": 58,
+      "active": true
+    },
+    {
+      "class": "SwitchButton",
+      "label": "Shiny",
+      "x": 771,
+      "y": 242,
+      "width": 133,
+      "active": true
+    },
+    {
+      "class": "SettingRowButton",
+      "label": "Random nature",
+      "x": 699,
+      "y": 274,
+      "width": 56,
+      "active": true
+    },
+    {
+      "class": "SwitchButton",
+      "label": "Alpha",
+      "x": 771,
+      "y": 274,
+      "width": 133,
+      "active": true
+    },
+    {
+      "class": "SettingRowButton",
+      "label": "Automatic ability",
+      "x": 734,
+      "y": 306,
+      "width": 99,
+      "active": true
+    },
+    {
+      "class": "SettingRowButton",
+      "label": "None",
+      "x": 734,
+      "y": 338,
+      "width": 48,
+      "active": true
+    },
+    {
+      "class": "SettingRowButton",
+      "label": "Poké Ball",
+      "x": 734,
+      "y": 370,
+      "width": 65,
+      "active": true
+    },
+    {
+      "class": "SettingRowButton",
+      "label": "Default",
+      "x": 734,
+      "y": 402,
+      "width": 56,
+      "active": true
+    }
+  ]
+}

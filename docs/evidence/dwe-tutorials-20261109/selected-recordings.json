@@ -1,0 +1,578 @@
+[
+  {
+    "id": "dwe-workspace",
+    "run": "02",
+    "durationMs": 43652.032400000004,
+    "steps": [
+      {
+        "startMs": 0,
+        "step": 1,
+        "title": "새 문서로 시작",
+        "body": "상단 새 문서 아이콘으로 빈 타임라인을 만듭니다."
+      },
+      {
+        "startMs": 7710.069,
+        "step": 2,
+        "title": "목록·월드·속성·시간",
+        "body": "왼쪽은 도구와 이벤트, 가운데는 실제 월드, 오른쪽은 선택한 이벤트 속성입니다."
+      },
+      {
+        "startMs": 13761.539,
+        "step": 3,
+        "title": "패널 접고 다시 펴기",
+        "body": "오른쪽 패널의 화살표로 월드 작업 공간을 넓힐 수 있습니다."
+      },
+      {
+        "startMs": 23613.902,
+        "step": 4,
+        "title": "분할선으로 크기 조절",
+        "body": "목록과 시간 패널의 경계를 드래그합니다."
+      },
+      {
+        "startMs": 33253.336,
+        "step": 5,
+        "title": "시점 이동과 확대",
+        "body": "가운데 버튼 드래그는 이동, 오른쪽 드래그는 회전, 휠은 줌입니다."
+      }
+    ],
+    "annotationEpochOffsetMs": 463.086669921875,
+    "annotationEpochMethod": "median original PNG write timestamp minus frame elapsed time; caption file write timestamp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "width": 1920,
+    "height": 1260,
+    "outputs": [
+      {
+        "file": "dwe-workspace.mp4",
+        "bytes": 4006839,
+        "sha256": "b2b6d874871b158a045896a44abd375cb893b5ffe1087e203a0ae9357729aa1f"
+      },
+      {
+        "file": "dwe-workspace.webm",
+        "bytes": 4344646,
+        "sha256": "df0f4028a2d1f838216f47e4f68f1b76565a35acf4c6bbb3894754c7012445fe"
+      },
+      {
+        "file": "dwe-workspace.png",
+        "bytes": 849908,
+        "sha256": "9b1307e51628f1844d139dca929f64e0e9931dc35ec03aa97dd7b8202f14e57f"
+      }
+    ]
+  },
+  {
+    "id": "dwe-point",
+    "run": "03",
+    "durationMs": 36856.6094,
+    "steps": [
+      {
+        "startMs": 0,
+        "step": 1,
+        "title": "빈 문서와 점 폭격",
+        "body": "왼쪽 Point bombing을 선택합니다."
+      },
+      {
+        "startMs": 8303.687,
+        "step": 2,
+        "title": "지면 한 곳을 클릭",
+        "body": "블록 표면을 클릭하면 목표와 첫 이벤트가 생깁니다."
+      },
+      {
+        "startMs": 14962.537,
+        "step": 3,
+        "title": "첫 투하를 2초에 예약",
+        "body": "Start (seconds)는 명중 시각이 아니라 첫 투하 시각입니다."
+      },
+      {
+        "startMs": 21607.061,
+        "step": 4,
+        "title": "고도와 임시 수명",
+        "body": "고도 96블록, 수명 30초로 설정합니다."
+      },
+      {
+        "startMs": 28857.239,
+        "step": 5,
+        "title": "정밀 좌표와 피해값",
+        "body": "Advanced에서 좌표를 확인합니다. 비어 있는 피해값은 원본 값을 유지합니다."
+      }
+    ],
+    "annotationEpochOffsetMs": 449.020263671875,
+    "annotationEpochMethod": "median original PNG write timestamp minus frame elapsed time; caption file write timestamp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "width": 1920,
+    "height": 1260,
+    "outputs": [
+      {
+        "file": "dwe-point.mp4",
+        "bytes": 1706904,
+        "sha256": "ab93a2a49f106be333ec8c0cf0c6d65951eca1fe0124f011f129d7568f998b33"
+      },
+      {
+        "file": "dwe-point.webm",
+        "bytes": 2218740,
+        "sha256": "91f3fb8ba978294fbe0f032cdbecb4676443bbb5cef45655e40f6a20bd47b016"
+      },
+      {
+        "file": "dwe-point.png",
+        "bytes": 1259031,
+        "sha256": "3bfe750db5fa4952ea40aeebc22c0c58af2840dbc7ea2247ad401ff94f073c20"
+      }
+    ]
+  },
+  {
+    "id": "dwe-corridors",
+    "run": "03",
+    "durationMs": 34448.864100000006,
+    "steps": [
+      {
+        "startMs": 0,
+        "step": 1,
+        "title": "선 폭격 도구",
+        "body": "Line bombing을 골라 시작점에서 끝점까지 드래그합니다."
+      },
+      {
+        "startMs": 10126.507,
+        "step": 2,
+        "title": "개수와 간격",
+        "body": "4발·0.5초 간격을 설정합니다. 마지막 투하까지 1.5초가 더 걸립니다."
+      },
+      {
+        "startMs": 17375.823,
+        "step": 3,
+        "title": "영역 폭격 추가",
+        "body": "Area bombing으로 두 번째 통로를 그립니다."
+      },
+      {
+        "startMs": 25837.383,
+        "step": 4,
+        "title": "폭과 방향 정밀 조정",
+        "body": "Advanced에서 Width와 Heading으로 배치를 다듬습니다."
+      }
+    ],
+    "annotationEpochOffsetMs": 473.86669921875,
+    "annotationEpochMethod": "median original PNG write timestamp minus frame elapsed time; caption file write timestamp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "width": 1920,
+    "height": 1260,
+    "outputs": [
+      {
+        "file": "dwe-corridors.mp4",
+        "bytes": 1695995,
+        "sha256": "fedf17fd53663e21df3b877bf26da2d089ababef304c0f2c6c2bb92a439985eb"
+      },
+      {
+        "file": "dwe-corridors.webm",
+        "bytes": 2249619,
+        "sha256": "20085d595cfb2d476ea12d9cd4ff1e25e443241e8c9d0ac45720fbe6db67af30"
+      },
+      {
+        "file": "dwe-corridors.png",
+        "bytes": 1276206,
+        "sha256": "3dff8b08f4a0dfcb303c408ade0208c169b57fba943f4708ac81928572ee46f5"
+      }
+    ]
+  },
+  {
+    "id": "dwe-vehicles",
+    "run": "03",
+    "durationMs": 38654.315,
+    "steps": [
+      {
+        "startMs": 0,
+        "step": 1,
+        "title": "차량 지원 도구",
+        "body": "Vehicle support를 골라 출발점에서 지원 지점까지 드래그합니다."
+      },
+      {
+        "startMs": 10127.316,
+        "step": 2,
+        "title": "차량과 대수",
+        "body": "기본 M1A2로 1대를 먼저 시험합니다. 실제 차량 종류는 선택기에서 고릅니다."
+      },
+      {
+        "startMs": 16769.907,
+        "step": 3,
+        "title": "출발 시각과 간격",
+        "body": "3초에 출발, 차량 간격은 12블록으로 지정합니다."
+      },
+      {
+        "startMs": 24015.464,
+        "step": 4,
+        "title": "방어 범위와 수명",
+        "body": "도착 후 24블록 주변을 방어하며 60초 뒤 정리합니다."
+      },
+      {
+        "startMs": 31280.096,
+        "step": 5,
+        "title": "출발·도착 좌표 확인",
+        "body": "Advanced에서 두 위치가 서로 다른지 확인합니다."
+      }
+    ],
+    "annotationEpochOffsetMs": 471.7548828125,
+    "annotationEpochMethod": "median original PNG write timestamp minus frame elapsed time; caption file write timestamp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "width": 1920,
+    "height": 1260,
+    "outputs": [
+      {
+        "file": "dwe-vehicles.mp4",
+        "bytes": 1758071,
+        "sha256": "49ec78ba4aba3c165f548e4679f0591965530cd4be276e9bc0122a05251c4f6f"
+      },
+      {
+        "file": "dwe-vehicles.webm",
+        "bytes": 2601649,
+        "sha256": "610702475f7a51626829de791ce44be42ab82acae6d36d3fefe16bbc5726cb6e"
+      },
+      {
+        "file": "dwe-vehicles.png",
+        "bytes": 1279625,
+        "sha256": "cae05027bdc5926c1a5424a4f2f5dbfe01b3fa4698666f8a8a79c702c5e14c1c"
+      }
+    ]
+  },
+  {
+    "id": "dwe-fire",
+    "run": "03",
+    "durationMs": 32598.2888,
+    "steps": [
+      {
+        "startMs": 0,
+        "step": 1,
+        "title": "사격 목표와 접근 방향",
+        "body": "Fire support를 고르고 목표에서 드래그해 접근 방향을 정합니다."
+      },
+      {
+        "startMs": 10126.863,
+        "step": 2,
+        "title": "사격 상한",
+        "body": "발사 횟수는 20, 사격 시간은 3초로 정합니다."
+      },
+      {
+        "startMs": 17370.205,
+        "step": 3,
+        "title": "사격 위치와 범위",
+        "body": "거리 48블록, 좌우 사격 구간 16블록을 사용합니다."
+      },
+      {
+        "startMs": 24622.701,
+        "step": 4,
+        "title": "시작과 수명",
+        "body": "5초에 지원을 시작하고 30초 동안 임시 지원을 유지합니다."
+      }
+    ],
+    "annotationEpochOffsetMs": 471.71484375,
+    "annotationEpochMethod": "median original PNG write timestamp minus frame elapsed time; caption file write timestamp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "width": 1920,
+    "height": 1260,
+    "outputs": [
+      {
+        "file": "dwe-fire.mp4",
+        "bytes": 1587326,
+        "sha256": "564e5506a5a38c5f814a2e00cf62bb3d37450d5166f7b41f9581a2ba77a58fe1"
+      },
+      {
+        "file": "dwe-fire.webm",
+        "bytes": 2108587,
+        "sha256": "13d61e549762f98b54a1f372a863fd2bd7ddf947dc799bfdf00b49e0b25d4fcf"
+      },
+      {
+        "file": "dwe-fire.png",
+        "bytes": 1241204,
+        "sha256": "896529d282c6927717c1e9545343a9e8b966aa389c2e456377804487403c9161"
+      }
+    ]
+  },
+  {
+    "id": "dwe-npcs",
+    "run": "03",
+    "durationMs": 33205.2384,
+    "steps": [
+      {
+        "startMs": 0,
+        "step": 1,
+        "title": "NPC 출발점과 목적지",
+        "body": "NPC deployment로 이동 구간을 그립니다."
+      },
+      {
+        "startMs": 10112.586,
+        "step": 2,
+        "title": "기존 NPC 영역 선택",
+        "body": "클론이 없는 예제라 Area source로 시작합니다. 실행 시점의 주변 NPC를 고릅니다."
+      },
+      {
+        "startMs": 17360.337,
+        "step": 3,
+        "title": "대형과 속도",
+        "body": "간격 2블록, DW 이동 속도 5를 지정합니다."
+      },
+      {
+        "startMs": 24603.911,
+        "step": 4,
+        "title": "시작·종료와 좌표",
+        "body": "2초에 시작해 30초 뒤 이전 이동 설정을 복구합니다."
+      }
+    ],
+    "annotationEpochOffsetMs": 463.1943359375,
+    "annotationEpochMethod": "median original PNG write timestamp minus frame elapsed time; caption file write timestamp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "width": 1920,
+    "height": 1260,
+    "outputs": [
+      {
+        "file": "dwe-npcs.mp4",
+        "bytes": 1717416,
+        "sha256": "f860bef393c440ac4c2d598d46be3f5e55937e683d4c069c8f347fff796b292c"
+      },
+      {
+        "file": "dwe-npcs.webm",
+        "bytes": 2280794,
+        "sha256": "10eba67c99af087031acba9c6e25c3b9bdfc1d9e2e31477051c8559b99a89ce7"
+      },
+      {
+        "file": "dwe-npcs.png",
+        "bytes": 1283467,
+        "sha256": "ab59eaa05387c573ed24f9cc456c5486f19e1a0f4cbfee31c74b86a3e1ca38d2"
+      }
+    ]
+  },
+  {
+    "id": "dwe-timing",
+    "run": "03",
+    "durationMs": 35612.5297,
+    "steps": [
+      {
+        "startMs": 0,
+        "step": 1,
+        "title": "첫 번째 차량 지원",
+        "body": "차량 이벤트를 배치하고 시작 시각을 2초로 정합니다."
+      },
+      {
+        "startMs": 10728.952,
+        "step": 2,
+        "title": "두 번째 이벤트 추가",
+        "body": "점 폭격을 5초에 배치합니다. 종류별 시간 행이 나뉩니다."
+      },
+      {
+        "startMs": 18579.038,
+        "step": 3,
+        "title": "마커 드래그",
+        "body": "선택한 폭격 마커를 약 7초 위치로 옮깁니다."
+      },
+      {
+        "startMs": 27030.425,
+        "step": 4,
+        "title": "복제와 실행 취소",
+        "body": "Duplicate로 같은 설정을 추가하고 Ctrl+Z·Ctrl+Y로 비교합니다."
+      }
+    ],
+    "annotationEpochOffsetMs": 474.16162109375,
+    "annotationEpochMethod": "median original PNG write timestamp minus frame elapsed time; caption file write timestamp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "width": 1920,
+    "height": 1260,
+    "outputs": [
+      {
+        "file": "dwe-timing.mp4",
+        "bytes": 1241511,
+        "sha256": "b6803fb8717e735cbf4891c3fd99fb8c7c86f95c7c7ce8e6ecb93284c9d6bea7"
+      },
+      {
+        "file": "dwe-timing.webm",
+        "bytes": 2051098,
+        "sha256": "62d28bfe546e51044f6ba9228a9ae4a4d5c6033aed94a523178857304054199c"
+      },
+      {
+        "file": "dwe-timing.png",
+        "bytes": 915973,
+        "sha256": "0cd71dcd7d60fe5f8d7b503cb83d39d43bf9f2cad3cfa86f1e1d0e36fb21cb10"
+      }
+    ]
+  },
+  {
+    "id": "dwe-center",
+    "run": "03",
+    "durationMs": 38653.8959,
+    "steps": [
+      {
+        "startMs": 0,
+        "step": 1,
+        "title": "이동 구간 하나 배치",
+        "body": "차량 출발점과 도착점을 먼저 만듭니다."
+      },
+      {
+        "startMs": 10109.615,
+        "step": 2,
+        "title": "상대좌표의 중심 이동",
+        "body": "Center를 누르고 X를 8로 바꾸면 전체 구간이 함께 이동합니다."
+      },
+      {
+        "startMs": 17363.168,
+        "step": 3,
+        "title": "한 번에 되돌리기",
+        "body": "Ctrl+Z로 중심 이동과 배치 이동을 함께 취소합니다."
+      },
+      {
+        "startMs": 24020.984,
+        "step": 4,
+        "title": "절대좌표로 전환",
+        "body": "표시 방식만 전환할 때 배치 자체는 움직이지 않습니다."
+      },
+      {
+        "startMs": 31269.371,
+        "step": 5,
+        "title": "절대 모드의 중심 이동",
+        "body": "Center의 X를 8로 바꿔도 이벤트의 월드 위치는 유지됩니다."
+      }
+    ],
+    "annotationEpochOffsetMs": 467.4169921875,
+    "annotationEpochMethod": "median original PNG write timestamp minus frame elapsed time; caption file write timestamp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "width": 1920,
+    "height": 1260,
+    "outputs": [
+      {
+        "file": "dwe-center.mp4",
+        "bytes": 1777818,
+        "sha256": "15b9616955f5c1f64ef3239f43f45d218e4ee6dece307adaf066703a8c86cc04"
+      },
+      {
+        "file": "dwe-center.webm",
+        "bytes": 2595675,
+        "sha256": "8dc951d07696bc219498e266e0cc4d62827c31246e4816564d439908548ef579"
+      },
+      {
+        "file": "dwe-center.png",
+        "bytes": 1231209,
+        "sha256": "64750ca1bab0abf54b33b353f198b95bb6833231fe01e1b0141e05c85933ee68"
+      }
+    ]
+  },
+  {
+    "id": "dwe-files",
+    "run": "02",
+    "durationMs": 60497.8396,
+    "steps": [
+      {
+        "startMs": 0,
+        "step": 1,
+        "title": "차량 지원 초안",
+        "body": "새 문서에서 지원 구간과 2초 시작 시각을 만듭니다."
+      },
+      {
+        "startMs": 10717.058,
+        "step": 2,
+        "title": "문서 제목",
+        "body": "화면용 제목과 저장 파일 이름은 따로 정합니다."
+      },
+      {
+        "startMs": 17355.2,
+        "step": 3,
+        "title": "다른 이름으로 저장",
+        "body": "Save As에서 tutorial_support를 입력합니다."
+      },
+      {
+        "startMs": 24604.0,
+        "step": 4,
+        "title": "서버 저장 완료 확인",
+        "body": "저장 확인 뒤 문서 이름과 변경 표시를 확인합니다."
+      },
+      {
+        "startMs": 36453.778,
+        "step": 5,
+        "title": "불러오기와 검색",
+        "body": "Load에서 이름을 검색하고 항목을 선택합니다."
+      },
+      {
+        "startMs": 50002.081,
+        "step": 6,
+        "title": "선택한 문서 열기",
+        "body": "Load를 눌러 저장한 배치를 다시 확인합니다."
+      }
+    ],
+    "annotationEpochOffsetMs": 461.6796875,
+    "annotationEpochMethod": "median original PNG write timestamp minus frame elapsed time; caption file write timestamp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "width": 1920,
+    "height": 1260,
+    "outputs": [
+      {
+        "file": "dwe-files.mp4",
+        "bytes": 1958754,
+        "sha256": "4851203a626117432b5b0a41b6f1c2215427f3acc29ceef6d2012931a5b199fe"
+      },
+      {
+        "file": "dwe-files.webm",
+        "bytes": 3219171,
+        "sha256": "ea6974fdb53ac5cc1d00dbb5cb0f0ed682c36432ad7767cec04d8777414f4f10"
+      },
+      {
+        "file": "dwe-files.png",
+        "bytes": 189430,
+        "sha256": "46f96c40264ff10875c534b8ff02c6042dbf85917819895a2ee76a896f6d67cb"
+      }
+    ]
+  },
+  {
+    "id": "dwe-simulation",
+    "run": "03",
+    "durationMs": 54909.3492,
+    "steps": [
+      {
+        "startMs": 0,
+        "step": 1,
+        "title": "차량 한 대로 시험",
+        "body": "새 문서에서 짧은 차량 경로를 배치하고 1초에 시작합니다."
+      },
+      {
+        "startMs": 10714.444,
+        "step": 2,
+        "title": "시뮬레이션 시작",
+        "body": "Simulation은 저장 전 초안도 시험합니다. 실제 실행은 별도 명령입니다."
+      },
+      {
+        "startMs": 28165.21,
+        "step": 3,
+        "title": "실제 차량과 경과 시간",
+        "body": "임시 차량이 월드에서 움직이는지 관찰합니다."
+      },
+      {
+        "startMs": 42829.26,
+        "step": 4,
+        "title": "Stop으로 종료",
+        "body": "Stop을 누르면 이 시뮬레이션의 임시 지원이 정리됩니다."
+      }
+    ],
+    "annotationEpochOffsetMs": 473.3486328125,
+    "annotationEpochMethod": "median original PNG write timestamp minus frame elapsed time; caption file write timestamp",
+    "sourceWidth": 1920,
+    "sourceHeight": 1080,
+    "width": 1920,
+    "height": 1260,
+    "outputs": [
+      {
+        "file": "dwe-simulation.mp4",
+        "bytes": 2519481,
+        "sha256": "ec718a66828c41c187d4b88d091f61b8ab766a6dbf656a1adf66c96140b8963f"
+      },
+      {
+        "file": "dwe-simulation.webm",
+        "bytes": 3631306,
+        "sha256": "24a700748957ae6b6771826428bab520891832a9071bb06eb8acd63b7950c0ff"
+      },
+      {
+        "file": "dwe-simulation.png",
+        "bytes": 914623,
+        "sha256": "75ec52568bb2f4a6eb1f3db457fdbccf4d0a9f1cddef71d53604976e62d75948"
+      }
+    ]
+  }
+]

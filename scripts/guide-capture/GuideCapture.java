@@ -145,6 +145,7 @@ public final class GuideCapture {
         NeoForge.EVENT_BUS.addListener((ClientTickEvent.Post event)->tick());
         if(guideScenes!=null)try{call(guideScenes,"register",output);}catch(Exception error){throw new RuntimeException(error);}
         try{call(Class.forName("dochi.docs.capture.GuideTutorials"),"register",output);}catch(ClassNotFoundException ignored){}catch(Exception error){throw new RuntimeException(error);}
+        try{call(Class.forName("dochi.docs.capture.GuideDwe"),"register",output);}catch(ClassNotFoundException ignored){}catch(Exception error){throw new RuntimeException(error);}
         try{call(Class.forName("dochi.docs.capture.GuideCreate"),"register",output);}catch(ClassNotFoundException ignored){}catch(Exception error){throw new RuntimeException(error);}
         try{call(Class.forName("dochi.docs.capture.GuideCreateLessons"),"register",output);}catch(ClassNotFoundException ignored){}catch(Exception error){throw new RuntimeException(error);}
     }
@@ -302,6 +303,7 @@ public final class GuideCapture {
                 return;
             }
             if(phase==3){
+                try{if((boolean)call(Class.forName("dochi.docs.capture.GuideDwe"),"busy"))return;}catch(ClassNotFoundException ignored){}
                 try{if((boolean)call(Class.forName("dochi.docs.capture.GuideCreateLessons"),"busy"))return;}catch(ClassNotFoundException ignored){}
                 catch(Throwable error){recordFailure(views[index][0],error);index++;phase=2;return;}
                 if(!expectedScreen.isBlank()){
@@ -363,6 +365,7 @@ public final class GuideCapture {
     }
 
     private void perform(Minecraft mc,String action)throws Exception{
+        if(action.startsWith("dwe:")){call(Class.forName("dochi.docs.capture.GuideDwe"),"perform",mc,action,output);current=mc.screen;return;}
         if(action.startsWith("lesson:")){call(Class.forName("dochi.docs.capture.GuideCreateLessons"),"perform",mc,action,output);current=mc.screen;
             if(action.equals("lesson:editor")||action.equals("lesson:interact")||action.startsWith("lesson:open:")){expectedScreen=action.equals("lesson:editor")?"NpcEditorScreen":"*";screenWait=0;}return;}
         if(action.startsWith("create:")){

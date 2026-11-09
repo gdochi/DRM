@@ -1,0 +1,33 @@
+{
+  "schema": "dochi.warfare.gimmicks.v6",
+  "title": "",
+  "origin": [
+    0.0,
+    -60.0,
+    -16.0
+  ],
+  "steps": [
+    {
+      "id": "b7ba9932-38a3-41f1-9faf-f8e2de9363f8",
+      "at_tick": 100,
+      "type": "fire_support",
+      "lifetime_ticks": 600,
+      "fire_support": {
+        "vehicle": "superbwarfare:m_1a_2",
+        "weapon": "MachineGun",
+        "airborne": false,
+        "position": [
+          0.0,
+          -60.0,
+          5.0
+        ],
+        "heading": 0.0,
+        "distance": 48.0,
+        "altitude": 32.0,
+        "sweep_length": 16.0,
+        "fire_ticks": 60,
+        "rounds": 20
+      }
+    }
+  ]
+}

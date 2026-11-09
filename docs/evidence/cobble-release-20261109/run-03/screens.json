@@ -1,0 +1,225 @@
+[
+  {
+    "id": "badge-acquired",
+    "status": "captured_in_game",
+    "screenClass": "world",
+    "actions": [
+      "tutorial:badge-enable-fixture",
+      "clear:chat",
+      "tutorial:caption:3. Test the saved badge with an operator give command.",
+      "gif:start:badge-collection",
+      "command:drm badge give @s Meadow Badge",
+      "wait:210",
+      "tutorial:badge-verify",
+      "snapshot:badge-acquired"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "badge-collection",
+    "actualScreenAtFailure": "net.hodu.cobblenpc.client.BadgeCaseScreen",
+    "screenClass": "net.hodu.cobblenpc.client.BadgeCaseScreen",
+    "visibleWidgetLabelsAtFailure": [
+      "Close",
+      "Sample Badges",
+      "Refresh collection",
+      "Search"
+    ],
+    "attemptedActions": [
+      "tutorial:badge-enable-fixture",
+      "clear:chat",
+      "tutorial:caption:3. Test the saved badge with an operator give command.",
+      "gif:start:badge-collection",
+      "command:drm badge give @s Meadow Badge",
+      "wait:210",
+      "tutorial:badge-verify",
+      "snapshot:badge-acquired",
+      "tutorial:transitions:on",
+      "command:badges",
+      "wait:50",
+      "tutorial:click:Sample Badges",
+      "drm-choice:906b12a8-ab63-4fa6-81ca-e5decd4bd91a"
+    ],
+    "status": "failed",
+    "error": "java.lang.IllegalStateException: Native DRM dropdown not open"
+  },
+  {
+    "id": "pokemon-alpha",
+    "status": "captured_in_game",
+    "screenClass": "net.hodu.cobblenpc.client.CobbleTrainerEditorScreen",
+    "actions": [
+      "tutorial:caption:4. Pokemon Party: select a Pokemon. Alpha is in Basic.",
+      "gif:start:pokemon-alpha",
+      "wait:30",
+      "Alpha",
+      "wait:35",
+      "tutorial:caption:Alpha uses Cobblemon\u0027s native appearance. It is separate from Shiny.",
+      "snapshot:pokemon-alpha"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "note": "Intermediate original screenshot from the same native workflow; runtime results remain separate."
+  },
+  {
+    "id": "saved-file",
+    "status": "verified_file_exists",
+    "detail": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\build\\task\\guide-capture\\cobble-release-tutorials-20261109-03\\game\\config\\dochi_rpg_maker\\cobblemon\\trainers\\custom\\alpha_trainer.json"
+  },
+  {
+    "id": "pokemon-alpha",
+    "screenClass": "net.hodu.cobblenpc.client.CobbleTrainerEditorScreen",
+    "status": "captured_in_game",
+    "editorId": "cobble_npc:editor",
+    "entry": "registered editor source/target opener",
+    "actions": [
+      "tutorial:caption:4. Pokemon Party: select a Pokemon. Alpha is in Basic.",
+      "gif:start:pokemon-alpha",
+      "wait:30",
+      "Alpha",
+      "wait:35",
+      "tutorial:caption:Alpha uses Cobblemon\u0027s native appearance. It is separate from Shiny.",
+      "snapshot:pokemon-alpha",
+      "tutorial:dump:pokemon-alpha-settings",
+      "wait:40",
+      "Save As",
+      "field:jsonName\u003dcustom/alpha_trainer.json",
+      "Save",
+      "wait:45",
+      "verify:file\u003dconfig/dochi_rpg_maker/cobblemon/trainers/custom/alpha_trainer.json",
+      "wait:20",
+      "gif:stop",
+      "tutorial:off"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "visibleWidgetLabels": [
+      {
+        "label": "Back",
+        "active": false
+      },
+      {
+        "label": "Forward",
+        "active": false
+      },
+      {
+        "label": "Editors",
+        "active": true
+      },
+      {
+        "label": "Create New",
+        "active": true
+      },
+      {
+        "label": "Load",
+        "active": true
+      },
+      {
+        "label": "Save",
+        "active": true
+      },
+      {
+        "label": "Save As",
+        "active": true
+      },
+      {
+        "label": "Reset",
+        "active": true
+      },
+      {
+        "label": "\u003e Pokemon Party",
+        "active": true
+      },
+      {
+        "label": "Battle Config",
+        "active": true
+      },
+      {
+        "label": "Add",
+        "active": true
+      },
+      {
+        "label": "Delete",
+        "active": false
+      },
+      {
+        "label": "Generate Party",
+        "active": true
+      },
+      {
+        "label": "Battle Item Inventory",
+        "active": true
+      },
+      {
+        "label": "General Item Inventory",
+        "active": true
+      },
+      {
+        "label": "\u003e. Bulbasaur  Lv.5",
+        "active": true
+      },
+      {
+        "label": "Basic",
+        "active": true
+      },
+      {
+        "label": "Stats",
+        "active": true
+      },
+      {
+        "label": "Moves",
+        "active": true
+      },
+      {
+        "label": "Bulbasaur",
+        "active": true
+      },
+      {
+        "label": "Level",
+        "active": true
+      },
+      {
+        "label": "None",
+        "active": true
+      },
+      {
+        "label": "Alpha",
+        "active": true
+      },
+      {
+        "label": "Random",
+        "active": true
+      },
+      {
+        "label": "Shiny",
+        "active": true
+      },
+      {
+        "label": "Random nature",
+        "active": true
+      },
+      {
+        "label": "Alpha",
+        "active": true
+      },
+      {
+        "label": "Automatic ability",
+        "active": true
+      },
+      {
+        "label": "No held item",
+        "active": true
+      },
+      {
+        "label": "Poké Ball",
+        "active": true
+      },
+      {
+        "label": "Default",
+        "active": true
+      }
+    ],
+    "note": "Screen rendered in a fresh creative world; does not establish a completed player workflow."
+  }
+]

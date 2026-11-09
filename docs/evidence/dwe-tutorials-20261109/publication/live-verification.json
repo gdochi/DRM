@@ -1,0 +1,159 @@
+{
+  "commit": "9a735990abd1e386306ad08ccd4e3cc71deb0f51",
+  "workflow": "https://github.com/gdochi/DRM/actions/runs/42638052991",
+  "site": "https://gdochi.github.io/DRM/",
+  "checkedAt": "2026-11-09T15:05:07.541Z",
+  "routes": [
+    {
+      "route": "expanded-support-timeline",
+      "title": "타임라인 에디터로 첫 폭격 만들기",
+      "version": "0.3.2"
+    },
+    {
+      "route": "expanded-support-actions",
+      "title": "차량·기총·NPC 지원 만들기",
+      "version": "0.3.2"
+    },
+    {
+      "route": "expanded-support-run",
+      "title": "타임라인 저장·시험·실행하기",
+      "version": "0.3.2"
+    }
+  ],
+  "media": [
+    {
+      "url": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-workspace.mp4",
+      "status": 200,
+      "bytes": 4006839
+    },
+    {
+      "url": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-point.mp4",
+      "status": 200,
+      "bytes": 1706904
+    },
+    {
+      "url": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-corridors.mp4",
+      "status": 200,
+      "bytes": 1695995
+    },
+    {
+      "url": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-vehicles.mp4",
+      "status": 200,
+      "bytes": 1758071
+    },
+    {
+      "url": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-fire.mp4",
+      "status": 200,
+      "bytes": 1587326
+    },
+    {
+      "url": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-npcs.mp4",
+      "status": 200,
+      "bytes": 1717416
+    },
+    {
+      "url": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-timing.mp4",
+      "status": 200,
+      "bytes": 1241511
+    },
+    {
+      "url": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-center.mp4",
+      "status": 200,
+      "bytes": 1777818
+    },
+    {
+      "url": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-files.mp4",
+      "status": 200,
+      "bytes": 1958754
+    },
+    {
+      "url": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-simulation.mp4",
+      "status": 200,
+      "bytes": 2519481
+    }
+  ],
+  "playback": [
+    {
+      "route": "expanded-support-timeline",
+      "index": 0,
+      "source": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-workspace.webm",
+      "duration": 43.7,
+      "decoded": 14,
+      "error": null
+    },
+    {
+      "route": "expanded-support-timeline",
+      "index": 1,
+      "source": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-point.webm",
+      "duration": 36.9,
+      "decoded": 14,
+      "error": null
+    },
+    {
+      "route": "expanded-support-timeline",
+      "index": 2,
+      "source": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-corridors.webm",
+      "duration": 34.5,
+      "decoded": 14,
+      "error": null
+    },
+    {
+      "route": "expanded-support-timeline",
+      "index": 3,
+      "source": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-timing.webm",
+      "duration": 35.65,
+      "decoded": 14,
+      "error": null
+    },
+    {
+      "route": "expanded-support-timeline",
+      "index": 4,
+      "source": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-center.webm",
+      "duration": 38.7,
+      "decoded": 14,
+      "error": null
+    },
+    {
+      "route": "expanded-support-actions",
+      "index": 0,
+      "source": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-vehicles.webm",
+      "duration": 38.7,
+      "decoded": 14,
+      "error": null
+    },
+    {
+      "route": "expanded-support-actions",
+      "index": 1,
+      "source": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-fire.webm",
+      "duration": 32.65,
+      "decoded": 14,
+      "error": null
+    },
+    {
+      "route": "expanded-support-actions",
+      "index": 2,
+      "source": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-npcs.webm",
+      "duration": 33.25,
+      "decoded": 14,
+      "error": null
+    },
+    {
+      "route": "expanded-support-run",
+      "index": 0,
+      "source": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-files.webm",
+      "duration": 60.5,
+      "decoded": 14,
+      "error": null
+    },
+    {
+      "route": "expanded-support-run",
+      "index": 1,
+      "source": "https://gdochi.github.io/DRM/assets/media/guides/dwe-tutorials-20261109/dwe-simulation.webm",
+      "duration": 54.95,
+      "decoded": 14,
+      "error": null
+    }
+  ],
+  "mobileNoOverflow": true,
+  "errors": []
+}

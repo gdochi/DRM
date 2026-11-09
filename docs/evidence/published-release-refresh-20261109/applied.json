@@ -1,0 +1,1600 @@
+{
+  "checkedAt": "2026-11-09T14:37:24.791Z",
+  "excluded": [
+    "dochi-warfare-expanded"
+  ],
+  "projects": [
+    {
+      "product": "core",
+      "projectId": 1575859,
+      "discoverySource": "https://api.cfwidget.com/1575859",
+      "latest": "dochi_rpg_maker-0.3.1-1.20.1-forge.jar",
+      "added": [
+        {
+          "id": 9487324,
+          "version": "0.3.1",
+          "name": "dochi_rpg_maker-0.3.1-1.20.1-forge.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/9487324",
+          "uploadedAt": "2026-11-07T06:12:09.913Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9487324",
+          "metadata": {
+            "id": 9487324,
+            "dateCreated": "2026-11-07T06:12:09.913Z",
+            "dateModified": "2026-11-07T06:23:55.7Z",
+            "displayName": "dochi_rpg_maker-0.3.1-1.20.1-forge.jar",
+            "fileLength": 5541102,
+            "fileName": "dochi_rpg_maker-0.3.1-1.20.1-forge.jar",
+            "status": 4,
+            "projectId": 1575859,
+            "gameVersions": [
+              "Client",
+              "1.20.1",
+              "Forge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              75125,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 47,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1575859/files/9487324/change-log",
+          "html": "<h1>0.3.1 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fcore\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "core-fabric",
+      "projectId": 1645661,
+      "discoverySource": "https://api.cfwidget.com/1645661",
+      "latest": "dochi_rpg_maker-0.3.1-fabric-26.3.jar",
+      "added": [
+        {
+          "id": 9487335,
+          "version": "0.3.1",
+          "name": "dochi_rpg_maker-0.3.1-fabric-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9487335",
+          "uploadedAt": "2026-11-07T06:14:00.677Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9487335",
+          "metadata": {
+            "id": 9487335,
+            "dateCreated": "2026-11-07T06:14:00.677Z",
+            "dateModified": "2026-11-07T06:24:30.757Z",
+            "displayName": "dochi_rpg_maker-0.3.1-fabric-26.3.jar",
+            "fileLength": 6820318,
+            "fileName": "dochi_rpg_maker-0.3.1-fabric-26.3.jar",
+            "status": 4,
+            "projectId": 1645661,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "Server",
+              "26.3"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              88556
+            ],
+            "releaseType": 1,
+            "totalDownloads": 13,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9487335/change-log",
+          "html": "<h1>0.3.1 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fcore%252fFabric%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9487329,
+          "version": "0.3.1",
+          "name": "dochi_rpg_maker-0.3.1-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9487329",
+          "uploadedAt": "2026-11-07T06:13:21.477Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9487329",
+          "metadata": {
+            "id": 9487329,
+            "dateCreated": "2026-11-07T06:13:21.477Z",
+            "dateModified": "2026-11-07T06:21:05.93Z",
+            "displayName": "dochi_rpg_maker-0.3.1-fabric-1.21.1.jar",
+            "fileLength": 7172826,
+            "fileName": "dochi_rpg_maker-0.3.1-fabric-1.21.1.jar",
+            "status": 4,
+            "projectId": 1645661,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "1.21.1",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              77784
+            ],
+            "releaseType": 1,
+            "totalDownloads": 30,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1645661/files/9487329/change-log",
+          "html": "<h1>0.3.1 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fcore%252fFabric\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "dochi-npc-core",
+      "projectId": 1764663,
+      "discoverySource": "https://api.cfwidget.com/1764663",
+      "latest": "dochi_npc_core-0.1.3-fabric-26.3.jar",
+      "added": [
+        {
+          "id": 9509831,
+          "version": "0.1.3",
+          "name": "dochi_npc_core-0.1.3-fabric-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9509831",
+          "uploadedAt": "2026-11-08T13:30:45.05Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9509831",
+          "metadata": {
+            "id": 9509831,
+            "dateCreated": "2026-11-08T13:30:45.05Z",
+            "dateModified": "2026-11-08T13:34:22.75Z",
+            "displayName": "dochi_npc_core-0.1.3-fabric-26.3.jar",
+            "fileLength": 1754734,
+            "fileName": "dochi_npc_core-0.1.3-fabric-26.3.jar",
+            "status": 4,
+            "projectId": 1764663,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "Server",
+              "26.3"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              88556
+            ],
+            "releaseType": 1,
+            "totalDownloads": 13,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9509831/change-log",
+          "html": "<h1>0.1.3 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-npc-core%252fFabric%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9509825,
+          "version": "0.1.3",
+          "name": "dochi_npc_core-0.1.3-neoforge-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9509825",
+          "uploadedAt": "2026-11-08T13:30:19.513Z",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9509825",
+          "metadata": {
+            "id": 9509825,
+            "dateCreated": "2026-11-08T13:30:19.513Z",
+            "dateModified": "2026-11-08T13:34:24.01Z",
+            "displayName": "dochi_npc_core-0.1.3-neoforge-26.3.jar",
+            "fileLength": 1756910,
+            "fileName": "dochi_npc_core-0.1.3-neoforge-26.3.jar",
+            "status": 4,
+            "projectId": 1764663,
+            "gameVersions": [
+              "Client",
+              "NeoForge",
+              "Server",
+              "26.3"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              88556
+            ],
+            "releaseType": 1,
+            "totalDownloads": 14,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9509825/change-log",
+          "html": "<h1>0.1.3 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-npc-core%252fNeoForge%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9509817,
+          "version": "0.1.3",
+          "name": "dochi_npc_core-0.1.3-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9509817",
+          "uploadedAt": "2026-11-08T13:29:41.57Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9509817",
+          "metadata": {
+            "id": 9509817,
+            "dateCreated": "2026-11-08T13:29:41.57Z",
+            "dateModified": "2026-11-08T13:32:28.767Z",
+            "displayName": "dochi_npc_core-0.1.3-fabric-1.21.1.jar",
+            "fileLength": 1895236,
+            "fileName": "dochi_npc_core-0.1.3-fabric-1.21.1.jar",
+            "status": 4,
+            "projectId": 1764663,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "1.21.1",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              77784
+            ],
+            "releaseType": 1,
+            "totalDownloads": 15,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9509817/change-log",
+          "html": "<h1>0.1.3 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-npc-core%252fFabric\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9509811,
+          "version": "0.1.3",
+          "name": "dochi_npc_core-0.1.3-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9509811",
+          "uploadedAt": "2026-11-08T13:29:02.953Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9509811",
+          "metadata": {
+            "id": 9509811,
+            "dateCreated": "2026-11-08T13:29:02.953Z",
+            "dateModified": "2026-11-08T13:32:18.89Z",
+            "displayName": "dochi_npc_core-0.1.3-neoforge-1.21.1.jar",
+            "fileLength": 1881678,
+            "fileName": "dochi_npc_core-0.1.3-neoforge-1.21.1.jar",
+            "status": 4,
+            "projectId": 1764663,
+            "gameVersions": [
+              "Client",
+              "1.21.1",
+              "NeoForge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              77784,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 25,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9509811/change-log",
+          "html": "<h1>0.1.3 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-npc-core%252fNeoForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9509804,
+          "version": "0.1.3",
+          "name": "dochi_npc_core-0.1.3-forge-1.20.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9509804",
+          "uploadedAt": "2026-11-08T13:28:20.067Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9509804",
+          "metadata": {
+            "id": 9509804,
+            "dateCreated": "2026-11-08T13:28:20.067Z",
+            "dateModified": "2026-11-08T13:32:28.527Z",
+            "displayName": "dochi_npc_core-0.1.3-forge-1.20.1.jar",
+            "fileLength": 1706173,
+            "fileName": "dochi_npc_core-0.1.3-forge-1.20.1.jar",
+            "status": 4,
+            "projectId": 1764663,
+            "gameVersions": [
+              "Client",
+              "1.20.1",
+              "Forge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              75125,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 23,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1764663/files/9509804/change-log",
+          "html": "<h1>0.1.3 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-npc-core%252fForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "drm-cobblemon-editor",
+      "projectId": 1614833,
+      "discoverySource": "https://api.cfwidget.com/1614833",
+      "latest": "dochi_cobblemon_editor-0.2.9-neoforge-1.21.1.jar",
+      "added": [
+        {
+          "id": 9505221,
+          "version": "0.2.9",
+          "name": "dochi_cobblemon_editor-0.2.9-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9505221",
+          "uploadedAt": "2026-11-08T05:04:55.663Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9505221",
+          "metadata": {
+            "id": 9505221,
+            "dateCreated": "2026-11-08T05:04:55.663Z",
+            "dateModified": "2026-11-08T05:20:28.503Z",
+            "displayName": "dochi_cobblemon_editor-0.2.9-neoforge-1.21.1.jar",
+            "fileLength": 4163494,
+            "fileName": "dochi_cobblemon_editor-0.2.9-neoforge-1.21.1.jar",
+            "status": 4,
+            "projectId": 1614833,
+            "gameVersions": [
+              "Client",
+              "1.21.1",
+              "NeoForge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              77784,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 14,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9505221/change-log",
+          "html": "<h1>0.2.9 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdrm-cobblemon-editor%252fNeoForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9505207,
+          "version": "0.2.9",
+          "name": "dochi_cobblemon_editor-0.2.9-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9505207",
+          "uploadedAt": "2026-11-08T05:03:36.17Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9505207",
+          "metadata": {
+            "id": 9505207,
+            "dateCreated": "2026-11-08T05:03:36.17Z",
+            "dateModified": "2026-11-08T05:17:26.163Z",
+            "displayName": "dochi_cobblemon_editor-0.2.9-fabric-1.21.1.jar",
+            "fileLength": 4169627,
+            "fileName": "dochi_cobblemon_editor-0.2.9-fabric-1.21.1.jar",
+            "status": 4,
+            "projectId": 1614833,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "1.21.1",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              77784
+            ],
+            "releaseType": 1,
+            "totalDownloads": 26,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1614833/files/9505207/change-log",
+          "html": "<h1>0.2.9 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdrm-cobblemon-editor%252fFabric\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "mob-editor",
+      "projectId": 1682651,
+      "discoverySource": "https://api.cfwidget.com/1682651",
+      "latest": "dochi_battleworks-0.1.6-neoforge-26.3.jar",
+      "added": []
+    },
+    {
+      "product": "dochi-warfare",
+      "projectId": 1553237,
+      "discoverySource": "https://api.cfwidget.com/1553237",
+      "latest": "dochi_warfare-0.3.2-fabric-1.21.1.jar",
+      "added": [
+        {
+          "id": 9509897,
+          "version": "0.3.2",
+          "name": "dochi_warfare-0.3.2-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/9509897",
+          "uploadedAt": "2026-11-08T13:35:42.283Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9509897",
+          "metadata": {
+            "id": 9509897,
+            "dateCreated": "2026-11-08T13:35:42.283Z",
+            "dateModified": "2026-11-08T13:38:21.07Z",
+            "displayName": "dochi_warfare-0.3.2-fabric-1.21.1.jar",
+            "fileLength": 2440390,
+            "fileName": "dochi_warfare-0.3.2-fabric-1.21.1.jar",
+            "status": 4,
+            "projectId": 1553237,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "1.21.1",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              77784
+            ],
+            "releaseType": 1,
+            "totalDownloads": 24,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9509897/change-log",
+          "html": "<h1>0.3.2 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-warfare%252fFabric\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9486296,
+          "version": "0.3.2",
+          "name": "dochi_warfare-0.3.2-forge-1.20.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/9486296",
+          "uploadedAt": "2026-11-07T04:21:49.077Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9486296",
+          "metadata": {
+            "id": 9486296,
+            "dateCreated": "2026-11-07T04:21:49.077Z",
+            "dateModified": "2026-11-07T04:44:42.777Z",
+            "displayName": "dochi_warfare-0.3.2-forge-1.20.1.jar",
+            "fileLength": 2003729,
+            "fileName": "dochi_warfare-0.3.2-forge-1.20.1.jar",
+            "status": 4,
+            "projectId": 1553237,
+            "gameVersions": [
+              "Client",
+              "1.20.1",
+              "Forge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              75125,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 159,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9486296/change-log",
+          "html": "<h1>0.3.2 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-warfare%252fForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9486287,
+          "version": "0.3.2",
+          "name": "dochi_warfare-0.3.2-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/9486287",
+          "uploadedAt": "2026-11-07T04:21:03.88Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9486287",
+          "metadata": {
+            "id": 9486287,
+            "dateCreated": "2026-11-07T04:21:03.88Z",
+            "dateModified": "2026-11-07T04:44:22.707Z",
+            "displayName": "dochi_warfare-0.3.2-neoforge-1.21.1.jar",
+            "fileLength": 2231268,
+            "fileName": "dochi_warfare-0.3.2-neoforge-1.21.1.jar",
+            "status": 4,
+            "projectId": 1553237,
+            "gameVersions": [
+              "Client",
+              "1.21.1",
+              "NeoForge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              77784,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 47,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/9486287/change-log",
+          "html": "<h1>0.3.2 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-warfare%252fNeoForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 8769931,
+          "version": "0.2.5",
+          "name": "dochi_warfare-0.2.5_neoforge.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8769931",
+          "uploadedAt": "2026-08-30T14:27:12.393Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8769931",
+          "metadata": {
+            "id": 8769931,
+            "dateCreated": "2026-08-30T14:27:12.393Z",
+            "dateModified": "2026-08-30T15:09:28.767Z",
+            "displayName": "dochi_warfare-0.2.5 NeoForge.jar",
+            "fileLength": 2583156,
+            "fileName": "dochi_warfare-0.2.5_neoforge.jar",
+            "status": 4,
+            "projectId": 1553237,
+            "gameVersions": [
+              "Client",
+              "1.21.1",
+              "NeoForge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              77784,
+              68441
+            ],
+            "releaseType": 2,
+            "totalDownloads": 99,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8769931/change-log",
+          "html": "<p>dochi_warfare-0.2.5 forge -&gt; neoforge porting</p>"
+        }
+      ]
+    },
+    {
+      "product": "dochi-spawn-control",
+      "projectId": 1665161,
+      "discoverySource": "https://api.cfwidget.com/1665161",
+      "latest": "dochi_spawn_control-0.1.5-neoforge-1.21.1.jar",
+      "added": []
+    },
+    {
+      "product": "dochi-real-armor",
+      "projectId": 1567803,
+      "discoverySource": "https://api.cfwidget.com/1567803",
+      "latest": "dochi_real_armor-0.1.6-fabric-26.3.jar",
+      "added": [
+        {
+          "id": 9505191,
+          "version": "0.1.6",
+          "name": "dochi_real_armor-0.1.6-fabric-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505191",
+          "uploadedAt": "2026-11-08T05:02:34.53Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505191",
+          "metadata": {
+            "id": 9505191,
+            "dateCreated": "2026-11-08T05:02:34.53Z",
+            "dateModified": "2026-11-08T05:13:25.847Z",
+            "displayName": "dochi_real_armor-0.1.6-fabric-26.3.jar",
+            "fileLength": 416369,
+            "fileName": "dochi_real_armor-0.1.6-fabric-26.3.jar",
+            "status": 4,
+            "projectId": 1567803,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "Server",
+              "26.3"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              88556
+            ],
+            "releaseType": 1,
+            "totalDownloads": 10,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505191/change-log",
+          "html": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fFabric%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9505188,
+          "version": "0.1.6",
+          "name": "dochi_real_armor-0.1.6-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505188",
+          "uploadedAt": "2026-11-08T05:02:03.937Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505188",
+          "metadata": {
+            "id": 9505188,
+            "dateCreated": "2026-11-08T05:02:03.937Z",
+            "dateModified": "2026-11-08T05:13:27.377Z",
+            "displayName": "dochi_real_armor-0.1.6-fabric-1.21.1.jar",
+            "fileLength": 413078,
+            "fileName": "dochi_real_armor-0.1.6-fabric-1.21.1.jar",
+            "status": 4,
+            "projectId": 1567803,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "1.21.1",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              77784
+            ],
+            "releaseType": 1,
+            "totalDownloads": 9,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505188/change-log",
+          "html": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fFabric%252f1.21.1%252f0.1.6\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9505178,
+          "version": "0.1.6",
+          "name": "dochi_real_armor-0.1.6-neoforge-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505178",
+          "uploadedAt": "2026-11-08T05:01:20.88Z",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505178",
+          "metadata": {
+            "id": 9505178,
+            "dateCreated": "2026-11-08T05:01:20.88Z",
+            "dateModified": "2026-11-08T05:13:27.933Z",
+            "displayName": "dochi_real_armor-0.1.6-neoforge-26.3.jar",
+            "fileLength": 414120,
+            "fileName": "dochi_real_armor-0.1.6-neoforge-26.3.jar",
+            "status": 4,
+            "projectId": 1567803,
+            "gameVersions": [
+              "Client",
+              "NeoForge",
+              "Server",
+              "26.3"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              88556
+            ],
+            "releaseType": 1,
+            "totalDownloads": 9,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505178/change-log",
+          "html": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fNeoForge%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9505174,
+          "version": "0.1.6",
+          "name": "dochi_real_armor-0.1.6-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505174",
+          "uploadedAt": "2026-11-08T05:00:47.93Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505174",
+          "metadata": {
+            "id": 9505174,
+            "dateCreated": "2026-11-08T05:00:47.93Z",
+            "dateModified": "2026-11-08T05:10:30.103Z",
+            "displayName": "dochi_real_armor-0.1.6-neoforge-1.21.1.jar",
+            "fileLength": 409366,
+            "fileName": "dochi_real_armor-0.1.6-neoforge-1.21.1.jar",
+            "status": 4,
+            "projectId": 1567803,
+            "gameVersions": [
+              "Client",
+              "1.21.1",
+              "NeoForge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              77784,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 9,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505174/change-log",
+          "html": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fNeoForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9505112,
+          "version": "0.1.6",
+          "name": "dochi_real_armor-0.1.6-forge-1.20.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505112",
+          "uploadedAt": "2026-11-08T04:50:02.307Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505112",
+          "metadata": {
+            "id": 9505112,
+            "dateCreated": "2026-11-08T04:50:02.307Z",
+            "dateModified": "2026-11-08T04:59:57.027Z",
+            "displayName": "dochi_real_armor-0.1.6-forge-1.20.1.jar",
+            "fileLength": 405099,
+            "fileName": "dochi_real_armor-0.1.6-forge-1.20.1.jar",
+            "status": 4,
+            "projectId": 1567803,
+            "gameVersions": [
+              "Client",
+              "1.20.1",
+              "Forge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              75125,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 15,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505112/change-log",
+          "html": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fForge\" target=\"_blank\" rel=\"nofollow\">View Change Log</a></li>\n</ul>"
+        },
+        {
+          "id": 9490109,
+          "version": "0.1.5",
+          "name": "dochi_real_armor-0.1.5-forge-1.20.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490109",
+          "uploadedAt": "2026-11-07T10:57:06.83Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490109",
+          "metadata": {
+            "id": 9490109,
+            "dateCreated": "2026-11-07T10:57:06.83Z",
+            "dateModified": "2026-11-07T11:17:17.27Z",
+            "displayName": "dochi_real_armor-0.1.5-forge-1.20.1.jar",
+            "fileLength": 110674,
+            "fileName": "dochi_real_armor-0.1.5-forge-1.20.1.jar",
+            "status": 4,
+            "projectId": 1567803,
+            "gameVersions": [
+              "Client",
+              "1.20.1",
+              "Forge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              75125,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 14,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490109/change-log",
+          "html": "<h1>0.1.5 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9490092,
+          "version": "0.1.5",
+          "name": "dochi_real_armor-0.1.5-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490092",
+          "uploadedAt": "2026-11-07T10:56:00.913Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490092",
+          "metadata": {
+            "id": 9490092,
+            "dateCreated": "2026-11-07T10:56:00.913Z",
+            "dateModified": "2026-11-07T11:15:25.487Z",
+            "displayName": "dochi_real_armor-0.1.5-fabric-1.21.1.jar",
+            "fileLength": 119661,
+            "fileName": "dochi_real_armor-0.1.5-fabric-1.21.1.jar",
+            "status": 4,
+            "projectId": 1567803,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "1.21.1",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              77784
+            ],
+            "releaseType": 1,
+            "totalDownloads": 9,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490092/change-log",
+          "html": "<h1>0.1.5 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fFabric\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9490085,
+          "version": "0.1.5",
+          "name": "dochi_real_armor-0.1.5-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490085",
+          "uploadedAt": "2026-11-07T10:55:30.28Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490085",
+          "metadata": {
+            "id": 9490085,
+            "dateCreated": "2026-11-07T10:55:30.28Z",
+            "dateModified": "2026-11-07T11:15:22.687Z",
+            "displayName": "dochi_real_armor-0.1.5-neoforge-1.21.1.jar",
+            "fileLength": 119147,
+            "fileName": "dochi_real_armor-0.1.5-neoforge-1.21.1.jar",
+            "status": 4,
+            "projectId": 1567803,
+            "gameVersions": [
+              "Client",
+              "1.21.1",
+              "NeoForge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              77784,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 6,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490085/change-log",
+          "html": "<h1>0.1.5 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fNeoForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9490067,
+          "version": "0.1.5",
+          "name": "dochi_real_armor-0.1.5-fabric-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490067",
+          "uploadedAt": "2026-11-07T10:54:51.15Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490067",
+          "metadata": {
+            "id": 9490067,
+            "dateCreated": "2026-11-07T10:54:51.15Z",
+            "dateModified": "2026-11-07T11:15:22.147Z",
+            "displayName": "dochi_real_armor-0.1.5-fabric-26.3.jar",
+            "fileLength": 106788,
+            "fileName": "dochi_real_armor-0.1.5-fabric-26.3.jar",
+            "status": 4,
+            "projectId": 1567803,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "Server",
+              "26.3"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              88556
+            ],
+            "releaseType": 1,
+            "totalDownloads": 7,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490067/change-log",
+          "html": "<h1>0.1.5 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fFabric%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9490028,
+          "version": "0.1.5",
+          "name": "dochi_real_armor-0.1.5-neoforge-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490028",
+          "uploadedAt": "2026-11-07T10:54:18.793Z",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490028",
+          "metadata": {
+            "id": 9490028,
+            "dateCreated": "2026-11-07T10:54:18.793Z",
+            "dateModified": "2026-11-07T11:14:30.823Z",
+            "displayName": "dochi_real_armor-0.1.5-neoforge-26.3.jar",
+            "fileLength": 106511,
+            "fileName": "dochi_real_armor-0.1.5-neoforge-26.3.jar",
+            "status": 4,
+            "projectId": 1567803,
+            "gameVersions": [
+              "Client",
+              "NeoForge",
+              "Server",
+              "26.3"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              88556
+            ],
+            "releaseType": 1,
+            "totalDownloads": 9,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490028/change-log",
+          "html": "<h1>0.1.5 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fNeoForge%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 8765025,
+          "version": "0.1.2",
+          "name": "dochi_real_armor-0.1.2_neoforge.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/8765025",
+          "uploadedAt": "2026-08-29T22:53:20.15Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/8765025",
+          "metadata": {
+            "id": 8765025,
+            "dateCreated": "2026-08-29T22:53:20.15Z",
+            "dateModified": "2026-08-29T23:03:33.75Z",
+            "displayName": "dochi_real_armor-0.1.2_neoforge.jar",
+            "fileLength": 60472,
+            "fileName": "dochi_real_armor-0.1.2_neoforge.jar",
+            "status": 4,
+            "projectId": 1567803,
+            "gameVersions": [
+              "Client",
+              "1.21.1",
+              "NeoForge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              77784,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 48,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/8765025/change-log",
+          "html": "<h1>Dochi Real Armor 0.1.1</h1>\n<h2>Changed</h2>\n<ul>\n<li>Renamed the project from <strong>CNPC Real Armor</strong> to <strong>Dochi Real Armor</strong>.</li>\n<li>Changed the mod ID and command root from <code>cnpc_real_armor</code> to <code>dochi_real_armor</code>.</li>\n<li>Updated the jar name, resource namespace, mixin configuration, and common config name.</li>\n<li>Reworked the config UI with DRM-style sections, non-overlapping labels, centered text, and ON/OFF switches.</li>\n</ul>\n<h2>Added</h2>\n<ul>\n<li>Easy NPC support with an independent enable switch.</li>\n<li>Shared vanilla-style armor, toughness, Protection enchantment, knockback-resistance, and durability handling for CustomNPCs and Easy NPC.</li>\n<li>Optional head, chest, and legs hit-region armor; legs use leggings and boots.</li>\n<li>Dochi RPG Maker Mods Config integration and a matching standalone config screen.</li>\n<li>English, Korean, Russian, Japanese, and Simplified Chinese UI translations.</li>\n<li>Permission-checked server config synchronization.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Armor is now calculated whether debug messages are ON or OFF.</li>\n</ul>\n<h2>Commands</h2>\n<ul>\n<li><code>/dochi_real_armor status</code></li>\n<li><code>/dochi_real_armor split true|false</code></li>\n<li><code>/dochi_real_armor durability true|false</code></li>\n<li><code>/dochi_real_armor debug true|false</code></li>\n</ul>\n"
+        }
+      ]
+    },
+    {
+      "product": "dochi-minigames",
+      "projectId": 1739148,
+      "discoverySource": "https://api.cfwidget.com/1739148",
+      "latest": "dochi_minigames-0.1.6-forge-1.20.1.jar",
+      "added": []
+    },
+    {
+      "product": "dochi-mapicon-integration",
+      "projectId": 1738703,
+      "discoverySource": "https://api.cfwidget.com/1738703",
+      "latest": "dochi_mapicon_integration-0.1.3-forge-1.20.1.jar",
+      "added": [
+        {
+          "id": 9487293,
+          "version": "0.1.3",
+          "name": "dochi_mapicon_integration-0.1.3-forge-1.20.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9487293",
+          "uploadedAt": "2026-11-07T06:08:00.687Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9487293",
+          "metadata": {
+            "id": 9487293,
+            "dateCreated": "2026-11-07T06:08:00.687Z",
+            "dateModified": "2026-11-07T06:18:26.573Z",
+            "displayName": "dochi_mapicon_integration-0.1.3-forge-1.20.1.jar",
+            "fileLength": 804649,
+            "fileName": "dochi_mapicon_integration-0.1.3-forge-1.20.1.jar",
+            "status": 4,
+            "projectId": 1738703,
+            "gameVersions": [
+              "Client",
+              "1.20.1",
+              "Forge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              75125,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 9,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9487293/change-log",
+          "html": "<h1>0.1.3 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-mapicon-integration%252fForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9487285,
+          "version": "0.1.3",
+          "name": "dochi_mapicon_integration-0.1.3-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9487285",
+          "uploadedAt": "2026-11-07T06:07:15.16Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9487285",
+          "metadata": {
+            "id": 9487285,
+            "dateCreated": "2026-11-07T06:07:15.16Z",
+            "dateModified": "2026-11-07T06:18:25.683Z",
+            "displayName": "dochi_mapicon_integration-0.1.3-fabric-1.21.1.jar",
+            "fileLength": 804991,
+            "fileName": "dochi_mapicon_integration-0.1.3-fabric-1.21.1.jar",
+            "status": 4,
+            "projectId": 1738703,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "1.21.1",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              77784
+            ],
+            "releaseType": 1,
+            "totalDownloads": 9,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9487285/change-log",
+          "html": "<h1>0.1.3 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-mapicon-integration%252fFabric%252f1.21.1\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9487283,
+          "version": "0.1.3",
+          "name": "dochi_mapicon_integration-0.1.3-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9487283",
+          "uploadedAt": "2026-11-07T06:06:36.55Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9487283",
+          "metadata": {
+            "id": 9487283,
+            "dateCreated": "2026-11-07T06:06:36.55Z",
+            "dateModified": "2026-11-07T06:18:27.073Z",
+            "displayName": "dochi_mapicon_integration-0.1.3-neoforge-1.21.1.jar",
+            "fileLength": 778534,
+            "fileName": "dochi_mapicon_integration-0.1.3-neoforge-1.21.1.jar",
+            "status": 4,
+            "projectId": 1738703,
+            "gameVersions": [
+              "Client",
+              "1.21.1",
+              "NeoForge",
+              "Server"
+            ],
+            "gameVersionTypeIds": [
+              77784,
+              68441
+            ],
+            "releaseType": 1,
+            "totalDownloads": 7,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9487283/change-log",
+          "html": "<h1>0.1.3 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-mapicon-integration%252fNeoForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9487274,
+          "version": "0.1.3",
+          "name": "dochi_mapicon_integration-0.1.3-fabric-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9487274",
+          "uploadedAt": "2026-11-07T06:05:48.567Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9487274",
+          "metadata": {
+            "id": 9487274,
+            "dateCreated": "2026-11-07T06:05:48.567Z",
+            "dateModified": "2026-11-07T06:18:28.2Z",
+            "displayName": "dochi_mapicon_integration-0.1.3-fabric-26.3.jar",
+            "fileLength": 799562,
+            "fileName": "dochi_mapicon_integration-0.1.3-fabric-26.3.jar",
+            "status": 4,
+            "projectId": 1738703,
+            "gameVersions": [
+              "Client",
+              "Fabric",
+              "Server",
+              "26.3"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              88556
+            ],
+            "releaseType": 1,
+            "totalDownloads": 8,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9487274/change-log",
+          "html": "<h1>0.1.3 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-mapicon-integration%252fFabric%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        },
+        {
+          "id": 9487255,
+          "version": "0.1.3",
+          "name": "dochi_mapicon_integration-0.1.3-neoforge-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9487255",
+          "uploadedAt": "2026-11-07T06:04:59.14Z",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3",
+          "metadataSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9487255",
+          "metadata": {
+            "id": 9487255,
+            "dateCreated": "2026-11-07T06:04:59.14Z",
+            "dateModified": "2026-11-07T06:18:24.133Z",
+            "displayName": "dochi_mapicon_integration-0.1.3-neoforge-26.3.jar",
+            "fileLength": 774892,
+            "fileName": "dochi_mapicon_integration-0.1.3-neoforge-26.3.jar",
+            "status": 4,
+            "projectId": 1738703,
+            "gameVersions": [
+              "Client",
+              "NeoForge",
+              "Server",
+              "26.3"
+            ],
+            "gameVersionTypeIds": [
+              68441,
+              88556
+            ],
+            "releaseType": 1,
+            "totalDownloads": 10,
+            "user": {
+              "username": "great_dochi",
+              "id": 134118356,
+              "twitchAvatarUrl": "https://media.forgecdn.net/avatars/1917/641/639195522557639549.png",
+              "displayName": "great_dochi"
+            },
+            "additionalFilesCount": 0,
+            "hasServerPack": false,
+            "additionalServerPackFilesCount": 0,
+            "isEarlyAccessContent": false,
+            "isCompatibleWithClient": true
+          },
+          "notesSource": "https://www.curseforge.com/api/v1/mods/1738703/files/9487255/change-log",
+          "html": "<h1>0.1.3 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-mapicon-integration%252fNeoForge%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+        }
+      ]
+    }
+  ],
+  "applied": true,
+  "changedFiles": [
+    "content/changelogs/core/0.3.1.json",
+    "content/changelogs/core-fabric/0.3.1.json",
+    "content/changelogs/dochi-npc-core/0.1.3.json",
+    "content/changelogs/drm-cobblemon-editor/0.2.9.json",
+    "content/changelogs/dochi-warfare/0.3.2.json",
+    "content/changelogs/dochi-warfare/0.2.5.json",
+    "content/changelogs/dochi-real-armor/0.1.6.json",
+    "content/changelogs/dochi-real-armor/0.1.5.json",
+    "content/changelogs/dochi-real-armor/0.1.2.json",
+    "content/changelogs/dochi-mapicon-integration/0.1.3.json",
+    "content/changelogs/published.json"
+  ],
+  "backup": "_backups\\published-release-refresh-20261109-143724"
+}

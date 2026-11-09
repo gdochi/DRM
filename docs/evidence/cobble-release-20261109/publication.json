@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-09T15:09:24.714Z",
+  "commit": "09b8036b97d75f0b9a144dd712888e86aaafe2ed",
+  "origin": "https://gdochi.github.io/DRM/",
+  "routes": [
+    "cobblemon-badges",
+    "cobblemon-badge-presentations",
+    "cobblemon-rct-conversion"
+  ],
+  "publicCobbleFiles": [
+    9505207,
+    9505221
+  ],
+  "assets": [
+    {
+      "file": "assets/media/guides/cobble-release-20261109/badge-create.mp4",
+      "status": 200,
+      "bytes": 253232,
+      "sha256": "1a39690c67cf70a745ad483ed24250200dafb07605788056711c5c793973344b"
+    },
+    {
+      "file": "assets/media/guides/cobble-release-20261109/badge-create.webm",
+      "status": 200,
+      "bytes": 266847,
+      "sha256": "cdb4d90949d1a60ba731c50418eb8a97a6e56d869284a2720159799e5d893ca8"
+    },
+    {
+      "file": "assets/media/guides/cobble-release-20261109/badge-presentation.mp4",
+      "status": 200,
+      "bytes": 551132,
+      "sha256": "36af300ca3b68610e92681131f3c6152f4ed0f520c29d1d74dbf2b4144782736"
+    },
+    {
+      "file": "assets/media/guides/cobble-release-20261109/badge-presentation.webm",
+      "status": 200,
+      "bytes": 521738,
+      "sha256": "6565021ce7b1225b7d9e2a633da58fbf53ad1231082d8e9f943e78b55bbcc2ee"
+    },
+    {
+      "file": "assets/media/guides/cobble-release-20261109/pokemon-alpha.mp4",
+      "status": 200,
+      "bytes": 582704,
+      "sha256": "aa2f80d15c7b796f86e5e64663612efe7ecf8312eddd358bdb3f54d54c5437ed"
+    },
+    {
+      "file": "assets/media/guides/cobble-release-20261109/pokemon-alpha.webm",
+      "status": 200,
+      "bytes": 469477,
+      "sha256": "90ee9dc5c1e0a0dd61b89781a21779cddb527b050be0be9dec760fbf5f4b424a"
+    }
+  ]
+}

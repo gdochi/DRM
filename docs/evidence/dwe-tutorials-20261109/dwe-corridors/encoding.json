@@ -1,0 +1,39 @@
+{
+  "source": "C:/Users/hodu3/Desktop/[DOCHI] DOCS/build/task/dwe-tutorials-20261109/run-03/capture/dwe-corridors-frames.json",
+  "sourceBytes": 67913,
+  "sourceSha256": "da85a2c15a3f06a45601658a51466aa87dd0cfd0aebce63fc04c36781a2da057",
+  "width": 1920,
+  "height": 1260,
+  "durationMs": 34448.864100000006,
+  "fps": 20,
+  "audio": false,
+  "sourceType": "original_timestamped_png",
+  "colorSpace": "bt709",
+  "colorRange": "limited",
+  "captionFooter": null,
+  "annotations": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\dwe-tutorials-20261109\\dwe-corridors\\steps.json",
+  "focusCuts": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\dwe-tutorials-20261109\\dwe-corridors\\focus.json",
+  "sourceWidth": 1920,
+  "sourceHeight": 1080,
+  "outputs": [
+    {
+      "file": "dwe-corridors.mp4",
+      "bytes": 1695995,
+      "sha256": "fedf17fd53663e21df3b877bf26da2d089ababef304c0f2c6c2bb92a439985eb"
+    },
+    {
+      "file": "dwe-corridors.webm",
+      "bytes": 2249619,
+      "sha256": "20085d595cfb2d476ea12d9cd4ff1e25e443241e8c9d0ac45720fbe6db67af30"
+    },
+    {
+      "file": "dwe-corridors.png",
+      "bytes": 1276206,
+      "sha256": "3dff8b08f4a0dfcb303c408ade0208c169b57fba943f4708ac81928572ee46f5"
+    }
+  ],
+  "posterSeconds": 28,
+  "h264Preset": "fast",
+  "vp9CpuUsed": 6,
+  "vp9Deadline": "realtime"
+}

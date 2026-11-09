@@ -1,0 +1,38 @@
+[
+  {
+    "action": "badge-enable-fixture",
+    "nanoTime": 19898664675500
+  },
+  {
+    "action": "caption:3. Test the saved badge with an operator give command.",
+    "nanoTime": 19899851890300
+  },
+  {
+    "action": "badge-verify",
+    "nanoTime": 19912758484600
+  },
+  {
+    "action": "transitions:on",
+    "nanoTime": 19913963175400
+  },
+  {
+    "action": "click:Sample Badges",
+    "nanoTime": 19918258336000
+  },
+  {
+    "action": "caption:4. Pokemon Party: select a Pokemon. Alpha is in Basic.",
+    "nanoTime": 19920062824800
+  },
+  {
+    "action": "caption:Alpha uses Cobblemon\u0027s native appearance. It is separate from Shiny.",
+    "nanoTime": 19926306672200
+  },
+  {
+    "action": "dump:pokemon-alpha-settings",
+    "nanoTime": 19927502492300
+  },
+  {
+    "action": "off",
+    "nanoTime": 19938158860400
+  }
+]

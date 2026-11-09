@@ -1,0 +1,174 @@
+{
+  "catalog": {
+    "schemaVersion": 1,
+    "revision": "a66510c6-22d2-4227-85f2-28cb569acc62",
+    "sets": [
+      {
+        "id": "fa173db2-9a0a-3ad4-b8db-a12fe8719d48",
+        "name": "Sample Badges",
+        "enabled": true,
+        "entries": [
+          {
+            "id": "50759b3b-08e0-3e3c-9882-ab9c7e23b7d2",
+            "name": "Bug / Fairy Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/bug_fairy.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "aca24fc8-cee0-3085-9183-d1c20e110f6b",
+            "name": "Electric Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/electric.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "ea775837-538c-3f9b-82c3-14b1236fc138",
+            "name": "Fire Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/fire.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "154f1229-712d-32a9-9619-8a0b5f4cdd78",
+            "name": "Grass Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/grass.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "b0ab6ab3-7a74-3710-a2d9-7ff5cf5cc859",
+            "name": "Ice Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/ice.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "31054f95-2f3c-37ef-bca9-fd18424245fe",
+            "name": "Normal Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/normal.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "041a0e4b-b7a0-3e6f-8723-ee7281e6c789",
+            "name": "Rock / Steel Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/rock_steel.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "75dad770-2e01-3bd3-afa4-df39ccd3efe4",
+            "name": "Water Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/water.png",
+            "enabled": true,
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "70a824a8-a194-3e4c-963b-057e611d1205",
+        "name": "Sample Trophies",
+        "enabled": true,
+        "entries": [
+          {
+            "id": "00fbd058-a828-3700-8b04-bb65bf61b11a",
+            "name": "Champion Trophy",
+            "kind": "trophy",
+            "texture": "dochi_rpg_maker:textures/trophies/samples/trophy.png",
+            "enabled": true,
+            "required": false
+          }
+        ]
+      },
+      {
+        "id": "906b12a8-ab63-4fa6-81ca-e5decd4bd91a",
+        "name": "Meadow League",
+        "enabled": true,
+        "entries": [
+          {
+            "id": "9a53299c-6b72-403d-bd3c-0c006ae0cf2c",
+            "name": "Meadow Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/bug_fairy.png",
+            "enabled": true,
+            "required": true,
+            "presentations": {
+              "acquire": "6d3cfce7-7d1f-4ea8-ae17-06f95aa1d9ba"
+            }
+          },
+          {
+            "id": "298307cd-5058-4313-8e8c-5721fa8479a8",
+            "name": "Electric Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/electric.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "a549d7c8-8fc0-4d51-bbc7-0a6790c5ecc4",
+            "name": "Fire Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/fire.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "abe15d97-4d0f-40de-a134-19f372462ee7",
+            "name": "Grass Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/grass.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "dceddf3c-6d53-4bb6-a6a7-ffe8b119d452",
+            "name": "Ice Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/ice.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "9110f3fe-1619-4b87-9a46-8a23c38350e6",
+            "name": "Normal Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/normal.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "24a21143-190d-422f-851c-437efb397e8d",
+            "name": "Rock / Steel Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/rock_steel.png",
+            "enabled": true,
+            "required": true
+          },
+          {
+            "id": "22a7cd52-fee0-4360-b8e1-0143c45aee9c",
+            "name": "Water Badge",
+            "kind": "badge",
+            "texture": "dochi_rpg_maker:textures/badges/samples/water.png",
+            "enabled": true,
+            "required": true
+          }
+        ]
+      }
+    ]
+  },
+  "owned": {
+    "9a53299c-6b72-403d-bd3c-0c006ae0cf2c": {
+      "acquiredAt": 1794235325843,
+      "source": "command"
+    }
+  }
+}

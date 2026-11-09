@@ -1,0 +1,16 @@
+{
+  "kept": [
+    "src/media/guides/cobble-release-20261109",
+    "docs/evidence/cobble-release-20261109",
+    "docs/evidence/published-release-refresh-20261109",
+    "_backups/released-docs-20261109",
+    "_backups/published-release-refresh-20261109-143724"
+  ],
+  "gameProcessesStopped": true,
+  "removed": [
+    "build/task/guide-capture/cobble-release-tutorials-20261109-01",
+    "build/task/guide-capture/cobble-release-tutorials-20261109-02",
+    "build/task/guide-capture/cobble-release-tutorials-20261109-03",
+    "build/task/cobble-release-20261109"
+  ]
+}

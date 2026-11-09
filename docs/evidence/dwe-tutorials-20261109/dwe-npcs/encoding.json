@@ -1,0 +1,39 @@
+{
+  "source": "C:/Users/hodu3/Desktop/[DOCHI] DOCS/build/task/dwe-tutorials-20261109/run-03/capture/dwe-npcs-frames.json",
+  "sourceBytes": 65432,
+  "sourceSha256": "bb4aa7d5ab415021a66c974629412f512c7097128d33f2f0d822acf439e4c6f4",
+  "width": 1920,
+  "height": 1260,
+  "durationMs": 33205.2384,
+  "fps": 20,
+  "audio": false,
+  "sourceType": "original_timestamped_png",
+  "colorSpace": "bt709",
+  "colorRange": "limited",
+  "captionFooter": null,
+  "annotations": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\dwe-tutorials-20261109\\dwe-npcs\\steps.json",
+  "focusCuts": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\dwe-tutorials-20261109\\dwe-npcs\\focus.json",
+  "sourceWidth": 1920,
+  "sourceHeight": 1080,
+  "outputs": [
+    {
+      "file": "dwe-npcs.mp4",
+      "bytes": 1717416,
+      "sha256": "f860bef393c440ac4c2d598d46be3f5e55937e683d4c069c8f347fff796b292c"
+    },
+    {
+      "file": "dwe-npcs.webm",
+      "bytes": 2280794,
+      "sha256": "10eba67c99af087031acba9c6e25c3b9bdfc1d9e2e31477051c8559b99a89ce7"
+    },
+    {
+      "file": "dwe-npcs.png",
+      "bytes": 1283467,
+      "sha256": "ab59eaa05387c573ed24f9cc456c5486f19e1a0f4cbfee31c74b86a3e1ca38d2"
+    }
+  ],
+  "posterSeconds": 26,
+  "h264Preset": "fast",
+  "vp9CpuUsed": 6,
+  "vp9Deadline": "realtime"
+}

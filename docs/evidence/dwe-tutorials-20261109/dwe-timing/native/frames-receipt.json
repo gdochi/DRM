@@ -1,0 +1,5070 @@
+{
+  "source": "C:/Users/hodu3/Desktop/[DOCHI] DOCS/build/task/dwe-tutorials-20261109/run-03/capture/dwe-timing-frames.json",
+  "frames": 712,
+  "selected": [
+    {
+      "frame": 0,
+      "file": "00000.png",
+      "elapsedMs": 2.4822,
+      "screen": "GimmickEditorScreen"
+    },
+    {
+      "frame": 65,
+      "file": "00065.png",
+      "elapsedMs": 3260.1129,
+      "screen": "GimmickEditorScreen"
+    },
+    {
+      "frame": 129,
+      "file": "00129.png",
+      "elapsedMs": 6463.7442,
+      "screen": "GimmickEditorScreen"
+    },
+    {
+      "frame": 194,
+      "file": "00194.png",
+      "elapsedMs": 9703.5437,
+      "screen": "GimmickEditorScreen"
+    },
+    {
+      "frame": 259,
+      "file": "00259.png",
+      "elapsedMs": 12951.2683,
+      "screen": "GimmickEditorScreen"
+    },
+    {
+      "frame": 323,
+      "file": "00323.png",
+      "elapsedMs": 16164.0804,
+      "screen": "GimmickEditorScreen"
+    },
+    {
+      "frame": 388,
+      "file": "00388.png",
+      "elapsedMs": 19410.3498,
+      "screen": "GimmickEditorScreen"
+    },
+    {
+      "frame": 452,
+      "file": "00452.png",
+      "elapsedMs": 22610.9971,
+      "screen": "GimmickEditorScreen"
+    },
+    {
+      "frame": 517,
+      "file": "00517.png",
+      "elapsedMs": 25855.4792,
+      "screen": "GimmickEditorScreen"
+    },
+    {
+      "frame": 582,
+      "file": "00582.png",
+      "elapsedMs": 29105.4403,
+      "screen": "GimmickEditorScreen"
+    },
+    {
+      "frame": 646,
+      "file": "00646.png",
+      "elapsedMs": 32303.2689,
+      "screen": "GimmickEditorScreen"
+    },
+    {
+      "frame": 711,
+      "file": "00711.png",
+      "elapsedMs": 35565.0119,
+      "screen": "GimmickEditorScreen"
+    }
+  ],
+  "durationMs": 35612.5297,
+  "intervalMs": {
+    "median": 50.118799999996554,
+    "p95": 51.763999999999214,
+    "max": 79.20269999999982
+  },
+  "originalFrames": [
+    {
+      "file": "00000.png",
+      "elapsedMs": 2.4822,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735596,
+      "sha256": "c9e640f498b8b5b44395956d18c0a9a548787b7baef21d7b0fc43da0cb51051c"
+    },
+    {
+      "file": "00001.png",
+      "elapsedMs": 52.1597,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735596,
+      "sha256": "a17bc79cd1f50ceb6a3fff2c6c2d49fb26f3640398d68da7c987d65e0caa9c69"
+    },
+    {
+      "file": "00002.png",
+      "elapsedMs": 102.3735,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735696,
+      "sha256": "6458b001ffb53c0e01226f47abf5047e81ea1f00fee24456034115ed51dac11d"
+    },
+    {
+      "file": "00003.png",
+      "elapsedMs": 152.3129,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735696,
+      "sha256": "6458b001ffb53c0e01226f47abf5047e81ea1f00fee24456034115ed51dac11d"
+    },
+    {
+      "file": "00004.png",
+      "elapsedMs": 202.3493,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735696,
+      "sha256": "6458b001ffb53c0e01226f47abf5047e81ea1f00fee24456034115ed51dac11d"
+    },
+    {
+      "file": "00005.png",
+      "elapsedMs": 253.3648,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735604,
+      "sha256": "c11132f56da8ef754e55d76dab04a37ea8b125e531071ee0198584271f843a49"
+    },
+    {
+      "file": "00006.png",
+      "elapsedMs": 302.3568,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735718,
+      "sha256": "b472dec9903daddc233f22c0201bff1cb2f7c28c856ca62cca6cc22fbf8f01f8"
+    },
+    {
+      "file": "00007.png",
+      "elapsedMs": 353.1579,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735708,
+      "sha256": "09a3f376e5fac1ed52cdb82f2138d639a471694418c951d46b6a8726b15f428c"
+    },
+    {
+      "file": "00008.png",
+      "elapsedMs": 403.5229,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735985,
+      "sha256": "ffe56a71e33e82a83680b61764fa3c5ca5eac41a34897289cb7f8d1a63c8c4a1"
+    },
+    {
+      "file": "00009.png",
+      "elapsedMs": 453.1062,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735833,
+      "sha256": "6d1be5317ed32c26f482af143da39da8fd3badc10152bbe2e24948020354b681"
+    },
+    {
+      "file": "00010.png",
+      "elapsedMs": 503.4015,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735833,
+      "sha256": "6d1be5317ed32c26f482af143da39da8fd3badc10152bbe2e24948020354b681"
+    },
+    {
+      "file": "00011.png",
+      "elapsedMs": 553.4498,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735858,
+      "sha256": "8f4bb11a9406f2c39010da673799c7885807e2f29c69537c43d9084eeb767f03"
+    },
+    {
+      "file": "00012.png",
+      "elapsedMs": 604.8257,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735576,
+      "sha256": "8c45e52d8b3bd6192c86371e86d0a27b5cbc7b6cbfb34915859e0b5ef27964ec"
+    },
+    {
+      "file": "00013.png",
+      "elapsedMs": 654.0164,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735792,
+      "sha256": "a2110968e47ae94701bed4c4b1f319eb5f07369d08ac978785e7325b65ccc34c"
+    },
+    {
+      "file": "00014.png",
+      "elapsedMs": 704.1833,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735733,
+      "sha256": "1b3721f69a3a9820b871d30f9048953aaa40b78ad50e63503440f14989a0e52e"
+    },
+    {
+      "file": "00015.png",
+      "elapsedMs": 754.6571,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735839,
+      "sha256": "41db7061c4ebd3e74993406425c1ea51fc839f3feeff451132868d695ccd1379"
+    },
+    {
+      "file": "00016.png",
+      "elapsedMs": 804.6439,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735840,
+      "sha256": "73eff0fa90757f255c3d125dea22ddd461beb9710181dfaec17942a25e2b7af1"
+    },
+    {
+      "file": "00017.png",
+      "elapsedMs": 854.5724,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735863,
+      "sha256": "d73640273e3e647de284f8475e05950b2b291fc03dc048295e82cb54bac5f41d"
+    },
+    {
+      "file": "00018.png",
+      "elapsedMs": 904.6675,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735637,
+      "sha256": "e4822ded193c5ccc6f7b628c0fe13a26da9fd85b4b8a81b94f073847c1e26c92"
+    },
+    {
+      "file": "00019.png",
+      "elapsedMs": 955.3643,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735696,
+      "sha256": "ddaf5a6dd7cf1b2ff49cd2c35e6fac962c05ec7731e589c5f72fecbb61605263"
+    },
+    {
+      "file": "00020.png",
+      "elapsedMs": 1005.8611,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735756,
+      "sha256": "a4708860df5016d5797d15484cebe4fb729cdc32aaa094cc5f07440613608b93"
+    },
+    {
+      "file": "00021.png",
+      "elapsedMs": 1055.7176,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735777,
+      "sha256": "cbc7acffa327cb004307d7809e86a21229baaa4de20c36dd56323b8eda9f1476"
+    },
+    {
+      "file": "00022.png",
+      "elapsedMs": 1105.7961,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735568,
+      "sha256": "c9c71d2af3bcb3141777d51e5f939d218c71329b5c42a1bedb7bf55def9ec880"
+    },
+    {
+      "file": "00023.png",
+      "elapsedMs": 1156.0336,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735709,
+      "sha256": "a4ceaad0d7798bc1ab6c0a7e9b4a5a42d93bb3ade515b42f31e5ca097a920c91"
+    },
+    {
+      "file": "00024.png",
+      "elapsedMs": 1207.1877,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735769,
+      "sha256": "350e8d60c09a8a41e87eb799f33b890608ca3964fe4e9d96afbced0435dfd956"
+    },
+    {
+      "file": "00025.png",
+      "elapsedMs": 1255.9365,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735511,
+      "sha256": "7ca294072c7034521b191520bee265d6f3990b53eddd183198d6a2524d6aa842"
+    },
+    {
+      "file": "00026.png",
+      "elapsedMs": 1306.3303,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735504,
+      "sha256": "5e2c54f7b4bbd6079600ccba8373c9c8fd97d129275d070adf4a7e4138863522"
+    },
+    {
+      "file": "00027.png",
+      "elapsedMs": 1356.6135,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735563,
+      "sha256": "e55e99e6162dc6431408f131996daddf8bfda4eaffb03d38616baf699a1de79c"
+    },
+    {
+      "file": "00028.png",
+      "elapsedMs": 1406.2264,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735563,
+      "sha256": "e55e99e6162dc6431408f131996daddf8bfda4eaffb03d38616baf699a1de79c"
+    },
+    {
+      "file": "00029.png",
+      "elapsedMs": 1456.4193,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735510,
+      "sha256": "35f680b32ad4eec93692d6743d72b884325c4e7f688bb9920f1f823e0b2dfa2d"
+    },
+    {
+      "file": "00030.png",
+      "elapsedMs": 1506.3393,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735647,
+      "sha256": "efb5e97e52f8a43aed055e01545ce0d0911cafc1f86efc462fd95ff3f147733e"
+    },
+    {
+      "file": "00031.png",
+      "elapsedMs": 1556.317,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735598,
+      "sha256": "f4f8c711188220bdc2b18365f0a1199428d182485a0dea8f3ede623c5cb8eef9"
+    },
+    {
+      "file": "00032.png",
+      "elapsedMs": 1606.6293,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735725,
+      "sha256": "8aeec7e6758d50b5bc966ba691c2b97a4862a89e19135d029fa4dff5cc5796dd"
+    },
+    {
+      "file": "00033.png",
+      "elapsedMs": 1656.4023,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735691,
+      "sha256": "c617e624e8454c41e876a408c8ccb135b2ba76b7c2311678a1a7f42a491b0bcf"
+    },
+    {
+      "file": "00034.png",
+      "elapsedMs": 1706.4346,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735701,
+      "sha256": "a15adba57ea2766b7d034e693f1a8245b6ab36bef361c99da68d6502730600f8"
+    },
+    {
+      "file": "00035.png",
+      "elapsedMs": 1756.4862,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735684,
+      "sha256": "89df2333e9dab5c0fc1c3fc0bd8e9d5700e793ae0358a37ab69778d7f310cba8"
+    },
+    {
+      "file": "00036.png",
+      "elapsedMs": 1806.7704,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735679,
+      "sha256": "d5b40e2ec6aa70dd4551c080397f7b2fcaef51974a893c470c3b650e422ddd67"
+    },
+    {
+      "file": "00037.png",
+      "elapsedMs": 1856.8468,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735568,
+      "sha256": "24b57a726db5f0f8c98285ba0d867be3275cf9010f7842079d1616953ff44f48"
+    },
+    {
+      "file": "00038.png",
+      "elapsedMs": 1907.1432,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735623,
+      "sha256": "dd25c3269a37942d2d4276964cc8dd95e2d4e88e491a9483bf8b9b172b4e6b5d"
+    },
+    {
+      "file": "00039.png",
+      "elapsedMs": 1956.7534,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735620,
+      "sha256": "626c018cd19aa403791b62b282359346827b2778fb5d8563542344ecd77d0e54"
+    },
+    {
+      "file": "00040.png",
+      "elapsedMs": 2006.9346,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735538,
+      "sha256": "db4a1470f7b484f4b5ea98b38b74e16bf6d7c912aa02c00607e1d3bcf3e5476b"
+    },
+    {
+      "file": "00041.png",
+      "elapsedMs": 2056.8953,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735515,
+      "sha256": "4e429fbbd788a29d8403f7abf63d6daa7ae973da262e4b661fe7555445b65068"
+    },
+    {
+      "file": "00042.png",
+      "elapsedMs": 2107.2383,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735778,
+      "sha256": "0e77508e4913fe65957e335f3729b18a93521d039042e28209ea50c2fe5ce6c3"
+    },
+    {
+      "file": "00043.png",
+      "elapsedMs": 2157.0774,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735767,
+      "sha256": "2a8da42958960b8dfedf1c0beb2ccc01ae3b283ceb38921894c784eb0aa5c182"
+    },
+    {
+      "file": "00044.png",
+      "elapsedMs": 2207.2214,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735629,
+      "sha256": "e9f74ddae4e0c7246dc2900a392463d6607dbce1fe3c14bb285302f03ed9920a"
+    },
+    {
+      "file": "00045.png",
+      "elapsedMs": 2257.7601,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735704,
+      "sha256": "036d2284b8073a124402ebfb72e3c821d2acd390c25838ea0fdb837545607b31"
+    },
+    {
+      "file": "00046.png",
+      "elapsedMs": 2307.8651,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735707,
+      "sha256": "c442a4f01b03a83c85114bc1a3d41af8f1ca1b088c017acc394f78995cc71db5"
+    },
+    {
+      "file": "00047.png",
+      "elapsedMs": 2358.1941,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735571,
+      "sha256": "aadd97bb2760a0b8e97d4d82ef5c27929327ee013e847ce0a949f099203f8e42"
+    },
+    {
+      "file": "00048.png",
+      "elapsedMs": 2408.5141,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735572,
+      "sha256": "c2a33a36d0138bdc9cd46e8be00efe8c8b90ea4b77c4fa21882a1210ff9cf2ac"
+    },
+    {
+      "file": "00049.png",
+      "elapsedMs": 2458.9699,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735640,
+      "sha256": "ad50525722301f2123b4fe052c811eaf008f8f742e6e16162e1f52772998a5e0"
+    },
+    {
+      "file": "00050.png",
+      "elapsedMs": 2508.9066,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735803,
+      "sha256": "eace7ca07d1c143b35daa88558283105295f928119dd4e97cccf6ccb64d217fd"
+    },
+    {
+      "file": "00051.png",
+      "elapsedMs": 2559.1939,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735806,
+      "sha256": "9b296be6b1394b98c5011f1a0a9e150e5a9282ba5dcf2e1a1705d4ebb8713e20"
+    },
+    {
+      "file": "00052.png",
+      "elapsedMs": 2609.0135,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735667,
+      "sha256": "5d6b57c12171c99d5b770e0b6ea7e6cede009668a8a8fa9b7c879b379cd96fe3"
+    },
+    {
+      "file": "00053.png",
+      "elapsedMs": 2659.0463,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735747,
+      "sha256": "33e5970535613861e580b4e6390318e258ffb518c48fb08b26b56ef0e8208cc5"
+    },
+    {
+      "file": "00054.png",
+      "elapsedMs": 2709.1793,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735572,
+      "sha256": "6d23b1e46daa4742da0aeaeb07b4550dc14ecf951425262ab70ce471c35cb81e"
+    },
+    {
+      "file": "00055.png",
+      "elapsedMs": 2758.8846,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735572,
+      "sha256": "6d23b1e46daa4742da0aeaeb07b4550dc14ecf951425262ab70ce471c35cb81e"
+    },
+    {
+      "file": "00056.png",
+      "elapsedMs": 2809.1404,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735777,
+      "sha256": "803ea26be5fbaeb6b75985d1a75524137ac4935cace9de73a6e692e87147bef8"
+    },
+    {
+      "file": "00057.png",
+      "elapsedMs": 2859.2305,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735608,
+      "sha256": "483c8910cb7759111dd9239472708ef9a8be3784acc107b0b46114ca5ae42ed7"
+    },
+    {
+      "file": "00058.png",
+      "elapsedMs": 2909.0949,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735774,
+      "sha256": "765fe1bf9453d7d927016f5569283b379ca6457b781aaab627c9323c78e7b849"
+    },
+    {
+      "file": "00059.png",
+      "elapsedMs": 2959.5559,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735697,
+      "sha256": "d03d52f1955cd0082383a6fbc2965334e34d0c2fecc87b577677dad6378959c1"
+    },
+    {
+      "file": "00060.png",
+      "elapsedMs": 3009.4035,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735726,
+      "sha256": "bf5f56d7570258e2faeee2f489e8c96c4ac346e40c4f80defd523d00e665b617"
+    },
+    {
+      "file": "00061.png",
+      "elapsedMs": 3059.1234,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735729,
+      "sha256": "81bf68f72f070f9052458abe2ef2d0f56c4ba944f626ab1995bcd43ec1c2333b"
+    },
+    {
+      "file": "00062.png",
+      "elapsedMs": 3111.0615,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735686,
+      "sha256": "bfd5555445f20ff9bc0528653aab169fdce3287fc407aed65636137bd30de76f"
+    },
+    {
+      "file": "00063.png",
+      "elapsedMs": 3159.3425,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735672,
+      "sha256": "a34f60ec38e1e75860e4f1e7c0233f1cbae9a71e87b81343673bb0da9e25b3df"
+    },
+    {
+      "file": "00064.png",
+      "elapsedMs": 3209.4942,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735684,
+      "sha256": "59b9208a92fb56eca01650c4306bff682e350ae2eec4dbaebceed18b73680e50"
+    },
+    {
+      "file": "00065.png",
+      "elapsedMs": 3260.1129,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735696,
+      "sha256": "a300540f36210aa627f1276c60e6787da966200e2131f74b0aec95206c8e83e7"
+    },
+    {
+      "file": "00066.png",
+      "elapsedMs": 3309.9152,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735668,
+      "sha256": "bf4922cad6d689926cf7424f6e46f176f29f7ba79d7c6c533e5c4c0c321a9898"
+    },
+    {
+      "file": "00067.png",
+      "elapsedMs": 3360.5712,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735711,
+      "sha256": "c3e613a29cb2b41d2cf542cce3c5feacb77875783e4b2158227c50aa126036ee"
+    },
+    {
+      "file": "00068.png",
+      "elapsedMs": 3410.9872,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735681,
+      "sha256": "37f68f92a65dd3648de4ef450a5622b443d42cf3bfa06f8e6c434909116b4b0b"
+    },
+    {
+      "file": "00069.png",
+      "elapsedMs": 3460.5519,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735693,
+      "sha256": "e4407084d9479b6afcd06de797436a95aec6eaffb0735bae6a251a02c9d09aec"
+    },
+    {
+      "file": "00070.png",
+      "elapsedMs": 3510.7407,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735711,
+      "sha256": "67def733f5d8e23cd48dc867dd91d1dfa9e9eb5ae730097c9e88c0795dc58ddc"
+    },
+    {
+      "file": "00071.png",
+      "elapsedMs": 3575.9771,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735582,
+      "sha256": "4d6bee7c3a0a6573f698374690c8fa29cb758677cc34e5d5f3d0cca6b66f0fb5"
+    },
+    {
+      "file": "00072.png",
+      "elapsedMs": 3601.6837,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735582,
+      "sha256": "4d6bee7c3a0a6573f698374690c8fa29cb758677cc34e5d5f3d0cca6b66f0fb5"
+    },
+    {
+      "file": "00073.png",
+      "elapsedMs": 3651.6074,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735757,
+      "sha256": "d7e0b4ea6aadff67266fbf60247749cc9df40cda09550a73410c4e905e04e1cd"
+    },
+    {
+      "file": "00074.png",
+      "elapsedMs": 3702.5304,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735707,
+      "sha256": "2a6ae3c35e49dd93ee9083eee3974ef918ef73cd5ddcf24f75a6066e3b8808ae"
+    },
+    {
+      "file": "00075.png",
+      "elapsedMs": 3752.7876,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735809,
+      "sha256": "2de8e2bdd74eda878797e6481b61fd7a75e0a65332d91bf083d0e80efd42204f"
+    },
+    {
+      "file": "00076.png",
+      "elapsedMs": 3803.3599,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735853,
+      "sha256": "046c869731dcae25d5db8efc08e2abce0cbc283f1f442cfda47aff1d586da2dc"
+    },
+    {
+      "file": "00077.png",
+      "elapsedMs": 3853.755,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735838,
+      "sha256": "6a247176966ef2e5b945e80e84eb2ccd291a61e46d66c66403415e095af9ac8e"
+    },
+    {
+      "file": "00078.png",
+      "elapsedMs": 3903.3165,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735635,
+      "sha256": "7e5d78776ae335e1aa9e488683ea2425c1741ea9f34b38db46f6b9fabc0bc092"
+    },
+    {
+      "file": "00079.png",
+      "elapsedMs": 3953.2804,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735658,
+      "sha256": "912ca1b3352a4da8f0a7a2daa5a87312e1e0013e2b70c7079dc154b855d662ef"
+    },
+    {
+      "file": "00080.png",
+      "elapsedMs": 4003.5955,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735773,
+      "sha256": "8387a00c09d75dc224ed3e4f712a984067faf97c88aa3abff4e5488f377ac6b3"
+    },
+    {
+      "file": "00081.png",
+      "elapsedMs": 4053.4224,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735770,
+      "sha256": "6b271ae8d89e003368502e08188f83a88fd1f6c8e0d5c094ab2fb51e291d753e"
+    },
+    {
+      "file": "00082.png",
+      "elapsedMs": 4103.5634,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735677,
+      "sha256": "565e1cd0b7939bc4435ae3d148b0b3923b26cee0254bcb00cd440f165cf3df5b"
+    },
+    {
+      "file": "00083.png",
+      "elapsedMs": 4155.9695,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735746,
+      "sha256": "5486aaae765e790a08c0c13b289dc5338405180d1273aafd3d0a163e57f5b4e6"
+    },
+    {
+      "file": "00084.png",
+      "elapsedMs": 4206.3027,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735788,
+      "sha256": "4da7cb9bda5b0ca26c711736c368edc00d7bc2e604c8a53ddba596bd86373758"
+    },
+    {
+      "file": "00085.png",
+      "elapsedMs": 4255.7795,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735510,
+      "sha256": "aae086513939e51424863523b400c67090d397338bfc2ce2cd089a87b297225b"
+    },
+    {
+      "file": "00086.png",
+      "elapsedMs": 4305.8922,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735502,
+      "sha256": "dbda367d87652de0739cf72d3abfbac58e23efb8bb83d156e6ac74bee5cf7a86"
+    },
+    {
+      "file": "00087.png",
+      "elapsedMs": 4355.7538,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735602,
+      "sha256": "13f26721dafb77a31c5a9db0dec7f80c8d25088a6b0ab61adec9e5a60c715d8a"
+    },
+    {
+      "file": "00088.png",
+      "elapsedMs": 4406.2279,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735546,
+      "sha256": "03797fcd10124df1d20e01b99fd062d0c6645708215f07deec04deba094040e1"
+    },
+    {
+      "file": "00089.png",
+      "elapsedMs": 4456.6289,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735560,
+      "sha256": "5c7192fb1236383edcc4ed3d8d0e152707afa023bdd4719219ff2f7dddf1b76c"
+    },
+    {
+      "file": "00090.png",
+      "elapsedMs": 4506.5072,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735689,
+      "sha256": "e38ba49861880da9147ba095eeb08017154328fb003be06bc306e532e44f1b33"
+    },
+    {
+      "file": "00091.png",
+      "elapsedMs": 4556.3542,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735686,
+      "sha256": "5ade03102a9dd81270738243280a9dff5b06c589caf8ac112ab285b48ebba2a0"
+    },
+    {
+      "file": "00092.png",
+      "elapsedMs": 4606.4166,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735685,
+      "sha256": "fd11c8c5d112e28f20accc110c8857c03e908300ea2252c3a0eb3cfa0a20895f"
+    },
+    {
+      "file": "00093.png",
+      "elapsedMs": 4657.2969,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718333,
+      "sha256": "4377f234641b7d263c745dab245f4e6b1f89183275ccb72f9cecd46b5ce480e1"
+    },
+    {
+      "file": "00094.png",
+      "elapsedMs": 4706.2714,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718293,
+      "sha256": "506949c9744446fbde84c66ca699a1368a4dc72d14b4182e2f2109afb534b8a4"
+    },
+    {
+      "file": "00095.png",
+      "elapsedMs": 4756.288,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718258,
+      "sha256": "c8f9681e6ccfe22fa7e70ed6d270efaff001095e4e69d7fa25fcb7e29e09e968"
+    },
+    {
+      "file": "00096.png",
+      "elapsedMs": 4807.1474,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718275,
+      "sha256": "e3c42fd166b4b078cbe7cd1406e7f086df9f3f741e1de0fed8c295e469c64e16"
+    },
+    {
+      "file": "00097.png",
+      "elapsedMs": 4856.1882,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718104,
+      "sha256": "7d55cf70e2b04a913a4733eb901b0f9b54475a7b94e32cd3055e0ea9d6af0af7"
+    },
+    {
+      "file": "00098.png",
+      "elapsedMs": 4906.2623,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718186,
+      "sha256": "8803a21917a6535b93e03429af7ca5a4b3628424dc244223fa6be2b5be7cbffc"
+    },
+    {
+      "file": "00099.png",
+      "elapsedMs": 4956.347,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718062,
+      "sha256": "2c0d60c70b5144904f3b368e7f117d5b4be156b942431407f997e969f9de59b3"
+    },
+    {
+      "file": "00100.png",
+      "elapsedMs": 5006.11,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718112,
+      "sha256": "d7d78d626831704f0ddcf90119479b18025fd7e9ee2668a79c8fa6c1cc09b3c5"
+    },
+    {
+      "file": "00101.png",
+      "elapsedMs": 5056.3359,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718060,
+      "sha256": "8f6fd980d10150b649742d71a421381d4d04b06aca2e8cfc06b67e00e7078703"
+    },
+    {
+      "file": "00102.png",
+      "elapsedMs": 5106.2996,
+      "screen": "GimmickEditorScreen",
+      "bytes": 717977,
+      "sha256": "a02671b1b02101b4109b217db8d8e6682c086dd8ce810cd0c2267d1f8b2f5f06"
+    },
+    {
+      "file": "00103.png",
+      "elapsedMs": 5156.6612,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718154,
+      "sha256": "0918b46cd017f6d937a35fa555ebb5d28031bb93f98c4da8bcffb0a83f1b3a21"
+    },
+    {
+      "file": "00104.png",
+      "elapsedMs": 5206.7795,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718110,
+      "sha256": "3fe18a1195673274ce350ff2917d6c6c598008785098079230823df754aa426d"
+    },
+    {
+      "file": "00105.png",
+      "elapsedMs": 5258.3393,
+      "screen": "GimmickEditorScreen",
+      "bytes": 717932,
+      "sha256": "095036505fdd64f313239f6f1b5de050fad34a6f2788efa0953e68850b11b983"
+    },
+    {
+      "file": "00106.png",
+      "elapsedMs": 5307.0922,
+      "screen": "GimmickEditorScreen",
+      "bytes": 717919,
+      "sha256": "3d51d07ff0be376bb966f497b4f81ff5f96cf116115536a9bb8d94a0f87de769"
+    },
+    {
+      "file": "00107.png",
+      "elapsedMs": 5356.8591,
+      "screen": "GimmickEditorScreen",
+      "bytes": 717980,
+      "sha256": "42963d7a93f26584cf5ae76bce8a6e30e004804f3f169f2ce7402bda660304ce"
+    },
+    {
+      "file": "00108.png",
+      "elapsedMs": 5407.4832,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718172,
+      "sha256": "ba3b7ebae1c923af37fb92bc1a6eb19bef23c6cf75dd1dee994d43a0b1652bbf"
+    },
+    {
+      "file": "00109.png",
+      "elapsedMs": 5457.6125,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718379,
+      "sha256": "cfb54038127620188ffc0889074e95ed4643cd6b21b7f3531de4a7e82060c526"
+    },
+    {
+      "file": "00110.png",
+      "elapsedMs": 5509.4093,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718329,
+      "sha256": "0c8da26ff3e5c1b4fcd0d3b06465e8ef7fc265540a03bc68ed911505fea1ac15"
+    },
+    {
+      "file": "00111.png",
+      "elapsedMs": 5559.364,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718268,
+      "sha256": "ead7cfa7c4864c8a67f7a77ffeed2ebd28f1d7f3c03dec7c5647ab863bd766f5"
+    },
+    {
+      "file": "00112.png",
+      "elapsedMs": 5610.4473,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718055,
+      "sha256": "5c22ff119b8be26d2cd53187ce5a0fdf57c183267c460117da35dd0a861413dc"
+    },
+    {
+      "file": "00113.png",
+      "elapsedMs": 5659.6354,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718055,
+      "sha256": "bb497cb36bc4fe911e571a133f24f97c8c42cd0d84430e38235485b0a058f3a5"
+    },
+    {
+      "file": "00114.png",
+      "elapsedMs": 5709.3398,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718332,
+      "sha256": "75222cd892f21fbbd5d1a3bd1f06b19260ec8a7e8db7a91bec1a13e9e09df2ec"
+    },
+    {
+      "file": "00115.png",
+      "elapsedMs": 5759.3214,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718332,
+      "sha256": "75222cd892f21fbbd5d1a3bd1f06b19260ec8a7e8db7a91bec1a13e9e09df2ec"
+    },
+    {
+      "file": "00116.png",
+      "elapsedMs": 5809.4776,
+      "screen": "GimmickEditorScreen",
+      "bytes": 717908,
+      "sha256": "6b8ec845fad5315e3ab8647639ea5fddfa72f9eeab0b14d06a03c8324e11d749"
+    },
+    {
+      "file": "00117.png",
+      "elapsedMs": 5861.0398,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718562,
+      "sha256": "2dc1039920cdadc73e9ae516c875628b810261dfef5ab4e5edadee6ce5032e29"
+    },
+    {
+      "file": "00118.png",
+      "elapsedMs": 5909.4616,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718677,
+      "sha256": "4596b626a854b4432180aeaef522c3d78201fb39d2b472fbe0eeec4e5dd44228"
+    },
+    {
+      "file": "00119.png",
+      "elapsedMs": 5960.5316,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718748,
+      "sha256": "c1e2482feaa57a8732cc296f6a97a3ec89599a90c374d4ca69dc0b63dcfad655"
+    },
+    {
+      "file": "00120.png",
+      "elapsedMs": 6010.2119,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718892,
+      "sha256": "29d4740c54314bd4e9c0971cd7f0272482efedf6a618ec6fec431342715fc4af"
+    },
+    {
+      "file": "00121.png",
+      "elapsedMs": 6060.7008,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718943,
+      "sha256": "9b78f64d1e8a15f4883792e887538f07b5e9cf6f2010c3b07a99ac902c9f229c"
+    },
+    {
+      "file": "00122.png",
+      "elapsedMs": 6111.5874,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718318,
+      "sha256": "36c69c4ef57501cec501f94c4de4900beeb6e7887a98a66ee324c494a18eb6ab"
+    },
+    {
+      "file": "00123.png",
+      "elapsedMs": 6161.1074,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718857,
+      "sha256": "e2f6dab92c2a40eeb3b08199a27da21b6542c118604669c5ee63c42117527483"
+    },
+    {
+      "file": "00124.png",
+      "elapsedMs": 6213.0898,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718748,
+      "sha256": "0930658fb5319239f2aef793aeecd9b8a12334368f37def10c76166e83626cc9"
+    },
+    {
+      "file": "00125.png",
+      "elapsedMs": 6263.1621,
+      "screen": "GimmickEditorScreen",
+      "bytes": 719092,
+      "sha256": "3367caae03edff12f7081ae484eb960384a2d4af88f2d16295e8280ac638c11b"
+    },
+    {
+      "file": "00126.png",
+      "elapsedMs": 6312.9332,
+      "screen": "GimmickEditorScreen",
+      "bytes": 719344,
+      "sha256": "8ee2f54bac332c86cf586da51373b5a7b639699e15cd1767fbea768e396501f6"
+    },
+    {
+      "file": "00127.png",
+      "elapsedMs": 6363.4216,
+      "screen": "GimmickEditorScreen",
+      "bytes": 719183,
+      "sha256": "14d83f0f14c9e3916b82b16c09a8ceb182d2329fe4dbe0e821fb8f920d8b49a3"
+    },
+    {
+      "file": "00128.png",
+      "elapsedMs": 6413.8163,
+      "screen": "GimmickEditorScreen",
+      "bytes": 719239,
+      "sha256": "fb788386b201ba40cffd214d13b8fc967ba38da48f07d63c8389c4c6c1d23697"
+    },
+    {
+      "file": "00129.png",
+      "elapsedMs": 6463.7442,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718898,
+      "sha256": "f8957dfe6db33a174ea9ddad0cf1093a43e6fdf260617a7887810a41d336a991"
+    },
+    {
+      "file": "00130.png",
+      "elapsedMs": 6513.2626,
+      "screen": "GimmickEditorScreen",
+      "bytes": 719352,
+      "sha256": "b2f069a73082fbfe407cfcf9d7a5eb8ea7c20863e4d985ee56136d26ef496b9a"
+    },
+    {
+      "file": "00131.png",
+      "elapsedMs": 6564.4656,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718828,
+      "sha256": "3ec561f34767f781a1979f6880c5f6b862907d46aacea14be431efa9c05f6ae6"
+    },
+    {
+      "file": "00132.png",
+      "elapsedMs": 6615.2256,
+      "screen": "GimmickEditorScreen",
+      "bytes": 717699,
+      "sha256": "acc8e54322d0fc89415d8a85d4307a53769d696560f0ee848f7d936d649ff81d"
+    },
+    {
+      "file": "00133.png",
+      "elapsedMs": 6665.4556,
+      "screen": "GimmickEditorScreen",
+      "bytes": 716707,
+      "sha256": "cf287fef221ef011f8ba8e821095d3681f3c2754b46cb3594477f5db3a18dec3"
+    },
+    {
+      "file": "00134.png",
+      "elapsedMs": 6716.3839,
+      "screen": "GimmickEditorScreen",
+      "bytes": 717497,
+      "sha256": "fa4f82437cc48a7ef841ce2a59eac602071207404f53684cdb3a0d67e1f3c5e3"
+    },
+    {
+      "file": "00135.png",
+      "elapsedMs": 6750.035,
+      "screen": "GimmickEditorScreen",
+      "bytes": 717332,
+      "sha256": "6bd0626ae9c21d55a5ddbb74e0b5910c5eeda2032a9642cd6cc2f65e3e4c55d8"
+    },
+    {
+      "file": "00136.png",
+      "elapsedMs": 6816.5393,
+      "screen": "GimmickEditorScreen",
+      "bytes": 717598,
+      "sha256": "dc8833311f4c5a943f27ce37600e16dfe48d841f2695b01012d0222ab8616910"
+    },
+    {
+      "file": "00137.png",
+      "elapsedMs": 6867.3767,
+      "screen": "GimmickEditorScreen",
+      "bytes": 717470,
+      "sha256": "3eb649b5d3acae269db4aeb1ef7332021398213aefa0ffee4caf1329585491d1"
+    },
+    {
+      "file": "00138.png",
+      "elapsedMs": 6900.0615,
+      "screen": "GimmickEditorScreen",
+      "bytes": 716736,
+      "sha256": "a41a264b0ceff8869dac843c7b5e9820588b4fced66149df8191e13b34ce0213"
+    },
+    {
+      "file": "00139.png",
+      "elapsedMs": 6951.8689,
+      "screen": "GimmickEditorScreen",
+      "bytes": 716768,
+      "sha256": "d425bedf9c272ae774228e4b09ab3541692ce3a839946eb9aab6ad7f268035ea"
+    },
+    {
+      "file": "00140.png",
+      "elapsedMs": 7000.8246,
+      "screen": "GimmickEditorScreen",
+      "bytes": 718458,
+      "sha256": "1d61e9ef426cca814bf9bbe8292166e6b87749cd56697b05829fe033cc46ec96"
+    },
+    {
+      "file": "00141.png",
+      "elapsedMs": 7051.3267,
+      "screen": "GimmickEditorScreen",
+      "bytes": 717094,
+      "sha256": "13bb5a4170fa09d237950024fcb9345cb46eaf72d1a762ac32d0d344db6761bd"
+    },
+    {
+      "file": "00142.png",
+      "elapsedMs": 7102.0399,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736260,
+      "sha256": "2a89ea8567b806a30a403cc5b749615f2b3a69207540ed38cb2bd199137eae0a"
+    },
+    {
+      "file": "00143.png",
+      "elapsedMs": 7152.8852,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735895,
+      "sha256": "923921c7c9b7f5d196d6c12823bc403d38e036efcfd684cbeaf30553201903e5"
+    },
+    {
+      "file": "00144.png",
+      "elapsedMs": 7201.6422,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735949,
+      "sha256": "056f43b10d432f9e152b625c0844bc1a5a31e37c4dcc0a9587bea1b85dbff966"
+    },
+    {
+      "file": "00145.png",
+      "elapsedMs": 7251.3419,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736415,
+      "sha256": "80c2e2e41173b0dfb03a42b596ee0dca68fab01a8d4a5a66003d24e1a8bb34e7"
+    },
+    {
+      "file": "00146.png",
+      "elapsedMs": 7301.7943,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736466,
+      "sha256": "6633fe15527eb9b50a5f79738b6b91e69a6c0c60e2a7ebe8f50bf7c3af4d8b3a"
+    },
+    {
+      "file": "00147.png",
+      "elapsedMs": 7351.6136,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736386,
+      "sha256": "7a961be5bd8186ca430d9e46baed2fcbb35d69aae5112b8429d5268a439628ab"
+    },
+    {
+      "file": "00148.png",
+      "elapsedMs": 7402.8006,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736378,
+      "sha256": "3191e29a9d3c3c1f9ee1ef153dce9882b2c988fea3e43f49e71a47817f4ea785"
+    },
+    {
+      "file": "00149.png",
+      "elapsedMs": 7453.0953,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736275,
+      "sha256": "1d7844ab82456eade1a433611b943c9b768a67f6e9c9c59d50439f97a2b25189"
+    },
+    {
+      "file": "00150.png",
+      "elapsedMs": 7504.686,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736281,
+      "sha256": "df655036f8ba24b363cf5c8c1fdb0642f723930f29026745ebf71cb7da9ba290"
+    },
+    {
+      "file": "00151.png",
+      "elapsedMs": 7553.0438,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736164,
+      "sha256": "bcd4972d84aca11ceb2cb774d146363aaac772e09f1b46a1caf64081856da509"
+    },
+    {
+      "file": "00152.png",
+      "elapsedMs": 7603.1778,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736570,
+      "sha256": "e2ebe165909a237b070de9aa27bbe497fe1d15cc895a49ba3c76492d23f23dea"
+    },
+    {
+      "file": "00153.png",
+      "elapsedMs": 7654.8422,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736785,
+      "sha256": "4e5b6022974b3b8b3e12e80203ab5490d861040814db97f8ae9471c280b5861b"
+    },
+    {
+      "file": "00154.png",
+      "elapsedMs": 7704.1326,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736785,
+      "sha256": "4e5b6022974b3b8b3e12e80203ab5490d861040814db97f8ae9471c280b5861b"
+    },
+    {
+      "file": "00155.png",
+      "elapsedMs": 7783.3353,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736715,
+      "sha256": "58733cb11ba807f7dd6346d345ebbd88f9add37097f64c0e4d7863de2cbd8706"
+    },
+    {
+      "file": "00156.png",
+      "elapsedMs": 7812.9915,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736823,
+      "sha256": "35f59a5416ac35e8912d66fb7adae96f749a24f211e7ede27412dc8f718c86fd"
+    },
+    {
+      "file": "00157.png",
+      "elapsedMs": 7863.4009,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736906,
+      "sha256": "dc2760dfa438d85c831a1fb12200991e5096e793c953cbd80b975acb1b15a861"
+    },
+    {
+      "file": "00158.png",
+      "elapsedMs": 7914.6036,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736921,
+      "sha256": "a6be01dd8cbe90dbd84816a60fd83607e10a59a71ef56d0a6e1eb8f2ffde1655"
+    },
+    {
+      "file": "00159.png",
+      "elapsedMs": 7963.4651,
+      "screen": "GimmickEditorScreen",
+      "bytes": 737023,
+      "sha256": "55e1aa6df15ec790b822341c9c3c2079c03aa1b770c9800cbdddd92551e6f99a"
+    },
+    {
+      "file": "00160.png",
+      "elapsedMs": 8013.5459,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736593,
+      "sha256": "c393f3dd57d683579185213d0138a00cc8857cb037bce08365df7d94e7865548"
+    },
+    {
+      "file": "00161.png",
+      "elapsedMs": 8063.6166,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736512,
+      "sha256": "b763e6bd04cc7cbb04e349f6a17ffd59837f4f31570082559837de0795ab43a2"
+    },
+    {
+      "file": "00162.png",
+      "elapsedMs": 8113.839,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736602,
+      "sha256": "661a0a4b0061be0b7988a6287aabe56b9242ef4548f27d5d361bb4f7b347e469"
+    },
+    {
+      "file": "00163.png",
+      "elapsedMs": 8163.842,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736543,
+      "sha256": "2fd16766cb57d33141faa680839bd5d2031f1c6af9e62e08f6d3f7b9eaa4ab2c"
+    },
+    {
+      "file": "00164.png",
+      "elapsedMs": 8215.9559,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736387,
+      "sha256": "59e89c7b4851512c1d85d399c1a8ce306c311bdbde5a742f2cd304969417ab6c"
+    },
+    {
+      "file": "00165.png",
+      "elapsedMs": 8264.5306,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736155,
+      "sha256": "391d1c781a0ac6bf739c6103a6b685da1a011546a6b6a11ec202da11afb5a9ba"
+    },
+    {
+      "file": "00166.png",
+      "elapsedMs": 8314.2326,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736286,
+      "sha256": "b1f97845d692f46e3c4780f24215b46dfd96207da86026ab6ec000fbb2410d11"
+    },
+    {
+      "file": "00167.png",
+      "elapsedMs": 8364.583,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736097,
+      "sha256": "953cbd3478b16912fa85ad991df4f3f80e59eacf6ca6d2659eaeea91eb06ec7e"
+    },
+    {
+      "file": "00168.png",
+      "elapsedMs": 8414.1997,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736736,
+      "sha256": "0630095202ffbe44abcf187df8410e603e958403e175f442c39b7c124d94aa8d"
+    },
+    {
+      "file": "00169.png",
+      "elapsedMs": 8464.5116,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736490,
+      "sha256": "e83627d8c2ee3bc97954f606520472eb15149c70176db3a2dc2affad20ca7e88"
+    },
+    {
+      "file": "00170.png",
+      "elapsedMs": 8515.1136,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736606,
+      "sha256": "e6ecbfe013d95ebbc3a6fd3840600454647fa02d99ea0b96e0739fbc6b43003a"
+    },
+    {
+      "file": "00171.png",
+      "elapsedMs": 8564.7993,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736517,
+      "sha256": "13f1d4822c3b8268b617b4ce905725fe903446f695da99447dddecf0883c8a7a"
+    },
+    {
+      "file": "00172.png",
+      "elapsedMs": 8616.146,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736580,
+      "sha256": "88bfafeb596e9c1d7f2597656aa6ea4d1fc9ac251bed5f0a9557603d9ebe44e7"
+    },
+    {
+      "file": "00173.png",
+      "elapsedMs": 8667.1079,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736729,
+      "sha256": "419472bf643d908aee32c1544f3e71205f98371235b3d0c43e795f25a9add32b"
+    },
+    {
+      "file": "00174.png",
+      "elapsedMs": 8716.7308,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736548,
+      "sha256": "a59ba608f1927077846f05101f97eca2b9f5769f2ea7585029d31804a2398e31"
+    },
+    {
+      "file": "00175.png",
+      "elapsedMs": 8750.6682,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736347,
+      "sha256": "9da15d1366264cad7213e268d4b9a1df475844a9b5bdd33dfc8609a41f6f8b58"
+    },
+    {
+      "file": "00176.png",
+      "elapsedMs": 8800.713,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736533,
+      "sha256": "de985545cf1d369f9f4617d9c9bb9561978eee92378d1e7e7f6ef22366b142eb"
+    },
+    {
+      "file": "00177.png",
+      "elapsedMs": 8850.7508,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736725,
+      "sha256": "228087c87c54cfde1987f96b29f29f963987baf769758cb5da73fbcb5392b740"
+    },
+    {
+      "file": "00178.png",
+      "elapsedMs": 8901.9535,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736780,
+      "sha256": "fa70263ecf3542c6340d15eedc197ae8ecb8f633fbf3507df68f6eb398f82090"
+    },
+    {
+      "file": "00179.png",
+      "elapsedMs": 8952.115,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736769,
+      "sha256": "829c70548359ed42decd978e3ba83a5bfb1b3613a7d878337b87137340a35283"
+    },
+    {
+      "file": "00180.png",
+      "elapsedMs": 9001.1856,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736325,
+      "sha256": "788c714870c7d078a60106ebfdb0ad523ba77092477e6811751fff66fa54f571"
+    },
+    {
+      "file": "00181.png",
+      "elapsedMs": 9051.1438,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736513,
+      "sha256": "ddd4865a4a457c7d3eeb5fc712eda24154e5c2740e00e9b141dbc075e4f2a578"
+    },
+    {
+      "file": "00182.png",
+      "elapsedMs": 9101.361,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736478,
+      "sha256": "331ace28781fb5064ffd6a9d1fd3f6747d39a0894a727e568d8ffe9c84be02a2"
+    },
+    {
+      "file": "00183.png",
+      "elapsedMs": 9151.2004,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736472,
+      "sha256": "be7163b2eab27a22f166c61138dede111020ca7729d70a0fc43a0c7466a34947"
+    },
+    {
+      "file": "00184.png",
+      "elapsedMs": 9201.3569,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736652,
+      "sha256": "2061fce63eabeb4c510b0d2abf1fc0cab0faf00279381ea7667e9f7c9e8ba070"
+    },
+    {
+      "file": "00185.png",
+      "elapsedMs": 9251.088,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736652,
+      "sha256": "ac4f5303ad5f1476e5cf99728ad3848de0cbe337dddcbc92835090f42f6d903d"
+    },
+    {
+      "file": "00186.png",
+      "elapsedMs": 9301.2248,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736652,
+      "sha256": "ac4f5303ad5f1476e5cf99728ad3848de0cbe337dddcbc92835090f42f6d903d"
+    },
+    {
+      "file": "00187.png",
+      "elapsedMs": 9351.5565,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736652,
+      "sha256": "80e4dc55d7c1d72e15cf2e002d793b62d2e83463fc6a881d57f6bdf14363fe70"
+    },
+    {
+      "file": "00188.png",
+      "elapsedMs": 9402.5786,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736443,
+      "sha256": "6643867de000df2e7657ad3de799ea6b334e8d5317d7d38755eba0c06d0d152e"
+    },
+    {
+      "file": "00189.png",
+      "elapsedMs": 9451.3411,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736282,
+      "sha256": "3b44c072cebf3c4f74993826641a1fd74a7a47bdff53a6451b92e74da1cb7835"
+    },
+    {
+      "file": "00190.png",
+      "elapsedMs": 9501.5318,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736309,
+      "sha256": "0ff3a1279c54ffe23706a3b4bdd42c5244673830a11385541eb6e0eed272edc3"
+    },
+    {
+      "file": "00191.png",
+      "elapsedMs": 9551.7384,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736309,
+      "sha256": "0ff3a1279c54ffe23706a3b4bdd42c5244673830a11385541eb6e0eed272edc3"
+    },
+    {
+      "file": "00192.png",
+      "elapsedMs": 9602.3027,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736477,
+      "sha256": "3900953f25f313656bca69d552cb3e840d34e32d6dd2b9dabdad914af24273ba"
+    },
+    {
+      "file": "00193.png",
+      "elapsedMs": 9652.8608,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736464,
+      "sha256": "30b5e312f97324ea0c2c9af4dea68cff4015d6fba43174758b0f498e06d6a16c"
+    },
+    {
+      "file": "00194.png",
+      "elapsedMs": 9703.5437,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736592,
+      "sha256": "9105abf9cf178aaaf8eeee624bc6f513af90ac397e034058c3348e63b00d39ca"
+    },
+    {
+      "file": "00195.png",
+      "elapsedMs": 9753.7138,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736425,
+      "sha256": "aaf48ce3b13e3253c5f3ad50ef36835ed6d534c33555ee989c38a1a2fe706ead"
+    },
+    {
+      "file": "00196.png",
+      "elapsedMs": 9803.8101,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736500,
+      "sha256": "0fe2c428412ffedf8f5a90518bbe73694c3b1f7b6fdce5e426a824506b844537"
+    },
+    {
+      "file": "00197.png",
+      "elapsedMs": 9854.5366,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736545,
+      "sha256": "7fab3e280c8fc7f4170e659134db0517c55bae9432c86f6941016fcdeb363f6f"
+    },
+    {
+      "file": "00198.png",
+      "elapsedMs": 9904.2104,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736626,
+      "sha256": "c2fa39bf2e0bb1dda37cfcbdf871517c310df69314355c8091d4b8882fd39121"
+    },
+    {
+      "file": "00199.png",
+      "elapsedMs": 9954.3157,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736377,
+      "sha256": "5cf7ac81a6a1a8f09f4e699d5fa5c4982ccd92896feeb7edf353127ac3dcec39"
+    },
+    {
+      "file": "00200.png",
+      "elapsedMs": 10004.9608,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736487,
+      "sha256": "2d3ba25eb6c4c78580b7ab967343319bf65b75151d0b5ea99dec9db377fd978b"
+    },
+    {
+      "file": "00201.png",
+      "elapsedMs": 10054.9803,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736066,
+      "sha256": "2a8d320d0e6bcff1667c56cb4926f50363d180b20b8771a540870dd9cd23a7b2"
+    },
+    {
+      "file": "00202.png",
+      "elapsedMs": 10105.9302,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736643,
+      "sha256": "9e53c32525beed67e0e703bd33bce9848384aa322ced972c49ba57ee9fe9bd05"
+    },
+    {
+      "file": "00203.png",
+      "elapsedMs": 10156.3989,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736408,
+      "sha256": "8dd7283543a86425710a53f4cb4ab3afd4b9eed8bf811645fc71ba6a2e7ed6cf"
+    },
+    {
+      "file": "00204.png",
+      "elapsedMs": 10206.5196,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736701,
+      "sha256": "86c78f24187612319cb54c9ec05aab37d4348e845f89bc91362a512856678482"
+    },
+    {
+      "file": "00205.png",
+      "elapsedMs": 10257.3086,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736646,
+      "sha256": "2f9158a1a46efb92626230147a44cc4c7e896446f1237df17e7207116e538ec9"
+    },
+    {
+      "file": "00206.png",
+      "elapsedMs": 10306.6163,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736635,
+      "sha256": "2125eb7a79b704b82b312d2e8d734056c4d8dd71c3e0f75adb3df84302c23f14"
+    },
+    {
+      "file": "00207.png",
+      "elapsedMs": 10356.6958,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736543,
+      "sha256": "7fc24e964d2561f8022761f7ec8ae47f083b235ce9a2a0fdd8e7b9e99030c8eb"
+    },
+    {
+      "file": "00208.png",
+      "elapsedMs": 10408.0165,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736604,
+      "sha256": "1bf70ff73c680854853da87484366e80dc2df120a468eea78e5e410323f31c26"
+    },
+    {
+      "file": "00209.png",
+      "elapsedMs": 10458.1615,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736619,
+      "sha256": "c1b8d8b27a2282a4d616b3d04e68d71f411a432a997aa21496a433ece2038de1"
+    },
+    {
+      "file": "00210.png",
+      "elapsedMs": 10508.3763,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736420,
+      "sha256": "75afc43bd09e41b6329843a9cd81b6ca59efdc895f1959d7cb928b762a300f57"
+    },
+    {
+      "file": "00211.png",
+      "elapsedMs": 10558.1174,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736361,
+      "sha256": "a6b28ae6b75761d95a43b20763c166909e39a917702a0b569ab345c84df72ffd"
+    },
+    {
+      "file": "00212.png",
+      "elapsedMs": 10608.2607,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736401,
+      "sha256": "f0d1e91c1cefbb62c81fcfa0a792e7475c5d66bef89ce15231bf27cb5a252535"
+    },
+    {
+      "file": "00213.png",
+      "elapsedMs": 10659.0964,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736098,
+      "sha256": "a5eeba6f1451f8c9926fd8fe0db2d55c5cfe8338df30df7320a111b21aa58355"
+    },
+    {
+      "file": "00214.png",
+      "elapsedMs": 10708.9954,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736519,
+      "sha256": "3bcb9fc35ec01b34206b6a017b9b83690e798674467d774858ebf5439a7d5ffa"
+    },
+    {
+      "file": "00215.png",
+      "elapsedMs": 10759.7043,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736440,
+      "sha256": "641042b878f48766428be7e3d67df6e3cd5babb7f9aa957aaeb2d351a294af5f"
+    },
+    {
+      "file": "00216.png",
+      "elapsedMs": 10808.4856,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736569,
+      "sha256": "fcdb9bbce06177f10f733905c278c4155f2daf001946847045644cc6ed41662e"
+    },
+    {
+      "file": "00217.png",
+      "elapsedMs": 10860.1939,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736292,
+      "sha256": "7f5b46ef07c5a7c9332aba12ee718e7ea187122fbfa36a1ef7728543da221c50"
+    },
+    {
+      "file": "00218.png",
+      "elapsedMs": 10908.4385,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736284,
+      "sha256": "5fe69e3d3b3239ed8cfaa211a7f0a712808f2f7cdded635228a7dda93968d314"
+    },
+    {
+      "file": "00219.png",
+      "elapsedMs": 10961.325,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736243,
+      "sha256": "0854bb7587b2462b75a2a80950a5ddbd341e8ad3d4e1d2b920dae16cb5ccb20e"
+    },
+    {
+      "file": "00220.png",
+      "elapsedMs": 11009.4948,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736348,
+      "sha256": "f71e8a3d80980219f8d7a0b07442e037d53401eb6b867c9eb2e458a01547b340"
+    },
+    {
+      "file": "00221.png",
+      "elapsedMs": 11060.5259,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736663,
+      "sha256": "299461fc053e49a8bd497ecda9fd30b69cacb336de3975980c243d0959d7513a"
+    },
+    {
+      "file": "00222.png",
+      "elapsedMs": 11110.7719,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736581,
+      "sha256": "d47f2403c1c59176c96b5700fc3ae7b4d03549937fee6322efc361844c83a3f8"
+    },
+    {
+      "file": "00223.png",
+      "elapsedMs": 11161.2231,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736509,
+      "sha256": "c1b4c6a54b89c277bd578afacbef4175f7244c16727e0c711101a48b37b4d6d4"
+    },
+    {
+      "file": "00224.png",
+      "elapsedMs": 11211.5999,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736550,
+      "sha256": "d7ca776ae44cdfe011e187c25a54b5d6ceb74660766c3d06bb3d69332c47843c"
+    },
+    {
+      "file": "00225.png",
+      "elapsedMs": 11261.1535,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736553,
+      "sha256": "5cdcc6b9d6b30915f2406d340ae48e56cd65d742da4ba3cd983301dd78da6e00"
+    },
+    {
+      "file": "00226.png",
+      "elapsedMs": 11311.7246,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736566,
+      "sha256": "919196552c530b6f20fb0a57b00c342305cdff2906cdcd6ccaddf21322e5af0a"
+    },
+    {
+      "file": "00227.png",
+      "elapsedMs": 11362.1242,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736418,
+      "sha256": "a3657a54cba08bbcc7c45f968920d22d848fce3899a2fab160750bd6b66ca095"
+    },
+    {
+      "file": "00228.png",
+      "elapsedMs": 11411.9334,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736467,
+      "sha256": "abec306f5b9f061082d7e67e6719e13e3f9668740957792ff38bf00cbcc580e3"
+    },
+    {
+      "file": "00229.png",
+      "elapsedMs": 11462.2068,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736202,
+      "sha256": "24e89479dd586cf19d2400e516581709d835253d9dedb9a17d43b4b056efc14c"
+    },
+    {
+      "file": "00230.png",
+      "elapsedMs": 11512.3689,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736269,
+      "sha256": "aa2f32af838e7f6afc535e33e040b653dff6af58f070a476d8a2bc5ce9ff2889"
+    },
+    {
+      "file": "00231.png",
+      "elapsedMs": 11561.8904,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736089,
+      "sha256": "9d7e86df87cf6646b1a059cc4a6401d0daee4e2d6debdfc09d840c2ceeb00655"
+    },
+    {
+      "file": "00232.png",
+      "elapsedMs": 11612.7469,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736150,
+      "sha256": "52d0aea0d180fae5606af3fec1197ad2014d0e994ecdf16beda538e78295551d"
+    },
+    {
+      "file": "00233.png",
+      "elapsedMs": 11663.4198,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736319,
+      "sha256": "103c7a2751b67b0a94692a635f12630dc06a708af0dc5ed50f11a9d13ae59ad7"
+    },
+    {
+      "file": "00234.png",
+      "elapsedMs": 11712.9167,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736208,
+      "sha256": "c73e23574482e9e94d0a16d20f30f6e6d872e2898c67fbe4e9fc2bfe890abaf2"
+    },
+    {
+      "file": "00235.png",
+      "elapsedMs": 11762.9861,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736201,
+      "sha256": "d692d73791054b70ad0e0cdfabffca5668fd07b39905a34bc08fcf573648ab6c"
+    },
+    {
+      "file": "00236.png",
+      "elapsedMs": 11813.6943,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735859,
+      "sha256": "dd91c423c5cb2588b8b4c501218eb1cd474c1c7b535c1ae9556006d653909011"
+    },
+    {
+      "file": "00237.png",
+      "elapsedMs": 11864.599,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735893,
+      "sha256": "6edf870b17a593609646ab9ad72e98cbde98dcb1c7af5d561b258b6cfaf44e35"
+    },
+    {
+      "file": "00238.png",
+      "elapsedMs": 11914.4562,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736235,
+      "sha256": "cf5d7013b5b7236341c6fdae7e4f382c0ef4d1dca0616de77aeb7914991d6130"
+    },
+    {
+      "file": "00239.png",
+      "elapsedMs": 11965.0077,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736214,
+      "sha256": "2e2550c861ae47223d2338aa6add8b00edb7a11a494226e3ac6aaeac426189b8"
+    },
+    {
+      "file": "00240.png",
+      "elapsedMs": 12014.5055,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736237,
+      "sha256": "1b3a533c9219e37fbedb986f308044f6f24e46e7e5e6c994aa4c80d23e83e3db"
+    },
+    {
+      "file": "00241.png",
+      "elapsedMs": 12064.5178,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736137,
+      "sha256": "8c54f8c0e644cfd58ce65c655885023e3b61f6e1dd5705e85d7834f74e7341f1"
+    },
+    {
+      "file": "00242.png",
+      "elapsedMs": 12115.2139,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736154,
+      "sha256": "962311494c2200a6766323b7d53af74ca6f12ca80e9bc8258a77b27462a9b5c3"
+    },
+    {
+      "file": "00243.png",
+      "elapsedMs": 12165.0297,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736099,
+      "sha256": "ae9a8cd076f72a2d677c67b1b31ebaafe0e70eee6a31c635fe149e5ba6cd96dd"
+    },
+    {
+      "file": "00244.png",
+      "elapsedMs": 12214.954,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736208,
+      "sha256": "7194fbfda02778b6119e313df940b7e074c02a40b6644d6c74ff16d3c35da4d7"
+    },
+    {
+      "file": "00245.png",
+      "elapsedMs": 12265.6993,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736205,
+      "sha256": "be2954a5988053ad5d5579ad4aedc29a4ca8507381877e6886222beb1fb2445e"
+    },
+    {
+      "file": "00246.png",
+      "elapsedMs": 12315.4043,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736190,
+      "sha256": "da9779b888ebf6bf41668720dff364f95e13e6aed4fab55377a876f4be670a08"
+    },
+    {
+      "file": "00247.png",
+      "elapsedMs": 12366.334,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736270,
+      "sha256": "4bf0124def03241c428baf8b5054ab582fed61e0a2d310e313afc8f5e3b75b58"
+    },
+    {
+      "file": "00248.png",
+      "elapsedMs": 12416.6992,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735782,
+      "sha256": "a56bd697e1d0bb3329e84391fd212f14b22c05df4b2bd06b4a32eb29cf2750e3"
+    },
+    {
+      "file": "00249.png",
+      "elapsedMs": 12466.5212,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735796,
+      "sha256": "5198b88c097aa7137effbbb21f9773da59118f9973a3062bbccfb4b360387912"
+    },
+    {
+      "file": "00250.png",
+      "elapsedMs": 12516.4099,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736198,
+      "sha256": "5a1585f84b703a7ac621c38288dd4f8c83d7e32cd214dd91818ca2d547de1555"
+    },
+    {
+      "file": "00251.png",
+      "elapsedMs": 12566.6655,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736175,
+      "sha256": "e20ca3f8441306ebd48f73d4be658d577047eb560e00f452a86e852d86406618"
+    },
+    {
+      "file": "00252.png",
+      "elapsedMs": 12616.9024,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736074,
+      "sha256": "0710ce3526e03a52421364ea654b9d7080a4b13e37baf181d4cc4e82e6fd99c6"
+    },
+    {
+      "file": "00253.png",
+      "elapsedMs": 12650.4504,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736268,
+      "sha256": "58408677378da74d4d788e7605b04f1900638ad6c1632cff69fcc3b1e6e8d38f"
+    },
+    {
+      "file": "00254.png",
+      "elapsedMs": 12700.9888,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735890,
+      "sha256": "eaf2cde46a4c92f7f17c3ba3d57e128bc96d2f806aae26481d498d5296416a14"
+    },
+    {
+      "file": "00255.png",
+      "elapsedMs": 12750.9333,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736114,
+      "sha256": "58678877bb5aafb9f7d5131e979bbc1273d275712beee373a711976082f95d7d"
+    },
+    {
+      "file": "00256.png",
+      "elapsedMs": 12802.5396,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736157,
+      "sha256": "682b6538402a806c8e1804aa5a23c884c6eb62bd89fdb98979b8929641096a9d"
+    },
+    {
+      "file": "00257.png",
+      "elapsedMs": 12851.4549,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735997,
+      "sha256": "1ca4d00597f465e936dd1c579f848765356530e4d87380988df82be2ced9aaa6"
+    },
+    {
+      "file": "00258.png",
+      "elapsedMs": 12901.1343,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736112,
+      "sha256": "2672c06f31beb0d8adc0caeaf7a809205530cab5819a7a70c5c0480f62f52157"
+    },
+    {
+      "file": "00259.png",
+      "elapsedMs": 12951.2683,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736145,
+      "sha256": "c5770ba65667b4a086c831d6e588ec60ec64bdd6b8765baa482eba2db1992e7f"
+    },
+    {
+      "file": "00260.png",
+      "elapsedMs": 13001.3383,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736102,
+      "sha256": "913d286d5761bc657083d979dbb4369bd3864c5086042bb10768e980b52531fd"
+    },
+    {
+      "file": "00261.png",
+      "elapsedMs": 13051.2532,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736150,
+      "sha256": "6ec4011662310bc24f270ea7f2111111e5c5fc67f3dd0aa0e72b1ef590d7e8eb"
+    },
+    {
+      "file": "00262.png",
+      "elapsedMs": 13101.2673,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736094,
+      "sha256": "fc7c27cd9c800d518e075743c71e9f752cad46c8250ecdbb257cc0faa7d0d7ab"
+    },
+    {
+      "file": "00263.png",
+      "elapsedMs": 13151.4842,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736161,
+      "sha256": "7d2d39ba2a3fdc4ea202f1dff06122e2ef8aa17cf6a57034cd8e13461df79ddd"
+    },
+    {
+      "file": "00264.png",
+      "elapsedMs": 13202.6382,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736227,
+      "sha256": "f28d9bb16a261b6917c39c055ee33e80e72122cfb7521ab16d15fc7829ca00fb"
+    },
+    {
+      "file": "00265.png",
+      "elapsedMs": 13251.8451,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736222,
+      "sha256": "e194240a6455706e45c7677a1183420d15534bedbf44013d64a444305d434260"
+    },
+    {
+      "file": "00266.png",
+      "elapsedMs": 13302.9677,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736051,
+      "sha256": "faf24d8dc69462a08fe37e4f305a7eb89db8da4dc52f610ee397232ffac37db0"
+    },
+    {
+      "file": "00267.png",
+      "elapsedMs": 13353.14,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736097,
+      "sha256": "b98f06ebd4cd121962fd32735accddfdbea9573977ba47178173f55e8f296798"
+    },
+    {
+      "file": "00268.png",
+      "elapsedMs": 13403.1058,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736047,
+      "sha256": "5212ea7a9745e042f3c3fe4369c5b63f446cb132c59c898e569da89b0af48e13"
+    },
+    {
+      "file": "00269.png",
+      "elapsedMs": 13452.9608,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736181,
+      "sha256": "484e84d942800566e60690804b1d19d02af7f88e028f74cabeda1621636d54ff"
+    },
+    {
+      "file": "00270.png",
+      "elapsedMs": 13503.1617,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736150,
+      "sha256": "4ee733906e6119849b3e2e3f84870f21a60205aef44dad2d655a509497dfa485"
+    },
+    {
+      "file": "00271.png",
+      "elapsedMs": 13553.4008,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736064,
+      "sha256": "254fe5ec5cf25257b5730dc05a84ebac9334aec2b69f261d60fb53eb5f6a25f9"
+    },
+    {
+      "file": "00272.png",
+      "elapsedMs": 13603.3415,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735770,
+      "sha256": "d39731e7ab03bae241366887518df9915c2aff2dfec80b4c4cff0783e0b3d375"
+    },
+    {
+      "file": "00273.png",
+      "elapsedMs": 13653.1554,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735763,
+      "sha256": "87ed20b43d1e1825df81b5b79fd8c5a8f1c56a0d10dead67662623e905bd634a"
+    },
+    {
+      "file": "00274.png",
+      "elapsedMs": 13703.6712,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735802,
+      "sha256": "0c5eabbb50759a2e21410e6e63ccb306e918db355f19d2d6ad834de1adb1d491"
+    },
+    {
+      "file": "00275.png",
+      "elapsedMs": 13755.0457,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735837,
+      "sha256": "08cbffa31ae029a311a167384e0151435d0fe449dd532112a6c8f36c9e21f6bb"
+    },
+    {
+      "file": "00276.png",
+      "elapsedMs": 13803.7204,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735800,
+      "sha256": "d1dd6fd1ebd7403e14b9c3d7b65a1a775b4f68f51fdfa074e17229f28f9be356"
+    },
+    {
+      "file": "00277.png",
+      "elapsedMs": 13853.7175,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735863,
+      "sha256": "eb6c2ea3ea52452585349fc6457882ef75cce8ed19dc1445855a6032f3d8a8a2"
+    },
+    {
+      "file": "00278.png",
+      "elapsedMs": 13903.8582,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736299,
+      "sha256": "d992c2272c92048026157b82fc18214e5142be35c80a55559791e29e8be7be98"
+    },
+    {
+      "file": "00279.png",
+      "elapsedMs": 13953.8302,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736264,
+      "sha256": "be2e0b432e3d9db674ea04789ed841b8a763f157d440de9c2962ab79397e0061"
+    },
+    {
+      "file": "00280.png",
+      "elapsedMs": 14004.2575,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736267,
+      "sha256": "eb362b69dd919fcb928340d4a40bac933329c5de409ec1e99c9d97c55b615ed6"
+    },
+    {
+      "file": "00281.png",
+      "elapsedMs": 14054.3648,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736290,
+      "sha256": "ba5d9fe0dff28643cc49d5e73a7083d7ca3255480bd41167e3fd590b66396552"
+    },
+    {
+      "file": "00282.png",
+      "elapsedMs": 14104.4073,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735883,
+      "sha256": "af1e066aefac75f7847ea741f5547af716e78640d9d9a19c98510d4272fdda34"
+    },
+    {
+      "file": "00283.png",
+      "elapsedMs": 14155.4618,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735849,
+      "sha256": "00e037718e7bb620629d984be35289bbf6f5e6579b071cbf29da4a6c93ac1fdf"
+    },
+    {
+      "file": "00284.png",
+      "elapsedMs": 14204.8632,
+      "screen": "GimmickEditorScreen",
+      "bytes": 735841,
+      "sha256": "e3654f989dd14497dabf91cfc0aaf498b31e27c5f1c4439cfa998dbd34f6a30c"
+    },
+    {
+      "file": "00285.png",
+      "elapsedMs": 14254.9988,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736213,
+      "sha256": "0b6f319185d355964a880725c314b160bd64e1aa7c9a454962bc40faeabd49ff"
+    },
+    {
+      "file": "00286.png",
+      "elapsedMs": 14307.151,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736333,
+      "sha256": "f5f9743f4e24abcc1ad056764a66624acb44bfaa3d407c0ec0acd3405f502ae4"
+    },
+    {
+      "file": "00287.png",
+      "elapsedMs": 14355.625,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736482,
+      "sha256": "120353231d619eb68bad0ffaefe252869a25dc225a64a4a1411970c734e0606d"
+    },
+    {
+      "file": "00288.png",
+      "elapsedMs": 14405.9991,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736502,
+      "sha256": "8eba70057c6b5900f70bc90c32b2a012a34fdf467a4d53447034eb0207fb726a"
+    },
+    {
+      "file": "00289.png",
+      "elapsedMs": 14456.345,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736566,
+      "sha256": "af4f19d7af19765fbf5bd7a186340222319ddd233a17121aa28883ed64d7ec5b"
+    },
+    {
+      "file": "00290.png",
+      "elapsedMs": 14506.5455,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736867,
+      "sha256": "00b699985a8454d7f6725b18a5a89282d36662365746b7c41653d67bb0655034"
+    },
+    {
+      "file": "00291.png",
+      "elapsedMs": 14557.1234,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736794,
+      "sha256": "49fa4dbdc77834bba6883014a29cd638dfbee111f1885db71c86c51b3bb9a071"
+    },
+    {
+      "file": "00292.png",
+      "elapsedMs": 14606.9969,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736693,
+      "sha256": "d3b625229fd7d9672dc3dbbef6c9c7a9c59a12835d42e692cfdc586043a43a98"
+    },
+    {
+      "file": "00293.png",
+      "elapsedMs": 14656.8859,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736798,
+      "sha256": "fe8d72f1620c6f27ccf4bfcbbfedc0918af8d0152ef58dd83bfbaf6ce4005622"
+    },
+    {
+      "file": "00294.png",
+      "elapsedMs": 14707.0193,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736842,
+      "sha256": "073907c45970fae55625552fb1e7ee0f48e928451840dd423a43b466870bb874"
+    },
+    {
+      "file": "00295.png",
+      "elapsedMs": 14757.1073,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736769,
+      "sha256": "8943c05927552282ea29e6262a0f306ac0aeb8737dbfb200c3b32b9055ce2566"
+    },
+    {
+      "file": "00296.png",
+      "elapsedMs": 14807.345,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736702,
+      "sha256": "f35049b4b82cf468eb1beccf18a4b435f7ee424a8e45c9dfa2cbbf1b5cfb58ed"
+    },
+    {
+      "file": "00297.png",
+      "elapsedMs": 14856.9879,
+      "screen": "GimmickEditorScreen",
+      "bytes": 736788,
+      "sha256": "dce5b65ad0e3e0f3f33c0f691111b0a04896adb376db94981a79a9682afb21e0"
+    },
+    {
+      "file": "00298.png",
+      "elapsedMs": 14905.9312,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740610,
+      "sha256": "03d9036aeaaa6a0e849b96c667483f6851e0819a9bb0396ffa0c39bd83ca66ba"
+    },
+    {
+      "file": "00299.png",
+      "elapsedMs": 14953.7195,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740811,
+      "sha256": "c17b63a7e73aa1d789eb8f58a38e87b4c9f12d062a86cfe3929c88c2c49d3b9c"
+    },
+    {
+      "file": "00300.png",
+      "elapsedMs": 15003.7415,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740748,
+      "sha256": "0cc3a58e3a50707a9d759a4564e0eaa92ffcf099e62994e42696a0497a93a7a6"
+    },
+    {
+      "file": "00301.png",
+      "elapsedMs": 15054.2187,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740811,
+      "sha256": "aa449ef9cee3bf9e4851ee383159facb880d97a41a3a77d2cff94b6af5b95af9"
+    },
+    {
+      "file": "00302.png",
+      "elapsedMs": 15103.9438,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740748,
+      "sha256": "b4f8fc4ce28e6d520db56628856dfed2d42776b89a1285d0a3a7dc1aee3c63c1"
+    },
+    {
+      "file": "00303.png",
+      "elapsedMs": 15154.4464,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740787,
+      "sha256": "d7c1308429832411fd1bc8ea2869d16dcc9f5954540c584a5467fbf22279380d"
+    },
+    {
+      "file": "00304.png",
+      "elapsedMs": 15203.6337,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740748,
+      "sha256": "ef3011520faf80e617b587c32fd7fc764f5d8fec3a2dcb7e5f54a7fe48dd68ce"
+    },
+    {
+      "file": "00305.png",
+      "elapsedMs": 15253.8462,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740692,
+      "sha256": "c569c9dd16630b6c9d1a8a45bba1278a50c52b83123bab5919c77a7e51715ce2"
+    },
+    {
+      "file": "00306.png",
+      "elapsedMs": 15303.7022,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740696,
+      "sha256": "287d6a9908289da7e8142267fcac463cb5ec3e35c6828d5d611d01a304345885"
+    },
+    {
+      "file": "00307.png",
+      "elapsedMs": 15353.7794,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740691,
+      "sha256": "cca50525354c5a836ce75a9202dce7de9868f63ef73177916d5880d80f51ef14"
+    },
+    {
+      "file": "00308.png",
+      "elapsedMs": 15403.6792,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740590,
+      "sha256": "094d059c61db1d9a4314537faf88c1d6de26c0d429b6529b033f7f4239d75ae7"
+    },
+    {
+      "file": "00309.png",
+      "elapsedMs": 15453.4861,
+      "screen": "GimmickEditorScreen",
+      "bytes": 740586,
+      "sha256": "7f5910e56234fc329a5872ac8272da6a0f6787250832efa843ae4a6480edf1e7"
+    },
+    {
+      "file": "00310.png",
+      "elapsedMs": 15505.0721,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741834,
+      "sha256": "3e7e87f562a3cfeb9b13049f5cb6845bacc5eb63155bc63caedf08b7d0cdf2fd"
+    },
+    {
+      "file": "00311.png",
+      "elapsedMs": 15554.1433,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742054,
+      "sha256": "ad2e317c08b399d18d0bd6f8dbaff2c4f04abda447ec400c0870aceb2073a536"
+    },
+    {
+      "file": "00312.png",
+      "elapsedMs": 15615.8815,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741928,
+      "sha256": "ffa44b159fe765ce845dfceb259625e634dcd18daad152c563669840ca4f5128"
+    },
+    {
+      "file": "00313.png",
+      "elapsedMs": 15660.6487,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741907,
+      "sha256": "42a299e0074586c7bb86df6079b41323d65ede2d11cc5d58d3c60e841b46353a"
+    },
+    {
+      "file": "00314.png",
+      "elapsedMs": 15711.7653,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741866,
+      "sha256": "413e7f5569d44295156af267f0a068a15fb818b851bdad80622bcc179dd1ac16"
+    },
+    {
+      "file": "00315.png",
+      "elapsedMs": 15761.4103,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741936,
+      "sha256": "87d3766f908b9c58717376a6c2a4fcc70e3a10e6ab1ab560f4d266af8a4b8ed3"
+    },
+    {
+      "file": "00316.png",
+      "elapsedMs": 15811.3864,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741849,
+      "sha256": "96e768adf9be726c2ff4f7b96cf3e00cff6e14b875688073c4fabf37607533e6"
+    },
+    {
+      "file": "00317.png",
+      "elapsedMs": 15861.7976,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741929,
+      "sha256": "22cc526354b3520a789abbd972ae0286fefec6f301ab9ce6c52c12b47a02fa9d"
+    },
+    {
+      "file": "00318.png",
+      "elapsedMs": 15912.2915,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741906,
+      "sha256": "d3c0ac9ad6bfea899c8b0bba37a5063b3befb3fc718b5302660f15ce4f9ed266"
+    },
+    {
+      "file": "00319.png",
+      "elapsedMs": 15962.2149,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741917,
+      "sha256": "bedeaf7e54ca1d25e5a0826bb1175f634db42ea11d13f53c307ddb00fd415445"
+    },
+    {
+      "file": "00320.png",
+      "elapsedMs": 16013.6424,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741610,
+      "sha256": "3b15ab38b0da534ab52729c83eea0e89d799d2b047e0e9706b5a93d61321cb3c"
+    },
+    {
+      "file": "00321.png",
+      "elapsedMs": 16062.9645,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741619,
+      "sha256": "25f5a59f67b00468e8c1f5b66d13fbd0a13ea3442e7f949c8050ac14960c6c95"
+    },
+    {
+      "file": "00322.png",
+      "elapsedMs": 16113.8114,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741332,
+      "sha256": "3c96d12e484bb7b297f2e463f06ea8d34149c12e9d67123a824226356a5f77b4"
+    },
+    {
+      "file": "00323.png",
+      "elapsedMs": 16164.0804,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741299,
+      "sha256": "ac39eb86fe040e0d341d7712b5f17c1b86f0cd2f391a54f8b06c896da514d56d"
+    },
+    {
+      "file": "00324.png",
+      "elapsedMs": 16213.8072,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741843,
+      "sha256": "69498e93db3977b7f522f9be48e05353eefb7cec3a3dfbfbe0ae6875f900b9cb"
+    },
+    {
+      "file": "00325.png",
+      "elapsedMs": 16264.115,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741780,
+      "sha256": "fb25026ceefa8eb62a99af9a33bb4941c6dfb9682c3a3e96c354a31f47066517"
+    },
+    {
+      "file": "00326.png",
+      "elapsedMs": 16314.4313,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741812,
+      "sha256": "936117483893e4a0966ce0bb0beff2c85b86395cf7fbdb616a131067fa6c4b01"
+    },
+    {
+      "file": "00327.png",
+      "elapsedMs": 16364.0055,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741798,
+      "sha256": "deb70efb070dba6efece72c21488ef3bb702314de040c76a8ab0a19e24c043ef"
+    },
+    {
+      "file": "00328.png",
+      "elapsedMs": 16414.3581,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741773,
+      "sha256": "c898079d1f48341e18ef1c933d34c8420f0d8864e95c163ae8a805902b16c6f4"
+    },
+    {
+      "file": "00329.png",
+      "elapsedMs": 16465.831,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741741,
+      "sha256": "8786b64616ba5a46e9ae1f488e6fe84d5f9aedc705fc7e0475f7584351635ac7"
+    },
+    {
+      "file": "00330.png",
+      "elapsedMs": 16515.4664,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741871,
+      "sha256": "cee1512664908b7ae63a3d0df6949b4bd5c0c763c7174d347cc4b41b374de12b"
+    },
+    {
+      "file": "00331.png",
+      "elapsedMs": 16550.8579,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741885,
+      "sha256": "430f8237ae4605e400826f1ea44444d8ef3c01973cacc87cddf5983acb9beef8"
+    },
+    {
+      "file": "00332.png",
+      "elapsedMs": 16600.86,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741876,
+      "sha256": "e83c45a06b997d080b06d6617ab935727067d2562a2f45125ef52c52c32cf1cb"
+    },
+    {
+      "file": "00333.png",
+      "elapsedMs": 16652.2763,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741758,
+      "sha256": "d0a4369b661a36b4112bbddf5815cedca679dcf7cf686729a06f3f7b7ace1183"
+    },
+    {
+      "file": "00334.png",
+      "elapsedMs": 16701.1479,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741787,
+      "sha256": "2445f58c85f0e17fa0ab08a97393db4f97704467a4caf3a3d7ed35e2d7f6d012"
+    },
+    {
+      "file": "00335.png",
+      "elapsedMs": 16751.6124,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741233,
+      "sha256": "3d99672f91acaee7ade5038431769e4ea4e9ac40b269465df91dbbcaa08b33fc"
+    },
+    {
+      "file": "00336.png",
+      "elapsedMs": 16802.5497,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741249,
+      "sha256": "a9447abb8841e3182d9973348fe12a04e4bb2858acd24177f1074263478cd3b9"
+    },
+    {
+      "file": "00337.png",
+      "elapsedMs": 16852.5862,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741249,
+      "sha256": "f71af0c268f880b35db34a55d6b106e1e15e3e0adee1b898346d74e92f08110e"
+    },
+    {
+      "file": "00338.png",
+      "elapsedMs": 16902.5432,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741356,
+      "sha256": "e2f14d317e063fc19ac6f4e758d7d416477c55c9e84fbd65f63a748d88b39e7e"
+    },
+    {
+      "file": "00339.png",
+      "elapsedMs": 16954.4821,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741386,
+      "sha256": "3eef61c935c433af1ed195301743b3461389c7ff3289babe227b5c2c3fe7ae94"
+    },
+    {
+      "file": "00340.png",
+      "elapsedMs": 17003.525,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741814,
+      "sha256": "51d40cd96fbd7c08ac205541aee12e40a2a820b862fedc5647822dfa040400fa"
+    },
+    {
+      "file": "00341.png",
+      "elapsedMs": 17053.7412,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741858,
+      "sha256": "1317055c23f0c19c0a45ed75f3a3ac69edca66d4cd6421a0e78b0f0b78adbe4b"
+    },
+    {
+      "file": "00342.png",
+      "elapsedMs": 17103.7657,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741813,
+      "sha256": "9bd67471504e2bb5b3cc057c1a7859a4cbc1888e236554593d35c612b477cd36"
+    },
+    {
+      "file": "00343.png",
+      "elapsedMs": 17154.1942,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741706,
+      "sha256": "7461f9ad7f5be385c3a82ad0b958cbab1ad42f124f0c91109c80aeabe921b965"
+    },
+    {
+      "file": "00344.png",
+      "elapsedMs": 17203.9996,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741707,
+      "sha256": "6c6f0971a709de78157095e677e16ac36190ad3570086db6cbbdc8a6d7c47518"
+    },
+    {
+      "file": "00345.png",
+      "elapsedMs": 17253.7301,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742076,
+      "sha256": "6a24e3f3641f6bb81618580790ce115294f9ea17c0545541495d14eea2a87fc2"
+    },
+    {
+      "file": "00346.png",
+      "elapsedMs": 17303.9431,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741769,
+      "sha256": "82c0e4e18d39ba6d7d4d24ce469c18a95ac7fc4e2fa87b9f90903edc1b6409e2"
+    },
+    {
+      "file": "00347.png",
+      "elapsedMs": 17353.6827,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741748,
+      "sha256": "ee5b848c8e1d2b09f158db8cb045268c345cc33bebb975e5f2c2b08172871545"
+    },
+    {
+      "file": "00348.png",
+      "elapsedMs": 17403.7918,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741906,
+      "sha256": "4f9c2ca3b12d42f6307a2ebdef5545bea6c8d478717650beaddd4dc847d22687"
+    },
+    {
+      "file": "00349.png",
+      "elapsedMs": 17455.1723,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741878,
+      "sha256": "ed3cbfde3362eb10d32c0a9e3177f3bbca485686fc5019adb4c03a7f7d092c39"
+    },
+    {
+      "file": "00350.png",
+      "elapsedMs": 17503.8758,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741868,
+      "sha256": "27251c58d325fcff74331e38bb5da104a1565a90cabf7de678d056d5311e2470"
+    },
+    {
+      "file": "00351.png",
+      "elapsedMs": 17554.1073,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741848,
+      "sha256": "05a9805659c63950d81ce2317d31c1ef574648a8f559dc669c6e278f4631ea25"
+    },
+    {
+      "file": "00352.png",
+      "elapsedMs": 17604.638,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741958,
+      "sha256": "941f548db79085bf2a992ea6f43317f122a4ceb11e0856d49304e4eef9209c8a"
+    },
+    {
+      "file": "00353.png",
+      "elapsedMs": 17655.4622,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741995,
+      "sha256": "168a65db7708a2a125718f1947aabe35f652f7b5f46fec3da62524a2c4e3ec77"
+    },
+    {
+      "file": "00354.png",
+      "elapsedMs": 17705.7985,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742004,
+      "sha256": "8a0286f04256f80df98b83893b260279446600102fa132a40a7478b0952cf07f"
+    },
+    {
+      "file": "00355.png",
+      "elapsedMs": 17757.5856,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742067,
+      "sha256": "5e4f4f509549a70748f237439dc01fd634a57336785f82a3ce5a61ac96fbafff"
+    },
+    {
+      "file": "00356.png",
+      "elapsedMs": 17807.5512,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742036,
+      "sha256": "8bce015f353882fb3bbe7ac5fd6f7334c321bfc38f3dbd0cc0c594e24c585b7a"
+    },
+    {
+      "file": "00357.png",
+      "elapsedMs": 17857.9686,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741977,
+      "sha256": "c885100850b54cd6eeb619cb0d662712844fbe00d65daa2731b6b0118356b7a4"
+    },
+    {
+      "file": "00358.png",
+      "elapsedMs": 17907.7868,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741972,
+      "sha256": "146de0360fb618532533ba6f98fe832f1282fd7df8e063e6b27254bb0c96722e"
+    },
+    {
+      "file": "00359.png",
+      "elapsedMs": 17957.7732,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741905,
+      "sha256": "af950ddac8c30986cabdd9c9a02b8e103c2625947986965a734d0d9180be96c4"
+    },
+    {
+      "file": "00360.png",
+      "elapsedMs": 18008.6839,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741894,
+      "sha256": "fe6ba35f6394fd476aeaf19b836b2fa7908f281bc8a6be7b4f5a11867cf6bef2"
+    },
+    {
+      "file": "00361.png",
+      "elapsedMs": 18058.6148,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741865,
+      "sha256": "91a609dc8fc37c0b6addaf06b27a59609cb6dff5fbfb03166b3c949f367b1a44"
+    },
+    {
+      "file": "00362.png",
+      "elapsedMs": 18108.9912,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741856,
+      "sha256": "90893d4e7ea7066d9566cd0c64bc0dd199cd684203612483b958da3e1b88a2eb"
+    },
+    {
+      "file": "00363.png",
+      "elapsedMs": 18158.5871,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741880,
+      "sha256": "eb98db7d5cf935fab6593d44f6ed1931c678fd9867dd4082c64ca418291187d0"
+    },
+    {
+      "file": "00364.png",
+      "elapsedMs": 18209.0754,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741964,
+      "sha256": "3847d2becd07e56a48b8691042f06c35c784f21e3171423b50d73a1f4b073e8f"
+    },
+    {
+      "file": "00365.png",
+      "elapsedMs": 18258.5783,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741968,
+      "sha256": "5a195aa3a81f82ed419796708bec0c60c75713fff14ad336ac921de58277ff97"
+    },
+    {
+      "file": "00366.png",
+      "elapsedMs": 18308.6172,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742029,
+      "sha256": "ac947f1ff2893085a64b78abae81c69b7e655186ba37d549ea2503bee7ee2012"
+    },
+    {
+      "file": "00367.png",
+      "elapsedMs": 18358.6422,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742029,
+      "sha256": "ac947f1ff2893085a64b78abae81c69b7e655186ba37d549ea2503bee7ee2012"
+    },
+    {
+      "file": "00368.png",
+      "elapsedMs": 18408.9962,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742188,
+      "sha256": "dbb1c2b529a67ff83a0c050037b51f419799b63059ca984180c9cb0dbc96afdc"
+    },
+    {
+      "file": "00369.png",
+      "elapsedMs": 18458.7033,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742030,
+      "sha256": "affa02757123ff7d834781d0cbe73751015519cf17fe3cdc3c398a4b8916929e"
+    },
+    {
+      "file": "00370.png",
+      "elapsedMs": 18508.6858,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741913,
+      "sha256": "b18676d6cf96d1a23c2cc1b268eb53e19be10b03c587cc935e881da54f0d25d4"
+    },
+    {
+      "file": "00371.png",
+      "elapsedMs": 18559.3492,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742069,
+      "sha256": "1744b5844121633d8ec013a7ff575a039a87c66282aaacc00398f337a05ae668"
+    },
+    {
+      "file": "00372.png",
+      "elapsedMs": 18609.6675,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741992,
+      "sha256": "a6c4c392e7f251fc5676e5ad08ce087570d19800eebfaeab9249e17bcd058341"
+    },
+    {
+      "file": "00373.png",
+      "elapsedMs": 18659.1098,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742054,
+      "sha256": "3b52069640604e8608c9c4485efbdcb30eb8739151f50adfe16bed20aa1bfbd2"
+    },
+    {
+      "file": "00374.png",
+      "elapsedMs": 18710.2631,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742178,
+      "sha256": "18fa205062ed95ff4268788ac947d35f7a2d4d21d1e7bb6319361ae88cf99da1"
+    },
+    {
+      "file": "00375.png",
+      "elapsedMs": 18759.1054,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741852,
+      "sha256": "4d4cb6eb8a1f03c947ff92e5e2b3ba2b730efe1e3553682238df0e17ab861afe"
+    },
+    {
+      "file": "00376.png",
+      "elapsedMs": 18809.6127,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741851,
+      "sha256": "a36d724df1162c56941cf695a4b43f880b62a5a814fb52dc19bf19fbf73e60d4"
+    },
+    {
+      "file": "00377.png",
+      "elapsedMs": 18859.5638,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741894,
+      "sha256": "9f921d7c4bcd04ff85892abc5412210475862eda928873b6decefff7b2cb3beb"
+    },
+    {
+      "file": "00378.png",
+      "elapsedMs": 18909.3957,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741808,
+      "sha256": "6a3f674f95efe2a87a6715f13c7a33bf299c44daa14a00ca28820014d151b279"
+    },
+    {
+      "file": "00379.png",
+      "elapsedMs": 18960.015,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741707,
+      "sha256": "0168765b63c0b6a19a28fba688f73340486e00700da07a0c3ac9808ffb5b74bb"
+    },
+    {
+      "file": "00380.png",
+      "elapsedMs": 19010.8175,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741823,
+      "sha256": "5495a114acb1fbabc364de11a2d66b22a840a98bf4879f80706f3816172039ae"
+    },
+    {
+      "file": "00381.png",
+      "elapsedMs": 19060.1184,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741814,
+      "sha256": "69dd224ec9bbc2cd1017caeee806b3bdae1ecd709264e96eda7c3f9305a12261"
+    },
+    {
+      "file": "00382.png",
+      "elapsedMs": 19110.2878,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742007,
+      "sha256": "bfedaca1d251ff3fd35696a2f80de4307e768b1e7444f0321a5333a55da5055c"
+    },
+    {
+      "file": "00383.png",
+      "elapsedMs": 19160.2153,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741836,
+      "sha256": "284b6aa4578eaa5c9df68c90238df8f1becf0a7335976977b20868f4db463754"
+    },
+    {
+      "file": "00384.png",
+      "elapsedMs": 19210.2567,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742152,
+      "sha256": "5502c312f1343ca350427948ffc28501c317c90d043a884a20433205b513122b"
+    },
+    {
+      "file": "00385.png",
+      "elapsedMs": 19260.2498,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741888,
+      "sha256": "a47f6f4f8a0f65772e71b0c5f073d1538dcdca7e0fab4b4195e404a60afd37e7"
+    },
+    {
+      "file": "00386.png",
+      "elapsedMs": 19311.0888,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741781,
+      "sha256": "e59cb75b8aab64ffda4f6b4014482646cf5721cc662830d4b1050de222d26414"
+    },
+    {
+      "file": "00387.png",
+      "elapsedMs": 19360.4303,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741751,
+      "sha256": "2e3060490bb47db512d818d4be5806b320cdf2098499cec2c8bcf4aa15838df5"
+    },
+    {
+      "file": "00388.png",
+      "elapsedMs": 19410.3498,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741658,
+      "sha256": "392c65cf39d9ae26bcb8c9dfe273d10e02f508a5e9b0eec0d4b2c92b77110ae2"
+    },
+    {
+      "file": "00389.png",
+      "elapsedMs": 19462.1081,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741708,
+      "sha256": "3d45e014bd9fa5aef14bfa0371528bb9db41c401d0eee16e6035ace9fb571e66"
+    },
+    {
+      "file": "00390.png",
+      "elapsedMs": 19510.3384,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741205,
+      "sha256": "11da91bf9cea44828d76a3a65cec65a6a50fa72411bd1dc37dc49d1071d19d2d"
+    },
+    {
+      "file": "00391.png",
+      "elapsedMs": 19561.9894,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741129,
+      "sha256": "6c5bccf51c0af1ac5c40ddcc270be7801613c50e24cc7247f6d9c0697ff1b7ba"
+    },
+    {
+      "file": "00392.png",
+      "elapsedMs": 19610.9522,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741210,
+      "sha256": "c2e3b6490694a1d6337db7482cb1a6ce3d2315cb5dcd3dcb3a11d5ca69a8f286"
+    },
+    {
+      "file": "00393.png",
+      "elapsedMs": 19660.3898,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741266,
+      "sha256": "902c6a02295d4cf528231f7573b84b9e1e3d06b3abf453f19896d66ee82c7d07"
+    },
+    {
+      "file": "00394.png",
+      "elapsedMs": 19710.71,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741411,
+      "sha256": "21bb21a8c0947af46a9c7911cb2891822b8211d94073590d3a041413ebb8f482"
+    },
+    {
+      "file": "00395.png",
+      "elapsedMs": 19761.4272,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741284,
+      "sha256": "8dc13c1e8f9508d7a9f0670e2788307c716b4243cbc143f4dee42284966c9bb8"
+    },
+    {
+      "file": "00396.png",
+      "elapsedMs": 19811.3729,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741291,
+      "sha256": "d9581ad0425f1cf63d302aba51e3515b522a1befea96a77ae6565b174392f8ff"
+    },
+    {
+      "file": "00397.png",
+      "elapsedMs": 19861.1719,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741345,
+      "sha256": "5912fb0235a08bba69171170f13db63f94fa8175d194a2de5225d191cc30dacd"
+    },
+    {
+      "file": "00398.png",
+      "elapsedMs": 19912.0493,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741351,
+      "sha256": "3fc9843c035bd3029829d658c2724f90079596d5dab1f916806a1e411ba84d5d"
+    },
+    {
+      "file": "00399.png",
+      "elapsedMs": 19961.5791,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741350,
+      "sha256": "6622e9e7470ad0ecaf7edac8b9c031dae556ed8adc40f160a28eccbde2ee17f8"
+    },
+    {
+      "file": "00400.png",
+      "elapsedMs": 20011.6498,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741154,
+      "sha256": "7f6dfe01ae6de42e6eeac3419524442ab07df5c5ff3f0ffaf6b2eaa487be6c07"
+    },
+    {
+      "file": "00401.png",
+      "elapsedMs": 20062.0275,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741069,
+      "sha256": "4f95d76e65daefc84cd6fbaafeb1132691a13489da125594f01b192ea29407a6"
+    },
+    {
+      "file": "00402.png",
+      "elapsedMs": 20112.7523,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741264,
+      "sha256": "988948109371af51ce22b1de490d33652f160711410bf9eafd264a0e595246e7"
+    },
+    {
+      "file": "00403.png",
+      "elapsedMs": 20163.2897,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741284,
+      "sha256": "5d950a9a35129cc60d15a0d5315a98afe1cd1ddaa66f0a2a629ecdcdc45417b2"
+    },
+    {
+      "file": "00404.png",
+      "elapsedMs": 20214.328,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741249,
+      "sha256": "3e025923d9d1b48e1b2ddc7523de529beaac4bb53fbda1d2855708a3dadfb5f2"
+    },
+    {
+      "file": "00405.png",
+      "elapsedMs": 20264.2616,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741138,
+      "sha256": "f1aeac7e17f7c3fda75379965c3cdb8c074bd61caef7ebed3c7fecf61b0470b7"
+    },
+    {
+      "file": "00406.png",
+      "elapsedMs": 20315.2919,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741422,
+      "sha256": "7e8d3a612c3adc16e80d61e6c6b08fa651f8474066bf3b6e511a0180cb46d5b2"
+    },
+    {
+      "file": "00407.png",
+      "elapsedMs": 20365.5264,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741224,
+      "sha256": "20eb8be9d74803c97d9cceec5e0b01fe2b117b6153c7f1ba0b31558db562a124"
+    },
+    {
+      "file": "00408.png",
+      "elapsedMs": 20416.7144,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741257,
+      "sha256": "fdd265ab65f4f070718ab55fc1a33ce1c0d6a4e1ec78e3b235278b956a3c2baf"
+    },
+    {
+      "file": "00409.png",
+      "elapsedMs": 20465.4285,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741805,
+      "sha256": "7efba18b3b0a4c57da24d9627e244049496ddcf17ff94cb1d895db7eac8a4a87"
+    },
+    {
+      "file": "00410.png",
+      "elapsedMs": 20515.8549,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741846,
+      "sha256": "e6ca57e75c7f8ad663d4b4b96bba6668f415b15cb0d09bb78af3c97dd6ecf4b1"
+    },
+    {
+      "file": "00411.png",
+      "elapsedMs": 20565.723,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741711,
+      "sha256": "9992e27502b5e2a1f9fcdae84aca0c79e204c06aa1dabfaa4af29575af8e3465"
+    },
+    {
+      "file": "00412.png",
+      "elapsedMs": 20615.8389,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741873,
+      "sha256": "a79145f0933071d27e8a90ba090c6462e326a64ec672cdc4096465ee163792be"
+    },
+    {
+      "file": "00413.png",
+      "elapsedMs": 20666.0025,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741881,
+      "sha256": "7a7022e4dc757039ca151d7a3bdedeeb2924fcfe5e62265658bb1896e56ec79a"
+    },
+    {
+      "file": "00414.png",
+      "elapsedMs": 20715.9152,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741812,
+      "sha256": "a5fd08c04428896c46a02a6aede06820f276537c240a22d0eccfc96db0ff144b"
+    },
+    {
+      "file": "00415.png",
+      "elapsedMs": 20765.9491,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741782,
+      "sha256": "72f3547f9772711e8b7ae2d0cfcee92b14697b15b3aa9da415169fa935f01344"
+    },
+    {
+      "file": "00416.png",
+      "elapsedMs": 20816.662,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741572,
+      "sha256": "32b0d1b95f3116894234e7ce5e2856c838b2b61e36e4cc347a21ca3ad4994334"
+    },
+    {
+      "file": "00417.png",
+      "elapsedMs": 20866.7731,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741683,
+      "sha256": "b448241b9a5cef998b169160e2df8c60c0074c5b7f1e757cc22b5151bdb6a2fa"
+    },
+    {
+      "file": "00418.png",
+      "elapsedMs": 20916.941,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741971,
+      "sha256": "c2b520acbfe5f20181d6154a4ea2256fdf5f179c07e86b05a8c7f3447e39b243"
+    },
+    {
+      "file": "00419.png",
+      "elapsedMs": 20950.5984,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742011,
+      "sha256": "6d080af5bfa2b96058f398a226bcdec3583a3bec68bd4a2c2de626fbe38b64c3"
+    },
+    {
+      "file": "00420.png",
+      "elapsedMs": 21000.6265,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741970,
+      "sha256": "e2926415a3dbb288fad3460656b045b9e01863437f5ebc55ca163cc66ecc0b67"
+    },
+    {
+      "file": "00421.png",
+      "elapsedMs": 21050.7359,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741994,
+      "sha256": "820332bc65dc02f2dee64c803320acf9c8bd20973196469398e1a584c82f02fd"
+    },
+    {
+      "file": "00422.png",
+      "elapsedMs": 21101.2741,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741953,
+      "sha256": "b2ce0efc8d1f5282d6619cfee70b51e448f904bc3ca4d06cac7627940cee4c03"
+    },
+    {
+      "file": "00423.png",
+      "elapsedMs": 21151.0981,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741951,
+      "sha256": "d72c152b0357fe0d56e71341444327eec19f2d375e3ea4edbefe82b9443e23cb"
+    },
+    {
+      "file": "00424.png",
+      "elapsedMs": 21201.1598,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741980,
+      "sha256": "bbf78f89b34b80720f308e29f8baab799744147ce5e67c64edd4691e71681214"
+    },
+    {
+      "file": "00425.png",
+      "elapsedMs": 21251.2761,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741831,
+      "sha256": "25b6df8f9c9d9b3d747046455ffcc788ba25dc1b594b83db363cd0ee3151f991"
+    },
+    {
+      "file": "00426.png",
+      "elapsedMs": 21305.5522,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741814,
+      "sha256": "dbb7b6dfcd9bec483918ba7eda8cd84bea709111eb8c860e61e120589e4620b5"
+    },
+    {
+      "file": "00427.png",
+      "elapsedMs": 21355.2048,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741621,
+      "sha256": "3418b9c19627c8f686a7492ba1af18ec51e2f8cd3b7d6eb01b0bd9b84e4833ca"
+    },
+    {
+      "file": "00428.png",
+      "elapsedMs": 21405.3673,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741773,
+      "sha256": "3c6a8164589b75db32a05ee3f84e65c0912948d3ddc3dbacca134f14cd145796"
+    },
+    {
+      "file": "00429.png",
+      "elapsedMs": 21455.54,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741773,
+      "sha256": "36c98210ddcb90eb68d6d718dfaa3d9a7ee35bcd348ee36ace6abd661a51fa80"
+    },
+    {
+      "file": "00430.png",
+      "elapsedMs": 21506.252,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741766,
+      "sha256": "5ce55461b9b1790b68906b17d73ebc28617f7eafb6c4fd22b7f4f2d957aae6bf"
+    },
+    {
+      "file": "00431.png",
+      "elapsedMs": 21556.0765,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741812,
+      "sha256": "3da3a6b9d62b263b77d1f741af840ee1593495e935930112ceb09ecfdbadbeed"
+    },
+    {
+      "file": "00432.png",
+      "elapsedMs": 21607.0588,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741781,
+      "sha256": "645c3ef32a1c438345bdf0ba830a4d7bbcdc4fb3fd8741773208b0d07ddaa68c"
+    },
+    {
+      "file": "00433.png",
+      "elapsedMs": 21658.0035,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741830,
+      "sha256": "bd2ef8e026396e2c7131ce4a64597b5f7c120bf55575b006a0c3965b6a030d95"
+    },
+    {
+      "file": "00434.png",
+      "elapsedMs": 21707.8567,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742161,
+      "sha256": "ad7e28c300fb4a24fa91ce93414f85a2ec569a485ee3dc026c5914a9aaaf6c26"
+    },
+    {
+      "file": "00435.png",
+      "elapsedMs": 21758.1788,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741974,
+      "sha256": "ac2906c47bc24251ceb23a108bd232406e4f923c4cf46d99c725150272afdfc9"
+    },
+    {
+      "file": "00436.png",
+      "elapsedMs": 21810.2375,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741851,
+      "sha256": "93dbed9f3a34d46dcc6ea2bff9e7006e240789bca3b17f1a1109cb392225bef5"
+    },
+    {
+      "file": "00437.png",
+      "elapsedMs": 21859.0168,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741884,
+      "sha256": "614b061c984551e865cc224ce8b2096a2c4fea4a9897d79e6364a8e70f8d5120"
+    },
+    {
+      "file": "00438.png",
+      "elapsedMs": 21909.2967,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741781,
+      "sha256": "96afbf06cdb0e8b519df04c279497ff3c93a6f3b079d703e03a544a6455183d5"
+    },
+    {
+      "file": "00439.png",
+      "elapsedMs": 21959.9327,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741763,
+      "sha256": "3aae1b645a3f35f79ea1c9b63650618a39764d10b06488bfef448da1b9f2b005"
+    },
+    {
+      "file": "00440.png",
+      "elapsedMs": 22010.1731,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741876,
+      "sha256": "4c684340ff1971e21bbea417f30809dde3df5a84a990563f9bbb22dfcbaedffe"
+    },
+    {
+      "file": "00441.png",
+      "elapsedMs": 22059.9567,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741850,
+      "sha256": "3a60aceef8d61fd275e0ccb42e2ab1517e0e4c919492371ecc4cb2c9ee8b8abb"
+    },
+    {
+      "file": "00442.png",
+      "elapsedMs": 22110.1032,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741955,
+      "sha256": "366f77281799689a982a835322f9312da565f36b9b16a224799a16add829e6de"
+    },
+    {
+      "file": "00443.png",
+      "elapsedMs": 22161.3932,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741767,
+      "sha256": "c1ebd0b30538e2fff82393d29d2e89f519cacce6b90bb4ca824097270a310b4c"
+    },
+    {
+      "file": "00444.png",
+      "elapsedMs": 22210.5752,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741810,
+      "sha256": "2f1991e8ffafe65a3931643c151cac028254598e1606fa97badb27ab4489d5cc"
+    },
+    {
+      "file": "00445.png",
+      "elapsedMs": 22260.5019,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741659,
+      "sha256": "df264342d42241daa11360f1ff1008119a1fc67d7029241d1e1741c30d551001"
+    },
+    {
+      "file": "00446.png",
+      "elapsedMs": 22311.1373,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741687,
+      "sha256": "3b8a786054e3e38882800533f8761b4edb08aad6d7c942bb48b64b597d825657"
+    },
+    {
+      "file": "00447.png",
+      "elapsedMs": 22360.8668,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741736,
+      "sha256": "84507b103229542222b223746bc3f8e551d850ee50d8a6bddb2b3b22e0024065"
+    },
+    {
+      "file": "00448.png",
+      "elapsedMs": 22410.9718,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741735,
+      "sha256": "504b69921ba7dbbc91af71bb3bdf61f20a52cddf46545bc58dd41e29d9f32ce3"
+    },
+    {
+      "file": "00449.png",
+      "elapsedMs": 22461.2717,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741690,
+      "sha256": "fb81b76d86e71c38894715bc9e096c0cd493f9c1e26c40536652fee67d064af2"
+    },
+    {
+      "file": "00450.png",
+      "elapsedMs": 22510.8316,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741794,
+      "sha256": "cb8e51c5f3894399c556f5a202caddfb423837f9c92b8555b75b2638cbdccb32"
+    },
+    {
+      "file": "00451.png",
+      "elapsedMs": 22561.0719,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741694,
+      "sha256": "12d4dc80df904130b9c3afa8e93cb604f7d3e361c0130e447c5865772c565bf4"
+    },
+    {
+      "file": "00452.png",
+      "elapsedMs": 22610.9971,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741805,
+      "sha256": "12b113a829454e7d8ab45437204bf641435a8a05d3a56bed5ef8380ce82563f1"
+    },
+    {
+      "file": "00453.png",
+      "elapsedMs": 22660.8589,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741697,
+      "sha256": "727dcf94bebdd7303a66663cb93569ab8b5fcc8dae76935baba83737db240b05"
+    },
+    {
+      "file": "00454.png",
+      "elapsedMs": 22711.0116,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741753,
+      "sha256": "0bebcd1d848c734f44a1a7087c348a51695e634c508c757af766b630ce2fbd55"
+    },
+    {
+      "file": "00455.png",
+      "elapsedMs": 22764.3209,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741676,
+      "sha256": "958e1a29713e79b0f5235a3795f5258a4f1d4854e8f6b520e0abca322697da19"
+    },
+    {
+      "file": "00456.png",
+      "elapsedMs": 22811.2776,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741714,
+      "sha256": "40787c33656b6e4e23d179457b747180fe4a3b701e655690fbf24fd3e9387431"
+    },
+    {
+      "file": "00457.png",
+      "elapsedMs": 22863.0967,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742108,
+      "sha256": "f132396bc2bc7a8bc4aa00a28b5db19fae6c4a7a7fb7664e59df030b13f5b72b"
+    },
+    {
+      "file": "00458.png",
+      "elapsedMs": 22913.0933,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742098,
+      "sha256": "c26dae6b711bc58c777e12d6e47246550faf81805110216c7235f7fbcadb5da8"
+    },
+    {
+      "file": "00459.png",
+      "elapsedMs": 22962.0569,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742081,
+      "sha256": "013c4a464c177a5969895030757e39850053fed105020da598387e7deb6d9a3a"
+    },
+    {
+      "file": "00460.png",
+      "elapsedMs": 23012.0292,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741644,
+      "sha256": "ef3f70d532137166fd48cf63d85ff6bfde9d9b6eb5e026d62f2356d80a770798"
+    },
+    {
+      "file": "00461.png",
+      "elapsedMs": 23065.595,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741572,
+      "sha256": "5d898482958719c1b6be6dc2e452a64555c619151a6da9c95c9e1dc9f4aa3c01"
+    },
+    {
+      "file": "00462.png",
+      "elapsedMs": 23112.5484,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741936,
+      "sha256": "6f674095b9294032cfe959f0df019c700366b379d578f3b80c4df9e7178e97cd"
+    },
+    {
+      "file": "00463.png",
+      "elapsedMs": 23164.2816,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742089,
+      "sha256": "c79f9932a2225eeddbab8c0da36defb5201fcc3a96fba0c93953bf642a70bcee"
+    },
+    {
+      "file": "00464.png",
+      "elapsedMs": 23212.7631,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742070,
+      "sha256": "bce6422227f3fd2d26dfe8a2acb03552b93decb0fd3d701a48527178880881fc"
+    },
+    {
+      "file": "00465.png",
+      "elapsedMs": 23263.1569,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742001,
+      "sha256": "4048552a81570853b88a7630e6120bacae69dcde54a7aec2c9c29a83c63a6ce7"
+    },
+    {
+      "file": "00466.png",
+      "elapsedMs": 23312.5193,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741986,
+      "sha256": "5bb38d20d6185abd2f7fcfe776fdddf949bdb21b9169e0aca2d0ad1f3efad827"
+    },
+    {
+      "file": "00467.png",
+      "elapsedMs": 23364.2402,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741899,
+      "sha256": "919931ec04cabebf68f97b58191860078af0ef2ea167e5bbeaf25d29c8238dac"
+    },
+    {
+      "file": "00468.png",
+      "elapsedMs": 23412.8998,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742063,
+      "sha256": "7b5ad457902236f4bd0236cf9cea6a484933b679ea7200e7efd0fa35ad573fc3"
+    },
+    {
+      "file": "00469.png",
+      "elapsedMs": 23462.8155,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741961,
+      "sha256": "8ac9b5f9187439c2f649256bc57430e69b747c5a642a6958a132eae9eb65d51d"
+    },
+    {
+      "file": "00470.png",
+      "elapsedMs": 23513.2097,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742134,
+      "sha256": "42ad04fa0fc5e83d01c05696e5361e6d79319d3d5bd53a889413c0b3870197c7"
+    },
+    {
+      "file": "00471.png",
+      "elapsedMs": 23563.1998,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742063,
+      "sha256": "7f762239b4794c6afbc0e5d480312cf42105d2a9b42ec43f3d2af76595a402a8"
+    },
+    {
+      "file": "00472.png",
+      "elapsedMs": 23613.0235,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742081,
+      "sha256": "d3d06f726d17b736b4a28fc80acd64a807f86981c718987f76b0472d350fa236"
+    },
+    {
+      "file": "00473.png",
+      "elapsedMs": 23664.7875,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742050,
+      "sha256": "fc58ac183bacf3173611d0233de4f5efa56a2e67ddd68c29597c9ddba3eb37f7"
+    },
+    {
+      "file": "00474.png",
+      "elapsedMs": 23713.9959,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742091,
+      "sha256": "3b3fcf20da9f9ca2681812f3626328ad2ae930eb22bbc2059e943cff758a66cf"
+    },
+    {
+      "file": "00475.png",
+      "elapsedMs": 23764.8077,
+      "screen": "GimmickEditorScreen",
+      "bytes": 742017,
+      "sha256": "349566ce9457e7d1d375088cc26ae4ac79b69aced5d4fd4e29686220bae08ad1"
+    },
+    {
+      "file": "00476.png",
+      "elapsedMs": 23814.8918,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741841,
+      "sha256": "472618b56a12a7b71ba21d02e6c8f200293a8be5f47d2194fed77c82c45f4fb8"
+    },
+    {
+      "file": "00477.png",
+      "elapsedMs": 23864.156,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741556,
+      "sha256": "d9eff6f80d8983744bc140bf79912d2b3df32d01b6968b16f8fc2606b54c62e8"
+    },
+    {
+      "file": "00478.png",
+      "elapsedMs": 23915.5548,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741580,
+      "sha256": "0fc9a8c02a97e0436174b29f1e8b99dacfa9f0f4103d94145b93eae166758af9"
+    },
+    {
+      "file": "00479.png",
+      "elapsedMs": 23968.4812,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741654,
+      "sha256": "206f4dc7d9b020292d7568ee39d771f96595d8c21f32d8bfb4d0446c088550c8"
+    },
+    {
+      "file": "00480.png",
+      "elapsedMs": 24015.1951,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741561,
+      "sha256": "1fcc818fd583f9a3f5df683f113d6f9f8527bbdc573c58ec707c76dbd050f814"
+    },
+    {
+      "file": "00481.png",
+      "elapsedMs": 24066.7619,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741634,
+      "sha256": "f70d59d9783a653ce1ff99b93a653b75f15bd53d498944aba02795fcbafd3fb1"
+    },
+    {
+      "file": "00482.png",
+      "elapsedMs": 24100.0164,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741672,
+      "sha256": "16cf24e45115868b2aef29427ca1581bfb8db9e090114d2b1bee8179ac47ca66"
+    },
+    {
+      "file": "00483.png",
+      "elapsedMs": 24155.83,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741598,
+      "sha256": "1a7df046118d82516e66e72d3c045c26730e982910da570bf395b68e04fb1f18"
+    },
+    {
+      "file": "00484.png",
+      "elapsedMs": 24204.9533,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741622,
+      "sha256": "17e3cb55322401ceb7efdb3e9badb307b24f433f1f5d5c239c0abc9ab6128fdf"
+    },
+    {
+      "file": "00485.png",
+      "elapsedMs": 24254.5625,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741631,
+      "sha256": "97d1a86c170449702566cc2967f086fdc26f858e0d879f78dd09cebc2b90bef7"
+    },
+    {
+      "file": "00486.png",
+      "elapsedMs": 24304.2396,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741610,
+      "sha256": "d87676d4f807f0f311454b82c32cb4460e1fdc38d0dbfce6c0c05db4d2558ae4"
+    },
+    {
+      "file": "00487.png",
+      "elapsedMs": 24355.5816,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741599,
+      "sha256": "a4a11b2b962d685d50ad749c6340e771bcfca9ac33130631f3cf879811387080"
+    },
+    {
+      "file": "00488.png",
+      "elapsedMs": 24407.2519,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741675,
+      "sha256": "523816a37836f1101bd0981c5fb1de9623b476eb854f539583c216ae11eddbe7"
+    },
+    {
+      "file": "00489.png",
+      "elapsedMs": 24456.6285,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741622,
+      "sha256": "3b9790e70dc70815c61da7d6bb423875415f33931dc8b9fb467a782f5f47d104"
+    },
+    {
+      "file": "00490.png",
+      "elapsedMs": 24504.4248,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741750,
+      "sha256": "60e6da3f700b1df11c77214a4b2ded12fdf8d35be1f9b4ff977b7c8c19a314ba"
+    },
+    {
+      "file": "00491.png",
+      "elapsedMs": 24554.3421,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741794,
+      "sha256": "43f32ac673ce1d6c6c8936d4e78567eb473a08a7cb87bd2b3f063babd2b15683"
+    },
+    {
+      "file": "00492.png",
+      "elapsedMs": 24604.5937,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741773,
+      "sha256": "8fcd36495af3a8f1054ef3d98b46b829116f2cd535ab820978ac07cbd913e2ae"
+    },
+    {
+      "file": "00493.png",
+      "elapsedMs": 24656.1499,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741805,
+      "sha256": "bc04a88b0ed0202e6ff0c6a80c84021bec463fc59450c31857e6f3d588f6910f"
+    },
+    {
+      "file": "00494.png",
+      "elapsedMs": 24707.7811,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741638,
+      "sha256": "ceaf7d20b69e73a835ef3acefb90f2c88d5f450967debc435e86b4c8662b966a"
+    },
+    {
+      "file": "00495.png",
+      "elapsedMs": 24768.2758,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741769,
+      "sha256": "301a381b02ab3f80de16f204e597f2da76bc7184f02a76906ebb0a3cf92a73f8"
+    },
+    {
+      "file": "00496.png",
+      "elapsedMs": 24805.4985,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741802,
+      "sha256": "28cc57b62a52a5d248ce7e2fb3588baf58d80de2967d86551bafa73516a4f35b"
+    },
+    {
+      "file": "00497.png",
+      "elapsedMs": 24852.2192,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741756,
+      "sha256": "92419e5d2a2dd6f844a9c5f10c9f6cad4a5ac48f748d90ac82d78b4a9b684ed7"
+    },
+    {
+      "file": "00498.png",
+      "elapsedMs": 24902.6649,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741764,
+      "sha256": "78beefbfd9f1098dd76812d93e7faf21ce2908f99218db90c92d711d1e82032b"
+    },
+    {
+      "file": "00499.png",
+      "elapsedMs": 24952.1521,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741602,
+      "sha256": "c2d4ee0ee4975685b86ac416d026d5a617579999d553a07bf38b416c04c7b872"
+    },
+    {
+      "file": "00500.png",
+      "elapsedMs": 25003.136,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741685,
+      "sha256": "21b646fbb163df30de8d1df3d6a99d47deed3e887435c267dd4e4d52e99dee81"
+    },
+    {
+      "file": "00501.png",
+      "elapsedMs": 25052.3006,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741718,
+      "sha256": "e9f49cc89bc3d32c148f6fd610bc0b040e6a04affa5f6564249b359e417de9f5"
+    },
+    {
+      "file": "00502.png",
+      "elapsedMs": 25103.9506,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741810,
+      "sha256": "de0a27895afd1a52f44a548e35dd50503ddf61015f812205aa53d05241ce210b"
+    },
+    {
+      "file": "00503.png",
+      "elapsedMs": 25153.7118,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741776,
+      "sha256": "b347332dbe2bb4c3a926e5440b6133314231de153c0e64a22b2ccc4788534a45"
+    },
+    {
+      "file": "00504.png",
+      "elapsedMs": 25202.0686,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741842,
+      "sha256": "3e217186c2bd0bfa7588003d2ba1eb0428b87cb1be9b51445dd7b2b591bf5347"
+    },
+    {
+      "file": "00505.png",
+      "elapsedMs": 25253.48,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741634,
+      "sha256": "e18ff1865cc02b3b99e55de4942de34a66cb4ffe6f01ef187cdde09a705ebb48"
+    },
+    {
+      "file": "00506.png",
+      "elapsedMs": 25304.4227,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741634,
+      "sha256": "e18ff1865cc02b3b99e55de4942de34a66cb4ffe6f01ef187cdde09a705ebb48"
+    },
+    {
+      "file": "00507.png",
+      "elapsedMs": 25354.4246,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741675,
+      "sha256": "7b7f2dbf601f9962aee525143bdb62a88042e7a45cddebf9673dd348bef9c0d4"
+    },
+    {
+      "file": "00508.png",
+      "elapsedMs": 25404.4981,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741639,
+      "sha256": "298c82db4d71f589b76990f88e5fbb37d3e6cf10118b586707c8b73200c906f5"
+    },
+    {
+      "file": "00509.png",
+      "elapsedMs": 25454.3758,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741639,
+      "sha256": "298c82db4d71f589b76990f88e5fbb37d3e6cf10118b586707c8b73200c906f5"
+    },
+    {
+      "file": "00510.png",
+      "elapsedMs": 25505.118,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741712,
+      "sha256": "47d2ceee0488a48ee717418f229089fdb5fa2c8d27276e85e4dc92081c9ca02e"
+    },
+    {
+      "file": "00511.png",
+      "elapsedMs": 25555.1102,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741670,
+      "sha256": "b1a6b0201c2232662e356dfa9bc4d6b982c422a8398b090d6c0dd6110aa3d2e8"
+    },
+    {
+      "file": "00512.png",
+      "elapsedMs": 25605.4584,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741815,
+      "sha256": "c48f9d5fd6f2db2738529c7c7db5e314331be5e2752121c53f86abaff342ec4b"
+    },
+    {
+      "file": "00513.png",
+      "elapsedMs": 25655.5941,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741803,
+      "sha256": "bbac63c656d463e951d0028d9428f2eec2774a581168f48c406ecda67090b839"
+    },
+    {
+      "file": "00514.png",
+      "elapsedMs": 25705.1864,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741772,
+      "sha256": "344575a445e7f469060a76e5eeffaacc34067840933d29ae43ca885a206bfe5c"
+    },
+    {
+      "file": "00515.png",
+      "elapsedMs": 25755.2121,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741691,
+      "sha256": "561f178898933cc45fe517ec6cf4833ed42d7f1537347e9bc74e855439ae8906"
+    },
+    {
+      "file": "00516.png",
+      "elapsedMs": 25805.5612,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741727,
+      "sha256": "d5b20f6ba76a900e2f11647757c91df55389b2efcb20ad715669c0a87d41aab9"
+    },
+    {
+      "file": "00517.png",
+      "elapsedMs": 25855.4792,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741609,
+      "sha256": "c232dc3b0d3d8c95d67a0e794d4817a4b7a16706d732aa498f7ece0b717cb112"
+    },
+    {
+      "file": "00518.png",
+      "elapsedMs": 25905.7985,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741668,
+      "sha256": "ad6027c0b48ab1c25113525716ff47bdfb2e7098ff9935dd2283a9303f553ecf"
+    },
+    {
+      "file": "00519.png",
+      "elapsedMs": 25956.4487,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741678,
+      "sha256": "4b93c73a16ab2e50df33cf491fc909cea7168adf63c389f2ff77cb9f9ea93b73"
+    },
+    {
+      "file": "00520.png",
+      "elapsedMs": 26007.3698,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741659,
+      "sha256": "88f01416b191fd7cc87e990bd6b79ab4792eb1ce3626faa3ccb16b8d0e7bf2f9"
+    },
+    {
+      "file": "00521.png",
+      "elapsedMs": 26057.6421,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741664,
+      "sha256": "35d0d49c5203b956bd558afdf4aab93df40f01b59aef5e2c016dfa03b8ee268c"
+    },
+    {
+      "file": "00522.png",
+      "elapsedMs": 26107.9416,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741614,
+      "sha256": "4a1e7068312d6ef437a9954113e101d2d33f6370fd56d6e02eb5e8abf39b94f8"
+    },
+    {
+      "file": "00523.png",
+      "elapsedMs": 26157.8294,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741758,
+      "sha256": "0234c975c39c3402300a9268ef7682e2bc75f2261262bc407bc42bdad5341323"
+    },
+    {
+      "file": "00524.png",
+      "elapsedMs": 26207.7818,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741803,
+      "sha256": "98725796f2cafdb7592dcd366ad25eb28bae74a925cba5d0a4915dc906ef8a90"
+    },
+    {
+      "file": "00525.png",
+      "elapsedMs": 26257.8155,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741732,
+      "sha256": "70f4f1bb79cc6a9f835ed31593a8e1c87b612682a2c6261c5206b62b111beb8e"
+    },
+    {
+      "file": "00526.png",
+      "elapsedMs": 26307.8359,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741676,
+      "sha256": "809306136a572956e2f22f107173ae6ae7142232613f664e6d81e171ab5d7d70"
+    },
+    {
+      "file": "00527.png",
+      "elapsedMs": 26358.2647,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741579,
+      "sha256": "9322867eec5af4e2e6e281b5c4d3b224c015656f6bfedb0f23d81e1872488b88"
+    },
+    {
+      "file": "00528.png",
+      "elapsedMs": 26408.0205,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741712,
+      "sha256": "d94161198119566884d82baa701f098a80d63b8ebe5bd9fbbcfec1d82cc7c5ec"
+    },
+    {
+      "file": "00529.png",
+      "elapsedMs": 26458.0872,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741609,
+      "sha256": "cac71e65a18f7b5c52bf41a55c37a8c81a56c3a7e027d43083e22eff5a1bf898"
+    },
+    {
+      "file": "00530.png",
+      "elapsedMs": 26508.1096,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741248,
+      "sha256": "1409747ea27003d359480612de74eb49c461c9629cd4e5f116a5a3f75fc3a879"
+    },
+    {
+      "file": "00531.png",
+      "elapsedMs": 26558.0571,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741225,
+      "sha256": "a542da6f490d687871f68db5b1cb5c534e1adf49ea77b8d0c563d218e7400e0a"
+    },
+    {
+      "file": "00532.png",
+      "elapsedMs": 26608.4794,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741152,
+      "sha256": "42a2bccd1b796121dfc3009373ebf823347578820ad19602ccd349b884dd5741"
+    },
+    {
+      "file": "00533.png",
+      "elapsedMs": 26658.4291,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741328,
+      "sha256": "0650da8af079e7a8d77c90e811a8f8a0ccb8f3b256236bf7632145a222049aa6"
+    },
+    {
+      "file": "00534.png",
+      "elapsedMs": 26708.4064,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741224,
+      "sha256": "1e0167456a3e38555262a4679aa0ce73b1bfc5885d8fca04b8b36eceeaafcd20"
+    },
+    {
+      "file": "00535.png",
+      "elapsedMs": 26758.7764,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741220,
+      "sha256": "c8aeb525621b5512bb8095a139ca8c094641281b13e38c3d83ac62ea5babd30b"
+    },
+    {
+      "file": "00536.png",
+      "elapsedMs": 26809.0062,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741093,
+      "sha256": "255b32a6c3a19639a3d8352c3429f8ca7aae1afa5d5771eab091c4bde1040353"
+    },
+    {
+      "file": "00537.png",
+      "elapsedMs": 26860.461,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741286,
+      "sha256": "5287f2c7e9f2c152b2333ee0fcbcaf39439faa91033285a045003e69c88a8c79"
+    },
+    {
+      "file": "00538.png",
+      "elapsedMs": 26909.0985,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741183,
+      "sha256": "86ec83156804222c01b2689e977c32fb0942ad8a94e0ee41807b5e2b9f93cb34"
+    },
+    {
+      "file": "00539.png",
+      "elapsedMs": 26958.9201,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741184,
+      "sha256": "15adb01958f6a882eb55eb38e7ffe18fb536fa1192a6efd96cc872fed35f5f0c"
+    },
+    {
+      "file": "00540.png",
+      "elapsedMs": 27008.9904,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741184,
+      "sha256": "15adb01958f6a882eb55eb38e7ffe18fb536fa1192a6efd96cc872fed35f5f0c"
+    },
+    {
+      "file": "00541.png",
+      "elapsedMs": 27059.6681,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741184,
+      "sha256": "eb765dcbcc9d0d776f750420409b51521bae3cd3c75dbe4a8eb6b60be8b7b1b4"
+    },
+    {
+      "file": "00542.png",
+      "elapsedMs": 27110.4086,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741195,
+      "sha256": "4439a07dbaa9c5d38ef331422c9b6df895de9ce1b991177edf5b5ed660f33612"
+    },
+    {
+      "file": "00543.png",
+      "elapsedMs": 27161.6968,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741050,
+      "sha256": "c45bb77f4813a1597320ff6936b637209a5be153600286fa95ad665b3103c9db"
+    },
+    {
+      "file": "00544.png",
+      "elapsedMs": 27211.1541,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741050,
+      "sha256": "c45bb77f4813a1597320ff6936b637209a5be153600286fa95ad665b3103c9db"
+    },
+    {
+      "file": "00545.png",
+      "elapsedMs": 27261.379,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741119,
+      "sha256": "4eb61d7d5de4c6337b4ab314bb7db86ba8eeb2b9de32181768d516c3252f86d2"
+    },
+    {
+      "file": "00546.png",
+      "elapsedMs": 27312.1969,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741089,
+      "sha256": "ae526acf01bdb5d1f14ba6063725d2046ab4cb9015cdef7930cd7a14f6dd03e8"
+    },
+    {
+      "file": "00547.png",
+      "elapsedMs": 27362.6512,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741125,
+      "sha256": "30fbc64dc0f3ad1b5effff904a7b3008f086e295758d46f80a1593bc07bfdb57"
+    },
+    {
+      "file": "00548.png",
+      "elapsedMs": 27412.6824,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741053,
+      "sha256": "13542ab1b06426b2cfe65f7c59332d135e7bf158bde171a8f3ec1ef080caf33a"
+    },
+    {
+      "file": "00549.png",
+      "elapsedMs": 27461.9967,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741569,
+      "sha256": "7c9253a3a2d6340bc49e3e2e755627f2f9f2db1332dcea2680c5d33efe5e63e9"
+    },
+    {
+      "file": "00550.png",
+      "elapsedMs": 27512.5759,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741584,
+      "sha256": "7f77bf53e282c0409c904020840fb3be8f08320b008b88b526b260a44d5ac59c"
+    },
+    {
+      "file": "00551.png",
+      "elapsedMs": 27562.7538,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741799,
+      "sha256": "629f160609e4a2433fde87548e990697cb9167f927ab43fd39858ca3f3e1d6f3"
+    },
+    {
+      "file": "00552.png",
+      "elapsedMs": 27613.0116,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741763,
+      "sha256": "5635faf261d368b84eb0a8a8b588f0a1ab2af143209f5f79ce04358d18dff8d1"
+    },
+    {
+      "file": "00553.png",
+      "elapsedMs": 27662.6405,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741723,
+      "sha256": "f426ae40777dba31aad2b6fdcfac52a9afbf3575b923933215edf3da072824c8"
+    },
+    {
+      "file": "00554.png",
+      "elapsedMs": 27714.6053,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741758,
+      "sha256": "8e0ec43fefb9a64ee99aabec23152b2d7649e76425cfc4722032a9287081b5ee"
+    },
+    {
+      "file": "00555.png",
+      "elapsedMs": 27764.4099,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741658,
+      "sha256": "14a537af5521147f794a442a1ef68f3cb40195eed9499c8bb895011fd176c782"
+    },
+    {
+      "file": "00556.png",
+      "elapsedMs": 27814.2278,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741679,
+      "sha256": "6786d2b86edc59b11f795e704bbed66de68f86a371e112fa887ab57d7869d63b"
+    },
+    {
+      "file": "00557.png",
+      "elapsedMs": 27865.8319,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741678,
+      "sha256": "e2810a5962ac5d0f860bba0bb8ce755de14f89d467e44566ebf8d276a5ceb79f"
+    },
+    {
+      "file": "00558.png",
+      "elapsedMs": 27913.8887,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741643,
+      "sha256": "261b2a42454b68f5884c7fdd6e7bf76a0ec41fdcdad089562fdd3c538c8ade74"
+    },
+    {
+      "file": "00559.png",
+      "elapsedMs": 27964.43,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741759,
+      "sha256": "3154e382562592c75518b932e47c3d8eed33642d4b5a92b06035f2c77b2395b6"
+    },
+    {
+      "file": "00560.png",
+      "elapsedMs": 28014.8885,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741734,
+      "sha256": "2f61af02047d480c7b48b6a2e5b0703a80d261095b72237284fbd3e924198dad"
+    },
+    {
+      "file": "00561.png",
+      "elapsedMs": 28064.5935,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741706,
+      "sha256": "3238d46d4367257129136d79df9304ca5e054d70a4dc121502a200e04eacbd20"
+    },
+    {
+      "file": "00562.png",
+      "elapsedMs": 28115.0715,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741733,
+      "sha256": "e5acda077af99a0177c48abb27b4b5bbf8f6650d90c2b3712f7ff251bf1fd0be"
+    },
+    {
+      "file": "00563.png",
+      "elapsedMs": 28164.8023,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741761,
+      "sha256": "f10665b82e651e047f3faafb9b30b64ec53111f8f6da6e1f1f445ea4c8a77dc2"
+    },
+    {
+      "file": "00564.png",
+      "elapsedMs": 28214.456,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741623,
+      "sha256": "7bde09c4fee22f15dea4a7220fa81c57188c6cc1f858e388dcba54fb901d5fc8"
+    },
+    {
+      "file": "00565.png",
+      "elapsedMs": 28264.5372,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741782,
+      "sha256": "1d95b67d6ac6a3ff92f5b730930f9ef311cf985c2f2e9028d80f61b12f832ca7"
+    },
+    {
+      "file": "00566.png",
+      "elapsedMs": 28314.7469,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741593,
+      "sha256": "b7b5e808a9c09c4a446e5ba70088d69f5aecc15f79e6f188f20aa1640adf8175"
+    },
+    {
+      "file": "00567.png",
+      "elapsedMs": 28367.2104,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741661,
+      "sha256": "5373029d5e56eefcfeb76ad92f1d17c420e4249a7e6d0d344888545fe1207d20"
+    },
+    {
+      "file": "00568.png",
+      "elapsedMs": 28410.3215,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741677,
+      "sha256": "f947b5a6d414dafb24c37fb231b709b44bccae78869f9c7746ef2d3e95990ad8"
+    },
+    {
+      "file": "00569.png",
+      "elapsedMs": 28460.8056,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741667,
+      "sha256": "edd5085a7610c8ae732ecaff938e27b197f860f77b6b29f422898e1f0e831b5a"
+    },
+    {
+      "file": "00570.png",
+      "elapsedMs": 28510.456,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741609,
+      "sha256": "33b06f3d63dd481be95aa3d5b6578be8152c236e35b99458bd49a730e3970e73"
+    },
+    {
+      "file": "00571.png",
+      "elapsedMs": 28560.4896,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741733,
+      "sha256": "e31f8ca4e2bccd9fac6952d1c215649063eb48e8b9ea593a1f56bac141fa217e"
+    },
+    {
+      "file": "00572.png",
+      "elapsedMs": 28611.5637,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741812,
+      "sha256": "f76a53137e6e1f7b016c25c02243ca528be2087d90f0e7fcd4ca54be53c1c187"
+    },
+    {
+      "file": "00573.png",
+      "elapsedMs": 28660.9268,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741658,
+      "sha256": "57484fccba5bd9c2ff8daeca3875bfb6bece24e7a6448ae8cf9d5d9ca786019c"
+    },
+    {
+      "file": "00574.png",
+      "elapsedMs": 28711.3556,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741625,
+      "sha256": "aeafdf5a1840e264e40614462b6c946c8e0803876074056250151496f7136b4b"
+    },
+    {
+      "file": "00575.png",
+      "elapsedMs": 28762.0548,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741633,
+      "sha256": "e65bba086efc81d473da8b74473afd49f46b4cecf87b20c80a091cdb705ac1d2"
+    },
+    {
+      "file": "00576.png",
+      "elapsedMs": 28811.8001,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741743,
+      "sha256": "ebe8d55851ec64d9afdcd2bbcaa00691e1d71bb70055934711cd35e54423f846"
+    },
+    {
+      "file": "00577.png",
+      "elapsedMs": 28862.0475,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741580,
+      "sha256": "23300b9df33ae600806570a994ad9c8b5c1f2942e209ff9d51d6568008f74c80"
+    },
+    {
+      "file": "00578.png",
+      "elapsedMs": 28913.153,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741622,
+      "sha256": "ca52635f21dffd4b19c9bc0862965e37f82b26907bfa707f0f5bd48132f06ae0"
+    },
+    {
+      "file": "00579.png",
+      "elapsedMs": 28962.9421,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741621,
+      "sha256": "aa675205b7fc2b012e1b61b64da3837e875bb24c0e4f99bbd3f193a2c9291eae"
+    },
+    {
+      "file": "00580.png",
+      "elapsedMs": 29004.3719,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741640,
+      "sha256": "1d26e3d930b76ae70c32c631f277d75f7ea6afd1598c7f2a0c7398e2b50482ad"
+    },
+    {
+      "file": "00581.png",
+      "elapsedMs": 29054.2184,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741812,
+      "sha256": "f7483dba72baeab6b4d95d1e608541f9b235d63a6b51aa27b86585367ce1a8fd"
+    },
+    {
+      "file": "00582.png",
+      "elapsedMs": 29105.4403,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741738,
+      "sha256": "5b67e9d32c7a02cd99711532b39c730cb5b035a7e8e66d6db092d35fe077dd93"
+    },
+    {
+      "file": "00583.png",
+      "elapsedMs": 29153.9449,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741795,
+      "sha256": "0b166cb75dedec6aef0589e25086577597bfc4b07dc62a6f7e7c501626f33674"
+    },
+    {
+      "file": "00584.png",
+      "elapsedMs": 29203.9823,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741684,
+      "sha256": "832302892457e5ac988847eef255a8d0e2695d0878f2890618c0210b76396f2b"
+    },
+    {
+      "file": "00585.png",
+      "elapsedMs": 29253.9589,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741645,
+      "sha256": "e157d42c9a2797c4f2565a2d1583382bbb94849ed3e14b14a4c2c71f3cd38f75"
+    },
+    {
+      "file": "00586.png",
+      "elapsedMs": 29304.6368,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741610,
+      "sha256": "3f4eba13c468b38eecc034b598ac7f193b63ad971d65092792cf46cd3aab2b40"
+    },
+    {
+      "file": "00587.png",
+      "elapsedMs": 29354.4687,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741631,
+      "sha256": "cbc353cf83dd3e62f90045c463b0d50bec287fee1badb1716dbff71e7c32a050"
+    },
+    {
+      "file": "00588.png",
+      "elapsedMs": 29405.0602,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741631,
+      "sha256": "cbc353cf83dd3e62f90045c463b0d50bec287fee1badb1716dbff71e7c32a050"
+    },
+    {
+      "file": "00589.png",
+      "elapsedMs": 29455.724,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741628,
+      "sha256": "204def997ccfd86163b071fe0acbdd3a7c71f48658c2415e817b03eee7d62bdc"
+    },
+    {
+      "file": "00590.png",
+      "elapsedMs": 29505.9683,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741734,
+      "sha256": "75dd59cbddcc8b790fd8329208ddb3ff4646aab5a473571745391526dbda3079"
+    },
+    {
+      "file": "00591.png",
+      "elapsedMs": 29555.792,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741646,
+      "sha256": "7706bcde9ed21bb5ea24b5155690f2a2998905aaee58da53ba9b02e90f1fd653"
+    },
+    {
+      "file": "00592.png",
+      "elapsedMs": 29605.8388,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741701,
+      "sha256": "86817e9a6f5537898af12fa8ade87a385cb8d307be4601984f1f80edb36094b1"
+    },
+    {
+      "file": "00593.png",
+      "elapsedMs": 29655.7627,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741726,
+      "sha256": "bb61917ca863ca203700f4f894c7b715b6d19e6cf09e919c95e9cdda68f81067"
+    },
+    {
+      "file": "00594.png",
+      "elapsedMs": 29706.2995,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741706,
+      "sha256": "66497c8a36ea7c13c18a6f7f37f97562d941d221a8e7b819a07014c6836e1ef1"
+    },
+    {
+      "file": "00595.png",
+      "elapsedMs": 29756.3412,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741737,
+      "sha256": "9a98ef3eb8e435c406419a61f7bf26f28de86243dce3fd0f6b204272a294535f"
+    },
+    {
+      "file": "00596.png",
+      "elapsedMs": 29806.8669,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741605,
+      "sha256": "4aa9c5822bc3c29de5a18e7192a4457f9c673d7dba3ff4f6250df30ed92fc6da"
+    },
+    {
+      "file": "00597.png",
+      "elapsedMs": 29856.4821,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741790,
+      "sha256": "7b7b030b375ce82542c716f794af6cd6de38c04ba5d1ac2d07614a052856b493"
+    },
+    {
+      "file": "00598.png",
+      "elapsedMs": 29906.8381,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741580,
+      "sha256": "5d8c7848a786e7d1985284a666c406e1e65c7a49f81fce6b43e95b1013e9a362"
+    },
+    {
+      "file": "00599.png",
+      "elapsedMs": 29957.2364,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741641,
+      "sha256": "fe431830ed4a64170f9539357d39684f3f02ca8b42754069d7c75eb47c78293a"
+    },
+    {
+      "file": "00600.png",
+      "elapsedMs": 30007.4857,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741225,
+      "sha256": "83ba1dc69ede2db29c0306073956ac233d660ea94217feab0578c67bef5393e7"
+    },
+    {
+      "file": "00601.png",
+      "elapsedMs": 30057.406,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741167,
+      "sha256": "ddc3951be5ea7016a611c35b687c07a43d11f1235c1b73f8eceefbdc835df283"
+    },
+    {
+      "file": "00602.png",
+      "elapsedMs": 30108.2978,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741173,
+      "sha256": "682657b404c204b53c2b08e2cdeade75d93ff4a8cde2b7a97b78e773fc4db638"
+    },
+    {
+      "file": "00603.png",
+      "elapsedMs": 30158.7966,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741199,
+      "sha256": "422113da2a960c6237ee3548db8d2de45cedc44718519ae95c48ca10419f453e"
+    },
+    {
+      "file": "00604.png",
+      "elapsedMs": 30209.0646,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741162,
+      "sha256": "fca69ca5a537ade4788a83f52de0ed4e6b24bc7223021271ebd4c27194155ccb"
+    },
+    {
+      "file": "00605.png",
+      "elapsedMs": 30259.0832,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741579,
+      "sha256": "b9926e0291a909f3f22161d77ccdc790a5da836577943b2a4b6b6645b290bb9e"
+    },
+    {
+      "file": "00606.png",
+      "elapsedMs": 30309.1274,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741539,
+      "sha256": "8caf0e5e9f137209228345e67cc0ff6583175c41e2e1c7d149b49fffa2d03e1e"
+    },
+    {
+      "file": "00607.png",
+      "elapsedMs": 30359.215,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741539,
+      "sha256": "8caf0e5e9f137209228345e67cc0ff6583175c41e2e1c7d149b49fffa2d03e1e"
+    },
+    {
+      "file": "00608.png",
+      "elapsedMs": 30409.3432,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741451,
+      "sha256": "8f8056335f6a3f5a1586fb0ae386db471663725ef6581a26d81d4c03e98186fe"
+    },
+    {
+      "file": "00609.png",
+      "elapsedMs": 30459.2236,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741558,
+      "sha256": "ac3aec5a828e76b35b59f372a1593d84b7f2c626d520d92f31b8497a67c2b6bd"
+    },
+    {
+      "file": "00610.png",
+      "elapsedMs": 30509.4629,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741573,
+      "sha256": "57da60a713a2cc7e0cdb2aabfd579b0229e6c033066d6944a35911874fb9ccd9"
+    },
+    {
+      "file": "00611.png",
+      "elapsedMs": 30559.3518,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741658,
+      "sha256": "46d5e154a00ab3a83032dede58dbe9c39df3359a3d2eaf146dd7936057d50ad9"
+    },
+    {
+      "file": "00612.png",
+      "elapsedMs": 30611.4983,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744706,
+      "sha256": "784fb95c41138b3e1285f72adf00a46678c9cf89a5a5cf612eda8018dcbf82fb"
+    },
+    {
+      "file": "00613.png",
+      "elapsedMs": 30659.5646,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744572,
+      "sha256": "a4732f5360900f8c37388972ab8c3747ae9ef4a4f450c22643ae5f1f28298a62"
+    },
+    {
+      "file": "00614.png",
+      "elapsedMs": 30712.08,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744894,
+      "sha256": "cb6538ef8c8ae0796c1e28c756fbb7aedc9fbda83850df6d748a543e3787a2c3"
+    },
+    {
+      "file": "00615.png",
+      "elapsedMs": 30759.9172,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744456,
+      "sha256": "6650cdd6457577f41ff4bff4255fbf2495b4bb5b14e1ae26cade876a7c22f8fd"
+    },
+    {
+      "file": "00616.png",
+      "elapsedMs": 30810.7449,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744284,
+      "sha256": "15ce48e7ca66949903bc4882e9094f92cc8134a05c3ea08447194995d58d4fd0"
+    },
+    {
+      "file": "00617.png",
+      "elapsedMs": 30861.4227,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744293,
+      "sha256": "760bf244b13a8d5a0862963a6519cfa3603fc1647a96f9eb1c2e42816f291464"
+    },
+    {
+      "file": "00618.png",
+      "elapsedMs": 30912.546,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744289,
+      "sha256": "456c7e463645e6a0262e12b427ac5a50b3b9d20a2fa11a5b3cf58fafec49b074"
+    },
+    {
+      "file": "00619.png",
+      "elapsedMs": 30960.9446,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744837,
+      "sha256": "7f33f5314f0c235b08d78bd611cba3a56874d201b68851bd6d5d78c2e2855f23"
+    },
+    {
+      "file": "00620.png",
+      "elapsedMs": 31012.6127,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744876,
+      "sha256": "450e184807933d7a60fd03099a009466131827f57984a37a33a95d8056201856"
+    },
+    {
+      "file": "00621.png",
+      "elapsedMs": 31061.477,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744784,
+      "sha256": "549b6f5544a196be1399f05fb5696a08a4c3faf7b9535315bc6cc20eeb504108"
+    },
+    {
+      "file": "00622.png",
+      "elapsedMs": 31112.9538,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744822,
+      "sha256": "d5a92da2e4269d8d4bb3d1d4f77b19fef72f5f5b1d5108c3bf06cedbc138b180"
+    },
+    {
+      "file": "00623.png",
+      "elapsedMs": 31162.0832,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744902,
+      "sha256": "49bcba88bfd5dab478e39fc3099089ec52796a0d64438a3abd62218fbe084d7b"
+    },
+    {
+      "file": "00624.png",
+      "elapsedMs": 31212.6758,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741775,
+      "sha256": "01beb0146fa3d52799e07b85a7300e16ad0e1e6ce1fcc722259c1dfb2b67dbfe"
+    },
+    {
+      "file": "00625.png",
+      "elapsedMs": 31261.2254,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741771,
+      "sha256": "ce9cb095e535d139b243991cfa2298f4ee87431d581870ff8e49922d8598d961"
+    },
+    {
+      "file": "00626.png",
+      "elapsedMs": 31311.87,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741714,
+      "sha256": "409b0605cc1b615a9bb532ff9f9a6faab5e41e3ed7410458747f45b1e0b875d5"
+    },
+    {
+      "file": "00627.png",
+      "elapsedMs": 31361.2004,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741666,
+      "sha256": "572fb11d3791bc1cdab8987beea7a706cd5aa920fd285af1ae348df293a256ac"
+    },
+    {
+      "file": "00628.png",
+      "elapsedMs": 31411.3261,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741681,
+      "sha256": "239997b3daac825223bbb49a9c8f6cd6c35ba2fc1642a9767dd55ba6d9c4af29"
+    },
+    {
+      "file": "00629.png",
+      "elapsedMs": 31463.6718,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741469,
+      "sha256": "974394ea6cf41488e7987ba4432064ee8b0beb81fde40741c31d12d40626a9f9"
+    },
+    {
+      "file": "00630.png",
+      "elapsedMs": 31511.7853,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741436,
+      "sha256": "b24cabfed2b7454a4bc37e143b84a2c030a237026be35609f880cc819c308b13"
+    },
+    {
+      "file": "00631.png",
+      "elapsedMs": 31562.1597,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741414,
+      "sha256": "78a564d3fd4fcd653dfd32e9c9e615aae2e49f9509c5757c6d2afb94d43c717c"
+    },
+    {
+      "file": "00632.png",
+      "elapsedMs": 31612.6752,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741133,
+      "sha256": "8306f1fb0f784e6a61030100648f4b3cbfe10ae8d15d5ba72d08d646008708d0"
+    },
+    {
+      "file": "00633.png",
+      "elapsedMs": 31662.1121,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741099,
+      "sha256": "87ecbfd95ab2537bfcdea8bcee4814b0d6c75886390168f95b54b896f5420705"
+    },
+    {
+      "file": "00634.png",
+      "elapsedMs": 31712.1591,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741434,
+      "sha256": "d420c3555dd9d27a79f72b540f9eb7f9abf3ed635112ace4de63176e2e6e9106"
+    },
+    {
+      "file": "00635.png",
+      "elapsedMs": 31763.0357,
+      "screen": "GimmickEditorScreen",
+      "bytes": 741641,
+      "sha256": "db132f6d7c17aee3b9b63c07fb5f6436e922867a62d486296126877447cda594"
+    },
+    {
+      "file": "00636.png",
+      "elapsedMs": 31814.0397,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745210,
+      "sha256": "72ae09148cc23e9331defd052cc8fbe5a8ddcaf3e1fc20e1878a554e509e51ba"
+    },
+    {
+      "file": "00637.png",
+      "elapsedMs": 31862.9433,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745133,
+      "sha256": "c25f90d547d80b8061a9ff75667970fa641c0e675f97fa0aa379e6035991efb6"
+    },
+    {
+      "file": "00638.png",
+      "elapsedMs": 31914.3629,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745130,
+      "sha256": "599ff3fc7127bd5ccbac4b662cfb6f7de3fc54922de77f41aee72e8102435f10"
+    },
+    {
+      "file": "00639.png",
+      "elapsedMs": 31966.8159,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745158,
+      "sha256": "940c959e4cfe54be81caa71dee3fde7f1e055b8d9868e29ecc3bc23c2171bea9"
+    },
+    {
+      "file": "00640.png",
+      "elapsedMs": 32002.59,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745476,
+      "sha256": "02b55b78fa34428260dd604a414bd0939cc860c11b8fa4f4f93c776901f2c364"
+    },
+    {
+      "file": "00641.png",
+      "elapsedMs": 32051.1376,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745486,
+      "sha256": "a586355817ae2a1a95015fe31bb22116f812f3c71cf0cca12bf758d97c4a6738"
+    },
+    {
+      "file": "00642.png",
+      "elapsedMs": 32102.0965,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745532,
+      "sha256": "3ee51646375a969b6c0dae9cb022b8304ee9d380fe38a56d574ddb899ad34e6b"
+    },
+    {
+      "file": "00643.png",
+      "elapsedMs": 32151.0945,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745503,
+      "sha256": "b4337d833ca26f03ff5a107fd276b3fd23ffd56aa0028332310bf65c7f291f38"
+    },
+    {
+      "file": "00644.png",
+      "elapsedMs": 32201.8076,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745538,
+      "sha256": "44f135eadb5ae0340ef6b49c610910991a85c34c0578a6785505cb0b929fa62c"
+    },
+    {
+      "file": "00645.png",
+      "elapsedMs": 32252.7848,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745398,
+      "sha256": "53b1782a0537e371b086f352495b3aff16eec5287676e16fa69656a3d73b3c84"
+    },
+    {
+      "file": "00646.png",
+      "elapsedMs": 32303.2689,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745343,
+      "sha256": "1f3b6360b94528db4b6b9c15e910c77d480b2dbdc5bfaec19a4defabb5867f38"
+    },
+    {
+      "file": "00647.png",
+      "elapsedMs": 32353.0715,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745552,
+      "sha256": "6b017e28d6e1761034ef5b9a46a2700f0d2dfa64b5807488717801377bce5511"
+    },
+    {
+      "file": "00648.png",
+      "elapsedMs": 32405.6085,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745517,
+      "sha256": "ce20fd6d673a4a914680c16914f7e2785eff300fa0b443b63612e08b4b99a3aa"
+    },
+    {
+      "file": "00649.png",
+      "elapsedMs": 32454.0502,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745473,
+      "sha256": "ef03a332a7dab76db221d0b33dadb00daec737ea375102d25d9f003de6ed7bc2"
+    },
+    {
+      "file": "00650.png",
+      "elapsedMs": 32503.9126,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745231,
+      "sha256": "4d3284168f3b9db225587b5f441ab026b77730d6aa5a325c2d4e2b34ff61e8cf"
+    },
+    {
+      "file": "00651.png",
+      "elapsedMs": 32554.4483,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745199,
+      "sha256": "9963cd5b10c14a5038242c01252670931d8ceef8a5dd113d40a38c7229c84ed9"
+    },
+    {
+      "file": "00652.png",
+      "elapsedMs": 32613.9527,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745227,
+      "sha256": "3dd57104d7e3420708bdb3db5d718626d5241a0b94090da5b053b4a8cb387a14"
+    },
+    {
+      "file": "00653.png",
+      "elapsedMs": 32665.5548,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745177,
+      "sha256": "ae356cfb8c20d878b2d9355a5867e35bc0f8ad2d16c6beee9531c2012ad93cb9"
+    },
+    {
+      "file": "00654.png",
+      "elapsedMs": 32713.9764,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745062,
+      "sha256": "499d7f68fbd07738fe11460b06cb14dd9fe147276f10978e3b47a74b22e5345d"
+    },
+    {
+      "file": "00655.png",
+      "elapsedMs": 32764.4222,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744712,
+      "sha256": "82cab87bcc5cdf3b8a12e2b71db923db94d50b86fc839ac3feea88932e95c688"
+    },
+    {
+      "file": "00656.png",
+      "elapsedMs": 32814.5014,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744827,
+      "sha256": "0e24e94a5b73423ed6b799264ed1d28fb5f964db888b4ed0aeec81236d2b26c9"
+    },
+    {
+      "file": "00657.png",
+      "elapsedMs": 32864.2399,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745073,
+      "sha256": "3a08f139746dbcf49fe4079aba923f5a0684a38bbcd9cd27eb4fd01e5c13a8b8"
+    },
+    {
+      "file": "00658.png",
+      "elapsedMs": 32914.0374,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745019,
+      "sha256": "8b0ba448724fc3da2869b4dde786c0b06306e01193fb1311f06ce23eb243791c"
+    },
+    {
+      "file": "00659.png",
+      "elapsedMs": 32964.4682,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745076,
+      "sha256": "6ab1f80f8189d5b0f533247a4ca7f4cf15d5011e2c7fe41c8c54a3ecefd6f58f"
+    },
+    {
+      "file": "00660.png",
+      "elapsedMs": 33016.0678,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745234,
+      "sha256": "9a2c1a8c00a43f8194afb8c5ca33e758d0fdf4bc4d840c07797caa46d84035ed"
+    },
+    {
+      "file": "00661.png",
+      "elapsedMs": 33064.43,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745218,
+      "sha256": "bb7048891035adcd31ccd9158d92bdbc29dd3205a9b37a1a857a3dc47f649b40"
+    },
+    {
+      "file": "00662.png",
+      "elapsedMs": 33114.5151,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744880,
+      "sha256": "bbec00361e42dd6aebb4d564566241241234a35d60391db077d1add9c8331f30"
+    },
+    {
+      "file": "00663.png",
+      "elapsedMs": 33164.031,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744829,
+      "sha256": "6795e93a9a02660efaaf2631df496afdc77b11870e79beef341282ca6fa9869f"
+    },
+    {
+      "file": "00664.png",
+      "elapsedMs": 33214.3863,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744706,
+      "sha256": "f25446a1714c54ec291f050cd5863b51970261409201a690b11eeb0cd741df02"
+    },
+    {
+      "file": "00665.png",
+      "elapsedMs": 33264.4748,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744743,
+      "sha256": "0bc426fa4fa4dc1b77ac592e6c6468d493e5415460da1dd0848e2e45a3617d78"
+    },
+    {
+      "file": "00666.png",
+      "elapsedMs": 33315.0953,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744643,
+      "sha256": "c2d4ad3f92745318e4452e11c034d2de1b96292c136bafce23798d8de886fc6b"
+    },
+    {
+      "file": "00667.png",
+      "elapsedMs": 33366.1809,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744843,
+      "sha256": "287d2144d98bf1b0ba435d5848afd53740d549cda8258863c36cdd4e5156555a"
+    },
+    {
+      "file": "00668.png",
+      "elapsedMs": 33419.03,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744622,
+      "sha256": "7aae1431536020698bd9bd76c0a5e60d97df822d2a0830e080e9aa86000aed51"
+    },
+    {
+      "file": "00669.png",
+      "elapsedMs": 33450.5151,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745046,
+      "sha256": "b126380a157b816d3adb467eeb73db6ef4a66e34af69a8b080d617ed4aa875c5"
+    },
+    {
+      "file": "00670.png",
+      "elapsedMs": 33516.6826,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745100,
+      "sha256": "2649817d1866df97233c32e07a14b0997be51684f9fb85906e95e60c1270aa40"
+    },
+    {
+      "file": "00671.png",
+      "elapsedMs": 33568.9341,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745182,
+      "sha256": "1dc17005644b4b8b796a4bf3148c54b6098c1813b1ed5d2adacd84a422fbd798"
+    },
+    {
+      "file": "00672.png",
+      "elapsedMs": 33616.7364,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745143,
+      "sha256": "38f1394dce1f9c906c426c12446e1194e5676cdd969057867584bd86d367c78c"
+    },
+    {
+      "file": "00673.png",
+      "elapsedMs": 33650.6726,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745150,
+      "sha256": "039e6a795334347447b63e256dc4e72be8f660a1e55ed566d8b3900f120f0724"
+    },
+    {
+      "file": "00674.png",
+      "elapsedMs": 33701.1895,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745044,
+      "sha256": "0bcff598c28255ac63a74d9006e8ef9e326abe3bf3cd8fae2ad6f239af6eba8b"
+    },
+    {
+      "file": "00675.png",
+      "elapsedMs": 33751.4409,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745035,
+      "sha256": "5fe17bf5a6526e8e2f7b01747525512d390900e28e9c282e74f1f19ff738105f"
+    },
+    {
+      "file": "00676.png",
+      "elapsedMs": 33801.4408,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745092,
+      "sha256": "384592f1ab5571260a0f3ae49391ac39169d39d24d1d47f78db9a9c0352588ba"
+    },
+    {
+      "file": "00677.png",
+      "elapsedMs": 33851.4072,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745070,
+      "sha256": "8a1c1f6f9dd8e00b17dbc280fd964ab348c08db414a63748d20fad020bae5f43"
+    },
+    {
+      "file": "00678.png",
+      "elapsedMs": 33901.4104,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744979,
+      "sha256": "ba84bb4a6dfb6c639256972585060af4db70e2b87fcc5a3d492d2d6542a408b7"
+    },
+    {
+      "file": "00679.png",
+      "elapsedMs": 33951.5046,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745034,
+      "sha256": "0c037d1aba79bc3ecc0e237bd09d265fd2724ef63abec0d70f3b21b6297ed97d"
+    },
+    {
+      "file": "00680.png",
+      "elapsedMs": 34001.9776,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745111,
+      "sha256": "63169258f102c5194324050a2ff1fd07ff1913259ba05a93d9ce19f5c1373581"
+    },
+    {
+      "file": "00681.png",
+      "elapsedMs": 34051.9487,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745180,
+      "sha256": "5bd936eeaeebab43ee7bd21d8cd5521bb18ff1f2f0b581d31433fb92f397a922"
+    },
+    {
+      "file": "00682.png",
+      "elapsedMs": 34101.8914,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745099,
+      "sha256": "91a0b3d0b05d7cd957b45e1859eb1955eb89dff7202651cddcd2f3cf39749122"
+    },
+    {
+      "file": "00683.png",
+      "elapsedMs": 34151.9365,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744993,
+      "sha256": "aa56f070c994e58635366455e73846de50c07ecbd67d1b526d921f2e1747d6c7"
+    },
+    {
+      "file": "00684.png",
+      "elapsedMs": 34202.1856,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745057,
+      "sha256": "99f1145659bbab58e2e0238dac60f5647261a3f3542f370381904e1dfe2c0ec2"
+    },
+    {
+      "file": "00685.png",
+      "elapsedMs": 34252.2476,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745057,
+      "sha256": "99f1145659bbab58e2e0238dac60f5647261a3f3542f370381904e1dfe2c0ec2"
+    },
+    {
+      "file": "00686.png",
+      "elapsedMs": 34302.6899,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745095,
+      "sha256": "67dc8542a838959e2f860ad88320bc064096b33a1598368c1b9dcd7e4c2fc151"
+    },
+    {
+      "file": "00687.png",
+      "elapsedMs": 34352.5814,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745106,
+      "sha256": "453a0273f6b2f57323c200a12a9a18788dcae4eb5f0aa29a69b07f82bc2b0af2"
+    },
+    {
+      "file": "00688.png",
+      "elapsedMs": 34403.6367,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745007,
+      "sha256": "6f9e2a360a3dc742a372180319aedd8e9d16f521e76b054814e47968fc673e6b"
+    },
+    {
+      "file": "00689.png",
+      "elapsedMs": 34454.0139,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744849,
+      "sha256": "1dd05f8d3738d812666712438549ba2b6b6c82f2c0c3b1477a850c8d4f069c4c"
+    },
+    {
+      "file": "00690.png",
+      "elapsedMs": 34504.1817,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744891,
+      "sha256": "525b9da10f39c30cd4d1151b0a9e4e348e3ea0bffc58268bdd342281e9fb4f73"
+    },
+    {
+      "file": "00691.png",
+      "elapsedMs": 34554.0983,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744921,
+      "sha256": "545483d600c4dabd46c1089ca780346d4b5cf6b4aea36c90add403aa0ae6b6c3"
+    },
+    {
+      "file": "00692.png",
+      "elapsedMs": 34604.1157,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744975,
+      "sha256": "788005e0c393aa2b1f125595a16536da85c9b684391424f62fea2f383d3606c5"
+    },
+    {
+      "file": "00693.png",
+      "elapsedMs": 34654.1699,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744959,
+      "sha256": "72c1c56864ea1392948c02cd1885994243ff626cb9ba7167221af2aea829a1c9"
+    },
+    {
+      "file": "00694.png",
+      "elapsedMs": 34704.0703,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744983,
+      "sha256": "8e8ba899c2f66a73c80a83c8e2b42aee6ec3233fe7873e59316a28da344336ec"
+    },
+    {
+      "file": "00695.png",
+      "elapsedMs": 34754.0735,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744971,
+      "sha256": "732e8aeed52d9f7085628dfd09af21f8897d3e86a4e050ed4671a9ecd92832a7"
+    },
+    {
+      "file": "00696.png",
+      "elapsedMs": 34804.3767,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744987,
+      "sha256": "430d62cc2e18437867425e72f7a5008758a03ceea943743e170075ed2b6078e5"
+    },
+    {
+      "file": "00697.png",
+      "elapsedMs": 34854.6733,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745147,
+      "sha256": "f6bf9a5da3888360438c6ed38527595098b0982527d2375d4c92b5631d9c06a8"
+    },
+    {
+      "file": "00698.png",
+      "elapsedMs": 34904.7921,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745192,
+      "sha256": "b082bebbd96658f248b4cfdeb9ac99e4eb72106a3532d56ae67c74e2de28cd57"
+    },
+    {
+      "file": "00699.png",
+      "elapsedMs": 34955.7071,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745112,
+      "sha256": "0b0c6096a72a5e014befaef969300d89bd96b134c3e399f24cc82d486d5f7b8f"
+    },
+    {
+      "file": "00700.png",
+      "elapsedMs": 35004.6913,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745150,
+      "sha256": "8fddd5e22d043c9f848c65405c5948c66c50df5231347ee3afbc774dab51ddfc"
+    },
+    {
+      "file": "00701.png",
+      "elapsedMs": 35054.44,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744804,
+      "sha256": "a93130e9513e01dcd80f8d92a9177fbe227be7acaef98a4abb35b0db2bd0121d"
+    },
+    {
+      "file": "00702.png",
+      "elapsedMs": 35104.9967,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744861,
+      "sha256": "e96a4054949eef5374b355b1e81efbe707c264e59d15a99a7e4f17c64719ebef"
+    },
+    {
+      "file": "00703.png",
+      "elapsedMs": 35154.4933,
+      "screen": "GimmickEditorScreen",
+      "bytes": 744811,
+      "sha256": "a67c0bf5bad81058c9c226dcd8ab134c2e380eed022a38b24b806a3987e3e951"
+    },
+    {
+      "file": "00704.png",
+      "elapsedMs": 35204.549,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745198,
+      "sha256": "e233d2ee70c69d188d3e80b5d667f4a16d31578fe1a15248a99e087458ecb9cd"
+    },
+    {
+      "file": "00705.png",
+      "elapsedMs": 35254.4097,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745224,
+      "sha256": "633824d38d5e57b855e6f885b245c8d7636c5a241847e1c258b61c79458f8967"
+    },
+    {
+      "file": "00706.png",
+      "elapsedMs": 35318.0547,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745136,
+      "sha256": "f6842659eb59f872b2e00c9375050c954e1ff60488ca70900f6ff9aa7d41477d"
+    },
+    {
+      "file": "00707.png",
+      "elapsedMs": 35350.6924,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745130,
+      "sha256": "c9f09351dd7decb8f9a096d5af1b3170cd21c82b2334ed1a666bdcf88ee74377"
+    },
+    {
+      "file": "00708.png",
+      "elapsedMs": 35400.5832,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745232,
+      "sha256": "270d1aa500b6af3cd9180fe94c446d1a9a032684129c665f54fc8c690070e364"
+    },
+    {
+      "file": "00709.png",
+      "elapsedMs": 35450.5732,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745306,
+      "sha256": "cac9ab0fd8a0ab4c9916b14b8c854ffe505662c91dd107c89151a3a34b38630d"
+    },
+    {
+      "file": "00710.png",
+      "elapsedMs": 35516.4961,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745226,
+      "sha256": "abac354027baf358342da2fb4263c9c467e5e0fcd77ca4a394fcfd341b11b5f3"
+    },
+    {
+      "file": "00711.png",
+      "elapsedMs": 35565.0119,
+      "screen": "GimmickEditorScreen",
+      "bytes": 745502,
+      "sha256": "c03f6486b4341148fc9a7f9dbb799c5380e9ba224d7c9ff82e1956507a6ef359"
+    }
+  ]
+}

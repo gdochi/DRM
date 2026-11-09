@@ -1,0 +1,98 @@
+[
+  {
+    "action": "badge-enable-fixture",
+    "nanoTime": 19674299819600
+  },
+  {
+    "action": "caption:1. Copy the sample set, then give your league and badge a name.",
+    "nanoTime": 19674902055900
+  },
+  {
+    "action": "input-label:Set Name\u003dMeadow League",
+    "nanoTime": 19676108573700
+  },
+  {
+    "action": "input-label:Name\u003dMeadow Badge",
+    "nanoTime": 19678560634600
+  },
+  {
+    "action": "caption:Basic: choose Badge or Trophy, front and back textures, and a description.",
+    "nanoTime": 19681246946700
+  },
+  {
+    "action": "click:Save",
+    "nanoTime": 19684453856200
+  },
+  {
+    "action": "badge-verify",
+    "nanoTime": 19687905465300
+  },
+  {
+    "action": "dump:badge-editor-saved",
+    "nanoTime": 19688508136400
+  },
+  {
+    "action": "off",
+    "nanoTime": 19692160257100
+  },
+  {
+    "action": "caption:2. Acquisition and selection have independent presentations.",
+    "nanoTime": 19693973925300
+  },
+  {
+    "action": "click:Presentation",
+    "nanoTime": 19695150307300
+  },
+  {
+    "action": "click-first:Copy and Edit",
+    "nanoTime": 19699045725300
+  },
+  {
+    "action": "caption:Copy and Edit keeps the shared preset. Name and save your own version.",
+    "nanoTime": 19702259949500
+  },
+  {
+    "action": "input-label:Name\u003dMeadow Shine",
+    "nanoTime": 19702845500100
+  },
+  {
+    "action": "click:Restart",
+    "nanoTime": 19705544867200
+  },
+  {
+    "action": "click:Save",
+    "nanoTime": 19711258429200
+  },
+  {
+    "action": "dump:badge-presentation-saved",
+    "nanoTime": 19714452149900
+  },
+  {
+    "action": "click:Cancel",
+    "nanoTime": 19715652164300
+  },
+  {
+    "action": "click:Save",
+    "nanoTime": 19718353225100
+  },
+  {
+    "action": "badge-verify",
+    "nanoTime": 19721546226900
+  },
+  {
+    "action": "off",
+    "nanoTime": 19724355040800
+  },
+  {
+    "action": "caption:3. Test the saved badge with an operator give command.",
+    "nanoTime": 19726749551700
+  },
+  {
+    "action": "badge-verify",
+    "nanoTime": 19739646366400
+  },
+  {
+    "action": "caption:4. Pokemon Party: choose a slot, then edit its Appearance.",
+    "nanoTime": 19743249255500
+  }
+]

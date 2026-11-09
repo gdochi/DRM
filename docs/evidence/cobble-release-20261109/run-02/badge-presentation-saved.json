@@ -1,0 +1,303 @@
+{
+  "screen": "net.hodu.cobblenpc.client.BadgePresentationEditorScreen",
+  "scale": 1.0,
+  "widgets": [
+    {
+      "class": "StyledButton",
+      "label": "",
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "active": false
+    },
+    {
+      "class": "StyledButton",
+      "label": "",
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "active": false
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Back",
+      "x": 16,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Forward",
+      "x": 42,
+      "y": 16,
+      "width": 20,
+      "active": false
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Editors",
+      "x": 68,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Create New Set",
+      "x": 94,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Load",
+      "x": 120,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Save",
+      "x": 146,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Save Set As Copy",
+      "x": 172,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ToolbarButton",
+      "label": "Reset Draft",
+      "x": 198,
+      "y": 16,
+      "width": 20,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "Template",
+      "x": 24,
+      "y": 64,
+      "width": 61,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "Add",
+      "x": 24,
+      "y": 100,
+      "width": 48,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "Delete",
+      "x": 78,
+      "y": 100,
+      "width": 51,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "Search",
+      "x": 24,
+      "y": 138,
+      "width": 216,
+      "active": true
+    },
+    {
+      "class": "FocusWidget",
+      "label": "Presentation Editor",
+      "x": 24,
+      "y": 200,
+      "width": 216,
+      "active": true
+    },
+    {
+      "class": "",
+      "label": "Play",
+      "x": 256,
+      "y": 470,
+      "width": 24,
+      "active": true
+    },
+    {
+      "class": "",
+      "label": "Pause",
+      "x": 286,
+      "y": 470,
+      "width": 24,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "Restart",
+      "x": 316,
+      "y": 470,
+      "width": 56,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "Cancel",
+      "x": 378,
+      "y": 470,
+      "width": 52,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "Name",
+      "x": 672,
+      "y": 80,
+      "width": 200,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "Duration (ticks)",
+      "x": 672,
+      "y": 124,
+      "width": 82,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "Track Name",
+      "x": 672,
+      "y": 168,
+      "width": 200,
+      "active": true
+    },
+    {
+      "class": "",
+      "label": "Transform",
+      "x": 672,
+      "y": 194,
+      "width": 128,
+      "active": true
+    },
+    {
+      "class": "",
+      "label": "Effect",
+      "x": 804,
+      "y": 194,
+      "width": 128,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "Interpolation",
+      "x": 792,
+      "y": 122,
+      "width": 83,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "Start (ticks)",
+      "x": 672,
+      "y": 242,
+      "width": 104,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "End (ticks)",
+      "x": 792,
+      "y": 242,
+      "width": 104,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "End Pose",
+      "x": 672,
+      "y": 274,
+      "width": 64,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "Add Key",
+      "x": 742,
+      "y": 274,
+      "width": 58,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "X",
+      "x": 672,
+      "y": 326,
+      "width": 104,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "Y",
+      "x": 792,
+      "y": 326,
+      "width": 104,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "Scale",
+      "x": 672,
+      "y": 368,
+      "width": 104,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "Flat Rotation",
+      "x": 792,
+      "y": 368,
+      "width": 104,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "Y-axis Rotation",
+      "x": 672,
+      "y": 410,
+      "width": 104,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "X-axis Tilt",
+      "x": 792,
+      "y": 410,
+      "width": 104,
+      "active": true
+    },
+    {
+      "class": "StyledTextField",
+      "label": "Opacity",
+      "x": 672,
+      "y": 452,
+      "width": 104,
+      "active": true
+    },
+    {
+      "class": "ContentButton",
+      "label": "Duplicate",
+      "x": 672,
+      "y": 486,
+      "width": 63,
+      "active": true
+    }
+  ],
+  "fields": []
+}
