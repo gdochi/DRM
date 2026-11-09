@@ -1,0 +1,80 @@
+[
+  {
+    "id": "badge-create",
+    "editor": "cobble_npc:badges",
+    "actions": [
+      "wait:40",
+      "tutorial:badge-enable-fixture",
+      "tutorial:caption:1. Copy the sample set, then give your league and badge a name.",
+      "gif:start:badge-create",
+      "tutorial:input-label:Set Name=Meadow League",
+      "wait:25",
+      "tutorial:input-label:Name=Meadow Badge",
+      "wait:30",
+      "tutorial:caption:Basic: choose Badge or Trophy, front and back textures, and a description.",
+      "wait:40",
+      "tutorial:click:Save",
+      "wait:45",
+      "tutorial:badge-verify",
+      "tutorial:dump:badge-editor-saved",
+      "snapshot:badge-editor-saved",
+      "wait:25",
+      "gif:stop",
+      "tutorial:off"
+    ]
+  },
+  {
+    "id": "badge-presentation",
+    "screen": "@current",
+    "actions": [
+      "tutorial:caption:2. Acquisition and selection have independent presentations.",
+      "gif:start:badge-presentation",
+      "tutorial:click:Presentation",
+      "wait:30",
+      "snapshot:badge-presentation-bindings",
+      "next-screen:BadgePresentationEditorScreen",
+      "tutorial:click-first:Copy and Edit",
+      "wait:40",
+      "tutorial:caption:Copy and Edit keeps the shared preset. Name and save your own version.",
+      "tutorial:input-label:Name=Meadow Shine",
+      "wait:30",
+      "tutorial:click:Restart",
+      "wait:90",
+      "tutorial:click:Save",
+      "wait:40",
+      "tutorial:dump:badge-presentation-saved",
+      "snapshot:badge-presentation-editor",
+      "tutorial:click:Cancel",
+      "wait:30",
+      "tutorial:click:Save",
+      "wait:40",
+      "tutorial:badge-verify",
+      "wait:20",
+      "gif:stop",
+      "tutorial:off"
+    ]
+  },
+  {
+    "id": "pokemon-alpha",
+    "editor": "cobble_npc:editor",
+    "actions": [
+      "tutorial:caption:4. Pokemon Party: select a Pokemon. Alpha is in Basic.",
+      "gif:start:pokemon-alpha",
+      "wait:30",
+      "Alpha",
+      "wait:35",
+      "tutorial:caption:Alpha uses Cobblemon's native appearance. It is separate from Shiny.",
+      "snapshot:pokemon-alpha",
+      "tutorial:dump:pokemon-alpha-settings",
+      "wait:40",
+      "Save As",
+      "field:jsonName=custom/alpha_trainer.json",
+      "Save",
+      "wait:45",
+      "verify:file=config/dochi_rpg_maker/cobblemon/trainers/custom/alpha_trainer.json",
+      "wait:20",
+      "gif:stop",
+      "tutorial:off"
+    ]
+  }
+]

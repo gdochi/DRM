@@ -75,3 +75,12 @@ tags:
 순차 실행은 대화를 마쳐야 다음 보상으로 넘어갑니다. 대화 취소나 접속 종료로 멈췄다면 다시 NPC와 상호작용해 남은 액션을 이어갑니다. 라운드당 대화 액션은 한 개이며, 예전 파일에 여러 개가 있다면 하나로 정리해야 저장·적용할 수 있습니다.
 
 **General Item Inventory**는 메가 키처럼 소지 여부를 확인하는 아이템을 넣는 곳입니다. 배틀 중 소비하는 **Battle Item Inventory**와 구분합니다. 플레이어 인벤토리에서 복사해 넣은 아이템은 플레이어에게서 차감되지 않습니다.
+
+## Alpha 포켓몬 만들기
+아래는 **0.2.9 배포 JAR**의 실제 화면입니다. **Pokemon Party**에서 한 마리를 고르고 **Basic → Alpha**를 켭니다. **Aspects**에도 Alpha가 표시되고 미리보기의 눈이 붉게 바뀝니다. **Shiny**와는 별도 설정이며, 설치한 Cobblemon이 네이티브 Alpha 기능을 지원해야 합니다.
+
+![Basic에서 Alpha를 켜고 붉은 눈의 이상해씨를 확인한 뒤 내 파일로 저장합니다.](assets/media/guides/cobble-release-20261109/pokemon-alpha.mp4 "Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 · Cobblemon 1.8.4 / NeoForge 1.21.1, 영어 UI. Alpha 설정 → 모델 미리보기 → Save As. NPC Apply나 실제 배틀 완료 영상은 아닙니다.")
+
+**Save As**로 내 프로필을 저장한 뒤 NPC에 처음 연결할 때는 [NPC Apply](#drm-cobblemon-editor/cobblemon-editor-setup)를 진행합니다. 개발 중인 화면의 탭 배열과 다를 수 있으므로 위 영상에서는 **Basic**의 스위치를 찾으세요.
+
+배지 보상은 [배지·트로피](#drm-cobblemon-editor/cobblemon-badges), 기존 RCT 데이터의 변환은 [RCT → DNPC](#drm-cobblemon-editor/cobblemon-rct-conversion)에서 이어집니다.

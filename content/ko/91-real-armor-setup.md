@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: 설치와 설정
 section: setup
 status: Stable
-version: 0.1.5
+version: 0.1.6
 audience: 플레이어와 서버 운영자
 tags:
   - installation
@@ -17,7 +17,7 @@ tags:
 
 ## 설치
 
-Real Armor 0.1.5의 Minecraft·로더에 맞는 파일을 서버와 클라이언트에 넣습니다.
+Real Armor 0.1.6의 Minecraft·로더에 맞는 파일을 서버와 클라이언트에 넣습니다.
 
 | Minecraft | 로더 | Java |
 | --- | --- | --- |

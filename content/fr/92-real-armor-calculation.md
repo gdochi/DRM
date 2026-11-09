@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: calcul armure
 section: calculation
 status: Stable
-version: 0.1.4
+version: 0.1.6
 audience: Opérateurs de serveur et créateurs de modpack
 tags:
   - damage

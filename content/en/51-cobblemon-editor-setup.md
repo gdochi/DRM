@@ -63,3 +63,8 @@ Use `/drm reload` after editing files outside the game.
 | Player-party error | A battle-ready Pokémon is in your party |
 
 Continue with [parties, rounds and rewards](#drm-cobblemon-editor/cobblemon-trainer-editor).
+
+## Watch the battle start
+![Choose battle in the applied trainer's dialogue, watch its entrance and enter an actual battle.](assets/media/guides/runtime-videos-20261106/trainer-battle-start.mp4 "Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 · Cobblemon 1.8.4 / NeoForge 1.21.1, English UI. A prepared example: dialogue → go_battle → presentation → battle screen.")
+
+Once the first battle opens, add a gym goal with [badge rewards](#drm-cobblemon-editor/cobblemon-badges).

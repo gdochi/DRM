@@ -1,0 +1,20 @@
+{
+  "product": "dochi-real-armor",
+  "version": "0.1.2",
+  "projectId": 1567803,
+  "checkedAt": "2026-11-09T14:37:24.791Z",
+  "files": [
+    {
+      "id": 8765025,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_real_armor-0.1.2_neoforge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/8765025",
+      "uploadedAt": "2026-08-29T22:53:20.15Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/8765025",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/8765025/change-log",
+      "html": "<h1>Dochi Real Armor 0.1.1</h1>\n<h2>Changed</h2>\n<ul>\n<li>Renamed the project from <strong>CNPC Real Armor</strong> to <strong>Dochi Real Armor</strong>.</li>\n<li>Changed the mod ID and command root from <code>cnpc_real_armor</code> to <code>dochi_real_armor</code>.</li>\n<li>Updated the jar name, resource namespace, mixin configuration, and common config name.</li>\n<li>Reworked the config UI with DRM-style sections, non-overlapping labels, centered text, and ON/OFF switches.</li>\n</ul>\n<h2>Added</h2>\n<ul>\n<li>Easy NPC support with an independent enable switch.</li>\n<li>Shared vanilla-style armor, toughness, Protection enchantment, knockback-resistance, and durability handling for CustomNPCs and Easy NPC.</li>\n<li>Optional head, chest, and legs hit-region armor; legs use leggings and boots.</li>\n<li>Dochi RPG Maker Mods Config integration and a matching standalone config screen.</li>\n<li>English, Korean, Russian, Japanese, and Simplified Chinese UI translations.</li>\n<li>Permission-checked server config synchronization.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Armor is now calculated whether debug messages are ON or OFF.</li>\n</ul>\n<h2>Commands</h2>\n<ul>\n<li><code>/dochi_real_armor status</code></li>\n<li><code>/dochi_real_armor split true|false</code></li>\n<li><code>/dochi_real_armor durability true|false</code></li>\n<li><code>/dochi_real_armor debug true|false</code></li>\n</ul>\n"
+    }
+  ]
+}

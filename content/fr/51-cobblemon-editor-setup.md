@@ -65,3 +65,8 @@ Utilisez `/drm reload` après avoir modifié les fichiers en dehors du jeu.
 | Erreur joueur-équipe | Un Pokémon prêt au combat est dans votre équipe |
 
 Poursuivez avec [équipes, rondes et récompenses](#drm-cobblemon-editor/cobblemon-trainer-editor).
+
+## Voir le début du combat
+![Choisir le combat dans le dialogue appliqué, voir l'entrée et rejoindre le vrai combat.](assets/media/guides/runtime-videos-20261106/trainer-battle-start.mp4 "Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 · Cobblemon 1.8.4 / NeoForge 1.21.1, anglais. Exemple préparé : dialogue → go_battle → présentation → combat.")
+
+Après le premier combat, ajoutez un objectif d'arène avec les [récompenses de badges](#drm-cobblemon-editor/cobblemon-badges).

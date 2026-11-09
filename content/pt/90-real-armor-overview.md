@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: Visão geral
 section: overview
 status: Estável
-version: 0.1.5
+version: 0.1.6
 audience: Jogadores, operadores de servidores e criadores de modpacks
 tags:
   - armor
@@ -16,6 +16,9 @@ tags:
 translationSource: en
 translationMethod: assisted
 ---
+
+## Atualize para 0.1.6
+A versão pública atual é **0.1.6**. Melhora os botões de configuração, o foco após respostas do servidor e o tratamento de conflitos ao salvar. Salvar um conjunto não o ativa: conclua **Save → confirmação de Apply**. As capturas anteriores de 0.1.4 e 0.1.5 mantêm suas versões nas legendas.
 
 ## Tornar os NPCs blindados mais resistentes.
 

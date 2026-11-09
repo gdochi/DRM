@@ -1,11 +1,25 @@
 {
-  "checkedAt": "2026-11-05T14:55:36.705Z",
+  "checkedAt": "2026-11-09T14:37:24.791Z",
   "projects": [
     {
       "product": "core",
       "projectId": 1575859,
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker",
       "files": [
+        {
+          "id": 9487324,
+          "version": "0.3.1",
+          "name": "dochi_rpg_maker-0.3.1-1.20.1-forge.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-rpg-maker/files/9487324",
+          "uploadedAt": "2026-11-07T06:12:09.913Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1"
+        },
         {
           "id": 9378110,
           "version": "0.3.0",
@@ -252,6 +266,34 @@
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker",
       "files": [
         {
+          "id": 9487335,
+          "version": "0.3.1",
+          "name": "dochi_rpg_maker-0.3.1-fabric-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9487335",
+          "uploadedAt": "2026-11-07T06:14:00.677Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3"
+        },
+        {
+          "id": 9487329,
+          "version": "0.3.1",
+          "name": "dochi_rpg_maker-0.3.1-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/fabric-dochi-rpg-maker/files/9487329",
+          "uploadedAt": "2026-11-07T06:13:21.477Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
           "id": 9378098,
           "version": "0.3.0",
           "name": "dochi_rpg_maker-0.3.0-fabric-26.3.jar",
@@ -497,6 +539,76 @@
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core",
       "files": [
         {
+          "id": 9509831,
+          "version": "0.1.3",
+          "name": "dochi_npc_core-0.1.3-fabric-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9509831",
+          "uploadedAt": "2026-11-08T13:30:45.05Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3"
+        },
+        {
+          "id": 9509825,
+          "version": "0.1.3",
+          "name": "dochi_npc_core-0.1.3-neoforge-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9509825",
+          "uploadedAt": "2026-11-08T13:30:19.513Z",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3"
+        },
+        {
+          "id": 9509817,
+          "version": "0.1.3",
+          "name": "dochi_npc_core-0.1.3-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9509817",
+          "uploadedAt": "2026-11-08T13:29:41.57Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
+          "id": 9509811,
+          "version": "0.1.3",
+          "name": "dochi_npc_core-0.1.3-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9509811",
+          "uploadedAt": "2026-11-08T13:29:02.953Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
+          "id": 9509804,
+          "version": "0.1.3",
+          "name": "dochi_npc_core-0.1.3-forge-1.20.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-npc-core/files/9509804",
+          "uploadedAt": "2026-11-08T13:28:20.067Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1"
+        },
+        {
           "id": 9383998,
           "version": "0.1.2",
           "name": "dochi_npc_core-0.1.2-neoforge-26.3.jar",
@@ -685,6 +797,34 @@
       "projectId": 1614833,
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor",
       "files": [
+        {
+          "id": 9505221,
+          "version": "0.2.9",
+          "name": "dochi_cobblemon_editor-0.2.9-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9505221",
+          "uploadedAt": "2026-11-08T05:04:55.663Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
+          "id": 9505207,
+          "version": "0.2.9",
+          "name": "dochi_cobblemon_editor-0.2.9-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/drm-cobblemon-editor/files/9505207",
+          "uploadedAt": "2026-11-08T05:03:36.17Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
         {
           "id": 9378028,
           "version": "0.2.8",
@@ -1302,6 +1442,48 @@
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare",
       "files": [
         {
+          "id": 9509897,
+          "version": "0.3.2",
+          "name": "dochi_warfare-0.3.2-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/9509897",
+          "uploadedAt": "2026-11-08T13:35:42.283Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
+          "id": 9486296,
+          "version": "0.3.2",
+          "name": "dochi_warfare-0.3.2-forge-1.20.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/9486296",
+          "uploadedAt": "2026-11-07T04:21:49.077Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1"
+        },
+        {
+          "id": 9486287,
+          "version": "0.3.2",
+          "name": "dochi_warfare-0.3.2-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/9486287",
+          "uploadedAt": "2026-11-07T04:21:03.88Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
           "id": 9384015,
           "version": "0.3.1",
           "name": "dochi_warfare-0.3.1-neoforge-1.21.1.jar",
@@ -1426,6 +1608,20 @@
             "Server"
           ],
           "minecraft": "1.20.1"
+        },
+        {
+          "id": 8769931,
+          "version": "0.2.5",
+          "name": "dochi_warfare-0.2.5_neoforge.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8769931",
+          "uploadedAt": "2026-08-30T14:27:12.393Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
         },
         {
           "id": 8731711,
@@ -1995,6 +2191,146 @@
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor",
       "files": [
         {
+          "id": 9505191,
+          "version": "0.1.6",
+          "name": "dochi_real_armor-0.1.6-fabric-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505191",
+          "uploadedAt": "2026-11-08T05:02:34.53Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3"
+        },
+        {
+          "id": 9505188,
+          "version": "0.1.6",
+          "name": "dochi_real_armor-0.1.6-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505188",
+          "uploadedAt": "2026-11-08T05:02:03.937Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
+          "id": 9505178,
+          "version": "0.1.6",
+          "name": "dochi_real_armor-0.1.6-neoforge-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505178",
+          "uploadedAt": "2026-11-08T05:01:20.88Z",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3"
+        },
+        {
+          "id": 9505174,
+          "version": "0.1.6",
+          "name": "dochi_real_armor-0.1.6-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505174",
+          "uploadedAt": "2026-11-08T05:00:47.93Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
+          "id": 9505112,
+          "version": "0.1.6",
+          "name": "dochi_real_armor-0.1.6-forge-1.20.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505112",
+          "uploadedAt": "2026-11-08T04:50:02.307Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1"
+        },
+        {
+          "id": 9490109,
+          "version": "0.1.5",
+          "name": "dochi_real_armor-0.1.5-forge-1.20.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490109",
+          "uploadedAt": "2026-11-07T10:57:06.83Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1"
+        },
+        {
+          "id": 9490092,
+          "version": "0.1.5",
+          "name": "dochi_real_armor-0.1.5-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490092",
+          "uploadedAt": "2026-11-07T10:56:00.913Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
+          "id": 9490085,
+          "version": "0.1.5",
+          "name": "dochi_real_armor-0.1.5-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490085",
+          "uploadedAt": "2026-11-07T10:55:30.28Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
+          "id": 9490067,
+          "version": "0.1.5",
+          "name": "dochi_real_armor-0.1.5-fabric-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490067",
+          "uploadedAt": "2026-11-07T10:54:51.15Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3"
+        },
+        {
+          "id": 9490028,
+          "version": "0.1.5",
+          "name": "dochi_real_armor-0.1.5-neoforge-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490028",
+          "uploadedAt": "2026-11-07T10:54:18.793Z",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3"
+        },
+        {
           "id": 9342433,
           "version": "0.1.4",
           "name": "dochi_real_armor-0.1.4-neoforge-26.3.jar",
@@ -2098,6 +2434,20 @@
           "name": "dochi_real_armor-0.1.3-neoforge-1.21.1.jar",
           "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9223560",
           "uploadedAt": "2026-10-17T13:39:37.863Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
+          "id": 8765025,
+          "version": "0.1.2",
+          "name": "dochi_real_armor-0.1.2_neoforge.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/8765025",
+          "uploadedAt": "2026-08-29T22:53:20.15Z",
           "versions": [
             "Client",
             "1.21.1",
@@ -2568,6 +2918,76 @@
       "projectId": 1738703,
       "projectUrl": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration",
       "files": [
+        {
+          "id": 9487293,
+          "version": "0.1.3",
+          "name": "dochi_mapicon_integration-0.1.3-forge-1.20.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9487293",
+          "uploadedAt": "2026-11-07T06:08:00.687Z",
+          "versions": [
+            "Client",
+            "1.20.1",
+            "Forge",
+            "Server"
+          ],
+          "minecraft": "1.20.1"
+        },
+        {
+          "id": 9487285,
+          "version": "0.1.3",
+          "name": "dochi_mapicon_integration-0.1.3-fabric-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9487285",
+          "uploadedAt": "2026-11-07T06:07:15.16Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "1.21.1",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
+          "id": 9487283,
+          "version": "0.1.3",
+          "name": "dochi_mapicon_integration-0.1.3-neoforge-1.21.1.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9487283",
+          "uploadedAt": "2026-11-07T06:06:36.55Z",
+          "versions": [
+            "Client",
+            "1.21.1",
+            "NeoForge",
+            "Server"
+          ],
+          "minecraft": "1.21.1"
+        },
+        {
+          "id": 9487274,
+          "version": "0.1.3",
+          "name": "dochi_mapicon_integration-0.1.3-fabric-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9487274",
+          "uploadedAt": "2026-11-07T06:05:48.567Z",
+          "versions": [
+            "Client",
+            "Fabric",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3"
+        },
+        {
+          "id": 9487255,
+          "version": "0.1.3",
+          "name": "dochi_mapicon_integration-0.1.3-neoforge-26.3.jar",
+          "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-s-mapicon-integration/files/9487255",
+          "uploadedAt": "2026-11-07T06:04:59.14Z",
+          "versions": [
+            "Client",
+            "NeoForge",
+            "Server",
+            "26.3"
+          ],
+          "minecraft": "26.3"
+        },
         {
           "id": 9348627,
           "version": "0.1.2",

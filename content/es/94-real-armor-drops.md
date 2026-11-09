@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: Drops de objetos
 section: drops
 status: Estable
-version: 0.1.5
+version: 0.1.6
 audience: Operadores de servidores y autores de modpacks
 tags:
   - armor

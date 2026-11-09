@@ -15,6 +15,16 @@ tags:
   - overview
 ---
 
+## 0.2.9 새 기능과 따라 할 영상
+| 하고 싶은 일 | 안내 |
+| --- | --- |
+| 체육관 배지·트로피를 만들고 지급하기 | [배지 제작과 보유 조건](#drm-cobblemon-editor/cobblemon-badges) |
+| 획득 알림·배지함 선택 연출 꾸미기 | [배지 연출과 GUI](#drm-cobblemon-editor/cobblemon-badge-presentations) |
+| 기존 RCT 트레이너를 DNPC로 바꾸기 | [RCT 변환](#drm-cobblemon-editor/cobblemon-rct-conversion) |
+| Alpha 포켓몬과 능력치 정하기 | [파티 설정 영상](#drm-cobblemon-editor/cobblemon-trainer-editor) |
+
+![샘플을 복사한 배지 세트의 이름을 바꾸고 서버에 저장하는 짧은 영상.](assets/media/guides/cobble-release-20261109/badge-create.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1 영어 UI. 아래 배지 안내에서 기능 켜기·복사·보상 연결까지 따라 할 수 있습니다.")
+
 ## 어떤 NPC를 만들까요?
 
 | 만들 것 | 사용할 도구 |

@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: Comandos y solución de problemas
 section: operations
 status: Estable
-version: 0.1.4
+version: 0.1.6
 audience: Operadores de servidores y creadores de modpack
 tags:
   - commands

@@ -189,18 +189,58 @@ export async function loadChangelogs(directory, published) {
         continue;
       }
       const ids = new Set();
+      const authored = release.authorNotes;
+      if (authored && (authored.source !== 'author' || authored.product !== release.product
+          || authored.version !== release.version || authored.projectId !== project.projectId
+          || !authored.html?.trim() || !Number.isFinite(Date.parse(authored.publishedAt))
+          || !Array.isArray(authored.environments))) throw new Error(`Invalid linked author notes: ${folder}/${filename}`);
+      const authorEnvironments = new Set();
+      for (const environment of authored?.environments || []) {
+        const key = `${environment.loader}/${environment.minecraft}`;
+        if (!['Forge', 'NeoForge', 'Fabric'].includes(environment.loader)
+            || !/^\d+\.\d+(?:\.\d+)?$/.test(environment.minecraft) || authorEnvironments.has(key)) {
+          throw new Error(`Invalid linked author environment: ${release.product}/${release.version}/${key}`);
+        }
+        authorEnvironments.add(key);
+      }
       for (const file of release.files) {
         const verified = project.files.find(item => item.id === file.id && item.version === release.version);
         if (!verified || file.status !== 4 || !verified.versions.includes(file.loader) || verified.minecraft !== file.minecraft || verified.url !== file.url || ids.has(file.id)) throw new Error(`Unverified changelog environment/file: ${release.product}/${release.version}/${file.id}`);
         ids.add(file.id);
+        const body = publicNoteBody(file, authored);
         releases.push({
           product: release.product, version: release.version, loader: file.loader, minecraft: file.minecraft,
           id: file.id, url: file.url, uploadedAt: file.uploadedAt,
-          html: scopedNotes(file.html, file.loader, file.minecraft)
+          html: body
         });
+      }
+      // Preserve explicitly published author records for environments whose files
+      // are not uploaded yet. They remain author records with no download URL.
+      for (const environment of authored?.environments || []) {
+        if (release.files.some(file => file.loader === environment.loader && file.minecraft === environment.minecraft)) continue;
+        releases.push({ product: release.product, version: release.version, loader: environment.loader, minecraft: environment.minecraft,
+          source: 'author', publishedAt: authored.publishedAt, url: '', uploadedAt: '',
+          html: scopedNotes(authored.html, environment.loader, environment.minecraft, { inferItemPlatforms: false, preserveSubcategories: /^###### /m.test(authored.markdown || '') }) });
       }
     }
   }
   if (releases.filter(release => release.source !== 'author').length !== published.projects.reduce((count, project) => count + project.files.length, 0)) throw new Error('Missing public changelog files');
   return releases;
+}
+
+export function publicNoteBody(file, authored) {
+  // CurseForge linkout URLs can encode the destination twice. Only use an
+  // existing author record when the entire note is a link back to this wiki.
+  let decoded = file.html;
+  for (let i = 0; i < 2; i++) try { decoded = decodeURIComponent(decoded); } catch { break; }
+  const text = parse(file.html).children.map(textOf).join(' ').replace(/\s+/g, ' ').trim();
+  const wikiLinkOnly = /https:\/\/gdochi\.github\.io\/DRM\//i.test(decoded)
+    && /^(?:\d+\.\d+\.\d+\s+Change Log\s+)?View Change Log$/i.test(text);
+  if (wikiLinkOnly) {
+    if (!authored?.environments.some(env => env.loader === file.loader && env.minecraft === file.minecraft)) {
+      throw new Error(`Wiki-linked public notes need matching author text: ${file.id}/${file.loader}/${file.minecraft}`);
+    }
+    return scopedNotes(authored.html, file.loader, file.minecraft, { inferItemPlatforms: false, preserveSubcategories: /^###### /m.test(authored.markdown || '') });
+  }
+  return scopedNotes(file.html, file.loader, file.minecraft);
 }

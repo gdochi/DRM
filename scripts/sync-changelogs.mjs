@@ -47,6 +47,10 @@ for (const [key, release] of collected) {
   const project = index.projects.find(project => project.product === release.product);
   const expected = project.files.filter(file => file.version === release.version);
   if (release.files.length !== expected.length) continue;
+  try {
+    const previous = JSON.parse(await readFile(path.join(directory, `${key}.json`), 'utf8'));
+    if (previous.authorNotes) release.authorNotes = previous.authorNotes;
+  } catch (error) { if (error.code !== 'ENOENT') throw error; }
   release.files.sort((a,b) => a.id - b.id);
   await mkdir(path.join(directory, release.product), { recursive: true });
   await writeFile(path.join(directory, `${key}.json`), JSON.stringify(release, null, 2) + '\n');

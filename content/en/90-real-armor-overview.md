@@ -7,13 +7,16 @@ product: dochi-real-armor
 category: Overview
 section: overview
 status: Stable
-version: 0.1.5
+version: 0.1.6
 audience: Players, server operators, and modpack creators
 tags:
   - armor
   - customnpcs
   - easy npc
 ---
+
+## Updating to 0.1.6
+The current public release is **0.1.6**. It improves setting switches, focus after server replies and conflicting-save handling. Saving a drop set does not activate it: complete **Save → Apply confirmation**. The earlier 0.1.4 and 0.1.5 recordings below retain their capture versions in captions.
 
 ## Make armored NPCs tougher
 

@@ -7,13 +7,16 @@ product: dochi-real-armor
 category: 개요
 section: overview
 status: Stable
-version: 0.1.5
+version: 0.1.6
 audience: 플레이어, 서버 운영자, 모드팩 제작자
 tags:
   - armor
   - customnpcs
   - easy npc
 ---
+
+## 0.1.6으로 업데이트할 때
+현재 공개 버전은 **0.1.6**입니다. 설정 스위치·서버 응답 후 포커스와 저장 충돌 처리가 개선되었습니다. 드롭 세트는 저장만으로 활성화되지 않으므로 **Save → Apply 확인**까지 진행하세요. 아래 0.1.4·0.1.5 촬영 자료는 촬영 버전을 캡션에 표시했습니다.
 
 ## 갑옷을 입힌 NPC를 더 튼튼하게
 

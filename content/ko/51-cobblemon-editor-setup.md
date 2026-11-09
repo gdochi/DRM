@@ -63,3 +63,8 @@ tags:
 | 플레이어 파티 오류 | 싸울 수 있는 포켓몬이 파티에 있는지 |
 
 [파티·라운드·보상 설정](#drm-cobblemon-editor/cobblemon-trainer-editor)으로 이어가세요.
+
+## 영상으로 배틀 시작 흐름 확인하기
+![적용한 트레이너의 대화에서 배틀을 선택하고 등장 연출을 거쳐 실제 배틀에 들어갑니다.](assets/media/guides/runtime-videos-20261106/trainer-battle-start.mp4 "Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 · Cobblemon 1.8.4 / NeoForge 1.21.1, 영어 UI. 미리 적용한 예제의 대화 → go_battle → 연출 → 배틀 화면입니다.")
+
+첫 배틀이 열리면 [배지 보상 만들기](#drm-cobblemon-editor/cobblemon-badges)로 체육관의 목표를 추가해 보세요.

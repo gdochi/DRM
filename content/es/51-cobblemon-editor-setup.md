@@ -65,3 +65,8 @@ Usa `/drm reload` después de editar archivos fuera del juego.
 | Error del jugador-equipo | Un Pokémon listo para la batalla está en tu equipo |
 
 Continuar con [equipos, rondas y recompensas](#drm-cobblemon-editor/cobblemon-trainer-editor).
+
+## Mira cómo empieza la batalla
+![Elige luchar en el diálogo aplicado, observa la entrada y accede a la batalla real.](assets/media/guides/runtime-videos-20261106/trainer-battle-start.mp4 "Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 · Cobblemon 1.8.4 / NeoForge 1.21.1, inglés. Ejemplo preparado: diálogo → go_battle → presentación → batalla.")
+
+Tras abrir la primera batalla, añade un objetivo de gimnasio con [recompensas de medallas](#drm-cobblemon-editor/cobblemon-badges).

@@ -55,6 +55,7 @@ def main():
     parser.add_argument("--timeout-seconds", type=int, default=480, help="Bound the complete capture; longer lessons remain one owned client")
     parser.add_argument("--seed-hud-from", help="Copy the GUI-saved guide_hud and activation file from an owned capture run to verify startup loading")
     parser.add_argument("--npc-mod", default=str(DESKTOP / "[COMMON] Dochi`s Npc Core/jar/dochi_npc_core-0.1.3-neoforge-1.21.1.jar"), help="Exact DNPC production JAR; its hash is retained in the environment receipt")
+    parser.add_argument("--core-mod", default=str(DESKTOP / "[COMMON] DRM/jar/dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar"), help="Exact DRM production JAR; use the published version for release tutorials")
     args = parser.parse_args()
     if not 30 <= args.timeout_seconds <= 1800:
         raise ValueError("Capture timeout must be between 30 and 1800 seconds")
@@ -88,7 +89,7 @@ def main():
             seeded.append({"source": str(source), "relative": relative.as_posix(), "sha256": hashlib.sha256(source.read_bytes()).hexdigest()})
     installed_mods = PRISM / "instances/1.21.1(2)/minecraft/mods"
     mods = [
-        DESKTOP / "[COMMON] DRM/jar/dochi_rpg_maker-0.3.1-neoforge-1.21.1.jar",
+        Path(args.core_mod),
         Path(args.npc_mod),
         installed_mods / "geckolib-neoforge-1.21.1-4.9.2.jar",
         installed_mods / "architectury-13.0.11-neoforge.jar",

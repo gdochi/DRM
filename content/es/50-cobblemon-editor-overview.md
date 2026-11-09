@@ -17,6 +17,16 @@ translationSource: en
 translationMethod: assisted
 ---
 
+## Novedades de 0.2.9: sigue los vídeos
+| Objetivo | Guía |
+| --- | --- |
+| Crear y entregar medallas o trofeos | [Medallas y condiciones de posesión](#drm-cobblemon-editor/cobblemon-badges) |
+| Personalizar efectos de obtención y selección | [Presentaciones y GUI](#drm-cobblemon-editor/cobblemon-badge-presentations) |
+| Convertir entrenadores RCT a DNPC | [Conversión RCT](#drm-cobblemon-editor/cobblemon-rct-conversion) |
+| Configurar Pokémon Alpha y estadísticas | [Vídeo del equipo](#drm-cobblemon-editor/cobblemon-trainer-editor) |
+
+![Renombra una copia del conjunto de ejemplo y guarda en el servidor.](assets/media/guides/cobble-release-20261109/badge-create.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1, inglés. La guía explica activación, copia y recompensas.")
+
 ## ¿Qué te gustaría hacer?
 
 | Objetivo | Herramienta |

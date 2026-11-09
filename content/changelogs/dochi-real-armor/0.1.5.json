@@ -2,30 +2,98 @@
   "product": "dochi-real-armor",
   "version": "0.1.5",
   "projectId": 1567803,
-  "source": "author",
-  "publishedAt": "2026-11-07T10:34:41.953037+00:00",
-  "environments": [
+  "checkedAt": "2026-11-09T14:37:24.791Z",
+  "files": [
     {
+      "id": 9490028,
+      "loader": "NeoForge",
+      "minecraft": "26.3",
+      "name": "dochi_real_armor-0.1.5-neoforge-26.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490028",
+      "uploadedAt": "2026-11-07T10:54:18.793Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490028",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490028/change-log",
+      "html": "<h1>0.1.5 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fNeoForge%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+    },
+    {
+      "id": 9490067,
+      "loader": "Fabric",
+      "minecraft": "26.3",
+      "name": "dochi_real_armor-0.1.5-fabric-26.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490067",
+      "uploadedAt": "2026-11-07T10:54:51.15Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490067",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490067/change-log",
+      "html": "<h1>0.1.5 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fFabric%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+    },
+    {
+      "id": 9490085,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_real_armor-0.1.5-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490085",
+      "uploadedAt": "2026-11-07T10:55:30.28Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490085",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490085/change-log",
+      "html": "<h1>0.1.5 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fNeoForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+    },
+    {
+      "id": 9490092,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_real_armor-0.1.5-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490092",
+      "uploadedAt": "2026-11-07T10:56:00.913Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490092",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490092/change-log",
+      "html": "<h1>0.1.5 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fFabric\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+    },
+    {
+      "id": 9490109,
       "loader": "Forge",
-      "minecraft": "1.20.1"
-    },
-    {
-      "loader": "Fabric",
-      "minecraft": "1.21.1"
-    },
-    {
-      "loader": "NeoForge",
-      "minecraft": "1.21.1"
-    },
-    {
-      "loader": "Fabric",
-      "minecraft": "26.3"
-    },
-    {
-      "loader": "NeoForge",
-      "minecraft": "26.3"
+      "minecraft": "1.20.1",
+      "name": "dochi_real_armor-0.1.5-forge-1.20.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9490109",
+      "uploadedAt": "2026-11-07T10:57:06.83Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490109",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9490109/change-log",
+      "html": "<h1>0.1.5 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
     }
   ],
-  "markdown": "## 리얼아머\n### 0.1.5 Change Log\n#### Global\n##### Added\n* Added armor stat source selection with server confirmation.\n* Added configurable armor material drops with per-item probabilities and quantity ranges.\n* Added an independent Armor Drop Editor matching DRM layouts, with previews and presets.\n##### Fixed\n* Fixed configuration switches flashing and losing focus after clicks or server acknowledgements.\n* Fixed negative and percentage armor modifiers across equipped items.\n* Fixed durability loss on Elytra and armor resistant to fire.\n* Fixed duplicate toolbar hover text and widely spaced flyout buttons.\n##### Changed\n* Removed unverified version limits for optional NPC integrations.\n* Changed armor sets to save separately and activate through a single Apply selection.\n* Changed standalone settings to use embedded DRM-style categories and controls.\n* Changed armor drop controls by removing the global enable switch, Close, and hit playback.\n##### Improved\n* Improved drop list readability with separate item, chance, and quantity columns.\n* Improved setting availability when connected to older servers.\n#### Forge 1.20.1 / Fabric & NeoForge 1.21.1\n##### Added\n* Added configuration controls for the CustomNPCs resistance order.\n#### Fabric 1.21.1 / Fabric 26.3\n##### Fixed\n* Fixed failed configuration saves reporting success instead of restoring previous values.\n#### Forge 1.20.1 / NeoForge 1.21.1 & 26.3\n##### Added\n* Added Curios slot defense calculations for DNPC only, including body-part armor.\n",
-  "html": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added armor stat source selection with server confirmation.</li>\n<li>Added configurable armor material drops with per-item probabilities and quantity ranges.</li>\n<li>Added an independent Armor Drop Editor matching DRM layouts, with previews and presets.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed configuration switches flashing and losing focus after clicks or server acknowledgements.</li>\n<li>Fixed negative and percentage armor modifiers across equipped items.</li>\n<li>Fixed durability loss on Elytra and armor resistant to fire.</li>\n<li>Fixed duplicate toolbar hover text and widely spaced flyout buttons.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Removed unverified version limits for optional NPC integrations.</li>\n<li>Changed armor sets to save separately and activate through a single Apply selection.</li>\n<li>Changed standalone settings to use embedded DRM-style categories and controls.</li>\n<li>Changed armor drop controls by removing the global enable switch, Close, and hit playback.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved drop list readability with separate item, chance, and quantity columns.</li>\n<li>Improved setting availability when connected to older servers.</li>\n</ul>\n<h4>Forge 1.20.1 / Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added configuration controls for the CustomNPCs resistance order.</li>\n</ul>\n<h4>Fabric 1.21.1 / Fabric 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed failed configuration saves reporting success instead of restoring previous values.</li>\n</ul>\n<h4>Forge 1.20.1 / NeoForge 1.21.1 &amp; 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added Curios slot defense calculations for DNPC only, including body-part armor.</li>\n</ul>"
+  "authorNotes": {
+    "product": "dochi-real-armor",
+    "version": "0.1.5",
+    "projectId": 1567803,
+    "source": "author",
+    "publishedAt": "2026-11-07T10:34:41.953037+00:00",
+    "environments": [
+      {
+        "loader": "Forge",
+        "minecraft": "1.20.1"
+      },
+      {
+        "loader": "Fabric",
+        "minecraft": "1.21.1"
+      },
+      {
+        "loader": "NeoForge",
+        "minecraft": "1.21.1"
+      },
+      {
+        "loader": "Fabric",
+        "minecraft": "26.3"
+      },
+      {
+        "loader": "NeoForge",
+        "minecraft": "26.3"
+      }
+    ],
+    "markdown": "## 리얼아머\n### 0.1.5 Change Log\n#### Global\n##### Added\n* Added armor stat source selection with server confirmation.\n* Added configurable armor material drops with per-item probabilities and quantity ranges.\n* Added an independent Armor Drop Editor matching DRM layouts, with previews and presets.\n##### Fixed\n* Fixed configuration switches flashing and losing focus after clicks or server acknowledgements.\n* Fixed negative and percentage armor modifiers across equipped items.\n* Fixed durability loss on Elytra and armor resistant to fire.\n* Fixed duplicate toolbar hover text and widely spaced flyout buttons.\n##### Changed\n* Removed unverified version limits for optional NPC integrations.\n* Changed armor sets to save separately and activate through a single Apply selection.\n* Changed standalone settings to use embedded DRM-style categories and controls.\n* Changed armor drop controls by removing the global enable switch, Close, and hit playback.\n##### Improved\n* Improved drop list readability with separate item, chance, and quantity columns.\n* Improved setting availability when connected to older servers.\n#### Forge 1.20.1 / Fabric & NeoForge 1.21.1\n##### Added\n* Added configuration controls for the CustomNPCs resistance order.\n#### Fabric 1.21.1 / Fabric 26.3\n##### Fixed\n* Fixed failed configuration saves reporting success instead of restoring previous values.\n#### Forge 1.20.1 / NeoForge 1.21.1 & 26.3\n##### Added\n* Added Curios slot defense calculations for DNPC only, including body-part armor.\n",
+    "html": "<h3>0.1.5 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added armor stat source selection with server confirmation.</li>\n<li>Added configurable armor material drops with per-item probabilities and quantity ranges.</li>\n<li>Added an independent Armor Drop Editor matching DRM layouts, with previews and presets.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed configuration switches flashing and losing focus after clicks or server acknowledgements.</li>\n<li>Fixed negative and percentage armor modifiers across equipped items.</li>\n<li>Fixed durability loss on Elytra and armor resistant to fire.</li>\n<li>Fixed duplicate toolbar hover text and widely spaced flyout buttons.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Removed unverified version limits for optional NPC integrations.</li>\n<li>Changed armor sets to save separately and activate through a single Apply selection.</li>\n<li>Changed standalone settings to use embedded DRM-style categories and controls.</li>\n<li>Changed armor drop controls by removing the global enable switch, Close, and hit playback.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved drop list readability with separate item, chance, and quantity columns.</li>\n<li>Improved setting availability when connected to older servers.</li>\n</ul>\n<h4>Forge 1.20.1 / Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added configuration controls for the CustomNPCs resistance order.</li>\n</ul>\n<h4>Fabric 1.21.1 / Fabric 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed failed configuration saves reporting success instead of restoring previous values.</li>\n</ul>\n<h4>Forge 1.20.1 / NeoForge 1.21.1 &amp; 26.3</h4>\n<h5>Added</h5>\n<ul>\n<li>Added Curios slot defense calculations for DNPC only, including body-part armor.</li>\n</ul>"
+  }
 }

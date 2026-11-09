@@ -48,7 +48,7 @@ final class GuideTutorials {
     }
 
     private static double scale(Screen screen)throws Exception{
-        try{return ((Number)call(screen,"renderScale")).doubleValue();}catch(NoSuchMethodException ignored){return 1;}
+        try{return ((Number)call(screen,"renderScale")).doubleValue();}catch(NoSuchMethodException ignored){try{return ((Number)call(screen,"scale")).doubleValue();}catch(NoSuchMethodException absent){return 1;}}
     }
     private static String label(Object value){return value instanceof Component c?c.getString():String.valueOf(value);}
     private static void point(double x,double y){pointerX=x;pointerY=y;clickUntil=System.nanoTime()+900_000_000L;}
@@ -112,6 +112,26 @@ final class GuideTutorials {
             }).get(5,java.util.concurrent.TimeUnit.SECONDS);return;
         }
         if(command.startsWith("click:")){button(s,command.substring(6));return;}
+        if(command.startsWith("click-first:")){
+            String wanted=command.substring(12);double z=scale(s);
+            for(Object child:s.children())if(child instanceof AbstractWidget b&&b.visible&&b.active&&b.getMessage().getString().equals(wanted)){click(s,(b.getX()+b.getWidth()/2d)*z,(b.getY()+b.getHeight()/2d)*z);return;}
+            throw new IllegalStateException("Visible tutorial button absent: "+wanted);
+        }
+        if(command.startsWith("input-label:")){
+            String[] pair=command.substring(12).split("=",2);double z=scale(s);
+            for(Object child:s.children())if(child instanceof net.minecraft.client.gui.components.EditBox w&&w.visible&&w.active&&w.getMessage().getString().equals(pair[0])){
+                click(s,(w.getX()+w.getWidth()/2d)*z,(w.getY()+8)*z);w.setValue("");for(char c:pair[1].toCharArray())if(!s.charTyped(c,0))throw new IllegalStateException("Tutorial character rejected");
+                if(!pair[1].equals(w.getValue()))throw new IllegalStateException("Tutorial value mismatch");return;
+            }
+            throw new IllegalStateException("Visible tutorial text field absent: "+pair[0]);
+        }
+        if(command.equals("badge-enable-fixture")){
+            mc.getSingleplayerServer().submit(()->{try{call(Class.forName("net.hodu.cobblenpc.badge.BadgeFeature"),"set",mc.getSingleplayerServer(),true);return true;}catch(Exception e){throw new RuntimeException(e);}}).get(5,java.util.concurrent.TimeUnit.SECONDS);return;
+        }
+        if(command.equals("badge-verify")){
+            JsonObject report=mc.getSingleplayerServer().submit(()->{try{var player=mc.getSingleplayerServer().getPlayerList().getPlayer(mc.player.getUUID());JsonObject r=new JsonObject();r.add("catalog",((JsonObject)get(call(Class.forName("net.hodu.cobblenpc.badge.BadgeRepository"),"catalog"),"json")).deepCopy());r.add("owned",(JsonObject)call(Class.forName("net.hodu.cobblenpc.badge.BadgeOwnership"),"snapshot",player));return r;}catch(Exception e){throw new RuntimeException(e);}}).get(5,java.util.concurrent.TimeUnit.SECONDS);
+            Files.writeString(output.resolve("badge-server-verified.json"),new GsonBuilder().setPrettyPrinting().create().toJson(report));return;
+        }
         if(command.startsWith("wheel:")){s.mouseScrolled(s.width/2d,s.height/3d,0,Double.parseDouble(command.substring(6)));return;}
         if(command.startsWith("input:")){
             String[] pair=command.substring(6).split("=",2);AbstractWidget w=visibleField(s,pair[0]);double z=scale(s);

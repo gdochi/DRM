@@ -142,7 +142,8 @@ try {
   let text = await page.locator('.changelog-notes').textContent();
   assert(!text.includes("Farmer's Delight"));
   assert(!text.includes('cutting board'));
-  await page.locator('.changelog-options a[href="#changelog/dochi-npc-core/NeoForge/1.21.1"]').click();
+  // Keep this historical scope assertion on 0.1.2 after newer uploads arrive.
+  await go('#changelog/dochi-npc-core/NeoForge/1.21.1/0.1.2');
   await page.waitForSelector('[data-minecraft="1.21.1"]');
   text = await page.locator('.changelog-notes').textContent();
   assert(text.includes("Farmer's Delight"));

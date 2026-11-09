@@ -75,3 +75,12 @@ In **Battle Config → After Actions**, choose **Action Mode → Sequential**. P
 Sequential execution waits for the dialogue to finish. Cancellation or disconnect stops later rewards; interacting again resumes the remaining actions. Each round allows one dialogue action. Reduce older multi-dialogue setups to one before saving or applying.
 
 **General Item Inventory** holds possession requirements such as Mega keys. It is separate from consumable **Battle Item Inventory**. Copying an item from the player’s inventory does not consume it.
+
+## Create an Alpha Pokémon
+This video uses the actual **0.2.9 release JAR**. Select a slot in **Pokemon Party** and enable **Basic → Alpha**. **Aspects** also shows Alpha and the preview's eyes become red. It is separate from **Shiny** and requires installed Cobblemon support for native Alpha Pokémon.
+
+![Enable Alpha in Basic, preview red-eyed Bulbasaur and save your own profile.](assets/media/guides/cobble-release-20261109/pokemon-alpha.mp4 "Cobblemon Editor 0.2.9 · DRM 0.3.1 · DNPC 0.1.3 · Cobblemon 1.8.4 / NeoForge 1.21.1, English UI. Alpha setting → model preview → Save As. Does not show NPC Apply or a completed battle.")
+
+Use **Save As** for your profile, then [NPC Apply](#drm-cobblemon-editor/cobblemon-editor-setup) for its first binding. Development layouts may differ; the switch in this recording is in **Basic**.
+
+Continue with [badge and trophy rewards](#drm-cobblemon-editor/cobblemon-badges) or [RCT → DNPC conversion](#drm-cobblemon-editor/cobblemon-rct-conversion).

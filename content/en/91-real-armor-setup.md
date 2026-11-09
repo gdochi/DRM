@@ -7,7 +7,7 @@ product: dochi-real-armor
 category: Install and Configure
 section: setup
 status: Stable
-version: 0.1.5
+version: 0.1.6
 audience: Players and server operators
 tags:
   - installation
@@ -17,7 +17,7 @@ tags:
 
 ## Install
 
-Put matching Minecraft/loader Real Armor 0.1.5 files on the server and clients.
+Put matching Minecraft/loader Real Armor 0.1.6 files on the server and clients.
 
 | Minecraft | Loader | Java |
 | --- | --- | --- |

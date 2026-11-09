@@ -1,6 +1,78 @@
 {
   "description": "Screenshot environments from reviewed capture records; these describe the images, not a mod compatibility matrix.",
   "captures": {
+    "assets/media/guides/cobble-release-20261109/badge-create.mp4": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080,
+      "poster": "assets/media/guides/cobble-release-20261109/badge-create.png",
+      "webm": "assets/media/guides/cobble-release-20261109/badge-create.webm",
+      "durationMs": 16046.847600000001
+    },
+    "assets/media/guides/cobble-release-20261109/badge-create.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-release-20261109/badge-presentation.mp4": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080,
+      "poster": "assets/media/guides/cobble-release-20261109/badge-presentation.png",
+      "webm": "assets/media/guides/cobble-release-20261109/badge-presentation.webm",
+      "durationMs": 29237.698099999998
+    },
+    "assets/media/guides/cobble-release-20261109/badge-presentation.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-release-20261109/pokemon-alpha.mp4": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080,
+      "poster": "assets/media/guides/cobble-release-20261109/pokemon-alpha.png",
+      "webm": "assets/media/guides/cobble-release-20261109/pokemon-alpha.webm",
+      "durationMs": 16893.206299999998
+    },
+    "assets/media/guides/cobble-release-20261109/pokemon-alpha.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-release-20261109/badge-editor-saved.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-release-20261109/badge-presentation-bindings.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
+    "assets/media/guides/cobble-release-20261109/badge-presentation-editor.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 1920,
+      "height": 1080
+    },
     "assets/media/guides/dwe-tutorials-20261109/dwe-workspace.png": {
       "minecraft": "1.21.1",
       "loader": "NeoForge",

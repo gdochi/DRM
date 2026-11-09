@@ -2,7 +2,7 @@
   "product": "dochi-warfare",
   "version": "0.2.5",
   "projectId": 1553237,
-  "checkedAt": "2026-11-06T08:49:39.962Z",
+  "checkedAt": "2026-11-09T14:37:24.791Z",
   "files": [
     {
       "id": 8731711,
@@ -15,6 +15,18 @@
       "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8731711",
       "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8731711/change-log",
       "html": "<h2>Added</h2>\n<ul>\n<li>Added autonomous SuperbWarfare helicopter and fixed-wing aircraft control using the vehicles' native engine input and physics. Flight control includes takeoff, cruise, terrain clearance, home-area return, destination approach, helicopter hover, and fixed-wing loiter behavior.</li>\n<li>Added a live vehicle crew editor with top and side seat maps. Creators can inspect seat roles, place CustomNPCs NPCs from the server clone library or filled NPC soul stones, and remove eligible NPC occupants.</li>\n<li>Added per-weapon crew activation rules. A vehicle weapon can remain always available or require a CustomNPC in its linked control seat.</li>\n<li>Added a shared DW editor skin, textured panels and controls, unified bright text colors, responsive layout helpers, and dedicated UI sounds.</li>\n<li>Added a searchable built-in pose library for the pose editor, including Low Ready, High Ready, and additional combat, idle, walking, and moving-fire starting poses.</li>\n<li>Added direct pose-preview manipulation and improved NPC aiming offsets while preserving DW-owned animation layers.</li>\n<li>Added PointBlank hit feedback, configurable rapid-hit knockback/camera-shake throttling, and a bounded multi-pellet hitscan candidate query for large encounters.</li>\n<li>Added <code>Step on block</code> as a trigger event for supported explosion and LRTactical grenade traps.</li>\n</ul>\n<h2>Changed</h2>\n<ul>\n<li>Vehicle weapon enablement is now owned by the <code>Weapons</code> page. Every mounted weapon has its own ON/OFF state, and <code>Weapon use mode</code> selects only from weapons that are currently enabled and eligible.</li>\n<li>Vehicle ammunition can be configured globally or per weapon without creating physical ammunition items. Belt-fed SuperbWarfare weapons now keep their DW virtual rounds synchronized with the native fire-readiness state.</li>\n<li>Area Patrol now chooses distributed home-area sectors, avoids recently visited sectors, and favors meaningful travel instead of repeatedly circling one small patch.</li>\n<li>Ground-vehicle throttle now ramps according to remaining travel distance, turn demand, stopping distance, and current speed. Acceleration and braking no longer behave as a simple full-throttle/full-stop toggle.</li>\n<li>Helicopter patrols use longer connected arcs and continuous speed control instead of stopping at every short destination.</li>\n<li>Vehicle weapon selection, minimum-range repositioning, turret pitch limits, fire pauses, and native weapon readiness are evaluated together before a shot.</li>\n<li>The vehicle editor was reorganized around separate Overview, AI, Targets, Weapons, and Crew pages with clearer ownership of movement, targeting, and weapon settings.</li>\n<li>PointBlank managed hitscan preserves native rapid-hit delivery while restoring the target's prior vanilla invulnerability state after each hit.</li>\n<li>NPC and vehicle passenger rendering now keeps DW pose and mounted-model offsets consistent across supported seats.</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fixed SuperbWarfare vehicle turrets tracking a target without firing because DW virtual belt ammunition was not visible to the native <code>canShoot</code> gate.</li>\n<li>Fixed disabled vehicle weapons continuing to influence weapon-use selection or range-reference decisions.</li>\n<li>Fixed close targets causing repeated turret correction when the selected mount could not depress far enough; minimum-range repositioning now accounts for the mount's aim envelope.</li>\n<li>Fixed Area Patrol vehicles repeatedly turning in a small circle near one destination.</li>\n<li>Fixed abrupt ground-vehicle launch, pulse driving, and hard stopping caused by distance-independent throttle commands.</li>\n<li>Fixed several wheeled and tracked navigation stalls involving turn radius, obstacles, slopes, water edges, unsupported terrain, and stuck recovery.</li>\n<li>Fixed helicopter startup vertical oscillation and short hop-and-stop patrol behavior.</li>\n<li>Fixed vehicle crew snapshot failures that could leave the Crew page permanently loading on the production runtime mappings.</li>\n<li>Fixed PointBlank multi-pellet and rapid-fire damage being suppressed by vanilla hurt cooldown behavior.</li>\n<li>Fixed remaining gray input and inactive-control text in vehicle and shared DW editor screens.</li>\n<li>Fixed editor flyouts, compact layouts, scrolling, and mouse-coordinate handling across multiple UI scales.</li>\n</ul>\n"
+    },
+    {
+      "id": 8769931,
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "name": "dochi_warfare-0.2.5_neoforge.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochis-warfare/files/8769931",
+      "uploadedAt": "2026-08-30T14:27:12.393Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8769931",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1553237/files/8769931/change-log",
+      "html": "<p>dochi_warfare-0.2.5 forge -&gt; neoforge porting</p>"
     }
   ]
 }

@@ -2,30 +2,98 @@
   "product": "dochi-real-armor",
   "version": "0.1.6",
   "projectId": 1567803,
-  "source": "author",
-  "publishedAt": "2026-11-08T04:55:14Z",
-  "environments": [
+  "checkedAt": "2026-11-09T14:37:24.791Z",
+  "files": [
     {
+      "id": 9505112,
       "loader": "Forge",
-      "minecraft": "1.20.1"
+      "minecraft": "1.20.1",
+      "name": "dochi_real_armor-0.1.6-forge-1.20.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505112",
+      "uploadedAt": "2026-11-08T04:50:02.307Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505112",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505112/change-log",
+      "html": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fForge\" target=\"_blank\" rel=\"nofollow\">View Change Log</a></li>\n</ul>"
     },
     {
-      "loader": "Fabric",
-      "minecraft": "1.21.1"
-    },
-    {
+      "id": 9505174,
       "loader": "NeoForge",
-      "minecraft": "1.21.1"
+      "minecraft": "1.21.1",
+      "name": "dochi_real_armor-0.1.6-neoforge-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505174",
+      "uploadedAt": "2026-11-08T05:00:47.93Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505174",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505174/change-log",
+      "html": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fNeoForge\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
     },
     {
-      "loader": "Fabric",
-      "minecraft": "26.3"
-    },
-    {
+      "id": 9505178,
       "loader": "NeoForge",
-      "minecraft": "26.3"
+      "minecraft": "26.3",
+      "name": "dochi_real_armor-0.1.6-neoforge-26.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505178",
+      "uploadedAt": "2026-11-08T05:01:20.88Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505178",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505178/change-log",
+      "html": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fNeoForge%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+    },
+    {
+      "id": 9505188,
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "name": "dochi_real_armor-0.1.6-fabric-1.21.1.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505188",
+      "uploadedAt": "2026-11-08T05:02:03.937Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505188",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505188/change-log",
+      "html": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fFabric%252f1.21.1%252f0.1.6\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
+    },
+    {
+      "id": 9505191,
+      "loader": "Fabric",
+      "minecraft": "26.3",
+      "name": "dochi_real_armor-0.1.6-fabric-26.3.jar",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/dochi-real-armor/files/9505191",
+      "uploadedAt": "2026-11-08T05:02:34.53Z",
+      "status": 4,
+      "metadataSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505191",
+      "notesSource": "https://www.curseforge.com/api/v1/mods/1567803/files/9505191/change-log",
+      "html": "<h1>0.1.6 Change Log</h1>\n<ul>\n<li><a href=\"/linkout?remoteUrl=https%253a%252f%252fgdochi.github.io%252fDRM%252f%2523changelog%252fdochi-real-armor%252fFabric%252f26.3\" rel=\"nofollow\">View Change Log</a></li>\n</ul>\n"
     }
   ],
-  "markdown": "## 리얼아머\n### 0.1.6 Change Log\n#### Global\n##### Added\n* Added configurable item drops when hits reduce NPC armor durability, including gunshots.\n* Added per-armor drop tables with independent chances and quantity ranges.\n* Added per-armor controls for horizontal drop spread and upward speed.\n* Added a standalone Armor Drop Editor with item selection and saved sets.\n* Added Apply and Unapply controls for one active drop set per world.\n* Added optional Armor Drop Editor access through compatible DRM builds.\n* Added armor drops that preserve configured item names and custom item data.\n##### Fixed\n* Fixed configuration switches flashing and losing focus after clicks or server acknowledgements.\n* Fixed stale configuration values and missed clicks after external settings reloads.\n* Fixed duplicate toolbar hover text and excessive spacing between flyout buttons.\n* Fixed percentage text formatting and dimmed item picker slots.\n##### Changed\n* Changed saved drop sets to activate only after explicit Apply confirmation.\n* Changed standalone settings to use embedded DRM-style categories and controls.\n##### Improved\n* Improved drop table readability with separate item, chance, and quantity columns.\n* Improved popup input handling and localized confirmation button layouts.\n* Improved protection against conflicting edits, insufficient permissions, and failed saves.\n",
-  "html": "<h3>0.1.6 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added configurable item drops when hits reduce NPC armor durability, including gunshots.</li>\n<li>Added per-armor drop tables with independent chances and quantity ranges.</li>\n<li>Added per-armor controls for horizontal drop spread and upward speed.</li>\n<li>Added a standalone Armor Drop Editor with item selection and saved sets.</li>\n<li>Added Apply and Unapply controls for one active drop set per world.</li>\n<li>Added optional Armor Drop Editor access through compatible DRM builds.</li>\n<li>Added armor drops that preserve configured item names and custom item data.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed configuration switches flashing and losing focus after clicks or server acknowledgements.</li>\n<li>Fixed stale configuration values and missed clicks after external settings reloads.</li>\n<li>Fixed duplicate toolbar hover text and excessive spacing between flyout buttons.</li>\n<li>Fixed percentage text formatting and dimmed item picker slots.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed saved drop sets to activate only after explicit Apply confirmation.</li>\n<li>Changed standalone settings to use embedded DRM-style categories and controls.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved drop table readability with separate item, chance, and quantity columns.</li>\n<li>Improved popup input handling and localized confirmation button layouts.</li>\n<li>Improved protection against conflicting edits, insufficient permissions, and failed saves.</li>\n</ul>"
+  "authorNotes": {
+    "product": "dochi-real-armor",
+    "version": "0.1.6",
+    "projectId": 1567803,
+    "source": "author",
+    "publishedAt": "2026-11-08T04:55:14Z",
+    "environments": [
+      {
+        "loader": "Forge",
+        "minecraft": "1.20.1"
+      },
+      {
+        "loader": "Fabric",
+        "minecraft": "1.21.1"
+      },
+      {
+        "loader": "NeoForge",
+        "minecraft": "1.21.1"
+      },
+      {
+        "loader": "Fabric",
+        "minecraft": "26.3"
+      },
+      {
+        "loader": "NeoForge",
+        "minecraft": "26.3"
+      }
+    ],
+    "markdown": "## 리얼아머\n### 0.1.6 Change Log\n#### Global\n##### Added\n* Added configurable item drops when hits reduce NPC armor durability, including gunshots.\n* Added per-armor drop tables with independent chances and quantity ranges.\n* Added per-armor controls for horizontal drop spread and upward speed.\n* Added a standalone Armor Drop Editor with item selection and saved sets.\n* Added Apply and Unapply controls for one active drop set per world.\n* Added optional Armor Drop Editor access through compatible DRM builds.\n* Added armor drops that preserve configured item names and custom item data.\n##### Fixed\n* Fixed configuration switches flashing and losing focus after clicks or server acknowledgements.\n* Fixed stale configuration values and missed clicks after external settings reloads.\n* Fixed duplicate toolbar hover text and excessive spacing between flyout buttons.\n* Fixed percentage text formatting and dimmed item picker slots.\n##### Changed\n* Changed saved drop sets to activate only after explicit Apply confirmation.\n* Changed standalone settings to use embedded DRM-style categories and controls.\n##### Improved\n* Improved drop table readability with separate item, chance, and quantity columns.\n* Improved popup input handling and localized confirmation button layouts.\n* Improved protection against conflicting edits, insufficient permissions, and failed saves.\n",
+    "html": "<h3>0.1.6 Change Log</h3>\n<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added configurable item drops when hits reduce NPC armor durability, including gunshots.</li>\n<li>Added per-armor drop tables with independent chances and quantity ranges.</li>\n<li>Added per-armor controls for horizontal drop spread and upward speed.</li>\n<li>Added a standalone Armor Drop Editor with item selection and saved sets.</li>\n<li>Added Apply and Unapply controls for one active drop set per world.</li>\n<li>Added optional Armor Drop Editor access through compatible DRM builds.</li>\n<li>Added armor drops that preserve configured item names and custom item data.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed configuration switches flashing and losing focus after clicks or server acknowledgements.</li>\n<li>Fixed stale configuration values and missed clicks after external settings reloads.</li>\n<li>Fixed duplicate toolbar hover text and excessive spacing between flyout buttons.</li>\n<li>Fixed percentage text formatting and dimmed item picker slots.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed saved drop sets to activate only after explicit Apply confirmation.</li>\n<li>Changed standalone settings to use embedded DRM-style categories and controls.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved drop table readability with separate item, chance, and quantity columns.</li>\n<li>Improved popup input handling and localized confirmation button layouts.</li>\n<li>Improved protection against conflicting edits, insufficient permissions, and failed saves.</li>\n</ul>"
+  }
 }

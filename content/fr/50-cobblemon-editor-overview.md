@@ -17,6 +17,16 @@ translationSource: en
 translationMethod: assisted
 ---
 
+## Nouveautés de 0.2.9 : suivre les vidéos
+| Objectif | Guide |
+| --- | --- |
+| Créer et attribuer badges ou trophées | [Badges et conditions de possession](#drm-cobblemon-editor/cobblemon-badges) |
+| Personnaliser acquisition et sélection | [Présentations et GUI](#drm-cobblemon-editor/cobblemon-badge-presentations) |
+| Convertir des dresseurs RCT en DNPC | [Conversion RCT](#drm-cobblemon-editor/cobblemon-rct-conversion) |
+| Configurer les Pokémon Alpha et statistiques | [Vidéo de l'équipe](#drm-cobblemon-editor/cobblemon-trainer-editor) |
+
+![Renommer une copie de l'ensemble d'exemple et enregistrer sur le serveur.](assets/media/guides/cobble-release-20261109/badge-create.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1, anglais. Le guide explique activation, copie et récompenses.")
+
 ## Qu'est-ce que tu veux faire ?
 
 | Objectif | Outil |

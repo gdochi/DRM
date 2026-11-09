@@ -15,6 +15,16 @@ tags:
   - overview
 ---
 
+## New in 0.2.9: follow the videos
+| Goal | Guide |
+| --- | --- |
+| Create and award gym badges or trophies | [Badges and ownership conditions](#drm-cobblemon-editor/cobblemon-badges) |
+| Customize acquisition and selection effects | [Badge presentations and GUI](#drm-cobblemon-editor/cobblemon-badge-presentations) |
+| Convert existing RCT trainers to DNPC | [RCT conversion](#drm-cobblemon-editor/cobblemon-rct-conversion) |
+| Configure Alpha Pokémon and stats | [Party settings video](#drm-cobblemon-editor/cobblemon-trainer-editor) |
+
+![Rename a copied sample badge set and save it to the server.](assets/media/guides/cobble-release-20261109/badge-create.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1, English UI. The badge guide covers enabling, copying and connecting rewards.")
+
 ## What would you like to make?
 
 | Goal | Tool |

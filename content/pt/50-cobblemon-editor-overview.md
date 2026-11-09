@@ -17,6 +17,16 @@ translationSource: en
 translationMethod: assisted
 ---
 
+## Novidades da 0.2.9: acompanhe os vídeos
+| Objetivo | Guia |
+| --- | --- |
+| Criar e conceder insígnias ou troféus | [Insígnias e condições de posse](#drm-cobblemon-editor/cobblemon-badges) |
+| Personalizar efeitos de aquisição e seleção | [Apresentações e GUI](#drm-cobblemon-editor/cobblemon-badge-presentations) |
+| Converter treinadores RCT para DNPC | [Conversão RCT](#drm-cobblemon-editor/cobblemon-rct-conversion) |
+| Configurar Pokémon Alpha e atributos | [Vídeo da equipe](#drm-cobblemon-editor/cobblemon-trainer-editor) |
+
+![Renomeie uma cópia do conjunto de exemplo e salve no servidor.](assets/media/guides/cobble-release-20261109/badge-create.mp4 "Cobblemon Editor 0.2.9 / NeoForge 1.21.1, inglês. O guia explica ativação, cópia e vínculo com recompensas.")
+
 ## O que você gostaria de fazer?
 
 | Objetivo | Ferramenta |
