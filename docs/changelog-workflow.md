@@ -17,6 +17,8 @@
 
 ## 공개 기준
 
+- 2026-11-13 사용자 지시로 BattleWorks 0.1.7의 정리된 15개 항목을 `[LOG] Change Log/배틀워크스/0.1.7.md`에서 작성자 기록으로 반영한다. Forge 1.20.1과 Fabric·NeoForge 1.21.1/26.3의 다섯 환경을 구분한다.
+
 - 2026-11-07 사용자 지시로 DRM 0.3.1과 코블몬 에디터 0.2.9도 `[LOG] Change Log` 원문을 작성자 기록으로 게시한다. DRM은 Forge 1.20.1과 Fabric·NeoForge 1.21.1/26.3, 코블몬 에디터는 Fabric·NeoForge 1.21.1로 구분한다.
 - 2026-11-07 사용자 지시로 DW·DWE 0.3.2는 작성자가 확정한 `[LOG] Change Log` 원문을 CurseForge 업로드에 앞서 docs에 게시한다. 이 명시적 작성자 게시 경로는 `source: "author"`, `publishedAt`, `environments`, 원문 `markdown`과 `html`로 기록하며, 아래 CurseForge 파일 검증 기준과 분리한다. 로더·Minecraft 범위는 확정 원문의 범위만 사용한다.
 - 2026-11-07 사용자 지시로 리얼아머 0.1.5도 `[LOG] Change Log/리얼아머/0.1.5.md` 원문을 작성자 기록으로 게시한다. Forge 1.20.1, Fabric·NeoForge 1.21.1/26.3의 5개 환경을 구분한다. CustomNPCs 저항 순서 설정은 Forge 1.20.1과 Fabric·NeoForge 1.21.1, 설정 저장 실패 복구는 Fabric, DNPC 전용 Curios 방어 계산은 Forge·NeoForge에만 표시한다.

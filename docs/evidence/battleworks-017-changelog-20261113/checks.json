@@ -1,0 +1,22 @@
+[
+  {
+    "task": "build",
+    "exit": 0,
+    "log": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\battleworks-017-changelog-20261113\\build.log"
+  },
+  {
+    "task": "verify",
+    "exit": 0,
+    "log": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\battleworks-017-changelog-20261113\\verify.log"
+  },
+  {
+    "task": "verify:translations",
+    "exit": 0,
+    "log": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\battleworks-017-changelog-20261113\\verify-translations.log"
+  },
+  {
+    "task": "verify:changelogs",
+    "exit": 0,
+    "log": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\battleworks-017-changelog-20261113\\verify-changelogs.log"
+  }
+]

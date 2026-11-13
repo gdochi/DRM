@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "version": "0.1.7",
+  "sourceEntries": 15,
+  "renderedEntriesPerEnvironment": 14,
+  "environments": [
+    {
+      "loader": "Forge",
+      "minecraft": "1.20.1",
+      "source": "author"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1",
+      "source": "author"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1",
+      "source": "author"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "26.3",
+      "source": "author"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "26.3",
+      "source": "author"
+    }
+  ],
+  "browserRoutes": 229,
+  "sourceSha256": "9b7187c393fb14c5d84d90e722b98f8e14f1899c66e984cf93f9d434b63d318f",
+  "backup": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\_backups\\battleworks-0.1.7-20261113204958",
+  "checks": [
+    {
+      "task": "build",
+      "exit": 0,
+      "log": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\battleworks-017-changelog-20261113\\build.log"
+    },
+    {
+      "task": "verify",
+      "exit": 0,
+      "log": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\battleworks-017-changelog-20261113\\verify.log"
+    },
+    {
+      "task": "verify:translations",
+      "exit": 0,
+      "log": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\battleworks-017-changelog-20261113\\verify-translations.log"
+    },
+    {
+      "task": "verify:changelogs",
+      "exit": 0,
+      "log": "C:\\Users\\hodu3\\Desktop\\[DOCHI] DOCS\\docs\\evidence\\battleworks-017-changelog-20261113\\verify-changelogs.log"
+    }
+  ]
+}

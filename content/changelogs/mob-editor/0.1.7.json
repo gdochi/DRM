@@ -1,0 +1,31 @@
+{
+  "product": "mob-editor",
+  "version": "0.1.7",
+  "projectId": 1682651,
+  "source": "author",
+  "publishedAt": "2026-11-13T11:49:58.315Z",
+  "environments": [
+    {
+      "loader": "Forge",
+      "minecraft": "1.20.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "26.3"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "26.3"
+    }
+  ],
+  "markdown": "## 배틀워크스\n### 0.1.7 Change Log\n#### Global\n##### Added\n* Added searchable NPC templates with appearance previews.\n* Added Undo and Redo for document edits and file loading.\n* Added ground attack warnings linked to hitboxes with progress indicators.\n* Added arena boundaries that return escaping bosses and optionally restore their health.\n* Added DNPC template summons with groups, lifetimes, editable stats, and restart persistence.\n* Added a BattleWorks Wand for opening editors and settings.\n* Added simple pattern editing and ready-to-edit attack recipes.\n* Added a personal technique library and independent copies of attacks and linked combat resources.\n##### Fixed\n* Fixed custom humanoid animation selection and playback.\n* Fixed combat cleanup interrupting movement controlled by other mods.\n##### Changed\n* Changed DRM to an optional integration while preserving saved combat settings.\n* Changed BattleWorks tools to appear in both standalone and available DNPC Creative Tabs.\n##### Improved\n* Improved editor layout, input alignment, search, scrolling, Korean labels, and seconds/ticks displays.\n#### Forge 1.20.1 / Fabric & NeoForge 1.21.1\n##### Fixed\n* Fixed DNPC and standalone NPC previews failing when CustomNPCs was absent.\n#### Fabric & NeoForge 26.3\n##### Fixed\n* Fixed missing BattleWorks keybinding category names.\n",
+  "html": "<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added searchable NPC templates with appearance previews.</li>\n<li>Added Undo and Redo for document edits and file loading.</li>\n<li>Added ground attack warnings linked to hitboxes with progress indicators.</li>\n<li>Added arena boundaries that return escaping bosses and optionally restore their health.</li>\n<li>Added DNPC template summons with groups, lifetimes, editable stats, and restart persistence.</li>\n<li>Added a BattleWorks Wand for opening editors and settings.</li>\n<li>Added simple pattern editing and ready-to-edit attack recipes.</li>\n<li>Added a personal technique library and independent copies of attacks and linked combat resources.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed custom humanoid animation selection and playback.</li>\n<li>Fixed combat cleanup interrupting movement controlled by other mods.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed DRM to an optional integration while preserving saved combat settings.</li>\n<li>Changed BattleWorks tools to appear in both standalone and available DNPC Creative Tabs.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved editor layout, input alignment, search, scrolling, Korean labels, and seconds/ticks displays.</li>\n</ul>\n<h4>Forge 1.20.1 / Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed DNPC and standalone NPC previews failing when CustomNPCs was absent.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed missing BattleWorks keybinding category names.</li>\n</ul>\n"
+}
