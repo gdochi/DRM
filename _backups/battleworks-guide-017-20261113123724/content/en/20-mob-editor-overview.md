@@ -1,0 +1,74 @@
+---
+title: Getting started with BattleWorks
+slug: mob-editor-overview
+order: 210
+description: A learning path from installation to a first attack, boss phases, and particle effects.
+product: mob-editor
+section: start
+category: BattleWorks
+status: Guide
+version: 0.1.6
+audience: Beginners and combat creators
+tags:
+  - battleworks
+  - combat
+---
+
+## Start with one readable melee attack
+
+BattleWorks **0.1.6** is DRM's NPC combat addon for Forge 1.20.1, Fabric / NeoForge 1.21.1 and separate 26.3 builds. Author combat timing, hitboxes, movement and phases.
+
+The exercises below use **Forge 1.20.1 and CustomNPCs**. Check [0.1.6 installation boundaries](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660) for other loaders and 26.3 DNPC.
+
+Start with one slow melee attack on a normal humanoid NPC; optional spell and animation mods are unnecessary for the first exercise.
+
+## Follow this learning path
+
+| Step | Guide | Completion check |
+| --- | --- | --- |
+| 1 | [Installation and NPC preparation](#mob-editor/mob-editor-setup) | Open BattleWorks with your NPC selected. |
+| 2 | [Your first melee attack](#mob-editor/battleworks-first-attack) | The NPC approaches, prepares, hits, and recovers. |
+| 3 | [Workspace and timeline](#mob-editor/mob-editor-patterns) | Move an action to another tick. |
+| 4 | [Hitboxes](#mob-editor/battleworks-hitboxes) | Adjust damage, size, and placement separately. |
+| 5 | [Model animation](#mob-editor/battleworks-animation) | Align contact with the model's motion. |
+| 6 | [Targeting](#mob-editor/mob-editor-detection-patrol) and [movement](#mob-editor/battleworks-movement) | Approach and retreat without conflicting movement. |
+| 7 | [Selection and phases](#mob-editor/mob-editor-phases), [passives](#mob-editor/battleworks-passives) | Add variety and health reactions. |
+| 8 | [Two-phase boss exercise](#mob-editor/battleworks-encounters) | Combine the features into one encounter. |
+
+Continue with [skills and presentation](#mob-editor/battleworks-skills-effects), [Particle Maker](#mob-editor/battleworks-particles), and [advanced actions](#mob-editor/battleworks-advanced-actions) when the basic encounter works.
+
+## Where each setting belongs
+
+![BattleWorks Pattern Workbench with patterns on the left, Windup/Action/Recovery in the middle and selected pattern/stage properties on the right.](assets/media/guides/battleworks-016-neo1211/workbench.png "The default Basic Slash example in BattleWorks 0.1.6 on NeoForge 1.21.1. Select a pattern on the left, a stage in the middle, then edit its properties on the right.")
+
+Use **Pattern Workbench** for the attack sequence, **Hitbox Library** for the shape that deals damage, and **Combat Rules** for chasing and pattern selection. To build a first attack by answering questions, start with **Create New → Pattern Build Assist**. The assist is disabled after loading an existing example.
+
+| Task | Editor |
+| --- | --- |
+| NPC health, equipment, factions, drops, respawning | CustomNPCs |
+| Models, textures, animation assets and behavior mappings | DRM NPC Basic |
+| Patterns, hitboxes, combat timing, movement, phases | BattleWorks |
+| Reusable visual particle files | Visual → Particle Maker |
+| Popup appearance and dialogue presentation | DRM Popup Maker and its GUI |
+
+Advanced imported documents can also enable `npcStats` to override selected combat attributes. The beginner exercises leave that feature disabled and prepare base stats in CustomNPCs.
+
+## Five terms you will use
+
+| Term | Meaning |
+| --- | --- |
+| Battlework | A combat document. Several NPCs can reference the same server file. |
+| Pattern | One move, such as a slash or retreat. |
+| Stage | Windup, Action, or Recovery inside a pattern. |
+| Timed actions / event | Actions sharing one execution time and repeat schedule. |
+| Hitbox | The space tested for damage, authored separately from the visible weapon. |
+
+At normal server speed, **20 ticks are about one second**.
+
+## Remember these three rules
+
+1. Visuals and damage are separate. A particle effect or arm swing does not create a BattleWorks hitbox.
+2. Save the file and connect it to the NPC. Save As alone does not bind the NPC to the new path.
+3. Test in the world after using Simulation. Rehearsal shows motion and hitbox placement; it does not execute real AI, damage, commands, sounds, or external spells.
+
+Use [troubleshooting](#mob-editor/battleworks-troubleshooting) when a step fails and [files and samples](#mob-editor/battleworks-files) before importing someone else's encounter.

@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guia
-version: 0.1.6
+version: 0.1.7
 audience: Iniciantes e criadores de combate
 tags:
   - battleworks
@@ -84,21 +84,21 @@ Nem todas as entidades mod registradas apoiam a criação genérica. Use uma ver
 
 Escolha entre o lançamento automático e uma liberação explícita anterior. Os limites são 64 por ação e 128 projéteis gerenciados ao vivo por rodízio. Comece pequeno.
 
-Itens usados para construções não são saques. Configure o saque separadamente em CustomNPCs.
+Configure o saque no editor do próprio NPC. Aparências de itens em construções são separadas do saque coletável.
 
-## 5. Invoque um clone do CustomNPC
+## 5. Invocar um modelo de NPC salvo
 
-1. Salve um clone real com CustomNPCs ferramentas.
-2. Grave a guia e o nome exatos.
-3. Adicione **Summon Clone** com esses valores.
-4. Use guardas de identificação do grupo e Conde 1.
-5. Configure o local de geração e a vida útil.
-6. Opcionalmente, conecte um arquivo de trabalho de batalha filho existente.
-7. Adicione **Dismiss Summons** para guardas e teste de limpeza.
+1. Salve um template pelas ferramentas do provedor instalado, como DNPC.
+2. Adicione **Summon NPC** e escolha **Summon source → NPC template**.
+3. Abra o seletor, pesquise e confira a prévia da aparência. Escolha um template real do servidor; digitar um ID de entidade não cria um template.
+4. Defina Group ID guards, Count 1 e a origem de criação.
+5. Em Modifiers, ajuste raio e duração; opcionalmente substitua vida máxima e velocidade ou herde o alvo.
+6. Se desejar, conecte um Battlework File filho existente relativo a mobs/patterns.
+7. Adicione **Dismiss Summons** para guards e teste expiração, limpeza do pai e salvamento/reinício.
 
-Um nome de clone não é uma identificação de entidade arbitrária. O clone e o arquivo filho opcional devem existir no servidor. Arquivos infantis usam caminhos relativos a criaturas/padrões.
+Duração positiva expira após os ticks definidos; 0 não tem expiração por tempo, mas a limpeza gerenciada continua. Proprietário, grupo e expiração persistem com o mundo. Os limites são 32 por ação e 64 invocações vivas por pai. Evite cadeias ilimitadas de invocações.
 
-As intimações são administradas pelos pais e podem herdar o alvo. Limites são 32 por ação e 64 intimações ao vivo por pai. Revise os arquivos das crianças para evitar correntes de convocação descontroladas.
+**Somente legado:** instalações CustomNPCs compatíveis anteriores a 26.3 podem escolher a fonte clone com aba/nome reais. Essa fonte não está disponível a partir de 26.3.
 
 ## 6. Portão de eventos posteriores com condições
 
@@ -139,7 +139,7 @@ Operadores numéricos são eq, neq, gt, gte, lt e lte. Saúde 50% é 0.5. Negate
 
 Avançado `npcStats.enabled` pode aplicar a saúde máxima, velocidade de movimento, velocidades específicas de fase, faixa de seguimento e regeneração ociosa/de combate. Está desativado por padrão. Zero valores de saúde/velocidade/intervalo não aplicam um novo valor de atributo; regeneração zero não adiciona cura automática.
 
-O primeiro exercício prepara estatísticas básicas em CustomNPCs. Inspecionar npcStats Quando um chefe importado muda inesperadamente a saúde ou a velocidade.
+Prepare os atributos base no DNPC ou editor do ator compatível. Confira npcStats se um chefe importado mudar vida ou velocidade.
 
 ## 8. Outras ações de status e controle
 

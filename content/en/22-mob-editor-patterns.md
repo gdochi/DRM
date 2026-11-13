@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -118,3 +118,11 @@ Preview speed 0.1x–4.0x changes observation speed, not saved pattern ticks. La
 ## Before saving
 
 Check Enabled, missing IDs, event bounds, and the last repeat. Resolve validation errors, save/apply, and test the actual NPC. Continue with [hitboxes](#mob-editor/battleworks-hitboxes).
+
+## Simple and detailed editing
+
+Use **Simple edit** for name, activation, range, stage lengths, cooldown and the selected linked hitbox's common values. **Detailed edit** exposes conditions, individual events, movement and animation without discarding those settings when switching views. [Recipes, My techniques and copy choices](#mob-editor/battleworks-authoring) speed up repeated authoring.
+
+**Undo / Redo** restores document edits and file-loading state; Back/Forward navigates editor history. Time fields show seconds alongside ticks. At normal server speed, 20 ticks equal one second.
+
+The timeline toolbar flows onto another row when narrow. Drag dividers or use panel header arrows to recover space. Long clip labels remain on one line and reveal the full name on hover in Hitbox Library.

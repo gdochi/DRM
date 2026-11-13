@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: 사용 안내
-version: 0.1.6
+version: 0.1.7
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -96,6 +96,6 @@ Approach Distance는 현재 페이즈의 사용 가능한 비이동 공격 거�
 
 ## 순찰과 전투 이동
 
-기존 CustomNPCs의 대기·순찰 경로는 CustomNPCs에서 설정합니다. BattleWorks의 순환 이동 Orbit은 공격 단계에서 타겟 주위를 도는 동작이며 월드 순찰 경로 편집기가 아닙니다.
+대기·순찰은 DNPC 등 해당 NPC의 편집기에서 설정합니다. Orbit은 공격 단계에서 타겟 주위를 도는 동작이며 월드 순찰 경로를 편집하지 않습니다.
 
 다음은 [걷기·대시·순간이동](#mob-editor/battleworks-movement)입니다.

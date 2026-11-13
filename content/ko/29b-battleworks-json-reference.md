@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: 참고
-version: 0.1.6
+version: 0.1.7
 audience: JSON을 직접 편집하는 제작자
 tags:
   - battleworks
@@ -334,3 +334,5 @@ JSON에는 주석·끝 쉼표·생략 부호를 넣지 않습니다. 자동 보�
 이 문서 묶음의 최초 상세 대조는 2026-09-12의 Forge 0.1.3 소스에서 BattleworkDocument, BattleworkValidator, BattleworkRuntimeController, BattleworkStore, BattleworkNetwork, BattleworkAnimationPolicy, ParticleDocument, ParticleFiles, ParticleCommands와 에디터 번역·화면을 확인한 기록입니다. 2026-10-11에는 0.1.4 설치 안내를 갱신했고, 2026-10-24에는 현재 0.1.5와 Fabric 설치 안내를 반영했습니다.
 
 0.1.2용 JSON 가이드와 달라진 저장 방식·애니메이션·추가 액션을 현재 소스 기준으로 반영했습니다. 문법·참조 검사를 통과해도 실제 모델 접촉, 마법 제공자, 서버 지형과 전투 밸런스는 [플레이 테스트](#mob-editor/battleworks-troubleshooting)로 확인해야 합니다.
+
+현재 0.1.7 안내에는 단독 작성·레시피·기술 재사용·연결 경고·아레나 초기화도 포함됩니다. 전투 스키마는 dochi.battleworks.v1을 유지하므로 이 기능 때문에 임의로 새 버전을 만들지 마세요. 이전 예제의 설명과 촬영 버전은 원래 기준을 표시합니다.

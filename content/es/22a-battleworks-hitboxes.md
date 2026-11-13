@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -109,3 +109,11 @@ Para un área persistente, comience con el tiempo de reutilización y targetCool
 5. Guardar/aplicar y probar frente, laterales, traseros y diferentes alturas.
 
 Si es demasiado alto, marque Desplazamiento Y. Si está lateralmente, marque Desplazamiento X y Yaw. Si es corto, compare Offset Z, dimensiones y rango de inicio. Continuar con [animación](#mob-editor/battleworks-animation).
+
+## Hitboxes compartidas y avisos vinculados
+
+Antes de editar una definición, comprueba sus usos en **Simple edit**. Daño y geometría compartidos afectan a todos los patrones que los referencian. **Make this hitbox independent** copia la definición y reconecta las referencias del patrón actual; los demás conservan la original. [Copias independientes de técnicas](#mob-editor/battleworks-authoring) también copian recursos vinculados y destinos de combo.
+
+Para un aviso relativo al NPC, abre **Telegraph** en la preparación. Activa **Link ground warning to hitbox**, elige **Warning hitbox** o **Next hitbox contact** y, si quieres, **Fill until contact**. El aviso usa la huella de la hitbox y el momento de contacto. Es visual; la acción Hitbox sigue causando el daño.
+
+Una explosión en una posición guardada o el área de un hechizo externo necesita su propio ancla y aviso. El vínculo no predice geometrías arbitrarias de hechizos. Revisa toda la etapa y prueba el contacto en el mundo.

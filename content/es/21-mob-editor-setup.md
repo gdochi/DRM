@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -16,21 +16,19 @@ translationSource: en
 translationMethod: assisted
 ---
 
-## 1. Preparar la instalación de la práctica
+## 1. Preparar archivos compatibles
 
-Esta es la combinación utilizada para las pantallas capturadas y la prueba de primer ataque. Instalar **BattleWorks, DRM and an NPC mod**. Para otros archivos Minecraft/loader, consulte [Opciones de instalación](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660).
+Usa BattleWorks **0.1.7** para tu versión exacta de Minecraft y loader. Mantén instalaciones compatibles en cliente y servidor e instala las dependencias declaradas por el archivo elegido.
 
-| Componente | Este ejercicio |
-| --- | --- |
-| Minecraft / cargador | 1.21.1 / NeoForge |
-| Java | 21 |
-| BattleWorks | 0.1.6 |
-| DRM | 0.3.1 |
-| PNJ | DNPC 0.1.3 |
+| Minecraft | Loader de BattleWorks | Java |
+| --- | --- | --- |
+| 1.20.1 | Forge | 17 |
+| 1.21.1 | Fabric o NeoForge | 21 |
+| 26.3 | Fabric o NeoForge | 25 |
 
-Instalar sus dependencias coincidentes en la misma instancia. Esta tabla registra una combinación probada; compruebe los archivos seleccionados Minecraft, el cargador y los requisitos antes de reemplazar una instalación compatible existente. Coincidir con el servidor y las instalaciones del cliente también.
+**DRM es opcional**, también para abrir los editores independientes. DNPC proporciona el actor de este ejercicio. Añade DRM, bibliotecas de animación, mods de magia o proveedores de modelos solo si usas sus funciones; los recursos externos son independientes del JSON de combate.
 
-Los actores CustomNPCs compatibles también están disponibles en Forge 1.20.1 y Fabric/NeoForge 1.21.1. **Use the DNPC workflow on 26.3 and later**; CustomNPCs se excluye allí.
+CustomNPCs es opcional en Forge 1.20.1 y Fabric / NeoForge 1.21.1. Está excluido desde 26.3; usa DNPC en esas versiones. Las capturas y vídeos anteriores de 0.1.6 conservan sus versiones reales.
 
 ## 2. Crear una práctica DNPC
 
@@ -44,11 +42,14 @@ Los actores CustomNPCs compatibles también están disponibles en Forge 1.20.1 y
 
 Una espada sostenida ayuda a comunicar el ataque. El ejercicio establece el daño en el BattleWorks Hitbox en lugar de depender del daño de ataque del objeto. Aumentar la salud de los NPC puede esperar hasta que el jefe haga ejercicio.
 
-## 3. Abierto BattleWorks para el PNJ
+## 3. Abrir BattleWorks para el NPC
 
-Seleccione el NPC de práctica con el núcleo DRM y abra su editor BattleWorks. Cargue un archivo de combate existente o elija **Create New**, luego continúe con [ su primer ataque cuerpo a cuerpo](#mob-editor/battleworks-first-attack).
+1. En Creativo, busca **BattleWorks Wand** en la pestaña propia de BattleWorks. También aparece en la pestaña DNPC si está disponible.
+2. Usa la varita sobre un NPC compatible para abrir su selector de editores. Úsala en el aire para crear sin un NPC conectado. El comando es `/battleworks editor`; se requieren los permisos del servidor.
+3. Elige BattleWorks y después **Load Existing**, **Use Default** o **Create New**. Los valores predeterminados son plantillas; guarda una copia de trabajo.
+4. Empieza con [edición simple y recetas](#mob-editor/battleworks-authoring), o continúa con [tu primer ataque](#mob-editor/battleworks-first-attack).
 
-La categoría de aplicación de archivo del NPC es **Battlework JSON**. Si comenzó a crear sin un NPC, guarde el archivo, selecciónelo en el catálogo de ese NPC y presione **Apply Battlework**. Para otro modelo, configure DNPC apariencia y su [conexión de animación](#mob-editor/battleworks-animation) primero.
+Con DRM instalado, Core sigue siendo otra entrada. La categoría de aplicación es **Battlework JSON**. Para un archivo creado sin NPC, selecciónalo en el catálogo del actor y pulsa **Apply Battlework**. Prepara otros modelos mediante su apariencia y la [conexión de animación](#mob-editor/battleworks-animation).
 
 ## 4. Agregue integraciones cuando la función las necesite
 

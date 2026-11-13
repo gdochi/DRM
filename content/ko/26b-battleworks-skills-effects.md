@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: 사용 안내
-version: 0.1.6
+version: 0.1.7
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -33,7 +33,7 @@ tags:
 | 제공 모드와 실제 Skill ID | 목록에 없는 스킬은 실행 불가 |
 | 타겟 필수·거리·시야 | 액션 시점의 대상 조건이 필요 |
 | 스킬 자체 재사용 대기 | BattleWorks 쿨다운과 별도로 적용될 수 있음 |
-| 시전자 조건 | 모든 주문이 CustomNPC 시전자와 호환되는 것은 아님 |
+| 시전자 조건 | 플레이어용 주문이 현재 DNPC 또는 구형 NPC 시전자와 호환되는지 확인 |
 | 제공 모드의 options | 스킬마다 지원하는 설정이 다름 |
 
 에디터 미리보기는 실제 외부 주문을 시전하지 않습니다. 월드에서 시험하고 `Battleworks skill failed` 로그가 있으면 그 내용을 확인합니다.

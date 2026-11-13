@@ -1,0 +1,36 @@
+[
+  {
+    "name": "simple-edit.png",
+    "source": "C:/Users/hodu3/Desktop/[COMMON] Dochi`s BattleWorks/neoforge/verification/layout-clipping-2026-11-13/with-drm/en-texture-timeline.png",
+    "environment": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 960,
+      "height": 540
+    },
+    "sha256": "67d7b8da7e9d7f0df0d7ef282bf84308c687a318f3bc2aa680a08ff0fcc73569",
+    "unchangedCopy": true,
+    "battleworks": "0.1.7",
+    "drm": "0.3.2",
+    "dnpc": "0.1.4",
+    "newCapture": false
+  },
+  {
+    "name": "animation-clips.png",
+    "source": "C:/Users/hodu3/Desktop/[COMMON] Dochi`s BattleWorks/fabric/verification/layout-clipping-2026-11-13/with-drm/en-texture-clips.png",
+    "environment": {
+      "minecraft": "1.21.1",
+      "loader": "Fabric",
+      "locale": "en_us",
+      "width": 960,
+      "height": 540
+    },
+    "sha256": "29010b37196f7676b9090e67689ba216947c865c3cf486955bb94aa78f58d8c9",
+    "unchangedCopy": true,
+    "battleworks": "0.1.7",
+    "drm": "0.3.2",
+    "dnpc": "0.1.4",
+    "newCapture": false
+  }
+]

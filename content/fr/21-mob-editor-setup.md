@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Débutants et créateurs de combat
 tags:
   - battleworks
@@ -16,21 +16,19 @@ translationSource: en
 translationMethod: assisted
 ---
 
-## 1. Préparer l’installation de la pratique
+## 1. Préparer des fichiers compatibles
 
-C'est la combinaison utilisée pour les écrans capturés et le test de première attaque. Installer **BattleWorks, DRM and an NPC mod**. Pour les autres Minecraft/loader fichiers, voir [choix d'installation](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660).
+Utilisez BattleWorks **0.1.7** pour votre version exacte de Minecraft et votre chargeur. Gardez des installations client et serveur compatibles et installez les dépendances déclarées par le fichier choisi.
 
-| Composante | Cet exercice |
-| --- | --- |
-| Minecraft / chargeur | 1.21.1 / NeoForge |
-| Java | 21 |
-| BattleWorks | 0.1.6 |
-| DRM | 0.3.1 |
-| NPC | DNPC 0.1.3 |
+| Minecraft | Chargeur BattleWorks | Java |
+| --- | --- | --- |
+| 1.20.1 | Forge | 17 |
+| 1.21.1 | Fabric ou NeoForge | 21 |
+| 26.3 | Fabric ou NeoForge | 25 |
 
-Installez leurs dépendances correspondantes dans la même instance. Cette table enregistre une combinaison testée ; vérifiez les fichiers sélectionnés Minecraft, le chargeur et les exigences avant de remplacer une installation compatible existante. Associez également les installations serveur et client.
+**DRM est facultatif**, y compris pour ouvrir les éditeurs autonomes. DNPC fournit l'acteur de cet exercice. Ajoutez DRM, des bibliothèques d'animation, mods de magie ou fournisseurs de modèles uniquement pour les fonctions utilisées ; leurs ressources sont distinctes du JSON de combat.
 
-Les acteurs CustomNPCs pris en charge sont également disponibles sur Forge 1.20.1 et Fabric/NeoForge 1.21.1. **Use the DNPC workflow on 26.3 and later** ; CustomNPCs y est exclu.
+CustomNPCs est facultatif sur Forge 1.20.1 et Fabric / NeoForge 1.21.1. Il est exclu à partir de 26.3 ; utilisez DNPC sur ces versions. Les anciennes captures et vidéos de 0.1.6 gardent leurs versions réelles.
 
 ## 2. Créer une pratique DNPC
 
@@ -46,9 +44,12 @@ Une épée tenue permet de communiquer l'attaque. L'exercice inflige des dégât
 
 ## 3. Ouvrir BattleWorks pour le PNJ
 
-Sélectionnez le PNJ de pratique avec le noyau DRM et ouvrez son éditeur BattleWorks. Chargez un fichier de combat existant ou choisissez **Create New**, puis continuez avec [votre première attaque en mêlée ](#mob-editor/battleworks-first-attack).
+1. En Créatif, trouvez la **BattleWorks Wand** dans l'onglet propre à BattleWorks. Elle apparaît aussi dans l'onglet DNPC lorsqu'il est disponible.
+2. Utilisez la baguette sur un PNJ compatible pour ouvrir son sélecteur d'éditeurs. Utilisez-la dans le vide pour créer sans PNJ associé. La commande est `/battleworks editor` ; les permissions du serveur s'appliquent.
+3. Choisissez BattleWorks, puis **Load Existing**, **Use Default** ou **Create New**. Les valeurs par défaut sont des modèles ; enregistrez une copie de travail.
+4. Commencez par [l'édition simple et les recettes](#mob-editor/battleworks-authoring), ou continuez avec [votre première attaque](#mob-editor/battleworks-first-attack).
 
-La catégorie de fichier-application du PNJ est **Battlework JSON**. Si vous avez commencé à créer sans PNJ, enregistrez le fichier, sélectionnez-le dans le catalogue de ce PNJ et appuyez sur **Apply Battlework**. Pour un autre modèle, configurez d'abord l'apparence DNPC et sa connexion [animation](#mob-editor/battleworks-animation).
+Avec DRM installé, Core reste un autre point d'entrée. La catégorie d'application est **Battlework JSON**. Pour un fichier créé sans PNJ, choisissez-le dans le catalogue de l'acteur et appuyez sur **Apply Battlework**. Préparez les autres modèles via leur apparence et la [connexion d'animation](#mob-editor/battleworks-animation).
 
 ## 4. Ajoutez des intégrations lorsque la fonctionnalité en a besoin
 

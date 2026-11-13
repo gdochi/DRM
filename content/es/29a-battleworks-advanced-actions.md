@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -84,21 +84,21 @@ No todas las entidades mod registradas admiten la creación genérica. Usa una v
 
 Elija entre el lanzamiento automático y una versión explícita anterior. Los límites son 64 por acción y 128 proyectiles manejados en vivo por lanzador. Empieza con poco.
 
-Los elementos visuales utilizados para las construcciones no son botín de recolección. Configure el botín por separado en CustomNPCs.
+Configura el botín en el editor del propio NPC. Los aspectos de objetos en construcciones son independientes del botín recogible.
 
-## 5. Invoca un clon de CustomNPC
+## 5. Invocar una plantilla de NPC guardada
 
-1. Guarda un clon real con las herramientas CustomNPCs.
-2. Registre su pestaña y nombre exactos.
-3. Añada **Summon Clone** con esos valores.
-4. Utilice los protectores de ID de grupo y Contar 1.
-5. Configure la ubicación de aparición y la vida útil.
-6. Opcionalmente conecte un archivo de Battlework hijo existente.
-7. Añadir **Dismiss Summons** para los guardias y probar la limpieza.
+1. Guarda una plantilla con las herramientas del proveedor instalado, como DNPC.
+2. Añade **Summon NPC** y elige **Summon source → NPC template**.
+3. Abre el selector, busca y revisa la vista previa. Elige una plantilla real del servidor; escribir un ID de entidad no crea una plantilla.
+4. Configura Group ID guards, Count 1 y el origen de aparición.
+5. En Modifiers ajusta radio y duración; opcionalmente sustituye salud máxima y velocidad o hereda el objetivo.
+6. Si quieres, conecta un Battlework File hijo existente relativo a mobs/patterns.
+7. Añade **Dismiss Summons** para guards y prueba expiración, limpieza del padre y guardado/reinicio.
 
-Un nombre de clon no es un ID de entidad arbitrario. El clon y el archivo hijo opcional deben existir en el servidor. Los archivos secundarios usan rutas en relación con criaturas/patrones.
+Una duración positiva expira tras los ticks indicados; 0 no tiene expiración temporal, pero sigue la limpieza gestionada. Propietario, grupo y expiración persisten con el mundo. Los límites son 32 por acción y 64 invocaciones vivas por padre. Evita cadenas ilimitadas de invocación.
 
-Las invocaciones son administradas por los padres y pueden heredar el destino. Los límites son 32 por acción y 64 citaciones en vivo por padre. Revise los archivos del niño para evitar las cadenas de invocación incontroladas.
+**Solo antiguo:** las instalaciones CustomNPCs compatibles anteriores a 26.3 pueden elegir la fuente clone con pestaña/nombre reales. Esa fuente no está disponible desde 26.3.
 
 ## 6. Puerta eventos posteriores con condiciones
 
@@ -139,7 +139,7 @@ Los operadores numéricos son eq, neq, gt, gte, lt e lte. Salud 50% es 0.5. Nega
 
 Avanzado `npcStats.enabled` puede aplicar máxima salud, velocidad de movimiento, velocidades específicas de fase, rango de seguimiento y regeneración de ralentí/combate. Está deshabilitado por defecto. Los valores de salud/velocidad/rango cero no aplican un nuevo valor de atributo; la regeneración cero no agrega curación automática.
 
-El primer ejercicio prepara las estadísticas base en CustomNPCs. Inspeccionar npcStats cuando un jefe importado cambia inesperadamente la salud o la velocidad.
+Prepara los atributos base en DNPC o en el editor del actor compatible. Revisa npcStats si un jefe importado cambia su salud o velocidad.
 
 ## 8. Otras acciones de estatus y control
 

@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -24,12 +24,12 @@ El 0.1.5 Particle Maker compartido utiliza **archivos separados `dochi.particles
 
 ## 1. Abrir sin un NPC
 
-1. Utilice DRM Core en modo Creativo.
-2. Elija **Visual → Particle Maker**.
-3. Crear un efecto o Cargar `particle_sample.json`.
-4. Save As una copia de trabajo.
+1. En Creativo, usa **BattleWorks Wand** en el aire.
+2. Elige **Particle Maker** en el selector independiente. Con DRM sigue disponible **Core → Visual → Particle Maker**.
+3. Crea un efecto o carga `particle_sample.json`.
+4. Usa Save As para una copia de trabajo.
 
-Una acción BattleWorks Particle Shape también puede abrir el mismo editor con **Open Particle Maker** y, a continuación, conectar el archivo guardado.
+Una acción Particle Shape también puede abrir el editor mediante **Open Particle Maker** y conectar el archivo guardado.
 
 ## 2. Construir una capa de anillo
 

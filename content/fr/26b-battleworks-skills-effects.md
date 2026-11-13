@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Débutants et créateurs de combat
 tags:
   - battleworks
@@ -34,7 +34,7 @@ Une action contient une compétence. Taper une identification inventée ne la cr
 | Prestataire et identité réelle | La compétence doit être disponible |
 | Cible, portée, ligne de visée | L'action a besoin d'une situation de casting valide |
 | Refroidissement du fournisseur | Séparé de BattleWorks |
-| Compatibilité avec Caster | Tous les sorts de joueur ne prennent pas en charge un CustomNPC |
+| Compatibilité avec Caster | Tous les sorts de joueur ne prennent pas en charge le DNPC ou ancien PNJ choisi comme lanceur |
 | Options prises en charge | Différentes compétences acceptent différents paramètres |
 
 La simulation ne lance pas de vrais sorts externes. Tester dans le monde et inspecter les messages `Battleworks skill failed`.

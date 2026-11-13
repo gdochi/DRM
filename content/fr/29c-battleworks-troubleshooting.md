@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Débutants et créateurs de combat
 tags:
   - battleworks
@@ -16,18 +16,15 @@ translationSource: en
 translationMethod: assisted
 ---
 
+## Premières vérifications
 
-## Premiers contrôles
+1. Vérifiez Minecraft, chargeur et BattleWorks 0.1.7. Vérifiez DRM et les fournisseurs externes seulement si vous utilisez leurs fonctions ; DRM est facultatif.
+2. Suivez la [préparation du PNJ](#mob-editor/mob-editor-setup). Utilisez DNPC à partir de 26.3 ; CustomNPCs est exclu.
+3. Confirmez que le chemin enregistré est celui associé au PNJ.
+4. Séparez création en Créatif et tests en Survie.
+5. Commencez par mouvement humanoïde natif et Hitbox avant les modèles ou sorts externes.
 
-1. Match Minecraft, chargeur, BattleWorks et DRM fichiers.
-2. Suivez [Préparation NPC ](#mob-editor/mob-editor-setup) pour l'exercice actuel DNPC. CustomNPCs est exclu le 26.3 et plus tard.
-3. Confirmez que le chemin enregistré est le chemin lié au PNJ.
-4. Séparez la création des tests de combat de survie.
-5. Vérifiez l'oscillation de bras de base et Hitbox avant d'ajouter des modèles ou des compétences externes.
-
-![Paramètres de combat utilisés pour le test de sauvegarde/application réel.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. Numérisation 16, FOV 360 et Saved. Avertissements: 0 ont été vérifiés avant de vérifier la perte de santé de survie. Traitez les avertissements d'enregistrement et d'aperçu du modèle séparément.")
-
-Dans cette combinaison, la balançoire de base a causé des dommages réels, tandis que des avertissements de modèle/animation de prévisualisation et une fenêtre de simulation qui ne s'est pas ouverte ont également été observés. Comparez les [Fichier de première attaque vérifié](#mob-editor/battleworks-first-attack) et combat réel avant d'abandonner la liaison PNJ en raison d'un problème de prévisualisation.
+La [première attaque](#mob-editor/battleworks-first-attack) conserve de vraies captures de combat en 0.1.6. Les anciens avertissements d'aperçu ne sont pas une restriction actuelle. Diagnostiquez séparément application du fichier, aperçu et combat.
 
 ## Le fichier est absent de la liste
 
@@ -50,17 +47,16 @@ Les fichiers de particules utilisent des particules et dochi.particles.v1 à la 
 
 Utilisez des fichiers séparés lorsque les PNJ ont besoin d'un comportement indépendant.
 
-## Les PNJ n'attaquent jamais
+## Le PNJ n'attaque jamais
 
-1. Quittez le mode Créatif/Spectateur.
-2. Confirmez CustomNPCs le ciblage hostile.
-3. Si vous utilisez une analyse de secours, vérifiez la portée, le champ de vision et la vue.
-4. Élargir temporairement la gamme de modèles, la hauteur, la phase et les conditions de santé pour isoler l'échec.
-5. Assurez-vous qu'il existe au moins un modèle de gestionnaire ordinaire.
-6. Vérifiez le score de base et zéro multiplicateurs de répétition.
-7. Vérifiez la propriété et les temps de recharge des mouvements longs.
+1. Quittez Créatif/Spectateur.
+2. Confirmez une cible valide de l'acteur ou activez Scan Without Target dans une zone isolée.
+3. Vérifiez portée, FOV et ligne de vue. La recherche de secours est distincte du filtre de relations du PNJ.
+4. Vérifiez Enabled, portée, hauteur, santé et phase du motif.
+5. Assurez un motif Manager ordinaire admissible ; vérifiez scores, multiplicateurs de répétition et recharges.
+6. Vérifiez contrôle des déplacements et limites d'arène.
 
-Comparer un PNJ séparé en utilisant le [fichier pratique simple](./assets/media/battleworks/training_swordsman.json).
+Comparez un autre PNJ avec le [fichier simple d'exercice](./assets/media/battleworks/training_swordsman.json).
 
 ## Le PNJ s'arrête avant d'atteindre son attaque
 
@@ -80,16 +76,14 @@ La portée de départ et la géométrie réelle de la hitbox sont séparées.
 
 Plusieurs hitboxes à une tique ne garantissent pas de simples dégâts cumulés.
 
-## Animation ou les attaques se chevauchent
+## Animations ou attaques se superposent
 
-1. Cochez Supprimer les attaques natives.
-2. Vérifiez les scripts de combat CustomNPC existants.
-3. Supprimez les scripts CustomNPC le cas échéant.
-4. Évitez les demandes concurrentes d'animation de scène et de chronologie.
-5. Comparez Cast Animation Ticks avec les étapes ultérieures.
-6. Vérifiez la compatibilité fournisseur/modèle.
+1. Vérifiez Suppress Native Attacks, l'IA de l'acteur et les autres contrôleurs.
+2. Uniquement avec CustomNPCs ancien compatible, vérifiez scripts et Suppress CustomNPC Scripts. Ce n'est pas requis pour DNPC ni 26.3.
+3. Évitez des demandes concurrentes d'animation d'étape et de chronologie.
+4. Comparez Cast Animation Ticks aux étapes suivantes et vérifiez modèle/fournisseur.
 
-Ne pas redémarrer une animation correspondante sur des étapes consécutives est attendu.
+Une même animation peut continuer entre étapes consécutives sans redémarrer.
 
 ## Une compétence échoue
 
@@ -139,3 +133,16 @@ La propriété BGM d'un autre PNJ ou les titres / popups qui se chevauchent peuv
 Testez les différences de proximité/moyenne/longue portée, avant/côtés/arrière, murs/escaliers/hauteur, chaque phase, chaque phase passive, chaque mort, chaque perte de cible et un autre combat. Rouvrir les fichiers pour vérifier la persistance.
 
 Pour un rapport de problème utile, incluez les versions mod, les étapes de reproduction, les fichiers de combat et référencés, le comportement attendu / réel, le dernier.log et tout rapport de plantage. Supprimez les jetons privés ou les données personnelles avant de partager les journaux.
+
+## Recettes, imports et réinitialisation d'arène
+
+| Symptôme | À vérifier |
+| --- | --- |
+| Modifier une copie change la hitbox originale | Utilisation partagée ; rendez la hitbox indépendante ou utilisez Independent copy |
+| My techniques vide sur un autre serveur | La bibliothèque appartient au joueur sur ce serveur |
+| Import rejeté | Ressources nécessaires, compatibilité du modèle, références et limites |
+| Clips absents ou sans lecture | Ressources réelles, description de source et modèle/fournisseur compatible |
+| Boss ramené ou soigné sans intention | Arène appliquée, réinitialisation à la sortie et Restore boss health |
+| Avertissement sans impact | Action Hitbox liée, tick de contact et position de la cible |
+
+Utilisez le [parcours de création](#mob-editor/battleworks-authoring), le [guide d'animation](#mob-editor/battleworks-animation) et les [instructions d'arène](#mob-editor/battleworks-encounters) pour tester séparément.

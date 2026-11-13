@@ -7,28 +7,26 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
   - combat
 ---
 
-## 1. Prepare the practice installation
+## 1. Prepare matching files
 
-This is the combination used for the captured screens and first-attack test. Install **BattleWorks, DRM and an NPC mod**. For other Minecraft/loader files, see [installation choices](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660).
+Use BattleWorks **0.1.7** for your exact Minecraft version and loader. Keep client and server installations compatible and install each selected file's declared dependencies.
 
-| Component | This exercise |
-| --- | --- |
-| Minecraft / loader | 1.21.1 / NeoForge |
-| Java | 21 |
-| BattleWorks | 0.1.6 |
-| DRM | 0.3.1 |
-| NPC | DNPC 0.1.3 |
+| Minecraft | BattleWorks loader | Java |
+| --- | --- | --- |
+| 1.20.1 | Forge | 17 |
+| 1.21.1 | Fabric or NeoForge | 21 |
+| 26.3 | Fabric or NeoForge | 25 |
 
-Install their matching dependencies in the same instance. This table records a tested combination; check the selected files' Minecraft, loader and requirements before replacing an existing compatible installation. Match server and client installations too.
+**DRM is optional**, including for standalone editor access. DNPC supplies the NPC actor for this exercise. Only add DRM, external animation libraries, spell mods or model providers when your encounter uses their features; their resources are separate from the combat JSON.
 
-Supported CustomNPCs actors are also available on Forge 1.20.1 and Fabric/NeoForge 1.21.1. **Use the DNPC workflow on 26.3 and later**; CustomNPCs is excluded there.
+CustomNPCs is an optional actor integration on Forge 1.20.1 and Fabric / NeoForge 1.21.1. It is excluded on 26.3 and later; use DNPC there. Existing 0.1.6 screenshots and videos below retain their original capture labels.
 
 ## 2. Create a practice DNPC
 
@@ -44,9 +42,12 @@ A held sword helps communicate the attack. The exercise sets damage in the Battl
 
 ## 3. Open BattleWorks for the NPC
 
-Select the practice NPC with the DRM Core and open its BattleWorks editor. Load an existing combat file or choose **Create New**, then continue with [your first melee attack](#mob-editor/battleworks-first-attack).
+1. In Creative, find the **BattleWorks Wand** in BattleWorks' standalone Creative Tab. It also appears in DNPC's tab when that tab is available.
+2. Use the wand on your supported NPC to open its editor selector. Use it in the air to author without an attached NPC. The editor command is `/battleworks editor`; server permissions still apply.
+3. Choose BattleWorks, then **Load Existing**, **Use Default**, or **Create New**. Defaults are templates; save a working copy.
+4. Start with [Simple edit and recipes](#mob-editor/battleworks-authoring), or continue with [your first melee attack](#mob-editor/battleworks-first-attack).
 
-The NPC's file-application category is **Battlework JSON**. If you started authoring without an NPC, save the file, select it in that NPC's catalog and press **Apply Battlework**. For another model, configure DNPC appearance and its [animation connection](#mob-editor/battleworks-animation) first.
+With DRM installed, its Core remains another entry point. The NPC application category is **Battlework JSON**. For a file created without an NPC, select that file in the actor's catalog and press **Apply Battlework**. Prepare a different model through its own appearance settings and [animation connection](#mob-editor/battleworks-animation).
 
 ## 4. Add integrations when the feature needs them
 

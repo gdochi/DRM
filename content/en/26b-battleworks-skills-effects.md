@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -32,7 +32,7 @@ One action holds one skill. Typing an invented ID does not create it. Additional
 | Provider and real ID | The skill must be available |
 | Target, range, line of sight | The action needs a valid cast situation |
 | Provider cooldown | Separate from BattleWorks pattern cooldown |
-| Caster compatibility | Not every player spell supports a CustomNPC |
+| Caster compatibility | Not every player spell supports the selected DNPC or legacy NPC caster |
 | Supported options | Different skills accept different settings |
 
 Simulation does not cast real external spells. Test in the world and inspect `Battleworks skill failed` messages.

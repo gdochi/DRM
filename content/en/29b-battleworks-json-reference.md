@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Reference
-version: 0.1.6
+version: 0.1.7
 audience: Creators editing JSON directly
 tags:
   - battleworks
@@ -334,3 +334,5 @@ The string limit is not the same as a universal 512-KiB file-size rule for all e
 The original detailed audit used the Forge 0.1.3 source on 2026-09-12: BattleworkDocument, BattleworkValidator, BattleworkRuntimeController, BattleworkStore, BattleworkNetwork, BattleworkAnimationPolicy, ParticleDocument, ParticleFiles, ParticleCommands, and editor controls/translations. Installation guidance was updated to 0.1.4 on 2026-10-11, then to current 0.1.5 with Fabric installation on 2026-10-24.
 
 Current storage, animation, and additional-action behavior supersede the older 0.1.2 guide. Syntax/reference validation does not establish visual contact, provider compatibility, terrain behavior, or encounter balance. Use the [live-test checklist](#mob-editor/battleworks-troubleshooting).
+
+The current 0.1.7 guide also covers standalone authoring, recipes, reusable techniques, linked warnings and arena reset rules. Combat remains dochi.battleworks.v1; do not invent a new schema version for these features. Historical sample descriptions and capture versions identify their original baseline.

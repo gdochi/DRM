@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Débutants et créateurs de combat
 tags:
   - battleworks
@@ -57,7 +57,7 @@ La ligne de visée de l'analyse affecte l'acquisition. L'exigence de ligne de mi
 
 L'espacement souhaité peut être serré dans la plage d'une attaque de non-mobilité disponible pour la phase actuelle. Alignez toujours la hitbox réelle, la plage de motifs et le terrain.
 
-Désactiver la suppression native permet à l'IA d'attaque CustomNPCs d'interférer. N'autorisez pas les contrôleurs concurrents à effectuer simplement un mouvement de PNJ stationnaire.
+Désactiver la suppression peut permettre à l'IA d'attaque de l'acteur ou à un autre contrôleur de concurrencer BattleWorks. Évitez plusieurs contrôleurs lors du diagnostic des déplacements.
 
 ## 4. Les réglages de scène prennent le dessus lors d'un motif
 
@@ -87,4 +87,4 @@ Une réinitialisation efface l'état de combat tel que l'historique, les temps d
 6. Inspectez les temps de recharge et répétez les pénalités.
 7. Vérifiez la vitesse de déplacement des PNJ, l'IA désactivée et les chemins bloqués.
 
-CustomNPCs possède toujours une configuration normale de ralenti/patrol. Orbit est un mouvement d'attaque autour d'une cible, pas un éditeur de patrouille mondiale.
+Configurez attente et patrouille dans l'éditeur de l'acteur, comme DNPC. Orbit est un mouvement d'étape autour d'une cible ; il ne modifie pas les itinéraires de patrouille du monde.

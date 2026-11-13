@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guia
-version: 0.1.6
+version: 0.1.7
 audience: Iniciantes e criadores de combate
 tags:
   - battleworks
@@ -96,11 +96,11 @@ Use [Retirada de Dano Danificado](#mob-editor/battleworks-passives) para uma res
 
 Reações básicas na fila esperam por uma abertura. Cancelamento imediato de danos usa um gatilho avançado diferente.
 
-## 8. Opcionalmente, adicione um aviso de terra
+## 8. Adicionar um aviso no chão
 
-Crie um anel no [Particle Maker](#mob-editor/battleworks-particles) e anexe-o ao Windup. Combine seu tamanho e duração com o Hitbox real.
+Para um golpe relativo ao NPC, use **Telegraph → Link ground warning to hitbox**, escolha a hitbox ou **Next hitbox contact** e, opcionalmente, **Fill until contact**. Veja [avisos de hitbox](#mob-editor/battleworks-hitboxes).
 
-Por um ataque ao jogador **posição anterior**, use [Salvar posição → aviso → Atingido atrasado](#mob-editor/battleworks-advanced-actions).
+Para um efeito próprio, crie um anel no [Particle Maker](#mob-editor/battleworks-particles) e alinhe posição, tamanho e duração ao golpe real. Para a **posição anterior** do jogador, use [salvar posição → aviso → impacto atrasado](#mob-editor/battleworks-advanced-actions). O aviso sozinho não causa dano.
 
 ## 9. Testar uma matriz de situação
 
@@ -121,3 +121,13 @@ Por um ataque ao jogador **posição anterior**, use [Salvar posição → aviso
 Reabra o arquivo salvo e verifique os valores. Inclua todas as dependências de combate, partícula, modelo, som, popup, clone e provedor.
 
 Use [arquivos e orientação de backup](#mob-editor/battleworks-files) e [dissolução de problemas](#mob-editor/battleworks-troubleshooting) antes de compartilhar.
+
+## Manter o chefe dentro da arena
+
+1. Abra **Combat Rules → Arena** e ative **Use arena bounds**.
+2. Defina Center X/Y/Z ou **Use NPC / player position**.
+3. Defina **Radius (blocks)** e **Vertical half-range**. A arena é cilíndrica, não uma seleção quadrada.
+4. Escolha **Restore boss health** e **Reset when target leaves** conforme o reinício desejado.
+5. Salve e aplique; teste o chefe e o alvo atravessando o limite separadamente.
+
+O reinício cancela combate, invocações e projéteis gerenciados e retorna o chefe a um centro carregado e seguro. Não teleporta jogadores nem força o carregamento do destino. Mantenha o centro utilizável e confira o início da próxima luta. As regras ficam desativadas até serem configuradas e aplicadas.

@@ -7,13 +7,15 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: 사용 안내
-version: 0.1.6
+version: 0.1.7
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
   - tutorial
   - combat
 ---
+
+BattleWorks 0.1.7에서는 [간단 편집과 공격 레시피](#mob-editor/battleworks-authoring)로도 시작할 수 있습니다. 이 페이지는 각 값을 배우는 제작 보조 실습을 유지합니다. 지팡이 또는 선택 연동 DRM Core로 열고, 아래 단계 세부 설정은 상세 편집에서 조정하세요. 0.1.6 촬영 자료의 버전은 그대로 표시합니다.
 
 ## 이번 실습의 완성 모습
 
@@ -106,7 +108,7 @@ Max Range는 **공격을 시작하는 거리**, Reach는 **Sweep 판정의 도�
 
 1. **Save As**에 `training/first_sword.json`을 입력하고 확인창의 **Save**로 저장합니다.
 2. NPC를 대상으로 연 상태라면 **Save**를 눌러 현재 작업 파일을 NPC에 연결합니다.
-3. NPC 없이 작업했다면 Core로 연습 NPC를 선택하고 적용 목록에서 같은 파일을 적용합니다.
+3. NPC 없이 작업했다면 지팡이 또는 선택 연동 DRM Core로 연습 NPC를 선택하고 목록에서 같은 파일을 적용합니다.
 4. 에디터를 닫습니다.
 
 같은 조합에서 실제 UI로 저장하고 피해까지 확인한 [first_sword.json](./assets/media/battleworks/first_sword.json)을 내려받아 `config/dochi_rpg_maker/mobs/patterns/training/`에 두고 Load할 수도 있습니다. 이 파일은 생성 기본 공격에 Scan Range 16·FOV 360·Same Pattern Penalty 1.0을 적용한 버전이며, 위 4절의 선택 조정 전 값입니다.

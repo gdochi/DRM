@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Débutants et créateurs de combat
 tags:
   - battleworks
@@ -16,34 +16,33 @@ translationSource: en
 translationMethod: assisted
 ---
 
-## 1. Préparer le modèle dans NPC Basic
+## 1. Préparer le modèle de l'acteur
 
-BattleWorks utilise les API de modèle et de lecture DRM. Configurez d'abord la géométrie, les textures, les ressources d'animation et les mappages sémantiques en **DRM NPC Basic**.
+Configurez d'abord l'acteur réel : dans DNPC utilisez **Appearance & Model** ; pour un modèle DRM, utilisez **DRM NPC Basic** et ses ressources. **DRM est facultatif**. Sans DRM, BattleWorks utilise le mouvement humanoïde natif et les fournisseurs facultatifs compatibles ; avec DRM installé, DRM garde le contrôle de l'animation.
 
-| Modèle ou méthode | Source appropriée |
+| Modèle ou méthode | Source adaptée |
 | --- | --- |
-| humanoïde normal | Main-Hand Swing ou fournisseur de mouvement humanoïde installé |
-| DRM Modèle Gecko | Un vrai clip du fichier d'animation de ce modèle |
-| DRM Entité modifiée | Clips natifs exposés par son intégration DRM |
-| DRM Comportement | Un mappage sémantique configuré tel que l'attaque |
-| Essai de géométrie seulement | Aucune animation / Aucun |
+| Humanoïde normal | Main-Hand Swing ou source compatible Player Animator / PAL |
+| Mouvement d'arme Better Combat | Ressources Better Combat compatibles et arme prise en charge |
+| Modèle Gecko | Clip réel exposé par le fournisseur et le fichier d'animation |
+| Entité modifiée / Behavior DRM | Clips ou correspondances sémantiques de l'intégration DRM |
+| Test de géométrie seule | No Animation / None explicite |
 
-Un clip Gecko et un calque de pose humanoïde Better Combat ne sont pas interchangeables.
-
-![Scène d'action Animation + Hitbox paramètres avec main_hand.](assets/media/guides/battleworks-016-neo1211/battleworks-stage-animation.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Build Assist généré Vanilla Swing / main_hand à la vitesse 1. Choisissez l'animation ouvre les clips; Modifier cette hitbox ouvre la détection de hit.")
-
-Pour les DNPC ordinaires, préparer l'apparence dans le **DNPC editor → Appearance & Model**. Trouver la cartographie des étapes à travers la timeline **Action → Stage → Animation + Hitbox**. Les instructions de base du PNJ s'appliquent aux paramètres du modèle DRM.
+Les clips humanoïdes personnalisés peuvent apparaître sous leur propre espace de noms ; ils ne se limitent pas aux identifiants Better Combat. Un clip Gecko et une couche humanoïde ne sont pas interchangeables. CustomNPCs reste une intégration ancienne facultative uniquement avant 26.3.
 
 ## 2. Sélectionner un clip dans Hitbox Library
 
-1. Ouvrez **Edit this hitbox** depuis l'action.
-2. Choisissez l'utilisation sous **Pattern:**.
-3. Sélectionnez Action dans la barre d'outils du modèle.
-4. Recherchez **Clips** et sélectionnez un clip réel.
-5. Appuyez sur Lecture, inspectez le contact, puis arrêtez.
-6. Modifiez la tique d'événement du modèle pour correspondre au contact.
+1. Depuis l'action du motif, ouvrez **Edit this hitbox**.
+2. Dans **Pattern:** choisissez l'utilisation liée et son étape, par exemple Action.
+3. Lisez la description de source au-dessus de **Clips**, puis cherchez par nom ou identifiant.
+4. Sélectionnez un clip compatible, appuyez sur Play, vérifiez le contact puis Stop.
+5. Ajustez l'événement d'impact au contact et enregistrez/appliquez.
 
-Pattern sélectionne une utilisation ; Clips sélectionne une animation. Un aperçu détaché peut utiliser un modèle enregistré ou un mannequin par défaut. Réouvrez avec le PNJ réel si le modèle de prévisualisation ne correspond pas.
+Une sélection sans motif lié est temporaire dans l'aperçu. Choisissez l'utilisation voulue pour enregistrer son animation d'étape. L'aperçu séparé utilise l'apparence copiée du PNJ, les réglages enregistrés ou un acteur par défaut ; rouvrez avec le PNJ réel si le modèle diffère.
+
+![Source, recherche et noms longs dans Hitbox Library.](assets/media/guides/battleworks-017-20261113/animation-clips.png "BattleWorks 0.1.7 / Fabric 1.21.1 / DRM 0.3.2 / DNPC 0.1.4, avec des ressources Better Combat installées. La description passe à la ligne au-dessus de la recherche et le nom long apparaît au survol. Aucun mouvement d'étape compatible n'est affecté dans cette image ; elle ne démontre pas la lecture.")
+
+Les noms longs restent sur une ligne et révèlent leur texte complet au survol. Faites glisser le séparateur modèle/liste pour élargir, ou actualisez après le chargement des ressources.
 
 ## 3. Trois lieux d'animation
 
@@ -92,16 +91,15 @@ Ce qui suit est un objet d'animation **stage**, pas un fichier de combat complet
 
 Sans un choix explicite, les anciennes étapes hitbox-only peuvent migrer vers le swing de base.
 
-## 7. Diagnostiquer une liste de clip vide
+## 7. Diagnostiquer une liste vide ou incompatible
 
-1. Vérifiez le fournisseur de modèle de PNJ Basic.
-2. Distinguer la géométrie `.geo.json` de l'animation `.animation.json`.
-3. Confirmez que le modèle fait référence à l'élément d'animation prévu.
-4. Vérifiez les fournisseurs optionnels et les ressources client.
-5. Rafraîchir après le chargement des ressources asynchrones.
-6. Vérifiez que DRM expose réellement le clip natif nécessaire.
+1. Vérifiez le modèle réel et la description de source au-dessus de Clips.
+2. Pour Gecko, distinguez géométrie `.geo.json` et animation `.animation.json`, puis vérifiez la ressource liée.
+3. Pour les humanoïdes, vérifiez le fournisseur Player Animator / PAL correspondant et les ressources réelles du client. Better Combat n'est nécessaire que pour ses propres mouvements.
+4. Actualisez après le chargement asynchrone. Utilisez les clips proposés pour le modèle actuel sans inventer d'identifiants.
+5. Avec DRM, vérifiez correspondances et lecture ; sans DRM, testez le mouvement natif avant les clips facultatifs.
 
-Utilisez la liste des PNJ actuels au lieu d'inventer des identifiants.
+Une entrée visible ne prouve pas qu'un modèle incompatible peut la lire. Comparez le PNJ réel après enregistrement et application.
 
 ## Modèles instantanés
 

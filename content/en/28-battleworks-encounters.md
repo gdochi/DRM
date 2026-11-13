@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -96,9 +96,9 @@ Basic queued reactions wait for an opening. Immediate damage cancellation uses a
 
 ## 8. Optionally add a ground warning
 
-Create a ring in [Particle Maker](#mob-editor/battleworks-particles) and attach it to Windup. Match its size and duration to the actual Hitbox.
+For an NPC-relative sweep, use stage **Telegraph → Link ground warning to hitbox**, select the warning hitbox or **Next hitbox contact**, and optionally **Fill until contact**. See [hitbox warnings](#mob-editor/battleworks-hitboxes).
 
-For an attack on the player's **previous position**, use [save position → warning → delayed hit](#mob-editor/battleworks-advanced-actions).
+For a custom visual, create a ring in [Particle Maker](#mob-editor/battleworks-particles) and match its position, size and duration to the real hit. For the player's **previous position**, use [save position → warning → delayed hit](#mob-editor/battleworks-advanced-actions). The warning alone does not create damage.
 
 ## 9. Test a situation matrix
 
@@ -119,3 +119,13 @@ For an attack on the player's **previous position**, use [save position → warn
 Reopen the saved file and check the values. Include all combat, particle, model, sound, popup, clone, and provider dependencies.
 
 Use [files and backup guidance](#mob-editor/battleworks-files) and [troubleshooting](#mob-editor/battleworks-troubleshooting) before sharing.
+
+## Keep the boss inside an arena
+
+1. Open **Combat Rules → Arena** and enable **Use arena bounds**.
+2. Set Center X/Y/Z or **Use NPC / player position**.
+3. Set **Radius (blocks)** and **Vertical half-range**. The arena is cylindrical, not a square selection.
+4. Choose **Restore boss health** and **Reset when target leaves** for the intended reset behavior.
+5. Save and apply, then test the boss and target crossing the boundary separately.
+
+An arena reset cancels managed combat, summons and projectiles and returns the boss to a loaded, safe center. It does not teleport players or force-load an unloaded destination. Keep the center usable, then verify another fight starts correctly. Arena rules are disabled until you configure and apply them.

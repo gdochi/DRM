@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Débutants et créateurs de combat
 tags:
   - battleworks
@@ -96,11 +96,11 @@ Utilisez [Ranged Damage retreat](#mob-editor/battleworks-passives) pour répondr
 
 Les réactions basiques attendent une ouverture. L'annulation immédiate des dommages utilise un déclencheur avancé différent.
 
-## 8. Ajouter éventuellement un avertissement au sol
+## 8. Ajouter un avertissement au sol
 
-Créer un anneau dans [fabricant particules](#mob-editor/battleworks-particles) et l'attacher à Windup. Faites correspondre sa taille et sa durée à la Hitbox réelle.
+Pour un balayage relatif au PNJ, utilisez **Telegraph → Link ground warning to hitbox**, choisissez la hitbox ou **Next hitbox contact**, puis éventuellement **Fill until contact**. Consultez [les avertissements de hitbox](#mob-editor/battleworks-hitboxes).
 
-Pour une attaque sur le joueur **position précédente**, utiliser [position de sauvegarde → avertissement → hit retardé](#mob-editor/battleworks-advanced-actions).
+Pour un effet personnalisé, créez un anneau dans [Particle Maker](#mob-editor/battleworks-particles) et alignez position, taille et durée sur l'impact réel. Pour l'**ancienne position** du joueur, utilisez [enregistrer → avertir → frapper plus tard](#mob-editor/battleworks-advanced-actions). L'avertissement seul ne cause aucun dégât.
 
 ## 9. Tester une matrice de situation
 
@@ -121,3 +121,13 @@ Pour une attaque sur le joueur **position précédente**, utiliser [position de 
 Rouvrir le fichier enregistré et vérifier les valeurs. Incluez toutes les dépendances de combat, de particule, de modèle, de son, de popup, de clone et de fournisseur.
 
 Utilisez [fichiers et guide de sauvegarde](#mob-editor/battleworks-files) et [troubleshooting](#mob-editor/battleworks-troubleshooting) avant de partager.
+
+## Garder le boss dans l'arène
+
+1. Ouvrez **Combat Rules → Arena** et activez **Use arena bounds**.
+2. Réglez Center X/Y/Z ou **Use NPC / player position**.
+3. Réglez **Radius (blocks)** et **Vertical half-range**. L'arène est cylindrique, pas une sélection carrée.
+4. Choisissez **Restore boss health** et **Reset when target leaves** selon la réinitialisation voulue.
+5. Enregistrez et appliquez ; testez séparément le boss et la cible traversant la limite.
+
+La réinitialisation annule combat, invocations et projectiles gérés, puis ramène le boss à un centre chargé et sûr. Elle ne téléporte pas les joueurs et ne force pas le chargement de la destination. Gardez le centre utilisable et vérifiez le combat suivant. Les règles sont désactivées avant configuration et application.

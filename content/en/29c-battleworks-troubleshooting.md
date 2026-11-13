@@ -7,25 +7,22 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
   - combat
 ---
 
-
 ## First checks
 
-1. Match Minecraft, loader, BattleWorks and DRM files.
-2. Follow [NPC preparation](#mob-editor/mob-editor-setup) for the current DNPC exercise. CustomNPCs is excluded on 26.3 and later.
+1. Match Minecraft, loader and BattleWorks 0.1.7. Match DRM and external providers only when you use their features; DRM is optional.
+2. Follow [NPC preparation](#mob-editor/mob-editor-setup). Use DNPC on 26.3 and later; CustomNPCs is excluded there.
 3. Confirm that the saved path is the path bound to the NPC.
 4. Separate Creative authoring from Survival combat tests.
-5. Verify the basic arm swing and Hitbox before adding external models or skills.
+5. Start with a native humanoid swing and a Hitbox before adding external models or spells.
 
-![Combat settings used for the actual save/apply test.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. Scan Range 16, FOV 360 and Saved. Warnings: 0 were checked before verifying Survival health loss. Treat saving and model-preview warnings separately.")
-
-In this combination the basic swing caused real damage, while preview model/animation warnings and a Simulation window that did not open were also observed. Compare the [verified first-attack file](#mob-editor/battleworks-first-attack) and actual combat before discarding the NPC binding because of a preview issue.
+The [first-attack exercise](#mob-editor/battleworks-first-attack) retains actual 0.1.6 combat captures. Its historical preview warnings are not a current-version restriction. Diagnose file application, model preview and real combat separately.
 
 ## The file is missing from the list
 
@@ -51,12 +48,11 @@ Use separate files when NPCs need independent behavior.
 ## The NPC never attacks
 
 1. Leave Creative/Spectator mode.
-2. Confirm CustomNPCs hostile targeting.
-3. If using fallback scanning, check range, FOV, and sight.
-4. Temporarily widen pattern range, height, phase, and health conditions to isolate the failure.
-5. Ensure at least one ordinary Manager pattern exists.
-6. Check Base Score and zero repeat multipliers.
-7. Check long movement ownership and cooldowns.
+2. Confirm the selected actor supplies a valid target, or enable Scan Without Target in an isolated test area.
+3. Check scan range, FOV and line of sight. Fallback scanning is separate from NPC relationship filtering.
+4. Check pattern Enabled, range, height, health and phase conditions.
+5. Ensure at least one ordinary Manager pattern is eligible; inspect score, repeat multipliers and cooldowns.
+6. Check movement ownership and arena boundaries.
 
 Compare a separate NPC using the [simple practice file](./assets/media/battleworks/training_swordsman.json).
 
@@ -80,14 +76,12 @@ Several hitboxes at one tick do not guarantee simple summed damage.
 
 ## Animation or attacks overlap
 
-1. Check Suppress Native Attacks.
-2. Inspect existing CustomNPC combat scripts.
-3. Test Suppress CustomNPC Scripts where appropriate.
-4. Avoid competing stage and timeline animation requests.
-5. Compare Cast Animation Ticks with later stages.
-6. Check provider/model compatibility.
+1. Check Suppress Native Attacks and the actor's own combat AI or other controllers.
+2. Only on supported older CustomNPCs installations, inspect combat scripts and Suppress CustomNPC Scripts. This is not a DNPC or 26.3 requirement.
+3. Avoid competing stage and timeline animation requests.
+4. Compare Cast Animation Ticks with later stages and verify the model/provider.
 
-Not restarting a matching animation across consecutive stages is expected.
+A matching animation can continue across consecutive stages without restarting.
 
 ## A skill fails
 
@@ -137,3 +131,16 @@ Another NPC's BGM ownership or overlapping titles/popups can also change the vis
 Test close/medium/far range, front/sides/rear, walls/stairs/height differences, every phase, each passive, death, target loss, and another fight. Reopen files to verify persistence.
 
 For a useful issue report, include mod versions, reproduction steps, the combat and referenced files, expected/actual behavior, latest.log, and any crash report. Remove private tokens or personal data before sharing logs.
+
+## Recipes, library imports and arena resets
+
+| Symptom | Check |
+| --- | --- |
+| A copied attack changes the original hitbox | Check shared usage; make the hitbox independent or use Independent copy |
+| My techniques is empty on another server | The library belongs to a player on that server |
+| Technique import is rejected | Required resources, animation-model compatibility, references and document limits |
+| Clips are missing or do not play | Actual resources and source description; choose a compatible model/provider |
+| Boss returns or heals unexpectedly | Applied Arena bounds, target-leaves reset and Restore boss health |
+| Warning appears but no hit occurs | The linked Hitbox action, contact tick and target position |
+
+Use the [authoring workflow](#mob-editor/battleworks-authoring), [animation guide](#mob-editor/battleworks-animation) and [arena instructions](#mob-editor/battleworks-encounters) to check each feature separately.

@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Référence
-version: 0.1.6
+version: 0.1.7
 audience: Créateurs éditant directement JSON
 tags:
   - battleworks
@@ -336,3 +336,5 @@ La limite de chaîne n'est pas la même qu'une règle universelle de taille de f
 L'audit détaillé original utilisait la source Forge 0.1.3 sur 2026-09-12 : BattleworkDocument, BattleworkValidator, BattleworkRuntimeController, BattleworkStore, BattleworkNetwork, BattleworkAnimationPolicy, ParticleDocument, ParticleFiles, ParticleCommands, et les contrôles/traductions des éditeurs. Le guide d'installation a été mis à jour à 0.1.4 le 2026-10-11, puis au courant 0.1.5 avec l'installation Fabric sur 2026-10-24.
 
 Le stockage actuel, l'animation et le comportement d'action supplémentaire remplacent l'ancien guide 0.1.2. La validation de la syntaxe/référence n'établit pas de contact visuel, de compatibilité avec les fournisseurs, de comportement du terrain ou d'équilibre des rencontres. Utilisez la [liste de contrôle du test en direct](#mob-editor/battleworks-troubleshooting).
+
+Le guide actuel de 0.1.7 couvre aussi édition autonome, recettes, techniques réutilisables, avertissements liés et réinitialisation d'arène. Le combat garde dochi.battleworks.v1 ; n'inventez pas une nouvelle version de schéma pour ces fonctions. Les descriptions d'exemples et versions des anciennes captures indiquent leur origine historique.

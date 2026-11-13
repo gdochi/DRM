@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guia
-version: 0.1.6
+version: 0.1.7
 audience: Iniciantes e criadores de combate
 tags:
   - battleworks
@@ -57,7 +57,7 @@ A configuração de linha de visão da varredura afeta a aquisição. A exigênc
 
 O espaçamento desejado pode ser fixado no alcance de um ataque não-mobilidade disponível para a fase atual. Ainda alinham a caixa, o padrão e o terreno.
 
-Desativar a supressão nativa permite CustomNPCs Ataque a IA para interferir. Não permita que os controladores concorrentes simplesmente façam um movimento de NPC estacionário.
+Desativar a supressão pode permitir que a IA de ataque do ator ou outro controlador compita com BattleWorks. Evite controladores concorrentes ao diagnosticar movimento.
 
 ## 4. Configurações de palco assumir durante um padrão
 
@@ -87,4 +87,4 @@ Um reset limpa o estado de combate, como história, cooldowns, fases e estado pa
 6. Inspecione as recargas e repita as penalidades.
 7. Verifique a velocidade de movimento do NPC, IA desabilitada e caminhos bloqueados.
 
-CustomNPCs ainda possui configuração ociosa/patrulha comum. Orbit é um movimento de ataque em torno de um alvo, não um editor de patrulha mundial.
+Configure espera e patrulha no editor do próprio ator, como DNPC. Orbit é movimento de etapa ao redor do alvo; não edita rotas de patrulha do mundo.

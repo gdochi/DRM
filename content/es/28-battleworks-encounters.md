@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -96,11 +96,11 @@ Usa [Retiro de daño de rango](#mob-editor/battleworks-passives) para obtener un
 
 Las reacciones básicas en cola esperan una apertura. La cancelación inmediata de daños utiliza un disparador avanzado diferente.
 
-## 8. Opcionalmente agregue una advertencia de tierra
+## 8. Añadir un aviso en el suelo
 
-Crea un anillo en [Particle Maker](#mob-editor/battleworks-particles) y conéctalo a Windup. Ajusta su tamaño y duración al Hitbox real.
+Para un barrido relativo al NPC, usa **Telegraph → Link ground warning to hitbox**, selecciona la hitbox o **Next hitbox contact** y, opcionalmente, **Fill until contact**. Consulta [avisos de hitbox](#mob-editor/battleworks-hitboxes).
 
-Para un ataque en la posición anterior del jugador ****, use [ guardar la posición → advertencia → golpe retrasado ](#mob-editor/battleworks-advanced-actions).
+Para un efecto propio, crea un anillo en [Particle Maker](#mob-editor/battleworks-particles) y ajusta posición, tamaño y duración al impacto real. Para la **posición anterior** del jugador, usa [guardar posición → aviso → impacto retrasado](#mob-editor/battleworks-advanced-actions). El aviso solo no causa daño.
 
 ## 9. Probar una matriz de situación
 
@@ -121,3 +121,13 @@ Para un ataque en la posición anterior del jugador ****, use [ guardar la posic
 Vuelva a abrir el archivo guardado y compruebe los valores. Incluye todas las dependencias de combate, partícula, modelo, sonido, popup, clon y proveedor.
 
 Utilice [archivos y guía de copia de seguridad](#mob-editor/battleworks-files) y [solución de problemas](#mob-editor/battleworks-troubleshooting) antes de compartir.
+
+## Mantener al jefe dentro de la arena
+
+1. Abre **Combat Rules → Arena** y activa **Use arena bounds**.
+2. Configura Center X/Y/Z o **Use NPC / player position**.
+3. Configura **Radius (blocks)** y **Vertical half-range**. La arena es cilíndrica, no una selección cuadrada.
+4. Elige **Restore boss health** y **Reset when target leaves** según el reinicio deseado.
+5. Guarda y aplica; prueba por separado al jefe y al objetivo cruzando el límite.
+
+El reinicio cancela combate, invocaciones y proyectiles gestionados y devuelve al jefe a un centro cargado y seguro. No teletransporta jugadores ni fuerza la carga del destino. Mantén el centro utilizable y comprueba la siguiente pelea. Las reglas están desactivadas hasta configurarlas y aplicarlas.

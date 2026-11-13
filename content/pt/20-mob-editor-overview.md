@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guia
-version: 0.1.6
+version: 0.1.7
 audience: Iniciantes e criadores de combate
 tags:
   - battleworks
@@ -18,11 +18,11 @@ translationMethod: assisted
 
 ## Comece com um ataque corpo a corpo legível
 
-BattleWorks ** 0.1.6** é o complemento de combate NPC do DRM para Forge 1.20.1, Fabric / NeoForge 1.21.1 e construções separadas 26.3. Tempo de combate do autor, hitboxes, movimento e fases.
+O BattleWorks **0.1.7** permite criar tempos de ataque, hitboxes, movimento e fases de chefes para NPCs. Use a versão correspondente: Forge 1.20.1, Fabric / NeoForge 1.21.1 ou as compilações separadas de Fabric / NeoForge 26.3.
 
-Os exercícios abaixo usam **Forge 1.20.1 and CustomNPCs**. Verifique [0.1.6 limites de instalação](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660) para outras carregadores de mods e 26.3 DNPC.
+**DRM é opcional.** Abra os editores com a BattleWorks Wand e crie arquivos sem um NPC conectado. Uma luta real precisa de um ator compatível, como DNPC. CustomNPCs continua opcional nos destinos antigos e está excluído a partir de 26.3.
 
-Comece com um ataque corpo a corpo lento em um NPC humanoide normal; feitiços opcionais e mods de animação são desnecessários para o primeiro exercício.
+Comece por [edição simples e receitas](#mob-editor/battleworks-authoring), ou siga o exercício detalhado abaixo. Um movimento básico de braço e uma hitbox não precisam de mods externos de magia ou animação.
 
 ## Siga este caminho de aprendizagem
 
@@ -39,21 +39,21 @@ Comece com um ataque corpo a corpo lento em um NPC humanoide normal; feitiços o
 
 Continue com [habilidades e apresentação](#mob-editor/battleworks-skills-effects), [Particle Maker](#mob-editor/battleworks-particles), e [ações avançadas](#mob-editor/battleworks-advanced-actions) quando o encontro básico funcionar.
 
-## Onde cada cenário pertence
+## Onde configurar cada recurso
 
-![BattleWorks Workbench padrão com padrões à esquerda, Windup/Ação/Recuperação no meio e propriedades padrão/estágio selecionadas à direita.](assets/media/guides/battleworks-016-neo1211/workbench.png "O exemplo padrão do Basic Slash em BattleWorks 0.1.6 em NeoForge 1.21.1. Selecione um padrão à esquerda, um palco no meio e, em seguida, edite suas propriedades à direita.")
+![Inspetor Simple edit e linha do tempo do ataque.](assets/media/guides/battleworks-017-20261113/simple-edit.png "BattleWorks 0.1.7 / NeoForge 1.21.1 / DRM 0.3.2 / DNPC 0.1.4. Basic Slash padrão selecionado. A imagem mostra a organização da edição, não a criação por receita nem dano real.")
 
-Use **Pattern Workbench** para a sequência de ataque, **Hitbox Library** para a forma que causa dano, e **Combat Rules** para perseguição e seleção de padrões. Para construir um primeiro ataque respondendo perguntas, comece com **Create New → Pattern Build Assist**. A assistência está desativada depois de carregar um exemplo existente.
+Use **Pattern Workbench** para a sequência, **Hitbox Library** para a geometria de dano e **Combat Rules** para alvos, fases e arena. **Simple edit** reúne valores comuns; **Detailed edit** preserva e mostra condições, eventos, movimento e animação completos. [Receitas e My techniques](#mob-editor/battleworks-authoring) oferecem pontos de partida reutilizáveis.
 
 | Tarefa | Editor |
 | --- | --- |
-| NPC saúde, equipamentos, facções, gotas, respawning | CustomNPCs |
-| Modelos, texturas, animações e mapeamentos de comportamento | DRM NPC Básico |
-| Padrões, hitboxes, tempo de combate, movimento, fases | BattleWorks |
-| Arquivos de partículas visuais reutilizáveis | Visual → Particle Maker |
-| Aparência popup e apresentação de diálogo | DRM Popup Maker e sua GUI |
+| Nome, vida base, equipamento, relações, saques e reaparecimento | Editor do próprio ator, como DNPC |
+| Aparência e modelo | DNPC Appearance & Model ou provedor instalado; DRM NPC Basic para modelos DRM |
+| Padrões, hitboxes, tempos, movimento e fases | BattleWorks |
+| Arquivos reutilizáveis de efeitos visuais | Particle Maker no seletor independente ou na categoria Visual do DRM |
+| Popups e diálogos DRM | DRM e suas ferramentas de popup/GUI |
 
-Documentos importados avançados também podem permitir que `npcStats` substitua atributos de combate selecionados. Os exercícios para iniciantes deixam esse recurso desativado e preparam estatísticas básicas em CustomNPCs.
+Documentos importados podem ativar npcStats para substituir atributos de combate. Confira essas opções se a aplicação de um chefe alterar vida ou movimento.
 
 ## Cinco termos que você vai usar
 

@@ -7,43 +7,40 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: 사용 안내
-version: 0.1.6
+version: 0.1.7
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
   - combat
 ---
 
-## 1. NPC Basic에서 모델부터 확인하기
+## 1. 실제 NPC의 모델부터 준비하기
 
-BattleWorks는 DRM이 제공하는 모델과 재생 기능을 사용합니다. 모델 파일·텍스처·기본 동작 연결은 **DRM → NPC Basic**에서 먼저 준비합니다.
+먼저 실제 NPC를 설정합니다. DNPC는 **외형 및 모델**, DRM 모델은 **DRM NPC Basic**과 해당 에셋을 사용합니다. **DRM은 선택 사항**입니다. DRM이 없으면 기본 인간형 휘두르기와 지원하는 선택 애니메이션 제공자를 사용할 수 있고, DRM이 설치되어 있으면 DRM이 애니메이션 재생을 담당합니다.
 
-| 사용하는 모델 / 방식 | 연결할 애니메이션 |
+| 모델·방식 | 사용하는 소스 |
 | --- | --- |
-| 일반 인간형 DNPC / 구형 대상의 CustomNPC | 기본 Main-Hand Swing 또는 설치된 인간형 모션 |
-| DRM Gecko 모델 | 해당 모델의 애니메이션 파일에 실제 존재하는 Gecko 클립 |
-| DRM 모디드 엔티티 모델 | 해당 DRM 연동이 노출하는 네이티브 엔티티 클립 |
-| DRM Behavior | NPC Basic에 이미 연결된 attack 같은 의미별 동작 |
-| 애니메이션 없이 판정만 확인 | 명시적으로 No Animation / None 선택 |
+| 일반 인간형 | Main-Hand Swing 또는 호환되는 Player Animator / PAL 모션 소스 |
+| Better Combat 무기 모션 | 호환되는 Better Combat 리소스와 지원 무기 |
+| Gecko 모델 | 설치한 모델 제공자와 애니메이션 파일이 제공하는 실제 클립 |
+| DRM 모드 엔티티·Behavior | DRM 연동이 제공하는 클립 또는 의미 매핑 |
+| 모양만 시험 | 명시적인 No Animation / None |
 
-Gecko 모델에 인간형 Better Combat 모션을 연결해도 같은 방식으로 움직이지 않습니다. 제공 모드가 없거나 모델과 맞지 않으면 미리보기 경고나 검증 오류가 생길 수 있습니다.
+사용자 인간형 클립은 자기 네임스페이스로 표시될 수 있으며 Better Combat ID로 제한되지 않습니다. Gecko 클립과 인간형 포즈 레이어는 서로 바꿔 쓸 수 없습니다. CustomNPCs는 26.3 미만의 선택 연동에만 해당합니다.
 
-![Action 단계의 Animation + Hitbox 설정과 main_hand 모션.](assets/media/guides/battleworks-016-neo1211/battleworks-stage-animation.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 제작 보조가 만든 Action은 Vanilla Swing / main_hand / 속도 1입니다. Choose animation으로 클립을 고르고 Edit this hitbox로 판정 편집을 엽니다.")
+## 2. 히트박스 보관함에서 클립 고르기
 
-일반 DNPC는 **DNPC 편집기의 Appearance & Model**에서 외형을 준비합니다. BattleWorks에서는 타임라인 위 **Action → 오른쪽 Stage → Animation + Hitbox**로 단계 모션을 찾습니다. 아래 NPC Basic 설명은 DRM의 모델 설정을 사용하는 경로에 해당합니다.
+1. 패턴의 액션에서 **이 히트박스 편집**을 엽니다.
+2. **Pattern:**에서 연결된 사용처를 고르고 Action 등 단계를 선택합니다.
+3. **Clips** 위의 소스 설명을 읽고 이름이나 ID로 검색합니다.
+4. 호환 클립을 선택한 뒤 Play로 접촉 자세를 확인하고 Stop을 누릅니다.
+5. 실제 접촉에 맞춰 패턴의 타격 이벤트를 조정하고 저장·적용합니다.
 
-## 2. Hitbox Library에서 클립 고르기
+연결된 패턴 없이 고른 클립은 임시 미리보기입니다. 단계 애니메이션을 저장하려면 원하는 사용처를 선택하세요. 분리 미리보기는 연결 NPC의 외형 복사본, 저장한 미리보기 설정 또는 기본 액터를 사용합니다. 모델이 다르면 실제 NPC를 대상으로 다시 여세요.
 
-1. 패턴의 Hitbox 액션에서 **Edit this hitbox**를 엽니다.
-2. **Pattern:**에서 연결 위치를 고릅니다.
-3. 모델 위 단계 선택에서 **Action**을 고릅니다.
-4. 모델 옆 **Clips** 목록에서 이름을 검색하고 실제 클립을 선택합니다.
-5. **Play**로 재생하고 **Stop**으로 중지합니다.
-6. 칼이 닿는 자세와 히트박스 표시를 비교합니다.
+![히트박스 보관함의 클립 소스·검색·긴 클립 이름.](assets/media/guides/battleworks-017-20261113/animation-clips.png "BattleWorks 0.1.7 / Fabric 1.21.1 / DRM 0.3.2 / DNPC 0.1.4, Better Combat 리소스 설치 환경. 소스 설명은 검색 위에서 줄바꿈되고 긴 클립 이름은 마우스를 올려 확인합니다. 이 정지 화면에는 호환 단계 모션이 지정되지 않아 재생 성공을 보여주는 장면은 아닙니다.")
 
-**Pattern:**은 히트박스를 쓰는 위치를 고르는 메뉴이고, **Clips**는 애니메이션 목록입니다. 두 메뉴를 혼동하지 마세요.
-
-아직 NPC가 연결되지 않은 미리보기는 문서의 저장된 모델 설정을 사용하거나 기본 연습 모델을 보여줄 수 있습니다. 실제 NPC 모델과 다른 경우에는 NPC를 대상으로 다시 열어 확인합니다.
+긴 클립 이름은 한 행을 유지하고 마우스를 올리면 전체 내용을 확인할 수 있습니다. 모델과 목록 사이 경계선을 끌어 폭을 늘리거나 리소스 로딩 뒤 새로고침하세요.
 
 ## 3. 애니메이션을 넣는 세 위치
 
@@ -96,16 +93,15 @@ Gecko 클립은 DRM의 렌더 시계를 사용하므로 임의의 틱으로 이�
 
 이것은 **단계의 animation 객체 예시**이며 전투 문서 전체가 아닙니다. explicitSelection이 없는 오래된 히트박스 단계는 호환 처리 중 기본 팔 휘두르기로 바뀔 수 있습니다.
 
-## 7. 목록이 비었을 때 확인 순서
+## 7. 클립 목록이 비었거나 호환되지 않을 때
 
-1. NPC Basic의 모델 타입이 맞는지 봅니다.
-2. `.geo.json`은 모델 모양, `.animation.json`은 클립 데이터라는 점을 확인합니다.
-3. 모델이 실제 애니메이션 파일을 참조하는지 확인합니다.
-4. 제공 모드와 클라이언트 리소스가 있는지 확인합니다.
-5. 자산 로딩이 끝난 뒤 목록을 새로고침합니다.
-6. 그래도 없으면 그 모델에 DRM이 해당 클립을 노출하는지 확인합니다.
+1. 실제 NPC의 모델과 Clips 위 소스 설명을 확인합니다.
+2. Gecko는 모델 `.geo.json`과 애니메이션 `.animation.json`을 구분하고 연결된 애니메이션 에셋을 확인합니다.
+3. 인간형 클립은 버전에 맞는 Player Animator / PAL 제공자와 실제 클라이언트 리소스를 확인합니다. Better Combat은 해당 모션을 쓸 때 필요합니다.
+4. 비동기 리소스 로딩 뒤 새로고침합니다. ID를 임의로 만들지 말고 현재 모델의 목록에서 선택하세요.
+5. DRM이 있으면 모델 매핑과 재생을 확인하고, 없으면 기본 휘두르기부터 시험한 뒤 선택 클립을 추가합니다.
 
-인터넷에서 본 다른 모델의 ID를 추측해서 넣지 말고 현재 NPC의 목록을 사용하세요.
+목록에 보인다는 이유만으로 다른 모델에서도 재생할 수 있는 것은 아닙니다. 저장·적용 뒤 실제 NPC와 비교하세요.
 
 ## 저장된 모델 설정을 포함한 파일 적용
 

@@ -1,0 +1,1514 @@
+{
+  "status": "PASS",
+  "testedAt": "2026-11-13T12:45:06.915Z",
+  "views": [
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-setup",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-first-attack",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-authoring",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-patterns",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-hitboxes",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 8,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-skills-effects",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-detection-patrol",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-parry",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-encounters",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 12,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-particles",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-advanced-actions",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-files",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-json-reference",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-troubleshooting",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 14,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-setup",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-first-attack",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-authoring",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-patterns",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-hitboxes",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 8,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-skills-effects",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-detection-patrol",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-parry",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-encounters",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 12,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-particles",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-advanced-actions",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-files",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-json-reference",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-troubleshooting",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 14,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-setup",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-first-attack",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-authoring",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-patterns",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-hitboxes",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 8,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-skills-effects",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-detection-patrol",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 7,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-parry",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-encounters",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 12,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-particles",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-advanced-actions",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-files",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-json-reference",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-troubleshooting",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 14,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-setup",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-first-attack",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-authoring",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-patterns",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-hitboxes",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 8,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-skills-effects",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-detection-patrol",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 7,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-parry",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-encounters",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 12,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-particles",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-advanced-actions",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-files",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-json-reference",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-troubleshooting",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 14,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-setup",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-first-attack",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-authoring",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-patterns",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-hitboxes",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 8,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-skills-effects",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-detection-patrol",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-parry",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-encounters",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 12,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-particles",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-advanced-actions",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-files",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-json-reference",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-troubleshooting",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 14,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-setup",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-first-attack",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-authoring",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-patterns",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-hitboxes",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 8,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-skills-effects",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-detection-patrol",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-parry",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-encounters",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 12,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-particles",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-advanced-actions",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-files",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-json-reference",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-troubleshooting",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 14,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-setup",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-first-attack",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-authoring",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-patterns",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-hitboxes",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 8,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-skills-effects",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-detection-patrol",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-parry",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-encounters",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 12,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-particles",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-advanced-actions",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-files",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-json-reference",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-troubleshooting",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 14,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-setup",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-first-attack",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-authoring",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-patterns",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-hitboxes",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 8,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-skills-effects",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-detection-patrol",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-parry",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-encounters",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 12,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-particles",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-advanced-actions",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-files",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-json-reference",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-troubleshooting",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 14,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-setup",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-first-attack",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-authoring",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-patterns",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-hitboxes",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 8,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-skills-effects",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-detection-patrol",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-parry",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-encounters",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 12,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-particles",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-advanced-actions",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-files",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-json-reference",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-troubleshooting",
+      "viewport": 1440,
+      "version": "0.1.7",
+      "headings": 14,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-setup",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-first-attack",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-authoring",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 5,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-patterns",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 11,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-hitboxes",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 8,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-skills-effects",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 10,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-detection-patrol",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-parry",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 6,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-encounters",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 12,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-particles",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-advanced-actions",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-files",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-json-reference",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 9,
+      "overflow": false
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-troubleshooting",
+      "viewport": 390,
+      "version": "0.1.7",
+      "headings": 14,
+      "overflow": false
+    }
+  ],
+  "images": [
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 1440,
+      "src": "assets/media/guides/battleworks-017-20261113/simple-edit.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 860,
+      "body": 926
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 1440,
+      "src": "assets/media/guides/battleworks-017-20261113/animation-clips.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 860,
+      "body": 926
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 390,
+      "src": "assets/media/guides/battleworks-017-20261113/simple-edit.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 326,
+      "body": 364
+    },
+    {
+      "locale": "en",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 390,
+      "src": "assets/media/guides/battleworks-017-20261113/animation-clips.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 326,
+      "body": 364
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 1440,
+      "src": "assets/media/guides/battleworks-017-20261113/simple-edit.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 860,
+      "body": 926
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 1440,
+      "src": "assets/media/guides/battleworks-017-20261113/animation-clips.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 860,
+      "body": 926
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 390,
+      "src": "assets/media/guides/battleworks-017-20261113/simple-edit.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 326,
+      "body": 364
+    },
+    {
+      "locale": "ko",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 390,
+      "src": "assets/media/guides/battleworks-017-20261113/animation-clips.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 326,
+      "body": 364
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 1440,
+      "src": "assets/media/guides/battleworks-017-20261113/simple-edit.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 860,
+      "body": 926
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 1440,
+      "src": "assets/media/guides/battleworks-017-20261113/animation-clips.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 860,
+      "body": 926
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 390,
+      "src": "assets/media/guides/battleworks-017-20261113/simple-edit.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 326,
+      "body": 364
+    },
+    {
+      "locale": "pt",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 390,
+      "src": "assets/media/guides/battleworks-017-20261113/animation-clips.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 326,
+      "body": 364
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 1440,
+      "src": "assets/media/guides/battleworks-017-20261113/simple-edit.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 860,
+      "body": 926
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 1440,
+      "src": "assets/media/guides/battleworks-017-20261113/animation-clips.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 860,
+      "body": 926
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 390,
+      "src": "assets/media/guides/battleworks-017-20261113/simple-edit.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 326,
+      "body": 364
+    },
+    {
+      "locale": "es",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 390,
+      "src": "assets/media/guides/battleworks-017-20261113/animation-clips.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 326,
+      "body": 364
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 1440,
+      "src": "assets/media/guides/battleworks-017-20261113/simple-edit.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 860,
+      "body": 926
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 1440,
+      "src": "assets/media/guides/battleworks-017-20261113/animation-clips.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 860,
+      "body": 926
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/mob-editor-overview",
+      "viewport": 390,
+      "src": "assets/media/guides/battleworks-017-20261113/simple-edit.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 326,
+      "body": 364
+    },
+    {
+      "locale": "fr",
+      "route": "mob-editor/battleworks-animation",
+      "viewport": 390,
+      "src": "assets/media/guides/battleworks-017-20261113/animation-clips.png",
+      "width": 960,
+      "height": 540,
+      "displayed": 326,
+      "body": 364
+    }
+  ],
+  "screenshots": [
+    "en-mob-editor-overview-1440.png",
+    "en-mob-editor-setup-1440.png",
+    "en-battleworks-authoring-1440.png",
+    "en-battleworks-animation-1440.png",
+    "en-battleworks-encounters-1440.png",
+    "en-mob-editor-overview-390.png",
+    "en-mob-editor-setup-390.png",
+    "en-battleworks-authoring-390.png",
+    "en-battleworks-animation-390.png",
+    "en-battleworks-encounters-390.png",
+    "ko-mob-editor-overview-1440.png",
+    "ko-mob-editor-setup-1440.png",
+    "ko-battleworks-authoring-1440.png",
+    "ko-battleworks-animation-1440.png",
+    "ko-battleworks-encounters-1440.png",
+    "ko-mob-editor-overview-390.png",
+    "ko-mob-editor-setup-390.png",
+    "ko-battleworks-authoring-390.png",
+    "ko-battleworks-animation-390.png",
+    "ko-battleworks-encounters-390.png"
+  ],
+  "errors": [],
+  "failures": [],
+  "browserInstances": 1,
+  "newVideoRecorded": false
+}

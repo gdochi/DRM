@@ -2738,18 +2738,78 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 603.089, "step": 1, "title": "손 크랭크 · 처음부터 끝까지", "body": "준비된 것은 크랭크 블록뿐입니다. 빈 시간표에 작업을 만들고 실제 회전을 확인합니다."},
-        {"startMs": 4553.6538, "step": 2, "title": "빈 시간표에서 시작", "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."},
-        {"startMs": 11590.0169, "step": 3, "title": "근무 시간 만들기", "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."},
-        {"startMs": 24843.7241, "step": 4, "title": "시간대에 할 일 추가", "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."},
-        {"startMs": 36602.6419, "step": 5, "title": "조작할 크랭크 선택", "body": "Assign hand crank block의 찾기를 누르고 월드의 실제 크랭크를 Shift+우클릭합니다."},
-        {"startMs": 45001.0313, "step": 6, "title": "회전 방향과 작동 방식", "body": "기본 방향을 확인하고 Keep turning을 눌러 시간 제한 모드로 전환합니다."},
-        {"startMs": 47994.867, "step": 7, "title": "실제 작동 시간 6초", "body": "Operating time은 초입니다. 이동하거나 기다리는 시간은 이 6초에 포함되지 않습니다."},
-        {"startMs": 50991.6173, "step": 8, "title": "장치와 발 위치는 다릅니다", "body": "Assign standing position에서는 장치 앞 바닥을 고릅니다. 바닥 위 두 칸을 비워 둡니다."},
-        {"startMs": 59394.7554, "step": 9, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 69093.2378, "step": 10, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 73596.9109, "step": 11, "title": "손동작과 실제 회전 관찰", "body": "NPC가 지정한 자리에 접근해 크랭크를 6초 돌린 뒤 멈추는 과정입니다."},
-        {"startMs": 86900.5101, "step": 12, "title": "유한 작업 완료", "body": "시간을 다 쓰면 입력을 멈춥니다. 같은 근무에서 편집기를 다시 열어도 완료 시간이 초기화되지 않습니다."}
+        {
+          "startMs": 603.089,
+          "step": 1,
+          "title": "손 크랭크 · 처음부터 끝까지",
+          "body": "준비된 것은 크랭크 블록뿐입니다. 빈 시간표에 작업을 만들고 실제 회전을 확인합니다."
+        },
+        {
+          "startMs": 4553.6538,
+          "step": 2,
+          "title": "빈 시간표에서 시작",
+          "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+        },
+        {
+          "startMs": 11590.0169,
+          "step": 3,
+          "title": "근무 시간 만들기",
+          "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+        },
+        {
+          "startMs": 24843.7241,
+          "step": 4,
+          "title": "시간대에 할 일 추가",
+          "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+        },
+        {
+          "startMs": 36602.6419,
+          "step": 5,
+          "title": "조작할 크랭크 선택",
+          "body": "Assign hand crank block의 찾기를 누르고 월드의 실제 크랭크를 Shift+우클릭합니다."
+        },
+        {
+          "startMs": 45001.0313,
+          "step": 6,
+          "title": "회전 방향과 작동 방식",
+          "body": "기본 방향을 확인하고 Keep turning을 눌러 시간 제한 모드로 전환합니다."
+        },
+        {
+          "startMs": 47994.867,
+          "step": 7,
+          "title": "실제 작동 시간 6초",
+          "body": "Operating time은 초입니다. 이동하거나 기다리는 시간은 이 6초에 포함되지 않습니다."
+        },
+        {
+          "startMs": 50991.6173,
+          "step": 8,
+          "title": "장치와 발 위치는 다릅니다",
+          "body": "Assign standing position에서는 장치 앞 바닥을 고릅니다. 바닥 위 두 칸을 비워 둡니다."
+        },
+        {
+          "startMs": 59394.7554,
+          "step": 9,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 69093.2378,
+          "step": 10,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 73596.9109,
+          "step": 11,
+          "title": "손동작과 실제 회전 관찰",
+          "body": "NPC가 지정한 자리에 접근해 크랭크를 6초 돌린 뒤 멈추는 과정입니다."
+        },
+        {
+          "startMs": 86900.5101,
+          "step": 12,
+          "title": "유한 작업 완료",
+          "body": "시간을 다 쓰면 입력을 멈춥니다. 같은 근무에서 편집기를 다시 열어도 완료 시간이 초기화되지 않습니다."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-crank.png": {
@@ -2772,18 +2832,78 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 602.2783, "step": 1, "title": "밸브 · 각도와 횟수 구분", "body": "월드의 밸브는 90°로 준비했습니다. NPC에서는 두 번 조작하도록 설정합니다."},
-        {"startMs": 4558.1487, "step": 2, "title": "빈 시간표에서 시작", "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."},
-        {"startMs": 11611.3357, "step": 3, "title": "근무 시간 만들기", "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."},
-        {"startMs": 24859.9378, "step": 4, "title": "시간대에 할 일 추가", "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."},
-        {"startMs": 36604.9995, "step": 5, "title": "실제 Valve Handle 지정", "body": "밸브 선택 항목에서 찾기를 누르고 월드의 해당 밸브를 Shift+우클릭합니다."},
-        {"startMs": 44996.0031, "step": 6, "title": "횟수와 추가 대기 입력", "body": "Number of operations에 2를 입력하고 가운데 액션 행을 다시 눌러 추가 설정을 표시합니다."},
-        {"startMs": 50404.1693, "step": 7, "title": "추가 대기 1초 입력", "body": "새로 나타난 Pause between operations에 1을 입력합니다. 이 값의 단위는 초입니다."},
-        {"startMs": 53401.6777, "step": 8, "title": "회전 각도는 블록 설정", "body": "NPC의 횟수 2는 2도가 아닙니다. 각 동작은 밸브 블록에 설정된 90°를 사용합니다."},
-        {"startMs": 64408.348, "step": 9, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 74101.8335, "step": 10, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 78605.9771, "step": 11, "title": "두 번의 동작과 쿨다운", "body": "첫 회전과 Create의 쿨다운이 끝나야 다음 조작을 합니다. 손을 바꿔 잡는 동작도 관찰하세요."},
-        {"startMs": 91404.1708, "step": 12, "title": "작업 완료 뒤 한 걸음 물러남", "body": "두 번을 완료하면 반복 입력을 멈춥니다. 시작된 회전은 일시 중단 중에도 끝날 수 있습니다."}
+        {
+          "startMs": 602.2783,
+          "step": 1,
+          "title": "밸브 · 각도와 횟수 구분",
+          "body": "월드의 밸브는 90°로 준비했습니다. NPC에서는 두 번 조작하도록 설정합니다."
+        },
+        {
+          "startMs": 4558.1487,
+          "step": 2,
+          "title": "빈 시간표에서 시작",
+          "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+        },
+        {
+          "startMs": 11611.3357,
+          "step": 3,
+          "title": "근무 시간 만들기",
+          "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+        },
+        {
+          "startMs": 24859.9378,
+          "step": 4,
+          "title": "시간대에 할 일 추가",
+          "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+        },
+        {
+          "startMs": 36604.9995,
+          "step": 5,
+          "title": "실제 Valve Handle 지정",
+          "body": "밸브 선택 항목에서 찾기를 누르고 월드의 해당 밸브를 Shift+우클릭합니다."
+        },
+        {
+          "startMs": 44996.0031,
+          "step": 6,
+          "title": "횟수와 추가 대기 입력",
+          "body": "Number of operations에 2를 입력하고 가운데 액션 행을 다시 눌러 추가 설정을 표시합니다."
+        },
+        {
+          "startMs": 50404.1693,
+          "step": 7,
+          "title": "추가 대기 1초 입력",
+          "body": "새로 나타난 Pause between operations에 1을 입력합니다. 이 값의 단위는 초입니다."
+        },
+        {
+          "startMs": 53401.6777,
+          "step": 8,
+          "title": "회전 각도는 블록 설정",
+          "body": "NPC의 횟수 2는 2도가 아닙니다. 각 동작은 밸브 블록에 설정된 90°를 사용합니다."
+        },
+        {
+          "startMs": 64408.348,
+          "step": 9,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 74101.8335,
+          "step": 10,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 78605.9771,
+          "step": 11,
+          "title": "두 번의 동작과 쿨다운",
+          "body": "첫 회전과 Create의 쿨다운이 끝나야 다음 조작을 합니다. 손을 바꿔 잡는 동작도 관찰하세요."
+        },
+        {
+          "startMs": 91404.1708,
+          "step": 12,
+          "title": "작업 완료 뒤 한 걸음 물러남",
+          "body": "두 번을 완료하면 반복 입력을 멈춥니다. 시작된 회전은 일시 중단 중에도 끝날 수 있습니다."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-valve.png": {
@@ -2806,17 +2926,72 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 601.3871, "step": 1, "title": "Create 좌석 · 지정부터 하차까지", "body": "좌석 블록을 대상으로 하는 일정입니다. 열차 운전 경로를 만드는 작업과는 다릅니다."},
-        {"startMs": 4544.565, "step": 2, "title": "빈 시간표에서 시작", "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."},
-        {"startMs": 11594.6203, "step": 3, "title": "근무 시간 만들기", "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."},
-        {"startMs": 24853.2976, "step": 4, "title": "시간대에 할 일 추가", "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."},
-        {"startMs": 36610.4348, "step": 5, "title": "일반 탈것에서 Create seat로 전환", "body": "Vehicle을 눌러 Create seat로 바꾸고 실제 좌석 블록을 지정합니다."},
-        {"startMs": 47409.0383, "step": 6, "title": "탑승 시도 시간", "body": "Boarding timeout은 틱입니다. 200틱 동안 접근과 탑승을 시도하도록 입력합니다."},
-        {"startMs": 50397.0702, "step": 7, "title": "근무가 끝나면 하차", "body": "Dismount when schedule ends가 켜져 있는지 확인합니다. 움직이는 좌석은 안전한 정지를 기다립니다."},
-        {"startMs": 53350.7961, "step": 8, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 63045.9917, "step": 9, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 67552.6502, "step": 10, "title": "NPC가 걸어가서 앉는 과정", "body": "다른 개체가 이미 앉아 있으면 기다립니다. 이 예제는 빈 정지 좌석입니다."},
-        {"startMs": 73758.0565, "step": 11, "title": "시간 명령으로 근무 종료 재현", "body": "검증 월드의 시각을 12500으로 바꿔 종료 상황을 보여 줍니다. 자동 하차를 관찰합니다."}
+        {
+          "startMs": 601.3871,
+          "step": 1,
+          "title": "Create 좌석 · 지정부터 하차까지",
+          "body": "좌석 블록을 대상으로 하는 일정입니다. 열차 운전 경로를 만드는 작업과는 다릅니다."
+        },
+        {
+          "startMs": 4544.565,
+          "step": 2,
+          "title": "빈 시간표에서 시작",
+          "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+        },
+        {
+          "startMs": 11594.6203,
+          "step": 3,
+          "title": "근무 시간 만들기",
+          "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+        },
+        {
+          "startMs": 24853.2976,
+          "step": 4,
+          "title": "시간대에 할 일 추가",
+          "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+        },
+        {
+          "startMs": 36610.4348,
+          "step": 5,
+          "title": "일반 탈것에서 Create seat로 전환",
+          "body": "Vehicle을 눌러 Create seat로 바꾸고 실제 좌석 블록을 지정합니다."
+        },
+        {
+          "startMs": 47409.0383,
+          "step": 6,
+          "title": "탑승 시도 시간",
+          "body": "Boarding timeout은 틱입니다. 200틱 동안 접근과 탑승을 시도하도록 입력합니다."
+        },
+        {
+          "startMs": 50397.0702,
+          "step": 7,
+          "title": "근무가 끝나면 하차",
+          "body": "Dismount when schedule ends가 켜져 있는지 확인합니다. 움직이는 좌석은 안전한 정지를 기다립니다."
+        },
+        {
+          "startMs": 53350.7961,
+          "step": 8,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 63045.9917,
+          "step": 9,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 67552.6502,
+          "step": 10,
+          "title": "NPC가 걸어가서 앉는 과정",
+          "body": "다른 개체가 이미 앉아 있으면 기다립니다. 이 예제는 빈 정지 좌석입니다."
+        },
+        {
+          "startMs": 73758.0565,
+          "step": 11,
+          "title": "시간 명령으로 근무 종료 재현",
+          "body": "검증 월드의 시각을 12500으로 바꿔 종료 상황을 보여 줍니다. 자동 하차를 관찰합니다."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-seat.png": {
@@ -2839,19 +3014,84 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 603.9262, "step": 1, "title": "사포 연마 · 재료 확인부터 납품까지", "body": "초록 표시의 Source에는 실제 사포 한 개와 Rose Quartz 두 개가 준비돼 있습니다."},
-        {"startMs": 9356.1367, "step": 2, "title": "사포와 연마 재료 확인", "body": "Sand Paper는 실제 내구도를 사용합니다. 먼저 출처 보관함에 둘 다 준비하세요."},
-        {"startMs": 12903.4338, "step": 3, "title": "빈 시간표에서 시작", "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."},
-        {"startMs": 19957.9551, "step": 4, "title": "근무 시간 만들기", "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."},
-        {"startMs": 33210.1448, "step": 5, "title": "시간대에 할 일 추가", "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."},
-        {"startMs": 44958.8823, "step": 6, "title": "재료를 꺼낼 보관함", "body": "Source inventory의 찾기로 초록 표시 보관함을 지정합니다."},
-        {"startMs": 53345.1063, "step": 7, "title": "완성품을 받을 보관함", "body": "Finished items inventory에는 파란 표시의 별도 보관함을 지정합니다."},
-        {"startMs": 61760.1211, "step": 8, "title": "작업 자리와 바라보는 방향", "body": "Working position and facing에서 바닥을 선택합니다. 현재 보는 방향도 작업 방향으로 저장됩니다."},
-        {"startMs": 70158.3914, "step": 9, "title": "근무당 두 개만 연마", "body": "Repeat throughout shift를 눌러 유한 작업으로 바꾸고 Batch size를 2로 입력합니다."},
-        {"startMs": 77947.0695, "step": 10, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 87648.8581, "step": 11, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 92146.726, "step": 12, "title": "사포를 가져와 실제로 연마", "body": "출처에서 재료와 도구를 챙기고 지정한 자리에서 연마한 뒤 완성품을 옮깁니다."},
-        {"startMs": 113159.0957, "step": 13, "title": "보관함에서 실제 결과 확인", "body": "Polished Rose Quartz 두 개가 들어 있습니다. 결과 보관함이 꽉 차면 NPC가 들고 기다립니다."}
+        {
+          "startMs": 603.9262,
+          "step": 1,
+          "title": "사포 연마 · 재료 확인부터 납품까지",
+          "body": "초록 표시의 Source에는 실제 사포 한 개와 Rose Quartz 두 개가 준비돼 있습니다."
+        },
+        {
+          "startMs": 9356.1367,
+          "step": 2,
+          "title": "사포와 연마 재료 확인",
+          "body": "Sand Paper는 실제 내구도를 사용합니다. 먼저 출처 보관함에 둘 다 준비하세요."
+        },
+        {
+          "startMs": 12903.4338,
+          "step": 3,
+          "title": "빈 시간표에서 시작",
+          "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+        },
+        {
+          "startMs": 19957.9551,
+          "step": 4,
+          "title": "근무 시간 만들기",
+          "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+        },
+        {
+          "startMs": 33210.1448,
+          "step": 5,
+          "title": "시간대에 할 일 추가",
+          "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+        },
+        {
+          "startMs": 44958.8823,
+          "step": 6,
+          "title": "재료를 꺼낼 보관함",
+          "body": "Source inventory의 찾기로 초록 표시 보관함을 지정합니다."
+        },
+        {
+          "startMs": 53345.1063,
+          "step": 7,
+          "title": "완성품을 받을 보관함",
+          "body": "Finished items inventory에는 파란 표시의 별도 보관함을 지정합니다."
+        },
+        {
+          "startMs": 61760.1211,
+          "step": 8,
+          "title": "작업 자리와 바라보는 방향",
+          "body": "Working position and facing에서 바닥을 선택합니다. 현재 보는 방향도 작업 방향으로 저장됩니다."
+        },
+        {
+          "startMs": 70158.3914,
+          "step": 9,
+          "title": "근무당 두 개만 연마",
+          "body": "Repeat throughout shift를 눌러 유한 작업으로 바꾸고 Batch size를 2로 입력합니다."
+        },
+        {
+          "startMs": 77947.0695,
+          "step": 10,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 87648.8581,
+          "step": 11,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 92146.726,
+          "step": 12,
+          "title": "사포를 가져와 실제로 연마",
+          "body": "출처에서 재료와 도구를 챙기고 지정한 자리에서 연마한 뒤 완성품을 옮깁니다."
+        },
+        {
+          "startMs": 113159.0957,
+          "step": 13,
+          "title": "보관함에서 실제 결과 확인",
+          "body": "Polished Rose Quartz 두 개가 들어 있습니다. 결과 보관함이 꽉 차면 NPC가 들고 기다립니다."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-polish.png": {
@@ -2874,19 +3114,84 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 591.2941, "step": 1, "title": "주소 소포 배송 · NPC 수신", "body": "소포는 이미 Create에서 포장했습니다. Workshop A 주소를 실제 목적지와 연결합니다."},
-        {"startMs": 5749.7521, "step": 2, "title": "출발 소포 준비", "body": "Workshop A와 Unknown 소포가 있습니다. 주소가 맞는 소포만 꺼내도록 경로를 만듭니다."},
-        {"startMs": 10301.6294, "step": 3, "title": "빈 시간표에서 시작", "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."},
-        {"startMs": 17350.1331, "step": 4, "title": "근무 시간 만들기", "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."},
-        {"startMs": 30598.6288, "step": 5, "title": "시간대에 할 일 추가", "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."},
-        {"startMs": 42347.5277, "step": 6, "title": "출발지와 반송지 지정", "body": "Source는 초록, Return inventory는 주황 보관함입니다. 두 곳을 각각 지정합니다."},
-        {"startMs": 58552.5738, "step": 7, "title": "수신 NPC 고르기", "body": "Add address route를 누르고 Receiving Clerk를 고른 뒤 Apply를 누릅니다."},
-        {"startMs": 68194.0644, "step": 8, "title": "소포 주소와 같은 문자열 입력", "body": "Address 1을 Workshop A로 바꿉니다. 수신자 이름과 소포 주소는 별개의 설정입니다."},
-        {"startMs": 71792.9686, "step": 9, "title": "대기 시간과 유한 배송 수량", "body": "대기 80틱, Batch size 1로 설정합니다. Batch size는 소포 안 아이템 수가 아닌 봉인 소포 개수입니다."},
-        {"startMs": 82601.9758, "step": 10, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 92302.5312, "step": 11, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 96795.504, "step": 12, "title": "포장을 뜯지 않고 그대로 전달", "body": "NPC가 상자를 양팔로 들고 수신 NPC에게 걸어갑니다. 수신자는 이름이 아닌 UUID로 연결됩니다."},
-        {"startMs": 112097.5333, "step": 13, "title": "주소가 맞지 않는 소포는 남습니다", "body": "Workshop A 한 개는 수신자에게 갔고 Unknown은 출발지에 남았습니다."}
+        {
+          "startMs": 591.2941,
+          "step": 1,
+          "title": "주소 소포 배송 · NPC 수신",
+          "body": "소포는 이미 Create에서 포장했습니다. Workshop A 주소를 실제 목적지와 연결합니다."
+        },
+        {
+          "startMs": 5749.7521,
+          "step": 2,
+          "title": "출발 소포 준비",
+          "body": "Workshop A와 Unknown 소포가 있습니다. 주소가 맞는 소포만 꺼내도록 경로를 만듭니다."
+        },
+        {
+          "startMs": 10301.6294,
+          "step": 3,
+          "title": "빈 시간표에서 시작",
+          "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+        },
+        {
+          "startMs": 17350.1331,
+          "step": 4,
+          "title": "근무 시간 만들기",
+          "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+        },
+        {
+          "startMs": 30598.6288,
+          "step": 5,
+          "title": "시간대에 할 일 추가",
+          "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+        },
+        {
+          "startMs": 42347.5277,
+          "step": 6,
+          "title": "출발지와 반송지 지정",
+          "body": "Source는 초록, Return inventory는 주황 보관함입니다. 두 곳을 각각 지정합니다."
+        },
+        {
+          "startMs": 58552.5738,
+          "step": 7,
+          "title": "수신 NPC 고르기",
+          "body": "Add address route를 누르고 Receiving Clerk를 고른 뒤 Apply를 누릅니다."
+        },
+        {
+          "startMs": 68194.0644,
+          "step": 8,
+          "title": "소포 주소와 같은 문자열 입력",
+          "body": "Address 1을 Workshop A로 바꿉니다. 수신자 이름과 소포 주소는 별개의 설정입니다."
+        },
+        {
+          "startMs": 71792.9686,
+          "step": 9,
+          "title": "대기 시간과 유한 배송 수량",
+          "body": "대기 80틱, Batch size 1로 설정합니다. Batch size는 소포 안 아이템 수가 아닌 봉인 소포 개수입니다."
+        },
+        {
+          "startMs": 82601.9758,
+          "step": 10,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 92302.5312,
+          "step": 11,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 96795.504,
+          "step": 12,
+          "title": "포장을 뜯지 않고 그대로 전달",
+          "body": "NPC가 상자를 양팔로 들고 수신 NPC에게 걸어갑니다. 수신자는 이름이 아닌 UUID로 연결됩니다."
+        },
+        {
+          "startMs": 112097.5333,
+          "step": 13,
+          "title": "주소가 맞지 않는 소포는 남습니다",
+          "body": "Workshop A 한 개는 수신자에게 갔고 Unknown은 출발지에 남았습니다."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-parcel-npc.png": {
@@ -2909,19 +3214,84 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 600.6492, "step": 1, "title": "주소 소포 배송 · 보관함 수신", "body": "소포는 이미 Create에서 포장했습니다. Workshop A 주소를 실제 목적지와 연결합니다."},
-        {"startMs": 5742.0434, "step": 2, "title": "출발 소포 준비", "body": "Workshop A와 Unknown 소포가 있습니다. 주소가 맞는 소포만 꺼내도록 경로를 만듭니다."},
-        {"startMs": 10299.3953, "step": 3, "title": "빈 시간표에서 시작", "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."},
-        {"startMs": 17353.9891, "step": 4, "title": "근무 시간 만들기", "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."},
-        {"startMs": 30592.6135, "step": 5, "title": "시간대에 할 일 추가", "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."},
-        {"startMs": 42352.6846, "step": 6, "title": "출발지와 반송지 지정", "body": "Source는 초록, Return inventory는 주황 보관함입니다. 두 곳을 각각 지정합니다."},
-        {"startMs": 58556.5184, "step": 7, "title": "수령 보관함으로 경로 추가", "body": "Add inventory delivery route를 누르고 파란 수령 보관함을 선택합니다."},
-        {"startMs": 66942.6606, "step": 8, "title": "소포 주소와 같은 문자열 입력", "body": "Address 1을 Workshop A로 바꿉니다. 수신자 이름과 소포 주소는 별개의 설정입니다."},
-        {"startMs": 70541.4507, "step": 9, "title": "대기 시간과 유한 배송 수량", "body": "대기 80틱, Batch size 1로 설정합니다. Batch size는 소포 안 아이템 수가 아닌 봉인 소포 개수입니다."},
-        {"startMs": 81370.3347, "step": 10, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 91053.2431, "step": 11, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 95543.8333, "step": 12, "title": "보관함에 봉인 소포 납품", "body": "이 경로는 소포 전체를 넣습니다. 내용물을 자동 개봉하는 기능은 아닙니다."},
-        {"startMs": 112050.1495, "step": 13, "title": "수령 보관함의 실제 소포 확인", "body": "봉인 소포 한 개가 들어 있습니다. 출발 보관함과 같은 더블 체스트를 목적지로 쓰지 마세요."}
+        {
+          "startMs": 600.6492,
+          "step": 1,
+          "title": "주소 소포 배송 · 보관함 수신",
+          "body": "소포는 이미 Create에서 포장했습니다. Workshop A 주소를 실제 목적지와 연결합니다."
+        },
+        {
+          "startMs": 5742.0434,
+          "step": 2,
+          "title": "출발 소포 준비",
+          "body": "Workshop A와 Unknown 소포가 있습니다. 주소가 맞는 소포만 꺼내도록 경로를 만듭니다."
+        },
+        {
+          "startMs": 10299.3953,
+          "step": 3,
+          "title": "빈 시간표에서 시작",
+          "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+        },
+        {
+          "startMs": 17353.9891,
+          "step": 4,
+          "title": "근무 시간 만들기",
+          "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+        },
+        {
+          "startMs": 30592.6135,
+          "step": 5,
+          "title": "시간대에 할 일 추가",
+          "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+        },
+        {
+          "startMs": 42352.6846,
+          "step": 6,
+          "title": "출발지와 반송지 지정",
+          "body": "Source는 초록, Return inventory는 주황 보관함입니다. 두 곳을 각각 지정합니다."
+        },
+        {
+          "startMs": 58556.5184,
+          "step": 7,
+          "title": "수령 보관함으로 경로 추가",
+          "body": "Add inventory delivery route를 누르고 파란 수령 보관함을 선택합니다."
+        },
+        {
+          "startMs": 66942.6606,
+          "step": 8,
+          "title": "소포 주소와 같은 문자열 입력",
+          "body": "Address 1을 Workshop A로 바꿉니다. 수신자 이름과 소포 주소는 별개의 설정입니다."
+        },
+        {
+          "startMs": 70541.4507,
+          "step": 9,
+          "title": "대기 시간과 유한 배송 수량",
+          "body": "대기 80틱, Batch size 1로 설정합니다. Batch size는 소포 안 아이템 수가 아닌 봉인 소포 개수입니다."
+        },
+        {
+          "startMs": 81370.3347,
+          "step": 10,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 91053.2431,
+          "step": 11,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 95543.8333,
+          "step": 12,
+          "title": "보관함에 봉인 소포 납품",
+          "body": "이 경로는 소포 전체를 넣습니다. 내용물을 자동 개봉하는 기능은 아닙니다."
+        },
+        {
+          "startMs": 112050.1495,
+          "step": 13,
+          "title": "수령 보관함의 실제 소포 확인",
+          "body": "봉인 소포 한 개가 들어 있습니다. 출발 보관함과 같은 더블 체스트를 목적지로 쓰지 마세요."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-parcel-container.png": {
@@ -2944,13 +3314,48 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 603.8712, "step": 1, "title": "배송 실패 · 기다림과 반송", "body": "앞 영상에서 직접 저장한 보관함 배송 설정을 그대로 이어 씁니다. 이번에는 반송을 확인합니다."},
-        {"startMs": 15796.6863, "step": 2, "title": "반송 대기 시간을 짧게 재현", "body": "수신 대기 40틱으로 바꿉니다. 픽업 후 수령 통을 가득 채워 배달 실패 상황을 만듭니다."},
-        {"startMs": 19397.5081, "step": 3, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 29094.2825, "step": 4, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 33595.8658, "step": 5, "title": "픽업 뒤 수령 통이 가득 찬 상황", "body": "재현 도구가 돌로 통을 채웁니다. NPC는 소포를 보유해 기다린 뒤 주황 반송 통으로 돌아갑니다."},
-        {"startMs": 53101.9342, "step": 6, "title": "가득 찬 목적지 확인", "body": "수령 통에 공간이 없습니다. 처음부터 가득 차 있었다면 소포를 출발지에서 꺼내지 않습니다."},
-        {"startMs": 58344.8428, "step": 7, "title": "반송된 봉인 소포 확인", "body": "반송 통에는 소포 한 개가 들어 있습니다. 반송 통도 가득 차면 NPC가 계속 보유합니다."}
+        {
+          "startMs": 603.8712,
+          "step": 1,
+          "title": "배송 실패 · 기다림과 반송",
+          "body": "앞 영상에서 직접 저장한 보관함 배송 설정을 그대로 이어 씁니다. 이번에는 반송을 확인합니다."
+        },
+        {
+          "startMs": 15796.6863,
+          "step": 2,
+          "title": "반송 대기 시간을 짧게 재현",
+          "body": "수신 대기 40틱으로 바꿉니다. 픽업 후 수령 통을 가득 채워 배달 실패 상황을 만듭니다."
+        },
+        {
+          "startMs": 19397.5081,
+          "step": 3,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 29094.2825,
+          "step": 4,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 33595.8658,
+          "step": 5,
+          "title": "픽업 뒤 수령 통이 가득 찬 상황",
+          "body": "재현 도구가 돌로 통을 채웁니다. NPC는 소포를 보유해 기다린 뒤 주황 반송 통으로 돌아갑니다."
+        },
+        {
+          "startMs": 53101.9342,
+          "step": 6,
+          "title": "가득 찬 목적지 확인",
+          "body": "수령 통에 공간이 없습니다. 처음부터 가득 차 있었다면 소포를 출발지에서 꺼내지 않습니다."
+        },
+        {
+          "startMs": 58344.8428,
+          "step": 7,
+          "title": "반송된 봉인 소포 확인",
+          "body": "반송 통에는 소포 한 개가 들어 있습니다. 반송 통도 가득 차면 NPC가 계속 보유합니다."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-parcel-return.png": {
@@ -2973,15 +3378,60 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 605.0648, "step": 1, "title": "Stock Ticker 창구 · 연결과 실제 주문 화면", "body": "좌석 옆에는 Stock Ticker 하나만 있습니다. 공급 Packager와 같은 네트워크로 미리 연결했습니다."},
-        {"startMs": 8263.0451, "step": 2, "title": "빈 시간표에서 시작", "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."},
-        {"startMs": 15305.4698, "step": 3, "title": "근무 시간 만들기", "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."},
-        {"startMs": 28558.3675, "step": 4, "title": "시간대에 할 일 추가", "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."},
-        {"startMs": 40310.8996, "step": 5, "title": "Stock Ticker와 좌석을 각각 지정", "body": "먼저 Ticker 블록을 고르고, 다음에 Create seat를 별도로 고릅니다."},
-        {"startMs": 56502.4899, "step": 6, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 66207.2651, "step": 7, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 70705.0022, "step": 8, "title": "근무 자리로 이동해 앉기", "body": "NPC가 창구 좌석에 앉을 때까지 기다립니다. 빈손으로 일반 상호작용을 합니다."},
-        {"startMs": 83055.149, "step": 9, "title": "연결된 실제 재고가 보이는 Create 화면", "body": "공급 재고인 철괴 16개가 표시됩니다. Create 주문 화면에서 네트워크 연결과 재고를 먼저 확인하세요."}
+        {
+          "startMs": 605.0648,
+          "step": 1,
+          "title": "Stock Ticker 창구 · 연결과 실제 주문 화면",
+          "body": "좌석 옆에는 Stock Ticker 하나만 있습니다. 공급 Packager와 같은 네트워크로 미리 연결했습니다."
+        },
+        {
+          "startMs": 8263.0451,
+          "step": 2,
+          "title": "빈 시간표에서 시작",
+          "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+        },
+        {
+          "startMs": 15305.4698,
+          "step": 3,
+          "title": "근무 시간 만들기",
+          "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+        },
+        {
+          "startMs": 28558.3675,
+          "step": 4,
+          "title": "시간대에 할 일 추가",
+          "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+        },
+        {
+          "startMs": 40310.8996,
+          "step": 5,
+          "title": "Stock Ticker와 좌석을 각각 지정",
+          "body": "먼저 Ticker 블록을 고르고, 다음에 Create seat를 별도로 고릅니다."
+        },
+        {
+          "startMs": 56502.4899,
+          "step": 6,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 66207.2651,
+          "step": 7,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 70705.0022,
+          "step": 8,
+          "title": "근무 자리로 이동해 앉기",
+          "body": "NPC가 창구 좌석에 앉을 때까지 기다립니다. 빈손으로 일반 상호작용을 합니다."
+        },
+        {
+          "startMs": 83055.149,
+          "step": 9,
+          "title": "연결된 실제 재고가 보이는 Create 화면",
+          "body": "공급 재고인 철괴 16개가 표시됩니다. Create 주문 화면에서 네트워크 연결과 재고를 먼저 확인하세요."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-stock-ticker.png": {
@@ -3004,24 +3454,114 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 598.2843, "step": 1, "title": "Factory Process · 네 위치를 하나씩 연결", "body": "초록 통은 원재료, 프레스 아래 Depot은 투입·회수, 파란 통은 최종 완성품 위치입니다."},
-        {"startMs": 5740.0204, "step": 2, "title": "실제 철괴 두 개 준비", "body": "이 예제는 철괴 한 개를 철판 한 개로 만드는 배치를 두 번 실행합니다."},
-        {"startMs": 10288.0287, "step": 3, "title": "빈 시간표에서 시작", "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."},
-        {"startMs": 17350.7289, "step": 4, "title": "근무 시간 만들기", "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."},
-        {"startMs": 30600.2707, "step": 5, "title": "시간대에 할 일 추가", "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."},
-        {"startMs": 42353.3078, "step": 6, "title": "① Source inventory", "body": "NPC가 원재료를 꺼낼 초록 통을 지정합니다. 기계 투입 위치와 다릅니다."},
-        {"startMs": 50751.0685, "step": 7, "title": "② Machine input inventory", "body": "프레스 아래 Depot에 재료를 넣습니다. 보관함이 아니라 실제 투입 가능한 장치를 선택하세요."},
-        {"startMs": 59152.1389, "step": 8, "title": "③ Finished output inventory", "body": "이 프레스는 같은 Depot에 완성품이 놓입니다. 이번에는 같은 Depot을 다시 선택합니다."},
-        {"startMs": 67541.1748, "step": 9, "title": "④ Finished items inventory", "body": "완성된 철판을 최종 보관할 파란 통입니다. 기계의 결과 위치와 구분하세요."},
-        {"startMs": 75947.6556, "step": 10, "title": "재료 아이템 직접 선택", "body": "Material item의 찾기에서 minecraft:iron_ingot을 검색하고 아이콘을 고른 뒤 Apply합니다."},
-        {"startMs": 91397.7335, "step": 11, "title": "한 배치에 사용할 수량", "body": "Material quantity는 배치당 소비량입니다. 철괴 한 개로 입력합니다."},
-        {"startMs": 94387.5532, "step": 12, "title": "완성품도 직접 선택", "body": "Finished item에서 create:iron_sheet를 검색하고 선택합니다. 원재료와 결과 ID는 달라야 합니다."},
-        {"startMs": 109852.5306, "step": 13, "title": "완성 수량과 배치 횟수", "body": "한 배치의 완성 수량 1, 반복 OFF, Batch size 2로 설정합니다. 총 철판 두 개입니다."},
-        {"startMs": 117640.86, "step": 14, "title": "가공 대기 제한과 작업 간격", "body": "Processing timeout 1200틱, Work interval 20틱입니다. 타임아웃이 나도 기존 재료는 보존됩니다."},
-        {"startMs": 123047.7111, "step": 15, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 132750.6219, "step": 16, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 137243.144, "step": 17, "title": "실제 프레스 가공을 가까이서 관찰", "body": "재료를 넣은 뒤 프레스가 눌러 철판을 만듭니다. NPC가 결과를 회수해 최종 통으로 옮깁니다."},
-        {"startMs": 155254.3759, "step": 18, "title": "최종 통의 철판 두 개 확인", "body": "원재료 두 개가 두 번의 실제 가공을 거쳐 납품됐습니다. NPC가 결과를 생성한 것이 아닙니다."}
+        {
+          "startMs": 598.2843,
+          "step": 1,
+          "title": "Factory Process · 네 위치를 하나씩 연결",
+          "body": "초록 통은 원재료, 프레스 아래 Depot은 투입·회수, 파란 통은 최종 완성품 위치입니다."
+        },
+        {
+          "startMs": 5740.0204,
+          "step": 2,
+          "title": "실제 철괴 두 개 준비",
+          "body": "이 예제는 철괴 한 개를 철판 한 개로 만드는 배치를 두 번 실행합니다."
+        },
+        {
+          "startMs": 10288.0287,
+          "step": 3,
+          "title": "빈 시간표에서 시작",
+          "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+        },
+        {
+          "startMs": 17350.7289,
+          "step": 4,
+          "title": "근무 시간 만들기",
+          "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+        },
+        {
+          "startMs": 30600.2707,
+          "step": 5,
+          "title": "시간대에 할 일 추가",
+          "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+        },
+        {
+          "startMs": 42353.3078,
+          "step": 6,
+          "title": "① Source inventory",
+          "body": "NPC가 원재료를 꺼낼 초록 통을 지정합니다. 기계 투입 위치와 다릅니다."
+        },
+        {
+          "startMs": 50751.0685,
+          "step": 7,
+          "title": "② Machine input inventory",
+          "body": "프레스 아래 Depot에 재료를 넣습니다. 보관함이 아니라 실제 투입 가능한 장치를 선택하세요."
+        },
+        {
+          "startMs": 59152.1389,
+          "step": 8,
+          "title": "③ Finished output inventory",
+          "body": "이 프레스는 같은 Depot에 완성품이 놓입니다. 이번에는 같은 Depot을 다시 선택합니다."
+        },
+        {
+          "startMs": 67541.1748,
+          "step": 9,
+          "title": "④ Finished items inventory",
+          "body": "완성된 철판을 최종 보관할 파란 통입니다. 기계의 결과 위치와 구분하세요."
+        },
+        {
+          "startMs": 75947.6556,
+          "step": 10,
+          "title": "재료 아이템 직접 선택",
+          "body": "Material item의 찾기에서 minecraft:iron_ingot을 검색하고 아이콘을 고른 뒤 Apply합니다."
+        },
+        {
+          "startMs": 91397.7335,
+          "step": 11,
+          "title": "한 배치에 사용할 수량",
+          "body": "Material quantity는 배치당 소비량입니다. 철괴 한 개로 입력합니다."
+        },
+        {
+          "startMs": 94387.5532,
+          "step": 12,
+          "title": "완성품도 직접 선택",
+          "body": "Finished item에서 create:iron_sheet를 검색하고 선택합니다. 원재료와 결과 ID는 달라야 합니다."
+        },
+        {
+          "startMs": 109852.5306,
+          "step": 13,
+          "title": "완성 수량과 배치 횟수",
+          "body": "한 배치의 완성 수량 1, 반복 OFF, Batch size 2로 설정합니다. 총 철판 두 개입니다."
+        },
+        {
+          "startMs": 117640.86,
+          "step": 14,
+          "title": "가공 대기 제한과 작업 간격",
+          "body": "Processing timeout 1200틱, Work interval 20틱입니다. 타임아웃이 나도 기존 재료는 보존됩니다."
+        },
+        {
+          "startMs": 123047.7111,
+          "step": 15,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 132750.6219,
+          "step": 16,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 137243.144,
+          "step": 17,
+          "title": "실제 프레스 가공을 가까이서 관찰",
+          "body": "재료를 넣은 뒤 프레스가 눌러 철판을 만듭니다. NPC가 결과를 회수해 최종 통으로 옮깁니다."
+        },
+        {
+          "startMs": 155254.3759,
+          "step": 18,
+          "title": "최종 통의 철판 두 개 확인",
+          "body": "원재료 두 개가 두 번의 실제 가공을 거쳐 납품됐습니다. NPC가 결과를 생성한 것이 아닙니다."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-factory-process.png": {
@@ -3044,18 +3584,78 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 611.7392, "step": 1, "title": "Material Ordering · 재고 목표와 주소 입력", "body": "공급망에는 철괴 16개가 있고, 초록 수령 통은 비어 있습니다. 목표 재고를 네 개로 설정합니다."},
-        {"startMs": 4558.3622, "step": 2, "title": "빈 시간표에서 시작", "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."},
-        {"startMs": 11598.58, "step": 3, "title": "근무 시간 만들기", "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."},
-        {"startMs": 24850.0581, "step": 4, "title": "시간대에 할 일 추가", "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."},
-        {"startMs": 36610.4978, "step": 5, "title": "재료가 실제 도착할 수령 통", "body": "Receiving inventory to maintain에는 목표 재고를 검사할 초록 통을 지정합니다."},
-        {"startMs": 45011.3767, "step": 6, "title": "유지할 아이템과 목표 수량", "body": "Material item에서 철괴를 선택하고 수량 4를 입력합니다. 여기서는 배치 소비량이 아닌 목표 재고입니다."},
-        {"startMs": 62847.2586, "step": 7, "title": "연결된 Ticker와 배송 주소", "body": "공급망에 연결된 Stock Ticker를 선택하고 Delivery address에 Workshop A를 입력합니다."},
-        {"startMs": 77258.6829, "step": 8, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 86950.1256, "step": 9, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 91448.6547, "step": 10, "title": "실제 네트워크 주문과 포장", "body": "NPC가 Ticker로 접근합니다. 공급 Packager가 철괴 네 개를 예약·포장하는 과정을 보세요."},
-        {"startMs": 104956.2781, "step": 11, "title": "공급 재고 16 → 12", "body": "실제로 철괴 네 개가 빠졌습니다. 접수한 주문은 배송이 늦어도 자동 중복 발송하지 않습니다."},
-        {"startMs": 109762.0177, "step": 12, "title": "주문과 도착은 별도 단계", "body": "이 강의는 주문 접수까지입니다. 실제 경로로 배송·개봉해 수령 통에 재료가 들어와야 완료됩니다."}
+        {
+          "startMs": 611.7392,
+          "step": 1,
+          "title": "Material Ordering · 재고 목표와 주소 입력",
+          "body": "공급망에는 철괴 16개가 있고, 초록 수령 통은 비어 있습니다. 목표 재고를 네 개로 설정합니다."
+        },
+        {
+          "startMs": 4558.3622,
+          "step": 2,
+          "title": "빈 시간표에서 시작",
+          "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+        },
+        {
+          "startMs": 11598.58,
+          "step": 3,
+          "title": "근무 시간 만들기",
+          "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+        },
+        {
+          "startMs": 24850.0581,
+          "step": 4,
+          "title": "시간대에 할 일 추가",
+          "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+        },
+        {
+          "startMs": 36610.4978,
+          "step": 5,
+          "title": "재료가 실제 도착할 수령 통",
+          "body": "Receiving inventory to maintain에는 목표 재고를 검사할 초록 통을 지정합니다."
+        },
+        {
+          "startMs": 45011.3767,
+          "step": 6,
+          "title": "유지할 아이템과 목표 수량",
+          "body": "Material item에서 철괴를 선택하고 수량 4를 입력합니다. 여기서는 배치 소비량이 아닌 목표 재고입니다."
+        },
+        {
+          "startMs": 62847.2586,
+          "step": 7,
+          "title": "연결된 Ticker와 배송 주소",
+          "body": "공급망에 연결된 Stock Ticker를 선택하고 Delivery address에 Workshop A를 입력합니다."
+        },
+        {
+          "startMs": 77258.6829,
+          "step": 8,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 86950.1256,
+          "step": 9,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 91448.6547,
+          "step": 10,
+          "title": "실제 네트워크 주문과 포장",
+          "body": "NPC가 Ticker로 접근합니다. 공급 Packager가 철괴 네 개를 예약·포장하는 과정을 보세요."
+        },
+        {
+          "startMs": 104956.2781,
+          "step": 11,
+          "title": "공급 재고 16 → 12",
+          "body": "실제로 철괴 네 개가 빠졌습니다. 접수한 주문은 배송이 늦어도 자동 중복 발송하지 않습니다."
+        },
+        {
+          "startMs": 109762.0177,
+          "step": 12,
+          "title": "주문과 도착은 별도 단계",
+          "body": "이 강의는 주문 접수까지입니다. 실제 경로로 배송·개봉해 수령 통에 재료가 들어와야 완료됩니다."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-material-order.png": {
@@ -3078,20 +3678,90 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 600.4806, "step": 1, "title": "조건 제어 · 하한과 상한을 직접 설정", "body": "크랭크와 오른쪽 센서 통은 다른 대상입니다. 철괴 재고가 부족할 때만 돌리도록 만듭니다."},
-        {"startMs": 4557.1882, "step": 2, "title": "빈 시간표에서 시작", "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."},
-        {"startMs": 11599.5008, "step": 3, "title": "근무 시간 만들기", "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."},
-        {"startMs": 24856.0271, "step": 4, "title": "시간대에 할 일 추가", "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."},
-        {"startMs": 36592.9809, "step": 5, "title": "조작할 장치 지정", "body": "Control device가 Hand crank인지 확인하고 Machine control position에서 크랭크를 고릅니다."},
-        {"startMs": 45002.8174, "step": 6, "title": "센서 종류를 Item quantity로 전환", "body": "Sensor reading의 Redstone strength를 한 번 눌러 Item quantity로 바꿉니다."},
-        {"startMs": 48003.0639, "step": 7, "title": "읽을 보관함 지정", "body": "Sensor position에서 오른쪽 IRON STOCK 통을 고릅니다. 조작 장치와 혼동하지 마세요."},
-        {"startMs": 56400.9542, "step": 8, "title": "셀 아이템 선택", "body": "Counted item은 Iron Ingot입니다. 다른 아이템은 이 재고 수량에 포함되지 않습니다."},
-        {"startMs": 71844.737, "step": 9, "title": "하한 2 / 상한 6 입력", "body": "Activate at the lower threshold는 ON입니다. 먼저 상한 6, 다음 하한 2를 입력해 유효한 범위를 유지합니다."},
-        {"startMs": 79641.85, "step": 10, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 89351.8051, "step": 11, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 93849.1247, "step": 12, "title": "빈 재고에서 크랭크 작동", "body": "재고가 0이므로 하한 조건을 만족합니다. NPC가 장치에 접근해 실제 입력을 시작합니다."},
-        {"startMs": 100550.4372, "step": 13, "title": "센서 재고를 6으로 바꿔 정지 재현", "body": "검증 도구가 철괴 여섯 개를 넣습니다. 크랭크가 철괴를 생산한 장면이 아닙니다."},
-        {"startMs": 108402.6305, "step": 14, "title": "상한 도달과 이전 상태 유지", "body": "6 이상이면 입력을 멈춥니다. 이후 3이나 4로 줄어도 하한 2에 닿기 전에는 정지 상태를 유지합니다."}
+        {
+          "startMs": 600.4806,
+          "step": 1,
+          "title": "조건 제어 · 하한과 상한을 직접 설정",
+          "body": "크랭크와 오른쪽 센서 통은 다른 대상입니다. 철괴 재고가 부족할 때만 돌리도록 만듭니다."
+        },
+        {
+          "startMs": 4557.1882,
+          "step": 2,
+          "title": "빈 시간표에서 시작",
+          "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+        },
+        {
+          "startMs": 11599.5008,
+          "step": 3,
+          "title": "근무 시간 만들기",
+          "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+        },
+        {
+          "startMs": 24856.0271,
+          "step": 4,
+          "title": "시간대에 할 일 추가",
+          "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+        },
+        {
+          "startMs": 36592.9809,
+          "step": 5,
+          "title": "조작할 장치 지정",
+          "body": "Control device가 Hand crank인지 확인하고 Machine control position에서 크랭크를 고릅니다."
+        },
+        {
+          "startMs": 45002.8174,
+          "step": 6,
+          "title": "센서 종류를 Item quantity로 전환",
+          "body": "Sensor reading의 Redstone strength를 한 번 눌러 Item quantity로 바꿉니다."
+        },
+        {
+          "startMs": 48003.0639,
+          "step": 7,
+          "title": "읽을 보관함 지정",
+          "body": "Sensor position에서 오른쪽 IRON STOCK 통을 고릅니다. 조작 장치와 혼동하지 마세요."
+        },
+        {
+          "startMs": 56400.9542,
+          "step": 8,
+          "title": "셀 아이템 선택",
+          "body": "Counted item은 Iron Ingot입니다. 다른 아이템은 이 재고 수량에 포함되지 않습니다."
+        },
+        {
+          "startMs": 71844.737,
+          "step": 9,
+          "title": "하한 2 / 상한 6 입력",
+          "body": "Activate at the lower threshold는 ON입니다. 먼저 상한 6, 다음 하한 2를 입력해 유효한 범위를 유지합니다."
+        },
+        {
+          "startMs": 79641.85,
+          "step": 10,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 89351.8051,
+          "step": 11,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 93849.1247,
+          "step": 12,
+          "title": "빈 재고에서 크랭크 작동",
+          "body": "재고가 0이므로 하한 조건을 만족합니다. NPC가 장치에 접근해 실제 입력을 시작합니다."
+        },
+        {
+          "startMs": 100550.4372,
+          "step": 13,
+          "title": "센서 재고를 6으로 바꿔 정지 재현",
+          "body": "검증 도구가 철괴 여섯 개를 넣습니다. 크랭크가 철괴를 생산한 장면이 아닙니다."
+        },
+        {
+          "startMs": 108402.6305,
+          "step": 14,
+          "title": "상한 도달과 이전 상태 유지",
+          "body": "6 이상이면 입력을 멈춥니다. 이후 3이나 4로 줄어도 하한 2에 닿기 전에는 정지 상태를 유지합니다."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-conditional-control.png": {
@@ -3114,20 +3784,90 @@
       "gameWidth": 1920,
       "gameHeight": 1080,
       "steps": [
-        {"startMs": 601.7378, "step": 1, "title": "설비 점검 · 순회와 Display Board 보고", "body": "크랭크와 탱크를 순서대로 점검하고, 동력이 연결된 실제 보드의 지정 줄에 보고합니다."},
-        {"startMs": 5141.7671, "step": 2, "title": "Create 쪽 보드 동력을 먼저 준비", "body": "보드 옆 Cogwheel을 맞물려 실제 동력을 전달했습니다. 글자가 멈춰 있으면 동력과 회전축부터 확인하세요."},
-        {"startMs": 9353.5207, "step": 3, "title": "빈 시간표에서 시작", "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."},
-        {"startMs": 16394.2351, "step": 4, "title": "근무 시간 만들기", "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."},
-        {"startMs": 29652.534, "step": 5, "title": "시간대에 할 일 추가", "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."},
-        {"startMs": 41400.8557, "step": 6, "title": "첫 번째 점검 위치", "body": "Add inspection position을 누르고 크랭크를 선택합니다. 이 순서가 방문 순서입니다."},
-        {"startMs": 49794.9495, "step": 7, "title": "두 번째 점검 위치", "body": "다시 Add inspection position을 눌러 Create 탱크를 선택합니다."},
-        {"startMs": 58190.4904, "step": 8, "title": "점검 간격 입력", "body": "Work interval 80틱으로 설정합니다. 점검은 상태를 읽으며 설비를 수리하거나 채우지 않습니다."},
-        {"startMs": 61193.6375, "step": 9, "title": "실제 Display Board 지정", "body": "Display Board의 찾기로 앞쪽 보드를 선택합니다. 보드는 정상 조립과 동력이 필요합니다."},
-        {"startMs": 69600.9737, "step": 10, "title": "시작 줄과 예약 줄 수", "body": "첫 줄 2, 예약 6줄을 입력합니다. 보고는 2~7번 줄에 쓰며 그 밖의 글은 유지합니다."},
-        {"startMs": 74994.8458, "step": 11, "title": "활성화하고 NPC에 저장", "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."},
-        {"startMs": 84688.4307, "step": 12, "title": "저장 확인 후 편집기 닫기", "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."},
-        {"startMs": 89204.1449, "step": 13, "title": "두 장치를 실제로 순회", "body": "크랭크의 회전 상태와 탱크의 비율을 읽습니다. 빈 탱크를 채우는 작업이 아닙니다."},
-        {"startMs": 101602.3329, "step": 14, "title": "보드에서 전체 보고 확인", "body": "점검 대상 상태, 주변 작업자와 완료 작업 요약이 보입니다. 예약한 줄이 부족하면 일부만 덮어쓰지 않습니다."}
+        {
+          "startMs": 601.7378,
+          "step": 1,
+          "title": "설비 점검 · 순회와 Display Board 보고",
+          "body": "크랭크와 탱크를 순서대로 점검하고, 동력이 연결된 실제 보드의 지정 줄에 보고합니다."
+        },
+        {
+          "startMs": 5141.7671,
+          "step": 2,
+          "title": "Create 쪽 보드 동력을 먼저 준비",
+          "body": "보드 옆 Cogwheel을 맞물려 실제 동력을 전달했습니다. 글자가 멈춰 있으면 동력과 회전축부터 확인하세요."
+        },
+        {
+          "startMs": 9353.5207,
+          "step": 3,
+          "title": "빈 시간표에서 시작",
+          "body": "Core로 NPC를 우클릭하고 Schedule을 엽니다. 아직 등록된 일정이 없습니다."
+        },
+        {
+          "startMs": 16394.2351,
+          "step": 4,
+          "title": "근무 시간 만들기",
+          "body": "Add time을 누르고 이름과 시작·종료 시각을 입력합니다."
+        },
+        {
+          "startMs": 29652.534,
+          "step": 5,
+          "title": "시간대에 할 일 추가",
+          "body": "가운데 시간대 행의 +를 누르고 작업 분류에서 실제 액션을 고릅니다."
+        },
+        {
+          "startMs": 41400.8557,
+          "step": 6,
+          "title": "첫 번째 점검 위치",
+          "body": "Add inspection position을 누르고 크랭크를 선택합니다. 이 순서가 방문 순서입니다."
+        },
+        {
+          "startMs": 49794.9495,
+          "step": 7,
+          "title": "두 번째 점검 위치",
+          "body": "다시 Add inspection position을 눌러 Create 탱크를 선택합니다."
+        },
+        {
+          "startMs": 58190.4904,
+          "step": 8,
+          "title": "점검 간격 입력",
+          "body": "Work interval 80틱으로 설정합니다. 점검은 상태를 읽으며 설비를 수리하거나 채우지 않습니다."
+        },
+        {
+          "startMs": 61193.6375,
+          "step": 9,
+          "title": "실제 Display Board 지정",
+          "body": "Display Board의 찾기로 앞쪽 보드를 선택합니다. 보드는 정상 조립과 동력이 필요합니다."
+        },
+        {
+          "startMs": 69600.9737,
+          "step": 10,
+          "title": "시작 줄과 예약 줄 수",
+          "body": "첫 줄 2, 예약 6줄을 입력합니다. 보고는 2~7번 줄에 쓰며 그 밖의 글은 유지합니다."
+        },
+        {
+          "startMs": 74994.8458,
+          "step": 11,
+          "title": "활성화하고 NPC에 저장",
+          "body": "Enable schedule을 켠 다음 상단 디스크 아이콘 Save to NPC를 누릅니다."
+        },
+        {
+          "startMs": 84688.4307,
+          "step": 12,
+          "title": "저장 확인 후 편집기 닫기",
+          "body": "NPC settings saved를 확인합니다. 편집 중에는 작업이 멈추므로 닫고 관찰합니다."
+        },
+        {
+          "startMs": 89204.1449,
+          "step": 13,
+          "title": "두 장치를 실제로 순회",
+          "body": "크랭크의 회전 상태와 탱크의 비율을 읽습니다. 빈 탱크를 채우는 작업이 아닙니다."
+        },
+        {
+          "startMs": 101602.3329,
+          "step": 14,
+          "title": "보드에서 전체 보고 확인",
+          "body": "점검 대상 상태, 주변 작업자와 완료 작업 요약이 보입니다. 예약한 줄이 부족하면 일부만 덮어쓰지 않습니다."
+        }
       ]
     },
     "assets/media/guides/create-lessons-20261108/lesson-inspection-board.png": {
@@ -3136,6 +3876,20 @@
       "locale": "en_us",
       "width": 1920,
       "height": 1260
+    },
+    "assets/media/guides/battleworks-017-20261113/simple-edit.png": {
+      "minecraft": "1.21.1",
+      "loader": "NeoForge",
+      "locale": "en_us",
+      "width": 960,
+      "height": 540
+    },
+    "assets/media/guides/battleworks-017-20261113/animation-clips.png": {
+      "minecraft": "1.21.1",
+      "loader": "Fabric",
+      "locale": "en_us",
+      "width": 960,
+      "height": 540
     }
   }
 }

@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: 사용 안내
-version: 0.1.6
+version: 0.1.7
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -60,7 +60,7 @@ Save As와 전투 파일 참조에는 `bosses/training_captain.json`처럼 patte
 
 Load는 편집 화면에 파일을 여는 작업이고, Apply는 NPC를 그 파일에 연결하는 작업입니다. Save As 이후 NPC 적용 여부는 [설치 안내](#mob-editor/mob-editor-setup)의 표를 따릅니다.
 
-![서버 파일로 저장하고 DNPC에 연결한 전투 편집 화면.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 화면의 경로 표시는 짧게 보이지만 실제 확인한 파일은 config/dochi_rpg_maker/mobs/patterns/training/first_sword.json입니다. 다른 서버로 옮길 때도 이 전투 파일을 함께 준비합니다.")
+![서버 파일로 저장하고 DNPC에 연결한 전투 편집 화면.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. 서버 전투 파일을 저장해 DNPC에 연결한 화면입니다. NPC를 옮길 때 참조한 파일도 함께 옮기세요. 경로와 작업 파일명은 위 설명을 따릅니다.")
 
 ## 4. 외부 편집기의 수정 반영하기
 
@@ -78,10 +78,10 @@ Load는 편집 화면에 파일을 여는 작업이고, Apply는 NPC를 그 파�
 | 파일 | 사용하는 곳 | 필요한 준비 |
 | --- | --- | --- |
 | [first_sword.json](./assets/media/battleworks/first_sword.json) | `mobs/patterns/training/` | BattleWorks 0.1.6·DNPC 0.1.3·NeoForge 1.21.1에서 실제 저장·적용·피해 확인 |
-| [training_swordsman.json](./assets/media/battleworks/training_swordsman.json) | `mobs/patterns/training/` | 일반 인간형 NPC, CustomNPCs 적대 타겟 |
+| [training_swordsman.json](./assets/media/battleworks/training_swordsman.json) | `mobs/patterns/training/` | 일반 인간형 DNPC 또는 지원하는 구형 NPC; 보조 탐색 사용 |
 | [training_ring.json](./assets/media/battleworks/training_ring.json) | `particles/` | Particle Maker 또는 /drm particle 명령 |
 
-**first_sword.json**은 현재 첫 공격 실습에서 실제 UI로 저장한 파일입니다. **training_swordsman.json**은 이전 Forge·CustomNPCs 실습 자료로 보조 탐색이 꺼져 있습니다. 사용할 NPC 흐름에 맞게 골라 주세요.
+**first_sword.json**은 실제 UI 저장·피해 검증 파일이며, **training_swordsman.json**은 일반 인간형과 보조 탐색을 사용하는 JSON 실습 예제입니다. 사용할 NPC와 전투 조건을 확인한 뒤 적용하세요.
 
 브라우저에서 JSON이 열리면 파일로 저장합니다. `.json.txt`로 저장되지 않았는지 확장자를 확인하세요. 두 파일은 각각 전투와 시각 효과이므로 서로 폴더를 바꿔 넣지 않습니다.
 
@@ -104,20 +104,32 @@ Load는 편집 화면에 파일을 여는 작업이고, Apply는 NPC를 그 파�
 
 ## 7. 업그레이드와 이전 파일
 
-1. 게임·서버를 종료하고 config와 월드를 백업합니다.
-2. 기존 BattleWorks / 구형 Mob Editor JAR 중복을 제거하고 호환 버전으로 교체합니다.
-3. 사용할 Minecraft·로더의 DRM·NPC 모드와 맞는 파일을 선택합니다. 현재 설치 안내의 요구 조건을 확인합니다.
-4. 실행 후 파일 목록과 NPC 참조를 확인합니다.
-5. 모델·스킬·사운드와 실제 전투를 다시 확인합니다.
+1. JAR을 바꾸기 전에 월드와 config를 백업합니다.
+2. Minecraft·로더가 맞는 BattleWorks 0.1.7을 설치하고 이전 BattleWorks·Mob Editor JAR 중복을 제거합니다.
+3. DRM은 선택 사항입니다. 해당 기능을 사용한다면 환경에 맞는 DRM·제공자 의존성을 확인합니다.
+4. 전투 파일을 다시 열어 NPC 연결·모델·스킬·소리를 확인합니다.
+5. 다시 적용하고 실제 전투·정리·재시작 후 유지를 시험합니다.
 
-기존 mobs 폴더의 인식 가능한 전투 파일은 patterns로 이관될 수 있고 원본은 `config/dochi_rpg_maker/backups/battleworks-mobs-patterns-v1/`에 보관됩니다. 충돌하는 파일과 알 수 없는 JSON·모델 자산은 무작정 덮어쓰지 않습니다.
+인식 가능한 이전 전투 파일은 mobs에서 patterns로 이동할 수 있으며 원본 바이트는 config/dochi_rpg_maker/backups/battleworks-mobs-patterns-v1에 백업합니다. 충돌 파일과 알 수 없는 모델 JSON은 보존합니다. 파일을 정리한 뒤에는 직접 다시 적용하세요. 이름이 중복되면 참조 복구가 확실하지 않습니다.
 
-0.1.5에는 고유하게 식별되는 이동된 전투 파일의 참조 복구가 있지만, 여러 동명 파일을 임의로 골라 주는 기능으로 의존하지 마세요. 폴더를 바꾼 뒤 NPC에 명시적으로 재적용하면 확인하기 쉽습니다.
-
-내부 모드 ID는 `dochi_battleworks`입니다. 구형 `drm_addon_mob_editor`를 현재 ID라고 사용하지 않습니다. 또한 CNPC-Gecko-Addon의 예전 모델 NBT 변환과 원래 애드온의 엔티티·리소스 지원은 다릅니다. 해당 애드온에 의존하는 월드는 원래 애드온이 계속 필요할 수 있습니다.
+모드 ID는 dochi_battleworks를 유지합니다. 이전 모델 변환이 누락된 모델 제공자까지 대신하지는 않습니다. CustomNPCs 의존 NPC와 에셋은 지원하는 이전 대상에만 해당하며 26.3의 네이티브 연동으로 사용할 수 없습니다.
 
 ## 8. 다른 서버에 전달할 자료
 
 전투 파일, 파티클 파일, 모델 자산, 사운드 리소스, 팝업·GUI, 클론 자료, 요구 모드 버전을 함께 정리합니다. **새 환경의 일반 NPC에 Load·Apply하여 실제로 실행되는지** 확인한 뒤 배포합니다.
 
 문제가 있으면 [JSON 참고](#mob-editor/battleworks-json-reference)와 [문제 해결](#mob-editor/battleworks-troubleshooting)로 이어갑니다.
+
+## 플레이어별 기술 보관함
+
+**기술함에 저장**은 현재 서버의 해당 플레이어 보관함에 재사용 묶음을 저장합니다. 서버 경로:
+
+```text
+config/dochi_rpg_maker/battleworks/pattern_library/<UUID>/
+```
+
+플레이어당 유효 항목 128개까지 저장합니다. DRM이 없어도 경로는 dochi_rpg_maker 아래를 사용합니다.
+
+**내 기술함 → 기술 불러오기**로 다른 전투 문서에 가져옵니다. 패턴과 연결 리소스는 새 ID로 들어갑니다. 참조한 서버 파티클 파일은 포함할 수 있지만 외부 모델·소리·스킬과 해당 모드는 별도 의존성입니다. NPC의 전투 JSON만 복사해도 개인 보관함이 같이 옮겨지지는 않습니다. [레시피와 복사 흐름](#mob-editor/battleworks-authoring)을 참고하세요.
+
+실행 취소는 문서를 되돌리며 이미 저장한 보관함 항목을 삭제하지 않습니다. 서버를 옮길 때는 서버 전투 파일과 보관함을 함께 백업하세요.

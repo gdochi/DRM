@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -120,3 +120,11 @@ Velocidad de vista previa 0.1x–4.0x cambia la velocidad de observación, no lo
 ## Antes de ahorrar
 
 Marque Habilitado, ID faltantes, límites de eventos y la última repetición. Resuelve errores de validación, guarda/aplica y prueba el NPC real. Continúe con [hitboxes](#mob-editor/battleworks-hitboxes).
+
+## Edición simple y detallada
+
+Usa **Simple edit** para nombre, activación, alcance, duración de etapas, recarga y valores comunes de la hitbox vinculada. **Detailed edit** muestra condiciones, eventos, movimiento y animación sin borrar esos datos al cambiar de vista. [Recetas, My techniques y opciones de copia](#mob-editor/battleworks-authoring) agilizan el trabajo repetido.
+
+**Undo / Redo** restaura ediciones y estado de carga; Back/Forward navega por el historial del editor. Los campos muestran segundos junto a ticks. A velocidad normal del servidor, 20 ticks son un segundo.
+
+La barra de la cronología pasa a otra fila si falta anchura. Arrastra divisores o usa las flechas de los paneles para recuperar espacio. Los nombres largos de clips ocupan una fila y muestran el texto completo al pasar el cursor en Hitbox Library.

@@ -7,41 +7,40 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
   - combat
 ---
 
-## 1. Prepare the model in NPC Basic
+## 1. Prepare the actor's model
 
-BattleWorks uses DRM's model and playback APIs. Configure geometry, textures, animation assets, and semantic mappings in **DRM NPC Basic** first.
+Configure the real actor first: for DNPC use **Appearance & Model**; for a DRM model use **DRM NPC Basic** and its assets. **DRM is optional**. Without DRM, BattleWorks can use its native humanoid swing and supported optional animation providers; with DRM installed, DRM retains animation ownership.
 
 | Model or method | Appropriate source |
 | --- | --- |
-| Normal humanoid | Main-Hand Swing or installed humanoid motion provider |
-| DRM Gecko model | A real clip from that model's animation file |
-| DRM modded entity | Native clips exposed by its DRM integration |
-| DRM Behavior | A configured semantic mapping such as attack |
+| Normal humanoid | Main-Hand Swing, or a compatible installed Player Animator / PAL motion source |
+| Better Combat weapon motion | Compatible Better Combat resources and a supported weapon |
+| Gecko model | A real clip exposed by the installed model provider and animation file |
+| DRM modded entity / Behavior | Clips or semantic mappings exposed by the DRM integration |
 | Geometry-only test | Explicit No Animation / None |
 
-A Gecko clip and a humanoid Better Combat pose layer are not interchangeable.
-
-![Action stage Animation + Hitbox settings with main_hand.](assets/media/guides/battleworks-016-neo1211/battleworks-stage-animation.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Build Assist generated Vanilla Swing / main_hand at speed 1. Choose animation opens clips; Edit this hitbox opens hit detection.")
-
-For ordinary DNPCs, prepare appearance in the **DNPC editor → Appearance & Model**. Find the stage mapping through timeline **Action → Stage → Animation + Hitbox**. The NPC Basic instructions apply to DRM model settings.
+Custom humanoid clips can appear under their own namespace; they are not limited to Better Combat IDs. A Gecko clip and a humanoid pose layer are not interchangeable. CustomNPCs actors are only an optional legacy integration below 26.3.
 
 ## 2. Select a clip in Hitbox Library
 
-1. Open **Edit this hitbox** from the action.
-2. Choose the use under **Pattern:**.
-3. Select Action in the model's stage toolbar.
-4. Search **Clips** and select a real clip.
-5. Press Play, inspect contact, then Stop.
-6. Change the pattern's Event Tick to match contact.
+1. From the pattern's action, open **Edit this hitbox**.
+2. Use **Pattern:** to select the linked usage and choose its stage, such as Action.
+3. Read the source description above **Clips**, then search by name or ID.
+4. Select a compatible clip, press Play, inspect contact, then Stop.
+5. Adjust the pattern's hit event to match contact and save/apply.
 
-Pattern selects a usage; Clips selects animation. A detached preview can use a saved model settings or a default mannequin. Reopen with the real NPC if the preview model does not match.
+A selection without a linked pattern is temporary preview state. Select the intended usage to save its stage animation. A detached preview uses the attached NPC's copied appearance, saved preview settings, or a default actor; reopen with the real NPC if the model differs.
+
+![Clip source, search and long clip names in Hitbox Library.](assets/media/guides/battleworks-017-20261113/animation-clips.png "BattleWorks 0.1.7 / Fabric 1.21.1 / DRM 0.3.2 / DNPC 0.1.4, with Better Combat resources installed. The source description wraps above search and a long clip name is exposed on hover. No compatible stage motion is assigned in this still; it does not demonstrate playback.")
+
+Long clip names stay on one row and reveal their full text while hovered. Drag the model/list divider for more width, or refresh after resources finish loading.
 
 ## 3. Three animation locations
 
@@ -90,16 +89,15 @@ The following is a **stage animation object**, not a complete combat file:
 
 Without an explicit choice, older hitbox-only stages may migrate to the basic swing.
 
-## 7. Diagnose an empty clip list
+## 7. Diagnose an empty or incompatible clip list
 
-1. Check NPC Basic's model provider.
-2. Distinguish geometry `.geo.json` from animation `.animation.json`.
-3. Confirm the model references the intended animation asset.
-4. Check optional providers and client resources.
-5. Refresh after asynchronous assets load.
-6. Verify that DRM actually exposes the needed native clip.
+1. Check the real actor's model and the source description above Clips.
+2. For Gecko, distinguish geometry `.geo.json` from animation `.animation.json` and check the linked animation asset.
+3. For humanoid clips, check the matching Player Animator / PAL provider and actual client resources. Better Combat is needed only for its motions.
+4. Refresh after asynchronous resources load. Use clips offered for the current model instead of inventing IDs.
+5. With DRM installed, verify its model mappings and playback; without DRM, test a native swing before adding optional clips.
 
-Use the current NPC's list instead of inventing IDs.
+A visible catalog entry is not proof that an incompatible model can play it. Compare the real NPC after saving and applying.
 
 ## Model snapshots
 

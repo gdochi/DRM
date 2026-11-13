@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -16,34 +16,33 @@ translationSource: en
 translationMethod: assisted
 ---
 
-## 1. Preparar el modelo en NPC Basic
+## 1. Preparar el modelo del actor
 
-BattleWorks utiliza las APIs de modelo y reproducción de DRM. Configure primero la geometría, las texturas, los recursos de animación y las asignaciones semánticas en **DRM NPC Basic**.
+Configura primero el actor real: en DNPC usa **Appearance & Model**; para modelos DRM usa **DRM NPC Basic** y sus recursos. **DRM es opcional**. Sin DRM, BattleWorks usa el movimiento humanoide nativo y proveedores opcionales compatibles; con DRM instalado, DRM mantiene el control de la animación.
 
-| Modelo o método | Fuente apropiada |
+| Modelo o método | Fuente adecuada |
 | --- | --- |
-| Humanoide normal | Swing principal o proveedor de movimiento humanoide instalado |
-| DRM Modelo de Gecko | Un clip real del archivo de animación de esa modelo |
-| DRM modded entity | Clips nativos expuestos por su integración DRM |
-| DRM Comportamiento | Un mapeo semántico configurado como ataque |
-| Prueba de solo geometría | No hay animación explícita / Ninguno |
+| Humanoide normal | Main-Hand Swing o fuente compatible Player Animator / PAL |
+| Movimiento de arma Better Combat | Recursos Better Combat compatibles y arma admitida |
+| Modelo Gecko | Clip real expuesto por el proveedor y el archivo de animación |
+| Entidad modificada / Behavior DRM | Clips o mapeos semánticos de la integración DRM |
+| Prueba solo de geometría | No Animation / None explícito |
 
-Un clip Gecko y una capa de postura humanoide Better Combat no son intercambiables.
+Los clips humanoides personalizados pueden aparecer con su propio namespace; no se limitan a ID Better Combat. Un clip Gecko y una capa humanoide no son intercambiables. CustomNPCs solo es una integración antigua opcional anterior a 26.3.
 
-![Escenario de acción Animación + Hitbox ajustes con main_hand.](assets/media/guides/battleworks-016-neo1211/battleworks-stage-animation.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Build Assist generó Vanilla Swing / main_hand a velocidad 1. Elegir animación abre clips; Editar este hitbox abre detección de hits.")
+## 2. Seleccionar un clip en Hitbox Library
 
-Para las DNPC ordinarias, prepare la apariencia en **DNPC editor → Appearance & Model**. Encuentra el mapeo de la etapa a través de la línea de tiempo **Action → Stage → Animation + Hitbox**. Las instrucciones básicas de NPC se aplican a la configuración del modelo DRM.
+1. Desde la acción del patrón, abre **Edit this hitbox**.
+2. En **Pattern:** selecciona el uso vinculado y su etapa, como Action.
+3. Lee la descripción de la fuente sobre **Clips** y busca por nombre o ID.
+4. Selecciona un clip compatible, pulsa Play, comprueba el contacto y después Stop.
+5. Ajusta el evento de impacto al contacto y guarda/aplica.
 
-## 2. Seleccione un clip en la Biblioteca de Hitbox
+Una selección sin patrón vinculado es temporal en la vista previa. Selecciona el uso deseado para guardar su animación de etapa. La vista separada usa la apariencia copiada del NPC, ajustes guardados o un actor predeterminado; vuelve a abrir con el NPC real si el modelo difiere.
 
-1. Abrir **Edit this hitbox** de la acción.
-2. Elija el uso bajo **Pattern:**.
-3. Seleccione Acción en la barra de herramientas de la etapa del modelo.
-4. Busque **Clips** y seleccione un clip real.
-5. Presione Reproducir, inspeccione el contacto y luego Detener.
-6. Cambia la marca de evento del patrón para que coincida con el contacto.
+![Fuente, búsqueda y nombres largos en Hitbox Library.](assets/media/guides/battleworks-017-20261113/animation-clips.png "BattleWorks 0.1.7 / Fabric 1.21.1 / DRM 0.3.2 / DNPC 0.1.4, con recursos Better Combat instalados. La descripción ocupa varias líneas sobre la búsqueda y el nombre largo se muestra al pasar el cursor. No hay movimiento de etapa compatible asignado en esta imagen; no demuestra reproducción.")
 
-Patrón selecciona un uso; Clips selecciona animación. Una vista previa separada puede usar una configuración de modelo guardada o un modelo predeterminado. Vuelva a abrir con el NPC real si el modelo de vista previa no coincide.
+Los nombres largos permanecen en una fila y muestran el texto completo al pasar el cursor. Arrastra el divisor entre modelo y lista para ampliar, o actualiza después de cargar los recursos.
 
 ## 3. Tres localizaciones de animación
 
@@ -92,16 +91,15 @@ Lo siguiente es un objeto de animación **stage**, no un archivo de combate comp
 
 Sin una elección explícita, las etapas más antiguas de solo hitbox pueden migrar al swing básico.
 
-## 7. Diagnosticar una lista de clips vacía
+## 7. Diagnosticar una lista vacía o incompatible
 
-1. Consulte el proveedor de modelos de NPC Basic.
-2. Distinguir geometría `.geo.json` de animación `.animation.json`.
-3. Confirme que el modelo hace referencia al recurso de animación deseado.
-4. Compruebe proveedores opcionales y recursos del cliente.
-5. Actualizar después de cargar los activos asincrónicos.
-6. Verifique que DRM realmente exponga el clip nativo necesario.
+1. Comprueba el modelo real y la descripción de la fuente sobre Clips.
+2. Para Gecko, distingue geometría `.geo.json` y animación `.animation.json` y revisa el recurso vinculado.
+3. Para humanoides, comprueba el proveedor Player Animator / PAL correspondiente y los recursos reales del cliente. Better Combat solo hace falta para sus propios movimientos.
+4. Actualiza después de la carga asíncrona. Usa clips ofrecidos para el modelo actual sin inventar ID.
+5. Con DRM, revisa mapeos y reproducción; sin DRM, prueba el movimiento nativo antes de añadir clips opcionales.
 
-Utilice la lista actual de NPC en lugar de inventar IDs.
+Una entrada visible en el catálogo no demuestra que un modelo incompatible pueda reproducirla. Compara el NPC real después de guardar y aplicar.
 
 ## Modelo de instantáneas
 

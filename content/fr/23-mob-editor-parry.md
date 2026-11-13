@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Débutants et créateurs de combat
 tags:
   - battleworks
@@ -16,20 +16,15 @@ translationSource: en
 translationMethod: assisted
 ---
 
-## 1. Supprimer les attaques natives qui se chevauchent
+## 1. Supprimer les attaques natives superposées
 
-Activer **Combat Rules → Combat → Suppress Native Attacks** lorsque les hitboxes créées doivent posséder un timing d'attaque.
+Activez **Combat Rules → Combat → Suppress Native Attacks** lorsque les hitboxes doivent contrôler le temps des attaques. Enregistrez/appliquez, puis cherchez des coups supplémentaires pendant préparation et récupération. S'ils persistent, inspectez l'IA de l'acteur et les autres contrôleurs ; configurez DNPC dans son propre éditeur.
 
-1. Commencez par une attaque hitbox.
-2. Activer la suppression et enregistrer/appliquer.
-3. Vérifiez les coups supplémentaires pendant la préparation ou la récupération.
-4. Si le chevauchement persiste, inspectez les scripts de combat CustomNPC.
+## 2. Gérer les anciens scripts délibérément
 
-## 2. Gérer les scripts hérités délibérément
+**Suppress CustomNPC Scripts** concerne seulement l'intégration facultative CustomNPCs sur les versions compatibles antérieures à 26.3. Elle empêche la concurrence avec BattleWorks en préservant les données des scripts. Vérifiez d'abord leurs fonctions hors combat.
 
-0.1.5de **Suppress CustomNPC Scripts** empêche l'exécution de scripts hérités de concurrencer BattleWorks. Il conserve les données de script stockées.
-
-Ceci est utile lors du portage d'un patron scripté. Vérifiez tout comportement non-combat fourni par ces scripts avant de compter sur la suppression. Un nouveau PNJ n’en a normalement pas besoin.
+DNPC ne nécessite ni CustomNPCs ni ce réglage. À partir de 26.3, CustomNPCs est exclu ; utilisez DNPC ou le fournisseur compatible.
 
 ## 3. Soutien actuel de la parade
 

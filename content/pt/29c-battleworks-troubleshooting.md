@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Guia
-version: 0.1.6
+version: 0.1.7
 audience: Iniciantes e criadores de combate
 tags:
   - battleworks
@@ -16,18 +16,15 @@ translationSource: en
 translationMethod: assisted
 ---
 
+## Primeiras verificações
 
-## Primeiros cheques
+1. Confira Minecraft, loader e BattleWorks 0.1.7. Confira DRM e provedores externos apenas se usar seus recursos; DRM é opcional.
+2. Siga a [preparação do NPC](#mob-editor/mob-editor-setup). Use DNPC a partir de 26.3; CustomNPCs está excluído.
+3. Confirme que o caminho salvo está vinculado ao NPC.
+4. Separe criação no Criativo de testes no Sobrevivência.
+5. Comece com movimento humanoide nativo e Hitbox antes de modelos ou magias externos.
 
-1. Combinar Minecraft, carregador, BattleWorks e DRM arquivos.
-2. Seguir [Preparação do NPC](#mob-editor/mob-editor-setup) para o atual DNPC exercício. CustomNPCs é excluído em 26.3 e mais tarde.
-3. Confirme que o caminho salvo é o caminho ligado ao NPC.
-4. Separe a autoria criativa dos testes de combate Survival.
-5. Verifique o balanço básico do braço e o Hitbox antes de adicionar modelos ou habilidades externas.
-
-![Configurações de combate usadas para o teste save/apply real.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. Alcance de varredura 16, FOV 360 e Salvo. Avisos: 0 foram verificados antes de verificar a perda de saúde da Survival. Trate os avisos de salvamento e de visualização de modelo separadamente.")
-
-Nesta combinação, o balanço básico causou danos reais, enquanto os avisos de modelo / animação e uma janela de Simulação que não abriu também foram observados. Compare o arquivo [verified first-attack](#mob-editor/battleworks-first-attack) e o combate real antes de descartar a ligação NPC por causa de um problema de visualização.
+O [primeiro ataque](#mob-editor/battleworks-first-attack) mantém capturas reais de combate em 0.1.6. Avisos históricos da prévia não são uma restrição atual. Diagnostique aplicação do arquivo, prévia do modelo e combate separadamente.
 
 ## O arquivo está faltando na lista.
 
@@ -50,17 +47,16 @@ Os arquivos de partículas usam partículas e dochi.partículas.v1.
 
 Use arquivos separados quando NPCs precisam de comportamento independente.
 
-## O NPC nunca ataca.
+## O NPC nunca ataca
 
-1. Deixe o modo Criativo/Espectador.
-2. Confirmar CustomNPCs Alvo hostil.
-3. Se estiver usando a varredura de fallback, o intervalo de verificação, FOV e visão.
-4. Amplie temporariamente a faixa de padrões, altura, fase e condições de saúde para isolar a falha.
-5. Certifique-se de que pelo menos um padrão de gerente comum exista.
-6. Verifique a Pontuação Base e os multiplicadores de repetição zero.
-7. Verifique a propriedade de movimentos longos e recargas.
+1. Saia do Criativo/Espectador.
+2. Confirme um alvo válido do ator ou ative Scan Without Target em uma área isolada.
+3. Confira alcance, FOV e linha de visão. A varredura alternativa é separada do filtro de relações do NPC.
+4. Confira Enabled, alcance, altura, vida e fase do padrão.
+5. Garanta um padrão Manager comum elegível; confira pontuação, multiplicadores de repetição e recargas.
+6. Confira controle do movimento e limites da arena.
 
-Compare um NPC separado usando o [arquivo de prática simples](./assets/media/battleworks/training_swordsman.json).
+Compare outro NPC usando o [arquivo simples de prática](./assets/media/battleworks/training_swordsman.json).
 
 ## O NPC pára antes de chegar ao seu ataque.
 
@@ -80,16 +76,14 @@ O alcance inicial e a geometria real do hitbox são separados.
 
 Vários hitboxes em um carrapato não garantem simples danos somados.
 
-## Animação ou ataques se sobrepõem
+## Animações ou ataques se sobrepõem
 
-1. Verifique Suprimir Ataques Nativos.
-2. Inspecione os scripts de combate do CustomNPC existentes.
-3. Teste Suprimir scripts de NPC personalizados quando apropriado.
-4. Evite solicitações de animação de palco e linha do tempo.
-5. Compare o Cast Animation Ticks com os estágios posteriores.
-6. Verifique a compatibilidade provedor/modelo.
+1. Confira Suppress Native Attacks, IA do ator e outros controladores.
+2. Apenas em CustomNPCs antigo compatível, confira scripts e Suppress CustomNPC Scripts. Isso não é requisito do DNPC ou de 26.3.
+3. Evite pedidos concorrentes de animação de etapa e linha do tempo.
+4. Compare Cast Animation Ticks com etapas seguintes e confira modelo/provedor.
 
-Não é esperado reiniciar uma animação correspondente em etapas consecutivas.
+Uma animação igual pode continuar entre etapas consecutivas sem reiniciar.
 
 ## Uma habilidade falha.
 
@@ -139,3 +133,16 @@ A propriedade BGM de outro NPC ou títulos/popups sobrepostos também podem muda
 Teste próximo/médio/longe, frente/lados/traseiro, paredes/ escadas/altura diferenças, cada fase, cada passiva, morte, perda de alvo, e outra luta. Reabrir arquivos para verificar a persistência.
 
 Para um relatório de problema útil, inclua versões mod, etapas de reprodução, arquivos de combate e referenciados, comportamento esperado/real, latest.log e qualquer relatório de falha. Remova tokens privados ou dados pessoais antes de compartilhar logs.
+
+## Receitas, importações e reinício da arena
+
+| Sintoma | Verificar |
+| --- | --- |
+| Editar uma cópia altera a hitbox original | Uso compartilhado; separe a hitbox ou use Independent copy |
+| My techniques vazio em outro servidor | A biblioteca pertence ao jogador naquele servidor |
+| Importação rejeitada | Recursos necessários, compatibilidade do modelo, referências e limites |
+| Clipes ausentes ou sem reprodução | Recursos reais, descrição da fonte e modelo/provedor compatível |
+| Chefe retorna ou cura inesperadamente | Arena aplicada, reinício ao sair e Restore boss health |
+| Aviso sem impacto | Ação Hitbox vinculada, tick de contato e posição do alvo |
+
+Use o [fluxo de criação](#mob-editor/battleworks-authoring), o [guia de animação](#mob-editor/battleworks-animation) e as [instruções de arena](#mob-editor/battleworks-encounters) para testar separadamente.

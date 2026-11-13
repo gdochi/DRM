@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -82,21 +82,21 @@ Not every registered mod entity supports generic creation. Use a real Skill inte
 
 Choose between automatic launch and an earlier explicit release. Limits are 64 per action and 128 live managed projectiles per caster. Start small.
 
-Item visuals used for constructs are not pickup loot. Configure loot separately in CustomNPCs.
+Configure loot in the actor's own NPC editor. Construct item visuals are separate from pickup loot.
 
-## 5. Summon a CustomNPC clone
+## 5. Summon a saved NPC template
 
-1. Save a real clone with CustomNPCs tools.
-2. Record its exact tab and name.
-3. Add **Summon Clone** with those values.
-4. Use Group ID guards and Count 1.
-5. Configure spawn location and lifetime.
-6. Optionally connect an existing child Battlework File.
-7. Add **Dismiss Summons** for guards and test cleanup.
+1. Save an NPC template through the installed NPC/template provider, such as DNPC.
+2. Add **Summon NPC** and set **Summon source → NPC template**.
+3. Open the template picker, search, and inspect its appearance preview. Choose a real server template; a typed entity ID is not a saved template.
+4. Set Group ID guards, Count 1, and the spawn origin.
+5. Under Modifiers, set radius and lifetime; optionally override maximum health and movement speed or inherit the target.
+6. Optionally select an existing child Battlework File relative to mobs/patterns.
+7. Add **Dismiss Summons** for guards and test expiry, parent cleanup and save/restart behavior.
 
-A clone name is not an arbitrary entity ID. The clone and optional child file must exist on the server. Child files use paths relative to mobs/patterns.
+A positive lifetime expires after that many ticks; 0 means no timed expiry, while managed cleanup still applies. Summon ownership, group and expiry tracking persist with the world. Limits are 32 per action and 64 live summons per parent. Avoid uncontrolled child summon chains.
 
-Summons are parent-managed and can inherit the target. Limits are 32 per action and 64 live summons per parent. Review child files to avoid uncontrolled summon chains.
+**Legacy only:** supported CustomNPCs installations below 26.3 can instead choose the clone source and supply its real clone tab/name. That source is not available on 26.3 and later.
 
 ## 6. Gate later events with conditions
 
@@ -137,7 +137,7 @@ Numeric operators are eq, neq, gt, gte, lt, and lte. Health 50% is 0.5. Negate r
 
 Advanced `npcStats.enabled` can apply maximum health, movement speed, phase-specific speeds, follow range, and idle/combat regeneration. It is disabled by default. Zero health/speed/range values do not apply a new attribute value; zero regeneration adds no automatic healing.
 
-The first exercise prepares base stats in CustomNPCs. Inspect npcStats when an imported boss unexpectedly changes health or speed.
+Prepare base stats in DNPC or the supported actor's editor. Inspect npcStats when an imported boss changes health or speed unexpectedly.
 
 ## 8. Other status and control actions
 

@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Débutants et créateurs de combat
 tags:
   - battleworks
@@ -84,21 +84,21 @@ Toutes les entités mod enregistrées ne prennent pas en charge la création gé
 
 Choisissez entre le lancement automatique et une version explicite antérieure. Les limites sont 64 par action et 128 les projectiles gérés en direct par lanceur. Commence petit.
 
-Les éléments visuels utilisés pour les constructions ne sont pas un butin de ramassage. Configurez le butin séparément en CustomNPCs.
+Configurez le butin dans l'éditeur du PNJ. Les apparences d'objets des constructions sont distinctes du butin ramassable.
 
-## 5. Invoquer un clone CustomNPC
+## 5. Invoquer un modèle de PNJ enregistré
 
-1. Sauvegardez un vrai clone avec les outils CustomNPCs.
-2. Enregistrez son onglet et son nom exacts.
-3. Ajoutez **Summon Clone** à ces valeurs.
-4. Utilisez les gardes d'ID de groupe et comptez 1.
-5. Configurez l'emplacement d'apparition et la durée de vie.
-6. Optionnellement, connectez un fichier Battlework enfant existant.
-7. Ajoutez **Dismiss Summons** pour les gardes et testez le nettoyage.
+1. Enregistrez un modèle avec les outils du fournisseur installé, comme DNPC.
+2. Ajoutez **Summon NPC** et choisissez **Summon source → NPC template**.
+3. Ouvrez le sélecteur, cherchez et inspectez l'aperçu. Choisissez un vrai modèle du serveur ; saisir un identifiant d'entité ne crée pas de modèle.
+4. Réglez Group ID guards, Count 1 et l'origine d'apparition.
+5. Dans Modifiers, réglez rayon et durée ; remplacez éventuellement santé maximale et vitesse ou héritez de la cible.
+6. Associez éventuellement un Battlework File enfant existant relatif à mobs/patterns.
+7. Ajoutez **Dismiss Summons** pour guards et testez expiration, nettoyage du parent et sauvegarde/redémarrage.
 
-Un nom de clone n'est pas un identifiant d'entité arbitraire. Le clone et le fichier enfant optionnel doivent exister sur le serveur. Les fichiers enfants utilisent des chemins relatifs aux créatures/motifs.
+Une durée positive expire après les ticks indiqués ; 0 n'a pas d'expiration temporelle, mais le nettoyage géré reste actif. Propriétaire, groupe et expiration persistent avec le monde. Limites : 32 par action et 64 invocations vivantes par parent. Évitez les chaînes d'invocation illimitées.
 
-Les invocations sont gérées par les parents et peuvent hériter de la cible. Les limites sont 32 par action et 64 convocations en direct par parent. Examiner les fichiers enfants pour éviter les chaînes d'invocation incontrôlées.
+**Anciennes versions uniquement :** les installations CustomNPCs compatibles antérieures à 26.3 peuvent choisir la source clone avec onglet/nom réels. Cette source n'est pas disponible à partir de 26.3.
 
 ## 6. Gate événements ultérieurs avec des conditions
 
@@ -139,7 +139,7 @@ Les opérateurs numériques sont eq, neq, gt, gte, lt et lte. Santé 50 % est 0.
 
 Advanced `npcStats.enabled` peut appliquer la santé maximale, la vitesse de déplacement, les vitesses spécifiques à la phase, la plage de suivi et la régénération de ralenti / combat. Il est désactivé par défaut. Les valeurs de santé/vitesse/gamme zéro n'appliquent pas de nouvelle valeur d'attribut ; la régénération zéro n'ajoute aucune guérison automatique.
 
-Le premier exercice prépare les statistiques de base en CustomNPCs. Inspectez npcStats lorsqu'un boss importé change de façon inattendue d'état ou de vitesse.
+Préparez les attributs de base dans DNPC ou l'éditeur de l'acteur compatible. Vérifiez npcStats si un boss importé change de santé ou de vitesse.
 
 ## 8. Autres mesures de statut et de contrôle
 

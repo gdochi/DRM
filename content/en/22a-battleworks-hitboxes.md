@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -107,3 +107,11 @@ For a lingering area, begin with cooldown and targetCooldownTicks `10`, then tes
 5. Save/apply and test front, sides, rear, and different heights.
 
 If too high, check Offset Y. If sideways, check Offset X and Yaw. If short, compare Offset Z, dimensions, and start range. Continue with [animation](#mob-editor/battleworks-animation).
+
+## Shared hitboxes and linked ground warnings
+
+Before changing a definition, check its usage count in **Simple edit**. Shared damage and geometry affect every referencing pattern. **Make this hitbox independent** copies the selected definition and reconnects the current pattern's references; other patterns keep the original. [Independent technique copies](#mob-editor/battleworks-authoring) also copy linked resources and combo destinations.
+
+For a warning that follows an NPC-relative attack, select the preparation stage's **Telegraph** settings. Enable **Link ground warning to hitbox**, choose **Warning hitbox** or **Next hitbox contact**, then enable **Fill until contact** if desired. The linked warning uses the hitbox's footprint and contact timing. It is visual; the actual Hitbox action still deals damage.
+
+A saved-position blast or an external spell's own area needs its own anchor and warning. Do not assume this link predicts arbitrary spell geometry. Inspect the whole stage and test contact in the world.

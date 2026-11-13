@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Débutants et créateurs de combat
 tags:
   - battleworks
@@ -15,6 +15,8 @@ tags:
 translationSource: en
 translationMethod: assisted
 ---
+
+BattleWorks 0.1.7 propose aussi [Simple edit et les recettes](#mob-editor/battleworks-authoring). Cette page conserve l'exercice Build Assist pour apprendre chaque valeur. Ouvrez-le avec la baguette ou le DRM Core facultatif, puis utilisez Detailed edit pour les réglages d'étape ci-dessous. Les captures de 0.1.6 conservent leurs versions originales.
 
 ## Ce que vous allez construire
 
@@ -105,7 +107,7 @@ Dans **Manager**, fixez **Same Pattern Penalty to 1.0**. Avec un seul motif, une
 
 1. Choisissez **Save As**, entrez `training/first_sword.json`, puis confirmez avec **Save** dans le flyout.
 2. Avec le PNJ attaché, appuyez sur **Save** pour le lier à ce chemin.
-3. Si vous créez sans PNJ, sélectionnez le PNJ pratique avec Core et appliquez le fichier de son catalogue.
+3. Si vous avez créé sans PNJ, sélectionnez le PNJ avec la baguette ou DRM Core facultatif et appliquez le fichier depuis son catalogue.
 4. Fermez l'éditeur.
 
 Vous pouvez également télécharger le [UI-sauvegardé first_sword.json ](./assets/media/battleworks/first_sword.json) dans `config/dochi_rpg_maker/mobs/patterns/training/` et le charger. Ce fichier a été testé en combat avec Scan Range 16, FOV 360 et Same Pattern Penalty 1.0. Il conserve les valeurs d'attaque générées avant les ajustements facultatifs dans la section 4.

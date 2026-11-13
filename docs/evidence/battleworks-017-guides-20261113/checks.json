@@ -1,0 +1,28 @@
+{
+  "build": {
+    "status": "PASS",
+    "exitCode": 0,
+    "documents": 940,
+    "command": "npm.cmd run build"
+  },
+  "verify": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "4307d1",
+      "wall_time_seconds": 3.0689308,
+      "exit_code": 0,
+      "original_token_count": 46,
+      "output": "\n> drm-docs@0.1.0 verify\n> node scripts/verify-docs.mjs\n\nVerified 940 documents, 12 mod cards, 1662 document images, 265 guide videos, logos, routes, sections and distribution links.\n"
+    }
+  },
+  "translations": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "54de26",
+      "wall_time_seconds": 3.1757391,
+      "exit_code": 0,
+      "original_token_count": 50,
+      "output": "\n> drm-docs@0.1.0 verify:translations\n> node scripts/verify-translations.mjs\n\nVerified 564 translations: complete routes, localized interface, unchanged code, links, screenshots and section counts.\n"
+    }
+  }
+}

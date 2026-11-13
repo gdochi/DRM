@@ -7,7 +7,7 @@ product: mob-editor
 section: authoring
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Débutants et créateurs de combat
 tags:
   - battleworks
@@ -109,3 +109,11 @@ Pour une zone persistante, commencez par le temps de recharge et targetCooldownT
 5. Enregistrer/appliquer et tester l'avant, les côtés, l'arrière et différentes hauteurs.
 
 Si trop élevé, cochez Offset Y. Si c'est sur le côté, cochez Offset X et Yaw. Si elle est courte, comparez Offset Z, les dimensions et la plage de démarrage. Continuer avec [animation](#mob-editor/battleworks-animation).
+
+## Hitboxes partagées et avertissements liés
+
+Avant de modifier une définition, vérifiez ses utilisations dans **Simple edit**. Dégâts et géométrie partagés affectent tous les motifs qui les référencent. **Make this hitbox independent** copie la définition et reconnecte les références du motif actuel ; les autres gardent l'originale. [Les copies indépendantes de techniques](#mob-editor/battleworks-authoring) copient aussi ressources liées et destinations de combo.
+
+Pour un avertissement relatif au PNJ, ouvrez **Telegraph** pendant la préparation. Activez **Link ground warning to hitbox**, choisissez **Warning hitbox** ou **Next hitbox contact**, puis **Fill until contact** si souhaité. L'avertissement utilise l'empreinte de la hitbox et le moment du contact. Il est visuel ; l'action Hitbox reste responsable des dégâts.
+
+Une explosion à une position enregistrée ou la zone d'un sort externe nécessite son propre point d'ancrage et avertissement. Ce lien ne prédit pas une géométrie de sort arbitraire. Vérifiez toute l'étape et testez le contact dans le monde.

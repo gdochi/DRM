@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -55,7 +55,7 @@ The scan's line-of-sight setting affects acquisition. Pattern Core's line-of-sig
 
 Desired spacing can be clamped into an available non-mobility attack's range for the current phase. Still align the actual hitbox, pattern range, and terrain.
 
-Disabling native suppression allows CustomNPCs attack AI to interfere. Do not enable competing controllers simply to make a stationary NPC move.
+Disabling native suppression can allow the actor's attack AI or another controller to compete with BattleWorks. Avoid competing controllers when diagnosing movement.
 
 ## 4. Stage settings take over during a pattern
 
@@ -85,4 +85,4 @@ A reset clears combat state such as history, cooldowns, phases, and passive stat
 6. Inspect cooldowns and repeat score penalties.
 7. Check NPC movement speed, disabled AI, and blocked paths.
 
-CustomNPCs still owns ordinary idle/patrol configuration. Orbit is an attack-stage movement around a target, not a world patrol editor.
+Configure idle behavior and patrol in the actor's own editor, such as DNPC. Orbit is an attack-stage movement around a target; it does not edit world patrol routes.

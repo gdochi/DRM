@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: Guia
-version: 0.1.6
+version: 0.1.7
 audience: Iniciantes e criadores de combate
 tags:
   - battleworks
@@ -34,7 +34,7 @@ Uma ação tem uma habilidade. Digitar um ID inventado não o cria. Ativos adici
 | Provedor e ID real | A habilidade deve estar disponível. |
 | Alvo, alcance, linha de visão | A ação precisa de um elenco válido. |
 | Recarga do provedor | Separado de BattleWorks recarga padrão |
-| Compatibilidade do rodízio | Nem todo feitiço de jogador suporta um CustomNPC |
+| Compatibilidade do rodízio | Nem toda magia de jogador aceita o DNPC ou NPC legado selecionado como conjurador |
 | Opções suportadas | Habilidades diferentes aceitam configurações diferentes |
 
 Simulação não lança feitiços externos reais. Teste no mundo e inspecione `Battleworks skill failed` Mensagens.

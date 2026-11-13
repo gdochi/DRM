@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -34,7 +34,7 @@ Una acción tiene una habilidad. Escribir un ID inventado no lo crea. También d
 | Proveedor y ID real | La habilidad debe estar disponible |
 | Objetivo, alcance, línea de visión | La acción necesita una situación de lanzamiento válida |
 | Reutilización del proveedor | Separado de BattleWorks patrón de enfriamiento |
-| Compatibilidad con ruedas | No todos los hechizos de jugador soportan un CustomNPC |
+| Compatibilidad con ruedas | No todos los hechizos de jugador aceptan al DNPC o NPC antiguo seleccionado como lanzador |
 | Opciones soportadas | Diferentes habilidades aceptan diferentes configuraciones |
 
 La simulación no lanza hechizos externos reales. Pruebe en el mundo e inspeccione `Battleworks skill failed` mensajes.

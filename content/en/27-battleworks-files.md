@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -60,7 +60,7 @@ NPC NBT stores a combat path and small flags instead of a full JSON copy.
 
 Load opens the file. Apply binds it. See [save/apply behavior](#mob-editor/mob-editor-setup).
 
-![The combat file saved on the server and bound to a DNPC.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. The title abbreviates the path; the verified file is config/dochi_rpg_maker/mobs/patterns/training/first_sword.json. Transfer this file with the NPC to another server.")
+![The combat file saved on the server and bound to a DNPC.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. A saved server combat file bound to a DNPC. Transfer the referenced file with the NPC; use the directory and working filename described above.")
 
 ## 4. Refresh external edits
 
@@ -78,7 +78,7 @@ Combat reads cached data instead of polling disk every tick. Catalog Refresh alo
 | File | Folder | Preparation |
 | --- | --- | --- |
 | [first_sword.json](./assets/media/battleworks/first_sword.json) | `mobs/patterns/training/` | Saved, applied and damage-tested with BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1 |
-| [training_swordsman.json](./assets/media/battleworks/training_swordsman.json) | mobs/patterns/training/ | Normal humanoid NPC with a hostile CustomNPCs target |
+| [training_swordsman.json](./assets/media/battleworks/training_swordsman.json) | mobs/patterns/training/ | Normal humanoid DNPC or supported legacy actor; fallback scanning enabled |
 | [training_ring.json](./assets/media/battleworks/training_ring.json) | particles/ | Particle Maker or the particle command |
 
 If the browser opens JSON, save it as a file. Check that it did not become .json.txt. The combat sample uses a basic swing and vanilla sound without a saved model settings. The particle sample uses a vanilla particle.
@@ -100,20 +100,32 @@ Bundled starter templates and separately distributed bosses, music, and popups a
 
 ## 7. Upgrade carefully
 
-1. Stop game/server and back up config and world.
-2. Replace old JARs without leaving duplicate BattleWorks/Mob Editor versions.
-3. Ensure DRM 0.1.7 or newer for BattleWorks 0.1.5.
-4. Check catalogs and NPC bindings.
-5. Recheck models, skills, audio, and combat.
+1. Back up the world and config before replacing JARs.
+2. Install BattleWorks 0.1.7 for the correct Minecraft/loader; remove duplicate old BattleWorks or Mob Editor JARs.
+3. DRM is optional. When using its features, check the actual DRM and provider dependencies for that environment.
+4. Reopen the combat file and check NPC binding, models, skills and audio.
+5. Reapply and test actual combat, cleanup and restart persistence.
 
-Recognized old combat files may migrate from mobs into patterns, with original bytes backed up under config/dochi_rpg_maker/backups/battleworks-mobs-patterns-v1. Conflicts and unknown/model JSON are preserved.
+Recognized old combat files may migrate from mobs into patterns, with original bytes backed up under config/dochi_rpg_maker/backups/battleworks-mobs-patterns-v1. Conflicts and unknown/model JSON are preserved. Reapply explicitly after reorganizing; ambiguous filenames cannot be recovered reliably.
 
-Moved-reference recovery can repair uniquely identifiable files; do not rely on it to choose among ambiguous names. Reapply explicitly after reorganizing.
-
-The current mod ID is dochi_battleworks, not drm_addon_mob_editor. Legacy CNPC-Gecko model-NBT conversion does not replace the original addon's entity types or resources; worlds depending on them may still require that addon.
+The mod ID remains dochi_battleworks. Old model conversion does not supply an absent model provider. CustomNPCs-dependent actors and assets belong only to supported older targets and cannot be used as a native 26.3 integration.
 
 ## 8. Package an encounter
 
 Include combat JSON, particle JSON, models, sounds, popup/GUI files, clones, and required mod versions. Test Load and Apply on a fresh NPC in the destination environment.
 
 Continue with [JSON reference](#mob-editor/battleworks-json-reference) or [troubleshooting](#mob-editor/battleworks-troubleshooting).
+
+## Personal technique library
+
+**Save technique** stores a reusable bundle for your player on the current server. Server-side directory:
+
+```text
+config/dochi_rpg_maker/battleworks/pattern_library/<UUID>/
+```
+
+The limit is 128 valid entries per player. This path remains under dochi_rpg_maker even without DRM.
+
+Use **My techniques → Load technique** to import into another combat document. Imports use new IDs for patterns and linked resources. Referenced server particle files can be embedded; external models, sounds, skills and their mods are separate dependencies. Copying only the NPC's combat JSON does not transfer the personal library. See [recipe and copy workflow](#mob-editor/battleworks-authoring).
+
+Undo restores the document, not an already saved library entry. Keep backups of both server combat files and the library when moving servers.

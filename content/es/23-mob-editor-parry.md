@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -16,20 +16,15 @@ translationSource: en
 translationMethod: assisted
 ---
 
-## 1. Suprimir los ataques nativos superpuestos
+## 1. Suprimir ataques nativos superpuestos
 
-Habilitar **Combat Rules → Combat → Suppress Native Attacks** cuando los hitboxes creados deben tener tiempo de ataque propio.
+Activa **Combat Rules → Combat → Suppress Native Attacks** cuando las hitboxes deban controlar los tiempos. Guarda/aplica y comprueba golpes extra durante preparación y recuperación. Si persisten, revisa la IA del actor y otros controladores; configura DNPC en su propio editor.
 
-1. Comienza con un ataque de hitbox.
-2. Habilitar la supresión y guardar/aplicar.
-3. Compruebe si hay golpes adicionales durante la preparación o recuperación.
-4. Si la superposición permanece, inspeccione los scripts de combate CustomNPC.
+## 2. Usar scripts antiguos de forma deliberada
 
-## 2. Manejar scripts heredados deliberadamente
+**Suppress CustomNPC Scripts** solo se aplica a la integración opcional CustomNPCs en versiones compatibles anteriores a 26.3. Evita la competencia con BattleWorks conservando los datos de scripts. Comprueba primero sus funciones ajenas al combate.
 
-0.1.5 **Suppress CustomNPC Scripts** impide que la ejecución de scripts heredados compita con BattleWorks. Conserva los datos de script almacenados.
-
-Esto es útil al portar un jefe con guión. Verifique cualquier comportamiento que no sea de combate proporcionado por esos scripts antes de confiar en la supresión. Una nueva práctica NPC normalmente no lo necesita.
+DNPC no necesita CustomNPCs ni esta opción. Desde 26.3 CustomNPCs está excluido; usa DNPC o el proveedor compatible.
 
 ## 3. Soporte actual de Parry
 

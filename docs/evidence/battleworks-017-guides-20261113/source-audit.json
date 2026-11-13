@@ -1,0 +1,106 @@
+{
+  "checkedAt": "2026-11-13T12:47:24.235Z",
+  "sources": [
+    {
+      "topic": "standalone",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\BattleworkEditorItem.java",
+      "sha256": "de4eaed3ec30241dbb4bf1ea98994bba0238037754f9d7dcf87ebeaee965be05"
+    },
+    {
+      "topic": "standalone",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\java\\net\\dochi\\cnpcirons\\foundation\\client\\StandaloneEditorScreen.java",
+      "sha256": "f401e04ffec3b0ee2153720c01d0124b6c6d4e6466362beb67b441432c930118"
+    },
+    {
+      "topic": "authoring",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\client\\BattleworkEditorScreen.java",
+      "sha256": "7b93e75ff12f12c98cc7c8b37245a7bb49913424a7e7e246ec1eca8d356b3ffc"
+    },
+    {
+      "topic": "authoring",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\client\\BattleworkPatternRecipes.java",
+      "sha256": "50c2cf0467c35a520b2167c5a1b25988df20a6b1b559ce7a7184eb6228fefc52"
+    },
+    {
+      "topic": "authoring",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\BattleworkPatternLibrary.java",
+      "sha256": "07839ef7f673bdde31b660e3f4c20f57464a6a36c3d9a6a8a582ca322249f31a"
+    },
+    {
+      "topic": "authoring",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\BattleworkPatternBundle.java",
+      "sha256": "6537b5be7b04fad30b0bb31d6b31f3f40a95918ff5429b973d7923189b7063ff"
+    },
+    {
+      "topic": "warningsAndArena",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\BattleworkTelegraphRuntime.java",
+      "sha256": "c944a61c4291598883bc0a0acd224df7c083fe104a923c50346cf6c61e916408"
+    },
+    {
+      "topic": "warningsAndArena",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\BattleworkTelegraphGeometry.java",
+      "sha256": "b594f5a6770e371b878184a334b6b87a6257b66aa94ec4ac6722f2f345b4690d"
+    },
+    {
+      "topic": "warningsAndArena",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\BattleworkArenaController.java",
+      "sha256": "335e7116fad37ddc14f9dbbcd0aeb893595d34e526312f730a01045f25f27339"
+    },
+    {
+      "topic": "warningsAndArena",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\BattleworkArenaRules.java",
+      "sha256": "ce60d364917fe2b8808985713afbed7bed647c06e515c43300fd3edba20b289d"
+    },
+    {
+      "topic": "providersAndSummons",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\fabric\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\client\\BattleworkAnimationCatalog.java",
+      "sha256": "450de8897af42bd3cb2fd9867f1cf872e243d44c89f7ae838dbd7a88aa614de7"
+    },
+    {
+      "topic": "providersAndSummons",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\neoforge\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\client\\BattleworkAnimationCatalog.java",
+      "sha256": "73590ddd26fa6a7c2d9e9cad6290ef04deaed12d00f1e832313deb98f83be09c"
+    },
+    {
+      "topic": "providersAndSummons",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\fabric\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\BattleworkSummonController.java",
+      "sha256": "ee7946adc5fcc481d255f9e5d2e60ce4b40b8c9a57ea819d44184cf38062f2a6"
+    },
+    {
+      "topic": "providersAndSummons",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\fabric\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\BattleworkSummonLedger.java",
+      "sha256": "9faf6995542351c8e3396f58a6f591aeeb3cca961bc367c9b5dcd10603f123d8"
+    },
+    {
+      "topic": "providersAndSummons",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\java\\net\\dochi\\cnpcirons\\battleworks\\NpcTemplateSummons.java",
+      "sha256": "f45db1755e19e4bccb6678064abad09d2007c67b1eac1c69161dde57f22e956d"
+    },
+    {
+      "topic": "languageAndPolicy",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\resources\\assets\\dochi_battleworks\\lang\\en_us.json",
+      "sha256": "deb4e3e00dc308a7b8500ae72eadbc1bddb217b8ccaa42b4324e786cdcfae76f"
+    },
+    {
+      "topic": "languageAndPolicy",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\common\\src\\main\\resources\\assets\\dochi_battleworks\\lang\\ko_kr.json",
+      "sha256": "ee0de3f1ecf7c8ba68cc2b38e4351b60cd186d1d7509801ec846e7ea334bc85d"
+    },
+    {
+      "topic": "languageAndPolicy",
+      "file": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\docs\\NPC_VERSION_POLICY.md",
+      "sha256": "540bc5e6b23a102f841865ef9b91f5c6817b908e9d00d8dec20b90ade9e9e836"
+    }
+  ],
+  "loaderScope": [
+    "Forge 1.20.1",
+    "Fabric 1.21.1",
+    "NeoForge 1.21.1",
+    "Fabric 26.3",
+    "NeoForge 26.3"
+  ],
+  "priorNativeVerification": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\verification\\layout-clipping-2026-11-13\\REPORT.md",
+  "modernWorkspace": "C:/Users/hodu3/Desktop/[26.3] Dochi`s BattleWorkes",
+  "productionCodeChanged": false,
+  "all83FinalHashesAndOriginalBackupsMatch": true
+}

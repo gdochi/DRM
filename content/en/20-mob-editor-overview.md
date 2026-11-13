@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -16,11 +16,11 @@ tags:
 
 ## Start with one readable melee attack
 
-BattleWorks **0.1.6** is DRM's NPC combat addon for Forge 1.20.1, Fabric / NeoForge 1.21.1 and separate 26.3 builds. Author combat timing, hitboxes, movement and phases.
+BattleWorks **0.1.7** authors NPC attack timing, hitboxes, movement and boss phases. Use the matching Forge 1.20.1, Fabric / NeoForge 1.21.1, or separate Fabric / NeoForge 26.3 build.
 
-The exercises below use **Forge 1.20.1 and CustomNPCs**. Check [0.1.6 installation boundaries](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660) for other loaders and 26.3 DNPC.
+**DRM is optional.** You can open the editors with the BattleWorks Wand and author files without an NPC. To execute a fight, prepare a supported actor such as DNPC. CustomNPCs remains optional on the older targets; it is excluded on 26.3 and later.
 
-Start with one slow melee attack on a normal humanoid NPC; optional spell and animation mods are unnecessary for the first exercise.
+Start with [Simple edit and attack recipes](#mob-editor/battleworks-authoring), or follow the longer first-attack exercise below. A basic humanoid swing and BattleWorks hitbox need no external spell or animation mod.
 
 ## Follow this learning path
 
@@ -39,19 +39,19 @@ Continue with [skills and presentation](#mob-editor/battleworks-skills-effects),
 
 ## Where each setting belongs
 
-![BattleWorks Pattern Workbench with patterns on the left, Windup/Action/Recovery in the middle and selected pattern/stage properties on the right.](assets/media/guides/battleworks-016-neo1211/workbench.png "The default Basic Slash example in BattleWorks 0.1.6 on NeoForge 1.21.1. Select a pattern on the left, a stage in the middle, then edit its properties on the right.")
+![The Simple edit inspector and attack timeline.](assets/media/guides/battleworks-017-20261113/simple-edit.png "BattleWorks 0.1.7 / NeoForge 1.21.1 / DRM 0.3.2 / DNPC 0.1.4. The default Basic Slash is selected. This still shows the editing layout, not recipe generation or live damage.")
 
-Use **Pattern Workbench** for the attack sequence, **Hitbox Library** for the shape that deals damage, and **Combat Rules** for chasing and pattern selection. To build a first attack by answering questions, start with **Create New → Pattern Build Assist**. The assist is disabled after loading an existing example.
+Use **Pattern Workbench** for the sequence, **Hitbox Library** for damage geometry, and **Combat Rules** for targeting, phases and the arena. **Simple edit** exposes common attack values; **Detailed edit** preserves and exposes the full conditions, events, movement and animation. [Recipes and My techniques](#mob-editor/battleworks-authoring) provide reusable starting points.
 
 | Task | Editor |
 | --- | --- |
-| NPC health, equipment, factions, drops, respawning | CustomNPCs |
-| Models, textures, animation assets and behavior mappings | DRM NPC Basic |
-| Patterns, hitboxes, combat timing, movement, phases | BattleWorks |
-| Reusable visual particle files | Visual → Particle Maker |
-| Popup appearance and dialogue presentation | DRM Popup Maker and its GUI |
+| NPC name, base health, equipment, relationships, drops and respawn | The actor's own editor, such as DNPC |
+| Actor appearance and model | DNPC Appearance & Model or the installed model provider; DRM NPC Basic when using DRM models |
+| Patterns, hitboxes, combat timing, movement and phases | BattleWorks |
+| Reusable visual particle files | Particle Maker in the standalone selector or DRM's Visual category |
+| DRM popups and dialogue presentation | DRM and its popup/GUI tools |
 
-Advanced imported documents can also enable `npcStats` to override selected combat attributes. The beginner exercises leave that feature disabled and prepare base stats in CustomNPCs.
+Imported documents may enable npcStats to override selected combat attributes. Inspect those overrides if applying a boss file unexpectedly changes health or movement.
 
 ## Five terms you will use
 

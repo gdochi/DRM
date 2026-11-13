@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: 사용 안내
-version: 0.1.6
+version: 0.1.7
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -17,19 +17,17 @@ tags:
 
 ## 1. 실습 환경 준비하기
 
-아래는 실제 화면 촬영과 첫 공격 시험에 사용한 조합입니다. **BattleWorks와 DRM**, 전투를 붙일 **NPC 모드**를 준비합니다. 다른 Minecraft·로더 파일은 [설치 파일 고르기](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660)에서 확인하세요.
+Minecraft 버전과 로더가 일치하는 BattleWorks **0.1.7** 파일을 사용하세요. 서버·클라이언트 환경을 맞추고 선택한 파일에 표시된 의존성을 설치합니다.
 
-| 구성 | 이번 실습 |
-| --- | --- |
-| Minecraft / 로더 | 1.21.1 / NeoForge |
-| Java | 21 |
-| BattleWorks | 0.1.6 |
-| DRM | 0.3.1 |
-| NPC | DNPC 0.1.3 |
+| Minecraft | BattleWorks 로더 | Java |
+| --- | --- | --- |
+| 1.20.1 | Forge | 17 |
+| 1.21.1 | Fabric 또는 NeoForge | 21 |
+| 26.3 | Fabric 또는 NeoForge | 25 |
 
-각 모드의 의존성도 같은 인스턴스에 설치합니다. 위 표는 확인한 실습 조합입니다. 기존 호환 버전을 일괄 교체하는 기준으로 쓰지 말고, 사용할 파일의 Minecraft·로더와 요구 모드를 확인하세요. 서버와 접속 클라이언트도 맞춥니다.
+**DRM은 필수가 아닙니다.** 단독 편집기도 사용할 수 있습니다. 이 실습의 NPC는 DNPC로 준비합니다. DRM·외부 애니메이션 라이브러리·마법 모드·모델 제공자는 사용하는 기능에 맞춰 추가하세요. 해당 리소스는 전투 JSON과 별개입니다.
 
-Forge 1.20.1과 Fabric·NeoForge 1.21.1에서 지원되는 CustomNPCs NPC를 쓸 수도 있습니다. **26.3 이상은 DNPC 흐름을 사용**하며 CustomNPCs를 설치하지 않습니다.
+CustomNPCs는 Forge 1.20.1과 Fabric / NeoForge 1.21.1에서 선택 연동으로 남아 있습니다. 26.3 이상에서는 제외되므로 DNPC를 사용하세요. 아래에 남아 있는 0.1.6 스크린샷과 영상은 실제 촬영 버전을 그대로 표시합니다.
 
 ## 2. 연습용 DNPC 만들기
 
@@ -45,9 +43,12 @@ Forge 1.20.1과 Fabric·NeoForge 1.21.1에서 지원되는 CustomNPCs NPC를 쓸
 
 ## 3. NPC를 대상으로 BattleWorks 열기
 
-DRM 코어로 연습 NPC를 선택하고 BattleWorks 편집 기능을 엽니다. 기존 전투 파일이 있으면 불러오고, 새로 만들려면 **Create New**를 사용합니다. [첫 근접 공격 실습](#mob-editor/battleworks-first-attack)의 제작 보조로 이어집니다.
+1. 크리에이티브의 BattleWorks 전용 탭에서 **배틀워크스 완드**를 찾습니다. DNPC 탭이 있으면 그곳에도 표시됩니다.
+2. 지원 NPC에게 지팡이를 사용하면 해당 NPC의 편집기 선택 화면이 열립니다. 허공에 사용하면 NPC 연결 없이 작성합니다. 편집 명령은 `/battleworks editor`이며 서버 권한이 필요합니다.
+3. BattleWorks에서 **기존 파일 불러오기**, **기본값 사용**, **새로 만들기** 중 하나를 선택합니다. 기본 예제는 작업 복사본으로 저장하세요.
+4. [간단 편집과 레시피](#mob-editor/battleworks-authoring) 또는 [첫 근접 공격](#mob-editor/battleworks-first-attack)으로 진행합니다.
 
-NPC에 파일을 붙이는 적용 목록은 **Battlework JSON**입니다. 파일 없이 허공에서 작업을 시작했다면, 저장을 마친 뒤 NPC의 이 목록에서 파일을 선택해 **Apply Battlework**합니다. 모델을 바꿀 때는 DNPC 외형 설정과 [모션 연결](#mob-editor/battleworks-animation)을 먼저 확인합니다.
+DRM이 있으면 기존 Core 진입도 사용할 수 있습니다. NPC 적용 분류는 **Battlework JSON**입니다. NPC 없이 만든 파일은 해당 NPC의 파일 목록에서 선택한 뒤 **Apply Battlework**로 적용하세요. 다른 모델을 쓸 때는 외형 설정과 [애니메이션 연결](#mob-editor/battleworks-animation)을 먼저 준비합니다.
 
 ## 4. 추가 모드는 필요한 기능부터 준비하기
 

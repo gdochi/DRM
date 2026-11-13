@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: 사용 안내
-version: 0.1.6
+version: 0.1.7
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -16,18 +16,13 @@ tags:
 
 ## 1. 기본 공격과 작성한 공격의 중복 막기
 
-**Combat Rules → Combat → Suppress Native Attacks**를 켜면 BattleWorks가 작성한 전투 타이밍을 중심으로 기본 공격과 이동의 충돌을 줄입니다.
+히트박스가 공격 시간을 담당하게 하려면 **전투 규칙 → Combat → Suppress Native Attacks**를 켭니다. 저장·적용 후 준비·회복 중 별도 타격이 생기는지 확인하세요. 중복이 남으면 해당 NPC의 전투 AI와 다른 제어 기능을 확인합니다. DNPC 자체 설정은 DNPC 편집기에서 조정합니다.
 
-1. Hitbox만으로 완성된 첫 공격을 준비합니다.
-2. 이 옵션을 켜 저장·적용합니다.
-3. 준비·회복 구간에 별도의 기본 타격이 끼어드는지 봅니다.
-4. 여전히 타격이나 모션이 겹치면 기존 CustomNPC 전투 스크립트를 확인합니다.
+## 2. 구형 스크립트 연동의 범위
 
-## 2. 기존 스크립트가 함께 움직이는 NPC
+**Suppress CustomNPC Scripts**는 26.3 미만에서 지원하는 선택 CustomNPCs 연동에만 해당합니다. 저장된 스크립트 자료를 유지하면서 BattleWorks와 실행이 충돌하는 것을 막습니다. 전투 외 기능도 사용하는 스크립트라면 먼저 영향을 확인하세요.
 
-0.1.5의 **Suppress CustomNPC Scripts**는 기존 스크립트 실행을 억제해 두 전투 제어가 같은 NPC 모션을 계속 바꾸는 충돌을 줄이는 옵션입니다. 저장된 스크립트 데이터를 삭제하는 기능은 아닙니다.
-
-이전 스크립트 보스를 BattleWorks 문서로 옮긴 경우에 검토합니다. 그 NPC의 스크립트가 전투 외 기능도 담당한다면 어떤 동작이 함께 중단되는지 확인하세요. 새 NPC의 첫 실습에서는 필요 없이 켤 이유가 없습니다.
+DNPC에는 CustomNPCs나 이 설정이 필요하지 않습니다. 26.3 이상에서는 CustomNPCs가 제외되므로 지원하는 DNPC·제공자 흐름을 사용하세요.
 
 ## 3. 패링 설정의 실제 지원 범위
 

@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: 사용 안내
-version: 0.1.6
+version: 0.1.7
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -17,11 +17,11 @@ tags:
 
 ## 먼저 무엇을 만들까요?
 
-BattleWorks **0.1.6**은 DRM의 NPC 전투 애드온입니다. Forge 1.20.1·Fabric/NeoForge 1.21.1과 별도 26.3 빌드가 있습니다. 공격 순서·타격 판정·이동·페이즈를 제작합니다.
+BattleWorks **0.1.7**에서는 NPC 공격의 시간, 히트박스, 이동과 보스 페이즈를 만듭니다. Forge 1.20.1, Fabric / NeoForge 1.21.1, 별도 Fabric / NeoForge 26.3 빌드 중 환경에 맞는 파일을 사용하세요.
 
-아래 입문 실습은 **Forge 1.20.1·CustomNPCs**를 기준으로 합니다. 다른 로더와 26.3 DNPC는 [0.1.6 설치 범위](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660)를 먼저 확인하세요.
+**DRM은 선택 연동입니다.** 배틀워크스 완드로 편집기를 열어 NPC 없이 파일을 만들 수 있습니다. 실제 전투에는 DNPC 같은 지원 NPC가 필요합니다. 이전 버전의 CustomNPCs 연동은 선택 사항으로 유지되며, 26.3 이상에서는 지원하지 않습니다.
 
-처음에는 일반 인간형 NPC로 느린 근접 공격 하나를 완성하세요. JSON을 직접 작성하거나 마법·모델 모드를 추가할 필요 없이 시작할 수 있습니다.
+빠르게 시작하려면 [간단 편집과 공격 레시피](#mob-editor/battleworks-authoring)를, 값을 직접 배우려면 아래 첫 공격 실습을 따라가세요. 일반 인간형의 기본 팔 휘두르기와 히트박스에는 별도 마법·애니메이션 모드가 필요하지 않습니다.
 
 ## 처음 배우는 사람의 진행 순서
 
@@ -40,21 +40,19 @@ BattleWorks **0.1.6**은 DRM의 NPC 전투 애드온입니다. Forge 1.20.1·Fab
 
 ## 어떤 설정을 어디서 하나요?
 
-![BattleWorks Pattern Workbench. 왼쪽 패턴 목록, 가운데 Windup·Action·Recovery 타임라인, 오른쪽 선택한 패턴과 단계 설정이 보입니다.](assets/media/guides/battleworks-016-neo1211/workbench.png "BattleWorks 0.1.6 / NeoForge 1.21.1의 기본 Basic Slash 예제입니다. 왼쪽에서 공격을 고르고, 가운데에서 단계를 고른 뒤 오른쪽 값을 바꿉니다.")
+![간단 편집 속성과 공격 타임라인.](assets/media/guides/battleworks-017-20261113/simple-edit.png "BattleWorks 0.1.7 / NeoForge 1.21.1 / DRM 0.3.2 / DNPC 0.1.4. 기본 Basic Slash를 선택한 화면입니다. 편집 배치를 보여주며 레시피 생성이나 실제 피해를 증명하는 장면은 아닙니다.")
 
-위쪽 **Pattern Workbench**에서 공격 순서를 만들고, **Hitbox Library**에서 피해가 닿는 모양을, **Combat Rules**에서 추적과 패턴 선택 규칙을 정합니다. 질문에 답하며 처음 공격을 만들려면 **Create New → Pattern Build Assist**로 시작합니다. 기존 예제를 불러온 상태에서는 제작 보조가 꺼져 있습니다.
+**패턴 작업실**에서 순서를, **히트박스 보관함**에서 피해 공간을, **전투 규칙**에서 타겟·페이즈·아레나를 설정합니다. **간단 편집**은 자주 쓰는 공격 값을 모아 보여주고, **상세 편집**은 기존 조건·이벤트·이동·애니메이션을 유지하면서 세부 설정을 엽니다. [레시피와 내 기술](#mob-editor/battleworks-authoring)로 시작점을 재사용할 수 있습니다.
 
-| 만들 내용 | 설정하는 곳 | 예시 |
-| --- | --- | --- |
-| NPC의 체력·장비·팩션·드롭·리스폰 | CustomNPCs | 최대 체력 100인 적대 검사 |
-| NPC 모델·텍스처·애니메이션 자산과 기본 동작 연결 | DRM의 NPC Basic | 일반 인간형 또는 Gecko 모델 |
-| 공격 순서·판정·추적·이동·페이즈 | BattleWorks | 준비 24틱 후 전방 베기 |
-| 별도 파티클 연출 파일 | Visual → Particle Maker | 바닥에서 커지는 원형 예고 |
-| 팝업 모양과 대사 표시 | DRM의 Popup Maker와 관련 GUI | 보스 대사, 전투 안내 |
+| 작업 | 사용하는 편집기 |
+| --- | --- |
+| 이름, 기본 체력, 장비, 관계, 드롭, 리스폰 | DNPC 등 해당 NPC의 편집기 |
+| 외형과 모델 | DNPC 외형 및 모델 또는 설치한 모델 제공자; DRM 모델은 DRM NPC Basic |
+| 패턴, 히트박스, 전투 시간, 이동, 페이즈 | BattleWorks |
+| 재사용하는 시각 효과 파일 | 단독 선택 화면의 Particle Maker 또는 DRM의 Visual |
+| DRM 팝업과 대화 연출 | DRM의 팝업·GUI 도구 |
 
-BattleWorks의 문서 이름을 바꿔도 NPC의 머리 위 이름이나 최대 체력이 자동 변경되지는 않습니다. 검을 쥐여 주는 것과 Hitbox의 피해를 설정하는 것도 각각의 작업입니다.
-
-고급 전투 파일은 `npcStats`를 켜 일부 능력치를 덮어쓸 수 있습니다. 첫 실습에서는 이 기능을 끄고 CustomNPCs 기본 설정을 사용합니다. 외부 파일을 가져올 때는 [고급 능력치 설정](#mob-editor/battleworks-advanced-actions)도 확인하세요.
+가져온 문서가 npcStats를 켜 두었다면 일부 전투 능력치를 덮어쓸 수 있습니다. 보스 파일 적용 뒤 체력이나 이동이 달라지면 이 설정도 확인하세요.
 
 ## 화면에서 쓰는 다섯 가지 말
 

@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Beginners and combat creators
 tags:
   - battleworks
@@ -16,18 +16,13 @@ tags:
 
 ## 1. Suppress overlapping native attacks
 
-Enable **Combat Rules → Combat → Suppress Native Attacks** when authored hitboxes should own attack timing.
-
-1. Start with a working hitbox attack.
-2. Enable suppression and save/apply.
-3. Check for extra hits during preparation or recovery.
-4. If overlap remains, inspect CustomNPC combat scripts.
+Enable **Combat Rules → Combat → Suppress Native Attacks** when authored hitboxes should own attack timing. Save/apply, then check for extra hits during preparation and recovery. Inspect the supported actor's own combat AI and other controllers if overlap remains; DNPC configuration belongs in its editor.
 
 ## 2. Handle legacy scripts deliberately
 
-0.1.5's **Suppress CustomNPC Scripts** stops legacy script execution from competing with BattleWorks. It preserves the stored script data.
+**Suppress CustomNPC Scripts** applies only to the optional CustomNPCs integration on supported targets below 26.3. It prevents legacy scripts competing with BattleWorks while preserving stored script data. Check noncombat script behavior before using it.
 
-This is useful when porting a scripted boss. Check any noncombat behavior supplied by those scripts before relying on suppression. A new practice NPC normally does not need it.
+DNPC does not require CustomNPCs or this setting. On 26.3 and later CustomNPCs is excluded; use the supported DNPC/provider workflow.
 
 ## 3. Current parry support
 

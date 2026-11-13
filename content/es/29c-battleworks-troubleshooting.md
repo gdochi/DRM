@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -16,18 +16,15 @@ translationSource: en
 translationMethod: assisted
 ---
 
+## Primeras comprobaciones
 
-## Primeros controles
+1. Comprueba Minecraft, loader y BattleWorks 0.1.7. Comprueba DRM y proveedores externos solo si usas sus funciones; DRM es opcional.
+2. Sigue la [preparación del NPC](#mob-editor/mob-editor-setup). Usa DNPC desde 26.3; CustomNPCs está excluido.
+3. Confirma que la ruta guardada está vinculada al NPC.
+4. Separa edición en Creativo y pruebas en Supervivencia.
+5. Empieza con movimiento humanoide nativo e Hitbox antes de modelos o hechizos externos.
 
-1. Coincidir con Minecraft, cargador, BattleWorks y DRM archivos.
-2. Siga [ la preparación de NPC ](#mob-editor/mob-editor-setup) para el ejercicio actual DNPC. CustomNPCs está excluido en 26.3 y más adelante.
-3. Confirme que la ruta guardada es la ruta vinculada al NPC.
-4. Separar la creación creativa de las pruebas de combate de supervivencia.
-5. Verifique el balanceo básico del brazo y Hitbox antes de agregar modelos o habilidades externas.
-
-![Ajustes de combate utilizados para la prueba real de guardar/aplicar.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1. Rango de exploración 16, FOV 360 y guardado. Advertencias: 0 se verificaron antes de verificar la pérdida de salud de Survival. Trata las advertencias de guardar y previsualizar el modelo por separado.")
-
-En esta combinación, la oscilación básica causó un daño real, mientras que también se observaron advertencias de previsualización del modelo/animación y una ventana de simulación que no se abrió. Compare el [Archivo verificado de primer ataque](#mob-editor/battleworks-first-attack) y combate real antes de descartar la vinculación NPC debido a un problema de vista previa.
+El [primer ataque](#mob-editor/battleworks-first-attack) conserva capturas reales de combate en 0.1.6. Los avisos antiguos de vista previa no son una restricción actual. Diagnostica aplicación del archivo, vista del modelo y combate por separado.
 
 ## El archivo no está en la lista
 
@@ -52,15 +49,14 @@ Utilice archivos separados cuando los NPC necesitan un comportamiento independie
 
 ## El NPC nunca ataca
 
-1. Deja el modo Creativo/Espectador.
-2. Confirmar CustomNPCs objetivo hostil.
-3. Si utiliza escaneo alternativo, verifique el rango, el FOV y la vista.
-4. Amplía temporalmente el rango de patrones, la altura, la fase y las condiciones de salud para aislar el fallo.
-5. Asegúrese de que exista al menos un patrón de administrador ordinario.
-6. Compruebe la puntuación base y los multiplicadores de repetición cero.
-7. Compruebe la propiedad de movimiento largo y los tiempos de reutilización.
+1. Sal de Creativo/Espectador.
+2. Confirma un objetivo válido del actor o activa Scan Without Target en una zona aislada.
+3. Comprueba alcance, FOV y línea de visión. La búsqueda alternativa es independiente del filtro de relaciones del NPC.
+4. Comprueba Enabled, alcance, altura, salud y fase del patrón.
+5. Asegura un patrón Manager ordinario elegible; revisa puntuación, multiplicadores de repetición y recargas.
+6. Revisa control del movimiento y límites de arena.
 
-Comparar un NPC separado usando el [simple archivo de práctica](./assets/media/battleworks/training_swordsman.json).
+Compara otro NPC con el [archivo sencillo de práctica](./assets/media/battleworks/training_swordsman.json).
 
 ## El NPC se detiene antes de llegar a su ataque
 
@@ -80,16 +76,14 @@ El rango de inicio y la geometría real del hitbox están separados.
 
 Varias casillas de golpe en una marca no garantizan un daño sumado simple.
 
-## La animación o los ataques se superponen
+## Animaciones o ataques se superponen
 
-1. Revisa Suprimir ataques nativos.
-2. Inspeccione los scripts de combate CustomNPC existentes.
-3. Pruebe Suprimir secuencias de comandos CustomNPC cuando sea apropiado.
-4. Evite competir con las solicitudes de animación de escenario y línea de tiempo.
-5. Compare las garrapatas de animación con etapas posteriores.
-6. Compruebe la compatibilidad proveedor/modelo.
+1. Comprueba Suppress Native Attacks, IA del actor y otros controladores.
+2. Solo en CustomNPCs antiguo compatible, revisa scripts y Suppress CustomNPC Scripts. No es un requisito de DNPC ni de 26.3.
+3. Evita solicitudes simultáneas de animación de etapa y cronología.
+4. Compara Cast Animation Ticks con etapas posteriores y comprueba modelo/proveedor.
 
-No se espera reiniciar una animación coincidente en etapas consecutivas.
+Una animación coincidente puede continuar entre etapas consecutivas sin reiniciarse.
 
 ## Una habilidad falla
 
@@ -139,3 +133,16 @@ La propiedad BGM de otro NPC o los títulos/popups superpuestos también pueden 
 Pruebas cercanas/medianas/lejas, frontales/laterales/traseras, paredes/escaleras/alturas, cada fase, cada pasiva, muerte, pérdida de objetivos y otra pelea. Vuelva a abrir los archivos para verificar la persistencia.
 
 Para obtener un informe de problemas útil, incluye versiones de mod, pasos de reproducción, los archivos de combate y referencia, el comportamiento esperado/real, latest.log y cualquier informe de bloqueo. Elimine tokens privados o datos personales antes de compartir registros.
+
+## Recetas, importaciones y reinicio de arena
+
+| Síntoma | Comprobar |
+| --- | --- |
+| Editar una copia cambia la hitbox original | Uso compartido; independiza la hitbox o usa Independent copy |
+| My techniques vacío en otro servidor | La biblioteca pertenece al jugador en ese servidor |
+| Importación rechazada | Recursos necesarios, compatibilidad del modelo, referencias y límites |
+| Clips ausentes o sin reproducción | Recursos reales, descripción de fuente y modelo/proveedor compatible |
+| El jefe regresa o se cura inesperadamente | Arena aplicada, reinicio al salir y Restore boss health |
+| Aviso sin impacto | Acción Hitbox vinculada, tick de contacto y posición del objetivo |
+
+Usa el [flujo de creación](#mob-editor/battleworks-authoring), la [guía de animación](#mob-editor/battleworks-animation) y las [instrucciones de arena](#mob-editor/battleworks-encounters) para probar cada función.

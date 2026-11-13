@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -16,13 +16,13 @@ translationSource: en
 translationMethod: assisted
 ---
 
-## Comience con un ataque cuerpo a cuerpo legible
+## Empieza con un ataque cuerpo a cuerpo claro
 
-BattleWorks **0.1.6** es el complemento de combate NPC de DRM para Forge 1.20.1, Fabric / NeoForge 1.21.1 y compilaciones separadas 26.3. Tiempo de combate del autor, hitboxes, movimiento y fases.
+BattleWorks **0.1.7** permite crear tiempos de ataque, hitboxes, movimiento y fases de jefes para NPC. Usa el archivo correspondiente: Forge 1.20.1, Fabric / NeoForge 1.21.1 o las compilaciones separadas de Fabric / NeoForge 26.3.
 
-Los ejercicios a continuación usan **Forge 1.20.1 and CustomNPCs**. Verifique [0.1.6 los límites de instalación](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660) para otros cargadores y 26.3 DNPC.
+**DRM es opcional.** Abre los editores con BattleWorks Wand y crea archivos sin un NPC conectado. Para ejecutar un combate necesitas un actor compatible, como DNPC. CustomNPCs sigue siendo opcional en versiones anteriores y está excluido desde 26.3.
 
-Comience con un ataque cuerpo a cuerpo lento en un NPC humanoide normal; los mods opcionales de hechizo y animación son innecesarios para el primer ejercicio.
+Empieza por [edición simple y recetas](#mob-editor/battleworks-authoring), o sigue el ejercicio detallado de abajo. El movimiento básico del brazo y una hitbox no necesitan mods externos de magia o animación.
 
 ## Siga este camino de aprendizaje
 
@@ -39,21 +39,21 @@ Comience con un ataque cuerpo a cuerpo lento en un NPC humanoide normal; los mod
 
 Continúe con [habilidades y presentación](#mob-editor/battleworks-skills-effects), [Particle Maker](#mob-editor/battleworks-particles) y [acciones avanzadas](#mob-editor/battleworks-advanced-actions) cuando el encuentro básico funcione.
 
-## A dónde pertenece cada escenario
+## Dónde configurar cada función
 
-![BattleWorks Banco de trabajo de patrón con patrones a la izquierda, Windup/Action/Recovery en el centro y propiedades de patrón/etapa seleccionadas a la derecha.](assets/media/guides/battleworks-016-neo1211/workbench.png "El ejemplo por defecto de Basic Slash en BattleWorks 0.1.6 en NeoForge 1.21.1. Seleccione un patrón a la izquierda, una etapa en el medio y luego edite sus propiedades a la derecha.")
+![Inspector Simple edit y cronología del ataque.](assets/media/guides/battleworks-017-20261113/simple-edit.png "BattleWorks 0.1.7 / NeoForge 1.21.1 / DRM 0.3.2 / DNPC 0.1.4. Basic Slash predeterminado seleccionado. La imagen muestra la distribución del editor, no la creación mediante receta ni daño real.")
 
-Usa **Pattern Workbench** para la secuencia de ataque, **Hitbox Library** para la forma que inflige daño y **Combat Rules** para perseguir y seleccionar patrones. Para construir un primer ataque respondiendo preguntas, comience con **Create New → Pattern Build Assist**. La asistencia se desactiva después de cargar un ejemplo existente.
+Usa **Pattern Workbench** para la secuencia, **Hitbox Library** para la geometría de daño y **Combat Rules** para objetivos, fases y arena. **Simple edit** reúne los valores habituales; **Detailed edit** conserva y muestra todas las condiciones, eventos, movimiento y animación. [Recetas y My techniques](#mob-editor/battleworks-authoring) proporcionan puntos de partida reutilizables.
 
 | Tarea | Editor |
 | --- | --- |
-| PNJ salud, equipo, facciones, caídas, reaparición | CustomNPCs |
-| Modelos, texturas, activos de animación y mapeos de comportamiento | DRM PNJ básico |
-| Patrones, hitboxes, tiempo de combate, movimiento, fases | BattleWorks |
-| Archivos de partículas visuales reutilizables | Visual → Creador de partículas |
-| Apariencia emergente y presentación de diálogo | DRM Popup Maker y su GUI |
+| Nombre, salud base, equipo, relaciones, botín y reaparición | Editor del propio actor, como DNPC |
+| Apariencia y modelo | DNPC Appearance & Model o proveedor instalado; DRM NPC Basic para modelos DRM |
+| Patrones, hitboxes, tiempos, movimiento y fases | BattleWorks |
+| Archivos reutilizables de efectos visuales | Particle Maker en el selector independiente o en Visual de DRM |
+| Popups y diálogos DRM | DRM y sus herramientas de popup/GUI |
 
-Los documentos importados avanzados también pueden habilitar `npcStats` para anular los atributos de combate seleccionados. Los ejercicios para principiantes dejan esa función desactivada y preparan estadísticas base en CustomNPCs.
+Los documentos importados pueden activar npcStats para sustituir atributos de combate. Revísalos si aplicar un jefe cambia su salud o movimiento.
 
 ## Cinco términos que usarás
 

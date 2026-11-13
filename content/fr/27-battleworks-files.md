@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Guide
-version: 0.1.6
+version: 0.1.7
 audience: Débutants et créateurs de combat
 tags:
   - battleworks
@@ -62,7 +62,7 @@ NPC NBT stocke un chemin de combat et de petits drapeaux au lieu d'une copie JSO
 
 Charger ouvre le fichier. Appliquer le lie. Voir [save/apply comportement](#mob-editor/mob-editor-setup).
 
-![Le fichier de combat enregistré sur le serveur et lié à un DNPC.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Le titre abrége le chemin d'accès ; le fichier vérifié est config/dochi_rpg_maker/mobs/patterns/training/first_sword.json. Transférer ce fichier avec le PNJ vers un autre serveur.")
+![Le fichier de combat enregistré sur le serveur et lié à un DNPC.](assets/media/guides/battleworks-016-neo1211/battleworks-first-saved.png "BattleWorks 0.1.6 / NeoForge 1.21.1. Fichier de combat du serveur enregistré et associé à un DNPC. Transférez ce fichier avec le PNJ ; utilisez le dossier et le nom de travail indiqués plus haut.")
 
 ## 4. Actualiser les modifications externes
 
@@ -80,7 +80,7 @@ Combat lit les données mises en cache au lieu d'interroger le disque à chaque 
 | Fichier | Dossier | Préparation |
 | --- | --- | --- |
 | [first_sword.json](./assets/media/battleworks/first_sword.json) | `mobs/patterns/training/` | Enregistré, appliqué et endommagé avec BattleWorks 0.1.6 / DNPC 0.1.3 / NeoForge 1.21.1 |
-| [training_swordsman.json](./assets/media/battleworks/training_swordsman.json) | créatures/modèles/formation/ | NPC humanoïde normal avec une cible hostile CustomNPCs |
+| [training_swordsman.json](./assets/media/battleworks/training_swordsman.json) | mobs/patterns/training/ | DNPC humanoïde normal ou acteur ancien compatible ; recherche de secours activée |
 | [training_ring.json](./assets/media/battleworks/training_ring.json) | particules/ | Particle Maker ou la commande particule |
 
 Si le navigateur ouvre JSON, enregistrez-le en tant que fichier. Vérifiez qu'il n'est pas devenu .json.txt. L'échantillon de combat utilise une balançoire de base et un son de vanille sans paramètres de modèle enregistrés. L'échantillon de particules utilise une particule de vanille.
@@ -102,20 +102,32 @@ Les modèles de démarrage groupés et les boss, la musique et les popups distri
 
 ## 7. Mettre à jour avec soin
 
-1. Arrêtez le jeu/serveur et sauvegardez la configuration et le monde.
-2. Remplacez les anciens JAR sans laisser de versions dupliquées de BattleWorks/creature Editor.
-3. Assurez-vous que DRM 0.1.7 ou plus récent pour BattleWorks 0.1.5.
-4. Vérifiez les catalogues et les liaisons PNJ.
-5. Revérifier les modèles, les compétences, l'audio et le combat.
+1. Sauvegardez monde et config avant de remplacer les JAR.
+2. Installez BattleWorks 0.1.7 pour le bon Minecraft/chargeur ; retirez les anciens JAR BattleWorks ou Mob Editor en double.
+3. DRM est facultatif. Si vous utilisez ses fonctions, vérifiez les dépendances réelles de DRM et des fournisseurs dans cet environnement.
+4. Rouvrez le combat et vérifiez association du PNJ, modèles, compétences et audio.
+5. Réappliquez, puis testez combat, nettoyage et persistance après redémarrage.
 
-Les anciens fichiers de combat reconnus peuvent migrer des créatures vers des motifs, les octets originaux sauvegardés sous config/dochi_rpg_maker/backups/battleworks-mobs-patterns-v1. Conflits et JSON inconnu / modèle sont préservés.
+Les anciens fichiers reconnus peuvent migrer de mobs vers patterns, avec sauvegarde des octets originaux sous config/dochi_rpg_maker/backups/battleworks-mobs-patterns-v1. Conflits et JSON inconnus/de modèles sont préservés. Réappliquez après réorganisation ; les noms ambigus ne sont pas récupérables de façon fiable.
 
-La récupération de référence déplacée peut réparer des fichiers identifiables de manière unique; ne comptez pas sur elle pour choisir parmi des noms ambigus. Réappliquer explicitement après la réorganisation.
-
-Le mod ID actuel est dochi_battleworks, pas drm_addon_mob_editor. La conversion CNPC-Gecko model-NBT héritée ne remplace pas les types d'entités ou les ressources de l'addon d'origine ; les mondes qui en dépendent peuvent toujours nécessiter cet addon.
+L'identifiant reste dochi_battleworks. La conversion d'un ancien modèle ne fournit pas un fournisseur absent. Les acteurs et ressources CustomNPCs concernent seulement les anciennes versions compatibles et ne constituent pas une intégration native de 26.3.
 
 ## 8. Package d'une rencontre
 
 Incluez combat JSON, particule JSON, modèles, sons, fichiers popup/GUI, clones et versions de mods requises. Charger et appliquer sur un PNJ frais dans l'environnement de destination.
 
 Poursuivre avec [référence JSON](#mob-editor/battleworks-json-reference) ou [troubleshooting](#mob-editor/battleworks-troubleshooting).
+
+## Bibliothèque personnelle de techniques
+
+**Save technique** conserve un paquet réutilisable pour votre joueur sur le serveur actuel. Dossier serveur :
+
+```text
+config/dochi_rpg_maker/battleworks/pattern_library/<UUID>/
+```
+
+La limite est de 128 entrées valides par joueur. Le chemin reste sous dochi_rpg_maker même sans DRM.
+
+Utilisez **My techniques → Load technique** pour importer dans un autre document. Motifs et ressources liées reçoivent de nouveaux identifiants. Les fichiers de particules du serveur peuvent être inclus ; modèles, sons, compétences et mods externes restent des dépendances séparées. Copier uniquement le JSON de combat du PNJ ne transfère pas la bibliothèque. Consultez [recettes et copies](#mob-editor/battleworks-authoring).
+
+Annuler restaure le document, pas une entrée déjà enregistrée dans la bibliothèque. Lors d'un transfert de serveur, sauvegardez fichiers de combat et bibliothèque.

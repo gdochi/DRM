@@ -7,7 +7,7 @@ product: mob-editor
 section: combat
 category: BattleWorks
 status: Guía
-version: 0.1.6
+version: 0.1.7
 audience: Principiantes y creadores de combate
 tags:
   - battleworks
@@ -57,7 +57,7 @@ La configuración de línea de visión del escaneo afecta la adquisición. El re
 
 El espaciado deseado se puede fijar en un rango de ataque de no movilidad disponible para la fase actual. Sigue alineando el hitbox real, el rango de patrones y el terreno.
 
-Deshabilitar la supresión nativa permite que CustomNPCs ataque la IA para interferir. No permita que los controladores competidores simplemente hagan un movimiento estacionario de NPC.
+Desactivar la supresión puede permitir que la IA de ataque del actor u otro controlador compita con BattleWorks. Evita controladores simultáneos al diagnosticar movimiento.
 
 ## 4. Los ajustes de escenario toman el control durante un patrón
 
@@ -87,4 +87,4 @@ Un reinicio borra el estado de combate, como la historia, los tiempos de reutili
 6. Inspeccione los tiempos de reutilización y repita las penalizaciones por puntuación.
 7. Compruebe la velocidad de movimiento del NPC, la IA desactivada y las rutas bloqueadas.
 
-CustomNPCs todavía posee una configuración de inactividad/patrulla ordinaria. La órbita es un movimiento en la etapa de ataque alrededor de un objetivo, no un editor de patrulla mundial.
+Configura reposo y patrulla en el editor del propio actor, como DNPC. Orbit es movimiento de etapa alrededor de un objetivo; no edita rutas de patrulla del mundo.

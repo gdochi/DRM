@@ -7,7 +7,7 @@ product: mob-editor
 section: reference
 category: BattleWorks
 status: Referencia
-version: 0.1.6
+version: 0.1.7
 audience: Creadores editando JSON directamente
 tags:
   - battleworks
@@ -336,3 +336,5 @@ El límite de cadena no es el mismo que una regla de tamaño de archivo universa
 La auditoría detallada original utilizó la fuente Forge 0.1.3 en 2026-09-12: BattleworkDocument, BattleworkValidator, BattleworkRuntimeController, BattleworkStore, BattleworkNetwork, BattleworkAnimationPolicy, ParticleDocument, ParticleFiles, ParticleCommands y controles / traducciones del editor. La guía de instalación se actualizó a 0.1.4 en 2026-10-11, luego a actual 0.1.5 con Fabric instalación en 2026-10-24.
 
 El almacenamiento actual, la animación y el comportamiento de acción adicional reemplazan a la guía anterior 0.1.2. La validación de sintaxis/referencias no establece contacto visual, compatibilidad con el proveedor, comportamiento del terreno o equilibrio del encuentro. Utilice la [lista de verificación de prueba en vivo](#mob-editor/battleworks-troubleshooting).
+
+La guía actual de 0.1.7 también cubre edición independiente, recetas, técnicas reutilizables, avisos vinculados y reinicio de arena. El combate sigue usando dochi.battleworks.v1; no inventes otra versión de esquema para estas funciones. Las descripciones de ejemplos y versiones de capturas antiguas indican su origen histórico.

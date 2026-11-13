@@ -7,7 +7,7 @@ product: mob-editor
 section: effects
 category: BattleWorks
 status: 사용 안내
-version: 0.1.6
+version: 0.1.7
 audience: 입문자와 전투 콘텐츠 제작자
 tags:
   - battleworks
@@ -22,12 +22,12 @@ tags:
 
 ## 1. NPC 없이 편집기 열기
 
-1. 크리에이티브에서 DRM Core로 에디터 선택 화면을 엽니다.
-2. **Visual → Particle Maker**를 선택합니다.
-3. 새 효과를 만들거나 **Load**에서 `particle_sample.json`을 불러옵니다.
-4. 다른 이름으로 Save As하여 작업본을 만듭니다.
+1. 크리에이티브에서 **배틀워크스 완드**를 허공에 사용합니다.
+2. 단독 편집기 선택 화면에서 **Particle Maker**를 고릅니다. DRM이 있으면 **Core → Visual → Particle Maker**도 사용할 수 있습니다.
+3. 효과를 새로 만들거나 `particle_sample.json`을 불러옵니다.
+4. 다른 이름으로 저장해 작업 복사본을 만듭니다.
 
-BattleWorks의 Particle Shape 액션에서도 **Open Particle Maker**로 같은 편집기를 열 수 있습니다. 이 경우 저장한 파일을 해당 액션에 연결하는 흐름으로 이어집니다.
+BattleWorks의 Particle Shape 액션에서 **Open Particle Maker**로 열어 저장한 파일을 연결할 수도 있습니다.
 
 ## 2. 원형 레이어 만들기
 

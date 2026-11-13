@@ -7,7 +7,7 @@ product: mob-editor
 section: start
 category: BattleWorks
 status: Guia
-version: 0.1.6
+version: 0.1.7
 audience: Iniciantes e criadores de combate
 tags:
   - battleworks
@@ -16,21 +16,19 @@ translationSource: en
 translationMethod: assisted
 ---
 
-## 1. Preparar a instalação prática
+## 1. Preparar arquivos compatíveis
 
-Esta é a combinação usada para as telas capturadas e teste de primeiro ataque. Instale **BattleWorks, DRM and an NPC mod**. Para outros arquivos Minecraft/loader, veja [opções de instalação](https://www.curseforge.com/minecraft/mc-mods/dochi-s-battleworkes/files/9348660).
+Use BattleWorks **0.1.7** para sua versão exata de Minecraft e loader. Mantenha cliente e servidor compatíveis e instale as dependências declaradas pelo arquivo escolhido.
 
-| Componente | Este exercício. |
-| --- | --- |
-| Minecraft / carregador | 1.21.1 / NeoForge |
-| Java | 21 |
-| BattleWorks | 0.1.6 |
-| DRM | 0.3.1 |
-| NPC | DNPC 0.1.3 |
+| Minecraft | Loader do BattleWorks | Java |
+| --- | --- | --- |
+| 1.20.1 | Forge | 17 |
+| 1.21.1 | Fabric ou NeoForge | 21 |
+| 26.3 | Fabric ou NeoForge | 25 |
 
-Instale suas dependências correspondentes na mesma instância. Esta tabela registra uma combinação testada; verifique os arquivos selecionados Minecraft, carregador e requisitos antes de substituir uma instalação compatível existente. Combine instalações de servidor e cliente também.
+**DRM é opcional**, inclusive para abrir os editores independentes. DNPC fornece o ator deste exercício. Adicione DRM, bibliotecas de animação, mods de magia ou provedores de modelo apenas para os recursos usados; os recursos externos são separados do JSON de combate.
 
-Atores suportados CustomNPCs também estão disponíveis em Forge 1.20.1 e Fabric / NeoForge 1.21.1. **Use the DNPC workflow on 26.3 and later**; CustomNPCs está excluído lá.
+CustomNPCs é uma integração opcional no Forge 1.20.1 e Fabric / NeoForge 1.21.1. Está excluído a partir de 26.3; use DNPC nesses destinos. Capturas e vídeos antigos de 0.1.6 mantêm suas versões originais.
 
 ## 2. Criar uma prática DNPC
 
@@ -44,11 +42,14 @@ Atores suportados CustomNPCs também estão disponíveis em Forge 1.20.1 e Fabri
 
 Uma espada retida ajuda a comunicar o ataque. O exercício causa danos na BattleWorks Em vez de confiar no dano de ataque do item. Aumentar a saúde do NPC pode esperar até o exercício do chefe.
 
-## 3. Abra BattleWorks para o NPC
+## 3. Abrir BattleWorks para o NPC
 
-Selecione a prática NPC com o DRM Core e abra seu editor BattleWorks. Carregue um arquivo de combate existente ou escolha **Create New**, então continue com [ seu primeiro ataque corpo a corpo](#mob-editor/battleworks-first-attack).
+1. No Criativo, encontre a **BattleWorks Wand** na aba própria do BattleWorks. Ela também aparece na aba DNPC quando disponível.
+2. Use a varinha no NPC compatível para abrir seu seletor de editores. Use no ar para criar sem um NPC conectado. O comando é `/battleworks editor`; as permissões do servidor continuam necessárias.
+3. Escolha BattleWorks e depois **Load Existing**, **Use Default** ou **Create New**. Os padrões são modelos; salve uma cópia de trabalho.
+4. Comece com [edição simples e receitas](#mob-editor/battleworks-authoring), ou continue com [seu primeiro ataque](#mob-editor/battleworks-first-attack).
 
-A categoria de aplicação de arquivos do NPC é **Battlework JSON**. Se você começou a criar sem um NPC, salve o arquivo, selecione-o no catálogo desse NPC e pressione **Apply Battlework**. Para outro modelo, configure DNPC aparência e sua conexão [animação](#mob-editor/battleworks-animation) primeiro.
+Com DRM instalado, o Core continua sendo outra entrada. A categoria de aplicação do NPC é **Battlework JSON**. Para um arquivo criado sem NPC, selecione-o no catálogo do ator e pressione **Apply Battlework**. Prepare outros modelos pela aparência e pela [conexão de animação](#mob-editor/battleworks-animation).
 
 ## 4. Adicionar integrações quando o recurso precisar delas
 

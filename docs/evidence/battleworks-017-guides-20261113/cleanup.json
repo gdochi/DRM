@@ -1,0 +1,34 @@
+{
+  "status": "VIDEO_DEFERRED_BY_USER",
+  "userInstruction": "문서부터 마치고 영상은 보류",
+  "preparedRoot": "C:\\Users\\hodu3\\Desktop\\[COMMON] Dochi`s BattleWorks\\neoforge\\build\\task\\docs-guide-20261113",
+  "ownedProcesses": "Not enumerated: CIM access denied in sandbox",
+  "gameLaunched": false,
+  "probeValidated": false,
+  "artifactsRecorded": "neoforge/verification/docs-guide-2026-11-13/without-drm/inputs.json",
+  "removed": true,
+  "noLaunchEvidence": "Capture runner stopped at active-client/free-memory guard before launch; native.init.gradle and inputs.json preparation only.",
+  "otherProcessesStopped": false,
+  "removedOneOffFilesAndGeneratedFolders": [
+    "apply-docs-update.cjs",
+    "apply-mobile-fixes.cjs",
+    "apply-caption-fixes.cjs",
+    "apply-ko-labels.cjs",
+    "edits.json",
+    "mobile-fixes.json",
+    "caption-fixes.json",
+    "neoforge",
+    "neoforge-resources",
+    "browser/sandbox-attempt.json",
+    "browser/mobile-before-fix.json",
+    "browser/caption-before-fix.json",
+    "browser/overflow-elements.json",
+    "browser/overflow.png"
+  ],
+  "retained": [
+    "Final reports, screenshots and verification results",
+    "Reusable browser verifier",
+    "Deferred native runner and unvalidated probe/fixture",
+    "Timestamped site recovery backups"
+  ]
+}
