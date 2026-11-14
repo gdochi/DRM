@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Ferramentas de configuração
 section: setup
 status: Rascunho
-version: 0.3.1
+version: 0.3.3
 audience: Criadores de NPC de armas de fogo
 tags:
   - easy-build

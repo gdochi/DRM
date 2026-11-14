@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Combat support
 section: support
 status: Guide
-version: 0.3.2
+version: 0.3.3
 audience: Map creators and operators
 ---
 
@@ -20,8 +20,9 @@ Finish [timeline placement](#dochi-warfare-expanded/expanded-support-timeline) o
 | Save / Save As | Current draft | Named JSON on the server |
 | Simulation | Current draft | Temporary actors at normal speed, with terrain and existing actors protected |
 | Operator command | Saved file | Actual support with native damage and world effects |
+| Tactical order item | Timeline linked by a saved tactic | Actual support at the player-designated point and heading |
 
-**Simulation does not save.** Save a successful draft before invoking it by name. Current authoring uses **world placement → Simulation → saved-name commands**. Older top-down diagrams and run-at-my-position button instructions do not describe this GUI.
+**Simulation does not save.** Save the tested draft, then invoke it with an operator command or link it to a [tactical order](#dochi-warfare-expanded/expanded-tactical-orders) and issue items to ordinary players. Older top-down diagrams and run-at-my-position button instructions do not describe this GUI.
 
 ## 1. Save a named document
 

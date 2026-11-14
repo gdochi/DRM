@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Setup
 section: setup
 status: Draft
-version: 0.3.2
+version: 0.3.3
 audience: Server operators
 tags:
   - setup
@@ -21,13 +21,13 @@ tags:
 | --- | --- |
 | Minecraft / loader | Forge 1.20.1, NeoForge 1.21.1, or Fabric 1.21.1 |
 | Java | Forge 17 / NeoForge and Fabric 21 |
-| DW | Matching-loader 0.3.2 |
+| DW | Matching-loader 0.3.3 |
 | TACZ | Required: TACZ on Forge/NeoForge; TACZ Refabricated on Fabric. The older below-1.2 restriction no longer applies |
 | Player Animator | Required on Forge/NeoForge clients: Forge 1.0.0+ / NeoForge 2.0+. Optional on Fabric |
 | Fabric | Fabric API + Forge Config API Port (Fabric builds) |
 | NPC mod | DNPC or CustomNPCs |
 
-Install matching-loader DW and its requirements on server and client. DRM is optional. For vehicles, add **DWE 0.3.2** and SuperbWarfare. Supported SuperbWarfare versions are **0.8.9 / 0.8.9.1 / 0.8.9.2** on Forge and **0.8.9.1 / 0.8.9.2** on NeoForge. Include SuperbWarfare’s own dependencies, such as Kotlin for Forge.
+Install matching-loader DW and its requirements on server and client. DRM is optional. For vehicles, add **DWE 0.3.3** and SuperbWarfare. Supported SuperbWarfare versions are **0.8.9 / 0.8.9.1 / 0.8.9.2** on Forge and **0.8.9.1 / 0.8.9.2** on NeoForge. Include SuperbWarfare’s own dependencies, such as Kotlin for Forge.
 
 ## Choose a gun from the player inventory
 
@@ -67,3 +67,9 @@ These English screens use **DW 0.3.1, DNPC 0.1.3 and NeoForge 1.21.1**.
 **Save As** a profile, **Load** it on another NPC, then **Save**. Profiles are under `config/dochi_warfare/target_entities/`. To keep the NPC itself, right-click air with the core to open the [clone library](#dochi-warfare/warfare-entity-clones).
 
 Continue to [Easy Build and Presets](#dochi-warfare/warfare-easy-build-presets) for guided behavior setup, or [troubleshooting](#dochi-warfare/warfare-troubleshooting) if it does not fire. Use **DW Pose Core / DW Mercenary Core / DW Booby Trap Core** for poses, hiring or traps, and [DWE](#dochi-warfare-expanded/expanded-overview) for vehicles.
+
+## Installing and saving in 0.3.3
+
+Forge/NeoForge retain existing TaCZ integrations and add 1.2.0. Fabric supports TACZ Refabricated 0.7.1 and 1.2.0. This list does not guarantee every older or future version. On Fabric, Mod Menu opens DW settings.
+
+Use **Ctrl+S** in editors and configuration screens with an existing Save action. For a new document requiring Save As, choose a file name and wait for server confirmation. The 0.3.1 screenshots below identify their recording build; they do not instruct you to downgrade.

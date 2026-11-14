@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 총기 연동
 section: integrations
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: 총기 NPC 제작자
 tags:
   - TACZ
@@ -15,7 +15,7 @@ tags:
   - SuperbWarfare
 ---
 
-현재 빌드는 Forge 1.20.1용 DW 0.3.1과 NeoForge 1.21.1용 DW 0.3.1입니다. 두 로더의 차량 AI는 별도 DWE 0.3.1이 필요합니다. 외부 총기·차량 모드의 요구 범위는 [로더별 설치 안내](#dochi-warfare/warfare-setup)를 확인하세요.
+DW 0.3.3는 Forge 1.20.1, NeoForge 1.21.1, Fabric 1.21.1용입니다. 차량 기능에는 별도 DWE와 SuperbWarfare가 필요합니다. 외부 모드는 [로더별 설치 안내](#dochi-warfare/warfare-setup)를 따르세요.
 
 ## 다른 모드의 총을 NPC에게 주기
 
@@ -29,11 +29,11 @@ DW에서 바꾸는 것은 NPC가 누구를 보고 언제 쏘고 재장전하는�
 
 | 총기 시스템 | 요구 사항 | 유지되는 원본 동작 |
 | --- | --- | --- |
-| TACZ | 필수 1.1.8부터 지원되는 1.1.x 범위 | 사격, 총기·재장전 상태, RPM, 총구 효과, 스택 저장 |
+| TACZ | Forge·NeoForge: 기존 TaCZ 연동과 1.2.0 지원. Fabric: TACZ Refabricated 0.7.1 및 1.2.0 지원 | 사격, 총기·재장전 상태, RPM, 총구 효과, 스택 저장 |
 | PointBlank | 선택형 1.11.1 또는 2.1.0 중 하나 | 원본 탄환/히트스캔, 다중 펠릿 광선, 헤드샷, 거리 감쇠, 재장전 단계, 사운드, 렌더러 |
 | SuperbWarfare | Forge 0.8.9 / 0.8.9.1 / 0.8.9.2, NeoForge 0.8.9.1 / 0.8.9.2 | 원본 사격, 재장전, 노리쇠, 탄환, 사운드, 열, 반동, 내구도, 모델, 부착물, 저장 |
 
-관리 아이템이 PointBlank나 SuperbWarfare 총기여도 TACZ와 Player Animator는 플레이·애니메이션 기준으로 계속 필요합니다.
+TACZ 계열 모드는 계속 필요합니다. Player Animator는 Forge·NeoForge 클라이언트에서 필수이며 Fabric에서는 선택입니다. PointBlank·SuperbWarfare는 해당 Minecraft·로더에 맞는 실제 배포물이 있을 때만 사용하세요.
 
 :::warning 버전 제한
 PointBlank는 지원하는 1.11.1 또는 2.1.0 중 하나만 설치합니다. SuperbWarfare는 위 표의 로더별 버전을 사용합니다.
@@ -41,7 +41,7 @@ PointBlank는 지원하는 1.11.1 또는 2.1.0 중 하나만 설치합니다. Su
 
 ## 외부 총기 설정
 
-1. 먼저 순정 TACZ 1.1.8 총기로 NPC가 정상 동작하는지 확인합니다.
+1. 먼저 현재 로더에서 지원하는 일반 TACZ 또는 TACZ Refabricated 총기로 NPC의 기본 사격을 확인합니다.
 2. 지원되는 선택 총기 모드 버전 하나를 클라이언트와 서버에 설치합니다.
 3. 제작자 인벤토리에 원본 총기 아이템을 넣습니다.
 4. `DW Npc Core`로 NPC를 열고 `Gun`에서 아이템을 선택합니다. 여러 총을 넣었다면 확률 합계를 100%로 맞추거나 `Even`을 누릅니다.

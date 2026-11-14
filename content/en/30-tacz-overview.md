@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Overview
 section: overview
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: Firearm NPC creators
 tags:
   - TACZ
@@ -52,6 +52,6 @@ Set spare ammo with **Ammo Stock**. Do not equip ammo or magazine items in the N
 
 ## Supported platforms
 
-DW is for **Forge 1.20.1 / NeoForge 1.21.1**. TACZ and client-side Player Animator are required. Installed compatible PointBlank/SuperbWarfare mods add their supported guns.
+DW 0.3.3 supports **Forge 1.20.1 / NeoForge 1.21.1 / Fabric 1.21.1**. Fabric uses TACZ Refabricated, Fabric API and Forge Config API Port. Player Animator is required on Forge/NeoForge clients and optional on Fabric.
 
 See [setup](#dochi-warfare/warfare-setup) for version requirements.

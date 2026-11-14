@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Combat AI
 section: combat-ai
 status: Rascunho
-version: 0.3.1
+version: 0.3.3
 audience: Criadores de NPC de armas de fogo
 tags:
   - weapon
@@ -142,7 +142,7 @@ TACZ é sempre a linha de base de postura e animação. Adaptadores opcionais ma
 
 `Melee` lê itens não-TACZ do inventário do jogador. Melhor integração de combate não salva um ID de animação de substituição. No momento do ataque, ele resolve o ataque e pose realmente registrado para a arma mantida. Suporte de ataque corpo a corpo de mão vazia também está disponível para configurações capazes de corpo a corpo.
 
-`Visual & FX` armazena cada pele ponderada CustomNPCs como um caminho de textura local ou um URL HTTP/HTTPS, além de um modelo explícito `Steve` ou `Alex`, sobreposições e configurações de capa. Não altera a textura fornecida. `Armor` lojas conjuntos completos em real cabeça, peito, pernas e pés slots. As pré-visualizações da arma, do corpo e da armadura mostram o modelo, a pele, a armadura e a arma selecionados juntos.
+`Visual & FX` armazena cada pele ponderada DNPC ou CustomNPCs como um caminho de textura local ou um URL HTTP/HTTPS, além de um modelo explícito `Steve` ou `Alex`, sobreposições e configurações de capa. Não altera a textura fornecida. `Armor` lojas conjuntos completos em real cabeça, peito, pernas e pés slots. As pré-visualizações da arma, do corpo e da armadura mostram o modelo, a pele, a armadura e a arma selecionados juntos.
 
 A versão 0.2.1 mostra campos de chance diretamente nas fileiras de armas, peles e armaduras. Editar uma chance não redistribui as outras entradas, e um pool de entradas múltiplas deve totalizar `100%` antes de salvar. `Equalize` redistribui as entradas somente quando pressionadas, enquanto uma piscina de entrada fica em `100%`. O conjunto de armaduras mostra até cinco fileiras ao mesmo tempo; use a roda do mouse ou sua barra de rolagem interna para as entradas restantes.
 
@@ -158,3 +158,7 @@ A versão 0.2.1 mostra campos de chance diretamente nas fileiras de armas, peles
 8. Adicione intervalos de rajadas, ramping de precisão e tempo de reposicionamento aleatório somente após o comportamento normal ficar estável.
 9. Adicione regras de postura avançadas.
 10. Adicione fogo supressivo e cobertura experimental por último, depois que o movimento normal e o comportamento de linha de visão forem confirmados.
+
+## Aplicar um conjunto de skins no DNPC
+
+Os conjuntos de skins do DNPC aplicam a textura e o modelo Steve/Alex selecionados. Ative **Init Event** e configure candidatos e probabilidades para sortear na criação/carga da entidade. Se estiver desativado ou o conjunto estiver vazio, a aparência atual permanece. Salvar e os ticks de combate não fazem um novo sorteio.

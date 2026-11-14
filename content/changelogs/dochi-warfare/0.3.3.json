@@ -1,0 +1,23 @@
+{
+  "product": "dochi-warfare",
+  "version": "0.3.3",
+  "projectId": 1553237,
+  "source": "author",
+  "publishedAt": "2026-11-14T11:13:13.913Z",
+  "environments": [
+    {
+      "loader": "Forge",
+      "minecraft": "1.20.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1"
+    }
+  ],
+  "markdown": "## DW\n### 0.3.3 Change Log\n#### Global\n##### Fixed\n* Fixed DNPC skin pools failing to apply textures and Steve/Alex models on initialization.\n",
+  "html": "<h3>0.3.3 Change Log</h3>\n<h4>Global</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed DNPC skin pools failing to apply textures and Steve/Alex models on initialization.</li>\n</ul>\n"
+}

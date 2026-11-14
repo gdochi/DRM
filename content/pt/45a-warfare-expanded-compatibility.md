@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Configuração
 section: overview
 status: Guia
-version: 0.3.2
+version: 0.3.3
 audience: Operadores/criadores de servidores
 translationSource: en
 translationMethod: assisted
@@ -15,7 +15,7 @@ translationMethod: assisted
 
 ## Escolha um pacote de veículos
 
-No DWE 0.3.2, confira cada veículo e arma. A tabela preserva **testes de movimento/tiros/recarga do DW/DWE 0.3.1**; não comprova suporte geral no Fabric. O editor/simulação 0.3.2 foi executado separadamente em Forge 1.20.1 e Fabric 1.21.1; este tutorial foi gravado no NeoForge 1.21.1.
+No DWE 0.3.3, confira cada veículo e arma. A tabela preserva **testes de movimento/tiros/recarga do DW/DWE 0.3.1**; não comprova suporte geral no Fabric. O editor/simulação 0.3.2 foi executado separadamente em Forge 1.20.1 e Fabric 1.21.1; este tutorial foi gravado no NeoForge 1.21.1.
 
 | Embalar | Minecraft / carregador | Veículos |
 | --- | --- | --- |
@@ -26,7 +26,7 @@ No DWE 0.3.2, confira cada veículo e arma. A tabela preserva **testes de movime
 | Pacote de Combate da Linha de Frente | Forge 1.20.1 | BMP-2 |
 | Espectacular Machines Addon | Forge 1.20.1 | Digite 10 |
 
-Use DWE 0.3.2 com DW compatível. DW é obrigatório; os números de versão não precisam coincidir. Siga a [configuração do veículo](#dochi-warfare-expanded/expanded-overview) para tripulação e munição.
+Use DWE 0.3.3 com DW compatível. DW é obrigatório; os números de versão não precisam coincidir. Siga a [configuração do veículo](#dochi-warfare-expanded/expanded-overview) para tripulação e munição.
 
 ## Combinações de problemas conhecidas
 
@@ -44,3 +44,9 @@ AH-6 fogo alvo no solo, F-22 arma fixa mirando e escalada excessiva perto de ter
 Depois de instalar um pacote de veículos, inspecione seus assentos e funções reais em **Crew**. Continue com [veículo AI](#dochi-warfare/warfare-vehicle-ai) para fontes de embarque e requisitos da tripulação por arma.
 
 ![O mapa do assento da tripulação da base SuperbWarfare M1A2.](assets/media/guides/warfare-expanded-031-neo1211/dwe-crew.png "DWE 0.3.1 / NeoForge 1.21.1. Selecione um número de assento para inspecionar seu papel e ocupante à direita. Este é um mapa de assento vazio, não um resultado de embarque completo. É a base. SuperbWarfare veículo, distinto do MCSP M1A2.")
+
+## Pacotes de veículos nos pedidos da 0.3.3
+
+As listas de reforços, metralhamento e bombardeio usam dados de veículos instalados no servidor e recursos reais das armas. O nome do pacote não garante todos os veículos ou armas. Confira novamente arma/carga após trocar a aeronave.
+
+Com AshVehicle instalado, é possível configurar apoio compatível **B-2 / GBU-57**. AshVehicle não é obrigatório para todo usuário do DWE. O DWE atual inclui compatibilidade do cliente ao entrar em mundos com SuperbWarfare e AshVehicle juntos. A tabela histórica da 0.3.1 não comprova testes do B-2 nem compatibilidade geral no Fabric.

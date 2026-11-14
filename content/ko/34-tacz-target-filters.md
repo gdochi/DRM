@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 타겟
 section: targets
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: 전투 설계자
 tags:
   - target

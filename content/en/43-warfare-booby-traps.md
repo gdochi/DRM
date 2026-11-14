@@ -7,7 +7,7 @@ product: dochi-warfare
 category: World Tools
 section: tools
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: Map and scenario creators
 tags:
   - booby-trap

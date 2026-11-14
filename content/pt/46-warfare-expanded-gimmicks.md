@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Veículos
 section: vehicles
 status: Rascunho
-version: 0.3.2
+version: 0.3.3
 audience: Criadores de combate
 translationSource: en
 translationMethod: assisted
@@ -53,3 +53,7 @@ Desmontagens de combate afetam os passageiros de transporte existentes DNPC ou C
 Um truque de bombardeio de veículos controla uma aeronave de IA existente: `LEVEL` para ataques de precisão de nível, `DIVE` para ataques de mergulho e `CARPET` para quedas de área repetidas. Armas nativas, munição, RPM e física de voo ainda se aplicam.
 
 Para chamar aeronaves temporárias ou reforços em horários programados, use o separado [Linha do tempo de suporte](#dochi-warfare-expanded/expanded-support-timeline).
+
+## Evacuação do motor e desembarque de combate
+
+**NPC combat dismount** é a reação dos passageiros de transporte descrita acima. A evacuação por falha do motor da 0.3.3 é separada e inclui motoristas e atiradores. Veja [danos aos componentes](#dochi-warfare/warfare-vehicle-ai) para as condições de parada, saída e recuperação.

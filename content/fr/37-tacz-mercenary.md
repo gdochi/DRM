@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Mercenaires
 section: mercenary
 status: Projet
-version: 0.3.1
+version: 0.3.3
 audience: Créateurs et joueurs
 tags:
   - mercenary

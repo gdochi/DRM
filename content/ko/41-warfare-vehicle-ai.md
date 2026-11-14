@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 차량 AI
 section: vehicles
 status: Draft
-version: 0.3.2
+version: 0.3.3
 audience: 시나리오 제작자와 운영자
 tags:
   - SuperbWarfare
@@ -15,7 +15,7 @@ tags:
   - ai
 ---
 
-Forge 1.20.1·NeoForge 1.21.1·Fabric 1.21.1의 차량 기능은 **DWE 0.3.2**가 제공합니다. [설치와 저장 경로](#dochi-warfare-expanded/expanded-overview), [차량 반응](#dochi-warfare-expanded/expanded-vehicle-gimmicks), [개편된 타임라인](#dochi-warfare-expanded/expanded-support-timeline)을 함께 보세요.
+Forge 1.20.1·NeoForge 1.21.1·Fabric 1.21.1의 차량 기능은 **DWE 0.3.3**가 제공합니다. [설치와 저장 경로](#dochi-warfare-expanded/expanded-overview), [차량 반응](#dochi-warfare-expanded/expanded-vehicle-gimmicks), [개편된 타임라인](#dochi-warfare-expanded/expanded-support-timeline)을 함께 보세요.
 
 DW는 필수 코어입니다. DWE와 DW의 버전 번호를 같게 맞추는 조건 대신 실제 사용하는 DW API 호환성을 확인합니다. 총기·차량 외부 의존성은 [로더별 설치](#dochi-warfare/warfare-setup)를 확인하세요.
 
@@ -119,3 +119,13 @@ config/dochi_warfare/vehicle_ai/profiles/
 ```
 
 일반 제작은 GUI가 우선입니다. 명령어는 라이브 운영, 빠른 지시와 상태 진단에 사용하세요.
+
+## 지상차량 부품 손상 시 동작
+
+0.3.3는 DWE AI가 제어하는 바퀴·궤도 지상차량의 원본 부품 손상 상태에 반응합니다. 선박·항공기에는 이 지상차량 정책을 적용하지 않습니다.
+
+- 바퀴·궤도가 손상되면 이동·후퇴·끼임 복구 대신 정지하고, 사용 가능한 무장으로 방어합니다. 수리되면 원래 이동 판단으로 돌아갑니다.
+- 포탑이 고장 나면 그 포탑에 연결된 주포·동축 무장을 제외합니다. 독립 부무장이 있어도 기존 사용 허용·승무원·탄약·사거리 조건을 만족해야 사격합니다.
+- 주·보조 엔진이 고장 나면 안전한 저속 정차를 확인한 뒤 운전수·포수·승객 NPC를 안전한 출구로 하차시킵니다. 플레이어는 강제로 내리지 않습니다. 출구가 막히면 기다렸다가 다시 검사합니다.
+
+가능한 경우 NPC는 위협 반대쪽으로 잠시 도보 대피합니다. 자동 재탑승에는 30초 유예가 있으며, 승무원이 대피한 차량은 수리한 뒤 새 승무원을 태워 회수합니다. 엔진 고장 대피는 수송 승객만 내리는 **NPC combat dismount**와 별개입니다. 저장된 순찰·무장 설정을 다시 만들 필요는 없습니다.

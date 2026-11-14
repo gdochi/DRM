@@ -7,7 +7,7 @@ product: dochi-warfare
 category: World Tools
 section: tools
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: Server operators and map makers
 tags:
   - server
@@ -41,7 +41,7 @@ Disabling a feature retains NPC values for reuse when allowed again. The server 
 
 ## Vehicles and support sequences
 
-**DWE 0.3.2** manages vehicle AI's global policy separately. Changing NPC policy does not apply every change to vehicle behavior. Vehicle policy is stored in `config/dochi_warfare/vehicle_ai/server-ai.json`.
+**DWE 0.3.3** manages vehicle AI's global policy separately. Changing NPC policy does not apply every change to vehicle behavior. Vehicle policy is stored in `config/dochi_warfare/vehicle_ai/server-ai.json`.
 
 Build bombing, strafing, vehicle reinforcements and NPC movement in the [DWE support timeline](#dochi-warfare-expanded/expanded-support-timeline).
 

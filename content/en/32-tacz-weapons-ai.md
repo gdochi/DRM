@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Combat AI
 section: combat-ai
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: Firearm NPC creators
 tags:
   - weapon
@@ -140,7 +140,7 @@ TACZ is always the stance and animation baseline. Optional adapters keep the ext
 
 `Melee` reads non-TACZ items from the player's inventory. Better Combat integration does not save one replacement animation ID. At attack time, it resolves the attack set and pose actually registered for the held weapon. Empty-hand melee attack support is also available for melee-capable setups.
 
-`Visual & FX` stores each weighted CustomNPCs skin as either a local texture path or an HTTP/HTTPS URL, plus an explicit `Steve` or `Alex` model, overlays, and cape settings. It does not alter the supplied texture. `Armor` stores full sets in real head, chest, legs, and feet slots. The Gun, Melee, and Armor previews show the selected model, skin, armor, and weapon together.
+`Visual & FX` stores each weighted DNPC or CustomNPCs skin as either a local texture path or an HTTP/HTTPS URL, plus an explicit `Steve` or `Alex` model, overlays, and cape settings. It does not alter the supplied texture. `Armor` stores full sets in real head, chest, legs, and feet slots. The Gun, Melee, and Armor previews show the selected model, skin, armor, and weapon together.
 
 Version 0.2.1 shows chance fields directly on weapon, skin, and armor pool rows. Editing one chance does not redistribute the other entries, and a multi-entry pool must total `100%` before saving. `Equalize` redistributes entries only when pressed, while a one-entry pool stays at `100%`. The armor pool shows up to five rows at once; use the mouse wheel or its internal scrollbar for the remaining entries.
 
@@ -156,3 +156,7 @@ Version 0.2.1 shows chance fields directly on weapon, skin, and armor pool rows.
 8. Add burst ranges, accuracy ramping, and random reposition timing only after normal behavior is stable.
 9. Add advanced stance rules.
 10. Add suppressive fire and experimental cover last, after ordinary movement and line-of-sight behavior are confirmed.
+
+## Applying a DNPC skin pool
+
+DNPC skin pools apply the selected texture and Steve/Alex model. Enable the pool’s **Init Event** and set candidates and probabilities to draw a skin on entity creation/load. With Init Event off or an empty pool, the current appearance stays. Ordinary combat ticks and saving settings do not reroll the pool.

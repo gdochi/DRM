@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: 차량
 section: vehicles
 status: Draft
-version: 0.3.2
+version: 0.3.3
 audience: 전투 제작자
 ---
 
@@ -51,3 +51,7 @@ NPC 전투 하차는 바퀴·궤도 차량의 기존 DNPC 또는 CustomNPCs 승�
 차량의 폭격 기믹은 이미 있는 AI 기체의 전투 행동입니다. `LEVEL`은 수평 정밀, `DIVE`는 급강하, `CARPET`은 구역 연속 투하입니다. 실제 자유낙하 무장, 탄약, RPM과 원본 비행 물리가 필요합니다.
 
 특정 시점에 지원 기체나 증원을 호출하려면 별도의 [기믹 타임라인](#dochi-warfare-expanded/expanded-support-timeline)을 사용하세요.
+
+## 엔진 고장 대피와 전투 하차 구별하기
+
+**NPC combat dismount**는 위 표의 수송 승객 반응입니다. 0.3.3의 엔진 고장 대피는 운전수·포수까지 대상으로 하는 별도의 부품 손상 대응입니다. [차량 AI의 부품 손상 설명](#dochi-warfare/warfare-vehicle-ai)에서 정차·출구·수리 후 회수 조건을 확인하세요.

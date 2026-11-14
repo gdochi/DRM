@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Apoyo de combate
 section: support
 status: Guía
-version: 0.3.2
+version: 0.3.3
 audience: Creadores de mapas y operadores
 translationSource: en
 translationMethod: assisted
@@ -22,8 +22,9 @@ Completa la [colocación](#dochi-warfare-expanded/expanded-support-timeline) o l
 | Save / Save As | Borrador actual | JSON con nombre en el servidor |
 | Simulation | Borrador actual | Actores temporales a velocidad normal; terreno y actores existentes protegidos |
 | Comando de operador | Archivo guardado | Apoyo real con daño y efectos nativos |
+| Orden táctica | Línea de tiempo vinculada a una táctica guardada | Apoyo real en el punto y dirección señalados por el jugador |
 
-**Simulation no guarda.** Guarda antes de invocar por nombre. El flujo actual es **colocar en el mundo → Simulation → comandos con el nombre guardado**. Los diagramas antiguos y el botón de ejecutar en mi posición no describen esta interfaz.
+**Simulation no guarda.** Guarda el borrador probado y llámalo por comando de operador o vincúlalo a una [orden táctica](#dochi-warfare-expanded/expanded-tactical-orders) para entregar objetos a jugadores normales. Los diagramas antiguos y el botón de ejecutar en mi posición no describen esta GUI.
 
 ## 1. Guarda un documento
 

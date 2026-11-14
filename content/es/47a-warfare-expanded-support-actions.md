@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Apoyo de combate
 section: support
 status: Guía
-version: 0.3.2
+version: 0.3.3
 audience: Creadores de mapas y operadores
 translationSource: en
 translationMethod: assisted
@@ -84,3 +84,9 @@ El combate DW tiene prioridad y después continúa el avance. No hay teletranspo
 Empieza con **NPC a cero segundos → vehículos a tres → armas a cinco**. El orden de inicio no garantiza el de llegada: se aplican navegación, física y combate.
 
 Revisa [tiempos y centro](#dochi-warfare-expanded/expanded-support-timeline) y después [guarda y ejecuta](#dochi-warfare-expanded/expanded-support-run). Los vehículos temporales no permiten montar, guardar clones ni capturarlos con piedras de alma. Para vehículos permanentes usa el [editor de vehículos](#dochi-warfare-expanded/expanded-overview).
+
+## Elegir paquetes de vehículos y apoyo B-2
+
+Las listas de vehículos, aeronaves, armas y cargas dependen del servidor y del tipo de apoyo. Vuelve a seleccionar armas/cargas tras cambiar de aeronave. **B-2 / GBU-57** puede configurarse con AshVehicle instalado y si el catálogo permite esa combinación. No admite combinaciones arbitrarias.
+
+El apoyo de ala fija necesita espacio para alinear el ataque y salir. Las correcciones de apuntado y ruta de 0.3.3 no garantizan impactos en todos los terrenos. Consulta [vehículos compatibles](#dochi-warfare-expanded/expanded-compatibility) y prueba las rutas en Simulation.

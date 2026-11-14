@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Aperçu général
 section: overview
 status: Projet
-version: 0.3.1
+version: 0.3.3
 audience: Firearm PNJ Créateurs
 tags:
   - TACZ
@@ -54,6 +54,6 @@ Mettre des munitions de rechange avec **Ammo Stock**. N'équipez pas de munition
 
 ## Plateformes supportées
 
-DW est pour **Forge 1.20.1 / NeoForge 1.21.1**. TACZ et Player Animator côté client sont requis. Les mods compatibles PointBlank/SuperbWarfare installés ajoutent leurs canons pris en charge.
+DW 0.3.3 prend en charge **Forge 1.20.1 / NeoForge 1.21.1 / Fabric 1.21.1**. Fabric utilise TACZ Refabricated, Fabric API et Forge Config API Port. Player Animator est requis sur les clients Forge/NeoForge et facultatif sur Fabric.
 
 Voir [setup](#dochi-warfare/warfare-setup) pour les exigences de version.

@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 설치
 section: setup
 status: Draft
-version: 0.3.2
+version: 0.3.3
 audience: 서버 운영자
 tags:
   - setup
@@ -21,13 +21,13 @@ tags:
 | --- | --- |
 | Minecraft / 로더 | Forge 1.20.1, NeoForge 1.21.1 또는 Fabric 1.21.1 |
 | Java | Forge 17 / NeoForge·Fabric 21 |
-| DW | 목표 로더용 0.3.2 |
+| DW | 목표 로더용 0.3.3 |
 | TACZ | 필수. Forge·NeoForge는 TACZ, Fabric은 TACZ Refabricated. 구버전 안내의 1.2 미만 제한은 현재 적용하지 않음 |
 | Player Animator | Forge·NeoForge 클라이언트 필수: Forge 1.0.0+ / NeoForge 2.0+. Fabric은 선택 |
 | Fabric | Fabric API + Forge Config API Port (Fabric 빌드) |
 | NPC 모드 | DNPC 또는 CustomNPCs |
 
-서버와 클라이언트에 같은 로더의 DW와 필수 모드를 설치합니다. DRM은 선택입니다. 차량에는 **DWE 0.3.2**과 SuperbWarfare를 추가합니다. 지원 SuperbWarfare 버전은 Forge **0.8.9 / 0.8.9.1 / 0.8.9.2**, NeoForge **0.8.9.1 / 0.8.9.2**입니다. SuperbWarfare 자체가 요구하는 Kotlin for Forge 등도 함께 준비합니다.
+서버와 클라이언트에 같은 로더의 DW와 필수 모드를 설치합니다. DRM은 선택입니다. 차량에는 **DWE 0.3.3**과 SuperbWarfare를 추가합니다. 지원 SuperbWarfare 버전은 Forge **0.8.9 / 0.8.9.1 / 0.8.9.2**, NeoForge **0.8.9.1 / 0.8.9.2**입니다. SuperbWarfare 자체가 요구하는 Kotlin for Forge 등도 함께 준비합니다.
 
 ## 플레이어 인벤토리에서 총을 골라 NPC에게 주기
 
@@ -67,3 +67,9 @@ tags:
 **Save As**로 프로필을 저장하고 다른 NPC의 **Load**에서 불러온 뒤 **Save**합니다. 프로필은 `config/dochi_warfare/target_entities/`에 있습니다. NPC 자체를 보관하려면 코어로 허공을 우클릭해 [클론 보관함](#dochi-warfare/warfare-entity-clones)을 엽니다.
 
 질문에 답하며 행동을 만들려면 [Easy Build와 Presets](#dochi-warfare/warfare-easy-build-presets), 사격하지 않으면 [문제 해결](#dochi-warfare/warfare-troubleshooting)로 이어갑니다. 포즈·고용·함정은 각각 **DW Pose Core / DW Mercenary Core / DW Booby Trap Core**, 차량은 [DWE](#dochi-warfare-expanded/expanded-overview)를 사용합니다.
+
+## 0.3.3에서 설치·저장할 때
+
+Forge·NeoForge는 기존 TaCZ 연동을 유지하면서 1.2.0도 지원합니다. Fabric은 TACZ Refabricated 0.7.1과 1.2.0을 지원합니다. 이 목록은 모든 과거·미래 버전의 호환 보증이 아닙니다. Fabric에서는 Mod Menu에서 DW 설정을 열 수 있습니다.
+
+기존 Save 동작이 있는 편집기·설정 화면에서는 **Ctrl+S**로 같은 저장을 실행합니다. Save As가 필요한 새 문서는 파일 이름을 정하고 서버 저장 완료를 확인하세요. 아래 0.3.1 화면은 당시 촬영본이며 설치 버전을 낮추라는 뜻이 아닙니다.

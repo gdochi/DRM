@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Getting started
 section: overview
 status: Draft
-version: 0.3.2
+version: 0.3.3
 audience: Creators and server operators
 ---
 
@@ -18,7 +18,7 @@ DWE **adds vehicle features to DW**. Move supported SuperbWarfare vehicles, use 
 | Item | Requirement |
 | --- | --- |
 | Minecraft / loader | Forge 1.20.1, NeoForge 1.21.1, or Fabric 1.21.1 |
-| DW and DWE | DWE 0.3.2 and compatible DW on server and clients; matching version numbers are not required |
+| DW and DWE | DWE 0.3.3 and compatible DW on server and clients; matching version numbers are not required |
 | SuperbWarfare | Install the matching loader build. Forge 0.8.9 / 0.8.9.1 / 0.8.9.2; NeoForge 0.8.9.1 / 0.8.9.2. Fabric has an exercised 0.8.9.2 combination |
 | NPC crews | DNPC or CustomNPCs |
 | DRM | Optional |
@@ -26,7 +26,7 @@ DWE **adds vehicle features to DW**. Move supported SuperbWarfare vehicles, use 
 DW's TACZ and Player Animator requirements still apply. See [DW setup](#dochi-warfare/warfare-setup).
 
 
-This guide targets DWE **0.3.2**. DW remains required; DWE checks the actual APIs it uses at startup instead of requiring a matching DW version number. Recorded/tested versions are not minimum requirements for every combination.
+This guide targets DWE **0.3.3**. DW remains required; DWE checks the actual APIs it uses at startup instead of requiring a matching DW version number. Recorded/tested versions are not minimum requirements for every combination.
 
 **Open the timeline editor:** hold DW Npc Core and right-click air without targeting a block/entity to open the standalone selector. With DRM installed, Gimmick Editor is also available through DRM editor selection. Follow the [new GUI tutorial](#dochi-warfare-expanded/expanded-support-timeline) for workspace, placement, timing, and center.
 
@@ -57,3 +57,9 @@ Turn off vehicle AI before driving it yourself. Available weapons depend on what
 Vehicle settings are in `config/dochi_warfare/vehicle_ai/profiles/`; support timelines are in `config/dochi_warfare/vehicle_ai/gimmicks/`.
 
 Replace the old `dochi_warfare_vehicle` JAR rather than keeping it alongside DWE. Older profiles are imported while keeping their originals.
+
+## Request support with a radio or tablet
+
+In 0.3.3, ordinary players can call an administrator-authored support timeline through a tactical order item. [Tactical orders](#dochi-warfare-expanded/expanded-tactical-orders) separates authoring/issuance from player targeting.
+
+Install the **same DWE 0.3.3 build** on server and clients: different builds with the same version label can have different network messages. Fabric Mod Menu opens DWE vehicle AI settings. Tactical definitions live in **config/dochi_warfare/vehicle_ai/tactical_orders/**.

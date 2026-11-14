@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Appui au combat
 section: support
 status: Guide
-version: 0.3.2
+version: 0.3.3
 audience: Créateurs de cartes et opérateurs débutants
 translationSource: en
 translationMethod: assisted
@@ -22,6 +22,7 @@ translationMethod: assisted
 | 1. Cette page | Découvrir l’écran, placer des bombardements ponctuels/en ligne/en zone, régler horaires et centre |
 | 2. [Véhicules, tirs et PNJ](#dochi-warfare-expanded/expanded-support-actions) | Départs/destinations, véhicules, armes et sources de PNJ |
 | 3. [Enregistrer, simuler et lancer](#dochi-warfare-expanded/expanded-support-run) | Enregistrer, recharger, tester avec Simulation et appeler le fichier |
+| 4. [Appeler avec un objet tactique](#dochi-warfare-expanded/expanded-tactical-orders) | Lier la chronologie → distribuer l’objet → visée du joueur |
 
 Dix vidéos accompagnent ces trois leçons. Elles montrent les **écrans réels de DWE 0.3.2 / NeoForge 1.21.1**, avec commandes anglaises et explications des étapes en coréen. Sans son : mettez en pause pour trouver chaque commande. Forge et Fabric partagent ce fonctionnement ; les captures proviennent de NeoForge.
 

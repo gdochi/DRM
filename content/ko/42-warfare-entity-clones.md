@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 월드 도구
 section: tools
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: 시나리오 제작자
 tags:
   - clone

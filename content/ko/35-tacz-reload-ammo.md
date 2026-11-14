@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 탄약
 section: ammo
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: 총기 NPC 제작자
 tags:
   - reload
@@ -130,3 +130,7 @@ GUI가 기본 설정 경로지만, 스크립트 사용자는 브리지 값을 �
 | `tacznpcfire.combat.fallbackToUnarmed` | 근접 무기가 없을 때 빈손 전환을 허용합니다. |
 
 storeddata는 전투가 정말 스크립트 측 변경을 필요로 할 때만 사용하세요. 일반 NPC 제작에서는 다른 제작자가 GUI에서 바로 확인할 수 있도록 NPC별 GUI 값을 유지하는 편이 좋습니다.
+
+## 0.3.2 보급 후 확인
+
+유한 Ammo Stock은 보급 뒤의 재장전에도 그대로 적용됩니다. 처음 보급한 뒤 예비 탄이 뜻하지 않게 사라지는 구버전 문제는 0.3.2에서 수정했습니다. 접속하거나 NPC 추적 범위에 다시 들어온 뒤에도 재장전 애니메이션이 동기화됩니다. Fabric의 미니건도 가상 탄약을 다시 사용할 수 있으면 사격을 재개합니다. 재고가 0이고 재생·재무장이 꺼졌다면 멈추는 것이 정상입니다.

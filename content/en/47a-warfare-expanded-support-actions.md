@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Combat support
 section: support
 status: Guide
-version: 0.3.2
+version: 0.3.3
 audience: Map creators and operators
 ---
 
@@ -82,3 +82,9 @@ DW combat takes priority when enemies interrupt movement; the advance resumes af
 Begin with staggered starts: **NPCs at zero seconds → vehicles at three → gun support at five**. Start order does not guarantee arrival order: navigation, physics, and combat still apply.
 
 Review [timing and the center](#dochi-warfare-expanded/expanded-support-timeline), then [save and run](#dochi-warfare-expanded/expanded-support-run). Temporary vehicles cannot be boarded, cloned, or captured in soul stones. Use the [vehicle editor](#dochi-warfare-expanded/expanded-overview) for ordinary vehicles you want to keep.
+
+## Selecting vehicle packs and B-2 support
+
+Vehicle, aircraft, weapon and payload lists depend on server installation and support type. Reselect weapons/payloads after changing aircraft. **B-2 / GBU-57** can be configured when AshVehicle is installed and the catalog allows that combination. Arbitrary aircraft/payload combinations are not supported.
+
+Fixed-wing support needs room to align an attack and depart. 0.3.3 targeting and bombing-route corrections do not guarantee hits over every terrain. Check [compatible vehicles](#dochi-warfare-expanded/expanded-compatibility) and test routes in Simulation first.

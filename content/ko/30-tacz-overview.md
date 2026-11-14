@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 개요
 section: overview
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: 총기 NPC 제작자
 tags:
   - TACZ
@@ -52,6 +52,6 @@ NPC용 여분 탄약은 **Ammo Stock**으로 정합니다. 보조손에 탄약�
 
 ## 지원 환경
 
-DW는 **Forge 1.20.1 / NeoForge 1.21.1**용입니다. TACZ와 클라이언트의 Player Animator가 필요합니다. 지원하는 PointBlank·SuperbWarfare 총기도 선택할 수 있으며, 그 모드를 설치했을 때 목록에서 고릅니다.
+DW 0.3.3는 **Forge 1.20.1 / NeoForge 1.21.1 / Fabric 1.21.1**을 지원합니다. Fabric에서는 TACZ Refabricated, Fabric API와 Forge Config API Port를 사용합니다. Player Animator는 Forge·NeoForge 클라이언트에서 필수이며 Fabric에서는 선택입니다.
 
 자세한 버전은 [설치 표](#dochi-warfare/warfare-setup)에 있습니다.

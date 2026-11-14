@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Appui au combat
 section: support
 status: Guide
-version: 0.3.2
+version: 0.3.3
 audience: Créateurs de cartes et opérateurs
 translationSource: en
 translationMethod: assisted
@@ -84,3 +84,9 @@ Le combat DW est prioritaire ; l’avancée reprend ensuite. Aucun téléport ne
 Commencez par **PNJ à zéro seconde → véhicules à trois → tirs à cinq**. L’ordre de départ ne garantit pas l’ordre d’arrivée : navigation, physique et combat restent actifs.
 
 Revoyez [horaires et centre](#dochi-warfare-expanded/expanded-support-timeline), puis [enregistrez et lancez](#dochi-warfare-expanded/expanded-support-run). Les véhicules temporaires ne permettent ni embarquement, ni clonage, ni capture par pierre d’âme. Utilisez [l’éditeur de véhicules](#dochi-warfare-expanded/expanded-overview) pour les véhicules permanents.
+
+## Choisir des packs de véhicules et l’appui B-2
+
+Les listes de véhicules, aéronefs, armes et charges dépendent du serveur et du type d’appui. Resélectionnez armes/charges après un changement d’aéronef. **B-2 / GBU-57** peut être configuré si AshVehicle est installé et si le catalogue autorise cette combinaison. Les combinaisons arbitraires ne sont pas prises en charge.
+
+L’appui à voilure fixe nécessite de l’espace pour aligner l’attaque et repartir. Les corrections de visée et de route 0.3.3 ne garantissent pas des impacts sur tous les terrains. Vérifiez [les véhicules compatibles](#dochi-warfare-expanded/expanded-compatibility) et testez les routes en Simulation.

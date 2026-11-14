@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Apoyo de combate
 section: support
 status: Guía
-version: 0.3.2
+version: 0.3.3
 audience: Creadores de mapas y operadores principiantes
 translationSource: en
 translationMethod: assisted
@@ -22,6 +22,7 @@ translationMethod: assisted
 | 1. Esta página | Conocer la pantalla, crear bombardeos de punto/línea/área y ajustar tiempo y centro |
 | 2. [Vehículos, armas y NPC](#dochi-warfare-expanded/expanded-support-actions) | Salidas/destinos, vehículos, armas y fuentes de NPC |
 | 3. [Guardar, simular y ejecutar](#dochi-warfare-expanded/expanded-support-run) | Guardar, cargar, probar con Simulation e invocar el archivo |
+| 4. [Llamar con un objeto táctico](#dochi-warfare-expanded/expanded-tactical-orders) | Vincular línea guardada → entregar objeto → jugador apunta |
 
 Las tres lecciones incluyen diez vídeos de **DWE 0.3.2 / NeoForge 1.21.1** con la interfaz real en inglés y explicaciones de pasos en coreano. No tienen audio: pausa para localizar cada control. Forge y Fabric comparten este flujo; la grabación es de NeoForge.
 

@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Operations
 section: operations
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: Operators
 tags:
   - troubleshooting
@@ -46,9 +46,9 @@ If this works, the addon and gun loop are fine. Add filters, finite ammo, moveme
 | Custom damage, knockback, or attack speed is not used | Check the `Gun Spec`/`Weapon Spec` or `Custom` selection and values in `Gun` and `Melee`. |
 | Better Combat weapon motion does not appear | Check Better Combat, Mob Player Animator, the NPC's `Better Combat Compatibility`, and registered attacks for the weapon. A vanilla main-hand swing is expected when the registered motion cannot be played. |
 | Custom attack speed is ignored during Better Combat compatibility | Compatibility locks timing to the weapon's effective `ATTACK_SPEED`. Disable `Better Combat Compatibility` to use a `Custom` attack speed. |
-| Patrol walks into a wall or pauses every step | Check `Default Walk Speed`, patrol points, vertical height, and A* reachability. Also confirm current 0.3.1 is installed on both client and server. |
+| Patrol walks into a wall or pauses every step | Check `Default Walk Speed`, patrol points, vertical height, and A* reachability. Also confirm current 0.3.3 is installed on both client and server. |
 | NPC attacks the wrong target | Clear entity ID filters, required tags, rejected tags, and same-faction tag rules, then re-add them gradually. |
-| NPC keeps showing the previous or wrong weapon | Confirm both sides use current 0.3.1, then save again. Verify the item is supported by its TACZ, PointBlank, or SuperbWarfare adapter and remove physical offhand ammo props. |
+| NPC keeps showing the previous or wrong weapon | Confirm both sides use current 0.3.3, then save again. Verify the item is supported by its TACZ, PointBlank, or SuperbWarfare adapter and remove physical offhand ammo props. |
 | `DW Pose Core` does not open the editor | Confirm Creative mode, a Steve/Alex CustomNPCs player model, a distance within 12 blocks, and that the core remains in either hand. |
 | A saved custom pose is not visible | In `DW Npc Core > Pose`, confirm that the action uses `Custom JSON` and the intended profile. The file must exist under `config/dochi_warfare/poses/`. |
 | Pool changes cannot be saved | Make the inline chance total `100%` or press `Equalize`. Editing one row does not automatically redistribute the others. |
@@ -56,9 +56,9 @@ If this works, the addon and gun loop are fine. Add filters, finite ammo, moveme
 | Visual alert icons are missing | Check the per-NPC `Alert Icons` setting and the client-side `dochi_warfare Config` marker visibility settings. |
 | GUI looks distorted | Adjust `GUI Scale` in vanilla video settings, then check the screen again. |
 | Cover never starts | Check global `[experimentalCover].enabled`, per-NPC `Enable Cover`, the individual trigger, combat phase, search radius, cooldown, and whether a reachable blast/shot-blocking position exists. |
-| Cover starts but the NPC never resumes fighting | Check `Max Duration`, `Hold Time`, peek settings, route reachability, and that current 0.3.1 is installed. Cover must protect both chest and head; the server retries another reachable candidate after an initial search failure. |
+| Cover starts but the NPC never resumes fighting | Check `Max Duration`, `Hold Time`, peek settings, route reachability, and that current 0.3.3 is installed. Cover must protect both chest and head; the server retries another reachable candidate after an initial search failure. |
 | Hire confirmation does not open | The NPC must be a DW-managed NPC with `Hire available` enabled. Use an empty hand or normal interaction item; `DW Npc Core`, `DW Mercenary Core`, and CustomNPCs interaction tools keep their own editor behavior. |
-| Mercenary GUI clicks or tooltips are offset | Use current 0.3.1 on both sides. The mercenary settings, confirmation screen, and command HUD use fit-to-viewport scaling and translated mouse coordinates. |
+| Mercenary GUI clicks or tooltips are offset | Use current 0.3.3 on both sides. The mercenary settings, confirmation screen, and command HUD use fit-to-viewport scaling and translated mouse coordinates. |
 | PointBlank gun is not accepted | Install exactly one supported branch, 1.11.1 or 2.1.0. If both are detected, the bridge disables itself. |
 | SuperbWarfare gun or vehicle is unavailable | Check the loader-specific supported versions in [setup](#dochi-warfare/warfare-setup). |
 | Vehicle AI is enabled but does not move | Remove player passengers, confirm the compatible SuperbWarfare version, movement mode, home/destination, and loaded terrain. Helicopters and fixed-wing aircraft need enough climb and turn space. |
@@ -106,7 +106,7 @@ For a failed one-block descent, confirm that a direct Route point uses the inten
 
 `Gun Spec` preserves the operated gun's native damage behavior, while `Custom` applies the supported DW override for this NPC. Melee `Weapon Spec` uses item attributes; melee `Custom` can independently set damage, knockback, and attacks per second. Switch one policy at a time when isolating an unexpected result.
 
-Enabling `Better Combat Compatibility` locks attack speed to the held item's effective `ATTACK_SPEED`, and `Overview` shows `Weapon Spec (locked)`. If weapon attributes fail to apply on an older build, update both client and server to current 0.3.1 before testing again.
+Enabling `Better Combat Compatibility` locks attack speed to the held item's effective `ATTACK_SPEED`, and `Overview` shows `Weapon Spec (locked)`. If weapon attributes fail to apply on an older build, update both client and server to current 0.3.3 before testing again.
 
 ## Weapon switching and melee animation problems
 

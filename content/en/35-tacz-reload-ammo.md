@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Ammo
 section: ammo
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: Firearm NPC creators
 tags:
   - reload
@@ -130,3 +130,7 @@ The GUI is the primary setup path, but script users can also work with bridge va
 | `tacznpcfire.combat.fallbackToUnarmed` | Allows unarmed fallback when no melee weapon is available. |
 
 Use storeddata only when the encounter really needs script-side changes. For normal NPC authoring, keep the values in the per-NPC GUI so other creators can inspect them visually.
+
+## Checking resupply in 0.3.2
+
+Finite Ammo Stock still applies to reloads after resupply. 0.3.2 fixes unexpected reserve loss after the first resupply and synchronizes reload animations when joining or returning to NPC tracking range. Fabric miniguns resume firing when virtual ammunition becomes available again. Stopping at zero reserves remains normal when regeneration/rearming is disabled.

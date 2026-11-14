@@ -7,7 +7,7 @@ product: dochi-warfare
 category: 월드 도구
 section: tools
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: 서버 운영자와 맵 제작자
 tags:
   - server
@@ -41,7 +41,7 @@ tags:
 
 ## 차량과 폭격 지원 연결
 
-차량 AI의 전역 정책은 **DWE 0.3.2**이 따로 관리합니다. NPC 정책을 바꿨다고 차량의 모든 동작까지 같은 방식으로 바뀌지는 않습니다. 차량 정책 파일은 `config/dochi_warfare/vehicle_ai/server-ai.json`입니다.
+차량 AI의 전역 정책은 **DWE 0.3.3**이 따로 관리합니다. NPC 정책을 바꿨다고 차량의 모든 동작까지 같은 방식으로 바뀌지는 않습니다. 차량 정책 파일은 `config/dochi_warfare/vehicle_ai/server-ai.json`입니다.
 
 폭격·기총 지원·차량 증원·NPC 이동은 [DWE 지원 타임라인](#dochi-warfare-expanded/expanded-support-timeline)에서 만듭니다.
 

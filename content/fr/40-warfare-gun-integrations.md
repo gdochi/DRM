@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Gun Intégrations
 section: integrations
 status: Projet
-version: 0.3.1
+version: 0.3.3
 audience: Firearm PNJ Créateurs
 tags:
   - TACZ
@@ -17,7 +17,7 @@ translationSource: en
 translationMethod: assisted
 ---
 
-Constructions actuelles: DW 0.3.1 pour Forge 1.20.1 et DW 0.3.1 pour NeoForge 1.21.1. L'IA du véhicule sur les deux chargeurs nécessite l'addon DWE 0.3.1 séparé. Vérifiez l'installation spécifique à [loader](#dochi-warfare/warfare-setup) pour les dépendances externes pistolet/véhicule.
+DW 0.3.3 prend en charge Forge 1.20.1, NeoForge 1.21.1 et Fabric 1.21.1. Les véhicules nécessitent DWE et SuperbWarfare. Consultez [l’installation par loader](#dochi-warfare/warfare-setup) pour les dépendances externes.
 
 ## Donnez à un PNJ une arme d'un autre mod
 
@@ -31,11 +31,11 @@ DW contrôle qui le PNJ détecte et quand il se déclenche ou se recharge. Le mo
 
 | Système d'arme | Besoins | Comportement natif retenu |
 | --- | --- | --- |
-| TACZ | Requis 1.1.8 dans la plage prise en charge 1.1.x | Tir, état du canon, état de rechargement, RPM, museau/effets et persistance de la pile |
+| TACZ | Forge/NeoForge : intégrations TaCZ existantes et 1.2.0. Fabric : TACZ Refabricated 0.7.1 et 1.2.0 | Tir, état du canon, état de rechargement, RPM, museau/effets et persistance de la pile |
 | PointBlank | Facultatif 1.11.1 ou 2.1.0; installer exactement un | Projectile ou hitscan natif, rayons multi-pellet, headshots, falloff, phases de rechargement, sons et rendu |
 | SuperbWarfare | Forge 0.8.9 / 0.8.9.1 / 0.8.9.2; NeoForge 0.8.9.1 / 0.8.9.2 | Tir natif, rechargement, boulon, projectile, son, chaleur, recul, durabilité, modèles, accessoires et persistance |
 
-TACZ et Player Animator restent la base d'exécution et d'animation même lorsque l'élément géré provient de PointBlank ou SuperbWarfare.
+Un mod de la famille TACZ reste requis. Player Animator est requis sur les clients Forge/NeoForge et facultatif sur Fabric. Utilisez PointBlank/SuperbWarfare uniquement si une version compatible existe pour votre Minecraft et votre loader.
 
 :::warning Version gates
 Il suffit d'installer une branche PointBlank prise en charge : 1.11.1 ou 2.1.0. Utilisez les versions SuperbWarfare spécifiques au chargeur ci-dessus.
@@ -43,7 +43,7 @@ Il suffit d'installer une branche PointBlank prise en charge : 1.11.1 ou 2.1.0. 
 
 ## Configurer un canon externe
 
-1. Confirmer qu'un TACZ 1.1.8 simple pistolet fonctionne sur le PNJ.
+1. Vérifiez d’abord le tir du PNJ avec une arme TACZ ou TACZ Refabricated ordinaire compatible avec votre loader.
 2. Installez exactement une version de mod d'arme à feu optionnelle prise en charge des deux côtés.
 3. Mettez l'objet natif dans l'inventaire du créateur.
 4. Ouvrez le PNJ avec `DW Npc Core` et sélectionnez l'élément dans `Gun`. Pour plusieurs armes à feu, faites au total des chances de pool 100% ou appuyez sur `Even`.

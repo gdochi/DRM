@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Herramientas del mundo
 section: tools
 status: Proyecto
-version: 0.3.1
+version: 0.3.3
 audience: Operadores de servidores y cartógrafos
 tags:
   - server
@@ -43,7 +43,7 @@ Deshabilitar una característica retiene los valores NPC para su reutilización 
 
 ## Vehículos y secuencias de apoyo
 
-**DWE 0.3.2** gestiona la política global de la IA del vehículo por separado. Cambiar la política de NPC no aplica todos los cambios al comportamiento del vehículo. La política del vehículo se almacena en `config/dochi_warfare/vehicle_ai/server-ai.json`.
+**DWE 0.3.3** gestiona la política global de la IA del vehículo por separado. Cambiar la política de NPC no aplica todos los cambios al comportamiento del vehículo. La política del vehículo se almacena en `config/dochi_warfare/vehicle_ai/server-ai.json`.
 
 Construir bombardeo, ametrallamiento, refuerzos de vehículos y movimiento NPC en la línea de tiempo de apoyo [DWE](#dochi-warfare-expanded/expanded-support-timeline).
 

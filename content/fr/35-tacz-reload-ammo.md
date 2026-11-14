@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Immo
 section: ammo
 status: Projet
-version: 0.3.1
+version: 0.3.3
 audience: Firearm PNJ Créateurs
 tags:
   - reload
@@ -132,3 +132,7 @@ L'interface graphique est le chemin d'installation principal, mais les utilisate
 | `tacznpcfire.combat.fallbackToUnarmed` | Permet un repli désarmé lorsqu'aucune arme de mêlée n'est disponible. |
 
 Utilisez les données stockées uniquement lorsque la rencontre a vraiment besoin de modifications côté script. Pour la création normale de PNJ, conservez les valeurs dans l'interface graphique par PNJ afin que les autres créateurs puissent les inspecter visuellement.
+
+## Vérifier le ravitaillement en 0.3.2
+
+Ammo Stock limité reste applicable après ravitaillement. La 0.3.2 corrige la perte inattendue de réserves après le premier ravitaillement et synchronise le rechargement à la connexion ou au retour à portée du PNJ. Les miniguns Fabric reprennent le tir lorsque les munitions virtuelles sont disponibles. Un arrêt à réserve nulle reste normal sans régénération/réarmement.

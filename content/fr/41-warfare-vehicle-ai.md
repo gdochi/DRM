@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Véhicule AI
 section: vehicles
 status: Projet
-version: 0.3.2
+version: 0.3.3
 audience: Créateurs et opérateurs de scénarios
 tags:
   - SuperbWarfare
@@ -17,7 +17,7 @@ translationSource: en
 translationMethod: assisted
 ---
 
-**DWE 0.3.2** fournit les véhicules sur Forge 1.20.1, NeoForge 1.21.1 et Fabric 1.21.1. Voir [installation et fichiers](#dochi-warfare-expanded/expanded-overview), [réactions](#dochi-warfare-expanded/expanded-vehicle-gimmicks) et la [timeline remaniée](#dochi-warfare-expanded/expanded-support-timeline).
+**DWE 0.3.3** fournit les véhicules sur Forge 1.20.1, NeoForge 1.21.1 et Fabric 1.21.1. Voir [installation et fichiers](#dochi-warfare-expanded/expanded-overview), [réactions](#dochi-warfare-expanded/expanded-vehicle-gimmicks) et la [timeline remaniée](#dochi-warfare-expanded/expanded-support-timeline).
 
 DW reste le noyau obligatoire. Les API utilisées sont vérifiées sans imposer des numéros DW/DWE identiques. Voir [installation par chargeur](#dochi-warfare/warfare-setup) pour les dépendances externes.
 
@@ -121,3 +121,13 @@ Les commandes nécessitent une autorisation de niveau 2. Regardez directement un
 ```
 
 L'interface graphique est le flux de travail du créateur principal. Les commandes sont destinées à des opérations en direct, des commandes rapides et des diagnostics d'état.
+
+## Dégâts aux composants des véhicules terrestres
+
+La 0.3.3 réagit aux pannes natives des véhicules terrestres à roues/chenilles contrôlés par l’IA DWE. Cette politique ne concerne pas les bateaux ni les aéronefs.
+
+- Des roues/chenilles endommagées arrêtent déplacement, retraite et dégagement ; les armes utilisables continuent de défendre. La réparation rétablit les décisions de déplacement.
+- Une tourelle en panne exclut ses armes principales/coaxiales. Les armes secondaires indépendantes restent soumises à l’activation, l’équipage, les munitions et la portée.
+- Une panne du moteur principal/auxiliaire évacue conducteurs, tireurs et passagers PNJ après un arrêt sûr à faible vitesse. Les joueurs ne sont pas expulsés. Si les sorties sont bloquées, les occupants attendent une sortie sûre.
+
+Les PNJ s’éloignent brièvement de la menace si une destination sûre existe. Le réembarquement automatique est retardé de 30 secondes. Après évacuation, réparez le véhicule et embarquez un nouvel équipage pour le récupérer. Cela diffère de **NPC combat dismount**, limité aux passagers. Les patrouilles et règles d’armes enregistrées sont conservées.

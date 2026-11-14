@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: 전투 지원
 section: support
 status: 사용 안내
-version: 0.3.2
+version: 0.3.3
 audience: 맵 제작자와 운영자
 ---
 
@@ -82,3 +82,9 @@ Area는 **실행 시점의 출발점 중심 구**를 사용합니다. 탑승·�
 첫 시험은 **0초 NPC → 3초 차량 → 5초 기총**처럼 시작을 나눕니다. 시작 순서가 도착 순서를 보장하지 않습니다. 실제 경로·물리·전투에 따라 달라집니다.
 
 [시간·중심점](#dochi-warfare-expanded/expanded-support-timeline)을 정리한 뒤 [저장·실행](#dochi-warfare-expanded/expanded-support-run)으로 넘어가세요. 임시 지원 차량의 탑승·클론 저장·소울스톤 포획은 제한됩니다. 보관할 일반 차량에는 [차량 편집기](#dochi-warfare-expanded/expanded-overview)를 사용합니다.
+
+## 차량 팩과 B-2 지원 선택
+
+차량·기체·무장·폭탄 목록은 서버 설치 내용과 지원 방식에 따라 달라집니다. 기체를 바꾸면 사용할 무장과 폭탄을 다시 선택하세요. AshVehicle이 설치되어 카탈로그에서 허용되는 경우 **B-2 / GBU-57**도 구성할 수 있습니다. 임의 기체에 임의 폭탄을 붙이는 기능은 아닙니다.
+
+고정익은 표적에 정렬한 공격 진입과 이탈 공간이 필요합니다. 0.3.3의 조준·폭격 경로 보완이 모든 지형에서 명중을 보장하지는 않습니다. [호환 기종](#dochi-warfare-expanded/expanded-compatibility)을 확인하고 Simulation으로 경로를 먼저 시험하세요.

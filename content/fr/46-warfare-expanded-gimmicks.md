@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Véhicules
 section: vehicles
 status: Projet
-version: 0.3.2
+version: 0.3.3
 audience: Créateurs de combat
 translationSource: en
 translationMethod: assisted
@@ -53,3 +53,7 @@ Les démontages de combat affectent les passagers de transport existants DNPC ou
 Un gadget de bombardement de véhicule contrôle un avion d'IA existant: `LEVEL` pour les attaques de précision de niveau, `DIVE` pour les attaques de plongée et `CARPET` pour les chutes de zone répétées. Les armes natives, les munitions, le RPM et la physique du vol s'appliquent toujours.
 
 Pour appeler des avions temporaires ou des renforts aux heures prévues, utilisez les [calendrier de soutien](#dochi-warfare-expanded/expanded-support-timeline).
+
+## Évacuation du moteur et débarquement de combat
+
+**NPC combat dismount** est la réaction des passagers décrite ci-dessus. L’évacuation pour panne moteur de la 0.3.3 est distincte et concerne aussi conducteurs et tireurs. Consultez [les dégâts aux composants](#dochi-warfare/warfare-vehicle-ai) pour les conditions d’arrêt, de sortie et de récupération.

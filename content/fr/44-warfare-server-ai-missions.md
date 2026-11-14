@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Outils du monde
 section: tools
 status: Projet
-version: 0.3.1
+version: 0.3.3
 audience: Opérateurs de serveurs et cartographes
 tags:
   - server
@@ -43,7 +43,7 @@ La désactivation d'une fonctionnalité conserve les valeurs PNJ pour réutilisa
 
 ## Véhicules et séquences de soutien
 
-**DWE 0.3.2** gère la politique globale de l'IA des véhicules séparément. La modification de la politique PNJ ne s'applique pas à chaque modification du comportement du véhicule. La politique du véhicule est stockée en `config/dochi_warfare/vehicle_ai/server-ai.json`.
+**DWE 0.3.3** gère la politique globale de l'IA des véhicules séparément. La modification de la politique PNJ ne s'applique pas à chaque modification du comportement du véhicule. La politique du véhicule est stockée en `config/dochi_warfare/vehicle_ai/server-ai.json`.
 
 Construisez des bombardements, des mitraillages, des renforts de véhicules et des mouvements PNJ dans la chronologie de soutien [DWE ](#dochi-warfare-expanded/expanded-support-timeline).
 

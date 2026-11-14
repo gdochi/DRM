@@ -7,13 +7,13 @@ product: dochi-warfare-expanded
 category: 설치와 시작
 section: overview
 status: 사용 안내
-version: 0.3.2
+version: 0.3.3
 audience: 서버 운영자 / 제작자
 ---
 
 ## 차량 팩 고르기
 
-DWE 0.3.2에서도 차량 팩은 기종·무장별로 확인합니다. 아래 표는 **DW·DWE 0.3.1 당시의 이동·사격·재장전 확인 이력**이며 Fabric 전체의 지원 판정을 뜻하지 않습니다. 0.3.2의 월드 편집기·시뮬레이션은 Forge 1.20.1과 Fabric 1.21.1에서 별도로 확인했고, 이 튜토리얼 영상은 NeoForge 1.21.1로 촬영했습니다.
+DWE 0.3.3에서도 차량 팩은 기종·무장별로 확인합니다. 아래 표는 **DW·DWE 0.3.1 당시의 이동·사격·재장전 확인 이력**이며 Fabric 전체의 지원 판정을 뜻하지 않습니다. 0.3.2의 월드 편집기·시뮬레이션은 Forge 1.20.1과 Fabric 1.21.1에서 별도로 확인했고, 이 튜토리얼 영상은 NeoForge 1.21.1로 촬영했습니다.
 
 | 차량 팩 | Minecraft / 로더 | 기종 |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ DWE 0.3.2에서도 차량 팩은 기종·무장별로 확인합니다. 아래 �
 | Frontline Combat Pack | Forge 1.20.1 | BMP-2 |
 | Spectacular Machines Addon | Forge 1.20.1 | Type 10 |
 
-DWE 0.3.2와 호환 DW를 함께 사용합니다. DW는 필수이며 두 모드의 버전 번호를 맞추는 조건은 없습니다. [첫 차량 설정](#dochi-warfare-expanded/expanded-overview)에서 운전수·포수와 탄약을 정하세요.
+DWE 0.3.3와 호환 DW를 함께 사용합니다. DW는 필수이며 두 모드의 버전 번호를 맞추는 조건은 없습니다. [첫 차량 설정](#dochi-warfare-expanded/expanded-overview)에서 운전수·포수와 탄약을 정하세요.
 
 ## 피해야 할 조합
 
@@ -42,3 +42,9 @@ AH-6의 지상 표적 사격과 F-22의 고정 무장 조준, 불러오지 못�
 차량 팩을 설치했으면 **Crew**에서 실제 좌석과 역할부터 확인하세요. 탑승 공급원과 무장별 승무원 조건은 [차량 AI](#dochi-warfare/warfare-vehicle-ai)에서 이어집니다.
 
 ![Crew에서 본 SuperbWarfare 기본 M1A2의 다섯 좌석.](assets/media/guides/warfare-expanded-031-neo1211/dwe-crew.png "DWE 0.3.1 / NeoForge 1.21.1. 번호를 누르면 오른쪽에 그 좌석의 역할과 탑승 상태가 나옵니다. 이 사진은 빈 좌석 지도이며 NPC 탑승을 완료한 결과는 아닙니다. MCSP M1A2와는 다른 기본 SuperbWarfare 차량입니다.")
+
+## 0.3.3 지원 요청에 차량 팩 사용하기
+
+증원·기총 지원·폭격의 선택 목록은 서버에 실제 설치된 차량 데이터와 무장 조건으로 구성됩니다. 팩 이름만으로 모든 차량과 무장을 지원한다고 판단하지 마세요. 목록에서 기체를 고른 뒤 실제 무장·폭탄 선택을 다시 확인합니다.
+
+AshVehicle이 설치된 경우 호환되는 **B-2 / GBU-57** 조합으로 지원을 구성할 수 있습니다. 이 기능을 쓰기 위해 모든 사용자에게 AshVehicle이 필요한 것은 아닙니다. 최신 DWE에는 SuperbWarfare와 AshVehicle을 함께 설치한 월드에 들어갈 때의 클라이언트 호환 처리가 포함됩니다. 위 0.3.1 확인 표가 B-2나 Fabric 전체 검증으로 확대되는 것은 아닙니다.

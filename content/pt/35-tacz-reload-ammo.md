@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Ammo.
 section: ammo
 status: Rascunho
-version: 0.3.1
+version: 0.3.3
 audience: Criadores de NPC de armas de fogo
 tags:
   - reload
@@ -132,3 +132,7 @@ A GUI é o caminho de configuração principal, mas os usuários de script tamb�
 | `tacznpcfire.combat.fallbackToUnarmed` | Permite que caiam desarmados quando nenhuma arma corpo a corpo está disponível. |
 
 Use os dados armazenados somente quando o encontro realmente precisar de alterações no lado do script. Para a criação normal de NPC, mantenha os valores na GUI por NPC para que outros criadores possam inspecioná-los visualmente.
+
+## Conferir o reabastecimento na 0.3.2
+
+Ammo Stock finito continua valendo após reabastecer. A 0.3.2 corrige a perda inesperada de reservas após o primeiro reabastecimento e sincroniza a animação de recarga ao entrar ou voltar ao alcance do NPC. No Fabric, miniguns retomam o disparo quando a munição virtual fica disponível. Parar com reserva zero é normal sem regeneração/rearme.

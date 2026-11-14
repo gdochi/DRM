@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Combat AI
 section: combat-ai
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: Encounter designers
 tags:
   - cover

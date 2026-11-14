@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Vehicle AI
 section: vehicles
 status: Draft
-version: 0.3.2
+version: 0.3.3
 audience: Scenario creators and operators
 tags:
   - SuperbWarfare
@@ -15,7 +15,7 @@ tags:
   - ai
 ---
 
-**DWE 0.3.2** provides vehicle features on Forge 1.20.1, NeoForge 1.21.1, and Fabric 1.21.1. See [setup and files](#dochi-warfare-expanded/expanded-overview), [vehicle reactions](#dochi-warfare-expanded/expanded-vehicle-gimmicks), and the [redesigned timeline](#dochi-warfare-expanded/expanded-support-timeline).
+**DWE 0.3.3** provides vehicle features on Forge 1.20.1, NeoForge 1.21.1, and Fabric 1.21.1. See [setup and files](#dochi-warfare-expanded/expanded-overview), [vehicle reactions](#dochi-warfare-expanded/expanded-vehicle-gimmicks), and the [redesigned timeline](#dochi-warfare-expanded/expanded-support-timeline).
 
 DW remains the required core. Compatibility is checked against the actual DW APIs used, without requiring matching DW/DWE version numbers. See [loader-specific setup](#dochi-warfare/warfare-setup) for external gun/vehicle dependencies.
 
@@ -119,3 +119,13 @@ Commands require permission level 2. Look directly at a SuperbWarfare vehicle wi
 ```
 
 The GUI is the primary creator workflow. Commands are intended for live operation, quick orders, and status diagnostics.
+
+## Ground vehicle component damage
+
+0.3.3 reacts to native component failures on wheel/track ground vehicles controlled by DWE AI. This ground policy does not apply to boats or aircraft.
+
+- Damaged wheels/tracks stop movement, retreat and stuck recovery while usable weapons defend. Repair restores normal movement decisions.
+- A failed turret excludes its main/coaxial weapons. Independent secondary weapons still need normal enablement, crew, ammo and range conditions.
+- Main/auxiliary engine failure triggers NPC driver, gunner and passenger evacuation after a safe low-speed stop. Players are not forced out. Blocked exits keep occupants aboard until a safe exit becomes available.
+
+NPCs briefly move away from the threat when a safe destination exists. Automatic reboarding has a 30-second grace period. After crew evacuation, repair the vehicle and board replacement crew to recover it. Engine-failure evacuation is separate from passenger-only **NPC combat dismount**. Saved patrol and weapon settings remain available.

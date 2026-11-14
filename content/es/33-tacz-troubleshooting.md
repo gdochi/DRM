@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Operaciones
 section: operations
 status: Proyecto
-version: 0.3.1
+version: 0.3.3
 audience: Operadores
 tags:
   - troubleshooting
@@ -48,9 +48,9 @@ Si esto funciona, el addon y el bucle del arma están bien. Agregue filtros, mun
 | No se utiliza daño personalizado, retroceso o velocidad de ataque | Compruebe la selección y los valores de `Gun Spec`/`Weapon Spec` o `Custom` en `Gun` y `Melee`. |
 | No aparece el movimiento del arma Better Combat | Revisa Better Combat, la criatura Player Animator, los NPC's `Better Combat Compatibility`, y registra los ataques para el arma. Se espera un swing vainilla mano principal cuando el movimiento registrado no se puede reproducir. |
 | La velocidad de ataque personalizada se ignora durante la compatibilidad con Better Combat | La compatibilidad bloquea el tiempo al efectivo del arma `ATTACK_SPEED`. Desactivar `Better Combat Compatibility` para usar una velocidad de ataque `Custom`. |
-| Patrulla entra en una pared o hace una pausa a cada paso | Verifique `Default Walk Speed`, puntos de patrulla, altura vertical y accesibilidad A . También confirme que 0.3.1 está instalado tanto en el cliente como en el servidor. |
+| Patrulla entra en una pared o hace una pausa a cada paso | Verifique `Default Walk Speed`, puntos de patrulla, altura vertical y accesibilidad A . También confirme que 0.3.3 está instalado tanto en el cliente como en el servidor. |
 | NPC ataca el objetivo equivocado | Limpie los filtros de ID de entidad, las etiquetas requeridas, las etiquetas rechazadas y las reglas de etiqueta de la misma facción, luego vuelva a agregarlas gradualmente. |
-| NPC sigue mostrando el arma anterior o incorrecta | Confirme que ambos lados usan la corriente 0.3.1, luego guarde de nuevo. Verifique que el elemento sea compatible con su adaptador TACZ, PointBlank o SuperbWarfare y elimine los accesorios físicos de munición improvisada. |
+| NPC sigue mostrando el arma anterior o incorrecta | Confirme que ambos lados usan la corriente 0.3.3, luego guarde de nuevo. Verifique que el elemento sea compatible con su adaptador TACZ, PointBlank o SuperbWarfare y elimine los accesorios físicos de munición improvisada. |
 | `DW Pose Core` no abre el editor | Confirmar el modo Creativo, un modelo de jugador Steve/Alex CustomNPCs, una distancia dentro de 12 bloques, y que el núcleo permanezca en cada mano. |
 | Una pose personalizada guardada no es visible | En `DW Npc Core > Pose`, confirme que la acción utiliza `Custom JSON` y el perfil previsto. El archivo debe existir bajo `config/dochi_warfare/poses/`. |
 | Los cambios de grupo no se pueden guardar | Haga que la probabilidad en línea sea total `100%` o presione `Equalize`. La edición de una fila no redistribuye automáticamente las otras. |
@@ -58,9 +58,9 @@ Si esto funciona, el addon y el bucle del arma están bien. Agregue filtros, mun
 | Faltan iconos de alerta visual | Compruebe la configuración por NPC `Alert Icons` y la configuración de visibilidad del marcador del lado del cliente `dochi_warfare Config`. |
 | La GUI parece distorsionada | Ajuste `GUI Scale` en la configuración de vídeo de vainilla y, a continuación, vuelva a comprobar la pantalla. |
 | La cubierta nunca comienza | Compruebe global `[experimentalCover].enabled`, por NPC `Enable Cover`, el disparador individual, la fase de combate, el radio de búsqueda, el tiempo de reutilización y si existe una posición de bloqueo de ráfaga / disparo alcanzable. |
-| La portada comienza, pero el NPC nunca reanuda la lucha | Compruebe `Max Duration`, `Hold Time`, la configuración de peek, la accesibilidad de la ruta, y que el 0.3.1 actual está instalado. Cover debe proteger tanto el pecho como la cabeza; el servidor vuelve a intentar otro candidato accesible después de un error de búsqueda inicial. |
+| La portada comienza, pero el NPC nunca reanuda la lucha | Compruebe `Max Duration`, `Hold Time`, la configuración de peek, la accesibilidad de la ruta, y que el 0.3.3 actual está instalado. Cover debe proteger tanto el pecho como la cabeza; el servidor vuelve a intentar otro candidato accesible después de un error de búsqueda inicial. |
 | La confirmación de alquiler no se abre | El NPC debe ser un NPC administrado por DW con `Hire available` habilitado. Utilice una mano vacía o un elemento de interacción normal; `DW Npc Core`, `DW Mercenary Core` y CustomNPCs las herramientas de interacción mantienen su propio comportamiento de editor. |
-| Los clics o las sugerencias de herramientas de la GUI Mercenaria se compensan | Utilice la corriente 0.3.1 en ambos lados. La configuración de mercenarios, la pantalla de confirmación y el comando HUD utilizan el escalado fit-to-viewport y las coordenadas traducidas del mouse. |
+| Los clics o las sugerencias de herramientas de la GUI Mercenaria se compensan | Utilice la corriente 0.3.3 en ambos lados. La configuración de mercenarios, la pantalla de confirmación y el comando HUD utilizan el escalado fit-to-viewport y las coordenadas traducidas del mouse. |
 | PointBlank El arma no es aceptada | Instale exactamente una rama compatible, 1.11.1 o 2.1.0. Si se detectan ambos, el puente se desactiva por sí mismo. |
 | SuperbWarfare el arma o vehículo no está disponible | Compruebe las versiones compatibles específicas del cargador en [setup](#dochi-warfare/warfare-setup). |
 | Vehículo AI está habilitado pero no se mueve | Retire los pasajeros del jugador, confirme la versión compatible SuperbWarfare, el modo de movimiento, el hogar / destino y el terreno cargado. Los helicópteros y aviones de ala fija necesitan suficiente espacio para subir y girar. |
@@ -108,7 +108,7 @@ Para un descenso fallido de un bloque, confirme que un punto de ruta directo uti
 
 `Gun Spec` preserva el comportamiento de daño nativo de la pistola operada, mientras que `Custom` aplica la anulación de DW compatible para este NPC. El combate cuerpo a cuerpo `Weapon Spec` usa atributos de objeto; el combate cuerpo a cuerpo `Custom` puede establecer daño, retroceso y ataques por segundo de forma independiente. Cambiar una política a la vez cuando se aísla un resultado inesperado.
 
-Habilitar `Better Combat Compatibility` bloquea la velocidad de ataque al elemento retenido `ATTACK_SPEED`, y `Overview` muestra `Weapon Spec (locked)`. Si los atributos de arma no se aplican en una compilación anterior, actualice tanto el cliente como el servidor a 0.3.1 actual antes de volver a probar.
+Habilitar `Better Combat Compatibility` bloquea la velocidad de ataque al elemento retenido `ATTACK_SPEED`, y `Overview` muestra `Weapon Spec (locked)`. Si los atributos de arma no se aplican en una compilación anterior, actualice tanto el cliente como el servidor a 0.3.3 actual antes de volver a probar.
 
 ## Cambio de armas y problemas de animación cuerpo a cuerpo
 

@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Ferramentas do Mundo
 section: tools
 status: Rascunho
-version: 0.3.1
+version: 0.3.3
 audience: Criadores de cenários
 tags:
   - clone

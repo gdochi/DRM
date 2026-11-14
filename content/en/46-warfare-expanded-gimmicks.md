@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Vehicles
 section: vehicles
 status: Draft
-version: 0.3.2
+version: 0.3.3
 audience: Combat creators
 ---
 
@@ -51,3 +51,7 @@ Combat dismounts affect existing DNPC or CustomNPCs transport passengers on whee
 A vehicle bombing gimmick controls an existing AI aircraft: `LEVEL` for level precision attacks, `DIVE` for dive attacks, and `CARPET` for repeated area drops. Native weapons, ammunition, RPM, and flight physics still apply.
 
 To call temporary aircraft or reinforcements at scheduled times, use the separate [support timeline](#dochi-warfare-expanded/expanded-support-timeline).
+
+## Engine evacuation versus combat dismount
+
+**NPC combat dismount** is the transport-passenger reaction described above. Engine-failure evacuation in 0.3.3 is separate and also includes drivers and gunners. See [vehicle component damage](#dochi-warfare/warfare-vehicle-ai) for stop, exit and recovery conditions.

@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Targets
 section: targets
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: Encounter designers
 tags:
   - target

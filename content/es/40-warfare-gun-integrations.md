@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Integraciones de armas
 section: integrations
 status: Proyecto
-version: 0.3.1
+version: 0.3.3
 audience: Creadores de PNJ con armas de fuego
 tags:
   - TACZ
@@ -17,7 +17,7 @@ translationSource: en
 translationMethod: assisted
 ---
 
-Construcción actual: DW 0.3.1 para Forge 1.20.1 y DW 0.3.1 para NeoForge 1.21.1. La IA del vehículo en ambos cargadores requiere el complemento DWE 0.3.1 separado. Compruebe la instalación específica de [loader](#dochi-warfare/warfare-setup) para las dependencias externas del cañón/vehículo.
+DW 0.3.3 admite Forge 1.20.1, NeoForge 1.21.1 y Fabric 1.21.1. Los vehículos requieren DWE y SuperbWarfare. Consulta la [instalación por loader](#dochi-warfare/warfare-setup) para las dependencias externas.
 
 ## Dale a un NPC un arma de otro mod
 
@@ -31,11 +31,11 @@ DW controla a quién detecta el NPC y cuándo dispara o recarga. El arma origina
 
 | Sistema de armas | Requisito | Comportamiento nativo retenido |
 | --- | --- | --- |
-| TACZ | Requerido 1.1.8 en el rango soportado 1.1.x | Disparo, estado del arma, estado de recarga, RPM, bozal/efectos y persistencia de la pila |
+| TACZ | Forge/NeoForge: integraciones TaCZ existentes y 1.2.0. Fabric: TACZ Refabricated 0.7.1 y 1.2.0 | Disparo, estado del arma, estado de recarga, RPM, bozal/efectos y persistencia de la pila |
 | PointBlank | Opcional 1.11.1 o 2.1.0; instale exactamente uno | Proyectil nativo o escaneo de impactos, rayos de múltiples pellets, disparos a la cabeza, caída, fases de recarga, sonidos y renderizador |
 | SuperbWarfare | Forge 0.8.9 / 0.8.9.1 / 0.8.9.2; NeoForge 0.8.9.1 / 0.8.9.2 | Disparo nativo, recarga, perno, proyectil, sonido, calor, retroceso, durabilidad, modelos, accesorios y persistencia |
 
-TACZ y Player Animator siguen siendo la línea base de tiempo de ejecución y animación incluso cuando el elemento administrado proviene de PointBlank o SuperbWarfare.
+Sigue siendo obligatorio un mod de la familia TACZ. Player Animator es obligatorio en clientes Forge/NeoForge y opcional en Fabric. Usa PointBlank/SuperbWarfare solo si existe una versión compatible con el Minecraft y loader usados.
 
 :::warning Puertas de versión
 Instalar una rama PointBlank compatible: 1.11.1 o 2.1.0. Utilice las versiones específicas de cargador SuperbWarfare anteriores.
@@ -43,7 +43,7 @@ Instalar una rama PointBlank compatible: 1.11.1 o 2.1.0. Utilice las versiones e
 
 ## Configurar un arma externa
 
-1. Confirme que un arma simple TACZ 1.1.8 funciona en el NPC.
+1. Comprueba primero el disparo básico del NPC con un arma TACZ o TACZ Refabricated común compatible con tu loader.
 2. Instale exactamente una versión opcional del mod de arma compatible en ambos lados.
 3. Pon el arma nativa en el inventario del creador.
 4. Abra el NPC con `DW Npc Core` y seleccione el elemento en `Gun`. Para múltiples armas, haz que las posibilidades de la piscina sean totales 100% o presiona `Even`.

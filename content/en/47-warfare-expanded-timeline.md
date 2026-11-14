@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Combat support
 section: support
 status: Guide
-version: 0.3.2
+version: 0.3.3
 audience: First-time map creators and operators
 ---
 
@@ -20,6 +20,7 @@ audience: First-time map creators and operators
 | 1. This page | Learn the workspace, place point/line/area bombing, edit timing and center |
 | 2. [Vehicle, gun, and NPC support](#dochi-warfare-expanded/expanded-support-actions) | Set departure/destination, vehicles, weapons, and NPC sources |
 | 3. [Save, simulate, and run](#dochi-warfare-expanded/expanded-support-run) | Save and reload, test with Simulation, then invoke the saved file |
+| 4. [Call through a tactical item](#dochi-warfare-expanded/expanded-tactical-orders) | Link the saved timeline → issue an item → player targeting |
 
 Ten videos sit beside the relevant steps across these lessons. They show **actual DWE 0.3.2 / NeoForge 1.21.1 screens**, English controls, and Korean step captions. The videos are silent; pause to find the matching control and enter each value. Forge and Fabric share this editing flow; the recordings are from NeoForge.
 

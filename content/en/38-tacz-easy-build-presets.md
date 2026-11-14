@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Setup Tools
 section: setup
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: Firearm NPC creators
 tags:
   - easy-build

@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Poses
 section: combat-ai
 status: Rascunho
-version: 0.3.1
+version: 0.3.3
 audience: Criadores de NPC
 tags:
   - pose

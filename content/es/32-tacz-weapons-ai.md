@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Combat AI
 section: combat-ai
 status: Proyecto
-version: 0.3.1
+version: 0.3.3
 audience: Creadores de PNJ con armas de fuego
 tags:
   - weapon
@@ -142,7 +142,7 @@ TACZ siempre es la línea base de la postura y la animación. Los adaptadores op
 
 `Melee` lee artículos no-TACZ del inventario del jugador. La integración de Better Combat no guarda un ID de animación de reemplazo. En el momento del ataque, resuelve el conjunto de ataque y posa realmente registrado para el arma retenida. El soporte de ataque cuerpo a cuerpo con la mano vacía también está disponible para configuraciones con capacidad cuerpo a cuerpo.
 
-`Visual & FX` almacena cada aspecto ponderado CustomNPCs como una ruta de textura local o una URL HTTP/HTTPS, además de un modelo explícito `Steve` o `Alex`, superposiciones y ajustes de capa. No altera la textura suministrada. `Armor` almacena conjuntos completos en ranuras reales para la cabeza, el pecho, las piernas y los pies. Las vistas previas de Pistola, Cuerpo a cuerpo y Armadura muestran el modelo, la piel, la armadura y el arma seleccionados juntos.
+`Visual & FX` almacena cada aspecto ponderado DNPC o CustomNPCs como una ruta de textura local o una URL HTTP/HTTPS, además de un modelo explícito `Steve` o `Alex`, superposiciones y ajustes de capa. No altera la textura suministrada. `Armor` almacena conjuntos completos en ranuras reales para la cabeza, el pecho, las piernas y los pies. Las vistas previas de Pistola, Cuerpo a cuerpo y Armadura muestran el modelo, la piel, la armadura y el arma seleccionados juntos.
 
 La versión 0.2.1 muestra los campos de probabilidad directamente en las filas de armas, pieles y armaduras. La edición de una oportunidad no redistribuye las otras entradas, y un grupo de entradas múltiples debe totalizar `100%` antes de guardar. `Equalize` redistribuye entradas solo cuando se presiona, mientras que un grupo de una entrada permanece en `100%`. El fondo de armadura muestra hasta cinco filas a la vez; use la rueda del ratón o su barra de desplazamiento interna para las entradas restantes.
 
@@ -158,3 +158,7 @@ La versión 0.2.1 muestra los campos de probabilidad directamente en las filas d
 8. Agregue rangos de ráfaga, aumento de precisión y temporización de reposición aleatoria solo después de que el comportamiento normal sea estable.
 9. Añada reglas de postura avanzadas.
 10. Agregue fuego supresor y cobertura experimental al final, después de que se confirme el movimiento ordinario y el comportamiento de la línea de visión.
+
+## Aplicar un grupo de skins DNPC
+
+Los grupos de skins DNPC aplican la textura y el modelo Steve/Alex seleccionados. Activa **Init Event** y configura candidatos y probabilidades para elegir al crear/cargar la entidad. Si está desactivado o el grupo está vacío, conserva la apariencia actual. Los ticks de combate y guardar ajustes no vuelven a sortearla.

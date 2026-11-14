@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Apoio de combate
 section: support
 status: Guia
-version: 0.3.2
+version: 0.3.3
 audience: Criadores de mapas e operadores
 translationSource: en
 translationMethod: assisted
@@ -22,8 +22,9 @@ Conclua o [posicionamento](#dochi-warfare-expanded/expanded-support-timeline) ou
 | Save / Save As | Rascunho atual | JSON nomeado no servidor |
 | Simulation | Rascunho atual | Atores temporários em velocidade normal; terreno e atores existentes protegidos |
 | Comando de operador | Arquivo salvo | Apoio real com dano e efeitos nativos |
+| Item de ordem tática | Linha do tempo vinculada a uma tática salva | Apoio real no ponto e direção designados pelo jogador |
 
-**Simulation não salva.** Salve antes de chamar por nome. O fluxo atual é **posicionar no mundo → Simulation → comandos pelo nome salvo**. Diagramas antigos e instruções do botão de executar na minha posição não descrevem esta interface.
+**Simulation não salva.** Salve o rascunho testado e chame-o por comando de operador, ou vincule-o a uma [ordem tática](#dochi-warfare-expanded/expanded-tactical-orders) para distribuir itens a jogadores comuns. Diagramas antigos e o botão de executar na própria posição não descrevem esta interface.
 
 ## 1. Salve um documento
 

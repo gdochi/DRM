@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Opérations
 section: operations
 status: Projet
-version: 0.3.1
+version: 0.3.3
 audience: Opérateurs
 tags:
   - troubleshooting
@@ -48,9 +48,9 @@ Si cela fonctionne, l'addon et la boucle d'arme vont bien. Ajoutez des filtres, 
 | Les dégâts personnalisés, le knockback ou la vitesse d'attaque ne sont pas utilisés | Vérifiez la sélection `Gun Spec` / `Weapon Spec` ou `Custom` et les valeurs dans `Gun` et `Melee`. |
 | Le mouvement de l'arme de combat n'apparaît pas | Cochez Better Combat, créature Animateur de joueur, les PNJ `Better Combat Compatibility` et les attaques enregistrées pour l'arme. Un swing main vanille est attendu lorsque le mouvement enregistré ne peut pas être joué. |
 | La vitesse d'attaque personnalisée est ignorée lors de la compatibilité Better Combat | La compatibilité verrouille le timing à l'efficace de l'arme `ATTACK_SPEED`. Désactivez `Better Combat Compatibility` pour utiliser une vitesse d'attaque `Custom`. |
-| Une patrouille entre dans un mur ou fait une pause à chaque pas | Vérifiez `Default Walk Speed`, les points de patrouille, la hauteur verticale et l'accessibilité A*. Confirmez également que 0.3.1 est installé sur le client et le serveur. |
+| Une patrouille entre dans un mur ou fait une pause à chaque pas | Vérifiez `Default Walk Speed`, les points de patrouille, la hauteur verticale et l'accessibilité A*. Confirmez également que 0.3.3 est installé sur le client et le serveur. |
 | Un PNJ attaque la mauvaise cible | Effacez les filtres d'ID d'entité, les balises requises, les balises rejetées et les règles de balise de même-faction, puis ajoutez-les progressivement. |
-| Le PNJ continue de montrer l'arme précédente ou incorrecte | Confirmez que les deux côtés utilisent le courant 0.3.1, puis enregistrez à nouveau. Vérifiez que l'élément est pris en charge par son adaptateur TACZ, PointBlank ou SuperbWarfare et retirez les accessoires de munitions physiques. |
+| Le PNJ continue de montrer l'arme précédente ou incorrecte | Confirmez que les deux côtés utilisent le courant 0.3.3, puis enregistrez à nouveau. Vérifiez que l'élément est pris en charge par son adaptateur TACZ, PointBlank ou SuperbWarfare et retirez les accessoires de munitions physiques. |
 | `DW Pose Core` n'ouvre pas l'éditeur | Confirmez le mode créatif, un modèle de lecteur Steve/Alex CustomNPCs, une distance comprise entre 12 blocs et que le noyau reste dans l’une ou l’autre main. |
 | Une pose personnalisée enregistrée n'est pas visible | Dans `DW Npc Core > Pose`, confirmez que l'action utilise `Custom JSON` et le profil prévu. Le fichier doit exister sous `config/dochi_warfare/poses/`. |
 | Les modifications de pool ne peuvent pas être enregistrées | Rendre la chance en ligne totale `100%` ou appuyez sur `Equalize`. L'édition d'une ligne ne redistribue pas automatiquement les autres. |
@@ -58,9 +58,9 @@ Si cela fonctionne, l'addon et la boucle d'arme vont bien. Ajoutez des filtres, 
 | Icônes d'alerte visuelle manquantes | Vérifiez le paramètre par NPC `Alert Icons` et les paramètres de visibilité du marqueur côté client `dochi_warfare Config`. |
 | GUI semble déformé | Réglez `GUI Scale` dans les paramètres vidéo vanille, puis vérifiez à nouveau l'écran. |
 | La couverture ne commence jamais | Vérifiez le `[experimentalCover].enabled` global, par NPC `Enable Cover`, le déclencheur individuel, la phase de combat, le rayon de recherche, le temps de rechargement et si une position de déclenchement/blocage de tir est accessible. |
-| La couverture commence mais le PNJ ne reprend jamais les combats | Vérifiez `Max Duration`, `Hold Time`, les paramètres de peek, l'accessibilité de la route, et que le courant 0.3.1 est installé. La couverture doit protéger à la fois la poitrine et la tête; le serveur tente à nouveau un autre candidat joignable après un échec de recherche initial. |
+| La couverture commence mais le PNJ ne reprend jamais les combats | Vérifiez `Max Duration`, `Hold Time`, les paramètres de peek, l'accessibilité de la route, et que le courant 0.3.3 est installé. La couverture doit protéger à la fois la poitrine et la tête; le serveur tente à nouveau un autre candidat joignable après un échec de recherche initial. |
 | La confirmation de location ne s'ouvre pas | Le PNJ doit être un PNJ géré par DW avec `Hire available` activé. Utilisez une main vide ou un élément d'interaction normal ; les outils d'interaction `DW Npc Core`, `DW Mercenary Core` et CustomNPCs conservent leur propre comportement d'éditeur. |
-| Les clics ou les info-bulles de l'interface graphique mercenaire sont décalés | Utilisez le courant 0.3.1 des deux côtés. Les paramètres mercenaires, l'écran de confirmation et la commande HUD utilisent la mise à l'échelle et les coordonnées traduites de la souris. |
+| Les clics ou les info-bulles de l'interface graphique mercenaire sont décalés | Utilisez le courant 0.3.3 des deux côtés. Les paramètres mercenaires, l'écran de confirmation et la commande HUD utilisent la mise à l'échelle et les coordonnées traduites de la souris. |
 | PointBlank Le pistolet n'est pas accepté | Installez exactement une branche prise en charge, 1.11.1 ou 2.1.0. Si les deux sont détectés, le pont se désactive. |
 | SuperbWarfare arme ou véhicule indisponible | Vérifiez les versions prises en charge spécifiques au chargeur dans [setup](#dochi-warfare/warfare-setup). |
 | L’IA du véhicule est activée mais ne bouge pas | Retirez les passagers du joueur, confirmez la version compatible SuperbWarfare, le mode de déplacement, la maison/destination et le terrain chargé. Les hélicoptères et les avions ont besoin de suffisamment d'espace pour monter et tourner. |
@@ -108,7 +108,7 @@ En cas d'échec d'une descente d'un bloc, confirmer qu'un point d'itinéraire di
 
 `Gun Spec` préserve le comportement de dégâts natif du canon, tandis que `Custom` applique le remplacement DW pris en charge pour ce PNJ. Melee `Weapon Spec` utilise les attributs de l'objet ; la mêlée `Custom` peut infliger indépendamment des dégâts, des reculs et des attaques par seconde. Changer une stratégie à la fois en isolant un résultat inattendu.
 
-L'activation de `Better Combat Compatibility` verrouille la vitesse d'attaque à l'efficace de l'objet maintenu `ATTACK_SPEED`, et `Overview` montre `Weapon Spec (locked)`. Si les attributs d'arme ne s'appliquent pas sur une version plus ancienne, mettez à jour le client et le serveur à 0.3.1 avant de tester à nouveau.
+L'activation de `Better Combat Compatibility` verrouille la vitesse d'attaque à l'efficace de l'objet maintenu `ATTACK_SPEED`, et `Overview` montre `Weapon Spec (locked)`. Si les attributs d'arme ne s'appliquent pas sur une version plus ancienne, mettez à jour le client et le serveur à 0.3.3 avant de tester à nouveau.
 
 ## Changement d'arme et problèmes d'animation de mêlée
 

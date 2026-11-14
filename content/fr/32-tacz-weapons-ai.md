@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Combat AI
 section: combat-ai
 status: Projet
-version: 0.3.1
+version: 0.3.3
 audience: Firearm PNJ Créateurs
 tags:
   - weapon
@@ -142,7 +142,7 @@ TACZ est toujours la position et l'animation de base. Les adaptateurs optionnels
 
 `Melee` lit des objets non-TACZ de l'inventaire du joueur. L'intégration Better Combat n'enregistre pas un identifiant d'animation de remplacement. Au moment de l'attaque, il résout l'ensemble d'attaque et pose effectivement enregistré pour l'arme retenue. Le support d'attaque de mêlée à main vide est également disponible pour les configurations capables de mêlée.
 
-`Visual & FX` stocke chaque skin CustomNPCs pondéré comme un chemin de texture local ou une URL HTTP/HTTPS, plus un modèle explicite `Steve` ou `Alex`, des superpositions et des paramètres de cape. Il ne modifie pas la texture fournie. `Armor` stocke les ensembles complets dans de véritables fentes pour la tête, la poitrine, les jambes et les pieds. Les aperçus Gun, Melee et Armor montrent le modèle, la peau, l'armure et l'arme sélectionnés ensemble.
+`Visual & FX` stocke chaque skin DNPC ou CustomNPCs pondéré comme un chemin de texture local ou une URL HTTP/HTTPS, plus un modèle explicite `Steve` ou `Alex`, des superpositions et des paramètres de cape. Il ne modifie pas la texture fournie. `Armor` stocke les ensembles complets dans de véritables fentes pour la tête, la poitrine, les jambes et les pieds. Les aperçus Gun, Melee et Armor montrent le modèle, la peau, l'armure et l'arme sélectionnés ensemble.
 
 La version 0.2.1 affiche les champs de chance directement sur les rangées d'armes, de skin et de pool d'armures. La modification d'une chance ne redistribue pas les autres entrées, et un pool multi-entrées doit totaliser `100%` avant d'enregistrer. `Equalize` redistribue les entrées uniquement lorsqu'on appuie dessus, tandis qu'un pool à une entrée reste à `100%`. Le pool d'armures affiche jusqu'à cinq rangées à la fois; utilisez la molette de la souris ou sa barre de défilement interne pour les entrées restantes.
 
@@ -158,3 +158,7 @@ La version 0.2.1 affiche les champs de chance directement sur les rangées d'arm
 8. Ajoutez des plages de rafales, une rampe de précision et un timing de repositionnement aléatoire uniquement après que le comportement normal soit stable.
 9. Ajoutez des règles de posture avancées.
 10. Ajoutez le feu suppressif et la couverture expérimentale en dernier, après que le mouvement ordinaire et le comportement en ligne de mire soient confirmés.
+
+## Appliquer un ensemble de skins DNPC
+
+Les ensembles de skins DNPC appliquent la texture et le modèle Steve/Alex choisis. Activez **Init Event**, puis définissez les candidats et probabilités pour le tirage à la création/au chargement. S’il est désactivé ou si l’ensemble est vide, l’apparence actuelle reste. Les ticks de combat et la sauvegarde ne relancent pas le tirage.

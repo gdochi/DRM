@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Herramientas de configuración
 section: setup
 status: Proyecto
-version: 0.3.1
+version: 0.3.3
 audience: Creadores de PNJ con armas de fuego
 tags:
   - easy-build

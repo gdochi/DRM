@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Appui au combat
 section: support
 status: Guide
-version: 0.3.2
+version: 0.3.3
 audience: Créateurs de cartes et opérateurs
 translationSource: en
 translationMethod: assisted
@@ -22,8 +22,9 @@ Terminez le [placement](#dochi-warfare-expanded/expanded-support-timeline) ou le
 | Save / Save As | Brouillon actuel | JSON nommé sur le serveur |
 | Simulation | Brouillon actuel | Acteurs temporaires à vitesse normale ; terrain et acteurs existants protégés |
 | Commande opérateur | Fichier enregistré | Appui réel avec dégâts et effets natifs |
+| Ordre tactique | Chronologie liée à une tactique enregistrée | Appui réel au point et selon la direction désignés par le joueur |
 
-**Simulation n’enregistre pas.** Enregistrez avant l’appel par nom. Le fonctionnement actuel est **placement dans le monde → Simulation → commandes par nom enregistré**. Les anciens schémas et instructions du bouton de lancement à ma position ne décrivent pas cette interface.
+**Simulation ne sauvegarde pas.** Enregistrez le brouillon testé, puis appelez-le par commande opérateur ou liez-le à un [ordre tactique](#dochi-warfare-expanded/expanded-tactical-orders) pour distribuer des objets aux joueurs ordinaires. Les anciens schémas et le bouton d’exécution à ma position ne décrivent pas cette interface.
 
 ## 1. Enregistrez un document
 

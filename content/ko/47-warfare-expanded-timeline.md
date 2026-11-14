@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: 전투 지원
 section: support
 status: 사용 안내
-version: 0.3.2
+version: 0.3.3
 audience: 처음 만드는 맵 제작자와 운영자
 ---
 
@@ -20,6 +20,7 @@ audience: 처음 만드는 맵 제작자와 운영자
 | 1. 이 페이지 | 화면 익히기 → 점·선·영역 폭격 → 시간과 중심점 |
 | 2. [차량·기총·NPC 지원](#dochi-warfare-expanded/expanded-support-actions) | 출발·도착점, 지원 차량·무장, NPC 공급원 설정 |
 | 3. [저장·실행과 문제 해결](#dochi-warfare-expanded/expanded-support-run) | 저장·불러오기 → Simulation → 실제 호출 |
+| 4. [전술 아이템으로 호출](#dochi-warfare-expanded/expanded-tactical-orders) | 저장한 타임라인을 전술에 연결 → 아이템 발급 → 플레이어 조준 |
 
 영상 10편을 이 세 페이지의 작업 단계 옆에 나누어 배치했습니다. **DWE 0.3.2 / NeoForge 1.21.1의 실제 화면**으로, 영어 UI와 한국어 단계 설명을 함께 보여 줍니다. 무음 영상이므로 잠시 멈추고 같은 항목을 찾아 입력해도 됩니다. Forge·Fabric도 같은 편집 흐름을 사용하며 영상의 실제 촬영 환경은 NeoForge입니다.
 

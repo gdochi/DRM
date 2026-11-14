@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Configuración
 section: setup
 status: Proyecto
-version: 0.3.2
+version: 0.3.3
 audience: Operadores de servidor
 tags:
   - setup
@@ -23,13 +23,13 @@ translationMethod: assisted
 | --- | --- |
 | Minecraft / cargador | Forge 1.20.1, NeoForge 1.21.1 o Fabric 1.21.1 |
 | Java | Forge 17 / NeoForge y Fabric 21 |
-| DW | 0.3.2 del cargador correcto |
+| DW | 0.3.3 del cargador correcto |
 | TACZ | Obligatorio: TACZ en Forge/NeoForge; TACZ Refabricated en Fabric. Ya no se aplica la antigua restricción inferior a 1.2 |
 | Player Animator | Obligatorio en clientes Forge/NeoForge: Forge 1.0.0+ / NeoForge 2.0+. Opcional en Fabric |
 | Fabric | Fabric API + Forge Config API Port (versiones Fabric) |
 | NPC mod | DNPC o CustomNPCs |
 
-Instale el cargador coincidente DW y sus requisitos en el servidor y el cliente. DRM es opcional. En el caso de los vehículos, añádase **DWE 0.3.2** y SuperbWarfare. Las versiones SuperbWarfare admitidas son **0.8.9 / 0.8.9.1 / 0.8.9.2** en Forge y **0.8.9.1 / 0.8.9.2** en NeoForge. Incluya las dependencias propias de SuperbWarfare, como Kotlin para Forge.
+Instale el cargador coincidente DW y sus requisitos en el servidor y el cliente. DRM es opcional. En el caso de los vehículos, añádase **DWE 0.3.3** y SuperbWarfare. Las versiones SuperbWarfare admitidas son **0.8.9 / 0.8.9.1 / 0.8.9.2** en Forge y **0.8.9.1 / 0.8.9.2** en NeoForge. Incluya las dependencias propias de SuperbWarfare, como Kotlin para Forge.
 
 ## Elige un arma del inventario del jugador
 
@@ -69,3 +69,9 @@ Estas pantallas inglesas usan **DW 0.3.1, DNPC 0.1.3 and NeoForge 1.21.1**.
 **Save As** un perfil, **Load** en otro NPC, luego **Save**. Los perfiles están bajo `config/dochi_warfare/target_entities/`. Para mantener el NPC en sí, haga clic derecho en el aire con el núcleo para abrir el [biblioteca de clones](#dochi-warfare/warfare-entity-clones).
 
 Continúe a [Easy Build y Presets](#dochi-warfare/warfare-easy-build-presets) para la configuración de comportamiento guiada, o [solución de problemas](#dochi-warfare/warfare-troubleshooting) si no se dispara. Usa **DW Pose Core / DW Mercenary Core / DW Booby Trap Core** para poses, contratación o trampas, y [DWE](#dochi-warfare-expanded/expanded-overview) para vehículos.
+
+## Instalar y guardar en 0.3.3
+
+Forge/NeoForge conservan las integraciones TaCZ existentes y añaden 1.2.0. Fabric admite TACZ Refabricated 0.7.1 y 1.2.0. Esto no garantiza todas las versiones anteriores o futuras. Mod Menu abre los ajustes DW en Fabric.
+
+Usa **Ctrl+S** en editores y pantallas que ya tengan Save. Si un documento nuevo requiere Save As, elige un nombre y espera la confirmación del servidor. Las capturas 0.3.1 de abajo identifican su versión de grabación; no indican que debas instalar una anterior.

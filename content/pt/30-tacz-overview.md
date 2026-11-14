@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Visão geral
 section: overview
 status: Rascunho
-version: 0.3.1
+version: 0.3.3
 audience: Criadores de NPC de armas de fogo
 tags:
   - TACZ
@@ -54,6 +54,6 @@ Coloque munição sobressalente com **Ammo Stock**. Não equipar munição ou it
 
 ## Plataformas suportadas
 
-DW é para **Forge 1.20.1 / NeoForge 1.21.1**. TACZ e cliente-lado Jogador Animador são necessários. Mods compatíveis instalados PointBlank/SuperbWarfare adicionam suas armas suportadas.
+DW 0.3.3 oferece suporte a **Forge 1.20.1 / NeoForge 1.21.1 / Fabric 1.21.1**. No Fabric, use TACZ Refabricated, Fabric API e Forge Config API Port. Player Animator é obrigatório nos clientes Forge/NeoForge e opcional no Fabric.
 
 Veja [setup](#dochi-warfare/warfare-setup) para requisitos de versão.

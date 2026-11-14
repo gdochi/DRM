@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Vehículo AI
 section: vehicles
 status: Proyecto
-version: 0.3.2
+version: 0.3.3
 audience: Creadores y operadores de escenarios
 tags:
   - SuperbWarfare
@@ -17,7 +17,7 @@ translationSource: en
 translationMethod: assisted
 ---
 
-**DWE 0.3.2** ofrece vehículos en Forge 1.20.1, NeoForge 1.21.1 y Fabric 1.21.1. Consulta [instalación y archivos](#dochi-warfare-expanded/expanded-overview), [reacciones](#dochi-warfare-expanded/expanded-vehicle-gimmicks) y la [timeline renovada](#dochi-warfare-expanded/expanded-support-timeline).
+**DWE 0.3.3** ofrece vehículos en Forge 1.20.1, NeoForge 1.21.1 y Fabric 1.21.1. Consulta [instalación y archivos](#dochi-warfare-expanded/expanded-overview), [reacciones](#dochi-warfare-expanded/expanded-vehicle-gimmicks) y la [timeline renovada](#dochi-warfare-expanded/expanded-support-timeline).
 
 DW sigue siendo el núcleo obligatorio. Se comprueban las API utilizadas sin exigir números DW/DWE iguales. Revisa la [instalación por cargador](#dochi-warfare/warfare-setup) para dependencias externas.
 
@@ -121,3 +121,13 @@ Los comandos requieren nivel de permiso 2. Mire directamente un vehículo Superb
 ```
 
 La GUI es el flujo de trabajo principal del creador. Los comandos están destinados a operaciones en vivo, órdenes rápidas y diagnósticos de estado.
+
+## Daños en componentes de vehículos terrestres
+
+La 0.3.3 reacciona a fallos nativos de componentes en vehículos terrestres de ruedas/orugas controlados por DWE. Esta política no se aplica a barcos ni aeronaves.
+
+- Ruedas/orugas dañadas detienen movimiento, retirada y recuperación de atascos; las armas utilizables siguen defendiendo. La reparación restaura las decisiones de movimiento.
+- Una torreta averiada excluye sus armas principales/coaxiales. Las secundarias independientes siguen necesitando activación, tripulación, munición y alcance válidos.
+- Un fallo del motor principal/auxiliar evacua a conductores, artilleros y pasajeros NPC tras una parada segura a baja velocidad. No expulsa jugadores. Si las salidas están bloqueadas, los ocupantes esperan hasta disponer de una salida segura.
+
+Los NPC se alejan brevemente de la amenaza si existe un destino seguro. El reembarque automático tiene una espera de 30 segundos. Tras evacuar, repara el vehículo y sube nueva tripulación para recuperarlo. Es distinto de **NPC combat dismount**, que solo baja pasajeros. Las patrullas y reglas de armas guardadas se conservan.

@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Gun Integrations
 section: integrations
 status: Draft
-version: 0.3.1
+version: 0.3.3
 audience: Firearm NPC creators
 tags:
   - TACZ
@@ -15,7 +15,7 @@ tags:
   - SuperbWarfare
 ---
 
-Current builds: DW 0.3.1 for Forge 1.20.1 and DW 0.3.1 for NeoForge 1.21.1. Vehicle AI on both loaders requires the separate DWE 0.3.1 addon. Check [loader-specific installation](#dochi-warfare/warfare-setup) for external gun/vehicle dependencies.
+DW 0.3.3 supports Forge 1.20.1, NeoForge 1.21.1 and Fabric 1.21.1. Vehicle features require separate DWE and SuperbWarfare. Follow [loader-specific installation](#dochi-warfare/warfare-setup) for external dependencies.
 
 ## Give an NPC a gun from another mod
 
@@ -29,11 +29,11 @@ DW controls whom the NPC detects and when it fires or reloads. The original gun 
 
 | Gun system | Requirement | Native behavior retained |
 | --- | --- | --- |
-| TACZ | Required 1.1.8 in the supported 1.1.x range | Firing, gun state, reload state, RPM, muzzle/effects, and stack persistence |
+| TACZ | Forge/NeoForge: existing TaCZ integrations and 1.2.0. Fabric: TACZ Refabricated 0.7.1 and 1.2.0 | Firing, gun state, reload state, RPM, muzzle/effects, and stack persistence |
 | PointBlank | Optional 1.11.1 or 2.1.0; install exactly one | Native projectile or hitscan, multi-pellet rays, headshots, falloff, reload phases, sounds, and renderer |
 | SuperbWarfare | Forge 0.8.9 / 0.8.9.1 / 0.8.9.2; NeoForge 0.8.9.1 / 0.8.9.2 | Native firing, reload, bolt, projectile, sound, heat, recoil, durability, models, attachments, and persistence |
 
-TACZ and Player Animator remain the runtime and animation baseline even when the managed item comes from PointBlank or SuperbWarfare.
+A TACZ-family mod remains required. Player Animator is required on Forge/NeoForge clients and optional on Fabric. Use PointBlank/SuperbWarfare only when a compatible release exists for the actual Minecraft version and loader.
 
 :::warning Version gates
 Install one supported PointBlank branch: 1.11.1 or 2.1.0. Use the loader-specific SuperbWarfare versions above.
@@ -41,7 +41,7 @@ Install one supported PointBlank branch: 1.11.1 or 2.1.0. Use the loader-specifi
 
 ## Configure an external gun
 
-1. Confirm a plain TACZ 1.1.8 gun works on the NPC.
+1. First confirm basic NPC firing with an ordinary TACZ or TACZ Refabricated gun supported on your loader.
 2. Install exactly one supported optional gun mod version on both sides.
 3. Put the native gun item in the creator's inventory.
 4. Open the NPC with `DW Npc Core` and select the item in `Gun`. For multiple guns, make pool chances total 100% or press `Even`.

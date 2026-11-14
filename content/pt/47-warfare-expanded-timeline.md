@@ -7,7 +7,7 @@ product: dochi-warfare-expanded
 category: Apoio de combate
 section: support
 status: Guia
-version: 0.3.2
+version: 0.3.3
 audience: Criadores de mapas e operadores iniciantes
 translationSource: en
 translationMethod: assisted
@@ -22,6 +22,7 @@ O **Gimmick Editor é uma ferramenta de criação**. Posicione o apoio no mundo 
 | 1. Esta página | Conhecer a tela, criar bombardeios de ponto/linha/área, ajustar tempo e centro |
 | 2. [Veículos, armas e NPCs](#dochi-warfare-expanded/expanded-support-actions) | Definir partida/destino, veículos, armas e fontes de NPCs |
 | 3. [Salvar, simular e executar](#dochi-warfare-expanded/expanded-support-run) | Salvar, carregar, testar com Simulation e chamar o arquivo |
+| 4. [Chamar por item tático](#dochi-warfare-expanded/expanded-tactical-orders) | Vincular a linha salva → distribuir item → jogador mirar |
 
 As três lições incluem dez vídeos de **DWE 0.3.2 / NeoForge 1.21.1**, com a interface real em inglês e explicações de etapas em coreano. São vídeos sem áudio: pause para localizar cada controle. Forge e Fabric usam o mesmo fluxo; a gravação foi feita no NeoForge.
 

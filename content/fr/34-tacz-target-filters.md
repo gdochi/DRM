@@ -7,7 +7,7 @@ product: dochi-warfare
 category: Objectifs
 section: targets
 status: Projet
-version: 0.3.1
+version: 0.3.3
 audience: Rencontres designers
 tags:
   - target
