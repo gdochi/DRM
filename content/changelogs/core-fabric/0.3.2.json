@@ -1,0 +1,27 @@
+{
+  "product": "core-fabric",
+  "version": "0.3.2",
+  "projectId": 1645661,
+  "source": "author",
+  "publishedAt": "2026-11-14T10:58:36.235Z",
+  "environments": [
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "26.3"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "26.3"
+    }
+  ],
+  "markdown": "## DRM\n### 0.3.2 Change Log\n#### Global\n##### Added\n* Added Bank Editor for shared accounts, deposits, withdrawals, and editable deposit products.\n* Added three built-in deposit presets with simple or compound interest.\n* Added Real ticks and World ticks time bases for bank interest and deposit products.\n* Added holding-time interest and depreciation with DNPC reputation rate adjustments.\n* Added bank payments using DRM currencies, custom currency systems, or optional CobbleDollars.\n* Added customizable bank GUI layouts and NPC bank assignments.\n* Added the Go Bank dialogue action to open the speaking NPC's bank.\n* Added custom multi-denomination currency payments and automatic change to shops and teleporters.\n* Added shared currency-system selection and payment APIs for addons.\n* Added editable teleporter cost summaries in GUI Maker.\n* Added section dividers in GUI Maker.\n* Added keyboard navigation for teleporter regions and destinations.\n* Added destination travel costs using items, DRM currencies, or optional CobbleDollars.\n##### Fixed\n* Fixed faint seams between repeated DRM UI textures.\n* Fixed dialogue text cursors jumping to the end when editing changes the text box height.\n##### Improved\n* Improved the teleporter travel menu with region tabs, destination previews, and clearer travel costs.\n* Improved teleporter menu sizing and control visibility across GUI scales.\n* Improved teleporter frames and controls with the shared DRM sprite skin.\n#### Forge 1.20.1 / NeoForge 1.21.1\n##### Added\n* Added optional Create: Numismatics coin payments with automatic denomination conversion in shops, teleporters, and banks.\r\n",
+  "html": "<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added Bank Editor for shared accounts, deposits, withdrawals, and editable deposit products.</li>\n<li>Added three built-in deposit presets with simple or compound interest.</li>\n<li>Added Real ticks and World ticks time bases for bank interest and deposit products.</li>\n<li>Added holding-time interest and depreciation with DNPC reputation rate adjustments.</li>\n<li>Added bank payments using DRM currencies, custom currency systems, or optional CobbleDollars.</li>\n<li>Added customizable bank GUI layouts and NPC bank assignments.</li>\n<li>Added the Go Bank dialogue action to open the speaking NPC's bank.</li>\n<li>Added custom multi-denomination currency payments and automatic change to shops and teleporters.</li>\n<li>Added shared currency-system selection and payment APIs for addons.</li>\n<li>Added editable teleporter cost summaries in GUI Maker.</li>\n<li>Added section dividers in GUI Maker.</li>\n<li>Added keyboard navigation for teleporter regions and destinations.</li>\n<li>Added destination travel costs using items, DRM currencies, or optional CobbleDollars.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed faint seams between repeated DRM UI textures.</li>\n<li>Fixed dialogue text cursors jumping to the end when editing changes the text box height.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved the teleporter travel menu with region tabs, destination previews, and clearer travel costs.</li>\n<li>Improved teleporter menu sizing and control visibility across GUI scales.</li>\n<li>Improved teleporter frames and controls with the shared DRM sprite skin.</li>\n</ul>\n<h4>Forge 1.20.1 / NeoForge 1.21.1</h4>\n<h5>Added</h5>\n<ul>\n<li>Added optional Create: Numismatics coin payments with automatic denomination conversion in shops, teleporters, and banks.</li>\n</ul>\n"
+}

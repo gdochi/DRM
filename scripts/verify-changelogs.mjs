@@ -126,7 +126,7 @@ try {
       for (const minecraft of minecraftVersions) {
         await page.locator(`.changelog-options a[href="#changelog/core/${loader}/${minecraft}"]`).click();
         await page.waitForSelector(`[data-changelog][data-loader="${loader}"][data-minecraft="${minecraft}"]`);
-        assert.equal(await page.locator('.release-title h2').textContent(), '0.3.1');
+        assert.equal(await page.locator('.release-title h2').textContent(), releases.filter(release => productFor(release.product) === 'core' && release.loader === loader && release.minecraft === minecraft).map(release => release.version).sort((a, b) => b.localeCompare(a, 'en', { numeric: true }))[0]);
         assert.equal(await page.locator('.product-tabs a').first().getAttribute('href'), loader === 'Forge' ? '#core/quick-start' : '#core-fabric/quick-start');
         assert((await page.locator('.changelog-versions a').count()) >= 1);
       }
