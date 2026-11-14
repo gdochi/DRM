@@ -5,9 +5,15 @@
   "source": "author",
   "publishedAt": "2026-11-14T10:27:56.000Z",
   "environments": [
-    { "loader": "Fabric", "minecraft": "1.21.1" },
-    { "loader": "NeoForge", "minecraft": "1.21.1" }
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1"
+    }
   ],
-  "markdown": "## Dochi's Cobblemon Editor\n### 0.3.0 Change Log\n#### Global\n##### Added\n* Added eleven Cobblephone themes, including Ditto, Jigglypuff, Piplup, and Bulbasaur with a printed rear bulb.\n* Added opening animations, 45-degree inventory previews, and handheld grips using player skins and sleeves.\n* Added bright phone LCDs and glass reflections without requiring external shaders.\n* Added persistent trainer contacts with transparent upper-body portraits, battle records, favorites, and call history.\n* Added immediate contact registration when players accept the contact exchange dialogue choice.\n* Added choice-based calls for casual conversations, rematches, and regional hints.\n* Added incoming rematch, story, and casual calls with missed-call records and callbacks.\n* Added NPC phone settings, custom call dialogues, and dialogue actions for exchanging contacts.\n* Added eleven Pokémon-themed pixel UI skins matched to the held Cobblephone.\n* Added compact phone controls, shadow-free text, and scrollable profiles across Minecraft GUI scales.\n* Added world-wide phone skin settings for administrators, including DRM skins, resource-pack skins, and color profiles.\n* Added player settings for Silent mode and Casual calls.\n* Added a standalone Cobblephone Editor with branching replies, bulk editing, and interactive call previews.\n* Added direct conversation editing, phone JSON assignment, and formatted multiline descriptions in NPC contact profiles.\n* Added Cobblephones to DNPC and CustomNPCs creative tabs when those optional mods are installed.\n",
-  "html": "<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added eleven Cobblephone themes, including Ditto, Jigglypuff, Piplup, and Bulbasaur with a printed rear bulb.</li>\n<li>Added opening animations, 45-degree inventory previews, and handheld grips using player skins and sleeves.</li>\n<li>Added bright phone LCDs and glass reflections without requiring external shaders.</li>\n<li>Added persistent trainer contacts with transparent upper-body portraits, battle records, favorites, and call history.</li>\n<li>Added immediate contact registration when players accept the contact exchange dialogue choice.</li>\n<li>Added choice-based calls for casual conversations, rematches, and regional hints.</li>\n<li>Added incoming rematch, story, and casual calls with missed-call records and callbacks.</li>\n<li>Added NPC phone settings, custom call dialogues, and dialogue actions for exchanging contacts.</li>\n<li>Added eleven Pokémon-themed pixel UI skins matched to the held Cobblephone.</li>\n<li>Added compact phone controls, shadow-free text, and scrollable profiles across Minecraft GUI scales.</li>\n<li>Added world-wide phone skin settings for administrators, including DRM skins, resource-pack skins, and color profiles.</li>\n<li>Added player settings for Silent mode and Casual calls.</li>\n<li>Added a standalone Cobblephone Editor with branching replies, bulk editing, and interactive call previews.</li>\n<li>Added direct conversation editing, phone JSON assignment, and formatted multiline descriptions in NPC contact profiles.</li>\n<li>Added Cobblephones to DNPC and CustomNPCs creative tabs when those optional mods are installed.</li>\n</ul>\n"
+  "markdown": "## Dochi's Cobblemon Editor\n### 0.3.0 Change Log\n#### Global\n##### Added\n* Added Cobblephone for exchanging trainer contacts, making calls, and arranging rematches.\n",
+  "html": "<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added Cobblephone for exchanging trainer contacts, making calls, and arranging rematches.</li>\n</ul>\n"
 }
