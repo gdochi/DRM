@@ -1,0 +1,31 @@
+{
+  "product": "dochi-minigames",
+  "version": "0.1.7",
+  "projectId": 1739148,
+  "source": "author",
+  "publishedAt": "2026-11-14T10:29:43.297Z",
+  "environments": [
+    {
+      "loader": "Forge",
+      "minecraft": "1.20.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "26.3"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "26.3"
+    }
+  ],
+  "markdown": "## 미니게임스\n### 0.1.7 Change Log\n#### Global\n##### Added\n* Added toy Russian Roulette with solo cash-out, 2–6-player matches, and revolver animations using player skins.\n* Added solo Snake with a craftable arcade cabinet, Arrow/WASD controls, and configurable rules.\n##### Fixed\n* Fixed slot machine levers opening the GUI instead of starting a round.\n##### Improved\n* Improved arcade machine textures, wood joints, game markings, and MWENT table inlays.\n* Improved slot machines with rotating item drums, gradual reel stops, and animated levers.\n",
+  "html": "<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added toy Russian Roulette with solo cash-out, 2–6-player matches, and revolver animations using player skins.</li>\n<li>Added solo Snake with a craftable arcade cabinet, Arrow/WASD controls, and configurable rules.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed slot machine levers opening the GUI instead of starting a round.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved arcade machine textures, wood joints, game markings, and MWENT table inlays.</li>\n<li>Improved slot machines with rotating item drums, gradual reel stops, and animated levers.</li>\n</ul>\n"
+}
