@@ -1,0 +1,31 @@
+{
+  "product": "dochi-real-armor",
+  "version": "0.1.7",
+  "projectId": 1567803,
+  "source": "author",
+  "publishedAt": "2026-11-15T02:36:39.075457+00:00",
+  "environments": [
+    {
+      "loader": "Forge",
+      "minecraft": "1.20.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "26.3"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "26.3"
+    }
+  ],
+  "markdown": "## 리얼아머\n### 0.1.7 Change Log\n#### Forge 1.20.1\n##### Added\n* Added armor support for zombies, skeletons, piglins and other armor-wearing mobs, plus horses.\n#### Fabric / NeoForge 1.21.1\n##### Added\n* Added armor support for zombies, skeletons, piglins and other armor-wearing mobs, plus horses and wolves.\n#### Fabric / NeoForge 26.3\n##### Added\n* Added armor support for zombies, skeletons, piglins and other armor-wearing mobs, plus horses, zombie horses, wolves, nautiluses and zombie nautiluses.\n",
+  "html": "<h2>Forge 1.20.1</h2>\n<h3>Added</h3>\n<ul><li>Added armor support for zombies, skeletons, piglins and other armor-wearing mobs, plus horses.</li></ul>\n<h2>Fabric / NeoForge 1.21.1</h2>\n<h3>Added</h3>\n<ul><li>Added armor support for zombies, skeletons, piglins and other armor-wearing mobs, plus horses and wolves.</li></ul>\n<h2>Fabric / NeoForge 26.3</h2>\n<h3>Added</h3>\n<ul><li>Added armor support for zombies, skeletons, piglins and other armor-wearing mobs, plus horses, zombie horses, wolves, nautiluses and zombie nautiluses.</li></ul>"
+}
