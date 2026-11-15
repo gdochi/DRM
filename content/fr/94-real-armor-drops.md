@@ -6,8 +6,8 @@ description: Choisissez objets, probabilités et quantités par armure dans Armo
 product: dochi-real-armor
 category: Drops d'objets
 section: drops
-status: Stable
-version: 0.1.6
+status: Aperçu
+version: 0.1.7
 audience: Administrateurs de serveurs et auteurs de modpacks
 tags:
   - armor
@@ -89,3 +89,9 @@ Sur un serveur dédié, la même structure se trouve dans le dossier du monde du
 | Aucun objet dans l'aperçu | L'aperçu est statique. Les drops réels sont générés sur le serveur lors de la perte de durabilité |
 
 Les accessoires Curios utilisent leur propre gestion de durabilité. Ne les traitez pas comme cibles de drops d'armure de cette fonction.
+
+## Règles des armures de créatures et d’animaux dans la version 0.1.7
+
+Les règles de drops s’appliquent aussi aux armures des créatures compatibles et aux animaux selon la version. L’armure de loup effectue un seul tirage lorsqu’elle perd réellement de la durabilité ou se brise. Désactiver l’usure, ou choisir une armure de cheval ou de nautile sans durabilité, ne produit aucun drop lié aux dégâts.
+
+Les armures animales sont sélectionnables dans l’éditeur et utilisent une icône d’objet au lieu du porte-armure dans l’aperçu. Enregistrez l’ensemble et utilisez **Apply** pour l’activer.

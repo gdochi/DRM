@@ -6,8 +6,8 @@ description: Les sources d'armure, les seuils de zone de frappe, l'ordre de rés
 product: dochi-real-armor
 category: calcul armure
 section: calculation
-status: Stable
-version: 0.1.6
+status: Aperçu
+version: 0.1.7
 audience: Opérateurs de serveur et créateurs de modpack
 tags:
   - damage
@@ -56,3 +56,9 @@ L'ordre de résistance CustomNPCs peut être défini sur `CNPC_RESISTANCE_THEN_V
 Les enchantements de protection ne sont appliqués que lorsque leur interrupteur est allumé. Les dégâts de contournement d'armure ignorent l'armure. La perte de durabilité est également facultative et s'applique aux fentes qui ont participé à la réduction, de sorte qu'un coup de tête en mode divisé n'endommage pas les leggings.
 
 La résistance au retournement compare la valeur d'armure résolue avec l'attribut vanille de l'entité et ne fournit que le montant manquant. Il ne double pas la résistance déjà présente sur l’entité.
+
+## Armure corporelle animale et durabilité
+
+L’armure corporelle protège toutes les hauteurs d’impact, même en mode par parties du corps, et n’est comptée qu’une fois. L’analyse directe de l’équipement inclut aussi l’emplacement corporel de cette version de Minecraft.
+
+L’armure de loup conserve l’absorption des dégâts, les fissures et les effets de rupture de Minecraft. Avec Real Armor activé, désactiver **Damage armor items** arrête cette usure. Les objets sans durabilité, comme les armures de cheval et de nautile, ne reçoivent pas de durabilité supplémentaire.

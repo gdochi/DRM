@@ -1,13 +1,13 @@
 ---
-title: Make NPC Armor Matter
+title: Make NPC and Mob Armor Matter
 slug: dochi-real-armor-overview
 order: 900
-description: Make equipped armor reduce NPC damage and choose body-part and durability settings.
+description: Configure armor protection and durability for equipped NPCs, mobs and version-supported animals.
 product: dochi-real-armor
 category: Overview
 section: overview
-status: Stable
-version: 0.1.6
+status: Preview
+version: 0.1.7
 audience: Players, server operators, and modpack creators
 tags:
   - armor
@@ -15,8 +15,26 @@ tags:
   - easy npc
 ---
 
+## Targets in 0.1.7
+
+Ordinary and modded entities, including zombies, skeletons and piglins, use Real Armor when real armor is equipped in their equipment slots. No NPC mod is needed; each NPC integration switch still takes priority for that NPC. Player handling stays unchanged. Held armor, pumpkins and decorations alone do not activate this support. Ordinary mobs return to their original damage handling after their last armor item is removed or breaks.
+
+0.1.7 also implements animal armor for each supported Minecraft version. All five loader builds and package checks are complete; actual combat verification of the new animal feature is pending. The earlier recordings below do not verify this feature.
+
+## Supported entities by version in 0.1.7
+
+| Minecraft | Loader | Mobs wearing ordinary armor | Animal armor targets | NPC integrations |
+| --- | --- | --- | --- | --- |
+| 1.20.1 | Forge | Zombies, skeletons, piglins and other mobs actually wearing armor | Horse | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | Fabric | Zombies, skeletons, piglins and other mobs actually wearing armor | Horse, wolf | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | NeoForge | Zombies, skeletons, piglins and other mobs actually wearing armor | Horse, wolf | DNPC / Easy NPC / CustomNPCs |
+| 26.3 | Fabric | Zombies, skeletons, piglins and other mobs actually wearing armor | Horse, zombie horse, wolf, nautilus, zombie nautilus | DNPC / Easy NPC |
+| 26.3 | NeoForge | Zombies, skeletons, piglins and other mobs actually wearing armor | Horse, zombie horse, wolf, nautilus, zombie nautilus | DNPC / Easy NPC |
+
+Support is determined by equipped items, not a fixed whitelist of mob names. Ordinary mobs must wear real armor in head, chest, legs or feet equipment slots. Examples include zombie variants (husks, drowned and zombie villagers), skeleton variants (strays and wither skeletons), and piglins. Other vanilla and modded entities meeting the same condition are included. Ordinary mob support applies to every row. Players retain their existing handling; NPCs follow their integration switches.
+
 ## Updating to 0.1.6
-The current public release is **0.1.6**. It improves setting switches, focus after server replies and conflicting-save handling. Saving a drop set does not activate it: complete **Save → Apply confirmation**. The earlier 0.1.4 and 0.1.5 recordings below retain their capture versions in captions.
+These are the 0.1.6 changes. It improves setting switches, focus after server replies and conflicting-save handling. Saving a drop set does not activate it: complete **Save → Apply confirmation**. The earlier 0.1.4 and 0.1.5 recordings below retain their capture versions in captions.
 
 ## Make armored NPCs tougher
 

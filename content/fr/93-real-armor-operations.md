@@ -6,8 +6,8 @@ description: Commandes d'administration, vérifications d'état, utilisation de 
 product: dochi-real-armor
 category: Commandes et dépannage
 section: operations
-status: Stable
-version: 0.1.6
+status: Aperçu
+version: 0.1.7
 audience: Opérateurs de serveur et créateurs de modpack
 tags:
   - commands
@@ -49,3 +49,7 @@ Activez le débogage temporairement pour voir la partie du corps sélectionnée 
 | Erreur de démarrage de Duplicate-mod | Retirez les anciens bocaux `cnpc_real_armor` et `dochi_real_armor` pour qu'il ne reste qu'une seule libération |
 
 Lorsque vous signalez un problème, incluez `logs/latest.log`, les noms de fichiers jar exacts, les versions de mod et de mod d'arme du PNJ, les paramètres pertinents et si le même coup se comporte différemment avec le débogage OFF.
+
+## Comparer les armures animales
+
+Comparez la même attaque sur un animal sans armure et un animal équipé de la même espèce. L’armure corporelle protège normalement toutes les hauteurs. Pour le loup, comparez les dégâts de l’armure et le coup suivant sa rupture, plutôt que la seule perte de santé. Vérifiez aussi la durabilité et l’ensemble de drops actif.

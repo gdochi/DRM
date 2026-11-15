@@ -6,8 +6,8 @@ description: 설정 화면을 열고 NPC 종류·부위별 방어·내구도를 
 product: dochi-real-armor
 category: 설치와 설정
 section: setup
-status: Stable
-version: 0.1.6
+status: 미리보기
+version: 0.1.7
 audience: 플레이어와 서버 운영자
 tags:
   - installation
@@ -17,7 +17,7 @@ tags:
 
 ## 설치
 
-Real Armor 0.1.6의 Minecraft·로더에 맞는 파일을 서버와 클라이언트에 넣습니다.
+Real Armor 0.1.7의 Minecraft·로더에 맞는 파일을 서버와 클라이언트에 넣습니다.
 
 | Minecraft | 로더 | Java |
 | --- | --- | --- |
@@ -62,3 +62,18 @@ DNPC의 부위 판정은 기본 몸 크기를 기준으로 합니다. 특수한 
 `/dochi_real_armor status`로 현재 상태를 봅니다. 명령어의 `split`, `durability`, `debug`도 자동 완성에서 고를 수 있습니다.
 
 직접 설정 파일을 관리한다면 Forge·NeoForge는 `config/dochi_real_armor-common.toml`, Fabric은 `config/dochi_real_armor.json`입니다.
+
+## 0.1.7 버전별 지원 엔티티
+
+| Minecraft | Loader | 일반 갑옷 착용 몹 | 동물 갑옷 대상 | NPC 연동 |
+| --- | --- | --- | --- | --- |
+| 1.20.1 | Forge | 좀비, 스켈레톤, 피글린 등 실제 갑옷 착용 몹 | 말 | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | Fabric | 좀비, 스켈레톤, 피글린 등 실제 갑옷 착용 몹 | 말, 늑대 | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | NeoForge | 좀비, 스켈레톤, 피글린 등 실제 갑옷 착용 몹 | 말, 늑대 | DNPC / Easy NPC / CustomNPCs |
+| 26.3 | Fabric | 좀비, 스켈레톤, 피글린 등 실제 갑옷 착용 몹 | 말, 좀비 말, 늑대, 노틸러스, 좀비 노틸러스 | DNPC / Easy NPC |
+| 26.3 | NeoForge | 좀비, 스켈레톤, 피글린 등 실제 갑옷 착용 몹 | 말, 좀비 말, 늑대, 노틸러스, 좀비 노틸러스 | DNPC / Easy NPC |
+
+지원 여부는 고정된 몹 이름 목록이 아니라 실제 착용 장비로 판정합니다. 일반 몹은 머리·가슴·다리·발 장비 슬롯에 실제 갑옷을 착용해야 합니다. 좀비 계열(허스크·드라운드·좀비 주민 포함), 스켈레톤 계열(스트레이·위더 스켈레톤 포함), 피글린 계열 등은 그 예이며, 같은 조건의 다른 바닐라·모드 엔티티도 포함됩니다. 표의 일반 몹 지원은 모든 행에 적용됩니다. 플레이어는 기존 처리를 유지하며, NPC는 해당 연동 스위치 설정을 따릅니다.
+
+
+동물이 실제 착용할 수 있는 갑옷을 입히고 **Enable armor calculation**을 켭니다. 안장·카펫·하네스는 갑옷이 아닙니다. 일반 몹과 동물을 쓰기 위해 NPC 모드를 설치할 필요는 없습니다. DRM도 선택 사항입니다. 26.3에서는 CustomNPCs를 사용하지 않습니다.

@@ -6,8 +6,8 @@ description: Choose per-armor drop items, chances and quantities in Armor Drop E
 product: dochi-real-armor
 category: Item Drops
 section: drops
-status: Stable
-version: 0.1.6
+status: Preview
+version: 0.1.7
 audience: Server operators and modpack authors
 tags:
   - armor
@@ -87,3 +87,9 @@ On a dedicated server, the same structure sits inside the server's world folder.
 | No items appear in the preview | The preview is static. Real drops spawn on the server when equipment durability decreases |
 
 Curios accessories use their own durability handling. Do not treat them as armor drop targets for this feature.
+
+## Mob and animal armor rules in 0.1.7
+
+Drop rules also work with supported mob armor and version-supported animal armor. Wolf armor rolls once when it actually loses durability or breaks. Disabling durability loss, or selecting horse or nautilus armor without durability, produces no damage-triggered drops.
+
+Animal armor can be selected in the editor and uses an item icon instead of the armor stand preview. Save the set and use **Apply** to activate it.

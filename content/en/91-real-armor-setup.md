@@ -6,8 +6,8 @@ description: Open settings and choose NPC integrations, body-part armor and dura
 product: dochi-real-armor
 category: Install and Configure
 section: setup
-status: Stable
-version: 0.1.6
+status: Preview
+version: 0.1.7
 audience: Players and server operators
 tags:
   - installation
@@ -17,7 +17,7 @@ tags:
 
 ## Install
 
-Put matching Minecraft/loader Real Armor 0.1.6 files on the server and clients.
+Put matching Minecraft/loader Real Armor 0.1.7 files on the server and clients.
 
 | Minecraft | Loader | Java |
 | --- | --- | --- |
@@ -62,3 +62,18 @@ DNPC hit regions follow its basic body bounds, which may differ from a custom mo
 Use `/dochi_real_armor status`. Commands also autocomplete `split`, `durability` and `debug`.
 
 For direct file management, Forge/NeoForge use `config/dochi_real_armor-common.toml`; Fabric uses `config/dochi_real_armor.json`.
+
+## Supported entities by version in 0.1.7
+
+| Minecraft | Loader | Mobs wearing ordinary armor | Animal armor targets | NPC integrations |
+| --- | --- | --- | --- | --- |
+| 1.20.1 | Forge | Zombies, skeletons, piglins and other mobs actually wearing armor | Horse | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | Fabric | Zombies, skeletons, piglins and other mobs actually wearing armor | Horse, wolf | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | NeoForge | Zombies, skeletons, piglins and other mobs actually wearing armor | Horse, wolf | DNPC / Easy NPC / CustomNPCs |
+| 26.3 | Fabric | Zombies, skeletons, piglins and other mobs actually wearing armor | Horse, zombie horse, wolf, nautilus, zombie nautilus | DNPC / Easy NPC |
+| 26.3 | NeoForge | Zombies, skeletons, piglins and other mobs actually wearing armor | Horse, zombie horse, wolf, nautilus, zombie nautilus | DNPC / Easy NPC |
+
+Support is determined by equipped items, not a fixed whitelist of mob names. Ordinary mobs must wear real armor in head, chest, legs or feet equipment slots. Examples include zombie variants (husks, drowned and zombie villagers), skeleton variants (strays and wither skeletons), and piglins. Other vanilla and modded entities meeting the same condition are included. Ordinary mob support applies to every row. Players retain their existing handling; NPCs follow their integration switches.
+
+
+Equip armor the animal can actually wear and enable **Enable armor calculation**. Saddles, carpets and harnesses are not armor. Ordinary mobs and animals do not require an NPC mod. DRM remains optional. Do not use CustomNPCs on 26.3.

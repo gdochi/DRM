@@ -6,8 +6,8 @@ description: Abre los ajustes y elige las integraciones NPC, la armadura de la p
 product: dochi-real-armor
 category: Instalar y configurar
 section: setup
-status: Estable
-version: 0.1.6
+status: Vista previa
+version: 0.1.7
 audience: Jugadores y operadores de servidores
 tags:
   - installation
@@ -19,7 +19,7 @@ translationMethod: assisted
 
 ## Instalar
 
-Ponga los archivos coincidentes Minecraft/loader Real Armor 0.1.6 en el servidor y los clientes.
+Ponga los archivos coincidentes Minecraft/loader Real Armor 0.1.7 en el servidor y los clientes.
 
 | Minecraft | Cargador | Java |
 | --- | --- | --- |
@@ -64,3 +64,18 @@ DNPC Las regiones golpeadas siguen sus límites corporales básicos, que pueden 
 Usar `/dochi_real_armor status`. Los comandos también autocompletan `split`, `durability` y `debug`.
 
 Para la gestión directa de archivos, Forge/NeoForge use `config/dochi_real_armor-common.toml`; Fabric uses `config/dochi_real_armor.json`.
+
+## Entidades compatibles por versión en 0.1.7
+
+| Minecraft | Loader | Criaturas con armadura normal | Animales con armadura | Integraciones de NPC |
+| --- | --- | --- | --- | --- |
+| 1.20.1 | Forge | Zombis, esqueletos, piglins y otras criaturas que lleven armadura | Caballo | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | Fabric | Zombis, esqueletos, piglins y otras criaturas que lleven armadura | Caballo, lobo | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | NeoForge | Zombis, esqueletos, piglins y otras criaturas que lleven armadura | Caballo, lobo | DNPC / Easy NPC / CustomNPCs |
+| 26.3 | Fabric | Zombis, esqueletos, piglins y otras criaturas que lleven armadura | Caballo, caballo zombi, lobo, nautilo, nautilo zombi | DNPC / Easy NPC |
+| 26.3 | NeoForge | Zombis, esqueletos, piglins y otras criaturas que lleven armadura | Caballo, caballo zombi, lobo, nautilo, nautilo zombi | DNPC / Easy NPC |
+
+La compatibilidad depende del equipo, no de una lista cerrada de nombres. Las criaturas normales deben llevar armadura real en cabeza, pecho, piernas o pies. Incluye variantes de zombi (zombi momificado, ahogado y aldeano zombi), variantes de esqueleto (errante y esqueleto del Wither) y piglins, además de otras entidades de Minecraft o de mods que cumplan esa condición. El soporte de criaturas normales se aplica a todas las filas. Los jugadores conservan su tratamiento habitual; los NPC siguen sus interruptores de integración.
+
+
+Equipa una armadura que el animal pueda llevar y activa **Enable armor calculation**. Las sillas, alfombras y arneses no son armaduras. Las criaturas y animales no necesitan un mod de NPC. DRM sigue siendo opcional. No uses CustomNPCs en 26.3.

@@ -6,8 +6,8 @@ description: Armor sources, hit-region thresholds, resistance order, enchantment
 product: dochi-real-armor
 category: Armor Calculation
 section: calculation
-status: Stable
-version: 0.1.6
+status: Preview
+version: 0.1.7
 audience: Server operators and modpack creators
 tags:
   - damage
@@ -54,3 +54,9 @@ CustomNPCs resistance order can be set to `CNPC_RESISTANCE_THEN_VANILLA_ARMOR` o
 Protection enchantments are applied only when their switch is ON. Armor-bypassing damage ignores armor. Durability loss is also optional and applies to the slots that participated in the reduction, so a head hit in split mode does not damage leggings.
 
 Knockback resistance compares the resolved armor value with the entity's vanilla attribute and only supplies the missing amount. It does not double the resistance already present on the entity.
+
+## Animal body armor and durability
+
+Body armor protects every hit height, including in body-part mode, and is counted once. Direct equipment scans also include the body armor slot for that Minecraft version.
+
+Wolf armor keeps vanilla damage absorption, cracking and break effects. With Real Armor enabled, disabling **Damage armor items** stops armor wear on this path. Items without durability, such as horse and nautilus armor, do not gain durability.

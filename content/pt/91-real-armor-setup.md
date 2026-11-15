@@ -6,8 +6,8 @@ description: Abra as configurações e escolha integrações NPC, armadura de pa
 product: dochi-real-armor
 category: Instalar e configurar
 section: setup
-status: Estável
-version: 0.1.6
+status: Prévia
+version: 0.1.7
 audience: Jogadores e operadores de servidores
 tags:
   - installation
@@ -19,7 +19,7 @@ translationMethod: assisted
 
 ## Instalar
 
-Coloque arquivos correspondentes Minecraft/loader Real Armor 0.1.6 no servidor e nos clientes.
+Coloque arquivos correspondentes Minecraft/loader Real Armor 0.1.7 no servidor e nos clientes.
 
 | Minecraft | Carregador | Java |
 | --- | --- | --- |
@@ -64,3 +64,18 @@ DNPC regiões atingidas seguem seus limites corporais básicos, que podem diferi
 Use `/dochi_real_armor status`. Comandos também autocompletam `split`, `durability` e `debug`.
 
 Para gerenciamento direto de arquivos, Forge/NeoForge use `config/dochi_real_armor-common.toml`; Fabric use `config/dochi_real_armor.json`.
+
+## Entidades compatíveis por versão na versão 0.1.7
+
+| Minecraft | Loader | Criaturas com armadura comum | Animais com armadura | Integrações de NPC |
+| --- | --- | --- | --- | --- |
+| 1.20.1 | Forge | Zumbis, esqueletos, piglins e outras criaturas usando armadura | Cavalo | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | Fabric | Zumbis, esqueletos, piglins e outras criaturas usando armadura | Cavalo, lobo | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | NeoForge | Zumbis, esqueletos, piglins e outras criaturas usando armadura | Cavalo, lobo | DNPC / Easy NPC / CustomNPCs |
+| 26.3 | Fabric | Zumbis, esqueletos, piglins e outras criaturas usando armadura | Cavalo, cavalo zumbi, lobo, náutilo, náutilo zumbi | DNPC / Easy NPC |
+| 26.3 | NeoForge | Zumbis, esqueletos, piglins e outras criaturas usando armadura | Cavalo, cavalo zumbi, lobo, náutilo, náutilo zumbi | DNPC / Easy NPC |
+
+O suporte depende do equipamento, não de uma lista fechada de nomes. Criaturas comuns precisam usar armadura real na cabeça, peito, pernas ou pés. Exemplos incluem variantes de zumbi (zumbi-múmia, afogado e aldeão zumbi), variantes de esqueleto (errante e esqueleto wither) e piglins, além de outras entidades do jogo ou de mods que cumpram essa condição. O suporte a criaturas comuns vale para todas as linhas. Os jogadores mantêm o tratamento existente; os NPCs seguem as opções de integração.
+
+
+Equipe uma armadura que o animal possa usar e ative **Enable armor calculation**. Selas, tapetes e arreios não são armaduras. Criaturas comuns e animais não precisam de um mod de NPC. DRM continua opcional. Não use CustomNPCs no 26.3.

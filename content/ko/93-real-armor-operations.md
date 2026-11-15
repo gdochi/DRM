@@ -6,8 +6,8 @@ description: 관리자 명령어, 상태 확인, 디버그 사용법과 CustomNP
 product: dochi-real-armor
 category: 명령어와 문제 해결
 section: operations
-status: Stable
-version: 0.1.6
+status: 미리보기
+version: 0.1.7
 audience: 서버 운영자와 모드팩 제작자
 tags:
   - commands
@@ -47,3 +47,7 @@ tags:
 | 중복 모드 오류로 시작 실패 | 구형 `cnpc_real_armor` 및 다른 버전 jar를 제거하고 한 릴리스만 유지 |
 
 문제를 보고할 때는 `logs/latest.log`, 정확한 jar 파일명, NPC 및 무기 모드 버전, 관련 설정, 디버그 OFF에서도 같은 증상인지 함께 기록하세요.
+
+## 동물 갑옷을 비교할 때
+
+같은 종류의 맨몸 동물과 갑옷을 입힌 동물에 같은 공격을 비교하세요. 몸통 갑옷이 모든 피격 높이를 보호하는 것은 정상입니다. 늑대 갑옷은 체력 감소 대신 갑옷 손상과 파괴 후 다음 공격을 비교합니다. 내구도 설정과 활성 드롭 세트도 함께 확인하세요.

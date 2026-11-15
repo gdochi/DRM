@@ -1,13 +1,13 @@
 ---
-title: Hacer que la armadura de NPC importe
+title: Armadura para NPC y criaturas
 slug: dochi-real-armor-overview
 order: 900
-description: Haz que la armadura equipada reduzca el daño NPC y elige ajustes de parte del cuerpo y durabilidad.
+description: Configura la protección y durabilidad de NPC, criaturas y animales según la versión.
 product: dochi-real-armor
 category: Sinopsis
 section: overview
-status: Estable
-version: 0.1.6
+status: Vista previa
+version: 0.1.7
 audience: Jugadores, operadores de servidores y creadores de modpack
 tags:
   - armor
@@ -17,8 +17,26 @@ translationSource: en
 translationMethod: assisted
 ---
 
+## Entidades en 0.1.7
+
+Las entidades normales y de otros mods, incluidos zombis, esqueletos y piglins, usan Real Armor cuando llevan armadura real en sus ranuras de equipo. No necesitan un mod de NPC; el interruptor de cada integración sigue teniendo prioridad para ese NPC. El tratamiento de los jugadores no cambia. Una armadura en la mano, calabazas y adornos no activan esta función. Las criaturas normales vuelven a su tratamiento original del daño cuando se quita o rompe su última armadura.
+
+0.1.7 también implementa armaduras de animales según la versión de Minecraft. Las compilaciones y comprobaciones de paquetes de los cinco cargadores están completas; la verificación de combate real de la nueva función de animales está pendiente. Las grabaciones anteriores no verifican esta función.
+
+## Entidades compatibles por versión en 0.1.7
+
+| Minecraft | Loader | Criaturas con armadura normal | Animales con armadura | Integraciones de NPC |
+| --- | --- | --- | --- | --- |
+| 1.20.1 | Forge | Zombis, esqueletos, piglins y otras criaturas que lleven armadura | Caballo | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | Fabric | Zombis, esqueletos, piglins y otras criaturas que lleven armadura | Caballo, lobo | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | NeoForge | Zombis, esqueletos, piglins y otras criaturas que lleven armadura | Caballo, lobo | DNPC / Easy NPC / CustomNPCs |
+| 26.3 | Fabric | Zombis, esqueletos, piglins y otras criaturas que lleven armadura | Caballo, caballo zombi, lobo, nautilo, nautilo zombi | DNPC / Easy NPC |
+| 26.3 | NeoForge | Zombis, esqueletos, piglins y otras criaturas que lleven armadura | Caballo, caballo zombi, lobo, nautilo, nautilo zombi | DNPC / Easy NPC |
+
+La compatibilidad depende del equipo, no de una lista cerrada de nombres. Las criaturas normales deben llevar armadura real en cabeza, pecho, piernas o pies. Incluye variantes de zombi (zombi momificado, ahogado y aldeano zombi), variantes de esqueleto (errante y esqueleto del Wither) y piglins, además de otras entidades de Minecraft o de mods que cumplan esa condición. El soporte de criaturas normales se aplica a todas las filas. Los jugadores conservan su tratamiento habitual; los NPC siguen sus interruptores de integración.
+
 ## Actualiza a 0.1.6
-La versión pública actual es **0.1.6**. Mejora los interruptores, el foco tras respuestas del servidor y los conflictos de guardado. Guardar un conjunto no lo activa: completa **Save → confirmación de Apply**. Las capturas anteriores de 0.1.4 y 0.1.5 conservan sus versiones en los pies.
+Estos son los cambios de 0.1.6. Mejora los interruptores, el foco tras respuestas del servidor y los conflictos de guardado. Guardar un conjunto no lo activa: completa **Save → confirmación de Apply**. Las capturas anteriores de 0.1.4 y 0.1.5 conservan sus versiones en los pies.
 
 ## Hacer NPC blindados más difíciles
 

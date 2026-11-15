@@ -6,8 +6,8 @@ description: Comandos de administrador, comprobaciones de estado, uso de depurac
 product: dochi-real-armor
 category: Comandos y solución de problemas
 section: operations
-status: Estable
-version: 0.1.6
+status: Vista previa
+version: 0.1.7
 audience: Operadores de servidores y creadores de modpack
 tags:
   - commands
@@ -49,3 +49,7 @@ Habilite la depuración temporalmente para ver la parte del cuerpo seleccionada 
 | Error de inicio de duplicado-mod | Retire los frascos más antiguos `cnpc_real_armor` y `dochi_real_armor` para que solo quede una versión |
 
 Al informar de un problema, incluya `logs/latest.log`, los nombres de archivo exactos del tarro, las versiones del mod NPC y del mod de arma, los ajustes relevantes y si el mismo golpe se comporta de manera diferente con el debug OFF.
+
+## Comparar armaduras de animales
+
+Compara el mismo ataque contra un animal sin armadura y otro equipado de la misma especie. Es normal que la armadura corporal proteja todas las alturas. Para el lobo, compara el daño de la armadura y el siguiente golpe tras romperse, no solo la pérdida de salud. Revisa también la durabilidad y el conjunto de drops activo.

@@ -6,8 +6,8 @@ description: Escolha itens, probabilidades e quantidades por armadura no Armor D
 product: dochi-real-armor
 category: Drops de itens
 section: drops
-status: Estável
-version: 0.1.6
+status: Prévia
+version: 0.1.7
 audience: Operadores de servidores e criadores de modpacks
 tags:
   - armor
@@ -89,3 +89,9 @@ Em um servidor dedicado, a mesma estrutura fica na pasta do mundo do servidor. N
 | Nenhum item aparece na prévia | A prévia é estática. Drops reais são gerados no servidor quando a durabilidade diminui |
 
 Acessórios Curios usam seu próprio tratamento de durabilidade. Não os trate como alvos de drops de armadura desta função.
+
+## Regras de armadura de criaturas e animais na versão 0.1.7
+
+As regras de drops também se aplicam às armaduras de criaturas compatíveis e animais conforme a versão. A armadura de lobo realiza uma única tentativa quando perde durabilidade de fato ou quebra. Desativar o desgaste, ou selecionar armadura de cavalo ou náutilo sem durabilidade, não gera drops por dano.
+
+Armaduras de animais podem ser selecionadas no editor e usam o ícone do item em vez do suporte de armaduras na prévia. Salve o conjunto e use **Apply** para ativá-lo.

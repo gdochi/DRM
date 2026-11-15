@@ -1,13 +1,13 @@
 ---
-title: Faça NPC Armadura Matéria
+title: Armaduras de NPCs e criaturas
 slug: dochi-real-armor-overview
 order: 900
-description: Faça com que a armadura equipada reduza o dano do NPC e escolha configurações de parte do corpo e durabilidade.
+description: Configure proteção e durabilidade para NPCs, criaturas e animais conforme a versão.
 product: dochi-real-armor
 category: Visão geral
 section: overview
-status: Estável
-version: 0.1.6
+status: Prévia
+version: 0.1.7
 audience: Jogadores, operadores de servidores e criadores de modpacks
 tags:
   - armor
@@ -17,8 +17,26 @@ translationSource: en
 translationMethod: assisted
 ---
 
+## Entidades na versão 0.1.7
+
+Entidades comuns e de outros mods, incluindo zumbis, esqueletos e piglins, usam Real Armor quando uma armadura real ocupa seus espaços de equipamento. Nenhum mod de NPC é necessário; a opção de cada integração continua tendo prioridade para o NPC correspondente. O tratamento dos jogadores não muda. Armaduras na mão, abóboras e enfeites sozinhos não ativam esse suporte. Criaturas comuns voltam ao tratamento original de dano quando a última armadura é removida ou quebra.
+
+A versão 0.1.7 também implementa armaduras de animais conforme a versão do Minecraft. As compilações e verificações de pacotes dos cinco carregadores estão concluídas; a verificação de combate real da nova função de animais está pendente. As gravações anteriores não verificam essa função.
+
+## Entidades compatíveis por versão na versão 0.1.7
+
+| Minecraft | Loader | Criaturas com armadura comum | Animais com armadura | Integrações de NPC |
+| --- | --- | --- | --- | --- |
+| 1.20.1 | Forge | Zumbis, esqueletos, piglins e outras criaturas usando armadura | Cavalo | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | Fabric | Zumbis, esqueletos, piglins e outras criaturas usando armadura | Cavalo, lobo | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | NeoForge | Zumbis, esqueletos, piglins e outras criaturas usando armadura | Cavalo, lobo | DNPC / Easy NPC / CustomNPCs |
+| 26.3 | Fabric | Zumbis, esqueletos, piglins e outras criaturas usando armadura | Cavalo, cavalo zumbi, lobo, náutilo, náutilo zumbi | DNPC / Easy NPC |
+| 26.3 | NeoForge | Zumbis, esqueletos, piglins e outras criaturas usando armadura | Cavalo, cavalo zumbi, lobo, náutilo, náutilo zumbi | DNPC / Easy NPC |
+
+O suporte depende do equipamento, não de uma lista fechada de nomes. Criaturas comuns precisam usar armadura real na cabeça, peito, pernas ou pés. Exemplos incluem variantes de zumbi (zumbi-múmia, afogado e aldeão zumbi), variantes de esqueleto (errante e esqueleto wither) e piglins, além de outras entidades do jogo ou de mods que cumpram essa condição. O suporte a criaturas comuns vale para todas as linhas. Os jogadores mantêm o tratamento existente; os NPCs seguem as opções de integração.
+
 ## Atualize para 0.1.6
-A versão pública atual é **0.1.6**. Melhora os botões de configuração, o foco após respostas do servidor e o tratamento de conflitos ao salvar. Salvar um conjunto não o ativa: conclua **Save → confirmação de Apply**. As capturas anteriores de 0.1.4 e 0.1.5 mantêm suas versões nas legendas.
+Estas são as mudanças da versão 0.1.6. Melhora os botões de configuração, o foco após respostas do servidor e o tratamento de conflitos ao salvar. Salvar um conjunto não o ativa: conclua **Save → confirmação de Apply**. As capturas anteriores de 0.1.4 e 0.1.5 mantêm suas versões nas legendas.
 
 ## Tornar os NPCs blindados mais resistentes.
 

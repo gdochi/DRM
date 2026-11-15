@@ -6,8 +6,8 @@ description: Ouvrez les paramètres et choisissez les intégrations PNJ, l'armur
 product: dochi-real-armor
 category: Installer et configurer
 section: setup
-status: Stable
-version: 0.1.6
+status: Aperçu
+version: 0.1.7
 audience: Joueurs et opérateurs de serveurs
 tags:
   - installation
@@ -19,7 +19,7 @@ translationMethod: assisted
 
 ## Installer
 
-Mettez les fichiers correspondants Minecraft / loader Real Armor 0.1.6 sur le serveur et les clients.
+Mettez les fichiers correspondants Minecraft / loader Real Armor 0.1.7 sur le serveur et les clients.
 
 | Minecraft | Chargeur | Java |
 | --- | --- | --- |
@@ -64,3 +64,18 @@ DNPC les régions touchées suivent ses limites corporelles de base, qui peuvent
 Utilisez `/dochi_real_armor status`. Commandes également autocompléter `split`, `durability` et `debug`.
 
 Pour la gestion directe des fichiers, Forge/NeoForge utiliser `config/dochi_real_armor-common.toml`; Fabric utilise `config/dochi_real_armor.json`.
+
+## Entités compatibles par version dans la version 0.1.7
+
+| Minecraft | Loader | Créatures portant une armure ordinaire | Animaux avec armure | Intégrations de PNJ |
+| --- | --- | --- | --- | --- |
+| 1.20.1 | Forge | Zombies, squelettes, piglins et autres créatures portant une armure | Cheval | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | Fabric | Zombies, squelettes, piglins et autres créatures portant une armure | Cheval, loup | DNPC / Easy NPC / CustomNPCs |
+| 1.21.1 | NeoForge | Zombies, squelettes, piglins et autres créatures portant une armure | Cheval, loup | DNPC / Easy NPC / CustomNPCs |
+| 26.3 | Fabric | Zombies, squelettes, piglins et autres créatures portant une armure | Cheval, cheval zombie, loup, nautile, nautile zombie | DNPC / Easy NPC |
+| 26.3 | NeoForge | Zombies, squelettes, piglins et autres créatures portant une armure | Cheval, cheval zombie, loup, nautile, nautile zombie | DNPC / Easy NPC |
+
+La compatibilité dépend des objets équipés, pas d’une liste fermée de noms. Les créatures ordinaires doivent porter une véritable armure sur la tête, le torse, les jambes ou les pieds. Cela comprend les variantes de zombies (zombies momifiés, noyés et villageois zombies), les variantes de squelettes (vagabonds et Wither squelettes), les piglins et les autres entités du jeu ou des mods remplissant cette condition. Ce support s’applique à toutes les lignes. Le traitement des joueurs reste inchangé ; les PNJ suivent les réglages de leur intégration.
+
+
+Équipez une armure que l’animal peut réellement porter et activez **Enable armor calculation**. Les selles, tapis et harnais ne sont pas des armures. Les créatures ordinaires et les animaux ne nécessitent aucun mod de PNJ. DRM reste facultatif. N’utilisez pas CustomNPCs sur 26.3.

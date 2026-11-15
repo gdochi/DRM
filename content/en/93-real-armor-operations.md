@@ -6,8 +6,8 @@ description: Admin commands, status checks, debug use, and common CustomNPCs or 
 product: dochi-real-armor
 category: Commands and Troubleshooting
 section: operations
-status: Stable
-version: 0.1.6
+status: Preview
+version: 0.1.7
 audience: Server operators and modpack creators
 tags:
   - commands
@@ -47,3 +47,7 @@ Enable debug temporarily to see the selected body part and reduced damage. Debug
 | Duplicate-mod startup error | Remove older `cnpc_real_armor` and `dochi_real_armor` jars so only one release remains |
 
 When reporting a problem, include `logs/latest.log`, the exact jar filenames, the NPC mod and weapon mod versions, relevant settings, and whether the same hit behaves differently with debug OFF.
+
+## Comparing animal armor
+
+Compare the same attack on an unarmored and an armored animal of the same species. Body armor covering every hit height is expected. For wolf armor, compare armor damage and the next hit after it breaks, rather than health loss alone. Also check durability settings and the active drop set.

@@ -6,8 +6,8 @@ description: Fuentes de armadura, umbrales de región de golpe, orden de resiste
 product: dochi-real-armor
 category: Cálculo de armadura
 section: calculation
-status: Estable
-version: 0.1.6
+status: Vista previa
+version: 0.1.7
 audience: Operadores de servidores y creadores de modpack
 tags:
   - damage
@@ -56,3 +56,9 @@ CustomNPCs El orden de resistencia se puede establecer en `CNPC_RESISTANCE_THEN_
 Los encantamientos de protección se aplican solo cuando su interruptor está ENCENDIDO. El daño por omisión de armadura ignora la armadura. La pérdida de durabilidad también es opcional y se aplica a las ranuras que participaron en la reducción, por lo que un golpe en la cabeza en modo dividido no daña las mallas.
 
 La resistencia de retroceso compara el valor de armadura resuelto con el atributo vanilla de la entidad y solo proporciona la cantidad faltante. No duplica la resistencia ya presente en la entidad.
+
+## Armadura corporal de animales y durabilidad
+
+La armadura corporal protege todas las alturas de impacto, incluso en el modo por partes, y se cuenta una sola vez. El escaneo directo del equipo también incluye la ranura corporal de esa versión de Minecraft.
+
+La armadura de lobo conserva la absorción de daño, las grietas y los efectos de rotura de Minecraft. Con Real Armor activado, desactivar **Damage armor items** detiene el desgaste en esta ruta. Las armaduras sin durabilidad, como las de caballo y nautilo, no reciben durabilidad adicional.
