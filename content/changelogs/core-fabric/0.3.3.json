@@ -1,0 +1,27 @@
+{
+  "product": "core-fabric",
+  "version": "0.3.3",
+  "projectId": 1645661,
+  "source": "author",
+  "publishedAt": "2026-11-22T07:00:53.916Z",
+  "environments": [
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "26.3"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "26.3"
+    }
+  ],
+  "markdown": "## DRM\n### 0.3.3 Change Log\n#### Global\n##### Fixed\n* Fixed excessive client logging during NPC model sync and NPC previews.\n* Fixed successful quest reloads writing unnecessary log messages.\n* Fixed repeated NPC provider failures flooding the console with duplicate stack traces.\n* Fixed repeated NPC animation failures flooding the game log with warnings.\n##### Changed\n* Changed NPC shop profiling to default to off (`-Ddochi_rpg_maker.shopPerformanceDiagnostics=true` enables it).\n* Changed routine NPC animation diagnostics and rejected requests to appear only in the game log when `-Ddochi_rpg_maker.animationDiagnostics=true` is enabled.\n#### Forge 1.20.1 / Fabric & NeoForge 1.21.1\n##### Fixed\n* Fixed excessive GUI cache logging by removing frame summaries and limiting repeated errors.\n#### Fabric & NeoForge 1.21.1 / 26.3\n##### Fixed\n* Fixed excessive client logging during currency HUD sync.\n#### Fabric & NeoForge 1.21.1\n##### Fixed\n* Fixed blurred quest rows in the FTB Quests picker.\n",
+  "html": "<h4>Global</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed excessive client logging during NPC model sync and NPC previews.</li>\n<li>Fixed successful quest reloads writing unnecessary log messages.</li>\n<li>Fixed repeated NPC provider failures flooding the console with duplicate stack traces.</li>\n<li>Fixed repeated NPC animation failures flooding the game log with warnings.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed NPC shop profiling to default to off (<code>-Ddochi_rpg_maker.shopPerformanceDiagnostics=true</code> enables it).</li>\n<li>Changed routine NPC animation diagnostics and rejected requests to appear only in the game log when <code>-Ddochi_rpg_maker.animationDiagnostics=true</code> is enabled.</li>\n</ul>\n<h4>Forge 1.20.1 / Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed excessive GUI cache logging by removing frame summaries and limiting repeated errors.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 1.21.1 / 26.3</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed excessive client logging during currency HUD sync.</li>\n</ul>\n<h4>Fabric &amp; NeoForge 1.21.1</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed blurred quest rows in the FTB Quests picker.</li>\n</ul>\n"
+}
