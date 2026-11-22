@@ -27,6 +27,14 @@ Elija su versión Minecraft y cargador. En el modo multijugador, instala archivo
 
 DNPC solo te permite crear, personalizar y asignar trabajos a NPCs. Agregue DRM cuando desee conversaciones o tiendas.
 
+### Pruebas de ejecución de DNPC 0.1.5
+
+- **Forge 1.20.1 / NeoForge 1.21.1** — Con los JAR de distribución se cargó un mundo, se creó y guardó un PNJ y el juego se cerró con normalidad.
+- **Fabric 26.3 / NeoForge 26.3** — Con los JAR de distribución se cargó un mundo con Create, se ejecutaron tareas de integración y el juego se cerró con normalidad.
+- **Fabric 1.21.1** — Con el JAR de desarrollo se cargó un mundo, se creó y guardó un PNJ y el juego se cerró con normalidad. Queda pendiente una prueba directa del JAR final de distribución.
+
+Las pruebas se hicieron en un jugador. Si usas Create en Minecraft 26.3, consulta las [combinaciones probadas con Create](#dochi-npc-core/npc-core-create-start).
+
 ## Coloca tu primer PNJ
 
 1. Obtener el núcleo de la ficha Creativo **NPC Core**, o utilizar `/dnpc core`.

@@ -30,7 +30,14 @@ El horario DNPC decide cuándo y dónde trabaja el NPC. Create controla la rotac
 
 Instala una distribución real de Create para tu versión de Minecraft y cargador, con sus dependencias. Usa archivos compatibles en servidor y clientes. DNPC básico funciona sin Create ni DRM; añade Create para estos trabajos.
 
-Los registros anteriores cubren **Forge 1.20.1 / NeoForge 1.21.1 / Fabric 26.3**. No demuestran disponibilidad o compatibilidad de Create en Fabric 1.21.1 o NeoForge 26.3. Comprueba la distribución y capacidades reales del destino. CustomNPCs queda excluido en 26.3.
+Las pruebas anteriores de integración con Create incluyen Forge 1.20.1 y NeoForge 1.21.1. La integración con Create en Fabric 1.21.1 queda fuera de las pruebas de esta guía. CustomNPCs no es compatible con 26.3.
+
+En un jugador con DNPC 0.1.5 y Minecraft 26.3, se verificó que los PNJ podían subir y bajar del tren y gestionar envíos de paquetes con estas combinaciones.
+
+- **Fabric** — Fabric Loader 0.19.5, Fabric API 0.160.5+26.3, Create Fly 6.0.9-1
+- **NeoForge** — NeoForge 26.3.0.76, Create: Adapted 6.0.11-adapted-1.31
+
+**Create Fly 6.0.9-1 con Fabric Loader 0.19.3** reprodujo el mismo error al iniciar incluso al retirar DNPC. Si usas esta versión de Create Fly en Minecraft 26.3, utiliza la combinación con Loader 0.19.5 indicada arriba.
 
 Las grabaciones sin sonido usan **DNPC 0.1.3 + Create 6.0.10 / NeoForge 1.21.1**. **6.0.10 identifica la grabación, no un mínimo universal.** Solo están preparados los dispositivos y materiales. Cada lección parte de un horario vacío y muestra acción, objetivos del mundo, campos, activación, guardado y ejecución real. La devolución continúa los ajustes guardados en la lección anterior. La interfaz es inglesa, con pasos en coreano bajo el juego, campos ampliados y marcador de clic. Adapta las coordenadas a tu mundo. El paso situado sobre cada vídeo sigue la reproducción y la búsqueda y sigue siendo legible durante la pausa.
 

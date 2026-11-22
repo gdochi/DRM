@@ -1,0 +1,31 @@
+{
+  "product": "mob-editor",
+  "version": "0.1.8",
+  "projectId": 1682651,
+  "source": "author",
+  "publishedAt": "2026-11-22T06:36:04.009Z",
+  "environments": [
+    {
+      "loader": "Forge",
+      "minecraft": "1.20.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "26.3"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "26.3"
+    }
+  ],
+  "markdown": "### 0.1.8 Change Log\r\n#### Global\r\n##### Added\r\n* Added a first-attack lesson with editable damage and a live preview.\r\n* Added searchable entity, item visual, and group pickers for projectile actions.\r\n* Added projectile spawn offsets, saved position IDs, and explicit yaw and pitch controls to the Mob Editor.\r\n##### Fixed\r\n* Fixed inspector fields drawing outside their panel when a flyout was open.\r\n##### Improved\r\n* Improved BattleWorks flyout sizing and grouped technique actions beside the pattern list.\r\n* Improved projectile picker opening and scrolling by loading creative categories on demand and reusing entity search results.\r\n",
+  "html": "<h4>Global</h4>\n<h5>Added</h5>\n<ul>\n<li>Added a first-attack lesson with editable damage and a live preview.</li>\n<li>Added searchable entity, item visual, and group pickers for projectile actions.</li>\n<li>Added projectile spawn offsets, saved position IDs, and explicit yaw and pitch controls to the Mob Editor.</li>\n</ul>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed inspector fields drawing outside their panel when a flyout was open.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved BattleWorks flyout sizing and grouped technique actions beside the pattern list.</li>\n<li>Improved projectile picker opening and scrolling by loading creative categories on demand and reusing entity search results.</li>\n</ul>\n"
+}

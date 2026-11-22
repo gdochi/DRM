@@ -27,6 +27,14 @@ Escolha sua versão Minecraft e carregador. No multiplayer, instale arquivos cor
 
 DNPC sozinho permite que você crie, personalize e atribua trabalhos a NPCs. Adicione DRM quando quiser conversas ou lojas.
 
+### Testes de execução do DNPC 0.1.5
+
+- **Forge 1.20.1 / NeoForge 1.21.1** — Com os JARs de distribuição, um mundo foi carregado, um NPC foi criado e salvo, e o jogo foi encerrado normalmente.
+- **Fabric 26.3 / NeoForge 26.3** — Com os JARs de distribuição, um mundo foi carregado com Create, as tarefas de integração foram executadas e o jogo foi encerrado normalmente.
+- **Fabric 1.21.1** — Com o JAR de desenvolvimento, um mundo foi carregado, um NPC foi criado e salvo, e o jogo foi encerrado normalmente. O JAR final de distribuição ainda precisa de um teste direto.
+
+Os testes foram feitos em um mundo de um jogador. Se você usa Create no Minecraft 26.3, consulte as [combinações testadas com Create](#dochi-npc-core/npc-core-create-start).
+
 ## Coloque seu primeiro NPC
 
 1. Pegue o Núcleo na guia Criativo **NPC Core** ou use `/dnpc core`.

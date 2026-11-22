@@ -17,6 +17,8 @@
 
 ## 공개 기준
 
+- 2026-11-22 사용자 요청으로 BattleWorks 0.1.8의 `[LOG] Change Log/배틀워크스/0.1.8.md` 원문 6개 항목을 작성자 기록으로 반영한다. Forge 1.20.1과 Fabric·NeoForge 1.21.1/26.3의 다섯 환경에 공통 변경을 표시한다.
+
 - 2026-11-15 사용자 지시로 DNPC 0.1.4를 `[LOG] Change Log/DNPC/0.1.4.md`에서 작성자 기록으로 반영한다. Forge 1.20.1과 Fabric·NeoForge 1.21.1/26.3의 다섯 환경을 구분하고, Create 열차 연계는 실험적 기능으로 표시한다. 기존 공개 파일 목록과 이전 버전은 보존한다.
 
 - 2026-11-14 사용자 지시로 DRM 0.3.2의 `[LOG] Change Log/DRM/0.3.2.md` 원문 19개 항목을 작성자 기록으로 게시한다. Forge 1.20.1과 Fabric·NeoForge 1.21.1/26.3의 다섯 환경에 표시하며, Create: Numismatics는 Forge 1.20.1과 NeoForge 1.21.1에만 표시한다. 기존 공개 파일 목록과 이전 버전은 보존한다.

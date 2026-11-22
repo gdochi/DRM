@@ -30,7 +30,14 @@ Le planning DNPC décide quand et où le PNJ travaille. Create gère la rotation
 
 Installez une distribution réelle de Create pour votre version Minecraft et votre chargeur, avec ses dépendances. Accordez serveur et clients. DNPC de base fonctionne sans Create ni DRM ; ajoutez Create pour ces tâches.
 
-Les anciens relevés d'exécution couvrent **Forge 1.20.1 / NeoForge 1.21.1 / Fabric 26.3**. Ils ne prouvent pas la disponibilité ou la compatibilité de Create sous Fabric 1.21.1 ou NeoForge 26.3. Vérifiez la distribution et les capacités réelles de votre cible. CustomNPCs est exclu en 26.3.
+Les vérifications précédentes de l’intégration avec Create couvrent Forge 1.20.1 et NeoForge 1.21.1. L’intégration avec Create sous Fabric 1.21.1 ne fait pas partie des vérifications de ce guide. CustomNPCs n’est pas pris en charge en 26.3.
+
+En solo avec DNPC 0.1.5 sur Minecraft 26.3, les combinaisons suivantes ont permis de vérifier la montée et la descente des PNJ en train ainsi que la livraison de colis.
+
+- **Fabric** — Fabric Loader 0.19.5, Fabric API 0.160.5+26.3, Create Fly 6.0.9-1
+- **NeoForge** — NeoForge 26.3.0.76, Create: Adapted 6.0.11-adapted-1.31
+
+**Create Fly 6.0.9-1 avec Fabric Loader 0.19.3** a reproduit la même erreur au démarrage après le retrait de DNPC. Pour cette version de Create Fly sur Minecraft 26.3, utilisez la combinaison testée ci-dessus avec Loader 0.19.5.
 
 Ces vidéos muettes utilisent **DNPC 0.1.3 + Create 6.0.10 / NeoForge 1.21.1**. **6.0.10 décrit la capture, pas un minimum universel.** Seuls les appareils et matériaux sont préparés. Chaque leçon part d'un planning vide et montre action, cibles du monde, champs, activation, sauvegarde et exécution native. Le retour poursuit les réglages sauvegardés dans la livraison précédente. L'interface est anglaise, avec étapes coréennes sous le jeu, champs agrandis et marqueur de clic. Adaptez les coordonnées à votre monde. L'étape au-dessus du lecteur suit la lecture et la recherche et reste lisible pendant la pause.
 

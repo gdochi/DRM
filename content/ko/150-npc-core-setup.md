@@ -25,6 +25,14 @@ audience: 제작자 / 서버 운영자
 
 DNPC만으로 NPC를 만들고 꾸미고 일을 시킬 수 있습니다. 대화나 상점을 붙이고 싶을 때 DRM을 추가합니다.
 
+### DNPC 0.1.5 실행 확인
+
+- **Forge 1.20.1 / NeoForge 1.21.1** — 배포 JAR로 월드에 들어가 NPC를 생성·저장하고 정상 종료했습니다.
+- **Fabric 26.3 / NeoForge 26.3** — 배포 JAR로 Create 연계 월드에 들어가 연계 작업을 확인하고 정상 종료했습니다.
+- **Fabric 1.21.1** — 개발 JAR로 월드 진입, NPC 생성·저장과 정상 종료를 확인했습니다. 최종 배포 JAR의 직접 실행은 아직 확인하지 못했습니다.
+
+위 결과는 싱글플레이 환경에서 확인했습니다. Minecraft 26.3에서 Create를 함께 사용하려면 [확인된 Create 조합](#dochi-npc-core/npc-core-create-start)을 참고하세요.
+
 ## 첫 NPC 배치하기
 
 1. 크리에이티브의 **NPC Core** 탭에서 코어를 꺼냅니다. 명령어는 `/dnpc core`입니다.
