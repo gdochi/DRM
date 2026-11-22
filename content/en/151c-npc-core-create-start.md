@@ -28,14 +28,7 @@ DNPC schedules decide when and where an NPC works. Create owns the actual rotati
 
 Install a real Create distribution for your Minecraft version and loader, together with its required dependencies. Match server and client installations. DNPC can create and edit basic NPCs without Create or DRM; add Create for these integration jobs.
 
-Earlier Create integration checks include Forge 1.20.1 and NeoForge 1.21.1. Create integration on Fabric 1.21.1 is outside the verification scope of this guide. CustomNPCs is unsupported on 26.3.
-
-The following combinations passed NPC train boarding, alighting and parcel logistics checks in single-player with DNPC 0.1.5 on Minecraft 26.3.
-
-- **Fabric** — Fabric Loader 0.19.5, Fabric API 0.160.5+26.3, Create Fly 6.0.9-1
-- **NeoForge** — NeoForge 26.3.0.76, Create: Adapted 6.0.11-adapted-1.31
-
-**Create Fly 6.0.9-1 with Fabric Loader 0.19.3** reproduced the same startup error with DNPC removed. For this version of Create Fly on Minecraft 26.3, use the tested Loader 0.19.5 combination above.
+Existing integration execution records cover **Forge 1.20.1 / NeoForge 1.21.1 / Fabric 26.3**. They do not establish Create availability or compatibility on Fabric 1.21.1 or NeoForge 26.3. Check the actual distribution and capabilities for your target. CustomNPCs is excluded on 26.3.
 
 These silent recordings use **DNPC 0.1.3 + Create 6.0.10 / NeoForge 1.21.1**. **6.0.10 identifies the recorded environment, not a universal minimum requirement.** Only devices and materials are prepared. Each lesson follows an empty NPC schedule through action selection, world targets, field entry, activation, saving and native execution. The return lesson continues the configuration saved in the preceding delivery lesson. The UI is English, with Korean step captions in a separate panel below the game, field detail cuts and a visible click marker. Replace example coordinates with your own positions. The current step above each player follows playback and seeking and stays readable while paused.
 

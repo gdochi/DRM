@@ -24,15 +24,6 @@ Choose your Minecraft version and loader. In multiplayer, install matching files
 | 26.3 | Fabric / NeoForge | 25 |
 
 DNPC alone lets you create, customize and assign jobs to NPCs. Add DRM when you want conversations or shops.
-
-### DNPC 0.1.5 runtime checks
-
-- **Forge 1.20.1 / NeoForge 1.21.1** — The production JARs loaded a world, created and saved an NPC, and shut down normally.
-- **Fabric 26.3 / NeoForge 26.3** — The production JARs loaded a world with Create, ran integration tasks, and shut down normally.
-- **Fabric 1.21.1** — The development JAR loaded a world, created and saved an NPC, and shut down normally. The final production JAR still needs a direct runtime check.
-
-These checks ran in single-player. If you use Create on Minecraft 26.3, see the [tested Create combinations](#dochi-npc-core/npc-core-create-start).
-
 ## Place your first NPC
 
 1. Get the Core from the Creative **NPC Core** tab, or use `/dnpc core`.
