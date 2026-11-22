@@ -1,0 +1,19 @@
+{
+  "product": "drm-cobblemon-editor",
+  "version": "0.3.1",
+  "projectId": 1614833,
+  "source": "author",
+  "publishedAt": "2026-11-22T10:58:04.248Z",
+  "environments": [
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1"
+    }
+  ],
+  "markdown": "## Dochi's Cobblemon Editor\r\n### 0.3.1 Change Log\r\n#### Global\r\n##### Fixed\r\n* Fixed trainer AI missing Mega Evolution ability changes when scoring attacks.\r\n##### Improved\r\n* Improved trainer AI weather choices across moves, switches, and Mega Evolution.\r\n* Improved trainer AI switching to preserve threatened Pokémon that can restore valuable weather.\r\n* Improved doubles AI by weighing Protect's success chance against Earthquake's friendly fire.\r\n",
+  "html": "<h4>Global</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed trainer AI missing Mega Evolution ability changes when scoring attacks.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved trainer AI weather choices across moves, switches, and Mega Evolution.</li>\n<li>Improved trainer AI switching to preserve threatened Pokémon that can restore valuable weather.</li>\n<li>Improved doubles AI by weighing Protect's success chance against Earthquake's friendly fire.</li>\n</ul>\n"
+}
