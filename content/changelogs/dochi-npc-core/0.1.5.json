@@ -1,0 +1,31 @@
+{
+  "product": "dochi-npc-core",
+  "version": "0.1.5",
+  "projectId": 1764663,
+  "source": "author",
+  "publishedAt": "2026-11-22T06:39:35.5866330Z",
+  "environments": [
+    {
+      "loader": "Forge",
+      "minecraft": "1.20.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "1.21.1"
+    },
+    {
+      "loader": "Fabric",
+      "minecraft": "26.3"
+    },
+    {
+      "loader": "NeoForge",
+      "minecraft": "26.3"
+    }
+  ],
+  "markdown": "## DNPC\n### 0.1.5 Change Log\n> For Create Fly 6.0.9-1 on Fabric 26.3, use Fabric Loader 0.19.5.\n#### Global\n##### Fixed\n* Fixed Create parcels getting stuck after their receiving container was removed or replaced.\n* Fixed pending Create supply orders blocking new orders to a different receiving inventory.\n* Fixed NPC-to-NPC Create parcel delivery in loaded areas when unloaded day-cycle execution is enabled.\n* Fixed completed Create train management requests blocking later requests for the same NPC.\n##### Changed\n* Changed NPC naming to use editable global pools and direct name selection in the NPC editor.\n##### Improved\n* Improved NPC tick performance when there is no Create train exit to process.\n* Improved NPC movement performance by skipping chunk checks while waiting for pathfinding capacity.\n* Improved initial and repeated world saves in large towns by preparing and reusing NPC settings.\n* Reduced crowd pathfinding delays, including travel to scheduled waiting and resting spots.\n* Improved Create job editor messages when the installed Create version lacks the required logistics features.",
+  "html": "<h3>0.1.5 Change Log</h3>\n<blockquote><p>For Create Fly 6.0.9-1 on Fabric 26.3, use Fabric Loader 0.19.5.</p></blockquote>\n<h4>Global</h4>\n<h5>Fixed</h5>\n<ul>\n<li>Fixed Create parcels getting stuck after their receiving container was removed or replaced.</li>\n<li>Fixed pending Create supply orders blocking new orders to a different receiving inventory.</li>\n<li>Fixed NPC-to-NPC Create parcel delivery in loaded areas when unloaded day-cycle execution is enabled.</li>\n<li>Fixed completed Create train management requests blocking later requests for the same NPC.</li>\n</ul>\n<h5>Changed</h5>\n<ul>\n<li>Changed NPC naming to use editable global pools and direct name selection in the NPC editor.</li>\n</ul>\n<h5>Improved</h5>\n<ul>\n<li>Improved NPC tick performance when there is no Create train exit to process.</li>\n<li>Improved NPC movement performance by skipping chunk checks while waiting for pathfinding capacity.</li>\n<li>Improved initial and repeated world saves in large towns by preparing and reusing NPC settings.</li>\n<li>Reduced crowd pathfinding delays, including travel to scheduled waiting and resting spots.</li>\n<li>Improved Create job editor messages when the installed Create version lacks the required logistics features.</li>\n</ul>"
+}

@@ -26,6 +26,7 @@ Escolha sua versão Minecraft e carregador. No multiplayer, instale arquivos cor
 | 26.3 | Fabric / NeoForge | 25 |
 
 DNPC sozinho permite que você crie, personalize e atribua trabalhos a NPCs. Adicione DRM quando quiser conversas ou lojas.
+
 ## Coloque seu primeiro NPC
 
 1. Pegue o Núcleo na guia Criativo **NPC Core** ou use `/dnpc core`.

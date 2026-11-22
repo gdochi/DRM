@@ -26,6 +26,7 @@ Choisissez votre version Minecraft et votre chargeur. En multijoueur, installez 
 | 26.3 | Fabric / NeoForge | 25 |
 
 DNPC vous permet de créer, personnaliser et affecter des tâches aux PNJ. Ajoutez DRM lorsque vous voulez des conversations ou des magasins.
+
 ## Placez votre premier PNJ
 
 1. Procurez-vous le noyau à partir de l'onglet Créatif **NPC Core**, ou utilisez `/dnpc core`.

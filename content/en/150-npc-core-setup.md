@@ -24,6 +24,7 @@ Choose your Minecraft version and loader. In multiplayer, install matching files
 | 26.3 | Fabric / NeoForge | 25 |
 
 DNPC alone lets you create, customize and assign jobs to NPCs. Add DRM when you want conversations or shops.
+
 ## Place your first NPC
 
 1. Get the Core from the Creative **NPC Core** tab, or use `/dnpc core`.

@@ -26,6 +26,7 @@ Elija su versión Minecraft y cargador. En el modo multijugador, instala archivo
 | 26.3 | Fabric / NeoForge | 25 |
 
 DNPC solo te permite crear, personalizar y asignar trabajos a NPCs. Agregue DRM cuando desee conversaciones o tiendas.
+
 ## Coloca tu primer PNJ
 
 1. Obtener el núcleo de la ficha Creativo **NPC Core**, o utilizar `/dnpc core`.
